@@ -605,13 +605,8 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="71UKpntoZy7" role="3EZMnx">
-        <property role="3F0ifm" value="composite" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      </node>
-      <node concept="3F0ifn" id="71UKpntmzO$" role="3EZMnx">
-        <property role="3F0ifm" value="component" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <node concept="PMmxH" id="77Zd6XAwopV" role="3EZMnx">
+        <ref role="PMmxG" to="okc0:6uK35z5YrAa" resolve="EditorComponent_ComponentConceptName" />
       </node>
       <node concept="3F0A7n" id="71UKpntmzOA" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1794,7 +1789,7 @@
                   <node concept="3cpWsn" id="6rHj_ILQlhD" role="3cpWs9">
                     <property role="TrG5h" value="source" />
                     <node concept="3Tqbb2" id="6rHj_ILQlhv" role="1tU5fm">
-                      <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                      <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                     </node>
                     <node concept="2OqwBi" id="6rHj_ILQlhE" role="33vP2m">
                       <node concept="2OqwBi" id="6rHj_ILQlhF" role="2Oq$k0">
@@ -1874,7 +1869,7 @@
                   <node concept="3cpWsn" id="6rHj_ILQ$CE" role="3cpWs9">
                     <property role="TrG5h" value="target" />
                     <node concept="3Tqbb2" id="6rHj_ILQ$Cx" role="1tU5fm">
-                      <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                      <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                     </node>
                     <node concept="2OqwBi" id="6rHj_ILQ$CF" role="33vP2m">
                       <node concept="2OqwBi" id="6rHj_ILQ$CG" role="2Oq$k0">
@@ -2039,7 +2034,7 @@
           </node>
           <node concept="3mAFYk" id="6rHj_ILR2L8" role="1xLlFP">
             <property role="3m_KjL" value="Delegating Connector" />
-            <ref role="3m_WZM" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+            <ref role="3m_WZM" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
             <ref role="3m_MR0" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
             <node concept="3mAF$r" id="6rHj_ILR2La" role="3m_MS9">
               <node concept="3clFbS" id="6rHj_ILR2Lc" role="2VODD2">
@@ -2304,7 +2299,7 @@
                 <node concept="1PxgMI" id="7sHDEc2WDvt" role="37vLTx">
                   <node concept="3R4i$M" id="7sHDEc2WDvu" role="1m5AlR" />
                   <node concept="chp4Y" id="79i$vAY79QC" role="3oSUPX">
-                    <ref role="cht4Q" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                    <ref role="cht4Q" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7sHDEc2WDvv" role="37vLTJ">
