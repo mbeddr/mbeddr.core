@@ -640,15 +640,15 @@
   </node>
   <node concept="1M2fIO" id="71UKpntpfyI">
     <property role="3GE5qa" value="comp.instances.portref" />
-    <ref role="1M2myG" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+    <ref role="1M2myG" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
     <node concept="9S07l" id="79i$vAY78R8" role="9Vyp8">
       <node concept="3clFbS" id="79i$vAY78R9" role="2VODD2">
         <node concept="3clFbF" id="79i$vAY78Ra" role="3cqZAp">
           <node concept="2OqwBi" id="79i$vAY78Rb" role="3clFbG">
             <node concept="nLn13" id="79i$vAY78Rc" role="2Oq$k0" />
             <node concept="1mIQ4w" id="79i$vAY78Rd" role="2OqNvi">
-              <node concept="chp4Y" id="79i$vAY78Re" role="cj9EA">
-                <ref role="cht4Q" to="v7ag:3TmmsQkDdTS" resolve="AssemblyConnector" />
+              <node concept="chp4Y" id="6uK35z6bLLy" role="cj9EA">
+                <ref role="cht4Q" to="v7ag:6uK35z6bLLf" resolve="Connector" />
               </node>
             </node>
           </node>
@@ -692,12 +692,12 @@
             <node concept="3cpWsn" id="5CkU_dHiq2F" role="3cpWs9">
               <property role="TrG5h" value="result" />
               <node concept="2I9FWS" id="5CkU_dHiq2G" role="1tU5fm">
-                <ref role="2I9WkF" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                <ref role="2I9WkF" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
               </node>
               <node concept="2ShNRf" id="5CkU_dHiq2H" role="33vP2m">
                 <node concept="2T8Vx0" id="5CkU_dHiq2I" role="2ShVmc">
                   <node concept="2I9FWS" id="5CkU_dHiq2J" role="2T96Bj">
-                    <ref role="2I9WkF" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                    <ref role="2I9WkF" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
                   </node>
                 </node>
               </node>
@@ -1779,7 +1779,7 @@
   </node>
   <node concept="1M2fIO" id="1Rr52SXzTHD">
     <property role="3GE5qa" value="comp.ports" />
-    <ref role="1M2myG" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+    <ref role="1M2myG" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
     <node concept="EnEH3" id="4JF77iuUazo" role="1MhHOB">
       <ref role="EomxK" to="tpck:gOOYnlO" resolve="shortDescription" />
       <node concept="Eqf_E" id="4JF77iuUazp" role="EtsB7">
