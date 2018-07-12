@@ -44,6 +44,7 @@
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="cttk" ref="r:5ff047e0-2953-4750-806a-bdc16824aa89(jetbrains.mps.smodel)" />
     <import index="p7b3" ref="r:8538f2f4-eda6-442a-9dd4-b04bd1d678aa(com.mbeddr.mpsutil.ccmenu.runtime.chooser)" />
+    <import index="j0b4" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.keyboard(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -11070,31 +11071,31 @@
       </node>
     </node>
     <node concept="2tJIrI" id="315MBEhazdz" role="jymVt" />
-    <node concept="3clFb_" id="7uq1CyG4Kc_" role="jymVt">
+    <node concept="3clFb_" id="1tvBh5u36ip" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="processTextChanged" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="7uq1CyG4KcA" role="1B3o_S" />
-      <node concept="10P_77" id="7uq1CyG4KcC" role="3clF45" />
-      <node concept="37vLTG" id="7uq1CyG4KcD" role="3clF46">
+      <node concept="3Tm1VV" id="1tvBh5u36iq" role="1B3o_S" />
+      <node concept="10P_77" id="1tvBh5u36is" role="3clF45" />
+      <node concept="37vLTG" id="1tvBh5u36it" role="3clF46">
         <property role="TrG5h" value="context" />
-        <node concept="3uibUv" id="7uq1CyG4KcE" role="1tU5fm">
+        <node concept="3uibUv" id="1tvBh5u36iu" role="1tU5fm">
           <ref role="3uigEE" to="exr9:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
-      <node concept="37vLTG" id="7uq1CyG4KcF" role="3clF46">
+      <node concept="37vLTG" id="1tvBh5u36iv" role="3clF46">
         <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="7uq1CyG4KcG" role="1tU5fm">
-          <ref role="3uigEE" to="hyam:~InputMethodEvent" resolve="InputMethodEvent" />
+        <node concept="3uibUv" id="1tvBh5u36iw" role="1tU5fm">
+          <ref role="3uigEE" to="j0b4:~TextChangeEvent" resolve="TextChangeEvent" />
         </node>
       </node>
-      <node concept="3clFbS" id="7uq1CyG4KcI" role="3clF47">
-        <node concept="3clFbF" id="7uq1CyG4KcL" role="3cqZAp">
-          <node concept="3clFbT" id="7uq1CyG4KcK" role="3clFbG" />
+      <node concept="3clFbS" id="1tvBh5u36iy" role="3clF47">
+        <node concept="3clFbF" id="1tvBh5u36i_" role="3cqZAp">
+          <node concept="3clFbT" id="1tvBh5u36i$" role="3clFbG" />
         </node>
       </node>
-      <node concept="2AHcQZ" id="7uq1CyG4KcJ" role="2AJF6D">
+      <node concept="2AHcQZ" id="1tvBh5u36iz" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
