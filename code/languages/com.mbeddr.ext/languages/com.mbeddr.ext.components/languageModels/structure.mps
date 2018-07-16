@@ -508,7 +508,7 @@
     <property role="TrG5h" value="ComponentInstance" />
     <property role="34LRSv" value="component instance" />
     <property role="EcuMT" value="4491876417845649014" />
-    <ref role="1TJDcQ" node="4eOUFnckyAm" resolve="Instance" />
+    <ref role="1TJDcQ" node="4eOUFnckyAm" resolve="AbstractInstance" />
     <node concept="1TJgyj" id="F_QT7XsuBZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="initializers" />
@@ -551,7 +551,7 @@
     <property role="R4oN_" value="connector between component ports" />
     <property role="34LRSv" value="connect" />
     <property role="EcuMT" value="4491876417845649016" />
-    <ref role="1TJDcQ" node="6uK35z6bLLf" resolve="Connector" />
+    <ref role="1TJDcQ" node="6uK35z6bLLf" resolve="AbstractConnector" />
     <node concept="1TJgyj" id="3TmmsQkDdTW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="source" />
@@ -581,7 +581,7 @@
     <property role="TrG5h" value="ComponentPortRef" />
     <property role="R4oN_" value="--" />
     <property role="EcuMT" value="4491876417845649017" />
-    <ref role="1TJDcQ" node="2ZeMBoiZnWl" resolve="PortRef" />
+    <ref role="1TJDcQ" node="2ZeMBoiZnWl" resolve="AbstractPortRef" />
     <node concept="1TJgyj" id="3TmmsQkDdTU" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="instance" />
@@ -1543,7 +1543,7 @@
   </node>
   <node concept="1TIwiD" id="2ZeMBoiZnWl">
     <property role="3GE5qa" value="comp.instances.portref" />
-    <property role="TrG5h" value="PortRef" />
+    <property role="TrG5h" value="AbstractPortRef" />
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="3444913373458562837" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2031,7 +2031,7 @@
   <node concept="1TIwiD" id="4eOUFnckyAm">
     <property role="EcuMT" value="4878782362887006614" />
     <property role="3GE5qa" value="comp.instances" />
-    <property role="TrG5h" value="Instance" />
+    <property role="TrG5h" value="AbstractInstance" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2039,7 +2039,7 @@
   <node concept="1TIwiD" id="6uK35z6bLLf">
     <property role="EcuMT" value="7471485357229284431" />
     <property role="3GE5qa" value="comp.instances" />
-    <property role="TrG5h" value="Connector" />
+    <property role="TrG5h" value="AbstractConnector" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
