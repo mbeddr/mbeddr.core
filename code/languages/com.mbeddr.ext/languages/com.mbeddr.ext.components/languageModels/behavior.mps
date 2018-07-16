@@ -6337,7 +6337,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="5vIM0hK3LzQ" role="3clF45">
-        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="PortRef" />
+        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="AbstractPortRef" />
       </node>
     </node>
     <node concept="13i0hz" id="5vIM0hK3LzR" role="13h7CS">
@@ -6357,7 +6357,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="5vIM0hK3LzW" role="3clF45">
-        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="PortRef" />
+        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="AbstractPortRef" />
       </node>
     </node>
     <node concept="13i0hz" id="2ZUGF54kZL1" role="13h7CS">
@@ -13868,7 +13868,7 @@
   </node>
   <node concept="13h7C7" id="2ZeMBoj0tW5">
     <property role="3GE5qa" value="comp.instances.portref" />
-    <ref role="13h7C2" to="v7ag:2ZeMBoiZnWl" resolve="PortRef" />
+    <ref role="13h7C2" to="v7ag:2ZeMBoiZnWl" resolve="AbstractPortRef" />
     <node concept="13hLZK" id="2ZeMBoj0tW6" role="13h7CW">
       <node concept="3clFbS" id="2ZeMBoj0tW7" role="2VODD2" />
     </node>
@@ -18994,7 +18994,7 @@
   </node>
   <node concept="13h7C7" id="5vIM0hK3JEj">
     <property role="3GE5qa" value="comp.instances" />
-    <ref role="13h7C2" to="v7ag:6uK35z6bLLf" resolve="Connector" />
+    <ref role="13h7C2" to="v7ag:6uK35z6bLLf" resolve="AbstractConnector" />
     <node concept="13hLZK" id="5vIM0hK3JEk" role="13h7CW">
       <node concept="3clFbS" id="5vIM0hK3JEl" role="2VODD2" />
     </node>
@@ -19004,7 +19004,7 @@
       <property role="TrG5h" value="getSource" />
       <node concept="3Tm1VV" id="5vIM0hK3JEv" role="1B3o_S" />
       <node concept="3Tqbb2" id="5vIM0hK3KI7" role="3clF45">
-        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="PortRef" />
+        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="AbstractPortRef" />
       </node>
       <node concept="3clFbS" id="5vIM0hK3JEx" role="3clF47" />
     </node>
@@ -19014,7 +19014,7 @@
       <property role="TrG5h" value="getTarget" />
       <node concept="3Tm1VV" id="5vIM0hK3KJs" role="1B3o_S" />
       <node concept="3Tqbb2" id="5vIM0hK3KJt" role="3clF45">
-        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="PortRef" />
+        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="AbstractPortRef" />
       </node>
       <node concept="3clFbS" id="5vIM0hK3KJu" role="3clF47" />
     </node>
