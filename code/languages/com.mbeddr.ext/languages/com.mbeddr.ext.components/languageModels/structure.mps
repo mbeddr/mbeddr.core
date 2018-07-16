@@ -2,7 +2,7 @@
 <model ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -2035,23 +2035,27 @@
       <ref role="PrY4T" node="4WC4fmOFhOS" resolve="AbstractDataElementRefTarget" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2E5EJrUlYIy">
-    <property role="EcuMT" value="3064043099234233250" />
-    <property role="3GE5qa" value="comp.ports.gen" />
-    <property role="TrG5h" value="ProvidedPortRefWithContext" />
+  <node concept="1TIwiD" id="4eOUFnckyAm">
+    <property role="EcuMT" value="4878782362887006614" />
+    <property role="3GE5qa" value="comp.instances" />
+    <property role="TrG5h" value="AbstractInstance" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="2E5EJrUmcRQ" role="1TKVEl">
-      <property role="IQ2nx" value="3064043099234291190" />
-      <property role="TrG5h" value="instanceName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="2E5EJrUmcRJ" role="1TKVEi">
-      <property role="IQ2ns" value="3064043099234291183" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="providedPort" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3TmmsQkD8YC" resolve="ProvidedPort" />
-    </node>
+  </node>
+  <node concept="1TIwiD" id="6uK35z6bLLf">
+    <property role="EcuMT" value="7471485357229284431" />
+    <property role="3GE5qa" value="comp.instances" />
+    <property role="TrG5h" value="AbstractConnector" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1tylWjeqLRx">
+    <property role="EcuMT" value="1685005713378319841" />
+    <property role="3GE5qa" value="comp.runnable" />
+    <property role="TrG5h" value="PortVarOpCallExpr" />
+    <ref role="1TJDcQ" node="71UKpntoo85" resolve="InterfaceOperationCallExpr" />
   </node>
   <node concept="1TIwiD" id="1tylWje4YbU">
     <property role="EcuMT" value="1685005713372603130" />
@@ -2087,53 +2091,6 @@
       <property role="IQ2nx" value="7584262324102548209" />
       <property role="TrG5h" value="singlePortAccess" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2IZ2bWrC4_N">
-    <property role="EcuMT" value="3152247881077901683" />
-    <property role="3GE5qa" value="comp.instances" />
-    <property role="TrG5h" value="AbstractDummyRef" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="6BNwNTYoq$T">
-    <property role="EcuMT" value="7634590097754663225" />
-    <property role="TrG5h" value="ForEachPortStatement" />
-    <property role="3GE5qa" value="util" />
-    <property role="34LRSv" value="foreach port" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="1TJgyj" id="3VBG7bJfS4Y" role="1TKVEi">
-      <property role="IQ2ns" value="4532785557658370366" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="portRefExpr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="71UKpntoTuE" resolve="PortRefExpr" />
-    </node>
-    <node concept="1TJgyj" id="5uVxDlUcwL9" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="6321794478502972489" />
-      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
-    </node>
-    <node concept="PrWs8" id="5uVxDlUcwLb" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="5uVxDlUcwLc" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-    </node>
-    <node concept="PrWs8" id="5uVxDlUcwLd" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
-    <node concept="PrWs8" id="5uVxDlUcwLe" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
-    </node>
-    <node concept="PrWs8" id="33xYbhPQm_r" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
-    </node>
-    <node concept="PrWs8" id="6ToJRIAPs_w" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:7k_CvRMnl1X" resolve="IBreakContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="4h2MXXfElHJ">
@@ -2182,19 +2139,6 @@
       <ref role="20lvS9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1tylWjeqLRx">
-    <property role="EcuMT" value="1685005713378319841" />
-    <property role="3GE5qa" value="comp.runnable" />
-    <property role="TrG5h" value="PortVarOpCallExpr" />
-    <ref role="1TJDcQ" node="71UKpntoo85" resolve="InterfaceOperationCallExpr" />
-  </node>
-  <node concept="1TIwiD" id="5JgWygzYwVy">
-    <property role="EcuMT" value="6616054089643593442" />
-    <property role="3GE5qa" value="util" />
-    <property role="TrG5h" value="PortItExpression" />
-    <property role="34LRSv" value="it" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-  </node>
   <node concept="1TIwiD" id="7_KH4FPG_3N">
     <property role="3GE5qa" value="comp.runnable.whenconnected" />
     <property role="TrG5h" value="WhenPortVarConnectedStatement" />
@@ -2235,21 +2179,77 @@
       <ref role="PrY4T" node="4paRqaMe436" resolve="IConnectedCheck" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4eOUFnckyAm">
-    <property role="EcuMT" value="4878782362887006614" />
+  <node concept="1TIwiD" id="2E5EJrUlYIy">
+    <property role="EcuMT" value="3064043099234233250" />
+    <property role="3GE5qa" value="comp.ports.gen" />
+    <property role="TrG5h" value="ProvidedPortRefWithContext" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2E5EJrUmcRQ" role="1TKVEl">
+      <property role="IQ2nx" value="3064043099234291190" />
+      <property role="TrG5h" value="instanceName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2E5EJrUmcRJ" role="1TKVEi">
+      <property role="IQ2ns" value="3064043099234291183" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="providedPort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3TmmsQkD8YC" resolve="ProvidedPort" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6BNwNTYoq$T">
+    <property role="EcuMT" value="7634590097754663225" />
+    <property role="TrG5h" value="ForEachPortStatement" />
+    <property role="3GE5qa" value="util" />
+    <property role="34LRSv" value="foreach port" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="3VBG7bJfS4Y" role="1TKVEi">
+      <property role="IQ2ns" value="4532785557658370366" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="portRefExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="71UKpntoTuE" resolve="PortRefExpr" />
+    </node>
+    <node concept="1TJgyj" id="5uVxDlUcwL9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6321794478502972489" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLb" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLc" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLd" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLe" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
+    </node>
+    <node concept="PrWs8" id="33xYbhPQm_r" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
+    </node>
+    <node concept="PrWs8" id="6ToJRIAPs_w" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:7k_CvRMnl1X" resolve="IBreakContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2IZ2bWrC4_N">
+    <property role="EcuMT" value="3152247881077901683" />
     <property role="3GE5qa" value="comp.instances" />
-    <property role="TrG5h" value="AbstractInstance" />
+    <property role="TrG5h" value="AbstractDummyRef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="6uK35z6bLLf">
-    <property role="EcuMT" value="7471485357229284431" />
-    <property role="3GE5qa" value="comp.instances" />
-    <property role="TrG5h" value="AbstractConnector" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  <node concept="1TIwiD" id="5JgWygzYwVy">
+    <property role="EcuMT" value="6616054089643593442" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="PortItExpression" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
 </model>
 

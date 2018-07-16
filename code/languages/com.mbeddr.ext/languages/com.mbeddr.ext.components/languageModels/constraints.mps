@@ -2,10 +2,10 @@
 <model ref="r:4b72363d-e94a-4383-b5ad-ba453d6efac9(com.mbeddr.ext.components.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -4386,30 +4386,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="1tylWje_FRk">
-    <property role="3GE5qa" value="util" />
-    <ref role="1M2myG" to="v7ag:6BNwNTYoq$T" resolve="ForEachPortStatement" />
-    <node concept="9S07l" id="1tylWje_FUQ" role="9Vyp8">
-      <node concept="3clFbS" id="1tylWje_FUR" role="2VODD2">
-        <node concept="3clFbF" id="1tylWje_G2f" role="3cqZAp">
-          <node concept="2OqwBi" id="1tylWje_G2g" role="3clFbG">
-            <node concept="2OqwBi" id="1tylWje_G2h" role="2Oq$k0">
-              <node concept="nLn13" id="1tylWje_G2i" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="1tylWje_G2j" role="2OqNvi">
-                <node concept="1xMEDy" id="1tylWje_G2k" role="1xVPHs">
-                  <node concept="chp4Y" id="1tylWje_G2l" role="ri$Ld">
-                    <ref role="cht4Q" to="v7ag:3TmmsQkCzn9" resolve="Component" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="1tylWje_G2m" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="1tylWje_G2n" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="7_KH4FP7yex">
     <property role="3GE5qa" value="util" />
     <ref role="1M2myG" to="v7ag:7_KH4FP4OP0" resolve="ForEachPortVarStatement" />
@@ -4532,30 +4508,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="4h2MXXfEuvs">
-    <property role="3GE5qa" value="comp.compType" />
-    <ref role="1M2myG" to="v7ag:4h2MXXfElHJ" resolve="ComponentThisExpr" />
-    <node concept="9S07l" id="4h2MXXfEuME" role="9Vyp8">
-      <node concept="3clFbS" id="4h2MXXfEuMF" role="2VODD2">
-        <node concept="3clFbF" id="4h2MXXfEv03" role="3cqZAp">
-          <node concept="2OqwBi" id="4h2MXXfEv05" role="3clFbG">
-            <node concept="2OqwBi" id="4h2MXXfEv06" role="2Oq$k0">
-              <node concept="nLn13" id="4h2MXXfEv07" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="4h2MXXfEv08" role="2OqNvi">
-                <node concept="1xMEDy" id="4h2MXXfEv09" role="1xVPHs">
-                  <node concept="chp4Y" id="4h2MXXfEvAr" role="ri$Ld">
-                    <ref role="cht4Q" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="4h2MXXfEv0b" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="4h2MXXfEv0c" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="7_KH4FPH1A4">
     <property role="3GE5qa" value="comp.runnable.whenconnected" />
     <ref role="1M2myG" to="v7ag:7_KH4FPG_3N" resolve="WhenPortVarConnectedStatement" />
@@ -4615,73 +4567,6 @@
         <node concept="3clFbF" id="6_0HAqfOV0y" role="3cqZAp">
           <node concept="3clFbT" id="6_0HAqfOV0x" role="3clFbG">
             <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="1tylWje6l5O">
-    <property role="3GE5qa" value="comp.ports.portType" />
-    <ref role="1M2myG" to="v7ag:1tylWje4YbU" resolve="PortType" />
-    <node concept="1N5Pfh" id="1tylWjevDxb" role="1Mr941">
-      <ref role="1N5Vy1" to="v7ag:1tylWjevCKj" resolve="component" />
-      <node concept="3dgokm" id="1tylWjevDxc" role="1N6uqs">
-        <node concept="3clFbS" id="1tylWjevDxd" role="2VODD2">
-          <node concept="3clFbF" id="1tylWjevFka" role="3cqZAp">
-            <node concept="2YIFZM" id="1tylWjevFkb" role="3clFbG">
-              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="1tylWjevFkc" role="37wK5m">
-                <node concept="2OqwBi" id="1tylWjevFkd" role="2Oq$k0">
-                  <node concept="2OqwBi" id="1tylWjevFke" role="2Oq$k0">
-                    <node concept="2rP1CM" id="1tylWjevFkf" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="1tylWjevFkg" role="2OqNvi">
-                      <node concept="1xMEDy" id="1tylWjevFkh" role="1xVPHs">
-                        <node concept="chp4Y" id="1tylWjevFki" role="ri$Ld">
-                          <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-                        </node>
-                      </node>
-                      <node concept="1xIGOp" id="1tylWjevFkj" role="1xVPHs" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="1tylWjevFkk" role="2OqNvi">
-                    <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                    <node concept="3TUQnm" id="1tylWjevFkl" role="37wK5m">
-                      <ref role="3TV0OU" to="v7ag:3TmmsQkCzn9" resolve="Component" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="v3k3i" id="1tylWjevFkm" role="2OqNvi">
-                  <node concept="chp4Y" id="1tylWjevFkn" role="v3oSu">
-                    <ref role="cht4Q" to="v7ag:3TmmsQkCzn9" resolve="Component" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1N5Pfh" id="1tylWjevDxo" role="1Mr941">
-      <ref role="1N5Vy1" to="v7ag:1tylWje6iOf" resolve="port" />
-      <node concept="3dgokm" id="1tylWjevDxp" role="1N6uqs">
-        <node concept="3clFbS" id="1tylWjevDxq" role="2VODD2">
-          <node concept="3clFbF" id="1tylWjevDxr" role="3cqZAp">
-            <node concept="2YIFZM" id="1tylWjevDxs" role="3clFbG">
-              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="1tylWjevDxt" role="37wK5m">
-                <node concept="2OqwBi" id="1tylWjevDxv" role="2Oq$k0">
-                  <node concept="3kakTB" id="1tylWjevDxw" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="1tylWjevGKq" role="2OqNvi">
-                    <ref role="3Tt5mk" to="v7ag:1tylWjevCKj" resolve="component" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="1tylWjevKUc" role="2OqNvi">
-                  <ref role="37wK5l" to="eup9:71UKpntoZWS" resolve="allRequiredPorts" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>
@@ -4804,6 +4689,121 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1tylWje6l5O">
+    <property role="3GE5qa" value="comp.ports.portType" />
+    <ref role="1M2myG" to="v7ag:1tylWje4YbU" resolve="PortType" />
+    <node concept="1N5Pfh" id="1tylWjevDxb" role="1Mr941">
+      <ref role="1N5Vy1" to="v7ag:1tylWjevCKj" resolve="component" />
+      <node concept="3dgokm" id="1tylWjevDxc" role="1N6uqs">
+        <node concept="3clFbS" id="1tylWjevDxd" role="2VODD2">
+          <node concept="3clFbF" id="1tylWjevFka" role="3cqZAp">
+            <node concept="2YIFZM" id="1tylWjevFkb" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="1tylWjevFkc" role="37wK5m">
+                <node concept="2OqwBi" id="1tylWjevFkd" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1tylWjevFke" role="2Oq$k0">
+                    <node concept="2rP1CM" id="1tylWjevFkf" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="1tylWjevFkg" role="2OqNvi">
+                      <node concept="1xMEDy" id="1tylWjevFkh" role="1xVPHs">
+                        <node concept="chp4Y" id="1tylWjevFki" role="ri$Ld">
+                          <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                        </node>
+                      </node>
+                      <node concept="1xIGOp" id="1tylWjevFkj" role="1xVPHs" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="1tylWjevFkk" role="2OqNvi">
+                    <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                    <node concept="3TUQnm" id="1tylWjevFkl" role="37wK5m">
+                      <ref role="3TV0OU" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="v3k3i" id="1tylWjevFkm" role="2OqNvi">
+                  <node concept="chp4Y" id="1tylWjevFkn" role="v3oSu">
+                    <ref role="cht4Q" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1N5Pfh" id="1tylWjevDxo" role="1Mr941">
+      <ref role="1N5Vy1" to="v7ag:1tylWje6iOf" resolve="port" />
+      <node concept="3dgokm" id="1tylWjevDxp" role="1N6uqs">
+        <node concept="3clFbS" id="1tylWjevDxq" role="2VODD2">
+          <node concept="3clFbF" id="1tylWjevDxr" role="3cqZAp">
+            <node concept="2YIFZM" id="1tylWjevDxs" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="1tylWjevDxt" role="37wK5m">
+                <node concept="2OqwBi" id="1tylWjevDxv" role="2Oq$k0">
+                  <node concept="3kakTB" id="1tylWjevDxw" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1tylWjevGKq" role="2OqNvi">
+                    <ref role="3Tt5mk" to="v7ag:1tylWjevCKj" resolve="component" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1tylWjevKUc" role="2OqNvi">
+                  <ref role="37wK5l" to="eup9:71UKpntoZWS" resolve="allRequiredPorts" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1tylWje_FRk">
+    <property role="3GE5qa" value="util" />
+    <ref role="1M2myG" to="v7ag:6BNwNTYoq$T" resolve="ForEachPortStatement" />
+    <node concept="9S07l" id="1tylWje_FUQ" role="9Vyp8">
+      <node concept="3clFbS" id="1tylWje_FUR" role="2VODD2">
+        <node concept="3clFbF" id="1tylWje_G2f" role="3cqZAp">
+          <node concept="2OqwBi" id="1tylWje_G2g" role="3clFbG">
+            <node concept="2OqwBi" id="1tylWje_G2h" role="2Oq$k0">
+              <node concept="nLn13" id="1tylWje_G2i" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1tylWje_G2j" role="2OqNvi">
+                <node concept="1xMEDy" id="1tylWje_G2k" role="1xVPHs">
+                  <node concept="chp4Y" id="1tylWje_G2l" role="ri$Ld">
+                    <ref role="cht4Q" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="1tylWje_G2m" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1tylWje_G2n" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4h2MXXfEuvs">
+    <property role="3GE5qa" value="comp.compType" />
+    <ref role="1M2myG" to="v7ag:4h2MXXfElHJ" resolve="ComponentThisExpr" />
+    <node concept="9S07l" id="4h2MXXfEuME" role="9Vyp8">
+      <node concept="3clFbS" id="4h2MXXfEuMF" role="2VODD2">
+        <node concept="3clFbF" id="4h2MXXfEv03" role="3cqZAp">
+          <node concept="2OqwBi" id="4h2MXXfEv05" role="3clFbG">
+            <node concept="2OqwBi" id="4h2MXXfEv06" role="2Oq$k0">
+              <node concept="nLn13" id="4h2MXXfEv07" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4h2MXXfEv08" role="2OqNvi">
+                <node concept="1xMEDy" id="4h2MXXfEv09" role="1xVPHs">
+                  <node concept="chp4Y" id="4h2MXXfEvAr" role="ri$Ld">
+                    <ref role="cht4Q" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="4h2MXXfEv0b" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="4h2MXXfEv0c" role="2OqNvi" />
           </node>
         </node>
       </node>
