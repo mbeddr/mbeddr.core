@@ -6320,6 +6320,46 @@
   <node concept="13h7C7" id="71UKpntpx1s">
     <property role="3GE5qa" value="comp.instances" />
     <ref role="13h7C2" to="v7ag:3TmmsQkDdTS" resolve="AssemblyConnector" />
+    <node concept="13i0hz" id="5vIM0hK3LzL" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="getSource" />
+      <ref role="13i0hy" node="5vIM0hK3JEu" resolve="getSource" />
+      <node concept="3Tm1VV" id="5vIM0hK3LzM" role="1B3o_S" />
+      <node concept="3clFbS" id="5vIM0hK3LzP" role="3clF47">
+        <node concept="3cpWs6" id="5vIM0hK3Nl5" role="3cqZAp">
+          <node concept="2OqwBi" id="5vIM0hK3N$F" role="3cqZAk">
+            <node concept="13iPFW" id="5vIM0hK3NlA" role="2Oq$k0" />
+            <node concept="3TrEf2" id="5vIM0hK3NVk" role="2OqNvi">
+              <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTW" resolve="source" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5vIM0hK3LzQ" role="3clF45">
+        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="PortRef" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5vIM0hK3LzR" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="getTarget" />
+      <ref role="13i0hy" node="5vIM0hK3KJr" resolve="getTarget" />
+      <node concept="3Tm1VV" id="5vIM0hK3LzS" role="1B3o_S" />
+      <node concept="3clFbS" id="5vIM0hK3LzV" role="3clF47">
+        <node concept="3cpWs6" id="5vIM0hK3NYG" role="3cqZAp">
+          <node concept="2OqwBi" id="5vIM0hK3Oei" role="3cqZAk">
+            <node concept="13iPFW" id="5vIM0hK3NZd" role="2Oq$k0" />
+            <node concept="3TrEf2" id="5vIM0hK3O$V" role="2OqNvi">
+              <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTX" resolve="target" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5vIM0hK3LzW" role="3clF45">
+        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="PortRef" />
+      </node>
+    </node>
     <node concept="13i0hz" id="2ZUGF54kZL1" role="13h7CS">
       <property role="TrG5h" value="hasAsSource" />
       <node concept="3Tm1VV" id="2ZUGF54kZL2" role="1B3o_S" />
@@ -18950,6 +18990,33 @@
     </node>
     <node concept="13hLZK" id="ybcgwyDh7x" role="13h7CW">
       <node concept="3clFbS" id="ybcgwyDh7y" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5vIM0hK3JEj">
+    <property role="3GE5qa" value="comp.instances" />
+    <ref role="13h7C2" to="v7ag:6uK35z6bLLf" resolve="Connector" />
+    <node concept="13hLZK" id="5vIM0hK3JEk" role="13h7CW">
+      <node concept="3clFbS" id="5vIM0hK3JEl" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5vIM0hK3JEu" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <property role="TrG5h" value="getSource" />
+      <node concept="3Tm1VV" id="5vIM0hK3JEv" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5vIM0hK3KI7" role="3clF45">
+        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="PortRef" />
+      </node>
+      <node concept="3clFbS" id="5vIM0hK3JEx" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="5vIM0hK3KJr" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <property role="TrG5h" value="getTarget" />
+      <node concept="3Tm1VV" id="5vIM0hK3KJs" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5vIM0hK3KJt" role="3clF45">
+        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="PortRef" />
+      </node>
+      <node concept="3clFbS" id="5vIM0hK3KJu" role="3clF47" />
     </node>
   </node>
 </model>
