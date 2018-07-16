@@ -12,6 +12,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -37,6 +38,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -135,6 +139,11 @@
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
   </registry>
@@ -291,6 +300,67 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="35bnz87moh8" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6NK6gIFy2rv">
+    <property role="3GE5qa" value="projectionMode.body" />
+    <ref role="13h7C2" to="4w5v:6NK6gIFy2ru" resolve="PushHintFunction" />
+    <node concept="13hLZK" id="6NK6gIFy2rw" role="13h7CW">
+      <node concept="3clFbS" id="6NK6gIFy2rx" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6NK6gIFy2rE" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getParameterConcepts" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
+      <node concept="3Tm1VV" id="6NK6gIFy2rM" role="1B3o_S" />
+      <node concept="3clFbS" id="6NK6gIFy2rN" role="3clF47">
+        <node concept="3clFbF" id="6NK6gIFy2E7" role="3cqZAp">
+          <node concept="2ShNRf" id="6NK6gIFy2E5" role="3clFbG">
+            <node concept="Tc6Ow" id="6NK6gIFy3Nv" role="2ShVmc">
+              <node concept="3bZ5Sz" id="6NK6gIFy454" role="HW$YZ">
+                <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+              </node>
+              <node concept="35c_gC" id="6NK6gIFy5NM" role="HW$Y0">
+                <ref role="35c_gD" to="tp4k:hwtl41J" resolve="ConceptFunctionParameter_AnActionEvent" />
+              </node>
+              <node concept="35c_gC" id="6NK6gIFy8_g" role="HW$Y0">
+                <ref role="35c_gD" to="4w5v:6NK6gIFy6St" resolve="Parameter_PushHint" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="6NK6gIFy2rO" role="3clF45">
+        <node concept="3bZ5Sz" id="6NK6gIFy2rP" role="_ZDj9">
+          <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6NK6gIFy8Gv">
+    <property role="3GE5qa" value="projectionMode.body" />
+    <ref role="13h7C2" to="4w5v:6NK6gIFy6St" resolve="Parameter_PushHint" />
+    <node concept="13hLZK" id="6NK6gIFy8Gw" role="13h7CW">
+      <node concept="3clFbS" id="6NK6gIFy8Gx" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6NK6gIFy8GE" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:27DJnJtIQ9C" resolve="getType" />
+      <node concept="3Tm1VV" id="6NK6gIFy8GF" role="1B3o_S" />
+      <node concept="3clFbS" id="6NK6gIFy8GK" role="3clF47">
+        <node concept="3clFbF" id="6NK6gIFy8MV" role="3cqZAp">
+          <node concept="2c44tf" id="6NK6gIFy8MT" role="3clFbG">
+            <node concept="10P_77" id="6NK6gIFy8OL" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6NK6gIFy8GL" role="3clF45">
         <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
       </node>
     </node>

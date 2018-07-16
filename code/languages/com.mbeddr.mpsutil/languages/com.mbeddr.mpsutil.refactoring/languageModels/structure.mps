@@ -18,6 +18,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -194,6 +195,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="aozb:3y7CaIpppfq" resolve="DisableContextInstanceAction" />
     </node>
+    <node concept="1TJgyj" id="6NK6gIFvhsH" role="1TKVEi">
+      <property role="IQ2ns" value="7849801688419211053" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pushHintFunction" />
+      <ref role="20lvS9" node="6NK6gIFy2ru" resolve="PushHintFunction" />
+    </node>
     <node concept="1TJgyi" id="3onExzPlXp7" role="1TKVEl">
       <property role="TrG5h" value="menuLabel" />
       <property role="IQ2nx" value="3897771026684565063" />
@@ -219,6 +226,21 @@
     <property role="34LRSv" value="project tree node" />
     <property role="EcuMT" value="3711601327033637790" />
     <ref role="1TJDcQ" node="6xlxoSXdwNy" resolve="NodeChooser" />
+  </node>
+  <node concept="1TIwiD" id="6NK6gIFy2ru">
+    <property role="EcuMT" value="7849801688419935966" />
+    <property role="3GE5qa" value="projectionMode.body" />
+    <property role="TrG5h" value="PushHintFunction" />
+    <property role="R4oN_" value="embedded block of code" />
+    <property role="34LRSv" value="pushHint code" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="6NK6gIFy6St">
+    <property role="EcuMT" value="7849801688419954205" />
+    <property role="3GE5qa" value="projectionMode.body" />
+    <property role="TrG5h" value="Parameter_PushHint" />
+    <property role="34LRSv" value="pushHint" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 
