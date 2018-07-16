@@ -646,7 +646,7 @@
             <node concept="nLn13" id="79i$vAY78Rc" role="2Oq$k0" />
             <node concept="1mIQ4w" id="79i$vAY78Rd" role="2OqNvi">
               <node concept="chp4Y" id="6uK35z6bLLy" role="cj9EA">
-                <ref role="cht4Q" to="v7ag:6uK35z6bLLf" resolve="Connector" />
+                <ref role="cht4Q" to="v7ag:6uK35z6bLLf" resolve="AbstractConnector" />
               </node>
             </node>
           </node>
@@ -707,14 +707,14 @@
                 <node concept="3cpWsn" id="5vIM0hKZCTF" role="3cpWs9">
                   <property role="TrG5h" value="connector" />
                   <node concept="3Tqbb2" id="5vIM0hKZCTA" role="1tU5fm">
-                    <ref role="ehGHo" to="v7ag:6uK35z6bLLf" resolve="Connector" />
+                    <ref role="ehGHo" to="v7ag:6uK35z6bLLf" resolve="AbstractConnector" />
                   </node>
                   <node concept="2OqwBi" id="5vIM0hL0bwi" role="33vP2m">
                     <node concept="3kakTB" id="5vIM0hL04Dv" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="5vIM0hL0fJ6" role="2OqNvi">
                       <node concept="1xMEDy" id="5vIM0hL0fJ8" role="1xVPHs">
                         <node concept="chp4Y" id="5vIM0hL0jCz" role="ri$Ld">
-                          <ref role="cht4Q" to="v7ag:6uK35z6bLLf" resolve="Connector" />
+                          <ref role="cht4Q" to="v7ag:6uK35z6bLLf" resolve="AbstractConnector" />
                         </node>
                       </node>
                     </node>
@@ -728,14 +728,14 @@
                       <property role="3TUv4t" value="true" />
                       <property role="TrG5h" value="sourcePort" />
                       <node concept="3Tqbb2" id="5vIM0hKp6Tc" role="1tU5fm">
-                        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="PortRef" />
+                        <ref role="ehGHo" to="v7ag:2ZeMBoiZnWl" resolve="AbstractPortRef" />
                       </node>
                       <node concept="2OqwBi" id="5vIM0hKan_b" role="33vP2m">
                         <node concept="37vLTw" id="5vIM0hL1n$b" role="2Oq$k0">
                           <ref role="3cqZAo" node="5vIM0hKZCTF" resolve="connector" />
                         </node>
                         <node concept="2qgKlT" id="5vIM0hKaALI" role="2OqNvi">
-                          <ref role="37wK5l" to="eup9:5vIM0hK3JEu" resolve="getSourcePort" />
+                          <ref role="37wK5l" to="eup9:5vIM0hK3JEu" resolve="getSource" />
                         </node>
                       </node>
                     </node>
@@ -966,7 +966,7 @@
                             <ref role="3cqZAo" node="5vIM0hKZCTF" resolve="connector" />
                           </node>
                           <node concept="2qgKlT" id="5vIM0hKj8ST" role="2OqNvi">
-                            <ref role="37wK5l" to="eup9:5vIM0hK3KJr" resolve="getTargetPort" />
+                            <ref role="37wK5l" to="eup9:5vIM0hK3KJr" resolve="getTarget" />
                           </node>
                         </node>
                         <node concept="3kakTB" id="5CkU_dHiq4e" role="3uHU7B" />
