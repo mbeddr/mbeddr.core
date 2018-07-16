@@ -1847,7 +1847,7 @@
   </node>
   <node concept="1M2fIO" id="1Rr52SXzTHD">
     <property role="3GE5qa" value="comp.ports" />
-    <ref role="1M2myG" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
+    <ref role="1M2myG" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
     <node concept="EnEH3" id="4JF77iuUazo" role="1MhHOB">
       <ref role="EomxK" to="tpck:gOOYnlO" resolve="shortDescription" />
       <node concept="Eqf_E" id="4JF77iuUazp" role="EtsB7">
