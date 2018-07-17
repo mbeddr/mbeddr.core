@@ -6137,6 +6137,68 @@
         </node>
         <node concept="3clFbJ" id="5FX7zI1wyPZ" role="3cqZAp">
           <node concept="3clFbS" id="5FX7zI1wyQ1" role="3clFbx">
+            <node concept="3clFbH" id="55Nn3eVJTgn" role="3cqZAp" />
+            <node concept="3cpWs8" id="55Nn3eVJTo$" role="3cqZAp">
+              <node concept="3cpWsn" id="55Nn3eVJTo_" role="3cpWs9">
+                <property role="TrG5h" value="buildConfigs" />
+                <node concept="2I9FWS" id="55Nn3eVJTox" role="1tU5fm">
+                  <ref role="2I9WkF" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                </node>
+                <node concept="2OqwBi" id="55Nn3eVJToA" role="33vP2m">
+                  <node concept="1Q6Npb" id="55Nn3eVJToB" role="2Oq$k0" />
+                  <node concept="2RRcyG" id="55Nn3eVJToC" role="2OqNvi">
+                    <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="55Nn3eVJUuL" role="3cqZAp">
+              <node concept="3clFbS" id="55Nn3eVJUuN" role="3clFbx">
+                <node concept="3cpWs6" id="55Nn3eVK7lZ" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="55Nn3eVJY4L" role="3clFbw">
+                <node concept="37vLTw" id="55Nn3eVJUB8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="55Nn3eVJTo_" resolve="buildConfigs" />
+                </node>
+                <node concept="1v1jN8" id="55Nn3eVK7kz" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="55Nn3eVK7nX" role="3cqZAp">
+              <node concept="3cpWsn" id="55Nn3eVK7nY" role="3cpWs9">
+                <property role="TrG5h" value="executables" />
+                <node concept="A3Dl8" id="55Nn3eVK7nI" role="1tU5fm">
+                  <node concept="3Tqbb2" id="55Nn3eVK7nL" role="A3Ik2">
+                    <ref role="ehGHo" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="55Nn3eVK7nZ" role="33vP2m">
+                  <node concept="2OqwBi" id="55Nn3eVK7o0" role="2Oq$k0">
+                    <node concept="37vLTw" id="55Nn3eVK7o1" role="2Oq$k0">
+                      <ref role="3cqZAo" node="55Nn3eVJTo_" resolve="buildConfigs" />
+                    </node>
+                    <node concept="13MTOL" id="55Nn3eVK7o2" role="2OqNvi">
+                      <ref role="13MTZf" to="51wr:4o9sgv8R$fb" resolve="binaries" />
+                    </node>
+                  </node>
+                  <node concept="v3k3i" id="55Nn3eVK7o3" role="2OqNvi">
+                    <node concept="chp4Y" id="55Nn3eVK7o4" role="v3oSu">
+                      <ref role="cht4Q" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="55Nn3eVK7XZ" role="3cqZAp">
+              <node concept="3clFbS" id="55Nn3eVK7Y1" role="3clFbx">
+                <node concept="3cpWs6" id="55Nn3eVK8ui" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="55Nn3eVK8k0" role="3clFbw">
+                <node concept="37vLTw" id="55Nn3eVK86x" role="2Oq$k0">
+                  <ref role="3cqZAo" node="55Nn3eVK7nY" resolve="executables" />
+                </node>
+                <node concept="1v1jN8" id="55Nn3eVK8tZ" role="2OqNvi" />
+              </node>
+            </node>
             <node concept="3cpWs8" id="5FX7zI1vQeX" role="3cqZAp">
               <node concept="3cpWsn" id="5FX7zI1vQeY" role="3cpWs9">
                 <property role="TrG5h" value="executable" />
@@ -6144,23 +6206,8 @@
                   <ref role="ehGHo" to="51wr:4o9sgv8QoKi" resolve="Executable" />
                 </node>
                 <node concept="2OqwBi" id="5FX7zI1vQeZ" role="33vP2m">
-                  <node concept="2OqwBi" id="5FX7zI1vQf0" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5FX7zI1vQf1" role="2Oq$k0">
-                      <node concept="2OqwBi" id="5FX7zI1vQf2" role="2Oq$k0">
-                        <node concept="1Q6Npb" id="5FX7zI1vQf3" role="2Oq$k0" />
-                        <node concept="2RRcyG" id="5FX7zI1vQf4" role="2OqNvi">
-                          <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
-                        </node>
-                      </node>
-                      <node concept="13MTOL" id="5FX7zI1vQf5" role="2OqNvi">
-                        <ref role="13MTZf" to="51wr:4o9sgv8R$fb" resolve="binaries" />
-                      </node>
-                    </node>
-                    <node concept="v3k3i" id="5FX7zI1vQf6" role="2OqNvi">
-                      <node concept="chp4Y" id="5FX7zI1vQf7" role="v3oSu">
-                        <ref role="cht4Q" to="51wr:4o9sgv8QoKi" resolve="Executable" />
-                      </node>
-                    </node>
+                  <node concept="37vLTw" id="55Nn3eVK7o5" role="2Oq$k0">
+                    <ref role="3cqZAo" node="55Nn3eVK7nY" resolve="executables" />
                   </node>
                   <node concept="1uHKPH" id="5FX7zI1vQf8" role="2OqNvi" />
                 </node>
