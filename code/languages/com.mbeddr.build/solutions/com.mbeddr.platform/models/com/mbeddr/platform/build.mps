@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -4486,12 +4486,6 @@
         </node>
         <node concept="1SiIV0" id="qKMpfEH3Ta" role="3bR37C">
           <node concept="3bR9La" id="qKMpfEH3Tb" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3SA1_XWFir6" role="3bR37C">
-          <node concept="3bR9La" id="3SA1_XWFir7" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
           </node>
@@ -14970,6 +14964,12 @@
           <property role="3LESm3" value="4b706ccc-acf2-4850-a93e-1884d0a0fb68" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="7kE7CsbQi8O" role="3bR37C">
+          <node concept="3bR9La" id="7kE7CsbQi8P" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4kGsAe0vxvm" role="3989C9">
@@ -15078,7 +15078,7 @@
         <node concept="1SiIV0" id="2avgMTl5sBK" role="3bR37C">
           <node concept="3bR9La" id="2avgMTl5sBL" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
       </node>
