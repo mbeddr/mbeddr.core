@@ -516,10 +516,10 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="35d6qL4rGUU" role="3bR37C">
-          <node concept="3bR9La" id="35d6qL4rGUV" role="1SiIV1">
+        <node concept="1SiIV0" id="1jjBvQdN3hp" role="3bR37C">
+          <node concept="3bR9La" id="1jjBvQdN3hq" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="35d6qL4rGyg" resolve="com.mbeddr.ext.mathunitadapter" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
           </node>
         </node>
       </node>
