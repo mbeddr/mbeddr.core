@@ -15,7 +15,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
-    <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -784,7 +783,7 @@
           </node>
         </node>
         <node concept="Jncv_" id="5n9FwLWbhQr" role="3cqZAp">
-          <ref role="JncvD" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
+          <ref role="JncvD" to="mj1l:67O0HaCtjdR" resolve="IUnsigned" />
           <node concept="37vLTw" id="5n9FwLWbhYm" role="JncvB">
             <ref role="3cqZAo" node="5n9FwLWbfPL" resolve="type" />
           </node>
@@ -808,33 +807,6 @@
           <node concept="JncvC" id="5n9FwLWbhQW" role="JncvA">
             <property role="TrG5h" value="bitType" />
             <node concept="2jxLKc" id="5n9FwLWbhQX" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="Jncv_" id="5n9FwLWbluu" role="3cqZAp">
-          <ref role="JncvD" to="clbe:34uiID1td4_" resolve="SignedBitType" />
-          <node concept="37vLTw" id="5n9FwLWblHU" role="JncvB">
-            <ref role="3cqZAo" node="5n9FwLWbfPL" resolve="type" />
-          </node>
-          <node concept="3clFbS" id="5n9FwLWbluy" role="Jncv$">
-            <node concept="3clFbF" id="5n9FwLWbmjD" role="3cqZAp">
-              <node concept="37vLTI" id="5n9FwLWbmON" role="3clFbG">
-                <node concept="2OqwBi" id="5n9FwLWbn9T" role="37vLTx">
-                  <node concept="Jnkvi" id="5n9FwLWbmRu" role="2Oq$k0">
-                    <ref role="1M0zk5" node="5n9FwLWblu$" resolve="bitType" />
-                  </node>
-                  <node concept="2qgKlT" id="5n9FwLWbobo" role="2OqNvi">
-                    <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="5n9FwLWbmjC" role="37vLTJ">
-                  <ref role="3cqZAo" node="5n9FwLWbfPL" resolve="type" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="JncvC" id="5n9FwLWblu$" role="JncvA">
-            <property role="TrG5h" value="bitType" />
-            <node concept="2jxLKc" id="5n9FwLWblu_" role="1tU5fm" />
           </node>
         </node>
         <node concept="3cpWs6" id="7PyP3ULulth" role="3cqZAp">

@@ -411,11 +411,8 @@
               <node concept="37vLTw" id="7CiTYi$_uus" role="2Oq$k0">
                 <ref role="3cqZAo" node="7CiTYi$_u7W" resolve="collection" />
               </node>
-              <node concept="liA8E" id="7CiTYi$_uOD" role="2OqNvi">
-                <ref role="37wK5l" to="f4zo:~EditorCell_Collection.getCellAt(int):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getCellAt" />
-                <node concept="3cmrfG" id="7CiTYi$_uUf" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
-                </node>
+              <node concept="liA8E" id="6$SBfHyxeIF" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell_Collection.firstCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="firstCell" />
               </node>
             </node>
           </node>

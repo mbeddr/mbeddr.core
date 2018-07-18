@@ -3676,7 +3676,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getParentPopup" />
-      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
+      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getCategory" />
       <node concept="3Tm1VV" id="1uL8CIsPEvN" role="1B3o_S" />
       <node concept="3clFbS" id="1uL8CIsPEvQ" role="3clF47">
         <node concept="3clFbF" id="1uL8CIsPIrk" role="3cqZAp">
@@ -5198,7 +5198,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getParentPopup" />
-      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
+      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getCategory" />
       <node concept="3Tm1VV" id="1uL8CIsQ1Tp" role="1B3o_S" />
       <node concept="3clFbS" id="1uL8CIsQ1Ts" role="3clF47">
         <node concept="3clFbF" id="1uL8CIsQ5g$" role="3cqZAp">

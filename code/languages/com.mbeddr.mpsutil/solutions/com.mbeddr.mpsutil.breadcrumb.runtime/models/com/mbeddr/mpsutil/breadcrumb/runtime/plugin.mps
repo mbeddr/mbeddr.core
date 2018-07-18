@@ -9918,15 +9918,14 @@
                   <node concept="3cpWs8" id="61Pvu7KDfz3" role="3cqZAp">
                     <node concept="3cpWsn" id="61Pvu7KDfz4" role="3cpWs9">
                       <property role="TrG5h" value="firstLeaf" />
-                      <node concept="3uibUv" id="61Pvu7KDfz5" role="1tU5fm">
-                        <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+                      <node concept="3uibUv" id="6$SBfHxYj7K" role="1tU5fm">
+                        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
                       </node>
-                      <node concept="2OqwBi" id="61Pvu7KDfz6" role="33vP2m">
-                        <node concept="37vLTw" id="61Pvu7KDfz7" role="2Oq$k0">
+                      <node concept="2YIFZM" id="6$SBfHxYgVR" role="33vP2m">
+                        <ref role="37wK5l" to="f4zo:~CellTraversalUtil.getFirstLeaf(jetbrains.mps.openapi.editor.cells.EditorCell):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getFirstLeaf" />
+                        <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
+                        <node concept="37vLTw" id="6$SBfHxYhR6" role="37wK5m">
                           <ref role="3cqZAo" node="61Pvu7KDfyV" resolve="nodeCell" />
-                        </node>
-                        <node concept="liA8E" id="61Pvu7KDfz8" role="2OqNvi">
-                          <ref role="37wK5l" to="g51k:~EditorCell.getFirstLeaf():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getFirstLeaf" />
                         </node>
                       </node>
                     </node>
@@ -9934,8 +9933,8 @@
                   <node concept="3cpWs8" id="6MzUSwzizBs" role="3cqZAp">
                     <node concept="3cpWsn" id="6MzUSwzizBt" role="3cpWs9">
                       <property role="TrG5h" value="targetCell" />
-                      <node concept="3uibUv" id="6MzUSwzizBi" role="1tU5fm">
-                        <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+                      <node concept="3uibUv" id="6$SBfHxYjv7" role="1tU5fm">
+                        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
                       </node>
                       <node concept="3K4zz7" id="6MzUSwzizBu" role="33vP2m">
                         <node concept="37vLTw" id="6MzUSwzizBv" role="3K4E3e">

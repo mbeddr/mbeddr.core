@@ -1103,8 +1103,8 @@
                 <node concept="YeOm9" id="7h8uwjEAzfg" role="2ShVmc">
                   <node concept="1Y3b0j" id="7h8uwjEAzfj" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;()" resolve="AbstractCellProvider" />
                     <ref role="1Y3XeK" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
+                    <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
                     <node concept="3Tm1VV" id="7h8uwjEAzfk" role="1B3o_S" />
                     <node concept="3clFb_" id="7h8uwjEAzfl" role="jymVt">
                       <property role="1EzhhJ" value="false" />
@@ -1156,6 +1156,7 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="pncrf" id="5s568DFLkMe" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -2470,7 +2471,7 @@
                 <ref role="3cqZAo" node="4mLQOETx6t7" resolve="chooser" />
               </node>
               <node concept="liA8E" id="4mLQOETxecG" role="2OqNvi">
-                <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.setLocationRelative(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="setLocationRelative" />
+                <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.setContextCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="setContextCell" />
                 <node concept="37vLTw" id="4mLQOETxecH" role="37wK5m">
                   <ref role="3cqZAo" node="4_OjW93mTC2" resolve="parent" />
                 </node>

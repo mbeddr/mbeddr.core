@@ -333,7 +333,7 @@
                       <node concept="1Y3b0j" id="7KO_iaIVpP" role="YeSDq">
                         <property role="2bfB8j" value="true" />
                         <ref role="1Y3XeK" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
-                        <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;()" resolve="AbstractCellProvider" />
+                        <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
                         <node concept="312cEg" id="3cilTABYK2B" role="jymVt">
                           <property role="34CwA1" value="false" />
                           <property role="eg7rD" value="false" />
@@ -523,6 +523,7 @@
                             <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                           </node>
                         </node>
+                        <node concept="pncrf" id="6$SBfHyz4Kq" role="37wK5m" />
                       </node>
                     </node>
                   </node>

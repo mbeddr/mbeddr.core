@@ -24520,6 +24520,10 @@
   <node concept="jVnub" id="3pFNVizDKTX">
     <property role="TrG5h" value="switch_cellProvider" />
     <ref role="phYkn" to="tpc3:55my_QKXKCI" resolve="CellProviderWithRoleInitializer" />
+    <node concept="1N15co" id="4YnqLFjnwZ_" role="1s_3oS">
+      <property role="TrG5h" value="conceptFeature" />
+      <node concept="3Tqbb2" id="4YnqLFjnxnv" role="1N15GL" />
+    </node>
     <node concept="3aamgX" id="55my_QKYhdM" role="3aUrZf">
       <ref role="30HIoZ" to="teg0:3pFNVizDvwD" resolve="SplittableCell" />
       <node concept="1Koe21" id="A8YgUZCWSi" role="1lVwrX">

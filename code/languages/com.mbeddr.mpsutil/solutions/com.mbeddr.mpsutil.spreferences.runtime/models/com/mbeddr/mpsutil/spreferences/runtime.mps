@@ -409,14 +409,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2TKicqwoja6" role="3cqZAp">
-          <node concept="1rXfSq" id="2TKicqwoja7" role="3clFbG">
-            <ref role="37wK5l" to="exr9:~EditorComponent.setNoVirtualFile(boolean):void" resolve="setNoVirtualFile" />
-            <node concept="3clFbT" id="2TKicqwoja8" role="37wK5m">
-              <property role="3clFbU" value="true" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="2TKicqwoja9" role="3cqZAp">
           <node concept="37vLTI" id="2TKicqwojaa" role="3clFbG">
             <node concept="37vLTw" id="2TKicqwojab" role="37vLTJ">
