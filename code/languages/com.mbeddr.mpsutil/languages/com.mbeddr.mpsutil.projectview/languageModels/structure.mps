@@ -264,6 +264,11 @@
       <ref role="20lvS9" to="tp4k:hwtC5zi" resolve="ActionGroupDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3dJ0eUbDUtS">
+    <property role="EcuMT" value="3706182042894444408" />
+    <property role="TrG5h" value="DataProviderFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
   <node concept="1TIwiD" id="3dJ0eUbDUAO">
     <property role="EcuMT" value="3706182042894444980" />
     <property role="TrG5h" value="DataIdParamter" />
@@ -275,11 +280,6 @@
     <property role="TrG5h" value="ViewParamter" />
     <property role="34LRSv" value="view" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-  </node>
-  <node concept="1TIwiD" id="3dJ0eUbDUtS">
-    <property role="EcuMT" value="3706182042894444408" />
-    <property role="TrG5h" value="DataProviderFunction" />
-    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 
