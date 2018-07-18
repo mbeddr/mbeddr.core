@@ -17,6 +17,7 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="okc0" ref="r:a77b09d3-76cb-4b3b-9620-10102158ec08(com.mbeddr.ext.components.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -210,9 +211,8 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="71UKpntmzO$" role="3EZMnx">
-        <property role="3F0ifm" value="mock component" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <node concept="PMmxH" id="77Zd6XAwp9t" role="3EZMnx">
+        <ref role="PMmxG" to="okc0:6uK35z5YrAa" resolve="EditorComponent_ComponentConceptName" />
       </node>
       <node concept="3F0A7n" id="71UKpntmzOA" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -684,9 +684,8 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="5u7uvg8pZU2" role="3EZMnx">
-        <property role="3F0ifm" value="stub component" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <node concept="PMmxH" id="77Zd6XAwnd6" role="3EZMnx">
+        <ref role="PMmxG" to="okc0:6uK35z5YrAa" resolve="EditorComponent_ComponentConceptName" />
       </node>
       <node concept="3F0A7n" id="5u7uvg8pZU3" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

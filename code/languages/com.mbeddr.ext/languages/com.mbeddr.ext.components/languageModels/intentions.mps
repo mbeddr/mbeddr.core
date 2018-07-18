@@ -1384,7 +1384,7 @@
   <node concept="2S6QgY" id="1lsyexBNOrw">
     <property role="3GE5qa" value="comp.ports" />
     <property role="TrG5h" value="addCharacteristic" />
-    <ref role="2ZfgGC" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+    <ref role="2ZfgGC" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
     <node concept="2S6ZIM" id="1lsyexBNOrx" role="2ZfVej">
       <node concept="3clFbS" id="1lsyexBNOry" role="2VODD2">
         <node concept="3clFbF" id="1lsyexBNOr_" role="3cqZAp">
