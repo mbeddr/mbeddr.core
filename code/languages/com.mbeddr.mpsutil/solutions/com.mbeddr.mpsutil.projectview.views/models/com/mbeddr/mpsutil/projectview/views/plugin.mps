@@ -181,6 +181,7 @@
         <child id="8171045391088784356" name="actionGroupId" index="3a5v6p" />
         <child id="8171045391086960055" name="icon" index="3actZa" />
         <child id="8171045391095993151" name="isApplicable" index="3aIZ52" />
+        <child id="422925152297718652" name="foldersActionGroupId" index="1C_xHj" />
         <child id="650292813705764058" name="childTreeNodes" index="1DVp44" />
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
@@ -192,7 +193,6 @@
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <reference id="8309912865649284888" name="extends" index="14aYEx" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
-        <child id="4600337039047025779" name="label" index="3GFWDq" />
       </concept>
       <concept id="8309912865649636002" name="com.mbeddr.mpsutil.projectview.structure.QueryElementReference" flags="ng" index="14b0Wr">
         <reference id="8309912865649636121" name="element" index="14b0Uw" />
@@ -611,6 +611,10 @@
         </node>
         <node concept="14a6R6" id="4GrfODAR9g7" role="37wK5m" />
       </node>
+      <node concept="10M0yZ" id="nuy2XHmVnT" role="1C_xHj">
+        <ref role="3cqZAo" to="qq03:~NamespaceActions_ActionGroup.ID" resolve="ID" />
+        <ref role="1PxDUh" to="qq03:~NamespaceActions_ActionGroup" resolve="NamespaceActions_ActionGroup" />
+      </node>
     </node>
     <node concept="14aYG3" id="75_oBQVXuuy" role="14aYEy">
       <property role="TrG5h" value="moduleInProject" />
@@ -973,6 +977,10 @@
         </node>
         <node concept="39bAoz" id="4GrfODAX9Gw" role="2OqNvi" />
       </node>
+      <node concept="10M0yZ" id="nuy2XHilcZ" role="1C_xHj">
+        <ref role="1PxDUh" to="qq03:~NamespaceActions_ActionGroup" resolve="NamespaceActions_ActionGroup" />
+        <ref role="3cqZAo" to="qq03:~NamespaceActions_ActionGroup.ID" resolve="ID" />
+      </node>
     </node>
     <node concept="14aYG3" id="75_oBQVFYyv" role="14aYEy">
       <property role="TrG5h" value="nodeConcept" />
@@ -1201,9 +1209,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="Xl_RD" id="nuy2XHdudG" role="3GFWDq">
-      <property role="Xl_RC" value="LVC" />
     </node>
   </node>
   <node concept="312cEu" id="75_oBQVwQhb">
