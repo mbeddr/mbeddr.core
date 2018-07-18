@@ -28,6 +28,8 @@
     <import index="xnls" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.icons(MPS.Platform/)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="l7us" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.icons(MPS.Platform/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -513,9 +515,9 @@
     </node>
     <node concept="14aYG3" id="75_oBQVpcgK" role="14aYEy">
       <property role="TrG5h" value="modulesPool" />
-      <node concept="10M0yZ" id="75_oBQVpctf" role="3actZa">
-        <ref role="3cqZAo" to="xnls:~IdeIcons.MODULE_GROUP_CLOSED" resolve="MODULE_GROUP_CLOSED" />
-        <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
+      <node concept="10M0yZ" id="3Gpcve3cKZx" role="3actZa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Nodes.ModuleGroup" resolve="ModuleGroup" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Nodes" resolve="AllIcons.Nodes" />
       </node>
       <node concept="Xl_RD" id="75_oBQVpct1" role="14a853">
         <property role="Xl_RC" value="Modules Pool" />
@@ -524,6 +526,10 @@
     <node concept="14aYG3" id="75_oBQVq38t" role="14aYEy">
       <property role="TrG5h" value="transientModules" />
       <ref role="3GDMyY" node="7diJr$RuyJf" resolve="module" />
+      <node concept="10M0yZ" id="3Gpcve3cxTe" role="3actZa">
+        <ref role="3cqZAo" to="l7us:~MPSIcons$Nodes.TransientModule" resolve="TransientModule" />
+        <ref role="1PxDUh" to="l7us:~MPSIcons$Nodes" resolve="MPSIcons.Nodes" />
+      </node>
       <node concept="2OqwBi" id="75_oBQVq679" role="14bQOc">
         <node concept="1eOMI4" id="75_oBQVq5FJ" role="2Oq$k0">
           <node concept="10QFUN" id="75_oBQVq5FK" role="1eOMHV">
@@ -570,10 +576,6 @@
         <node concept="14b0Wr" id="75_oBQVx5qX" role="37wK5m">
           <ref role="14b0Uw" node="75_oBQVq38t" resolve="transientModules" />
         </node>
-      </node>
-      <node concept="10M0yZ" id="$6jtTx1j21" role="3actZa">
-        <ref role="3cqZAo" to="xnls:~IdeIcons.TRANSIENT_MODELS_ICON" resolve="TRANSIENT_MODELS_ICON" />
-        <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
       </node>
     </node>
     <node concept="14aYG3" id="7diJr$RuyJf" role="14aYEy">
@@ -1013,9 +1015,9 @@
       <node concept="Xl_RD" id="75_oBQVgtnW" role="14a853">
         <property role="Xl_RC" value="properties" />
       </node>
-      <node concept="10M0yZ" id="75_oBQV_fCo" role="3actZa">
-        <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
-        <ref role="3cqZAo" to="rvbb:~Icons.PROPERTY_ICON" resolve="PROPERTY_ICON" />
+      <node concept="10M0yZ" id="3Gpcve3c1M5" role="3actZa">
+        <ref role="3cqZAo" to="xnls:~IdeIcons.DEFAULT_ICON" resolve="DEFAULT_ICON" />
+        <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
       </node>
       <node concept="3clFbT" id="7rgP_7GOF6x" role="2q6PdT">
         <property role="3clFbU" value="false" />
@@ -1029,7 +1031,7 @@
       </node>
       <node concept="10M0yZ" id="75_oBQVGpF1" role="3actZa">
         <ref role="3cqZAo" to="xnls:~IdeIcons.REFERENCE_ICON" resolve="REFERENCE_ICON" />
-        <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
+        <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
       </node>
       <node concept="3clFbT" id="7rgP_7GOF6W" role="2q6PdT">
         <property role="3clFbU" value="false" />
