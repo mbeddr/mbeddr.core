@@ -4737,22 +4737,18 @@
       </node>
       <node concept="19RgSI" id="5FX7zI1vrLs" role="1UOdpc">
         <property role="TrG5h" value="p_mode" />
-        <node concept="rcJHQ" id="2_ZWxSyUUXL" role="2C2TGm">
+        <node concept="26Vqph" id="3zjTglTHbaY" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" to="ml7g:41BTkV3Wh_Z" resolve="mode_t" />
         </node>
       </node>
     </node>
     <node concept="3GEVxB" id="5FX7zI1vrLX" role="2OODSX">
-      <property role="3GEa6x" value="true" />
+      <property role="3GEa6x" value="false" />
       <ref role="3GEb4d" to="ml7g:6LsWDiKmfzg" resolve="unistd" />
     </node>
     <node concept="3GEVxB" id="55Nn3eVH9LN" role="2OODSX">
       <ref role="3GEb4d" to="ml7g:7OvELZFKM_O" resolve="stat" />
-    </node>
-    <node concept="3GEVxB" id="2_ZWxSySCd7" role="2OODSX">
-      <ref role="3GEb4d" to="ml7g:41BTkV3Wh_r" resolve="types" />
     </node>
   </node>
 </model>

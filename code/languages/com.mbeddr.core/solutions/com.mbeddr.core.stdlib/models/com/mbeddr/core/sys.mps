@@ -6007,33 +6007,6 @@
         </node>
       </node>
     </node>
-    <node concept="N3Fnw" id="2_ZWxSyUUpG" role="N3F5h">
-      <property role="TrG5h" value="mkdir" />
-      <property role="2OOxQR" value="false" />
-      <node concept="3TlMh2" id="2_ZWxSyUUnH" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="19RgSI" id="2_ZWxSyUUtx" role="1UOdpc">
-        <property role="TrG5h" value="path" />
-        <node concept="3wxxNl" id="2_ZWxSyUUwr" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="biTqx" id="2_ZWxSyUUtw" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="19RgSI" id="2_ZWxSyUUuM" role="1UOdpc">
-        <property role="TrG5h" value="mode" />
-        <node concept="rcJHQ" id="2_ZWxSyUUuK" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="5FX7zI0DAeb" resolve="mode_t" />
-        </node>
-      </node>
-    </node>
     <node concept="2NXPZ9" id="2_ZWxSyUUl$" role="N3F5h">
       <property role="TrG5h" value="empty_1531907356922_17" />
     </node>
