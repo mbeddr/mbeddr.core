@@ -6,12 +6,32 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
     <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
+    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
+    <use id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components" version="0" />
+    <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" name="com.mbeddr.mpsutil.jung" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
   <imports />
   <registry>
+    <language id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components">
+      <concept id="807751914255908947" name="com.mbeddr.analyses.cbmc.components.structure.ComponentsCBMCAnalysis" flags="ng" index="gU3p5">
+        <reference id="807751914255908948" name="analyzedComponent" index="gU3p2" />
+      </concept>
+    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
@@ -98,6 +118,7 @@
         <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+        <property id="8445711190801184380" name="hasPreprocessorMacroSettings" index="3u2WvC" />
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
@@ -692,7 +713,7 @@
     </node>
     <node concept="2EWCuY" id="4kJ3EIm6jxe" role="N3F5h">
       <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="component" />
+      <property role="TrG5h" value="componentWithDecTabInPPC" />
       <node concept="2EWHp_" id="4kJ3EIm6jxf" role="2RW2fA">
         <property role="TrG5h" value="interf" />
         <ref role="2EX0h9" node="4kJ3EIm6jx3" resolve="interface" />
@@ -829,7 +850,7 @@
       <property role="2OOxQR" value="true" />
       <node concept="2EWCuV" id="4kJ3EIm6jxU" role="5JtDH">
         <property role="TrG5h" value="com" />
-        <ref role="2EWCuU" node="4kJ3EIm6jxe" resolve="component" />
+        <ref role="2EWCuU" node="4kJ3EIm6jxe" resolve="componentWithDecTabInPPC" />
       </node>
       <node concept="21gPQu" id="4kJ3EIm6jxV" role="5JtDH">
         <property role="TrG5h" value="comp" />
@@ -1110,7 +1131,7 @@
       <property role="TrG5h" value="empty_1355151606820_2" />
     </node>
     <node concept="N3Fnx" id="3jtKiJDjmzi" role="N3F5h">
-      <property role="TrG5h" value="entry" />
+      <property role="TrG5h" value="entryStatefulComponents" />
       <property role="3mNisv" value="false" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="3jtKiJDjmzj" role="3XIRFX">
@@ -2526,8 +2547,8 @@
   </node>
   <node concept="29QVxn" id="4$9c1ZwB$1d" />
   <node concept="3uEX16" id="2UdC0h0PRV7">
-    <property role="2lelRm" value="false" />
-    <property role="2lUGe1" value="true" />
+    <property role="2lelRm" value="true" />
+    <property role="2lUGe1" value="false" />
     <property role="2l50Lc" value="false" />
     <property role="22uFEx" value="false" />
     <property role="2l50Ka" value="none" />
@@ -2539,8 +2560,59 @@
     <property role="2lUGcN" value="false" />
     <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="conf" />
+    <node concept="1nvAUJ" id="23JWu_Cen3S" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="4kJ3EIm6jwT" resolve="aFunCallingComponentRunnable" />
+    </node>
+    <node concept="1nvAUJ" id="23JWu_CenhZ" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="false" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="34Ib7$WTf0n" resolve="entryComponentTypes" />
+    </node>
+    <node concept="1nvAUJ" id="23JWu_Cenp3" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="6T3uXzTf5k0" resolve="entryPointComp3" />
+    </node>
     <node concept="1nvAUJ" id="2UdC0h0PRV8" role="3V$2$K">
-      <property role="2lelRm" value="true" />
+      <property role="2lelRm" value="false" />
       <property role="2lUGe1" value="false" />
       <property role="2l50Lc" value="false" />
       <property role="22uFEx" value="false" />
@@ -2554,8 +2626,43 @@
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="13FtHz69dHZ" resolve="entryPointComp5" />
     </node>
+    <node concept="1nvAUJ" id="23JWu_CenuA" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="5Lx3sEEktT2" resolve="entryPointComp6" />
+    </node>
+    <node concept="gU3p5" id="23JWu_BVNUr" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="false" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="gU3p2" node="4kJ3EIm6jxe" resolve="componentWithDecTabInPPC" />
+      <ref role="3V$Cn$" node="4kJ3EIm6juJ" resolve="main" />
+    </node>
     <node concept="1nvAUJ" id="1GDKzvUkUi6" role="3V$2$K">
-      <property role="2lelRm" value="true" />
+      <property role="2lelRm" value="false" />
       <property role="2lUGe1" value="false" />
       <property role="2l50Lc" value="false" />
       <property role="22uFEx" value="false" />
@@ -2568,13 +2675,31 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="3jtKiJDjmzi" resolve="entry" />
+      <ref role="3V$Cn$" node="3jtKiJDjmzi" resolve="entryStatefulComponents" />
+    </node>
+    <node concept="3GEVxB" id="23JWu_Cen1X" role="3W6d8T">
+      <ref role="3GEb4d" node="4kJ3EIm6jwr" resolve="Comp1" />
+    </node>
+    <node concept="3GEVxB" id="23JWu_CeneZ" role="3W6d8T">
+      <ref role="3GEb4d" node="34Ib7$WTdLb" resolve="Comp2" />
+    </node>
+    <node concept="3GEVxB" id="23JWu_Ceno8" role="3W6d8T">
+      <ref role="3GEb4d" node="RsLjUnMNu5" resolve="Comp3" />
     </node>
     <node concept="3GEVxB" id="2UdC0h0PRVa" role="3W6d8T">
       <ref role="3GEb4d" node="13FtHz696Vm" resolve="Comp5" />
     </node>
+    <node concept="3GEVxB" id="23JWu_CenqZ" role="3W6d8T">
+      <ref role="3GEb4d" node="5Lx3sEEktRM" resolve="Comp6" />
+    </node>
     <node concept="3GEVxB" id="1GDKzvUkUhZ" role="3W6d8T">
       <ref role="3GEb4d" node="3jtKiJDjmyO" resolve="StatefulComponents" />
+    </node>
+    <node concept="3GEVxB" id="CFc5xq3$oU" role="3W6d8T">
+      <ref role="3GEb4d" node="4kJ3EIm6jx2" resolve="DecTabInPPC" />
+    </node>
+    <node concept="3GEVxB" id="23JWu_BW1$_" role="3W6d8T">
+      <ref role="3GEb4d" node="4kJ3EIm6juG" resolve="main" />
     </node>
   </node>
 </model>
