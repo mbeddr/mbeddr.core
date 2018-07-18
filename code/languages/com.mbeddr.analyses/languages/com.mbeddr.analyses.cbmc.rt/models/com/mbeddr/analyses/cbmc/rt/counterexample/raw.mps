@@ -41,11 +41,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
-        <child id="1153952416686" name="body" index="2GV8ay" />
-        <child id="1153952429843" name="finallyBody" index="2GVbov" />
-        <child id="1164903700860" name="catchClause" index="TEXxN" />
-      </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
@@ -241,6 +236,9 @@
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
+      <concept id="1221737317277" name="jetbrains.mps.baseLanguage.structure.StaticInitializer" flags="lg" index="1Pe0a1">
+        <child id="1221737317278" name="statementList" index="1Pe0a2" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -1694,24 +1692,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4Ow3NnwKnLn" role="3cqZAp">
-          <node concept="3cpWsn" id="4Ow3NnwKnLm" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="cl" />
-            <node concept="3uibUv" id="4Ow3NnwKnLo" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~ClassLoader" resolve="ClassLoader" />
-            </node>
-            <node concept="2OqwBi" id="4Ow3NnwKnLp" role="33vP2m">
-              <node concept="2YIFZM" id="4Ow3NnwKnLX" role="2Oq$k0">
-                <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                <ref role="37wK5l" to="wyt6:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
-              </node>
-              <node concept="liA8E" id="4Ow3NnwKnLr" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Thread.getContextClassLoader():java.lang.ClassLoader" resolve="getContextClassLoader" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3SKdUt" id="57eVTvnLYKC" role="3cqZAp">
           <node concept="3SKdUq" id="57eVTvnLZwq" role="3SKWNk">
             <property role="3SKdUp" value="default result of CBMC if 'nothing' is output is that everything is OK" />
@@ -1770,64 +1750,12 @@
             </node>
           </node>
         </node>
-        <node concept="2GUZhq" id="4Ow3NnwK_WS" role="3cqZAp">
-          <node concept="3clFbS" id="WwTuEsuZX_" role="2GV8ay">
-            <node concept="3clFbF" id="4Ow3NnwKnLu" role="3cqZAp">
-              <node concept="2OqwBi" id="4Ow3NnwKnLv" role="3clFbG">
-                <node concept="2YIFZM" id="4Ow3NnwKnM1" role="2Oq$k0">
-                  <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                  <ref role="37wK5l" to="wyt6:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
-                </node>
-                <node concept="liA8E" id="4Ow3NnwKnLx" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader):void" resolve="setContextClassLoader" />
-                  <node concept="2OqwBi" id="4Ow3NnwKnLy" role="37wK5m">
-                    <node concept="2OqwBi" id="4Ow3NnwKnLz" role="2Oq$k0">
-                      <node concept="37vLTw" id="4Ow3NnwLl0B" role="2Oq$k0">
-                        <ref role="3cqZAo" node="WwTuEsv03x" resolve="xmlHandler" />
-                      </node>
-                      <node concept="liA8E" id="4Ow3NnwKnL_" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="4Ow3NnwKnLA" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.getClassLoader():java.lang.ClassLoader" resolve="getClassLoader" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="WwTuEsuZWX" role="3cqZAp">
-              <node concept="3cpWsn" id="WwTuEsuZWY" role="3cpWs9">
-                <property role="TrG5h" value="spf" />
-                <node concept="3uibUv" id="WwTuEsuZWZ" role="1tU5fm">
-                  <ref role="3uigEE" to="vpqd:~SAXParserFactory" resolve="SAXParserFactory" />
-                </node>
-                <node concept="2YIFZM" id="WwTuEsuZX2" role="33vP2m">
-                  <ref role="37wK5l" to="vpqd:~SAXParserFactory.newInstance():javax.xml.parsers.SAXParserFactory" resolve="newInstance" />
-                  <ref role="1Pybhc" to="vpqd:~SAXParserFactory" resolve="SAXParserFactory" />
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="WwTuEsuZX7" role="3cqZAp">
-              <node concept="3cpWsn" id="WwTuEsuZX8" role="3cpWs9">
-                <property role="TrG5h" value="sp" />
-                <node concept="3uibUv" id="WwTuEsuZX9" role="1tU5fm">
-                  <ref role="3uigEE" to="vpqd:~SAXParser" resolve="SAXParser" />
-                </node>
-                <node concept="2OqwBi" id="WwTuEsuZXs" role="33vP2m">
-                  <node concept="37vLTw" id="WwTuEsuZXb" role="2Oq$k0">
-                    <ref role="3cqZAo" node="WwTuEsuZWY" resolve="spf" />
-                  </node>
-                  <node concept="liA8E" id="WwTuEsuZXy" role="2OqNvi">
-                    <ref role="37wK5l" to="vpqd:~SAXParserFactory.newSAXParser():javax.xml.parsers.SAXParser" resolve="newSAXParser" />
-                  </node>
-                </node>
-              </node>
-            </node>
+        <node concept="SfApY" id="560HybK_vtT" role="3cqZAp">
+          <node concept="3clFbS" id="WwTuEsuZX_" role="SfCbr">
             <node concept="3clFbF" id="WwTuEsuZY5" role="3cqZAp">
               <node concept="2OqwBi" id="WwTuEsuZYn" role="3clFbG">
-                <node concept="37vLTw" id="WwTuEsuZY6" role="2Oq$k0">
-                  <ref role="3cqZAo" node="WwTuEsuZX8" resolve="sp" />
+                <node concept="37vLTw" id="191E9vacmug" role="2Oq$k0">
+                  <ref role="3cqZAo" node="191E9vacinT" resolve="mySAXParser" />
                 </node>
                 <node concept="liA8E" id="WwTuEsuZYs" role="2OqNvi">
                   <ref role="37wK5l" to="vpqd:~SAXParser.parse(org.xml.sax.InputSource,org.xml.sax.helpers.DefaultHandler):void" resolve="parse" />
@@ -1846,7 +1774,7 @@
               </node>
             </node>
           </node>
-          <node concept="TDmWw" id="WwTuEsuZXB" role="TEXxN">
+          <node concept="TDmWw" id="WwTuEsuZXB" role="TEbGg">
             <node concept="3cpWsn" id="WwTuEsuZXC" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="WwTuEsuZXF" role="1tU5fm">
@@ -1933,22 +1861,6 @@
               <node concept="3cpWs6" id="ShTxRszzQp" role="3cqZAp">
                 <node concept="37vLTw" id="7lqcRYfWYKJ" role="3cqZAk">
                   <ref role="3cqZAo" node="7lqcRYfWYKE" resolve="result" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="4Ow3NnwK_WV" role="2GVbov">
-            <node concept="3clFbF" id="4Ow3NnwKnLK" role="3cqZAp">
-              <node concept="2OqwBi" id="4Ow3NnwKnLL" role="3clFbG">
-                <node concept="2YIFZM" id="4Ow3NnwKnLZ" role="2Oq$k0">
-                  <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                  <ref role="37wK5l" to="wyt6:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
-                </node>
-                <node concept="liA8E" id="4Ow3NnwKnLN" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader):void" resolve="setContextClassLoader" />
-                  <node concept="37vLTw" id="4Ow3NnwKnLO" role="37wK5m">
-                    <ref role="3cqZAo" node="4Ow3NnwKnLm" resolve="cl" />
-                  </node>
                 </node>
               </node>
             </node>
@@ -2084,6 +1996,65 @@
       <node concept="17QB3L" id="7lqcRYfXaR9" role="3clF45" />
       <node concept="NWlO9" id="7lqcRYfXnHj" role="lGtFl">
         <property role="NWlVz" value="Utility to format error explanations." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="191E9vaceYA" role="jymVt" />
+    <node concept="Wx3nA" id="191E9vacinT" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="mySAXParser" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="191E9vachSS" role="1B3o_S" />
+      <node concept="3uibUv" id="191E9vacind" role="1tU5fm">
+        <ref role="3uigEE" to="vpqd:~SAXParser" resolve="SAXParser" />
+      </node>
+      <node concept="NWlO9" id="560HybK_zY3" role="lGtFl">
+        <property role="NWlVz" value="The SAX parser which will parse the lifted results." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="191E9vaciPx" role="jymVt" />
+    <node concept="1Pe0a1" id="191E9vackOo" role="jymVt">
+      <node concept="3clFbS" id="191E9vackOp" role="1Pe0a2">
+        <node concept="SfApY" id="191E9vaclAK" role="3cqZAp">
+          <node concept="3clFbS" id="191E9vaclAM" role="SfCbr">
+            <node concept="3clFbF" id="191E9vacllz" role="3cqZAp">
+              <node concept="37vLTI" id="191E9vaclqZ" role="3clFbG">
+                <node concept="37vLTw" id="191E9vaclly" role="37vLTJ">
+                  <ref role="3cqZAo" node="191E9vacinT" resolve="mySAXParser" />
+                </node>
+                <node concept="2OqwBi" id="191E9vaclts" role="37vLTx">
+                  <node concept="2YIFZM" id="191E9vacltt" role="2Oq$k0">
+                    <ref role="1Pybhc" to="vpqd:~SAXParserFactory" resolve="SAXParserFactory" />
+                    <ref role="37wK5l" to="vpqd:~SAXParserFactory.newInstance():javax.xml.parsers.SAXParserFactory" resolve="newInstance" />
+                  </node>
+                  <node concept="liA8E" id="191E9vacltu" role="2OqNvi">
+                    <ref role="37wK5l" to="vpqd:~SAXParserFactory.newSAXParser():javax.xml.parsers.SAXParser" resolve="newSAXParser" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="191E9vaclAN" role="TEbGg">
+            <node concept="3cpWsn" id="191E9vaclAP" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="191E9vaclT3" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="191E9vaclAT" role="TDEfX">
+              <node concept="3clFbF" id="191E9vacm3$" role="3cqZAp">
+                <node concept="2OqwBi" id="191E9vacm9f" role="3clFbG">
+                  <node concept="37vLTw" id="191E9vacm3z" role="2Oq$k0">
+                    <ref role="3cqZAo" node="191E9vaclAP" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="191E9vacmlq" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="NWlO9" id="3_HSwtcH$N6" role="lGtFl">
