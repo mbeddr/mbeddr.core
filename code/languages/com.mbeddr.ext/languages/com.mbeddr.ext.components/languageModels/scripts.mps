@@ -161,7 +161,7 @@
             <node concept="3cpWsn" id="Z4PF258Bec" role="3cpWs9">
               <property role="TrG5h" value="port" />
               <node concept="3Tqbb2" id="Z4PF258BBH" role="1tU5fm">
-                <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
               </node>
               <node concept="1eOMI4" id="Z4PF258BLo" role="33vP2m">
                 <node concept="10QFUN" id="Z4PF258BLp" role="1eOMHV">
@@ -182,7 +182,7 @@
                     </node>
                   </node>
                   <node concept="3Tqbb2" id="Z4PF258BLg" role="10QFUM">
-                    <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                    <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
                   </node>
                 </node>
               </node>
@@ -269,7 +269,7 @@
             <node concept="3cpWsn" id="Z4PF258FX6" role="3cpWs9">
               <property role="TrG5h" value="port" />
               <node concept="3Tqbb2" id="Z4PF258FX7" role="1tU5fm">
-                <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
               </node>
               <node concept="1eOMI4" id="Z4PF258FX8" role="33vP2m">
                 <node concept="10QFUN" id="Z4PF258FX9" role="1eOMHV">
@@ -282,7 +282,7 @@
                     </node>
                   </node>
                   <node concept="3Tqbb2" id="Z4PF258FXh" role="10QFUM">
-                    <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                    <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
                   </node>
                 </node>
               </node>
