@@ -3994,7 +3994,7 @@
                                                           </node>
                                                           <node concept="10M0yZ" id="4VxYGcHoodQ" role="37vLTx">
                                                             <ref role="3cqZAo" to="xnls:~IdeIcons.UNKNOWN_ICON" resolve="UNKNOWN_ICON" />
-                                                            <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
+                                                            <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
                                                           </node>
                                                         </node>
                                                       </node>
