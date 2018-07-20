@@ -195,7 +195,7 @@
               <node concept="2OqwBi" id="5CkU_dHieHv" role="37wK5m">
                 <node concept="v3k3i" id="5CkU_dHieHw" role="2OqNvi">
                   <node concept="chp4Y" id="5CkU_dHieHx" role="v3oSu">
-                    <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+                    <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="Library" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="5CkU_dHieHy" role="2Oq$k0">

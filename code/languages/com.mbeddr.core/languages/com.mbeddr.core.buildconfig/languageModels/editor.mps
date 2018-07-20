@@ -1256,11 +1256,11 @@
   </node>
   <node concept="24kQdi" id="2kkumeGQcAA">
     <property role="3GE5qa" value="binary" />
-    <ref role="1XX52x" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+    <ref role="1XX52x" to="51wr:2kkumeGQcAy" resolve="Library" />
     <node concept="3EZMnI" id="7FzSIra5mWo" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="7FzSIra5mWp" role="3EZMnx">
-        <property role="3F0ifm" value="static library" />
+        <property role="3F0ifm" value="library" />
         <node concept="pVoyu" id="7FzSIra5mWq" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1342,6 +1342,44 @@
                     </node>
                   </node>
                   <node concept="34oBXx" id="5CuCVUfjUnp" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5ara9Pcny8J" role="3EZMnx">
+        <node concept="VPM3Z" id="5ara9Pcny8L" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5ara9PcddZE" role="3EZMnx">
+          <property role="3F0ifm" value="shared:" />
+        </node>
+        <node concept="27S6Sx" id="5ara9PceFsS" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:5ara9Pcdcpm" resolve="shared" />
+        </node>
+        <node concept="2iRfu4" id="5ara9Pcny8O" role="2iSdaV" />
+        <node concept="pkWqt" id="5ara9Pcnz$d" role="pqm2j">
+          <node concept="3clFbS" id="5ara9Pcnz$e" role="2VODD2">
+            <node concept="3clFbF" id="5ara9PcnzF$" role="3cqZAp">
+              <node concept="2OqwBi" id="5ara9Pcnwb1" role="3clFbG">
+                <node concept="2OqwBi" id="5ara9PcnvnF" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5ara9PcnvnG" role="2Oq$k0">
+                    <node concept="pncrf" id="5ara9PcnvnH" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="5ara9PcnvnI" role="2OqNvi">
+                      <node concept="1xMEDy" id="5ara9PcnvnJ" role="1xVPHs">
+                        <node concept="chp4Y" id="5ara9PcnvnK" role="ri$Ld">
+                          <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="5ara9PcnvnL" role="2OqNvi">
+                    <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5ara9PcnwTZ" role="2OqNvi">
+                  <ref role="3TsBF5" to="51wr:5ara9PcmbE2" resolve="supportsSharedLibraries" />
                 </node>
               </node>
             </node>

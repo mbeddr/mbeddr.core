@@ -1072,8 +1072,8 @@
   </node>
   <node concept="2S6QgY" id="7FzSIra3eoc">
     <property role="3GE5qa" value="binary" />
-    <property role="TrG5h" value="addExternalIncludeForStaticLibrary" />
-    <ref role="2ZfgGC" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+    <property role="TrG5h" value="addExternalIncludeForLibrary" />
+    <ref role="2ZfgGC" to="51wr:2kkumeGQcAy" resolve="Library" />
     <node concept="2S6ZIM" id="7FzSIra3eod" role="2ZfVej">
       <node concept="3clFbS" id="7FzSIra3eoe" role="2VODD2">
         <node concept="3clFbF" id="7FzSIra3eof" role="3cqZAp">
