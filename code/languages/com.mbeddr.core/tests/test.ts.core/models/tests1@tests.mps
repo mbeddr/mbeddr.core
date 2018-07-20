@@ -196,7 +196,7 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
+      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
@@ -6435,11 +6435,6 @@
               <property role="2c7vTL" value="true" />
             </node>
             <node concept="7CXmI" id="3lIakVHkTws" role="lGtFl">
-              <node concept="1TM$A" id="1zouAvzOsJd" role="7EUXB">
-                <node concept="2PYRI3" id="1zouAvzOsJe" role="3lydEf">
-                  <ref role="39XzEq" to="n7pc:1exqRp95UZ" />
-                </node>
-              </node>
               <node concept="1TM$A" id="1zouAvzOsJf" role="7EUXB">
                 <node concept="2PYRI3" id="1zouAvzOsJg" role="3lydEf">
                   <ref role="39XzEq" to="p3tm:6WNZRNOVeoo" />
