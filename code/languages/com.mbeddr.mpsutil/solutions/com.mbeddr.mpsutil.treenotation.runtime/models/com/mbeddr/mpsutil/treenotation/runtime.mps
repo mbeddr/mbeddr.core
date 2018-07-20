@@ -630,6 +630,31 @@
           </node>
           <node concept="10Nm6u" id="7uOgiTbvtZ" role="37wK5m" />
         </node>
+        <node concept="3clFbF" id="3aGR_qcw66D" role="3cqZAp">
+          <node concept="2OqwBi" id="3aGR_qcw6f0" role="3clFbG">
+            <node concept="1rXfSq" id="3aGR_qcw66B" role="2Oq$k0">
+              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+            </node>
+            <node concept="liA8E" id="3aGR_qcw6F8" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.addListener(jetbrains.mps.openapi.editor.style.StyleListener):void" resolve="addListener" />
+              <node concept="1bVj0M" id="3aGR_qcw7u5" role="37wK5m">
+                <node concept="37vLTG" id="3aGR_qcw7wP" role="1bW2Oz">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="3aGR_qcw7Lu" role="1tU5fm">
+                    <ref role="3uigEE" to="hox0:~StyleChangeEvent" resolve="StyleChangeEvent" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="3aGR_qcw7u6" role="1bW5cS">
+                  <node concept="3clFbF" id="3aGR_qcw8OX" role="3cqZAp">
+                    <node concept="1rXfSq" id="3aGR_qcw8OW" role="3clFbG">
+                      <ref role="37wK5l" to="g51k:~EditorCell_Collection.requestRelayout():void" resolve="requestRelayout" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="7uOgiTbv4O" role="3clF46">
         <property role="TrG5h" value="editorContext" />
