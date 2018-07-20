@@ -5363,52 +5363,73 @@
         </node>
         <node concept="3clFbJ" id="5EXX68XhyWF" role="3cqZAp">
           <node concept="3clFbS" id="5EXX68XhyWI" role="3clFbx">
-            <node concept="3clFbF" id="2Rl5K506Wu7" role="3cqZAp">
-              <node concept="37vLTI" id="2Rl5K506WEZ" role="3clFbG">
-                <node concept="37vLTw" id="2Rl5K506WHd" role="37vLTJ">
+            <node concept="3clFbF" id="5EXX68Xh_aT" role="3cqZAp">
+              <node concept="37vLTI" id="5EXX68Xh_eb" role="3clFbG">
+                <node concept="37vLTw" id="5EXX68Xh_d6" role="37vLTJ">
                   <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
                 </node>
-                <node concept="2OqwBi" id="2Rl5K506WA1" role="37vLTx">
-                  <node concept="2OqwBi" id="2Rl5K506Wxs" role="2Oq$k0">
-                    <node concept="2YIFZM" id="2Rl5K506WwD" role="2Oq$k0">
-                      <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
-                      <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
-                    </node>
-                    <node concept="liA8E" id="2Rl5K506WzE" role="2OqNvi">
-                      <ref role="37wK5l" to="u78q:~TypeContextManager.createTypeCheckingContext(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.typesystem.inference.TypeCheckingContext" resolve="createTypeCheckingContext" />
-                      <node concept="37vLTw" id="2Rl5K506W_0" role="37wK5m">
-                        <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
-                      </node>
-                    </node>
+                <node concept="2OqwBi" id="5EXX68Xhtju" role="37vLTx">
+                  <node concept="37vLTw" id="5EXX68Xhtjv" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4_QpjDhBmS0" resolve="typeChecker" />
                   </node>
-                  <node concept="liA8E" id="2Rl5K506WC8" role="2OqNvi">
-                    <ref role="37wK5l" to="u78q:~TypeCheckingContext.getTypeOf_normalMode(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf_normalMode" />
-                    <node concept="37vLTw" id="2Rl5K506WDI" role="37wK5m">
+                  <node concept="liA8E" id="5EXX68Xhtjw" role="2OqNvi">
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getTypeOf(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf" />
+                    <node concept="37vLTw" id="5EXX68Xhtjx" role="37wK5m">
                       <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="2Rl5K506WLV" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="5EXX68Xh_aT" role="8Wnug">
-                <node concept="37vLTI" id="5EXX68Xh_eb" role="3clFbG">
-                  <node concept="37vLTw" id="5EXX68Xh_d6" role="37vLTJ">
-                    <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
+            <node concept="3clFbJ" id="8Qage886hp" role="3cqZAp">
+              <node concept="3clFbS" id="8Qage886hr" role="3clFbx">
+                <node concept="3SKdUt" id="8Qage887fq" role="3cqZAp">
+                  <node concept="3SKdUq" id="8Qage887fs" role="3SKWNk">
+                    <property role="3SKdUp" value="this code was used previously since rev. 8add7dc6 due to some scenario where the above call didn't succeeded" />
                   </node>
-                  <node concept="2OqwBi" id="5EXX68Xhtju" role="37vLTx">
-                    <node concept="37vLTw" id="5EXX68Xhtjv" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4_QpjDhBmS0" resolve="typeChecker" />
+                </node>
+                <node concept="3SKdUt" id="8Qage887xM" role="3cqZAp">
+                  <node concept="3SKdUq" id="8Qage887xO" role="3SKWNk">
+                    <property role="3SKdUp" value="now, because it doesn't work during a generator run, causing java.lang.IllegalStateException: Invalid usage of SimpleTypecheckingContext" />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="8Qage887yz" role="3cqZAp">
+                  <node concept="3SKdUq" id="8Qage887y$" role="3SKWNk">
+                    <property role="3SKdUp" value="we have to use it as a possible fallback turning back to the prev. code (above line)" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2Rl5K506Wu7" role="3cqZAp">
+                  <node concept="37vLTI" id="2Rl5K506WEZ" role="3clFbG">
+                    <node concept="37vLTw" id="2Rl5K506WHd" role="37vLTJ">
+                      <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
                     </node>
-                    <node concept="liA8E" id="5EXX68Xhtjw" role="2OqNvi">
-                      <ref role="37wK5l" to="u78q:~TypeChecker.getTypeOf(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf" />
-                      <node concept="37vLTw" id="5EXX68Xhtjx" role="37wK5m">
-                        <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                    <node concept="2OqwBi" id="2Rl5K506WA1" role="37vLTx">
+                      <node concept="2OqwBi" id="2Rl5K506Wxs" role="2Oq$k0">
+                        <node concept="2YIFZM" id="2Rl5K506WwD" role="2Oq$k0">
+                          <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
+                          <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
+                        </node>
+                        <node concept="liA8E" id="2Rl5K506WzE" role="2OqNvi">
+                          <ref role="37wK5l" to="u78q:~TypeContextManager.createTypeCheckingContext(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.typesystem.inference.TypeCheckingContext" resolve="createTypeCheckingContext" />
+                          <node concept="37vLTw" id="2Rl5K506W_0" role="37wK5m">
+                            <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="2Rl5K506WC8" role="2OqNvi">
+                        <ref role="37wK5l" to="u78q:~TypeCheckingContext.getTypeOf_normalMode(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf_normalMode" />
+                        <node concept="37vLTw" id="2Rl5K506WDI" role="37wK5m">
+                          <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                        </node>
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="8Qage886Rr" role="3clFbw">
+                <node concept="10Nm6u" id="8Qage886Z1" role="3uHU7w" />
+                <node concept="37vLTw" id="8Qage886xC" role="3uHU7B">
+                  <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
                 </node>
               </node>
             </node>
