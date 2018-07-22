@@ -293,9 +293,6 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
         <child id="1204834868751" name="expression" index="25KhWn" />
@@ -2357,7 +2354,9 @@
                 <node concept="37vLTw" id="3mMU_xngWvg" role="2Oq$k0">
                   <ref role="3cqZAo" node="3mMU_xngP_o" resolve="typedExp" />
                 </node>
-                <node concept="3JvlWi" id="3mMU_xngWXr" role="2OqNvi" />
+                <node concept="3TrEf2" id="79mt8R1DR4o" role="2OqNvi">
+                  <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+                </node>
               </node>
               <node concept="JncvC" id="3mMU_xngW6C" role="JncvA">
                 <property role="TrG5h" value="et" />
@@ -2414,7 +2413,9 @@
             <node concept="37vLTw" id="3mMU_xnhsbh" role="2Oq$k0">
               <ref role="3cqZAo" node="3mMU_xnhsbv" resolve="typedExp" />
             </node>
-            <node concept="3JvlWi" id="3mMU_xnhsbi" role="2OqNvi" />
+            <node concept="3TrEf2" id="79mt8R1DQJ4" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+            </node>
           </node>
           <node concept="JncvC" id="3mMU_xnhsbj" role="JncvA">
             <property role="TrG5h" value="et" />
