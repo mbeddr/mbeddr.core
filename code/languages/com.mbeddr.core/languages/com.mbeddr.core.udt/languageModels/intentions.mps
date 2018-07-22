@@ -474,7 +474,7 @@
       <node concept="3clFbS" id="3NfwoFeDO1p" role="2VODD2">
         <node concept="3clFbF" id="3NfwoFeDO1s" role="3cqZAp">
           <node concept="Xl_RD" id="3NfwoFeDO1t" role="3clFbG">
-            <property role="Xl_RC" value="Convert to Global Constants (#define)" />
+            <property role="Xl_RC" value="Convert to Group of #constant's" />
           </node>
         </node>
       </node>
