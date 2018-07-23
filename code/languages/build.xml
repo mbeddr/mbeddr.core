@@ -32,7 +32,7 @@
 	<property name="build-plugin.task" value="assemble" /> 
 	<property name="run-tests.task" value="check" />
 	
-	<!-- de.slisson.mps.all -->
+	<!-- de.itemis.mps.extensions -->
 	<property name="de.itemis.mps.extensions.build-file.location" value="${sl-all.scripts.base-path}/sl-all" />
 	<property name="de.itemis.mps.extensions.build-file.name" value="build.xml" />
 	<property name="mps-sl-all.zip-file.name" value="mps-sl-all.zip" />
