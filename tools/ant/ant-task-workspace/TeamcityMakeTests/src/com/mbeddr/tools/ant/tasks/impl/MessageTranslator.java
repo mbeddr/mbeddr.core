@@ -38,26 +38,24 @@ public class MessageTranslator {
 	public void translateMessages(File makeDirectory) throws Exception {
 		TestState currentTest = null;
 		String testSuiteName = util.extractTestSuiteName(makeDirectory);
-
 		logger.log(new TestSuiteStartedMessage(testSuiteName, true));
-
 		for (String msg : processResult.getMessages()) {
-			if (msg.startsWith("$$runningTest:")) {
+			if (msg.startsWith("runningTest: running test")) {
 				if(currentTest != null) {
 					// the previous test has finished
 					logger.log(new TestFinishedMessage(currentTest.getName()));
 				}
 				currentTest = new TestState(extractTestName(msg));
 				logger.log(new TestStartedMessage(currentTest.getName(), true));
-			} else if (msg.startsWith("$$FAILED:") && currentTest == null) {
+			} else if (msg.startsWith("FAILED: ***FAILED***") && currentTest == null) {
 				String[] path= makeDirectory.getCanonicalPath().split("/");
 				String testName = path[path.length-1];
 				currentTest = new TestState(testName);
 				logger.log(new TestStartedMessage(currentTest.getName(), true));
 				logger.log(new TestFailedMessage(currentTest.getName(), msg));
 				currentTest.setFailed();
-			} else if (msg.startsWith("$$FAILED:") && currentTest != null && !currentTest.isFailed() && processResult.getReturnCode() != 0) {
-				logger.log(new TestFailedMessage(currentTest.getName(), msg));
+			} else if (msg.startsWith("FAILED: ***FAILED***") && currentTest != null && !currentTest.isFailed() && processResult.getReturnCode() != 0) {
+				logger.log(new TestFailedMessage(currentTest.getName(), msg));				
 				currentTest.setFailed();
 			} else {
 				logger.log(new TeamcityStdOutMessage(msg));
@@ -77,7 +75,7 @@ public class MessageTranslator {
 			logger.log(new TestFinishedMessage(allTestLabel));
 		}
 		logger.log(new TestSuiteFinishedMessage(testSuiteName, processResult
-				.getReturnCode()));
+				.getReturnCode()));		
 	}
 	
 	static class TestState {
