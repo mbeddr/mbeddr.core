@@ -48,8 +48,14 @@ public class Util {
 	}
 
 	public boolean isInClassGenFolder(File file) {
-		return !file.getAbsolutePath().contains("/classes_gen/")
-				&& file.getAbsolutePath().contains("/source_gen/");
+		String classesGen = "/classes_gen/";
+		String sourceGen = "/source_gen/";
+		if (System.getProperty("os.name").toLowerCase().contains("win")) {
+			classesGen = "\\classes_gen\\";
+			sourceGen = "\\source_gen\\";
+		}
+		return !file.getAbsolutePath().contains(classesGen)
+				&& file.getAbsolutePath().contains(sourceGen);
 	}
 
 	public String extractTestSuiteName(File makeFilePath) {
@@ -57,7 +63,11 @@ public class Util {
 		int startIndex = path.indexOf("source_gen");
 		int length = "source_gen".length();
 		String identifier = path.substring(startIndex + length + 1);
-		return identifier.replace("/", ".");
+		String pathSeparatorChar = "/"; 
+		if (System.getProperty("os.name").toLowerCase().contains("win")) {
+			pathSeparatorChar = "\\";
+		}
+		return identifier.replace(pathSeparatorChar, ".");
 	}
 
 	public void logDirectory(File makeFilePath) {
