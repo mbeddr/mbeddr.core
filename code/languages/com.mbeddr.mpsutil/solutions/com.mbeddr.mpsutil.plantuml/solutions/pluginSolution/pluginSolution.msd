@@ -1,95 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.plantuml.pluginSolution" uuid="c0488c1e-322f-4f38-92d4-5520a7ce96c1" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-anim.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-awt-util.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-bridge.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-codec.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-css.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-dom.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-extension.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-gui-util.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-gvt.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-parser.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-script.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-svg-dom.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-svggen.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-swing.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-transcoder.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-util.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-xml.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="js.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="plantuml.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="xalan-2.6.0.jar" />
-    </modelRoot>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="batik-all.jar" />
+      <sourceRoot location="js.jar" />
+      <sourceRoot location="plantuml.jar" />
+      <sourceRoot location="xalan-2.6.0.jar" />
+    </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/batik-anim.jar" />
-    <stubModelEntry path="${module}/lib/batik-awt-util.jar" />
-    <stubModelEntry path="${module}/lib/batik-bridge.jar" />
-    <stubModelEntry path="${module}/lib/batik-codec.jar" />
-    <stubModelEntry path="${module}/lib/batik-css.jar" />
-    <stubModelEntry path="${module}/lib/batik-dom.jar" />
-    <stubModelEntry path="${module}/lib/batik-extension.jar" />
-    <stubModelEntry path="${module}/lib/batik-gui-util.jar" />
-    <stubModelEntry path="${module}/lib/batik-gvt.jar" />
-    <stubModelEntry path="${module}/lib/batik-parser.jar" />
-    <stubModelEntry path="${module}/lib/batik-script.jar" />
-    <stubModelEntry path="${module}/lib/batik-svg-dom.jar" />
-    <stubModelEntry path="${module}/lib/batik-svggen.jar" />
-    <stubModelEntry path="${module}/lib/batik-swing.jar" />
-    <stubModelEntry path="${module}/lib/batik-transcoder.jar" />
-    <stubModelEntry path="${module}/lib/batik-util.jar" />
-    <stubModelEntry path="${module}/lib/batik-xml.jar" />
-    <stubModelEntry path="${module}/lib/batik.jar" />
     <stubModelEntry path="${module}/lib/js.jar" />
     <stubModelEntry path="${module}/lib/plantuml.jar" />
     <stubModelEntry path="${module}/lib/xalan-2.6.0.jar" />
+    <stubModelEntry path="${module}/lib/batik-all.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
