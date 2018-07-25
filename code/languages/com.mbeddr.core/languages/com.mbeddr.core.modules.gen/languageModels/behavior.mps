@@ -4,6 +4,9 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -164,6 +167,21 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
+        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -2852,6 +2870,56 @@
       </node>
       <node concept="3Tqbb2" id="1NwarDnRY5b" role="3clF45">
         <ref role="ehGHo" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7MLN0_INFot">
+    <property role="3GE5qa" value="portability" />
+    <ref role="13h7C2" to="d0vh:7MLN0_IlBU3" resolve="MultiPlatformExpressionStatement" />
+    <node concept="13hLZK" id="7MLN0_INFou" role="13h7CW">
+      <node concept="3clFbS" id="7MLN0_INFov" role="2VODD2">
+        <node concept="3clFbF" id="7MLN0_INFoL" role="3cqZAp">
+          <node concept="37vLTI" id="7MLN0_INHr8" role="3clFbG">
+            <node concept="2OqwBi" id="7MLN0_INFCH" role="37vLTJ">
+              <node concept="13iPFW" id="7MLN0_INFoK" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7MLN0_KKFv7" role="2OqNvi">
+                <ref role="3Tt5mk" to="d0vh:6iIoqg1yCmj" resolve="win32Expr" />
+              </node>
+            </node>
+            <node concept="2pJPEk" id="7MLN0_IQ2tI" role="37vLTx">
+              <node concept="2pJPED" id="7MLN0_IQ2zk" role="2pJPEn">
+                <ref role="2pJxaS" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
+                <node concept="2pJxcG" id="7MLN0_IQ2Dh" role="2pJxcM">
+                  <ref role="2pJxcJ" to="yq40:5jmmCdx$f5U" resolve="value" />
+                  <node concept="Xl_RD" id="7MLN0_IQ2Jk" role="2pJxcZ">
+                    <property role="Xl_RC" value="statement expression to be used under Win32" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7MLN0_KKEtd" role="3cqZAp">
+          <node concept="37vLTI" id="7MLN0_KKEte" role="3clFbG">
+            <node concept="2OqwBi" id="7MLN0_KKEtf" role="37vLTJ">
+              <node concept="13iPFW" id="7MLN0_KKEtg" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7MLN0_KKEth" role="2OqNvi">
+                <ref role="3Tt5mk" to="c4fa:6iIoqg1yCmj" resolve="expr" />
+              </node>
+            </node>
+            <node concept="2pJPEk" id="7MLN0_KKEti" role="37vLTx">
+              <node concept="2pJPED" id="7MLN0_KKEtj" role="2pJPEn">
+                <ref role="2pJxaS" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
+                <node concept="2pJxcG" id="7MLN0_KKEtk" role="2pJxcM">
+                  <ref role="2pJxcJ" to="yq40:5jmmCdx$f5U" resolve="value" />
+                  <node concept="Xl_RD" id="7MLN0_KKEtl" role="2pJxcZ">
+                    <property role="Xl_RC" value="statement expression to be used for other platforms" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

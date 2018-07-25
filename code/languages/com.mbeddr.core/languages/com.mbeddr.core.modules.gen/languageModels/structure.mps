@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -11,6 +12,7 @@
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -321,6 +323,32 @@
       <node concept="trNpa" id="1lWQE5EvLa4" role="EQaZv">
         <ref role="trN6q" to="x27k:5_l8w1EmTcX" resolve="Module" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7MLN0_IlBU3">
+    <property role="EcuMT" value="8985187072458784387" />
+    <property role="3GE5qa" value="portability" />
+    <property role="TrG5h" value="MultiPlatformExpressionStatement" />
+    <ref role="1TJDcQ" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+    <node concept="1TJgyj" id="6iIoqg1yCmj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="win32Expr" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7254843406768833939" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7MLN0_Lazhp">
+    <property role="EcuMT" value="8985187072506213465" />
+    <property role="3GE5qa" value="portability" />
+    <property role="TrG5h" value="MultiPlatformReturnStatement" />
+    <ref role="1TJDcQ" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
+    <node concept="1TJgyj" id="7MLN0_Lazhq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="win32Expression" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="7254843406768833939" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>
