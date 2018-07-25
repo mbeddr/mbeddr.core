@@ -5656,6 +5656,66 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="$RhnyYN8h1" role="13h7CS">
+      <property role="TrG5h" value="genPushFunctionName" />
+      <node concept="3Tm1VV" id="$RhnyYN8h2" role="1B3o_S" />
+      <node concept="17QB3L" id="$RhnyYN8h3" role="3clF45" />
+      <node concept="3clFbS" id="$RhnyYN8h4" role="3clF47">
+        <node concept="3clFbF" id="$RhnyYN8h5" role="3cqZAp">
+          <node concept="3cpWs3" id="$RhnyYN8h6" role="3clFbG">
+            <node concept="Xl_RD" id="$RhnyYN8h7" role="3uHU7w">
+              <property role="Xl_RC" value="_push" />
+            </node>
+            <node concept="2OqwBi" id="$RhnyYN8h8" role="3uHU7B">
+              <node concept="13iPFW" id="$RhnyYN8h9" role="2Oq$k0" />
+              <node concept="3TrcHB" id="$RhnyYN8ha" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="$RhnyYNZWr" role="13h7CS">
+      <property role="TrG5h" value="genPopFunctionName" />
+      <node concept="3Tm1VV" id="$RhnyYNZWs" role="1B3o_S" />
+      <node concept="17QB3L" id="$RhnyYNZWt" role="3clF45" />
+      <node concept="3clFbS" id="$RhnyYNZWu" role="3clF47">
+        <node concept="3clFbF" id="$RhnyYNZWv" role="3cqZAp">
+          <node concept="3cpWs3" id="$RhnyYNZWw" role="3clFbG">
+            <node concept="Xl_RD" id="$RhnyYNZWx" role="3uHU7w">
+              <property role="Xl_RC" value="_pop" />
+            </node>
+            <node concept="2OqwBi" id="$RhnyYNZWy" role="3uHU7B">
+              <node concept="13iPFW" id="$RhnyYNZWz" role="2Oq$k0" />
+              <node concept="3TrcHB" id="$RhnyYNZW$" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="$RhnyYO7IZ" role="13h7CS">
+      <property role="TrG5h" value="genPeekFunctionName" />
+      <node concept="3Tm1VV" id="$RhnyYO7J0" role="1B3o_S" />
+      <node concept="17QB3L" id="$RhnyYO7J1" role="3clF45" />
+      <node concept="3clFbS" id="$RhnyYO7J2" role="3clF47">
+        <node concept="3clFbF" id="$RhnyYO7J3" role="3cqZAp">
+          <node concept="3cpWs3" id="$RhnyYO7J4" role="3clFbG">
+            <node concept="Xl_RD" id="$RhnyYO7J5" role="3uHU7w">
+              <property role="Xl_RC" value="_peek" />
+            </node>
+            <node concept="2OqwBi" id="$RhnyYO7J6" role="3uHU7B">
+              <node concept="13iPFW" id="$RhnyYO7J7" role="2Oq$k0" />
+              <node concept="3TrcHB" id="$RhnyYO7J8" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="gaSsNV1wSM" role="13h7CS">
       <property role="TrG5h" value="sizeAsNumber" />
       <node concept="3Tm1VV" id="gaSsNV1wSN" role="1B3o_S" />
