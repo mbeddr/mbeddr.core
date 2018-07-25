@@ -2,12 +2,16 @@
 <model ref="r:82cbc1be-d9cd-4ff4-95fb-c4c1668a38f7(com.mbeddr.core.modules.gen.textGen)">
   <persistence version="9" />
   <languages>
+    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="1ukv" ref="r:b37b80ef-b920-4af7-9966-3a77c955c860(com.mbeddr.core.modules.gen.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -56,10 +60,12 @@
       <concept id="8931911391946696733" name="jetbrains.mps.lang.textGen.structure.ExtensionDeclaration" flags="in" index="9MYSb" />
       <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
+        <property id="1237306318654" name="withIndent" index="ld1Su" />
         <child id="1237305790512" name="value" index="lb14g" />
       </concept>
       <concept id="1237305557638" name="jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart" flags="ng" index="la8eA">
         <property id="1237305576108" name="value" index="lacIc" />
+        <property id="1237306361677" name="withIndent" index="ldcpH" />
       </concept>
       <concept id="1237306079178" name="jetbrains.mps.lang.textGen.structure.AppendOperation" flags="nn" index="lc7rE">
         <child id="1237306115446" name="part" index="lcghm" />
@@ -646,6 +652,128 @@
               </node>
               <node concept="l8MVK" id="1NwarDnV2Me" role="lcghm" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="7MLN0_ImMBb">
+    <property role="3GE5qa" value="portability" />
+    <ref role="WuzLi" to="d0vh:7MLN0_IlBU3" resolve="MultiPlatformExpressionStatement" />
+    <node concept="11bSqf" id="7MLN0_ImMBc" role="11c4hB">
+      <node concept="3clFbS" id="7MLN0_ImMBd" role="2VODD2">
+        <node concept="lc7rE" id="7MLN0_Iqvft" role="3cqZAp">
+          <node concept="la8eA" id="7MLN0_IqvtF" role="lcghm">
+            <property role="lacIc" value="#ifdef _WIN32" />
+          </node>
+          <node concept="l8MVK" id="7MLN0_IGmiF" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="7LOsK3rQjZO" role="3cqZAp">
+          <node concept="l9hG8" id="7LOsK3rQjZQ" role="lcghm">
+            <property role="ld1Su" value="true" />
+            <node concept="2OqwBi" id="7LOsK3rQjZT" role="lb14g">
+              <node concept="117lpO" id="7LOsK3rQjZS" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7MLN0_KK_G4" role="2OqNvi">
+                <ref role="3Tt5mk" to="d0vh:6iIoqg1yCmj" resolve="win32Expr" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7LOsK3rQjZZ" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+          <node concept="l8MVK" id="7MLN0_J$ny9" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="7MLN0_IDc0q" role="3cqZAp">
+          <node concept="la8eA" id="7MLN0_IDc0r" role="lcghm">
+            <property role="lacIc" value="#else // _WIN32" />
+            <property role="ldcpH" value="true" />
+          </node>
+          <node concept="l8MVK" id="7MLN0_IGogk" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="7MLN0_ISmAr" role="3cqZAp">
+          <node concept="l9hG8" id="7MLN0_ISmAs" role="lcghm">
+            <property role="ld1Su" value="true" />
+            <node concept="2OqwBi" id="7MLN0_ISmAt" role="lb14g">
+              <node concept="117lpO" id="7MLN0_ISmAu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7MLN0_ISmAv" role="2OqNvi">
+                <ref role="3Tt5mk" to="c4fa:6iIoqg1yCmj" resolve="expr" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7MLN0_ISmAw" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+          <node concept="l8MVK" id="7MLN0_JfUJ9" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="7MLN0_IDc1r" role="3cqZAp">
+          <node concept="la8eA" id="7MLN0_IDc1s" role="lcghm">
+            <property role="lacIc" value="#endif // _WIN32" />
+            <property role="ldcpH" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="7MLN0_LazkY">
+    <property role="3GE5qa" value="portability" />
+    <ref role="WuzLi" to="d0vh:7MLN0_Lazhp" resolve="MultiPlatformReturnStatement" />
+    <node concept="11bSqf" id="7MLN0_LazkZ" role="11c4hB">
+      <node concept="3clFbS" id="7MLN0_Lazl0" role="2VODD2">
+        <node concept="lc7rE" id="7MLN0_LazBD" role="3cqZAp">
+          <node concept="la8eA" id="7MLN0_LazBE" role="lcghm">
+            <property role="lacIc" value="#ifdef _WIN32" />
+          </node>
+          <node concept="l8MVK" id="7MLN0_LazBF" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="7MLN0_LazBG" role="3cqZAp">
+          <node concept="la8eA" id="7MLN0_LaA10" role="lcghm">
+            <property role="lacIc" value="return" />
+            <property role="ldcpH" value="true" />
+          </node>
+          <node concept="l9hG8" id="7MLN0_LazBH" role="lcghm">
+            <property role="ld1Su" value="true" />
+            <node concept="2OqwBi" id="7MLN0_LazBI" role="lb14g">
+              <node concept="117lpO" id="7MLN0_LazBJ" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7MLN0_La$vy" role="2OqNvi">
+                <ref role="3Tt5mk" to="d0vh:7MLN0_Lazhq" resolve="win32Expression" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7MLN0_LazBL" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+          <node concept="l8MVK" id="7MLN0_LazBM" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="7MLN0_LazBN" role="3cqZAp">
+          <node concept="la8eA" id="7MLN0_LazBO" role="lcghm">
+            <property role="lacIc" value="#else // _WIN32" />
+            <property role="ldcpH" value="true" />
+          </node>
+          <node concept="l8MVK" id="7MLN0_LazBP" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="7MLN0_LazBQ" role="3cqZAp">
+          <node concept="la8eA" id="7MLN0_LaA8V" role="lcghm">
+            <property role="lacIc" value="return" />
+            <property role="ldcpH" value="true" />
+          </node>
+          <node concept="l9hG8" id="7MLN0_LazBR" role="lcghm">
+            <property role="ld1Su" value="true" />
+            <node concept="2OqwBi" id="7MLN0_LazBS" role="lb14g">
+              <node concept="117lpO" id="7MLN0_LazBT" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7MLN0_La_1E" role="2OqNvi">
+                <ref role="3Tt5mk" to="x27k:7LOsK3rQkUA" resolve="expression" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7MLN0_LazBV" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+          <node concept="l8MVK" id="7MLN0_LazBW" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="7MLN0_LazBX" role="3cqZAp">
+          <node concept="la8eA" id="7MLN0_LazBY" role="lcghm">
+            <property role="lacIc" value="#endif // _WIN32" />
+            <property role="ldcpH" value="true" />
           </node>
         </node>
       </node>
