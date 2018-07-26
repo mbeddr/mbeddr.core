@@ -385,10 +385,7 @@
           </node>
           <node concept="38rIoz" id="4Y$LvVOrpvc" role="38rM$J">
             <property role="38rIoG" value="FAIL" />
-            <property role="38rMdH" value="Contract Violation" />
-            <node concept="3Tqbb2" id="4Y$LvVOrpyZ" role="38rYrG">
-              <ref role="ehGHo" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
-            </node>
+            <property role="38rMdH" value="Error Label Reached" />
           </node>
           <node concept="37vLTw" id="8FyjeteYBJ" role="2v6RBE">
             <ref role="3cqZAo" node="4kJ3EIm6bJ$" resolve="res" />

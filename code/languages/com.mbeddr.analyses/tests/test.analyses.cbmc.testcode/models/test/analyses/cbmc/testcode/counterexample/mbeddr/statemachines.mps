@@ -45,7 +45,7 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
+      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
@@ -1574,11 +1574,31 @@
     <property role="2lUGcN" value="false" />
     <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="analysis_config" />
+    <node concept="3GEVxB" id="7Lj87PmERi4" role="3W6d8T">
+      <ref role="3GEb4d" node="38xi_3mwZu6" resolve="SM0" />
+    </node>
     <node concept="3GEVxB" id="23JWu_Chqw6" role="3W6d8T">
       <ref role="3GEb4d" node="4kJ3EIm6knT" resolve="SM1" />
     </node>
     <node concept="3GEVxB" id="23JWu_Chqwk" role="3W6d8T">
       <ref role="3GEb4d" node="2WJ8cS_wMfy" resolve="SM2" />
+    </node>
+    <node concept="1nvAUJ" id="7Lj87PmERip" role="3V$2$K">
+      <property role="2lelRm" value="true" />
+      <property role="2lUGe1" value="false" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="38xi_3mwZuA" resolve="testCounterexample" />
     </node>
     <node concept="1nvAUJ" id="23JWu_ChqA9" role="3V$2$K">
       <property role="2lelRm" value="false" />
