@@ -2822,21 +2822,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="4wNvmgre0mR" role="3cqZAp">
-          <node concept="3clFbS" id="4wNvmgre0mS" role="3clFbx">
-            <node concept="3cpWs6" id="4wNvmgre0mT" role="3cqZAp">
-              <node concept="Xl_RD" id="4wNvmgre0mU" role="3cqZAk">
-                <property role="Xl_RC" value="" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="4wNvmgre0mV" role="3clFbw">
-            <node concept="10Nm6u" id="4wNvmgre0mW" role="3uHU7w" />
-            <node concept="37vLTw" id="4wNvmgre0mX" role="3uHU7B">
-              <ref role="3cqZAo" node="4wNvmgre0mL" resolve="currentResult" />
-            </node>
-          </node>
-        </node>
         <node concept="3KaCP$" id="4wNvmgre0mY" role="3cqZAp">
           <node concept="37vLTw" id="4wNvmgre0mZ" role="3KbGdf">
             <ref role="3cqZAo" node="4wNvmgrdplY" resolve="columnIndex" />

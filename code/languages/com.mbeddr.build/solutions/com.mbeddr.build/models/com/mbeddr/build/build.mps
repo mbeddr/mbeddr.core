@@ -10203,7 +10203,7 @@
         </node>
         <node concept="1SiIV0" id="6UnenVLWdaY" role="3bR37C">
           <node concept="3bR9La" id="6UnenVLWdaZ" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
@@ -10313,6 +10313,12 @@
                 <property role="2Ry0Am" value="utils.msd" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Lj87PmUK3H" role="3bR37C">
+          <node concept="3bR9La" id="7Lj87PmUK3I" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
           </node>
         </node>
       </node>
