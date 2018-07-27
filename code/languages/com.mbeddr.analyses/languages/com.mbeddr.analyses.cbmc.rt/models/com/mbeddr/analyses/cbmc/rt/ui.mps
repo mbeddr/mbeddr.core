@@ -8615,6 +8615,9 @@
           <node concept="2YIFZM" id="4AQNBfV8uWz" role="37wK5m">
             <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
             <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+            <node concept="Xl_RD" id="9xehlFjl$N" role="37wK5m">
+              <property role="Xl_RC" value="5.9" />
+            </node>
             <node concept="Xl_RD" id="1so4croawj4" role="37wK5m">
               <property role="Xl_RC" value="5.8" />
             </node>
