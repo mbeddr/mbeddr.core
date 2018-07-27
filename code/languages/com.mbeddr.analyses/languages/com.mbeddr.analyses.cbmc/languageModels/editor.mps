@@ -34,6 +34,7 @@
     <import index="cjpk" ref="r:4cca77bb-25f2-455e-a1a2-de97cca7b4ba(com.mbeddr.analyses.base.verification_conditions.editor)" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
@@ -7454,14 +7455,20 @@
                 <node concept="3TQlhw" id="3r83Ks0gb4h" role="1Hhtcw">
                   <node concept="3clFbS" id="3r83Ks0gb4i" role="2VODD2">
                     <node concept="3clFbF" id="3r83Ks0gb4E" role="3cqZAp">
-                      <node concept="2YIFZM" id="5Hxjapwed33" role="3clFbG">
-                        <ref role="37wK5l" to="unno:7WvVJ3rORmu" resolve="getModelLongName" />
-                        <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                        <node concept="2JrnkZ" id="5Hxjapwed34" role="37wK5m">
-                          <node concept="2OqwBi" id="5Hxjapwed35" role="2JrQYb">
-                            <node concept="pncrf" id="5Hxjapwed36" role="2Oq$k0" />
-                            <node concept="I4A8Y" id="5Hxjapwed37" role="2OqNvi" />
+                      <node concept="2OqwBi" id="7Lj87Pn1fuf" role="3clFbG">
+                        <node concept="2OqwBi" id="7Lj87Pn1e0V" role="2Oq$k0">
+                          <node concept="2JrnkZ" id="5Hxjapwed34" role="2Oq$k0">
+                            <node concept="2OqwBi" id="5Hxjapwed35" role="2JrQYb">
+                              <node concept="pncrf" id="5Hxjapwed36" role="2Oq$k0" />
+                              <node concept="I4A8Y" id="5Hxjapwed37" role="2OqNvi" />
+                            </node>
                           </node>
+                          <node concept="liA8E" id="7Lj87Pn1f6u" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7Lj87Pn1gbj" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
                         </node>
                       </node>
                     </node>
