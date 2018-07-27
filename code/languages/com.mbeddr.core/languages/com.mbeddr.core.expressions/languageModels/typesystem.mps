@@ -202,9 +202,6 @@
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
       </concept>
     </language>
-    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
-      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -431,6 +428,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
+        <reference id="1139867957129" name="concept" index="1_rbq0" />
+      </concept>
       <concept id="6407023681583040953" name="jetbrains.mps.lang.smodel.structure.PropertyAttributeQualifier" flags="ng" index="3CFTII">
         <reference id="6407023681583040954" name="attributeConcept" index="3CFTIH" />
         <child id="6407023681583040955" name="propertyQualifier" index="3CFTIG" />
@@ -2603,7 +2603,7 @@
                         <ref role="3cqZAo" node="3LaV6lLOg4N" resolve="tsc" />
                       </node>
                       <node concept="2qgKlT" id="6w9JOkHQrk7" role="2OqNvi">
-                        <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="mapBasicType" />
+                        <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="getBasicTypeMapping" />
                         <node concept="2ShNRf" id="6w9JOkHQrkc" role="37wK5m">
                           <node concept="3zrR0B" id="6w9JOkHQrke" role="2ShVmc">
                             <node concept="3Tqbb2" id="6w9JOkHQrkf" role="3zrR0E">
@@ -3651,10 +3651,46 @@
         <node concept="3clFbS" id="2TbP0WsLSDq" role="3clFbx">
           <node concept="2MkqsV" id="2TbP0WsLSDL" role="3cqZAp">
             <node concept="Xl_RD" id="2TbP0WsLSDO" role="2MkJ7o">
-              <property role="Xl_RC" value="c99 type must be specified" />
+              <property role="Xl_RC" value="C99 type must be specified" />
             </node>
             <node concept="1YBJjd" id="2TbP0WsLSDP" role="2OEOjV">
               <ref role="1YBMHb" node="2TbP0WsLSDn" resolve="tss" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="2Wc_BLzaN0j" role="3cqZAp">
+        <node concept="3clFbS" id="2Wc_BLzaN0l" role="3clFbx">
+          <node concept="2MkqsV" id="2Wc_BLzaOfx" role="3cqZAp">
+            <node concept="Xl_RD" id="2Wc_BLzaOfK" role="2MkJ7o">
+              <property role="Xl_RC" value="char cannot be mapped to any C99 type (see https://stackoverflow.com/questions/17744226/int8-t-vs-char-which-is-the-best-one)" />
+            </node>
+            <node concept="1YBJjd" id="2Wc_BLzaOjC" role="2OEOjV">
+              <ref role="1YBMHb" node="2TbP0WsLSDn" resolve="tss" />
+            </node>
+            <node concept="3Cnw8n" id="2Wc_BLzgs86" role="2OEOjU">
+              <ref role="QpYPw" node="2Wc_BLzfXRE" resolve="convertCharToSignedChar" />
+              <node concept="3CnSsL" id="2Wc_BLzgsjZ" role="3Coj4f">
+                <ref role="QkamJ" node="2Wc_BLzfY2o" resolve="tss" />
+                <node concept="1YBJjd" id="2Wc_BLzgske" role="3CoRuB">
+                  <ref role="1YBMHb" node="2TbP0WsLSDn" resolve="tss" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="2Wc_BLzbGgj" role="3clFbw">
+          <node concept="2OqwBi" id="2Wc_BLzaN9v" role="2Oq$k0">
+            <node concept="1YBJjd" id="2Wc_BLzaN0K" role="2Oq$k0">
+              <ref role="1YBMHb" node="2TbP0WsLSDn" resolve="tss" />
+            </node>
+            <node concept="3TrEf2" id="2Wc_BLzaNqk" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:6w9JOkHS6za" resolve="basicType" />
+            </node>
+          </node>
+          <node concept="1mIQ4w" id="2Wc_BLzbGKO" role="2OqNvi">
+            <node concept="chp4Y" id="2Wc_BLzbHd9" role="cj9EA">
+              <ref role="cht4Q" to="mj1l:1spqZOskJPs" resolve="CharType" />
             </node>
           </node>
         </node>
@@ -4136,7 +4172,7 @@
               <ref role="3cqZAo" node="1iwpWaOx0Oa" resolve="config" />
             </node>
             <node concept="2qgKlT" id="1iwpWaOx0Ol" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="mapBasicType" />
+              <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="getBasicTypeMapping" />
               <node concept="1YBJjd" id="1iwpWaOx0Om" role="37wK5m">
                 <ref role="1YBMHb" node="3ccihsockZm" resolve="type" />
               </node>
@@ -4322,7 +4358,7 @@
                 <node concept="3clFbS" id="3ccihsoctud" role="3clFbx">
                   <node concept="2MkqsV" id="3ccihsocl_v" role="3cqZAp">
                     <node concept="3cpWs3" id="3ccihsocnTu" role="2MkJ7o">
-                      <node concept="2EnYce" id="3ccihsocnTE" role="3uHU7w">
+                      <node concept="2OqwBi" id="2Wc_BLyo_$V" role="3uHU7w">
                         <node concept="2OqwBi" id="79i$vAY5Q6j" role="2Oq$k0">
                           <node concept="2yIwOk" id="79i$vAY5Q6k" role="2OqNvi" />
                           <node concept="37vLTw" id="5HxjapwgJuQ" role="2Oq$k0">
@@ -12694,7 +12730,7 @@
               <ref role="3cqZAo" node="aFniQEtg18" resolve="tsc" />
             </node>
             <node concept="2qgKlT" id="aFniQEtg1k" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="mapBasicType" />
+              <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="getBasicTypeMapping" />
               <node concept="1YBJjd" id="aFniQEtg1l" role="37wK5m">
                 <ref role="1YBMHb" node="aFniQEirDF" resolve="basicType" />
               </node>
@@ -12831,7 +12867,7 @@
               <ref role="3cqZAo" node="aFniQEoDn4" resolve="tsc" />
             </node>
             <node concept="2qgKlT" id="aFniQEoDng" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="mapBasicType" />
+              <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="getBasicTypeMapping" />
               <node concept="1YBJjd" id="aFniQEoRpf" role="37wK5m">
                 <ref role="1YBMHb" node="aFniQEnmkn" resolve="basicType" />
               </node>
@@ -14025,6 +14061,44 @@
     <node concept="1YaCAy" id="LaPzvq4m0J" role="1YuTPh">
       <property role="TrG5h" value="divExpression" />
       <ref role="1YaFvo" to="mj1l:4ZVDCZCaQ8u" resolve="DivExpression" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="2Wc_BLzfXRE">
+    <property role="3GE5qa" value="typeSizeSpec" />
+    <property role="TrG5h" value="convertCharToSignedChar" />
+    <node concept="Q6JDH" id="2Wc_BLzfY2o" role="Q6Id_">
+      <property role="TrG5h" value="tss" />
+      <node concept="3Tqbb2" id="2Wc_BLzfY2p" role="Q6QK4">
+        <ref role="ehGHo" to="mj1l:2TbP0WsJvOP" resolve="TypeSizeSpecification" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="2Wc_BLzfXRF" role="Q6x$H">
+      <node concept="3clFbS" id="2Wc_BLzfXRG" role="2VODD2">
+        <node concept="3clFbF" id="2Wc_BLzfZis" role="3cqZAp">
+          <node concept="2OqwBi" id="2Wc_BLzg07b" role="3clFbG">
+            <node concept="2OqwBi" id="2Wc_BLzfZpS" role="2Oq$k0">
+              <node concept="QwW4i" id="2Wc_BLzfZir" role="2Oq$k0">
+                <ref role="QwW4h" node="2Wc_BLzfY2o" resolve="tss" />
+              </node>
+              <node concept="3TrEf2" id="2Wc_BLzfZOL" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6w9JOkHS6za" resolve="basicType" />
+              </node>
+            </node>
+            <node concept="1_qnLN" id="2Wc_BLzg0o9" role="2OqNvi">
+              <ref role="1_rbq0" to="mj1l:2Wc_BLyni6F" resolve="SignedCharType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="2Wc_BLzfYcX" role="QzAvj">
+      <node concept="3clFbS" id="2Wc_BLzfYcY" role="2VODD2">
+        <node concept="3clFbF" id="2Wc_BLzfYl_" role="3cqZAp">
+          <node concept="Xl_RD" id="2Wc_BLzfYl$" role="3clFbG">
+            <property role="Xl_RC" value="Convert to signed char" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
