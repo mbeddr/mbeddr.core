@@ -202,9 +202,6 @@
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
       </concept>
     </language>
-    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
-      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -4361,7 +4358,7 @@
                 <node concept="3clFbS" id="3ccihsoctud" role="3clFbx">
                   <node concept="2MkqsV" id="3ccihsocl_v" role="3cqZAp">
                     <node concept="3cpWs3" id="3ccihsocnTu" role="2MkJ7o">
-                      <node concept="2EnYce" id="3ccihsocnTE" role="3uHU7w">
+                      <node concept="2OqwBi" id="2Wc_BLyo_$V" role="3uHU7w">
                         <node concept="2OqwBi" id="79i$vAY5Q6j" role="2Oq$k0">
                           <node concept="2yIwOk" id="79i$vAY5Q6k" role="2OqNvi" />
                           <node concept="37vLTw" id="5HxjapwgJuQ" role="2Oq$k0">
