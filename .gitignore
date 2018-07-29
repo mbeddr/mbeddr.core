@@ -1,7 +1,6 @@
 # -----------------------------------------------------------
 # General
 
-
 distros/*
 MPS/*
 mps-distrib/*
@@ -21,7 +20,6 @@ artifacts/*
 
 .idea
 workspace.xml
-
 
 junitvmwatcher*.properties
 build.properties
@@ -59,16 +57,11 @@ code/languages/com.mbeddr.ext/diagrams/*.png
 code/languages/*/lib/*/classes_gen
 code/languages/*/lib/*/source_gen.caches
 
-
-
 # -----------------------------------------------------------
 # * tests
 test_gen
 test_gen.caches
 analyses_results
-
-
-
 
 # -----------------------------------------------------------
 # * project settings
@@ -85,7 +78,6 @@ code/applications/*/build.properties
 # tests
 code/languages/*/solutions/*/test_gen.caches/
 code/languages/*/solutions/*/test_gen/
-
 
 # -----------------------------------------------------------
 # documents
