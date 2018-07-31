@@ -51,6 +51,9 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -287,6 +290,24 @@
         <property role="TrG5h" value="repo" />
         <node concept="3uibUv" id="5KHBa6l3cWS" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="2QuU6zIQ9IH" role="13h7CS">
+      <property role="TrG5h" value="topLevelAnalyzerFactory" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="false" />
+      <node concept="3uibUv" id="2QuU6zIQiyG" role="3clF45">
+        <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
+      </node>
+      <node concept="3Tm1VV" id="2QuU6zIQ9IJ" role="1B3o_S" />
+      <node concept="3clFbS" id="2QuU6zIQ9IK" role="3clF47">
+        <node concept="3clFbF" id="2QuU6zIQi_w" role="3cqZAp">
+          <node concept="2ShNRf" id="2QuU6zIQi_u" role="3clFbG">
+            <node concept="HV5vD" id="2QuU6zIQiFp" role="2ShVmc">
+              <ref role="HV5vE" to="tzyt:3_HSwtcWQWH" resolve="AnalysisConfigurationAnalyzerFactory" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -2991,6 +3012,23 @@
         </node>
       </node>
       <node concept="10Oyi0" id="v5nKjVRSiE" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2QuU6zJiopk" role="13h7CS">
+      <property role="TrG5h" value="getTopLevelAnalyzerFactory" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="2QuU6zJiopl" role="1B3o_S" />
+      <node concept="3uibUv" id="2QuU6zJitsr" role="3clF45">
+        <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
+      </node>
+      <node concept="3clFbS" id="2QuU6zJiopn" role="3clF47">
+        <node concept="3clFbF" id="2QuU6zJitv0" role="3cqZAp">
+          <node concept="2ShNRf" id="2QuU6zJituY" role="3clFbG">
+            <node concept="HV5vD" id="2QuU6zJitEv" role="2ShVmc">
+              <ref role="HV5vE" to="tzyt:3_HSwtcWQWH" resolve="AnalysisConfigurationAnalyzerFactory" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="24_rWT3oku$" role="13h7CW">
       <node concept="3clFbS" id="24_rWT3oku_" role="2VODD2" />
