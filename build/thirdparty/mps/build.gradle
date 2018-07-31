@@ -28,12 +28,8 @@ task unzipMPS(dependsOn: downloadMPS) {
 
 task getMPS(dependsOn: unzipMPS) << { }
 
-println "$mpsUnpackedDir.absolutePath"
 // Repackages MPS so that the resulting zip contains the contents of 'MPS 3.<x>' directory of the original MPS zip
-task publishMPS(type: Zip, /*dependsOn: unzipMPS*/) {
-    doFirst {
-
-    }
+task publishMPS(type: Zip, dependsOn: unzipMPS) {
     from mpsUnpackedDir
 }
 
