@@ -7206,11 +7206,52 @@
           <node concept="17RlXB" id="3n5vksRUAX3" role="2OqNvi" />
         </node>
       </node>
+      <node concept="3clFbH" id="4WB_OvyNziz" role="3cqZAp" />
+      <node concept="3cpWs8" id="2_xtqg$xHNb" role="3cqZAp">
+        <node concept="3cpWsn" id="2_xtqg$xHNc" role="3cpWs9">
+          <property role="TrG5h" value="matcher" />
+          <node concept="3uibUv" id="2_xtqg$xHN6" role="1tU5fm">
+            <ref role="3uigEE" to="ni5j:~Matcher" resolve="Matcher" />
+          </node>
+          <node concept="2OqwBi" id="2_xtqg$xHNd" role="33vP2m">
+            <node concept="10M0yZ" id="2_xtqg$xHNe" role="2Oq$k0">
+              <ref role="3cqZAo" to="1s42:4WB_OvyNRkD" resolve="UNESCAPED_TRAILING_BACKSLASH" />
+              <ref role="1PxDUh" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
+            </node>
+            <node concept="liA8E" id="2_xtqg$xHNf" role="2OqNvi">
+              <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+              <node concept="2OqwBi" id="2_xtqg$xHNg" role="37wK5m">
+                <node concept="1YBJjd" id="2_xtqg$xHNh" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1$baREjPqqo" resolve="stringLiteral" />
+                </node>
+                <node concept="3TrcHB" id="2_xtqg$xHNi" role="2OqNvi">
+                  <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="1$baREjPsbm" role="3cqZAp">
         <node concept="3clFbS" id="1$baREjPsbn" role="3clFbx">
           <node concept="2MkqsV" id="1$baREjPt6b" role="3cqZAp">
-            <node concept="Xl_RD" id="1$baREjPt73" role="2MkJ7o">
-              <property role="Xl_RC" value="missing terminating \&quot; character" />
+            <node concept="3cpWs3" id="2_xtqg$xK$7" role="2MkJ7o">
+              <node concept="Xl_RD" id="2_xtqg$xKgW" role="3uHU7w">
+                <property role="Xl_RC" value=" character" />
+              </node>
+              <node concept="3cpWs3" id="2_xtqg$xKgO" role="3uHU7B">
+                <node concept="Xl_RD" id="2_xtqg$xKgU" role="3uHU7B">
+                  <property role="Xl_RC" value="unescaped trailing " />
+                </node>
+                <node concept="2OqwBi" id="2_xtqg$xKNe" role="3uHU7w">
+                  <node concept="37vLTw" id="2_xtqg$xKNf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2_xtqg$xHNc" resolve="matcher" />
+                  </node>
+                  <node concept="liA8E" id="2_xtqg$xKNg" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.group():java.lang.String" resolve="group" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="1YBJjd" id="1$baREjPt6w" role="2OEOjV">
               <ref role="1YBMHb" node="1$baREjPqqo" resolve="stringLiteral" />
@@ -7218,25 +7259,8 @@
           </node>
         </node>
         <node concept="2OqwBi" id="1$baREjQihl" role="3clFbw">
-          <node concept="2OqwBi" id="1$baREjQhF5" role="2Oq$k0">
-            <node concept="2YIFZM" id="1$baREjQhDL" role="2Oq$k0">
-              <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
-              <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
-              <node concept="Xl_RD" id="1$baREjPt2I" role="37wK5m">
-                <property role="Xl_RC" value="[^\\\\]\\\\$" />
-              </node>
-            </node>
-            <node concept="liA8E" id="1$baREjQhIK" role="2OqNvi">
-              <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
-              <node concept="2OqwBi" id="1$baREjQhOZ" role="37wK5m">
-                <node concept="1YBJjd" id="1$baREjQhJp" role="2Oq$k0">
-                  <ref role="1YBMHb" node="1$baREjPqqo" resolve="stringLiteral" />
-                </node>
-                <node concept="3TrcHB" id="1$baREjQieU" role="2OqNvi">
-                  <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
-                </node>
-              </node>
-            </node>
+          <node concept="37vLTw" id="2_xtqg$xHNj" role="2Oq$k0">
+            <ref role="3cqZAo" node="2_xtqg$xHNc" resolve="matcher" />
           </node>
           <node concept="liA8E" id="1$baREjQioH" role="2OqNvi">
             <ref role="37wK5l" to="ni5j:~Matcher.find():boolean" resolve="find" />
@@ -7244,16 +7268,45 @@
         </node>
       </node>
       <node concept="3clFbH" id="1$baREjTEQw" role="3cqZAp" />
-      <node concept="3SKdUt" id="1$baREjQCIB" role="3cqZAp">
-        <node concept="3SKdUq" id="1$baREjQCLg" role="3SKWNk">
-          <property role="3SKdUp" value="See https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences for details" />
+      <node concept="3clFbF" id="2_xtqg$xIze" role="3cqZAp">
+        <node concept="37vLTI" id="2_xtqg$xJ4t" role="3clFbG">
+          <node concept="37vLTw" id="2_xtqg$xIzc" role="37vLTJ">
+            <ref role="3cqZAo" node="2_xtqg$xHNc" resolve="matcher" />
+          </node>
+          <node concept="2OqwBi" id="4WB_OvyODnL" role="37vLTx">
+            <node concept="liA8E" id="4WB_OvyODnO" role="2OqNvi">
+              <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+              <node concept="2OqwBi" id="4WB_OvyODnP" role="37wK5m">
+                <node concept="1YBJjd" id="4WB_OvyODnQ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1$baREjPqqo" resolve="stringLiteral" />
+                </node>
+                <node concept="3TrcHB" id="4WB_OvyODnR" role="2OqNvi">
+                  <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
+                </node>
+              </node>
+            </node>
+            <node concept="10M0yZ" id="4WB_OvyPqy8" role="2Oq$k0">
+              <ref role="3cqZAo" to="1s42:4WB_OvyPkA2" resolve="UNKNOWN_ESCAPE_SEQUENCE" />
+              <ref role="1PxDUh" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3clFbJ" id="1$baREjPFCa" role="3cqZAp">
         <node concept="3clFbS" id="1$baREjPFCb" role="3clFbx">
           <node concept="a7r0C" id="1$baREjPI52" role="3cqZAp">
-            <node concept="Xl_RD" id="1$baREjPI54" role="a7wSD">
-              <property role="Xl_RC" value="unknown escape sequence" />
+            <node concept="3cpWs3" id="4WB_OvyOQJ1" role="a7wSD">
+              <node concept="2OqwBi" id="4WB_OvyORiw" role="3uHU7w">
+                <node concept="37vLTw" id="4WB_OvyOQVs" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2_xtqg$xHNc" resolve="matcher" />
+                </node>
+                <node concept="liA8E" id="4WB_OvyORzr" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Matcher.group():java.lang.String" resolve="group" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="1$baREjPI54" role="3uHU7B">
+                <property role="Xl_RC" value="unknown escape sequence: " />
+              </node>
             </node>
             <node concept="1YBJjd" id="1$baREjPI55" role="2OEOjV">
               <ref role="1YBMHb" node="1$baREjPqqo" resolve="stringLiteral" />
@@ -7261,50 +7314,24 @@
           </node>
         </node>
         <node concept="2OqwBi" id="1$baREjPHQA" role="3clFbw">
-          <node concept="2OqwBi" id="1$baREjPHgV" role="2Oq$k0">
-            <node concept="2YIFZM" id="1$baREjPHfA" role="2Oq$k0">
-              <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
-              <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
-              <node concept="Xl_RD" id="1$baREjPHfV" role="37wK5m">
-                <property role="Xl_RC" value="[^\\\\]\\\\[^abfnrtv\\\\'\&quot;\\?\\dx]" />
-              </node>
-            </node>
-            <node concept="liA8E" id="1$baREjPHkA" role="2OqNvi">
-              <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
-              <node concept="2OqwBi" id="1$baREjPHqP" role="37wK5m">
-                <node concept="1YBJjd" id="1$baREjPHlf" role="2Oq$k0">
-                  <ref role="1YBMHb" node="1$baREjPqqo" resolve="stringLiteral" />
-                </node>
-                <node concept="3TrcHB" id="1$baREjPHOb" role="2OqNvi">
-                  <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
-                </node>
-              </node>
-            </node>
+          <node concept="37vLTw" id="4WB_OvyODnS" role="2Oq$k0">
+            <ref role="3cqZAo" node="2_xtqg$xHNc" resolve="matcher" />
           </node>
           <node concept="liA8E" id="1$baREjPHXI" role="2OqNvi">
             <ref role="37wK5l" to="ni5j:~Matcher.find():boolean" resolve="find" />
           </node>
         </node>
       </node>
-      <node concept="3clFbJ" id="1$baREjTF7U" role="3cqZAp">
-        <node concept="3clFbS" id="1$baREjTF7W" role="3clFbx">
-          <node concept="2MkqsV" id="1$baREjTFaS" role="3cqZAp">
-            <node concept="Xl_RD" id="1$baREjTFba" role="2MkJ7o">
-              <property role="Xl_RC" value="\\x used with no following hex digits" />
-            </node>
-            <node concept="1YBJjd" id="1$baREjTH_6" role="2OEOjV">
-              <ref role="1YBMHb" node="1$baREjPqqo" resolve="stringLiteral" />
-            </node>
+      <node concept="3clFbH" id="2_xtqg$xXt0" role="3cqZAp" />
+      <node concept="3clFbF" id="2_xtqg$xXWQ" role="3cqZAp">
+        <node concept="37vLTI" id="2_xtqg$xYt7" role="3clFbG">
+          <node concept="37vLTw" id="2_xtqg$xXWO" role="37vLTJ">
+            <ref role="3cqZAo" node="2_xtqg$xHNc" resolve="matcher" />
           </node>
-        </node>
-        <node concept="2OqwBi" id="1$baREjTHou" role="3clFbw">
-          <node concept="2OqwBi" id="1$baREjTGMo" role="2Oq$k0">
-            <node concept="2YIFZM" id="1$baREjTGKF" role="2Oq$k0">
-              <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
-              <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
-              <node concept="Xl_RD" id="1$baREjTGL0" role="37wK5m">
-                <property role="Xl_RC" value="[^\\\\]\\\\x(\\D|$)" />
-              </node>
+          <node concept="2OqwBi" id="1$baREjTGMo" role="37vLTx">
+            <node concept="10M0yZ" id="2_xtqg$yEho" role="2Oq$k0">
+              <ref role="3cqZAo" to="1s42:2_xtqg$xYO3" resolve="INVALID_HEX_ENCODED_CHARACTER" />
+              <ref role="1PxDUh" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
             </node>
             <node concept="liA8E" id="1$baREjTGQ3" role="2OqNvi">
               <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
@@ -7318,8 +7345,35 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="1$baREjTF7U" role="3cqZAp">
+        <node concept="3clFbS" id="1$baREjTF7W" role="3clFbx">
+          <node concept="2MkqsV" id="1$baREjTFaS" role="3cqZAp">
+            <node concept="3cpWs3" id="2_xtqg$y3ib" role="2MkJ7o">
+              <node concept="2OqwBi" id="2_xtqg$y3II" role="3uHU7w">
+                <node concept="37vLTw" id="2_xtqg$y3xO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2_xtqg$xHNc" resolve="matcher" />
+                </node>
+                <node concept="liA8E" id="2_xtqg$y4kp" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Matcher.group():java.lang.String" resolve="group" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="1$baREjTFba" role="3uHU7B">
+                <property role="Xl_RC" value="invalid hex-encoded character: " />
+              </node>
+            </node>
+            <node concept="1YBJjd" id="1$baREjTH_6" role="2OEOjV">
+              <ref role="1YBMHb" node="1$baREjPqqo" resolve="stringLiteral" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="1$baREjTHou" role="3clFbw">
           <node concept="liA8E" id="1$baREjTHwA" role="2OqNvi">
             <ref role="37wK5l" to="ni5j:~Matcher.find():boolean" resolve="find" />
+          </node>
+          <node concept="37vLTw" id="2_xtqg$xYNK" role="2Oq$k0">
+            <ref role="3cqZAo" node="2_xtqg$xHNc" resolve="matcher" />
           </node>
         </node>
       </node>

@@ -425,6 +425,12 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="5wgnsHJYs2G" role="3bR37C">
+          <node concept="3bR9La" id="5wgnsHJYs2H" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7tgCHAyOtFQ" resolve="com.mbeddr.ext.compositecomponents" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5qO$P$PrIFQ" role="2G$12L">
         <property role="BnDLt" value="true" />
