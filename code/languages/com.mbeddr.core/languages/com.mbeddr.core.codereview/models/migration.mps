@@ -2,8 +2,8 @@
 <model ref="r:e9a6ad85-6629-40c9-a75a-47f5a31d40b4(com.mbeddr.core.codereview.migration)">
   <persistence version="9" />
   <languages>
-    <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="1" />
-    <use id="9882f4ad-1955-46fe-8269-94189e5dbbf2" name="jetbrains.mps.lang.migration.util" version="0" />
+    <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="-1" />
+    <use id="9882f4ad-1955-46fe-8269-94189e5dbbf2" name="jetbrains.mps.lang.migration.util" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports />
@@ -109,6 +109,64 @@
         <property role="2pBcoG" value="1687004685686364703" />
         <property role="2pBcow" value="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
         <property role="2pBc3U" value="EnumerationMemberDeclaration@62325" />
+      </node>
+    </node>
+  </node>
+  <node concept="W$Crc" id="71W1KxsnmJj">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="1" />
+    <property role="TrG5h" value="RefactoringLog_1" />
+    <node concept="1w76tK" id="71W1KxsnmJk" role="1w76sc">
+      <node concept="1w76tN" id="71W1KxsnmJl" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="71W1KxsnmJm" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="71W1KxsnmJn" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="71W1KxsnmJp" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="71W1KxsnmJd" role="hSBgu">
+        <property role="2pBcoG" value="5761107734913230252" />
+        <property role="2pBcow" value="r:c4b1779e-16c5-4208-9d68-87a33241456f(com.mbeddr.core.codereview.plugin)" />
+        <property role="2pBc3U" value="codeReviewState" />
+      </node>
+      <node concept="2pBcaW" id="71W1KxsnmJo" role="hSBgs">
+        <property role="2pBcoG" value="5761107734913230252" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="codeReviewState" />
+      </node>
+    </node>
+    <node concept="7amoh" id="71W1KxsnmJr" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="71W1KxsnmJe" role="hSBgu">
+        <property role="2pBcoG" value="5761107734913230253" />
+        <property role="2pBcow" value="r:c4b1779e-16c5-4208-9d68-87a33241456f(com.mbeddr.core.codereview.plugin)" />
+        <property role="2pBc3U" value="Code Review State 1" />
+      </node>
+      <node concept="2pBcaW" id="71W1KxsnmJq" role="hSBgs">
+        <property role="2pBcoG" value="5761107734913230253" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="Code Review State 1" />
+      </node>
+    </node>
+    <node concept="7amoh" id="71W1KxsnmJt" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="71W1KxsnmJf" role="hSBgu">
+        <property role="2pBcoG" value="5761107734913230254" />
+        <property role="2pBcow" value="r:c4b1779e-16c5-4208-9d68-87a33241456f(com.mbeddr.core.codereview.plugin)" />
+        <property role="2pBc3U" value="ModificationStatement@69897" />
+      </node>
+      <node concept="2pBcaW" id="71W1KxsnmJs" role="hSBgs">
+        <property role="2pBcoG" value="5761107734913230254" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ModificationStatement@69897" />
       </node>
     </node>
   </node>
