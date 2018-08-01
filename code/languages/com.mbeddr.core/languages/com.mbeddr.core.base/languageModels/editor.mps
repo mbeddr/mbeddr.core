@@ -10868,7 +10868,7 @@
       <node concept="2SsqMj" id="4g52gaO6r3v" role="3EZMnx" />
     </node>
     <node concept="2aJ2om" id="4ZN$fokcDkb" role="CpUAK">
-      <ref role="2$4xQ3" node="4ZN$fokcCTb" resolve="showReviewState" />
+      <ref role="2$4xQ3" node="4ZN$fokcCTb" resolve="showReviewState_Old" />
     </node>
   </node>
   <node concept="1h_SRR" id="rEiHtt6Lg1">
@@ -10931,8 +10931,8 @@
     <property role="TrG5h" value="codereview_old" />
     <node concept="2BsEeg" id="4ZN$fokcCTb" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="showReviewState" />
-      <property role="2BUmq6" value="Show Review State" />
+      <property role="TrG5h" value="showReviewState_Old" />
+      <property role="2BUmq6" value="Show Review State Old" />
     </node>
   </node>
   <node concept="24kQdi" id="4ZN$fokcDHf">
