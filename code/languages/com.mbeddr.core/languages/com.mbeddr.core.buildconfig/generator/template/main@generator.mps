@@ -6231,7 +6231,7 @@
           <property role="12ErFq" value="$(vecho) &quot;LD $(notdir $@)&quot;" />
         </node>
         <node concept="12Eqlt" id="2b2D8jTWm6Z" role="3r8OHu">
-          <property role="12ErFq" value="$(Q) $(LD) $(LDFLAGS) -o $@ $^ $(ALL_LIBDIR_FLAGS) $(ALL_LIB_FLAGS)" />
+          <property role="12ErFq" value="$(Q) $(LD) $(LDFLAGS) -o bin/$@ $^ $(ALL_LIBDIR_FLAGS) $(ALL_LIB_FLAGS)" />
           <node concept="17Uvod" id="2b2D8jTWmng" role="lGtFl">
             <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/7595578942778593171/7595578942778593300" />
             <property role="2qtEX9" value="command" />
@@ -6246,7 +6246,7 @@
                       <node concept="3cpWs3" id="2Rx8UqeMqEZ" role="3uHU7B">
                         <node concept="3cpWs3" id="2Rx8UqeMqF0" role="3uHU7B">
                           <node concept="Xl_RD" id="2Rx8UqeMqF1" role="3uHU7B">
-                            <property role="Xl_RC" value="$(Q) $(LD) $(LDFLAGS) -o $@ $^ $(" />
+                            <property role="Xl_RC" value="$(Q) $(LD) $(LDFLAGS) -o bin/$@ $^ $(" />
                           </node>
                           <node concept="2YIFZM" id="5yBZnF54CUN" role="3uHU7w">
                             <ref role="37wK5l" to="ahli:5yBZnF51Qna" resolve="getAllLibDirFlagsVarName" />
