@@ -232,6 +232,46 @@
             <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
             <node concept="1bVj0M" id="2GItdKItNn6" role="37wK5m">
               <node concept="3clFbS" id="2GItdKItNn8" role="1bW5cS">
+                <node concept="3cpWs8" id="71W1KxsQ4C1" role="3cqZAp">
+                  <node concept="3cpWsn" id="71W1KxsQ4C2" role="3cpWs9">
+                    <property role="TrG5h" value="toSelect" />
+                    <node concept="3uibUv" id="71W1KxsQ4C3" role="1tU5fm">
+                      <ref role="3uigEE" to="jlff:~VirtualFile" resolve="VirtualFile" />
+                    </node>
+                    <node concept="10Nm6u" id="71W1KxsQ5Eo" role="33vP2m" />
+                  </node>
+                </node>
+                <node concept="1QHqEO" id="71W1KxsQ6r2" role="3cqZAp">
+                  <node concept="1QHqEC" id="71W1KxsQ6r4" role="1QHqEI">
+                    <node concept="3clFbS" id="71W1KxsQ6r6" role="1bW5cS">
+                      <node concept="3clFbF" id="71W1KxsQ6PI" role="3cqZAp">
+                        <node concept="37vLTI" id="71W1KxsQ7L$" role="3clFbG">
+                          <node concept="2YIFZM" id="71W1KxsQ8Ve" role="37vLTx">
+                            <ref role="37wK5l" to="jlff:~VfsUtil.findFileByIoFile(java.io.File,boolean):com.intellij.openapi.vfs.VirtualFile" resolve="findFileByIoFile" />
+                            <ref role="1Pybhc" to="jlff:~VfsUtil" resolve="VfsUtil" />
+                            <node concept="2ShNRf" id="71W1KxsQ9in" role="37wK5m">
+                              <node concept="1pGfFk" id="71W1KxsQ9YW" role="2ShVmc">
+                                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                <node concept="2OqwBi" id="71W1KxsQaLP" role="37wK5m">
+                                  <node concept="2Sf5sV" id="71W1KxsQamf" role="2Oq$k0" />
+                                  <node concept="2qgKlT" id="71W1KxsQbwW" role="2OqNvi">
+                                    <ref role="37wK5l" to="48kf:5lKnBeAIfOh" resolve="getPrefix" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbT" id="71W1KxsQck0" role="37wK5m">
+                              <property role="3clFbU" value="true" />
+                            </node>
+                          </node>
+                          <node concept="37vLTw" id="71W1KxsQ6PH" role="37vLTJ">
+                            <ref role="3cqZAo" node="71W1KxsQ4C2" resolve="toSelect" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="2GItdKItN_I" role="3cqZAp">
                   <node concept="3cpWsn" id="2GItdKItN_H" role="3cpWs9">
                     <property role="3TUv4t" value="true" />
@@ -241,12 +281,15 @@
                     </node>
                     <node concept="2YIFZM" id="2GItdKItNFL" role="33vP2m">
                       <ref role="1Pybhc" to="3fkn:~FileChooser" resolve="FileChooser" />
-                      <ref role="37wK5l" to="3fkn:~FileChooser.chooseFile(com.intellij.openapi.fileChooser.FileChooserDescriptor,com.intellij.openapi.project.Project,com.intellij.openapi.vfs.VirtualFile):com.intellij.openapi.vfs.VirtualFile" resolve="chooseFile" />
+                      <ref role="37wK5l" to="3fkn:~FileChooser.chooseFile(com.intellij.openapi.fileChooser.FileChooserDescriptor,java.awt.Component,com.intellij.openapi.project.Project,com.intellij.openapi.vfs.VirtualFile):com.intellij.openapi.vfs.VirtualFile" resolve="chooseFile" />
                       <node concept="37vLTw" id="2GItdKItNFM" role="37wK5m">
                         <ref role="3cqZAo" node="2GItdKItKdc" resolve="descriptor" />
                       </node>
                       <node concept="10Nm6u" id="2GItdKItNFN" role="37wK5m" />
                       <node concept="10Nm6u" id="2GItdKItNFO" role="37wK5m" />
+                      <node concept="37vLTw" id="71W1KxsQkEu" role="37wK5m">
+                        <ref role="3cqZAo" node="71W1KxsQ4C2" resolve="toSelect" />
+                      </node>
                     </node>
                   </node>
                 </node>
