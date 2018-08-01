@@ -2004,16 +2004,19 @@
   <node concept="AxPO7" id="1tDstbgKlCo">
     <property role="3GE5qa" value="codereview" />
     <property role="TrG5h" value="CodeState" />
-    <property role="3lZH7k" value="derive_from_presentation" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="1tDstbgKlCp" role="M5hS2">
       <property role="1uS6qo" value="raw" />
+      <property role="1uS6qv" value="raw" />
     </node>
     <node concept="M4N5e" id="1tDstbgKlCq" role="M5hS2">
       <property role="1uS6qo" value="ready" />
+      <property role="1uS6qv" value="ready" />
     </node>
     <node concept="M4N5e" id="1tDstbgKlCv" role="M5hS2">
       <property role="1uS6qo" value="reviewed" />
+      <property role="1uS6qv" value="reviewed" />
     </node>
   </node>
   <node concept="PlHQZ" id="4yaQL1YaUM8">
