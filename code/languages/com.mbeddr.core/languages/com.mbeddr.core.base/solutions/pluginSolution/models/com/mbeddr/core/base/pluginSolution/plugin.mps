@@ -116,6 +116,7 @@
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+    <import index="6qna" ref="r:9c1c1236-1028-4c6e-8e58-34d90c5070e7(com.mbeddr.core.codereview.editor)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -21762,6 +21763,19 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="33ghlw" id="4ZN$fokgymG">
+    <property role="3GE5qa" value="codereview" />
+    <property role="TrG5h" value="codeReviewState" />
+    <node concept="33gmoH" id="4ZN$fokgymH" role="2hfSGL">
+      <property role="33g7Lv" value="Code Review State" />
+      <ref role="33glcW" to="6qna:4ZN$fokcCTa" resolve="codereview" />
+      <ref role="33glcY" to="6qna:4ZN$fokcCTb" resolve="showReviewState" />
+    </node>
+    <node concept="tT9cl" id="4ZN$fokgymI" role="2hfP89">
+      <ref role="tU$_T" node="goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+      <ref role="2f8Tey" node="goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
     </node>
   </node>
 </model>
