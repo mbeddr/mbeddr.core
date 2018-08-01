@@ -1040,21 +1040,6 @@
               <property role="3SKdUp" value="Would make commented node to be highlited for deletion. We remove it for the time being" />
             </node>
           </node>
-          <node concept="1X3_iC" id="4xXsQXusufo" role="lGtFl">
-            <property role="3V$3am" value="statement" />
-            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="3clFbJ" id="1lmGFD6De_F" role="8Wnug">
-              <node concept="3clFbS" id="1lmGFD6De_H" role="3clFbx">
-                <node concept="3cpWs6" id="1lmGFD6EBpw" role="3cqZAp" />
-              </node>
-              <node concept="2OqwBi" id="5hKIe0b6HGc" role="3clFbw">
-                <node concept="0IXxy" id="5hKIe0b6HwT" role="2Oq$k0" />
-                <node concept="2xy62i" id="5hKIe0b6Ie$" role="2OqNvi">
-                  <node concept="1Q80Hx" id="5hKIe0b6IiS" role="2xHN3q" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="6PYNGEsYwS4" role="3cqZAp">
             <node concept="3cpWsn" id="6PYNGEsYwS5" role="3cpWs9">
               <property role="TrG5h" value="p" />
@@ -1080,6 +1065,21 @@
                 <node concept="1Q80Hx" id="6PYNGEsYxW9" role="lBI5i" />
                 <node concept="2B6iha" id="6PYNGEsYy1g" role="lGT1i">
                   <property role="1lyBwo" value="firstEditable" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1X3_iC" id="4xXsQXusufo" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbJ" id="1lmGFD6De_F" role="8Wnug">
+              <node concept="3clFbS" id="1lmGFD6De_H" role="3clFbx">
+                <node concept="3cpWs6" id="1lmGFD6EBpw" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="5hKIe0b6HGc" role="3clFbw">
+                <node concept="0IXxy" id="5hKIe0b6HwT" role="2Oq$k0" />
+                <node concept="2xy62i" id="5hKIe0b6Ie$" role="2OqNvi">
+                  <node concept="1Q80Hx" id="5hKIe0b6IiS" role="2xHN3q" />
                 </node>
               </node>
             </node>
@@ -9710,8 +9710,8 @@
     <property role="TrG5h" value="codereview_old" />
     <node concept="2BsEeg" id="4ZN$fokcCTb" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="showReviewState" />
-      <property role="2BUmq6" value="Show Review State" />
+      <property role="TrG5h" value="showReviewState_Old" />
+      <property role="2BUmq6" value="Show Review State Old" />
     </node>
   </node>
   <node concept="24kQdi" id="7nkDZJXluR_">
