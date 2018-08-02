@@ -12,6 +12,9 @@ ext.artifactsDir = new File(rootDir, 'artifacts')
 ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.findProperty("teamcity")
 
 buildscript {
+    if(JavaVersion.current() != JavaVersion.VERSION_1_8){
+        throw new GradleException("This build script requires java " + JavaVersion.VERSION_1_8 + ", but you are currently using " + JavaVersion.current())
+    }
     repositories {
         mavenLocal()
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
