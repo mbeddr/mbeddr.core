@@ -1,14 +1,15 @@
 package com.mbeddr.tools.ant.tasks.impl;
 
+import java.io.File;
+import java.util.List;
+
+import org.apache.tools.ant.BuildException;
+import org.apache.tools.ant.Project;
+
 import com.mbeddr.tools.ant.tasks.MakeExecutor;
 import com.mbeddr.tools.ant.tasks.teamcity.ITeamcityLogger;
 import com.mbeddr.tools.ant.tasks.teamcity.MbeddrTeamcityLogger;
 import com.mbeddr.tools.ant.util.Util;
-import org.apache.tools.ant.BuildException;
-import org.apache.tools.ant.Project;
-
-import java.io.File;
-import java.util.List;
 
 public class TestInvoker implements MakeExecutor {
 
@@ -19,7 +20,7 @@ public class TestInvoker implements MakeExecutor {
 	
 	private void invokeTestTarget(List<File> testPaths) {
 		logger = new MbeddrTeamcityLogger(project);
-		for (File makeDirectory : testPaths) {
+			for (File makeDirectory : testPaths) {
 			if (makeDirectory.exists()) {
 				try {
 					Process process = util.createMakeTestProcess(makeDirectory,
@@ -27,7 +28,7 @@ public class TestInvoker implements MakeExecutor {
 					ProcessResult processResult = util.waitForProcess(process);
 					MessageTranslator translator = new MessageTranslator(processResult, logger, util);
 					translator.translateMessages(makeDirectory);
-                    String resultfile = makeDirectory.getAbsolutePath() + "/TestResult.xml";
+                    String resultfile = makeDirectory.getAbsolutePath() + "/test-results";
                     if(new File(resultfile).exists())
                         project.log("##teamcity[importData type='junit' path='" + resultfile + "']");
 				} catch (Exception e) {

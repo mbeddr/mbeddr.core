@@ -54,6 +54,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -998,6 +999,7 @@
     <property role="3GE5qa" value="typeSizeSpec" />
     <property role="R4oN_" value="define the type size mapping" />
     <property role="EcuMT" value="3335993110369795380" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4huuTqGcVTt" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1751,6 +1753,17 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
+  </node>
+  <node concept="1TIwiD" id="2Wc_BLyni6F">
+    <property role="TrG5h" value="SignedCharType" />
+    <property role="3GE5qa" value="types.basic" />
+    <property role="34LRSv" value="signed char" />
+    <property role="R4oN_" value="C signed char type" />
+    <property role="EcuMT" value="3390250080473522603" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <node concept="PrWs8" id="2Wc_BLyni6G" role="PzmwI">
+      <ref role="PrY4T" node="24lM_j3AaK6" resolve="ISigned" />
+    </node>
   </node>
 </model>
 

@@ -189,7 +189,6 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
-      <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -1239,15 +1238,15 @@
         <node concept="3kxDZ6" id="40ZXlOnG8zb" role="3cqZAp">
           <node concept="9aQIb" id="40ZXlOnG8zc" role="3kxCCa">
             <node concept="3clFbS" id="4arT0cntK7F" role="9aQI4">
-              <node concept="3clFbF" id="4arT0cntK7G" role="3cqZAp">
-                <node concept="2OqwBi" id="4arT0cntK7H" role="3clFbG">
-                  <node concept="X8dFx" id="2kft9crS3Ln" role="2OqNvi">
-                    <node concept="3P9mCS" id="4arT0cntK7K" role="25WWJ7">
+              <node concept="3clFbF" id="7Lj87PmZq59" role="3cqZAp">
+                <node concept="2OqwBi" id="7Lj87PmZqZL" role="3clFbG">
+                  <node concept="37vLTw" id="7Lj87PmZq57" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4arT0cntK7z" resolve="args" />
+                  </node>
+                  <node concept="X8dFx" id="7Lj87PmZsnS" role="2OqNvi">
+                    <node concept="1rXfSq" id="7Lj87PmZtcO" role="25WWJ7">
                       <ref role="37wK5l" to="tzyt:3L_VuqblMrt" resolve="collectAdditionalPaths" />
                     </node>
-                  </node>
-                  <node concept="37vLTw" id="4arT0cntK7I" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4arT0cntK7z" resolve="args" />
                   </node>
                 </node>
               </node>

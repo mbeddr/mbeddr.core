@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:efe425ec-84fc-4d5f-a985-07e45cdd7065(com.mbeddr.analyses.cbmc.testing.generator.template.main@generator)">
+<model ref="r:efe425ec-84fc-4d5f-a985-07e45cdd7065(com.mbeddr.analyses.cbmc.testing.generator.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
@@ -259,15 +259,6 @@
             <property role="TrG5h" value="dumy" />
             <node concept="3cqZAl" id="6zmpM6BuOFv" role="3clF45" />
             <node concept="3clFbS" id="6zmpM6BuOFw" role="3clF47">
-              <node concept="3cpWs8" id="49Y2Xia4iAA" role="3cqZAp">
-                <node concept="3cpWsn" id="49Y2Xia4iAB" role="3cpWs9">
-                  <property role="TrG5h" value="res" />
-                  <node concept="3uibUv" id="49Y2Xia4iAC" role="1tU5fm">
-                    <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="49Y2Xia4iAD" role="3cqZAp" />
               <node concept="3kxDZ6" id="5EwdfGVjX_u" role="3cqZAp">
                 <node concept="9aQIb" id="5EwdfGVjXNL" role="3kxCCa">
                   <node concept="3clFbS" id="5EwdfGVjXNN" role="9aQI4">
