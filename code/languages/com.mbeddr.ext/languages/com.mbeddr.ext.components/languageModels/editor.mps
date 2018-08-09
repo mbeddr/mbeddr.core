@@ -2,12 +2,12 @@
 <model ref="r:a77b09d3-76cb-4b3b-9620-10102158ec08(com.mbeddr.ext.components.editor)">
   <persistence version="9" />
   <languages>
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
-    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
+    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -829,9 +829,8 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="71UKpntmzO$" role="3EZMnx">
-        <property role="3F0ifm" value="component" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <node concept="PMmxH" id="6uK35z614F6" role="3EZMnx">
+        <ref role="PMmxG" node="6uK35z5YrAa" resolve="EditorComponent_ComponentConceptName" />
       </node>
       <node concept="3F0A7n" id="71UKpntmzOA" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -2181,9 +2180,48 @@
     <property role="3GE5qa" value="comp.instances" />
     <ref role="1XX52x" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
     <node concept="3EZMnI" id="71UKpnto5XH" role="2wV5jI">
-      <node concept="3F0ifn" id="71UKpnto5XK" role="3EZMnx">
-        <property role="3F0ifm" value="instance" />
+      <node concept="1HlG4h" id="6uK35z641fT" role="3EZMnx">
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <node concept="1HfYo3" id="6uK35z641fV" role="1HlULh">
+          <node concept="3TQlhw" id="6uK35z641fX" role="1Hhtcw">
+            <node concept="3clFbS" id="6uK35z641fZ" role="2VODD2">
+              <node concept="3clFbF" id="6uK35z641QN" role="3cqZAp">
+                <node concept="3cpWs3" id="6uK35z646I_" role="3clFbG">
+                  <node concept="Xl_RD" id="6uK35z64enk" role="3uHU7w">
+                    <property role="Xl_RC" value=" instance" />
+                  </node>
+                  <node concept="1eOMI4" id="6uK35z646gE" role="3uHU7B">
+                    <node concept="3K4zz7" id="6uK35z645Vk" role="1eOMHV">
+                      <node concept="Xl_RD" id="6uK35z646ZI" role="3K4E3e">
+                        <property role="Xl_RC" value="component" />
+                      </node>
+                      <node concept="2OqwBi" id="6uK35z64d80" role="3K4GZi">
+                        <node concept="2OqwBi" id="6uK35z649N$" role="2Oq$k0">
+                          <node concept="pncrf" id="6uK35z6481j" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="6uK35z64a_c" role="2OqNvi">
+                            <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" resolve="component" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="6uK35z64e2A" role="2OqNvi">
+                          <ref role="37wK5l" to="eup9:77Zd6XAvZc7" resolve="getEditorConceptName" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="6uK35z643ZH" role="3K4Cdx">
+                        <node concept="2OqwBi" id="6uK35z642iR" role="2Oq$k0">
+                          <node concept="pncrf" id="6uK35z641QM" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="6uK35z6430s" role="2OqNvi">
+                            <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" resolve="component" />
+                          </node>
+                        </node>
+                        <node concept="3w_OXm" id="6uK35z644Pz" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="71UKpnto5XJ" role="2iSdaV" />
       <node concept="1iCGBv" id="71UKpnto5XM" role="3EZMnx">
@@ -9036,6 +9074,28 @@
   <node concept="3p36aQ" id="143iErn7gPj">
     <property role="3GE5qa" value="comp.instances" />
     <ref role="aqKnT" to="v7ag:WtRjgwxLl_" resolve="EmptyInstanceConfigContent" />
+  </node>
+  <node concept="PKFIW" id="6uK35z5YrAa">
+    <property role="3GE5qa" value="comp" />
+    <property role="TrG5h" value="EditorComponent_ComponentConceptName" />
+    <ref role="1XX52x" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+    <node concept="1HlG4h" id="6uK35z5YrAc" role="2wV5jI">
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <node concept="1HfYo3" id="6uK35z5YrAe" role="1HlULh">
+        <node concept="3TQlhw" id="6uK35z5YrAg" role="1Hhtcw">
+          <node concept="3clFbS" id="6uK35z5YrAi" role="2VODD2">
+            <node concept="3clFbF" id="6uK35z5YrIR" role="3cqZAp">
+              <node concept="2OqwBi" id="6uK35z5Yseh" role="3clFbG">
+                <node concept="pncrf" id="6uK35z5YrIQ" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6uK35z5YsXV" role="2OqNvi">
+                  <ref role="37wK5l" to="eup9:77Zd6XAvZc7" resolve="getEditorConceptName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
