@@ -689,6 +689,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -1025,7 +1032,7 @@
     </node>
     <node concept="2tJIrI" id="2q25e41q$8e" role="jymVt" />
     <node concept="2YIFZL" id="CJowczpW7q" role="jymVt">
-      <property role="TrG5h" value="getFolderFQ" />
+      <property role="TrG5h" value="getFullyQualifiedFolderWhereMakeIsLocated" />
       <node concept="37vLTG" id="CJowczpW7u" role="3clF46">
         <property role="TrG5h" value="binary" />
         <node concept="3Tqbb2" id="CJowczpW7v" role="1tU5fm" />
@@ -1053,11 +1060,11 @@
           <node concept="2ShNRf" id="2q25e41qzn7" role="3cqZAk">
             <node concept="1pGfFk" id="2q25e41qzlC" role="2ShVmc">
               <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-              <node concept="2OqwBi" id="2q25e41qytn" role="37wK5m">
-                <node concept="37vLTw" id="2q25e41qxwx" role="2Oq$k0">
+              <node concept="2OqwBi" id="4TEUj55iLeP" role="37wK5m">
+                <node concept="37vLTw" id="4TEUj55iLeQ" role="2Oq$k0">
                   <ref role="3cqZAo" node="2q25e41qvJl" resolve="output" />
                 </node>
-                <node concept="liA8E" id="4$yRy6L6iPW" role="2OqNvi">
+                <node concept="liA8E" id="4TEUj55iLeR" role="2OqNvi">
                   <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
                 </node>
               </node>
@@ -1066,7 +1073,37 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="2q25e41qko3" role="jymVt" />
+    <node concept="2tJIrI" id="4TEUj55qErL" role="jymVt" />
+    <node concept="2YIFZL" id="4TEUj55qDYL" role="jymVt">
+      <property role="TrG5h" value="getFullyQualifiedFolderWhereBinaryIsLocated" />
+      <node concept="37vLTG" id="4TEUj55qDYM" role="3clF46">
+        <property role="TrG5h" value="binary" />
+        <node concept="3Tqbb2" id="4TEUj55qDYN" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="4TEUj55qDYO" role="3clF45">
+        <ref role="3uigEE" to="guwi:~File" resolve="File" />
+      </node>
+      <node concept="3Tm1VV" id="4TEUj55qDYP" role="1B3o_S" />
+      <node concept="3clFbS" id="4TEUj55qDYQ" role="3clF47">
+        <node concept="3cpWs6" id="4TEUj55qDYW" role="3cqZAp">
+          <node concept="2ShNRf" id="4TEUj55qDYX" role="3cqZAk">
+            <node concept="1pGfFk" id="4TEUj55qDYY" role="2ShVmc">
+              <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+              <node concept="1rXfSq" id="4TEUj55qF8U" role="37wK5m">
+                <ref role="37wK5l" node="CJowczpW7q" resolve="getFullyQualifiedFolderWhereMakeIsLocated" />
+                <node concept="37vLTw" id="4TEUj55qFib" role="37wK5m">
+                  <ref role="3cqZAo" node="4TEUj55qDYM" resolve="binary" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="4TEUj55qFWx" role="37wK5m">
+                <property role="Xl_RC" value="bin" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4TEUj55qvHs" role="jymVt" />
     <node concept="2YIFZL" id="2q25e41qlaP" role="jymVt">
       <property role="TrG5h" value="getOutputPath" />
       <property role="od$2w" value="false" />
@@ -1206,59 +1243,15 @@
       </node>
       <node concept="3Tm1VV" id="CJowczrd$X" role="1B3o_S" />
       <node concept="3clFbS" id="CJowczrd$Y" role="3clF47">
-        <node concept="3cpWs8" id="CJowczrd_6" role="3cqZAp">
-          <node concept="3cpWsn" id="CJowczrd_7" role="3cpWs9">
-            <property role="TrG5h" value="packageName" />
-            <node concept="17QB3L" id="CJowczrd_8" role="1tU5fm" />
-          </node>
-        </node>
         <node concept="3cpWs8" id="CJowczrd_P" role="3cqZAp">
           <node concept="3cpWsn" id="CJowczrd_Q" role="3cpWs9">
             <property role="TrG5h" value="executableName" />
             <node concept="17QB3L" id="CJowczrd_R" role="1tU5fm" />
           </node>
         </node>
-        <node concept="3cpWs8" id="5IpIYYkjxGY" role="3cqZAp">
-          <node concept="3cpWsn" id="5IpIYYkjxGZ" role="3cpWs9">
-            <property role="TrG5h" value="output" />
-            <node concept="17QB3L" id="5IpIYYkjxH0" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="5IpIYYkjxoU" role="3cqZAp" />
         <node concept="1QHqEK" id="CJowczrd_9" role="3cqZAp">
           <node concept="1QHqEC" id="CJowczrd_a" role="1QHqEI">
             <node concept="3clFbS" id="CJowczrd_b" role="1bW5cS">
-              <node concept="3clFbF" id="CJowczrd_n" role="3cqZAp">
-                <node concept="37vLTI" id="CJowczrd_o" role="3clFbG">
-                  <node concept="2OqwBi" id="CJowczrd_p" role="37vLTx">
-                    <node concept="2YIFZM" id="5Hxjapwed2J" role="2Oq$k0">
-                      <ref role="37wK5l" to="unno:7WvVJ3rORmu" resolve="getModelLongName" />
-                      <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                      <node concept="2JrnkZ" id="5Hxjapwed2K" role="37wK5m">
-                        <node concept="2OqwBi" id="5Hxjapwed2L" role="2JrQYb">
-                          <node concept="37vLTw" id="5Hxjapwed2M" role="2Oq$k0">
-                            <ref role="3cqZAo" node="CJowczrd_1" resolve="binary" />
-                          </node>
-                          <node concept="I4A8Y" id="5Hxjapwed2N" role="2OqNvi" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="CJowczrd_w" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
-                      <node concept="Xl_RD" id="CJowczrd_x" role="37wK5m">
-                        <property role="Xl_RC" value="." />
-                      </node>
-                      <node concept="10M0yZ" id="6BNByWj3YFL" role="37wK5m">
-                        <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                        <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="37vLTw" id="CJowczrd_z" role="37vLTJ">
-                    <ref role="3cqZAo" node="CJowczrd_7" resolve="packageName" />
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="CJowczrd_U" role="3cqZAp">
                 <node concept="37vLTI" id="CJowczrdAg" role="3clFbG">
                   <node concept="2OqwBi" id="CJowczrdAC" role="37vLTx">
@@ -1274,44 +1267,21 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="5IpIYYkjzTE" role="3cqZAp">
-                <node concept="37vLTI" id="5IpIYYkjzTF" role="3clFbG">
-                  <node concept="2YIFZM" id="5IpIYYkjzTG" role="37vLTx">
-                    <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                    <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
-                    <node concept="2OqwBi" id="5IpIYYkjzTH" role="37wK5m">
-                      <node concept="37vLTw" id="5IpIYYkjzTI" role="2Oq$k0">
-                        <ref role="3cqZAo" node="CJowczrd_1" resolve="binary" />
-                      </node>
-                      <node concept="I4A8Y" id="5IpIYYkjzTJ" role="2OqNvi" />
-                    </node>
-                  </node>
-                  <node concept="37vLTw" id="5IpIYYkjzTK" role="37vLTJ">
-                    <ref role="3cqZAo" node="5IpIYYkjxGZ" resolve="output" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="5IpIYYkjzrL" role="3cqZAp" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="CJowczrd_$" role="3cqZAp">
           <node concept="2ShNRf" id="CJowczrd__" role="3clFbG">
             <node concept="1pGfFk" id="CJowczrd_A" role="2ShVmc">
-              <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-              <node concept="3cpWs3" id="CJowczrdBu" role="37wK5m">
-                <node concept="37vLTw" id="CJowczrdB_" role="3uHU7w">
-                  <ref role="3cqZAo" node="CJowczrd_Q" resolve="executableName" />
+              <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+              <node concept="1rXfSq" id="4TEUj55qyEC" role="37wK5m">
+                <ref role="37wK5l" node="4TEUj55qDYL" resolve="getFullyQualifiedFolderWhereBinaryIsLocated" />
+                <node concept="37vLTw" id="4TEUj55qyWH" role="37wK5m">
+                  <ref role="3cqZAo" node="CJowczrd_1" resolve="binary" />
                 </node>
-                <node concept="3cpWs3" id="CJowczrdB3" role="3uHU7B">
-                  <node concept="10M0yZ" id="6BNByWj3Z5R" role="3uHU7w">
-                    <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                    <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                  </node>
-                  <node concept="37vLTw" id="6BNByWj3Y82" role="3uHU7B">
-                    <ref role="3cqZAo" node="5IpIYYkjxGZ" resolve="output" />
-                  </node>
-                </node>
+              </node>
+              <node concept="37vLTw" id="4TEUj55rvO1" role="37wK5m">
+                <ref role="3cqZAo" node="CJowczrd_Q" resolve="executableName" />
               </node>
             </node>
           </node>
@@ -1371,7 +1341,7 @@
           <node concept="3cpWsn" id="CJowczrdBQ" role="3cpWs9">
             <property role="TrG5h" value="makeFolder" />
             <node concept="1rXfSq" id="5KCfyDAgPut" role="33vP2m">
-              <ref role="37wK5l" node="CJowczpW7q" resolve="getFolderFQ" />
+              <ref role="37wK5l" node="CJowczpW7q" resolve="getFullyQualifiedFolderWhereMakeIsLocated" />
               <node concept="37vLTw" id="5KCfyDAgPAh" role="37wK5m">
                 <ref role="3cqZAo" node="2s7Bv57QLd1" resolve="binary" />
               </node>
@@ -1511,7 +1481,7 @@
       <node concept="3clFbS" id="VxJcPvFvcF" role="3clF47">
         <node concept="3cpWs8" id="VxJcPvFvcG" role="3cqZAp">
           <node concept="3cpWsn" id="VxJcPvFvcH" role="3cpWs9">
-            <property role="TrG5h" value="makeFileExists" />
+            <property role="TrG5h" value="binaryFileExists" />
             <node concept="10P_77" id="VxJcPvFvcI" role="1tU5fm" />
             <node concept="3clFbT" id="VxJcPvFvcJ" role="33vP2m">
               <property role="3clFbU" value="false" />
@@ -1520,9 +1490,9 @@
         </node>
         <node concept="3cpWs8" id="VxJcPvFvcK" role="3cqZAp">
           <node concept="3cpWsn" id="VxJcPvFvcL" role="3cpWs9">
-            <property role="TrG5h" value="makeFolder" />
+            <property role="TrG5h" value="binaryFolder" />
             <node concept="1rXfSq" id="5KCfyDAgOL7" role="33vP2m">
-              <ref role="37wK5l" node="CJowczpW7q" resolve="getFolderFQ" />
+              <ref role="37wK5l" node="4TEUj55qDYL" resolve="getFullyQualifiedFolderWhereBinaryIsLocated" />
               <node concept="37vLTw" id="5KCfyDAgOSK" role="37wK5m">
                 <ref role="3cqZAo" node="VxJcPvFvcB" resolve="binary" />
               </node>
@@ -1544,7 +1514,7 @@
                 </node>
                 <node concept="2OqwBi" id="VxJcPvFvcV" role="33vP2m">
                   <node concept="37vLTw" id="VxJcPvFvcW" role="2Oq$k0">
-                    <ref role="3cqZAo" node="VxJcPvFvcL" resolve="makeFolder" />
+                    <ref role="3cqZAo" node="VxJcPvFvcL" resolve="binaryFolder" />
                   </node>
                   <node concept="liA8E" id="VxJcPvFvcX" role="2OqNvi">
                     <ref role="37wK5l" to="guwi:~File.listFiles():java.io.File[]" resolve="listFiles" />
@@ -1619,7 +1589,7 @@
                               <property role="3clFbU" value="true" />
                             </node>
                             <node concept="37vLTw" id="5HxjapwgHuV" role="37vLTJ">
-                              <ref role="3cqZAo" node="VxJcPvFvcH" resolve="makeFileExists" />
+                              <ref role="3cqZAo" node="VxJcPvFvcH" resolve="binaryFileExists" />
                             </node>
                           </node>
                         </node>
@@ -1639,7 +1609,7 @@
           </node>
           <node concept="2OqwBi" id="VxJcPvFvdk" role="3clFbw">
             <node concept="37vLTw" id="VxJcPvFvdl" role="2Oq$k0">
-              <ref role="3cqZAo" node="VxJcPvFvcL" resolve="makeFolder" />
+              <ref role="3cqZAo" node="VxJcPvFvcL" resolve="binaryFolder" />
             </node>
             <node concept="liA8E" id="VxJcPvFvdm" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
@@ -1649,11 +1619,11 @@
         <node concept="3cpWs6" id="VxJcPvFvdn" role="3cqZAp">
           <node concept="1Wc70l" id="VxJcPvFvdo" role="3cqZAk">
             <node concept="37vLTw" id="VxJcPvFvdp" role="3uHU7w">
-              <ref role="3cqZAo" node="VxJcPvFvcH" resolve="makeFileExists" />
+              <ref role="3cqZAo" node="VxJcPvFvcH" resolve="binaryFileExists" />
             </node>
             <node concept="2OqwBi" id="VxJcPvFvdq" role="3uHU7B">
               <node concept="37vLTw" id="5HxjapwgH4X" role="2Oq$k0">
-                <ref role="3cqZAo" node="VxJcPvFvcL" resolve="makeFolder" />
+                <ref role="3cqZAo" node="VxJcPvFvcL" resolve="binaryFolder" />
               </node>
               <node concept="liA8E" id="VxJcPvFvds" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
@@ -2251,16 +2221,20 @@
             <ref role="3cqZAo" node="16TbH9W4nS4" resolve="repo" />
           </node>
         </node>
-        <node concept="3clFbF" id="Orr3Vbw9g0" role="3cqZAp">
-          <node concept="2YIFZM" id="Orr3Vbw9o6" role="3clFbG">
-            <ref role="37wK5l" node="Orr3VbvGiE" resolve="invokeMake" />
-            <ref role="1Pybhc" node="Orr3VbvxFC" resolve="Make" />
-            <node concept="37vLTw" id="Orr3Vbwary" role="37wK5m">
-              <ref role="3cqZAo" node="1sHR4zG9UAn" resolve="node" />
-            </node>
-            <node concept="21ER0p" id="Orr3VbwKYQ" role="37wK5m" />
-            <node concept="Xl_RD" id="Orr3VbwaAT" role="37wK5m">
-              <property role="Xl_RC" value="all" />
+        <node concept="1X3_iC" id="4TEUj55fWGW" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="Orr3Vbw9g0" role="8Wnug">
+            <node concept="2YIFZM" id="Orr3Vbw9o6" role="3clFbG">
+              <ref role="37wK5l" node="Orr3VbvGiE" resolve="invokeMake" />
+              <ref role="1Pybhc" node="Orr3VbvxFC" resolve="Make" />
+              <node concept="37vLTw" id="Orr3Vbwary" role="37wK5m">
+                <ref role="3cqZAo" node="1sHR4zG9UAn" resolve="node" />
+              </node>
+              <node concept="21ER0p" id="Orr3VbwKYQ" role="37wK5m" />
+              <node concept="Xl_RD" id="Orr3VbwaAT" role="37wK5m">
+                <property role="Xl_RC" value="all" />
+              </node>
             </node>
           </node>
         </node>
@@ -2568,10 +2542,10 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="2YIFZM" id="CJowczrs9z" role="3CLvVj">
-                                <ref role="37wK5l" node="CJowczpW7q" resolve="getFolderFQ" />
+                              <node concept="2YIFZM" id="4TEUj55qG8w" role="3CLvVj">
+                                <ref role="37wK5l" node="4TEUj55qDYL" resolve="getFullyQualifiedFolderWhereBinaryIsLocated" />
                                 <ref role="1Pybhc" node="1ptFCtLqsnU" resolve="PlatformUtil" />
-                                <node concept="2LYoG9" id="CJowczrs9$" role="37wK5m">
+                                <node concept="2LYoG9" id="4TEUj55qG8x" role="37wK5m">
                                   <ref role="2LYoGb" node="1ptFCtLqsuK" resolve="binary" />
                                 </node>
                               </node>
@@ -2600,10 +2574,10 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="2YIFZM" id="CJowczrsac" role="3CLvVj">
-                                  <ref role="37wK5l" node="CJowczpW7q" resolve="getFolderFQ" />
+                                <node concept="2YIFZM" id="4TEUj55qGn3" role="3CLvVj">
+                                  <ref role="37wK5l" node="4TEUj55qDYL" resolve="getFullyQualifiedFolderWhereBinaryIsLocated" />
                                   <ref role="1Pybhc" node="1ptFCtLqsnU" resolve="PlatformUtil" />
-                                  <node concept="2LYoG9" id="CJowczrsad" role="37wK5m">
+                                  <node concept="2LYoG9" id="4TEUj55qGn4" role="37wK5m">
                                     <ref role="2LYoGb" node="1ptFCtLqsuK" resolve="binary" />
                                   </node>
                                 </node>
@@ -5138,7 +5112,7 @@
                               <ref role="3uigEE" to="guwi:~File" resolve="File" />
                             </node>
                             <node concept="2YIFZM" id="6YlqNFRffWF" role="33vP2m">
-                              <ref role="37wK5l" node="CJowczpW7q" resolve="getFolderFQ" />
+                              <ref role="37wK5l" node="CJowczpW7q" resolve="getFullyQualifiedFolderWhereMakeIsLocated" />
                               <ref role="1Pybhc" node="1ptFCtLqsnU" resolve="PlatformUtil" />
                               <node concept="37vLTw" id="6YlqNFRfg83" role="37wK5m">
                                 <ref role="3cqZAo" node="6YlqNFReC1e" resolve="myBinary" />
@@ -5333,7 +5307,7 @@
                           <ref role="3uigEE" to="guwi:~File" resolve="File" />
                         </node>
                         <node concept="2YIFZM" id="4VxYGcHhkTf" role="33vP2m">
-                          <ref role="37wK5l" node="CJowczpW7q" resolve="getFolderFQ" />
+                          <ref role="37wK5l" node="CJowczpW7q" resolve="getFullyQualifiedFolderWhereMakeIsLocated" />
                           <ref role="1Pybhc" node="1ptFCtLqsnU" resolve="PlatformUtil" />
                           <node concept="37vLTw" id="4VxYGcHhkTg" role="37wK5m">
                             <ref role="3cqZAo" node="4VxYGcHhkSJ" resolve="myBinary" />
@@ -14476,10 +14450,10 @@
                         <property role="TrG5h" value="tracePath" />
                         <node concept="17QB3L" id="4USn8sy6EA8" role="1tU5fm" />
                         <node concept="2OqwBi" id="4USn8sy6EA9" role="33vP2m">
-                          <node concept="2YIFZM" id="4USn8sy6EAa" role="2Oq$k0">
-                            <ref role="37wK5l" node="CJowczpW7q" resolve="getFolderFQ" />
+                          <node concept="2YIFZM" id="4TEUj55qLR2" role="2Oq$k0">
+                            <ref role="37wK5l" node="4TEUj55qDYL" resolve="getFullyQualifiedFolderWhereBinaryIsLocated" />
                             <ref role="1Pybhc" node="1ptFCtLqsnU" resolve="PlatformUtil" />
-                            <node concept="37vLTw" id="4USn8sy6EAb" role="37wK5m">
+                            <node concept="37vLTw" id="4TEUj55qLR3" role="37wK5m">
                               <ref role="3cqZAo" node="4USn8sy6E_N" resolve="binary" />
                             </node>
                           </node>
