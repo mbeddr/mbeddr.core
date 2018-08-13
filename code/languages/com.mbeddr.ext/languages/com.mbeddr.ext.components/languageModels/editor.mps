@@ -8,6 +8,10 @@
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
+    <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2647,7 +2651,7 @@
   </node>
   <node concept="24kQdi" id="71UKpntpfyq">
     <property role="3GE5qa" value="comp.instances.portref" />
-    <ref role="1XX52x" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+    <ref role="1XX52x" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
     <node concept="3EZMnI" id="71UKpntpfys" role="2wV5jI">
       <node concept="1iCGBv" id="71UKpntpfyv" role="3EZMnx">
         <ref role="1NtTu8" to="v7ag:3TmmsQkDdTU" resolve="instance" />
@@ -5898,7 +5902,7 @@
               <node concept="3cpWsn" id="7sHDEc2X1Er" role="3cpWs9">
                 <property role="TrG5h" value="ipr" />
                 <node concept="3Tqbb2" id="7sHDEc2X1Es" role="1tU5fm">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                  <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                 </node>
                 <node concept="2OqwBi" id="7sHDEc2X1Et" role="33vP2m">
                   <node concept="2OqwBi" id="7sHDEc2X1Eu" role="2Oq$k0">
@@ -6062,7 +6066,7 @@
               <node concept="3cpWsn" id="7sHDEc2X2rr" role="3cpWs9">
                 <property role="TrG5h" value="ipr" />
                 <node concept="3Tqbb2" id="7sHDEc2X2rs" role="1tU5fm">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                  <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                 </node>
                 <node concept="2OqwBi" id="7sHDEc2X2rt" role="33vP2m">
                   <node concept="2OqwBi" id="7sHDEc2X2ru" role="2Oq$k0">
@@ -6682,7 +6686,7 @@
                           <node concept="2pIpSj" id="4uAxemR7vy5" role="2pJxcM">
                             <ref role="2pIpSl" to="v7ag:3TmmsQkDdTW" resolve="source" />
                             <node concept="2pJPED" id="4uAxemR7vRk" role="2pJxcZ">
-                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                               <node concept="2pIpSj" id="4uAxemR7w_h" role="2pJxcM">
                                 <ref role="2pIpSl" to="v7ag:3TmmsQkDdTU" resolve="instance" />
                                 <node concept="36biLy" id="4uAxemR7wFG" role="2pJxcZ">
@@ -6738,7 +6742,7 @@
                           <node concept="2pIpSj" id="4uAxemR7wdc" role="2pJxcM">
                             <ref role="2pIpSl" to="v7ag:3TmmsQkDdTX" resolve="target" />
                             <node concept="2pJPED" id="4uAxemR7wyD" role="2pJxcZ">
-                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                               <node concept="2pIpSj" id="4uAxemR7yFS" role="2pJxcM">
                                 <ref role="2pIpSl" to="v7ag:3TmmsQkDdTU" resolve="instance" />
                                 <node concept="36biLy" id="4uAxemR7yJu" role="2pJxcZ">
