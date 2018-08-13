@@ -2799,8 +2799,8 @@
       <node concept="3uibUv" id="7l6s1QDMfSr" role="1tU5fm">
         <ref role="3uigEE" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
       </node>
-      <node concept="Rm8GO" id="67TvXTFCsJX" role="33vP2m">
-        <ref role="Rm8GQ" to="tzyt:67TvXTFC38K" resolve="NONE" />
+      <node concept="Rm8GO" id="43paD3Ulb1W" role="33vP2m">
+        <ref role="Rm8GQ" to="tzyt:6DRvbEG0pcM" resolve="W32" />
         <ref role="1Px2BO" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
       </node>
     </node>
