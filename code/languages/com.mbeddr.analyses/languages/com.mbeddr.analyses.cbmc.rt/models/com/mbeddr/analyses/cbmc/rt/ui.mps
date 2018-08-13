@@ -8695,7 +8695,17 @@
     <node concept="3clFbW" id="3OhBgB4hwPM" role="jymVt">
       <node concept="3Tm6S6" id="3OhBgB4hwPN" role="1B3o_S" />
       <node concept="3cqZAl" id="3OhBgB4hwPO" role="3clF45" />
-      <node concept="3clFbS" id="3OhBgB4hwPP" role="3clF47" />
+      <node concept="3clFbS" id="3OhBgB4hwPP" role="3clF47">
+        <node concept="3clFbF" id="43paD3UlU20" role="3cqZAp">
+          <node concept="1rXfSq" id="43paD3UlU1Y" role="3clFbG">
+            <ref role="37wK5l" node="3OhBgB4hx4H" resolve="setWordWidth" />
+            <node concept="Rm8GO" id="43paD3UlU7j" role="37wK5m">
+              <ref role="1Px2BO" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
+              <ref role="Rm8GQ" to="tzyt:6DRvbEG0pcM" resolve="W32" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3OhBgB4hwPX" role="jymVt" />
     <node concept="3clFb_" id="3OhBgB4hx0B" role="jymVt">
