@@ -10257,6 +10257,7 @@
               <ref role="3cqZAo" node="4k8klQzATFa" resolve="project" />
             </node>
             <node concept="10Nm6u" id="7yuHHtvDx35" role="37wK5m" />
+            <node concept="10Nm6u" id="14GAtLm212K" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -10302,12 +10303,70 @@
             <node concept="37vLTw" id="7yuHHtvDxHl" role="37wK5m">
               <ref role="3cqZAo" node="7yuHHtvDxmC" resolve="canGenerateFunction" />
             </node>
+            <node concept="10Nm6u" id="14GAtLm20OV" role="37wK5m" />
           </node>
         </node>
       </node>
       <node concept="10P_77" id="7yuHHtvDxbj" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="7yuHHtvDx4P" role="jymVt" />
+    <node concept="2YIFZL" id="14GAtLm22e1" role="jymVt">
+      <property role="TrG5h" value="rebuildModels" />
+      <node concept="37vLTG" id="14GAtLm22e2" role="3clF46">
+        <property role="TrG5h" value="modelsToRebuild" />
+        <node concept="_YKpA" id="14GAtLm22e3" role="1tU5fm">
+          <node concept="3uibUv" id="14GAtLm22e4" role="_ZDj9">
+            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="14GAtLm22e5" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="14GAtLm22e6" role="1tU5fm">
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="14GAtLm22e7" role="3clF46">
+        <property role="TrG5h" value="canGenerateFunction" />
+        <node concept="9cv3F" id="14GAtLm22e8" role="1tU5fm">
+          <node concept="3uibUv" id="14GAtLm22e9" role="1ajw0F">
+            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+          </node>
+          <node concept="10P_77" id="14GAtLm22ea" role="1ajl9A" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="14GAtLm22sN" role="3clF46">
+        <property role="TrG5h" value="messageHandler" />
+        <node concept="3uibUv" id="14GAtLm22Dx" role="1tU5fm">
+          <ref role="3uigEE" to="et5u:~IMessageHandler" resolve="IMessageHandler" />
+        </node>
+        <node concept="2AHcQZ" id="14GAtLm23cA" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="14GAtLm22eb" role="1B3o_S" />
+      <node concept="3clFbS" id="14GAtLm22ec" role="3clF47">
+        <node concept="3clFbF" id="14GAtLm22ed" role="3cqZAp">
+          <node concept="3$87h9" id="14GAtLm22ee" role="3clFbG">
+            <ref role="37wK5l" node="4k8klQzAT$M" resolve="generate" />
+            <node concept="37vLTw" id="14GAtLm22ef" role="37wK5m">
+              <ref role="3cqZAo" node="14GAtLm22e2" resolve="modelsToRebuild" />
+            </node>
+            <node concept="37vLTw" id="14GAtLm22eg" role="37wK5m">
+              <ref role="3cqZAo" node="14GAtLm22e5" resolve="project" />
+            </node>
+            <node concept="37vLTw" id="14GAtLm22eh" role="37wK5m">
+              <ref role="3cqZAo" node="14GAtLm22e7" resolve="canGenerateFunction" />
+            </node>
+            <node concept="37vLTw" id="14GAtLm239u" role="37wK5m">
+              <ref role="3cqZAo" node="14GAtLm22sN" resolve="messageHandler" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="14GAtLm22ej" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="14GAtLm226J" role="jymVt" />
     <node concept="2YIFZL" id="4k8klQzATC9" role="jymVt">
       <property role="TrG5h" value="getModelDescriptorsFromNodeAndImports" />
       <node concept="2AHcQZ" id="4rHwORqC3FG" role="2AJF6D">
@@ -10459,6 +10518,12 @@
           <node concept="10P_77" id="7yuHHtvDduH" role="1ajl9A" />
         </node>
       </node>
+      <node concept="37vLTG" id="14GAtLm1_pV" role="3clF46">
+        <property role="TrG5h" value="messageHandler" />
+        <node concept="3uibUv" id="14GAtLm1XoB" role="1tU5fm">
+          <ref role="3uigEE" to="et5u:~IMessageHandler" resolve="IMessageHandler" />
+        </node>
+      </node>
       <node concept="3Tm6S6" id="4k8klQzATB3" role="1B3o_S" />
       <node concept="3clFbS" id="4k8klQzAT$P" role="3clF47">
         <node concept="3cpWs8" id="4k8klQzAT_E" role="3cqZAp">
@@ -10498,6 +10563,31 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="14GAtLm1Yq6" role="3cqZAp">
+          <node concept="3clFbS" id="14GAtLm1Yq8" role="3clFbx">
+            <node concept="3clFbF" id="14GAtLm1ZWM" role="3cqZAp">
+              <node concept="37vLTI" id="14GAtLm1ZWN" role="3clFbG">
+                <node concept="37vLTw" id="14GAtLm1ZWO" role="37vLTJ">
+                  <ref role="3cqZAo" node="14GAtLm1_pV" resolve="messageHandler" />
+                </node>
+                <node concept="2ShNRf" id="14GAtLm202z" role="37vLTx">
+                  <node concept="1pGfFk" id="14GAtLm202I" role="2ShVmc">
+                    <ref role="37wK5l" to="drpk:~DefaultMakeMessageHandler.&lt;init&gt;(jetbrains.mps.project.Project)" resolve="DefaultMakeMessageHandler" />
+                    <node concept="37vLTw" id="14GAtLm202J" role="37wK5m">
+                      <ref role="3cqZAo" node="5jIOnPwJCf8" resolve="toMPSProject" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="14GAtLm1Zsb" role="3clFbw">
+            <node concept="10Nm6u" id="14GAtLm1ZUl" role="3uHU7w" />
+            <node concept="37vLTw" id="14GAtLm1YV4" role="3uHU7B">
+              <ref role="3cqZAo" node="14GAtLm1_pV" resolve="messageHandler" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="ym5fkwMHm9" role="3cqZAp" />
         <node concept="3cpWs8" id="4k8klQzAT_I" role="3cqZAp">
           <node concept="3cpWsn" id="4k8klQzAT_J" role="3cpWs9">
@@ -10511,13 +10601,8 @@
                 <node concept="37vLTw" id="5jIOnPwJCfb" role="37wK5m">
                   <ref role="3cqZAo" node="5jIOnPwJCf8" resolve="toMPSProject" />
                 </node>
-                <node concept="2ShNRf" id="7PIfE8oprJA" role="37wK5m">
-                  <node concept="1pGfFk" id="7PIfE8opszL" role="2ShVmc">
-                    <ref role="37wK5l" to="drpk:~DefaultMakeMessageHandler.&lt;init&gt;(jetbrains.mps.project.Project)" resolve="DefaultMakeMessageHandler" />
-                    <node concept="37vLTw" id="5jIOnPwJCfc" role="37wK5m">
-                      <ref role="3cqZAo" node="5jIOnPwJCf8" resolve="toMPSProject" />
-                    </node>
-                  </node>
+                <node concept="37vLTw" id="14GAtLm20yD" role="37wK5m">
+                  <ref role="3cqZAo" node="14GAtLm1_pV" resolve="messageHandler" />
                 </node>
                 <node concept="3clFbT" id="4k8klQzAT_S" role="37wK5m">
                   <property role="3clFbU" value="true" />
