@@ -4388,10 +4388,15 @@
                 </node>
               </node>
               <node concept="1Wc70l" id="6GbYcWosmER" role="3S3z90">
-                <node concept="2YIFZM" id="6GbYcWosmIN" role="3uHU7w">
-                  <ref role="37wK5l" to="w1kc:~SModelStereotype.isUserModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isUserModel" />
-                  <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                  <node concept="37u81S" id="6GbYcWosmKx" role="37wK5m" />
+                <node concept="2OqwBi" id="4glh_Dckix0" role="3uHU7w">
+                  <node concept="2YIFZM" id="4glh_Dckjz8" role="2Oq$k0">
+                    <ref role="37wK5l" to="w1kc:~SModelStereotype.getStereotype(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getStereotype" />
+                    <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
+                    <node concept="37u81S" id="4glh_Dckj_e" role="37wK5m" />
+                  </node>
+                  <node concept="liA8E" id="4glh_Dckjdt" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.isEmpty():boolean" resolve="isEmpty" />
+                  </node>
                 </node>
                 <node concept="1Wc70l" id="3mf03aPMtKg" role="3uHU7B">
                   <node concept="3fqX7Q" id="3mf03aPMtN5" role="3uHU7w">
