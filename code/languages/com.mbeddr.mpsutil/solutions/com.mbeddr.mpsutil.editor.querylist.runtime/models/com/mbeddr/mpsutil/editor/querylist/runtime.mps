@@ -364,14 +364,6 @@
             <ref role="3cqZAo" node="1BXECvJVdNt" resolve="handler" />
           </node>
         </node>
-        <node concept="3clFbF" id="C$q8A2OQS8" role="3cqZAp">
-          <node concept="1rXfSq" id="C$q8A2OQS7" role="3clFbG">
-            <ref role="37wK5l" to="g51k:~EditorCell_Basic.setRole(java.lang.String):void" resolve="setRole" />
-            <node concept="Xl_RD" id="C$q8A2OQUC" role="37wK5m">
-              <property role="Xl_RC" value="" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="37vLTG" id="1BXECvJPXNh" role="3clF46">
         <property role="TrG5h" value="context" />
@@ -704,9 +696,9 @@
               <ref role="3cqZAo" node="4DLCSzVGnq8" resolve="emptyCell" />
             </node>
             <node concept="liA8E" id="4DLCSzVGnqy" role="2OqNvi">
-              <ref role="37wK5l" to="g51k:~EditorCell_Basic.setRole(java.lang.String):void" resolve="setRole" />
+              <ref role="37wK5l" to="g51k:~EditorCell_Basic.setSRole(org.jetbrains.mps.openapi.language.SConceptFeature):void" resolve="setSRole" />
               <node concept="1rXfSq" id="4DLCSzVGnqz" role="37wK5m">
-                <ref role="37wK5l" node="6gcdt_WBB3R" resolve="getElementRole" />
+                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementSRole():org.jetbrains.mps.openapi.language.SConceptFeature" resolve="getElementSRole" />
               </node>
             </node>
           </node>

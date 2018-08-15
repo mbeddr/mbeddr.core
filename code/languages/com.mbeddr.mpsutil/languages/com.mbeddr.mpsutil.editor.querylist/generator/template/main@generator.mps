@@ -4189,13 +4189,13 @@
               <node concept="3clFbF" id="1oUlZxIRH7g" role="3cqZAp">
                 <node concept="2OqwBi" id="1oUlZxIRH7h" role="3clFbG">
                   <node concept="liA8E" id="1oUlZxIRH7i" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.setRole(java.lang.String):void" resolve="setRole" />
+                    <ref role="37wK5l" to="f4zo:~EditorCell.setSRole(org.jetbrains.mps.openapi.language.SConceptFeature):void" resolve="setSRole" />
                     <node concept="2OqwBi" id="1rqQ$JYxZ3Y" role="37wK5m">
                       <node concept="37vLTw" id="1rqQ$JYxZ1M" role="2Oq$k0">
                         <ref role="3cqZAo" node="Op$R49356$" resolve="data" />
                       </node>
                       <node concept="liA8E" id="1rqQ$JYxZ$N" role="2OqNvi">
-                        <ref role="37wK5l" to="vj5k:1rqQ$JYxUNs" resolve="getGenuineRole" />
+                        <ref role="37wK5l" to="vj5k:2cvVnUuPz7A" resolve="getLink" />
                       </node>
                     </node>
                   </node>
@@ -5435,8 +5435,8 @@
                           <ref role="3cqZAo" node="8dI1zL4mF4" resolve="elementCell" />
                         </node>
                       </node>
-                      <node concept="3uibUv" id="heOoiKx" role="2ZW6by">
-                        <ref role="3uigEE" to="6lvu:~DefaultReferenceSubstituteInfo" resolve="DefaultReferenceSubstituteInfo" />
+                      <node concept="3uibUv" id="4glh_DchVYo" role="2ZW6by">
+                        <ref role="3uigEE" to="6lvu:~DefaultSReferenceSubstituteInfo" resolve="DefaultSReferenceSubstituteInfo" />
                       </node>
                     </node>
                     <node concept="3clFbC" id="8dI1zL4mEJ" role="3uHU7B">
@@ -6869,13 +6869,13 @@
           <node concept="3clFbF" id="gtcPww0" role="3cqZAp">
             <node concept="2OqwBi" id="h_XJ7s3" role="3clFbG">
               <node concept="liA8E" id="h_XJ7s4" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~EditorCell_Basic.setRole(java.lang.String):void" resolve="setRole" />
+                <ref role="37wK5l" to="g51k:~EditorCell_Basic.setSRole(org.jetbrains.mps.openapi.language.SConceptFeature):void" resolve="setSRole" />
                 <node concept="2OqwBi" id="h_XJ9fQ" role="37wK5m">
                   <node concept="37vLTw" id="3GM_nagTuuZ" role="2Oq$k0">
                     <ref role="3cqZAo" node="1y7DiaV$6AR" resolve="handler" />
                   </node>
                   <node concept="liA8E" id="h_XJ9fR" role="2OqNvi">
-                    <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
+                    <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementSRole():org.jetbrains.mps.openapi.language.SConceptFeature" resolve="getElementSRole" />
                   </node>
                 </node>
               </node>
