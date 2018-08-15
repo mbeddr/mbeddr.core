@@ -6047,26 +6047,36 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2YIFZM" id="7wXnfGE9DIU" role="3K4E3e">
-                    <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                    <ref role="37wK5l" to="xnls:~IconManager.getIcon(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIcon" />
-                    <node concept="2OqwBi" id="7wXnfGE9DWu" role="37wK5m">
-                      <node concept="1PxgMI" id="7wXnfGE9N19" role="2Oq$k0">
-                        <node concept="37vLTw" id="7wXnfGE9DRU" role="1m5AlR">
-                          <ref role="3cqZAo" node="4KKQOHJ2_RT" resolve="iconNode" />
-                        </node>
-                        <node concept="chp4Y" id="5RIakkDJPiz" role="3oSUPX">
-                          <ref role="cht4Q" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
-                        </node>
+                  <node concept="2OqwBi" id="4glh_DcgC6h" role="3K4GZi">
+                    <node concept="2YIFZM" id="4glh_DcgC6i" role="2Oq$k0">
+                      <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+                      <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+                    </node>
+                    <node concept="liA8E" id="4glh_DcgC6j" role="2OqNvi">
+                      <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+                      <node concept="37vLTw" id="4glh_DcgDd1" role="37wK5m">
+                        <ref role="3cqZAo" node="4KKQOHJ2_RT" resolve="iconNode" />
                       </node>
-                      <node concept="1rGIog" id="7wXnfGE9EhK" role="2OqNvi" />
                     </node>
                   </node>
-                  <node concept="2YIFZM" id="4KKQOHJ2DeQ" role="3K4GZi">
-                    <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
-                    <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                    <node concept="37vLTw" id="4KKQOHJ2FWx" role="37wK5m">
-                      <ref role="3cqZAo" node="4KKQOHJ2_RT" resolve="iconNode" />
+                  <node concept="2OqwBi" id="4glh_DcgBPu" role="3K4E3e">
+                    <node concept="2YIFZM" id="4glh_DcgBPv" role="2Oq$k0">
+                      <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+                      <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+                    </node>
+                    <node concept="liA8E" id="4glh_DcgBPw" role="2OqNvi">
+                      <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+                      <node concept="2OqwBi" id="7wXnfGE9DWu" role="37wK5m">
+                        <node concept="1PxgMI" id="7wXnfGE9N19" role="2Oq$k0">
+                          <node concept="37vLTw" id="7wXnfGE9DRU" role="1m5AlR">
+                            <ref role="3cqZAo" node="4KKQOHJ2_RT" resolve="iconNode" />
+                          </node>
+                          <node concept="chp4Y" id="5RIakkDJPiz" role="3oSUPX">
+                            <ref role="cht4Q" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+                          </node>
+                        </node>
+                        <node concept="1rGIog" id="7wXnfGE9EhK" role="2OqNvi" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -9714,11 +9724,16 @@
       <node concept="3Tm1VV" id="Y7dDcEQNtd" role="1B3o_S" />
       <node concept="3clFbS" id="Y7dDcEQNtf" role="3clF47">
         <node concept="3clFbF" id="Y7dDcER3ls" role="3cqZAp">
-          <node concept="2YIFZM" id="Y7dDcER3lY" role="3clFbG">
-            <ref role="37wK5l" to="xnls:~IconManager.getIcon(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIcon" />
-            <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-            <node concept="37vLTw" id="Y7dDcER3$w" role="37wK5m">
-              <ref role="3cqZAo" node="Y7dDcEQQOF" resolve="myRootConcept" />
+          <node concept="2OqwBi" id="4glh_Dcgrx2" role="3clFbG">
+            <node concept="2YIFZM" id="4glh_Dcgrx3" role="2Oq$k0">
+              <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+              <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+            </node>
+            <node concept="liA8E" id="4glh_Dcgrx4" role="2OqNvi">
+              <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+              <node concept="37vLTw" id="4glh_Dcg_ho" role="37wK5m">
+                <ref role="3cqZAo" node="Y7dDcEQQOF" resolve="myRootConcept" />
+              </node>
             </node>
           </node>
         </node>
@@ -16757,12 +16772,17 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
       <node concept="3clFbS" id="54sr1JE5c7H" role="3clF47">
-        <node concept="3clFbF" id="54sr1JE6UG1" role="3cqZAp">
-          <node concept="2YIFZM" id="54sr1JE6UGW" role="3clFbG">
-            <ref role="37wK5l" to="xnls:~IconManager.getIcon(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIcon" />
-            <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-            <node concept="35c_gC" id="54sr1JE6V0F" role="37wK5m">
-              <ref role="35c_gD" to="tp1h:5YKiRiBue95" resolve="Refactoring" />
+        <node concept="3clFbF" id="4glh_DcgAVQ" role="3cqZAp">
+          <node concept="2OqwBi" id="4glh_DcgAVS" role="3clFbG">
+            <node concept="2YIFZM" id="4glh_DcgAVT" role="2Oq$k0">
+              <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+              <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+            </node>
+            <node concept="liA8E" id="4glh_DcgAVU" role="2OqNvi">
+              <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+              <node concept="35c_gC" id="54sr1JE6V0F" role="37wK5m">
+                <ref role="35c_gD" to="tp1h:5YKiRiBue95" resolve="Refactoring" />
+              </node>
             </node>
           </node>
         </node>

@@ -3484,24 +3484,29 @@
                 <node concept="37vLTw" id="7dj$mdOTVaL" role="37vLTJ">
                   <ref role="3cqZAo" node="7dj$mdOTVa_" resolve="icon" />
                 </node>
-                <node concept="2YIFZM" id="7dj$mdOU8Sy" role="37vLTx">
-                  <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                  <ref role="37wK5l" to="xnls:~IconManager.getIconForResource(jetbrains.mps.smodel.runtime.IconResource):javax.swing.Icon" resolve="getIconForResource" />
-                  <node concept="2OqwBi" id="7dj$mdOTVaN" role="37wK5m">
-                    <node concept="1eOMI4" id="7dj$mdOTVaR" role="2Oq$k0">
-                      <node concept="10QFUN" id="7dj$mdOTVaO" role="1eOMHV">
-                        <node concept="37vLTw" id="7dj$mdOTVaP" role="10QFUP">
-                          <ref role="3cqZAo" node="7dj$mdOTVaw" resolve="action" />
-                        </node>
-                        <node concept="3uibUv" id="7dj$mdOTVaQ" role="10QFUM">
-                          <ref role="3uigEE" to="6lvu:~CompletionActionItemAsSubstituteAction" resolve="CompletionActionItemAsSubstituteAction" />
+                <node concept="2OqwBi" id="4glh_DcgiT2" role="37vLTx">
+                  <node concept="2YIFZM" id="4glh_DcgiEC" role="2Oq$k0">
+                    <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+                    <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+                  </node>
+                  <node concept="liA8E" id="4glh_Dcgjwk" role="2OqNvi">
+                    <ref role="37wK5l" to="xnls:~BaseIconManager.getIconForResource(jetbrains.mps.smodel.runtime.IconResource):javax.swing.Icon" resolve="getIconForResource" />
+                    <node concept="2OqwBi" id="7dj$mdOTVaN" role="37wK5m">
+                      <node concept="1eOMI4" id="7dj$mdOTVaR" role="2Oq$k0">
+                        <node concept="10QFUN" id="7dj$mdOTVaO" role="1eOMHV">
+                          <node concept="37vLTw" id="7dj$mdOTVaP" role="10QFUP">
+                            <ref role="3cqZAo" node="7dj$mdOTVaw" resolve="action" />
+                          </node>
+                          <node concept="3uibUv" id="7dj$mdOTVaQ" role="10QFUM">
+                            <ref role="3uigEE" to="6lvu:~CompletionActionItemAsSubstituteAction" resolve="CompletionActionItemAsSubstituteAction" />
+                          </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="liA8E" id="7dj$mdOTVaS" role="2OqNvi">
-                      <ref role="37wK5l" to="6lvu:~CompletionActionItemAsSubstituteAction.getIcon(java.lang.String):jetbrains.mps.smodel.runtime.IconResource" resolve="getIcon" />
-                      <node concept="37vLTw" id="7dj$mdOTVaT" role="37wK5m">
-                        <ref role="3cqZAo" node="7dj$mdOTVay" resolve="pattern" />
+                      <node concept="liA8E" id="7dj$mdOTVaS" role="2OqNvi">
+                        <ref role="37wK5l" to="6lvu:~CompletionActionItemAsSubstituteAction.getIcon(java.lang.String):jetbrains.mps.smodel.runtime.IconResource" resolve="getIcon" />
+                        <node concept="37vLTw" id="7dj$mdOTVaT" role="37wK5m">
+                          <ref role="3cqZAo" node="7dj$mdOTVay" resolve="pattern" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -3647,11 +3652,20 @@
                           <node concept="37vLTw" id="7dj$mdOTVc8" role="37vLTJ">
                             <ref role="3cqZAo" node="7dj$mdOTVa_" resolve="icon" />
                           </node>
-                          <node concept="2YIFZM" id="7dj$mdOU8T1" role="37vLTx">
-                            <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                            <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
-                            <node concept="37vLTw" id="7dj$mdOTVca" role="37wK5m">
-                              <ref role="3cqZAo" node="7dj$mdOTVb2" resolve="iconNode" />
+                          <node concept="2OqwBi" id="4glh_Dcgse0" role="37vLTx">
+                            <node concept="2YIFZM" id="4glh_Dcgse1" role="2Oq$k0">
+                              <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+                              <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+                            </node>
+                            <node concept="liA8E" id="4glh_Dcgse2" role="2OqNvi">
+                              <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+                              <node concept="2YIFZM" id="4glh_Dcgse3" role="37wK5m">
+                                <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getConcept(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
+                                <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
+                                <node concept="37vLTw" id="4glh_Dcgse4" role="37wK5m">
+                                  <ref role="3cqZAo" node="7dj$mdOTVb2" resolve="iconNode" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -3680,14 +3694,19 @@
                         <node concept="37vLTw" id="7dj$mdOTVbM" role="37vLTJ">
                           <ref role="3cqZAo" node="7dj$mdOTVa_" resolve="icon" />
                         </node>
-                        <node concept="2YIFZM" id="7dj$mdOU8Tb" role="37vLTx">
-                          <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                          <ref role="37wK5l" to="xnls:~IconManager.getIcon(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIcon" />
-                          <node concept="2YIFZM" id="7dj$mdOU8Tf" role="37wK5m">
-                            <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
-                            <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getConcept(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
-                            <node concept="37vLTw" id="7dj$mdOTVbP" role="37wK5m">
-                              <ref role="3cqZAo" node="7dj$mdOTVb2" resolve="iconNode" />
+                        <node concept="2OqwBi" id="4glh_Dcgrx2" role="37vLTx">
+                          <node concept="2YIFZM" id="4glh_Dcgrx3" role="2Oq$k0">
+                            <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+                            <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+                          </node>
+                          <node concept="liA8E" id="4glh_Dcgrx4" role="2OqNvi">
+                            <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+                            <node concept="2YIFZM" id="7dj$mdOU8Tf" role="37wK5m">
+                              <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getConcept(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
+                              <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
+                              <node concept="37vLTw" id="7dj$mdOTVbP" role="37wK5m">
+                                <ref role="3cqZAo" node="7dj$mdOTVb2" resolve="iconNode" />
+                              </node>
                             </node>
                           </node>
                         </node>

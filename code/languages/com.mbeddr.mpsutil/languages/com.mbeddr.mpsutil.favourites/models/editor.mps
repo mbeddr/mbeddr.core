@@ -302,11 +302,16 @@
                 <ref role="2Oxat5" node="DubiFB6mE3" resolve="icon" />
               </node>
             </node>
-            <node concept="2YIFZM" id="DubiFB4P3k" role="37vLTx">
-              <ref role="37wK5l" to="sn11:277Nzj6qTFM" resolve="getIconFor" />
-              <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-              <node concept="1rXfSq" id="6$SBfHyWH2M" role="37wK5m">
-                <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+            <node concept="2OqwBi" id="4glh_DcgCnS" role="37vLTx">
+              <node concept="2YIFZM" id="4glh_DcgCnT" role="2Oq$k0">
+                <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
+                <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="4glh_DcgCnU" role="2OqNvi">
+                <ref role="37wK5l" to="sn11:192HKKPOd3m" resolve="getIconFor" />
+                <node concept="1rXfSq" id="4glh_Dch1zP" role="37wK5m">
+                  <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                </node>
               </node>
             </node>
           </node>

@@ -3745,7 +3745,7 @@
                       <node concept="1Y3b0j" id="6$SBfHyuvXQ" role="YeSDq">
                         <property role="2bfB8j" value="true" />
                         <ref role="1Y3XeK" to="p9jd:~RefCellCellProvider" resolve="RefCellCellProvider" />
-                        <ref role="37wK5l" to="p9jd:~RefCellCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="RefCellCellProvider" />
+                        <ref role="37wK5l" to="p9jd:~RefCellCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractLink,org.jetbrains.mps.openapi.language.SAbstractConcept,java.lang.String,jetbrains.mps.openapi.editor.EditorContext)" resolve="RefCellCellProvider" />
                         <node concept="2OqwBi" id="Op$R49dz6C" role="37wK5m">
                           <node concept="37vLTw" id="Op$R49dz37" role="2Oq$k0">
                             <ref role="3cqZAo" node="Op$R49356$" resolve="data" />
@@ -4642,7 +4642,7 @@
           </node>
           <node concept="3clFbS" id="8dI1zL4mB$" role="3clF47">
             <node concept="XkiVB" id="8dI1zL4mB_" role="3cqZAp">
-              <ref role="37wK5l" to="p9jd:~RefNodeListHandler.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean)" resolve="RefNodeListHandler" />
+              <ref role="37wK5l" to="p9jd:~RefNodeListHandler.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,boolean)" resolve="RefNodeListHandler" />
               <node concept="37vLTw" id="8dI1zL4mBA" role="37wK5m">
                 <ref role="3cqZAo" node="8dI1zL4mBy" resolve="ownerNode" />
               </node>
@@ -6961,7 +6961,7 @@
           <node concept="3Tm1VV" id="bZz9sGBtc0" role="1B3o_S" />
           <node concept="3clFbS" id="bZz9sGBtc1" role="3clF47">
             <node concept="XkiVB" id="bZz9sGBtc_" role="3cqZAp">
-              <ref role="37wK5l" to="emqf:~AbstractCellListHandler.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext)" resolve="AbstractCellListHandler" />
+              <ref role="37wK5l" to="emqf:~AbstractCellListHandler.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext)" resolve="AbstractCellListHandler" />
               <node concept="37vLTw" id="2BHiRxgm6c5" role="37wK5m">
                 <ref role="3cqZAo" node="bZz9sGBtcs" resolve="node" />
               </node>
@@ -7246,7 +7246,7 @@
               </node>
               <node concept="2ShNRf" id="3IFXLmiyurL" role="33vP2m">
                 <node concept="1pGfFk" id="3IFXLmiyurM" role="2ShVmc">
-                  <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,boolean,boolean,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyAccessor" />
+                  <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyAccessor" />
                   <node concept="2OqwBi" id="3IFXLmiyurN" role="37wK5m">
                     <node concept="37vLTw" id="3IFXLmiyurO" role="2Oq$k0">
                       <ref role="3cqZAo" node="3IFXLmitRhB" resolve="data" />

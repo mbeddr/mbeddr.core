@@ -23331,7 +23331,7 @@
       <node concept="3Tm1VV" id="3pFNVizDMql" role="1B3o_S" />
       <node concept="3clFbS" id="3pFNVizDMqn" role="3clF47">
         <node concept="XkiVB" id="3pFNVizDMqp" role="3cqZAp">
-          <ref role="37wK5l" to="p9jd:~PropertyCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyCellProvider" />
+          <ref role="37wK5l" to="p9jd:~PropertyCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyCellProvider" />
           <node concept="37vLTw" id="3pFNVizDMqt" role="37wK5m">
             <ref role="3cqZAo" node="3pFNVizDMqq" resolve="node" />
           </node>
@@ -23395,7 +23395,7 @@
             </node>
             <node concept="2ShNRf" id="3pFNVizDM_c" role="33vP2m">
               <node concept="1pGfFk" id="3pFNVizDM_F" role="2ShVmc">
-                <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,boolean,boolean,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyAccessor" />
+                <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyAccessor" />
                 <node concept="1rXfSq" id="3pFNVizDM$u" role="37wK5m">
                   <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
                 </node>
