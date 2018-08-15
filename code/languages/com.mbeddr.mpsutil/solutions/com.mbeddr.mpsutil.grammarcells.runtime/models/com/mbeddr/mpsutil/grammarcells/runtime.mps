@@ -23330,6 +23330,9 @@
           <node concept="37vLTw" id="3pFNVizDMqt" role="37wK5m">
             <ref role="3cqZAo" node="3pFNVizDMqq" resolve="node" />
           </node>
+          <node concept="37vLTw" id="4glh_Dcm4dR" role="37wK5m">
+            <ref role="3cqZAo" node="4glh_Dcm48K" resolve="property" />
+          </node>
           <node concept="37vLTw" id="3pFNVizDMqx" role="37wK5m">
             <ref role="3cqZAo" node="3pFNVizDMqu" resolve="editorContext" />
           </node>
@@ -23349,6 +23352,12 @@
         <property role="TrG5h" value="node" />
         <node concept="3uibUv" id="3pFNVizDMqs" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4glh_Dcm48K" role="3clF46">
+        <property role="TrG5h" value="property" />
+        <node concept="3uibUv" id="4glh_Dcm4bi" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
         </node>
       </node>
       <node concept="37vLTG" id="3pFNVizDMqu" role="3clF46">
