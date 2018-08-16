@@ -57,6 +57,10 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -80,6 +84,7 @@
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -3114,7 +3119,19 @@
   </node>
   <node concept="312cEu" id="2VNOnmIIQXH">
     <property role="TrG5h" value="MissingConfigurationItemsComputer" />
-    <node concept="2tJIrI" id="2VNOnmIIQYj" role="jymVt" />
+    <node concept="2tJIrI" id="5rpvdj9Pbhv" role="jymVt" />
+    <node concept="Wx3nA" id="5rpvdj9PepJ" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="disableMissingConfigItem" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="5rpvdj9PemG" role="1B3o_S" />
+      <node concept="10P_77" id="5rpvdj9PepB" role="1tU5fm" />
+      <node concept="3clFbT" id="5rpvdj9PesZ" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5rpvdj9Pete" role="jymVt" />
     <node concept="2YIFZL" id="2VNOnmIIQZp" role="jymVt">
       <property role="TrG5h" value="computeMissingConfigItems" />
       <property role="od$2w" value="false" />
@@ -3451,11 +3468,19 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="2VNOnmIIQjQ" role="3clFbw">
-              <node concept="37vLTw" id="2VNOnmIIQ6L" role="2Oq$k0">
-                <ref role="3cqZAo" node="2VNOnmIHggf" resolve="missingConfigItems" />
+            <node concept="1Wc70l" id="5rpvdj9PeSn" role="3clFbw">
+              <node concept="3fqX7Q" id="5rpvdj9PeV6" role="3uHU7w">
+                <node concept="10M0yZ" id="5rpvdj9PeV8" role="3fr31v">
+                  <ref role="3cqZAo" node="5rpvdj9PepJ" resolve="disableMissingConfigItem" />
+                  <ref role="1PxDUh" node="2VNOnmIIQXH" resolve="MissingConfigurationItemsComputer" />
+                </node>
               </node>
-              <node concept="3GX2aA" id="2VNOnmIIQx7" role="2OqNvi" />
+              <node concept="2OqwBi" id="2VNOnmIIQjQ" role="3uHU7B">
+                <node concept="37vLTw" id="2VNOnmIIQ6L" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2VNOnmIHggf" resolve="missingConfigItems" />
+                </node>
+                <node concept="3GX2aA" id="2VNOnmIIQx7" role="2OqNvi" />
+              </node>
             </node>
           </node>
         </node>
