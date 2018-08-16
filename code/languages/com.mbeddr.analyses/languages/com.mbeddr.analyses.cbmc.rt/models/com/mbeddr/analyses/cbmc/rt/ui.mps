@@ -3700,6 +3700,22 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="40ASHLhPimP" role="jymVt" />
+    <node concept="312cEg" id="40ASHLhPfgK" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="fullSliceCheckbox" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="40ASHLhPfgL" role="1B3o_S" />
+      <node concept="3uibUv" id="40ASHLhPfgM" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JCheckBox" resolve="JCheckBox" />
+      </node>
+      <node concept="2ShNRf" id="40ASHLhPfgN" role="33vP2m">
+        <node concept="1pGfFk" id="40ASHLhPfgO" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~JCheckBox.&lt;init&gt;()" resolve="JCheckBox" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="3JyX84yLTGw" role="jymVt" />
     <node concept="312cEg" id="1H8VqTvY7_M" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -4474,6 +4490,125 @@
           </node>
         </node>
         <node concept="3clFbH" id="7GloF9XRUyq" role="3cqZAp" />
+        <node concept="3clFbF" id="40ASHLhPolH" role="3cqZAp">
+          <node concept="2OqwBi" id="40ASHLhPolI" role="3clFbG">
+            <node concept="37vLTw" id="40ASHLhPolJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4PkmwI" resolve="basicSettings" />
+            </node>
+            <node concept="liA8E" id="40ASHLhPolK" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="2ShNRf" id="40ASHLhPolL" role="37wK5m">
+                <node concept="1pGfFk" id="40ASHLhPolM" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                  <node concept="Xl_RD" id="40ASHLhPolN" role="37wK5m">
+                    <property role="Xl_RC" value="Full slice: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="40ASHLhPolO" role="3cqZAp">
+          <node concept="2OqwBi" id="40ASHLhPolP" role="3clFbG">
+            <node concept="37vLTw" id="40ASHLhPolQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4PkmwI" resolve="basicSettings" />
+            </node>
+            <node concept="liA8E" id="40ASHLhPolR" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="40ASHLhPyEW" role="37wK5m">
+                <ref role="3cqZAo" node="40ASHLhPfgK" resolve="fullSliceCheckbox" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="40ASHLhPolT" role="3cqZAp">
+          <node concept="2OqwBi" id="40ASHLhPolU" role="3clFbG">
+            <node concept="37vLTw" id="40ASHLhP$a5" role="2Oq$k0">
+              <ref role="3cqZAo" node="40ASHLhPfgK" resolve="fullSliceCheckbox" />
+            </node>
+            <node concept="liA8E" id="40ASHLhPolW" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="40ASHLhPolZ" role="37wK5m">
+                <property role="Xl_RC" value="If 'full slice' is enabled then the program parts not needed to prove a property will be sliced out and speed increased." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="40ASHLhPom0" role="3cqZAp">
+          <node concept="2OqwBi" id="40ASHLhPom1" role="3clFbG">
+            <node concept="37vLTw" id="40ASHLhPQRM" role="2Oq$k0">
+              <ref role="3cqZAo" node="40ASHLhPfgK" resolve="fullSliceCheckbox" />
+            </node>
+            <node concept="liA8E" id="40ASHLhPom3" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setSelected(boolean):void" resolve="setSelected" />
+              <node concept="2OqwBi" id="40ASHLhPom4" role="37wK5m">
+                <node concept="37vLTw" id="40ASHLhPom5" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                </node>
+                <node concept="2OwXpG" id="40ASHLhPP5E" role="2OqNvi">
+                  <ref role="2Oxat5" node="40ASHLhPBg2" resolve="fullSlice" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="40ASHLhPom7" role="3cqZAp">
+          <node concept="2OqwBi" id="40ASHLhPom8" role="3clFbG">
+            <node concept="37vLTw" id="40ASHLhPRnP" role="2Oq$k0">
+              <ref role="3cqZAo" node="40ASHLhPfgK" resolve="fullSliceCheckbox" />
+            </node>
+            <node concept="liA8E" id="40ASHLhPoma" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addChangeListener(javax.swing.event.ChangeListener):void" resolve="addChangeListener" />
+              <node concept="2ShNRf" id="40ASHLhPomb" role="37wK5m">
+                <node concept="YeOm9" id="40ASHLhPomc" role="2ShVmc">
+                  <node concept="1Y3b0j" id="40ASHLhPomd" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="gsia:~ChangeListener" resolve="ChangeListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="40ASHLhPome" role="1B3o_S" />
+                    <node concept="3clFb_" id="40ASHLhPomf" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="stateChanged" />
+                      <property role="DiZV1" value="false" />
+                      <property role="IEkAT" value="false" />
+                      <node concept="3Tm1VV" id="40ASHLhPomg" role="1B3o_S" />
+                      <node concept="3cqZAl" id="40ASHLhPomh" role="3clF45" />
+                      <node concept="37vLTG" id="40ASHLhPomi" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="40ASHLhPomj" role="1tU5fm">
+                          <ref role="3uigEE" to="gsia:~ChangeEvent" resolve="ChangeEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="40ASHLhPomk" role="3clF47">
+                        <node concept="3clFbF" id="40ASHLhPoml" role="3cqZAp">
+                          <node concept="37vLTI" id="40ASHLhPomm" role="3clFbG">
+                            <node concept="2OqwBi" id="40ASHLhPomn" role="37vLTx">
+                              <node concept="37vLTw" id="40ASHLhPRUR" role="2Oq$k0">
+                                <ref role="3cqZAo" node="40ASHLhPfgK" resolve="fullSliceCheckbox" />
+                              </node>
+                              <node concept="liA8E" id="40ASHLhPomp" role="2OqNvi">
+                                <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="40ASHLhPomq" role="37vLTJ">
+                              <node concept="37vLTw" id="40ASHLhPomr" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                              </node>
+                              <node concept="2OwXpG" id="40ASHLhPScu" role="2OqNvi">
+                                <ref role="2Oxat5" node="40ASHLhPBg2" resolve="fullSlice" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="40ASHLhPluw" role="3cqZAp" />
         <node concept="3clFbF" id="1H8VqTvYmex" role="3cqZAp">
           <node concept="2OqwBi" id="1H8VqTvYmey" role="3clFbG">
             <node concept="37vLTw" id="1H8VqTvYmez" role="2Oq$k0">
@@ -6113,6 +6248,34 @@
               <ref role="3cqZAo" node="3JyX84yLWpn" resolve="sliceFormulaCheckbox" />
             </node>
             <node concept="liA8E" id="3JyX84yMbbC" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JCheckBox.updateUI():void" resolve="updateUI" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="40ASHLhQc_G" role="3cqZAp">
+          <node concept="2OqwBi" id="40ASHLhQc_H" role="3clFbG">
+            <node concept="37vLTw" id="40ASHLhQeua" role="2Oq$k0">
+              <ref role="3cqZAo" node="40ASHLhPfgK" resolve="fullSliceCheckbox" />
+            </node>
+            <node concept="liA8E" id="40ASHLhQc_J" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setSelected(boolean):void" resolve="setSelected" />
+              <node concept="2OqwBi" id="40ASHLhQc_K" role="37wK5m">
+                <node concept="37vLTw" id="40ASHLhQc_L" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                </node>
+                <node concept="2OwXpG" id="40ASHLhQfX5" role="2OqNvi">
+                  <ref role="2Oxat5" node="40ASHLhPBg2" resolve="fullSlice" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="40ASHLhQc_N" role="3cqZAp">
+          <node concept="2OqwBi" id="40ASHLhQc_O" role="3clFbG">
+            <node concept="37vLTw" id="40ASHLhQfoQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="40ASHLhPfgK" resolve="fullSliceCheckbox" />
+            </node>
+            <node concept="liA8E" id="40ASHLhQc_Q" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JCheckBox.updateUI():void" resolve="updateUI" />
             </node>
           </node>
@@ -8554,6 +8717,15 @@
         <property role="3clFbU" value="true" />
       </node>
     </node>
+    <node concept="2tJIrI" id="40ASHLhPCkE" role="jymVt" />
+    <node concept="312cEg" id="40ASHLhPBg2" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="fullSlice" />
+      <property role="3TUv4t" value="false" />
+      <node concept="10P_77" id="40ASHLhPBg3" role="1tU5fm" />
+      <node concept="3clFbT" id="40ASHLhPBg4" role="33vP2m" />
+    </node>
     <node concept="2tJIrI" id="3OhBgB4hwOT" role="jymVt" />
     <node concept="312cEg" id="3OhBgB4hwOU" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -8714,7 +8886,17 @@
     <node concept="3clFbW" id="3OhBgB4hwPM" role="jymVt">
       <node concept="3Tm6S6" id="3OhBgB4hwPN" role="1B3o_S" />
       <node concept="3cqZAl" id="3OhBgB4hwPO" role="3clF45" />
-      <node concept="3clFbS" id="3OhBgB4hwPP" role="3clF47" />
+      <node concept="3clFbS" id="3OhBgB4hwPP" role="3clF47">
+        <node concept="3clFbF" id="43paD3UlU20" role="3cqZAp">
+          <node concept="1rXfSq" id="43paD3UlU1Y" role="3clFbG">
+            <ref role="37wK5l" node="3OhBgB4hx4H" resolve="setWordWidth" />
+            <node concept="Rm8GO" id="43paD3UlU7j" role="37wK5m">
+              <ref role="1Px2BO" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
+              <ref role="Rm8GQ" to="tzyt:6DRvbEG0pcM" resolve="W32" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3OhBgB4hwPX" role="jymVt" />
     <node concept="3clFb_" id="3OhBgB4hx0B" role="jymVt">
@@ -9118,6 +9300,50 @@
       <node concept="10P_77" id="3OhBgB4hx37" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="3OhBgB4hx38" role="jymVt" />
+    <node concept="3clFb_" id="40ASHLhPEuA" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setFullSlice" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="40ASHLhPEuB" role="3clF47">
+        <node concept="3clFbF" id="40ASHLhPEuC" role="3cqZAp">
+          <node concept="37vLTI" id="40ASHLhPEuD" role="3clFbG">
+            <node concept="37vLTw" id="40ASHLhPEuE" role="37vLTx">
+              <ref role="3cqZAo" node="40ASHLhPEuK" resolve="fullSlice" />
+            </node>
+            <node concept="2OqwBi" id="40ASHLhPEuF" role="37vLTJ">
+              <node concept="Xjq3P" id="40ASHLhPEuG" role="2Oq$k0" />
+              <node concept="2OwXpG" id="40ASHLhPINw" role="2OqNvi">
+                <ref role="2Oxat5" node="40ASHLhPBg2" resolve="fullSlice" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="40ASHLhPEuI" role="1B3o_S" />
+      <node concept="3cqZAl" id="40ASHLhPEuJ" role="3clF45" />
+      <node concept="37vLTG" id="40ASHLhPEuK" role="3clF46">
+        <property role="TrG5h" value="fullSlice" />
+        <node concept="10P_77" id="40ASHLhPEuL" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="40ASHLhPEuR" role="jymVt" />
+    <node concept="3clFb_" id="40ASHLhPEuS" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getFullSlice" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="40ASHLhPEuT" role="3clF47">
+        <node concept="3cpWs6" id="40ASHLhPEuU" role="3cqZAp">
+          <node concept="37vLTw" id="40ASHLhPM$Q" role="3cqZAk">
+            <ref role="3cqZAo" node="40ASHLhPBg2" resolve="fullSlice" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="40ASHLhPEuW" role="1B3o_S" />
+      <node concept="10P_77" id="40ASHLhPEuX" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="40ASHLhPDpZ" role="jymVt" />
     <node concept="3clFb_" id="3OhBgB4hx39" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getUseRefinement" />
