@@ -4578,7 +4578,7 @@
                     </node>
                     <node concept="3cpWs3" id="2Rx8UqeMqDn" role="3uHU7B">
                       <node concept="Xl_RD" id="2Rx8UqeMqDp" role="3uHU7B">
-                        <property role="Xl_RC" value="./" />
+                        <property role="Xl_RC" value="./bin/" />
                       </node>
                       <node concept="2OqwBi" id="Qn6HUAmmYR" role="3uHU7w">
                         <node concept="30H73N" id="Qn6HUAmmYS" role="2Oq$k0" />
