@@ -2408,6 +2408,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="1J1iBrrar5C" role="3cqZAp">
+          <node concept="2OqwBi" id="1J1iBrraspx" role="3clFbG">
+            <node concept="37vLTw" id="1J1iBrrar5A" role="2Oq$k0">
+              <ref role="3cqZAo" node="5IR_boHPfLL" resolve="tree" />
+            </node>
+            <node concept="liA8E" id="1J1iBrrav4X" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JTree.setRootVisible(boolean):void" resolve="setRootVisible" />
+              <node concept="3clFbT" id="1J1iBrraw4T" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="$lfQMocLfO" role="3cqZAp" />
         <node concept="3clFbJ" id="2CFPPn7wvnn" role="3cqZAp">
           <node concept="3clFbS" id="2CFPPn7wvnp" role="3clFbx">
@@ -2525,6 +2538,23 @@
             <node concept="10Nm6u" id="4yQfyMjmgXY" role="3uHU7w" />
             <node concept="37vLTw" id="4yQfyMjmgg0" role="3uHU7B">
               <ref role="3cqZAo" node="4yQfyMjm4Ms" resolve="treeExpansionState" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="1J1iBrrbMM$" role="9aQIa">
+            <node concept="3clFbS" id="1J1iBrrbMM_" role="9aQI4">
+              <node concept="3clFbF" id="1J1iBrrbO7_" role="3cqZAp">
+                <node concept="2OqwBi" id="1J1iBrrbOPo" role="3clFbG">
+                  <node concept="37vLTw" id="1J1iBrrbO7$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5IR_boHPfLL" resolve="tree" />
+                  </node>
+                  <node concept="liA8E" id="1J1iBrrbRcN" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~JTree.expandRow(int):void" resolve="expandRow" />
+                    <node concept="3cmrfG" id="1J1iBrrbSaG" role="37wK5m">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
