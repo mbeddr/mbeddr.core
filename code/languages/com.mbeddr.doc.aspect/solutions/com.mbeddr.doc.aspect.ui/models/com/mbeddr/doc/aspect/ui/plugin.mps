@@ -852,13 +852,23 @@
                                   </node>
                                 </node>
                               </node>
+                              <node concept="3SKdUt" id="VuyCfHNAuB" role="3cqZAp">
+                                <node concept="3SKdUq" id="VuyCfHNAuD" role="3SKWNk">
+                                  <property role="3SKdUp" value="todo [Mihail Muhin] consider switching to SProperty here as an identifier, instead of property name" />
+                                </node>
+                              </node>
                               <node concept="3cpWs6" id="1o6EjwiTVgx" role="3cqZAp">
-                                <node concept="2OqwBi" id="1o6EjwiTS9W" role="3cqZAk">
-                                  <node concept="37vLTw" id="1o6EjwiTS9X" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1o6EjwiTS9F" resolve="propertyAccessor" />
+                                <node concept="2OqwBi" id="VuyCfHN_jB" role="3cqZAk">
+                                  <node concept="2OqwBi" id="1o6EjwiTS9W" role="2Oq$k0">
+                                    <node concept="37vLTw" id="1o6EjwiTS9X" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="1o6EjwiTS9F" resolve="propertyAccessor" />
+                                    </node>
+                                    <node concept="liA8E" id="1o6EjwiTS9Y" role="2OqNvi">
+                                      <ref role="37wK5l" to="g51k:~PropertyAccessor.getProperty():org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
+                                    </node>
                                   </node>
-                                  <node concept="liA8E" id="1o6EjwiTS9Y" role="2OqNvi">
-                                    <ref role="37wK5l" to="g51k:~PropertyAccessor.getPropertyName():java.lang.String" resolve="getPropertyName" />
+                                  <node concept="liA8E" id="VuyCfHN_WG" role="2OqNvi">
+                                    <ref role="37wK5l" to="c17a:~SProperty.getName():java.lang.String" resolve="getName" />
                                   </node>
                                 </node>
                               </node>

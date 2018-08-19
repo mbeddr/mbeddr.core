@@ -71,6 +71,14 @@
         <child id="2877762237607015161" name="condition" index="RtEXV" />
       </concept>
     </language>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+      <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
+        <child id="8974276187400029893" name="icon" index="1QGGTw" />
+      </concept>
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
@@ -5235,8 +5243,10 @@
             <node concept="37vLTw" id="CPtprWNpeQ" role="37wK5m">
               <ref role="3cqZAo" node="CPtprWNoG0" resolve="n" />
             </node>
-            <node concept="Xl_RD" id="CPtprWNpf2" role="37wK5m">
-              <property role="Xl_RC" value="up.png" />
+            <node concept="1QGGTA" id="VuyCfHNr9y" role="37wK5m">
+              <node concept="1QGGSu" id="VuyCfHNr9z" role="1QGGTw">
+                <property role="1iqoE4" value="${module}/icons/up.png" />
+              </node>
             </node>
           </node>
         </node>
@@ -5261,8 +5271,10 @@
             <node concept="37vLTw" id="CPtprWNBI$" role="37wK5m">
               <ref role="3cqZAo" node="CPtprWNBIt" resolve="n" />
             </node>
-            <node concept="Xl_RD" id="CPtprWNBI_" role="37wK5m">
-              <property role="Xl_RC" value="down.png" />
+            <node concept="1QGGTA" id="VuyCfHNr1e" role="37wK5m">
+              <node concept="1QGGSu" id="VuyCfHNr1f" role="1QGGTw">
+                <property role="1iqoE4" value="${module}/icons/down.png" />
+              </node>
             </node>
           </node>
         </node>
@@ -5287,8 +5299,10 @@
             <node concept="37vLTw" id="CPtprWNBII" role="37wK5m">
               <ref role="3cqZAo" node="CPtprWNBIB" resolve="n" />
             </node>
-            <node concept="Xl_RD" id="CPtprWNBIJ" role="37wK5m">
-              <property role="Xl_RC" value="left.png" />
+            <node concept="1QGGTA" id="VuyCfHNquM" role="37wK5m">
+              <node concept="1QGGSu" id="VuyCfHNquN" role="1QGGTw">
+                <property role="1iqoE4" value="${module}/icons/left.png" />
+              </node>
             </node>
           </node>
         </node>
@@ -5313,8 +5327,10 @@
             <node concept="37vLTw" id="CPtprWNBIU" role="37wK5m">
               <ref role="3cqZAo" node="CPtprWNBIN" resolve="n" />
             </node>
-            <node concept="Xl_RD" id="CPtprWNBIV" role="37wK5m">
-              <property role="Xl_RC" value="right.png" />
+            <node concept="1QGGTA" id="VuyCfHNq67" role="37wK5m">
+              <node concept="1QGGSu" id="VuyCfHNqeq" role="1QGGTw">
+                <property role="1iqoE4" value="${module}/icons/right.png" />
+              </node>
             </node>
           </node>
         </node>
@@ -5329,60 +5345,15 @@
         <node concept="3Tqbb2" id="CPtprWNpe8" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="CPtprWNpeI" role="3clF46">
-        <property role="TrG5h" value="iconName" />
-        <node concept="17QB3L" id="CPtprWNpeL" role="1tU5fm" />
+        <property role="TrG5h" value="icon" />
+        <node concept="3uibUv" id="VuyCfHNrVM" role="1tU5fm">
+          <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+        </node>
       </node>
       <node concept="3uibUv" id="CPtprWNpe9" role="3clF45">
         <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
       </node>
       <node concept="3clFbS" id="CPtprWNpeb" role="3clF47">
-        <node concept="3cpWs8" id="CPtprWNpec" role="3cqZAp">
-          <node concept="3cpWsn" id="CPtprWNped" role="3cpWs9">
-            <property role="TrG5h" value="iconsPth" />
-            <node concept="17QB3L" id="CPtprWNpee" role="1tU5fm" />
-            <node concept="3cpWs3" id="CPtprWNpef" role="33vP2m">
-              <node concept="10M0yZ" id="CPtprWNpeg" role="3uHU7B">
-                <ref role="1PxDUh" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
-                <ref role="3cqZAo" to="18ew:~MacrosFactory.MODULE" resolve="MODULE" />
-              </node>
-              <node concept="Xl_RD" id="CPtprWNpeh" role="3uHU7w">
-                <property role="Xl_RC" value="/icons/" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="CPtprWNpei" role="3cqZAp">
-          <node concept="3cpWsn" id="CPtprWNpej" role="3cpWs9">
-            <property role="TrG5h" value="path" />
-            <node concept="17QB3L" id="CPtprWNpek" role="1tU5fm" />
-            <node concept="2OqwBi" id="4_OjW93ceTv" role="33vP2m">
-              <node concept="2YIFZM" id="4_OjW93ccqO" role="2Oq$k0">
-                <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
-                <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
-                <node concept="37vLTw" id="4_OjW93cGrb" role="37wK5m">
-                  <ref role="3cqZAo" node="4MTwk$13QoO" resolve="language" />
-                </node>
-              </node>
-              <node concept="liA8E" id="4_OjW93cfp4" role="2OqNvi">
-                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
-                <node concept="3cpWs3" id="4_OjW93cFH2" role="37wK5m">
-                  <node concept="37vLTw" id="4_OjW93cFRK" role="3uHU7w">
-                    <ref role="3cqZAo" node="CPtprWNpeI" resolve="iconName" />
-                  </node>
-                  <node concept="3cpWs3" id="4_OjW93cfNy" role="3uHU7B">
-                    <node concept="37vLTw" id="6O6V2c80UQT" role="3uHU7B">
-                      <ref role="3cqZAo" node="CPtprWNped" resolve="iconsPth" />
-                    </node>
-                    <node concept="10M0yZ" id="4_OjW93cEZh" role="3uHU7w">
-                      <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                      <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="CPtprWNpeu" role="3cqZAp">
           <node concept="3cpWsn" id="CPtprWNpev" role="3cpWs9">
             <property role="TrG5h" value="l" />
@@ -5407,15 +5378,8 @@
             </node>
             <node concept="liA8E" id="CPtprWNpeB" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JLabel.setIcon(javax.swing.Icon):void" resolve="setIcon" />
-              <node concept="2YIFZM" id="CPtprWNpeC" role="37wK5m">
-                <ref role="37wK5l" to="xnls:~IconManager.loadIcon(java.lang.String,boolean):javax.swing.Icon" resolve="loadIcon" />
-                <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                <node concept="37vLTw" id="CPtprWNpeD" role="37wK5m">
-                  <ref role="3cqZAo" node="CPtprWNpej" resolve="path" />
-                </node>
-                <node concept="3clFbT" id="CPtprWNpeE" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
+              <node concept="37vLTw" id="VuyCfHNsCq" role="37wK5m">
+                <ref role="3cqZAo" node="CPtprWNpeI" resolve="icon" />
               </node>
             </node>
           </node>
