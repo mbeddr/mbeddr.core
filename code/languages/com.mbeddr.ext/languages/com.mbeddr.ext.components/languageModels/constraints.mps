@@ -22,6 +22,7 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -79,7 +80,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -3315,6 +3315,40 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9S07l" id="6phvXa0Rwrc" role="9Vyp8">
+      <node concept="3clFbS" id="6phvXa0Rwrd" role="2VODD2">
+        <node concept="3clFbF" id="6phvXa0RxMS" role="3cqZAp">
+          <node concept="1Wc70l" id="6phvXa0R_4E" role="3clFbG">
+            <node concept="2OqwBi" id="6phvXa0RBe5" role="3uHU7w">
+              <node concept="2OqwBi" id="6phvXa0R_Av" role="2Oq$k0">
+                <node concept="EsrRn" id="6phvXa0R_iL" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="6phvXa0RAw_" role="2OqNvi">
+                  <node concept="1xMEDy" id="6phvXa0RAwB" role="1xVPHs">
+                    <node concept="chp4Y" id="6phvXa0RAIw" role="ri$Ld">
+                      <ref role="cht4Q" to="yq40:fwMInzpHoK" resolve="PointerType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3w_OXm" id="6phvXa0RCkv" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="6phvXa0Rza1" role="3uHU7B">
+              <node concept="2OqwBi" id="6phvXa0Ry6m" role="2Oq$k0">
+                <node concept="EsrRn" id="6phvXa0RxMR" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="6phvXa0Ry_5" role="2OqNvi">
+                  <node concept="1xMEDy" id="6phvXa0Ry_7" role="1xVPHs">
+                    <node concept="chp4Y" id="6phvXa0RyIN" role="ri$Ld">
+                      <ref role="cht4Q" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3w_OXm" id="6phvXa0R$bt" role="2OqNvi" />
             </node>
           </node>
         </node>

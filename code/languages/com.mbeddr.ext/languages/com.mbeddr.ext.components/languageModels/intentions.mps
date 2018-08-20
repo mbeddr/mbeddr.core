@@ -1384,7 +1384,7 @@
   <node concept="2S6QgY" id="1lsyexBNOrw">
     <property role="3GE5qa" value="comp.ports" />
     <property role="TrG5h" value="addCharacteristic" />
-    <ref role="2ZfgGC" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
+    <ref role="2ZfgGC" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
     <node concept="2S6ZIM" id="1lsyexBNOrx" role="2ZfVej">
       <node concept="3clFbS" id="1lsyexBNOry" role="2VODD2">
         <node concept="3clFbF" id="1lsyexBNOr_" role="3cqZAp">
@@ -1434,7 +1434,7 @@
               <node concept="2OqwBi" id="2ZUGF54knKf" role="3clFbG">
                 <node concept="2OqwBi" id="2ZUGF54knJN" role="2Oq$k0">
                   <node concept="2Sf5sV" id="2ZUGF54knJu" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="2ZUGF54knJT" role="2OqNvi">
+                  <node concept="3TrEf2" id="72ub2B5veQY" role="2OqNvi">
                     <ref role="3Tt5mk" to="v7ag:2ZUGF54knHd" resolve="cardinality" />
                   </node>
                 </node>
@@ -1457,7 +1457,7 @@
                 <node concept="2OqwBi" id="2ZUGF54knLv" role="3clFbG">
                   <node concept="2OqwBi" id="2ZUGF54knL3" role="2Oq$k0">
                     <node concept="2Sf5sV" id="2ZUGF54knKI" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="2ZUGF54knL9" role="2OqNvi">
+                    <node concept="3TrEf2" id="72ub2B5vfjD" role="2OqNvi">
                       <ref role="3Tt5mk" to="v7ag:2ZUGF54knHd" resolve="cardinality" />
                     </node>
                   </node>
@@ -2512,6 +2512,66 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="72ub2B5nkQa">
+    <property role="3GE5qa" value="intf" />
+    <property role="TrG5h" value="toggleMultiple" />
+    <ref role="2ZfgGC" to="v7ag:71UKpntojUs" resolve="InterfaceType" />
+    <node concept="2S6ZIM" id="72ub2B5nkQb" role="2ZfVej">
+      <node concept="3clFbS" id="72ub2B5nkQc" role="2VODD2">
+        <node concept="3clFbF" id="72ub2B5nl3t" role="3cqZAp">
+          <node concept="Xl_RD" id="72ub2B5nl3v" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Multiple" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="72ub2B5nkQd" role="2ZfgGD">
+      <node concept="3clFbS" id="72ub2B5nkQe" role="2VODD2">
+        <node concept="3clFbJ" id="72ub2B5nlkM" role="3cqZAp">
+          <node concept="3clFbS" id="72ub2B5nlkN" role="3clFbx">
+            <node concept="3clFbF" id="72ub2B5nlkO" role="3cqZAp">
+              <node concept="2OqwBi" id="72ub2B5nlkP" role="3clFbG">
+                <node concept="2OqwBi" id="72ub2B5nlkQ" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="72ub2B5nlkR" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="72ub2B5nlkS" role="2OqNvi">
+                    <ref role="3Tt5mk" to="v7ag:6phvXa0RtFG" resolve="cardinality" />
+                  </node>
+                </node>
+                <node concept="3YRAZt" id="72ub2B5nlkT" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="72ub2B5nlkU" role="3clFbw">
+            <node concept="10Nm6u" id="72ub2B5nlkV" role="3uHU7w" />
+            <node concept="2OqwBi" id="72ub2B5nlkW" role="3uHU7B">
+              <node concept="2Sf5sV" id="72ub2B5nlkX" role="2Oq$k0" />
+              <node concept="3TrEf2" id="72ub2B5nlkY" role="2OqNvi">
+                <ref role="3Tt5mk" to="v7ag:6phvXa0RtFG" resolve="cardinality" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="72ub2B5nlkZ" role="9aQIa">
+            <node concept="3clFbS" id="72ub2B5nll0" role="9aQI4">
+              <node concept="3clFbF" id="72ub2B5nll1" role="3cqZAp">
+                <node concept="2OqwBi" id="72ub2B5nll2" role="3clFbG">
+                  <node concept="2OqwBi" id="72ub2B5nll3" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="72ub2B5nll4" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="72ub2B5nll5" role="2OqNvi">
+                      <ref role="3Tt5mk" to="v7ag:6phvXa0RtFG" resolve="cardinality" />
+                    </node>
+                  </node>
+                  <node concept="zfrQC" id="72ub2B5nll6" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="72ub2B5nkZ6" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
 </model>

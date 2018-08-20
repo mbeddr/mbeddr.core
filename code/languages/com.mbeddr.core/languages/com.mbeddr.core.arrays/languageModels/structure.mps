@@ -123,6 +123,7 @@
     <property role="3GE5qa" value="arrays" />
     <property role="R4oN_" value="array type" />
     <property role="EcuMT" value="5679441017214012545" />
+    <property role="34LRSv" value="[" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyj" id="1gDNXlE1$cN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
