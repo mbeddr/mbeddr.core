@@ -2042,10 +2042,8 @@
     <property role="3GE5qa" value="arrays" />
     <property role="18ip37" value="true" />
     <node concept="3clFbS" id="5sJgLFR$yGy" role="18ibNy">
-      <node concept="3clFbH" id="2Qo$Q2I7Rch" role="3cqZAp" />
       <node concept="nvevp" id="2$93WAKkeI" role="3cqZAp">
         <node concept="3clFbS" id="2$93WAKkeJ" role="nvhr_">
-          <node concept="3clFbH" id="4LXxPGcvKCu" role="3cqZAp" />
           <node concept="3clFbJ" id="4LXxPGcvLST" role="3cqZAp">
             <node concept="3clFbS" id="4LXxPGcvLSW" role="3clFbx">
               <node concept="3cpWs8" id="4LXxPGcvMMr" role="3cqZAp">
@@ -2109,7 +2107,6 @@
                 </node>
               </node>
               <node concept="3clFbS" id="553DAm74L4p" role="3eOfB_">
-                <node concept="3clFbH" id="553DAm74L6N" role="3cqZAp" />
                 <node concept="3cpWs8" id="2Qo$Q2I83NA" role="3cqZAp">
                   <node concept="3cpWsn" id="2Qo$Q2I83NB" role="3cpWs9">
                     <property role="TrG5h" value="selfTyping" />
@@ -2127,15 +2124,19 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="553DAm74L6O" role="3cqZAp" />
                 <node concept="3clFbJ" id="2Qo$Q2I83Ns" role="3cqZAp">
                   <node concept="3clFbS" id="2Qo$Q2I83Nt" role="3clFbx">
                     <node concept="2MkqsV" id="2Qo$Q2I83Ou" role="3cqZAp">
                       <node concept="Xl_RD" id="2Qo$Q2I83Ox" role="2MkJ7o">
-                        <property role="Xl_RC" value="Not allowed in the indexing expression" />
+                        <property role="Xl_RC" value="not allowed in indexing expression" />
                       </node>
-                      <node concept="1YBJjd" id="553DAm74L6Q" role="2OEOjV">
-                        <ref role="1YBMHb" node="5sJgLFR$yGz" resolve="aae" />
+                      <node concept="2OqwBi" id="73HHpfaizKU" role="2OEOjV">
+                        <node concept="1YBJjd" id="553DAm74L6Q" role="2Oq$k0">
+                          <ref role="1YBMHb" node="5sJgLFR$yGz" resolve="aae" />
+                        </node>
+                        <node concept="3TrEf2" id="73HHpfai_2n" role="2OqNvi">
+                          <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3cpWs6" id="2Qo$Q2I83OZ" role="3cqZAp" />
@@ -3891,16 +3892,11 @@
                         <ref role="3cqZAo" node="VuCligKmTc" resolve="staticSize" />
                       </node>
                       <node concept="3cpWs3" id="VuCligKq3k" role="3uHU7B">
-                        <node concept="3cpWs3" id="VuCligKq3n" role="3uHU7B">
-                          <node concept="37vLTw" id="VuCligKq3r" role="3uHU7w">
-                            <ref role="3cqZAo" node="VuCligKq0k" resolve="staticIndex" />
-                          </node>
-                          <node concept="Xl_RD" id="VuCligKq3q" role="3uHU7B">
-                            <property role="Xl_RC" value="index (" />
-                          </node>
+                        <node concept="37vLTw" id="VuCligKq3r" role="3uHU7B">
+                          <ref role="3cqZAo" node="VuCligKq0k" resolve="staticIndex" />
                         </node>
                         <node concept="Xl_RD" id="VuCligKq2T" role="3uHU7w">
-                          <property role="Xl_RC" value=") too large for the array of size " />
+                          <property role="Xl_RC" value=" too large as index for array of size " />
                         </node>
                       </node>
                     </node>
