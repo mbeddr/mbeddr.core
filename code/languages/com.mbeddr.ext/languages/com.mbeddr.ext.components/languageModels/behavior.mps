@@ -40,6 +40,8 @@
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="1s42" ref="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -13454,6 +13456,75 @@
     </node>
     <node concept="13hLZK" id="2zhwXA$TG$W" role="13h7CW">
       <node concept="3clFbS" id="2zhwXA$TG$X" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="73HHpfaf4zo" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isAllowedInExpression" />
+      <ref role="13i0hy" to="1s42:2Qo$Q2I7Rfr" resolve="isAllowedInExpression" />
+      <node concept="3Tm1VV" id="73HHpfaf4zp" role="1B3o_S" />
+      <node concept="3clFbS" id="73HHpfaf4zu" role="3clF47">
+        <node concept="3clFbF" id="73HHpfaf4zz" role="3cqZAp">
+          <node concept="BsUDl" id="73HHpfaf7Ck" role="3clFbG">
+            <ref role="37wK5l" node="6phvXa0RvzK" resolve="isMultiple" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="73HHpfaf4zv" role="3clF46">
+        <property role="TrG5h" value="aae" />
+        <node concept="3Tqbb2" id="73HHpfaf4zw" role="1tU5fm">
+          <ref role="ehGHo" to="yq40:5sJgLFR$y$1" resolve="ArrayAccessExpr" />
+        </node>
+      </node>
+      <node concept="10P_77" id="73HHpfaf4zx" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="73HHpfaf4z$" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTypeOfOperation" />
+      <ref role="13i0hy" to="1s42:2Qo$Q2I7Rfy" resolve="getTypeOfOperation" />
+      <node concept="3Tm1VV" id="73HHpfaf4z_" role="1B3o_S" />
+      <node concept="3clFbS" id="73HHpfaf4zE" role="3clF47">
+        <node concept="3clFbF" id="73HHpfaf7Dc" role="3cqZAp">
+          <node concept="2pJPEk" id="73HHpfaf7Da" role="3clFbG">
+            <node concept="2pJPED" id="73HHpfaf7GO" role="2pJPEn">
+              <ref role="2pJxaS" to="v7ag:71UKpntojUs" resolve="InterfaceType" />
+              <node concept="2pIpSj" id="73HHpfaf7LA" role="2pJxcM">
+                <ref role="2pIpSl" to="v7ag:71UKpntojUt" resolve="intf" />
+                <node concept="36biLy" id="73HHpfaf7Qy" role="2pJxcZ">
+                  <node concept="2OqwBi" id="73HHpfaf8ei" role="36biLW">
+                    <node concept="13iPFW" id="73HHpfaf7Vu" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="73HHpfaf9cd" role="2OqNvi">
+                      <ref role="3Tt5mk" to="v7ag:71UKpntojUt" resolve="intf" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="73HHpfaf4zF" role="3clF46">
+        <property role="TrG5h" value="aae" />
+        <node concept="3Tqbb2" id="73HHpfaf4zG" role="1tU5fm">
+          <ref role="ehGHo" to="yq40:5sJgLFR$y$1" resolve="ArrayAccessExpr" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="73HHpfaf4zH" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="73HHpfbmH1B" role="13h7CS">
+      <property role="TrG5h" value="interfaceCountVarName" />
+      <node concept="3Tm1VV" id="73HHpfbmH1C" role="1B3o_S" />
+      <node concept="17QB3L" id="73HHpfbmH1D" role="3clF45" />
+      <node concept="3clFbS" id="73HHpfbmH1E" role="3clF47">
+        <node concept="3clFbF" id="73HHpfbmH1F" role="3cqZAp">
+          <node concept="Xl_RD" id="73HHpfbmH1G" role="3clFbG">
+            <property role="Xl_RC" value="___ic" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="3PT6Z48HIpz">

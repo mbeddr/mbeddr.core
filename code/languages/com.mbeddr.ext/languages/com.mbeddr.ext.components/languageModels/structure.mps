@@ -727,6 +727,9 @@
     <node concept="PrWs8" id="j_pDIZyT7O" role="PzmwI">
       <ref role="PrY4T" to="clbe:IPRL99KNBH" resolve="ICanReferToValueStructure" />
     </node>
+    <node concept="PrWs8" id="73HHpfaf1cp" role="PzmwI">
+      <ref role="PrY4T" to="yq40:2Qo$Q2I7Rcd" resolve="ISelfTypingInArrayAccessExpression" />
+    </node>
     <node concept="PrWs8" id="2JQfpiy2xVk" role="PzmwI">
       <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="INullableType" />
     </node>
