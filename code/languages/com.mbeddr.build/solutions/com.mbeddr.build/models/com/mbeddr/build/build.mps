@@ -5793,6 +5793,12 @@
             <ref role="1Busuk" to="al5i:61Pvu7KHtlo" resolve="com.mbeddr.mpsutil.breadcrumb" />
           </node>
         </node>
+        <node concept="1SiIV0" id="rg_9_g5LuY" role="3bR37C">
+          <node concept="3bR9La" id="rg_9_g5LuZ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43Lo" resolve="com.mbeddr.core.pointers" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="ZmkllFPpkT" role="2G$12L">
         <property role="BnDLt" value="true" />
