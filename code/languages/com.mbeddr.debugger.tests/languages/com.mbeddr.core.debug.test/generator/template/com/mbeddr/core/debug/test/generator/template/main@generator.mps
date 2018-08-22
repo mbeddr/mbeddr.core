@@ -4,7 +4,6 @@
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="4457ca2e-a7c9-4452-9578-e94701cc4942" name="com.mbeddr.core.debug.util" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
@@ -44,9 +43,6 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
-    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
-      <concept id="1161622753914" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_operationContext" flags="nn" index="1Q79dO" />
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -414,7 +410,7 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
     <language id="4457ca2e-a7c9-4452-9578-e94701cc4942" name="com.mbeddr.core.debug.util">
-      <concept id="9152682018127982951" name="com.mbeddr.core.debug.util.structure.MbeddrClassConcept" flags="ig" index="fAQEE" />
+      <concept id="9152682018127982951" name="com.mbeddr.core.debug.util.structure.MbeddrClassConcept" flags="ng" index="fAQEE" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -7060,13 +7056,12 @@
                     <node concept="3clFbS" id="7FG6jaj2AQb" role="2VODD2">
                       <node concept="3clFbF" id="7FG6jaj2AQc" role="3cqZAp">
                         <node concept="2YIFZM" id="7FG6jaj2AQd" role="3clFbG">
-                          <ref role="37wK5l" to="3fh5:L0xQjiTXbx" resolve="getProjectPath" />
                           <ref role="1Pybhc" to="3fh5:L0xQjiTXbn" resolve="TestsUtil" />
+                          <ref role="37wK5l" to="3fh5:7v5ch11EroR" resolve="getProjectPath" />
                           <node concept="2OqwBi" id="7FG6jaj2AQe" role="37wK5m">
                             <node concept="30H73N" id="7FG6jaj2AQf" role="2Oq$k0" />
                             <node concept="I4A8Y" id="7FG6jaj2AQg" role="2OqNvi" />
                           </node>
-                          <node concept="1Q79dO" id="7FG6jaj2AQh" role="37wK5m" />
                         </node>
                       </node>
                     </node>
@@ -8005,12 +8000,11 @@
                       <node concept="3clFbF" id="3GPxRNR4EsZ" role="3cqZAp">
                         <node concept="2YIFZM" id="3GPxRNR4Et0" role="3clFbG">
                           <ref role="1Pybhc" to="3fh5:L0xQjiTXbn" resolve="TestsUtil" />
-                          <ref role="37wK5l" to="3fh5:L0xQjiTXbx" resolve="getProjectPath" />
+                          <ref role="37wK5l" to="3fh5:7v5ch11EroR" resolve="getProjectPath" />
                           <node concept="2OqwBi" id="3GPxRNR4Et1" role="37wK5m">
                             <node concept="30H73N" id="3GPxRNR4Et2" role="2Oq$k0" />
                             <node concept="I4A8Y" id="3GPxRNR4Et3" role="2OqNvi" />
                           </node>
-                          <node concept="1Q79dO" id="3GPxRNR4Et4" role="37wK5m" />
                         </node>
                       </node>
                     </node>
