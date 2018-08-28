@@ -6684,11 +6684,16 @@
           <node concept="3clFbJ" id="4AGl5dzxiWr" role="3cqZAp">
             <node concept="3clFbS" id="4AGl5dzxiWt" role="3clFbx">
               <node concept="2MkqsV" id="ocEBR5sqpd" role="3cqZAp">
-                <node concept="1YBJjd" id="ocEBR5sqp$" role="2OEOjV">
-                  <ref role="1YBMHb" node="2ZUGF54k34M" resolve="requiredPortOpCallExpr" />
+                <node concept="2OqwBi" id="4zcsoWjOiP$" role="2OEOjV">
+                  <node concept="1YBJjd" id="ocEBR5sqp$" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2ZUGF54k34M" resolve="requiredPortOpCallExpr" />
+                  </node>
+                  <node concept="3TrEf2" id="4zcsoWjOklm" role="2OqNvi">
+                    <ref role="3Tt5mk" to="v7ag:pTHqv6KWwa" resolve="port" />
+                  </node>
                 </node>
                 <node concept="Xl_RD" id="ocEBR5sqqH" role="2MkJ7o">
-                  <property role="Xl_RC" value="access to an optional port has to happen inside a 'when connected' statement for that port" />
+                  <property role="Xl_RC" value="access to an optional port must happen inside a 'when connected' statement for that port" />
                 </node>
               </node>
             </node>
