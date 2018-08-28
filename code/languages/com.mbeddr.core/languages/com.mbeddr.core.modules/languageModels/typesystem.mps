@@ -3400,7 +3400,6 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="AeX2DkMVkf" role="3cqZAp" />
       <node concept="3clFbJ" id="2Xknsxco2yW" role="3cqZAp">
         <node concept="3clFbS" id="2Xknsxco2yZ" role="3clFbx">
           <node concept="2MkqsV" id="AeX2DkMYms" role="3cqZAp">
@@ -3422,7 +3421,7 @@
                 </node>
               </node>
               <node concept="Xl_RD" id="AeX2DkMYmw" role="3uHU7B">
-                <property role="Xl_RC" value="wrong number of arguments. Expected: " />
+                <property role="Xl_RC" value="wrong number of arguments, expected: " />
               </node>
             </node>
           </node>

@@ -186,7 +186,6 @@
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
-        <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
@@ -630,7 +629,6 @@
   </node>
   <node concept="1YbPZF" id="qWsmfOQVUv">
     <property role="TrG5h" value="typeof_InterfaceOperationCallExpr" />
-    <property role="18ip37" value="true" />
     <node concept="3clFbS" id="qWsmfOQVUw" role="18ibNy">
       <node concept="3SKdUt" id="brG9xoss6d" role="3cqZAp">
         <node concept="3SKdUq" id="brG9xossjG" role="3SKWNk">
