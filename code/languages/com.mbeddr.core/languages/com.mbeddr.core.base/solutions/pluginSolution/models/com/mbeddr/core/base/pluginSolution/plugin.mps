@@ -111,11 +111,8 @@
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="f061" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application.ex(MPS.IDEA/)" />
-    <import index="17wx" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.locks(JDK/)" />
-    <import index="ixe9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.concurrency(MPS.IDEA/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
-    <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="sn11" ref="r:836426ab-a6f4-4fa3-9a9c-34c02ed6ab5d(jetbrains.mps.ide.icons)" />
   </imports>
   <registry>
@@ -16929,8 +16926,8 @@
   </node>
   <node concept="tC5Ba" id="goNQ8fnbtb">
     <property role="TrG5h" value="mbeddrPlatformProjectionModeGroup" />
-    <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Projection" />
+    <property role="1XlLyE" value="true" />
     <node concept="30SVEG" id="3kpOq3PZX3V" role="2f5YQi">
       <property role="30T2Og" value="ViewMenu" />
       <ref role="tU$_T" to="tprs:hF$pMQx" resolve="IDEAMainMenu" />
