@@ -187,6 +187,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -5961,6 +5962,32 @@
                           <property role="Xl_RC" value="-D__CYGWIN__" />
                         </node>
                       </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="2aciK4JtCTs" role="3cqZAp">
+                    <node concept="3clFbS" id="2aciK4JtCTu" role="3clFbx">
+                      <node concept="3clFbF" id="2aciK4JrRyL" role="3cqZAp">
+                        <node concept="2OqwBi" id="2aciK4JrSdk" role="3clFbG">
+                          <node concept="37vLTw" id="2aciK4JrRyJ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                          </node>
+                          <node concept="TSZUe" id="2aciK4JrSSn" role="2OqNvi">
+                            <node concept="Xl_RD" id="2aciK4JrT4u" role="25WWJ7">
+                              <property role="Xl_RC" value="-D__stdcall=" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2aciK4JtDFE" role="3clFbw">
+                      <node concept="2YIFZM" id="2aciK4JtD5U" role="2Oq$k0">
+                        <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                        <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                        <node concept="Xl_RD" id="2aciK4JtDpP" role="37wK5m">
+                          <property role="Xl_RC" value="CBMC_BASED_ANALYSES_DO_NOT_OVERRIDE_STDCALL_MACRO" />
+                        </node>
+                      </node>
+                      <node concept="17RlXB" id="2aciK4JtEix" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
