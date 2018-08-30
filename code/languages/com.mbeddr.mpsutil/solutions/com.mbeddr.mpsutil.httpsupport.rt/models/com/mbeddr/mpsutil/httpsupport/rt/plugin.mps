@@ -386,24 +386,24 @@
     <property role="3NeIjD" value="1" />
     <node concept="1DJMfN" id="3vXSZsAPQkz" role="1DEjpx">
       <property role="TrG5h" value="enabled" />
-      <property role="1DJMfM" value="false" />
+      <property role="1DJMfM" value="true" />
       <node concept="3ZQQOj" id="4bsUQfPNOuQ" role="XGeyX">
         <ref role="3ZOmrH" node="7Hbe8h753s1" resolve="Enabled" />
       </node>
       <node concept="10P_77" id="3vXSZsAPQk$" role="1tU5fm" />
-      <node concept="3clFbT" id="436$jNg5x9C" role="33vP2m">
-        <property role="3clFbU" value="false" />
+      <node concept="3clFbT" id="2j6kZYjaQy4" role="33vP2m">
+        <property role="3clFbU" value="true" />
       </node>
     </node>
     <node concept="czsHg" id="3vXSZsAPQkA" role="1DEjpx">
       <property role="TrG5h" value="port" />
-      <property role="cyBRX" value="8086" />
+      <property role="cyBRX" value="8080" />
       <node concept="3ZQQOj" id="4bsUQfPNP3X" role="XGeyX">
         <ref role="3ZOmrH" node="7Hbe8h753K_" resolve="Port" />
       </node>
       <node concept="3cpWsb" id="3vXSZsAPQkB" role="1tU5fm" />
-      <node concept="3cmrfG" id="436$jNg5xwY" role="33vP2m">
-        <property role="3cmrfH" value="8086" />
+      <node concept="3cmrfG" id="2j6kZYjaQae" role="33vP2m">
+        <property role="3cmrfH" value="8080" />
       </node>
     </node>
     <node concept="3xWZ$M" id="3vXSZsAPQkD" role="3NKUvU">
