@@ -148,7 +148,7 @@
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
+      <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -281,8 +281,8 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include" />
-      <property role="1FkSt$" value="-g  -I/usr/include/" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
       <property role="3I8uaA" value="" />
       <node concept="3abb7c" id="4LhGMnjpR5g" role="3anu1O">
         <property role="TrG5h" value="Win32" />
@@ -329,7 +329,7 @@
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJ_f" role="2Q9xDr">
-      <node concept="3GpDuo" id="4ctEUnyrJaF" role="3GpDut" />
+      <node concept="3GpDuv" id="5IBF_ZVt6Ad" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="6bs538lKHvH">
