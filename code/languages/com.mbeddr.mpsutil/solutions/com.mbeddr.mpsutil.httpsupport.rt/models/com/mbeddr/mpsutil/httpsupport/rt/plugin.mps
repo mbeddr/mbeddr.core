@@ -2,16 +2,18 @@
 <model ref="r:1bdd2911-4cda-43fc-8696-c8fb6475ff04(com.mbeddr.mpsutil.httpsupport.rt.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265" name="com.mbeddr.mpsutil.preferenceform" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
-    <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265" name="com.mbeddr.mpsutil.preferenceform" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
+    <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
-  <imports />
+  <imports>
+    <import index="gzvg" ref="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)" />
+  </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -461,6 +463,29 @@
     </node>
     <node concept="3xXM6Z" id="24HfET2s4cG" role="3NKUo6">
       <node concept="3clFbS" id="24HfET2s4cH" role="2VODD2">
+        <node concept="3cpWs8" id="2p5LVRsSykt" role="3cqZAp">
+          <node concept="3cpWsn" id="2p5LVRsSyku" role="3cpWs9">
+            <property role="TrG5h" value="readPort" />
+            <node concept="10Oyi0" id="2p5LVRsSyks" role="1tU5fm" />
+            <node concept="2YIFZM" id="2p5LVRsSykv" role="33vP2m">
+              <ref role="1Pybhc" to="gzvg:3ZjlwXBExfQ" resolve="ServerUtil" />
+              <ref role="37wK5l" to="gzvg:7GB4siXi_Lg" resolve="getPort" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1h8J8I9wrcI" role="3cqZAp">
+          <node concept="37vLTI" id="1h8J8I9wrX7" role="3clFbG">
+            <node concept="37vLTw" id="1h8J8I9wslq" role="37vLTx">
+              <ref role="3cqZAo" node="2p5LVRsSyku" resolve="readPort" />
+            </node>
+            <node concept="2OqwBi" id="1h8J8I9wrjL" role="37vLTJ">
+              <node concept="2WthIp" id="1h8J8I9wrcG" role="2Oq$k0" />
+              <node concept="1DZHhv" id="1h8J8I9wrs5" role="2OqNvi">
+                <ref role="2WH_rO" node="3vXSZsAPQkA" resolve="port" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="24HfET2s2_E" role="3cqZAp">
           <node concept="2YIFZM" id="24HfET2s2C4" role="3clFbG">
             <ref role="37wK5l" node="24HfET2s0Ve" resolve="setCurrentConfig" />
@@ -468,16 +493,8 @@
             <node concept="2ShNRf" id="24HfET2s4Bp" role="37wK5m">
               <node concept="1pGfFk" id="24HfET2s4Bq" role="2ShVmc">
                 <ref role="37wK5l" node="3vXSZsAPOZP" resolve="HttpServerConfig" />
-                <node concept="1eOMI4" id="24HfET2s4Br" role="37wK5m">
-                  <node concept="10QFUN" id="24HfET2s4Bs" role="1eOMHV">
-                    <node concept="2OqwBi" id="24HfET2s4Bt" role="10QFUP">
-                      <node concept="2WthIp" id="24HfET2s4Bu" role="2Oq$k0" />
-                      <node concept="1DZHhv" id="24HfET2s4Bv" role="2OqNvi">
-                        <ref role="2WH_rO" node="3vXSZsAPQkA" resolve="port" />
-                      </node>
-                    </node>
-                    <node concept="10Oyi0" id="24HfET2s4Bw" role="10QFUM" />
-                  </node>
+                <node concept="37vLTw" id="2p5LVRsSzb9" role="37wK5m">
+                  <ref role="3cqZAo" node="2p5LVRsSyku" resolve="readPort" />
                 </node>
                 <node concept="2OqwBi" id="24HfET2s4Bx" role="37wK5m">
                   <node concept="2WthIp" id="24HfET2s4By" role="2Oq$k0" />
