@@ -741,15 +741,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3RFEChb2T8X" role="3cqZAp">
-          <node concept="3cpWsn" id="3RFEChb2T90" role="3cpWs9">
-            <property role="TrG5h" value="paramsOk" />
-            <node concept="10P_77" id="3RFEChb2T8V" role="1tU5fm" />
-            <node concept="3clFbT" id="3RFEChb2Tg7" role="33vP2m">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="3RFEChb2ROY" role="3cqZAp" />
         <node concept="2Gpval" id="3RFEChb2P56" role="3cqZAp">
           <node concept="2GrKxI" id="3RFEChb2P58" role="2Gsz3X">
@@ -857,44 +848,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbJ" id="3RFEChb2SNf" role="3cqZAp">
-              <node concept="3clFbS" id="3RFEChb2SNg" role="3clFbx">
-                <node concept="3clFbF" id="3RFEChb2SNh" role="3cqZAp">
-                  <node concept="37vLTI" id="3RFEChb2SNi" role="3clFbG">
-                    <node concept="3clFbT" id="3RFEChb2SNj" role="37vLTx">
-                      <property role="3clFbU" value="true" />
-                    </node>
-                    <node concept="37vLTw" id="3RFEChb2Tgg" role="37vLTJ">
-                      <ref role="3cqZAo" node="3RFEChb2T90" resolve="paramsOk" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1Wc70l" id="3RFEChb2SNl" role="3clFbw">
-                <node concept="2OqwBi" id="3RFEChb2SNm" role="3uHU7w">
-                  <node concept="2GrUjf" id="3RFEChb2SNn" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="3RFEChb2P58" resolve="m" />
-                  </node>
-                  <node concept="liA8E" id="3RFEChb2SNo" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                    <node concept="Xl_RD" id="3RFEChb2SNp" role="37wK5m">
-                      <property role="Xl_RC" value="PASSED" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="3RFEChb2SNq" role="3uHU7B">
-                  <node concept="2GrUjf" id="3RFEChb2SNr" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="3RFEChb2P58" resolve="m" />
-                  </node>
-                  <node concept="liA8E" id="3RFEChb2SNs" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                    <node concept="Xl_RD" id="3RFEChb2SNt" role="37wK5m">
-                      <property role="Xl_RC" value="cbmc params check" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
           <node concept="37vLTw" id="3RFEChb2PbA" role="2GsD0m">
             <ref role="3cqZAo" node="3RFEChb2OeI" resolve="messages" />
@@ -918,16 +871,6 @@
           <node concept="3_1$Yv" id="3RFEChb2Sie" role="3_9lra">
             <node concept="Xl_RD" id="3RFEChb2Sif" role="3_1BAH">
               <property role="Xl_RC" value="smoke run failed" />
-            </node>
-          </node>
-        </node>
-        <node concept="3vwNmj" id="3RFEChb2Tsy" role="3cqZAp">
-          <node concept="37vLTw" id="3RFEChb2T$e" role="3vwVQn">
-            <ref role="3cqZAo" node="3RFEChb2T90" resolve="paramsOk" />
-          </node>
-          <node concept="3_1$Yv" id="3RFEChb2Ts$" role="3_9lra">
-            <node concept="Xl_RD" id="3RFEChb2Ts_" role="3_1BAH">
-              <property role="Xl_RC" value="cbmc params are OK" />
             </node>
           </node>
         </node>
