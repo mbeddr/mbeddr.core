@@ -34,16 +34,12 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
-        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
-        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
-      </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -80,10 +76,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
-        <child id="1068580123160" name="condition" index="3clFbw" />
-        <child id="1068580123161" name="ifTrue" index="3clFbx" />
-      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -93,9 +85,6 @@
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
-        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -114,17 +103,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
-      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
-        <property id="8355037393041754995" name="isNative" index="2aFKle" />
-      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
-      </concept>
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -382,43 +363,31 @@
     <node concept="1DJMfN" id="3vXSZsAPQkz" role="1DEjpx">
       <property role="TrG5h" value="enabled" />
       <property role="1DJMfM" value="true" />
+      <node concept="3clFbT" id="2j6kZYjaQy4" role="33vP2m">
+        <property role="3clFbU" value="true" />
+      </node>
       <node concept="3ZQQOj" id="4bsUQfPNOuQ" role="XGeyX">
         <ref role="3ZOmrH" node="7Hbe8h753s1" resolve="Enabled" />
       </node>
       <node concept="10P_77" id="3vXSZsAPQk$" role="1tU5fm" />
-      <node concept="3clFbT" id="2j6kZYjaQy4" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
     </node>
     <node concept="czsHg" id="3vXSZsAPQkA" role="1DEjpx">
       <property role="TrG5h" value="port" />
       <property role="cyBRX" value="8080" />
+      <node concept="3cmrfG" id="2j6kZYjaQae" role="33vP2m">
+        <property role="3cmrfH" value="8080" />
+      </node>
       <node concept="3ZQQOj" id="4bsUQfPNP3X" role="XGeyX">
         <ref role="3ZOmrH" node="7Hbe8h753K_" resolve="Port" />
       </node>
       <node concept="3cpWsb" id="3vXSZsAPQkB" role="1tU5fm" />
-      <node concept="3cmrfG" id="2j6kZYjaQae" role="33vP2m">
-        <property role="3cmrfH" value="8080" />
-      </node>
     </node>
     <node concept="3xWZ$M" id="3vXSZsAPQkD" role="3NKUvU">
       <node concept="3clFbS" id="3vXSZsAPQkE" role="2VODD2">
-        <node concept="3cpWs8" id="2j6kZYjakOI" role="3cqZAp">
-          <node concept="3cpWsn" id="2j6kZYjakOJ" role="3cpWs9">
-            <property role="TrG5h" value="customizedServerConfig" />
-            <node concept="3uibUv" id="2j6kZYjakOH" role="1tU5fm">
-              <ref role="3uigEE" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
-            </node>
-            <node concept="2YIFZM" id="2j6kZYjakOK" role="33vP2m">
-              <ref role="37wK5l" node="2j6kZYj9zD0" resolve="getCustomizedServerConfig" />
-              <ref role="1Pybhc" node="2j6kZYj9xY7" resolve="HttpServerConfigOverride" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="24HfET2s2DB" role="3cqZAp">
           <node concept="3cpWsn" id="24HfET2s2DC" role="3cpWs9">
             <property role="TrG5h" value="info" />
-            <property role="3TUv4t" value="false" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="24HfET2s2DD" role="1tU5fm">
               <ref role="3uigEE" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
             </node>
@@ -443,26 +412,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="2j6kZYjakAa" role="3cqZAp">
-          <node concept="3clFbS" id="2j6kZYjakAc" role="3clFbx">
-            <node concept="3clFbF" id="2j6kZYjalS_" role="3cqZAp">
-              <node concept="37vLTI" id="2j6kZYjanSk" role="3clFbG">
-                <node concept="37vLTw" id="2j6kZYjanU_" role="37vLTx">
-                  <ref role="3cqZAo" node="2j6kZYjakOJ" resolve="customizedServerConfig" />
-                </node>
-                <node concept="37vLTw" id="2j6kZYjalSz" role="37vLTJ">
-                  <ref role="3cqZAo" node="24HfET2s2DC" resolve="info" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="2j6kZYjal3i" role="3clFbw">
-            <node concept="10Nm6u" id="2j6kZYjal47" role="3uHU7w" />
-            <node concept="37vLTw" id="2j6kZYjakOL" role="3uHU7B">
-              <ref role="3cqZAo" node="2j6kZYjakOJ" resolve="customizedServerConfig" />
             </node>
           </node>
         </node>
@@ -512,76 +461,31 @@
     </node>
     <node concept="3xXM6Z" id="24HfET2s4cG" role="3NKUo6">
       <node concept="3clFbS" id="24HfET2s4cH" role="2VODD2">
-        <node concept="3cpWs8" id="2j6kZYjao44" role="3cqZAp">
-          <node concept="3cpWsn" id="2j6kZYjao45" role="3cpWs9">
-            <property role="TrG5h" value="config" />
-            <node concept="3uibUv" id="2j6kZYjao3V" role="1tU5fm">
-              <ref role="3uigEE" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
-            </node>
-            <node concept="2ShNRf" id="2j6kZYjao46" role="33vP2m">
-              <node concept="1pGfFk" id="2j6kZYjao47" role="2ShVmc">
-                <ref role="37wK5l" node="3vXSZsAPOZP" resolve="HttpServerConfig" />
-                <node concept="1eOMI4" id="2j6kZYjao48" role="37wK5m">
-                  <node concept="10QFUN" id="2j6kZYjao49" role="1eOMHV">
-                    <node concept="2OqwBi" id="2j6kZYjao4a" role="10QFUP">
-                      <node concept="2WthIp" id="2j6kZYjao4b" role="2Oq$k0" />
-                      <node concept="1DZHhv" id="2j6kZYjao4c" role="2OqNvi">
-                        <ref role="2WH_rO" node="3vXSZsAPQkA" resolve="port" />
-                      </node>
-                    </node>
-                    <node concept="10Oyi0" id="2j6kZYjao4d" role="10QFUM" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="2j6kZYjao4e" role="37wK5m">
-                  <node concept="2WthIp" id="2j6kZYjao4f" role="2Oq$k0" />
-                  <node concept="1DZHhv" id="2j6kZYjao4g" role="2OqNvi">
-                    <ref role="2WH_rO" node="3vXSZsAPQkz" resolve="enabled" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2j6kZYjaoIV" role="3cqZAp">
-          <node concept="3cpWsn" id="2j6kZYjaoIW" role="3cpWs9">
-            <property role="TrG5h" value="customizedServerConfig" />
-            <node concept="3uibUv" id="2j6kZYjaoIX" role="1tU5fm">
-              <ref role="3uigEE" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
-            </node>
-            <node concept="2YIFZM" id="2j6kZYjaoIY" role="33vP2m">
-              <ref role="37wK5l" node="2j6kZYj9zD0" resolve="getCustomizedServerConfig" />
-              <ref role="1Pybhc" node="2j6kZYj9xY7" resolve="HttpServerConfigOverride" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="2j6kZYjaosg" role="3cqZAp">
-          <node concept="3clFbS" id="2j6kZYjaosi" role="3clFbx">
-            <node concept="3clFbF" id="2j6kZYjaqiw" role="3cqZAp">
-              <node concept="37vLTI" id="2j6kZYjasjn" role="3clFbG">
-                <node concept="37vLTw" id="2j6kZYjaslv" role="37vLTx">
-                  <ref role="3cqZAo" node="2j6kZYjaoIW" resolve="customizedServerConfig" />
-                </node>
-                <node concept="37vLTw" id="2j6kZYjaqiu" role="37vLTJ">
-                  <ref role="3cqZAo" node="2j6kZYjao45" resolve="config" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1eOMI4" id="2j6kZYjao_0" role="3clFbw">
-            <node concept="3y3z36" id="2j6kZYjaqe_" role="1eOMHV">
-              <node concept="10Nm6u" id="2j6kZYjaqeR" role="3uHU7w" />
-              <node concept="37vLTw" id="2j6kZYjaqb3" role="3uHU7B">
-                <ref role="3cqZAo" node="2j6kZYjaoIW" resolve="customizedServerConfig" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="24HfET2s2_E" role="3cqZAp">
           <node concept="2YIFZM" id="24HfET2s2C4" role="3clFbG">
             <ref role="37wK5l" node="24HfET2s0Ve" resolve="setCurrentConfig" />
             <ref role="1Pybhc" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
-            <node concept="37vLTw" id="2j6kZYjao4h" role="37wK5m">
-              <ref role="3cqZAo" node="2j6kZYjao45" resolve="config" />
+            <node concept="2ShNRf" id="24HfET2s4Bp" role="37wK5m">
+              <node concept="1pGfFk" id="24HfET2s4Bq" role="2ShVmc">
+                <ref role="37wK5l" node="3vXSZsAPOZP" resolve="HttpServerConfig" />
+                <node concept="1eOMI4" id="24HfET2s4Br" role="37wK5m">
+                  <node concept="10QFUN" id="24HfET2s4Bs" role="1eOMHV">
+                    <node concept="2OqwBi" id="24HfET2s4Bt" role="10QFUP">
+                      <node concept="2WthIp" id="24HfET2s4Bu" role="2Oq$k0" />
+                      <node concept="1DZHhv" id="24HfET2s4Bv" role="2OqNvi">
+                        <ref role="2WH_rO" node="3vXSZsAPQkA" resolve="port" />
+                      </node>
+                    </node>
+                    <node concept="10Oyi0" id="24HfET2s4Bw" role="10QFUM" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="24HfET2s4Bx" role="37wK5m">
+                  <node concept="2WthIp" id="24HfET2s4By" role="2Oq$k0" />
+                  <node concept="1DZHhv" id="24HfET2s4Bz" role="2OqNvi">
+                    <ref role="2WH_rO" node="3vXSZsAPQkz" resolve="enabled" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -599,69 +503,6 @@
       <property role="3MtHw8" value=" " />
       <property role="TrG5h" value="Port" />
     </node>
-  </node>
-  <node concept="312cEu" id="2j6kZYj9xY7">
-    <property role="TrG5h" value="HttpServerConfigOverride" />
-    <node concept="2tJIrI" id="2j6kZYj9xYH" role="jymVt" />
-    <node concept="Wx3nA" id="2j6kZYj9yHO" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="customizedServerConfig" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2j6kZYj9ywV" role="1B3o_S" />
-      <node concept="10Nm6u" id="2j6kZYj9yRj" role="33vP2m" />
-      <node concept="3uibUv" id="2j6kZYj9yNX" role="1tU5fm">
-        <ref role="3uigEE" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2j6kZYj9yRy" role="jymVt" />
-    <node concept="2YIFZL" id="2j6kZYj9yia" role="jymVt">
-      <property role="TrG5h" value="setCustomizedHttpServerConfig" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="37vLTG" id="2j6kZYj9z4j" role="3clF46">
-        <property role="TrG5h" value="customizedConfig" />
-        <node concept="3uibUv" id="2j6kZYj9zau" role="1tU5fm">
-          <ref role="3uigEE" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="2j6kZYj9yid" role="3clF47">
-        <node concept="3clFbF" id="2j6kZYj9zhi" role="3cqZAp">
-          <node concept="37vLTI" id="2j6kZYj9zmC" role="3clFbG">
-            <node concept="37vLTw" id="2j6kZYj9zoM" role="37vLTx">
-              <ref role="3cqZAo" node="2j6kZYj9z4j" resolve="customizedConfig" />
-            </node>
-            <node concept="37vLTw" id="2j6kZYj9zkq" role="37vLTJ">
-              <ref role="3cqZAo" node="2j6kZYj9yHO" resolve="customizedServerConfig" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="2j6kZYj9yc1" role="1B3o_S" />
-      <node concept="3uibUv" id="2j6kZYj9yot" role="3clF45">
-        <ref role="3uigEE" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2j6kZYj9zpb" role="jymVt" />
-    <node concept="2YIFZL" id="2j6kZYj9zD0" role="jymVt">
-      <property role="TrG5h" value="getCustomizedServerConfig" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="2j6kZYj9zD3" role="3clF47">
-        <node concept="3cpWs6" id="2j6kZYj9zMW" role="3cqZAp">
-          <node concept="37vLTw" id="2j6kZYj9zNA" role="3cqZAk">
-            <ref role="3cqZAo" node="2j6kZYj9yHO" resolve="customizedServerConfig" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="2j6kZYj9zsN" role="1B3o_S" />
-      <node concept="3uibUv" id="2j6kZYj9zJv" role="3clF45">
-        <ref role="3uigEE" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="2j6kZYj9xY8" role="1B3o_S" />
   </node>
 </model>
 
