@@ -2056,5 +2056,12 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="4h2MXXfElHJ">
+    <property role="EcuMT" value="4918717903016647535" />
+    <property role="3GE5qa" value="comp.compType" />
+    <property role="TrG5h" value="ComponentThisExpr" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+  </node>
 </model>
 

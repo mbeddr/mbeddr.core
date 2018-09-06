@@ -9481,5 +9481,19 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2dxRIu5CoMv">
+    <property role="3GE5qa" value="comp.compType" />
+    <ref role="1XX52x" to="v7ag:4h2MXXfElHJ" resolve="ComponentThisExpr" />
+    <node concept="PMmxH" id="2dxRIu5CS0t" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <node concept="VPxyj" id="2dxRIu5CS8r" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="PMmxH" id="5CDgsyZck1T" role="6VMZX">
+      <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />
+    </node>
+  </node>
 </model>
 

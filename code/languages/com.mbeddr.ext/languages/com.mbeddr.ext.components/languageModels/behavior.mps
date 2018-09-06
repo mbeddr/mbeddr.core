@@ -14215,13 +14215,17 @@
       <ref role="13i0hy" to="ywuz:61lw97FtLtJ" resolve="getUsedBytes" />
       <node concept="3Tm1VV" id="3Q66PS3oMgb" role="1B3o_S" />
       <node concept="3clFbS" id="3Q66PS3oMge" role="3clF47">
-        <node concept="YS8fn" id="3Q66PS3oMtF" role="3cqZAp">
-          <node concept="2ShNRf" id="3Q66PS3oMvf" role="YScLw">
-            <node concept="1pGfFk" id="3Q66PS3oNAg" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-              <node concept="Xl_RD" id="3Q66PS3oOkG" role="37wK5m">
-                <property role="Xl_RC" value="Can't calculate size" />
+        <node concept="3clFbF" id="2dxRIu5PL3q" role="3cqZAp">
+          <node concept="2OqwBi" id="2dxRIu5PL3r" role="3clFbG">
+            <node concept="2ShNRf" id="2dxRIu5PL3s" role="2Oq$k0">
+              <node concept="3zrR0B" id="2dxRIu5PL3t" role="2ShVmc">
+                <node concept="3Tqbb2" id="2dxRIu5PL3u" role="3zrR0E">
+                  <ref role="ehGHo" to="mj1l:5f3TY1$JAfm" resolve="PtrDiffT" />
+                </node>
               </node>
+            </node>
+            <node concept="2qgKlT" id="2dxRIu5PL3v" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:61lw97FtLtJ" resolve="getUsedBytes" />
             </node>
           </node>
         </node>
