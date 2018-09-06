@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -184,7 +184,7 @@
         <ref role="m$_y1" to="ffeo:5CFKsRWVb8B" resolve="jetbrains.mps.execution.configurations" />
       </node>
       <node concept="m$_yC" id="7i5Cc6LAJYE" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions" />
       </node>
       <node concept="m$_yB" id="46zCYP2p$17" role="m$_yh">
         <ref role="m$_yA" node="2UI1wmC3wCq" resolve="com.mbeddr.tutorial.dev.build" />
@@ -263,7 +263,7 @@
         <node concept="1SiIV0" id="1RubBbpfBdh" role="3bR37C">
           <node concept="3bR9La" id="1RubBbpfBdi" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="1RubBbpfBdj" role="3bR37C">
@@ -336,7 +336,7 @@
         <node concept="1SiIV0" id="2coa6XmWnYZ" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWnZ0" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWnZ1" role="3bR37C">
@@ -418,7 +418,7 @@
         <node concept="1SiIV0" id="2coa6XmWDDB" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWDDC" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWDDD" role="3bR37C">
@@ -494,7 +494,7 @@
         <node concept="1SiIV0" id="2coa6XmWDsR" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWDsS" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWDsT" role="3bR37C">
@@ -570,7 +570,7 @@
         <node concept="1SiIV0" id="2coa6XmWnZe" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWnZf" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWoTy" role="3bR37C">
@@ -646,7 +646,7 @@
         <node concept="1SiIV0" id="2coa6XmWnZg" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWnZh" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWpIQ" role="3bR37C">
@@ -722,7 +722,7 @@
         <node concept="1SiIV0" id="2coa6XmWnZi" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWnZj" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWp8I" role="3bR37C">
@@ -798,7 +798,7 @@
         <node concept="1SiIV0" id="2coa6XmWnZk" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWnZl" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWpnG" role="3bR37C">
@@ -877,7 +877,7 @@
         <node concept="1SiIV0" id="2e9Iswdy3xp" role="3bR37C">
           <node concept="3bR9La" id="2e9Iswdy3xq" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="3AVJcIMlL5d" role="3bR37C">
@@ -956,7 +956,7 @@
         <node concept="1SiIV0" id="2e9Iswdy3xA" role="3bR37C">
           <node concept="3bR9La" id="2e9Iswdy3xB" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="3AVJcIMlFMf" role="3bR37C">
@@ -1029,7 +1029,7 @@
         <node concept="1SiIV0" id="6ucYLjoxZFR" role="3bR37C">
           <node concept="3bR9La" id="6ucYLjoxZFS" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="6ucYLjoxZFT" role="3bR37C">
@@ -1230,7 +1230,7 @@
         <node concept="1SiIV0" id="3AVJcIMl$Ko" role="3bR37C">
           <node concept="3bR9La" id="3AVJcIMl$Kp" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="3AVJcIMl$Kq" role="3bR37C">
@@ -1509,7 +1509,7 @@
         <ref role="m_rDy" node="46zCYP2pxWG" resolve="com.mbeddr.allScripts" />
       </node>
       <node concept="3_I8Xc" id="DJVnBnJZ9T" role="39821P">
-        <ref role="3_I8Xa" to="90a9:4hvHh3QWqH0" resolve="de.slisson.mps.all" />
+        <ref role="3_I8Xa" to="90a9:4hvHh3QWqH0" resolve="de.itemis.mps.extensions" />
       </node>
     </node>
     <node concept="2igEWh" id="3R8XMuzZsAh" role="1hWBAP">
