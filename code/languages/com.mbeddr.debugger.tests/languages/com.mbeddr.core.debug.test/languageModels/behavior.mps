@@ -44,7 +44,6 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
-      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5" />
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2513,26 +2512,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="3ELV2aQB_ip" role="13h7CS">
-      <property role="TrG5h" value="getAdditionalIcon" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="tpcu:4mxbjAOAE$e" resolve="getAdditionalIcon" />
-      <node concept="3Tm1VV" id="3ELV2aQB_iq" role="1B3o_S" />
-      <node concept="3clFbS" id="3ELV2aQB_iv" role="3clF47">
-        <node concept="3clFbF" id="3ELV2aQB_i$" role="3cqZAp">
-          <node concept="2OqwBi" id="3ELV2aQB_ix" role="3clFbG">
-            <node concept="13iAh5" id="3ELV2aQB_iy" role="2Oq$k0" />
-            <node concept="2qgKlT" id="3ELV2aQB_iz" role="2OqNvi">
-              <ref role="37wK5l" to="tpcu:4mxbjAOAE$e" resolve="getAdditionalIcon" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="3ELV2aQB_iw" role="3clF45">
-        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
       </node>
     </node>
   </node>
