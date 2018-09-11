@@ -365,5 +365,20 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7UfzZYaIfQ3">
+    <property role="EcuMT" value="9119666098155355523" />
+    <property role="3GE5qa" value="seed" />
+    <property role="TrG5h" value="RandomRootNodeFromSolution" />
+    <property role="34LRSv" value="random root node from solution" />
+    <property role="R4oN_" value="pick a random root node from a solution" />
+    <ref role="1TJDcQ" node="2A9nHKANPGu" resolve="AbstractSeedModel" />
+    <node concept="1TJgyj" id="52eR6w5Pjol" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5804819309059716629" />
+      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
+    </node>
+  </node>
 </model>
 
