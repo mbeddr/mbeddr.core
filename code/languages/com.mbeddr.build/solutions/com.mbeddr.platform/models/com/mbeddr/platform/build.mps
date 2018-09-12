@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -298,7 +298,7 @@
         <ref role="m$f5T" node="7Pr7tifzjKW" resolve="com.mbeddr.platform.build" />
       </node>
       <node concept="m$_yC" id="33r_JpZ6rtT" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions" />
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
       </node>
     </node>
     <node concept="m$_wf" id="1g7oDhK0dwB" role="3989C9">
@@ -3761,6 +3761,12 @@
             <node concept="3bR9La" id="4sjR92JQ_50" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L8q" resolve="jetbrains.mps.lang.pattern" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2v$MQCp6W8K" role="3bR37C">
+            <node concept="3bR9La" id="2v$MQCp6W8L" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7YI57w6K0i_" resolve="jetbrains.mps.lang.dataFlow#1206455293228" />
             </node>
           </node>
         </node>
@@ -15154,7 +15160,7 @@
         <node concept="1SiIV0" id="2avgMTl5sBK" role="3bR37C">
           <node concept="3bR9La" id="2avgMTl5sBL" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
           </node>
         </node>
       </node>
