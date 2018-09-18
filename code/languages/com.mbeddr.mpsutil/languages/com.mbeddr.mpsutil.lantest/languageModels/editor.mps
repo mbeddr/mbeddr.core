@@ -480,6 +480,115 @@
         <node concept="l2Vlx" id="5JsRhvvgux" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="4XCJ8CcQ6VE" role="2iSdaV" />
+      <node concept="3F0ifn" id="2zqpPfizyjj" role="3EZMnx" />
+      <node concept="3EZMnI" id="2zqpPfizysB" role="3EZMnx">
+        <node concept="VPM3Z" id="2zqpPfizysC" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="2zqpPfizysD" role="3EZMnx" />
+        <node concept="3F0ifn" id="2zqpPfizysE" role="3EZMnx">
+          <property role="3F0ifm" value="✅" />
+          <node concept="VechU" id="2zqpPfizysF" role="3F10Kt">
+            <property role="Vb096" value="green" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="2zqpPfizysG" role="3EZMnx">
+          <property role="3F0ifm" value="editor (smart) actions checking config:" />
+          <node concept="VechU" id="2zqpPfizysH" role="3F10Kt">
+            <property role="Vb096" value="DARK_MAGENTA" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="2zqpPfizysI" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="2zqpPfizD36" role="3EZMnx">
+        <node concept="VPM3Z" id="2zqpPfizD38" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="2zqpPfizD9j" role="3EZMnx" />
+        <node concept="3XFhqQ" id="2zqpPfizD9n" role="3EZMnx" />
+        <node concept="3F0ifn" id="2zqpPfizDa4" role="3EZMnx">
+          <property role="3F0ifm" value="check that existing models can be instantiated again via the editor (e.g. discover bugs in constraints) " />
+          <node concept="VechU" id="2zqpPfizDad" role="3F10Kt">
+            <property role="Vb096" value="lightGray" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="2zqpPfizD3b" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="2zqpPfizysJ" role="3EZMnx">
+        <node concept="VPM3Z" id="2zqpPfizysK" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="2zqpPfizysL" role="3EZMnx" />
+        <node concept="3XFhqQ" id="2zqpPfizysM" role="3EZMnx" />
+        <node concept="3XFhqQ" id="2zqpPfizysN" role="3EZMnx" />
+        <node concept="3EZMnI" id="2zqpPfizysO" role="3EZMnx">
+          <node concept="VPM3Z" id="2zqpPfizysP" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3EZMnI" id="2zqpPfizysQ" role="3EZMnx">
+            <node concept="VPM3Z" id="2zqpPfizysR" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="2zqpPfizysS" role="3EZMnx">
+              <property role="3F0ifm" value="check models from model:" />
+            </node>
+            <node concept="3F1sOY" id="2zqpPfizDb4" role="3EZMnx">
+              <ref role="1NtTu8" to="gfdq:2zqpPfizDaF" resolve="whatToCheckForEditorActions" />
+            </node>
+            <node concept="l2Vlx" id="2zqpPfizysU" role="2iSdaV" />
+          </node>
+          <node concept="2iRkQZ" id="2zqpPfizyt0" role="2iSdaV" />
+          <node concept="3EZMnI" id="2zqpPfizytb" role="3EZMnx">
+            <node concept="VPM3Z" id="2zqpPfizytc" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="2zqpPfizytd" role="3EZMnx">
+              <property role="3F0ifm" value="ignore links known to be hidden (whitelist):" />
+            </node>
+            <node concept="l2Vlx" id="2zqpPfizytf" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="2zqpPfizDbC" role="3EZMnx">
+            <node concept="VPM3Z" id="2zqpPfizDbE" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3XFhqQ" id="2zqpPfizDc9" role="3EZMnx" />
+            <node concept="3F2HdR" id="2zqpPfizECm" role="3EZMnx">
+              <ref role="1NtTu8" to="gfdq:2zqpPfizDco" resolve="linksKnownToBeHidden" />
+              <node concept="2iRkQZ" id="2zqpPfizECp" role="2czzBx" />
+              <node concept="VPM3Z" id="2zqpPfizECq" role="3F10Kt">
+                <property role="VOm3f" value="false" />
+              </node>
+            </node>
+            <node concept="l2Vlx" id="2zqpPfizDbH" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="2zqpPfiG1RG" role="3EZMnx">
+            <node concept="VPM3Z" id="2zqpPfiG1RH" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="2zqpPfiG1RI" role="3EZMnx">
+              <property role="3F0ifm" value="ignore concepts known not to be instantiable via editor:" />
+            </node>
+            <node concept="l2Vlx" id="2zqpPfiG1RJ" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="2zqpPfiG1RK" role="3EZMnx">
+            <node concept="VPM3Z" id="2zqpPfiG1RL" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3XFhqQ" id="2zqpPfiG1RM" role="3EZMnx" />
+            <node concept="3F2HdR" id="2zqpPfiG1RN" role="3EZMnx">
+              <ref role="1NtTu8" to="gfdq:2zqpPfiG1QG" resolve="conceptsKnownNotToBeInstantiable" />
+              <node concept="2iRkQZ" id="2zqpPfiG1RO" role="2czzBx" />
+              <node concept="VPM3Z" id="2zqpPfiG1RP" role="3F10Kt">
+                <property role="VOm3f" value="false" />
+              </node>
+            </node>
+            <node concept="l2Vlx" id="2zqpPfiG1RQ" role="2iSdaV" />
+          </node>
+          <node concept="3F0ifn" id="2zqpPfiG1R9" role="3EZMnx" />
+        </node>
+        <node concept="l2Vlx" id="2zqpPfizytg" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="2zqpPfizynW" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="2P6psD9B1Zp">
@@ -757,6 +866,44 @@
         <ref role="1NtTu8" to="gfdq:52eR6w5Pjol" resolve="module" />
       </node>
       <node concept="l2Vlx" id="52eR6w5Pjoz" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2zqpPfi$27g">
+    <property role="3GE5qa" value="editor_actions_seed" />
+    <ref role="1XX52x" to="gfdq:2zqpPfi$274" resolve="ModelScopeForEditorActions" />
+    <node concept="3EZMnI" id="2zqpPfi$27i" role="2wV5jI">
+      <node concept="3F0ifn" id="2zqpPfi$27s" role="3EZMnx">
+        <property role="3F0ifm" value="model scope:" />
+      </node>
+      <node concept="3F1sOY" id="2zqpPfi$27_" role="3EZMnx">
+        <ref role="1NtTu8" to="gfdq:2zqpPfi$275" resolve="modelPointerExpression" />
+      </node>
+      <node concept="3F0ifn" id="35FiawLuTEU" role="3EZMnx">
+        <property role="3F0ifm" value="(check instantiability of nodes from this model)" />
+        <node concept="VechU" id="35FiawLuTF2" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2zqpPfi$27l" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2zqpPfi$7FM">
+    <property role="3GE5qa" value="editor_actions_seed" />
+    <ref role="1XX52x" to="gfdq:2zqpPfi$7FA" resolve="SingleRootNodeScope" />
+    <node concept="3EZMnI" id="2zqpPfi$7FO" role="2wV5jI">
+      <node concept="3F0ifn" id="2zqpPfi$7FY" role="3EZMnx">
+        <property role="3F0ifm" value="single root node:" />
+      </node>
+      <node concept="1iCGBv" id="2zqpPfi$7G7" role="3EZMnx">
+        <ref role="1NtTu8" to="gfdq:2zqpPfi$7FB" resolve="root" />
+        <node concept="1sVBvm" id="2zqpPfi$7G9" role="1sWHZn">
+          <node concept="3F0A7n" id="2zqpPfi$7Gp" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2zqpPfi$7FR" role="2iSdaV" />
     </node>
   </node>
 </model>

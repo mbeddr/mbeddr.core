@@ -14,6 +14,15 @@
       </concept>
       <concept id="8808724583293369290" name="com.mbeddr.mpsutil.lantest.demolang.structure.Mother" flags="ng" index="5jlIs" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="5ef691b5-60ce-4ece-a04e-25e642dfa128" name="com.mbeddr.mpsutil.lantest">
       <concept id="3465332537548487647" name="com.mbeddr.mpsutil.lantest.structure.RandomConceptChooser" flags="ng" index="1emTa" />
       <concept id="5961733595646916849" name="com.mbeddr.mpsutil.lantest.structure.InterestingLanguages" flags="ng" index="cHURJ">
@@ -39,13 +48,20 @@
         <child id="3642470604913215366" name="modelWhereResultsAreSaved" index="1saM0L" />
         <child id="1913723943214697829" name="modelWithBuggyRootsAfterChecking" index="1zXyiG" />
         <child id="3262406899569270462" name="seedChooser" index="1$QBHO" />
+        <child id="2943778916152545963" name="whatToCheckForEditorActions" index="3UlfnS" />
       </concept>
       <concept id="3262406899569270472" name="com.mbeddr.mpsutil.lantest.structure.RandomDescendantSeed" flags="ng" index="1$QBG2" />
+      <concept id="2943778916152648132" name="com.mbeddr.mpsutil.lantest.structure.ModelScopeForEditorActions" flags="ng" index="3Ui$qn">
+        <child id="2943778916152648133" name="modelPointerExpression" index="3Ui$qm" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
+      </concept>
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -83,6 +99,16 @@
     </node>
     <node concept="fhwn3" id="7CYS5pZsYta" role="fhwmk">
       <ref role="fhwn$" node="6IRBYJf1hNt" resolve="Starting_family" />
+    </node>
+    <node concept="3Ui$qn" id="2zqpPfi$ydN" role="3UlfnS">
+      <node concept="1Xw6AR" id="2zqpPfi$1m_" role="3Ui$qm">
+        <node concept="1dCxOl" id="2zqpPfi_Zbw" role="1XwpL7">
+          <property role="1XweGQ" value="r:d8fbc689-0590-48ac-98f6-b3ff7e1b4848" />
+          <node concept="1j_P7g" id="2zqpPfi_Zbx" role="1j$8Uc">
+            <property role="1j_P7h" value="com.mbeddr.mpsutil.lantest.demolang.sandbox.instantiable_models" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="5jlIl" id="6IRBYJf1hNt">
