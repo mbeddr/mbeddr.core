@@ -1552,7 +1552,7 @@
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="DummyCompRef" />
     <property role="EcuMT" value="9141254329931900474" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2IZ2bWrC4_N" resolve="AbstractDummyRef" />
     <node concept="1TJgyj" id="7VsgA5L5UoV" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="component" />
@@ -2040,6 +2040,14 @@
     <property role="EcuMT" value="7471485357229284431" />
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="AbstractConnector" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2IZ2bWrC4_N">
+    <property role="EcuMT" value="3152247881077901683" />
+    <property role="3GE5qa" value="comp.instances" />
+    <property role="TrG5h" value="AbstractDummyRef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
