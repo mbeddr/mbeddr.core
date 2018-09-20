@@ -68,6 +68,7 @@
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="zgpd" ref="r:5723595d-8d9d-4118-b46d-d56508505371(com.mbeddr.mpsutil.genutil.plugin)" />
     <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" />
+    <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -4886,11 +4887,16 @@
                   <node concept="37vLTw" id="4mZxE$vBXEe" role="37vLTJ">
                     <ref role="3cqZAo" node="4mZxE$vBWEh" resolve="stackIcon" />
                   </node>
-                  <node concept="2YIFZM" id="6B_gG2NeJ4L" role="37vLTx">
-                    <ref role="37wK5l" to="xnls:~IconManager.getIcon(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIcon" />
-                    <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                    <node concept="35c_gC" id="6B_gG2NeJ8i" role="37wK5m">
-                      <ref role="35c_gD" to="2gv2:6B_gG2NdoVp" resolve="CallStack" />
+                  <node concept="2OqwBi" id="6hTqOus3B_6" role="37vLTx">
+                    <node concept="2YIFZM" id="6hTqOus3B_7" role="2Oq$k0">
+                      <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+                      <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
+                    </node>
+                    <node concept="liA8E" id="6hTqOus3B_8" role="2OqNvi">
+                      <ref role="37wK5l" to="sn11:192HKKPOcza" resolve="getIconFor" />
+                      <node concept="35c_gC" id="6hTqOus3B_9" role="37wK5m">
+                        <ref role="35c_gD" to="2gv2:6B_gG2NdoVp" resolve="CallStack" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -12418,9 +12424,12 @@
             <node concept="2ShNRf" id="7M6JlBaxG65" role="33vP2m">
               <node concept="1pGfFk" id="7M6JlBaxG67" role="2ShVmc">
                 <ref role="37wK5l" node="UNwx_OC6AL" resolve="ComplexValue" />
-                <node concept="10M0yZ" id="64SLV6oEto9" role="37wK5m">
-                  <ref role="1PxDUh" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                  <ref role="3cqZAo" to="sn11:277Nzj6qTEH" resolve="EMPTY_ICON" />
+                <node concept="2YIFZM" id="6hTqOus3v3j" role="37wK5m">
+                  <ref role="37wK5l" to="g1qu:~EmptyIcon.create(int):com.intellij.util.ui.EmptyIcon" resolve="create" />
+                  <ref role="1Pybhc" to="g1qu:~EmptyIcon" resolve="EmptyIcon" />
+                  <node concept="3cmrfG" id="6hTqOus3vr4" role="37wK5m">
+                    <property role="3cmrfH" value="18" />
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="64SLV6oEtoc" role="37wK5m">
                   <node concept="Xjq3P" id="64SLV6oEtob" role="2Oq$k0" />
@@ -12445,9 +12454,12 @@
               <node concept="1pGfFk" id="6EW69Px3i_5" role="2ShVmc">
                 <ref role="37wK5l" node="6EW69Px3ktw" resolve="MWatchable" />
                 <node concept="10Nm6u" id="6EW69Px3i_6" role="37wK5m" />
-                <node concept="10M0yZ" id="6EW69Px3i_n" role="37wK5m">
-                  <ref role="1PxDUh" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                  <ref role="3cqZAo" to="sn11:277Nzj6qTEH" resolve="EMPTY_ICON" />
+                <node concept="2YIFZM" id="6hTqOus3vIC" role="37wK5m">
+                  <ref role="1Pybhc" to="g1qu:~EmptyIcon" resolve="EmptyIcon" />
+                  <ref role="37wK5l" to="g1qu:~EmptyIcon.create(int):com.intellij.util.ui.EmptyIcon" resolve="create" />
+                  <node concept="3cmrfG" id="6hTqOus3vID" role="37wK5m">
+                    <property role="3cmrfH" value="18" />
+                  </node>
                 </node>
                 <node concept="37vLTw" id="5HxjapvQZDV" role="37wK5m">
                   <ref role="3cqZAo" node="64SLV6oEto6" resolve="value" />
@@ -12610,9 +12622,12 @@
             <node concept="2ShNRf" id="64SLV6oEtoR" role="33vP2m">
               <node concept="1pGfFk" id="64SLV6oEtoS" role="2ShVmc">
                 <ref role="37wK5l" node="UNwx_OC6AL" resolve="ComplexValue" />
-                <node concept="10M0yZ" id="64SLV6oEtoT" role="37wK5m">
-                  <ref role="1PxDUh" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                  <ref role="3cqZAo" to="sn11:277Nzj6qTEH" resolve="EMPTY_ICON" />
+                <node concept="2YIFZM" id="6hTqOus3xnU" role="37wK5m">
+                  <ref role="1Pybhc" to="g1qu:~EmptyIcon" resolve="EmptyIcon" />
+                  <ref role="37wK5l" to="g1qu:~EmptyIcon.create(int):com.intellij.util.ui.EmptyIcon" resolve="create" />
+                  <node concept="3cmrfG" id="6hTqOus3xnV" role="37wK5m">
+                    <property role="3cmrfH" value="18" />
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="64SLV6oEtoU" role="37wK5m">
                   <node concept="Xjq3P" id="64SLV6oEtoV" role="2Oq$k0" />
@@ -12637,9 +12652,12 @@
               <node concept="1pGfFk" id="6EW69Px3i_X" role="2ShVmc">
                 <ref role="37wK5l" node="6EW69Px3ktw" resolve="MWatchable" />
                 <node concept="10Nm6u" id="6EW69Px3i_Y" role="37wK5m" />
-                <node concept="10M0yZ" id="6EW69Px3i_Z" role="37wK5m">
-                  <ref role="3cqZAo" to="sn11:277Nzj6qTEH" resolve="EMPTY_ICON" />
-                  <ref role="1PxDUh" to="sn11:277Nzj6qTEj" resolve="IconManager" />
+                <node concept="2YIFZM" id="6hTqOus3x_N" role="37wK5m">
+                  <ref role="1Pybhc" to="g1qu:~EmptyIcon" resolve="EmptyIcon" />
+                  <ref role="37wK5l" to="g1qu:~EmptyIcon.create(int):com.intellij.util.ui.EmptyIcon" resolve="create" />
+                  <node concept="3cmrfG" id="6hTqOus3x_O" role="37wK5m">
+                    <property role="3cmrfH" value="18" />
+                  </node>
                 </node>
                 <node concept="37vLTw" id="5HxjapvQZoL" role="37wK5m">
                   <ref role="3cqZAo" node="64SLV6oEtoP" resolve="value" />
@@ -12818,9 +12836,12 @@
             <node concept="2ShNRf" id="64SLV6oEtpN" role="33vP2m">
               <node concept="1pGfFk" id="64SLV6oEtpO" role="2ShVmc">
                 <ref role="37wK5l" node="UNwx_OC6AL" resolve="ComplexValue" />
-                <node concept="10M0yZ" id="64SLV6oEtpP" role="37wK5m">
-                  <ref role="3cqZAo" to="sn11:277Nzj6qTEH" resolve="EMPTY_ICON" />
-                  <ref role="1PxDUh" to="sn11:277Nzj6qTEj" resolve="IconManager" />
+                <node concept="2YIFZM" id="6hTqOus3yaG" role="37wK5m">
+                  <ref role="1Pybhc" to="g1qu:~EmptyIcon" resolve="EmptyIcon" />
+                  <ref role="37wK5l" to="g1qu:~EmptyIcon.create(int):com.intellij.util.ui.EmptyIcon" resolve="create" />
+                  <node concept="3cmrfG" id="6hTqOus3yaH" role="37wK5m">
+                    <property role="3cmrfH" value="18" />
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="64SLV6oEtpQ" role="37wK5m">
                   <node concept="Xjq3P" id="64SLV6oEtpR" role="2Oq$k0" />
@@ -12845,9 +12866,12 @@
               <node concept="1pGfFk" id="6EW69Px3i_K" role="2ShVmc">
                 <ref role="37wK5l" node="6EW69Px3ktw" resolve="MWatchable" />
                 <node concept="10Nm6u" id="6EW69Px3i_L" role="37wK5m" />
-                <node concept="10M0yZ" id="6EW69Px3i_M" role="37wK5m">
-                  <ref role="3cqZAo" to="sn11:277Nzj6qTEH" resolve="EMPTY_ICON" />
-                  <ref role="1PxDUh" to="sn11:277Nzj6qTEj" resolve="IconManager" />
+                <node concept="2YIFZM" id="6hTqOus3yu8" role="37wK5m">
+                  <ref role="1Pybhc" to="g1qu:~EmptyIcon" resolve="EmptyIcon" />
+                  <ref role="37wK5l" to="g1qu:~EmptyIcon.create(int):com.intellij.util.ui.EmptyIcon" resolve="create" />
+                  <node concept="3cmrfG" id="6hTqOus3yu9" role="37wK5m">
+                    <property role="3cmrfH" value="18" />
+                  </node>
                 </node>
                 <node concept="37vLTw" id="5HxjapvQZrx" role="37wK5m">
                   <ref role="3cqZAo" node="64SLV6oEtpL" resolve="value" />
@@ -12939,8 +12963,8 @@
               <node concept="1pGfFk" id="64SLV6oEnxk" role="2ShVmc">
                 <ref role="37wK5l" node="UNwx_OC6_t" resolve="SimpleValue" />
                 <node concept="10M0yZ" id="3IkKaYj2sf_" role="37wK5m">
-                  <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
                   <ref role="3cqZAo" to="xnls:~IdeIcons.UNKNOWN_ICON" resolve="UNKNOWN_ICON" />
+                  <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
                 </node>
                 <node concept="2OqwBi" id="3IkKaYj0KdQ" role="37wK5m">
                   <node concept="Xjq3P" id="3IkKaYj0KdP" role="2Oq$k0" />
@@ -12962,9 +12986,12 @@
               <node concept="1pGfFk" id="6EW69Px3iAb" role="2ShVmc">
                 <ref role="37wK5l" node="6EW69Px3ktw" resolve="MWatchable" />
                 <node concept="10Nm6u" id="6EW69Px3iAc" role="37wK5m" />
-                <node concept="10M0yZ" id="6EW69Px3iAd" role="37wK5m">
-                  <ref role="1PxDUh" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                  <ref role="3cqZAo" to="sn11:277Nzj6qTEH" resolve="EMPTY_ICON" />
+                <node concept="2YIFZM" id="6hTqOus3x1P" role="37wK5m">
+                  <ref role="1Pybhc" to="g1qu:~EmptyIcon" resolve="EmptyIcon" />
+                  <ref role="37wK5l" to="g1qu:~EmptyIcon.create(int):com.intellij.util.ui.EmptyIcon" resolve="create" />
+                  <node concept="3cmrfG" id="6hTqOus3x1Q" role="37wK5m">
+                    <property role="3cmrfH" value="18" />
+                  </node>
                 </node>
                 <node concept="37vLTw" id="5HxjapvQZGB" role="37wK5m">
                   <ref role="3cqZAo" node="64SLV6oEnxf" resolve="value" />
@@ -16151,9 +16178,12 @@
             <node concept="2ShNRf" id="2_FCHb48OnY" role="33vP2m">
               <node concept="1pGfFk" id="2_FCHb48OnZ" role="2ShVmc">
                 <ref role="37wK5l" node="UNwx_OC6AL" resolve="ComplexValue" />
-                <node concept="10M0yZ" id="2_FCHb48Oo0" role="37wK5m">
-                  <ref role="1PxDUh" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                  <ref role="3cqZAo" to="sn11:277Nzj6qTEH" resolve="EMPTY_ICON" />
+                <node concept="2YIFZM" id="6hTqOus3wp9" role="37wK5m">
+                  <ref role="1Pybhc" to="g1qu:~EmptyIcon" resolve="EmptyIcon" />
+                  <ref role="37wK5l" to="g1qu:~EmptyIcon.create(int):com.intellij.util.ui.EmptyIcon" resolve="create" />
+                  <node concept="3cmrfG" id="6hTqOus3wpa" role="37wK5m">
+                    <property role="3cmrfH" value="18" />
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="2_FCHb48Oo1" role="37wK5m">
                   <node concept="Xjq3P" id="2_FCHb48Oo2" role="2Oq$k0" />
@@ -16178,9 +16208,12 @@
               <node concept="1pGfFk" id="6EW69Px3i_u" role="2ShVmc">
                 <ref role="37wK5l" node="6EW69Px3ktw" resolve="MWatchable" />
                 <node concept="10Nm6u" id="6EW69Px3i_v" role="37wK5m" />
-                <node concept="10M0yZ" id="6EW69Px3i_w" role="37wK5m">
-                  <ref role="3cqZAo" to="sn11:277Nzj6qTEH" resolve="EMPTY_ICON" />
-                  <ref role="1PxDUh" to="sn11:277Nzj6qTEj" resolve="IconManager" />
+                <node concept="2YIFZM" id="6hTqOus3wEN" role="37wK5m">
+                  <ref role="1Pybhc" to="g1qu:~EmptyIcon" resolve="EmptyIcon" />
+                  <ref role="37wK5l" to="g1qu:~EmptyIcon.create(int):com.intellij.util.ui.EmptyIcon" resolve="create" />
+                  <node concept="3cmrfG" id="6hTqOus3wEO" role="37wK5m">
+                    <property role="3cmrfH" value="18" />
+                  </node>
                 </node>
                 <node concept="37vLTw" id="5HxjapvQZOU" role="37wK5m">
                   <ref role="3cqZAo" node="2_FCHb48OnW" resolve="value" />
@@ -16327,8 +16360,8 @@
               <node concept="1pGfFk" id="jg2IID08ya" role="2ShVmc">
                 <ref role="37wK5l" node="UNwx_OC6_t" resolve="SimpleValue" />
                 <node concept="10M0yZ" id="jg2IID08yb" role="37wK5m">
-                  <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
                   <ref role="3cqZAo" to="xnls:~IdeIcons.UNKNOWN_ICON" resolve="UNKNOWN_ICON" />
+                  <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
                 </node>
                 <node concept="Xl_RD" id="jg2IID08yc" role="37wK5m">
                   <property role="Xl_RC" value="null" />
@@ -16343,8 +16376,8 @@
               <ref role="37wK5l" node="6EW69Px3ktw" resolve="MWatchable" />
               <node concept="10Nm6u" id="6EW69Px3i_0" role="37wK5m" />
               <node concept="10M0yZ" id="6EW69Px3i$P" role="37wK5m">
-                <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
                 <ref role="3cqZAo" to="xnls:~IdeIcons.UNKNOWN_ICON" resolve="UNKNOWN_ICON" />
+                <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
               </node>
               <node concept="37vLTw" id="5HxjapvTe4_" role="37wK5m">
                 <ref role="3cqZAo" node="jg2IID08y7" resolve="value" />
@@ -36579,11 +36612,16 @@
                 <node concept="37vLTw" id="3D3g9moHPOv" role="37vLTJ">
                   <ref role="3cqZAo" node="1b42fk5g_5u" resolve="icon" />
                 </node>
-                <node concept="2YIFZM" id="6YCtl_lurNw" role="37vLTx">
-                  <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                  <ref role="37wK5l" to="sn11:57eXx5f9CcF" resolve="getIconFor" />
-                  <node concept="35c_gC" id="6YCtl_lurXv" role="37wK5m">
-                    <ref role="35c_gD" to="2gv2:3D3g9moHPOg" resolve="MComplexValue" />
+                <node concept="2OqwBi" id="6hTqOus3Apg" role="37vLTx">
+                  <node concept="2YIFZM" id="6hTqOus3Aph" role="2Oq$k0">
+                    <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+                    <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
+                  </node>
+                  <node concept="liA8E" id="6hTqOus3Api" role="2OqNvi">
+                    <ref role="37wK5l" to="sn11:192HKKPOcza" resolve="getIconFor" />
+                    <node concept="35c_gC" id="6YCtl_lurXv" role="37wK5m">
+                      <ref role="35c_gD" to="2gv2:3D3g9moHPOg" resolve="MComplexValue" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -36727,11 +36765,16 @@
                   <node concept="37vLTw" id="3D3g9moI5QS" role="37vLTJ">
                     <ref role="3cqZAo" node="1b42fk5g_33" resolve="icon" />
                   </node>
-                  <node concept="2YIFZM" id="6YCtl_lusr$" role="37vLTx">
-                    <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                    <ref role="37wK5l" to="sn11:57eXx5f9CcF" resolve="getIconFor" />
-                    <node concept="35c_gC" id="6YCtl_lus_V" role="37wK5m">
-                      <ref role="35c_gD" to="2gv2:3D3g9moHPOe" resolve="MPrimitiveValue" />
+                  <node concept="2OqwBi" id="6hTqOus3B4z" role="37vLTx">
+                    <node concept="2YIFZM" id="6hTqOus3B4$" role="2Oq$k0">
+                      <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+                      <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
+                    </node>
+                    <node concept="liA8E" id="6hTqOus3B4_" role="2OqNvi">
+                      <ref role="37wK5l" to="sn11:192HKKPOcza" resolve="getIconFor" />
+                      <node concept="35c_gC" id="6hTqOus3B4A" role="37wK5m">
+                        <ref role="35c_gD" to="2gv2:3D3g9moHPOe" resolve="MPrimitiveValue" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -39090,8 +39133,8 @@
         <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
       </node>
       <node concept="10M0yZ" id="3gwY0Fa6ija" role="33vP2m">
-        <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
         <ref role="3cqZAo" to="xnls:~IdeIcons.UNKNOWN_ICON" resolve="UNKNOWN_ICON" />
+        <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
       </node>
     </node>
     <node concept="3clFbW" id="3gwY0Fa5Tsn" role="jymVt">
@@ -59237,7 +59280,6 @@
   <node concept="312cEu" id="$YquQ$_UIW">
     <property role="3GE5qa" value="language-api.util" />
     <property role="TrG5h" value="IconLoader" />
-    <node concept="2tJIrI" id="$YquQ$A0J2" role="jymVt" />
     <node concept="2YIFZL" id="$YquQ$AbfP" role="jymVt">
       <property role="TrG5h" value="loadIcon" />
       <property role="od$2w" value="false" />
@@ -59256,11 +59298,16 @@
           <node concept="3clFbS" id="7EQZzuztOdD" role="SfCbr">
             <node concept="3clFbF" id="7EQZzuztOdE" role="3cqZAp">
               <node concept="37vLTI" id="7EQZzuztOdF" role="3clFbG">
-                <node concept="2YIFZM" id="3OdlBNHOuuZ" role="37vLTx">
-                  <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
-                  <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                  <node concept="37vLTw" id="3OdlBNHOuv0" role="37wK5m">
-                    <ref role="3cqZAo" node="$YquQ$Abg4" resolve="concept" />
+                <node concept="2OqwBi" id="6hTqOus3zMi" role="37vLTx">
+                  <node concept="2YIFZM" id="6hTqOus3zxy" role="2Oq$k0">
+                    <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+                    <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
+                  </node>
+                  <node concept="liA8E" id="6hTqOus3$za" role="2OqNvi">
+                    <ref role="37wK5l" to="sn11:192HKKPOcza" resolve="getIconFor" />
+                    <node concept="37vLTw" id="6hTqOus3$M7" role="37wK5m">
+                      <ref role="3cqZAo" node="$YquQ$Abg4" resolve="concept" />
+                    </node>
                   </node>
                 </node>
                 <node concept="37vLTw" id="7EQZzuztOdG" role="37vLTJ">
@@ -59299,12 +59346,15 @@
               </node>
               <node concept="3clFbF" id="7EQZzuztOdU" role="3cqZAp">
                 <node concept="37vLTI" id="7EQZzuztOdV" role="3clFbG">
-                  <node concept="10M0yZ" id="7EQZzuztOdW" role="37vLTx">
-                    <ref role="1PxDUh" to="xnls:~IconManager" resolve="IconManager" />
-                    <ref role="3cqZAo" to="xnls:~IconManager.EMPTY_ICON" resolve="EMPTY_ICON" />
-                  </node>
                   <node concept="37vLTw" id="2AZbPfMaNax" role="37vLTJ">
                     <ref role="3cqZAo" node="7EQZzuztOd_" resolve="icon" />
+                  </node>
+                  <node concept="2YIFZM" id="6hTqOus3yVF" role="37vLTx">
+                    <ref role="1Pybhc" to="g1qu:~EmptyIcon" resolve="EmptyIcon" />
+                    <ref role="37wK5l" to="g1qu:~EmptyIcon.create(int):com.intellij.util.ui.EmptyIcon" resolve="create" />
+                    <node concept="3cmrfG" id="6hTqOus3yVG" role="37wK5m">
+                      <property role="3cmrfH" value="18" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -59326,7 +59376,6 @@
         <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
       </node>
     </node>
-    <node concept="2tJIrI" id="$YquQ$A0Ja" role="jymVt" />
     <node concept="3Tm1VV" id="$YquQ$_UIX" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="1brT1dA23R1">

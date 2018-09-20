@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -60,12 +60,19 @@
         <child id="5617550519002745378" name="macros" index="1l3spd" />
         <child id="5617550519002745372" name="layout" index="1l3spN" />
       </concept>
+      <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
+        <property id="8654221991637384184" name="pattern" index="3qWCbO" />
+      </concept>
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
       <concept id="5248329904288051100" name="jetbrains.mps.build.structure.BuildFileIncludeSelector" flags="ng" index="3LWZYx">
         <property id="5248329904288051101" name="pattern" index="3LWZYw" />
+      </concept>
+      <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
+        <child id="5248329904287794598" name="dir" index="3LXTmr" />
+        <child id="5248329904287794679" name="selectors" index="3LXTna" />
       </concept>
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
@@ -107,11 +114,15 @@
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
+        <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
+      </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
       <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr">
         <property id="4297162197620978188" name="strict" index="1wNuhc" />
@@ -228,6 +239,31 @@
         <node concept="1SiIV0" id="2iaA4fp_Ia$" role="3bR37C">
           <node concept="1Busua" id="2iaA4fp_Ia_" role="1SiIV1">
             <ref role="1Busuk" to="p6ld:7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="69fPSW45DLp" role="3bR31x">
+          <node concept="3LXTmp" id="69fPSW45DLq" role="3rtmxm">
+            <node concept="3qWCbU" id="69fPSW45DLr" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="69fPSW45DLs" role="3LXTmr">
+              <ref role="398BVh" node="3$3J06WftAg" resolve="mbeddr.github.core.home" />
+              <node concept="2Ry0Ak" id="69fPSW45DLt" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="69fPSW45DLu" role="2Ry0An">
+                  <property role="2Ry0Am" value="applications" />
+                  <node concept="2Ry0Ak" id="69fPSW45DLv" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.build-examples" />
+                    <node concept="2Ry0Ak" id="69fPSW45DLw" role="2Ry0An">
+                      <property role="2Ry0Am" value="languages" />
+                      <node concept="2Ry0Ak" id="69fPSW45DLx" role="2Ry0An">
+                        <property role="2Ry0Am" value="com.mbeddr.unless" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -470,6 +506,31 @@
             <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
           </node>
         </node>
+        <node concept="3rtmxn" id="69fPSW45DLH" role="3bR31x">
+          <node concept="3LXTmp" id="69fPSW45DLI" role="3rtmxm">
+            <node concept="3qWCbU" id="69fPSW45DLJ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="69fPSW45DLK" role="3LXTmr">
+              <ref role="398BVh" node="2iaA4fp$SeA" resolve="mbeddr.github.core.home" />
+              <node concept="2Ry0Ak" id="69fPSW45DLL" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="69fPSW45DLM" role="2Ry0An">
+                  <property role="2Ry0Am" value="applications" />
+                  <node concept="2Ry0Ak" id="69fPSW45DLN" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.build-examples" />
+                    <node concept="2Ry0Ak" id="69fPSW45DLO" role="2Ry0An">
+                      <property role="2Ry0Am" value="solutions" />
+                      <node concept="2Ry0Ak" id="69fPSW45DLP" role="2Ry0An">
+                        <property role="2Ry0Am" value="com.mbeddr.unlesss.build" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="7uZw0yZ43Jl" role="10PD9s" />
@@ -606,6 +667,31 @@
                     <property role="2Ry0Am" value="com.mbeddr.unless.sandbox" />
                     <node concept="2Ry0Ak" id="2iaA4fpA2Ql" role="2Ry0An">
                       <property role="2Ry0Am" value="com.mbeddr.unless.sandbox.msd" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="69fPSW45DLz" role="3bR31x">
+          <node concept="3LXTmp" id="69fPSW45DL$" role="3rtmxm">
+            <node concept="3qWCbU" id="69fPSW45DL_" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="69fPSW45DLA" role="3LXTmr">
+              <ref role="398BVh" node="2iaA4fp_I9_" resolve="mbeddr.github.core.home" />
+              <node concept="2Ry0Ak" id="69fPSW45DLB" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="69fPSW45DLC" role="2Ry0An">
+                  <property role="2Ry0Am" value="applications" />
+                  <node concept="2Ry0Ak" id="69fPSW45DLD" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.build-examples" />
+                    <node concept="2Ry0Ak" id="69fPSW45DLE" role="2Ry0An">
+                      <property role="2Ry0Am" value="solutions" />
+                      <node concept="2Ry0Ak" id="69fPSW45DLF" role="2Ry0An">
+                        <property role="2Ry0Am" value="com.mbeddr.unless.sandbox" />
+                      </node>
                     </node>
                   </node>
                 </node>

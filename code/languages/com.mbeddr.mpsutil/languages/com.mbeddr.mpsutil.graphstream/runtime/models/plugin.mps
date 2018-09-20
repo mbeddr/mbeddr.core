@@ -50,6 +50,9 @@
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
+      <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
+        <child id="8974276187400029893" name="icon" index="1QGGTw" />
+      </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
@@ -1770,11 +1773,9 @@
               </node>
               <node concept="liA8E" id="4DzE9lEwD$9" role="2OqNvi">
                 <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon):void" resolve="setIcon" />
-                <node concept="2YIFZM" id="4DzE9lEwEPA" role="37wK5m">
-                  <ref role="37wK5l" to="18ew:~IconUtil.getIcon(java.lang.String):javax.swing.Icon" resolve="getIcon" />
-                  <ref role="1Pybhc" to="18ew:~IconUtil" resolve="IconUtil" />
-                  <node concept="Xl_RD" id="4DzE9lEwERr" role="37wK5m">
-                    <property role="Xl_RC" value="graphingTool.png" />
+                <node concept="1QGGTA" id="4glh_Dcka$v" role="37wK5m">
+                  <node concept="1QGGSu" id="4glh_DckaC1" role="1QGGTw">
+                    <property role="1iqoE4" value="${module}/icons/graphingTool.png" />
                   </node>
                 </node>
               </node>

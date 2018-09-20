@@ -3963,18 +3963,23 @@
                                                       <node concept="3uibUv" id="4VxYGcHoodB" role="1tU5fm">
                                                         <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
                                                       </node>
-                                                      <node concept="2YIFZM" id="4VxYGcHoodC" role="33vP2m">
-                                                        <ref role="37wK5l" to="sn11:277Nzj6qTFM" resolve="getIconFor" />
-                                                        <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                                                        <node concept="13iPFW" id="4VxYGcHoodD" role="37wK5m">
-                                                          <node concept="29HgVG" id="4VxYGcHoodE" role="lGtFl">
-                                                            <node concept="3NFfHV" id="4VxYGcHoodF" role="3NFExx">
-                                                              <node concept="3clFbS" id="4VxYGcHoodG" role="2VODD2">
-                                                                <node concept="3clFbF" id="4VxYGcHoodH" role="3cqZAp">
-                                                                  <node concept="2OqwBi" id="4VxYGcHoodI" role="3clFbG">
-                                                                    <node concept="30H73N" id="4VxYGcHoodJ" role="2Oq$k0" />
-                                                                    <node concept="3TrEf2" id="4VxYGcHoodK" role="2OqNvi">
-                                                                      <ref role="3Tt5mk" to="talm:79czkGCIuDJ" resolve="iconProvider" />
+                                                      <node concept="2OqwBi" id="5T4ZZj4rd9o" role="33vP2m">
+                                                        <node concept="2YIFZM" id="5T4ZZj4rbHS" role="2Oq$k0">
+                                                          <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+                                                          <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
+                                                        </node>
+                                                        <node concept="liA8E" id="5T4ZZj4reOn" role="2OqNvi">
+                                                          <ref role="37wK5l" to="sn11:192HKKPOd3m" resolve="getIconFor" />
+                                                          <node concept="13iPFW" id="5T4ZZj4rbHT" role="37wK5m">
+                                                            <node concept="29HgVG" id="5T4ZZj4rbHU" role="lGtFl">
+                                                              <node concept="3NFfHV" id="5T4ZZj4rbHV" role="3NFExx">
+                                                                <node concept="3clFbS" id="5T4ZZj4rbHW" role="2VODD2">
+                                                                  <node concept="3clFbF" id="5T4ZZj4rbHX" role="3cqZAp">
+                                                                    <node concept="2OqwBi" id="5T4ZZj4rbHY" role="3clFbG">
+                                                                      <node concept="30H73N" id="5T4ZZj4rbHZ" role="2Oq$k0" />
+                                                                      <node concept="3TrEf2" id="5T4ZZj4rbI0" role="2OqNvi">
+                                                                        <ref role="3Tt5mk" to="talm:79czkGCIuDJ" resolve="iconProvider" />
+                                                                      </node>
                                                                     </node>
                                                                   </node>
                                                                 </node>
@@ -3994,7 +3999,7 @@
                                                           </node>
                                                           <node concept="10M0yZ" id="4VxYGcHoodQ" role="37vLTx">
                                                             <ref role="3cqZAo" to="xnls:~IdeIcons.UNKNOWN_ICON" resolve="UNKNOWN_ICON" />
-                                                            <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
+                                                            <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
                                                           </node>
                                                         </node>
                                                       </node>

@@ -747,8 +747,8 @@
       <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastProj" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="7YdkGnuzqA" role="1tU5fm">
-        <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+      <node concept="3uibUv" id="2nfOfEfMw2F" role="1tU5fm">
+        <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
       </node>
       <node concept="3Tm6S6" id="3_HSwtcSve4" role="1B3o_S" />
       <node concept="NWlO9" id="3_HSwtcSyAq" role="lGtFl">
@@ -842,21 +842,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7YdkGnuzwh" role="3cqZAp" />
-        <node concept="3cpWs8" id="7uk5GW4OOBd" role="3cqZAp">
-          <node concept="3cpWsn" id="7uk5GW4OOBe" role="3cpWs9">
-            <property role="TrG5h" value="mpsProject" />
-            <node concept="3uibUv" id="5KBiyqyvz5H" role="1tU5fm">
-              <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
-            </node>
-            <node concept="2YIFZM" id="5KBiyqyvp0b" role="33vP2m">
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
-              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <node concept="37vLTw" id="5KBiyqyvp0c" role="37wK5m">
-                <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="4arT0cnzgZT" role="3cqZAp">
           <node concept="3cpWsn" id="4arT0cnzgZU" role="3cpWs9">
             <property role="TrG5h" value="make" />
@@ -867,8 +852,8 @@
             <node concept="2YIFZM" id="4arT0cnzgZW" role="33vP2m">
               <ref role="37wK5l" to="qh45:4FpLBMtUK3m" resolve="makeProject" />
               <ref role="1Pybhc" to="qh45:6SYIklyM6Mg" resolve="MakeUtils" />
-              <node concept="37vLTw" id="7uk5GW4OOM3" role="37wK5m">
-                <ref role="3cqZAo" node="7uk5GW4OOBe" resolve="mpsProject" />
+              <node concept="37vLTw" id="2nfOfEfMwgf" role="37wK5m">
+                <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
               </node>
               <node concept="37vLTw" id="1wu5Hv6fAXf" role="37wK5m">
                 <ref role="3cqZAo" node="2UdJgvFqBep" resolve="model" />
@@ -895,8 +880,8 @@
                   <ref role="3cqZAo" node="1wu5Hv6fBpI" resolve="toolAdapter" />
                 </node>
                 <node concept="2OqwBi" id="1U03KaUIZJF" role="37wK5m">
-                  <node concept="37vLTw" id="1U03KaUIZvt" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7uk5GW4OOBe" resolve="mpsProject" />
+                  <node concept="37vLTw" id="2nfOfEfMwp7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
                   </node>
                   <node concept="liA8E" id="1U03KaUJ026" role="2OqNvi">
                     <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
@@ -910,8 +895,8 @@
           <node concept="2YIFZM" id="2H5doxugIMV" role="3clFbG">
             <ref role="37wK5l" to="ood5:505H3_WY3P2" resolve="doMakeAndRunAnalysis" />
             <ref role="1Pybhc" to="ood5:505H3_WY3P0" resolve="AnalyzerMPSRunner" />
-            <node concept="37vLTw" id="7uk5GW4OOP7" role="37wK5m">
-              <ref role="3cqZAo" node="7uk5GW4OOBe" resolve="mpsProject" />
+            <node concept="37vLTw" id="2nfOfEfMwn8" role="37wK5m">
+              <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
             </node>
             <node concept="37vLTw" id="1wu5Hv6fBzL" role="37wK5m">
               <ref role="3cqZAo" node="1wu5Hv6fB9$" resolve="analyzerFactory" />
@@ -925,8 +910,8 @@
       <node concept="37vLTG" id="47xghtTLhAO" role="3clF46">
         <property role="TrG5h" value="proj" />
         <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="7uk5GW4OHSe" role="1tU5fm">
-          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        <node concept="3uibUv" id="2nfOfEfMvOw" role="1tU5fm">
+          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
         </node>
       </node>
       <node concept="37vLTG" id="2UdJgvFqBep" role="3clF46">

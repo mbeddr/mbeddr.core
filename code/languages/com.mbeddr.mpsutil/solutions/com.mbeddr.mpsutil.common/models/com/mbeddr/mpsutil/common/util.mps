@@ -1613,11 +1613,13 @@
               <node concept="37Cfm0" id="3JMPeKaHTl5" role="2OqNvi">
                 <node concept="1aIX9F" id="3JMPeKaHTl6" role="37CeNk">
                   <node concept="25Kdxt" id="3JMPeKaHTl7" role="1aIX9E">
-                    <node concept="2OqwBi" id="3JMPeKaHTl8" role="25KhWn">
+                    <node concept="2OqwBi" id="4glh_DcxUan" role="25KhWn">
                       <node concept="37vLTw" id="3JMPeKaHTl9" role="2Oq$k0">
                         <ref role="3cqZAo" node="3JMPeKaHTn9" resolve="reference" />
                       </node>
-                      <node concept="1eFSac" id="3JMPeKaHTla" role="2OqNvi" />
+                      <node concept="liA8E" id="4glh_DcxUl1" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SReference.getLink():org.jetbrains.mps.openapi.language.SReferenceLink" resolve="getLink" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1636,11 +1638,13 @@
               <node concept="37Cfm0" id="3JMPeKaHTlg" role="2OqNvi">
                 <node concept="1aIX9F" id="3JMPeKaHTlh" role="37CeNk">
                   <node concept="25Kdxt" id="3JMPeKaHTli" role="1aIX9E">
-                    <node concept="2OqwBi" id="3JMPeKaHTlj" role="25KhWn">
+                    <node concept="2OqwBi" id="4glh_DcxUzl" role="25KhWn">
                       <node concept="37vLTw" id="3JMPeKaHTlk" role="2Oq$k0">
                         <ref role="3cqZAo" node="3JMPeKaHTn9" resolve="reference" />
                       </node>
-                      <node concept="1eFSac" id="3JMPeKaHTll" role="2OqNvi" />
+                      <node concept="liA8E" id="4glh_DcxUHZ" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SReference.getLink():org.jetbrains.mps.openapi.language.SReferenceLink" resolve="getLink" />
+                      </node>
                     </node>
                   </node>
                 </node>

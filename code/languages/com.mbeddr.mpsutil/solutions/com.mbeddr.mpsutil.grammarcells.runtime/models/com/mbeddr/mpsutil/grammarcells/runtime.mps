@@ -22802,27 +22802,22 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="3pFNVizIxso" role="2OqNvi">
-                                      <ref role="37wK5l" to="g51k:~PropertyAccessor.getPropertyName():java.lang.String" resolve="getPropertyName" />
+                                      <ref role="37wK5l" to="g51k:~PropertyAccessor.getProperty():org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
                                     </node>
                                   </node>
-                                  <node concept="2OqwBi" id="3pFNVizIxsp" role="3uHU7B">
-                                    <node concept="2OqwBi" id="3pFNVizIxsq" role="2Oq$k0">
-                                      <node concept="1eOMI4" id="3pFNVizIxsr" role="2Oq$k0">
-                                        <node concept="10QFUN" id="3pFNVizIxss" role="1eOMHV">
-                                          <node concept="3uibUv" id="3pFNVizIxst" role="10QFUM">
-                                            <ref role="3uigEE" node="2TSIj8m1tHF" resolve="PropertyToken" />
-                                          </node>
-                                          <node concept="37vLTw" id="3pFNVizIxsu" role="10QFUP">
-                                            <ref role="3cqZAo" node="3pFNVizIwVD" resolve="it" />
-                                          </node>
+                                  <node concept="2OqwBi" id="3pFNVizIxsq" role="3uHU7B">
+                                    <node concept="1eOMI4" id="3pFNVizIxsr" role="2Oq$k0">
+                                      <node concept="10QFUN" id="3pFNVizIxss" role="1eOMHV">
+                                        <node concept="3uibUv" id="3pFNVizIxst" role="10QFUM">
+                                          <ref role="3uigEE" node="2TSIj8m1tHF" resolve="PropertyToken" />
+                                        </node>
+                                        <node concept="37vLTw" id="3pFNVizIxsu" role="10QFUP">
+                                          <ref role="3cqZAo" node="3pFNVizIwVD" resolve="it" />
                                         </node>
                                       </node>
-                                      <node concept="liA8E" id="3pFNVizIxsv" role="2OqNvi">
-                                        <ref role="37wK5l" node="3pFNVizIo_t" resolve="getProperty" />
-                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="3pFNVizIxsw" role="2OqNvi">
-                                      <ref role="37wK5l" to="c17a:~SProperty.getName():java.lang.String" resolve="getName" />
+                                    <node concept="liA8E" id="3pFNVizIxsv" role="2OqNvi">
+                                      <ref role="37wK5l" node="3pFNVizIo_t" resolve="getProperty" />
                                     </node>
                                   </node>
                                 </node>
@@ -23331,9 +23326,12 @@
       <node concept="3Tm1VV" id="3pFNVizDMql" role="1B3o_S" />
       <node concept="3clFbS" id="3pFNVizDMqn" role="3clF47">
         <node concept="XkiVB" id="3pFNVizDMqp" role="3cqZAp">
-          <ref role="37wK5l" to="p9jd:~PropertyCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyCellProvider" />
+          <ref role="37wK5l" to="p9jd:~PropertyCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyCellProvider" />
           <node concept="37vLTw" id="3pFNVizDMqt" role="37wK5m">
             <ref role="3cqZAo" node="3pFNVizDMqq" resolve="node" />
+          </node>
+          <node concept="37vLTw" id="4glh_Dcm4dR" role="37wK5m">
+            <ref role="3cqZAo" node="4glh_Dcm48K" resolve="property" />
           </node>
           <node concept="37vLTw" id="3pFNVizDMqx" role="37wK5m">
             <ref role="3cqZAo" node="3pFNVizDMqu" resolve="editorContext" />
@@ -23354,6 +23352,12 @@
         <property role="TrG5h" value="node" />
         <node concept="3uibUv" id="3pFNVizDMqs" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4glh_Dcm48K" role="3clF46">
+        <property role="TrG5h" value="property" />
+        <node concept="3uibUv" id="4glh_Dcm4bi" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
         </node>
       </node>
       <node concept="37vLTG" id="3pFNVizDMqu" role="3clF46">
@@ -23395,12 +23399,12 @@
             </node>
             <node concept="2ShNRf" id="3pFNVizDM_c" role="33vP2m">
               <node concept="1pGfFk" id="3pFNVizDM_F" role="2ShVmc">
-                <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,boolean,boolean,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyAccessor" />
+                <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyAccessor" />
                 <node concept="1rXfSq" id="3pFNVizDM$u" role="37wK5m">
                   <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
                 </node>
                 <node concept="1rXfSq" id="3pFNVizDN6e" role="37wK5m">
-                  <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getPropertyName():java.lang.String" resolve="getPropertyName" />
+                  <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getProperty():org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
                 </node>
                 <node concept="37vLTw" id="3pFNVizDM$w" role="37wK5m">
                   <ref role="3cqZAo" to="emqf:~CellProviderWithRole.myReadOnly" resolve="myReadOnly" />
@@ -23521,12 +23525,12 @@
                   </node>
                   <node concept="2ShNRf" id="3pFNVizDNCi" role="37wK5m">
                     <node concept="1pGfFk" id="3pFNVizDNCj" role="2ShVmc">
-                      <ref role="37wK5l" to="b3bi:~CellAction_DeletePropertyOrNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="CellAction_DeletePropertyOrNode" />
+                      <ref role="37wK5l" to="b3bi:~CellAction_DeleteSPropertyOrNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty)" resolve="CellAction_DeleteSPropertyOrNode" />
                       <node concept="1rXfSq" id="3pFNVizDM$Q" role="37wK5m">
                         <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
                       </node>
                       <node concept="1rXfSq" id="3pFNVizDNjI" role="37wK5m">
-                        <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getPropertyName():java.lang.String" resolve="getPropertyName" />
+                        <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getProperty():org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
                       </node>
                     </node>
                   </node>
@@ -23546,12 +23550,12 @@
                   </node>
                   <node concept="2ShNRf" id="3pFNVizDNBW" role="37wK5m">
                     <node concept="1pGfFk" id="3pFNVizDNBX" role="2ShVmc">
-                      <ref role="37wK5l" to="b3bi:~CellAction_DeletePropertyOrNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="CellAction_DeletePropertyOrNode" />
+                      <ref role="37wK5l" to="b3bi:~CellAction_DeleteSPropertyOrNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty)" resolve="CellAction_DeleteSPropertyOrNode" />
                       <node concept="1rXfSq" id="3pFNVizDM$W" role="37wK5m">
                         <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
                       </node>
                       <node concept="1rXfSq" id="3pFNVizDNm5" role="37wK5m">
-                        <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getPropertyName():java.lang.String" resolve="getPropertyName" />
+                        <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getProperty():org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
                       </node>
                     </node>
                   </node>

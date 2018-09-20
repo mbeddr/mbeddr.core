@@ -2155,7 +2155,7 @@
                     <node concept="2OqwBi" id="3y7CaIpxbbu" role="3clFbG">
                       <node concept="pncrf" id="3y7CaIpxaXS" role="2Oq$k0" />
                       <node concept="2qgKlT" id="3y7CaIpxbDK" role="2OqNvi">
-                        <ref role="37wK5l" to="imty:3y7CaIpxapX" resolve="getLabal" />
+                        <ref role="37wK5l" to="imty:3y7CaIpxapX" resolve="getLabel" />
                       </node>
                     </node>
                   </node>

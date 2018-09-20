@@ -396,7 +396,7 @@
   </node>
   <node concept="sE7Ow" id="3x0R1LJ5JZN">
     <property role="TrG5h" value="CbmcVerifyDecisionTableAction" />
-    <property role="2uzpH1" value="Verify Decision Table (Starting From 'main')" />
+    <property role="2uzpH1" value="Verify Decision Table (Starting from 'main')" />
     <property role="1WHSii" value="Verifies properties of this decision table by starting from the 'main' function" />
     <node concept="2ScWuX" id="KRRLnplqcw" role="tmbBb">
       <node concept="3clFbS" id="KRRLnplqcx" role="2VODD2">
@@ -758,7 +758,7 @@
   </node>
   <node concept="sE7Ow" id="7yN$Xh8pdGQ">
     <property role="TrG5h" value="CbmcVerifyGSwitchAction" />
-    <property role="2uzpH1" value="Verify GSwitchExpression (Starting From 'main')" />
+    <property role="2uzpH1" value="Verify GSwitchExpression (Starting from 'main')" />
     <property role="1WHSii" value="Verifies this GSwitchExpression by starting from 'main'" />
     <node concept="1DS2jV" id="7yN$Xh8pdGR" role="1NuT2Z">
       <property role="TrG5h" value="project" />

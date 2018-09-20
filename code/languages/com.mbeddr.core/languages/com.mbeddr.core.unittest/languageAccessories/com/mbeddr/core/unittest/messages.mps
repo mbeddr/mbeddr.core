@@ -696,6 +696,15 @@
             </node>
           </node>
         </node>
+        <node concept="1QiMYF" id="73HHpf8Kqcx" role="3XIRFZ">
+          <node concept="OjmMv" id="73HHpf8Kqcz" role="3SJzmv">
+            <node concept="19SGf9" id="73HHpf8Kqc$" role="OjmMu">
+              <node concept="19SUe$" id="73HHpf8Kqc_" role="19SJt6">
+                <property role="19SUeA" value="Path referring to current directory of file system root?" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="c0U19" id="7MLN0_L9iQS" role="3XIRFZ">
           <node concept="3XIRFW" id="7MLN0_L9iQT" role="c0U17">
             <node concept="2BFjQ_" id="7MLN0_L9nqy" role="3XIRFZ">
@@ -743,6 +752,15 @@
             <ref role="1sgJKq" to="ml7g:7OvELZFKNaR" resolve="stat" />
           </node>
         </node>
+        <node concept="1QiMYF" id="73HHpf8Kq9m" role="3XIRFZ">
+          <node concept="OjmMv" id="73HHpf8Kq9o" role="3SJzmv">
+            <node concept="19SGf9" id="73HHpf8Kq9p" role="OjmMu">
+              <node concept="19SUe$" id="73HHpf8Kq9q" role="19SJt6">
+                <property role="19SUeA" value="All directories of given path already existing?" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="c0U19" id="7MLN0_L8wkX" role="3XIRFZ">
           <node concept="3XIRFW" id="7MLN0_L8wkY" role="c0U17">
             <node concept="2BFjQ_" id="7MLN0_L9dd1" role="3XIRFZ">
@@ -768,17 +786,17 @@
             </node>
           </node>
         </node>
-        <node concept="1QiMYF" id="7MLN0_L9hqt" role="3XIRFZ">
-          <node concept="OjmMv" id="7MLN0_L9hqv" role="3SJzmv">
-            <node concept="19SGf9" id="7MLN0_L9hqw" role="OjmMu">
-              <node concept="19SUe$" id="7MLN0_L9hqx" role="19SJt6">
-                <property role="19SUeA" value="Make sure that parent directory of given path exists" />
+        <node concept="1QiMYF" id="73HHpf8Kq6j" role="3XIRFZ">
+          <node concept="OjmMv" id="73HHpf8Kq6l" role="3SJzmv">
+            <node concept="19SGf9" id="73HHpf8Kq6m" role="OjmMu">
+              <node concept="19SUe$" id="73HHpf8Kq6n" role="19SJt6">
+                <property role="19SUeA" value="Extract parent directory of given path" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3XIRlf" id="7MLN0_L9dRn" role="3XIRFZ">
-          <property role="TrG5h" value="modifiablePath" />
+          <property role="TrG5h" value="parentPath" />
           <node concept="3J0A42" id="7MLN0_L9dWt" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
@@ -799,14 +817,55 @@
             </node>
           </node>
         </node>
+        <node concept="1QiMYF" id="73HHpf8KeJw" role="3XIRFZ">
+          <node concept="OjmMv" id="73HHpf8KeJy" role="3SJzmv">
+            <node concept="19SGf9" id="73HHpf8KeJz" role="OjmMu">
+              <node concept="19SUe$" id="73HHpf8KeJ$" role="19SJt6">
+                <property role="19SUeA" value="!! Important Note !! Create a modifiable copy of original const path before calling dirname() to avoid segmentation&#10;faults in case that the latter chooses to alter this path (see https://linux.die.net/man/3/dirname for details)" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1_9egQ" id="7MLN0_L9ykS" role="3XIRFZ">
           <node concept="3O_q_g" id="7MLN0_L9ykQ" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycMm" resolve="strcpy" />
             <node concept="3ZVu4v" id="7MLN0_L9yto" role="3O_q_j">
-              <ref role="3ZVs_2" node="7MLN0_L9dRn" resolve="modifiablePath" />
+              <ref role="3ZVs_2" node="7MLN0_L9dRn" resolve="parentPath" />
             </node>
             <node concept="3ZUYvv" id="7MLN0_L9yBP" role="3O_q_j">
               <ref role="3ZUYvu" node="7MLN0_L8sev" resolve="path" />
+            </node>
+          </node>
+        </node>
+        <node concept="1QiMYF" id="73HHpf8Kh_r" role="3XIRFZ">
+          <node concept="OjmMv" id="73HHpf8Kh_t" role="3SJzmv">
+            <node concept="19SGf9" id="73HHpf8Kh_u" role="OjmMu">
+              <node concept="19SUe$" id="73HHpf8Kh_v" role="19SJt6">
+                <property role="19SUeA" value="!! Important Note !! Create copy of resulting path returned by dirname() to make sure that it doesn't get altered &#10;by subsequent dirname() invocations in case that the latter chooses to store the resulting path in a static memory &#10;location (see https://linux.die.net/man/3/dirname for details)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="73HHpf8KbjP" role="3XIRFZ">
+          <node concept="3O_q_g" id="73HHpf8KbjQ" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycMm" resolve="strcpy" />
+            <node concept="3ZVu4v" id="73HHpf8KbjR" role="3O_q_j">
+              <ref role="3ZVs_2" node="7MLN0_L9dRn" resolve="parentPath" />
+            </node>
+            <node concept="3O_q_g" id="73HHpf8KbLM" role="3O_q_j">
+              <ref role="3O_q_h" to="b609:7MLN0_L8zy$" resolve="dirname" />
+              <node concept="3ZVu4v" id="73HHpf8KbPd" role="3O_q_j">
+                <ref role="3ZVs_2" node="7MLN0_L9dRn" resolve="parentPath" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1QiMYF" id="7MLN0_L9hqt" role="3XIRFZ">
+          <node concept="OjmMv" id="7MLN0_L9hqv" role="3SJzmv">
+            <node concept="19SGf9" id="7MLN0_L9hqw" role="OjmMu">
+              <node concept="19SUe$" id="7MLN0_L9hqx" role="19SJt6">
+                <property role="19SUeA" value="Make sure that parent directory of given path exists" />
+              </node>
             </node>
           </node>
         </node>
@@ -824,11 +883,8 @@
             </node>
             <node concept="3O_q_g" id="7MLN0_L9dHn" role="3TlMhI">
               <ref role="3O_q_h" node="7MLN0_L8rpV" resolve="mkpath" />
-              <node concept="3O_q_g" id="7MLN0_L9f2Q" role="3O_q_j">
-                <ref role="3O_q_h" to="b609:7MLN0_L8zy$" resolve="dirname" />
-                <node concept="3ZVu4v" id="7MLN0_L9faq" role="3O_q_j">
-                  <ref role="3ZVs_2" node="7MLN0_L9dRn" resolve="modifiablePath" />
-                </node>
+              <node concept="3ZVu4v" id="73HHpf8KeBM" role="3O_q_j">
+                <ref role="3ZVs_2" node="7MLN0_L9dRn" resolve="parentPath" />
               </node>
               <node concept="3ZUYvv" id="7MLN0_L9feQ" role="3O_q_j">
                 <ref role="3ZUYvu" node="7MLN0_L8shf" resolve="mode" />
@@ -840,7 +896,7 @@
           <node concept="OjmMv" id="7MLN0_L8N_5" role="3SJzmv">
             <node concept="19SGf9" id="7MLN0_L8N_6" role="OjmMu">
               <node concept="19SUe$" id="7MLN0_L8N_7" role="19SJt6">
-                <property role="19SUeA" value="Create final directory of given path" />
+                <property role="19SUeA" value="Create last directory of given path" />
               </node>
             </node>
           </node>

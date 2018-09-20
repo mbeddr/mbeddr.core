@@ -364,14 +364,6 @@
             <ref role="3cqZAo" node="1BXECvJVdNt" resolve="handler" />
           </node>
         </node>
-        <node concept="3clFbF" id="C$q8A2OQS8" role="3cqZAp">
-          <node concept="1rXfSq" id="C$q8A2OQS7" role="3clFbG">
-            <ref role="37wK5l" to="g51k:~EditorCell_Basic.setRole(java.lang.String):void" resolve="setRole" />
-            <node concept="Xl_RD" id="C$q8A2OQUC" role="37wK5m">
-              <property role="Xl_RC" value="" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="37vLTG" id="1BXECvJPXNh" role="3clF46">
         <property role="TrG5h" value="context" />
@@ -415,10 +407,7 @@
       <node concept="3Tm1VV" id="1BXECvJT4Uj" role="1B3o_S" />
       <node concept="3clFbS" id="1BXECvJT4Uk" role="3clF47">
         <node concept="XkiVB" id="1BXECvJT51l" role="3cqZAp">
-          <ref role="37wK5l" to="emqf:~AbstractCellListHandler.&lt;init&gt;(java.lang.String,jetbrains.mps.openapi.editor.EditorContext)" resolve="AbstractCellListHandler" />
-          <node concept="Xl_RD" id="6gcdt_WB$zz" role="37wK5m">
-            <property role="Xl_RC" value="" />
-          </node>
+          <ref role="37wK5l" to="emqf:~AbstractCellListHandler.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext)" resolve="AbstractCellListHandler" />
           <node concept="37vLTw" id="1BXECvJT5bk" role="37wK5m">
             <ref role="3cqZAo" node="1BXECvJT53g" resolve="context" />
           </node>
@@ -704,9 +693,9 @@
               <ref role="3cqZAo" node="4DLCSzVGnq8" resolve="emptyCell" />
             </node>
             <node concept="liA8E" id="4DLCSzVGnqy" role="2OqNvi">
-              <ref role="37wK5l" to="g51k:~EditorCell_Basic.setRole(java.lang.String):void" resolve="setRole" />
+              <ref role="37wK5l" to="g51k:~EditorCell_Basic.setSRole(org.jetbrains.mps.openapi.language.SConceptFeature):void" resolve="setSRole" />
               <node concept="1rXfSq" id="4DLCSzVGnqz" role="37wK5m">
-                <ref role="37wK5l" node="6gcdt_WBB3R" resolve="getElementRole" />
+                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementSRole():org.jetbrains.mps.openapi.language.SConceptFeature" resolve="getElementSRole" />
               </node>
             </node>
           </node>

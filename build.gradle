@@ -4,14 +4,17 @@ ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/m
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 
 //MPS versions
-ext.mpsMajor = "2018.1"
-ext.mpsBuild = "2018.1.5"
+ext.mpsMajor = "2018.2"
+ext.mpsBuild = "2018.2.3"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
 ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.findProperty("teamcity")
 
 buildscript {
+    if(JavaVersion.current() != JavaVersion.VERSION_1_8){
+        throw new GradleException("This build script requires java " + JavaVersion.VERSION_1_8 + ", but you are currently using " + JavaVersion.current())
+    }
     repositories {
         mavenLocal()
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }

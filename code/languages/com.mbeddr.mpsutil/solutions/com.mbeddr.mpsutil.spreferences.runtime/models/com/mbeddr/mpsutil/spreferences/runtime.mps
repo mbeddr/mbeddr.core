@@ -349,6 +349,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
@@ -2468,6 +2469,31 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2Wc_BLze2Kc" role="3cqZAp">
+          <property role="TyiWK" value="false" />
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbS" id="2Wc_BLze2Kd" role="3clFbx">
+            <node concept="3clFbF" id="2Wc_BLze2Ke" role="3cqZAp">
+              <node concept="37vLTI" id="2Wc_BLzd6o9" role="3clFbG">
+                <node concept="2OqwBi" id="2Wc_BLzd7yY" role="37vLTx">
+                  <node concept="37vLTw" id="2Wc_BLzd6DY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7lgjy2PSpu2" resolve="models" />
+                  </node>
+                  <node concept="1uHKPH" id="2Wc_BLzd8EM" role="2OqNvi" />
+                </node>
+                <node concept="37vLTw" id="2Wc_BLzd62E" role="37vLTJ">
+                  <ref role="3cqZAo" node="Nmj9rdB0AL" resolve="model" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2Wc_BLze2Kk" role="3clFbw">
+            <node concept="10Nm6u" id="2Wc_BLze2Kl" role="3uHU7w" />
+            <node concept="37vLTw" id="2Wc_BLze2Km" role="3uHU7B">
+              <ref role="3cqZAo" node="Nmj9rdB0AL" resolve="model" />
             </node>
           </node>
         </node>

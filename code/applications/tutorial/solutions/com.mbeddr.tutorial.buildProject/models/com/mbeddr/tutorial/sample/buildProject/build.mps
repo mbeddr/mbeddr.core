@@ -178,7 +178,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="5dchr4Ql7Kx" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
       <node concept="398BVA" id="QIiPbLA7QP" role="2JcizS">
         <ref role="398BVh" node="5dchr4QlfDQ" resolve="mps.home" />
         <node concept="2Ry0Ak" id="QIiPbLA7QQ" role="iGT6I">

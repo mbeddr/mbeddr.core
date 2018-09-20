@@ -346,7 +346,7 @@
       <property role="20kJfa" value="cardinality" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="3457272138385423181" />
-      <ref role="20lvS9" node="2ZUGF54knGY" resolve="ReqPortCardinality" />
+      <ref role="20lvS9" node="2ZUGF54knGY" resolve="Cardinality" />
     </node>
     <node concept="1TJgyj" id="7JjETeGcmqD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -710,6 +710,13 @@
     <property role="R4oN_" value="a type that represents interfaces" />
     <property role="EcuMT" value="8105003328815054492" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
+    <node concept="1TJgyj" id="6phvXa0RtFG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cardinality" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="7372814607064095468" />
+      <ref role="20lvS9" node="2ZUGF54knGY" resolve="Cardinality" />
+    </node>
     <node concept="1TJgyj" id="71UKpntojUt" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="intf" />
@@ -719,6 +726,9 @@
     </node>
     <node concept="PrWs8" id="j_pDIZyT7O" role="PzmwI">
       <ref role="PrY4T" to="clbe:IPRL99KNBH" resolve="ICanReferToValueStructure" />
+    </node>
+    <node concept="PrWs8" id="73HHpfaf1cp" role="PzmwI">
+      <ref role="PrY4T" to="yq40:2Qo$Q2I7Rcd" resolve="ISelfTypingInArrayAccessExpression" />
     </node>
     <node concept="PrWs8" id="2JQfpiy2xVk" role="PzmwI">
       <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="INullableType" />
@@ -764,15 +774,15 @@
     <property role="R4oN_" value="--" />
     <property role="EcuMT" value="8105003328815208362" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="70kXLV5xDra" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
+    </node>
     <node concept="1TJgyj" id="71UKpntoTuF" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="port" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8105003328815208363" />
       <ref role="20lvS9" node="3TmmsQkC_Q2" resolve="Port" />
-    </node>
-    <node concept="PrWs8" id="70kXLV5xDra" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="pTHqv6KODH">
@@ -1477,8 +1487,10 @@
   </node>
   <node concept="1TIwiD" id="2ZUGF54knGY">
     <property role="3GE5qa" value="comp.ports" />
-    <property role="TrG5h" value="ReqPortCardinality" />
+    <property role="TrG5h" value="Cardinality" />
     <property role="EcuMT" value="3457272138385423166" />
+    <property role="R4oN_" value="cardinality" />
+    <property role="34LRSv" value="[" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2ofiXe_s$YN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -2043,6 +2055,13 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4h2MXXfElHJ">
+    <property role="EcuMT" value="4918717903016647535" />
+    <property role="3GE5qa" value="comp.compType" />
+    <property role="TrG5h" value="ComponentThisExpr" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
 </model>
 
