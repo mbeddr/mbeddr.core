@@ -9,9 +9,9 @@
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -3861,7 +3861,7 @@
   <node concept="PKFIW" id="1lsyexBNOqn">
     <property role="3GE5qa" value="comp.ports" />
     <property role="TrG5h" value="characteristics" />
-    <ref role="1XX52x" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
+    <ref role="1XX52x" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
     <node concept="3EZMnI" id="1lsyexBNOqp" role="2wV5jI">
       <node concept="3F0ifn" id="1lsyexBNOqv" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -8576,7 +8576,7 @@
             <node concept="3cpWsn" id="2mvFNoTuo9t" role="3cpWs9">
               <property role="TrG5h" value="p" />
               <node concept="3Tqbb2" id="2mvFNoTuo9u" role="1tU5fm">
-                <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
+                <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
               </node>
               <node concept="2OqwBi" id="2mvFNoTuo9v" role="33vP2m">
                 <node concept="2OqwBi" id="2mvFNoTuo9w" role="2Oq$k0">
