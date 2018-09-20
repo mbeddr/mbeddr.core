@@ -28,7 +28,7 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -340,6 +340,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -2440,6 +2441,30 @@
         </node>
       </node>
       <node concept="3cqZAl" id="2XtvyVva1_1" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4eOUFnc2Gqr" role="13h7CS">
+      <property role="TrG5h" value="getEditorConceptName" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="eup9:77Zd6XAvZc7" resolve="getEditorConceptName" />
+      <node concept="3Tm1VV" id="4eOUFnc2Gqs" role="1B3o_S" />
+      <node concept="3clFbS" id="4eOUFnc2Gq_" role="3clF47">
+        <node concept="3clFbF" id="4eOUFnc2Rwq" role="3cqZAp">
+          <node concept="3cpWs3" id="4eOUFnc2UQb" role="3clFbG">
+            <node concept="Xl_RD" id="4eOUFnc2URL" role="3uHU7w">
+              <property role="Xl_RC" value=" component" />
+            </node>
+            <node concept="2OqwBi" id="4eOUFnc2Tv9" role="3uHU7B">
+              <node concept="2OqwBi" id="4eOUFnc2RS$" role="2Oq$k0">
+                <node concept="13iPFW" id="4eOUFnc2Rwp" role="2Oq$k0" />
+                <node concept="2yIwOk" id="4eOUFnc2Sxg" role="2OqNvi" />
+              </node>
+              <node concept="3n3YKJ" id="4eOUFnc2U18" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4eOUFnc2GqA" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="1AYgJalDAbn">

@@ -284,16 +284,21 @@
       <property role="20kJfa" value="lib" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="2671893947946267775" />
-      <ref role="20lvS9" node="2kkumeGQcAy" resolve="StaticLibrary" />
+      <ref role="20lvS9" node="2kkumeGQcAy" resolve="Library" />
     </node>
   </node>
   <node concept="1TIwiD" id="2kkumeGQcAy">
-    <property role="TrG5h" value="StaticLibrary" />
-    <property role="34LRSv" value="static library" />
-    <property role="R4oN_" value="a non-executable lib (.a)" />
+    <property role="TrG5h" value="Library" />
+    <property role="34LRSv" value="library" />
+    <property role="R4oN_" value="a static or shared library" />
     <property role="3GE5qa" value="binary" />
     <property role="EcuMT" value="2671893947946158498" />
     <ref role="1TJDcQ" node="4o9sgv8QoKk" resolve="Binary" />
+    <node concept="1TJgyi" id="5ara9Pcdcpm" role="1TKVEl">
+      <property role="IQ2nx" value="5952395988553746006" />
+      <property role="TrG5h" value="shared" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4BxItZJ4BoF">
     <property role="TrG5h" value="Platform" />
@@ -323,6 +328,11 @@
     </node>
     <node concept="PrWs8" id="3dZgFhDSziU" role="PzmwI">
       <ref role="PrY4T" to="i2y7:3dZgFhDSw4V" resolve="IGeneratesToMakefile" />
+    </node>
+    <node concept="1TJgyi" id="5ara9PcmbE2" role="1TKVEl">
+      <property role="IQ2nx" value="5952395988556102274" />
+      <property role="TrG5h" value="supportsSharedLibraries" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="4BxItZJ4BoI">

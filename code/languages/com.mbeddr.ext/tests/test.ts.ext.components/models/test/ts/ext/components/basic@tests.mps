@@ -359,7 +359,7 @@
         <reference id="5308710777891565562" name="field" index="EbZID" />
       </concept>
       <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
-      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.InstancePortRef" flags="ng" index="2EWCuO">
+      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.ComponentPortRef" flags="ng" index="2EWCuO">
         <reference id="4491876417845649018" name="instance" index="2EWCuR" />
         <reference id="3444913373458569211" name="port" index="XcPQd" />
       </concept>
@@ -4688,10 +4688,10 @@
         </node>
         <node concept="3GEVxB" id="3AX8Th8_XHz" role="2OODSX">
           <ref role="3GEb4d" node="1NhHcUCz5Vv" resolve="am_rpi_advaboard" />
-          <node concept="7CXmI" id="3AX8Th8_ZZi" role="lGtFl">
-            <node concept="1TM$A" id="3AX8Th8_ZZj" role="7EUXB">
-              <node concept="2PYRI3" id="4RorRaIffHJ" role="3lydEf">
-                <ref role="39XzEq" to="e39d:3AX8Th8g57R" />
+          <node concept="7CXmI" id="2xpxz2spqPZ" role="lGtFl">
+            <node concept="1TM$A" id="2xpxz2spqQa" role="7EUXB">
+              <node concept="2PYRI3" id="2xpxz2spqQb" role="3lydEf">
+                <ref role="39XzEq" to="e39d:slnbckC6TS" />
               </node>
             </node>
           </node>

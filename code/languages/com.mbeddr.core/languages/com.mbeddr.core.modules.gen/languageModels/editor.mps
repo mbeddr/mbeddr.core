@@ -10,8 +10,10 @@
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -46,6 +48,9 @@
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -63,6 +68,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
@@ -375,6 +381,78 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7MLN0_KEOik">
+    <property role="3GE5qa" value="portability" />
+    <ref role="1XX52x" to="d0vh:7MLN0_IlBU3" resolve="MultiPlatformExpressionStatement" />
+    <node concept="3EZMnI" id="7MLN0_KEQge" role="2wV5jI">
+      <node concept="3EZMnI" id="6iIoqg1yCmm" role="3EZMnx">
+        <node concept="3F0ifn" id="7MLN0_KEQk7" role="3EZMnx">
+          <property role="3F0ifm" value="Win32:" />
+        </node>
+        <node concept="l2Vlx" id="6iIoqg1yCmo" role="2iSdaV" />
+        <node concept="3F1sOY" id="7MLN0_KEQlw" role="3EZMnx">
+          <ref role="1NtTu8" to="d0vh:6iIoqg1yCmj" resolve="win32Expr" />
+        </node>
+        <node concept="3F0ifn" id="6iIoqg1yCmr" role="3EZMnx">
+          <property role="3F0ifm" value=";" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7MLN0_KEQgX" role="3EZMnx">
+        <node concept="3F0ifn" id="7MLN0_KEQii" role="3EZMnx">
+          <property role="3F0ifm" value="others:" />
+        </node>
+        <node concept="3F1sOY" id="7MLN0_KEQjv" role="3EZMnx">
+          <ref role="1NtTu8" to="c4fa:6iIoqg1yCmj" resolve="expr" />
+        </node>
+        <node concept="l2Vlx" id="7MLN0_KEQh0" role="2iSdaV" />
+        <node concept="3F0ifn" id="7MLN0_KEQh1" role="3EZMnx">
+          <property role="3F0ifm" value=";" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="7MLN0_KEQgh" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7MLN0_Lazij">
+    <property role="3GE5qa" value="portability" />
+    <ref role="1XX52x" to="d0vh:7MLN0_Lazhp" resolve="MultiPlatformReturnStatement" />
+    <node concept="3EZMnI" id="7MLN0_Lazit" role="2wV5jI">
+      <node concept="3EZMnI" id="7MLN0_Laziu" role="3EZMnx">
+        <node concept="3F0ifn" id="7MLN0_Laziv" role="3EZMnx">
+          <property role="3F0ifm" value="Win32:" />
+        </node>
+        <node concept="l2Vlx" id="7MLN0_Laziw" role="2iSdaV" />
+        <node concept="3F0ifn" id="7MLN0_LazjM" role="3EZMnx">
+          <property role="3F0ifm" value="return" />
+        </node>
+        <node concept="3F1sOY" id="7MLN0_Lazix" role="3EZMnx">
+          <ref role="1NtTu8" to="d0vh:7MLN0_Lazhq" resolve="win32Expression" />
+        </node>
+        <node concept="3F0ifn" id="7MLN0_Laziy" role="3EZMnx">
+          <property role="3F0ifm" value=";" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7MLN0_Laziz" role="3EZMnx">
+        <node concept="3F0ifn" id="7MLN0_Lazi$" role="3EZMnx">
+          <property role="3F0ifm" value="others:" />
+        </node>
+        <node concept="3F0ifn" id="7MLN0_Lazkt" role="3EZMnx">
+          <property role="3F0ifm" value="return" />
+        </node>
+        <node concept="3F1sOY" id="7MLN0_Lazi_" role="3EZMnx">
+          <ref role="1NtTu8" to="x27k:7LOsK3rQkUA" resolve="expression" />
+        </node>
+        <node concept="l2Vlx" id="7MLN0_LaziA" role="2iSdaV" />
+        <node concept="3F0ifn" id="7MLN0_LaziB" role="3EZMnx">
+          <property role="3F0ifm" value=";" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="7MLN0_LaziC" role="2iSdaV" />
     </node>
   </node>
 </model>

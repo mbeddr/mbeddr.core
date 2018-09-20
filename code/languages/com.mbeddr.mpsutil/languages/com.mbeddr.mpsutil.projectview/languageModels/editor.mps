@@ -517,6 +517,18 @@
             </node>
             <node concept="2iRfu4" id="1CDgnklGVIc" role="2iSdaV" />
           </node>
+          <node concept="3EZMnI" id="nuy2XHi9ep" role="3EZMnx">
+            <node concept="VPM3Z" id="nuy2XHi9eq" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="nuy2XHi9er" role="3EZMnx">
+              <property role="3F0ifm" value="folder action group ID:" />
+            </node>
+            <node concept="3F1sOY" id="nuy2XHi9es" role="3EZMnx">
+              <ref role="1NtTu8" to="d04j:nuy2XHi9dW" resolve="foldersActionGroupId" />
+            </node>
+            <node concept="2iRfu4" id="nuy2XHi9et" role="2iSdaV" />
+          </node>
           <node concept="2EHx9g" id="7diJr$RvhaB" role="2iSdaV" />
         </node>
         <node concept="3F0ifn" id="$6jtTwVJ6t" role="3EZMnx">

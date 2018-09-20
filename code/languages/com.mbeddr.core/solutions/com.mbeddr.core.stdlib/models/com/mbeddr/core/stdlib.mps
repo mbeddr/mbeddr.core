@@ -119,7 +119,9 @@
       <concept id="6708182213627045678" name="com.mbeddr.core.modules.structure.IExternable" flags="ng" index="3mNis0">
         <property id="6708182213627045681" name="extern" index="3mNisv" />
       </concept>
-      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
+      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
+        <child id="2771264470558526601" name="init" index="1cecVj" />
+      </concept>
       <concept id="883533952987437678" name="com.mbeddr.core.modules.structure.ArgumentKindContainer" flags="ng" index="3U$IGs">
         <property id="883533952987437954" name="value" index="3U$IFK" />
       </concept>
@@ -10417,6 +10419,19 @@
     <property role="TrG5h" value="errno" />
     <node concept="rcWE1" id="1o$bJoOVgbr" role="rcWEr">
       <property role="rcWEL" value="&lt;errno.h&gt;" />
+    </node>
+    <node concept="1S7NMz" id="7HP3pfzuSvA" role="N3F5h">
+      <property role="TrG5h" value="errno" />
+      <node concept="3TlMh2" id="7HP3pfzuSv$" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3TlMh9" id="7HP3pfzuSzm" role="1cecVj">
+        <property role="2hmy$m" value="0" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7MLN0_L8uyn" role="N3F5h">
+      <property role="TrG5h" value="empty_1532522893150_83" />
     </node>
     <node concept="4WHVk" id="1o$bJoOV23N" role="N3F5h">
       <property role="TrG5h" value="EPERM" />
