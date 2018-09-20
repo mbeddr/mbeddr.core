@@ -460,6 +460,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="2YZ7DHQvsuM" role="3EZMnx">
+        <ref role="PMmxG" to="j4gk:xAR9nWuwd2" resolve="IHasPrefixesComponent" />
+      </node>
       <node concept="3F0ifn" id="5jyom5fO9Cr" role="3EZMnx">
         <property role="3F0ifm" value="typedef" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
