@@ -151,5 +151,18 @@
     <property role="EcuMT" value="2723386792958854790" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="1g9itazWEeq">
+    <property role="EcuMT" value="1443766324591502234" />
+    <property role="TrG5h" value="BuilderModeReference" />
+    <property role="34LRSv" value="dfBuilderMode" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="1g9itazWEer" role="1TKVEi">
+      <property role="IQ2ns" value="1443766324591502235" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mode" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp41:6UdHCtZMvVk" resolve="IBuilderMode" />
+    </node>
+  </node>
 </model>
 

@@ -162,5 +162,11 @@
       <node concept="2iRkQZ" id="7CYS5pZsVNi" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="2zqpPfiyC_H">
+    <ref role="1XX52x" to="jd30:2zqpPfiyCqW" resolve="ConceptNonInstantiable" />
+    <node concept="3F0ifn" id="2zqpPfiyC_J" role="2wV5jI">
+      <property role="3F0ifm" value="non instantiable concept due to bad constraints" />
+    </node>
+  </node>
 </model>
 

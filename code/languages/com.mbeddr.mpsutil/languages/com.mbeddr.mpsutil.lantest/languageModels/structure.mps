@@ -121,6 +121,27 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
     </node>
+    <node concept="1TJgyj" id="2zqpPfizDaF" role="1TKVEi">
+      <property role="IQ2ns" value="2943778916152545963" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="whatToCheckForEditorActions" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2zqpPfi$1nS" resolve="AbstractEditorActionsScope" />
+    </node>
+    <node concept="1TJgyj" id="2zqpPfizDco" role="1TKVEi">
+      <property role="IQ2ns" value="2943778916152546072" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="linksKnownToBeHidden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tp25:2iMJRNx_nol" resolve="LinkIdRefExpression" />
+    </node>
+    <node concept="1TJgyj" id="2zqpPfiG1QG" role="1TKVEi">
+      <property role="IQ2ns" value="2943778916154744236" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conceptsKnownNotToBeInstantiable" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
+    </node>
     <node concept="1TJgyi" id="4XCJ8CcQCV$" role="1TKVEl">
       <property role="TrG5h" value="maximumNumberOfTries" />
       <property role="IQ2nx" value="5722030627681373924" />
@@ -363,6 +384,59 @@
       <property role="IQ2nx" value="7651702299351068897" />
       <property role="TrG5h" value="languageNameSubstring" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7UfzZYaIfQ3">
+    <property role="EcuMT" value="9119666098155355523" />
+    <property role="3GE5qa" value="seed" />
+    <property role="TrG5h" value="RandomRootNodeFromSolution" />
+    <property role="34LRSv" value="random root node from solution" />
+    <property role="R4oN_" value="pick a random root node from a solution" />
+    <ref role="1TJDcQ" node="2A9nHKANPGu" resolve="AbstractSeedModel" />
+    <node concept="1TJgyj" id="52eR6w5Pjol" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5804819309059716629" />
+      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2zqpPfi$1nS">
+    <property role="EcuMT" value="2943778916152645112" />
+    <property role="TrG5h" value="AbstractEditorActionsScope" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="editor_actions_seed" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2zqpPfi$274">
+    <property role="EcuMT" value="2943778916152648132" />
+    <property role="3GE5qa" value="editor_actions_seed" />
+    <property role="TrG5h" value="ModelScopeForEditorActions" />
+    <property role="34LRSv" value="model scope" />
+    <property role="R4oN_" value="check instantiability of nodes from model" />
+    <ref role="1TJDcQ" node="2zqpPfi$1nS" resolve="AbstractEditorActionsScope" />
+    <node concept="1TJgyj" id="2zqpPfi$275" role="1TKVEi">
+      <property role="IQ2ns" value="2943778916152648133" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="modelPointerExpression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2zqpPfi$7FA">
+    <property role="EcuMT" value="2943778916152670950" />
+    <property role="3GE5qa" value="editor_actions_seed" />
+    <property role="TrG5h" value="SingleRootNodeScope" />
+    <property role="34LRSv" value="single root node scope" />
+    <property role="R4oN_" value="check a single root node" />
+    <ref role="1TJDcQ" node="2zqpPfi$1nS" resolve="AbstractEditorActionsScope" />
+    <node concept="1TJgyj" id="2zqpPfi$7FB" role="1TKVEi">
+      <property role="IQ2ns" value="2943778916152670951" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="root" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

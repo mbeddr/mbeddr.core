@@ -298,7 +298,7 @@
         <ref role="m$f5T" node="7Pr7tifzjKW" resolve="com.mbeddr.platform.build" />
       </node>
       <node concept="m$_yC" id="33r_JpZ6rtT" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions" />
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
       </node>
     </node>
     <node concept="m$_wf" id="1g7oDhK0dwB" role="3989C9">
@@ -648,9 +648,6 @@
         <node concept="3Mxwey" id="2HHioL2NwSM" role="3MwsjC">
           <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
-      </node>
-      <node concept="m$f5U" id="4sjR92KlXUh" role="m$_yh">
-        <ref role="m$f5T" node="4sjR92JQf0t" resolve="group.dataflow" />
       </node>
       <node concept="m$f5U" id="5l4WPWBsMzR" role="m$_yh">
         <ref role="m$f5T" node="5l4WPWBsBct" resolve="group.commenting.devkit" />
@@ -1067,6 +1064,42 @@
       <node concept="3_J27D" id="5fGcQI9h7H0" role="3s6cr7">
         <node concept="3Mxwew" id="5fGcQI9h7H1" role="3MwsjC">
           <property role="3MwjfP" value="Grammar Cells Langauge from mbeddr.mpsutil" />
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="5bCFa$D2ROM" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.dataflow" />
+      <node concept="3_J27D" id="5bCFa$D2RON" role="m$_yQ">
+        <node concept="3Mxwew" id="5bCFa$D2ROO" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.dataflow" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="5bCFa$D2ROP" role="m$_w8">
+        <node concept="3Mxwey" id="5bCFa$D2ROQ" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="5bCFa$D2VsF" role="m$_yh">
+        <ref role="m$f5T" node="4sjR92JQf0t" resolve="group.dataflow" />
+      </node>
+      <node concept="m$_yC" id="5bCFa$D2ROS" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="5bCFa$D2ROT" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
+      </node>
+      <node concept="3_J27D" id="5bCFa$D2ROX" role="m_cZH">
+        <node concept="3Mxwew" id="5bCFa$D2ROY" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.dataflow" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="5bCFa$D2ROZ" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com/" />
+      </node>
+      <node concept="3_J27D" id="5bCFa$D2RP0" role="3s6cr7">
+        <node concept="3Mxwew" id="5bCFa$D2RP1" role="3MwsjC">
+          <property role="3MwjfP" value="MPS data-flow extensions" />
         </node>
       </node>
     </node>
@@ -3761,6 +3794,12 @@
             <node concept="3bR9La" id="4sjR92JQ_50" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L8q" resolve="jetbrains.mps.lang.pattern" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2v$MQCp6W8K" role="3bR37C">
+            <node concept="3bR9La" id="2v$MQCp6W8L" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7YI57w6K0i_" resolve="jetbrains.mps.lang.dataFlow#1206455293228" />
             </node>
           </node>
         </node>
@@ -18430,6 +18469,9 @@
       </node>
       <node concept="m$_wl" id="5fGcQI9hje9" role="39821P">
         <ref role="m_rDy" node="5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
+      </node>
+      <node concept="m$_wl" id="5bCFa$D35hF" role="39821P">
+        <ref role="m_rDy" node="5bCFa$D2ROM" resolve="com.mbeddr.mpsutil.dataflow" />
       </node>
       <node concept="m$_wl" id="4mEgncq7xWr" role="39821P">
         <ref role="m_rDy" node="4mEgncq7aaz" resolve="com.mbeddr.mpsutil.xmlImport" />

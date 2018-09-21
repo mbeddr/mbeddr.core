@@ -104,5 +104,13 @@
       <ref role="PrY4T" node="7CYS5pZsVJ9" resolve="IMember" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2zqpPfiyCqW">
+    <property role="EcuMT" value="2943778916152280764" />
+    <property role="TrG5h" value="ConceptNonInstantiable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2zqpPfiyC_y" role="PzmwI">
+      <ref role="PrY4T" node="7CYS5pZsVJ9" resolve="IMember" />
+    </node>
+  </node>
 </model>
 
