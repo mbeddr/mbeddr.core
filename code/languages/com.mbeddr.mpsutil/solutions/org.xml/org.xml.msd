@@ -5,17 +5,16 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/xml-apis-ext.jar" />
-      <sourceRoot location="lib/resolver.jar" />
       <sourceRoot location="lib/serializer.jar" />
-      <sourceRoot location="lib/xercesImpl.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${platform_lib}" type="java_classes">
+      <sourceRoot location="xml-apis-ext-1.3.04.jar" />
+      <sourceRoot location="xml-resolver-1.2.jar" />
+      <sourceRoot location="xercesImpl-2.11.0.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/resolver.jar" />
     <stubModelEntry path="${module}/lib/serializer.jar" />
-    <stubModelEntry path="${module}/lib/xercesImpl.jar" />
-    <stubModelEntry path="${module}/lib/xml-apis-ext.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

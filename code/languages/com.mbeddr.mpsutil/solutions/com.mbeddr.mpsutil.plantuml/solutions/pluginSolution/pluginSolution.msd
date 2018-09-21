@@ -2,18 +2,17 @@
 <solution name="com.mbeddr.mpsutil.plantuml.pluginSolution" uuid="c0488c1e-322f-4f38-92d4-5520a7ce96c1" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-all-1.10.jar" />
       <sourceRoot location="plantuml.jar" />
-      <sourceRoot location="rhino-1.7.10.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="${platform_lib}" type="java_classes">
+      <sourceRoot location="batik-all-1.10.jar" />
+    </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/batik-all-1.10.jar" />
     <stubModelEntry path="${module}/lib/plantuml.jar" />
-    <stubModelEntry path="${module}/lib/rhino-1.7.10.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
