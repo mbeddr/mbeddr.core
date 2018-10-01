@@ -479,21 +479,11 @@
                         </node>
                         <node concept="liA8E" id="2SerBSMpW1i" role="2OqNvi">
                           <ref role="37wK5l" to="f7eu:~Context.mkEq(com.microsoft.z3.Expr,com.microsoft.z3.Expr):com.microsoft.z3.BoolExpr" resolve="mkEq" />
-                          <node concept="10QFUN" id="2SerBSMpW1j" role="37wK5m">
-                            <node concept="3uibUv" id="2SerBSMpW1k" role="10QFUM">
-                              <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
-                            </node>
-                            <node concept="37vLTw" id="2SerBSMpW1l" role="10QFUP">
-                              <ref role="3cqZAo" node="74nUgMbdGXx" resolve="newLeft" />
-                            </node>
+                          <node concept="37vLTw" id="2SerBSMpW1l" role="37wK5m">
+                            <ref role="3cqZAo" node="74nUgMbdGXx" resolve="newLeft" />
                           </node>
-                          <node concept="10QFUN" id="2SerBSMpW1m" role="37wK5m">
-                            <node concept="3uibUv" id="2SerBSMpW1n" role="10QFUM">
-                              <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
-                            </node>
-                            <node concept="37vLTw" id="2SerBSMpW1o" role="10QFUP">
-                              <ref role="3cqZAo" node="74nUgMbdGXD" resolve="newRight" />
-                            </node>
+                          <node concept="37vLTw" id="2SerBSMpW1o" role="37wK5m">
+                            <ref role="3cqZAo" node="74nUgMbdGXD" resolve="newRight" />
                           </node>
                         </node>
                       </node>
@@ -519,21 +509,11 @@
                             </node>
                             <node concept="liA8E" id="2SerBSMpWlh" role="2OqNvi">
                               <ref role="37wK5l" to="f7eu:~Context.mkEq(com.microsoft.z3.Expr,com.microsoft.z3.Expr):com.microsoft.z3.BoolExpr" resolve="mkEq" />
-                              <node concept="10QFUN" id="2SerBSMpWli" role="37wK5m">
-                                <node concept="3uibUv" id="2SerBSMpWlj" role="10QFUM">
-                                  <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
-                                </node>
-                                <node concept="37vLTw" id="2SerBSMpWlk" role="10QFUP">
-                                  <ref role="3cqZAo" node="74nUgMbdGXx" resolve="newLeft" />
-                                </node>
+                              <node concept="37vLTw" id="2SerBSMpWlk" role="37wK5m">
+                                <ref role="3cqZAo" node="74nUgMbdGXx" resolve="newLeft" />
                               </node>
-                              <node concept="10QFUN" id="2SerBSMpWll" role="37wK5m">
-                                <node concept="3uibUv" id="2SerBSMpWlm" role="10QFUM">
-                                  <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
-                                </node>
-                                <node concept="37vLTw" id="2SerBSMpWln" role="10QFUP">
-                                  <ref role="3cqZAo" node="74nUgMbdGXD" resolve="newRight" />
-                                </node>
+                              <node concept="37vLTw" id="2SerBSMpWln" role="37wK5m">
+                                <ref role="3cqZAo" node="74nUgMbdGXD" resolve="newRight" />
                               </node>
                             </node>
                           </node>
@@ -545,6 +525,74 @@
               </node>
               <node concept="Jnkvi" id="74nUgMbepzo" role="aOSgZ">
                 <ref role="1M0zk5" node="74nUgMbemno" resolve="be" />
+              </node>
+              <node concept="aOSgX" id="3Qg7CRPNONm" role="aOSgK">
+                <ref role="aOSgM" to="mj1l:4ZVDCZCaQ8l" resolve="PlusExpression" />
+                <node concept="9aQIb" id="3Qg7CRPNONn" role="aOS0M">
+                  <node concept="3clFbS" id="3Qg7CRPNONo" role="9aQI4">
+                    <node concept="3cpWs6" id="3Qg7CRPNQ0J" role="3cqZAp">
+                      <node concept="2OqwBi" id="3Qg7CRPNQ0K" role="3cqZAk">
+                        <node concept="37vLTw" id="3Qg7CRPNQ0L" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
+                        </node>
+                        <node concept="liA8E" id="3Qg7CRPNQ0M" role="2OqNvi">
+                          <ref role="37wK5l" to="f7eu:~Context.mkAdd(com.microsoft.z3.ArithExpr...):com.microsoft.z3.ArithExpr" resolve="mkAdd" />
+                          <node concept="10QFUN" id="3Qg7CRPNQ0N" role="37wK5m">
+                            <node concept="3uibUv" id="3Qg7CRPNQ0O" role="10QFUM">
+                              <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
+                            </node>
+                            <node concept="37vLTw" id="3Qg7CRPNQ0P" role="10QFUP">
+                              <ref role="3cqZAo" node="74nUgMbdGXx" resolve="newLeft" />
+                            </node>
+                          </node>
+                          <node concept="10QFUN" id="3Qg7CRPNQ0Q" role="37wK5m">
+                            <node concept="3uibUv" id="3Qg7CRPNQ0R" role="10QFUM">
+                              <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
+                            </node>
+                            <node concept="37vLTw" id="3Qg7CRPNQ0S" role="10QFUP">
+                              <ref role="3cqZAo" node="74nUgMbdGXD" resolve="newRight" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="aMNgE" id="3Qg7CRPNONp" role="dK$qS" />
+              </node>
+              <node concept="aOSgX" id="3Qg7CRPNQDQ" role="aOSgK">
+                <ref role="aOSgM" to="mj1l:4ZVDCZCaQ8q" resolve="MinusExpression" />
+                <node concept="9aQIb" id="3Qg7CRPNQDR" role="aOS0M">
+                  <node concept="3clFbS" id="3Qg7CRPNQDS" role="9aQI4">
+                    <node concept="3cpWs6" id="3Qg7CRPNQDT" role="3cqZAp">
+                      <node concept="2OqwBi" id="3Qg7CRPNQDU" role="3cqZAk">
+                        <node concept="37vLTw" id="3Qg7CRPNQDV" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
+                        </node>
+                        <node concept="liA8E" id="3Qg7CRPNQDW" role="2OqNvi">
+                          <ref role="37wK5l" to="f7eu:~Context.mkSub(com.microsoft.z3.ArithExpr...):com.microsoft.z3.ArithExpr" resolve="mkSub" />
+                          <node concept="10QFUN" id="3Qg7CRPNQDX" role="37wK5m">
+                            <node concept="3uibUv" id="3Qg7CRPNQDY" role="10QFUM">
+                              <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
+                            </node>
+                            <node concept="37vLTw" id="3Qg7CRPNQDZ" role="10QFUP">
+                              <ref role="3cqZAo" node="74nUgMbdGXx" resolve="newLeft" />
+                            </node>
+                          </node>
+                          <node concept="10QFUN" id="3Qg7CRPNQE0" role="37wK5m">
+                            <node concept="3uibUv" id="3Qg7CRPNQE1" role="10QFUM">
+                              <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
+                            </node>
+                            <node concept="37vLTw" id="3Qg7CRPNQE2" role="10QFUP">
+                              <ref role="3cqZAo" node="74nUgMbdGXD" resolve="newRight" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="aMNgE" id="3Qg7CRPNQE3" role="dK$qS" />
               </node>
             </node>
           </node>
