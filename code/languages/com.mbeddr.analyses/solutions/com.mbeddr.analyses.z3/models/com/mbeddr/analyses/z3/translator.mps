@@ -27,7 +27,6 @@
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -53,9 +52,6 @@
       </concept>
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -1003,31 +999,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="4gj0JzplWz" role="3clF47">
-        <node concept="3clFbF" id="3E9Q9iDLUK5" role="3cqZAp">
-          <node concept="2OqwBi" id="3E9Q9iDLUK6" role="3clFbG">
-            <node concept="10M0yZ" id="3E9Q9iDLUK7" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="3E9Q9iDLUK8" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="3E9Q9iDLUK9" role="37wK5m">
-                <node concept="2OqwBi" id="3E9Q9iDM3Ol" role="3uHU7w">
-                  <node concept="37vLTw" id="3E9Q9iDM1Bf" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4gj0JzplWV" resolve="vd" />
-                  </node>
-                  <node concept="3TrcHB" id="3E9Q9iDMese" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3E9Q9iDLUKb" role="3uHU7B">
-                  <property role="Xl_RC" value="--- VariaTranslator --- adding var:  " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="3E9Q9iDLUCC" role="3cqZAp" />
         <node concept="3cpWs8" id="4gj0JzplW$" role="3cqZAp">
           <node concept="3cpWsn" id="4gj0JzplW_" role="3cpWs9">
             <property role="TrG5h" value="varSym" />

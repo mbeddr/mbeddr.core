@@ -1306,7 +1306,7 @@
           </node>
         </node>
         <node concept="1Cbqnj" id="52nALqIEvDu" role="3cqZAp">
-          <property role="1Cbqnt" value="singlee consistency" />
+          <property role="1Cbqnt" value="single consistency" />
           <node concept="3clFbS" id="52nALqIEvDw" role="1Cbqni">
             <node concept="9aQIb" id="52nALqIEvIl" role="3cqZAp">
               <node concept="3clFbS" id="52nALqIEvIm" role="9aQI4">
