@@ -16,11 +16,11 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
-    <import index="f7eu" ref="88063d90-aa0a-4f17-8757-92c0f1692f3d/java:com.microsoft.z3(com.mbeddr.analyses.z3/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="22we" ref="r:2e00714f-c0ab-49b2-b5c5-a4ada80aa17e(com.mbeddr.analyses.z3.translator)" />
+    <import index="f7eu" ref="6e9e9327-19d7-416c-8dd0-24b15ea19915/java:com.microsoft.z3(com.mbeddr.analyses.z3.lib/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
@@ -569,7 +569,9 @@
       <property role="3TUv4t" value="true" />
       <node concept="10P_77" id="2FPaW3Ex6IR" role="1tU5fm" />
       <node concept="3Tm6S6" id="2FPaW3Ex6BX" role="1B3o_S" />
-      <node concept="3clFbT" id="2FPaW3Ex7_1" role="33vP2m" />
+      <node concept="3clFbT" id="2FPaW3Ex7_1" role="33vP2m">
+        <property role="3clFbU" value="true" />
+      </node>
     </node>
     <node concept="2YIFZL" id="2FPaW3Ex7P2" role="jymVt">
       <property role="TrG5h" value="debug" />
@@ -694,7 +696,7 @@
           <node concept="3cpWsn" id="4gj0JzlNUI" role="3cpWs9">
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="ctx" />
-            <node concept="3uibUv" id="4gj0JzlNUJ" role="1tU5fm">
+            <node concept="3uibUv" id="9OYpv3_60u" role="1tU5fm">
               <ref role="3uigEE" to="f7eu:~Context" resolve="Context" />
             </node>
             <node concept="2ShNRf" id="4gj0JzlNUK" role="33vP2m">
@@ -710,7 +712,7 @@
         <node concept="3cpWs8" id="4gj0JzlNVk" role="3cqZAp">
           <node concept="3cpWsn" id="4gj0JzlNVl" role="3cpWs9">
             <property role="TrG5h" value="solver" />
-            <node concept="3uibUv" id="4gj0JzlNVm" role="1tU5fm">
+            <node concept="3uibUv" id="9OYpv3_5Y4" role="1tU5fm">
               <ref role="3uigEE" to="f7eu:~Solver" resolve="Solver" />
             </node>
             <node concept="2OqwBi" id="4gj0JzlNVn" role="33vP2m">
@@ -802,11 +804,11 @@
         <node concept="3cpWs8" id="4gj0JzlNV3" role="3cqZAp">
           <node concept="3cpWsn" id="4gj0JzlNV4" role="3cpWs9">
             <property role="TrG5h" value="z3Exp" />
-            <node concept="3uibUv" id="4gj0JzlNV5" role="1tU5fm">
+            <node concept="3uibUv" id="9OYpv3_5Ze" role="1tU5fm">
               <ref role="3uigEE" to="f7eu:~BoolExpr" resolve="BoolExpr" />
             </node>
             <node concept="10QFUN" id="4gj0Jzm44O" role="33vP2m">
-              <node concept="3uibUv" id="4gj0Jzm46Z" role="10QFUM">
+              <node concept="3uibUv" id="9OYpv3_604" role="10QFUM">
                 <ref role="3uigEE" to="f7eu:~BoolExpr" resolve="BoolExpr" />
               </node>
               <node concept="2YIFZM" id="4gj0Jzm3L7" role="10QFUP">
@@ -906,7 +908,7 @@
                 <ref role="37wK5l" to="f7eu:~Solver.check():com.microsoft.z3.Status" resolve="check" />
               </node>
             </node>
-            <node concept="3uibUv" id="4gj0JzlNVy" role="1tU5fm">
+            <node concept="3uibUv" id="9OYpv3_5Zg" role="1tU5fm">
               <ref role="3uigEE" to="f7eu:~Status" resolve="Status" />
             </node>
           </node>

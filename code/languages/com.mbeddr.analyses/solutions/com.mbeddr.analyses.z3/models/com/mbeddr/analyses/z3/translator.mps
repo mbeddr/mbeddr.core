@@ -16,7 +16,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
-    <import index="f7eu" ref="88063d90-aa0a-4f17-8757-92c0f1692f3d/java:com.microsoft.z3(com.mbeddr.analyses.z3/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
@@ -26,6 +25,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
+    <import index="f7eu" ref="6e9e9327-19d7-416c-8dd0-24b15ea19915/java:com.microsoft.z3(com.mbeddr.analyses.z3.lib/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -951,12 +951,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4gj0JzpkZt" role="1B3o_S" />
-      <node concept="3uibUv" id="4gj0JzpkZu" role="3clF45">
+      <node concept="3uibUv" id="9OYpv3_iq6" role="3clF45">
         <ref role="3uigEE" to="f7eu:~Sort" resolve="Sort" />
       </node>
       <node concept="37vLTG" id="4gj0JzpkZv" role="3clF46">
         <property role="TrG5h" value="ctx" />
-        <node concept="3uibUv" id="4gj0JzpkZw" role="1tU5fm">
+        <node concept="3uibUv" id="9OYpv3_iCv" role="1tU5fm">
           <ref role="3uigEE" to="f7eu:~Context" resolve="Context" />
         </node>
       </node>
@@ -1013,12 +1013,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="21uobtP04NK" role="1B3o_S" />
-      <node concept="3uibUv" id="21uobtP04NL" role="3clF45">
+      <node concept="3uibUv" id="9OYpv3_jeO" role="3clF45">
         <ref role="3uigEE" to="f7eu:~Sort" resolve="Sort" />
       </node>
       <node concept="37vLTG" id="21uobtP04Ui" role="3clF46">
         <property role="TrG5h" value="ctx" />
-        <node concept="3uibUv" id="21uobtP04Uy" role="1tU5fm">
+        <node concept="3uibUv" id="9OYpv3_jeT" role="1tU5fm">
           <ref role="3uigEE" to="f7eu:~Context" resolve="Context" />
         </node>
       </node>
