@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.analyses.z3" uuid="88063d90-aa0a-4f17-8757-92c0f1692f3d" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.analyses.z3" uuid="88063d90-aa0a-4f17-8757-92c0f1692f3d" moduleVersion="0" pluginKind="PLUGIN_CORE" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
