@@ -151,6 +151,11 @@
       <property role="IQ2nx" value="3830958861296806571" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="3LB9aGk_ryI" role="1TKVEl">
+      <property role="IQ2nx" value="4352487882080237742" />
+      <property role="TrG5h" value="preprocessorCondition" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7RiewQ_kN5M">
     <property role="TrG5h" value="GenExtModule" />
@@ -325,30 +330,35 @@
       </node>
     </node>
   </node>
-  <node concept="1TIwiD" id="7MLN0_IlBU3">
-    <property role="EcuMT" value="8985187072458784387" />
+  <node concept="1TIwiD" id="3LB9aGk$WfW">
+    <property role="EcuMT" value="4352487882080109564" />
+    <property role="TrG5h" value="MultiPlatformStatement" />
     <property role="3GE5qa" value="portability" />
-    <property role="TrG5h" value="MultiPlatformExpressionStatement" />
-    <ref role="1TJDcQ" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-    <node concept="1TJgyj" id="6iIoqg1yCmj" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="win32Expr" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="7254843406768833939" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyi" id="3LB9aGk$WfX" role="1TKVEl">
+      <property role="IQ2nx" value="4352487882080109565" />
+      <property role="TrG5h" value="win32ExtraHeader" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="7MLN0_Lazhp">
-    <property role="EcuMT" value="8985187072506213465" />
-    <property role="3GE5qa" value="portability" />
-    <property role="TrG5h" value="MultiPlatformReturnStatement" />
-    <ref role="1TJDcQ" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
-    <node concept="1TJgyj" id="7MLN0_Lazhq" role="1TKVEi">
+    <node concept="1TJgyj" id="3LB9aGk$Wg5" role="1TKVEi">
+      <property role="IQ2ns" value="4352487882080109573" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="win32Expression" />
-      <property role="20lbJX" value="0..1" />
-      <property role="IQ2ns" value="7254843406768833939" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <property role="20kJfa" value="win32Stmts" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    </node>
+    <node concept="1TJgyj" id="3LB9aGk$Wg8" role="1TKVEi">
+      <property role="IQ2ns" value="4352487882080109576" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="othersStmts" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    </node>
+    <node concept="PrWs8" id="3LB9aGlWOm$" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="3LB9aGl8_nC" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
     </node>
   </node>
 </model>

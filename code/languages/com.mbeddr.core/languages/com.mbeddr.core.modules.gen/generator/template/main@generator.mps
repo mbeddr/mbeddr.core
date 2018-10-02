@@ -591,6 +591,7 @@
         <reference id="1317894735999388455" name="module" index="2OOX5w" />
       </concept>
       <concept id="3830958861296806570" name="com.mbeddr.core.modules.gen.structure.GenStdHeaderImport" flags="ng" index="19$mpz">
+        <property id="4352487882080237742" name="preprocessorCondition" index="CWDK5" />
         <property id="3830958861296806571" name="haeaderFileName" index="19$mpy" />
       </concept>
       <concept id="2080708908160110638" name="com.mbeddr.core.modules.gen.structure.GenForignExtModuleImport" flags="ng" index="1bfZAk" />
@@ -641,6 +642,7 @@
       <node concept="gft3U" id="3kEjc_WINOL" role="1lVwrX">
         <node concept="19$mpz" id="3kEjc_WINON" role="gfFT$">
           <property role="19$mpy" value="someHeader" />
+          <property role="CWDK5" value="preprocessorCondition" />
           <node concept="17Uvod" id="3kEjc_WINOO" role="lGtFl">
             <property role="2qtEX9" value="haeaderFileName" />
             <property role="P4ACc" value="62296a07-bc38-46d2-8034-198c24063588/3830958861296806570/3830958861296806571" />
@@ -652,6 +654,22 @@
                       <ref role="3TsBF5" to="x27k:3kEjc_WIKGg" resolve="headerFileName" />
                     </node>
                     <node concept="30H73N" id="3kEjc_WINOW" role="2Oq$k0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17Uvod" id="3LB9aGlcW7N" role="lGtFl">
+            <property role="P4ACc" value="62296a07-bc38-46d2-8034-198c24063588/3830958861296806570/4352487882080237742" />
+            <property role="2qtEX9" value="preprocessorCondition" />
+            <node concept="3zFVjK" id="3LB9aGlcW7O" role="3zH0cK">
+              <node concept="3clFbS" id="3LB9aGlcW7P" role="2VODD2">
+                <node concept="3clFbF" id="3LB9aGlcX9F" role="3cqZAp">
+                  <node concept="2OqwBi" id="3LB9aGlcXok" role="3clFbG">
+                    <node concept="30H73N" id="3LB9aGlcX9E" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="3LB9aGlcXGO" role="2OqNvi">
+                      <ref role="3TsBF5" to="x27k:3LB9aGk_ryI" resolve="preprocessorCondition" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -4831,6 +4849,14 @@
                                 <node concept="2qgKlT" id="7RHXOmyHaYT" role="2OqNvi">
                                   <ref role="37wK5l" to="hwgx:7RHXOmw7Mgm" resolve="onlyForImplementation" />
                                 </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="3LB9aGl8$Zg" role="37wK5m">
+                              <node concept="37vLTw" id="3LB9aGl8$uA" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7RHXOmw7W$I" resolve="it" />
+                              </node>
+                              <node concept="2qgKlT" id="3LB9aGl8G8W" role="2OqNvi">
+                                <ref role="37wK5l" to="hwgx:3LB9aGl8_PP" resolve="preprocessorCondition" />
                               </node>
                             </node>
                           </node>
