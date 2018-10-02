@@ -2313,9 +2313,10 @@
       </node>
       <node concept="19RgSI" id="6LsWDiKmfGp" role="1UOdpc">
         <property role="TrG5h" value="namelen" />
-        <node concept="3TlMh2" id="6LsWDiKmfGq" role="2C2TGm">
+        <node concept="rcJHQ" id="3LB9aGk5O6w" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="41BTkV3Wh_x" resolve="size_t" />
         </node>
       </node>
       <node concept="3TlMh2" id="6LsWDiKmfGk" role="2C2TGm">
