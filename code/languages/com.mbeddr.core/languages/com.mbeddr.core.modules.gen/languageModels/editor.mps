@@ -459,7 +459,7 @@
       <node concept="3EZMnI" id="3LB9aGk$Wie" role="3EZMnx">
         <node concept="l2Vlx" id="3LB9aGk$Wif" role="2iSdaV" />
         <node concept="3F0ifn" id="3LB9aGk$Wit" role="3EZMnx">
-          <property role="3F0ifm" value="Extra header for Win32: " />
+          <property role="3F0ifm" value="extra header for Win32: " />
         </node>
         <node concept="3F0A7n" id="3LB9aGk$Who" role="3EZMnx">
           <property role="1O74Pk" value="true" />
