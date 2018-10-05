@@ -1075,13 +1075,6 @@
                 <node concept="3wxyx2" id="5i$ZYHjDudQ" role="3TlMhI">
                   <node concept="3ZVu4v" id="5i$ZYHjDudR" role="1_9fRO">
                     <ref role="3ZVs_2" node="5i$ZYHjDudL" resolve="a" />
-                    <node concept="7CXmI" id="5i$ZYHjDwdh" role="lGtFl">
-                      <node concept="1TM$A" id="3n5vksRGjsq" role="7EUXB">
-                        <node concept="2PYRI3" id="3n5vksRGjsr" role="3lydEf">
-                          <ref role="39XzEq" to="p3tm:7d9zFs_$Rwp" />
-                        </node>
-                      </node>
-                    </node>
                   </node>
                 </node>
                 <node concept="3TlMh9" id="5i$ZYHjDudS" role="3TlMhJ">
