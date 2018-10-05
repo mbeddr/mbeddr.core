@@ -655,12 +655,6 @@
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
         <child id="1204834868751" name="expression" index="25KhWn" />
@@ -1056,15 +1050,24 @@
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="3m8H$lmIlFa" role="1hA7z_">
         <node concept="3clFbS" id="3m8H$lmIlFb" role="2VODD2">
-          <node concept="3clFbJ" id="1lmGFD6De_F" role="3cqZAp">
-            <node concept="3clFbS" id="1lmGFD6De_H" role="3clFbx">
-              <node concept="3cpWs6" id="1lmGFD6EBpw" role="3cqZAp" />
-            </node>
-            <node concept="2OqwBi" id="5hKIe0b6HGc" role="3clFbw">
-              <node concept="0IXxy" id="5hKIe0b6HwT" role="2Oq$k0" />
-              <node concept="2xy62i" id="5hKIe0b6Ie$" role="2OqNvi">
-                <node concept="1Q80Hx" id="5hKIe0b6IiS" role="2xHN3q" />
+          <node concept="1X3_iC" id="4xXsQXusufo" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbJ" id="1lmGFD6De_F" role="8Wnug">
+              <node concept="3clFbS" id="1lmGFD6De_H" role="3clFbx">
+                <node concept="3cpWs6" id="1lmGFD6EBpw" role="3cqZAp" />
               </node>
+              <node concept="2OqwBi" id="5hKIe0b6HGc" role="3clFbw">
+                <node concept="0IXxy" id="5hKIe0b6HwT" role="2Oq$k0" />
+                <node concept="2xy62i" id="5hKIe0b6Ie$" role="2OqNvi">
+                  <node concept="1Q80Hx" id="5hKIe0b6IiS" role="2xHN3q" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3SKdUt" id="4xXsQXut1BE" role="3cqZAp">
+            <node concept="3SKdUq" id="4xXsQXut1BG" role="3SKWNk">
+              <property role="3SKdUp" value="Would make commented node to be highlited for deletion. We remove it for the time being" />
             </node>
           </node>
           <node concept="3cpWs8" id="6PYNGEsYwS4" role="3cqZAp">
@@ -11584,27 +11587,6 @@
         <node concept="3clFbH" id="4QhMqW3m4jF" role="3cqZAp" />
         <node concept="3clFbJ" id="4QhMqW3m4sa" role="3cqZAp">
           <node concept="3clFbS" id="4QhMqW3m4sd" role="3clFbx">
-            <node concept="34ab3g" id="4QhMqW3o3Fy" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="3cpWs3" id="4QhMqW3o5QB" role="34bqiv">
-                <node concept="37vLTw" id="4QhMqW3o5X9" role="3uHU7w">
-                  <ref role="3cqZAo" node="4QhMqW3k5MM" resolve="containingBigCell" />
-                </node>
-                <node concept="3cpWs3" id="4QhMqW3o4J2" role="3uHU7B">
-                  <node concept="3cpWs3" id="4QhMqW3o4BB" role="3uHU7B">
-                    <node concept="Xl_RD" id="4QhMqW3o3F$" role="3uHU7B">
-                      <property role="Xl_RC" value="selectedCell: " />
-                    </node>
-                    <node concept="37vLTw" id="4QhMqW3o4Co" role="3uHU7w">
-                      <ref role="3cqZAo" node="4QhMqW2YsIu" resolve="selectedCell" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="4QhMqW3o4J9" role="3uHU7w">
-                    <property role="Xl_RC" value=" containingBigCell: " />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs6" id="4QhMqW3m4Kr" role="3cqZAp">
               <node concept="3clFbT" id="4QhMqW3m4TM" role="3cqZAk">
                 <property role="3clFbU" value="false" />

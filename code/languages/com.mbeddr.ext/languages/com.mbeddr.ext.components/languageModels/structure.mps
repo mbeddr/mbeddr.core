@@ -2,7 +2,7 @@
 <model ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -1552,7 +1552,7 @@
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="DummyCompRef" />
     <property role="EcuMT" value="9141254329931900474" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2IZ2bWrC4_N" resolve="AbstractDummyRef" />
     <node concept="1TJgyj" id="7VsgA5L5UoV" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="component" />
@@ -2028,6 +2028,14 @@
       <ref role="PrY4T" node="4WC4fmOFhOS" resolve="AbstractDataElementRefTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6uK35z6bLLf">
+    <property role="EcuMT" value="7471485357229284431" />
+    <property role="3GE5qa" value="comp.instances" />
+    <property role="TrG5h" value="AbstractConnector" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
   <node concept="1TIwiD" id="4eOUFnckyAm">
     <property role="EcuMT" value="4878782362887006614" />
     <property role="3GE5qa" value="comp.instances" />
@@ -2036,10 +2044,10 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="6uK35z6bLLf">
-    <property role="EcuMT" value="7471485357229284431" />
+  <node concept="1TIwiD" id="2IZ2bWrC4_N">
+    <property role="EcuMT" value="3152247881077901683" />
     <property role="3GE5qa" value="comp.instances" />
-    <property role="TrG5h" value="AbstractConnector" />
+    <property role="TrG5h" value="AbstractDummyRef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
