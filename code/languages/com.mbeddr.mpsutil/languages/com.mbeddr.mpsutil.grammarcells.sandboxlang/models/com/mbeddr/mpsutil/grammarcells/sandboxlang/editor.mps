@@ -1136,5 +1136,82 @@
   <node concept="3p36aQ" id="2cvVnUuAoz4">
     <ref role="aqKnT" to="ibwz:1x69AmkdYAi" resolve="EmptyStatement" />
   </node>
+  <node concept="24kQdi" id="7kyQHfnnG31">
+    <ref role="1XX52x" to="ibwz:7kyQHfnnFNg" resolve="NaryExpression" />
+    <node concept="3EZMnI" id="1mGeVcVnQjJ" role="2wV5jI">
+      <node concept="yw3OH" id="1mGeVcVnQk5" role="3EZMnx">
+        <node concept="1Lj6DL" id="1mGeVcVnQk6" role="yw3OG">
+          <node concept="1Lj6DC" id="1mGeVcVnQk7" role="1Lj8FM">
+            <node concept="3clFbS" id="1mGeVcVnQk8" role="2VODD2">
+              <node concept="3clFbF" id="1mGeVcVnQk9" role="3cqZAp">
+                <node concept="2OqwBi" id="1mGeVcVnQka" role="3clFbG">
+                  <node concept="1Lj6YZ" id="1mGeVcVnQkb" role="2Oq$k0" />
+                  <node concept="3n3YKJ" id="1mGeVcVnQkc" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="VechU" id="1mGeVcVnQkd" role="3F10Kt">
+            <property role="Vb096" value="blue" />
+          </node>
+          <node concept="Veino" id="1mGeVcVnQke" role="3F10Kt">
+            <node concept="3ZlJ5R" id="1mGeVcVnQkf" role="VblUZ">
+              <node concept="3clFbS" id="1mGeVcVnQkg" role="2VODD2">
+                <node concept="3clFbF" id="1mGeVcVnQkh" role="3cqZAp">
+                  <node concept="2ShNRf" id="1mGeVcVnQki" role="3clFbG">
+                    <node concept="1pGfFk" id="1mGeVcVnQkj" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int,int)" resolve="Color" />
+                      <node concept="3cmrfG" id="1mGeVcVnQkk" role="37wK5m">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                      <node concept="3cmrfG" id="1mGeVcVnQkl" role="37wK5m">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                      <node concept="3cmrfG" id="1mGeVcVnQkm" role="37wK5m">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                      <node concept="3cmrfG" id="1mGeVcVnQkn" role="37wK5m">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1mGeVcV_Kgh" role="3EZMnx">
+        <ref role="1NtTu8" to="ibwz:7kyQHfnnG2Q" resolve="exps" />
+        <node concept="l2Vlx" id="1mGeVcV_Kgj" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="1mGeVcVnQk$" role="2iSdaV" />
+      <node concept="Veino" id="1mGeVcVnQk_" role="3F10Kt">
+        <node concept="3ZlJ5R" id="1mGeVcVnQkA" role="VblUZ">
+          <node concept="3clFbS" id="1mGeVcVnQkB" role="2VODD2">
+            <node concept="3clFbF" id="1mGeVcVnQkC" role="3cqZAp">
+              <node concept="2ShNRf" id="1mGeVcVnQkD" role="3clFbG">
+                <node concept="1pGfFk" id="1mGeVcVnQkE" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int,int)" resolve="Color" />
+                  <node concept="3cmrfG" id="1mGeVcVnQkF" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="1mGeVcVnQkG" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="1mGeVcVnQkH" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="1mGeVcVnQkI" role="37wK5m">
+                    <property role="3cmrfH" value="20" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

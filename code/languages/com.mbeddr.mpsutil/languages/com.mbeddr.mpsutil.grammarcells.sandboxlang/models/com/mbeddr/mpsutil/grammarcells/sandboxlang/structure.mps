@@ -642,5 +642,33 @@
       <ref role="PrY4T" node="1x69AmkdYA2" resolve="IStatement" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7kyQHfnnFNg">
+    <property role="EcuMT" value="8440549255031995600" />
+    <property role="TrG5h" value="NaryExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <node concept="1TJgyj" id="7kyQHfnnG2Q" role="1TKVEi">
+      <property role="IQ2ns" value="8440549255031996598" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exps" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
+    <node concept="PrWs8" id="7kyQHfnnG2N" role="PzmwI">
+      <ref role="PrY4T" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1mGeVcVgxx3">
+    <property role="EcuMT" value="1561688811770091587" />
+    <property role="TrG5h" value="NaryPlusExpression" />
+    <property role="34LRSv" value="+" />
+    <ref role="1TJDcQ" node="7kyQHfnnFNg" resolve="NaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="1mGeVcVgxx6">
+    <property role="EcuMT" value="1561688811770091590" />
+    <property role="TrG5h" value="NaryMulExpression" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" node="7kyQHfnnFNg" resolve="NaryExpression" />
+  </node>
 </model>
 

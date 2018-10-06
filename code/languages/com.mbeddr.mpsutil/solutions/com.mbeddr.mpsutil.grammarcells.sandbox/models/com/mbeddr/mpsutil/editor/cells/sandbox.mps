@@ -31,6 +31,9 @@
       <concept id="1749127723000261004" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.EmptyModuleContent" flags="ng" index="2cssZD" />
       <concept id="1749127723000261010" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.EmptyStatement" flags="ng" index="2cssZR" />
       <concept id="1749127723000290684" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.IntType" flags="ng" index="2cvBGp" />
+      <concept id="8440549255031995600" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.NaryExpression" flags="ng" index="2yv6o3">
+        <child id="8440549255031996598" name="exps" index="2yv1D_" />
+      </concept>
       <concept id="5083944728300136332" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.PlusExpression" flags="ng" index="ywmH7" />
       <concept id="5083944728300233282" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.MulExpression" flags="ng" index="ywYU9" />
       <concept id="5083944728299528550" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.PublicVisibility" flags="ng" index="yzEQH" />
@@ -40,6 +43,8 @@
         <property id="5083944728300729107" name="value" index="yA7Zo" />
       </concept>
       <concept id="2111846799818005528" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.MinusExpression" flags="ng" index="2Iv5lx" />
+      <concept id="1561688811770091587" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.NaryPlusExpression" flags="ng" index="IVyfK" />
+      <concept id="1561688811770091590" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.NaryMinusExpression" flags="ng" index="IVyfP" />
       <concept id="4330386229151410873" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.UnitExpression" flags="ng" index="WMbnG">
         <property id="4330386229151410877" name="unit" index="WMbnC" />
         <child id="4330386229151410880" name="expression" index="WMbml" />
@@ -397,7 +402,39 @@
           </node>
           <node concept="2cvBGp" id="1BP6YWGVXbx" role="1kHs7J" />
         </node>
-        <node concept="2cssZR" id="1BP6YWGV2g0" role="2cssZA" />
+        <node concept="1kHs8n" id="1mGeVcVgzxC" role="2cssZA">
+          <property role="TrG5h" value="nary_plus" />
+          <node concept="2cvBGp" id="1mGeVcVgzxA" role="1kHs7J" />
+          <node concept="IVyfK" id="1mGeVcVEnCp" role="1kHs8a">
+            <node concept="yA7Z4" id="1mGeVcVEnBX" role="2yv1D_">
+              <property role="yA7Zo" value="1" />
+            </node>
+            <node concept="yA7Z4" id="1mGeVcVGsje" role="2yv1D_">
+              <property role="yA7Zo" value="2" />
+            </node>
+            <node concept="yA7Z4" id="1mGeVcVGsjr" role="2yv1D_">
+              <property role="yA7Zo" value="3" />
+            </node>
+            <node concept="yA7Z4" id="1mGeVcVGsjE" role="2yv1D_">
+              <property role="yA7Zo" value="4" />
+            </node>
+          </node>
+        </node>
+        <node concept="1kHs8n" id="1mGeVcVGsml" role="2cssZA">
+          <property role="TrG5h" value="nary_multiply" />
+          <node concept="2cvBGp" id="1mGeVcVGsmj" role="1kHs7J" />
+          <node concept="IVyfP" id="1mGeVcVGsp9" role="1kHs8a">
+            <node concept="yA7Z4" id="1mGeVcVGspi" role="2yv1D_">
+              <property role="yA7Zo" value="3" />
+            </node>
+            <node concept="yA7Z4" id="1mGeVcVGspt" role="2yv1D_">
+              <property role="yA7Zo" value="4" />
+            </node>
+            <node concept="yA7Z4" id="1mGeVcVGspE" role="2yv1D_">
+              <property role="yA7Zo" value="5" />
+            </node>
+          </node>
+        </node>
         <node concept="2cssZR" id="4AjdlHqjU0U" role="2cssZA" />
         <node concept="1kHs8n" id="RbLMy6d5LZ" role="2cssZA">
           <property role="1kHkrk" value="false" />
