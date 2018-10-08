@@ -25,7 +25,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="9g8w" ref="r:5ed6e5dc-ec13-45f6-960b-a889d781d323(com.mbeddr.core.unittest.messages)" />
+    <import index="9g8w" ref="r:5ed6e5dc-ec13-45f6-960b-a889d781d323(com.mbeddr.core.unittest.runtime)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
@@ -364,6 +364,26 @@
         </node>
       </node>
       <node concept="3cqZAl" id="2qtxOph9s99" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="Bqp3QZZVTR" role="13h7CS">
+      <property role="TrG5h" value="getFailureMessageFormat" />
+      <node concept="3Tm1VV" id="Bqp3QZZVTS" role="1B3o_S" />
+      <node concept="17QB3L" id="Bqp3QZZVYx" role="3clF45" />
+      <node concept="3clFbS" id="Bqp3QZZVTU" role="3clF47">
+        <node concept="3clFbF" id="Bqp3QZZVZm" role="3cqZAp">
+          <node concept="3cpWs3" id="Bqp3R037Pl" role="3clFbG">
+            <node concept="Xl_RD" id="Bqp3QZZVZl" role="3uHU7w">
+              <property role="Xl_RC" value="expected: [%s] but was: [%s]" />
+            </node>
+            <node concept="2OqwBi" id="Bqp3R037PJ" role="3uHU7B">
+              <node concept="13iPFW" id="Bqp3R037PK" role="2Oq$k0" />
+              <node concept="2qgKlT" id="Bqp3R037PL" role="2OqNvi">
+                <ref role="37wK5l" node="Bqp3R02YG9" resolve="getFailureMessagePrefixFormat" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="5so5TTr6S9_" role="13h7CW">
       <node concept="3clFbS" id="5so5TTr6S9A" role="2VODD2" />
@@ -1267,7 +1287,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="4Ru$s7zwmbI" role="13h7CS">
-      <property role="TrG5h" value="getFailMessage" />
+      <property role="TrG5h" value="getFailureMessageFormat" />
       <property role="13i0it" value="true" />
       <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="4Ru$s7zwmbJ" role="1B3o_S" />
@@ -1453,30 +1473,48 @@
       <node concept="3cqZAl" id="4kpZy5QDnvZ" role="3clF45" />
     </node>
     <node concept="13i0hz" id="4Ru$s7zwGAo" role="13h7CS">
-      <property role="TrG5h" value="getFailMessage" />
+      <property role="TrG5h" value="getFailureMessageFormat" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailMessage" />
+      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailureMessageFormat" />
       <node concept="3Tm1VV" id="4Ru$s7zwGAp" role="1B3o_S" />
       <node concept="3clFbS" id="4Ru$s7zwGAs" role="3clF47">
-        <node concept="3clFbF" id="4Ru$s7zwGED" role="3cqZAp">
-          <node concept="3cpWs3" id="4Ru$s7zwIW2" role="3clFbG">
-            <node concept="3cpWs3" id="4Ru$s7zwGEO" role="3uHU7B">
-              <node concept="Xl_RD" id="4Ru$s7zwGEC" role="3uHU7w">
-                <property role="Xl_RC" value=" is not equal to " />
+        <node concept="3clFbF" id="Bqp3QZZo26" role="3cqZAp">
+          <node concept="3cpWs3" id="Bqp3QZZo28" role="3clFbG">
+            <node concept="3cpWs3" id="Bqp3QZZo29" role="3uHU7B">
+              <node concept="3cpWs3" id="Bqp3QZZo2a" role="3uHU7B">
+                <node concept="3cpWs3" id="Bqp3QZZo2b" role="3uHU7B">
+                  <node concept="3cpWs3" id="Bqp3R031Jv" role="3uHU7B">
+                    <node concept="Xl_RD" id="Bqp3QZZo2c" role="3uHU7w">
+                      <property role="Xl_RC" value="expected: == [" />
+                    </node>
+                    <node concept="2OqwBi" id="Bqp3R031Ss" role="3uHU7B">
+                      <node concept="13iPFW" id="Bqp3R031St" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="Bqp3R031Su" role="2OqNvi">
+                        <ref role="37wK5l" node="Bqp3R02YG9" resolve="getFailureMessagePrefixFormat" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="Bqp3QZZo2d" role="3uHU7w">
+                    <node concept="13iPFW" id="Bqp3QZZo2e" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="Bqp3QZZo2f" role="2OqNvi">
+                      <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="Bqp3QZZo2g" role="3uHU7w">
+                  <property role="Xl_RC" value="] but was: [" />
+                </node>
               </node>
-              <node concept="2OqwBi" id="4Ru$s7zyG$G" role="3uHU7B">
-                <node concept="13iPFW" id="4Ru$s7zyG$H" role="2Oq$k0" />
-                <node concept="2qgKlT" id="4Ru$s7zyG$I" role="2OqNvi">
-                  <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+              <node concept="2OqwBi" id="Bqp3QZZo2h" role="3uHU7w">
+                <node concept="13iPFW" id="Bqp3QZZo2i" role="2Oq$k0" />
+                <node concept="2qgKlT" id="Bqp3QZZo2j" role="2OqNvi">
+                  <ref role="37wK5l" node="4Ru$s7zyCiF" resolve="getActualPrintfString" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="4Ru$s7zyGEH" role="3uHU7w">
-              <node concept="13iPFW" id="4Ru$s7zyGEI" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4Ru$s7zyGEJ" role="2OqNvi">
-                <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
-              </node>
+            <node concept="Xl_RD" id="Bqp3QZZo2k" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
             </node>
           </node>
         </node>
@@ -1536,30 +1574,48 @@
       </node>
     </node>
     <node concept="13i0hz" id="4Ru$s7zwLkh" role="13h7CS">
-      <property role="TrG5h" value="getFailMessage" />
+      <property role="TrG5h" value="getFailureMessageFormat" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailMessage" />
+      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailureMessageFormat" />
       <node concept="3Tm1VV" id="4Ru$s7zwLki" role="1B3o_S" />
       <node concept="3clFbS" id="4Ru$s7zwLkl" role="3clF47">
-        <node concept="3clFbF" id="4Ru$s7zwLkI" role="3cqZAp">
-          <node concept="3cpWs3" id="4Ru$s7zwLkJ" role="3clFbG">
-            <node concept="3cpWs3" id="4Ru$s7zwLkK" role="3uHU7B">
-              <node concept="2OqwBi" id="4Ru$s7zyEsW" role="3uHU7B">
-                <node concept="13iPFW" id="4Ru$s7zyEi_" role="2Oq$k0" />
-                <node concept="2qgKlT" id="4Ru$s7zyF3y" role="2OqNvi">
-                  <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+        <node concept="3clFbF" id="Bqp3QZZsB6" role="3cqZAp">
+          <node concept="3cpWs3" id="Bqp3QZZsB8" role="3clFbG">
+            <node concept="3cpWs3" id="Bqp3QZZsB9" role="3uHU7B">
+              <node concept="3cpWs3" id="Bqp3QZZsBa" role="3uHU7B">
+                <node concept="3cpWs3" id="Bqp3QZZsBb" role="3uHU7B">
+                  <node concept="3cpWs3" id="Bqp3R0352_" role="3uHU7B">
+                    <node concept="Xl_RD" id="Bqp3QZZsBc" role="3uHU7w">
+                      <property role="Xl_RC" value="expected: &lt;= [" />
+                    </node>
+                    <node concept="2OqwBi" id="Bqp3R035bd" role="3uHU7B">
+                      <node concept="13iPFW" id="Bqp3R035be" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="Bqp3R035bf" role="2OqNvi">
+                        <ref role="37wK5l" node="Bqp3R02YG9" resolve="getFailureMessagePrefixFormat" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="Bqp3QZZsBd" role="3uHU7w">
+                    <node concept="13iPFW" id="Bqp3QZZsBe" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="Bqp3QZZsBf" role="2OqNvi">
+                      <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="Bqp3QZZsBg" role="3uHU7w">
+                  <property role="Xl_RC" value="] but was: [" />
                 </node>
               </node>
-              <node concept="Xl_RD" id="4Ru$s7zwLkT" role="3uHU7w">
-                <property role="Xl_RC" value=" is not equal to or less than " />
+              <node concept="2OqwBi" id="Bqp3QZZsBh" role="3uHU7w">
+                <node concept="13iPFW" id="Bqp3QZZsBi" role="2Oq$k0" />
+                <node concept="2qgKlT" id="Bqp3QZZsBj" role="2OqNvi">
+                  <ref role="37wK5l" node="4Ru$s7zyCiF" resolve="getActualPrintfString" />
+                </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="4Ru$s7zyF9o" role="3uHU7w">
-              <node concept="13iPFW" id="4Ru$s7zyF9p" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4Ru$s7zyF9q" role="2OqNvi">
-                <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
-              </node>
+            <node concept="Xl_RD" id="Bqp3QZZsBk" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
             </node>
           </node>
         </node>
@@ -1619,30 +1675,48 @@
       </node>
     </node>
     <node concept="13i0hz" id="4Ru$s7zwK2w" role="13h7CS">
-      <property role="TrG5h" value="getFailMessage" />
+      <property role="TrG5h" value="getFailureMessageFormat" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailMessage" />
+      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailureMessageFormat" />
       <node concept="3Tm1VV" id="4Ru$s7zwK2x" role="1B3o_S" />
       <node concept="3clFbS" id="4Ru$s7zwK2$" role="3clF47">
-        <node concept="3clFbF" id="4Ru$s7zwK2X" role="3cqZAp">
-          <node concept="3cpWs3" id="4Ru$s7zwK2Y" role="3clFbG">
-            <node concept="3cpWs3" id="4Ru$s7zwK2Z" role="3uHU7B">
-              <node concept="Xl_RD" id="4Ru$s7zwK38" role="3uHU7w">
-                <property role="Xl_RC" value=" is not equal to or greater than " />
+        <node concept="3clFbF" id="Bqp3QZZq7N" role="3cqZAp">
+          <node concept="3cpWs3" id="Bqp3QZZq7P" role="3clFbG">
+            <node concept="3cpWs3" id="Bqp3QZZq7Q" role="3uHU7B">
+              <node concept="3cpWs3" id="Bqp3QZZq7R" role="3uHU7B">
+                <node concept="3cpWs3" id="Bqp3QZZq7S" role="3uHU7B">
+                  <node concept="3cpWs3" id="Bqp3R032On" role="3uHU7B">
+                    <node concept="Xl_RD" id="Bqp3QZZq7T" role="3uHU7w">
+                      <property role="Xl_RC" value="expected: &gt;= [" />
+                    </node>
+                    <node concept="2OqwBi" id="Bqp3R032WZ" role="3uHU7B">
+                      <node concept="13iPFW" id="Bqp3R032X0" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="Bqp3R032X1" role="2OqNvi">
+                        <ref role="37wK5l" node="Bqp3R02YG9" resolve="getFailureMessagePrefixFormat" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="Bqp3QZZq7U" role="3uHU7w">
+                    <node concept="13iPFW" id="Bqp3QZZq7V" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="Bqp3QZZq7W" role="2OqNvi">
+                      <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="Bqp3QZZq7X" role="3uHU7w">
+                  <property role="Xl_RC" value="] but was: [" />
+                </node>
               </node>
-              <node concept="2OqwBi" id="4Ru$s7zyFyz" role="3uHU7B">
-                <node concept="13iPFW" id="4Ru$s7zyFy$" role="2Oq$k0" />
-                <node concept="2qgKlT" id="4Ru$s7zyFy_" role="2OqNvi">
-                  <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+              <node concept="2OqwBi" id="Bqp3QZZq7Y" role="3uHU7w">
+                <node concept="13iPFW" id="Bqp3QZZq7Z" role="2Oq$k0" />
+                <node concept="2qgKlT" id="Bqp3QZZq80" role="2OqNvi">
+                  <ref role="37wK5l" node="4Ru$s7zyCiF" resolve="getActualPrintfString" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="4Ru$s7zyFCp" role="3uHU7w">
-              <node concept="13iPFW" id="4Ru$s7zyFCq" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4Ru$s7zyFCr" role="2OqNvi">
-                <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
-              </node>
+            <node concept="Xl_RD" id="Bqp3QZZq81" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
             </node>
           </node>
         </node>
@@ -1702,30 +1776,48 @@
       </node>
     </node>
     <node concept="13i0hz" id="4Ru$s7zwKT6" role="13h7CS">
-      <property role="TrG5h" value="getFailMessage" />
+      <property role="TrG5h" value="getFailureMessageFormat" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailMessage" />
+      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailureMessageFormat" />
       <node concept="3Tm1VV" id="4Ru$s7zwKT7" role="1B3o_S" />
       <node concept="3clFbS" id="4Ru$s7zwKTa" role="3clF47">
-        <node concept="3clFbF" id="4Ru$s7zwKTz" role="3cqZAp">
-          <node concept="3cpWs3" id="4Ru$s7zwKT$" role="3clFbG">
-            <node concept="3cpWs3" id="4Ru$s7zwKT_" role="3uHU7B">
-              <node concept="Xl_RD" id="4Ru$s7zwKTI" role="3uHU7w">
-                <property role="Xl_RC" value=" is not less than " />
+        <node concept="3clFbF" id="Bqp3QZZrBh" role="3cqZAp">
+          <node concept="3cpWs3" id="Bqp3QZZrBj" role="3clFbG">
+            <node concept="3cpWs3" id="Bqp3QZZrBk" role="3uHU7B">
+              <node concept="3cpWs3" id="Bqp3QZZrBl" role="3uHU7B">
+                <node concept="3cpWs3" id="Bqp3QZZrBm" role="3uHU7B">
+                  <node concept="3cpWs3" id="Bqp3R03473" role="3uHU7B">
+                    <node concept="Xl_RD" id="Bqp3QZZrBn" role="3uHU7w">
+                      <property role="Xl_RC" value="expected: &lt; [" />
+                    </node>
+                    <node concept="2OqwBi" id="Bqp3R0347e" role="3uHU7B">
+                      <node concept="13iPFW" id="Bqp3R0347f" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="Bqp3R0347g" role="2OqNvi">
+                        <ref role="37wK5l" node="Bqp3R02YG9" resolve="getFailureMessagePrefixFormat" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="Bqp3QZZrBo" role="3uHU7w">
+                    <node concept="13iPFW" id="Bqp3QZZrBp" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="Bqp3QZZrBq" role="2OqNvi">
+                      <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="Bqp3QZZrBr" role="3uHU7w">
+                  <property role="Xl_RC" value="] but was: [" />
+                </node>
               </node>
-              <node concept="2OqwBi" id="4Ru$s7zyFjl" role="3uHU7B">
-                <node concept="13iPFW" id="4Ru$s7zyFjm" role="2Oq$k0" />
-                <node concept="2qgKlT" id="4Ru$s7zyFjn" role="2OqNvi">
-                  <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+              <node concept="2OqwBi" id="Bqp3QZZrBs" role="3uHU7w">
+                <node concept="13iPFW" id="Bqp3QZZrBt" role="2Oq$k0" />
+                <node concept="2qgKlT" id="Bqp3QZZrBu" role="2OqNvi">
+                  <ref role="37wK5l" node="4Ru$s7zyCiF" resolve="getActualPrintfString" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="4Ru$s7zyFpb" role="3uHU7w">
-              <node concept="13iPFW" id="4Ru$s7zyFpc" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4Ru$s7zyFpd" role="2OqNvi">
-                <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
-              </node>
+            <node concept="Xl_RD" id="Bqp3QZZrBv" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
             </node>
           </node>
         </node>
@@ -1785,30 +1877,48 @@
       </node>
     </node>
     <node concept="13i0hz" id="4Ru$s7zwM7P" role="13h7CS">
-      <property role="TrG5h" value="getFailMessage" />
+      <property role="TrG5h" value="getFailureMessageFormat" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailMessage" />
+      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailureMessageFormat" />
       <node concept="3Tm1VV" id="4Ru$s7zwM7Q" role="1B3o_S" />
       <node concept="3clFbS" id="4Ru$s7zwM7T" role="3clF47">
-        <node concept="3clFbF" id="4Ru$s7zwM8i" role="3cqZAp">
-          <node concept="3cpWs3" id="4Ru$s7zwM8j" role="3clFbG">
-            <node concept="3cpWs3" id="4Ru$s7zwM8k" role="3uHU7B">
-              <node concept="Xl_RD" id="4Ru$s7zwM8t" role="3uHU7w">
-                <property role="Xl_RC" value=" is equal to " />
+        <node concept="3clFbF" id="Bqp3QZZtWl" role="3cqZAp">
+          <node concept="3cpWs3" id="Bqp3QZZtWn" role="3clFbG">
+            <node concept="3cpWs3" id="Bqp3QZZtWo" role="3uHU7B">
+              <node concept="3cpWs3" id="Bqp3QZZtWp" role="3uHU7B">
+                <node concept="3cpWs3" id="Bqp3QZZtWq" role="3uHU7B">
+                  <node concept="3cpWs3" id="Bqp3R0366_" role="3uHU7B">
+                    <node concept="Xl_RD" id="Bqp3QZZtWr" role="3uHU7w">
+                      <property role="Xl_RC" value="expected: != [" />
+                    </node>
+                    <node concept="2OqwBi" id="Bqp3R036fd" role="3uHU7B">
+                      <node concept="13iPFW" id="Bqp3R036fe" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="Bqp3R036ff" role="2OqNvi">
+                        <ref role="37wK5l" node="Bqp3R02YG9" resolve="getFailureMessagePrefixFormat" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="Bqp3QZZtWs" role="3uHU7w">
+                    <node concept="13iPFW" id="Bqp3QZZtWt" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="Bqp3QZZtWu" role="2OqNvi">
+                      <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="Bqp3QZZtWv" role="3uHU7w">
+                  <property role="Xl_RC" value="] but was: [" />
+                </node>
               </node>
-              <node concept="2OqwBi" id="4Ru$s7zyG4w" role="3uHU7B">
-                <node concept="13iPFW" id="4Ru$s7zyG4x" role="2Oq$k0" />
-                <node concept="2qgKlT" id="4Ru$s7zyG4y" role="2OqNvi">
-                  <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+              <node concept="2OqwBi" id="Bqp3QZZtWw" role="3uHU7w">
+                <node concept="13iPFW" id="Bqp3QZZtWx" role="2Oq$k0" />
+                <node concept="2qgKlT" id="Bqp3QZZtWy" role="2OqNvi">
+                  <ref role="37wK5l" node="4Ru$s7zyCiF" resolve="getActualPrintfString" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="4Ru$s7zyGam" role="3uHU7w">
-              <node concept="13iPFW" id="4Ru$s7zyGan" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4Ru$s7zyGao" role="2OqNvi">
-                <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
-              </node>
+            <node concept="Xl_RD" id="Bqp3QZZtWz" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
             </node>
           </node>
         </node>
@@ -1868,30 +1978,48 @@
       </node>
     </node>
     <node concept="13i0hz" id="4Ru$s7zwJaB" role="13h7CS">
-      <property role="TrG5h" value="getFailMessage" />
+      <property role="TrG5h" value="getFailureMessageFormat" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailMessage" />
+      <ref role="13i0hy" node="4Ru$s7zwmbI" resolve="getFailureMessageFormat" />
       <node concept="3Tm1VV" id="4Ru$s7zwJaC" role="1B3o_S" />
       <node concept="3clFbS" id="4Ru$s7zwJaF" role="3clF47">
-        <node concept="3clFbF" id="4Ru$s7zwJb4" role="3cqZAp">
-          <node concept="3cpWs3" id="4Ru$s7zwJb5" role="3clFbG">
-            <node concept="3cpWs3" id="4Ru$s7zwJb6" role="3uHU7B">
-              <node concept="Xl_RD" id="4Ru$s7zwJbf" role="3uHU7w">
-                <property role="Xl_RC" value=" is not greater than " />
+        <node concept="3clFbF" id="Bqp3QZZjER" role="3cqZAp">
+          <node concept="3cpWs3" id="Bqp3QZZlpK" role="3clFbG">
+            <node concept="3cpWs3" id="Bqp3QZZkQ8" role="3uHU7B">
+              <node concept="3cpWs3" id="Bqp3QZZkeu" role="3uHU7B">
+                <node concept="3cpWs3" id="Bqp3QZZjX0" role="3uHU7B">
+                  <node concept="3cpWs3" id="Bqp3R02YZP" role="3uHU7B">
+                    <node concept="2OqwBi" id="Bqp3R02ZBf" role="3uHU7B">
+                      <node concept="13iPFW" id="Bqp3R02Z8t" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="Bqp3R030RG" role="2OqNvi">
+                        <ref role="37wK5l" node="Bqp3R02YG9" resolve="getFailureMessagePrefixFormat" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="Bqp3QZZjX6" role="3uHU7w">
+                      <property role="Xl_RC" value="expected: &gt; [" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="Bqp3QZZkwR" role="3uHU7w">
+                    <node concept="13iPFW" id="Bqp3QZZkwS" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="Bqp3QZZkwT" role="2OqNvi">
+                      <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="Bqp3QZZkQe" role="3uHU7w">
+                  <property role="Xl_RC" value="] but was: [" />
+                </node>
               </node>
-              <node concept="2OqwBi" id="4Ru$s7zyGjI" role="3uHU7B">
-                <node concept="13iPFW" id="4Ru$s7zyGjJ" role="2Oq$k0" />
-                <node concept="2qgKlT" id="4Ru$s7zyGjK" role="2OqNvi">
-                  <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
+              <node concept="2OqwBi" id="Bqp3QZZlTG" role="3uHU7w">
+                <node concept="13iPFW" id="Bqp3QZZlTH" role="2Oq$k0" />
+                <node concept="2qgKlT" id="Bqp3QZZmJ8" role="2OqNvi">
+                  <ref role="37wK5l" node="4Ru$s7zyCiF" resolve="getActualPrintfString" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="4Ru$s7zyGp$" role="3uHU7w">
-              <node concept="13iPFW" id="4Ru$s7zyGp_" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4Ru$s7zyGpA" role="2OqNvi">
-                <ref role="37wK5l" node="4Ru$s7zyCd5" resolve="getExpectedPrintfString" />
-              </node>
+            <node concept="Xl_RD" id="Bqp3QZZlpS" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
             </node>
           </node>
         </node>
@@ -2103,6 +2231,18 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="Bqp3R02YG9" role="13h7CS">
+      <property role="TrG5h" value="getFailureMessagePrefixFormat" />
+      <node concept="3Tm1VV" id="Bqp3R02YGa" role="1B3o_S" />
+      <node concept="17QB3L" id="Bqp3R02YGP" role="3clF45" />
+      <node concept="3clFbS" id="Bqp3R02YGc" role="3clF47">
+        <node concept="3clFbF" id="Bqp3R02YHM" role="3cqZAp">
+          <node concept="Xl_RD" id="Bqp3R02YHL" role="3clFbG">
+            <property role="Xl_RC" value="%s failure (id: %d): " />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="3IOp39i06Jm" role="13h7CW">
       <node concept="3clFbS" id="3IOp39i06Jn" role="2VODD2" />
     </node>
@@ -2262,7 +2402,7 @@
                     <node concept="3cpWs3" id="38aMGlggmhI" role="3uHU7B">
                       <node concept="2OqwBi" id="38aMGlggkUE" role="3uHU7B">
                         <node concept="3B5_sB" id="38aMGlggkCQ" role="2Oq$k0">
-                          <ref role="3B5MYn" to="9g8w:44MAav6Nkc" resolve="Unittest_Helper_NonIsolated" />
+                          <ref role="3B5MYn" to="9g8w:44MAav6Nkc" resolve="UnitTestHelper_NonIsolated" />
                         </node>
                         <node concept="3TrcHB" id="38aMGlgglMY" role="2OqNvi">
                           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -3068,7 +3208,7 @@
                     <node concept="3cpWs3" id="38aMGlgozjH" role="3uHU7B">
                       <node concept="2OqwBi" id="38aMGlgozjI" role="3uHU7B">
                         <node concept="3B5_sB" id="38aMGlgozjJ" role="2Oq$k0">
-                          <ref role="3B5MYn" to="9g8w:44MAav6Nkc" resolve="Unittest_Helper_NonIsolated" />
+                          <ref role="3B5MYn" to="9g8w:44MAav6Nkc" resolve="UnitTestHelper_NonIsolated" />
                         </node>
                         <node concept="3TrcHB" id="38aMGlgozjK" role="2OqNvi">
                           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
