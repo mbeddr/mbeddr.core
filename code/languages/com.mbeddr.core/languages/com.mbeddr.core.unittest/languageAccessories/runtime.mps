@@ -151,6 +151,9 @@
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
@@ -2588,9 +2591,18 @@
                     <node concept="3XISUE" id="Bqp3R0llks" role="3XIRFZ" />
                     <node concept="1_9egQ" id="4DjlAm4M8Kv" role="3XIRFZ">
                       <node concept="3O_q_g" id="4DjlAm4M8Ku" role="1_9egR">
-                        <ref role="3O_q_h" to="3y0n:1fAuj8Twc4w" resolve="exit" />
+                        <ref role="3O_q_h" to="ml7g:6LsWDiKmfGy" resolve="_exit" />
                         <node concept="3ZVu4v" id="3t4TFam3jOH" role="3O_q_j">
                           <ref role="3ZVs_2" node="3t4TFam3jMf" resolve="test_result" />
+                        </node>
+                      </node>
+                      <node concept="1z9TsT" id="Bqp3R0B8Sw" role="lGtFl">
+                        <node concept="OjmMv" id="Bqp3R0B8Sx" role="1w35rA">
+                          <node concept="19SGf9" id="Bqp3R0B8Sy" role="OjmMu">
+                            <node concept="19SUe$" id="Bqp3R0B8Sz" role="19SJt6">
+                              <property role="19SUeA" value="!! Important Note !!! Don't call exit() instead of _exit() to avoid flushing fully buffered streams (e.g., suite_result_file) by both the parent and the child process. Otherwise, data that has already been output to the stream by is still being buffered (e.g., the XML processing instruction and the opening testsuite tag) gets written out to the underlying file twice (see https://www.gnu.org/software/libc/manual/html_node/Process-Creation-Example.html for details)" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3150,6 +3162,34 @@
                             <ref role="1S7826" node="2PyooRI5lAR" resolve="suite_result_file" />
                           </node>
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gg_gk" id="Bqp3R0B5Bn" role="gg_kh">
+                    <node concept="3XIRFW" id="Bqp3R0B5Bo" role="gg_gl">
+                      <node concept="1_9egQ" id="Bqp3R0B7eB" role="3XIRFZ">
+                        <node concept="3O_q_g" id="Bqp3R0B7eC" role="1_9egR">
+                          <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+                          <node concept="PhEJO" id="Bqp3R0B7eD" role="3O_q_j">
+                            <property role="PhEJT" value="ERROR: Failed to create child process for running '%s'!\n" />
+                          </node>
+                          <node concept="2qmXGp" id="Bqp3R0B7mz" role="3O_q_j">
+                            <node concept="1E4Tgc" id="Bqp3R0B7rB" role="1ESnxz">
+                              <ref role="1E4Tge" node="4DjlAm4JTFY" resolve="name" />
+                            </node>
+                            <node concept="3ZVu4v" id="Bqp3R0B7lD" role="1_9fRO">
+                              <ref role="3ZVs_2" node="7nMAuIoOSwS" resolve="suite" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3Tl9Jn" id="Bqp3R0B5GC" role="gg_gt">
+                      <node concept="3TlMh9" id="Bqp3R0B5GI" role="3TlMhJ">
+                        <property role="2hmy$m" value="0" />
+                      </node>
+                      <node concept="3ZVu4v" id="Bqp3R0B5Gh" role="3TlMhI">
+                        <ref role="3ZVs_2" node="4DjlAm4M58X" resolve="pid" />
                       </node>
                     </node>
                   </node>
