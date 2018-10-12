@@ -4,7 +4,7 @@
   <languages>
     <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
     <use id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -37,6 +37,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
+      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
@@ -54,6 +55,7 @@
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
       <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
       <concept id="4208238404723595132" name="com.mbeddr.doc.structure.UrlFormattedText" flags="ng" index="1hOBRO" />
@@ -89,16 +91,12 @@
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty_old" index="3kgbRO" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile_old" index="1RwFax" />
-      </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpW">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRP" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFay" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage">
@@ -114,24 +112,11 @@
       </concept>
     </language>
   </registry>
-  <node concept="2SbYGP" id="UK_oBpA4O0">
-    <property role="TrG5h" value="DocumentConfig" />
-    <property role="3GE5qa" value="document" />
-    <node concept="2SbYGw" id="UK_oBpA4O1" role="Cbewh">
-      <property role="TrG5h" value="tmp" />
-      <node concept="9PVaO" id="UK_oBpA4O2" role="9PVG_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="UK_oBpA4NZ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="SampleDocument" />
     <property role="3GE5qa" value="document" />
-    <ref role="G9hjw" node="UK_oBpA4O0" resolve="DocumentConfig" />
+    <ref role="G9hjw" node="5CkU_dHcLvS" resolve="DocumentConfig" />
     <node concept="1mvXsy" id="UK_oBpA4O3" role="1_0VJ0">
       <property role="TrG5h" value="ConceptDocChapter" />
       <property role="1_0VJr" value="Concept documentation" />
@@ -305,7 +290,7 @@
     <property role="yApLE" value="1" />
     <property role="3GE5qa" value="document" />
     <property role="TrG5h" value="AnotherDoc" />
-    <ref role="G9hjw" node="UK_oBpA4O0" resolve="DocumentConfig" />
+    <ref role="G9hjw" node="5CkU_dHcLvS" resolve="DocumentConfig" />
     <node concept="1_0VNX" id="4jXS_uRroBW" role="1_0VJ0">
       <property role="TrG5h" value="Section" />
       <property role="1_0VJr" value="AnotherChild" />
@@ -326,7 +311,7 @@
         </node>
         <node concept="2Sb_l4" id="YJrcxt4Nvk" role="2SbwM5">
           <property role="2Sb_kV" value="images\20141103_142727.jpg" />
-          <ref role="2Sb_kU" node="UK_oBpA4O1" resolve="tmp" />
+          <ref role="2Sb_kU" node="5CkU_dHcLvT" resolve="tmp" />
         </node>
         <node concept="3SG1Pu" id="YJrcxt4Ogw" role="3SHJ_F">
           <property role="3SG1Pv" value="10" />
@@ -334,6 +319,23 @@
       </node>
       <node concept="3n9NSn" id="4jXS_uRroC5" role="lGtFl">
         <ref role="3nadW_" to="hauh:4jXS_uRrhkX" resolve="AnotherChild" />
+      </node>
+    </node>
+  </node>
+  <node concept="2SbYGP" id="5CkU_dHcLvS">
+    <property role="3GE5qa" value="document" />
+    <property role="TrG5h" value="DocumentConfig" />
+    <node concept="2SbYGw" id="5CkU_dHcLvT" role="Cbewh">
+      <property role="TrG5h" value="tmp" />
+      <node concept="9PVaO" id="5CkU_dHcLvU" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+      </node>
+    </node>
+    <node concept="A7cYH" id="5V9QM6omahc" role="A10yx">
+      <node concept="9PVaO" id="5V9QM6omahd" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
   </node>

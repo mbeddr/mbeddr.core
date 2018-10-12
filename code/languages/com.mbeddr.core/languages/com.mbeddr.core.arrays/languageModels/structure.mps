@@ -2,8 +2,8 @@
 <model ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
@@ -75,8 +75,11 @@
     <node concept="PrWs8" id="3TE6JCmbIko" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7FQByU3C_31" resolve="IComparable" />
     </node>
-    <node concept="PrWs8" id="5TQ2lpzyJGI" role="PzmwI">
+    <node concept="PrWs8" id="4$HG0yYb5ks" role="PzmwI">
       <ref role="PrY4T" to="mj1l:6mfXVgRsmwb" resolve="IVoidTypeContainer" />
+    </node>
+    <node concept="PrWs8" id="4$HG0yY9G74" role="PzmwI">
+      <ref role="PrY4T" node="4$HG0yY9G70" resolve="INullableType" />
     </node>
     <node concept="PrWs8" id="35tTzla8GLv" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7oVAz7YD2vL" resolve="IChildrenResolver" />
@@ -181,8 +184,9 @@
   <node concept="1TIwiD" id="$mHaGow4hS">
     <property role="3GE5qa" value="pointers" />
     <property role="TrG5h" value="NullType" />
-    <property role="R4oN_" value="type for the null pointer" />
+    <property role="R4oN_" value="type for the NULL pointer" />
     <property role="EcuMT" value="654909442772452472" />
+    <property role="34LRSv" value="NULL" />
     <ref role="1TJDcQ" node="fwMInzpHoK" resolve="PointerType" />
     <node concept="PrWs8" id="7JMgLzaZB8j" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -273,6 +277,16 @@
     <property role="3GE5qa" value="arrays" />
     <property role="TrG5h" value="ISpecialArrayTypeOperationContext" />
     <property role="EcuMT" value="3496159422239377518" />
+  </node>
+  <node concept="PlHQZ" id="VrCF7yRrMK">
+    <property role="EcuMT" value="1070628221329718448" />
+    <property role="3GE5qa" value="arrays" />
+    <property role="TrG5h" value="IDoNotRequireStaticallyEvaluatableSize" />
+  </node>
+  <node concept="PlHQZ" id="4$HG0yY9G70">
+    <property role="EcuMT" value="5273064290317156800" />
+    <property role="3GE5qa" value="pointers" />
+    <property role="TrG5h" value="INullableType" />
   </node>
 </model>
 

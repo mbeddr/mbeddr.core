@@ -4,16 +4,16 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="4" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core" version="0" />
-    <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
+    <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -73,6 +73,7 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
@@ -88,6 +89,10 @@
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -133,7 +138,7 @@
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
         <child id="3246959727582077262" name="externalFiles" index="1Byen_" />
       </concept>
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
@@ -158,9 +163,7 @@
       <concept id="6307143892175831839" name="com.mbeddr.core.util.structure.IsInRangeExpression" flags="ng" index="1vVjFF" />
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
-      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK">
-        <child id="6116558314501347862" name="original" index="rcJHR" />
-      </concept>
+      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK" />
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
@@ -199,11 +202,6 @@
         <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty_old" index="3kgbRO" />
-        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile_old" index="1RwFax" />
-      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
@@ -233,6 +231,9 @@
       </concept>
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
+      </concept>
+      <concept id="7713191144372389655" name="com.mbeddr.core.modules.structure.ITypeDef" flags="ng" index="2I2SlH">
+        <child id="6116558314501347862" name="original" index="rcJHR" />
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
@@ -266,9 +267,10 @@
       </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpW">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRP" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFay" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
       <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
@@ -279,6 +281,7 @@
       </concept>
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
+      <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
       <concept id="5098456557381295183" name="com.mbeddr.ext.math.structure.AbsExpression" flags="ng" index="2zI4tQ">
         <child id="5098456557381295267" name="expression" index="2zI4uq" />
       </concept>
@@ -4078,9 +4081,7 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="ogNGNPpGEU" resolve="_081_avlVerificationCase" />
-      <node concept="3NXOOs" id="7Syd$1MeYlK" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="3NXOOs" id="7zMit0CeQE7" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_c_files/avl-tree.c" />
@@ -4094,12 +4095,26 @@
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
+      <node concept="3abb7c" id="7fmKiPEtW$t" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtW$u" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtW$v" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtW$w" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="7Syd$1MeUl6" role="2Q9xDr">
       <node concept="2Q9FjX" id="7Syd$1MeUl7" role="2Q9FjI" />
     </node>
+    <node concept="22RD12" id="1SbcsMAqnqj" role="2Q9xDr" />
     <node concept="29Nb31" id="7Syd$1MeUlc" role="2ePNbc">
       <property role="TrG5h" value="lib" />
+      <ref role="3oK8_y" node="7fmKiPEtW$w" resolve="portable" />
       <node concept="2v9HqM" id="ogNGNPr4pi" role="2eOfOg">
         <ref role="2v9HqP" node="ogNGNPpGEb" resolve="_081_avl_external_c_code_harness" />
       </node>
@@ -4117,6 +4132,12 @@
       </node>
       <node concept="2v9HqM" id="3RK4Y9HHsJ2" role="2eOfOg">
         <ref role="2v9HqP" node="3RK4Y9HHmDd" resolve="_080_avl_base" />
+      </node>
+      <node concept="2v9HqM" id="1SbcsMAp7uG" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
+      </node>
+      <node concept="2v9HqM" id="1SbcsMAp7uH" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
       </node>
     </node>
   </node>

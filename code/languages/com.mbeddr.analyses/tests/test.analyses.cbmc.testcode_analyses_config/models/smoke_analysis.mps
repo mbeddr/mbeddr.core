@@ -46,6 +46,7 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
@@ -62,6 +63,10 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -78,6 +83,7 @@
         <property id="4053481679317021370" name="check_signed_overflow" index="1nvAUA" />
         <property id="4053481679317021371" name="check_unsigned_overflow" index="1nvAUB" />
         <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
+        <property id="7634619718342724140" name="check_conversion" index="1UWlg3" />
       </concept>
       <concept id="4053481679317021363" name="com.mbeddr.analyses.cbmc.core.structure.AssertionsCBMCAnalysis" flags="ng" index="1nvAUJ" />
     </language>
@@ -97,7 +103,7 @@
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
@@ -166,6 +172,7 @@
   <node concept="2v9HqL" id="5BkFC2yhuuS">
     <node concept="29Nb31" id="5BkFC2yhuxF" role="2ePNbc">
       <property role="TrG5h" value="lib" />
+      <ref role="3oK8_y" node="7fmKiPEtWCC" resolve="portable" />
       <node concept="2v9HqM" id="5BkFC2yhuxH" role="2eOfOg">
         <ref role="2v9HqP" to="4ysy:5BkFC2yhuuT" resolve="components" />
       </node>
@@ -192,6 +199,18 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
+      <node concept="3abb7c" id="7fmKiPEtWC_" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWCA" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWCB" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWCC" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="5BkFC2yj6BT" role="2Q9xDr">
       <node concept="2Q9FjX" id="5BkFC2yj6BU" role="2Q9FjI" />
@@ -279,6 +298,7 @@
       <property role="1nvAUB" value="true" />
       <property role="2o64iB" value="true" />
       <property role="2lUGe1" value="true" />
+      <property role="1UWlg3" value="true" />
       <ref role="3V$Cn$" to="4ysy:3f3CxMduaan" resolve="robustnessEntry" />
     </node>
     <node concept="1X3_iC" id="6P_afAIpMT5" role="lGtFl">

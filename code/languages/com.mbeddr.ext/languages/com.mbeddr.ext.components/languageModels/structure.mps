@@ -2,8 +2,8 @@
 <model ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -16,7 +16,7 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
-    <import index="878o" ref="r:46fddec3-0db9-4b86-8274-957463dd4499(com.mbeddr.mpsutil.grammarcells.runtimelang.structure)" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -43,6 +43,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -313,6 +314,16 @@
       <property role="IQ2nx" value="6165117700225770773" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="36Bkyc49pe4" role="1TKVEl">
+      <property role="TrG5h" value="mandatory" />
+      <property role="IQ2nx" value="3577918739316052868" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="2cSPe2KM0zi" role="1TKVEl">
+      <property role="TrG5h" value="hidden" />
+      <property role="IQ2nx" value="2538012451526936786" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="7JjETeGbFPQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="componentRestriction" />
@@ -495,10 +506,9 @@
   <node concept="1TIwiD" id="3TmmsQkDdTQ">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="ComponentInstance" />
-    <property role="34LRSv" value="instance" />
-    <property role="R4oN_" value="instance of component" />
+    <property role="34LRSv" value="component instance" />
     <property role="EcuMT" value="4491876417845649014" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4eOUFnckyAm" resolve="AbstractInstance" />
     <node concept="1TJgyj" id="F_QT7XsuBZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="initializers" />
@@ -538,23 +548,23 @@
   <node concept="1TIwiD" id="3TmmsQkDdTS">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="AssemblyConnector" />
-    <property role="R4oN_" value="connector between ports" />
+    <property role="R4oN_" value="connector between component ports" />
     <property role="34LRSv" value="connect" />
     <property role="EcuMT" value="4491876417845649016" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6uK35z6bLLf" resolve="AbstractConnector" />
     <node concept="1TJgyj" id="3TmmsQkDdTW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="source" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="4491876417845649020" />
-      <ref role="20lvS9" node="3TmmsQkDdTT" resolve="InstancePortRef" />
+      <ref role="20lvS9" node="3TmmsQkDdTT" resolve="ComponentPortRef" />
     </node>
     <node concept="1TJgyj" id="3TmmsQkDdTX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="4491876417845649021" />
-      <ref role="20lvS9" node="3TmmsQkDdTT" resolve="InstancePortRef" />
+      <ref role="20lvS9" node="3TmmsQkDdTT" resolve="ComponentPortRef" />
     </node>
     <node concept="PrWs8" id="5fn4FV$bX6a" role="PzmwI">
       <ref role="PrY4T" node="5fn4FV$bX67" resolve="InstanceConfigContents" />
@@ -568,10 +578,10 @@
   </node>
   <node concept="1TIwiD" id="3TmmsQkDdTT">
     <property role="3GE5qa" value="comp.instances.portref" />
-    <property role="TrG5h" value="InstancePortRef" />
+    <property role="TrG5h" value="ComponentPortRef" />
     <property role="R4oN_" value="--" />
     <property role="EcuMT" value="4491876417845649017" />
-    <ref role="1TJDcQ" node="2ZeMBoiZnWl" resolve="PortRef" />
+    <ref role="1TJDcQ" node="2ZeMBoiZnWl" resolve="AbstractPortRef" />
     <node concept="1TJgyj" id="3TmmsQkDdTU" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="instance" />
@@ -709,6 +719,9 @@
     </node>
     <node concept="PrWs8" id="j_pDIZyT7O" role="PzmwI">
       <ref role="PrY4T" to="clbe:IPRL99KNBH" resolve="ICanReferToValueStructure" />
+    </node>
+    <node concept="PrWs8" id="2JQfpiy2xVk" role="PzmwI">
+      <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="INullableType" />
     </node>
   </node>
   <node concept="1TIwiD" id="71UKpntoo85">
@@ -1530,7 +1543,7 @@
   </node>
   <node concept="1TIwiD" id="2ZeMBoiZnWl">
     <property role="3GE5qa" value="comp.instances.portref" />
-    <property role="TrG5h" value="PortRef" />
+    <property role="TrG5h" value="AbstractPortRef" />
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="3444913373458562837" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1539,7 +1552,7 @@
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="DummyCompRef" />
     <property role="EcuMT" value="9141254329931900474" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2IZ2bWrC4_N" resolve="AbstractDummyRef" />
     <node concept="1TJgyj" id="7VsgA5L5UoV" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="component" />
@@ -2014,6 +2027,30 @@
     <node concept="PrWs8" id="4WC4fmOGKSf" role="PzmwI">
       <ref role="PrY4T" node="4WC4fmOFhOS" resolve="AbstractDataElementRefTarget" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6uK35z6bLLf">
+    <property role="EcuMT" value="7471485357229284431" />
+    <property role="3GE5qa" value="comp.instances" />
+    <property role="TrG5h" value="AbstractConnector" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4eOUFnckyAm">
+    <property role="EcuMT" value="4878782362887006614" />
+    <property role="3GE5qa" value="comp.instances" />
+    <property role="TrG5h" value="AbstractInstance" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2IZ2bWrC4_N">
+    <property role="EcuMT" value="3152247881077901683" />
+    <property role="3GE5qa" value="comp.instances" />
+    <property role="TrG5h" value="AbstractDummyRef" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

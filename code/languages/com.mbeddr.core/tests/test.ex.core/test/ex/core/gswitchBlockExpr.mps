@@ -40,6 +40,7 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
@@ -58,6 +59,10 @@
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -919,16 +924,10 @@
     </node>
   </node>
   <node concept="2v9HqL" id="6IBKEH6m2zM">
-    <node concept="2AWWZL" id="6IBKEH6m2zP" role="2AWWZH">
-      <property role="2AWWZJ" value="gcc" />
-      <property role="3r8Kw1" value="gdb" />
-      <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99" />
-      <property role="1FkSt$" value="-g" />
-    </node>
     <node concept="2eOfOl" id="6IBKEH6m2zS" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="tests" />
+      <ref role="3oK8_y" node="4LhGMnjfi6a" resolve="portable" />
       <node concept="2v9HqM" id="6IBKEH6m2zU" role="2eOfOg">
         <ref role="2v9HqP" node="6IBKEH6lZxJ" resolve="Tests" />
       </node>
@@ -938,6 +937,25 @@
     </node>
     <node concept="2Q9Fgs" id="6IBKEH6m8po" role="2Q9xDr">
       <node concept="2Q9FjX" id="6IBKEH6m8pp" role="2Q9FjI" />
+    </node>
+    <node concept="2AWWZL" id="4LhGMnjfi66" role="2AWWZH">
+      <property role="2AWWZJ" value="gcc" />
+      <property role="3r8Kw1" value="gdb" />
+      <property role="3r8Kxs" value="make" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
+      <node concept="3abb7c" id="4LhGMnjfi67" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjfi68" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjfi69" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjfi6a" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
   </node>
 </model>

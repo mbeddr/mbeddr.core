@@ -2,7 +2,7 @@
 <model ref="r:a60cca70-c992-4a4a-818f-94b8f8060648(com.mbeddr.ext.components.units.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -130,8 +130,8 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -235,7 +235,7 @@
                 <ref role="3cqZAo" node="6Nnssju1y$Z" resolve="instance" />
               </node>
               <node concept="3TrEf2" id="qWsmfOQmpD" role="2OqNvi">
-                <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" />
+                <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" resolve="component" />
               </node>
             </node>
           </node>
@@ -297,7 +297,7 @@
                     <ref role="2Gs0qQ" node="qWsmfOQgCY" resolve="port" />
                   </node>
                   <node concept="3TrEf2" id="qWsmfOQgD5" role="2OqNvi">
-                    <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" />
+                    <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" resolve="intf" />
                   </node>
                 </node>
               </node>
@@ -333,7 +333,7 @@
                           <ref role="3cqZAo" node="qWsmfOQgD7" resolve="attribute" />
                         </node>
                         <node concept="3Tsc0h" id="qWsmfOQgDl" role="2OqNvi">
-                          <ref role="3TtcxE" to="qlb5:49YGTZdUaDI" />
+                          <ref role="3TtcxE" to="qlb5:49YGTZdUaDI" resolve="units" />
                         </node>
                       </node>
                     </node>
@@ -351,7 +351,7 @@
           <node concept="2OqwBi" id="qWsmfOQgDp" role="2GsD0m">
             <node concept="2OqwBi" id="qWsmfOQgDq" role="2Oq$k0">
               <node concept="3Tsc0h" id="qWsmfOQgDu" role="2OqNvi">
-                <ref role="3TtcxE" to="v7ag:5fn4FV$9N5o" />
+                <ref role="3TtcxE" to="v7ag:5fn4FV$9N5o" resolve="contents" />
               </node>
               <node concept="37vLTw" id="qWsmfOQoH7" role="2Oq$k0">
                 <ref role="3cqZAo" node="qWsmfOQg_u" resolve="component" />
@@ -400,7 +400,7 @@
                 <ref role="3cqZAo" node="brG9xosITT" resolve="expression" />
               </node>
               <node concept="3TrEf2" id="qWsmfOSOGN" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
               </node>
             </node>
           </node>
@@ -416,17 +416,19 @@
                 <node concept="2OqwBi" id="qWsmfOSOGT" role="33vP2m">
                   <node concept="2OqwBi" id="qWsmfOSOGU" role="2Oq$k0">
                     <node concept="1PxgMI" id="qWsmfOSOGV" role="2Oq$k0">
-                      <ref role="1m5ApE" to="v7ag:71UKpntog8p" resolve="PortAdapterRefExpr" />
                       <node concept="37vLTw" id="qWsmfOSOGW" role="1m5AlR">
                         <ref role="3cqZAo" node="qWsmfOSOGJ" resolve="operand" />
                       </node>
+                      <node concept="chp4Y" id="79i$vAY78JM" role="3oSUPX">
+                        <ref role="cht4Q" to="v7ag:71UKpntog8p" resolve="PortAdapterRefExpr" />
+                      </node>
                     </node>
                     <node concept="3TrEf2" id="qWsmfOSOGX" role="2OqNvi">
-                      <ref role="3Tt5mk" to="v7ag:71UKpntog8q" />
+                      <ref role="3Tt5mk" to="v7ag:71UKpntog8q" resolve="portAdater" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="qWsmfOSOGY" role="2OqNvi">
-                    <ref role="3Tt5mk" to="v7ag:5JgQ5vqY0yt" />
+                    <ref role="3Tt5mk" to="v7ag:5JgQ5vqY0yt" resolve="portRef" />
                   </node>
                 </node>
               </node>
@@ -443,18 +445,17 @@
                       <ref role="3cqZAo" node="qWsmfOSOGR" resolve="portRef" />
                     </node>
                     <node concept="3TrEf2" id="qWsmfOSOH5" role="2OqNvi">
-                      <ref role="3Tt5mk" to="v7ag:5JgQ5vqXSDR" />
+                      <ref role="3Tt5mk" to="v7ag:5JgQ5vqXSDR" resolve="instance" />
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="qWsmfOSOH6" role="2OqNvi">
-                    <ref role="3TtcxE" to="v7ag:F_QT7XsuBZ" />
+                    <ref role="3TtcxE" to="v7ag:F_QT7XsuBZ" resolve="initializers" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3cpWs6" id="brG9xosJp4" role="3cqZAp">
               <node concept="1PxgMI" id="brG9xosJs7" role="3cqZAk">
-                <ref role="1m5ApE" to="uocg:6NnssjtXJW0" resolve="GenericUnitInitializer" />
                 <node concept="2OqwBi" id="brG9xosJs8" role="1m5AlR">
                   <node concept="37vLTw" id="brG9xosJs9" role="2Oq$k0">
                     <ref role="3cqZAo" node="qWsmfOSOH0" resolve="initializers" />
@@ -481,6 +482,9 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="chp4Y" id="79i$vAY78JP" role="3oSUPX">
+                  <ref role="cht4Q" to="uocg:6NnssjtXJW0" resolve="GenericUnitInitializer" />
                 </node>
               </node>
             </node>
@@ -523,24 +527,25 @@
                   <node concept="2OqwBi" id="1lXGHYdV6AT" role="33vP2m">
                     <node concept="2OqwBi" id="1lXGHYdV6AU" role="2Oq$k0">
                       <node concept="1PxgMI" id="1lXGHYdV6AV" role="2Oq$k0">
-                        <ref role="1m5ApE" to="g88q:4dKKrcEbMGX" resolve="ComponentRefExpr" />
                         <node concept="37vLTw" id="1lXGHYdV6AW" role="1m5AlR">
                           <ref role="3cqZAo" node="qWsmfOSOGJ" resolve="operand" />
                         </node>
+                        <node concept="chp4Y" id="79i$vAY78JN" role="3oSUPX">
+                          <ref role="cht4Q" to="g88q:4dKKrcEbMGX" resolve="ComponentRefExpr" />
+                        </node>
                       </node>
                       <node concept="3TrEf2" id="1lXGHYdV6AX" role="2OqNvi">
-                        <ref role="3Tt5mk" to="g88q:4dKKrcEbMHL" />
+                        <ref role="3Tt5mk" to="g88q:4dKKrcEbMHL" resolve="instance" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="1lXGHYdV6AY" role="2OqNvi">
-                      <ref role="3TtcxE" to="v7ag:F_QT7XsuBZ" />
+                      <ref role="3TtcxE" to="v7ag:F_QT7XsuBZ" resolve="initializers" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="1lXGHYdV8BF" role="3cqZAp">
                 <node concept="1PxgMI" id="1lXGHYdV8BG" role="3cqZAk">
-                  <ref role="1m5ApE" to="uocg:6NnssjtXJW0" resolve="GenericUnitInitializer" />
                   <node concept="2OqwBi" id="1lXGHYdV8BH" role="1m5AlR">
                     <node concept="37vLTw" id="1lXGHYdV8BI" role="2Oq$k0">
                       <ref role="3cqZAo" node="1lXGHYdV6AS" resolve="initializers" />
@@ -567,6 +572,9 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                  <node concept="chp4Y" id="79i$vAY78JT" role="3oSUPX">
+                    <ref role="cht4Q" to="uocg:6NnssjtXJW0" resolve="GenericUnitInitializer" />
                   </node>
                 </node>
               </node>

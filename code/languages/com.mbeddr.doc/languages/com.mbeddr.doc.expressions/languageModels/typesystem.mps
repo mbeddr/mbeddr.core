@@ -2,8 +2,7 @@
 <model ref="r:7d63afe9-9fc3-4991-890c-1008af05d479(com.mbeddr.doc.expressions.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="f87k" ref="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" />
@@ -67,7 +66,7 @@
                 <ref role="1YBMHb" node="4E$PniRKKXR" resolve="r" />
               </node>
               <node concept="3TrEf2" id="4E$PniRKKYM" role="2OqNvi">
-                <ref role="3Tt5mk" to="f87k:4E$PniRKKXI" />
+                <ref role="3Tt5mk" to="f87k:4E$PniRKKXI" resolve="var" />
               </node>
             </node>
           </node>
@@ -97,7 +96,7 @@
                 <ref role="1YBMHb" node="OBJ3$Vuvqv" resolve="eq" />
               </node>
               <node concept="3TrEf2" id="OBJ3$VuvrP" role="2OqNvi">
-                <ref role="3Tt5mk" to="f87k:4E$PniRKKXo" />
+                <ref role="3Tt5mk" to="f87k:4E$PniRKKXo" resolve="rvalue" />
               </node>
             </node>
           </node>
@@ -109,7 +108,7 @@
                 <ref role="1YBMHb" node="OBJ3$Vuvqv" resolve="eq" />
               </node>
               <node concept="3TrEf2" id="OBJ3$VuvqY" role="2OqNvi">
-                <ref role="3Tt5mk" to="f87k:4E$PniRKKXp" />
+                <ref role="3Tt5mk" to="f87k:4E$PniRKKXp" resolve="lvalue" />
               </node>
             </node>
           </node>

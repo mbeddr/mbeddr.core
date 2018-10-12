@@ -2,8 +2,8 @@
 <model ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -73,7 +73,7 @@
   </node>
   <node concept="1TIwiD" id="2gQe_W8E0vC">
     <property role="3GE5qa" value="verification_condition" />
-    <property role="TrG5h" value="BeforePExistsQ" />
+    <property role="TrG5h" value="BeforeQExistsP" />
     <property role="34LRSv" value="before exists" />
     <property role="EcuMT" value="2609337213949315048" />
     <ref role="1TJDcQ" node="6qmmy97ZWGO" resolve="BinaryVerificationCondition" />
@@ -169,6 +169,7 @@
     <property role="3GE5qa" value="statements" />
     <property role="34LRSv" value="assert" />
     <property role="EcuMT" value="6973658835837826905" />
+    <property role="R4oN_" value="a C-level assertion" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="3V3CJZuMSlV" role="PzmwI">
       <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLike" />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -25,6 +25,7 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
@@ -32,6 +33,7 @@
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
       <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
@@ -49,11 +51,11 @@
       </concept>
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
     </language>
-    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker_old" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty_old" index="3kgbRO" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile_old" index="1RwFax" />
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -68,7 +70,7 @@
   <node concept="1_1swa" id="3TrpzyP_Ftq">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="AdditionalDocumentation" />
-    <ref role="G9hjw" node="3TrpzyP_Ftr" resolve="DocConfig" />
+    <ref role="G9hjw" node="5CkU_dHbJMe" resolve="DocConfig" />
     <node concept="1_0VNX" id="lp9ZKwURLT" role="1_0VJ0">
       <property role="TrG5h" value="introSection" />
       <property role="1_0VJr" value="Introduction Section" />
@@ -108,11 +110,17 @@
       </node>
     </node>
   </node>
-  <node concept="2SbYGP" id="3TrpzyP_Ftr">
+  <node concept="2SbYGP" id="5CkU_dHbJMe">
     <property role="TrG5h" value="DocConfig" />
-    <node concept="2SbYGw" id="4BctXOpyqeC" role="Cbewh">
+    <node concept="2SbYGw" id="5CkU_dHbJMf" role="Cbewh">
       <property role="TrG5h" value="tmp" />
-      <node concept="9PVaO" id="4BctXOpyqeD" role="9PVG_">
+      <node concept="9PVaO" id="5CkU_dHbJMg" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+      </node>
+    </node>
+    <node concept="A7cYH" id="5V9QM6omah6" role="A10yx">
+      <node concept="9PVaO" id="5V9QM6omah7" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
       </node>

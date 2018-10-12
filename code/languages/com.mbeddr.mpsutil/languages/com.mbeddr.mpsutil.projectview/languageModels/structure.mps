@@ -2,9 +2,8 @@
 <model ref="r:904a58f9-8bb7-4ceb-b8a8-e6d7b5fc9126(com.mbeddr.mpsutil.projectview.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -101,6 +100,12 @@
       <property role="IQ2ns" value="5782973724855443006" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="3dJ0eUbDUtM" role="1TKVEi">
+      <property role="IQ2ns" value="3706182042894444402" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dataProvider" />
+      <ref role="20lvS9" node="3dJ0eUbDUtS" resolve="DataProviderFunction" />
+    </node>
     <node concept="1TJgyj" id="7diJr$Rulso" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="extends" />
@@ -171,6 +176,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="folders" />
       <property role="IQ2ns" value="1885109890160687910" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="nuy2XHi9dW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="foldersActionGroupId" />
+      <property role="IQ2ns" value="422925152297718652" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="7rgP_7GMSkC" role="1TKVEi">
@@ -252,6 +263,23 @@
       <property role="IQ2ns" value="5782973724855054027" />
       <ref role="20lvS9" to="tp4k:hwtC5zi" resolve="ActionGroupDeclaration" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3dJ0eUbDUtS">
+    <property role="EcuMT" value="3706182042894444408" />
+    <property role="TrG5h" value="DataProviderFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="3dJ0eUbDUAO">
+    <property role="EcuMT" value="3706182042894444980" />
+    <property role="TrG5h" value="DataIdParamter" />
+    <property role="34LRSv" value="dataId" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="3dJ0eUbFnT0">
+    <property role="EcuMT" value="3706182042894827072" />
+    <property role="TrG5h" value="ViewParamter" />
+    <property role="34LRSv" value="view" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 

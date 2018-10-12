@@ -57,6 +57,7 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
@@ -74,6 +75,10 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -159,6 +164,10 @@
       <concept id="6275792049641586523" name="com.mbeddr.core.unittest.structure.TestCase" flags="ng" index="c0Qz5">
         <child id="6275792049641586525" name="body" index="c0Qz3" />
       </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
       <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
@@ -559,6 +568,18 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
+      <node concept="3abb7c" id="OnnrMNmT2k" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="OnnrMNmT2l" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="OnnrMNmT2m" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="OnnrMNmT2n" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="AO_S936VPl" role="2Q9xDr">
       <node concept="2Q9FjX" id="AO_S936VPm" role="2Q9FjI" />
@@ -572,8 +593,12 @@
       <property role="MHqn5" value="true" />
     </node>
     <node concept="2eh4Hv" id="2qGv$is1YnN" role="2Q9xDr" />
+    <node concept="12mU2y" id="2vBUIEivD0X" role="2Q9xDr">
+      <node concept="3GpDuo" id="2vBUIEivD0Y" role="3GpDut" />
+    </node>
     <node concept="2eOfOl" id="AO_S936VPn" role="2ePNbc">
       <property role="TrG5h" value="PlainCDemo" />
+      <ref role="3oK8_y" node="OnnrMNmT2n" resolve="portable" />
       <node concept="2v9HqM" id="3j3yk3gbQxX" role="2eOfOg">
         <ref role="2v9HqP" node="AO_S936VOp" resolve="PlainCDemo" />
       </node>

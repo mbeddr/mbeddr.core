@@ -2,14 +2,12 @@
 <model ref="r:c15d435d-e68c-4830-ab00-00ec40a87dea(com.mbeddr.embedded.esp8266.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
@@ -57,14 +55,14 @@
       <property role="20kJfa" value="xtensaRoot" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1927508255675513792" />
-      <ref role="20lvS9" to="vs0r:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
     </node>
     <node concept="1TJgyj" id="1EZSCJhb09e" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="sdk" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1927508255675515470" />
-      <ref role="20lvS9" to="vs0r:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
     </node>
     <node concept="1TJgyi" id="6_CUGSF_O8b" role="1TKVEl">
       <property role="TrG5h" value="port" />

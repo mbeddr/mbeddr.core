@@ -2,8 +2,7 @@
 <model ref="r:29169654-5d40-494e-9393-5c74ef938963(com.mbeddr.ext.messaging.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="vuss" ref="r:030bc2d0-ab1f-4013-9326-cb8d964c9de2(com.mbeddr.ext.messaging.structure)" implicit="true" />
@@ -71,7 +70,7 @@
           <node concept="2OqwBi" id="2hvQkqd2Cuv" role="3Ah4Yx">
             <node concept="3__QtB" id="2hvQkqd2Cqq" role="2Oq$k0" />
             <node concept="3TrEf2" id="2hvQkqd2COP" role="2OqNvi">
-              <ref role="3Tt5mk" to="vuss:2hvQkqcZVlB" />
+              <ref role="3Tt5mk" to="vuss:2hvQkqcZVlB" resolve="serCtx" />
             </node>
           </node>
         </node>
@@ -89,7 +88,7 @@
           <node concept="2OqwBi" id="2hvQkqd2E6T" role="2GsD0m">
             <node concept="3__QtB" id="2hvQkqd2DXU" role="2Oq$k0" />
             <node concept="3Tsc0h" id="2hvQkqd2EN7" role="2OqNvi">
-              <ref role="3TtcxE" to="vuss:2hvQkqcZVlD" />
+              <ref role="3TtcxE" to="vuss:2hvQkqcZVlD" resolve="handler" />
             </node>
           </node>
         </node>
@@ -105,7 +104,7 @@
           <node concept="2OqwBi" id="2hvQkqd2ERT" role="3Ah4Yx">
             <node concept="3__QtB" id="2hvQkqd2EQz" role="2Oq$k0" />
             <node concept="3TrEf2" id="2hvQkqd2F77" role="2OqNvi">
-              <ref role="3Tt5mk" to="vuss:2hvQkqd0JfY" />
+              <ref role="3Tt5mk" to="vuss:2hvQkqd0JfY" resolve="body" />
             </node>
           </node>
         </node>

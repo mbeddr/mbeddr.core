@@ -2,8 +2,7 @@
 <model ref="r:a4e00c25-b0e6-4610-af63-5f6a9a6afdf7(com.mbeddr.analyses.spin.c.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="velc" ref="r:1af48fac-0627-4691-aa49-4813fdc5ca8e(com.mbeddr.analyses.spin.c.structure)" implicit="true" />
@@ -51,8 +50,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -100,12 +99,14 @@
             <node concept="3_DX4M" id="6efVUW9DTYc" role="3cqZAp">
               <node concept="2OqwBi" id="6efVUW9DY1q" role="3_H1SZ">
                 <node concept="1PxgMI" id="6efVUW9DXFz" role="2Oq$k0">
-                  <ref role="1m5ApE" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
                   <node concept="2OqwBi" id="6efVUW9DUgy" role="1m5AlR">
                     <node concept="3__QtB" id="6efVUW9DU3m" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6efVUW9DUQ8" role="2OqNvi">
                       <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
                     </node>
+                  </node>
+                  <node concept="chp4Y" id="79i$vAY7sDo" role="3oSUPX">
+                    <ref role="cht4Q" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="6efVUW9DYn2" role="2OqNvi">

@@ -2,7 +2,7 @@
 <model ref="r:9a2187fb-a1ba-4733-93ff-cba1f1f4bbdf(com.mbeddr.mpsutil.projectview.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -254,6 +254,18 @@
           </node>
           <node concept="2iRfu4" id="4QICnJ5F4ms" role="2iSdaV" />
         </node>
+        <node concept="3EZMnI" id="3dJ0eUbEkeI" role="3EZMnx">
+          <node concept="VPM3Z" id="3dJ0eUbEkeK" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="3dJ0eUbEkfw" role="3EZMnx">
+            <property role="3F0ifm" value="Data Provider:" />
+          </node>
+          <node concept="3F1sOY" id="3dJ0eUbEkfA" role="3EZMnx">
+            <ref role="1NtTu8" to="d04j:3dJ0eUbDUtM" resolve="dataProvider" />
+          </node>
+          <node concept="2iRfu4" id="3dJ0eUbEkeN" role="2iSdaV" />
+        </node>
         <node concept="3F0ifn" id="3ZnFyBju6rm" role="3EZMnx" />
         <node concept="3F2HdR" id="7diJr$RulxS" role="3EZMnx">
           <ref role="1NtTu8" to="d04j:7diJr$Rulsr" resolve="elements" />
@@ -504,6 +516,18 @@
               <ref role="1NtTu8" to="d04j:1CDgnklABGA" resolve="folders" />
             </node>
             <node concept="2iRfu4" id="1CDgnklGVIc" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="nuy2XHi9ep" role="3EZMnx">
+            <node concept="VPM3Z" id="nuy2XHi9eq" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="nuy2XHi9er" role="3EZMnx">
+              <property role="3F0ifm" value="folder action group ID:" />
+            </node>
+            <node concept="3F1sOY" id="nuy2XHi9es" role="3EZMnx">
+              <ref role="1NtTu8" to="d04j:nuy2XHi9dW" resolve="foldersActionGroupId" />
+            </node>
+            <node concept="2iRfu4" id="nuy2XHi9et" role="2iSdaV" />
           </node>
           <node concept="2EHx9g" id="7diJr$RvhaB" role="2iSdaV" />
         </node>

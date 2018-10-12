@@ -27,6 +27,9 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.fm/fm.mpl" folder="ple_var" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.rt.comp/comp.mpl" folder="ple_var" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.rt/rt.mpl" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.cc.requirements.c.interpreter/com.mbeddr.cc.requirements.c.interpreter.msd" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.cc.var.annotations.interpreter/com.mbeddr.cc.var.annotations.interpreter.msd" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.cc.var.fm.interpreter/com.mbeddr.cc.var.fm.interpreter.msd" folder="ple_var" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.fm/fm.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.fmrt/fmrt.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.requirements.c/c.msd" folder="tests" />
@@ -37,6 +40,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.requirements.scenarios/scenarios.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.requirements/requirements.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.var.c/c.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.var.composition/test.ts.cc.var.composition.msd" folder="tests" />
     </projectModules>
   </component>
 </project>

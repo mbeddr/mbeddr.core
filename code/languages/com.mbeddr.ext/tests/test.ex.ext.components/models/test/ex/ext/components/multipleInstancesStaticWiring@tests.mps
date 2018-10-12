@@ -21,6 +21,7 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
@@ -40,6 +41,10 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -124,7 +129,7 @@
       </concept>
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
-      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
+      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.DefaultInterruptKind" flags="ng" index="3_UBHe" />
       <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
         <child id="9172009453269286214" name="kind" index="3_UBH6" />
       </concept>
@@ -290,6 +295,18 @@
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
       <property role="3I8uaA" value="" />
+      <node concept="3abb7c" id="4LhGMnjpQYS" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjpQYT" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjpQYU" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjpQYV" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="1nTCJdUh_El" role="2Q9xDr">
       <node concept="2Q9FjX" id="1nTCJdUh_Em" role="2Q9FjI" />
@@ -312,6 +329,7 @@
     <node concept="2eOfOl" id="1nTCJdUh_EC" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="MultipleInstancesWithStaticWiring" />
+      <ref role="3oK8_y" node="4LhGMnjpQYV" resolve="portable" />
       <node concept="2v9HqM" id="1nTCJdUn08i" role="2eOfOg">
         <ref role="2v9HqP" node="6ySuXqN_am_" resolve="main" />
       </node>
@@ -810,8 +828,8 @@
             <node concept="3LAlOK" id="5zHWU$GPP0I" role="1_9egR">
               <ref role="2H6Oet" node="5zHWU$GxIaq" resolve="setDutyFactor" />
               <node concept="1DnYEe" id="5zHWU$GPP0J" role="1_9fRO">
-                <ref role="1DnYF2" node="5zHWU$G_QXg" resolve="timer3" />
                 <ref role="1DcY7d" node="5zHWU$GzwNR" resolve="pinC" />
+                <ref role="1DnYF2" node="5zHWU$G_QXg" resolve="timer3" />
               </node>
               <node concept="3TlMh9" id="5zHWU$GPP0K" role="2H6KYo">
                 <property role="2hmy$m" value="0" />
@@ -822,8 +840,8 @@
             <node concept="3LAlOK" id="5zHWU$GPP6M" role="1_9egR">
               <ref role="2H6Oet" node="5zHWU$GxIaq" resolve="setDutyFactor" />
               <node concept="1DnYEe" id="5zHWU$GPP6N" role="1_9fRO">
-                <ref role="1DnYF2" node="5zHWU$G_QZA" resolve="timer4" />
                 <ref role="1DcY7d" node="5zHWU$Gzrho" resolve="pinD" />
+                <ref role="1DnYF2" node="5zHWU$G_QZA" resolve="timer4" />
               </node>
               <node concept="3TlMh9" id="5zHWU$GPP6O" role="2H6KYo">
                 <property role="2hmy$m" value="0" />
@@ -1850,8 +1868,8 @@
             <node concept="3LAlOK" id="5zHWU$G_SG8" role="1_9egR">
               <ref role="2H6Oet" node="exHFgzK8US" resolve="run" />
               <node concept="1DnYEe" id="5zHWU$G_SAK" role="1_9fRO">
-                <ref role="1DnYF2" node="5zHWU$G_Qws" resolve="chassisControl" />
                 <ref role="1DcY7d" node="1nTCJdUolZN" resolve="runnable" />
+                <ref role="1DnYF2" node="5zHWU$G_Qws" resolve="chassisControl" />
               </node>
               <node concept="3ZUYvv" id="1nTCJdUppgA" role="2H6KYo">
                 <ref role="3ZUYvu" node="1nTCJdUpngT" resolve="speed" />
@@ -1995,6 +2013,10 @@
     <node concept="3GEVxB" id="5zHWU$G_QMY" role="2OODSX">
       <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="5zHWU$Gz13S" resolve="AvrTimers" />
+    </node>
+    <node concept="3GEVxB" id="2Lu1JfkQEtk" role="2OODSX">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" node="5zHWU$GuxGd" resolve="Util" />
     </node>
   </node>
   <node concept="N3F5e" id="5zHWU$GuxGd">

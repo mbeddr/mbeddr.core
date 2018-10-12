@@ -191,10 +191,13 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -1750,12 +1753,14 @@
               <node concept="3cpWs3" id="1q8GU$U7fks" role="3uHU7B">
                 <node concept="2OqwBi" id="1q8GU$U7eG1" role="3uHU7B">
                   <node concept="1PxgMI" id="1q8GU$U7e_Y" role="2Oq$k0">
-                    <ref role="1m5ApE" to="tpc2:hgV5ht3" resolve="StyleSheet" />
                     <node concept="2OqwBi" id="1q8GU$U7dCs" role="1m5AlR">
                       <node concept="37vLTw" id="1q8GU$U7dz$" role="2Oq$k0">
                         <ref role="3cqZAo" node="7G3D8btjUx" resolve="style" />
                       </node>
                       <node concept="1mfA1w" id="1q8GU$U7dXr" role="2OqNvi" />
+                    </node>
+                    <node concept="chp4Y" id="5RIakkDJ42D" role="3oSUPX">
+                      <ref role="cht4Q" to="tpc2:hgV5ht3" resolve="StyleSheet" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="1q8GU$U7qTV" role="2OqNvi">
@@ -1791,7 +1796,7 @@
       <node concept="37vLTG" id="7G3D8btjUx" role="3clF46">
         <property role="TrG5h" value="style" />
         <node concept="3Tqbb2" id="7G3D8btjUy" role="1tU5fm">
-          <ref role="ehGHo" to="tpc2:2VNGR_E2Sa7" resolve="IStyleSheetMember" />
+          <ref role="ehGHo" to="tpc2:2VNGR_E4AW$" resolve="StyleClass" />
         </node>
       </node>
     </node>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/languages/blocks/blocks.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/cimpl/cimpl.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/demo.expr/demo.expr.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/foreach/foreach.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/heap/heap.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/mbeddr.tutorial.extreqref/mbeddr.tutorial.extreqref.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/mbeddr.tutorial.layers/mbeddr.tutorial.layers.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/mbeddr.tutorial.shonan/mbeddr.tutorial.shonan.mpl" folder="hpc" />
+      <modulePath path="$PROJECT_DIR$/languages/mbeddr.tutorial.smtrigger/mbeddr.tutorial.smtrigger.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/memory/memory.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/metadata/metadata.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/osconfig/osconfig.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/spellcheck/spellcheck.mpl" folder="utils" />
+      <modulePath path="$PROJECT_DIR$/solutions/demo.expr.sandbox/demo.expr.sandbox.msd" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/solutions/lib/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.library.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.dsls.extensions.main/mbeddr.tutorial.dsls.extensions.main.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.shonan.runtime/mbeddr.tutorial.shonan.runtime.msd" folder="hpc" />
+      <modulePath path="$PROJECT_DIR$/tests/mbeddr.tutorial.shonan.test/mbeddr.tutorial.shonan.test.msd" folder="hpc" />
+      <modulePath path="$PROJECT_DIR$/tests/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="examples" />
+    </projectModules>
+  </component>
+</project>

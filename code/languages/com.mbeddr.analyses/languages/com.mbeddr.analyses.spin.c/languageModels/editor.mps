@@ -2,7 +2,9 @@
 <model ref="r:92ad780c-7a44-49f0-b7a1-273eb5e8cae3(com.mbeddr.analyses.spin.c.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
   </languages>
   <imports>
     <import index="velc" ref="r:1af48fac-0627-4691-aa49-4813fdc5ca8e(com.mbeddr.analyses.spin.c.structure)" />
@@ -52,6 +54,11 @@
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+    </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -278,6 +285,20 @@
         <property role="3F0ifm" value="&quot;" />
         <node concept="11L4FC" id="6rTOrQxlXtv" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="1BFQdmJYfid" role="3EZMnx">
+        <node concept="3EZMnI" id="1BFQdmJYfiu" role="_tjki">
+          <node concept="3F0ifn" id="1BFQdmJYfiC" role="3EZMnx">
+            <property role="3F0ifm" value="-" />
+          </node>
+          <node concept="3F0A7n" id="1BFQdmJYfiK" role="3EZMnx">
+            <ref role="1NtTu8" to="velc:1BFQdmJYfhG" resolve="trackingStrategy" />
+          </node>
+          <node concept="l2Vlx" id="1BFQdmJYfix" role="2iSdaV" />
+          <node concept="VPM3Z" id="1BFQdmJYfiy" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
         </node>
       </node>
       <node concept="l2Vlx" id="6rTOrQxlXkY" role="2iSdaV" />

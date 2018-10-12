@@ -1,0 +1,103 @@
+import de.itemis.mps.gradle.CreateDmg
+
+configurations {
+    junitAnt
+    mpsArtifacts
+    jreWin
+}
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
+
+ext.jdkVersion = '8u112b408.4'
+dependencies {
+    mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
+    jreWin "com.jetbrains.jdk:jdk:${jdkVersion}:windows_x64@tgz"
+}
+
+task resolveMpsArtifacts() {
+    doLast { 
+        copy {
+            from {
+                    configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+                 }
+            into artifactsDir
+        }
+    }
+}
+
+def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
+
+task build_all_in_one(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
+    script script_build_mbeddrAllInOne
+}
+
+task build_platform_distribution(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
+    script scriptFile('com.mbeddr.platform/build-distribution.xml')
+    // Support incremental build
+    inputs.file(script)
+}
+
+task package_tutorial(type: Zip) {
+    from rootProject.projectDir.absolutePath + "/code/applications/tutorial"
+    destinationDir  new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
+    archiveName "com.mbeddr.tutorial.zip"
+}
+
+task prepare_distribution(dependsOn: [build_all_in_one, build_platform_distribution, package_tutorial])
+
+
+def script_build_mbeddr_branding = new File(scriptsBasePath + "/com.mbeddr.rcp/" + "mps.xml")
+def script_build_mbeddrRCP = new File(scriptsBasePath + "/com.mbeddr.rcp/" + "mpsDistribution.xml")
+
+task build_mbeddr_branding(type: BuildLanguages, dependsOn: prepare_distribution) {
+    script script_build_mbeddr_branding
+}
+
+task build_mbeddrRCP(type: RunMbeddrAntScript, dependsOn: build_mbeddr_branding) {
+    script script_build_mbeddrRCP
+    targets 'clean', 'assemble'
+}
+
+
+def installer_repo = project.hasProperty('InstallerRepo') ? project.getProperty('InstallerRepo') : rootProject.projectDir.absolutePath + '/../mbeddr.installer.win'
+
+task resolve_jreWindows(type: Copy)  {
+    from {
+        configurations.jreWin.collect { tarTree(resources.gzip(it)) }
+    }
+    exclude("LICENSE")
+    into installer_repo + "/files/mbeddr/"
+}
+
+task prepare_installer(type: Copy, dependsOn: [build_mbeddrRCP, resolve_jreWindows]) {
+    from {
+        zipTree(rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/" + "mbeddr-win.zip")
+    }
+    into installer_repo + "/files/"
+}
+
+
+task build_installer(type:Exec, dependsOn: [prepare_installer]) {
+  workingDir installer_repo
+
+  //on windows:
+  commandLine 'cmd', '/c', "NSIS\\makensis.exe", installer_repo + "\\mbeddr.nsi"
+
+  //store the output instead of printing to the console:
+  standardOutput = new ByteArrayOutputStream()
+
+  //extension method stopTomcat.output() can be used to obtain the output:
+  ext.output = {
+    return standardOutput.toString()
+  }
+}
+
+task build_dmg(type: CreateDmg) {
+    dependsOn build_mbeddrRCP
+    rcpArtifact rootProject.file('artifacts/mpsDistribution/mbeddr-macos.zip')
+    jdkDependency "com.jetbrains.jdk:jdk:${jdkVersion}:osx_x64@tgz"
+    backgroundImage rootProject.file('rcp/icons/mbeddr-logo.png')
+    dmgFile rootProject.file('buildUtil/mbeddr-macos.dmg')
+}

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -79,7 +79,7 @@
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
-      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
+      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.DefaultInterruptKind" flags="ng" index="3_UBHe" />
       <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
         <child id="9172009453269286214" name="kind" index="3_UBH6" />
       </concept>
@@ -247,9 +247,6 @@
       </node>
     </node>
   </node>
-  <node concept="2XOHcx" id="7pg8HYlqyX1">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
-  </node>
   <node concept="2v9HqL" id="7pg8HYlqyX2">
     <node concept="2xfidK" id="2nospmWbMx9" role="2AWWZH">
       <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
@@ -263,6 +260,9 @@
     <node concept="3_UEaq" id="7pg8HYlqHm7" role="2Q9xDr">
       <node concept="3_UBHe" id="7pg8HYlqHmh" role="3_UBH6" />
     </node>
+  </node>
+  <node concept="2XOHcx" id="7pg8HYlqyX1">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
 </model>
 

@@ -2,8 +2,8 @@
 <model ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -14,7 +14,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -575,6 +575,12 @@
       <property role="IQ2ns" value="8729447926330241139" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
+    <node concept="1TJgyj" id="7PyP3ULsLFW" role="1TKVEi">
+      <property role="IQ2ns" value="9035017168188807932" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    </node>
     <node concept="1TJgyi" id="2I5SFMdvWx6" role="1TKVEl">
       <property role="TrG5h" value="countBackwards" />
       <property role="IQ2nx" value="3136162014989109318" />
@@ -854,6 +860,9 @@
     </node>
     <node concept="PrWs8" id="5uVxDlUcwLe" role="PzmwI">
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
+    </node>
+    <node concept="PrWs8" id="33xYbhPQm_r" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="__7kBU9WPI">
@@ -1824,6 +1833,9 @@
     </node>
     <node concept="PrWs8" id="7Jr7T0w731$" role="PzmwI">
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
+    </node>
+    <node concept="PrWs8" id="QIiPbLCJIv" role="PzmwI">
+      <ref role="PrY4T" to="x27k:QIiPbLCHqs" resolve="IClosureLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="7apEgWbIQfE">

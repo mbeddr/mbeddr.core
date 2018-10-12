@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:412919e1-8cc9-4e60-84c4-7fbda75829db(migrationData)">
+  <persistence version="9" />
+  <languages />
+  <imports>
+    <import index="9ug2" ref="r:f8ad3268-3097-4651-9207-8a3f9a1a3a64(DomainSpecificLanguage.structure)" implicit="true" />
+    <import index="immj" ref="r:6274d77c-ac56-476f-91f8-b45ea2d64146(DomainSpecificLanguage.editor)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="3017733173184487099" name="jetbrains.mps.lang.editor.structure.SmartRefMigrationDataEntity" flags="ng" index="ZsZFI">
+        <reference id="3017733173184487105" name="generatedMenu" index="ZsZEk" />
+        <reference id="3017733173184487102" name="conceptNode" index="ZsZFF" />
+      </concept>
+      <concept id="3017733173184487098" name="jetbrains.mps.lang.editor.structure.SmartRefMigrationData" flags="ng" index="ZsZFJ">
+        <child id="3017733173184487121" name="entities" index="ZsZE4" />
+      </concept>
+    </language>
+    <language id="9882f4ad-1955-46fe-8269-94189e5dbbf2" name="jetbrains.mps.lang.migration.util">
+      <concept id="7417095922908669705" name="jetbrains.mps.lang.migration.util.structure.StepData" flags="ng" index="2z5JpS">
+        <property id="1973338949477451252" name="script" index="3qqn2_" />
+        <child id="7417095922908725798" name="data" index="2z5Xdn" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2z5JpS" id="2Ml2NpZFGhq">
+    <property role="3qqn2_" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)/8" />
+    <node concept="ZsZFJ" id="2Ml2NpZFGg$" role="2z5Xdn">
+      <node concept="ZsZFI" id="2Ml2NpZFGgY" role="ZsZE4">
+        <ref role="ZsZFF" to="9ug2:Ll6J3comfR" resolve="ProfiledEntryAction" />
+        <ref role="ZsZEk" to="immj:2Ml2NpZFGgS" resolve="ProfiledEntryAction_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="2Ml2NpZFGho" role="ZsZE4">
+        <ref role="ZsZFF" to="9ug2:7pFWc46FHKt" resolve="ActivationStatement" />
+        <ref role="ZsZEk" to="immj:2Ml2NpZFGhi" resolve="ActivationStatement_SmartReference" />
+      </node>
+    </node>
+  </node>
+</model>
+

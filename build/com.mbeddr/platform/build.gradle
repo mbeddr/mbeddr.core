@@ -1,16 +1,31 @@
-
 def script_test_mbeddrPlatform = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-ts-tests.xml")
 
-task resolve_mps(type: Copy) {
-    dependsOn configurations.mps
-    from {
-        configurations.mps.resolve().collect { zipTree(it) }
+if (project.skipResolveMps) {
+    task resolve_mps {
+        doLast {
+            logger.info "MPS resolution skipped"
+        }
     }
-    into mpsHomeDir
+} else {
+    task resolve_mps(type: Copy) {
+        dependsOn configurations.mps
+        from {
+            configurations.mps.resolve().collect { zipTree(it) }
+        }
+        into mpsHomeDir
+    }
+}
+
+task resolve_extensions(type: Copy) {
+    dependsOn configurations.mpsExtensions
+    from {
+        configurations.mpsExtensions.resolve().collect { zipTree(it) }
+    }
+    into artifactsDir
 }
 
 
-task build_allScripts(type: BuildLanguages, dependsOn: resolve_mps) {
+task build_allScripts(type: BuildLanguages, dependsOn: [resolve_mps, resolve_extensions]) {
     script rootProject.file('build/com.mbeddr.allScripts/build.xml')
 }
 
@@ -27,32 +42,37 @@ task publish_allScripts(type: Zip, dependsOn: build_allScripts) {
     include "com.mbeddr.allScripts.build/**"
 }
 
-
+/*
 task build_sl_all(type: BuildLanguages, dependsOn: copy_allScripts) {
     script scriptFile('sl-all/build.xml')
 }
 
-task copy_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
-    from rootProject.zipTree("artifacts/mps-sl-all/mps-sl-all.zip")
+task copy_sl_all_nativelibs(type: Copy, dependsOn: copy_allScripts) {
+    from "$rootDir/artifacts/mps-sl-all/"
     include "de.itemis.mps.nativelibs.loader/"
     into "$mpsHomeDir/plugins"
 }
 
-task build_spawner(type: BuildLanguages, dependsOn: copy_sl_all_nativelibs) {
-    script scriptFile('com.mbeddr.build/spawner.xml')
+task install_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
+    from "$rootDir/artifacts/mps-sl-all/"
+    include "de.itemis.mps.nativelibs.loader/"
+    into "$mpsPluginsDir"
 }
+*/
 
-task copy_spawner(type: Copy, dependsOn: build_spawner) {
-    from rootProject.zipTree("artifacts/spawner/com.mbeddr.spawner.zip")
-    into "$mpsHomeDir/plugins"
-}
-
-task build_platform(type: BuildLanguages, dependsOn: copy_spawner) {
+task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
     script scriptFile('com.mbeddr.platform/build.xml')
+}
+
+task install_actionsfilter(type: Copy, dependsOn: build_platform) {
+    from "$rootDir/artifacts/com.mbeddr.platform/"
+    include "com.mbeddr.mpsutil.actionsfilter/"
+    into "$mpsPluginsDir"
 }
 
 task test_mbeddr_platform(type: TestLanguages, dependsOn: build_platform) {
     script script_test_mbeddrPlatform
+    description "execute typesystem and generator tests for the plaform"
 }
 
 task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platform, test_mbeddr_platform]) {
@@ -65,25 +85,72 @@ task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platfor
     outputs.dir("$rootDir/artifacts/com.mbeddr.platform.distribution")
 }
 
-task publish_mbeddrPlatform(type: Zip, dependsOn: build_platform_distribution) {
-    archiveName 'com.mbeddr.platform.distribution.zip'
+task publish_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
+    archiveName 'com.mbeddr.platform.zip'
     from artifactsDir
-    include "com.mbeddr.platform.distribution/**"
+    include "com.mbeddr.platform/**"
 }
+
+task defaultWrapper(dependsOn: build_platform) {
+    doFirst {
+        println "####################################################################################"
+        println "#                      THE DEFAULT TASK HAS BEEN CHANGED                           #"
+        println "#                                                                                  #"
+        println "# The default task now only builds the mbeddr platform and no longer all of mbeddr #"
+        println "# including the C part. In order to build everything you will have to invoke the   #"
+        println "# task build_mbeddr. This will give you the old behaviour of building everything.  #"
+        println "####################################################################################"
+    }
+
+}
+
+rootProject.defaultTasks 'defaultWrapper'
+
+task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrAllScriptsPublicationToMavenLocal', 'publishMbeddrPlatformPublicationToMavenLocal'])
+
 
 publishing {
     publications {
-        mbeddrAllScripts(MavenPublication) {
-            groupId 'com.mbeddr'
-            artifactId 'allScripts'
-            version mbeddrBuildNumber
-            artifact publish_allScripts
-        }
         mbeddrPlatform(MavenPublication) {
             groupId 'com.mbeddr'
             artifactId 'platform'
             version mbeddrBuildNumber
             artifact publish_mbeddrPlatform
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
+                }
+                /*configurations.mpsExtensions.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }*/
+            }
+        }
+        mbeddrAllScripts(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'allScripts'
+            version mbeddrBuildNumber
+            artifact publish_allScripts
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
+                }
+            }
         }
     }
 }

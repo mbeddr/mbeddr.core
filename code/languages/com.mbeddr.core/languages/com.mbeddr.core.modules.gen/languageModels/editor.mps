@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
@@ -357,6 +357,25 @@
   </node>
   <node concept="3p36aQ" id="2cvVnUv6Fxj">
     <ref role="aqKnT" to="d0vh:7dfuMW5rC75" resolve="NameShorteingRoot" />
+  </node>
+  <node concept="24kQdi" id="1NwarDnRY0o">
+    <property role="3GE5qa" value="module" />
+    <ref role="1XX52x" to="d0vh:1NwarDnRX0I" resolve="GenForignExtModuleImport" />
+    <node concept="3EZMnI" id="1NwarDnRY0q" role="2wV5jI">
+      <node concept="l2Vlx" id="1NwarDnRY0r" role="2iSdaV" />
+      <node concept="3F0ifn" id="1NwarDnRY0s" role="3EZMnx">
+        <property role="3F0ifm" value="forign external module" />
+      </node>
+      <node concept="1iCGBv" id="1NwarDnRY0t" role="3EZMnx">
+        <ref role="1NtTu8" to="d0vh:1NwarDnRY03" resolve="module" />
+        <node concept="1sVBvm" id="1NwarDnRY0u" role="1sWHZn">
+          <node concept="3F0A7n" id="1NwarDnRY0v" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

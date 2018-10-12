@@ -2,16 +2,16 @@
 <model ref="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -278,16 +278,11 @@
     <ref role="1TJDcQ" node="5W7baq$aGq_" resolve="AbstractRegisterTransformationKind" />
   </node>
   <node concept="1TIwiD" id="SwwM9UHwwI">
-    <property role="TrG5h" value="Isr" />
+    <property role="TrG5h" value="ISR" />
     <property role="3GE5qa" value="isr" />
-    <property role="34LRSv" value="ISR" />
+    <property role="34LRSv" value="isr" />
     <property role="EcuMT" value="1017957699896608814" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="SwwM9UHwwJ" role="1TKVEl">
-      <property role="TrG5h" value="irqAsString" />
-      <property role="IQ2nx" value="1017957699896608815" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="SwwM9UHwwK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
@@ -355,7 +350,7 @@
       <property role="20kJfa" value="isr" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1017957699896642408" />
-      <ref role="20lvS9" node="SwwM9UHwwI" resolve="Isr" />
+      <ref role="20lvS9" node="SwwM9UHwwI" resolve="ISR" />
     </node>
     <node concept="PrWs8" id="7X9xw2qD1CD" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
@@ -392,8 +387,8 @@
   </node>
   <node concept="1TIwiD" id="7X9xw2qCZPe">
     <property role="3GE5qa" value="isr.config" />
-    <property role="TrG5h" value="EmulatedInterruptKind" />
-    <property role="34LRSv" value="emulated interrupts" />
+    <property role="TrG5h" value="DefaultInterruptKind" />
+    <property role="34LRSv" value="default interrupts" />
     <property role="EcuMT" value="9172009453269286222" />
     <ref role="1TJDcQ" node="7X9xw2qCZP5" resolve="AbstractInterruptKind" />
   </node>

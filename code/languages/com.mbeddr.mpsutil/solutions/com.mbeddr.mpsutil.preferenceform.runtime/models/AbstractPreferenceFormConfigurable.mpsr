@@ -129,6 +129,7 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -286,6 +287,48 @@
               <node concept="Xjq3P" id="X7OD3WrH$Y" role="2Oq$k0" />
               <node concept="2OwXpG" id="X7OD3WrHUA" role="2OqNvi">
                 <ref role="2Oxat5" node="~BasePrefsPage.myPrefsComponent" resolve="preferenceFormComponent" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2s2m289$XH0" role="3cqZAp">
+          <node concept="37vLTI" id="2s2m289$Yur" role="3clFbG">
+            <node concept="2OqwBi" id="2s2m289$ZNc" role="37vLTx">
+              <node concept="2OqwBi" id="2s2m289$Z6E" role="2Oq$k0">
+                <node concept="Xjq3P" id="2s2m289$YS1" role="2Oq$k0" />
+                <node concept="liA8E" id="2s2m289$Zv2" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2s2m289_0Od" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2s2m289$XO9" role="37vLTJ">
+              <node concept="Xjq3P" id="2s2m289$XGY" role="2Oq$k0" />
+              <node concept="2OwXpG" id="2s2m289$XYd" role="2OqNvi">
+                <ref role="2Oxat5" to="hq8m:~ConfigurableEP.providerClass" resolve="providerClass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2s2m289_195" role="3cqZAp">
+          <node concept="37vLTI" id="2s2m289_28Z" role="3clFbG">
+            <node concept="2OqwBi" id="2s2m289_3rq" role="37vLTx">
+              <node concept="2OqwBi" id="2s2m289_2IS" role="2Oq$k0">
+                <node concept="Xjq3P" id="2s2m289_2wf" role="2Oq$k0" />
+                <node concept="liA8E" id="2s2m289_37g" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2s2m289_44V" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2s2m289_1iE" role="37vLTJ">
+              <node concept="Xjq3P" id="2s2m289_193" role="2Oq$k0" />
+              <node concept="2OwXpG" id="2s2m289_1CL" role="2OqNvi">
+                <ref role="2Oxat5" to="hq8m:~ConfigurableEP.instanceClass" resolve="instanceClass" />
               </node>
             </node>
           </node>
@@ -673,6 +716,33 @@
       <node concept="3cqZAl" id="4vnGofEqUEC" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="X7OD3Wril4" role="1B3o_S" />
+    <node concept="3clFb_" id="6tWxRoIg$NY" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getConfigurableType" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6tWxRoIg$NZ" role="1B3o_S" />
+      <node concept="2AHcQZ" id="6tWxRoIg$O1" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3uibUv" id="6tWxRoIg$O2" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+        <node concept="3qTvmN" id="6tWxRoIg$O3" role="11_B2D" />
+      </node>
+      <node concept="3clFbS" id="6tWxRoIg$O4" role="3clF47">
+        <node concept="3clFbF" id="6tWxRoIgA3W" role="3cqZAp">
+          <node concept="2OqwBi" id="6tWxRoIgAhC" role="3clFbG">
+            <node concept="Xjq3P" id="6tWxRoIgA3T" role="2Oq$k0" />
+            <node concept="liA8E" id="6tWxRoIgAL$" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6tWxRoIg$O5" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
 </model>
 

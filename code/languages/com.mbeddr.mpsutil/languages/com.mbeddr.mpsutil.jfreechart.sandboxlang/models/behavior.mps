@@ -2,7 +2,7 @@
 <model ref="r:c032f2e2-f0a8-43dc-bd24-bf388295f201(com.mbeddr.mpsutil.jfreechart.sandboxlang.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -220,7 +220,7 @@
                       <ref role="2Gs0qQ" node="7uOgiT9wcF" resolve="seriesNode" />
                     </node>
                     <node concept="3Tsc0h" id="7uOgiT9zDO" role="2OqNvi">
-                      <ref role="3TtcxE" to="w1se:7uOgiT9fcQ" />
+                      <ref role="3TtcxE" to="w1se:7uOgiT9fcQ" resolve="items" />
                     </node>
                   </node>
                 </node>
@@ -252,7 +252,7 @@
           <node concept="2OqwBi" id="7uOgiT9x65" role="2GsD0m">
             <node concept="13iPFW" id="7uOgiT9MsB" role="2Oq$k0" />
             <node concept="3Tsc0h" id="7uOgiT9xhR" role="2OqNvi">
-              <ref role="3TtcxE" to="w1se:7uOgiT9fi9" />
+              <ref role="3TtcxE" to="w1se:7uOgiT9fi9" resolve="series" />
             </node>
           </node>
         </node>

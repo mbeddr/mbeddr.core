@@ -4,7 +4,7 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -120,27 +120,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="156369466847981785" />
       <ref role="20lvS9" to="tpee:fz7vLUo" resolve="VariableReference" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1aReOC$6jBX">
-    <property role="TrG5h" value="GeneratorOutputPath" />
-    <property role="34LRSv" value="generator-output-path" />
-    <property role="EcuMT" value="1348611803040004605" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyi" id="v3WHCwUiHA" role="1TKVEl">
-      <property role="TrG5h" value="name" />
-      <property role="IQ2nx" value="559557797393017702" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="v3WHCwUjHJ" role="1TKVEl">
-      <property role="TrG5h" value="stereotype" />
-      <property role="IQ2nx" value="559557797393021807" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="v3WHCwUoyi" role="1TKVEl">
-      <property role="TrG5h" value="fqName" />
-      <property role="IQ2nx" value="559557797393041554" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

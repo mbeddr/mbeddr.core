@@ -2,8 +2,7 @@
 <model ref="r:76a804ed-4180-4c68-999c-d3272ab01f10(com.mbeddr.analyses.spin.c.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
@@ -85,7 +84,7 @@
                 <ref role="1YBMHb" node="6qQmI_30ql5" resolve="now" />
               </node>
               <node concept="3TrEf2" id="6qQmI_30Oqz" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
               </node>
             </node>
           </node>
@@ -115,11 +114,11 @@
                 <ref role="1YBMHb" node="7Ztu0DHKlsh" resolve="cStateRef" />
               </node>
               <node concept="3TrEf2" id="7Ztu0DHKlHm" role="2OqNvi">
-                <ref role="3Tt5mk" to="velc:6rTOrQxiGQA" />
+                <ref role="3Tt5mk" to="velc:6rTOrQxiGQA" resolve="cstate" />
               </node>
             </node>
             <node concept="3TrEf2" id="7Ztu0DHKmuD" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
             </node>
           </node>
         </node>
@@ -155,7 +154,7 @@
                 <ref role="1YBMHb" node="5RNtn4ccDXZ" resolve="procRef" />
               </node>
               <node concept="3TrEf2" id="5RNtn4ccFg9" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
               </node>
             </node>
           </node>
@@ -177,7 +176,7 @@
               <ref role="1YBMHb" node="Rd$2EC5asq" resolve="cExpr" />
             </node>
             <node concept="3TrEf2" id="Rd$2EC5aJy" role="2OqNvi">
-              <ref role="3Tt5mk" to="velc:6rTOrQxjaYB" />
+              <ref role="3Tt5mk" to="velc:6rTOrQxjaYB" resolve="expr" />
             </node>
           </node>
           <node concept="2qgKlT" id="Rd$2EC5b8w" role="2OqNvi">
@@ -193,6 +192,36 @@
       </node>
     </node>
     <node concept="1YaCAy" id="Rd$2EC5asq" role="1YuTPh">
+      <property role="TrG5h" value="cExpr" />
+      <ref role="1YaFvo" to="velc:6rTOrQxjaYA" resolve="CExpr" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4ly_4leEHRY">
+    <property role="TrG5h" value="typeof_CExpr" />
+    <node concept="3clFbS" id="4ly_4leEHRZ" role="18ibNy">
+      <node concept="1Z5TYs" id="4ly_4leEI6r" role="3cqZAp">
+        <node concept="mw_s8" id="4ly_4leEI6J" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4ly_4leEI6F" role="mwGJk">
+            <node concept="2OqwBi" id="4ly_4leEIiL" role="1Z2MuG">
+              <node concept="1YBJjd" id="4ly_4leEI70" role="2Oq$k0">
+                <ref role="1YBMHb" node="4ly_4leEHS1" resolve="cExpr" />
+              </node>
+              <node concept="3TrEf2" id="4ly_4leEIKB" role="2OqNvi">
+                <ref role="3Tt5mk" to="velc:6rTOrQxjaYB" resolve="expr" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4ly_4leEI6u" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4ly_4leEHS5" role="mwGJk">
+            <node concept="1YBJjd" id="4ly_4leEHTP" role="1Z2MuG">
+              <ref role="1YBMHb" node="4ly_4leEHS1" resolve="cExpr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4ly_4leEHS1" role="1YuTPh">
       <property role="TrG5h" value="cExpr" />
       <ref role="1YaFvo" to="velc:6rTOrQxjaYA" resolve="CExpr" />
     </node>

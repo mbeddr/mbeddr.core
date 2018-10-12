@@ -23,6 +23,7 @@
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="8m69" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.markup(MPS.IDEA/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -167,9 +168,6 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
-      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
-        <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -2407,25 +2405,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="2qSTDMxYJfY" role="3cqZAp">
-          <node concept="3clFbS" id="2qSTDMxYJg0" role="3clFbx">
-            <node concept="3cpWs6" id="2qSTDMxYJQL" role="3cqZAp">
-              <node concept="37vLTw" id="2qSTDMxYJZd" role="3cqZAk">
-                <ref role="3cqZAo" node="2qSTDMxYIfk" resolve="defaultValue" />
-              </node>
-            </node>
-          </node>
-          <node concept="3fqX7Q" id="2qSTDMxYJFd" role="3clFbw">
-            <node concept="2OqwBi" id="2qSTDMxYJFf" role="3fr31v">
-              <node concept="37vLTw" id="2qSTDMxYJFg" role="2Oq$k0">
-                <ref role="3cqZAo" node="2qSTDMxYIeS" resolve="attributes" />
-              </node>
-              <node concept="liA8E" id="2qSTDMxYJFh" role="2OqNvi">
-                <ref role="37wK5l" to="8m69:~TextAttributes.containsValue():boolean" resolve="containsValue" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="2qSTDMxYKez" role="3cqZAp">
           <node concept="2OqwBi" id="2qSTDMxYIf6" role="3clFbG">
             <node concept="37vLTw" id="2qSTDMxYIf7" role="2Oq$k0">
@@ -2483,25 +2462,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="Vx4CqFKSfG" role="3cqZAp">
-          <node concept="3clFbS" id="Vx4CqFKSfH" role="3clFbx">
-            <node concept="3cpWs6" id="Vx4CqFKSfI" role="3cqZAp">
-              <node concept="3clFbT" id="Vx4CqFKSRJ" role="3cqZAk">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-          <node concept="3fqX7Q" id="Vx4CqFKSfK" role="3clFbw">
-            <node concept="2OqwBi" id="Vx4CqFKSfL" role="3fr31v">
-              <node concept="37vLTw" id="Vx4CqFKSfM" role="2Oq$k0">
-                <ref role="3cqZAo" node="Vx4CqFKSfx" resolve="attributes" />
-              </node>
-              <node concept="liA8E" id="Vx4CqFKSfN" role="2OqNvi">
-                <ref role="37wK5l" to="8m69:~TextAttributes.containsValue():boolean" resolve="containsValue" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="Vx4CqFKSfO" role="3cqZAp">
           <node concept="3clFbT" id="Vx4CqFKT1p" role="3clFbG">
             <property role="3clFbU" value="true" />
@@ -2521,28 +2481,42 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2qSTDMxYAaB" role="3clF47">
-        <node concept="3cpWs6" id="2qSTDMxYAbr" role="3cqZAp">
-          <node concept="2OqwBi" id="2qSTDMxYAbs" role="3cqZAk">
-            <node concept="2OqwBi" id="2qSTDMxYAbt" role="2Oq$k0">
-              <node concept="2YIFZM" id="2qSTDMxYAbu" role="2Oq$k0">
-                <ref role="1Pybhc" to="drih:~EditorColorsManager" resolve="EditorColorsManager" />
-                <ref role="37wK5l" to="drih:~EditorColorsManager.getInstance():com.intellij.openapi.editor.colors.EditorColorsManager" resolve="getInstance" />
-              </node>
-              <node concept="liA8E" id="2qSTDMxYAbv" role="2OqNvi">
-                <ref role="37wK5l" to="drih:~EditorColorsManager.getGlobalScheme():com.intellij.openapi.editor.colors.EditorColorsScheme" resolve="getGlobalScheme" />
-              </node>
+        <node concept="3clFbJ" id="3whqaarNgRC" role="3cqZAp">
+          <node concept="3y3z36" id="3whqaarNLsg" role="3clFbw">
+            <node concept="10Nm6u" id="3whqaarNLOC" role="3uHU7w" />
+            <node concept="2YIFZM" id="3whqaarNGI8" role="3uHU7B">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="liA8E" id="2qSTDMxYAbw" role="2OqNvi">
-              <ref role="37wK5l" to="drih:~TextAttributesScheme.getAttributes(com.intellij.openapi.editor.colors.TextAttributesKey):com.intellij.openapi.editor.markup.TextAttributes" resolve="getAttributes" />
-              <node concept="2YIFZM" id="2qSTDMxYAbx" role="37wK5m">
-                <ref role="1Pybhc" to="drih:~TextAttributesKey" resolve="TextAttributesKey" />
-                <ref role="37wK5l" to="drih:~TextAttributesKey.createTextAttributesKey(java.lang.String):com.intellij.openapi.editor.colors.TextAttributesKey" resolve="createTextAttributesKey" />
-                <node concept="37vLTw" id="2qSTDMxYAb_" role="37wK5m">
-                  <ref role="3cqZAo" node="2qSTDMxYAbz" resolve="key" />
+          </node>
+          <node concept="3clFbS" id="3whqaarNgRE" role="3clFbx">
+            <node concept="3cpWs6" id="2qSTDMxYAbr" role="3cqZAp">
+              <node concept="2OqwBi" id="2qSTDMxYAbs" role="3cqZAk">
+                <node concept="2OqwBi" id="2qSTDMxYAbt" role="2Oq$k0">
+                  <node concept="2YIFZM" id="2qSTDMxYAbu" role="2Oq$k0">
+                    <ref role="1Pybhc" to="drih:~EditorColorsManager" resolve="EditorColorsManager" />
+                    <ref role="37wK5l" to="drih:~EditorColorsManager.getInstance():com.intellij.openapi.editor.colors.EditorColorsManager" resolve="getInstance" />
+                  </node>
+                  <node concept="liA8E" id="2qSTDMxYAbv" role="2OqNvi">
+                    <ref role="37wK5l" to="drih:~EditorColorsManager.getGlobalScheme():com.intellij.openapi.editor.colors.EditorColorsScheme" resolve="getGlobalScheme" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="2qSTDMxYAbw" role="2OqNvi">
+                  <ref role="37wK5l" to="drih:~TextAttributesScheme.getAttributes(com.intellij.openapi.editor.colors.TextAttributesKey):com.intellij.openapi.editor.markup.TextAttributes" resolve="getAttributes" />
+                  <node concept="2YIFZM" id="2qSTDMxYAbx" role="37wK5m">
+                    <ref role="1Pybhc" to="drih:~TextAttributesKey" resolve="TextAttributesKey" />
+                    <ref role="37wK5l" to="drih:~TextAttributesKey.createTextAttributesKey(java.lang.String):com.intellij.openapi.editor.colors.TextAttributesKey" resolve="createTextAttributesKey" />
+                    <node concept="37vLTw" id="2qSTDMxYAb_" role="37wK5m">
+                      <ref role="3cqZAo" node="2qSTDMxYAbz" resolve="key" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
+        </node>
+        <node concept="3cpWs6" id="3whqaarNMcV" role="3cqZAp">
+          <node concept="10Nm6u" id="3whqaarNM_y" role="3cqZAk" />
         </node>
       </node>
       <node concept="37vLTG" id="2qSTDMxYAbz" role="3clF46">

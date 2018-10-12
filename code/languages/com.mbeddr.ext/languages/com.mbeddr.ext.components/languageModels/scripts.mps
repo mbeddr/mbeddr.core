@@ -161,7 +161,7 @@
             <node concept="3cpWsn" id="Z4PF258Bec" role="3cpWs9">
               <property role="TrG5h" value="port" />
               <node concept="3Tqbb2" id="Z4PF258BBH" role="1tU5fm">
-                <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
               </node>
               <node concept="1eOMI4" id="Z4PF258BLo" role="33vP2m">
                 <node concept="10QFUN" id="Z4PF258BLp" role="1eOMHV">
@@ -182,7 +182,7 @@
                     </node>
                   </node>
                   <node concept="3Tqbb2" id="Z4PF258BLg" role="10QFUM">
-                    <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                    <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
                   </node>
                 </node>
               </node>
@@ -195,7 +195,7 @@
                 <node concept="2pJPED" id="Z4PF258DWp" role="2pJPEn">
                   <ref role="2pJxaS" to="v7ag:71UKpntoTuE" resolve="PortRefExpr" />
                   <node concept="2pIpSj" id="Z4PF258E2O" role="2pJxcM">
-                    <ref role="2pIpSl" to="v7ag:71UKpntoTuF" />
+                    <ref role="2pIpSl" to="v7ag:71UKpntoTuF" resolve="port" />
                     <node concept="36biLy" id="Z4PF258Ejv" role="2pJxcZ">
                       <node concept="37vLTw" id="Z4PF258EkA" role="36biLW">
                         <ref role="3cqZAo" node="Z4PF258Bec" resolve="port" />
@@ -207,7 +207,7 @@
               <node concept="2OqwBi" id="Z4PF258ChU" role="37vLTJ">
                 <node concept="_YI3z" id="Z4PF258CbP" role="2Oq$k0" />
                 <node concept="3TrEf2" id="Z4PF258W07" role="2OqNvi">
-                  <ref role="3Tt5mk" to="v7ag:Z4PF258VgS" />
+                  <ref role="3Tt5mk" to="v7ag:Z4PF258VgS" resolve="portExpr" />
                 </node>
               </node>
             </node>
@@ -269,7 +269,7 @@
             <node concept="3cpWsn" id="Z4PF258FX6" role="3cpWs9">
               <property role="TrG5h" value="port" />
               <node concept="3Tqbb2" id="Z4PF258FX7" role="1tU5fm">
-                <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
               </node>
               <node concept="1eOMI4" id="Z4PF258FX8" role="33vP2m">
                 <node concept="10QFUN" id="Z4PF258FX9" role="1eOMHV">
@@ -282,7 +282,7 @@
                     </node>
                   </node>
                   <node concept="3Tqbb2" id="Z4PF258FXh" role="10QFUM">
-                    <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+                    <ref role="ehGHo" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
                   </node>
                 </node>
               </node>
@@ -315,7 +315,7 @@
                   <node concept="2OqwBi" id="2BQGECQHGk6" role="2Oq$k0">
                     <node concept="_YI3z" id="2BQGECQHGc2" role="2Oq$k0" />
                     <node concept="3Tsc0h" id="2BQGECQHGSA" role="2OqNvi">
-                      <ref role="3TtcxE" to="v7ag:3TmmsQkDmpS" />
+                      <ref role="3TtcxE" to="v7ag:3TmmsQkDmpS" resolve="parameters" />
                     </node>
                   </node>
                   <node concept="TSZUe" id="2BQGECQHXZ7" role="2OqNvi">

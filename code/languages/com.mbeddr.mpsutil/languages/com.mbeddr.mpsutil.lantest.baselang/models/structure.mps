@@ -2,8 +2,8 @@
 <model ref="r:a27e1862-2250-48b7-bf71-c44af436c605(com.mbeddr.mpsutil.lantest.baselang.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" />
@@ -61,7 +61,7 @@
     <node concept="1TJgyj" id="3Ts5Ln3NdYJ" role="1TKVEi">
       <property role="IQ2ns" value="4493491910455648175" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tempModel" />
+      <property role="20kJfa" value="temporaryModel" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
     </node>

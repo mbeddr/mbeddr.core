@@ -2,8 +2,7 @@
 <model ref="r:3b42aafb-6fd2-4e7a-abd5-9604a4ab98dc(com.mbeddr.analyses.cpa.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
     <import index="km6g" ref="r:dd38f401-e2d0-4080-90a2-eb385c40b4f1(com.mbeddr.analyses.cpa.structure)" implicit="true" />
@@ -58,7 +57,7 @@
             <node concept="2OqwBi" id="4fjBjwDqsic" role="lb14g">
               <node concept="117lpO" id="4fjBjwDqshR" role="2Oq$k0" />
               <node concept="3TrEf2" id="3lXW7OZ4jxj" role="2OqNvi">
-                <ref role="3Tt5mk" to="km6g:3lXW7OZ4iBv" />
+                <ref role="3Tt5mk" to="km6g:3lXW7OZ4iBv" resolve="exp" />
               </node>
             </node>
           </node>

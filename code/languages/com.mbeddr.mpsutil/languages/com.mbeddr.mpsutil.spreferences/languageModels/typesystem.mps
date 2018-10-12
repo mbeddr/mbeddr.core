@@ -2,8 +2,7 @@
 <model ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:73a6d3fb-c0a9-417d-a5af-de0ab4fc732a(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="tgbt" ref="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" />
@@ -255,11 +254,11 @@
                       <ref role="1YBMHb" node="6yXlhvg4x_W" resolve="node" />
                     </node>
                     <node concept="3TrEf2" id="6yXlhvg4yIJ" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tmud:4RGMQ_4mHWT" />
+                      <ref role="3Tt5mk" to="tmud:4RGMQ_4mHWT" resolve="preferencePage" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="6yXlhvg4zdL" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tmud:5FuuJYqk6Ql" />
+                    <ref role="3Tt5mk" to="tmud:5FuuJYqk6Ql" resolve="rootConcept" />
                   </node>
                 </node>
               </node>
@@ -294,7 +293,7 @@
                 <ref role="1YBMHb" node="6yXlhvg4ZaM" resolve="node" />
               </node>
               <node concept="3TrEf2" id="6yXlhvg51yp" role="2OqNvi">
-                <ref role="3Tt5mk" to="tmud:4RGMQ_4mHWT" />
+                <ref role="3Tt5mk" to="tmud:4RGMQ_4mHWT" resolve="preferencePage" />
               </node>
             </node>
           </node>
@@ -306,7 +305,7 @@
                 <ref role="1YBMHb" node="6yXlhvg4ZaM" resolve="node" />
               </node>
               <node concept="3TrEf2" id="6yXlhvg50Lt" role="2OqNvi">
-                <ref role="3Tt5mk" to="tmud:4RGMQ_4mHWT" />
+                <ref role="3Tt5mk" to="tmud:4RGMQ_4mHWT" resolve="preferencePage" />
               </node>
             </node>
             <node concept="3TrcHB" id="6yXlhvg51ju" role="2OqNvi">
@@ -319,7 +318,7 @@
                 <ref role="1YBMHb" node="6yXlhvg4ZaM" resolve="node" />
               </node>
               <node concept="3TrEf2" id="6yXlhvg501x" role="2OqNvi">
-                <ref role="3Tt5mk" to="tmud:4RGMQ_4mHWT" />
+                <ref role="3Tt5mk" to="tmud:4RGMQ_4mHWT" resolve="preferencePage" />
               </node>
             </node>
             <node concept="3TrcHB" id="6yXlhvg501y" role="2OqNvi">

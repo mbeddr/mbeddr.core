@@ -2,7 +2,7 @@
 <model ref="r:e41aaa34-9e0e-485f-85e9-b9976ee2b604(com.mbeddr.doc.expressions.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -78,7 +78,7 @@
             <node concept="2OqwBi" id="4E$PniRKKKm" role="2Oq$k0">
               <node concept="13iPFW" id="4E$PniRKKK1" role="2Oq$k0" />
               <node concept="3TrEf2" id="4E$PniRKKKs" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
               </node>
             </node>
             <node concept="zfrQC" id="4E$PniRKKLi" role="2OqNvi">
@@ -106,7 +106,7 @@
             <node concept="2OqwBi" id="4E$PniRKPut" role="2Oq$k0">
               <node concept="13iPFW" id="4E$PniRKPu8" role="2Oq$k0" />
               <node concept="3TrEf2" id="4E$PniRKPuz" role="2OqNvi">
-                <ref role="3Tt5mk" to="f87k:4E$PniRKKXI" />
+                <ref role="3Tt5mk" to="f87k:4E$PniRKKXI" resolve="var" />
               </node>
             </node>
             <node concept="3TrcHB" id="4E$PniRKPuZ" role="2OqNvi">
@@ -129,7 +129,7 @@
           <node concept="2OqwBi" id="70kXLV5z9ep" role="3clFbG">
             <node concept="13iPFW" id="70kXLV5z8YC" role="2Oq$k0" />
             <node concept="3TrEf2" id="70kXLV5zdcR" role="2OqNvi">
-              <ref role="3Tt5mk" to="f87k:4E$PniRKKXI" />
+              <ref role="3Tt5mk" to="f87k:4E$PniRKKXI" resolve="var" />
             </node>
           </node>
         </node>

@@ -1,37 +1,66 @@
-// setting mbeddrMajor
-if (project.hasProperty('mbeddrMajor')) {
-    ext.mbeddrMajor = project.getProperty('mbeddrMajor')
-} else {
-    ext.mbeddrMajor = "1"
-}
 
-// setting mbeddrMinor
-if (project.hasProperty('mbeddrMinor')) {
-    ext.mbeddrMinor = project.getProperty('mbeddrMinor')
-} else {
-    ext.mbeddrMinor = "0"
-}
-
-// setting mbeddrBuild
-if (project.hasProperty('mbeddrBuild')) {
-    ext.mbeddrBuild = project.getProperty('mbeddrBuild')
-} else {
-    ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
-}
-
-ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor)
 
 // path variables
-ext.mpsHomeDir = new File(rootDir, "MPS/MPS-mbeddr-$mpsBuild/")
+// If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
+// the root directory).
+ext.skipResolveMps = project.hasProperty('mpsHomeDir')
+ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
+
+def userHome = System.properties['user.home']
+def mpsPluginsDirPattern
+if (System.properties['os.name'].toLowerCase().contains('mac')) {
+    mpsPluginsDirPattern = "$userHome/Library/Application Support/%s"
+} else {
+    mpsPluginsDirPattern = "$userHome/.%s/config/plugins"
+}
+
+if (project.hasProperty("MPS_PATHS_SELECTOR")) {
+    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
+} else {
+    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
+}
+
+task install() {
+    description "Install the required plugins into the MPS plugin repository"
+    group "Build Setup"
+    doFirst {
+        // check parent gradle file for definition of the variables
+        println "Installing required mbeddr plugins to '$mpsPluginsDir'"
+        if (!project.hasProperty("MPS_PATHS_SELECTOR")) {
+            println "To change 'MPS<>' part, pass MPS_PATHS_SELECTOR property to gradle with -PMPS_PATHS_SELECTOR=<custom path selector>"
+            println "The path selector only contains the the actual selector for instance \"MPS2017.3\" not the full qualifies path to the user plugin directory."
+        }
+    }
+}
+
+logger.info "skipResolveMps: {}, mpsHomeDir: {}", ext.skipResolveMps, ext.mpsHomeDir
+
+// JDK_HOME required for adding tools.jar into classpath of the forked ant process
+if (!hasProperty("jdk_home")) {
+    def java_home = System.properties['java.home']
+    def jdk_home = java_home
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        jdk_home = jdk_home + "/.."
+    }
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
+    }
+    ext.jdk_home = jdk_home
+}
+
+logger.info "jdk_home: $jdk_home"
+
+ext.artifactsDir = file(rootProject.projectDir.absolutePath + "/artifacts")
+
 ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
 ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
 ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
-String buildVersion = '-Dbuild='+mbeddrBuild
-String majorVersion = '-Dmajor.version='+mbeddrMajor
-String minorVersion = '-Dminor.version='+mbeddrMinor
+String buildVersion = '-Dbuild=' + ext.mbeddrBuildNumber
+String majorVersion = '-Dmajor.version=' + ext.mbeddrMajor
+String minorVersion = '-Dminor.version=' + ext.mbeddrMinor
 ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
-ext.slall_home = ['-Dsl-all.home=' + file(rootProject.projectDir.absolutePath + '/code/plugins/sl-all').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
-ext.dependsOnMPS_scriptArgs = ['ant', '-verbose', mps_home, build_dir, artifacts_root]
+ext.slall_home = ['-Dsl-all.home=' + file(artifactsDir.absolutePath + '/de.itemis.mps.extensions').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
+ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
 ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
 
 // path locations
@@ -55,10 +84,14 @@ subprojects {
     // configs
     configurations {
         mps
+        mpsExtensions
+        ant_lib
     }
 
     dependencies {
         mps "com.jetbrains:mps:$mpsBuild"
+        mpsExtensions "de.itemis.mps:extensions:2017.3+"
+        ant_lib "org.apache.ant:ant-junit:1.10.1"
     }
 }
 
@@ -68,7 +101,7 @@ File scriptFile(String relativePath) {
 }
 
 private static void configureRepositories(Project project) {
-    project.ext.repository = project.mbeddrBuild.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
+    project.ext.repository = project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
 
     project.publishing {
         repositories {
@@ -96,11 +129,13 @@ private static void configureRepositories(Project project) {
                 }
             }
         }
+        mavenCentral()
     }
 }
 
+
 task printVersion {
     doLast {
-        println "mbeddrBuildNumber: ${mbeddrBuildNumber}"
+        println "mbeddrBuildNumber: ${ext.mbeddrBuildNumber}"
     }
 }

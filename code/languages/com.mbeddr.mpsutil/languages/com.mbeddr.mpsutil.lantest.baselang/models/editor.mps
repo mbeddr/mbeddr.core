@@ -2,7 +2,7 @@
 <model ref="r:d4e2255c-09df-45e1-9d45-c9d1d3dba112(com.mbeddr.mpsutil.lantest.baselang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -97,7 +97,7 @@
               <property role="3F0ifm" value="temporary model:" />
             </node>
             <node concept="3F1sOY" id="3Ts5Ln3NdZg" role="3EZMnx">
-              <ref role="1NtTu8" to="pgnu:3Ts5Ln3NdYJ" resolve="tempModel" />
+              <ref role="1NtTu8" to="pgnu:3Ts5Ln3NdYJ" resolve="temporaryModel" />
             </node>
             <node concept="l2Vlx" id="3Ts5Ln3NdZh" role="2iSdaV" />
           </node>

@@ -2,8 +2,7 @@
 <model ref="r:191ca75a-225f-4c67-a642-25491d2597ac(com.mbeddr.core.util.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
@@ -67,7 +66,7 @@
               <node concept="2OqwBi" id="2DQOS5Hay2f" role="2Oq$k0">
                 <node concept="117lpO" id="2DQOS5Hay1U" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2DQOS5Hay2l" role="2OqNvi">
-                  <ref role="3Tt5mk" to="k146:2EBw14y1Xqq" />
+                  <ref role="3Tt5mk" to="k146:2EBw14y1Xqq" resolve="element" />
                 </node>
               </node>
               <node concept="3TrcHB" id="2DQOS5Hay2L" role="2OqNvi">
@@ -82,7 +81,7 @@
             <node concept="2OqwBi" id="2DQOS5Hay3d" role="lb14g">
               <node concept="117lpO" id="2DQOS5Hay2S" role="2Oq$k0" />
               <node concept="3TrEf2" id="2DQOS5Hay3j" role="2OqNvi">
-                <ref role="3Tt5mk" to="k146:2EBw14y1Xqp" />
+                <ref role="3Tt5mk" to="k146:2EBw14y1Xqp" resolve="value" />
               </node>
             </node>
           </node>

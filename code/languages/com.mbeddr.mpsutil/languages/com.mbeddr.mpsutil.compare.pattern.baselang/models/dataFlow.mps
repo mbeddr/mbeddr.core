@@ -2,8 +2,7 @@
 <model ref="r:e34e31a2-d04b-4ceb-9972-ad4bc5396237(com.mbeddr.mpsutil.compare.pattern.baselang.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="ycll" ref="r:32dcf0c9-9145-4165-a8a2-dc1bcc800cfe(com.mbeddr.mpsutil.compare.pattern.baselang.structure)" implicit="true" />
@@ -52,7 +51,7 @@
           <node concept="2OqwBi" id="d5uH5c0Vr3" role="3Ah4Yx">
             <node concept="3__QtB" id="d5uH5c0VoV" role="2Oq$k0" />
             <node concept="3TrEf2" id="7eUZPevAzqx" role="2OqNvi">
-              <ref role="3Tt5mk" to="ycll:1xH_Y2TxGO8" />
+              <ref role="3Tt5mk" to="ycll:1xH_Y2TxGO8" resolve="expression" />
             </node>
           </node>
         </node>
@@ -68,7 +67,7 @@
           <node concept="2OqwBi" id="d5uH5c0X3p" role="3Ah4Yx">
             <node concept="3__QtB" id="d5uH5c0X1g" role="2Oq$k0" />
             <node concept="3TrEf2" id="7eUZPevA$30" role="2OqNvi">
-              <ref role="3Tt5mk" to="ycll:$WtIWnG2jk" />
+              <ref role="3Tt5mk" to="ycll:$WtIWnG2jk" resolve="expression" />
             </node>
           </node>
         </node>

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
     <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
@@ -38,6 +38,7 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
@@ -55,11 +56,26 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+        <reference id="6657644269295214800" name="config" index="G9hjw" />
+      </concept>
+      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
+        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
+      </concept>
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
+        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
+      </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
@@ -116,6 +132,13 @@
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+    </language>
     <language id="e865cad2-7cc8-437a-951a-665bcbcb8b1a" name="com.mbeddr.cc.requirements">
       <concept id="8921256082857728250" name="com.mbeddr.cc.requirements.structure.FunctionalRequirementKind" flags="ng" index="22Mrfp" />
       <concept id="6657644269295006436" name="com.mbeddr.cc.requirements.structure.ReqDocParagraph" flags="ng" index="GmGrk" />
@@ -157,6 +180,7 @@
   </registry>
   <node concept="3fbPIq" id="3AFGfkfopOV">
     <property role="TrG5h" value="ReqsModule" />
+    <ref role="G9hjw" node="7AZhlVTpCUj" resolve="DefaultDocConfig" />
     <node concept="3fbQ3u" id="3AFGfkfopOW" role="3fbPIo">
       <property role="TrG5h" value="simple_req" />
       <property role="1ylvJX" value="a simple requirement" />
@@ -235,6 +259,18 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
+      <node concept="3abb7c" id="14WbUXJQdAw" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="14WbUXJQdAx" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="14WbUXJQdAy" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="14WbUXJQdAz" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="3AFGfkfopPV" role="2Q9xDr">
       <node concept="2Q9FjX" id="3AFGfkfopPW" role="2Q9FjI" />
@@ -242,8 +278,22 @@
     <node concept="3C_SZV" id="34TGZoa009V" role="2Q9xDr" />
     <node concept="2eOfOl" id="3AFGfkfopPX" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
+      <ref role="3oK8_y" node="14WbUXJQdAz" resolve="portable" />
       <node concept="2v9HqM" id="3AFGfkfopPY" role="2eOfOg">
         <ref role="2v9HqP" node="3AFGfkfopOZ" resolve="HelloWorld" />
+      </node>
+    </node>
+  </node>
+  <node concept="2SbYGP" id="7AZhlVTpCUj">
+    <property role="TrG5h" value="DefaultDocConfig" />
+    <node concept="2SbYGw" id="7AZhlVTpCUk" role="Cbewh">
+      <property role="TrG5h" value="temp" />
+      <node concept="9PVaO" id="7AZhlVTpCUl" role="9PVG_" />
+    </node>
+    <node concept="A7cYH" id="5V9QM6olRoR" role="A10yx">
+      <node concept="9PVaO" id="5V9QM6olRoS" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
   </node>

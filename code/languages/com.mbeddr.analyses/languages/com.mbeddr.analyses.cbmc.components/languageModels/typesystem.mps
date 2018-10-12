@@ -2,8 +2,7 @@
 <model ref="r:9135e576-577c-48f7-b31e-89a169fb2031(com.mbeddr.analyses.cbmc.components.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="c4ml" ref="r:965f5cbb-2e6c-4aa6-8166-554f0fb0053f(com.mbeddr.analyses.cbmc.components.structure)" />
@@ -52,11 +51,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -220,11 +217,11 @@
                       <node concept="3clFbF" id="5DCgtXuI7ZT" role="3cqZAp">
                         <node concept="2OqwBi" id="5DCgtXuI7ZU" role="3clFbG">
                           <node concept="2OqwBi" id="5DCgtXuI7ZV" role="2Oq$k0">
-                            <node concept="3cpWs2" id="5DCgtXuI7ZW" role="2Oq$k0">
+                            <node concept="37vLTw" id="5DCgtXuI7ZW" role="2Oq$k0">
                               <ref role="3cqZAo" node="5DCgtXuI800" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="5DCgtXuI7ZX" role="2OqNvi">
-                              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
                             </node>
                           </node>
                           <node concept="1mIQ4w" id="5DCgtXuI7ZY" role="2OqNvi">
@@ -246,7 +243,7 @@
           </node>
           <node concept="3clFbF" id="5DCgtXuI80a" role="3cqZAp">
             <node concept="2OqwBi" id="5DCgtXuI80w" role="3clFbG">
-              <node concept="3cpWsa" id="5DCgtXuI80b" role="2Oq$k0">
+              <node concept="37vLTw" id="5DCgtXuI80b" role="2Oq$k0">
                 <ref role="3cqZAo" node="5DCgtXuI7ZJ" resolve="voidRunnables" />
               </node>
               <node concept="2es0OD" id="5DCgtXuI80_" role="2OqNvi">
@@ -258,7 +255,7 @@
                           <node concept="Xl_RD" id="5DCgtXuI83Z" role="2MkJ7o">
                             <property role="Xl_RC" value="at least one return statement needed to make the verification work." />
                           </node>
-                          <node concept="3cpWs2" id="5DCgtXuI840" role="2OEOjV">
+                          <node concept="37vLTw" id="5DCgtXuI840" role="2OEOjV">
                             <ref role="3cqZAo" node="5DCgtXuI80C" resolve="it" />
                           </node>
                           <node concept="2ODE4t" id="5DCgtXuI843" role="2OEWyd">
@@ -269,15 +266,15 @@
                       <node concept="2OqwBi" id="5DCgtXuI83P" role="3clFbw">
                         <node concept="2OqwBi" id="5DCgtXuI83p" role="2Oq$k0">
                           <node concept="2OqwBi" id="5DCgtXuI82X" role="2Oq$k0">
-                            <node concept="3cpWs2" id="5DCgtXuI82C" role="2Oq$k0">
+                            <node concept="37vLTw" id="5DCgtXuI82C" role="2Oq$k0">
                               <ref role="3cqZAo" node="5DCgtXuI80C" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="5DCgtXuI833" role="2OqNvi">
-                              <ref role="3Tt5mk" to="v7ag:3TmmsQkDnQz" />
+                              <ref role="3Tt5mk" to="v7ag:3TmmsQkDnQz" resolve="body" />
                             </node>
                           </node>
                           <node concept="3Tsc0h" id="5DCgtXuI83v" role="2OqNvi">
-                            <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                            <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                           </node>
                         </node>
                         <node concept="1v1jN8" id="5DCgtXuI83V" role="2OqNvi" />
@@ -290,7 +287,7 @@
                                 <node concept="Xl_RD" id="5DCgtXuI848" role="2MkJ7o">
                                   <property role="Xl_RC" value="the last statement in the body must be a return statement to make the verification work." />
                                 </node>
-                                <node concept="3cpWs2" id="5DCgtXuI849" role="2OEOjV">
+                                <node concept="37vLTw" id="5DCgtXuI849" role="2OEOjV">
                                   <ref role="3cqZAo" node="5DCgtXuI80C" resolve="it" />
                                 </node>
                                 <node concept="2ODE4t" id="5DCgtXuI84a" role="2OEWyd">
@@ -303,15 +300,15 @@
                                 <node concept="2OqwBi" id="5DCgtXuI81S" role="2Oq$k0">
                                   <node concept="2OqwBi" id="5DCgtXuI81s" role="2Oq$k0">
                                     <node concept="2OqwBi" id="5DCgtXuI810" role="2Oq$k0">
-                                      <node concept="3cpWs2" id="5DCgtXuI80F" role="2Oq$k0">
+                                      <node concept="37vLTw" id="5DCgtXuI80F" role="2Oq$k0">
                                         <ref role="3cqZAo" node="5DCgtXuI80C" resolve="it" />
                                       </node>
                                       <node concept="3TrEf2" id="5DCgtXuI816" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="v7ag:3TmmsQkDnQz" />
+                                        <ref role="3Tt5mk" to="v7ag:3TmmsQkDnQz" resolve="body" />
                                       </node>
                                     </node>
                                     <node concept="3Tsc0h" id="5DCgtXuI81y" role="2OqNvi">
-                                      <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                                      <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                                     </node>
                                   </node>
                                   <node concept="1yVyf7" id="5DCgtXuI81Y" role="2OqNvi" />

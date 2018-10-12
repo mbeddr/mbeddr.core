@@ -2,14 +2,14 @@
 <model ref="r:83d6a018-c6c6-4282-9ac6-3f981c615adc(external_c_files)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="4" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
@@ -17,6 +17,17 @@
   </languages>
   <imports />
   <registry>
+    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
+      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
+        <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
+        <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
+      </concept>
+    </language>
+    <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
+      <concept id="8455208232410333108" name="com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer" flags="ng" index="2f$52y">
+        <child id="8455208232410333109" name="comments" index="2f$52z" />
+      </concept>
+    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
@@ -73,6 +84,7 @@
         <property id="4053481679317021370" name="check_signed_overflow" index="1nvAUA" />
         <property id="4053481679317021371" name="check_unsigned_overflow" index="1nvAUB" />
         <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
+        <property id="7634619718342724140" name="check_conversion" index="1UWlg3" />
       </concept>
       <concept id="4053481679317021363" name="com.mbeddr.analyses.cbmc.core.structure.AssertionsCBMCAnalysis" flags="ng" index="1nvAUJ" />
     </language>
@@ -98,7 +110,7 @@
       <concept id="8445711190801162149" name="com.mbeddr.analyses.cbmc.structure.PreprocessorMacro" flags="ng" index="3u2USL">
         <property id="8445711190801162297" name="value" index="3u2T6H" />
       </concept>
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
@@ -119,11 +131,6 @@
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty_old" index="3kgbRO" />
-        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile_old" index="1RwFax" />
-      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="6116558314501417952" name="com.mbeddr.core.modules.structure.HeaderDescriptor" flags="ng" index="rcWE1" />
@@ -133,6 +140,7 @@
       <concept id="6116558314501417934" name="com.mbeddr.core.modules.structure.ExternalResourceDescriptor" flags="ng" index="rcWEJ">
         <property id="6116558314501417936" name="path" index="rcWEL" />
       </concept>
+      <concept id="6116558314501417950" name="com.mbeddr.core.modules.structure.ObjResourceDescriptor" flags="ng" index="rcWEZ" />
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -163,9 +171,10 @@
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpW">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRP" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFay" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
       <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
@@ -176,7 +185,17 @@
         <child id="559958203687603517" name="imports" index="3W6d8T" />
       </concept>
     </language>
+    <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
+      <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
+        <property id="5652920968054438504" name="created" index="3ajGZ3" />
+        <property id="5652920968054438487" name="creator" index="3ajGZW" />
+        <child id="5652920968054438510" name="note" index="3ajGZ5" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -227,6 +246,9 @@
       </node>
       <node concept="2v9HqM" id="7kPcpiFfCFA" role="2eOfOg">
         <ref role="2v9HqP" node="7kPcpiFfA5U" resolve="_020_external_module" />
+      </node>
+      <node concept="2v9HqM" id="ZdgXCCHVGE" role="2eOfOg">
+        <ref role="2v9HqP" node="ZdgXCCHUE9" resolve="file2" />
       </node>
     </node>
   </node>
@@ -289,6 +311,64 @@
     </node>
     <node concept="2NXPZ9" id="2NVjDoI9sLZ" role="N3F5h">
       <property role="TrG5h" value="empty_1441293496928_1" />
+    </node>
+    <node concept="N3Fnx" id="ZdgXCCHUaE" role="N3F5h">
+      <property role="TrG5h" value="simple_assertion_1_2" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="ZdgXCCHUaF" role="3XIRFX">
+        <node concept="1QiMYF" id="ZdgXCCHUaG" role="3XIRFZ">
+          <node concept="OjmMv" id="ZdgXCCHUaH" role="3SJzmv">
+            <node concept="19SGf9" id="ZdgXCCHUaI" role="OjmMu">
+              <node concept="19SUe$" id="ZdgXCCHUaJ" role="19SJt6">
+                <property role="19SUeA" value="should pass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Y9XUq" id="ZdgXCCHUaK" role="3XIRFZ">
+          <node concept="3TlM44" id="ZdgXCCHUaL" role="Y9XUp">
+            <node concept="3TlMh9" id="ZdgXCCHUaM" role="3TlMhJ">
+              <property role="2hmy$m" value="4" />
+            </node>
+            <node concept="3O_q_g" id="ZdgXCCHUaN" role="3TlMhI">
+              <ref role="3O_q_h" node="ZdgXCCHUEa" resolve="add1" />
+              <node concept="3TlMh9" id="ZdgXCCHUaO" role="3O_q_j">
+                <property role="2hmy$m" value="3" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ZdgXCCHUaP" role="3XIRFZ" />
+        <node concept="1QiMYF" id="ZdgXCCHUaQ" role="3XIRFZ">
+          <node concept="OjmMv" id="ZdgXCCHUaR" role="3SJzmv">
+            <node concept="19SGf9" id="ZdgXCCHUaS" role="OjmMu">
+              <node concept="19SUe$" id="ZdgXCCHUaT" role="19SJt6">
+                <property role="19SUeA" value="should fail" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Y9XUq" id="ZdgXCCHUaU" role="3XIRFZ">
+          <node concept="3TlM44" id="ZdgXCCHUaV" role="Y9XUp">
+            <node concept="3O_q_g" id="ZdgXCCHUaW" role="3TlMhI">
+              <ref role="3O_q_h" node="ZdgXCCHUEa" resolve="add1" />
+              <node concept="3TlMh9" id="ZdgXCCHUaX" role="3O_q_j">
+                <property role="2hmy$m" value="2" />
+              </node>
+            </node>
+            <node concept="3TlMh9" id="ZdgXCCHUaY" role="3TlMhJ">
+              <property role="2hmy$m" value="4" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="ZdgXCCHUaZ" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ZdgXCCHTXj" role="N3F5h">
+      <property role="TrG5h" value="empty_1502442876669_164" />
     </node>
     <node concept="N3Fnx" id="28vOu_upFAy" role="N3F5h">
       <property role="TrG5h" value="simple_assertion_2" />
@@ -385,6 +465,9 @@
     <node concept="3GEVxB" id="4PtxuK92Ab4" role="2OODSX">
       <ref role="3GEb4d" node="4PtxuK92A2K" resolve="file1" />
     </node>
+    <node concept="3GEVxB" id="ZdgXCCHUZ_" role="2OODSX">
+      <ref role="3GEb4d" node="ZdgXCCHUE9" resolve="file2" />
+    </node>
   </node>
   <node concept="rcWEw" id="4PtxuK92A2K">
     <property role="TrG5h" value="file1" />
@@ -443,20 +526,32 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="4PtxuK92A2B" resolve="simple_assertion_1" />
-      <node concept="3NXOOs" id="28vOu_upGdq" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="3NXOOs" id="7zMit0Cd22R" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file1.c" />
       </node>
-      <node concept="3NXOOs" id="28vOu_upGdr" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="3NXOOs" id="7zMit0Cd22W" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file2.c" />
       </node>
+    </node>
+    <node concept="1nvAUJ" id="ZdgXCCHUsl" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="false" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="ZdgXCCHUaE" resolve="simple_assertion_1_2" />
     </node>
     <node concept="1nvAUJ" id="5tDzxi6QEb7" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -478,9 +573,7 @@
         <property role="TrG5h" value="_A_" />
         <property role="3u2T6H" value="2" />
       </node>
-      <node concept="9PVaO" id="28vOu_upGdA" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="9PVaO" id="7zMit0Cd22Z" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/" />
@@ -508,14 +601,13 @@
       <property role="1nvAUB" value="true" />
       <property role="2o64iB" value="true" />
       <property role="3u2WvC" value="true" />
+      <property role="1UWlg3" value="true" />
       <ref role="3V$Cn$" node="28vOu_upHgG" resolve="simple_robustness_1" />
       <node concept="3u2USL" id="5YWfxoAy1Tf" role="3u2XS$">
         <property role="TrG5h" value="_A_" />
         <property role="3u2T6H" value="2" />
       </node>
-      <node concept="9PVaO" id="28vOu_uqtPG" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="9PVaO" id="7zMit0Cd231" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/" />
@@ -541,9 +633,7 @@
         <property role="TrG5h" value="_A_" />
         <property role="3u2T6H" value="1" />
       </node>
-      <node concept="3NXOOs" id="7kPcpiFfCTM" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="3NXOOs" id="7zMit0Cd233" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
@@ -565,9 +655,7 @@
       <property role="2l50Mm" value="false" />
       <property role="3u2WvC" value="true" />
       <ref role="3V$Cn$" node="7kPcpiFfB0C" resolve="harness_add3" />
-      <node concept="3NXOOs" id="7kPcpiFfCUb" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="3NXOOs" id="7zMit0Cd235" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
@@ -593,12 +681,23 @@
       <property role="2l50Mm" value="false" />
       <property role="3u2WvC" value="false" />
       <ref role="3V$Cn$" node="7kPcpiFiUG1" resolve="harness_add_no_macro_defined" />
-      <node concept="3NXOOs" id="7kPcpiFiUYi" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="3NXOOs" id="7zMit0Cd237" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
+      </node>
+    </node>
+    <node concept="2f$52y" id="ZdgXCCHVGa" role="lGtFl">
+      <node concept="3vAitl" id="ZdgXCCHVGb" role="2f$52z">
+        <property role="3ajGZW" value="z003cemm" />
+        <property role="3ajGZ3" value="11.08.2017 09:21:48" />
+        <property role="19LeSh" value="property_name" />
+        <ref role="19LoX1" node="ZdgXCCHUsl" />
+        <node concept="19SGf9" id="ZdgXCCHVGc" role="3ajGZ5">
+          <node concept="19SUe$" id="ZdgXCCHVGd" role="19SJt6">
+            <property role="19SUeA" value="the hand written files are referenced directly from the external module" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -735,6 +834,42 @@
     </node>
     <node concept="3GEVxB" id="7kPcpiFfACo" role="2OODSX">
       <ref role="3GEb4d" node="7kPcpiFfA5U" resolve="_020_external_module" />
+    </node>
+  </node>
+  <node concept="rcWEw" id="ZdgXCCHUE9">
+    <property role="TrG5h" value="file2" />
+    <node concept="N3Fnw" id="ZdgXCCHUEa" role="N3F5h">
+      <property role="TrG5h" value="add1" />
+      <node concept="26Vqqz" id="ZdgXCCHUEb" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="ZdgXCCHUEc" role="1UOdpc">
+        <property role="TrG5h" value="x" />
+        <node concept="26Vqqz" id="ZdgXCCHUEd" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="rcWE1" id="ZdgXCCHUEe" role="rcWEr">
+      <property role="rcWEL" value="&quot;../../external_files/file2.h&quot;" />
+    </node>
+    <node concept="rcWEZ" id="ZdgXCCHUMm" role="rcWEr">
+      <property role="rcWEL" value="&quot;../../external_files/file2.c&quot;" />
+    </node>
+    <node concept="2f$52y" id="ZdgXCCHUM_" role="lGtFl">
+      <node concept="3vAitl" id="ZdgXCCHUMA" role="2f$52z">
+        <property role="3ajGZW" value="z003cemm" />
+        <property role="3ajGZ3" value="11.08.2017 09:17:05" />
+        <property role="19LeSh" value="IANC_property_name" />
+        <ref role="19LoX1" node="ZdgXCCHUE9" resolve="file2" />
+        <node concept="19SGf9" id="ZdgXCCHUMB" role="3ajGZ5">
+          <node concept="19SUe$" id="ZdgXCCHUMC" role="19SJt6">
+            <property role="19SUeA" value="this external module explicitly references external files" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

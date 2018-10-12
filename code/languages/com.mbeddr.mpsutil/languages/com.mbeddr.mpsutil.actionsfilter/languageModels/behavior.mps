@@ -2,7 +2,7 @@
 <model ref="r:48ef7588-196b-4d9d-b0a1-f8a83910685c(com.mbeddr.mpsutil.actionsfilter.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -129,6 +129,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -167,7 +170,7 @@
                 <node concept="2OqwBi" id="5ReuVUpcDoT" role="2Oq$k0">
                   <node concept="13iPFW" id="5ReuVUpcD8i" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5ReuVUpcDZB" role="2OqNvi">
-                    <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" />
+                    <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" resolve="actions" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="5ReuVUpcHH2" role="2OqNvi">
@@ -197,7 +200,7 @@
                 <node concept="2OqwBi" id="5ARcp1btCWV" role="2Oq$k0">
                   <node concept="13iPFW" id="5ARcp1btCWW" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5ARcp1btCWX" role="2OqNvi">
-                    <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" />
+                    <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" resolve="actions" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="5Vrdhqqt1KV" role="2OqNvi">
@@ -373,6 +376,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5ReuVUpdzRj">
+    <property role="3GE5qa" value="filter" />
     <ref role="13h7C2" to="au0v:5ReuVUpc9z_" resolve="AllowAction" />
     <node concept="13hLZK" id="5ReuVUpdzRk" role="13h7CW">
       <node concept="3clFbS" id="5ReuVUpdzRl" role="2VODD2" />
@@ -417,6 +421,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5ReuVUpd_wZ">
+    <property role="3GE5qa" value="filter" />
     <ref role="13h7C2" to="au0v:5FJiYrlIpAp" resolve="RemoveAction" />
     <node concept="13i0hz" id="5ReuVUpd_x2" role="13h7CS">
       <property role="TrG5h" value="refersToActionId" />

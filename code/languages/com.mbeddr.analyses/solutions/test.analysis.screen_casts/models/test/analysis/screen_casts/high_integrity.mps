@@ -77,6 +77,7 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
@@ -92,6 +93,10 @@
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -138,6 +143,9 @@
       <concept id="3793213301909798351" name="com.mbeddr.analyses.acsl.structure.Result" flags="ng" index="2HeCUD" />
       <concept id="3793213301909614895" name="com.mbeddr.analyses.acsl.structure.FunctionContract" flags="ng" index="2HfW99">
         <child id="3793213301909617373" name="functionContractMember" index="2HfWAV" />
+      </concept>
+      <concept id="3793213301909615744" name="com.mbeddr.analyses.acsl.structure.IAtomicContract" flags="ng" index="2HfWvA">
+        <child id="75361647380517795" name="exp" index="3sLAUB" />
       </concept>
       <concept id="6715381068726883387" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationConfigItem" flags="ng" index="31U8uV">
         <child id="6715381068726941300" name="generationKind" index="31UYnO" />
@@ -226,11 +234,6 @@
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
-    </language>
-    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
-      <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
-        <child id="6973658835837826906" name="exp" index="Y9XUp" />
-      </concept>
     </language>
   </registry>
   <node concept="N3F5e" id="368fPYHjDKi">
@@ -1058,7 +1061,7 @@
             </node>
           </node>
           <node concept="2H0slj" id="368fPYHkmKI" role="2E$nex">
-            <node concept="3TlM44" id="368fPYHkmLl" role="Y9XUp">
+            <node concept="3TlM44" id="368fPYHkmLl" role="3sLAUB">
               <node concept="1AkAhK" id="368fPYHkmXP" role="3TlMhJ">
                 <ref role="1AkAhZ" node="368fPYHjE19" resolve="EMERGENCY" />
               </node>
@@ -1105,6 +1108,7 @@
   <node concept="2v9HqL" id="368fPYHknoL">
     <node concept="29Nb31" id="368fPYHknoM" role="2ePNbc">
       <property role="TrG5h" value="lib" />
+      <ref role="3oK8_y" node="7fmKiPEtWzC" resolve="portable" />
       <node concept="2v9HqM" id="368fPYHknoO" role="2eOfOg">
         <ref role="2v9HqP" node="368fPYHjUTB" resolve="_01_cooling_dt" />
       </node>
@@ -1131,6 +1135,18 @@
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
+      <node concept="3abb7c" id="7fmKiPEtWz_" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWzA" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWzB" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWzC" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="368fPYHmp$X">

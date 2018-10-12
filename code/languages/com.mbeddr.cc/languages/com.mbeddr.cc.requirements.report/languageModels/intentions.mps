@@ -55,11 +55,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -203,7 +201,7 @@
           <node concept="2GrKxI" id="6QfbJ5PN2aN" role="2Gsz3X">
             <property role="TrG5h" value="m" />
           </node>
-          <node concept="3cpWsa" id="6QfbJ5PN2aQ" role="2GsD0m">
+          <node concept="37vLTw" id="6QfbJ5PN2aQ" role="2GsD0m">
             <ref role="3cqZAo" node="6QfbJ5PN29c" resolve="allModules" />
           </node>
           <node concept="3clFbS" id="6QfbJ5PN2aP" role="2LFqv$">
@@ -214,13 +212,13 @@
                     <node concept="2OqwBi" id="6QfbJ5PN2cZ" role="2Oq$k0">
                       <node concept="2Sf5sV" id="6QfbJ5PN2cE" role="2Oq$k0" />
                       <node concept="3Tsc0h" id="6QfbJ5PN2d5" role="2OqNvi">
-                        <ref role="3TtcxE" to="2c95:2TZO3Dbv6JU" />
+                        <ref role="3TtcxE" to="2c95:2TZO3Dbv6JU" resolve="contents" />
                       </node>
                     </node>
                     <node concept="TSZUe" id="6QfbJ5PN2dx" role="2OqNvi">
                       <node concept="1sne9v" id="6QfbJ5PN2b5" role="25WWJ7">
                         <node concept="1sne01" id="6QfbJ5PN2b6" role="1sne8H">
-                          <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                          <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                           <node concept="1shVQo" id="6QfbJ5PN2b8" role="ccFIB">
                             <ref role="1shVQp" to="2c95:2TZO3Dbv6N7" resolve="Section" />
                           </node>
@@ -247,12 +245,12 @@
                             </node>
                           </node>
                           <node concept="1sne01" id="6QfbJ5PN2cf" role="1sne05">
-                            <ref role="1snh0D" to="2c95:2TZO3Dbv6JU" />
+                            <ref role="1snh0D" to="2c95:2TZO3Dbv6JU" resolve="contents" />
                             <node concept="1shVQo" id="6QfbJ5PN2ct" role="ccFIB">
                               <ref role="1shVQp" to="9prt:519ky_SmIM1" resolve="RequirementsParagraph" />
                             </node>
                             <node concept="1sh8R2" id="6QfbJ5PN2cx" role="1sne05">
-                              <ref role="1sh8R3" to="9prt:519ky_SmIM2" />
+                              <ref role="1sh8R3" to="9prt:519ky_SmIM2" resolve="module" />
                               <node concept="2GrUjf" id="6QfbJ5PN2cz" role="1sh8R0">
                                 <ref role="2Gs0qQ" node="6QfbJ5PN2aN" resolve="m" />
                               </node>
@@ -297,11 +295,11 @@
                               <ref role="2Gs0qQ" node="6QfbJ5PN2aN" resolve="m" />
                             </node>
                             <node concept="2OqwBi" id="2U5fsQejebK" role="3uHU7B">
-                              <node concept="3cpWs2" id="2U5fsQejebL" role="2Oq$k0">
+                              <node concept="37vLTw" id="2U5fsQejebL" role="2Oq$k0">
                                 <ref role="3cqZAo" node="2U5fsQejebN" resolve="it" />
                               </node>
                               <node concept="3TrEf2" id="2U5fsQejebM" role="2OqNvi">
-                                <ref role="3Tt5mk" to="9prt:519ky_SmIM2" />
+                                <ref role="3Tt5mk" to="9prt:519ky_SmIM2" resolve="module" />
                               </node>
                             </node>
                           </node>

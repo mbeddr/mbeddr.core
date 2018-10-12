@@ -2,8 +2,7 @@
 <model ref="r:39b02af8-9b11-4446-bc48-2c375df3e675(com.mbeddr.mpsutil.multilingual.concept.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="phyx" ref="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d/r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.structure)" />
@@ -132,7 +131,7 @@
               <node concept="2OqwBi" id="2bng37sXCF$" role="2Oq$k0">
                 <node concept="EsrRn" id="2bng37sXCF_" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2bng37sXCFA" role="2OqNvi">
-                  <ref role="3Tt5mk" to="phyx:2bng37sXCCu" />
+                  <ref role="3Tt5mk" to="phyx:2bng37sXCCu" resolve="multiName" />
                 </node>
               </node>
               <node concept="3TrcHB" id="2bng37sXCFB" role="2OqNvi">
@@ -151,7 +150,7 @@
                 <node concept="2OqwBi" id="2bng37sXCFI" role="2Oq$k0">
                   <node concept="EsrRn" id="2bng37sXCFJ" role="2Oq$k0" />
                   <node concept="3TrEf2" id="2bng37sXCFK" role="2OqNvi">
-                    <ref role="3Tt5mk" to="phyx:2bng37sXCCu" />
+                    <ref role="3Tt5mk" to="phyx:2bng37sXCCu" resolve="multiName" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="2bng37sXCFL" role="2OqNvi">
@@ -206,7 +205,7 @@
             <node concept="2OqwBi" id="2bng37sXCGd" role="2GsD0m">
               <node concept="EsrRn" id="2bng37sXCGe" role="2Oq$k0" />
               <node concept="3Tsc0h" id="2bng37sXCGf" role="2OqNvi">
-                <ref role="3TtcxE" to="phyx:2bng37sXCCL" />
+                <ref role="3TtcxE" to="phyx:2bng37sXCCL" resolve="values" />
               </node>
             </node>
             <node concept="3clFbS" id="2bng37sXCGg" role="2LFqv$">
@@ -236,7 +235,7 @@
                       <ref role="2Gs0qQ" node="2bng37sXCGc" resolve="value" />
                     </node>
                     <node concept="3TrEf2" id="2bng37sXCGu" role="2OqNvi">
-                      <ref role="3Tt5mk" to="phyx:2Hv7KkRk$Y2" />
+                      <ref role="3Tt5mk" to="phyx:2Hv7KkRk$Y2" resolve="language" />
                     </node>
                   </node>
                 </node>
@@ -258,7 +257,7 @@
                 <node concept="2OqwBi" id="2bng37sXCG_" role="2Oq$k0">
                   <node concept="EsrRn" id="2bng37sXCGA" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="2bng37sXCGB" role="2OqNvi">
-                    <ref role="3TtcxE" to="phyx:2bng37sXCCL" />
+                    <ref role="3TtcxE" to="phyx:2bng37sXCCL" resolve="values" />
                   </node>
                 </node>
                 <node concept="WFELt" id="2bng37sXCGC" role="2OqNvi" />
@@ -275,7 +274,7 @@
                   <ref role="3cqZAo" node="2bng37sXCGy" resolve="newValue" />
                 </node>
                 <node concept="3TrEf2" id="2bng37sXCGI" role="2OqNvi">
-                  <ref role="3Tt5mk" to="phyx:2Hv7KkRk$Y2" />
+                  <ref role="3Tt5mk" to="phyx:2Hv7KkRk$Y2" resolve="language" />
                 </node>
               </node>
             </node>

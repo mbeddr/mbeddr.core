@@ -2,13 +2,13 @@
 <model ref="r:5524d5d3-b0a6-45d1-8003-a1549b3f7cc3(com.mbeddr.build.templates.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
   </languages>
   <imports>
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
     <import index="3fk" ref="r:caa661d5-e529-469c-bb25-dfa7a83b768e(com.mbeddr.allScripts.build)" />
   </imports>
@@ -145,12 +145,6 @@
       <ref role="1l3spb" to="ffeo:5mc7nVumjii" resolve="mpsDebuggerPlugin" />
       <node concept="398BVA" id="1o_$mJEhPAA" role="2JcizS">
         <ref role="398BVh" node="23LEVbRX3hP" resolve="mps.home" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="4hvHh3QY3Zv" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QY5vL" role="2JcizS">
-        <ref role="398BVh" node="2Xjt3l5c8Xb" resolve="sl-all.artifacts" />
       </node>
     </node>
     <node concept="2sgV4H" id="6ucYLjokM$t" role="1l3spa">
@@ -350,12 +344,6 @@
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6RmoJr9F21A" role="2JcizS">
         <ref role="398BVh" node="6RmoJr9ESRx" resolve="platform.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="7gJCdy_uI1V" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="7gJCdy_uKyG" role="2JcizS">
-        <ref role="398BVh" node="dYB2BxirvB" resolve="sl-all.artifacts" />
       </node>
     </node>
     <node concept="398rNT" id="3$3J06WftG_" role="1l3spd">

@@ -627,14 +627,8 @@
     <node concept="2flH9Z" id="6XvT233IskQ" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.devkit.actions.GoToOverridingBehaviorMethod_Action" />
     </node>
-    <node concept="2flH9Z" id="6XvT233Iso1" role="2flH9W">
-      <property role="2flH96" value="MainToolBarSettings" />
-    </node>
     <node concept="2flH9Z" id="6XvT233Isrd" role="2flH9W">
       <property role="2flH96" value="VcsToobarActions" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Isuq" role="2flH9W">
-      <property role="2flH96" value="ShowSettings" />
     </node>
     <node concept="2flH9Z" id="6XvT233IsxC" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.CopyNodeName_Action" />
@@ -689,6 +683,15 @@
     </node>
     <node concept="2flH9Z" id="6XvT233Ixzj" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.make.actions.JavaModuleActions_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRbRNa" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.make.actions.MakeModule_Action" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRbSiT" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.make.actions.RebuildModule_Action" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRbSMJ" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.make.actions.CleanModule_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233Iz$s" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.vcs.plugin.ModuleVcsActions_ActionGroup" />
@@ -764,6 +767,39 @@
     </node>
     <node concept="2flH9Z" id="2zyvt0HGdvd" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.ModelNewActions_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="4dmlckbYDzb" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.NewModel_Action" />
+    </node>
+    <node concept="2flH9Z" id="1xh_EoiZJqs" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.ModelNewActions_ActionGroupnewRoot" />
+    </node>
+    <node concept="2flH9Z" id="1xh_EoiZJA5" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.CreateRootNode_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="1xh_EoiZJyc" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.NewSubModel_Action" />
+    </node>
+    <node concept="2flH9Z" id="1xh_EoiZJHP" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.NewSubTestModel_Action" />
+    </node>
+    <node concept="2flH9Z" id="1xh_EoiZTE6" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.SolutionNewActions_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRbR3Q" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.DebugActions_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRbTyx" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.lang.typesystem.pluginSolution.plugin.ShowNodeType_Action" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRcIfi" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.dataflow.ui.plugin.DataFlowGroup_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRcHBa" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.dataflow.ui.plugin.ShowInterProceduralDataFlowGraph_Action" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRcIR$" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.dataflow.ui.plugin.ShowAugmentedInterProceduralDataFlowGraph_Action" />
     </node>
   </node>
   <node concept="2flHaf" id="5re6bl11R$A">

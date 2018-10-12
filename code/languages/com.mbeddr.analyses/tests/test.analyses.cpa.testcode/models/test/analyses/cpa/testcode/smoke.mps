@@ -6,9 +6,7 @@
     <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
-  <imports>
-    <import index="gyxa" ref="r:358c4d91-5ac8-448a-bb83-b17dacd29ba8(com.mbeddr.analyses.__spreferences.PlatformTemplates)" />
-  </imports>
+  <imports />
   <registry>
     <language id="fe179c61-4531-423b-a95c-f5f59a664603" name="com.mbeddr.analyses.cpa">
       <concept id="3854501276818680286" name="com.mbeddr.analyses.cpa.structure.VERIFIER_assume" flags="ng" index="ardAz">
@@ -51,6 +49,7 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
@@ -67,6 +66,10 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -87,7 +90,7 @@
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
       <concept id="4887422885165621122" name="com.mbeddr.analyses.cbmc.structure.CPROVERassume" flags="ng" index="1EIGaU">
         <child id="4887422885165621123" name="exp" index="1EIGaV" />
       </concept>
@@ -489,6 +492,7 @@
     <node concept="MH4UO" id="4BmZfiOiCDP" role="2Q9xDr" />
     <node concept="29Nb31" id="4BmZfiOhF5G" role="2ePNbc">
       <property role="TrG5h" value="lib" />
+      <ref role="3oK8_y" node="7fmKiPEtWzw" resolve="portable" />
       <node concept="2v9HqM" id="4BmZfiOhF5I" role="2eOfOg">
         <ref role="2v9HqP" node="4BmZfiOhEZA" resolve="smoke" />
       </node>
@@ -506,6 +510,18 @@
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
       <property role="3I8uaA" value="" />
+      <node concept="3abb7c" id="7fmKiPEtWzt" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWzu" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWzv" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWzw" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="3lXW7OZ4oBP">

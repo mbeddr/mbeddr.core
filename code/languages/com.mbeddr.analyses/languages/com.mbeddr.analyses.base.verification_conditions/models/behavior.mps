@@ -2,9 +2,9 @@
 <model ref="r:34d92fb4-3bcd-4a16-881f-8e6acf83c737(com.mbeddr.analyses.base.verification_conditions.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -342,7 +342,7 @@
   </node>
   <node concept="13h7C7" id="46evrC8ehCv">
     <property role="3GE5qa" value="verification_condition" />
-    <ref role="13h7C2" to="pyey:2gQe_W8E0vC" resolve="BeforePExistsQ" />
+    <ref role="13h7C2" to="pyey:2gQe_W8E0vC" resolve="BeforeQExistsP" />
     <node concept="13i0hz" id="46evrC8ehDo" role="13h7CS">
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
@@ -664,7 +664,7 @@
   </node>
   <node concept="13h7C7" id="3V3CJZuMScF">
     <property role="3GE5qa" value="statements" />
-    <ref role="13h7C2" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
+    <ref role="13h7C2" to="pyey:3V3CJZuMScE" resolve="IAssertLike" />
     <node concept="13i0hz" id="3V3CJZuMSfi" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />

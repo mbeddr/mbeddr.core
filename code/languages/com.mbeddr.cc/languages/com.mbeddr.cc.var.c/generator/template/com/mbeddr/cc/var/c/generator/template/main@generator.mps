@@ -57,13 +57,11 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -109,8 +107,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -176,7 +174,7 @@
           </node>
           <node concept="3clFbC" id="78Ts1skprkL" role="3clFbw">
             <node concept="10Nm6u" id="78Ts1skprkO" role="3uHU7w" />
-            <node concept="3cpWsa" id="78Ts1skprks" role="3uHU7B">
+            <node concept="37vLTw" id="78Ts1skprks" role="3uHU7B">
               <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
             </node>
           </node>
@@ -188,14 +186,13 @@
               <ref role="ehGHo" to="qdv7:5DBke2vwmTj" resolve="VariabilityConfigItem" />
             </node>
             <node concept="1PxgMI" id="4ha9sSdQLUd" role="33vP2m">
-              <ref role="1m5ApE" to="qdv7:5DBke2vwmTj" resolve="VariabilityConfigItem" />
               <node concept="2OqwBi" id="4ha9sSdQLUe" role="1m5AlR">
                 <node concept="2OqwBi" id="4ha9sSdQLUf" role="2Oq$k0">
                   <node concept="37vLTw" id="4ha9sSdQLUg" role="2Oq$k0">
                     <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
                   </node>
                   <node concept="3Tsc0h" id="4ha9sSdQLUh" role="2OqNvi">
-                    <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" />
+                    <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
                   </node>
                 </node>
                 <node concept="1z4cxt" id="4ha9sSdQLUi" role="2OqNvi">
@@ -203,7 +200,7 @@
                     <node concept="3clFbS" id="4ha9sSdQLUk" role="1bW5cS">
                       <node concept="3clFbF" id="4ha9sSdQLUl" role="3cqZAp">
                         <node concept="2OqwBi" id="4ha9sSdQLUm" role="3clFbG">
-                          <node concept="3cpWs2" id="4ha9sSdQLUn" role="2Oq$k0">
+                          <node concept="37vLTw" id="4ha9sSdQLUn" role="2Oq$k0">
                             <ref role="3cqZAo" node="4ha9sSdQLUq" resolve="it" />
                           </node>
                           <node concept="1mIQ4w" id="4ha9sSdQLUo" role="2OqNvi">
@@ -220,6 +217,9 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="chp4Y" id="1SbcsMA8Icg" role="3oSUPX">
+                <ref role="cht4Q" to="qdv7:5DBke2vwmTj" resolve="VariabilityConfigItem" />
               </node>
             </node>
           </node>

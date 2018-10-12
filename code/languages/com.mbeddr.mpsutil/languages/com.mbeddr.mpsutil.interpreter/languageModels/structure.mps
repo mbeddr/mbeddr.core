@@ -2,9 +2,8 @@
 <model ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -15,6 +14,13 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -160,6 +166,12 @@
     <property role="R4oN_" value="call evaluator on arbitrary expression" />
     <property role="EcuMT" value="8615074351687435493" />
     <ref role="1TJDcQ" node="7oujAIeQkO7" resolve="AbstractRecursionExpression" />
+    <node concept="1TJgyj" id="7dN4gbai3_k" role="1TKVEi">
+      <property role="IQ2ns" value="8319011640364775764" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="trace" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4X7QcQ2Rofu">
     <property role="3GE5qa" value="Evaluator.Implementation" />
@@ -279,7 +291,7 @@
     <property role="EcuMT" value="5934114435583058812" />
     <ref role="1TJDcQ" node="2bBLuwRk6gL" resolve="DummyEvaluator" />
     <node concept="1TJgyi" id="7F2vPZ3BCjK" role="1TKVEl">
-      <property role="TrG5h" value="cache" />
+      <property role="TrG5h" value="cacheValues" />
       <property role="IQ2nx" value="8845772667389641968" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
@@ -618,6 +630,102 @@
     <property role="EcuMT" value="6606989268204852110" />
     <property role="3GE5qa" value="Coverage" />
     <property role="TrG5h" value="IExcludeFromCoverage" />
+  </node>
+  <node concept="1TIwiD" id="6MNhNeU4Xm5">
+    <property role="TrG5h" value="ExprOperationCallExpression" />
+    <property role="34LRSv" value="#()-&gt;" />
+    <property role="R4oN_" value="calls an operation including stack and positional parameter handling" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="EcuMT" value="7832682464418190725" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6MNhNeU4Xm6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actuals" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7832682464418190726" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6MNhNeU4Xm7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="formals" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7832682464418190727" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6MNhNeU4Xml" role="1TKVEi">
+      <property role="IQ2ns" value="7832682464418190741" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6MNhNeUBmBq">
+    <property role="EcuMT" value="7832682464427207130" />
+    <property role="TrG5h" value="StopExpression" />
+    <property role="34LRSv" value="stop" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6MNhNeUBmBr" role="1TKVEi">
+      <property role="IQ2ns" value="7832682464426609245" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6bG6MAFRAaG">
+    <property role="EcuMT" value="7128102176011739820" />
+    <property role="TrG5h" value="IInterpreterWrapperType" />
+  </node>
+  <node concept="PlHQZ" id="3T40JVg3mgZ">
+    <property role="EcuMT" value="4486714422203343935" />
+    <property role="3GE5qa" value="tracing" />
+    <property role="TrG5h" value="ITrivialNode" />
+  </node>
+  <node concept="1TIwiD" id="5d4VabuMFGB">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <property role="TrG5h" value="TraceExpression" />
+    <property role="34LRSv" value="trace" />
+    <property role="R4oN_" value="computation trace" />
+    <property role="EcuMT" value="6000180787831028519" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="7obiejCehKv">
+    <property role="EcuMT" value="8505972469205113887" />
+    <property role="TrG5h" value="ITracerFrame" />
+    <property role="3GE5qa" value="tracing" />
+  </node>
+  <node concept="PlHQZ" id="4hW8Ne0aLGg">
+    <property role="EcuMT" value="4934857995791833872" />
+    <property role="3GE5qa" value="tracing" />
+    <property role="TrG5h" value="IReveal" />
+  </node>
+  <node concept="1TIwiD" id="37V13JR9f0m">
+    <property role="EcuMT" value="3601476982608818198" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <property role="TrG5h" value="CoverConceptStatement" />
+    <property role="34LRSv" value="cover" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyj" id="37V13JR9f6$" role="1TKVEi">
+      <property role="IQ2ns" value="3601476982608818596" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="conc" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2ufoZQIGI7m">
+    <property role="EcuMT" value="2850607030357647830" />
+    <property role="TrG5h" value="ValueInspector" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="2ufoZQIGI7n" role="lGtFl">
+      <property role="Hh88m" value="valueInspector" />
+      <node concept="trNpa" id="2ufoZQIGI7p" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
   </node>
 </model>
 

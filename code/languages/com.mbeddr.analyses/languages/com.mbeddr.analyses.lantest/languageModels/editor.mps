@@ -2,7 +2,7 @@
 <model ref="r:6f0a512e-3c77-4c81-87c7-99d366314d15(com.mbeddr.analyses.lantest.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -92,14 +92,14 @@
   <node concept="24kQdi" id="30nlpkLb$Zv">
     <ref role="1XX52x" to="fowb:30nlpkLb$Zl" resolve="SpecificConcepts" />
     <node concept="3F0ifn" id="30nlpkLb$Zx" role="2wV5jI">
-      <property role="3F0ifm" value="concecpts_chooser_testing" />
+      <property role="3F0ifm" value="concepts_chooser_testing" />
     </node>
   </node>
   <node concept="24kQdi" id="52eR6w5Pjou">
     <ref role="1XX52x" to="fowb:52eR6w5Pjok" resolve="RandomImplementationModuleFromSolution" />
     <node concept="3EZMnI" id="52eR6w5Pjow" role="2wV5jI">
       <node concept="3F0ifn" id="52eR6w5Pjox" role="3EZMnx">
-        <property role="3F0ifm" value="random from" />
+        <property role="3F0ifm" value="random implementation module from" />
       </node>
       <node concept="3F1sOY" id="52eR6w5Pjoy" role="3EZMnx">
         <ref role="1NtTu8" to="fowb:52eR6w5Pjol" resolve="module" />

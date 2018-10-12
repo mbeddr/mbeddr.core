@@ -2,15 +2,15 @@
 <model ref="r:e498bea4-ad7d-4784-a376-9703cdb1b7fd(tests.ts.core.interpreter@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -227,7 +227,7 @@
         <child id="5934114435582613364" name="body" index="3vcmbn" />
       </concept>
       <concept id="5934114435583058812" name="com.mbeddr.mpsutil.interpreter.structure.AbstractEvaluator" flags="ng" index="3va1rv">
-        <property id="8845772667389641968" name="cache" index="2TnfIJ" />
+        <property id="8845772667389641968" name="cacheValues" index="2TnfIJ" />
         <child id="5934114435583235459" name="constraints" index="3vbI0w" />
         <child id="5934114435584084790" name="evaluator" index="3vQZUl" />
       </concept>
@@ -774,6 +774,30 @@
                     <node concept="3cmrfG" id="44jZT9phOOv" role="33vP2m">
                       <property role="3cmrfH" value="1" />
                     </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6_YWcPtUWh6" role="3cqZAp">
+                  <node concept="2OqwBi" id="6_YWcPtUWh3" role="3clFbG">
+                    <node concept="10M0yZ" id="6_YWcPtUWh4" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    </node>
+                    <node concept="liA8E" id="6_YWcPtUWh5" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(int):void" resolve="println" />
+                      <node concept="37vLTw" id="6_YWcPtUWhO" role="37wK5m">
+                        <ref role="3cqZAo" node="44jZT9phOO1" resolve="a" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6_YWcPtUWna" role="3cqZAp">
+                  <node concept="3SKdUq" id="6_YWcPtUWnc" role="3SKWNk">
+                    <property role="3SKdUp" value="line above is just to ensure there's reference to 'a' and therefore " />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6_YWcPtUWon" role="3cqZAp">
+                  <node concept="3SKdUq" id="6_YWcPtUWop" role="3SKWNk">
+                    <property role="3SKdUp" value="no 'unused local variable warning', the one we don't care about here" />
                   </node>
                 </node>
               </node>
@@ -1902,6 +1926,45 @@
                             </node>
                           </node>
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6_YWcPtUBN7" role="3cqZAp">
+                  <node concept="3SKdUq" id="6_YWcPtUBN9" role="3SKWNk">
+                    <property role="3SKdUp" value="Next line is just to suppress warnings from check_UnusedLocalVariableDeclaration." />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6_YWcPtUM_Z" role="3cqZAp">
+                  <node concept="3SKdUq" id="6_YWcPtUMA1" role="3SKWNk">
+                    <property role="3SKdUp" value="I don't want to add extra 'check warning' on variable declaration as it makes statement awkward and hard to read," />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6_YWcPtUMJ5" role="3cqZAp">
+                  <node concept="3SKdUq" id="6_YWcPtUMJ7" role="3SKWNk">
+                    <property role="3SKdUp" value="and I don't know any better way to denote we'd like to ignore certain nodes." />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6_YWcPtUAXg" role="3cqZAp">
+                  <node concept="2OqwBi" id="6_YWcPtUAXd" role="3clFbG">
+                    <node concept="10M0yZ" id="6_YWcPtUAXe" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    </node>
+                    <node concept="liA8E" id="6_YWcPtUAXf" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.printf(java.lang.String,java.lang.Object...):java.io.PrintStream" resolve="printf" />
+                      <node concept="Xl_RD" id="6_YWcPtUB5I" role="37wK5m" />
+                      <node concept="37vLTw" id="6_YWcPtUB8x" role="37wK5m">
+                        <ref role="3cqZAo" node="44jZT9pAZ1g" resolve="c" />
+                      </node>
+                      <node concept="37vLTw" id="6_YWcPtUBau" role="37wK5m">
+                        <ref role="3cqZAo" node="44jZT9pATPv" resolve="n" />
+                      </node>
+                      <node concept="37vLTw" id="6_YWcPtUBc6" role="37wK5m">
+                        <ref role="3cqZAo" node="44jZT9pAMuR" resolve="m" />
+                      </node>
+                      <node concept="37vLTw" id="6_YWcPtUBGK" role="37wK5m">
+                        <ref role="3cqZAo" node="44jZT9pBBRX" resolve="i" />
                       </node>
                     </node>
                   </node>
@@ -3482,6 +3545,10 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqQb8" role="37wK5m" />
+              <node concept="3clFbT" id="7WAr$Vc4S3y" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
             </node>
           </node>
         </node>
@@ -3641,6 +3708,10 @@
                 <node concept="HV5vD" id="2nzO3M_RxBn" role="2ShVmc">
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
+              </node>
+              <node concept="10Nm6u" id="6wNYzrUqQjM" role="37wK5m" />
+              <node concept="3clFbT" id="7WAr$Vc4RYE" role="37wK5m">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>
@@ -6179,6 +6250,10 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqOQW" role="37wK5m" />
+              <node concept="3clFbT" id="7WAr$Vc4R1g" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
             </node>
           </node>
         </node>
@@ -6309,6 +6384,10 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqP0j" role="37wK5m" />
+              <node concept="3clFbT" id="7WAr$Vc4R6c" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
             </node>
           </node>
         </node>
@@ -6422,6 +6501,10 @@
                 <node concept="HV5vD" id="2nzO3M_Rx7L" role="2ShVmc">
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
+              </node>
+              <node concept="10Nm6u" id="6wNYzrUqP9E" role="37wK5m" />
+              <node concept="3clFbT" id="7WAr$Vc4Rb8" role="37wK5m">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>
@@ -6568,6 +6651,10 @@
                 <node concept="HV5vD" id="2nzO3M_RxcQ" role="2ShVmc">
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
+              </node>
+              <node concept="10Nm6u" id="6wNYzrUqPj1" role="37wK5m" />
+              <node concept="3clFbT" id="7WAr$Vc4RgD" role="37wK5m">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>
@@ -7724,6 +7811,10 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqNiY" role="37wK5m" />
+              <node concept="3clFbT" id="7WAr$Vc4Q3V" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
             </node>
           </node>
         </node>
@@ -7854,6 +7945,10 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqNsl" role="37wK5m" />
+              <node concept="3clFbT" id="7WAr$Vc4PYZ" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
             </node>
           </node>
         </node>
@@ -7967,6 +8062,10 @@
                 <node concept="HV5vD" id="2nzO3M_RwoF" role="2ShVmc">
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
+              </node>
+              <node concept="10Nm6u" id="6wNYzrUqN_G" role="37wK5m" />
+              <node concept="3clFbT" id="7WAr$Vc4PU3" role="37wK5m">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>
@@ -8113,6 +8212,10 @@
                 <node concept="HV5vD" id="2nzO3M_Rwwa" role="2ShVmc">
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
+              </node>
+              <node concept="10Nm6u" id="6wNYzrUqNJ3" role="37wK5m" />
+              <node concept="3clFbT" id="7WAr$Vc4PP7" role="37wK5m">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>

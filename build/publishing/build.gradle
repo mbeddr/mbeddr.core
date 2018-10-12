@@ -1,0 +1,99 @@
+import java.time.*
+import de.itemis.mps.gradle.GitBasedVersioning
+
+plugins {
+  id "co.riiid.gradle" version "0.4.2"
+}
+
+def artifactsRoot = rootProject.projectDir.absolutePath + "/artifacts"
+
+def buildNumber
+if (rootProject.hasProperty("build.number"))
+{
+    buildNumber = rootProject.getProperty("build.number")
+} else {
+  buildNumber = ""
+}
+
+
+LocalDateTime t = LocalDateTime.now();
+
+def releaseNotes = """Automated Nighly build from ${t as String}."""
+
+def windowsFileName = "mbeddr-win-" + t.getYear() + "-" +
+				t.getMonthValue() +"-"+ t.getDayOfMonth() +".exe"
+
+def macosFileName = "mbeddr-macos-" + t.getYear() + "-" +
+				t.getMonthValue() +"-"+ t.getDayOfMonth() +".dmg"
+
+
+def allInOneFileName = "com.mbeddr.allInOne-${ext.mbeddrBuildNumber}-MPS-${mpsBuild}.zip"
+def tutorialFileName = "com.mbeddr.tutorial-${ext.mbeddrBuildNumber}-MPS-${mpsBuild}.zip"
+def platformFileName = "platform-distribution-${ext.mbeddrBuildNumber}-MPS-${mpsBuild}.zip"
+
+github {
+    owner = 'mbeddr'
+    repo = 'mbeddr.core'
+    token = rootProject.hasProperty("github.token") ? rootProject.getProperty("github.token") : "empty"
+    tagName = 'nightly-' + buildNumber
+    targetCommitish = GitBasedVersioning.getGitCommitHash()
+    name = 'Nighly Build ' + buildNumber
+    body = releaseNotes
+    prerelease = true
+    assets = [
+            artifactsRoot + "/com.mbeddr.allInOne/" + allInOneFileName,
+            artifactsRoot + "/com.mbeddr.tutorial/" + tutorialFileName,
+            artifactsRoot + "/com.mbeddr.platform.distribution/" + platformFileName,
+            artifactsRoot + "/rcp/" + windowsFileName,
+            artifactsRoot + "/rcp/" + macosFileName
+    ]
+}
+
+task renameWindowsFile(type: Copy) {
+		from(artifactsRoot+ "/rcp")
+		into(artifactsRoot + "/rcp")
+		include('Setup.exe')
+		rename ('Setup.exe', windowsFileName)
+}
+
+task renameMacosFile(type: Copy) {
+		from(artifactsRoot+ "/rcp")
+		into(artifactsRoot + "/rcp")
+		include('mbeddr-macos.dmg')
+		rename ('mbeddr-macos.dmg', macosFileName)
+}
+
+task renameAllInOne(type: Copy, dependsOn: ':build:com.mbeddr:distribution:build_all_in_one') {
+    from(artifactsRoot + "/com.mbeddr.allInOne/")
+    into(artifactsRoot + "/com.mbeddr.allInOne/")
+    include("com.mbeddr.allInOne.zip")
+    rename("com.mbeddr.allInOne.zip", allInOneFileName)
+}
+
+task renameTutorial(type: Copy, dependsOn: ':build:com.mbeddr:distribution:package_tutorial') {
+    from(artifactsRoot + "/com.mbeddr.tutorial/")
+    into(artifactsRoot + "/com.mbeddr.tutorial/")
+    include("com.mbeddr.tutorial.zip")
+    rename("com.mbeddr.tutorial.zip", tutorialFileName)
+}
+
+task renamePlarform(type: Copy, dependsOn: ':build:com.mbeddr:distribution:build_platform_distribution') {
+    from(artifactsRoot + "/com.mbeddr.platform.distribution/")
+    into(artifactsRoot + "/com.mbeddr.platform.distribution/")
+    include("platform-distribution.zip")
+    rename("platform-distribution.zip", platformFileName)
+}
+
+task copyRenameAndDeleteWindowsSetupFile(type: Delete, dependsOn: [renameWindowsFile]) {
+		delete artifactsRoot + "/rcp/Setup.exe"
+}
+
+task copyRenameAndDeleteMacosSetupFile(type: Delete, dependsOn: [renameMacosFile]) {
+		delete artifactsRoot + "/rcp/mbeddr-macos.dmg"
+}
+
+githubRelease.dependsOn copyRenameAndDeleteWindowsSetupFile,
+        copyRenameAndDeleteMacosSetupFile,
+        renameAllInOne,
+        renamePlarform,
+        renameTutorial
