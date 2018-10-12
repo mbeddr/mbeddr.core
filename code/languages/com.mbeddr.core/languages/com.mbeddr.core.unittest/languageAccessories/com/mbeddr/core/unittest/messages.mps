@@ -3014,7 +3014,7 @@
           <node concept="3O_q_g" id="53MG8KzdTxX" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="53MG8KzdTB$" role="3O_q_j">
-              <property role="PhEJT" value="\nTests execution finished successfully! %d tests were run.\n" />
+              <property role="PhEJT" value="\nTests execution finished! %d tests were run.\n" />
             </node>
             <node concept="3ZVu4v" id="53MG8KzfQiI" role="3O_q_j">
               <ref role="3ZVs_2" node="53MG8KzfJuM" resolve="total_tests_count" />
@@ -3027,7 +3027,7 @@
               <node concept="3O_q_g" id="53MG8KzdUBb" role="1_9egR">
                 <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
                 <node concept="PhEJO" id="53MG8KzdUJL" role="3O_q_j">
-                  <property role="PhEJT" value="FAIL! %d tests failed.\n" />
+                  <property role="PhEJT" value="\nFAIL! %d tests failed.\n" />
                 </node>
                 <node concept="3ZVu4v" id="53MG8KzdVSC" role="3O_q_j">
                   <ref role="3ZVs_2" node="7nMAuIoOIN0" resolve="result" />
@@ -3049,7 +3049,7 @@
                 <node concept="3O_q_g" id="53MG8KzdVzv" role="1_9egR">
                   <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
                   <node concept="PhEJO" id="53MG8KzdVzw" role="3O_q_j">
-                    <property role="PhEJT" value="SUCCESS! All tests passed.\n" />
+                    <property role="PhEJT" value="\nSUCCESS! All tests passed.\n" />
                   </node>
                 </node>
               </node>
@@ -3087,7 +3087,7 @@
           <node concept="3O_q_g" id="53MG8KzfQny" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="53MG8KzfQnz" role="3O_q_j">
-              <property role="PhEJT" value="Detailed results are saved in:\n\t\t%s\\%s \n" />
+              <property role="PhEJT" value="\nDetailed results are saved in:\n\t\t%s\\%s \n" />
             </node>
             <node concept="3ZVu4v" id="53MG8KzfQn_" role="3O_q_j">
               <ref role="3ZVs_2" node="53MG8KzdUd_" resolve="cwd" />
