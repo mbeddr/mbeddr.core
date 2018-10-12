@@ -21,6 +21,7 @@
     <import index="dau9" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework.instructions(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="avjr" ref="r:16aa9518-e4e5-450e-86f6-504e4df2fa6f(com.mbeddr.mpsutil.dataflow.runtime.plugin)" />
+    <import index="tp42" ref="r:00000000-0000-4000-0000-011c8959037e(jetbrains.mps.lang.dataFlow.generator.baseLanguage.template.main@generator)" />
     <import index="6qry" ref="r:6c3f8bb9-12d1-49ee-897b-55327d80646b(com.mbeddr.mpsutil.dataflow.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -172,6 +173,9 @@
       </concept>
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
+      </concept>
+      <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX">
+        <child id="982871510068000158" name="sourceNodeQuery" index="1sPUBK" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
@@ -2262,6 +2266,12 @@
       <ref role="30HIoZ" to="6qry:2nbqtJGjoq6" resolve="WithInterProceduralSupport" />
       <node concept="b5Tf3" id="2nbqtJGjxxB" role="1lVwrX" />
     </node>
+    <node concept="3aamgX" id="1g9itazXMS9" role="3acgRq">
+      <ref role="30HIoZ" to="6qry:1g9itazWEeq" resolve="BuilderModeReference" />
+      <node concept="j$656" id="1g9itazXRsD" role="1lVwrX">
+        <ref role="v9R2y" node="1g9itazXRsB" resolve="reduce_BuilderModeReference" />
+      </node>
+    </node>
   </node>
   <node concept="jVnub" id="2zhiL3fGJG3">
     <property role="3GE5qa" value="template" />
@@ -2277,6 +2287,29 @@
             <node concept="10Nm6u" id="7yFOv7agfGg" role="37wK5m">
               <node concept="5jKBG" id="7yFOv7agfGR" role="lGtFl">
                 <ref role="v9R2y" to="ty9a:7yFOv7ageOS" resolve="template_CollectModes" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="1g9itazXRsB">
+    <property role="TrG5h" value="reduce_BuilderModeReference" />
+    <property role="3GE5qa" value="" />
+    <ref role="3gUMe" to="6qry:1g9itazWEeq" resolve="BuilderModeReference" />
+    <node concept="10Nm6u" id="1g9itazXRsK" role="13RCb5">
+      <node concept="raruj" id="1g9itazXRsR" role="lGtFl" />
+      <node concept="1sPUBX" id="1g9itazXRt0" role="lGtFl">
+        <ref role="v9R2y" to="tp42:CNwfGHrkag" resolve="switch_BuilderModeId" />
+        <node concept="3NFfHV" id="1g9itazXRtb" role="1sPUBK">
+          <node concept="3clFbS" id="1g9itazXRtc" role="2VODD2">
+            <node concept="3cpWs6" id="1g9itazXRwD" role="3cqZAp">
+              <node concept="2OqwBi" id="1g9itazXREG" role="3cqZAk">
+                <node concept="30H73N" id="1g9itazXRwT" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1g9itazXRSg" role="2OqNvi">
+                  <ref role="3Tt5mk" to="6qry:1g9itazWEer" resolve="mode" />
+                </node>
               </node>
             </node>
           </node>

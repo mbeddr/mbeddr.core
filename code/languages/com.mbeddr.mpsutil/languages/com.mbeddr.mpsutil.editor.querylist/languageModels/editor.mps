@@ -1048,8 +1048,12 @@
           <node concept="2YIFZM" id="2cvVnUuP$8o" role="3clFbG">
             <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getContainmentLink(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
             <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
-            <node concept="1rXfSq" id="2cvVnUuP$cJ" role="37wK5m">
-              <ref role="37wK5l" node="Op$R493_PW" resolve="getLinkNode" />
+            <node concept="2YIFZM" id="4glh_DctrAU" role="37wK5m">
+              <ref role="37wK5l" to="iwwu:i0YipjE" resolve="getGenuineLinkDeclaration" />
+              <ref role="1Pybhc" to="iwwu:i0YipgJ" resolve="SModelUtil" />
+              <node concept="1rXfSq" id="2cvVnUuP$cJ" role="37wK5m">
+                <ref role="37wK5l" node="Op$R493_PW" resolve="getLinkNode" />
+              </node>
             </node>
           </node>
         </node>
@@ -2036,7 +2040,7 @@
     </node>
     <node concept="2tJIrI" id="8dI1zL1AJh" role="jymVt" />
     <node concept="3clFb_" id="8dI1zL1AJi" role="jymVt">
-      <property role="TrG5h" value="getLink" />
+      <property role="TrG5h" value="getLinkNode" />
       <node concept="3Tqbb2" id="8dI1zL1AJj" role="3clF45">
         <ref role="ehGHo" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
       </node>
@@ -2120,6 +2124,29 @@
       </node>
     </node>
     <node concept="2tJIrI" id="8dI1zL1AJU" role="jymVt" />
+    <node concept="3clFb_" id="4glh_Dctsh8" role="jymVt">
+      <property role="TrG5h" value="getLink" />
+      <node concept="3uibUv" id="4glh_Dctsh9" role="3clF45">
+        <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+      </node>
+      <node concept="3Tm1VV" id="4glh_Dctsha" role="1B3o_S" />
+      <node concept="3clFbS" id="4glh_Dctshb" role="3clF47">
+        <node concept="3clFbF" id="4glh_Dctshc" role="3cqZAp">
+          <node concept="2YIFZM" id="4glh_Dctshd" role="3clFbG">
+            <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getContainmentLink(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+            <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
+            <node concept="2YIFZM" id="4glh_Dctshe" role="37wK5m">
+              <ref role="1Pybhc" to="iwwu:i0YipgJ" resolve="SModelUtil" />
+              <ref role="37wK5l" to="iwwu:i0YipjE" resolve="getGenuineLinkDeclaration" />
+              <node concept="1rXfSq" id="4glh_Dctshf" role="37wK5m">
+                <ref role="37wK5l" node="8dI1zL1AJi" resolve="getLinkNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4glh_DctrYt" role="jymVt" />
     <node concept="3clFb_" id="8dI1zL1AJV" role="jymVt">
       <property role="TrG5h" value="getRole" />
       <node concept="17QB3L" id="8dI1zL1AJW" role="3clF45" />
@@ -2379,7 +2406,7 @@
     <node concept="2tJIrI" id="3IFXLmiudrx" role="jymVt" />
     <node concept="3clFb_" id="3IFXLmiucSz" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getProperty" />
+      <property role="TrG5h" value="getPropertyNode" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="3IFXLmiucSA" role="3clF47">
@@ -2392,6 +2419,28 @@
       <node concept="3Tm1VV" id="3IFXLmiuc6x" role="1B3o_S" />
       <node concept="3Tqbb2" id="3IFXLmiucn9" role="3clF45">
         <ref role="ehGHo" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4glh_DcB3Kb" role="jymVt" />
+    <node concept="3clFb_" id="4glh_DcB3Ce" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getProperty" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="4glh_DcB3Cf" role="3clF47">
+        <node concept="3clFbF" id="4glh_DcB498" role="3cqZAp">
+          <node concept="2YIFZM" id="4glh_DcB49V" role="3clFbG">
+            <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getProperty(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
+            <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
+            <node concept="1rXfSq" id="4glh_DcB4ms" role="37wK5m">
+              <ref role="37wK5l" node="3IFXLmiucSz" resolve="getPropertyNode" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4glh_DcB3Ci" role="1B3o_S" />
+      <node concept="3uibUv" id="4glh_DcB4zA" role="3clF45">
+        <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
       </node>
     </node>
     <node concept="2tJIrI" id="3IFXLmiu8_t" role="jymVt" />

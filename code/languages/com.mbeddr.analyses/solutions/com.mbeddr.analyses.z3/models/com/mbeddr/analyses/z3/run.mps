@@ -11,9 +11,9 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
   </languages>
   <imports>
     <import index="f7eu" ref="88063d90-aa0a-4f17-8757-92c0f1692f3d/java:com.microsoft.z3(com.mbeddr.analyses.z3/)" />
@@ -226,19 +226,16 @@
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
-      <concept id="9042586985346099698" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachStatement" flags="nn" index="1_o_46">
-        <child id="9042586985346099734" name="forEach" index="1_o_by" />
-      </concept>
-      <concept id="9042586985346099733" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachPair" flags="ng" index="1_o_bx">
-        <child id="9042586985346099778" name="variable" index="1_o_aQ" />
-        <child id="9042586985346099735" name="input" index="1_o_bz" />
-      </concept>
-      <concept id="9042586985346099736" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachVariable" flags="ng" index="1_o_bG" />
-      <concept id="8293956702609956630" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachVariableReference" flags="nn" index="3M$PaV">
-        <reference id="8293956702609966325" name="variable" index="3M$S_o" />
-      </concept>
       <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
   </registry>
@@ -773,16 +770,14 @@
             </node>
           </node>
         </node>
-        <node concept="1_o_46" id="4gj0Jzm1lQ" role="3cqZAp">
-          <node concept="1_o_bx" id="4gj0Jzm1lS" role="1_o_by">
-            <node concept="37vLTw" id="4gj0Jzm1Cb" role="1_o_bz">
-              <ref role="3cqZAo" node="4gj0JzlYWU" resolve="variables" />
-            </node>
-            <node concept="1_o_bG" id="4gj0Jzm1lW" role="1_o_aQ">
-              <property role="TrG5h" value="var" />
-            </node>
+        <node concept="2Gpval" id="2nfOfEfFg73" role="3cqZAp">
+          <node concept="2GrKxI" id="2nfOfEfFg75" role="2Gsz3X">
+            <property role="TrG5h" value="var" />
           </node>
-          <node concept="3clFbS" id="4gj0Jzm1lY" role="2LFqv$">
+          <node concept="37vLTw" id="2nfOfEfFhyu" role="2GsD0m">
+            <ref role="3cqZAo" node="4gj0JzlYWU" resolve="variables" />
+          </node>
+          <node concept="3clFbS" id="2nfOfEfFg79" role="2LFqv$">
             <node concept="3clFbF" id="4gj0JzmaYO" role="3cqZAp">
               <node concept="2YIFZM" id="4gj0JzplWY" role="3clFbG">
                 <ref role="37wK5l" to="22we:4gj0JzplWy" resolve="addVariableDeclaration" />
@@ -793,8 +788,8 @@
                 <node concept="37vLTw" id="4gj0Jzmb0J" role="37wK5m">
                   <ref role="3cqZAo" node="4gj0JzlNUI" resolve="ctx" />
                 </node>
-                <node concept="3M$PaV" id="4gj0Jzmb1Y" role="37wK5m">
-                  <ref role="3M$S_o" node="4gj0Jzm1lW" resolve="var" />
+                <node concept="2GrUjf" id="2nfOfEfFiJe" role="37wK5m">
+                  <ref role="2Gs0qQ" node="2nfOfEfFg75" resolve="var" />
                 </node>
               </node>
             </node>

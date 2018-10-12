@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
   </languages>
   <imports>
@@ -511,7 +511,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getParentPopup" />
-      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
+      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getCategory" />
       <node concept="3Tm1VV" id="7e1BewRkOaO" role="1B3o_S" />
       <node concept="3clFbS" id="7e1BewRkOaR" role="3clF47">
         <node concept="3clFbF" id="7e1BewRkOxA" role="3cqZAp">

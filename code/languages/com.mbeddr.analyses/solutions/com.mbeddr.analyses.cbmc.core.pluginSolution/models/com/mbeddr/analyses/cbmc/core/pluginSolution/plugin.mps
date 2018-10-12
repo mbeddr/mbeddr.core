@@ -7,8 +7,8 @@
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
   </languages>
   <imports>
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
@@ -396,7 +396,7 @@
   </node>
   <node concept="sE7Ow" id="3x0R1LJ5JZN">
     <property role="TrG5h" value="CbmcVerifyDecisionTableAction" />
-    <property role="2uzpH1" value="Verify Decision Table (Starting From 'main')" />
+    <property role="2uzpH1" value="Verify Decision Table (Starting from 'main')" />
     <property role="1WHSii" value="Verifies properties of this decision table by starting from the 'main' function" />
     <node concept="2ScWuX" id="KRRLnplqcw" role="tmbBb">
       <node concept="3clFbS" id="KRRLnplqcx" role="2VODD2">
@@ -758,7 +758,7 @@
   </node>
   <node concept="sE7Ow" id="7yN$Xh8pdGQ">
     <property role="TrG5h" value="CbmcVerifyGSwitchAction" />
-    <property role="2uzpH1" value="Verify GSwitchExpression (Starting From 'main')" />
+    <property role="2uzpH1" value="Verify GSwitchExpression (Starting from 'main')" />
     <property role="1WHSii" value="Verifies this GSwitchExpression by starting from 'main'" />
     <node concept="1DS2jV" id="7yN$Xh8pdGR" role="1NuT2Z">
       <property role="TrG5h" value="project" />

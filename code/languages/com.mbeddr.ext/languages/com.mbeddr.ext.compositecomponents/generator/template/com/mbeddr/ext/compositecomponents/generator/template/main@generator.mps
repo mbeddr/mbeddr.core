@@ -8,7 +8,7 @@
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1028,7 +1028,7 @@
                           <node concept="2pIpSj" id="6AXziRbRRR0" role="2pJxcM">
                             <ref role="2pIpSl" to="v7ag:3TmmsQkDdTW" resolve="source" />
                             <node concept="2pJPED" id="6AXziRbRS0G" role="2pJxcZ">
-                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                               <node concept="2pIpSj" id="6AXziRbRS0H" role="2pJxcM">
                                 <ref role="2pIpSl" to="v7ag:3TmmsQkDdTU" resolve="instance" />
                                 <node concept="36biLy" id="6AXziRbRS0I" role="2pJxcZ">
@@ -1053,7 +1053,7 @@
                           <node concept="2pIpSj" id="6AXziRbRMjb" role="2pJxcM">
                             <ref role="2pIpSl" to="v7ag:3TmmsQkDdTX" resolve="target" />
                             <node concept="2pJPED" id="6AXziRbRO1_" role="2pJxcZ">
-                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                               <node concept="2pIpSj" id="6AXziRbRO3o" role="2pJxcM">
                                 <ref role="2pIpSl" to="v7ag:3TmmsQkDdTU" resolve="instance" />
                                 <node concept="36biLy" id="6AXziRbRO3y" role="2pJxcZ">
@@ -3346,7 +3346,7 @@
                   <node concept="2Rf3mk" id="3ejBUtVm4od" role="2OqNvi">
                     <node concept="1xMEDy" id="3ejBUtVm4oe" role="1xVPHs">
                       <node concept="chp4Y" id="3ejBUtVm4of" role="ri$Ld">
-                        <ref role="cht4Q" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                        <ref role="cht4Q" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                       </node>
                     </node>
                   </node>

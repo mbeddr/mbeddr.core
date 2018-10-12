@@ -650,7 +650,6 @@
       <property role="TrG5h" value="getDetailedPresentation" />
       <property role="13i0it" value="true" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
       <node concept="3Tm1VV" id="2bng37sXCHV" role="1B3o_S" />
       <node concept="3clFbS" id="2bng37sXCHW" role="3clF47">
         <node concept="3clFbF" id="2bng37sXCHX" role="3cqZAp">

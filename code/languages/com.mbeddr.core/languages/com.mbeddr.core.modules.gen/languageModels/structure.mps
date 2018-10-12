@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -11,6 +12,7 @@
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -147,6 +149,11 @@
     <node concept="1TJgyi" id="3kEjc_WIMEF" role="1TKVEl">
       <property role="TrG5h" value="haeaderFileName" />
       <property role="IQ2nx" value="3830958861296806571" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3LB9aGk_ryI" role="1TKVEl">
+      <property role="IQ2nx" value="4352487882080237742" />
+      <property role="TrG5h" value="preprocessorCondition" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -321,6 +328,37 @@
       <node concept="trNpa" id="1lWQE5EvLa4" role="EQaZv">
         <ref role="trN6q" to="x27k:5_l8w1EmTcX" resolve="Module" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3LB9aGk$WfW">
+    <property role="EcuMT" value="4352487882080109564" />
+    <property role="TrG5h" value="MultiPlatformStatement" />
+    <property role="3GE5qa" value="portability" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyi" id="3LB9aGk$WfX" role="1TKVEl">
+      <property role="IQ2nx" value="4352487882080109565" />
+      <property role="TrG5h" value="win32ExtraHeader" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3LB9aGk$Wg5" role="1TKVEi">
+      <property role="IQ2ns" value="4352487882080109573" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="win32Stmts" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    </node>
+    <node concept="1TJgyj" id="3LB9aGk$Wg8" role="1TKVEi">
+      <property role="IQ2ns" value="4352487882080109576" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="othersStmts" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    </node>
+    <node concept="PrWs8" id="3LB9aGlWOm$" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="3LB9aGl8_nC" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
     </node>
   </node>
 </model>

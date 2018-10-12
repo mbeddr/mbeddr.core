@@ -149,7 +149,7 @@
             <node concept="3cpWsn" id="2lop6rSga6k" role="3cpWs9">
               <property role="TrG5h" value="scope" />
               <node concept="2I9FWS" id="2lop6rSga6l" role="1tU5fm">
-                <ref role="2I9WkF" to="gfdq:5aWlhTu2ZzL" resolve="LanguageRegexReference" />
+                <ref role="2I9WkF" to="gfdq:5aWlhTu2ZzL" resolve="InterestingLanguages" />
               </node>
               <node concept="2OqwBi" id="2lop6rSga6m" role="33vP2m">
                 <node concept="2OqwBi" id="2lop6rSga6n" role="2Oq$k0">
@@ -234,6 +234,32 @@
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
               <node concept="37vLTw" id="2lop6rSga9A" role="37wK5m">
                 <ref role="3cqZAo" node="2lop6rSga6_" resolve="allConcs" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2zqpPfi$7Gt">
+    <property role="3GE5qa" value="editor_actions_seed" />
+    <ref role="1M2myG" to="gfdq:2zqpPfi$7FA" resolve="SingleRootNodeScope" />
+    <node concept="1N5Pfh" id="2zqpPfi$7Gu" role="1Mr941">
+      <ref role="1N5Vy1" to="gfdq:2zqpPfi$7FB" resolve="root" />
+      <node concept="3dgokm" id="2zqpPfi$7Gx" role="1N6uqs">
+        <node concept="3clFbS" id="2zqpPfi$7Gy" role="2VODD2">
+          <node concept="3clFbF" id="2zqpPfi$7Jx" role="3cqZAp">
+            <node concept="2YIFZM" id="2zqpPfi$7Qo" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="2zqpPfi$8AC" role="37wK5m">
+                <node concept="2OqwBi" id="2zqpPfi$87F" role="2Oq$k0">
+                  <node concept="2rP1CM" id="2zqpPfi$7UJ" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="2zqpPfi$8js" role="2OqNvi" />
+                </node>
+                <node concept="3lApI0" id="2zqpPfi$8RF" role="2OqNvi">
+                  <ref role="3lApI3" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                </node>
               </node>
             </node>
           </node>

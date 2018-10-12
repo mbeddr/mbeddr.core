@@ -2,22 +2,22 @@
 <model ref="r:6c43a5a9-fd33-4f69-aad7-7593390c366d(com.mbeddr.mpsutil.graphstream.example.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" />
     <import index="udin" ref="r:fe8ee6c8-7e5c-4efd-b608-c5ea6827be30(com.mbeddr.mpsutil.graphstream.runtime.plugin)" />
     <import index="5svn" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="j4ux" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.demo(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="upej" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="mf8e" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.jgraphx(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
+    <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="mf8e" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.jgraphx(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="j4ux" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.demo(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="thhq" ref="r:f4b2cfe1-da62-4992-a88f-cc8c90918a31(com.mbeddr.mpsutil.graphstream.example.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -214,16 +214,16 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="_graph" />
       <property role="3TUv4t" value="true" />
+      <node concept="2YIFZM" id="5fSzYI3_cNE" role="33vP2m">
+        <ref role="37wK5l" to="j4ux:~ExampleGraph.getExampleGraph():de.itemis.graphing.model.Graph" resolve="getExampleGraph" />
+        <ref role="1Pybhc" to="j4ux:~ExampleGraph" resolve="ExampleGraph" />
+      </node>
       <node concept="3Tm6S6" id="4G2jA20frbg" role="1B3o_S" />
       <node concept="3uibUv" id="4G2jA20frvb" role="1tU5fm">
         <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
         <node concept="3uibUv" id="4buoDFRgBhl" role="11_B2D">
           <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
-      </node>
-      <node concept="2YIFZM" id="5fSzYI3_cNE" role="33vP2m">
-        <ref role="37wK5l" to="j4ux:~ExampleGraph.getExampleGraph():de.itemis.graphing.model.Graph" resolve="getExampleGraph" />
-        <ref role="1Pybhc" to="j4ux:~ExampleGraph" resolve="ExampleGraph" />
       </node>
     </node>
     <node concept="312cEg" id="4buoDFRelZQ" role="jymVt">

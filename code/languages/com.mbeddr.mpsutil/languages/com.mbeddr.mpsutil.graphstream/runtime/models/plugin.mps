@@ -2,12 +2,12 @@
 <model ref="r:fe8ee6c8-7e5c-4efd-b608-c5ea6827be30(com.mbeddr.mpsutil.graphstream.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -40,6 +40,9 @@
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+      <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
+        <child id="8974276187400029893" name="icon" index="1QGGTw" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -1499,11 +1502,9 @@
               </node>
               <node concept="liA8E" id="4DzE9lEwD$9" role="2OqNvi">
                 <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon):void" resolve="setIcon" />
-                <node concept="2YIFZM" id="4DzE9lEwEPA" role="37wK5m">
-                  <ref role="37wK5l" to="18ew:~IconUtil.getIcon(java.lang.String):javax.swing.Icon" resolve="getIcon" />
-                  <ref role="1Pybhc" to="18ew:~IconUtil" resolve="IconUtil" />
-                  <node concept="Xl_RD" id="4DzE9lEwERr" role="37wK5m">
-                    <property role="Xl_RC" value="graphingTool.png" />
+                <node concept="1QGGTA" id="4glh_Dcka$v" role="37wK5m">
+                  <node concept="1QGGSu" id="4glh_DckaC1" role="1QGGTw">
+                    <property role="1iqoE4" value="${module}/icons/graphingTool.png" />
                   </node>
                 </node>
               </node>
@@ -2178,19 +2179,22 @@
   <node concept="3HP615" id="50Rn4r1HbyJ">
     <property role="3GE5qa" value="api" />
     <property role="TrG5h" value="IGraphingInformation" />
+    <node concept="16euLQ" id="4buoDFRgtvP" role="16eVyc">
+      <property role="TrG5h" value="T" />
+    </node>
     <node concept="2tJIrI" id="5zrVLV_TRQU" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1MrGZ" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getViewManager" />
-      <node concept="3clFbS" id="50Rn4r1MrH2" role="3clF47" />
-      <node concept="3Tm1VV" id="50Rn4r1MrH3" role="1B3o_S" />
       <node concept="3uibUv" id="22tXClf$lLy" role="3clF45">
         <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
         <node concept="16syzq" id="4buoDFRgtHN" role="11_B2D">
           <ref role="16sUi3" node="4buoDFRgtvP" resolve="T" />
         </node>
       </node>
+      <node concept="3clFbS" id="50Rn4r1MrH2" role="3clF47" />
+      <node concept="3Tm1VV" id="50Rn4r1MrH3" role="1B3o_S" />
       <node concept="P$JXv" id="4G2jA20fCeZ" role="lGtFl">
         <node concept="TZ5HA" id="4G2jA20fCf0" role="TZ5H$">
           <node concept="1dT_AC" id="4G2jA20fCf1" role="1dT_Ay">
@@ -2276,13 +2280,13 @@
     </node>
     <node concept="2tJIrI" id="1wY88QDJWMc" role="jymVt" />
     <node concept="3Tm1VV" id="50Rn4r1HbyK" role="1B3o_S" />
-    <node concept="16euLQ" id="4buoDFRgtvP" role="16eVyc">
-      <property role="TrG5h" value="T" />
-    </node>
   </node>
   <node concept="312cEu" id="6x5UxX2XZus">
     <property role="3GE5qa" value="view.graphviz" />
     <property role="TrG5h" value="GraphVizViewManager" />
+    <node concept="16euLQ" id="4FkXj44Sx_c" role="16eVyc">
+      <property role="TrG5h" value="T" />
+    </node>
     <node concept="2tJIrI" id="6x5UxX2Y7D0" role="jymVt" />
     <node concept="312cEg" id="6x5UxX2Z0lo" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -3412,9 +3416,6 @@
         </node>
       </node>
     </node>
-    <node concept="16euLQ" id="4FkXj44Sx_c" role="16eVyc">
-      <property role="TrG5h" value="T" />
-    </node>
   </node>
   <node concept="sE7Ow" id="6x5UxX31b1p">
     <property role="TrG5h" value="RenderAsSVG" />
@@ -3523,6 +3524,9 @@
     <property role="3GE5qa" value="api" />
     <property role="TrG5h" value="GraphingInformationBase" />
     <property role="1sVAO0" value="true" />
+    <node concept="16euLQ" id="4buoDFRgwTu" role="16eVyc">
+      <property role="TrG5h" value="T" />
+    </node>
     <node concept="2tJIrI" id="1wY88QDI$xa" role="jymVt" />
     <node concept="312cEg" id="6x5UxX31hzP" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -3584,9 +3588,6 @@
       <node concept="16syzq" id="4buoDFRgxTm" role="11_B2D">
         <ref role="16sUi3" node="4buoDFRgwTu" resolve="T" />
       </node>
-    </node>
-    <node concept="16euLQ" id="4buoDFRgwTu" role="16eVyc">
-      <property role="TrG5h" value="T" />
     </node>
   </node>
   <node concept="312cEu" id="6x5UxX32uPZ">
@@ -3678,10 +3679,10 @@
       <property role="1EzhhJ" value="false" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getViewManager" />
-      <node concept="3Tm1VV" id="6x5UxX32v26" role="1B3o_S" />
       <node concept="3uibUv" id="22tXClf$nm$" role="3clF45">
         <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
       </node>
+      <node concept="3Tm1VV" id="6x5UxX32v26" role="1B3o_S" />
       <node concept="3clFbS" id="6x5UxX32v29" role="3clF47">
         <node concept="3cpWs6" id="6x5UxX32xbo" role="3cqZAp">
           <node concept="37vLTw" id="4buoDFRgTPh" role="3cqZAk">

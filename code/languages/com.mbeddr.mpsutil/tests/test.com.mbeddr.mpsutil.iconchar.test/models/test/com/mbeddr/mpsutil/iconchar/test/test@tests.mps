@@ -5,7 +5,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="6439a9c3-d5bd-4cb1-b4a1-24ee935afcf9" name="test.com.mbeddr.mpsutil.iconchar" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -30,6 +30,11 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -115,11 +120,16 @@
             <node concept="3uibUv" id="5L7BF$C6CTp" role="1tU5fm">
               <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
             </node>
-            <node concept="2YIFZM" id="5L7BF$C6CTt" role="33vP2m">
-              <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-              <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
-              <node concept="3xONca" id="5L7BF$C6CTu" role="37wK5m">
-                <ref role="3xOPvv" node="3J7tYMoqr6C" resolve="testConcept" />
+            <node concept="2OqwBi" id="4glh_DcgCnS" role="33vP2m">
+              <node concept="2YIFZM" id="4glh_DcgCnT" role="2Oq$k0">
+                <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+                <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="4glh_DcgCnU" role="2OqNvi">
+                <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+                <node concept="3xONca" id="4glh_DchqYP" role="37wK5m">
+                  <ref role="3xOPvv" node="3J7tYMoqr6C" resolve="testConcept" />
+                </node>
               </node>
             </node>
           </node>

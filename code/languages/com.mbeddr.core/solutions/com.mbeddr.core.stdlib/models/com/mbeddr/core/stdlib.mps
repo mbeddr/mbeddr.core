@@ -8,7 +8,7 @@
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
   </languages>
   <imports>
@@ -119,7 +119,9 @@
       <concept id="6708182213627045678" name="com.mbeddr.core.modules.structure.IExternable" flags="ng" index="3mNis0">
         <property id="6708182213627045681" name="extern" index="3mNisv" />
       </concept>
-      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
+      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
+        <child id="2771264470558526601" name="init" index="1cecVj" />
+      </concept>
       <concept id="883533952987437678" name="com.mbeddr.core.modules.structure.ArgumentKindContainer" flags="ng" index="3U$IGs">
         <property id="883533952987437954" name="value" index="3U$IFK" />
       </concept>
@@ -10417,6 +10419,19 @@
     <property role="TrG5h" value="errno" />
     <node concept="rcWE1" id="1o$bJoOVgbr" role="rcWEr">
       <property role="rcWEL" value="&lt;errno.h&gt;" />
+    </node>
+    <node concept="1S7NMz" id="7HP3pfzuSvA" role="N3F5h">
+      <property role="TrG5h" value="errno" />
+      <node concept="3TlMh2" id="7HP3pfzuSv$" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3TlMh9" id="7HP3pfzuSzm" role="1cecVj">
+        <property role="2hmy$m" value="0" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7MLN0_L8uyn" role="N3F5h">
+      <property role="TrG5h" value="empty_1532522893150_83" />
     </node>
     <node concept="4WHVk" id="1o$bJoOV23N" role="N3F5h">
       <property role="TrG5h" value="EPERM" />

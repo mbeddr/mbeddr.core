@@ -5,7 +5,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -1191,11 +1191,6 @@
             <ref role="1S7826" node="3CoVb8q2Idk" resolve="size" />
             <node concept="7CXmI" id="3CoVb8q2Kei" role="lGtFl">
               <node concept="2DdRWr" id="3n5vksRLbHA" role="7EUXB" />
-              <node concept="1TM$A" id="3n5vksRLbHB" role="7EUXB">
-                <node concept="2PYRI3" id="3n5vksRLbHC" role="3lydEf">
-                  <ref role="39XzEq" to="c9jm:EoXO7XWtsQ" />
-                </node>
-              </node>
               <node concept="1TM$A" id="3n5vksRLbHD" role="7EUXB">
                 <node concept="2PYRI3" id="3n5vksRLbHE" role="3lydEf">
                   <ref role="39XzEq" to="c9jm:gaSsNU8Npy" />
@@ -1369,11 +1364,6 @@
               <node concept="1TM$A" id="3n5vksRNPwB" role="7EUXB">
                 <node concept="2PYRI3" id="3n5vksRNPwC" role="3lydEf">
                   <ref role="39XzEq" to="c9jm:JBAURFYuSj" />
-                </node>
-              </node>
-              <node concept="1TM$A" id="3n5vksRNPwD" role="7EUXB">
-                <node concept="2PYRI3" id="3n5vksRNPwE" role="3lydEf">
-                  <ref role="39XzEq" to="c9jm:EoXO7XVNXR" />
                 </node>
               </node>
             </node>

@@ -1051,11 +1051,16 @@
                                       <node concept="3clFbS" id="4Q9g1gQPVor" role="1bW5cS">
                                         <node concept="3clFbF" id="4Q9g1gQPWaW" role="3cqZAp">
                                           <node concept="37vLTI" id="4Q9g1gQPWaY" role="3clFbG">
-                                            <node concept="2YIFZM" id="4Q9g1gQPW7w" role="37vLTx">
-                                              <ref role="37wK5l" to="sn11:2qySP5iSNLp" resolve="getIcon" />
-                                              <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                                              <node concept="37vLTw" id="4Q9g1gQPW7x" role="37wK5m">
-                                                <ref role="3cqZAo" node="4Q9g1gQPe8L" resolve="subconcept" />
+                                            <node concept="2OqwBi" id="VuyCfHHek7" role="37vLTx">
+                                              <node concept="2YIFZM" id="VuyCfHHe19" role="2Oq$k0">
+                                                <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+                                                <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
+                                              </node>
+                                              <node concept="liA8E" id="VuyCfHHeWP" role="2OqNvi">
+                                                <ref role="37wK5l" to="sn11:192HKKPOcza" resolve="getIconFor" />
+                                                <node concept="37vLTw" id="VuyCfHHfdx" role="37wK5m">
+                                                  <ref role="3cqZAo" node="4Q9g1gQPe8L" resolve="subconcept" />
+                                                </node>
                                               </node>
                                             </node>
                                             <node concept="37vLTw" id="4Q9g1gQPWb2" role="37vLTJ">

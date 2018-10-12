@@ -4,9 +4,9 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="0" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
@@ -1256,11 +1256,11 @@
   </node>
   <node concept="24kQdi" id="2kkumeGQcAA">
     <property role="3GE5qa" value="binary" />
-    <ref role="1XX52x" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+    <ref role="1XX52x" to="51wr:2kkumeGQcAy" resolve="Library" />
     <node concept="3EZMnI" id="7FzSIra5mWo" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="7FzSIra5mWp" role="3EZMnx">
-        <property role="3F0ifm" value="static library" />
+        <property role="3F0ifm" value="library" />
         <node concept="pVoyu" id="7FzSIra5mWq" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1342,6 +1342,44 @@
                     </node>
                   </node>
                   <node concept="34oBXx" id="5CuCVUfjUnp" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5ara9Pcny8J" role="3EZMnx">
+        <node concept="VPM3Z" id="5ara9Pcny8L" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5ara9PcddZE" role="3EZMnx">
+          <property role="3F0ifm" value="shared:" />
+        </node>
+        <node concept="27S6Sx" id="5ara9PceFsS" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:5ara9Pcdcpm" resolve="shared" />
+        </node>
+        <node concept="2iRfu4" id="5ara9Pcny8O" role="2iSdaV" />
+        <node concept="pkWqt" id="5ara9Pcnz$d" role="pqm2j">
+          <node concept="3clFbS" id="5ara9Pcnz$e" role="2VODD2">
+            <node concept="3clFbF" id="5ara9PcnzF$" role="3cqZAp">
+              <node concept="2OqwBi" id="5ara9Pcnwb1" role="3clFbG">
+                <node concept="2OqwBi" id="5ara9PcnvnF" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5ara9PcnvnG" role="2Oq$k0">
+                    <node concept="pncrf" id="5ara9PcnvnH" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="5ara9PcnvnI" role="2OqNvi">
+                      <node concept="1xMEDy" id="5ara9PcnvnJ" role="1xVPHs">
+                        <node concept="chp4Y" id="5ara9PcnvnK" role="ri$Ld">
+                          <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="5ara9PcnvnL" role="2OqNvi">
+                    <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5ara9PcnwTZ" role="2OqNvi">
+                  <ref role="3TsBF5" to="51wr:5ara9PcmbE2" resolve="supportsSharedLibraries" />
                 </node>
               </node>
             </node>
@@ -1467,6 +1505,62 @@
           </node>
           <node concept="3F0ifn" id="1bBmLCl6R3F" role="3EZMnx">
             <property role="3F0ifm" value="external includes: {...}" />
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="V00LWCcudn" role="3EZMnx">
+        <property role="S$Qs1" value="true" />
+        <node concept="VPM3Z" id="V00LWCcudo" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="pVoyu" id="V00LWCcudp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="V00LWCcudq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="V00LWCcudr" role="3EZMnx">
+          <property role="3F0ifm" value="external libraries:" />
+        </node>
+        <node concept="3EZMnI" id="V00LWCcuds" role="3EZMnx">
+          <node concept="lj46D" id="V00LWCcudt" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="pj6Ft" id="V00LWCcudu" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="l2Vlx" id="V00LWCcudv" role="2iSdaV" />
+          <node concept="3F1sOY" id="V00LWCcudw" role="3EZMnx">
+            <ref role="1NtTu8" to="51wr:4an21yEJ7nX" resolve="externalLibs" />
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="V00LWCcudx" role="2iSdaV" />
+        <node concept="pkWqt" id="V00LWCcudy" role="pqm2j">
+          <node concept="3clFbS" id="V00LWCcudz" role="2VODD2">
+            <node concept="3clFbF" id="V00LWCcud$" role="3cqZAp">
+              <node concept="2OqwBi" id="V00LWCcud_" role="3clFbG">
+                <node concept="2OqwBi" id="V00LWCcudA" role="2Oq$k0">
+                  <node concept="pncrf" id="V00LWCcudB" role="2Oq$k0" />
+                  <node concept="Bykcj" id="V00LWCcudC" role="2OqNvi">
+                    <node concept="1aIX9F" id="V00LWCcudD" role="1xVPHs">
+                      <node concept="26LbJo" id="V00LWCcudE" role="1aIX9E">
+                        <ref role="26LbJp" to="51wr:4an21yEJ7nX" resolve="externalLibs" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3GX2aA" id="V00LWCcudF" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3EZMnI" id="V00LWCcudG" role="AHCbl">
+          <node concept="2iRfu4" id="V00LWCcudH" role="2iSdaV" />
+          <node concept="VPM3Z" id="V00LWCcudI" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="V00LWCcudJ" role="3EZMnx">
+            <property role="3F0ifm" value="external libraries: {...}" />
           </node>
         </node>
       </node>
@@ -1768,6 +1862,7 @@
         <property role="3F0ifm" value="debug options:" />
       </node>
       <node concept="3F0A7n" id="2nSRgleEPDD" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="51wr:2nSRgleEPDx" resolve="debugOptions" />
       </node>
       <node concept="l2Vlx" id="2nSRgleEPDA" role="2iSdaV" />

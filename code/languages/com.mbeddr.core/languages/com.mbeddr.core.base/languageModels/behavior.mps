@@ -54,6 +54,9 @@
     <import index="gfi" ref="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)" />
     <import index="7a0s" ref="r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
@@ -407,6 +410,11 @@
       <concept id="2510545900188478754" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaString" flags="ng" index="3ZQQOj" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
         <property id="1167228628751" name="hasException" index="34fQS0" />
         <property id="1167245565795" name="severity" index="35gtTG" />
@@ -4274,9 +4282,6 @@
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getIDEDisplayString" />
       <property role="2Ki8OM" value="false" />
-      <node concept="3Tm1VV" id="IviauXb0h" role="1B3o_S" />
-      <node concept="17QB3L" id="IviauXb9z" role="3clF45" />
-      <node concept="3clFbS" id="IviauXb0j" role="3clF47" />
       <node concept="P$JXv" id="3O27jEAbHZi" role="lGtFl">
         <node concept="TZ5HA" id="3O27jEAbHZj" role="TZ5H$">
           <node concept="1dT_AC" id="3O27jEAbHZk" role="1dT_Ay">
@@ -4285,14 +4290,14 @@
         </node>
         <node concept="x79VA" id="3O27jEAbHZl" role="3nqlJM" />
       </node>
+      <node concept="3Tm1VV" id="IviauXb0h" role="1B3o_S" />
+      <node concept="17QB3L" id="IviauXb9z" role="3clF45" />
+      <node concept="3clFbS" id="IviauXb0j" role="3clF47" />
     </node>
     <node concept="13i0hz" id="1uL8CIs6rGR" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getSortOrder" />
-      <node concept="3Tm1VV" id="1uL8CIs6rLA" role="1B3o_S" />
-      <node concept="10Oyi0" id="1uL8CIs6rUS" role="3clF45" />
-      <node concept="3clFbS" id="1uL8CIs6rLC" role="3clF47" />
       <node concept="P$JXv" id="3O27jEAbHZA" role="lGtFl">
         <node concept="TZ5HA" id="3O27jEAbHZB" role="TZ5H$">
           <node concept="1dT_AC" id="3O27jEAbHZC" role="1dT_Ay">
@@ -4301,14 +4306,14 @@
         </node>
         <node concept="x79VA" id="3O27jEAbHZD" role="3nqlJM" />
       </node>
+      <node concept="3Tm1VV" id="1uL8CIs6rLA" role="1B3o_S" />
+      <node concept="10Oyi0" id="1uL8CIs6rUS" role="3clF45" />
+      <node concept="3clFbS" id="1uL8CIs6rLC" role="3clF47" />
     </node>
     <node concept="13i0hz" id="1uL8CIsKxiy" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getCategory" />
-      <node concept="3Tm1VV" id="1uL8CIsKxiz" role="1B3o_S" />
-      <node concept="17QB3L" id="1uL8CIsKxIg" role="3clF45" />
-      <node concept="3clFbS" id="1uL8CIsKxi_" role="3clF47" />
       <node concept="P$JXv" id="3O27jEAbHZU" role="lGtFl">
         <node concept="TZ5HA" id="3O27jEAbHZV" role="TZ5H$">
           <node concept="1dT_AC" id="3O27jEAbHZW" role="1dT_Ay">
@@ -4322,6 +4327,9 @@
         </node>
         <node concept="x79VA" id="3O27jEAbHZX" role="3nqlJM" />
       </node>
+      <node concept="3Tm1VV" id="1uL8CIsKxiz" role="1B3o_S" />
+      <node concept="17QB3L" id="1uL8CIsKxIg" role="3clF45" />
+      <node concept="3clFbS" id="1uL8CIsKxi_" role="3clF47" />
     </node>
     <node concept="13hLZK" id="IviauXa$k" role="13h7CW">
       <node concept="3clFbS" id="IviauXa$l" role="2VODD2" />
@@ -6845,6 +6853,18 @@
       <node concept="3Tm1VV" id="7RHXOmw7Mgn" role="1B3o_S" />
       <node concept="10P_77" id="7RHXOmw7Mgy" role="3clF45" />
       <node concept="3clFbS" id="7RHXOmw7Mgp" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="3LB9aGl8_PP" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="preprocessorCondition" />
+      <node concept="3Tm1VV" id="3LB9aGl8_PQ" role="1B3o_S" />
+      <node concept="17QB3L" id="3LB9aGl8Ee3" role="3clF45" />
+      <node concept="3clFbS" id="3LB9aGl8_PS" role="3clF47">
+        <node concept="3clFbF" id="3LB9aGl8EfS" role="3cqZAp">
+          <node concept="10Nm6u" id="3LB9aGl8EfR" role="3clFbG" />
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="7RHXOmw3XK8" role="13h7CW">
       <node concept="3clFbS" id="7RHXOmw3XK9" role="2VODD2" />
@@ -11689,14 +11709,6 @@
             <ref role="3cqZAo" node="aUl3uPCrVI" resolve="repository" />
           </node>
         </node>
-        <node concept="3clFbF" id="1yFmGPnITlZ" role="3cqZAp">
-          <node concept="1rXfSq" id="1yFmGPnITm0" role="3clFbG">
-            <ref role="37wK5l" to="exr9:~EditorComponent.setNoVirtualFile(boolean):void" resolve="setNoVirtualFile" />
-            <node concept="3clFbT" id="1yFmGPnITm1" role="37wK5m">
-              <property role="3clFbU" value="true" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="1yFmGPnITm2" role="3cqZAp">
           <node concept="1rXfSq" id="1yFmGPnITm3" role="3clFbG">
             <ref role="37wK5l" to="exr9:~EditorComponent.editNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="editNode" />
@@ -13346,15 +13358,20 @@
       <node concept="3clFbS" id="7NyyyjNubHm" role="3clF47">
         <node concept="3clFbF" id="7NyyyjNuf0h" role="3cqZAp">
           <node concept="37vLTI" id="7NyyyjNuf1x" role="3clFbG">
+            <node concept="2OqwBi" id="VuyCfHMGfW" role="37vLTx">
+              <node concept="2YIFZM" id="VuyCfHMFXd" role="2Oq$k0">
+                <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+                <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+              </node>
+              <node concept="liA8E" id="VuyCfHMGKW" role="2OqNvi">
+                <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+                <node concept="37vLTw" id="VuyCfHMGSd" role="37wK5m">
+                  <ref role="3cqZAo" node="7NyyyjNubHK" resolve="n" />
+                </node>
+              </node>
+            </node>
             <node concept="37vLTw" id="7NyyyjNuf0g" role="37vLTJ">
               <ref role="3cqZAo" node="7NyyyjNueEN" resolve="icon" />
-            </node>
-            <node concept="2YIFZM" id="7NyyyjNudT3" role="37vLTx">
-              <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
-              <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-              <node concept="37vLTw" id="7NyyyjNudT4" role="37wK5m">
-                <ref role="3cqZAo" node="7NyyyjNubHK" resolve="n" />
-              </node>
             </node>
           </node>
         </node>
@@ -14628,27 +14645,122 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="bhVSeFkXyl" role="3cqZAp">
-          <node concept="3cpWsn" id="bhVSeFkXym" role="3cpWs9">
-            <property role="TrG5h" value="icon" />
-            <node concept="3uibUv" id="bhVSeFkXyj" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+        <node concept="3clFbH" id="VuyCfHMIf3" role="3cqZAp" />
+        <node concept="3SKdUt" id="VuyCfHNomH" role="3cqZAp">
+          <node concept="3SKdUq" id="VuyCfHNomJ" role="3SKWNk">
+            <property role="3SKdUp" value="todo [Mihail Muhin]: consider using icon{} expression from resources language" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="VuyCfHMIkT" role="3cqZAp">
+          <node concept="3cpWsn" id="VuyCfHMIkS" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="iconFile" />
+            <node concept="3uibUv" id="VuyCfHMIkU" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
             </node>
-            <node concept="2YIFZM" id="bhVSeFkXyn" role="33vP2m">
-              <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-              <ref role="37wK5l" to="xnls:~IconManager.loadIcon(java.lang.String,boolean):javax.swing.Icon" resolve="loadIcon" />
-              <node concept="37vLTw" id="bhVSeFkXyo" role="37wK5m">
-                <ref role="3cqZAo" node="bhVSeF4Tyr" resolve="fullName" />
-              </node>
-              <node concept="3clFbT" id="bhVSeFkXyp" role="37wK5m">
-                <property role="3clFbU" value="true" />
+            <node concept="2ShNRf" id="VuyCfHMIF0" role="33vP2m">
+              <node concept="1pGfFk" id="VuyCfHMIFU" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="VuyCfHMJl7" role="37wK5m">
+                  <ref role="3cqZAo" node="bhVSeF4Tyr" resolve="fullName" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="bhVSeFaaUs" role="3cqZAp">
-          <node concept="37vLTw" id="bhVSeFkXyq" role="3clFbG">
-            <ref role="3cqZAo" node="bhVSeFkXym" resolve="icon" />
+        <node concept="3clFbJ" id="VuyCfHMIkX" role="3cqZAp">
+          <node concept="3fqX7Q" id="VuyCfHMIkY" role="3clFbw">
+            <node concept="2OqwBi" id="VuyCfHMIJW" role="3fr31v">
+              <node concept="37vLTw" id="VuyCfHMIJV" role="2Oq$k0">
+                <ref role="3cqZAo" node="VuyCfHMIkS" resolve="iconFile" />
+              </node>
+              <node concept="liA8E" id="VuyCfHMIJX" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="VuyCfHMIl1" role="3clFbx">
+            <node concept="RRSsy" id="VuyCfHMKy0" role="3cqZAp">
+              <property role="RRSoG" value="error" />
+              <node concept="3cpWs3" id="VuyCfHMIl4" role="RRSoy">
+                <node concept="Xl_RD" id="VuyCfHMIl5" role="3uHU7B">
+                  <property role="Xl_RC" value="image file not found: " />
+                </node>
+                <node concept="37vLTw" id="VuyCfHMNkn" role="3uHU7w">
+                  <ref role="3cqZAo" node="bhVSeF4Tyr" resolve="fullName" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="VuyCfHMIl7" role="3cqZAp">
+              <node concept="10Nm6u" id="VuyCfHMIl8" role="3cqZAk" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="VuyCfHMObf" role="3cqZAp" />
+        <node concept="SfApY" id="VuyCfHMIly" role="3cqZAp">
+          <node concept="TDmWw" id="VuyCfHMIlz" role="TEbGg">
+            <node concept="3clFbS" id="VuyCfHMIlr" role="TDEfX">
+              <node concept="RRSsy" id="VuyCfHMT7N" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="37vLTw" id="VuyCfHMT7R" role="RRSow">
+                  <ref role="3cqZAo" node="VuyCfHMIln" resolve="e" />
+                </node>
+                <node concept="3cpWs3" id="VuyCfHMIlu" role="RRSoy">
+                  <node concept="Xl_RD" id="VuyCfHMIlv" role="3uHU7B">
+                    <property role="Xl_RC" value="can't convert icon path to url: " />
+                  </node>
+                  <node concept="37vLTw" id="VuyCfHMTwN" role="3uHU7w">
+                    <ref role="3cqZAo" node="bhVSeF4Tyr" resolve="fullName" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="VuyCfHMWSI" role="3cqZAp">
+                <node concept="10Nm6u" id="VuyCfHMXCQ" role="3cqZAk" />
+              </node>
+            </node>
+            <node concept="3cpWsn" id="VuyCfHMIln" role="TDEfY">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="VuyCfHMIlp" role="1tU5fm">
+                <ref role="3uigEE" to="zf81:~MalformedURLException" resolve="MalformedURLException" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="VuyCfHMIla" role="SfCbr">
+            <node concept="3cpWs8" id="VuyCfHMIlc" role="3cqZAp">
+              <node concept="3cpWsn" id="VuyCfHMIlb" role="3cpWs9">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="iconUrl" />
+                <node concept="3uibUv" id="VuyCfHMIld" role="1tU5fm">
+                  <ref role="3uigEE" to="zf81:~URL" resolve="URL" />
+                </node>
+                <node concept="2OqwBi" id="VuyCfHMIle" role="33vP2m">
+                  <node concept="2OqwBi" id="VuyCfHMIGR" role="2Oq$k0">
+                    <node concept="37vLTw" id="VuyCfHMIGQ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="VuyCfHMIkS" resolve="iconFile" />
+                    </node>
+                    <node concept="liA8E" id="VuyCfHMIGS" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.toURI():java.net.URI" resolve="toURI" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="VuyCfHMIlg" role="2OqNvi">
+                    <ref role="37wK5l" to="zf81:~URI.toURL():java.net.URL" resolve="toURL" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="VuyCfHMU2H" role="3cqZAp">
+              <node concept="2YIFZM" id="VuyCfHMSBz" role="3cqZAk">
+                <ref role="37wK5l" to="zn9m:~IconLoader.findIcon(java.net.URL,boolean):javax.swing.Icon" resolve="findIcon" />
+                <ref role="1Pybhc" to="zn9m:~IconLoader" resolve="IconLoader" />
+                <node concept="37vLTw" id="VuyCfHMScu" role="37wK5m">
+                  <ref role="3cqZAo" node="VuyCfHMIlb" resolve="iconUrl" />
+                </node>
+                <node concept="3clFbT" id="VuyCfHMUbn" role="37wK5m">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -23721,15 +23833,20 @@
         <node concept="3cpWs8" id="5DkixGo8c74" role="3cqZAp">
           <node concept="3cpWsn" id="5DkixGo8c75" role="3cpWs9">
             <property role="TrG5h" value="result" />
+            <node concept="2OqwBi" id="VuyCfHLKEc" role="33vP2m">
+              <node concept="2YIFZM" id="VuyCfHLKoa" role="2Oq$k0">
+                <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+                <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+              </node>
+              <node concept="liA8E" id="VuyCfHLLaZ" role="2OqNvi">
+                <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+                <node concept="37vLTw" id="VuyCfHLLj1" role="37wK5m">
+                  <ref role="3cqZAo" node="1pmorAauK7R" resolve="node" />
+                </node>
+              </node>
+            </node>
             <node concept="3uibUv" id="5DkixGo8c73" role="1tU5fm">
               <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
-            </node>
-            <node concept="2YIFZM" id="5DkixGo8c76" role="33vP2m">
-              <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-              <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
-              <node concept="37vLTw" id="1pmorAav7Mg" role="37wK5m">
-                <ref role="3cqZAo" node="1pmorAauK7R" resolve="node" />
-              </node>
             </node>
           </node>
         </node>

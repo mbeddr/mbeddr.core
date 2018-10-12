@@ -2,8 +2,8 @@
 <model ref="r:16aa9518-e4e5-450e-86f6-504e4df2fa6f(com.mbeddr.mpsutil.dataflow.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
@@ -3066,8 +3066,8 @@
               <ref role="37wK5l" node="3DHs9S8slQH" resolve="getTrace" />
               <node concept="2OqwBi" id="3DHs9S8t0el" role="37wK5m">
                 <node concept="Xjq3P" id="3DHs9S8t0em" role="2Oq$k0" />
-                <node concept="2OwXpG" id="3DHs9S8t0en" role="2OqNvi">
-                  <ref role="2Oxat5" to="dau9:~WriteInstruction.myValue" resolve="myValue" />
+                <node concept="liA8E" id="4qZ_JW_DCkl" role="2OqNvi">
+                  <ref role="37wK5l" to="dau9:~WriteInstruction.getValue():java.lang.Object" resolve="getValue" />
                 </node>
               </node>
               <node concept="2OqwBi" id="3DHs9S8t0eo" role="37wK5m">
@@ -6570,8 +6570,8 @@
               </node>
               <node concept="liA8E" id="ELXCaNg8ph" role="2OqNvi">
                 <ref role="37wK5l" node="5xyoMgvtJLa" resolve="get" />
-                <node concept="37vLTw" id="ELXCaNg8pi" role="37wK5m">
-                  <ref role="3cqZAo" to="dau9:~JumpInstruction.myJumpTo" resolve="myJumpTo" />
+                <node concept="1rXfSq" id="4qZ_JW_DyHE" role="37wK5m">
+                  <ref role="37wK5l" to="dau9:~JumpInstruction.getJumpTo():int" resolve="getJumpTo" />
                 </node>
               </node>
             </node>
@@ -6603,8 +6603,8 @@
               </node>
               <node concept="liA8E" id="ELXCaNg8wN" role="2OqNvi">
                 <ref role="37wK5l" node="5xyoMgvtJLa" resolve="get" />
-                <node concept="37vLTw" id="ELXCaNg8wO" role="37wK5m">
-                  <ref role="3cqZAo" to="dau9:~JumpInstruction.myJumpTo" resolve="myJumpTo" />
+                <node concept="1rXfSq" id="4qZ_JW_Dz3a" role="37wK5m">
+                  <ref role="37wK5l" to="dau9:~JumpInstruction.getJumpTo():int" resolve="getJumpTo" />
                 </node>
               </node>
             </node>
@@ -6675,8 +6675,8 @@
                     </node>
                     <node concept="liA8E" id="183c22F198b" role="2OqNvi">
                       <ref role="37wK5l" node="5xyoMgvtJLa" resolve="get" />
-                      <node concept="37vLTw" id="183c22F198c" role="37wK5m">
-                        <ref role="3cqZAo" to="dau9:~JumpInstruction.myJumpTo" resolve="myJumpTo" />
+                      <node concept="1rXfSq" id="4qZ_JW_Dznh" role="37wK5m">
+                        <ref role="37wK5l" to="dau9:~JumpInstruction.getJumpTo():int" resolve="getJumpTo" />
                       </node>
                     </node>
                   </node>
@@ -12436,8 +12436,8 @@
               </node>
               <node concept="liA8E" id="ELXCaNg72A" role="2OqNvi">
                 <ref role="37wK5l" node="5xyoMgvtJLa" resolve="get" />
-                <node concept="37vLTw" id="ELXCaNg74r" role="37wK5m">
-                  <ref role="3cqZAo" to="dau9:~IfJumpInstruction.myJumpTo" resolve="myJumpTo" />
+                <node concept="1rXfSq" id="4qZ_JW_D_fD" role="37wK5m">
+                  <ref role="37wK5l" to="dau9:~IfJumpInstruction.getJumpTo():int" resolve="getJumpTo" />
                 </node>
               </node>
             </node>
@@ -12469,8 +12469,8 @@
               </node>
               <node concept="liA8E" id="ELXCaNg7rR" role="2OqNvi">
                 <ref role="37wK5l" node="5xyoMgvtJLa" resolve="get" />
-                <node concept="37vLTw" id="ELXCaNg7rS" role="37wK5m">
-                  <ref role="3cqZAo" to="dau9:~IfJumpInstruction.myJumpTo" resolve="myJumpTo" />
+                <node concept="1rXfSq" id="4qZ_JW_D_$T" role="37wK5m">
+                  <ref role="37wK5l" to="dau9:~IfJumpInstruction.getJumpTo():int" resolve="getJumpTo" />
                 </node>
               </node>
             </node>
@@ -12539,8 +12539,8 @@
                     </node>
                     <node concept="liA8E" id="183c22F17UU" role="2OqNvi">
                       <ref role="37wK5l" node="5xyoMgvtJLa" resolve="get" />
-                      <node concept="37vLTw" id="183c22F17UV" role="37wK5m">
-                        <ref role="3cqZAo" to="dau9:~IfJumpInstruction.myJumpTo" resolve="myJumpTo" />
+                      <node concept="1rXfSq" id="4qZ_JW_D_T0" role="37wK5m">
+                        <ref role="37wK5l" to="dau9:~IfJumpInstruction.getJumpTo():int" resolve="getJumpTo" />
                       </node>
                     </node>
                   </node>
@@ -13463,8 +13463,8 @@
       <node concept="3clFbS" id="2cV6Bp1WLpc" role="3clF47">
         <node concept="3cpWs6" id="2cV6Bp1WLxF" role="3cqZAp">
           <node concept="3cpWs3" id="2cV6Bp1WLAQ" role="3cqZAk">
-            <node concept="37vLTw" id="2cV6Bp1WLF_" role="3uHU7w">
-              <ref role="3cqZAo" to="dau9:~WriteInstruction.myVar" resolve="myVar" />
+            <node concept="1rXfSq" id="4qZ_JW_DAux" role="3uHU7w">
+              <ref role="37wK5l" to="dau9:~WriteInstruction.getVariable():java.lang.Object" resolve="getVariable" />
             </node>
             <node concept="Xl_RD" id="2cV6Bp1WLy$" role="3uHU7B">
               <property role="Xl_RC" value="map " />

@@ -2,8 +2,8 @@
 <model ref="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
   </languages>
@@ -344,7 +344,7 @@
                           <node concept="2OqwBi" id="7ESlTHsd2r9" role="37wK5m">
                             <node concept="2YIFZM" id="7ESlTHs1S2V" role="2Oq$k0">
                               <ref role="1Pybhc" to="mqum:3n2rqT9UxKL" resolve="MPSNodeComparator" />
-                              <ref role="37wK5l" to="mqum:6fymoI4RKZK" resolve="compare" />
+                              <ref role="37wK5l" to="mqum:4zngrhRwdqI" resolve="compare" />
                               <node concept="37vLTw" id="7ESlTHs1S2W" role="37wK5m">
                                 <ref role="3cqZAo" node="7ESlTHs1S3o" resolve="classExpected" />
                               </node>
@@ -1089,7 +1089,7 @@
             </node>
             <node concept="2YIFZM" id="1XBwKttfXx9" role="33vP2m">
               <ref role="1Pybhc" to="mqum:3n2rqT9UxKL" resolve="MPSNodeComparator" />
-              <ref role="37wK5l" to="mqum:6fymoI4RKZK" resolve="compare" />
+              <ref role="37wK5l" to="mqum:4zngrhRwdqI" resolve="compare" />
               <node concept="2OqwBi" id="1XBwKttfYTE" role="37wK5m">
                 <node concept="2OqwBi" id="1XBwKttfXOY" role="2Oq$k0">
                   <node concept="37vLTw" id="1XBwKttfXDi" role="2Oq$k0">

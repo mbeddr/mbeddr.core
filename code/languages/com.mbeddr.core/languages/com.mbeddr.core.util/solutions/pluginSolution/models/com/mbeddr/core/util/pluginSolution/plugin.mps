@@ -12,8 +12,8 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="-1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
@@ -341,6 +341,7 @@
         <child id="8974276187400348175" name="project" index="1QHqEE" />
       </concept>
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
@@ -489,7 +490,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -1857,6 +1858,24 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="1gr8_jlolzr" role="3cqZAp" />
+          <node concept="3cpWs8" id="3GZi4E_339b" role="3cqZAp">
+            <node concept="3cpWsn" id="3GZi4E_3399" role="3cpWs9">
+              <property role="3TUv4t" value="true" />
+              <property role="TrG5h" value="repo" />
+              <node concept="3uibUv" id="3GZi4E_35Ed" role="1tU5fm">
+                <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+              </node>
+              <node concept="2OqwBi" id="3GZi4E_3ed_" role="33vP2m">
+                <node concept="CVeQV" id="3GZi4E_3c63" role="2Oq$k0">
+                  <ref role="CVeQ8" node="4ZRMpUz6kZW" resolve="project" />
+                </node>
+                <node concept="liA8E" id="3GZi4E_3hww" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="1QHqEF" id="5fqMIVnw7Dv" role="3cqZAp">
             <node concept="1QHqEC" id="5fqMIVnw7Dx" role="1QHqEI">
               <node concept="3clFbS" id="5fqMIVnw7Dz" role="1bW5cS">
@@ -1879,9 +1898,8 @@
                         </node>
                         <node concept="liA8E" id="7PyP3ULh88m" role="2OqNvi">
                           <ref role="37wK5l" to="lui2:~SModuleReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.module.SModule" resolve="resolve" />
-                          <node concept="2YIFZM" id="7PyP3ULh88n" role="37wK5m">
-                            <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                            <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                          <node concept="37vLTw" id="3GZi4E_3nU3" role="37wK5m">
+                            <ref role="3cqZAo" node="3GZi4E_3399" resolve="repo" />
                           </node>
                         </node>
                       </node>
@@ -2391,6 +2409,9 @@
             </node>
             <node concept="CVeQV" id="5fqMIVnwRZI" role="1QHqEE">
               <ref role="CVeQ8" node="4ZRMpUz6kZW" resolve="project" />
+            </node>
+            <node concept="37vLTw" id="3GZi4E_3jTK" role="ukAjM">
+              <ref role="3cqZAo" node="3GZi4E_3399" resolve="repo" />
             </node>
           </node>
           <node concept="3clFbF" id="4ZRMpUzkgAj" role="3cqZAp">

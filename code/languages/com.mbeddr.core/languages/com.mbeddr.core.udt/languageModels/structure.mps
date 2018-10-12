@@ -582,7 +582,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="3117609929518446049" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
+    <ref role="1TJDcQ" to="mj1l:3dCMHw1DXUY" resolve="DerivedPrimitiveType" />
     <node concept="PrWs8" id="2H3YrqdbnGL" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
     </node>

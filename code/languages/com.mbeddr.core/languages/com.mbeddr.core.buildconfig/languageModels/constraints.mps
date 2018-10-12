@@ -5,7 +5,7 @@
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
   </languages>
   <imports>
@@ -195,7 +195,7 @@
               <node concept="2OqwBi" id="5CkU_dHieHv" role="37wK5m">
                 <node concept="v3k3i" id="5CkU_dHieHw" role="2OqNvi">
                   <node concept="chp4Y" id="5CkU_dHieHx" role="v3oSu">
-                    <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+                    <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="Library" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="5CkU_dHieHy" role="2Oq$k0">

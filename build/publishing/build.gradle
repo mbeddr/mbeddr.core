@@ -93,7 +93,7 @@ task copyRenameAndDeleteMacosSetupFile(type: Delete, dependsOn: [renameMacosFile
 }
 
 githubRelease.dependsOn copyRenameAndDeleteWindowsSetupFile,
-        copyRenameAndDeleteMacosSetupFile,
+        //copyRenameAndDeleteMacosSetupFile,
         renameAllInOne,
         renamePlarform,
         renameTutorial

@@ -1,3 +1,4 @@
 nexusUsername=<user>
 nexusPassword=<password>
 mpsHomeDir=<mps_home>
+mpsExtensionsZip=<mps_extensions_zip>

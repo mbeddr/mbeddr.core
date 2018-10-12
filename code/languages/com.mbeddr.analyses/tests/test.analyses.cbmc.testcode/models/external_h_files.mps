@@ -10,7 +10,7 @@
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
     <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
@@ -76,6 +76,7 @@
         <property id="8445711190801184380" name="hasPreprocessorMacroSettings" index="3u2WvC" />
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
         <child id="3246959727582077262" name="externalFiles" index="1Byen_" />
+        <child id="4454112229486347372" name="includeDirectories" index="1L$uGl" />
       </concept>
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
@@ -131,6 +132,7 @@
       </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
@@ -293,6 +295,16 @@
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file.c" />
+      </node>
+      <node concept="9PVaO" id="3RgbR_cihNy" role="1L$uGl">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="external_headers_1" />
+      </node>
+      <node concept="9PVaO" id="3RgbR_cii0m" role="1L$uGl">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="external_headers_2" />
       </node>
     </node>
   </node>

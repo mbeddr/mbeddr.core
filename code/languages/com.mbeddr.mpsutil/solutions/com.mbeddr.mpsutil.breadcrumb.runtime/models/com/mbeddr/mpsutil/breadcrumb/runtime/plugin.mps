@@ -12,8 +12,8 @@
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
   </languages>
   <imports>
@@ -4277,11 +4277,16 @@
             <node concept="3uibUv" id="5DkixGo8c73" role="1tU5fm">
               <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
             </node>
-            <node concept="2YIFZM" id="5DkixGo8c76" role="33vP2m">
-              <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
-              <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-              <node concept="37vLTw" id="1pmorAav7Mg" role="37wK5m">
-                <ref role="3cqZAo" node="1pmorAauK7R" resolve="node" />
+            <node concept="2OqwBi" id="4glh_DcgiT2" role="33vP2m">
+              <node concept="2YIFZM" id="4glh_DcgiEC" role="2Oq$k0">
+                <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+                <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+              </node>
+              <node concept="liA8E" id="4glh_Dcgjwk" role="2OqNvi">
+                <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+                <node concept="37vLTw" id="4glh_Dcgj_F" role="37wK5m">
+                  <ref role="3cqZAo" node="1pmorAauK7R" resolve="node" />
+                </node>
               </node>
             </node>
           </node>
@@ -9918,15 +9923,14 @@
                   <node concept="3cpWs8" id="61Pvu7KDfz3" role="3cqZAp">
                     <node concept="3cpWsn" id="61Pvu7KDfz4" role="3cpWs9">
                       <property role="TrG5h" value="firstLeaf" />
-                      <node concept="3uibUv" id="61Pvu7KDfz5" role="1tU5fm">
-                        <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+                      <node concept="3uibUv" id="6$SBfHxYj7K" role="1tU5fm">
+                        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
                       </node>
-                      <node concept="2OqwBi" id="61Pvu7KDfz6" role="33vP2m">
-                        <node concept="37vLTw" id="61Pvu7KDfz7" role="2Oq$k0">
+                      <node concept="2YIFZM" id="6$SBfHxYgVR" role="33vP2m">
+                        <ref role="37wK5l" to="f4zo:~CellTraversalUtil.getFirstLeaf(jetbrains.mps.openapi.editor.cells.EditorCell):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getFirstLeaf" />
+                        <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
+                        <node concept="37vLTw" id="6$SBfHxYhR6" role="37wK5m">
                           <ref role="3cqZAo" node="61Pvu7KDfyV" resolve="nodeCell" />
-                        </node>
-                        <node concept="liA8E" id="61Pvu7KDfz8" role="2OqNvi">
-                          <ref role="37wK5l" to="g51k:~EditorCell.getFirstLeaf():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getFirstLeaf" />
                         </node>
                       </node>
                     </node>
@@ -9934,8 +9938,8 @@
                   <node concept="3cpWs8" id="6MzUSwzizBs" role="3cqZAp">
                     <node concept="3cpWsn" id="6MzUSwzizBt" role="3cpWs9">
                       <property role="TrG5h" value="targetCell" />
-                      <node concept="3uibUv" id="6MzUSwzizBi" role="1tU5fm">
-                        <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+                      <node concept="3uibUv" id="6$SBfHxYjv7" role="1tU5fm">
+                        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
                       </node>
                       <node concept="3K4zz7" id="6MzUSwzizBu" role="33vP2m">
                         <node concept="37vLTw" id="6MzUSwzizBv" role="3K4E3e">

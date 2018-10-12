@@ -6,9 +6,9 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -852,13 +852,23 @@
                                   </node>
                                 </node>
                               </node>
+                              <node concept="3SKdUt" id="VuyCfHNAuB" role="3cqZAp">
+                                <node concept="3SKdUq" id="VuyCfHNAuD" role="3SKWNk">
+                                  <property role="3SKdUp" value="todo [Mihail Muhin] consider switching to SProperty here as an identifier, instead of property name" />
+                                </node>
+                              </node>
                               <node concept="3cpWs6" id="1o6EjwiTVgx" role="3cqZAp">
-                                <node concept="2OqwBi" id="1o6EjwiTS9W" role="3cqZAk">
-                                  <node concept="37vLTw" id="1o6EjwiTS9X" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1o6EjwiTS9F" resolve="propertyAccessor" />
+                                <node concept="2OqwBi" id="VuyCfHN_jB" role="3cqZAk">
+                                  <node concept="2OqwBi" id="1o6EjwiTS9W" role="2Oq$k0">
+                                    <node concept="37vLTw" id="1o6EjwiTS9X" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="1o6EjwiTS9F" resolve="propertyAccessor" />
+                                    </node>
+                                    <node concept="liA8E" id="1o6EjwiTS9Y" role="2OqNvi">
+                                      <ref role="37wK5l" to="g51k:~PropertyAccessor.getProperty():org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
+                                    </node>
                                   </node>
-                                  <node concept="liA8E" id="1o6EjwiTS9Y" role="2OqNvi">
-                                    <ref role="37wK5l" to="g51k:~PropertyAccessor.getPropertyName():java.lang.String" resolve="getPropertyName" />
+                                  <node concept="liA8E" id="VuyCfHN_WG" role="2OqNvi">
+                                    <ref role="37wK5l" to="c17a:~SProperty.getName():java.lang.String" resolve="getName" />
                                   </node>
                                 </node>
                               </node>

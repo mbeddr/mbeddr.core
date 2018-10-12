@@ -48,6 +48,9 @@
     <import index="z1c5" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
+    <import index="v23q" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi(MPS.IDEA/)" />
     <import index="2sud" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.treeStructure(MPS.IDEA/)" implicit="true" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
   </imports>
@@ -370,7 +373,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -894,12 +897,39 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="BMoFi_wnia" role="jymVt" />
+    <node concept="3clFb_" id="BMoFi_woH7" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="dispose" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="BMoFi_woH8" role="1B3o_S" />
+      <node concept="3cqZAl" id="BMoFi_woHa" role="3clF45" />
+      <node concept="3clFbS" id="BMoFi_woHg" role="3clF47">
+        <node concept="3clFbF" id="BMoFi_wqz3" role="3cqZAp">
+          <node concept="2OqwBi" id="BMoFi_wsKK" role="3clFbG">
+            <node concept="37vLTw" id="BMoFi_wqz2" role="2Oq$k0">
+              <ref role="3cqZAo" node="4GGI4_vg$3D" resolve="myTree" />
+            </node>
+            <node concept="liA8E" id="BMoFi_wuzD" role="2OqNvi">
+              <ref role="37wK5l" to="7e8u:~MPSTree.dispose():void" resolve="dispose" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="BMoFi_woHh" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4GGI4_vgpb1" role="1B3o_S" />
     <node concept="3uibUv" id="4GGI4_vgxYO" role="1zkMxy">
       <ref role="3uigEE" to="qqrq:~JBScrollPane" resolve="JBScrollPane" />
     </node>
     <node concept="3uibUv" id="4GGI4_vha$L" role="EKbjA">
       <ref role="3uigEE" to="u42p:52KjdOfMzLI" resolve="ModelElementTargetChooser" />
+    </node>
+    <node concept="3uibUv" id="BMoFi_zlTN" role="EKbjA">
+      <ref role="3uigEE" to="v23q:~Disposable" resolve="Disposable" />
     </node>
   </node>
   <node concept="312cEu" id="4GGI4_vgxXF">
@@ -1470,6 +1500,18 @@
               <node concept="liA8E" id="4GGI4_vhq6q" role="2OqNvi">
                 <ref role="37wK5l" node="4GGI4_vg$5Z" resolve="getComponent" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="BMoFi_wla_" role="3cqZAp">
+          <node concept="2YIFZM" id="BMoFi_wlwI" role="3clFbG">
+            <ref role="37wK5l" to="zn9m:~Disposer.register(com.intellij.openapi.Disposable,com.intellij.openapi.Disposable):void" resolve="register" />
+            <ref role="1Pybhc" to="zn9m:~Disposer" resolve="Disposer" />
+            <node concept="1rXfSq" id="BMoFi_wlxh" role="37wK5m">
+              <ref role="37wK5l" to="jkm4:~DialogWrapper.getDisposable():com.intellij.openapi.Disposable" resolve="getDisposable" />
+            </node>
+            <node concept="37vLTw" id="BMoFi_wlAh" role="37wK5m">
+              <ref role="3cqZAo" node="4GGI4_vhplq" resolve="myChooser" />
             </node>
           </node>
         </node>
@@ -5765,25 +5807,10 @@
           </node>
           <node concept="3clFbF" id="2Nt6pro9jg9" role="3cqZAp">
             <node concept="1rXfSq" id="2Nt6pro9jga" role="3clFbG">
-              <ref role="37wK5l" to="7e8u:~MPSTreeNode.setIcon(javax.swing.Icon,boolean):void" resolve="setIcon" />
-              <node concept="10M0yZ" id="2Nt6pro9kbu" role="37wK5m">
-                <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
-                <ref role="3cqZAo" to="xnls:~IdeIcons.PROJECT_MODELS_ICON" resolve="PROJECT_MODELS_ICON" />
-              </node>
-              <node concept="3clFbT" id="2Nt6pro9jgc" role="37wK5m">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="2Nt6pro9jgd" role="3cqZAp">
-            <node concept="1rXfSq" id="2Nt6pro9jge" role="3clFbG">
-              <ref role="37wK5l" to="7e8u:~MPSTreeNode.setIcon(javax.swing.Icon,boolean):void" resolve="setIcon" />
-              <node concept="10M0yZ" id="2Nt6pro9kbv" role="37wK5m">
-                <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
-                <ref role="3cqZAo" to="xnls:~IdeIcons.PROJECT_MODELS_EXPANDED_ICON" resolve="PROJECT_MODELS_EXPANDED_ICON" />
-              </node>
-              <node concept="3clFbT" id="2Nt6pro9jgg" role="37wK5m">
-                <property role="3clFbU" value="true" />
+              <ref role="37wK5l" to="7e8u:~MPSTreeNode.setIcon(javax.swing.Icon):void" resolve="setIcon" />
+              <node concept="10M0yZ" id="3Gpcve3cvIf" role="37wK5m">
+                <ref role="1PxDUh" to="z2i8:~AllIcons$Nodes" resolve="AllIcons.Nodes" />
+                <ref role="3cqZAo" to="z2i8:~AllIcons$Nodes.ModuleGroup" resolve="ModuleGroup" />
               </node>
             </node>
           </node>
@@ -5858,25 +5885,10 @@
           </node>
           <node concept="3clFbF" id="2Nt6pro9jgF" role="3cqZAp">
             <node concept="1rXfSq" id="2Nt6pro9jgG" role="3clFbG">
-              <ref role="37wK5l" to="7e8u:~MPSTreeNode.setIcon(javax.swing.Icon,boolean):void" resolve="setIcon" />
-              <node concept="10M0yZ" id="2Nt6pro9kbx" role="37wK5m">
-                <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
-                <ref role="3cqZAo" to="xnls:~IdeIcons.PROJECT_MODELS_ICON" resolve="PROJECT_MODELS_ICON" />
-              </node>
-              <node concept="3clFbT" id="2Nt6pro9jgI" role="37wK5m">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="2Nt6pro9jgJ" role="3cqZAp">
-            <node concept="1rXfSq" id="2Nt6pro9jgK" role="3clFbG">
-              <ref role="37wK5l" to="7e8u:~MPSTreeNode.setIcon(javax.swing.Icon,boolean):void" resolve="setIcon" />
-              <node concept="10M0yZ" id="2Nt6pro9kby" role="37wK5m">
-                <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
-                <ref role="3cqZAo" to="xnls:~IdeIcons.PROJECT_MODELS_EXPANDED_ICON" resolve="PROJECT_MODELS_EXPANDED_ICON" />
-              </node>
-              <node concept="3clFbT" id="2Nt6pro9jgM" role="37wK5m">
-                <property role="3clFbU" value="true" />
+              <ref role="37wK5l" to="7e8u:~MPSTreeNode.setIcon(javax.swing.Icon):void" resolve="setIcon" />
+              <node concept="10M0yZ" id="3Gpcve3cx5E" role="37wK5m">
+                <ref role="1PxDUh" to="z2i8:~AllIcons$Nodes" resolve="AllIcons.Nodes" />
+                <ref role="3cqZAo" to="z2i8:~AllIcons$Nodes.ModuleGroup" resolve="ModuleGroup" />
               </node>
             </node>
           </node>
@@ -6804,30 +6816,10 @@
               <ref role="3cqZAo" node="2Nt6prob_i5" resolve="allModels" />
             </node>
             <node concept="liA8E" id="2Nt6prob_jI" role="2OqNvi">
-              <ref role="37wK5l" to="7e8u:~MPSTreeNode.setIcon(javax.swing.Icon,boolean):void" resolve="setIcon" />
-              <node concept="10M0yZ" id="2Nt6prob_Zl" role="37wK5m">
-                <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
-                <ref role="3cqZAo" to="xnls:~IdeIcons.PROJECT_MODELS_ICON" resolve="PROJECT_MODELS_ICON" />
-              </node>
-              <node concept="3clFbT" id="2Nt6prob_ic" role="37wK5m">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Nt6prob_id" role="3cqZAp">
-          <node concept="2OqwBi" id="2Nt6prob_jP" role="3clFbG">
-            <node concept="37vLTw" id="2Nt6prob_jO" role="2Oq$k0">
-              <ref role="3cqZAo" node="2Nt6prob_i5" resolve="allModels" />
-            </node>
-            <node concept="liA8E" id="2Nt6prob_jQ" role="2OqNvi">
-              <ref role="37wK5l" to="7e8u:~MPSTreeNode.setIcon(javax.swing.Icon,boolean):void" resolve="setIcon" />
-              <node concept="10M0yZ" id="2Nt6prob_Zm" role="37wK5m">
-                <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
-                <ref role="3cqZAo" to="xnls:~IdeIcons.PROJECT_MODELS_EXPANDED_ICON" resolve="PROJECT_MODELS_EXPANDED_ICON" />
-              </node>
-              <node concept="3clFbT" id="2Nt6prob_ig" role="37wK5m">
-                <property role="3clFbU" value="true" />
+              <ref role="37wK5l" to="7e8u:~MPSTreeNode.setIcon(javax.swing.Icon):void" resolve="setIcon" />
+              <node concept="10M0yZ" id="3Gpcve3csez" role="37wK5m">
+                <ref role="3cqZAo" to="z2i8:~AllIcons$Nodes.ModuleGroup" resolve="ModuleGroup" />
+                <ref role="1PxDUh" to="z2i8:~AllIcons$Nodes" resolve="AllIcons.Nodes" />
               </node>
             </node>
           </node>

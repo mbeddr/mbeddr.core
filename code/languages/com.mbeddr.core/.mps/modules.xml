@@ -42,12 +42,10 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.expressions.runtime/com.mbeddr.core.expressions.runtime.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.interpreterdebugger.rt/com.mbeddr.core.interpreterdebugger.rt.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.legacy.interpreter/com.mbeddr.core.legacy.interpreter.msd" folder="core" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.modules.gen.rt/com.mbeddr.core.modules.gen.rt.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.modules.interpreter/com.mbeddr.core.modules.interpreter.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.pointers.interpreter/com.mbeddr.core.pointers.interpreter.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.statements.interpreter/com.mbeddr.core.statements.interpreter.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.stdlib/com.mbeddr.core.stdlib.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.traceExplorer/com.mbeddr.core.traceExplorer.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.util.interpreter/com.mbeddr.core.util.interpreter.msd" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorialActions/com.mbeddr.tutorialActions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/aLibrary/aLibrary.msd" folder="tests" />

@@ -287,7 +287,7 @@
       <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
-      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="ng" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -479,7 +479,7 @@
                   <node concept="1Y3b0j" id="5FJiYrlELfq" role="YeSDq">
                     <property role="2bfB8j" value="true" />
                     <ref role="1Y3XeK" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
-                    <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;()" resolve="AbstractCellProvider" />
+                    <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
                     <node concept="3Tm1VV" id="5FJiYrlELfr" role="1B3o_S" />
                     <node concept="3clFb_" id="5FJiYrlELfs" role="jymVt">
                       <property role="1EzhhJ" value="false" />
@@ -662,6 +662,7 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="pncrf" id="6$SBfHyugg5" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -1194,7 +1195,7 @@
                 <node concept="1Y3b0j" id="7LkwBl9Kj0N" role="YeSDq">
                   <property role="2bfB8j" value="true" />
                   <ref role="1Y3XeK" to="hdil:4g2H4r3V4OE" resolve="EditorCell_Checkbox" />
-                  <ref role="37wK5l" to="hdil:4g2H4r3V7I2" resolve="EditorCell_Checkbox" />
+                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                   <node concept="3Tm1VV" id="7LkwBl9Kj0O" role="1B3o_S" />
                   <node concept="37vLTw" id="7LkwBl9JNVc" role="37wK5m">
                     <ref role="3cqZAo" node="7LkwBl9ImJ8" resolve="myEditorContext" />

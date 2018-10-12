@@ -35,6 +35,14 @@
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
@@ -88,6 +96,9 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -96,6 +107,9 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="1028666136487545270" name="com.mbeddr.core.modules.structure.CommentModuleContent" flags="ng" index="2B_Gvg">
+        <child id="1028666136487550078" name="text" index="2B_H8o" />
+      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
         <child id="1317894735999304826" name="imports" index="2OODSX" />
@@ -122,7 +136,6 @@
       </concept>
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
         <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
-        <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
         <child id="7755897872837031765" name="actual" index="2N2GHg" />
@@ -135,7 +148,7 @@
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
+      <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -143,6 +156,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency">
@@ -261,8 +281,8 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include" />
-      <property role="1FkSt$" value="-g  -I/usr/include/" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
       <property role="3I8uaA" value="" />
       <node concept="3abb7c" id="4LhGMnjpR5g" role="3anu1O">
         <property role="TrG5h" value="Win32" />
@@ -309,7 +329,7 @@
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJ_f" role="2Q9xDr">
-      <node concept="3GpDuo" id="4ctEUnyrJaF" role="3GpDut" />
+      <node concept="3GpDuv" id="5IBF_ZVt6Ad" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="6bs538lKHvH">
@@ -784,12 +804,25 @@
     <node concept="2NXPZ9" id="tTL6IW2_hT" role="N3F5h">
       <property role="TrG5h" value="empty_1437586495850_1" />
     </node>
+    <node concept="2B_Gvg" id="7YH5Tx023Lc" role="N3F5h">
+      <node concept="OjmMv" id="7YH5Tx023Le" role="2B_H8o">
+        <node concept="19SGf9" id="7YH5Tx023Lf" role="OjmMu">
+          <node concept="19SUe$" id="7YH5Tx023Lg" role="19SJt6">
+            <property role="19SUeA" value="TODO: re-enable" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="lIfQi" id="4Ru$s7zAKiT" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
-      <node concept="3cM6IN" id="4Ru$s7zAKiU" role="lIfQt">
-        <ref role="3cM6IK" node="6bs538lKHxN" resolve="taskTest1" />
+      <node concept="1X3_iC" id="7YH5Tx01Flu" role="lGtFl">
+        <property role="3V$3am" value="tests" />
+        <property role="3V$3ak" value="06d68b77-b699-4918-83b8-857e63787800/7955188678846741606/7955188678846741609" />
+        <node concept="3cM6IN" id="4Ru$s7zAKiU" role="8Wnug">
+          <ref role="3cM6IK" node="6bs538lKHxN" resolve="taskTest1" />
+        </node>
       </node>
     </node>
     <node concept="2NXPZ9" id="tTL6IW2_Tf" role="N3F5h">
