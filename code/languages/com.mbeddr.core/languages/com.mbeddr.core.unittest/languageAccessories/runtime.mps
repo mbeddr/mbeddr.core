@@ -598,7 +598,7 @@
       <property role="TrG5h" value="empty_1538576064568_3" />
     </node>
     <node concept="N3Fnx" id="4DjlAm4JTPO" role="N3F5h">
-      <property role="TrG5h" value="init" />
+      <property role="TrG5h" value="init_test_run" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="4DjlAm4JTPQ" role="3XIRFX">
         <node concept="c0U19" id="7MLN0_L9$1m" role="3XIRFZ">
@@ -1978,7 +1978,7 @@
       <property role="TrG5h" value="empty_1448393244970_10" />
     </node>
     <node concept="N3Fnx" id="4DjlAm4JTXU" role="N3F5h">
-      <property role="TrG5h" value="finalize" />
+      <property role="TrG5h" value="finalize_test_run" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="4DjlAm4JTXW" role="3XIRFX">
         <node concept="1QiMYF" id="3_xiDtIQLfZ" role="3XIRFZ">
