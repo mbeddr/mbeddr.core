@@ -1171,5 +1171,38 @@
     </node>
     <node concept="382kZG" id="3Q2hMLtQ6wi" role="lGtFl" />
   </node>
+  <node concept="24kQdi" id="6On3mjUaJ5s">
+    <ref role="1XX52x" to="yz9a:6On3mjUaIW2" resolve="IgnoreAnnotation" />
+    <node concept="3EZMnI" id="6On3mjUaJ5u" role="2wV5jI">
+      <node concept="3F0ifn" id="6On3mjUaJ5C" role="3EZMnx">
+        <property role="3F0ifm" value="@ignore" />
+        <ref role="1ERwB7" node="6On3mjUaJ6B" resolve="deleteIgnore" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dhDUJ" resolve="Metadata" />
+      </node>
+      <node concept="2SsqMj" id="6On3mjUaJ61" role="3EZMnx">
+        <node concept="pVoyu" id="6On3mjUaJ65" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6On3mjUaJ5x" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="6On3mjUaJ6B">
+    <property role="TrG5h" value="deleteIgnore" />
+    <ref role="1h_SK9" to="yz9a:6On3mjUaIW2" resolve="IgnoreAnnotation" />
+    <node concept="1hA7zw" id="6On3mjUaJ7r" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="6On3mjUaJ7s" role="1hA7z_">
+        <node concept="3clFbS" id="6On3mjUaJ7t" role="2VODD2">
+          <node concept="3clFbF" id="6On3mjUaJ7J" role="3cqZAp">
+            <node concept="2OqwBi" id="6On3mjUaJhr" role="3clFbG">
+              <node concept="0IXxy" id="6On3mjUaJ7I" role="2Oq$k0" />
+              <node concept="3YRAZt" id="6On3mjUaKgJ" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

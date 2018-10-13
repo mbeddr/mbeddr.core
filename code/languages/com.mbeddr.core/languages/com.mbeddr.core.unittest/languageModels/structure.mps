@@ -593,5 +593,19 @@
       <ref role="20lvS9" node="6TAwvhVRBLA" resolve="TestCollection" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6On3mjUaIW2">
+    <property role="TrG5h" value="IgnoreAnnotation" />
+    <property role="EcuMT" value="7860766401943498498" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="PrWs8" id="6On3mjUaIW5" role="PzmwI">
+      <ref role="PrY4T" node="3Rzs0kGBKjV" resolve="IRequireUnitTestFramework" />
+    </node>
+    <node concept="M6xJ_" id="6On3mjUaIW6" role="lGtFl">
+      <property role="Hh88m" value="ignore" />
+      <node concept="trNpa" id="6On3mjUaIW8" role="EQaZv">
+        <ref role="trN6q" node="5so5TTr6RXr" resolve="TestCase" />
+      </node>
+    </node>
+  </node>
 </model>
 
