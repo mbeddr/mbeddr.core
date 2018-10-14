@@ -9980,6 +9980,26 @@
         </node>
       </node>
     </node>
+    <node concept="2NXPZ9" id="om3tjyL$A$" role="N3F5h">
+      <property role="TrG5h" value="empty_1431285490607_153" />
+    </node>
+    <node concept="1sgJKc" id="pE4rJ9OTTI" role="N3F5h">
+      <property role="TrG5h" value="timeval" />
+      <node concept="1dpRTG" id="pE4rJ9OVac" role="HszBJ">
+        <property role="TrG5h" value="tv_sec" />
+        <node concept="26Vqp1" id="pE4rJ9P7Hl" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="pE4rJ9OVbK" role="HszBJ">
+        <property role="TrG5h" value="tv_usec" />
+        <node concept="26Vqp1" id="pE4rJ9P86F" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
     <node concept="2NXPZ9" id="om3tjyp9di" role="N3F5h">
       <property role="TrG5h" value="empty_1431122698617_1" />
     </node>
@@ -10317,18 +10337,12 @@
         <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node concept="2NXPZ9" id="om3tjyL$A$" role="N3F5h">
-      <property role="TrG5h" value="empty_1431285490607_153" />
-    </node>
     <node concept="rcWE1" id="om3tjyp8od" role="rcWEr">
-      <property role="rcWEL" value="&lt;sys/time.h&gt;" />
-    </node>
-    <node concept="3GEVxB" id="pE4rJ9OYR7" role="2OODSX">
-      <ref role="3GEb4d" node="pE4rJ9OTT$" resolve="timeval" />
+      <property role="rcWEL" value="&lt;time.h&gt;" />
     </node>
   </node>
   <node concept="rcWEw" id="pE4rJ9OebQ">
-    <property role="TrG5h" value="timeb" />
+    <property role="TrG5h" value="sys_timeb" />
     <node concept="rcWE1" id="pE4rJ9OeNd" role="rcWEr">
       <property role="rcWEL" value="&lt;sys/timeb.h&gt;" />
     </node>
@@ -10393,26 +10407,6 @@
     </node>
     <node concept="3GEVxB" id="pE4rJ9OnUV" role="2OODSX">
       <ref role="3GEb4d" node="137zkozyc$V" resolve="time" />
-    </node>
-  </node>
-  <node concept="rcWEw" id="pE4rJ9OTT$">
-    <property role="TrG5h" value="timeval" />
-    <node concept="1sgJKc" id="pE4rJ9OTTI" role="N3F5h">
-      <property role="TrG5h" value="timeval" />
-      <node concept="1dpRTG" id="pE4rJ9OVac" role="HszBJ">
-        <property role="TrG5h" value="tv_sec" />
-        <node concept="26Vqp1" id="pE4rJ9P7Hl" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="1dpRTG" id="pE4rJ9OVbK" role="HszBJ">
-        <property role="TrG5h" value="tv_usec" />
-        <node concept="26Vqp1" id="pE4rJ9P86F" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="rcWEw" id="1o$bJoOV23_">
