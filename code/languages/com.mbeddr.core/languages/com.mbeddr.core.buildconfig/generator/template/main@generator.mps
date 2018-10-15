@@ -5363,7 +5363,7 @@
         <property role="3r3y0D" value="$(HOST)" />
         <property role="3r3yED" value="$(Target)" />
         <node concept="12Eqlt" id="6On3mjVjHZv" role="3r8OHu">
-          <property role="12ErFq" value="$(vecho) &quot;Running $(notdir $@)&quot;" />
+          <property role="12ErFq" value="$(vecho) &quot;Running $(notdir $&lt;)&quot;" />
         </node>
         <node concept="12Eqlt" id="6On3mjVjR1q" role="3r8OHu">
           <property role="12ErFq" value="./binary" />
