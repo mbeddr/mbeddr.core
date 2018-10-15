@@ -5366,7 +5366,7 @@
           <property role="12ErFq" value="$(vecho) &quot;Running $(notdir $&lt;)&quot;" />
         </node>
         <node concept="12Eqlt" id="6On3mjVjR1q" role="3r8OHu">
-          <property role="12ErFq" value="./binary" />
+          <property role="12ErFq" value="$(Q) ./binary" />
           <node concept="17Uvod" id="6On3mjVjRwD" role="lGtFl">
             <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/7595578942778593171/7595578942778593300" />
             <property role="2qtEX9" value="command" />
@@ -5376,7 +5376,7 @@
                   <node concept="3cpWs3" id="6On3mjVkBT$" role="3clFbG">
                     <node concept="3cpWs3" id="6On3mjVky$A" role="3uHU7B">
                       <node concept="Xl_RD" id="6On3mjVkrXc" role="3uHU7B">
-                        <property role="Xl_RC" value="./" />
+                        <property role="Xl_RC" value="$(Q) ./" />
                       </node>
                       <node concept="2OqwBi" id="6On3mjVkzB5" role="3uHU7w">
                         <node concept="30H73N" id="6On3mjVkz4v" role="2Oq$k0" />
