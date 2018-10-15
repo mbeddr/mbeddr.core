@@ -25,6 +25,7 @@
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
     <import index="gkt" ref="r:f29b6853-4e1d-40bc-a331-9233266a6f31(com.mbeddr.ext.units.runtime.plugin)" />
+    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -413,6 +414,31 @@
       <ref role="13i0hy" to="ywuz:61lw97FtLtJ" resolve="getUsedBytes" />
       <node concept="3Tm1VV" id="7eOyx9r3O0H" role="1B3o_S" />
       <node concept="3clFbS" id="7eOyx9r3O0K" role="3clF47">
+        <node concept="Jncv_" id="7ZfJhgqO89Z" role="3cqZAp">
+          <ref role="JncvD" to="tpd4:hiQyH4M" resolve="MeetType" />
+          <node concept="2OqwBi" id="7ZfJhgqO8wK" role="JncvB">
+            <node concept="13iPFW" id="7ZfJhgqO8iY" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7ZfJhgqO9eG" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:6ngD7lvl1tc" resolve="valueType" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="7ZfJhgqO8aj" role="Jncv$">
+            <node concept="3SKdUt" id="7ZfJhgqOHmn" role="3cqZAp">
+              <node concept="3SKdUq" id="7ZfJhgqOHmp" role="3SKWNk">
+                <property role="3SKdUp" value="TODO Provide a better algorithm for this case" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7ZfJhgqOE9_" role="3cqZAp">
+              <node concept="3cmrfG" id="7ZfJhgqOEWf" role="3cqZAk">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="7ZfJhgqO8at" role="JncvA">
+            <property role="TrG5h" value="meetType" />
+            <node concept="2jxLKc" id="7ZfJhgqO8au" role="1tU5fm" />
+          </node>
+        </node>
         <node concept="3clFbF" id="7eOyx9r3O0R" role="3cqZAp">
           <node concept="2OqwBi" id="7eOyx9r3OLm" role="3clFbG">
             <node concept="1PxgMI" id="74lwjTPV0Zd" role="2Oq$k0">
@@ -2619,7 +2645,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getParentPopup" />
-      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
+      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getCategory" />
       <node concept="3Tm1VV" id="5k9oiuIBJi2" role="1B3o_S" />
       <node concept="3clFbS" id="5k9oiuIBJi5" role="3clF47">
         <node concept="3clFbF" id="5k9oiuIBZgt" role="3cqZAp">
