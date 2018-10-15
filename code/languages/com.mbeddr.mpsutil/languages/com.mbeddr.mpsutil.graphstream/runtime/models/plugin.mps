@@ -2514,7 +2514,7 @@
               <ref role="3cqZAo" node="6x5UxX30db6" resolve="_canvas" />
             </node>
             <node concept="liA8E" id="6x5UxX30HZV" role="2OqNvi">
-              <ref role="37wK5l" to="41rc:~AbstractJGVTComponent.resetRenderingTransform():void" resolve="resetRenderingTransform" />
+              <ref role="37wK5l" to="41rc:~JGVTComponent.resetRenderingTransform():void" resolve="resetRenderingTransform" />
             </node>
           </node>
         </node>
@@ -3218,7 +3218,7 @@
                 <ref role="3cqZAo" node="6x5UxX30db6" resolve="_canvas" />
               </node>
               <node concept="liA8E" id="2sPLpCfQKIa" role="2OqNvi">
-                <ref role="37wK5l" to="41rc:~AbstractJGVTComponent.getGraphicsNode():org.apache.batik.gvt.GraphicsNode" resolve="getGraphicsNode" />
+                <ref role="37wK5l" to="41rc:~JGVTComponent.getGraphicsNode():org.apache.batik.gvt.GraphicsNode" resolve="getGraphicsNode" />
               </node>
             </node>
           </node>
@@ -3235,7 +3235,7 @@
             </node>
             <node concept="2OqwBi" id="2sPLpCfQKIg" role="33vP2m">
               <node concept="liA8E" id="2sPLpCfQKIi" role="2OqNvi">
-                <ref role="37wK5l" to="41rc:~AbstractJGVTComponent.getRenderingTransform():java.awt.geom.AffineTransform" resolve="getRenderingTransform" />
+                <ref role="37wK5l" to="41rc:~JGVTComponent.getRenderingTransform():java.awt.geom.AffineTransform" resolve="getRenderingTransform" />
               </node>
               <node concept="37vLTw" id="6x5UxX30rTb" role="2Oq$k0">
                 <ref role="3cqZAo" node="6x5UxX30db6" resolve="_canvas" />
@@ -3376,7 +3376,7 @@
             <node concept="3clFbF" id="2sPLpCfQKJ2" role="3cqZAp">
               <node concept="2OqwBi" id="2sPLpCfQKJ3" role="3clFbG">
                 <node concept="liA8E" id="2sPLpCfQKJ5" role="2OqNvi">
-                  <ref role="37wK5l" to="41rc:~AbstractJGVTComponent.setRenderingTransform(java.awt.geom.AffineTransform):void" resolve="setRenderingTransform" />
+                  <ref role="37wK5l" to="41rc:~JGVTComponent.setRenderingTransform(java.awt.geom.AffineTransform):void" resolve="setRenderingTransform" />
                   <node concept="37vLTw" id="2sPLpCfQKJ6" role="37wK5m">
                     <ref role="3cqZAo" node="2sPLpCfQKHN" resolve="t" />
                   </node>
