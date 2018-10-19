@@ -15,6 +15,7 @@
     <dependency reexport="false">6e9e9327-19d7-416c-8dd0-24b15ea19915(com.mbeddr.analyses.z3.lib)</dependency>
     <dependency reexport="false">42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</dependency>
     <dependency reexport="false">e0dc4b58-6648-4617-8514-abfaa6d77043(com.mbeddr.analyses.stan)</dependency>
+    <dependency reexport="false">0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
@@ -59,6 +60,7 @@
     <module reference="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" version="0" />
     <module reference="6d31dab5-f8dd-4ba3-9606-ea5ac2e34495(com.mbeddr.doc.aspect.runtime)" version="0" />
     <module reference="b574d547-b77e-4fed-9f60-c349c4410765(com.mbeddr.ext.math)" version="0" />
+    <module reference="0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
     <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
