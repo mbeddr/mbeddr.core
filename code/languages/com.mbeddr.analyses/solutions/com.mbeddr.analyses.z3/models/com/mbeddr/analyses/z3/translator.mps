@@ -31,6 +31,7 @@
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="19k1" ref="r:8adfbc0c-2e95-438e-bde2-5fa4acf91c87(com.mbeddr.analyses.stan.plugin)" />
     <import index="qlb5" ref="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" />
+    <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -713,6 +714,40 @@
                 </node>
                 <node concept="aMNgE" id="lLYWBY0TkR" role="dK$qS" />
               </node>
+              <node concept="aOSgX" id="7DgziPnuKpn" role="aOSgK">
+                <ref role="aOSgM" to="cetu:4fjBjwDqu9U" resolve="Implies" />
+                <node concept="9aQIb" id="7DgziPnuKpo" role="aOS0M">
+                  <node concept="3clFbS" id="7DgziPnuKpp" role="9aQI4">
+                    <node concept="3cpWs6" id="7DgziPnuKpq" role="3cqZAp">
+                      <node concept="2OqwBi" id="7DgziPnuKpr" role="3cqZAk">
+                        <node concept="37vLTw" id="7DgziPnuKps" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
+                        </node>
+                        <node concept="liA8E" id="7DgziPnuKpt" role="2OqNvi">
+                          <ref role="37wK5l" to="f7eu:~Context.mkImplies(com.microsoft.z3.BoolExpr,com.microsoft.z3.BoolExpr):com.microsoft.z3.BoolExpr" resolve="mkImplies" />
+                          <node concept="10QFUN" id="7DgziPnuKpu" role="37wK5m">
+                            <node concept="3uibUv" id="7DgziPnuKpv" role="10QFUM">
+                              <ref role="3uigEE" to="f7eu:~BoolExpr" resolve="BoolExpr" />
+                            </node>
+                            <node concept="37vLTw" id="7DgziPnuKpw" role="10QFUP">
+                              <ref role="3cqZAo" node="74nUgMbdGXx" resolve="newLeft" />
+                            </node>
+                          </node>
+                          <node concept="10QFUN" id="7DgziPnuKpx" role="37wK5m">
+                            <node concept="3uibUv" id="7DgziPnuKpy" role="10QFUM">
+                              <ref role="3uigEE" to="f7eu:~BoolExpr" resolve="BoolExpr" />
+                            </node>
+                            <node concept="37vLTw" id="7DgziPnuKpz" role="10QFUP">
+                              <ref role="3cqZAo" node="74nUgMbdGXD" resolve="newRight" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="aMNgE" id="7DgziPnuKp$" role="dK$qS" />
+              </node>
               <node concept="Jnkvi" id="74nUgMbepzo" role="aOSgZ">
                 <ref role="1M0zk5" node="74nUgMbemno" resolve="be" />
               </node>
@@ -1328,6 +1363,23 @@
               <ref role="3cqZAo" node="4gj0JzpkZx" resolve="tpe" />
             </node>
             <node concept="2yIwOk" id="5GwePVE7d87" role="2OqNvi" />
+          </node>
+          <node concept="1_3QMl" id="7DgziPnuAl0" role="1_3QMm">
+            <node concept="3gn64h" id="7DgziPnuABc" role="3Kbmr1">
+              <ref role="3gnhBz" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+            </node>
+            <node concept="3clFbS" id="7DgziPnuAl4" role="3Kbo56">
+              <node concept="3cpWs6" id="7DgziPnuAEn" role="3cqZAp">
+                <node concept="2OqwBi" id="7DgziPnuBf0" role="3cqZAk">
+                  <node concept="37vLTw" id="7DgziPnuAXc" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4gj0JzpkZv" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="7DgziPnuBLp" role="2OqNvi">
+                    <ref role="37wK5l" to="f7eu:~Context.mkBoolSort():com.microsoft.z3.BoolSort" resolve="mkBoolSort" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="1_3QMl" id="5uyAK6LiDyB" role="1_3QMm">
             <node concept="3gn64h" id="5uyAK6LiEXe" role="3Kbmr1">
