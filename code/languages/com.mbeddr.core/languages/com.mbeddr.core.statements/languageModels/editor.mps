@@ -8,6 +8,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -19,8 +20,6 @@
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -415,6 +414,9 @@
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
       <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
       <concept id="767145758118872828" name="jetbrains.mps.lang.actions.structure.NF_Node_ReplaceWithNewOperation" flags="nn" index="2DeJnW" />
+    </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204851882688" name="jetbrains.mps.lang.smodel.structure.LinkRefQualifier" flags="ng" index="26LbJo">
@@ -1219,17 +1221,23 @@
       <node concept="3EZMnI" id="5soFcYDGhXE" role="3EZMnx">
         <node concept="l2Vlx" id="5soFcYDGhXF" role="2iSdaV" />
         <node concept="3F0ifn" id="5soFcYDGhXG" role="3EZMnx">
-          <property role="3F0ifm" value="required header" />
+          <property role="3F0ifm" value="required header:" />
         </node>
         <node concept="3F0A7n" id="5soFcYDGhXI" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="c4fa:5soFcYDEU27" resolve="requiredStdHeader" />
         </node>
+        <node concept="3F0ifn" id="4tQ03vHx6dz" role="3EZMnx">
+          <property role="3F0ifm" value="reexport:" />
+        </node>
+        <node concept="27S6Sx" id="23UZYO5euVB" role="3EZMnx">
+          <ref role="1NtTu8" to="c4fa:4tQ03vHx4cF" resolve="reexport" />
+        </node>
       </node>
       <node concept="3EZMnI" id="5soFcYDHzQt" role="3EZMnx">
         <node concept="l2Vlx" id="5soFcYDHzQu" role="2iSdaV" />
         <node concept="3F0ifn" id="5soFcYDHzQz" role="3EZMnx">
-          <property role="3F0ifm" value="dummy type" />
+          <property role="3F0ifm" value="dummy type:" />
         </node>
         <node concept="3F1sOY" id="5soFcYDHzQ_" role="3EZMnx">
           <ref role="1NtTu8" to="c4fa:5soFcYDHzQp" resolve="type" />
