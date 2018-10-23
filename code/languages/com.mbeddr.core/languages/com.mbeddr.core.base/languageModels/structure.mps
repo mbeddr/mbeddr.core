@@ -8,8 +8,8 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -1001,17 +1001,20 @@
     <property role="EcuMT" value="4577779292081684434" />
   </node>
   <node concept="1TIwiD" id="K292flwCEV">
-    <property role="TrG5h" value="AssessmentContainer" />
+    <property role="TrG5h" value="AssessmentContainer_old" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="assessment" />
     <property role="EcuMT" value="865293814733114043" />
     <ref role="1TJDcQ" node="6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="K292flwCEX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="assessments" />
+      <property role="20kJfa" value="assessments_old" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="865293814733114045" />
-      <ref role="20lvS9" node="K292flwCEW" resolve="Assessment" />
+      <ref role="20lvS9" node="K292flwCEW" resolve="Assessment_old" />
+      <node concept="asaX9" id="XHWcV6QULh" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.assessment.structure.AssessmentContainer&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="K292flwD4k" role="PzmwI">
       <ref role="PrY4T" node="65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -1025,66 +1028,93 @@
     <node concept="1QGGSu" id="1N5Tah$AM7j" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/assessment.png" />
     </node>
+    <node concept="asaX9" id="XHWcV6QUH_" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="K292flwCEW">
     <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="Assessment" />
+    <property role="TrG5h" value="Assessment_old" />
     <property role="34LRSv" value="assessment" />
     <property role="EcuMT" value="865293814733114044" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3jNX2XuL9g9" role="1TKVEl">
-      <property role="TrG5h" value="mustBeOk" />
+      <property role="TrG5h" value="mustBeOk_old" />
       <property role="IQ2nx" value="3815661793603523593" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="XHWcV6QUIx" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.Assessment&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="7McwK6mrL3z" role="1TKVEl">
-      <property role="TrG5h" value="hideOkOnes" />
+      <property role="TrG5h" value="hideOkOnes_old" />
       <property role="IQ2nx" value="8974692200284623075" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="XHWcV6QUIG" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.Assessment&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="7yuakSiLCwu" role="1TKVEl">
-      <property role="TrG5h" value="sorted" />
+      <property role="TrG5h" value="sorted_old" />
       <property role="IQ2nx" value="8691429746170824734" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="XHWcV6QUIR" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.Assessment&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="3Pz_UaJMMGQ" role="1TKVEl">
-      <property role="TrG5h" value="lastUpdatedOn" />
+      <property role="TrG5h" value="lastUpdatedOn_old" />
       <property role="IQ2nx" value="4423545983997782838" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="XHWcV6QUJ2" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.Assessment&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="3Pz_UaJMNIK" role="1TKVEl">
-      <property role="TrG5h" value="lastUdpatedBy" />
+      <property role="TrG5h" value="lastUdpatedBy_old" />
       <property role="IQ2nx" value="4423545983997787056" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="XHWcV6QUJd" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.Assessment&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="30hqvrsTGsn" role="1TKVEl">
-      <property role="TrG5h" value="exportAsXML" />
+      <property role="TrG5h" value="exportAsXML_old" />
       <property role="IQ2nx" value="3463666097413605143" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="4$snAjTMWDl" role="lGtFl">
-        <property role="YLQ7P" value="deprecated on 2015-10-05" />
+      <node concept="asaX9" id="XHWcV6QUJo" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.Assessment&quot;" />
       </node>
     </node>
     <node concept="1TJgyj" id="K292flwD4t" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="query" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="query_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="865293814733115677" />
-      <ref role="20lvS9" node="K292flwD4r" resolve="AssessmentQuery" />
+      <ref role="20lvS9" node="K292flwD4r" resolve="AssessmentQuery_old" />
+      <node concept="asaX9" id="XHWcV6QUKK" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.assessment.structure.Assessment&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="K292flwDNv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="results" />
+      <property role="20kJfa" value="results_old" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="865293814733118687" />
-      <ref role="20lvS9" node="K292flwDNu" resolve="AssessmentResultEntry" />
+      <ref role="20lvS9" node="K292flwDNu" resolve="AssessmentResultEntry_old" />
+      <node concept="asaX9" id="XHWcV6QUKV" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.assessment.structure.Assessment&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="_gCXGjnZUU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="summaries" />
+      <property role="20kJfa" value="summaries_old" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="671216505796427450" />
-      <ref role="20lvS9" node="_gCXGjnZUS" resolve="AssessmentSummary" />
+      <ref role="20lvS9" node="_gCXGjnZUS" resolve="AssessmentSummary_old" />
+      <node concept="asaX9" id="XHWcV6QUL6" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.assessment.structure.Assessment&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="K292flwD4u" role="PzmwI">
       <ref role="PrY4T" node="65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -1095,60 +1125,90 @@
     <node concept="1QGGSu" id="1N5Tah$AM7k" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/assessment.png" />
     </node>
+    <node concept="asaX9" id="XHWcV6QUHr" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="K292flwD4r">
     <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="AssessmentQuery" />
+    <property role="TrG5h" value="AssessmentQuery_old" />
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="865293814733115675" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="XHWcV6QUHJ" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="K292flwDNu">
     <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="AssessmentResultEntry" />
+    <property role="TrG5h" value="AssessmentResultEntry_old" />
     <property role="EcuMT" value="865293814733118686" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="K292flwHwj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="result" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="result_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="865293814733133843" />
-      <ref role="20lvS9" node="K292flwHw9" resolve="AssessmentResult" />
+      <ref role="20lvS9" node="K292flwHw9" resolve="AssessmentResult_old" />
+      <node concept="asaX9" id="XHWcV6QULs" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.assessment.structure.AssessmentResultEntry&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="5Ju6x2ORxMF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="comment" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="comment_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="6619757161337461931" />
       <ref role="20lvS9" node="7gVrg_0tw6m" resolve="TextBlock" />
+      <node concept="asaX9" id="XHWcV6QULB" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.assessment.structure.AssessmentResultEntry&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="7hIyKqbGn$1" role="1TKVEl">
-      <property role="TrG5h" value="status" />
+      <property role="TrG5h" value="status_old" />
       <property role="IQ2nx" value="8389796016067541249" />
       <ref role="AX2Wp" node="7hIyKqbGnzX" resolve="EntryStatus" />
+      <node concept="asaX9" id="XHWcV6QUJz" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.AssessmentResultEntry&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="2mxBqlh$jZp" role="1TKVEl">
-      <property role="TrG5h" value="markedOk" />
+      <property role="TrG5h" value="markedOk_old" />
       <property role="IQ2nx" value="2711621784017387481" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="XHWcV6QUJI" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.AssessmentResultEntry&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="2mxBqlhBlA8" role="1TKVEl">
-      <property role="TrG5h" value="isNew" />
+      <property role="TrG5h" value="isNew_old" />
       <property role="IQ2nx" value="2711621784018180488" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="XHWcV6QUJT" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.AssessmentResultEntry&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="5Ju6x2OQHmp" role="1TKVEl">
-      <property role="TrG5h" value="lastFound" />
+      <property role="TrG5h" value="lastFound_old" />
       <property role="IQ2nx" value="6619757161337247129" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="XHWcV6QUK4" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.AssessmentResultEntry&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="XHWcV6QUI3" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="K292flwHw9">
     <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="AssessmentResult" />
+    <property role="TrG5h" value="AssessmentResult_old" />
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="865293814733133833" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="XHWcV6QUHT" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="AxPO7" id="7hIyKqbGnzX">
     <property role="3GE5qa" value="assessment" />
@@ -1169,54 +1229,78 @@
   </node>
   <node concept="1TIwiD" id="3jNX2XuLA$P">
     <property role="3GE5qa" value="assessment.vis" />
-    <property role="TrG5h" value="VisualizationQuery" />
+    <property role="TrG5h" value="VisualizationQuery_old" />
     <property role="34LRSv" value="visualization" />
     <property role="EcuMT" value="3815661793603643701" />
-    <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery_old" />
+    <node concept="asaX9" id="XHWcV6QUH7" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3jNX2XuLA_R">
     <property role="3GE5qa" value="assessment.vis" />
-    <property role="TrG5h" value="VisualizationResult" />
+    <property role="TrG5h" value="VisualizationResult_old" />
     <property role="EcuMT" value="3815661793603643767" />
-    <ref role="1TJDcQ" node="K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" node="K292flwHw9" resolve="AssessmentResult_old" />
     <node concept="1TJgyj" id="3jNX2XuLA_U" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="visualizable" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="visualizable_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="3815661793603643770" />
       <ref role="20lvS9" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
+      <node concept="asaX9" id="XHWcV6QULX" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.assessment.structure.VisualizationResult&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="3jNX2XuLHBc" role="PzmwI">
       <ref role="PrY4T" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
     </node>
+    <node concept="asaX9" id="XHWcV6QUHh" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="_gCXGjnZUS">
     <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="AssessmentSummary" />
+    <property role="TrG5h" value="AssessmentSummary_old" />
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="671216505796427448" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="XHWcV6QUId" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="_gCXGjoJQU">
     <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="DefaultAssessmentSummary" />
+    <property role="TrG5h" value="DefaultAssessmentSummary_old" />
     <property role="34LRSv" value="default" />
     <property role="EcuMT" value="671216505796623802" />
-    <ref role="1TJDcQ" node="_gCXGjnZUS" resolve="AssessmentSummary" />
+    <ref role="1TJDcQ" node="_gCXGjnZUS" resolve="AssessmentSummary_old" />
     <node concept="1TJgyi" id="_gCXGjoJQX" role="1TKVEl">
-      <property role="TrG5h" value="totalCount" />
+      <property role="TrG5h" value="totalCount_old" />
       <property role="IQ2nx" value="671216505796623805" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="XHWcV6QUKf" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.DefaultAssessmentSummary&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="_gCXGjoJQY" role="1TKVEl">
-      <property role="TrG5h" value="ok" />
+      <property role="TrG5h" value="ok_old" />
       <property role="IQ2nx" value="671216505796623806" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="XHWcV6QUKq" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.DefaultAssessmentSummary&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="_gCXGjoJQZ" role="1TKVEl">
-      <property role="TrG5h" value="newlyAdded" />
+      <property role="TrG5h" value="newlyAdded_old" />
       <property role="IQ2nx" value="671216505796623807" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="XHWcV6QUK_" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.assessment.structure.DefaultAssessmentSummary&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="XHWcV6QUIn" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="IviauXabd">
@@ -1333,16 +1417,16 @@
   </node>
   <node concept="1TIwiD" id="7ii2FhSRITu">
     <property role="3GE5qa" value="controlledName" />
-    <property role="TrG5h" value="ControlledNameAssQuery" />
+    <property role="TrG5h" value="ControlledNameAssQuery_old" />
     <property role="34LRSv" value="controlled names with own names" />
     <property role="EcuMT" value="8399788025237663326" />
-    <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery_old" />
   </node>
   <node concept="1TIwiD" id="7ii2FhSRXRG">
     <property role="3GE5qa" value="controlledName" />
-    <property role="TrG5h" value="ControlledNameAssResult" />
+    <property role="TrG5h" value="ControlledNameAssResult_old" />
     <property role="EcuMT" value="8399788025237724652" />
-    <ref role="1TJDcQ" node="K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" node="K292flwHw9" resolve="AssessmentResult_old" />
     <node concept="1TJgyj" id="7ii2FhSS1eX" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="cnc" />
@@ -1433,16 +1517,16 @@
   </node>
   <node concept="1TIwiD" id="GKLijSvTd0">
     <property role="3GE5qa" value="exref" />
-    <property role="TrG5h" value="CheckHashAssessmentQuery" />
+    <property role="TrG5h" value="CheckHashAssessmentQuery_old" />
     <property role="34LRSv" value="check external references" />
     <property role="EcuMT" value="806361095877923648" />
-    <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery_old" />
   </node>
   <node concept="1TIwiD" id="GKLijSw8su">
     <property role="3GE5qa" value="exref" />
-    <property role="TrG5h" value="CheckHashAssessmentResult" />
+    <property role="TrG5h" value="CheckHashAssessmentResult_old" />
     <property role="EcuMT" value="806361095877986078" />
-    <ref role="1TJDcQ" node="K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" node="K292flwHw9" resolve="AssessmentResult_old" />
     <node concept="1TJgyi" id="GKLijSwpYL" role="1TKVEl">
       <property role="TrG5h" value="kind" />
       <property role="IQ2nx" value="806361095878057905" />
@@ -1532,39 +1616,54 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7nkDZJXluO4">
-    <property role="TrG5h" value="AssessmentScope" />
+    <property role="TrG5h" value="AssessmentScope_old" />
     <property role="3GE5qa" value="assessment.scope" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8490595898229124356" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="XHWcV6QUGl" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7nkDZJXluRd">
     <property role="3GE5qa" value="assessment.scope" />
-    <property role="TrG5h" value="CurrentModelScope" />
+    <property role="TrG5h" value="CurrentModelScope_old" />
     <property role="34LRSv" value="current model" />
     <property role="EcuMT" value="8490595898229124557" />
-    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope_old" />
+    <node concept="asaX9" id="XHWcV6QUGD" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7nkDZJXlwca">
     <property role="3GE5qa" value="assessment.scope" />
-    <property role="TrG5h" value="CurrentModelScopeAndImported" />
+    <property role="TrG5h" value="CurrentModelScopeAndImported_old" />
     <property role="34LRSv" value="current model and imported" />
     <property role="EcuMT" value="8490595898229129994" />
-    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope_old" />
+    <node concept="asaX9" id="XHWcV6QUGN" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7nkDZJXlCyb">
     <property role="3GE5qa" value="assessment.scope" />
-    <property role="TrG5h" value="ChunkScope" />
+    <property role="TrG5h" value="ChunkScope_old" />
     <property role="34LRSv" value="chunk" />
     <property role="EcuMT" value="8490595898229164171" />
-    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope_old" />
     <node concept="1TJgyj" id="7nkDZJXlCyc" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="chunk" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="chunk_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8490595898229164172" />
       <ref role="20lvS9" node="6clJcrJYOUA" resolve="Chunk" />
+      <node concept="asaX9" id="XHWcV6QULM" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.assessment.structure.ChunkScope&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="XHWcV6QUGv" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JcbkuyFcOM">
@@ -1583,10 +1682,13 @@
   </node>
   <node concept="1TIwiD" id="5stuwjVkYpE">
     <property role="3GE5qa" value="assessment.scope" />
-    <property role="TrG5h" value="ProjectScope" />
+    <property role="TrG5h" value="ProjectScope_old" />
     <property role="34LRSv" value="project" />
     <property role="EcuMT" value="6277307617439377002" />
-    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope_old" />
+    <node concept="asaX9" id="XHWcV6QUGX" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4$VRXeHdyxr">
     <property role="3GE5qa" value="metrics" />

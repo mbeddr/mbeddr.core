@@ -2,14 +2,15 @@
 <model ref="r:70f80dec-8580-44c0-ad9d-103cf07213ef(com.mbeddr.core.codereview.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="rl9" ref="r:46777832-bf24-4815-97b7-1491b1b9a11b(com.mbeddr.core.assessment.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -149,7 +150,7 @@
       <property role="20kJfa" value="scope" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8490595898229198814" />
-      <ref role="20lvS9" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+      <ref role="20lvS9" to="rl9:7nkDZJXluO4" resolve="AssessmentScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="4g52gaNPZ6t">

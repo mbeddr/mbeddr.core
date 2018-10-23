@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.core/core.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.assessment/com.mbeddr.core.assessment.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/base.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core" />
