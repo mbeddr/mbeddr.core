@@ -25,6 +25,7 @@
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)</dependency>
     <dependency reexport="false">7d323e61-8358-4656-a071-a2bb68438615(com.mbeddr.core.codereview)</dependency>
+    <dependency reexport="false">78881741-9502-46a8-b909-4f54d9617eb1(com.mbeddr.core.assessment)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:c38abce1-4c09-44cb-9ebf-2a764e824bb5:com.mbeddr.mpsutil.actionsfilter" version="0" />
@@ -65,6 +66,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" version="0" />
     <module reference="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" version="0" />
+    <module reference="78881741-9502-46a8-b909-4f54d9617eb1(com.mbeddr.core.assessment)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="4" />
     <module reference="9e24fcdc-a232-4d24-8c95-1f525946191a(com.mbeddr.core.base.pluginSolution)" version="0" />
     <module reference="7d323e61-8358-4656-a071-a2bb68438615(com.mbeddr.core.codereview)" version="2" />

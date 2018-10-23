@@ -7,7 +7,7 @@
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
   </languages>
   <imports>
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
   </imports>
@@ -5202,6 +5202,17 @@
           <node concept="3bR9La" id="7i5Cc6LAUNJ" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="XHWcV7djvv" role="3bR37C">
+          <node concept="3bR9La" id="XHWcV7djvw" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:XHWcV71UsP" resolve="com.mbeddr.core.assessment" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="XHWcV7djvx" role="3bR37C">
+          <node concept="1Busua" id="XHWcV7djvy" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:XHWcV71UsP" resolve="com.mbeddr.core.assessment" />
           </node>
         </node>
       </node>
@@ -14594,7 +14605,7 @@
         <node concept="1SiIV0" id="7i5Cc6LAVfW" role="3bR37C">
           <node concept="3bR9La" id="7i5Cc6LAVfX" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
       </node>
@@ -14664,7 +14675,7 @@
         <node concept="1SiIV0" id="7i5Cc6LAVg5" role="3bR37C">
           <node concept="3bR9La" id="7i5Cc6LAVg6" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
       </node>

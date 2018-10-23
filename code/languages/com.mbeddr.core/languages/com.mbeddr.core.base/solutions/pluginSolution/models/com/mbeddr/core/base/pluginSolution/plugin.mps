@@ -117,6 +117,8 @@
     <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="6qna" ref="r:9c1c1236-1028-4c6e-8e58-34d90c5070e7(com.mbeddr.core.codereview.editor)" />
+    <import index="rl9" ref="r:46777832-bf24-4815-97b7-1491b1b9a11b(com.mbeddr.core.assessment.structure)" />
+    <import index="nszd" ref="r:fe9e8391-1e77-4f9b-9bc7-bee576d52f96(com.mbeddr.core.assessment.behavior)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -6426,11 +6428,11 @@
                   <ref role="3cqZAo" node="3jNX2XuMqPV" resolve="m" />
                 </node>
                 <node concept="2RRcyG" id="3jNX2XuMqQs" role="2OqNvi">
-                  <ref role="2RRcyH" to="vs0r:K292flwCEV" resolve="AssessmentContainer" />
+                  <ref role="2RRcyH" to="rl9:K292flwCEV" resolve="AssessmentContainer" />
                 </node>
               </node>
               <node concept="13MTOL" id="3jNX2XuMqQR" role="2OqNvi">
-                <ref role="13MTZf" to="vs0r:K292flwCEX" resolve="assessments" />
+                <ref role="13MTZf" to="rl9:K292flwCEX" resolve="assessments" />
               </node>
             </node>
             <node concept="2es0OD" id="3jNX2XuMqRj" role="2OqNvi">
@@ -6442,7 +6444,7 @@
                         <ref role="3cqZAo" node="3jNX2XuMqRm" resolve="it" />
                       </node>
                       <node concept="2qgKlT" id="3jNX2XuMqRO" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:3jNX2XuLy_p" resolve="update" />
+                        <ref role="37wK5l" to="nszd:3jNX2XuLy_p" resolve="update" />
                       </node>
                     </node>
                   </node>

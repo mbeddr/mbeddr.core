@@ -619,7 +619,7 @@
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="updateQuery" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="vs0r:K292flwCEW" resolve="Assessment" />
+    <ref role="2ZfgGC" to="vs0r:K292flwCEW" resolve="Assessment_old" />
     <node concept="1SWQZ3" id="3TftwIKHQIM" role="lGtFl">
       <property role="1SWRpm" value="ASSESSMENTS" />
     </node>
@@ -669,7 +669,7 @@
   <node concept="2S6QgY" id="3jNX2XuLyyt">
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="updateAllQueries" />
-    <ref role="2ZfgGC" to="vs0r:K292flwCEV" resolve="AssessmentContainer" />
+    <ref role="2ZfgGC" to="vs0r:K292flwCEV" resolve="AssessmentContainer_old" />
     <node concept="1SWQZ3" id="3TftwIKHQnw" role="lGtFl">
       <property role="1SWRpm" value="ASSESSMENTS" />
     </node>
@@ -1519,7 +1519,7 @@
   <node concept="2S6QgY" id="GKLijTgmxP">
     <property role="3GE5qa" value="exref" />
     <property role="TrG5h" value="updateHashForAssessmentResult" />
-    <ref role="2ZfgGC" to="vs0r:GKLijSw8su" resolve="CheckHashAssessmentResult" />
+    <ref role="2ZfgGC" to="vs0r:GKLijSw8su" resolve="CheckHashAssessmentResult_old" />
     <node concept="1SWQZ3" id="3TftwIKHQwO" role="lGtFl">
       <property role="1SWRpm" value="ASSESSMENTS" />
     </node>
@@ -1872,7 +1872,7 @@
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="clearResults" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="vs0r:K292flwCEW" resolve="Assessment" />
+    <ref role="2ZfgGC" to="vs0r:K292flwCEW" resolve="Assessment_old" />
     <node concept="2S6ZIM" id="3_DFadN9jkG" role="2ZfVej">
       <node concept="3clFbS" id="3_DFadN9jkH" role="2VODD2">
         <node concept="3clFbF" id="3_DFadN9jwS" role="3cqZAp">
@@ -1889,7 +1889,7 @@
             <node concept="2OqwBi" id="3_DFadN9paj" role="2Oq$k0">
               <node concept="2Sf5sV" id="3_DFadN9p2K" role="2Oq$k0" />
               <node concept="3Tsc0h" id="3_DFadN9p$L" role="2OqNvi">
-                <ref role="3TtcxE" to="vs0r:K292flwDNv" resolve="results" />
+                <ref role="3TtcxE" to="vs0r:K292flwDNv" resolve="results_old" />
               </node>
             </node>
             <node concept="2Kehj3" id="3_DFadN9sfD" role="2OqNvi" />
@@ -1904,7 +1904,7 @@
             <node concept="2OqwBi" id="3_DFadN9k6r" role="2Oq$k0">
               <node concept="2Sf5sV" id="3_DFadN9jTd" role="2Oq$k0" />
               <node concept="3Tsc0h" id="3_DFadN9kqU" role="2OqNvi">
-                <ref role="3TtcxE" to="vs0r:K292flwDNv" resolve="results" />
+                <ref role="3TtcxE" to="vs0r:K292flwDNv" resolve="results_old" />
               </node>
             </node>
             <node concept="3GX2aA" id="3_DFadN9oSz" role="2OqNvi" />
