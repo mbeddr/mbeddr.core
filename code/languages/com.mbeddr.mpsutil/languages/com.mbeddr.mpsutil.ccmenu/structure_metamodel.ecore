@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ESD_package_test" nsURI="http://ecoretest" nsPrefix="siemens">
+  <eClassifiers xsi:type="ecore:EClass" name="MenuTab"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CCMenuExtensions"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IMenuExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IActionSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="QueryActionSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter_ContextCell"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Sorter"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DefaultTab"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ITabReference"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TabReference"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Sorter_Function"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Sorter_Entries"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StyleExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StyleExtension_Condition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StyleExtension_Color"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter_Entry"/>
+</ecore:EPackage>

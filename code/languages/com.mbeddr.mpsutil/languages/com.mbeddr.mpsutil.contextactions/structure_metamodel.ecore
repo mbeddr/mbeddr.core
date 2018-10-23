@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ESD_package_test" nsURI="http://ecoretest" nsPrefix="siemens">
+  <eClassifiers xsi:type="ecore:EClass" name="ContextActions"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SubstituteInfoSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IActionSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NewRootSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SideTransformSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IdeaActionsSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IActionId"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StringActionId">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionIdReference"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ContextExpression"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractActionSource" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="INewRootInclude"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LanguageReference"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RootConceptRefExpression"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SubstituteActionExpression"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ISubstituteActionBased"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericActionSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericActionSource_ExecuteFunction"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterObject"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IntentionsActionSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IIntentionId"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IntentionIdReference"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StringIntentionId">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntentionAnnotation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IContextProvider"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionSourceWithFolder"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionSourceWithCondition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IGeneratorOnly"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NewRootSource_Compact"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IntentionsActionSource_Compact"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RefactoringSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RefactoringReference"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IRefactoringClassName"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StringRefactoringClassName">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConceptInstanceAction">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionSourceWithExtendingFolder"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ConceptInstanceExpression"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionSourceWithExtensibleFolder"/>
+  <eClassifiers xsi:type="ecore:EClass" name="InstanceCreator_CustomInstanceFunction"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ConceptInstanceIsApplicableFunction"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ConceptInstanceContextNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DisableContextInstanceAction"/>
+</ecore:EPackage>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ESD_package_test" nsURI="http://ecoretest" nsPrefix="siemens">
+  <eClassifiers xsi:type="ecore:EClass" name="TargetCreationExtensions">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ITargetCreationExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter_TargetLink"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter_conceptToCreate"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ModifierExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ISelector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LinkSelector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IModification"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RemoveModification"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ConditionSelector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ChangeDescriptionModification"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TargetSetupExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TargetSetupExtension_Function"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TargetSetupExtension_CreatedNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter_referenceParent"/>
+</ecore:EPackage>
