@@ -10,6 +10,25 @@
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" name="com.mbeddr.mpsutil.jung" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="-1" />
+    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
+    <use id="223dd778-c44f-4ef3-9535-7aa7d12244a6" name="com.mbeddr.core.debug" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
   </languages>
   <imports>
     <import index="6f7j" ref="r:dbd37a42-0f53-4052-b085-bc802c3685ef(com.mbeddr.analyses.z3.testing.typesystem)" />
@@ -37,6 +56,9 @@
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
+        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
+      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf" />
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
@@ -44,6 +66,14 @@
       <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -55,7 +85,22 @@
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
+    <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
+      <concept id="8811614583515726007" name="com.mbeddr.core.udt.structure.EnumLiteralRef" flags="ng" index="1AkAhK">
+        <reference id="8811614583515726008" name="literal" index="1AkAhZ" />
+      </concept>
+      <concept id="8811614583515725893" name="com.mbeddr.core.udt.structure.EnumType" flags="ng" index="1AkAi2">
+        <reference id="8811614583515725894" name="enum" index="1AkAi1" />
+      </concept>
+      <concept id="8811614583515725853" name="com.mbeddr.core.udt.structure.EnumLiteral" flags="ng" index="1AkAjq" />
+      <concept id="8811614583515725851" name="com.mbeddr.core.udt.structure.EnumDeclaration" flags="ng" index="1AkAjs">
+        <child id="8811614583515725857" name="literals" index="1AkAjA" />
+      </concept>
+    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -71,6 +116,7 @@
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
+      <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -81,6 +127,7 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="7615572890648529894" name="com.mbeddr.core.expressions.structure.NotEqualsExpression" flags="ng" index="25Bbzn" />
       <concept id="8463282783691618461" name="com.mbeddr.core.expressions.structure.UnsignedInt8tType" flags="ng" index="26Vqp4" />
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="8864856114140038681" name="com.mbeddr.core.expressions.structure.DoubleType" flags="ng" index="2fgwQN" />
@@ -122,6 +169,18 @@
     <node concept="1qefOq" id="1vdVyJtytmc" role="1SKRRt">
       <node concept="N3F5e" id="1vdVyJtytmd" role="1qenE9">
         <property role="TrG5h" value="im" />
+        <node concept="1AkAjs" id="SU$cf9GV1k" role="N3F5h">
+          <property role="TrG5h" value="anEnum" />
+          <node concept="1AkAjq" id="SU$cf9GV1m" role="1AkAjA">
+            <property role="TrG5h" value="FIRST" />
+          </node>
+          <node concept="1AkAjq" id="SU$cf9GV8o" role="1AkAjA">
+            <property role="TrG5h" value="SECOND" />
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="SU$cf9GUgY" role="N3F5h">
+          <property role="TrG5h" value="empty_1540299774503_5" />
+        </node>
         <node concept="N3Fnx" id="1vdVyJtytme" role="N3F5h">
           <property role="TrG5h" value="foo" />
           <property role="2OOxQR" value="false" />
@@ -283,6 +342,15 @@
               </node>
             </node>
             <node concept="3XISUE" id="1zM9w65xu0p" role="3XIRFZ" />
+            <node concept="1QiMYF" id="SU$cf9GPyS" role="3XIRFZ">
+              <node concept="OjmMv" id="SU$cf9GPyU" role="3SJzmv">
+                <node concept="19SGf9" id="SU$cf9GPyV" role="OjmMu">
+                  <node concept="19SUe$" id="SU$cf9GPyW" role="19SJt6">
+                    <property role="19SUeA" value="current translation uses reals and NOT floating point encoding - thereby is SAT" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3AUs7Z" id="1zM9w65xtXO" role="3XIRFZ">
               <node concept="2EHzL6" id="1zM9w65xudg" role="3AVnRY">
                 <node concept="2EHzL6" id="1zM9w65xudh" role="3TlMhI">
@@ -310,6 +378,9 @@
                   <node concept="3ZVu4v" id="1zM9w65xujh" role="3TlMhJ">
                     <ref role="3ZVs_2" node="3iuvlge_o5k" resolve="aFloat" />
                   </node>
+                </node>
+                <node concept="7CXmI" id="SU$cf9GQ27" role="lGtFl">
+                  <node concept="1TM$A" id="SU$cf9GQ28" role="7EUXB" />
                 </node>
               </node>
             </node>
@@ -347,7 +418,48 @@
                 </node>
               </node>
             </node>
-            <node concept="3XISUE" id="3iuvlge_o9e" role="3XIRFZ" />
+            <node concept="3XISUE" id="SU$cf9GTSs" role="3XIRFZ" />
+            <node concept="3XIRlf" id="SU$cf9GV8S" role="3XIRFZ">
+              <property role="TrG5h" value="enumVar1" />
+              <node concept="1AkAi2" id="SU$cf9GV8Q" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="1AkAi1" node="SU$cf9GV1k" resolve="anEnum" />
+              </node>
+            </node>
+            <node concept="3AUs7Z" id="SU$cf9GVoD" role="3XIRFZ">
+              <node concept="25Bbzn" id="SU$cf9GVuY" role="3AVnRY">
+                <node concept="3ZVu4v" id="SU$cf9GVtM" role="3TlMhI">
+                  <ref role="3ZVs_2" node="SU$cf9GV8S" resolve="enumVar1" />
+                </node>
+                <node concept="1AkAhK" id="SU$cf9GVuu" role="3TlMhJ">
+                  <ref role="1AkAhZ" node="SU$cf9GV1m" resolve="FIRST" />
+                </node>
+              </node>
+            </node>
+            <node concept="3AUs7Z" id="SU$cf9GVy2" role="3XIRFZ">
+              <node concept="2EHzL6" id="SU$cf9GVy3" role="3AVnRY">
+                <node concept="25Bbzn" id="SU$cf9GVy4" role="3TlMhI">
+                  <node concept="3ZVu4v" id="SU$cf9GVy5" role="3TlMhI">
+                    <ref role="3ZVs_2" node="SU$cf9GV8S" resolve="enumVar1" />
+                  </node>
+                  <node concept="1AkAhK" id="SU$cf9GVy6" role="3TlMhJ">
+                    <ref role="1AkAhZ" node="SU$cf9GV1m" resolve="FIRST" />
+                  </node>
+                </node>
+                <node concept="25Bbzn" id="SU$cf9GVy7" role="3TlMhJ">
+                  <node concept="1AkAhK" id="SU$cf9GVy8" role="3TlMhJ">
+                    <ref role="1AkAhZ" node="SU$cf9GV8o" resolve="SECOND" />
+                  </node>
+                  <node concept="3ZVu4v" id="SU$cf9GVy9" role="3TlMhI">
+                    <ref role="3ZVs_2" node="SU$cf9GV8S" resolve="enumVar1" />
+                  </node>
+                </node>
+                <node concept="7CXmI" id="SU$cf9J3QR" role="lGtFl">
+                  <node concept="1TM$A" id="SU$cf9J3QS" role="7EUXB" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="19Rifw" id="1vdVyJtytn9" role="2C2TGm">
             <property role="2caQfQ" value="false" />
