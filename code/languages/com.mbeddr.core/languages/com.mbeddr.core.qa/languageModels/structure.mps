@@ -9,6 +9,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="rl9" ref="r:46777832-bf24-4815-97b7-1491b1b9a11b(com.mbeddr.core.assessment.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -58,7 +59,7 @@
     <property role="3GE5qa" value="structure_cov" />
     <property role="TrG5h" value="ConceptCoverageAssessmentResult" />
     <property role="EcuMT" value="347451455539224228" />
-    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" to="rl9:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="jipk886TU_" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="concept" />
@@ -126,7 +127,7 @@
     <property role="TrG5h" value="GeneratorCoverageAssessment" />
     <property role="34LRSv" value="generators not covered" />
     <property role="EcuMT" value="8022057952247994428" />
-    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" to="rl9:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="6Xk4NhNlHxS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="langs" />
@@ -139,7 +140,7 @@
     <property role="3GE5qa" value="generators_cov" />
     <property role="TrG5h" value="GeneratorCoverageAssessmentResult" />
     <property role="EcuMT" value="8022057952248006181" />
-    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" to="rl9:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="6Xk4NhNlKoA" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="generatorFragment" />
@@ -161,7 +162,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="97836352113023406" />
-    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" to="rl9:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="5r_qjlOi3T" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="langs" />
@@ -181,7 +182,7 @@
     <property role="3GE5qa" value="structure_cov" />
     <property role="TrG5h" value="PropertyCoverageAssessmentResult" />
     <property role="EcuMT" value="97836352113137290" />
-    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" to="rl9:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyi" id="5r_qjlQmwc" role="1TKVEl">
       <property role="TrG5h" value="singleValue" />
       <property role="IQ2nx" value="97836352113567756" />
@@ -219,7 +220,7 @@
     <property role="34LRSv" value="redundant constraints" />
     <property role="3GE5qa" value="redundancy_finder" />
     <property role="EcuMT" value="4455560581543810794" />
-    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" to="rl9:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyi" id="3RllbSadv3x" role="1TKVEl">
       <property role="TrG5h" value="minimalSize" />
       <property role="IQ2nx" value="4455560581544800481" />
@@ -237,7 +238,7 @@
     <property role="3GE5qa" value="redundancy_finder" />
     <property role="TrG5h" value="RedundancyAssessmentResults" />
     <property role="EcuMT" value="4455560581544046387" />
-    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" to="rl9:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="3RllbSaaAWO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="root" />
@@ -250,7 +251,7 @@
     <property role="TrG5h" value="UnusedMethodsAssessment" />
     <property role="34LRSv" value="unused methods" />
     <property role="EcuMT" value="6707717856740031767" />
-    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" to="rl9:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="5OmAtC8Ai$3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="langs" />
@@ -263,7 +264,7 @@
     <property role="3GE5qa" value="redundancy_finder" />
     <property role="TrG5h" value="UnusedMethodsAssessmentResult" />
     <property role="EcuMT" value="6707717856741109306" />
-    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" to="rl9:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="5OmAtC8AAfN" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="method" />
@@ -276,7 +277,7 @@
     <property role="TrG5h" value="UnusedAttributesAssessment" />
     <property role="34LRSv" value="unused attributes" />
     <property role="EcuMT" value="5364800285586105826" />
-    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" to="rl9:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="4DNAmYhhMjp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="langs" />
@@ -289,7 +290,7 @@
     <property role="3GE5qa" value="redundancy_finder" />
     <property role="TrG5h" value="UnusedAttributesAssessmentResult" />
     <property role="EcuMT" value="5364800285586454390" />
-    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" to="rl9:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="4DNAmYhj18z" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="part" />
@@ -302,7 +303,7 @@
     <property role="34LRSv" value="instance counter" />
     <property role="3GE5qa" value="assessments.counter" />
     <property role="EcuMT" value="6277307617435256775" />
-    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" to="rl9:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyi" id="5stuwjV5hee" role="1TKVEl">
       <property role="TrG5h" value="modelNameFilter" />
       <property role="IQ2nx" value="6277307617435259790" />
@@ -318,7 +319,7 @@
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="scope" />
       <property role="IQ2ns" value="6277307617435259788" />
-      <ref role="20lvS9" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+      <ref role="20lvS9" to="rl9:7nkDZJXluO4" resolve="AssessmentScope" />
     </node>
     <node concept="1TJgyj" id="5stuwjVbufo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -352,7 +353,7 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="5277057488631817800" />
-    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" to="rl9:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyi" id="4$VRXeHdIp9" role="1TKVEl">
       <property role="TrG5h" value="label" />
       <property role="IQ2nx" value="5277057488631817801" />
@@ -388,7 +389,7 @@
     <property role="3GE5qa" value="assessments.counter" />
     <property role="TrG5h" value="InstanceCounterResult" />
     <property role="EcuMT" value="6277307617435401614" />
-    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" to="rl9:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyi" id="5stuwjV5NRH" role="1TKVEl">
       <property role="TrG5h" value="concept" />
       <property role="IQ2nx" value="6277307617435401709" />
@@ -418,13 +419,13 @@
     <property role="TrG5h" value="MetricAssessmentQuery" />
     <property role="34LRSv" value="metrics" />
     <property role="EcuMT" value="5277057488639603361" />
-    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" to="rl9:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="4$VRXeHFray" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="scope" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="5277057488639603362" />
-      <ref role="20lvS9" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+      <ref role="20lvS9" to="rl9:7nkDZJXluO4" resolve="AssessmentScope" />
     </node>
     <node concept="1TJgyj" id="4$VRXeHLF0k" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

@@ -4,10 +4,10 @@
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -616,7 +616,7 @@
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="updateQuery" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="vs0r:K292flwCEW" resolve="Assessment" />
+    <ref role="2ZfgGC" to="vs0r:K292flwCEW" resolve="Assessment_old" />
     <node concept="1SWQZ3" id="3TftwIKHQIM" role="lGtFl">
       <property role="1SWRpm" value="ASSESSMENTS" />
     </node>
@@ -666,7 +666,7 @@
   <node concept="2S6QgY" id="3jNX2XuLyyt">
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="updateAllQueries" />
-    <ref role="2ZfgGC" to="vs0r:K292flwCEV" resolve="AssessmentContainer" />
+    <ref role="2ZfgGC" to="vs0r:K292flwCEV" resolve="AssessmentContainer_old" />
     <node concept="1SWQZ3" id="3TftwIKHQnw" role="lGtFl">
       <property role="1SWRpm" value="ASSESSMENTS" />
     </node>
@@ -1304,7 +1304,7 @@
   <node concept="2S6QgY" id="GKLijTgmxP">
     <property role="3GE5qa" value="exref" />
     <property role="TrG5h" value="updateHashForAssessmentResult" />
-    <ref role="2ZfgGC" to="vs0r:GKLijSw8su" resolve="CheckHashAssessmentResult" />
+    <ref role="2ZfgGC" to="vs0r:GKLijSw8su" resolve="CheckHashAssessmentResult_old" />
     <node concept="1SWQZ3" id="3TftwIKHQwO" role="lGtFl">
       <property role="1SWRpm" value="ASSESSMENTS" />
     </node>
@@ -1657,7 +1657,7 @@
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="clearResults" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="vs0r:K292flwCEW" resolve="Assessment" />
+    <ref role="2ZfgGC" to="vs0r:K292flwCEW" resolve="Assessment_old" />
     <node concept="2S6ZIM" id="3_DFadN9jkG" role="2ZfVej">
       <node concept="3clFbS" id="3_DFadN9jkH" role="2VODD2">
         <node concept="3clFbF" id="3_DFadN9jwS" role="3cqZAp">
@@ -1674,7 +1674,7 @@
             <node concept="2OqwBi" id="3_DFadN9paj" role="2Oq$k0">
               <node concept="2Sf5sV" id="3_DFadN9p2K" role="2Oq$k0" />
               <node concept="3Tsc0h" id="3_DFadN9p$L" role="2OqNvi">
-                <ref role="3TtcxE" to="vs0r:K292flwDNv" resolve="results" />
+                <ref role="3TtcxE" to="vs0r:K292flwDNv" resolve="results_old" />
               </node>
             </node>
             <node concept="2Kehj3" id="3_DFadN9sfD" role="2OqNvi" />
@@ -1689,7 +1689,7 @@
             <node concept="2OqwBi" id="3_DFadN9k6r" role="2Oq$k0">
               <node concept="2Sf5sV" id="3_DFadN9jTd" role="2Oq$k0" />
               <node concept="3Tsc0h" id="3_DFadN9kqU" role="2OqNvi">
-                <ref role="3TtcxE" to="vs0r:K292flwDNv" resolve="results" />
+                <ref role="3TtcxE" to="vs0r:K292flwDNv" resolve="results_old" />
               </node>
             </node>
             <node concept="3GX2aA" id="3_DFadN9oSz" role="2OqNvi" />
