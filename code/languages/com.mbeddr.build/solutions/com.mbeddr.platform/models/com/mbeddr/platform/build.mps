@@ -1235,9 +1235,6 @@
       <node concept="m$_yC" id="XHWcV74SQs" role="m$_yJ">
         <ref role="m$_y1" node="48qh2gYgNmx" resolve="com.mbeddr.codereview" />
       </node>
-      <node concept="m$_yC" id="XHWcV74V3D" role="m$_yJ">
-        <ref role="m$_y1" node="XHWcV74f4A" resolve="com.mbeddr.assessment" />
-      </node>
       <node concept="3_J27D" id="$bJ0jguQdt" role="m_cZH">
         <node concept="3Mxwew" id="$bJ0jguQdu" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.platform" />
@@ -1275,18 +1272,9 @@
       <node concept="m$_yC" id="48qh2gYh3R3" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
-      <node concept="m$_yC" id="48qh2gYh69d" role="m$_yJ">
-        <ref role="m$_y1" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
-      </node>
-      <node concept="m$_yC" id="XHWcV74rOU" role="m$_yJ">
-        <ref role="m$_y1" node="XHWcV74f4A" resolve="com.mbeddr.assessment" />
-      </node>
     </node>
     <node concept="m$_wf" id="7tNo_gxoK8h" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.doc" />
-      <node concept="m$_yC" id="64SK4bcK9OL" role="m$_yJ">
-        <ref role="m$_y1" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
-      </node>
       <node concept="m$_yC" id="5fGcQI99wPx" role="m$_yJ">
         <ref role="m$_y1" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
       </node>
@@ -1315,9 +1303,6 @@
       <node concept="m$_yC" id="64SK4bcNM6e" role="m$_yJ">
         <ref role="m$_y1" node="64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
       </node>
-      <node concept="m$_yC" id="XHWcV74v7N" role="m$_yJ">
-        <ref role="m$_y1" node="XHWcV74f4A" resolve="com.mbeddr.assessment" />
-      </node>
       <node concept="m$_yC" id="XHWcV74xkC" role="m$_yJ">
         <ref role="m$_y1" node="48qh2gYgNmx" resolve="com.mbeddr.codereview" />
       </node>
@@ -1333,12 +1318,6 @@
     </node>
     <node concept="m$_wf" id="XHWcV74f4A" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.assessment" />
-      <node concept="m$_yC" id="XHWcV74f4B" role="m$_yJ">
-        <ref role="m$_y1" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
-      </node>
-      <node concept="m$_yC" id="XHWcV74f4C" role="m$_yJ">
-        <ref role="m$_y1" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
-      </node>
       <node concept="3_J27D" id="XHWcV74f4D" role="m$_yQ">
         <node concept="3Mxwew" id="XHWcV74f4E" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.assessment" />
@@ -1351,15 +1330,6 @@
       </node>
       <node concept="m$_yB" id="XHWcV74lfz" role="m$_yh">
         <ref role="m$_yA" node="XHWcV71UsP" resolve="com.mbeddr.core.assessment" />
-      </node>
-      <node concept="m$_yC" id="XHWcV74f4J" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
-      </node>
-      <node concept="m$_yC" id="XHWcV74f4K" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
-      </node>
-      <node concept="m$_yC" id="XHWcV74f4L" role="m$_yJ">
-        <ref role="m$_y1" node="64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
       </node>
       <node concept="3_J27D" id="XHWcV74f4M" role="m_cZH">
         <node concept="3Mxwew" id="XHWcV74f4N" role="3MwsjC">
@@ -14819,14 +14789,14 @@
             <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="XHWcV72dxb" role="3bR37C">
-          <node concept="3bR9La" id="XHWcV72dxc" role="1SiIV1">
+        <node concept="1SiIV0" id="7Ige0YrklIj" role="3bR37C">
+          <node concept="3bR9La" id="7Ige0YrklIk" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="XHWcV71UsP" resolve="com.mbeddr.core.assessment" />
           </node>
         </node>
-        <node concept="1SiIV0" id="XHWcV72fIO" role="3bR37C">
-          <node concept="3bR9La" id="XHWcV72fIP" role="1SiIV1">
+        <node concept="1SiIV0" id="7Ige0YrklIl" role="3bR37C">
+          <node concept="3bR9La" id="7Ige0YrklIm" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="48qh2gYgjRX" resolve="com.mbeddr.core.codereview" />
           </node>

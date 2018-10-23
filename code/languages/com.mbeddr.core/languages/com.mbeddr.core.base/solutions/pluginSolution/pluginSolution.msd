@@ -24,8 +24,8 @@
     <dependency reexport="false">25092e07-e655-497c-92fb-558a8e3080ed(jetbrains.mps.ide.ui)</dependency>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)</dependency>
-    <dependency reexport="false">7d323e61-8358-4656-a071-a2bb68438615(com.mbeddr.core.codereview)</dependency>
     <dependency reexport="false">78881741-9502-46a8-b909-4f54d9617eb1(com.mbeddr.core.assessment)</dependency>
+    <dependency reexport="false">7d323e61-8358-4656-a071-a2bb68438615(com.mbeddr.core.codereview)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:c38abce1-4c09-44cb-9ebf-2a764e824bb5:com.mbeddr.mpsutil.actionsfilter" version="0" />
