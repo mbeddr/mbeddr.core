@@ -12007,8 +12007,13 @@
               </node>
             </node>
             <node concept="1DcWWT" id="4gq8yQBX$J_" role="3cqZAp">
-              <node concept="37vLTw" id="4gq8yQBX$JU" role="1DdaDG">
-                <ref role="3cqZAo" node="4gq8yQBX$J9" resolve="root" />
+              <node concept="2OqwBi" id="IssIyuzZ7C" role="1DdaDG">
+                <node concept="37vLTw" id="4gq8yQBX$JU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4gq8yQBX$J9" resolve="root" />
+                </node>
+                <node concept="liA8E" id="IssIyu$2bH" role="2OqNvi">
+                  <ref role="37wK5l" to="7e8u:~MPSTreeNode.getChildren():java.util.List" resolve="getChildren" />
+                </node>
               </node>
               <node concept="3cpWsn" id="4gq8yQBX$JR" role="1Duv9x">
                 <property role="3TUv4t" value="false" />

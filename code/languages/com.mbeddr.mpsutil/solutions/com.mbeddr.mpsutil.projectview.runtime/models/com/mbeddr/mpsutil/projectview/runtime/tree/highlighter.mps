@@ -6413,8 +6413,13 @@
           </node>
         </node>
         <node concept="1DcWWT" id="6B7erwvEDuC" role="3cqZAp">
-          <node concept="37vLTw" id="6B7erwvEDuL" role="1DdaDG">
-            <ref role="3cqZAo" node="6B7erwvEDun" resolve="treeNode" />
+          <node concept="2OqwBi" id="IssIyu$zXR" role="1DdaDG">
+            <node concept="37vLTw" id="6B7erwvEDuL" role="2Oq$k0">
+              <ref role="3cqZAo" node="6B7erwvEDun" resolve="treeNode" />
+            </node>
+            <node concept="liA8E" id="IssIyu$$qe" role="2OqNvi">
+              <ref role="37wK5l" to="7e8u:~MPSTreeNode.getChildren():java.util.List" resolve="getChildren" />
+            </node>
           </node>
           <node concept="3cpWsn" id="6B7erwvEDuI" role="1Duv9x">
             <property role="3TUv4t" value="false" />
