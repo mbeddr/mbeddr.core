@@ -31,7 +31,6 @@
     <import index="tken" ref="r:38bad86e-d92c-4ea7-ad52-a111dc6c2457(jetbrains.mps.build.mps.util)" />
     <import index="z1c5" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.project(MPS.Workbench/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
-    <import index="ends" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.persistence(MPS.Core/)" />
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -2239,7 +2238,7 @@
                             <ref role="3cqZAo" node="Uu7NyQzp0V" resolve="it" />
                           </node>
                           <node concept="liA8E" id="Uu7NyQzp0U" role="2OqNvi">
-                            <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                            <ref role="37wK5l" to="z1c4:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
                           </node>
                         </node>
                       </node>
@@ -2410,59 +2409,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="Uu7NyQzeSz" role="3cqZAp" />
-            <node concept="3cpWs8" id="Uu7NyQzfuJ" role="3cqZAp">
-              <node concept="3cpWsn" id="Uu7NyQzfuK" role="3cpWs9">
-                <property role="TrG5h" value="modelRoot" />
-                <node concept="3uibUv" id="Uu7NyQzfuL" role="1tU5fm">
-                  <ref role="3uigEE" to="pa15:~DefaultModelRoot" resolve="DefaultModelRoot" />
-                </node>
-                <node concept="2ShNRf" id="Uu7NyQzfLI" role="33vP2m">
-                  <node concept="1pGfFk" id="Uu7NyQzfHF" role="2ShVmc">
-                    <ref role="37wK5l" to="pa15:~DefaultModelRoot.&lt;init&gt;()" resolve="DefaultModelRoot" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="Uu7NyQzg68" role="3cqZAp">
-              <node concept="2OqwBi" id="Uu7NyQzgAr" role="3clFbG">
-                <node concept="37vLTw" id="Uu7NyQzg66" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Uu7NyQzfuK" resolve="modelRoot" />
-                </node>
-                <node concept="liA8E" id="Uu7NyQzhbM" role="2OqNvi">
-                  <ref role="37wK5l" to="ends:~FileBasedModelRoot.setContentRoot(java.lang.String):void" resolve="setContentRoot" />
-                  <node concept="2OqwBi" id="Uu7NyQzhsx" role="37wK5m">
-                    <node concept="37vLTw" id="Uu7NyQzhh2" role="2Oq$k0">
-                      <ref role="3cqZAo" node="Uu7NyQz6Jd" resolve="folder" />
-                    </node>
-                    <node concept="liA8E" id="Uu7NyQzhEb" role="2OqNvi">
-                      <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="Uu7NyQzi2x" role="3cqZAp">
-              <node concept="2OqwBi" id="Uu7NyQzizz" role="3clFbG">
-                <node concept="37vLTw" id="Uu7NyQzi2v" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Uu7NyQzfuK" resolve="modelRoot" />
-                </node>
-                <node concept="liA8E" id="Uu7NyQzj8U" role="2OqNvi">
-                  <ref role="37wK5l" to="ends:~FileBasedModelRoot.addFile(java.lang.String,java.lang.String):void" resolve="addFile" />
-                  <node concept="10M0yZ" id="Uu7NyQzji9" role="37wK5m">
-                    <ref role="1PxDUh" to="pa15:~DefaultModelRoot" resolve="DefaultModelRoot" />
-                    <ref role="3cqZAo" to="ends:~FileBasedModelRoot.SOURCE_ROOTS" resolve="SOURCE_ROOTS" />
-                  </node>
-                  <node concept="2OqwBi" id="Uu7NyQzjJD" role="37wK5m">
-                    <node concept="37vLTw" id="Uu7NyQzjy4" role="2Oq$k0">
-                      <ref role="3cqZAo" node="Uu7NyQzcKo" resolve="modelsDir" />
-                    </node>
-                    <node concept="liA8E" id="Uu7NyQzjXm" role="2OqNvi">
-                      <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="Uu7NyQzkpL" role="3cqZAp">
               <node concept="2OqwBi" id="Uu7NyQzln4" role="3clFbG">
                 <node concept="2OqwBi" id="Uu7NyQzkKJ" role="2Oq$k0">
@@ -2475,12 +2421,14 @@
                 </node>
                 <node concept="liA8E" id="Uu7NyQzm6k" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~Collection.add(java.lang.Object):boolean" resolve="add" />
-                  <node concept="2OqwBi" id="Uu7NyQzmJO" role="37wK5m">
-                    <node concept="37vLTw" id="Uu7NyQzmjF" role="2Oq$k0">
-                      <ref role="3cqZAo" node="Uu7NyQzfuK" resolve="modelRoot" />
+                  <node concept="2YIFZM" id="3kHv2MV7nX1" role="37wK5m">
+                    <ref role="37wK5l" to="pa15:~DefaultModelRoot.createDescriptor(jetbrains.mps.vfs.IFile,jetbrains.mps.vfs.IFile...):jetbrains.mps.project.structure.model.ModelRootDescriptor" resolve="createDescriptor" />
+                    <ref role="1Pybhc" to="pa15:~DefaultModelRoot" resolve="DefaultModelRoot" />
+                    <node concept="37vLTw" id="3kHv2MV7o5G" role="37wK5m">
+                      <ref role="3cqZAo" node="Uu7NyQz6Jd" resolve="folder" />
                     </node>
-                    <node concept="liA8E" id="Uu7NyQznwO" role="2OqNvi">
-                      <ref role="37wK5l" to="pa15:~DefaultModelRoot.toDescriptor():jetbrains.mps.project.structure.model.ModelRootDescriptor" resolve="toDescriptor" />
+                    <node concept="37vLTw" id="3kHv2MV7opG" role="37wK5m">
+                      <ref role="3cqZAo" node="Uu7NyQzcKo" resolve="modelsDir" />
                     </node>
                   </node>
                 </node>
