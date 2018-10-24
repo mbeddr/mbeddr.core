@@ -212,6 +212,7 @@
       <concept id="781140262677906392" name="jetbrains.mps.build.mps.structure.BuildMps_BrandingCompany" flags="ng" index="IuM$Q">
         <child id="781140262677906402" name="url" index="IuM$c" />
         <child id="781140262677906401" name="name" index="IuM$f" />
+        <child id="2355727383336213970" name="copyrightStar" index="3fQQh0" />
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
@@ -1924,8 +1925,8 @@
     </node>
     <node concept="1zClus" id="1BPeV_LjXsL" role="3989C9">
       <property role="TrG5h" value="MPS" />
-      <property role="2OjLBL" value="2017" />
-      <property role="2OjLBK" value="3" />
+      <property role="2OjLBL" value="2018" />
+      <property role="2OjLBK" value="2" />
       <property role="1lNJF1" value="0" />
       <node concept="3_J27D" id="1BPeV_LjXsM" role="HFo83">
         <node concept="3Mxwew" id="1BPeV_LjXsN" role="3MwsjC">
@@ -1941,6 +1942,11 @@
         <node concept="3_J27D" id="1BPeV_LjXsR" role="IuM$c">
           <node concept="3Mxwew" id="1BPeV_LjXsS" role="3MwsjC">
             <property role="3MwjfP" value="http://mbeddr.com" />
+          </node>
+        </node>
+        <node concept="NbPM2" id="13EXNGXL4ql" role="3fQQh0">
+          <node concept="3Mxwew" id="13EXNGXL4qk" role="3MwsjC">
+            <property role="3MwjfP" value="*" />
           </node>
         </node>
       </node>
@@ -2555,7 +2561,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="1BPeV_LjXvw" role="39821P">
-            <ref role="1zDrgn" node="1BPeV_LjXsL" resolve="mbeddr IDE 2017.3" />
+            <ref role="1zDrgn" node="1BPeV_LjXsL" resolve="mbeddr IDE 2018.2" />
           </node>
           <node concept="28jJK3" id="7FHOzp5h07H" role="39821P">
             <node concept="398BVA" id="7FHOzp5h081" role="28jJRO">
