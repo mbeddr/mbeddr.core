@@ -1052,11 +1052,14 @@
                     </node>
                     <node concept="liA8E" id="598CSoGhZYd" role="2OqNvi">
                       <ref role="37wK5l" node="598CSoGhOrS" resolve="translateExpression" />
+                      <node concept="37vLTw" id="598CSoGjePS" role="37wK5m">
+                        <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
+                      </node>
                       <node concept="37vLTw" id="598CSoGi6oR" role="37wK5m">
                         <ref role="3cqZAo" node="4gj0Jzjwx9" resolve="exp" />
                       </node>
-                      <node concept="37vLTw" id="598CSoGjePS" role="37wK5m">
-                        <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
+                      <node concept="37vLTw" id="3WzlSQdPolH" role="37wK5m">
+                        <ref role="3cqZAo" node="7YWlEjTqRNI" resolve="nodeFromOriginalModel" />
                       </node>
                     </node>
                   </node>
@@ -2143,17 +2146,21 @@
       <node concept="3uibUv" id="598CSoGhOrV" role="3clF45">
         <ref role="3uigEE" to="f7eu:~Expr" resolve="Expr" />
       </node>
+      <node concept="37vLTG" id="598CSoGiYu$" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="598CSoGj08Y" role="1tU5fm">
+          <ref role="3uigEE" to="f7eu:~Context" resolve="Context" />
+        </node>
+      </node>
       <node concept="37vLTG" id="598CSoGhOrW" role="3clF46">
         <property role="TrG5h" value="exp" />
         <node concept="3Tqbb2" id="598CSoGhOrX" role="1tU5fm">
           <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
         </node>
       </node>
-      <node concept="37vLTG" id="598CSoGiYu$" role="3clF46">
-        <property role="TrG5h" value="ctx" />
-        <node concept="3uibUv" id="598CSoGj08Y" role="1tU5fm">
-          <ref role="3uigEE" to="f7eu:~Context" resolve="Context" />
-        </node>
+      <node concept="37vLTG" id="3WzlSQdPfO3" role="3clF46">
+        <property role="TrG5h" value="nodeFromOriginalModel" />
+        <node concept="3Tqbb2" id="3WzlSQdPgjd" role="1tU5fm" />
       </node>
       <node concept="NWlO9" id="598CSoGhOBp" role="lGtFl">
         <property role="NWlVz" value="Translates the mbeddr expression to a Z3 expression." />
@@ -2515,6 +2522,12 @@
           </node>
           <node concept="35c_gC" id="SU$cf9SYe3" role="HW$Y0">
             <ref role="35c_gD" to="mj1l:4ZVDCZCaQ8q" resolve="MinusExpression" />
+          </node>
+          <node concept="35c_gC" id="3WzlSQdQ74K" role="HW$Y0">
+            <ref role="35c_gD" to="mj1l:4ZVDCZCaQ8s" resolve="MultiExpression" />
+          </node>
+          <node concept="35c_gC" id="3WzlSQdQ814" role="HW$Y0">
+            <ref role="35c_gD" to="mj1l:4ZVDCZCaQ8u" resolve="DivExpression" />
           </node>
           <node concept="35c_gC" id="SU$cf9SYWs" role="HW$Y0">
             <ref role="35c_gD" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
@@ -2923,6 +2936,74 @@
             </node>
             <node concept="aMNgE" id="SU$cf9Sf1G" role="dK$qS" />
           </node>
+          <node concept="aOSgX" id="3WzlSQdQ3Z4" role="aOSgK">
+            <ref role="aOSgM" to="mj1l:4ZVDCZCaQ8s" resolve="MultiExpression" />
+            <node concept="9aQIb" id="3WzlSQdQ3Z5" role="aOS0M">
+              <node concept="3clFbS" id="3WzlSQdQ3Z6" role="9aQI4">
+                <node concept="3cpWs6" id="3WzlSQdQ3Z7" role="3cqZAp">
+                  <node concept="2OqwBi" id="3WzlSQdQ3Z8" role="3cqZAk">
+                    <node concept="37vLTw" id="3WzlSQdQ3Z9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="SU$cf9Sf6Q" resolve="ctx" />
+                    </node>
+                    <node concept="liA8E" id="3WzlSQdQ3Za" role="2OqNvi">
+                      <ref role="37wK5l" to="f7eu:~Context.mkMul(com.microsoft.z3.ArithExpr...):com.microsoft.z3.ArithExpr" resolve="mkMul" />
+                      <node concept="10QFUN" id="3WzlSQdQ3Zb" role="37wK5m">
+                        <node concept="3uibUv" id="3WzlSQdQ3Zc" role="10QFUM">
+                          <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
+                        </node>
+                        <node concept="37vLTw" id="3WzlSQdQ3Zd" role="10QFUP">
+                          <ref role="3cqZAo" node="SU$cf9SeZg" resolve="newLeft" />
+                        </node>
+                      </node>
+                      <node concept="10QFUN" id="3WzlSQdQ3Ze" role="37wK5m">
+                        <node concept="3uibUv" id="3WzlSQdQ3Zf" role="10QFUM">
+                          <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
+                        </node>
+                        <node concept="37vLTw" id="3WzlSQdQ3Zg" role="10QFUP">
+                          <ref role="3cqZAo" node="SU$cf9SeZp" resolve="newRight" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="aMNgE" id="3WzlSQdQ3Zh" role="dK$qS" />
+          </node>
+          <node concept="aOSgX" id="3WzlSQdQ5vk" role="aOSgK">
+            <ref role="aOSgM" to="mj1l:4ZVDCZCaQ8u" resolve="DivExpression" />
+            <node concept="9aQIb" id="3WzlSQdQ5vl" role="aOS0M">
+              <node concept="3clFbS" id="3WzlSQdQ5vm" role="9aQI4">
+                <node concept="3cpWs6" id="3WzlSQdQ5vn" role="3cqZAp">
+                  <node concept="2OqwBi" id="3WzlSQdQ5vo" role="3cqZAk">
+                    <node concept="37vLTw" id="3WzlSQdQ5vp" role="2Oq$k0">
+                      <ref role="3cqZAo" node="SU$cf9Sf6Q" resolve="ctx" />
+                    </node>
+                    <node concept="liA8E" id="3WzlSQdQ5vq" role="2OqNvi">
+                      <ref role="37wK5l" to="f7eu:~Context.mkDiv(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr):com.microsoft.z3.ArithExpr" resolve="mkDiv" />
+                      <node concept="10QFUN" id="3WzlSQdQ5vr" role="37wK5m">
+                        <node concept="3uibUv" id="3WzlSQdQ5vs" role="10QFUM">
+                          <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
+                        </node>
+                        <node concept="37vLTw" id="3WzlSQdQ5vt" role="10QFUP">
+                          <ref role="3cqZAo" node="SU$cf9SeZg" resolve="newLeft" />
+                        </node>
+                      </node>
+                      <node concept="10QFUN" id="3WzlSQdQ5vu" role="37wK5m">
+                        <node concept="3uibUv" id="3WzlSQdQ5vv" role="10QFUM">
+                          <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
+                        </node>
+                        <node concept="37vLTw" id="3WzlSQdQ5vw" role="10QFUP">
+                          <ref role="3cqZAo" node="SU$cf9SeZp" resolve="newRight" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="aMNgE" id="3WzlSQdQ5vx" role="dK$qS" />
+          </node>
           <node concept="aOSgX" id="SU$cf9Sf1H" role="aOSgK">
             <ref role="aOSgM" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
             <node concept="9aQIb" id="SU$cf9Sf1I" role="aOS0M">
@@ -3021,11 +3102,14 @@
                     </node>
                     <node concept="liA8E" id="SU$cf9T2Ui" role="2OqNvi">
                       <ref role="37wK5l" node="598CSoGhOrS" resolve="translateExpression" />
+                      <node concept="37vLTw" id="SU$cf9T2Uk" role="37wK5m">
+                        <ref role="3cqZAo" node="SU$cf9Sf6Q" resolve="ctx" />
+                      </node>
                       <node concept="37vLTw" id="SU$cf9TaRj" role="37wK5m">
                         <ref role="3cqZAo" node="SU$cf9Sf6S" resolve="be" />
                       </node>
-                      <node concept="37vLTw" id="SU$cf9T2Uk" role="37wK5m">
-                        <ref role="3cqZAo" node="SU$cf9Sf6Q" resolve="ctx" />
+                      <node concept="37vLTw" id="3WzlSQdPEWM" role="37wK5m">
+                        <ref role="3cqZAo" node="SU$cf9Sf6U" resolve="nodeFromOriginalModel" />
                       </node>
                     </node>
                   </node>
@@ -3229,11 +3313,14 @@
                     </node>
                     <node concept="liA8E" id="SU$cf9TXNe" role="2OqNvi">
                       <ref role="37wK5l" node="598CSoGhOrS" resolve="translateExpression" />
+                      <node concept="37vLTw" id="SU$cf9TXNg" role="37wK5m">
+                        <ref role="3cqZAo" node="SU$cf9TXNx" resolve="ctx" />
+                      </node>
                       <node concept="37vLTw" id="SU$cf9TXNf" role="37wK5m">
                         <ref role="3cqZAo" node="SU$cf9TXNz" resolve="ue" />
                       </node>
-                      <node concept="37vLTw" id="SU$cf9TXNg" role="37wK5m">
-                        <ref role="3cqZAo" node="SU$cf9TXNx" resolve="ctx" />
+                      <node concept="37vLTw" id="3WzlSQdPIKR" role="37wK5m">
+                        <ref role="3cqZAo" node="SU$cf9TXN_" resolve="nodeFromOriginalModel" />
                       </node>
                     </node>
                   </node>
