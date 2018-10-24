@@ -2794,6 +2794,9 @@
         </node>
       </node>
       <node concept="2HvfSZ" id="5FIs3IeHRpb" role="39821P">
+        <node concept="3LWZYq" id="13EXNGXLNQH" role="2HvfZ1">
+          <property role="3LWZYl" value="**/vcs.xml" />
+        </node>
         <node concept="398BVA" id="5FIs3IeHRqX" role="2HvfZ0">
           <ref role="398BVh" node="1BPeV_LjXqL" resolve="artifacts.root" />
           <node concept="2Ry0Ak" id="5FIs3IeHRr8" role="iGT6I">
