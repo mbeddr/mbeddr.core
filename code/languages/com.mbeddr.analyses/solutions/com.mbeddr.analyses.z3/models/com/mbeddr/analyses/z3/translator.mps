@@ -1445,7 +1445,7 @@
         <node concept="YS8fn" id="4gj0JzldPc" role="3cqZAp">
           <node concept="2ShNRf" id="4gj0JzldSw" role="YScLw">
             <node concept="1pGfFk" id="4gj0JzlfYh" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
               <node concept="3cpWs3" id="4gj0JzlhEy" role="37wK5m">
                 <node concept="Xl_RD" id="4gj0JzlhL8" role="3uHU7w">
                   <property role="Xl_RC" value=" cannot be transformed" />
@@ -1729,7 +1729,7 @@
         <node concept="YS8fn" id="5uyAK6LiEZq" role="3cqZAp">
           <node concept="2ShNRf" id="5uyAK6LiF0k" role="YScLw">
             <node concept="1pGfFk" id="5uyAK6LiFmj" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
               <node concept="3cpWs3" id="5uyAK6LiGBm" role="37wK5m">
                 <node concept="Xl_RD" id="5uyAK6LiGOU" role="3uHU7w">
                   <property role="Xl_RC" value="' cannot be translated to Z3." />
