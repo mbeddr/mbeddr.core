@@ -33,6 +33,7 @@
     <import index="qlb5" ref="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" implicit="true" />
   </imports>
@@ -362,6 +363,9 @@
           </node>
           <node concept="35c_gC" id="SU$cf9V_Jj" role="HW$Y0">
             <ref role="35c_gD" to="c4fa:3kEjc_WJ2qA" resolve="ArbitraryTextExpression" />
+          </node>
+          <node concept="35c_gC" id="3WzlSQdRA49" role="HW$Y0">
+            <ref role="35c_gD" to="x27k:3ilck8KqBqr" resolve="GlobalConstantRef" />
           </node>
           <node concept="35c_gC" id="SU$cf9V_Jk" role="HW$Y0">
             <ref role="35c_gD" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
@@ -728,6 +732,36 @@
               </node>
             </node>
             <node concept="aMNgE" id="lLYWBXZWJg" role="dK$qS" />
+          </node>
+          <node concept="aOSgX" id="3WzlSQdRa9r" role="aOSgK">
+            <ref role="aOSgM" to="x27k:3ilck8KqBqr" resolve="GlobalConstantRef" />
+            <node concept="9aQIb" id="3WzlSQdRa9s" role="aOS0M">
+              <node concept="3clFbS" id="3WzlSQdRa9t" role="9aQI4">
+                <node concept="3cpWs6" id="3WzlSQdRd$7" role="3cqZAp">
+                  <node concept="1rXfSq" id="3WzlSQdReOD" role="3cqZAk">
+                    <ref role="37wK5l" node="4gj0Jzjwvo" resolve="convertExpression" />
+                    <node concept="37vLTw" id="3WzlSQdRg4b" role="37wK5m">
+                      <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
+                    </node>
+                    <node concept="2OqwBi" id="3WzlSQdRlLD" role="37wK5m">
+                      <node concept="2OqwBi" id="3WzlSQdRhYW" role="2Oq$k0">
+                        <node concept="aMNgE" id="3WzlSQdRhjZ" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="3WzlSQdRjUI" role="2OqNvi">
+                          <ref role="3Tt5mk" to="x27k:2VsHNE72zUU" resolve="constant" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="3WzlSQdRmJ$" role="2OqNvi">
+                        <ref role="3Tt5mk" to="x27k:2VsHNE717Q8" resolve="value" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="3WzlSQdRprA" role="37wK5m">
+                      <ref role="3cqZAo" node="7YWlEjTqRNI" resolve="nodeFromOriginalModel" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="aMNgE" id="3WzlSQdRa9u" role="dK$qS" />
           </node>
           <node concept="aOSgX" id="4gj0JzpfQq" role="aOSgK">
             <ref role="aOSgM" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
@@ -2529,6 +2563,9 @@
           <node concept="35c_gC" id="3WzlSQdQ814" role="HW$Y0">
             <ref role="35c_gD" to="mj1l:4ZVDCZCaQ8u" resolve="DivExpression" />
           </node>
+          <node concept="35c_gC" id="3WzlSQdREKr" role="HW$Y0">
+            <ref role="35c_gD" to="mj1l:2rpMtTR8raK" resolve="ModuloExpression" />
+          </node>
           <node concept="35c_gC" id="SU$cf9SYWs" role="HW$Y0">
             <ref role="35c_gD" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
           </node>
@@ -3003,6 +3040,40 @@
               </node>
             </node>
             <node concept="aMNgE" id="3WzlSQdQ5vx" role="dK$qS" />
+          </node>
+          <node concept="aOSgX" id="3WzlSQdRCoz" role="aOSgK">
+            <ref role="aOSgM" to="mj1l:2rpMtTR8raK" resolve="ModuloExpression" />
+            <node concept="9aQIb" id="3WzlSQdRCo$" role="aOS0M">
+              <node concept="3clFbS" id="3WzlSQdRCo_" role="9aQI4">
+                <node concept="3cpWs6" id="3WzlSQdRDeg" role="3cqZAp">
+                  <node concept="2OqwBi" id="3WzlSQdRDeh" role="3cqZAk">
+                    <node concept="37vLTw" id="3WzlSQdRDei" role="2Oq$k0">
+                      <ref role="3cqZAo" node="SU$cf9Sf6Q" resolve="ctx" />
+                    </node>
+                    <node concept="liA8E" id="3WzlSQdRDej" role="2OqNvi">
+                      <ref role="37wK5l" to="f7eu:~Context.mkMod(com.microsoft.z3.IntExpr,com.microsoft.z3.IntExpr):com.microsoft.z3.IntExpr" resolve="mkMod" />
+                      <node concept="10QFUN" id="3WzlSQdRDek" role="37wK5m">
+                        <node concept="3uibUv" id="3WzlSQdRDEv" role="10QFUM">
+                          <ref role="3uigEE" to="f7eu:~IntExpr" resolve="IntExpr" />
+                        </node>
+                        <node concept="37vLTw" id="3WzlSQdRDem" role="10QFUP">
+                          <ref role="3cqZAo" node="SU$cf9SeZg" resolve="newLeft" />
+                        </node>
+                      </node>
+                      <node concept="10QFUN" id="3WzlSQdRDen" role="37wK5m">
+                        <node concept="3uibUv" id="3WzlSQdRE2n" role="10QFUM">
+                          <ref role="3uigEE" to="f7eu:~IntExpr" resolve="IntExpr" />
+                        </node>
+                        <node concept="37vLTw" id="3WzlSQdRDep" role="10QFUP">
+                          <ref role="3cqZAo" node="SU$cf9SeZp" resolve="newRight" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="aMNgE" id="3WzlSQdRCoA" role="dK$qS" />
           </node>
           <node concept="aOSgX" id="SU$cf9Sf1H" role="aOSgK">
             <ref role="aOSgM" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
