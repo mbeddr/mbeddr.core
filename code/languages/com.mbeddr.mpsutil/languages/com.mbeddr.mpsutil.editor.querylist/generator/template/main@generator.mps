@@ -3155,11 +3155,26 @@
                       </node>
                       <node concept="2OqwBi" id="C$q8A2SI1a" role="37vLTx">
                         <node concept="2OqwBi" id="C$q8A2SHuC" role="2Oq$k0">
-                          <node concept="37vLTw" id="C$q8A2SHtt" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6hPjX47175m" resolve="context" />
-                          </node>
                           <node concept="liA8E" id="C$q8A2SI00" role="2OqNvi">
-                            <ref role="37wK5l" to="cj4x:~EditorContext.getCellFactory():jetbrains.mps.openapi.editor.cells.EditorCellFactory" resolve="getCellFactory" />
+                            <ref role="37wK5l" to="22ra:~UpdateSession.getCellFactory():jetbrains.mps.openapi.editor.cells.EditorCellFactory" resolve="getCellFactory" />
+                          </node>
+                          <node concept="2OqwBi" id="1o5QGe1b1vI" role="2Oq$k0">
+                            <node concept="2OqwBi" id="1o5QGe1b1vJ" role="2Oq$k0">
+                              <node concept="2OqwBi" id="1o5QGe1b1vK" role="2Oq$k0">
+                                <node concept="37vLTw" id="1o5QGe1b1vL" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6hPjX47175m" resolve="context" />
+                                </node>
+                                <node concept="liA8E" id="1o5QGe1b1vM" role="2OqNvi">
+                                  <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="1o5QGe1b1vN" role="2OqNvi">
+                                <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="1o5QGe1b1vO" role="2OqNvi">
+                              <ref role="37wK5l" to="22ra:~Updater.getCurrentUpdateSession():jetbrains.mps.openapi.editor.update.UpdateSession" resolve="getCurrentUpdateSession" />
+                            </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="C$q8A2SI$S" role="2OqNvi">
