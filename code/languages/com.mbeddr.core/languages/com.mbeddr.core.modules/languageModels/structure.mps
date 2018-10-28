@@ -361,6 +361,11 @@
       <property role="TrG5h" value="preprocessorCondition" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="1m$ejqCnt4a" role="1TKVEl">
+      <property role="IQ2nx" value="1559434277892772106" />
+      <property role="TrG5h" value="alternativeHeaderFileName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="3tp$LrDIuOx" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
     </node>
