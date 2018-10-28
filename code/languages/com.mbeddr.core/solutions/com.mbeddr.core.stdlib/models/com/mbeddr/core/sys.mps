@@ -212,7 +212,7 @@
     </language>
   </registry>
   <node concept="rcWEw" id="137zkozycPy">
-    <property role="TrG5h" value="epoll" />
+    <property role="TrG5h" value="sys_epoll" />
     <node concept="rcWE1" id="om3tjyp1X9" role="rcWEr">
       <property role="rcWEL" value="&lt;sys/epoll.h&gt;" />
     </node>
@@ -589,7 +589,7 @@
     </node>
   </node>
   <node concept="rcWEw" id="55Qk6eSCFkf">
-    <property role="TrG5h" value="poll" />
+    <property role="TrG5h" value="sys_poll" />
     <node concept="rcWE1" id="55Qk6eSCGT0" role="rcWEr">
       <property role="rcWEL" value="&lt;sys/poll.h&gt;" />
     </node>
@@ -812,7 +812,7 @@
     </node>
   </node>
   <node concept="rcWEw" id="41BTkV3Wh_r">
-    <property role="TrG5h" value="types" />
+    <property role="TrG5h" value="sys_types" />
     <node concept="rcWE1" id="41BTkV3Wh_s" role="rcWEr">
       <property role="rcWEL" value="&lt;sys/types.h&gt;" />
     </node>
@@ -1083,7 +1083,7 @@
     </node>
     <node concept="3GEVxB" id="6LsWDiKmpO9" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="types" />
+      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="sys_types" />
     </node>
     <node concept="N3Fnw" id="6LsWDiKmpO1" role="N3F5h">
       <property role="TrG5h" value="_alloca" />
@@ -1121,7 +1121,7 @@
     </node>
     <node concept="3GEVxB" id="6LsWDiKmmxT" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="types" />
+      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="sys_types" />
     </node>
     <node concept="1sgJKc" id="6LsWDiKmmwW" role="N3F5h">
       <property role="33gNmf" value="false" />
@@ -1334,7 +1334,7 @@
     </node>
     <node concept="3GEVxB" id="6LsWDiKmfO5" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="types" />
+      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="sys_types" />
     </node>
     <node concept="3GEVxB" id="6LsWDiKmnQo" role="2OODSX">
       <property role="3GEa6x" value="true" />
@@ -3085,7 +3085,7 @@
     </node>
   </node>
   <node concept="rcWEw" id="6LsWDiKmuVj">
-    <property role="TrG5h" value="in" />
+    <property role="TrG5h" value="netinet_in" />
     <node concept="rcWE1" id="6LsWDiKmuVk" role="rcWEr">
       <property role="rcWEL" value="&lt;netinet/in.h&gt;" />
     </node>
@@ -3576,13 +3576,13 @@
     </node>
   </node>
   <node concept="rcWEw" id="6LsWDiKmu_t">
-    <property role="TrG5h" value="socket" />
+    <property role="TrG5h" value="sys_socket" />
     <node concept="rcWE1" id="6LsWDiKmu_u" role="rcWEr">
       <property role="rcWEL" value="&lt;sys/socket.h&gt;" />
     </node>
     <node concept="3GEVxB" id="6LsWDiKmuE3" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="types" />
+      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="sys_types" />
     </node>
     <node concept="rcJHK" id="6LsWDiKmuAk" role="N3F5h">
       <property role="TrG5h" value="socklen_t" />
@@ -4453,12 +4453,12 @@
     </node>
   </node>
   <node concept="rcWEw" id="3ZZNQxEouEi">
-    <property role="TrG5h" value="mman" />
+    <property role="TrG5h" value="sys_mman" />
     <node concept="rcWE1" id="3ZZNQxEouKV" role="rcWEr">
       <property role="rcWEL" value="&lt;sys/mman.h&gt;" />
     </node>
     <node concept="3GEVxB" id="3ZZNQxEovC3" role="2OODSX">
-      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="types" />
+      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="sys_types" />
     </node>
     <node concept="4WHVk" id="3ZZNQxEowpP" role="N3F5h">
       <property role="TrG5h" value="MAP_FAILED" />
@@ -4983,7 +4983,7 @@
     </node>
   </node>
   <node concept="rcWEw" id="3ZZNQxEoIeF">
-    <property role="TrG5h" value="syscall" />
+    <property role="TrG5h" value="sys_syscall" />
     <node concept="rcWE1" id="3ZZNQxEoIeK" role="rcWEr">
       <property role="rcWEL" value="&lt;sys/syscall.h&gt;" />
     </node>
@@ -5780,13 +5780,13 @@
     </node>
   </node>
   <node concept="rcWEw" id="4DjlAm4M9jW">
-    <property role="TrG5h" value="wait" />
+    <property role="TrG5h" value="sys_wait" />
     <node concept="rcWE1" id="4DjlAm4M9$Q" role="rcWEr">
       <property role="rcWEL" value="&lt;sys/wait.h&gt;" />
     </node>
     <node concept="3GEVxB" id="4DjlAm4M9$U" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="types" />
+      <ref role="3GEb4d" node="41BTkV3Wh_r" resolve="sys_types" />
     </node>
     <node concept="N3Fnw" id="4DjlAm4M9A6" role="N3F5h">
       <property role="TrG5h" value="waitpid" />
@@ -5831,6 +5831,9 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="3TlMh9" id="1m$ejqBHF5W" role="2_0FLF">
+        <property role="2hmy$m" value="0" />
+      </node>
     </node>
     <node concept="BTY7A" id="4DjlAm4Mbic" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -5841,6 +5844,9 @@
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
+      </node>
+      <node concept="3TlMh9" id="1m$ejqBHF1X" role="2_0FLF">
+        <property role="2hmy$m" value="0" />
       </node>
     </node>
     <node concept="BTY7A" id="4DjlAm4Mblx" role="N3F5h">
@@ -5853,6 +5859,9 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="3TlMh9" id="1m$ejqBHF2t" role="2_0FLF">
+        <property role="2hmy$m" value="0" />
+      </node>
     </node>
     <node concept="BTY7A" id="4DjlAm4MboF" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -5863,6 +5872,9 @@
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
+      </node>
+      <node concept="3TlMh9" id="1m$ejqBHF2X" role="2_0FLF">
+        <property role="2hmy$m" value="0" />
       </node>
     </node>
     <node concept="BTY7A" id="4DjlAm4Mbs5" role="N3F5h">
@@ -5875,6 +5887,9 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="3TlMh9" id="1m$ejqBHF3t" role="2_0FLF">
+        <property role="2hmy$m" value="0" />
+      </node>
     </node>
     <node concept="BTY7A" id="4DjlAm4MbuT" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -5885,6 +5900,9 @@
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
+      </node>
+      <node concept="3TlMh9" id="1m$ejqBHF5t" role="2_0FLF">
+        <property role="2hmy$m" value="0" />
       </node>
     </node>
     <node concept="BTY7A" id="4DjlAm4MbxX" role="N3F5h">
@@ -5897,6 +5915,9 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="3TlMh9" id="1m$ejqBHF3Y" role="2_0FLF">
+        <property role="2hmy$m" value="0" />
+      </node>
     </node>
     <node concept="BTY7A" id="4DjlAm4MbAh" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -5908,6 +5929,9 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="3TlMh9" id="1m$ejqBHF4u" role="2_0FLF">
+        <property role="2hmy$m" value="0" />
+      </node>
     </node>
     <node concept="BTY7A" id="4DjlAm4MbGg" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -5918,6 +5942,9 @@
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
+      </node>
+      <node concept="3TlMh9" id="1m$ejqBHF4Y" role="2_0FLF">
+        <property role="2hmy$m" value="0" />
       </node>
     </node>
     <node concept="2NXPZ9" id="4DjlAm4MbEA" role="N3F5h">
@@ -5940,7 +5967,7 @@
     </node>
   </node>
   <node concept="rcWEw" id="7OvELZFKM_O">
-    <property role="TrG5h" value="stat" />
+    <property role="TrG5h" value="sys_stat" />
     <node concept="rcWE1" id="7OvELZFKN7K" role="rcWEr">
       <property role="rcWEL" value="&lt;sys/stat.h&gt;" />
     </node>
