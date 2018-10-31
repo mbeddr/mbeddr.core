@@ -38,6 +38,8 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
+      <concept id="8747172231534849181" name="com.mbeddr.analyses.spin.promela.structure.ChanType" flags="ng" index="2CFTTh" />
+      <concept id="799927705160941637" name="com.mbeddr.analyses.spin.promela.structure.IntType" flags="ng" index="1N1mD7" />
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf">
         <property id="2935779374999680025" name="active" index="2DuWZg" />
       </concept>
@@ -461,6 +463,15 @@
     <node concept="1qefOq" id="1GXRyrTb2vP" role="1SKRRt">
       <node concept="1HfMva" id="1GXRyrTb2vQ" role="1qenE9">
         <property role="TrG5h" value="cdecls_allowed_elements" />
+        <node concept="2B_Gvg" id="L5b1s40oa4" role="N3F5h">
+          <node concept="OjmMv" id="L5b1s40oa6" role="2B_H8o">
+            <node concept="19SGf9" id="L5b1s40oa7" role="OjmMu">
+              <node concept="19SUe$" id="L5b1s40oa8" role="19SJt6">
+                <property role="19SUeA" value="allowed elements: GlobalVariableDeclarations, GlobalConstnatDeclaration, TypeDef, CommentModuleContent, EmptyModuleContent, " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1HfwJk" id="1GXRyrTb2vW" role="N3F5h">
           <property role="TrG5h" value="decls" />
           <node concept="1S7NMz" id="1GXRyrTb2vX" role="fMItF">
@@ -492,12 +503,68 @@
               </node>
             </node>
           </node>
+          <node concept="2NXPZ9" id="L5b1s40oaU" role="fMItF">
+            <property role="TrG5h" value="empty_1540882991189_17" />
+          </node>
         </node>
         <node concept="3xLA65" id="1GXRyrTb2w7" role="lGtFl">
           <property role="TrG5h" value="allowed" />
         </node>
         <node concept="3GEVxB" id="1GXRyrTb2w8" role="2OODSX">
           <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="L5b1s40mVY" role="1SKRRt">
+      <node concept="1HfMva" id="L5b1s40mVZ" role="1qenE9">
+        <property role="TrG5h" value="cdecls_allowed_elements" />
+        <node concept="1HfwJk" id="L5b1s40mW0" role="N3F5h">
+          <property role="TrG5h" value="decls" />
+          <node concept="1S7NMz" id="L5b1s40ob_" role="fMItF">
+            <property role="TrG5h" value="aChan" />
+            <node concept="2CFTTh" id="L5b1s40obz" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="7CXmI" id="L5b1s43Eiu" role="lGtFl">
+                <node concept="1TM$A" id="L5b1s43Eiv" role="7EUXB" />
+              </node>
+            </node>
+          </node>
+          <node concept="1S7NMz" id="L5b1s40sOS" role="fMItF">
+            <property role="TrG5h" value="anInt" />
+            <node concept="1N1mD7" id="L5b1s40sOQ" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="7CXmI" id="L5b1s43Ekm" role="lGtFl">
+                <node concept="1TM$A" id="L5b1s43Ekn" role="7EUXB" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="L5b1s40mWb" role="lGtFl">
+          <property role="TrG5h" value="dissallowed_1" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="L5b1s40mUn" role="1SL9yI">
+      <property role="TrG5h" value="testAllowedCDeclElementsInBasicMode" />
+      <node concept="3cqZAl" id="L5b1s40mUo" role="3clF45" />
+      <node concept="3clFbS" id="L5b1s40mUp" role="3clF47">
+        <node concept="3Ca1qy" id="L5b1s40mVI" role="3cqZAp">
+          <node concept="3xONca" id="L5b1s40mVQ" role="3qv8fS">
+            <ref role="3xOPvv" node="1GXRyrTb2w7" resolve="allowed" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="L5b1s43JeD" role="1SL9yI">
+      <property role="TrG5h" value="testDisallowedCDeclElementsInBasicMode" />
+      <node concept="3cqZAl" id="L5b1s43JeE" role="3clF45" />
+      <node concept="3clFbS" id="L5b1s43JeF" role="3clF47">
+        <node concept="3Ca1qy" id="L5b1s43JeG" role="3cqZAp">
+          <node concept="3xONca" id="L5b1s43JfU" role="3qv8fS">
+            <ref role="3xOPvv" node="L5b1s40mWb" resolve="dissallowed_1" />
+          </node>
         </node>
       </node>
     </node>
