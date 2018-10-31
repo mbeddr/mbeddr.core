@@ -23,6 +23,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -484,7 +485,7 @@
   </node>
   <node concept="1TIwiD" id="7tWSY$P9Odb">
     <property role="TrG5h" value="TestCaseConfigItem" />
-    <property role="34LRSv" value="unittest" />
+    <property role="34LRSv" value="unit testing" />
     <property role="3GE5qa" value="configItem" />
     <property role="EcuMT" value="8610007178384196427" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -493,6 +494,7 @@
       <property role="20kJfa" value="testStrategy" />
       <property role="IQ2ns" value="842732463503928104" />
       <ref role="20lvS9" node="ILZbnBPQGB" resolve="ITestStrategy" />
+      <node concept="asaX9" id="7BqFpRy4s0W" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="7tWSY$P9Oes" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
@@ -554,6 +556,7 @@
     <property role="TrG5h" value="ITestStrategy" />
     <property role="3GE5qa" value="configItem" />
     <property role="EcuMT" value="842732463503928103" />
+    <node concept="asaX9" id="7BqFpRy4s0Y" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="ILZbnBPQGE">
     <property role="TrG5h" value="NoTestIsolationStrategy" />
@@ -564,6 +567,7 @@
     <node concept="PrWs8" id="ILZbnBPQGF" role="PzmwI">
       <ref role="PrY4T" node="ILZbnBPQGB" resolve="ITestStrategy" />
     </node>
+    <node concept="asaX9" id="7BqFpRy4EOE" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="ILZbnBPQGH">
     <property role="TrG5h" value="TestIsolationStrategy" />
@@ -574,9 +578,7 @@
     <node concept="PrWs8" id="ILZbnBPQGI" role="PzmwI">
       <ref role="PrY4T" node="ILZbnBPQGB" resolve="ITestStrategy" />
     </node>
-    <node concept="PrWs8" id="38aMGlgud8N" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:38aMGlgu7TQ" resolve="INoDebugSupport" />
-    </node>
+    <node concept="asaX9" id="7BqFpRy4EOG" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7nMAuIoMgjE">
     <property role="TrG5h" value="TestCollectionRef" />

@@ -758,8 +758,20 @@
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="2b2D8jTTvZZ" role="37wK5m">
-                    <property role="Xl_RC" value="$(HOST)" />
+                  <node concept="2OqwBi" id="7BqFpRy51fu" role="37wK5m">
+                    <node concept="2YIFZM" id="7BqFpRy4XmL" role="2Oq$k0">
+                      <ref role="37wK5l" to="ahli:47Hq2tqUTdZ" resolve="getEffectiveTarget" />
+                      <ref role="1Pybhc" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
+                      <node concept="2OqwBi" id="7BqFpRy4Yvr" role="37wK5m">
+                        <node concept="30H73N" id="7BqFpRy4XX1" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="7BqFpRy503P" role="2OqNvi">
+                          <ref role="3Tt5mk" to="51wr:2b2D8jU0yRA" resolve="target" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="7BqFpRy523t" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -5366,7 +5378,7 @@
           <property role="12ErFq" value="$(vecho) &quot;Running $(notdir $&lt;)&quot;" />
         </node>
         <node concept="12Eqlt" id="6On3mjVjR1q" role="3r8OHu">
-          <property role="12ErFq" value="$(Q) ./binary" />
+          <property role="12ErFq" value="$(Q) ./binary --isolated" />
           <node concept="17Uvod" id="6On3mjVjRwD" role="lGtFl">
             <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/7595578942778593171/7595578942778593300" />
             <property role="2qtEX9" value="command" />
@@ -5386,7 +5398,7 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="6On3mjVkCwt" role="3uHU7w">
-                      <property role="Xl_RC" value="$(EXEXT)" />
+                      <property role="Xl_RC" value="$(EXEXT) --isolated" />
                     </node>
                   </node>
                 </node>
