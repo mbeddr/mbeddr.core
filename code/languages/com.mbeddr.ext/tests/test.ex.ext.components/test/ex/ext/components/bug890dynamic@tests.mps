@@ -92,13 +92,10 @@
         <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test">
       <concept id="8230733038424928674" name="com.mbeddr.ext.components.test.structure.DirectRunnableCall" flags="ng" index="1AmG6P">
@@ -118,7 +115,7 @@
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
       <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
-      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.InstancePortRef" flags="ng" index="2EWCuO">
+      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.ComponentPortRef" flags="ng" index="2EWCuO">
         <reference id="4491876417845649018" name="instance" index="2EWCuR" />
         <reference id="3444913373458569211" name="port" index="XcPQd" />
       </concept>
@@ -167,7 +164,7 @@
       <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
         <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
-      <concept id="3457272138385423166" name="com.mbeddr.ext.components.structure.ReqPortCardinality" flags="ng" index="1FEWAf">
+      <concept id="3457272138385423166" name="com.mbeddr.ext.components.structure.Cardinality" flags="ng" index="1FEWAf">
         <child id="2742494070477836211" name="upperBound" index="23vghw" />
         <child id="2798845822163873817" name="lowerBound" index="1_ZCXF" />
       </concept>
@@ -416,9 +413,7 @@
         <ref role="2v9HqP" node="2mhTzLIACTq" resolve="Bug890" />
       </node>
     </node>
-    <node concept="12mU2y" id="5B69dDbeJFB" role="2Q9xDr">
-      <node concept="3GpDuo" id="5B69dDbeJFC" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="5B69dDbeJFB" role="2Q9xDr" />
   </node>
 </model>
 

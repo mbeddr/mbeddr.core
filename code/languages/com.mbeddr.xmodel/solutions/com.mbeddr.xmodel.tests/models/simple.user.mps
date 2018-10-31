@@ -98,10 +98,7 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
       <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.DefaultInterruptKind" flags="ng" index="3_UBHe" />
@@ -169,9 +166,7 @@
         <property role="TrG5h" value="portable" />
       </node>
     </node>
-    <node concept="12mU2y" id="2vBUIEiz2U8" role="2Q9xDr">
-      <node concept="3GpDuo" id="2vBUIEiz2U9" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="2vBUIEiz2U8" role="2Q9xDr" />
     <node concept="2Q9Fgs" id="2vBUIEiz5zz" role="2Q9xDr">
       <node concept="2Q9FjX" id="2vBUIEiz5z$" role="2Q9FjI" />
     </node>
