@@ -4580,7 +4580,7 @@
               <ref role="3ZVs_2" node="2PyooRI0wlm" resolve="suite_result_file" />
             </node>
             <node concept="3eV9cR" id="2PyooRI0wlR" role="3O_q_j">
-              <property role="PhEJT" value="&lt;testsuite name=&quot;%s.%s.%s&quot; tests=&quot;%d&quot; skipped=&quot;%d&quot; failures=&quot;%%d&quot; errors=&quot;%%d&quot; timestamp=&quot;%s&quot; hostname=&quot;%s&quot;&gt;" />
+              <property role="PhEJT" value="&lt;testsuite name=&quot;%s.%s::%s&quot; tests=&quot;%d&quot; skipped=&quot;%d&quot; failures=&quot;%%d&quot; errors=&quot;%%d&quot; timestamp=&quot;%s&quot; hostname=&quot;%s&quot;&gt;" />
             </node>
             <node concept="2qmXGp" id="4Jc8ssfxi5V" role="3O_q_j">
               <node concept="1E4Tgc" id="4Jc8ssfxiOi" role="1ESnxz">
