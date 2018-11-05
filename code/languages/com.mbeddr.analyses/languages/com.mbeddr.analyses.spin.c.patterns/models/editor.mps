@@ -595,7 +595,7 @@
     <ref role="1XX52x" to="llb3:5hi7ucOtnlu" resolve="MessageLogger" />
     <node concept="3EZMnI" id="5hi7ucOtnlH" role="2wV5jI">
       <node concept="3F0ifn" id="5hi7ucOtnlO" role="3EZMnx">
-        <property role="3F0ifm" value="log message in whitness" />
+        <property role="3F0ifm" value="log message in witness" />
       </node>
       <node concept="3F0ifn" id="5hi7ucOtnlU" role="3EZMnx">
         <property role="3F0ifm" value="(" />

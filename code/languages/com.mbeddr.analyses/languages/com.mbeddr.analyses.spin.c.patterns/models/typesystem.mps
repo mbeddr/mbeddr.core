@@ -92,6 +92,7 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -121,10 +122,18 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -423,6 +432,55 @@
     <node concept="1YaCAy" id="3KP_mg0WsPK" role="1YuTPh">
       <property role="TrG5h" value="singleChoice" />
       <ref role="1YaFvo" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="L5b1s45qpm">
+    <property role="TrG5h" value="check_NondetAssign" />
+    <property role="3GE5qa" value="harness.assign" />
+    <node concept="3clFbS" id="L5b1s45qpn" role="18ibNy">
+      <node concept="Jncv_" id="L5b1s45quM" role="3cqZAp">
+        <ref role="JncvD" to="mj1l:7lNBHBNB4oP" resolve="PrimitiveC99IntegralType" />
+        <node concept="2OqwBi" id="L5b1s45rZy" role="JncvB">
+          <node concept="2OqwBi" id="L5b1s45qLd" role="2Oq$k0">
+            <node concept="1YBJjd" id="L5b1s45qvx" role="2Oq$k0">
+              <ref role="1YBMHb" node="L5b1s45qpp" resolve="nondetAssign" />
+            </node>
+            <node concept="3TrEf2" id="L5b1s45rix" role="2OqNvi">
+              <ref role="3Tt5mk" to="llb3:45nq91X0EWs" resolve="exp" />
+            </node>
+          </node>
+          <node concept="3JvlWi" id="L5b1s45spk" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="L5b1s45quQ" role="Jncv$">
+          <node concept="2Mj0R9" id="L5b1s45qpz" role="3cqZAp">
+            <node concept="2OqwBi" id="L5b1s45uML" role="2MkoU_">
+              <node concept="2OqwBi" id="L5b1s45t4N" role="2Oq$k0">
+                <node concept="1YBJjd" id="L5b1s45qpZ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="L5b1s45qpp" resolve="nondetAssign" />
+                </node>
+                <node concept="3TrEf2" id="L5b1s45u4f" role="2OqNvi">
+                  <ref role="3Tt5mk" to="llb3:4ATA_JBp19m" resolve="vals" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="L5b1s45vr0" role="2OqNvi" />
+            </node>
+            <node concept="Xl_RD" id="L5b1s45vuc" role="2MkJ7o">
+              <property role="Xl_RC" value="missing constraints definition" />
+            </node>
+            <node concept="1YBJjd" id="L5b1s45vEc" role="2OEOjV">
+              <ref role="1YBMHb" node="L5b1s45qpp" resolve="nondetAssign" />
+            </node>
+          </node>
+        </node>
+        <node concept="JncvC" id="L5b1s45quS" role="JncvA">
+          <property role="TrG5h" value="tpe" />
+          <node concept="2jxLKc" id="L5b1s45quT" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="L5b1s45qpp" role="1YuTPh">
+      <property role="TrG5h" value="nondetAssign" />
+      <ref role="1YaFvo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
     </node>
   </node>
 </model>
