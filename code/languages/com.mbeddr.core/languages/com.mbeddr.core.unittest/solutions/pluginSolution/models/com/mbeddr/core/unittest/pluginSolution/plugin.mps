@@ -22,7 +22,6 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -396,31 +395,6 @@
             <node concept="2YIFZM" id="3eWkbyCTBCt" role="33vP2m">
               <ref role="1Pybhc" to="rwxg:3eWkbyCTm4u" resolve="WizardHelper" />
               <ref role="37wK5l" to="rwxg:3eWkbyCTB_o" resolve="makeBuildConfig" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7PyP3ULffm_" role="3cqZAp">
-          <node concept="2OqwBi" id="7PyP3ULforb" role="3clFbG">
-            <node concept="2OqwBi" id="7PyP3ULfmdG" role="2Oq$k0">
-              <node concept="37vLTw" id="7PyP3ULffmz" role="2Oq$k0">
-                <ref role="3cqZAo" node="3eWkbyCTBCr" resolve="bc" />
-              </node>
-              <node concept="3Tsc0h" id="7PyP3ULfm$j" role="2OqNvi">
-                <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
-              </node>
-            </node>
-            <node concept="TSZUe" id="7PyP3ULfsSk" role="2OqNvi">
-              <node concept="2pJPEk" id="7PyP3ULftv8" role="25WWJ7">
-                <node concept="2pJPED" id="7PyP3ULftHW" role="2pJPEn">
-                  <ref role="2pJxaS" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
-                  <node concept="2pIpSj" id="7PyP3ULfuaw" role="2pJxcM">
-                    <ref role="2pIpSl" to="yz9a:ILZbnBPQGC" resolve="testStrategy" />
-                    <node concept="2pJPED" id="7PyP3ULfuob" role="2pJxcZ">
-                      <ref role="2pJxaS" to="yz9a:ILZbnBPQGE" resolve="NoTestIsolationStrategy" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>

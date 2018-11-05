@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports />
@@ -108,13 +108,10 @@
         <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -212,9 +209,7 @@
         <ref role="2v9HqP" node="7wGnc$vZ2un" resolve="M3" />
       </node>
     </node>
-    <node concept="12mU2y" id="7wGnc$vZ2qU" role="2Q9xDr">
-      <node concept="3GpDuo" id="7wGnc$vZ2qV" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="7wGnc$vZ2qU" role="2Q9xDr" />
   </node>
   <node concept="N3F5e" id="7wGnc$vZ2tR">
     <property role="TrG5h" value="M1" />

@@ -1142,5 +1142,77 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="n$tw_aaB3D">
+    <property role="3GE5qa" value="statement" />
+    <ref role="1M2myG" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
+    <node concept="9S07l" id="n$tw_aaB3K" role="9Vyp8">
+      <node concept="3clFbS" id="n$tw_aaB3L" role="2VODD2">
+        <node concept="3clFbF" id="n$tw_aaBb8" role="3cqZAp">
+          <node concept="22lmx$" id="n$tw_aaGMU" role="3clFbG">
+            <node concept="2OqwBi" id="n$tw_aaHfh" role="3uHU7w">
+              <node concept="nLn13" id="n$tw_aaI44" role="2Oq$k0" />
+              <node concept="2qgKlT" id="n$tw_aaHI8" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+              </node>
+            </node>
+            <node concept="22lmx$" id="n$tw_ab5xi" role="3uHU7B">
+              <node concept="2OqwBi" id="n$tw_aaD7A" role="3uHU7B">
+                <node concept="2OqwBi" id="n$tw_aaBq$" role="2Oq$k0">
+                  <node concept="nLn13" id="n$tw_aaBb7" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="n$tw_aaBGr" role="2OqNvi">
+                    <node concept="1xMEDy" id="n$tw_aaBGt" role="1xVPHs">
+                      <node concept="chp4Y" id="n$tw_aaBRj" role="ri$Ld">
+                        <ref role="cht4Q" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="n$tw_aaCpU" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="n$tw_aaFfS" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="n$tw_ab5Oh" role="3uHU7w">
+                <node concept="2OqwBi" id="n$tw_ab5Oi" role="2Oq$k0">
+                  <node concept="nLn13" id="n$tw_ab5Oj" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="n$tw_ab5Ok" role="2OqNvi">
+                    <node concept="1xMEDy" id="n$tw_ab5Ol" role="1xVPHs">
+                      <node concept="chp4Y" id="n$tw_ab6dY" role="ri$Ld">
+                        <ref role="cht4Q" to="ir22:GpUw9S5_Xh" resolve="Init" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="n$tw_ab5On" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="n$tw_ab5Oo" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="n$tw_ab9ww">
+    <property role="3GE5qa" value="type" />
+    <ref role="1M2myG" to="ir22:GpUw9S7577" resolve="IPromelaType" />
+    <node concept="9S07l" id="n$tw_ab9wB" role="9Vyp8">
+      <node concept="3clFbS" id="n$tw_ab9wC" role="2VODD2">
+        <node concept="3clFbF" id="n$tw_ab9BZ" role="3cqZAp">
+          <node concept="2OqwBi" id="n$tw_abb9G" role="3clFbG">
+            <node concept="2OqwBi" id="n$tw_ab9Rr" role="2Oq$k0">
+              <node concept="nLn13" id="n$tw_ab9BY" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="n$tw_aba9i" role="2OqNvi">
+                <node concept="1xMEDy" id="n$tw_aba9k" role="1xVPHs">
+                  <node concept="chp4Y" id="n$tw_abaGi" role="ri$Ld">
+                    <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="n$tw_abcGa" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="n$tw_abchi" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

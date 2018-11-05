@@ -113,17 +113,17 @@
         <node concept="3cpWs8" id="4Nq31LVtNqv" role="3cqZAp">
           <node concept="3cpWsn" id="4Nq31LVtNqw" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="3uibUv" id="HmUOIGCDue" role="1tU5fm">
-              <ref role="3uigEE" to="imq8:1wu5Hv6fnnb" resolve="SpinRawResult" />
+            <node concept="3uibUv" id="13EXNGXNHqt" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
-            <node concept="2YIFZM" id="_jsMICrVg6" role="33vP2m">
-              <ref role="37wK5l" to="hr62:_jsMICrMgd" resolve="checkModel2" />
+            <node concept="2YIFZM" id="13EXNGXNHos" role="33vP2m">
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <node concept="BaHAS" id="_jsMICrVg7" role="37wK5m">
+              <node concept="BaHAS" id="13EXNGXNHot" role="37wK5m">
                 <property role="BaHAW" value="promela" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="_jsMICrVg8" role="37wK5m">
+              <node concept="Xl_RD" id="13EXNGXNHou" role="37wK5m">
                 <property role="Xl_RC" value="hello" />
               </node>
             </node>
@@ -145,8 +145,8 @@
                   <node concept="37vLTw" id="4Nq31LVunFp" role="2Oq$k0">
                     <ref role="3cqZAo" node="4Nq31LVtNqw" resolve="res" />
                   </node>
-                  <node concept="2OwXpG" id="HmUOIGCUZu" role="2OqNvi">
-                    <ref role="2Oxat5" to="imq8:7Rf0$0HT2cv" resolve="trailOutput" />
+                  <node concept="liA8E" id="13EXNGXNHAW" role="2OqNvi">
+                    <ref role="37wK5l" to="imq8:13EXNGXNlmj" resolve="getTrailOutput" />
                   </node>
                 </node>
               </node>
@@ -159,8 +159,8 @@
               <node concept="37vLTw" id="4Nq31LVtNTy" role="2Oq$k0">
                 <ref role="3cqZAo" node="4Nq31LVtNqw" resolve="res" />
               </node>
-              <node concept="2OwXpG" id="HmUOIGCGV4" role="2OqNvi">
-                <ref role="2Oxat5" to="imq8:7Rf0$0HT2cv" resolve="trailOutput" />
+              <node concept="liA8E" id="13EXNGXNHRX" role="2OqNvi">
+                <ref role="37wK5l" to="imq8:13EXNGXNlmj" resolve="getTrailOutput" />
               </node>
             </node>
             <node concept="liA8E" id="4Nq31LVu8z5" role="2OqNvi">

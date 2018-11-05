@@ -54,8 +54,8 @@
     <import index="gfi" ref="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)" />
     <import index="7a0s" ref="r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -6866,6 +6866,18 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1m$ejqCnFa4" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="alternativeHeaderToImport" />
+      <node concept="3Tm1VV" id="1m$ejqCnFa5" role="1B3o_S" />
+      <node concept="17QB3L" id="1m$ejqCnFa6" role="3clF45" />
+      <node concept="3clFbS" id="1m$ejqCnFa7" role="3clF47">
+        <node concept="3clFbF" id="1m$ejqCnLHr" role="3cqZAp">
+          <node concept="10Nm6u" id="1m$ejqCnLHq" role="3clFbG" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="7RHXOmw3XK8" role="13h7CW">
       <node concept="3clFbS" id="7RHXOmw3XK9" role="2VODD2" />
     </node>
@@ -13358,6 +13370,9 @@
       <node concept="3clFbS" id="7NyyyjNubHm" role="3clF47">
         <node concept="3clFbF" id="7NyyyjNuf0h" role="3cqZAp">
           <node concept="37vLTI" id="7NyyyjNuf1x" role="3clFbG">
+            <node concept="37vLTw" id="7NyyyjNuf0g" role="37vLTJ">
+              <ref role="3cqZAo" node="7NyyyjNueEN" resolve="icon" />
+            </node>
             <node concept="2OqwBi" id="VuyCfHMGfW" role="37vLTx">
               <node concept="2YIFZM" id="VuyCfHMFXd" role="2Oq$k0">
                 <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
@@ -13369,9 +13384,6 @@
                   <ref role="3cqZAo" node="7NyyyjNubHK" resolve="n" />
                 </node>
               </node>
-            </node>
-            <node concept="37vLTw" id="7NyyyjNuf0g" role="37vLTJ">
-              <ref role="3cqZAo" node="7NyyyjNueEN" resolve="icon" />
             </node>
           </node>
         </node>
@@ -23833,6 +23845,9 @@
         <node concept="3cpWs8" id="5DkixGo8c74" role="3cqZAp">
           <node concept="3cpWsn" id="5DkixGo8c75" role="3cpWs9">
             <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="5DkixGo8c73" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+            </node>
             <node concept="2OqwBi" id="VuyCfHLKEc" role="33vP2m">
               <node concept="2YIFZM" id="VuyCfHLKoa" role="2Oq$k0">
                 <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
@@ -23844,9 +23859,6 @@
                   <ref role="3cqZAo" node="1pmorAauK7R" resolve="node" />
                 </node>
               </node>
-            </node>
-            <node concept="3uibUv" id="5DkixGo8c73" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
             </node>
           </node>
         </node>

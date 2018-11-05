@@ -10,8 +10,6 @@
   </imports>
   <registry>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
-      <concept id="8887445761571488196" name="com.mbeddr.analyses.spin.promela.structure.PromelaLocalVariableDeclaration" flags="ng" index="1wkSOh" />
-      <concept id="799927705160941637" name="com.mbeddr.analyses.spin.promela.structure.IntType" flags="ng" index="1N1mD7" />
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf">
         <property id="2935779374999680025" name="active" index="2DuWZg" />
       </concept>
@@ -370,20 +368,20 @@
       <property role="TrG5h" value="add120" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="70fpbbgzxOl" role="3XIRFX">
-        <node concept="1wkSOh" id="1U03KaUG9pX" role="3XIRFZ">
+        <node concept="3XIRlf" id="n$tw_ab2gv" role="3XIRFZ">
           <property role="TrG5h" value="k" />
-          <node concept="1N1mD7" id="1U03KaUG9pV" role="2C2TGm">
+          <node concept="26Vqph" id="n$tw_ab2s8" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
-          <node concept="3Hbq_t" id="1U03KaUGaho" role="3XIe9u">
+          <node concept="3Hbq_t" id="n$tw_ab2Zl" role="3XIe9u">
             <property role="2hmy$m" value="7fffffff" />
           </node>
         </node>
         <node concept="1_9egQ" id="1U03KaUGb8Y" role="3XIRFZ">
           <node concept="TPXPH" id="1U03KaUGcCU" role="1_9egR">
-            <node concept="3ZVu4v" id="1U03KaUGb8W" role="3TlMhI">
-              <ref role="3ZVs_2" node="1U03KaUG9pX" resolve="k" />
+            <node concept="3ZVu4v" id="n$tw_ab3P2" role="3TlMhI">
+              <ref role="3ZVs_2" node="n$tw_ab2gv" resolve="k" />
             </node>
             <node concept="3TlMh9" id="1U03KaUGbow" role="3TlMhJ">
               <property role="2hmy$m" value="22" />

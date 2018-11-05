@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MigrationProperties">
     <entry key="jetbrains.mps.ide.mpsmigration.v172.JUnitLibsRepackaging" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v182.ReapplyPatternMigration" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v35.EditorGeneratorRefactoring" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v35.RemoveHistoryFiles" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v35.SetGenRequiredToEmptyAspects" value="executed" />
