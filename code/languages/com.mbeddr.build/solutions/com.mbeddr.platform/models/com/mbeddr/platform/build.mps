@@ -9943,6 +9943,23 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="5JXDvCLh_kV" role="3bR37C">
+          <node concept="3bR9La" id="5JXDvCLh_kW" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:14x5$qAUbkv" resolve="jetbrains.mps.lang.resources" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5JXDvCLh_kX" role="3bR37C">
+          <node concept="3bR9La" id="5JXDvCLh_kY" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5JXDvCLh_kZ" role="3bR37C">
+          <node concept="1Busua" id="5JXDvCLh_l0" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:14x5$qAUbkv" resolve="jetbrains.mps.lang.resources" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7dbZP3ALqdK" role="2G$12L">
         <property role="BnDLt" value="true" />
