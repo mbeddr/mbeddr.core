@@ -220,7 +220,7 @@
         </node>
         <node concept="3vlDli" id="2lN4cj_VAC5" role="3cqZAp">
           <node concept="Xl_RD" id="2lN4cj_VAC6" role="3tpDZB">
-            <property role="Xl_RC" value="Assert: anInteger != 3 || bool1 || !bool2" />
+            <property role="Xl_RC" value="Assert: anInteger != 3 || bool1 || !bool2 || ch != 4" />
           </node>
           <node concept="2OqwBi" id="2lN4cj_VAC7" role="3tpDZA">
             <node concept="37vLTw" id="2lN4cj_VAC8" role="2Oq$k0">
@@ -264,6 +264,13 @@
             <property role="30AzUg" value="bool2" />
             <property role="30AzUs" value="1" />
             <node concept="3Tqbb2" id="4b2d3GUl8vx" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+          <node concept="30Azln" id="4g0pd6rtqxO" role="30Azl8">
+            <property role="30AzUg" value="ch" />
+            <property role="30AzUs" value="4" />
+            <node concept="3Tqbb2" id="4g0pd6rtqHg" role="38rYrG">
               <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             </node>
           </node>
