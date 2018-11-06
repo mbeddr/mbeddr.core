@@ -1967,6 +1967,45 @@
             </node>
           </node>
         </node>
+        <node concept="1QiMYF" id="7_1ViNi5Lmx" role="3XIRFZ">
+          <node concept="OjmMv" id="7_1ViNi5Lmz" role="3SJzmv">
+            <node concept="19SGf9" id="7_1ViNi5Lm$" role="OjmMu">
+              <node concept="19SUe$" id="7_1ViNi5Lm_" role="19SJt6">
+                <property role="19SUeA" value="Re-adjust stdout/stderr buffering to keep up performance of printf/fprintf operations &#10;(which might go down by factor 6 otherwise)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7_1ViNi5Hb9" role="3XIRFZ">
+          <node concept="3O_q_g" id="7_1ViNi5Hb7" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycGg" resolve="setvbuf" />
+            <node concept="4ZOvp" id="7_1ViNi5HeN" role="3O_q_j">
+              <ref role="2DPCA0" to="3y0n:6Iiej_Uhsyk" resolve="stdout" />
+            </node>
+            <node concept="Ea8Gl" id="7_1ViNi5Hfg" role="3O_q_j" />
+            <node concept="4ZOvp" id="7_1ViNi5HfG" role="3O_q_j">
+              <ref role="2DPCA0" to="3y0n:6Iiej_UhGxG" resolve="_IOLBF" />
+            </node>
+            <node concept="3TlMh9" id="7_1ViNi5Hht" role="3O_q_j">
+              <property role="2hmy$m" value="1024" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7_1ViNi5KYG" role="3XIRFZ">
+          <node concept="3O_q_g" id="7_1ViNi5KYH" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycGg" resolve="setvbuf" />
+            <node concept="4ZOvp" id="7_1ViNi5L5k" role="3O_q_j">
+              <ref role="2DPCA0" to="3y0n:6Iiej_UhpRS" resolve="stderr" />
+            </node>
+            <node concept="Ea8Gl" id="7_1ViNi5KYJ" role="3O_q_j" />
+            <node concept="4ZOvp" id="7_1ViNi5KYK" role="3O_q_j">
+              <ref role="2DPCA0" to="3y0n:6Iiej_UhGxG" resolve="_IOLBF" />
+            </node>
+            <node concept="3TlMh9" id="7_1ViNi5KYL" role="3O_q_j">
+              <property role="2hmy$m" value="1024" />
+            </node>
+          </node>
+        </node>
         <node concept="3XISUE" id="1m$ejqD7bEI" role="3XIRFZ" />
         <node concept="2BFjQ_" id="1m$ejqD7cCQ" role="3XIRFZ">
           <node concept="3ZVu4v" id="1m$ejqD7d88" role="2BFjQA">
