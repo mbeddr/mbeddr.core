@@ -253,6 +253,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="7615572890648529894" name="com.mbeddr.core.expressions.structure.NotEqualsExpression" flags="ng" index="25Bbzn" />
@@ -615,7 +622,7 @@
                   <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
                 </node>
                 <node concept="4ZOvp" id="7MLN0_LnW19" role="3O_q_j">
-                  <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_PATH" />
+                  <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_DIR_PATH" />
                 </node>
               </node>
             </node>
@@ -632,9 +639,46 @@
             <node concept="3O_q_g" id="7MLN0_L9$kW" role="3TlMhI">
               <ref role="3O_q_h" node="7MLN0_L8rpV" resolve="mkpath" />
               <node concept="4ZOvp" id="7MLN0_LnVUX" role="3O_q_j">
-                <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_PATH" />
+                <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_DIR_PATH" />
               </node>
               <node concept="4ZOvp" id="7MLN0_L9BZs" role="3O_q_j">
+                <ref role="2DPCA0" to="ml7g:7OvELZG$Lyp" resolve="S_IRWXU" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="c0U19" id="7_1ViNilK97" role="3XIRFZ">
+          <node concept="3XIRFW" id="7_1ViNilK98" role="c0U17">
+            <node concept="1_9egQ" id="7_1ViNilK99" role="3XIRFZ">
+              <node concept="3O_q_g" id="7_1ViNilK9a" role="1_9egR">
+                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+                <node concept="PhEJO" id="7_1ViNilK9b" role="3O_q_j">
+                  <property role="PhEJT" value="%s: Failed to create '%s' directory!\n" />
+                </node>
+                <node concept="4ZOvp" id="7_1ViNilK9c" role="3O_q_j">
+                  <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
+                </node>
+                <node concept="4ZOvp" id="7_1ViNilKmd" role="3O_q_j">
+                  <ref role="2DPCA0" node="7_1ViNigzbS" resolve="TEMP_DIR_PATH" />
+                </node>
+              </node>
+            </node>
+            <node concept="2BFjQ_" id="7_1ViNilK9e" role="3XIRFZ">
+              <node concept="4ZOvp" id="7_1ViNilK9f" role="2BFjQA">
+                <ref role="2DPCA0" node="1m$ejqCWVD2" resolve="EXIT_IO_ERROR" />
+              </node>
+            </node>
+          </node>
+          <node concept="25Bbzn" id="7_1ViNilK9g" role="c0U16">
+            <node concept="3TlMh9" id="7_1ViNilK9h" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="3O_q_g" id="7_1ViNilK9i" role="3TlMhI">
+              <ref role="3O_q_h" node="7MLN0_L8rpV" resolve="mkpath" />
+              <node concept="4ZOvp" id="7_1ViNilKgb" role="3O_q_j">
+                <ref role="2DPCA0" node="7_1ViNigzbS" resolve="TEMP_DIR_PATH" />
+              </node>
+              <node concept="4ZOvp" id="7_1ViNilK9k" role="3O_q_j">
                 <ref role="2DPCA0" to="ml7g:7OvELZG$Lyp" resolve="S_IRWXU" />
               </node>
             </node>
@@ -1224,13 +1268,8 @@
                           <node concept="1S7827" id="1m$ejqC4DkN" role="3O_q_j">
                             <ref role="1S7826" node="2PyooRI5lAR" resolve="suite_result_file" />
                           </node>
-                          <node concept="2qmXGp" id="1m$ejqCCsyT" role="3O_q_j">
-                            <node concept="1E4Tgc" id="1m$ejqCCsIV" role="1ESnxz">
-                              <ref role="1E4Tge" node="4DjlAm4JT_1" resolve="name" />
-                            </node>
-                            <node concept="3ZVu4v" id="1m$ejqCCslc" role="1_9fRO">
-                              <ref role="3ZVs_2" node="Bqp3R0laLS" resolve="caze" />
-                            </node>
+                          <node concept="3ZVu4v" id="1m$ejqCCslc" role="3O_q_j">
+                            <ref role="3ZVs_2" node="Bqp3R0laLS" resolve="caze" />
                           </node>
                           <node concept="4ZOvp" id="1m$ejqCC9Er" role="3O_q_j">
                             <ref role="2DPCA0" to="3y0n:6Iiej_Uhsyk" resolve="stdout" />
@@ -1252,13 +1291,8 @@
                           <node concept="1S7827" id="1m$ejqC4DkH" role="3O_q_j">
                             <ref role="1S7826" node="2PyooRI5lAR" resolve="suite_result_file" />
                           </node>
-                          <node concept="2qmXGp" id="1m$ejqCCsJm" role="3O_q_j">
-                            <node concept="1E4Tgc" id="1m$ejqCCsJn" role="1ESnxz">
-                              <ref role="1E4Tge" node="4DjlAm4JT_1" resolve="name" />
-                            </node>
-                            <node concept="3ZVu4v" id="1m$ejqCCsJo" role="1_9fRO">
-                              <ref role="3ZVs_2" node="Bqp3R0laLS" resolve="caze" />
-                            </node>
+                          <node concept="3ZVu4v" id="1m$ejqCCsJo" role="3O_q_j">
+                            <ref role="3ZVs_2" node="Bqp3R0laLS" resolve="caze" />
                           </node>
                           <node concept="4ZOvp" id="1m$ejqCC9or" role="3O_q_j">
                             <ref role="2DPCA0" to="3y0n:6Iiej_UhpRS" resolve="stderr" />
@@ -1760,11 +1794,22 @@
             <node concept="4ZOvp" id="1m$ejqD79Mh" role="3O_q_j">
               <ref role="2DPCA0" node="1m$ejqCBSoh" resolve="STD_STREAM_CAPTURE_PATH_FORMAT" />
             </node>
+            <node concept="4ZOvp" id="7_1ViNig$mm" role="3O_q_j">
+              <ref role="2DPCA0" node="7_1ViNigzbS" resolve="TEMP_DIR_PATH" />
+            </node>
             <node concept="2qmXGp" id="1m$ejqD79Mi" role="3O_q_j">
               <node concept="3ZUYvv" id="1m$ejqD7g15" role="1_9fRO">
                 <ref role="3ZUYvu" node="1m$ejqD7bbp" resolve="caze" />
               </node>
-              <node concept="1E4Tgc" id="1m$ejqD79Mk" role="1ESnxz">
+              <node concept="1E4Tgc" id="7_1ViNibwnu" role="1ESnxz">
+                <ref role="1E4Tge" node="4DjlAm4LHqx" resolve="class_name" />
+              </node>
+            </node>
+            <node concept="2qmXGp" id="7_1ViNibw3d" role="3O_q_j">
+              <node concept="3ZUYvv" id="7_1ViNibw3e" role="1_9fRO">
+                <ref role="3ZUYvu" node="1m$ejqD7bbp" resolve="caze" />
+              </node>
+              <node concept="1E4Tgc" id="7_1ViNibw3f" role="1ESnxz">
                 <ref role="1E4Tge" node="4DjlAm4JT_1" resolve="name" />
               </node>
             </node>
@@ -1786,6 +1831,17 @@
             </node>
             <node concept="4ZOvp" id="1m$ejqD79Mr" role="3O_q_j">
               <ref role="2DPCA0" node="1m$ejqCBSoh" resolve="STD_STREAM_CAPTURE_PATH_FORMAT" />
+            </node>
+            <node concept="4ZOvp" id="7_1ViNig$XA" role="3O_q_j">
+              <ref role="2DPCA0" node="7_1ViNigzbS" resolve="TEMP_DIR_PATH" />
+            </node>
+            <node concept="2qmXGp" id="7_1ViNiw7Ce" role="3O_q_j">
+              <node concept="1E4Tgc" id="7_1ViNiw7Wa" role="1ESnxz">
+                <ref role="1E4Tge" node="4DjlAm4LHqx" resolve="class_name" />
+              </node>
+              <node concept="3ZUYvv" id="7_1ViNiw7kG" role="1_9fRO">
+                <ref role="3ZUYvu" node="1m$ejqD7bbp" resolve="caze" />
+              </node>
             </node>
             <node concept="2qmXGp" id="1m$ejqD79Ms" role="3O_q_j">
               <node concept="3ZUYvv" id="1m$ejqD7fUR" role="1_9fRO">
@@ -3404,7 +3460,7 @@
               <ref role="3ZVs_2" node="53MG8KzdUd_" resolve="abs_test_result_path" />
             </node>
             <node concept="4ZOvp" id="2ALgbYuQKpa" role="3O_q_j">
-              <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_PATH" />
+              <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_DIR_PATH" />
             </node>
           </node>
         </node>
@@ -4298,17 +4354,24 @@
       <property role="TrG5h" value="empty_1538834510038_54" />
     </node>
     <node concept="4WHVk" id="7MLN0_LnMX0" role="N3F5h">
-      <property role="TrG5h" value="TEST_RESULTS_PATH" />
+      <property role="TrG5h" value="TEST_RESULTS_DIR_PATH" />
       <property role="2OOxQR" value="true" />
       <node concept="PhEJO" id="7MLN0_LnPWT" role="2DQcEM">
         <property role="PhEJT" value="build/test-results" />
+      </node>
+    </node>
+    <node concept="4WHVk" id="7_1ViNigzbS" role="N3F5h">
+      <property role="TrG5h" value="TEMP_DIR_PATH" />
+      <property role="2OOxQR" value="true" />
+      <node concept="PhEJO" id="7_1ViNigzbT" role="2DQcEM">
+        <property role="PhEJT" value="build/tmp" />
       </node>
     </node>
     <node concept="4WHVk" id="1m$ejqCBSoh" role="N3F5h">
       <property role="TrG5h" value="STD_STREAM_CAPTURE_PATH_FORMAT" />
       <property role="2OOxQR" value="true" />
       <node concept="PhEJO" id="1m$ejqCBSoi" role="2DQcEM">
-        <property role="PhEJT" value=".%s.%s" />
+        <property role="PhEJT" value="%s/.%s#%s.%s" />
       </node>
     </node>
     <node concept="4WHVk" id="1m$ejqCCtC4" role="N3F5h">
@@ -4545,7 +4608,7 @@
       <property role="TrG5h" value="empty_1538822736184_27" />
     </node>
     <node concept="4WHVk" id="6On3mjTdBIA" role="N3F5h">
-      <property role="TrG5h" value="TEST_SUITE_RESULT_FILE_NAME_FORMAT" />
+      <property role="TrG5h" value="TEST_SUITE_RESULT_FILE_PATH_FORMAT" />
       <node concept="PhEJO" id="6On3mjTdDjy" role="2DQcEM">
         <property role="PhEJT" value="%s/TEST-%s.%s.xml" />
       </node>
@@ -4618,10 +4681,10 @@
               </node>
             </node>
             <node concept="4ZOvp" id="6On3mjTdG64" role="3O_q_j">
-              <ref role="2DPCA0" node="6On3mjTdBIA" resolve="TEST_SUITE_RESULT_FILE_NAME_FORMAT" />
+              <ref role="2DPCA0" node="6On3mjTdBIA" resolve="TEST_SUITE_RESULT_FILE_PATH_FORMAT" />
             </node>
             <node concept="4ZOvp" id="2PyooRI0wly" role="3O_q_j">
-              <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_PATH" />
+              <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_DIR_PATH" />
             </node>
             <node concept="2qmXGp" id="4Jc8ssfxh2s" role="3O_q_j">
               <node concept="1E4Tgc" id="4Jc8ssfxhh$" role="1ESnxz">
@@ -4859,10 +4922,10 @@
               </node>
             </node>
             <node concept="4ZOvp" id="1m$ejqCGjXU" role="3O_q_j">
-              <ref role="2DPCA0" node="6On3mjTdBIA" resolve="TEST_SUITE_RESULT_FILE_NAME_FORMAT" />
+              <ref role="2DPCA0" node="6On3mjTdBIA" resolve="TEST_SUITE_RESULT_FILE_PATH_FORMAT" />
             </node>
             <node concept="4ZOvp" id="1m$ejqCGjXV" role="3O_q_j">
-              <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_PATH" />
+              <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_DIR_PATH" />
             </node>
             <node concept="2qmXGp" id="4Jc8ssfxhkx" role="3O_q_j">
               <node concept="1E4Tgc" id="4Jc8ssfxhky" role="1ESnxz">
@@ -5360,7 +5423,7 @@
           <node concept="OjmMv" id="7BqFpRy3AlK" role="3SJzmv">
             <node concept="19SGf9" id="7BqFpRy3AlL" role="OjmMu">
               <node concept="19SUe$" id="7BqFpRy3AlM" role="19SJt6">
-                <property role="19SUeA" value="Open stdout/stderr capture" />
+                <property role="19SUeA" value="Open stdout/stderr capture file" />
               </node>
             </node>
           </node>
@@ -5390,8 +5453,24 @@
             <node concept="4ZOvp" id="1m$ejqCBSXH" role="3O_q_j">
               <ref role="2DPCA0" node="1m$ejqCBSoh" resolve="STD_STREAM_CAPTURE_PATH_FORMAT" />
             </node>
-            <node concept="3ZUYvv" id="1m$ejqCCiTX" role="3O_q_j">
-              <ref role="3ZUYvu" node="1m$ejqCCiyH" resolve="test_case_name" />
+            <node concept="4ZOvp" id="7_1ViNiqUbp" role="3O_q_j">
+              <ref role="2DPCA0" node="7_1ViNigzbS" resolve="TEMP_DIR_PATH" />
+            </node>
+            <node concept="2qmXGp" id="7_1ViNibsgy" role="3O_q_j">
+              <node concept="1E4Tgc" id="7_1ViNibsvz" role="1ESnxz">
+                <ref role="1E4Tge" node="4DjlAm4LHqx" resolve="class_name" />
+              </node>
+              <node concept="3ZUYvv" id="1m$ejqCCiTX" role="1_9fRO">
+                <ref role="3ZUYvu" node="1m$ejqCCiyH" resolve="caze" />
+              </node>
+            </node>
+            <node concept="2qmXGp" id="7_1ViNibsXu" role="3O_q_j">
+              <node concept="1E4Tgc" id="7_1ViNibtc_" role="1ESnxz">
+                <ref role="1E4Tge" node="4DjlAm4JT_1" resolve="name" />
+              </node>
+              <node concept="3ZUYvv" id="7_1ViNibsIL" role="1_9fRO">
+                <ref role="3ZUYvu" node="1m$ejqCCiyH" resolve="caze" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="1m$ejqCCoEJ" role="3O_q_j">
               <ref role="3ZVs_2" node="1m$ejqCBySY" resolve="std_stream_postfix" />
@@ -5656,7 +5735,7 @@
           <node concept="OjmMv" id="7BqFpRy3Aid" role="3SJzmv">
             <node concept="19SGf9" id="7BqFpRy3Aie" role="OjmMu">
               <node concept="19SUe$" id="7BqFpRy3Aif" role="19SJt6">
-                <property role="19SUeA" value="Close and delete stdout/stderr capture" />
+                <property role="19SUeA" value="Close stdout/stderr capture file" />
               </node>
             </node>
           </node>
@@ -5669,11 +5748,24 @@
             </node>
           </node>
         </node>
-        <node concept="1_9egQ" id="2PyooRHXFTS" role="3XIRFZ">
-          <node concept="3O_q_g" id="2PyooRHXFTT" role="1_9egR">
-            <ref role="3O_q_h" to="ml7g:6LsWDiKmfEW" resolve="unlink" />
-            <node concept="3ZVu4v" id="1m$ejqCCPcn" role="3O_q_j">
-              <ref role="3ZVs_2" node="1m$ejqCBS2n" resolve="std_stream_capture_path" />
+        <node concept="1QiMYF" id="7_1ViNiEvzZ" role="3XIRFZ">
+          <node concept="OjmMv" id="7_1ViNiEv$1" role="3SJzmv">
+            <node concept="19SGf9" id="7_1ViNiEv$2" role="OjmMu">
+              <node concept="19SUe$" id="7_1ViNiEv$3" role="19SJt6">
+                <property role="19SUeA" value="!! Important Note !! Do not delete stdout/stderr capture file because it slows down the test execution by up to 20%." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="7_1ViNiEvDe" role="lGtFl">
+          <property role="3V$3am" value="statements" />
+          <property role="3V$3ak" value="a9d69647-0840-491e-bf39-2eb0805d2011/4185783222026475861/4185783222026475862" />
+          <node concept="1_9egQ" id="2PyooRHXFTS" role="8Wnug">
+            <node concept="3O_q_g" id="2PyooRHXFTT" role="1_9egR">
+              <ref role="3O_q_h" to="ml7g:6LsWDiKmfEW" resolve="unlink" />
+              <node concept="3ZVu4v" id="1m$ejqCCPcn" role="3O_q_j">
+                <ref role="3ZVs_2" node="1m$ejqCBS2n" resolve="std_stream_capture_path" />
+              </node>
             </node>
           </node>
         </node>
@@ -5724,10 +5816,15 @@
         </node>
       </node>
       <node concept="19RgSI" id="1m$ejqCCiyH" role="1UOdpc">
-        <property role="TrG5h" value="test_case_name" />
-        <node concept="Pu267" id="1m$ejqCCiyF" role="2C2TGm">
+        <property role="TrG5h" value="caze" />
+        <node concept="3wxxNl" id="7_1ViNibsfy" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
+          <node concept="1sgJKr" id="7_1ViNibsfl" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="1sgJKq" node="4DjlAm4JT$Y" resolve="TestCase" />
+          </node>
         </node>
       </node>
       <node concept="19RgSI" id="2PyooRHXL0S" role="1UOdpc">
@@ -5908,10 +6005,10 @@
               </node>
             </node>
             <node concept="4ZOvp" id="6On3mjTdErf" role="3O_q_j">
-              <ref role="2DPCA0" node="6On3mjTdBIA" resolve="TEST_SUITE_RESULT_FILE_NAME_FORMAT" />
+              <ref role="2DPCA0" node="6On3mjTdBIA" resolve="TEST_SUITE_RESULT_FILE_PATH_FORMAT" />
             </node>
             <node concept="4ZOvp" id="6On3mjTdtKM" role="3O_q_j">
-              <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_PATH" />
+              <ref role="2DPCA0" node="7MLN0_LnMX0" resolve="TEST_RESULTS_DIR_PATH" />
             </node>
             <node concept="2qmXGp" id="4Jc8ssfxh_i" role="3O_q_j">
               <node concept="1E4Tgc" id="4Jc8ssfxh_j" role="1ESnxz">
