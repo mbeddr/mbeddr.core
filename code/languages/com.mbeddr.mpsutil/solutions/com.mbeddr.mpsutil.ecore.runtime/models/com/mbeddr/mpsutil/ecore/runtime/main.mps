@@ -389,7 +389,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -6712,22 +6712,17 @@
             <node concept="2ShNRf" id="5n6IlFzy2T7" role="33vP2m">
               <node concept="1pGfFk" id="5n6IlFzydkY" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="2OqwBi" id="5n6IlFzxZz6" role="37wK5m">
-                  <node concept="2OqwBi" id="5n6IlFzxW0T" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5n6IlFzxUVB" role="2Oq$k0">
-                      <node concept="37vLTw" id="5n6IlFzxU$V" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5n6IlFzxoOq" resolve="module" />
-                      </node>
-                      <node concept="liA8E" id="5n6IlFzxVRm" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
-                      </node>
+                <node concept="2OqwBi" id="5n6IlFzxW0T" role="37wK5m">
+                  <node concept="2OqwBi" id="5n6IlFzxUVB" role="2Oq$k0">
+                    <node concept="37vLTw" id="5n6IlFzxU$V" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5n6IlFzxoOq" resolve="module" />
                     </node>
-                    <node concept="liA8E" id="5n6IlFzxZf4" role="2OqNvi">
-                      <ref role="37wK5l" to="3ju5:~IFile.toPath():jetbrains.mps.vfs.path.UniPath" resolve="toPath" />
+                    <node concept="liA8E" id="5n6IlFzxVRm" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="5n6IlFzy0lc" role="2OqNvi">
-                    <ref role="37wK5l" to="eurq:~UniPath.toString():java.lang.String" resolve="toString" />
+                  <node concept="liA8E" id="5n6IlFzxZf4" role="2OqNvi">
+                    <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
                   </node>
                 </node>
               </node>
