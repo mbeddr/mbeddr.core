@@ -301,6 +301,18 @@
       <node concept="m$_yC" id="5fGcQI98QbW" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:6EN03E8oSte" resolve="jetbrains.mps.ide.make" />
       </node>
+      <node concept="m$_yC" id="631ZZAfPFM6" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:5bCFa$D2ROM" resolve="com.mbeddr.mpsutil.dataflow" />
+      </node>
+      <node concept="m$_yC" id="631ZZAfPIcM" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
+      </node>
+      <node concept="m$_yC" id="631ZZAfPJqc" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:DnqfiuSO_Q" resolve="com.mbeddr.mpsutil.compare" />
+      </node>
+      <node concept="m$_yC" id="631ZZAfPKBG" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:7tNo_gxoK8h" resolve="com.mbeddr.doc" />
+      </node>
       <node concept="3_J27D" id="7uZw0yZ43JE" role="m_cZH">
         <node concept="3Mxwew" id="7uZw0yZ43JF" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.core" />
@@ -806,6 +818,9 @@
       <node concept="m$_yC" id="4q9_DTOCET9" role="m$_yJ">
         <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
       </node>
+      <node concept="m$_yC" id="631ZZAfPLP6" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:3lZeU8ehrPx" resolve="com.mbeddr.mpsutil.httpsupport" />
+      </node>
       <node concept="3_J27D" id="7eF9rfAuDVv" role="m_cZH">
         <node concept="3Mxwew" id="7eF9rfAuDVw" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.analysesbase" />
@@ -1055,6 +1070,15 @@
       </node>
       <node concept="m$f5U" id="4zLxxnPtMkU" role="m$_yh">
         <ref role="m$f5T" node="5dchr4Qjb5x" resolve="com.mbeddr.build" />
+      </node>
+      <node concept="m$_yC" id="631ZZAfPMrJ" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+      </node>
+      <node concept="m$_yC" id="631ZZAfPOwz" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5CFKsRWVb8B" resolve="jetbrains.mps.execution.configurations" />
+      </node>
+      <node concept="m$_yC" id="631ZZAfPRvq" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:33r_JpZ6k_l" resolve="com.mbeddr.platform.build" />
       </node>
     </node>
     <node concept="2igEWh" id="$bJ0jguQs8" role="1hWBAP">
