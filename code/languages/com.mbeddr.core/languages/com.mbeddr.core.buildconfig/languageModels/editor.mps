@@ -1391,40 +1391,6 @@
       </node>
       <node concept="3F0ifn" id="2b2D8jTKXtZ" role="3EZMnx">
         <property role="3F0ifm" value="target:" />
-        <node concept="pkWqt" id="5CuCVUfjTvJ" role="pqm2j">
-          <node concept="3clFbS" id="5CuCVUfjTvK" role="2VODD2">
-            <node concept="3clFbF" id="5CuCVUfjTC1" role="3cqZAp">
-              <node concept="3eOSWO" id="5CuCVUfjTC3" role="3clFbG">
-                <node concept="3cmrfG" id="5CuCVUfjTC4" role="3uHU7w">
-                  <property role="3cmrfH" value="1" />
-                </node>
-                <node concept="2OqwBi" id="5CuCVUfjTC5" role="3uHU7B">
-                  <node concept="2OqwBi" id="5CuCVUfjTC6" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5CuCVUfjTC7" role="2Oq$k0">
-                      <node concept="2OqwBi" id="5CuCVUfjTC8" role="2Oq$k0">
-                        <node concept="pncrf" id="5CuCVUfjTC9" role="2Oq$k0" />
-                        <node concept="2Xjw5R" id="5CuCVUfjTCa" role="2OqNvi">
-                          <node concept="1xMEDy" id="5CuCVUfjTCb" role="1xVPHs">
-                            <node concept="chp4Y" id="5CuCVUfjTCc" role="ri$Ld">
-                              <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="5CuCVUfjTCd" role="2OqNvi">
-                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
-                      </node>
-                    </node>
-                    <node concept="3Tsc0h" id="5CuCVUfjTCe" role="2OqNvi">
-                      <ref role="3TtcxE" to="51wr:1it8M3uKcdk" resolve="targets" />
-                    </node>
-                  </node>
-                  <node concept="34oBXx" id="5CuCVUfjTCf" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="1iCGBv" id="3K0ugPltvH_" role="3EZMnx">
         <ref role="1NtTu8" to="51wr:2b2D8jU0yRA" resolve="target" />
@@ -1432,40 +1398,6 @@
           <node concept="3F0A7n" id="3K0ugPltvS2" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-        <node concept="pkWqt" id="5CuCVUfjU9O" role="pqm2j">
-          <node concept="3clFbS" id="5CuCVUfjU9P" role="2VODD2">
-            <node concept="3clFbF" id="5CuCVUfjUnb" role="3cqZAp">
-              <node concept="3eOSWO" id="5CuCVUfjUnd" role="3clFbG">
-                <node concept="3cmrfG" id="5CuCVUfjUne" role="3uHU7w">
-                  <property role="3cmrfH" value="1" />
-                </node>
-                <node concept="2OqwBi" id="5CuCVUfjUnf" role="3uHU7B">
-                  <node concept="2OqwBi" id="5CuCVUfjUng" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5CuCVUfjUnh" role="2Oq$k0">
-                      <node concept="2OqwBi" id="5CuCVUfjUni" role="2Oq$k0">
-                        <node concept="pncrf" id="5CuCVUfjUnj" role="2Oq$k0" />
-                        <node concept="2Xjw5R" id="5CuCVUfjUnk" role="2OqNvi">
-                          <node concept="1xMEDy" id="5CuCVUfjUnl" role="1xVPHs">
-                            <node concept="chp4Y" id="5CuCVUfjUnm" role="ri$Ld">
-                              <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="5CuCVUfjUnn" role="2OqNvi">
-                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
-                      </node>
-                    </node>
-                    <node concept="3Tsc0h" id="5CuCVUfjUno" role="2OqNvi">
-                      <ref role="3TtcxE" to="51wr:1it8M3uKcdk" resolve="targets" />
-                    </node>
-                  </node>
-                  <node concept="34oBXx" id="5CuCVUfjUnp" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>
