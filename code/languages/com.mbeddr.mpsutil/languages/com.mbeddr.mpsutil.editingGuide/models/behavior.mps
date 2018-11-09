@@ -222,6 +222,7 @@
       </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
@@ -229,6 +230,9 @@
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -275,6 +279,8 @@
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
+      <concept id="3055999550620853964" name="jetbrains.mps.baseLanguage.collections.structure.RemoveWhereOperation" flags="nn" index="1aUR6E" />
+      <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
@@ -400,7 +406,7 @@
         </node>
         <node concept="3SKdUt" id="4AzkLAFyOYi" role="3cqZAp">
           <node concept="3SKdUq" id="4AzkLAFyOYk" role="3SKWNk">
-            <property role="3SKdUp" value="restrict scope from the same model only to the task and its descendants" />
+            <property role="3SKdUp" value="restrict scope from the same model only to the nodes from this task and all roots except exercises" />
           </node>
         </node>
         <node concept="3SKdUt" id="4AzkLAGsNLu" role="3cqZAp">
@@ -410,7 +416,7 @@
         </node>
         <node concept="3cpWs8" id="4AzkLAFyNy6" role="3cqZAp">
           <node concept="3cpWsn" id="4AzkLAFyNy7" role="3cpWs9">
-            <property role="TrG5h" value="exerciseElementsOfConcept" />
+            <property role="TrG5h" value="taskNodesScope" />
             <node concept="3uibUv" id="4AzkLAFyNy4" role="1tU5fm">
               <ref role="3uigEE" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
             </node>
@@ -432,6 +438,77 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="6UKRbhpepB9" role="3cqZAp">
+          <node concept="3cpWsn" id="6UKRbhpepBa" role="3cpWs9">
+            <property role="TrG5h" value="modelNodesExceptsExercisesScope" />
+            <node concept="3uibUv" id="6UKRbhpepAP" role="1tU5fm">
+              <ref role="3uigEE" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+            </node>
+            <node concept="2YIFZM" id="6UKRbhpepBb" role="33vP2m">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="6UKRbhpf0PS" role="37wK5m">
+                <node concept="2OqwBi" id="6UKRbhpepBc" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6UKRbhpepBd" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6UKRbhpepBe" role="2Oq$k0">
+                      <node concept="13iPFW" id="6UKRbhpepBf" role="2Oq$k0" />
+                      <node concept="I4A8Y" id="6UKRbhpepBg" role="2OqNvi" />
+                    </node>
+                    <node concept="2RRcyG" id="6UKRbhpepBh" role="2OqNvi" />
+                  </node>
+                  <node concept="1aUR6E" id="6UKRbhpepBi" role="2OqNvi">
+                    <node concept="1bVj0M" id="6UKRbhpepBj" role="23t8la">
+                      <node concept="3clFbS" id="6UKRbhpepBk" role="1bW5cS">
+                        <node concept="3clFbF" id="6UKRbhpepBl" role="3cqZAp">
+                          <node concept="2OqwBi" id="6UKRbhpepBm" role="3clFbG">
+                            <node concept="37vLTw" id="6UKRbhpepBn" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6UKRbhpepBq" resolve="it" />
+                            </node>
+                            <node concept="1mIQ4w" id="6UKRbhpepBo" role="2OqNvi">
+                              <node concept="chp4Y" id="6UKRbhpepBp" role="cj9EA">
+                                <ref role="cht4Q" to="k8go:3p1cdQ7_d_Y" resolve="Exercise" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="6UKRbhpepBq" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="6UKRbhpepBr" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3goQfb" id="6UKRbhpf3cE" role="2OqNvi">
+                  <node concept="1bVj0M" id="6UKRbhpf3cG" role="23t8la">
+                    <node concept="3clFbS" id="6UKRbhpf3cH" role="1bW5cS">
+                      <node concept="3clFbF" id="6UKRbhpf4QD" role="3cqZAp">
+                        <node concept="2OqwBi" id="6UKRbhpf6wh" role="3clFbG">
+                          <node concept="37vLTw" id="6UKRbhpf4QC" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6UKRbhpf3cI" resolve="it" />
+                          </node>
+                          <node concept="2Rf3mk" id="6UKRbhpf8hy" role="2OqNvi">
+                            <node concept="1xMEDy" id="6UKRbhpf8h$" role="1xVPHs">
+                              <node concept="25Kdxt" id="6UKRbhpfa1$" role="ri$Ld">
+                                <node concept="37vLTw" id="6UKRbhpfbKG" role="25KhWn">
+                                  <ref role="3cqZAo" node="4AzkLAFxuxa" resolve="targetConcept" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="6UKRbhpf3cI" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="6UKRbhpf3cJ" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4AzkLAFyIiG" role="3cqZAp">
           <node concept="2ShNRf" id="4AzkLAFyIiC" role="3clFbG">
             <node concept="1pGfFk" id="4AzkLAFyJpz" role="2ShVmc">
@@ -440,7 +517,10 @@
                 <ref role="3cqZAo" node="4AzkLAFyuK8" resolve="importedModelsScope" />
               </node>
               <node concept="37vLTw" id="4AzkLAFyOav" role="37wK5m">
-                <ref role="3cqZAo" node="4AzkLAFyNy7" resolve="exerciseElementsOfConcept" />
+                <ref role="3cqZAo" node="4AzkLAFyNy7" resolve="taskNodesScope" />
+              </node>
+              <node concept="37vLTw" id="6UKRbhpeJc7" role="37wK5m">
+                <ref role="3cqZAo" node="6UKRbhpepBa" resolve="modelNodesExceptsExercisesScope" />
               </node>
             </node>
           </node>
