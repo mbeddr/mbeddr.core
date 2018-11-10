@@ -1312,13 +1312,21 @@
                                 </node>
                               </node>
                               <node concept="PhEJO" id="1m$ejqC51ot" role="3O_q_j">
-                                <property role="PhEJT" value="%s %d %d" />
+                                <property role="PhEJT" value="%s --build-dir=%s %d %d" />
                               </node>
                               <node concept="2qmXGp" id="68PB5rZkBe9" role="3O_q_j">
                                 <node concept="1E4Tgc" id="68PB5rZkCe5" role="1ESnxz">
                                   <ref role="1E4Tge" node="68PB5rZbha$" resolve="program_name" />
                                 </node>
                                 <node concept="1S7827" id="68PB5rZkACR" role="1_9fRO">
+                                  <ref role="1S7826" node="68PB5rZbigh" resolve="options" />
+                                </node>
+                              </node>
+                              <node concept="2qmXGp" id="yGOuCrir_V" role="3O_q_j">
+                                <node concept="1E4Tgc" id="yGOuCrisha" role="1ESnxz">
+                                  <ref role="1E4Tge" node="68PB5rZbheH" resolve="build_dir" />
+                                </node>
+                                <node concept="1S7827" id="yGOuCrirdv" role="1_9fRO">
                                   <ref role="1S7826" node="68PB5rZbigh" resolve="options" />
                                 </node>
                               </node>

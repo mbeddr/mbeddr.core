@@ -1082,10 +1082,12 @@
     <node concept="3G52F3" id="1mGdcSSKgqo" role="12RR68">
       <property role="TrG5h" value="OROOT" />
       <property role="3G5mJX" value="./build" />
+      <property role="12Lnk_" value="?=" />
     </node>
     <node concept="3G52F3" id="2Rx8UqeMqzi" role="12RR68">
       <property role="TrG5h" value="OBJODIR" />
       <property role="3G5mJX" value=" ./bin" />
+      <property role="12Lnk_" value="?=" />
     </node>
     <node concept="12Nxi1" id="63XDlz5TE79" role="12RR68" />
     <node concept="3r3xyQ" id="63XDlz5TM$w" role="12RR68">
