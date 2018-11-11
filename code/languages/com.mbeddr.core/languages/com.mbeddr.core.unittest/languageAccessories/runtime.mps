@@ -2050,43 +2050,15 @@
       <property role="TrG5h" value="run_test_case" />
       <property role="2OOxQR" value="false" />
       <node concept="3XIRFW" id="1m$ejqD793o" role="3XIRFX">
-        <node concept="1QiMYF" id="7BqFpRy2Jn2" role="3XIRFZ">
-          <node concept="OjmMv" id="7BqFpRy2Jn4" role="3SJzmv">
-            <node concept="19SGf9" id="7BqFpRy2Jn5" role="OjmMu">
-              <node concept="19SUe$" id="7BqFpRy2Jn6" role="19SJt6">
-                <property role="19SUeA" value="See http://kaskavalci.com/redirecting-stdout-to-array-and-restoring-it-back-in-c for details" />
+        <node concept="1QiMYF" id="4j41pMpmFqB" role="3XIRFZ">
+          <node concept="OjmMv" id="4j41pMpmFqD" role="3SJzmv">
+            <node concept="19SGf9" id="4j41pMpmFqE" role="OjmMu">
+              <node concept="19SUe$" id="4j41pMpmFqF" role="19SJt6">
+                <property role="19SUeA" value="Redirect all stdout/stderr output to stdout/stderr capture files&#10;See https://www.unix.com/programming/268879-c-unix-how-redirect-stdout-file-c-code.html for details" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3XISUE" id="68PB5rZb_Bl" role="3XIRFZ" />
-        <node concept="3XIRlf" id="7BqFpRy2_jT" role="3XIRFZ">
-          <property role="TrG5h" value="old_stdout_state" />
-          <node concept="26Vqph" id="7BqFpRy2_jR" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="3O_q_g" id="7BqFpRy2_m7" role="3XIe9u">
-            <ref role="3O_q_h" to="ml7g:6LsWDiKmfE$" resolve="dup" />
-            <node concept="4ZOvp" id="7BqFpRy2_ot" role="3O_q_j">
-              <ref role="2DPCA0" to="ml7g:6LsWDiKmfQE" resolve="STDOUT_FILENO" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XIRlf" id="7BqFpRy2_z_" role="3XIRFZ">
-          <property role="TrG5h" value="old_stderr_state" />
-          <node concept="26Vqph" id="7BqFpRy2_zA" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="3O_q_g" id="7BqFpRy2_zB" role="3XIe9u">
-            <ref role="3O_q_h" to="ml7g:6LsWDiKmfE$" resolve="dup" />
-            <node concept="4ZOvp" id="7BqFpRy2_C8" role="3O_q_j">
-              <ref role="2DPCA0" to="ml7g:6LsWDiKmfQF" resolve="STDERR_FILENO" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="7BqFpRy2_qw" role="3XIRFZ" />
         <node concept="3XIRlf" id="1m$ejqD79Mw" role="3XIRFZ">
           <property role="TrG5h" value="stdout_capture_file" />
           <node concept="3wxxNl" id="1m$ejqD79Mx" role="2C2TGm">
@@ -2099,20 +2071,31 @@
             </node>
           </node>
           <node concept="3O_q_g" id="1m$ejqD79Mz" role="3XIe9u">
-            <ref role="3O_q_h" to="3y0n:137zkozycF_" resolve="freopen" />
+            <ref role="3O_q_h" to="3y0n:137zkozycFr" resolve="fopen" />
             <node concept="3ZUYvv" id="68PB5rZb$Ep" role="3O_q_j">
               <ref role="3ZUYvu" node="68PB5rZby59" resolve="stdout_capture_path" />
             </node>
             <node concept="PhEJO" id="1m$ejqD79M_" role="3O_q_j">
               <property role="PhEJT" value="w" />
             </node>
-            <node concept="4ZOvp" id="1m$ejqD79MA" role="3O_q_j">
-              <ref role="2DPCA0" to="3y0n:6Iiej_Uhsyk" resolve="stdout" />
-            </node>
           </node>
         </node>
         <node concept="c0U19" id="1m$ejqD79MB" role="3XIRFZ">
           <node concept="3XIRFW" id="1m$ejqD79MC" role="c0U17">
+            <node concept="1_9egQ" id="4j41pMpn0oK" role="3XIRFZ">
+              <node concept="3O_q_g" id="4j41pMpn0oL" role="1_9egR">
+                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+                <node concept="PhEJO" id="4j41pMpn0oM" role="3O_q_j">
+                  <property role="PhEJT" value="%s: Failed to create '%s' file for writing!\n" />
+                </node>
+                <node concept="4ZOvp" id="4j41pMpn0oN" role="3O_q_j">
+                  <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
+                </node>
+                <node concept="3ZVu4v" id="4j41pMpn1$R" role="3O_q_j">
+                  <ref role="3ZVs_2" node="1m$ejqD79Mw" resolve="stdout_capture_file" />
+                </node>
+              </node>
+            </node>
             <node concept="1_9egQ" id="68PB5rZhKnE" role="3XIRFZ">
               <node concept="3O_q_g" id="68PB5rZhKnF" role="1_9egR">
                 <ref role="3O_q_h" to="3y0n:1fAuj8Twc4w" resolve="exit" />
@@ -2141,20 +2124,31 @@
             </node>
           </node>
           <node concept="3O_q_g" id="1m$ejqD79ML" role="3XIe9u">
-            <ref role="3O_q_h" to="3y0n:137zkozycF_" resolve="freopen" />
+            <ref role="3O_q_h" to="3y0n:137zkozycFr" resolve="fopen" />
             <node concept="3ZUYvv" id="68PB5rZb$Em" role="3O_q_j">
               <ref role="3ZUYvu" node="68PB5rZby6O" resolve="stderr_capture_path" />
             </node>
             <node concept="PhEJO" id="1m$ejqD79MN" role="3O_q_j">
               <property role="PhEJT" value="w" />
             </node>
-            <node concept="4ZOvp" id="1m$ejqD79MO" role="3O_q_j">
-              <ref role="2DPCA0" to="3y0n:6Iiej_UhpRS" resolve="stderr" />
-            </node>
           </node>
         </node>
         <node concept="c0U19" id="1m$ejqD79MP" role="3XIRFZ">
           <node concept="3XIRFW" id="1m$ejqD79MQ" role="c0U17">
+            <node concept="1_9egQ" id="4j41pMpn179" role="3XIRFZ">
+              <node concept="3O_q_g" id="4j41pMpn17a" role="1_9egR">
+                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+                <node concept="PhEJO" id="4j41pMpn17b" role="3O_q_j">
+                  <property role="PhEJT" value="%s: Failed to create '%s' file for writing!\n" />
+                </node>
+                <node concept="4ZOvp" id="4j41pMpn17c" role="3O_q_j">
+                  <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
+                </node>
+                <node concept="3ZVu4v" id="4j41pMpn1PB" role="3O_q_j">
+                  <ref role="3ZVs_2" node="1m$ejqD79MI" resolve="stderr_capture_file" />
+                </node>
+              </node>
+            </node>
             <node concept="1_9egQ" id="68PB5rZhKui" role="3XIRFZ">
               <node concept="3O_q_g" id="68PB5rZhKuj" role="1_9egR">
                 <ref role="3O_q_h" to="3y0n:1fAuj8Twc4w" resolve="exit" />
@@ -2171,7 +2165,124 @@
             </node>
           </node>
         </node>
-        <node concept="3XISUE" id="1m$ejqD79MW" role="3XIRFZ" />
+        <node concept="3XIRlf" id="7BqFpRy2_jT" role="3XIRFZ">
+          <property role="TrG5h" value="old_stdout_state" />
+          <node concept="26Vqph" id="7BqFpRy2_jR" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3O_q_g" id="7BqFpRy2_m7" role="3XIe9u">
+            <ref role="3O_q_h" to="ml7g:6LsWDiKmfE$" resolve="dup" />
+            <node concept="3O_q_g" id="4j41pMpn6hU" role="3O_q_j">
+              <ref role="3O_q_h" to="3y0n:2y8cGnjVxx$" resolve="fileno" />
+              <node concept="4ZOvp" id="4j41pMpn6v2" role="3O_q_j">
+                <ref role="2DPCA0" to="3y0n:6Iiej_Uhsyk" resolve="stdout" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="7BqFpRy2_z_" role="3XIRFZ">
+          <property role="TrG5h" value="old_stderr_state" />
+          <node concept="26Vqph" id="7BqFpRy2_zA" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3O_q_g" id="7BqFpRy2_zB" role="3XIe9u">
+            <ref role="3O_q_h" to="ml7g:6LsWDiKmfE$" resolve="dup" />
+            <node concept="3O_q_g" id="4j41pMpn6w7" role="3O_q_j">
+              <ref role="3O_q_h" to="3y0n:2y8cGnjVxx$" resolve="fileno" />
+              <node concept="4ZOvp" id="4j41pMpn6Uh" role="3O_q_j">
+                <ref role="2DPCA0" to="3y0n:6Iiej_UhpRS" resolve="stderr" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="c0U19" id="4j41pMpn9g4" role="3XIRFZ">
+          <node concept="3XIRFW" id="4j41pMpn9g5" role="c0U17">
+            <node concept="1_9egQ" id="4j41pMpng0G" role="3XIRFZ">
+              <node concept="3O_q_g" id="4j41pMpng0H" role="1_9egR">
+                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+                <node concept="PhEJO" id="4j41pMpng0I" role="3O_q_j">
+                  <property role="PhEJT" value="%s: Failed to redirect stdout to '%s' file!\n" />
+                </node>
+                <node concept="4ZOvp" id="4j41pMpng0J" role="3O_q_j">
+                  <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
+                </node>
+                <node concept="3ZVu4v" id="4j41pMpnhJT" role="3O_q_j">
+                  <ref role="3ZVs_2" node="1m$ejqD79Mw" resolve="stdout_capture_file" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tl9Jn" id="4j41pMpnfx1" role="c0U16">
+            <node concept="3TlMh9" id="4j41pMpnfx7" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="3O_q_g" id="4j41pMpn9v1" role="3TlMhI">
+              <ref role="3O_q_h" to="ml7g:6LsWDiKmfEE" resolve="dup2" />
+              <node concept="3O_q_g" id="4j41pMpn9En" role="3O_q_j">
+                <ref role="3O_q_h" to="3y0n:2y8cGnjVxx$" resolve="fileno" />
+                <node concept="3ZVu4v" id="4j41pMpn9EB" role="3O_q_j">
+                  <ref role="3ZVs_2" node="1m$ejqD79Mw" resolve="stdout_capture_file" />
+                </node>
+              </node>
+              <node concept="3O_q_g" id="4j41pMpn9FB" role="3O_q_j">
+                <ref role="3O_q_h" to="3y0n:2y8cGnjVxx$" resolve="fileno" />
+                <node concept="4ZOvp" id="4j41pMpnaa6" role="3O_q_j">
+                  <ref role="2DPCA0" to="3y0n:6Iiej_Uhsyk" resolve="stdout" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="c0U19" id="4j41pMpnifm" role="3XIRFZ">
+          <node concept="3XIRFW" id="4j41pMpnifn" role="c0U17">
+            <node concept="1_9egQ" id="4j41pMpnifo" role="3XIRFZ">
+              <node concept="3O_q_g" id="4j41pMpnifp" role="1_9egR">
+                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+                <node concept="PhEJO" id="4j41pMpnifq" role="3O_q_j">
+                  <property role="PhEJT" value="%s: Failed to redirect stderr to '%s' file!\n" />
+                </node>
+                <node concept="4ZOvp" id="4j41pMpnifr" role="3O_q_j">
+                  <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
+                </node>
+                <node concept="3ZVu4v" id="4j41pMpnkcR" role="3O_q_j">
+                  <ref role="3ZVs_2" node="1m$ejqD79MI" resolve="stderr_capture_file" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tl9Jn" id="4j41pMpnift" role="c0U16">
+            <node concept="3TlMh9" id="4j41pMpnifu" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="3O_q_g" id="4j41pMpnifv" role="3TlMhI">
+              <ref role="3O_q_h" to="ml7g:6LsWDiKmfEE" resolve="dup2" />
+              <node concept="3O_q_g" id="4j41pMpnifw" role="3O_q_j">
+                <ref role="3O_q_h" to="3y0n:2y8cGnjVxx$" resolve="fileno" />
+                <node concept="3ZVu4v" id="4j41pMpnixg" role="3O_q_j">
+                  <ref role="3ZVs_2" node="1m$ejqD79MI" resolve="stderr_capture_file" />
+                </node>
+              </node>
+              <node concept="3O_q_g" id="4j41pMpnify" role="3O_q_j">
+                <ref role="3O_q_h" to="3y0n:2y8cGnjVxx$" resolve="fileno" />
+                <node concept="4ZOvp" id="4j41pMpnj1Q" role="3O_q_j">
+                  <ref role="2DPCA0" to="3y0n:6Iiej_UhpRS" resolve="stderr" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="7BqFpRy2_qw" role="3XIRFZ" />
+        <node concept="1QiMYF" id="4j41pMpnrut" role="3XIRFZ">
+          <node concept="OjmMv" id="4j41pMpnruv" role="3SJzmv">
+            <node concept="19SGf9" id="4j41pMpnruw" role="OjmMu">
+              <node concept="19SUe$" id="4j41pMpnrux" role="19SJt6">
+                <property role="19SUeA" value="Run given test case and compute result status" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3XIRlf" id="1m$ejqD79MX" role="3XIRFZ">
           <property role="TrG5h" value="result_value" />
           <node concept="26Vqph" id="1m$ejqD79MY" role="2C2TGm">
@@ -2206,6 +2317,31 @@
           </node>
         </node>
         <node concept="3XISUE" id="1m$ejqD79N4" role="3XIRFZ" />
+        <node concept="1QiMYF" id="4j41pMpnkWX" role="3XIRFZ">
+          <node concept="OjmMv" id="4j41pMpnkWY" role="3SJzmv">
+            <node concept="19SGf9" id="4j41pMpnkWZ" role="OjmMu">
+              <node concept="19SUe$" id="4j41pMpnkX0" role="19SJt6">
+                <property role="19SUeA" value="Close up stdout/stderr capture files and redirect all stdout/stderr output back to console&#10;See https://www.unix.com/programming/268879-c-unix-how-redirect-stdout-file-c-code.html for details" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="4j41pMpmW6q" role="3XIRFZ">
+          <node concept="3O_q_g" id="4j41pMpmW6o" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycFl" resolve="fflush" />
+            <node concept="4ZOvp" id="4j41pMpmWkZ" role="3O_q_j">
+              <ref role="2DPCA0" to="3y0n:6Iiej_Uhsyk" resolve="stdout" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="4j41pMpmWwQ" role="3XIRFZ">
+          <node concept="3O_q_g" id="4j41pMpmWwR" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycFl" resolve="fflush" />
+            <node concept="4ZOvp" id="4j41pMpmWJJ" role="3O_q_j">
+              <ref role="2DPCA0" to="3y0n:6Iiej_UhpRS" resolve="stderr" />
+            </node>
+          </node>
+        </node>
         <node concept="1_9egQ" id="1m$ejqD79N5" role="3XIRFZ">
           <node concept="3O_q_g" id="1m$ejqD79N6" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycF3" resolve="fclose" />
@@ -2222,43 +2358,17 @@
             </node>
           </node>
         </node>
-        <node concept="3XISUE" id="7BqFpRy2_rQ" role="3XIRFZ" />
-        <node concept="1_9egQ" id="7BqFpRy3eYE" role="3XIRFZ">
-          <node concept="3O_q_g" id="7BqFpRy3eYC" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycF_" resolve="freopen" />
-            <node concept="PhEJO" id="7BqFpRy3f0j" role="3O_q_j">
-              <property role="PhEJT" value="NUL" />
-            </node>
-            <node concept="PhEJO" id="7BqFpRy3f0K" role="3O_q_j">
-              <property role="PhEJT" value="a" />
-            </node>
-            <node concept="4ZOvp" id="7BqFpRy3fbC" role="3O_q_j">
-              <ref role="2DPCA0" to="3y0n:6Iiej_Uhsyk" resolve="stdout" />
-            </node>
-          </node>
-        </node>
-        <node concept="1_9egQ" id="7BqFpRy3fkW" role="3XIRFZ">
-          <node concept="3O_q_g" id="7BqFpRy3fkX" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycF_" resolve="freopen" />
-            <node concept="PhEJO" id="7BqFpRy3fkY" role="3O_q_j">
-              <property role="PhEJT" value="NUL" />
-            </node>
-            <node concept="PhEJO" id="7BqFpRy3fkZ" role="3O_q_j">
-              <property role="PhEJT" value="a" />
-            </node>
-            <node concept="4ZOvp" id="7BqFpRy3fnS" role="3O_q_j">
-              <ref role="2DPCA0" to="3y0n:6Iiej_UhpRS" resolve="stderr" />
-            </node>
-          </node>
-        </node>
         <node concept="1_9egQ" id="7BqFpRy2_u_" role="3XIRFZ">
           <node concept="3O_q_g" id="7BqFpRy2_uz" role="1_9egR">
             <ref role="3O_q_h" to="ml7g:6LsWDiKmfEE" resolve="dup2" />
             <node concept="3ZVu4v" id="7BqFpRy2_w0" role="3O_q_j">
               <ref role="3ZVs_2" node="7BqFpRy2_jT" resolve="old_stdout_state" />
             </node>
-            <node concept="4ZOvp" id="7BqFpRy2_wG" role="3O_q_j">
-              <ref role="2DPCA0" to="ml7g:6LsWDiKmfQE" resolve="STDOUT_FILENO" />
+            <node concept="3O_q_g" id="4j41pMpn8kJ" role="3O_q_j">
+              <ref role="3O_q_h" to="3y0n:2y8cGnjVxx$" resolve="fileno" />
+              <node concept="4ZOvp" id="4j41pMpn8Me" role="3O_q_j">
+                <ref role="2DPCA0" to="3y0n:6Iiej_Uhsyk" resolve="stdout" />
+              </node>
             </node>
           </node>
         </node>
@@ -2268,11 +2378,31 @@
             <node concept="3ZVu4v" id="7BqFpRy2_Hi" role="3O_q_j">
               <ref role="3ZVs_2" node="7BqFpRy2_z_" resolve="old_stderr_state" />
             </node>
-            <node concept="4ZOvp" id="7BqFpRy2_L8" role="3O_q_j">
-              <ref role="2DPCA0" to="ml7g:6LsWDiKmfQF" resolve="STDERR_FILENO" />
+            <node concept="3O_q_g" id="4j41pMpn6UJ" role="3O_q_j">
+              <ref role="3O_q_h" to="3y0n:2y8cGnjVxx$" resolve="fileno" />
+              <node concept="4ZOvp" id="4j41pMpn6UK" role="3O_q_j">
+                <ref role="2DPCA0" to="3y0n:6Iiej_UhpRS" resolve="stderr" />
+              </node>
             </node>
           </node>
         </node>
+        <node concept="1_9egQ" id="4j41pMpmUe0" role="3XIRFZ">
+          <node concept="3O_q_g" id="4j41pMpmUdY" role="1_9egR">
+            <ref role="3O_q_h" to="ml7g:6LsWDiKmfD1" resolve="close" />
+            <node concept="3ZVu4v" id="4j41pMpmUsy" role="3O_q_j">
+              <ref role="3ZVs_2" node="7BqFpRy2_jT" resolve="old_stdout_state" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="4j41pMpmUC5" role="3XIRFZ">
+          <node concept="3O_q_g" id="4j41pMpmUC6" role="1_9egR">
+            <ref role="3O_q_h" to="ml7g:6LsWDiKmfD1" resolve="close" />
+            <node concept="3ZVu4v" id="4j41pMpmUQQ" role="3O_q_j">
+              <ref role="3ZVs_2" node="7BqFpRy2_z_" resolve="old_stderr_state" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="4j41pMpmV3A" role="3XIRFZ" />
         <node concept="1QiMYF" id="7_1ViNi5Lmx" role="3XIRFZ">
           <node concept="OjmMv" id="7_1ViNi5Lmz" role="3SJzmv">
             <node concept="19SGf9" id="7_1ViNi5Lm$" role="OjmMu">
