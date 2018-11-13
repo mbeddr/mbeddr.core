@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.mpsutil.guides/com.mbeddr.mpsutil.guides.devkit" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/EcoreImporter_TestLanguage1/EcoreImporter_TestLanguage1.mpl" folder="testlanguages" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.actionsfilter/com.mbeddr.mpsutil.actionsfilter.mpl" folder="staging.actionsfilter" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.asynccell.sandbox/com.mbeddr.mpsutil.asynccell.sandbox.mpl" folder="asynccell" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.bldoc/com.mbeddr.mpsutil.bldoc.mpl" folder="rest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.breadcrumb.editor/com.mbeddr.mpsutil.breadcrumb.editor.mpl" folder="rest.breadcrumb" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.mpl" folder="rest.breadcrumb" />
@@ -119,7 +120,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xml.fix/com.mbeddr.mpsutil.xml.fix.mpl" folder="stable.xml.fix" />
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="staging.actionsfilter" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.asynccell/com.mbeddr.mpsutil.asynccell.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.asynccell/com.mbeddr.mpsutil.asynccell.msd" folder="asynccell" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="rest.breadcrumb" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildassistant/com.mbeddr.mpsutil.buildassistant.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildutil.runtime/com.mbeddr.mpsutil.buildutil.runtime.msd" folder="rest.buildutil" />
@@ -215,6 +216,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.xmodel.actions/com.mbeddr.mpsutil.xmodel.actions.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.opencsv/com.opencsv.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.xml/org.xml.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.asynccell/test.com.mbeddr.mpsutil.asynccell.msd" folder="asynccell" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.compare.pattern.test/com.mbeddr.mpsutil.compare.pattern.test.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="staging.javainterpreter" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare/test.com.mbeddr.mpsutil.compare.msd" folder="staging.comparator" />
