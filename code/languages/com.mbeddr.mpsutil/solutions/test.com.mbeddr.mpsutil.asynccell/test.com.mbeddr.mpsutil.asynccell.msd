@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.asynccell.test" uuid="43370260-9020-4c2d-bf8a-d4755d82318d" moduleVersion="0" compileInMPS="true">
+<solution name="test.com.mbeddr.mpsutil.asynccell" uuid="43370260-9020-4c2d-bf8a-d4755d82318d" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -31,8 +31,8 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="0381a253-2986-4e29-bd38-bdda504095e5(com.mbeddr.mpsutil.asynccell)" version="0" />
     <module reference="4d43042b-3d26-46a9-888a-1ec4e4a2c81d(com.mbeddr.mpsutil.asynccell.sandbox)" version="0" />
-    <module reference="43370260-9020-4c2d-bf8a-d4755d82318d(com.mbeddr.mpsutil.asynccell.test)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+    <module reference="43370260-9020-4c2d-bf8a-d4755d82318d(test.com.mbeddr.mpsutil.asynccell)" version="0" />
   </dependencyVersions>
 </solution>
 

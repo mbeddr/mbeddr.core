@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a754188c-924f-4201-9121-9a393a13f524(com.mbeddr.mpsutil.asynccell.test.test@tests)">
+<model ref="r:a754188c-924f-4201-9121-9a393a13f524(test.com.mbeddr.mpsutil.asynccell.test@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />

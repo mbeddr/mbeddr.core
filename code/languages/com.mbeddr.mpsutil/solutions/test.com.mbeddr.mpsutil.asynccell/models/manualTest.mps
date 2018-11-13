@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2b6bfe11-4723-44db-a22e-82a5ec73591e(com.mbeddr.mpsutil.asynccell.test.manualTest)">
+<model ref="r:2b6bfe11-4723-44db-a22e-82a5ec73591e(test.com.mbeddr.mpsutil.asynccell.manualTest)">
   <persistence version="9" />
   <languages>
     <use id="4d43042b-3d26-46a9-888a-1ec4e4a2c81d" name="com.mbeddr.mpsutil.asynccell.sandbox" version="-1" />
