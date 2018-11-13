@@ -50,9 +50,9 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="0280da2d-83c6-47d3-bddd-baff7e1a110f(com.mbeddr.mpsutil.parameterizedMenu.sandbox)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
-    <module reference="0280da2d-83c6-47d3-bddd-baff7e1a110f(com.mbeddr.mpsutil.parameterizedMenu.sandbox)" version="0" />
   </dependencyVersions>
   <extendedLanguages />
 </language>
