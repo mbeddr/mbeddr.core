@@ -210,9 +210,9 @@
       <node concept="2Q9FjX" id="L5b1s45Q8L" role="2Q9FjI" />
     </node>
     <node concept="1gr5cj" id="L5b1s45Q8K" role="2ePNbc">
-      <property role="TrG5h" value="pan__030_harness_constructs" />
+      <property role="TrG5h" value="pan__030_harness_constructs_random_assign" />
       <node concept="2v9HqM" id="L5b1s45Q8M" role="2eOfOg">
-        <ref role="2v9HqP" node="L5b1s45Q9H" resolve="_030_harness_constructs" />
+        <ref role="2v9HqP" node="L5b1s45Q9H" resolve="_030_harness_constructs_random_assign" />
       </node>
       <node concept="2v9HqM" id="L5b1s45Q8N" role="2eOfOg">
         <ref role="2v9HqP" node="L5b1s45Q8S" resolve="_000_system_under_verification" />
@@ -229,7 +229,7 @@
     <property role="TrG5h" value="_000_analysis_configuration_container" />
     <node concept="apm28" id="L5b1s45Q8R" role="3V$2$K">
       <property role="3SeVAx" value="true" />
-      <ref role="apm5G" node="L5b1s45Q9H" resolve="_030_harness_constructs" />
+      <ref role="apm5G" node="L5b1s45Q9H" resolve="_030_harness_constructs_random_assign" />
     </node>
   </node>
   <node concept="N3F5e" id="L5b1s45Q8S">
@@ -376,12 +376,12 @@
     </node>
   </node>
   <node concept="1HfMva" id="L5b1s45Q9H">
-    <property role="TrG5h" value="_030_harness_constructs" />
+    <property role="TrG5h" value="_030_harness_constructs_random_assign" />
     <node concept="2B_Gvg" id="L5b1s45Q9I" role="N3F5h">
       <node concept="OjmMv" id="L5b1s45Q9Q" role="2B_H8o">
         <node concept="19SGf9" id="L5b1s45Q9Z" role="OjmMu">
           <node concept="19SUe$" id="L5b1s45Qal" role="19SJt6">
-            <property role="19SUeA" value="in this lesson we describe:&#10;1) the random_assign construct to initialize variables of the environment with random values&#10;&#10;If the input space is too big, some variables can be assigned in a ramd manner and &#10;some in a non-deterministic manner.&#10;&#10;Please compare with the harness from lesson 2. " />
+            <property role="19SUeA" value="in this lesson we describe:&#10;1) the random_assign construct to initialize variables of the environment with random values&#10;&#10;Problem: If the input space is too big not all input variables can be assigned in a nondeterministic manner since the verification will take too much time. The solution to this is to assign some variables in a random manner and &#10;some in a non-deterministic manner. The users can effectively move the border between random testing and exhaustive verification.&#10;&#10;Please compare with the harness from lesson 2. " />
           </node>
         </node>
       </node>

@@ -213,9 +213,9 @@
       <node concept="2Q9FjX" id="L5b1s45c7a" role="2Q9FjI" />
     </node>
     <node concept="1gr5cj" id="L5b1s45cbg" role="2ePNbc">
-      <property role="TrG5h" value="pan__020_harness_constructs" />
+      <property role="TrG5h" value="pan__020_harness_constructs_nondet_assign_and_log" />
       <node concept="2v9HqM" id="L5b1s45cbh" role="2eOfOg">
-        <ref role="2v9HqP" node="L5b1s43YJv" resolve="_020_harness_constructs" />
+        <ref role="2v9HqP" node="L5b1s43YJv" resolve="_020_harness_constructs_nondet_assign_and_log" />
       </node>
       <node concept="2v9HqM" id="L5b1s45dhy" role="2eOfOg">
         <ref role="2v9HqP" node="L5b1s45cdn" resolve="_000_system_under_verification" />
@@ -232,7 +232,7 @@
     <property role="TrG5h" value="_000_analysis_configuration_container" />
     <node concept="apm28" id="L5b1s45cb8" role="3V$2$K">
       <property role="3SeVAx" value="true" />
-      <ref role="apm5G" node="L5b1s43YJv" resolve="_020_harness_constructs" />
+      <ref role="apm5G" node="L5b1s43YJv" resolve="_020_harness_constructs_nondet_assign_and_log" />
     </node>
   </node>
   <node concept="N3F5e" id="L5b1s45cdn">
@@ -379,7 +379,7 @@
     </node>
   </node>
   <node concept="1HfMva" id="L5b1s43YJv">
-    <property role="TrG5h" value="_020_harness_constructs" />
+    <property role="TrG5h" value="_020_harness_constructs_nondet_assign_and_log" />
     <node concept="2B_Gvg" id="L5b1s43YJA" role="N3F5h">
       <node concept="OjmMv" id="L5b1s43YJB" role="2B_H8o">
         <node concept="19SGf9" id="L5b1s43YJC" role="OjmMu">
