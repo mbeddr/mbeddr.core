@@ -35,5 +35,11 @@
       <ref role="3uigEE" to="22we:598CSoGhuFz" resolve="ICustomExpressionsTranslator" />
     </node>
   </node>
+  <node concept="vrV6u" id="4AeTWAG1cdS">
+    <property role="TrG5h" value="TypesTranslatorExtension" />
+    <node concept="3uibUv" id="4AeTWAG1ex9" role="luc8K">
+      <ref role="3uigEE" to="22we:4AeTWAG1cfU" resolve="ICustomTypesTranslator" />
+    </node>
+  </node>
 </model>
 

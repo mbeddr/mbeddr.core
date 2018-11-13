@@ -1433,6 +1433,54 @@
           </node>
         </node>
         <node concept="3clFbH" id="5uyAK6LiEYf" role="3cqZAp" />
+        <node concept="2Gpval" id="4AeTWAG1Ki2" role="3cqZAp">
+          <node concept="2GrKxI" id="4AeTWAG1Ki3" role="2Gsz3X">
+            <property role="TrG5h" value="tte" />
+          </node>
+          <node concept="3clFbS" id="4AeTWAG1Ki4" role="2LFqv$">
+            <node concept="3clFbJ" id="4AeTWAG1Ki5" role="3cqZAp">
+              <node concept="2OqwBi" id="4AeTWAG1Ki6" role="3clFbw">
+                <node concept="2GrUjf" id="4AeTWAG1Ki7" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="4AeTWAG1Ki3" resolve="tte" />
+                </node>
+                <node concept="liA8E" id="4AeTWAG1Ki8" role="2OqNvi">
+                  <ref role="37wK5l" node="4AeTWAG1cfX" resolve="canTranslate" />
+                  <node concept="37vLTw" id="4AeTWAG1OLN" role="37wK5m">
+                    <ref role="3cqZAo" node="4gj0JzpkZx" resolve="tpe" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="4AeTWAG1Kia" role="3clFbx">
+                <node concept="3cpWs6" id="4AeTWAG1Kib" role="3cqZAp">
+                  <node concept="2OqwBi" id="4AeTWAG1Kic" role="3cqZAk">
+                    <node concept="2GrUjf" id="4AeTWAG1Kid" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="4AeTWAG1Ki3" resolve="tte" />
+                    </node>
+                    <node concept="liA8E" id="4AeTWAG1Kie" role="2OqNvi">
+                      <ref role="37wK5l" node="4AeTWAG1cgc" resolve="translateType" />
+                      <node concept="37vLTw" id="4AeTWAG1Kif" role="37wK5m">
+                        <ref role="3cqZAo" node="4gj0JzpkZv" resolve="ctx" />
+                      </node>
+                      <node concept="37vLTw" id="4AeTWAG1VP1" role="37wK5m">
+                        <ref role="3cqZAo" node="4gj0JzpkZx" resolve="tpe" />
+                      </node>
+                      <node concept="37vLTw" id="4AeTWAG26S$" role="37wK5m">
+                        <ref role="3cqZAo" node="4gj0JzpkZx" resolve="tpe" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4AeTWAG1Kii" role="2GsD0m">
+            <node concept="2O5UvJ" id="4AeTWAG1Kij" role="2Oq$k0">
+              <ref role="2O5UnU" to="19k1:4AeTWAG1cdS" resolve="TypesTranslatorExtension" />
+            </node>
+            <node concept="SfwO_" id="4AeTWAG1Kik" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4AeTWAG1JR6" role="3cqZAp" />
         <node concept="YS8fn" id="5uyAK6LiEZq" role="3cqZAp">
           <node concept="2ShNRf" id="5uyAK6LiF0k" role="YScLw">
             <node concept="1pGfFk" id="5uyAK6LiFmj" role="2ShVmc">
@@ -3493,6 +3541,36 @@
             </node>
           </node>
         </node>
+        <node concept="2Gpval" id="4AeTWAG1kp0" role="3cqZAp">
+          <node concept="2GrKxI" id="4AeTWAG1kp1" role="2Gsz3X">
+            <property role="TrG5h" value="tte" />
+          </node>
+          <node concept="3clFbS" id="4AeTWAG1kp2" role="2LFqv$">
+            <node concept="3clFbF" id="4AeTWAG1kp3" role="3cqZAp">
+              <node concept="2OqwBi" id="4AeTWAG1kp4" role="3clFbG">
+                <node concept="37vLTw" id="4AeTWAG1svV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="SU$cf9Wr0h" resolve="SUPPORTED_CONCEPTS" />
+                </node>
+                <node concept="X8dFx" id="4AeTWAG1kp5" role="2OqNvi">
+                  <node concept="2OqwBi" id="4AeTWAG1kp6" role="25WWJ7">
+                    <node concept="2GrUjf" id="4AeTWAG1kp7" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="4AeTWAG1kp1" resolve="tte" />
+                    </node>
+                    <node concept="liA8E" id="4AeTWAG1kp8" role="2OqNvi">
+                      <ref role="37wK5l" node="4AeTWAG1cg5" resolve="supportedConcepts" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4AeTWAG1kp9" role="2GsD0m">
+            <node concept="2O5UvJ" id="4AeTWAG1kpa" role="2Oq$k0">
+              <ref role="2O5UnU" to="19k1:4AeTWAG1cdS" resolve="TypesTranslatorExtension" />
+            </node>
+            <node concept="SfwO_" id="4AeTWAG1kpb" role="2OqNvi" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="SU$cf9Wr0O" role="jymVt" />
@@ -3623,6 +3701,75 @@
     </node>
     <node concept="2tJIrI" id="SU$cf9Wr2f" role="jymVt" />
     <node concept="3Tm1VV" id="SU$cf9Wr2g" role="1B3o_S" />
+  </node>
+  <node concept="3HP615" id="4AeTWAG1cfU">
+    <property role="TrG5h" value="ICustomTypesTranslator" />
+    <node concept="3Tm1VV" id="4AeTWAG1cfV" role="1B3o_S" />
+    <node concept="2tJIrI" id="4AeTWAG1cfW" role="jymVt" />
+    <node concept="3clFb_" id="4AeTWAG1cfX" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="canTranslate" />
+      <node concept="3clFbS" id="4AeTWAG1cfY" role="3clF47" />
+      <node concept="3Tm1VV" id="4AeTWAG1cfZ" role="1B3o_S" />
+      <node concept="10P_77" id="4AeTWAG1cg0" role="3clF45" />
+      <node concept="37vLTG" id="4AeTWAG1cg1" role="3clF46">
+        <property role="TrG5h" value="tpe" />
+        <node concept="3Tqbb2" id="4AeTWAG1cg2" role="1tU5fm">
+          <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="4AeTWAG1cg3" role="lGtFl">
+        <property role="NWlVz" value="Returns true if this type can be translated." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4AeTWAG1cg4" role="jymVt" />
+    <node concept="3clFb_" id="4AeTWAG1cg5" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="supportedConcepts" />
+      <node concept="3clFbS" id="4AeTWAG1cg6" role="3clF47" />
+      <node concept="3Tm1VV" id="4AeTWAG1cg7" role="1B3o_S" />
+      <node concept="2hMVRd" id="4AeTWAG1cg8" role="3clF45">
+        <node concept="3bZ5Sz" id="4AeTWAG1cg9" role="2hN53Y" />
+      </node>
+      <node concept="NWlO9" id="4AeTWAG1cga" role="lGtFl">
+        <property role="NWlVz" value="Returns a list with concepts which are supported by this translator." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4AeTWAG1cgb" role="jymVt" />
+    <node concept="3clFb_" id="4AeTWAG1cgc" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="translateType" />
+      <node concept="3clFbS" id="4AeTWAG1cgd" role="3clF47" />
+      <node concept="3Tm1VV" id="4AeTWAG1cge" role="1B3o_S" />
+      <node concept="3uibUv" id="4AeTWAG1es5" role="3clF45">
+        <ref role="3uigEE" to="f7eu:~Sort" resolve="Sort" />
+      </node>
+      <node concept="37vLTG" id="4AeTWAG1cgg" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="4AeTWAG1cgh" role="1tU5fm">
+          <ref role="3uigEE" to="f7eu:~Context" resolve="Context" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4AeTWAG1cgi" role="3clF46">
+        <property role="TrG5h" value="tpe" />
+        <node concept="3Tqbb2" id="4AeTWAG1cgj" role="1tU5fm">
+          <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4AeTWAG1cgk" role="3clF46">
+        <property role="TrG5h" value="nodeFromOriginalModel" />
+        <node concept="3Tqbb2" id="4AeTWAG1cgl" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="4AeTWAG1cgm" role="lGtFl">
+        <property role="NWlVz" value="Translates the mbeddr type to a Z3 sort" />
+      </node>
+    </node>
+    <node concept="NWlO9" id="4AeTWAG1cgn" role="lGtFl">
+      <property role="NWlVz" value="Hook for extending the mbeddr-DSLs - to - Z3 types translator for special types from extending DSLs." />
+    </node>
   </node>
 </model>
 
