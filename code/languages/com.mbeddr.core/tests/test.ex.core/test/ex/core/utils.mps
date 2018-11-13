@@ -223,13 +223,10 @@
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
       </concept>
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
       <concept id="8499024683961222378" name="com.mbeddr.core.unittest.structure.TestCollectionRef" flags="ng" index="3HeTO1">
         <reference id="8499024683961222381" name="collection" index="3HeTO6" />
       </concept>
@@ -1011,9 +1008,7 @@
     <node concept="11c7lL" id="2RBu9oWUV2X" role="2Q9xDr">
       <node concept="11c7jq" id="5u_Ubm7PiI" role="11c7gK" />
     </node>
-    <node concept="12mU2y" id="3mKW6ZYeYtl" role="2Q9xDr">
-      <node concept="3GpDuo" id="3mKW6ZYeYtm" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="3mKW6ZYeYtl" role="2Q9xDr" />
   </node>
   <node concept="N3F5e" id="4itX8XUV$dM">
     <property role="TrG5h" value="DataLoggerTest" />

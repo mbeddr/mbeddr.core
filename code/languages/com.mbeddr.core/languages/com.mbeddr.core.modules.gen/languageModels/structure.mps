@@ -147,13 +147,18 @@
     <property role="EcuMT" value="3830958861296806570" />
     <ref role="1TJDcQ" node="34x64NyTNWu" resolve="GenModuleImport" />
     <node concept="1TJgyi" id="3kEjc_WIMEF" role="1TKVEl">
-      <property role="TrG5h" value="haeaderFileName" />
+      <property role="TrG5h" value="headerFileName" />
       <property role="IQ2nx" value="3830958861296806571" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="3LB9aGk_ryI" role="1TKVEl">
       <property role="IQ2nx" value="4352487882080237742" />
       <property role="TrG5h" value="preprocessorCondition" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1m$ejqCi3Ja" role="1TKVEl">
+      <property role="TrG5h" value="alternativeHeaderFileName" />
+      <property role="IQ2nx" value="1559434277891357642" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -338,6 +343,11 @@
     <node concept="1TJgyi" id="3LB9aGk$WfX" role="1TKVEl">
       <property role="IQ2nx" value="4352487882080109565" />
       <property role="TrG5h" value="win32ExtraHeader" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1m$ejqChbly" role="1TKVEl">
+      <property role="IQ2nx" value="1559434277891126626" />
+      <property role="TrG5h" value="othersExtraHeader" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="3LB9aGk$Wg5" role="1TKVEi">

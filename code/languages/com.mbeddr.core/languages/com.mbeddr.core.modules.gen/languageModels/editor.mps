@@ -273,7 +273,7 @@
         <property role="3F0ifm" value="std header:" />
       </node>
       <node concept="3F0A7n" id="3kEjc_WIMEP" role="3EZMnx">
-        <ref role="1NtTu8" to="d0vh:3kEjc_WIMEF" resolve="haeaderFileName" />
+        <ref role="1NtTu8" to="d0vh:3kEjc_WIMEF" resolve="headerFileName" />
       </node>
       <node concept="3F0ifn" id="3LB9aGl8ZhA" role="3EZMnx">
         <property role="3F0ifm" value="#if" />
@@ -282,6 +282,13 @@
         <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="always" />
         <ref role="1NtTu8" to="d0vh:3LB9aGk_ryI" resolve="preprocessorCondition" />
+      </node>
+      <node concept="3F0ifn" id="1m$ejqCkjzY" role="3EZMnx">
+        <property role="3F0ifm" value="#else" />
+      </node>
+      <node concept="3F0A7n" id="1m$ejqCkj$e" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="d0vh:1m$ejqCi3Ja" resolve="alternativeHeaderFileName" />
       </node>
       <node concept="3F0ifn" id="3LB9aGlbi8b" role="3EZMnx">
         <property role="3F0ifm" value="#endif" />
@@ -464,6 +471,16 @@
         <node concept="3F0A7n" id="3LB9aGk$Who" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="d0vh:3LB9aGk$WfX" resolve="win32ExtraHeader" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1m$ejqChb_6" role="3EZMnx">
+        <node concept="l2Vlx" id="1m$ejqChb_7" role="2iSdaV" />
+        <node concept="3F0ifn" id="1m$ejqChb_8" role="3EZMnx">
+          <property role="3F0ifm" value="extra header for other platforms: " />
+        </node>
+        <node concept="3F0A7n" id="1m$ejqChb_9" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="d0vh:1m$ejqChbly" resolve="othersExtraHeader" />
         </node>
       </node>
     </node>
