@@ -21,7 +21,8 @@ buildscript {
     }
 
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.22.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1' +
+                '.0.22.+'
     }
 }
 
@@ -30,7 +31,7 @@ subprojects {
     apply plugin: "base"
     apply plugin: "maven-publish"
     ext.mbeddrMajor = "1"
-    ext.mbeddrMinor = "1"
+    ext.mbeddrMinor = "2"
 
     if (project.hasProperty("mbeddrVersion")) {
         ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')
