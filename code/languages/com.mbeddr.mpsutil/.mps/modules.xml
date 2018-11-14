@@ -117,6 +117,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.userstyles.sandboxlang/com.mbeddr.mpsutil.userstyles.sandboxlang.mpl" folder="staging.userstyles" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.userstyles/com.mbeddr.mpsutil.userstyles.mpl" folder="staging.userstyles" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.varscope/com.mbeddr.mpsutil.varscope.mpl" folder="stable.varscope" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.waitfor/com.mbeddr.mpsutil.waitfor.mpl" folder="asynccell.waitfor" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xml.fix/com.mbeddr.mpsutil.xml.fix.mpl" folder="stable.xml.fix" />
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="staging.actionsfilter" />
@@ -217,6 +218,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.opencsv/com.opencsv.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.xml/org.xml.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.asynccell/test.com.mbeddr.mpsutil.asynccell.msd" folder="asynccell" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.waitfor/test.com.mbeddr.mpsutil.waitfor.msd" folder="asynccell.waitfor" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.compare.pattern.test/com.mbeddr.mpsutil.compare.pattern.test.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="staging.javainterpreter" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare/test.com.mbeddr.mpsutil.compare.msd" folder="staging.comparator" />
