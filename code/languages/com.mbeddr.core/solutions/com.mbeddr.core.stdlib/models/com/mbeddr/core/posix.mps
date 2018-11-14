@@ -6,7 +6,7 @@
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
   </languages>
@@ -1032,7 +1032,7 @@
     </node>
     <node concept="3GEVxB" id="41BTkV3Wi2s" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" to="ml7g:41BTkV3Wh_r" resolve="types" />
+      <ref role="3GEb4d" to="ml7g:41BTkV3Wh_r" resolve="sys_types" />
     </node>
     <node concept="3GEVxB" id="zQa$6iKAuX" role="2OODSX">
       <ref role="3GEb4d" node="5ZBezCNei2g" resolve="sched" />
@@ -4089,7 +4089,7 @@
       <ref role="3GEb4d" node="5ZBezCNdZIN" resolve="pthreadtypes" />
     </node>
     <node concept="3GEVxB" id="4VPUKkrrgmj" role="2OODSX">
-      <ref role="3GEb4d" to="ml7g:41BTkV3Wh_r" resolve="types" />
+      <ref role="3GEb4d" to="ml7g:41BTkV3Wh_r" resolve="sys_types" />
     </node>
     <node concept="1S7NMz" id="4VPUKkrr8B6" role="N3F5h">
       <property role="TrG5h" value="sys_signame" />
