@@ -218,10 +218,10 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.xmodel.actions/com.mbeddr.mpsutil.xmodel.actions.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.opencsv/com.opencsv.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.xml/org.xml.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.asynccell/test.com.mbeddr.mpsutil.asynccell.msd" folder="asynccell" />
-      <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.blutil.test.waitfor/test.com.mbeddr.mpsutil.blutil.test.waitfor.msd" folder="waitfor" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.compare.pattern.test/com.mbeddr.mpsutil.compare.pattern.test.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="staging.javainterpreter" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.asynccell/test.com.mbeddr.mpsutil.asynccell.msd" folder="asynccell" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.blutil.test.waitfor/test.com.mbeddr.mpsutil.blutil.test.waitfor.msd" folder="waitfor" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare/test.com.mbeddr.mpsutil.compare.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecore.modelImportExport/test.com.mbeddr.mpsutil.ecore.modelImportExport.msd" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoreimporter.runtime/test.com.mbeddr.mpsutil.ecore.metaModelImport.msd" folder="rest.ecore.tests" />
