@@ -204,6 +204,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
@@ -220,6 +221,7 @@
         <child id="2546654756694997556" name="reference" index="92FcQ" />
         <child id="3106559687488913694" name="line" index="2XjZqd" />
       </concept>
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
@@ -227,8 +229,15 @@
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
+      <concept id="2217234381367188008" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocReference" flags="ng" index="VUqz4" />
       <concept id="2217234381367530212" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocReference" flags="ng" index="VXe08">
         <reference id="2217234381367530213" name="classifier" index="VXe09" />
+      </concept>
+      <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
+        <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
+      </concept>
+      <concept id="5562345046718956738" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseVariableDocReference" flags="ng" index="YTMYr">
+        <reference id="5562345046718956740" name="declaration" index="YTMYt" />
       </concept>
       <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
         <child id="6962838954693749192" name="tag" index="qph3F" />
@@ -297,10 +306,18 @@
   <node concept="312cEu" id="3aYIkMXENo1">
     <property role="3GE5qa" value="cell" />
     <property role="TrG5h" value="AsyncCellManager" />
+    <node concept="312cEg" id="4IjegxhFeGo" role="jymVt">
+      <property role="TrG5h" value="SPINNING_INTERVAL" />
+      <node concept="3Tmbuc" id="4IjegxhFeGl" role="1B3o_S" />
+      <node concept="10Oyi0" id="4IjegxhFeGm" role="1tU5fm" />
+      <node concept="3cmrfG" id="4IjegxhFeGn" role="33vP2m">
+        <property role="3cmrfH" value="200" />
+      </node>
+    </node>
     <node concept="312cEg" id="3aYIkMXFtlp" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="_asyncCells" />
+      <property role="TrG5h" value="_pendingCells" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="3aYIkMXFsNV" role="1B3o_S" />
       <node concept="2hMVRd" id="3aYIkMXFtg1" role="1tU5fm">
@@ -312,6 +329,13 @@
         <node concept="32HrFt" id="3aYIkMXFtzu" role="2ShVmc">
           <node concept="3uibUv" id="3aYIkMXFtKQ" role="HW$YZ">
             <ref role="3uigEE" node="3aYIkMXF5Sf" resolve="EditorCell_Async" />
+          </node>
+        </node>
+      </node>
+      <node concept="z59LJ" id="4IjegxhDEtx" role="lGtFl">
+        <node concept="TZ5HA" id="4IjegxhDEty" role="TZ5H$">
+          <node concept="1dT_AC" id="4IjegxhDEtz" role="1dT_Ay">
+            <property role="1dT_AB" value="Cells for which the calculation has not finished yet" />
           </node>
         </node>
       </node>
@@ -329,6 +353,29 @@
           <node concept="Xjq3P" id="2u$73V9ubZa" role="37wK5m" />
         </node>
       </node>
+      <node concept="z59LJ" id="4IjegxhDF9H" role="lGtFl">
+        <node concept="TZ5HA" id="4IjegxhDF9I" role="TZ5H$">
+          <node concept="1dT_AC" id="4IjegxhDF9J" role="1dT_Ay">
+            <property role="1dT_AB" value="Rechecks regularly if the cell value did arrive and schedules updating its value to EDT and removes that cell from " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4IjegxhDH84" role="TZ5H$">
+          <node concept="1dT_AC" id="4IjegxhDH85" role="1dT_Ay">
+            <property role="1dT_AB" value="my " />
+          </node>
+          <node concept="1dT_AA" id="4IjegxhDICl" role="1dT_Ay">
+            <node concept="92FcH" id="4IjegxhDICr" role="qph3F">
+              <node concept="TZ5HA" id="4IjegxhDICt" role="2XjZqd" />
+              <node concept="VUqz4" id="4IjegxhDLVp" role="92FcQ">
+                <ref role="YTMYt" node="3aYIkMXFtlp" resolve="_pendingCells" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dT_AC" id="4IjegxhDICk" role="1dT_Ay">
+            <property role="1dT_AB" value=" list." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="312cEg" id="3anL894KOrF" role="jymVt">
       <property role="TrG5h" value="_spinningTimer" />
@@ -340,8 +387,11 @@
       <node concept="2ShNRf" id="3anL894KOsh" role="33vP2m">
         <node concept="1pGfFk" id="3anL894KOsi" role="2ShVmc">
           <ref role="37wK5l" to="dxuu:~Timer.&lt;init&gt;(int,java.awt.event.ActionListener)" resolve="Timer" />
-          <node concept="3cmrfG" id="3anL894KOsj" role="37wK5m">
-            <property role="3cmrfH" value="200" />
+          <node concept="2OqwBi" id="4IjegxhFeGv" role="37wK5m">
+            <node concept="Xjq3P" id="4IjegxhFeGw" role="2Oq$k0" />
+            <node concept="2OwXpG" id="4IjegxhFeGx" role="2OqNvi">
+              <ref role="2Oxat5" node="4IjegxhFeGo" resolve="SPINNING_INTERVAL" />
+            </node>
           </node>
           <node concept="1bVj0M" id="3anL894NT3e" role="37wK5m">
             <node concept="3clFbS" id="3anL894NT3g" role="1bW5cS">
@@ -388,6 +438,24 @@
                 <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="z59LJ" id="4IjegxhDMoh" role="lGtFl">
+        <node concept="TZ5HA" id="4IjegxhDMoi" role="TZ5H$">
+          <node concept="1dT_AC" id="4IjegxhDMoj" role="1dT_Ay">
+            <property role="1dT_AB" value="Updates all " />
+          </node>
+          <node concept="1dT_AA" id="4IjegxhDMLa" role="1dT_Ay">
+            <node concept="92FcH" id="4IjegxhDMLg" role="qph3F">
+              <node concept="TZ5HA" id="4IjegxhDMLi" role="2XjZqd" />
+              <node concept="VUqz4" id="4IjegxhDTn3" role="92FcQ">
+                <ref role="YTMYt" node="3aYIkMXFtlp" resolve="_pendingCells" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dT_AC" id="4IjegxhDML9" role="1dT_Ay">
+            <property role="1dT_AB" value=" to show the next rotation state of the spinner." />
           </node>
         </node>
       </node>
@@ -499,7 +567,7 @@
             <node concept="2OqwBi" id="4IjegxhCb5A" role="2Oq$k0">
               <node concept="Xjq3P" id="4IjegxhCaVz" role="2Oq$k0" />
               <node concept="2OwXpG" id="4IjegxhCbeN" role="2OqNvi">
-                <ref role="2Oxat5" node="3aYIkMXFtlp" resolve="_asyncCells" />
+                <ref role="2Oxat5" node="3aYIkMXFtlp" resolve="_pendingCells" />
               </node>
             </node>
             <node concept="3GX2aA" id="4IjegxhCcNW" role="2OqNvi" />
@@ -534,7 +602,7 @@
             <node concept="3clFbF" id="3aYIkMXFu9R" role="3cqZAp">
               <node concept="2OqwBi" id="3aYIkMXFuTf" role="3clFbG">
                 <node concept="37vLTw" id="3aYIkMXFu9Q" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3aYIkMXFtlp" resolve="_asyncCells" />
+                  <ref role="3cqZAo" node="3aYIkMXFtlp" resolve="_pendingCells" />
                 </node>
                 <node concept="TSZUe" id="3aYIkMXFx_S" role="2OqNvi">
                   <node concept="37vLTw" id="3aYIkMXFy93" role="25WWJ7">
@@ -588,7 +656,7 @@
             <node concept="3clFbF" id="5HPe_JwZHc3" role="3cqZAp">
               <node concept="2OqwBi" id="5HPe_JwZHMl" role="3clFbG">
                 <node concept="37vLTw" id="5HPe_JwZHc1" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3aYIkMXFtlp" resolve="_asyncCells" />
+                  <ref role="3cqZAo" node="3aYIkMXFtlp" resolve="_pendingCells" />
                 </node>
                 <node concept="3dhRuq" id="5HPe_JwZJHj" role="2OqNvi">
                   <node concept="37vLTw" id="5HPe_JwZLZe" role="25WWJ7">
@@ -607,7 +675,7 @@
               </node>
               <node concept="2OqwBi" id="4IjegxhAIOC" role="3clFbw">
                 <node concept="37vLTw" id="4IjegxhAI8u" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3aYIkMXFtlp" resolve="_asyncCells" />
+                  <ref role="3cqZAo" node="3aYIkMXFtlp" resolve="_pendingCells" />
                 </node>
                 <node concept="1v1jN8" id="4IjegxhAKx0" role="2OqNvi" />
               </node>
@@ -691,7 +759,7 @@
                 </node>
                 <node concept="X8dFx" id="5HPe_JwZq5q" role="2OqNvi">
                   <node concept="37vLTw" id="5HPe_JwZsI4" role="25WWJ7">
-                    <ref role="3cqZAo" node="3aYIkMXFtlp" resolve="_asyncCells" />
+                    <ref role="3cqZAo" node="3aYIkMXFtlp" resolve="_pendingCells" />
                   </node>
                 </node>
               </node>
@@ -802,7 +870,40 @@
     <node concept="3UR2Jj" id="5mXHm8qZsDT" role="lGtFl">
       <node concept="TZ5HA" id="5mXHm8qZsDU" role="TZ5H$">
         <node concept="1dT_AC" id="5mXHm8qZsDV" role="1dT_Ay">
-          <property role="1dT_AB" value="I keep track of the async cells that don't have values yet, and own the threads needed." />
+          <property role="1dT_AB" value="I keep track of the async cells that don't have values yet " />
+        </node>
+        <node concept="1dT_AA" id="4IjegxhDTNV" role="1dT_Ay">
+          <node concept="92FcH" id="4IjegxhDTO1" role="qph3F">
+            <node concept="TZ5HA" id="4IjegxhDTO3" role="2XjZqd" />
+            <node concept="VUqz4" id="4IjegxhDX6Z" role="92FcQ">
+              <ref role="YTMYt" node="3aYIkMXFtlp" resolve="_pendingCells" />
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="4IjegxhDTNU" role="1dT_Ay">
+          <property role="1dT_AB" value=", and own the threads that work on such (" />
+        </node>
+        <node concept="1dT_AA" id="4IjegxhDXzR" role="1dT_Ay">
+          <node concept="92FcH" id="4IjegxhDX$2" role="qph3F">
+            <node concept="TZ5HA" id="4IjegxhDX$4" role="2XjZqd" />
+            <node concept="VUqz4" id="4IjegxhE49P" role="92FcQ">
+              <ref role="YTMYt" node="2u$73V9ubZb" resolve="_updater" />
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="4IjegxhDXzQ" role="1dT_Ay">
+          <property role="1dT_AB" value=" and " />
+        </node>
+        <node concept="1dT_AA" id="4IjegxhE4AI" role="1dT_Ay">
+          <node concept="92FcH" id="4IjegxhE4AY" role="qph3F">
+            <node concept="TZ5HA" id="4IjegxhE4B0" role="2XjZqd" />
+            <node concept="VUqz4" id="4IjegxhE7TW" role="92FcQ">
+              <ref role="YTMYt" node="3anL894KOrF" resolve="_spinningTimer" />
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="4IjegxhE4AH" role="1dT_Ay">
+          <property role="1dT_AB" value=")." />
         </node>
       </node>
     </node>
@@ -1375,11 +1476,6 @@
     <node concept="3uibUv" id="3aYIkMXF5Xm" role="1zkMxy">
       <ref role="3uigEE" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
     </node>
-    <node concept="3UR2Jj" id="5mXHm8r0kwA" role="lGtFl">
-      <node concept="TZ5HA" id="5mXHm8r0kwB" role="TZ5H$">
-        <node concept="1dT_AC" id="5mXHm8r0kwC" role="1dT_Ay" />
-      </node>
-    </node>
   </node>
   <node concept="2uRRBy" id="5HPe_JwWWwA">
     <property role="TrG5h" value="AsyncEditorCellPlugin" />
@@ -1494,10 +1590,47 @@
     </node>
     <node concept="2tJIrI" id="5HPe_JxcprR" role="jymVt" />
     <node concept="3Tm1VV" id="5HPe_Jxcprj" role="1B3o_S" />
+    <node concept="3UR2Jj" id="4IjegxhERPd" role="lGtFl">
+      <node concept="TZ5HA" id="4IjegxhERPe" role="TZ5H$">
+        <node concept="1dT_AC" id="4IjegxhERPf" role="1dT_Ay">
+          <property role="1dT_AB" value="An instance of me represents the value of a async cell for which the calculation is complete." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="4IjegxhERS0" role="TZ5H$">
+        <node concept="1dT_AC" id="4IjegxhERS1" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="4IjegxhERS6" role="TZ5H$">
+        <node concept="1dT_AC" id="4IjegxhERS7" role="1dT_Ay">
+          <property role="1dT_AB" value="If the computation is not complete yet, " />
+        </node>
+        <node concept="1dT_AA" id="4IjegxhERSf" role="1dT_Ay">
+          <node concept="92FcH" id="4IjegxhERSl" role="qph3F">
+            <node concept="TZ5HA" id="4IjegxhERSn" role="2XjZqd" />
+            <node concept="VXe0Z" id="4IjegxhEVbk" role="92FcQ">
+              <ref role="VXe0S" node="3aYIkMXFmWJ" resolve="getAsyncValueCallable" />
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="4IjegxhERSe" role="1dT_Ay">
+          <property role="1dT_AB" value=" should return null instead of this." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5HPe_JwXG0b">
     <property role="3GE5qa" value="cell" />
     <property role="TrG5h" value="AsyncCellUpdater" />
+    <node concept="312cEg" id="4IjegxhEHS_" role="jymVt">
+      <property role="TrG5h" value="CHECK_INTERVAL" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tmbuc" id="4IjegxhEHSy" role="1B3o_S" />
+      <node concept="10Oyi0" id="4IjegxhEHSz" role="1tU5fm" />
+      <node concept="3cmrfG" id="4IjegxhEHS$" role="33vP2m">
+        <property role="3cmrfH" value="500" />
+      </node>
+    </node>
     <node concept="312cEg" id="3anL894MLDP" role="jymVt">
       <property role="TrG5h" value="_currentUpdate" />
       <node concept="3Tm6S6" id="3anL894MLDM" role="1B3o_S" />
@@ -1528,8 +1661,11 @@
       <node concept="2ShNRf" id="3anL894N8KT" role="33vP2m">
         <node concept="1pGfFk" id="3anL894N8KU" role="2ShVmc">
           <ref role="37wK5l" to="dxuu:~Timer.&lt;init&gt;(int,java.awt.event.ActionListener)" resolve="Timer" />
-          <node concept="3cmrfG" id="3anL894N8KV" role="37wK5m">
-            <property role="3cmrfH" value="500" />
+          <node concept="2OqwBi" id="4IjegxhEHSG" role="37wK5m">
+            <node concept="Xjq3P" id="4IjegxhEHSH" role="2Oq$k0" />
+            <node concept="2OwXpG" id="4IjegxhEHSI" role="2OqNvi">
+              <ref role="2Oxat5" node="4IjegxhEHS_" resolve="CHECK_INTERVAL" />
+            </node>
           </node>
           <node concept="1bVj0M" id="3anL894Njeo" role="37wK5m">
             <node concept="3clFbS" id="3anL894Njeq" role="1bW5cS">
@@ -1573,6 +1709,24 @@
       </node>
       <node concept="3Tm1VV" id="3anL894M_hp" role="1B3o_S" />
       <node concept="3cqZAl" id="3anL894M_$i" role="3clF45" />
+      <node concept="P$JXv" id="4IjegxhEGwD" role="lGtFl">
+        <node concept="TZ5HA" id="4IjegxhEGwE" role="TZ5H$">
+          <node concept="1dT_AC" id="4IjegxhEGwF" role="1dT_Ay">
+            <property role="1dT_AB" value="Start checking if the cells' computation finished every " />
+          </node>
+          <node concept="1dT_AA" id="4IjegxhEJC9" role="1dT_Ay">
+            <node concept="92FcH" id="4IjegxhEJCn" role="qph3F">
+              <node concept="TZ5HA" id="4IjegxhEJCp" role="2XjZqd" />
+              <node concept="VUqz4" id="4IjegxhEMVu" role="92FcQ">
+                <ref role="YTMYt" node="4IjegxhEHS_" resolve="CHECK_INTERVAL" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dT_AC" id="4IjegxhEJC8" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="4IjegxhAUaN" role="jymVt" />
     <node concept="3clFb_" id="4IjegxhAVGc" role="jymVt">
@@ -1630,6 +1784,24 @@
       </node>
       <node concept="3Tm1VV" id="3anL894MBll" role="1B3o_S" />
       <node concept="3cqZAl" id="3anL894MBDr" role="3clF45" />
+      <node concept="P$JXv" id="4IjegxhENok" role="lGtFl">
+        <node concept="TZ5HA" id="4IjegxhENol" role="TZ5H$">
+          <node concept="1dT_AC" id="4IjegxhENom" role="1dT_Ay">
+            <property role="1dT_AB" value="Stop checking every " />
+          </node>
+          <node concept="1dT_AA" id="4IjegxhENSz" role="1dT_Ay">
+            <node concept="92FcH" id="4IjegxhENSL" role="qph3F">
+              <node concept="TZ5HA" id="4IjegxhENSN" role="2XjZqd" />
+              <node concept="VUqz4" id="4IjegxhERbS" role="92FcQ">
+                <ref role="YTMYt" node="4IjegxhEHS_" resolve="CHECK_INTERVAL" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dT_AC" id="4IjegxhENSy" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3anL894Oq$w" role="jymVt" />
     <node concept="3clFb_" id="3anL894O8gq" role="jymVt">
@@ -1946,12 +2118,22 @@
                   </node>
                   <node concept="3clFbJ" id="3anL894Mo0N" role="3cqZAp">
                     <node concept="3clFbS" id="3anL894Mo0O" role="3clFbx">
+                      <node concept="3SKdUt" id="4IjegxhEDpK" role="3cqZAp">
+                        <node concept="3SKdUq" id="4IjegxhEDpM" role="3SKWNk">
+                          <property role="3SKdUp" value="the computation finished" />
+                        </node>
+                      </node>
                       <node concept="3clFbF" id="3anL894T6b5" role="3cqZAp">
                         <node concept="2YIFZM" id="3anL894T6jq" role="3clFbG">
                           <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
                           <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
                           <node concept="1bVj0M" id="3anL894O0nX" role="37wK5m">
                             <node concept="3clFbS" id="3anL894O0nY" role="1bW5cS">
+                              <node concept="3SKdUt" id="4IjegxhEEck" role="3cqZAp">
+                                <node concept="3SKdUq" id="4IjegxhEEcm" role="3SKWNk">
+                                  <property role="3SKdUp" value="update the cell" />
+                                </node>
+                              </node>
                               <node concept="3clFbF" id="3anL894O0nZ" role="3cqZAp">
                                 <node concept="2OqwBi" id="3anL894O0o0" role="3clFbG">
                                   <node concept="2GrUjf" id="3anL894O0o1" role="2Oq$k0">
@@ -1963,6 +2145,11 @@
                                       <ref role="3cqZAo" node="3anL894Mo0i" resolve="result" />
                                     </node>
                                   </node>
+                                </node>
+                              </node>
+                              <node concept="3SKdUt" id="4IjegxhEF1v" role="3cqZAp">
+                                <node concept="3SKdUq" id="4IjegxhEF1x" role="3SKWNk">
+                                  <property role="3SKdUp" value="and forget about it" />
                                 </node>
                               </node>
                               <node concept="3clFbF" id="3anL894O0o4" role="3cqZAp">
@@ -2015,7 +2202,24 @@
     <node concept="3UR2Jj" id="5mXHm8qZb4c" role="lGtFl">
       <node concept="TZ5HA" id="5mXHm8qZb4d" role="TZ5H$">
         <node concept="1dT_AC" id="5mXHm8qZb4e" role="1dT_Ay">
-          <property role="1dT_AB" value="I regularly reevaluate the callable that was provided to this cell." />
+          <property role="1dT_AB" value="I regularly reevaluate the callable" />
+        </node>
+        <node concept="1dT_AC" id="4IjegxhE94S" role="1dT_Ay">
+          <property role="1dT_AB" value=" that was provided to this cell (" />
+        </node>
+        <node concept="1dT_AC" id="4IjegxhEvwn" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+        <node concept="1dT_AA" id="4IjegxhEvwz" role="1dT_Ay">
+          <node concept="92FcH" id="4IjegxhEvwF" role="qph3F">
+            <node concept="TZ5HA" id="4IjegxhEvwH" role="2XjZqd" />
+            <node concept="VXe0Z" id="4IjegxhEyND" role="92FcQ">
+              <ref role="VXe0S" node="3aYIkMXFmWJ" resolve="getAsyncValueCallable" />
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="4IjegxhEvwy" role="1dT_Ay">
+          <property role="1dT_AB" value="." />
         </node>
       </node>
       <node concept="TZ5HA" id="5mXHm8qZbpz" role="TZ5H$">

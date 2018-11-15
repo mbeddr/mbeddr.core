@@ -10,35 +10,45 @@ This language allows to show a progress indicator in place of not-yet-calculated
 
 # Usage
 
-1. Make your calculation asynchronous ([see jetbrains platform docs](https://www.jetbrains.org/intellij/sdk/docs/basics/architectural_overview/general_threading_rules.html#background-processes-and-processcanceledexception))
-2. Implement a callable that returns null when being called while the value is not ready yet. When the calculation is done, it should return a value and will no longer be called.
-3. Replace your `*Read Model Access*` cell with a custom cell that has a query like that:
+1. Make your calculation asynchronous ([e.g. using ApplicationManager.getApplication().executeOnPooledThread({=> ...})](https://www.jetbrains.org/intellij/sdk/docs/basics/architectural_overview/general_threading_rules.html#background-processes-and-processcanceledexception))
+2. Replace your `*Read Model Access*` cell with a custom cell that has a query like below
+3. Implement the query to return null when being called while the value is not ready yet. When the calculation is done, it should return an instance of `AsyncCellValue` and will no longer be called.
 
 ```
+Style:
+<no base style> {
+    background-color: lightBlue
+}
+
+Custom cell:
+cell provider:
 (editorContext, node)->AbstractCellProvider { 
   return new AsyncCellProvider(node, { => 
     // get the current value (or null if not ready yet)
     node<DamagePotential> dp = node.getDP(); 
 
-    // create style
-    Style s = new StyleImpl(); 
-    s.set(StyleAttributes.BACKGROUND_COLOR, dp.getColor()); 
+    // reuse the style of this custom cell
+    Style style = editorContext.?getContextCell().?getStyle()
 
     // return current value (or null if not ready yet) and the style
-    return new AsyncCellValue(DisplayLabelHelper.getDamagePotentialDisplayString(dp), s); 
+    return new AsyncCellValue(DisplayLabelHelper.getDamagePotentialDisplayString(dp), style); 
   }); 
 }
 ```
 
+As example, see `com.mbeddr.mpsutil.asynccell.sandbox`.
+
 # State
+It contains automated tests and a sandbox for manual tests.
 So far, only used in Security Analyst.
 
 # Up next
 
 - add proper editor cell to replace custom cell
 - show progress indicator
+- find a plan how to make the cell update automatically when the model changes
 
-
-# Author
+# Contributors
 
 - Till Fischer
+- Bastian Kruck
