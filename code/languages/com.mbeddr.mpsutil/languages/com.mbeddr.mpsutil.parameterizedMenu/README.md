@@ -68,6 +68,12 @@ Doing so will have the following effects:
 - In the context actions tool, the menu hierarchy will be exploded into separate root menus, named "Artist by genre/HipHop", "Artist by genre/Classic", and "Artist by genre/Jazz"
 - In the completion menu, the menu hierarchy will be flatteend, so that only the leaf actions remain, and menu names have no effect here
 
+You can find a showcase menu description in `com.mbeddr.mpsutil.parameterizedMenu.sandbox` and see it in action in `com.mbeddr.mpsutil.parameterizedMenu.sandbox.sandbox`.
+
 # Contributing
 
 The language is tested in `test.com.mbeddr.mpsutil.parameterizedMenu`.
+
+
+# Contributors
+- Bastian Kruck
