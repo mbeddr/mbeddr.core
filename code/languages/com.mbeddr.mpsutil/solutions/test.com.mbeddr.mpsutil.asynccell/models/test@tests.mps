@@ -10,6 +10,8 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.waitfor" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="36a565f1-3fa0-42d6-baac-f87e209c9789" name="com.mbeddr.ext.components.mock" version="-1" />
   </languages>
   <imports>
     <import index="re1d" ref="r:515ec77b-87d0-4871-9d0a-f5cfa3bbab14(com.mbeddr.mpsutil.asynccell.sandbox.behavior)" />
@@ -21,6 +23,9 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
+    <import index="n4y8" ref="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e/java:org.mockito(test.debugger.core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -56,6 +61,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -64,7 +72,12 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
+        <property id="8606350594693632173" name="isTransient" index="eg7rD" />
+        <property id="1240249534625" name="isVolatile" index="34CwA1" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -73,6 +86,10 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -94,9 +111,14 @@
       </concept>
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -105,11 +127,18 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+        <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
+      <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
       </concept>
     </language>
     <language id="4d43042b-3d26-46a9-888a-1ec4e4a2c81d" name="com.mbeddr.mpsutil.asynccell.sandbox">
@@ -131,6 +160,16 @@
       <concept id="7080278351417106679" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertIsNotNull" flags="nn" index="2Hmddi">
         <child id="7080278351417106681" name="expression" index="2Hmdds" />
       </concept>
+      <concept id="1171931690126" name="jetbrains.mps.baseLanguage.unitTest.structure.TestMethod" flags="ig" index="3s$Bmu">
+        <property id="1171931690128" name="methodName" index="3s$Bm0" />
+      </concept>
+      <concept id="1171931851043" name="jetbrains.mps.baseLanguage.unitTest.structure.BTestCase" flags="ig" index="3s_ewN">
+        <property id="1171931851045" name="testCaseName" index="3s_ewP" />
+        <child id="1171931851044" name="testMethodList" index="3s_ewO" />
+      </concept>
+      <concept id="1171931858461" name="jetbrains.mps.baseLanguage.unitTest.structure.TestMethodList" flags="ng" index="3s_gsd">
+        <child id="1171931858462" name="testMethod" index="3s_gse" />
+      </concept>
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
         <child id="8427750732757990724" name="expected" index="3tpDZB" />
@@ -138,6 +177,9 @@
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
       <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
         <child id="1171981057159" name="condition" index="3vwVQn" />
+      </concept>
+      <concept id="1171983834376" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertFalse" flags="nn" index="3vFxKo">
+        <child id="1171983854940" name="condition" index="3vFALc" />
       </concept>
       <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
         <child id="1172073511101" name="message" index="3_1BAH" />
@@ -581,6 +623,282 @@
   </node>
   <node concept="2XOHcx" id="2u$73V9ts2J">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+  </node>
+  <node concept="3s_ewN" id="4IjegxhBa1G">
+    <property role="3s_ewP" value="AsyncCellManager" />
+    <node concept="312cEg" id="4IjegxhBa6f" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="manager" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="4IjegxhBa5Q" role="1tU5fm">
+        <ref role="3uigEE" to="4amx:3aYIkMXENo1" resolve="AsyncCellManager" />
+      </node>
+      <node concept="2ShNRf" id="4IjegxhBFPe" role="33vP2m">
+        <node concept="1pGfFk" id="4IjegxhBFID" role="2ShVmc">
+          <ref role="37wK5l" to="4amx:3aYIkMXESjV" resolve="AsyncCellManager" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4IjegxhBa1H" role="1B3o_S" />
+    <node concept="3s_gsd" id="4IjegxhBa1I" role="3s_ewO">
+      <node concept="3s$Bmu" id="4IjegxhBalh" role="3s_gse">
+        <property role="3s$Bm0" value="registerAsyncCell_startsUpdaterAndSpinner" />
+        <node concept="3cqZAl" id="4IjegxhBali" role="3clF45" />
+        <node concept="3Tm1VV" id="4IjegxhBalj" role="1B3o_S" />
+        <node concept="3clFbS" id="4IjegxhBalk" role="3clF47">
+          <node concept="3SKdUt" id="4IjegxhBaqb" role="3cqZAp">
+            <node concept="3SKdUq" id="4IjegxhBaqc" role="3SKWNk">
+              <property role="3SKdUp" value="given the updater is stopped" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="4IjegxhBLLz" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhBLV1" role="3clFbG">
+              <node concept="2OqwBi" id="4IjegxhBLL_" role="2Oq$k0">
+                <node concept="37vLTw" id="4IjegxhBLLA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                </node>
+                <node concept="liA8E" id="4IjegxhBLLB" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4IjegxhBMwv" role="2OqNvi">
+                <ref role="37wK5l" to="4amx:3anL894MBEs" resolve="stop" />
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="4IjegxhBmGC" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhBmjo" role="3vFALc">
+              <node concept="2OqwBi" id="4IjegxhBm4C" role="2Oq$k0">
+                <node concept="37vLTw" id="4IjegxhBlX8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                </node>
+                <node concept="liA8E" id="4IjegxhBmcs" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4IjegxhBmxQ" role="2OqNvi">
+                <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="4IjegxhBmP8" role="3cqZAp" />
+          <node concept="3SKdUt" id="4IjegxhBmWw" role="3cqZAp">
+            <node concept="3SKdUq" id="4IjegxhBmWy" role="3SKWNk">
+              <property role="3SKdUp" value="when I register a cell" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="4IjegxhBn91" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhBnhl" role="3clFbG">
+              <node concept="37vLTw" id="4IjegxhBn8Z" role="2Oq$k0">
+                <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+              </node>
+              <node concept="liA8E" id="4IjegxhBnpD" role="2OqNvi">
+                <ref role="37wK5l" to="4amx:3aYIkMXEUWB" resolve="registerAsyncCell" />
+                <node concept="2YIFZM" id="4IjegxhBtNj" role="37wK5m">
+                  <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
+                  <ref role="1Pybhc" to="n4y8:~Mockito" resolve="Mockito" />
+                  <node concept="3VsKOn" id="4IjegxhBu49" role="37wK5m">
+                    <ref role="3VsUkX" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="4IjegxhBueu" role="3cqZAp" />
+          <node concept="3SKdUt" id="4IjegxhBunl" role="3cqZAp">
+            <node concept="3SKdUq" id="4IjegxhBunn" role="3SKWNk">
+              <property role="3SKdUp" value="then the manager is running" />
+            </node>
+          </node>
+          <node concept="3vwNmj" id="4IjegxhBuNa" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhButw" role="3vwVQn">
+              <node concept="2OqwBi" id="4IjegxhButx" role="2Oq$k0">
+                <node concept="37vLTw" id="4IjegxhButy" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                </node>
+                <node concept="liA8E" id="4IjegxhButz" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4IjegxhBut$" role="2OqNvi">
+                <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="4IjegxhDxuz" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhDxu$" role="3vwVQn">
+              <node concept="2OqwBi" id="4IjegxhDxu_" role="2Oq$k0">
+                <node concept="37vLTw" id="4IjegxhDxuA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                </node>
+                <node concept="liA8E" id="4IjegxhDxuB" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhDrWH" resolve="_getSpinner" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4IjegxhDxuC" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3s$Bmu" id="4IjegxhBa3B" role="3s_gse">
+        <property role="3s$Bm0" value="removeAsyncCell_stopsUpdaterAndSpinner" />
+        <node concept="3cqZAl" id="4IjegxhBa3C" role="3clF45" />
+        <node concept="3Tm1VV" id="4IjegxhBa3D" role="1B3o_S" />
+        <node concept="3clFbS" id="4IjegxhBa3E" role="3clF47">
+          <node concept="3SKdUt" id="4IjegxhBXY$" role="3cqZAp">
+            <node concept="3SKdUq" id="4IjegxhBXYA" role="3SKWNk">
+              <property role="3SKdUp" value="Given I have one registered async cell" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="4IjegxhBX6x" role="3cqZAp">
+            <node concept="3cpWsn" id="4IjegxhBX6y" role="3cpWs9">
+              <property role="TrG5h" value="cell" />
+              <node concept="3uibUv" id="4IjegxhBX6s" role="1tU5fm">
+                <ref role="3uigEE" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
+              </node>
+              <node concept="2YIFZM" id="4IjegxhBX6z" role="33vP2m">
+                <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
+                <ref role="1Pybhc" to="n4y8:~Mockito" resolve="Mockito" />
+                <node concept="3VsKOn" id="4IjegxhBX6$" role="37wK5m">
+                  <ref role="3VsUkX" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="4IjegxhBVDy" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhBVDz" role="3clFbG">
+              <node concept="37vLTw" id="4IjegxhBVD$" role="2Oq$k0">
+                <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+              </node>
+              <node concept="liA8E" id="4IjegxhBVD_" role="2OqNvi">
+                <ref role="37wK5l" to="4amx:3aYIkMXEUWB" resolve="registerAsyncCell" />
+                <node concept="37vLTw" id="4IjegxhBX6_" role="37wK5m">
+                  <ref role="3cqZAo" node="4IjegxhBX6y" resolve="cell" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="4IjegxhBVDv" role="3cqZAp" />
+          <node concept="3SKdUt" id="4IjegxhBVDw" role="3cqZAp">
+            <node concept="3SKdUq" id="4IjegxhBVDx" role="3SKWNk">
+              <property role="3SKdUp" value="when I remove that cell" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="4IjegxhBYuq" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhBYur" role="3clFbG">
+              <node concept="37vLTw" id="4IjegxhBYus" role="2Oq$k0">
+                <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+              </node>
+              <node concept="liA8E" id="4IjegxhBYut" role="2OqNvi">
+                <ref role="37wK5l" to="4amx:5HPe_JwZDXR" resolve="removeAsyncCell" />
+                <node concept="37vLTw" id="4IjegxhBYuu" role="37wK5m">
+                  <ref role="3cqZAo" node="4IjegxhBX6y" resolve="cell" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="4IjegxhBVDC" role="3cqZAp" />
+          <node concept="3SKdUt" id="4IjegxhBVDD" role="3cqZAp">
+            <node concept="3SKdUq" id="4IjegxhBVDE" role="3SKWNk">
+              <property role="3SKdUp" value="then the updater is not running anymore" />
+            </node>
+          </node>
+          <node concept="3vFxKo" id="4IjegxhBVDp" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhBVDq" role="3vFALc">
+              <node concept="2OqwBi" id="4IjegxhBVDr" role="2Oq$k0">
+                <node concept="37vLTw" id="4IjegxhBVDs" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                </node>
+                <node concept="liA8E" id="4IjegxhBVDt" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4IjegxhBVDu" role="2OqNvi">
+                <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="4IjegxhDydx" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhDydy" role="3vFALc">
+              <node concept="2OqwBi" id="4IjegxhDydz" role="2Oq$k0">
+                <node concept="37vLTw" id="4IjegxhDyd$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                </node>
+                <node concept="liA8E" id="4IjegxhDyd_" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhDrWH" resolve="_getSpinner" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4IjegxhDydA" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3s$Bmu" id="4IjegxhC5qc" role="3s_gse">
+        <property role="3s$Bm0" value="virginAsyncCellManager_hasStoppedUpdaterAndSpinner" />
+        <node concept="3cqZAl" id="4IjegxhC5qd" role="3clF45" />
+        <node concept="3Tm1VV" id="4IjegxhC5qe" role="1B3o_S" />
+        <node concept="3clFbS" id="4IjegxhC5qf" role="3clF47">
+          <node concept="3SKdUt" id="4IjegxhC5qg" role="3cqZAp">
+            <node concept="3SKdUq" id="4IjegxhC5qh" role="3SKWNk">
+              <property role="3SKdUp" value="Given I have a just created AsyncCellManager" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="4IjegxhC6Zz" role="3cqZAp">
+            <node concept="37vLTI" id="4IjegxhC7rn" role="3clFbG">
+              <node concept="2ShNRf" id="4IjegxhC7ze" role="37vLTx">
+                <node concept="1pGfFk" id="4IjegxhC7wD" role="2ShVmc">
+                  <ref role="37wK5l" to="4amx:3aYIkMXESjV" resolve="AsyncCellManager" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="4IjegxhC6Zx" role="37vLTJ">
+                <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="4IjegxhC7AU" role="3cqZAp" />
+          <node concept="3SKdUt" id="4IjegxhC7Jb" role="3cqZAp">
+            <node concept="3SKdUq" id="4IjegxhC7Jd" role="3SKWNk">
+              <property role="3SKdUp" value="Then the updater is stopped" />
+            </node>
+          </node>
+          <node concept="3vFxKo" id="4IjegxhC5qB" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhC5qC" role="3vFALc">
+              <node concept="2OqwBi" id="4IjegxhC5qD" role="2Oq$k0">
+                <node concept="37vLTw" id="4IjegxhC5qE" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                </node>
+                <node concept="liA8E" id="4IjegxhC5qF" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4IjegxhC5qG" role="2OqNvi">
+                <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="4IjegxhDxZd" role="3cqZAp">
+            <node concept="2OqwBi" id="4IjegxhDxZe" role="3vFALc">
+              <node concept="2OqwBi" id="4IjegxhDxZf" role="2Oq$k0">
+                <node concept="37vLTw" id="4IjegxhDxZg" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                </node>
+                <node concept="liA8E" id="4IjegxhDxZh" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhDrWH" resolve="_getSpinner" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4IjegxhDxZi" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
