@@ -11,7 +11,7 @@
     <dependency reexport="true">0381a253-2986-4e29-bd38-bdda504095e5(com.mbeddr.mpsutil.asynccell)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
-    <dependency reexport="false">fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e(test.debugger.core)</dependency>
+    <dependency reexport="false">9414e29c-0c8d-4bc7-b251-f312597fb993(org.mockito)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
@@ -60,8 +60,8 @@
     <module reference="0381a253-2986-4e29-bd38-bdda504095e5(com.mbeddr.mpsutil.asynccell)" version="0" />
     <module reference="4d43042b-3d26-46a9-888a-1ec4e4a2c81d(com.mbeddr.mpsutil.asynccell.sandbox)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+    <module reference="9414e29c-0c8d-4bc7-b251-f312597fb993(org.mockito)" version="0" />
     <module reference="43370260-9020-4c2d-bf8a-d4755d82318d(test.com.mbeddr.mpsutil.asynccell)" version="0" />
-    <module reference="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e(test.debugger.core)" version="0" />
   </dependencyVersions>
 </solution>
 

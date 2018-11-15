@@ -8,7 +8,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.waitfor" version="0" />
+    <use id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.blutil.test.waitfor" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <use id="36a565f1-3fa0-42d6-baac-f87e209c9789" name="com.mbeddr.ext.components.mock" version="-1" />
@@ -25,7 +25,7 @@
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
-    <import index="n4y8" ref="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e/java:org.mockito(test.debugger.core/)" />
+    <import index="n4y8" ref="9414e29c-0c8d-4bc7-b251-f312597fb993/java:org.mockito(org.mockito/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -199,8 +199,8 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.waitfor">
-      <concept id="3645598487160356374" name="com.mbeddr.mpsutil.waitfor.structure.WaitFor" flags="ng" index="1QsNEk">
+    <language id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.blutil.test.waitfor">
+      <concept id="3645598487160356374" name="com.mbeddr.mpsutil.blutil.test.waitfor.structure.WaitFor" flags="ng" index="1QsNEk">
         <property id="5445759082310461771" name="timeoutInMs" index="qUX13" />
         <property id="5445759082310461773" name="checkIntervalInMs" index="qUX15" />
       </concept>
@@ -696,8 +696,8 @@
               <node concept="liA8E" id="4IjegxhBnpD" role="2OqNvi">
                 <ref role="37wK5l" to="4amx:3aYIkMXEUWB" resolve="registerAsyncCell" />
                 <node concept="2YIFZM" id="4IjegxhBtNj" role="37wK5m">
-                  <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
                   <ref role="1Pybhc" to="n4y8:~Mockito" resolve="Mockito" />
+                  <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
                   <node concept="3VsKOn" id="4IjegxhBu49" role="37wK5m">
                     <ref role="3VsUkX" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
                   </node>
@@ -760,8 +760,8 @@
                 <ref role="3uigEE" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
               </node>
               <node concept="2YIFZM" id="4IjegxhBX6z" role="33vP2m">
-                <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
                 <ref role="1Pybhc" to="n4y8:~Mockito" resolve="Mockito" />
+                <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
                 <node concept="3VsKOn" id="4IjegxhBX6$" role="37wK5m">
                   <ref role="3VsUkX" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
                 </node>
