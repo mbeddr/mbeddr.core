@@ -17063,6 +17063,12 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1F5R5ewNdCa" role="3bR37C">
+          <node concept="3bR9La" id="1F5R5ewNdCb" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6o5cjw5gEyi" resolve="com.mbeddr.mpsutil.json" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="m$_wf" id="NMVW79y25x" role="3989C9">

@@ -10,6 +10,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
+    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -39,6 +40,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -57,6 +59,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
@@ -92,6 +97,7 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -117,13 +123,21 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -423,6 +437,105 @@
     <node concept="1YaCAy" id="3KP_mg0WsPK" role="1YuTPh">
       <property role="TrG5h" value="singleChoice" />
       <ref role="1YaFvo" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="L5b1s45qpm">
+    <property role="TrG5h" value="check_NondetAssign" />
+    <property role="3GE5qa" value="harness.assign" />
+    <node concept="3clFbS" id="L5b1s45qpn" role="18ibNy">
+      <node concept="3clFbJ" id="1Et_XddfUy_" role="3cqZAp">
+        <node concept="3clFbS" id="1Et_XddfUyB" role="3clFbx">
+          <node concept="2Mj0R9" id="L5b1s45qpz" role="3cqZAp">
+            <node concept="2OqwBi" id="L5b1s45uML" role="2MkoU_">
+              <node concept="2OqwBi" id="L5b1s45t4N" role="2Oq$k0">
+                <node concept="1YBJjd" id="L5b1s45qpZ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="L5b1s45qpp" resolve="nondetAssign" />
+                </node>
+                <node concept="3TrEf2" id="L5b1s45u4f" role="2OqNvi">
+                  <ref role="3Tt5mk" to="llb3:4ATA_JBp19m" resolve="vals" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="L5b1s45vr0" role="2OqNvi" />
+            </node>
+            <node concept="Xl_RD" id="L5b1s45vuc" role="2MkJ7o">
+              <property role="Xl_RC" value="missing constraints definition" />
+            </node>
+            <node concept="1YBJjd" id="L5b1s45vEc" role="2OEOjV">
+              <ref role="1YBMHb" node="L5b1s45qpp" resolve="nondetAssign" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="1Et_XddfUzJ" role="3clFbw">
+          <node concept="2OqwBi" id="1Et_XddfV2k" role="3fr31v">
+            <node concept="2OqwBi" id="1Et_XddfU$3" role="2Oq$k0">
+              <node concept="2OqwBi" id="1Et_XddfU$4" role="2Oq$k0">
+                <node concept="1YBJjd" id="1Et_XddfU$5" role="2Oq$k0">
+                  <ref role="1YBMHb" node="L5b1s45qpp" resolve="nondetAssign" />
+                </node>
+                <node concept="3TrEf2" id="1Et_XddfU$6" role="2OqNvi">
+                  <ref role="3Tt5mk" to="llb3:45nq91X0EWs" resolve="exp" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="1Et_XddfU$7" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="1Et_XddfVmh" role="2OqNvi">
+              <node concept="chp4Y" id="1Et_XddfVoQ" role="cj9EA">
+                <ref role="cht4Q" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="L5b1s45qpp" role="1YuTPh">
+      <property role="TrG5h" value="nondetAssign" />
+      <ref role="1YaFvo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="74PFMXeeN3W">
+    <property role="3GE5qa" value="harness" />
+    <property role="TrG5h" value="check_noPromelaStatementIsAllowedInsideMbeddrFor" />
+    <node concept="3clFbS" id="74PFMXeeN3X" role="18ibNy">
+      <node concept="2Gpval" id="74PFMXeeRYb" role="3cqZAp">
+        <node concept="2GrKxI" id="74PFMXeeRYd" role="2Gsz3X">
+          <property role="TrG5h" value="ps" />
+        </node>
+        <node concept="3clFbS" id="74PFMXeeRYh" role="2LFqv$">
+          <node concept="3cpWs8" id="74PFMXeeS7z" role="3cqZAp">
+            <node concept="3cpWsn" id="74PFMXeeS7$" role="3cpWs9">
+              <property role="TrG5h" value="msg" />
+              <node concept="17QB3L" id="74PFMXeeS7y" role="1tU5fm" />
+              <node concept="Xl_RD" id="74PFMXeeS7_" role="33vP2m">
+                <property role="Xl_RC" value="statements which generate into Promela are not allowed inside 'for loops' from mbeddr - use foreach loop instead" />
+              </node>
+            </node>
+          </node>
+          <node concept="2MkqsV" id="74PFMXeeS0T" role="3cqZAp">
+            <node concept="37vLTw" id="74PFMXeeS7A" role="2MkJ7o">
+              <ref role="3cqZAo" node="74PFMXeeS7$" resolve="msg" />
+            </node>
+            <node concept="2GrUjf" id="74PFMXeeS5r" role="2OEOjV">
+              <ref role="2Gs0qQ" node="74PFMXeeRYd" resolve="ps" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="74PFMXeeRZ9" role="2GsD0m">
+          <node concept="1YBJjd" id="74PFMXeeRZa" role="2Oq$k0">
+            <ref role="1YBMHb" node="74PFMXeeN45" resolve="forStatement" />
+          </node>
+          <node concept="2Rf3mk" id="74PFMXeeRZb" role="2OqNvi">
+            <node concept="1xMEDy" id="74PFMXeeRZc" role="1xVPHs">
+              <node concept="chp4Y" id="74PFMXeeRZd" role="ri$Ld">
+                <ref role="cht4Q" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="74PFMXeeN45" role="1YuTPh">
+      <property role="TrG5h" value="forStatement" />
+      <ref role="1YaFvo" to="c4fa:6iIoqg1xIpQ" resolve="ForStatement" />
     </node>
   </node>
 </model>

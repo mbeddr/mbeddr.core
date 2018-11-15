@@ -31,6 +31,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -68,6 +69,9 @@
     <node concept="PrWs8" id="6rTOrQxhZt4" role="PzmwI">
       <ref role="PrY4T" to="ir22:GpUw9S5_Xa" resolve="IPromelaModelContent" />
     </node>
+    <node concept="PrWs8" id="L5b1s40sds" role="PzmwI">
+      <ref role="PrY4T" node="L5b1s40sc$" resolve="ICCodeContext" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6rTOrQxid2u">
     <property role="TrG5h" value="CCodeStmt" />
@@ -83,6 +87,9 @@
     </node>
     <node concept="PrWs8" id="7Hmzdkr1hpM" role="PzmwI">
       <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
+    </node>
+    <node concept="PrWs8" id="L5b1s40sda" role="PzmwI">
+      <ref role="PrY4T" node="L5b1s40sc$" resolve="ICCodeContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="6rTOrQxiyn3">
@@ -121,6 +128,9 @@
       <property role="IQ2ns" value="7420192473454784423" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="L5b1s40sd$" role="PzmwI">
+      <ref role="PrY4T" node="L5b1s40sc$" resolve="ICCodeContext" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6rTOrQxjfi7">
     <property role="TrG5h" value="Now" />
@@ -149,6 +159,9 @@
     <ref role="1TJDcQ" to="x27k:5DwX9xlExfL" resolve="Section" />
     <node concept="PrWs8" id="6rTOrQxlnEg" role="PzmwI">
       <ref role="PrY4T" to="ir22:GpUw9S5_Xa" resolve="IPromelaModelContent" />
+    </node>
+    <node concept="PrWs8" id="L5b1s40scP" role="PzmwI">
+      <ref role="PrY4T" node="L5b1s40sc$" resolve="ICCodeContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="6rTOrQxlXkj">
@@ -208,6 +221,10 @@
       <property role="1uS6qo" value="StackOnly" />
       <property role="1uS6qv" value="StackOnly" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="L5b1s40sc$">
+    <property role="EcuMT" value="884161379211264804" />
+    <property role="TrG5h" value="ICCodeContext" />
   </node>
 </model>
 
