@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d1901c94-daae-4119-aac0-62f1fa04cfb0(test.com.mbeddr.mpsutil.waitfor@tests)">
+<model ref="r:d1901c94-daae-4119-aac0-62f1fa04cfb0(test.com.mbeddr.mpsutil.blutil.test.waitfor@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.waitfor" version="0" />
+    <use id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.blutil.test.waitfor" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
@@ -136,8 +136,8 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.waitfor">
-      <concept id="3645598487160356374" name="com.mbeddr.mpsutil.waitfor.structure.WaitFor" flags="ng" index="1QsNEk">
+    <language id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.blutil.test.waitfor">
+      <concept id="3645598487160356374" name="com.mbeddr.mpsutil.blutil.test.waitfor.structure.WaitFor" flags="ng" index="1QsNEk">
         <property id="5445759082310461771" name="timeoutInMs" index="qUX13" />
         <property id="5445759082310461773" name="checkIntervalInMs" index="qUX15" />
       </concept>
@@ -175,7 +175,7 @@
         <node concept="3clFbS" id="4Ijegxhs8Jz" role="3clF47">
           <node concept="1QsNEk" id="4IjegxhuPlx" role="3cqZAp">
             <property role="qUX13" value="10000" />
-            <property role="qUX15" value="200" />
+            <property role="qUX15" value="20" />
             <node concept="3clFbT" id="4IjegxhuPlJ" role="3vwVQn">
               <property role="3clFbU" value="true" />
             </node>
@@ -361,7 +361,7 @@
           </node>
           <node concept="1QsNEk" id="4IjegxhuV8A" role="3cqZAp">
             <property role="qUX13" value="10000" />
-            <property role="qUX15" value="200" />
+            <property role="qUX15" value="20" />
             <node concept="37vLTw" id="4IjegxhuVaD" role="3vwVQn">
               <ref role="3cqZAo" node="4IjegxhuUFi" resolve="enoughTimeHasElapsed" />
             </node>

@@ -13,7 +13,7 @@ This language adds a `wait for` assertion that allows to pause the test-executin
 
 If the condition evaluates to false, the check is repeated every 200ms (by default) until the timeout of 10000ms (by default) is reached.
 
-As example, see `test.com.mbeddr.mpsutil.waitfor`. It contains runnable reverse tests (tests that test the assertion instead of the payload).
+As example, see `test.com.mbeddr.mpsutil.blutil.test.waitfor`. It contains runnable reverse tests (tests that test the assertion instead of the payload).
 
 # State
 Currently only used for testing asynccell.
