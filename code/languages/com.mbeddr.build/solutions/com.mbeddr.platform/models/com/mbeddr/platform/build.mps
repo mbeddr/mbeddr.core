@@ -1224,6 +1224,38 @@
         <ref role="m$f5T" node="1A$OnV5ojbJ" resolve="group.waitfor" />
       </node>
     </node>
+    <node concept="m$_wf" id="6xaPNaK8P2s" role="3989C9">
+      <property role="m$_wk" value="org.mockito" />
+      <node concept="3_J27D" id="6xaPNaK8P2t" role="m$_yQ">
+        <node concept="3Mxwew" id="6xaPNaK8P2u" role="3MwsjC">
+          <property role="3MwjfP" value="org.mockito" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6xaPNaK8P2v" role="m_cZH">
+        <node concept="3Mxwew" id="6xaPNaK8P2w" role="3MwsjC">
+          <property role="3MwjfP" value="org.mockito" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6xaPNaK8P2x" role="m$_w8">
+        <node concept="3Mxwey" id="6xaPNaK8P2y" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6xaPNaK8P2z" role="3s6cr7">
+        <node concept="3Mxwew" id="6xaPNaK8P2$" role="3MwsjC">
+          <property role="3MwjfP" value="Stubs for org.mockito" />
+        </node>
+      </node>
+      <node concept="m$_yC" id="6xaPNaK8P2_" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="6xaPNaK8P2A" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
+      <node concept="m$f5U" id="6xaPNaK8TtJ" role="m$_yh">
+        <ref role="m$f5T" node="6xaPNaK8xt_" resolve="group.org.mockito" />
+      </node>
+    </node>
     <node concept="m$_wf" id="1A$OnV5oTHS" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.asynccell" />
       <node concept="3_J27D" id="1A$OnV5oTHT" role="m$_yQ">
@@ -12722,6 +12754,64 @@
         </node>
       </node>
     </node>
+    <node concept="2G$12M" id="6xaPNaK8xt_" role="3989C9">
+      <property role="TrG5h" value="group.org.mockito" />
+      <node concept="1E1JtA" id="6xaPNaK8EVQ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.mockito" />
+        <property role="3LESm3" value="9414e29c-0c8d-4bc7-b251-f312597fb993" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6xaPNaK8GXa" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="6xaPNaK8GXe" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6xaPNaK8IYh" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mockito" />
+              <node concept="2Ry0Ak" id="6xaPNaK8KZk" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mockito.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xaPNaK8NLf" role="3bR37C">
+          <node concept="3bR9La" id="6xaPNaK8NLg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xaPNaK8NLh" role="3bR37C">
+          <node concept="3bR9La" id="6xaPNaK8NLi" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1xb0AuwMYDt" resolve="Hamcrest" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xaPNaK8NLj" role="3bR37C">
+          <node concept="3bR9La" id="6xaPNaK8NLk" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xaPNaK8NLy" role="3bR37C">
+          <node concept="1BurEX" id="6xaPNaK8NLz" role="1SiIV1">
+            <node concept="398BVA" id="6xaPNaK8NLl" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="6xaPNaK8NLm" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6xaPNaK8NLn" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mockito" />
+                  <node concept="2Ry0Ak" id="6xaPNaK8NLo" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6xaPNaK8NLp" role="2Ry0An">
+                      <property role="2Ry0Am" value="mockito-all-1.9.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2G$12M" id="3quoVcnF8Rx" role="3989C9">
       <property role="TrG5h" value="group.placeholderTextList" />
       <node concept="1E1JtD" id="6hvYmWkk_$P" role="2G$12L">
@@ -17527,6 +17617,9 @@
       <node concept="m$_wl" id="1A$OnV5oSEi" role="39821P">
         <ref role="m_rDy" node="1A$OnV5oW62" resolve="com.mbeddr.mpsutil.blutil.test.waitfor" />
       </node>
+      <node concept="m$_wl" id="6xaPNaK8Yyd" role="39821P">
+        <ref role="m_rDy" node="6xaPNaK8P2s" resolve="org.mockito" />
+      </node>
       <node concept="m$_wl" id="64SK4bcOKUz" role="39821P">
         <ref role="m_rDy" node="64SK4bcO2rO" resolve="com.mbeddr.mpsutil.projectview" />
       </node>
@@ -17878,6 +17971,23 @@
           </node>
           <node concept="L2wRC" id="pdbBRzdHh_" role="39821P">
             <ref role="L2wRA" node="5FJiYrlOTtx" resolve="com.mbeddr.mpsutil.actionsfilter.runtime" />
+          </node>
+          <node concept="28jJK3" id="6xaPNaK96uY" role="39821P">
+            <node concept="398BVA" id="6xaPNaK97vW" role="28jJRO">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="6xaPNaK99xM" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6xaPNaK9ayI" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mockito" />
+                  <node concept="2Ry0Ak" id="6xaPNaK9bzE" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6xaPNaK9bzJ" role="2Ry0An">
+                      <property role="2Ry0Am" value="mockito-all-1.9.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -19119,10 +19229,70 @@
             <ref role="3bR37D" node="1A$OnV5oFAB" resolve="com.mbeddr.mpsutil.asynccell" />
           </node>
         </node>
-        <node concept="1yeLz9" id="2yMzZpB12ZV" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.asynccell.sandbox#01" />
-          <property role="3LESm3" value="6522167c-8aac-40d0-9eb7-848e9c21bde1" />
-          <property role="2GAjPV" value="false" />
+      </node>
+      <node concept="1E1JtA" id="6xaPNaK8sYs" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.com.mbeddr.mpsutil.asynccell" />
+        <property role="3LESm3" value="43370260-9020-4c2d-bf8a-d4755d82318d" />
+        <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
+        <node concept="3rtmxn" id="6xaPNaK92IX" role="3bR31x">
+          <node concept="3LXTmp" id="6xaPNaK92IY" role="3rtmxm">
+            <node concept="3qWCbU" id="6xaPNaK92IZ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="6xaPNaK92J0" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="6xaPNaK92J1" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6xaPNaK92RT" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.asynccell" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="398BVA" id="6xaPNaK8tbW" role="3LF7KH">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+          <node concept="2Ry0Ak" id="6xaPNaK8tbX" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="6xaPNaK8tbY" role="2Ry0An">
+              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.asynccell" />
+              <node concept="2Ry0Ak" id="6xaPNaK8tt0" role="2Ry0An">
+                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.asynccell.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xaPNaK8tPE" role="3bR37C">
+          <node concept="3bR9La" id="6xaPNaK8tPF" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1A$OnV5oFAB" resolve="com.mbeddr.mpsutil.asynccell" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xaPNaK8tPG" role="3bR37C">
+          <node concept="3bR9La" id="6xaPNaK8tPH" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xaPNaK8tPI" role="3bR37C">
+          <node concept="3bR9La" id="6xaPNaK8tPJ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xaPNaK8tPK" role="3bR37C">
+          <node concept="3bR9La" id="6xaPNaK8tPL" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2yMzZpB12rk" resolve="com.mbeddr.mpsutil.asynccell.sandbox" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xaPNaK90S2" role="3bR37C">
+          <node concept="3bR9La" id="6xaPNaK90S3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6xaPNaK8EVQ" resolve="org.mockito" />
+          </node>
         </node>
       </node>
       <node concept="1E1JtD" id="2yMzZpB13nR" role="2G$12L">
@@ -19320,6 +19490,9 @@
       </node>
       <node concept="22LTRM" id="2yMzZpB1wV6" role="22LTRK">
         <ref role="22LTRN" node="2yMzZpANLwn" resolve="test.com.mbeddr.mpsutil.blutil.test.waitfor" />
+      </node>
+      <node concept="22LTRM" id="6xaPNaK939C" role="22LTRK">
+        <ref role="22LTRN" node="6xaPNaK8sYs" resolve="test.com.mbeddr.mpsutil.asynccell" />
       </node>
     </node>
     <node concept="2igEWh" id="3HpWboH_Z$G" role="1hWBAP">
