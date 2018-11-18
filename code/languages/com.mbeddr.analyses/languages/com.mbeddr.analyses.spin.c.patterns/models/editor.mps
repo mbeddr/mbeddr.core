@@ -883,9 +883,6 @@
               <property role="1iTho6" value="D3D3D3" />
             </node>
           </node>
-          <node concept="11L4FC" id="41w7FscUCKz" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
         <node concept="3F0ifn" id="7zkyYZXTGJg" role="3EZMnx">
           <property role="3F0ifm" value=" &gt;&gt;" />
