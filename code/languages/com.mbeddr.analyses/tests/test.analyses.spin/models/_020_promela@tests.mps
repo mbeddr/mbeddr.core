@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:240d3229-bb70-4ba5-bcb1-799faf017402(promela@tests)">
+<model ref="r:240d3229-bb70-4ba5-bcb1-799faf017402(_020_promela@tests)">
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
@@ -119,8 +119,8 @@
             <node concept="2YIFZM" id="13EXNGXNHos" role="33vP2m">
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <node concept="BaHAS" id="13EXNGXNHot" role="37wK5m">
-                <property role="BaHAW" value="promela" />
+              <node concept="BaHAS" id="2s6qLQkl_Jv" role="37wK5m">
+                <property role="BaHAW" value="_020_promela" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="13EXNGXNHou" role="37wK5m">
@@ -193,8 +193,8 @@
             <node concept="2YIFZM" id="_jsMICrQuN" role="33vP2m">
               <ref role="37wK5l" to="hr62:_jsMICrMgd" resolve="checkModel2" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <node concept="BaHAS" id="_jsMICrQuO" role="37wK5m">
-                <property role="BaHAW" value="promela" />
+              <node concept="BaHAS" id="2s6qLQklAtw" role="37wK5m">
+                <property role="BaHAW" value="_020_promela" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="_jsMICrQuP" role="37wK5m">
@@ -265,7 +265,7 @@
               <ref role="37wK5l" to="hr62:_jsMICrMgd" resolve="checkModel2" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
               <node concept="BaHAS" id="_jsMICrOFz" role="37wK5m">
-                <property role="BaHAW" value="promela" />
+                <property role="BaHAW" value="_020_promela" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="_jsMICrOF$" role="37wK5m">
@@ -335,8 +335,8 @@
             <node concept="2YIFZM" id="54ptZbPSAqg" role="33vP2m">
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <node concept="BaHAS" id="54ptZbPSAqh" role="37wK5m">
-                <property role="BaHAW" value="promela" />
+              <node concept="BaHAS" id="2s6qLQklB61" role="37wK5m">
+                <property role="BaHAW" value="_020_promela" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="54ptZbPSAqi" role="37wK5m">
@@ -429,8 +429,8 @@
             <node concept="2YIFZM" id="1RC3LaKCwCz" role="33vP2m">
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <node concept="BaHAS" id="1RC3LaKCwC$" role="37wK5m">
-                <property role="BaHAW" value="promela" />
+              <node concept="BaHAS" id="2s6qLQklBTS" role="37wK5m">
+                <property role="BaHAW" value="_020_promela" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="1RC3LaKCwC_" role="37wK5m">
@@ -524,7 +524,7 @@
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <node concept="BaHAS" id="5p$33BW3gtZ" role="37wK5m">
-                <property role="BaHAW" value="promela" />
+                <property role="BaHAW" value="_020_promela" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="5p$33BW3gu0" role="37wK5m">

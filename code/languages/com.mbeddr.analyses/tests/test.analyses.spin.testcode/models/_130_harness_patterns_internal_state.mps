@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:32c20488-90fa-407c-b820-7a839471641a(harness_patterns_internal_state)">
+<model ref="r:32c20488-90fa-407c-b820-7a839471641a(_130_harness_patterns_internal_state)">
   <persistence version="9" />
   <languages>
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />

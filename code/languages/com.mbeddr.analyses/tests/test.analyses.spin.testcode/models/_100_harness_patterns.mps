@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3dfe35a7-adea-4048-8acb-80b654070849(harness_patterns)">
+<model ref="r:3dfe35a7-adea-4048-8acb-80b654070849(_100_harness_patterns)">
   <persistence version="9" />
   <languages>
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e1cecbfc-478c-4e65-822a-108433e00330(spin_arguments@tests)">
+<model ref="r:e1cecbfc-478c-4e65-822a-108433e00330(_010_spin_arguments@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
@@ -130,7 +130,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1TY2kgDXU3n" role="1tU5fm" />
             <node concept="BaHAS" id="1TY2kgDXU3q" role="33vP2m">
-              <property role="BaHAW" value="spin_arguments" />
+              <property role="BaHAW" value="_010_spin_arguments" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -248,7 +248,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1frDWv8azVP" role="1tU5fm" />
             <node concept="BaHAS" id="1frDWv8azVS" role="33vP2m">
-              <property role="BaHAW" value="spin_arguments" />
+              <property role="BaHAW" value="_010_spin_arguments" />
               <property role="BaGAP" value="" />
             </node>
           </node>

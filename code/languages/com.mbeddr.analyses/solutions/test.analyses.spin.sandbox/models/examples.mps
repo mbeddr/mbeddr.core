@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:786cf34b-73f0-4e32-a16e-3c11c907b296(examples)">
+<model ref="r:786607cf-5f3a-4791-b993-e9f90ed18217(examples)">
   <persistence version="9" />
   <languages>
     <use id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela" version="0" />

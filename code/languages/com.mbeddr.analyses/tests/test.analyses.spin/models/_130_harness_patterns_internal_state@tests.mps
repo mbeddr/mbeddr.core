@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d6bc34ce-6c30-4a56-8f7f-7ddc128971eb(harness_patterns_internal_state@tests)">
+<model ref="r:d6bc34ce-6c30-4a56-8f7f-7ddc128971eb(_130_harness_patterns_internal_state@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
@@ -128,7 +128,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="n$tw_alm$I" role="1tU5fm" />
             <node concept="BaHAS" id="n$tw_alm$J" role="33vP2m">
-              <property role="BaHAW" value="harness_patterns_internal_state" />
+              <property role="BaHAW" value="_130_harness_patterns_internal_state" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -299,7 +299,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="n$tw_apwIU" role="1tU5fm" />
             <node concept="BaHAS" id="n$tw_apwIV" role="33vP2m">
-              <property role="BaHAW" value="harness_patterns_internal_state" />
+              <property role="BaHAW" value="_130_harness_patterns_internal_state" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -509,7 +509,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="n$tw_almA1" role="1tU5fm" />
             <node concept="BaHAS" id="n$tw_almA2" role="33vP2m">
-              <property role="BaHAW" value="harness_patterns_internal_state" />
+              <property role="BaHAW" value="_130_harness_patterns_internal_state" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -645,7 +645,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="n$tw_almAj" role="1tU5fm" />
             <node concept="BaHAS" id="n$tw_almAk" role="33vP2m">
-              <property role="BaHAW" value="harness_patterns_internal_state" />
+              <property role="BaHAW" value="_130_harness_patterns_internal_state" />
               <property role="BaGAP" value="" />
             </node>
           </node>

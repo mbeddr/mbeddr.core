@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0208d9e1-21da-425a-be52-ba0982761ebd(robustness_spin)">
+<model ref="r:0208d9e1-21da-425a-be52-ba0982761ebd(_200_robustness_spin)">
   <persistence version="9" />
   <languages>
     <devkit ref="537c2fcd-71ef-4c92-a9e5-27af92b5182b(com.mbeddr.analyses.spin.mdcc)" />
