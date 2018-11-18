@@ -277,6 +277,86 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="2s6qLQkru2N" role="1SL9yI">
+      <property role="TrG5h" value="test_nondet_assignment_double_discrete_vals" />
+      <node concept="3cqZAl" id="2s6qLQkru2O" role="3clF45" />
+      <node concept="3clFbS" id="2s6qLQkru2P" role="3clF47">
+        <node concept="3cpWs8" id="2s6qLQkru2Q" role="3cqZAp">
+          <node concept="3cpWsn" id="2s6qLQkru2R" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="2s6qLQkru2S" role="1tU5fm" />
+            <node concept="BaHAS" id="2s6qLQkru2T" role="33vP2m">
+              <property role="BaHAW" value="_100_harness_patterns__010_assignments" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2s6qLQkru2U" role="3cqZAp">
+          <node concept="3cpWsn" id="2s6qLQkru2V" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="2s6qLQkru2W" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2OqwBi" id="2s6qLQkru2X" role="33vP2m">
+              <node concept="NRdvd" id="2s6qLQkru2Y" role="2Oq$k0">
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
+                <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <node concept="37vLTw" id="2s6qLQkru2Z" role="37wK5m">
+                  <ref role="3cqZAo" node="2s6qLQkru2R" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="2s6qLQkru30" role="37wK5m">
+                  <property role="Xl_RC" value="_010_test_nondet_assign_01_double" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="2s6qLQkru31" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="2s6qLQkru32" role="3cqZAp">
+          <node concept="Xl_RD" id="2s6qLQkru33" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: d1 != 2.2 || d2 != 33.3" />
+          </node>
+          <node concept="2OqwBi" id="2s6qLQkru34" role="3tpDZA">
+            <node concept="37vLTw" id="2s6qLQkru35" role="2Oq$k0">
+              <ref role="3cqZAo" node="2s6qLQkru2V" resolve="res" />
+            </node>
+            <node concept="liA8E" id="2s6qLQkru36" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2s6qLQkru37" role="3cqZAp">
+          <node concept="2OqwBi" id="2s6qLQkru38" role="3vwVQn">
+            <node concept="37vLTw" id="2s6qLQkru39" role="2Oq$k0">
+              <ref role="3cqZAo" node="2s6qLQkru2V" resolve="res" />
+            </node>
+            <node concept="liA8E" id="2s6qLQkru3a" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2s6qLQkru3b" role="3cqZAp" />
+        <node concept="30AV9b" id="2s6qLQkru3c" role="3cqZAp">
+          <node concept="37vLTw" id="2s6qLQkru3d" role="30AzmL">
+            <ref role="3cqZAo" node="2s6qLQkru2V" resolve="res" />
+          </node>
+          <node concept="30Azln" id="2s6qLQkru3e" role="30Azl8">
+            <property role="30AzUg" value="d1" />
+            <property role="30AzUs" value="2.200000" />
+            <node concept="3Tqbb2" id="2s6qLQkru3f" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+          <node concept="30Azln" id="2s6qLQksaG6" role="30Azl8">
+            <property role="30AzUg" value="d2" />
+            <property role="30AzUs" value="33.300000" />
+            <node concept="3Tqbb2" id="2s6qLQksaG7" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1LZb2c" id="1GXRyrSXyth" role="1SL9yI">
       <property role="TrG5h" value="test2" />
       <node concept="3cqZAl" id="1GXRyrSXyti" role="3clF45" />
