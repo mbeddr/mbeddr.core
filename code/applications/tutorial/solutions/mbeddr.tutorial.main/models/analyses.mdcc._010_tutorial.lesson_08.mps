@@ -249,7 +249,7 @@
       <node concept="OjmMv" id="2s6qLQku08H" role="2B_H8o">
         <node concept="19SGf9" id="2s6qLQku08P" role="OjmMu">
           <node concept="19SUe$" id="2s6qLQku08Z" role="19SJt6">
-            <property role="19SUeA" value="in this lesson we describe how to verify external code (not written in mbeddr)&#10;&#10;Problem: we have external C files on harddisk and we want to apply MDCC on them. &#10;         We use mbeddr for specifying the harness using the DSL and then call the SUV (linked as external code).&#10;         To link external code, we must define an external module like &quot;_quicksort&quot; which has a &quot;linkable&quot; the .c&#10;         files which act as SUV." />
+            <property role="19SUeA" value="in this lesson we describe how to verify external code (i.e. plain C code developed with other IDEs, not written in mbeddr)&#10;&#10;Problem: we have external C files on hard-disk and we want to apply MDCC on them. &#10;         We use mbeddr for specifying the harness using the DSL and then call the SUV (linked as external code).&#10;         To link external code, we must define an external module like &quot;_quicksort&quot; which has a &quot;linkable&quot; the .c&#10;         files which act as SUV." />
           </node>
         </node>
       </node>
