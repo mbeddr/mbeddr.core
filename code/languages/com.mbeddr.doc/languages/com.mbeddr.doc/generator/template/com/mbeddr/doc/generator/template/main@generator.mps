@@ -154,7 +154,6 @@
         <property id="6165313375056119253" name="language" index="$Cd8c" />
         <property id="6165313375056119252" name="text" index="$Cd8d" />
       </concept>
-      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
@@ -1306,8 +1305,8 @@
       </node>
     </node>
     <node concept="n94m4" id="627_yy35IQr" role="lGtFl" />
-    <node concept="A7cYH" id="32cJsh9DKyh" role="A10yx">
-      <node concept="9PVaO" id="32cJsh9DKyi" role="9PVG_">
+    <node concept="2SbYGw" id="2B9KjOuvX95" role="A10yx">
+      <node concept="9PVaO" id="2B9KjOuvX94" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
       </node>
