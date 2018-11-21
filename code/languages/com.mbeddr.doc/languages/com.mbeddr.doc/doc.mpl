@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.doc" uuid="2374bc90-7e37-41f1-a9c4-c2e35194c36a" languageVersion="2" moduleVersion="0">
+<language namespace="com.mbeddr.doc" uuid="2374bc90-7e37-41f1-a9c4-c2e35194c36a" languageVersion="3" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -136,7 +136,6 @@
   <dependencies>
     <dependency reexport="false">b33d119e-196d-4497-977c-5c167b21fe33(com.mbeddr.mpsutil.framecell)</dependency>
     <dependency reexport="true">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
-    <dependency reexport="false">da21218f-a674-474d-8b4e-d59e33007003(de.slisson.mps.tables.runtime)</dependency>
     <dependency reexport="false">04e1f940-330e-483b-9a6a-1648b396a81c(com.mbeddr.mpsutil.hyperlink)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
@@ -150,7 +149,7 @@
     <dependency reexport="true">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
     <dependency reexport="true">5c13c612-0f7b-4f0a-ab8b-565186b418de(de.itemis.mps.mouselistener.runtime)</dependency>
     <dependency reexport="false">df9d410f-2ebb-43f7-893a-483a4f085250(jetbrains.mps.smodel.resources)</dependency>
-    <dependency reexport="false">9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)</dependency>
+    <dependency reexport="false">d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:53a2e8ff-4795-41ec-949d-d5c6bc4895de:com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
@@ -215,7 +214,6 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="3" />
     <module reference="9e24fcdc-a232-4d24-8c95-1f525946191a(com.mbeddr.core.base.pluginSolution)" version="0" />
     <module reference="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" version="0" />
@@ -227,13 +225,10 @@
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
     <module reference="c0488c1e-322f-4f38-92d4-5520a7ce96c1(com.mbeddr.mpsutil.plantuml.pluginSolution)" version="0" />
     <module reference="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)" version="0" />
-    <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
     <module reference="5c13c612-0f7b-4f0a-ab8b-565186b418de(de.itemis.mps.mouselistener.runtime)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
-    <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
-    <module reference="da21218f-a674-474d-8b4e-d59e33007003(de.slisson.mps.tables.runtime)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />

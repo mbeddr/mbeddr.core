@@ -15,6 +15,7 @@
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -465,12 +466,17 @@
           <node concept="3cpWsn" id="10MSw5ZMLzm" role="3cpWs9">
             <property role="TrG5h" value="toFileName" />
             <node concept="17QB3L" id="10MSw5ZMLzg" role="1tU5fm" />
-            <node concept="2OqwBi" id="10MSw5ZMLzp" role="33vP2m">
-              <node concept="37vLTw" id="10MSw5ZMLzq" role="2Oq$k0">
-                <ref role="3cqZAo" node="10MSw5ZKoJN" resolve="refSection" />
+            <node concept="3cpWs3" id="271UTRL0Cr9" role="33vP2m">
+              <node concept="Xl_RD" id="271UTRL0CwG" role="3uHU7w">
+                <property role="Xl_RC" value=".html" />
               </node>
-              <node concept="3TrcHB" id="10MSw5ZMLzr" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2OqwBi" id="10MSw5ZMLzp" role="3uHU7B">
+                <node concept="37vLTw" id="10MSw5ZMLzq" role="2Oq$k0">
+                  <ref role="3cqZAo" node="10MSw5ZKoJN" resolve="refSection" />
+                </node>
+                <node concept="3TrcHB" id="10MSw5ZMLzr" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
             </node>
           </node>
@@ -596,12 +602,17 @@
           <node concept="3cpWsn" id="t5DIOhM0$z" role="3cpWs9">
             <property role="TrG5h" value="toFileName" />
             <node concept="17QB3L" id="t5DIOhM0$$" role="1tU5fm" />
-            <node concept="2OqwBi" id="t5DIOhM0$_" role="33vP2m">
-              <node concept="37vLTw" id="t5DIOhMbvI" role="2Oq$k0">
-                <ref role="3cqZAo" node="t5DIOhM526" resolve="toDoc" />
+            <node concept="3cpWs3" id="271UTRL0Dqv" role="33vP2m">
+              <node concept="Xl_RD" id="271UTRL0Drv" role="3uHU7w">
+                <property role="Xl_RC" value=".html" />
               </node>
-              <node concept="3TrcHB" id="t5DIOhM0$B" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2OqwBi" id="t5DIOhM0$_" role="3uHU7B">
+                <node concept="37vLTw" id="t5DIOhMbvI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="t5DIOhM526" resolve="toDoc" />
+                </node>
+                <node concept="3TrcHB" id="t5DIOhM0$B" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
             </node>
           </node>
@@ -760,12 +771,17 @@
           <node concept="3cpWsn" id="10MSw5ZOGvq" role="3cpWs9">
             <property role="TrG5h" value="toFileName" />
             <node concept="17QB3L" id="10MSw5ZOGvl" role="1tU5fm" />
-            <node concept="2OqwBi" id="10MSw5ZOIdZ" role="33vP2m">
-              <node concept="37vLTw" id="10MSw5ZOI2n" role="2Oq$k0">
-                <ref role="3cqZAo" node="10MSw5ZOGGp" resolve="targetDocument" />
+            <node concept="3cpWs3" id="271UTRL0Eim" role="33vP2m">
+              <node concept="Xl_RD" id="271UTRL0Eju" role="3uHU7w">
+                <property role="Xl_RC" value=".html" />
               </node>
-              <node concept="3TrcHB" id="10MSw5ZOIsi" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2OqwBi" id="10MSw5ZOIdZ" role="3uHU7B">
+                <node concept="37vLTw" id="10MSw5ZOI2n" role="2Oq$k0">
+                  <ref role="3cqZAo" node="10MSw5ZOGGp" resolve="targetDocument" />
+                </node>
+                <node concept="3TrcHB" id="10MSw5ZOIsi" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
             </node>
           </node>
@@ -831,27 +847,13 @@
         <node concept="1iwH7U" id="10MSw5ZOuW5" role="1tU5fm" />
       </node>
     </node>
-    <node concept="2tJIrI" id="10MSw5ZOzmk" role="jymVt" />
+    <node concept="2tJIrI" id="271UTRKZsPx" role="jymVt" />
     <node concept="2YIFZL" id="10MSw5ZOzPb" role="jymVt">
       <property role="TrG5h" value="getFileRelativePath" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="10MSw5ZOzPe" role="3clF47">
-        <node concept="3cpWs8" id="10MSw5ZODs5" role="3cqZAp">
-          <node concept="3cpWsn" id="10MSw5ZODs8" role="3cpWs9">
-            <property role="TrG5h" value="htmlFile" />
-            <node concept="17QB3L" id="10MSw5ZODs3" role="1tU5fm" />
-            <node concept="3cpWs3" id="10MSw5ZODXq" role="33vP2m">
-              <node concept="Xl_RD" id="10MSw5ZODZ5" role="3uHU7w">
-                <property role="Xl_RC" value=".html" />
-              </node>
-              <node concept="37vLTw" id="10MSw5ZODF7" role="3uHU7B">
-                <ref role="3cqZAo" node="10MSw5ZO$7A" resolve="fileName" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="10MSw5ZEk8q" role="3cqZAp">
           <node concept="3clFbS" id="10MSw5ZEk8s" role="3clFbx">
             <node concept="3cpWs8" id="10MSw5ZF8Nl" role="3cqZAp">
@@ -908,8 +910,8 @@
                     <property role="Xl_RC" value="/" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="10MSw5ZOEeI" role="3uHU7w">
-                  <ref role="3cqZAo" node="10MSw5ZODs8" resolve="htmlFile" />
+                <node concept="37vLTw" id="271UTRL0FqM" role="3uHU7w">
+                  <ref role="3cqZAo" node="10MSw5ZO$7A" resolve="fileName" />
                 </node>
               </node>
             </node>
@@ -924,8 +926,8 @@
           </node>
         </node>
         <node concept="3cpWs6" id="10MSw5ZMKPf" role="3cqZAp">
-          <node concept="37vLTw" id="10MSw5ZOEr8" role="3cqZAk">
-            <ref role="3cqZAo" node="10MSw5ZODs8" resolve="htmlFile" />
+          <node concept="37vLTw" id="271UTRL0FQB" role="3cqZAk">
+            <ref role="3cqZAo" node="10MSw5ZO$7A" resolve="fileName" />
           </node>
         </node>
       </node>
