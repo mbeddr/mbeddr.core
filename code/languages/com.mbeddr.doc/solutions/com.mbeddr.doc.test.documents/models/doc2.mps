@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml" version="1" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
   </languages>
   <imports>
     <import index="u9wj" ref="r:5de29430-c053-484a-9826-87e7556eee3e(com.mbeddr.doc.test.documents.code)" />
@@ -27,7 +27,6 @@
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
         <child id="6165313375056012515" name="ref" index="$CzcU" />
       </concept>
-      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
@@ -186,8 +185,8 @@
         <property role="3kgbRO" value="false" />
       </node>
     </node>
-    <node concept="A7cYH" id="2khznRHyx6g" role="A10yx">
-      <node concept="9PVaO" id="2khznRHyx6h" role="9PVG_">
+    <node concept="2SbYGw" id="2B9KjOuvX9f" role="A10yx">
+      <node concept="9PVaO" id="2B9KjOuvX9e" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
       </node>
