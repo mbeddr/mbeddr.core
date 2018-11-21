@@ -67,6 +67,7 @@
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="1" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="1dcacc1a-8e53-470e-987d-f654ba2e645c(com.mbeddr.analyses.spin.documentation)" version="0" />
     <module reference="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" version="0" />
     <module reference="3bebdb76-e79f-4758-8ffb-0f1f5c8fcbbe(test.analyses.spin.sandbox)" version="0" />
   </dependencyVersions>
