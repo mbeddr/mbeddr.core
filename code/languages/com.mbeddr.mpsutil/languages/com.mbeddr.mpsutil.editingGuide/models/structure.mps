@@ -138,9 +138,21 @@
       <property role="IQ2ns" value="3453511597021855948" />
       <ref role="20lvS9" node="3p1cdQ7_d$W" resolve="Task" />
     </node>
+    <node concept="1TJgyj" id="DBaqrEZlHF" role="1TKVEi">
+      <property role="IQ2ns" value="749613659864259435" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="followingExercise" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3p1cdQ7_d_Y" resolve="Exercise" />
+    </node>
     <node concept="1TJgyi" id="2ZHlC0069SZ" role="1TKVEl">
       <property role="TrG5h" value="developmentMode" />
       <property role="IQ2nx" value="3453511597020454463" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="DBaqrEY7ez" role="1TKVEl">
+      <property role="IQ2nx" value="749613659863937955" />
+      <property role="TrG5h" value="allowSkip" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="3p1cdQ7_dA3" role="1TKVEi">
