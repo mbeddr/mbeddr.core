@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="1oap" ref="r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -143,9 +143,21 @@
       <property role="IQ2ns" value="3453511597021855948" />
       <ref role="20lvS9" node="3p1cdQ7_d$W" resolve="Task" />
     </node>
+    <node concept="1TJgyj" id="DBaqrEZlHF" role="1TKVEi">
+      <property role="IQ2ns" value="749613659864259435" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="followingExercise" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3p1cdQ7_d_Y" resolve="Exercise" />
+    </node>
     <node concept="1TJgyi" id="2ZHlC0069SZ" role="1TKVEl">
       <property role="TrG5h" value="developmentMode" />
       <property role="IQ2nx" value="3453511597020454463" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="DBaqrEY7ez" role="1TKVEl">
+      <property role="IQ2nx" value="749613659863937955" />
+      <property role="TrG5h" value="allowSkip" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="3p1cdQ7_dA3" role="1TKVEi">
