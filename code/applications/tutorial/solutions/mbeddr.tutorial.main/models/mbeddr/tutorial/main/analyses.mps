@@ -125,7 +125,7 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
+      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
@@ -399,10 +399,7 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
       <concept id="6118219496725500902" name="com.mbeddr.ext.statemachines.structure.SmTriggerTarget" flags="ng" index="$QhJh">
@@ -483,7 +480,7 @@
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
       <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
-      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.InstancePortRef" flags="ng" index="2EWCuO">
+      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.ComponentPortRef" flags="ng" index="2EWCuO">
         <reference id="4491876417845649018" name="instance" index="2EWCuR" />
         <reference id="3444913373458569211" name="port" index="XcPQd" />
       </concept>
@@ -780,9 +777,7 @@
     </node>
     <node concept="2eh4Hv" id="7FOMyx2$6Ep" role="2Q9xDr" />
     <node concept="22RD12" id="13bv9czoHlZ" role="2Q9xDr" />
-    <node concept="12mU2y" id="1U5CTQBq1hn" role="2Q9xDr">
-      <node concept="3GpDuo" id="1U5CTQBq1ho" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="1U5CTQBq1hn" role="2Q9xDr" />
     <node concept="35TzUN" id="5jQxBp5tP2p" role="2Q9xDr">
       <node concept="IjAfM" id="5jQxBp5tP32" role="19yoJo">
         <ref role="IjAfK" to="e1tx:4I37X0YSZr3" resolve="FlightProcessor" />
@@ -6749,6 +6744,7 @@
       <property role="TrG5h" value="empty_1460970515151_86" />
     </node>
     <node concept="3GEVxB" id="1_7SmKEbJFh" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="1_7SmKE7zjk" resolve="_060_hamming" />
     </node>
     <node concept="1z9TsT" id="7ANKYSIFN6s" role="lGtFl">
