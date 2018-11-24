@@ -984,6 +984,86 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="3jcp2EdydA_" role="1SL9yI">
+      <property role="TrG5h" value="test_02" />
+      <node concept="3cqZAl" id="3jcp2EdydAA" role="3clF45" />
+      <node concept="3clFbS" id="3jcp2EdydAB" role="3clF47">
+        <node concept="3cpWs8" id="3jcp2EdydAC" role="3cqZAp">
+          <node concept="3cpWsn" id="3jcp2EdydAD" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3jcp2EdydAE" role="1tU5fm" />
+            <node concept="BaHAS" id="3jcp2EdydAF" role="33vP2m">
+              <property role="BaHAW" value="_100_harness_patterns__030_assume" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3jcp2EdydAG" role="3cqZAp">
+          <node concept="3cpWsn" id="3jcp2EdydAH" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="3jcp2EdydAI" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2OqwBi" id="3jcp2EdydAJ" role="33vP2m">
+              <node concept="NRdvd" id="3jcp2EdydAK" role="2Oq$k0">
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
+                <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <node concept="37vLTw" id="3jcp2EdydAL" role="37wK5m">
+                  <ref role="3cqZAo" node="3jcp2EdydAD" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="3jcp2EdydAM" role="37wK5m">
+                  <property role="Xl_RC" value="_030_test_assume_02" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="3jcp2EdydAN" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="3jcp2EdydAO" role="3cqZAp">
+          <node concept="Xl_RD" id="3jcp2EdydAP" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: y != 3" />
+          </node>
+          <node concept="2OqwBi" id="3jcp2EdydAQ" role="3tpDZA">
+            <node concept="37vLTw" id="3jcp2EdydAR" role="2Oq$k0">
+              <ref role="3cqZAo" node="3jcp2EdydAH" resolve="res" />
+            </node>
+            <node concept="liA8E" id="3jcp2EdydAS" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="3jcp2EdydAT" role="3cqZAp">
+          <node concept="2OqwBi" id="3jcp2EdydAU" role="3vwVQn">
+            <node concept="37vLTw" id="3jcp2EdydAV" role="2Oq$k0">
+              <ref role="3cqZAo" node="3jcp2EdydAH" resolve="res" />
+            </node>
+            <node concept="liA8E" id="3jcp2EdydAW" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3jcp2EdydAX" role="3cqZAp" />
+        <node concept="30AV9b" id="3jcp2EdydAY" role="3cqZAp">
+          <node concept="37vLTw" id="3jcp2EdydAZ" role="30AzmL">
+            <ref role="3cqZAo" node="3jcp2EdydAH" resolve="res" />
+          </node>
+          <node concept="30Azln" id="3jcp2EdydB0" role="30Azl8">
+            <property role="30AzUg" value="x" />
+            <property role="30AzUs" value="4" />
+            <node concept="3Tqbb2" id="3jcp2EdydB1" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+          <node concept="30Azln" id="3jcp2EdydB2" role="30Azl8">
+            <property role="30AzUg" value="y" />
+            <property role="30AzUs" value="3" />
+            <node concept="3Tqbb2" id="3jcp2EdydB3" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1lH9Xt" id="1BFQdmK6qhj">
     <property role="TrG5h" value="_000_test_whitness_logger" />
