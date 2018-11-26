@@ -5,11 +5,14 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}/libs" type="java_classes">
-      <sourceRoot location="mockito-all-1.9.0.jar" />
+      <sourceRoot location="mockito-core-2.23.4.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/libs/mockito-all-1.9.0.jar" />
+    <stubModelEntry path="${module}/libs/mockito-core-2.23.4.jar" />
+    <stubModelEntry path="${module}/libs/byte-buddy-1.9.3.jar" />
+    <stubModelEntry path="${module}/libs/byte-buddy-agent-1.9.3.jar" />
+    <stubModelEntry path="${module}/libs/objenesis-2.6.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
