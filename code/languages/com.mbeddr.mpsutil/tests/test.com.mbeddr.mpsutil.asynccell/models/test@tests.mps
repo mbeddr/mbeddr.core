@@ -99,6 +99,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -117,9 +120,6 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
-      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
-        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
-      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -197,6 +197,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.blutil.test.waitfor">
@@ -626,273 +633,301 @@
   </node>
   <node concept="3s_ewN" id="4IjegxhBa1G">
     <property role="3s_ewP" value="AsyncCellManager" />
-    <node concept="312cEg" id="4IjegxhBa6f" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="manager" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="4IjegxhBa5Q" role="1tU5fm">
-        <ref role="3uigEE" to="4amx:3aYIkMXENo1" resolve="AsyncCellManager" />
-      </node>
-      <node concept="2ShNRf" id="4IjegxhBFPe" role="33vP2m">
-        <node concept="1pGfFk" id="4IjegxhBFID" role="2ShVmc">
-          <ref role="37wK5l" to="4amx:3aYIkMXESjV" resolve="AsyncCellManager" />
+    <node concept="1X3_iC" id="149rBwJEqce" role="lGtFl">
+      <property role="3V$3am" value="member" />
+      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/5375687026011219971" />
+      <node concept="312cEg" id="4IjegxhBa6f" role="8Wnug">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="manager" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="4IjegxhBa5Q" role="1tU5fm">
+          <ref role="3uigEE" to="4amx:3aYIkMXENo1" resolve="AsyncCellManager" />
+        </node>
+        <node concept="2ShNRf" id="4IjegxhBFPe" role="33vP2m">
+          <node concept="1pGfFk" id="4IjegxhBFID" role="2ShVmc">
+            <ref role="37wK5l" to="4amx:3aYIkMXESjV" resolve="AsyncCellManager" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4IjegxhBa1H" role="1B3o_S" />
     <node concept="3s_gsd" id="4IjegxhBa1I" role="3s_ewO">
-      <node concept="3s$Bmu" id="4IjegxhBalh" role="3s_gse">
-        <property role="3s$Bm0" value="registerAsyncCell_startsUpdaterAndSpinner" />
-        <node concept="3cqZAl" id="4IjegxhBali" role="3clF45" />
-        <node concept="3Tm1VV" id="4IjegxhBalj" role="1B3o_S" />
-        <node concept="3clFbS" id="4IjegxhBalk" role="3clF47">
-          <node concept="3SKdUt" id="4IjegxhBaqb" role="3cqZAp">
-            <node concept="3SKdUq" id="4IjegxhBaqc" role="3SKWNk">
-              <property role="3SKdUp" value="given the updater is stopped" />
+      <node concept="3s$Bmu" id="149rBwJEqcw" role="3s_gse">
+        <property role="3s$Bm0" value="dummy" />
+        <node concept="3cqZAl" id="149rBwJEqcx" role="3clF45" />
+        <node concept="3Tm1VV" id="149rBwJEqcy" role="1B3o_S" />
+        <node concept="3clFbS" id="149rBwJEqcz" role="3clF47">
+          <node concept="3vwNmj" id="149rBwJEyEI" role="3cqZAp">
+            <node concept="3clFbT" id="149rBwJEyHu" role="3vwVQn">
+              <property role="3clFbU" value="true" />
             </node>
           </node>
-          <node concept="3clFbF" id="4IjegxhBLLz" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhBLV1" role="3clFbG">
-              <node concept="2OqwBi" id="4IjegxhBLL_" role="2Oq$k0">
-                <node concept="37vLTw" id="4IjegxhBLLA" role="2Oq$k0">
+        </node>
+      </node>
+      <node concept="1X3_iC" id="149rBwJEp0K" role="lGtFl">
+        <property role="3V$3am" value="testMethod" />
+        <property role="3V$3ak" value="f61473f9-130f-42f6-b98d-6c438812c2f6/1171931858461/1171931858462" />
+        <node concept="3s$Bmu" id="4IjegxhBalh" role="8Wnug">
+          <property role="3s$Bm0" value="registerAsyncCell_startsUpdaterAndSpinner" />
+          <node concept="3cqZAl" id="4IjegxhBali" role="3clF45" />
+          <node concept="3Tm1VV" id="4IjegxhBalj" role="1B3o_S" />
+          <node concept="3clFbS" id="4IjegxhBalk" role="3clF47">
+            <node concept="3SKdUt" id="4IjegxhBaqb" role="3cqZAp">
+              <node concept="3SKdUq" id="4IjegxhBaqc" role="3SKWNk">
+                <property role="3SKdUp" value="given the updater is stopped" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="4IjegxhBLLz" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhBLV1" role="3clFbG">
+                <node concept="2OqwBi" id="4IjegxhBLL_" role="2Oq$k0">
+                  <node concept="37vLTw" id="4IjegxhBLLA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                  </node>
+                  <node concept="liA8E" id="4IjegxhBLLB" role="2OqNvi">
+                    <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4IjegxhBMwv" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:3anL894MBEs" resolve="stop" />
+                </node>
+              </node>
+            </node>
+            <node concept="3vFxKo" id="4IjegxhBmGC" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhBmjo" role="3vFALc">
+                <node concept="2OqwBi" id="4IjegxhBm4C" role="2Oq$k0">
+                  <node concept="37vLTw" id="4IjegxhBlX8" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                  </node>
+                  <node concept="liA8E" id="4IjegxhBmcs" role="2OqNvi">
+                    <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4IjegxhBmxQ" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4IjegxhBmP8" role="3cqZAp" />
+            <node concept="3SKdUt" id="4IjegxhBmWw" role="3cqZAp">
+              <node concept="3SKdUq" id="4IjegxhBmWy" role="3SKWNk">
+                <property role="3SKdUp" value="when I register a cell" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="4IjegxhBn91" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhBnhl" role="3clFbG">
+                <node concept="37vLTw" id="4IjegxhBn8Z" role="2Oq$k0">
                   <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
                 </node>
-                <node concept="liA8E" id="4IjegxhBLLB" role="2OqNvi">
-                  <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                <node concept="liA8E" id="4IjegxhBnpD" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:3aYIkMXEUWB" resolve="registerAsyncCell" />
+                  <node concept="2YIFZM" id="4IjegxhBtNj" role="37wK5m">
+                    <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
+                    <ref role="1Pybhc" to="n4y8:~Mockito" resolve="Mockito" />
+                    <node concept="3VsKOn" id="4IjegxhBu49" role="37wK5m">
+                      <ref role="3VsUkX" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
+                    </node>
+                  </node>
                 </node>
               </node>
-              <node concept="liA8E" id="4IjegxhBMwv" role="2OqNvi">
-                <ref role="37wK5l" to="4amx:3anL894MBEs" resolve="stop" />
+            </node>
+            <node concept="3clFbH" id="4IjegxhBueu" role="3cqZAp" />
+            <node concept="3SKdUt" id="4IjegxhBunl" role="3cqZAp">
+              <node concept="3SKdUq" id="4IjegxhBunn" role="3SKWNk">
+                <property role="3SKdUp" value="then the manager is running" />
+              </node>
+            </node>
+            <node concept="3vwNmj" id="4IjegxhBuNa" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhButw" role="3vwVQn">
+                <node concept="2OqwBi" id="4IjegxhButx" role="2Oq$k0">
+                  <node concept="37vLTw" id="4IjegxhButy" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                  </node>
+                  <node concept="liA8E" id="4IjegxhButz" role="2OqNvi">
+                    <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4IjegxhBut$" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
+                </node>
+              </node>
+            </node>
+            <node concept="3vwNmj" id="4IjegxhDxuz" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhDxu$" role="3vwVQn">
+                <node concept="2OqwBi" id="4IjegxhDxu_" role="2Oq$k0">
+                  <node concept="37vLTw" id="4IjegxhDxuA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                  </node>
+                  <node concept="liA8E" id="4IjegxhDxuB" role="2OqNvi">
+                    <ref role="37wK5l" to="4amx:4IjegxhDrWH" resolve="_getSpinner" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4IjegxhDxuC" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+                </node>
               </node>
             </node>
           </node>
-          <node concept="3vFxKo" id="4IjegxhBmGC" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhBmjo" role="3vFALc">
-              <node concept="2OqwBi" id="4IjegxhBm4C" role="2Oq$k0">
-                <node concept="37vLTw" id="4IjegxhBlX8" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
-                </node>
-                <node concept="liA8E" id="4IjegxhBmcs" role="2OqNvi">
-                  <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
-                </node>
-              </node>
-              <node concept="liA8E" id="4IjegxhBmxQ" role="2OqNvi">
-                <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
+        </node>
+      </node>
+      <node concept="1X3_iC" id="149rBwJEp$K" role="lGtFl">
+        <property role="3V$3am" value="testMethod" />
+        <property role="3V$3ak" value="f61473f9-130f-42f6-b98d-6c438812c2f6/1171931858461/1171931858462" />
+        <node concept="3s$Bmu" id="4IjegxhBa3B" role="8Wnug">
+          <property role="3s$Bm0" value="removeAsyncCell_stopsUpdaterAndSpinner" />
+          <node concept="3cqZAl" id="4IjegxhBa3C" role="3clF45" />
+          <node concept="3Tm1VV" id="4IjegxhBa3D" role="1B3o_S" />
+          <node concept="3clFbS" id="4IjegxhBa3E" role="3clF47">
+            <node concept="3SKdUt" id="4IjegxhBXY$" role="3cqZAp">
+              <node concept="3SKdUq" id="4IjegxhBXYA" role="3SKWNk">
+                <property role="3SKdUp" value="Given I have one registered async cell" />
               </node>
             </node>
-          </node>
-          <node concept="3clFbH" id="4IjegxhBmP8" role="3cqZAp" />
-          <node concept="3SKdUt" id="4IjegxhBmWw" role="3cqZAp">
-            <node concept="3SKdUq" id="4IjegxhBmWy" role="3SKWNk">
-              <property role="3SKdUp" value="when I register a cell" />
-            </node>
-          </node>
-          <node concept="3clFbF" id="4IjegxhBn91" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhBnhl" role="3clFbG">
-              <node concept="37vLTw" id="4IjegxhBn8Z" role="2Oq$k0">
-                <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
-              </node>
-              <node concept="liA8E" id="4IjegxhBnpD" role="2OqNvi">
-                <ref role="37wK5l" to="4amx:3aYIkMXEUWB" resolve="registerAsyncCell" />
-                <node concept="2YIFZM" id="4IjegxhBtNj" role="37wK5m">
+            <node concept="3cpWs8" id="4IjegxhBX6x" role="3cqZAp">
+              <node concept="3cpWsn" id="4IjegxhBX6y" role="3cpWs9">
+                <property role="TrG5h" value="cell" />
+                <node concept="3uibUv" id="4IjegxhBX6s" role="1tU5fm">
+                  <ref role="3uigEE" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
+                </node>
+                <node concept="2YIFZM" id="4IjegxhBX6z" role="33vP2m">
                   <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
                   <ref role="1Pybhc" to="n4y8:~Mockito" resolve="Mockito" />
-                  <node concept="3VsKOn" id="4IjegxhBu49" role="37wK5m">
+                  <node concept="3VsKOn" id="4IjegxhBX6$" role="37wK5m">
                     <ref role="3VsUkX" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
                   </node>
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3clFbH" id="4IjegxhBueu" role="3cqZAp" />
-          <node concept="3SKdUt" id="4IjegxhBunl" role="3cqZAp">
-            <node concept="3SKdUq" id="4IjegxhBunn" role="3SKWNk">
-              <property role="3SKdUp" value="then the manager is running" />
-            </node>
-          </node>
-          <node concept="3vwNmj" id="4IjegxhBuNa" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhButw" role="3vwVQn">
-              <node concept="2OqwBi" id="4IjegxhButx" role="2Oq$k0">
-                <node concept="37vLTw" id="4IjegxhButy" role="2Oq$k0">
+            <node concept="3clFbF" id="4IjegxhBVDy" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhBVDz" role="3clFbG">
+                <node concept="37vLTw" id="4IjegxhBVD$" role="2Oq$k0">
                   <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
                 </node>
-                <node concept="liA8E" id="4IjegxhButz" role="2OqNvi">
-                  <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                <node concept="liA8E" id="4IjegxhBVD_" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:3aYIkMXEUWB" resolve="registerAsyncCell" />
+                  <node concept="37vLTw" id="4IjegxhBX6_" role="37wK5m">
+                    <ref role="3cqZAo" node="4IjegxhBX6y" resolve="cell" />
+                  </node>
                 </node>
-              </node>
-              <node concept="liA8E" id="4IjegxhBut$" role="2OqNvi">
-                <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
               </node>
             </node>
-          </node>
-          <node concept="3vwNmj" id="4IjegxhDxuz" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhDxu$" role="3vwVQn">
-              <node concept="2OqwBi" id="4IjegxhDxu_" role="2Oq$k0">
-                <node concept="37vLTw" id="4IjegxhDxuA" role="2Oq$k0">
+            <node concept="3clFbH" id="4IjegxhBVDv" role="3cqZAp" />
+            <node concept="3SKdUt" id="4IjegxhBVDw" role="3cqZAp">
+              <node concept="3SKdUq" id="4IjegxhBVDx" role="3SKWNk">
+                <property role="3SKdUp" value="when I remove that cell" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="4IjegxhBYuq" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhBYur" role="3clFbG">
+                <node concept="37vLTw" id="4IjegxhBYus" role="2Oq$k0">
                   <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
                 </node>
-                <node concept="liA8E" id="4IjegxhDxuB" role="2OqNvi">
-                  <ref role="37wK5l" to="4amx:4IjegxhDrWH" resolve="_getSpinner" />
+                <node concept="liA8E" id="4IjegxhBYut" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:5HPe_JwZDXR" resolve="removeAsyncCell" />
+                  <node concept="37vLTw" id="4IjegxhBYuu" role="37wK5m">
+                    <ref role="3cqZAo" node="4IjegxhBX6y" resolve="cell" />
+                  </node>
                 </node>
               </node>
-              <node concept="liA8E" id="4IjegxhDxuC" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+            </node>
+            <node concept="3clFbH" id="4IjegxhBVDC" role="3cqZAp" />
+            <node concept="3SKdUt" id="4IjegxhBVDD" role="3cqZAp">
+              <node concept="3SKdUq" id="4IjegxhBVDE" role="3SKWNk">
+                <property role="3SKdUp" value="then the updater is not running anymore" />
+              </node>
+            </node>
+            <node concept="3vFxKo" id="4IjegxhBVDp" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhBVDq" role="3vFALc">
+                <node concept="2OqwBi" id="4IjegxhBVDr" role="2Oq$k0">
+                  <node concept="37vLTw" id="4IjegxhBVDs" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                  </node>
+                  <node concept="liA8E" id="4IjegxhBVDt" role="2OqNvi">
+                    <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4IjegxhBVDu" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
+                </node>
+              </node>
+            </node>
+            <node concept="3vFxKo" id="4IjegxhDydx" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhDydy" role="3vFALc">
+                <node concept="2OqwBi" id="4IjegxhDydz" role="2Oq$k0">
+                  <node concept="37vLTw" id="4IjegxhDyd$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                  </node>
+                  <node concept="liA8E" id="4IjegxhDyd_" role="2OqNvi">
+                    <ref role="37wK5l" to="4amx:4IjegxhDrWH" resolve="_getSpinner" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4IjegxhDydA" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+                </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="3s$Bmu" id="4IjegxhBa3B" role="3s_gse">
-        <property role="3s$Bm0" value="removeAsyncCell_stopsUpdaterAndSpinner" />
-        <node concept="3cqZAl" id="4IjegxhBa3C" role="3clF45" />
-        <node concept="3Tm1VV" id="4IjegxhBa3D" role="1B3o_S" />
-        <node concept="3clFbS" id="4IjegxhBa3E" role="3clF47">
-          <node concept="3SKdUt" id="4IjegxhBXY$" role="3cqZAp">
-            <node concept="3SKdUq" id="4IjegxhBXYA" role="3SKWNk">
-              <property role="3SKdUp" value="Given I have one registered async cell" />
-            </node>
-          </node>
-          <node concept="3cpWs8" id="4IjegxhBX6x" role="3cqZAp">
-            <node concept="3cpWsn" id="4IjegxhBX6y" role="3cpWs9">
-              <property role="TrG5h" value="cell" />
-              <node concept="3uibUv" id="4IjegxhBX6s" role="1tU5fm">
-                <ref role="3uigEE" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
+      <node concept="1X3_iC" id="149rBwJEpW_" role="lGtFl">
+        <property role="3V$3am" value="testMethod" />
+        <property role="3V$3ak" value="f61473f9-130f-42f6-b98d-6c438812c2f6/1171931858461/1171931858462" />
+        <node concept="3s$Bmu" id="4IjegxhC5qc" role="8Wnug">
+          <property role="3s$Bm0" value="virginAsyncCellManager_hasStoppedUpdaterAndSpinner" />
+          <node concept="3cqZAl" id="4IjegxhC5qd" role="3clF45" />
+          <node concept="3Tm1VV" id="4IjegxhC5qe" role="1B3o_S" />
+          <node concept="3clFbS" id="4IjegxhC5qf" role="3clF47">
+            <node concept="3SKdUt" id="4IjegxhC5qg" role="3cqZAp">
+              <node concept="3SKdUq" id="4IjegxhC5qh" role="3SKWNk">
+                <property role="3SKdUp" value="Given I have a just created AsyncCellManager" />
               </node>
-              <node concept="2YIFZM" id="4IjegxhBX6z" role="33vP2m">
-                <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
-                <ref role="1Pybhc" to="n4y8:~Mockito" resolve="Mockito" />
-                <node concept="3VsKOn" id="4IjegxhBX6$" role="37wK5m">
-                  <ref role="3VsUkX" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
+            </node>
+            <node concept="3clFbF" id="4IjegxhC6Zz" role="3cqZAp">
+              <node concept="37vLTI" id="4IjegxhC7rn" role="3clFbG">
+                <node concept="2ShNRf" id="4IjegxhC7ze" role="37vLTx">
+                  <node concept="1pGfFk" id="4IjegxhC7wD" role="2ShVmc">
+                    <ref role="37wK5l" to="4amx:3aYIkMXESjV" resolve="AsyncCellManager" />
+                  </node>
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4IjegxhBVDy" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhBVDz" role="3clFbG">
-              <node concept="37vLTw" id="4IjegxhBVD$" role="2Oq$k0">
-                <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
-              </node>
-              <node concept="liA8E" id="4IjegxhBVD_" role="2OqNvi">
-                <ref role="37wK5l" to="4amx:3aYIkMXEUWB" resolve="registerAsyncCell" />
-                <node concept="37vLTw" id="4IjegxhBX6_" role="37wK5m">
-                  <ref role="3cqZAo" node="4IjegxhBX6y" resolve="cell" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="4IjegxhBVDv" role="3cqZAp" />
-          <node concept="3SKdUt" id="4IjegxhBVDw" role="3cqZAp">
-            <node concept="3SKdUq" id="4IjegxhBVDx" role="3SKWNk">
-              <property role="3SKdUp" value="when I remove that cell" />
-            </node>
-          </node>
-          <node concept="3clFbF" id="4IjegxhBYuq" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhBYur" role="3clFbG">
-              <node concept="37vLTw" id="4IjegxhBYus" role="2Oq$k0">
-                <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
-              </node>
-              <node concept="liA8E" id="4IjegxhBYut" role="2OqNvi">
-                <ref role="37wK5l" to="4amx:5HPe_JwZDXR" resolve="removeAsyncCell" />
-                <node concept="37vLTw" id="4IjegxhBYuu" role="37wK5m">
-                  <ref role="3cqZAo" node="4IjegxhBX6y" resolve="cell" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="4IjegxhBVDC" role="3cqZAp" />
-          <node concept="3SKdUt" id="4IjegxhBVDD" role="3cqZAp">
-            <node concept="3SKdUq" id="4IjegxhBVDE" role="3SKWNk">
-              <property role="3SKdUp" value="then the updater is not running anymore" />
-            </node>
-          </node>
-          <node concept="3vFxKo" id="4IjegxhBVDp" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhBVDq" role="3vFALc">
-              <node concept="2OqwBi" id="4IjegxhBVDr" role="2Oq$k0">
-                <node concept="37vLTw" id="4IjegxhBVDs" role="2Oq$k0">
+                <node concept="37vLTw" id="4IjegxhC6Zx" role="37vLTJ">
                   <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
                 </node>
-                <node concept="liA8E" id="4IjegxhBVDt" role="2OqNvi">
-                  <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
-                </node>
-              </node>
-              <node concept="liA8E" id="4IjegxhBVDu" role="2OqNvi">
-                <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
               </node>
             </node>
-          </node>
-          <node concept="3vFxKo" id="4IjegxhDydx" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhDydy" role="3vFALc">
-              <node concept="2OqwBi" id="4IjegxhDydz" role="2Oq$k0">
-                <node concept="37vLTw" id="4IjegxhDyd$" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
-                </node>
-                <node concept="liA8E" id="4IjegxhDyd_" role="2OqNvi">
-                  <ref role="37wK5l" to="4amx:4IjegxhDrWH" resolve="_getSpinner" />
-                </node>
-              </node>
-              <node concept="liA8E" id="4IjegxhDydA" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+            <node concept="3clFbH" id="4IjegxhC7AU" role="3cqZAp" />
+            <node concept="3SKdUt" id="4IjegxhC7Jb" role="3cqZAp">
+              <node concept="3SKdUq" id="4IjegxhC7Jd" role="3SKWNk">
+                <property role="3SKdUp" value="Then the updater is stopped" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3s$Bmu" id="4IjegxhC5qc" role="3s_gse">
-        <property role="3s$Bm0" value="virginAsyncCellManager_hasStoppedUpdaterAndSpinner" />
-        <node concept="3cqZAl" id="4IjegxhC5qd" role="3clF45" />
-        <node concept="3Tm1VV" id="4IjegxhC5qe" role="1B3o_S" />
-        <node concept="3clFbS" id="4IjegxhC5qf" role="3clF47">
-          <node concept="3SKdUt" id="4IjegxhC5qg" role="3cqZAp">
-            <node concept="3SKdUq" id="4IjegxhC5qh" role="3SKWNk">
-              <property role="3SKdUp" value="Given I have a just created AsyncCellManager" />
-            </node>
-          </node>
-          <node concept="3clFbF" id="4IjegxhC6Zz" role="3cqZAp">
-            <node concept="37vLTI" id="4IjegxhC7rn" role="3clFbG">
-              <node concept="2ShNRf" id="4IjegxhC7ze" role="37vLTx">
-                <node concept="1pGfFk" id="4IjegxhC7wD" role="2ShVmc">
-                  <ref role="37wK5l" to="4amx:3aYIkMXESjV" resolve="AsyncCellManager" />
+            <node concept="3vFxKo" id="4IjegxhC5qB" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhC5qC" role="3vFALc">
+                <node concept="2OqwBi" id="4IjegxhC5qD" role="2Oq$k0">
+                  <node concept="37vLTw" id="4IjegxhC5qE" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                  </node>
+                  <node concept="liA8E" id="4IjegxhC5qF" role="2OqNvi">
+                    <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                  </node>
                 </node>
-              </node>
-              <node concept="37vLTw" id="4IjegxhC6Zx" role="37vLTJ">
-                <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                <node concept="liA8E" id="4IjegxhC5qG" role="2OqNvi">
+                  <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="3clFbH" id="4IjegxhC7AU" role="3cqZAp" />
-          <node concept="3SKdUt" id="4IjegxhC7Jb" role="3cqZAp">
-            <node concept="3SKdUq" id="4IjegxhC7Jd" role="3SKWNk">
-              <property role="3SKdUp" value="Then the updater is stopped" />
-            </node>
-          </node>
-          <node concept="3vFxKo" id="4IjegxhC5qB" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhC5qC" role="3vFALc">
-              <node concept="2OqwBi" id="4IjegxhC5qD" role="2Oq$k0">
-                <node concept="37vLTw" id="4IjegxhC5qE" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+            <node concept="3vFxKo" id="4IjegxhDxZd" role="3cqZAp">
+              <node concept="2OqwBi" id="4IjegxhDxZe" role="3vFALc">
+                <node concept="2OqwBi" id="4IjegxhDxZf" role="2Oq$k0">
+                  <node concept="37vLTw" id="4IjegxhDxZg" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
+                  </node>
+                  <node concept="liA8E" id="4IjegxhDxZh" role="2OqNvi">
+                    <ref role="37wK5l" to="4amx:4IjegxhDrWH" resolve="_getSpinner" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="4IjegxhC5qF" role="2OqNvi">
-                  <ref role="37wK5l" to="4amx:4IjegxhBiOl" resolve="_getUpdater" />
+                <node concept="liA8E" id="4IjegxhDxZi" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
                 </node>
-              </node>
-              <node concept="liA8E" id="4IjegxhC5qG" role="2OqNvi">
-                <ref role="37wK5l" to="4amx:4IjegxhAVGc" resolve="isRunning" />
-              </node>
-            </node>
-          </node>
-          <node concept="3vFxKo" id="4IjegxhDxZd" role="3cqZAp">
-            <node concept="2OqwBi" id="4IjegxhDxZe" role="3vFALc">
-              <node concept="2OqwBi" id="4IjegxhDxZf" role="2Oq$k0">
-                <node concept="37vLTw" id="4IjegxhDxZg" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4IjegxhBa6f" resolve="manager" />
-                </node>
-                <node concept="liA8E" id="4IjegxhDxZh" role="2OqNvi">
-                  <ref role="37wK5l" to="4amx:4IjegxhDrWH" resolve="_getSpinner" />
-                </node>
-              </node>
-              <node concept="liA8E" id="4IjegxhDxZi" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
               </node>
             </node>
           </node>
