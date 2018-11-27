@@ -28,11 +28,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <string.h>
 
 #include "tree234.h"
 
 #ifdef TEST
-#define LOG(x) (printf x)
+//#define LOG(x) (printf x)
+#define LOG(x) 
 #define snew(type) ((type *)malloc(sizeof(type)))
 #define snewn(n, type) ((type *)malloc((n) * sizeof(type)))
 #define sresize(ptr, n, type)                                         \
@@ -43,22 +45,6 @@
 #include "puttymem.h"
 #define LOG(x)
 #endif
-
-/*
-typedef struct node234_Tag node234;
-
-struct tree234_Tag {
-    node234 *root;
-    cmpfn234 cmp;
-};
-
-struct node234_Tag {
-    node234 *parent;
-    node234 *kids[4];
-    int counts[4];
-    void *elems[3];
-};
-*/
 
 /*
  * Create a 2-3-4 tree.
@@ -90,6 +76,11 @@ void freetree234(tree234 * t)
 {
     freenode234(t->root);
     sfree(t);
+}
+
+void freerootnode234(tree234 * t)
+{
+    freenode234(t->root);
 }
 
 /*

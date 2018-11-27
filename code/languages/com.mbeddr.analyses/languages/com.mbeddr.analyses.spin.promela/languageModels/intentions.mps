@@ -50,11 +50,13 @@
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
+      <concept id="1192795771125" name="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" flags="in" index="2SaL7w" />
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
+        <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
@@ -80,6 +82,17 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -146,7 +159,7 @@
       <node concept="3clFbS" id="3Gj8GGYpWSH" role="2VODD2">
         <node concept="3clFbF" id="3Gj8GGYpX7P" role="3cqZAp">
           <node concept="Xl_RD" id="3Gj8GGYpX7O" role="3clFbG">
-            <property role="Xl_RC" value="Convert 2 Promela GVD" />
+            <property role="Xl_RC" value="Convert 2 Promela Global Variable Declaration" />
           </node>
         </node>
       </node>
@@ -200,6 +213,25 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1Et_XddaK0f" role="2ZfVeh">
+      <node concept="3clFbS" id="1Et_XddaK0g" role="2VODD2">
+        <node concept="3clFbF" id="1Et_XddaKeu" role="3cqZAp">
+          <node concept="2OqwBi" id="1Et_XddaMMn" role="3clFbG">
+            <node concept="2OqwBi" id="1Et_XddaKGD" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1Et_XddaKet" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1Et_XddaM6w" role="2OqNvi">
+                <node concept="1xMEDy" id="1Et_XddaM6y" role="1xVPHs">
+                  <node concept="chp4Y" id="1Et_XddaMiQ" role="ri$Ld">
+                    <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1Et_XddaNW4" role="2OqNvi" />
           </node>
         </node>
       </node>

@@ -4,7 +4,7 @@
   <languages>
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="5ef691b5-60ce-4ece-a04e-25e642dfa128" name="com.mbeddr.mpsutil.lantest" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
   </languages>
@@ -828,7 +828,7 @@
         <node concept="3XISUE" id="7KZa521iDKE" role="3XIRFZ" />
       </node>
       <node concept="3U$IGs" id="7KZa521iDKF" role="6y14j">
-        <property role="3U$IFK" value="" />
+        <property role="3U$IFK" value="0" />
       </node>
       <node concept="19RgSI" id="7KZa521iDKG" role="1UOdpc">
         <property role="TrG5h" value="aName_437882" />
@@ -928,7 +928,7 @@
         <node concept="3XISUE" id="7KZa521j3yu" role="3XIRFZ" />
       </node>
       <node concept="3U$IGs" id="7KZa521j3yv" role="6y14j">
-        <property role="3U$IFK" value="" />
+        <property role="3U$IFK" value="0" />
       </node>
       <node concept="2GZKED" id="7KZa521j3yw" role="1UOdpc">
         <property role="TrG5h" value="aName_724052" />
@@ -1028,7 +1028,7 @@
         <node concept="3XISUE" id="7KZa521jQRW" role="3XIRFZ" />
       </node>
       <node concept="3U$IGs" id="7KZa521jQRX" role="6y14j">
-        <property role="3U$IFK" value="" />
+        <property role="3U$IFK" value="0" />
       </node>
     </node>
   </node>

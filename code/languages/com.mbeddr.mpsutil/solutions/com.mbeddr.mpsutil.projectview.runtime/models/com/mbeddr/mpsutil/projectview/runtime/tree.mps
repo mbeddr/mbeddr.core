@@ -3939,6 +3939,12 @@
           <node concept="3clFbS" id="4QICnJ5Jb8P" role="3clFbx">
             <node concept="3clFbF" id="4QICnJ5JcCD" role="3cqZAp">
               <node concept="2OqwBi" id="4QICnJ5JcCE" role="3clFbG">
+                <node concept="liA8E" id="4QICnJ5JcCG" role="2OqNvi">
+                  <ref role="37wK5l" to="3qmy:~ClassLoaderManager.removeListener(jetbrains.mps.classloading.DeployListener):void" resolve="removeListener" />
+                  <node concept="37vLTw" id="4QICnJ5JcCH" role="37wK5m">
+                    <ref role="3cqZAo" node="4QICnJ5Heu5" resolve="myClassesListener" />
+                  </node>
+                </node>
                 <node concept="2OqwBi" id="hwfPVmioyq" role="2Oq$k0">
                   <node concept="37vLTw" id="hwfPVmioyr" role="2Oq$k0">
                     <ref role="3cqZAo" node="7N_XUEP3190" resolve="mpsProject" />
@@ -3948,12 +3954,6 @@
                     <node concept="3VsKOn" id="hwfPVmioyt" role="37wK5m">
                       <ref role="3VsUkX" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
                     </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="4QICnJ5JcCG" role="2OqNvi">
-                  <ref role="37wK5l" to="3qmy:~ClassLoaderManager.removeListener(jetbrains.mps.classloading.DeployListener):void" resolve="removeListener" />
-                  <node concept="37vLTw" id="4QICnJ5JcCH" role="37wK5m">
-                    <ref role="3cqZAo" node="4QICnJ5Heu5" resolve="myClassesListener" />
                   </node>
                 </node>
               </node>
@@ -4073,6 +4073,12 @@
             </node>
             <node concept="3clFbF" id="4gq8yQBZ6Pn" role="3cqZAp">
               <node concept="2OqwBi" id="4gq8yQBZ6Po" role="3clFbG">
+                <node concept="liA8E" id="4gq8yQBZ6Pq" role="2OqNvi">
+                  <ref role="37wK5l" to="31cb:~SRepositoryBase.removeRepositoryListener(org.jetbrains.mps.openapi.module.SRepositoryListener):void" resolve="removeRepositoryListener" />
+                  <node concept="37vLTw" id="4gq8yQBZ6Pr" role="37wK5m">
+                    <ref role="3cqZAo" node="4gq8yQBZ6Ml" resolve="myRepositoryListener" />
+                  </node>
+                </node>
                 <node concept="2OqwBi" id="hwfPVmiKD6" role="2Oq$k0">
                   <node concept="37vLTw" id="hwfPVmiKD7" role="2Oq$k0">
                     <ref role="3cqZAo" node="7N_XUEP3190" resolve="mpsProject" />
@@ -4082,12 +4088,6 @@
                     <node concept="3VsKOn" id="hwfPVmiKD9" role="37wK5m">
                       <ref role="3VsUkX" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                     </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="4gq8yQBZ6Pq" role="2OqNvi">
-                  <ref role="37wK5l" to="31cb:~SRepositoryBase.removeRepositoryListener(org.jetbrains.mps.openapi.module.SRepositoryListener):void" resolve="removeRepositoryListener" />
-                  <node concept="37vLTw" id="4gq8yQBZ6Pr" role="37wK5m">
-                    <ref role="3cqZAo" node="4gq8yQBZ6Ml" resolve="myRepositoryListener" />
                   </node>
                 </node>
               </node>
@@ -4411,6 +4411,12 @@
             </node>
             <node concept="3clFbF" id="4gq8yQBZ6PR" role="3cqZAp">
               <node concept="2OqwBi" id="4gq8yQBZ6PS" role="3clFbG">
+                <node concept="liA8E" id="4gq8yQBZ6PU" role="2OqNvi">
+                  <ref role="37wK5l" to="31cb:~SRepositoryBase.addRepositoryListener(org.jetbrains.mps.openapi.module.SRepositoryListener):void" resolve="addRepositoryListener" />
+                  <node concept="37vLTw" id="4gq8yQBZ6PV" role="37wK5m">
+                    <ref role="3cqZAo" node="4gq8yQBZ6Ml" resolve="myRepositoryListener" />
+                  </node>
+                </node>
                 <node concept="2OqwBi" id="hwfPVmiIu5" role="2Oq$k0">
                   <node concept="37vLTw" id="hwfPVmiHBh" role="2Oq$k0">
                     <ref role="3cqZAo" node="7N_XUEP2Zq_" resolve="mpsProject" />
@@ -4420,12 +4426,6 @@
                     <node concept="3VsKOn" id="hwfPVmiK4J" role="37wK5m">
                       <ref role="3VsUkX" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                     </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="4gq8yQBZ6PU" role="2OqNvi">
-                  <ref role="37wK5l" to="31cb:~SRepositoryBase.addRepositoryListener(org.jetbrains.mps.openapi.module.SRepositoryListener):void" resolve="addRepositoryListener" />
-                  <node concept="37vLTw" id="4gq8yQBZ6PV" role="37wK5m">
-                    <ref role="3cqZAo" node="4gq8yQBZ6Ml" resolve="myRepositoryListener" />
                   </node>
                 </node>
               </node>
@@ -4570,18 +4570,18 @@
                 </node>
                 <node concept="3clFbF" id="4QICnJ5J4js" role="3cqZAp">
                   <node concept="2OqwBi" id="4QICnJ5J4jt" role="3clFbG">
+                    <node concept="liA8E" id="4QICnJ5J4jv" role="2OqNvi">
+                      <ref role="37wK5l" to="hfuk:7lTD6YZtjhM" resolve="addListener" />
+                      <node concept="37vLTw" id="4QICnJ5J4jw" role="37wK5m">
+                        <ref role="3cqZAo" node="4QICnJ5Heuo" resolve="myMakeNotificationListener" />
+                      </node>
+                    </node>
                     <node concept="2OqwBi" id="hwfPVmgNtA" role="2Oq$k0">
                       <node concept="37vLTw" id="hwfPVmgNtB" role="2Oq$k0">
                         <ref role="3cqZAo" node="hwfPVmgHlm" resolve="makeServiceProvider" />
                       </node>
                       <node concept="liA8E" id="hwfPVmgNtC" role="2OqNvi">
                         <ref role="37wK5l" to="hfuk:4QUA3SqtLoe" resolve="get" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="4QICnJ5J4jv" role="2OqNvi">
-                      <ref role="37wK5l" to="hfuk:7lTD6YZtjhM" resolve="addListener" />
-                      <node concept="37vLTw" id="4QICnJ5J4jw" role="37wK5m">
-                        <ref role="3cqZAo" node="4QICnJ5Heuo" resolve="myMakeNotificationListener" />
                       </node>
                     </node>
                   </node>
@@ -4611,8 +4611,8 @@
                       <property role="2bfB8j" value="true" />
                       <property role="1sVAO0" value="false" />
                       <property role="1EXbeo" value="false" />
-                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                       <ref role="1Y3XeK" to="3qmy:~DeployListener" resolve="DeployListener" />
+                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                       <node concept="3clFb_" id="hwfPVmh16b" role="jymVt">
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="onUnloaded" />
@@ -14433,7 +14433,7 @@
                 <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="3jVbLyZGmMI" role="2OqNvi">
-                <ref role="37wK5l" to="3ju5:~FileSystem.getFileByPath(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFileByPath" />
+                <ref role="37wK5l" to="3ju5:~FileSystem.getFile(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFile" />
                 <node concept="2OqwBi" id="3jVbLyZGnpJ" role="37wK5m">
                   <node concept="37vLTw" id="3jVbLyZGnpI" role="2Oq$k0">
                     <ref role="3cqZAo" node="3jVbLyZGmMs" resolve="virtualFile" />
@@ -14536,7 +14536,7 @@
                 <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="3jVbLyZGmNd" role="2OqNvi">
-                <ref role="37wK5l" to="3ju5:~FileSystem.getFileByPath(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFileByPath" />
+                <ref role="37wK5l" to="3ju5:~FileSystem.getFile(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFile" />
                 <node concept="2OqwBi" id="3jVbLyZGnpX" role="37wK5m">
                   <node concept="37vLTw" id="3jVbLyZGnpW" role="2Oq$k0">
                     <ref role="3cqZAo" node="3jVbLyZGmMV" resolve="virtualFile" />

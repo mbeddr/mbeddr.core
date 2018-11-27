@@ -12,6 +12,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -47,6 +48,7 @@
     <property role="TrG5h" value="JSONObject" />
     <property role="34LRSv" value="{" />
     <property role="EcuMT" value="4342692121161028982" />
+    <property role="R4oN_" value="json object" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3L4lRB2Gdr9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -82,6 +84,7 @@
   <node concept="1TIwiD" id="3L4lRB2GdnE">
     <property role="TrG5h" value="Boolean" />
     <property role="EcuMT" value="4342692121161029098" />
+    <property role="R4oN_" value="json boolean" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3L4lRB2GdnH" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -96,6 +99,7 @@
     <property role="TrG5h" value="Array" />
     <property role="34LRSv" value="[" />
     <property role="EcuMT" value="4342692121161029103" />
+    <property role="R4oN_" value="json array" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3L4lRB2GdnM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -112,6 +116,7 @@
     <property role="TrG5h" value="String" />
     <property role="34LRSv" value="&quot;" />
     <property role="EcuMT" value="4342692121161029323" />
+    <property role="R4oN_" value="json string" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3L4lRB2Gdre" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -125,6 +130,7 @@
   <node concept="1TIwiD" id="3L4lRB2Gdrg">
     <property role="TrG5h" value="Number" />
     <property role="EcuMT" value="4342692121161029328" />
+    <property role="R4oN_" value="number matching -?[0-9]+\\.?[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3L4lRB2Gdrh" role="PzmwI">
       <ref role="PrY4T" node="3L4lRB2GdnB" resolve="IValue" />
@@ -139,6 +145,7 @@
     <property role="TrG5h" value="Null" />
     <property role="34LRSv" value="null" />
     <property role="EcuMT" value="4342692121161029335" />
+    <property role="R4oN_" value="json null" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3L4lRB2Gdro" role="PzmwI">
       <ref role="PrY4T" node="3L4lRB2GdnB" resolve="IValue" />

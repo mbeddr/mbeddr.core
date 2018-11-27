@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
   </imports>
@@ -128,9 +128,6 @@
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
         <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
-      </concept>
-      <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
-        <child id="4278635856200826394" name="path" index="1BurEY" />
       </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
         <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
@@ -287,23 +284,6 @@
         <ref role="L2wRA" node="7eF9rfAuv4P" resolve="test.debugger.core" />
       </node>
       <node concept="398223" id="7eF9rfAuv4b" role="39821P">
-        <node concept="28jJK3" id="7eF9rfAuv4c" role="39821P">
-          <node concept="398BVA" id="7eF9rfAuv4d" role="28jJRO">
-            <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
-            <node concept="2Ry0Ak" id="7eF9rfAuv4e" role="iGT6I">
-              <property role="2Ry0Am" value="tests" />
-              <node concept="2Ry0Ak" id="7eF9rfAuv4f" role="2Ry0An">
-                <property role="2Ry0Am" value="test.debugger.core" />
-                <node concept="2Ry0Ak" id="7eF9rfAuv4g" role="2Ry0An">
-                  <property role="2Ry0Am" value="libs" />
-                  <node concept="2Ry0Ak" id="7eF9rfAuv4h" role="2Ry0An">
-                    <property role="2Ry0Am" value="mockito-all-1.9.0.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="28jJK3" id="7eF9rfAuv4i" role="39821P">
           <node concept="398BVA" id="7eF9rfAuv4j" role="28jJRO">
             <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
@@ -348,6 +328,9 @@
       </node>
       <node concept="m$_yC" id="2coa6XmXBNm" role="m$_yJ">
         <ref role="m$_y1" to="p6ld:5qO$P$Prhta" resolve="com.mbeddr.debugger" />
+      </node>
+      <node concept="m$_yC" id="6xaPNaK93q6" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:6xaPNaK8P2s" resolve="org.mockito" />
       </node>
       <node concept="3_J27D" id="7eF9rfAuv4y" role="m_cZH">
         <node concept="3Mxwew" id="7eF9rfAuv4z" role="3MwsjC">
@@ -479,44 +462,6 @@
             <ref role="3bR37D" to="p6ld:7uZw0yZ43K1" resolve="com.mbeddr.core.debug" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2coa6XmpnDz" role="3bR37C">
-          <node concept="1BurEX" id="2coa6XmpnD$" role="1SiIV1">
-            <node concept="398BVA" id="2coa6XmpnDe" role="1BurEY">
-              <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
-              <node concept="2Ry0Ak" id="2coa6XmpnDf" role="iGT6I">
-                <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="2coa6XmpnDg" role="2Ry0An">
-                  <property role="2Ry0Am" value="test.debugger.core" />
-                  <node concept="2Ry0Ak" id="2coa6XmpnDh" role="2Ry0An">
-                    <property role="2Ry0Am" value="libs" />
-                    <node concept="2Ry0Ak" id="2coa6XmpnDi" role="2Ry0An">
-                      <property role="2Ry0Am" value="easymock-3.1.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2coa6XmpnDU" role="3bR37C">
-          <node concept="1BurEX" id="2coa6XmpnDV" role="1SiIV1">
-            <node concept="398BVA" id="2coa6XmpnD_" role="1BurEY">
-              <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
-              <node concept="2Ry0Ak" id="2coa6XmpnDA" role="iGT6I">
-                <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="2coa6XmpnDB" role="2Ry0An">
-                  <property role="2Ry0Am" value="test.debugger.core" />
-                  <node concept="2Ry0Ak" id="2coa6XmpnDC" role="2Ry0An">
-                    <property role="2Ry0Am" value="libs" />
-                    <node concept="2Ry0Ak" id="2coa6XmpnDD" role="2Ry0An">
-                      <property role="2Ry0Am" value="mockito-all-1.9.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="5jdSgR7XyMh" role="3bR37C">
           <node concept="3bR9La" id="5jdSgR7XyMi" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -555,6 +500,12 @@
           <node concept="3bR9La" id="5AvhxT48mBA" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1xb0AuwMYDt" resolve="Hamcrest" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xaPNaK93ok" role="3bR37C">
+          <node concept="3bR9La" id="6xaPNaK93ol" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:6xaPNaK8EVQ" resolve="org.mockito" />
           </node>
         </node>
       </node>

@@ -333,12 +333,29 @@
           </node>
         </node>
         <node concept="3cpWs6" id="5Gboyv9DlDq" role="3cqZAp">
-          <node concept="3cpWs3" id="5Gboyv9DlGS" role="3cqZAk">
-            <node concept="37vLTw" id="4ATA_JBoKrf" role="3uHU7w">
-              <ref role="3cqZAo" node="4ATA_JBoJTo" resolve="normalizedName" />
+          <node concept="3cpWs3" id="1Et_XddfzCx" role="3cqZAk">
+            <node concept="3cpWs3" id="1Et_XddfxqF" role="3uHU7B">
+              <node concept="3cpWs3" id="5Gboyv9DlGS" role="3uHU7B">
+                <node concept="Xl_RD" id="5Gboyv9DlDT" role="3uHU7B">
+                  <property role="Xl_RC" value="tmpVar_assign_" />
+                </node>
+                <node concept="37vLTw" id="4ATA_JBoKrf" role="3uHU7w">
+                  <ref role="3cqZAo" node="4ATA_JBoJTo" resolve="normalizedName" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="1Et_XddfxU9" role="3uHU7w">
+                <property role="Xl_RC" value="_" />
+              </node>
             </node>
-            <node concept="Xl_RD" id="5Gboyv9DlDT" role="3uHU7B">
-              <property role="Xl_RC" value="tmpVar_assign_" />
+            <node concept="2OqwBi" id="1Et_Xddf$8$" role="3uHU7w">
+              <node concept="2JrnkZ" id="1Et_Xddf$8_" role="2Oq$k0">
+                <node concept="37vLTw" id="1Et_Xddf$Ev" role="2JrQYb">
+                  <ref role="3cqZAo" node="5Gboyv9DlCR" resolve="e" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1Et_Xddf$8B" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+              </node>
             </node>
           </node>
         </node>

@@ -483,7 +483,10 @@
                   <ref role="3cqZAo" node="1OcdQnyTCsG" resolve="provider" />
                 </node>
                 <node concept="2qgKlT" id="1OcdQnyTC3n" role="2OqNvi">
-                  <ref role="37wK5l" to="rj8d:1OcdQnyTC1X" resolve="getContributedLocalVariables" />
+                  <ref role="37wK5l" to="rj8d:3LB9aGm4C$b" resolve="getContributedLocalVariables" />
+                  <node concept="1YBJjd" id="2Q1X$ydEpIy" role="37wK5m">
+                    <ref role="1YBMHb" node="1OcdQnyTC1C" resolve="lvd" />
+                  </node>
                 </node>
               </node>
             </node>

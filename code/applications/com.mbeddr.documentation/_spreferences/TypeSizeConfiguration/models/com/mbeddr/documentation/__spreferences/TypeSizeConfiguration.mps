@@ -2,7 +2,7 @@
 <model ref="r:bc4c7408-4f80-411c-a150-ad5ee49a9c11(com.mbeddr.documentation.__spreferences.TypeSizeConfiguration)">
   <persistence version="9" />
   <languages>
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
   </languages>
   <imports />
   <registry>
@@ -20,7 +20,6 @@
       <concept id="8463282783691596310" name="com.mbeddr.core.expressions.structure.UnsignedLongType" flags="ng" index="26VBNf" />
       <concept id="8463282783691492730" name="com.mbeddr.core.expressions.structure.UnsignedIntType" flags="ng" index="26VXez" />
       <concept id="8463282783691492716" name="com.mbeddr.core.expressions.structure.UnsignedCharType" flags="ng" index="26VXeP" />
-      <concept id="1664480272136207708" name="com.mbeddr.core.expressions.structure.CharType" flags="ng" index="biTqx" />
       <concept id="8864856114140038681" name="com.mbeddr.core.expressions.structure.DoubleType" flags="ng" index="2fgwQN" />
       <concept id="9149785691755093694" name="com.mbeddr.core.expressions.structure.IEEE754TypeSizeSpecification" flags="ng" index="2mYgW_">
         <property id="9149785691755093695" name="exists" index="2mYgW$" />
@@ -48,6 +47,7 @@
         <child id="6658270785788810349" name="minDoubleValue" index="3LaRDH" />
         <child id="6658270785788810029" name="maxFloatValue" index="3LaROH" />
       </concept>
+      <concept id="3390250080473522603" name="com.mbeddr.core.expressions.structure.SignedCharType" flags="ng" index="1dkrvn" />
       <concept id="4739982148980385695" name="com.mbeddr.core.expressions.structure.FloatType" flags="ng" index="3AreGT" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
@@ -100,7 +100,7 @@
     </node>
     <node concept="MXy$U" id="ofotRr2l3s" role="MXv61">
       <property role="MzQRn" value="true" />
-      <node concept="biTqx" id="ofotRr2l3q" role="15Utuf">
+      <node concept="1dkrvn" id="p34lOkRaQw" role="15Utuf">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>

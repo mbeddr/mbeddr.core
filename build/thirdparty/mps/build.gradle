@@ -26,15 +26,80 @@ task unzipMPS(dependsOn: downloadMPS) {
     }
 }
 
-task getMPS(dependsOn: unzipMPS) << { }
-
 // Repackages MPS so that the resulting zip contains the contents of 'MPS 3.<x>' directory of the original MPS zip
 task publishMPS(type: Zip, dependsOn: unzipMPS) {
     from mpsUnpackedDir
 }
 
-artifacts {
-    'default' publishMPS
+/*
+ * Repackage frequently needed JAR libraries shipping with MPS (in the lib folder) as individually consumable artifacts.
+ * This is useful for the development of command line utilities, Maven plugins, Gradle plugins, or other things 
+ * that require only smaller parts of the MPS runtime and don't want to end up with a full MPS in their dependencies.
+ */
+
+task packageMpsCore(type: Jar, dependsOn: unzipMPS) {
+    baseName 'mps-core'
+    from zipTree("$mpsUnpackedDir/lib/mps-core.jar")
+}
+
+task packageMpsCoreSources(type: Jar, dependsOn: unzipMPS) {
+    baseName 'mps-core'
+    classifier 'sources'
+    from zipTree("$mpsUnpackedDir/lib/MPS-src.zip")
+}
+
+task packageMpsOpenApi(type: Jar, dependsOn: unzipMPS) {
+    baseName 'mps-openapi'
+    from zipTree("$mpsUnpackedDir/lib/mps-openapi.jar")
+}
+
+task packageMpsOpenApiSources(type: Jar, dependsOn: unzipMPS) {
+    baseName 'mps-openapi'
+    classifier 'sources'
+    from zipTree("$mpsUnpackedDir/lib/MPS-src.zip")
+}
+
+task packageMpsTool(type: Jar, dependsOn: unzipMPS) {
+    baseName 'mps-tool'
+    from zipTree("$mpsUnpackedDir/lib/mps-tool.jar")
+}
+
+task packageMpsToolSources(type: Jar, dependsOn: unzipMPS) {
+    baseName 'mps-tool'
+    classifier 'sources'
+    from zipTree("$mpsUnpackedDir/lib/MPS-src.zip")
+}
+
+task packageMpsEnvironment(type: Jar, dependsOn: unzipMPS) {
+    baseName 'mps-environment'
+    from zipTree("$mpsUnpackedDir/lib/mps-environment.jar")
+}
+
+task packageMpsEnvironmentSources(type: Jar, dependsOn: unzipMPS) {
+    baseName 'mps-environment'
+    classifier 'sources'
+    from zipTree("$mpsUnpackedDir/lib/MPS-src.zip")
+}
+
+task packageMpsPlatform(type: Jar, dependsOn: unzipMPS) {
+    baseName 'mps-platform'
+    from zipTree("$mpsUnpackedDir/lib/mps-platform.jar")
+}
+
+task packageMpsPlatformSources(type: Jar, dependsOn: unzipMPS) {
+    baseName 'mps-platform'
+    classifier 'sources'
+    from zipTree("$mpsUnpackedDir/lib/MPS-src.zip")
+}
+
+task packageJdom(type: Jar, dependsOn: unzipMPS) {
+    baseName 'jdom'
+    from zipTree("$mpsUnpackedDir/lib/jdom.jar")
+}
+
+task packageAnnotations(type: Jar, dependsOn: unzipMPS) {
+    baseName 'annotations'
+    from zipTree("$mpsUnpackedDir/lib/annotations.jar")
 }
 
 publishing {
@@ -44,6 +109,53 @@ publishing {
             artifactId 'mps'
             version mpsBuild
             artifact publishMPS
+        }
+        mpsCore(MavenPublication) {
+            groupId 'com.jetbrains'
+            artifactId 'mps-core'
+            version mpsBuild
+            artifact packageMpsCore
+            artifact packageMpsCoreSources
+        }
+        mpsOpenApi(MavenPublication) {
+            groupId 'com.jetbrains'
+            artifactId 'mps-openapi'
+            version mpsBuild
+            artifact packageMpsOpenApi
+            artifact packageMpsOpenApiSources
+        }
+        mpsTool(MavenPublication) {
+            groupId 'com.jetbrains'
+            artifactId 'mps-tool'
+            version mpsBuild
+            artifact packageMpsTool
+            artifact packageMpsToolSources
+        }
+        mpsEnvironment(MavenPublication) {
+            groupId 'com.jetbrains'
+            artifactId 'mps-environment'
+            version mpsBuild
+            artifact packageMpsEnvironment
+            artifact packageMpsEnvironmentSources
+        }
+        mpsPlatform(MavenPublication) {
+            groupId 'com.jetbrains'
+            artifactId 'mps-platform'
+            version mpsBuild
+            artifact packageMpsPlatform
+            artifact packageMpsPlatformSources
+        }
+        jdom(MavenPublication) {
+            groupId 'com.jetbrains'
+            artifactId 'jdom'
+            version mpsBuild
+            artifact packageJdom
+        }
+        annotations(MavenPublication) {
+            groupId 'com.jetbrains'
+            artifactId 'annotations'
+            version mpsBuild
+            artifact packageAnnotations
         }
     }
 }

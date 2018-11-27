@@ -155,10 +155,7 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -227,9 +224,7 @@
     <node concept="2Q9Fgs" id="16gulW_kO2D" role="2Q9xDr">
       <node concept="2Q9FjX" id="16gulW_kO2E" role="2Q9FjI" />
     </node>
-    <node concept="12mU2y" id="1U5CTQBq1hn" role="2Q9xDr">
-      <node concept="3GpDuo" id="1U5CTQBq1ho" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="1U5CTQBq1hn" role="2Q9xDr" />
     <node concept="31U8uV" id="5YWfxoAE5If" role="2Q9xDr">
       <node concept="31VQpL" id="5YWfxoAE5Ig" role="31UYnO" />
     </node>
