@@ -65,8 +65,8 @@ subprojects {
             ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
             println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
         } else {
-            println "Local build detected. Build will be a SNAPSHOT."
-            ext.mbeddrBuildNumber = "1.0-SNAPSHOT"
+            ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
+            println "Local build detected. Build will have version $ext.mbeddrBuildNumber"
         }
     }
 }
