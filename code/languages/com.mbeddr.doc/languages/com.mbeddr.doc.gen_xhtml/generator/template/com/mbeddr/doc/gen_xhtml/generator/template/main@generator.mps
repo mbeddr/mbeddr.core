@@ -304,12 +304,6 @@
       <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
         <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
-      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
-        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
-      </concept>
-      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
-        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
-      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -3267,19 +3261,12 @@
                     <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
                     <node concept="3zFVjK" id="5yxqZJwzv5k" role="3zH0cK">
                       <node concept="3clFbS" id="5yxqZJwzv5l" role="2VODD2">
-                        <node concept="3cpWs6" id="271UTRL0S_L" role="3cqZAp">
-                          <node concept="2OqwBi" id="271UTRL0S_N" role="3cqZAk">
-                            <node concept="2OqwBi" id="271UTRL0S_O" role="2Oq$k0">
-                              <node concept="30H73N" id="271UTRL0S_P" role="2Oq$k0" />
-                              <node concept="3CFZ6_" id="271UTRL0S_Q" role="2OqNvi">
-                                <node concept="3CFYIy" id="271UTRL0S_R" role="3CFYIz">
-                                  <ref role="3CFYIx" to="2c95:2cjkfC8rZLR" resolve="PlaceInfolder" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3TrcHB" id="271UTRL0S_S" role="2OqNvi">
-                              <ref role="3TsBF5" to="2c95:2cjkfC8rZLY" resolve="location" />
-                            </node>
+                        <node concept="3cpWs6" id="6JxhqyizO5o" role="3cqZAp">
+                          <node concept="2YIFZM" id="6JxhqyizO5q" role="3cqZAk">
+                            <ref role="37wK5l" to="jobd:6JxhqyizuXS" resolve="getImgPath" />
+                            <ref role="1Pybhc" to="jobd:QRmqzHYR8K" resolve="GeneratorHelper" />
+                            <node concept="30H73N" id="6JxhqyizO5r" role="37wK5m" />
+                            <node concept="1iwH7S" id="8hLBkUvBN7" role="37wK5m" />
                           </node>
                         </node>
                       </node>
