@@ -1357,6 +1357,21 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="271UTRL8jid" role="3cqZAp">
+              <node concept="3cpWsn" id="271UTRL8jie" role="3cpWs9">
+                <property role="TrG5h" value="docGenFolder" />
+                <node concept="3uibUv" id="271UTRL8ji2" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2YIFZM" id="271UTRL8jif" role="33vP2m">
+                  <ref role="37wK5l" to="znf5:2DWJLXXzCiq" resolve="getDocGenFolder" />
+                  <ref role="1Pybhc" to="znf5:6RvWQYjPIDF" resolve="GenerationHelper" />
+                  <node concept="37vLTw" id="271UTRL8jig" role="37wK5m">
+                    <ref role="3cqZAo" node="49PUF$HTiTB" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="2Gpval" id="49PUF$HTi2x" role="3cqZAp">
               <node concept="2GrKxI" id="49PUF$HTi2y" role="2Gsz3X">
                 <property role="TrG5h" value="doc" />
@@ -1451,6 +1466,40 @@
               <node concept="3clFbS" id="271UTRKZGn0" role="2LFqv$">
                 <node concept="3clFbJ" id="271UTRKZHgM" role="3cqZAp">
                   <node concept="3clFbS" id="271UTRKZHgO" role="3clFbx">
+                    <node concept="3cpWs8" id="6JxhqyiyMBl" role="3cqZAp">
+                      <node concept="3cpWsn" id="6JxhqyiyMBo" role="3cpWs9">
+                        <property role="TrG5h" value="imgPath" />
+                        <node concept="3uibUv" id="6JxhqyiyMBp" role="1tU5fm">
+                          <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                        </node>
+                        <node concept="2ShNRf" id="6JxhqyiyMBq" role="33vP2m">
+                          <node concept="1pGfFk" id="6JxhqyiyMBr" role="2ShVmc">
+                            <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+                            <node concept="37vLTw" id="6JxhqyiyMBs" role="37wK5m">
+                              <ref role="3cqZAo" node="271UTRL8jie" resolve="docGenFolder" />
+                            </node>
+                            <node concept="2OqwBi" id="6JxhqyiyMBt" role="37wK5m">
+                              <node concept="2OqwBi" id="6JxhqyiyMBu" role="2Oq$k0">
+                                <node concept="2OqwBi" id="6JxhqyiyMBv" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="6JxhqyiyPRJ" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="271UTRKZGmW" resolve="imgParagraph" />
+                                  </node>
+                                  <node concept="2qgKlT" id="6JxhqyiyMBx" role="2OqNvi">
+                                    <ref role="37wK5l" to="4gky:3UlEobTHU0G" resolve="getPath" />
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="6JxhqyiyMBy" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="2c95:2iGZqsHuOq2" resolve="pathPicker" />
+                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="6JxhqyiyMBz" role="2OqNvi">
+                                <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbF" id="271UTRKZYAE" role="3cqZAp">
                       <node concept="37vLTI" id="271UTRL00C8" role="3clFbG">
                         <node concept="2pJPEk" id="271UTRL00YQ" role="37vLTx">
@@ -1458,23 +1507,11 @@
                             <ref role="2pJxaS" to="2c95:2cjkfC8rZLR" resolve="PlaceInfolder" />
                             <node concept="2pJxcG" id="271UTRL01aD" role="2pJxcM">
                               <ref role="2pJxcJ" to="2c95:2cjkfC8rZLY" resolve="location" />
-                              <node concept="2OqwBi" id="271UTRL2daF" role="2pJxcZ">
-                                <node concept="2YIFZM" id="271UTRL2beF" role="2Oq$k0">
-                                  <ref role="37wK5l" to="znf5:271UTRL1QGA" resolve="getResourceOutputLocation" />
-                                  <ref role="1Pybhc" to="znf5:6RvWQYjPIDF" resolve="GenerationHelper" />
-                                  <node concept="37vLTw" id="271UTRL2bFv" role="37wK5m">
-                                    <ref role="3cqZAo" node="49PUF$HTiTB" resolve="m" />
-                                  </node>
-                                  <node concept="2OqwBi" id="271UTRL2c3Z" role="37wK5m">
-                                    <node concept="2GrUjf" id="271UTRL2bJz" role="2Oq$k0">
-                                      <ref role="2Gs0qQ" node="271UTRKZGmW" resolve="imgParagraph" />
-                                    </node>
-                                    <node concept="3TrEf2" id="271UTRL2cHf" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="2c95:5yxqZJwzQtY" resolve="resource" />
-                                    </node>
-                                  </node>
+                              <node concept="2OqwBi" id="6JxhqyiyZPJ" role="2pJxcZ">
+                                <node concept="37vLTw" id="6JxhqyiyZzW" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6JxhqyiyMBo" resolve="imgPath" />
                                 </node>
-                                <node concept="liA8E" id="271UTRL2ezb" role="2OqNvi">
+                                <node concept="liA8E" id="6Jxhqyiz0jR" role="2OqNvi">
                                   <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
                                 </node>
                               </node>
@@ -1635,16 +1672,16 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs8" id="271UTRL8jid" role="3cqZAp">
-                  <node concept="3cpWsn" id="271UTRL8jie" role="3cpWs9">
+                <node concept="3cpWs8" id="6JxhqyiyX_w" role="3cqZAp">
+                  <node concept="3cpWsn" id="6JxhqyiyX_x" role="3cpWs9">
                     <property role="TrG5h" value="docGenFolder" />
-                    <node concept="3uibUv" id="271UTRL8ji2" role="1tU5fm">
+                    <node concept="3uibUv" id="6JxhqyiyX_y" role="1tU5fm">
                       <ref role="3uigEE" to="guwi:~File" resolve="File" />
                     </node>
-                    <node concept="2YIFZM" id="271UTRL8jif" role="33vP2m">
+                    <node concept="2YIFZM" id="6JxhqyiyX_z" role="33vP2m">
                       <ref role="37wK5l" to="znf5:2DWJLXXzCiq" resolve="getDocGenFolder" />
                       <ref role="1Pybhc" to="znf5:6RvWQYjPIDF" resolve="GenerationHelper" />
-                      <node concept="37vLTw" id="271UTRL8jig" role="37wK5m">
+                      <node concept="37vLTw" id="6JxhqyiyX_$" role="37wK5m">
                         <ref role="3cqZAo" node="4pIcGAB_Eke" resolve="m" />
                       </node>
                     </node>
@@ -1652,7 +1689,7 @@
                 </node>
                 <node concept="3cpWs8" id="4pIcGABAi7M" role="3cqZAp">
                   <node concept="3cpWsn" id="4pIcGABAi7N" role="3cpWs9">
-                    <property role="TrG5h" value="images" />
+                    <property role="TrG5h" value="defaultImages" />
                     <node concept="3uibUv" id="4pIcGABAi7p" role="1tU5fm">
                       <ref role="3uigEE" to="guwi:~File" resolve="File" />
                     </node>
@@ -1660,7 +1697,7 @@
                       <node concept="1pGfFk" id="4pIcGABAi7P" role="2ShVmc">
                         <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
                         <node concept="37vLTw" id="271UTRL8k9a" role="37wK5m">
-                          <ref role="3cqZAo" node="271UTRL8jie" resolve="docGenFolder" />
+                          <ref role="3cqZAo" node="6JxhqyiyX_x" resolve="docGenFolder" />
                         </node>
                         <node concept="2OqwBi" id="271UTRL8p6X" role="37wK5m">
                           <node concept="2OqwBi" id="271UTRL8n3x" role="2Oq$k0">
@@ -1794,11 +1831,11 @@
                         <ref role="2pJxaS" to="2c95:2cjkfC8rZLR" resolve="PlaceInfolder" />
                         <node concept="2pJxcG" id="271UTRL9gou" role="2pJxcM">
                           <ref role="2pJxcJ" to="2c95:2cjkfC8rZLY" resolve="location" />
-                          <node concept="2OqwBi" id="271UTRL9iNm" role="2pJxcZ">
-                            <node concept="37vLTw" id="271UTRL9ixq" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4pIcGAB_SKE" resolve="imagefile" />
+                          <node concept="2OqwBi" id="6JxhqyiyLug" role="2pJxcZ">
+                            <node concept="37vLTw" id="6JxhqyiyLcj" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4pIcGABAi7N" resolve="defaultImages" />
                             </node>
-                            <node concept="liA8E" id="271UTRL9k0h" role="2OqNvi">
+                            <node concept="liA8E" id="6JxhqyiyM2D" role="2OqNvi">
                               <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
                             </node>
                           </node>
