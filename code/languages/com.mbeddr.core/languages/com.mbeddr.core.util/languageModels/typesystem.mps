@@ -4159,7 +4159,7 @@
         <node concept="3clFbS" id="1Dj9kKMwBY7" role="3clFbx">
           <node concept="2MkqsV" id="1Dj9kKMwJm_" role="3cqZAp">
             <node concept="Xl_RD" id="1Dj9kKMwJmO" role="2MkJ7o">
-              <property role="Xl_RC" value="Init value of data logger item can only be literals or references to global constants" />
+              <property role="Xl_RC" value="init value of data logger item should be statically evaluatable (e.g. constants, literals, )" />
             </node>
             <node concept="2OqwBi" id="1Dj9kKMwJzj" role="2OEOjV">
               <node concept="1YBJjd" id="1Dj9kKMwJoJ" role="2Oq$k0">
@@ -4173,36 +4173,17 @@
         </node>
         <node concept="3fqX7Q" id="1Dj9kKMwY0t" role="3clFbw">
           <node concept="1eOMI4" id="1Dj9kKMwY0v" role="3fr31v">
-            <node concept="22lmx$" id="1Dj9kKMwY0w" role="1eOMHV">
-              <node concept="2OqwBi" id="1Dj9kKMwY0x" role="3uHU7w">
-                <node concept="2OqwBi" id="1Dj9kKMwY0y" role="2Oq$k0">
-                  <node concept="1YBJjd" id="1Dj9kKMwY0z" role="2Oq$k0">
-                    <ref role="1YBMHb" node="4itX8XVBigF" resolve="di" />
-                  </node>
-                  <node concept="3TrEf2" id="1Dj9kKMwY0$" role="2OqNvi">
-                    <ref role="3Tt5mk" to="k146:2PpKJy$1T$t" resolve="initValue" />
-                  </node>
+            <node concept="2OqwBi" id="2r6d2fwC97F" role="1eOMHV">
+              <node concept="2OqwBi" id="1Dj9kKMwY0C" role="2Oq$k0">
+                <node concept="1YBJjd" id="1Dj9kKMwY0D" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4itX8XVBigF" resolve="di" />
                 </node>
-                <node concept="1mIQ4w" id="1Dj9kKMwY0_" role="2OqNvi">
-                  <node concept="chp4Y" id="1Dj9kKMwY0A" role="cj9EA">
-                    <ref role="cht4Q" to="mj1l:7FQByU3CrDq" resolve="Literal" />
-                  </node>
+                <node concept="3TrEf2" id="1Dj9kKMwY0E" role="2OqNvi">
+                  <ref role="3Tt5mk" to="k146:2PpKJy$1T$t" resolve="initValue" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="1Dj9kKMwY0B" role="3uHU7B">
-                <node concept="2OqwBi" id="1Dj9kKMwY0C" role="2Oq$k0">
-                  <node concept="1YBJjd" id="1Dj9kKMwY0D" role="2Oq$k0">
-                    <ref role="1YBMHb" node="4itX8XVBigF" resolve="di" />
-                  </node>
-                  <node concept="3TrEf2" id="1Dj9kKMwY0E" role="2OqNvi">
-                    <ref role="3Tt5mk" to="k146:2PpKJy$1T$t" resolve="initValue" />
-                  </node>
-                </node>
-                <node concept="1mIQ4w" id="1Dj9kKMwY0F" role="2OqNvi">
-                  <node concept="chp4Y" id="1Dj9kKMwY0G" role="cj9EA">
-                    <ref role="cht4Q" to="x27k:3ilck8KqBqr" resolve="GlobalConstantRef" />
-                  </node>
-                </node>
+              <node concept="2qgKlT" id="2r6d2fwCa6J" role="2OqNvi">
+                <ref role="37wK5l" to="ywuz:3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
               </node>
             </node>
           </node>
