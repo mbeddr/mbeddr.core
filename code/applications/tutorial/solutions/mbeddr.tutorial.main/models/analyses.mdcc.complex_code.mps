@@ -1123,6 +1123,19 @@
       <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="1vS6pqCu853" resolve="_030_master_slave_harness" />
     </node>
+    <node concept="2f$52y" id="KkT2sb8VZp" role="lGtFl">
+      <node concept="3vAitl" id="KkT2sb8VZq" role="2f$52z">
+        <property role="3ajGZW" value="z003cemm" />
+        <property role="3ajGZ3" value="28.11.2018 22:40:41" />
+        <property role="19LeSh" value="property_name" />
+        <ref role="19LoX1" node="7APyAbMeR2i" />
+        <node concept="19SGf9" id="KkT2sb8VZr" role="3ajGZ5">
+          <node concept="19SUe$" id="KkT2sb8VZs" role="19SJt6">
+            <property role="19SUeA" value="error intended - we deliberately let gcc in the build configuration - for robustness analyses this needs to be changed to clang with corresponding flags" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="rcWEw" id="7APyAbMeJQA">
     <property role="TrG5h" value="tree234" />
