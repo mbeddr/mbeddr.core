@@ -43,9 +43,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.forms/com.mbeddr.mpsutil.forms.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.mpl" folder="rest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="staging" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells.runtimelang/com.mbeddr.mpsutil.grammarcells.runtimelang.mpl" folder="staging.grammarCells" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells.sandboxlang/com.mbeddr.mpsutil.grammarcells.sandboxlang.mpl" folder="staging.grammarCells" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.mpl" folder="staging.grammarCells" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream.example/com.mbeddr.mpsutil.graphstream.example.mpl" folder="staging.graphstream.example" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream.example/sandbox/com.mbeddr.mpsutil.graphstream.example.sandbox.msd" folder="staging.graphstream.example" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream/com.mbeddr.mpsutil.graphstream.mpl" folder="staging.graphstream" />
@@ -156,9 +153,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.extensionclass.annotation/com.mbeddr.mpsutil.extensionclass.annotation.msd" folder="staging.extensionclass" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.generatorfacade/com.mbeddr.mpsutil.generatorfacade.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.genericactions/com.mbeddr.mpsutil.genericactions.msd" folder="staging" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.grammarcells.runtime/com.mbeddr.mpsutil.grammarcells.runtime.msd" folder="staging.grammarCells" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.grammarcells.sandbox/com.mbeddr.mpsutil.grammarcells.sandbox.msd" folder="staging.grammarCells" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.grammarcells.tests/com.mbeddr.mpsutil.grammarcells.tests.msd" folder="staging.grammarCells" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.msd" folder="staging.httpSupport" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.msd" folder="staging.httpSupport" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.intentions.runtime/com.mbeddr.mpsutil.intentions.runtime.msd" folder="stable.intentions" />

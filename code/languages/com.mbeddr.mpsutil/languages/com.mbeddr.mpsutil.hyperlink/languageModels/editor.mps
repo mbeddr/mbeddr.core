@@ -95,6 +95,20 @@
       <property role="TrG5h" value="hyperlink-node" />
       <node concept="3Tqbb2" id="ojedFZ7Qiu" role="3t5Oan" />
     </node>
+    <node concept="3t5Usi" id="6gZrhT92Nte" role="V601i">
+      <property role="TrG5h" value="hyperlink-focus" />
+      <node concept="10P_77" id="6gZrhT93hQX" role="3t5Oan" />
+      <node concept="3clFbT" id="6gZrhT93hR7" role="3t49C2">
+        <property role="3clFbU" value="true" />
+      </node>
+    </node>
+    <node concept="3t5Usi" id="6gZrhT93hS7" role="V601i">
+      <property role="TrG5h" value="hyperlink-select" />
+      <node concept="10P_77" id="6gZrhT93i66" role="3t5Oan" />
+      <node concept="3clFbT" id="6gZrhT93i6f" role="3t49C2">
+        <property role="3clFbU" value="true" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="80_psC5vRk">
     <ref role="1XX52x" to="djae:80_psC5vQ9" resolve="DummyConcept" />
