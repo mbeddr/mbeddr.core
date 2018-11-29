@@ -47,7 +47,6 @@
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="i8lq" ref="9414e29c-0c8d-4bc7-b251-f312597fb993/java:org.mockito.internal.verification(org.mockito/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="i8lr" ref="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e/java:org.mockito.internal.verification(test.debugger.core/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -29446,7 +29445,7 @@
                 </node>
                 <node concept="2ShNRf" id="5XU7UUGbaR6" role="37wK5m">
                   <node concept="1pGfFk" id="5XU7UUGbaR7" role="2ShVmc">
-                    <ref role="37wK5l" to="i8lr:~Times.&lt;init&gt;(int)" resolve="Times" />
+                    <ref role="37wK5l" to="i8lq:~Times.&lt;init&gt;(int)" resolve="Times" />
                     <node concept="3cmrfG" id="5XU7UUGbaR8" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
