@@ -22,9 +22,12 @@ To contribute your module to the mbeddr platform for reuse, you probably want to
      - add a language named "com.mbeddr.mpsutil.$yourLanguageName.sandbox" that demos how to use your language
      - add a "com.mbeddr.mpsutil.$yourLanguageName.sandbox.sandbox" solution that demonstrates the effect of what the sandbox language implemented
 - open the MPS project "code/languages/com.mbeddr.build"
-    - open the build script at "com.mbeddr.dev" named "com.mbeddr.platform"
+    - open the build script at "com.mbeddr.platform" named "com.mbeddr.platform"
     - add a group named "group.$yourLanguageName"
     - add a plugin that bundles your extension based on this group with the needed dependencies
     - add your plugin to the default layout
-    - open the test build script at "com.mbeddr.dev" named "testssssss?" and add your tests
+    - open the test build script at "platform/com.mbeddr.platform/com.mbeddr.platform.mpsutils.ts.tests.build" and add your tests
+    - add your test solution and its dependencies to the group "com.mbeddr.platform.tests"
+    - add it to the default layout
+    - add it to the test modules configuration
 - run the build locally with `./gradlew publishMbeddrPlatformPublicationToMavenLocal` and check if your project functions with it
