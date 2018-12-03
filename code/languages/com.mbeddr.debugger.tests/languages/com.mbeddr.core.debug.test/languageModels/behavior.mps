@@ -2,7 +2,7 @@
 <model ref="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -39,7 +39,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -57,9 +56,6 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -426,7 +422,6 @@
       <property role="TrG5h" value="getTestSet" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="tpe5:hGB2z8L" resolve="getTestSet" />
       <node concept="3Tm1VV" id="67gjJAxXnpY" role="1B3o_S" />
       <node concept="3clFbS" id="67gjJAxXnpZ" role="3clF47">
@@ -1033,7 +1028,6 @@
     <ref role="13h7C2" to="rpmx:5S3xvtirw9" resolve="DebuggerTestcase" />
     <node concept="13i0hz" id="3M3l$fnAUlr" role="13h7CS">
       <property role="TrG5h" value="getTestCase" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="tpe5:hGBgWVd" resolve="getTestCase" />
       <node concept="3clFbS" id="3M3l$fnAUls" role="3clF47">
         <node concept="3clFbF" id="3M3l$fnAUlt" role="3cqZAp">
@@ -1056,7 +1050,6 @@
     </node>
     <node concept="13i0hz" id="3M3l$fnAUl_" role="13h7CS">
       <property role="TrG5h" value="getTestName" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="tpe5:hGBohAB" resolve="getTestName" />
       <node concept="3clFbS" id="3M3l$fnAUlA" role="3clF47">
         <node concept="3clFbF" id="3M3l$fnAUlB" role="3cqZAp">
@@ -1373,8 +1366,6 @@
     </node>
     <node concept="13i0hz" id="7Jr7T0w2LSp" role="13h7CS">
       <property role="TrG5h" value="getPresentation" />
-      <property role="13i0is" value="false" />
-      <property role="IEkAT" value="false" />
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
