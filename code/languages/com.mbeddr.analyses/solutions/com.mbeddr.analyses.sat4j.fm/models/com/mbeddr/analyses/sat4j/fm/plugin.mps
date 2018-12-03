@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
@@ -102,7 +102,6 @@
     <property role="TrG5h" value="IVariabilityUseCheckerFactory" />
     <node concept="2tJIrI" id="7cDRCwNlVn9" role="jymVt" />
     <node concept="3clFb_" id="7cDRCwNnyoU" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="canCreateConsistencyChecker" />
       <node concept="3clFbS" id="7cDRCwNnyoV" role="3clF47" />
@@ -118,7 +117,6 @@
     </node>
     <node concept="2tJIrI" id="7cDRCwNnyoy" role="jymVt" />
     <node concept="3clFb_" id="7cDRCwNmhNB" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="createConsistencyChecker" />
       <node concept="3clFbS" id="7cDRCwNmhNE" role="3clF47" />

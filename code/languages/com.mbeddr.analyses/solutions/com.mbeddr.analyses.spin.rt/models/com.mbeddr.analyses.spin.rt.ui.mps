@@ -2,9 +2,9 @@
 <model ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(com.mbeddr.analyses.spin.rt.ui)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
   </languages>
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
@@ -41,9 +41,6 @@
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -934,7 +931,6 @@
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="actionPerformed" />
                       <property role="DiZV1" value="false" />
-                      <property role="IEkAT" value="false" />
                       <node concept="3Tm1VV" id="2k2dPZH6$t5" role="1B3o_S" />
                       <node concept="3cqZAl" id="2k2dPZH6$t6" role="3clF45" />
                       <node concept="37vLTG" id="2k2dPZH6$t7" role="3clF46">
@@ -1778,7 +1774,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getColumnCount" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="31nZcrlJSxf" role="1B3o_S" />
       <node concept="10Oyi0" id="31nZcrlJSxg" role="3clF45" />
       <node concept="3clFbS" id="31nZcrlJSxh" role="3clF47">
@@ -1800,7 +1795,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getValueAt" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="37vLTG" id="31nZcrlJSxl" role="3clF46">
         <property role="TrG5h" value="rowIndex" />
         <node concept="10Oyi0" id="31nZcrlJSxm" role="1tU5fm" />
@@ -1907,7 +1901,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getColumnName" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="1d23YaE_GKl" role="1B3o_S" />
       <node concept="17QB3L" id="1d23YaE_GKm" role="3clF45" />
       <node concept="37vLTG" id="1d23YaE_GKn" role="3clF46">
@@ -1976,7 +1969,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isCellEditable" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3kLBXRr$3oF" role="1B3o_S" />
       <node concept="10P_77" id="3kLBXRr$3oH" role="3clF45" />
       <node concept="37vLTG" id="3kLBXRr$3oI" role="3clF46">
