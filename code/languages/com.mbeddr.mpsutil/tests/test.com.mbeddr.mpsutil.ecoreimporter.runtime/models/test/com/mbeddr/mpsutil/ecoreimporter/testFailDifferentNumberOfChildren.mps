@@ -2,7 +2,7 @@
 <model ref="r:d146aed2-5e94-444c-91f0-f6e336f68f7b(test.com.mbeddr.mpsutil.ecoreimporter.testFailDifferentNumberOfChildren)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore" version="0" />
   </languages>
   <imports>

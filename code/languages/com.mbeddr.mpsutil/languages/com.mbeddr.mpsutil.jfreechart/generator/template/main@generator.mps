@@ -2,7 +2,7 @@
 <model ref="r:7404fda4-c2cf-440e-b738-38e46a5c1b0e(com.mbeddr.mpsutil.jfreechart.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="12660903-78c0-48ab-832f-9da144d9d346" name="com.mbeddr.mpsutil.jfreechart" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />

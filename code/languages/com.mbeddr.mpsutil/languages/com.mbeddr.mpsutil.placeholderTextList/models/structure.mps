@@ -83,9 +83,6 @@
     <property role="TrG5h" value="StubCellModel_PlaceholderTextList" />
     <property role="EcuMT" value="1739942158294203068" />
     <ref role="1TJDcQ" node="1w_x2MyQvbc" resolve="CellModel_PlaceholderTextList" />
-    <node concept="PrWs8" id="1w_x2MyQzEX" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
     <node concept="PrWs8" id="1w_x2MyQzEY" role="PzmwI">
       <ref role="PrY4T" to="tpck:8AYOKVCAP5" resolve="IStubForAnotherConcept" />
     </node>

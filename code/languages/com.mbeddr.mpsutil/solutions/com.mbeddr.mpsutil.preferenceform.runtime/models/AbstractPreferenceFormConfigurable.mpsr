@@ -22,9 +22,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -170,7 +167,6 @@
     </language>
   </registry>
   <node concept="312cEu" id="~BasePrefsPage">
-    <property role="IEkAT" value="false" />
     <property role="1sVAO0" value="true" />
     <property role="TrG5h" value="AbstractPreferenceFormConfigurable" />
     <property role="1EXbeo" value="false" />
@@ -228,7 +224,6 @@
     </node>
     <node concept="2tJIrI" id="4vnGofEqQ8_" role="jymVt" />
     <node concept="312cEg" id="~BasePrefsPage.myPrefsComponent" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="preferenceFormComponent" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="X7OD3Wrikv" role="1B3o_S" />
@@ -247,7 +242,6 @@
     </node>
     <node concept="2tJIrI" id="4vnGofEqPcU" role="jymVt" />
     <node concept="312cEg" id="4vnGofErdC0" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="jComponent" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="4vnGofEqMDl" role="1tU5fm">
@@ -267,7 +261,6 @@
     </node>
     <node concept="2tJIrI" id="4vnGofEzdu$" role="jymVt" />
     <node concept="3clFbW" id="~BasePrefsPage.&lt;init&gt;(com.intellij.openapi.project.Project,jetbrains.mps.plugins.prefs.BaseProjectPrefsComponent)" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="BasePrefsPage" />
       <node concept="3cqZAl" id="X7OD3Wril5" role="3clF45" />
       <node concept="3Tmbuc" id="X7OD3Wriky" role="1B3o_S" />
@@ -337,7 +330,6 @@
     </node>
     <node concept="2tJIrI" id="X7OD3WtBLk" role="jymVt" />
     <node concept="3clFb_" id="~BasePrefsPage.createConfigurable():com.intellij.openapi.options.Configurable" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="createConfigurable" />
       <property role="DiZV1" value="false" />
       <property role="1EzhhJ" value="false" />
@@ -358,7 +350,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="canCreateConfigurable" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="qD4yGfoQBL" role="1B3o_S" />
       <node concept="10P_77" id="qD4yGfoQBN" role="3clF45" />
       <node concept="3clFbS" id="qD4yGfoQBO" role="3clF47">
@@ -374,7 +365,6 @@
     </node>
     <node concept="2tJIrI" id="X7OD3WrIsi" role="jymVt" />
     <node concept="3clFb_" id="~BasePrefsPage.getPrefsComponent():jetbrains.mps.plugins.prefs.BaseProjectPrefsComponent" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="getPreferenceFormComponent" />
       <property role="DiZV1" value="false" />
       <property role="1EzhhJ" value="false" />
@@ -418,7 +408,6 @@
     </node>
     <node concept="2tJIrI" id="X7OD3WtBSn" role="jymVt" />
     <node concept="3clFb_" id="~BasePrefsPage.getHelpTopic():java.lang.String" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="getHelpTopic" />
       <property role="DiZV1" value="false" />
       <property role="1EzhhJ" value="false" />
@@ -438,7 +427,6 @@
     </node>
     <node concept="2tJIrI" id="4vnGofEqUE$" role="jymVt" />
     <node concept="3clFb_" id="4vnGofErgXA" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="createComponent" />
       <property role="DiZV1" value="false" />
       <property role="1EzhhJ" value="false" />
@@ -688,7 +676,6 @@
     </node>
     <node concept="2tJIrI" id="X7OD3WtBZr" role="jymVt" />
     <node concept="3clFb_" id="~BasePrefsPage.register():void" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="register" />
       <property role="DiZV1" value="false" />
       <property role="1EzhhJ" value="true" />
@@ -697,7 +684,6 @@
       <node concept="3clFbS" id="X7OD3WrJnO" role="3clF47" />
     </node>
     <node concept="3clFb_" id="~BasePrefsPage.unregister():void" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="unregister" />
       <property role="DiZV1" value="false" />
       <property role="1EzhhJ" value="true" />

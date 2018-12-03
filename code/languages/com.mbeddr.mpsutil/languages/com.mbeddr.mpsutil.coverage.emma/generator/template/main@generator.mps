@@ -2,7 +2,7 @@
 <model ref="r:546378bd-203e-42a5-84f2-52e063b101a4(com.mbeddr.mpsutil.coverage.emma.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
   </languages>
   <imports />
   <registry>

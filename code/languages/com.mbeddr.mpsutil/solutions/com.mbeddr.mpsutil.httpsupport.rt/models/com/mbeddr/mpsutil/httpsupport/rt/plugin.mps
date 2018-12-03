@@ -4,12 +4,12 @@
   <languages>
     <use id="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265" name="com.mbeddr.mpsutil.preferenceform" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports />
   <registry>
@@ -21,9 +21,6 @@
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -169,8 +166,8 @@
       <concept id="4728279602824475247" name="com.mbeddr.mpsutil.preferenceform.structure.IntegerFieldPreferenceFormProperty" flags="ng" index="czsHg">
         <property id="4728279602824496322" name="defaultValue" index="cyBRX" />
       </concept>
-      <concept id="1210676672555" name="com.mbeddr.mpsutil.preferenceform.structure.OnBeforeWriteBlockApplication" flags="in" index="3xWZ$M" />
-      <concept id="1210676879526" name="com.mbeddr.mpsutil.preferenceform.structure.OnAfterReadBlockApplication" flags="in" index="3xXM6Z" />
+      <concept id="1210676672555" name="com.mbeddr.mpsutil.preferenceform.structure.OnBeforeWriteBlockApplication" flags="ng" index="3xWZ$M" />
+      <concept id="1210676879526" name="com.mbeddr.mpsutil.preferenceform.structure.OnAfterReadBlockApplication" flags="ng" index="3xXM6Z" />
       <concept id="145956936283289547" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceForm" flags="ng" index="1DFvN4">
         <property id="1101080154068563577" name="scope" index="3NeIjD" />
         <child id="145956936283569518" name="properties" index="1DEjpx" />
@@ -189,7 +186,6 @@
   <node concept="3HP615" id="3vXSZsAPOG0">
     <property role="TrG5h" value="IHttpServerConfigChangeListener" />
     <node concept="3clFb_" id="3vXSZsAPOHl" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="serverChanged" />
       <node concept="3cqZAl" id="3vXSZsAPOHn" role="3clF45" />
       <node concept="3Tm1VV" id="3vXSZsAPOHo" role="1B3o_S" />
@@ -212,7 +208,6 @@
   <node concept="312cEu" id="3vXSZsAPOLr">
     <property role="TrG5h" value="HttpServerConfig" />
     <node concept="Wx3nA" id="24HfET2rZCf" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="currentConfig" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="24HfET2rZtM" role="1tU5fm">

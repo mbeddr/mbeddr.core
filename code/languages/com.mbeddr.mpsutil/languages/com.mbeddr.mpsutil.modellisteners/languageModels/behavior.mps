@@ -2,7 +2,7 @@
 <model ref="r:0c81e2c1-ba6e-4ec9-83d9-30ec00711168(com.mbeddr.mpsutil.modellisteners.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -25,7 +25,6 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -120,7 +119,7 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -144,7 +143,6 @@
       <node concept="3clFbS" id="52ZF9D3a$Un" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="52ZF9D3a$YW" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -411,7 +409,6 @@
       </node>
     </node>
     <node concept="13i0hz" id="5iW7uqbHFFA" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -552,7 +549,6 @@
   <node concept="13h7C7" id="5iW7uqbPABt">
     <ref role="13h7C2" to="wlk:5iW7uqbP_TN" resolve="PropertyListener" />
     <node concept="13i0hz" id="5iW7uqbPARx" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -698,7 +694,6 @@
       <node concept="3clFbS" id="5iW7uqbVMHx" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="5iW7uqbVMVC" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />

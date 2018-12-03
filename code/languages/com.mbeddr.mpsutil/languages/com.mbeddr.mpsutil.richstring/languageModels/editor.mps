@@ -2,9 +2,9 @@
 <model ref="r:7c38bd44-8ea3-4ed7-b744-09e999574f84(com.mbeddr.mpsutil.richstring.editor)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -216,9 +216,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -1821,7 +1818,6 @@
                               <property role="1EzhhJ" value="false" />
                               <property role="TrG5h" value="doExecute" />
                               <property role="DiZV1" value="false" />
-                              <property role="IEkAT" value="false" />
                               <node concept="3Tmbuc" id="svyVWhdDwR" role="1B3o_S" />
                               <node concept="3Tqbb2" id="svyVWhdDwS" role="3clF45" />
                               <node concept="37vLTG" id="svyVWhdDwT" role="3clF46">
@@ -2125,7 +2121,6 @@
                               <property role="1EzhhJ" value="false" />
                               <property role="TrG5h" value="doExecute" />
                               <property role="DiZV1" value="false" />
-                              <property role="IEkAT" value="false" />
                               <node concept="3Tmbuc" id="svyVWhdqI_" role="1B3o_S" />
                               <node concept="3Tqbb2" id="svyVWhdqIA" role="3clF45" />
                               <node concept="37vLTG" id="svyVWhdqIB" role="3clF46">
@@ -2651,7 +2646,6 @@
                               <property role="1EzhhJ" value="false" />
                               <property role="TrG5h" value="doExecute" />
                               <property role="DiZV1" value="false" />
-                              <property role="IEkAT" value="false" />
                               <node concept="3Tmbuc" id="svyVWhdimY" role="1B3o_S" />
                               <node concept="3Tqbb2" id="svyVWhdimZ" role="3clF45" />
                               <node concept="37vLTG" id="svyVWhdin0" role="3clF46">
@@ -2886,7 +2880,6 @@
                           <property role="1EzhhJ" value="false" />
                           <property role="TrG5h" value="doExecute" />
                           <property role="DiZV1" value="false" />
-                          <property role="IEkAT" value="false" />
                           <node concept="3Tmbuc" id="svyVWhdlTt" role="1B3o_S" />
                           <node concept="3Tqbb2" id="svyVWhdlTu" role="3clF45" />
                           <node concept="37vLTG" id="svyVWhdlTv" role="3clF46">
@@ -3135,7 +3128,6 @@
                           <property role="1EzhhJ" value="false" />
                           <property role="TrG5h" value="doExecute" />
                           <property role="DiZV1" value="false" />
-                          <property role="IEkAT" value="false" />
                           <node concept="3Tmbuc" id="svyVWhdecJ" role="1B3o_S" />
                           <node concept="3Tqbb2" id="svyVWhdecK" role="3clF45" />
                           <node concept="37vLTG" id="svyVWhdecL" role="3clF46">

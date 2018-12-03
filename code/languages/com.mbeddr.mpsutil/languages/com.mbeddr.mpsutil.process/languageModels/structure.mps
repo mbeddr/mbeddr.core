@@ -238,9 +238,6 @@
     <property role="3GE5qa" value="step" />
     <property role="EcuMT" value="4671234082064327552" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="43jzEnW9hhQ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
     <node concept="1TJgyj" id="43jzEnW9hZ4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="step" />

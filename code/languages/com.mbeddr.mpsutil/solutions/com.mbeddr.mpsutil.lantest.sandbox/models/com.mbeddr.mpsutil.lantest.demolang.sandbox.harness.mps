@@ -4,7 +4,7 @@
   <languages>
     <use id="11012074-e364-40c8-a31d-7433f6bf3d62" name="com.mbeddr.mpsutil.lantest.demolang" version="0" />
     <use id="5ef691b5-60ce-4ece-a04e-25e642dfa128" name="com.mbeddr.mpsutil.lantest" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
   </languages>
   <imports />
   <registry>

@@ -3,12 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
@@ -71,7 +71,6 @@
       </concept>
       <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
       <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
-        <property id="1221669969834" name="isOptional" index="1Ld5UQ" />
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
@@ -95,9 +94,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -560,12 +556,10 @@
     </node>
     <node concept="1DS2jV" id="2kOaBEJ38H3" role="1NuT2Z">
       <property role="TrG5h" value="models" />
-      <property role="1Ld5UQ" value="true" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODELS" resolve="MODELS" />
     </node>
     <node concept="1DS2jV" id="2kOaBEJ38H4" role="1NuT2Z">
       <property role="TrG5h" value="cmodel" />
-      <property role="1Ld5UQ" value="true" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
     </node>
     <node concept="tnohg" id="7tZeFupJFdV" role="tncku">
@@ -899,12 +893,10 @@
     </node>
     <node concept="1DS2jV" id="2kOaBEJ3cEA" role="1NuT2Z">
       <property role="TrG5h" value="modules" />
-      <property role="1Ld5UQ" value="true" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULES" resolve="MODULES" />
     </node>
     <node concept="1DS2jV" id="2kOaBEJ3cEB" role="1NuT2Z">
       <property role="TrG5h" value="cmodule" />
-      <property role="1Ld5UQ" value="true" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODULE" resolve="CONTEXT_MODULE" />
     </node>
     <node concept="tnohg" id="7tZeFupJFbS" role="tncku">
@@ -1123,7 +1115,6 @@
     <node concept="2tJIrI" id="6xMoDGgBeXV" role="jymVt" />
     <node concept="3clFb_" id="7tZeFupJF6A" role="jymVt">
       <property role="TrG5h" value="executeAction" />
-      <property role="IEkAT" value="false" />
       <node concept="3cqZAl" id="7tZeFupJF6B" role="3clF45" />
       <node concept="3clFbS" id="7tZeFupJF6D" role="3clF47">
         <node concept="3cpWs8" id="5wEedBsf0hQ" role="3cqZAp">

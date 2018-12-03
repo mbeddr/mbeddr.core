@@ -37,9 +37,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -246,14 +243,12 @@
     <property role="TrG5h" value="IRequestHandler" />
     <node concept="2tJIrI" id="7rr3ESJDdvc" role="jymVt" />
     <node concept="3clFb_" id="7rr3ESJDdvU" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="applicationID" />
       <node concept="17QB3L" id="7rr3ESJDdwa" role="3clF45" />
       <node concept="3Tm1VV" id="7rr3ESJDdvX" role="1B3o_S" />
       <node concept="3clFbS" id="7rr3ESJDdvY" role="3clF47" />
     </node>
     <node concept="3clFb_" id="7rr3ESJDdwe" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="method" />
       <node concept="3uibUv" id="7rr3ESJDdTE" role="3clF45">
         <ref role="3uigEE" node="7rr3ESJDdw$" resolve="HTTPMethod" />
@@ -263,7 +258,6 @@
     </node>
     <node concept="2tJIrI" id="7rr3ESJDdTH" role="jymVt" />
     <node concept="3clFb_" id="7rr3ESJDdUp" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="canHandle" />
       <node concept="10P_77" id="7rr3ESJDdUV" role="3clF45" />
       <node concept="3Tm1VV" id="7rr3ESJDdUs" role="1B3o_S" />
@@ -282,7 +276,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="7rr3ESJDdWW" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="handle" />
       <node concept="3cqZAl" id="2VC4eVXY9R8" role="3clF45" />
       <node concept="3Tm1VV" id="7rr3ESJDdWY" role="1B3o_S" />
@@ -316,7 +309,6 @@
     <node concept="2tJIrI" id="2VC4eVY1hIH" role="jymVt" />
     <node concept="2YIFZL" id="2VC4eVY1i9Z" role="jymVt">
       <property role="TrG5h" value="fromString" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2VC4eVY1i8C" role="3clF47">
@@ -1024,7 +1016,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="2VC4eVYelgR" role="1B3o_S" />
       <node concept="17QB3L" id="2VC4eVYelgS" role="3clF45" />
       <node concept="3clFbS" id="2VC4eVYelgT" role="3clF47">
@@ -1305,7 +1296,6 @@
     <node concept="2tJIrI" id="2VC4eVYeqTm" role="jymVt" />
     <node concept="2YIFZL" id="2VC4eVY9g$K" role="jymVt">
       <property role="TrG5h" value="replyWithError" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2VC4eVY21BU" role="3clF47">
@@ -1524,7 +1514,6 @@
     <property role="TrG5h" value="IServletProvider" />
     <node concept="2tJIrI" id="9Us$1rWB9R" role="jymVt" />
     <node concept="3clFb_" id="9Us$1rWBac" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getServlet" />
       <node concept="3clFbS" id="9Us$1rWBaf" role="3clF47" />
@@ -1534,7 +1523,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="9Us$1rWBb$" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getPathSpec" />
       <node concept="3clFbS" id="9Us$1rWBbB" role="3clF47" />

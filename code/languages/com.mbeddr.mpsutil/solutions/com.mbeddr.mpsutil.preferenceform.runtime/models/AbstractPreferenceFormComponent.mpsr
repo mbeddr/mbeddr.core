@@ -15,9 +15,6 @@
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="5293379017992965193" name="jetbrains.mps.baseLanguage.structure.StubStatementList" flags="ig" index="2lzX1y" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -123,13 +120,11 @@
     </language>
   </registry>
   <node concept="312cEu" id="~BaseProjectPrefsComponent">
-    <property role="IEkAT" value="false" />
     <property role="1sVAO0" value="true" />
     <property role="TrG5h" value="AbstractPreferenceFormComponent" />
     <property role="1EXbeo" value="false" />
     <property role="3GE5qa" value="component" />
     <node concept="312cEg" id="~BaseProjectPrefsComponent.myPages" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="pages" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="X7OD3Wrilb" role="1B3o_S" />
@@ -148,7 +143,6 @@
     </node>
     <node concept="2tJIrI" id="X7OD3WrX7w" role="jymVt" />
     <node concept="3clFbW" id="~BaseProjectPrefsComponent.&lt;init&gt;(com.intellij.openapi.project.Project)" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="BaseProjectPrefsComponent" />
       <node concept="3cqZAl" id="X7OD3WrilN" role="3clF45" />
       <node concept="3Tmbuc" id="X7OD3Wrili" role="1B3o_S" />
@@ -156,7 +150,6 @@
     </node>
     <node concept="2tJIrI" id="X7OD3WrZy4" role="jymVt" />
     <node concept="3clFb_" id="~BaseProjectPrefsComponent.getPages():java.util.List" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="getPages" />
       <property role="DiZV1" value="false" />
       <property role="1EzhhJ" value="false" />
@@ -180,7 +173,6 @@
     </node>
     <node concept="2tJIrI" id="X7OD3Ws08D" role="jymVt" />
     <node concept="3clFb_" id="~BaseProjectPrefsComponent.init():void" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="init" />
       <property role="DiZV1" value="false" />
       <property role="1EzhhJ" value="false" />
@@ -243,7 +235,6 @@
     </node>
     <node concept="2tJIrI" id="X7OD3Ws0Jf" role="jymVt" />
     <node concept="3clFb_" id="~BaseProjectPrefsComponent.dispose():void" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="dispose" />
       <property role="DiZV1" value="false" />
       <property role="1EzhhJ" value="false" />
@@ -359,7 +350,6 @@
     </node>
     <node concept="2tJIrI" id="5YZamx7JBPw" role="jymVt" />
     <node concept="3clFb_" id="~BaseProjectPrefsComponent.createPages():java.util.List" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="createPages" />
       <property role="DiZV1" value="false" />
       <property role="1EzhhJ" value="true" />

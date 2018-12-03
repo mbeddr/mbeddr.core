@@ -18,9 +18,6 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -63,9 +60,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -128,7 +123,6 @@
   <node concept="3HP615" id="5A_Zlt6xR6d">
     <property role="TrG5h" value="HyperlinkHandler" />
     <node concept="3clFb_" id="5A_Zlt6xR6u" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="open" />
       <node concept="3cqZAl" id="5A_Zlt6xR6w" role="3clF45" />
       <node concept="3Tm1VV" id="5A_Zlt6xR6x" role="1B3o_S" />
@@ -145,7 +139,6 @@
   <node concept="312cEu" id="5A_Zlt6xR7j">
     <property role="TrG5h" value="HyperlinkUtil" />
     <node concept="Wx3nA" id="5A_Zlt6y3bR" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="LOG" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="5A_Zlt6y2HF" role="1tU5fm">
@@ -161,7 +154,6 @@
       </node>
     </node>
     <node concept="Wx3nA" id="5A_Zlt6xXFZ" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="INSTANCE" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="5A_Zlt6xXFw" role="1tU5fm">

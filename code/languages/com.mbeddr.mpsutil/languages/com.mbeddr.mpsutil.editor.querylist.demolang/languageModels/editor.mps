@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -191,7 +191,7 @@
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
       <concept id="943947710603632321" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_QueryLinkData" flags="ng" index="42KQK" />
-      <concept id="943947710603615961" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_LoadQueryLinkData" flags="ig" index="42WQC" />
+      <concept id="943947710603615961" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_LoadQueryLinkData" flags="ng" index="42WQC" />
       <concept id="943947710602559009" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryLink" flags="ng" index="46UPg">
         <reference id="943947710603674333" name="elementConcept" index="42H6G" />
         <child id="943947710603591567" name="editorComponent" index="426NY" />
@@ -200,9 +200,9 @@
       <concept id="459067182341460208" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_ChildNode" flags="ng" index="2dRBZr" />
       <concept id="459067182341492618" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_NodeToDelete" flags="ng" index="2dRY2x" />
       <concept id="393429538058833026" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_SubstituteInfoFactory" flags="ng" index="2hkjam" />
-      <concept id="393429538058152781" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetSubstituteInfo" flags="ig" index="2hrTlp" />
+      <concept id="393429538058152781" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetSubstituteInfo" flags="ng" index="2hrTlp" />
       <concept id="7908147594175279209" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_DefaultEditor" flags="ng" index="r$x8Z" />
-      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
+      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ng" index="s8sZD" />
       <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
         <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
         <property id="1140524450556" name="usesBraces" index="2czwfP" />
@@ -216,24 +216,24 @@
         <child id="5820306262933755617" name="insertNewNode" index="AS3tk" />
         <child id="7238779735251877228" name="editorComponent" index="1yzFaX" />
       </concept>
-      <concept id="5820306262933110156" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_InsertNewNode" flags="ig" index="ARxKT" />
+      <concept id="5820306262933110156" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_InsertNewNode" flags="ng" index="ARxKT" />
       <concept id="5820306262933734929" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_AnchorNode" flags="ng" index="AS6u$" />
       <concept id="5820306262933951366" name="com.mbeddr.mpsutil.editor.querylist.structure.Paramter_insertBefore" flags="ng" index="AVj8N" />
-      <concept id="5820306262934114343" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_DeleteElement" flags="ig" index="AVF6i" />
+      <concept id="5820306262934114343" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_DeleteElement" flags="ng" index="AVF6i" />
       <concept id="4299801941278883994" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_QueryPropertyData" flags="ng" index="2DRnuf" />
-      <concept id="4299801941278883756" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_LoadQueryPropertyData" flags="ig" index="2DRoyT" />
+      <concept id="4299801941278883756" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_LoadQueryPropertyData" flags="ng" index="2DRoyT" />
       <concept id="4299801941278870712" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryProperty" flags="ng" index="2DRrIH">
         <child id="4299801941278904153" name="query" index="2DRjxc" />
       </concept>
       <concept id="2239254897981410197" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListNodeExpression" flags="ng" index="GFMny" />
-      <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ig" index="1yz3lS" />
+      <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ng" index="1yz3lS" />
       <concept id="147976780035481717" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryLinkList" flags="ng" index="3N2dxH">
         <reference id="147976780035572837" name="elementConcept" index="3N2RLX" />
         <child id="147976780035662183" name="cellLayout" index="3N1p_Z" />
         <child id="147976780035550096" name="query" index="3N2Xe8" />
       </concept>
       <concept id="147976780035556419" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_QueryLinkListData" flags="ng" index="3N2NLr" />
-      <concept id="147976780035550100" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_LoadQueryLinkListData" flags="ig" index="3N2Xec" />
+      <concept id="147976780035550100" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_LoadQueryLinkListData" flags="ng" index="3N2Xec" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">

@@ -37,9 +37,6 @@
         <child id="1173175577737" name="index" index="AHEQo" />
         <child id="1173175590490" name="array" index="AHHXb" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -558,7 +555,6 @@
     <node concept="3Tm1VV" id="4jq$txdS$m8" role="1B3o_S" />
     <node concept="2tJIrI" id="48FvRI$B4xN" role="jymVt" />
     <node concept="Wx3nA" id="48FvRI$AaqW" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="GENERATED_ARTEFACTS_FOLDER" />
       <property role="3TUv4t" value="false" />
       <node concept="17QB3L" id="48FvRI$A2sQ" role="1tU5fm" />
@@ -1277,7 +1273,6 @@
     <node concept="3Tm1VV" id="5uY69zv5FFk" role="1B3o_S" />
     <node concept="2tJIrI" id="5uY69zv5FWS" role="jymVt" />
     <node concept="Wx3nA" id="5uY69zv5JQJ" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="GENERATED_ARTEFACTS_FOLDER" />
       <property role="3TUv4t" value="false" />
       <node concept="17QB3L" id="5uY69zv5JQK" role="1tU5fm" />

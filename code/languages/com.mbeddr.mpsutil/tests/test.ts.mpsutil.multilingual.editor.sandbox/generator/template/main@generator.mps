@@ -2,7 +2,7 @@
 <model ref="0fbcb2bc-923f-4328-beef-a6eb2b652fec/r:882fef19-4c9f-4f8e-b98a-f08c2daf2a4b(test.ts.mpsutil.multilingual.editor.sandbox#4912572611775887657/test.ts.mpsutil.multilingual.editor.sandbox.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="0eba8d68-ca0c-4113-a9e6-19b359352ecf" name="test.ts.mpsutil.multilingual.editor.sandbox" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />

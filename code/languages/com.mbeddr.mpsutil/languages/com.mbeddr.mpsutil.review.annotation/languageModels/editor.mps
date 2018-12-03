@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -83,9 +83,6 @@
       <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -489,7 +486,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="createEditorCell" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="48QV5n8clU7" role="1B3o_S" />
                         <node concept="3uibUv" id="48QV5n8clU8" role="3clF45">
                           <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
@@ -513,7 +509,6 @@
                                     <property role="1EzhhJ" value="false" />
                                     <property role="TrG5h" value="paintContent" />
                                     <property role="DiZV1" value="false" />
-                                    <property role="IEkAT" value="false" />
                                     <node concept="3Tm1VV" id="48QV5n8clUi" role="1B3o_S" />
                                     <node concept="3cqZAl" id="48QV5n8clUj" role="3clF45" />
                                     <node concept="37vLTG" id="48QV5n8clUk" role="3clF46">
@@ -672,7 +667,6 @@
                                     <property role="1EzhhJ" value="false" />
                                     <property role="TrG5h" value="getHeight" />
                                     <property role="DiZV1" value="false" />
-                                    <property role="IEkAT" value="false" />
                                     <node concept="3Tm1VV" id="48QV5n8clV2" role="1B3o_S" />
                                     <node concept="10Oyi0" id="48QV5n8clV3" role="3clF45" />
                                     <node concept="3clFbS" id="48QV5n8clV4" role="3clF47">
@@ -691,7 +685,6 @@
                                     <property role="1EzhhJ" value="false" />
                                     <property role="TrG5h" value="getWidth" />
                                     <property role="DiZV1" value="false" />
-                                    <property role="IEkAT" value="false" />
                                     <node concept="3Tm1VV" id="48QV5n8clVa" role="1B3o_S" />
                                     <node concept="10Oyi0" id="48QV5n8clVb" role="3clF45" />
                                     <node concept="3clFbS" id="48QV5n8clVc" role="3clF47">

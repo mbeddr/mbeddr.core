@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
@@ -92,7 +92,6 @@
     <property role="TrG5h" value="IFilter" />
     <node concept="2tJIrI" id="33cGTVo6S5G" role="jymVt" />
     <node concept="3clFb_" id="33cGTVo6S5H" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="filterUninterestingConcepts" />
       <node concept="3Tm1VV" id="33cGTVo6S5N" role="1B3o_S" />
       <node concept="3clFbS" id="33cGTVo6S5O" role="3clF47" />
@@ -117,7 +116,6 @@
     </node>
     <node concept="2tJIrI" id="4ioi0JB48Jb" role="jymVt" />
     <node concept="3clFb_" id="4ioi0JB48KU" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="filterUninterestingLinks" />
       <node concept="3Tm1VV" id="4ioi0JB48KV" role="1B3o_S" />
       <node concept="3clFbS" id="4ioi0JB48KW" role="3clF47" />
@@ -138,7 +136,6 @@
     </node>
     <node concept="2tJIrI" id="4ioi0JB48JG" role="jymVt" />
     <node concept="3clFb_" id="6fGXG$6kqF2" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="filterUninterestingProperties" />
       <node concept="3Tm1VV" id="6fGXG$6kqF3" role="1B3o_S" />
       <node concept="3clFbS" id="6fGXG$6kqF4" role="3clF47" />
