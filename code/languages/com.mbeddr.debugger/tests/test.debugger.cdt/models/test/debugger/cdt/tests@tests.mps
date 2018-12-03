@@ -2,10 +2,10 @@
 <model ref="r:fe23af04-a7aa-4c9b-bb59-83737b3a0ec0(test.debugger.cdt.tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="y0ja" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:com.mbeddr.core.debugger.cdt(Eclipse.Debugger/)" />
@@ -53,9 +53,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -1466,7 +1463,6 @@
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="handleDebugEvents" />
                       <property role="DiZV1" value="false" />
-                      <property role="IEkAT" value="false" />
                       <node concept="3Tm1VV" id="2npj2sr2aRu" role="1B3o_S" />
                       <node concept="3cqZAl" id="2npj2sr2aRw" role="3clF45" />
                       <node concept="37vLTG" id="2npj2sr2aRx" role="3clF46">
@@ -5015,7 +5011,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="run" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="5XU7UUGaVAV" role="1B3o_S" />
         <node concept="3cqZAl" id="5XU7UUGaVAW" role="3clF45" />
         <node concept="3clFbS" id="5XU7UUGaVAX" role="3clF47">
@@ -5164,7 +5159,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addEventListener" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="2npj2sr7nxD" role="1B3o_S" />
       <node concept="3cqZAl" id="2npj2sr7nxF" role="3clF45" />
       <node concept="37vLTG" id="2npj2sr7nxG" role="3clF46">
@@ -5180,7 +5174,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="removeEventListener" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="2npj2sr7nxK" role="1B3o_S" />
       <node concept="3cqZAl" id="2npj2sr7nxM" role="3clF45" />
       <node concept="37vLTG" id="2npj2sr7nxN" role="3clF46">
@@ -5196,7 +5189,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getSession" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="2npj2sr7nxR" role="1B3o_S" />
       <node concept="3uibUv" id="2npj2sr7nxT" role="3clF45">
         <ref role="3uigEE" to="ys5c:~ICDISession" resolve="ICDISession" />
@@ -5258,7 +5250,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="handleDebugEvents" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="2npj2sr7p7Y" role="1B3o_S" />
       <node concept="3cqZAl" id="2npj2sr7p80" role="3clF45" />
       <node concept="37vLTG" id="2npj2sr7p81" role="3clF46">
