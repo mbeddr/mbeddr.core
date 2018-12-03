@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -17,10 +17,12 @@
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
       <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules" flags="nn" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
+        <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
       <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModule" flags="nn" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules_Options" flags="ng" index="24cAiW" />
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -110,10 +112,12 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -322,6 +326,7 @@
         </node>
         <node concept="m$_wl" id="62XMcUo5Gn_" role="39821P">
           <ref role="m_rDy" node="62XMcUo5GnA" resolve="com.mbeddr.debugger.testing" />
+          <node concept="pUk6x" id="76N1O$Kj6tD" role="pUk7w" />
         </node>
       </node>
     </node>
@@ -983,6 +988,7 @@
       <node concept="22LTRM" id="3AspB7AgwdC" role="22LTRK">
         <ref role="22LTRN" node="6v3tcHGMVS3" resolve="test.debugging.core" />
       </node>
+      <node concept="24cAiW" id="76N1O$Kj6vv" role="24cAkG" />
     </node>
     <node concept="2G$12M" id="62XMcUo6Gwa" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.debugger.testing.core.tests" />
@@ -1637,6 +1643,7 @@
               </node>
             </node>
           </node>
+          <node concept="pUk6x" id="76N1O$Kj6tE" role="pUk7w" />
         </node>
         <node concept="3_J27D" id="29so9VcahDu" role="Nbhlr">
           <node concept="3Mxwew" id="29so9VcahDv" role="3MwsjC">
@@ -1650,6 +1657,7 @@
       <node concept="22LTRM" id="29so9Vc8xIS" role="22LTRK">
         <ref role="22LTRN" node="62XMcUo6GtP" resolve="test.debugger.test.runtime" />
       </node>
+      <node concept="24cAiW" id="76N1O$Kj6vw" role="24cAkG" />
     </node>
     <node concept="398rNT" id="6BHziVHZZ0e" role="1l3spd">
       <property role="TrG5h" value="spawner.artifacts" />
@@ -1970,6 +1978,7 @@
       <node concept="22LTRM" id="29so9Vc8x$k" role="22LTRK">
         <ref role="22LTRN" node="62XMcUo9RlD" resolve="test.debugging.ext.components" />
       </node>
+      <node concept="24cAiW" id="76N1O$Kj6vx" role="24cAkG" />
     </node>
     <node concept="398rNT" id="6BHziVHZZ0j" role="1l3spd">
       <property role="TrG5h" value="spawner.artifacts" />
@@ -2215,6 +2224,7 @@
         </node>
         <node concept="m$_wl" id="7HfWMO9mkMJ" role="39821P">
           <ref role="m_rDy" node="7HfWMO9mkLE" resolve="com.mbeddr.debugger.testing.tests.cross" />
+          <node concept="pUk6x" id="76N1O$Kj6tF" role="pUk7w" />
         </node>
       </node>
     </node>
@@ -2531,6 +2541,7 @@
       <node concept="22LTRM" id="29so9Vc8xBV" role="22LTRK">
         <ref role="22LTRN" node="3OuI4NZK0u4" resolve="test.debugging.ext.statemachines" />
       </node>
+      <node concept="24cAiW" id="76N1O$Kj6vy" role="24cAkG" />
     </node>
     <node concept="398rNT" id="6BHziVHZZ0t" role="1l3spd">
       <property role="TrG5h" value="spawner.artifacts" />
@@ -2836,6 +2847,7 @@
       <node concept="22LTRM" id="29so9Vc8xAb" role="22LTRK">
         <ref role="22LTRN" node="6ey1bOhy9Wp" resolve="test.debugging.ext.physicalunits" />
       </node>
+      <node concept="24cAiW" id="76N1O$Kj6vz" role="24cAkG" />
     </node>
     <node concept="398rNT" id="6BHziVHZZ0y" role="1l3spd">
       <property role="TrG5h" value="spawner.artifacts" />
@@ -3043,6 +3055,7 @@
       <node concept="22LTRM" id="3AspB7AhxHf" role="22LTRK">
         <ref role="22LTRN" node="3q6VMvxn4b1" resolve="test.debugging.core" />
       </node>
+      <node concept="24cAiW" id="76N1O$Kj6v$" role="24cAkG" />
     </node>
     <node concept="2sgV4H" id="3q6VMvxn38H" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />

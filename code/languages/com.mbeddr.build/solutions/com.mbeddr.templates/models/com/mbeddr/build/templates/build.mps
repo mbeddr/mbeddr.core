@@ -2,7 +2,7 @@
 <model ref="r:5524d5d3-b0a6-45d1-8003-a1549b3f7cc3(com.mbeddr.build.templates.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
   </languages>
   <imports>
@@ -97,10 +97,12 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M" />
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr">
@@ -262,6 +264,7 @@
         </node>
         <node concept="m$_wl" id="1YLj_r8S1PA" role="39821P">
           <ref role="m_rDy" node="1YLj_r8S1Mc" resolve="yourplugin" />
+          <node concept="pUk6x" id="76N1O$Kj6v7" role="pUk7w" />
         </node>
       </node>
     </node>
@@ -437,6 +440,7 @@
         </node>
         <node concept="m$_wl" id="1YLj_r8S5f$" role="39821P">
           <ref role="m_rDy" node="1YLj_r8S5eZ" resolve="yourplugin" />
+          <node concept="pUk6x" id="76N1O$Kj6v8" role="pUk7w" />
         </node>
       </node>
     </node>
