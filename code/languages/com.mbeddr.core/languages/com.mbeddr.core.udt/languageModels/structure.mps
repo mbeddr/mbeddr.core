@@ -91,9 +91,6 @@
       <property role="IQ2ns" value="6394819151180597817" />
       <ref role="20lvS9" node="5yYXyc4Z0CJ" resolve="StructDeclaration" />
     </node>
-    <node concept="PrWs8" id="5HxjapwgqUc" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
     <node concept="PrWs8" id="F16UoWxmvv" role="PzmwI">
       <ref role="PrY4T" to="c4fa:7FkLcyyQKy$" resolve="IInitAwareType" />
     </node>

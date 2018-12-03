@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -72,9 +72,6 @@
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -708,7 +705,6 @@
                                 <property role="1EzhhJ" value="false" />
                                 <property role="TrG5h" value="run" />
                                 <property role="DiZV1" value="false" />
-                                <property role="IEkAT" value="false" />
                                 <node concept="3Tm1VV" id="39h1xietdMv" role="1B3o_S" />
                                 <node concept="3cqZAl" id="39h1xietdMw" role="3clF45" />
                                 <node concept="3clFbS" id="39h1xietdMx" role="3clF47">
@@ -1167,7 +1163,6 @@
                             <property role="1EzhhJ" value="false" />
                             <property role="TrG5h" value="run" />
                             <property role="DiZV1" value="false" />
-                            <property role="IEkAT" value="false" />
                             <node concept="3Tm1VV" id="3vXSZsAOPur" role="1B3o_S" />
                             <node concept="3cqZAl" id="3vXSZsAOPus" role="3clF45" />
                             <node concept="3clFbS" id="3vXSZsAOPut" role="3clF47">
@@ -1827,7 +1822,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="handle" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="3ZjlwXBFHrK" role="1B3o_S" />
         <node concept="3cqZAl" id="3ZjlwXBFHrM" role="3clF45" />
         <node concept="37vLTG" id="3ZjlwXBFHrN" role="3clF46">
@@ -2308,7 +2302,6 @@
     </node>
     <node concept="2tJIrI" id="3vXSZsAMCVS" role="jymVt" />
     <node concept="312cEg" id="7hHer08e1Ns" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="server" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3ZjlwXBFz6W" role="1tU5fm">
@@ -2317,7 +2310,6 @@
       <node concept="3Tm6S6" id="3ZjlwXBFyY8" role="1B3o_S" />
     </node>
     <node concept="312cEg" id="7hHer08e1Mq" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="serverLock" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="7rr3ESJBgKV" role="1tU5fm">

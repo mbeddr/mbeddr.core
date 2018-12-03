@@ -160,9 +160,6 @@
       <property role="IQ2ns" value="665537614209771460" />
       <ref role="20lvS9" to="iqxq:35E98Eq2O4B" resolve="Pattern" />
     </node>
-    <node concept="PrWs8" id="$WtIWnG2jh" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5JUf$kCWEwh">
     <property role="TrG5h" value="InitPartAccessorOperation" />

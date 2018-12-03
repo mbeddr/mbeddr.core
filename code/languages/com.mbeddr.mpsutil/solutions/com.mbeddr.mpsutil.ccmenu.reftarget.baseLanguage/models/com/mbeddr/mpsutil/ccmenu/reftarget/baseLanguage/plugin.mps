@@ -4,7 +4,7 @@
   <languages>
     <use id="f92af8d7-1fae-4067-8109-17acf80f8e58" name="com.mbeddr.mpsutil.ccmenu.reftarget" version="0" />
     <use id="935bff03-e393-4547-a3a2-60335e0cad25" name="com.mbeddr.mpsutil.ccmenu" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -43,7 +43,7 @@
       </concept>
     </language>
     <language id="f92af8d7-1fae-4067-8109-17acf80f8e58" name="com.mbeddr.mpsutil.ccmenu.reftarget">
-      <concept id="3875256784968063239" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.TargetSetupExtension_Function" flags="ig" index="2$Hzi4" />
+      <concept id="3875256784968063239" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.TargetSetupExtension_Function" flags="ng" index="2$Hzi4" />
       <concept id="3875256784968063240" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.TargetSetupExtension_CreatedNode" flags="ng" index="2$Hzib" />
       <concept id="3875256784968056641" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.TargetSetupExtension" flags="ng" index="2$HHb2">
         <reference id="3875256784968063237" name="applicableConcept" index="2$Hzi6" />
@@ -60,7 +60,7 @@
         <child id="3273307157325365793" name="modifications" index="1Ws_Q_" />
       </concept>
       <concept id="3273307157325365790" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.RemoveModification" flags="ng" index="1Ws_Qq" />
-      <concept id="3273307157325381939" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.ChangeDescriptionModification" flags="ig" index="1WsDUR" />
+      <concept id="3273307157325381939" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.ChangeDescriptionModification" flags="ng" index="1WsDUR" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">

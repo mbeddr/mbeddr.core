@@ -2,7 +2,7 @@
 <model ref="r:ca7aba72-9b45-4105-b4ef-5e520eda75c0(com.mbeddr.analyses.utils.results_model)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports />
@@ -18,9 +18,7 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
       <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -53,7 +51,6 @@
     <property role="TrG5h" value="IAnalysisResult" />
     <node concept="2tJIrI" id="TJrbIN7dfg" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN7dfF" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getResultCategory" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -67,7 +64,6 @@
     </node>
     <node concept="2tJIrI" id="TJrbIN7dfi" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN8sPj" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getUserFriendlyMessage" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -81,7 +77,6 @@
     </node>
     <node concept="2tJIrI" id="TJrbIN8sNP" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN8g0Y" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getTimeInMillis" />
       <node concept="3clFbS" id="TJrbIN8g11" role="3clF47" />
@@ -93,7 +88,6 @@
     </node>
     <node concept="2tJIrI" id="TJrbIN7jpD" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN7moT" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isSuccess" />
       <node concept="3clFbS" id="TJrbIN7moW" role="3clF47" />
@@ -105,7 +99,6 @@
     </node>
     <node concept="2tJIrI" id="TJrbIN7msv" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN7mu6" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isFail" />
       <node concept="3clFbS" id="TJrbIN7mu9" role="3clF47" />
@@ -117,7 +110,6 @@
     </node>
     <node concept="2tJIrI" id="TJrbIN7mz2" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN7_ae" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isUnknown" />
       <node concept="3clFbS" id="TJrbIN7_af" role="3clF47" />
@@ -129,7 +121,6 @@
     </node>
     <node concept="2tJIrI" id="TJrbIN7mzs" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN7jlD" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isRuntimeError" />
       <node concept="3clFbS" id="TJrbIN7jlG" role="3clF47" />
@@ -141,7 +132,6 @@
     </node>
     <node concept="2tJIrI" id="TJrbIN7_gF" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN7_fe" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isCancel" />
       <node concept="3clFbS" id="TJrbIN7_ff" role="3clF47" />
@@ -153,7 +143,6 @@
     </node>
     <node concept="2tJIrI" id="TJrbIN7_xi" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN7_vE" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isTimeout" />
       <node concept="3clFbS" id="TJrbIN7_vF" role="3clF47" />
@@ -169,7 +158,6 @@
     </node>
     <node concept="2tJIrI" id="TJrbIN9dQq" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN9dUD" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getWhitnessSize" />
       <node concept="3clFbS" id="TJrbIN9dUG" role="3clF47" />
@@ -184,7 +172,6 @@
     <property role="TrG5h" value="IWhitnessEntry" />
     <node concept="2tJIrI" id="1EZfgaQmLsj" role="jymVt" />
     <node concept="3clFb_" id="1EZfgaQmLsS" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isMajor" />
       <node concept="3clFbS" id="1EZfgaQmLsV" role="3clF47" />

@@ -2,7 +2,7 @@
 <model ref="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
@@ -263,6 +263,7 @@
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
         <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
+      <concept id="7771219649169826771" name="jetbrains.mps.lang.generator.structure.TemplateCall" flags="ng" index="2f_kzb" />
       <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
         <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
@@ -318,7 +319,7 @@
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1169569792945" name="jetbrains.mps.lang.generator.structure.WeaveEach_RuleConsequence" flags="lg" index="1fMGax">
-        <reference id="1169569853122" name="template" index="1fMUZi" />
+        <child id="7771219649169827299" name="templateCall" index="2f_kVV" />
         <child id="1169569939267" name="sourceNodesQuery" index="1fNfTj" />
       </concept>
       <concept id="1184616041890" name="jetbrains.mps.lang.generator.structure.Weaving_MappingRule_ContextNodeQuery" flags="in" index="3gB$ML" />
@@ -678,11 +679,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -10659,7 +10660,6 @@
     <node concept="30QchW" id="1M41OHtWTov" role="30SoJX">
       <ref role="30HIoZ" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
       <node concept="1fMGax" id="1M41OHtWTow" role="1fOSGc">
-        <ref role="1fMUZi" node="1M41OHsaS4r" resolve="weave_DLD" />
         <node concept="3JmXsc" id="1M41OHtWTox" role="1fNfTj">
           <node concept="3clFbS" id="1M41OHtWToy" role="2VODD2">
             <node concept="3clFbF" id="1M41OHtWToz" role="3cqZAp">
@@ -10693,6 +10693,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="2f_kzb" id="76N1O$Ki_NW" role="2f_kVV">
+          <ref role="v9R2y" node="1M41OHsaS4r" resolve="weave_DLD" />
         </node>
       </node>
       <node concept="3gB$ML" id="1M41OHtWToL" role="3gCiVm">

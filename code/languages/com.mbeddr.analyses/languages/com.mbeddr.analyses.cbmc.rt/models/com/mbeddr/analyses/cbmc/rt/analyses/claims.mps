@@ -41,9 +41,6 @@
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
         <child id="1164903700860" name="catchClause" index="TEXxN" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -666,7 +663,6 @@
                           <property role="1EzhhJ" value="false" />
                           <property role="TrG5h" value="safeRun" />
                           <property role="DiZV1" value="false" />
-                          <property role="IEkAT" value="false" />
                           <node concept="3Tm1VV" id="4fvA6ORJeoP" role="1B3o_S" />
                           <node concept="3cqZAl" id="4fvA6ORJeoR" role="3clF45" />
                           <node concept="3clFbS" id="4fvA6ORJeoU" role="3clF47">
@@ -1128,7 +1124,6 @@
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="safeRun" />
                       <property role="DiZV1" value="false" />
-                      <property role="IEkAT" value="false" />
                       <node concept="3Tm1VV" id="3ciBAsao8cC" role="1B3o_S" />
                       <node concept="3cqZAl" id="3ciBAsao8cD" role="3clF45" />
                       <node concept="3clFbS" id="3ciBAsao8cE" role="3clF47">
@@ -2261,7 +2256,6 @@
     <property role="TrG5h" value="ClaimFilter" />
     <node concept="2tJIrI" id="3WYFqnsvLw$" role="jymVt" />
     <node concept="3clFb_" id="6mJYm3j2KIf" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="shouldIgnore" />
       <node concept="10P_77" id="6mJYm3j2KIg" role="3clF45" />
       <node concept="3Tm1VV" id="6mJYm3j2KIh" role="1B3o_S" />

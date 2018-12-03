@@ -2,7 +2,7 @@
 <model ref="r:9d105f79-55ec-49b5-9e6b-29cf95e9bf08(org.mockito.configuration)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="fn88" ref="9414e29c-0c8d-4bc7-b251-f312597fb993/java:org.mockito.configuration(org.mockito/)" />

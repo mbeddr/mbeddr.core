@@ -32,9 +32,6 @@
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
         <child id="2820489544402271667" name="typeParameter" index="HU9BZ" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -245,7 +242,7 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -873,7 +870,6 @@
     <node concept="2tJIrI" id="6fymoI4RpiD" role="jymVt" />
     <node concept="2YIFZL" id="6fymoI4SoWh" role="jymVt">
       <property role="TrG5h" value="log" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="QGTX7elSFt" role="3clF47">
@@ -905,7 +901,6 @@
     <node concept="2tJIrI" id="QGTX7ela5D" role="jymVt" />
     <node concept="2YIFZL" id="6fymoI4St1L" role="jymVt">
       <property role="TrG5h" value="log" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="QGTX7elj0o" role="3clF47">
@@ -1041,7 +1036,6 @@
     <node concept="2tJIrI" id="6fymoI4SgqJ" role="jymVt" />
     <node concept="2YIFZL" id="6fymoI4UAep" role="jymVt">
       <property role="TrG5h" value="fillDifferencesOnProperties" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="DYlgnAA7xb" role="3clF47">
@@ -1407,7 +1401,6 @@
     <node concept="2tJIrI" id="DYlgnBuw$i" role="jymVt" />
     <node concept="2YIFZL" id="6fymoI4VsfK" role="jymVt">
       <property role="TrG5h" value="isIgnoredProperty" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="780iRhLCSdk" role="3clF47">
@@ -1894,7 +1887,6 @@
     <node concept="2tJIrI" id="3qPjHtYt38V" role="jymVt" />
     <node concept="2YIFZL" id="3qPjHtYt08F" role="jymVt">
       <property role="TrG5h" value="isIgnoredReference" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="3qPjHtYt08G" role="3clF47">
@@ -2013,7 +2005,6 @@
     <node concept="2tJIrI" id="DYlgnBvwx3" role="jymVt" />
     <node concept="2YIFZL" id="6fymoI4W4Lw" role="jymVt">
       <property role="TrG5h" value="fillDifferencesOnReferences" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="DYlgnAA7ys" role="3clF47">
@@ -2991,7 +2982,6 @@
     <node concept="2tJIrI" id="6fymoI4WtMb" role="jymVt" />
     <node concept="2YIFZL" id="6fymoI4W7$J" role="jymVt">
       <property role="TrG5h" value="fillDifferencesOnAnnotations" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="DYlgnAA7$_" role="3clF47">
@@ -3506,7 +3496,6 @@
     <node concept="2tJIrI" id="6fymoI4WMUq" role="jymVt" />
     <node concept="2YIFZL" id="6fymoI4WamM" role="jymVt">
       <property role="TrG5h" value="fillDifferencesOnChildren" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="DYlgnAA7Bk" role="3clF47">

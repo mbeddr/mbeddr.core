@@ -72,9 +72,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -246,7 +243,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -3259,7 +3256,6 @@
     <node concept="2tJIrI" id="2xgTENkRHRu" role="jymVt" />
     <node concept="3clFb_" id="2xgTENkRKl9" role="jymVt">
       <property role="TrG5h" value="createActionGroupPopup" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2xgTENkRtF$" role="3clF47">
@@ -3363,7 +3359,6 @@
     <node concept="2tJIrI" id="2xgTENkRrUk" role="jymVt" />
     <node concept="3clFb_" id="2xgTENkRLtu" role="jymVt">
       <property role="TrG5h" value="createActionGroupPopup" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2xgTENkRmpy" role="3clF47">
@@ -3412,7 +3407,6 @@
                   <property role="1EzhhJ" value="false" />
                   <property role="TrG5h" value="shouldBeShowing" />
                   <property role="DiZV1" value="false" />
-                  <property role="IEkAT" value="false" />
                   <node concept="3Tm1VV" id="2xgTENkRPVL" role="1B3o_S" />
                   <node concept="10P_77" id="2xgTENkRPVN" role="3clF45" />
                   <node concept="37vLTG" id="2xgTENkRPVO" role="3clF46">
@@ -3629,7 +3623,6 @@
                   <property role="1EzhhJ" value="false" />
                   <property role="TrG5h" value="getListElementRenderer" />
                   <property role="DiZV1" value="false" />
-                  <property role="IEkAT" value="false" />
                   <node concept="3Tmbuc" id="3N2QCt80XSf" role="1B3o_S" />
                   <node concept="3uibUv" id="3N2QCt80XSh" role="3clF45">
                     <ref role="3uigEE" to="dxuu:~ListCellRenderer" resolve="ListCellRenderer" />

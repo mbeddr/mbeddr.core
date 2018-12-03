@@ -2,16 +2,16 @@
 <model ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
@@ -95,9 +95,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -265,8 +262,8 @@
       </concept>
     </language>
     <language id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport">
-      <concept id="5573986434797682998" name="com.mbeddr.mpsutil.httpsupport.structure.HandleRequestFunction" flags="ig" index="pF8on" />
-      <concept id="5573986434797682964" name="com.mbeddr.mpsutil.httpsupport.structure.CanHandleRequestFunction" flags="ig" index="pF8oP" />
+      <concept id="5573986434797682998" name="com.mbeddr.mpsutil.httpsupport.structure.HandleRequestFunction" flags="ng" index="pF8on" />
+      <concept id="5573986434797682964" name="com.mbeddr.mpsutil.httpsupport.structure.CanHandleRequestFunction" flags="ng" index="pF8oP" />
       <concept id="5573986434797781630" name="com.mbeddr.mpsutil.httpsupport.structure.HttpResponseParameter" flags="ng" index="pFglv" />
       <concept id="5573986434797787081" name="com.mbeddr.mpsutil.httpsupport.structure.SegmentsParameter" flags="ng" index="pFh3C" />
       <concept id="5573986434797765074" name="com.mbeddr.mpsutil.httpsupport.structure.HttpRequestParameter" flags="ng" index="pFkrN" />
@@ -584,7 +581,6 @@
     <node concept="2tJIrI" id="bBMhoeEvPy" role="jymVt" />
     <node concept="2YIFZL" id="bBMhoez$2B" role="jymVt">
       <property role="TrG5h" value="openLink" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="27T0Q3SBuuY" role="3clF47">
@@ -812,7 +808,6 @@
     <node concept="2tJIrI" id="2N1CSrzLj9F" role="jymVt" />
     <node concept="2YIFZL" id="2N1CSrzLg_W" role="jymVt">
       <property role="TrG5h" value="openLink" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2N1CSrzLg_X" role="3clF47">
@@ -1051,7 +1046,6 @@
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="run" />
                       <property role="DiZV1" value="false" />
-                      <property role="IEkAT" value="false" />
                       <node concept="3Tm1VV" id="2N1CSrzKNPD" role="1B3o_S" />
                       <node concept="3cqZAl" id="2N1CSrzKNPE" role="3clF45" />
                       <node concept="3clFbS" id="2N1CSrzKNPF" role="3clF47">
@@ -1404,7 +1398,6 @@
     <node concept="2tJIrI" id="4nkJFds01aI" role="jymVt" />
     <node concept="2YIFZL" id="4PqLM5kVO49" role="jymVt">
       <property role="TrG5h" value="resolveNode" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="4PqLM5kVO4a" role="3clF47">

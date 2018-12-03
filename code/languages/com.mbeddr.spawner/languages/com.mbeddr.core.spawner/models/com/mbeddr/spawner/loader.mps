@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -39,9 +39,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -327,7 +324,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="initComponent" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3wED9Ce43ta" role="1B3o_S" />
       <node concept="3cqZAl" id="3wED9Ce43tb" role="3clF45" />
       <node concept="3clFbS" id="3wED9Ce43tc" role="3clF47">
@@ -362,7 +358,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="disposeComponent" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3wED9Ce43te" role="1B3o_S" />
       <node concept="3cqZAl" id="3wED9Ce43tf" role="3clF45" />
       <node concept="3clFbS" id="3wED9Ce43tg" role="3clF47">
@@ -397,7 +392,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getComponentName" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3wED9Ce43ti" role="1B3o_S" />
       <node concept="17QB3L" id="3wED9Ce43tq" role="3clF45" />
       <node concept="2AHcQZ" id="3wED9Ce43tk" role="2AJF6D">
@@ -493,7 +487,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="getPaths" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="5$SMN3VifDI" role="1B3o_S" />
         <node concept="3uibUv" id="5$SMN3VifDK" role="3clF45">
           <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
@@ -610,7 +603,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="hiddenLanguages" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="3wED9Ce4eM_" role="1B3o_S" />
         <node concept="10P_77" id="3wED9Ce4eMA" role="3clF45" />
         <node concept="3clFbS" id="3wED9Ce4eMB" role="3clF47">
@@ -796,7 +788,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="findLibrary" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tmbuc" id="3wED9Ce4fiT" role="1B3o_S" />
         <node concept="17QB3L" id="3wED9Ce4fj2" role="3clF45" />
         <node concept="37vLTG" id="3wED9Ce4fiV" role="3clF46">
@@ -1248,7 +1239,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="loadClass" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tmbuc" id="3wED9Ce4fjF" role="1B3o_S" />
         <node concept="3uibUv" id="3wED9Ce4fjG" role="3clF45">
           <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />

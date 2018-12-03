@@ -2,7 +2,7 @@
 <model ref="r:61a45d85-604a-4af4-8729-16a36d455774(com.mbeddr.core.debug.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -32,9 +32,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -77,7 +75,6 @@
   <node concept="3HP615" id="7B__YhMLdfT">
     <property role="TrG5h" value="IDebuggerBackendProvider" />
     <node concept="3clFb_" id="7B__YhMLdfU" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="acceptsRunConfigType" />
       <node concept="37vLTG" id="7B__YhMLdfV" role="3clF46">
         <property role="TrG5h" value="debuggerSettings" />
@@ -90,7 +87,6 @@
       <node concept="3clFbS" id="7B__YhMLdfZ" role="3clF47" />
     </node>
     <node concept="3clFb_" id="7B__YhMLdg0" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="createSession" />
       <node concept="37vLTG" id="7B__YhMLdg1" role="3clF46">
         <property role="TrG5h" value="debuggerSettings" />
@@ -116,7 +112,6 @@
   <node concept="3HP615" id="2AZaPEP4zd5">
     <property role="TrG5h" value="IDebugSessionListener" />
     <node concept="3clFb_" id="2AZaPEP4zfT" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="debuggerSuspended" />
       <node concept="3clFbS" id="2AZaPEP4zfW" role="3clF47" />
@@ -136,7 +131,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="2AZaPEQ2LTr" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isExtnRegistered" />
       <node concept="3clFbS" id="2AZaPEQ2LTu" role="3clF47" />

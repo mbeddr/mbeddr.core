@@ -2,7 +2,7 @@
 <model ref="r:4261d3cd-fb09-4744-93d4-9c4e98dc94fc(com.mbeddr.ext.components.concurrency.util)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,9 +27,6 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -211,7 +208,6 @@
     <node concept="2tJIrI" id="7tWSY$OGLDn" role="jymVt" />
     <node concept="2YIFZL" id="7tWSY$OHaMQ" role="jymVt">
       <property role="TrG5h" value="findComponentInstance" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="7tWSY$OGLDB" role="3clF47">
@@ -403,7 +399,6 @@
     <node concept="2tJIrI" id="7tWSY$OPJC7" role="jymVt" />
     <node concept="2YIFZL" id="2kF1PD7cbTx" role="jymVt">
       <property role="TrG5h" value="findComponentInstances" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2kF1PD7c4VH" role="3clF47">
@@ -508,7 +503,6 @@
     <node concept="2tJIrI" id="2kF1PD7c4R$" role="jymVt" />
     <node concept="2YIFZL" id="2kF1PD7nHW6" role="jymVt">
       <property role="TrG5h" value="findComponentInstance" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2kF1PD7nBFO" role="3clF47">
@@ -597,7 +591,6 @@
     <node concept="2tJIrI" id="2kF1PD7nBAu" role="jymVt" />
     <node concept="2YIFZL" id="7tWSY$OPJHX" role="jymVt">
       <property role="TrG5h" value="getCalledRunnablesWithoutInterface" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="37vLTG" id="7tWSY$OPJK3" role="3clF46">
@@ -866,7 +859,6 @@
     <node concept="2tJIrI" id="64JBwg_q97m" role="jymVt" />
     <node concept="2YIFZL" id="64JBwg_qntT" role="jymVt">
       <property role="TrG5h" value="getAllCCInstances" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="64JBwg_qntU" role="3clF47">

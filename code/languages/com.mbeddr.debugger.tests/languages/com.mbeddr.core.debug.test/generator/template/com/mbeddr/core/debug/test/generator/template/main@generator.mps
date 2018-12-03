@@ -2,9 +2,9 @@
 <model ref="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="4457ca2e-a7c9-4452-9578-e94701cc4942" name="com.mbeddr.core.debug.util" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -426,9 +426,6 @@
       </concept>
       <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
         <child id="1226511765987" name="elementType" index="2hN53Y" />
-      </concept>
-      <concept id="1226566855640" name="jetbrains.mps.baseLanguage.collections.structure.AddSetElementOperation" flags="nn" index="2l5eF5">
-        <child id="1226567214363" name="argument" index="2l6Ag6" />
       </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
@@ -7417,12 +7414,12 @@
                           <node concept="37vLTw" id="4WqJ5ShzT3Y" role="2Oq$k0">
                             <ref role="3cqZAo" node="4WqJ5ShzT3N" resolve="set" />
                           </node>
-                          <node concept="2l5eF5" id="4WqJ5ShzT3Z" role="2OqNvi">
-                            <node concept="2OqwBi" id="4WqJ5ShzT40" role="2l6Ag6">
-                              <node concept="2GrUjf" id="4WqJ5ShzT41" role="2Oq$k0">
+                          <node concept="TSZUe" id="76N1O$Ki_ON" role="2OqNvi">
+                            <node concept="2OqwBi" id="76N1O$Ki_OK" role="25WWJ7">
+                              <node concept="2GrUjf" id="76N1O$Ki_OL" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="4WqJ5ShzT3U" resolve="ref" />
                               </node>
-                              <node concept="3TrEf2" id="4WqJ5ShzT42" role="2OqNvi">
+                              <node concept="3TrEf2" id="76N1O$Ki_OM" role="2OqNvi">
                                 <ref role="3Tt5mk" to="tp5g:hBxOPr6" resolve="declaration" />
                               </node>
                             </node>
@@ -8388,12 +8385,12 @@
                           <node concept="37vLTw" id="3GPxRNR4Fdk" role="2Oq$k0">
                             <ref role="3cqZAo" node="3GPxRNR4Fd9" resolve="set" />
                           </node>
-                          <node concept="2l5eF5" id="3GPxRNR4Fdl" role="2OqNvi">
-                            <node concept="2OqwBi" id="3GPxRNR4Fdm" role="2l6Ag6">
-                              <node concept="2GrUjf" id="3GPxRNR4Fdn" role="2Oq$k0">
+                          <node concept="TSZUe" id="76N1O$Ki_OR" role="2OqNvi">
+                            <node concept="2OqwBi" id="76N1O$Ki_OO" role="25WWJ7">
+                              <node concept="2GrUjf" id="76N1O$Ki_OP" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="3GPxRNR4Fdg" resolve="ref" />
                               </node>
-                              <node concept="3TrEf2" id="3GPxRNR4Fdo" role="2OqNvi">
+                              <node concept="3TrEf2" id="76N1O$Ki_OQ" role="2OqNvi">
                                 <ref role="3Tt5mk" to="tp5g:hBxOPr6" resolve="declaration" />
                               </node>
                             </node>

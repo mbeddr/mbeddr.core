@@ -368,9 +368,6 @@
     <node concept="PrWs8" id="6_CUGSFHTH2" role="PzmwI">
       <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
     </node>
-    <node concept="PrWs8" id="6_CUGSFER5X" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="AxPO7" id="6_CUGSFFpW0">
     <property role="3GE5qa" value="var" />

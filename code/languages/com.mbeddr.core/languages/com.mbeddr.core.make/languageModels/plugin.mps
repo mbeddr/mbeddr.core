@@ -93,9 +93,6 @@
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
         <child id="1164903700860" name="catchClause" index="TEXxN" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -1650,7 +1647,6 @@
     <node concept="2tJIrI" id="4OhLxls9kpa" role="jymVt" />
     <node concept="2YIFZL" id="4OhLxls9kOD" role="jymVt">
       <property role="TrG5h" value="getModelName" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="37vLTG" id="4OhLxls9l9u" role="3clF46">
@@ -2259,7 +2255,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="call" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3NVVczyqYSg" role="1B3o_S" />
       <node concept="3uibUv" id="3NVVczyqYSk" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
@@ -2484,7 +2479,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3NVVczyhaCi" role="1B3o_S" />
       <node concept="17QB3L" id="4OhLxls9dF_" role="3clF45" />
       <node concept="3clFbS" id="3NVVczyhaCl" role="3clF47">
@@ -2524,7 +2518,6 @@
     <node concept="2tJIrI" id="4OhLxls9haG" role="jymVt" />
     <node concept="2YIFZL" id="4OhLxls9sDG" role="jymVt">
       <property role="TrG5h" value="extractLocation" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="3NVVczxBKfG" role="3clF47">
@@ -2738,7 +2731,6 @@
     <node concept="2tJIrI" id="3NVVczxBKhy" role="jymVt" />
     <node concept="2YIFZL" id="4OhLxls9tz4" role="jymVt">
       <property role="TrG5h" value="loadNodeFromTrace" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="NZpyw1B0en" role="3clF47">

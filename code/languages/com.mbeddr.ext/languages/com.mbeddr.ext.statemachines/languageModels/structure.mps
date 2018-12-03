@@ -510,9 +510,6 @@
     <node concept="PrWs8" id="7J_m0rEZdw_" role="PzmwI">
       <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContents" />
     </node>
-    <node concept="PrWs8" id="20ezT9ZDJ84" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1nOZGI8BYAa">
     <property role="3GE5qa" value="c-integration" />
@@ -614,9 +611,6 @@
     </node>
     <node concept="PrWs8" id="47Sr75PnWIb" role="PzmwI">
       <ref role="PrY4T" node="47Sr75PmD_X" resolve="IStateContents" />
-    </node>
-    <node concept="PrWs8" id="20ezT9ZDJb7" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="45sewQzW4pZ">

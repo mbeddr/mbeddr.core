@@ -5,7 +5,7 @@
     <use id="935bff03-e393-4547-a3a2-60335e0cad25" name="com.mbeddr.mpsutil.ccmenu" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="f92af8d7-1fae-4067-8109-17acf80f8e58" name="com.mbeddr.mpsutil.ccmenu.reftarget" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
@@ -336,7 +336,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -3835,7 +3835,6 @@
   <node concept="3HP615" id="2CPtIILXdVQ">
     <property role="TrG5h" value="ITargetCreationActionModifier" />
     <node concept="3clFb_" id="2CPtIILXfDP" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="modify" />
       <node concept="37vLTG" id="2CPtIILXfLZ" role="3clF46">
         <property role="TrG5h" value="action" />
@@ -4299,7 +4298,6 @@
   <node concept="3HP615" id="3n7FoehsySN">
     <property role="TrG5h" value="ITargetSetupExtension" />
     <node concept="3clFb_" id="3n7FoehszWB" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="isApplicable" />
       <node concept="37vLTG" id="3n7Foehs$bp" role="3clF46">
         <property role="TrG5h" value="createdNode" />
@@ -4310,7 +4308,6 @@
       <node concept="3clFbS" id="3n7FoehszWF" role="3clF47" />
     </node>
     <node concept="3clFb_" id="3n7Foehs$3i" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="apply" />
       <node concept="37vLTG" id="3n7Foehs$3Q" role="3clF46">
         <property role="TrG5h" value="createdNode" />

@@ -7,7 +7,7 @@
     <use id="58f98fef-90ad-4b72-a390-fad66ec7005a" name="jetbrains.mps.core.properties" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
     <use id="d5033cee-f632-44b6-b308-89d4fbde34ff" name="jetbrains.mps.build.startup" version="-1" />
   </languages>
   <imports>
@@ -205,7 +205,9 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -243,13 +245,14 @@
         <child id="6845119683729280452" name="icon" index="27igRh" />
         <child id="7962467864632399185" name="progressX" index="2gocG4" />
         <child id="7962467864633062782" name="progressHeight" index="2gqIGF" />
+        <child id="922958177840117051" name="script" index="2gvbiD" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
         <child id="6108265972537182996" name="splashScreen" index="2EqU2t" />
         <child id="6108265972537229337" name="buildNumber" index="2EteIg" />
         <child id="6108265972537229339" name="icon16" index="2EteIi" />
         <child id="6108265972537229338" name="icon32" index="2EteIj" />
         <child id="6108265972537335245" name="updateWebsite" index="2Etnp4" />
-        <child id="6108265972537372847" name="shortName" index="2EtHGA" />
+        <child id="6108265972537372847" name="product" index="2EtHGA" />
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
         <child id="8795525031433238889" name="textColor" index="HFo83" />
         <child id="781140262677914381" name="company" index="IuKBz" />
@@ -2122,6 +2125,11 @@
           </node>
         </node>
       </node>
+      <node concept="3_J27D" id="76N1O$Kj6vh" role="2gvbiD">
+        <node concept="3Mxwew" id="76N1O$Kj6vi" role="3MwsjC">
+          <property role="3MwjfP" value="mbeddr" />
+        </node>
+      </node>
     </node>
     <node concept="m$_wf" id="4LNFdiVWIZJ" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.rcp.actions" />
@@ -2670,6 +2678,7 @@
       <node concept="398223" id="1BPeV_LjXvG" role="39821P">
         <node concept="m$_wl" id="4LNFdiVWL4L" role="39821P">
           <ref role="m_rDy" node="4LNFdiVWIZJ" resolve="com.mbeddr.rcp.actions" />
+          <node concept="pUk6x" id="76N1O$Kj6v5" role="pUk7w" />
         </node>
         <node concept="3ygNvl" id="32YXDrSql99" role="39821P">
           <ref role="3ygNvj" to="ffeo:3IKDaVZn4nh" resolve="plugins" />

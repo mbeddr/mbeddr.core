@@ -4,8 +4,8 @@ ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/m
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 
 //MPS versions
-ext.mpsMajor = "2018.2"
-ext.mpsBuild = "2018.2.6"
+ext.mpsMajor = "2018.3"
+ext.mpsBuild = "2018.3-RC2"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
@@ -21,7 +21,8 @@ buildscript {
     }
 
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.22.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1' +
+                '.0.22.+'
     }
 }
 
@@ -30,7 +31,7 @@ subprojects {
     apply plugin: "base"
     apply plugin: "maven-publish"
     ext.mbeddrMajor = "1"
-    ext.mbeddrMinor = "1"
+    ext.mbeddrMinor = "2"
 
     if (project.hasProperty("mbeddrVersion")) {
         ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')

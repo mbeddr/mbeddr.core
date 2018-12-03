@@ -2,10 +2,10 @@
 <model ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -55,7 +55,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -2700,7 +2699,6 @@
       <property role="TrG5h" value="getCommentConcept" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="hwgx:5HxjapwgqLb" resolve="getCommentConcept" />
       <node concept="3Tm1VV" id="5Hxjapwguk_" role="1B3o_S" />
       <node concept="3clFbS" id="5HxjapwgukC" role="3clF47">
@@ -3465,7 +3463,6 @@
       <property role="TrG5h" value="getBinaryKind" />
       <property role="2Ki8OM" value="false" />
       <property role="13i0it" value="true" />
-      <property role="13i0is" value="false" />
       <node concept="3Tm1VV" id="5HxjapwgqKQ" role="1B3o_S" />
       <node concept="_YKpA" id="5HxjapwgqKN" role="3clF45">
         <node concept="3Tqbb2" id="5HxjapwgqKO" role="_ZDj9">
@@ -3860,7 +3857,6 @@
       <property role="TrG5h" value="getBinaryKind" />
       <property role="2Ki8OM" value="false" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKP" resolve="getBinaryKind" />
       <node concept="3Tm1VV" id="5Hxjapwgulf" role="1B3o_S" />
       <node concept="_YKpA" id="5Hxjapwgulc" role="3clF45">
@@ -5918,7 +5914,6 @@
       <property role="TrG5h" value="getBinaryKind" />
       <property role="2Ki8OM" value="false" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKP" resolve="getBinaryKind" />
       <node concept="3Tm1VV" id="4zqPC3av5yr" role="1B3o_S" />

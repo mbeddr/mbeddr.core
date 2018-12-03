@@ -27,9 +27,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -224,7 +221,6 @@
                     <property role="1EzhhJ" value="false" />
                     <property role="TrG5h" value="isExcluded" />
                     <property role="DiZV1" value="false" />
-                    <property role="IEkAT" value="false" />
                     <property role="od$2w" value="false" />
                     <node concept="3Tm1VV" id="2lop6rSg6g6" role="1B3o_S" />
                     <node concept="10P_77" id="2lop6rSg6g7" role="3clF45" />
