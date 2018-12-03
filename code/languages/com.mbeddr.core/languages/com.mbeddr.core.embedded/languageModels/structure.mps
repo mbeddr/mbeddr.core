@@ -227,18 +227,12 @@
     <property role="TrG5h" value="LowByteRefExpr" />
     <property role="EcuMT" value="6847490852669359409" />
     <ref role="1TJDcQ" node="5W7baq$60l7" resolve="HalfRegRefExpr" />
-    <node concept="PrWs8" id="5W7baq$60kM" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5W7baq$60kW">
     <property role="3GE5qa" value="registers.access" />
     <property role="TrG5h" value="HighByteRefExpr" />
     <property role="EcuMT" value="6847490852669359420" />
     <ref role="1TJDcQ" node="5W7baq$60l7" resolve="HalfRegRefExpr" />
-    <node concept="PrWs8" id="5W7baq$60kX" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5W7baq$60l7">
     <property role="3GE5qa" value="registers.access" />

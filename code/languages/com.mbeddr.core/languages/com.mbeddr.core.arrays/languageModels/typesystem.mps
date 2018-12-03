@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -388,7 +388,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -410,9 +410,6 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
-      <concept id="1226592602759" name="jetbrains.mps.baseLanguage.collections.structure.AddAllSetElementsOperation" flags="nn" index="2mBsIq">
-        <child id="1226592623721" name="argument" index="2mBxPO" />
-      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -431,6 +428,7 @@
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1201872418428" name="jetbrains.mps.baseLanguage.collections.structure.GetKeysOperation" flags="nn" index="3lbrtF" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
@@ -3336,21 +3334,21 @@
             <node concept="37vLTw" id="18YZMHRjdM5" role="2Oq$k0">
               <ref role="3cqZAo" node="18YZMHRj9RO" resolve="roles" />
             </node>
-            <node concept="2mBsIq" id="6kZNNdikoCK" role="2OqNvi">
-              <node concept="1eOMI4" id="d7IW$aeTv$" role="2mBxPO">
-                <node concept="10QFUN" id="d7IW$aeTv_" role="1eOMHV">
-                  <node concept="2YIFZM" id="5HxjapwecXU" role="10QFUP">
+            <node concept="X8dFx" id="76N1O$Ki_MV" role="2OqNvi">
+              <node concept="1eOMI4" id="76N1O$Ki_MO" role="25WWJ7">
+                <node concept="10QFUN" id="76N1O$Ki_MP" role="1eOMHV">
+                  <node concept="2YIFZM" id="76N1O$Ki_MQ" role="10QFUP">
                     <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
                     <ref role="37wK5l" to="unno:2mTpoiCttyd" resolve="getChildRoles" />
-                    <node concept="37vLTw" id="5HxjapwecXV" role="37wK5m">
+                    <node concept="37vLTw" id="76N1O$Ki_MR" role="37wK5m">
                       <ref role="3cqZAo" node="6kZNNdikoCu" resolve="b" />
                     </node>
-                    <node concept="3clFbT" id="18YZMHRjvmE" role="37wK5m">
+                    <node concept="3clFbT" id="76N1O$Ki_MS" role="37wK5m">
                       <property role="3clFbU" value="false" />
                     </node>
                   </node>
-                  <node concept="A3Dl8" id="d7IW$aeTvD" role="10QFUM">
-                    <node concept="3uibUv" id="18YZMHRjux$" role="A3Ik2">
+                  <node concept="A3Dl8" id="76N1O$Ki_MT" role="10QFUM">
+                    <node concept="3uibUv" id="76N1O$Ki_MU" role="A3Ik2">
                       <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
                     </node>
                   </node>

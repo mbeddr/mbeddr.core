@@ -7,7 +7,7 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1172,7 +1172,7 @@
                     <node concept="1uHKPH" id="25g4WfHxGOt" role="2OqNvi" />
                   </node>
                   <node concept="2qgKlT" id="25g4WfHxGOu" role="2OqNvi">
-                    <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="mapBasicType" />
+                    <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="getBasicTypeMapping" />
                     <node concept="2Sf5sV" id="25g4WfHxGOv" role="37wK5m" />
                   </node>
                 </node>
@@ -1223,7 +1223,7 @@
                 <ref role="3cqZAo" node="3LaV6lLNMmf" resolve="tsc" />
               </node>
               <node concept="2qgKlT" id="25g4WfHxGLx" role="2OqNvi">
-                <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="mapBasicType" />
+                <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="getBasicTypeMapping" />
                 <node concept="2Sf5sV" id="25g4WfHxGLy" role="37wK5m" />
               </node>
             </node>

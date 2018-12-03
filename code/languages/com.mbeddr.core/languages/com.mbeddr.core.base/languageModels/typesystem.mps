@@ -2,7 +2,7 @@
 <model ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
@@ -33,9 +33,6 @@
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -1751,7 +1748,6 @@
     <node concept="2tJIrI" id="6sCGfm8n_8e" role="jymVt" />
     <node concept="2YIFZL" id="6sCGfm8nBYk" role="jymVt">
       <property role="TrG5h" value="simulateF5ForRoot" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="6sCGfm8n_la" role="3clF47">
@@ -1777,7 +1773,6 @@
     </node>
     <node concept="2YIFZL" id="6sCGfm8seWQ" role="jymVt">
       <property role="TrG5h" value="simulateF5ForRoot" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="6sCGfm8seWR" role="3clF47">
@@ -1832,7 +1827,6 @@
                           <property role="1EzhhJ" value="false" />
                           <property role="TrG5h" value="run" />
                           <property role="DiZV1" value="false" />
-                          <property role="IEkAT" value="false" />
                           <node concept="3Tm1VV" id="6sCGfm8seXc" role="1B3o_S" />
                           <node concept="3cqZAl" id="6sCGfm8seXd" role="3clF45" />
                           <node concept="37vLTG" id="6sCGfm8seXe" role="3clF46">

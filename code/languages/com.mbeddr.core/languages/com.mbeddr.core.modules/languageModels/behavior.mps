@@ -2,12 +2,12 @@
 <model ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -57,7 +57,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -812,7 +811,6 @@
       <property role="TrG5h" value="exportable" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKI" resolve="exportable" />
       <node concept="3Tm1VV" id="5HxjapwgqOa" role="1B3o_S" />
       <node concept="10P_77" id="5HxjapwgqO8" role="3clF45" />
@@ -3014,7 +3012,6 @@
       <property role="TrG5h" value="exportable" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="true" />
-      <property role="13i0is" value="false" />
       <node concept="3Tm1VV" id="5HxjapwgqKJ" role="1B3o_S" />
       <node concept="10P_77" id="5HxjapwgqKF" role="3clF45" />
       <node concept="3clFbS" id="5HxjapwgqKK" role="3clF47">
@@ -3029,7 +3026,6 @@
       <property role="TrG5h" value="getCommentConcept" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="hwgx:5HxjapwgqLb" resolve="getCommentConcept" />
       <node concept="_YKpA" id="3RtPbXKRphz" role="3clF45">
         <node concept="3bZ5Sz" id="3RtPbXKRph$" role="_ZDj9" />
@@ -5594,7 +5590,6 @@
       <property role="TrG5h" value="exportable" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKI" resolve="exportable" />
       <node concept="3Tm1VV" id="5HxjapwgqTq" role="1B3o_S" />
       <node concept="10P_77" id="5HxjapwgqTo" role="3clF45" />
@@ -9174,7 +9169,6 @@
       <property role="TrG5h" value="exportable" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKI" resolve="exportable" />
       <node concept="3Tm1VV" id="5HxjapwgqSq" role="1B3o_S" />
       <node concept="10P_77" id="5HxjapwgqSo" role="3clF45" />
@@ -10360,7 +10354,6 @@
       <property role="TrG5h" value="exportable" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKI" resolve="exportable" />
       <node concept="3Tm1VV" id="5HxjapwgqOy" role="1B3o_S" />
       <node concept="10P_77" id="5HxjapwgqOw" role="3clF45" />
@@ -12436,7 +12429,6 @@
       <property role="TrG5h" value="exportable" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKI" resolve="exportable" />
       <node concept="3Tm1VV" id="2AZbPfMcw7s" role="1B3o_S" />
       <node concept="10P_77" id="2AZbPfMcw7q" role="3clF45" />
@@ -15413,7 +15405,6 @@
       <node concept="10P_77" id="6Pt2vx4BTXG" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6Pt2vx4BTXH" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -15504,7 +15495,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" to="ywuz:5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="1Iv4$fSrH_t" role="1B3o_S" />

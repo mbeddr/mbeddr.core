@@ -2,7 +2,7 @@
 <model ref="r:a81d40ef-e0ca-4e82-b235-4b068157ec1c(com.mbeddr.core.buildvalidation.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -46,9 +46,6 @@
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -947,7 +944,6 @@
     <node concept="2tJIrI" id="7uEcx53EmE6" role="jymVt" />
     <node concept="2YIFZL" id="7uEcx53EmE7" role="jymVt">
       <property role="TrG5h" value="collectAllMPSFiles" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="7uEcx53EmE8" role="3clF47">
@@ -1042,7 +1038,6 @@
     </node>
     <node concept="2YIFZL" id="7uEcx53EmEI" role="jymVt">
       <property role="TrG5h" value="collectAllMPSFilesInternal" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="7uEcx53EmEJ" role="3clF47">
@@ -1064,7 +1059,6 @@
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="accept" />
                       <property role="DiZV1" value="false" />
-                      <property role="IEkAT" value="false" />
                       <node concept="3Tm1VV" id="7uEcx53EmET" role="1B3o_S" />
                       <node concept="10P_77" id="7uEcx53EmEU" role="3clF45" />
                       <node concept="37vLTG" id="7uEcx53EmEV" role="3clF46">

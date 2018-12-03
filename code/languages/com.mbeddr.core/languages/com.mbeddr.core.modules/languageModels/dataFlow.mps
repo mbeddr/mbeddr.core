@@ -128,9 +128,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -6729,7 +6726,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="hashCode" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="4zFXTqpLeiq" role="1B3o_S" />
       <node concept="10Oyi0" id="4zFXTqpLeis" role="3clF45" />
       <node concept="3clFbS" id="4zFXTqpLeit" role="3clF47">
@@ -6826,7 +6822,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="equals" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="4zFXTqpL1w6" role="1B3o_S" />
       <node concept="10P_77" id="4zFXTqpL1w8" role="3clF45" />
       <node concept="37vLTG" id="4zFXTqpL1w9" role="3clF46">
@@ -6975,7 +6970,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="4zFXTqpFR$s" role="1B3o_S" />
       <node concept="17QB3L" id="4zFXTqpFRWa" role="3clF45" />
       <node concept="3clFbS" id="4zFXTqpFR$v" role="3clF47">
