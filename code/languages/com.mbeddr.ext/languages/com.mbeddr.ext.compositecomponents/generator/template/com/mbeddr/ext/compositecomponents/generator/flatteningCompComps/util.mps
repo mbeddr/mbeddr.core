@@ -37,9 +37,6 @@
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -1139,7 +1136,6 @@
     </node>
     <node concept="2YIFZL" id="3ejBUtVm45k" role="jymVt">
       <property role="TrG5h" value="handleAdapterPortRef" />
-      <property role="IEkAT" value="false" />
       <node concept="3cqZAl" id="3ejBUtVm45l" role="3clF45" />
       <node concept="3Tm1VV" id="3ejBUtVm45m" role="1B3o_S" />
       <node concept="3clFbS" id="3ejBUtVm45n" role="3clF47">
@@ -1310,7 +1306,6 @@
     <node concept="2tJIrI" id="7mgpfAOBN0b" role="jymVt" />
     <node concept="2YIFZL" id="7mgpfAOtD6G" role="jymVt">
       <property role="TrG5h" value="handleInstanceUpdate" />
-      <property role="IEkAT" value="false" />
       <node concept="3cqZAl" id="7mgpfAOtD6H" role="3clF45" />
       <node concept="3Tm1VV" id="7mgpfAOtD6I" role="1B3o_S" />
       <node concept="3clFbS" id="7mgpfAOtD6J" role="3clF47">
