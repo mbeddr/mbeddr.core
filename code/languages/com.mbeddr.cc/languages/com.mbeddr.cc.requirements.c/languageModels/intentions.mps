@@ -49,9 +49,6 @@
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -246,7 +243,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -294,7 +291,6 @@
     <property role="TrG5h" value="DebugHelper" />
     <node concept="2tJIrI" id="4jkUBhBVWie" role="jymVt" />
     <node concept="Wx3nA" id="$bJ0jgVdf5" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="originalValue" />
       <property role="3TUv4t" value="false" />
       <node concept="10Oyi0" id="$bJ0jgVdf6" role="1tU5fm" />
@@ -304,7 +300,6 @@
       </node>
     </node>
     <node concept="Wx3nA" id="$bJ0jgVdf9" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="sliderValue" />
       <property role="3TUv4t" value="false" />
       <node concept="10Oyi0" id="$bJ0jgVdfa" role="1tU5fm" />
@@ -646,7 +641,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="editorWillBeDisposed" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="2dnGg2I$BD6" role="1B3o_S" />
                         <node concept="3cqZAl" id="2dnGg2I$BD7" role="3clF45" />
                         <node concept="37vLTG" id="2dnGg2I$BD8" role="3clF46">

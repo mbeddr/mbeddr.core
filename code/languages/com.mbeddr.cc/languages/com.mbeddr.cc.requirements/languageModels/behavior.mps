@@ -2,7 +2,7 @@
 <model ref="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -44,7 +44,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -80,9 +79,6 @@
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -3084,7 +3080,6 @@
       <property role="TrG5h" value="getRequiredDataKind" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="true" />
-      <property role="13i0is" value="false" />
       <node concept="3Tm1VV" id="2AZbPfMcvYF" role="1B3o_S" />
       <node concept="_YKpA" id="2AZbPfMcvYC" role="3clF45">
         <node concept="3bZ5Sz" id="3cUcim$aZ93" role="_ZDj9" />
@@ -4386,7 +4381,6 @@
     <node concept="2tJIrI" id="5MZGKPTh1il" role="jymVt" />
     <node concept="3clFb_" id="5MZGKPTh29F" role="jymVt">
       <property role="TrG5h" value="createClass" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="7FlaVfGsTRO" role="3clF47">
@@ -6272,7 +6266,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="getModules" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="2AZbPfOrIv1" role="1B3o_S" />
         <node concept="3uibUv" id="2AZbPfOrIv3" role="3clF45">
           <ref role="3uigEE" to="wyt6:~Iterable" resolve="Iterable" />
@@ -6351,7 +6344,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="getModels" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="2AZbPfOrIv9" role="1B3o_S" />
         <node concept="3uibUv" id="2AZbPfOrIvb" role="3clF45">
           <ref role="3uigEE" to="wyt6:~Iterable" resolve="Iterable" />
@@ -6447,7 +6439,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="resolve" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="2AZbPfOrIvh" role="1B3o_S" />
         <node concept="3uibUv" id="2AZbPfOrIvj" role="3clF45">
           <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
@@ -6486,7 +6477,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="resolve" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="2AZbPfOrIvr" role="1B3o_S" />
         <node concept="3uibUv" id="2AZbPfOrIvt" role="3clF45">
           <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
@@ -8665,7 +8655,6 @@
       <property role="TrG5h" value="getRequiredDataKind" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" node="2AZbPfMcvYE" resolve="getRequiredDataKind" />
       <node concept="3Tm1VV" id="2AZbPfMcyOn" role="1B3o_S" />
       <node concept="3clFbS" id="2AZbPfMcyOq" role="3clF47">
