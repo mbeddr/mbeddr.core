@@ -1246,6 +1246,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6gZrhT93kw7" role="jymVt" />
     <node concept="3clFb_" id="ojedFZ7Sct" role="jymVt">
       <property role="TrG5h" value="getHyperlinkNode" />
       <node concept="37vLTG" id="ojedFZ7Scu" role="3clF46">
@@ -1271,6 +1272,70 @@
               <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
               <node concept="1Z6Ecs" id="ojedFZ7ScD" role="37wK5m">
                 <ref role="1Z6EpT" to="tj7y:ojedFZ7Qi6" resolve="hyperlink-node" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6gZrhT93j$9" role="jymVt" />
+    <node concept="3clFb_" id="6gZrhT93izx" role="jymVt">
+      <property role="TrG5h" value="getHyperLinkFocus" />
+      <node concept="37vLTG" id="6gZrhT93izy" role="3clF46">
+        <property role="TrG5h" value="cell" />
+        <node concept="3uibUv" id="6gZrhT93izz" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="10P_77" id="6gZrhT93sTA" role="3clF45" />
+      <node concept="3Tm1VV" id="6gZrhT93iz_" role="1B3o_S" />
+      <node concept="3clFbS" id="6gZrhT93izA" role="3clF47">
+        <node concept="3clFbF" id="6gZrhT93izB" role="3cqZAp">
+          <node concept="2EnYce" id="6gZrhT93izC" role="3clFbG">
+            <node concept="2EnYce" id="6gZrhT93izD" role="2Oq$k0">
+              <node concept="37vLTw" id="6gZrhT93izE" role="2Oq$k0">
+                <ref role="3cqZAo" node="6gZrhT93izy" resolve="cell" />
+              </node>
+              <node concept="liA8E" id="6gZrhT93izF" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6gZrhT93izG" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+              <node concept="1Z6Ecs" id="6gZrhT93izH" role="37wK5m">
+                <ref role="1Z6EpT" to="tj7y:6gZrhT92Nte" resolve="hyperlink-focus" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6gZrhT93uIn" role="jymVt" />
+    <node concept="3clFb_" id="6gZrhT93tHY" role="jymVt">
+      <property role="TrG5h" value="getHyperLinkSelect" />
+      <node concept="37vLTG" id="6gZrhT93tHZ" role="3clF46">
+        <property role="TrG5h" value="cell" />
+        <node concept="3uibUv" id="6gZrhT93tI0" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="10P_77" id="6gZrhT93tI1" role="3clF45" />
+      <node concept="3Tm1VV" id="6gZrhT93tI2" role="1B3o_S" />
+      <node concept="3clFbS" id="6gZrhT93tI3" role="3clF47">
+        <node concept="3clFbF" id="6gZrhT93tI4" role="3cqZAp">
+          <node concept="2EnYce" id="6gZrhT93tI5" role="3clFbG">
+            <node concept="2EnYce" id="6gZrhT93tI6" role="2Oq$k0">
+              <node concept="37vLTw" id="6gZrhT93tI7" role="2Oq$k0">
+                <ref role="3cqZAo" node="6gZrhT93tHZ" resolve="cell" />
+              </node>
+              <node concept="liA8E" id="6gZrhT93tI8" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6gZrhT93tI9" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+              <node concept="1Z6Ecs" id="6gZrhT93tIa" role="37wK5m">
+                <ref role="1Z6EpT" to="tj7y:6gZrhT93hS7" resolve="hyperlink-select" />
               </node>
             </node>
           </node>
@@ -1555,11 +1620,17 @@
                               <node concept="37vLTw" id="ojedFZ8nN7" role="37wK5m">
                                 <ref role="3cqZAo" node="ojedFZ7VMV" resolve="hyperlinkNode" />
                               </node>
-                              <node concept="3clFbT" id="ojedFZ8nTP" role="37wK5m">
-                                <property role="3clFbU" value="true" />
+                              <node concept="1rXfSq" id="6gZrhT93wFs" role="37wK5m">
+                                <ref role="37wK5l" node="6gZrhT93izx" resolve="getHyperLinkFocus" />
+                                <node concept="37vLTw" id="6gZrhT93wZC" role="37wK5m">
+                                  <ref role="3cqZAo" node="80_psBV9Cp" resolve="cellAtCursor" />
+                                </node>
                               </node>
-                              <node concept="3clFbT" id="ojedFZ8nZp" role="37wK5m">
-                                <property role="3clFbU" value="true" />
+                              <node concept="1rXfSq" id="6gZrhT93wMG" role="37wK5m">
+                                <ref role="37wK5l" node="6gZrhT93tHY" resolve="getHyperLinkSelect" />
+                                <node concept="37vLTw" id="6gZrhT93x4t" role="37wK5m">
+                                  <ref role="3cqZAo" node="80_psBV9Cp" resolve="cellAtCursor" />
+                                </node>
                               </node>
                             </node>
                           </node>
