@@ -12,6 +12,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="i731" ref="r:b7e352ad-6f6c-4341-a5ff-0884bd10e135(com.mbeddr.core.base.generator.template.util)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
+    <import index="rl9" ref="r:46777832-bf24-4815-97b7-1491b1b9a11b(com.mbeddr.core.assessment.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -382,7 +383,7 @@
       <ref role="1puQsG" node="3ZdGyCQXLtL" resolve="deleteControlledNamesANdHandleReexports" />
     </node>
     <node concept="aNPBN" id="6iaOvgbhQpx" role="aQYdv">
-      <ref role="aOQi4" to="vs0r:K292flwCEV" resolve="AssessmentContainer" />
+      <ref role="aOQi4" to="rl9:K292flwCEV" resolve="AssessmentContainer" />
     </node>
   </node>
   <node concept="1pmfR0" id="3ZdGyCQXLtL">
