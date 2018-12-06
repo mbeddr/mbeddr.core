@@ -632,6 +632,9 @@
       <node concept="m$_yC" id="32kfzHm5vju" role="m$_yJ">
         <ref role="m$_y1" to="p6ld:7eF9rfAuFw7" resolve="com.mbeddr.analyses.cbmc" />
       </node>
+      <node concept="m$_yC" id="6HIxGZOSsk5" role="m$_yJ">
+        <ref role="m$_y1" to="p6ld:6HIxGZOOuzh" resolve="com.mbeddr.analyses.z3" />
+      </node>
     </node>
     <node concept="398rNT" id="7Vt15sLWjLU" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
@@ -881,6 +884,9 @@
       </node>
       <node concept="L2wRC" id="3JmJHJbDhqH" role="39821P">
         <ref role="L2wRA" node="3JmJHJbDg_X" resolve="test.analyses.spin.testcode" />
+      </node>
+      <node concept="L2wRC" id="6HIxGZOSvYL" role="39821P">
+        <ref role="L2wRA" node="6HIxGZOKwAw" resolve="test.analyses.stan.ts" />
       </node>
     </node>
     <node concept="2G$12M" id="7Vt15sLWjNi" role="3989C9">
@@ -1606,6 +1612,36 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="6HIxGZOKwAw" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.analyses.stan.ts" />
+        <property role="3LESm3" value="09137596-3930-4a52-b39f-4d1c6f28f43e" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6HIxGZOKwWM" role="3LF7KH">
+          <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="6HIxGZOKwWN" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="6HIxGZOKwWO" role="2Ry0An">
+              <property role="2Ry0Am" value="test.analyses.stan.ts" />
+              <node concept="2Ry0Ak" id="6HIxGZOKx8Y" role="2Ry0An">
+                <property role="2Ry0Am" value="test.analyses.stan.ts.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6HIxGZOKxgW" role="3bR37C">
+          <node concept="3bR9La" id="6HIxGZOKxgX" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6HIxGZOKo4H" resolve="com.mbeddr.analyses.stan" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6HIxGZOKABJ" role="3bR37C">
+          <node concept="3bR9La" id="6HIxGZOKABK" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6HIxGZOKxlC" resolve="com.mbeddr.analyses.z3.testing" />
           </node>
         </node>
       </node>
