@@ -15092,6 +15092,9 @@
                   <property role="2Ry0Am" value="com.mbeddr.analyses.z3.lib" />
                   <node concept="2Ry0Ak" id="6HIxGZOWxP7" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="6HIxGZPizxK" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.microsoft.z3.jar" />
+                    </node>
                   </node>
                 </node>
               </node>
