@@ -15077,24 +15077,17 @@
       </node>
       <node concept="m$_wl" id="6HIxGZOWuae" role="39821P">
         <ref role="m_rDy" node="6HIxGZOOuzh" resolve="com.mbeddr.analyses.z3" />
-        <node concept="398223" id="6HIxGZOWvBn" role="39821P">
-          <node concept="3_J27D" id="6HIxGZOWvBo" role="Nbhlr">
-            <node concept="3Mxwew" id="6HIxGZOWwpP" role="3MwsjC">
-              <property role="3MwjfP" value="lib" />
-            </node>
-          </node>
-          <node concept="2HvfSZ" id="6HIxGZOWwpV" role="39821P">
-            <node concept="398BVA" id="6HIxGZOWx7j" role="2HvfZ0">
-              <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
-              <node concept="2Ry0Ak" id="6HIxGZOWxOH" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6HIxGZOWxOU" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.analyses.z3.lib" />
-                  <node concept="2Ry0Ak" id="6HIxGZOWxP7" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6HIxGZPizxK" role="2Ry0An">
-                      <property role="2Ry0Am" value="com.microsoft.z3.jar" />
-                    </node>
+        <node concept="28jJK3" id="2X4tZq58mZ2" role="39821P">
+          <node concept="398BVA" id="2X4tZq58nBq" role="28jJRO">
+            <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
+            <node concept="2Ry0Ak" id="2X4tZq58nBr" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="2X4tZq58q81" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.analyses.z3.lib" />
+                <node concept="2Ry0Ak" id="2X4tZq58qKe" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="2X4tZq58qKl" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.microsoft.z3.jar" />
                   </node>
                 </node>
               </node>
