@@ -1620,6 +1620,7 @@
         <property role="TrG5h" value="test.analyses.stan.ts" />
         <property role="3LESm3" value="09137596-3930-4a52-b39f-4d1c6f28f43e" />
         <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
         <node concept="398BVA" id="6HIxGZOKwWM" role="3LF7KH">
           <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
           <node concept="2Ry0Ak" id="6HIxGZOKwWN" role="iGT6I">
@@ -1686,6 +1687,9 @@
       </node>
       <node concept="22LTRM" id="3JmJHJbDhGt" role="22LTRK">
         <ref role="22LTRN" node="3JmJHJbDg_X" resolve="test.analyses.spin.testcode" />
+      </node>
+      <node concept="22LTRM" id="2X4tZq5cOAm" role="22LTRK">
+        <ref role="22LTRN" node="6HIxGZOKwAw" resolve="test.analyses.stan.ts" />
       </node>
     </node>
   </node>
