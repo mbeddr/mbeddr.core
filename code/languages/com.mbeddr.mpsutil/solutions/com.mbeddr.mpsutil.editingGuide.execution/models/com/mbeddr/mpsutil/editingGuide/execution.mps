@@ -2,11 +2,11 @@
 <model ref="r:b54ad628-4790-40a0-8b1f-5a776b948a02(com.mbeddr.mpsutil.editingGuide.execution)">
   <persistence version="9" />
   <languages>
-    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -199,6 +199,7 @@
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -1149,7 +1150,32 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="Y8XzxbLgek" role="3cqZAp">
+              <node concept="3cpWsn" id="Y8XzxbLgel" role="3cpWs9">
+                <property role="TrG5h" value="copiedRoots" />
+                <node concept="2YIFZM" id="Y8XzxbLgX_" role="33vP2m">
+                  <ref role="37wK5l" to="w1kc:~CopyUtil.copyAndPreserveId(java.util.List,java.util.Map):java.util.List" resolve="copyAndPreserveId" />
+                  <ref role="1Pybhc" to="w1kc:~CopyUtil" resolve="CopyUtil" />
+                  <node concept="2OqwBi" id="3$YAQZ4CioS" role="37wK5m">
+                    <node concept="2OqwBi" id="3$YAQZ4Ciey" role="2Oq$k0">
+                      <node concept="37vLTw" id="3$YAQZ4Ci7S" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5h2rxDjX6nB" />
+                      </node>
+                      <node concept="I4A8Y" id="3$YAQZ4Cij4" role="2OqNvi" />
+                    </node>
+                    <node concept="2RRcyG" id="3$YAQZ4CirG" role="2OqNvi" />
+                  </node>
+                  <node concept="37vLTw" id="Y8XzxbLgXB" role="37wK5m">
+                    <ref role="3cqZAo" node="4TMjSvbF2H0" resolve="myOriginal2SandboxMap" />
+                  </node>
+                </node>
+                <node concept="2I9FWS" id="Y8XzxbLiay" role="1tU5fm" />
+              </node>
+            </node>
             <node concept="2Gpval" id="3$YAQZ4ChL3" role="3cqZAp">
+              <node concept="37vLTw" id="Y8XzxbLjF8" role="2GsD0m">
+                <ref role="3cqZAo" node="Y8XzxbLgel" resolve="copiedRoots" />
+              </node>
               <node concept="2GrKxI" id="3$YAQZ4ChL5" role="2Gsz3X">
                 <property role="TrG5h" value="root" />
               </node>
@@ -1161,31 +1187,12 @@
                     </node>
                     <node concept="liA8E" id="3$YAQZ4Cj34" role="2OqNvi">
                       <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
-                      <node concept="2YIFZM" id="3$YAQZ4Cj3H" role="37wK5m">
-                        <ref role="1Pybhc" to="w1kc:~CopyUtil" resolve="CopyUtil" />
-                        <ref role="37wK5l" to="w1kc:~CopyUtil.copy(org.jetbrains.mps.openapi.model.SNode,java.util.Map,boolean):org.jetbrains.mps.openapi.model.SNode" resolve="copy" />
-                        <node concept="2GrUjf" id="3$YAQZ4Cjbm" role="37wK5m">
-                          <ref role="2Gs0qQ" node="3$YAQZ4ChL5" resolve="root" />
-                        </node>
-                        <node concept="37vLTw" id="3$YAQZ4Cj3J" role="37wK5m">
-                          <ref role="3cqZAo" node="4TMjSvbF2H0" resolve="myOriginal2SandboxMap" />
-                        </node>
-                        <node concept="3clFbT" id="3$YAQZ4Cj3K" role="37wK5m">
-                          <property role="3clFbU" value="true" />
-                        </node>
+                      <node concept="2GrUjf" id="Y8XzxbLk7T" role="37wK5m">
+                        <ref role="2Gs0qQ" node="3$YAQZ4ChL5" resolve="root" />
                       </node>
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="2OqwBi" id="3$YAQZ4CioS" role="2GsD0m">
-                <node concept="2OqwBi" id="3$YAQZ4Ciey" role="2Oq$k0">
-                  <node concept="37vLTw" id="3$YAQZ4Ci7S" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5h2rxDjX6nB" resolve="myOriginalExercise" />
-                  </node>
-                  <node concept="I4A8Y" id="3$YAQZ4Cij4" role="2OqNvi" />
-                </node>
-                <node concept="2RRcyG" id="3$YAQZ4CirG" role="2OqNvi" />
               </node>
             </node>
             <node concept="3clFbF" id="692bXAb6zLB" role="3cqZAp">
