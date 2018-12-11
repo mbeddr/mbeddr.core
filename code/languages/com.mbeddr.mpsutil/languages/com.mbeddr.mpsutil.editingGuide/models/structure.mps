@@ -21,6 +21,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -117,12 +118,14 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="3909459679554886010" />
+    <property role="3GE5qa" value="fragments" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_V">
     <property role="TrG5h" value="InlineProgramFragment" />
     <property role="34LRSv" value="inline" />
     <property role="EcuMT" value="3909459679554886011" />
+    <property role="3GE5qa" value="fragments" />
     <ref role="1TJDcQ" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
     <node concept="1TJgyj" id="3p1cdQ7_d_W" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -270,6 +273,21 @@
       <property role="IQ2nx" value="5870520359623835565" />
       <property role="TrG5h" value="moduleId" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7uU8NkLT8Bi">
+    <property role="EcuMT" value="8627246747558906322" />
+    <property role="TrG5h" value="ReferencingProgramFragment" />
+    <property role="3GE5qa" value="fragments" />
+    <property role="34LRSv" value="reference" />
+    <property role="R4oN_" value="References an existing node to show and modify it" />
+    <ref role="1TJDcQ" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
+    <node concept="1TJgyj" id="7uU8NkLT8LQ" role="1TKVEi">
+      <property role="IQ2ns" value="8627246747558906998" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="referencedNode" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
 </model>
