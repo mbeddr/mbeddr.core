@@ -971,9 +971,9 @@
     </node>
   </node>
   <node concept="1M2fIO" id="gjBy3ThgJB">
-    <ref role="1M2myG" to="vs0r:gjBy3ThgJz" resolve="ConceptDeclarationReference" />
+    <ref role="1M2myG" to="vs0r:gjBy3ThgJz" resolve="ConceptDeclarationReference_old" />
     <node concept="1N5Pfh" id="4uR15_er0x3" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:4uR15_er0pl" resolve="concept" />
+      <ref role="1N5Vy1" to="vs0r:4uR15_er0pl" resolve="concept_old" />
       <node concept="3dgokm" id="4uR15_erk3i" role="1N6uqs">
         <node concept="3clFbS" id="5CkU_dHiezW" role="2VODD2">
           <node concept="3clFbF" id="5CkU_dHiezX" role="3cqZAp">
