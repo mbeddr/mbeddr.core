@@ -1028,7 +1028,7 @@
                           <node concept="2pIpSj" id="6AXziRbRRR0" role="2pJxcM">
                             <ref role="2pIpSl" to="v7ag:3TmmsQkDdTW" resolve="source" />
                             <node concept="2pJPED" id="6AXziRbRS0G" role="2pJxcZ">
-                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                               <node concept="2pIpSj" id="6AXziRbRS0H" role="2pJxcM">
                                 <ref role="2pIpSl" to="v7ag:3TmmsQkDdTU" resolve="instance" />
                                 <node concept="36biLy" id="6AXziRbRS0I" role="2pJxcZ">
@@ -1053,7 +1053,7 @@
                           <node concept="2pIpSj" id="6AXziRbRMjb" role="2pJxcM">
                             <ref role="2pIpSl" to="v7ag:3TmmsQkDdTX" resolve="target" />
                             <node concept="2pJPED" id="6AXziRbRO1_" role="2pJxcZ">
-                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                              <ref role="2pJxaS" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                               <node concept="2pIpSj" id="6AXziRbRO3o" role="2pJxcM">
                                 <ref role="2pIpSl" to="v7ag:3TmmsQkDdTU" resolve="instance" />
                                 <node concept="36biLy" id="6AXziRbRO3y" role="2pJxcZ">
@@ -3346,7 +3346,7 @@
                   <node concept="2Rf3mk" id="3ejBUtVm4od" role="2OqNvi">
                     <node concept="1xMEDy" id="3ejBUtVm4oe" role="1xVPHs">
                       <node concept="chp4Y" id="3ejBUtVm4of" role="ri$Ld">
-                        <ref role="cht4Q" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+                        <ref role="cht4Q" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
                       </node>
                     </node>
                   </node>

@@ -2034,7 +2034,7 @@
           </node>
           <node concept="3mAFYk" id="6rHj_ILR2L8" role="1xLlFP">
             <property role="3m_KjL" value="Delegating Connector" />
-            <ref role="3m_WZM" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
+            <ref role="3m_WZM" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
             <ref role="3m_MR0" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
             <node concept="3mAF$r" id="6rHj_ILR2La" role="3m_MS9">
               <node concept="3clFbS" id="6rHj_ILR2Lc" role="2VODD2">
@@ -2299,7 +2299,7 @@
                 <node concept="1PxgMI" id="7sHDEc2WDvt" role="37vLTx">
                   <node concept="3R4i$M" id="7sHDEc2WDvu" role="1m5AlR" />
                   <node concept="chp4Y" id="79i$vAY79QC" role="3oSUPX">
-                    <ref role="cht4Q" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
+                    <ref role="cht4Q" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7sHDEc2WDvv" role="37vLTJ">
