@@ -200,7 +200,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -407,6 +407,35 @@
                       <ref role="3cqZAo" node="4IjegxhqsLF" resolve="myNode" />
                     </node>
                     <node concept="Xl_RD" id="4Ijegxhqy0P" role="37wK5m">
+                      <property role="Xl_RC" value="result" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3_1$Yv" id="3Wx3Ow9f91x" role="3_9lra">
+          <node concept="2OqwBi" id="3Wx3Ow9fcL7" role="3_1BAH">
+            <node concept="liA8E" id="3Wx3Ow9fcL8" role="2OqNvi">
+              <ref role="37wK5l" to="g51k:~EditorCell_Label.getText():java.lang.String" resolve="getText" />
+            </node>
+            <node concept="0kSF2" id="3Wx3Ow9fcL9" role="2Oq$k0">
+              <node concept="3uibUv" id="3Wx3Ow9fcLa" role="0kSFW">
+                <ref role="3uigEE" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
+              </node>
+              <node concept="3cpWs3" id="3Wx3Ow9ffyU" role="0kSFX">
+                <node concept="Xl_RD" id="3Wx3Ow9ffyX" role="3uHU7B">
+                  <property role="Xl_RC" value="Expected 'startup' but was: " />
+                </node>
+                <node concept="2OqwBi" id="3Wx3Ow9fcLb" role="3uHU7w">
+                  <node concept="369mXd" id="3Wx3Ow9fcLc" role="2Oq$k0" />
+                  <node concept="liA8E" id="3Wx3Ow9fcLd" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorComponent.findCellWithId(org.jetbrains.mps.openapi.model.SNode,java.lang.String):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="findCellWithId" />
+                    <node concept="37vLTw" id="3Wx3Ow9fcLe" role="37wK5m">
+                      <ref role="3cqZAo" node="4IjegxhqsLF" resolve="myNode" />
+                    </node>
+                    <node concept="Xl_RD" id="3Wx3Ow9fcLf" role="37wK5m">
                       <property role="Xl_RC" value="result" />
                     </node>
                   </node>
