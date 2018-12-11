@@ -2,15 +2,15 @@
 <model ref="r:a754188c-924f-4201-9121-9a393a13f524(test.com.mbeddr.mpsutil.asynccell.test@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="4d43042b-3d26-46a9-888a-1ec4e4a2c81d" name="com.mbeddr.mpsutil.asynccell.sandbox" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.blutil.test.waitfor" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="4d43042b-3d26-46a9-888a-1ec4e4a2c81d" name="com.mbeddr.mpsutil.asynccell.sandbox" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
+    <use id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.blutil.test.waitfor" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
   </languages>
   <imports>
     <import index="re1d" ref="r:515ec77b-87d0-4871-9d0a-f5cfa3bbab14(com.mbeddr.mpsutil.asynccell.sandbox.behavior)" />
@@ -224,7 +224,7 @@
         <property role="OXtK3" value="true" />
         <property role="p6zMq" value="0" />
         <property role="p6zMs" value="0" />
-        <property role="LIFWd" value="Custom_cgag8t_b0" />
+        <property role="LIFWd" value="result" />
       </node>
     </node>
     <node concept="3clFbS" id="2u$73V9sVM6" role="LjaKd">
@@ -299,7 +299,7 @@
                                     <ref role="3cqZAo" node="4IjegxhqsLF" resolve="myNode" />
                                   </node>
                                   <node concept="Xl_RD" id="4IjegxhqJjH" role="37wK5m">
-                                    <property role="Xl_RC" value="Custom_cgag8t_b0" />
+                                    <property role="Xl_RC" value="result" />
                                   </node>
                                 </node>
                               </node>
@@ -407,7 +407,7 @@
                       <ref role="3cqZAo" node="4IjegxhqsLF" resolve="myNode" />
                     </node>
                     <node concept="Xl_RD" id="4Ijegxhqy0P" role="37wK5m">
-                      <property role="Xl_RC" value="Custom_cgag8t_b0" />
+                      <property role="Xl_RC" value="result" />
                     </node>
                   </node>
                 </node>
