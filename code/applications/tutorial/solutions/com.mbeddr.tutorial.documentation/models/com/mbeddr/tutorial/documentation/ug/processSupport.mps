@@ -48,6 +48,7 @@
       <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
       <concept id="2588579461812060090" name="com.mbeddr.doc.structure.Visualization" flags="ng" index="tKojO">
         <property id="2588579461812060097" name="category" index="tKoif" />
+        <reference id="2588579461812060096" name="path" index="tKoie" />
         <child id="2588579461812060100" name="sizeSpec" index="tKoia" />
         <child id="2588579461812060099" name="description" index="tKoid" />
         <child id="6669194810533249758" name="codeptr" index="ZeNY6" />
@@ -2756,6 +2757,7 @@
         <node concept="tKojO" id="12l$qjdhAVq" role="1_0VJ0">
           <property role="tKoif" value="Dependencies" />
           <property role="TrG5h" value="depVis" />
+          <ref role="tKoie" to="ntnz:kYEk_yAZ2n" resolve="generatedimagesProcessSupport" />
           <node concept="2NCZwO" id="12l$qjdhAVr" role="ZeNY6">
             <node concept="2NCMab" id="12l$qjdhAX$" role="2NCMaf">
               <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />

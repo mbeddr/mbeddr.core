@@ -396,6 +396,14 @@
         <property role="3N1Lgt" value="images/processSupport" />
       </node>
     </node>
+    <node concept="2SbYGw" id="kYEk_yAZ2n" role="2SbYGa">
+      <property role="TrG5h" value="generatedimagesProcessSupport" />
+      <node concept="9PVaO" id="kYEk_yAZ2o" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="doc_gen/com/mbeddr/tutorial/documentation/ug/processSupport/images" />
+      </node>
+    </node>
     <node concept="3SH5f5" id="2fBMM_3XZ4N" role="3SH5Mq">
       <property role="TrG5h" value="width100" />
       <node concept="3SGHZ$" id="2fBMM_3XZ4O" role="3SH5f7">
