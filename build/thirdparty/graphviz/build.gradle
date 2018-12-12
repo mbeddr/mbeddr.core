@@ -1,6 +1,7 @@
 // Graphviz is only published for Windows. Mac/Linux users will have to install it themselves.
 
 import de.undercouch.gradle.tasks.download.Download
+import org.apache.tools.ant.taskdefs.condition.Os
 
 group 'org.graphviz'
 version '2.38'
@@ -22,10 +23,12 @@ task repackageGraphvizWindows(type: Zip, dependsOn: unzipGraphvizWindows) {
 
 publishing {
     publications {
-        graphvizWindows(MavenPublication) {
-            artifactId 'graphviz'
-            artifact(repackageGraphvizWindows) {
-                classifier 'windows'
+        if(Os.isFamily(Os.FAMILY_WINDOWS)) {
+            graphvizWindows(MavenPublication) {
+                artifactId 'graphviz'
+                artifact(repackageGraphvizWindows) {
+                    classifier 'windows'
+                }
             }
         }
     }
