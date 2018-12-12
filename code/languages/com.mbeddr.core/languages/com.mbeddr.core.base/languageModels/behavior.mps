@@ -2,7 +2,7 @@
 <model ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
@@ -4740,13 +4740,48 @@
         <node concept="3Tqbb2" id="3g6LnlWuV$l" role="A3Ik2" />
       </node>
       <node concept="3clFbS" id="3g6LnlWuSob" role="3clF47">
-        <node concept="3clFbF" id="3g6LnlWuVA7" role="3cqZAp">
-          <node concept="2OqwBi" id="3g6LnlWuVMS" role="3clFbG">
-            <node concept="BsUDl" id="3g6LnlWuVA6" role="2Oq$k0">
+        <node concept="3cpWs8" id="73olJ4RPhRT" role="3cqZAp">
+          <node concept="3cpWsn" id="73olJ4RPhRU" role="3cpWs9">
+            <property role="TrG5h" value="visibleContentsOfType" />
+            <node concept="3uibUv" id="73olJ4RPhRR" role="1tU5fm">
+              <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+            </node>
+            <node concept="BsUDl" id="73olJ4RPhRV" role="33vP2m">
               <ref role="37wK5l" node="79$zShlSHxZ" resolve="visibleContentsOfType" />
-              <node concept="37vLTw" id="3g6LnlWuVCw" role="37wK5m">
+              <node concept="37vLTw" id="73olJ4RPhRW" role="37wK5m">
                 <ref role="3cqZAo" node="3g6LnlWuV_C" resolve="targetConcept" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="73olJ4RPmZx" role="3cqZAp" />
+        <node concept="3SKdUt" id="73olJ4RPngr" role="3cqZAp">
+          <node concept="3SKdUq" id="73olJ4RPngt" role="3SKWNk">
+            <property role="3SKdUp" value="no NPE for null scopes" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="73olJ4RPhVf" role="3cqZAp">
+          <node concept="3clFbS" id="73olJ4RPhVh" role="3clFbx">
+            <node concept="3cpWs6" id="73olJ4RPimS" role="3cqZAp">
+              <node concept="2ShNRf" id="73olJ4RPmJe" role="3cqZAk">
+                <node concept="kMnCb" id="73olJ4RPinn" role="2ShVmc">
+                  <node concept="3Tqbb2" id="73olJ4RPino" role="kMuH3" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="73olJ4RPijH" role="3clFbw">
+            <node concept="10Nm6u" id="73olJ4RPimn" role="3uHU7w" />
+            <node concept="37vLTw" id="73olJ4RPhWR" role="3uHU7B">
+              <ref role="3cqZAo" node="73olJ4RPhRU" resolve="visibleContentsOfType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="73olJ4RPmR7" role="3cqZAp" />
+        <node concept="3clFbF" id="3g6LnlWuVA7" role="3cqZAp">
+          <node concept="2OqwBi" id="73olJ4RPhNC" role="3clFbG">
+            <node concept="37vLTw" id="73olJ4RPhRX" role="2Oq$k0">
+              <ref role="3cqZAo" node="73olJ4RPhRU" resolve="visibleContentsOfType" />
             </node>
             <node concept="liA8E" id="3g6LnlWuVW$" role="2OqNvi">
               <ref role="37wK5l" to="o8zo:3fifI_xCtP7" resolve="getAvailableElements" />
@@ -4763,7 +4798,7 @@
         </node>
         <node concept="TZ5HA" id="7fyPPvBTuWC" role="TZ5H$">
           <node concept="1dT_AC" id="7fyPPvBTuWD" role="1dT_Ay">
-            <property role="1dT_AB" value="If you require a Scope then please use the method that directly returns a Scope. " />
+            <property role="1dT_AB" value="If you require a Scope then please use the method that directly returns a Scope." />
           </node>
         </node>
         <node concept="TUZQ0" id="4sJC01P2Wrm" role="3nqlJM">
