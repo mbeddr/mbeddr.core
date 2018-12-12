@@ -4045,6 +4045,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="jOb2ThWFdP" role="3cqZAp">
+          <node concept="2OqwBi" id="jOb2ThWFdQ" role="3clFbG">
+            <node concept="37vLTw" id="jOb2ThWFdR" role="2Oq$k0">
+              <ref role="3cqZAo" node="2vLLb0Tlq_m" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="jOb2ThWFdS" role="2OqNvi">
+              <node concept="2OqwBi" id="jOb2ThWFdT" role="25WWJ7">
+                <node concept="13iPFW" id="jOb2ThWFdU" role="2Oq$k0" />
+                <node concept="3TrEf2" id="jOb2ThWKbJ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2vLLb0Tlq_w" role="3cqZAp">
           <node concept="2OqwBi" id="2vLLb0TlqAd" role="3clFbG">
             <node concept="37vLTw" id="5Hxjapw9v94" role="2Oq$k0">
@@ -4151,6 +4166,21 @@
                 <node concept="13iPFW" id="5L$H31Kh1bQ" role="2Oq$k0" />
                 <node concept="3TrEf2" id="5L$H31Kh1ch" role="2OqNvi">
                   <ref role="3Tt5mk" to="2c95:519ky_SprCS" resolve="defaultTempPath" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="jOb2ThWKqJ" role="3cqZAp">
+          <node concept="2OqwBi" id="jOb2ThWKqK" role="3clFbG">
+            <node concept="37vLTw" id="jOb2ThWKqL" role="2Oq$k0">
+              <ref role="3cqZAo" node="5L$H31Kh1af" resolve="paths" />
+            </node>
+            <node concept="TSZUe" id="jOb2ThWKqM" role="2OqNvi">
+              <node concept="2OqwBi" id="jOb2ThWKqN" role="25WWJ7">
+                <node concept="13iPFW" id="jOb2ThWKqO" role="2Oq$k0" />
+                <node concept="3TrEf2" id="jOb2ThWODP" role="2OqNvi">
+                  <ref role="3Tt5mk" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
                 </node>
               </node>
             </node>
