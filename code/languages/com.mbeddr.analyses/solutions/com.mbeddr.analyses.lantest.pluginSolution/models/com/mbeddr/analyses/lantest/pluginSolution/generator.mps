@@ -427,7 +427,7 @@
                         <node concept="2Rf3mk" id="33cGTVo65wA" role="2OqNvi">
                           <node concept="1xMEDy" id="33cGTVo65wB" role="1xVPHs">
                             <node concept="chp4Y" id="33cGTVo65wC" role="ri$Ld">
-                              <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+                              <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="Library" />
                             </node>
                           </node>
                         </node>

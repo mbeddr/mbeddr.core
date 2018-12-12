@@ -1684,7 +1684,7 @@
                     </node>
                   </node>
                   <node concept="1shVQo" id="3i$cQqp_Du$" role="ccFIB">
-                    <ref role="1shVQp" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+                    <ref role="1shVQp" to="51wr:2kkumeGQcAy" resolve="Library" />
                   </node>
                 </node>
                 <node concept="1shVQo" id="3i$cQqpwdUe" role="ccFIB">

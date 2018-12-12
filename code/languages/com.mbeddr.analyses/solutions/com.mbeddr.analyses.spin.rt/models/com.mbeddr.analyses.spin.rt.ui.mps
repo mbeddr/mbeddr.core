@@ -1103,7 +1103,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="hgayPfi1TQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="vbi4:hgayPfhqiB" resolve="getResults" />
+                                    <ref role="37wK5l" to="vbi4:hgayPfhqiB" resolve="getAllResults" />
                                   </node>
                                 </node>
                               </node>
