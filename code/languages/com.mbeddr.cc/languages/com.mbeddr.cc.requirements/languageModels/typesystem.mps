@@ -1049,6 +1049,24 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="2pIpSj" id="NissIHs9pU" role="2pJxcM">
+                          <ref role="2pIpSl" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
+                          <node concept="2pJPED" id="NissIHs9ua" role="2pJxcZ">
+                            <ref role="2pJxaS" to="2c95:5JlMPDXMgjR" resolve="DefaultImagePath" />
+                            <node concept="2pIpSj" id="NissIHs9AB" role="2pJxcM">
+                              <ref role="2pIpSl" to="2c95:2iGZqsHuOq2" resolve="pathPicker" />
+                              <node concept="2pJPED" id="NissIHs9UA" role="2pJxcZ">
+                                <ref role="2pJxaS" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
+                              </node>
+                            </node>
+                            <node concept="2pJxcG" id="NissIHs9xl" role="2pJxcM">
+                              <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                              <node concept="Xl_RD" id="NissIHs9xO" role="2pJxcZ">
+                                <property role="Xl_RC" value="images" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="2pJxcG" id="1LLGf91xmAw" role="2pJxcM">
                           <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
                           <node concept="Xl_RD" id="1LLGf91xmBk" role="2pJxcZ">
