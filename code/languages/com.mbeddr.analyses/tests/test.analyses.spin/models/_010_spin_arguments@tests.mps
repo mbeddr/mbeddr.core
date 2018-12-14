@@ -38,6 +38,7 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -101,6 +102,12 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
         <child id="1171981057159" name="condition" index="3vwVQn" />
@@ -119,7 +126,13 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
   </registry>
   <node concept="2XOHcx" id="5yxSA$IRFtR">
@@ -213,17 +226,42 @@
             <node concept="liA8E" id="2bw4b0M0wgW" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="2bw4b0M0wgX" role="37wK5m">
-                <node concept="2OqwBi" id="2bw4b0M0wgY" role="3uHU7w">
-                  <node concept="2ShNRf" id="2bw4b0M0wgZ" role="2Oq$k0">
-                    <node concept="1pGfFk" id="2bw4b0M0wh0" role="2ShVmc">
-                      <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                      <node concept="37vLTw" id="2bw4b0M0wh1" role="37wK5m">
-                        <ref role="3cqZAo" node="2bw4b0M0mbn" resolve="pathToGeneratedDirectory" />
+                <node concept="2OqwBi" id="2bw4b0M3bbV" role="3uHU7w">
+                  <node concept="2OqwBi" id="2bw4b0M33C9" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2bw4b0M0wgY" role="2Oq$k0">
+                      <node concept="2ShNRf" id="2bw4b0M0wgZ" role="2Oq$k0">
+                        <node concept="1pGfFk" id="2bw4b0M0wh0" role="2ShVmc">
+                          <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                          <node concept="37vLTw" id="2bw4b0M0wh1" role="37wK5m">
+                            <ref role="3cqZAo" node="2bw4b0M0mbn" resolve="pathToGeneratedDirectory" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="2bw4b0M0AwR" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.listFiles():java.io.File[]" resolve="listFiles" />
                       </node>
                     </node>
+                    <node concept="39bAoz" id="2bw4b0M37Wg" role="2OqNvi" />
                   </node>
-                  <node concept="liA8E" id="2bw4b0M0AwR" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.listFiles():java.io.File[]" resolve="listFiles" />
+                  <node concept="3$u5V9" id="2bw4b0M3hmk" role="2OqNvi">
+                    <node concept="1bVj0M" id="2bw4b0M3hmm" role="23t8la">
+                      <node concept="3clFbS" id="2bw4b0M3hmn" role="1bW5cS">
+                        <node concept="3clFbF" id="2bw4b0M3hZ1" role="3cqZAp">
+                          <node concept="2OqwBi" id="2bw4b0M3ikV" role="3clFbG">
+                            <node concept="37vLTw" id="2bw4b0M3hZ0" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2bw4b0M3hmo" resolve="it" />
+                            </node>
+                            <node concept="liA8E" id="2bw4b0M3jYy" role="2OqNvi">
+                              <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="2bw4b0M3hmo" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="2bw4b0M3hmp" role="1tU5fm" />
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="Xl_RD" id="2bw4b0M0wh3" role="3uHU7B">
