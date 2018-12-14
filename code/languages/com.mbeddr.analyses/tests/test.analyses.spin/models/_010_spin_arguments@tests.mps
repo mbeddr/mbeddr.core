@@ -23,6 +23,7 @@
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.rt.analyzer.model)" />
+    <import index="qh45" ref="r:f908bdad-115d-4765-b796-2646eba0b9ab(com.mbeddr.analyses.utils.make)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -132,6 +133,29 @@
             <node concept="BaHAS" id="1TY2kgDXU3q" role="33vP2m">
               <property role="BaHAW" value="_010_spin_arguments" />
               <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2bw4b0M09Tu" role="3cqZAp">
+          <node concept="2OqwBi" id="2bw4b0M09Tr" role="3clFbG">
+            <node concept="10M0yZ" id="2bw4b0M09Ts" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="2bw4b0M09Tt" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="2bw4b0M0gQR" role="37wK5m">
+                <node concept="2YIFZM" id="2bw4b0M0id3" role="3uHU7w">
+                  <ref role="37wK5l" to="qh45:3hNQKr2Cac0" resolve="computePathToGeneratedDirectory" />
+                  <ref role="1Pybhc" to="qh45:3AFGfkfpqfj" resolve="PathsUtils" />
+                  <node concept="37vLTw" id="2bw4b0M0jhX" role="37wK5m">
+                    <ref role="3cqZAo" node="1TY2kgDXU3p" resolve="m" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2bw4b0M0aqu" role="3uHU7B">
+                  <property role="Xl_RC" value="----------------- DEBUG &gt;&gt;&gt;&gt;&gt;&gt;&gt; path to output directory: " />
+                </node>
+              </node>
             </node>
           </node>
         </node>
