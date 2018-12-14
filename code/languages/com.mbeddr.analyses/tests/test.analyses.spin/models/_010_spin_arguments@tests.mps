@@ -23,6 +23,7 @@
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.rt.analyzer.model)" />
+    <import index="qh45" ref="r:f908bdad-115d-4765-b796-2646eba0b9ab(com.mbeddr.analyses.utils.make)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -45,6 +46,9 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -60,6 +64,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -70,6 +75,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -83,6 +89,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -135,25 +142,98 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1frDWv8aj2l" role="3cqZAp">
-          <node concept="2OqwBi" id="1frDWv8aj2i" role="3clFbG">
-            <node concept="10M0yZ" id="1frDWv8aj2j" role="2Oq$k0">
+        <node concept="3clFbH" id="2bw4b0M0oxC" role="3cqZAp" />
+        <node concept="3cpWs8" id="2bw4b0M0mbm" role="3cqZAp">
+          <node concept="3cpWsn" id="2bw4b0M0mbn" role="3cpWs9">
+            <property role="TrG5h" value="pathToGeneratedDirectory" />
+            <node concept="17QB3L" id="2bw4b0M0mbk" role="1tU5fm" />
+            <node concept="2YIFZM" id="2bw4b0M0mbo" role="33vP2m">
+              <ref role="37wK5l" to="qh45:3hNQKr2Cac0" resolve="computePathToGeneratedDirectory" />
+              <ref role="1Pybhc" to="qh45:3AFGfkfpqfj" resolve="PathsUtils" />
+              <node concept="37vLTw" id="2bw4b0M0mbp" role="37wK5m">
+                <ref role="3cqZAo" node="1TY2kgDXU3p" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2bw4b0M09Tu" role="3cqZAp">
+          <node concept="2OqwBi" id="2bw4b0M09Tr" role="3clFbG">
+            <node concept="10M0yZ" id="2bw4b0M09Ts" role="2Oq$k0">
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
-            <node concept="liA8E" id="1frDWv8aj2k" role="2OqNvi">
+            <node concept="liA8E" id="2bw4b0M09Tt" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="1frDWv8ajWr" role="37wK5m">
-                <node concept="37vLTw" id="1frDWv8ak3S" role="3uHU7w">
-                  <ref role="3cqZAo" node="1TY2kgDXU3p" resolve="m" />
+              <node concept="3cpWs3" id="2bw4b0M0gQR" role="37wK5m">
+                <node concept="37vLTw" id="2bw4b0M0mbq" role="3uHU7w">
+                  <ref role="3cqZAo" node="2bw4b0M0mbn" resolve="pathToGeneratedDirectory" />
                 </node>
-                <node concept="Xl_RD" id="1frDWv8ajdK" role="3uHU7B">
-                  <property role="Xl_RC" value=" m " />
+                <node concept="Xl_RD" id="2bw4b0M0aqu" role="3uHU7B">
+                  <property role="Xl_RC" value="----------------- DEBUG &gt;&gt;&gt;&gt;&gt;&gt;&gt; path to output directory: " />
                 </node>
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2bw4b0M0kUS" role="3cqZAp">
+          <node concept="2OqwBi" id="2bw4b0M0kUT" role="3clFbG">
+            <node concept="10M0yZ" id="2bw4b0M0kUU" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="2bw4b0M0kUV" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="2bw4b0M0kUW" role="37wK5m">
+                <node concept="2OqwBi" id="2bw4b0M0sy5" role="3uHU7w">
+                  <node concept="2ShNRf" id="2bw4b0M0pTS" role="2Oq$k0">
+                    <node concept="1pGfFk" id="2bw4b0M0rg6" role="2ShVmc">
+                      <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                      <node concept="37vLTw" id="2bw4b0M0rN5" role="37wK5m">
+                        <ref role="3cqZAo" node="2bw4b0M0mbn" resolve="pathToGeneratedDirectory" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2bw4b0M0vFp" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2bw4b0M0kUZ" role="3uHU7B">
+                  <property role="Xl_RC" value="----------------- DEBUG &gt;&gt;&gt;&gt;&gt;&gt;&gt; directory exists: " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2bw4b0M0wgT" role="3cqZAp">
+          <node concept="2OqwBi" id="2bw4b0M0wgU" role="3clFbG">
+            <node concept="10M0yZ" id="2bw4b0M0wgV" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="2bw4b0M0wgW" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="2bw4b0M0wgX" role="37wK5m">
+                <node concept="2OqwBi" id="2bw4b0M0wgY" role="3uHU7w">
+                  <node concept="2ShNRf" id="2bw4b0M0wgZ" role="2Oq$k0">
+                    <node concept="1pGfFk" id="2bw4b0M0wh0" role="2ShVmc">
+                      <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                      <node concept="37vLTw" id="2bw4b0M0wh1" role="37wK5m">
+                        <ref role="3cqZAo" node="2bw4b0M0mbn" resolve="pathToGeneratedDirectory" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2bw4b0M0AwR" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.listFiles():java.io.File[]" resolve="listFiles" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2bw4b0M0wh3" role="3uHU7B">
+                  <property role="Xl_RC" value="----------------- DEBUG &gt;&gt;&gt;&gt;&gt;&gt;&gt; children: " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bw4b0M0pdI" role="3cqZAp" />
         <node concept="3cpWs8" id="5yxSA$IRFtW" role="3cqZAp">
           <node concept="3cpWsn" id="5yxSA$IRFtX" role="3cpWs9">
             <property role="TrG5h" value="res" />
