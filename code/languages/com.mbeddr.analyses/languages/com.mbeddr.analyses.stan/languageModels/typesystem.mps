@@ -12,6 +12,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="nemf" ref="r:25031baa-17b8-457a-9a77-5e0160aafd16(com.mbeddr.analyses.z3.run)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="lvqb" ref="r:713730c9-d4dd-4733-be63-710f8aabb916(com.mbeddr.analyses.stan.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -216,6 +217,12 @@
       </concept>
       <concept id="1174650418652" name="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" flags="nn" index="1YBJjd">
         <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -425,6 +432,64 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="4gj0Jzo2x4" role="3clF47">
+        <node concept="RRSsy" id="4mV3jLyAhZS" role="3cqZAp">
+          <property role="RRSoG" value="error" />
+          <node concept="3cpWs3" id="4mV3jLyAins" role="RRSoy">
+            <node concept="2YIFZM" id="4mV3jLyAitK" role="3uHU7w">
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+              <node concept="Xl_RD" id="4mV3jLyAiCe" role="37wK5m">
+                <property role="Xl_RC" value="LD_LIBRARY_PATH" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4mV3jLyAhZU" role="3uHU7B">
+              <property role="Xl_RC" value="LD_LIBRARY_PATH is set to: " />
+            </node>
+          </node>
+        </node>
+        <node concept="RRSsy" id="4mV3jLyAjyq" role="3cqZAp">
+          <property role="RRSoG" value="error" />
+          <node concept="3cpWs3" id="4mV3jLyAvH3" role="RRSoy">
+            <node concept="2OqwBi" id="4mV3jLyAyvW" role="3uHU7w">
+              <node concept="2ShNRf" id="4mV3jLyAvN6" role="2Oq$k0">
+                <node concept="1pGfFk" id="4mV3jLyAx4I" role="2ShVmc">
+                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                  <node concept="Xl_RD" id="4mV3jLyAx9Y" role="37wK5m">
+                    <property role="Xl_RC" value="/usr/bin/libz3java.so" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4mV3jLyAzkC" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4mV3jLyAjyu" role="3uHU7B">
+              <property role="Xl_RC" value="/usr/bin/libz3java.so exists: " />
+            </node>
+          </node>
+        </node>
+        <node concept="RRSsy" id="4mV3jLyAzqC" role="3cqZAp">
+          <property role="RRSoG" value="error" />
+          <node concept="3cpWs3" id="4mV3jLyAzqD" role="RRSoy">
+            <node concept="2OqwBi" id="4mV3jLyAzqE" role="3uHU7w">
+              <node concept="2ShNRf" id="4mV3jLyAzqF" role="2Oq$k0">
+                <node concept="1pGfFk" id="4mV3jLyAzqG" role="2ShVmc">
+                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                  <node concept="Xl_RD" id="4mV3jLyAzqH" role="37wK5m">
+                    <property role="Xl_RC" value="/usr/bin/libz3.so" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4mV3jLyAzqI" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4mV3jLyAzqJ" role="3uHU7B">
+              <property role="Xl_RC" value="/usr/bin/libz3.so exists: " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4mV3jLyAkyx" role="3cqZAp" />
         <node concept="1Cbqnj" id="4Bw8ULeN7D0" role="3cqZAp">
           <property role="1Cbqnt" value="decTabAnalyses" />
           <node concept="3clFbS" id="4Bw8ULeN7D2" role="1Cbqni">
