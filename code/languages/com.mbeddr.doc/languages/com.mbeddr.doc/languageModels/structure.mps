@@ -2,7 +2,7 @@
 <model ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -414,6 +414,13 @@
       <property role="IQ2ns" value="5785245534401182264" />
       <ref role="20lvS9" node="5yxqZJwzC3r" resolve="PathDefinition" />
     </node>
+    <node concept="1TJgyj" id="5JlMPDXOsfV" role="1TKVEi">
+      <property role="IQ2ns" value="6617418817009206267" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="defaultImagePath" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5yxqZJwzC3r" />
+    </node>
     <node concept="1TJgyj" id="5yxqZJwzC3L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="paths" />
@@ -441,13 +448,6 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="3352153450711894224" />
       <ref role="20lvS9" node="2U5fsQei4zf" resolve="IDocConfigItem" />
-    </node>
-    <node concept="1TJgyj" id="5JlMPDXOsfV" role="1TKVEi">
-      <property role="IQ2ns" value="6617418817009206267" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="defaultImagePath" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5JlMPDXMgjR" resolve="DefaultImagePath" />
     </node>
     <node concept="PrWs8" id="5yxqZJwzC3f" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -1694,6 +1694,9 @@
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="DefaultImagePath" />
     <ref role="1TJDcQ" node="5yxqZJwzC3r" resolve="PathDefinition" />
+    <node concept="asaX9" id="jOb2ThU9w1" role="lGtFl">
+      <property role="YLQ7P" value="deprecated in favor of the general path definition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2T4ELtZGU8">
     <property role="EcuMT" value="52093402212126344" />

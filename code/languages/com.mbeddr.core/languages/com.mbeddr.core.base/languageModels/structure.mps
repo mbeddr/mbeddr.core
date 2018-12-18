@@ -19,6 +19,7 @@
     <import index="10jo" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.structure)" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -2023,6 +2024,20 @@
   <node concept="PlHQZ" id="3x8oZgKbem1">
     <property role="EcuMT" value="4055601364878550401" />
     <property role="TrG5h" value="ISupportsLocalLanguage" />
+  </node>
+  <node concept="1TIwiD" id="4WU0y9pWgP_">
+    <property role="3GE5qa" value="assessment.scope" />
+    <property role="TrG5h" value="ListOfModelsScope" />
+    <property role="34LRSv" value="list of models" />
+    <property role="EcuMT" value="5708877824206638437" />
+    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <node concept="1TJgyj" id="4WU0y9pWgVa" role="1TKVEi">
+      <property role="IQ2ns" value="5708877824206638794" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="models" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+    </node>
   </node>
 </model>
 
