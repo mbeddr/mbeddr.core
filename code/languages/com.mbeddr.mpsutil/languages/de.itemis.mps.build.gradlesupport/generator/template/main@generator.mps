@@ -252,6 +252,46 @@
     <node concept="n94m4" id="702JZvUvDU1" role="lGtFl">
       <ref role="n9lRv" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
     </node>
+    <node concept="2awVeN" id="702JZvVjHDj" role="2avcMe">
+      <property role="2awVeM" value="additionalOutputs" />
+      <node concept="1WS0z7" id="702JZvVjHDk" role="lGtFl">
+        <node concept="3JmXsc" id="702JZvVjHDl" role="3Jn$fo">
+          <node concept="3clFbS" id="702JZvVjHDm" role="2VODD2">
+            <node concept="3clFbF" id="702JZvVjHDn" role="3cqZAp">
+              <node concept="2OqwBi" id="702JZvVjHDo" role="3clFbG">
+                <node concept="2OqwBi" id="702JZvVjHDp" role="2Oq$k0">
+                  <node concept="3CFZ6_" id="702JZvVjHDq" role="2OqNvi">
+                    <node concept="3CFYIy" id="702JZvVjHDr" role="3CFYIz">
+                      <ref role="3CFYIx" to="86hj:702JZvUvru$" resolve="GenerateInputsOutputs" />
+                    </node>
+                  </node>
+                  <node concept="30H73N" id="702JZvVjHDs" role="2Oq$k0" />
+                </node>
+                <node concept="3Tsc0h" id="702JZvVjIVy" role="2OqNvi">
+                  <ref role="3TtcxE" to="86hj:702JZvVjn3O" resolve="additionalInputs" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17Uvod" id="702JZvVjHDu" role="lGtFl">
+        <property role="2qtEX9" value="value" />
+        <property role="P4ACc" value="c0884864-b0b2-49c3-81ac-b9e4e0f43a3b/8071224553981938756/8071224553981938757" />
+        <node concept="3zFVjK" id="702JZvVjHDv" role="3zH0cK">
+          <node concept="3clFbS" id="702JZvVjHDw" role="2VODD2">
+            <node concept="3clFbF" id="702JZvVjHDx" role="3cqZAp">
+              <node concept="2YIFZM" id="702JZvVjHDy" role="3clFbG">
+                <ref role="37wK5l" to="x0ga:702JZvVb6bg" resolve="getPath" />
+                <ref role="1Pybhc" to="x0ga:702JZvVb69L" resolve="PathHelper" />
+                <node concept="30H73N" id="702JZvVjHDz" role="37wK5m" />
+                <node concept="1iwH7S" id="702JZvVjHD$" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2awVeN" id="702JZvUwPk4" role="2avcMe">
       <property role="2awVeM" value="someDevkit" />
       <node concept="1WS0z7" id="702JZvUwPk7" role="lGtFl">
@@ -527,6 +567,46 @@
     <property role="TrG5h" value="gradle.outputs" />
     <node concept="n94m4" id="702JZvUFx1g" role="lGtFl">
       <ref role="n9lRv" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
+    </node>
+    <node concept="2awVeN" id="702JZvVjAfM" role="2avcMe">
+      <property role="2awVeM" value="additionalOutputs" />
+      <node concept="1WS0z7" id="702JZvVjBgq" role="lGtFl">
+        <node concept="3JmXsc" id="702JZvVjBgt" role="3Jn$fo">
+          <node concept="3clFbS" id="702JZvVjBgu" role="2VODD2">
+            <node concept="3clFbF" id="702JZvVjBg$" role="3cqZAp">
+              <node concept="2OqwBi" id="702JZvVjD4P" role="3clFbG">
+                <node concept="2OqwBi" id="702JZvVjBgv" role="2Oq$k0">
+                  <node concept="3CFZ6_" id="702JZvVjCuC" role="2OqNvi">
+                    <node concept="3CFYIy" id="702JZvVjCKQ" role="3CFYIz">
+                      <ref role="3CFYIx" to="86hj:702JZvUvru$" resolve="GenerateInputsOutputs" />
+                    </node>
+                  </node>
+                  <node concept="30H73N" id="702JZvVjBgz" role="2Oq$k0" />
+                </node>
+                <node concept="3Tsc0h" id="702JZvVjDvJ" role="2OqNvi">
+                  <ref role="3TtcxE" to="86hj:702JZvVjnoD" resolve="additionalOutputs" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17Uvod" id="702JZvVjDK_" role="lGtFl">
+        <property role="2qtEX9" value="value" />
+        <property role="P4ACc" value="c0884864-b0b2-49c3-81ac-b9e4e0f43a3b/8071224553981938756/8071224553981938757" />
+        <node concept="3zFVjK" id="702JZvVjDKA" role="3zH0cK">
+          <node concept="3clFbS" id="702JZvVjDKB" role="2VODD2">
+            <node concept="3clFbF" id="702JZvVjE3x" role="3cqZAp">
+              <node concept="2YIFZM" id="702JZvVjEly" role="3clFbG">
+                <ref role="37wK5l" to="x0ga:702JZvVb6bg" resolve="getPath" />
+                <ref role="1Pybhc" to="x0ga:702JZvVb69L" resolve="PathHelper" />
+                <node concept="30H73N" id="702JZvVjEv2" role="37wK5m" />
+                <node concept="1iwH7S" id="702JZvVjFAD" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2avdnZ" id="702JZvUFx1$" role="2avcMe">
       <node concept="2awVeN" id="702JZvUFx1J" role="2awVeK">

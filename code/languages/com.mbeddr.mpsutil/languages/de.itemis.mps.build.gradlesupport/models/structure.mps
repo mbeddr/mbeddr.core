@@ -59,11 +59,28 @@
     <property role="TrG5h" value="GenerateInputsOutputs" />
     <property role="34LRSv" value="Generate Gradle Inputs/Outputs" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="702JZvVjn3O" role="1TKVEi">
+      <property role="IQ2ns" value="8071224553995333876" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="additionalInputs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="3ior:6qcrfIJFdKY" resolve="BuildSourcePath" />
+    </node>
+    <node concept="1TJgyj" id="702JZvVjnoD" role="1TKVEi">
+      <property role="IQ2ns" value="8071224553995335209" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="additionalOutputs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="3ior:6qcrfIJFdKY" resolve="BuildSourcePath" />
+    </node>
     <node concept="M6xJ_" id="702JZvUvru_" role="lGtFl">
       <property role="Hh88m" value="GenerateInputsOutputs" />
       <node concept="trNpa" id="702JZvUvry5" role="EQaZv">
         <ref role="trN6q" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
       </node>
+    </node>
+    <node concept="PrWs8" id="702JZvVjqwy" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="702JZvUvy0K">
