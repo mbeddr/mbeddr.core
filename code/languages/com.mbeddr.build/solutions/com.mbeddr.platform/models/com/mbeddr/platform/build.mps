@@ -3596,6 +3596,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="702JZvVjO0x" role="3bR37C">
+          <node concept="3bR9La" id="702JZvVjO0y" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="2AIoSLVX$h0" role="3989C9">
