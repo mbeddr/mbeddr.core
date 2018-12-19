@@ -5184,18 +5184,54 @@
                         <ref role="3cqZAo" node="M6L5HuRefT" resolve="input" />
                       </node>
                     </node>
-                    <node concept="9aQIb" id="7riAdT3M3yb" role="9aQIa">
-                      <node concept="3clFbS" id="7riAdT3M3yc" role="9aQI4">
-                        <node concept="3cpWs6" id="7riAdT3M3L6" role="3cqZAp">
-                          <node concept="2YIFZM" id="7riAdT3M4gy" role="3cqZAk">
+                    <node concept="3eNFk2" id="5hkE98Z44Vr" role="3eNLev">
+                      <node concept="3clFbS" id="5hkE98Z44Vs" role="3eOfB_">
+                        <node concept="3cpWs6" id="5hkE98Z44Vt" role="3cqZAp">
+                          <node concept="2YIFZM" id="5hkE98Z44Vu" role="3cqZAk">
                             <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(double):java.math.BigDecimal" resolve="valueOf" />
                             <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-                            <node concept="2OqwBi" id="7riAdT3M4J6" role="37wK5m">
-                              <node concept="37vLTw" id="7riAdT3M4w$" role="2Oq$k0">
+                            <node concept="2OqwBi" id="5hkE98Z44Vv" role="37wK5m">
+                              <node concept="37vLTw" id="5hkE98Z44Vw" role="2Oq$k0">
                                 <ref role="3cqZAo" node="M6L5HuRguY" resolve="numberInput" />
                               </node>
-                              <node concept="liA8E" id="7riAdT3M58L" role="2OqNvi">
+                              <node concept="liA8E" id="5hkE98Z44Vx" role="2OqNvi">
                                 <ref role="37wK5l" to="wyt6:~Number.doubleValue():double" resolve="doubleValue" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="22lmx$" id="5hkE98Z4dqv" role="3eO9$A">
+                        <node concept="2ZW3vV" id="5hkE98Z4e$8" role="3uHU7w">
+                          <node concept="3uibUv" id="5hkE98Z4eMW" role="2ZW6by">
+                            <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
+                          </node>
+                          <node concept="37vLTw" id="5hkE98Z4ecF" role="2ZW6bz">
+                            <ref role="3cqZAo" node="M6L5HuRefT" resolve="input" />
+                          </node>
+                        </node>
+                        <node concept="2ZW3vV" id="5hkE98Z4bY1" role="3uHU7B">
+                          <node concept="3uibUv" id="5hkE98Z4cFY" role="2ZW6by">
+                            <ref role="3uigEE" to="wyt6:~Double" resolve="Double" />
+                          </node>
+                          <node concept="37vLTw" id="5hkE98Z4b2I" role="2ZW6bz">
+                            <ref role="3cqZAo" node="M6L5HuRefT" resolve="input" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="9aQIb" id="5hkE98Z4eWu" role="9aQIa">
+                      <node concept="3clFbS" id="5hkE98Z4eWv" role="9aQI4">
+                        <node concept="3cpWs6" id="5hkE98Z4fIL" role="3cqZAp">
+                          <node concept="2YIFZM" id="5hkE98Z4gDS" role="3cqZAk">
+                            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long):java.math.BigDecimal" resolve="valueOf" />
+                            <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                            <node concept="2OqwBi" id="5hkE98Z4idN" role="37wK5m">
+                              <node concept="37vLTw" id="5hkE98Z4hrL" role="2Oq$k0">
+                                <ref role="3cqZAo" node="M6L5HuRguY" resolve="numberInput" />
+                              </node>
+                              <node concept="liA8E" id="5hkE98Z4jUs" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~Number.longValue():long" resolve="longValue" />
                               </node>
                             </node>
                           </node>

@@ -8220,6 +8220,14 @@
               <ref role="3bR37D" to="ffeo:7YI57w6K0iE" resolve="jetbrains.mps.lang.editor#1129914002149" />
             </node>
           </node>
+          <node concept="1SiIV0" id="5nA3diwDzUd" role="3bR37C">
+            <node concept="3bR9La" id="5nA3diwDzUe" role="1SiIV1">
+              <ref role="3bR37D" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
+            </node>
+          </node>
+        </node>
+        <node concept="1E0d5M" id="5nA3diwDzUc" role="1E1XAP">
+          <ref role="1E0d5P" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
         </node>
       </node>
     </node>
