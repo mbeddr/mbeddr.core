@@ -379,7 +379,7 @@
         </node>
       </node>
       <node concept="2awVeN" id="702JZvUxnTB" role="2awVeK">
-        <property role="2awVeM" value="models/*.mps" />
+        <property role="2awVeM" value="models/**/*.mps" />
         <node concept="17Uvod" id="702JZvUxR2$" role="lGtFl">
           <property role="2qtEX9" value="value" />
           <property role="P4ACc" value="c0884864-b0b2-49c3-81ac-b9e4e0f43a3b/8071224553981938756/8071224553981938757" />
@@ -417,7 +417,7 @@
               <node concept="3clFbF" id="702JZvVdYFz" role="3cqZAp">
                 <node concept="3cpWs3" id="702JZvVe2S9" role="3clFbG">
                   <node concept="Xl_RD" id="702JZvVe2Sf" role="3uHU7w">
-                    <property role="Xl_RC" value="/*.mps" />
+                    <property role="Xl_RC" value="/**/*.mps" />
                   </node>
                   <node concept="2YIFZM" id="702JZvVdYF$" role="3uHU7B">
                     <ref role="37wK5l" to="x0ga:702JZvVb6bg" resolve="getPath" />
