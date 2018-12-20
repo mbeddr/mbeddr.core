@@ -18,7 +18,14 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
-      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
@@ -44,10 +51,26 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="2688792604367903085" name="com.mbeddr.core.util.structure.MessageDefinitionTable" flags="ng" index="2vmPJd">
+        <child id="2688792604367903095" name="messages" index="2vmPJn" />
+      </concept>
+      <concept id="2688792604367903087" name="com.mbeddr.core.util.structure.MessageDefinition" flags="ng" index="2vmPJf">
+        <property id="2688792604367903089" name="text" index="2vmPJh" />
+        <property id="2688792604367903094" name="kind" index="2vmPJm" />
+        <property id="2688792604367947988" name="active" index="2vn0DO" />
+      </concept>
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+      <concept id="1927508255683910342" name="com.mbeddr.core.util.structure.LogStatement" flags="ng" index="3b4Zxd">
+        <property id="4035064233020678905" name="level" index="2SUSXN" />
+        <reference id="1626155087012117353" name="topic" index="21B7w6" />
+        <child id="1927508255683911583" name="text" index="3b4ZOk" />
+      </concept>
+      <concept id="1268931523430473736" name="com.mbeddr.core.util.structure.LogTopic" flags="ng" index="1bK$pR">
+        <property id="1626155087012542122" name="description" index="21wJn5" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
@@ -88,6 +111,9 @@
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
       <concept id="6708182213627045678" name="com.mbeddr.core.modules.structure.IExternable" flags="ng" index="3mNis0">
         <property id="6708182213627045681" name="extern" index="3mNisv" />
+      </concept>
+      <concept id="4052432714772706112" name="com.mbeddr.core.modules.structure.ArgRefWord" flags="ng" index="1w3X5l">
+        <reference id="4052432714772706113" name="arg" index="1w3X5k" />
       </concept>
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
@@ -146,11 +172,71 @@
     <node concept="3GEVxB" id="58DJDcMiMVv" role="2OODSX">
       <ref role="3GEb4d" node="58DJDcMhRF1" resolve="HelperFunctions" />
     </node>
+    <node concept="1bK$pR" id="1qhgQYn6pcD" role="N3F5h">
+      <property role="TrG5h" value="TOPIC" />
+      <property role="21wJn5" value="a log topic" />
+    </node>
+    <node concept="1bK$pR" id="1qhgQYnTMr9" role="N3F5h">
+      <property role="TrG5h" value="ANOTHER_TOPIC" />
+    </node>
+    <node concept="2NXPZ9" id="1qhgQYnu5wq" role="N3F5h">
+      <property role="TrG5h" value="empty_1545306886409_8" />
+    </node>
     <node concept="N3Fnx" id="58DJDcMiPK2" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="58DJDcMiPK4" role="3XIRFX">
-        <node concept="3XISUE" id="58DJDcMiPK5" role="3XIRFZ" />
+        <node concept="3b4Zxd" id="16s9BXq92RA" role="3XIRFZ">
+          <property role="2SUSXN" value="ERROR" />
+          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TOPIC" />
+          <node concept="19SGf9" id="16s9BXq92RC" role="3b4ZOk">
+            <node concept="19SUe$" id="16s9BXq92RD" role="19SJt6">
+              <property role="19SUeA" value="an error log " />
+            </node>
+            <node concept="1w3X5l" id="1qhgQYo2EbR" role="19SJt6">
+              <ref role="1w3X5k" node="58DJDcMiPK7" resolve="argc" />
+            </node>
+            <node concept="19SUe$" id="1qhgQYo2EbS" role="19SJt6">
+              <property role="19SUeA" value=" ... " />
+            </node>
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="16s9BXqfY58" role="3XIRFZ">
+          <property role="2SUSXN" value="WARNING" />
+          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TOPIC" />
+          <node concept="19SGf9" id="16s9BXqfY59" role="3b4ZOk">
+            <node concept="19SUe$" id="16s9BXqfY5a" role="19SJt6">
+              <property role="19SUeA" value="a warning log" />
+            </node>
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="16s9BXqfY5j" role="3XIRFZ">
+          <property role="2SUSXN" value="INFO" />
+          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TOPIC" />
+          <node concept="19SGf9" id="16s9BXqfY5k" role="3b4ZOk">
+            <node concept="19SUe$" id="16s9BXqfY5l" role="19SJt6">
+              <property role="19SUeA" value="an info log" />
+            </node>
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="16s9BXqfY7u" role="3XIRFZ">
+          <property role="2SUSXN" value="DEBUG" />
+          <ref role="21B7w6" node="1qhgQYnTMr9" resolve="ANOTHER_TOPIC" />
+          <node concept="19SGf9" id="16s9BXqfY7v" role="3b4ZOk">
+            <node concept="19SUe$" id="16s9BXqfY7w" role="19SJt6">
+              <property role="19SUeA" value="a debug log" />
+            </node>
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="16s9BXqfY7J" role="3XIRFZ">
+          <property role="2SUSXN" value="TRACE" />
+          <ref role="21B7w6" node="1qhgQYnTMr9" resolve="ANOTHER_TOPIC" />
+          <node concept="19SGf9" id="16s9BXqfY7K" role="3b4ZOk">
+            <node concept="19SUe$" id="16s9BXqfY7L" role="19SJt6">
+              <property role="19SUeA" value="a trace log" />
+            </node>
+          </node>
+        </node>
         <node concept="2BFjQ_" id="58DJDcMiPKc" role="3XIRFZ">
           <node concept="3TlMh9" id="58DJDcMiPKd" role="2BFjQA">
             <property role="2hmy$m" value="0" />
@@ -180,8 +266,27 @@
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="z4vv_ojQSn" role="N3F5h">
-      <property role="TrG5h" value="empty_1527679993745_3" />
+    <node concept="2NXPZ9" id="1qhgQYn6p4G" role="N3F5h">
+      <property role="TrG5h" value="empty_1545305605497_3" />
+    </node>
+    <node concept="2vmPJd" id="1qhgQYnu5zY" role="N3F5h">
+      <property role="TrG5h" value="MyMessages" />
+      <node concept="2vmPJf" id="1qhgQYnu5AE" role="2vmPJn">
+        <property role="TrG5h" value="anErrorMessage" />
+        <property role="2vmPJh" value="an error message" />
+        <property role="2vn0DO" value="true" />
+      </node>
+      <node concept="2vmPJf" id="1qhgQYnTMBW" role="2vmPJn">
+        <property role="2vn0DO" value="true" />
+        <property role="TrG5h" value="aWarningMessage" />
+        <property role="2vmPJh" value="a warning message" />
+        <property role="2vmPJm" value="2" />
+      </node>
+      <node concept="2vmPJf" id="1qhgQYnTMC1" role="2vmPJn">
+        <property role="TrG5h" value="anInfoMessage" />
+        <property role="2vmPJh" value="an info message" />
+        <property role="2vmPJm" value="1" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="58DJDcMhRF1">

@@ -341,7 +341,7 @@
     </node>
     <node concept="M4N5e" id="2lgwE2U2X_O" role="M5hS2">
       <property role="1uS6qv" value="2" />
-      <property role="1uS6qo" value="WARN" />
+      <property role="1uS6qo" value="WARNING" />
     </node>
     <node concept="M4N5e" id="2lgwE2U2X_P" role="M5hS2">
       <property role="1uS6qv" value="1" />
@@ -1669,6 +1669,17 @@
       <property role="IQ2ns" value="1927508255683911583" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
+    <node concept="1TJgyi" id="3vZroEf5ebT" role="1TKVEl">
+      <property role="IQ2nx" value="4035064233020678905" />
+      <property role="TrG5h" value="level" />
+      <ref role="AX2Wp" node="3vZroEf5ebp" resolve="LogLevel" />
+    </node>
+    <node concept="1TJgyj" id="1qhgQYn3jHD" role="1TKVEi">
+      <property role="IQ2ns" value="1626155087012117353" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="topic" />
+      <ref role="20lvS9" node="16s9BXqnA08" resolve="LogTopic" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1EZSCJhI$Q7">
     <property role="3GE5qa" value="reporting.logging" />
@@ -1860,6 +1871,50 @@
     </node>
     <node concept="PrWs8" id="70kXLV4KbxP" role="PzmwI">
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="3vZroEf5ebp">
+    <property role="3GE5qa" value="reporting.logging" />
+    <property role="TrG5h" value="LogLevel" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="3vZroEf5ebq" role="M5hS2">
+      <property role="1uS6qv" value="ERROR" />
+      <property role="1uS6qo" value="ERROR" />
+    </node>
+    <node concept="M4N5e" id="3vZroEf5ebr" role="M5hS2">
+      <property role="1uS6qv" value="WARNING" />
+      <property role="1uS6qo" value="WARNING" />
+    </node>
+    <node concept="M4N5e" id="3vZroEf5ebu" role="M5hS2">
+      <property role="1uS6qo" value="INFO" />
+      <property role="1uS6qv" value="INFO" />
+    </node>
+    <node concept="M4N5e" id="3vZroEf5eby" role="M5hS2">
+      <property role="1uS6qv" value="DEBUG" />
+      <property role="1uS6qo" value="DEBUG" />
+    </node>
+    <node concept="M4N5e" id="3vZroEf5ebB" role="M5hS2">
+      <property role="1uS6qv" value="TRACE" />
+      <property role="1uS6qo" value="TRACE" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="16s9BXqnA08">
+    <property role="EcuMT" value="1268931523430473736" />
+    <property role="3GE5qa" value="reporting.logging" />
+    <property role="TrG5h" value="LogTopic" />
+    <property role="34LRSv" value="#log topic" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1qhgQYn4Vqo" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="1qhgQYn4Vqu" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7uYRIghZq9c" resolve="INameAllUpperCase" />
+    </node>
+    <node concept="1TJgyi" id="1qhgQYn4VqE" role="1TKVEl">
+      <property role="IQ2nx" value="1626155087012542122" />
+      <property role="TrG5h" value="description" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
