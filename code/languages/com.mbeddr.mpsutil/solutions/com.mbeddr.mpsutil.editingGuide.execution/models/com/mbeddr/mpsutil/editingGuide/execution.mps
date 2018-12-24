@@ -1755,6 +1755,29 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5M68p1G6Wgm" role="3cqZAp">
+          <node concept="2OqwBi" id="5M68p1G6Wxg" role="3clFbG">
+            <node concept="2YIFZM" id="5M68p1G6Wn_" role="2Oq$k0">
+              <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance():jetbrains.mps.openapi.navigation.NavigationSupport" resolve="getInstance" />
+              <ref role="1Pybhc" to="kz9k:~NavigationSupport" resolve="NavigationSupport" />
+            </node>
+            <node concept="liA8E" id="5M68p1G6WHg" role="2OqNvi">
+              <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean):jetbrains.mps.openapi.editor.Editor" resolve="openNode" />
+              <node concept="37vLTw" id="5M68p1G6XNg" role="37wK5m">
+                <ref role="3cqZAo" node="5h2rxDjX6LC" resolve="myMpsProject" />
+              </node>
+              <node concept="1rXfSq" id="5M68p1G6WIk" role="37wK5m">
+                <ref role="37wK5l" node="692bXAb66ij" resolve="getSandboxExercise" />
+              </node>
+              <node concept="3clFbT" id="5M68p1G6Zql" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+              <node concept="3clFbT" id="5M68p1G6Zy9" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3GvOzXgURkA" role="3cqZAp">
           <node concept="2OqwBi" id="3GvOzXgUTsl" role="3clFbG">
             <node concept="2OqwBi" id="3GvOzXgUS63" role="2Oq$k0">
