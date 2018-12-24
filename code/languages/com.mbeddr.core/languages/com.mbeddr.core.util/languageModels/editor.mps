@@ -551,9 +551,6 @@
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
       <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
         <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
       </concept>
@@ -565,7 +562,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -4937,17 +4933,12 @@
               <property role="Vb096" value="darkGray" />
             </node>
           </node>
-          <node concept="1iCGBv" id="1qhgQYn3k8P" role="3EZMnx">
-            <property role="39s7Ar" value="true" />
-            <ref role="1NtTu8" to="k146:1qhgQYn3jHD" resolve="topic" />
-            <node concept="VechU" id="1qhgQYo5qIz" role="3F10Kt">
-              <property role="Vb096" value="darkGray" />
-            </node>
-            <node concept="1sVBvm" id="1qhgQYn3k8R" role="1sWHZn">
-              <node concept="3F0A7n" id="1qhgQYnoF6_" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
+          <node concept="3F2HdR" id="1vu3Ymvlw$r" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="k146:1vu3Ymvlw8g" resolve="tags" />
+            <node concept="l2Vlx" id="1vu3Ymvlw$t" role="2czzBx" />
+            <node concept="3F0ifn" id="1vu3Ymvlw$R" role="2czzBI">
+              <property role="3F0ifm" value="" />
             </node>
           </node>
           <node concept="3F0ifn" id="1qhgQYnD2mp" role="3EZMnx">
@@ -4968,16 +4959,8 @@
             <node concept="3TQlhw" id="1qhgQYnI_1p" role="1Hhtcw">
               <node concept="3clFbS" id="1qhgQYnI_1r" role="2VODD2">
                 <node concept="3clFbF" id="1qhgQYnI_al" role="3cqZAp">
-                  <node concept="3cpWs3" id="1qhgQYnLwpi" role="3clFbG">
-                    <node concept="Xl_RD" id="1qhgQYnLwpo" role="3uHU7w">
-                      <property role="Xl_RC" value=" reference" />
-                    </node>
-                    <node concept="2OqwBi" id="1qhgQYnIETL" role="3uHU7B">
-                      <node concept="35c_gC" id="1qhgQYnIDWl" role="2Oq$k0">
-                        <ref role="35c_gD" to="k146:16s9BXqnA08" resolve="LogTopic" />
-                      </node>
-                      <node concept="3n3YKJ" id="1qhgQYnK7W1" role="2OqNvi" />
-                    </node>
+                  <node concept="Xl_RD" id="1qhgQYnLwpo" role="3clFbG">
+                    <property role="Xl_RC" value="log tags" />
                   </node>
                 </node>
               </node>
@@ -5789,7 +5772,7 @@
   </node>
   <node concept="24kQdi" id="16s9BXqnA0j">
     <property role="3GE5qa" value="reporting.logging" />
-    <ref role="1XX52x" to="k146:16s9BXqnA08" resolve="LogTopic" />
+    <ref role="1XX52x" to="k146:16s9BXqnA08" resolve="LogTagDeclaration" />
     <node concept="3EZMnI" id="4b64BCbUJi1" role="2wV5jI">
       <node concept="l2Vlx" id="4b64BCbUJi2" role="2iSdaV" />
       <node concept="PMmxH" id="4b64BCbUJi6" role="3EZMnx">
@@ -5831,6 +5814,19 @@
       </node>
       <node concept="VPM3Z" id="4b64BCbUJiu" role="3F10Kt">
         <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1vu3Ymvjk64">
+    <property role="3GE5qa" value="reporting.logging" />
+    <ref role="1XX52x" to="k146:1vu3Ymvjk5R" resolve="LogTagRef" />
+    <node concept="1iCGBv" id="1vu3Ymvjk69" role="2wV5jI">
+      <ref role="1NtTu8" to="k146:1vu3Ymvjk5U" resolve="tag" />
+      <node concept="1sVBvm" id="1vu3Ymvjk6b" role="1sWHZn">
+        <node concept="3F0A7n" id="1vu3Ymvjk6l" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
     </node>
   </node>

@@ -1669,16 +1669,17 @@
       <property role="IQ2ns" value="1927508255683911583" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
+    <node concept="1TJgyj" id="1vu3Ymvlw8g" role="1TKVEi">
+      <property role="IQ2ns" value="1719829586597249552" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tags" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1vu3Ymvjk5R" resolve="LogTagRef" />
+    </node>
     <node concept="1TJgyi" id="3vZroEf5ebT" role="1TKVEl">
       <property role="IQ2nx" value="4035064233020678905" />
       <property role="TrG5h" value="level" />
       <ref role="AX2Wp" node="3vZroEf5ebp" resolve="LogLevel" />
-    </node>
-    <node concept="1TJgyj" id="1qhgQYn3jHD" role="1TKVEi">
-      <property role="IQ2ns" value="1626155087012117353" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="topic" />
-      <ref role="20lvS9" node="16s9BXqnA08" resolve="LogTopic" />
     </node>
   </node>
   <node concept="1TIwiD" id="1EZSCJhI$Q7">
@@ -1902,8 +1903,8 @@
   <node concept="1TIwiD" id="16s9BXqnA08">
     <property role="EcuMT" value="1268931523430473736" />
     <property role="3GE5qa" value="reporting.logging" />
-    <property role="TrG5h" value="LogTopic" />
-    <property role="34LRSv" value="#log topic" />
+    <property role="TrG5h" value="LogTagDeclaration" />
+    <property role="34LRSv" value="#log tag" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1qhgQYn4Vqo" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -1915,6 +1916,22 @@
       <property role="IQ2nx" value="1626155087012542122" />
       <property role="TrG5h" value="description" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vu3Ymvjk5R">
+    <property role="EcuMT" value="1719829586596675959" />
+    <property role="3GE5qa" value="reporting.logging" />
+    <property role="TrG5h" value="LogTagRef" />
+    <property role="R4oN_" value="--" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="1vu3Ymvjk5S" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
+    </node>
+    <node concept="1TJgyj" id="1vu3Ymvjk5U" role="1TKVEi">
+      <property role="IQ2ns" value="1719829586596675962" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="tag" />
+      <ref role="20lvS9" node="16s9BXqnA08" resolve="LogTagDeclaration" />
     </node>
   </node>
 </model>

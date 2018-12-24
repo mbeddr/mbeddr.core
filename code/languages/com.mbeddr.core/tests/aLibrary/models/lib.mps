@@ -173,11 +173,11 @@
       <ref role="3GEb4d" node="58DJDcMhRF1" resolve="HelperFunctions" />
     </node>
     <node concept="1bK$pR" id="1qhgQYn6pcD" role="N3F5h">
-      <property role="TrG5h" value="TOPIC" />
+      <property role="TrG5h" value="TAG" />
       <property role="21wJn5" value="a log topic" />
     </node>
     <node concept="1bK$pR" id="1qhgQYnTMr9" role="N3F5h">
-      <property role="TrG5h" value="ANOTHER_TOPIC" />
+      <property role="TrG5h" value="ANOTHER_TAG" />
     </node>
     <node concept="2NXPZ9" id="1qhgQYnu5wq" role="N3F5h">
       <property role="TrG5h" value="empty_1545306886409_8" />
@@ -188,7 +188,7 @@
       <node concept="3XIRFW" id="58DJDcMiPK4" role="3XIRFX">
         <node concept="3b4Zxd" id="16s9BXq92RA" role="3XIRFZ">
           <property role="2SUSXN" value="ERROR" />
-          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TOPIC" />
+          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TAG" />
           <node concept="19SGf9" id="16s9BXq92RC" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXq92RD" role="19SJt6">
               <property role="19SUeA" value="an error log " />
@@ -203,7 +203,7 @@
         </node>
         <node concept="3b4Zxd" id="16s9BXqfY58" role="3XIRFZ">
           <property role="2SUSXN" value="WARNING" />
-          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TOPIC" />
+          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TAG" />
           <node concept="19SGf9" id="16s9BXqfY59" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXqfY5a" role="19SJt6">
               <property role="19SUeA" value="a warning log" />
@@ -212,7 +212,7 @@
         </node>
         <node concept="3b4Zxd" id="16s9BXqfY5j" role="3XIRFZ">
           <property role="2SUSXN" value="INFO" />
-          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TOPIC" />
+          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TAG" />
           <node concept="19SGf9" id="16s9BXqfY5k" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXqfY5l" role="19SJt6">
               <property role="19SUeA" value="an info log" />
@@ -221,7 +221,7 @@
         </node>
         <node concept="3b4Zxd" id="16s9BXqfY7u" role="3XIRFZ">
           <property role="2SUSXN" value="DEBUG" />
-          <ref role="21B7w6" node="1qhgQYnTMr9" resolve="ANOTHER_TOPIC" />
+          <ref role="21B7w6" node="1qhgQYnTMr9" resolve="ANOTHER_TAG" />
           <node concept="19SGf9" id="16s9BXqfY7v" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXqfY7w" role="19SJt6">
               <property role="19SUeA" value="a debug log" />
@@ -230,7 +230,7 @@
         </node>
         <node concept="3b4Zxd" id="16s9BXqfY7J" role="3XIRFZ">
           <property role="2SUSXN" value="TRACE" />
-          <ref role="21B7w6" node="1qhgQYnTMr9" resolve="ANOTHER_TOPIC" />
+          <ref role="21B7w6" node="1qhgQYnTMr9" resolve="ANOTHER_TAG" />
           <node concept="19SGf9" id="16s9BXqfY7K" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXqfY7L" role="19SJt6">
               <property role="19SUeA" value="a trace log" />
