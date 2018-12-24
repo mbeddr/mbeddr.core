@@ -1772,6 +1772,78 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5M68p1G8rHw" role="jymVt" />
+    <node concept="3clFb_" id="5M68p1G8$B$" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="restart" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5M68p1G8$BB" role="3clF47">
+        <node concept="3SKdUt" id="5M68p1GajIp" role="3cqZAp">
+          <node concept="3SKdUq" id="5M68p1GajIr" role="3SKWNk">
+            <property role="3SKdUp" value="backup project and exercise" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5M68p1G8Iiw" role="3cqZAp">
+          <node concept="3cpWsn" id="5M68p1G8Iix" role="3cpWs9">
+            <property role="TrG5h" value="myMpsProjectBackup" />
+            <node concept="3uibUv" id="5M68p1G8Iiv" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="37vLTw" id="5M68p1G8Iiy" role="33vP2m">
+              <ref role="3cqZAo" node="5h2rxDjX6LC" resolve="myMpsProject" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5M68p1G8JXX" role="3cqZAp">
+          <node concept="3cpWsn" id="5M68p1G8JXY" role="3cpWs9">
+            <property role="TrG5h" value="exerciseBackup" />
+            <node concept="3Tqbb2" id="5M68p1G8JXW" role="1tU5fm">
+              <ref role="ehGHo" to="k8go:3p1cdQ7_d_Y" resolve="Exercise" />
+            </node>
+            <node concept="37vLTw" id="5M68p1G8JXZ" role="33vP2m">
+              <ref role="3cqZAo" node="5h2rxDjX6nB" resolve="myOriginalExercise" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5M68p1GajLP" role="3cqZAp" />
+        <node concept="3SKdUt" id="5M68p1GajXM" role="3cqZAp">
+          <node concept="3SKdUq" id="5M68p1GajXO" role="3SKWNk">
+            <property role="3SKdUp" value="dispose existing instance" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5M68p1G8Bek" role="3cqZAp">
+          <node concept="1rXfSq" id="5M68p1G8Bej" role="3clFbG">
+            <ref role="37wK5l" node="692bXAb5EKN" resolve="dispose" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="5M68p1Gak5j" role="3cqZAp" />
+        <node concept="3SKdUt" id="5M68p1Gakhs" role="3cqZAp">
+          <node concept="3SKdUq" id="5M68p1Gakhu" role="3SKWNk">
+            <property role="3SKdUp" value="create new instance" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5M68p1G8Klb" role="3cqZAp">
+          <node concept="2OqwBi" id="5M68p1G9cCe" role="3clFbG">
+            <node concept="1rXfSq" id="5M68p1G8Kl9" role="2Oq$k0">
+              <ref role="37wK5l" node="5h2rxDjXLd6" resolve="getInstance" />
+              <node concept="37vLTw" id="5M68p1G8Lv4" role="37wK5m">
+                <ref role="3cqZAo" node="5M68p1G8Iix" resolve="myMpsProjectBackup" />
+              </node>
+              <node concept="37vLTw" id="5M68p1G8M2G" role="37wK5m">
+                <ref role="3cqZAo" node="5M68p1G8JXY" resolve="exerciseBackup" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5M68p1G9cMg" role="2OqNvi">
+              <ref role="37wK5l" node="5h2rxDjX6mY" resolve="start" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5M68p1G8xse" role="1B3o_S" />
+      <node concept="3cqZAl" id="5M68p1G8xP2" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="2ZyURrzArWX" role="jymVt" />
     <node concept="3clFb_" id="2ZyURrzA$44" role="jymVt">
       <property role="1EzhhJ" value="false" />

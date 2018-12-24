@@ -373,23 +373,23 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2C54m44Sqo8" role="3cqZAp">
-          <node concept="2OqwBi" id="2C54m44Sqo9" role="3clFbG">
-            <node concept="2YIFZM" id="2C54m44Sqoa" role="2Oq$k0">
+        <node concept="3clFbF" id="5M68p1G8oZI" role="3cqZAp">
+          <node concept="2OqwBi" id="5M68p1G8oZJ" role="3clFbG">
+            <node concept="2YIFZM" id="5M68p1G8oZK" role="2Oq$k0">
               <ref role="37wK5l" to="yuwt:5h2rxDjXLd6" resolve="getInstance" />
               <ref role="1Pybhc" to="yuwt:5h2rxDjX6bI" resolve="ExerciseExecutor" />
-              <node concept="2OqwBi" id="2C54m44Sqob" role="37wK5m">
-                <node concept="2WthIp" id="2C54m44Sqoc" role="2Oq$k0" />
-                <node concept="1DTwFV" id="2C54m44Sqod" role="2OqNvi">
+              <node concept="2OqwBi" id="5M68p1G8oZL" role="37wK5m">
+                <node concept="2WthIp" id="5M68p1G8oZM" role="2Oq$k0" />
+                <node concept="1DTwFV" id="5M68p1G8oZN" role="2OqNvi">
                   <ref role="2WH_rO" node="2C54m44Sqom" resolve="project" />
                 </node>
               </node>
-              <node concept="37vLTw" id="2C54m44SvF5" role="37wK5m">
+              <node concept="37vLTw" id="5M68p1G8oZO" role="37wK5m">
                 <ref role="3cqZAo" node="2C54m44Ss0a" resolve="exercise" />
               </node>
             </node>
-            <node concept="liA8E" id="2C54m44Sqoh" role="2OqNvi">
-              <ref role="37wK5l" to="yuwt:5h2rxDjX6mY" resolve="start" />
+            <node concept="liA8E" id="5M68p1G8oZP" role="2OqNvi">
+              <ref role="37wK5l" to="yuwt:5M68p1G8$B$" resolve="restart" />
             </node>
           </node>
         </node>
