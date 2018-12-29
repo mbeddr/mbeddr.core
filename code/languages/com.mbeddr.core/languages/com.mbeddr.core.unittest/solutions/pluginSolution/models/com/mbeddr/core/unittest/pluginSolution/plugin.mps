@@ -146,6 +146,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
+        <child id="8182547171709738803" name="nodes" index="36be1Z" />
+      </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
@@ -292,17 +295,16 @@
                 </node>
                 <node concept="2pIpSj" id="60EGPLFGSHd" role="2pJxcM">
                   <ref role="2pIpSl" to="x27k:5_l8w1EmTdh" resolve="contents" />
-                  <node concept="36biLy" id="60EGPLFGSHf" role="2pJxcZ">
-                    <node concept="37vLTw" id="60EGPLFGSHe" role="36biLW">
-                      <ref role="3cqZAo" node="7Uz1bYM40l2" resolve="main" />
+                  <node concept="36be1Y" id="28XegukkCE3" role="2pJxcZ">
+                    <node concept="36biLy" id="60EGPLFGSHf" role="36be1Z">
+                      <node concept="37vLTw" id="60EGPLFGSHe" role="36biLW">
+                        <ref role="3cqZAo" node="7Uz1bYM40l2" resolve="main" />
+                      </node>
                     </node>
-                  </node>
-                </node>
-                <node concept="2pIpSj" id="60EGPLFGSHg" role="2pJxcM">
-                  <ref role="2pIpSl" to="x27k:5_l8w1EmTdh" resolve="contents" />
-                  <node concept="36biLy" id="60EGPLFGSHi" role="2pJxcZ">
-                    <node concept="37vLTw" id="60EGPLFGSHh" role="36biLW">
-                      <ref role="3cqZAo" node="7Uz1bYM40kr" resolve="tc" />
+                    <node concept="36biLy" id="60EGPLFGSHi" role="36be1Z">
+                      <node concept="37vLTw" id="60EGPLFGSHh" role="36biLW">
+                        <ref role="3cqZAo" node="7Uz1bYM40kr" resolve="tc" />
+                      </node>
                     </node>
                   </node>
                 </node>
