@@ -125,16 +125,12 @@
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
-      <concept id="1159285995602" name="jetbrains.mps.lang.constraints.structure.NodeDefaultSearchScope" flags="ng" index="3EP7_v">
-        <child id="1159286114227" name="searchScopeFactory" index="3EP$qY" />
-      </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
-        <child id="1213101058038" name="defaultScope" index="1MtirG" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
@@ -2140,10 +2136,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="1EZSCJhOFig">
-    <property role="3GE5qa" value="reporting.logging" />
-    <ref role="1M2myG" to="k146:1EZSCJhF1F6" resolve="LogStatement" />
-  </node>
   <node concept="1M2fIO" id="7apEgWbJxpY">
     <property role="3GE5qa" value="functionrefs.closure" />
     <ref role="1M2myG" to="k146:7apEgWbIQfD" resolve="Closure" />
@@ -2224,29 +2216,34 @@
     <property role="3GE5qa" value="functionrefs.closure" />
     <ref role="1M2myG" to="k146:7hIwPwVQD7C" resolve="ClosureStatementList" />
   </node>
-  <node concept="1M2fIO" id="1vu3YmvjrQH">
+  <node concept="1M2fIO" id="2jbAnCYQHHP">
     <property role="3GE5qa" value="reporting.logging" />
     <ref role="1M2myG" to="k146:1vu3Ymvjk5R" resolve="LogTagRef" />
-    <node concept="3EP7_v" id="1vu3YmvjrQI" role="1MtirG">
-      <node concept="3dgokm" id="1vu3YmvjrQM" role="3EP$qY">
-        <node concept="3clFbS" id="1vu3YmvjrQO" role="2VODD2">
-          <node concept="3clFbF" id="1vu3YmvjrTL" role="3cqZAp">
-            <node concept="2OqwBi" id="1vu3YmvksIf" role="3clFbG">
-              <node concept="2OqwBi" id="5CkU_dHif_d" role="2Oq$k0">
-                <node concept="2rP1CM" id="5CkU_dHif_e" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="5CkU_dHif_f" role="2OqNvi">
-                  <node concept="1xMEDy" id="5CkU_dHif_g" role="1xVPHs">
-                    <node concept="chp4Y" id="5CkU_dHif_h" role="ri$Ld">
-                      <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    <node concept="1N5Pfh" id="3E$2YF4azWp" role="1Mr941">
+      <ref role="1N5Vy1" to="k146:1vu3Ymvjk5U" resolve="tag" />
+      <node concept="3dgokm" id="3E$2YF4azWr" role="1N6uqs">
+        <node concept="3clFbS" id="3E$2YF4azWs" role="2VODD2">
+          <node concept="3clFbF" id="3E$2YF4azZp" role="3cqZAp">
+            <node concept="2YIFZM" id="3E$2YF4a$6b" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="3E$2YF4a_nI" role="37wK5m">
+                <node concept="2OqwBi" id="3E$2YF4a$oK" role="2Oq$k0">
+                  <node concept="2rP1CM" id="3E$2YF4a$aW" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="3E$2YF4a$On" role="2OqNvi">
+                    <node concept="1xMEDy" id="3E$2YF4a$Op" role="1xVPHs">
+                      <node concept="chp4Y" id="3E$2YF4a$V9" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
                     </node>
+                    <node concept="1xIGOp" id="3E$2YF4a_9T" role="1xVPHs" />
                   </node>
-                  <node concept="1xIGOp" id="5CkU_dHif_i" role="1xVPHs" />
                 </node>
-              </node>
-              <node concept="2qgKlT" id="5CkU_dHif_j" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:79$zShlSHxZ" resolve="visibleContentsOfType" />
-                <node concept="35c_gC" id="1vu3YmvksUS" role="37wK5m">
-                  <ref role="35c_gD" to="k146:16s9BXqnA08" resolve="LogTagDeclaration" />
+                <node concept="2qgKlT" id="3E$2YF4aAnk" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:2jbAnCYSV$q" resolve="visibleContentsOfType" />
+                  <node concept="35c_gC" id="3E$2YF4aAxd" role="37wK5m">
+                    <ref role="35c_gD" to="k146:16s9BXqnA08" resolve="LogTagDeclaration" />
+                  </node>
                 </node>
               </node>
             </node>

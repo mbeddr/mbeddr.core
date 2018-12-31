@@ -51,6 +51,9 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="1719829586596675959" name="com.mbeddr.core.util.structure.LogTagRef" flags="ng" index="28$OUi">
+        <reference id="1719829586596675962" name="tag" index="28$OUv" />
+      </concept>
       <concept id="2688792604367903085" name="com.mbeddr.core.util.structure.MessageDefinitionTable" flags="ng" index="2vmPJd">
         <child id="2688792604367903095" name="messages" index="2vmPJn" />
       </concept>
@@ -65,10 +68,10 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
       <concept id="1927508255683910342" name="com.mbeddr.core.util.structure.LogStatement" flags="ng" index="3b4Zxd">
         <property id="4035064233020678905" name="level" index="2SUSXN" />
-        <reference id="1626155087012117353" name="topic" index="21B7w6" />
+        <child id="1719829586597249552" name="tags" index="28y0RP" />
         <child id="1927508255683911583" name="text" index="3b4ZOk" />
       </concept>
-      <concept id="1268931523430473736" name="com.mbeddr.core.util.structure.LogTopic" flags="ng" index="1bK$pR">
+      <concept id="1268931523430473736" name="com.mbeddr.core.util.structure.LogTagDeclaration" flags="ng" index="1bK$pR">
         <property id="1626155087012542122" name="description" index="21wJn5" />
       </concept>
     </language>
@@ -188,7 +191,6 @@
       <node concept="3XIRFW" id="58DJDcMiPK4" role="3XIRFX">
         <node concept="3b4Zxd" id="16s9BXq92RA" role="3XIRFZ">
           <property role="2SUSXN" value="ERROR" />
-          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TAG" />
           <node concept="19SGf9" id="16s9BXq92RC" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXq92RD" role="19SJt6">
               <property role="19SUeA" value="an error log " />
@@ -197,22 +199,26 @@
               <ref role="1w3X5k" node="58DJDcMiPK7" resolve="argc" />
             </node>
             <node concept="19SUe$" id="1qhgQYo2EbS" role="19SJt6">
-              <property role="19SUeA" value=" ... " />
+              <property role="19SUeA" value=" ..." />
             </node>
+          </node>
+          <node concept="28$OUi" id="52C0LV0pfEK" role="28y0RP">
+            <ref role="28$OUv" node="1qhgQYn6pcD" resolve="TAG" />
           </node>
         </node>
         <node concept="3b4Zxd" id="16s9BXqfY58" role="3XIRFZ">
           <property role="2SUSXN" value="WARNING" />
-          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TAG" />
           <node concept="19SGf9" id="16s9BXqfY59" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXqfY5a" role="19SJt6">
               <property role="19SUeA" value="a warning log" />
             </node>
           </node>
+          <node concept="28$OUi" id="52C0LV0pfSm" role="28y0RP">
+            <ref role="28$OUv" node="1qhgQYnTMr9" resolve="ANOTHER_TAG" />
+          </node>
         </node>
         <node concept="3b4Zxd" id="16s9BXqfY5j" role="3XIRFZ">
           <property role="2SUSXN" value="INFO" />
-          <ref role="21B7w6" node="1qhgQYn6pcD" resolve="TAG" />
           <node concept="19SGf9" id="16s9BXqfY5k" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXqfY5l" role="19SJt6">
               <property role="19SUeA" value="an info log" />
@@ -221,7 +227,6 @@
         </node>
         <node concept="3b4Zxd" id="16s9BXqfY7u" role="3XIRFZ">
           <property role="2SUSXN" value="DEBUG" />
-          <ref role="21B7w6" node="1qhgQYnTMr9" resolve="ANOTHER_TAG" />
           <node concept="19SGf9" id="16s9BXqfY7v" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXqfY7w" role="19SJt6">
               <property role="19SUeA" value="a debug log" />
@@ -230,7 +235,6 @@
         </node>
         <node concept="3b4Zxd" id="16s9BXqfY7J" role="3XIRFZ">
           <property role="2SUSXN" value="TRACE" />
-          <ref role="21B7w6" node="1qhgQYnTMr9" resolve="ANOTHER_TAG" />
           <node concept="19SGf9" id="16s9BXqfY7K" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXqfY7L" role="19SJt6">
               <property role="19SUeA" value="a trace log" />

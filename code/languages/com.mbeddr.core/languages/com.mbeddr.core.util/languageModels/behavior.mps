@@ -9306,5 +9306,26 @@
       <node concept="3Tm1VV" id="1vu3YmvjoDQ" role="1B3o_S" />
     </node>
   </node>
+  <node concept="13h7C7" id="3E$2YF4b7hd">
+    <property role="3GE5qa" value="reporting.logging" />
+    <ref role="13h7C2" to="k146:16s9BXqnA08" resolve="LogTagDeclaration" />
+    <node concept="13i0hz" id="3E$2YF4b7ho" role="13h7CS">
+      <property role="TrG5h" value="exportable" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="qd6m:5HxjapwgqKI" resolve="exportable" />
+      <node concept="3clFbS" id="3E$2YF4b7hr" role="3clF47">
+        <node concept="3clFbF" id="3E$2YF4b7kx" role="3cqZAp">
+          <node concept="3clFbT" id="3E$2YF4b7kw" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3E$2YF4b7hw" role="3clF45" />
+      <node concept="3Tm1VV" id="3E$2YF4b7hx" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="3E$2YF4b7he" role="13h7CW">
+      <node concept="3clFbS" id="3E$2YF4b7hf" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
