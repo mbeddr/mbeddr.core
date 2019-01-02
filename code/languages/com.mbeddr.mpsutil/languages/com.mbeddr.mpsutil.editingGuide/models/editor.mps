@@ -11,6 +11,7 @@
     <import index="k8go" ref="r:00731b77-fd60-4ebd-b554-284dbff8495f(com.mbeddr.mpsutil.editingGuide.structure)" />
     <import index="7a0s" ref="r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="l4gp" ref="r:a2db9c62-2dcd-4812-bc5f-0468bbf0b1c1(com.mbeddr.mpsutil.editingGuide.behavior)" implicit="true" />
     <import index="1oap" ref="r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources.structure)" implicit="true" />
@@ -72,6 +73,9 @@
       </concept>
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
@@ -799,6 +803,65 @@
       <node concept="2iRkQZ" id="7uU8NkLTET_" role="2iSdaV" />
       <node concept="PMmxH" id="3Wx3Ow98_Dj" role="3EZMnx">
         <ref role="PMmxG" to="tpco:5K$8XMPc9pW" resolve="ShortDescriptionEditorComponent" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2LITU$UtGRu">
+    <property role="3GE5qa" value="fragments" />
+    <ref role="1XX52x" to="k8go:2LITU$UreBp" resolve="ScopedFragment" />
+    <node concept="3EZMnI" id="2LITU$UtGSi" role="2wV5jI">
+      <node concept="PMmxH" id="2LITU$UtGSj" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="VPxyj" id="2LITU$UtGSk" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2LITU$UtGSm" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="2LITU$UtGSn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VPM3Z" id="2LITU$UtGSo" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPxyj" id="2LITU$UtGSp" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="2LITU$UwqBV" role="3EZMnx">
+        <ref role="1NtTu8" to="k8go:2LITU$Ush1u" resolve="content" />
+      </node>
+      <node concept="2iRfu4" id="2LITU$UtGSt" role="2iSdaV" />
+      <node concept="xShMh" id="2LITU$UtGSu" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="2LITU$UtGSW" role="6VMZX">
+      <node concept="PMmxH" id="2LITU$UtGT6" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:5K$8XMPc9pW" resolve="ShortDescriptionEditorComponent" />
+        <node concept="VPM3Z" id="2LITU$UBW$k" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2LITU$UtGT9" role="3EZMnx" />
+      <node concept="3F0ifn" id="2LITU$UBHpF" role="3EZMnx">
+        <property role="3F0ifm" value="Scope Providers:" />
+        <ref role="1k5W1q" to="tpc5:hF4yUZ8" resolve="header" />
+      </node>
+      <node concept="3F2HdR" id="2LITU$Uvex2" role="3EZMnx">
+        <ref role="1NtTu8" to="k8go:2LITU$UuIMP" resolve="scopeProviders" />
+        <node concept="2iRkQZ" id="2LITU$Uvex4" role="2czzBx" />
+      </node>
+      <node concept="2iRkQZ" id="2LITU$UtGSZ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2LITU$UwBzr">
+    <property role="3GE5qa" value="fragments" />
+    <ref role="1XX52x" to="k8go:2LITU$UuIMU" resolve="ScopedFragment_ScopeRef" />
+    <node concept="1iCGBv" id="2LITU$UwBzW" role="2wV5jI">
+      <ref role="1NtTu8" to="k8go:2LITU$UuINH" resolve="target" />
+      <node concept="1sVBvm" id="2LITU$UwBzY" role="1sWHZn">
+        <node concept="3SHvHV" id="2LITU$UwB$f" role="2wV5jI" />
       </node>
     </node>
   </node>

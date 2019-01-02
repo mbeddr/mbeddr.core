@@ -290,5 +290,42 @@
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2LITU$UreBp">
+    <property role="EcuMT" value="3201751099122706905" />
+    <property role="3GE5qa" value="fragments" />
+    <property role="TrG5h" value="ScopedFragment" />
+    <property role="34LRSv" value="scoped" />
+    <property role="R4oN_" value="The fragment will have only the visible descendants of the given IVisibleScopeProviders in scope" />
+    <ref role="1TJDcQ" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
+    <node concept="PrWs8" id="2LITU$UreCc" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+    <node concept="1TJgyj" id="2LITU$Ush1u" role="1TKVEi">
+      <property role="IQ2ns" value="3201751099122978910" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <ref role="20lvS9" node="3p1cdQ7_d_V" resolve="InlineProgramFragment" />
+    </node>
+    <node concept="1TJgyj" id="2LITU$UuIMP" role="1TKVEi">
+      <property role="IQ2ns" value="3201751099123625141" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="scopeProviders" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2LITU$UuIMU" resolve="ScopedFragment_ScopeRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2LITU$UuIMU">
+    <property role="EcuMT" value="3201751099123625146" />
+    <property role="3GE5qa" value="fragments" />
+    <property role="TrG5h" value="ScopedFragment_ScopeRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2LITU$UuINH" role="1TKVEi">
+      <property role="IQ2ns" value="3201751099123625197" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+  </node>
 </model>
 

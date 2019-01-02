@@ -230,7 +230,7 @@
         <node concept="3clFbS" id="3Wx3Ow93Qep" role="2VODD2">
           <node concept="3SKdUt" id="3Wx3Ow97Yvy" role="3cqZAp">
             <node concept="3SKdUq" id="3Wx3Ow97Yv$" role="3SKWNk">
-              <property role="3SKdUp" value="all root nodes in this model and imnported ones without the exercises" />
+              <property role="3SKdUp" value="all root nodes in this model and imported ones without the exercises" />
             </node>
           </node>
           <node concept="3cpWs8" id="3Wx3Ow96AFD" role="3cqZAp">
@@ -368,6 +368,161 @@
                 </node>
                 <node concept="37vLTw" id="3Wx3Ow96J5h" role="37wK5m">
                   <ref role="3cqZAo" node="3Wx3Ow96Eny" resolve="inline" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2LITU$Uv1PG">
+    <property role="3GE5qa" value="fragments" />
+    <ref role="1M2myG" to="k8go:2LITU$UuIMU" resolve="ScopedFragment_ScopeRef" />
+    <node concept="1N5Pfh" id="2LITU$Uv1Qc" role="1Mr941">
+      <ref role="1N5Vy1" to="k8go:2LITU$UuINH" resolve="target" />
+      <node concept="3dgokm" id="2LITU$Uv1Qf" role="1N6uqs">
+        <node concept="3clFbS" id="2LITU$Uv1Qg" role="2VODD2">
+          <node concept="3SKdUt" id="2LITU$Uv1Qh" role="3cqZAp">
+            <node concept="3SKdUq" id="2LITU$Uv1Qi" role="3SKWNk">
+              <property role="3SKdUp" value="all root nodes in this model and imported ones without the exercises" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="2LITU$Uv1Qj" role="3cqZAp">
+            <node concept="3cpWsn" id="2LITU$Uv1Qk" role="3cpWs9">
+              <property role="TrG5h" value="allImportedModels" />
+              <node concept="2YIFZM" id="2LITU$Uv1Ql" role="33vP2m">
+                <ref role="37wK5l" to="w1kc:~SModelOperations.allImportedModels(org.jetbrains.mps.openapi.model.SModel):java.util.List" resolve="allImportedModels" />
+                <ref role="1Pybhc" to="w1kc:~SModelOperations" resolve="SModelOperations" />
+                <node concept="2OqwBi" id="2LITU$Uv1Qm" role="37wK5m">
+                  <node concept="2rP1CM" id="2LITU$Uv1Qn" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="2LITU$Uv1Qo" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="A3Dl8" id="2LITU$Uv1Qp" role="1tU5fm">
+                <node concept="3uibUv" id="2LITU$Uv1Qq" role="A3Ik2">
+                  <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="2LITU$Uv1Qr" role="3cqZAp">
+            <node concept="3cpWsn" id="2LITU$Uv1Qs" role="3cpWs9">
+              <property role="TrG5h" value="rootNodes" />
+              <node concept="3uibUv" id="2LITU$Uv1Qt" role="1tU5fm">
+                <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+              </node>
+              <node concept="2ShNRf" id="2LITU$Uv1Qu" role="33vP2m">
+                <node concept="YeOm9" id="2LITU$Uv1Qv" role="2ShVmc">
+                  <node concept="1Y3b0j" id="2LITU$Uv1Qw" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="o8zo:3rV3sBXetA0" resolve="FilteringScope" />
+                    <ref role="37wK5l" to="o8zo:3rV3sBXetA2" resolve="FilteringScope" />
+                    <node concept="3Tm1VV" id="2LITU$Uv1Qx" role="1B3o_S" />
+                    <node concept="2ShNRf" id="2LITU$Uv1Qy" role="37wK5m">
+                      <node concept="1pGfFk" id="2LITU$Uv1Qz" role="2ShVmc">
+                        <ref role="37wK5l" to="o8zo:4k9eBec$Bew" resolve="ModelsScope" />
+                        <node concept="2OqwBi" id="2LITU$Uv1Q$" role="37wK5m">
+                          <node concept="37vLTw" id="2LITU$Uv1Q_" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2LITU$Uv1Qk" resolve="allImportedModels" />
+                          </node>
+                          <node concept="4Tj9Z" id="2LITU$Uv1QA" role="2OqNvi">
+                            <node concept="2ShNRf" id="2LITU$Uv1QB" role="576Qk">
+                              <node concept="2HTt$P" id="2LITU$Uv1QC" role="2ShVmc">
+                                <node concept="H_c77" id="2LITU$Uv1QD" role="2HTBi0" />
+                                <node concept="2OqwBi" id="2LITU$Uv1QE" role="2HTEbv">
+                                  <node concept="2rP1CM" id="2LITU$Uv1QF" role="2Oq$k0" />
+                                  <node concept="I4A8Y" id="2LITU$Uv1QG" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbT" id="2LITU$Uv1QH" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                        <node concept="35c_gC" id="2LITU$Uv1QI" role="37wK5m">
+                          <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2tJIrI" id="2LITU$Uv1QJ" role="jymVt" />
+                    <node concept="3clFb_" id="2LITU$Uv1QK" role="jymVt">
+                      <property role="TrG5h" value="isExcluded" />
+                      <property role="1EzhhJ" value="false" />
+                      <node concept="10P_77" id="2LITU$Uv1QL" role="3clF45" />
+                      <node concept="3Tm1VV" id="2LITU$Uv1QM" role="1B3o_S" />
+                      <node concept="37vLTG" id="2LITU$Uv1QN" role="3clF46">
+                        <property role="TrG5h" value="node" />
+                        <node concept="3Tqbb2" id="2LITU$Uv1QO" role="1tU5fm" />
+                      </node>
+                      <node concept="3clFbS" id="2LITU$Uv1QP" role="3clF47">
+                        <node concept="3clFbF" id="2LITU$Uv1QQ" role="3cqZAp">
+                          <node concept="2OqwBi" id="2LITU$Uv1QR" role="3clFbG">
+                            <node concept="37vLTw" id="2LITU$Uv1QS" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2LITU$Uv1QN" resolve="node" />
+                            </node>
+                            <node concept="1mIQ4w" id="2LITU$Uv1QT" role="2OqNvi">
+                              <node concept="chp4Y" id="2LITU$Uv1QU" role="cj9EA">
+                                <ref role="cht4Q" to="k8go:3p1cdQ7_d_Y" resolve="Exercise" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2AHcQZ" id="2LITU$Uv1QV" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="2LITU$Uv1QW" role="3cqZAp" />
+          <node concept="3SKdUt" id="2LITU$UwD7K" role="3cqZAp">
+            <node concept="3SKdUq" id="2LITU$UwD7L" role="3SKWNk">
+              <property role="3SKdUp" value="all inline program fragments" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="2LITU$UwD7M" role="3cqZAp">
+            <node concept="3cpWsn" id="2LITU$UwD7N" role="3cpWs9">
+              <property role="TrG5h" value="inline" />
+              <node concept="3uibUv" id="2LITU$UwD7O" role="1tU5fm">
+                <ref role="3uigEE" to="o8zo:VXQuBhO0U" resolve="ModelsScope" />
+              </node>
+              <node concept="2ShNRf" id="2LITU$UwD7P" role="33vP2m">
+                <node concept="1pGfFk" id="2LITU$UwD7Q" role="2ShVmc">
+                  <ref role="37wK5l" to="o8zo:4k9eBec$Bew" resolve="ModelsScope" />
+                  <node concept="2ShNRf" id="2LITU$UwD7R" role="37wK5m">
+                    <node concept="2HTt$P" id="2LITU$UwD7S" role="2ShVmc">
+                      <node concept="H_c77" id="2LITU$UwD7T" role="2HTBi0" />
+                      <node concept="2OqwBi" id="2LITU$UwD7U" role="2HTEbv">
+                        <node concept="2rP1CM" id="2LITU$UwD7V" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="2LITU$UwD7W" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbT" id="2LITU$UwD7X" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                  <node concept="35c_gC" id="2LITU$UwD7Y" role="37wK5m">
+                    <ref role="35c_gD" to="k8go:3p1cdQ7_d_V" resolve="InlineProgramFragment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="2LITU$UwD7Z" role="3cqZAp" />
+          <node concept="3clFbF" id="2LITU$UwD80" role="3cqZAp">
+            <node concept="2ShNRf" id="2LITU$UwD81" role="3clFbG">
+              <node concept="1pGfFk" id="2LITU$UwD82" role="2ShVmc">
+                <ref role="37wK5l" to="o8zo:7ipADkTevLv" resolve="CompositeScope" />
+                <node concept="37vLTw" id="2LITU$UwD83" role="37wK5m">
+                  <ref role="3cqZAo" node="2LITU$Uv1Qs" resolve="rootNodes" />
+                </node>
+                <node concept="37vLTw" id="2LITU$UwD84" role="37wK5m">
+                  <ref role="3cqZAo" node="2LITU$UwD7N" resolve="inline" />
                 </node>
               </node>
             </node>
