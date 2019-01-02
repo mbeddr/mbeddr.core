@@ -304,7 +304,7 @@
       <property role="IQ2ns" value="3201751099122978910" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="content" />
-      <ref role="20lvS9" node="3p1cdQ7_d_V" resolve="InlineProgramFragment" />
+      <ref role="20lvS9" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
     </node>
     <node concept="1TJgyj" id="2LITU$UuIMP" role="1TKVEi">
       <property role="IQ2ns" value="3201751099123625141" />
