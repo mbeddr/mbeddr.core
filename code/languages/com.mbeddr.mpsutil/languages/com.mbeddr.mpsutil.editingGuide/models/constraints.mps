@@ -352,7 +352,7 @@
                     <property role="3clFbU" value="false" />
                   </node>
                   <node concept="35c_gC" id="3Wx3Ow96EnC" role="37wK5m">
-                    <ref role="35c_gD" to="k8go:3p1cdQ7_d_V" resolve="InlineProgramFragment" />
+                    <ref role="35c_gD" to="k8go:3p1cdQ7_d_V" resolve="ExplicitProgramFragment" />
                   </node>
                 </node>
               </node>
@@ -482,7 +482,7 @@
           <node concept="3clFbH" id="2LITU$Uv1QW" role="3cqZAp" />
           <node concept="3SKdUt" id="2LITU$UwD7K" role="3cqZAp">
             <node concept="3SKdUq" id="2LITU$UwD7L" role="3SKWNk">
-              <property role="3SKdUp" value="all inline program fragments" />
+              <property role="3SKdUp" value="all explicit program fragments" />
             </node>
           </node>
           <node concept="3cpWs8" id="2LITU$UwD7M" role="3cqZAp">
@@ -494,20 +494,14 @@
               <node concept="2ShNRf" id="2LITU$UwD7P" role="33vP2m">
                 <node concept="1pGfFk" id="2LITU$UwD7Q" role="2ShVmc">
                   <ref role="37wK5l" to="o8zo:4k9eBec$Bew" resolve="ModelsScope" />
-                  <node concept="2ShNRf" id="2LITU$UwD7R" role="37wK5m">
-                    <node concept="2HTt$P" id="2LITU$UwD7S" role="2ShVmc">
-                      <node concept="H_c77" id="2LITU$UwD7T" role="2HTBi0" />
-                      <node concept="2OqwBi" id="2LITU$UwD7U" role="2HTEbv">
-                        <node concept="2rP1CM" id="2LITU$UwD7V" role="2Oq$k0" />
-                        <node concept="I4A8Y" id="2LITU$UwD7W" role="2OqNvi" />
-                      </node>
-                    </node>
+                  <node concept="37vLTw" id="TTych1EnLh" role="37wK5m">
+                    <ref role="3cqZAo" node="2LITU$Uv1Qk" resolve="allImportedModels" />
                   </node>
                   <node concept="3clFbT" id="2LITU$UwD7X" role="37wK5m">
                     <property role="3clFbU" value="false" />
                   </node>
                   <node concept="35c_gC" id="2LITU$UwD7Y" role="37wK5m">
-                    <ref role="35c_gD" to="k8go:3p1cdQ7_d_V" resolve="InlineProgramFragment" />
+                    <ref role="35c_gD" to="k8go:3p1cdQ7_d_V" resolve="ExplicitProgramFragment" />
                   </node>
                 </node>
               </node>

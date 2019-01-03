@@ -120,12 +120,17 @@
     <property role="EcuMT" value="3909459679554886010" />
     <property role="3GE5qa" value="fragments" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="TTych1Ce5x" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_V">
-    <property role="TrG5h" value="InlineProgramFragment" />
-    <property role="34LRSv" value="inline" />
+    <property role="TrG5h" value="ExplicitProgramFragment" />
+    <property role="34LRSv" value="explicit" />
     <property role="EcuMT" value="3909459679554886011" />
     <property role="3GE5qa" value="fragments" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="Create a program fragment that is shown and modified as part of a task" />
     <ref role="1TJDcQ" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
     <node concept="1TJgyj" id="3p1cdQ7_d_W" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -133,6 +138,9 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="3909459679554886012" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="PrWs8" id="2LITU$UHeA2" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_Y">
@@ -297,9 +305,6 @@
     <property role="34LRSv" value="scoped" />
     <property role="R4oN_" value="The fragment will have only the visible descendants of the given IVisibleScopeProviders in scope" />
     <ref role="1TJDcQ" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
-    <node concept="PrWs8" id="2LITU$UreCc" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-    </node>
     <node concept="1TJgyj" id="2LITU$Ush1u" role="1TKVEi">
       <property role="IQ2ns" value="3201751099122978910" />
       <property role="20lmBu" value="aggregation" />
