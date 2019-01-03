@@ -607,6 +607,28 @@
               <property role="VOm3f" value="true" />
             </node>
           </node>
+          <node concept="1HlG4h" id="PYICs0TzVJ" role="3EZMnx">
+            <node concept="1HfYo3" id="PYICs0TzVL" role="1HlULh">
+              <node concept="3TQlhw" id="PYICs0TzVN" role="1Hhtcw">
+                <node concept="3clFbS" id="PYICs0TzVP" role="2VODD2">
+                  <node concept="3clFbF" id="PYICs0TD_4" role="3cqZAp">
+                    <node concept="2OqwBi" id="PYICs0TDNH" role="3clFbG">
+                      <node concept="pncrf" id="PYICs0TD_3" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="PYICs0TF3W" role="2OqNvi">
+                        <ref role="37wK5l" to="l4gp:PYICs0TAVo" resolve="getPresentationForPrefix" />
+                        <node concept="Xl_RD" id="PYICs0TFHU" role="37wK5m">
+                          <property role="Xl_RC" value="" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="VechU" id="PYICs0THy8" role="3F10Kt">
+              <property role="Vb096" value="gray" />
+            </node>
+          </node>
           <node concept="2iRfu4" id="2LITU$UHfF4" role="2iSdaV" />
         </node>
         <node concept="2iRkQZ" id="2LITU$UHfEH" role="2iSdaV" />
