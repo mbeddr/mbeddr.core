@@ -1439,7 +1439,7 @@
   </node>
   <node concept="13h7C7" id="3p1cdQ7_MON">
     <property role="3GE5qa" value="fragments" />
-    <ref role="13h7C2" to="k8go:3p1cdQ7_d_V" resolve="ExplicitProgramFragment" />
+    <ref role="13h7C2" to="k8go:3p1cdQ7_d_V" resolve="LiteralProgramFragment" />
     <node concept="13hLZK" id="3p1cdQ7_MOO" role="13h7CW">
       <node concept="3clFbS" id="3p1cdQ7_MOP" role="2VODD2" />
     </node>
@@ -2387,7 +2387,7 @@
                     <property role="3clFbU" value="false" />
                   </node>
                   <node concept="35c_gC" id="2LITU$UwD7Y" role="37wK5m">
-                    <ref role="35c_gD" to="k8go:3p1cdQ7_d_V" resolve="ExplicitProgramFragment" />
+                    <ref role="35c_gD" to="k8go:3p1cdQ7_d_V" resolve="LiteralProgramFragment" />
                   </node>
                 </node>
               </node>

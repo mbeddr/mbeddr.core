@@ -132,12 +132,12 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_V">
-    <property role="TrG5h" value="ExplicitProgramFragment" />
+    <property role="TrG5h" value="LiteralProgramFragment" />
     <property role="EcuMT" value="3909459679554886011" />
     <property role="3GE5qa" value="fragments" />
-    <property role="R4oN_" value="Create a program fragment that is shown and modified as part of a task" />
+    <property role="R4oN_" value="Wraps a program fragment that can be shown and modified as part of a task" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="explicit" />
+    <property role="34LRSv" value="literal" />
     <ref role="1TJDcQ" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
     <node concept="1TJgyj" id="3p1cdQ7_d_W" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

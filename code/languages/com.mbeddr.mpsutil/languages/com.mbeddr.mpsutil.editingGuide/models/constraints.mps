@@ -391,7 +391,7 @@
                     <property role="3clFbU" value="false" />
                   </node>
                   <node concept="35c_gC" id="3Wx3Ow96EnC" role="37wK5m">
-                    <ref role="35c_gD" to="k8go:3p1cdQ7_d_V" resolve="ExplicitProgramFragment" />
+                    <ref role="35c_gD" to="k8go:3p1cdQ7_d_V" resolve="LiteralProgramFragment" />
                   </node>
                 </node>
               </node>
