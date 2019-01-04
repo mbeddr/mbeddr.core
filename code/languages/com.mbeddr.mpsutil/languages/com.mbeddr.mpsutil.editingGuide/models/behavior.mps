@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -200,6 +201,30 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -1431,6 +1456,27 @@
       </node>
       <node concept="3uibUv" id="PYICs0Yrd2" role="3clF45">
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+      <node concept="P$JXv" id="1yzxXcWckRb" role="lGtFl">
+        <node concept="TZ5HA" id="1yzxXcWckRc" role="TZ5H$">
+          <node concept="1dT_AC" id="1yzxXcWckRd" role="1dT_Ay">
+            <property role="1dT_AB" value="Scope inside a literal should always consist of the local elements and the scope provided here." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1yzxXcWcl2j" role="TZ5H$">
+          <node concept="1dT_AC" id="1yzxXcWcl2k" role="1dT_Ay">
+            <property role="1dT_AB" value="This should replace any other resolution of external elements." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1yzxXcWckRe" role="3nqlJM">
+          <property role="TUZQ4" value="the concept of the elements we're looking for" />
+          <node concept="zr_55" id="1yzxXcWckRg" role="zr_5Q">
+            <ref role="zr_51" node="PYICs0Yrd0" resolve="targetConcept" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1yzxXcWckRh" role="3nqlJM">
+          <property role="x79VB" value="the Composite Scope that contains all elements and scopes listed in scopeProviders" />
+        </node>
       </node>
     </node>
     <node concept="13hLZK" id="3p1cdQ7_MO9" role="13h7CW">
