@@ -1444,7 +1444,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="692bXAb4N_f">
-    <ref role="1XX52x" to="k8go:3p1cdQ7_d_V" resolve="ExplicitProgramFragment" />
+    <ref role="1XX52x" to="k8go:3p1cdQ7_d_V" resolve="LiteralProgramFragment" />
     <node concept="2aJ2om" id="692bXAb4N_l" role="CpUAK">
       <ref role="2$4xQ3" to="s75z:5h2rxDjXh5K" resolve="InGuideExecutionMode" />
     </node>
@@ -2614,24 +2614,6 @@
       <ref role="1NtTu8" to="k8go:7uU8NkLT8LQ" resolve="referencedNode" />
       <node concept="1sVBvm" id="7SaVKsw9Lqv" role="1sWHZn">
         <node concept="B$lHz" id="7SaVKsw9Lqw" role="2wV5jI" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="PYICs0XdLa">
-    <ref role="1XX52x" to="k8go:2LITU$UreBp" resolve="ScopedFragment" />
-    <node concept="2aJ2om" id="PYICs0XdLb" role="CpUAK">
-      <ref role="2$4xQ3" to="s75z:5h2rxDjXh5K" resolve="InGuideExecutionMode" />
-    </node>
-    <node concept="1iCGBv" id="PYICs0XdLc" role="2wV5jI">
-      <ref role="1NtTu8" to="k8go:2LITU$Ush1u" resolve="content" />
-      <node concept="1sVBvm" id="PYICs0XdLd" role="1sWHZn">
-        <node concept="B$lHz" id="PYICs0XdLe" role="2wV5jI" />
-      </node>
-    </node>
-    <node concept="1iCGBv" id="PYICs0XdLf" role="6VMZX">
-      <ref role="1NtTu8" to="k8go:2LITU$Ush1u" resolve="content" />
-      <node concept="1sVBvm" id="PYICs0XdLg" role="1sWHZn">
-        <node concept="B$lHz" id="PYICs0XdLh" role="2wV5jI" />
       </node>
     </node>
   </node>
