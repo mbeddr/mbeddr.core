@@ -1936,5 +1936,27 @@
       <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5DJcXBCtDog">
+    <property role="EcuMT" value="6516484196829402640" />
+    <property role="3GE5qa" value="reporting.logging" />
+    <property role="TrG5h" value="LogProfileDeclaration" />
+    <property role="34LRSv" value="log profile" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5DJcXBCtDoq" role="1TKVEi">
+      <property role="IQ2ns" value="6516484196829402650" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tags" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1vu3Ymvjk5R" resolve="LogTagRef" />
+    </node>
+    <node concept="PrWs8" id="5DJcXBCtDoh" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="1TJgyi" id="5DJcXBCtDoo" role="1TKVEl">
+      <property role="IQ2nx" value="6516484196829402648" />
+      <property role="TrG5h" value="level" />
+      <ref role="AX2Wp" node="3vZroEf5ebp" resolve="LogLevel" />
+    </node>
+  </node>
 </model>
 

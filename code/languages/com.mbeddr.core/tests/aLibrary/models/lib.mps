@@ -62,6 +62,10 @@
         <property id="2688792604367903094" name="kind" index="2vmPJm" />
         <property id="2688792604367947988" name="active" index="2vn0DO" />
       </concept>
+      <concept id="6516484196829402640" name="com.mbeddr.core.util.structure.LogProfileDeclaration" flags="ng" index="2M6qn9">
+        <property id="6516484196829402648" name="level" index="2M6qn1" />
+        <child id="6516484196829402650" name="tags" index="2M6qn3" />
+      </concept>
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
@@ -176,14 +180,28 @@
       <ref role="3GEb4d" node="58DJDcMhRF1" resolve="HelperFunctions" />
     </node>
     <node concept="1bK$pR" id="1qhgQYn6pcD" role="N3F5h">
-      <property role="TrG5h" value="TAG" />
+      <property role="TrG5h" value="A_TAG" />
       <property role="21wJn5" value="a log topic" />
     </node>
     <node concept="1bK$pR" id="1qhgQYnTMr9" role="N3F5h">
       <property role="TrG5h" value="ANOTHER_TAG" />
     </node>
-    <node concept="2NXPZ9" id="1qhgQYnu5wq" role="N3F5h">
-      <property role="TrG5h" value="empty_1545306886409_8" />
+    <node concept="2NXPZ9" id="4kMw8$EnC65" role="N3F5h">
+      <property role="TrG5h" value="empty_1546878544770_3" />
+    </node>
+    <node concept="2M6qn9" id="5DJcXBCvjcv" role="N3F5h">
+      <property role="TrG5h" value="ALogProfile" />
+      <property role="2OOxQR" value="true" />
+      <property role="2M6qn1" value="INFO" />
+      <node concept="28$OUi" id="5DJcXBCwGMZ" role="2M6qn3">
+        <ref role="28$OUv" node="1qhgQYn6pcD" resolve="A_TAG" />
+      </node>
+      <node concept="28$OUi" id="5DJcXBCwGN1" role="2M6qn3">
+        <ref role="28$OUv" node="1qhgQYnTMr9" resolve="ANOTHER_TAG" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="4kMw8$EnC6K" role="N3F5h">
+      <property role="TrG5h" value="empty_1546878544922_4" />
     </node>
     <node concept="N3Fnx" id="58DJDcMiPK2" role="N3F5h">
       <property role="TrG5h" value="main" />
@@ -203,7 +221,7 @@
             </node>
           </node>
           <node concept="28$OUi" id="52C0LV0pfEK" role="28y0RP">
-            <ref role="28$OUv" node="1qhgQYn6pcD" resolve="TAG" />
+            <ref role="28$OUv" node="1qhgQYn6pcD" resolve="A_TAG" />
           </node>
         </node>
         <node concept="3b4Zxd" id="16s9BXqfY58" role="3XIRFZ">
@@ -224,6 +242,12 @@
               <property role="19SUeA" value="an info log" />
             </node>
           </node>
+          <node concept="28$OUi" id="4kMw8$EnBFL" role="28y0RP">
+            <ref role="28$OUv" node="1qhgQYn6pcD" resolve="A_TAG" />
+          </node>
+          <node concept="28$OUi" id="5DJcXBCwGOU" role="28y0RP">
+            <ref role="28$OUv" node="1qhgQYnTMr9" resolve="ANOTHER_TAG" />
+          </node>
         </node>
         <node concept="3b4Zxd" id="16s9BXqfY7u" role="3XIRFZ">
           <property role="2SUSXN" value="DEBUG" />
@@ -237,6 +261,14 @@
           <property role="2SUSXN" value="TRACE" />
           <node concept="19SGf9" id="16s9BXqfY7K" role="3b4ZOk">
             <node concept="19SUe$" id="16s9BXqfY7L" role="19SJt6">
+              <property role="19SUeA" value="a trace log" />
+            </node>
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="4kMw8$EnC3T" role="3XIRFZ">
+          <property role="2SUSXN" value="TRACE" />
+          <node concept="19SGf9" id="4kMw8$EnC3U" role="3b4ZOk">
+            <node concept="19SUe$" id="4kMw8$EnC3V" role="19SJt6">
               <property role="19SUeA" value="a trace log" />
             </node>
           </node>
@@ -328,6 +360,12 @@
         <property role="TrG5h" value="y" />
         <node concept="26Vqqz" id="58DJDcMhRFf" role="2C2TGm" />
       </node>
+    </node>
+    <node concept="2NXPZ9" id="4kMw8$EnBJe" role="N3F5h">
+      <property role="TrG5h" value="empty_1546878424751_1" />
+    </node>
+    <node concept="1bK$pR" id="4kMw8$EnBLQ" role="N3F5h">
+      <property role="TrG5h" value="OTHER_TAG" />
     </node>
   </node>
   <node concept="rcWEw" id="z4vv_ojQO_">

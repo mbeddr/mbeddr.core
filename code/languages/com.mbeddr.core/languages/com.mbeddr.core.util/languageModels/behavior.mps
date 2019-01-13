@@ -9327,5 +9327,26 @@
       <node concept="3clFbS" id="3E$2YF4b7hf" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="5DJcXBCwIru">
+    <property role="3GE5qa" value="reporting.logging" />
+    <ref role="13h7C2" to="k146:5DJcXBCtDog" resolve="LogProfileDeclaration" />
+    <node concept="13i0hz" id="5DJcXBCwIrD" role="13h7CS">
+      <property role="TrG5h" value="exportable" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="qd6m:5HxjapwgqKI" resolve="exportable" />
+      <node concept="3clFbS" id="5DJcXBCwIrG" role="3clF47">
+        <node concept="3clFbF" id="5DJcXBCwIYG" role="3cqZAp">
+          <node concept="3clFbT" id="5DJcXBCwIYF" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5DJcXBCwIYB" role="3clF45" />
+      <node concept="3Tm1VV" id="5DJcXBCwIYC" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="5DJcXBCwIrv" role="13h7CW">
+      <node concept="3clFbS" id="5DJcXBCwIrw" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
