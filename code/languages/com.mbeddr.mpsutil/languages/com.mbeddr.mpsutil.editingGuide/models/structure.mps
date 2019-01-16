@@ -19,6 +19,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -52,6 +55,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -312,7 +316,7 @@
     <property role="EcuMT" value="3201751099123625146" />
     <property role="3GE5qa" value="fragments" />
     <property role="TrG5h" value="ProgramFragment_ScopeProvider_IVisibleElementProviderRef" />
-    <property role="R4oN_" value="All elements exposed by the referenced IVisibleElementProvider" />
+    <property role="R4oN_" value="All elements exposed by the referenced IVisibleElementProvider that it contains" />
     <ref role="1TJDcQ" node="PYICs0YGCY" resolve="ProgramFragment_ScopeProvider" />
     <node concept="1TJgyj" id="2LITU$UuINH" role="1TKVEi">
       <property role="IQ2ns" value="3201751099123625197" />
@@ -320,6 +324,9 @@
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+    <node concept="t5JxF" id="66G6VYc53xk" role="lGtFl">
+      <property role="t5JxN" value="Note that this is a misuse of IVisibleElementProvider. It is supposed to be used to lookup visibility from children nodes only." />
     </node>
   </node>
   <node concept="1TIwiD" id="PYICs0Ym6D">
