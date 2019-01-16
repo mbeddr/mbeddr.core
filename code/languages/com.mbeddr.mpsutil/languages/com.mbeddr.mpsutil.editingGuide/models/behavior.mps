@@ -27,7 +27,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="l4gp" ref="r:a2db9c62-2dcd-4812-bc5f-0468bbf0b1c1(com.mbeddr.mpsutil.editingGuide.behavior)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="1oap" ref="r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1479,6 +1479,34 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="66G6VYc4ExL" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getScope" />
+      <ref role="13i0hy" to="tpcu:52_Geb4QDV$" resolve="getScope" />
+      <node concept="3Tm1VV" id="66G6VYc4ExM" role="1B3o_S" />
+      <node concept="3clFbS" id="66G6VYc4ExV" role="3clF47">
+        <node concept="3clFbF" id="66G6VYc4EW8" role="3cqZAp">
+          <node concept="BsUDl" id="66G6VYc4EW1" role="3clFbG">
+            <ref role="37wK5l" node="PYICs0Yrc9" resolve="overriddenInnerScope" />
+            <node concept="37vLTw" id="66G6VYc4EWI" role="37wK5m">
+              <ref role="3cqZAo" node="66G6VYc4ExW" resolve="kind" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="66G6VYc4ExW" role="3clF46">
+        <property role="TrG5h" value="kind" />
+        <node concept="3bZ5Sz" id="66G6VYc4ExX" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="66G6VYc4ExY" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <node concept="3Tqbb2" id="66G6VYc4ExZ" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="66G6VYc4Ey0" role="3clF45">
+        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+    </node>
     <node concept="13hLZK" id="3p1cdQ7_MO9" role="13h7CW">
       <node concept="3clFbS" id="3p1cdQ7_MOa" role="2VODD2" />
     </node>
@@ -2206,7 +2234,7 @@
                   <node concept="3clFbS" id="PYICs0YJgG" role="3clF47">
                     <node concept="3SKdUt" id="PYICs0YJgH" role="3cqZAp">
                       <node concept="3SKdUq" id="PYICs0YJgI" role="3SKWNk">
-                        <property role="3SKdUp" value="exclude if it was imported only" />
+                        <property role="3SKdUp" value="exclude if it was only imported" />
                       </node>
                     </node>
                     <node concept="3clFbF" id="PYICs0YJgJ" role="3cqZAp">

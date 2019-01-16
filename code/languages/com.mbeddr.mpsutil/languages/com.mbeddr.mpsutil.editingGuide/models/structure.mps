@@ -130,6 +130,9 @@
     <node concept="PrWs8" id="1X06SdGBwmx" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
+    <node concept="PrWs8" id="66G6VYc4E9z" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_V">
     <property role="TrG5h" value="LiteralProgramFragment" />
