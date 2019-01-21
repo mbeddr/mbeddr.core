@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="21pk" ref="r:be665d13-1e1d-44cd-9817-8bd4d610f422(com.mbeddr.mpsutil.json.structure)" implicit="true" />
+    <import index="41ey" ref="r:f005c0ad-4467-4fc6-b611-c9d0774d1591(com.mbeddr.mpsutil.json.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -46,6 +47,9 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -84,6 +88,7 @@
       <concept id="7844911294523361055" name="jetbrains.mps.lang.textGen.structure.FilePathQuery" flags="ig" index="1KnnTt" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -140,8 +145,11 @@
       <node concept="3clFbS" id="34$4Bn6i2Ss" role="2VODD2">
         <node concept="3clFbF" id="34$4Bn6i3U5" role="3cqZAp">
           <node concept="3K4zz7" id="34$4Bn6i6D4" role="3clFbG">
-            <node concept="Xl_RD" id="34$4Bn6i6Oi" role="3K4E3e">
-              <property role="Xl_RC" value="" />
+            <node concept="2OqwBi" id="4egfvirUyMS" role="3K4E3e">
+              <node concept="117lpO" id="4egfvirUye5" role="2Oq$k0" />
+              <node concept="2qgKlT" id="4egfvirUzkB" role="2OqNvi">
+                <ref role="37wK5l" to="41ey:4egfvirUw0c" resolve="defaultLocation" />
+              </node>
             </node>
             <node concept="2OqwBi" id="34$4Bn6i7En" role="3K4GZi">
               <node concept="117lpO" id="34$4Bn6i6Zg" role="2Oq$k0" />

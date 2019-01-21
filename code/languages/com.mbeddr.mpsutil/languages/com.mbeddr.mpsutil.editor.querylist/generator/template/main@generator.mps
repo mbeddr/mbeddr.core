@@ -43,6 +43,7 @@
     <import index="qvne" ref="r:8ff33705-85bf-4855-805c-06d68fbe233c(jetbrains.mps.editor.runtime.descriptor)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
+    <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="nivk" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.descriptor(MPS.Editor/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
@@ -3193,7 +3194,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="7zLXdpwpgYZ" role="2OqNvi">
-                                    <ref role="37wK5l" to="22ra:~UpdateSession.updateReferencedNodeCell(jetbrains.mps.util.Computable,org.jetbrains.mps.openapi.model.SNode,java.lang.String):java.lang.Object" resolve="updateReferencedNodeCell" />
+                                    <ref role="37wK5l" to="22ra:~UpdateSession.updateReferencedNodeCell(jetbrains.mps.util.Computable,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SReferenceLink):java.lang.Object" resolve="updateReferencedNodeCell" />
                                     <node concept="1bVj0M" id="7zLXdpwphqo" role="37wK5m">
                                       <node concept="3clFbS" id="7zLXdpwphqp" role="1bW5cS">
                                         <node concept="3clFbF" id="7zLXdpwpi$x" role="3cqZAp">
@@ -3229,24 +3230,29 @@
                                     <node concept="37vLTw" id="7zLXdpwpmqO" role="37wK5m">
                                       <ref role="3cqZAo" node="6hPjX47175o" resolve="node" />
                                     </node>
-                                    <node concept="Xl_RD" id="7zLXdpwpnFc" role="37wK5m">
-                                      <property role="Xl_RC" value="querylistXXX" />
-                                      <node concept="17Uvod" id="7zLXdpwpnFd" role="lGtFl">
-                                        <property role="2qtEX9" value="value" />
-                                        <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                                        <node concept="3zFVjK" id="7zLXdpwpnFe" role="3zH0cK">
-                                          <node concept="3clFbS" id="7zLXdpwpnFf" role="2VODD2">
-                                            <node concept="3clFbF" id="7zLXdpwpnFg" role="3cqZAp">
-                                              <node concept="3cpWs3" id="7zLXdpwpnFh" role="3clFbG">
-                                                <node concept="Xl_RD" id="7zLXdpwpnFi" role="3uHU7B">
-                                                  <property role="Xl_RC" value="querylist" />
-                                                </node>
-                                                <node concept="2OqwBi" id="7zLXdpwpnFj" role="3uHU7w">
-                                                  <node concept="3S9uib" id="7zLXdpwpnFk" role="2Oq$k0">
-                                                    <node concept="30H73N" id="7zLXdpwpnFl" role="3S9DZi" />
-                                                  </node>
-                                                  <node concept="liA8E" id="7zLXdpwpnFm" role="2OqNvi">
-                                                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                    <node concept="2ShNRf" id="5nA3diwwhTD" role="37wK5m">
+                                      <node concept="1pGfFk" id="5nA3diwwjB2" role="2ShVmc">
+                                        <ref role="37wK5l" to="kvq8:5nA3diwsOPO" resolve="DummyReferenceLink" />
+                                        <node concept="Xl_RD" id="7zLXdpwpnFc" role="37wK5m">
+                                          <property role="Xl_RC" value="querylistXXX" />
+                                          <node concept="17Uvod" id="7zLXdpwpnFd" role="lGtFl">
+                                            <property role="2qtEX9" value="value" />
+                                            <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                                            <node concept="3zFVjK" id="7zLXdpwpnFe" role="3zH0cK">
+                                              <node concept="3clFbS" id="7zLXdpwpnFf" role="2VODD2">
+                                                <node concept="3clFbF" id="7zLXdpwpnFg" role="3cqZAp">
+                                                  <node concept="3cpWs3" id="7zLXdpwpnFh" role="3clFbG">
+                                                    <node concept="Xl_RD" id="7zLXdpwpnFi" role="3uHU7B">
+                                                      <property role="Xl_RC" value="querylist" />
+                                                    </node>
+                                                    <node concept="2OqwBi" id="7zLXdpwpnFj" role="3uHU7w">
+                                                      <node concept="3S9uib" id="7zLXdpwpnFk" role="2Oq$k0">
+                                                        <node concept="30H73N" id="7zLXdpwpnFl" role="3S9DZi" />
+                                                      </node>
+                                                      <node concept="liA8E" id="7zLXdpwpnFm" role="2OqNvi">
+                                                        <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                                      </node>
+                                                    </node>
                                                   </node>
                                                 </node>
                                               </node>

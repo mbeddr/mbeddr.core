@@ -2225,19 +2225,24 @@
                             <node concept="3clFbF" id="79AXByy9Qzd" role="3cqZAp">
                               <node concept="1rXfSq" id="79AXByy9Qze" role="3clFbG">
                                 <ref role="37wK5l" to="lzb2:~SimpleColoredComponent.append(java.lang.String):com.intellij.ui.SimpleColoredComponent" resolve="append" />
-                                <node concept="2OqwBi" id="79AXByy9Qzf" role="37wK5m">
-                                  <node concept="1eOMI4" id="79AXByy9Qzj" role="2Oq$k0">
-                                    <node concept="10QFUN" id="79AXByy9Qzg" role="1eOMHV">
-                                      <node concept="37vLTw" id="79AXByy9Qzh" role="10QFUP">
-                                        <ref role="3cqZAo" node="79AXByy9QyV" resolve="p1" />
-                                      </node>
-                                      <node concept="3uibUv" id="79AXByy9Qzi" role="10QFUM">
-                                        <ref role="3uigEE" to="dush:~ModelFactory" resolve="ModelFactory" />
+                                <node concept="2OqwBi" id="5q3qRuQDhzd" role="37wK5m">
+                                  <node concept="2OqwBi" id="79AXByy9Qzf" role="2Oq$k0">
+                                    <node concept="1eOMI4" id="79AXByy9Qzj" role="2Oq$k0">
+                                      <node concept="10QFUN" id="79AXByy9Qzg" role="1eOMHV">
+                                        <node concept="37vLTw" id="79AXByy9Qzh" role="10QFUP">
+                                          <ref role="3cqZAo" node="79AXByy9QyV" resolve="p1" />
+                                        </node>
+                                        <node concept="3uibUv" id="79AXByy9Qzi" role="10QFUM">
+                                          <ref role="3uigEE" to="dush:~ModelFactory" resolve="ModelFactory" />
+                                        </node>
                                       </node>
                                     </node>
+                                    <node concept="liA8E" id="5q3qRuQDhxc" role="2OqNvi">
+                                      <ref role="37wK5l" to="dush:~ModelFactory.getType():org.jetbrains.mps.openapi.persistence.ModelFactoryType" resolve="getType" />
+                                    </node>
                                   </node>
-                                  <node concept="liA8E" id="79AXByy9Qzk" role="2OqNvi">
-                                    <ref role="37wK5l" to="dush:~ModelFactory.getFormatTitle():java.lang.String" resolve="getFormatTitle" />
+                                  <node concept="liA8E" id="5q3qRuQDia6" role="2OqNvi">
+                                    <ref role="37wK5l" to="dush:~ModelFactoryType.getFormatTitle():java.lang.String" resolve="getFormatTitle" />
                                   </node>
                                 </node>
                               </node>
@@ -3406,54 +3411,13 @@
                 <ref role="3uigEE" to="dush:~ModelFactory" resolve="ModelFactory" />
               </node>
             </node>
-            <node concept="2ShNRf" id="79AXByxOrmo" role="33vP2m">
-              <node concept="1pGfFk" id="79AXByxOrmp" role="2ShVmc">
-                <ref role="37wK5l" to="33ny:~LinkedList.&lt;init&gt;()" resolve="LinkedList" />
-                <node concept="3uibUv" id="79AXByxOrlY" role="1pMfVU">
-                  <ref role="3uigEE" to="dush:~ModelFactory" resolve="ModelFactory" />
-                </node>
+            <node concept="2OqwBi" id="79AXByxOrmb" role="33vP2m">
+              <node concept="2YIFZM" id="5q3qRuQD7PR" role="2Oq$k0">
+                <ref role="1Pybhc" to="ends:~ModelFactoryService" resolve="ModelFactoryService" />
+                <ref role="37wK5l" to="ends:~ModelFactoryService.getInstance():jetbrains.mps.extapi.persistence.ModelFactoryService" resolve="getInstance" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DcWWT" id="79AXByxOrlZ" role="3cqZAp">
-          <node concept="2OqwBi" id="79AXByxOrmb" role="1DdaDG">
-            <node concept="2YIFZM" id="79AXByxOrmr" role="2Oq$k0">
-              <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
-              <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance():org.jetbrains.mps.openapi.persistence.PersistenceFacade" resolve="getInstance" />
-            </node>
-            <node concept="liA8E" id="79AXByxOrmd" role="2OqNvi">
-              <ref role="37wK5l" to="dush:~PersistenceFacade.getModelFactoryExtensions():java.util.Set" resolve="getModelFactoryExtensions" />
-            </node>
-          </node>
-          <node concept="3cpWsn" id="79AXByxOrm8" role="1Duv9x">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="formatId" />
-            <node concept="3uibUv" id="79AXByxOrma" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="79AXByxOrm1" role="2LFqv$">
-            <node concept="3clFbF" id="79AXByxOrm2" role="3cqZAp">
-              <node concept="2OqwBi" id="79AXByxOrmu" role="3clFbG">
-                <node concept="37vLTw" id="79AXByxOrmt" role="2Oq$k0">
-                  <ref role="3cqZAo" node="79AXByxOrlT" resolve="list" />
-                </node>
-                <node concept="liA8E" id="79AXByxOrmv" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
-                  <node concept="2OqwBi" id="79AXByxOrm4" role="37wK5m">
-                    <node concept="2YIFZM" id="79AXByxOrmx" role="2Oq$k0">
-                      <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
-                      <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance():org.jetbrains.mps.openapi.persistence.PersistenceFacade" resolve="getInstance" />
-                    </node>
-                    <node concept="liA8E" id="79AXByxOrm6" role="2OqNvi">
-                      <ref role="37wK5l" to="dush:~PersistenceFacade.getModelFactory(java.lang.String):org.jetbrains.mps.openapi.persistence.ModelFactory" resolve="getModelFactory" />
-                      <node concept="37vLTw" id="79AXByxOrm7" role="37wK5m">
-                        <ref role="3cqZAo" node="79AXByxOrm8" resolve="formatId" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
+              <node concept="liA8E" id="5q3qRuQD8L4" role="2OqNvi">
+                <ref role="37wK5l" to="ends:~ModelFactoryService.getFactories():java.util.List" resolve="getFactories" />
               </node>
             </node>
           </node>
@@ -3493,9 +3457,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="7o1blyu_iGL" role="jymVt" />
-    <node concept="2tJIrI" id="7o1blyu_p6f" role="jymVt" />
-    <node concept="2tJIrI" id="79AXByxOmbM" role="jymVt" />
   </node>
   <node concept="312cEu" id="2arDlsKId99">
     <property role="3GE5qa" value="ideEnhancement" />

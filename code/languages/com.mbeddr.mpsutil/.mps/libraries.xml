@@ -3,18 +3,18 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="mbeddr.core">
+        <entry key="mbeddr">
           <value>
             <Library>
-              <option name="name" value="mbeddr.core" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages" />
+              <option name="name" value="mbeddr" />
+              <option name="path" value="${mbeddr.github.core.home}/code" />
             </Library>
           </value>
         </entry>
-        <entry key="sl-all">
+        <entry key="mps.extensions">
           <value>
             <Library>
-              <option name="name" value="sl-all" />
+              <option name="name" value="mps.extensions" />
               <option name="path" value="${mbeddr.github.core.home}/artifacts/de.itemis.mps.extensions" />
             </Library>
           </value>

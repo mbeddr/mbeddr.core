@@ -650,7 +650,7 @@
       </concept>
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
-      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ng" index="s8sZD" />
+      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
       <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
         <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
         <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
@@ -14816,6 +14816,20 @@
   </node>
   <node concept="3p36aQ" id="48qh2gXL8ss">
     <ref role="aqKnT" to="vs0r:4g52gaNPZ6t" resolve="ReviewAssessmentResult_old" />
+  </node>
+  <node concept="24kQdi" id="4WU0y9pWgUB">
+    <property role="3GE5qa" value="assessment.scope" />
+    <ref role="1XX52x" to="vs0r:4WU0y9pWgP_" resolve="ListOfModelsScope" />
+    <node concept="3EZMnI" id="4WU0y9pWgUH" role="2wV5jI">
+      <node concept="2iRfu4" id="4WU0y9pWgUI" role="2iSdaV" />
+      <node concept="3F0ifn" id="4WU0y9pWgUD" role="3EZMnx">
+        <property role="3F0ifm" value="list of models" />
+      </node>
+      <node concept="3F2HdR" id="4WU0y9pWgVo" role="3EZMnx">
+        <ref role="1NtTu8" to="vs0r:4WU0y9pWgVa" resolve="models" />
+        <node concept="2iRkQZ" id="4WU0y9pWgVx" role="2czzBx" />
+      </node>
+    </node>
   </node>
 </model>
 

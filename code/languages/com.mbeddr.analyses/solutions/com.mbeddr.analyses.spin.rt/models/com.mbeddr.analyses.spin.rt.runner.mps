@@ -139,6 +139,12 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
@@ -263,8 +269,40 @@
           </node>
         </node>
         <node concept="3clFbH" id="7VkE0BpwcPf" role="3cqZAp" />
+        <node concept="3cpWs8" id="2bw4b0M2WTA" role="3cqZAp">
+          <node concept="3cpWsn" id="2bw4b0M2WTB" role="3cpWs9">
+            <property role="TrG5h" value="panFile" />
+            <node concept="3uibUv" id="2bw4b0M2WT_" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="2bw4b0M2WTC" role="33vP2m">
+              <node concept="1pGfFk" id="2bw4b0M2WTD" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="2bw4b0M2WTE" role="37wK5m">
+                  <ref role="3cqZAo" node="4kcU3Yrkv2h" resolve="panFileFullyQualifiedName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="7VkE0BpuGuC" role="3cqZAp">
           <node concept="3clFbS" id="7VkE0BpuGuE" role="3clFbx">
+            <node concept="RRSsy" id="2bw4b0M2Wzc" role="3cqZAp">
+              <property role="RRSoG" value="error" />
+              <node concept="3cpWs3" id="2bw4b0M2XLU" role="RRSoy">
+                <node concept="2OqwBi" id="2bw4b0M2Y7O" role="3uHU7w">
+                  <node concept="37vLTw" id="2bw4b0M2XNK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bw4b0M2WTB" resolve="panFile" />
+                  </node>
+                  <node concept="liA8E" id="2bw4b0M2ZgZ" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2bw4b0M2Wze" role="3uHU7B">
+                  <property role="Xl_RC" value="pan file does not exist - " />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="69N9a9ZRext" role="3cqZAp">
               <node concept="3cpWsn" id="69N9a9ZRexu" role="3cpWs9">
                 <property role="TrG5h" value="result" />
@@ -321,13 +359,8 @@
           </node>
           <node concept="3fqX7Q" id="7VkE0BpuIQD" role="3clFbw">
             <node concept="2OqwBi" id="7VkE0BpuIQF" role="3fr31v">
-              <node concept="2ShNRf" id="7VkE0BpuIQG" role="2Oq$k0">
-                <node concept="1pGfFk" id="7VkE0BpuIQH" role="2ShVmc">
-                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                  <node concept="37vLTw" id="7VkE0BpuIQI" role="37wK5m">
-                    <ref role="3cqZAo" node="4kcU3Yrkv2h" resolve="panFileFullyQualifiedName" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="2bw4b0M2WTF" role="2Oq$k0">
+                <ref role="3cqZAo" node="2bw4b0M2WTB" resolve="panFile" />
               </node>
               <node concept="liA8E" id="7VkE0BpuIQJ" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
@@ -340,13 +373,8 @@
           <node concept="3clFbS" id="5wKAmZ3RDqs" role="3clFbx">
             <node concept="3clFbF" id="5wKAmZ3RKf5" role="3cqZAp">
               <node concept="2OqwBi" id="5wKAmZ3RMhN" role="3clFbG">
-                <node concept="2ShNRf" id="5wKAmZ3RKf1" role="2Oq$k0">
-                  <node concept="1pGfFk" id="5wKAmZ3RLAC" role="2ShVmc">
-                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                    <node concept="37vLTw" id="5wKAmZ3RLOR" role="37wK5m">
-                      <ref role="3cqZAo" node="4kcU3Yrkv2h" resolve="panFileFullyQualifiedName" />
-                    </node>
-                  </node>
+                <node concept="37vLTw" id="2bw4b0M2WTG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2bw4b0M2WTB" resolve="panFile" />
                 </node>
                 <node concept="liA8E" id="5wKAmZ3RNiC" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~File.setExecutable(boolean):boolean" resolve="setExecutable" />
