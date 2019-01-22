@@ -578,6 +578,77 @@
         </node>
       </node>
     </node>
+    <node concept="3EZMnI" id="3TMofxP5PYQ" role="6VMZX">
+      <node concept="3F0ifn" id="3TMofxP5PYR" role="3EZMnx">
+        <property role="3F0ifm" value="Description:" />
+        <ref role="1k5W1q" to="tpc5:hF4yUZ8" resolve="header" />
+      </node>
+      <node concept="PMmxH" id="3TMofxP5PYS" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:5K$8XMPc9pW" resolve="ShortDescriptionEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="3TMofxP5PYV" role="3EZMnx" />
+      <node concept="3F0ifn" id="3TMofxP5PYW" role="3EZMnx">
+        <property role="3F0ifm" value="Common:" />
+        <ref role="1k5W1q" to="tpc5:hF4yUZ8" resolve="header" />
+      </node>
+      <node concept="3EZMnI" id="3TMofxP5PYX" role="3EZMnx">
+        <node concept="3EZMnI" id="3TMofxP5PYY" role="3EZMnx">
+          <node concept="VPM3Z" id="3TMofxP5PYZ" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="3TMofxP5PZ0" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="3TMofxP5PZ1" role="3EZMnx">
+            <property role="3F0ifm" value="Name" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+          </node>
+          <node concept="3EZMnI" id="3TMofxP5PZ2" role="3EZMnx">
+            <node concept="VPM3Z" id="3TMofxP5PZ3" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="VPXOz" id="3TMofxP5PZ4" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="3F0A7n" id="3TMofxP5PZ5" role="3EZMnx">
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="2iRfu4" id="3TMofxP5PZi" role="2iSdaV" />
+          </node>
+          <node concept="2iRfu4" id="3TMofxP5PZj" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="3TMofxP5SaL" role="3EZMnx">
+          <node concept="VPM3Z" id="3TMofxP5SaM" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="3TMofxP5SaN" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="3TMofxP5SaO" role="3EZMnx">
+            <property role="3F0ifm" value="Monitors Selection Changes" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+          </node>
+          <node concept="3EZMnI" id="3TMofxP5SaP" role="3EZMnx">
+            <node concept="VPM3Z" id="3TMofxP5SaQ" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="VPXOz" id="3TMofxP5SaR" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="2iRfu4" id="3TMofxP5SaT" role="2iSdaV" />
+            <node concept="3F0A7n" id="3TMofxP5SB0" role="3EZMnx">
+              <ref role="1NtTu8" to="k8go:3TMofxP5NCA" resolve="monitorSelectionChange" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="3TMofxP5SaU" role="2iSdaV" />
+        </node>
+        <node concept="2iRkQZ" id="3TMofxP5PZk" role="2iSdaV" />
+        <node concept="VPXOz" id="3TMofxP5PZl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="3TMofxP5PZs" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="3p1cdQ7_qzF">
     <property role="3GE5qa" value="fragments" />

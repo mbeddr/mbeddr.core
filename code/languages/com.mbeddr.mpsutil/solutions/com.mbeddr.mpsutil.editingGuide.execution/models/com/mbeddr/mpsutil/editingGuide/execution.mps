@@ -748,18 +748,40 @@
                             <node concept="3clFbS" id="3$YAQZ4Cwb0" role="1bW5cS">
                               <node concept="2GUZhq" id="3$YAQZ4Cwb1" role="3cqZAp">
                                 <node concept="3clFbS" id="3$YAQZ4Cwb2" role="2GV8ay">
-                                  <node concept="3SKdUt" id="3$YAQZ4Cwb3" role="3cqZAp">
-                                    <node concept="3SKdUq" id="3$YAQZ4Cwb4" role="3SKWNk">
-                                      <property role="3SKdUp" value="reevaluate monitor functions" />
+                                  <node concept="3SKdUt" id="3TMofxP7N_Y" role="3cqZAp">
+                                    <node concept="3SKdUq" id="3TMofxP7NA0" role="3SKWNk">
+                                      <property role="3SKdUp" value="introduced to avoid SECA-749" />
                                     </node>
                                   </node>
-                                  <node concept="3clFbF" id="3$YAQZ4Cwb5" role="3cqZAp">
-                                    <node concept="2OqwBi" id="3$YAQZ4Cwb6" role="3clFbG">
-                                      <node concept="37vLTw" id="3$YAQZ4Cwb7" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
+                                  <node concept="3clFbJ" id="3TMofxP6Jkf" role="3cqZAp">
+                                    <node concept="3clFbS" id="3TMofxP6Jkh" role="3clFbx">
+                                      <node concept="3SKdUt" id="3$YAQZ4Cwb3" role="3cqZAp">
+                                        <node concept="3SKdUq" id="3$YAQZ4Cwb4" role="3SKWNk">
+                                          <property role="3SKdUp" value="reevaluate monitor functions when moving focus if the task wants so" />
+                                        </node>
                                       </node>
-                                      <node concept="liA8E" id="3$YAQZ4Cwb8" role="2OqNvi">
-                                        <ref role="37wK5l" to="exr9:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
+                                      <node concept="3clFbF" id="3$YAQZ4Cwb5" role="3cqZAp">
+                                        <node concept="2OqwBi" id="3$YAQZ4Cwb6" role="3clFbG">
+                                          <node concept="37vLTw" id="3$YAQZ4Cwb7" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
+                                          </node>
+                                          <node concept="liA8E" id="3$YAQZ4Cwb8" role="2OqNvi">
+                                            <ref role="37wK5l" to="exr9:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="2OqwBi" id="3TMofxP6Hxy" role="3clFbw">
+                                      <node concept="2OqwBi" id="3TMofxP6GID" role="2Oq$k0">
+                                        <node concept="37vLTw" id="3TMofxP6Cwx" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="692bXAb5$YE" resolve="mySandboxExercise" />
+                                        </node>
+                                        <node concept="2qgKlT" id="3TMofxP6H2N" role="2OqNvi">
+                                          <ref role="37wK5l" to="l4gp:4TMjSvbG95v" resolve="getCurrentTask" />
+                                        </node>
+                                      </node>
+                                      <node concept="3TrcHB" id="3TMofxP6HWi" role="2OqNvi">
+                                        <ref role="3TsBF5" to="k8go:3TMofxP5NCA" resolve="monitorSelectionChange" />
                                       </node>
                                     </node>
                                   </node>
@@ -1159,7 +1181,7 @@
                   <node concept="2OqwBi" id="3$YAQZ4CioS" role="37wK5m">
                     <node concept="2OqwBi" id="3$YAQZ4Ciey" role="2Oq$k0">
                       <node concept="37vLTw" id="3$YAQZ4Ci7S" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5h2rxDjX6nB" />
+                        <ref role="3cqZAo" node="5h2rxDjX6nB" resolve="myOriginalExercise" />
                       </node>
                       <node concept="I4A8Y" id="3$YAQZ4Cij4" role="2OqNvi" />
                     </node>

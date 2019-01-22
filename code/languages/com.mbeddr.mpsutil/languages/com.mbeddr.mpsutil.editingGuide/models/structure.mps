@@ -65,6 +65,7 @@
   <node concept="1TIwiD" id="3p1cdQ7_d$W">
     <property role="TrG5h" value="Task" />
     <property role="EcuMT" value="3909459679554885948" />
+    <property role="R4oN_" value="A step inside an exercise to teach one particular interaction" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3p1cdQ7_d_S" role="1TKVEl">
       <property role="TrG5h" value="isDone" />
@@ -75,6 +76,11 @@
       <property role="IQ2nx" value="6967774512153192694" />
       <property role="TrG5h" value="resultMessage" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3TMofxP5NCA" role="1TKVEl">
+      <property role="IQ2nx" value="4499765597929159206" />
+      <property role="TrG5h" value="monitorSelectionChange" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="3p1cdQ7_d$Z" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
