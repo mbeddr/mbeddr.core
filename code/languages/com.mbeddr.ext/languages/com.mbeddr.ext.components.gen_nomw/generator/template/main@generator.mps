@@ -22553,21 +22553,6 @@
                       <node concept="1WS0z7" id="7Wp9ngOOZGp" role="lGtFl">
                         <node concept="3JmXsc" id="7Wp9ngOOZGq" role="3Jn$fo">
                           <node concept="3clFbS" id="7Wp9ngOOZGr" role="2VODD2">
-                            <node concept="3cpWs8" id="7Wp9ngQDzUM" role="3cqZAp">
-                              <node concept="3cpWsn" id="7Wp9ngQDzUN" role="3cpWs9">
-                                <property role="TrG5h" value="inputInstance" />
-                                <node concept="3Tqbb2" id="7Wp9ngQDzUO" role="1tU5fm">
-                                  <ref role="ehGHo" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
-                                </node>
-                                <node concept="3GCxxT" id="7Wp9ngQIeFI" role="33vP2m">
-                                  <property role="3GCxxZ" value="instance" />
-                                  <node concept="30H73N" id="7Wp9ngQIfpx" role="3GCxxY" />
-                                  <node concept="chp4Y" id="7Wp9ngQIjLh" role="cj9EA">
-                                    <ref role="cht4Q" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
                             <node concept="3cpWs8" id="7Wp9ngOUuT1" role="3cqZAp">
                               <node concept="3cpWsn" id="7Wp9ngOUuT4" role="3cpWs9">
                                 <property role="TrG5h" value="allProvidedPortAssignments" />
