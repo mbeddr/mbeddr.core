@@ -97,7 +97,9 @@
       </concept>
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -642,7 +644,34 @@
           </node>
           <node concept="2iRfu4" id="3TMofxP5SaU" role="2iSdaV" />
         </node>
-        <node concept="2iRkQZ" id="3TMofxP5PZk" role="2iSdaV" />
+        <node concept="3EZMnI" id="2$nS1pPPx8l" role="3EZMnx">
+          <node concept="VPM3Z" id="2$nS1pPPx8m" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="2$nS1pPPx8n" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="2$nS1pPPx8o" role="3EZMnx">
+            <property role="3F0ifm" value="Next button text" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+          </node>
+          <node concept="3EZMnI" id="2$nS1pPPx8p" role="3EZMnx">
+            <node concept="VPM3Z" id="2$nS1pPPx8q" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="VPXOz" id="2$nS1pPPx8r" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="2iRfu4" id="2$nS1pPPx8s" role="2iSdaV" />
+            <node concept="3F0A7n" id="2$nS1pPPx8t" role="3EZMnx">
+              <property role="1O74Pk" value="true" />
+              <property role="1$x2rV" value="Skip / Continue / Open Next Exercise" />
+              <ref role="1NtTu8" to="k8go:2$nS1pPOwKO" resolve="nextButtonText" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="2$nS1pPPx8u" role="2iSdaV" />
+        </node>
+        <node concept="2EHx9g" id="2$nS1pPPx6Y" role="2iSdaV" />
         <node concept="VPXOz" id="3TMofxP5PZl" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

@@ -82,6 +82,11 @@
       <property role="TrG5h" value="monitorSelectionChange" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="2$nS1pPOwKO" role="1TKVEl">
+      <property role="IQ2nx" value="2961081667089992756" />
+      <property role="TrG5h" value="nextButtonText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="3p1cdQ7_d$Z" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="description" />
