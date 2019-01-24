@@ -9,6 +9,8 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
   </languages>
   <imports>
     <import index="8e9v" ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" />
@@ -358,6 +360,12 @@
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -8286,6 +8294,22 @@
                 </node>
               </node>
             </node>
+            <node concept="RRSsy" id="J0Nj4zUrcJ" role="3cqZAp">
+              <property role="RRSoG" value="error" />
+              <node concept="3cpWs3" id="J0Nj4zUuaq" role="RRSoy">
+                <node concept="2OqwBi" id="J0Nj4zUuIQ" role="3uHU7w">
+                  <node concept="37vLTw" id="J0Nj4zUumY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2UdJgvD2knf" resolve="inputFile" />
+                  </node>
+                  <node concept="liA8E" id="J0Nj4zUvna" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="J0Nj4zUrcL" role="3uHU7B">
+                  <property role="Xl_RC" value="trying to read results and file does not exist: " />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="2Ra3lN_bpv4" role="3cqZAp">
               <node concept="2ShNRf" id="2gZjCUSsCnf" role="3cqZAk">
                 <node concept="2Jqq0_" id="2gZjCUSsRke" role="2ShVmc">
@@ -8294,15 +8318,12 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="2Ra3lN_bkvg" role="3clFbw">
-            <node concept="3clFbT" id="2Ra3lN_blBV" role="3uHU7w">
-              <property role="3clFbU" value="false" />
-            </node>
-            <node concept="2OqwBi" id="2Ra3lN_bePh" role="3uHU7B">
-              <node concept="37vLTw" id="2Ra3lN_bexv" role="2Oq$k0">
+          <node concept="3fqX7Q" id="J0Nj4zUrMv" role="3clFbw">
+            <node concept="2OqwBi" id="J0Nj4zUrMx" role="3fr31v">
+              <node concept="37vLTw" id="J0Nj4zUrMy" role="2Oq$k0">
                 <ref role="3cqZAo" node="2UdJgvD2knf" resolve="inputFile" />
               </node>
-              <node concept="liA8E" id="2Ra3lN_bjc9" role="2OqNvi">
+              <node concept="liA8E" id="J0Nj4zUrMz" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
               </node>
             </node>
@@ -9204,8 +9225,8 @@
               <node concept="37vLTw" id="3_HSwtcXtSg" role="2Oq$k0">
                 <ref role="3cqZAo" node="7F8$WoW31Wz" resolve="config" />
               </node>
-              <node concept="2S8uIT" id="3_HSwtcXuqo" role="2OqNvi">
-                <ref role="2S8YL0" node="4Org$tqUG7p" resolve="shouldLoadSavedResults" />
+              <node concept="2S8uIT" id="J0Nj4zVlEQ" role="2OqNvi">
+                <ref role="2S8YL0" node="4Org$toxm21" resolve="isPersistableAnalysis" />
               </node>
             </node>
           </node>
