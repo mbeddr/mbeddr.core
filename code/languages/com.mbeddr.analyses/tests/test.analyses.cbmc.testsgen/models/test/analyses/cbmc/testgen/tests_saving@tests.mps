@@ -1726,6 +1726,428 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="J0Nj4zYVaF" role="1SL9yI">
+      <property role="TrG5h" value="testEnv12_enums_simple" />
+      <node concept="3cqZAl" id="J0Nj4zYVaG" role="3clF45" />
+      <node concept="3clFbS" id="J0Nj4zYVaH" role="3clF47">
+        <node concept="3cpWs8" id="J0Nj4zYVaI" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4zYVaJ" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="J0Nj4zYVaK" role="1tU5fm" />
+            <node concept="BaHAS" id="J0Nj4zYVaL" role="33vP2m">
+              <property role="BaHAW" value="test.analyses.cbmc.testgen.testcode.tests_saving" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="gsw" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="J0Nj4zYVaM" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4zYVaN" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="_YKpA" id="J0Nj4zYVaO" role="1tU5fm">
+              <node concept="3uibUv" id="J0Nj4zYVaP" role="_ZDj9">
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="J0Nj4zYVaQ" role="33vP2m">
+              <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <ref role="37wK5l" to="pyil:7yN$Xh8otP7" resolve="testsgenBranch" />
+              <node concept="37vLTw" id="J0Nj4zYVaR" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4zYVaJ" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4zYVaS" role="37wK5m">
+                <property role="Xl_RC" value="env12_enums_simple" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4zYVaT" role="37wK5m">
+                <property role="Xl_RC" value="testEnv12_enums_simple" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="J0Nj4zYVaU" role="3cqZAp">
+          <node concept="2YIFZM" id="J0Nj4zYVaV" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="J0Nj4zYVaW" role="37wK5m">
+              <ref role="3cqZAo" node="J0Nj4zYVaN" resolve="results" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4zYVaX" role="3cqZAp" />
+        <node concept="3cpWs8" id="J0Nj4zYVaY" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4zYVaZ" role="3cpWs9">
+            <property role="TrG5h" value="fun" />
+            <node concept="3Tqbb2" id="J0Nj4zYVb0" role="1tU5fm">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4zYVb1" role="33vP2m">
+              <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <ref role="37wK5l" to="pyil:73BQep1R4aE" resolve="testFunction" />
+              <node concept="37vLTw" id="J0Nj4zYVb2" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4zYVaJ" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4zYVb3" role="37wK5m">
+                <property role="Xl_RC" value="env12_enums_simple" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4zYVb4" role="37wK5m">
+                <property role="Xl_RC" value="testEnv12_enums_simple" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="J0Nj4zYVb5" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4zYVb6" role="3cpWs9">
+            <property role="TrG5h" value="r0" />
+            <node concept="3uibUv" id="J0Nj4zYVb7" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4zYVb8" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="J0Nj4zYVb9" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4zYVaN" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4zYVba" role="37wK5m">
+                <property role="Xl_RC" value="function env12_enums_simple_simpleBranch block 1 branch false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="J0Nj4zYVbb" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4zYVbc" role="3cpWs9">
+            <property role="TrG5h" value="synthethisedVector" />
+            <node concept="3Tqbb2" id="J0Nj4zYVbd" role="1tU5fm">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4zYVbe" role="33vP2m">
+              <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <ref role="37wK5l" to="pyil:73BQep1QQ3x" resolve="synthethisedVector" />
+              <node concept="37vLTw" id="J0Nj4zYVbf" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4zYVb6" resolve="r0" />
+              </node>
+              <node concept="37vLTw" id="J0Nj4zYVbg" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4zYVaZ" resolve="fun" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4zYVbh" role="3cqZAp" />
+        <node concept="3clFbF" id="J0Nj4zYVbi" role="3cqZAp">
+          <node concept="2YIFZM" id="J0Nj4zYVbj" role="3clFbG">
+            <ref role="37wK5l" to="pyil:73BQep1UGHp" resolve="prettyPrintSynthethisedVector" />
+            <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+            <node concept="37vLTw" id="J0Nj4zYVbk" role="37wK5m">
+              <ref role="3cqZAo" node="J0Nj4zYVbc" resolve="synthethisedVector" />
+            </node>
+          </node>
+        </node>
+        <node concept="L1MeC" id="J0Nj4zYVbl" role="3cqZAp">
+          <ref role="L3x8Z" node="J0Nj4zYVbc" resolve="synthethisedVector" />
+          <node concept="L1FwG" id="J0Nj4zYVbm" role="L1FwL">
+            <property role="L1FwH" value="anEnumVariable = SECOND" />
+          </node>
+          <node concept="L1FwG" id="J0Nj4zYVbp" role="L1FwL">
+            <property role="L1FwH" value="simpleBranch(anEnumVariable)" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4zZLOg" role="3cqZAp" />
+        <node concept="3cpWs8" id="J0Nj4zZLXY" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4zZLXZ" role="3cpWs9">
+            <property role="TrG5h" value="r1" />
+            <node concept="3uibUv" id="J0Nj4zZLY0" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4zZLY1" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="J0Nj4zZLY2" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4zYVaN" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4zZLY3" role="37wK5m">
+                <property role="Xl_RC" value="function env12_enums_simple_simpleBranch block 1 branch true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="J0Nj4zZLY4" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4zZLY5" role="3cpWs9">
+            <property role="TrG5h" value="synthethisedVector1" />
+            <node concept="3Tqbb2" id="J0Nj4zZLY6" role="1tU5fm">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4zZLY7" role="33vP2m">
+              <ref role="37wK5l" to="pyil:73BQep1QQ3x" resolve="synthethisedVector" />
+              <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <node concept="37vLTw" id="J0Nj4zZLY8" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4zZLXZ" resolve="r1" />
+              </node>
+              <node concept="37vLTw" id="J0Nj4zZLY9" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4zYVaZ" resolve="fun" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4zZLYa" role="3cqZAp" />
+        <node concept="3clFbF" id="J0Nj4zZLYb" role="3cqZAp">
+          <node concept="2YIFZM" id="J0Nj4zZLYc" role="3clFbG">
+            <ref role="37wK5l" to="pyil:73BQep1UGHp" resolve="prettyPrintSynthethisedVector" />
+            <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+            <node concept="37vLTw" id="J0Nj4zZLYd" role="37wK5m">
+              <ref role="3cqZAo" node="J0Nj4zZLY5" resolve="synthethisedVector1" />
+            </node>
+          </node>
+        </node>
+        <node concept="L1MeC" id="J0Nj4zZLYe" role="3cqZAp">
+          <ref role="L3x8Z" node="J0Nj4zZLY5" resolve="synthethisedVector1" />
+          <node concept="L1FwG" id="J0Nj4zZLYf" role="L1FwL">
+            <property role="L1FwH" value="anEnumVariable = FIRST" />
+          </node>
+          <node concept="L1FwG" id="J0Nj4zZLYg" role="L1FwL">
+            <property role="L1FwH" value="simpleBranch(anEnumVariable)" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4zZLRC" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="1LZb2c" id="J0Nj4$02rQ" role="1SL9yI">
+      <property role="TrG5h" value="testEnv12_enums_user_defined" />
+      <node concept="3cqZAl" id="J0Nj4$02rR" role="3clF45" />
+      <node concept="3clFbS" id="J0Nj4$02rS" role="3clF47">
+        <node concept="3cpWs8" id="J0Nj4$02rT" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4$02rU" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="J0Nj4$02rV" role="1tU5fm" />
+            <node concept="BaHAS" id="J0Nj4$02rW" role="33vP2m">
+              <property role="BaHAW" value="test.analyses.cbmc.testgen.testcode.tests_saving" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="gsw" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="J0Nj4$02rX" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4$02rY" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="_YKpA" id="J0Nj4$02rZ" role="1tU5fm">
+              <node concept="3uibUv" id="J0Nj4$02s0" role="_ZDj9">
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="J0Nj4$02s1" role="33vP2m">
+              <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <ref role="37wK5l" to="pyil:7yN$Xh8otP7" resolve="testsgenBranch" />
+              <node concept="37vLTw" id="J0Nj4$02s2" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$02rU" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4$02s3" role="37wK5m">
+                <property role="Xl_RC" value="env12_enums_user_defined" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4$02s4" role="37wK5m">
+                <property role="Xl_RC" value="testEnv12_enums_user_defined" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="J0Nj4$02s5" role="3cqZAp">
+          <node concept="2YIFZM" id="J0Nj4$02s6" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="J0Nj4$02s7" role="37wK5m">
+              <ref role="3cqZAo" node="J0Nj4$02rY" resolve="results" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4$02s8" role="3cqZAp" />
+        <node concept="3cpWs8" id="J0Nj4$02s9" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4$02sa" role="3cpWs9">
+            <property role="TrG5h" value="fun" />
+            <node concept="3Tqbb2" id="J0Nj4$02sb" role="1tU5fm">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4$02sc" role="33vP2m">
+              <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <ref role="37wK5l" to="pyil:73BQep1R4aE" resolve="testFunction" />
+              <node concept="37vLTw" id="J0Nj4$02sd" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$02rU" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4$02se" role="37wK5m">
+                <property role="Xl_RC" value="env12_enums_user_defined" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4$02sf" role="37wK5m">
+                <property role="Xl_RC" value="testEnv12_enums_user_defined" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="J0Nj4$02sg" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4$02sh" role="3cpWs9">
+            <property role="TrG5h" value="r0" />
+            <node concept="3uibUv" id="J0Nj4$02si" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4$02sj" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="J0Nj4$02sk" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$02rY" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4$02sl" role="37wK5m">
+                <property role="Xl_RC" value="function env12_enums_user_defined_simpleBranch block 1 branch false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="J0Nj4$02sm" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4$02sn" role="3cpWs9">
+            <property role="TrG5h" value="synthethisedVector" />
+            <node concept="3Tqbb2" id="J0Nj4$02so" role="1tU5fm">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4$02sp" role="33vP2m">
+              <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <ref role="37wK5l" to="pyil:73BQep1QQ3x" resolve="synthethisedVector" />
+              <node concept="37vLTw" id="J0Nj4$02sq" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$02sh" resolve="r0" />
+              </node>
+              <node concept="37vLTw" id="J0Nj4$02sr" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$02sa" resolve="fun" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4$02ss" role="3cqZAp" />
+        <node concept="3clFbF" id="J0Nj4$02st" role="3cqZAp">
+          <node concept="2YIFZM" id="J0Nj4$02su" role="3clFbG">
+            <ref role="37wK5l" to="pyil:73BQep1UGHp" resolve="prettyPrintSynthethisedVector" />
+            <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+            <node concept="37vLTw" id="J0Nj4$02sv" role="37wK5m">
+              <ref role="3cqZAo" node="J0Nj4$02sn" resolve="synthethisedVector" />
+            </node>
+          </node>
+        </node>
+        <node concept="L1MeC" id="J0Nj4$02sw" role="3cqZAp">
+          <ref role="L3x8Z" node="J0Nj4$02sn" resolve="synthethisedVector" />
+          <node concept="L1FwG" id="J0Nj4$02sx" role="L1FwL">
+            <property role="L1FwH" value="anEnumVariable = TEN" />
+          </node>
+          <node concept="L1FwG" id="J0Nj4$02sy" role="L1FwL">
+            <property role="L1FwH" value="simpleBranch(anEnumVariable)" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4$02sz" role="3cqZAp" />
+        <node concept="3cpWs8" id="J0Nj4$02s$" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4$02s_" role="3cpWs9">
+            <property role="TrG5h" value="r1" />
+            <node concept="3uibUv" id="J0Nj4$02sA" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4$02sB" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="J0Nj4$02sC" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$02rY" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4$02sD" role="37wK5m">
+                <property role="Xl_RC" value="function env12_enums_user_defined_simpleBranch block 3 branch false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="J0Nj4$02sE" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4$02sF" role="3cpWs9">
+            <property role="TrG5h" value="synthethisedVector1" />
+            <node concept="3Tqbb2" id="J0Nj4$02sG" role="1tU5fm">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4$02sH" role="33vP2m">
+              <ref role="37wK5l" to="pyil:73BQep1QQ3x" resolve="synthethisedVector" />
+              <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <node concept="37vLTw" id="J0Nj4$02sI" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$02s_" resolve="r1" />
+              </node>
+              <node concept="37vLTw" id="J0Nj4$02sJ" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$02sa" resolve="fun" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4$02sK" role="3cqZAp" />
+        <node concept="3clFbF" id="J0Nj4$02sL" role="3cqZAp">
+          <node concept="2YIFZM" id="J0Nj4$02sM" role="3clFbG">
+            <ref role="37wK5l" to="pyil:73BQep1UGHp" resolve="prettyPrintSynthethisedVector" />
+            <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+            <node concept="37vLTw" id="J0Nj4$02sN" role="37wK5m">
+              <ref role="3cqZAo" node="J0Nj4$02sF" resolve="synthethisedVector1" />
+            </node>
+          </node>
+        </node>
+        <node concept="L1MeC" id="J0Nj4$02sO" role="3cqZAp">
+          <ref role="L3x8Z" node="J0Nj4$02sF" resolve="synthethisedVector1" />
+          <node concept="L1FwG" id="J0Nj4$02sP" role="L1FwL">
+            <property role="L1FwH" value="anEnumVariable = ELEVEN" />
+          </node>
+          <node concept="L1FwG" id="J0Nj4$02sQ" role="L1FwL">
+            <property role="L1FwH" value="simpleBranch(anEnumVariable)" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4$02sR" role="3cqZAp" />
+        <node concept="3cpWs8" id="J0Nj4$0FMS" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4$0FMT" role="3cpWs9">
+            <property role="TrG5h" value="r2" />
+            <node concept="3uibUv" id="J0Nj4$0FMU" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4$0FMV" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="J0Nj4$0FMW" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$02rY" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="J0Nj4$0FMX" role="37wK5m">
+                <property role="Xl_RC" value="function env12_enums_user_defined_simpleBranch block 5 branch false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="J0Nj4$0FMY" role="3cqZAp">
+          <node concept="3cpWsn" id="J0Nj4$0FMZ" role="3cpWs9">
+            <property role="TrG5h" value="synthethisedVector2" />
+            <node concept="3Tqbb2" id="J0Nj4$0FN0" role="1tU5fm">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+            <node concept="NRdvd" id="J0Nj4$0FN1" role="33vP2m">
+              <ref role="37wK5l" to="pyil:73BQep1QQ3x" resolve="synthethisedVector" />
+              <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <node concept="37vLTw" id="J0Nj4$0FN2" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$0FMT" resolve="r2" />
+              </node>
+              <node concept="37vLTw" id="J0Nj4$0FN3" role="37wK5m">
+                <ref role="3cqZAo" node="J0Nj4$02sa" resolve="fun" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4$0FN4" role="3cqZAp" />
+        <node concept="3clFbF" id="J0Nj4$0FN5" role="3cqZAp">
+          <node concept="2YIFZM" id="J0Nj4$0FN6" role="3clFbG">
+            <ref role="37wK5l" to="pyil:73BQep1UGHp" resolve="prettyPrintSynthethisedVector" />
+            <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+            <node concept="37vLTw" id="J0Nj4$0FN7" role="37wK5m">
+              <ref role="3cqZAo" node="J0Nj4$0FMZ" resolve="synthethisedVector2" />
+            </node>
+          </node>
+        </node>
+        <node concept="L1MeC" id="J0Nj4$0FN8" role="3cqZAp">
+          <ref role="L3x8Z" node="J0Nj4$0FMZ" resolve="synthethisedVector2" />
+          <node concept="L1FwG" id="J0Nj4$0FN9" role="L1FwL">
+            <property role="L1FwH" value="anEnumVariable = FOURTY_TWO" />
+          </node>
+          <node concept="L1FwG" id="J0Nj4$0FNa" role="L1FwL">
+            <property role="L1FwH" value="simpleBranch(anEnumVariable)" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="J0Nj4$0FDS" role="3cqZAp" />
+      </node>
+    </node>
   </node>
   <node concept="2XOHcx" id="1f0gqNzAccm">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
