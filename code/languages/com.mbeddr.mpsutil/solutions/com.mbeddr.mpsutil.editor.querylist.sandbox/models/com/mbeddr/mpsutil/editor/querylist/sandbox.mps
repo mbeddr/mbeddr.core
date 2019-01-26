@@ -2,13 +2,16 @@
 <model ref="c58b797b-c53c-4442-abff-4d54c72169ea/r:5f236bd8-eb21-40b6-825a-9e614ca27175(com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="9b71d0db-bcaf-4144-bb2e-1ddef2b249b9" name="com.mbeddr.mpsutil.editor.querylist.demolang" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="9b71d0db-bcaf-4144-bb2e-1ddef2b249b9" name="com.mbeddr.mpsutil.editor.querylist.demolang" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -65,19 +68,23 @@
         <child id="393429538060968385" name="statement" index="2hc9Zl" />
       </concept>
       <concept id="6202678563380435581" name="com.mbeddr.mpsutil.editor.querylist.demolang.structure.RootConcept" flags="ng" index="sbcOR">
-        <property id="6202678563380449077" name="showExpressions" index="sb9xZ" />
         <property id="4299801941279353937" name="myProperty" index="2DP_H4" />
         <property id="1646868633684830515" name="showQueryLink" index="3CnFdS" />
         <reference id="1646868633684300706" name="classReference" index="3CDCBD" />
         <child id="393429538060968390" name="statementWrappers" index="2hc9Zi" />
         <child id="6202678563380435709" name="statementList" index="sbcQR" />
       </concept>
+      <concept id="1952741127689452125" name="com.mbeddr.mpsutil.editor.querylist.demolang.structure.RootWithChildren" flags="ng" index="2X83RC">
+        <child id="1952741127689452126" name="names1" index="2X83RF" />
+        <child id="1952741127690160050" name="names3" index="2Xng07" />
+        <child id="1952741127690160057" name="names4" index="2Xng0c" />
+        <child id="1952741127690160045" name="names2" index="2Xng0o" />
+      </concept>
     </language>
   </registry>
   <node concept="sbcOR" id="1BXECvJSpQ4">
     <property role="2DP_H4" value="sdfa" />
     <property role="3CnFdS" value="true" />
-    <property role="sb9xZ" value="true" />
     <ref role="3CDCBD" node="puVMIbwTIw" resolve="Othesdfgfhjhass" />
     <node concept="3clFbS" id="1BXECvJSX8B" role="sbcQR">
       <node concept="3clFbH" id="3jHPIDn8JV$" role="3cqZAp" />
@@ -241,6 +248,58 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="puVMIbwTIx" role="1B3o_S" />
+  </node>
+  <node concept="2X83RC" id="1GpxVmAg3nl">
+    <node concept="Xl_RD" id="1GpxVmAt5pV" role="2Xng07" />
+    <node concept="Xl_RD" id="1GpxVmAsSOB" role="2X83RF" />
+    <node concept="Xl_RD" id="1GpxVmAiooR" role="2Xng0o">
+      <property role="Xl_RC" value="Apfel" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAiooS" role="2Xng0o">
+      <property role="Xl_RC" value="Birne" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAiooT" role="2Xng0o">
+      <property role="Xl_RC" value="Christbaum" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAiooU" role="2Xng0o">
+      <property role="Xl_RC" value="Domino" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj504" role="2X83RF">
+      <property role="Xl_RC" value="Apfel" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj505" role="2X83RF">
+      <property role="Xl_RC" value="Birne" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj506" role="2X83RF">
+      <property role="Xl_RC" value="Christbaum" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj507" role="2X83RF">
+      <property role="Xl_RC" value="Domino" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj508" role="2Xng07">
+      <property role="Xl_RC" value="Apfel" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj509" role="2Xng07">
+      <property role="Xl_RC" value="Birne" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj50a" role="2Xng07">
+      <property role="Xl_RC" value="Christbaum" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj50b" role="2Xng07">
+      <property role="Xl_RC" value="Domino" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj50c" role="2Xng0c">
+      <property role="Xl_RC" value="Apfel" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj50d" role="2Xng0c">
+      <property role="Xl_RC" value="Birne" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj50e" role="2Xng0c">
+      <property role="Xl_RC" value="Christbaum" />
+    </node>
+    <node concept="Xl_RD" id="1GpxVmAj50f" role="2Xng0c">
+      <property role="Xl_RC" value="Domino" />
+    </node>
   </node>
 </model>
 

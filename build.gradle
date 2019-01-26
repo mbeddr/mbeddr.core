@@ -5,7 +5,7 @@ ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/
 
 //MPS versions
 ext.mpsMajor = "2018.3"
-ext.mpsBuild = "2018.3"
+ext.mpsBuild = "2018.3.2"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
@@ -66,8 +66,8 @@ subprojects {
             ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
             println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
         } else {
-            println "Local build detected. Build will be a SNAPSHOT."
-            ext.mbeddrBuildNumber = "1.0-SNAPSHOT"
+            ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
+            println "Local build detected. Build will have version $ext.mbeddrBuildNumber"
         }
     }
 }
