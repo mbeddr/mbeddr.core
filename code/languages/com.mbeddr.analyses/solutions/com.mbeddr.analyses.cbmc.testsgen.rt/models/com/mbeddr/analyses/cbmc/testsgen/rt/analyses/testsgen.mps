@@ -2227,7 +2227,7 @@
       <node concept="3Tm6S6" id="7zHn0fLALk6" role="1B3o_S" />
       <node concept="17QB3L" id="7zHn0fLALro" role="1tU5fm" />
       <node concept="Xl_RD" id="7zHn0fLALxO" role="33vP2m">
-        <property role="Xl_RC" value="$pad0" />
+        <property role="Xl_RC" value=".$pad" />
       </node>
     </node>
     <node concept="2tJIrI" id="7zHn0fLALFg" role="jymVt" />
@@ -2239,7 +2239,7 @@
       <node concept="3clFbS" id="7zHn0fLABTT" role="3clF47">
         <node concept="3SKdUt" id="7zHn0fLBffo" role="3cqZAp">
           <node concept="3SKdUq" id="7zHn0fLBffq" role="3SKWNk">
-            <property role="3SKdUp" value="deal with cases when the input is &quot;structVarName.$pad0&quot;" />
+            <property role="3SKdUp" value="deal with cases when the input is e.g. &quot;structVarName.$pad0&quot;, &quot;structVarName.$pad1&quot;" />
           </node>
         </node>
         <node concept="3cpWs6" id="7zHn0fLAJq8" role="3cqZAp">
@@ -2248,7 +2248,7 @@
               <ref role="3cqZAo" node="7zHn0fLABYf" resolve="inputName" />
             </node>
             <node concept="liA8E" id="7zHn0fLAKN1" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
               <node concept="37vLTw" id="7zHn0fLALP6" role="37wK5m">
                 <ref role="3cqZAo" node="7zHn0fLALry" resolve="STRUCTURE_PADDING_VARIABLE_NAME" />
               </node>
