@@ -154,6 +154,13 @@
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
+      <concept id="5571169721036828248" name="com.mbeddr.core.embedded.structure.StructuredRegister" flags="ng" index="10BMG0">
+        <property id="5571169721036836232" name="enableLowHighAccess" index="10wczg" />
+        <property id="5571169721036836227" name="highSuffix" index="10wczr" />
+        <property id="5571169721036836229" name="lowSuffix" index="10wczt" />
+        <child id="5571169721036836244" name="lowSetExpr" index="10wczc" />
+        <child id="5571169721036836246" name="highSetExpr" index="10wcze" />
+      </concept>
       <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.DefaultInterruptKind" flags="ng" index="3_UBHe" />
       <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
         <child id="9172009453269286214" name="kind" index="3_UBH6" />
@@ -163,15 +170,9 @@
       </concept>
       <concept id="6847490852669234137" name="com.mbeddr.core.embedded.structure.RegisterValueExpression" flags="ng" index="3V4jtZ" />
       <concept id="6847490852669163170" name="com.mbeddr.core.embedded.structure.Register" flags="ng" index="3V4yC4">
-        <child id="6847490852669163176" name="setterExpression" index="3V4yCe" />
+        <child id="6847490852669163176" name="setExpression" index="3V4yCe" />
       </concept>
-      <concept id="6847490852669177902" name="com.mbeddr.core.embedded.structure.Register16" flags="ng" index="3V4AM8">
-        <property id="6847490852669177906" name="lowSuffix" index="3V4AMk" />
-        <property id="6847490852669177907" name="allowCharAccess" index="3V4AMl" />
-        <property id="6847490852669177905" name="highSuffix" index="3V4AMn" />
-        <child id="6847490852669177903" name="lowSetterExpr" index="3V4AM9" />
-        <child id="6847490852669177904" name="highSetterExpr" index="3V4AMm" />
-      </concept>
+      <concept id="6847490852669177902" name="com.mbeddr.core.embedded.structure.Register16" flags="ng" index="3V4AM8" />
       <concept id="6847490852669209720" name="com.mbeddr.core.embedded.structure.Register8" flags="ng" index="3V4D3u" />
       <concept id="6847490852670653132" name="com.mbeddr.core.embedded.structure.EmulatedRegisterKind" flags="ng" index="3VbeTE" />
     </language>
@@ -959,23 +960,23 @@
     <property role="TrG5h" value="Registers1" />
     <node concept="3V4AM8" id="7uAyNpABc6k" role="N3F5h">
       <property role="2OOxQR" value="true" />
-      <property role="3V4AMl" value="true" />
       <property role="TrG5h" value="reg16" />
-      <property role="3V4AMk" value="l" />
-      <property role="3V4AMn" value="h" />
+      <property role="10wczt" value="l" />
+      <property role="10wczr" value="h" />
+      <property role="10wczg" value="true" />
       <node concept="2BOciq" id="7uAyNpABc_k" role="3V4yCe">
         <node concept="3TlMh9" id="7uAyNpABc_n" role="3TlMhJ">
           <property role="2hmy$m" value="10" />
         </node>
         <node concept="3V4jtZ" id="7uAyNpABc6l" role="3TlMhI" />
       </node>
-      <node concept="2BOcij" id="7uAyNpABcbJ" role="3V4AM9">
+      <node concept="2BOcij" id="7uAyNpABcbJ" role="10wczc">
         <node concept="3TlMh9" id="7uAyNpABcbM" role="3TlMhJ">
           <property role="2hmy$m" value="2" />
         </node>
         <node concept="3V4jtZ" id="7uAyNpABcaO" role="3TlMhI" />
       </node>
-      <node concept="2BOciq" id="7uAyNpABcoJ" role="3V4AMm">
+      <node concept="2BOciq" id="7uAyNpABcoJ" role="10wcze">
         <node concept="3TlMh9" id="7uAyNpABcoM" role="3TlMhJ">
           <property role="2hmy$m" value="2" />
         </node>
