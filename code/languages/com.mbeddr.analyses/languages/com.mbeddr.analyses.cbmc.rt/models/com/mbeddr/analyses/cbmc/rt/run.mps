@@ -84,6 +84,9 @@
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
+      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
+        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -854,7 +857,19 @@
   <node concept="312cEu" id="tGR6edUFtE">
     <property role="TrG5h" value="CBMCAnalysisConfig" />
     <node concept="3Tm1VV" id="tGR6edUFtF" role="1B3o_S" />
-    <node concept="2tJIrI" id="4_Ba8HNQdjo" role="jymVt" />
+    <node concept="2tJIrI" id="2NB$h7SAqOr" role="jymVt" />
+    <node concept="Wx3nA" id="2NB$h7SAoch" role="jymVt">
+      <property role="TrG5h" value="DEFAULT_OBJECT_BITS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="10Oyi0" id="2NB$h7SAlY9" role="1tU5fm" />
+      <node concept="3Tm1VV" id="2NB$h7SAAr0" role="1B3o_S" />
+      <node concept="3cmrfG" id="2NB$h7SAlYa" role="33vP2m">
+        <property role="3cmrfH" value="8" />
+      </node>
+      <node concept="NWlO9" id="2NB$h7SAtAv" role="lGtFl">
+        <property role="NWlVz" value="Default value of CBMC for --object-bits." />
+      </node>
+    </node>
     <node concept="2tJIrI" id="2yU6qg8t_HV" role="jymVt" />
     <node concept="Wx3nA" id="5zmbZKqW0FB" role="jymVt">
       <property role="TrG5h" value="IGNORE_ANALYSIS_DEPTH" />
@@ -1205,7 +1220,18 @@
       </node>
       <node concept="10P_77" id="NfDeW0PtHH" role="2RkE6I" />
     </node>
-    <node concept="2tJIrI" id="6DRvbEFTxdn" role="jymVt" />
+    <node concept="2RhdJD" id="2NB$h7SA50R" role="jymVt">
+      <property role="2RkwnN" value="objectBits" />
+      <node concept="3Tm1VV" id="2NB$h7SA50S" role="1B3o_S" />
+      <node concept="2RoN1w" id="2NB$h7SA50T" role="2RnVtd">
+        <node concept="3wEZqW" id="2NB$h7SA50U" role="3wFrgM" />
+        <node concept="3xqBd$" id="2NB$h7SA50V" role="3xrYvX">
+          <node concept="3Tm1VV" id="2NB$h7SAWtC" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="10Oyi0" id="2NB$h7SA7aQ" role="2RkE6I" />
+    </node>
+    <node concept="2tJIrI" id="2NB$h7SA2ZB" role="jymVt" />
     <node concept="2RhdJD" id="5VnXdFkshr7" role="jymVt">
       <property role="2RkwnN" value="externalFiles" />
       <node concept="3Tm1VV" id="5VnXdFkshr8" role="1B3o_S" />
@@ -1480,6 +1506,16 @@
             </node>
             <node concept="338YkY" id="NfDeW0PvO4" role="37vLTJ">
               <ref role="338YkT" node="NfDeW0PsIr" resolve="useRefinement" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2NB$h7SA9o_" role="3cqZAp">
+          <node concept="37vLTI" id="2NB$h7SAawI" role="3clFbG">
+            <node concept="37vLTw" id="2NB$h7SAty_" role="37vLTx">
+              <ref role="3cqZAo" node="2NB$h7SAoch" resolve="DEFAULT_OBJECT_BITS" />
+            </node>
+            <node concept="338YkY" id="2NB$h7SA9oz" role="37vLTJ">
+              <ref role="338YkT" node="2NB$h7SA50R" resolve="objectBits" />
             </node>
           </node>
         </node>
@@ -2442,6 +2478,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2NB$h7SAcD3" role="3cqZAp">
+          <node concept="37vLTI" id="2NB$h7SAfnU" role="3clFbG">
+            <node concept="338YkY" id="2NB$h7SAfHk" role="37vLTx">
+              <ref role="338YkT" node="2NB$h7SA50R" resolve="objectBits" />
+            </node>
+            <node concept="2OqwBi" id="2NB$h7SAef2" role="37vLTJ">
+              <node concept="37vLTw" id="2NB$h7SAcD1" role="2Oq$k0">
+                <ref role="3cqZAo" node="4_Ba8HNNIOG" resolve="res" />
+              </node>
+              <node concept="2S8uIT" id="2NB$h7SAeFn" role="2OqNvi">
+                <ref role="2S8YL0" node="2NB$h7SA50R" resolve="objectBits" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4_Ba8HNPjOk" role="3cqZAp">
           <node concept="37vLTI" id="4_Ba8HNPp46" role="3clFbG">
             <node concept="338YkY" id="4_Ba8HNPphM" role="37vLTx">
@@ -2655,7 +2706,7 @@
               <node concept="1Rwk04" id="4_Ba8HNRsUn" role="2OqNvi" />
             </node>
             <node concept="3cmrfG" id="NfDeW0RLaa" role="3uHU7w">
-              <property role="3cmrfH" value="43" />
+              <property role="3cmrfH" value="45" />
             </node>
           </node>
         </node>
@@ -5702,6 +5753,57 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbJ" id="2NB$h7SAkbx" role="3cqZAp">
+                <node concept="3clFbS" id="2NB$h7SAkby" role="3clFbx">
+                  <node concept="3clFbF" id="2NB$h7SAkbz" role="3cqZAp">
+                    <node concept="2OqwBi" id="2NB$h7SAkb$" role="3clFbG">
+                      <node concept="37vLTw" id="2NB$h7SAkb_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                      </node>
+                      <node concept="TSZUe" id="2NB$h7SAkbA" role="2OqNvi">
+                        <node concept="Xl_RD" id="2NB$h7SAkbB" role="25WWJ7">
+                          <property role="Xl_RC" value="--object-bits" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="2NB$h7SABWW" role="3cqZAp">
+                    <node concept="2OqwBi" id="2NB$h7SABWX" role="3clFbG">
+                      <node concept="37vLTw" id="2NB$h7SABWY" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                      </node>
+                      <node concept="TSZUe" id="2NB$h7SABWZ" role="2OqNvi">
+                        <node concept="2YIFZM" id="2NB$h7SACsi" role="25WWJ7">
+                          <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                          <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                          <node concept="2OqwBi" id="2NB$h7SACyj" role="37wK5m">
+                            <node concept="37vLTw" id="2NB$h7SACyk" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2UdJgvCXO1M" resolve="configuration" />
+                            </node>
+                            <node concept="2S8uIT" id="2NB$h7SACyl" role="2OqNvi">
+                              <ref role="2S8YL0" node="2NB$h7SA50R" resolve="objectBits" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="2NB$h7SA_FN" role="3clFbw">
+                  <node concept="10M0yZ" id="2NB$h7SAB_o" role="3uHU7w">
+                    <ref role="3cqZAo" node="2NB$h7SAoch" resolve="DEFAULT_OBJECT_BITS" />
+                    <ref role="1PxDUh" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
+                  </node>
+                  <node concept="2OqwBi" id="2NB$h7SAkbC" role="3uHU7B">
+                    <node concept="37vLTw" id="2NB$h7SAkbD" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2UdJgvCXO1M" resolve="configuration" />
+                    </node>
+                    <node concept="2S8uIT" id="2NB$h7SA$Tt" role="2OqNvi">
+                      <ref role="2S8YL0" node="2NB$h7SA50R" resolve="objectBits" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbJ" id="fjZ33TpfAL" role="3cqZAp">
                 <node concept="3clFbS" id="fjZ33TpfAO" role="3clFbx">
                   <node concept="3clFbF" id="2UdJgvCXO1t" role="3cqZAp">
@@ -6619,6 +6721,7 @@
     <node concept="2tJIrI" id="2HIlBfyAugW" role="jymVt" />
     <node concept="2YIFZL" id="2Ra3lNBh6Jt" role="jymVt">
       <property role="TrG5h" value="readFromFile" />
+      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="37vLTG" id="4$9c1ZylM6P" role="3clF46">
@@ -6954,6 +7057,7 @@
     <node concept="2tJIrI" id="2Ra3lNBeQkf" role="jymVt" />
     <node concept="3clFb_" id="2UdJgvDiYpa" role="jymVt">
       <property role="TrG5h" value="runTool" />
+      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2UdJgvD2kgT" role="3clF47">
@@ -7968,6 +8072,7 @@
     <node concept="2tJIrI" id="2UdJgvD2kn8" role="jymVt" />
     <node concept="2YIFZL" id="2Ra3lNBiB3G" role="jymVt">
       <property role="TrG5h" value="readStringlistFromFile" />
+      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2UdJgvD2knd" role="3clF47">
@@ -8076,6 +8181,7 @@
     </node>
     <node concept="2tJIrI" id="2UdJgvFpFi8" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcSy$M" role="jymVt">
+      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastProj" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="5KHBa6l6vYD" role="1tU5fm">
@@ -8088,6 +8194,7 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcSvL$" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcSxMQ" role="jymVt">
+      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastModel" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3_HSwtcSvxG" role="1tU5fm">
@@ -8100,6 +8207,7 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcSvMZ" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcSxKV" role="jymVt">
+      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastAnalyzerFactory" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3_HSwtcWwN2" role="1tU5fm">
@@ -8112,6 +8220,7 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcWxtx" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcWxhw" role="jymVt">
+      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastToolAdapter" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3_HSwtcWxGg" role="1tU5fm">
@@ -8124,6 +8233,7 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcWxHn" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcWxTr" role="jymVt">
+      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastAnalysisConfig" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3_HSwtcWybw" role="1tU5fm">
@@ -8856,6 +8966,7 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="doInBackground" />
       <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="4EriiVwjM39" role="1B3o_S" />
       <node concept="_YKpA" id="4EriiVwjM3a" role="3clF45">
         <node concept="3uibUv" id="4EriiVwncyu" role="_ZDj9">
@@ -11327,6 +11438,7 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="doInBackground" />
       <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="4fvA6OQXXBG" role="1B3o_S" />
       <node concept="_YKpA" id="4fvA6OQXXBH" role="3clF45">
         <node concept="16syzq" id="4fvA6OQXXBI" role="_ZDj9">
@@ -11861,6 +11973,78 @@
           </node>
         </node>
         <node concept="3clFbJ" id="7GloF9XT3Rm" role="3cqZAp">
+          <node concept="3clFbS" id="7GloF9XT3Rp" role="3clFbx">
+            <node concept="3clFbF" id="7Quig7_PD51" role="3cqZAp">
+              <node concept="2OqwBi" id="7Quig7_PDSP" role="3clFbG">
+                <node concept="37vLTw" id="7Quig7_PD4Z" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
+                </node>
+                <node concept="TSZUe" id="7Quig7_PFKn" role="2OqNvi">
+                  <node concept="Xl_RD" id="7Quig7_PFMN" role="25WWJ7">
+                    <property role="Xl_RC" value="cbmc version check:&lt;b&gt;&lt;font color=red&gt;&amp;nbsp;FAIL&lt;/font&gt;&lt;/b&gt;" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7Pk2mb7MhRo" role="3cqZAp">
+              <node concept="2OqwBi" id="7Pk2mb7MiPU" role="3clFbG">
+                <node concept="37vLTw" id="7Pk2mb7MhRm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
+                </node>
+                <node concept="TSZUe" id="7Pk2mb7Mk7L" role="2OqNvi">
+                  <node concept="Xl_RD" id="7Pk2mb7MkhW" role="25WWJ7">
+                    <property role="Xl_RC" value="expected CBMC version 5.3, 5.4, 5.5, 5.6, 5.7, 5.8 or 5.9 but" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7Quig7_RmGF" role="3cqZAp">
+              <node concept="2OqwBi" id="7Quig7_Rnp1" role="3clFbG">
+                <node concept="37vLTw" id="7Quig7_RmGD" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
+                </node>
+                <node concept="TSZUe" id="7Quig7_Rpgn" role="2OqNvi">
+                  <node concept="3cpWs3" id="7Pk2mb7NbTz" role="25WWJ7">
+                    <node concept="Xl_RD" id="7Pk2mb7Nc93" role="3uHU7w">
+                      <property role="Xl_RC" value="'" />
+                    </node>
+                    <node concept="3cpWs3" id="7Quig7_RpuW" role="3uHU7B">
+                      <node concept="Xl_RD" id="7Quig7_RTTy" role="3uHU7B">
+                        <property role="Xl_RC" value="'cbmc --version' returned: '" />
+                      </node>
+                      <node concept="2OqwBi" id="7Pk2mb7NxAN" role="3uHU7w">
+                        <node concept="37vLTw" id="7Quig7_Rpyd" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7GloF9XT2HS" resolve="firstLine" />
+                        </node>
+                        <node concept="17S1cR" id="7Pk2mb7NzDa" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7Quig7_P$IF" role="3cqZAp">
+              <node concept="3clFbT" id="7Quig7_P_Mr" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="7Quig7_PLdy" role="9aQIa">
+            <node concept="3clFbS" id="7Quig7_PLdz" role="9aQI4">
+              <node concept="3clFbF" id="7Quig7_PLRU" role="3cqZAp">
+                <node concept="2OqwBi" id="7Quig7_PM73" role="3clFbG">
+                  <node concept="37vLTw" id="7Quig7_PLRT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
+                  </node>
+                  <node concept="TSZUe" id="7Quig7_PO1t" role="2OqNvi">
+                    <node concept="Xl_RD" id="7Quig7_PO3N" role="25WWJ7">
+                      <property role="Xl_RC" value="cbmc version check:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;&lt;font color=green&gt;PASSED&lt;/font&gt;&lt;/b&gt;" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="1Wc70l" id="CFc5xq2awi" role="3clFbw">
             <node concept="1Wc70l" id="5TsycMJLhue" role="3uHU7B">
               <node concept="1Wc70l" id="BkBG4NQVHI" role="3uHU7B">
@@ -11959,78 +12143,6 @@
                   <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                   <node concept="Xl_RD" id="CFc5xq2fcr" role="37wK5m">
                     <property role="Xl_RC" value="5.9" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="7GloF9XT3Rp" role="3clFbx">
-            <node concept="3clFbF" id="7Quig7_PD51" role="3cqZAp">
-              <node concept="2OqwBi" id="7Quig7_PDSP" role="3clFbG">
-                <node concept="37vLTw" id="7Quig7_PD4Z" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
-                </node>
-                <node concept="TSZUe" id="7Quig7_PFKn" role="2OqNvi">
-                  <node concept="Xl_RD" id="7Quig7_PFMN" role="25WWJ7">
-                    <property role="Xl_RC" value="cbmc version check:&lt;b&gt;&lt;font color=red&gt;&amp;nbsp;FAIL&lt;/font&gt;&lt;/b&gt;" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="7Pk2mb7MhRo" role="3cqZAp">
-              <node concept="2OqwBi" id="7Pk2mb7MiPU" role="3clFbG">
-                <node concept="37vLTw" id="7Pk2mb7MhRm" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
-                </node>
-                <node concept="TSZUe" id="7Pk2mb7Mk7L" role="2OqNvi">
-                  <node concept="Xl_RD" id="7Pk2mb7MkhW" role="25WWJ7">
-                    <property role="Xl_RC" value="expected CBMC version 5.3, 5.4, 5.5, 5.6, 5.7, 5.8 or 5.9 but" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="7Quig7_RmGF" role="3cqZAp">
-              <node concept="2OqwBi" id="7Quig7_Rnp1" role="3clFbG">
-                <node concept="37vLTw" id="7Quig7_RmGD" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
-                </node>
-                <node concept="TSZUe" id="7Quig7_Rpgn" role="2OqNvi">
-                  <node concept="3cpWs3" id="7Pk2mb7NbTz" role="25WWJ7">
-                    <node concept="Xl_RD" id="7Pk2mb7Nc93" role="3uHU7w">
-                      <property role="Xl_RC" value="'" />
-                    </node>
-                    <node concept="3cpWs3" id="7Quig7_RpuW" role="3uHU7B">
-                      <node concept="Xl_RD" id="7Quig7_RTTy" role="3uHU7B">
-                        <property role="Xl_RC" value="'cbmc --version' returned: '" />
-                      </node>
-                      <node concept="2OqwBi" id="7Pk2mb7NxAN" role="3uHU7w">
-                        <node concept="37vLTw" id="7Quig7_Rpyd" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7GloF9XT2HS" resolve="firstLine" />
-                        </node>
-                        <node concept="17S1cR" id="7Pk2mb7NzDa" role="2OqNvi" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="7Quig7_P$IF" role="3cqZAp">
-              <node concept="3clFbT" id="7Quig7_P_Mr" role="3cqZAk">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="7Quig7_PLdy" role="9aQIa">
-            <node concept="3clFbS" id="7Quig7_PLdz" role="9aQI4">
-              <node concept="3clFbF" id="7Quig7_PLRU" role="3cqZAp">
-                <node concept="2OqwBi" id="7Quig7_PM73" role="3clFbG">
-                  <node concept="37vLTw" id="7Quig7_PLRT" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
-                  </node>
-                  <node concept="TSZUe" id="7Quig7_PO1t" role="2OqNvi">
-                    <node concept="Xl_RD" id="7Quig7_PO3N" role="25WWJ7">
-                      <property role="Xl_RC" value="cbmc version check:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;&lt;font color=green&gt;PASSED&lt;/font&gt;&lt;/b&gt;" />
-                    </node>
                   </node>
                 </node>
               </node>
