@@ -854,8 +854,20 @@
   </node>
   <node concept="312cEu" id="tGR6edUFtE">
     <property role="TrG5h" value="CBMCAnalysisConfig" />
+    <node concept="2tJIrI" id="2NB$h7SAqOr" role="jymVt" />
+    <node concept="Wx3nA" id="2NB$h7SAoch" role="jymVt">
+      <property role="TrG5h" value="DEFAULT_OBJECT_BITS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="10Oyi0" id="2NB$h7SAlY9" role="1tU5fm" />
+      <node concept="3Tm1VV" id="2NB$h7SAAr0" role="1B3o_S" />
+      <node concept="3cmrfG" id="2NB$h7SAlYa" role="33vP2m">
+        <property role="3cmrfH" value="8" />
+      </node>
+      <node concept="NWlO9" id="2NB$h7SAtAv" role="lGtFl">
+        <property role="NWlVz" value="Default value of CBMC for --object-bits." />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="tGR6edUFtF" role="1B3o_S" />
-    <node concept="2tJIrI" id="4_Ba8HNQdjo" role="jymVt" />
     <node concept="2tJIrI" id="2yU6qg8t_HV" role="jymVt" />
     <node concept="Wx3nA" id="5zmbZKqW0FB" role="jymVt">
       <property role="TrG5h" value="IGNORE_ANALYSIS_DEPTH" />
@@ -1217,7 +1229,18 @@
       </node>
       <node concept="10P_77" id="NfDeW0PtHH" role="2RkE6I" />
     </node>
-    <node concept="2tJIrI" id="6DRvbEFTxdn" role="jymVt" />
+    <node concept="2RhdJD" id="2NB$h7SA50R" role="jymVt">
+      <property role="2RkwnN" value="objectBits" />
+      <node concept="3Tm1VV" id="2NB$h7SA50S" role="1B3o_S" />
+      <node concept="2RoN1w" id="2NB$h7SA50T" role="2RnVtd">
+        <node concept="3wEZqW" id="2NB$h7SA50U" role="3wFrgM" />
+        <node concept="3xqBd$" id="2NB$h7SA50V" role="3xrYvX">
+          <node concept="3Tm1VV" id="2NB$h7SAWtC" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="10Oyi0" id="2NB$h7SA7aQ" role="2RkE6I" />
+    </node>
+    <node concept="2tJIrI" id="2NB$h7SA2ZB" role="jymVt" />
     <node concept="2RhdJD" id="5VnXdFkshr7" role="jymVt">
       <property role="2RkwnN" value="externalFiles" />
       <node concept="3Tm1VV" id="5VnXdFkshr8" role="1B3o_S" />
@@ -1492,6 +1515,16 @@
             </node>
             <node concept="338YkY" id="NfDeW0PvO4" role="37vLTJ">
               <ref role="338YkT" node="NfDeW0PsIr" resolve="useRefinement" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2NB$h7SA9o_" role="3cqZAp">
+          <node concept="37vLTI" id="2NB$h7SAawI" role="3clFbG">
+            <node concept="37vLTw" id="2NB$h7SAty_" role="37vLTx">
+              <ref role="3cqZAo" node="2NB$h7SAoch" resolve="DEFAULT_OBJECT_BITS" />
+            </node>
+            <node concept="338YkY" id="2NB$h7SA9oz" role="37vLTJ">
+              <ref role="338YkT" node="2NB$h7SA50R" resolve="objectBits" />
             </node>
           </node>
         </node>
@@ -2502,6 +2535,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2NB$h7SAcD3" role="3cqZAp">
+          <node concept="37vLTI" id="2NB$h7SAfnU" role="3clFbG">
+            <node concept="338YkY" id="2NB$h7SAfHk" role="37vLTx">
+              <ref role="338YkT" node="2NB$h7SA50R" resolve="objectBits" />
+            </node>
+            <node concept="2OqwBi" id="2NB$h7SAef2" role="37vLTJ">
+              <node concept="37vLTw" id="2NB$h7SAcD1" role="2Oq$k0">
+                <ref role="3cqZAo" node="4_Ba8HNNIOG" resolve="res" />
+              </node>
+              <node concept="2S8uIT" id="2NB$h7SAeFn" role="2OqNvi">
+                <ref role="2S8YL0" node="2NB$h7SA50R" resolve="objectBits" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4_Ba8HNPjOk" role="3cqZAp">
           <node concept="37vLTI" id="4_Ba8HNPp46" role="3clFbG">
             <node concept="338YkY" id="4_Ba8HNPphM" role="37vLTx">
@@ -2715,7 +2763,7 @@
               <node concept="1Rwk04" id="4_Ba8HNRsUn" role="2OqNvi" />
             </node>
             <node concept="3cmrfG" id="NfDeW0RLaa" role="3uHU7w">
-              <property role="3cmrfH" value="44" />
+              <property role="3cmrfH" value="45" />
             </node>
           </node>
         </node>
@@ -5809,6 +5857,57 @@
                   </node>
                   <node concept="2S8uIT" id="NfDeW0RNOh" role="2OqNvi">
                     <ref role="2S8YL0" node="NfDeW0PsIr" resolve="useRefinement" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="2NB$h7SAkbx" role="3cqZAp">
+                <node concept="3clFbS" id="2NB$h7SAkby" role="3clFbx">
+                  <node concept="3clFbF" id="2NB$h7SAkbz" role="3cqZAp">
+                    <node concept="2OqwBi" id="2NB$h7SAkb$" role="3clFbG">
+                      <node concept="37vLTw" id="2NB$h7SAkb_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                      </node>
+                      <node concept="TSZUe" id="2NB$h7SAkbA" role="2OqNvi">
+                        <node concept="Xl_RD" id="2NB$h7SAkbB" role="25WWJ7">
+                          <property role="Xl_RC" value="--object-bits" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="2NB$h7SABWW" role="3cqZAp">
+                    <node concept="2OqwBi" id="2NB$h7SABWX" role="3clFbG">
+                      <node concept="37vLTw" id="2NB$h7SABWY" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                      </node>
+                      <node concept="TSZUe" id="2NB$h7SABWZ" role="2OqNvi">
+                        <node concept="2YIFZM" id="2NB$h7SACsi" role="25WWJ7">
+                          <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                          <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                          <node concept="2OqwBi" id="2NB$h7SACyj" role="37wK5m">
+                            <node concept="37vLTw" id="2NB$h7SACyk" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2UdJgvCXO1M" resolve="configuration" />
+                            </node>
+                            <node concept="2S8uIT" id="2NB$h7SACyl" role="2OqNvi">
+                              <ref role="2S8YL0" node="2NB$h7SA50R" resolve="objectBits" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="2NB$h7SA_FN" role="3clFbw">
+                  <node concept="10M0yZ" id="2NB$h7SAB_o" role="3uHU7w">
+                    <ref role="3cqZAo" node="2NB$h7SAoch" resolve="DEFAULT_OBJECT_BITS" />
+                    <ref role="1PxDUh" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
+                  </node>
+                  <node concept="2OqwBi" id="2NB$h7SAkbC" role="3uHU7B">
+                    <node concept="37vLTw" id="2NB$h7SAkbD" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2UdJgvCXO1M" resolve="configuration" />
+                    </node>
+                    <node concept="2S8uIT" id="2NB$h7SA$Tt" role="2OqNvi">
+                      <ref role="2S8YL0" node="2NB$h7SA50R" resolve="objectBits" />
+                    </node>
                   </node>
                 </node>
               </node>
