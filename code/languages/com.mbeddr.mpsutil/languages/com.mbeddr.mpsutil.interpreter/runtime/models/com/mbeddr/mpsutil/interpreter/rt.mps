@@ -35,6 +35,8 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="urs3" ref="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <import index="evo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context(MPS.Core/)" />
+    <import index="ntri" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context.typechecking(MPS.Core/)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -5619,28 +5621,67 @@
                     <property role="3SKdUp" value="we have to use it as a possible fallback turning back to the prev. code (above line)" />
                   </node>
                 </node>
-                <node concept="3clFbF" id="2Rl5K506Wu7" role="3cqZAp">
-                  <node concept="37vLTI" id="2Rl5K506WEZ" role="3clFbG">
-                    <node concept="37vLTw" id="2Rl5K506WHd" role="37vLTJ">
-                      <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
+                <node concept="3cpWs8" id="30UB7pesVeB" role="3cqZAp">
+                  <node concept="3cpWsn" id="30UB7pesVeC" role="3cpWs9">
+                    <property role="TrG5h" value="typeCheckingContext" />
+                    <node concept="3uibUv" id="30UB7pesVe_" role="1tU5fm">
+                      <ref role="3uigEE" to="u78q:~TypeCheckingContext" resolve="TypeCheckingContext" />
                     </node>
-                    <node concept="2OqwBi" id="2Rl5K506WA1" role="37vLTx">
-                      <node concept="2OqwBi" id="2Rl5K506Wxs" role="2Oq$k0">
-                        <node concept="2YIFZM" id="2Rl5K506WwD" role="2Oq$k0">
-                          <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
-                          <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
+                    <node concept="2OqwBi" id="30UB7pesVeD" role="33vP2m">
+                      <node concept="2YIFZM" id="30UB7pesVeE" role="2Oq$k0">
+                        <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
+                        <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
+                      </node>
+                      <node concept="liA8E" id="30UB7pesVeF" role="2OqNvi">
+                        <ref role="37wK5l" to="u78q:~TypeContextManager.createTypeCheckingContext(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.typesystem.inference.TypeCheckingContext" resolve="createTypeCheckingContext" />
+                        <node concept="37vLTw" id="30UB7pesVeG" role="37wK5m">
+                          <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
                         </node>
-                        <node concept="liA8E" id="2Rl5K506WzE" role="2OqNvi">
-                          <ref role="37wK5l" to="u78q:~TypeContextManager.createTypeCheckingContext(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.typesystem.inference.TypeCheckingContext" resolve="createTypeCheckingContext" />
-                          <node concept="37vLTw" id="2Rl5K506W_0" role="37wK5m">
-                            <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2GUZhq" id="30UB7pesVtt" role="3cqZAp">
+                  <node concept="3clFbS" id="30UB7pesVtu" role="2GV8ay">
+                    <node concept="3clFbF" id="2Rl5K506Wu7" role="3cqZAp">
+                      <node concept="37vLTI" id="2Rl5K506WEZ" role="3clFbG">
+                        <node concept="37vLTw" id="2Rl5K506WHd" role="37vLTJ">
+                          <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
+                        </node>
+                        <node concept="2OqwBi" id="2Rl5K506WA1" role="37vLTx">
+                          <node concept="37vLTw" id="30UB7pesVeH" role="2Oq$k0">
+                            <ref role="3cqZAo" node="30UB7pesVeC" resolve="typeCheckingContext" />
+                          </node>
+                          <node concept="liA8E" id="2Rl5K506WC8" role="2OqNvi">
+                            <ref role="37wK5l" to="u78q:~TypeCheckingContext.getTypeOf_normalMode(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf_normalMode" />
+                            <node concept="37vLTw" id="2Rl5K506WDI" role="37wK5m">
+                              <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                            </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="liA8E" id="2Rl5K506WC8" role="2OqNvi">
-                        <ref role="37wK5l" to="u78q:~TypeCheckingContext.getTypeOf_normalMode(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf_normalMode" />
-                        <node concept="37vLTw" id="2Rl5K506WDI" role="37wK5m">
-                          <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="30UB7pesVtv" role="2GVbov">
+                    <node concept="3clFbF" id="30UB7pesW_J" role="3cqZAp">
+                      <node concept="2OqwBi" id="30UB7peta1k" role="3clFbG">
+                        <node concept="2OqwBi" id="30UB7pet9l0" role="2Oq$k0">
+                          <node concept="1eOMI4" id="30UB7pesXc4" role="2Oq$k0">
+                            <node concept="10QFUN" id="30UB7pesXc1" role="1eOMHV">
+                              <node concept="3uibUv" id="30UB7pet95l" role="10QFUM">
+                                <ref role="3uigEE" to="evo:~SimpleTypecheckingContext" resolve="SimpleTypecheckingContext" />
+                              </node>
+                              <node concept="37vLTw" id="30UB7pesXc6" role="10QFUP">
+                                <ref role="3cqZAo" node="30UB7pesVeC" resolve="typeCheckingContext" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="30UB7pet9_z" role="2OqNvi">
+                            <ref role="37wK5l" to="evo:~SimpleTypecheckingContext.getTypechecking():jetbrains.mps.newTypesystem.context.typechecking.BaseTypechecking" resolve="getTypechecking" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="30UB7petbm2" role="2OqNvi">
+                          <ref role="37wK5l" to="ntri:~BaseTypechecking.dispose():void" resolve="dispose" />
                         </node>
                       </node>
                     </node>
