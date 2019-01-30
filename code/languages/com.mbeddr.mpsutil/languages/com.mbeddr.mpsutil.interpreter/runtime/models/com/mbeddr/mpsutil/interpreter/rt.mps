@@ -2,14 +2,14 @@
 <model ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -35,6 +35,8 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="urs3" ref="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <import index="evo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context(MPS.Core/)" />
+    <import index="ntri" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context.typechecking(MPS.Core/)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -5184,6 +5186,24 @@
                         <ref role="3cqZAo" node="M6L5HuRefT" resolve="input" />
                       </node>
                     </node>
+                    <node concept="9aQIb" id="5hkE98Z4eWu" role="9aQIa">
+                      <node concept="3clFbS" id="5hkE98Z4eWv" role="9aQI4">
+                        <node concept="3cpWs6" id="5hkE98Z4fIL" role="3cqZAp">
+                          <node concept="2YIFZM" id="5hkE98Z4gDS" role="3cqZAk">
+                            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long):java.math.BigDecimal" resolve="valueOf" />
+                            <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                            <node concept="2OqwBi" id="5hkE98Z4idN" role="37wK5m">
+                              <node concept="37vLTw" id="5hkE98Z4hrL" role="2Oq$k0">
+                                <ref role="3cqZAo" node="M6L5HuRguY" resolve="numberInput" />
+                              </node>
+                              <node concept="liA8E" id="5hkE98Z4jUs" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~Number.longValue():long" resolve="longValue" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3eNFk2" id="5hkE98Z44Vr" role="3eNLev">
                       <node concept="3clFbS" id="5hkE98Z44Vs" role="3eOfB_">
                         <node concept="3cpWs6" id="5hkE98Z44Vt" role="3cqZAp">
@@ -5216,24 +5236,6 @@
                           </node>
                           <node concept="37vLTw" id="5hkE98Z4b2I" role="2ZW6bz">
                             <ref role="3cqZAo" node="M6L5HuRefT" resolve="input" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="9aQIb" id="5hkE98Z4eWu" role="9aQIa">
-                      <node concept="3clFbS" id="5hkE98Z4eWv" role="9aQI4">
-                        <node concept="3cpWs6" id="5hkE98Z4fIL" role="3cqZAp">
-                          <node concept="2YIFZM" id="5hkE98Z4gDS" role="3cqZAk">
-                            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long):java.math.BigDecimal" resolve="valueOf" />
-                            <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-                            <node concept="2OqwBi" id="5hkE98Z4idN" role="37wK5m">
-                              <node concept="37vLTw" id="5hkE98Z4hrL" role="2Oq$k0">
-                                <ref role="3cqZAo" node="M6L5HuRguY" resolve="numberInput" />
-                              </node>
-                              <node concept="liA8E" id="5hkE98Z4jUs" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Number.longValue():long" resolve="longValue" />
-                              </node>
-                            </node>
                           </node>
                         </node>
                       </node>
@@ -5616,28 +5618,67 @@
                     <property role="3SKdUp" value="we have to use it as a possible fallback turning back to the prev. code (above line)" />
                   </node>
                 </node>
-                <node concept="3clFbF" id="2Rl5K506Wu7" role="3cqZAp">
-                  <node concept="37vLTI" id="2Rl5K506WEZ" role="3clFbG">
-                    <node concept="37vLTw" id="2Rl5K506WHd" role="37vLTJ">
-                      <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
+                <node concept="3cpWs8" id="30UB7pesVeB" role="3cqZAp">
+                  <node concept="3cpWsn" id="30UB7pesVeC" role="3cpWs9">
+                    <property role="TrG5h" value="typeCheckingContext" />
+                    <node concept="3uibUv" id="30UB7pesVe_" role="1tU5fm">
+                      <ref role="3uigEE" to="u78q:~TypeCheckingContext" resolve="TypeCheckingContext" />
                     </node>
-                    <node concept="2OqwBi" id="2Rl5K506WA1" role="37vLTx">
-                      <node concept="2OqwBi" id="2Rl5K506Wxs" role="2Oq$k0">
-                        <node concept="2YIFZM" id="2Rl5K506WwD" role="2Oq$k0">
-                          <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
-                          <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
+                    <node concept="2OqwBi" id="30UB7pesVeD" role="33vP2m">
+                      <node concept="2YIFZM" id="30UB7pesVeE" role="2Oq$k0">
+                        <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
+                        <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
+                      </node>
+                      <node concept="liA8E" id="30UB7pesVeF" role="2OqNvi">
+                        <ref role="37wK5l" to="u78q:~TypeContextManager.createTypeCheckingContext(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.typesystem.inference.TypeCheckingContext" resolve="createTypeCheckingContext" />
+                        <node concept="37vLTw" id="30UB7pesVeG" role="37wK5m">
+                          <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
                         </node>
-                        <node concept="liA8E" id="2Rl5K506WzE" role="2OqNvi">
-                          <ref role="37wK5l" to="u78q:~TypeContextManager.createTypeCheckingContext(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.typesystem.inference.TypeCheckingContext" resolve="createTypeCheckingContext" />
-                          <node concept="37vLTw" id="2Rl5K506W_0" role="37wK5m">
-                            <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2GUZhq" id="30UB7pesVtt" role="3cqZAp">
+                  <node concept="3clFbS" id="30UB7pesVtu" role="2GV8ay">
+                    <node concept="3clFbF" id="2Rl5K506Wu7" role="3cqZAp">
+                      <node concept="37vLTI" id="2Rl5K506WEZ" role="3clFbG">
+                        <node concept="37vLTw" id="2Rl5K506WHd" role="37vLTJ">
+                          <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
+                        </node>
+                        <node concept="2OqwBi" id="2Rl5K506WA1" role="37vLTx">
+                          <node concept="37vLTw" id="30UB7pesVeH" role="2Oq$k0">
+                            <ref role="3cqZAo" node="30UB7pesVeC" resolve="typeCheckingContext" />
+                          </node>
+                          <node concept="liA8E" id="2Rl5K506WC8" role="2OqNvi">
+                            <ref role="37wK5l" to="u78q:~TypeCheckingContext.getTypeOf_normalMode(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf_normalMode" />
+                            <node concept="37vLTw" id="2Rl5K506WDI" role="37wK5m">
+                              <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                            </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="liA8E" id="2Rl5K506WC8" role="2OqNvi">
-                        <ref role="37wK5l" to="u78q:~TypeCheckingContext.getTypeOf_normalMode(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf_normalMode" />
-                        <node concept="37vLTw" id="2Rl5K506WDI" role="37wK5m">
-                          <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="30UB7pesVtv" role="2GVbov">
+                    <node concept="3clFbF" id="30UB7pesW_J" role="3cqZAp">
+                      <node concept="2OqwBi" id="30UB7peta1k" role="3clFbG">
+                        <node concept="2OqwBi" id="30UB7pet9l0" role="2Oq$k0">
+                          <node concept="1eOMI4" id="30UB7pesXc4" role="2Oq$k0">
+                            <node concept="10QFUN" id="30UB7pesXc1" role="1eOMHV">
+                              <node concept="3uibUv" id="30UB7pet95l" role="10QFUM">
+                                <ref role="3uigEE" to="evo:~SimpleTypecheckingContext" resolve="SimpleTypecheckingContext" />
+                              </node>
+                              <node concept="37vLTw" id="30UB7pesXc6" role="10QFUP">
+                                <ref role="3cqZAo" node="30UB7pesVeC" resolve="typeCheckingContext" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="30UB7pet9_z" role="2OqNvi">
+                            <ref role="37wK5l" to="evo:~SimpleTypecheckingContext.getTypechecking():jetbrains.mps.newTypesystem.context.typechecking.BaseTypechecking" resolve="getTypechecking" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="30UB7petbm2" role="2OqNvi">
+                          <ref role="37wK5l" to="ntri:~BaseTypechecking.dispose():void" resolve="dispose" />
                         </node>
                       </node>
                     </node>
