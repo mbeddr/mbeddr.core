@@ -204,6 +204,12 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
@@ -3588,21 +3594,47 @@
                                           <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                                           <node concept="3zFVjK" id="6ENu_m7x3Gy" role="3zH0cK">
                                             <node concept="3clFbS" id="6ENu_m7x3Gz" role="2VODD2">
-                                              <node concept="3clFbF" id="6ENu_m7x3G$" role="3cqZAp">
-                                                <node concept="2OqwBi" id="6ENu_m7x3G_" role="3clFbG">
-                                                  <node concept="2OqwBi" id="6ENu_m7x3GA" role="2Oq$k0">
-                                                    <node concept="30H73N" id="6ENu_m7x3GB" role="2Oq$k0" />
-                                                    <node concept="2Xjw5R" id="6ENu_m7x3GC" role="2OqNvi">
-                                                      <node concept="1xMEDy" id="6ENu_m7x3GD" role="1xVPHs">
-                                                        <node concept="chp4Y" id="6ENu_m7x3GE" role="ri$Ld">
-                                                          <ref role="cht4Q" to="3673:59qdqedsydW" resolve="AbstractEvaluator" />
+                                              <node concept="3cpWs8" id="7x8nQJH4wDK" role="3cqZAp">
+                                                <node concept="3cpWsn" id="7x8nQJH4wDL" role="3cpWs9">
+                                                  <property role="TrG5h" value="pres" />
+                                                  <node concept="17QB3L" id="7x8nQJH4wDH" role="1tU5fm" />
+                                                  <node concept="2OqwBi" id="7x8nQJH4wDM" role="33vP2m">
+                                                    <node concept="2OqwBi" id="7x8nQJH4wDN" role="2Oq$k0">
+                                                      <node concept="30H73N" id="7x8nQJH4wDO" role="2Oq$k0" />
+                                                      <node concept="2Xjw5R" id="7x8nQJH4wDP" role="2OqNvi">
+                                                        <node concept="1xMEDy" id="7x8nQJH4wDQ" role="1xVPHs">
+                                                          <node concept="chp4Y" id="7x8nQJH4wDR" role="ri$Ld">
+                                                            <ref role="cht4Q" to="3673:59qdqedsydW" resolve="AbstractEvaluator" />
+                                                          </node>
                                                         </node>
+                                                        <node concept="1xIGOp" id="7x8nQJH4wDS" role="1xVPHs" />
                                                       </node>
-                                                      <node concept="1xIGOp" id="2ALJBcrRZz$" role="1xVPHs" />
+                                                    </node>
+                                                    <node concept="2qgKlT" id="7x8nQJH4wDT" role="2OqNvi">
+                                                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                                                     </node>
                                                   </node>
-                                                  <node concept="2qgKlT" id="6ENu_m7x3GF" role="2OqNvi">
-                                                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                                                </node>
+                                              </node>
+                                              <node concept="3clFbH" id="1ovA3RmFG9H" role="3cqZAp" />
+                                              <node concept="3SKdUt" id="1ovA3RmFGZy" role="3cqZAp">
+                                                <node concept="3SKdUq" id="1ovA3RmFGZ$" role="3SKWNk">
+                                                  <property role="3SKdUp" value="a single backslash will lead to a Java compile error, we have to escape it" />
+                                                </node>
+                                              </node>
+                                              <node concept="3clFbF" id="6ENu_m7x3G$" role="3cqZAp">
+                                                <node concept="2OqwBi" id="7x8nQJH4xyT" role="3clFbG">
+                                                  <node concept="37vLTw" id="7x8nQJH4wDU" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="7x8nQJH4wDL" resolve="pres" />
+                                                  </node>
+                                                  <node concept="liA8E" id="7x8nQJH4$_N" role="2OqNvi">
+                                                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                                                    <node concept="Xl_RD" id="7x8nQJH4$TG" role="37wK5m">
+                                                      <property role="Xl_RC" value="\\" />
+                                                    </node>
+                                                    <node concept="Xl_RD" id="7x8nQJH4_QB" role="37wK5m">
+                                                      <property role="Xl_RC" value="\\\\" />
+                                                    </node>
                                                   </node>
                                                 </node>
                                               </node>
