@@ -2056,5 +2056,23 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="2E5EJrUlYIy">
+    <property role="EcuMT" value="3064043099234233250" />
+    <property role="3GE5qa" value="comp.ports.gen" />
+    <property role="TrG5h" value="ProvidedPortRefWithContext" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2E5EJrUmcRQ" role="1TKVEl">
+      <property role="IQ2nx" value="3064043099234291190" />
+      <property role="TrG5h" value="instanceName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2E5EJrUmcRJ" role="1TKVEi">
+      <property role="IQ2ns" value="3064043099234291183" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="providedPort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3TmmsQkD8YC" resolve="ProvidedPort" />
+    </node>
+  </node>
 </model>
 
