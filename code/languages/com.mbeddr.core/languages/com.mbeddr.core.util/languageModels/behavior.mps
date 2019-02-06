@@ -9232,5 +9232,26 @@
       <node concept="17QB3L" id="1VqP_ItQJjp" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="5FIjVbwQBkH">
+    <property role="3GE5qa" value="switch" />
+    <ref role="13h7C2" to="k146:5FIjVbwQwdt" resolve="SwitchGenerationConfiguration" />
+    <node concept="13hLZK" id="5FIjVbwQBkI" role="13h7CW">
+      <node concept="3clFbS" id="5FIjVbwQBkJ" role="2VODD2">
+        <node concept="3clFbF" id="5FIjVbwQBkZ" role="3cqZAp">
+          <node concept="2OqwBi" id="5FIjVbwQCq6" role="3clFbG">
+            <node concept="2OqwBi" id="5FIjVbwQBvh" role="2Oq$k0">
+              <node concept="13iPFW" id="5FIjVbwQBkY" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5FIjVbwQC8T" role="2OqNvi">
+                <ref role="3Tt5mk" to="k146:5FIjVbwQAYF" resolve="strategy" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="5FIjVbwQD61" role="2OqNvi">
+              <ref role="1A9B2P" to="k146:5FIjVbwQAYI" resolve="DefaultSwitchGenerationStrategy" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
