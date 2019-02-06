@@ -1862,5 +1862,46 @@
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5FIjVbwQAYI">
+    <property role="EcuMT" value="6552262137565835182" />
+    <property role="3GE5qa" value="switch" />
+    <property role="TrG5h" value="DefaultSwitchGenerationStrategy" />
+    <property role="34LRSv" value="switch/case" />
+    <property role="R4oN_" value="generate switch statement" />
+    <ref role="1TJDcQ" node="5FIjVbwQAYH" resolve="SwitchGenerationStrategy" />
+  </node>
+  <node concept="1TIwiD" id="5FIjVbwQAYW">
+    <property role="EcuMT" value="6552262137565835196" />
+    <property role="3GE5qa" value="switch" />
+    <property role="TrG5h" value="IfElseSwitchGenerationStrategy" />
+    <property role="34LRSv" value="if/else" />
+    <property role="R4oN_" value="generate if/else if/else statement" />
+    <ref role="1TJDcQ" node="5FIjVbwQAYH" resolve="SwitchGenerationStrategy" />
+  </node>
+  <node concept="1TIwiD" id="5FIjVbwQwdt">
+    <property role="EcuMT" value="6552262137565807453" />
+    <property role="3GE5qa" value="switch" />
+    <property role="TrG5h" value="SwitchGenerationConfiguration" />
+    <property role="34LRSv" value="switch generation strategy" />
+    <property role="R4oN_" value="configure switch generation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5FIjVbwQwdu" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+    <node concept="1TJgyj" id="5FIjVbwQAYF" role="1TKVEi">
+      <property role="IQ2ns" value="6552262137565835179" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="strategy" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5FIjVbwQAYH" resolve="SwitchGenerationStrategy" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5FIjVbwQAYH">
+    <property role="EcuMT" value="6552262137565835181" />
+    <property role="3GE5qa" value="switch" />
+    <property role="TrG5h" value="SwitchGenerationStrategy" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 
