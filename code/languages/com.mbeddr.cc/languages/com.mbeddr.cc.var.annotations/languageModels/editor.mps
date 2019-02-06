@@ -25,6 +25,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -3448,6 +3449,114 @@
       </node>
     </node>
     <node concept="382kZG" id="2oITgcLXoeQ" role="lGtFl" />
+  </node>
+  <node concept="24kQdi" id="6ys7avo2LTb">
+    <property role="3GE5qa" value="trafo" />
+    <ref role="1XX52x" to="qdv7:6ys7avo2LT2" resolve="GenerateAllProductStrategy" />
+    <node concept="PMmxH" id="6ys7avo2LTd" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6ys7avo2LTv">
+    <property role="3GE5qa" value="trafo" />
+    <ref role="1XX52x" to="qdv7:6ys7avo2LTp" resolve="GenerateSingleProductStrategy" />
+    <node concept="3EZMnI" id="6ys7avo2LTw" role="2wV5jI">
+      <node concept="2iRfu4" id="6ys7avo2LTx" role="2iSdaV" />
+      <node concept="3F0ifn" id="6ys7avo2LTy" role="3EZMnx">
+        <property role="3F0ifm" value="generate single product variant " />
+      </node>
+      <node concept="gc7cB" id="6ys7avo2LTz" role="3EZMnx">
+        <node concept="3VJUX4" id="6ys7avo2LT$" role="3YsKMw">
+          <node concept="3clFbS" id="6ys7avo2LT_" role="2VODD2">
+            <node concept="3clFbF" id="6ys7avo2LTA" role="3cqZAp">
+              <node concept="2ShNRf" id="6ys7avo2LTB" role="3clFbG">
+                <node concept="1pGfFk" id="6ys7avo2LTC" role="2ShVmc">
+                  <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
+                  <node concept="pncrf" id="6ys7avo2LTD" role="37wK5m" />
+                  <node concept="10M0yZ" id="6ys7avo2LTE" role="37wK5m">
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+                  </node>
+                  <node concept="3cmrfG" id="6ys7avo2LTF" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="6ys7avo2LTG" role="37wK5m">
+                    <property role="3cmrfH" value="2" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6ys7avo2LTH" role="3EZMnx">
+        <node concept="VPM3Z" id="6ys7avo2LTI" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F2HdR" id="6ys7avo2LTJ" role="3EZMnx">
+          <ref role="1NtTu8" to="qdv7:6ys7avo2LTq" resolve="mappings" />
+          <node concept="2iRkQZ" id="6ys7avo2LTK" role="2czzBx" />
+          <node concept="pVoyu" id="6ys7avo2LTL" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="6ys7avo2LTM" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="6ys7avo2LTN" role="2czzBI">
+            <property role="3F0ifm" value="" />
+            <node concept="VPxyj" id="6ys7avo2LTO" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="6ys7avo2LTP" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6ys7avo35_V">
+    <property role="3GE5qa" value="trafo" />
+    <ref role="1XX52x" to="qdv7:6ys7avo35_K" resolve="StrategyConfigItem" />
+    <node concept="3EZMnI" id="6ys7avo35_X" role="2wV5jI">
+      <node concept="3F0ifn" id="6ys7avo35A4" role="3EZMnx">
+        <property role="3F0ifm" value="Strategy: " />
+      </node>
+      <node concept="3F1sOY" id="6ys7avo35Ac" role="3EZMnx">
+        <ref role="1NtTu8" to="qdv7:6ys7avo35Aa" resolve="strategy" />
+      </node>
+      <node concept="2iRfu4" id="6ys7avo35A0" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2dd12GdncI8">
+    <property role="3GE5qa" value="trafo" />
+    <ref role="1XX52x" to="qdv7:2dd12Gdn2nJ" resolve="ConfigurationMappingNew" />
+    <node concept="3EZMnI" id="2dd12GdncI9" role="2wV5jI">
+      <node concept="3F0ifn" id="2dd12GdncIa" role="3EZMnx">
+        <property role="3F0ifm" value="fm" />
+      </node>
+      <node concept="1iCGBv" id="2dd12GdncIb" role="3EZMnx">
+        <ref role="1NtTu8" to="qdv7:5JmNU9PAaLi" resolve="featureModel" />
+        <node concept="1sVBvm" id="2dd12GdncIc" role="1sWHZn">
+          <node concept="3F0A7n" id="2dd12GdncId" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <property role="39s7Ar" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2dd12GdncIe" role="2iSdaV" />
+      <node concept="3F0ifn" id="2dd12GdncIf" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="1iCGBv" id="2dd12GdncIg" role="3EZMnx">
+        <ref role="1NtTu8" to="qdv7:5JmNU9PAaLj" resolve="configurationModel" />
+        <node concept="1sVBvm" id="2dd12GdncIh" role="1sWHZn">
+          <node concept="3F0A7n" id="2dd12GdncIi" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

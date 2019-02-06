@@ -4,6 +4,7 @@
   <languages>
     <use id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations" version="0" />
     <use id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm" version="1" />
+    <engage id="634736cf-ea73-4eb1-abe9-d2ecc5fcf837" name="com.mbeddr.cc.var.c" />
     <devkit ref="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -131,13 +132,10 @@
       <concept id="661141253149231475" name="com.mbeddr.cc.var.annotations.structure.PresenceCondition" flags="ng" index="2dvt44">
         <child id="661141253149231543" name="condition" index="2dvt70" />
       </concept>
-      <concept id="6617704999132114000" name="com.mbeddr.cc.var.annotations.structure.ConfigurationMapping" flags="ng" index="IjAfM">
-        <reference id="6617704999132114002" name="featureModel" index="IjAfK" />
-        <reference id="6617704999132114003" name="configurationModel" index="IjAfL" />
+      <concept id="7537931383521171824" name="com.mbeddr.cc.var.annotations.structure.StrategyConfigItem" flags="ng" index="2K$4nn">
+        <child id="7537931383521171850" name="strategy" index="2K$4kH" />
       </concept>
-      <concept id="6514264311693667923" name="com.mbeddr.cc.var.annotations.structure.VariabilityConfigItem" flags="ng" index="35TzUN">
-        <child id="4920787109780106774" name="mappings" index="19yoJo" />
-      </concept>
+      <concept id="7537931383521091138" name="com.mbeddr.cc.var.annotations.structure.GenerateAllProductStrategy" flags="ng" index="2K_Kb_" />
       <concept id="2613872510229259997" name="com.mbeddr.cc.var.annotations.structure.ConditionalReplacement" flags="ng" index="3o6v7J">
         <child id="2613872510229260000" name="replacement" index="3o6v7i" />
         <child id="2613872510229260001" name="condition" index="3o6v7j" />
@@ -363,6 +361,15 @@
       <ref role="Id4hC" node="5JmNU9PAoEM" resolve="DeploymentConfiguration" />
       <node concept="Id4hG" id="5JmNU9PAoEW" role="Id4hF">
         <ref role="Id4hN" node="5kSKC2jhyp3" resolve="DeploymentConfiguration_root" />
+        <node concept="Id4hG" id="35d_zSt0ZwF" role="Id4hH">
+          <ref role="Id4hN" node="10GsATRGpEd" resolve="logging" />
+        </node>
+        <node concept="Id4hG" id="35d_zSt0ZwQ" role="Id4hH">
+          <ref role="Id4hN" node="5JmNU9PAoEQ" resolve="test" />
+          <node concept="Id4hG" id="35d_zSt0ZwY" role="Id4hH">
+            <ref role="Id4hN" node="1Hrx$eAyrBq" resolve="o1" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -376,9 +383,6 @@
     <node concept="2dvl_R" id="5JmNU9PApDF" role="lGtFl">
       <ref role="2dvl_Q" node="5JmNU9PAoEM" resolve="DeploymentConfiguration" />
       <ref role="AiAcg" node="5JmNU9PAoER" resolve="Debug" />
-    </node>
-    <node concept="2NXPZ9" id="7k8WEKUE4pK" role="N3F5h">
-      <property role="TrG5h" value="empty_1328097001361_1" />
     </node>
     <node concept="2vmPJd" id="2UW1dNKpq4j" role="N3F5h">
       <property role="TrG5h" value="messages" />
@@ -401,6 +405,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2NXPZ9" id="7k8WEKUE4pK" role="N3F5h">
+      <property role="TrG5h" value="empty_1328097001361_1" />
     </node>
     <node concept="c0Qz5" id="5JmNU9PApDM" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -609,11 +616,8 @@
     <node concept="2Q9Fgs" id="5kSKC2jilGU" role="2Q9xDr">
       <node concept="2Q9FjX" id="5kSKC2jilGV" role="2Q9FjI" />
     </node>
-    <node concept="35TzUN" id="5kSKC2jilp8" role="2Q9xDr">
-      <node concept="IjAfM" id="16nA7ym_ZaO" role="19yoJo">
-        <ref role="IjAfK" node="5JmNU9PAoEM" resolve="DeploymentConfiguration" />
-        <ref role="IjAfL" node="5JmNU9PAoER" resolve="Debug" />
-      </node>
+    <node concept="2K$4nn" id="1$22SsK1k_N" role="2Q9xDr">
+      <node concept="2K_Kb_" id="1$22SsK1kA8" role="2K$4kH" />
     </node>
     <node concept="12mU2y" id="3mKW6ZYgyjC" role="2Q9xDr">
       <node concept="3GpDuo" id="3mKW6ZYgyjD" role="3GpDut" />

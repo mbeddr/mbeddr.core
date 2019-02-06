@@ -10,6 +10,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="qdv7" ref="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -97,7 +98,7 @@
     <property role="3GE5qa" value="cm" />
     <property role="34LRSv" value="configuration model" />
     <property role="EcuMT" value="6825476687691297416" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="5USXI9Kzba9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rootFeature" />
@@ -499,6 +500,18 @@
     <ref role="1TJDcQ" node="5USXI9Kzbai" resolve="Feature" />
     <node concept="PrWs8" id="7mpzbZX8CFT" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7MWbkE2bXsh">
+    <property role="EcuMT" value="8988108754359670545" />
+    <property role="TrG5h" value="DefineExpression" />
+    <property role="34LRSv" value="#define" />
+    <ref role="1TJDcQ" to="x27k:2VsHNE70LB4" resolve="AbstractDefineLike" />
+    <node concept="1TJgyj" id="7MWbkE2dsgV" role="1TKVEi">
+      <property role="IQ2ns" value="8988108754360058939" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>

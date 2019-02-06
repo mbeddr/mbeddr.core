@@ -13,6 +13,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -110,6 +111,9 @@
     <node concept="PrWs8" id="5JmNU9PAeUh" role="PzmwI">
       <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
     </node>
+    <node concept="PrWs8" id="35d_zSt3T1x" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
+    </node>
     <node concept="M6xJ_" id="5GEPw8vxU3z" role="lGtFl">
       <property role="Hh88m" value="featureModelConfiguration" />
       <node concept="trNpa" id="5GEPw8vxUhP" role="EQaZv">
@@ -182,6 +186,7 @@
       <property role="IQ2ns" value="6617704999132114003" />
       <ref role="20lvS9" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
     </node>
+    <node concept="asaX9" id="2dd12GdncI6" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="1Jq6Hv0f2B">
     <property role="3GE5qa" value="programannotations" />
@@ -315,6 +320,7 @@
     <node concept="PrWs8" id="4ha9sSdKUSc" role="PzmwI">
       <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
     </node>
+    <node concept="asaX9" id="6ys7avo2LSY" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="6ixWMI$2k$V">
     <property role="3GE5qa" value="programannotations" />
@@ -391,6 +397,80 @@
     <property role="EcuMT" value="7868939673811657485" />
     <property role="3GE5qa" value="programannotations" />
     <property role="TrG5h" value="IConditionalAnnotation" />
+  </node>
+  <node concept="PlHQZ" id="6ys7avo2LT1">
+    <property role="EcuMT" value="7537931383521091137" />
+    <property role="3GE5qa" value="trafo" />
+    <property role="TrG5h" value="IStrategy" />
+  </node>
+  <node concept="1TIwiD" id="6ys7avo2LT2">
+    <property role="EcuMT" value="7537931383521091138" />
+    <property role="3GE5qa" value="trafo" />
+    <property role="TrG5h" value="GenerateAllProductStrategy" />
+    <property role="34LRSv" value="generate all product variants" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6ys7avo4xKy" role="PzmwI">
+      <ref role="PrY4T" node="6ys7avo2LT1" resolve="IStrategy" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6ys7avo2LTp">
+    <property role="TrG5h" value="GenerateSingleProductStrategy" />
+    <property role="34LRSv" value="generate single product variant" />
+    <property role="3GE5qa" value="trafo" />
+    <property role="R4oN_" value="select configurations for feature models" />
+    <property role="EcuMT" value="7537931383521091161" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6ys7avo2LTq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mappings" />
+      <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="7537931383521091162" />
+      <ref role="20lvS9" node="2dd12Gdn2nJ" resolve="ConfigurationMappingNew" />
+    </node>
+    <node concept="PrWs8" id="6ys7avo2LTs" role="PzmwI">
+      <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
+    </node>
+    <node concept="PrWs8" id="6ys7avo4xKB" role="PzmwI">
+      <ref role="PrY4T" node="6ys7avo2LT1" resolve="IStrategy" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6ys7avo35_K">
+    <property role="EcuMT" value="7537931383521171824" />
+    <property role="3GE5qa" value="trafo" />
+    <property role="TrG5h" value="StrategyConfigItem" />
+    <property role="34LRSv" value="Strategy" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6ys7avo35_L" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7P$_wJpwSfc" resolve="IConfigurationItemWithImport" />
+    </node>
+    <node concept="1TJgyj" id="6ys7avo35Aa" role="1TKVEi">
+      <property role="IQ2ns" value="7537931383521171850" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="strategy" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6ys7avo2LT1" resolve="IStrategy" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2dd12Gdn2nJ">
+    <property role="TrG5h" value="ConfigurationMappingNew" />
+    <property role="3GE5qa" value="trafo" />
+    <property role="EcuMT" value="2543693947488445935" />
+    <property role="34LRSv" value="mapping" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2dd12Gdn2nK" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="featureModel" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2543693947488445936" />
+      <ref role="20lvS9" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
+    </node>
+    <node concept="1TJgyj" id="2dd12Gdn2nL" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="configurationModel" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2543693947488445937" />
+      <ref role="20lvS9" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
+    </node>
   </node>
 </model>
 

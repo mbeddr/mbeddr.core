@@ -10,6 +10,7 @@
     <import index="qdv7" ref="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" />
     <import index="rpdm" ref="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -71,6 +72,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -406,6 +410,27 @@
         </node>
       </node>
       <node concept="2I9FWS" id="5aNdPeN4lgY" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6S8I43GcUH_">
+    <ref role="13h7C2" to="vxuc:6S8I43GcU_v" resolve="CPresenceCondition" />
+    <node concept="13hLZK" id="6S8I43GcUHA" role="13h7CW">
+      <node concept="3clFbS" id="6S8I43GcUHB" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6S8I43GcUHK" role="13h7CS">
+      <property role="TrG5h" value="isCurrentlyVisible" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="hwgx:5aNdPeN2Pp4" resolve="isCurrentlyVisible" />
+      <node concept="3Tm1VV" id="6S8I43GcUHL" role="1B3o_S" />
+      <node concept="3clFbS" id="6S8I43GcUHO" role="3clF47">
+        <node concept="3clFbF" id="6S8I43GcULN" role="3cqZAp">
+          <node concept="3clFbT" id="6S8I43GcULM" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6S8I43GcUHP" role="3clF45" />
     </node>
   </node>
 </model>

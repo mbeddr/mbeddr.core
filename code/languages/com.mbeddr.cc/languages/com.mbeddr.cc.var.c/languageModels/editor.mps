@@ -39,6 +39,7 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
@@ -630,6 +631,73 @@
     <ref role="1XX52x" to="vxuc:5aNdPeN4qqA" resolve="CVariabilityConfigItem" />
     <node concept="3F0ifn" id="5aNdPeN4qrH" role="2wV5jI">
       <property role="3F0ifm" value="c-level variability" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6S8I43GcUAt">
+    <ref role="1XX52x" to="vxuc:6S8I43GcU_v" resolve="CPresenceCondition" />
+    <node concept="3EZMnI" id="6S8I43GcUBb" role="2wV5jI">
+      <node concept="3EZMnI" id="6S8I43GcUC4" role="3EZMnx">
+        <node concept="VPM3Z" id="6S8I43GcUC6" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="6S8I43GcUCj" role="3EZMnx">
+          <property role="3F0ifm" value="#if" />
+          <ref role="1k5W1q" to="7rpm:1Jq6Hv131a" resolve="greyAndBig" />
+        </node>
+        <node concept="3F1sOY" id="6S8I43GcUCy" role="3EZMnx">
+          <ref role="1NtTu8" to="vxuc:6S8I43GcU_w" resolve="expr" />
+        </node>
+        <node concept="l2Vlx" id="6S8I43GcUC9" role="2iSdaV" />
+      </node>
+      <node concept="2SsqMj" id="6S8I43GcUCP" role="3EZMnx" />
+      <node concept="3F0ifn" id="6S8I43GcUDu" role="3EZMnx">
+        <property role="3F0ifm" value="#endif" />
+        <ref role="1k5W1q" to="7rpm:1Jq6Hv131a" resolve="greyAndBig" />
+      </node>
+      <node concept="l2Vlx" id="6S8I43GcUBe" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6S8I43GcUE3">
+    <ref role="1XX52x" to="vxuc:6S8I43GcU_M" resolve="ConditionalBlockStatementWithIf" />
+    <node concept="3EZMnI" id="6S8I43GcUEe" role="2wV5jI">
+      <node concept="3F0ifn" id="6S8I43GcUEo" role="3EZMnx">
+        <property role="3F0ifm" value="#if" />
+      </node>
+      <node concept="3F1sOY" id="6S8I43GcUEx" role="3EZMnx">
+        <ref role="1NtTu8" to="vxuc:6S8I43GcU_N" resolve="condition" />
+      </node>
+      <node concept="3F1sOY" id="6S8I43GcUEI" role="3EZMnx">
+        <ref role="1NtTu8" to="vxuc:6S8I43GcU_Q" resolve="then" />
+      </node>
+      <node concept="3F2HdR" id="6S8I43GcUF9" role="3EZMnx">
+        <ref role="1NtTu8" to="vxuc:6S8I43GcU_V" resolve="elifs" />
+        <node concept="l2Vlx" id="6S8I43GcUFb" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="6S8I43GcUEh" role="2iSdaV" />
+      <node concept="3F0ifn" id="6S8I43GcUFz" role="3EZMnx">
+        <property role="3F0ifm" value="#else" />
+      </node>
+      <node concept="3F1sOY" id="6S8I43GcUG0" role="3EZMnx">
+        <ref role="1NtTu8" to="vxuc:6S8I43GcUA2" resolve="else" />
+      </node>
+      <node concept="3F0ifn" id="6S8I43GcUGx" role="3EZMnx">
+        <property role="3F0ifm" value="#endif" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6S8I43GcUGV">
+    <ref role="1XX52x" to="vxuc:6S8I43GcU_D" resolve="ConditionalStatementBlockCase" />
+    <node concept="3EZMnI" id="6S8I43GcUGX" role="2wV5jI">
+      <node concept="3F0ifn" id="6S8I43GcUH7" role="3EZMnx">
+        <property role="3F0ifm" value="#elif" />
+      </node>
+      <node concept="3F1sOY" id="6S8I43GcUHg" role="3EZMnx">
+        <ref role="1NtTu8" to="vxuc:6S8I43GcU_E" resolve="condition" />
+      </node>
+      <node concept="3F1sOY" id="6S8I43GcUHt" role="3EZMnx">
+        <ref role="1NtTu8" to="vxuc:6S8I43GcU_H" resolve="then" />
+      </node>
+      <node concept="l2Vlx" id="6S8I43GcUH0" role="2iSdaV" />
     </node>
   </node>
 </model>

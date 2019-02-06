@@ -6,6 +6,22 @@
     </modelRoot>
   </models>
   <accessoryModels />
+  <generators>
+    <generator alias="" namespace="com.mbeddr.cc.var.fm#8988108754359387812" uuid="10af8f92-2015-49a5-aee7-62ebdaf53076">
+      <models>
+        <modelRoot contentPath="${module}/generator/template" type="default">
+          <sourceRoot location="." />
+        </modelRoot>
+      </models>
+      <external-templates />
+      <dependencies>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+      </dependencies>
+      <languageVersions />
+      <dependencyVersions />
+      <mapping-priorities />
+    </generator>
+  </generators>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
@@ -17,6 +33,7 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">90746344-04fd-4286-97d5-b46ae6a81709(jetbrains.mps.lang.migration)</dependency>
     <dependency reexport="false">679ff375-ddae-46fa-9503-1507abcab123(com.mbeddr.core.expressions.interpreter)</dependency>
+    <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
