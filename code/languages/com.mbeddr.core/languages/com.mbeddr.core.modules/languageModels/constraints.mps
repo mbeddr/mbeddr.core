@@ -2,8 +2,8 @@
 <model ref="r:dfbb97c1-bcef-47dd-a044-a2503489b0dd(com.mbeddr.core.modules.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -1912,6 +1912,54 @@
               <node concept="1pGfFk" id="7f3Z9jeIsUD" role="2ShVmc">
                 <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6S8I43GdriH">
+    <property role="3GE5qa" value="preprocessor" />
+    <ref role="1M2myG" to="x27k:6S8I43GdgbJ" resolve="HashIfContent" />
+    <node concept="9S07l" id="6S8I43GdriI" role="9Vyp8">
+      <node concept="3clFbS" id="6S8I43GdriJ" role="2VODD2">
+        <node concept="3clFbF" id="6S8I43GdrpU" role="3cqZAp">
+          <node concept="2OqwBi" id="6S8I43Gdr_p" role="3clFbG">
+            <node concept="nLn13" id="6S8I43GdrpT" role="2Oq$k0" />
+            <node concept="2qgKlT" id="6S8I43GdrTc" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6S8I43Gds3B">
+    <property role="3GE5qa" value="preprocessor" />
+    <ref role="1M2myG" to="x27k:6S8I43Gdgcm" resolve="HashIfReplacement" />
+    <node concept="9S07l" id="6S8I43Gds3C" role="9Vyp8">
+      <node concept="3clFbS" id="6S8I43Gds3D" role="2VODD2">
+        <node concept="3clFbF" id="6S8I43GdsaO" role="3cqZAp">
+          <node concept="2OqwBi" id="6S8I43Gdsmj" role="3clFbG">
+            <node concept="nLn13" id="6S8I43GdsaN" role="2Oq$k0" />
+            <node concept="2qgKlT" id="6S8I43GdsE6" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6S8I43Gdqbm">
+    <property role="3GE5qa" value="preprocessor" />
+    <ref role="1M2myG" to="x27k:6S8I43Gdgby" resolve="Defined_Expression" />
+    <node concept="9S07l" id="6S8I43Gdqbn" role="9Vyp8">
+      <node concept="3clFbS" id="6S8I43Gdqbo" role="2VODD2">
+        <node concept="3clFbF" id="6S8I43Gdqiz" role="3cqZAp">
+          <node concept="2OqwBi" id="6S8I43Gdqu2" role="3clFbG">
+            <node concept="nLn13" id="6S8I43Gdqiy" role="2Oq$k0" />
+            <node concept="2qgKlT" id="6S8I43Gdr8i" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
             </node>
           </node>
         </node>

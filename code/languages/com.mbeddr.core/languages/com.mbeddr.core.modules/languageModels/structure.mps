@@ -2,7 +2,7 @@
 <model ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -16,6 +16,7 @@
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -354,6 +355,9 @@
       <property role="IQ2nx" value="5420368450507972520" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="PrWs8" id="3tp$LrDIuOx" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
+    </node>
     <node concept="1TJgyi" id="3LB9aGk_ryI" role="1TKVEl">
       <property role="IQ2nx" value="4352487882080237742" />
       <property role="TrG5h" value="preprocessorCondition" />
@@ -363,9 +367,6 @@
       <property role="IQ2nx" value="1559434277892772106" />
       <property role="TrG5h" value="alternativeHeaderFileName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="3tp$LrDIuOx" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
     </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fOqJ1">
@@ -1609,6 +1610,180 @@
     <property role="TrG5h" value="IImplementsKnownFunctionPrototype" />
     <node concept="PrWs8" id="20agw21I6Ig" role="PrDN$">
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6S8I43Gdgcm">
+    <property role="EcuMT" value="7928789732966073110" />
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="TrG5h" value="HashIfReplacement" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="PrWs8" id="6S8I43Gdgex" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="M6xJ_" id="6S8I43Gdge$" role="lGtFl">
+      <property role="Hh88m" value="hashifReplacements" />
+      <node concept="tn0Fv" id="6S8I43GdgeB" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+      <node concept="trNpa" id="6S8I43GdgeE" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="6S8I43GdggR" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073399" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6S8I43GdggU" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073402" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyj" id="6S8I43Gdgj9" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073545" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elifs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6S8I43Gdgjg" resolve="HashIfReplacementCase" />
+    </node>
+    <node concept="1TJgyj" id="6S8I43Gdglz" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073699" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="else" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6S8I43GdgnQ">
+    <property role="EcuMT" value="7928789732966073846" />
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="TrG5h" value="HashIfReplacementRef" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="6S8I43Gdgq1" role="lGtFl">
+      <property role="Hh88m" value="hashReplacementRef" />
+      <node concept="trNpa" id="6S8I43Gdgq4" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="6S8I43Gdgsh" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966074129" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="replacement" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6S8I43Gdgcm" resolve="HashIfReplacement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6S8I43GdgbJ">
+    <property role="EcuMT" value="7928789732966073071" />
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="TrG5h" value="HashIfContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6S8I43GdgbK" role="PzmwI">
+      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="6S8I43GdgbS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="1TJgyj" id="6S8I43GdgbY" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073086" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6S8I43Gdgc1" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073089" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="1TJgyj" id="6S8I43Gdgc6" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073094" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cases" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6S8I43GdgbA" resolve="HashCaseContent" />
+    </node>
+    <node concept="1TJgyj" id="6S8I43Gdgcd" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073101" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="else" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6S8I43GdgbA">
+    <property role="EcuMT" value="7928789732966073062" />
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="TrG5h" value="HashCaseContent" />
+    <property role="34LRSv" value="#elif" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6S8I43GdgbB" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073063" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6S8I43GdgbE" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073066" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6S8I43Gdgby">
+    <property role="EcuMT" value="7928789732966073058" />
+    <property role="TrG5h" value="Defined_Expression" />
+    <property role="34LRSv" value="defined" />
+    <property role="3GE5qa" value="preprocessor" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="6S8I43Gdgbz" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073059" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6S8I43Gdgjg">
+    <property role="EcuMT" value="7928789732966073552" />
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="TrG5h" value="HashIfReplacementCase" />
+    <property role="34LRSv" value="#elif" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6S8I43Gdgjh" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073553" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6S8I43Gdgjk" role="1TKVEi">
+      <property role="IQ2ns" value="7928789732966073556" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="ILcBZLkchA">
+    <property role="TrG5h" value="ExtHeaderImport" />
+    <property role="R4oN_" value="import a external generated header" />
+    <property role="34LRSv" value="extrnal header" />
+    <property role="EcuMT" value="842510130385831014" />
+    <node concept="1TJgyi" id="ILcBZLkchB" role="1TKVEl">
+      <property role="TrG5h" value="headerFileName" />
+      <property role="IQ2nx" value="842510130385831015" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="ILcBZLkchD" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
     </node>
   </node>
 </model>
