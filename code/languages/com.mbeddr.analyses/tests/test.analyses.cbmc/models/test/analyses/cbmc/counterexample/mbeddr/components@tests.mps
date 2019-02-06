@@ -1218,6 +1218,10 @@
               <ref role="ehGHo" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
             </node>
           </node>
+          <node concept="38rIoz" id="1nc7plmZ0zV" role="38rM$J">
+            <property role="38rIoG" value="*" />
+            <property role="38rMdH" value="*" />
+          </node>
           <node concept="38rIoz" id="7lmBuXrWIU1" role="38rM$J">
             <property role="38rIoG" value="call" />
             <property role="38rMdH" value="add" />
