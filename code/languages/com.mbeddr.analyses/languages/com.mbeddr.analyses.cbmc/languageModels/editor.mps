@@ -6923,6 +6923,9 @@
       <node concept="PMmxH" id="5tDzxi6RrUn" role="3EZMnx">
         <ref role="PMmxG" node="56VLVOUm_Oq" resolve="TimeoutSettings" />
       </node>
+      <node concept="PMmxH" id="7yZlKoqhALj" role="3EZMnx">
+        <ref role="PMmxG" node="7yZlKoqhA8R" resolve="ReplaceCallsSettings" />
+      </node>
       <node concept="PMmxH" id="5tDzxi6RrVB" role="3EZMnx">
         <ref role="PMmxG" node="2OfxaHaxQ5D" resolve="ExternalFilesSettings" />
       </node>
@@ -7218,6 +7221,66 @@
         </node>
       </node>
       <node concept="2iRfu4" id="60tjEV5PNFh" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7yZlKoqhA7f">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <ref role="1XX52x" to="q5q6:7yZlKoqhA6Y" resolve="ReplaceCall" />
+    <node concept="3EZMnI" id="7yZlKoqhA7h" role="2wV5jI">
+      <node concept="3F0A7n" id="7yZlKoqhA7v" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:7yZlKoqhA6Z" resolve="initialFunctionName" />
+      </node>
+      <node concept="3F0ifn" id="7yZlKoqhA7C" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F0A7n" id="7yZlKoqhA7X" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:7yZlKoqhA72" resolve="replacementFunctionName" />
+      </node>
+      <node concept="l2Vlx" id="7yZlKoqhA7k" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="7yZlKoqhA8R">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="ReplaceCallsSettings" />
+    <ref role="1XX52x" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+    <node concept="3EZMnI" id="7yZlKoqhA8S" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="3F0ifn" id="7yZlKoqhA8T" role="AHCbl">
+        <property role="3F0ifm" value="Replace calls ..." />
+        <node concept="VechU" id="7yZlKoqhA8U" role="3F10Kt">
+          <property role="Vb096" value="darkGray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7yZlKoqhA8V" role="3EZMnx">
+        <property role="3F0ifm" value="Replace calls:" />
+      </node>
+      <node concept="3EZMnI" id="7yZlKoqhA8W" role="3EZMnx">
+        <node concept="VPM3Z" id="7yZlKoqhA8X" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="7yZlKoqhA8Y" role="3EZMnx" />
+        <node concept="3F2HdR" id="7yZlKoqhA8Z" role="3EZMnx">
+          <ref role="1NtTu8" to="q5q6:7yZlKoqhA85" resolve="replaceCalls" />
+          <node concept="2iRkQZ" id="7yZlKoqhA90" role="2czzBx" />
+          <node concept="VPM3Z" id="7yZlKoqhA91" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="7yZlKoqhA92" role="2iSdaV" />
+      </node>
+      <node concept="2EHx9g" id="7yZlKoqhA93" role="2iSdaV" />
+      <node concept="pkWqt" id="7yZlKoqhA94" role="pqm2j">
+        <node concept="3clFbS" id="7yZlKoqhA95" role="2VODD2">
+          <node concept="3clFbF" id="7yZlKoqhA96" role="3cqZAp">
+            <node concept="2OqwBi" id="7yZlKoqhA97" role="3clFbG">
+              <node concept="pncrf" id="7yZlKoqhA98" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7yZlKoqhABZ" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:7yZlKoqhA8m" resolve="hasReplaceCallSettings" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
