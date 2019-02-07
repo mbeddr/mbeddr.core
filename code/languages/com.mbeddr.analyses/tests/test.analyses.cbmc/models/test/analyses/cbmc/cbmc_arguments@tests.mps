@@ -1775,5 +1775,187 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="7yZlKoqkLQz">
+    <property role="TrG5h" value="ReplaceCalls_ExternalLibraries" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="7yZlKoqkLQ$" role="1SL9yI">
+      <property role="TrG5h" value="test_replace_qsort_calls_PASS" />
+      <node concept="3cqZAl" id="7yZlKoqkLQ_" role="3clF45" />
+      <node concept="3clFbS" id="7yZlKoqkLQA" role="3clF47">
+        <node concept="3SKdUt" id="7yZlKoqkLQB" role="3cqZAp">
+          <node concept="3SKdUq" id="7yZlKoqkLQC" role="3SKWNk">
+            <property role="3SKdUp" value="let these tests run only on Windows - we need a non standard version of CBMC for them" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7yZlKoqkLQD" role="3cqZAp">
+          <node concept="3clFbS" id="7yZlKoqkLQE" role="3clFbx">
+            <node concept="3cpWs6" id="7yZlKoqkLQF" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="7yZlKoqkLQG" role="3clFbw">
+            <node concept="10M0yZ" id="7yZlKoqkLQH" role="3fr31v">
+              <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+              <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7yZlKoqkLQI" role="3cqZAp" />
+        <node concept="3cpWs8" id="7yZlKoqkLQJ" role="3cqZAp">
+          <node concept="3cpWsn" id="7yZlKoqkLQK" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="7yZlKoqkLQL" role="1tU5fm" />
+            <node concept="BaHAS" id="7yZlKoqkLQM" role="33vP2m">
+              <property role="BaBD8" value="hppc" />
+              <property role="BaHAW" value="cbmc_arguments" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7yZlKoqkLQN" role="3cqZAp">
+          <node concept="3cpWsn" id="7yZlKoqkLQO" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="_YKpA" id="7yZlKoqkLQP" role="1tU5fm">
+              <node concept="3uibUv" id="7yZlKoqkLQQ" role="_ZDj9">
+                <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="7yZlKoqkLQR" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
+              <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="2OqwBi" id="2Vc9_sOeszm" role="37wK5m">
+                <node concept="1jxXqW" id="2Vc9_sOesi3" role="2Oq$k0" />
+                <node concept="liA8E" id="2Vc9_sOetuK" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="7yZlKoqkLQS" role="37wK5m">
+                <ref role="3cqZAo" node="7yZlKoqkLQK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="7yZlKoqkLQT" role="37wK5m">
+                <property role="Xl_RC" value="entry_replace_qsort_calls_PASS" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7yZlKoqkLQU" role="3cqZAp" />
+        <node concept="3cpWs8" id="7yZlKoqkLQV" role="3cqZAp">
+          <node concept="3cpWsn" id="7yZlKoqkLQW" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="7yZlKoqkLQX" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="7yZlKoqkLQY" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="7yZlKoqkLQZ" role="37wK5m">
+                <ref role="3cqZAo" node="7yZlKoqkLQO" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="7yZlKoqkLR0" role="37wK5m">
+                <property role="Xl_RC" value="Assert: array[i] &lt;= array[i + 1]" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="7yZlKoqkLR1" role="3cqZAp">
+          <node concept="2OqwBi" id="7yZlKoqkLR2" role="3vwVQn">
+            <node concept="37vLTw" id="7yZlKoqkLR3" role="2Oq$k0">
+              <ref role="3cqZAo" node="7yZlKoqkLQW" resolve="res" />
+            </node>
+            <node concept="liA8E" id="7yZlKoqkLR4" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7yZlKoqkLR5" role="1SL9yI">
+      <property role="TrG5h" value="test_replace_qsort_calls_FAIL" />
+      <node concept="3cqZAl" id="7yZlKoqkLR6" role="3clF45" />
+      <node concept="3clFbS" id="7yZlKoqkLR7" role="3clF47">
+        <node concept="3SKdUt" id="7yZlKoqkLR8" role="3cqZAp">
+          <node concept="3SKdUq" id="7yZlKoqkLR9" role="3SKWNk">
+            <property role="3SKdUp" value="let these tests run only on Windows - we need a non standard version of CBMC for them" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7yZlKoqkLRa" role="3cqZAp">
+          <node concept="3clFbS" id="7yZlKoqkLRb" role="3clFbx">
+            <node concept="3cpWs6" id="7yZlKoqkLRc" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="7yZlKoqkLRd" role="3clFbw">
+            <node concept="10M0yZ" id="7yZlKoqkLRe" role="3fr31v">
+              <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+              <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7yZlKoqkLRf" role="3cqZAp" />
+        <node concept="3cpWs8" id="7yZlKoqkLRg" role="3cqZAp">
+          <node concept="3cpWsn" id="7yZlKoqkLRh" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="7yZlKoqkLRi" role="1tU5fm" />
+            <node concept="BaHAS" id="7yZlKoqkLRj" role="33vP2m">
+              <property role="BaBD8" value="hppc" />
+              <property role="BaHAW" value="cbmc_arguments" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7yZlKoqkLRk" role="3cqZAp">
+          <node concept="3cpWsn" id="7yZlKoqkLRl" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="_YKpA" id="7yZlKoqkLRm" role="1tU5fm">
+              <node concept="3uibUv" id="7yZlKoqkLRn" role="_ZDj9">
+                <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="7yZlKoqkLRo" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
+              <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="2OqwBi" id="2Vc9_sOetB8" role="37wK5m">
+                <node concept="1jxXqW" id="2Vc9_sOetB9" role="2Oq$k0" />
+                <node concept="liA8E" id="2Vc9_sOetBa" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="7yZlKoqkLRp" role="37wK5m">
+                <ref role="3cqZAo" node="7yZlKoqkLRh" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="7yZlKoqkLRq" role="37wK5m">
+                <property role="Xl_RC" value="entry_replace_qsort_calls_FAIL" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7yZlKoqkLRr" role="3cqZAp" />
+        <node concept="3cpWs8" id="7yZlKoqkLRs" role="3cqZAp">
+          <node concept="3cpWsn" id="7yZlKoqkLRt" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="7yZlKoqkLRu" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="7yZlKoqkLRv" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="7yZlKoqkLRw" role="37wK5m">
+                <ref role="3cqZAo" node="7yZlKoqkLRl" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="7yZlKoqkLRx" role="37wK5m">
+                <property role="Xl_RC" value="Assert: array[i] &lt;= array[i + 1]" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="7yZlKoqkLRy" role="3cqZAp">
+          <node concept="2OqwBi" id="7yZlKoqkLRz" role="3vwVQn">
+            <node concept="37vLTw" id="7yZlKoqkLR$" role="2Oq$k0">
+              <ref role="3cqZAo" node="7yZlKoqkLRt" resolve="res" />
+            </node>
+            <node concept="liA8E" id="7yZlKoqkLR_" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
