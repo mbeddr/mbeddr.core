@@ -1797,6 +1797,153 @@
         <node concept="17QB3L" id="7kPcpiFgqBr" role="3rvQeY" />
       </node>
     </node>
+    <node concept="13i0hz" id="7yZlKoqiLZZ" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="replaceCalls" />
+      <node concept="3Tm1VV" id="7yZlKoqiM00" role="1B3o_S" />
+      <node concept="3clFbS" id="7yZlKoqiM01" role="3clF47">
+        <node concept="3cpWs8" id="7yZlKoqiM02" role="3cqZAp">
+          <node concept="3cpWsn" id="7yZlKoqiM03" role="3cpWs9">
+            <property role="TrG5h" value="replaceCalls" />
+            <node concept="3rvAFt" id="7yZlKoqiM04" role="1tU5fm">
+              <node concept="17QB3L" id="7yZlKoqiM05" role="3rvSg0" />
+              <node concept="17QB3L" id="7yZlKoqiM06" role="3rvQeY" />
+            </node>
+            <node concept="2ShNRf" id="7yZlKoqiM07" role="33vP2m">
+              <node concept="3rGOSV" id="7yZlKoqiM08" role="2ShVmc">
+                <node concept="17QB3L" id="7yZlKoqiM09" role="3rHrn6" />
+                <node concept="17QB3L" id="7yZlKoqiM0a" role="3rHtpV" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7yZlKoqiM0b" role="3cqZAp">
+          <node concept="3SKdUq" id="7yZlKoqiM0c" role="3SKWNk">
+            <property role="3SKdUp" value="first take the replace calls defined by the parent" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7yZlKoqiM0d" role="3cqZAp">
+          <node concept="3clFbS" id="7yZlKoqiM0e" role="3clFbx">
+            <node concept="3clFbF" id="7yZlKoqiM0f" role="3cqZAp">
+              <node concept="37vLTI" id="7yZlKoqiM0g" role="3clFbG">
+                <node concept="37vLTw" id="7yZlKoqiM0h" role="37vLTJ">
+                  <ref role="3cqZAo" node="7yZlKoqiM03" resolve="replaceCalls" />
+                </node>
+                <node concept="2OqwBi" id="7yZlKoqiM0i" role="37vLTx">
+                  <node concept="2OqwBi" id="7yZlKoqiM0j" role="2Oq$k0">
+                    <node concept="13iPFW" id="7yZlKoqiM0k" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="7yZlKoqiM0l" role="2OqNvi">
+                      <node concept="1xMEDy" id="7yZlKoqiM0m" role="1xVPHs">
+                        <node concept="chp4Y" id="7yZlKoqiM0n" role="ri$Ld">
+                          <ref role="cht4Q" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="7yZlKoqiM0o" role="2OqNvi">
+                    <ref role="37wK5l" node="7yZlKoqiLZZ" resolve="replaceCalls" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7yZlKoqiM0p" role="3clFbw">
+            <node concept="2OqwBi" id="7yZlKoqiM0q" role="2Oq$k0">
+              <node concept="13iPFW" id="7yZlKoqiM0r" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7yZlKoqiM0s" role="2OqNvi">
+                <node concept="1xMEDy" id="7yZlKoqiM0t" role="1xVPHs">
+                  <node concept="chp4Y" id="7yZlKoqiM0u" role="ri$Ld">
+                    <ref role="cht4Q" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7yZlKoqiM0v" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7yZlKoqiM0w" role="3cqZAp">
+          <node concept="3SKdUq" id="7yZlKoqiM0x" role="3SKWNk">
+            <property role="3SKdUp" value="overwrite the parent settings with more concrete ones" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7yZlKoqiM0y" role="3cqZAp">
+          <node concept="3clFbS" id="7yZlKoqiM0z" role="3clFbx">
+            <node concept="3clFbF" id="7yZlKoqiM0$" role="3cqZAp">
+              <node concept="2OqwBi" id="7yZlKoqiM0_" role="3clFbG">
+                <node concept="2OqwBi" id="7yZlKoqiM0A" role="2Oq$k0">
+                  <node concept="13iPFW" id="7yZlKoqiM0B" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="7yZlKoqiO$C" role="2OqNvi">
+                    <ref role="3TtcxE" to="q5q6:7yZlKoqhA85" resolve="replaceCalls" />
+                  </node>
+                </node>
+                <node concept="2es0OD" id="7yZlKoqiM0D" role="2OqNvi">
+                  <node concept="1bVj0M" id="7yZlKoqiM0E" role="23t8la">
+                    <node concept="3clFbS" id="7yZlKoqiM0F" role="1bW5cS">
+                      <node concept="3clFbF" id="7yZlKoqiM0G" role="3cqZAp">
+                        <node concept="37vLTI" id="7yZlKoqiM0H" role="3clFbG">
+                          <node concept="2OqwBi" id="7yZlKoqiM0I" role="37vLTx">
+                            <node concept="37vLTw" id="7yZlKoqiM0J" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7yZlKoqiM0Q" resolve="it" />
+                            </node>
+                            <node concept="3TrcHB" id="7yZlKoqjeK2" role="2OqNvi">
+                              <ref role="3TsBF5" to="q5q6:7yZlKoqhA72" resolve="replacementFunctionName" />
+                            </node>
+                          </node>
+                          <node concept="3EllGN" id="7yZlKoqiM0L" role="37vLTJ">
+                            <node concept="2OqwBi" id="7yZlKoqiM0M" role="3ElVtu">
+                              <node concept="37vLTw" id="7yZlKoqiM0N" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7yZlKoqiM0Q" resolve="it" />
+                              </node>
+                              <node concept="3TrcHB" id="7yZlKoqjeyW" role="2OqNvi">
+                                <ref role="3TsBF5" to="q5q6:7yZlKoqhA6Z" resolve="initialFunctionName" />
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="7yZlKoqiM0P" role="3ElQJh">
+                              <ref role="3cqZAo" node="7yZlKoqiM03" resolve="replaceCalls" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="7yZlKoqiM0Q" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="7yZlKoqiM0R" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="7yZlKoqiM0S" role="3clFbw">
+            <node concept="2OqwBi" id="7yZlKoqiM0T" role="3uHU7w">
+              <node concept="2OqwBi" id="7yZlKoqiM0U" role="2Oq$k0">
+                <node concept="13iPFW" id="7yZlKoqiM0V" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="7yZlKoqiOkT" role="2OqNvi">
+                  <ref role="3TtcxE" to="q5q6:7yZlKoqhA85" resolve="replaceCalls" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="7yZlKoqiM0X" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="7yZlKoqiM0Y" role="3uHU7B">
+              <node concept="13iPFW" id="7yZlKoqiM0Z" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7yZlKoqiO6n" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:7yZlKoqhA8m" resolve="hasReplaceCallSettings" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7yZlKoqiM11" role="3cqZAp">
+          <node concept="37vLTw" id="7yZlKoqiM12" role="3cqZAk">
+            <ref role="3cqZAo" node="7yZlKoqiM03" resolve="replaceCalls" />
+          </node>
+        </node>
+      </node>
+      <node concept="3rvAFt" id="7yZlKoqiM13" role="3clF45">
+        <node concept="17QB3L" id="7yZlKoqiM14" role="3rvSg0" />
+        <node concept="17QB3L" id="7yZlKoqiM15" role="3rvQeY" />
+      </node>
+    </node>
     <node concept="13i0hz" id="1Qze4b3i4Bp" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />

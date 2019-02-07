@@ -1024,5 +1024,107 @@
       <property role="1SWRpm" value="ANALYSIS" />
     </node>
   </node>
+  <node concept="2S6QgY" id="7yZlKoqhExf">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="toggleReplaceCallsSettings" />
+    <ref role="2ZfgGC" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+    <node concept="2S6ZIM" id="7yZlKoqhExg" role="2ZfVej">
+      <node concept="3clFbS" id="7yZlKoqhExh" role="2VODD2">
+        <node concept="3cpWs8" id="7yZlKoqhExi" role="3cqZAp">
+          <node concept="3cpWsn" id="7yZlKoqhExj" role="3cpWs9">
+            <property role="TrG5h" value="whatToShowHide" />
+            <node concept="17QB3L" id="7yZlKoqhExk" role="1tU5fm" />
+            <node concept="Xl_RD" id="7yZlKoqhExl" role="33vP2m">
+              <property role="Xl_RC" value="Replace Calls Settings" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7yZlKoqhExm" role="3cqZAp">
+          <node concept="3clFbS" id="7yZlKoqhExn" role="3clFbx">
+            <node concept="3cpWs6" id="7yZlKoqhExo" role="3cqZAp">
+              <node concept="3cpWs3" id="7yZlKoqhExp" role="3cqZAk">
+                <node concept="37vLTw" id="7yZlKoqhExq" role="3uHU7w">
+                  <ref role="3cqZAo" node="7yZlKoqhExj" resolve="whatToShowHide" />
+                </node>
+                <node concept="Xl_RD" id="7yZlKoqhExr" role="3uHU7B">
+                  <property role="Xl_RC" value="Delete  " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7yZlKoqhExs" role="3clFbw">
+            <node concept="2Sf5sV" id="7yZlKoqhExt" role="2Oq$k0" />
+            <node concept="3TrcHB" id="7yZlKoqhZsx" role="2OqNvi">
+              <ref role="3TsBF5" to="q5q6:7yZlKoqhA8m" resolve="hasReplaceCallSettings" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="7yZlKoqhExv" role="9aQIa">
+            <node concept="3clFbS" id="7yZlKoqhExw" role="9aQI4">
+              <node concept="3cpWs6" id="7yZlKoqhExx" role="3cqZAp">
+                <node concept="3cpWs3" id="7yZlKoqhExy" role="3cqZAk">
+                  <node concept="37vLTw" id="7yZlKoqhExz" role="3uHU7w">
+                    <ref role="3cqZAo" node="7yZlKoqhExj" resolve="whatToShowHide" />
+                  </node>
+                  <node concept="Xl_RD" id="7yZlKoqhEx$" role="3uHU7B">
+                    <property role="Xl_RC" value="Add " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7yZlKoqhEx_" role="2ZfgGD">
+      <node concept="3clFbS" id="7yZlKoqhExA" role="2VODD2">
+        <node concept="3clFbF" id="7yZlKoqhExB" role="3cqZAp">
+          <node concept="37vLTI" id="7yZlKoqhExC" role="3clFbG">
+            <node concept="3fqX7Q" id="7yZlKoqhExD" role="37vLTx">
+              <node concept="2OqwBi" id="7yZlKoqhExE" role="3fr31v">
+                <node concept="2Sf5sV" id="7yZlKoqhExF" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7yZlKoqi03q" role="2OqNvi">
+                  <ref role="3TsBF5" to="q5q6:7yZlKoqhA8m" resolve="hasReplaceCallSettings" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7yZlKoqhExH" role="37vLTJ">
+              <node concept="2Sf5sV" id="7yZlKoqhExI" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7yZlKoqhZOv" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:7yZlKoqhA8m" resolve="hasReplaceCallSettings" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7yZlKoqhExK" role="3cqZAp">
+          <node concept="3clFbS" id="7yZlKoqhExL" role="3clFbx">
+            <node concept="3clFbF" id="7yZlKoqhExM" role="3cqZAp">
+              <node concept="2OqwBi" id="7yZlKoqhExN" role="3clFbG">
+                <node concept="2OqwBi" id="7yZlKoqhExO" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="7yZlKoqhExP" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="7yZlKoqi1k_" role="2OqNvi">
+                    <ref role="3TtcxE" to="q5q6:7yZlKoqhA85" resolve="replaceCalls" />
+                  </node>
+                </node>
+                <node concept="2Kehj3" id="7yZlKoqhExR" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="7yZlKoqhExS" role="3clFbw">
+            <node concept="1eOMI4" id="7yZlKoqhExT" role="3fr31v">
+              <node concept="2OqwBi" id="7yZlKoqhExU" role="1eOMHV">
+                <node concept="2Sf5sV" id="7yZlKoqhExV" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7yZlKoqi0eX" role="2OqNvi">
+                  <ref role="3TsBF5" to="q5q6:7yZlKoqhA8m" resolve="hasReplaceCallSettings" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="7yZlKoqhExX" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
+    </node>
+  </node>
 </model>
 
