@@ -543,6 +543,11 @@
       <property role="IQ2nx" value="8327535879610783060" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="6b3VADytZVC" role="1TKVEl">
+      <property role="IQ2nx" value="7116793976861490920" />
+      <property role="TrG5h" value="localizeFaults" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyi" id="7ehmsbAxlme" role="1TKVEl">
       <property role="TrG5h" value="hasLocalTimeout" />
       <property role="IQ2nx" value="8327535879610783118" />

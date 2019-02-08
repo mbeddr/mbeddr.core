@@ -1394,6 +1394,17 @@
         </node>
       </node>
     </node>
+    <node concept="2RhdJD" id="6b3VADyt_Pm" role="jymVt">
+      <property role="2RkwnN" value="localizeFaults" />
+      <node concept="3Tm1VV" id="6b3VADyt_Pn" role="1B3o_S" />
+      <node concept="2RoN1w" id="6b3VADyt_Po" role="2RnVtd">
+        <node concept="3wEZqW" id="6b3VADyt_Pp" role="3wFrgM" />
+        <node concept="3xqBd$" id="6b3VADyt_Pq" role="3xrYvX">
+          <node concept="3Tm1VV" id="6b3VADytCh_" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="10P_77" id="6b3VADytBXk" role="2RkE6I" />
+    </node>
     <node concept="2RhdJD" id="4AQNBfVagq8" role="jymVt">
       <property role="2RkwnN" value="usedCBMCVersion" />
       <node concept="3Tm1VV" id="4AQNBfVagq9" role="1B3o_S" />
@@ -1876,6 +1887,16 @@
             </node>
             <node concept="338YkY" id="7o3rBRxCWIo" role="37vLTJ">
               <ref role="338YkT" node="7o3rBRxCVYG" resolve="shouldUseGCCUnderWindows" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6b3VADytCY4" role="3cqZAp">
+          <node concept="37vLTI" id="6b3VADytDFG" role="3clFbG">
+            <node concept="3clFbT" id="6b3VADytDRZ" role="37vLTx">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="338YkY" id="6b3VADytCY2" role="37vLTJ">
+              <ref role="338YkT" node="6b3VADyt_Pm" resolve="localizeFaults" />
             </node>
           </node>
         </node>
@@ -2372,6 +2393,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6b3VADytFfl" role="3cqZAp">
+          <node concept="37vLTI" id="6b3VADytHtf" role="3clFbG">
+            <node concept="338YkY" id="6b3VADytHMq" role="37vLTx">
+              <ref role="338YkT" node="6b3VADyt_Pm" resolve="localizeFaults" />
+            </node>
+            <node concept="2OqwBi" id="6b3VADytGC9" role="37vLTJ">
+              <node concept="37vLTw" id="6b3VADytFfj" role="2Oq$k0">
+                <ref role="3cqZAo" node="4_Ba8HNNIOG" resolve="res" />
+              </node>
+              <node concept="2S8uIT" id="6b3VADytH4F" role="2OqNvi">
+                <ref role="2S8YL0" node="6b3VADyt_Pm" resolve="localizeFaults" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4AQNBfVan$R" role="3cqZAp">
           <node concept="37vLTI" id="4AQNBfVapA7" role="3clFbG">
             <node concept="338YkY" id="4AQNBfVapV4" role="37vLTx">
@@ -2834,7 +2870,7 @@
               <node concept="1Rwk04" id="4_Ba8HNRsUn" role="2OqNvi" />
             </node>
             <node concept="3cmrfG" id="NfDeW0RLaa" role="3uHU7w">
-              <property role="3cmrfH" value="47" />
+              <property role="3cmrfH" value="48" />
             </node>
           </node>
         </node>
@@ -3635,6 +3671,26 @@
                     </node>
                     <node concept="2S8uIT" id="7yZlKoqiQV0" role="2OqNvi">
                       <ref role="2S8YL0" node="7yZlKoqgtT9" resolve="replaceCalls" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6b3VADytTUl" role="3cqZAp">
+                <node concept="37vLTI" id="6b3VADytV9H" role="3clFbG">
+                  <node concept="2OqwBi" id="6b3VADytVpt" role="37vLTx">
+                    <node concept="37vLTw" id="6b3VADytVdN" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5BkFC2yiYph" resolve="config" />
+                    </node>
+                    <node concept="2qgKlT" id="6b3VADyu0q2" role="2OqNvi">
+                      <ref role="37wK5l" to="th2u:6b3VADytW_I" resolve="localizeFaults" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="6b3VADytUhA" role="37vLTJ">
+                    <node concept="37vLTw" id="6b3VADytTUj" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5BkFC2yiYoA" resolve="conf" />
+                    </node>
+                    <node concept="2S8uIT" id="6b3VADytUO6" role="2OqNvi">
+                      <ref role="2S8YL0" node="6b3VADyt_Pm" resolve="localizeFaults" />
                     </node>
                   </node>
                 </node>
@@ -5296,6 +5352,30 @@
               <ref role="1Px2BO" node="40PV5hA1DQ3" resolve="CBMCAnalysisConfig.PROVER" />
             </node>
             <node concept="3clFbS" id="2UdJgvCXO0M" role="3Kbo56">
+              <node concept="3clFbJ" id="6b3VADytO1r" role="3cqZAp">
+                <node concept="3clFbS" id="6b3VADytO1t" role="3clFbx">
+                  <node concept="3clFbF" id="6lZZfFOX6B8" role="3cqZAp">
+                    <node concept="2OqwBi" id="6lZZfFOX88L" role="3clFbG">
+                      <node concept="37vLTw" id="6lZZfFOX6B6" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                      </node>
+                      <node concept="TSZUe" id="6lZZfFOX9yR" role="2OqNvi">
+                        <node concept="Xl_RD" id="6lZZfFOX9Kt" role="25WWJ7">
+                          <property role="Xl_RC" value="--localize-faults" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6b3VADytPJh" role="3clFbw">
+                  <node concept="37vLTw" id="6b3VADytPqF" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2UdJgvCXO1M" resolve="configuration" />
+                  </node>
+                  <node concept="2S8uIT" id="6b3VADytQ0X" role="2OqNvi">
+                    <ref role="2S8YL0" node="6b3VADyt_Pm" resolve="localizeFaults" />
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbJ" id="7kPcpiFhoRb" role="3cqZAp">
                 <node concept="3clFbS" id="7kPcpiFhoRc" role="3clFbx">
                   <node concept="3clFbF" id="7kPcpiFhoRd" role="3cqZAp">
