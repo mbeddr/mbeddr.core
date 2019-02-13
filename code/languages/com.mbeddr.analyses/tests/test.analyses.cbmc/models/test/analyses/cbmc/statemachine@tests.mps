@@ -179,64 +179,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2inL$G3eur4" role="3cqZAp" />
-        <node concept="3cpWs8" id="1kjPA_yrMXn" role="3cqZAp">
-          <node concept="3cpWsn" id="1kjPA_yrMXo" role="3cpWs9">
-            <property role="TrG5h" value="r0" />
-            <node concept="3uibUv" id="1kjPA_yrMXp" role="1tU5fm">
-              <ref role="3uigEE" to="iehc:4arT0cnsjXC" resolve="StatemachineResult" />
-            </node>
-            <node concept="NRdvd" id="5EwdfGVi0ob" role="33vP2m">
-              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
-              <node concept="37vLTw" id="5EwdfGVi0oc" role="37wK5m">
-                <ref role="3cqZAo" node="4kJ3EIm6idc" resolve="res" />
-              </node>
-              <node concept="Xl_RD" id="5EwdfGVi0od" role="37wK5m">
-                <property role="Xl_RC" value="State Init is reachable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3vwNmj" id="1kjPA_yrNSO" role="3cqZAp">
-          <node concept="2OqwBi" id="1kjPA_yrOaK" role="3vwVQn">
-            <node concept="37vLTw" id="1kjPA_yrO8N" role="2Oq$k0">
-              <ref role="3cqZAo" node="1kjPA_yrMXo" resolve="r0" />
-            </node>
-            <node concept="liA8E" id="1kjPA_yrOrJ" role="2OqNvi">
-              <ref role="37wK5l" to="iehc:4arT0cnsjYl" resolve="propertyHolds" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1kjPA_yrOsl" role="3cqZAp" />
-        <node concept="3cpWs8" id="1kjPA_yrOXV" role="3cqZAp">
-          <node concept="3cpWsn" id="1kjPA_yrOXW" role="3cpWs9">
-            <property role="TrG5h" value="r1" />
-            <node concept="3uibUv" id="1kjPA_yrOXX" role="1tU5fm">
-              <ref role="3uigEE" to="iehc:4arT0cnsjXC" resolve="StatemachineResult" />
-            </node>
-            <node concept="NRdvd" id="5EwdfGVi0Ab" role="33vP2m">
-              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
-              <node concept="37vLTw" id="5EwdfGVi0Ac" role="37wK5m">
-                <ref role="3cqZAo" node="4kJ3EIm6idc" resolve="res" />
-              </node>
-              <node concept="Xl_RD" id="5EwdfGVi0Ad" role="37wK5m">
-                <property role="Xl_RC" value="State Reachable is reachable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3vwNmj" id="1kjPA_yrOY1" role="3cqZAp">
-          <node concept="2OqwBi" id="1kjPA_yrOY2" role="3vwVQn">
-            <node concept="37vLTw" id="1kjPA_yrOY3" role="2Oq$k0">
-              <ref role="3cqZAo" node="1kjPA_yrOXW" resolve="r1" />
-            </node>
-            <node concept="liA8E" id="1kjPA_yrOY4" role="2OqNvi">
-              <ref role="37wK5l" to="iehc:4arT0cnsjYl" resolve="propertyHolds" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1kjPA_yrPgS" role="3cqZAp" />
         <node concept="3cpWs8" id="1kjPA_yrPQy" role="3cqZAp">
           <node concept="3cpWsn" id="1kjPA_yrPQz" role="3cpWs9">
             <property role="TrG5h" value="r2" />
@@ -376,7 +318,7 @@
             <node concept="34oBXx" id="P13yCX$NYo" role="2OqNvi" />
           </node>
           <node concept="3cmrfG" id="P13yCXF$_S" role="3tpDZB">
-            <property role="3cmrfH" value="19" />
+            <property role="3cmrfH" value="18" />
           </node>
         </node>
         <node concept="3clFbH" id="P13yCX$NYp" role="3cqZAp" />
@@ -585,7 +527,7 @@
             <node concept="34oBXx" id="1hOANNHUlCX" role="2OqNvi" />
           </node>
           <node concept="3cmrfG" id="57Wj6IPeJ_M" role="3tpDZB">
-            <property role="3cmrfH" value="8" />
+            <property role="3cmrfH" value="7" />
           </node>
         </node>
         <node concept="3clFbH" id="1hOANNHUlCZ" role="3cqZAp" />
@@ -749,39 +691,10 @@
             <node concept="34oBXx" id="7Tdla9PNGK3" role="2OqNvi" />
           </node>
           <node concept="3cmrfG" id="7Tdla9PNGK4" role="3tpDZB">
-            <property role="3cmrfH" value="7" />
+            <property role="3cmrfH" value="6" />
           </node>
         </node>
         <node concept="3clFbH" id="7Tdla9PNGK5" role="3cqZAp" />
-        <node concept="3cpWs8" id="7Tdla9PNGK6" role="3cqZAp">
-          <node concept="3cpWsn" id="7Tdla9PNGK7" role="3cpWs9">
-            <property role="TrG5h" value="r0" />
-            <node concept="3uibUv" id="7Tdla9PNGK8" role="1tU5fm">
-              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
-            </node>
-            <node concept="NRdvd" id="5EwdfGVhZp6" role="33vP2m">
-              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
-              <node concept="37vLTw" id="5EwdfGVhZp7" role="37wK5m">
-                <ref role="3cqZAo" node="7Tdla9PNGJ_" resolve="res" />
-              </node>
-              <node concept="Xl_RD" id="5EwdfGVhZp8" role="37wK5m">
-                <property role="Xl_RC" value="State J0 is reachable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3vwNmj" id="7Tdla9PNGKc" role="3cqZAp">
-          <node concept="2OqwBi" id="7Tdla9PNGKd" role="3vwVQn">
-            <node concept="37vLTw" id="7Tdla9PNGKe" role="2Oq$k0">
-              <ref role="3cqZAo" node="7Tdla9PNGK7" resolve="r0" />
-            </node>
-            <node concept="liA8E" id="7Tdla9PNGKf" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7Tdla9PNGKg" role="3cqZAp" />
         <node concept="3cpWs8" id="7Tdla9PNSAF" role="3cqZAp">
           <node concept="3cpWsn" id="7Tdla9PNSAG" role="3cpWs9">
             <property role="TrG5h" value="r1" />
