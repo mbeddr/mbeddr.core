@@ -5852,13 +5852,6 @@
               <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
           </node>
-          <node concept="38rIoz" id="3kmIFBmen93" role="38rM$J">
-            <property role="38rIoG" value="stringLiteral" />
-            <property role="38rMdH" value="&quot;some string&quot;" />
-            <node concept="3Tqbb2" id="3kmIFBmen94" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
           <node concept="38rIoz" id="3kmIFBmfodX" role="38rM$J">
             <property role="38rIoG" value="aStringArrayInstance[0]" />
             <property role="38rMdH" value="48" />
@@ -5884,13 +5877,6 @@
             <property role="38rIoG" value="aStringArrayInstance[3]" />
             <property role="38rMdH" value="0" />
             <node concept="3Tqbb2" id="6dVgVd3HW$I" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
-          <node concept="38rIoz" id="3kmIFBmen97" role="38rM$J">
-            <property role="38rIoG" value="i8Ptr" />
-            <property role="38rMdH" value="&quot;Hallo Welt&quot;" />
-            <node concept="3Tqbb2" id="3kmIFBmen98" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
