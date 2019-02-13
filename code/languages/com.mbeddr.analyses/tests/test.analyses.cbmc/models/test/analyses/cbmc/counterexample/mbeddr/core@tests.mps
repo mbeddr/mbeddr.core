@@ -5650,13 +5650,6 @@
               <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
           </node>
-          <node concept="38rIoz" id="6Xk4NhNawEu" role="38rM$J">
-            <property role="38rIoG" value="john.name" />
-            <property role="38rMdH" value="&quot;John&quot;" />
-            <node concept="3Tqbb2" id="6Xk4NhNawEv" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
           <node concept="38rIoz" id="6Xk4NhNawEw" role="38rM$J">
             <property role="38rIoG" value="john.age" />
             <property role="38rMdH" value="32" />
