@@ -4144,13 +4144,6 @@
               <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
           </node>
-          <node concept="38rIoz" id="2V53qRfZKzk" role="38rM$J">
-            <property role="38rIoG" value="stringLiteral" />
-            <property role="38rMdH" value="&quot;some value&quot;" />
-            <node concept="3Tqbb2" id="2V53qRfZKzl" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
           <node concept="38rIoz" id="2V53qRfZKzm" role="38rM$J">
             <property role="38rIoG" value="octalLiteral" />
             <property role="38rMdH" value="9" />
@@ -4225,27 +4218,6 @@
             <property role="38rIoG" value="intArray[2]" />
             <property role="38rMdH" value="3" />
             <node concept="3Tqbb2" id="21uLVwEIpU4" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
-          <node concept="38rIoz" id="70FTS8kdTsk" role="38rM$J">
-            <property role="38rIoG" value="stringArray[0]" />
-            <property role="38rMdH" value="&quot;a&quot;" />
-            <node concept="3Tqbb2" id="70FTS8kdTsl" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
-          <node concept="38rIoz" id="70FTS8kdTsm" role="38rM$J">
-            <property role="38rIoG" value="stringArray[1]" />
-            <property role="38rMdH" value="&quot;b&quot;" />
-            <node concept="3Tqbb2" id="70FTS8kdTsn" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
-          <node concept="38rIoz" id="70FTS8kdTso" role="38rM$J">
-            <property role="38rIoG" value="stringArray[2]" />
-            <property role="38rMdH" value="&quot;c&quot;" />
-            <node concept="3Tqbb2" id="70FTS8kdTsp" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
