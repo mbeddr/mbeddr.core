@@ -44,7 +44,7 @@ subprojects {
     apply plugin: "base"
     apply plugin: "maven-publish"
     ext.mbeddrMajor = "1"
-    ext.mbeddrMinor = "2"
+    ext.mbeddrMinor = "3"
 
     // switch to snapshot/release repositories passed with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
@@ -88,7 +88,7 @@ subprojects {
             } else {
                 ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
             }
-            if(mbeddrBuild == "stable") {
+            if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("mps-")) {
                 mbeddrBuild = "master"
             }
             ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
