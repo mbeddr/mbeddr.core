@@ -4113,21 +4113,41 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3aDyPAXUyaP" role="3cqZAp">
-              <node concept="2OqwBi" id="3aDyPAXUz1Q" role="3clFbG">
-                <node concept="2OqwBi" id="3aDyPAXUyyc" role="2Oq$k0">
-                  <node concept="37vLTw" id="3aDyPAXUyaN" role="2Oq$k0">
+            <node concept="3SKdUt" id="1cqjeUW7sBI" role="3cqZAp">
+              <node concept="3SKdUq" id="1cqjeUW7sBK" role="3SKWNk">
+                <property role="3SKdUp" value="if this goal already got inputs2values, then do not add the current ones" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="1cqjeUW7n0n" role="3cqZAp">
+              <node concept="3clFbS" id="1cqjeUW7n0p" role="3clFbx">
+                <node concept="3clFbF" id="3aDyPAXUyaP" role="3cqZAp">
+                  <node concept="2OqwBi" id="3aDyPAXUz1Q" role="3clFbG">
+                    <node concept="2OqwBi" id="3aDyPAXUyyc" role="2Oq$k0">
+                      <node concept="37vLTw" id="3aDyPAXUyaN" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3aDyPAXUwX8" resolve="info" />
+                      </node>
+                      <node concept="2OwXpG" id="3aDyPAXUyDw" role="2OqNvi">
+                        <ref role="2Oxat5" node="3aDyPAXUcTk" resolve="inputs2Values" />
+                      </node>
+                    </node>
+                    <node concept="X8dFx" id="3aDyPAY4Yf7" role="2OqNvi">
+                      <node concept="37vLTw" id="3aDyPAY4ZaI" role="25WWJ7">
+                        <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1cqjeUW7qbQ" role="3clFbw">
+                <node concept="2OqwBi" id="1cqjeUW7p6O" role="2Oq$k0">
+                  <node concept="37vLTw" id="1cqjeUW7ncl" role="2Oq$k0">
                     <ref role="3cqZAo" node="3aDyPAXUwX8" resolve="info" />
                   </node>
-                  <node concept="2OwXpG" id="3aDyPAXUyDw" role="2OqNvi">
+                  <node concept="2OwXpG" id="1cqjeUW7pjB" role="2OqNvi">
                     <ref role="2Oxat5" node="3aDyPAXUcTk" resolve="inputs2Values" />
                   </node>
                 </node>
-                <node concept="X8dFx" id="3aDyPAY4Yf7" role="2OqNvi">
-                  <node concept="37vLTw" id="3aDyPAY4ZaI" role="25WWJ7">
-                    <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
-                  </node>
-                </node>
+                <node concept="1v1jN8" id="1cqjeUW7rNN" role="2OqNvi" />
               </node>
             </node>
           </node>
