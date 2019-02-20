@@ -64,6 +64,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -12194,12 +12195,12 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="4fvA6ORpdll" role="3clFbw">
-            <node concept="37vLTw" id="4fvA6ORpdIh" role="3uHU7w">
-              <ref role="3cqZAo" to="ood5:7F8$WoW5PEY" resolve="stepsNumber" />
-            </node>
+          <node concept="2d3UOw" id="2GJ7cFTTz0S" role="3clFbw">
             <node concept="37vLTw" id="4fvA6ORpc$e" role="3uHU7B">
               <ref role="3cqZAo" node="4fvA6ORp8nJ" resolve="publishedResultsNumber" />
+            </node>
+            <node concept="37vLTw" id="4fvA6ORpdIh" role="3uHU7w">
+              <ref role="3cqZAo" to="ood5:7F8$WoW5PEY" resolve="stepsNumber" />
             </node>
           </node>
         </node>
