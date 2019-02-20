@@ -180,6 +180,7 @@
     <property role="TrG5h" value="Exercise" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="3909459679554886014" />
+    <property role="R4oN_" value="A group of tasks that together teach a useful lesson." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2ZHlC00bw3c" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -220,6 +221,9 @@
     </node>
     <node concept="PrWs8" id="3p1cdQ7_dA1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="57DYivE2mlG" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
     </node>
     <node concept="1QGGSu" id="6LCinStDtiP" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/play.png" />

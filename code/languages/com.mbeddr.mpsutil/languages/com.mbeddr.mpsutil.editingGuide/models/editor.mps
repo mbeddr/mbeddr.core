@@ -329,6 +329,156 @@
         <node concept="2iRkQZ" id="3p1cdQ7_pJl" role="2czzBx" />
       </node>
     </node>
+    <node concept="3EZMnI" id="57DYivE2qBw" role="6VMZX">
+      <node concept="3F0ifn" id="57DYivE2qBx" role="3EZMnx">
+        <property role="3F0ifm" value="Description:" />
+        <ref role="1k5W1q" to="tpc5:hF4yUZ8" resolve="header" />
+      </node>
+      <node concept="PMmxH" id="57DYivE2qBy" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:5K$8XMPc9pW" resolve="ShortDescriptionEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="57DYivE2qBz" role="3EZMnx" />
+      <node concept="3F0ifn" id="57DYivE2qB$" role="3EZMnx">
+        <property role="3F0ifm" value="Common:" />
+        <ref role="1k5W1q" to="tpc5:hF4yUZ8" resolve="header" />
+      </node>
+      <node concept="3EZMnI" id="57DYivE2qB_" role="3EZMnx">
+        <node concept="3EZMnI" id="57DYivE2qBA" role="3EZMnx">
+          <node concept="VPM3Z" id="57DYivE2qBB" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="57DYivE2qBC" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="57DYivE2qBD" role="3EZMnx">
+            <property role="3F0ifm" value="Name" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+          </node>
+          <node concept="3EZMnI" id="57DYivE2qBE" role="3EZMnx">
+            <node concept="VPM3Z" id="57DYivE2qBF" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="VPXOz" id="57DYivE2qBG" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="3F0A7n" id="57DYivE2qBH" role="3EZMnx">
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="2iRfu4" id="57DYivE2qBI" role="2iSdaV" />
+          </node>
+          <node concept="2iRfu4" id="57DYivE2qBJ" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="57DYivE2qBK" role="3EZMnx">
+          <node concept="VPM3Z" id="57DYivE2qBL" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="57DYivE2qBM" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="57DYivE2qBN" role="3EZMnx">
+            <property role="3F0ifm" value="Allow users using the skip button" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+          </node>
+          <node concept="3EZMnI" id="57DYivE2qBO" role="3EZMnx">
+            <node concept="VPM3Z" id="57DYivE2qBP" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="VPXOz" id="57DYivE2qBQ" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="2iRfu4" id="57DYivE2qBR" role="2iSdaV" />
+            <node concept="3F0A7n" id="57DYivE2qBS" role="3EZMnx">
+              <ref role="1NtTu8" to="k8go:DBaqrEY7ez" resolve="allowSkip" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="57DYivE2qBT" role="2iSdaV" />
+          <node concept="3F0ifn" id="57DYivE2rnQ" role="3EZMnx">
+            <property role="3F0ifm" value="to continue with next tasks before finishing the ones before" />
+            <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
+            <node concept="VPM3Z" id="57DYivE2Wut" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="3EZMnI" id="57DYivE2qBU" role="3EZMnx">
+          <node concept="VPM3Z" id="57DYivE2qBV" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="57DYivE2qBW" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="57DYivE2qBX" role="3EZMnx">
+            <property role="3F0ifm" value="Development Mode" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+          </node>
+          <node concept="3EZMnI" id="57DYivE2qBY" role="3EZMnx">
+            <node concept="VPM3Z" id="57DYivE2qBZ" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="VPXOz" id="57DYivE2qC0" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="2iRfu4" id="57DYivE2qC1" role="2iSdaV" />
+            <node concept="3F0A7n" id="57DYivE2qC2" role="3EZMnx">
+              <property role="1O74Pk" value="true" />
+              <property role="1$x2rV" value="Skip / Continue / Open Next Exercise" />
+              <ref role="1NtTu8" to="k8go:2ZHlC0069SZ" resolve="developmentMode" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="57DYivE2qC3" role="2iSdaV" />
+          <node concept="3F0ifn" id="57DYivE2wAy" role="3EZMnx">
+            <property role="3F0ifm" value="allows devs to skip any task regardless of enabled skip button. Also enables to show errors and warnings" />
+            <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
+            <node concept="VPM3Z" id="57DYivE2Wuq" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="3EZMnI" id="57DYivE3fGh" role="3EZMnx">
+          <node concept="VPM3Z" id="57DYivE3fGi" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="57DYivE3fGj" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="57DYivE3fGk" role="3EZMnx">
+            <property role="3F0ifm" value="Following Exercise" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+          </node>
+          <node concept="3EZMnI" id="57DYivE3fGl" role="3EZMnx">
+            <node concept="VPM3Z" id="57DYivE3fGm" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="VPXOz" id="57DYivE3fGn" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="2iRfu4" id="57DYivE3fGo" role="2iSdaV" />
+            <node concept="1iCGBv" id="57DYivE3fHT" role="3EZMnx">
+              <ref role="1NtTu8" to="k8go:DBaqrEZlHF" resolve="followingExercise" />
+              <node concept="1sVBvm" id="57DYivE3fHU" role="1sWHZn">
+                <node concept="3F0A7n" id="57DYivE3fI2" role="2wV5jI">
+                  <property role="1Intyy" value="true" />
+                  <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2iRfu4" id="57DYivE3fGq" role="2iSdaV" />
+          <node concept="3F0ifn" id="57DYivE3fGr" role="3EZMnx">
+            <property role="3F0ifm" value="Where to go on after finishing the last task of this exercise?" />
+            <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
+            <node concept="VPM3Z" id="57DYivE3fGs" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="2EHx9g" id="57DYivE2qC4" role="2iSdaV" />
+        <node concept="VPXOz" id="57DYivE2qC5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="57DYivE2qC6" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="3p1cdQ7_pKj">
     <ref role="1XX52x" to="k8go:3p1cdQ7_d$W" resolve="Task" />

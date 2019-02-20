@@ -1267,7 +1267,7 @@
                                                   </node>
                                                 </node>
                                                 <node concept="liA8E" id="2ZyURrzAXx0" role="2OqNvi">
-                                                  <ref role="37wK5l" to="yuwt:57DYivDUEKG" resolve="getFollowingExercise" />
+                                                  <ref role="37wK5l" to="yuwt:2ZyURrzA$44" resolve="getFollowingExercise" />
                                                 </node>
                                               </node>
                                             </node>
