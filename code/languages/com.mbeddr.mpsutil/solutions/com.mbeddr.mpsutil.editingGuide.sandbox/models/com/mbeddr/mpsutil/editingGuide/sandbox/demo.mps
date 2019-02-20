@@ -112,8 +112,11 @@
         <child id="3909459679554886019" name="description" index="2LPu_u" />
         <child id="3909459679554886015" name="tasks" index="2LPuAy" />
       </concept>
-      <concept id="3909459679554886011" name="com.mbeddr.mpsutil.editingGuide.structure.InlineProgramFragment" flags="ng" index="2LPuAA">
+      <concept id="3909459679554886011" name="com.mbeddr.mpsutil.editingGuide.structure.LiteralProgramFragment" flags="ng" index="2LPuAA">
         <child id="3909459679554886012" name="node" index="2LPuAx" />
+      </concept>
+      <concept id="3909459679554886010" name="com.mbeddr.mpsutil.editingGuide.structure.ProgramFragment" flags="ng" index="2LPuAB">
+        <property id="5902522736467820007" name="showErrors" index="2Sfkj0" />
       </concept>
       <concept id="3909459679554885948" name="com.mbeddr.mpsutil.editingGuide.structure.Task" flags="ng" index="2LPuBx">
         <child id="3453511597019902484" name="explanation" index="JZmik" />
@@ -334,6 +337,7 @@
         </node>
       </node>
       <node concept="2LPuAA" id="31xWCC4RBn" role="2LPuAs">
+        <property role="2Sfkj0" value="true" />
         <node concept="3clFb_" id="31xWCC4RBv" role="2LPuAx">
           <property role="TrG5h" value="dummy" />
           <node concept="3cqZAl" id="31xWCC4RBx" role="3clF45" />

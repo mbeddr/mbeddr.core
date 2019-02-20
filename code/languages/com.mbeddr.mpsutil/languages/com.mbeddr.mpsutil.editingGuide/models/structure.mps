@@ -148,6 +148,14 @@
     <node concept="PrWs8" id="66G6VYc4E9z" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="57DYivDPcaE" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
+    </node>
+    <node concept="1TJgyi" id="57DYivDPbRB" role="1TKVEl">
+      <property role="IQ2nx" value="5902522736467820007" />
+      <property role="TrG5h" value="showErrors" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_V">
     <property role="TrG5h" value="LiteralProgramFragment" />
