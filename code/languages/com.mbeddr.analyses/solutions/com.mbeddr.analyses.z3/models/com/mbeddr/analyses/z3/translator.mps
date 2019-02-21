@@ -223,6 +223,12 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
         <child id="1204834868751" name="expression" index="25KhWn" />
@@ -1795,6 +1801,23 @@
           </node>
         </node>
         <node concept="3clFbH" id="lLYWBXVi3Q" role="3cqZAp" />
+        <node concept="RRSsy" id="6rnie$XN7oA" role="3cqZAp">
+          <property role="RRSoG" value="debug" />
+          <node concept="3cpWs3" id="6rnie$Y4TqR" role="RRSoy">
+            <node concept="Xl_RD" id="6rnie$Y4TrU" role="3uHU7w">
+              <property role="Xl_RC" value="'" />
+            </node>
+            <node concept="3cpWs3" id="6rnie$XN7oG" role="3uHU7B">
+              <node concept="Xl_RD" id="6rnie$XN7oH" role="3uHU7B">
+                <property role="Xl_RC" value="added variable: '" />
+              </node>
+              <node concept="37vLTw" id="6rnie$XN7oI" role="3uHU7w">
+                <ref role="3cqZAo" node="lLYWBXVjiP" resolve="varName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6rnie$XN76T" role="3cqZAp" />
         <node concept="1_3QMa" id="lLYWBXVi3R" role="3cqZAp">
           <node concept="2OqwBi" id="lLYWBXVi3S" role="1_3QMn">
             <node concept="37vLTw" id="lLYWBXVkjd" role="2Oq$k0">
@@ -2252,7 +2275,7 @@
         </node>
         <node concept="3cpWs8" id="39x0jxyOFYy" role="3cqZAp">
           <node concept="3cpWsn" id="39x0jxyOFYz" role="3cpWs9">
-            <property role="TrG5h" value="and" />
+            <property role="TrG5h" value="constraint" />
             <node concept="3uibUv" id="39x0jxyOFY3" role="1tU5fm">
               <ref role="3uigEE" to="f7eu:~BoolExpr" resolve="BoolExpr" />
             </node>
@@ -2280,8 +2303,24 @@
             <node concept="liA8E" id="2UFYCfZGWqv" role="2OqNvi">
               <ref role="37wK5l" to="f7eu:~Solver.add(com.microsoft.z3.BoolExpr...):void" resolve="add" />
               <node concept="37vLTw" id="39x0jxyOFYD" role="37wK5m">
-                <ref role="3cqZAo" node="39x0jxyOFYz" resolve="and" />
+                <ref role="3cqZAo" node="39x0jxyOFYz" resolve="constraint" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="RRSsy" id="lLYWBXWgcX" role="3cqZAp">
+          <property role="RRSoG" value="debug" />
+          <node concept="3cpWs3" id="6rnie$XNl0M" role="RRSoy">
+            <node concept="2OqwBi" id="6rnie$XNlEo" role="3uHU7w">
+              <node concept="37vLTw" id="6rnie$XNlmP" role="2Oq$k0">
+                <ref role="3cqZAo" node="39x0jxyOFYz" resolve="constraint" />
+              </node>
+              <node concept="liA8E" id="6rnie$XNmp6" role="2OqNvi">
+                <ref role="37wK5l" to="f7eu:~Expr.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6rnie$XMOMa" role="3uHU7B">
+              <property role="Xl_RC" value="\t\tadded constraint -- " />
             </node>
           </node>
         </node>
