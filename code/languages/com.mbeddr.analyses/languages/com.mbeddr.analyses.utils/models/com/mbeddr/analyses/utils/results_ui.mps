@@ -1072,23 +1072,23 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="46A7_62Bmbo" role="3cqZAp">
-          <node concept="2OqwBi" id="46A7_62Bmbp" role="3clFbG">
-            <node concept="2OqwBi" id="46A7_62Bmbq" role="2Oq$k0">
-              <node concept="37vLTw" id="46A7_62Bmbr" role="2Oq$k0">
+        <node concept="3clFbF" id="3N$7rvdv5tF" role="3cqZAp">
+          <node concept="2OqwBi" id="3N$7rvdv5Vr" role="3clFbG">
+            <node concept="2OqwBi" id="3N$7rvdv5tH" role="2Oq$k0">
+              <node concept="37vLTw" id="3N$7rvdv5tI" role="2Oq$k0">
                 <ref role="3cqZAo" node="4_pSipqULG7" resolve="colModel" />
               </node>
-              <node concept="liA8E" id="46A7_62Bmbs" role="2OqNvi">
+              <node concept="liA8E" id="3N$7rvdv5tJ" role="2OqNvi">
                 <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int):javax.swing.table.TableColumn" resolve="getColumn" />
-                <node concept="3cmrfG" id="46A7_62Bmbt" role="37wK5m">
+                <node concept="3cmrfG" id="3N$7rvdv5tK" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
               </node>
             </node>
-            <node concept="liA8E" id="46A7_62Bmbu" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
-              <node concept="3cmrfG" id="46A7_62Bmbv" role="37wK5m">
-                <property role="3cmrfH" value="65" />
+            <node concept="liA8E" id="3N$7rvdv6Ae" role="2OqNvi">
+              <ref role="37wK5l" to="c8ee:~TableColumn.setPreferredWidth(int):void" resolve="setPreferredWidth" />
+              <node concept="3cmrfG" id="3N$7rvdv7zG" role="37wK5m">
+                <property role="3cmrfH" value="50" />
               </node>
             </node>
           </node>
