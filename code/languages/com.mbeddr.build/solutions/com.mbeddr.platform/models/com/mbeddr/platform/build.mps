@@ -2117,8 +2117,8 @@
                   <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
                   <node concept="2Ry0Ak" id="76lGx$NdVtl" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVtm" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.jdt.core-3.12.0.v20160516-2131.jar" />
+                    <node concept="2Ry0Ak" id="7jVkJ$UdmxJ" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.jdt.core-3.14.0.v20171206-0802.jar" />
                     </node>
                   </node>
                 </node>
