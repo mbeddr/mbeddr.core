@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="Mbeddr2_Mbeddr" uuid="ad559101-ae75-4e30-9828-7351caf0df15" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
-  <name>Bootstrap</name>
-  <parameters />
-  <cleanup />
-</project>
-
