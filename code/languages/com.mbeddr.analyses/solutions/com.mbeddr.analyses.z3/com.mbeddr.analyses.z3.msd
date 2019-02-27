@@ -17,6 +17,8 @@
     <dependency reexport="false">e0dc4b58-6648-4617-8514-abfaa6d77043(com.mbeddr.analyses.stan)</dependency>
     <dependency reexport="false">0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)</dependency>
     <dependency reexport="false">efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)</dependency>
+    <dependency reexport="false">e401b447-8019-4ccd-a72c-bfb0230f5782(com.mbeddr.cc.var.fm)</dependency>
+    <dependency reexport="false">017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
@@ -49,6 +51,8 @@
     <module reference="e0dc4b58-6648-4617-8514-abfaa6d77043(com.mbeddr.analyses.stan)" version="0" />
     <module reference="88063d90-aa0a-4f17-8757-92c0f1692f3d(com.mbeddr.analyses.z3)" version="0" />
     <module reference="6e9e9327-19d7-416c-8dd0-24b15ea19915(com.mbeddr.analyses.z3.lib)" version="0" />
+    <module reference="017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)" version="0" />
+    <module reference="e401b447-8019-4ccd-a72c-bfb0230f5782(com.mbeddr.cc.var.fm)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="3" />
     <module reference="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" version="0" />
     <module reference="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" version="0" />
