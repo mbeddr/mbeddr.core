@@ -1664,10 +1664,10 @@
       <node concept="22LTRM" id="3JmJHJbDhGt" role="22LTRK">
         <ref role="22LTRN" node="3JmJHJbDg_X" resolve="test.analyses.spin.testcode" />
       </node>
-      <node concept="24cAiW" id="76N1O$Kj6vl" role="24cAkG" />
       <node concept="22LTRM" id="2X4tZq5cOAm" role="22LTRK">
         <ref role="22LTRN" node="6HIxGZOKwAw" resolve="test.analyses.stan.ts" />
       </node>
+      <node concept="24cAiW" id="76N1O$Kj6vl" role="24cAkG" />
     </node>
   </node>
 </model>
