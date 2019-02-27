@@ -787,17 +787,12 @@
                           </node>
                         </node>
                         <node concept="2ZW3vV" id="2DWJLXXzGMD" role="3clFbw">
-                          <node concept="2OqwBi" id="jOb2ThXJEu" role="2ZW6bz">
-                            <node concept="2OqwBi" id="2DWJLXXzHtR" role="2Oq$k0">
-                              <node concept="2GrUjf" id="2DWJLXXzGN2" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="2DWJLXXzFmN" resolve="res" />
-                              </node>
-                              <node concept="2sxana" id="2DWJLXXzKIJ" role="2OqNvi">
-                                <ref role="2sxfKC" to="fn29:1Xl3kQ1uadL" resolve="module" />
-                              </node>
+                          <node concept="2OqwBi" id="2DWJLXXzHtR" role="2ZW6bz">
+                            <node concept="2GrUjf" id="2DWJLXXzGN2" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="2DWJLXXzFmN" resolve="res" />
                             </node>
-                            <node concept="liA8E" id="jOb2ThXJRA" role="2OqNvi">
-                              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                            <node concept="2sxana" id="2DWJLXXzKIJ" role="2OqNvi">
+                              <ref role="2sxfKC" to="fn29:1Xl3kQ1uadL" resolve="module" />
                             </node>
                           </node>
                           <node concept="3uibUv" id="2DWJLXXzJ4B" role="2ZW6by">
