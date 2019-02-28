@@ -13197,6 +13197,18 @@
             <ref role="3bR37D" node="7eF9rfAnuj$" resolve="com.mbeddr.cc.var.fm" />
           </node>
         </node>
+        <node concept="1SiIV0" id="381lWUK$CVn" role="3bR37C">
+          <node concept="3bR9La" id="381lWUK$CVo" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="381lWUK$CVp" role="3bR37C">
+          <node concept="3bR9La" id="381lWUK$CVq" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5l4WPWBs77$" role="3989C9">
