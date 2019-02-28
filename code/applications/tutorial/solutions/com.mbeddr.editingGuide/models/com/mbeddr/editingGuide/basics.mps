@@ -166,10 +166,14 @@
         <child id="3909459679554886019" name="description" index="2LPu_u" />
         <child id="3909459679554886015" name="tasks" index="2LPuAy" />
       </concept>
-      <concept id="3909459679554886011" name="com.mbeddr.mpsutil.editingGuide.structure.InlineProgramFragment" flags="ng" index="2LPuAA">
+      <concept id="3909459679554886011" name="com.mbeddr.mpsutil.editingGuide.structure.LiteralProgramFragment" flags="ng" index="2LPuAA">
         <child id="3909459679554886012" name="node" index="2LPuAx" />
       </concept>
+      <concept id="3909459679554886010" name="com.mbeddr.mpsutil.editingGuide.structure.ProgramFragment" flags="ng" index="2LPuAB">
+        <property id="5902522736467820007" name="showErrors" index="2Sfkj0" />
+      </concept>
       <concept id="3909459679554885948" name="com.mbeddr.mpsutil.editingGuide.structure.Task" flags="ng" index="2LPuBx">
+        <property id="4499765597929159206" name="monitorSelectionChange" index="1bplFu" />
         <child id="3453511597019902484" name="explanation" index="JZmik" />
         <child id="3909459679554885979" name="monitor" index="2LPuA6" />
         <child id="3909459679554885953" name="code" index="2LPuAs" />
@@ -276,7 +280,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -2299,10 +2303,10 @@
           <property role="19SUeA" value=". To demonstrate this, select the " />
         </node>
         <node concept="JL00X" id="4x22hTwhtkB" role="19SJt6">
-          <property role="JL01g" value="d" />
+          <property role="JL01g" value="b" />
         </node>
         <node concept="19SUe$" id="4x22hTwhtkC" role="19SJt6">
-          <property role="19SUeA" value=" variable and press&#10;duplicate it. Note that this will lead to an error because you will&#10;have two variables with the same name. Change one of them to " />
+          <property role="19SUeA" value=" variable and duplicate it.&#10;Note that this will lead to an error because you will&#10;have two variables with the same name. Change one of them to " />
         </node>
         <node concept="JL00X" id="4x22hTwhtkN" role="19SJt6">
           <property role="JL01g" value="c" />
@@ -2352,6 +2356,7 @@
         </node>
       </node>
       <node concept="2LPuAA" id="4x22hTwhre8" role="2LPuAs">
+        <property role="2Sfkj0" value="true" />
         <node concept="N3Fnx" id="4x22hTwhre9" role="2LPuAx">
           <property role="TrG5h" value="dummy" />
           <node concept="19Rifw" id="4x22hTwhrea" role="2C2TGm">
@@ -2563,6 +2568,7 @@
     </node>
     <node concept="2LPuBx" id="4x22hTwiCUJ" role="2LPuAy">
       <property role="TrG5h" value="Rebinding" />
+      <property role="1bplFu" value="true" />
       <node concept="19SGf9" id="4x22hTwiCUK" role="JZmik">
         <node concept="19SUe$" id="4x22hTwiCUL" role="19SJt6">
           <property role="19SUeA" value="F5 also updates the type system and the editor. It is a general&#10;refresh of the whole root." />
@@ -4121,6 +4127,7 @@
     </node>
     <node concept="2LPuBx" id="2QDtwSqD1ap" role="2LPuAy">
       <property role="TrG5h" value="Tree Selection 1" />
+      <property role="1bplFu" value="true" />
       <node concept="19SGf9" id="2QDtwSqD1aq" role="2LPuBy">
         <node concept="19SUe$" id="2QDtwSqD1ar" role="19SJt6">
           <property role="19SUeA" value="Move the cursor onto the 2 in the expression. Use Ctrl-Up to select up the tree until the whole expression &#10;is selected." />
@@ -4258,6 +4265,7 @@
     </node>
     <node concept="2LPuBx" id="2QDtwSqD1bi" role="2LPuAy">
       <property role="TrG5h" value="Tree Selection 2" />
+      <property role="1bplFu" value="true" />
       <node concept="19SGf9" id="2QDtwSqD1bj" role="2LPuBy">
         <node concept="19SUe$" id="2QDtwSqD1bk" role="19SJt6">
           <property role="19SUeA" value="To reinforce the tree selection idea, put the cursor on the 2 again and select the whole variable by&#10;pressing Ctrl-Up repeatedly." />
@@ -4324,6 +4332,7 @@
     </node>
     <node concept="2LPuBx" id="2QDtwSqD1bG" role="2LPuAy">
       <property role="TrG5h" value="List Selection 1" />
+      <property role="1bplFu" value="true" />
       <node concept="19SGf9" id="2QDtwSqD1bH" role="2LPuBy">
         <node concept="19SUe$" id="2QDtwSqD1bI" role="19SJt6">
           <property role="19SUeA" value="When you deal with lists, you can select siblings by using Shift-Up/Down. &#10;Put the cursor on the a, use tree selection to select the whole variable&#10;declaration, and then use Shift-Down to select all three variables." />
@@ -4441,6 +4450,7 @@
     </node>
     <node concept="2LPuBx" id="2QDtwSqD1cs" role="2LPuAy">
       <property role="TrG5h" value="List Selection 2" />
+      <property role="1bplFu" value="true" />
       <node concept="19SGf9" id="2QDtwSqD1ct" role="2LPuBy">
         <node concept="19SUe$" id="2QDtwSqD1cu" role="19SJt6">
           <property role="19SUeA" value="Use the same approach to select the arguments x and y (not z) in the function." />
