@@ -10,6 +10,7 @@
   <imports>
     <import index="nemf" ref="r:25031baa-17b8-457a-9a77-5e0160aafd16(com.mbeddr.analyses.z3.run)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
+    <import index="q96t" ref="r:1a160c0d-0942-4582-a592-33c4925b444e(com.mbeddr.analyses.z3.variability)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="o0kk" ref="r:8fec9b9f-b9e1-45d7-82d4-81189ac73bb4(com.mbeddr.analyses.z3.testing.structure)" implicit="true" />
   </imports>
@@ -21,6 +22,9 @@
       </concept>
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -58,6 +62,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
@@ -139,6 +144,11 @@
               </node>
               <node concept="37vLTw" id="5uyAK6Lk1dr" role="37wK5m">
                 <ref role="3cqZAo" node="4gj0JzqzcL" resolve="exp" />
+              </node>
+              <node concept="2ShNRf" id="381lWUKzUlw" role="37wK5m">
+                <node concept="1pGfFk" id="381lWUKzUlv" role="2ShVmc">
+                  <ref role="37wK5l" to="q96t:tSj2rSt91z" resolve="VariabilityInfo" />
+                </node>
               </node>
             </node>
             <node concept="2OwXpG" id="7zW9XauYmZo" role="2OqNvi">
