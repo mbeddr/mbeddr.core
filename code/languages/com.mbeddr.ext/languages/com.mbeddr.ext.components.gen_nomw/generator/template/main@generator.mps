@@ -20604,13 +20604,12 @@
                       </node>
                       <node concept="1E4Tgc" id="6iKSPgYFox8" role="1ESnxz">
                         <ref role="1E4Tge" node="2ZUGF54kZCt" resolve="multiPortMember" />
-                        <node concept="1ZhdrF" id="2Zh_y09Bu7$" role="lGtFl">
+                        <node concept="1ZhdrF" id="tCC03XaYUi" role="lGtFl">
                           <property role="2qtEX8" value="member" />
                           <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/7034214596253391076/7034214596253391078" />
-                          <ref role="1E4Tge" node="2ZUGF54kZCt" resolve="multiPortMember" />
-                          <node concept="3$xsQk" id="2Zh_y09Bu7_" role="3$ytzL">
-                            <node concept="3clFbS" id="2Zh_y09Bu7A" role="2VODD2">
-                              <node concept="3clFbF" id="XyAj1Bv$A8" role="3cqZAp">
+                          <node concept="3$xsQk" id="tCC03XaYUj" role="3$ytzL">
+                            <node concept="3clFbS" id="tCC03XaYUk" role="2VODD2">
+                              <node concept="3clFbF" id="tCC03XaYZM" role="3cqZAp">
                                 <node concept="2OqwBi" id="XyAj1Bv$A9" role="3clFbG">
                                   <node concept="1iwH70" id="XyAj1Bv$Aa" role="2OqNvi">
                                     <ref role="1iwH77" node="XyAj1Bsly5" resolve="Port_genStructMemberName" />
@@ -23565,6 +23564,7 @@
           </node>
           <node concept="1sgJKc" id="6QawkaKss2V" role="N3F5h">
             <property role="TrG5h" value="BaseComponentStruct" />
+            <property role="2OOxQR" value="true" />
           </node>
           <node concept="2NXPZ9" id="4WLtQa9fERI" role="N3F5h">
             <property role="TrG5h" value="empty_1343844573490_3" />
