@@ -62,7 +62,10 @@ def cbmc_win_zip = "cbmc-win.zip"
 
 
 
-task resolve_cbmc() << { }
+task resolve_cbmc() {
+	doLast {
+	}
+}
 
 if(Os.isFamily(Os.FAMILY_UNIX) && !Os.isFamily(Os.FAMILY_MAC)) {
     resolve_cbmc.dependsOn 'unzip_cbmcLinuxTar'

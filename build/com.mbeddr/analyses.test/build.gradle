@@ -46,8 +46,10 @@ task resolveMpsArtifacts() {
 task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: [resolveMpsArtifacts, ':build:com.mbeddr:platform:copy_allScripts']) {
     script script_test_mbeddrAnalysisTs
 }
-task test_mbeddr_analysis_ex << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.analyses")
+task test_mbeddr_analysis_ex {
+	doLast {
+		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.analyses")
+	}
 }
 
 task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: resolveMpsArtifacts) {

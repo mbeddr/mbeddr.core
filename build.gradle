@@ -64,10 +64,22 @@ subprojects {
                 mbeddrBuild = "master"
             }
             ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
-            println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
         } else {
             ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
-            println "Local build detected. Build will have version $ext.mbeddrBuildNumber"
+        }
+
+        // Enable mbeddr to be assigned a different version number than mbeddr platform, 
+        // as well as mbeddr to be built against a specified existing mbeddr platform version
+        if (project.hasProperty("mbeddrPlatformVersion")) {
+            ext.mbeddrPlatformBuildNumber = project.getProperty('mbeddrPlatformVersion')
+        } else {
+            ext.mbeddrPlatformBuildNumber = mbeddrBuildNumber
+        }
+
+        if (ciBuild) {
+            println "##teamcity[mbeddrBuildNumber '${mbeddrBuildNumber}', mbeddrPlatformBuildNumber '${mbeddrPlatformBuildNumber}']"
+        } else {
+            println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
         }
     }
 }

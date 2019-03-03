@@ -101,13 +101,22 @@ File scriptFile(String relativePath) {
 }
 
 private static void configureRepositories(Project project) {
-    project.ext.repository = project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
-
+	if (project.mbeddrBuildNumber.endsWith('-SNAPSHOT')) {
+		project.ext.repository = project.findProperty('snapshotPublishingRepository') ?: project.snapshotRepository
+	} else {
+		project.ext.repository = project.findProperty('releasePublishingRepository') ?: project.releaseRepository
+	}
+	
     project.publishing {
         repositories {
             maven {
                 url project.repository
-                if (project.hasProperty('nexusUsername')) {
+                if (project.hasProperty('publishingNexusUsername')) {
+                    credentials {
+                        username project.publishingNexusUsername
+                        password project.publishingNexusPassword
+                    }
+                } else if (project.hasProperty('nexusUsername')) {
                     credentials {
                         username project.nexusUsername
                         password project.nexusPassword
@@ -129,6 +138,17 @@ private static void configureRepositories(Project project) {
                 }
             }
         }
+		for (repoUrl in [project.findProperty('snapshotPublishingRepository'), project.findProperty('releasePublishingRepository')].minus(null)) {
+			maven {
+				url repoUrl
+				if (project.hasProperty('publishingNexusUsername')) {
+					credentials {
+						username project.publishingNexusUsername
+						password project.publishingNexusPassword
+					}
+				}
+			}
+		}
         mavenCentral()
     }
 }

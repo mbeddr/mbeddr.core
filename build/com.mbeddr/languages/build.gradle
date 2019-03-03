@@ -27,7 +27,7 @@ dependencies {
     junitAnt('org.apache.ant:ant-junit4:1.9.7') {
         transitive = false
     }
-    mpsArtifacts "com.mbeddr:platform:$mbeddrBuildNumber"
+    mpsArtifacts "com.mbeddr:platform:$mbeddrPlatformBuildNumber"
 }
 
 
@@ -137,12 +137,16 @@ task test_mbeddr_core_ts(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCoreTs
 }
 
-task test_mbeddr_core_ex_library << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core/tests/aLibrary/source_gen/aLibrary/lib")
+task test_mbeddr_core_ex_library {
+	doLast {
+		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core/tests/aLibrary/source_gen/aLibrary/lib")
+	}
 }
 
-task test_mbeddr_core_ex << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core")
+task test_mbeddr_core_ex {
+	doLast {
+		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core")
+	}
 }
 
 task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts, test_mbeddr_core_ex_library]) {
@@ -152,8 +156,10 @@ test_mbeddr_core_ex_library.dependsOn build_mbeddr_core_ex
 test_mbeddr_core_ex.dependsOn test_mbeddr_core_ex_library
 test_mbeddr_core_ex_library.dependsOn build_mbeddr_core_ex_library
 
-task test_mbeddr_cc_ex << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.cc")
+task test_mbeddr_cc_ex {
+	doLast {
+		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.cc")
+	}
 }
 
 task build_mbeddr_cc_ex(type: RunMbeddrAntScript, dependsOn: build_mbeddr) {
@@ -174,8 +180,10 @@ task build_mbeddr_xmodel_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrXmodelEx
 }
 
-task test_mbeddr_ext_ex << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.ext")
+task test_mbeddr_ext_ex {
+	doLast {
+		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.ext")
+	}
 }
 
 task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
