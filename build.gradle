@@ -70,14 +70,12 @@ subprojects {
 
         // Enable mbeddr to be assigned a different version number than mbeddr platform, 
         // as well as mbeddr to be built against a specified existing mbeddr platform version
-        if (project.hasProperty("mbeddrPlatformVersion")) {
-            ext.mbeddrPlatformBuildNumber = project.getProperty('mbeddrPlatformVersion')
-        } else {
-            ext.mbeddrPlatformBuildNumber = mbeddrBuildNumber
-        }
+		ext.mbeddrPlatformBuildNumber = project.findProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
 
         if (ciBuild) {
-            println "##teamcity[mbeddrBuildNumber '${mbeddrBuildNumber}', mbeddrPlatformBuildNumber '${mbeddrPlatformBuildNumber}']"
+			// Coerce TeamCity build number to mbeddrBuildNumber by default 
+			// (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
+			println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
         } else {
             println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
         }
