@@ -156,6 +156,7 @@ private static void configureRepositories(Project project) {
 
 task printVersion {
     doLast {
-        println "mbeddrBuildNumber: ${ext.mbeddrBuildNumber}"
+        println "mbeddrBuildNumber: $project.mbeddrBuildNumber"
+		println "mbeddrPlatformBuildNumber: $project.mbeddrPlatformBuildNumber"
     }
 }

@@ -29,7 +29,7 @@ def macosFileName = "mbeddr-macos-" + t.getYear() + "-" +
 
 def allInOneFileName = "com.mbeddr.allInOne-${ext.mbeddrBuildNumber}-MPS-${mpsBuild}.zip"
 def tutorialFileName = "com.mbeddr.tutorial-${ext.mbeddrBuildNumber}-MPS-${mpsBuild}.zip"
-def platformFileName = "platform-distribution-${ext.mbeddrBuildNumber}-MPS-${mpsBuild}.zip"
+def platformFileName = "platform-distribution-${ext.mbeddrPlatformBuildNumber}-MPS-${mpsBuild}.zip"
 
 github {
     owner = 'mbeddr'
