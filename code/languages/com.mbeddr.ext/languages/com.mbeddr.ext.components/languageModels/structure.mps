@@ -2074,5 +2074,51 @@
       <ref role="20lvS9" node="3TmmsQkD8YC" resolve="ProvidedPort" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6BNwNTYoq$T">
+    <property role="EcuMT" value="7634590097754663225" />
+    <property role="TrG5h" value="ForEachRequiredPortStatement" />
+    <property role="3GE5qa" value="util" />
+    <property role="34LRSv" value="foreach required port" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="3VBG7bJfS4Y" role="1TKVEi">
+      <property role="IQ2ns" value="4532785557658370366" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="portRefExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="71UKpntoTuE" resolve="PortRefExpr" />
+    </node>
+    <node concept="1TJgyj" id="5uVxDlUcwL9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6321794478502972489" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLb" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLc" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLd" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLe" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
+    </node>
+    <node concept="PrWs8" id="33xYbhPQm_r" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
+    </node>
+    <node concept="PrWs8" id="6ToJRIAPs_w" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:7k_CvRMnl1X" resolve="IBreakContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5JgWygzYwVy">
+    <property role="EcuMT" value="6616054089643593442" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="PortItExpression" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+  </node>
 </model>
 

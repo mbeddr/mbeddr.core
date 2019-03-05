@@ -9644,5 +9644,54 @@
       <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />
     </node>
   </node>
+  <node concept="24kQdi" id="6BNwNTYoq_w">
+    <property role="3GE5qa" value="util" />
+    <ref role="1XX52x" to="v7ag:6BNwNTYoq$T" resolve="ForEachRequiredPortStatement" />
+    <node concept="3EZMnI" id="5uVxDlUcwNl" role="2wV5jI">
+      <node concept="PMmxH" id="2VGWnPp7hzE" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="l2Vlx" id="5uVxDlUcwNn" role="2iSdaV" />
+      <node concept="3F0ifn" id="5uVxDlUcwNo" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <node concept="11LMrY" id="5uVxDlUcwNp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3VBG7bJfZfK" role="3EZMnx">
+        <ref role="1NtTu8" to="v7ag:3VBG7bJfS4Y" resolve="portRefExpr" />
+      </node>
+      <node concept="3F0ifn" id="2VGWnPp7pau" role="3EZMnx">
+        <property role="3F0ifm" value="as" />
+        <node concept="Vb9p2" id="2VGWnPp7pH8" role="3F10Kt" />
+      </node>
+      <node concept="3F0ifn" id="2VGWnPp7pH_" role="3EZMnx">
+        <property role="3F0ifm" value="it" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0ifn" id="2VGWnPp7pIr" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="2VGWnPp7pIS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5uVxDlUcwNv" role="3EZMnx">
+        <ref role="1NtTu8" to="v7ag:5uVxDlUcwL9" resolve="body" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5JgWyg$0BIx">
+    <property role="3GE5qa" value="util" />
+    <ref role="1XX52x" to="v7ag:5JgWygzYwVy" resolve="PortItExpression" />
+    <node concept="3F0ifn" id="2VGWnPpdjsj" role="2wV5jI">
+      <property role="3F0ifm" value="it" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+    <node concept="PMmxH" id="2VGWnPpdjss" role="6VMZX">
+      <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />
+    </node>
+  </node>
 </model>
 
