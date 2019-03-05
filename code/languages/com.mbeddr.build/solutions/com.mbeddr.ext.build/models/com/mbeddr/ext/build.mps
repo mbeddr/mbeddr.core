@@ -91,6 +91,9 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
+      <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh">
+        <property id="7981469545489178349" name="generationMaxHeapSizeInMb" index="3UIfUI" />
+      </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
@@ -773,6 +776,9 @@
         <ref role="398BVh" node="6BHziVHZYYT" resolve="spawner.artifacts" />
       </node>
     </node>
+    <node concept="2igEWh" id="3CqX6kP6RcM" role="1hWBAP">
+      <property role="3UIfUI" value="1024" />
+    </node>
   </node>
   <node concept="1l3spW" id="7Vt15sLW_mT">
     <property role="TrG5h" value="com.mbeddr.ts.tests" />
@@ -1243,7 +1249,7 @@
           </node>
         </node>
         <node concept="3bR9La" id="4O5goBat6NB" role="3bR37C">
-          <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
+          <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.pluginSolution" />
         </node>
         <node concept="3rtmxn" id="3xFG3bj5bUE" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5bUF" role="3rtmxm">
