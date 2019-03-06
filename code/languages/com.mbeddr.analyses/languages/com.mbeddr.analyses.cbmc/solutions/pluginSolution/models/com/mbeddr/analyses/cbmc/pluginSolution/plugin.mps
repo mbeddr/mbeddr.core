@@ -2815,7 +2815,7 @@
       <property role="TrG5h" value="usedCBMCVersion" />
       <node concept="17QB3L" id="4AQNBfV986Z" role="1tU5fm" />
       <node concept="Xl_RD" id="4AQNBfV9eRg" role="33vP2m">
-        <property role="Xl_RC" value="5.9" />
+        <property role="Xl_RC" value="5.9+" />
       </node>
     </node>
     <node concept="34jfKJ" id="1H8VqTvXlsY" role="34lFYf">
