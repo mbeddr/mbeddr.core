@@ -901,7 +901,7 @@
   <node concept="1TIwiD" id="4AGl5dzxiUF">
     <property role="3GE5qa" value="comp.runnable.whenconnected" />
     <property role="TrG5h" value="WhenPortConnectedStatement" />
-    <property role="34LRSv" value="when port connected" />
+    <property role="34LRSv" value="when (any) port connected" />
     <property role="R4oN_" value="safety for optional ports" />
     <property role="EcuMT" value="5308710777891663531" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
@@ -2076,9 +2076,9 @@
   </node>
   <node concept="1TIwiD" id="6BNwNTYoq$T">
     <property role="EcuMT" value="7634590097754663225" />
-    <property role="TrG5h" value="ForEachRequiredPortStatement" />
+    <property role="TrG5h" value="ForEachPortStatement" />
     <property role="3GE5qa" value="util" />
-    <property role="34LRSv" value="foreach required port" />
+    <property role="34LRSv" value="foreach port" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="3VBG7bJfS4Y" role="1TKVEi">
       <property role="IQ2ns" value="4532785557658370366" />

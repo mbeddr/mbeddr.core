@@ -20506,7 +20506,7 @@
   </node>
   <node concept="13h7C7" id="6BNwNTYor8r">
     <property role="3GE5qa" value="util" />
-    <ref role="13h7C2" to="v7ag:6BNwNTYoq$T" resolve="ForEachRequiredPortStatement" />
+    <ref role="13h7C2" to="v7ag:6BNwNTYoq$T" resolve="ForEachPortStatement" />
     <node concept="13hLZK" id="6BNwNTYor8s" role="13h7CW">
       <node concept="3clFbS" id="6BNwNTYor8t" role="2VODD2" />
     </node>

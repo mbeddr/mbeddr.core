@@ -2887,9 +2887,49 @@
     <property role="3GE5qa" value="comp.runnable.whenconnected" />
     <ref role="1XX52x" to="v7ag:4AGl5dzxiUF" resolve="WhenPortConnectedStatement" />
     <node concept="3EZMnI" id="4AGl5dzxiUK" role="2wV5jI">
-      <node concept="3F0ifn" id="4AGl5dzxiUN" role="3EZMnx">
-        <property role="3F0ifm" value="when port connected" />
+      <node concept="1HlG4h" id="7Giw0p767sa" role="3EZMnx">
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <node concept="1HfYo3" id="7Giw0p767sc" role="1HlULh">
+          <node concept="3TQlhw" id="7Giw0p767se" role="1Hhtcw">
+            <node concept="3clFbS" id="7Giw0p767sg" role="2VODD2">
+              <node concept="3clFbJ" id="7Giw0p7dw$Q" role="3cqZAp">
+                <node concept="2OqwBi" id="7Giw0p7dJq_" role="3clFbw">
+                  <node concept="1PxgMI" id="7Giw0p7dIlI" role="2Oq$k0">
+                    <node concept="chp4Y" id="7Giw0p7dIJR" role="3oSUPX">
+                      <ref role="cht4Q" to="v7ag:3TmmsQkD8YD" resolve="RequiredPort" />
+                    </node>
+                    <node concept="2OqwBi" id="7Giw0p7d$iT" role="1m5AlR">
+                      <node concept="2OqwBi" id="7Giw0p7dxau" role="2Oq$k0">
+                        <node concept="pncrf" id="7Giw0p7dwHF" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="7Giw0p7dyXB" role="2OqNvi">
+                          <ref role="3Tt5mk" to="v7ag:Z4PF258VgS" resolve="portExpr" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="7Giw0p7d_Rl" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v7ag:71UKpntoTuF" resolve="port" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="7Giw0p7dPWY" role="2OqNvi">
+                    <ref role="37wK5l" to="eup9:2ZUGF54jY1D" resolve="isMultiple" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="7Giw0p7dw$S" role="3clFbx">
+                  <node concept="3cpWs6" id="7Giw0p7dQrF" role="3cqZAp">
+                    <node concept="Xl_RD" id="7Giw0p7dRgl" role="3cqZAk">
+                      <property role="Xl_RC" value="when any port connected" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7Giw0p7dTJo" role="3cqZAp">
+                <node concept="Xl_RD" id="7Giw0p7dTJn" role="3clFbG">
+                  <property role="Xl_RC" value="when port connected" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="4AGl5dzxiUM" role="2iSdaV" />
       <node concept="3F0ifn" id="4AGl5dzxiUP" role="3EZMnx">
@@ -9646,7 +9686,7 @@
   </node>
   <node concept="24kQdi" id="6BNwNTYoq_w">
     <property role="3GE5qa" value="util" />
-    <ref role="1XX52x" to="v7ag:6BNwNTYoq$T" resolve="ForEachRequiredPortStatement" />
+    <ref role="1XX52x" to="v7ag:6BNwNTYoq$T" resolve="ForEachPortStatement" />
     <node concept="3EZMnI" id="5uVxDlUcwNl" role="2wV5jI">
       <node concept="PMmxH" id="2VGWnPp7hzE" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
