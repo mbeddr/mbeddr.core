@@ -3574,5 +3574,25 @@
       <ref role="1YaFvo" to="clbe:2H3Yrqdbnnx" resolve="AbstractBitType" />
     </node>
   </node>
+  <node concept="2sgARr" id="7NdzLQDGHhP">
+    <property role="3GE5qa" value="typedef" />
+    <property role="TrG5h" value="typedef" />
+    <node concept="3clFbS" id="7NdzLQDGHhQ" role="2sgrp5">
+      <node concept="3clFbF" id="7NdzLQDGIGM" role="3cqZAp">
+        <node concept="2OqwBi" id="7NdzLQDGI7N" role="3clFbG">
+          <node concept="1YBJjd" id="7NdzLQDGHkT" role="2Oq$k0">
+            <ref role="1YBMHb" node="7NdzLQDGHio" resolve="typeDef" />
+          </node>
+          <node concept="3TrEf2" id="7NdzLQDGIxu" role="2OqNvi">
+            <ref role="3Tt5mk" to="x27k:5jyom5fO9Cm" resolve="original" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7NdzLQDGHio" role="1YuTPh">
+      <property role="TrG5h" value="typeDef" />
+      <ref role="1YaFvo" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
+    </node>
+  </node>
 </model>
 
