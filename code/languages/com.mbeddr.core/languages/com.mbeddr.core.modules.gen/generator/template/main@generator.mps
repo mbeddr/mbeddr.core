@@ -2159,30 +2159,30 @@
           </node>
         </node>
         <node concept="3clFbH" id="6hM2_xVYBSD" role="3cqZAp" />
-        <node concept="3clFbJ" id="78Ts1skprlR" role="3cqZAp">
-          <node concept="3clFbS" id="78Ts1skprlS" role="3clFbx">
-            <node concept="3clFbF" id="7NdzLQDBrbe" role="3cqZAp">
-              <node concept="2OqwBi" id="7NdzLQDBrhX" role="3clFbG">
-                <node concept="1iwH7S" id="7NdzLQDBrbd" role="2Oq$k0" />
-                <node concept="2k5nB$" id="7NdzLQDBrnS" role="2OqNvi">
-                  <node concept="Xl_RD" id="7NdzLQDBrok" role="2k5Stb">
-                    <property role="Xl_RC" value="There is no build configuration. Aborting generation" />
+        <node concept="3clFbH" id="7NdzLQDBi9r" role="3cqZAp" />
+        <node concept="3clFbJ" id="6hM2_xVYG1u" role="3cqZAp">
+          <node concept="3clFbS" id="6hM2_xVYG1x" role="3clFbx">
+            <node concept="3clFbF" id="7NdzLQDEhSo" role="3cqZAp">
+              <node concept="2OqwBi" id="7NdzLQDEhZz" role="3clFbG">
+                <node concept="1iwH7S" id="7NdzLQDEhSm" role="2Oq$k0" />
+                <node concept="2kF5Gy" id="7NdzLQDEiaZ" role="2OqNvi">
+                  <node concept="3cpWs3" id="7NdzLQDEjVz" role="2k5Stb">
+                    <node concept="Xl_RD" id="7NdzLQDEk0H" role="3uHU7w">
+                      <property role="Xl_RC" value=" as no build configuration available" />
+                    </node>
+                    <node concept="3cpWs3" id="7NdzLQDEj0$" role="3uHU7B">
+                      <node concept="Xl_RD" id="7NdzLQDEibr" role="3uHU7B">
+                        <property role="Xl_RC" value="Build aborted for model " />
+                      </node>
+                      <node concept="2OqwBi" id="7NdzLQDEjce" role="3uHU7w">
+                        <node concept="1Q6Npb" id="7NdzLQDEj18" role="2Oq$k0" />
+                        <node concept="LkI2h" id="7NdzLQDEjiq" role="2OqNvi" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="7NdzLQDBrps" role="3cqZAp" />
-          </node>
-          <node concept="3clFbC" id="78Ts1skprmg" role="3clFbw">
-            <node concept="10Nm6u" id="78Ts1skprmj" role="3uHU7w" />
-            <node concept="37vLTw" id="78Ts1skprlV" role="3uHU7B">
-              <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7NdzLQDBi9r" role="3cqZAp" />
-        <node concept="3clFbJ" id="6hM2_xVYG1u" role="3cqZAp">
-          <node concept="3clFbS" id="6hM2_xVYG1x" role="3clFbx">
             <node concept="3clFbF" id="6hM2_xVYLCK" role="3cqZAp">
               <node concept="2OqwBi" id="6hM2_xVYLXd" role="3clFbG">
                 <node concept="2OqwBi" id="6hM2_xVYLDb" role="2Oq$k0">
@@ -2211,12 +2211,20 @@
             </node>
             <node concept="3cpWs6" id="6hM2_xVYP3z" role="3cqZAp" />
           </node>
-          <node concept="2OqwBi" id="6hM2_xVYJic" role="3clFbw">
-            <node concept="37vLTw" id="6hM2_xVYIh5" role="2Oq$k0">
-              <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
+          <node concept="22lmx$" id="7NdzLQDEfN4" role="3clFbw">
+            <node concept="3clFbC" id="7NdzLQDEhLl" role="3uHU7w">
+              <node concept="10Nm6u" id="7NdzLQDEhLw" role="3uHU7w" />
+              <node concept="37vLTw" id="7NdzLQDEhxZ" role="3uHU7B">
+                <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
+              </node>
             </node>
-            <node concept="3TrcHB" id="6hM2_xVYLAL" role="2OqNvi">
-              <ref role="3TsBF5" to="51wr:6hM2_xVYvfX" resolve="neverGenerateThisModel" />
+            <node concept="2OqwBi" id="6hM2_xVYJic" role="3uHU7B">
+              <node concept="37vLTw" id="6hM2_xVYIh5" role="2Oq$k0">
+                <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
+              </node>
+              <node concept="3TrcHB" id="6hM2_xVYLAL" role="2OqNvi">
+                <ref role="3TsBF5" to="51wr:6hM2_xVYvfX" resolve="neverGenerateThisModel" />
+              </node>
             </node>
           </node>
         </node>
