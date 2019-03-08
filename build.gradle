@@ -7,7 +7,7 @@ ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/reposit
 //MPS extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2019.1.+"
 ext.mpsMajor = "2019.1"
-ext.mpsBuild = "2019.1-EAP3"
+ext.mpsBuild = "2019.1-EAP6"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
