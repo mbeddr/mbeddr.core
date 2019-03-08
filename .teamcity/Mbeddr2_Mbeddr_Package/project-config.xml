@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="Mbeddr2_Mbeddr" uuid="8f45ac4a-7fa8-4f87-b3ba-ad0d17929cbf" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
-  <name>Package</name>
-  <parameters />
-  <cleanup />
-</project>
-
