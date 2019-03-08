@@ -4703,30 +4703,6 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbF" id="7NdzLQDREKF" role="3cqZAp">
-        <node concept="2OqwBi" id="7NdzLQDREKC" role="3clFbG">
-          <node concept="10M0yZ" id="7NdzLQDREKD" role="2Oq$k0">
-            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-          </node>
-          <node concept="liA8E" id="7NdzLQDREKE" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-            <node concept="3cpWs3" id="7NdzLQDRKge" role="37wK5m">
-              <node concept="37vLTw" id="7NdzLQDRKOD" role="3uHU7w">
-                <ref role="3cqZAo" node="7NdzLQDPGSu" resolve="supValueTYpe" />
-              </node>
-              <node concept="3cpWs3" id="7NdzLQDRHTW" role="3uHU7B">
-                <node concept="37vLTw" id="7NdzLQDRGGz" role="3uHU7B">
-                  <ref role="3cqZAo" node="7NdzLQDPFBh" resolve="subValueType" />
-                </node>
-                <node concept="Xl_RD" id="7NdzLQDRHU$" role="3uHU7w">
-                  <property role="Xl_RC" value=" ? " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1ZobV4" id="2RfL3oOBMp2" role="3cqZAp">
         <node concept="mw_s8" id="7NdzLQDPGRj" role="1ZfhK$">
           <node concept="37vLTw" id="7NdzLQDPGRe" role="mwGJk">
