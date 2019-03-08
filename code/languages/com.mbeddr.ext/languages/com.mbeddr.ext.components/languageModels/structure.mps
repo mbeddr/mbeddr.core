@@ -29,6 +29,9 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -158,6 +161,10 @@
       <property role="TrG5h" value="canBeUsedAsType" />
       <property role="IQ2nx" value="1539255704408883009" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="6kTuxKCClJg" role="lGtFl" />
+      <node concept="t5JxF" id="6kTuxKCQ3Ek" role="lGtFl">
+        <property role="t5JxN" value="We assume that all interfaces can be used as type and no need for this field any more. Related intention and checking rules are deleted from the model" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkC_PU">

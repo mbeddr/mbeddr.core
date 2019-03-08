@@ -1032,22 +1032,6 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" to="r4b4:5v_KyvNCJ0N" resolve="StructuralIdentifier" />
       </node>
-      <node concept="3F0ifn" id="1lsyexBKXqo" role="3EZMnx">
-        <property role="3F0ifm" value="can be used as type" />
-        <ref role="1k5W1q" to="r4b4:2CEi94e3iKI" resolve="PassiveText" />
-        <node concept="pkWqt" id="1lsyexBKXqp" role="pqm2j">
-          <node concept="3clFbS" id="1lsyexBKXqq" role="2VODD2">
-            <node concept="3clFbF" id="1lsyexBKYBI" role="3cqZAp">
-              <node concept="2OqwBi" id="1lsyexBKYC4" role="3clFbG">
-                <node concept="pncrf" id="1lsyexBKYBJ" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1lsyexBKYCa" role="2OqNvi">
-                  <ref role="3TsBF5" to="v7ag:1lsyexBMfX1" resolve="canBeUsedAsType" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3F0ifn" id="71UKpntmSm5" role="3EZMnx">
         <property role="3F0ifm" value="{" />
       </node>
@@ -4352,22 +4336,6 @@
       <node concept="3F0A7n" id="RsLjUnMNvw" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" to="r4b4:5v_KyvNCJ0N" resolve="StructuralIdentifier" />
-      </node>
-      <node concept="3F0ifn" id="AQ_pw8x4O3" role="3EZMnx">
-        <property role="3F0ifm" value="can be used as type" />
-        <ref role="1k5W1q" to="r4b4:2CEi94e3iKI" resolve="PassiveText" />
-        <node concept="pkWqt" id="AQ_pw8x4O4" role="pqm2j">
-          <node concept="3clFbS" id="AQ_pw8x4O5" role="2VODD2">
-            <node concept="3clFbF" id="AQ_pw8x4O6" role="3cqZAp">
-              <node concept="2OqwBi" id="AQ_pw8x4O7" role="3clFbG">
-                <node concept="pncrf" id="AQ_pw8x4O8" role="2Oq$k0" />
-                <node concept="3TrcHB" id="AQ_pw8x4O9" role="2OqNvi">
-                  <ref role="3TsBF5" to="v7ag:1lsyexBMfX1" resolve="canBeUsedAsType" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="l2Vlx" id="RsLjUnMNvt" role="2iSdaV" />
       <node concept="3F0ifn" id="RsLjUnMNvy" role="3EZMnx">
