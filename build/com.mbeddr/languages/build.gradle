@@ -129,18 +129,8 @@ task build_mbeddr_core_ex(type: BuildLanguages, dependsOn: [build_mbeddr, copy_l
     script script_test_mbeddrCoreEx
 }
 
-task build_mbeddr_core_ex_library(type: BuildLanguages, dependsOn: build_mbeddr) {
-    script script_test_mbeddrCoreExLibrary
-}
-
 task test_mbeddr_core_ts(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCoreTs
-}
-
-task test_mbeddr_core_ex_library {
-	doLast {
-		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core/tests/aLibrary/source_gen/aLibrary/lib")
-	}
 }
 
 task test_mbeddr_core_ex {
@@ -149,12 +139,9 @@ task test_mbeddr_core_ex {
 	}
 }
 
-task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts, test_mbeddr_core_ex_library]) {
+task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts]) {
 
 }
-test_mbeddr_core_ex_library.dependsOn build_mbeddr_core_ex
-test_mbeddr_core_ex.dependsOn test_mbeddr_core_ex_library
-test_mbeddr_core_ex_library.dependsOn build_mbeddr_core_ex_library
 
 task test_mbeddr_cc_ex {
 	doLast {
