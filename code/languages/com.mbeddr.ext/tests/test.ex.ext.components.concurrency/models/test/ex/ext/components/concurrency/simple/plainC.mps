@@ -682,8 +682,8 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include" />
-      <property role="1FkSt$" value="-g  -I/usr/include/" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-std=c99" />
       <property role="3I8uaA" value="" />
       <node concept="3abb7c" id="4LhGMnjpRcC" role="3anu1O">
         <property role="TrG5h" value="Win32" />
