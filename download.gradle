@@ -27,7 +27,7 @@ repositories {
     }
 }
 
-task resolveMPS(type: Copy)  {
+task resolve_mps(type: Copy)  {
     dependsOn configurations.mps
     from {
         configurations.mps.asFileTree.each {
@@ -39,7 +39,7 @@ task resolveMPS(type: Copy)  {
 }
 
 
-task resolvePlatform(type: Copy)  {
+task resolve_mbeddr_platform(type: Copy)  {
     dependsOn configurations.mbeddrPlatform
     from {
         configurations.mbeddrPlatform.asFileTree.each {
@@ -50,7 +50,7 @@ task resolvePlatform(type: Copy)  {
     into artifacstLocation
 }
 
-task resolveMbeddr(type: Copy)  {
+task resolve_mbeddr(type: Copy)  {
     dependsOn configurations.mbeddrAllInOne
     from {
         configurations.mbeddrAllInOne.asFileTree.each {
@@ -61,6 +61,6 @@ task resolveMbeddr(type: Copy)  {
     into artifacstLocation
 }
 
-tasks.resolvePlatform.outputs.upToDateWhen { return false }
-tasks.resolveMPS.outputs.upToDateWhen { return false }
-tasks.resolveMbeddr.outputs.upToDateWhen { return false }
+tasks.resolve_mbeddr_platform.outputs.upToDateWhen { return false }
+tasks.resolve_mps.outputs.upToDateWhen { return false }
+tasks.resolve_mbeddr.outputs.upToDateWhen { return false }

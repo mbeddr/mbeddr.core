@@ -7,6 +7,9 @@ ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/
 ext.mpsMajor = "2018.3"
 ext.mpsBuild = "2018.3.4"
 
+//MPS extensions version
+ext.mpsExtensionsVersion = project.findProperty('mpsExtensionsVersion') ?: "2018.3.+"
+
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
 ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.findProperty("teamcity")

@@ -12,7 +12,7 @@ repositories {
 }
 configurations {
     junitAnt
-    mpsArtifacts
+    mbeddrPlatform
 }
 
 ext.dependencyRepositories = [
@@ -27,15 +27,15 @@ dependencies {
     junitAnt('org.apache.ant:ant-junit4:1.9.7') {
         transitive = false
     }
-    mpsArtifacts "com.mbeddr:platform:$mbeddrPlatformBuildNumber"
+    mbeddrPlatform "com.mbeddr:platform:$mbeddrPlatformBuildNumber"
 }
 
 
-task resolveMpsArtifacts() {
+task resolve_mbeddr_platform() {
     doLast {
         copy {
             from {
-                    configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+                    configurations.mbeddrPlatform.resolve().collect { zipTree(it) }
                  }
             into artifactsDir
         }
@@ -74,7 +74,7 @@ def mbeddrDependencies
 
 //on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
 if (ciBuild) {
-    mbeddrDependencies = [copy_spawner, resolveMpsArtifacts]
+    mbeddrDependencies = [copy_spawner, resolve_mbeddr_platform]
 } else {
     mbeddrDependencies = [copy_spawner, ':build:com.mbeddr:platform:build_platform']
 }
@@ -214,7 +214,7 @@ publishing {
             artifact(publish_mbeddr) {}
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mpsArtifacts.resolvedConfiguration.firstLevelModuleDependencies.each{
+                configurations.mbeddrPlatform.resolvedConfiguration.firstLevelModuleDependencies.each{
                     def dependencyNode = dependenciesNode.appendNode('dependency')
                     dependencyNode.appendNode('groupId', it.moduleGroup)
                     dependencyNode.appendNode('artifactId', it.moduleName)

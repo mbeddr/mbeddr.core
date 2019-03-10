@@ -3,7 +3,7 @@
 // path variables
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
 // the root directory).
-ext.skipResolveMps = project.hasProperty('mpsHomeDir')
+ext.skipresolve_mps = project.hasProperty('mpsHomeDir')
 ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
 
 def userHome = System.properties['user.home']
@@ -33,7 +33,7 @@ task install() {
     }
 }
 
-logger.info "skipResolveMps: {}, mpsHomeDir: {}", ext.skipResolveMps, ext.mpsHomeDir
+logger.info "skipresolve_mps: {}, mpsHomeDir: {}", ext.skipresolve_mps, ext.mpsHomeDir
 
 // JDK_HOME required for adding tools.jar into classpath of the forked ant process
 if (!hasProperty("jdk_home")) {
@@ -90,7 +90,7 @@ subprojects {
 
     dependencies {
         mps "com.jetbrains:mps:$mpsBuild"
-        mpsExtensions "de.itemis.mps:extensions:2018.3.+"
+        mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
         ant_lib "org.apache.ant:ant-junit:1.10.1"
     }
 }
