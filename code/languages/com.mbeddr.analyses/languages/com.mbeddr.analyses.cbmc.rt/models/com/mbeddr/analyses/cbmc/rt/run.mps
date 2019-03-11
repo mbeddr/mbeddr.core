@@ -5865,18 +5865,6 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="FDeiXqBEdA" role="3cqZAp">
-                        <node concept="2OqwBi" id="FDeiXqBEdB" role="3clFbG">
-                          <node concept="37vLTw" id="3IsZZljIB4Z" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
-                          </node>
-                          <node concept="TSZUe" id="FDeiXqBEdD" role="2OqNvi">
-                            <node concept="Xl_RD" id="FDeiXqBEdE" role="25WWJ7">
-                              <property role="Xl_RC" value="--partial-loops" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
                     </node>
                     <node concept="2OqwBi" id="4GS7ZDPmFcR" role="3clFbw">
                       <node concept="37vLTw" id="3IsZZljIGGb" role="2Oq$k0">
@@ -5884,6 +5872,22 @@
                       </node>
                       <node concept="2S8uIT" id="4GS7ZDPmFcT" role="2OqNvi">
                         <ref role="2S8YL0" node="tGR6edUFun" resolve="generateUnwindingAssertions" />
+                      </node>
+                    </node>
+                    <node concept="9aQIb" id="pUvb40V_8Z" role="9aQIa">
+                      <node concept="3clFbS" id="pUvb40V_90" role="9aQI4">
+                        <node concept="3clFbF" id="pUvb40V_em" role="3cqZAp">
+                          <node concept="2OqwBi" id="pUvb40V_en" role="3clFbG">
+                            <node concept="37vLTw" id="pUvb40V_eo" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                            </node>
+                            <node concept="TSZUe" id="pUvb40V_ep" role="2OqNvi">
+                              <node concept="Xl_RD" id="pUvb40V_eq" role="25WWJ7">
+                                <property role="Xl_RC" value="--partial-loops" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
