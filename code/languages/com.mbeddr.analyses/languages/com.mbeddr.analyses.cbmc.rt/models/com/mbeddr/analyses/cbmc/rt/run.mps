@@ -1542,6 +1542,10 @@
         <node concept="3clFbF" id="4AQNBfVakxR" role="3cqZAp">
           <node concept="37vLTI" id="4AQNBfVala5" role="3clFbG">
             <node concept="3K4zz7" id="4AQNBfVaDu6" role="37vLTx">
+              <node concept="Rm8GO" id="4AQNBfVaEcn" role="3K4E3e">
+                <ref role="Rm8GQ" node="4AQNBfVaxbt" resolve="CBMC_AFTER_5_7" />
+                <ref role="1Px2BO" node="4AQNBfVaxbs" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
+              </node>
               <node concept="22lmx$" id="1iTTECjVUiL" role="3K4Cdx">
                 <node concept="22lmx$" id="GXbIVv7UMX" role="3uHU7B">
                   <node concept="2OqwBi" id="4AQNBfVaB65" role="3uHU7B">
@@ -1593,10 +1597,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="Rm8GO" id="4AQNBfVaEcn" role="3K4E3e">
-                <ref role="Rm8GQ" node="4AQNBfVaxbt" resolve="CBMC_AFTER_5_7" />
-                <ref role="1Px2BO" node="4AQNBfVaxbs" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
               </node>
               <node concept="Rm8GO" id="4AQNBfVaE_e" role="3K4GZi">
                 <ref role="Rm8GQ" node="4AQNBfVaAtL" resolve="CBMC_PREVIOUS_TO_5_7" />
