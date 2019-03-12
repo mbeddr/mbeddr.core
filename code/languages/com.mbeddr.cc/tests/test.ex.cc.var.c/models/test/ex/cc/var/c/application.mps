@@ -23,11 +23,6 @@
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
     </language>
-    <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
-        <property id="7237858926291186685" name="neverGenerateThisModel" index="vyZA_" />
-      </concept>
-    </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
       <concept id="8811614583515726007" name="com.mbeddr.core.udt.structure.EnumLiteralRef" flags="ng" index="1AkAhK">
         <reference id="8811614583515726008" name="literal" index="1AkAhZ" />
@@ -598,9 +593,6 @@
         <property role="TrG5h" value="blue" />
       </node>
     </node>
-  </node>
-  <node concept="2v9HqL" id="6hM2_xVYq7H">
-    <property role="vyZA_" value="true" />
   </node>
 </model>
 
