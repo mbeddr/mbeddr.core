@@ -66,7 +66,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="4egfvirUw09">
-    <ref role="13h7C2" to="21pk:3L4lRB2Gtfz" resolve="ObjectClass" />
+    <ref role="13h7C2" to="21pk:3L4lRB2Gtfz" resolve="JsonFile" />
     <node concept="13i0hz" id="4egfvirUw0c" role="13h7CS">
       <property role="TrG5h" value="defaultLocation" />
       <node concept="3Tm1VV" id="4egfvirUw0d" role="1B3o_S" />
