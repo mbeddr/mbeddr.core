@@ -15,10 +15,6 @@ configurations {
     mbeddr
 }
 
-ext.dependencyRepositories = [
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
-
 dependencies {
     junitAnt 'junit:junit:4.12'
     junitAnt('org.apache.ant:ant-junit:1.9.7') {

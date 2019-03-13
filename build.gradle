@@ -1,7 +1,7 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
-ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 
 //MPS versions
 ext.mpsMajor = "2018.3"
@@ -35,6 +35,29 @@ subprojects {
     apply plugin: "maven-publish"
     ext.mbeddrMajor = "1"
     ext.mbeddrMinor = "2"
+
+    // switch to snapshot/release repositories passed with -P option via command line, if any, 
+    // or use default snapshot/release repositories otherwise
+    if (project.hasProperty('snapshotRepository') && !project.getProperty('snapshotRepository').empty) {
+        ext.snapshotRepository = project.getProperty('snapshotRepository')
+    } else {
+        ext.snapshotRepository = defaultSnapshotRepository
+    }
+    if (project.hasProperty('releaseRepository') && !project.getProperty('releaseRepository').empty) {
+        ext.releaseRepository = project.getProperty('releaseRepository')
+    } else {
+        ext.releaseRepository = defaultReleaseRepository
+    }
+
+    // use depencency repositories passed as comma-separated list with -P option via command line, if any, 
+    // or use default snapshot/release repositories otherwise
+    if (project.hasProperty('dependencyRepositories') && !project.getProperty('dependencyRepositories').empty) {
+        if (project.getProperty('dependencyRepositories') instanceof String) {
+            ext.dependencyRepositories = project.getProperty('dependencyRepositories').split(',') as Set
+        }
+    } else {
+        ext.dependencyRepositories = [defaultSnapshotRepository, defaultReleaseRepository]
+    }
 
     if (project.hasProperty("mbeddrVersion")) {
         ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')
@@ -83,9 +106,4 @@ subprojects {
             println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
         }
     }
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion '4.4.1'
-    distributionType 'all'
 }

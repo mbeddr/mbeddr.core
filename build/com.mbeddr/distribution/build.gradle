@@ -6,10 +6,6 @@ configurations {
     jreWin
 }
 
-ext.dependencyRepositories = [
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
-
 ext.jdkVersion = '8u112b408.4'
 dependencies {
     mbeddr "com.mbeddr:mbeddr:$mbeddrBuildNumber"
