@@ -399,9 +399,6 @@
         <reference id="2546541902879119265" name="ppcErrorMsgDef" index="1P_JnZ" />
         <child id="4491876417845484926" name="contents" index="2EX0iN" />
       </concept>
-      <concept id="4491876417845484919" name="com.mbeddr.ext.components.structure.Interface" flags="ng" index="2EX0iU">
-        <property id="1539255704408883009" name="canBeUsedAsType" index="1M_7uD" />
-      </concept>
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
@@ -2966,7 +2963,6 @@
         <node concept="2EX0iR" id="x1qBlirwn" role="N3F5h">
           <property role="2OOxQR" value="true" />
           <property role="TrG5h" value="I" />
-          <property role="1M_7uD" value="true" />
         </node>
         <node concept="2NXPZ9" id="x1qBlirwq" role="N3F5h">
           <property role="TrG5h" value="empty_1399891161164_6" />
@@ -4611,7 +4607,6 @@
         <node concept="2EX0iR" id="18IM2C3DCzH" role="N3F5h">
           <property role="2OOxQR" value="false" />
           <property role="TrG5h" value="IService" />
-          <property role="1M_7uD" value="true" />
           <node concept="2EX0iL" id="p3gCwbClEq" role="2EX0iN">
             <property role="TrG5h" value="serviceOp" />
             <node concept="19Rifw" id="p3gCwbClEp" role="2C2TGm">

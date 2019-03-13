@@ -5,7 +5,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
     <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
@@ -224,9 +224,6 @@
       <concept id="4491876417845484930" name="com.mbeddr.ext.components.structure.Port" flags="ng" index="2EX0hf">
         <reference id="4491876417845484932" name="intf" index="2EX0h9" />
       </concept>
-      <concept id="4491876417845484919" name="com.mbeddr.ext.components.structure.Interface" flags="ng" index="2EX0iU">
-        <property id="1539255704408883009" name="canBeUsedAsType" index="1M_7uD" />
-      </concept>
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
@@ -337,7 +334,6 @@
     </node>
     <node concept="2q5ZbU" id="RsLjUnOBWn" role="N3F5h">
       <property role="TrG5h" value="CarType" />
-      <property role="1M_7uD" value="false" />
       <property role="2OOxQR" value="true" />
       <node concept="2q5ZbO" id="RsLjUnOBWo" role="2q5ZbA">
         <property role="TrG5h" value="id" />
@@ -349,7 +345,6 @@
     </node>
     <node concept="2q5ZbU" id="6Ywynt2TUkx" role="N3F5h">
       <property role="TrG5h" value="CarPositions" />
-      <property role="1M_7uD" value="false" />
       <property role="2OOxQR" value="true" />
       <node concept="2q5ZbO" id="6Ywynt2TUky" role="2q5ZbA">
         <property role="TrG5h" value="poses" />
@@ -397,7 +392,6 @@
     <node concept="2q5ZbU" id="RsLjUnNb$Z" role="N3F5h">
       <property role="TrG5h" value="CarData" />
       <property role="2OOxQR" value="true" />
-      <property role="1M_7uD" value="true" />
       <property role="XP9xe" value="true" />
       <node concept="2q5ZbO" id="RsLjUnNu$7" role="2q5ZbA">
         <property role="TrG5h" value="drehzahl" />

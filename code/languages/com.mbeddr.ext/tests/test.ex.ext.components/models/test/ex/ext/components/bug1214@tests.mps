@@ -152,9 +152,6 @@
       <concept id="4491876417845484922" name="com.mbeddr.ext.components.structure.ClientServerInterface" flags="ng" index="2EX0iR">
         <child id="4491876417845484926" name="contents" index="2EX0iN" />
       </concept>
-      <concept id="4491876417845484919" name="com.mbeddr.ext.components.structure.Interface" flags="ng" index="2EX0iU">
-        <property id="1539255704408883009" name="canBeUsedAsType" index="1M_7uD" />
-      </concept>
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
@@ -267,7 +264,6 @@
     <node concept="2EX0iR" id="1wlju5FNYG1" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="ValueProvider" />
-      <property role="1M_7uD" value="true" />
       <node concept="2EX0iL" id="1wlju5FNYWX" role="2EX0iN">
         <property role="TrG5h" value="getValue" />
         <node concept="26Vqp4" id="1wlju5FO0bU" role="2C2TGm">
