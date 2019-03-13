@@ -3,6 +3,7 @@ image: alpine
 variables:
   GRADLE_USER_HOME: "gradle/.gradle"
   GRADLE_OPTS: "
+      -g $GRADLE_USER_HOME 
       -Dorg.gradle.daemon=false 
       -PforceCI=true
       -PmpsExtensionsVersion=$MPS_EXTENSIONS_VERSION
@@ -20,7 +21,8 @@ before_script:
 
 build:
   stage: build
-  script: gradlew publishMbeddrPublicationToMavenRepository
+  script: 
+    - ./gradlew publishMbeddrPublicationToMavenRepository
   cache:
     paths:
       - $GRADLE_USER_HOME
