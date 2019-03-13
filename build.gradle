@@ -1,18 +1,18 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
-ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 
 //MPS versions
 ext.mpsMajor = "2018.3"
 ext.mpsBuild = "2018.3.4"
 
 //MPS extensions version
-ext.mpsExtensionsVersion = project.findProperty('mpsExtensionsVersion') ?: "2018.3.+"
+ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2018.3.+"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
-ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.findProperty("teamcity")
+ext.ciBuild = findNonEmptyProperty("forceCI") ?: !hasNonEmptyProperty('mpsHomeDir') && project.hasProperty("teamcity")
 
 buildscript {
     if(JavaVersion.current() != JavaVersion.VERSION_1_8){
@@ -29,6 +29,17 @@ buildscript {
     }
 }
 
+def hasNonEmptyProperty(property) {
+    return project.hasProperty(property) && !project.getProperty(property).empty
+}
+
+def findNonEmptyProperty(property) {
+    if (hasNonEmptyProperty(property)) {
+        return project.getProperty(property)
+    }
+    return null
+}
+
 subprojects {
     // required plugins
     apply plugin: "base"
@@ -38,20 +49,12 @@ subprojects {
 
     // switch to snapshot/release repositories passed with -P option via command line, if any, 
     // or use default snapshot/release repositories otherwise
-    if (project.hasProperty('snapshotRepository') && !project.getProperty('snapshotRepository').empty) {
-        ext.snapshotRepository = project.getProperty('snapshotRepository')
-    } else {
-        ext.snapshotRepository = defaultSnapshotRepository
-    }
-    if (project.hasProperty('releaseRepository') && !project.getProperty('releaseRepository').empty) {
-        ext.releaseRepository = project.getProperty('releaseRepository')
-    } else {
-        ext.releaseRepository = defaultReleaseRepository
-    }
+    ext.snapshotRepository = findNonEmptyProperty('snapshotRepository') ?: defaultSnapshotRepository
+    ext.releaseRepository = findNonEmptyProperty('releaseRepository') ?: defaultReleaseRepository
 
     // use depencency repositories passed as comma-separated list with -P option via command line, if any, 
     // or use default snapshot/release repositories otherwise
-    if (project.hasProperty('dependencyRepositories') && !project.getProperty('dependencyRepositories').empty) {
+    if (project.hasNonEmptyProperty('dependencyRepositories')) {
         if (project.getProperty('dependencyRepositories') instanceof String) {
             ext.dependencyRepositories = project.getProperty('dependencyRepositories').split(',') as Set
         }
@@ -96,7 +99,7 @@ subprojects {
 
         // Enable mbeddr to be assigned a different version number than mbeddr platform, 
         // as well as mbeddr to be built against a specified existing mbeddr platform version
-		ext.mbeddrPlatformBuildNumber = project.findProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
+		ext.mbeddrPlatformBuildNumber = findNonEmptyProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
 
         if (ciBuild) {
 			// Coerce TeamCity build number to mbeddrBuildNumber by default 
