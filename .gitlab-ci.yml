@@ -1,0 +1,28 @@
+image: alpine
+
+variables:
+  GRADLE_USER_HOME: "gradle/.gradle"
+  GRADLE_OPTS: "
+      -Dorg.gradle.daemon=false 
+      -PforceCI=true
+      -PmpsExtensionsVersion=$MPS_EXTENSIONS_VERSION
+      -PmbeddrPlatformVersion=$MBEDDR_PLATFORM_VERSION
+      -PdependencyRepositories=$MBEDDR_DEPENDENCY_REPOSITORY
+      -PsnapshotRepository=$MBEDDR_SNAPTHOT_REPOSITORY
+      -PreleaseRepository=$MBEDDR_RELEASE_REPOSITORY
+      -PnexusUsername=$NEXUS_USER 
+      -PnexusPassword=$NEXUS_PASSWORD
+    "
+
+before_script:
+  - mkdir -p $GRADLE_USER_HOME
+  - chmod a+x gradlew 
+
+build:
+  stage: build
+  script: gradlew publishMbeddrPublicationToMavenRepository
+  cache:
+    paths:
+      - $GRADLE_USER_HOME
+  only:
+    web
