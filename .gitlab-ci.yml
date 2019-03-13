@@ -16,8 +16,10 @@ variables:
     "
 
 before_script:
+  - java -version
   - mkdir -p $GRADLE_USER_HOME
   - chmod a+x gradlew 
+  - ./gradlew --version
 
 build:
   stage: build
