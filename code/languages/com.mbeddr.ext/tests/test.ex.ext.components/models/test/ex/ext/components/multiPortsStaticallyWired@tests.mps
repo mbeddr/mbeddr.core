@@ -64,22 +64,10 @@
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
-      <concept id="8729447926330198396" name="com.mbeddr.core.util.structure.ForRangeStatement" flags="ng" index="n2Vfv">
-        <child id="8729447926330241132" name="range" index="n2wFf" />
-        <child id="8729447926330241139" name="body" index="n2wFg" />
-      </concept>
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
-      <concept id="7297559910934293472" name="com.mbeddr.core.util.structure.ForRangeRef" flags="ng" index="1f68ZN">
-        <reference id="7297559910934293473" name="forRange" index="1f68ZM" />
-      </concept>
-      <concept id="6307143892175911066" name="com.mbeddr.core.util.structure.RangeExpression" flags="ng" index="1vV05I">
-        <property id="8729447926330623085" name="rightExclude" index="n43Ve" />
-        <child id="6307143892175911068" name="right" index="1vV05C" />
-        <child id="6307143892175911067" name="left" index="1vV05J" />
-      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
@@ -139,13 +127,13 @@
       <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
+      <concept id="7634590097754663225" name="com.mbeddr.ext.components.structure.ForEachPortStatement" flags="ng" index="n$yC7">
+        <child id="6321794478502972489" name="body" index="HyoFs" />
+        <child id="4532785557658370366" name="portRefExpr" index="3hQ35c" />
+      </concept>
       <concept id="1302968767135003933" name="com.mbeddr.ext.components.structure.InternalRunnableCall" flags="ng" index="2$_UoH">
         <reference id="1302968767135003934" name="runnable" index="2$_UoI" />
         <child id="5950410542643524495" name="actuals" index="3O_q_j" />
-      </concept>
-      <concept id="5308710777891663531" name="com.mbeddr.ext.components.structure.WhenPortConnectedStatement" flags="ng" index="EanFS">
-        <child id="1136269059640505400" name="portExpr" index="2aTQa8" />
-        <child id="5308710777891663533" name="body" index="EanFY" />
       </concept>
       <concept id="5308710777891512019" name="com.mbeddr.ext.components.structure.Field" flags="ng" index="EbCE0">
         <child id="5308710777891512022" name="init" index="EbCE5" />
@@ -330,36 +318,16 @@
       <node concept="2EWDwb" id="Z4PF25qNmu" role="2RW2fA">
         <property role="TrG5h" value="notifyAllUsingLoop" />
         <node concept="3XIRFW" id="Z4PF25qNmv" role="2EWMhI">
-          <node concept="n2Vfv" id="Z4PF25qNry" role="3XIRFZ">
-            <property role="TrG5h" value="ports" />
-            <node concept="1vV05I" id="Z4PF25qNr$" role="n2wFf">
-              <property role="n43Ve" value="true" />
-              <node concept="3TlMh9" id="Z4PF25qNsk" role="1vV05J">
-                <property role="2hmy$m" value="0" />
-              </node>
-              <node concept="3TlMh9" id="Z4PF25qNsY" role="1vV05C">
-                <property role="2hmy$m" value="3" />
-              </node>
+          <node concept="n$yC7" id="6C8IiUrtsNK" role="3XIRFZ">
+            <node concept="2H6loZ" id="6C8IiUrtsOs" role="3hQ35c">
+              <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
             </node>
-            <node concept="3XIRFW" id="Z4PF25qNrE" role="n2wFg">
-              <node concept="EanFS" id="Z4PF25qN$o" role="3XIRFZ">
-                <node concept="3XIRFW" id="Z4PF25qN$p" role="EanFY">
-                  <node concept="1_9egQ" id="Z4PF25qNmw" role="3XIRFZ">
-                    <node concept="30IBQI" id="Z4PF25qNGd" role="1_9egR">
-                      <ref role="2H6Oet" node="2ZUGF54kk7T" resolve="notify" />
-                      <node concept="2OhZ_J" id="Z4PF25qNHp" role="1_9fRO">
-                        <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
-                        <node concept="1f68ZN" id="Z4PF25qNIB" role="2OhZuM">
-                          <ref role="1f68ZM" node="Z4PF25qNry" resolve="ports" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OhZ_J" id="Z4PF25qN$G" role="2aTQa8">
-                  <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
-                  <node concept="1f68ZN" id="Z4PF25qN$S" role="2OhZuM">
-                    <ref role="1f68ZM" node="Z4PF25qNry" resolve="ports" />
+            <node concept="3XIRFW" id="6C8IiUrtsNO" role="HyoFs">
+              <node concept="1_9egQ" id="6C8IiUrtsRp" role="3XIRFZ">
+                <node concept="30IBQI" id="6C8IiUrtsS2" role="1_9egR">
+                  <ref role="2H6Oet" node="2ZUGF54kk7T" resolve="notify" />
+                  <node concept="2H6loZ" id="6C8IiUrtsRn" role="1_9fRO">
+                    <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
                   </node>
                 </node>
               </node>

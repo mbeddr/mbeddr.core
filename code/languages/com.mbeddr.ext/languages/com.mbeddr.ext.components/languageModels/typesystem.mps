@@ -11444,17 +11444,6 @@
               <node concept="3x8VRR" id="6kTuxKCM$2c" role="2OqNvi" />
             </node>
           </node>
-          <node concept="3clFbJ" id="6kTuxKCLfFs" role="3cqZAp">
-            <node concept="3clFbS" id="6kTuxKCLfFt" role="3clFbx">
-              <node concept="3cpWs6" id="6kTuxKCLfFu" role="3cqZAp" />
-            </node>
-            <node concept="2OqwBi" id="6kTuxKCLfFv" role="3clFbw">
-              <node concept="37vLTw" id="6kTuxKCLfFw" role="2Oq$k0">
-                <ref role="3cqZAo" node="6kTuxKCKu_d" resolve="requiredPortOpCallExpr" />
-              </node>
-              <node concept="3x8VRR" id="6kTuxKCLfFx" role="2OqNvi" />
-            </node>
-          </node>
           <node concept="3cpWs8" id="6kTuxKCIAKt" role="3cqZAp">
             <node concept="3cpWsn" id="6kTuxKCIAKw" role="3cpWs9">
               <property role="TrG5h" value="ancestor" />
