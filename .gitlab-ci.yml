@@ -1,10 +1,10 @@
-image: openjdk:8-jdk
+image: mbeddr/mbeddr.build.docker.env
 
 variables:
   GRADLE_USER_HOME: "gradle/.gradle"
   GRADLE_OPTS: "
+      --no-daemon
       -g $GRADLE_USER_HOME 
-      -Dorg.gradle.daemon=false 
       -PforceCI=true
       -PmpsExtensionsVersion=$MPS_EXTENSIONS_VERSION
       -PmbeddrPlatformVersion=$MBEDDR_PLATFORM_VERSION
