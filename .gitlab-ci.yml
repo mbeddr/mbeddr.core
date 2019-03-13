@@ -1,4 +1,4 @@
-image: alpine
+image: openjdk:8-jdk
 
 variables:
   GRADLE_USER_HOME: "gradle/.gradle"
