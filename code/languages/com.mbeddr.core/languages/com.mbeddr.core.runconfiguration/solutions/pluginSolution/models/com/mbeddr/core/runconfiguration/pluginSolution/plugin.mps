@@ -10829,7 +10829,23 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="1n$sR5eY60N" role="3cqZAp" />
+                <node concept="3clFbF" id="4pOPEVGzeaw" role="3cqZAp">
+                  <node concept="2OqwBi" id="4pOPEVGzfzm" role="3clFbG">
+                    <node concept="37vLTw" id="4pOPEVGzeau" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7tZeFupJF6F" resolve="inputRes" />
+                    </node>
+                    <node concept="X8dFx" id="4pOPEVGzimd" role="2OqNvi">
+                      <node concept="2OqwBi" id="4pOPEVGzjvZ" role="25WWJ7">
+                        <node concept="37vLTw" id="4pOPEVGziXd" role="2Oq$k0">
+                          <ref role="3cqZAo" node="45D6dETqC8T" resolve="modelToResources" />
+                        </node>
+                        <node concept="liA8E" id="4pOPEVGzkkR" role="2OqNvi">
+                          <ref role="37wK5l" to="fn29:713BH0S$TAn" resolve="resources" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbH" id="4LT2PFqwKJw" role="3cqZAp" />
               </node>
               <node concept="TDmWw" id="4LT2PFqwPXm" role="TEbGg">
