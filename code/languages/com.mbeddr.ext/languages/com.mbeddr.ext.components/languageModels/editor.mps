@@ -2877,38 +2877,55 @@
           <node concept="3TQlhw" id="7Giw0p767se" role="1Hhtcw">
             <node concept="3clFbS" id="7Giw0p767sg" role="2VODD2">
               <node concept="3clFbJ" id="7Giw0p7dw$Q" role="3cqZAp">
-                <node concept="2OqwBi" id="7Giw0p7dJq_" role="3clFbw">
-                  <node concept="1PxgMI" id="7Giw0p7dIlI" role="2Oq$k0">
-                    <node concept="chp4Y" id="7Giw0p7dIJR" role="3oSUPX">
-                      <ref role="cht4Q" to="v7ag:3TmmsQkD8YD" resolve="RequiredPort" />
-                    </node>
-                    <node concept="2OqwBi" id="7Giw0p7d$iT" role="1m5AlR">
-                      <node concept="2OqwBi" id="7Giw0p7dxau" role="2Oq$k0">
-                        <node concept="pncrf" id="7Giw0p7dwHF" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="7Giw0p7dyXB" role="2OqNvi">
-                          <ref role="3Tt5mk" to="v7ag:Z4PF258VgS" resolve="portExpr" />
+                <node concept="22lmx$" id="6LJSgT28b1$" role="3clFbw">
+                  <node concept="3fqX7Q" id="6LJSgT28aAw" role="3uHU7B">
+                    <node concept="2OqwBi" id="6LJSgT28aAy" role="3fr31v">
+                      <node concept="1PxgMI" id="6LJSgT28aAz" role="2Oq$k0">
+                        <node concept="chp4Y" id="6LJSgT28aA$" role="3oSUPX">
+                          <ref role="cht4Q" to="v7ag:3TmmsQkD8YD" resolve="RequiredPort" />
+                        </node>
+                        <node concept="2OqwBi" id="6LJSgT28aA_" role="1m5AlR">
+                          <node concept="2OqwBi" id="6LJSgT28aAA" role="2Oq$k0">
+                            <node concept="pncrf" id="6LJSgT28aAB" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="6LJSgT28aAC" role="2OqNvi">
+                              <ref role="3Tt5mk" to="v7ag:Z4PF258VgS" resolve="portExpr" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="6LJSgT28aAD" role="2OqNvi">
+                            <ref role="3Tt5mk" to="v7ag:71UKpntoTuF" resolve="port" />
+                          </node>
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="7Giw0p7d_Rl" role="2OqNvi">
-                        <ref role="3Tt5mk" to="v7ag:71UKpntoTuF" resolve="port" />
+                      <node concept="2qgKlT" id="6LJSgT28aAE" role="2OqNvi">
+                        <ref role="37wK5l" to="eup9:2ZUGF54jY1D" resolve="isMultiple" />
                       </node>
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="7Giw0p7dPWY" role="2OqNvi">
-                    <ref role="37wK5l" to="eup9:2ZUGF54jY1D" resolve="isMultiple" />
+                  <node concept="2OqwBi" id="6LJSgT28e_H" role="3uHU7w">
+                    <node concept="2OqwBi" id="6LJSgT289fd" role="2Oq$k0">
+                      <node concept="pncrf" id="6LJSgT288Jb" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="6LJSgT28d3x" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v7ag:Z4PF258VgS" resolve="portExpr" />
+                      </node>
+                    </node>
+                    <node concept="1mIQ4w" id="6LJSgT28gH7" role="2OqNvi">
+                      <node concept="chp4Y" id="6LJSgT28h7Z" role="cj9EA">
+                        <ref role="cht4Q" to="v7ag:3XxRpIb9yjO" resolve="SinglePortRefExpr" />
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbS" id="7Giw0p7dw$S" role="3clFbx">
                   <node concept="3cpWs6" id="7Giw0p7dQrF" role="3cqZAp">
                     <node concept="Xl_RD" id="7Giw0p7dRgl" role="3cqZAk">
-                      <property role="Xl_RC" value="when any port connected" />
+                      <property role="Xl_RC" value="when port connected" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="3clFbF" id="7Giw0p7dTJo" role="3cqZAp">
                 <node concept="Xl_RD" id="7Giw0p7dTJn" role="3clFbG">
-                  <property role="Xl_RC" value="when port connected" />
+                  <property role="Xl_RC" value="when any port connected" />
                 </node>
               </node>
             </node>

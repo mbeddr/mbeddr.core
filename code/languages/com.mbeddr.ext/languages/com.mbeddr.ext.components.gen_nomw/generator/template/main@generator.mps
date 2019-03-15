@@ -54,6 +54,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
@@ -629,7 +630,9 @@
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -9572,15 +9575,6 @@
                 <node concept="1W57fq" id="7Giw0p7lKd7" role="lGtFl">
                   <node concept="3IZrLx" id="7Giw0p7lKd8" role="3IZSJc">
                     <node concept="3clFbS" id="7Giw0p7lKd9" role="2VODD2">
-                      <node concept="3cpWs8" id="7Giw0p7lmOe" role="3cqZAp">
-                        <node concept="3cpWsn" id="7Giw0p7lmOf" role="3cpWs9">
-                          <property role="TrG5h" value="isPortConnected" />
-                          <node concept="10P_77" id="7Giw0p7lmOg" role="1tU5fm" />
-                          <node concept="3clFbT" id="7Giw0p7lmOh" role="33vP2m">
-                            <property role="3clFbU" value="true" />
-                          </node>
-                        </node>
-                      </node>
                       <node concept="3cpWs8" id="7Giw0p7lmOi" role="3cqZAp">
                         <node concept="3cpWsn" id="7Giw0p7lmOj" role="3cpWs9">
                           <property role="TrG5h" value="p" />
@@ -9628,47 +9622,103 @@
                       </node>
                       <node concept="3clFbJ" id="7Giw0p7lmO$" role="3cqZAp">
                         <node concept="3clFbS" id="7Giw0p7lmO_" role="3clFbx">
-                          <node concept="3clFbF" id="7Giw0p7lmOA" role="3cqZAp">
-                            <node concept="37vLTI" id="7Giw0p7lmOB" role="3clFbG">
-                              <node concept="3clFbT" id="7Giw0p7lmOC" role="37vLTx" />
-                              <node concept="37vLTw" id="7Giw0p7lmOD" role="37vLTJ">
-                                <ref role="3cqZAo" node="7Giw0p7lmOf" resolve="isPortConnected" />
+                          <node concept="3cpWs8" id="6LJSgT2eH0e" role="3cqZAp">
+                            <node concept="3cpWsn" id="6LJSgT2eH0f" role="3cpWs9">
+                              <property role="TrG5h" value="intValue" />
+                              <node concept="10Oyi0" id="6LJSgT2eH03" role="1tU5fm" />
+                              <node concept="2OqwBi" id="6LJSgT2eH0g" role="33vP2m">
+                                <node concept="1eOMI4" id="6LJSgT2eH0h" role="2Oq$k0">
+                                  <node concept="10QFUN" id="6LJSgT2eH0i" role="1eOMHV">
+                                    <node concept="37vLTw" id="6LJSgT2eH0j" role="10QFUP">
+                                      <ref role="3cqZAo" node="7Giw0p7lmOt" resolve="maxConnectionCount" />
+                                    </node>
+                                    <node concept="3uibUv" id="6LJSgT2eH0k" role="10QFUM">
+                                      <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="6LJSgT2eH0l" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~Integer.intValue():int" resolve="intValue" />
+                                </node>
                               </node>
                             </node>
                           </node>
-                        </node>
-                        <node concept="1Wc70l" id="7Giw0p7lmOE" role="3clFbw">
-                          <node concept="3y3z36" id="7Giw0p7lmOF" role="3uHU7B">
-                            <node concept="37vLTw" id="7Giw0p7lmOG" role="3uHU7B">
-                              <ref role="3cqZAo" node="7Giw0p7lmOt" resolve="maxConnectionCount" />
+                          <node concept="3clFbJ" id="6LJSgT2eFY2" role="3cqZAp">
+                            <node concept="3clFbS" id="6LJSgT2eFY4" role="3clFbx">
+                              <node concept="3cpWs6" id="6LJSgT2czSu" role="3cqZAp">
+                                <node concept="3clFbT" id="6LJSgT2czSx" role="3cqZAk" />
+                              </node>
                             </node>
-                            <node concept="10Nm6u" id="7Giw0p7lmOH" role="3uHU7w" />
+                            <node concept="3clFbC" id="7Giw0p7lmOI" role="3clFbw">
+                              <node concept="37vLTw" id="6LJSgT2eH0m" role="3uHU7B">
+                                <ref role="3cqZAo" node="6LJSgT2eH0f" resolve="intValue" />
+                              </node>
+                              <node concept="3cmrfG" id="7Giw0p7lmOP" role="3uHU7w">
+                                <property role="3cmrfH" value="0" />
+                              </node>
+                            </node>
                           </node>
-                          <node concept="3clFbC" id="7Giw0p7lmOI" role="3uHU7w">
-                            <node concept="2OqwBi" id="7Giw0p7lmOJ" role="3uHU7B">
-                              <node concept="1eOMI4" id="7Giw0p7lmOK" role="2Oq$k0">
-                                <node concept="10QFUN" id="7Giw0p7lmOL" role="1eOMHV">
-                                  <node concept="37vLTw" id="7Giw0p7lmOM" role="10QFUP">
-                                    <ref role="3cqZAo" node="7Giw0p7lmOt" resolve="maxConnectionCount" />
+                          <node concept="Jncv_" id="6LJSgT2c_aW" role="3cqZAp">
+                            <ref role="JncvD" to="v7ag:3XxRpIb9yjO" resolve="SinglePortRefExpr" />
+                            <node concept="3clFbS" id="6LJSgT2c_b0" role="Jncv$">
+                              <node concept="3clFbJ" id="6LJSgT2cA7H" role="3cqZAp">
+                                <node concept="2d3UOw" id="6LJSgT2naTj" role="3clFbw">
+                                  <node concept="2YIFZM" id="6LJSgT2dNKk" role="3uHU7B">
+                                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                                    <node concept="2OqwBi" id="6LJSgT2dgqo" role="37wK5m">
+                                      <node concept="1PxgMI" id="6LJSgT2dfsS" role="2Oq$k0">
+                                        <property role="1BlNFB" value="true" />
+                                        <node concept="chp4Y" id="6LJSgT2dfO8" role="3oSUPX">
+                                          <ref role="cht4Q" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
+                                        </node>
+                                        <node concept="2OqwBi" id="6LJSgT2cAML" role="1m5AlR">
+                                          <node concept="Jnkvi" id="6LJSgT2cAk8" role="2Oq$k0">
+                                            <ref role="1M0zk5" node="6LJSgT2c_b2" resolve="singlePort" />
+                                          </node>
+                                          <node concept="3TrEf2" id="6LJSgT2cC3Y" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="v7ag:3XxRpIb9yCD" resolve="index" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="3TrcHB" id="6LJSgT2dsLV" role="2OqNvi">
+                                        <ref role="3TsBF5" to="mj1l:1UQ4qqfV3yK" resolve="value" />
+                                      </node>
+                                    </node>
                                   </node>
-                                  <node concept="3uibUv" id="7Giw0p7lmON" role="10QFUM">
-                                    <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                                  <node concept="37vLTw" id="6LJSgT2eH0n" role="3uHU7w">
+                                    <ref role="3cqZAo" node="6LJSgT2eH0f" resolve="intValue" />
+                                  </node>
+                                </node>
+                                <node concept="3clFbS" id="6LJSgT2cA7J" role="3clFbx">
+                                  <node concept="3cpWs6" id="6LJSgT2dNal" role="3cqZAp">
+                                    <node concept="3clFbT" id="6LJSgT2dNaz" role="3cqZAk" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="liA8E" id="7Giw0p7lmOO" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Integer.intValue():int" resolve="intValue" />
-                              </node>
                             </node>
-                            <node concept="3cmrfG" id="7Giw0p7lmOP" role="3uHU7w">
-                              <property role="3cmrfH" value="0" />
+                            <node concept="JncvC" id="6LJSgT2c_b2" role="JncvA">
+                              <property role="TrG5h" value="singlePort" />
+                              <node concept="2jxLKc" id="6LJSgT2c_b3" role="1tU5fm" />
+                            </node>
+                            <node concept="2OqwBi" id="6LJSgT2c_ka" role="JncvB">
+                              <node concept="30H73N" id="6LJSgT2c_kb" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="6LJSgT2c_kc" role="2OqNvi">
+                                <ref role="3Tt5mk" to="v7ag:Z4PF258VgS" resolve="portExpr" />
+                              </node>
                             </node>
                           </node>
                         </node>
+                        <node concept="3y3z36" id="7Giw0p7lmOF" role="3clFbw">
+                          <node concept="37vLTw" id="7Giw0p7lmOG" role="3uHU7B">
+                            <ref role="3cqZAo" node="7Giw0p7lmOt" resolve="maxConnectionCount" />
+                          </node>
+                          <node concept="10Nm6u" id="7Giw0p7lmOH" role="3uHU7w" />
+                        </node>
                       </node>
-                      <node concept="3clFbF" id="7Giw0p7m80A" role="3cqZAp">
-                        <node concept="37vLTw" id="7Giw0p7m80$" role="3clFbG">
-                          <ref role="3cqZAo" node="7Giw0p7lmOf" resolve="isPortConnected" />
+                      <node concept="3cpWs6" id="6LJSgT2c$ph" role="3cqZAp">
+                        <node concept="3clFbT" id="6LJSgT2c$Uu" role="3cqZAk">
+                          <property role="3clFbU" value="true" />
                         </node>
                       </node>
                     </node>
