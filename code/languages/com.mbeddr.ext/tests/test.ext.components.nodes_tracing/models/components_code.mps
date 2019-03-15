@@ -549,7 +549,7 @@
               <node concept="1xGALR" id="73SKUHFb2Dw" role="lGtFl">
                 <property role="1xEijf" value="2" />
                 <node concept="1xFd8N" id="73SKUHFb6BH" role="1xGcb7">
-                  <property role="1xFd8M" value="(*___cid-&gt;r_motor__ops-&gt;move)(10,___cid-&gt;r_motor__port);" />
+                  <property role="1xFd8M" value="(*___cid-&gt;r_motor__ops-&gt;move)(10,___cid-&gt;r_motor__ops-&gt;__instance);" />
                 </node>
               </node>
             </node>
