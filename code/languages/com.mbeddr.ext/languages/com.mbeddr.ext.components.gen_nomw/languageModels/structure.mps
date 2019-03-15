@@ -61,6 +61,11 @@
     <property role="R4oN_" value="no middleware" />
     <property role="EcuMT" value="2103658896110278831" />
     <ref role="1TJDcQ" to="v7ag:1OLGDVfeZ1b" resolve="ComponentsGenStrategy" />
+    <node concept="1TJgyi" id="6PAG9z9V_Z3" role="1TKVEl">
+      <property role="IQ2nx" value="7883182368027992003" />
+      <property role="TrG5h" value="removeUnusedRequiredPorts" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyi" id="1mfTBng0JlH" role="1TKVEl">
       <property role="TrG5h" value="wireStatically" />
       <property role="IQ2nx" value="1553713790141527405" />

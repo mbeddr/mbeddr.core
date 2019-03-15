@@ -5,8 +5,8 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
-    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="0" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
+    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
@@ -56,6 +56,7 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="1553713790141527405" name="wireStatically" index="35zhco" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
         <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
@@ -156,9 +157,6 @@
       <concept id="4491876417845484922" name="com.mbeddr.ext.components.structure.ClientServerInterface" flags="ng" index="2EX0iR">
         <child id="4491876417845484926" name="contents" index="2EX0iN" />
       </concept>
-      <concept id="4491876417845484919" name="com.mbeddr.ext.components.structure.Interface" flags="ng" index="2EX0iU">
-        <property id="1539255704408883009" name="canBeUsedAsType" index="1M_7uD" />
-      </concept>
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
@@ -243,6 +241,7 @@
       <node concept="3i3YCL" id="61lw97Fte7X" role="3i30U9">
         <property role="35zhco" value="true" />
         <property role="3Ewwow" value="true" />
+        <property role="2$yeXr" value="true" />
         <ref role="35zhcq" node="61lw97Fte8M" resolve="instances" />
       </node>
     </node>
@@ -278,7 +277,6 @@
     <node concept="2EX0iR" id="61lw97Fte87" role="N3F5h">
       <property role="2OOxQR" value="false" />
       <property role="TrG5h" value="ISquare" />
-      <property role="1M_7uD" value="true" />
       <node concept="2EX0iL" id="61lw97Fte88" role="2EX0iN">
         <property role="TrG5h" value="square" />
         <node concept="26VqpV" id="61lw97Fte8b" role="2C2TGm">

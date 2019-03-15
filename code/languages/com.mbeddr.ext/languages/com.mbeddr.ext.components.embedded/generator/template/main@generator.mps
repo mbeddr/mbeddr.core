@@ -6,7 +6,7 @@
     <use id="028899e1-bfee-4db6-b470-ed0f9ee5f662" name="com.mbeddr.ext.components.embedded" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
-    <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="-1" />
+    <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
@@ -23,6 +23,7 @@
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
     <import index="cjn1" ref="r:769ad9a0-f26a-4d17-9cc6-f3ae937bc774(com.mbeddr.ext.components.gen_nomw.generator.template.main@generator)" />
     <import index="ifwr" ref="r:5f2221a7-0e4a-4234-b30c-50529badd2ca(com.mbeddr.ext.components.embedded.behavior)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -34,6 +35,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -175,10 +177,6 @@
       <concept id="1217884725453" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetCopiedOutputByInput" flags="nn" index="2f_y7m">
         <child id="1217884725459" name="inputNode" index="2f_y78" />
       </concept>
-      <concept id="1217889725928" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_SessionObjectAccess" flags="nn" index="2fSANN" />
-      <concept id="1217889960776" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_UserObjectAccessBase" flags="nn" index="2fTw9j">
-        <child id="1217890689512" name="userKey" index="2fWi3N" />
-      </concept>
       <concept id="1217960179967" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowErrorMessage" flags="nn" index="2k5nB$" />
       <concept id="1217960314443" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowMessageBase" flags="nn" index="2k5Stg">
         <child id="1217960314448" name="messageText" index="2k5Stb" />
@@ -234,7 +232,19 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
+      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
+        <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
@@ -306,10 +316,6 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
-        <child id="1237721435807" name="elementType" index="HW$YZ" />
-      </concept>
-      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
   </registry>
@@ -356,12 +362,17 @@
         <node concept="3clFbS" id="20agw21sDA5" role="2VODD2">
           <node concept="3clFbF" id="20agw21sDW0" role="3cqZAp">
             <node concept="3y3z36" id="20agw21sDW2" role="3clFbG">
-              <node concept="2OqwBi" id="20agw21sDW4" role="3uHU7B">
-                <node concept="1iwH7S" id="20agw21sDW5" role="2Oq$k0" />
-                <node concept="2fSANN" id="20agw21sDW6" role="2OqNvi">
-                  <node concept="2OqwBi" id="20agw21t3Dy" role="2fWi3N">
-                    <node concept="30H73N" id="20agw21sDW7" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="20agw21t4pg" role="2OqNvi">
+              <node concept="2OqwBi" id="7g$NqfonMGs" role="3uHU7B">
+                <node concept="liA8E" id="7g$NqfonNv1" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                  <node concept="35c_gC" id="7g$NqfonNEp" role="37wK5m">
+                    <ref role="35c_gD" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                  </node>
+                </node>
+                <node concept="2JrnkZ" id="7g$NqfonMG_" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7g$NqfonKL$" role="2JrQYb">
+                    <node concept="30H73N" id="7g$NqfonKwO" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7g$NqfonLLe" role="2OqNvi">
                       <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
                     </node>
                   </node>
@@ -488,10 +499,20 @@
                   </node>
                 </node>
                 <node concept="10QFUN" id="20agw21ic_9" role="33vP2m">
-                  <node concept="2OqwBi" id="20agw21ic_3" role="10QFUP">
-                    <node concept="1iwH7S" id="20agw21ic_4" role="2Oq$k0" />
-                    <node concept="2fSANN" id="20agw21ic_5" role="2OqNvi">
-                      <node concept="2OqwBi" id="20agw21ic_6" role="2fWi3N">
+                  <node concept="_YKpA" id="20agw21ic_1" role="10QFUM">
+                    <node concept="3Tqbb2" id="20agw21ic_2" role="_ZDj9">
+                      <ref role="ehGHo" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7g$NqfojXM8" role="10QFUP">
+                    <node concept="liA8E" id="7g$Nqfokt6g" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                      <node concept="35c_gC" id="7g$Nqfoktpq" role="37wK5m">
+                        <ref role="35c_gD" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                      </node>
+                    </node>
+                    <node concept="2JrnkZ" id="7g$NqfojXMh" role="2Oq$k0">
+                      <node concept="2OqwBi" id="20agw21ic_6" role="2JrQYb">
                         <node concept="2GrUjf" id="20agw21j70r" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="lm3vnyOrGJ" resolve="interruptRunnableMapping" />
                         </node>
@@ -499,11 +520,6 @@
                           <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
                         </node>
                       </node>
-                    </node>
-                  </node>
-                  <node concept="_YKpA" id="20agw21ic_1" role="10QFUM">
-                    <node concept="3Tqbb2" id="20agw21ic_2" role="_ZDj9">
-                      <ref role="ehGHo" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
                     </node>
                   </node>
                 </node>
@@ -514,9 +530,9 @@
                 <node concept="3clFbF" id="20agw21hXjP" role="3cqZAp">
                   <node concept="37vLTI" id="20agw21hZVM" role="3clFbG">
                     <node concept="2ShNRf" id="20agw21hZWz" role="37vLTx">
-                      <node concept="Tc6Ow" id="20agw21icZW" role="2ShVmc">
-                        <node concept="3Tqbb2" id="20agw21icZY" role="HW$YZ">
-                          <ref role="ehGHo" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                      <node concept="2T8Vx0" id="4wjSXyusL5m" role="2ShVmc">
+                        <node concept="2I9FWS" id="4wjSXyusL5p" role="2T96Bj">
+                          <ref role="2I9WkF" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
                         </node>
                       </node>
                     </node>
@@ -526,20 +542,23 @@
                   </node>
                 </node>
                 <node concept="3clFbF" id="20agw21i2o5" role="3cqZAp">
-                  <node concept="37vLTI" id="20agw21i3t7" role="3clFbG">
-                    <node concept="37vLTw" id="20agw21i3wU" role="37vLTx">
-                      <ref role="3cqZAo" node="20agw21hX2T" resolve="interruptRunnableMappings" />
+                  <node concept="2OqwBi" id="7g$Nqfon0GT" role="3clFbG">
+                    <node concept="liA8E" id="7g$NqfonCDY" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                      <node concept="35c_gC" id="7g$NqfonDxW" role="37wK5m">
+                        <ref role="35c_gD" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                      </node>
+                      <node concept="37vLTw" id="4wjSXyusK6p" role="37wK5m">
+                        <ref role="3cqZAo" node="20agw21hX2T" resolve="interruptRunnableMappings" />
+                      </node>
                     </node>
-                    <node concept="2OqwBi" id="20agw21i2uW" role="37vLTJ">
-                      <node concept="1iwH7S" id="20agw21i2o3" role="2Oq$k0" />
-                      <node concept="2fSANN" id="20agw21i2Ej" role="2OqNvi">
-                        <node concept="2OqwBi" id="20agw21i2PP" role="2fWi3N">
-                          <node concept="2GrUjf" id="20agw21j73h" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="lm3vnyOrGJ" resolve="interruptRunnableMapping" />
-                          </node>
-                          <node concept="3TrEf2" id="20agw21i3mO" role="2OqNvi">
-                            <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
-                          </node>
+                    <node concept="2JrnkZ" id="7g$Nqfon0H2" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7g$NqfokyZK" role="2JrQYb">
+                        <node concept="2GrUjf" id="7g$NqfokuEs" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="lm3vnyOrGJ" resolve="interruptRunnableMapping" />
+                        </node>
+                        <node concept="3TrEf2" id="7g$NqfolbWG" role="2OqNvi">
+                          <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
                         </node>
                       </node>
                     </node>
@@ -691,26 +710,27 @@
                   <node concept="3cpWs8" id="2Lu1JflkfyU" role="3cqZAp">
                     <node concept="3cpWsn" id="2Lu1JflkfyV" role="3cpWs9">
                       <property role="TrG5h" value="allMappingsForSameInterrupt" />
-                      <node concept="_YKpA" id="2Lu1JflkfyW" role="1tU5fm">
-                        <node concept="3Tqbb2" id="2Lu1JflkfyX" role="_ZDj9">
-                          <ref role="ehGHo" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
-                        </node>
+                      <node concept="2I9FWS" id="4wjSXyusMJE" role="1tU5fm">
+                        <ref role="2I9WkF" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
                       </node>
                       <node concept="10QFUN" id="2Lu1JflkfyY" role="33vP2m">
-                        <node concept="2OqwBi" id="2Lu1JflkfyZ" role="10QFUP">
-                          <node concept="1iwH7S" id="2Lu1Jflkfz0" role="2Oq$k0" />
-                          <node concept="2fSANN" id="2Lu1Jflkfz1" role="2OqNvi">
-                            <node concept="2OqwBi" id="2Lu1Jflkfz2" role="2fWi3N">
-                              <node concept="30H73N" id="2Lu1Jflkfz3" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="2Lu1Jflkfz4" role="2OqNvi">
+                        <node concept="2I9FWS" id="4wjSXyusNB5" role="10QFUM">
+                          <ref role="2I9WkF" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                        </node>
+                        <node concept="2OqwBi" id="7g$NqfonPeO" role="10QFUP">
+                          <node concept="liA8E" id="7g$NqfonPeP" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                            <node concept="35c_gC" id="7g$NqfonPeQ" role="37wK5m">
+                              <ref role="35c_gD" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                            </node>
+                          </node>
+                          <node concept="2JrnkZ" id="7g$NqfonPeR" role="2Oq$k0">
+                            <node concept="2OqwBi" id="7g$NqfonPeS" role="2JrQYb">
+                              <node concept="30H73N" id="7g$NqfonPeT" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="7g$NqfonPeU" role="2OqNvi">
                                 <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
                               </node>
                             </node>
-                          </node>
-                        </node>
-                        <node concept="_YKpA" id="2Lu1Jflkfz5" role="10QFUM">
-                          <node concept="3Tqbb2" id="2Lu1Jflkfz6" role="_ZDj9">
-                            <ref role="ehGHo" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
                           </node>
                         </node>
                       </node>
@@ -719,16 +739,19 @@
                   <node concept="3clFbJ" id="2Lu1Jflkfz7" role="3cqZAp">
                     <node concept="3clFbS" id="2Lu1Jflkfz8" role="3clFbx">
                       <node concept="3clFbF" id="2Lu1Jflkfz9" role="3cqZAp">
-                        <node concept="37vLTI" id="2Lu1Jflkfza" role="3clFbG">
-                          <node concept="10Nm6u" id="2Lu1Jflkfzb" role="37vLTx" />
-                          <node concept="2OqwBi" id="2Lu1Jflkfzc" role="37vLTJ">
-                            <node concept="1iwH7S" id="2Lu1Jflkfzd" role="2Oq$k0" />
-                            <node concept="2fSANN" id="2Lu1Jflkfze" role="2OqNvi">
-                              <node concept="2OqwBi" id="2Lu1Jflkfzf" role="2fWi3N">
-                                <node concept="30H73N" id="2Lu1Jflkfzg" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="2Lu1Jflkfzh" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
-                                </node>
+                        <node concept="2OqwBi" id="7g$NqfonWDm" role="3clFbG">
+                          <node concept="liA8E" id="7g$NqfonYkU" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                            <node concept="35c_gC" id="7g$NqfonYUN" role="37wK5m">
+                              <ref role="35c_gD" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                            </node>
+                            <node concept="10Nm6u" id="7g$Nqfoo0ab" role="37wK5m" />
+                          </node>
+                          <node concept="2JrnkZ" id="7g$NqfonWDv" role="2Oq$k0">
+                            <node concept="2OqwBi" id="7g$NqfonQw3" role="2JrQYb">
+                              <node concept="30H73N" id="7g$NqfonPOA" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="7g$NqfonSFF" role="2OqNvi">
+                                <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
                               </node>
                             </node>
                           </node>
@@ -809,18 +832,23 @@
             <node concept="3clFbS" id="2Lu1JflkhLe" role="2VODD2">
               <node concept="3clFbF" id="2Lu1Jflki$u" role="3cqZAp">
                 <node concept="3y3z36" id="2Lu1Jflki$w" role="3clFbG">
-                  <node concept="2OqwBi" id="2Lu1Jflki$x" role="3uHU7B">
-                    <node concept="1iwH7S" id="2Lu1Jflki$y" role="2Oq$k0" />
-                    <node concept="2fSANN" id="2Lu1Jflki$z" role="2OqNvi">
-                      <node concept="2OqwBi" id="2Lu1Jflki$$" role="2fWi3N">
-                        <node concept="30H73N" id="2Lu1Jflki$_" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="2Lu1Jflki$A" role="2OqNvi">
+                  <node concept="10Nm6u" id="2Lu1Jflki$B" role="3uHU7w" />
+                  <node concept="2OqwBi" id="7g$Nqfoo2mp" role="3uHU7B">
+                    <node concept="liA8E" id="7g$Nqfoo2mq" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                      <node concept="35c_gC" id="7g$Nqfoo2mr" role="37wK5m">
+                        <ref role="35c_gD" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                      </node>
+                    </node>
+                    <node concept="2JrnkZ" id="7g$Nqfoo2ms" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7g$Nqfoo2mt" role="2JrQYb">
+                        <node concept="30H73N" id="7g$Nqfoo2mu" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="7g$Nqfoo2mv" role="2OqNvi">
                           <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="10Nm6u" id="2Lu1Jflki$B" role="3uHU7w" />
                 </node>
               </node>
             </node>

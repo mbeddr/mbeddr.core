@@ -1134,6 +1134,18 @@
             <property role="38rIoG" value="*" />
             <property role="38rMdH" value="*" />
           </node>
+          <node concept="38rIoz" id="1nc7pln0L7B" role="38rM$J">
+            <property role="38rIoG" value="*" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="1nc7pln0LcY" role="38rM$J">
+            <property role="38rIoG" value="*" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="1nc7pln0Lip" role="38rM$J">
+            <property role="38rIoG" value="*" />
+            <property role="38rMdH" value="*" />
+          </node>
           <node concept="38rIoz" id="7lmBuXrWBf5" role="38rM$J">
             <property role="38rIoG" value="leave instance config" />
             <property role="38rMdH" value="instances" />

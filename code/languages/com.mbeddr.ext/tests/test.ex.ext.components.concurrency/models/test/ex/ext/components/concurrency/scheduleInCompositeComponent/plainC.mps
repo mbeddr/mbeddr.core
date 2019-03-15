@@ -11,8 +11,8 @@
     <use id="3f445ef3-54ad-4ae5-a22d-91c3ce06375e" name="com.mbeddr.ext.components.concurrency" version="0" />
     <use id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
+    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="1" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
     <use id="54f2a59b-97bb-4c09-af92-928ebf9c5966" name="com.mbeddr.ext.compositecomponents" version="0" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
@@ -108,7 +108,9 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
+        <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -314,8 +316,8 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include" />
-      <property role="1FkSt$" value="-g  -I/usr/include/" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
       <property role="3I8uaA" value="" />
       <node concept="3abb7c" id="4LhGMnjpRcW" role="3anu1O">
         <property role="TrG5h" value="Win32" />
@@ -364,6 +366,8 @@
     <node concept="3i2$bm" id="3qlQk_ggYq4" role="2Q9xDr">
       <node concept="3i3YCL" id="3qlQk_ggYqm" role="3i30U9">
         <property role="3Ewwow" value="true" />
+        <property role="2$yeXr" value="true" />
+        <ref role="35zhcq" node="3qlQk_gg_DK" resolve="Instances" />
       </node>
     </node>
     <node concept="1eFCfY" id="7tWSY$OKVwh" role="2Q9xDr" />

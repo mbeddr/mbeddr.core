@@ -9,6 +9,7 @@
   <dependencies>
     <dependency reexport="false">~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates(com.mbeddr.core.__spreferences.PlatformTemplates)</dependency>
     <dependency reexport="false">2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)</dependency>
+    <dependency reexport="false">ac9da4f2-d564-40a2-a35a-213ed1655172(aLibrary)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
@@ -44,7 +45,6 @@
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
     <language slang="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" version="1" />
     <language slang="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" version="0" />
-    <language slang="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" version="2" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="13" />
@@ -53,6 +53,7 @@
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="1" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="ac9da4f2-d564-40a2-a35a-213ed1655172(aLibrary)" version="0" />
     <module reference="~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates(com.mbeddr.core.__spreferences.PlatformTemplates)" version="0" />
     <module reference="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" version="0" />
     <module reference="0f5cacaf-ece9-4a2a-8680-26d09a4e0b41(test.ex.core)" version="0" />

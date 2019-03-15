@@ -302,7 +302,7 @@
     <language slang="l:390de4af-0c8d-4716-8dec-3d05ca751b28:com.mbeddr.core.cinterpreter" version="0" />
     <language slang="l:223dd778-c44f-4ef3-9535-7aa7d12244a6:com.mbeddr.core.debug" version="0" />
     <language slang="l:ebb5e132-d298-4649-b320-b3f4d7f3acff:com.mbeddr.core.debug.blext" version="0" />
-    <language slang="l:783af01f-87a7-412c-be99-293a162652b5:com.mbeddr.core.embedded" version="0" />
+    <language slang="l:783af01f-87a7-412c-be99-293a162652b5:com.mbeddr.core.embedded" version="1" />
     <language slang="l:61c69711-ed61-4850-81d9-7714ff227fb0:com.mbeddr.core.expressions" version="4" />
     <language slang="l:ad5e9db1-9600-47c7-86ef-614165b281b8:com.mbeddr.core.legacy" version="0" />
     <language slang="l:f93d1dbe-bfd1-42dd-932a-f375fa6f5373:com.mbeddr.core.make" version="1" />
@@ -313,9 +313,9 @@
     <language slang="l:efda956e-491e-4f00-ba14-36af2f213ecf:com.mbeddr.core.udt" version="2" />
     <language slang="l:06d68b77-b699-4918-83b8-857e63787800:com.mbeddr.core.unittest" version="4" />
     <language slang="l:2693fc71-9b0e-4b05-ab13-f57227d675f2:com.mbeddr.core.util" version="0" />
-    <language slang="l:97d24244-51db-4e2e-97fc-7bd73b1f5f40:com.mbeddr.ext.components" version="1" />
+    <language slang="l:97d24244-51db-4e2e-97fc-7bd73b1f5f40:com.mbeddr.ext.components" version="2" />
     <language slang="l:028899e1-bfee-4db6-b470-ed0f9ee5f662:com.mbeddr.ext.components.embedded" version="0" />
-    <language slang="l:bd640b8f-4be4-42b6-8dc0-2c94d1ddf606:com.mbeddr.ext.components.gen_nomw" version="0" />
+    <language slang="l:bd640b8f-4be4-42b6-8dc0-2c94d1ddf606:com.mbeddr.ext.components.gen_nomw" version="1" />
     <language slang="l:36a565f1-3fa0-42d6-baac-f87e209c9789:com.mbeddr.ext.components.mock" version="0" />
     <language slang="l:41911c23-eb23-4ee6-872f-bc7f7ebce290:com.mbeddr.ext.components.test" version="0" />
     <language slang="l:54f2a59b-97bb-4c09-af92-928ebf9c5966:com.mbeddr.ext.compositecomponents" version="0" />

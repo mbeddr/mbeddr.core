@@ -6,8 +6,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="p7vm" ref="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" />
     <import index="eup9" ref="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)" />
   </imports>
@@ -89,6 +87,19 @@
               <node concept="13iPFW" id="48IjeUCFdBT" role="2Oq$k0" />
               <node concept="3TrcHB" id="48IjeUCFdCi" role="2OqNvi">
                 <ref role="3TsBF5" to="p7vm:48IjeUCF4Fe" resolve="generateContracts" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="16SY6ghEhPS" role="3cqZAp">
+          <node concept="37vLTI" id="16SY6ghEjkz" role="3clFbG">
+            <node concept="3clFbT" id="16SY6ghEjl5" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="16SY6ghEi16" role="37vLTJ">
+              <node concept="13iPFW" id="16SY6ghEhPQ" role="2Oq$k0" />
+              <node concept="3TrcHB" id="16SY6ghEiAM" role="2OqNvi">
+                <ref role="3TsBF5" to="p7vm:6PAG9z9V_Z3" resolve="removeUnusedRequiredPorts" />
               </node>
             </node>
           </node>

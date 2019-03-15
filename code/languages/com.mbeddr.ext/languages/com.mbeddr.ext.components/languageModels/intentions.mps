@@ -1343,45 +1343,6 @@
       <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
-  <node concept="2S6QgY" id="1lsyexBKYCb">
-    <property role="3GE5qa" value="intf.cs" />
-    <property role="TrG5h" value="toggleCanBeUsedAsType" />
-    <ref role="2ZfgGC" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
-    <node concept="2S6ZIM" id="1lsyexBKYCc" role="2ZfVej">
-      <node concept="3clFbS" id="1lsyexBKYCd" role="2VODD2">
-        <node concept="3clFbF" id="1lsyexBKYCg" role="3cqZAp">
-          <node concept="Xl_RD" id="1lsyexBKYCh" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Can be used as Type" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="1lsyexBKYCe" role="2ZfgGD">
-      <node concept="3clFbS" id="1lsyexBKYCf" role="2VODD2">
-        <node concept="3clFbF" id="1lsyexBKYCi" role="3cqZAp">
-          <node concept="37vLTI" id="1lsyexBKYD4" role="3clFbG">
-            <node concept="3fqX7Q" id="1lsyexBKYD7" role="37vLTx">
-              <node concept="2OqwBi" id="1lsyexBKYDu" role="3fr31v">
-                <node concept="2Sf5sV" id="1lsyexBKYD9" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1lsyexBKYD$" role="2OqNvi">
-                  <ref role="3TsBF5" to="v7ag:1lsyexBMfX1" resolve="canBeUsedAsType" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1lsyexBKYCC" role="37vLTJ">
-              <node concept="2Sf5sV" id="1lsyexBKYCj" role="2Oq$k0" />
-              <node concept="3TrcHB" id="1lsyexBKYCI" role="2OqNvi">
-                <ref role="3TsBF5" to="v7ag:1lsyexBMfX1" resolve="canBeUsedAsType" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1SWQZ3" id="3TftwIKK5EU" role="lGtFl">
-      <property role="1SWRpm" value="COMPS" />
-    </node>
-  </node>
   <node concept="2S6QgY" id="1lsyexBNOrw">
     <property role="3GE5qa" value="comp.ports" />
     <property role="TrG5h" value="addCharacteristic" />

@@ -29,6 +29,9 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -158,6 +161,10 @@
       <property role="TrG5h" value="canBeUsedAsType" />
       <property role="IQ2nx" value="1539255704408883009" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="6kTuxKCClJg" role="lGtFl" />
+      <node concept="t5JxF" id="6kTuxKCQ3Ek" role="lGtFl">
+        <property role="t5JxN" value="We assume that all interfaces can be used as type and no need for this field any more. Related intention and checking rules are deleted from the model" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkC_PU">
@@ -901,7 +908,7 @@
   <node concept="1TIwiD" id="4AGl5dzxiUF">
     <property role="3GE5qa" value="comp.runnable.whenconnected" />
     <property role="TrG5h" value="WhenPortConnectedStatement" />
-    <property role="34LRSv" value="when port connected" />
+    <property role="34LRSv" value="when (any) port connected" />
     <property role="R4oN_" value="safety for optional ports" />
     <property role="EcuMT" value="5308710777891663531" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
@@ -2055,6 +2062,70 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2E5EJrUlYIy">
+    <property role="EcuMT" value="3064043099234233250" />
+    <property role="3GE5qa" value="comp.ports.gen" />
+    <property role="TrG5h" value="ProvidedPortRefWithContext" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2E5EJrUmcRQ" role="1TKVEl">
+      <property role="IQ2nx" value="3064043099234291190" />
+      <property role="TrG5h" value="instanceName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2E5EJrUmcRJ" role="1TKVEi">
+      <property role="IQ2ns" value="3064043099234291183" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="providedPort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3TmmsQkD8YC" resolve="ProvidedPort" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6BNwNTYoq$T">
+    <property role="EcuMT" value="7634590097754663225" />
+    <property role="TrG5h" value="ForEachPortStatement" />
+    <property role="3GE5qa" value="util" />
+    <property role="34LRSv" value="foreach port" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="3VBG7bJfS4Y" role="1TKVEi">
+      <property role="IQ2ns" value="4532785557658370366" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="portRefExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="71UKpntoTuE" resolve="PortRefExpr" />
+    </node>
+    <node concept="1TJgyj" id="5uVxDlUcwL9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6321794478502972489" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLb" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLc" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLd" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+    </node>
+    <node concept="PrWs8" id="5uVxDlUcwLe" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
+    </node>
+    <node concept="PrWs8" id="33xYbhPQm_r" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
+    </node>
+    <node concept="PrWs8" id="6ToJRIAPs_w" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:7k_CvRMnl1X" resolve="IBreakContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5JgWygzYwVy">
+    <property role="EcuMT" value="6616054089643593442" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="PortItExpression" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
 </model>
 

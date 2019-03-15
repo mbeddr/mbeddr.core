@@ -10,12 +10,12 @@ ext.artifactsDir = new File(rootDir, 'artifacts')
 apply plugin: 'base'
 // Configurations to which we link depedencies
 configurations {
-    mpsArtifacts
+    mps
     mbeddrPlatformArtifacts
 }
 // Dependencies + versions
 dependencies {
-    mpsArtifacts "com.jetbrains:mps:$mpsVersion"
+    mps "com.jetbrains:mps:$mpsVersion"
     mbeddrPlatformArtifacts "com.mbeddr:platform:$mbeddrVersion"
 }
 // Registration of artifact repositories
@@ -27,24 +27,24 @@ repositories {
     }
 }
 // Tasks for resolving dependencies (MPS + mbeddr platform)
-task resolveMps(type: Copy) {
-    dependsOn configurations.mpsArtifacts
+task resolve_mps(type: Copy) {
+    dependsOn configurations.mps
     from {
-        configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+        configurations.mps.resolve().collect { zipTree(it) }
     }
     into "$buildDir/mps"
 }
-task resolveMbeddrPlatform(type: Copy) {
+task resolve_mbeddr_platform(type: Copy) {
     from {
         configurations.mbeddrPlatformArtifacts.resolve().collect { zipTree(it) }
     }
     into artifactsDir
 }
 // Ant properties specifying file system paths
-ant.properties['mps.home'] = resolveMps.destinationDir
+ant.properties['mps.home'] = resolve_mps.destinationDir
 ant.properties['mbeddr.github.core.home'] = rootDir
 ant.properties['build.dir'] = rootDir
-ant.properties['artifacts.root'] = resolveMbeddrPlatform.destinationDir
+ant.properties['artifacts.root'] = resolve_mbeddr_platform.destinationDir
 ant.importBuild('build.xml') { target -> 'ant-' + target }
 // Declaring task dependencies to resolve artifact dependencies before building the MPS project
-tasks['ant-build'].dependsOn resolveMps, resolveMbeddrPlatform
+tasks['ant-build'].dependsOn resolve_mps, resolve_mbeddr_platform

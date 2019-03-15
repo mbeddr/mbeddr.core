@@ -11,11 +11,11 @@
             </Library>
           </value>
         </entry>
-        <entry key="mps.extensions">
+        <entry key="mbeddr.platform">
           <value>
             <Library>
-              <option name="name" value="mps.extensions" />
-              <option name="path" value="${mbeddr.github.core.home}/artifacts/de.itemis.mps.extensions" />
+              <option name="name" value="mbeddr.platform" />
+              <option name="path" value="${mbeddr.github.core.home}/artifacts/com.mbeddr.platform" />
             </Library>
           </value>
         </entry>

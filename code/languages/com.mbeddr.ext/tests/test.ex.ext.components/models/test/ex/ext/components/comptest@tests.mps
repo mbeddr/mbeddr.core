@@ -5,8 +5,8 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
-    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="0" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
+    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
@@ -77,7 +77,9 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
+        <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -282,6 +284,8 @@
     <node concept="3i2$bm" id="1OLGDVfgYka" role="2Q9xDr">
       <node concept="3i3YCL" id="1OLGDVfgYkc" role="3i30U9">
         <property role="3Ewwow" value="true" />
+        <property role="2$yeXr" value="true" />
+        <ref role="35zhcq" node="71UKpntoflC" resolve="defaultInstances" />
       </node>
     </node>
     <node concept="2AWWZL" id="3R$6B6bNxuU" role="2AWWZH">

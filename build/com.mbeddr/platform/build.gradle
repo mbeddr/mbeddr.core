@@ -1,6 +1,6 @@
 def script_test_mbeddrPlatform = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-ts-tests.xml")
 
-if (project.skipResolveMps) {
+if (project.skipresolve_mps) {
     task resolve_mps {
         doLast {
             logger.info "MPS resolution skipped"
@@ -17,14 +17,14 @@ if (project.skipResolveMps) {
 }
 
 if (project.hasProperty('mpsExtensionsZip')) {
-    task resolve_extensions(type: Copy) {
+    task resolve_mps_extensions(type: Copy) {
         from {
             zipTree(project.property('mpsExtensionsZip'))
         }
         into artifactsDir
     }
 } else {
-    task resolve_extensions(type: Copy) {
+    task resolve_mps_extensions(type: Copy) {
         dependsOn configurations.mpsExtensions
         from {
             configurations.mpsExtensions.resolve().collect { zipTree(it) }
@@ -33,7 +33,14 @@ if (project.hasProperty('mpsExtensionsZip')) {
     }
 }
 
-task build_allScripts(type: BuildLanguages, dependsOn: [resolve_mps, resolve_extensions]) {
+task build_allScripts(type: BuildLanguages, dependsOn: [resolve_mps, resolve_mps_extensions]) {
+	doFirst {
+		if (ciBuild) {
+			// Coerce TeamCity build number to mbeddrPlatformBuildNumber
+			// (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
+			println "##teamcity[buildNumber '${mbeddrPlatformBuildNumber}']"
+		}
+	}
     script rootProject.file('build/com.mbeddr.allScripts/build.xml')
 }
 
@@ -122,7 +129,7 @@ publishing {
         mbeddrPlatform(MavenPublication) {
             groupId 'com.mbeddr'
             artifactId 'platform'
-            version mbeddrBuildNumber
+            version mbeddrPlatformBuildNumber
             artifact publish_mbeddrPlatform
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
@@ -146,7 +153,7 @@ publishing {
         mbeddrAllScripts(MavenPublication) {
             groupId 'com.mbeddr'
             artifactId 'allScripts'
-            version mbeddrBuildNumber
+            version mbeddrPlatformBuildNumber
             artifact publish_allScripts
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')

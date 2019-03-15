@@ -23,6 +23,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -4393,6 +4394,46 @@
               </node>
             </node>
             <node concept="3x8VRR" id="4h2MXXfEv0c" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2E5EJrUlYIz">
+    <property role="3GE5qa" value="comp.ports.gen" />
+    <ref role="1M2myG" to="v7ag:2E5EJrUlYIy" resolve="ProvidedPortRefWithContext" />
+    <node concept="9S07l" id="2E5EJrUlYI$" role="9Vyp8">
+      <node concept="3clFbS" id="2E5EJrUlYI_" role="2VODD2">
+        <node concept="3clFbF" id="2E5EJrUm1of" role="3cqZAp">
+          <node concept="2OqwBi" id="2E5EJrUm1_m" role="3clFbG">
+            <node concept="nLn13" id="2E5EJrUmcGW" role="2Oq$k0" />
+            <node concept="2qgKlT" id="2E5EJrUm28o" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2VGWnPpdknb">
+    <property role="3GE5qa" value="util" />
+    <ref role="1M2myG" to="v7ag:5JgWygzYwVy" resolve="PortItExpression" />
+    <node concept="9S07l" id="2VGWnPpdknc" role="9Vyp8">
+      <node concept="3clFbS" id="2VGWnPpdknd" role="2VODD2">
+        <node concept="3clFbF" id="2VGWnPpdlhr" role="3cqZAp">
+          <node concept="2OqwBi" id="2VGWnPpdn3g" role="3clFbG">
+            <node concept="2OqwBi" id="2VGWnPpdlxl" role="2Oq$k0">
+              <node concept="nLn13" id="2VGWnPpdlhq" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="2VGWnPpdlZE" role="2OqNvi">
+                <node concept="1xMEDy" id="2VGWnPpdlZG" role="1xVPHs">
+                  <node concept="chp4Y" id="2VGWnPpdm95" role="ri$Ld">
+                    <ref role="cht4Q" to="v7ag:6BNwNTYoq$T" resolve="ForEachPortStatement" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="2VGWnPpdmy6" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="2VGWnPpdrEC" role="2OqNvi" />
           </node>
         </node>
       </node>

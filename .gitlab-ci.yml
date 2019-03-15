@@ -1,0 +1,35 @@
+image: mbeddr/mbeddr.build.docker
+
+variables:
+  GRADLE_USER_HOME: "gradle/.gradle"
+  # !! Important Note !! Don't use GRADLE_OPTS as it can only be provided with JVM arguments
+  # (see https://github.com/gradle/gradle/issues/7491 for details)
+  GRADLE_OPTIONS: "
+      -g $GRADLE_USER_HOME
+      -Dorg.gradle.daemon=false
+      -PforceCI=true
+      -PmpsExtensionsVersion=$MPS_EXTENSIONS_VERSION
+      -PmbeddrPlatformVersion=$MBEDDR_PLATFORM_VERSION
+      -PdependencyRepositories=$MBEDDR_DEPENDENCY_REPOSITORY
+      -PsnapshotRepository=$MBEDDR_SNAPTHOT_REPOSITORY
+      -PreleaseRepository=$MBEDDR_RELEASE_REPOSITORY
+      -PnexusUsername=$NEXUS_USER 
+      -PnexusPassword=$NEXUS_PASSWORD
+    "
+
+before_script:
+  - gcc --version
+  - java -version
+  - mkdir -p $GRADLE_USER_HOME
+  - chmod a+x gradlew 
+  - ./gradlew --version
+
+build:
+  stage: build
+  script: 
+    - ./gradlew $GRADLE_OPTIONS publishMbeddrPublicationToMavenRepository
+  cache:
+    paths:
+      - $GRADLE_USER_HOME
+  only:
+    - web
