@@ -184,6 +184,10 @@
         <child id="3073566081777363799" name="expr" index="8CeH6" />
         <child id="3073566081777411306" name="memberAssigns" index="8FUjV" />
       </concept>
+      <concept id="8729447926330198396" name="com.mbeddr.core.util.structure.ForRangeStatement" flags="ng" index="n2Vfv">
+        <child id="8729447926330241132" name="range" index="n2wFf" />
+        <child id="8729447926330241139" name="body" index="n2wFg" />
+      </concept>
       <concept id="767515563077204464" name="com.mbeddr.core.util.structure.MessageProperty" flags="ng" index="2qqzEA" />
       <concept id="2688792604367903085" name="com.mbeddr.core.util.structure.MessageDefinitionTable" flags="ng" index="2vmPJd">
         <child id="2688792604367903095" name="messages" index="2vmPJn" />
@@ -202,6 +206,14 @@
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+      <concept id="7297559910934293472" name="com.mbeddr.core.util.structure.ForRangeRef" flags="ng" index="1f68ZN">
+        <reference id="7297559910934293473" name="forRange" index="1f68ZM" />
+      </concept>
+      <concept id="6307143892175911066" name="com.mbeddr.core.util.structure.RangeExpression" flags="ng" index="1vV05I">
+        <property id="8729447926330623085" name="rightExclude" index="n43Ve" />
+        <child id="6307143892175911068" name="right" index="1vV05C" />
+        <child id="6307143892175911067" name="left" index="1vV05J" />
+      </concept>
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
       <concept id="4202685725779366523" name="com.mbeddr.core.udt.structure.MemberInitExpression" flags="ng" index="2xZu8t">
@@ -329,10 +341,6 @@
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
       <concept id="4643433264761566506" name="com.mbeddr.ext.components.structure.OnInitTrigger" flags="ng" index="2cabNp" />
-      <concept id="7634590097754663225" name="com.mbeddr.ext.components.structure.ForEachPortStatement" flags="ng" index="n$yC7">
-        <child id="6321794478502972489" name="body" index="HyoFs" />
-        <child id="4532785557658370366" name="portRefExpr" index="3hQ35c" />
-      </concept>
       <concept id="998890089994729418" name="com.mbeddr.ext.components.structure.DataElement" flags="ng" index="2q5ZbO">
         <property id="2116578915583842931" name="atomic" index="1vaOcW" />
       </concept>
@@ -454,7 +462,6 @@
         <reference id="785275130114861598" name="field" index="3R_36f" />
         <child id="785275130114861599" name="value" index="3R_36e" />
       </concept>
-      <concept id="6616054089643593442" name="com.mbeddr.ext.components.structure.PortItExpression" flags="ng" index="1SaJN6" />
       <concept id="5703827575549009208" name="com.mbeddr.ext.components.structure.AbstractDataElementRefTarget" flags="ng" index="3VxgRd">
         <reference id="5703827575549009244" name="element" index="3VxgQD" />
       </concept>
@@ -2514,39 +2521,65 @@
           <node concept="2EWDwb" id="Z4PF253Gn1" role="2RW2fA">
             <property role="TrG5h" value="runnable" />
             <node concept="3XIRFW" id="Z4PF253Gn2" role="2EWMhI">
-              <node concept="EanFS" id="Z4PF253Gnv" role="3XIRFZ">
-                <node concept="3XIRFW" id="Z4PF253Gnx" role="EanFY" />
-                <node concept="7CXmI" id="Z4PF258ncs" role="lGtFl">
-                  <node concept="1TM$A" id="6qOUCDpINh7" role="7EUXB">
-                    <node concept="2PYRI3" id="6qOUCDpINh8" role="3lydEf">
-                      <ref role="39XzEq" to="e39d:Z4PF2562ub" />
+              <node concept="1_9egQ" id="6LJSgT2rhgC" role="3XIRFZ">
+                <node concept="2H6loZ" id="6LJSgT2rhg$" role="1_9egR">
+                  <ref role="2H6loY" node="Z4PF253GiJ" resolve="iFace" />
+                  <node concept="7CXmI" id="6LJSgT2rqdU" role="lGtFl">
+                    <node concept="1TM$A" id="6LJSgT2rqdV" role="7EUXB">
+                      <node concept="2PYRI3" id="6LJSgT2rqdW" role="3lydEf">
+                        <ref role="39XzEq" to="e39d:6kTuxKCHxWS" />
+                      </node>
                     </node>
                   </node>
                 </node>
-                <node concept="2H6loZ" id="Z4PF25mOWL" role="2aTQa8">
-                  <ref role="2H6loY" node="Z4PF253GiJ" resolve="iFace" />
-                </node>
               </node>
-              <node concept="3XISUE" id="Z4PF258ncx" role="3XIRFZ" />
-              <node concept="3XISUE" id="Z4PF258roE" role="3XIRFZ" />
               <node concept="1_9egQ" id="Z4PF258rC_" role="3XIRFZ">
                 <node concept="2OhZ_J" id="Z4PF258rDa" role="1_9egR">
                   <ref role="2H6loY" node="Z4PF253GiJ" resolve="iFace" />
                   <node concept="3TlMh9" id="Z4PF258rDq" role="2OhZuM">
                     <property role="2hmy$m" value="0" />
                   </node>
+                  <node concept="7CXmI" id="6LJSgT2rqeD" role="lGtFl">
+                    <node concept="1TM$A" id="6LJSgT2rqld" role="7EUXB">
+                      <node concept="2PYRI3" id="6LJSgT2rqle" role="3lydEf">
+                        <ref role="39XzEq" to="e39d:6kTuxKCHxWS" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
-              <node concept="3XISUE" id="Z4PF258rpp" role="3XIRFZ" />
-              <node concept="n$yC7" id="6C8IiUrturw" role="3XIRFZ">
-                <node concept="2H6loZ" id="6C8IiUrtusA" role="3hQ35c">
-                  <ref role="2H6loY" node="Z4PF253GiJ" resolve="iFace" />
+              <node concept="3XISUE" id="6LJSgT2pMTo" role="3XIRFZ" />
+              <node concept="n2Vfv" id="Z4PF258ncQ" role="3XIRFZ">
+                <property role="TrG5h" value="portNo" />
+                <node concept="1vV05I" id="Z4PF258ncS" role="n2wFf">
+                  <property role="n43Ve" value="true" />
+                  <node concept="3TlMh9" id="Z4PF258ne3" role="1vV05J">
+                    <property role="2hmy$m" value="0" />
+                  </node>
+                  <node concept="3TlMh9" id="Z4PF258neH" role="1vV05C">
+                    <property role="2hmy$m" value="2" />
+                  </node>
                 </node>
-                <node concept="3XIRFW" id="6C8IiUrtur$" role="HyoFs">
-                  <node concept="1_9egQ" id="6C8IiUrtuta" role="3XIRFZ">
-                    <node concept="3LAlOK" id="6C8IiUrtuvk" role="1_9egR">
-                      <ref role="2H6Oet" node="Z4PF253GfS" resolve="doSomething" />
-                      <node concept="1SaJN6" id="6C8IiUrtut8" role="1_9fRO" />
+                <node concept="3XIRFW" id="Z4PF258ncY" role="n2wFg">
+                  <node concept="EanFS" id="Z4PF25q7z5" role="3XIRFZ">
+                    <node concept="3XIRFW" id="Z4PF25q7z7" role="EanFY">
+                      <node concept="1_9egQ" id="Z4PF258nu$" role="3XIRFZ">
+                        <node concept="30IBQI" id="Z4PF258nxY" role="1_9egR">
+                          <ref role="2H6Oet" node="Z4PF253GfS" resolve="doSomething" />
+                          <node concept="2OhZ_J" id="Z4PF258nuM" role="1_9fRO">
+                            <ref role="2H6loY" node="Z4PF253GiJ" resolve="iFace" />
+                            <node concept="1f68ZN" id="6LJSgT2qAne" role="2OhZuM">
+                              <ref role="1f68ZM" node="Z4PF258ncQ" resolve="portNo" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OhZ_J" id="Z4PF25qMIt" role="2aTQa8">
+                      <ref role="2H6loY" node="Z4PF253GiJ" resolve="iFace" />
+                      <node concept="1f68ZN" id="Z4PF25qMID" role="2OhZuM">
+                        <ref role="1f68ZM" node="Z4PF258ncQ" resolve="portNo" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2573,8 +2606,6 @@
             <property role="TrG5h" value="cc" />
             <ref role="2EWCuU" node="Z4PF255OSW" resolve="Comp" />
           </node>
-          <node concept="JAGxh" id="Z4PF253DKS" role="5JtDH" />
-          <node concept="JAGxh" id="Z4PF253DKT" role="5JtDH" />
         </node>
         <node concept="2NXPZ9" id="Z4PF253DKU" role="N3F5h">
           <property role="TrG5h" value="empty_1390382797129_13" />
