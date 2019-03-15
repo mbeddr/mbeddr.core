@@ -9,7 +9,7 @@
     <model modelUID="r:a0040a4b-831e-4f91-84cb-92d63115a50b(com.mbeddr.core.util.hashUtil)" />
   </accessoryModels>
   <generators>
-    <generator namespace="com.mbeddr.core.util#4354378109086982934" uuid="f67f2765-82bd-410a-ae85-01e3e66beca4">
+    <generator alias="" namespace="com.mbeddr.core.util#4354378109086982934" uuid="f67f2765-82bd-410a-ae85-01e3e66beca4">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -213,6 +213,9 @@
                 </mapping-set-element>
                 <mapping-set-element>
                   <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="1758019824472891830" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="5512055973020516271" />
                 </mapping-set-element>
               </mapping-set>
             </external-mapping>

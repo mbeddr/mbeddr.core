@@ -391,7 +391,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3L4lRB2GtfW">
-    <ref role="1XX52x" to="21pk:3L4lRB2Gtfz" resolve="ObjectClass" />
+    <ref role="1XX52x" to="21pk:3L4lRB2Gtfz" resolve="JsonFile" />
     <node concept="3EZMnI" id="3L4lRB2Gtg2" role="2wV5jI">
       <node concept="2iRkQZ" id="3L4lRB2Gtgs" role="2iSdaV" />
       <node concept="3EZMnI" id="34$4Bn6i8Oi" role="3EZMnx">

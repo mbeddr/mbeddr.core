@@ -117,7 +117,7 @@
     </language>
   </registry>
   <node concept="WtQ9Q" id="3L4lRB2Gv5B">
-    <ref role="WuzLi" to="21pk:3L4lRB2Gtfz" resolve="ObjectClass" />
+    <ref role="WuzLi" to="21pk:3L4lRB2Gtfz" resolve="JsonFile" />
     <node concept="9MYSb" id="3L4lRB2Gv5E" role="33IsuW">
       <node concept="3clFbS" id="3L4lRB2Gv5F" role="2VODD2">
         <node concept="3clFbF" id="3L4lRB2Gv6R" role="3cqZAp">

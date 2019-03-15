@@ -152,7 +152,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3L4lRB2Gtfz">
-    <property role="TrG5h" value="ObjectClass" />
+    <property role="TrG5h" value="JsonFile" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="4342692121161094115" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
