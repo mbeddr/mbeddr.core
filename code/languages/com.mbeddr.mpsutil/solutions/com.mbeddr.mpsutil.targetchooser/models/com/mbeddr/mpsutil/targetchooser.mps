@@ -5624,11 +5624,11 @@
                   <ref role="3cqZAo" node="2aWMGJ03M5w" resolve="candidate" />
                 </node>
                 <node concept="liA8E" id="2aWMGJ03PXS" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="getName" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
                 </node>
               </node>
               <node concept="liA8E" id="2aWMGJ03M5G" role="2OqNvi">
-                <ref role="37wK5l" to=":^" resolve="getLongName" />
+                <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
               </node>
             </node>
           </node>
@@ -5717,11 +5717,11 @@
                       <ref role="3cqZAo" node="2aWMGJ03M5w" resolve="candidate" />
                     </node>
                     <node concept="liA8E" id="2aWMGJ03PMs" role="2OqNvi">
-                      <ref role="37wK5l" to=":^" resolve="getName" />
+                      <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="liA8E" id="2aWMGJ03M68" role="2OqNvi">
-                    <ref role="37wK5l" to=":^" resolve="getStereotype" />
+                    <ref role="37wK5l" to="mhbf:~SModelName.getStereotype()" resolve="getStereotype" />
                   </node>
                 </node>
               </node>
