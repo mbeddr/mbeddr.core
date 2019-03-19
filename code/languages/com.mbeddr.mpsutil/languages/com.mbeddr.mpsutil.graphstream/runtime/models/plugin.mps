@@ -33,6 +33,13 @@
     <import index="u99y" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model.style(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="mf8e" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.jgraphx(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="sqfl" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.transform.dom(JDK/)" />
+    <import index="ughz" ref="96569509-ecfc-4944-b6c9-075faf02fe2c/java:org.w3c.dom.svg(org.xml/)" />
+    <import index="nxml" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.transform(JDK/)" />
+    <import index="b79t" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.transform.stream(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="4anb" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
   </imports>
@@ -171,8 +178,16 @@
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -180,6 +195,9 @@
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
+        <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
@@ -286,6 +304,7 @@
         <child id="1212687122400" name="typeParameter" index="1pMfVU" />
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
@@ -324,6 +343,9 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+      <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
+        <reference id="1170346070688" name="classifier" index="1Y3XeK" />
+      </concept>
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -2410,6 +2432,106 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="OY8pyKN2H7" role="3cqZAp">
+          <node concept="2OqwBi" id="OY8pyKN46c" role="3clFbG">
+            <node concept="37vLTw" id="OY8pyKN2H5" role="2Oq$k0">
+              <ref role="3cqZAo" node="6x5UxX30db6" resolve="_canvas" />
+            </node>
+            <node concept="liA8E" id="OY8pyKN5YA" role="2OqNvi">
+              <ref role="37wK5l" to="4anb:~JSVGComponent.addSVGDocumentLoaderListener(org.apache.batik.swing.svg.SVGDocumentLoaderListener):void" resolve="addSVGDocumentLoaderListener" />
+              <node concept="2ShNRf" id="OY8pyKN6mX" role="37wK5m">
+                <node concept="YeOm9" id="OY8pyKNcWa" role="2ShVmc">
+                  <node concept="1Y3b0j" id="OY8pyKNcWd" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="4anb:~SVGDocumentLoaderListener" resolve="SVGDocumentLoaderListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="OY8pyKNcWe" role="1B3o_S" />
+                    <node concept="3clFb_" id="OY8pyKNcWf" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="documentLoadingStarted" />
+                      <property role="DiZV1" value="false" />
+                      <property role="od$2w" value="false" />
+                      <node concept="3Tm1VV" id="OY8pyKNcWg" role="1B3o_S" />
+                      <node concept="3cqZAl" id="OY8pyKNcWi" role="3clF45" />
+                      <node concept="37vLTG" id="OY8pyKNcWj" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="OY8pyKNcWk" role="1tU5fm">
+                          <ref role="3uigEE" to="4anb:~SVGDocumentLoaderEvent" resolve="SVGDocumentLoaderEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="OY8pyKNcWl" role="3clF47" />
+                    </node>
+                    <node concept="3clFb_" id="OY8pyKNcWn" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="documentLoadingCompleted" />
+                      <property role="DiZV1" value="false" />
+                      <property role="od$2w" value="false" />
+                      <node concept="3Tm1VV" id="OY8pyKNcWo" role="1B3o_S" />
+                      <node concept="3cqZAl" id="OY8pyKNcWq" role="3clF45" />
+                      <node concept="37vLTG" id="OY8pyKNcWr" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="OY8pyKNcWs" role="1tU5fm">
+                          <ref role="3uigEE" to="4anb:~SVGDocumentLoaderEvent" resolve="SVGDocumentLoaderEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="OY8pyKNcWt" role="3clF47">
+                        <node concept="3clFbF" id="OY8pyKNfLs" role="3cqZAp">
+                          <node concept="1rXfSq" id="OY8pyKNfLr" role="3clFbG">
+                            <ref role="37wK5l" node="OY8pyKLlNv" resolve="saveSVG" />
+                            <node concept="2YIFZM" id="OY8pyKNuL5" role="37wK5m">
+                              <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                              <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...):java.nio.file.Path" resolve="get" />
+                              <node concept="2YIFZM" id="OY8pyKNIj4" role="37wK5m">
+                                <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                                <node concept="Xl_RD" id="OY8pyKNIA0" role="37wK5m">
+                                  <property role="Xl_RC" value="user.home" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="OY8pyKNuL7" role="37wK5m">
+                                <property role="Xl_RC" value="graph.svg" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFb_" id="OY8pyKNcWv" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="documentLoadingCancelled" />
+                      <property role="DiZV1" value="false" />
+                      <property role="od$2w" value="false" />
+                      <node concept="3Tm1VV" id="OY8pyKNcWw" role="1B3o_S" />
+                      <node concept="3cqZAl" id="OY8pyKNcWy" role="3clF45" />
+                      <node concept="37vLTG" id="OY8pyKNcWz" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="OY8pyKNcW$" role="1tU5fm">
+                          <ref role="3uigEE" to="4anb:~SVGDocumentLoaderEvent" resolve="SVGDocumentLoaderEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="OY8pyKNcW_" role="3clF47" />
+                    </node>
+                    <node concept="3clFb_" id="OY8pyKNcWB" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="documentLoadingFailed" />
+                      <property role="DiZV1" value="false" />
+                      <property role="od$2w" value="false" />
+                      <node concept="3Tm1VV" id="OY8pyKNcWC" role="1B3o_S" />
+                      <node concept="3cqZAl" id="OY8pyKNcWE" role="3clF45" />
+                      <node concept="37vLTG" id="OY8pyKNcWF" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="OY8pyKNcWG" role="1tU5fm">
+                          <ref role="3uigEE" to="4anb:~SVGDocumentLoaderEvent" resolve="SVGDocumentLoaderEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="OY8pyKNcWH" role="3clF47" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="18ZQ$P85dtc" role="3cqZAp">
           <node concept="2OqwBi" id="18ZQ$P85dt_" role="3clFbG">
             <node concept="37vLTw" id="6x5UxX30oeS" role="2Oq$k0">
@@ -2534,6 +2656,170 @@
       <node concept="3clFbS" id="6x5UxX2Y7DH" role="3clF47" />
       <node concept="2AHcQZ" id="6x5UxX2Y7DI" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="OY8pyKLgdg" role="jymVt" />
+    <node concept="3clFb_" id="OY8pyKLlNv" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="saveSVG" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="OY8pyKLlNy" role="3clF47">
+        <node concept="SfApY" id="OY8pyKL7zw" role="3cqZAp">
+          <node concept="3clFbS" id="OY8pyKL7zy" role="SfCbr">
+            <node concept="3clFbJ" id="OY8pyKMMXg" role="3cqZAp">
+              <node concept="3clFbS" id="OY8pyKMMXi" role="3clFbx">
+                <node concept="3clFbF" id="OY8pyKMQjw" role="3cqZAp">
+                  <node concept="2YIFZM" id="OY8pyKMQpU" role="3clFbG">
+                    <ref role="37wK5l" to="eoo2:~Files.delete(java.nio.file.Path):void" resolve="delete" />
+                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                    <node concept="37vLTw" id="OY8pyKMQEC" role="37wK5m">
+                      <ref role="3cqZAo" node="OY8pyKNv3V" resolve="outPath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2YIFZM" id="OY8pyKMPJH" role="3clFbw">
+                <ref role="37wK5l" to="eoo2:~Files.exists(java.nio.file.Path,java.nio.file.LinkOption...):boolean" resolve="exists" />
+                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                <node concept="37vLTw" id="OY8pyKMQ13" role="37wK5m">
+                  <ref role="3cqZAo" node="OY8pyKNv3V" resolve="outPath" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="OY8pyKLxjE" role="3cqZAp">
+              <node concept="3cpWsn" id="OY8pyKLxjF" role="3cpWs9">
+                <property role="TrG5h" value="outFile" />
+                <node concept="3uibUv" id="OY8pyKLxjG" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2OqwBi" id="OY8pyKLViY" role="33vP2m">
+                  <node concept="2YIFZM" id="OY8pyKLJYe" role="2Oq$k0">
+                    <ref role="37wK5l" to="eoo2:~Files.createFile(java.nio.file.Path,java.nio.file.attribute.FileAttribute...):java.nio.file.Path" resolve="createFile" />
+                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                    <node concept="37vLTw" id="OY8pyKMR80" role="37wK5m">
+                      <ref role="3cqZAo" node="OY8pyKNv3V" resolve="outPath" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="OY8pyKLVX5" role="2OqNvi">
+                    <ref role="37wK5l" to="eoo2:~Path.toFile():java.io.File" resolve="toFile" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="OY8pyKKTFV" role="3cqZAp">
+              <node concept="3cpWsn" id="OY8pyKKTFW" role="3cpWs9">
+                <property role="TrG5h" value="result" />
+                <node concept="3uibUv" id="OY8pyKKTFX" role="1tU5fm">
+                  <ref role="3uigEE" to="nxml:~Result" resolve="Result" />
+                </node>
+                <node concept="2ShNRf" id="OY8pyKKUeW" role="33vP2m">
+                  <node concept="1pGfFk" id="OY8pyKKWtt" role="2ShVmc">
+                    <ref role="37wK5l" to="b79t:~StreamResult.&lt;init&gt;(java.io.File)" resolve="StreamResult" />
+                    <node concept="37vLTw" id="OY8pyKM0ZI" role="37wK5m">
+                      <ref role="3cqZAo" node="OY8pyKLxjF" resolve="outFile" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="OY8pyKKRt$" role="3cqZAp">
+              <node concept="3cpWsn" id="OY8pyKKRt_" role="3cpWs9">
+                <property role="TrG5h" value="t" />
+                <node concept="3uibUv" id="OY8pyKKRtA" role="1tU5fm">
+                  <ref role="3uigEE" to="nxml:~Transformer" resolve="Transformer" />
+                </node>
+                <node concept="2OqwBi" id="OY8pyKKSbz" role="33vP2m">
+                  <node concept="2YIFZM" id="OY8pyKKS5R" role="2Oq$k0">
+                    <ref role="37wK5l" to="nxml:~TransformerFactory.newInstance():javax.xml.transform.TransformerFactory" resolve="newInstance" />
+                    <ref role="1Pybhc" to="nxml:~TransformerFactory" resolve="TransformerFactory" />
+                  </node>
+                  <node concept="liA8E" id="OY8pyKKSqn" role="2OqNvi">
+                    <ref role="37wK5l" to="nxml:~TransformerFactory.newTransformer():javax.xml.transform.Transformer" resolve="newTransformer" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="OY8pyKMT3Z" role="3cqZAp" />
+            <node concept="3cpWs8" id="OY8pyKK$OM" role="3cqZAp">
+              <node concept="3cpWsn" id="OY8pyKK$ON" role="3cpWs9">
+                <property role="TrG5h" value="doc" />
+                <node concept="3uibUv" id="OY8pyKK$OO" role="1tU5fm">
+                  <ref role="3uigEE" to="ughz:~SVGDocument" resolve="SVGDocument" />
+                </node>
+                <node concept="2OqwBi" id="OY8pyKKApt" role="33vP2m">
+                  <node concept="37vLTw" id="OY8pyKK_o6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6x5UxX30db6" resolve="_canvas" />
+                  </node>
+                  <node concept="liA8E" id="OY8pyKKDff" role="2OqNvi">
+                    <ref role="37wK5l" to="4anb:~JSVGComponent.getSVGDocument():org.w3c.dom.svg.SVGDocument" resolve="getSVGDocument" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="OY8pyKKEER" role="3cqZAp">
+              <node concept="3cpWsn" id="OY8pyKKEES" role="3cpWs9">
+                <property role="TrG5h" value="input" />
+                <node concept="3uibUv" id="OY8pyKKEET" role="1tU5fm">
+                  <ref role="3uigEE" to="sqfl:~DOMSource" resolve="DOMSource" />
+                </node>
+                <node concept="2ShNRf" id="OY8pyKKF9$" role="33vP2m">
+                  <node concept="1pGfFk" id="OY8pyKKJk0" role="2ShVmc">
+                    <ref role="37wK5l" to="sqfl:~DOMSource.&lt;init&gt;(org.w3c.dom.Node)" resolve="DOMSource" />
+                    <node concept="37vLTw" id="OY8pyKKJq6" role="37wK5m">
+                      <ref role="3cqZAo" node="OY8pyKK$ON" resolve="doc" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="OY8pyKL5sH" role="3cqZAp">
+              <node concept="2OqwBi" id="OY8pyKL5Us" role="3clFbG">
+                <node concept="37vLTw" id="OY8pyKL5sF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="OY8pyKKRt_" resolve="t" />
+                </node>
+                <node concept="liA8E" id="OY8pyKL6lW" role="2OqNvi">
+                  <ref role="37wK5l" to="nxml:~Transformer.transform(javax.xml.transform.Source,javax.xml.transform.Result):void" resolve="transform" />
+                  <node concept="37vLTw" id="OY8pyKL6sz" role="37wK5m">
+                    <ref role="3cqZAo" node="OY8pyKKEES" resolve="input" />
+                  </node>
+                  <node concept="37vLTw" id="OY8pyKL6D1" role="37wK5m">
+                    <ref role="3cqZAo" node="OY8pyKKTFW" resolve="result" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="OY8pyKL7zz" role="TEbGg">
+            <node concept="3cpWsn" id="OY8pyKL7z_" role="TDEfY">
+              <property role="TrG5h" value="t" />
+              <node concept="3uibUv" id="OY8pyKL8eo" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="OY8pyKL7zD" role="TDEfX">
+              <node concept="3clFbF" id="OY8pyKLeR0" role="3cqZAp">
+                <node concept="2OqwBi" id="OY8pyKLeXd" role="3clFbG">
+                  <node concept="37vLTw" id="OY8pyKLeQZ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="OY8pyKL7z_" resolve="t" />
+                  </node>
+                  <node concept="liA8E" id="OY8pyKLflH" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="OY8pyKLjAO" role="1B3o_S" />
+      <node concept="3cqZAl" id="OY8pyKLlmL" role="3clF45" />
+      <node concept="37vLTG" id="OY8pyKNv3V" role="3clF46">
+        <property role="TrG5h" value="outPath" />
+        <node concept="3uibUv" id="OY8pyKNv3U" role="1tU5fm">
+          <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6x5UxX2ZGA3" role="jymVt" />
