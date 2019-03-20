@@ -303,6 +303,9 @@
     <property role="R4oN_" value="logical implication" />
     <property role="EcuMT" value="4887422885165654650" />
     <ref role="1TJDcQ" to="mj1l:7igR0Vu9I16" resolve="BinaryLogicalExpression" />
+    <node concept="PrWs8" id="5CYb0V_hBWw" role="PzmwI">
+      <ref role="PrY4T" node="$ZgyIbTDBI" resolve="IRequiresMathConfigItem" />
+    </node>
   </node>
 </model>
 
