@@ -4341,16 +4341,16 @@
             </node>
             <node concept="3clFbJ" id="2Nt6pro9jib" role="3cqZAp">
               <node concept="2YIFZM" id="2aWMGJ04qoi" role="3clFbw">
-                <ref role="37wK5l" to="w1kc:~SModelStereotype.isStubModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isStubModel" />
                 <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
+                <ref role="37wK5l" to="w1kc:~SModelStereotype.isStubModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isStubModel" />
                 <node concept="37vLTw" id="2aWMGJ04qDG" role="37wK5m">
                   <ref role="3cqZAo" node="2Nt6pro9jiw" resolve="modelDescriptor" />
                 </node>
               </node>
               <node concept="3clFbJ" id="2Nt6pro9jij" role="9aQIa">
                 <node concept="2YIFZM" id="2aWMGJ04ul9" role="3clFbw">
-                  <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isTestModel" />
                   <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
+                  <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
                   <node concept="37vLTw" id="2aWMGJ04uNM" role="37wK5m">
                     <ref role="3cqZAo" node="2Nt6pro9jiw" resolve="modelDescriptor" />
                   </node>
@@ -5400,11 +5400,11 @@
                   <ref role="3cqZAo" node="2Nt6pro9jn0" resolve="treeNode" />
                 </node>
                 <node concept="liA8E" id="2aWMGJ042Kf" role="2OqNvi">
-                  <ref role="37wK5l" to="xr52:~SModelTreeNode.getModel()" resolve="getModel" />
+                  <ref role="37wK5l" to="xr52:~SModelTreeNode.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
                 </node>
               </node>
               <node concept="liA8E" id="2aWMGJ042Kg" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
               </node>
             </node>
           </node>
@@ -5472,15 +5472,15 @@
                               <ref role="3cqZAo" node="2Nt6pro9jn0" resolve="treeNode" />
                             </node>
                             <node concept="liA8E" id="2Nt6pro9jsU" role="2OqNvi">
-                              <ref role="37wK5l" to="xr52:~SModelTreeNode.getModel()" resolve="getModel" />
+                              <ref role="37wK5l" to="xr52:~SModelTreeNode.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
                             </node>
                           </node>
                           <node concept="liA8E" id="2aWMGJ04l17" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                            <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
                           </node>
                         </node>
                         <node concept="liA8E" id="2aWMGJ04nbs" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                          <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
                         </node>
                       </node>
                     </node>
@@ -5608,7 +5608,7 @@
                 <ref role="3cqZAo" node="2aWMGJ03M5u" resolve="rootModel" />
               </node>
               <node concept="liA8E" id="2aWMGJ03PPc" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
               </node>
             </node>
           </node>
@@ -5625,11 +5625,11 @@
                   <ref role="3cqZAo" node="2aWMGJ03M5w" resolve="candidate" />
                 </node>
                 <node concept="liA8E" id="2aWMGJ03PXS" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
                 </node>
               </node>
               <node concept="liA8E" id="2aWMGJ03M5G" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
               </node>
             </node>
           </node>
@@ -5642,7 +5642,7 @@
                   <ref role="3cqZAo" node="2aWMGJ03M5B" resolve="candidateName" />
                 </node>
                 <node concept="liA8E" id="2aWMGJ03PIK" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
+                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                   <node concept="37vLTw" id="2aWMGJ03PIL" role="37wK5m">
                     <ref role="3cqZAo" node="2aWMGJ03M5z" resolve="modelName" />
                   </node>
@@ -5654,7 +5654,7 @@
                 <ref role="3cqZAo" node="2aWMGJ03M5z" resolve="modelName" />
               </node>
               <node concept="liA8E" id="2aWMGJ03PKc" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="37vLTw" id="2aWMGJ03PKd" role="37wK5m">
                   <ref role="3cqZAo" node="2aWMGJ03M5B" resolve="candidateName" />
                 </node>
@@ -5674,13 +5674,13 @@
                 <ref role="3cqZAo" node="2aWMGJ03M5B" resolve="candidateName" />
               </node>
               <node concept="liA8E" id="2aWMGJ03PNK" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
+                <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
                 <node concept="2OqwBi" id="2aWMGJ03QDa" role="37wK5m">
                   <node concept="37vLTw" id="2aWMGJ03QD9" role="2Oq$k0">
                     <ref role="3cqZAo" node="2aWMGJ03M5z" resolve="modelName" />
                   </node>
                   <node concept="liA8E" id="2aWMGJ03QDb" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                    <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                   </node>
                 </node>
               </node>
@@ -5701,7 +5701,7 @@
                     <ref role="3cqZAo" node="2aWMGJ03M5u" resolve="rootModel" />
                   </node>
                   <node concept="liA8E" id="2aWMGJ03PV4" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModelName.getStereotype()" resolve="getStereotype" />
+                    <ref role="37wK5l" to="mhbf:~SModelName.getStereotype():java.lang.String" resolve="getStereotype" />
                   </node>
                 </node>
               </node>
@@ -5718,11 +5718,11 @@
                       <ref role="3cqZAo" node="2aWMGJ03M5w" resolve="candidate" />
                     </node>
                     <node concept="liA8E" id="2aWMGJ03PMs" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                      <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
                     </node>
                   </node>
                   <node concept="liA8E" id="2aWMGJ03M68" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModelName.getStereotype()" resolve="getStereotype" />
+                    <ref role="37wK5l" to="mhbf:~SModelName.getStereotype():java.lang.String" resolve="getStereotype" />
                   </node>
                 </node>
               </node>
@@ -5734,7 +5734,7 @@
                     <ref role="3cqZAo" node="2aWMGJ03M5Z" resolve="modelStereotype" />
                   </node>
                   <node concept="liA8E" id="2aWMGJ03PTC" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                     <node concept="37vLTw" id="2aWMGJ03PTD" role="37wK5m">
                       <ref role="3cqZAo" node="2aWMGJ03M63" resolve="candidateStereotype" />
                     </node>
@@ -5825,11 +5825,11 @@
                   <ref role="3cqZAo" node="2Nt6pro9jnZ" resolve="md" />
                 </node>
                 <node concept="liA8E" id="2aWMGJ04o$$" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
                 </node>
               </node>
               <node concept="liA8E" id="2aWMGJ04pZY" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
               </node>
             </node>
           </node>
