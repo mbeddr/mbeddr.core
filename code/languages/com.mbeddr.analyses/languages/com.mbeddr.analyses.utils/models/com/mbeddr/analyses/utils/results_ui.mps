@@ -5167,7 +5167,7 @@
             <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
           </node>
           <node concept="3cmrfG" id="1GgrF83dsOk" role="37wK5m">
-            <property role="3cmrfH" value="12" />
+            <property role="3cmrfH" value="11" />
           </node>
         </node>
       </node>
