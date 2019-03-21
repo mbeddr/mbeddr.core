@@ -187,6 +187,9 @@
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
       </concept>
     </language>
+    <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
+      <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -1129,6 +1132,7 @@
       <node concept="31U8vS" id="3WMUl3DggBr" role="31UYnO" />
     </node>
     <node concept="2eh4Hv" id="7Pk2mb7JbjC" role="2Q9xDr" />
+    <node concept="22RD12" id="1wOMd7Apvod" role="2Q9xDr" />
     <node concept="2AWWZL" id="7Pk2mb7JbjN" role="2AWWZH">
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
