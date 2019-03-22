@@ -302,9 +302,6 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
-      <concept id="1224414427926" name="jetbrains.mps.baseLanguage.collections.structure.SequenceCreator" flags="nn" index="kMnCb">
-        <child id="1224414456414" name="elementType" index="kMuH3" />
-      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -736,47 +733,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbJ" id="2Lu1Jflkfz7" role="3cqZAp">
-                    <node concept="3clFbS" id="2Lu1Jflkfz8" role="3clFbx">
-                      <node concept="3clFbF" id="2Lu1Jflkfz9" role="3cqZAp">
-                        <node concept="2OqwBi" id="7g$NqfonWDm" role="3clFbG">
-                          <node concept="liA8E" id="7g$NqfonYkU" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-                            <node concept="35c_gC" id="7g$NqfonYUN" role="37wK5m">
-                              <ref role="35c_gD" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
-                            </node>
-                            <node concept="10Nm6u" id="7g$Nqfoo0ab" role="37wK5m" />
-                          </node>
-                          <node concept="2JrnkZ" id="7g$NqfonWDv" role="2Oq$k0">
-                            <node concept="2OqwBi" id="7g$NqfonQw3" role="2JrQYb">
-                              <node concept="30H73N" id="7g$NqfonPOA" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="7g$NqfonSFF" role="2OqNvi">
-                                <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3cpWs6" id="2Lu1Jflkfzi" role="3cqZAp">
-                        <node concept="37vLTw" id="2Lu1Jflkfzj" role="3cqZAk">
-                          <ref role="3cqZAo" node="2Lu1JflkfyV" resolve="allMappingsForSameInterrupt" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3y3z36" id="2Lu1Jflkfzk" role="3clFbw">
-                      <node concept="10Nm6u" id="2Lu1Jflkfzl" role="3uHU7w" />
-                      <node concept="37vLTw" id="2Lu1Jflkfzm" role="3uHU7B">
-                        <ref role="3cqZAo" node="2Lu1JflkfyV" resolve="allMappingsForSameInterrupt" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2Lu1Jflkfzn" role="3cqZAp">
-                    <node concept="2ShNRf" id="2Lu1Jflkfzo" role="3clFbG">
-                      <node concept="kMnCb" id="2Lu1Jflkfzp" role="2ShVmc">
-                        <node concept="3Tqbb2" id="2Lu1Jflkfzq" role="kMuH3">
-                          <ref role="ehGHo" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
-                        </node>
-                      </node>
+                  <node concept="3cpWs6" id="2Lu1Jflkfzi" role="3cqZAp">
+                    <node concept="37vLTw" id="2Lu1Jflkfzj" role="3cqZAk">
+                      <ref role="3cqZAo" node="2Lu1JflkfyV" resolve="allMappingsForSameInterrupt" />
                     </node>
                   </node>
                 </node>
