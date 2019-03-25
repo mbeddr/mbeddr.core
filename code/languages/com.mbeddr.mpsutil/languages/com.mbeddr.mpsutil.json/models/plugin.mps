@@ -11,6 +11,8 @@
     <import index="jlyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.filechooser(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="21pk" ref="r:be665d13-1e1d-44cd-9817-8bd4d610f422(com.mbeddr.mpsutil.json.structure)" />
+    <import index="7k8f" ref="805f80e8-6090-485f-aca8-8d299a7cb825/java:com.fasterxml.jackson.databind(com.fasterxml.jackson/)" />
+    <import index="i4mf" ref="805f80e8-6090-485f-aca8-8d299a7cb825/java:com.fasterxml.jackson.core(com.fasterxml.jackson/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
@@ -59,8 +61,16 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -96,6 +106,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -356,26 +367,91 @@
     <node concept="2YIFZL" id="6Sh7xm2Kvx2" role="jymVt">
       <property role="TrG5h" value="importFile" />
       <node concept="3clFbS" id="6Sh7xm2Kvx6" role="3clF47">
-        <node concept="3cpWs6" id="6Sh7xm2KvW3" role="3cqZAp">
-          <node concept="2pJPEk" id="6Sh7xm2KwnA" role="3cqZAk">
-            <node concept="2pJPED" id="6Sh7xm2KwpA" role="2pJPEn">
-              <ref role="2pJxaS" to="21pk:3L4lRB2Gtfz" resolve="JsonFile" />
-              <node concept="2pJxcG" id="6Sh7xm2Kwq5" role="2pJxcM">
-                <ref role="2pJxcJ" to="21pk:34$4Bn6i2gb" resolve="folder" />
-                <node concept="10Nm6u" id="6Sh7xm2Kwy8" role="2pJxcZ" />
-              </node>
-              <node concept="2pJxcG" id="6Sh7xm2KwyO" role="2pJxcM">
-                <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                <node concept="Xl_RD" id="6Sh7xm2KwAX" role="2pJxcZ">
-                  <property role="Xl_RC" value="myTestFile" />
-                </node>
-              </node>
-              <node concept="2pIpSj" id="6Sh7xm2KwCz" role="2pJxcM">
-                <ref role="2pIpSl" to="21pk:3L4lRB2GtfY" resolve="object" />
-                <node concept="10Nm6u" id="6Sh7xm2KwD8" role="2pJxcZ" />
+        <node concept="3cpWs8" id="6Sh7xm2Modc" role="3cqZAp">
+          <node concept="3cpWsn" id="6Sh7xm2Modd" role="3cpWs9">
+            <property role="TrG5h" value="mapper" />
+            <node concept="3uibUv" id="6Sh7xm2Mode" role="1tU5fm">
+              <ref role="3uigEE" to="7k8f:~ObjectMapper" resolve="ObjectMapper" />
+            </node>
+            <node concept="2ShNRf" id="6Sh7xm2MohM" role="33vP2m">
+              <node concept="1pGfFk" id="6Sh7xm2Mp7X" role="2ShVmc">
+                <ref role="37wK5l" to="7k8f:~ObjectMapper.&lt;init&gt;()" resolve="ObjectMapper" />
               </node>
             </node>
           </node>
+        </node>
+        <node concept="SfApY" id="6pzXh8ftxCM" role="3cqZAp">
+          <node concept="3clFbS" id="6pzXh8ftxCN" role="SfCbr">
+            <node concept="3cpWs8" id="6pzXh8fty1g" role="3cqZAp">
+              <node concept="3cpWsn" id="6pzXh8fty1h" role="3cpWs9">
+                <property role="TrG5h" value="rootNode" />
+                <node concept="3uibUv" id="6pzXh8fty1d" role="1tU5fm">
+                  <ref role="3uigEE" to="7k8f:~JsonNode" resolve="JsonNode" />
+                </node>
+                <node concept="2OqwBi" id="6pzXh8fty1i" role="33vP2m">
+                  <node concept="37vLTw" id="6pzXh8fty1j" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6Sh7xm2Modd" resolve="mapper" />
+                  </node>
+                  <node concept="liA8E" id="6pzXh8fty1k" role="2OqNvi">
+                    <ref role="37wK5l" to="7k8f:~ObjectMapper.readTree(java.io.File):com.fasterxml.jackson.databind.JsonNode" resolve="readTree" />
+                    <node concept="37vLTw" id="6pzXh8fty1l" role="37wK5m">
+                      <ref role="3cqZAo" node="6Sh7xm2Kvx7" resolve="file" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="6Sh7xm2KvW3" role="3cqZAp">
+              <node concept="2pJPEk" id="6Sh7xm2KwnA" role="3cqZAk">
+                <node concept="2pJPED" id="6Sh7xm2KwpA" role="2pJPEn">
+                  <ref role="2pJxaS" to="21pk:3L4lRB2Gtfz" resolve="JsonFile" />
+                  <node concept="2pJxcG" id="6Sh7xm2Kwq5" role="2pJxcM">
+                    <ref role="2pJxcJ" to="21pk:34$4Bn6i2gb" resolve="folder" />
+                    <node concept="10Nm6u" id="6Sh7xm2Kwy8" role="2pJxcZ" />
+                  </node>
+                  <node concept="2pJxcG" id="6Sh7xm2KwyO" role="2pJxcM">
+                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="2OqwBi" id="6pzXh8ftzlg" role="2pJxcZ">
+                      <node concept="37vLTw" id="6pzXh8ftyZM" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6Sh7xm2Kvx7" resolve="file" />
+                      </node>
+                      <node concept="liA8E" id="6pzXh8ft$gM" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="6Sh7xm2KwCz" role="2pJxcM">
+                    <ref role="2pIpSl" to="21pk:3L4lRB2GtfY" resolve="object" />
+                    <node concept="2pJPED" id="6pzXh8ft$FZ" role="2pJxcZ">
+                      <ref role="2pJxaS" to="21pk:3L4lRB2GdlQ" resolve="JSONObject" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="6pzXh8ftxCE" role="TEbGg">
+            <node concept="3clFbS" id="6pzXh8ftxCF" role="TDEfX" />
+            <node concept="3cpWsn" id="6pzXh8ftxCG" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="6pzXh8ftxCH" role="1tU5fm">
+                <ref role="3uigEE" to="i4mf:~JsonProcessingException" resolve="JsonProcessingException" />
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="6pzXh8ftxCI" role="TEbGg">
+            <node concept="3clFbS" id="6pzXh8ftxCJ" role="TDEfX" />
+            <node concept="3cpWsn" id="6pzXh8ftxCK" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="6pzXh8ftxCL" role="1tU5fm">
+                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6Sh7xm2Nr$x" role="3cqZAp" />
+        <node concept="3cpWs6" id="6pzXh8ftyxF" role="3cqZAp">
+          <node concept="10Nm6u" id="6pzXh8ftyHs" role="3cqZAk" />
         </node>
       </node>
       <node concept="3Tqbb2" id="6Sh7xm2KvEe" role="3clF45">
