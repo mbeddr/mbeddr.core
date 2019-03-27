@@ -133,6 +133,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -24966,7 +24967,7 @@
                           <node concept="3cpWs8" id="4KCBE0gtLxy" role="3cqZAp">
                             <node concept="3cpWsn" id="4KCBE0gtLxz" role="3cpWs9">
                               <property role="TrG5h" value="maxConnectionCount" />
-                              <node concept="3cmrfG" id="4KCBE0gtLx_" role="33vP2m">
+                              <node concept="3cmrfG" id="6wa9dmqGL8M" role="33vP2m">
                                 <property role="3cmrfH" value="0" />
                               </node>
                               <node concept="3uibUv" id="7g$Nqfo1l1U" role="1tU5fm">
@@ -25069,20 +25070,66 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3clFbF" id="7g$NqfnYLn7" role="3cqZAp">
-                            <node concept="2OqwBi" id="7g$NqfnYN5T" role="3clFbG">
-                              <node concept="liA8E" id="7g$Nqfo04v8" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-                                <node concept="3VsKOn" id="7g$NqfodJMS" role="37wK5m">
-                                  <ref role="3VsUkX" to="wyt6:~Integer" resolve="Integer" />
+                          <node concept="3cpWs8" id="6wa9dmqGGY5" role="3cqZAp">
+                            <node concept="3cpWsn" id="6wa9dmqGGY6" role="3cpWs9">
+                              <property role="TrG5h" value="storedMax" />
+                              <node concept="10QFUN" id="6wa9dmqGGY7" role="33vP2m">
+                                <node concept="2OqwBi" id="6wa9dmqGGY8" role="10QFUP">
+                                  <node concept="liA8E" id="6wa9dmqGGY9" role="2OqNvi">
+                                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                                    <node concept="3VsKOn" id="6wa9dmqGGYa" role="37wK5m">
+                                      <ref role="3VsUkX" to="wyt6:~Integer" resolve="Integer" />
+                                    </node>
+                                  </node>
+                                  <node concept="2JrnkZ" id="6wa9dmqGGYb" role="2Oq$k0">
+                                    <node concept="2GrUjf" id="6wa9dmqGGYc" role="2JrQYb">
+                                      <ref role="2Gs0qQ" node="4KCBE0gtLwE" resolve="requiredPort" />
+                                    </node>
+                                  </node>
                                 </node>
-                                <node concept="37vLTw" id="7g$Nqfo0bju" role="37wK5m">
-                                  <ref role="3cqZAo" node="4KCBE0gtLxz" resolve="maxConnectionCount" />
+                                <node concept="3uibUv" id="6wa9dmqGGYd" role="10QFUM">
+                                  <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
                                 </node>
                               </node>
-                              <node concept="2JrnkZ" id="7g$NqfnYN5Y" role="2Oq$k0">
-                                <node concept="2GrUjf" id="7g$NqfnYLn5" role="2JrQYb">
-                                  <ref role="2Gs0qQ" node="4KCBE0gtLwE" resolve="requiredPort" />
+                              <node concept="3uibUv" id="6wa9dmqGGYe" role="1tU5fm">
+                                <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbJ" id="6wa9dmqGxr3" role="3cqZAp">
+                            <node concept="3clFbS" id="6wa9dmqGxr5" role="3clFbx">
+                              <node concept="3clFbF" id="7g$NqfnYLn7" role="3cqZAp">
+                                <node concept="2OqwBi" id="7g$NqfnYN5T" role="3clFbG">
+                                  <node concept="liA8E" id="7g$Nqfo04v8" role="2OqNvi">
+                                    <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                                    <node concept="3VsKOn" id="7g$NqfodJMS" role="37wK5m">
+                                      <ref role="3VsUkX" to="wyt6:~Integer" resolve="Integer" />
+                                    </node>
+                                    <node concept="37vLTw" id="7g$Nqfo0bju" role="37wK5m">
+                                      <ref role="3cqZAo" node="4KCBE0gtLxz" resolve="maxConnectionCount" />
+                                    </node>
+                                  </node>
+                                  <node concept="2JrnkZ" id="7g$NqfnYN5Y" role="2Oq$k0">
+                                    <node concept="2GrUjf" id="7g$NqfnYLn5" role="2JrQYb">
+                                      <ref role="2Gs0qQ" node="4KCBE0gtLwE" resolve="requiredPort" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="22lmx$" id="6wa9dmqHgeW" role="3clFbw">
+                              <node concept="3clFbC" id="6wa9dmqHeYF" role="3uHU7B">
+                                <node concept="37vLTw" id="6wa9dmqGVsy" role="3uHU7B">
+                                  <ref role="3cqZAo" node="6wa9dmqGGY6" resolve="storedMax" />
+                                </node>
+                                <node concept="10Nm6u" id="6wa9dmqG_Ey" role="3uHU7w" />
+                              </node>
+                              <node concept="3eOSWO" id="6wa9dmqH2_O" role="3uHU7w">
+                                <node concept="37vLTw" id="6wa9dmqH3Pg" role="3uHU7w">
+                                  <ref role="3cqZAo" node="6wa9dmqGGY6" resolve="storedMax" />
+                                </node>
+                                <node concept="37vLTw" id="6wa9dmqH0yD" role="3uHU7B">
+                                  <ref role="3cqZAo" node="4KCBE0gtLxz" resolve="maxConnectionCount" />
                                 </node>
                               </node>
                             </node>
