@@ -47,12 +47,12 @@ subprojects {
     ext.mbeddrMajor = "1"
     ext.mbeddrMinor = "2"
 
-    // switch to snapshot/release repositories passed with -P option via command line, if any, 
+    // switch to snapshot/release repositories passed with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
     ext.snapshotRepository = findNonEmptyProperty('snapshotRepository') ?: defaultSnapshotRepository
     ext.releaseRepository = findNonEmptyProperty('releaseRepository') ?: defaultReleaseRepository
 
-    // use depencency repositories passed as comma-separated list with -P option via command line, if any, 
+    // use depencency repositories passed as comma-separated list with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
     if (project.hasNonEmptyProperty('dependencyRepositories')) {
         if (project.getProperty('dependencyRepositories') instanceof String) {
@@ -97,12 +97,12 @@ subprojects {
             ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
         }
 
-        // Enable mbeddr to be assigned a different version number than mbeddr platform, 
+        // Enable mbeddr to be assigned a different version number than mbeddr platform,
         // as well as mbeddr to be built against a specified existing mbeddr platform version
 		ext.mbeddrPlatformBuildNumber = findNonEmptyProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
 
         if (ciBuild) {
-			// Coerce TeamCity build number to mbeddrBuildNumber by default 
+			// Coerce TeamCity build number to mbeddrBuildNumber by default
 			// (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
 			println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
         } else {

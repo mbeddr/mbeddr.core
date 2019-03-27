@@ -2,7 +2,7 @@
 <model ref="r:00731b77-fd60-4ebd-b554-284dbff8495f(com.mbeddr.mpsutil.editingGuide.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -78,16 +78,6 @@
       <property role="TrG5h" value="resultMessage" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="3TMofxP5NCA" role="1TKVEl">
-      <property role="IQ2nx" value="4499765597929159206" />
-      <property role="TrG5h" value="monitorSelectionChange" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="2$nS1pPOwKO" role="1TKVEl">
-      <property role="IQ2nx" value="2961081667089992756" />
-      <property role="TrG5h" value="nextButtonText" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="3p1cdQ7_d$Z" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="description" />
@@ -122,6 +112,16 @@
     <node concept="PrWs8" id="4AzkLAGs$WL" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
+    <node concept="1TJgyi" id="3TMofxP5NCA" role="1TKVEl">
+      <property role="IQ2nx" value="4499765597929159206" />
+      <property role="TrG5h" value="monitorSelectionChange" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="2$nS1pPOwKO" role="1TKVEl">
+      <property role="IQ2nx" value="2961081667089992756" />
+      <property role="TrG5h" value="nextButtonText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_v">
     <property role="TrG5h" value="MonitorFunction" />
@@ -143,25 +143,28 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="PYICs0YGCY" resolve="ProgramFragment_ScopeProvider" />
     </node>
+    <node concept="1TJgyi" id="57DYivDPbRB" role="1TKVEl">
+      <property role="IQ2nx" value="5902522736467820007" />
+      <property role="TrG5h" value="showErrors" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="1X06SdGBwmx" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
     <node concept="PrWs8" id="66G6VYc4E9z" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
-    <node concept="1TJgyi" id="57DYivDPbRB" role="1TKVEl">
-      <property role="IQ2nx" value="5902522736467820007" />
-      <property role="TrG5h" value="showErrors" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    <node concept="PrWs8" id="9M5Mb3WNNB" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
     </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_V">
     <property role="TrG5h" value="LiteralProgramFragment" />
+    <property role="34LRSv" value="literal" />
     <property role="EcuMT" value="3909459679554886011" />
     <property role="3GE5qa" value="fragments" />
     <property role="R4oN_" value="Wraps a program fragment that can be shown and modified as part of a task" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="literal" />
     <ref role="1TJDcQ" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
     <node concept="1TJgyj" id="3p1cdQ7_d_W" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -186,22 +189,17 @@
       <property role="IQ2ns" value="3453511597021855948" />
       <ref role="20lvS9" node="3p1cdQ7_d$W" resolve="Task" />
     </node>
+    <node concept="1TJgyi" id="2ZHlC0069SZ" role="1TKVEl">
+      <property role="TrG5h" value="developmentMode" />
+      <property role="IQ2nx" value="3453511597020454463" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="DBaqrEZlHF" role="1TKVEi">
       <property role="IQ2ns" value="749613659864259435" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="followingExercise" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="3p1cdQ7_d_Y" resolve="Exercise" />
-    </node>
-    <node concept="1TJgyi" id="2ZHlC0069SZ" role="1TKVEl">
-      <property role="TrG5h" value="developmentMode" />
-      <property role="IQ2nx" value="3453511597020454463" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="DBaqrEY7ez" role="1TKVEl">
-      <property role="IQ2nx" value="749613659863937955" />
-      <property role="TrG5h" value="allowSkip" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="3p1cdQ7_dA3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -220,14 +218,19 @@
     <node concept="PrWs8" id="3p1cdQ7_dA1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1QGGSu" id="6LCinStDtiP" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/play.png" />
+    </node>
+    <node concept="1TJgyi" id="DBaqrEY7ez" role="1TKVEl">
+      <property role="IQ2nx" value="749613659863937955" />
+      <property role="TrG5h" value="allowSkip" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="57DYivE2mlG" role="PzmwI">
       <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
     </node>
     <node concept="PrWs8" id="4sSf$eKhX2q" role="PzmwI">
       <ref role="PrY4T" node="4sSf$eKgZ7y" resolve="IAmAwareOfRuntime" />
-    </node>
-    <node concept="1QGGSu" id="6LCinStDtiP" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/play.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_xTL">
@@ -321,21 +324,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7uU8NkLT8Bi">
-    <property role="EcuMT" value="8627246747558906322" />
-    <property role="TrG5h" value="ReferencingProgramFragment" />
-    <property role="3GE5qa" value="fragments" />
-    <property role="34LRSv" value="reference" />
-    <property role="R4oN_" value="References an existing node to show and modify it" />
-    <ref role="1TJDcQ" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
-    <node concept="1TJgyj" id="7uU8NkLT8LQ" role="1TKVEi">
-      <property role="IQ2ns" value="8627246747558906998" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="referencedNode" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2LITU$UuIMU">
     <property role="EcuMT" value="3201751099123625146" />
     <property role="3GE5qa" value="fragments" />
@@ -366,15 +354,19 @@
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="PYICs0YGCY">
-    <property role="EcuMT" value="972419658558392894" />
+  <node concept="1TIwiD" id="7uU8NkLT8Bi">
+    <property role="EcuMT" value="8627246747558906322" />
+    <property role="TrG5h" value="ReferencingProgramFragment" />
     <property role="3GE5qa" value="fragments" />
-    <property role="TrG5h" value="ProgramFragment_ScopeProvider" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="PYICs0YGVh" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    <property role="34LRSv" value="reference" />
+    <property role="R4oN_" value="References an existing node to show and modify it" />
+    <ref role="1TJDcQ" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
+    <node concept="1TJgyj" id="7uU8NkLT8LQ" role="1TKVEi">
+      <property role="IQ2ns" value="8627246747558906998" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="referencedNode" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
     </node>
   </node>
   <node concept="PlHQZ" id="4sSf$eKgZ7y">
@@ -384,6 +376,17 @@
       <property role="IQ2nx" value="5131920235829653987" />
       <property role="TrG5h" value="atRuntime" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="PYICs0YGCY">
+    <property role="EcuMT" value="972419658558392894" />
+    <property role="3GE5qa" value="fragments" />
+    <property role="TrG5h" value="ProgramFragment_ScopeProvider" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="PYICs0YGVh" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
   </node>
 </model>

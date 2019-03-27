@@ -112,10 +112,11 @@
       </concept>
       <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ig" index="2LPuA2" />
       <concept id="3909459679554886014" name="com.mbeddr.mpsutil.editingGuide.structure.Exercise" flags="ng" index="2LPuAz">
+        <reference id="749613659864259435" name="followingExercise" index="3wABbd" />
         <child id="3909459679554886019" name="description" index="2LPu_u" />
         <child id="3909459679554886015" name="tasks" index="2LPuAy" />
       </concept>
-      <concept id="3909459679554886011" name="com.mbeddr.mpsutil.editingGuide.structure.LiteralProgramFragment" flags="ng" index="2LPuAA">
+      <concept id="3909459679554886011" name="com.mbeddr.mpsutil.editingGuide.structure.InlineProgramFragment" flags="ng" index="2LPuAA">
         <child id="3909459679554886012" name="node" index="2LPuAx" />
       </concept>
       <concept id="3909459679554886010" name="com.mbeddr.mpsutil.editingGuide.structure.ProgramFragment" flags="ng" index="2LPuAB">
@@ -156,6 +157,7 @@
   </registry>
   <node concept="2LPuAz" id="3p1cdQ7_M87">
     <property role="TrG5h" value="Demo1" />
+    <ref role="3wABbd" node="DBaqrF0bAq" resolve="Demo2" />
     <node concept="2LPuBx" id="3p1cdQ7_M88" role="2LPuAy">
       <property role="TrG5h" value="Deletion" />
       <node concept="19SGf9" id="3p1cdQ7_M89" role="2LPuBy">

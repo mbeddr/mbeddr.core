@@ -2,10 +2,10 @@
 <model ref="r:b2f3d5f9-b81e-4589-95e8-d5be28f6e48f(com.mbeddr.mpsutil.projectview.views.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
@@ -30,6 +30,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="l7us" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.icons(MPS.Platform/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -47,6 +48,9 @@
       <concept id="1224573963862" name="jetbrains.mps.baseLanguage.structure.EnumValuesExpression" flags="nn" index="uiWXb">
         <reference id="1224573974191" name="enumClass" index="uiZuM" />
       </concept>
+      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
+        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -56,6 +60,9 @@
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -169,6 +176,9 @@
       </concept>
     </language>
     <language id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview">
+      <concept id="3706182042894827072" name="com.mbeddr.mpsutil.projectview.structure.ViewParamter" flags="ng" index="2SKBUI" />
+      <concept id="3706182042894444408" name="com.mbeddr.mpsutil.projectview.structure.DataProviderFunction" flags="ig" index="2SMaum" />
+      <concept id="3706182042894444980" name="com.mbeddr.mpsutil.projectview.structure.DataIdParamter" flags="ng" index="2SMa_q" />
       <concept id="8309912865649381503" name="com.mbeddr.mpsutil.projectview.structure.MPSProjectExpression" flags="ng" index="14a6R6" />
       <concept id="8309912865649284794" name="com.mbeddr.mpsutil.projectview.structure.TreeNodeElement" flags="ng" index="14aYG3">
         <reference id="8309912865649343723" name="parent" index="14a85i" />
@@ -191,6 +201,7 @@
         <property id="5597588939837555676" name="rebuildOnFileChange" index="280IaB" />
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <reference id="8309912865649284888" name="extends" index="14aYEx" />
+        <child id="3706182042894444402" name="dataProvider" index="2SMaus" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
       </concept>
       <concept id="8309912865649636002" name="com.mbeddr.mpsutil.projectview.structure.QueryElementReference" flags="ng" index="14b0Wr">
@@ -1239,11 +1250,38 @@
         </node>
       </node>
     </node>
+    <node concept="2SMaum" id="3dJ0eUbJC8D" role="2SMaus">
+      <node concept="3clFbS" id="3dJ0eUbJC8E" role="2VODD2">
+        <node concept="3clFbJ" id="3dJ0eUbJEHA" role="3cqZAp">
+          <node concept="3clFbS" id="3dJ0eUbJEHI" role="3clFbx">
+            <node concept="3cpWs6" id="3dJ0eUbJI9C" role="3cqZAp">
+              <node concept="10Nm6u" id="3dJ0eUbJIe5" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="3dJ0eUbJEa5" role="3clFbw">
+            <node concept="Xl_RD" id="3dJ0eUbJEiu" role="3uHU7w">
+              <property role="Xl_RC" value="fsdf" />
+            </node>
+            <node concept="2SMa_q" id="3dJ0eUbJDJH" role="3uHU7B" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3dJ0eUbJIvm" role="3cqZAp">
+          <node concept="2OqwBi" id="3dJ0eUbJITP" role="3clFbG">
+            <node concept="2SKBUI" id="3dJ0eUbJIvk" role="2Oq$k0" />
+            <node concept="liA8E" id="3dJ0eUbJJrL" role="2OqNvi">
+              <ref role="37wK5l" to="uhdf:2ZGhpRfeyB3" resolve="getId" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3dJ0eUbJEza" role="3cqZAp" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="75_oBQVwQhb">
     <property role="TrG5h" value="ProjectViewUtil" />
     <node concept="2tJIrI" id="75_oBQVwQmW" role="jymVt" />
     <node concept="Wx3nA" id="75_oBQVwQpr" role="jymVt">
+      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="actionGroupsIds" />
       <property role="3TUv4t" value="false" />
       <node concept="3rvAFt" id="75_oBQVwQnT" role="1tU5fm">
@@ -1389,6 +1427,7 @@
     <node concept="2tJIrI" id="75_oBQVwQnl" role="jymVt" />
     <node concept="2YIFZL" id="75_oBQVwQmH" role="jymVt">
       <property role="TrG5h" value="getActionGroupId" />
+      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="75_oBQVwQm3" role="3clF47">
@@ -1418,6 +1457,7 @@
     <node concept="2tJIrI" id="75_oBQVwW_9" role="jymVt" />
     <node concept="2YIFZL" id="75_oBQVwWIs" role="jymVt">
       <property role="TrG5h" value="getActionGroupId" />
+      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="75_oBQVwWBJ" role="3clF47">
@@ -1528,6 +1568,7 @@
     <node concept="2tJIrI" id="75_oBQVUdXm" role="jymVt" />
     <node concept="2YIFZL" id="75_oBQVUee1" role="jymVt">
       <property role="TrG5h" value="getUtilModels" />
+      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="75_oBQVUe0R" role="3clF47">
@@ -1615,6 +1656,7 @@
     <node concept="2tJIrI" id="4GrfODAQZBK" role="jymVt" />
     <node concept="2YIFZL" id="4GrfODAR8kC" role="jymVt">
       <property role="TrG5h" value="getFolders" />
+      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="4GrfODAQZYV" role="3clF47">

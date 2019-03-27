@@ -2,11 +2,11 @@
 <model ref="r:b54ad628-4790-40a0-8b1f-5a776b948a02(com.mbeddr.mpsutil.editingGuide.execution)">
   <persistence version="9" />
   <languages>
-    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="-1" />
+    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1481,9 +1481,6 @@
               </node>
             </node>
             <node concept="2Gpval" id="3$YAQZ4ChL3" role="3cqZAp">
-              <node concept="37vLTw" id="Y8XzxbLjF8" role="2GsD0m">
-                <ref role="3cqZAo" node="Y8XzxbLgel" resolve="copiedRoots" />
-              </node>
               <node concept="2GrKxI" id="3$YAQZ4ChL5" role="2Gsz3X">
                 <property role="TrG5h" value="root" />
               </node>
@@ -1543,6 +1540,9 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="37vLTw" id="Y8XzxbLjF8" role="2GsD0m">
+                <ref role="3cqZAo" node="Y8XzxbLgel" resolve="copiedRoots" />
               </node>
             </node>
             <node concept="3clFbF" id="692bXAb6zLB" role="3cqZAp">

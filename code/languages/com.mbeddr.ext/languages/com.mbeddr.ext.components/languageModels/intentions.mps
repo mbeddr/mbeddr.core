@@ -2,9 +2,9 @@
 <model ref="r:84d76f58-330b-45e8-a16f-5eee57a3024a(com.mbeddr.ext.components.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="-1" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1346,7 +1346,7 @@
   <node concept="2S6QgY" id="1lsyexBNOrw">
     <property role="3GE5qa" value="comp.ports" />
     <property role="TrG5h" value="addCharacteristic" />
-    <ref role="2ZfgGC" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
+    <ref role="2ZfgGC" to="v7ag:3TmmsQkC_Q2" resolve="ComponentPort" />
     <node concept="2S6ZIM" id="1lsyexBNOrx" role="2ZfVej">
       <node concept="3clFbS" id="1lsyexBNOry" role="2VODD2">
         <node concept="3clFbF" id="1lsyexBNOr_" role="3cqZAp">
@@ -1404,15 +1404,6 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="53OWoAUMocI" role="3clFbw">
-            <node concept="2OqwBi" id="53OWoAUMm4x" role="2Oq$k0">
-              <node concept="2Sf5sV" id="2ZUGF54knIC" role="2Oq$k0" />
-              <node concept="3TrEf2" id="53OWoAUMncB" role="2OqNvi">
-                <ref role="3Tt5mk" to="v7ag:2ZUGF54knHd" resolve="cardinality" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="53OWoAUMoRW" role="2OqNvi" />
-          </node>
           <node concept="9aQIb" id="2ZUGF54knKF" role="9aQIa">
             <node concept="3clFbS" id="2ZUGF54knKG" role="9aQI4">
               <node concept="3clFbF" id="2ZUGF54knKH" role="3cqZAp">
@@ -1440,6 +1431,15 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="2OqwBi" id="53OWoAUMocI" role="3clFbw">
+            <node concept="2OqwBi" id="53OWoAUMm4x" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2ZUGF54knIC" role="2Oq$k0" />
+              <node concept="3TrEf2" id="53OWoAUMncB" role="2OqNvi">
+                <ref role="3Tt5mk" to="v7ag:2ZUGF54knHd" resolve="cardinality" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="53OWoAUMoRW" role="2OqNvi" />
           </node>
         </node>
       </node>

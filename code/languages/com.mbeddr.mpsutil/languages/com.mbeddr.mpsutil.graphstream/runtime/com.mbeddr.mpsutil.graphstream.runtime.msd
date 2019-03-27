@@ -5,21 +5,15 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="gs-algo-1.3.jar" />
-      <sourceRoot location="gs-core-1.3.jar" />
-      <sourceRoot location="gs-ui-1.3.jar" />
-      <sourceRoot location="jgraphx-3.7.4.jar" />
-      <sourceRoot location="abego-treelayout-1.0.3.jar" />
-      <sourceRoot location="de.itemis.graphing.jar" />
+      <sourceRoot location="graphing-core.jar" />
+      <sourceRoot location="graphing-jgraphx.jar" />
+      <sourceRoot location="jgraphx-3.9.7.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/gs-algo-1.3.jar" />
-    <stubModelEntry path="${module}/lib/gs-core-1.3.jar" />
-    <stubModelEntry path="${module}/lib/gs-ui-1.3.jar" />
-    <stubModelEntry path="${module}/lib/jgraphx-3.7.4.jar" />
-    <stubModelEntry path="${module}/lib/abego-treelayout-1.0.3.jar" />
-    <stubModelEntry path="${module}/lib/de.itemis.graphing.jar" />
+    <stubModelEntry path="${module}/lib/graphing-core.jar" />
+    <stubModelEntry path="${module}/lib/graphing-jgraphx.jar" />
+    <stubModelEntry path="${module}/lib/jgraphx-3.9.7.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -29,6 +23,7 @@
     <dependency reexport="false">5787a8ed-1486-4469-94b0-fa3fc6c8538d(com.mbeddr.mpsutil.graphstream)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
     <dependency reexport="false">c0488c1e-322f-4f38-92d4-5520a7ce96c1(com.mbeddr.mpsutil.plantuml.pluginSolution)</dependency>
+    <dependency reexport="false">96569509-ecfc-4944-b6c9-075faf02fe2c(org.xml)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -58,6 +53,7 @@
     <module reference="c0488c1e-322f-4f38-92d4-5520a7ce96c1(com.mbeddr.mpsutil.plantuml.pluginSolution)" version="0" />
     <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+    <module reference="96569509-ecfc-4944-b6c9-075faf02fe2c(org.xml)" version="0" />
   </dependencyVersions>
 </solution>
 

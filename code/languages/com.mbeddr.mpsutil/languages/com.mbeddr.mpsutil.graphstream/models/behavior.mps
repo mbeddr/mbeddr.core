@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="udin" ref="r:fe8ee6c8-7e5c-4efd-b608-c5ea6827be30(com.mbeddr.mpsutil.graphstream.runtime.plugin)" />
+    <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="4m0a" ref="r:e5f563f0-3312-4f0d-a6fe-8d43c8a221d4(com.mbeddr.mpsutil.graphstream.structure)" implicit="true" />
   </imports>
   <registry>
@@ -83,6 +85,12 @@
       <node concept="37vLTG" id="4DzE9lEu1Hk" role="3clF46">
         <property role="TrG5h" value="viewID" />
         <node concept="17QB3L" id="4DzE9lEu1Hj" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1wY88QDIsPR" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="1wY88QDIsPS" role="1tU5fm">
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
       </node>
     </node>
   </node>
