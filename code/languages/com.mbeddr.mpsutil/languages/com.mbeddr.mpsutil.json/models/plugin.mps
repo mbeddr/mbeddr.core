@@ -4,6 +4,7 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +16,8 @@
     <import index="i4mf" ref="805f80e8-6090-485f-aca8-8d299a7cb825/java:com.fasterxml.jackson.core(com.fasterxml.jackson/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
@@ -25,6 +28,7 @@
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
+        <property id="1211298967294" name="outsideCommandExecution" index="72QZ$" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -46,6 +50,10 @@
       <concept id="1205681243813" name="jetbrains.mps.lang.plugin.structure.IsApplicableBlock" flags="in" index="2ScWuX" />
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
+      <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
+        <reference id="1217252646389" name="key" index="1DUlNI" />
+      </concept>
+      <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
       <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
@@ -165,6 +173,19 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
@@ -237,6 +258,7 @@
   <node concept="sE7Ow" id="6Sh7xm2JLAh">
     <property role="TrG5h" value="importJSONFile" />
     <property role="2uzpH1" value="Import JSON File(s)" />
+    <property role="72QZ$" value="true" />
     <node concept="tnohg" id="6Sh7xm2JLAi" role="tncku">
       <node concept="3clFbS" id="6Sh7xm2JLAj" role="2VODD2">
         <node concept="3cpWs8" id="6Sh7xm2KbN7" role="3cqZAp">
@@ -326,22 +348,39 @@
                 </node>
               </node>
               <node concept="3clFbS" id="6Sh7xm2KoW4" role="2LFqv$">
-                <node concept="3clFbF" id="6Sh7xm2Krq4" role="3cqZAp">
-                  <node concept="2OqwBi" id="6Sh7xm2Ksu8" role="3clFbG">
-                    <node concept="2OqwBi" id="6Sh7xm2KrCO" role="2Oq$k0">
-                      <node concept="2WthIp" id="6Sh7xm2Krq3" role="2Oq$k0" />
-                      <node concept="3gHZIF" id="6Sh7xm2Kseh" role="2OqNvi">
-                        <ref role="2WH_rO" node="6Sh7xm2JRki" resolve="model" />
-                      </node>
-                    </node>
-                    <node concept="3BYIHo" id="6Sh7xm2KsA9" role="2OqNvi">
-                      <node concept="2YIFZM" id="6Sh7xm2KwHf" role="3BYIHq">
-                        <ref role="37wK5l" node="6Sh7xm2Kvx2" resolve="importFile" />
-                        <ref role="1Pybhc" node="6Sh7xm2KsCp" resolve="JsonHelper" />
-                        <node concept="2GrUjf" id="6Sh7xm2KwIb" role="37wK5m">
-                          <ref role="2Gs0qQ" node="6Sh7xm2KoW0" resolve="file" />
+                <node concept="1QHqEO" id="72Ne6StdTTy" role="3cqZAp">
+                  <node concept="1QHqEC" id="72Ne6StdTT$" role="1QHqEI">
+                    <node concept="3clFbS" id="72Ne6StdTTA" role="1bW5cS">
+                      <node concept="3clFbF" id="72Ne6StdV_P" role="3cqZAp">
+                        <node concept="2OqwBi" id="72Ne6StdV_Q" role="3clFbG">
+                          <node concept="2OqwBi" id="72Ne6StdV_R" role="2Oq$k0">
+                            <node concept="2WthIp" id="72Ne6StdV_S" role="2Oq$k0" />
+                            <node concept="3gHZIF" id="72Ne6StdV_T" role="2OqNvi">
+                              <ref role="2WH_rO" node="6Sh7xm2JRki" resolve="model" />
+                            </node>
+                          </node>
+                          <node concept="3BYIHo" id="72Ne6StdV_U" role="2OqNvi">
+                            <node concept="2YIFZM" id="72Ne6StdV_V" role="3BYIHq">
+                              <ref role="1Pybhc" node="6Sh7xm2KsCp" resolve="JsonHelper" />
+                              <ref role="37wK5l" node="6Sh7xm2Kvx2" resolve="importFile" />
+                              <node concept="2GrUjf" id="72Ne6StdV_W" role="37wK5m">
+                                <ref role="2Gs0qQ" node="6Sh7xm2KoW0" resolve="file" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="72Ne6Ste$DM" role="ukAjM">
+                    <node concept="2OqwBi" id="72Ne6Ste0dj" role="2Oq$k0">
+                      <node concept="2WthIp" id="72Ne6StdZTB" role="2Oq$k0" />
+                      <node concept="1DTwFV" id="72Ne6Stezde" role="2OqNvi">
+                        <ref role="2WH_rO" node="72Ne6Stey$C" resolve="project" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="72Ne6Ste_ih" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                     </node>
                   </node>
                 </node>
@@ -365,6 +404,11 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1DS2jV" id="72Ne6Stey$C" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="72Ne6Stey$D" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="6Sh7xm2JRki" role="1NuT2Z">
       <property role="TrG5h" value="model" />
