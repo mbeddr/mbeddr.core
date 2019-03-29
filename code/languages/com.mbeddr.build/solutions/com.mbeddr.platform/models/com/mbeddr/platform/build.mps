@@ -16210,6 +16210,95 @@
             <ref role="3bR37D" node="6o5cjw5gEyi" resolve="com.mbeddr.mpsutil.json" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5pPGSRrFzVK" role="3bR37C">
+          <node concept="3bR9La" id="5pPGSRrFzVL" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5pPGSRrF$Vv" role="3bR37C">
+          <node concept="3bR9La" id="5pPGSRrF$Vw" role="1SiIV1">
+            <ref role="3bR37D" node="5pPGSRrFwrB" resolve="com.fasterxml.jackson" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="5pPGSRrFwrB" role="2G$12L">
+        <property role="TrG5h" value="com.fasterxml.jackson" />
+        <property role="3LESm3" value="805f80e8-6090-485f-aca8-8d299a7cb825" />
+        <property role="BnDLt" value="true" />
+        <node concept="398BVA" id="5pPGSRrFwKv" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="5pPGSRrFxpb" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="5pPGSRrFyEu" role="2Ry0An">
+              <property role="2Ry0Am" value="com.fasterxml.jackson" />
+              <node concept="2Ry0Ak" id="5pPGSRrFzj9" role="2Ry0An">
+                <property role="2Ry0Am" value="com.fasterxml.jackson.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5pPGSRrFzVM" role="3bR37C">
+          <node concept="3bR9La" id="5pPGSRrFzVN" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5pPGSRrFzW1" role="3bR37C">
+          <node concept="1BurEX" id="5pPGSRrFzW2" role="1SiIV1">
+            <node concept="398BVA" id="5pPGSRrFzVO" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="5pPGSRrFzVP" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5pPGSRrFzVQ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasterxml.jackson" />
+                  <node concept="2Ry0Ak" id="5pPGSRrFzVR" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5pPGSRrFzVS" role="2Ry0An">
+                      <property role="2Ry0Am" value="jackson-annotations-2.9.8.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5pPGSRrFzWg" role="3bR37C">
+          <node concept="1BurEX" id="5pPGSRrFzWh" role="1SiIV1">
+            <node concept="398BVA" id="5pPGSRrFzW3" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="5pPGSRrFzW4" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5pPGSRrFzW5" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasterxml.jackson" />
+                  <node concept="2Ry0Ak" id="5pPGSRrFzW6" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5pPGSRrFzW7" role="2Ry0An">
+                      <property role="2Ry0Am" value="jackson-core-2.9.8.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5pPGSRrFzWv" role="3bR37C">
+          <node concept="1BurEX" id="5pPGSRrFzWw" role="1SiIV1">
+            <node concept="398BVA" id="5pPGSRrFzWi" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="5pPGSRrFzWj" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5pPGSRrFzWk" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasterxml.jackson" />
+                  <node concept="2Ry0Ak" id="5pPGSRrFzWl" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5pPGSRrFzWm" role="2Ry0An">
+                      <property role="2Ry0Am" value="jackson-databind-2.9.8.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="m$_wf" id="NMVW79y25x" role="3989C9">
@@ -16925,6 +17014,27 @@
       <node concept="m$_wl" id="NMVW79yva0" role="39821P">
         <ref role="m_rDy" node="NMVW79y25x" resolve="com.mbeddr.mpsutil.json" />
         <node concept="pUk6x" id="76N1O$Kj6uq" role="pUk7w" />
+        <node concept="398223" id="5pPGSRrG95E" role="39821P">
+          <node concept="3_J27D" id="5pPGSRrG95F" role="Nbhlr">
+            <node concept="3Mxwew" id="5pPGSRrG9qD" role="3MwsjC">
+              <property role="3MwjfP" value="lib" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="5pPGSRrG9qG" role="39821P">
+            <node concept="398BVA" id="5pPGSRrG9JF" role="2HvfZ0">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="5pPGSRrGa4G" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5pPGSRrGa4N" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasterxml.jackson" />
+                  <node concept="2Ry0Ak" id="5pPGSRrGa4U" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="m$_wl" id="NMVW79yxti" role="39821P">
         <ref role="m_rDy" node="NMVW79yitG" resolve="com.mbeddr.mpsutil.userstyles" />

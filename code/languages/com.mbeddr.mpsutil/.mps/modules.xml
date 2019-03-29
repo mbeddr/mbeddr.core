@@ -2,6 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$USER_HOME$/Downloads/StubModels/StubModels/MsgStubModel.CL.activation/MsgStubModel.CL.activation.mpl" folder="rest.json.codeexample" />
+      <modulePath path="$USER_HOME$/Downloads/StubModels/StubModels/MsgStubModel.plugin/MsgStubModel.plugin.msd" folder="rest.json.codeexample" />
+      <modulePath path="$USER_HOME$/Downloads/StubModels/StubModels/solutions/build/build.msd" folder="rest.json.codeexample" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.mpsutil.guides/com.mbeddr.mpsutil.guides.devkit" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/EcoreImporter_TestLanguage1/EcoreImporter_TestLanguage1.mpl" folder="testlanguages" />
@@ -167,6 +170,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.jfreechart.runtime/com.mbeddr.mpsutil.jfreechart.runtime.msd" folder="staging.jfreechart" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.jfreechart.sandbox/com.mbeddr.mpsutil.jfreechart.sandbox.msd" folder="staging.jfreechart" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.json.sandbox/com.mbeddr.mpsutil.json.sandbox.msd" folder="rest.json" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.json.stubs.build/com.mbeddr.mpsutil.json.stubs.build.msd" folder="rest.json" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.json.stubs.plugin/com.mbeddr.mpsutil.json.stubs.plugin.msd" folder="rest.json" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.assertions.sandbox/com.mbeddr.mpsutil.lantest.assertions.sandbox.msd" folder="rest.lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.pluginSolution/com.mbeddr.mpsutil.lantest.pluginSolution.msd" folder="rest.lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.msd" folder="rest.lantest" />
