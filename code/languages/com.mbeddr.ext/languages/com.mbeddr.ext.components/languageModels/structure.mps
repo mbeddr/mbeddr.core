@@ -308,6 +308,9 @@
     <node concept="PrWs8" id="6brBMefUdlt" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
+    <node concept="PrWs8" id="1tylWje6LQg" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkD8YC">
     <property role="3GE5qa" value="comp.ports" />
@@ -2126,6 +2129,43 @@
     <property role="TrG5h" value="PortItExpression" />
     <property role="34LRSv" value="it" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="1tylWje4YbU">
+    <property role="EcuMT" value="1685005713372603130" />
+    <property role="3GE5qa" value="comp.ports.portType" />
+    <property role="TrG5h" value="PortType" />
+    <property role="R4oN_" value="a type that represents a port" />
+    <property role="34LRSv" value="port type" />
+    <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
+    <node concept="PrWs8" id="1tylWje53pF" role="PzmwI">
+      <ref role="PrY4T" to="clbe:IPRL99KNBH" resolve="ICanReferToValueStructure" />
+    </node>
+    <node concept="PrWs8" id="1tylWje53pG" role="PzmwI">
+      <ref role="PrY4T" to="yq40:2Qo$Q2I7Rcd" resolve="ISelfTypingInArrayAccessExpression" />
+    </node>
+    <node concept="PrWs8" id="1tylWje53pH" role="PzmwI">
+      <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="INullableType" />
+    </node>
+    <node concept="1TJgyj" id="1tylWje6iOf" role="1TKVEi">
+      <property role="IQ2ns" value="1685005713372949775" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="port" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3TmmsQkC_Q2" resolve="Port" />
+    </node>
+    <node concept="1TJgyj" id="1tylWjevCKj" role="1TKVEi">
+      <property role="IQ2ns" value="1685005713379593235" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3TmmsQkCzn9" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1tylWjeqLRx">
+    <property role="EcuMT" value="1685005713378319841" />
+    <property role="3GE5qa" value="comp.runnable" />
+    <property role="TrG5h" value="PortVarOpCallExpr" />
+    <ref role="1TJDcQ" node="71UKpntoo85" resolve="InterfaceOperationCallExpr" />
   </node>
 </model>
 
