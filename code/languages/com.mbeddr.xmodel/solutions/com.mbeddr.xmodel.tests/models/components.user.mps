@@ -47,6 +47,7 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="1553713790141527405" name="wireStatically" index="35zhco" />
         <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
@@ -281,6 +282,7 @@
     <node concept="3i2$bm" id="ybcgwyvEFa" role="2Q9xDr">
       <node concept="3i3YCL" id="ybcgwyvEFi" role="3i30U9">
         <property role="35zhco" value="true" />
+        <property role="2$yeXr" value="true" />
         <ref role="35zhcq" node="ybcgwyvE9S" resolve="myInstances" />
       </node>
     </node>

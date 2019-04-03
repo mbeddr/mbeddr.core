@@ -55,6 +55,7 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="1553713790141527405" name="wireStatically" index="35zhco" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
         <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
@@ -222,6 +223,7 @@
       <node concept="3i3YCL" id="5dzrqzlstae" role="3i30U9">
         <property role="35zhco" value="true" />
         <property role="3Ewwow" value="true" />
+        <property role="2$yeXr" value="true" />
         <ref role="35zhcq" node="4iljI7pa4D0" resolve="CarInstances" />
       </node>
     </node>
