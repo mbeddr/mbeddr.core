@@ -194,6 +194,7 @@
       <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
       <concept id="8473757169836531451" name="com.mbeddr.ext.components.structure.DirectRunnableCallable" flags="ng" index="1KB$IV" />
       <concept id="4075471389393921682" name="com.mbeddr.ext.components.structure.InterfaceTypeOpCallExpr" flags="ng" index="3LAlOK" />
+      <concept id="6616054089643593442" name="com.mbeddr.ext.components.structure.PortItExpression" flags="ng" index="1SaJN6" />
       <concept id="1482737808881210672" name="com.mbeddr.ext.components.structure.IReferencesInstance" flags="ng" index="1XX6Gu">
         <reference id="1482737808881210674" name="instance" index="1XX6Gs" />
         <reference id="1482737808881210673" name="config" index="1XX6Gv" />
@@ -331,12 +332,10 @@
               <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
             </node>
             <node concept="3XIRFW" id="6C8IiUrtswP" role="HyoFs">
-              <node concept="1_9egQ" id="6C8IiUrtsyd" role="3XIRFZ">
-                <node concept="30IBQI" id="6C8IiUrtsyQ" role="1_9egR">
+              <node concept="1_9egQ" id="6wa9dmr6WVu" role="3XIRFZ">
+                <node concept="3LAlOK" id="6wa9dmr6WVJ" role="1_9egR">
                   <ref role="2H6Oet" node="2ZUGF54kk7T" resolve="notify" />
-                  <node concept="2H6loZ" id="6C8IiUrtsyb" role="1_9fRO">
-                    <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
-                  </node>
+                  <node concept="1SaJN6" id="6wa9dmr6WVs" role="1_9fRO" />
                 </node>
               </node>
             </node>
