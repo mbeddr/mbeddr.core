@@ -944,8 +944,8 @@
         <node concept="3AgYrR" id="7_KH4FPHyL2" role="3cqZAp">
           <node concept="2OqwBi" id="7_KH4FPHyL3" role="3Ah4Yx">
             <node concept="3__QtB" id="7_KH4FPHyL4" role="2Oq$k0" />
-            <node concept="3TrEf2" id="7_KH4FPH$Co" role="2OqNvi">
-              <ref role="3Tt5mk" to="v7ag:7_KH4FPGAgt" resolve="portVarRef" />
+            <node concept="3TrEf2" id="6_0HAqgnaBO" role="2OqNvi">
+              <ref role="3Tt5mk" to="v7ag:6_0HAqfOELN" resolve="portVarExpr" />
             </node>
           </node>
         </node>
