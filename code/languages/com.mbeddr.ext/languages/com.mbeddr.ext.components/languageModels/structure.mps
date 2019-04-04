@@ -2160,6 +2160,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3TmmsQkCzn9" resolve="Component" />
     </node>
+    <node concept="1TJgyi" id="6_0HAqfwGFL" role="1TKVEl">
+      <property role="IQ2nx" value="7584262324102548209" />
+      <property role="TrG5h" value="singlePortAccess" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1tylWjeqLRx">
     <property role="EcuMT" value="1685005713378319841" />
@@ -2226,6 +2231,13 @@
       <property role="IQ2ns" value="8750692310023557365" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
+    <node concept="1TJgyj" id="6_0HAqfOELN" role="1TKVEi">
+      <property role="IQ2ns" value="7584262324107783283" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="portVarExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
     <node concept="PrWs8" id="7_KH4FPG_3R" role="PzmwI">
       <ref role="PrY4T" to="c4fa:5Xsg2EBpBVN" resolve="IStatmentListContainer" />
     </node>
@@ -2237,13 +2249,6 @@
     </node>
     <node concept="PrWs8" id="7_KH4FPG_3U" role="PzmwI">
       <ref role="PrY4T" node="4paRqaMe436" resolve="IConnectedCheck" />
-    </node>
-    <node concept="1TJgyj" id="7_KH4FPGAgt" role="1TKVEi">
-      <property role="IQ2ns" value="8750692310023562269" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="portVarRef" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     </node>
   </node>
 </model>

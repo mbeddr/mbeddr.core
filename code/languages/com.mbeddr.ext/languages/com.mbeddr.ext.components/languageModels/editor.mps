@@ -9783,10 +9783,20 @@
         <node concept="pkWqt" id="7_KH4FOZRJc" role="pqm2j">
           <node concept="3clFbS" id="7_KH4FOZRJd" role="2VODD2">
             <node concept="3clFbF" id="7_KH4FOZRQB" role="3cqZAp">
-              <node concept="2OqwBi" id="7_KH4FOZSdI" role="3clFbG">
-                <node concept="pncrf" id="7_KH4FOZRQA" role="2Oq$k0" />
-                <node concept="2qgKlT" id="7_KH4FOZSW8" role="2OqNvi">
-                  <ref role="37wK5l" to="eup9:1tylWje6zna" resolve="isMultiple" />
+              <node concept="1Wc70l" id="6_0HAqfDdFc" role="3clFbG">
+                <node concept="3fqX7Q" id="6_0HAqfDflD" role="3uHU7w">
+                  <node concept="2OqwBi" id="6_0HAqfDgj5" role="3fr31v">
+                    <node concept="pncrf" id="6_0HAqfDfL0" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="6_0HAqfDi13" role="2OqNvi">
+                      <ref role="3TsBF5" to="v7ag:6_0HAqfwGFL" resolve="singlePortAccess" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7_KH4FOZSdI" role="3uHU7B">
+                  <node concept="pncrf" id="7_KH4FOZRQA" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="7_KH4FOZSW8" role="2OqNvi">
+                    <ref role="37wK5l" to="eup9:1tylWje6zna" resolve="isMultiple" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -9928,14 +9938,8 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="1iCGBv" id="7_KH4FPGB6S" role="3EZMnx">
-        <ref role="1NtTu8" to="v7ag:7_KH4FPGAgt" resolve="portVarRef" />
-        <node concept="1sVBvm" id="7_KH4FPGB6V" role="1sWHZn">
-          <node concept="3F0A7n" id="7_KH4FPGByO" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
+      <node concept="3F1sOY" id="6_0HAqfOHif" role="3EZMnx">
+        <ref role="1NtTu8" to="v7ag:6_0HAqfOELN" resolve="portVarExpr" />
       </node>
       <node concept="3F0ifn" id="7_KH4FPNH9t" role="3EZMnx">
         <property role="3F0ifm" value=")" />
