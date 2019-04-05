@@ -11765,7 +11765,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="1tylWjerfOa">
-    <property role="TrG5h" value="check_PortTypeOpCallExpr" />
+    <property role="TrG5h" value="check_PortVarOpCallExpr" />
     <property role="3GE5qa" value="comp.runnable" />
     <node concept="3clFbS" id="1tylWjerfOb" role="18ibNy">
       <node concept="Jncv_" id="1tylWjerfSM" role="3cqZAp">
@@ -11776,7 +11776,7 @@
               <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
             </node>
             <node concept="1YBJjd" id="1tylWjerjhE" role="2Oq$k0">
-              <ref role="1YBMHb" node="1tylWjerfOd" resolve="portTypeOpCallExpr" />
+              <ref role="1YBMHb" node="1tylWjerfOd" resolve="portVarOpCallExpr" />
             </node>
           </node>
           <node concept="3JvlWi" id="1tylWjerfSR" role="2OqNvi" />
@@ -11786,7 +11786,7 @@
             <node concept="3clFbS" id="1tylWjerfSU" role="3clFbx">
               <node concept="2MkqsV" id="1tylWjerfSV" role="3cqZAp">
                 <node concept="1YBJjd" id="1tylWjerlI7" role="2OEOjV">
-                  <ref role="1YBMHb" node="1tylWjerfOd" resolve="portTypeOpCallExpr" />
+                  <ref role="1YBMHb" node="1tylWjerfOd" resolve="portVarOpCallExpr" />
                 </node>
                 <node concept="Xl_RD" id="1tylWjerfSX" role="2MkJ7o">
                   <property role="Xl_RC" value="multiple operation calls are only supported for operations returning void" />
@@ -11799,7 +11799,7 @@
                   <node concept="2OqwBi" id="1tylWjerfT1" role="2Oq$k0">
                     <node concept="2OqwBi" id="1tylWjerfT2" role="2Oq$k0">
                       <node concept="1YBJjd" id="1tylWjerkVS" role="2Oq$k0">
-                        <ref role="1YBMHb" node="1tylWjerfOd" resolve="portTypeOpCallExpr" />
+                        <ref role="1YBMHb" node="1tylWjerfOd" resolve="portVarOpCallExpr" />
                       </node>
                       <node concept="3TrEf2" id="1tylWjerfT4" role="2OqNvi">
                         <ref role="3Tt5mk" to="v7ag:71UKpntoo88" resolve="operation" />
@@ -11818,18 +11818,37 @@
               </node>
               <node concept="1Wc70l" id="1tylWjerfT8" role="3uHU7B">
                 <node concept="3fqX7Q" id="1tylWjerfT9" role="3uHU7B">
-                  <node concept="2OqwBi" id="1tylWjerfTa" role="3fr31v">
-                    <node concept="2OqwBi" id="1tylWjerfTb" role="2Oq$k0">
-                      <node concept="1YBJjd" id="1tylWjerk6M" role="2Oq$k0">
-                        <ref role="1YBMHb" node="1tylWjerfOd" resolve="portTypeOpCallExpr" />
+                  <node concept="1eOMI4" id="5na2xBQNShe" role="3fr31v">
+                    <node concept="22lmx$" id="5na2xBQNT4y" role="1eOMHV">
+                      <node concept="2OqwBi" id="1tylWjerfTa" role="3uHU7B">
+                        <node concept="2OqwBi" id="1tylWjerfTb" role="2Oq$k0">
+                          <node concept="1YBJjd" id="1tylWjerk6M" role="2Oq$k0">
+                            <ref role="1YBMHb" node="1tylWjerfOd" resolve="portVarOpCallExpr" />
+                          </node>
+                          <node concept="3TrEf2" id="1tylWjerfTd" role="2OqNvi">
+                            <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+                          </node>
+                        </node>
+                        <node concept="1mIQ4w" id="1tylWjerfTe" role="2OqNvi">
+                          <node concept="chp4Y" id="1tylWjerfTf" role="cj9EA">
+                            <ref role="cht4Q" to="yq40:5sJgLFR$y$1" resolve="ArrayAccessExpr" />
+                          </node>
+                        </node>
                       </node>
-                      <node concept="3TrEf2" id="1tylWjerfTd" role="2OqNvi">
-                        <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
-                      </node>
-                    </node>
-                    <node concept="1mIQ4w" id="1tylWjerfTe" role="2OqNvi">
-                      <node concept="chp4Y" id="1tylWjerfTf" role="cj9EA">
-                        <ref role="cht4Q" to="yq40:5sJgLFR$y$1" resolve="ArrayAccessExpr" />
+                      <node concept="2OqwBi" id="5na2xBQNUMs" role="3uHU7w">
+                        <node concept="2OqwBi" id="5na2xBQNUMt" role="2Oq$k0">
+                          <node concept="1YBJjd" id="5na2xBQNUMu" role="2Oq$k0">
+                            <ref role="1YBMHb" node="1tylWjerfOd" resolve="portVarOpCallExpr" />
+                          </node>
+                          <node concept="3TrEf2" id="5na2xBQNUMv" role="2OqNvi">
+                            <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+                          </node>
+                        </node>
+                        <node concept="1mIQ4w" id="5na2xBQNUMw" role="2OqNvi">
+                          <node concept="chp4Y" id="5na2xBQNVMy" role="cj9EA">
+                            <ref role="cht4Q" to="v7ag:5JgWygzYwVy" resolve="PortItExpression" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -11853,7 +11872,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="1tylWjerfOd" role="1YuTPh">
-      <property role="TrG5h" value="portTypeOpCallExpr" />
+      <property role="TrG5h" value="portVarOpCallExpr" />
       <ref role="1YaFvo" to="v7ag:1tylWjeqLRx" resolve="PortVarOpCallExpr" />
     </node>
   </node>
