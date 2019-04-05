@@ -304,9 +304,6 @@
         <reference id="6209278014151498296" name="protocolErrorMsgDef" index="3Z3Pdc" />
         <child id="4491876417845484926" name="contents" index="2EX0iN" />
       </concept>
-      <concept id="4491876417845484919" name="com.mbeddr.ext.components.structure.Interface" flags="ng" index="2EX0iU">
-        <property id="1539255704408883009" name="canBeUsedAsType" index="1M_7uD" />
-      </concept>
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
@@ -350,7 +347,7 @@
       <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
         <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
-      <concept id="3457272138385423166" name="com.mbeddr.ext.components.structure.ReqPortCardinality" flags="ng" index="1FEWAf">
+      <concept id="3457272138385423166" name="com.mbeddr.ext.components.structure.Cardinality" flags="ng" index="1FEWAf">
         <child id="2742494070477836211" name="upperBound" index="23vghw" />
         <child id="2798845822163873817" name="lowerBound" index="1_ZCXF" />
       </concept>
@@ -2301,7 +2298,6 @@
     <node concept="2EX0iR" id="3yeYUb95GER" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Adder" />
-      <property role="1M_7uD" value="true" />
       <node concept="2EX0iL" id="3yeYUb95GEV" role="2EX0iN">
         <property role="TrG5h" value="add" />
         <node concept="26Vqqz" id="7$$5StonVM8" role="2C2TGm">
