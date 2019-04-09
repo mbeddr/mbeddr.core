@@ -624,6 +624,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
+      <concept id="1181949435690" name="jetbrains.mps.lang.smodel.structure.Concept_NewInstance" flags="nn" index="LFhST" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
@@ -8100,6 +8101,16 @@
                     <node concept="3clFbS" id="4augEjZSVur" role="2LFqv$">
                       <node concept="3clFbJ" id="4augEjZSVus" role="3cqZAp">
                         <node concept="3clFbS" id="4augEjZSVut" role="3clFbx">
+                          <node concept="3SKdUt" id="4Wtj_w5XshQ" role="3cqZAp">
+                            <node concept="3SKdUq" id="4Wtj_w5XshR" role="3SKWNk">
+                              <property role="3SKdUp" value="use simple node instantiation instead of node factory as there is no need for node instance creation" />
+                            </node>
+                          </node>
+                          <node concept="3SKdUt" id="4Wtj_w5XFEP" role="3cqZAp">
+                            <node concept="3SKdUq" id="4Wtj_w5XFER" role="3SKWNk">
+                              <property role="3SKdUp" value="(methods of IMbeddrIDERoot should be anyway rather static concept methods than instance methods)" />
+                            </node>
+                          </node>
                           <node concept="3cpWs8" id="4augEjZSVuu" role="3cqZAp">
                             <node concept="3cpWsn" id="4augEjZSVuv" role="3cpWs9">
                               <property role="TrG5h" value="createNode" />
@@ -8108,20 +8119,14 @@
                               </node>
                               <node concept="1eOMI4" id="4augEjZSVux" role="33vP2m">
                                 <node concept="10QFUN" id="4augEjZSVuy" role="1eOMHV">
-                                  <node concept="2YIFZM" id="4augEjZSVuz" role="10QFUP">
-                                    <ref role="1Pybhc" to="zce0:~NodeFactoryManager" resolve="NodeFactoryManager" />
-                                    <ref role="37wK5l" to="zce0:~NodeFactoryManager.createNode(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SModel):org.jetbrains.mps.openapi.model.SNode" resolve="createNode" />
-                                    <node concept="2GrUjf" id="4augEjZSVu_" role="37wK5m">
-                                      <ref role="2Gs0qQ" node="4augEjZSVuq" resolve="rootConcept" />
-                                    </node>
-                                    <node concept="10Nm6u" id="4augEjZSVuB" role="37wK5m" />
-                                    <node concept="10Nm6u" id="4augEjZSVuC" role="37wK5m" />
-                                    <node concept="37vLTw" id="4augEjZSVuD" role="37wK5m">
-                                      <ref role="3cqZAo" node="1PMOMKdiLEH" resolve="model" />
-                                    </node>
-                                  </node>
                                   <node concept="3Tqbb2" id="4augEjZSVuE" role="10QFUM">
                                     <ref role="ehGHo" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
+                                  </node>
+                                  <node concept="2OqwBi" id="6r2FnBT8MIS" role="10QFUP">
+                                    <node concept="2GrUjf" id="4augEjZSVu_" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="4augEjZSVuq" resolve="rootConcept" />
+                                    </node>
+                                    <node concept="LFhST" id="6r2FnBTb2aa" role="2OqNvi" />
                                   </node>
                                 </node>
                               </node>
