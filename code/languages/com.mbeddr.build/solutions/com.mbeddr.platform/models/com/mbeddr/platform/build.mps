@@ -15196,12 +15196,6 @@
             <ref role="3bR37D" to="90a9:7TpiM9SsCWu" resolve="de.itemis.mps.mouselistener.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="36BjQjBL5YR" role="3bR37C">
-          <node concept="3bR9La" id="36BjQjBL5YS" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="2N1CSrzSJt4" resolve="com.mbeddr.mpsutil.plantuml.pluginSolution" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2DWJLXXAtVX" role="3bR37C">
           <node concept="3bR9La" id="2DWJLXXAtVY" role="1SiIV1">
             <property role="3bR36h" value="false" />
