@@ -30,8 +30,9 @@
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" />
+    <import index="yo81" ref="r:4ea5a78b-cb8a-4831-b227-f7860a22491d(jetbrains.mps.make.resources)" />
+    <import index="fy8e" ref="r:89c0fb70-0977-7777-a076-5906f9d8630f(jetbrains.mps.make.facets)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" implicit="true" />
-    <import index="fy8e" ref="r:89c0fb70-0977-7777-a076-5906f9d8630f(jetbrains.mps.make.facets)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1197,7 +1198,7 @@
                                 <node concept="10QFUN" id="5AsWgkJq08S" role="1eOMHV">
                                   <node concept="2OqwBi" id="5AsWgkJq08T" role="10QFUP">
                                     <node concept="37vLTw" id="5AsWgkJq08U" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="271UTRKXMp1" />
+                                      <ref role="3cqZAo" node="271UTRKXMp1" resolve="it" />
                                     </node>
                                     <node concept="liA8E" id="5AsWgkJq08V" role="2OqNvi">
                                       <ref role="37wK5l" to="tpcq:2Op6w9TzkM3" resolve="getModel" />
@@ -1215,7 +1216,7 @@
                                   <node concept="2OqwBi" id="271UTRKXQQI" role="3clFbG">
                                     <node concept="2OqwBi" id="271UTRKXNHj" role="2Oq$k0">
                                       <node concept="37vLTw" id="5AsWgkJq08X" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="5AsWgkJq08Q" />
+                                        <ref role="3cqZAo" node="5AsWgkJq08Q" resolve="model" />
                                       </node>
                                       <node concept="2RRcyG" id="271UTRKXNX8" role="2OqNvi">
                                         <ref role="2RRcyH" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
@@ -1241,7 +1242,7 @@
                                                         </node>
                                                         <node concept="2OqwBi" id="271UTRKO8aP" role="2Oq$k0">
                                                           <node concept="37vLTw" id="271UTRKPBdv" role="2Oq$k0">
-                                                            <ref role="3cqZAo" node="271UTRKXUlS" />
+                                                            <ref role="3cqZAo" node="271UTRKXUlS" resolve="config" />
                                                           </node>
                                                           <node concept="3TrEf2" id="271UTRKO8Ah" role="2OqNvi">
                                                             <ref role="3Tt5mk" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
@@ -1262,17 +1263,17 @@
                                                     <node concept="1pGfFk" id="271UTRKX0qE" role="2ShVmc">
                                                       <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
                                                       <node concept="2YIFZM" id="271UTRKGI03" role="37wK5m">
-                                                        <ref role="37wK5l" node="2DWJLXXzCiq" />
-                                                        <ref role="1Pybhc" node="6RvWQYjPIDF" />
+                                                        <ref role="37wK5l" node="2DWJLXXzCiq" resolve="getDocGenFolder" />
+                                                        <ref role="1Pybhc" node="6RvWQYjPIDF" resolve="GenerationHelper" />
                                                         <node concept="37vLTw" id="271UTRKUW_J" role="37wK5m">
-                                                          <ref role="3cqZAo" node="49PUF$HVrVy" />
+                                                          <ref role="3cqZAo" node="49PUF$HVrVy" resolve="module" />
                                                         </node>
                                                       </node>
                                                       <node concept="2OqwBi" id="271UTRKX29i" role="37wK5m">
                                                         <node concept="2OqwBi" id="271UTRKX29j" role="2Oq$k0">
                                                           <node concept="2OqwBi" id="271UTRKX29k" role="2Oq$k0">
                                                             <node concept="37vLTw" id="271UTRKX29l" role="2Oq$k0">
-                                                              <ref role="3cqZAo" node="271UTRKXUlS" />
+                                                              <ref role="3cqZAo" node="271UTRKXUlS" resolve="config" />
                                                             </node>
                                                             <node concept="3TrEf2" id="271UTRKX29m" role="2OqNvi">
                                                               <ref role="3Tt5mk" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
@@ -1297,10 +1298,10 @@
                                                       <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
                                                       <ref role="37wK5l" to="8oaq:~FileUtils.copyDirectory(java.io.File,java.io.File):void" resolve="copyDirectory" />
                                                       <node concept="37vLTw" id="271UTRKGPgx" role="37wK5m">
-                                                        <ref role="3cqZAo" node="271UTRKGL2b" />
+                                                        <ref role="3cqZAo" node="271UTRKGL2b" resolve="defaultImageFolder" />
                                                       </node>
                                                       <node concept="37vLTw" id="271UTRKGIwZ" role="37wK5m">
-                                                        <ref role="3cqZAo" node="271UTRKGI02" />
+                                                        <ref role="3cqZAo" node="271UTRKGI02" resolve="outputImgFolder" />
                                                       </node>
                                                     </node>
                                                   </node>
@@ -1319,7 +1320,7 @@
                                                         <property role="Xl_RC" value="Failed to copy default images folder to doc gen output" />
                                                       </node>
                                                       <node concept="37vLTw" id="271UTRKH58h" role="RRSow">
-                                                        <ref role="3cqZAo" node="271UTRKH3_x" />
+                                                        <ref role="3cqZAo" node="271UTRKH3_x" resolve="e" />
                                                       </node>
                                                     </node>
                                                   </node>
@@ -1332,7 +1333,7 @@
                                                   <node concept="2OqwBi" id="271UTRKWxqe" role="2Oq$k0">
                                                     <node concept="2OqwBi" id="271UTRKWuXA" role="2Oq$k0">
                                                       <node concept="37vLTw" id="271UTRKWuoK" role="2Oq$k0">
-                                                        <ref role="3cqZAo" node="271UTRKXUlS" />
+                                                        <ref role="3cqZAo" node="271UTRKXUlS" resolve="config" />
                                                       </node>
                                                       <node concept="3TrEf2" id="271UTRKWvRp" role="2OqNvi">
                                                         <ref role="3Tt5mk" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
@@ -1351,7 +1352,7 @@
                                               <node concept="2OqwBi" id="271UTRKRKmE" role="3uHU7B">
                                                 <node concept="2OqwBi" id="271UTRKRIvC" role="2Oq$k0">
                                                   <node concept="37vLTw" id="271UTRKRHYk" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="271UTRKXUlS" />
+                                                    <ref role="3cqZAo" node="271UTRKXUlS" resolve="config" />
                                                   </node>
                                                   <node concept="3TrEf2" id="271UTRKRJlI" role="2OqNvi">
                                                     <ref role="3Tt5mk" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
