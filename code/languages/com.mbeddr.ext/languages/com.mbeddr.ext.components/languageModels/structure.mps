@@ -308,6 +308,9 @@
     <node concept="PrWs8" id="6brBMefUdlt" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
+    <node concept="PrWs8" id="1tylWje6LQg" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkD8YC">
     <property role="3GE5qa" value="comp.ports" />
@@ -1449,7 +1452,7 @@
   <node concept="1TIwiD" id="3yeYUb95GGb">
     <property role="3GE5qa" value="comp" />
     <property role="TrG5h" value="PortAsValueExpression" />
-    <property role="34LRSv" value="port" />
+    <property role="34LRSv" value="port2val" />
     <property role="EcuMT" value="4075471389393865483" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="3yeYUb95GHe" role="1TKVEi">
@@ -2126,6 +2129,127 @@
     <property role="TrG5h" value="PortItExpression" />
     <property role="34LRSv" value="it" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="1tylWje4YbU">
+    <property role="EcuMT" value="1685005713372603130" />
+    <property role="3GE5qa" value="comp.ports.portType" />
+    <property role="TrG5h" value="PortType" />
+    <property role="R4oN_" value="a type that represents a required port" />
+    <property role="34LRSv" value="port type" />
+    <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
+    <node concept="PrWs8" id="1tylWje53pF" role="PzmwI">
+      <ref role="PrY4T" to="clbe:IPRL99KNBH" resolve="ICanReferToValueStructure" />
+    </node>
+    <node concept="PrWs8" id="1tylWje53pG" role="PzmwI">
+      <ref role="PrY4T" to="yq40:2Qo$Q2I7Rcd" resolve="ISelfTypingInArrayAccessExpression" />
+    </node>
+    <node concept="PrWs8" id="1tylWje53pH" role="PzmwI">
+      <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="INullableType" />
+    </node>
+    <node concept="1TJgyj" id="1tylWje6iOf" role="1TKVEi">
+      <property role="IQ2ns" value="1685005713372949775" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="port" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3TmmsQkD8YD" resolve="RequiredPort" />
+    </node>
+    <node concept="1TJgyj" id="1tylWjevCKj" role="1TKVEi">
+      <property role="IQ2ns" value="1685005713379593235" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3TmmsQkCzn9" resolve="Component" />
+    </node>
+    <node concept="1TJgyi" id="6_0HAqfwGFL" role="1TKVEl">
+      <property role="IQ2nx" value="7584262324102548209" />
+      <property role="TrG5h" value="singlePortAccess" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1tylWjeqLRx">
+    <property role="EcuMT" value="1685005713378319841" />
+    <property role="3GE5qa" value="comp.runnable" />
+    <property role="TrG5h" value="PortVarOpCallExpr" />
+    <ref role="1TJDcQ" node="71UKpntoo85" resolve="InterfaceOperationCallExpr" />
+  </node>
+  <node concept="1TIwiD" id="7_KH4FP4OP0">
+    <property role="EcuMT" value="8750692310013136192" />
+    <property role="TrG5h" value="ForEachPortVarStatement" />
+    <property role="3GE5qa" value="util" />
+    <property role="34LRSv" value="foreach port" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="7_KH4FP4OP2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8750692310013136194" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="7_KH4FP4OP3" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="7_KH4FP4OP4" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
+    </node>
+    <node concept="PrWs8" id="7_KH4FP4OP5" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+    </node>
+    <node concept="PrWs8" id="7_KH4FP4OP6" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
+    </node>
+    <node concept="PrWs8" id="7_KH4FP4OP7" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
+    </node>
+    <node concept="PrWs8" id="7_KH4FP4OP8" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:7k_CvRMnl1X" resolve="IBreakContainer" />
+    </node>
+    <node concept="1TJgyj" id="7_KH4FPfNm8" role="1TKVEi">
+      <property role="IQ2ns" value="8750692310016013704" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="portVarRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7_KH4FPG_3N">
+    <property role="3GE5qa" value="comp.runnable.whenconnected" />
+    <property role="TrG5h" value="WhenPortVarConnectedStatement" />
+    <property role="34LRSv" value="when (any) port connected" />
+    <property role="R4oN_" value="safety for optional ports" />
+    <property role="EcuMT" value="8750692310023557363" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="7_KH4FPG_3O" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8750692310023557364" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyj" id="7_KH4FPG_3P" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elsePart" />
+      <property role="IQ2ns" value="8750692310023557365" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyj" id="6_0HAqfOELN" role="1TKVEi">
+      <property role="IQ2ns" value="7584262324107783283" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="portVarExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="7_KH4FPG_3R" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:5Xsg2EBpBVN" resolve="IStatmentListContainer" />
+    </node>
+    <node concept="PrWs8" id="7_KH4FPG_3S" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="7_KH4FPG_3T" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
+    </node>
+    <node concept="PrWs8" id="7_KH4FPG_3U" role="PzmwI">
+      <ref role="PrY4T" node="4paRqaMe436" resolve="IConnectedCheck" />
+    </node>
   </node>
 </model>
 

@@ -2616,5 +2616,49 @@
       <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
+  <node concept="2S6QgY" id="7_KH4FPHpJ7">
+    <property role="3GE5qa" value="comp.runnable.whenconnected" />
+    <property role="TrG5h" value="addElseToWhenPortVarConnected" />
+    <ref role="2ZfgGC" to="v7ag:7_KH4FPG_3N" resolve="WhenPortVarConnectedStatement" />
+    <node concept="2S6ZIM" id="7_KH4FPHpJ8" role="2ZfVej">
+      <node concept="3clFbS" id="7_KH4FPHpJ9" role="2VODD2">
+        <node concept="3clFbF" id="7_KH4FPHpWB" role="3cqZAp">
+          <node concept="Xl_RD" id="7_KH4FPHpWC" role="3clFbG">
+            <property role="Xl_RC" value="Add Else" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7_KH4FPHpJa" role="2ZfgGD">
+      <node concept="3clFbS" id="7_KH4FPHpJb" role="2VODD2">
+        <node concept="3clFbF" id="7_KH4FPHy8l" role="3cqZAp">
+          <node concept="2OqwBi" id="7_KH4FPHy8m" role="3clFbG">
+            <node concept="2OqwBi" id="7_KH4FPHy8n" role="2Oq$k0">
+              <node concept="2Sf5sV" id="7_KH4FPHy8o" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7_KH4FPHy8p" role="2OqNvi">
+                <ref role="3Tt5mk" to="v7ag:7_KH4FPG_3P" resolve="elsePart" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="7_KH4FPHy8q" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="7_KH4FPHqdX" role="2ZfVeh">
+      <node concept="3clFbS" id="7_KH4FPHqdY" role="2VODD2">
+        <node concept="3clFbF" id="7_KH4FPHqlu" role="3cqZAp">
+          <node concept="3clFbC" id="7_KH4FPHx$E" role="3clFbG">
+            <node concept="10Nm6u" id="7_KH4FPHx_0" role="3uHU7w" />
+            <node concept="2OqwBi" id="7_KH4FPHqLG" role="3uHU7B">
+              <node concept="2Sf5sV" id="7_KH4FPHqlt" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7_KH4FPHsiV" role="2OqNvi">
+                <ref role="3Tt5mk" to="v7ag:7_KH4FPG_3P" resolve="elsePart" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
