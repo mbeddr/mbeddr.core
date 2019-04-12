@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Deploy JsonStubModel.plugin" type="MPS" factoryName="Deploy Plugins">
+    <MyState>
+      <option name="mySkipModulesLoading" value="false" />
+      <option name="myRestartCurrentInstance" value="true" />
+    </MyState>
+    <myPluginsSettings>
+      <MyState>
+        <option name="myPluginsToDeploy">
+          <list>
+            <option value="r:689e59a8-0877-4b88-924e-0b049041b6bf(com.mbeddr.mpsutil.json.stubs.build.build)/1993301723210411989" />
+          </list>
+        </option>
+      </MyState>
+    </myPluginsSettings>
+    <method v="2">
+      <option name="jetbrains.mps.execution.configurations.implementation.plugin.plugin.MakeDeployScripts_BeforeTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
