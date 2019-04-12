@@ -27343,44 +27343,39 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4KCBE0gt3gh" role="3cqZAp">
-          <node concept="3cpWsn" id="4KCBE0gt3gk" role="3cpWs9">
-            <property role="TrG5h" value="instanceConfig" />
-            <node concept="3Tqbb2" id="4KCBE0gt3gf" role="1tU5fm">
-              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+        <node concept="3cpWs8" id="1kyqAqH2Z3a" role="3cqZAp">
+          <node concept="3cpWsn" id="1kyqAqH2Z3b" role="3cpWs9">
+            <property role="TrG5h" value="genStrategy" />
+            <node concept="3Tqbb2" id="1kyqAqH2Z38" role="1tU5fm">
+              <ref role="ehGHo" to="p7vm:1OLGDVff_yJ" resolve="NoMwComponentsGenStrategy" />
             </node>
-            <node concept="2OqwBi" id="4KCBE0gt3OS" role="33vP2m">
-              <node concept="1PxgMI" id="4KCBE0gt3v0" role="2Oq$k0">
-                <node concept="2OqwBi" id="4KCBE0gt3v1" role="1m5AlR">
-                  <node concept="1PxgMI" id="4KCBE0gt3v2" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4KCBE0gt3v3" role="1m5AlR">
-                      <node concept="2OqwBi" id="4KCBE0gt3v4" role="2Oq$k0">
-                        <node concept="37vLTw" id="59fMuWJ4$gI" role="2Oq$k0">
-                          <ref role="3cqZAo" node="59fMuWJ4$gE" resolve="configContainers" />
-                        </node>
-                        <node concept="1uHKPH" id="4KCBE0gt3v8" role="2OqNvi" />
+            <node concept="1PxgMI" id="1kyqAqH2Z3c" role="33vP2m">
+              <node concept="2OqwBi" id="1kyqAqH2Z3d" role="1m5AlR">
+                <node concept="1PxgMI" id="1kyqAqH2Z3e" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1kyqAqH2Z3f" role="1m5AlR">
+                    <node concept="2OqwBi" id="1kyqAqH2Z3g" role="2Oq$k0">
+                      <node concept="37vLTw" id="1kyqAqH2Z3h" role="2Oq$k0">
+                        <ref role="3cqZAo" node="59fMuWJ4$gE" resolve="configContainers" />
                       </node>
-                      <node concept="2qgKlT" id="4KCBE0gt3v9" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:3R$6B6bL1DB" resolve="findItemOfType" />
-                        <node concept="3TUQnm" id="4KCBE0gt3va" role="37wK5m">
-                          <ref role="3TV0OU" to="v7ag:1OLGDVfeZ18" resolve="ComponentsConfigItem" />
-                        </node>
-                      </node>
+                      <node concept="1uHKPH" id="1kyqAqH2Z3i" role="2OqNvi" />
                     </node>
-                    <node concept="chp4Y" id="4KCBE0gt3vb" role="3oSUPX">
-                      <ref role="cht4Q" to="v7ag:1OLGDVfeZ18" resolve="ComponentsConfigItem" />
+                    <node concept="2qgKlT" id="1kyqAqH2Z3j" role="2OqNvi">
+                      <ref role="37wK5l" to="hwgx:3R$6B6bL1DB" resolve="findItemOfType" />
+                      <node concept="3TUQnm" id="1kyqAqH2Z3k" role="37wK5m">
+                        <ref role="3TV0OU" to="v7ag:1OLGDVfeZ18" resolve="ComponentsConfigItem" />
+                      </node>
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="4KCBE0gt3vc" role="2OqNvi">
-                    <ref role="3Tt5mk" to="v7ag:1OLGDVffrKn" resolve="genStrategy" />
+                  <node concept="chp4Y" id="1kyqAqH2Z3l" role="3oSUPX">
+                    <ref role="cht4Q" to="v7ag:1OLGDVfeZ18" resolve="ComponentsConfigItem" />
                   </node>
                 </node>
-                <node concept="chp4Y" id="4KCBE0gt3vd" role="3oSUPX">
-                  <ref role="cht4Q" to="p7vm:1OLGDVff_yJ" resolve="NoMwComponentsGenStrategy" />
+                <node concept="3TrEf2" id="1kyqAqH2Z3m" role="2OqNvi">
+                  <ref role="3Tt5mk" to="v7ag:1OLGDVffrKn" resolve="genStrategy" />
                 </node>
               </node>
-              <node concept="3TrEf2" id="4KCBE0gt4hw" role="2OqNvi">
-                <ref role="3Tt5mk" to="p7vm:1mfTBng0JlJ" resolve="instanceConfig" />
+              <node concept="chp4Y" id="1kyqAqH2Z3n" role="3oSUPX">
+                <ref role="cht4Q" to="p7vm:1OLGDVff_yJ" resolve="NoMwComponentsGenStrategy" />
               </node>
             </node>
           </node>
@@ -27390,11 +27385,16 @@
             <node concept="3clFbF" id="4KCBE0gt4QO" role="3cqZAp">
               <node concept="2OqwBi" id="4KCBE0gteaZ" role="3clFbG">
                 <node concept="2OqwBi" id="4KCBE0gt5n7" role="2Oq$k0">
-                  <node concept="37vLTw" id="4KCBE0gt4QM" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4KCBE0gt3gk" resolve="instanceConfig" />
-                  </node>
                   <node concept="2qgKlT" id="4KCBE0gtdEJ" role="2OqNvi">
                     <ref role="37wK5l" to="eup9:6JVEnxIhC2$" resolve="instances" />
+                  </node>
+                  <node concept="2OqwBi" id="1kyqAqH3gwP" role="2Oq$k0">
+                    <node concept="37vLTw" id="1kyqAqH3gwQ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1kyqAqH2Z3b" resolve="genStrategy" />
+                    </node>
+                    <node concept="3TrEf2" id="1kyqAqH3gwR" role="2OqNvi">
+                      <ref role="3Tt5mk" to="p7vm:1mfTBng0JlJ" resolve="instanceConfig" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2es0OD" id="4KCBE0gtoD$" role="2OqNvi">
@@ -27492,8 +27492,13 @@
                                   <node concept="2GrUjf" id="4KCBE0gtLxh" role="37wK5m">
                                     <ref role="2Gs0qQ" node="4KCBE0gtLwE" resolve="requiredPort" />
                                   </node>
-                                  <node concept="37vLTw" id="4KCBE0gtLxi" role="37wK5m">
-                                    <ref role="3cqZAo" node="4KCBE0gt3gk" resolve="instanceConfig" />
+                                  <node concept="2OqwBi" id="1kyqAqH3hJw" role="37wK5m">
+                                    <node concept="37vLTw" id="1kyqAqH3hJx" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="1kyqAqH2Z3b" resolve="genStrategy" />
+                                    </node>
+                                    <node concept="3TrEf2" id="1kyqAqH3hJy" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="p7vm:1mfTBng0JlJ" resolve="instanceConfig" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -27681,11 +27686,26 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="fJOzbTuy8d" role="3clFbw">
-            <node concept="37vLTw" id="fJOzbTuwsu" role="2Oq$k0">
-              <ref role="3cqZAo" node="4KCBE0gt3gk" resolve="instanceConfig" />
+          <node concept="1Wc70l" id="1kyqAqH3j66" role="3clFbw">
+            <node concept="2OqwBi" id="1kyqAqH3kHB" role="3uHU7B">
+              <node concept="37vLTw" id="1kyqAqH3kpU" role="2Oq$k0">
+                <ref role="3cqZAo" node="1kyqAqH2Z3b" resolve="genStrategy" />
+              </node>
+              <node concept="3TrcHB" id="1kyqAqH3rqr" role="2OqNvi">
+                <ref role="3TsBF5" to="p7vm:6PAG9z9V_Z3" resolve="removeUnusedRequiredPorts" />
+              </node>
             </node>
-            <node concept="3x8VRR" id="fJOzbTuRMF" role="2OqNvi" />
+            <node concept="2OqwBi" id="fJOzbTuy8d" role="3uHU7w">
+              <node concept="2OqwBi" id="1kyqAqH33cI" role="2Oq$k0">
+                <node concept="37vLTw" id="1kyqAqH32Zr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1kyqAqH2Z3b" resolve="genStrategy" />
+                </node>
+                <node concept="3TrEf2" id="1kyqAqH3gnj" role="2OqNvi">
+                  <ref role="3Tt5mk" to="p7vm:1mfTBng0JlJ" resolve="instanceConfig" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="fJOzbTuRMF" role="2OqNvi" />
+            </node>
           </node>
         </node>
       </node>
