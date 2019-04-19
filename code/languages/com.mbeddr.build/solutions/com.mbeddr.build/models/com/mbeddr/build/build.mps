@@ -11468,7 +11468,7 @@
               <node concept="2Ry0Ak" id="3xFG3bj5ccc" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="3xFG3bj5ccd" role="2Ry0An">
-                  <property role="2Ry0Am" value="testing" />
+                  <property role="2Ry0Am" value="com.mbeddr.analyses.cbmc.testing" />
                 </node>
               </node>
             </node>
@@ -11479,7 +11479,7 @@
           <node concept="2Ry0Ak" id="7eF9rfAuFyi" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="7eF9rfAuFyj" role="2Ry0An">
-              <property role="2Ry0Am" value="testing" />
+              <property role="2Ry0Am" value="com.mbeddr.analyses.cbmc.testing" />
               <node concept="2Ry0Ak" id="7eF9rfAuFyk" role="2Ry0An">
                 <property role="2Ry0Am" value="com.mbeddr.analyses.cbmc.testing.mpl" />
               </node>
