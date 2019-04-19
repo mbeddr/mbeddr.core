@@ -23,6 +23,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.core/com.mbeddr.analyses.cbmc.core.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.rt/rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines/com.mbeddr.analyses.cbmc.statemachines.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.testsgen.testing/com.mbeddr.analyses.cbmc.testsgen.testing.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.testsgen/com.mbeddr.analyses.cbmc.testsgen.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.verification_case/com.mbeddr.analyses.cbmc.verification_case.mpl" folder="cbmc" />
@@ -39,7 +40,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.stan/com.mbeddr.analyses.stan.mpl" folder="z3" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.utils/utils.msd" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.z3.testing/com.mbeddr.analyses.z3.testing.mpl" folder="z3" />
-      <modulePath path="$PROJECT_DIR$/languages/testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.acsl.cbmc.rt/com.mbeddr.analyses.acsl.cbmc.rt.msd" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.rt/com.mbeddr.analyses.cbmc.components.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.core.pluginSolution/com.mbeddr.analyses.cbmc.core.pluginSolution.msd" folder="cbmc" />
