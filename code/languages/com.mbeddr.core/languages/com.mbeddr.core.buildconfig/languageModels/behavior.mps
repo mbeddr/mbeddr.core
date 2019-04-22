@@ -7082,12 +7082,6 @@
     </node>
     <node concept="3Tm1VV" id="5Dpaey8tcmX" role="1B3o_S" />
   </node>
-  <node concept="13h7C7" id="4_vItr5czB0">
-    <ref role="13h7C2" to="51wr:4_vItr5czAZ" resolve="IHostTargetAwarePicker" />
-    <node concept="13hLZK" id="4_vItr5czB1" role="13h7CW">
-      <node concept="3clFbS" id="4_vItr5czB2" role="2VODD2" />
-    </node>
-  </node>
   <node concept="312cEu" id="6VqaxF9qVvF">
     <property role="TrG5h" value="MakeVariableHelper" />
     <node concept="2tJIrI" id="6VqaxF9qVwt" role="jymVt" />

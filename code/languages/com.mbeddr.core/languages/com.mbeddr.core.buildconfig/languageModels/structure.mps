@@ -643,10 +643,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="PlHQZ" id="4_vItr5czAZ">
-    <property role="EcuMT" value="5287148819638794687" />
-    <property role="TrG5h" value="IHostTargetAwarePicker" />
-  </node>
   <node concept="1TIwiD" id="1hPQTEM4W9y">
     <property role="EcuMT" value="1474325910492791394" />
     <property role="TrG5h" value="MakeTimeDirPicker" />
