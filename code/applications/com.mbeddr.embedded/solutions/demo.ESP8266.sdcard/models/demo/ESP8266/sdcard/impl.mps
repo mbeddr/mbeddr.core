@@ -88,6 +88,7 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="1553713790141527405" name="wireStatically" index="35zhco" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
         <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
@@ -123,11 +124,6 @@
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
-      </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty_old" index="3kgbRO" />
-        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile_old" index="1RwFax" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -175,9 +171,9 @@
       </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpW">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRP" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFay" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
       <concept id="4881264737620519319" name="com.mbeddr.mpsutil.filepicker.structure.FileSystemDirPicker" flags="ng" index="3RfPnX" />
     </language>
@@ -695,6 +691,7 @@
       <node concept="3i3YCL" id="7e09zBHKWq$" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="35zhco" value="true" />
+        <property role="2$yeXr" value="true" />
         <ref role="35zhcq" node="7e09zBHKLKQ" resolve="instances" />
       </node>
     </node>
@@ -749,19 +746,12 @@
     </node>
     <node concept="12Zzt7" id="4b64BCbhbMh" role="2AWWZH">
       <property role="12ZUz5" value="/dev/tty.SLAB_USBtoUART" />
-      <node concept="3RfPnX" id="4b64BCbhbMi" role="3b$Y35">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="/Volumes/ESP-SDK/esp-open-sdk/sdk" />
-      </node>
       <node concept="3RfPnX" id="4b64BCbhbMj" role="3b_1_b">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="/Volumes/ESP-SDK/esp-open-sdk/xtensa-lx106-elf/bin" />
+      </node>
+      <node concept="3RfPnX" id="2N9rEs5Ily" role="3b$Y35">
+        <property role="1RwFax" value="true" />
       </node>
     </node>
   </node>
