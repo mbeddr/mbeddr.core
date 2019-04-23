@@ -198,7 +198,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="5692182839349412519" name="jetbrains.mps.lang.smodel.structure.Reference_GetRoleOperation" flags="nn" index="90r25" />
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
@@ -208,6 +207,7 @@
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -1098,7 +1098,7 @@
           <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
         </node>
         <node concept="liA8E" id="4glh_Dchqa2" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
           <node concept="2OqwBi" id="4glh_DchqKb" role="37wK5m">
             <node concept="14b0Wr" id="4glh_Dchqxa" role="2Oq$k0">
               <ref role="14b0Uw" node="75_oBQVK55f" resolve="reference" />
@@ -1182,10 +1182,10 @@
               <node concept="14b0Wr" id="75_oBQV_v_t" role="2Oq$k0">
                 <ref role="14b0Uw" node="3ZnFyBjojbx" resolve="node" />
               </node>
-              <node concept="25OxAV" id="XSoA18NvUG" role="2OqNvi" />
+              <node concept="2NL2c5" id="2Fugwv5LwFU" role="2OqNvi" />
             </node>
-            <node concept="3TrcHB" id="XSoA18Nwzx" role="2OqNvi">
-              <ref role="3TsBF5" to="tpce:fA0kJcN" resolve="role" />
+            <node concept="liA8E" id="2Fugwv5Lxwa" role="2OqNvi">
+              <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
             </node>
           </node>
           <node concept="Xl_RD" id="75_oBQV_vWo" role="3uHU7w">

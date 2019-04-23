@@ -162,7 +162,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -265,15 +264,6 @@
       <ref role="13i0hy" to="tp5o:1kgh5YabdhC" resolve="perform" />
       <node concept="3Tm1VV" id="Uhkfo4FJjb" role="1B3o_S" />
       <node concept="3clFbS" id="Uhkfo4FJjg" role="3clF47">
-        <node concept="3clFbF" id="Uhkfo4G1II" role="3cqZAp">
-          <node concept="2OqwBi" id="Uhkfo4G1yT" role="3clFbG">
-            <node concept="37vLTw" id="Uhkfo4G1xz" role="2Oq$k0">
-              <ref role="3cqZAo" node="Uhkfo4FJjh" resolve="node" />
-            </node>
-            <node concept="25OxAV" id="Uhkfo4G1C7" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="Uhkfo4G1GE" role="3cqZAp" />
         <node concept="3cpWs8" id="Uhkfo4G4ph" role="3cqZAp">
           <node concept="3cpWsn" id="Uhkfo4G4pi" role="3cpWs9">
             <property role="TrG5h" value="scope" />
