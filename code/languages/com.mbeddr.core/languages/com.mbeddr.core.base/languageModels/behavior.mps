@@ -412,12 +412,6 @@
         <child id="2034914114981261755" name="throwable" index="RRSow" />
         <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
@@ -11868,18 +11862,17 @@
               </node>
             </node>
             <node concept="3clFbS" id="aUl3uPFkiq" role="TDEfX">
-              <node concept="34ab3g" id="aUl3uPFkir" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="2OqwBi" id="aUl3uPFkis" role="34bqiv">
+              <node concept="RRSsy" id="2Fugwv5RJDi" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="2OqwBi" id="aUl3uPFkis" role="RRSoy">
                   <node concept="37vLTw" id="aUl3uPFkit" role="2Oq$k0">
                     <ref role="3cqZAo" node="aUl3uPFkio" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="aUl3uPFkiu" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="aUl3uPFkiv" role="34bMjA">
+                <node concept="37vLTw" id="aUl3uPFkiv" role="RRSow">
                   <ref role="3cqZAo" node="aUl3uPFkio" resolve="ex" />
                 </node>
               </node>
