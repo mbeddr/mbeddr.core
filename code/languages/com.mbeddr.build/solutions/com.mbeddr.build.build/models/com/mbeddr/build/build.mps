@@ -893,6 +893,28 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="4IfjsNglHld" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="demo.expr.interpreter" />
+        <property role="3LESm3" value="48fdbef2-9bd5-4067-a355-93c33f43a193" />
+        <node concept="398BVA" id="4IfjsNglHC5" role="3LF7KH">
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+          <node concept="2Ry0Ak" id="4IfjsNglHC6" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4IfjsNglHC7" role="2Ry0An">
+              <property role="2Ry0Am" value="demo.expr.interpreter" />
+              <node concept="2Ry0Ak" id="4IfjsNglHCp" role="2Ry0An">
+                <property role="2Ry0Am" value="demo.expr.interpreter.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4IfjsNglHCu" role="3bR37C">
+          <node concept="3bR9La" id="4IfjsNglHCv" role="1SiIV1">
+            <ref role="3bR37D" node="360sibZuf$y" resolve="demo.expr" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="1yRuzdJ_WVY" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="mbeddr.tutorial.layers" />
@@ -1156,6 +1178,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4IfjsNglHCC" role="3bR37C">
+          <node concept="3bR9La" id="4IfjsNglHCD" role="1SiIV1">
+            <ref role="3bR37D" node="4IfjsNglHld" resolve="demo.expr.interpreter" />
           </node>
         </node>
       </node>
