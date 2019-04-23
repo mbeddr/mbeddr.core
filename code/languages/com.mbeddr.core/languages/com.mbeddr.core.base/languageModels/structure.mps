@@ -1363,61 +1363,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5lKnBeAtNw8">
-    <property role="TrG5h" value="AbstractPicker_old" />
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="6156524541422549000" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5lKnBeAtODI" role="1TKVEl">
-      <property role="TrG5h" value="path_old" />
-      <property role="IQ2nx" value="6156524541422553710" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="7CLMy5mpPoI" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.AbstractPicker&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="2mxBqli8MW4" role="1TKVEl">
-      <property role="TrG5h" value="pointOnlyToExistingFile_old" />
-      <property role="IQ2nx" value="2711621784026951428" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="7CLMy5mpPoN" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.AbstractPicker&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="x1qBkorxt" role="1TKVEl">
-      <property role="TrG5h" value="mayBeEmpty_old" />
-      <property role="IQ2nx" value="9294901202237533" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="7CLMy5mpPoS" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.AbstractPicker&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="7CLMy5mpPnC" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5lKnBeAxLdJ">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="SolutionRelativeFilePicker_old" />
-    <property role="34LRSv" value="solution relative file picker" />
-    <property role="EcuMT" value="6156524541423588207" />
-    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPo$" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2iGZqsHuOWj">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="SolutionRelativeDirPicker_old" />
-    <property role="34LRSv" value="solution relative dir picker" />
-    <property role="EcuMT" value="2642765975824060179" />
-    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPoq" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="DubiFAXpld">
     <property role="3GE5qa" value="chunk" />
     <property role="TrG5h" value="DefaultGenericChunkDependency" />
@@ -1513,24 +1458,6 @@
     <property role="EcuMT" value="176285146686936640" />
     <node concept="PrWs8" id="9MiAwFsXuS" role="PrDN$">
       <ref role="PrY4T" node="7NyyyjNt9Bq" resolve="ITreeViewable" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7c_RIoB8H2I">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="MacroFilePicker_old" />
-    <property role="34LRSv" value="macro file picker" />
-    <property role="EcuMT" value="8297282968580444334" />
-    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker_old" />
-    <node concept="1TJgyi" id="7c_RIoB8OqH" role="1TKVEl">
-      <property role="TrG5h" value="macro_old" />
-      <property role="IQ2nx" value="8297282968580474541" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="7CLMy5mpPoX" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.MacroFilePicker&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="7CLMy5mpPo6" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="GKLijSvTd0">
@@ -1866,66 +1793,6 @@
   <node concept="PlHQZ" id="6ucVliiGuzs">
     <property role="TrG5h" value="ISuppressStaticEvalWarnings" />
     <property role="EcuMT" value="7461599630140238044" />
-  </node>
-  <node concept="1TIwiD" id="4eXJ6EO9ZKx">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="MacroFolderPicker_old" />
-    <property role="34LRSv" value="macro folder picker" />
-    <property role="EcuMT" value="4881264737614560289" />
-    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
-    <node concept="1TJgyi" id="4eXJ6EO9ZKy" role="1TKVEl">
-      <property role="TrG5h" value="macro_old" />
-      <property role="IQ2nx" value="4881264737614560290" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="7CLMy5mpPp2" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.MacroFolderPicker&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="7CLMy5mpPog" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4eXJ6EOwIAn">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="FileSystemDirPicker_old" />
-    <property role="34LRSv" value="file system dir picker" />
-    <property role="EcuMT" value="4881264737620519319" />
-    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPnM" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1jw2PJJHS3i">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="FileSystemFilePicker_old" />
-    <property role="34LRSv" value="file system file picker" />
-    <property role="EcuMT" value="1504214765033455826" />
-    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPnW" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5Wocj7wnolM">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="AbstractFolderPicker_old" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="6852280923331593586" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPnu" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5Wocj7wnotA">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="AbstractFilePicker_old" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="6852280923331594086" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPnk" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
   </node>
   <node concept="PlHQZ" id="3RtPbXOi5Ir">
     <property role="3GE5qa" value="commenting" />
