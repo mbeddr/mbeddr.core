@@ -475,7 +475,7 @@
       <concept id="4254343767721607990" name="de.itemis.mps.editor.diagram.structure.Parameter_PaletteFolder_TargetNode" flags="ng" index="3SuZgF" />
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
-      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ng" index="s8sZD" />
+      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
       <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
         <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
         <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
@@ -487,7 +487,6 @@
       <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -504,6 +503,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
@@ -1119,11 +1119,16 @@
                             <ref role="37wK5l" to="qd6m:2$xXL4HCFy0" resolve="getActualsLink" />
                           </node>
                         </node>
-                        <node concept="2OqwBi" id="2$xXL4HtRNL" role="3uHU7B">
-                          <node concept="37vLTw" id="2$xXL4HtRNM" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2$xXL4HtRNU" resolve="it" />
+                        <node concept="2OqwBi" id="2Fugwv5Y8es" role="3uHU7B">
+                          <node concept="2OqwBi" id="2$xXL4HtRNL" role="2Oq$k0">
+                            <node concept="37vLTw" id="2$xXL4HtRNM" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2$xXL4HtRNU" resolve="it" />
+                            </node>
+                            <node concept="2NL2c5" id="2Fugwv5Y4rh" role="2OqNvi" />
                           </node>
-                          <node concept="25OxAV" id="2$xXL4HtRNN" role="2OqNvi" />
+                          <node concept="liA8E" id="2Fugwv5YeTv" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode()" resolve="getDeclarationNode" />
+                          </node>
                         </node>
                       </node>
                       <node concept="2OqwBi" id="2$xXL4HtRNO" role="3uHU7B">
