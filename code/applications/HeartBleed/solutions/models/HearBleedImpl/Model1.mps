@@ -16,6 +16,9 @@
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
+      <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
+        <child id="8850915533694634146" name="elements" index="3o3WLE" />
+      </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
@@ -42,7 +45,7 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
+      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
@@ -94,9 +97,11 @@
         <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
         <property id="8327535879610783060" name="sliceFormula" index="2l50Mm" />
         <property id="8327535879610145579" name="analysisDepth" index="2lUGbD" />
+        <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
       </concept>
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
@@ -201,7 +206,6 @@
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
-      <concept id="1664480272136207708" name="com.mbeddr.core.expressions.structure.CharType" flags="ng" index="biTqx" />
       <concept id="8864856114140038681" name="com.mbeddr.core.expressions.structure.DoubleType" flags="ng" index="2fgwQN" />
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
@@ -241,6 +245,7 @@
       </concept>
       <concept id="8863019357864392148" name="com.mbeddr.core.expressions.structure.SizeT" flags="ng" index="2O5j3L" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
+      <concept id="3390250080473522603" name="com.mbeddr.core.expressions.structure.SignedCharType" flags="ng" index="1dkrvn" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="4739982148980385695" name="com.mbeddr.core.expressions.structure.FloatType" flags="ng" index="3AreGT" />
       <concept id="6610873504380029780" name="com.mbeddr.core.expressions.structure.CastExpression" flags="ng" index="1S8S4T">
@@ -375,6 +380,11 @@
             <property role="2c7vTL" value="false" />
             <ref role="1sgJKq" node="4yOgC5DNkyx" resolve="HeartbeatMessage" />
           </node>
+          <node concept="3o3WLD" id="2N9rEs48Mz" role="3XIe9u">
+            <node concept="3TlMh9" id="2N9rEs48Ne" role="3o3WLE">
+              <property role="2hmy$m" value="0" />
+            </node>
+          </node>
         </node>
         <node concept="1QiMYF" id="1W6K2BBAtT9" role="3XIRFZ">
           <node concept="OjmMv" id="1W6K2BBAtTb" role="3SJzmv">
@@ -438,6 +448,11 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
             <ref role="1sgJKq" node="4yOgC5DNkFg" resolve="SSL3_RECORD" />
+          </node>
+          <node concept="3o3WLD" id="2N9rEs48_7" role="3XIe9u">
+            <node concept="3TlMh9" id="2N9rEs48FY" role="3o3WLE">
+              <property role="2hmy$m" value="0" />
+            </node>
           </node>
         </node>
         <node concept="1_9egQ" id="1W6K2BB_TyU" role="3XIRFZ">
@@ -1074,10 +1089,7 @@
     </node>
     <node concept="MXy$U" id="4yOgC5DNb7v" role="MXv61">
       <property role="MzQRn" value="true" />
-      <node concept="biTqx" id="4yOgC5DNb7t" role="15Utuf">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
+      <node concept="1dkrvn" id="2N9rEs45Tx" role="15Utuf" />
       <node concept="26Vqqz" id="4yOgC5DNb7u" role="15Utue">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -1248,57 +1260,6 @@
       <node concept="2Q9FjX" id="4yOgC5DNTXc" role="2Q9FjI" />
     </node>
   </node>
-  <node concept="3V_BKJ" id="4yOgC5DNkNM">
-    <property role="TrG5h" value="Analyses" />
-    <node concept="3GEVxB" id="4yOgC5DNkNN" role="3W6d8T">
-      <ref role="3GEb4d" node="4yOgC5DNb4L" resolve="HeartBleed" />
-    </node>
-    <node concept="1nvAUE" id="4efBVmuwCHh" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <property role="1nvAU_" value="true" />
-      <property role="1nvAUF" value="true" />
-      <property role="1nvAUw" value="true" />
-      <property role="1nvAU$" value="true" />
-      <property role="1nvAUA" value="true" />
-      <property role="1nvAUB" value="true" />
-      <ref role="3V$Cn$" node="1W6K2BB_NAm" resolve="verification" />
-    </node>
-    <node concept="1nvAUE" id="52Ex71yjdSy" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <property role="1nvAU_" value="true" />
-      <property role="1nvAUF" value="true" />
-      <property role="1nvAUw" value="true" />
-      <property role="1nvAU$" value="true" />
-      <property role="1nvAUA" value="true" />
-      <property role="1nvAUB" value="true" />
-      <ref role="3V$Cn$" node="1nKwQCIU2W7" resolve="verificationFixed" />
-    </node>
-    <node concept="1nvAUE" id="52Ex71yjAJf" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <property role="1nvAUw" value="true" />
-      <property role="1nvAU$" value="true" />
-      <property role="1nvAUA" value="true" />
-      <property role="1nvAUB" value="true" />
-      <property role="1nvAU_" value="true" />
-      <property role="1nvAUF" value="true" />
-      <ref role="3V$Cn$" node="21ftQP2zJmX" resolve="testRobustness" />
-    </node>
-  </node>
   <node concept="rcWEw" id="4yOgC5DNUtG">
     <property role="TrG5h" value="string" />
     <node concept="2NXPZ9" id="4yOgC5DNUv9" role="N3F5h">
@@ -1390,6 +1351,63 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3uEX16" id="2N9rEs47IR">
+    <property role="2l50Ka" value="none" />
+    <property role="2l50Km" value="none" />
+    <property role="2lUGeZ" value="true" />
+    <property role="2lUHrg" value="25" />
+    <property role="2lUGe1" value="true" />
+    <property role="2lUGbD" value="none" />
+    <property role="TrG5h" value="Analyses" />
+    <node concept="1nvAUE" id="2N9rEs47IS" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2l50Mm" value="false" />
+      <property role="1nvAU_" value="true" />
+      <property role="1nvAUF" value="true" />
+      <property role="1nvAUw" value="true" />
+      <property role="1nvAU$" value="true" />
+      <property role="1nvAUA" value="true" />
+      <property role="1nvAUB" value="true" />
+      <ref role="3V$Cn$" node="1W6K2BB_NAm" resolve="verification" />
+    </node>
+    <node concept="1nvAUE" id="2N9rEs47IT" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2l50Mm" value="false" />
+      <property role="1nvAU_" value="true" />
+      <property role="1nvAUF" value="true" />
+      <property role="1nvAUw" value="true" />
+      <property role="1nvAU$" value="true" />
+      <property role="1nvAUA" value="true" />
+      <property role="1nvAUB" value="true" />
+      <ref role="3V$Cn$" node="1nKwQCIU2W7" resolve="verificationFixed" />
+    </node>
+    <node concept="1nvAUE" id="2N9rEs47IU" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2l50Mm" value="false" />
+      <property role="1nvAUw" value="true" />
+      <property role="1nvAU$" value="true" />
+      <property role="1nvAUA" value="true" />
+      <property role="1nvAUB" value="true" />
+      <property role="1nvAU_" value="true" />
+      <property role="1nvAUF" value="true" />
+      <ref role="3V$Cn$" node="21ftQP2zJmX" resolve="testRobustness" />
+    </node>
+    <node concept="3GEVxB" id="2N9rEs47J4" role="3W6d8T">
+      <ref role="3GEb4d" node="4yOgC5DNb4L" resolve="HeartBleed" />
     </node>
   </node>
 </model>
