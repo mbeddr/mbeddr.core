@@ -850,8 +850,8 @@
                           <node concept="37vLTw" id="2WJ8cS_wlw$" role="2Oq$k0">
                             <ref role="3cqZAo" node="2WJ8cS_wlwA" resolve="it" />
                           </node>
-                          <node concept="3TrcHB" id="2WJ8cS_wlw_" role="2OqNvi">
-                            <ref role="3TsBF5" to="tp25:v3WHCwUoyi" resolve="fqName" />
+                          <node concept="3TrcHB" id="7d6ZyVlXBQn" role="2OqNvi">
+                            <ref role="3TsBF5" to="tp25:v3WHCwUiHA" resolve="name" />
                           </node>
                         </node>
                       </node>
