@@ -429,7 +429,7 @@
               <ref role="3cqZAo" node="opE5jFfT5$" resolve="link" />
             </node>
             <node concept="liA8E" id="7d6ZyVlYcYa" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional()" resolve="isOptional" />
+              <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional():boolean" resolve="isOptional" />
             </node>
           </node>
           <node concept="3eNFk2" id="opE5jFfT5X" role="3eNLev">
@@ -455,7 +455,7 @@
                   <ref role="3cqZAo" node="opE5jFfT5$" resolve="link" />
                 </node>
                 <node concept="liA8E" id="7d6ZyVlYfwq" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple()" resolve="isMultiple" />
+                  <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple():boolean" resolve="isMultiple" />
                 </node>
               </node>
             </node>

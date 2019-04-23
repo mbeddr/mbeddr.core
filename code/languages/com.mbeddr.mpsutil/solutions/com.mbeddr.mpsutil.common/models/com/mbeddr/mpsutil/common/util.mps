@@ -1200,7 +1200,7 @@
             </node>
             <node concept="2YIFZM" id="3JMPeKaHTii" role="33vP2m">
               <ref role="1Pybhc" to="3o3z:~Lists" resolve="Lists" />
-              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Iterable)" resolve="newArrayList" />
+              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Iterable):java.util.ArrayList" resolve="newArrayList" />
               <node concept="2OqwBi" id="3JMPeKaHTij" role="37wK5m">
                 <node concept="2JrnkZ" id="3JMPeKaHTik" role="2Oq$k0">
                   <node concept="37vLTw" id="3JMPeKaHTil" role="2JrQYb">
@@ -1222,7 +1222,7 @@
             </node>
             <node concept="2YIFZM" id="3JMPeKaHTir" role="33vP2m">
               <ref role="1Pybhc" to="3o3z:~Lists" resolve="Lists" />
-              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Iterable)" resolve="newArrayList" />
+              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Iterable):java.util.ArrayList" resolve="newArrayList" />
               <node concept="2OqwBi" id="3JMPeKaHTis" role="37wK5m">
                 <node concept="2JrnkZ" id="3JMPeKaHTit" role="2Oq$k0">
                   <node concept="37vLTw" id="3JMPeKaHTiu" role="2JrQYb">

@@ -1659,7 +1659,7 @@
                   <node concept="2yIwOk" id="1e1skYm3cnJ" role="2OqNvi" />
                 </node>
                 <node concept="liA8E" id="1e1skYm3cQp" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName()" resolve="getQualifiedName" />
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
                 </node>
               </node>
               <node concept="Xl_RD" id="1VQvajLb14J" role="3uHU7B">

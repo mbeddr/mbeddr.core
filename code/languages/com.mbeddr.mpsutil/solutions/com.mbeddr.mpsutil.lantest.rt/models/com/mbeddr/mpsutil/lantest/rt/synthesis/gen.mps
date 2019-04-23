@@ -3538,7 +3538,7 @@
                 <node concept="2NL2c5" id="2Fugwv5I4Rd" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="2Fugwv5ESR0" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple()" resolve="isMultiple" />
+                <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple():boolean" resolve="isMultiple" />
               </node>
             </node>
           </node>

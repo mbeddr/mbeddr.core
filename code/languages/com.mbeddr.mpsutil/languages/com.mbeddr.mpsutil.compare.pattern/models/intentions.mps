@@ -473,7 +473,7 @@
                   <node concept="2NL2c5" id="2Fugwv5FjbP" role="2OqNvi" />
                 </node>
                 <node concept="liA8E" id="2Fugwv5Fl1U" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="359W_D" id="2Fugwv5Flxn" role="37wK5m">
                     <ref role="359W_E" to="iqxq:35E98Eq2KJO" resolve="IInitPart" />
                     <ref role="359W_F" to="iqxq:4IP40Bi2KcQ" resolve="expression" />
@@ -493,7 +493,7 @@
                 <node concept="2NL2c5" id="2Fugwv5FbH8" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="2Fugwv5FdE7" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="359W_D" id="2Fugwv5Feer" role="37wK5m">
                   <ref role="359W_E" to="iqxq:53_zXRSOXY" resolve="PatternBuilderList" />
                   <ref role="359W_F" to="iqxq:76efOMRCHWN" resolve="nodes" />

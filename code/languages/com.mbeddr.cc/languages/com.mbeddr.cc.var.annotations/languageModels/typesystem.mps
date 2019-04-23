@@ -424,7 +424,7 @@
                     <node concept="2NL2c5" id="7d6ZyVlYiVt" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="7d6ZyVlYkCv" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
+                    <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                   </node>
                 </node>
               </node>
@@ -438,7 +438,7 @@
                         <ref role="3cqZAo" node="4CJNaUzzdUK" resolve="concept" />
                       </node>
                       <node concept="liA8E" id="7d6ZyVlYoN1" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="4CJNaUzzdVh" role="3uHU7B">

@@ -3027,11 +3027,11 @@
                                           <node concept="pncrf" id="6V2RU6UyFep" role="2JrQYb" />
                                         </node>
                                         <node concept="liA8E" id="6V2RU6UyLAm" role="2OqNvi">
-                                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
+                                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="6V2RU6UyN$L" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+                                        <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                                       </node>
                                     </node>
                                   </node>

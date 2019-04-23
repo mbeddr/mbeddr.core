@@ -227,7 +227,7 @@
       </concept>
     </language>
     <language id="935bff03-e393-4547-a3a2-60335e0cad25" name="com.mbeddr.mpsutil.ccmenu">
-      <concept id="3038639843201572219" name="com.mbeddr.mpsutil.ccmenu.structure.QueryActionSource" flags="ng" index="2GiVuH" />
+      <concept id="3038639843201572219" name="com.mbeddr.mpsutil.ccmenu.structure.QueryActionSource" flags="ig" index="2GiVuH" />
       <concept id="3038639843205590313" name="com.mbeddr.mpsutil.ccmenu.structure.Parameter_ContextCell" flags="ng" index="2GHkvZ" />
       <concept id="6243347984996272104" name="com.mbeddr.mpsutil.ccmenu.structure.CCMenuExtensions" flags="ng" index="2Kv_g1">
         <child id="3038639843201565383" name="extensions" index="2GiUwh" />
@@ -3377,7 +3377,7 @@
                                           <node concept="2NL2c5" id="2Fugwv5ERUl" role="2OqNvi" />
                                         </node>
                                         <node concept="liA8E" id="2Fugwv5ESR0" role="2OqNvi">
-                                          <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple()" resolve="isMultiple" />
+                                          <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple():boolean" resolve="isMultiple" />
                                         </node>
                                       </node>
                                     </node>

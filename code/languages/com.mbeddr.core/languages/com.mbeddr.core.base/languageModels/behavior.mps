@@ -11869,7 +11869,7 @@
                     <ref role="3cqZAo" node="aUl3uPFkio" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="aUl3uPFkiu" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="aUl3uPFkiv" role="RRSow">

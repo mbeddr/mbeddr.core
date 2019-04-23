@@ -2383,7 +2383,7 @@
                     </node>
                     <node concept="2OqwBi" id="2Fugwv5HMlS" role="1m5AlR">
                       <node concept="liA8E" id="2Fugwv5HMlT" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode()" resolve="getDeclarationNode" />
+                        <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
                       </node>
                       <node concept="2OqwBi" id="2Fugwv5HMlU" role="2Oq$k0">
                         <node concept="37vLTw" id="2Fugwv5HMlV" role="2Oq$k0">
@@ -2431,7 +2431,7 @@
                           <node concept="2NL2c5" id="2Fugwv5HODK" role="2OqNvi" />
                         </node>
                         <node concept="liA8E" id="2Fugwv5HQZp" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode()" resolve="getDeclarationNode" />
+                          <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
                         </node>
                       </node>
                     </node>

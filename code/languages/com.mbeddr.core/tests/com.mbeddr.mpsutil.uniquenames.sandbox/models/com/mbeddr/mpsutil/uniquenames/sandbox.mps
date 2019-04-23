@@ -315,7 +315,7 @@
                 <ref role="35c_gD" to="mj1l:7FQByU3CrCM" resolve="Expression" />
               </node>
               <node concept="liA8E" id="2Fugwv5Z5so" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName()" resolve="getQualifiedName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
               </node>
             </node>
           </node>

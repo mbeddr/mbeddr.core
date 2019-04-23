@@ -4636,7 +4636,7 @@
                             <node concept="2NL2c5" id="2Fugwv5XQlu" role="2OqNvi" />
                           </node>
                           <node concept="liA8E" id="2Fugwv5Y0SJ" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode()" resolve="getDeclarationNode" />
+                            <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
                           </node>
                         </node>
                       </node>

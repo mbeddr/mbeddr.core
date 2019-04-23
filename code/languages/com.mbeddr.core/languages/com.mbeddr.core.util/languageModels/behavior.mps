@@ -1536,7 +1536,7 @@
                 <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="74nKSDp1YLh" role="2OqNvi">
-                <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel)" resolve="get" />
+                <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                 <node concept="2JrnkZ" id="74nKSDp1YLj" role="37wK5m">
                   <node concept="2OqwBi" id="74nKSDp1YLk" role="2JrQYb">
                     <node concept="37vLTw" id="4dVT39Gzk17" role="2Oq$k0">
@@ -1623,21 +1623,21 @@
                               <ref role="2Gs0qQ" node="4dVT39Gzs3O" resolve="pposInfo" />
                             </node>
                             <node concept="liA8E" id="4dVT39Gzs3U" role="2OqNvi">
-                              <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getPropertyString()" resolve="getPropertyString" />
+                              <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getPropertyString():java.lang.String" resolve="getPropertyString" />
                             </node>
                           </node>
                         </node>
                         <node concept="2xdQw9" id="2Fugwv5QDZD" role="3cqZAp">
                           <property role="2xdLsb" value="info" />
                           <node concept="2YIFZM" id="4O11EsfbQvk" role="9lYJi">
-                            <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object)" resolve="valueOf" />
                             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                            <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
                             <node concept="2OqwBi" id="4dVT39Gzs3W" role="37wK5m">
                               <node concept="2GrUjf" id="4dVT39Gzs3X" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="4dVT39Gzs3O" resolve="pposInfo" />
                               </node>
                               <node concept="liA8E" id="4dVT39Gzs3Y" role="2OqNvi">
-                                <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConcept()" resolve="getConcept" />
+                                <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
                               </node>
                             </node>
                           </node>

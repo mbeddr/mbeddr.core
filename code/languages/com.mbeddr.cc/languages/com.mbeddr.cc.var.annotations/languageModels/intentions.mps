@@ -382,7 +382,7 @@
                 <node concept="2NL2c5" id="2Fugwv5X2va" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="2Fugwv5X2vb" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional()" resolve="isOptional" />
+                <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional():boolean" resolve="isOptional" />
               </node>
             </node>
           </node>

@@ -5423,7 +5423,7 @@
                     <ref role="3cqZAo" node="2Fugwv5G7vz" resolve="child" />
                   </node>
                   <node concept="liA8E" id="2Fugwv5Gcwv" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode()" resolve="getDeclarationNode" />
+                    <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
                   </node>
                 </node>
                 <node concept="3Tqbb2" id="2Fugwv5Gcws" role="10QFUM">

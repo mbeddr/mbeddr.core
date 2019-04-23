@@ -1098,7 +1098,7 @@
           <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
         </node>
         <node concept="liA8E" id="4glh_Dchqa2" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
           <node concept="2OqwBi" id="4glh_DchqKb" role="37wK5m">
             <node concept="14b0Wr" id="4glh_Dchqxa" role="2Oq$k0">
               <ref role="14b0Uw" node="75_oBQVK55f" resolve="reference" />
@@ -1185,7 +1185,7 @@
               <node concept="2NL2c5" id="2Fugwv5LwFU" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="2Fugwv5Lxwa" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+              <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
             </node>
           </node>
           <node concept="Xl_RD" id="75_oBQV_vWo" role="3uHU7w">

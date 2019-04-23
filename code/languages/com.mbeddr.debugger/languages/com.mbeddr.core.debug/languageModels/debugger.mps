@@ -26512,7 +26512,7 @@
                         <ref role="3cqZAo" node="5JubA6cFy3P" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5JubA6cFy4J" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="5HxjapvQZqa" role="RRSow">
@@ -56231,7 +56231,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="2Fugwv5Yv0B" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                       <node concept="37vLTw" id="2Fugwv5Yv0C" role="37wK5m">
                         <ref role="3cqZAo" node="2Fugwv5Yv0P" resolve="c" />
                       </node>
@@ -59085,7 +59085,7 @@
                       <ref role="3cqZAo" node="7EQZzuztOdK" resolve="e" />
                     </node>
                     <node concept="liA8E" id="7EQZzuztOdR" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="7EQZzuztOdS" role="3uHU7B">

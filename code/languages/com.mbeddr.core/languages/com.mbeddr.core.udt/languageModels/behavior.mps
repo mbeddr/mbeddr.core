@@ -5251,7 +5251,7 @@
                             <node concept="2yIwOk" id="74r76R6zhq8" role="2OqNvi" />
                           </node>
                           <node concept="liA8E" id="74r76R6zi5H" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName()" resolve="getQualifiedName" />
+                            <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="1c_2vnOMqds" role="3uHU7B">
