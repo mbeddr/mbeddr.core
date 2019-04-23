@@ -84,9 +84,6 @@
     <property role="34LRSv" value="intermediate stencil" />
     <property role="EcuMT" value="6492502266247030008" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
-    <node concept="PrWs8" id="17Z2wzk70BQ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
     <node concept="1TJgyi" id="2dEGbba$Tb$" role="1TKVEl">
       <property role="TrG5h" value="bounded" />
       <property role="IQ2nx" value="2552046420808143588" />
@@ -260,9 +257,6 @@
     <property role="34LRSv" value="=" />
     <property role="R4oN_" value="stencil computation element" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2Itq67zmnG$" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
     <node concept="PrWs8" id="7bTG2hLm222" role="PzmwI">
       <ref role="PrY4T" node="7bTG2hLm21Q" resolve="IStencilComputationElement" />
     </node>
@@ -316,9 +310,6 @@
     </node>
     <node concept="PrWs8" id="7C830Ec4S3g" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7C830Ec4S3e" resolve="IStopReshuffling" />
-    </node>
-    <node concept="PrWs8" id="5HxjapwgqQC" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
     <node concept="PrWs8" id="6mzZsELoBOI" role="PzmwI">
       <ref role="PrY4T" to="mj1l:6mzZsELnskC" resolve="IBinaryLike" />
@@ -457,9 +448,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8652997886963748617" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
-    </node>
-    <node concept="PrWs8" id="6Jhc0CXvJlp" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wlBVIeFwW3">
@@ -703,9 +691,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="4471680167141539120" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="12852iL5IOt" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="17Z2wzk7NIM">

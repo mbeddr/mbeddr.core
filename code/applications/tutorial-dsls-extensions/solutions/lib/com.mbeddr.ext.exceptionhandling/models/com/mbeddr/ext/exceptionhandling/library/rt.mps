@@ -40,7 +40,7 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
+      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
@@ -55,6 +55,8 @@
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
         <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
+        <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
@@ -178,7 +180,6 @@
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
-      <concept id="1664480272136207708" name="com.mbeddr.core.expressions.structure.CharType" flags="ng" index="biTqx" />
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
@@ -200,8 +201,13 @@
         <child id="3813668170744198630" name="pointerDiffType" index="3kxMGo" />
         <child id="7808382574383152989" name="intPtrType" index="3sasR9" />
         <child id="7808382574383153001" name="uintPtrType" index="3sasRX" />
+        <child id="6658270785788810330" name="minFloatValue" index="3LaRDq" />
+        <child id="6658270785788810339" name="maxDoubleValue" index="3LaRDz" />
+        <child id="6658270785788810349" name="minDoubleValue" index="3LaRDH" />
+        <child id="6658270785788810029" name="maxFloatValue" index="3LaROH" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
+      <concept id="3390250080473522603" name="com.mbeddr.core.expressions.structure.SignedCharType" flags="ng" index="1dkrvn" />
       <concept id="3976803464656498416" name="com.mbeddr.core.expressions.structure.PostDecrementExpression" flags="ng" index="1FldXu" />
       <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
       <concept id="8860443239512147447" name="com.mbeddr.core.expressions.structure.GreaterEqualsExpression" flags="ng" index="3Tl9Jp" />
@@ -217,6 +223,10 @@
       <concept id="8860443239512128108" name="com.mbeddr.core.expressions.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
+      <concept id="1670233242589902798" name="com.mbeddr.core.expressions.structure.ScientificNumber" flags="ng" index="3VGQI6">
+        <property id="1670233242589904217" name="prefix" index="3VGQ4h" />
+        <property id="1670233242589904219" name="postfix" index="3VGQ4j" />
+      </concept>
       <concept id="86532984527104137" name="com.mbeddr.core.expressions.structure.LongType" flags="ng" index="1X9cn3" />
     </language>
   </registry>
@@ -226,6 +236,8 @@
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
       <property role="3I8uaA" value="" />
+      <property role="3r8Kxs" value="make" />
+      <property role="3r8Kw1" value="gdb" />
       <node concept="3abb7c" id="2vBUIEiugQ5" role="3anu1O">
         <property role="TrG5h" value="Win32" />
       </node>
@@ -256,10 +268,7 @@
   <node concept="MXy$V" id="3WQPxwFiy_k">
     <node concept="MXy$U" id="3WQPxwFiy_m" role="MXv61">
       <property role="MzQRn" value="true" />
-      <node concept="biTqx" id="3WQPxwFiy_l" role="15Utuf">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
+      <node concept="1dkrvn" id="2N9rEsp$G6" role="15Utuf" />
       <node concept="26Vqqz" id="3WQPxwFi$M8" role="15Utue">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -379,6 +388,22 @@
     <node concept="26VBNf" id="5OPKfxQ3lYY" role="3sasRX">
       <property role="2caQfQ" value="false" />
       <property role="2c7vTL" value="false" />
+    </node>
+    <node concept="3VGQI6" id="2N9rEsjV7b" role="3LaRDq">
+      <property role="3VGQ4h" value="-1" />
+      <property role="3VGQ4j" value="37" />
+    </node>
+    <node concept="3VGQI6" id="2N9rEsjV7c" role="3LaRDH">
+      <property role="3VGQ4h" value="-1" />
+      <property role="3VGQ4j" value="37" />
+    </node>
+    <node concept="3VGQI6" id="2N9rEsjV7d" role="3LaROH">
+      <property role="3VGQ4h" value="1" />
+      <property role="3VGQ4j" value="37" />
+    </node>
+    <node concept="3VGQI6" id="2N9rEsjV7e" role="3LaRDz">
+      <property role="3VGQ4h" value="1" />
+      <property role="3VGQ4j" value="37" />
     </node>
   </node>
   <node concept="rcWEw" id="3WQPxwFiyJb">
