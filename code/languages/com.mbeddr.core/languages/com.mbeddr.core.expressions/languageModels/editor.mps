@@ -502,11 +502,10 @@
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+        <child id="5721587534047265375" name="throwable" index="9lYJj" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -2956,13 +2955,12 @@
                                 <node concept="3w_OXm" id="6ucVlijrZje" role="2OqNvi" />
                               </node>
                               <node concept="3clFbS" id="6ucVlijrYbM" role="3eOfB_">
-                                <node concept="34ab3g" id="6V2RU6UyWFj" role="3cqZAp">
-                                  <property role="35gtTG" value="error" />
-                                  <property role="34fQS0" value="true" />
-                                  <node concept="Xl_RD" id="6V2RU6UyWFl" role="34bqiv">
+                                <node concept="2xdQw9" id="2Fugwv5Re65" role="3cqZAp">
+                                  <property role="2xdLsb" value="error" />
+                                  <node concept="Xl_RD" id="6V2RU6UyWFl" role="9lYJi">
                                     <property role="Xl_RC" value="node was null" />
                                   </node>
-                                  <node concept="37vLTw" id="6V2RU6UyWFn" role="34bMjA">
+                                  <node concept="37vLTw" id="6V2RU6UyWFn" role="9lYJj">
                                     <ref role="3cqZAo" node="6V2RU6UxK5W" resolve="ex" />
                                   </node>
                                 </node>
@@ -3000,10 +2998,9 @@
                               </node>
                             </node>
                             <node concept="3clFbS" id="6V2RU6UySZw" role="3clFbx">
-                              <node concept="34ab3g" id="6V2RU6UxTar" role="3cqZAp">
-                                <property role="35gtTG" value="error" />
-                                <property role="34fQS0" value="true" />
-                                <node concept="3cpWs3" id="6V2RU6UyOUW" role="34bqiv">
+                              <node concept="2xdQw9" id="2Fugwv5Rd$m" role="3cqZAp">
+                                <property role="2xdLsb" value="error" />
+                                <node concept="3cpWs3" id="6V2RU6UyOUW" role="9lYJi">
                                   <node concept="Xl_RD" id="6V2RU6UyOV1" role="3uHU7w">
                                     <property role="Xl_RC" value=")" />
                                   </node>
@@ -3030,16 +3027,16 @@
                                           <node concept="pncrf" id="6V2RU6UyFep" role="2JrQYb" />
                                         </node>
                                         <node concept="liA8E" id="6V2RU6UyLAm" role="2OqNvi">
-                                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="6V2RU6UyN$L" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                        <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="37vLTw" id="6V2RU6UxTav" role="34bMjA">
+                                <node concept="37vLTw" id="6V2RU6UxTav" role="9lYJj">
                                   <ref role="3cqZAo" node="6V2RU6UxK5W" resolve="ex" />
                                 </node>
                               </node>
