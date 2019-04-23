@@ -460,9 +460,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="8339862546319741524" name="jetbrains.mps.lang.smodel.structure.ConceptFqNameRefExpression" flags="nn" index="3nh3qo">
-        <reference id="8339862546319741525" name="conceptDeclaration" index="3nh3qp" />
-      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -6451,9 +6448,9 @@
                     <ref role="1Pybhc" to="x30c:3cLA2s_Tjxu" resolve="MDebugSessionConfiguration" />
                   </node>
                   <node concept="liA8E" id="7Hpw6GdUaxj" role="2OqNvi">
-                    <ref role="37wK5l" to="x30c:7Hpw6GdTKZ2" resolve="getInstancesOf" />
-                    <node concept="3nh3qo" id="4_OjW93ON8J" role="37wK5m">
-                      <ref role="3nh3qp" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                    <ref role="37wK5l" to="x30c:2Fugwv5YrYY" resolve="getInstancesOf" />
+                    <node concept="35c_gC" id="2Fugwv5YWLt" role="37wK5m">
+                      <ref role="35c_gD" to="x27k:5_l8w1EmTvx" resolve="Function" />
                     </node>
                   </node>
                 </node>
@@ -6530,9 +6527,9 @@
                     <ref role="1Pybhc" to="x30c:3cLA2s_Tjxu" resolve="MDebugSessionConfiguration" />
                   </node>
                   <node concept="liA8E" id="58AFtxLa7lw" role="2OqNvi">
-                    <ref role="37wK5l" to="x30c:7Hpw6GdTKZ2" resolve="getInstancesOf" />
-                    <node concept="3nh3qo" id="58AFtxLa7lx" role="37wK5m">
-                      <ref role="3nh3qp" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
+                    <ref role="37wK5l" to="x30c:2Fugwv5YrYY" resolve="getInstancesOf" />
+                    <node concept="35c_gC" id="2Fugwv5YYmp" role="37wK5m">
+                      <ref role="35c_gD" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
                     </node>
                   </node>
                 </node>
@@ -11112,9 +11109,9 @@
                               <ref role="3cqZAo" node="5ibmMvPgMxK" resolve="strategyConfiguration" />
                             </node>
                             <node concept="liA8E" id="5ibmMvPgMym" role="2OqNvi">
-                              <ref role="37wK5l" to="x30c:5ibmMvPfCss" resolve="getInstancesOf" />
-                              <node concept="3nh3qo" id="4_OjW93OF4m" role="37wK5m">
-                                <ref role="3nh3qp" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                              <ref role="37wK5l" to="x30c:2Fugwv5YCd5" resolve="getInstancesOf" />
+                              <node concept="35c_gC" id="2Fugwv5YVQ3" role="37wK5m">
+                                <ref role="35c_gD" to="x27k:5_l8w1EmTvx" resolve="Function" />
                               </node>
                             </node>
                           </node>
@@ -11150,9 +11147,9 @@
                               <ref role="3cqZAo" node="5ibmMvPgMxK" resolve="strategyConfiguration" />
                             </node>
                             <node concept="liA8E" id="5YGS28LZUd0" role="2OqNvi">
-                              <ref role="37wK5l" to="x30c:5ibmMvPfCss" resolve="getInstancesOf" />
-                              <node concept="3nh3qo" id="4_OjW93OFcU" role="37wK5m">
-                                <ref role="3nh3qp" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
+                              <ref role="37wK5l" to="x30c:2Fugwv5YCd5" resolve="getInstancesOf" />
+                              <node concept="35c_gC" id="2Fugwv5YW8$" role="37wK5m">
+                                <ref role="35c_gD" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
                               </node>
                             </node>
                           </node>
