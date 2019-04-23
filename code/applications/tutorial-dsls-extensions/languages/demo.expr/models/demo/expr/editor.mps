@@ -12,6 +12,7 @@
   <imports>
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="pfgx" ref="r:4b891481-a267-49b2-8bde-1630bae3d992(demo.expr.plugin)" />
+    <import index="fynj" ref="r:ee113d5b-1fa7-4aac-b53b-2bfc7d658324(demo.expr.interpreter.plugin)" />
     <import index="usyq" ref="r:9cdd4513-d443-4d67-ade0-9f644c838532(demo.expr.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -477,7 +478,7 @@
                   <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                   <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                   <node concept="3B5_sB" id="2vdZgmcEWDu" role="37wK5m">
-                    <ref role="3B5MYn" to="pfgx:3xDNhgd4DSK" resolve="ExprInterpreter" />
+                    <ref role="3B5MYn" to="fynj:3xDNhgd4DSK" resolve="ExprInterpreter" />
                   </node>
                 </node>
               </node>
