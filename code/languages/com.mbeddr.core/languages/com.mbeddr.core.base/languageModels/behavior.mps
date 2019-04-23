@@ -61,7 +61,6 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
-    <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -474,9 +473,6 @@
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
-      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
-        <reference id="3562215692195600259" name="link" index="13MTZf" />
-      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -7740,23 +7736,13 @@
                 <ref role="ehGHo" to="vs0r:3x8oZgKbem1" resolve="ISupportsLocalLanguage" />
               </node>
             </node>
-            <node concept="2OqwBi" id="51GCMCFAsBc" role="33vP2m">
-              <node concept="2OqwBi" id="51GCMCFAsBd" role="2Oq$k0">
-                <node concept="2OqwBi" id="51GCMCFAsBe" role="2Oq$k0">
-                  <node concept="2OqwBi" id="51GCMCFAsBf" role="2Oq$k0">
-                    <node concept="13iPFW" id="51GCMCFAsBg" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="51GCMCFAsBh" role="2OqNvi" />
-                  </node>
-                  <node concept="2RRcyG" id="51GCMCFAsBi" role="2OqNvi">
-                    <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
-                  </node>
-                </node>
-                <node concept="13MTOL" id="51GCMCFAsBj" role="2OqNvi">
-                  <ref role="13MTZf" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
-                </node>
+            <node concept="2OqwBi" id="51GCMCFAsBe" role="33vP2m">
+              <node concept="2OqwBi" id="51GCMCFAsBf" role="2Oq$k0">
+                <node concept="13iPFW" id="51GCMCFAsBg" role="2Oq$k0" />
+                <node concept="I4A8Y" id="51GCMCFAsBh" role="2OqNvi" />
               </node>
-              <node concept="v3k3i" id="51GCMCFAsBk" role="2OqNvi">
-                <node concept="chp4Y" id="51GCMCFAsBl" role="v3oSu">
+              <node concept="2SmgA7" id="4IfjsNgkxZQ" role="2OqNvi">
+                <node concept="chp4Y" id="4IfjsNgky3L" role="1dBWTz">
                   <ref role="cht4Q" to="vs0r:3x8oZgKbem1" resolve="ISupportsLocalLanguage" />
                 </node>
               </node>
