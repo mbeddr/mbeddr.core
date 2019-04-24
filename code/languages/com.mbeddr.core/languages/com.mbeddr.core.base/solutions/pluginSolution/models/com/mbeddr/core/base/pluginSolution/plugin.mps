@@ -594,11 +594,10 @@
       <concept id="1168401810208" name="jetbrains.mps.baseLanguage.logging.structure.PrintStatement" flags="nn" index="abc8K">
         <child id="1168401864803" name="textExpression" index="abp_N" />
       </concept>
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -12505,13 +12504,12 @@
                                 </node>
                                 <node concept="TDmWw" id="4oSomgtQl4P" role="TEbGg">
                                   <node concept="3clFbS" id="4oSomgtQl4Q" role="TDEfX">
-                                    <node concept="34ab3g" id="4oSomgtQlQc" role="3cqZAp">
-                                      <property role="35gtTG" value="error" />
-                                      <property role="34fQS0" value="true" />
-                                      <node concept="Xl_RD" id="4oSomgtQlQe" role="34bqiv">
+                                    <node concept="RRSsy" id="2Fugwv5RJDu" role="3cqZAp">
+                                      <property role="RRSoG" value="error" />
+                                      <node concept="Xl_RD" id="4oSomgtQlQe" role="RRSoy">
                                         <property role="Xl_RC" value="Error during module creation" />
                                       </node>
-                                      <node concept="37vLTw" id="4oSomgtQlQg" role="34bMjA">
+                                      <node concept="37vLTw" id="4oSomgtQlQg" role="RRSow">
                                         <ref role="3cqZAo" node="4oSomgtQl4R" resolve="e" />
                                       </node>
                                     </node>

@@ -387,9 +387,9 @@
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1862,7 +1862,7 @@
       <property role="TrG5h" value="dummy" />
       <property role="34HlcH" value=" " />
       <node concept="3IwBUS" id="7BEN_Nebcl$" role="3O7dZk">
-        <property role="3IwBUT" value="modifiers" />
+        <property role="3IwBUT" value="prefix" />
         <node concept="2b32R4" id="7BEN_Nebd5L" role="lGtFl">
           <node concept="3JmXsc" id="7BEN_Nebd5O" role="2P8S$">
             <node concept="3clFbS" id="7BEN_Nebd5P" role="2VODD2">
@@ -7200,9 +7200,9 @@
             <node concept="3clFbH" id="dxqELdskkZ" role="3cqZAp" />
             <node concept="3clFbJ" id="dxqELdskl0" role="3cqZAp">
               <node concept="3clFbS" id="dxqELdskl1" role="3clFbx">
-                <node concept="34ab3g" id="dxqELdskl2" role="3cqZAp">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="3cpWs3" id="jK_Dl7cbZ" role="34bqiv">
+                <node concept="2xdQw9" id="2Fugwv5QbJY" role="3cqZAp">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="3cpWs3" id="jK_Dl7cbZ" role="9lYJi">
                     <node concept="Xl_RD" id="jK_Dl7khT" role="3uHU7w">
                       <property role="Xl_RC" value="' due to cycle between some module content items" />
                     </node>
@@ -7301,9 +7301,9 @@
             <node concept="3clFbH" id="dxqELdt3wi" role="3cqZAp" />
             <node concept="3clFbJ" id="dxqELdt3wj" role="3cqZAp">
               <node concept="3clFbS" id="dxqELdt3wk" role="3clFbx">
-                <node concept="34ab3g" id="dxqELdt3wl" role="3cqZAp">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="3cpWs3" id="jK_Dl7m8h" role="34bqiv">
+                <node concept="2xdQw9" id="2Fugwv5QbT_" role="3cqZAp">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="3cpWs3" id="jK_Dl7m8h" role="9lYJi">
                     <node concept="Xl_RD" id="jK_Dl7m8i" role="3uHU7w">
                       <property role="Xl_RC" value="' due to cycle between some module content items" />
                     </node>

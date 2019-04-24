@@ -689,7 +689,6 @@
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
         <child id="1204834868751" name="expression" index="25KhWn" />
       </concept>
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1204851882688" name="jetbrains.mps.lang.smodel.structure.LinkRefQualifier" flags="ng" index="26LbJo">
         <reference id="1204851882689" name="link" index="26LbJp" />
       </concept>
@@ -732,6 +731,7 @@
       <concept id="1181952871644" name="jetbrains.mps.lang.smodel.structure.Concept_GetAllSubConcepts" flags="nn" index="LSoRf">
         <child id="1182506816063" name="smodel" index="1iTxcG" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -4628,11 +4628,16 @@
                             <ref role="37wK5l" to="qd6m:2$xXL4HCFy0" resolve="getActualsLink" />
                           </node>
                         </node>
-                        <node concept="2OqwBi" id="2$xXL4HtRNL" role="3uHU7B">
-                          <node concept="37vLTw" id="2$xXL4HtRNM" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2$xXL4HtRNU" resolve="it" />
+                        <node concept="2OqwBi" id="2Fugwv5XUdd" role="3uHU7B">
+                          <node concept="2OqwBi" id="2$xXL4HtRNL" role="2Oq$k0">
+                            <node concept="37vLTw" id="2$xXL4HtRNM" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2$xXL4HtRNU" resolve="it" />
+                            </node>
+                            <node concept="2NL2c5" id="2Fugwv5XQlu" role="2OqNvi" />
                           </node>
-                          <node concept="25OxAV" id="2$xXL4HtRNN" role="2OqNvi" />
+                          <node concept="liA8E" id="2Fugwv5Y0SJ" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+                          </node>
                         </node>
                       </node>
                       <node concept="2OqwBi" id="2$xXL4HtRNO" role="3uHU7B">

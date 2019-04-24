@@ -1085,6 +1085,7 @@
       <property role="TrG5h" value="key" />
       <property role="IQ2nx" value="6150227294360591844" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="3Kc$0Lv5tdQ" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="5lpZMegh_R_" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -1340,7 +1341,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="8PQYytHVw1">
-    <property role="TrG5h" value="PragmaDeclarationRef" />
+    <property role="TrG5h" value="ModifierDeclarationRef" />
     <property role="EcuMT" value="159275153966479361" />
     <ref role="1TJDcQ" to="c4fa:xAR9nWuwcZ" resolve="Prefix" />
     <node concept="1TJgyj" id="8PQYytHVw2" role="1TKVEi">

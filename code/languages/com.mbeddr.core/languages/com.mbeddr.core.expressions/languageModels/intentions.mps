@@ -177,7 +177,6 @@
       <concept id="767145758118872828" name="jetbrains.mps.lang.actions.structure.NF_Node_ReplaceWithNewOperation" flags="nn" index="2DeJnW" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -203,6 +202,7 @@
       <concept id="1181952871644" name="jetbrains.mps.lang.smodel.structure.Concept_GetAllSubConcepts" flags="nn" index="LSoRf">
         <child id="1182506816063" name="smodel" index="1iTxcG" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -1746,13 +1746,15 @@
           <node concept="3cpWsn" id="2sSBlKpPJkX" role="3cpWs9">
             <property role="TrG5h" value="cardOne" />
             <node concept="10P_77" id="2sSBlKpPJkT" role="1tU5fm" />
-            <node concept="2OqwBi" id="2sSBlKpPJkY" role="33vP2m">
-              <node concept="2OqwBi" id="2sSBlKpPJkZ" role="2Oq$k0">
-                <node concept="2Sf5sV" id="2sSBlKpPJl0" role="2Oq$k0" />
-                <node concept="25OxAV" id="2sSBlKpPJl1" role="2OqNvi" />
-              </node>
-              <node concept="2qgKlT" id="2sSBlKpPJl2" role="2OqNvi">
-                <ref role="37wK5l" to="tpcn:2VYdUfnkjmB" resolve="isAtLeastOneCardinality" />
+            <node concept="3fqX7Q" id="2Fugwv5WLOW" role="33vP2m">
+              <node concept="2OqwBi" id="2Fugwv5WLOY" role="3fr31v">
+                <node concept="2OqwBi" id="2Fugwv5WLOZ" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="2Fugwv5WLP0" role="2Oq$k0" />
+                  <node concept="2NL2c5" id="2Fugwv5WLP1" role="2OqNvi" />
+                </node>
+                <node concept="liA8E" id="2Fugwv5WLP2" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional():boolean" resolve="isOptional" />
+                </node>
               </node>
             </node>
           </node>

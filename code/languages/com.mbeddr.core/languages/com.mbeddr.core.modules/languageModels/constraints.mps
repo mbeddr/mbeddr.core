@@ -1379,7 +1379,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="8PQYyukmjI">
-    <ref role="1M2myG" to="x27k:8PQYytHVw1" resolve="PragmaDeclarationRef" />
+    <ref role="1M2myG" to="x27k:8PQYytHVw1" resolve="ModifierDeclarationRef" />
     <node concept="1N5Pfh" id="8PQYyukmky" role="1Mr941">
       <ref role="1N5Vy1" to="x27k:8PQYytHVw2" resolve="decl" />
       <node concept="3dgokm" id="8PQYyukmk_" role="1N6uqs">

@@ -279,9 +279,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -850,8 +850,8 @@
                           <node concept="37vLTw" id="2WJ8cS_wlw$" role="2Oq$k0">
                             <ref role="3cqZAo" node="2WJ8cS_wlwA" resolve="it" />
                           </node>
-                          <node concept="3TrcHB" id="2WJ8cS_wlw_" role="2OqNvi">
-                            <ref role="3TsBF5" to="tp25:v3WHCwUoyi" resolve="fqName" />
+                          <node concept="3TrcHB" id="7d6ZyVlXBQn" role="2OqNvi">
+                            <ref role="3TsBF5" to="tp25:v3WHCwUiHA" resolve="name" />
                           </node>
                         </node>
                       </node>
@@ -1314,9 +1314,9 @@
         </node>
         <node concept="3clFbJ" id="6Xk4NhOGWrU" role="3cqZAp">
           <node concept="3clFbS" id="6Xk4NhOGWrX" role="3clFbx">
-            <node concept="34ab3g" id="6Xk4NhOHja0" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="Xl_RD" id="6Xk4NhOHja2" role="34bqiv">
+            <node concept="2xdQw9" id="2Fugwv5QlEr" role="3cqZAp">
+              <property role="2xdLsb" value="error" />
+              <node concept="Xl_RD" id="6Xk4NhOHja2" role="9lYJi">
                 <property role="Xl_RC" value="Please generate the models for which coverage is to be measured and save the transient models." />
               </node>
             </node>

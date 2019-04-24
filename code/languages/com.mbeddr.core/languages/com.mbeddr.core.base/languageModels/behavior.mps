@@ -2,12 +2,12 @@
 <model ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
-    <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
-    <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
+    <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -409,12 +409,6 @@
         <property id="2034914114981261751" name="severity" index="RRSoG" />
         <child id="2034914114981261755" name="throwable" index="RRSow" />
         <child id="2034914114981261753" name="message" index="RRSoy" />
-      </concept>
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -10031,10 +10025,9 @@
               </node>
             </node>
             <node concept="3clFbS" id="aUl3uPFkiq" role="TDEfX">
-              <node concept="34ab3g" id="aUl3uPFkir" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="2OqwBi" id="aUl3uPFkis" role="34bqiv">
+              <node concept="RRSsy" id="2Fugwv5RJDi" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="2OqwBi" id="aUl3uPFkis" role="RRSoy">
                   <node concept="37vLTw" id="aUl3uPFkit" role="2Oq$k0">
                     <ref role="3cqZAo" node="aUl3uPFkio" resolve="ex" />
                   </node>
@@ -10042,7 +10035,7 @@
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="aUl3uPFkiv" role="34bMjA">
+                <node concept="37vLTw" id="aUl3uPFkiv" role="RRSow">
                   <ref role="3cqZAo" node="aUl3uPFkio" resolve="ex" />
                 </node>
               </node>

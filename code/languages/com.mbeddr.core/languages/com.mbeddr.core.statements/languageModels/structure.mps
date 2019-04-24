@@ -768,9 +768,9 @@
   </node>
   <node concept="1TIwiD" id="4Kv0gUyBnYQ">
     <property role="3GE5qa" value="prefixes" />
-    <property role="TrG5h" value="TextAttributePrefix" />
-    <property role="34LRSv" value="[" />
-    <property role="R4oN_" value="text attribute modifier" />
+    <property role="TrG5h" value="ArbitraryTextAttributePrefix" />
+    <property role="34LRSv" value="&gt;[" />
+    <property role="R4oN_" value="plain text attribute prefix" />
     <property role="EcuMT" value="5485104033529954230" />
     <ref role="1TJDcQ" node="xAR9nWuwcZ" resolve="Prefix" />
     <node concept="PrWs8" id="1EZSCJhrMTi" role="PzmwI">

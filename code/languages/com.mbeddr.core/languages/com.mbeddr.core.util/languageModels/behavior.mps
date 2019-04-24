@@ -329,9 +329,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1536,7 +1536,7 @@
                 <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="74nKSDp1YLh" role="2OqNvi">
-                <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                 <node concept="2JrnkZ" id="74nKSDp1YLj" role="37wK5m">
                   <node concept="2OqwBi" id="74nKSDp1YLk" role="2JrQYb">
                     <node concept="37vLTw" id="4dVT39Gzk17" role="2Oq$k0">
@@ -1602,9 +1602,9 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="5PTtg25EKgi" role="3clFbx">
-                    <node concept="34ab3g" id="4dVT39Gzs3L" role="3cqZAp">
-                      <property role="35gtTG" value="info" />
-                      <node concept="Xl_RD" id="4dVT39Gzs3M" role="34bqiv">
+                    <node concept="2xdQw9" id="2Fugwv5QDLE" role="3cqZAp">
+                      <property role="2xdLsb" value="info" />
+                      <node concept="Xl_RD" id="4dVT39Gzs3M" role="9lYJi">
                         <property role="Xl_RC" value="pos != null" />
                       </node>
                     </node>
@@ -1616,9 +1616,9 @@
                         <ref role="3cqZAo" node="4dVT39GziEr" resolve="posInfos" />
                       </node>
                       <node concept="3clFbS" id="4dVT39Gzs3Q" role="2LFqv$">
-                        <node concept="34ab3g" id="4dVT39Gzs3R" role="3cqZAp">
-                          <property role="35gtTG" value="info" />
-                          <node concept="2OqwBi" id="4dVT39Gzs3S" role="34bqiv">
+                        <node concept="2xdQw9" id="2Fugwv5QDS4" role="3cqZAp">
+                          <property role="2xdLsb" value="info" />
+                          <node concept="2OqwBi" id="4dVT39Gzs3S" role="9lYJi">
                             <node concept="2GrUjf" id="4dVT39Gzs3T" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="4dVT39Gzs3O" resolve="pposInfo" />
                             </node>
@@ -1627,11 +1627,11 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="34ab3g" id="4dVT39Gzs3V" role="3cqZAp">
-                          <property role="35gtTG" value="info" />
-                          <node concept="2YIFZM" id="4O11EsfbQvk" role="34bqiv">
-                            <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                        <node concept="2xdQw9" id="2Fugwv5QDZD" role="3cqZAp">
+                          <property role="2xdLsb" value="info" />
+                          <node concept="2YIFZM" id="4O11EsfbQvk" role="9lYJi">
                             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                            <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
                             <node concept="2OqwBi" id="4dVT39Gzs3W" role="37wK5m">
                               <node concept="2GrUjf" id="4dVT39Gzs3X" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="4dVT39Gzs3O" resolve="pposInfo" />

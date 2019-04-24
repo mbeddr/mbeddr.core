@@ -411,12 +411,12 @@
                         <node concept="3cpWs8" id="3WFvXLXBsbE" role="3cqZAp">
                           <node concept="3cpWsn" id="3WFvXLXBsbF" role="3cpWs9">
                             <property role="TrG5h" value="mi" />
-                            <node concept="3uibUv" id="3WFvXLXBsbD" role="1tU5fm">
-                              <ref role="3uigEE" to="52cq:~MIPlugin" resolve="MIPlugin" />
-                            </node>
                             <node concept="2YIFZM" id="3WFvXLXBsbG" role="33vP2m">
                               <ref role="37wK5l" to="52cq:~MIPlugin.getDefault():org.eclipse.cdt.debug.mi.core.MIPlugin" resolve="getDefault" />
                               <ref role="1Pybhc" to="52cq:~MIPlugin" resolve="MIPlugin" />
+                            </node>
+                            <node concept="3uibUv" id="3WFvXLXBsbD" role="1tU5fm">
+                              <ref role="3uigEE" to="52cq:~MIPlugin" resolve="MIPlugin" />
                             </node>
                           </node>
                         </node>

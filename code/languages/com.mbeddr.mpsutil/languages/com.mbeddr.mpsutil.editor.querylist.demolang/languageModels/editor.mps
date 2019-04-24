@@ -178,9 +178,9 @@
       <concept id="459067182341460208" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_ChildNode" flags="ng" index="2dRBZr" />
       <concept id="459067182341492618" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_NodeToDelete" flags="ng" index="2dRY2x" />
       <concept id="393429538058833026" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_SubstituteInfoFactory" flags="ng" index="2hkjam" />
-      <concept id="393429538058152781" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetSubstituteInfo" flags="ig" index="2hrTlp" />
+      <concept id="393429538058152781" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetSubstituteInfo" flags="ng" index="2hrTlp" />
       <concept id="7908147594175279209" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_DefaultEditor" flags="ng" index="r$x8Z" />
-      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
+      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ng" index="s8sZD" />
       <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
         <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
         <property id="1140524450556" name="usesBraces" index="2czwfP" />
@@ -194,22 +194,18 @@
         <child id="5820306262933755617" name="insertNewNode" index="AS3tk" />
         <child id="7238779735251877228" name="editorComponent" index="1yzFaX" />
       </concept>
-      <concept id="5820306262933110156" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_InsertNewNode" flags="ig" index="ARxKT" />
+      <concept id="5820306262933110156" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_InsertNewNode" flags="ng" index="ARxKT" />
       <concept id="5820306262933734929" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_AnchorNode" flags="ng" index="AS6u$" />
       <concept id="5820306262933951366" name="com.mbeddr.mpsutil.editor.querylist.structure.Paramter_insertBefore" flags="ng" index="AVj8N" />
-      <concept id="5820306262934114343" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_DeleteElement" flags="ig" index="AVF6i" />
+      <concept id="5820306262934114343" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_DeleteElement" flags="ng" index="AVF6i" />
       <concept id="2239254897981410197" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListNodeExpression" flags="ng" index="GFMny" />
-      <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ig" index="1yz3lS" />
+      <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ng" index="1yz3lS" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="767145758118872824" name="jetbrains.mps.lang.actions.structure.NF_Node_InsertNewNextSiblingOperation" flags="nn" index="2DeJnS" />
       <concept id="767145758118872826" name="jetbrains.mps.lang.actions.structure.NF_Node_InsertNewPrevSiblingOperation" flags="nn" index="2DeJnU" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">
-        <reference id="1226359078166" name="conceptDeclaration" index="28GBKb" />
-        <reference id="1226359192215" name="linkDeclaration" index="28H3Ia" />
-      </concept>
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -781,9 +777,9 @@
                     <ref role="3cqZAo" node="lPJxik8ump" resolve="body" />
                   </node>
                   <node concept="2dRBZr" id="lPJxik9qRC" role="37wK5m" />
-                  <node concept="28GBK8" id="lPJxik9rnY" role="37wK5m">
-                    <ref role="28GBKb" to="tpee:fzclF80" resolve="StatementList" />
-                    <ref role="28H3Ia" to="tpee:fzcqZ_x" resolve="statement" />
+                  <node concept="359W_D" id="2Fugwv5Frwd" role="37wK5m">
+                    <ref role="359W_E" to="tpee:fzclF80" resolve="StatementList" />
+                    <ref role="359W_F" to="tpee:fzcqZ_x" resolve="statement" />
                   </node>
                 </node>
               </node>

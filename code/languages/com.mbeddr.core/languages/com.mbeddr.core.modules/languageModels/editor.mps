@@ -516,7 +516,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1204851882688" name="jetbrains.mps.lang.smodel.structure.LinkRefQualifier" flags="ng" index="26LbJo">
         <reference id="1204851882689" name="link" index="26LbJp" />
       </concept>
@@ -550,6 +549,7 @@
       <concept id="1181952871644" name="jetbrains.mps.lang.smodel.structure.Concept_GetAllSubConcepts" flags="nn" index="LSoRf">
         <child id="1182506816063" name="smodel" index="1iTxcG" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -3860,13 +3860,6 @@
         <property role="3F0ifm" value="#pragma" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
-      <node concept="3F0A7n" id="5lpZMeghM$f" role="3EZMnx">
-        <ref role="1NtTu8" to="x27k:5lpZMegh_R$" resolve="key" />
-      </node>
-      <node concept="3F0ifn" id="5lpZMeghM$h" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
-        <ref role="1k5W1q" to="r4b4:y826GHffn9" resolve="Op" />
-      </node>
       <node concept="3F0A7n" id="5lpZMeghM$j" role="3EZMnx">
         <ref role="1NtTu8" to="x27k:5lpZMegh_R_" resolve="value" />
       </node>
@@ -4329,11 +4322,16 @@
                             <ref role="37wK5l" to="qd6m:2$xXL4HCFy0" resolve="getActualsLink" />
                           </node>
                         </node>
-                        <node concept="2OqwBi" id="2$xXL4HtRNL" role="3uHU7B">
-                          <node concept="37vLTw" id="2$xXL4HtRNM" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2$xXL4HtRNU" resolve="it" />
+                        <node concept="2OqwBi" id="2Fugwv5X9sv" role="3uHU7B">
+                          <node concept="2OqwBi" id="2$xXL4HtRNL" role="2Oq$k0">
+                            <node concept="37vLTw" id="2$xXL4HtRNM" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2$xXL4HtRNU" resolve="it" />
+                            </node>
+                            <node concept="2NL2c5" id="2Fugwv5X5z7" role="2OqNvi" />
                           </node>
-                          <node concept="25OxAV" id="2$xXL4HtRNN" role="2OqNvi" />
+                          <node concept="liA8E" id="2Fugwv5XgJa" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+                          </node>
                         </node>
                       </node>
                       <node concept="2OqwBi" id="2$xXL4HtRNO" role="3uHU7B">
@@ -4716,7 +4714,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="8PQYytHVwr">
-    <ref role="1XX52x" to="x27k:8PQYytHVw1" resolve="PragmaDeclarationRef" />
+    <ref role="1XX52x" to="x27k:8PQYytHVw1" resolve="ModifierDeclarationRef" />
     <node concept="1iCGBv" id="8PQYytHVwL" role="2wV5jI">
       <ref role="1NtTu8" to="x27k:8PQYytHVw2" resolve="decl" />
       <node concept="1sVBvm" id="8PQYytHVwM" role="1sWHZn">

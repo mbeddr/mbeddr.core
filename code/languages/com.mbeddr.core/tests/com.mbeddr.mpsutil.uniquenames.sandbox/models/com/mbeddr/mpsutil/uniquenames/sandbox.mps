@@ -22,6 +22,7 @@
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -176,9 +177,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="8339862546319741524" name="jetbrains.mps.lang.smodel.structure.ConceptFqNameRefExpression" flags="nn" index="3nh3qo">
-        <reference id="8339862546319741525" name="conceptDeclaration" index="3nh3qp" />
-      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -223,7 +221,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -312,8 +310,13 @@
           <node concept="3cpWsn" id="2Gxn7_Qqjso" role="3cpWs9">
             <property role="TrG5h" value="string" />
             <node concept="17QB3L" id="2Gxn7_Qqjsm" role="1tU5fm" />
-            <node concept="3nh3qo" id="2Gxn7_Qqjsp" role="33vP2m">
-              <ref role="3nh3qp" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+            <node concept="2OqwBi" id="2Fugwv5Z4Dx" role="33vP2m">
+              <node concept="35c_gC" id="2Fugwv5Z4iE" role="2Oq$k0">
+                <ref role="35c_gD" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+              </node>
+              <node concept="liA8E" id="2Fugwv5Z5so" role="2OqNvi">
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+              </node>
             </node>
           </node>
         </node>

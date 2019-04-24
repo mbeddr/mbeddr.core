@@ -322,7 +322,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -3531,14 +3530,15 @@
           <node concept="3cpWsn" id="7VeUlv82TGs" role="3cpWs9">
             <property role="TrG5h" value="canAddAsSibling" />
             <node concept="10P_77" id="7VeUlv82TGt" role="1tU5fm" />
-            <node concept="2YIFZM" id="7VeUlv82TGu" role="33vP2m">
-              <ref role="37wK5l" node="7Tu0TDFkrou" resolve="linkHasMultipleCardinality" />
-              <ref role="1Pybhc" node="2P6psD9DNdu" resolve="Utils" />
-              <node concept="2OqwBi" id="7VeUlv82TGv" role="37wK5m">
+            <node concept="2OqwBi" id="2Fugwv5I5jj" role="33vP2m">
+              <node concept="2OqwBi" id="7VeUlv82TGv" role="2Oq$k0">
                 <node concept="37vLTw" id="7VeUlv82THd" role="2Oq$k0">
                   <ref role="3cqZAo" node="7VeUlv82TH7" resolve="nodeToReplace" />
                 </node>
-                <node concept="25OxAV" id="7VeUlv9euwv" role="2OqNvi" />
+                <node concept="2NL2c5" id="2Fugwv5I4Rd" role="2OqNvi" />
+              </node>
+              <node concept="liA8E" id="2Fugwv5ESR0" role="2OqNvi">
+                <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple():boolean" resolve="isMultiple" />
               </node>
             </node>
           </node>

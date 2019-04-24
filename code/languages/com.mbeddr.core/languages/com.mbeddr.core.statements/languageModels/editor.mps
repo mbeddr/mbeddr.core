@@ -2458,7 +2458,7 @@
   </node>
   <node concept="24kQdi" id="4Kv0gUyBnYT">
     <property role="3GE5qa" value="prefixes" />
-    <ref role="1XX52x" to="c4fa:4Kv0gUyBnYQ" resolve="TextAttributePrefix" />
+    <ref role="1XX52x" to="c4fa:4Kv0gUyBnYQ" resolve="ArbitraryTextAttributePrefix" />
     <node concept="3EZMnI" id="1EZSCJhrMYX" role="6VMZX">
       <node concept="2iRkQZ" id="1EZSCJhrMYY" role="2iSdaV" />
       <node concept="3EZMnI" id="1EZSCJhrNeV" role="3EZMnx">
@@ -2479,7 +2479,7 @@
     <node concept="3EZMnI" id="4Kv0gUyBnYW" role="2wV5jI">
       <node concept="l2Vlx" id="4Kv0gUyBnYX" role="2iSdaV" />
       <node concept="3F0ifn" id="4Kv0gUyBnYV" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
+        <property role="3F0ifm" value="&gt;[" />
         <node concept="11LMrY" id="4Kv0gUyBnZ2" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -2488,7 +2488,7 @@
         <ref role="1NtTu8" to="c4fa:4Kv0gUyBnYR" resolve="text" />
       </node>
       <node concept="3F0ifn" id="4Kv0gUyBnYZ" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
+        <property role="3F0ifm" value="]&lt;" />
         <node concept="11L4FC" id="4Kv0gUyBnZ3" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

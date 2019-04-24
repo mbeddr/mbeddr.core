@@ -228,11 +228,10 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -449,10 +448,9 @@
           </node>
           <node concept="TDmWw" id="561jPQnmxkB" role="TEbGg">
             <node concept="3clFbS" id="561jPQnmxkD" role="TDEfX">
-              <node concept="34ab3g" id="561jPQnmy9l" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="2OqwBi" id="561jPQnmycr" role="34bqiv">
+              <node concept="RRSsy" id="2Fugwv5RJDA" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="2OqwBi" id="561jPQnmycr" role="RRSoy">
                   <node concept="37vLTw" id="561jPQnmybc" role="2Oq$k0">
                     <ref role="3cqZAo" node="561jPQnmxkF" resolve="ex" />
                   </node>
@@ -460,7 +458,7 @@
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="561jPQnmy9p" role="34bMjA">
+                <node concept="37vLTw" id="561jPQnmy9p" role="RRSow">
                   <ref role="3cqZAo" node="561jPQnmxkF" resolve="ex" />
                 </node>
               </node>
@@ -614,10 +612,9 @@
           </node>
           <node concept="TDmWw" id="561jPQnmyMn" role="TEbGg">
             <node concept="3clFbS" id="561jPQnmyMp" role="TDEfX">
-              <node concept="34ab3g" id="561jPQnmz6f" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="2OqwBi" id="561jPQnmz8f" role="34bqiv">
+              <node concept="RRSsy" id="2Fugwv5RJDM" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="2OqwBi" id="561jPQnmz8f" role="RRSoy">
                   <node concept="37vLTw" id="561jPQnmz70" role="2Oq$k0">
                     <ref role="3cqZAo" node="561jPQnmyMr" resolve="ex" />
                   </node>
@@ -625,7 +622,7 @@
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="561jPQnmz6j" role="34bMjA">
+                <node concept="37vLTw" id="561jPQnmz6j" role="RRSow">
                   <ref role="3cqZAo" node="561jPQnmyMr" resolve="ex" />
                 </node>
               </node>
@@ -758,10 +755,9 @@
           </node>
           <node concept="TDmWw" id="561jPQnmEI6" role="TEbGg">
             <node concept="3clFbS" id="561jPQnmEI7" role="TDEfX">
-              <node concept="34ab3g" id="561jPQnmEI8" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="2OqwBi" id="561jPQnmEI9" role="34bqiv">
+              <node concept="RRSsy" id="2Fugwv5RJDY" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="2OqwBi" id="561jPQnmEI9" role="RRSoy">
                   <node concept="37vLTw" id="561jPQnmEIa" role="2Oq$k0">
                     <ref role="3cqZAo" node="561jPQnmEId" resolve="ex" />
                   </node>
@@ -769,7 +765,7 @@
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="561jPQnmEIc" role="34bMjA">
+                <node concept="37vLTw" id="561jPQnmEIc" role="RRSow">
                   <ref role="3cqZAo" node="561jPQnmEId" resolve="ex" />
                 </node>
               </node>
@@ -1057,10 +1053,9 @@
           </node>
           <node concept="TDmWw" id="561jPQnmC$9" role="TEbGg">
             <node concept="3clFbS" id="561jPQnmC$a" role="TDEfX">
-              <node concept="34ab3g" id="561jPQnmC$b" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="2OqwBi" id="561jPQnmC$c" role="34bqiv">
+              <node concept="RRSsy" id="2Fugwv5RJEa" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="2OqwBi" id="561jPQnmC$c" role="RRSoy">
                   <node concept="37vLTw" id="561jPQnmC$d" role="2Oq$k0">
                     <ref role="3cqZAo" node="561jPQnmC$g" resolve="ex" />
                   </node>
@@ -1068,7 +1063,7 @@
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="561jPQnmC$f" role="34bMjA">
+                <node concept="37vLTw" id="561jPQnmC$f" role="RRSow">
                   <ref role="3cqZAo" node="561jPQnmC$g" resolve="ex" />
                 </node>
               </node>
@@ -1277,10 +1272,9 @@
           </node>
           <node concept="TDmWw" id="561jPQnmBrT" role="TEbGg">
             <node concept="3clFbS" id="561jPQnmBrU" role="TDEfX">
-              <node concept="34ab3g" id="561jPQnmBrV" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="2OqwBi" id="561jPQnmBrW" role="34bqiv">
+              <node concept="RRSsy" id="2Fugwv5RJEm" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="2OqwBi" id="561jPQnmBrW" role="RRSoy">
                   <node concept="37vLTw" id="561jPQnmBrX" role="2Oq$k0">
                     <ref role="3cqZAo" node="561jPQnmBs0" resolve="ex" />
                   </node>
@@ -1288,7 +1282,7 @@
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="561jPQnmBrZ" role="34bMjA">
+                <node concept="37vLTw" id="561jPQnmBrZ" role="RRSow">
                   <ref role="3cqZAo" node="561jPQnmBs0" resolve="ex" />
                 </node>
               </node>
@@ -1508,10 +1502,9 @@
           </node>
           <node concept="TDmWw" id="561jPQnmFQx" role="TEbGg">
             <node concept="3clFbS" id="561jPQnmFQz" role="TDEfX">
-              <node concept="34ab3g" id="561jPQnmGhL" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="2OqwBi" id="561jPQnmGjX" role="34bqiv">
+              <node concept="RRSsy" id="2Fugwv5RJEy" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="2OqwBi" id="561jPQnmGjX" role="RRSoy">
                   <node concept="37vLTw" id="561jPQnmGiI" role="2Oq$k0">
                     <ref role="3cqZAo" node="561jPQnmFQ_" resolve="ex" />
                   </node>
@@ -1519,7 +1512,7 @@
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="561jPQnmGhP" role="34bMjA">
+                <node concept="37vLTw" id="561jPQnmGhP" role="RRSow">
                   <ref role="3cqZAo" node="561jPQnmFQ_" resolve="ex" />
                 </node>
               </node>

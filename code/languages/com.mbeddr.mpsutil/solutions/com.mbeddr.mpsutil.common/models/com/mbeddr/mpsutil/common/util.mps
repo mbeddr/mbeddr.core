@@ -281,7 +281,6 @@
       <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
         <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
       </concept>
-      <concept id="1547759872598425067" name="jetbrains.mps.lang.smodel.structure.Reference_GetLinkDeclarationOperation" flags="nn" index="1eFSac" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -1201,7 +1200,7 @@
             </node>
             <node concept="2YIFZM" id="3JMPeKaHTii" role="33vP2m">
               <ref role="1Pybhc" to="3o3z:~Lists" resolve="Lists" />
-              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Object...):java.util.ArrayList" resolve="newArrayList" />
+              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Iterable):java.util.ArrayList" resolve="newArrayList" />
               <node concept="2OqwBi" id="3JMPeKaHTij" role="37wK5m">
                 <node concept="2JrnkZ" id="3JMPeKaHTik" role="2Oq$k0">
                   <node concept="37vLTw" id="3JMPeKaHTil" role="2JrQYb">
@@ -1223,7 +1222,7 @@
             </node>
             <node concept="2YIFZM" id="3JMPeKaHTir" role="33vP2m">
               <ref role="1Pybhc" to="3o3z:~Lists" resolve="Lists" />
-              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Object...):java.util.ArrayList" resolve="newArrayList" />
+              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Iterable):java.util.ArrayList" resolve="newArrayList" />
               <node concept="2OqwBi" id="3JMPeKaHTis" role="37wK5m">
                 <node concept="2JrnkZ" id="3JMPeKaHTit" role="2Oq$k0">
                   <node concept="37vLTw" id="3JMPeKaHTiu" role="2JrQYb">
@@ -1477,7 +1476,7 @@
                             <node concept="37vLTw" id="3JMPeKaHTkb" role="2Oq$k0">
                               <ref role="3cqZAo" node="3JMPeKaHTkd" resolve="it" />
                             </node>
-                            <node concept="1eFSac" id="3JMPeKaHTkc" role="2OqNvi" />
+                            <node concept="CsP83" id="2Fugwv5K5WN" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
@@ -1506,7 +1505,7 @@
                             <node concept="37vLTw" id="3JMPeKaHTkq" role="2Oq$k0">
                               <ref role="3cqZAo" node="3JMPeKaHTks" resolve="it" />
                             </node>
-                            <node concept="1eFSac" id="3JMPeKaHTkr" role="2OqNvi" />
+                            <node concept="CsP83" id="2Fugwv5K6Ub" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
