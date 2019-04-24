@@ -166,7 +166,6 @@
         <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
-        <child id="1423104411233404408" name="repo" index="up2gk" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -241,12 +240,6 @@
             <node concept="BaHAS" id="5EwdfGVhD4_" role="33vP2m">
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37mic" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37mid" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37mie" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -548,12 +541,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37ova" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37ovb" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37ovc" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -706,12 +693,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37uA$" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37uA_" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37uAA" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -861,12 +842,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37pU1" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37pU2" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37pU3" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1012,12 +987,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37p3v" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37p3w" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37p3x" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1143,12 +1112,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37pmE" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37pmF" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37pmG" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1366,12 +1329,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37vys" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37vyt" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37vyu" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1670,12 +1627,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37nxq" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37nxr" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37nxs" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1854,12 +1805,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37nYX" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37nYY" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37nYZ" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -2016,12 +1961,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37tMs" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37tMt" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37tMu" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -2198,12 +2137,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37sfR" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37sfS" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37sfT" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -2337,12 +2270,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37sC_" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37sCA" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37sCB" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -2607,12 +2534,6 @@
               <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="robustness" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37qEA" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37qEB" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37qEC" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>

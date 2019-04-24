@@ -97,7 +97,6 @@
         <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
-        <child id="1423104411233404408" name="repo" index="up2gk" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
     </language>
@@ -416,12 +415,6 @@
                 <property role="BaHAW" value="acsl_to_cbmc" />
                 <property role="BaGAP" value="" />
                 <property role="BaBD8" value="ass" />
-                <node concept="2OqwBi" id="6ODCss37Gp$" role="up2gk">
-                  <node concept="1jxXqW" id="6ODCss37Gp_" role="2Oq$k0" />
-                  <node concept="liA8E" id="6ODCss37GpA" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                  </node>
-                </node>
               </node>
               <node concept="Xl_RD" id="29$2IGZgdJk" role="37wK5m">
                 <property role="Xl_RC" value="requires" />
@@ -568,12 +561,6 @@
             <node concept="BaHAS" id="2UT$$fNlsgj" role="33vP2m">
               <property role="BaHAW" value="acsl_to_cbmc" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37Gip" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37Giq" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37Gir" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -670,12 +657,6 @@
             <node concept="BaHAS" id="1fdMHEcc4wp" role="33vP2m">
               <property role="BaHAW" value="acsl_to_cbmc" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37G9F" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37G9G" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37G9H" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>

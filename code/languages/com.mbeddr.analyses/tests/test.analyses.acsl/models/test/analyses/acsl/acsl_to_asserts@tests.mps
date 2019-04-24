@@ -96,7 +96,6 @@
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
-        <child id="1423104411233404408" name="repo" index="up2gk" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
     </language>
@@ -485,12 +484,6 @@
             <node concept="BaHAS" id="5iBCJz7sNZ$" role="33vP2m">
               <property role="BaHAW" value="acsl_to_asserts" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37CAd" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37CAe" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37CAf" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -616,12 +609,6 @@
             <node concept="BaHAS" id="1fdMHEcc4wp" role="33vP2m">
               <property role="BaHAW" value="acsl_to_asserts" />
               <property role="BaGAP" value="" />
-              <node concept="2OqwBi" id="6ODCss37CHJ" role="up2gk">
-                <node concept="1jxXqW" id="6ODCss37CHK" role="2Oq$k0" />
-                <node concept="liA8E" id="6ODCss37CHL" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>

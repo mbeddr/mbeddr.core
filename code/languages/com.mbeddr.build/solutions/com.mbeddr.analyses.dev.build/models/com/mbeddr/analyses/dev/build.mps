@@ -1176,6 +1176,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="71B0VArN1Dd" role="3bR37C">
+          <node concept="3bR9La" id="71B0VArN1De" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7bmaDMyc24e" role="2G$12L">
         <property role="BnDLt" value="true" />
