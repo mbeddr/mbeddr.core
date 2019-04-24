@@ -3209,12 +3209,9 @@
   <node concept="24kQdi" id="4AGl5dzxvNY">
     <property role="3GE5qa" value="functionrefs" />
     <ref role="1XX52x" to="x27k:4AGl5dzxvNW" resolve="NoOp" />
-    <node concept="3F0ifn" id="4AGl5dzxvO0" role="2wV5jI">
-      <property role="3F0ifm" value="noop" />
+    <node concept="PMmxH" id="16gyj4AbG0e" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      <node concept="VPxyj" id="5l13tQ4vmw$" role="3F10Kt">
-        <property role="VOm3f" value="false" />
-      </node>
     </node>
     <node concept="PMmxH" id="5CDgsyZcq9u" role="6VMZX">
       <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />

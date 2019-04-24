@@ -52,11 +52,14 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
+      <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -88,6 +91,7 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -252,6 +256,58 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="16gyj4A95_a">
+    <property role="3GE5qa" value="isr.components" />
+    <ref role="1M2myG" to="bs45:16gyj4A8Vjt" resolve="InterruptRunnableReturnValue" />
+    <node concept="9S07l" id="16gyj4A95_b" role="9Vyp8">
+      <node concept="3clFbS" id="16gyj4A95_c" role="2VODD2">
+        <node concept="3clFbF" id="16gyj4A9o4R" role="3cqZAp">
+          <node concept="2OqwBi" id="16gyj4A9pU1" role="3clFbG">
+            <node concept="2OqwBi" id="16gyj4A9osJ" role="2Oq$k0">
+              <node concept="nLn13" id="16gyj4A9urd" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="16gyj4A9pqw" role="2OqNvi">
+                <node concept="1xMEDy" id="16gyj4A9pqy" role="1xVPHs">
+                  <node concept="chp4Y" id="16gyj4AaMWx" role="ri$Ld">
+                    <ref role="cht4Q" to="bs45:16gyj4A9wF1" resolve="InterruptExitHandler" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="16gyj4A9udm" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="16gyj4A9rnU" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="16gyj4A9AP0">
+    <property role="3GE5qa" value="isr.components" />
+    <ref role="1M2myG" to="bs45:16gyj4A9wF1" resolve="InterruptExitHandler" />
+    <node concept="9S07l" id="16gyj4A9AP1" role="9Vyp8">
+      <node concept="3clFbS" id="16gyj4A9AP2" role="2VODD2">
+        <node concept="3clFbF" id="16gyj4A9AWp" role="3cqZAp">
+          <node concept="2OqwBi" id="16gyj4A9LdZ" role="3clFbG">
+            <node concept="2OqwBi" id="16gyj4A9D1t" role="2Oq$k0">
+              <node concept="3TrEf2" id="16gyj4A9HAm" role="2OqNvi">
+                <ref role="3Tt5mk" to="v7ag:3TmmsQkDcDO" resolve="trigger" />
+              </node>
+              <node concept="1PxgMI" id="16gyj4A9QSL" role="2Oq$k0">
+                <node concept="chp4Y" id="16gyj4A9R5w" role="3oSUPX">
+                  <ref role="cht4Q" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
+                </node>
+                <node concept="nLn13" id="16gyj4A9Qwy" role="1m5AlR" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="16gyj4A9NU9" role="2OqNvi">
+              <node concept="chp4Y" id="16gyj4A9Of$" role="cj9EA">
+                <ref role="cht4Q" to="bs45:7X9xw2qHaH3" resolve="InterruptTrigger" />
               </node>
             </node>
           </node>

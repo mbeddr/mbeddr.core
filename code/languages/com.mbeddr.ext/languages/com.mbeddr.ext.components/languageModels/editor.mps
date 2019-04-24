@@ -4739,7 +4739,7 @@
     <node concept="3EZMnI" id="7moPk051DW0" role="2wV5jI">
       <node concept="3F0ifn" id="7moPk051DW1" role="3EZMnx">
         <property role="3F0ifm" value="@callable from tests" />
-        <ref role="1ERwB7" node="7moPk051DW5" resolve="delteDirecCallable" />
+        <ref role="1ERwB7" node="7moPk051DW5" resolve="deleteDirectCallable" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhDUJ" resolve="Metadata" />
       </node>
       <node concept="2SsqMj" id="7moPk051DW3" role="3EZMnx" />
@@ -4747,7 +4747,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="7moPk051DW5">
-    <property role="TrG5h" value="delteDirecCallable" />
+    <property role="TrG5h" value="deleteDirectCallable" />
     <ref role="1h_SK9" to="v7ag:7moPk051DVV" resolve="DirectRunnableCallable" />
     <node concept="1hA7zw" id="7moPk051DW6" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
