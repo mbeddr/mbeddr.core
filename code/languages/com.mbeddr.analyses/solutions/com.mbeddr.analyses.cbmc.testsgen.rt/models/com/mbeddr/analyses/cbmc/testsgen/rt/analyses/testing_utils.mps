@@ -23,6 +23,7 @@
     <import index="g4f5" ref="r:6f473d79-da87-4151-ab3b-24beeaf35af7(com.mbeddr.analyses.cbmc.testsgen.rt.analyses.tests_saver)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
@@ -64,7 +65,6 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -134,6 +134,7 @@
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
@@ -230,6 +231,9 @@
         <node concept="3cpWs6" id="341WyjDj7Hr" role="3cqZAp">
           <node concept="1rXfSq" id="341WyjDj7Hs" role="3cqZAk">
             <ref role="37wK5l" node="341WyjDj3M6" resolve="testsgenCriterion" />
+            <node concept="37vLTw" id="71B0VArQHml" role="37wK5m">
+              <ref role="3cqZAo" node="71B0VArQH2V" resolve="repo" />
+            </node>
             <node concept="37vLTw" id="341WyjDj7Ht" role="37wK5m">
               <ref role="3cqZAo" node="341WyjDj7Hx" resolve="model" />
             </node>
@@ -243,6 +247,12 @@
               <property role="Xl_RC" value="location" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="71B0VArQH2V" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArQH2W" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="341WyjDj7Hx" role="3clF46">
@@ -274,6 +284,9 @@
         <node concept="3cpWs6" id="341WyjDj6i_" role="3cqZAp">
           <node concept="1rXfSq" id="341WyjDj6vG" role="3cqZAk">
             <ref role="37wK5l" node="341WyjDj3M6" resolve="testsgenCriterion" />
+            <node concept="37vLTw" id="71B0VArQy1A" role="37wK5m">
+              <ref role="3cqZAo" node="71B0VArQxz1" resolve="repo" />
+            </node>
             <node concept="37vLTw" id="341WyjDj6BH" role="37wK5m">
               <ref role="3cqZAo" node="7yN$Xh8otQI" resolve="model" />
             </node>
@@ -287,6 +300,12 @@
               <property role="Xl_RC" value="branch" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="71B0VArQxz1" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArQxz2" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="7yN$Xh8otQI" role="3clF46">
@@ -409,6 +428,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="71B0VArQx8m" role="ukAjM">
+            <ref role="3cqZAo" node="71B0VArQwkI" resolve="repo" />
           </node>
         </node>
         <node concept="3cpWs8" id="341WyjDj3MM" role="3cqZAp">
@@ -555,7 +577,9 @@
                     <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
-                <node concept="10Nm6u" id="5KHBa6lfw0r" role="37wK5m" />
+                <node concept="37vLTw" id="71B0VArQSq0" role="37wK5m">
+                  <ref role="3cqZAo" node="71B0VArQwkI" resolve="repo" />
+                </node>
               </node>
             </node>
           </node>
@@ -581,6 +605,12 @@
           <node concept="37vLTw" id="341WyjDj3NM" role="3cqZAk">
             <ref role="3cqZAo" node="341WyjDj3Mc" resolve="result" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="71B0VArQwkI" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArQwIV" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="341WyjDj3NN" role="3clF46">
@@ -645,6 +675,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="71B0VArQWqV" role="ukAjM">
+            <ref role="3cqZAo" node="71B0VArQW8D" resolve="repo" />
+          </node>
         </node>
         <node concept="3cpWs6" id="73BQep1QQ5a" role="3cqZAp">
           <node concept="37vLTw" id="73BQep1QQ5b" role="3cqZAk">
@@ -654,6 +687,12 @@
       </node>
       <node concept="NWlO9" id="73BQep1QQ5i" role="lGtFl">
         <property role="NWlVz" value="Returns the synthethised test vectors." />
+      </node>
+      <node concept="37vLTG" id="71B0VArQW8D" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArQWg1" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="37vLTG" id="73BQep1QSwa" role="3clF46">
         <property role="TrG5h" value="tv" />
@@ -867,7 +906,7 @@
                                   </node>
                                 </node>
                                 <node concept="2qgKlT" id="73BQep1UUAI" role="2OqNvi">
-                                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="73BQep1USgL" role="3uHU7B">
@@ -966,10 +1005,19 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="71B0VArR3az" role="ukAjM">
+            <ref role="3cqZAo" node="71B0VArR2im" resolve="repo" />
+          </node>
         </node>
       </node>
       <node concept="NWlO9" id="73BQep1UGHJ" role="lGtFl">
         <property role="NWlVz" value="Returns the synthethised test vectors." />
+      </node>
+      <node concept="37vLTG" id="71B0VArR2im" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArR2ZG" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="37vLTG" id="73BQep1UGHK" role="3clF46">
         <property role="TrG5h" value="result" />
