@@ -25,6 +25,7 @@
     <import index="hj5x" ref="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="ptsh" ref="r:7229fe6a-a6d1-43ed-8eda-4afd5bfd426b(com.mbeddr.analyses.cbmc.core.rt.analyses.vacuity)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -199,7 +200,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6BM8NjXd_xY" role="3cqZAp" />
+        <node concept="3clFbH" id="6ODCss37hDW" role="3cqZAp" />
         <node concept="3cpWs8" id="6BM8NjXd_xZ" role="3cqZAp">
           <node concept="3cpWsn" id="6BM8NjXd_y0" role="3cpWs9">
             <property role="TrG5h" value="result" />
@@ -371,6 +372,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="6ODCss37fdI" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="6ODCss37fJQ" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="6BM8NjXd_zo" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="6BM8NjXd_zp" role="1tU5fm">
@@ -413,6 +420,9 @@
             </node>
             <node concept="1rXfSq" id="7MMcIPlrHXF" role="33vP2m">
               <ref role="37wK5l" node="6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="37vLTw" id="6ODCss37_3q" role="37wK5m">
+                <ref role="3cqZAo" node="6ODCss37ysb" resolve="repo" />
+              </node>
               <node concept="37vLTw" id="7MMcIPlrHXG" role="37wK5m">
                 <ref role="3cqZAo" node="7MMcIPlrGiE" resolve="model" />
               </node>
@@ -459,6 +469,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6ODCss37ysb" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="6ODCss37ysc" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="7MMcIPlrGiE" role="3clF46">
@@ -511,6 +527,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6ODCss37_oB" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="6ODCss37_K$" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="6BM8NjXdBhx" role="3clF46">
