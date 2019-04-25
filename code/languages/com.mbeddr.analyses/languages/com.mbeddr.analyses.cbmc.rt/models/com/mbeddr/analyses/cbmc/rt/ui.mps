@@ -6928,7 +6928,7 @@
             <node concept="2ShNRf" id="4asBXw$Fzg6" role="37vLTx">
               <node concept="1pGfFk" id="4c9lfPlHs3O" role="2ShVmc">
                 <ref role="37wK5l" node="4c9lfPlE9LA" resolve="RawCounterexamplePanel" />
-                <node concept="37vLTw" id="4c9lfPlRMev" role="37wK5m">
+                <node concept="37vLTw" id="3$vwvl9Mgkl" role="37wK5m">
                   <ref role="3cqZAo" node="4c9lfPlRL3M" resolve="project" />
                 </node>
               </node>

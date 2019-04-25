@@ -323,6 +323,12 @@
           <node concept="2YIFZM" id="2AkoYuY2jzX" role="3clFbG">
             <ref role="37wK5l" to="tzyt:6GZ1x5Gjo9h" resolve="generateHTMLPage" />
             <ref role="1Pybhc" to="tzyt:6GZ1x5Gjo9f" resolve="HTMLResultsSaver" />
+            <node concept="2OqwBi" id="3$vwvl9L_tJ" role="37wK5m">
+              <node concept="1jxXqW" id="3$vwvl9L$Y9" role="2Oq$k0" />
+              <node concept="liA8E" id="3$vwvl9LB3R" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
             <node concept="Xl_RD" id="2AkoYuY2jGK" role="37wK5m">
               <property role="Xl_RC" value="test" />
             </node>
