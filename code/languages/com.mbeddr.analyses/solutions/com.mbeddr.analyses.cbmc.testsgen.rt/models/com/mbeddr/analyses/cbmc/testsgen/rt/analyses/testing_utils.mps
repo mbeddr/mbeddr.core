@@ -368,6 +368,9 @@
                   <node concept="2YIFZM" id="341WyjDj3Mj" role="37vLTx">
                     <ref role="1Pybhc" node="67iKQ7oy7e8" resolve="TestgenTestingUtils" />
                     <ref role="37wK5l" node="73BQep1R4aE" resolve="testFunction" />
+                    <node concept="37vLTw" id="71B0VArRljG" role="37wK5m">
+                      <ref role="3cqZAo" node="71B0VArQwkI" resolve="repo" />
+                    </node>
                     <node concept="37vLTw" id="341WyjDj3Mk" role="37wK5m">
                       <ref role="3cqZAo" node="341WyjDj3NN" resolve="model" />
                     </node>
@@ -714,6 +717,12 @@
       <node concept="3Tqbb2" id="73BQep1R4aG" role="3clF45">
         <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
       </node>
+      <node concept="37vLTG" id="71B0VArRlqT" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArRlJT" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="73BQep1R4av" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="73BQep1R4aw" role="1tU5fm">
@@ -819,6 +828,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="71B0VArRlW7" role="ukAjM">
+            <ref role="3cqZAo" node="71B0VArRlqT" resolve="repo" />
           </node>
         </node>
         <node concept="3cpWs6" id="73BQep1R4at" role="3cqZAp">
