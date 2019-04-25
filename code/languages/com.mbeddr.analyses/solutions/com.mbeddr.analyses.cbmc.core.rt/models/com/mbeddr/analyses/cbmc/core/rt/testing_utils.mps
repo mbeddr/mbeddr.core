@@ -57,7 +57,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -1008,7 +1007,9 @@
                     <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
-                <node concept="10Nm6u" id="5KHBa6l1HcI" role="37wK5m" />
+                <node concept="37vLTw" id="3$vwvl9IGsS" role="37wK5m">
+                  <ref role="3cqZAo" node="3$vwvl9IFw3" resolve="repo" />
+                </node>
               </node>
             </node>
           </node>
@@ -1031,6 +1032,12 @@
           <node concept="37vLTw" id="3WYFqnsYufX" role="3cqZAk">
             <ref role="3cqZAo" node="3WYFqnsYueE" resolve="result" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3$vwvl9IFw3" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="3$vwvl9IG07" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="3WYFqnsYufY" role="3clF46">
