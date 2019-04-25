@@ -512,6 +512,9 @@
         <node concept="3cpWs6" id="6BM8NjXdBhq" role="3cqZAp">
           <node concept="1rXfSq" id="6BM8NjXdCDU" role="3cqZAk">
             <ref role="37wK5l" node="6BM8NjXdCCl" resolve="checkAsserts" />
+            <node concept="37vLTw" id="71B0VArSFZ6" role="37wK5m">
+              <ref role="3cqZAo" node="6ODCss37_oB" resolve="repo" />
+            </node>
             <node concept="37vLTw" id="6BM8NjXdBhs" role="37wK5m">
               <ref role="3cqZAo" node="6BM8NjXdBhx" resolve="model" />
             </node>
@@ -595,6 +598,9 @@
         <node concept="3cpWs6" id="3Z5D5F2EVjR" role="3cqZAp">
           <node concept="1rXfSq" id="3Z5D5F2EVjS" role="3cqZAk">
             <ref role="37wK5l" node="6BM8NjXdCCl" resolve="checkAsserts" />
+            <node concept="37vLTw" id="71B0VArSFy_" role="37wK5m">
+              <ref role="3cqZAo" node="71B0VArSEWA" resolve="repo" />
+            </node>
             <node concept="37vLTw" id="3Z5D5F2EVjT" role="37wK5m">
               <ref role="3cqZAo" node="3Z5D5F2EVjY" resolve="model" />
             </node>
@@ -608,6 +614,12 @@
               <ref role="3cqZAo" node="3Z5D5F2EVP5" resolve="config" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="71B0VArSEWA" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArSEWB" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="3Z5D5F2EVjY" role="3clF46">
@@ -782,7 +794,9 @@
                     <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
-                <node concept="10Nm6u" id="5KHBa6l1G1C" role="37wK5m" />
+                <node concept="37vLTw" id="71B0VArSElK" role="37wK5m">
+                  <ref role="3cqZAo" node="71B0VArSDvk" resolve="repo" />
+                </node>
               </node>
             </node>
           </node>
@@ -805,6 +819,12 @@
           <node concept="37vLTw" id="6BM8NjXdCDJ" role="3cqZAk">
             <ref role="3cqZAo" node="6BM8NjXdCCu" resolve="result" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="71B0VArSDvk" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArSDvl" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="6BM8NjXdCDK" role="3clF46">
