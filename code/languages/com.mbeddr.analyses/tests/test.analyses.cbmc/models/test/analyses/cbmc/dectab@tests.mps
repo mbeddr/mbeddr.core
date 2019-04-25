@@ -139,6 +139,17 @@
       <property role="TrG5h" value="testSignum" />
       <node concept="3cqZAl" id="6HtDYEDCZSF" role="3clF45" />
       <node concept="3clFbS" id="6HtDYEDCZSG" role="3clF47">
+        <node concept="3cpWs8" id="71B0VAs0eEl" role="3cqZAp">
+          <node concept="3cpWsn" id="71B0VAs0eEm" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="71B0VAs0eEk" role="1tU5fm" />
+            <node concept="BaHAS" id="71B0VAs0eEn" role="33vP2m">
+              <property role="BaHAW" value="dectab" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="de" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1iGXuFZV1Bx" role="3cqZAp">
           <node concept="3cpWsn" id="1iGXuFZV1By" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -150,10 +161,14 @@
             <node concept="NRdvd" id="5A4xqPJStoK" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:17FqOSBEnOX" resolve="checkDecisionTables" />
-              <node concept="BaHAS" id="5A4xqPJStoL" role="37wK5m">
-                <property role="BaHAW" value="dectab" />
-                <property role="BaGAP" value="" />
-                <property role="BaBD8" value="de" />
+              <node concept="2OqwBi" id="71B0VAs0fxj" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VAs0fit" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VAs0gSw" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="71B0VAs0eEo" role="37wK5m">
+                <ref role="3cqZAo" node="71B0VAs0eEm" resolve="m" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJStoM" role="37wK5m">
                 <property role="Xl_RC" value="simple_dectabs" />
@@ -320,6 +335,17 @@
       <property role="TrG5h" value="testTwoDecisionTables" />
       <node concept="3cqZAl" id="3oJxBI_0vNg" role="3clF45" />
       <node concept="3clFbS" id="3oJxBI_0vNh" role="3clF47">
+        <node concept="3cpWs8" id="71B0VAs0h0Y" role="3cqZAp">
+          <node concept="3cpWsn" id="71B0VAs0h0Z" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="71B0VAs0h0X" role="1tU5fm" />
+            <node concept="BaHAS" id="71B0VAs0h10" role="33vP2m">
+              <property role="BaHAW" value="dectab" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="de" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3oJxBI_0vNi" role="3cqZAp">
           <node concept="3cpWsn" id="3oJxBI_0vNj" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -331,10 +357,14 @@
             <node concept="NRdvd" id="5A4xqPJScIi" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:17FqOSBEnOX" resolve="checkDecisionTables" />
-              <node concept="BaHAS" id="5A4xqPJScIj" role="37wK5m">
-                <property role="BaHAW" value="dectab" />
-                <property role="BaGAP" value="" />
-                <property role="BaBD8" value="de" />
+              <node concept="2OqwBi" id="71B0VAs0im9" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VAs0i2$" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VAs0jK5" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="71B0VAs0h11" role="37wK5m">
+                <ref role="3cqZAo" node="71B0VAs0h0Z" resolve="m" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJScIk" role="37wK5m">
                 <property role="Xl_RC" value="simple_dectabs" />

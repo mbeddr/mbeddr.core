@@ -674,6 +674,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="71B0VArZ2zd" role="ukAjM">
+            <ref role="3cqZAo" node="71B0VArZ0TX" resolve="repo" />
+          </node>
         </node>
         <node concept="3cpWs8" id="3_HSwtcXMtt" role="3cqZAp">
           <node concept="3cpWsn" id="3_HSwtcXMtu" role="3cpWs9">
@@ -742,7 +745,9 @@
                     <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
-                <node concept="10Nm6u" id="5KHBa6l0f4L" role="37wK5m" />
+                <node concept="37vLTw" id="71B0VArZ35p" role="37wK5m">
+                  <ref role="3cqZAo" node="71B0VArZ0TX" resolve="repo" />
+                </node>
               </node>
             </node>
             <node concept="37vLTw" id="2tzgwZjIjBf" role="37vLTJ">
@@ -775,6 +780,12 @@
       <node concept="_YKpA" id="7OHQ0Tp2JBy" role="3clF45">
         <node concept="3uibUv" id="7OHQ0Tp2JB_" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="71B0VArZ0TX" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArZ1rB" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="JsaLOcUcGn" role="3clF46">
@@ -894,6 +905,9 @@
         <node concept="3cpWs6" id="28vOu_uqCtY" role="3cqZAp">
           <node concept="1rXfSq" id="28vOu_uqCW8" role="3cqZAk">
             <ref role="37wK5l" node="6m6BTo4Xtfr" resolve="checkSingleAnalysisConfiguration" />
+            <node concept="37vLTw" id="71B0VArZ7BR" role="37wK5m">
+              <ref role="3cqZAo" node="71B0VArMJN1" resolve="repo" />
+            </node>
             <node concept="37vLTw" id="28vOu_uqDdF" role="37wK5m">
               <ref role="3cqZAo" node="28vOu_uqBgg" resolve="cfg" />
             </node>
@@ -1021,7 +1035,9 @@
                     <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
-                <node concept="10Nm6u" id="5KHBa6l0fKT" role="37wK5m" />
+                <node concept="37vLTw" id="71B0VArZ84p" role="37wK5m">
+                  <ref role="3cqZAo" node="71B0VArZ5Ol" resolve="repo" />
+                </node>
               </node>
             </node>
             <node concept="37vLTw" id="6m6BTo4Xtg9" role="37vLTJ">
@@ -1054,6 +1070,12 @@
       <node concept="_YKpA" id="6m6BTo4Xtgj" role="3clF45">
         <node concept="3uibUv" id="6m6BTo4Xtgk" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="71B0VArZ5Ol" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArZ6oX" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="6m6BTo4Xtgl" role="3clF46">
@@ -1211,7 +1233,9 @@
                     <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
-                <node concept="10Nm6u" id="5KHBa6l0g9r" role="37wK5m" />
+                <node concept="37vLTw" id="71B0VAs0ssJ" role="37wK5m">
+                  <ref role="3cqZAo" node="71B0VArMZDB" resolve="repo" />
+                </node>
               </node>
             </node>
             <node concept="37vLTw" id="2tzgwZjImOQ" role="37vLTJ">

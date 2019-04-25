@@ -131,6 +131,17 @@
       <property role="TrG5h" value="testSignum" />
       <node concept="3cqZAl" id="7yN$Xh8olDK" role="3clF45" />
       <node concept="3clFbS" id="7yN$Xh8olDL" role="3clF47">
+        <node concept="3cpWs8" id="71B0VAs0odM" role="3cqZAp">
+          <node concept="3cpWsn" id="71B0VAs0odN" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="71B0VAs0odL" role="1tU5fm" />
+            <node concept="BaHAS" id="71B0VAs0odO" role="33vP2m">
+              <property role="BaHAW" value="gswitch" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="gsw" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7yN$Xh8olDM" role="3cqZAp">
           <node concept="3cpWsn" id="7yN$Xh8olDN" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -142,10 +153,14 @@
             <node concept="NRdvd" id="7SLmAEO8qut" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:7yN$Xh8otP7" resolve="checkGSwitchExpression" />
-              <node concept="BaHAS" id="7SLmAEO8quu" role="37wK5m">
-                <property role="BaHAW" value="gswitch" />
-                <property role="BaGAP" value="" />
-                <property role="BaBD8" value="gsw" />
+              <node concept="2OqwBi" id="71B0VAs0mEY" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VAs0mjL" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VAs0o0e" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="71B0VAs0odP" role="37wK5m">
+                <ref role="3cqZAo" node="71B0VAs0odN" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7SLmAEO8quv" role="37wK5m">
                 <property role="Xl_RC" value="simple_gswitch" />
@@ -377,6 +392,17 @@
       <property role="TrG5h" value="testEmpty" />
       <node concept="3cqZAl" id="7SLmAEO8mtu" role="3clF45" />
       <node concept="3clFbS" id="7SLmAEO8mtv" role="3clF47">
+        <node concept="3cpWs8" id="71B0VAs0oJE" role="3cqZAp">
+          <node concept="3cpWsn" id="71B0VAs0oJF" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="71B0VAs0oJD" role="1tU5fm" />
+            <node concept="BaHAS" id="71B0VAs0oJG" role="33vP2m">
+              <property role="BaHAW" value="gswitch" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="gsw" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7SLmAEO8mtw" role="3cqZAp">
           <node concept="3cpWsn" id="7SLmAEO8mtx" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -394,10 +420,8 @@
                   <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                 </node>
               </node>
-              <node concept="BaHAS" id="7SLmAEO8q_8" role="37wK5m">
-                <property role="BaHAW" value="gswitch" />
-                <property role="BaGAP" value="" />
-                <property role="BaBD8" value="gsw" />
+              <node concept="37vLTw" id="71B0VAs0oJH" role="37wK5m">
+                <ref role="3cqZAo" node="71B0VAs0oJF" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7SLmAEO8qZp" role="37wK5m">
                 <property role="Xl_RC" value="empty_gswitch" />

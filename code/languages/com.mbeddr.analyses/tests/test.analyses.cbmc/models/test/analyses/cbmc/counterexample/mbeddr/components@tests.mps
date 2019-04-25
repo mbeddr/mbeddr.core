@@ -252,6 +252,12 @@
               <node concept="NRdvd" id="k5g7iqvDzj" role="2Oq$k0">
                 <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
                 <ref role="37wK5l" to="dxnt:5KvlJsgh9pp" resolve="checkPrePostCondition" />
+                <node concept="2OqwBi" id="71B0VArYP0t" role="37wK5m">
+                  <node concept="1jxXqW" id="71B0VArYOEF" role="2Oq$k0" />
+                  <node concept="liA8E" id="71B0VArYPVM" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="2YIFZM" id="k5g7iqvDzk" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />

@@ -24,6 +24,7 @@
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
     <import index="lcpc" ref="r:a2e68184-e5ff-4dfa-983c-d957a5690db9(com.mbeddr.analyses.cbmc.statemachines.structure)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -116,6 +117,7 @@
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
@@ -312,6 +314,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="71B0VArZ9X9" role="ukAjM">
+            <ref role="3cqZAo" node="71B0VArZ9$M" resolve="repo" />
+          </node>
         </node>
         <node concept="3clFbF" id="6m6BTo4RgN$" role="3cqZAp">
           <node concept="37vLTI" id="6m6BTo4RgN_" role="3clFbG">
@@ -321,6 +326,9 @@
             <node concept="2YIFZM" id="6m6BTo4XDgW" role="37vLTx">
               <ref role="37wK5l" to="fxhk:6m6BTo4Xtfr" resolve="checkSingleAnalysisConfiguration" />
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
+              <node concept="37vLTw" id="71B0VArZa6S" role="37wK5m">
+                <ref role="3cqZAo" node="71B0VArZ9$M" resolve="repo" />
+              </node>
               <node concept="37vLTw" id="6m6BTo4XDgX" role="37wK5m">
                 <ref role="3cqZAo" node="6m6BTo4RLxA" resolve="cfg" />
               </node>
@@ -336,6 +344,12 @@
       <node concept="_YKpA" id="6m6BTo4RgNG" role="3clF45">
         <node concept="3uibUv" id="6m6BTo4RgNH" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="71B0VArZ9$M" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="71B0VArZ9HV" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="6m6BTo4RgNI" role="3clF46">
