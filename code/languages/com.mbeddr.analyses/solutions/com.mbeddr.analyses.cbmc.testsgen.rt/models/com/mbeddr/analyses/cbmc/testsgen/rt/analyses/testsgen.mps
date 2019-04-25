@@ -259,6 +259,7 @@
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
@@ -536,6 +537,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="3$vwvl9Zydp" role="ukAjM">
+            <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
+          </node>
         </node>
         <node concept="3cpWs8" id="6QX7yC5tcpr" role="3cqZAp">
           <node concept="3cpWsn" id="6QX7yC5tcps" role="3cpWs9">
@@ -546,6 +550,9 @@
             <node concept="2YIFZM" id="6QX7yC5tcpu" role="33vP2m">
               <ref role="37wK5l" node="67iKQ7omo2L" resolve="buildResult" />
               <ref role="1Pybhc" node="67iKQ7omo1s" resolve="TestVectorResultBuilder" />
+              <node concept="37vLTw" id="3$vwvl9ZMWI" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
+              </node>
               <node concept="37vLTw" id="6QX7yC5tcpv" role="37wK5m">
                 <ref role="3cqZAo" node="6QX7yC5tcp7" resolve="entryPoint" />
               </node>
@@ -653,6 +660,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="3$vwvl9Zzzg" role="ukAjM">
+            <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
           </node>
         </node>
         <node concept="3cpWs6" id="6QX7yC5tcpQ" role="3cqZAp">
@@ -2052,6 +2062,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="3$vwvl9ZIU_" role="ukAjM">
+            <ref role="3cqZAo" node="3$vwvl9ZI$d" resolve="repo" />
+          </node>
         </node>
         <node concept="3clFbH" id="7zHn0fLD2px" role="3cqZAp" />
         <node concept="3clFbF" id="7zHn0fLD3Rb" role="3cqZAp">
@@ -2206,6 +2219,12 @@
       <node concept="3Tm1VV" id="67iKQ7omo22" role="1B3o_S" />
       <node concept="3uibUv" id="67iKQ7omo2F" role="3clF45">
         <ref role="3uigEE" node="67iKQ7oe8kf" resolve="TestVectorResult" />
+      </node>
+      <node concept="37vLTG" id="3$vwvl9ZI$d" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="3$vwvl9ZIPZ" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="37vLTG" id="ttBj3nNd5A" role="3clF46">
         <property role="TrG5h" value="sut" />
@@ -2651,6 +2670,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="3$vwvl9ZBLh" role="ukAjM">
+            <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
           </node>
         </node>
         <node concept="3clFbH" id="MynG9Rqm10" role="3cqZAp" />
@@ -3230,6 +3252,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="3$vwvl9ZCWj" role="ukAjM">
+            <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
           </node>
         </node>
         <node concept="3cpWs6" id="3x0R1LJ5Cqi" role="3cqZAp">
