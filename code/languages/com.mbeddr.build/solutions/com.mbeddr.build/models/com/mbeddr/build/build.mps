@@ -10991,6 +10991,16 @@
             <ref role="3bR37D" node="7eF9rfAuFx3" resolve="com.mbeddr.analyses.cbmc.pluginSolution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="FK8cyc_M1H" role="3bR37C">
+          <node concept="3bR9La" id="FK8cyc_M1I" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="FK8cyc_M1J" role="3bR37C">
+          <node concept="3bR9La" id="FK8cyc_M1K" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6BM8NjXiJFj" role="2G$12L">
         <property role="BnDLt" value="true" />
