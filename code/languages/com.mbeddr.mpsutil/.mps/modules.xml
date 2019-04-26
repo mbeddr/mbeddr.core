@@ -64,6 +64,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter/runtime/com.mbeddr.mpsutil.interpreter.runtime.msd" folder="staging.interpreter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.jfreechart.sandboxlang/com.mbeddr.mpsutil.jfreechart.sandboxlang.mpl" folder="staging.jfreechart" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.jfreechart/com.mbeddr.mpsutil.jfreechart.mpl" folder="staging.jfreechart" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.json.stubs.dummy.lang/com.mbeddr.mpsutil.json.stubs.dummy.lang.mpl" folder="rest.json" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.json/com.mbeddr.mpsutil.json.mpl" folder="rest.json" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.mpl" folder="rest.jung" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/com.mbeddr.mpsutil.jung.pluginSolution.msd" folder="rest.jung" />

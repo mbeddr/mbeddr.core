@@ -4,10 +4,12 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="C:/Users/aquapp/Dokumente/JSON Examples" type="json_stubs" />
   </models>
   <sourcePath />
   <languageVersions>
     <language slang="l:b5c0bb04-c583-4b2a-a66e-1eab92d33c68:com.mbeddr.mpsutil.json" version="0" />
+    <language slang="l:3456c3f4-e4c0-4cec-9041-2487ec88fa58:com.mbeddr.mpsutil.json.stubs.dummy.lang" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>

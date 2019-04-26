@@ -19,6 +19,9 @@
       <concept id="4342692121161028982" name="com.mbeddr.mpsutil.json.structure.JSONObject" flags="ng" index="3YX88f">
         <child id="4342692121161029321" name="variables" index="3YX86K" />
       </concept>
+      <concept id="4342692121161029098" name="com.mbeddr.mpsutil.json.structure.Boolean" flags="ng" index="3YX8aj">
+        <property id="4342692121161029101" name="value" index="3YX8ak" />
+      </concept>
       <concept id="4342692121161029103" name="com.mbeddr.mpsutil.json.structure.Array" flags="ng" index="3YX8am">
         <child id="4342692121161029106" name="values" index="3YX8ab" />
       </concept>
@@ -125,8 +128,8 @@
               </node>
               <node concept="3YX88e" id="55Y4t6TuhqZ" role="3YX86K">
                 <property role="TrG5h" value="withANumber" />
-                <node concept="3YX86D" id="55Y4t6TuhqY" role="3YX8ah">
-                  <property role="2xKZ1a" value="true" />
+                <node concept="3YX8aj" id="2uuR9IFBjom" role="3YX8ah">
+                  <property role="3YX8ak" value="true" />
                 </node>
               </node>
             </node>
@@ -175,8 +178,8 @@
               </node>
               <node concept="3YX88e" id="55Y4t6Tuhrh" role="3YX86K">
                 <property role="TrG5h" value="withANumber" />
-                <node concept="3YX86D" id="55Y4t6Tuhrg" role="3YX8ah">
-                  <property role="2xKZ1a" value="true" />
+                <node concept="3YX8aj" id="2uuR9IFBjiF" role="3YX8ah">
+                  <property role="3YX8ak" value="true" />
                 </node>
               </node>
             </node>
@@ -1020,8 +1023,8 @@
               </node>
               <node concept="3YX88e" id="2kQNZKGDigB" role="3YX86K">
                 <property role="TrG5h" value="withANumber" />
-                <node concept="3YX86D" id="2kQNZKGDigA" role="3YX8ah">
-                  <property role="2xKZ1a" value="true" />
+                <node concept="3YX8aj" id="2uuR9IFBju3" role="3YX8ah">
+                  <property role="3YX8ak" value="true" />
                 </node>
               </node>
             </node>

@@ -2,7 +2,7 @@
   <configuration default="false" name="Deploy JsonStubModel.plugin" type="MPS" factoryName="Deploy Plugins">
     <MyState>
       <option name="mySkipModulesLoading" value="false" />
-      <option name="myRestartCurrentInstance" value="true" />
+      <option name="myRestartCurrentInstance" value="false" />
     </MyState>
     <myPluginsSettings>
       <MyState>
