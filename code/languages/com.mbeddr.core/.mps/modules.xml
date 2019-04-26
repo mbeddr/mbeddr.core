@@ -14,7 +14,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.checks/com.mbeddr.core.checks.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cinterpreter/com.mbeddr.core.cinterpreter.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.codereview/com.mbeddr.core.codereview.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dataflow.test/com.mbeddr.core.dataflow.test.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dependencies/com.mbeddr.core.dependencies.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
