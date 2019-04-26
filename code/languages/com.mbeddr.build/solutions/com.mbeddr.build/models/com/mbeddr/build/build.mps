@@ -13000,6 +13000,11 @@
             <ref role="3bR37D" node="7eF9rfAnuj5" resolve="com.mbeddr.cc.var.annotations" />
           </node>
         </node>
+        <node concept="1SiIV0" id="S7Pdpbfl_d" role="3bR37C">
+          <node concept="3bR9La" id="S7Pdpbfl_e" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5l4WPWBssJ_" role="3989C9">
