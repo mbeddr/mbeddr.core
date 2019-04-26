@@ -396,7 +396,7 @@
         </node>
         <node concept="3vlDli" id="_qCyBYKWgd" role="3cqZAp">
           <node concept="Xl_RD" id="_qCyBYKWge" role="3tpDZB">
-            <property role="Xl_RC" value="Success: aVar is consistent." />
+            <property role="Xl_RC" value="Success: test.analyses.var.testcode.var_c.aVar is consistent." />
           </node>
           <node concept="2OqwBi" id="_qCyBYKWgf" role="3tpDZA">
             <node concept="2OqwBi" id="_qCyBYKWgg" role="2Oq$k0">
@@ -491,7 +491,7 @@
         </node>
         <node concept="3vlDli" id="_qCyBYL15B" role="3cqZAp">
           <node concept="Xl_RD" id="_qCyBYL15C" role="3tpDZB">
-            <property role="Xl_RC" value="Success: boo is consistent." />
+            <property role="Xl_RC" value="Success: test.analyses.var.testcode.var_c.boo is consistent." />
           </node>
           <node concept="2OqwBi" id="_qCyBYL15D" role="3tpDZA">
             <node concept="2OqwBi" id="_qCyBYL15E" role="2Oq$k0">
@@ -603,7 +603,7 @@
         </node>
         <node concept="3vlDli" id="_qCyBYL5DD" role="3cqZAp">
           <node concept="Xl_RD" id="_qCyBYL5DE" role="3tpDZB">
-            <property role="Xl_RC" value="Success: aGlobalVar is consistent." />
+            <property role="Xl_RC" value="Success: test.analyses.var.testcode.var_c.aGlobalVar is consistent." />
           </node>
           <node concept="2OqwBi" id="_qCyBYL5DF" role="3tpDZA">
             <node concept="2OqwBi" id="_qCyBYL5DG" role="2Oq$k0">
