@@ -11,7 +11,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildconfig/solution/pluginSolution/com.mbddr.core.buildconfig.pluginSolution.msd" folder="core-extended.solutions" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildvalidation/com.mbeddr.mpsutil.buildvalidation.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.checks/com.mbeddr.core.checks.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cinterpreter/com.mbeddr.core.cinterpreter.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.codereview/com.mbeddr.core.codereview.mpl" folder="core" />
