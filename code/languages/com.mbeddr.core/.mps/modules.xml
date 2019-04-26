@@ -48,8 +48,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.util.interpreter/com.mbeddr.core.util.interpreter.msd" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorialActions/com.mbeddr.tutorialActions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/aLibrary/aLibrary.msd" folder="tests" />
-      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.sandbox/com.mbeddr.mpsutil.uniquenames.msd" folder="tests.uniquenames" />
-      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.sandboxlang/com.mbeddr.mpsutil.uniquenames.sandboxlang.mpl" folder="tests.uniquenames" />
       <modulePath path="$PROJECT_DIR$/tests/test.editor.core/test.editor.core.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
