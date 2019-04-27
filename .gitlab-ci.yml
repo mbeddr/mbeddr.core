@@ -31,3 +31,5 @@ build:
   cache:
     paths:
       - $GRADLE_USER_HOME
+  only:
+    - web
