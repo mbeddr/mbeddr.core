@@ -21,6 +21,7 @@
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)" />
     <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.rt.analyzer.model)" />
     <import index="3o3s" ref="r:c8f6abe2-4235-462a-965b-fe6307bc1863(com.mbeddr.analyses.spin.behavior)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -154,6 +155,7 @@
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
@@ -228,6 +230,12 @@
       </node>
       <node concept="NWlO9" id="5yxSA$IRH$V" role="lGtFl">
         <property role="NWlVz" value="Check and return a lifted result." />
+      </node>
+      <node concept="37vLTG" id="1ieRNjmuHLC" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuI1S" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="37vLTG" id="6BM8NjXd_zo" role="3clF46">
         <property role="TrG5h" value="model" />
@@ -307,6 +315,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="1ieRNjmuIny" role="ukAjM">
+            <ref role="3cqZAo" node="1ieRNjmuHLC" resolve="repo" />
+          </node>
         </node>
         <node concept="3cpWs8" id="3lXW7OZ6VXk" role="3cqZAp">
           <node concept="3cpWsn" id="3lXW7OZ6VXn" role="3cpWs9">
@@ -359,6 +370,12 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="1ieRNjmuRg3" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuRrH" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="_jsMICrMge" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="_jsMICrMgf" role="1tU5fm">
@@ -374,6 +391,9 @@
           <node concept="2OqwBi" id="_jsMICrOai" role="3clFbG">
             <node concept="1rXfSq" id="_jsMICrNP3" role="2Oq$k0">
               <ref role="37wK5l" node="4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="37vLTw" id="1ieRNjmuRHF" role="37wK5m">
+                <ref role="3cqZAo" node="1ieRNjmuRg3" resolve="repo" />
+              </node>
               <node concept="37vLTw" id="_jsMICrNYR" role="37wK5m">
                 <ref role="3cqZAo" node="_jsMICrMge" resolve="model" />
               </node>
@@ -407,6 +427,12 @@
       <node concept="_YKpA" id="63QgsF$OB6R" role="3clF45">
         <node concept="3uibUv" id="63QgsF$OB6S" role="_ZDj9">
           <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1ieRNjmuXPa" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuXWQ" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="5yxSA$IRHT3" role="3clF46">
@@ -514,6 +540,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="1ieRNjmuY98" role="ukAjM">
+            <ref role="3cqZAo" node="1ieRNjmuXPa" resolve="repo" />
           </node>
         </node>
         <node concept="3clFbF" id="5yxSA$IRUpT" role="3cqZAp">

@@ -15,6 +15,7 @@
     <import index="pr99" ref="r:d360eb14-6c2a-48bb-8591-1dfcadaf9f6e(com.mbeddr.analyses.spin.rt.utils)" />
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -124,12 +125,14 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjN" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -247,6 +250,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="1ieRNjmuxg_" role="ukAjM">
+            <ref role="3cqZAo" node="1ieRNjmuwQX" resolve="repo" />
           </node>
         </node>
         <node concept="3clFbH" id="7VkE0BpuWKg" role="3cqZAp" />
@@ -465,6 +471,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="1ieRNjmux_W" role="ukAjM">
+            <ref role="3cqZAo" node="1ieRNjmuwQX" resolve="repo" />
+          </node>
         </node>
         <node concept="3clFbH" id="7VkE0Bpwiun" role="3cqZAp" />
         <node concept="3clFbH" id="Hdy9e2WA5B" role="3cqZAp" />
@@ -527,6 +536,12 @@
       <node concept="3Tm1VV" id="4kcU3Yrkdux" role="1B3o_S" />
       <node concept="3uibUv" id="4kcU3YrkV18" role="3clF45">
         <ref role="3uigEE" to="8e9v:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
+      </node>
+      <node concept="37vLTG" id="1ieRNjmuwQX" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuxch" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="37vLTG" id="4kcU3Yrkd$2" role="3clF46">
         <property role="TrG5h" value="pm" />
@@ -601,6 +616,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="1ieRNjmuCV2" role="ukAjN">
+            <ref role="3cqZAo" node="1ieRNjmuCC2" resolve="repo" />
           </node>
         </node>
         <node concept="3clFbJ" id="5wKAmZ3RNO$" role="3cqZAp">
@@ -732,6 +750,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="1ieRNjmuGrV" role="ukAjM">
+            <ref role="3cqZAo" node="1ieRNjmuCC2" resolve="repo" />
+          </node>
         </node>
         <node concept="3clFbH" id="3lXW7OZ5rU9" role="3cqZAp" />
         <node concept="3cpWs8" id="HmUOIG_5bg" role="3cqZAp">
@@ -795,6 +816,12 @@
       <node concept="3Tm1VV" id="HmUOIG_5b_" role="1B3o_S" />
       <node concept="3uibUv" id="HmUOIG_5bA" role="3clF45">
         <ref role="3uigEE" to="8e9v:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
+      </node>
+      <node concept="37vLTG" id="1ieRNjmuCC2" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuCQH" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="37vLTG" id="3lXW7OZ7oU3" role="3clF46">
         <property role="TrG5h" value="panSettings" />
