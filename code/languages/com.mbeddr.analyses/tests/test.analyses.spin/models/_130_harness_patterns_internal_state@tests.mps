@@ -16,12 +16,14 @@
     <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.rt.testing_utils)" />
     <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.rt.analyzer.model)" />
     <import index="llb3" ref="r:38e1b852-361b-47c0-99e1-1944e9fcd4c9(com.mbeddr.analyses.spin.c.patterns.structure)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -143,6 +145,12 @@
               <node concept="NRdvd" id="n$tw_alm_5" role="2Oq$k0">
                 <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <node concept="2OqwBi" id="1ieRNjmv8iF" role="37wK5m">
+                  <node concept="1jxXqW" id="1ieRNjmv8iG" role="2Oq$k0" />
+                  <node concept="liA8E" id="1ieRNjmv8iH" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="37vLTw" id="n$tw_alm_7" role="37wK5m">
                   <ref role="3cqZAo" node="n$tw_alm$p" resolve="m" />
                 </node>
@@ -293,6 +301,12 @@
               <node concept="NRdvd" id="n$tw_apwJ0" role="2Oq$k0">
                 <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <node concept="2OqwBi" id="1ieRNjmv8lw" role="37wK5m">
+                  <node concept="1jxXqW" id="1ieRNjmv8lx" role="2Oq$k0" />
+                  <node concept="liA8E" id="1ieRNjmv8ly" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="37vLTw" id="n$tw_apwJ1" role="37wK5m">
                   <ref role="3cqZAo" node="n$tw_apwIT" resolve="m" />
                 </node>
@@ -475,6 +489,12 @@
               <node concept="NRdvd" id="n$tw_almAE" role="2Oq$k0">
                 <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <node concept="2OqwBi" id="1ieRNjmuZHt" role="37wK5m">
+                  <node concept="1jxXqW" id="1ieRNjmuZa5" role="2Oq$k0" />
+                  <node concept="liA8E" id="1ieRNjmv1wT" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="37vLTw" id="n$tw_almAI" role="37wK5m">
                   <ref role="3cqZAo" node="n$tw_alm_s" resolve="m" />
                 </node>
@@ -597,6 +617,12 @@
               <node concept="NRdvd" id="n$tw_almAG" role="2Oq$k0">
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
                 <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
+                <node concept="2OqwBi" id="1ieRNjmv84N" role="37wK5m">
+                  <node concept="1jxXqW" id="1ieRNjmv84O" role="2Oq$k0" />
+                  <node concept="liA8E" id="1ieRNjmv84P" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="37vLTw" id="n$tw_almAK" role="37wK5m">
                   <ref role="3cqZAo" node="n$tw_alm_G" resolve="m" />
                 </node>
