@@ -12397,6 +12397,11 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
             </node>
           </node>
+          <node concept="1SiIV0" id="1ieRNjmFjYD" role="3bR37C">
+            <node concept="3bR9La" id="1ieRNjmFjYE" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1E1JtA" id="5HlC91LJU65" role="2G$12L">
