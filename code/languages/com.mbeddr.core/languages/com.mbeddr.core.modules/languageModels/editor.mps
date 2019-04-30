@@ -4883,22 +4883,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="xN636rYFQv">
-    <ref role="1XX52x" to="x27k:IrwlmWyLju" resolve="PragmaModuleContent" />
-    <node concept="3EZMnI" id="IrwlmWyLjz" role="2wV5jI">
-      <node concept="l2Vlx" id="IrwlmWyLj_" role="2iSdaV" />
-      <node concept="3F0ifn" id="IrwlmWyLjB" role="3EZMnx">
-        <property role="3F0ifm" value="#pragma" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      </node>
-      <node concept="3F0A7n" id="IrwlmWyLjD" role="3EZMnx">
-        <ref role="1NtTu8" to="x27k:IrwlmWyLjw" resolve="pragmaText" />
-        <node concept="VechU" id="IrwlmWyLjE" role="3F10Kt">
-          <property role="Vb096" value="darkGray" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="312cEu" id="3ieSxUOiefM">
     <property role="3GE5qa" value="functions" />
     <property role="TrG5h" value="ArgumentKind_Constants" />
@@ -5972,9 +5956,6 @@
     <node concept="3ft5Ry" id="2cvVnUv6C9N" role="3ft7WO">
       <ref role="4PJHt" to="x27k:5_l8w1EmTvx" resolve="Function" />
     </node>
-  </node>
-  <node concept="3p36aQ" id="2cvVnUv6C9Q">
-    <ref role="aqKnT" to="x27k:IrwlmWyLju" resolve="PragmaModuleContent" />
   </node>
   <node concept="3p36aQ" id="2cvVnUv6C9R">
     <ref role="aqKnT" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />

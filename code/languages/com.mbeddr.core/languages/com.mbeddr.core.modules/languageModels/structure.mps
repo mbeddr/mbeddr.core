@@ -24,9 +24,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118933224" name="comment" index="YLQ7P" />
-      </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -1472,24 +1470,6 @@
     <property role="34LRSv" value="__VA_ARGS__" />
     <property role="EcuMT" value="1990329643462093889" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-  </node>
-  <node concept="1TIwiD" id="IrwlmWyLju">
-    <property role="TrG5h" value="PragmaModuleContent" />
-    <property role="34LRSv" value="#pragma" />
-    <property role="R4oN_" value="#pragma" />
-    <property role="EcuMT" value="836404361042793694" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="IrwlmWyLjw" role="1TKVEl">
-      <property role="TrG5h" value="pragmaText" />
-      <property role="IQ2nx" value="836404361042793696" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="xN636rYFQ6" role="PzmwI">
-      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
-    </node>
-    <node concept="asaX9" id="1$baREjLD_n" role="lGtFl">
-      <property role="YLQ7P" value="since 2015-11-19" />
-    </node>
   </node>
   <node concept="1TIwiD" id="20xms4A94u9">
     <property role="3GE5qa" value="argumentKind" />
