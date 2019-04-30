@@ -19,9 +19,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118933224" name="comment" index="YLQ7P" />
-      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
@@ -62,7 +59,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -186,16 +182,6 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="6825476687691297429" />
       <ref role="20lvS9" node="5USXI9Kzban" resolve="FeatureAttribute" />
-    </node>
-    <node concept="1TJgyj" id="7k8WEKUE3fj" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="crossConstraints_old" />
-      <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="8433257123783652307" />
-      <ref role="20lvS9" node="7k8WEKUE3f1" resolve="CrossConstraint" />
-      <node concept="asaX9" id="5JlqNRKkXLk" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to superconcept &quot;com.mbeddr.cc.var.fm.structure.AbstractFeature&quot;" />
-      </node>
     </node>
     <node concept="1TJgyj" id="7CssUDY_eT6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
