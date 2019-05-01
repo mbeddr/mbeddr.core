@@ -3361,6 +3361,16 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3TO9TZn7JrQ" role="3bR37C">
+          <node concept="3bR9La" id="3TO9TZn7JrR" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:3vdGsjObwiv" resolve="com.mbeddr.mpsutil.search" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3TO9TZn7JrS" role="3bR37C">
+          <node concept="1Busua" id="3TO9TZn7JrT" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:3vdGsjObwiv" resolve="com.mbeddr.mpsutil.search" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6vuuYkaSA$1" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3514,6 +3524,16 @@
         <node concept="1SiIV0" id="1aL6sVX49E0" role="3bR37C">
           <node concept="3bR9La" id="1aL6sVX49E1" role="1SiIV1">
             <ref role="3bR37D" to="90a9:F1NWDqq_DA" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3TO9TZn7JrU" role="3bR37C">
+          <node concept="3bR9La" id="3TO9TZn7JrV" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:3vdGsjObwiv" resolve="com.mbeddr.mpsutil.search" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3TO9TZn7JrW" role="3bR37C">
+          <node concept="1Busua" id="3TO9TZn7JrX" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:3vdGsjObwiv" resolve="com.mbeddr.mpsutil.search" />
           </node>
         </node>
       </node>
