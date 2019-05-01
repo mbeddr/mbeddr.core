@@ -1479,9 +1479,6 @@
     </node>
     <node concept="3clFb_" id="4HeMkQiYQ0C" role="jymVt">
       <property role="TrG5h" value="getTool" />
-      <node concept="3uibUv" id="6HWgFIFfT5X" role="3clF45">
-        <ref role="3uigEE" to="eqyk:~BaseGeneratedTool" resolve="BaseGeneratedTool" />
-      </node>
       <node concept="3Tm6S6" id="4HeMkQiYQ0E" role="1B3o_S" />
       <node concept="3clFbS" id="4HeMkQiYQ0F" role="3clF47">
         <node concept="3cpWs6" id="4HeMkQiYQ0G" role="3cqZAp">
@@ -1492,6 +1489,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="1xUVSX" id="3$nP$VrKLt7" role="3clF45">
+        <ref role="1xYkEM" node="4HeMkQiYObL" resolve="MbeddrTodoViewer" />
       </node>
     </node>
     <node concept="3clFb_" id="4HeMkQiYQ0K" role="jymVt">
