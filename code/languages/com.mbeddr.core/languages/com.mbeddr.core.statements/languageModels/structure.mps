@@ -10,6 +10,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
+    <import index="4fl6" ref="r:8f62b2c1-a7c9-421c-b2ec-a2dc148f8eeb(com.mbeddr.mpsutil.search.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -645,7 +646,7 @@
       <ref role="PrY4T" to="vs0r:7uLL3Mf3udZ" resolve="ITextBlockOwner" />
     </node>
     <node concept="PrWs8" id="4ueXZrqtevg" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:jpyKDg1onz" resolve="ISearchSupport" />
+      <ref role="PrY4T" to="4fl6:jpyKDg1onz" resolve="ISearchSupport" />
     </node>
   </node>
   <node concept="1TIwiD" id="65XyadYMNd2">

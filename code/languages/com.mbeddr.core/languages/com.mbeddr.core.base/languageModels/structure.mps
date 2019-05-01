@@ -20,6 +20,7 @@
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="4fl6" ref="r:8f62b2c1-a7c9-421c-b2ec-a2dc148f8eeb(com.mbeddr.mpsutil.search.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -289,7 +290,7 @@
       <ref role="PrY4T" node="7uLL3Mf3udZ" resolve="ITextBlockOwner" />
     </node>
     <node concept="PrWs8" id="4ueXZrqtwBO" role="PzmwI">
-      <ref role="PrY4T" node="jpyKDg1onz" resolve="ISearchSupport" />
+      <ref role="PrY4T" to="4fl6:jpyKDg1onz" resolve="ISearchSupport" />
     </node>
     <node concept="PrWs8" id="6wvhQs7n6SX" role="PzmwI">
       <ref role="PrY4T" node="6yeRgC0uAED" resolve="IIsDocumentationComment" />
@@ -992,9 +993,12 @@
     <property role="EcuMT" value="8624890525768344447" />
   </node>
   <node concept="PlHQZ" id="jpyKDg1onz">
-    <property role="TrG5h" value="ISearchSupport" />
+    <property role="TrG5h" value="ISearchSupport_old" />
     <property role="3GE5qa" value="search" />
     <property role="EcuMT" value="349463322506397155" />
+    <node concept="asaX9" id="3vdGsjNKulm" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.search&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3Y7ywckEJZi">
     <property role="TrG5h" value="IKeepAliveInGeneration" />

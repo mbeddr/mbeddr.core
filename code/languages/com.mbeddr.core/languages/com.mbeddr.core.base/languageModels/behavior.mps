@@ -58,6 +58,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" />
+    <import index="9rgp" ref="r:a1c78404-28a1-4c78-9b72-4ad30ab32be6(com.mbeddr.mpsutil.search.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
@@ -933,7 +934,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="containsText" />
-      <ref role="13i0hy" node="jpyKDg1onB" resolve="containsText" />
+      <ref role="13i0hy" to="9rgp:jpyKDg1onB" resolve="containsText" />
       <node concept="3Tm1VV" id="4ueXZrqtwBR" role="1B3o_S" />
       <node concept="3clFbS" id="4ueXZrqtwBS" role="3clF47">
         <node concept="3clFbF" id="4ueXZrqtwC7" role="3cqZAp">
@@ -961,7 +962,7 @@
     </node>
     <node concept="13i0hz" id="4ueXZrqtN0Z" role="13h7CS">
       <property role="TrG5h" value="getResultNode" />
-      <ref role="13i0hy" node="4ueXZrqtaGB" resolve="getResultNode" />
+      <ref role="13i0hy" to="9rgp:4ueXZrqtaGB" resolve="getResultNode" />
       <node concept="3clFbS" id="4ueXZrqtN12" role="3clF47">
         <node concept="3clFbJ" id="4ueXZrqtN17" role="3cqZAp">
           <node concept="3clFbS" id="4ueXZrqtN18" role="3clFbx">
@@ -995,7 +996,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="resultName" />
-      <ref role="13i0hy" node="jpyKDg1pW5" resolve="resultName" />
+      <ref role="13i0hy" to="9rgp:jpyKDg1pW5" resolve="resultName" />
       <node concept="3Tm1VV" id="4ueXZrqtwBZ" role="1B3o_S" />
       <node concept="3clFbS" id="4ueXZrqtwC0" role="3clF47">
         <node concept="3clFbJ" id="4ueXZrqtwDO" role="3cqZAp">
@@ -1041,7 +1042,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="resultQualifiedName" />
-      <ref role="13i0hy" node="jpyKDg2TXB" resolve="resultNamespace" />
+      <ref role="13i0hy" to="9rgp:jpyKDg2TXB" resolve="resultNamespace" />
       <node concept="3Tm1VV" id="4ueXZrqtwC3" role="1B3o_S" />
       <node concept="3clFbS" id="4ueXZrqtwC4" role="3clF47">
         <node concept="3clFbJ" id="4ueXZrqtwHe" role="3cqZAp">
@@ -2348,7 +2349,7 @@
   </node>
   <node concept="13h7C7" id="jpyKDg1on$">
     <property role="3GE5qa" value="search" />
-    <ref role="13h7C2" to="vs0r:jpyKDg1onz" resolve="ISearchSupport" />
+    <ref role="13h7C2" to="vs0r:jpyKDg1onz" resolve="ISearchSupport_old" />
     <node concept="13i0hz" id="jpyKDg1onB" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />

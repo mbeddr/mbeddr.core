@@ -2,7 +2,7 @@
 <model ref="r:4fb22f91-1e13-48a0-a300-21fa004a07ef(com.mbeddr.tutorial.documentation.ug.mbeddrCvsC99)">
   <persistence version="9" />
   <languages>
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -1019,7 +1019,7 @@
               <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
             </node>
             <node concept="2NCMab" id="37qjepTtKzU" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:37qjepTtDSG" resolve="bool" />
+              <ref role="2NCMaa" to="zxcx:37qjepTtDSG" resolve="boo" />
             </node>
           </node>
         </node>

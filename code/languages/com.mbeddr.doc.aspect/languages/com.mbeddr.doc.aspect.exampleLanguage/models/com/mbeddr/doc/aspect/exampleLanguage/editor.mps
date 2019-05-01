@@ -131,5 +131,11 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3vdGsjOHdXz">
+    <ref role="1XX52x" to="hauh:6TuvEpVGx7v" resolve="DocumentedChild2" />
+    <node concept="3F0ifn" id="3vdGsjOHdX_" role="2wV5jI">
+      <property role="3F0ifm" value="child2" />
+    </node>
+  </node>
 </model>
 

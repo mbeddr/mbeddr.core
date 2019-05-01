@@ -33,6 +33,7 @@
     <import index="iq8l" ref="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)" />
     <import index="hzzn" ref="r:bd926a45-d72f-48d2-9b35-f5586f5ff2bc(com.mbeddr.core.pointers.constraints)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
+    <import index="9rgp" ref="r:a1c78404-28a1-4c78-9b72-4ad30ab32be6(com.mbeddr.mpsutil.search.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -3894,7 +3895,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="containsText" />
-      <ref role="13i0hy" to="hwgx:jpyKDg1onB" resolve="containsText" />
+      <ref role="13i0hy" to="9rgp:jpyKDg1onB" resolve="containsText" />
       <node concept="3Tm1VV" id="5MaVmNI51Wh" role="1B3o_S" />
       <node concept="3clFbS" id="5MaVmNI51Wm" role="3clF47">
         <node concept="3clFbF" id="5MaVmNI5n1_" role="3cqZAp">
@@ -3924,7 +3925,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="resultName" />
-      <ref role="13i0hy" to="hwgx:jpyKDg1pW5" resolve="resultName" />
+      <ref role="13i0hy" to="9rgp:jpyKDg1pW5" resolve="resultName" />
       <node concept="3Tm1VV" id="5MaVmNI5y3A" role="1B3o_S" />
       <node concept="3clFbS" id="5MaVmNI5y3D" role="3clF47">
         <node concept="3clFbF" id="5MaVmNI5yl9" role="3cqZAp">
@@ -3952,7 +3953,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="resultNamespace" />
-      <ref role="13i0hy" to="hwgx:jpyKDg2TXB" resolve="resultNamespace" />
+      <ref role="13i0hy" to="9rgp:jpyKDg2TXB" resolve="resultNamespace" />
       <node concept="3Tm1VV" id="5MaVmNI5CU3" role="1B3o_S" />
       <node concept="3clFbS" id="5MaVmNI5CU6" role="3clF47">
         <node concept="3cpWs8" id="1ki5dbA8JW3" role="3cqZAp">

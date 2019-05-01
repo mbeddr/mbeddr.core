@@ -10,6 +10,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
+    <import index="4fl6" ref="r:8f62b2c1-a7c9-421c-b2ec-a2dc148f8eeb(com.mbeddr.mpsutil.search.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -196,7 +197,7 @@
     <property role="EcuMT" value="6113173064526131575" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrDq" resolve="Literal" />
     <node concept="PrWs8" id="5MaVmNI4zkR" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:jpyKDg1onz" resolve="ISearchSupport" />
+      <ref role="PrY4T" to="4fl6:jpyKDg1onz" resolve="ISearchSupport" />
     </node>
     <node concept="PrWs8" id="6bzSKoI1uD7" role="PzmwI">
       <ref role="PrY4T" node="6bzSKoI1uCr" resolve="IStringLiteralLike" />

@@ -250,9 +250,7 @@
       <concept id="6307143892175831839" name="com.mbeddr.core.util.structure.IsInRangeExpression" flags="ng" index="1vVjFF" />
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
-      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK">
-        <child id="6116558314501347862" name="original_old" index="rcJHR" />
-      </concept>
+      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK" />
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
@@ -350,7 +348,7 @@
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
       <concept id="7713191144372389655" name="com.mbeddr.core.modules.structure.ITypeDef" flags="ng" index="2I2SlH">
-        <child id="6116558314501347862" name="original" index="rcJHS" />
+        <child id="6116558314501347862" name="original" index="rcJHR" />
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
@@ -3715,7 +3713,7 @@
     <node concept="rcJHK" id="2sC9iiGe4gW" role="N3F5h">
       <property role="TrG5h" value="bool1" />
       <property role="2OOxQR" value="true" />
-      <node concept="3TlMgk" id="_gbhdwI5HI" role="rcJHS">
+      <node concept="3TlMgk" id="_gbhdwI5HI" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
@@ -7506,7 +7504,7 @@
     <node concept="rcJHK" id="5flih_m2zxk" role="N3F5h">
       <property role="TrG5h" value="crc" />
       <property role="2OOxQR" value="true" />
-      <node concept="26VqpV" id="5flih_m2zxg" role="rcJHS">
+      <node concept="26VqpV" id="5flih_m2zxg" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
@@ -10332,15 +10330,7 @@
     <node concept="rcJHK" id="RcTPi1yMBT" role="N3F5h">
       <property role="TrG5h" value="DATA_TYPE" />
       <property role="2OOxQR" value="true" />
-      <node concept="3wxxNl" id="RcTPi1yMBU" role="rcJHR">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-        <node concept="19Rifw" id="RcTPi1yMBV" role="2umbIo">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="3wxxNl" id="6WeeguEAs8x" role="rcJHS">
+      <node concept="3wxxNl" id="6WeeguEAs8x" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <node concept="19Rifw" id="6WeeguEArzm" role="2umbIo">
@@ -10388,12 +10378,7 @@
     <node concept="rcJHK" id="RcTPi1yMC7" role="N3F5h">
       <property role="TrG5h" value="stk_stack_node_t" />
       <property role="2OOxQR" value="true" />
-      <node concept="1sgJKr" id="RcTPi1yMC8" role="rcJHR">
-        <property role="2c7vTL" value="false" />
-        <property role="2caQfQ" value="false" />
-        <ref role="1sgJKq" node="RcTPi1yMC1" resolve="stk_stack_node" />
-      </node>
-      <node concept="1sgJKr" id="6WeeguEAnCi" role="rcJHS">
+      <node concept="1sgJKr" id="6WeeguEAnCi" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <ref role="1sgJKq" node="RcTPi1yMC1" resolve="stk_stack_node" />
@@ -10442,12 +10427,7 @@
     <node concept="rcJHK" id="RcTPi1yMCl" role="N3F5h">
       <property role="TrG5h" value="stk_stack_t" />
       <property role="2OOxQR" value="true" />
-      <node concept="1sgJKr" id="RcTPi1yMCm" role="rcJHR">
-        <property role="2c7vTL" value="false" />
-        <property role="2caQfQ" value="false" />
-        <ref role="1sgJKq" node="RcTPi1yMCe" resolve="stk_stack" />
-      </node>
-      <node concept="1sgJKr" id="6WeeguEAnBH" role="rcJHS">
+      <node concept="1sgJKr" id="6WeeguEAnBH" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <ref role="1sgJKq" node="RcTPi1yMCe" resolve="stk_stack" />
@@ -11361,7 +11341,7 @@
     <property role="TrG5h" value="_090_data_structures_stack_harness" />
     <node concept="rcJHK" id="6WeeguEAven" role="N3F5h">
       <property role="TrG5h" value="MY_TYPE" />
-      <node concept="26Vqpk" id="6WeeguEAvwU" role="rcJHS">
+      <node concept="26Vqpk" id="6WeeguEAvwU" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
