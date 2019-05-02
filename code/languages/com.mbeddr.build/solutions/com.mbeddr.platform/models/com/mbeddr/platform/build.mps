@@ -1829,9 +1829,6 @@
       <node concept="m$_yC" id="64SK4bcNM6e" role="m$_yJ">
         <ref role="m$_y1" node="64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
       </node>
-      <node concept="m$_yC" id="4jcebaMOjEn" role="m$_yJ">
-        <ref role="m$_y1" node="HqNfTbUbus" resolve="com.mbeddr.mpsutil.breadcrumb" />
-      </node>
       <node concept="3_J27D" id="7tNo_gxoK8o" role="m_cZH">
         <node concept="3Mxwew" id="7tNo_gxoK8p" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.doc" />
