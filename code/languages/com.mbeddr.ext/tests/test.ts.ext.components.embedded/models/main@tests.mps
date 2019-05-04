@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:cb546b0b-8b53-4108-ae9a-2a0d0fc5c206(tests.comp.test.ts.ext.components.embedded.main@tests)">
+<model ref="r:cb546b0b-8b53-4108-ae9a-2a0d0fc5c206(test.ts.ext.components.embedded.main@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
@@ -11,7 +11,7 @@
   </languages>
   <imports>
     <import index="iowh" ref="r:c0815ac4-d2ac-4cc2-bba3-ad9f68c94008(com.mbeddr.ext.components.embedded.typesystem)" />
-    <import index="yrk4" ref="r:1fa340a4-b7c2-4d95-b04c-5d8f46e0e2ba(tests.comp.test.ts.ext.components.embedded.modules)" />
+    <import index="yrk4" ref="r:1fa340a4-b7c2-4d95-b04c-5d8f46e0e2ba(test.ts.ext.components.embedded.modules)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">

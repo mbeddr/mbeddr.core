@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="tests.comp.test.ts.ext.components.embedded" uuid="cc872c37-5126-4cea-bcc0-b45897eba581" moduleVersion="0" compileInMPS="true">
+<solution name="test.ts.ext.components.embedded" uuid="cc872c37-5126-4cea-bcc0-b45897eba581" moduleVersion="0" compileInMPS="true" generatorOutputPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext/tests/test.ts.ext.components.embedded/source_gen">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -105,7 +105,7 @@
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="5187f5c9-b8a8-4309-90b3-14f9919bd2d8(jetbrains.mps.refactoring)" version="0" />
     <module reference="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" version="0" />
-    <module reference="cc872c37-5126-4cea-bcc0-b45897eba581(tests.comp.test.ts.ext.components.embedded)" version="0" />
+    <module reference="cc872c37-5126-4cea-bcc0-b45897eba581(test.ts.ext.components.embedded)" version="0" />
   </dependencyVersions>
 </solution>
 

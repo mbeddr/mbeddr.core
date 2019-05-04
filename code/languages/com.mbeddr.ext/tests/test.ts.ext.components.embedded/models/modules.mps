@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1fa340a4-b7c2-4d95-b04c-5d8f46e0e2ba(tests.comp.test.ts.ext.components.embedded.modules)">
+<model ref="r:1fa340a4-b7c2-4d95-b04c-5d8f46e0e2ba(test.ts.ext.components.embedded.modules)">
   <persistence version="9" />
   <languages>
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />

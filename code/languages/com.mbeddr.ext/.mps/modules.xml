@@ -34,7 +34,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.units.interpreter/com.mbeddr.ext.units.interpreter.msd" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.units.runtime/com.mbeddr.ext.units.runtime.msd" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/test.editor.ext/test.editor.ext.msd" folder="tests" />
-      <modulePath path="$PROJECT_DIR$/solutions/tests.comp.test.ts.ext.components.embedded/tests.comp.test.ts.ext.components.embedded.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.concurrency/test.ex.ext.components.concurrency.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
@@ -50,6 +49,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ext.components.nodes_tracing/test.ext.components.nodes_tracing.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ext.math.nodes_tracing/test.ext.math.nodes_tracing.msd" folder="tests.math" />
       <modulePath path="$PROJECT_DIR$/tests/test.ext.statemachine.nodes_tracing/test.ext.statemachine.nodes_tracing.msd" folder="tests.statemachine" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.components.embedded/tests.ts.ext.components.embedded.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.concurrency/test.ts.ext.concurrency.msd" folder="tests.concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.statemachine/test.ts.ext.statemachine.msd" folder="tests" />
