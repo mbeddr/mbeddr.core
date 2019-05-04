@@ -18,7 +18,6 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="bs45" ref="r:debf6d1c-29a7-46eb-9b12-65f41e7c7416(com.mbeddr.ext.components.embedded.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -2654,88 +2653,6 @@
               <node concept="2Sf5sV" id="7_KH4FPHqlt" role="2Oq$k0" />
               <node concept="3TrEf2" id="7_KH4FPHsiV" role="2OqNvi">
                 <ref role="3Tt5mk" to="v7ag:7_KH4FPG_3P" resolve="elsePart" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="16gyj4A9ZD$">
-    <property role="3GE5qa" value="comp.runnable" />
-    <property role="TrG5h" value="toggleOnInterruptExitHandler" />
-    <ref role="2ZfgGC" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
-    <node concept="2S6ZIM" id="16gyj4A9ZD_" role="2ZfVej">
-      <node concept="3clFbS" id="16gyj4A9ZDA" role="2VODD2">
-        <node concept="3clFbF" id="16gyj4Aa6V8" role="3cqZAp">
-          <node concept="Xl_RD" id="16gyj4Aa6V7" role="3clFbG">
-            <property role="Xl_RC" value="Toggle on Interrupt Exit Handler" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="16gyj4A9ZDB" role="2ZfgGD">
-      <node concept="3clFbS" id="16gyj4A9ZDC" role="2VODD2">
-        <node concept="3clFbJ" id="16gyj4A9ZMu" role="3cqZAp">
-          <node concept="3clFbS" id="16gyj4A9ZMv" role="3clFbx">
-            <node concept="3clFbF" id="16gyj4A9ZMw" role="3cqZAp">
-              <node concept="2OqwBi" id="16gyj4A9ZMx" role="3clFbG">
-                <node concept="2OqwBi" id="16gyj4A9ZMy" role="2Oq$k0">
-                  <node concept="2Sf5sV" id="16gyj4A9ZMz" role="2Oq$k0" />
-                  <node concept="3CFZ6_" id="16gyj4A9ZM$" role="2OqNvi">
-                    <node concept="3CFYIy" id="16gyj4AainV" role="3CFYIz">
-                      <ref role="3CFYIx" to="bs45:16gyj4A9wF1" resolve="InterruptExitHandler" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="zfrQC" id="16gyj4A9ZMA" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="16gyj4A9ZMB" role="3clFbw">
-            <node concept="2OqwBi" id="16gyj4A9ZMC" role="2Oq$k0">
-              <node concept="2Sf5sV" id="16gyj4A9ZMD" role="2Oq$k0" />
-              <node concept="3CFZ6_" id="16gyj4A9ZME" role="2OqNvi">
-                <node concept="3CFYIy" id="16gyj4AahRN" role="3CFYIz">
-                  <ref role="3CFYIx" to="bs45:16gyj4A9wF1" resolve="InterruptExitHandler" />
-                </node>
-              </node>
-            </node>
-            <node concept="3w_OXm" id="16gyj4A9ZMG" role="2OqNvi" />
-          </node>
-          <node concept="9aQIb" id="16gyj4A9ZMH" role="9aQIa">
-            <node concept="3clFbS" id="16gyj4A9ZMI" role="9aQI4">
-              <node concept="3clFbF" id="16gyj4A9ZMJ" role="3cqZAp">
-                <node concept="2OqwBi" id="16gyj4A9ZMK" role="3clFbG">
-                  <node concept="2OqwBi" id="16gyj4A9ZML" role="2Oq$k0">
-                    <node concept="3CFZ6_" id="16gyj4A9ZMM" role="2OqNvi">
-                      <node concept="3CFYIy" id="16gyj4AaiQW" role="3CFYIz">
-                        <ref role="3CFYIx" to="bs45:16gyj4A9wF1" resolve="InterruptExitHandler" />
-                      </node>
-                    </node>
-                    <node concept="2Sf5sV" id="16gyj4A9ZMO" role="2Oq$k0" />
-                  </node>
-                  <node concept="3YRAZt" id="16gyj4A9ZMP" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="16gyj4Aa9Qp" role="2ZfVeh">
-      <node concept="3clFbS" id="16gyj4Aa9Qq" role="2VODD2">
-        <node concept="3clFbF" id="16gyj4AaaCn" role="3cqZAp">
-          <node concept="2OqwBi" id="16gyj4AafaP" role="3clFbG">
-            <node concept="2OqwBi" id="16gyj4Aabm8" role="2Oq$k0">
-              <node concept="2Sf5sV" id="16gyj4AaaCm" role="2Oq$k0" />
-              <node concept="3TrEf2" id="16gyj4Aaefh" role="2OqNvi">
-                <ref role="3Tt5mk" to="v7ag:3TmmsQkDcDO" resolve="trigger" />
-              </node>
-            </node>
-            <node concept="1mIQ4w" id="16gyj4Aagu5" role="2OqNvi">
-              <node concept="chp4Y" id="16gyj4Aah3D" role="cj9EA">
-                <ref role="cht4Q" to="bs45:7X9xw2qHaH3" resolve="InterruptTrigger" />
               </node>
             </node>
           </node>

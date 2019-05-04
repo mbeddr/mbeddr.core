@@ -34,6 +34,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.units.interpreter/com.mbeddr.ext.units.interpreter.msd" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.units.runtime/com.mbeddr.ext.units.runtime.msd" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/test.editor.ext/test.editor.ext.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/solutions/tests.comp.test.ts.ext.components.embedded/tests.comp.test.ts.ext.components.embedded.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.concurrency/test.ex.ext.components.concurrency.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />

@@ -46,7 +46,7 @@
     </language>
   </registry>
   <node concept="WtQ9Q" id="16gyj4Am4RV">
-    <property role="3GE5qa" value="isr.components" />
+    <property role="3GE5qa" value="" />
     <ref role="WuzLi" to="bs45:16gyj4A8Vjt" resolve="InterruptRunnableReturnValue" />
     <node concept="11bSqf" id="16gyj4Am4RW" role="11c4hB">
       <node concept="3clFbS" id="16gyj4Am4RX" role="2VODD2">

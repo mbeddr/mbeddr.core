@@ -5285,11 +5285,6 @@
             <ref role="3bR37D" node="7eF9rfAuAO0" resolve="com.mbeddr.ext.components" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1TgQnsyn$B6" role="3bR37C">
-          <node concept="3bR9La" id="1TgQnsyn$B7" role="1SiIV1">
-            <ref role="3bR37D" node="7eF9rfAuAO$" resolve="com.mbeddr.ext.components.embedded" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="23YYu_FZGKk" role="3bR37C">
           <node concept="3bR9La" id="23YYu_FZGKl" role="1SiIV1">
             <ref role="3bR37D" node="7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
@@ -5558,6 +5553,11 @@
               <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
             </node>
           </node>
+          <node concept="1SiIV0" id="3F9kUGaOZr9" role="3bR37C">
+            <node concept="3bR9La" id="3F9kUGaOZra" role="1SiIV1">
+              <ref role="3bR37D" node="7uZw0yZ43LZ" resolve="com.mbeddr.core.embedded" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="7eF9rfAuAOG" role="3bR37C">
           <node concept="1Busua" id="7eF9rfAuAOH" role="1SiIV1">
@@ -5577,6 +5577,26 @@
         <node concept="1SiIV0" id="16gyj4AvNMT" role="3bR37C">
           <node concept="3bR9La" id="16gyj4AvNMU" role="1SiIV1">
             <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3F9kUG9_8_R" role="3bR37C">
+          <node concept="3bR9La" id="3F9kUG9_8_S" role="1SiIV1">
+            <ref role="3bR37D" node="7tgCHAyOtFQ" resolve="com.mbeddr.ext.compositecomponents" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3F9kUGaOZr3" role="3bR37C">
+          <node concept="3bR9La" id="3F9kUGaOZr4" role="1SiIV1">
+            <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3F9kUGaOZr5" role="3bR37C">
+          <node concept="3bR9La" id="3F9kUGaOZr6" role="1SiIV1">
+            <ref role="3bR37D" node="7eF9rfAuAOO" resolve="com.mbeddr.ext.components.gen_nomw" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3F9kUGaOZr7" role="3bR37C">
+          <node concept="3bR9La" id="3F9kUGaOZr8" role="1SiIV1">
+            <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
           </node>
         </node>
       </node>

@@ -7816,10 +7816,16 @@
               <node concept="2OqwBi" id="72$zFfWg5bU" role="2Oq$k0">
                 <node concept="2OqwBi" id="72$zFfWg5bu" role="2Oq$k0">
                   <node concept="2OqwBi" id="72$zFfWfB7A" role="2Oq$k0">
-                    <node concept="37vLTw" id="5V9BP5IC_Iw" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5V9BP5IC$FU" resolve="expr" />
+                    <node concept="1PxgMI" id="RL5s9UZ0fc" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="RL5s9UZ0EO" role="3oSUPX">
+                        <ref role="cht4Q" to="v7ag:71UKpntog8p" resolve="PortAdapterRefExpr" />
+                      </node>
+                      <node concept="37vLTw" id="5V9BP5IC_Iw" role="1m5AlR">
+                        <ref role="3cqZAo" node="5V9BP5IC$FU" resolve="expr" />
+                      </node>
                     </node>
-                    <node concept="3TrEf2" id="72$zFfWg5b8" role="2OqNvi">
+                    <node concept="3TrEf2" id="RL5s9UZ1AM" role="2OqNvi">
                       <ref role="3Tt5mk" to="v7ag:71UKpntog8q" resolve="portAdater" />
                     </node>
                   </node>
