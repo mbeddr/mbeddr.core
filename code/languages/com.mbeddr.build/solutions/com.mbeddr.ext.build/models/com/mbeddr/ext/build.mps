@@ -942,6 +942,9 @@
       <node concept="L2wRC" id="7Vt15sLW_nO" role="39821P">
         <ref role="L2wRA" node="7Vt15sLW_or" resolve="test.ts.ext.components" />
       </node>
+      <node concept="L2wRC" id="3ClwVOAo2N0" role="39821P">
+        <ref role="L2wRA" node="3F9kUGaP0yB" resolve="test.ts.ext.components.embedded" />
+      </node>
       <node concept="L2wRC" id="1VMOGozl88H" role="39821P">
         <ref role="L2wRA" node="1VMOGozl6xX" resolve="test.ts.ext.units" />
       </node>
@@ -1421,6 +1424,9 @@
       <property role="TrG5h" value="com.mbeddr.ext.tests" />
       <node concept="22LTRM" id="7Vt15sLW_oC" role="22LTRK">
         <ref role="22LTRN" node="7Vt15sLW_or" resolve="test.ts.ext.components" />
+      </node>
+      <node concept="22LTRM" id="3ClwVOAo2OC" role="22LTRK">
+        <ref role="22LTRN" node="3F9kUGaP0yB" resolve="test.ts.ext.components.embedded" />
       </node>
       <node concept="22LTRM" id="53wbATGwcIU" role="22LTRK">
         <ref role="22LTRN" node="1VMOGozl6xX" resolve="test.ts.ext.units" />
