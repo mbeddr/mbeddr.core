@@ -43,6 +43,7 @@
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
     </language>
@@ -164,34 +165,35 @@
     </node>
     <node concept="2EWCtd" id="3F9kUGaOOYS" role="N3F5h">
       <property role="TrG5h" value="FlatDummyInstances1" />
+      <property role="2OOxQR" value="true" />
       <node concept="2EWCuV" id="3F9kUGaOOYT" role="5JtDH">
-        <property role="TrG5h" value="dummyAtomic7" />
+        <property role="TrG5h" value="dummyAtomic1" />
         <ref role="2EWCuU" node="3F9kUGaOOXT" resolve="DummyAtomic" />
       </node>
       <node concept="3_ZhDN" id="3F9kUGaOOYU" role="5JtDH">
-        <ref role="3_ZhDP" node="3F9kUGaOOYT" resolve="dummyAtomic7" />
+        <ref role="3_ZhDP" node="3F9kUGaOOYT" resolve="dummyAtomic1" />
         <ref role="3_ZhDQ" node="3F9kUGaOOXU" resolve="isr" />
         <ref role="3_ZhDO" node="3F9kUGaOOXO" resolve="TEST_INTERRUPT_VECTOR_1" />
       </node>
       <node concept="3_ZhDN" id="3F9kUGaOOYV" role="5JtDH">
         <ref role="3_ZhDQ" node="3F9kUGaOOXZ" resolve="isrWithExitHandler" />
         <ref role="3_ZhDO" node="3F9kUGaOOXP" resolve="TEST_INTERRUPT_VECTOR_2" />
-        <ref role="3_ZhDP" node="3F9kUGaOOYT" resolve="dummyAtomic7" />
+        <ref role="3_ZhDP" node="3F9kUGaOOYT" resolve="dummyAtomic1" />
       </node>
       <node concept="JAGxh" id="3F9kUGaOOYW" role="5JtDH" />
       <node concept="2EWCuV" id="3F9kUGaOOYX" role="5JtDH">
-        <property role="TrG5h" value="dummyAtomic8" />
+        <property role="TrG5h" value="dummyAtomic2" />
         <ref role="2EWCuU" node="3F9kUGaOOXT" resolve="DummyAtomic" />
       </node>
       <node concept="3_ZhDN" id="3F9kUGaOOYY" role="5JtDH">
         <ref role="3_ZhDQ" node="3F9kUGaOOXU" resolve="isr" />
-        <ref role="3_ZhDP" node="3F9kUGaOOYX" resolve="dummyAtomic8" />
+        <ref role="3_ZhDP" node="3F9kUGaOOYX" resolve="dummyAtomic2" />
         <ref role="3_ZhDO" node="3F9kUGaOOXO" resolve="TEST_INTERRUPT_VECTOR_1" />
       </node>
       <node concept="3_ZhDN" id="3F9kUGaOOYZ" role="5JtDH">
         <ref role="3_ZhDQ" node="3F9kUGaOOXZ" resolve="isrWithExitHandler" />
         <ref role="3_ZhDO" node="3F9kUGaOOXQ" resolve="TEST_INTERRUPT_VECTOR_3" />
-        <ref role="3_ZhDP" node="3F9kUGaOOYX" resolve="dummyAtomic8" />
+        <ref role="3_ZhDP" node="3F9kUGaOOYX" resolve="dummyAtomic2" />
       </node>
     </node>
     <node concept="2NXPZ9" id="3F9kUGaOOZ0" role="N3F5h">
@@ -212,17 +214,18 @@
     <property role="TrG5h" value="Dummy2" />
     <node concept="2EWCtd" id="3F9kUGaOPbJ" role="N3F5h">
       <property role="TrG5h" value="FlatDummyInstances2" />
+      <property role="2OOxQR" value="true" />
       <node concept="2EWCuV" id="3F9kUGaOPbK" role="5JtDH">
-        <property role="TrG5h" value="dummyAtomic9" />
+        <property role="TrG5h" value="dummyAtomic3" />
         <ref role="2EWCuU" node="3F9kUGaOOXT" resolve="DummyAtomic" />
       </node>
       <node concept="3_ZhDN" id="3F9kUGaOPbL" role="5JtDH">
-        <ref role="3_ZhDP" node="3F9kUGaOPbK" resolve="dummyAtomic9" />
+        <ref role="3_ZhDP" node="3F9kUGaOPbK" resolve="dummyAtomic3" />
         <ref role="3_ZhDQ" node="3F9kUGaOOXU" resolve="isr" />
         <ref role="3_ZhDO" node="3F9kUGaOOXO" resolve="TEST_INTERRUPT_VECTOR_1" />
       </node>
       <node concept="3_ZhDN" id="3F9kUGaOPbM" role="5JtDH">
-        <ref role="3_ZhDP" node="3F9kUGaOPbK" resolve="dummyAtomic9" />
+        <ref role="3_ZhDP" node="3F9kUGaOPbK" resolve="dummyAtomic3" />
         <ref role="3_ZhDQ" node="3F9kUGaOOXZ" resolve="isrWithExitHandler" />
         <ref role="3_ZhDO" node="3F9kUGaOOXP" resolve="TEST_INTERRUPT_VECTOR_2" />
       </node>
@@ -241,6 +244,7 @@
       <node concept="19Rifw" id="3F9kUGaOPti" role="2C2TGm" />
     </node>
     <node concept="3GEVxB" id="3F9kUGaOPFY" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="3F9kUGaOOXM" resolve="Dummy1" />
     </node>
   </node>
@@ -277,9 +281,6 @@
           <node concept="Pu267" id="3F9kUGaOQPD" role="2umbIo" />
         </node>
       </node>
-    </node>
-    <node concept="3GEVxB" id="3F9kUGaOQS4" role="2OODSX">
-      <ref role="3GEb4d" node="3F9kUGaOOXM" resolve="Dummy1" />
     </node>
     <node concept="3GEVxB" id="3F9kUGaOQVE" role="2OODSX">
       <ref role="3GEb4d" node="3F9kUGaOPax" resolve="Dummy2" />

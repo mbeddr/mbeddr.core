@@ -144,12 +144,6 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
-        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
-      </concept>
-      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
-        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
-      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -192,7 +186,6 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1201872418428" name="jetbrains.mps.baseLanguage.collections.structure.GetKeysOperation" flags="nn" index="3lbrtF" />
@@ -271,76 +264,46 @@
         </node>
       </node>
       <node concept="3clFbJ" id="16gyj4ArNdL" role="3cqZAp">
-        <node concept="1Wc70l" id="3F9kUG9$KwW" role="3clFbw">
-          <node concept="2OqwBi" id="3F9kUG9$NWs" role="3uHU7w">
-            <node concept="37vLTw" id="3F9kUG9$KC_" role="2Oq$k0">
-              <ref role="3cqZAo" node="3F9kUG9$Iu$" resolve="visibleCompanions" />
-            </node>
-            <node concept="2HwmR7" id="3F9kUG9$Ub9" role="2OqNvi">
-              <node concept="1bVj0M" id="3F9kUG9$Ubb" role="23t8la">
-                <node concept="3clFbS" id="3F9kUG9$Ubc" role="1bW5cS">
-                  <node concept="3clFbF" id="3F9kUG9$Umd" role="3cqZAp">
-                    <node concept="2OqwBi" id="16gyj4Asv$v" role="3clFbG">
-                      <node concept="2OqwBi" id="16gyj4ArPhc" role="2Oq$k0">
-                        <node concept="2OqwBi" id="16gyj4ArNGV" role="2Oq$k0">
-                          <node concept="37vLTw" id="3F9kUG9$UKl" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3F9kUG9$Ubd" resolve="it" />
-                          </node>
-                          <node concept="3TrEf2" id="16gyj4ArO3h" role="2OqNvi">
-                            <ref role="3Tt5mk" to="bs45:7X9xw2qH9LQ" resolve="runnable" />
-                          </node>
-                        </node>
-                        <node concept="3CFZ6_" id="16gyj4ArQXb" role="2OqNvi">
-                          <node concept="3CFYIy" id="16gyj4Asvhc" role="3CFYIz">
-                            <ref role="3CFYIx" to="bs45:16gyj4A9wF1" resolve="InterruptExitHandler" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3x8VRR" id="16gyj4AswGU" role="2OqNvi" />
+        <node concept="3clFbS" id="16gyj4ArNdN" role="3clFbx">
+          <node concept="2MkqsV" id="16gyj4AsJKM" role="3cqZAp">
+            <node concept="3cpWs3" id="3ClwVOArpAK" role="2MkJ7o">
+              <node concept="3cpWs3" id="3F9kUGayxfs" role="3uHU7B">
+                <node concept="3cpWs3" id="3F9kUGaywfc" role="3uHU7B">
+                  <node concept="Xl_RD" id="3F9kUGaywfi" role="3uHU7B">
+                    <property role="Xl_RC" value="cannot bind the interrupt vector " />
+                  </node>
+                  <node concept="2OqwBi" id="3F9kUGayxYN" role="3uHU7w">
+                    <node concept="1YBJjd" id="3F9kUGayxHk" role="2Oq$k0">
+                      <ref role="1YBMHb" node="16gyj4ArNdH" resolve="interruptRunnableMapping" />
+                    </node>
+                    <node concept="3TrEf2" id="3F9kUGayzfh" role="2OqNvi">
+                      <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="3F9kUG9$Ubd" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="3F9kUG9$Ube" role="1tU5fm" />
+                <node concept="Xl_RD" id="3F9kUGaywfk" role="3uHU7w">
+                  <property role="Xl_RC" value=" to multiple interrupt-triggered component runnables\nbecause the following of them expose an interrupt exit handler: " />
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3eOSWO" id="16gyj4AsJoO" role="3uHU7B">
-            <node concept="2OqwBi" id="16gyj4AsALz" role="3uHU7B">
-              <node concept="37vLTw" id="3F9kUG9$IuC" role="2Oq$k0">
-                <ref role="3cqZAo" node="3F9kUG9$Iu$" resolve="visibleCompanions" />
-              </node>
-              <node concept="34oBXx" id="16gyj4AsGNi" role="2OqNvi" />
-            </node>
-            <node concept="3cmrfG" id="16gyj4AsJoR" role="3uHU7w">
-              <property role="3cmrfH" value="1" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="16gyj4ArNdN" role="3clFbx">
-          <node concept="2MkqsV" id="16gyj4AsJKM" role="3cqZAp">
-            <node concept="3cpWs3" id="3F9kUGayxfs" role="2MkJ7o">
-              <node concept="Xl_RD" id="3F9kUGaywfk" role="3uHU7w">
-                <property role="Xl_RC" value=" to multiple interrupt-triggered component runnables when one or more of them expose an interrupt exit handler" />
-              </node>
-              <node concept="3cpWs3" id="3F9kUGaywfc" role="3uHU7B">
-                <node concept="Xl_RD" id="3F9kUGaywfi" role="3uHU7B">
-                  <property role="Xl_RC" value="cannot bind same interrupt vector " />
-                </node>
-                <node concept="2OqwBi" id="3F9kUGayxYN" role="3uHU7w">
-                  <node concept="1YBJjd" id="3F9kUGayxHk" role="2Oq$k0">
-                    <ref role="1YBMHb" node="16gyj4ArNdH" resolve="interruptRunnableMapping" />
-                  </node>
-                  <node concept="3TrEf2" id="3F9kUGayzfh" role="2OqNvi">
-                    <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
-                  </node>
+              <node concept="2YIFZM" id="3ClwVOArpV9" role="3uHU7w">
+                <ref role="37wK5l" to="ifwr:3ClwVOAq7LQ" resolve="getCompanionsWithInterruptExitHandlers" />
+                <ref role="1Pybhc" to="ifwr:3ClwVOApe9D" resolve="InterruptRunnableMappingHelper" />
+                <node concept="37vLTw" id="3ClwVOArpVa" role="37wK5m">
+                  <ref role="3cqZAo" node="3F9kUG9$Iu$" resolve="visibleCompanions" />
                 </node>
               </node>
             </node>
             <node concept="1YBJjd" id="16gyj4AsJL1" role="2OEOjV">
               <ref role="1YBMHb" node="16gyj4ArNdH" resolve="interruptRunnableMapping" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="3ClwVOApziR" role="3clFbw">
+          <node concept="2YIFZM" id="3ClwVOApziT" role="3fr31v">
+            <ref role="37wK5l" to="ifwr:3ClwVOApef8" resolve="hasValidInterruptExitHandlerUsage" />
+            <ref role="1Pybhc" to="ifwr:3ClwVOApe9D" resolve="InterruptRunnableMappingHelper" />
+            <node concept="37vLTw" id="3ClwVOApziU" role="37wK5m">
+              <ref role="3cqZAo" node="3F9kUG9$Iu$" resolve="visibleCompanions" />
             </node>
           </node>
         </node>
@@ -799,21 +762,30 @@
                           <node concept="1bVj0M" id="3F9kUGayptX" role="23t8la">
                             <node concept="3clFbS" id="3F9kUGayptY" role="1bW5cS">
                               <node concept="2MkqsV" id="3F9kUGawZZA" role="3cqZAp">
-                                <node concept="3cpWs3" id="3F9kUGaxKnj" role="2MkJ7o">
-                                  <node concept="Xl_RD" id="3F9kUGaxJhR" role="3uHU7w">
-                                    <property role="Xl_RC" value=" to multiple interrupt-triggered component runnables when one or more of them expose an interrupt exit handler" />
-                                  </node>
-                                  <node concept="3cpWs3" id="3F9kUGaxJhJ" role="3uHU7B">
-                                    <node concept="Xl_RD" id="3F9kUGaxJhP" role="3uHU7B">
-                                      <property role="Xl_RC" value="cannot bind interrupt vector " />
-                                    </node>
-                                    <node concept="37vLTw" id="3F9kUGaxKUv" role="3uHU7w">
-                                      <ref role="3cqZAo" node="3F9kUGaw46k" resolve="interrupt" />
-                                    </node>
-                                  </node>
-                                </node>
                                 <node concept="37vLTw" id="3F9kUGays3Z" role="2OEOjV">
                                   <ref role="3cqZAo" node="3F9kUGayptZ" resolve="it" />
+                                </node>
+                                <node concept="3cpWs3" id="3ClwVOArcDU" role="2MkJ7o">
+                                  <node concept="3cpWs3" id="3ClwVOArcDV" role="3uHU7B">
+                                    <node concept="3cpWs3" id="3ClwVOArcDW" role="3uHU7B">
+                                      <node concept="Xl_RD" id="3ClwVOArcDX" role="3uHU7B">
+                                        <property role="Xl_RC" value="cannot use this combination of implementation modules\nbecause they use instance configurations that bind the interrupt vector " />
+                                      </node>
+                                      <node concept="37vLTw" id="3ClwVOArcDY" role="3uHU7w">
+                                        <ref role="3cqZAo" node="3F9kUGaw46k" resolve="interrupt" />
+                                      </node>
+                                    </node>
+                                    <node concept="Xl_RD" id="3ClwVOArcDZ" role="3uHU7w">
+                                      <property role="Xl_RC" value=" to multiple interrupt-triggered component runnables\nwhere the following of them expose an interrupt exit handler: " />
+                                    </node>
+                                  </node>
+                                  <node concept="2YIFZM" id="3ClwVOArcE0" role="3uHU7w">
+                                    <ref role="1Pybhc" to="ifwr:3ClwVOApe9D" resolve="InterruptRunnableMappingHelper" />
+                                    <ref role="37wK5l" to="ifwr:3ClwVOAq7LQ" resolve="getCompanionsWithInterruptExitHandlers" />
+                                    <node concept="37vLTw" id="3ClwVOArcE1" role="37wK5m">
+                                      <ref role="3cqZAo" node="3F9kUGayAjw" resolve="visibleCompanions" />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -826,51 +798,12 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="1Wc70l" id="3F9kUGawpid" role="3clFbw">
-                    <node concept="2OqwBi" id="3F9kUGawv7t" role="3uHU7w">
-                      <node concept="2HwmR7" id="3F9kUGawCUk" role="2OqNvi">
-                        <node concept="1bVj0M" id="3F9kUGawCUm" role="23t8la">
-                          <node concept="3clFbS" id="3F9kUGawCUn" role="1bW5cS">
-                            <node concept="3clFbF" id="3F9kUGawHWt" role="3cqZAp">
-                              <node concept="2OqwBi" id="3F9kUGawHWv" role="3clFbG">
-                                <node concept="2OqwBi" id="3F9kUGawHWw" role="2Oq$k0">
-                                  <node concept="2OqwBi" id="3F9kUGawHWx" role="2Oq$k0">
-                                    <node concept="37vLTw" id="3F9kUGawHWy" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="3F9kUGawCUo" resolve="it" />
-                                    </node>
-                                    <node concept="3TrEf2" id="3F9kUGawHWz" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="bs45:7X9xw2qH9LQ" resolve="runnable" />
-                                    </node>
-                                  </node>
-                                  <node concept="3CFZ6_" id="3F9kUGawHW$" role="2OqNvi">
-                                    <node concept="3CFYIy" id="3F9kUGawHW_" role="3CFYIz">
-                                      <ref role="3CFYIx" to="bs45:16gyj4A9wF1" resolve="InterruptExitHandler" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3x8VRR" id="3F9kUGawHWA" role="2OqNvi" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="Rh6nW" id="3F9kUGawCUo" role="1bW2Oz">
-                            <property role="TrG5h" value="it" />
-                            <node concept="2jxLKc" id="3F9kUGawCUp" role="1tU5fm" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="3F9kUGayAj_" role="2Oq$k0">
+                  <node concept="3fqX7Q" id="3ClwVOApwIX" role="3clFbw">
+                    <node concept="2YIFZM" id="3ClwVOApwIZ" role="3fr31v">
+                      <ref role="37wK5l" to="ifwr:3ClwVOApef8" resolve="hasValidInterruptExitHandlerUsage" />
+                      <ref role="1Pybhc" to="ifwr:3ClwVOApe9D" resolve="InterruptRunnableMappingHelper" />
+                      <node concept="37vLTw" id="3ClwVOApwJ0" role="37wK5m">
                         <ref role="3cqZAo" node="3F9kUGayAjw" resolve="visibleCompanions" />
-                      </node>
-                    </node>
-                    <node concept="3eOSWO" id="3F9kUGawnjL" role="3uHU7B">
-                      <node concept="2OqwBi" id="3F9kUGawMhc" role="3uHU7B">
-                        <node concept="37vLTw" id="3F9kUGayAj$" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3F9kUGayAjw" resolve="visibleCompanions" />
-                        </node>
-                        <node concept="34oBXx" id="3F9kUGawXt7" role="2OqNvi" />
-                      </node>
-                      <node concept="3cmrfG" id="3F9kUGawnjO" role="3uHU7w">
-                        <property role="3cmrfH" value="1" />
                       </node>
                     </node>
                   </node>
@@ -888,6 +821,185 @@
     <node concept="1YaCAy" id="3F9kUGaugSo" role="1YuTPh">
       <property role="TrG5h" value="buildConfiguration" />
       <ref role="1YaFvo" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3ClwVOAo4dn">
+    <property role="TrG5h" value="check_ImplementationModule" />
+    <node concept="3clFbS" id="3ClwVOAo4do" role="18ibNy">
+      <node concept="3cpWs8" id="3ClwVOAo5AZ" role="3cqZAp">
+        <node concept="3cpWsn" id="3ClwVOAo5B0" role="3cpWs9">
+          <property role="TrG5h" value="activeInstanceConfigurations" />
+          <node concept="2I9FWS" id="3ClwVOAo5B1" role="1tU5fm">
+            <ref role="2I9WkF" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+          </node>
+          <node concept="2YIFZM" id="3ClwVOAt0hc" role="33vP2m">
+            <ref role="37wK5l" to="ifwr:3ClwVOAsxoM" resolve="getActiveInstanceConfigurations" />
+            <ref role="1Pybhc" to="ifwr:3ClwVOAo75a" resolve="ImplementationModuleHelper" />
+            <node concept="1YBJjd" id="3ClwVOAt0hd" role="37wK5m">
+              <ref role="1YBMHb" node="3ClwVOAo4dq" resolve="implementationModule" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="3ClwVOAo5B4" role="3cqZAp">
+        <node concept="3cpWsn" id="3ClwVOAo5B5" role="3cpWs9">
+          <property role="TrG5h" value="visibleInterruptRunnableMappings" />
+          <node concept="3rvAFt" id="3ClwVOAo5B6" role="1tU5fm">
+            <node concept="3Tqbb2" id="3ClwVOAo5B7" role="3rvQeY">
+              <ref role="ehGHo" to="nbyu:SwwM9UHCGQ" resolve="InterruptDeclaration" />
+            </node>
+            <node concept="2I9FWS" id="3ClwVOAo5B8" role="3rvSg0">
+              <ref role="2I9WkF" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="3ClwVOAo5B9" role="33vP2m">
+            <ref role="37wK5l" to="ifwr:3F9kUGaxlKZ" resolve="getVisibleInterruptRunnableMappings" />
+            <ref role="1Pybhc" to="ifwr:3F9kUG9DW4G" resolve="InstanceConfigurationHelper" />
+            <node concept="37vLTw" id="3ClwVOAo5Ba" role="37wK5m">
+              <ref role="3cqZAo" node="3ClwVOAo5B0" resolve="activeInstanceConfigurations" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="3ClwVOAo5Bb" role="3cqZAp">
+        <node concept="2OqwBi" id="3ClwVOAo5Bc" role="3clFbG">
+          <node concept="2OqwBi" id="3ClwVOAo5Bd" role="2Oq$k0">
+            <node concept="37vLTw" id="3ClwVOAo5Be" role="2Oq$k0">
+              <ref role="3cqZAo" node="3ClwVOAo5B5" resolve="visibleInterruptRunnableMappings" />
+            </node>
+            <node concept="3lbrtF" id="3ClwVOAo5Bf" role="2OqNvi" />
+          </node>
+          <node concept="2es0OD" id="3ClwVOAo5Bg" role="2OqNvi">
+            <node concept="1bVj0M" id="3ClwVOAo5Bh" role="23t8la">
+              <node concept="3clFbS" id="3ClwVOAo5Bi" role="1bW5cS">
+                <node concept="3cpWs8" id="3ClwVOAo5Bj" role="3cqZAp">
+                  <node concept="3cpWsn" id="3ClwVOAo5Bk" role="3cpWs9">
+                    <property role="TrG5h" value="visibleCompanions" />
+                    <node concept="2I9FWS" id="3ClwVOAo5Bl" role="1tU5fm">
+                      <ref role="2I9WkF" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                    </node>
+                    <node concept="3EllGN" id="3ClwVOAo5Bm" role="33vP2m">
+                      <node concept="37vLTw" id="3ClwVOAo5Bn" role="3ElVtu">
+                        <ref role="3cqZAo" node="3ClwVOAo5CC" resolve="interrupt" />
+                      </node>
+                      <node concept="37vLTw" id="3ClwVOAo5Bo" role="3ElQJh">
+                        <ref role="3cqZAo" node="3ClwVOAo5B5" resolve="visibleInterruptRunnableMappings" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="3ClwVOApJVe" role="3cqZAp">
+                  <node concept="2OqwBi" id="3ClwVOApJVg" role="3clFbG">
+                    <node concept="2OqwBi" id="3ClwVOApJVh" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3ClwVOApJVi" role="2Oq$k0">
+                        <node concept="37vLTw" id="3ClwVOApJVj" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3ClwVOAo5Bk" resolve="visibleCompanions" />
+                        </node>
+                        <node concept="3$u5V9" id="3ClwVOApJVk" role="2OqNvi">
+                          <node concept="1bVj0M" id="3ClwVOApJVl" role="23t8la">
+                            <node concept="3clFbS" id="3ClwVOApJVm" role="1bW5cS">
+                              <node concept="3clFbF" id="3ClwVOApJVn" role="3cqZAp">
+                                <node concept="2OqwBi" id="3ClwVOApJVo" role="3clFbG">
+                                  <node concept="37vLTw" id="3ClwVOApJVp" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3ClwVOApJVt" resolve="it" />
+                                  </node>
+                                  <node concept="2Xjw5R" id="3ClwVOApJVq" role="2OqNvi">
+                                    <node concept="1xMEDy" id="3ClwVOApJVr" role="1xVPHs">
+                                      <node concept="chp4Y" id="3ClwVOApJVs" role="ri$Ld">
+                                        <ref role="cht4Q" to="x27k:5_l8w1EmTcX" resolve="Module" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Rh6nW" id="3ClwVOApJVt" role="1bW2Oz">
+                              <property role="TrG5h" value="it" />
+                              <node concept="2jxLKc" id="3ClwVOApJVu" role="1tU5fm" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1VAtEI" id="3ClwVOApJVv" role="2OqNvi" />
+                    </node>
+                    <node concept="ANE8D" id="3ClwVOApJVw" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3clFbH" id="3ClwVOApITm" role="3cqZAp" />
+                <node concept="3clFbJ" id="3ClwVOAo5BI" role="3cqZAp">
+                  <node concept="3clFbS" id="3ClwVOAo5BJ" role="3clFbx">
+                    <node concept="3clFbF" id="3ClwVOAo5BK" role="3cqZAp">
+                      <node concept="2OqwBi" id="3ClwVOAo5BL" role="3clFbG">
+                        <node concept="2YIFZM" id="3ClwVOAsBvE" role="2Oq$k0">
+                          <ref role="37wK5l" to="ifwr:3ClwVOAo75c" resolve="getActiveInitializeConfigurations" />
+                          <ref role="1Pybhc" to="ifwr:3ClwVOAo75a" resolve="ImplementationModuleHelper" />
+                          <node concept="1YBJjd" id="3ClwVOAsCFn" role="37wK5m">
+                            <ref role="1YBMHb" node="3ClwVOAo4dq" resolve="implementationModule" />
+                          </node>
+                        </node>
+                        <node concept="2es0OD" id="3ClwVOAo5C6" role="2OqNvi">
+                          <node concept="1bVj0M" id="3ClwVOAo5C7" role="23t8la">
+                            <node concept="3clFbS" id="3ClwVOAo5C8" role="1bW5cS">
+                              <node concept="2MkqsV" id="3ClwVOAo5C9" role="3cqZAp">
+                                <node concept="3cpWs3" id="3ClwVOAr8Kf" role="2MkJ7o">
+                                  <node concept="3cpWs3" id="3ClwVOAo5Ca" role="3uHU7B">
+                                    <node concept="3cpWs3" id="3ClwVOAo5Cc" role="3uHU7B">
+                                      <node concept="Xl_RD" id="3ClwVOAo5Cd" role="3uHU7B">
+                                        <property role="Xl_RC" value="cannot use this combination of instance configurations\nbecause they bind the interrupt vector " />
+                                      </node>
+                                      <node concept="37vLTw" id="3ClwVOAo5Ce" role="3uHU7w">
+                                        <ref role="3cqZAo" node="3ClwVOAo5CC" resolve="interrupt" />
+                                      </node>
+                                    </node>
+                                    <node concept="Xl_RD" id="3ClwVOAr8Kl" role="3uHU7w">
+                                      <property role="Xl_RC" value=" to multiple interrupt-triggered component runnables\nwhere the following of them expose an interrupt exit handler: " />
+                                    </node>
+                                  </node>
+                                  <node concept="2YIFZM" id="3ClwVOArawi" role="3uHU7w">
+                                    <ref role="37wK5l" to="ifwr:3ClwVOAq7LQ" resolve="getCompanionsWithInterruptExitHandlers" />
+                                    <ref role="1Pybhc" to="ifwr:3ClwVOApe9D" resolve="InterruptRunnableMappingHelper" />
+                                    <node concept="37vLTw" id="3ClwVOAraO1" role="37wK5m">
+                                      <ref role="3cqZAo" node="3ClwVOAo5Bk" resolve="visibleCompanions" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="37vLTw" id="3ClwVOAo5Cf" role="2OEOjV">
+                                  <ref role="3cqZAo" node="3ClwVOAo5Cg" resolve="it" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Rh6nW" id="3ClwVOAo5Cg" role="1bW2Oz">
+                              <property role="TrG5h" value="it" />
+                              <node concept="2jxLKc" id="3ClwVOAo5Ch" role="1tU5fm" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3fqX7Q" id="3ClwVOApx$B" role="3clFbw">
+                    <node concept="2YIFZM" id="3ClwVOApx$D" role="3fr31v">
+                      <ref role="37wK5l" to="ifwr:3ClwVOApef8" resolve="hasValidInterruptExitHandlerUsage" />
+                      <ref role="1Pybhc" to="ifwr:3ClwVOApe9D" resolve="InterruptRunnableMappingHelper" />
+                      <node concept="37vLTw" id="3ClwVOApx$E" role="37wK5m">
+                        <ref role="3cqZAo" node="3ClwVOAo5Bk" resolve="visibleCompanions" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="3ClwVOAo5CC" role="1bW2Oz">
+                <property role="TrG5h" value="interrupt" />
+                <node concept="2jxLKc" id="3ClwVOAo5CD" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3ClwVOAo4dq" role="1YuTPh">
+      <property role="TrG5h" value="implementationModule" />
+      <ref role="1YaFvo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
     </node>
   </node>
 </model>
