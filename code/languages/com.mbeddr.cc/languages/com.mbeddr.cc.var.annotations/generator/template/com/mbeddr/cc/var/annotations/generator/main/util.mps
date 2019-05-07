@@ -581,7 +581,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="dC6OCguVuH" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNode.removeChild(org.jetbrains.mps.openapi.model.SNode):void" resolve="removeChild" />
+                              <ref role="37wK5l" to="mhbf:~SNode.removeChild(org.jetbrains.mps.openapi.model.SNode)" resolve="removeChild" />
                               <node concept="2GrUjf" id="dC6OCguVv$" role="37wK5m">
                                 <ref role="2Gs0qQ" node="3biQRBA41mm" resolve="c" />
                               </node>
@@ -596,7 +596,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="3biQRBA41mv" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+                              <ref role="37wK5l" to="mhbf:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode)" resolve="addChild" />
                               <node concept="37vLTw" id="dC6OCgr3KP" role="37wK5m">
                                 <ref role="3cqZAo" node="dC6OCgr3KL" resolve="r" />
                               </node>
@@ -623,7 +623,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="3biQRBA41mJ" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                                  <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String)" resolve="setProperty" />
                                   <node concept="2GrUjf" id="3biQRBA41mK" role="37wK5m">
                                     <ref role="2Gs0qQ" node="3biQRBA41mB" resolve="propName" />
                                   </node>
@@ -634,7 +634,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="3biQRBA41mO" role="2OqNvi">
-                                      <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                                      <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String)" resolve="getProperty" />
                                       <node concept="2GrUjf" id="3biQRBA41mP" role="37wK5m">
                                         <ref role="2Gs0qQ" node="3biQRBA41mB" resolve="propName" />
                                       </node>
@@ -650,7 +650,7 @@
                                 <ref role="2Gs0qQ" node="3biQRBA41mB" resolve="propName" />
                               </node>
                               <node concept="liA8E" id="3biQRBA41mT" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="Xl_RD" id="3biQRBA41mU" role="37wK5m">
                                   <property role="Xl_RC" value="name" />
                                 </node>
@@ -666,7 +666,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="3biQRBA41mY" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNode.getPropertyNames():java.lang.Iterable" resolve="getPropertyNames" />
+                          <ref role="37wK5l" to="mhbf:~SNode.getPropertyNames()" resolve="getPropertyNames" />
                         </node>
                       </node>
                     </node>

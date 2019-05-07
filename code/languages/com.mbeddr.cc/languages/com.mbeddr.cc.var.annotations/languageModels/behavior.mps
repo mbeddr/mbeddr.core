@@ -429,7 +429,7 @@
               <ref role="3cqZAo" node="opE5jFfT5$" resolve="link" />
             </node>
             <node concept="liA8E" id="7d6ZyVlYcYa" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional():boolean" resolve="isOptional" />
+              <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional()" resolve="isOptional" />
             </node>
           </node>
           <node concept="3eNFk2" id="opE5jFfT5X" role="3eNLev">
@@ -455,7 +455,7 @@
                   <ref role="3cqZAo" node="opE5jFfT5$" resolve="link" />
                 </node>
                 <node concept="liA8E" id="7d6ZyVlYfwq" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple():boolean" resolve="isMultiple" />
+                  <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple()" resolve="isMultiple" />
                 </node>
               </node>
             </node>
@@ -943,7 +943,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2h6lNbWo04o" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.hashCode():int" resolve="hashCode" />
+                  <ref role="37wK5l" to="wyt6:~String.hashCode()" resolve="hashCode" />
                 </node>
               </node>
             </node>
@@ -1785,7 +1785,7 @@
             <node concept="20xKod" id="6hM2_xVMDjD" role="20xKoT">
               <ref role="20xKoc" to="clbe:7D99css6O2R" resolve="EnumLiteralRef" />
               <node concept="2YIFZM" id="6hM2_xVThy3" role="20xKoW">
-                <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
+                <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
                 <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
                 <node concept="2OqwBi" id="6hM2_xVMER6" role="37wK5m">
                   <node concept="2OqwBi" id="6hM2_xVMDpm" role="2Oq$k0">
@@ -2579,7 +2579,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="4Z2KgTfDcgr" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                     <node concept="2OqwBi" id="4Z2KgTfDcFo" role="37wK5m">
                                       <node concept="37vLTw" id="4Z2KgTfDcsI" role="2Oq$k0">
                                         <ref role="3cqZAo" node="4omMoHU$xSS" resolve="fm" />

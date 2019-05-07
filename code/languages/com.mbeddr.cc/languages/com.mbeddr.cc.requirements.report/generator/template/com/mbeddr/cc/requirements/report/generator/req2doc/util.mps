@@ -262,13 +262,13 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="5XHUyB7izSQ" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                          <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                         </node>
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="7AHYCfD5Ca9" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~AbstractModule.getScope():org.jetbrains.mps.openapi.module.SearchScope" resolve="getScope" />
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getScope()" resolve="getScope" />
                   </node>
                 </node>
               </node>
@@ -288,10 +288,10 @@
             <node concept="2OqwBi" id="2AZbPfOKAiU" role="33vP2m">
               <node concept="2YIFZM" id="2AZbPfOKzol" role="2Oq$k0">
                 <ref role="1Pybhc" to="lui2:~FindUsagesFacade" resolve="FindUsagesFacade" />
-                <ref role="37wK5l" to="lui2:~FindUsagesFacade.getInstance():org.jetbrains.mps.openapi.module.FindUsagesFacade" resolve="getInstance" />
+                <ref role="37wK5l" to="lui2:~FindUsagesFacade.getInstance()" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="2AZbPfOKC2s" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~FindUsagesFacade.findUsages(org.jetbrains.mps.openapi.module.SearchScope,java.util.Set,org.jetbrains.mps.openapi.util.ProgressMonitor):java.util.Set" resolve="findUsages" />
+                <ref role="37wK5l" to="lui2:~FindUsagesFacade.findUsages(org.jetbrains.mps.openapi.module.SearchScope,java.util.Set,org.jetbrains.mps.openapi.util.ProgressMonitor)" resolve="findUsages" />
                 <node concept="37vLTw" id="2AZbPfOKC4b" role="37wK5m">
                   <ref role="3cqZAo" node="7AHYCfD5C9Y" resolve="scope" />
                 </node>
@@ -325,7 +325,7 @@
                             <ref role="3cqZAo" node="1Ta4fAPH54Q" resolve="it" />
                           </node>
                           <node concept="liA8E" id="1Ta4fAPH55R" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SReference.getSourceNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSourceNode" />
+                            <ref role="37wK5l" to="mhbf:~SReference.getSourceNode()" resolve="getSourceNode" />
                           </node>
                         </node>
                       </node>
@@ -367,7 +367,7 @@
                           <ref role="3cqZAo" node="519ky_So5zl" resolve="it" />
                         </node>
                         <node concept="liA8E" id="519ky_So5$i" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SReference.getSourceNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSourceNode" />
+                          <ref role="37wK5l" to="mhbf:~SReference.getSourceNode()" resolve="getSourceNode" />
                         </node>
                       </node>
                     </node>
@@ -483,7 +483,7 @@
                     <ref role="3cqZAo" node="2AZbPfOszBG" resolve="parent" />
                   </node>
                   <node concept="liA8E" id="2AZbPfOumK0" role="2OqNvi">
-                    <ref role="37wK5l" to="lui2:~SearchScope.getModules():java.lang.Iterable" resolve="getModules" />
+                    <ref role="37wK5l" to="lui2:~SearchScope.getModules()" resolve="getModules" />
                   </node>
                 </node>
               </node>
@@ -505,7 +505,7 @@
                             <ref role="3cqZAo" node="2AZbPfOuxf$" resolve="it" />
                           </node>
                           <node concept="liA8E" id="2AZbPfOuyTp" role="2OqNvi">
-                            <ref role="37wK5l" to="lui2:~SModule.isPackaged():boolean" resolve="isPackaged" />
+                            <ref role="37wK5l" to="lui2:~SModule.isPackaged()" resolve="isPackaged" />
                           </node>
                         </node>
                       </node>
@@ -546,7 +546,7 @@
                       <ref role="3cqZAo" node="2AZbPfOszBG" resolve="parent" />
                     </node>
                     <node concept="liA8E" id="2AZbPfOHPRm" role="2OqNvi">
-                      <ref role="37wK5l" to="lui2:~SearchScope.getModels():java.lang.Iterable" resolve="getModels" />
+                      <ref role="37wK5l" to="lui2:~SearchScope.getModels()" resolve="getModels" />
                     </node>
                   </node>
                   <node concept="A3Dl8" id="2AZbPfOHPRi" role="10QFUM">
@@ -577,7 +577,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="2AZbPfOJ_Ka" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                            <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                           </node>
                         </node>
                       </node>
@@ -640,7 +640,7 @@
                 <ref role="3cqZAo" node="2AZbPfOszBG" resolve="parent" />
               </node>
               <node concept="liA8E" id="2AZbPfOsJhv" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~SearchScope.resolve(org.jetbrains.mps.openapi.model.SModelReference):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
+                <ref role="37wK5l" to="lui2:~SearchScope.resolve(org.jetbrains.mps.openapi.model.SModelReference)" resolve="resolve" />
                 <node concept="37vLTw" id="2AZbPfOsJmZ" role="37wK5m">
                   <ref role="3cqZAo" node="2AZbPfOrIvk" resolve="reference" />
                 </node>
@@ -678,7 +678,7 @@
                 <ref role="3cqZAo" node="2AZbPfOszBG" resolve="parent" />
               </node>
               <node concept="liA8E" id="2AZbPfOsKqj" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~SearchScope.resolve(org.jetbrains.mps.openapi.module.SModuleReference):org.jetbrains.mps.openapi.module.SModule" resolve="resolve" />
+                <ref role="37wK5l" to="lui2:~SearchScope.resolve(org.jetbrains.mps.openapi.module.SModuleReference)" resolve="resolve" />
                 <node concept="37vLTw" id="2AZbPfOsKwT" role="37wK5m">
                   <ref role="3cqZAo" node="2AZbPfOrIvu" resolve="reference" />
                 </node>

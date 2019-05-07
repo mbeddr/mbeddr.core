@@ -264,7 +264,7 @@
               <ref role="3cqZAo" node="5be2k4jZiMr" resolve="containingLink" />
             </node>
             <node concept="liA8E" id="2Fugwv5X4ym" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple():boolean" resolve="isMultiple" />
+              <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple()" resolve="isMultiple" />
             </node>
           </node>
         </node>
