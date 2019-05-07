@@ -677,17 +677,11 @@
           <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
-      <node concept="m$f5U" id="5l4WPWBsMzR" role="m$_yh">
-        <ref role="m$f5T" node="5l4WPWBsBct" resolve="group.commenting.devkit" />
-      </node>
       <node concept="m$f5U" id="3quoVcnS5bT" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnQoOk" resolve="group.lang-support" />
       </node>
       <node concept="m$f5U" id="3quoVcnS4VA" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnF0zV" resolve="group.ccmenu" />
-      </node>
-      <node concept="m$f5U" id="3quoVcnS4WI" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnHJhB" resolve="group.datepicker" />
       </node>
       <node concept="m$f5U" id="3quoVcnS512" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnGzl$" resolve="group.extensionclass" />
@@ -792,7 +786,7 @@
         <ref role="m$_y1" node="59sJF$9ugx_" resolve="com.mbeddr.mpsutil.spreferences" />
       </node>
       <node concept="m$_yC" id="6r2FnBSZqXk" role="m$_yJ">
-        <ref role="m$_y1" node="NlXl$eqyAE" resolve="com.mbeddr.mpsutil.margincell_review" />
+        <ref role="m$_y1" node="NlXl$eqyAE" resolve="com.mbeddr.mpsutil.commenting" />
       </node>
       <node concept="m$_yC" id="4jcebaMPG3Q" role="m$_yJ">
         <ref role="m$_y1" node="HqNfTbUbus" resolve="com.mbeddr.mpsutil.breadcrumb" />
@@ -802,6 +796,9 @@
       </node>
       <node concept="m$_yC" id="1ddyJT2DGja" role="m$_yJ">
         <ref role="m$_y1" node="4AJzsGhUmsZ" resolve="com.mbeddr.mpsutil.baseLanguage" />
+      </node>
+      <node concept="m$_yC" id="5RmX$wv3ceU" role="m$_yJ">
+        <ref role="m$_y1" node="5RmX$wv2Xse" resolve="com.mbeddr.mpsutil.datepicker" />
       </node>
       <node concept="3_J27D" id="7uZw0yZ2_Jx" role="m_cZH">
         <node concept="3Mxwew" id="7uZw0yZ2_Jy" role="3MwsjC">
@@ -816,6 +813,42 @@
         <node concept="3Mxwew" id="6YZfJyAKvI0" role="3MwsjC">
           <property role="3MwjfP" value="Original all-in-one mpsutil plugin (use specific plugins instead)" />
         </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="5RmX$wv2Xse" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.datepicker" />
+      <node concept="3_J27D" id="5RmX$wv2Xsf" role="m$_yQ">
+        <node concept="3Mxwew" id="5RmX$wv2Xsg" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.datepicker" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="5RmX$wv2Xsh" role="m_cZH">
+        <node concept="3Mxwew" id="5RmX$wv2Xsi" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.datepicker" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="5RmX$wv2Xsj" role="m$_w8">
+        <node concept="3Mxwey" id="5RmX$wv2Xsk" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="5RmX$wv39gW" role="m$_yh">
+        <ref role="m$f5T" node="3quoVcnHJhB" resolve="group.datepicker" />
+      </node>
+      <node concept="m$_yC" id="5RmX$wv2Xsm" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="2iUeEo" id="5RmX$wv2Xsn" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com/" />
+      </node>
+      <node concept="3_J27D" id="5RmX$wv2Xso" role="3s6cr7">
+        <node concept="3Mxwew" id="5RmX$wv2Xsp" role="3MwsjC">
+          <property role="3MwjfP" value="Date picker editor plugin from mbeddr.mpsutil" />
+        </node>
+      </node>
+      <node concept="m$_yC" id="5RmX$wv2Xsq" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
     </node>
     <node concept="m$_wf" id="HqNfTbUbus" role="3989C9">
@@ -1912,15 +1945,15 @@
       </node>
     </node>
     <node concept="m$_wf" id="NlXl$eqyAE" role="3989C9">
-      <property role="m$_wk" value="com.mbeddr.mpsutil.margincell_review" />
+      <property role="m$_wk" value="com.mbeddr.mpsutil.commenting" />
       <node concept="3_J27D" id="NlXl$eqyAF" role="m$_yQ">
         <node concept="3Mxwew" id="NlXl$eqyAG" role="3MwsjC">
-          <property role="3MwjfP" value="com.mbeddr.mpsutil.margincell_review" />
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.commenting" />
         </node>
       </node>
       <node concept="3_J27D" id="NlXl$eqyAH" role="m_cZH">
         <node concept="3Mxwew" id="NlXl$eqyAI" role="3MwsjC">
-          <property role="3MwjfP" value="com.mbeddr.mpsutil.margincell_review" />
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.commenting" />
         </node>
       </node>
       <node concept="3_J27D" id="NlXl$eqyAJ" role="m$_w8">
@@ -1930,7 +1963,7 @@
       </node>
       <node concept="3_J27D" id="NlXl$eqyAL" role="3s6cr7">
         <node concept="3Mxwew" id="NlXl$eqyAM" role="3MwsjC">
-          <property role="3MwjfP" value="Review support for user models (using margin cells)" />
+          <property role="3MwjfP" value="Commenting/review support for any models (using margin cells)" />
         </node>
       </node>
       <node concept="m$_yC" id="NlXl$eqyAN" role="m$_yJ">
@@ -1946,7 +1979,10 @@
         <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
       <node concept="m$f5U" id="NlXl$eqByF" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnJTPD" resolve="group.margincell_review" />
+        <ref role="m$f5T" node="3quoVcnJTPD" resolve="group.commenting" />
+      </node>
+      <node concept="m$f5U" id="1kN1htv0YX9" role="m$_yh">
+        <ref role="m$f5T" node="5l4WPWBsBct" resolve="group.commenting.devkit" />
       </node>
       <node concept="2iUeEo" id="NlXl$eqyAQ" role="2iVFfd">
         <property role="2iUeEt" value="mbeddr" />
@@ -9628,7 +9664,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnJTPD" role="3989C9">
-      <property role="TrG5h" value="group.margincell_review" />
+      <property role="TrG5h" value="group.commenting" />
       <node concept="1E1JtA" id="1qdZ14g6b3j" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.margincell.runtime" />
@@ -17710,27 +17746,6 @@
               <property role="3MwjfP" value="lib" />
             </node>
           </node>
-          <node concept="398223" id="6L0JKBMPRz4" role="39821P">
-            <node concept="3_J27D" id="6L0JKBMPRz5" role="Nbhlr">
-              <node concept="3Mxwew" id="6L0JKBMPRz6" role="3MwsjC">
-                <property role="3MwjfP" value="datepicker" />
-              </node>
-            </node>
-            <node concept="2HvfSZ" id="6L0JKBMPRz7" role="39821P">
-              <node concept="398BVA" id="6L0JKBMPRz8" role="2HvfZ0">
-                <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-                <node concept="2Ry0Ak" id="6L0JKBMPRz9" role="iGT6I">
-                  <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="6L0JKBMPRza" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker.runtime" />
-                    <node concept="2Ry0Ak" id="6L0JKBMXb9a" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="398223" id="29VkIO0XNOJ" role="39821P">
             <node concept="3_J27D" id="29VkIO0XNOL" role="Nbhlr">
               <node concept="3Mxwew" id="29VkIO0XOGA" role="3MwsjC">
@@ -17912,7 +17927,7 @@
         <ref role="m_rDy" node="59sJF$9ugx_" resolve="com.mbeddr.mpsutil.spreferences" />
       </node>
       <node concept="m$_wl" id="NlXl$er7Ti" role="39821P">
-        <ref role="m_rDy" node="NlXl$eqyAE" resolve="com.mbeddr.mpsutil.margincell_review" />
+        <ref role="m_rDy" node="NlXl$eqyAE" resolve="com.mbeddr.mpsutil.commenting" />
       </node>
       <node concept="m$_wl" id="HqNfTbUfXp" role="39821P">
         <ref role="m_rDy" node="HqNfTbUbus" resolve="com.mbeddr.mpsutil.breadcrumb" />
@@ -17922,6 +17937,30 @@
       </node>
       <node concept="m$_wl" id="1ddyJT2DNMF" role="39821P">
         <ref role="m_rDy" node="4AJzsGhUmsZ" resolve="com.mbeddr.mpsutil.baseLanguage" />
+      </node>
+      <node concept="m$_wl" id="5RmX$wv3deV" role="39821P">
+        <ref role="m_rDy" node="5RmX$wv2Xse" resolve="com.mbeddr.mpsutil.datepicker" />
+        <node concept="398223" id="5RmX$wv3fm0" role="39821P">
+          <node concept="2HvfSZ" id="6L0JKBMPRz7" role="39821P">
+            <node concept="398BVA" id="6L0JKBMPRz8" role="2HvfZ0">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="6L0JKBMPRz9" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6L0JKBMPRza" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker.runtime" />
+                  <node concept="2Ry0Ak" id="6L0JKBMXb9a" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3_J27D" id="5RmX$wv3fm1" role="Nbhlr">
+            <node concept="3Mxwew" id="5RmX$wv3hku" role="3MwsjC">
+              <property role="3MwjfP" value="lib" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
