@@ -336,7 +336,7 @@
               <node concept="2OqwBi" id="32KDjZn1Kx8" role="37wK5m">
                 <node concept="tl45R" id="32KDjZn1Kx9" role="2Oq$k0" />
                 <node concept="liA8E" id="32KDjZn1Kxa" role="2OqNvi">
-                  <ref role="37wK5l" to="qkt:~AnActionEvent.getInputEvent():java.awt.event.InputEvent" resolve="getInputEvent" />
+                  <ref role="37wK5l" to="qkt:~AnActionEvent.getInputEvent()" resolve="getInputEvent" />
                 </node>
               </node>
             </node>
@@ -349,7 +349,7 @@
         <node concept="3clFbF" id="k_aw1jJzrQ" role="3cqZAp">
           <node concept="2OqwBi" id="k_aw1jJzrS" role="3clFbG">
             <node concept="2YIFZM" id="7TiosyQPjuY" role="2Oq$k0">
-              <ref role="37wK5l" to="ngmm:~FindUtils.getFinder(java.lang.String):jetbrains.mps.ide.findusages.findalgorithm.finders.IInterfacedFinder" resolve="getFinder" />
+              <ref role="37wK5l" to="ngmm:~FindUtils.getFinder(java.lang.String)" resolve="getFinder" />
               <ref role="1Pybhc" to="ngmm:~FindUtils" resolve="FindUtils" />
               <node concept="2OqwBi" id="7TiosyQPjuZ" role="37wK5m">
                 <node concept="2WthIp" id="7TiosyQPjv0" role="2Oq$k0" />
@@ -359,7 +359,7 @@
               </node>
             </node>
             <node concept="liA8E" id="k_aw1jJzrV" role="2OqNvi">
-              <ref role="37wK5l" to="k4i4:~IInterfacedFinder.isApplicable(org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isApplicable" />
+              <ref role="37wK5l" to="k4i4:~IInterfacedFinder.isApplicable(org.jetbrains.mps.openapi.model.SNode)" resolve="isApplicable" />
               <node concept="2OqwBi" id="k_aw1jJzSv" role="37wK5m">
                 <node concept="2WthIp" id="k_aw1jJzSy" role="2Oq$k0" />
                 <node concept="3gHZIF" id="k_aw1jJzS$" role="2OqNvi">
@@ -400,7 +400,7 @@
             </node>
             <node concept="2YIFZM" id="2rUHgdX2y3F" role="33vP2m">
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <ref role="37wK5l" to="alof:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project)" resolve="toMPSProject" />
               <node concept="37vLTw" id="2BHiRxgm8DF" role="37wK5m">
                 <ref role="3cqZAo" node="2rUHgdX3hbE" resolve="project" />
               </node>
@@ -429,14 +429,14 @@
               <node concept="1gVbGN" id="1KUoCipvFIa" role="3cqZAp">
                 <node concept="2OqwBi" id="2rUHgdX3h97" role="1gVkn0">
                   <node concept="2YIFZM" id="7TiosyQPgNr" role="2Oq$k0">
-                    <ref role="37wK5l" to="ngmm:~FindUtils.getFinder(java.lang.String):jetbrains.mps.ide.findusages.findalgorithm.finders.IInterfacedFinder" resolve="getFinder" />
+                    <ref role="37wK5l" to="ngmm:~FindUtils.getFinder(java.lang.String)" resolve="getFinder" />
                     <ref role="1Pybhc" to="ngmm:~FindUtils" resolve="FindUtils" />
                     <node concept="37vLTw" id="7TiosyQPgNs" role="37wK5m">
                       <ref role="3cqZAo" node="32KDjZn214Y" resolve="finderClassName" />
                     </node>
                   </node>
                   <node concept="liA8E" id="2rUHgdX3h9c" role="2OqNvi">
-                    <ref role="37wK5l" to="k4i4:~IInterfacedFinder.isApplicable(org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isApplicable" />
+                    <ref role="37wK5l" to="k4i4:~IInterfacedFinder.isApplicable(org.jetbrains.mps.openapi.model.SNode)" resolve="isApplicable" />
                     <node concept="37vLTw" id="k_aw1jJzdQ" role="37wK5m">
                       <ref role="3cqZAo" node="32KDjZn214V" resolve="referencedElement" />
                     </node>
@@ -450,7 +450,7 @@
               <ref role="3cqZAo" node="1pHoCUazckL" resolve="mpsProject" />
             </node>
             <node concept="liA8E" id="1eZSuKe0fbp" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -476,7 +476,7 @@
         <node concept="3clFbF" id="32KDjZn24VS" role="3cqZAp">
           <node concept="2OqwBi" id="32KDjZn24VT" role="3clFbG">
             <node concept="liA8E" id="32KDjZn24VU" role="2OqNvi">
-              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
               <node concept="2ShNRf" id="32KDjZn24VV" role="37wK5m">
                 <node concept="YeOm9" id="32KDjZn24VW" role="2ShVmc">
                   <node concept="1Y3b0j" id="32KDjZn24VX" role="YeSDq">
@@ -500,7 +500,7 @@
                                   </node>
                                   <node concept="2YIFZM" id="1KUoCipvF40" role="33vP2m">
                                     <ref role="1Pybhc" to="ngmm:~FindUtils" resolve="FindUtils" />
-                                    <ref role="37wK5l" to="ngmm:~FindUtils.executeFinder(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SearchScope,org.jetbrains.mps.openapi.util.ProgressMonitor):java.util.List" resolve="executeFinder" />
+                                    <ref role="37wK5l" to="ngmm:~FindUtils.executeFinder(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SearchScope,org.jetbrains.mps.openapi.util.ProgressMonitor)" resolve="executeFinder" />
                                     <node concept="37vLTw" id="2BHiRxglYE1" role="37wK5m">
                                       <ref role="3cqZAo" node="32KDjZn214Y" resolve="finderClassName" />
                                     </node>
@@ -509,7 +509,7 @@
                                     </node>
                                     <node concept="2YIFZM" id="1KUoCipvF43" role="37wK5m">
                                       <ref role="1Pybhc" to="z1c3:~GlobalScope" resolve="GlobalScope" />
-                                      <ref role="37wK5l" to="z1c3:~GlobalScope.getInstance():jetbrains.mps.project.GlobalScope" resolve="getInstance" />
+                                      <ref role="37wK5l" to="z1c3:~GlobalScope.getInstance()" resolve="getInstance" />
                                     </node>
                                     <node concept="2ShNRf" id="1KUoCipvF44" role="37wK5m">
                                       <node concept="1pGfFk" id="1KUoCipvF46" role="2ShVmc">
@@ -563,7 +563,7 @@
                               <ref role="3cqZAo" node="1pHoCUazckL" resolve="mpsProject" />
                             </node>
                             <node concept="liA8E" id="1eZSuKe09HE" role="2OqNvi">
-                              <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                             </node>
                           </node>
                         </node>
@@ -597,7 +597,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="2rUHgdX2y2a" role="2Oq$k0">
-              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
             </node>
           </node>
@@ -646,7 +646,7 @@
                     <ref role="3cqZAo" node="1pHoCUazckL" resolve="mpsProject" />
                   </node>
                   <node concept="liA8E" id="69y_BxSMkbE" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
               </node>

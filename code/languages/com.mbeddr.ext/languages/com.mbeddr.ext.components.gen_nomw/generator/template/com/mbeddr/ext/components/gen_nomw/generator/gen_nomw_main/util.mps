@@ -569,7 +569,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1nTCJdUqBKn" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="1nTCJdUqBKo" role="37wK5m">
                             <node concept="37vLTw" id="1nTCJdUqBKp" role="2Oq$k0">
                               <ref role="3cqZAo" node="7UUkaBfaVzQ" resolve="port" />
@@ -691,7 +691,7 @@
           <node concept="3cpWsn" id="7JSQgVGJjVN" role="3cpWs9">
             <property role="TrG5h" value="portRef" />
             <node concept="3Tqbb2" id="7JSQgVGJjVO" role="1tU5fm">
-              <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
             </node>
             <node concept="2OqwBi" id="7JSQgVGJjVP" role="33vP2m">
               <node concept="2OqwBi" id="1nTCJdUqH19" role="2Oq$k0">
@@ -848,7 +848,7 @@
           <node concept="3cpWsn" id="7UUkaBfaV$x" role="3cpWs9">
             <property role="TrG5h" value="portRef" />
             <node concept="3Tqbb2" id="7UUkaBfaV$y" role="1tU5fm">
-              <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="InstancePortRef" />
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdTT" resolve="ComponentPortRef" />
             </node>
             <node concept="2OqwBi" id="7UUkaBfaV$z" role="33vP2m">
               <node concept="2OqwBi" id="7UUkaBfaV$$" role="2Oq$k0">
@@ -884,7 +884,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7UUkaBfaV$O" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                             <node concept="2OqwBi" id="7UUkaBfaV$P" role="37wK5m">
                               <node concept="37vLTw" id="7UUkaBfaV_s" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7UUkaBfaV_m" resolve="port" />

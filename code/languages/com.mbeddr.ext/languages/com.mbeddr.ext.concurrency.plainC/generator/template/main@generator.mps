@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
@@ -202,10 +202,6 @@
       <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
         <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
-      <concept id="5015072279636464462" name="jetbrains.mps.lang.generator.structure.VarMacro" flags="lg" index="2jeGV$">
-        <child id="5015072279636624635" name="type" index="2jfP_h" />
-        <child id="5015072279636624596" name="value" index="2jfP_Y" />
-      </concept>
       <concept id="5015072279636592410" name="jetbrains.mps.lang.generator.structure.VarMacro_ValueQuery" flags="in" index="2jfdEK" />
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1168559512253" name="jetbrains.mps.lang.generator.structure.DismissTopMappingRule" flags="lg" index="j$LIH">
@@ -264,6 +260,13 @@
         <child id="1195501105008" name="codeBlock" index="1pqMTA" />
       </concept>
       <concept id="1195500722856" name="jetbrains.mps.lang.generator.structure.MappingScript_CodeBlock" flags="in" index="1pplIY" />
+      <concept id="1048903277984099206" name="jetbrains.mps.lang.generator.structure.VarDeclaration" flags="ng" index="1ps_xZ">
+        <child id="1048903277984099209" name="type" index="1ps_xK" />
+        <child id="1048903277984099210" name="value" index="1ps_xN" />
+      </concept>
+      <concept id="1048903277984099198" name="jetbrains.mps.lang.generator.structure.VarMacro2" flags="lg" index="1ps_y7">
+        <child id="1048903277984099213" name="variables" index="1ps_xO" />
+      </concept>
       <concept id="1195502151594" name="jetbrains.mps.lang.generator.structure.MappingScriptReference" flags="lg" index="1puMqW">
         <reference id="1195502167610" name="mappingScript" index="1puQsG" />
       </concept>
@@ -1606,18 +1609,20 @@
               </node>
             </node>
             <node concept="raruj" id="2ajpxDX5fNR" role="lGtFl" />
-            <node concept="2jeGV$" id="5gYn0x87vKJ" role="lGtFl">
-              <property role="TrG5h" value="schedule" />
+            <node concept="1ps_y7" id="3pRoIUFYqUH" role="lGtFl">
               <ref role="2rW$FS" node="3qlQk_gtazj" resolve="scheduleStartFunction" />
-              <node concept="2jfdEK" id="5gYn0x87vKL" role="2jfP_Y">
-                <node concept="3clFbS" id="5gYn0x87vKN" role="2VODD2">
-                  <node concept="3clFbF" id="5gYn0x87yWg" role="3cqZAp">
-                    <node concept="30H73N" id="5gYn0x87yWf" role="3clFbG" />
+              <node concept="1ps_xZ" id="3pRoIUFYqUG" role="1ps_xO">
+                <property role="TrG5h" value="schedule" />
+                <node concept="3Tqbb2" id="5gYn0x87_sV" role="1ps_xK">
+                  <ref role="ehGHo" to="5wll:66UaKxBOkro" resolve="ScheduleSpecification" />
+                </node>
+                <node concept="2jfdEK" id="5gYn0x87vKL" role="1ps_xN">
+                  <node concept="3clFbS" id="5gYn0x87vKN" role="2VODD2">
+                    <node concept="3clFbF" id="5gYn0x87yWg" role="3cqZAp">
+                      <node concept="30H73N" id="5gYn0x87yWf" role="3clFbG" />
+                    </node>
                   </node>
                 </node>
-              </node>
-              <node concept="3Tqbb2" id="5gYn0x87_sV" role="2jfP_h">
-                <ref role="ehGHo" to="5wll:66UaKxBOkro" resolve="ScheduleSpecification" />
               </node>
             </node>
           </node>

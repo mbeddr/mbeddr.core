@@ -530,7 +530,7 @@
                 <node concept="EsrRn" id="5fn4FV$bIKH" role="2Oq$k0" />
               </node>
               <node concept="liA8E" id="79i$vAY78gZ" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
           </node>

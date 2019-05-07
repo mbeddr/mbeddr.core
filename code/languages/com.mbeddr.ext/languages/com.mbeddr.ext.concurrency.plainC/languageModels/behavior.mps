@@ -171,11 +171,11 @@
         <node concept="3clFbF" id="1TgsdXP43Uw" role="3cqZAp">
           <node concept="2OqwBi" id="1TgsdXP43Uy" role="3clFbG">
             <node concept="2YIFZM" id="1TgsdXP43Uz" role="2Oq$k0">
-              <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+              <ref role="37wK5l" to="33ny:~UUID.randomUUID()" resolve="randomUUID" />
               <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
             </node>
             <node concept="liA8E" id="1TgsdXP43U$" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~UUID.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="33ny:~UUID.toString()" resolve="toString" />
             </node>
           </node>
         </node>
@@ -192,7 +192,7 @@
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
       <node concept="3Tm1VV" id="4PdWDflgRsX" role="1B3o_S" />
       <node concept="3clFbS" id="4PdWDflgRtk" role="3clF47">
         <node concept="3clFbF" id="4PdWDflgShU" role="3cqZAp">
@@ -214,7 +214,7 @@
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
       <node concept="3Tm1VV" id="4PdWDflhDR9" role="1B3o_S" />
       <node concept="3clFbS" id="4PdWDflhDRw" role="3clF47">
         <node concept="3clFbF" id="4PdWDflhE1m" role="3cqZAp">

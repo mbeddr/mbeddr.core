@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="8c1a7e14-9520-42a4-a3a7-b15e523af156" name="com.mbeddr.ext.concurrency.pthreads" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
@@ -775,7 +775,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="6ndohCVdZlW" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="6ndohCVdZlX" role="37wK5m">
                                 <node concept="2OqwBi" id="6ndohCVdZlY" role="2Oq$k0">
                                   <node concept="30H73N" id="6ndohCVdZlZ" role="2Oq$k0" />
@@ -5694,7 +5694,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="7hczD5g1CRw" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="7hczD5g1CRx" role="37wK5m">
                                 <node concept="37vLTw" id="7hczD5g1CRy" role="2Oq$k0">
                                   <ref role="3cqZAo" node="7hczD5g1tFV" resolve="importedChunk" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.ext.components.embedded" uuid="cc872c37-5126-4cea-bcc0-b45897eba581" moduleVersion="0" compileInMPS="true" generatorOutputPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext/tests/test.ts.ext.components.embedded/source_gen">
+<solution name="test.ts.ext.components.embedded" uuid="cc872c37-5126-4cea-bcc0-b45897eba581" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
