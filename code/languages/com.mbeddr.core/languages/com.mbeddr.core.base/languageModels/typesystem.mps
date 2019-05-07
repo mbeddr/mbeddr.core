@@ -390,7 +390,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="79i$vAY5P50" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                       </node>
                     </node>
                   </node>
@@ -440,7 +440,7 @@
                   <node concept="3fqX7Q" id="7uYRIghZpWK" role="3uHU7B">
                     <node concept="2YIFZM" id="7uYRIghZpWJ" role="3fr31v">
                       <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
-                      <ref role="37wK5l" to="wyt6:~Character.isLowerCase(char):boolean" resolve="isLowerCase" />
+                      <ref role="37wK5l" to="wyt6:~Character.isLowerCase(char)" resolve="isLowerCase" />
                       <node concept="2OqwBi" id="7uYRIghZpWC" role="37wK5m">
                         <node concept="2OqwBi" id="7uYRIghZpWz" role="2Oq$k0">
                           <node concept="1YBJjd" id="7uYRIghZpWy" role="2Oq$k0">
@@ -451,7 +451,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="7uYRIghZpWG" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                          <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                           <node concept="3cmrfG" id="7uYRIghZpWH" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
@@ -473,7 +473,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1TNmgng1yvf" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                        <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                         <node concept="3cmrfG" id="1TNmgng1yvg" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -551,7 +551,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7uYRIghZq8H" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                       <node concept="3cmrfG" id="7uYRIghZq8I" role="37wK5m">
                         <property role="3cmrfH" value="1" />
                       </node>
@@ -568,7 +568,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7uYRIghZpXw" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                         <node concept="3cmrfG" id="7uYRIghZpXx" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -578,7 +578,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7uYRIghZq8r" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                      <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                     </node>
                   </node>
                 </node>
@@ -619,7 +619,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7uYRIghZq8Z" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                       <node concept="3cmrfG" id="7uYRIghZq90" role="37wK5m">
                         <property role="3cmrfH" value="1" />
                       </node>
@@ -636,7 +636,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7uYRIghZq96" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                         <node concept="3cmrfG" id="7uYRIghZq97" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -646,7 +646,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7uYRIghZq99" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                      <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                     </node>
                   </node>
                 </node>
@@ -678,7 +678,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7uYRIghZq9S" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                    <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7uYRIghZq9n" role="37vLTJ">
@@ -745,7 +745,7 @@
                 <node concept="1Wc70l" id="1TNmgng1yvx" role="3clFbw">
                   <node concept="3fqX7Q" id="1TNmgng1yvy" role="3uHU7B">
                     <node concept="2YIFZM" id="1TNmgng1yvz" role="3fr31v">
-                      <ref role="37wK5l" to="wyt6:~Character.isLowerCase(char):boolean" resolve="isLowerCase" />
+                      <ref role="37wK5l" to="wyt6:~Character.isLowerCase(char)" resolve="isLowerCase" />
                       <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                       <node concept="2OqwBi" id="1TNmgng1yv$" role="37wK5m">
                         <node concept="2OqwBi" id="1TNmgng1yv_" role="2Oq$k0">
@@ -757,7 +757,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1TNmgng1yvC" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                          <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                           <node concept="3cmrfG" id="1TNmgng1yvD" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
@@ -779,7 +779,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1TNmgng1yvK" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                        <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                         <node concept="3cmrfG" id="1TNmgng1yvL" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -1330,7 +1330,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="7ii2FhSPkbQ" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="7ii2FhSPkbR" role="37wK5m">
                                 <node concept="1YBJjd" id="7ii2FhSPkbS" role="2Oq$k0">
                                   <ref role="1YBMHb" node="7ii2FhSOKRZ" resolve="cnc" />
@@ -1494,7 +1494,7 @@
               <ref role="3uigEE" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
             </node>
             <node concept="2YIFZM" id="6sCGfm8seWV" role="33vP2m">
-              <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
+              <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
             </node>
           </node>
@@ -1520,7 +1520,7 @@
                   <ref role="3cqZAo" node="6sCGfm8seWT" resolve="instance" />
                 </node>
                 <node concept="liA8E" id="6sCGfm8seX4" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeContextManager.runTypeCheckingAction(jetbrains.mps.typesystem.inference.ITypeContextOwner,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.ITypechecking$Action):void" resolve="runTypeCheckingAction" />
+                  <ref role="37wK5l" to="u78q:~TypeContextManager.runTypeCheckingAction(jetbrains.mps.typesystem.inference.ITypeContextOwner,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.ITypechecking$Action)" resolve="runTypeCheckingAction" />
                   <node concept="37vLTw" id="6sCGfm8seX5" role="37wK5m">
                     <ref role="3cqZAo" node="6sCGfm8seWX" resolve="owner" />
                   </node>
@@ -1553,7 +1553,7 @@
                                   <ref role="3cqZAo" node="6sCGfm8seXe" resolve="ctx" />
                                 </node>
                                 <node concept="liA8E" id="6sCGfm8seXk" role="2OqNvi">
-                                  <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkRoot():void" resolve="checkRoot" />
+                                  <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkRoot()" resolve="checkRoot" />
                                 </node>
                               </node>
                             </node>

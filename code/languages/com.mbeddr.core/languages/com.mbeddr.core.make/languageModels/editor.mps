@@ -655,7 +655,7 @@
               <node concept="2OqwBi" id="2cvVnUv6BLR" role="3clFbG">
                 <node concept="ub8z3" id="2cvVnUv6BLV" role="2Oq$k0" />
                 <node concept="liA8E" id="2cvVnUv6BLT" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                   <node concept="Xl_RD" id="2cvVnUv6BLU" role="37wK5m">
                     <property role="Xl_RC" value="[a-zA-Z[_]][a-zA-Z0-9[_]]*" />
                   </node>

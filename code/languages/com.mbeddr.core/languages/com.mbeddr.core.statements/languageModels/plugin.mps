@@ -71,7 +71,7 @@
         <child id="3273307157325357976" name="selectors" index="1WszKs" />
         <child id="3273307157325365793" name="modifications" index="1Ws_Q_" />
       </concept>
-      <concept id="3273307157325372934" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.ConditionSelector" flags="ng" index="1Ws$62" />
+      <concept id="3273307157325372934" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.ConditionSelector" flags="ig" index="1Ws$62" />
       <concept id="3273307157325365790" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.RemoveModification" flags="ng" index="1Ws_Qq" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">

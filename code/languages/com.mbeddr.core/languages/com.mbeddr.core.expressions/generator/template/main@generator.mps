@@ -97,7 +97,7 @@
                       <node concept="30H73N" id="u0cWm_Y87X" role="2Oq$k0" />
                     </node>
                     <node concept="liA8E" id="u0cWm_YgTj" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                     </node>
                   </node>
                 </node>

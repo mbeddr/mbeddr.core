@@ -2401,7 +2401,7 @@
           <node concept="3fqX7Q" id="1wu5Hv5M9OC" role="3clFbw">
             <node concept="2YIFZM" id="5L6yXkDjh_c" role="3fr31v">
               <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeChild" />
               <node concept="2OqwBi" id="5L6yXkDjh_g" role="37wK5m">
                 <node concept="37vLTw" id="5L6yXkDjh_h" role="2Oq$k0">
                   <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
@@ -2427,7 +2427,7 @@
           <node concept="3fqX7Q" id="1wu5Hv5Macs" role="3clFbw">
             <node concept="2YIFZM" id="1wu5Hv5M5Qq" role="3fr31v">
               <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeParent(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeParent" />
+              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeParent(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeParent" />
               <node concept="2OqwBi" id="1wu5Hv5M81P" role="37wK5m">
                 <node concept="37vLTw" id="1wu5Hv5M7Z1" role="2Oq$k0">
                   <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
@@ -2463,7 +2463,7 @@
               <node concept="3fqX7Q" id="1wu5Hv5Pn$M" role="3clFbw">
                 <node concept="2YIFZM" id="1wu5Hv5MaHw" role="3fr31v">
                   <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                  <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+                  <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeAncestor" />
                   <node concept="2GrUjf" id="1wu5Hv5SllR" role="37wK5m">
                     <ref role="2Gs0qQ" node="1wu5Hv5SkyI" resolve="currentAncestor" />
                   </node>

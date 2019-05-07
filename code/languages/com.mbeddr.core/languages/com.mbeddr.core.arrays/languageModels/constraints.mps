@@ -77,12 +77,12 @@
                     <ref role="1PxDUh" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
                   </node>
                   <node concept="liA8E" id="2_xtqg$wuQ$" role="2OqNvi">
-                    <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                    <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
                     <node concept="1Wqviy" id="2_xtqg$wv1o" role="37wK5m" />
                   </node>
                 </node>
                 <node concept="liA8E" id="2_xtqg$wyHa" role="2OqNvi">
-                  <ref role="37wK5l" to="ni5j:~Matcher.find():boolean" resolve="find" />
+                  <ref role="37wK5l" to="ni5j:~Matcher.find()" resolve="find" />
                 </node>
               </node>
             </node>

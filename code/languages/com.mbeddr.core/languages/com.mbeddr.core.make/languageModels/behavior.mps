@@ -222,11 +222,11 @@
             <node concept="10Oyi0" id="37NxYshMImc" role="1tU5fm" />
             <node concept="2OqwBi" id="37NxYshMImh" role="33vP2m">
               <node concept="2YIFZM" id="37NxYshMImi" role="2Oq$k0">
-                <ref role="37wK5l" to="wyt6:~Runtime.getRuntime():java.lang.Runtime" resolve="getRuntime" />
+                <ref role="37wK5l" to="wyt6:~Runtime.getRuntime()" resolve="getRuntime" />
                 <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
               </node>
               <node concept="liA8E" id="37NxYshMImj" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Runtime.availableProcessors():int" resolve="availableProcessors" />
+                <ref role="37wK5l" to="wyt6:~Runtime.availableProcessors()" resolve="availableProcessors" />
               </node>
             </node>
           </node>

@@ -160,7 +160,7 @@
               </node>
             </node>
             <node concept="liA8E" id="33$Pd7DVZHi" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+              <ref role="37wK5l" to="xlxw:~BigInteger.intValue()" resolve="intValue" />
             </node>
           </node>
         </node>
@@ -182,7 +182,7 @@
               </node>
             </node>
             <node concept="liA8E" id="33$Pd7DW1Hb" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+              <ref role="37wK5l" to="xlxw:~BigInteger.intValue()" resolve="intValue" />
             </node>
           </node>
           <node concept="3cmrfG" id="33$Pd7DW2X9" role="3tpDZB">
@@ -207,7 +207,7 @@
               </node>
             </node>
             <node concept="liA8E" id="33$Pd7DW1QW" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+              <ref role="37wK5l" to="xlxw:~BigInteger.intValue()" resolve="intValue" />
             </node>
           </node>
           <node concept="3cmrfG" id="33$Pd7DW35b" role="3tpDZB">
@@ -236,7 +236,7 @@
               </node>
             </node>
             <node concept="liA8E" id="33$Pd7DW3LF" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+              <ref role="37wK5l" to="xlxw:~BigInteger.intValue()" resolve="intValue" />
             </node>
           </node>
         </node>
@@ -258,7 +258,7 @@
               </node>
             </node>
             <node concept="liA8E" id="33$Pd7DW3LO" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+              <ref role="37wK5l" to="xlxw:~BigInteger.intValue()" resolve="intValue" />
             </node>
           </node>
           <node concept="3cmrfG" id="33$Pd7DW3LP" role="3tpDZB">
@@ -283,7 +283,7 @@
               </node>
             </node>
             <node concept="liA8E" id="33$Pd7DW3LY" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+              <ref role="37wK5l" to="xlxw:~BigInteger.intValue()" resolve="intValue" />
             </node>
           </node>
           <node concept="3cmrfG" id="33$Pd7DW4cw" role="3tpDZB">

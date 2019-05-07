@@ -729,7 +729,7 @@
               </node>
               <node concept="2YIFZM" id="Ux_D7zzfgK" role="3uHU7B">
                 <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String,int):int" resolve="parseInt" />
+                <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String,int)" resolve="parseInt" />
                 <node concept="2OqwBi" id="Ux_D7zzfgM" role="37wK5m">
                   <node concept="117lpO" id="Ux_D7zzfgL" role="2Oq$k0" />
                   <node concept="3TrcHB" id="Ux_D7zzfgQ" role="2OqNvi">
@@ -1207,11 +1207,11 @@
                                             <ref role="2Gs0qQ" node="6o2p2Z0Juit" resolve="value" />
                                           </node>
                                           <node concept="liA8E" id="3gSD7gHVvAO" role="2OqNvi">
-                                            <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                                            <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="3gSD7gHVvAP" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                                          <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                                         </node>
                                       </node>
                                     </node>

@@ -875,7 +875,7 @@
                     <node concept="1uHKPH" id="3IOp39j2n_e" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="3HrJbrHLTmk" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias():java.lang.String" resolve="getConceptAlias" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias()" resolve="getConceptAlias" />
                   </node>
                 </node>
               </node>
