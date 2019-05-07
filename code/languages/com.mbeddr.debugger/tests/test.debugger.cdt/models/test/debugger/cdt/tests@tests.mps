@@ -311,7 +311,7 @@
         </node>
         <node concept="3clFbF" id="29so9Vc5a6R" role="3cqZAp">
           <node concept="2YIFZM" id="29so9Vc5a6S" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+            <ref role="37wK5l" to="wyt6:~Thread.sleep(long)" resolve="sleep" />
             <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
             <node concept="3cmrfG" id="29so9Vc5a6T" role="37wK5m">
               <property role="3cmrfH" value="2000" />
@@ -351,7 +351,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVgL" resolve="session" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVgX" role="2OqNvi">
-                    <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                    <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                   </node>
                 </node>
                 <node concept="3cmrfG" id="5XU7UUGaVgY" role="AHEQo">
@@ -407,15 +407,15 @@
                   <ref role="3cqZAo" node="5XU7UUGaVgQ" resolve="target" />
                 </node>
                 <node concept="liA8E" id="2npj2sr14yO" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISessionObject.getSession():org.eclipse.cdt.debug.core.cdi.ICDISession" resolve="getSession" />
+                  <ref role="37wK5l" to="ys5c:~ICDISessionObject.getSession()" resolve="getSession" />
                 </node>
               </node>
               <node concept="liA8E" id="2npj2sr17Zr" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDISession.getEventManager():org.eclipse.cdt.debug.core.cdi.ICDIEventManager" resolve="getEventManager" />
+                <ref role="37wK5l" to="ys5c:~ICDISession.getEventManager()" resolve="getEventManager" />
               </node>
             </node>
             <node concept="liA8E" id="2npj2sr1bQK" role="2OqNvi">
-              <ref role="37wK5l" to="ys5c:~ICDIEventManager.addEventListener(org.eclipse.cdt.debug.core.cdi.event.ICDIEventListener):void" resolve="addEventListener" />
+              <ref role="37wK5l" to="ys5c:~ICDIEventManager.addEventListener(org.eclipse.cdt.debug.core.cdi.event.ICDIEventListener)" resolve="addEventListener" />
               <node concept="37vLTw" id="2npj2sr1bWf" role="37wK5m">
                 <ref role="3cqZAo" node="5XU7UUGaVh0" resolve="createdObserver" />
               </node>
@@ -430,15 +430,15 @@
                   <ref role="3cqZAo" node="5XU7UUGaVgQ" resolve="target" />
                 </node>
                 <node concept="liA8E" id="2npj2sr7_fB" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISessionObject.getSession():org.eclipse.cdt.debug.core.cdi.ICDISession" resolve="getSession" />
+                  <ref role="37wK5l" to="ys5c:~ICDISessionObject.getSession()" resolve="getSession" />
                 </node>
               </node>
               <node concept="liA8E" id="2npj2sr7_fC" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDISession.getEventManager():org.eclipse.cdt.debug.core.cdi.ICDIEventManager" resolve="getEventManager" />
+                <ref role="37wK5l" to="ys5c:~ICDISession.getEventManager()" resolve="getEventManager" />
               </node>
             </node>
             <node concept="liA8E" id="2npj2sr7_fD" role="2OqNvi">
-              <ref role="37wK5l" to="ys5c:~ICDIEventManager.addEventListener(org.eclipse.cdt.debug.core.cdi.event.ICDIEventListener):void" resolve="addEventListener" />
+              <ref role="37wK5l" to="ys5c:~ICDIEventManager.addEventListener(org.eclipse.cdt.debug.core.cdi.event.ICDIEventListener)" resolve="addEventListener" />
               <node concept="37vLTw" id="2npj2sr7BmO" role="37wK5m">
                 <ref role="3cqZAo" node="5XU7UUGaVh6" resolve="hitObserver" />
               </node>
@@ -456,7 +456,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVgQ" resolve="target" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVhu" role="2OqNvi">
-                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int):org.eclipse.cdt.debug.core.cdi.ICDILineLocation" resolve="createLineLocation" />
+                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int)" resolve="createLineLocation" />
                 <node concept="10M0yZ" id="5XU7UUGaVhv" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                   <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -490,7 +490,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVgQ" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVhG" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDILineBreakpoint" resolve="setLineBreakpoint" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setLineBreakpoint" />
                     <node concept="3cmrfG" id="5XU7UUGaVhH" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -522,7 +522,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVhM" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVhU" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVhV" role="3uHU7B">
@@ -558,7 +558,7 @@
         <node concept="3clFbF" id="65KmIn8tc1k" role="3cqZAp">
           <node concept="2YIFZM" id="65KmIn8tc1l" role="3clFbG">
             <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-            <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+            <ref role="37wK5l" to="wyt6:~Thread.sleep(long)" resolve="sleep" />
             <node concept="3cmrfG" id="65KmIn8tc1m" role="37wK5m">
               <property role="3cmrfH" value="2000" />
             </node>
@@ -685,15 +685,15 @@
                   <ref role="3cqZAo" node="5XU7UUGaVgQ" resolve="target" />
                 </node>
                 <node concept="liA8E" id="2npj2sr7NXy" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISessionObject.getSession():org.eclipse.cdt.debug.core.cdi.ICDISession" resolve="getSession" />
+                  <ref role="37wK5l" to="ys5c:~ICDISessionObject.getSession()" resolve="getSession" />
                 </node>
               </node>
               <node concept="liA8E" id="2npj2sr7NXz" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDISession.getEventManager():org.eclipse.cdt.debug.core.cdi.ICDIEventManager" resolve="getEventManager" />
+                <ref role="37wK5l" to="ys5c:~ICDISession.getEventManager()" resolve="getEventManager" />
               </node>
             </node>
             <node concept="liA8E" id="2npj2sr7NX$" role="2OqNvi">
-              <ref role="37wK5l" to="ys5c:~ICDIEventManager.removeEventListener(org.eclipse.cdt.debug.core.cdi.event.ICDIEventListener):void" resolve="removeEventListener" />
+              <ref role="37wK5l" to="ys5c:~ICDIEventManager.removeEventListener(org.eclipse.cdt.debug.core.cdi.event.ICDIEventListener)" resolve="removeEventListener" />
               <node concept="37vLTw" id="2npj2sr7NX_" role="37wK5m">
                 <ref role="3cqZAo" node="5XU7UUGaVh0" resolve="createdObserver" />
               </node>
@@ -708,15 +708,15 @@
                   <ref role="3cqZAo" node="5XU7UUGaVgQ" resolve="target" />
                 </node>
                 <node concept="liA8E" id="2npj2sr7NXF" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISessionObject.getSession():org.eclipse.cdt.debug.core.cdi.ICDISession" resolve="getSession" />
+                  <ref role="37wK5l" to="ys5c:~ICDISessionObject.getSession()" resolve="getSession" />
                 </node>
               </node>
               <node concept="liA8E" id="2npj2sr7NXG" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDISession.getEventManager():org.eclipse.cdt.debug.core.cdi.ICDIEventManager" resolve="getEventManager" />
+                <ref role="37wK5l" to="ys5c:~ICDISession.getEventManager()" resolve="getEventManager" />
               </node>
             </node>
             <node concept="liA8E" id="2npj2sr7NXH" role="2OqNvi">
-              <ref role="37wK5l" to="ys5c:~ICDIEventManager.removeEventListener(org.eclipse.cdt.debug.core.cdi.event.ICDIEventListener):void" resolve="removeEventListener" />
+              <ref role="37wK5l" to="ys5c:~ICDIEventManager.removeEventListener(org.eclipse.cdt.debug.core.cdi.event.ICDIEventListener)" resolve="removeEventListener" />
               <node concept="37vLTw" id="2npj2sr7NXI" role="37wK5m">
                 <ref role="3cqZAo" node="5XU7UUGaVh6" resolve="hitObserver" />
               </node>
@@ -786,7 +786,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVb0" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVbd" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
             </node>
@@ -803,7 +803,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVb5" resolve="target" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVbj" role="2OqNvi">
-                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int):org.eclipse.cdt.debug.core.cdi.ICDILineLocation" resolve="createLineLocation" />
+                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int)" resolve="createLineLocation" />
                 <node concept="10M0yZ" id="5XU7UUGaVbk" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                   <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -837,7 +837,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVb5" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVbx" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDILineBreakpoint" resolve="setLineBreakpoint" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setLineBreakpoint" />
                     <node concept="3cmrfG" id="5XU7UUGaVby" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -878,7 +878,7 @@
                             <ref role="3cqZAo" node="5XU7UUGaVbB" resolve="e" />
                           </node>
                           <node concept="liA8E" id="5XU7UUGaVbJ" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                           </node>
                         </node>
                       </node>
@@ -968,7 +968,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVc3" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVcg" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
             </node>
@@ -994,7 +994,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVc8" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVcs" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDISourceManagement.getInstructions(java.lang.String,int):org.eclipse.cdt.debug.core.cdi.model.ICDIInstruction[]" resolve="getInstructions" />
+                    <ref role="37wK5l" to="n06z:~ICDISourceManagement.getInstructions(java.lang.String,int)" resolve="getInstructions" />
                     <node concept="10M0yZ" id="5XU7UUGaVct" role="37wK5m">
                       <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                       <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -1082,13 +1082,13 @@
                       <ref role="3cqZAo" node="5XU7UUGaVc8" resolve="target" />
                     </node>
                     <node concept="liA8E" id="5XU7UUGaVcY" role="2OqNvi">
-                      <ref role="37wK5l" to="n06z:~ICDITarget.createAddressLocation(java.math.BigInteger):org.eclipse.cdt.debug.core.cdi.ICDIAddressLocation" resolve="createAddressLocation" />
+                      <ref role="37wK5l" to="n06z:~ICDITarget.createAddressLocation(java.math.BigInteger)" resolve="createAddressLocation" />
                       <node concept="2OqwBi" id="5XU7UUGaVcZ" role="37wK5m">
                         <node concept="2GrUjf" id="5XU7UUGaVd0" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="5XU7UUGaVcP" resolve="instruction" />
                         </node>
                         <node concept="liA8E" id="5XU7UUGaVd1" role="2OqNvi">
-                          <ref role="37wK5l" to="n06z:~ICDIInstruction.getAdress():java.math.BigInteger" resolve="getAdress" />
+                          <ref role="37wK5l" to="n06z:~ICDIInstruction.getAdress()" resolve="getAdress" />
                         </node>
                       </node>
                     </node>
@@ -1136,7 +1136,7 @@
                           <ref role="3cqZAo" node="5XU7UUGaVc8" resolve="target" />
                         </node>
                         <node concept="liA8E" id="5XU7UUGaVdl" role="2OqNvi">
-                          <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setAddressBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDIAddressLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDIAddressBreakpoint" resolve="setAddressBreakpoint" />
+                          <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setAddressBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDIAddressLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setAddressBreakpoint" />
                           <node concept="3cmrfG" id="5XU7UUGaVdm" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
@@ -1262,7 +1262,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVdQ" resolve="session" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVe3" role="2OqNvi">
-                    <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                    <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                   </node>
                 </node>
               </node>
@@ -1280,7 +1280,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVdV" resolve="target" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVe9" role="2OqNvi">
-                <ref role="37wK5l" to="n06z:~ICDITarget.createFunctionLocation(java.lang.String,java.lang.String):org.eclipse.cdt.debug.core.cdi.ICDIFunctionLocation" resolve="createFunctionLocation" />
+                <ref role="37wK5l" to="n06z:~ICDITarget.createFunctionLocation(java.lang.String,java.lang.String)" resolve="createFunctionLocation" />
                 <node concept="10M0yZ" id="5XU7UUGaVea" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                   <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -1313,7 +1313,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVdV" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVen" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setFunctionBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDIFunctionLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDIFunctionBreakpoint" resolve="setFunctionBreakpoint" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setFunctionBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDIFunctionLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setFunctionBreakpoint" />
                     <node concept="3cmrfG" id="5XU7UUGaVeo" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -1345,7 +1345,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVet" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVe_" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVeA" role="3uHU7B">
@@ -1432,7 +1432,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVeS" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVf5" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
             </node>
@@ -1447,11 +1447,11 @@
                 <ref role="3cqZAo" node="5XU7UUGaVeS" resolve="session" />
               </node>
               <node concept="liA8E" id="2npj2sr1V$E" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDISession.getEventManager():org.eclipse.cdt.debug.core.cdi.ICDIEventManager" resolve="getEventManager" />
+                <ref role="37wK5l" to="ys5c:~ICDISession.getEventManager()" resolve="getEventManager" />
               </node>
             </node>
             <node concept="liA8E" id="2npj2sr20xh" role="2OqNvi">
-              <ref role="37wK5l" to="ys5c:~ICDIEventManager.addEventListener(org.eclipse.cdt.debug.core.cdi.event.ICDIEventListener):void" resolve="addEventListener" />
+              <ref role="37wK5l" to="ys5c:~ICDIEventManager.addEventListener(org.eclipse.cdt.debug.core.cdi.event.ICDIEventListener)" resolve="addEventListener" />
               <node concept="2ShNRf" id="2npj2sr20_U" role="37wK5m">
                 <node concept="YeOm9" id="2npj2sr2aRo" role="2ShVmc">
                   <node concept="1Y3b0j" id="2npj2sr2aRr" role="YeSDq">
@@ -1506,7 +1506,7 @@
                                       <ref role="2Gs0qQ" node="2npj2sr9h3W" resolve="event" />
                                     </node>
                                     <node concept="liA8E" id="2npj2sr9lNP" role="2OqNvi">
-                                      <ref role="37wK5l" to="d5bg:~ICDIEvent.getSource():org.eclipse.cdt.debug.core.cdi.model.ICDIObject" resolve="getSource" />
+                                      <ref role="37wK5l" to="d5bg:~ICDIEvent.getSource()" resolve="getSource" />
                                     </node>
                                   </node>
                                 </node>
@@ -1541,7 +1541,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVeX" resolve="target" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVfA" role="2OqNvi">
-                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int):org.eclipse.cdt.debug.core.cdi.ICDILineLocation" resolve="createLineLocation" />
+                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int)" resolve="createLineLocation" />
                 <node concept="10M0yZ" id="5XU7UUGaVfB" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                   <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -1575,7 +1575,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVeX" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVfO" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDILineBreakpoint" resolve="setLineBreakpoint" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setLineBreakpoint" />
                     <node concept="3cmrfG" id="5XU7UUGaVfP" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -1607,7 +1607,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVfU" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVg2" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVg3" role="3uHU7B">
@@ -1649,7 +1649,7 @@
         </node>
         <node concept="3clFbF" id="65KmIn8t8o9" role="3cqZAp">
           <node concept="2YIFZM" id="65KmIn8t8ob" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+            <ref role="37wK5l" to="wyt6:~Thread.sleep(long)" resolve="sleep" />
             <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
             <node concept="3cmrfG" id="65KmIn8t8oc" role="37wK5m">
               <property role="3cmrfH" value="2000" />
@@ -1668,7 +1668,7 @@
               <ref role="3cqZAo" node="5XU7UUGaVeX" resolve="target" />
             </node>
             <node concept="liA8E" id="5XU7UUGaVgh" role="2OqNvi">
-              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended():boolean" resolve="isSuspended" />
+              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended()" resolve="isSuspended" />
             </node>
           </node>
         </node>
@@ -1694,7 +1694,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVgj" resolve="locator" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVgr" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDILineLocation.getLineNumber():int" resolve="getLineNumber" />
+                <ref role="37wK5l" to="ys5c:~ICDILineLocation.getLineNumber()" resolve="getLineNumber" />
               </node>
             </node>
             <node concept="10M0yZ" id="5XU7UUGaVgs" role="3uHU7w">
@@ -1710,11 +1710,11 @@
                 <ref role="3cqZAo" node="5XU7UUGaVgj" resolve="locator" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVgx" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDIFunctionLocation.getFunction():java.lang.String" resolve="getFunction" />
+                <ref role="37wK5l" to="ys5c:~ICDIFunctionLocation.getFunction()" resolve="getFunction" />
               </node>
             </node>
             <node concept="liA8E" id="5XU7UUGaVgy" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="5XU7UUGaVgz" role="37wK5m">
                 <property role="Xl_RC" value="main" />
               </node>
@@ -1772,7 +1772,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVjc" resolve="session" />
                 </node>
                 <node concept="2YIFZM" id="4PM5ysqvcGx" role="37vLTx">
-                  <ref role="37wK5l" to="y0ja:~CDTDebuggerFacade.createSession(java.lang.String,int,int):org.eclipse.cdt.debug.core.cdi.ICDISession" resolve="createSession" />
+                  <ref role="37wK5l" to="y0ja:~CDTDebuggerFacade.createSession(java.lang.String,int,int)" resolve="createSession" />
                   <ref role="1Pybhc" to="y0ja:~CDTDebuggerFacade" resolve="CDTDebuggerFacade" />
                   <node concept="Xl_RD" id="4PM5ysqvcJ0" role="37wK5m">
                     <property role="Xl_RC" value="bla" />
@@ -1801,7 +1801,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVjn" resolve="e" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVjt" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -1812,7 +1812,7 @@
                       <ref role="3cqZAo" node="5XU7UUGaVjn" resolve="e" />
                     </node>
                     <node concept="liA8E" id="5XU7UUGbDUO" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                     </node>
                   </node>
                 </node>
@@ -1869,7 +1869,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVk3" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVkd" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
               <node concept="1Rwk04" id="5XU7UUGaVke" role="2OqNvi" />
@@ -1938,7 +1938,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVkr" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVkA" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
             </node>
@@ -1950,7 +1950,7 @@
               <ref role="3cqZAo" node="5XU7UUGaVkw" resolve="target" />
             </node>
             <node concept="liA8E" id="5XU7UUGaVkE" role="2OqNvi">
-              <ref role="37wK5l" to="n06z:~ICDITarget.isTerminated():boolean" resolve="isTerminated" />
+              <ref role="37wK5l" to="n06z:~ICDITarget.isTerminated()" resolve="isTerminated" />
             </node>
           </node>
         </node>
@@ -1974,7 +1974,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVkr" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVkO" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
               <node concept="1Rwk04" id="5XU7UUGaVkP" role="2OqNvi" />
@@ -1987,7 +1987,7 @@
               <ref role="3cqZAo" node="5XU7UUGaVkw" resolve="target" />
             </node>
             <node concept="liA8E" id="5XU7UUGaVkT" role="2OqNvi">
-              <ref role="37wK5l" to="n06z:~ICDITarget.isTerminated():boolean" resolve="isTerminated" />
+              <ref role="37wK5l" to="n06z:~ICDITarget.isTerminated()" resolve="isTerminated" />
             </node>
           </node>
         </node>
@@ -2048,7 +2048,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVl5" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVli" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
             </node>
@@ -2065,7 +2065,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVla" resolve="target" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVlo" role="2OqNvi">
-                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int):org.eclipse.cdt.debug.core.cdi.ICDILineLocation" resolve="createLineLocation" />
+                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int)" resolve="createLineLocation" />
                 <node concept="10M0yZ" id="5XU7UUGaVlp" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                   <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -2099,7 +2099,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVla" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVlA" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDILineBreakpoint" resolve="setLineBreakpoint" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setLineBreakpoint" />
                     <node concept="3cmrfG" id="5XU7UUGaVlB" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -2131,7 +2131,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVlG" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVlO" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVlP" role="3uHU7B">
@@ -2178,7 +2178,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVla" resolve="target" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVm4" role="2OqNvi">
-                  <ref role="37wK5l" to="n06z:~ICDITarget.stepOver():void" resolve="stepOver" />
+                  <ref role="37wK5l" to="n06z:~ICDITarget.stepOver()" resolve="stepOver" />
                 </node>
               </node>
             </node>
@@ -2199,7 +2199,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVm6" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVme" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVmf" role="3uHU7B">
@@ -2248,7 +2248,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVmj" resolve="locator" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVmu" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDILineLocation.getLineNumber():int" resolve="getLineNumber" />
+                <ref role="37wK5l" to="ys5c:~ICDILineLocation.getLineNumber()" resolve="getLineNumber" />
               </node>
             </node>
           </node>
@@ -2259,7 +2259,7 @@
               <ref role="3cqZAo" node="5XU7UUGaVla" resolve="target" />
             </node>
             <node concept="liA8E" id="5XU7UUGaVmy" role="2OqNvi">
-              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended():boolean" resolve="isSuspended" />
+              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended()" resolve="isSuspended" />
             </node>
           </node>
         </node>
@@ -2326,7 +2326,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVmK" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVmX" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
             </node>
@@ -2343,7 +2343,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVmP" resolve="target" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVn3" role="2OqNvi">
-                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int):org.eclipse.cdt.debug.core.cdi.ICDILineLocation" resolve="createLineLocation" />
+                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int)" resolve="createLineLocation" />
                 <node concept="10M0yZ" id="5XU7UUGaVn4" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                   <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -2377,7 +2377,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVmP" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVnh" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDILineBreakpoint" resolve="setLineBreakpoint" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setLineBreakpoint" />
                     <node concept="3cmrfG" id="5XU7UUGaVni" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -2409,7 +2409,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVnn" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVnv" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVnw" role="3uHU7B">
@@ -2456,7 +2456,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVmP" resolve="target" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVnJ" role="2OqNvi">
-                  <ref role="37wK5l" to="n06z:~ICDITarget.stepInto():void" resolve="stepInto" />
+                  <ref role="37wK5l" to="n06z:~ICDITarget.stepInto()" resolve="stepInto" />
                 </node>
               </node>
             </node>
@@ -2477,7 +2477,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVnL" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVnT" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVnU" role="3uHU7B">
@@ -2521,7 +2521,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVnY" resolve="locator" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVo7" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDILineLocation.getLineNumber():int" resolve="getLineNumber" />
+                <ref role="37wK5l" to="ys5c:~ICDILineLocation.getLineNumber()" resolve="getLineNumber" />
               </node>
             </node>
           </node>
@@ -2532,7 +2532,7 @@
               <ref role="3cqZAo" node="5XU7UUGaVmP" resolve="target" />
             </node>
             <node concept="liA8E" id="5XU7UUGaVob" role="2OqNvi">
-              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended():boolean" resolve="isSuspended" />
+              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended()" resolve="isSuspended" />
             </node>
           </node>
         </node>
@@ -2605,7 +2605,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVor" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVoC" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
             </node>
@@ -2622,7 +2622,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVow" resolve="target" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVoI" role="2OqNvi">
-                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int):org.eclipse.cdt.debug.core.cdi.ICDILineLocation" resolve="createLineLocation" />
+                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int)" resolve="createLineLocation" />
                 <node concept="10M0yZ" id="5XU7UUGaVoJ" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                   <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -2656,7 +2656,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVow" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVoW" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDILineBreakpoint" resolve="setLineBreakpoint" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setLineBreakpoint" />
                     <node concept="3cmrfG" id="5XU7UUGaVoX" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -2688,7 +2688,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVp2" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVpa" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVpb" role="3uHU7B">
@@ -2749,11 +2749,11 @@
                 <ref role="3cqZAo" node="5XU7UUGaVpm" resolve="locator" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVpu" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDIFunctionLocation.getFunction():java.lang.String" resolve="getFunction" />
+                <ref role="37wK5l" to="ys5c:~ICDIFunctionLocation.getFunction()" resolve="getFunction" />
               </node>
             </node>
             <node concept="liA8E" id="5XU7UUGaVpv" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="5XU7UUGaVpw" role="37wK5m">
                 <property role="Xl_RC" value="main" />
               </node>
@@ -2766,7 +2766,7 @@
               <ref role="3cqZAo" node="5XU7UUGaVow" resolve="target" />
             </node>
             <node concept="liA8E" id="5XU7UUGaVp$" role="2OqNvi">
-              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended():boolean" resolve="isSuspended" />
+              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended()" resolve="isSuspended" />
             </node>
           </node>
         </node>
@@ -2791,7 +2791,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVow" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVpK" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDITarget.getGlobalVariableDescriptors(java.lang.String,java.lang.String,java.lang.String):org.eclipse.cdt.debug.core.cdi.model.ICDIGlobalVariableDescriptor" resolve="getGlobalVariableDescriptors" />
+                    <ref role="37wK5l" to="n06z:~ICDITarget.getGlobalVariableDescriptors(java.lang.String,java.lang.String,java.lang.String)" resolve="getGlobalVariableDescriptors" />
                     <node concept="10M0yZ" id="5XU7UUGaVpL" role="37wK5m">
                       <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                       <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -2822,7 +2822,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVpP" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVpX" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVpY" role="3uHU7B">
@@ -2855,7 +2855,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVow" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVqf" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDITarget.createGlobalVariable(org.eclipse.cdt.debug.core.cdi.model.ICDIGlobalVariableDescriptor):org.eclipse.cdt.debug.core.cdi.model.ICDIGlobalVariable" resolve="createGlobalVariable" />
+                    <ref role="37wK5l" to="n06z:~ICDITarget.createGlobalVariable(org.eclipse.cdt.debug.core.cdi.model.ICDIGlobalVariableDescriptor)" resolve="createGlobalVariable" />
                     <node concept="37vLTw" id="2npj2sr0hRJ" role="37wK5m">
                       <ref role="3cqZAo" node="5XU7UUGaVpA" resolve="globalVarDesc" />
                     </node>
@@ -2880,7 +2880,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVqk" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVqs" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVqt" role="3uHU7B">
@@ -2964,7 +2964,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVqH" resolve="session" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVqU" role="2OqNvi">
-                    <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                    <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                   </node>
                 </node>
               </node>
@@ -2982,7 +2982,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVqM" resolve="target" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVr0" role="2OqNvi">
-                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int):org.eclipse.cdt.debug.core.cdi.ICDILineLocation" resolve="createLineLocation" />
+                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int)" resolve="createLineLocation" />
                 <node concept="10M0yZ" id="5XU7UUGaVr1" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                   <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -3017,7 +3017,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVqM" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVre" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDILineBreakpoint" resolve="setLineBreakpoint" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setLineBreakpoint" />
                     <node concept="3cmrfG" id="5XU7UUGaVrf" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -3049,7 +3049,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVrk" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVrs" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVrt" role="3uHU7B">
@@ -3110,11 +3110,11 @@
                 <ref role="3cqZAo" node="5XU7UUGaVrC" resolve="locator" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVrK" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDIFunctionLocation.getFunction():java.lang.String" resolve="getFunction" />
+                <ref role="37wK5l" to="ys5c:~ICDIFunctionLocation.getFunction()" resolve="getFunction" />
               </node>
             </node>
             <node concept="liA8E" id="5XU7UUGaVrL" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="5XU7UUGaVrM" role="37wK5m">
                 <property role="Xl_RC" value="main" />
               </node>
@@ -3127,7 +3127,7 @@
               <ref role="3cqZAo" node="5XU7UUGaVqM" resolve="target" />
             </node>
             <node concept="liA8E" id="5XU7UUGaVrQ" role="2OqNvi">
-              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended():boolean" resolve="isSuspended" />
+              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended()" resolve="isSuspended" />
             </node>
           </node>
         </node>
@@ -3160,16 +3160,16 @@
                           <ref role="3cqZAo" node="5XU7UUGaVqM" resolve="target" />
                         </node>
                         <node concept="liA8E" id="5XU7UUGaVs7" role="2OqNvi">
-                          <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread():org.eclipse.cdt.debug.core.cdi.model.ICDIThread" resolve="getCurrentThread" />
+                          <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread()" resolve="getCurrentThread" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVs8" role="2OqNvi">
-                        <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames():org.eclipse.cdt.debug.core.cdi.model.ICDIStackFrame[]" resolve="getStackFrames" />
+                        <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames()" resolve="getStackFrames" />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVs9" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIStackFrame.getLocalVariableDescriptors():org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariableDescriptor[]" resolve="getLocalVariableDescriptors" />
+                    <ref role="37wK5l" to="n06z:~ICDIStackFrame.getLocalVariableDescriptors()" resolve="getLocalVariableDescriptors" />
                   </node>
                 </node>
               </node>
@@ -3191,7 +3191,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVsb" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVsj" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVsk" role="3uHU7B">
@@ -3247,16 +3247,16 @@
                                 <ref role="3cqZAo" node="5XU7UUGaVqM" resolve="target" />
                               </node>
                               <node concept="liA8E" id="2npj2sr0RHO" role="2OqNvi">
-                                <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread():org.eclipse.cdt.debug.core.cdi.model.ICDIThread" resolve="getCurrentThread" />
+                                <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread()" resolve="getCurrentThread" />
                               </node>
                             </node>
                             <node concept="liA8E" id="2npj2sr0RHP" role="2OqNvi">
-                              <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames():org.eclipse.cdt.debug.core.cdi.model.ICDIStackFrame[]" resolve="getStackFrames" />
+                              <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames()" resolve="getStackFrames" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="2npj2sr0T9Z" role="2OqNvi">
-                          <ref role="37wK5l" to="n06z:~ICDIStackFrame.createLocalVariable(org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariableDescriptor):org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariable" resolve="createLocalVariable" />
+                          <ref role="37wK5l" to="n06z:~ICDIStackFrame.createLocalVariable(org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariableDescriptor)" resolve="createLocalVariable" />
                           <node concept="2GrUjf" id="2npj2sr0Trz" role="37wK5m">
                             <ref role="2Gs0qQ" node="5XU7UUGaVst" resolve="localVariableDescriptor" />
                           </node>
@@ -3282,7 +3282,7 @@
                             <ref role="3cqZAo" node="5XU7UUGaVsM" resolve="e" />
                           </node>
                           <node concept="liA8E" id="5XU7UUGaVsU" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="5XU7UUGaVsV" role="3uHU7B">
@@ -3373,7 +3373,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVtf" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVts" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
             </node>
@@ -3390,7 +3390,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVtk" resolve="target" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVty" role="2OqNvi">
-                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int):org.eclipse.cdt.debug.core.cdi.ICDILineLocation" resolve="createLineLocation" />
+                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int)" resolve="createLineLocation" />
                 <node concept="10M0yZ" id="5XU7UUGaVtz" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                   <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -3424,7 +3424,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVtk" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVtK" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDILineBreakpoint" resolve="setLineBreakpoint" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setLineBreakpoint" />
                     <node concept="3cmrfG" id="5XU7UUGaVtL" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -3456,7 +3456,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVtQ" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVtY" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVtZ" role="3uHU7B">
@@ -3517,11 +3517,11 @@
                 <ref role="3cqZAo" node="5XU7UUGaVua" resolve="locator" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVui" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDIFunctionLocation.getFunction():java.lang.String" resolve="getFunction" />
+                <ref role="37wK5l" to="ys5c:~ICDIFunctionLocation.getFunction()" resolve="getFunction" />
               </node>
             </node>
             <node concept="liA8E" id="5XU7UUGaVuj" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="5XU7UUGaVuk" role="37wK5m">
                 <property role="Xl_RC" value="main" />
               </node>
@@ -3534,7 +3534,7 @@
               <ref role="3cqZAo" node="5XU7UUGaVtk" resolve="target" />
             </node>
             <node concept="liA8E" id="5XU7UUGaVuo" role="2OqNvi">
-              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended():boolean" resolve="isSuspended" />
+              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended()" resolve="isSuspended" />
             </node>
           </node>
         </node>
@@ -3567,16 +3567,16 @@
                           <ref role="3cqZAo" node="5XU7UUGaVtk" resolve="target" />
                         </node>
                         <node concept="liA8E" id="5XU7UUGaVuD" role="2OqNvi">
-                          <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread():org.eclipse.cdt.debug.core.cdi.model.ICDIThread" resolve="getCurrentThread" />
+                          <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread()" resolve="getCurrentThread" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVuE" role="2OqNvi">
-                        <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames():org.eclipse.cdt.debug.core.cdi.model.ICDIStackFrame[]" resolve="getStackFrames" />
+                        <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames()" resolve="getStackFrames" />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVuF" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIStackFrame.getArgumentDescriptors():org.eclipse.cdt.debug.core.cdi.model.ICDIArgumentDescriptor[]" resolve="getArgumentDescriptors" />
+                    <ref role="37wK5l" to="n06z:~ICDIStackFrame.getArgumentDescriptors()" resolve="getArgumentDescriptors" />
                   </node>
                 </node>
               </node>
@@ -3598,7 +3598,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVuH" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVuP" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVuQ" role="3uHU7B">
@@ -3654,16 +3654,16 @@
                                 <ref role="3cqZAo" node="5XU7UUGaVtk" resolve="target" />
                               </node>
                               <node concept="liA8E" id="2npj2sr0G3R" role="2OqNvi">
-                                <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread():org.eclipse.cdt.debug.core.cdi.model.ICDIThread" resolve="getCurrentThread" />
+                                <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread()" resolve="getCurrentThread" />
                               </node>
                             </node>
                             <node concept="liA8E" id="2npj2sr0G3S" role="2OqNvi">
-                              <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames():org.eclipse.cdt.debug.core.cdi.model.ICDIStackFrame[]" resolve="getStackFrames" />
+                              <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames()" resolve="getStackFrames" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="2npj2sr0G3T" role="2OqNvi">
-                          <ref role="37wK5l" to="n06z:~ICDIStackFrame.createArgument(org.eclipse.cdt.debug.core.cdi.model.ICDIArgumentDescriptor):org.eclipse.cdt.debug.core.cdi.model.ICDIArgument" resolve="createArgument" />
+                          <ref role="37wK5l" to="n06z:~ICDIStackFrame.createArgument(org.eclipse.cdt.debug.core.cdi.model.ICDIArgumentDescriptor)" resolve="createArgument" />
                           <node concept="2GrUjf" id="2npj2sr0H2H" role="37wK5m">
                             <ref role="2Gs0qQ" node="5XU7UUGaVuZ" resolve="argumentDescriptor" />
                           </node>
@@ -3689,7 +3689,7 @@
                             <ref role="3cqZAo" node="5XU7UUGaVvk" resolve="e" />
                           </node>
                           <node concept="liA8E" id="5XU7UUGaVvs" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="5XU7UUGaVvt" role="3uHU7B">
@@ -3780,7 +3780,7 @@
                   <ref role="3cqZAo" node="5XU7UUGaVvL" resolve="session" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVvY" role="2OqNvi">
-                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets():org.eclipse.cdt.debug.core.cdi.model.ICDITarget[]" resolve="getTargets" />
+                  <ref role="37wK5l" to="ys5c:~ICDISession.getTargets()" resolve="getTargets" />
                 </node>
               </node>
             </node>
@@ -3797,7 +3797,7 @@
                 <ref role="3cqZAo" node="5XU7UUGaVvQ" resolve="target" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVw4" role="2OqNvi">
-                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int):org.eclipse.cdt.debug.core.cdi.ICDILineLocation" resolve="createLineLocation" />
+                <ref role="37wK5l" to="n06z:~ICDITarget.createLineLocation(java.lang.String,int)" resolve="createLineLocation" />
                 <node concept="10M0yZ" id="5XU7UUGaVw5" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
                   <ref role="3cqZAo" node="5XU7UUGaVzt" resolve="C_FILE_NAME" />
@@ -3831,7 +3831,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVvQ" resolve="target" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVwi" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean):org.eclipse.cdt.debug.core.cdi.model.ICDILineBreakpoint" resolve="setLineBreakpoint" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.setLineBreakpoint(int,org.eclipse.cdt.debug.core.cdi.ICDILineLocation,org.eclipse.cdt.debug.core.cdi.ICDICondition,boolean)" resolve="setLineBreakpoint" />
                     <node concept="3cmrfG" id="5XU7UUGaVwj" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -3863,7 +3863,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVwo" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVww" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVwx" role="3uHU7B">
@@ -3924,11 +3924,11 @@
                 <ref role="3cqZAo" node="5XU7UUGaVwG" resolve="locator" />
               </node>
               <node concept="liA8E" id="5XU7UUGaVwO" role="2OqNvi">
-                <ref role="37wK5l" to="ys5c:~ICDIFunctionLocation.getFunction():java.lang.String" resolve="getFunction" />
+                <ref role="37wK5l" to="ys5c:~ICDIFunctionLocation.getFunction()" resolve="getFunction" />
               </node>
             </node>
             <node concept="liA8E" id="5XU7UUGaVwP" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="5XU7UUGaVwQ" role="37wK5m">
                 <property role="Xl_RC" value="main" />
               </node>
@@ -3941,7 +3941,7 @@
               <ref role="3cqZAo" node="5XU7UUGaVvQ" resolve="target" />
             </node>
             <node concept="liA8E" id="5XU7UUGaVwU" role="2OqNvi">
-              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended():boolean" resolve="isSuspended" />
+              <ref role="37wK5l" to="n06z:~ICDISuspend.isSuspended()" resolve="isSuspended" />
             </node>
           </node>
         </node>
@@ -3974,16 +3974,16 @@
                           <ref role="3cqZAo" node="5XU7UUGaVvQ" resolve="target" />
                         </node>
                         <node concept="liA8E" id="5XU7UUGaVxb" role="2OqNvi">
-                          <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread():org.eclipse.cdt.debug.core.cdi.model.ICDIThread" resolve="getCurrentThread" />
+                          <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread()" resolve="getCurrentThread" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVxc" role="2OqNvi">
-                        <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames():org.eclipse.cdt.debug.core.cdi.model.ICDIStackFrame[]" resolve="getStackFrames" />
+                        <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames()" resolve="getStackFrames" />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVxd" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIStackFrame.getLocalVariableDescriptors():org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariableDescriptor[]" resolve="getLocalVariableDescriptors" />
+                    <ref role="37wK5l" to="n06z:~ICDIStackFrame.getLocalVariableDescriptors()" resolve="getLocalVariableDescriptors" />
                   </node>
                 </node>
               </node>
@@ -4005,7 +4005,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVxf" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVxn" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVxo" role="3uHU7B">
@@ -4061,16 +4061,16 @@
                                 <ref role="3cqZAo" node="5XU7UUGaVvQ" resolve="target" />
                               </node>
                               <node concept="liA8E" id="2npj2sr0DA9" role="2OqNvi">
-                                <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread():org.eclipse.cdt.debug.core.cdi.model.ICDIThread" resolve="getCurrentThread" />
+                                <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread()" resolve="getCurrentThread" />
                               </node>
                             </node>
                             <node concept="liA8E" id="2npj2sr0DAa" role="2OqNvi">
-                              <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames():org.eclipse.cdt.debug.core.cdi.model.ICDIStackFrame[]" resolve="getStackFrames" />
+                              <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames()" resolve="getStackFrames" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="2npj2sr0DAb" role="2OqNvi">
-                          <ref role="37wK5l" to="n06z:~ICDIStackFrame.createLocalVariable(org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariableDescriptor):org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariable" resolve="createLocalVariable" />
+                          <ref role="37wK5l" to="n06z:~ICDIStackFrame.createLocalVariable(org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariableDescriptor)" resolve="createLocalVariable" />
                           <node concept="10QFUN" id="2npj2sr0DAc" role="37wK5m">
                             <node concept="3uibUv" id="2npj2sr0DAd" role="10QFUM">
                               <ref role="3uigEE" to="n06z:~ICDILocalVariableDescriptor" resolve="ICDILocalVariableDescriptor" />
@@ -4101,7 +4101,7 @@
                             <ref role="3cqZAo" node="5XU7UUGaVxQ" resolve="e" />
                           </node>
                           <node concept="liA8E" id="5XU7UUGaVxY" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="5XU7UUGaVxZ" role="3uHU7B">
@@ -4153,7 +4153,7 @@
                     <node concept="1uHKPH" id="5XU7UUGaVyi" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVyj" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIVariableDescriptor.getVariableDescriptorAsType(java.lang.String):org.eclipse.cdt.debug.core.cdi.model.ICDIVariableDescriptor" resolve="getVariableDescriptorAsType" />
+                    <ref role="37wK5l" to="n06z:~ICDIVariableDescriptor.getVariableDescriptorAsType(java.lang.String)" resolve="getVariableDescriptorAsType" />
                     <node concept="Xl_RD" id="5XU7UUGaVyk" role="37wK5m">
                       <property role="Xl_RC" value="char" />
                     </node>
@@ -4207,16 +4207,16 @@
                           <ref role="3cqZAo" node="5XU7UUGaVvQ" resolve="target" />
                         </node>
                         <node concept="liA8E" id="2npj2sr0s3p" role="2OqNvi">
-                          <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread():org.eclipse.cdt.debug.core.cdi.model.ICDIThread" resolve="getCurrentThread" />
+                          <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread()" resolve="getCurrentThread" />
                         </node>
                       </node>
                       <node concept="liA8E" id="2npj2sr0voZ" role="2OqNvi">
-                        <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames():org.eclipse.cdt.debug.core.cdi.model.ICDIStackFrame[]" resolve="getStackFrames" />
+                        <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames()" resolve="getStackFrames" />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="2npj2sr0yev" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIStackFrame.createLocalVariable(org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariableDescriptor):org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariable" resolve="createLocalVariable" />
+                    <ref role="37wK5l" to="n06z:~ICDIStackFrame.createLocalVariable(org.eclipse.cdt.debug.core.cdi.model.ICDILocalVariableDescriptor)" resolve="createLocalVariable" />
                     <node concept="10QFUN" id="2npj2sr0$kt" role="37wK5m">
                       <node concept="3uibUv" id="2npj2sr0$sy" role="10QFUM">
                         <ref role="3uigEE" to="n06z:~ICDILocalVariableDescriptor" resolve="ICDILocalVariableDescriptor" />
@@ -4258,15 +4258,15 @@
                       <ref role="3cqZAo" node="5XU7UUGaVyt" resolve="newlocalVariable" />
                     </node>
                     <node concept="liA8E" id="5XU7UUGaVyY" role="2OqNvi">
-                      <ref role="37wK5l" to="n06z:~ICDIVariableDescriptor.getTypeName():java.lang.String" resolve="getTypeName" />
+                      <ref role="37wK5l" to="n06z:~ICDIVariableDescriptor.getTypeName()" resolve="getTypeName" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVyZ" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                    <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5XU7UUGaVz0" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                   <node concept="Xl_RD" id="5XU7UUGaVz1" role="37wK5m">
                     <property role="Xl_RC" value="char" />
                   </node>
@@ -4290,7 +4290,7 @@
                         <ref role="3cqZAo" node="5XU7UUGaVz3" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaVzb" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGaVzc" role="3uHU7B">
@@ -4515,18 +4515,18 @@
               <node concept="2OqwBi" id="5XU7UUGaV$k" role="3clFbw">
                 <node concept="2OqwBi" id="5XU7UUGaV$l" role="2Oq$k0">
                   <node concept="2YIFZM" id="5XU7UUGaV$m" role="2Oq$k0">
-                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                     <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                     <node concept="Xl_RD" id="5XU7UUGaV$n" role="37wK5m">
                       <property role="Xl_RC" value="os.name" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5XU7UUGaV$o" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                    <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5XU7UUGaV$p" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                   <node concept="Xl_RD" id="5XU7UUGaV$q" role="37wK5m">
                     <property role="Xl_RC" value="win" />
                   </node>
@@ -4590,11 +4590,11 @@
                 </node>
                 <node concept="2OqwBi" id="5XU7UUGaV$D" role="33vP2m">
                   <node concept="2YIFZM" id="5XU7UUGaV$E" role="2Oq$k0">
-                    <ref role="37wK5l" to="wyt6:~Runtime.getRuntime():java.lang.Runtime" resolve="getRuntime" />
+                    <ref role="37wK5l" to="wyt6:~Runtime.getRuntime()" resolve="getRuntime" />
                     <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaV$F" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Runtime.exec(java.lang.String[]):java.lang.Process" resolve="exec" />
+                    <ref role="37wK5l" to="wyt6:~Runtime.exec(java.lang.String[])" resolve="exec" />
                     <node concept="37vLTw" id="5HxjapvTdN7" role="37wK5m">
                       <ref role="3cqZAo" node="5XU7UUGaV$4" resolve="gccCommand" />
                     </node>
@@ -4612,13 +4612,13 @@
                         <ref role="3cqZAo" node="5XU7UUGaV$B" resolve="gccProcess" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGaV$N" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Process.getInputStream():java.io.InputStream" resolve="getInputStream" />
+                        <ref role="37wK5l" to="wyt6:~Process.getInputStream()" resolve="getInputStream" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="5XU7UUGaV$O" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Thread.start():void" resolve="start" />
+                  <ref role="37wK5l" to="wyt6:~Thread.start()" resolve="start" />
                 </node>
               </node>
             </node>
@@ -4632,7 +4632,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaV$B" resolve="gccProcess" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaV$S" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Process.waitFor():int" resolve="waitFor" />
+                    <ref role="37wK5l" to="wyt6:~Process.waitFor()" resolve="waitFor" />
                   </node>
                 </node>
               </node>
@@ -4647,10 +4647,10 @@
                 <node concept="2OqwBi" id="4r78KUsj8SI" role="33vP2m">
                   <node concept="2YIFZM" id="4r78KUsj8SJ" role="2Oq$k0">
                     <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
-                    <ref role="37wK5l" to="wyt6:~Runtime.getRuntime():java.lang.Runtime" resolve="getRuntime" />
+                    <ref role="37wK5l" to="wyt6:~Runtime.getRuntime()" resolve="getRuntime" />
                   </node>
                   <node concept="liA8E" id="4r78KUsj8SK" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Runtime.exec(java.lang.String[]):java.lang.Process" resolve="exec" />
+                    <ref role="37wK5l" to="wyt6:~Runtime.exec(java.lang.String[])" resolve="exec" />
                     <node concept="37vLTw" id="5HxjapvTeqp" role="37wK5m">
                       <ref role="3cqZAo" node="4r78KUsj8RQ" resolve="gdbComment" />
                     </node>
@@ -4668,13 +4668,13 @@
                         <ref role="3cqZAo" node="4r78KUsj8SG" resolve="gdbProcess" />
                       </node>
                       <node concept="liA8E" id="4r78KUsj8SS" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Process.getInputStream():java.io.InputStream" resolve="getInputStream" />
+                        <ref role="37wK5l" to="wyt6:~Process.getInputStream()" resolve="getInputStream" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="4r78KUsj8ST" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Thread.start():void" resolve="start" />
+                  <ref role="37wK5l" to="wyt6:~Thread.start()" resolve="start" />
                 </node>
               </node>
             </node>
@@ -4688,7 +4688,7 @@
                     <ref role="3cqZAo" node="4r78KUsj8SG" resolve="gdbProcess" />
                   </node>
                   <node concept="liA8E" id="4r78KUsj8SZ" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Process.waitFor():int" resolve="waitFor" />
+                    <ref role="37wK5l" to="wyt6:~Process.waitFor()" resolve="waitFor" />
                   </node>
                 </node>
               </node>
@@ -4753,11 +4753,11 @@
         <node concept="3cpWs6" id="5XU7UUGaV_i" role="3cqZAp">
           <node concept="2OqwBi" id="5XU7UUGaV_j" role="3cqZAk">
             <node concept="2YIFZM" id="5XU7UUGaV_k" role="2Oq$k0">
-              <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
+              <ref role="37wK5l" to="z1c3:~PathMacros.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
             </node>
             <node concept="liA8E" id="5XU7UUGaV_l" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+              <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String)" resolve="getValue" />
               <node concept="10M0yZ" id="29so9Vc2Xly" role="37wK5m">
                 <ref role="3cqZAo" node="5XU7UUGaVzh" resolve="GITHUB_MACRO" />
                 <ref role="1PxDUh" node="5XU7UUGaVzg" resolve="BinaryBuilder" />
@@ -4777,17 +4777,17 @@
             <node concept="2OqwBi" id="5XU7UUGaV_t" role="2Oq$k0">
               <node concept="2YIFZM" id="5XU7UUGaV_u" role="2Oq$k0">
                 <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                 <node concept="Xl_RD" id="5XU7UUGaV_v" role="37wK5m">
                   <property role="Xl_RC" value="os.name" />
                 </node>
               </node>
               <node concept="liA8E" id="5XU7UUGaV_w" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
               </node>
             </node>
             <node concept="liA8E" id="5XU7UUGaV_x" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="5XU7UUGaV_y" role="37wK5m">
                 <property role="Xl_RC" value="win" />
               </node>
@@ -4816,7 +4816,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVA1" resolve="path" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaV_K" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                     <node concept="Xl_RD" id="5XU7UUGaV_L" role="37wK5m">
                       <property role="Xl_RC" value="/" />
                     </node>
@@ -4843,7 +4843,7 @@
                       <ref role="3cqZAo" node="5XU7UUGaVA1" resolve="path" />
                     </node>
                     <node concept="liA8E" id="5XU7UUGaV_V" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                       <node concept="Xl_RD" id="5XU7UUGaV_W" role="37wK5m">
                         <property role="Xl_RC" value="\\" />
                       </node>
@@ -5024,7 +5024,7 @@
                       <ref role="3cqZAo" node="5XU7UUGaVAR" resolve="reader" />
                     </node>
                     <node concept="liA8E" id="5XU7UUGaVB5" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
+                      <ref role="37wK5l" to="guwi:~BufferedReader.readLine()" resolve="readLine" />
                     </node>
                   </node>
                 </node>
@@ -5051,7 +5051,7 @@
                       <ref role="3cqZAo" node="5XU7UUGaVBa" resolve="e" />
                     </node>
                     <node concept="liA8E" id="5XU7UUGaVBg" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                     </node>
                   </node>
                 </node>
@@ -5276,7 +5276,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 </node>
                 <node concept="liA8E" id="2npj2srgIwJ" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="2npj2srgLVx" role="37wK5m">
                     <node concept="2OqwBi" id="2npj2srgOMT" role="3uHU7w">
                       <node concept="2OqwBi" id="2npj2srgN$t" role="2Oq$k0">
@@ -5285,15 +5285,15 @@
                             <ref role="2Gs0qQ" node="2npj2sr7qOj" resolve="event" />
                           </node>
                           <node concept="liA8E" id="2npj2srgMGH" role="2OqNvi">
-                            <ref role="37wK5l" to="d5bg:~ICDIEvent.getSource():org.eclipse.cdt.debug.core.cdi.model.ICDIObject" resolve="getSource" />
+                            <ref role="37wK5l" to="d5bg:~ICDIEvent.getSource()" resolve="getSource" />
                           </node>
                         </node>
                         <node concept="liA8E" id="2npj2srgO6T" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                          <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                         </node>
                       </node>
                       <node concept="liA8E" id="2npj2srgQmI" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="3cpWs3" id="2npj2srgLjN" role="3uHU7B">
@@ -5307,11 +5307,11 @@
                               <ref role="2Gs0qQ" node="2npj2sr7qOj" resolve="event" />
                             </node>
                             <node concept="liA8E" id="2npj2srgJo0" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                              <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                             </node>
                           </node>
                           <node concept="liA8E" id="2npj2srgL1w" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                            <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                           </node>
                         </node>
                       </node>
@@ -5355,7 +5355,7 @@
                         <ref role="2Gs0qQ" node="2npj2sr7qOj" resolve="event" />
                       </node>
                       <node concept="liA8E" id="2npj2sr7vxN" role="2OqNvi">
-                        <ref role="37wK5l" to="d5bg:~ICDIEvent.getSource():org.eclipse.cdt.debug.core.cdi.model.ICDIObject" resolve="getSource" />
+                        <ref role="37wK5l" to="d5bg:~ICDIEvent.getSource()" resolve="getSource" />
                       </node>
                     </node>
                   </node>
@@ -5368,7 +5368,7 @@
                     <ref role="3cqZAo" node="5XU7UUGaVB_" resolve="eventClazz" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGaVCk" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.isInstance(java.lang.Object):boolean" resolve="isInstance" />
+                    <ref role="37wK5l" to="wyt6:~Class.isInstance(java.lang.Object)" resolve="isInstance" />
                     <node concept="2GrUjf" id="2npj2sr7rQI" role="37wK5m">
                       <ref role="2Gs0qQ" node="2npj2sr7qOj" resolve="event" />
                     </node>
@@ -5379,13 +5379,13 @@
                     <ref role="3cqZAo" node="2npj2srh7Pi" resolve="objectClazz" />
                   </node>
                   <node concept="liA8E" id="2npj2srhfAH" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.isInstance(java.lang.Object):boolean" resolve="isInstance" />
+                    <ref role="37wK5l" to="wyt6:~Class.isInstance(java.lang.Object)" resolve="isInstance" />
                     <node concept="2OqwBi" id="2npj2srhg5d" role="37wK5m">
                       <node concept="2GrUjf" id="2npj2srhfTo" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="2npj2sr7qOj" resolve="event" />
                       </node>
                       <node concept="liA8E" id="2npj2srhgD8" role="2OqNvi">
-                        <ref role="37wK5l" to="d5bg:~ICDIEvent.getSource():org.eclipse.cdt.debug.core.cdi.model.ICDIObject" resolve="getSource" />
+                        <ref role="37wK5l" to="d5bg:~ICDIEvent.getSource()" resolve="getSource" />
                       </node>
                     </node>
                   </node>
@@ -5545,7 +5545,7 @@
                 <ref role="3VsUkX" to="wyt6:~ClassLoader" resolve="ClassLoader" />
               </node>
               <node concept="liA8E" id="5XU7UUGbc_K" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Class.getDeclaredField(java.lang.String):java.lang.reflect.Field" resolve="getDeclaredField" />
+                <ref role="37wK5l" to="wyt6:~Class.getDeclaredField(java.lang.String)" resolve="getDeclaredField" />
                 <node concept="Xl_RD" id="5XU7UUGbc_L" role="37wK5m">
                   <property role="Xl_RC" value="usr_paths" />
                 </node>
@@ -5559,7 +5559,7 @@
               <ref role="3cqZAo" node="5XU7UUGbc_G" resolve="field" />
             </node>
             <node concept="liA8E" id="5XU7UUGbc_P" role="2OqNvi">
-              <ref role="37wK5l" to="t6h5:~AccessibleObject.setAccessible(boolean):void" resolve="setAccessible" />
+              <ref role="37wK5l" to="t6h5:~AccessibleObject.setAccessible(boolean)" resolve="setAccessible" />
               <node concept="3clFbT" id="5XU7UUGbc_Q" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -5581,7 +5581,7 @@
                   <ref role="3cqZAo" node="5XU7UUGbc_G" resolve="field" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGbcA0" role="2OqNvi">
-                  <ref role="37wK5l" to="t6h5:~Field.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="t6h5:~Field.get(java.lang.Object)" resolve="get" />
                   <node concept="10Nm6u" id="5XU7UUGbcA1" role="37wK5m" />
                 </node>
               </node>
@@ -5599,7 +5599,7 @@
                   <ref role="3cqZAo" node="5XU7UUGbc_C" resolve="libraryPath" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGbcA9" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="AH0OO" id="5XU7UUGbcAa" role="37wK5m">
                     <node concept="37vLTw" id="5HxjapvQZgJ" role="AHEQo">
                       <ref role="3cqZAo" node="5XU7UUGbcAd" resolve="i" />
@@ -5665,7 +5665,7 @@
         <node concept="3clFbF" id="5XU7UUGbcA$" role="3cqZAp">
           <node concept="2YIFZM" id="5XU7UUGbcA_" role="3clFbG">
             <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-            <ref role="37wK5l" to="wyt6:~System.arraycopy(java.lang.Object,int,java.lang.Object,int,int):void" resolve="arraycopy" />
+            <ref role="37wK5l" to="wyt6:~System.arraycopy(java.lang.Object,int,java.lang.Object,int,int)" resolve="arraycopy" />
             <node concept="37vLTw" id="5HxjapvQZol" role="37wK5m">
               <ref role="3cqZAo" node="5XU7UUGbc_S" resolve="paths" />
             </node>
@@ -5710,7 +5710,7 @@
               <ref role="3cqZAo" node="5XU7UUGbc_G" resolve="field" />
             </node>
             <node concept="liA8E" id="5XU7UUGbcAS" role="2OqNvi">
-              <ref role="37wK5l" to="t6h5:~Field.set(java.lang.Object,java.lang.Object):void" resolve="set" />
+              <ref role="37wK5l" to="t6h5:~Field.set(java.lang.Object,java.lang.Object)" resolve="set" />
               <node concept="10Nm6u" id="5XU7UUGbcAT" role="37wK5m" />
               <node concept="37vLTw" id="5XU7UUGbcAU" role="37wK5m">
                 <ref role="3cqZAo" node="5XU7UUGbcAo" resolve="tmp" />
@@ -5735,11 +5735,11 @@
             <node concept="17QB3L" id="5XU7UUGbMVU" role="1tU5fm" />
             <node concept="2OqwBi" id="5XU7UUGbMVW" role="33vP2m">
               <node concept="2YIFZM" id="5XU7UUGbMVX" role="2Oq$k0">
-                <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
+                <ref role="37wK5l" to="z1c3:~PathMacros.getInstance()" resolve="getInstance" />
                 <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
               </node>
               <node concept="liA8E" id="5XU7UUGbMVY" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String)" resolve="getValue" />
                 <node concept="Xl_RD" id="5XU7UUGbMW0" role="37wK5m">
                   <property role="Xl_RC" value="mbeddr.github.core.home" />
                 </node>
@@ -5779,7 +5779,7 @@
                 <property role="TrG5h" value="osName" />
                 <node concept="17QB3L" id="5XU7UUGbcB8" role="1tU5fm" />
                 <node concept="2YIFZM" id="5XU7UUGbcB9" role="33vP2m">
-                  <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                  <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                   <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                   <node concept="Xl_RD" id="5XU7UUGbcBa" role="37wK5m">
                     <property role="Xl_RC" value="os.name" />
@@ -5793,7 +5793,7 @@
                 <node concept="17QB3L" id="5XU7UUGbcBd" role="1tU5fm" />
                 <node concept="2YIFZM" id="5XU7UUGbcBe" role="33vP2m">
                   <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                  <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                  <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                   <node concept="Xl_RD" id="5XU7UUGbcBf" role="37wK5m">
                     <property role="Xl_RC" value="os.arch" />
                   </node>
@@ -5828,11 +5828,11 @@
                         <ref role="3cqZAo" node="5XU7UUGbcBc" resolve="arch" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGbcBz" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                        <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                       </node>
                     </node>
                     <node concept="liA8E" id="5XU7UUGbcB$" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                       <node concept="Xl_RD" id="5XU7UUGbcB_" role="37wK5m">
                         <property role="Xl_RC" value="64" />
                       </node>
@@ -5867,11 +5867,11 @@
                     <ref role="3cqZAo" node="5XU7UUGbcB7" resolve="osName" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGbcBP" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                    <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5XU7UUGbcBQ" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                   <node concept="Xl_RD" id="5XU7UUGbcBR" role="37wK5m">
                     <property role="Xl_RC" value="win" />
                   </node>
@@ -5898,11 +5898,11 @@
                           <ref role="3cqZAo" node="5XU7UUGbcBc" resolve="arch" />
                         </node>
                         <node concept="liA8E" id="5XU7UUGbcC7" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                          <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5XU7UUGbcC8" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                        <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                         <node concept="Xl_RD" id="5XU7UUGbcC9" role="37wK5m">
                           <property role="Xl_RC" value="64" />
                         </node>
@@ -5937,11 +5937,11 @@
                       <ref role="3cqZAo" node="5XU7UUGbcB7" resolve="osName" />
                     </node>
                     <node concept="liA8E" id="5XU7UUGbcCp" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                      <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5XU7UUGbcCq" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                     <node concept="Xl_RD" id="5XU7UUGbcCr" role="37wK5m">
                       <property role="Xl_RC" value="linux" />
                     </node>
@@ -5969,11 +5969,11 @@
                           <ref role="3cqZAo" node="5XU7UUGbcBc" resolve="arch" />
                         </node>
                         <node concept="liA8E" id="5XU7UUGbcCF" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                          <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5XU7UUGbcCG" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                        <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                         <node concept="Xl_RD" id="5XU7UUGbcCH" role="37wK5m">
                           <property role="Xl_RC" value="64" />
                         </node>
@@ -6019,11 +6019,11 @@
                             <ref role="3cqZAo" node="5XU7UUGbcBc" resolve="arch" />
                           </node>
                           <node concept="liA8E" id="5XU7UUGbcD7" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                            <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                           </node>
                         </node>
                         <node concept="liA8E" id="5XU7UUGbcD8" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                           <node concept="Xl_RD" id="5XU7UUGbcD9" role="37wK5m">
                             <property role="Xl_RC" value="ppc" />
                           </node>
@@ -6038,11 +6038,11 @@
                       <ref role="3cqZAo" node="5XU7UUGbcB7" resolve="osName" />
                     </node>
                     <node concept="liA8E" id="5XU7UUGbcDd" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                      <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5XU7UUGbcDe" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                     <node concept="Xl_RD" id="5XU7UUGbcDf" role="37wK5m">
                       <property role="Xl_RC" value="mac" />
                     </node>
@@ -6082,7 +6082,7 @@
                             <ref role="3cqZAo" node="5XU7UUGbcDm" resolve="e" />
                           </node>
                           <node concept="liA8E" id="5XU7UUGbcDu" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="5XU7UUGbcDv" role="3uHU7B">
@@ -6122,11 +6122,11 @@
                   <ref role="3cqZAo" node="5XU7UUGbcDA" resolve="arch" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGbcDI" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                  <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                 </node>
               </node>
               <node concept="liA8E" id="5XU7UUGbcDJ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                 <node concept="Xl_RD" id="5XU7UUGbcDK" role="37wK5m">
                   <property role="Xl_RC" value="i386" />
                 </node>
@@ -6138,11 +6138,11 @@
                   <ref role="3cqZAo" node="5XU7UUGbcDA" resolve="arch" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGbcDO" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                  <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                 </node>
               </node>
               <node concept="liA8E" id="5XU7UUGbcDP" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                 <node concept="Xl_RD" id="5XU7UUGbcDQ" role="37wK5m">
                   <property role="Xl_RC" value="x86" />
                 </node>
@@ -6173,11 +6173,11 @@
                 </node>
                 <node concept="2OqwBi" id="5XU7UUGbcE4" role="37vLTx">
                   <node concept="2YIFZM" id="5XU7UUGbcE5" role="2Oq$k0">
-                    <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
+                    <ref role="37wK5l" to="z1c3:~PathMacros.getInstance()" resolve="getInstance" />
                     <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGbcE6" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                    <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String)" resolve="getValue" />
                     <node concept="10M0yZ" id="5XU7UUGbcE7" role="37wK5m">
                       <ref role="1PxDUh" node="5XU7UUGbc$D" resolve="CDTUtilClass" />
                       <ref role="3cqZAo" node="5XU7UUGbc$I" resolve="HOME_VAR" />
@@ -6244,18 +6244,18 @@
           <node concept="2OqwBi" id="5XU7UUGbcE_" role="3clFbw">
             <node concept="2OqwBi" id="5XU7UUGbcEA" role="2Oq$k0">
               <node concept="2YIFZM" id="5XU7UUGbcEB" role="2Oq$k0">
-                <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                 <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                 <node concept="Xl_RD" id="5XU7UUGbcEC" role="37wK5m">
                   <property role="Xl_RC" value="os.name" />
                 </node>
               </node>
               <node concept="liA8E" id="5XU7UUGbcED" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
               </node>
             </node>
             <node concept="liA8E" id="5XU7UUGbcEE" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="5XU7UUGbcEF" role="37wK5m">
                 <property role="Xl_RC" value="win" />
               </node>
@@ -6362,7 +6362,7 @@
               <ref role="3cqZAo" node="5XU7UUGbcFf" resolve="workingDirectory" />
             </node>
             <node concept="liA8E" id="5XU7UUGbcFn" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
             </node>
           </node>
         </node>
@@ -6391,7 +6391,7 @@
               <ref role="3cqZAo" node="5XU7UUGbcFp" resolve="builder" />
             </node>
             <node concept="liA8E" id="5XU7UUGbcFy" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~ProcessBuilder.directory(java.io.File):java.lang.ProcessBuilder" resolve="directory" />
+              <ref role="37wK5l" to="wyt6:~ProcessBuilder.directory(java.io.File)" resolve="directory" />
               <node concept="37vLTw" id="5HxjapvTdVc" role="37wK5m">
                 <ref role="3cqZAo" node="5XU7UUGbcFf" resolve="workingDirectory" />
               </node>
@@ -6416,7 +6416,7 @@
                     <ref role="3cqZAo" node="5XU7UUGbcFp" resolve="builder" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGbcFI" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~ProcessBuilder.start():java.lang.Process" resolve="start" />
+                    <ref role="37wK5l" to="wyt6:~ProcessBuilder.start()" resolve="start" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="5HxjapvQZ8T" role="37vLTJ">
@@ -6439,7 +6439,7 @@
                     <ref role="3cqZAo" node="5XU7UUGbcFL" resolve="e" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGbcFR" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -6461,7 +6461,7 @@
                   <ref role="3cqZAo" node="5XU7UUGbcF_" resolve="makeProcess" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGbcG0" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Process.waitFor():int" resolve="waitFor" />
+                  <ref role="37wK5l" to="wyt6:~Process.waitFor()" resolve="waitFor" />
                 </node>
               </node>
             </node>
@@ -6480,7 +6480,7 @@
                     <ref role="3cqZAo" node="5XU7UUGbcG2" resolve="e" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGbcG8" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -6505,7 +6505,7 @@
                 <ref role="3cqZAo" node="5XU7UUGbcF_" resolve="makeProcess" />
               </node>
               <node concept="liA8E" id="5XU7UUGbcGh" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Process.exitValue():int" resolve="exitValue" />
+                <ref role="37wK5l" to="wyt6:~Process.exitValue()" resolve="exitValue" />
               </node>
             </node>
           </node>
@@ -6577,7 +6577,7 @@
                   <ref role="3cqZAo" node="5XU7UUGbcGn" resolve="session" />
                 </node>
                 <node concept="2YIFZM" id="1q9LF7vGkRZ" role="37vLTx">
-                  <ref role="37wK5l" to="y0ja:~CDTDebuggerFacade.createSession(java.lang.String,int,int):org.eclipse.cdt.debug.core.cdi.ICDISession" resolve="createSession" />
+                  <ref role="37wK5l" to="y0ja:~CDTDebuggerFacade.createSession(java.lang.String,int,int)" resolve="createSession" />
                   <ref role="1Pybhc" to="y0ja:~CDTDebuggerFacade" resolve="CDTDebuggerFacade" />
                   <node concept="37vLTw" id="5HxjapvTdPp" role="37wK5m">
                     <ref role="3cqZAo" node="5XU7UUGbcGt" resolve="path" />
@@ -6608,7 +6608,7 @@
                         <ref role="3cqZAo" node="5XU7UUGbcGO" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5XU7UUGbcGW" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGbcGX" role="3uHU7B">
@@ -6669,7 +6669,7 @@
                       <ref role="3cqZAo" node="5XU7UUGbcH$" resolve="session" />
                     </node>
                     <node concept="liA8E" id="5XU7UUGbcHo" role="2OqNvi">
-                      <ref role="37wK5l" to="ys5c:~ICDISession.terminate():void" resolve="terminate" />
+                      <ref role="37wK5l" to="ys5c:~ICDISession.terminate()" resolve="terminate" />
                     </node>
                   </node>
                 </node>
@@ -6690,7 +6690,7 @@
                     <ref role="3cqZAo" node="5XU7UUGbcHq" resolve="e" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGbcHw" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -6752,16 +6752,16 @@
                           <ref role="3cqZAo" node="5XU7UUGbcHB" resolve="target" />
                         </node>
                         <node concept="liA8E" id="5XU7UUGbcHV" role="2OqNvi">
-                          <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread():org.eclipse.cdt.debug.core.cdi.model.ICDIThread" resolve="getCurrentThread" />
+                          <ref role="37wK5l" to="n06z:~ICDIThreadGroup.getCurrentThread()" resolve="getCurrentThread" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5XU7UUGbcHW" role="2OqNvi">
-                        <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames():org.eclipse.cdt.debug.core.cdi.model.ICDIStackFrame[]" resolve="getStackFrames" />
+                        <ref role="37wK5l" to="n06z:~ICDIThread.getStackFrames()" resolve="getStackFrames" />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="5XU7UUGbcHX" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIStackFrame.getLocator():org.eclipse.cdt.debug.core.cdi.ICDILocator" resolve="getLocator" />
+                    <ref role="37wK5l" to="n06z:~ICDIStackFrame.getLocator()" resolve="getLocator" />
                   </node>
                 </node>
               </node>
@@ -6838,7 +6838,7 @@
                     <ref role="3cqZAo" node="5XU7UUGbcI8" resolve="target" />
                   </node>
                   <node concept="liA8E" id="2npj2sqEPJH" role="2OqNvi">
-                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.getBreakpoints():org.eclipse.cdt.debug.core.cdi.model.ICDIBreakpoint[]" resolve="getBreakpoints" />
+                    <ref role="37wK5l" to="n06z:~ICDIBreakpointManagement.getBreakpoints()" resolve="getBreakpoints" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="5HxjapvQZ9w" role="37vLTJ">
@@ -6914,7 +6914,7 @@
             <node concept="3clFbF" id="5XU7UUGbcIW" role="3cqZAp">
               <node concept="2YIFZM" id="5XU7UUGbcIX" role="3clFbG">
                 <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+                <ref role="37wK5l" to="wyt6:~Thread.sleep(long)" resolve="sleep" />
                 <node concept="10M0yZ" id="5XU7UUGbcIY" role="37wK5m">
                   <ref role="1PxDUh" node="5XU7UUGbc$D" resolve="CDTUtilClass" />
                   <ref role="3cqZAo" node="5XU7UUGbc_6" resolve="STARTING_TIME" />
@@ -6941,7 +6941,7 @@
                         <ref role="3cqZAo" node="5XU7UUGbcJ0" resolve="e" />
                       </node>
                       <node concept="liA8E" id="4r78KUsiH8J" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                   </node>
@@ -6962,7 +6962,7 @@
             <node concept="3clFbF" id="5XU7UUGbcJc" role="3cqZAp">
               <node concept="2YIFZM" id="5XU7UUGbcJd" role="3clFbG">
                 <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+                <ref role="37wK5l" to="wyt6:~Thread.sleep(long)" resolve="sleep" />
                 <node concept="3cmrfG" id="5XU7UUGbcJe" role="37wK5m">
                   <property role="3cmrfH" value="500" />
                 </node>
@@ -6988,7 +6988,7 @@
                         <ref role="3cqZAo" node="5XU7UUGbcJg" resolve="e" />
                       </node>
                       <node concept="liA8E" id="4r78KUsiH89" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                   </node>
@@ -7014,7 +7014,7 @@
           <node concept="3clFbS" id="5XU7UUGbcJt" role="SfCbr">
             <node concept="3clFbF" id="4r78KUsiH75" role="3cqZAp">
               <node concept="2YIFZM" id="4r78KUsiH76" role="3clFbG">
-                <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+                <ref role="37wK5l" to="wyt6:~Thread.sleep(long)" resolve="sleep" />
                 <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
                 <node concept="3cmrfG" id="4r78KUsiH77" role="37wK5m">
                   <property role="3cmrfH" value="1000" />
@@ -7027,7 +7027,7 @@
                   <ref role="3cqZAo" node="5XU7UUGbcJn" resolve="target" />
                 </node>
                 <node concept="liA8E" id="5XU7UUGbcJx" role="2OqNvi">
-                  <ref role="37wK5l" to="n06z:~ICDIExecuteResume.resume(boolean):void" resolve="resume" />
+                  <ref role="37wK5l" to="n06z:~ICDIExecuteResume.resume(boolean)" resolve="resume" />
                   <node concept="3clFbT" id="5XU7UUGbcJy" role="37wK5m" />
                 </node>
               </node>
@@ -7047,7 +7047,7 @@
                     <ref role="3cqZAo" node="5XU7UUGbcJ$" resolve="e" />
                   </node>
                   <node concept="liA8E" id="4r78KUsiH9T" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -7059,7 +7059,7 @@
                         <ref role="3cqZAo" node="5XU7UUGbcJ$" resolve="e" />
                       </node>
                       <node concept="liA8E" id="4r78KUsiH7N" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5XU7UUGbcJD" role="3uHU7B">
