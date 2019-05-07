@@ -708,7 +708,7 @@
                 <ref role="3cqZAo" node="2lop6rSg9w8" resolve="result" />
               </node>
               <node concept="liA8E" id="2lop6rSg9wg" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
                 <node concept="2OqwBi" id="2lop6rSg9wh" role="37wK5m">
                   <node concept="2OqwBi" id="2lop6rSg9ws" role="2Oq$k0">
                     <node concept="2rP1CM" id="2lop6rSg9wt" role="2Oq$k0" />

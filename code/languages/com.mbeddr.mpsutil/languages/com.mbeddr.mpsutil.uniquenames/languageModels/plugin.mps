@@ -621,10 +621,10 @@
             <node concept="10Oyi0" id="7wFJH9gkZ0" role="1tU5fm" />
             <node concept="2YIFZM" id="7lmVLrUKccD" role="33vP2m">
               <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-              <ref role="37wK5l" to="wyt6:~Math.max(int,int):int" resolve="max" />
+              <ref role="37wK5l" to="wyt6:~Math.max(int,int)" resolve="max" />
               <node concept="2YIFZM" id="7wFJH9gkZ5" role="37wK5m">
                 <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="btm1:~StringUtils.indexOfDifference(java.lang.CharSequence...):int" resolve="indexOfDifference" />
+                <ref role="37wK5l" to="btm1:~StringUtils.indexOfDifference(java.lang.CharSequence...)" resolve="indexOfDifference" />
                 <node concept="37vLTw" id="7wFJH9gkZ6" role="37wK5m">
                   <ref role="3cqZAo" node="7wFJH9fCe4" resolve="fqNames" />
                 </node>
@@ -676,7 +676,7 @@
                           <node concept="3AY5_j" id="7qMLXK8HUvd" role="2OqNvi" />
                         </node>
                         <node concept="liA8E" id="7qMLXK8HUve" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                          <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                           <node concept="37vLTw" id="7qMLXK8HUvf" role="37wK5m">
                             <ref role="3cqZAo" node="7wFJH9gkZ4" resolve="indexOfDifference" />
                           </node>
@@ -699,7 +699,7 @@
                           </node>
                           <node concept="2YIFZM" id="7qMLXK8HXcR" role="37vLTx">
                             <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                            <ref role="37wK5l" to="btm1:~StringUtils.substringBefore(java.lang.String,java.lang.String):java.lang.String" resolve="substringBefore" />
+                            <ref role="37wK5l" to="btm1:~StringUtils.substringBefore(java.lang.String,java.lang.String)" resolve="substringBefore" />
                             <node concept="37vLTw" id="7qMLXK8HXcS" role="37wK5m">
                               <ref role="3cqZAo" node="7qMLXK8HUv9" resolve="differenceToEnd" />
                             </node>
@@ -713,7 +713,7 @@
                         <node concept="37vLTI" id="2Gxn7_Qm_ey" role="3clFbG">
                           <node concept="2YIFZM" id="2Gxn7_QmAdz" role="37vLTx">
                             <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                            <ref role="37wK5l" to="btm1:~StringUtils.substringAfter(java.lang.String,java.lang.String):java.lang.String" resolve="substringAfter" />
+                            <ref role="37wK5l" to="btm1:~StringUtils.substringAfter(java.lang.String,java.lang.String)" resolve="substringAfter" />
                             <node concept="37vLTw" id="2Gxn7_QmAES" role="37wK5m">
                               <ref role="3cqZAo" node="7qMLXK8HUv9" resolve="differenceToEnd" />
                             </node>
@@ -1021,7 +1021,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7wFJH9jkVK" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="2OqwBi" id="7wFJH9k8X3" role="37wK5m">
                         <node concept="2OqwBi" id="7wFJH9jl6_" role="2Oq$k0">
                           <node concept="37vLTw" id="7wFJH9jl4h" role="2Oq$k0">
@@ -1236,7 +1236,7 @@
                 </node>
                 <node concept="2YIFZM" id="7wFJH9kSnO" role="37vLTx">
                   <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                  <ref role="37wK5l" to="btm1:~StringUtils.substringBetween(java.lang.String,java.lang.String,java.lang.String):java.lang.String" resolve="substringBetween" />
+                  <ref role="37wK5l" to="btm1:~StringUtils.substringBetween(java.lang.String,java.lang.String,java.lang.String)" resolve="substringBetween" />
                   <node concept="2OqwBi" id="7wFJH9kSnP" role="37wK5m">
                     <node concept="37vLTw" id="7wFJH9kSnQ" role="2Oq$k0">
                       <ref role="3cqZAo" node="7wFJH9kBXs" resolve="entry" />

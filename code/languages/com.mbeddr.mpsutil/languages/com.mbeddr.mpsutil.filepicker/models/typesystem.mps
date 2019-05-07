@@ -293,7 +293,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="3PuSfTTlh15" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                                 <node concept="Xl_RD" id="3PuSfTTlh2i" role="37wK5m">
                                   <property role="Xl_RC" value="\\" />
                                 </node>
@@ -414,7 +414,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="5lKnBeB036O" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                          <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
                           <node concept="Xl_RD" id="5lKnBeB03go" role="37wK5m">
                             <property role="Xl_RC" value="/" />
                           </node>
@@ -456,7 +456,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="ql$XAlgSgz" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModel.isReadOnly():boolean" resolve="isReadOnly" />
+                    <ref role="37wK5l" to="mhbf:~SModel.isReadOnly()" resolve="isReadOnly" />
                   </node>
                 </node>
               </node>
@@ -480,15 +480,15 @@
             <node concept="2OqwBi" id="HgIalQMByH" role="3fr31v">
               <node concept="2OqwBi" id="HgIalQMByI" role="2Oq$k0">
                 <node concept="2YIFZM" id="HgIalQMByJ" role="2Oq$k0">
-                  <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
+                  <ref role="37wK5l" to="z1c3:~PathMacros.getInstance()" resolve="getInstance" />
                   <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
                 </node>
                 <node concept="liA8E" id="HgIalQMByK" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~PathMacros.getNames():java.util.Set" resolve="getNames" />
+                  <ref role="37wK5l" to="z1c3:~PathMacros.getNames()" resolve="getNames" />
                 </node>
               </node>
               <node concept="liA8E" id="HgIalQMByL" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
+                <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object)" resolve="contains" />
                 <node concept="2OqwBi" id="HgIalQMByM" role="37wK5m">
                   <node concept="1YBJjd" id="HgIalQMByN" role="2Oq$k0">
                     <ref role="1YBMHb" node="HgIalQMxLf" resolve="macroFolderPicker" />
@@ -566,14 +566,14 @@
               <node concept="2OqwBi" id="HgIalQMCis" role="2Oq$k0">
                 <node concept="2YIFZM" id="HgIalQMCit" role="2Oq$k0">
                   <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
-                  <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
+                  <ref role="37wK5l" to="z1c3:~PathMacros.getInstance()" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="HgIalQMCiu" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~PathMacros.getNames():java.util.Set" resolve="getNames" />
+                  <ref role="37wK5l" to="z1c3:~PathMacros.getNames()" resolve="getNames" />
                 </node>
               </node>
               <node concept="liA8E" id="HgIalQMCiv" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
+                <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object)" resolve="contains" />
                 <node concept="2OqwBi" id="HgIalQMCiw" role="37wK5m">
                   <node concept="1YBJjd" id="HgIalQMCqX" role="2Oq$k0">
                     <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />

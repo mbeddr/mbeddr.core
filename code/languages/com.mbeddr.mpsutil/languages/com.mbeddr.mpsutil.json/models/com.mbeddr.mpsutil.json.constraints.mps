@@ -55,7 +55,7 @@
             <node concept="2OqwBi" id="6Cwq1JbTB10" role="3clFbG">
               <node concept="1Wqviy" id="6Cwq1JbTB11" role="2Oq$k0" />
               <node concept="liA8E" id="6Cwq1JbTB12" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="6Cwq1JbTB13" role="37wK5m">
                   <property role="Xl_RC" value="-?[0-9]+\\.?[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
                 </node>

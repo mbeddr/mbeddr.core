@@ -336,7 +336,7 @@
                     <ref role="3cqZAo" node="7UjC_TCLTPP" resolve="e" />
                   </node>
                   <node concept="liA8E" id="7UjC_TCLTPO" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -372,7 +372,7 @@
                 <node concept="3clFbF" id="laok7UTjbp" role="3cqZAp">
                   <node concept="2YIFZM" id="laok7UTjAI" role="3clFbG">
                     <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
                     <node concept="2ShNRf" id="laok7UTjMJ" role="37wK5m">
                       <node concept="1pGfFk" id="laok7UTnJu" role="2ShVmc">
                         <ref role="37wK5l" to="dxuu:~JFrame.&lt;init&gt;()" resolve="JFrame" />
@@ -400,7 +400,7 @@
                     <ref role="3cqZAo" node="7UjC_TCLTPT" resolve="metadataFile" />
                   </node>
                   <node concept="liA8E" id="laok7UThjj" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                    <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                   </node>
                 </node>
               </node>
@@ -416,7 +416,7 @@
                 </node>
                 <node concept="2YIFZM" id="7UjC_TCLTQ2" role="33vP2m">
                   <ref role="1Pybhc" to="c215:~DataFactory" resolve="DataFactory" />
-                  <ref role="37wK5l" to="c215:~DataFactory.load(java.io.File):com.vladium.emma.data.IMergeable[]" resolve="load" />
+                  <ref role="37wK5l" to="c215:~DataFactory.load(java.io.File)" resolve="load" />
                   <node concept="37vLTw" id="7UjC_TCLTQ3" role="37wK5m">
                     <ref role="3cqZAo" node="7UjC_TCLTPT" resolve="metadataFile" />
                   </node>
@@ -467,7 +467,7 @@
                 <node concept="3clFbF" id="laok7UTqz0" role="3cqZAp">
                   <node concept="2YIFZM" id="laok7UTqz1" role="3clFbG">
                     <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
                     <node concept="2ShNRf" id="laok7UTqz2" role="37wK5m">
                       <node concept="1pGfFk" id="laok7UTqz3" role="2ShVmc">
                         <ref role="37wK5l" to="dxuu:~JFrame.&lt;init&gt;()" resolve="JFrame" />
@@ -495,7 +495,7 @@
                     <ref role="3cqZAo" node="7UjC_TCLTQd" resolve="coverageFile" />
                   </node>
                   <node concept="liA8E" id="laok7UTqzc" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                    <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                   </node>
                 </node>
               </node>
@@ -511,7 +511,7 @@
                 </node>
                 <node concept="2YIFZM" id="7UjC_TCLTQm" role="33vP2m">
                   <ref role="1Pybhc" to="c215:~DataFactory" resolve="DataFactory" />
-                  <ref role="37wK5l" to="c215:~DataFactory.load(java.io.File):com.vladium.emma.data.IMergeable[]" resolve="load" />
+                  <ref role="37wK5l" to="c215:~DataFactory.load(java.io.File)" resolve="load" />
                   <node concept="37vLTw" id="7UjC_TCLTQn" role="37wK5m">
                     <ref role="3cqZAo" node="7UjC_TCLTQd" resolve="coverageFile" />
                   </node>
@@ -593,15 +593,15 @@
             <node concept="2OqwBi" id="7Fb9EHH5a2G" role="33vP2m">
               <node concept="2OqwBi" id="7Fb9EHH5a2H" role="2Oq$k0">
                 <node concept="2YIFZM" id="7Fb9EHH5a2I" role="2Oq$k0">
-                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
                   <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                 </node>
                 <node concept="liA8E" id="7Fb9EHH5a2J" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                 </node>
               </node>
               <node concept="liA8E" id="7Fb9EHH5a2K" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Class.getClassLoader():java.lang.ClassLoader" resolve="getClassLoader" />
+                <ref role="37wK5l" to="wyt6:~Class.getClassLoader()" resolve="getClassLoader" />
               </node>
             </node>
           </node>
@@ -622,13 +622,13 @@
                 </node>
                 <node concept="2YIFZM" id="7Fb9EHH5h3a" role="33vP2m">
                   <ref role="1Pybhc" to="wyt6:~Class" resolve="Class" />
-                  <ref role="37wK5l" to="wyt6:~Class.forName(java.lang.String,boolean,java.lang.ClassLoader):java.lang.Class" resolve="forName" />
+                  <ref role="37wK5l" to="wyt6:~Class.forName(java.lang.String,boolean,java.lang.ClassLoader)" resolve="forName" />
                   <node concept="2OqwBi" id="7Fb9EHH5h3b" role="37wK5m">
                     <node concept="3VsKOn" id="7Fb9EHH5h3c" role="2Oq$k0">
                       <ref role="3VsUkX" to="e2e9:~RT" resolve="RT" />
                     </node>
                     <node concept="liA8E" id="7Fb9EHH5h3d" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="3clFbT" id="7Fb9EHH5h3e" role="37wK5m">
@@ -649,13 +649,13 @@
                 </node>
                 <node concept="2YIFZM" id="7Fb9EHH5yVJ" role="33vP2m">
                   <ref role="1Pybhc" to="wyt6:~Class" resolve="Class" />
-                  <ref role="37wK5l" to="wyt6:~Class.forName(java.lang.String,boolean,java.lang.ClassLoader):java.lang.Class" resolve="forName" />
+                  <ref role="37wK5l" to="wyt6:~Class.forName(java.lang.String,boolean,java.lang.ClassLoader)" resolve="forName" />
                   <node concept="2OqwBi" id="7Fb9EHH5zhp" role="37wK5m">
                     <node concept="3VsKOn" id="7Fb9EHH5zdC" role="2Oq$k0">
                       <ref role="3VsUkX" to="guwi:~File" resolve="File" />
                     </node>
                     <node concept="liA8E" id="7Fb9EHH5zB6" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="3clFbT" id="7Fb9EHH5zO9" role="37wK5m">
@@ -678,7 +678,7 @@
                     <ref role="3cqZAo" node="7Fb9EHH5h39" resolve="rtClass" />
                   </node>
                   <node concept="liA8E" id="7Fb9EHH5i$a" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.getDeclaredMethod(java.lang.String,java.lang.Class...):java.lang.reflect.Method" resolve="getDeclaredMethod" />
+                    <ref role="37wK5l" to="wyt6:~Class.getDeclaredMethod(java.lang.String,java.lang.Class...)" resolve="getDeclaredMethod" />
                     <node concept="Xl_RD" id="7Fb9EHH5i$b" role="37wK5m">
                       <property role="Xl_RC" value="dumpCoverageData" />
                     </node>
@@ -707,7 +707,7 @@
                     <ref role="3cqZAo" node="7Fb9EHH5ym8" resolve="fileClass" />
                   </node>
                   <node concept="liA8E" id="7Fb9EHH5ERZ" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.getConstructor(java.lang.Class...):java.lang.reflect.Constructor" resolve="getConstructor" />
+                    <ref role="37wK5l" to="wyt6:~Class.getConstructor(java.lang.Class...)" resolve="getConstructor" />
                     <node concept="3VsKOn" id="7Fb9EHH5ES0" role="37wK5m">
                       <ref role="3VsUkX" to="wyt6:~String" resolve="String" />
                     </node>
@@ -726,7 +726,7 @@
                     <ref role="3cqZAo" node="7Fb9EHH5ERW" resolve="fileConstructor" />
                   </node>
                   <node concept="liA8E" id="7Fb9EHH5GFE" role="2OqNvi">
-                    <ref role="37wK5l" to="t6h5:~Constructor.newInstance(java.lang.Object...):java.lang.Object" resolve="newInstance" />
+                    <ref role="37wK5l" to="t6h5:~Constructor.newInstance(java.lang.Object...)" resolve="newInstance" />
                     <node concept="37vLTw" id="38KQk$ebBfp" role="37wK5m">
                       <ref role="3cqZAo" node="7Fb9EHH5Wxj" resolve="savedCoverageFileName" />
                     </node>
@@ -751,7 +751,7 @@
                   <ref role="3cqZAo" node="7Fb9EHH5i$7" resolve="dumpCoverageData" />
                 </node>
                 <node concept="liA8E" id="7Fb9EHH5YDm" role="2OqNvi">
-                  <ref role="37wK5l" to="t6h5:~Method.invoke(java.lang.Object,java.lang.Object...):java.lang.Object" resolve="invoke" />
+                  <ref role="37wK5l" to="t6h5:~Method.invoke(java.lang.Object,java.lang.Object...)" resolve="invoke" />
                   <node concept="10Nm6u" id="7Fb9EHH5YDn" role="37wK5m" />
                   <node concept="37vLTw" id="7Fb9EHH5YDo" role="37wK5m">
                     <ref role="3cqZAo" node="7Fb9EHH5BZp" resolve="fileObject" />
@@ -774,7 +774,7 @@
                     <ref role="3cqZAo" node="7Fb9EHH5bsL" resolve="e" />
                   </node>
                   <node concept="liA8E" id="7Fb9EHH5kbE" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -854,7 +854,7 @@
             </node>
             <node concept="2YIFZM" id="7UjC_TCLTQz" role="33vP2m">
               <ref role="1Pybhc" to="z40j:~IReportDataModel$Factory" resolve="IReportDataModel.Factory" />
-              <ref role="37wK5l" to="z40j:~IReportDataModel$Factory.create(com.vladium.emma.data.IMetaData,com.vladium.emma.data.ICoverageData):com.vladium.emma.report.IReportDataModel" resolve="create" />
+              <ref role="37wK5l" to="z40j:~IReportDataModel$Factory.create(com.vladium.emma.data.IMetaData,com.vladium.emma.data.ICoverageData)" resolve="create" />
               <node concept="37vLTw" id="7UjC_TCLTQ$" role="37wK5m">
                 <ref role="3cqZAo" node="7n88SMjMUsN" resolve="_mdata" />
               </node>
@@ -876,7 +876,7 @@
                 <ref role="3cqZAo" node="7UjC_TCLTQx" resolve="rdm" />
               </node>
               <node concept="liA8E" id="7UjC_TCLTQF" role="2OqNvi">
-                <ref role="37wK5l" to="z40j:~IReportDataModel.getView(int):com.vladium.emma.report.IReportDataView" resolve="getView" />
+                <ref role="37wK5l" to="z40j:~IReportDataModel.getView(int)" resolve="getView" />
                 <node concept="10M0yZ" id="7UjC_TCLTQG" role="37wK5m">
                   <ref role="3cqZAo" to="z40j:~IReportDataView.HIER_SRC_VIEW" resolve="HIER_SRC_VIEW" />
                   <ref role="1PxDUh" to="z40j:~IReportDataView" resolve="IReportDataView" />
@@ -898,11 +898,11 @@
                   <ref role="3cqZAo" node="7UjC_TCLTQB" resolve="view" />
                 </node>
                 <node concept="liA8E" id="7UjC_TCLTQN" role="2OqNvi">
-                  <ref role="37wK5l" to="z40j:~IReportDataView.getRoot():com.vladium.emma.report.IItem" resolve="getRoot" />
+                  <ref role="37wK5l" to="z40j:~IReportDataView.getRoot()" resolve="getRoot" />
                 </node>
               </node>
               <node concept="liA8E" id="7UjC_TCLTQO" role="2OqNvi">
-                <ref role="37wK5l" to="z40j:~IItem.getChildren():java.util.Iterator" resolve="getChildren" />
+                <ref role="37wK5l" to="z40j:~IItem.getChildren()" resolve="getChildren" />
               </node>
             </node>
           </node>
@@ -923,7 +923,7 @@
               <node concept="1pGfFk" id="1JmpgZOqx04" role="2ShVmc">
                 <ref role="37wK5l" to="fwk:~DefaultTraceInfoProvider.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="DefaultTraceInfoProvider" />
                 <node concept="2YIFZM" id="1JmpgZOqxbj" role="37wK5m">
-                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
                   <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                 </node>
               </node>
@@ -936,7 +936,7 @@
               <ref role="3cqZAo" node="7UjC_TCLTQI" resolve="packs" />
             </node>
             <node concept="liA8E" id="7UjC_TCLTQS" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+              <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
             </node>
           </node>
           <node concept="3clFbS" id="7UjC_TCLTQT" role="2LFqv$">
@@ -953,7 +953,7 @@
                       <ref role="3cqZAo" node="7UjC_TCLTQI" resolve="packs" />
                     </node>
                     <node concept="liA8E" id="7UjC_TCLTR0" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                      <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                     </node>
                   </node>
                   <node concept="3uibUv" id="7UjC_TCLTR1" role="10QFUM">
@@ -974,7 +974,7 @@
                     <ref role="3cqZAo" node="7UjC_TCLTQV" resolve="pi" />
                   </node>
                   <node concept="liA8E" id="7UjC_TCLTRd" role="2OqNvi">
-                    <ref role="37wK5l" to="z40j:~Item.getChildren():java.util.Iterator" resolve="getChildren" />
+                    <ref role="37wK5l" to="z40j:~Item.getChildren()" resolve="getChildren" />
                   </node>
                 </node>
               </node>
@@ -993,18 +993,18 @@
                     <ref role="3cqZAo" node="1JmpgZOqvzP" resolve="tiProvider" />
                   </node>
                   <node concept="liA8E" id="1JmpgZOqBXP" role="2OqNvi">
-                    <ref role="37wK5l" to="fwk:~TraceInfoProvider.debugInfo(java.lang.String):java.util.stream.Stream" resolve="debugInfo" />
+                    <ref role="37wK5l" to="fwk:~TraceInfoProvider.debugInfo(java.lang.String)" resolve="debugInfo" />
                     <node concept="2OqwBi" id="1JmpgZOqBXQ" role="37wK5m">
                       <node concept="2OqwBi" id="1JmpgZOqBXR" role="2Oq$k0">
                         <node concept="37vLTw" id="1JmpgZOqBXS" role="2Oq$k0">
                           <ref role="3cqZAo" node="7UjC_TCLTQV" resolve="pi" />
                         </node>
                         <node concept="liA8E" id="1JmpgZOqBXT" role="2OqNvi">
-                          <ref role="37wK5l" to="z40j:~PackageItem.getVMName():java.lang.String" resolve="getVMName" />
+                          <ref role="37wK5l" to="z40j:~PackageItem.getVMName()" resolve="getVMName" />
                         </node>
                       </node>
                       <node concept="liA8E" id="1JmpgZOqBXU" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.replace(char,char):java.lang.String" resolve="replace" />
+                        <ref role="37wK5l" to="wyt6:~String.replace(char,char)" resolve="replace" />
                         <node concept="1Xhbcc" id="1JmpgZOqBXV" role="37wK5m">
                           <property role="1XhdNS" value="/" />
                         </node>
@@ -1023,7 +1023,7 @@
                   <ref role="3cqZAo" node="7UjC_TCLTR9" resolve="packChildren" />
                 </node>
                 <node concept="liA8E" id="7UjC_TCLTRh" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                  <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                 </node>
               </node>
               <node concept="3clFbS" id="7UjC_TCLTRi" role="2LFqv$">
@@ -1039,7 +1039,7 @@
                         <ref role="3cqZAo" node="7UjC_TCLTR9" resolve="packChildren" />
                       </node>
                       <node concept="liA8E" id="7UjC_TCLTRo" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                        <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                       </node>
                     </node>
                   </node>
@@ -1080,7 +1080,7 @@
                             <ref role="3cqZAo" node="7UjC_TCLTRv" resolve="sfi" />
                           </node>
                           <node concept="liA8E" id="7UjC_TCLTSm" role="2OqNvi">
-                            <ref role="37wK5l" to="z40j:~SrcFileItem.getName():java.lang.String" resolve="getName" />
+                            <ref role="37wK5l" to="z40j:~SrcFileItem.getName()" resolve="getName" />
                           </node>
                         </node>
                       </node>
@@ -1097,7 +1097,7 @@
                             <ref role="3cqZAo" node="7UjC_TCLTRv" resolve="sfi" />
                           </node>
                           <node concept="liA8E" id="7UjC_TCLTRD" role="2OqNvi">
-                            <ref role="37wK5l" to="z40j:~SrcFileItem.getLineCoverage():com.vladium.util.IntObjectMap" resolve="getLineCoverage" />
+                            <ref role="37wK5l" to="z40j:~SrcFileItem.getLineCoverage()" resolve="getLineCoverage" />
                           </node>
                         </node>
                       </node>
@@ -1108,7 +1108,7 @@
                           <ref role="3cqZAo" node="7UjC_TCLTR_" resolve="lineCoverage" />
                         </node>
                         <node concept="liA8E" id="7UjC_TCLTRH" role="2OqNvi">
-                          <ref role="37wK5l" to="yuut:~IntObjectMap.keys():int[]" resolve="keys" />
+                          <ref role="37wK5l" to="yuut:~IntObjectMap.keys()" resolve="keys" />
                         </node>
                       </node>
                       <node concept="3cpWsn" id="7UjC_TCLTRI" role="1Duv9x">
@@ -1130,7 +1130,7 @@
                                   <ref role="3cqZAo" node="7UjC_TCLTR_" resolve="lineCoverage" />
                                 </node>
                                 <node concept="liA8E" id="7UjC_TCLTRR" role="2OqNvi">
-                                  <ref role="37wK5l" to="yuut:~IntObjectMap.get(int):java.lang.Object" resolve="get" />
+                                  <ref role="37wK5l" to="yuut:~IntObjectMap.get(int)" resolve="get" />
                                   <node concept="37vLTw" id="7UjC_TCLTRS" role="37wK5m">
                                     <ref role="3cqZAo" node="7UjC_TCLTRI" resolve="line" />
                                   </node>
@@ -1176,11 +1176,11 @@
                                     <ref role="3cqZAo" node="1JmpgZOqFCB" resolve="di" />
                                   </node>
                                   <node concept="liA8E" id="1JmpgZOqZV2" role="2OqNvi">
-                                    <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                                    <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1JmpgZOqZV3" role="2OqNvi">
-                                  <ref role="37wK5l" to="fwk:~DebugInfo.getTracedNodesForPosition(java.lang.String,int):java.util.List" resolve="getTracedNodesForPosition" />
+                                  <ref role="37wK5l" to="fwk:~DebugInfo.getTracedNodesForPosition(java.lang.String,int)" resolve="getTracedNodesForPosition" />
                                   <node concept="37vLTw" id="1JmpgZOqZV4" role="37wK5m">
                                     <ref role="3cqZAo" node="7UjC_TCLTSi" resolve="fileName" />
                                   </node>
@@ -1204,7 +1204,7 @@
                                 <ref role="3cqZAo" node="1JmpgZOqBXM" resolve="packageDebugInfo" />
                               </node>
                               <node concept="liA8E" id="1JmpgZOqFCE" role="2OqNvi">
-                                <ref role="37wK5l" to="1ctc:~BaseStream.iterator():java.util.Iterator" resolve="iterator" />
+                                <ref role="37wK5l" to="1ctc:~BaseStream.iterator()" resolve="iterator" />
                               </node>
                             </node>
                           </node>
@@ -1213,7 +1213,7 @@
                               <ref role="3cqZAo" node="1JmpgZOqFCB" resolve="di" />
                             </node>
                             <node concept="liA8E" id="1JmpgZOqIzk" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                              <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                             </node>
                           </node>
                         </node>

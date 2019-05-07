@@ -206,7 +206,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="1cPvvek_Vj4" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JScrollPane.setViewportView(java.awt.Component):void" resolve="setViewportView" />
+                  <ref role="37wK5l" to="dxuu:~JScrollPane.setViewportView(java.awt.Component)" resolve="setViewportView" />
                   <node concept="2OqwBi" id="1cPvvekIL0D" role="37wK5m">
                     <node concept="2WthIp" id="1cPvvekIL0G" role="2Oq$k0" />
                     <node concept="2BZ7hE" id="1cPvvekIL0I" role="2OqNvi">
@@ -220,7 +220,7 @@
               <node concept="2OqwBi" id="1cPvvek_VY7" role="3clFbG">
                 <node concept="2WthIp" id="1cPvvek_VRw" role="2Oq$k0" />
                 <node concept="liA8E" id="1cPvvek_W2C" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.makeAvailable():void" resolve="makeAvailable" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.makeAvailable()" resolve="makeAvailable" />
                 </node>
               </node>
             </node>
@@ -245,7 +245,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7uOgiT8Tw4" role="2OqNvi">
-                    <ref role="37wK5l" to="k6nw:~ChartPanel.setChart(org.jfree.chart.JFreeChart):void" resolve="setChart" />
+                    <ref role="37wK5l" to="k6nw:~ChartPanel.setChart(org.jfree.chart.JFreeChart)" resolve="setChart" />
                     <node concept="37vLTw" id="7uOgiT8TwC" role="37wK5m">
                       <ref role="3cqZAo" node="7uOgiT8Sj5" resolve="chart" />
                     </node>
@@ -341,11 +341,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="1cPvvekIK9o" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JScrollPane.getVerticalScrollBar():javax.swing.JScrollBar" resolve="getVerticalScrollBar" />
+                <ref role="37wK5l" to="dxuu:~JScrollPane.getVerticalScrollBar()" resolve="getVerticalScrollBar" />
               </node>
             </node>
             <node concept="liA8E" id="1cPvvekIK9p" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JScrollBar.setUnitIncrement(int):void" resolve="setUnitIncrement" />
+              <ref role="37wK5l" to="dxuu:~JScrollBar.setUnitIncrement(int)" resolve="setUnitIncrement" />
               <node concept="3cmrfG" id="1cPvvekIK9q" role="37wK5m">
                 <property role="3cmrfH" value="16" />
               </node>
@@ -362,11 +362,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="1cPvvekIK9x" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JScrollPane.getHorizontalScrollBar():javax.swing.JScrollBar" resolve="getHorizontalScrollBar" />
+                <ref role="37wK5l" to="dxuu:~JScrollPane.getHorizontalScrollBar()" resolve="getHorizontalScrollBar" />
               </node>
             </node>
             <node concept="liA8E" id="1cPvvekIK9y" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JScrollBar.setUnitIncrement(int):void" resolve="setUnitIncrement" />
+              <ref role="37wK5l" to="dxuu:~JScrollBar.setUnitIncrement(int)" resolve="setUnitIncrement" />
               <node concept="3cmrfG" id="1cPvvekIK9z" role="37wK5m">
                 <property role="3cmrfH" value="16" />
               </node>
@@ -423,7 +423,7 @@
               <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
             </node>
             <node concept="2YIFZM" id="7uOgiT8OYj" role="33vP2m">
-              <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
               <node concept="37vLTw" id="7uOgiT8OYk" role="37wK5m">
                 <ref role="3cqZAo" node="7uOgiT8LIO" resolve="mpsProject" />
@@ -473,11 +473,11 @@
                   <ref role="3cqZAo" node="7uOgiT9Utq" resolve="editorContext" />
                 </node>
                 <node concept="liA8E" id="7uOgiT9VtE" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                 </node>
               </node>
               <node concept="liA8E" id="7uOgiT9VxR" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
               </node>
             </node>
           </node>
@@ -557,7 +557,7 @@
               <ref role="3cqZAo" node="7uOgiT94Z8" resolve="myTool" />
             </node>
             <node concept="liA8E" id="7uOgiTa1EE" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean):void" resolve="openTool" />
+              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
               <node concept="3clFbT" id="7uOgiTa1IQ" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>

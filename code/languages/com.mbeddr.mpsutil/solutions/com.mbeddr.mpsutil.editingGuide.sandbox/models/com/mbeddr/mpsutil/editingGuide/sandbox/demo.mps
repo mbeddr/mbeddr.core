@@ -2,7 +2,7 @@
 <model ref="r:8eb3f548-a86c-47df-8e7e-c1b50200de75(com.mbeddr.mpsutil.editingGuide.sandbox.demo)">
   <persistence version="9" />
   <languages>
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
     <devkit ref="1ca21c70-6e61-4b62-8771-dfd96620ef7c(com.mbeddr.mpsutil.guides)" />
   </languages>
   <imports>
@@ -110,7 +110,7 @@
       <concept id="3453511597021550269" name="com.mbeddr.mpsutil.editingGuide.structure.CodeWord" flags="ng" index="JL00X">
         <property id="3453511597021550288" name="text" index="JL01g" />
       </concept>
-      <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ig" index="2LPuA2" />
+      <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ng" index="2LPuA2" />
       <concept id="3909459679554886014" name="com.mbeddr.mpsutil.editingGuide.structure.Exercise" flags="ng" index="2LPuAz">
         <child id="3909459679554886019" name="description" index="2LPu_u" />
         <child id="3909459679554886015" name="tasks" index="2LPuAy" />
@@ -293,7 +293,7 @@
               <node concept="2OqwBi" id="4TMjSvbGPTA" role="33vP2m">
                 <node concept="2LPL3K" id="4TMjSvbGPTB" role="2Oq$k0" />
                 <node concept="liA8E" id="4TMjSvbGPTC" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell()" resolve="getSelectedCell" />
                 </node>
               </node>
             </node>
@@ -318,7 +318,7 @@
                       <ref role="3cqZAo" node="4TMjSvbGPT_" resolve="selectedCell" />
                     </node>
                     <node concept="liA8E" id="4TMjSvbGQRI" role="2OqNvi">
-                      <ref role="37wK5l" to="f4zo:~EditorCell.isBig():boolean" resolve="isBig" />
+                      <ref role="37wK5l" to="f4zo:~EditorCell.isBig()" resolve="isBig" />
                     </node>
                   </node>
                   <node concept="2YFouu" id="4TMjSvbGQ6f" role="3uHU7B">
@@ -327,7 +327,7 @@
                         <ref role="3cqZAo" node="4TMjSvbGPT_" resolve="selectedCell" />
                       </node>
                       <node concept="liA8E" id="4TMjSvbGQ3P" role="2OqNvi">
-                        <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                        <ref role="37wK5l" to="f4zo:~EditorCell.getSNode()" resolve="getSNode" />
                       </node>
                     </node>
                     <node concept="2c44tf" id="4TMjSvbGQAW" role="3uHU7w">

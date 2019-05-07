@@ -205,7 +205,7 @@
                               <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
                             </node>
                             <node concept="liA8E" id="1LTChO9j1lj" role="2OqNvi">
-                              <ref role="37wK5l" to="dxuu:~JComponent.putClientProperty(java.lang.Object,java.lang.Object):void" resolve="putClientProperty" />
+                              <ref role="37wK5l" to="dxuu:~JComponent.putClientProperty(java.lang.Object,java.lang.Object)" resolve="putClientProperty" />
                               <node concept="2OqwBi" id="1LTChO9j1mI" role="37wK5m">
                                 <node concept="2WthIp" id="1LTChO9j1mL" role="2Oq$k0">
                                   <ref role="32nkFo" node="2Z2H3pkZ87c" resolve="ProjectPlugin" />
@@ -259,7 +259,7 @@
                               <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
                             </node>
                             <node concept="liA8E" id="56Ema_8gr36" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorComponent.addDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="addDisposeListener" />
+                              <ref role="37wK5l" to="exr9:~EditorComponent.addDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener)" resolve="addDisposeListener" />
                               <node concept="2ShNRf" id="56Ema_8gr43" role="37wK5m">
                                 <node concept="YeOm9" id="56Ema_8gDPH" role="2ShVmc">
                                   <node concept="1Y3b0j" id="56Ema_8gDPK" role="YeSDq">
@@ -287,7 +287,7 @@
                                               <ref role="3cqZAo" node="56Ema_8gDPQ" resolve="editorComponent" />
                                             </node>
                                             <node concept="liA8E" id="56Ema_8gIwV" role="2OqNvi">
-                                              <ref role="37wK5l" to="exr9:~EditorComponent.removeDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="removeDisposeListener" />
+                                              <ref role="37wK5l" to="exr9:~EditorComponent.removeDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener)" resolve="removeDisposeListener" />
                                               <node concept="Xjq3P" id="56Ema_8gJfo" role="37wK5m" />
                                             </node>
                                           </node>
@@ -305,7 +305,7 @@
                                                     <ref role="3cqZAo" node="56Ema_8gDPQ" resolve="editorComponent" />
                                                   </node>
                                                   <node concept="liA8E" id="56Ema_8gE1S" role="2OqNvi">
-                                                    <ref role="37wK5l" to="dxuu:~JComponent.getClientProperty(java.lang.Object):java.lang.Object" resolve="getClientProperty" />
+                                                    <ref role="37wK5l" to="dxuu:~JComponent.getClientProperty(java.lang.Object)" resolve="getClientProperty" />
                                                     <node concept="2OqwBi" id="56Ema_8gE1T" role="37wK5m">
                                                       <node concept="2WthIp" id="56Ema_8gE1U" role="2Oq$k0">
                                                         <ref role="32nkFo" node="2Z2H3pkZ87c" resolve="ProjectPlugin" />
@@ -329,7 +329,7 @@
                                               <ref role="3cqZAo" node="56Ema_8gE1N" resolve="original" />
                                             </node>
                                             <node concept="liA8E" id="56Ema_8gEpc" role="2OqNvi">
-                                              <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.dispose():void" resolve="dispose" />
+                                              <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.dispose()" resolve="dispose" />
                                             </node>
                                           </node>
                                         </node>
@@ -364,7 +364,7 @@
                                     <ref role="3cqZAo" node="2Z2H3pkZduo" resolve="editorComponent" />
                                   </node>
                                   <node concept="liA8E" id="1LTChO9j3ym" role="2OqNvi">
-                                    <ref role="37wK5l" to="dxuu:~JComponent.getClientProperty(java.lang.Object):java.lang.Object" resolve="getClientProperty" />
+                                    <ref role="37wK5l" to="dxuu:~JComponent.getClientProperty(java.lang.Object)" resolve="getClientProperty" />
                                     <node concept="2OqwBi" id="1LTChO9j3yn" role="37wK5m">
                                       <node concept="2WthIp" id="1LTChO9j3yo" role="2Oq$k0">
                                         <ref role="32nkFo" node="2Z2H3pkZ87c" resolve="ProjectPlugin" />

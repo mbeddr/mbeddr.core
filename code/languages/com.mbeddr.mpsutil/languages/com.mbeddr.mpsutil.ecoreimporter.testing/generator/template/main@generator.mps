@@ -138,7 +138,7 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -178,7 +178,7 @@
                           <node concept="10QFUN" id="79i$vAYedo3" role="33vP2m">
                             <node concept="2YIFZM" id="79i$vAYednT" role="10QFUP">
                               <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
-                              <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="getInputNode" />
+                              <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository)" resolve="getInputNode" />
                               <node concept="2OqwBi" id="79i$vAYednU" role="37wK5m">
                                 <node concept="30H73N" id="79i$vAYednV" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="79i$vAYednW" role="2OqNvi">
@@ -193,7 +193,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="79i$vAYedo2" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                                 </node>
                               </node>
                             </node>
@@ -226,7 +226,7 @@
                             <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                           </node>
                           <node concept="liA8E" id="79i$vAYcZIe" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="3cpWs3" id="79i$vAYd1zw" role="37wK5m">
                               <node concept="3cpWs3" id="79i$vAYd9Dh" role="3uHU7B">
                                 <node concept="Xl_RD" id="79i$vAYd9XX" role="3uHU7w">
@@ -265,7 +265,7 @@
                             <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                           </node>
                           <node concept="liA8E" id="79i$vAYcPcA" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="3cpWs3" id="79i$vAYcSqS" role="37wK5m">
                               <node concept="37vLTw" id="79i$vAYcSEA" role="3uHU7w">
                                 <ref role="3cqZAo" node="79i$vAYcOB_" resolve="canonicalPath" />
@@ -397,7 +397,7 @@
                           <node concept="10QFUN" id="2FOCBFUX9W_" role="33vP2m">
                             <node concept="2YIFZM" id="2FOCBFUX9WA" role="10QFUP">
                               <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
-                              <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="getInputNode" />
+                              <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository)" resolve="getInputNode" />
                               <node concept="2OqwBi" id="2FOCBFUX9WB" role="37wK5m">
                                 <node concept="30H73N" id="2FOCBFUX9WC" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="2FOCBFUX9WD" role="2OqNvi">
@@ -412,7 +412,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="2FOCBFUX9WJ" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                                 </node>
                               </node>
                             </node>
@@ -445,7 +445,7 @@
                             <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                           </node>
                           <node concept="liA8E" id="2FOCBFUX9WW" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="3cpWs3" id="2FOCBFUX9WX" role="37wK5m">
                               <node concept="3cpWs3" id="2FOCBFUX9WY" role="3uHU7B">
                                 <node concept="Xl_RD" id="2FOCBFUX9WZ" role="3uHU7w">
@@ -484,7 +484,7 @@
                             <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                           </node>
                           <node concept="liA8E" id="2FOCBFUX9Xb" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="3cpWs3" id="2FOCBFUX9Xc" role="37wK5m">
                               <node concept="37vLTw" id="2FOCBFUX9Xd" role="3uHU7w">
                                 <ref role="3cqZAo" node="2FOCBFUX9WN" resolve="canonicalPath" />

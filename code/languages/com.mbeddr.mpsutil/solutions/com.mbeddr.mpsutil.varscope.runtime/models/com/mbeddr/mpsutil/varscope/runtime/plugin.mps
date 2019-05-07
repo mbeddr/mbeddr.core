@@ -485,7 +485,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="NrU95lKU8W" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                         <node concept="37vLTw" id="NrU95lKU8X" role="37wK5m">
                           <ref role="3cqZAo" node="2VzPqUCrDzD" resolve="name" />
                         </node>

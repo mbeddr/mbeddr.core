@@ -608,10 +608,10 @@
                   <ref role="3cqZAo" node="5Kcl6zlEOrm" resolve="mComponent" />
                 </node>
                 <node concept="liA8E" id="5Kcl6zlFfAE" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JComponent.setBorder(javax.swing.border.Border):void" resolve="setBorder" />
+                  <ref role="37wK5l" to="dxuu:~JComponent.setBorder(javax.swing.border.Border)" resolve="setBorder" />
                   <node concept="2YIFZM" id="5Kcl6zlFnp3" role="37wK5m">
                     <ref role="1Pybhc" to="lzb2:~IdeBorderFactory" resolve="IdeBorderFactory" />
-                    <ref role="37wK5l" to="lzb2:~IdeBorderFactory.createEmptyBorder(int,int,int,int):javax.swing.border.Border" resolve="createEmptyBorder" />
+                    <ref role="37wK5l" to="lzb2:~IdeBorderFactory.createEmptyBorder(int,int,int,int)" resolve="createEmptyBorder" />
                     <node concept="3cmrfG" id="5Kcl6zlFnU3" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -991,7 +991,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="e7wQ4XAv0e" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="37vLTw" id="e7wQ4XAv0f" role="37wK5m">
                             <ref role="3cqZAo" node="e7wQ4XAqbV" resolve="myId" />
                           </node>
@@ -1186,7 +1186,7 @@
         </node>
         <node concept="3clFbF" id="70BL6LoZsAK" role="3cqZAp">
           <node concept="3nyPlj" id="70BL6LoZsAJ" role="3clFbG">
-            <ref role="37wK5l" to="uxeh:~AbstractWizard.init():void" resolve="init" />
+            <ref role="37wK5l" to="uxeh:~AbstractWizard.init()" resolve="init" />
           </node>
         </node>
       </node>
@@ -1221,7 +1221,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="5Kcl6zlF_L8" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                         <node concept="37vLTw" id="5Kcl6zlF_Sc" role="37wK5m">
                           <ref role="3cqZAo" node="5Kcl6zlFwTb" resolve="id" />
                         </node>
@@ -1258,7 +1258,7 @@
           <node concept="3clFbS" id="7$Gi96i4WZq" role="3clFbx">
             <node concept="3clFbF" id="rF8Sb8MWZw" role="3cqZAp">
               <node concept="3nyPlj" id="rF8Sb8MWZv" role="3clFbG">
-                <ref role="37wK5l" to="uxeh:~AbstractWizardEx.updateStep():void" resolve="updateStep" />
+                <ref role="37wK5l" to="uxeh:~AbstractWizardEx.updateStep()" resolve="updateStep" />
               </node>
             </node>
             <node concept="3cpWs8" id="rF8Sb8MZku" role="3cqZAp">
@@ -1276,7 +1276,7 @@
                   </node>
                   <node concept="34jXtK" id="rF8Sb8MZky" role="2OqNvi">
                     <node concept="1rXfSq" id="rF8Sb8MZkz" role="25WWJ7">
-                      <ref role="37wK5l" to="uxeh:~AbstractWizard.getCurrentStep():int" resolve="getCurrentStep" />
+                      <ref role="37wK5l" to="uxeh:~AbstractWizard.getCurrentStep()" resolve="getCurrentStep" />
                     </node>
                   </node>
                 </node>
@@ -1528,7 +1528,7 @@
           <node concept="2OqwBi" id="1MUu1ml5PY6" role="3clFbG">
             <node concept="Xjq3P" id="1MUu1ml5PUf" role="2Oq$k0" />
             <node concept="liA8E" id="1MUu1ml5Qc7" role="2OqNvi">
-              <ref role="37wK5l" to="uxeh:~AbstractWizardEx.updateButtons():void" resolve="updateButtons" />
+              <ref role="37wK5l" to="uxeh:~AbstractWizardEx.updateButtons()" resolve="updateButtons" />
             </node>
           </node>
         </node>
@@ -1554,7 +1554,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2NzhyaZyxPF" role="2OqNvi">
-                  <ref role="37wK5l" to="zn9m:~ActionCallback.setRejected():void" resolve="setRejected" />
+                  <ref role="37wK5l" to="zn9m:~ActionCallback.setRejected()" resolve="setRejected" />
                 </node>
               </node>
             </node>
@@ -1562,7 +1562,7 @@
           </node>
           <node concept="3fqX7Q" id="2NzhyaZywJ5" role="3clFbw">
             <node concept="1rXfSq" id="2NzhyaZywUB" role="3fr31v">
-              <ref role="37wK5l" to="jkm4:~DialogWrapper.isOK():boolean" resolve="isOK" />
+              <ref role="37wK5l" to="jkm4:~DialogWrapper.isOK()" resolve="isOK" />
             </node>
           </node>
         </node>
@@ -1572,7 +1572,7 @@
             <ref role="1Pybhc" to="7wpd:4biM00Jg0oQ" resolve="ApplicationHelper" />
             <node concept="2YIFZM" id="4biM00JgWjT" role="37wK5m">
               <ref role="1Pybhc" to="f061:~ApplicationManagerEx" resolve="ApplicationManagerEx" />
-              <ref role="37wK5l" to="f061:~ApplicationManagerEx.getApplicationEx():com.intellij.openapi.application.ex.ApplicationEx" resolve="getApplicationEx" />
+              <ref role="37wK5l" to="f061:~ApplicationManagerEx.getApplicationEx()" resolve="getApplicationEx" />
             </node>
             <node concept="2ShNRf" id="4biM00JgWuS" role="37wK5m">
               <node concept="YeOm9" id="4biM00JgWuT" role="2ShVmc">
@@ -1596,11 +1596,11 @@
                           </node>
                           <node concept="2OqwBi" id="4biM00JgWv3" role="33vP2m">
                             <node concept="2YIFZM" id="4biM00JgWv4" role="2Oq$k0">
-                              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+                              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
                             </node>
                             <node concept="liA8E" id="4biM00JgWv5" role="2OqNvi">
-                              <ref role="37wK5l" to="xygl:~ProgressManager.getProgressIndicator():com.intellij.openapi.progress.ProgressIndicator" resolve="getProgressIndicator" />
+                              <ref role="37wK5l" to="xygl:~ProgressManager.getProgressIndicator()" resolve="getProgressIndicator" />
                             </node>
                           </node>
                         </node>
@@ -1627,13 +1627,13 @@
                             <ref role="3cqZAo" node="4biM00JgWv7" resolve="adapter" />
                           </node>
                           <node concept="liA8E" id="4biM00JgWvf" role="2OqNvi">
-                            <ref role="37wK5l" to="mk90:~ProgressMonitorBase.start(java.lang.String,int):void" resolve="start" />
+                            <ref role="37wK5l" to="mk90:~ProgressMonitorBase.start(java.lang.String,int)" resolve="start" />
                             <node concept="2OqwBi" id="4biM00JgWvg" role="37wK5m">
                               <node concept="Xjq3P" id="4biM00JgWvh" role="2Oq$k0">
                                 <ref role="1HBi2w" node="5Kcl6zlFo7R" resolve="BaseWizard" />
                               </node>
                               <node concept="liA8E" id="4biM00JgWvi" role="2OqNvi">
-                                <ref role="37wK5l" to="jkm4:~DialogWrapper.getTitle():java.lang.String" resolve="getTitle" />
+                                <ref role="37wK5l" to="jkm4:~DialogWrapper.getTitle()" resolve="getTitle" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="4biM00JgWvj" role="37wK5m">
@@ -1661,7 +1661,7 @@
                                   <ref role="3cqZAo" node="4biM00JgWv7" resolve="adapter" />
                                 </node>
                                 <node concept="liA8E" id="4biM00JgWvu" role="2OqNvi">
-                                  <ref role="37wK5l" to="mk90:~ProgressMonitorBase.subTask(int):org.jetbrains.mps.openapi.util.ProgressMonitor" resolve="subTask" />
+                                  <ref role="37wK5l" to="mk90:~ProgressMonitorBase.subTask(int)" resolve="subTask" />
                                   <node concept="3cmrfG" id="4biM00JgWvv" role="37wK5m">
                                     <property role="3cmrfH" value="0" />
                                   </node>
@@ -1675,13 +1675,13 @@
                                 <ref role="3cqZAo" node="4biM00JgWvq" resolve="subTask" />
                               </node>
                               <node concept="liA8E" id="4biM00JgWvz" role="2OqNvi">
-                                <ref role="37wK5l" to="yyf4:~ProgressMonitor.start(java.lang.String,int):void" resolve="start" />
+                                <ref role="37wK5l" to="yyf4:~ProgressMonitor.start(java.lang.String,int)" resolve="start" />
                                 <node concept="2OqwBi" id="4biM00JgWv$" role="37wK5m">
                                   <node concept="2GrUjf" id="4biM00JgWv_" role="2Oq$k0">
                                     <ref role="2Gs0qQ" node="4biM00JgWvn" resolve="step" />
                                   </node>
                                   <node concept="liA8E" id="4biM00JgWvA" role="2OqNvi">
-                                    <ref role="37wK5l" to="uxeh:~AbstractWizardStepEx.getTitle():java.lang.String" resolve="getTitle" />
+                                    <ref role="37wK5l" to="uxeh:~AbstractWizardStepEx.getTitle()" resolve="getTitle" />
                                   </node>
                                 </node>
                                 <node concept="3cmrfG" id="4biM00JgWvB" role="37wK5m">
@@ -1748,7 +1748,7 @@
                                 <ref role="3cqZAo" node="4biM00JgWv7" resolve="adapter" />
                               </node>
                               <node concept="liA8E" id="4biM00JgWw0" role="2OqNvi">
-                                <ref role="37wK5l" to="mk90:~ProgressMonitorBase.advance(int):void" resolve="advance" />
+                                <ref role="37wK5l" to="mk90:~ProgressMonitorBase.advance(int)" resolve="advance" />
                                 <node concept="3cmrfG" id="4biM00JgWw1" role="37wK5m">
                                   <property role="3cmrfH" value="1" />
                                 </node>
@@ -1771,7 +1771,7 @@
                             <ref role="3cqZAo" node="4biM00JgWv7" resolve="adapter" />
                           </node>
                           <node concept="liA8E" id="4biM00JgWw8" role="2OqNvi">
-                            <ref role="37wK5l" to="mk90:~ProgressMonitorBase.done():void" resolve="done" />
+                            <ref role="37wK5l" to="mk90:~ProgressMonitorBase.done()" resolve="done" />
                           </node>
                         </node>
                       </node>
@@ -1786,7 +1786,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="4biM00JgWwe" role="2OqNvi">
-                            <ref role="37wK5l" to="zn9m:~AsyncResult.setDone(java.lang.Object):com.intellij.openapi.util.AsyncResult" resolve="setDone" />
+                            <ref role="37wK5l" to="zn9m:~AsyncResult.setDone(java.lang.Object)" resolve="setDone" />
                             <node concept="2OqwBi" id="4biM00JgWwf" role="37wK5m">
                               <node concept="Xjq3P" id="4biM00JgWwg" role="2Oq$k0">
                                 <ref role="1HBi2w" node="5Kcl6zlFo7R" resolve="BaseWizard" />
@@ -1806,7 +1806,7 @@
             <node concept="2OqwBi" id="4biM00JgYd0" role="37wK5m">
               <node concept="Xjq3P" id="4biM00JgXzL" role="2Oq$k0" />
               <node concept="liA8E" id="4biM00Jh2Iq" role="2OqNvi">
-                <ref role="37wK5l" to="jkm4:~DialogWrapper.getTitle():java.lang.String" resolve="getTitle" />
+                <ref role="37wK5l" to="jkm4:~DialogWrapper.getTitle()" resolve="getTitle" />
               </node>
             </node>
             <node concept="3clFbT" id="4biM00Jh36l" role="37wK5m">
@@ -1853,7 +1853,7 @@
       <node concept="3clFbS" id="2NzhyaZy70y" role="3clF47">
         <node concept="3clFbF" id="2NzhyaZy70_" role="3cqZAp">
           <node concept="3nyPlj" id="2NzhyaZy70$" role="3clFbG">
-            <ref role="37wK5l" to="jkm4:~DialogWrapper.doCancelAction():void" resolve="doCancelAction" />
+            <ref role="37wK5l" to="jkm4:~DialogWrapper.doCancelAction()" resolve="doCancelAction" />
           </node>
         </node>
         <node concept="3clFbF" id="2NzhyaZyg3N" role="3cqZAp">
@@ -1865,7 +1865,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2NzhyaZygK8" role="2OqNvi">
-              <ref role="37wK5l" to="zn9m:~ActionCallback.setRejected():void" resolve="setRejected" />
+              <ref role="37wK5l" to="zn9m:~ActionCallback.setRejected()" resolve="setRejected" />
             </node>
           </node>
         </node>
@@ -1892,7 +1892,7 @@
               <ref role="37wK5l" node="6JByj2Ce7TP" resolve="getResult" />
             </node>
             <node concept="liA8E" id="4biM00Jbbwy" role="2OqNvi">
-              <ref role="37wK5l" to="zn9m:~AsyncResult.getResultSync():java.lang.Object" resolve="getResultSync" />
+              <ref role="37wK5l" to="zn9m:~AsyncResult.getResultSync()" resolve="getResultSync" />
             </node>
           </node>
         </node>
@@ -1915,7 +1915,7 @@
             <property role="TrG5h" value="showAndGet" />
             <node concept="10P_77" id="6JByj2CtY_x" role="1tU5fm" />
             <node concept="1rXfSq" id="6JByj2CtY_$" role="33vP2m">
-              <ref role="37wK5l" to="jkm4:~DialogWrapper.showAndGet():boolean" resolve="showAndGet" />
+              <ref role="37wK5l" to="jkm4:~DialogWrapper.showAndGet()" resolve="showAndGet" />
             </node>
           </node>
         </node>
@@ -1932,7 +1932,7 @@
                   <ref role="37wK5l" node="6JByj2Ce7TP" resolve="getResult" />
                 </node>
                 <node concept="liA8E" id="4biM00Jbf6p" role="2OqNvi">
-                  <ref role="37wK5l" to="zn9m:~AsyncResult.getResultSync():java.lang.Object" resolve="getResultSync" />
+                  <ref role="37wK5l" to="zn9m:~AsyncResult.getResultSync()" resolve="getResultSync" />
                 </node>
               </node>
             </node>
@@ -2088,11 +2088,11 @@
                             <ref role="3cqZAo" node="e7wQ4XBSjE" resolve="it" />
                           </node>
                           <node concept="liA8E" id="e7wQ4XBSj_" role="2OqNvi">
-                            <ref role="37wK5l" to="uxeh:~AbstractWizardStepEx.getStepId():java.lang.Object" resolve="getStepId" />
+                            <ref role="37wK5l" to="uxeh:~AbstractWizardStepEx.getStepId()" resolve="getStepId" />
                           </node>
                         </node>
                         <node concept="liA8E" id="e7wQ4XBSjA" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="e7wQ4XBSjB" role="37wK5m">
                             <node concept="Xjq3P" id="e7wQ4XBSjC" role="2Oq$k0" />
                             <node concept="2OwXpG" id="e7wQ4XBSjD" role="2OqNvi">
@@ -2380,11 +2380,11 @@
                             <ref role="3cqZAo" node="e7wQ4XEVYH" resolve="it" />
                           </node>
                           <node concept="liA8E" id="e7wQ4XEVYC" role="2OqNvi">
-                            <ref role="37wK5l" to="uxeh:~AbstractWizardStepEx.getStepId():java.lang.Object" resolve="getStepId" />
+                            <ref role="37wK5l" to="uxeh:~AbstractWizardStepEx.getStepId()" resolve="getStepId" />
                           </node>
                         </node>
                         <node concept="liA8E" id="e7wQ4XEVYD" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="e7wQ4XEVYE" role="37wK5m">
                             <node concept="Xjq3P" id="e7wQ4XEVYF" role="2Oq$k0" />
                             <node concept="2OwXpG" id="e7wQ4XEVYG" role="2OqNvi">

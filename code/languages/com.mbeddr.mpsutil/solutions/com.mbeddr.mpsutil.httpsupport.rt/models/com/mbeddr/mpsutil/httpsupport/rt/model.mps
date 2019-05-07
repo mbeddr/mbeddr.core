@@ -326,7 +326,7 @@
               <ref role="3cqZAo" node="2VC4eVY1iaL" resolve="s" />
             </node>
             <node concept="liA8E" id="2VC4eVY1lwo" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
               <node concept="Xl_RD" id="2VC4eVY1lxy" role="37wK5m">
                 <property role="Xl_RC" value="get" />
               </node>
@@ -347,7 +347,7 @@
               <ref role="3cqZAo" node="2VC4eVY1iaL" resolve="s" />
             </node>
             <node concept="liA8E" id="2VC4eVY1lEI" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
               <node concept="Xl_RD" id="2VC4eVY1lEJ" role="37wK5m">
                 <property role="Xl_RC" value="put" />
               </node>
@@ -368,7 +368,7 @@
               <ref role="3cqZAo" node="2VC4eVY1iaL" resolve="s" />
             </node>
             <node concept="liA8E" id="2VC4eVY1lI7" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
               <node concept="Xl_RD" id="2VC4eVY1lI8" role="37wK5m">
                 <property role="Xl_RC" value="post" />
               </node>
@@ -389,7 +389,7 @@
               <ref role="3cqZAo" node="2VC4eVY1iaL" resolve="s" />
             </node>
             <node concept="liA8E" id="2VC4eVY1lMO" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
               <node concept="Xl_RD" id="2VC4eVY1lMP" role="37wK5m">
                 <property role="Xl_RC" value="delete" />
               </node>
@@ -643,7 +643,7 @@
                 <ref role="3cqZAo" node="2VC4eVYelet" resolve="u" />
               </node>
               <node concept="liA8E" id="2VC4eVYeleA" role="2OqNvi">
-                <ref role="37wK5l" to="zf81:~URL.getProtocol():java.lang.String" resolve="getProtocol" />
+                <ref role="37wK5l" to="zf81:~URL.getProtocol()" resolve="getProtocol" />
               </node>
             </node>
             <node concept="37vLTw" id="2VC4eVYeleB" role="37vLTJ">
@@ -658,7 +658,7 @@
                 <ref role="3cqZAo" node="2VC4eVYelet" resolve="u" />
               </node>
               <node concept="liA8E" id="2VC4eVYeleG" role="2OqNvi">
-                <ref role="37wK5l" to="zf81:~URL.getHost():java.lang.String" resolve="getHost" />
+                <ref role="37wK5l" to="zf81:~URL.getHost()" resolve="getHost" />
               </node>
             </node>
             <node concept="37vLTw" id="2VC4eVYeleH" role="37vLTJ">
@@ -673,7 +673,7 @@
                 <ref role="3cqZAo" node="2VC4eVYelet" resolve="u" />
               </node>
               <node concept="liA8E" id="2VC4eVYeleM" role="2OqNvi">
-                <ref role="37wK5l" to="zf81:~URL.getPort():int" resolve="getPort" />
+                <ref role="37wK5l" to="zf81:~URL.getPort()" resolve="getPort" />
               </node>
             </node>
             <node concept="37vLTw" id="2VC4eVYeleN" role="37vLTJ">
@@ -696,11 +696,11 @@
                         <ref role="3cqZAo" node="2VC4eVYelet" resolve="u" />
                       </node>
                       <node concept="liA8E" id="2VC4eVYeleX" role="2OqNvi">
-                        <ref role="37wK5l" to="zf81:~URL.getPath():java.lang.String" resolve="getPath" />
+                        <ref role="37wK5l" to="zf81:~URL.getPath()" resolve="getPath" />
                       </node>
                     </node>
                     <node concept="liA8E" id="2VC4eVYeleY" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                      <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                       <node concept="Xl_RD" id="2VC4eVYeleZ" role="37wK5m">
                         <property role="Xl_RC" value="/" />
                       </node>
@@ -740,7 +740,7 @@
                 <ref role="3cqZAo" node="2VC4eVYelet" resolve="u" />
               </node>
               <node concept="liA8E" id="1NEr3BKrHF7" role="2OqNvi">
-                <ref role="37wK5l" to="zf81:~URL.getQuery():java.lang.String" resolve="getQuery" />
+                <ref role="37wK5l" to="zf81:~URL.getQuery()" resolve="getQuery" />
               </node>
             </node>
           </node>
@@ -758,7 +758,7 @@
                     <ref role="3cqZAo" node="1NEr3BKrHF4" resolve="query" />
                   </node>
                   <node concept="liA8E" id="2VC4eVYelfa" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                    <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                     <node concept="Xl_RD" id="2VC4eVYelfb" role="37wK5m">
                       <property role="Xl_RC" value="&amp;" />
                     </node>
@@ -785,7 +785,7 @@
                         <ref role="2Gs0qQ" node="2VC4eVYelfd" resolve="param" />
                       </node>
                       <node concept="liA8E" id="2VC4eVYelfm" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                        <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                         <node concept="Xl_RD" id="2VC4eVYelfn" role="37wK5m">
                           <property role="Xl_RC" value="=" />
                         </node>
@@ -1040,7 +1040,7 @@
               <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
             </node>
             <node concept="liA8E" id="2VC4eVYelh3" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
               <node concept="37vLTw" id="2VC4eVYelh4" role="37wK5m">
                 <ref role="3cqZAo" node="2VC4eVYeldv" resolve="protocol" />
               </node>
@@ -1053,7 +1053,7 @@
               <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
             </node>
             <node concept="liA8E" id="2VC4eVYelh8" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
               <node concept="37vLTw" id="2VC4eVYelh9" role="37wK5m">
                 <ref role="3cqZAo" node="2VC4eVYeldy" resolve="host" />
               </node>
@@ -1068,7 +1068,7 @@
                   <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
                 </node>
                 <node concept="liA8E" id="2VC4eVYelhf" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                   <node concept="Xl_RD" id="2VC4eVYelhg" role="37wK5m">
                     <property role="Xl_RC" value=":" />
                   </node>
@@ -1081,7 +1081,7 @@
                   <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
                 </node>
                 <node concept="liA8E" id="2VC4eVYelhk" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(int):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(int)" resolve="append" />
                   <node concept="37vLTw" id="2VC4eVYelhl" role="37wK5m">
                     <ref role="3cqZAo" node="2VC4eVYeld_" resolve="port" />
                   </node>
@@ -1104,7 +1104,7 @@
               <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
             </node>
             <node concept="liA8E" id="2VC4eVYelhs" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
               <node concept="Xl_RD" id="2VC4eVYelht" role="37wK5m">
                 <property role="Xl_RC" value="/" />
               </node>
@@ -1126,7 +1126,7 @@
                   <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
                 </node>
                 <node concept="liA8E" id="2VC4eVYelhA" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                   <node concept="2GrUjf" id="2VC4eVYelhB" role="37wK5m">
                     <ref role="2Gs0qQ" node="2VC4eVYelhw" resolve="seg" />
                   </node>
@@ -1139,7 +1139,7 @@
                   <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
                 </node>
                 <node concept="liA8E" id="2VC4eVYelhF" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                   <node concept="Xl_RD" id="2VC4eVYelhG" role="37wK5m">
                     <property role="Xl_RC" value="/" />
                   </node>
@@ -1157,7 +1157,7 @@
                   <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
                 </node>
                 <node concept="liA8E" id="2VC4eVYelhN" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                   <node concept="Xl_RD" id="2VC4eVYelhO" role="37wK5m">
                     <property role="Xl_RC" value="?" />
                   </node>
@@ -1196,7 +1196,7 @@
                   <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
                 </node>
                 <node concept="liA8E" id="2VC4eVYeli4" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                   <node concept="2OqwBi" id="2VC4eVYeli5" role="37wK5m">
                     <node concept="2GrUjf" id="2VC4eVYeli6" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="2VC4eVYelhY" resolve="param" />
@@ -1212,7 +1212,7 @@
                   <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
                 </node>
                 <node concept="liA8E" id="2VC4eVYelib" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                   <node concept="Xl_RD" id="2VC4eVYelic" role="37wK5m">
                     <property role="Xl_RC" value="=" />
                   </node>
@@ -1225,7 +1225,7 @@
                   <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
                 </node>
                 <node concept="liA8E" id="2VC4eVYelig" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                   <node concept="2OqwBi" id="2VC4eVYelih" role="37wK5m">
                     <node concept="2GrUjf" id="2VC4eVYelii" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="2VC4eVYelhY" resolve="param" />
@@ -1251,7 +1251,7 @@
                       <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
                     </node>
                     <node concept="liA8E" id="2VC4eVYelit" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                      <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                       <node concept="Xl_RD" id="2VC4eVYeliu" role="37wK5m">
                         <property role="Xl_RC" value="&amp;" />
                       </node>
@@ -1280,7 +1280,7 @@
               <ref role="3cqZAo" node="2VC4eVYelgV" resolve="url" />
             </node>
             <node concept="liA8E" id="2VC4eVYeliC" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
             </node>
           </node>
         </node>
@@ -1306,7 +1306,7 @@
               <ref role="3cqZAo" node="2VC4eVY21CZ" resolve="response" />
             </node>
             <node concept="liA8E" id="7rr3ESJD3YT" role="2OqNvi">
-              <ref role="37wK5l" to="opgt:~ServletResponse.setContentType(java.lang.String):void" resolve="setContentType" />
+              <ref role="37wK5l" to="opgt:~ServletResponse.setContentType(java.lang.String)" resolve="setContentType" />
               <node concept="Xl_RD" id="7rr3ESJD3YU" role="37wK5m">
                 <property role="Xl_RC" value="application/xml" />
               </node>
@@ -1326,7 +1326,7 @@
                     <ref role="3cqZAo" node="2VC4eVY21CZ" resolve="response" />
                   </node>
                   <node concept="liA8E" id="2VC4eVY9ob2" role="2OqNvi">
-                    <ref role="37wK5l" to="opgt:~ServletResponse.getWriter():java.io.PrintWriter" resolve="getWriter" />
+                    <ref role="37wK5l" to="opgt:~ServletResponse.getWriter()" resolve="getWriter" />
                   </node>
                 </node>
               </node>
@@ -1337,7 +1337,7 @@
                   <ref role="3cqZAo" node="2VC4eVY9oaZ" resolve="writer" />
                 </node>
                 <node concept="liA8E" id="2VC4eVY21C0" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintWriter.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintWriter.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="2VC4eVY21C1" role="37wK5m">
                     <node concept="Xl_RD" id="2VC4eVY21C2" role="3uHU7w">
                       <property role="Xl_RC" value="'&gt;\n" />
@@ -1404,7 +1404,7 @@
                   <ref role="3cqZAo" node="2VC4eVY9oaZ" resolve="writer" />
                 </node>
                 <node concept="liA8E" id="2VC4eVY21Cu" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintWriter.print(java.lang.String):void" resolve="print" />
+                  <ref role="37wK5l" to="guwi:~PrintWriter.print(java.lang.String)" resolve="print" />
                   <node concept="Xl_RD" id="2VC4eVY21Cv" role="37wK5m">
                     <property role="Xl_RC" value="\t&lt;message&gt;\n" />
                   </node>
@@ -1417,7 +1417,7 @@
                   <ref role="3cqZAo" node="2VC4eVY9oaZ" resolve="writer" />
                 </node>
                 <node concept="liA8E" id="2VC4eVY21C_" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintWriter.print(java.lang.String):void" resolve="print" />
+                  <ref role="37wK5l" to="guwi:~PrintWriter.print(java.lang.String)" resolve="print" />
                   <node concept="37vLTw" id="2VC4eVY21Dg" role="37wK5m">
                     <ref role="3cqZAo" node="2VC4eVY21D6" resolve="message" />
                   </node>
@@ -1430,7 +1430,7 @@
                   <ref role="3cqZAo" node="2VC4eVY9oaZ" resolve="writer" />
                 </node>
                 <node concept="liA8E" id="2VC4eVY21CK" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintWriter.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintWriter.println(java.lang.String)" resolve="println" />
                   <node concept="Xl_RD" id="2VC4eVY21CL" role="37wK5m">
                     <property role="Xl_RC" value="&lt;/message&gt;\n" />
                   </node>
@@ -1443,7 +1443,7 @@
                   <ref role="3cqZAo" node="2VC4eVY9oaZ" resolve="writer" />
                 </node>
                 <node concept="liA8E" id="2VC4eVY21CR" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintWriter.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintWriter.println(java.lang.String)" resolve="println" />
                   <node concept="Xl_RD" id="2VC4eVY21CS" role="37wK5m">
                     <property role="Xl_RC" value="&lt;/error&gt;" />
                   </node>
@@ -1475,7 +1475,7 @@
               <ref role="3cqZAo" node="2VC4eVY21CZ" resolve="response" />
             </node>
             <node concept="liA8E" id="2VC4eVY21CX" role="2OqNvi">
-              <ref role="37wK5l" to="nwfd:~HttpServletResponse.setStatus(int):void" resolve="setStatus" />
+              <ref role="37wK5l" to="nwfd:~HttpServletResponse.setStatus(int)" resolve="setStatus" />
               <node concept="10M0yZ" id="2VC4eVY21CY" role="37wK5m">
                 <ref role="3cqZAo" to="nwfd:~HttpServletResponse.SC_BAD_REQUEST" resolve="SC_BAD_REQUEST" />
                 <ref role="1PxDUh" to="nwfd:~HttpServletResponse" resolve="HttpServletResponse" />

@@ -202,7 +202,7 @@
               <ref role="Rm8GQ" to="w1kc:~LanguageAspect.DATA_FLOW" resolve="DATA_FLOW" />
             </node>
             <node concept="liA8E" id="4w7It07pbp$" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+              <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel)" resolve="is" />
               <node concept="1Q6Npb" id="4w7It07pbp_" role="37wK5m" />
             </node>
           </node>

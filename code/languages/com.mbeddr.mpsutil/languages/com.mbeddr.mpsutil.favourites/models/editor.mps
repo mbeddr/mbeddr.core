@@ -307,7 +307,7 @@
               <node concept="liA8E" id="4glh_DcgCnU" role="2OqNvi">
                 <ref role="37wK5l" to="sn11:192HKKPOd3m" resolve="getIconFor" />
                 <node concept="1rXfSq" id="4glh_Dch1zP" role="37wK5m">
-                  <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                  <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode()" resolve="getSNode" />
                 </node>
               </node>
             </node>
@@ -367,7 +367,7 @@
                     <ref role="3cqZAo" node="DubiFB4e5w" resolve="context" />
                   </node>
                   <node concept="1rXfSq" id="6$SBfHyWHmq" role="37wK5m">
-                    <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                    <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode()" resolve="getSNode" />
                   </node>
                   <node concept="3clFb_" id="DubiFB4e5I" role="jymVt">
                     <property role="1EzhhJ" value="false" />
@@ -401,7 +401,7 @@
                                   <ref role="3cqZAo" node="DubiFB6mE3" resolve="icon" />
                                 </node>
                                 <node concept="liA8E" id="DubiFB6va8" role="2OqNvi">
-                                  <ref role="37wK5l" to="dxuu:~Icon.getIconWidth():int" resolve="getIconWidth" />
+                                  <ref role="37wK5l" to="dxuu:~Icon.getIconWidth()" resolve="getIconWidth" />
                                 </node>
                               </node>
                               <node concept="2OqwBi" id="DubiFB6wes" role="37wK5m">
@@ -409,7 +409,7 @@
                                   <ref role="3cqZAo" node="DubiFB6mE3" resolve="icon" />
                                 </node>
                                 <node concept="liA8E" id="DubiFB6wKk" role="2OqNvi">
-                                  <ref role="37wK5l" to="dxuu:~Icon.getIconHeight():int" resolve="getIconHeight" />
+                                  <ref role="37wK5l" to="dxuu:~Icon.getIconHeight()" resolve="getIconHeight" />
                                 </node>
                               </node>
                               <node concept="10M0yZ" id="DubiFB6y4t" role="37wK5m">
@@ -426,14 +426,14 @@
                             <ref role="3cqZAo" node="DubiFB6mE3" resolve="icon" />
                           </node>
                           <node concept="liA8E" id="DubiFB6BHb" role="2OqNvi">
-                            <ref role="37wK5l" to="dxuu:~Icon.paintIcon(java.awt.Component,java.awt.Graphics,int,int):void" resolve="paintIcon" />
+                            <ref role="37wK5l" to="dxuu:~Icon.paintIcon(java.awt.Component,java.awt.Graphics,int,int)" resolve="paintIcon" />
                             <node concept="10Nm6u" id="DubiFB6CUl" role="37wK5m" />
                             <node concept="2OqwBi" id="DubiFB6Dvd" role="37wK5m">
                               <node concept="37vLTw" id="DubiFB6CXV" role="2Oq$k0">
                                 <ref role="3cqZAo" node="DubiFB6sMD" resolve="img" />
                               </node>
                               <node concept="liA8E" id="DubiFB6F_a" role="2OqNvi">
-                                <ref role="37wK5l" to="jan3:~BufferedImage.getGraphics():java.awt.Graphics" resolve="getGraphics" />
+                                <ref role="37wK5l" to="jan3:~BufferedImage.getGraphics()" resolve="getGraphics" />
                               </node>
                             </node>
                             <node concept="3cmrfG" id="DubiFB6GS1" role="37wK5m">
@@ -453,7 +453,7 @@
                           </node>
                           <node concept="2OqwBi" id="DubiFBOokx" role="33vP2m">
                             <node concept="liA8E" id="DubiFBOoky" role="2OqNvi">
-                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent():jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="getParent" />
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent()" resolve="getParent" />
                             </node>
                             <node concept="Xjq3P" id="DubiFBOokz" role="2Oq$k0" />
                           </node>
@@ -465,7 +465,7 @@
                             <ref role="3cqZAo" node="DubiFB4e5L" resolve="g" />
                           </node>
                           <node concept="liA8E" id="DubiFB5RUO" role="2OqNvi">
-                            <ref role="37wK5l" to="z60i:~Graphics.drawImage(java.awt.Image,int,int,java.awt.image.ImageObserver):boolean" resolve="drawImage" />
+                            <ref role="37wK5l" to="z60i:~Graphics.drawImage(java.awt.Image,int,int,java.awt.image.ImageObserver)" resolve="drawImage" />
                             <node concept="37vLTw" id="DubiFB6_ih" role="37wK5m">
                               <ref role="3cqZAo" node="DubiFB6sMD" resolve="img" />
                             </node>
@@ -474,7 +474,7 @@
                                 <ref role="3cqZAo" node="DubiFBOokv" resolve="parent" />
                               </node>
                               <node concept="liA8E" id="DubiFBOxB5" role="2OqNvi">
-                                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX():int" resolve="getX" />
+                                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
                               </node>
                             </node>
                             <node concept="3cpWs3" id="DubiFBSgqw" role="37wK5m">
@@ -486,7 +486,7 @@
                                   <ref role="3cqZAo" node="DubiFBOokv" resolve="parent" />
                                 </node>
                                 <node concept="liA8E" id="DubiFBOCoH" role="2OqNvi">
-                                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY():int" resolve="getY" />
+                                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
                                 </node>
                               </node>
                             </node>
@@ -508,7 +508,7 @@
                               <ref role="3cqZAo" node="DubiFB6mE3" resolve="icon" />
                             </node>
                             <node concept="liA8E" id="DubiFB6KUs" role="2OqNvi">
-                              <ref role="37wK5l" to="dxuu:~Icon.getIconWidth():int" resolve="getIconWidth" />
+                              <ref role="37wK5l" to="dxuu:~Icon.getIconWidth()" resolve="getIconWidth" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="DubiFB4e7a" role="37vLTJ">
@@ -532,7 +532,7 @@
                               <ref role="3cqZAo" node="DubiFB6mE3" resolve="icon" />
                             </node>
                             <node concept="liA8E" id="DubiFB6N8I" role="2OqNvi">
-                              <ref role="37wK5l" to="dxuu:~Icon.getIconHeight():int" resolve="getIconHeight" />
+                              <ref role="37wK5l" to="dxuu:~Icon.getIconHeight()" resolve="getIconHeight" />
                             </node>
                           </node>
                         </node>

@@ -265,11 +265,11 @@
               <node concept="2OqwBi" id="7lmVLrUwwgL" role="2Oq$k0">
                 <node concept="1XNTG" id="7lmVLrUwwfM" role="2Oq$k0" />
                 <node concept="liA8E" id="7lmVLrUwwxO" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getContextCell" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell()" resolve="getContextCell" />
                 </node>
               </node>
               <node concept="liA8E" id="7lmVLrUwwWK" role="2OqNvi">
-                <ref role="37wK5l" to="f4zo:~EditorCell.getCellId():java.lang.String" resolve="getCellId" />
+                <ref role="37wK5l" to="f4zo:~EditorCell.getCellId()" resolve="getCellId" />
               </node>
             </node>
             <node concept="2OqwBi" id="7lmVLrUwvGu" role="37vLTJ">

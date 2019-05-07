@@ -126,11 +126,11 @@
               </node>
               <node concept="2OqwBi" id="2lop6rSgbuj" role="33vP2m">
                 <node concept="2YIFZM" id="2lop6rSgbuk" role="2Oq$k0">
-                  <ref role="37wK5l" to="w1kc:~ConceptDescendantsCache.getInstance():jetbrains.mps.smodel.ConceptDescendantsCache" resolve="getInstance" />
+                  <ref role="37wK5l" to="w1kc:~ConceptDescendantsCache.getInstance()" resolve="getInstance" />
                   <ref role="1Pybhc" to="w1kc:~ConceptDescendantsCache" resolve="ConceptDescendantsCache" />
                 </node>
                 <node concept="liA8E" id="2lop6rSgbul" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~ConceptDescendantsCache.getDescendants(org.jetbrains.mps.openapi.language.SAbstractConcept):java.util.Set" resolve="getDescendants" />
+                  <ref role="37wK5l" to="w1kc:~ConceptDescendantsCache.getDescendants(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getDescendants" />
                   <node concept="35c_gC" id="2lop6rSgbum" role="37wK5m">
                     <ref role="35c_gD" to="bdcd:7U3Fobb_8Ek" resolve="SuppressWarningKind" />
                   </node>
@@ -156,7 +156,7 @@
                               <ref role="3cqZAo" node="2lop6rSgbB1" resolve="it" />
                             </node>
                             <node concept="liA8E" id="2lop6rSgbAZ" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+                              <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode()" resolve="getDeclarationNode" />
                             </node>
                           </node>
                           <node concept="chp4Y" id="2lop6rSgbB0" role="3oSUPX">

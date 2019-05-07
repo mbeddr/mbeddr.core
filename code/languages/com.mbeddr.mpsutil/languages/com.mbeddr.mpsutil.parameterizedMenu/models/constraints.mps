@@ -142,7 +142,7 @@
               <node concept="2OqwBi" id="5_UfM9$L2Pv" role="3clFbw">
                 <node concept="2DD5aU" id="5_UfM9$L2y4" role="2Oq$k0" />
                 <node concept="liA8E" id="5_UfM9$L3F5" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                   <node concept="35c_gC" id="5_UfM9$L3OY" role="37wK5m">
                     <ref role="35c_gD" to="tpc2:3EZUZhmYaO_" resolve="TransformationMenuPart_Parameterized" />
                   </node>
@@ -156,7 +156,7 @@
               <ref role="359W_F" to="tpc2:3xbeilB7DC2" resolve="items" />
             </node>
             <node concept="liA8E" id="5_UfM9$L1UC" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
               <node concept="2DA6wF" id="5_UfM9$L1UD" role="37wK5m" />
             </node>
           </node>
@@ -210,7 +210,7 @@
                   <ref role="359W_F" to="tpc2:3EZUZhmYaOA" resolve="part" />
                 </node>
                 <node concept="liA8E" id="7P1t3vY1E2V" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                   <node concept="2DA6wF" id="7P1t3vY1E2W" role="37wK5m" />
                 </node>
               </node>
@@ -231,7 +231,7 @@
               <node concept="2OqwBi" id="5_UfM9$eVaz" role="3cqZAk">
                 <node concept="2DD5aU" id="5_UfM9$eUSH" role="2Oq$k0" />
                 <node concept="liA8E" id="5_UfM9$eVq3" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                   <node concept="35c_gC" id="5_UfM9$eVyf" role="37wK5m">
                     <ref role="35c_gD" to="2ouu:5_UfM9$eQst" resolve="QueryFunction_TransformationMenu_ParameterizableParameter" />
                   </node>
@@ -245,7 +245,7 @@
               <ref role="359W_F" to="tpc2:3EZUZhmYaOC" resolve="parameterQuery" />
             </node>
             <node concept="liA8E" id="5_UfM9$eUiw" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
               <node concept="2DA6wF" id="5_UfM9$eUix" role="37wK5m" />
             </node>
           </node>

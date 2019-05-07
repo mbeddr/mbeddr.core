@@ -320,7 +320,7 @@
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
               <node concept="3clFbF" id="2mgCt7fjaA_" role="8Wnug">
                 <node concept="2YIFZM" id="2mgCt7fjaN4" role="3clFbG">
-                  <ref role="37wK5l" to="dxuu:~JOptionPane.showConfirmDialog(java.awt.Component,java.lang.Object):int" resolve="showConfirmDialog" />
+                  <ref role="37wK5l" to="dxuu:~JOptionPane.showConfirmDialog(java.awt.Component,java.lang.Object)" resolve="showConfirmDialog" />
                   <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                   <node concept="10Nm6u" id="2mgCt7fjaU7" role="37wK5m" />
                   <node concept="2OqwBi" id="2mgCt7fjbQE" role="37wK5m">
@@ -344,7 +344,7 @@
                       <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                     </node>
                     <node concept="liA8E" id="5oO2AcZxG0N" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="3cpWs3" id="5oO2AcZxG0O" role="37wK5m">
                         <node concept="2GrUjf" id="5oO2AcZxG0P" role="3uHU7w">
                           <ref role="2Gs0qQ" node="5oO2AcZxG0I" resolve="em" />
@@ -377,7 +377,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5oO2AcZxG13" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="5oO2AcZxG14" role="37wK5m">
                 <node concept="Xl_RD" id="5oO2AcZxG16" role="3uHU7B">
                   <property role="Xl_RC" value="---------- Semantic checker result - the model is valid: " />

@@ -297,10 +297,10 @@
         <node concept="2OqwBi" id="4glh_DcgCnS" role="3actZa">
           <node concept="2YIFZM" id="4glh_DcgCnT" role="2Oq$k0">
             <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-            <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+            <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
           </node>
           <node concept="liA8E" id="4glh_DcgCnU" role="2OqNvi">
-            <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+            <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
             <node concept="14b0Wr" id="4glh_Dchaub" role="37wK5m">
               <ref role="14b0Uw" node="FniR$CbLj0" resolve="elementWithoutCat" />
             </node>
@@ -338,10 +338,10 @@
           <node concept="2OqwBi" id="4glh_DchaBe" role="3actZa">
             <node concept="2YIFZM" id="4glh_DchaBf" role="2Oq$k0">
               <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-              <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+              <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="4glh_DchaBg" role="2OqNvi">
-              <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+              <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
               <node concept="14b0Wr" id="4glh_DchaJV" role="37wK5m">
                 <ref role="14b0Uw" node="FniR$Cbkuy" resolve="elementWithCat" />
               </node>
@@ -382,7 +382,7 @@
             <ref role="14b0Uw" node="7diJr$RvF92" resolve="project" />
           </node>
           <node concept="liA8E" id="7diJr$RwzJ7" role="2OqNvi">
-            <ref role="37wK5l" to="z1c3:~MPSProject.getName():java.lang.String" resolve="getName" />
+            <ref role="37wK5l" to="z1c3:~MPSProject.getName()" resolve="getName" />
           </node>
         </node>
       </node>
@@ -399,10 +399,10 @@
     <node concept="2OqwBi" id="4glh_DchaSW" role="37b278">
       <node concept="2YIFZM" id="4glh_DchaSX" role="2Oq$k0">
         <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-        <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+        <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
       </node>
       <node concept="liA8E" id="4glh_DchaSY" role="2OqNvi">
-        <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+        <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
         <node concept="35c_gC" id="4glh_Dchbhp" role="37wK5m">
           <ref role="35c_gD" to="ynum:15UxZ6JoySV" resolve="FavouritesAnnotation" />
         </node>
@@ -432,7 +432,7 @@
                       <ref role="3cqZAo" node="4GrfODAR0cY" resolve="project" />
                     </node>
                     <node concept="liA8E" id="FniR$C7wbg" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c5:~Project.getModules():java.lang.Iterable" resolve="getModules" />
+                      <ref role="37wK5l" to="z1c5:~Project.getModules()" resolve="getModules" />
                     </node>
                   </node>
                   <node concept="A3Dl8" id="FniR$C7wbh" role="10QFUM">
@@ -451,7 +451,7 @@
                           <ref role="3cqZAo" node="FniR$C7wbq" resolve="it" />
                         </node>
                         <node concept="liA8E" id="FniR$C7wbp" role="2OqNvi">
-                          <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                          <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
                         </node>
                       </node>
                     </node>
@@ -633,7 +633,7 @@
                       <ref role="3cqZAo" node="FniR$Cb2Zm" resolve="project" />
                     </node>
                     <node concept="liA8E" id="FniR$Cb2YL" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c5:~Project.getModules():java.lang.Iterable" resolve="getModules" />
+                      <ref role="37wK5l" to="z1c5:~Project.getModules()" resolve="getModules" />
                     </node>
                   </node>
                   <node concept="A3Dl8" id="FniR$Cb2YM" role="10QFUM">
@@ -652,7 +652,7 @@
                           <ref role="3cqZAo" node="FniR$Cb2YV" resolve="it" />
                         </node>
                         <node concept="liA8E" id="FniR$Cb2YU" role="2OqNvi">
-                          <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                          <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
                         </node>
                       </node>
                     </node>
@@ -706,7 +706,7 @@
                             <ref role="3cqZAo" node="FniR$Cb6Hn" resolve="category" />
                           </node>
                           <node concept="liA8E" id="FniR$ChLNM" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                             <node concept="2OqwBi" id="FniR$ChM65" role="37wK5m">
                               <node concept="37vLTw" id="FniR$ChLWe" role="2Oq$k0">
                                 <ref role="3cqZAo" node="FniR$Cb8Su" resolve="it" />
@@ -806,7 +806,7 @@
                       <ref role="3cqZAo" node="FniR$CbHVj" resolve="project" />
                     </node>
                     <node concept="liA8E" id="FniR$CbHUz" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c5:~Project.getModules():java.lang.Iterable" resolve="getModules" />
+                      <ref role="37wK5l" to="z1c5:~Project.getModules()" resolve="getModules" />
                     </node>
                   </node>
                   <node concept="A3Dl8" id="FniR$CbHU$" role="10QFUM">
@@ -825,7 +825,7 @@
                           <ref role="3cqZAo" node="FniR$CbHUH" resolve="it" />
                         </node>
                         <node concept="liA8E" id="FniR$CbHUG" role="2OqNvi">
-                          <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                          <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
                         </node>
                       </node>
                     </node>

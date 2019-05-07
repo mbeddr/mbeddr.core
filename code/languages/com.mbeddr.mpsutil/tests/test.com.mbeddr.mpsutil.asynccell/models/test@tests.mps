@@ -10,7 +10,7 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
     <use id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.blutil.test.waitfor" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
   </languages>
   <imports>
     <import index="re1d" ref="r:515ec77b-87d0-4871-9d0a-f5cfa3bbab14(com.mbeddr.mpsutil.asynccell.sandbox.behavior)" />
@@ -132,7 +132,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -233,7 +233,7 @@
                 <node concept="liA8E" id="4IjegxhBnpD" role="2OqNvi">
                   <ref role="37wK5l" to="4amx:3aYIkMXEUWB" resolve="registerAsyncCell" />
                   <node concept="2YIFZM" id="4IjegxhBtNj" role="37wK5m">
-                    <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
+                    <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class)" resolve="mock" />
                     <ref role="1Pybhc" to="n4y8:~Mockito" resolve="Mockito" />
                     <node concept="3VsKOn" id="4IjegxhBu49" role="37wK5m">
                       <ref role="3VsUkX" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
@@ -274,7 +274,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4IjegxhDxuC" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+                  <ref role="37wK5l" to="dxuu:~Timer.isRunning()" resolve="isRunning" />
                 </node>
               </node>
             </node>
@@ -301,7 +301,7 @@
                   <ref role="3uigEE" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
                 </node>
                 <node concept="2YIFZM" id="4IjegxhBX6z" role="33vP2m">
-                  <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class):java.lang.Object" resolve="mock" />
+                  <ref role="37wK5l" to="n4y8:~Mockito.mock(java.lang.Class)" resolve="mock" />
                   <ref role="1Pybhc" to="n4y8:~Mockito" resolve="Mockito" />
                   <node concept="3VsKOn" id="4IjegxhBX6$" role="37wK5m">
                     <ref role="3VsUkX" to="4amx:3aYIkMXF5Sf" resolve="EditorCell_Async" />
@@ -373,7 +373,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4IjegxhDydA" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+                  <ref role="37wK5l" to="dxuu:~Timer.isRunning()" resolve="isRunning" />
                 </node>
               </node>
             </node>
@@ -437,7 +437,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4IjegxhDxZi" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+                  <ref role="37wK5l" to="dxuu:~Timer.isRunning()" resolve="isRunning" />
                 </node>
               </node>
             </node>

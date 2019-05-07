@@ -464,7 +464,7 @@
                       <ref role="3uigEE" to="z1c3:~PathMacros" resolve="PathMacros" />
                     </node>
                     <node concept="2YIFZM" id="2rWX5ToCfIu" role="33vP2m">
-                      <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
+                      <ref role="37wK5l" to="z1c3:~PathMacros.getInstance()" resolve="getInstance" />
                       <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
                     </node>
                   </node>
@@ -482,7 +482,7 @@
                             <ref role="3cqZAo" node="2rWX5ToCfIs" resolve="pm" />
                           </node>
                           <node concept="liA8E" id="2rWX5ToCfIB" role="2OqNvi">
-                            <ref role="37wK5l" to="z1c3:~PathMacros.getNames():java.util.Set" resolve="getNames" />
+                            <ref role="37wK5l" to="z1c3:~PathMacros.getNames()" resolve="getNames" />
                           </node>
                         </node>
                         <node concept="2hMVRd" id="2rWX5ToCfIC" role="10QFUM">
@@ -508,7 +508,7 @@
                                     <ref role="3cqZAo" node="2rWX5ToCfIs" resolve="pm" />
                                   </node>
                                   <node concept="liA8E" id="2rWX5ToCfIP" role="2OqNvi">
-                                    <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                                    <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String)" resolve="getValue" />
                                     <node concept="37vLTw" id="2rWX5ToCfIQ" role="37wK5m">
                                       <ref role="3cqZAo" node="2rWX5ToCfIS" resolve="it" />
                                     </node>
@@ -612,7 +612,7 @@
                     </node>
                     <node concept="2YIFZM" id="4eXJ6EOu54l" role="33vP2m">
                       <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
-                      <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
+                      <ref role="37wK5l" to="z1c3:~PathMacros.getInstance()" resolve="getInstance" />
                     </node>
                   </node>
                 </node>
@@ -629,7 +629,7 @@
                             <ref role="3cqZAo" node="4eXJ6EOu54k" resolve="pm" />
                           </node>
                           <node concept="liA8E" id="4eXJ6EOoY_J" role="2OqNvi">
-                            <ref role="37wK5l" to="z1c3:~PathMacros.getNames():java.util.Set" resolve="getNames" />
+                            <ref role="37wK5l" to="z1c3:~PathMacros.getNames()" resolve="getNames" />
                           </node>
                         </node>
                         <node concept="2hMVRd" id="4eXJ6EOoY_F" role="10QFUM">
@@ -655,7 +655,7 @@
                                     <ref role="3cqZAo" node="4eXJ6EOu54k" resolve="pm" />
                                   </node>
                                   <node concept="liA8E" id="4eXJ6EOu6ex" role="2OqNvi">
-                                    <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                                    <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String)" resolve="getValue" />
                                     <node concept="37vLTw" id="4eXJ6EOu6vs" role="37wK5m">
                                       <ref role="3cqZAo" node="4eXJ6EOu4Q7" resolve="it" />
                                     </node>

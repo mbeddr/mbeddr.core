@@ -73,10 +73,10 @@
         <node concept="3clFbF" id="44jZT9p0Hld" role="3cqZAp">
           <node concept="2YIFZM" id="44jZT9p0HlR" role="3clFbG">
             <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-            <ref role="37wK5l" to="btm1:~StringUtils.rightPad(java.lang.String,int):java.lang.String" resolve="rightPad" />
+            <ref role="37wK5l" to="btm1:~StringUtils.rightPad(java.lang.String,int)" resolve="rightPad" />
             <node concept="2YIFZM" id="44jZT9p0Ho2" role="37wK5m">
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="btm1:~StringUtils.abbreviate(java.lang.String,int):java.lang.String" resolve="abbreviate" />
+              <ref role="37wK5l" to="btm1:~StringUtils.abbreviate(java.lang.String,int)" resolve="abbreviate" />
               <node concept="37vLTw" id="44jZT9p0Hpj" role="37wK5m">
                 <ref role="3cqZAo" node="44jZT9p0GPT" resolve="str" />
               </node>
@@ -110,10 +110,10 @@
         <node concept="3clFbF" id="44jZT9p17HA" role="3cqZAp">
           <node concept="2YIFZM" id="44jZT9p17PO" role="3clFbG">
             <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-            <ref role="37wK5l" to="btm1:~StringUtils.leftPad(java.lang.String,int):java.lang.String" resolve="leftPad" />
+            <ref role="37wK5l" to="btm1:~StringUtils.leftPad(java.lang.String,int)" resolve="leftPad" />
             <node concept="2YIFZM" id="44jZT9p17PP" role="37wK5m">
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="btm1:~StringUtils.abbreviate(java.lang.String,int):java.lang.String" resolve="abbreviate" />
+              <ref role="37wK5l" to="btm1:~StringUtils.abbreviate(java.lang.String,int)" resolve="abbreviate" />
               <node concept="37vLTw" id="44jZT9p17PQ" role="37wK5m">
                 <ref role="3cqZAo" node="44jZT9p17HI" resolve="str" />
               </node>
@@ -147,7 +147,7 @@
         <node concept="3clFbF" id="44jZT9pcs7k" role="3cqZAp">
           <node concept="2YIFZM" id="44jZT9pcsxG" role="3clFbG">
             <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-            <ref role="37wK5l" to="btm1:~StringUtils.repeat(java.lang.String,int):java.lang.String" resolve="repeat" />
+            <ref role="37wK5l" to="btm1:~StringUtils.repeat(java.lang.String,int)" resolve="repeat" />
             <node concept="Xl_RD" id="44jZT9pcsJc" role="37wK5m">
               <property role="Xl_RC" value=" " />
             </node>
@@ -157,7 +157,7 @@
               </node>
               <node concept="2YIFZM" id="44jZT9pctW9" role="3uHU7w">
                 <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="btm1:~StringUtils.length(java.lang.CharSequence):int" resolve="length" />
+                <ref role="37wK5l" to="btm1:~StringUtils.length(java.lang.CharSequence)" resolve="length" />
                 <node concept="37vLTw" id="44jZT9pcuc7" role="37wK5m">
                   <ref role="3cqZAo" node="44jZT9pcpMC" resolve="str" />
                 </node>

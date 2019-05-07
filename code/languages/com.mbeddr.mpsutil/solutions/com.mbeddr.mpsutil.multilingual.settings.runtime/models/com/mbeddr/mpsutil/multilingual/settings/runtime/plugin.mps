@@ -536,7 +536,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="77gEP6zxw5C" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                 <node concept="Xl_RD" id="77gEP6zxw5D" role="37wK5m">
                   <property role="Xl_RC" value="_" />
                 </node>

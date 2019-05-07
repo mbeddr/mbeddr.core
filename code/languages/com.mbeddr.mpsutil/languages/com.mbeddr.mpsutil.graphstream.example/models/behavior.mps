@@ -218,7 +218,7 @@
         <node concept="3clFbF" id="7PLVYgqIBvH" role="3cqZAp">
           <node concept="2YIFZM" id="7PLVYgqIBvI" role="3clFbG">
             <ref role="1Pybhc" to="dsms:~ExampleGraph" resolve="ExampleGraph" />
-            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph):void" resolve="fillExampleGraph" />
+            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph)" resolve="fillExampleGraph" />
             <node concept="37vLTw" id="6x5UxX31AFr" role="37wK5m">
               <ref role="3cqZAo" node="4G2jA20fr_F" resolve="_graph" />
             </node>
@@ -323,14 +323,14 @@
               <ref role="3cqZAo" node="4G2jA20fr_F" resolve="_graph" />
             </node>
             <node concept="liA8E" id="7PLVYgqICF4" role="2OqNvi">
-              <ref role="37wK5l" to="5svn:~Graph.clear():void" resolve="clear" />
+              <ref role="37wK5l" to="5svn:~Graph.clear()" resolve="clear" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="7PLVYgqIDfh" role="3cqZAp">
           <node concept="2YIFZM" id="7PLVYgqIDfi" role="3clFbG">
             <ref role="1Pybhc" to="dsms:~ExampleGraph" resolve="ExampleGraph" />
-            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph):void" resolve="fillExampleGraph" />
+            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph)" resolve="fillExampleGraph" />
             <node concept="37vLTw" id="7PLVYgqIDfj" role="37wK5m">
               <ref role="3cqZAo" node="4G2jA20fr_F" resolve="_graph" />
             </node>

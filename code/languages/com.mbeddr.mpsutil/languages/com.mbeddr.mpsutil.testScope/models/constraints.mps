@@ -188,11 +188,11 @@
                   <node concept="2yIwOk" id="5RIakkDJ3IL" role="2OqNvi" />
                 </node>
                 <node concept="liA8E" id="5RIakkDJ3IM" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getReferenceLinks():java.util.Collection" resolve="getReferenceLinks" />
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getReferenceLinks()" resolve="getReferenceLinks" />
                 </node>
               </node>
               <node concept="liA8E" id="5RIakkDJ3IN" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Collection.isEmpty():boolean" resolve="isEmpty" />
+                <ref role="37wK5l" to="33ny:~Collection.isEmpty()" resolve="isEmpty" />
               </node>
             </node>
           </node>

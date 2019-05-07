@@ -653,7 +653,7 @@
                                 <ref role="3cqZAo" node="3WMUl3DMqFS" resolve="it" />
                               </node>
                               <node concept="liA8E" id="3WMUl3DMqFR" role="2OqNvi">
-                                <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                                <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName()" resolve="getModuleName" />
                               </node>
                             </node>
                           </node>

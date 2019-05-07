@@ -279,7 +279,7 @@
                         <ref role="2Gs0qQ" node="5pm8$ZewefP" resolve="unit" />
                       </node>
                       <node concept="liA8E" id="5pm8$ZewfR$" role="2OqNvi">
-                        <ref role="37wK5l" to="ao3:~TextUnit.getStartNode():org.jetbrains.mps.openapi.model.SNode" resolve="getStartNode" />
+                        <ref role="37wK5l" to="ao3:~TextUnit.getStartNode()" resolve="getStartNode" />
                       </node>
                     </node>
                   </node>
@@ -295,13 +295,13 @@
                         <ref role="3cqZAo" node="5pm8$ZexlPx" resolve="outputPath" />
                       </node>
                       <node concept="liA8E" id="5pm8$Zexm$i" role="2OqNvi">
-                        <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String):java.nio.file.Path" resolve="resolve" />
+                        <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
                         <node concept="2OqwBi" id="5pm8$Zexnvt" role="37wK5m">
                           <node concept="2GrUjf" id="5pm8$Zexnem" role="2Oq$k0">
                             <ref role="2Gs0qQ" node="5pm8$ZewefP" resolve="unit" />
                           </node>
                           <node concept="liA8E" id="5pm8$ZexnIE" role="2OqNvi">
-                            <ref role="37wK5l" to="ao3:~TextUnit.getFileName():java.lang.String" resolve="getFileName" />
+                            <ref role="37wK5l" to="ao3:~TextUnit.getFileName()" resolve="getFileName" />
                           </node>
                         </node>
                       </node>
@@ -347,11 +347,11 @@
                         <ref role="3cqZAo" node="5pm8$Zez4i$" resolve="textGenResult" />
                       </node>
                       <node concept="liA8E" id="5pm8$ZezDvt" role="2OqNvi">
-                        <ref role="37wK5l" to="ao3:~TextGenResult.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                        <ref role="37wK5l" to="ao3:~TextGenResult.getModel()" resolve="getModel" />
                       </node>
                     </node>
                     <node concept="liA8E" id="5pm8$Zewcbk" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                      <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                     </node>
                   </node>
                 </node>
@@ -361,7 +361,7 @@
                   <ref role="3cqZAo" node="5pm8$Zez4i$" resolve="textGenResult" />
                 </node>
                 <node concept="liA8E" id="5pm8$ZewcMo" role="2OqNvi">
-                  <ref role="37wK5l" to="ao3:~TextGenResult.getUnits():java.util.List" resolve="getUnits" />
+                  <ref role="37wK5l" to="ao3:~TextGenResult.getUnits()" resolve="getUnits" />
                 </node>
               </node>
             </node>
@@ -400,9 +400,9 @@
         <node concept="3cpWs6" id="5pm8$ZezCJr" role="3cqZAp">
           <node concept="2YIFZM" id="5pm8$ZezCJs" role="3cqZAk">
             <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-            <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...):java.nio.file.Path" resolve="get" />
+            <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
             <node concept="2YIFZM" id="6BNByWjan5O" role="37wK5m">
-              <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
+              <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputPathFor" />
               <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
               <node concept="37vLTw" id="6BNByWjan5P" role="37wK5m">
                 <ref role="3cqZAo" node="5pm8$ZezCJx" resolve="modl" />

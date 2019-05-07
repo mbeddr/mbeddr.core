@@ -229,7 +229,7 @@
                                             </node>
                                           </node>
                                           <node concept="liA8E" id="4X7wieqNyf8" role="2OqNvi">
-                                            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                                            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                                             <node concept="Xl_RD" id="4X7wieqNBsA" role="37wK5m">
                                               <property role="Xl_RC" value="p[0-9]+" />
                                             </node>

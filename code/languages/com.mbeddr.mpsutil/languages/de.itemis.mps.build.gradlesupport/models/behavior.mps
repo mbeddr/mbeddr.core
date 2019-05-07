@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -154,7 +154,7 @@
               <ref role="3uigEE" to="18ew:~MacroHelper" resolve="MacroHelper" />
             </node>
             <node concept="2YIFZM" id="5sirwxf_TCI" role="33vP2m">
-              <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(org.jetbrains.mps.openapi.module.SModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
+              <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(org.jetbrains.mps.openapi.module.SModule)" resolve="forModule" />
               <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
               <node concept="2OqwBi" id="702JZvVbmnW" role="37wK5m">
                 <node concept="2JrnkZ" id="702JZvVbmgU" role="2Oq$k0">
@@ -166,7 +166,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="702JZvVbmva" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                 </node>
               </node>
             </node>
@@ -178,7 +178,7 @@
               <ref role="3cqZAo" node="5sirwxf_IR6" resolve="moduleMacros" />
             </node>
             <node concept="liA8E" id="702JZvVbmSt" role="2OqNvi">
-              <ref role="37wK5l" to="18ew:~MacroHelper.shrinkPath(java.lang.String):java.lang.String" resolve="shrinkPath" />
+              <ref role="37wK5l" to="18ew:~MacroHelper.shrinkPath(java.lang.String)" resolve="shrinkPath" />
               <node concept="37vLTw" id="702JZvVbmTE" role="37wK5m">
                 <ref role="3cqZAo" node="702JZvVbdF1" resolve="localPath" />
               </node>

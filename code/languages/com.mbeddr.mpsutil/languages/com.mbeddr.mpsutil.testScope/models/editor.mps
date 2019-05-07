@@ -184,7 +184,7 @@
                     <node concept="2yIwOk" id="Uhkfo4GdoQ" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="Uhkfo4GdFL" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>

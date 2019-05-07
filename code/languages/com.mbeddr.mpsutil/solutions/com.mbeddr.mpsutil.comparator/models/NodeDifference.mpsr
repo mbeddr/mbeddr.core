@@ -327,7 +327,7 @@
               <node concept="2yIwOk" id="6fymoI4XrqU" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="6fymoI4XrqV" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
             </node>
           </node>
         </node>
@@ -377,7 +377,7 @@
               <node concept="2yIwOk" id="6fymoI4Xrlq" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="6fymoI4Xrlr" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
             </node>
           </node>
         </node>
@@ -411,7 +411,7 @@
                         <ref role="3VsUkX" node="DYlgnA$AQM" resolve="ChildDifference" />
                       </node>
                       <node concept="liA8E" id="DYlgnA$vtF" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName()" resolve="getSimpleName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="DYlgnA$vtG" role="3uHU7B">
@@ -463,7 +463,7 @@
                         <ref role="3VsUkX" node="DYlgnAAHoa" resolve="PropertyDifference" />
                       </node>
                       <node concept="liA8E" id="DYlgnA$vu2" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName()" resolve="getSimpleName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="DYlgnA$vu3" role="3uHU7B">
@@ -515,7 +515,7 @@
                         <ref role="3VsUkX" node="DYlgnAAPA1" resolve="ReferenceDifference" />
                       </node>
                       <node concept="liA8E" id="DYlgnA$vup" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName()" resolve="getSimpleName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="DYlgnA$vuq" role="3uHU7B">

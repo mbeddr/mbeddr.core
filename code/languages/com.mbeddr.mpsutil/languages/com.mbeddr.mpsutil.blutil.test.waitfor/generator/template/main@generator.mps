@@ -185,7 +185,7 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -325,7 +325,7 @@
                                 <node concept="3clFbF" id="3anL894T_jj" role="3cqZAp">
                                   <node concept="2YIFZM" id="3anL894T_sr" role="3clFbG">
                                     <ref role="1Pybhc" to="u132:~Assert" resolve="Assert" />
-                                    <ref role="37wK5l" to="u132:~Assert.fail(java.lang.String):void" resolve="fail" />
+                                    <ref role="37wK5l" to="u132:~Assert.fail(java.lang.String)" resolve="fail" />
                                     <node concept="3cpWs3" id="4IjegxhA18m" role="37wK5m">
                                       <node concept="Xl_RD" id="692cUnf6U8x" role="3uHU7w">
                                         <property role="Xl_RC" value="message" />
@@ -403,7 +403,7 @@
                               <ref role="3cqZAo" node="3anL894Tu9U" resolve="checkTimer" />
                             </node>
                             <node concept="liA8E" id="3anL894TCHW" role="2OqNvi">
-                              <ref role="37wK5l" to="dxuu:~Timer.stop():void" resolve="stop" />
+                              <ref role="37wK5l" to="dxuu:~Timer.stop()" resolve="stop" />
                             </node>
                           </node>
                         </node>
@@ -413,7 +413,7 @@
                               <ref role="3cqZAo" node="3anL894Txpy" resolve="timeoutTimer" />
                             </node>
                             <node concept="liA8E" id="3anL894TEk8" role="2OqNvi">
-                              <ref role="37wK5l" to="dxuu:~Timer.stop():void" resolve="stop" />
+                              <ref role="37wK5l" to="dxuu:~Timer.stop()" resolve="stop" />
                             </node>
                           </node>
                         </node>
@@ -423,7 +423,7 @@
                               <ref role="3cqZAo" node="3anL894Tu9U" resolve="checkTimer" />
                             </node>
                             <node concept="liA8E" id="3anL894U2EL" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Object.notifyAll():void" resolve="notifyAll" />
+                              <ref role="37wK5l" to="wyt6:~Object.notifyAll()" resolve="notifyAll" />
                             </node>
                           </node>
                         </node>
@@ -469,7 +469,7 @@
                               <ref role="3cqZAo" node="3anL894Tu9U" resolve="checkTimer" />
                             </node>
                             <node concept="liA8E" id="3anL894TuCu" role="2OqNvi">
-                              <ref role="37wK5l" to="dxuu:~Timer.restart():void" resolve="restart" />
+                              <ref role="37wK5l" to="dxuu:~Timer.restart()" resolve="restart" />
                             </node>
                           </node>
                         </node>
@@ -509,7 +509,7 @@
                                     <ref role="3cqZAo" node="3anL894Tu9U" resolve="checkTimer" />
                                   </node>
                                   <node concept="liA8E" id="3anL894TvxS" role="2OqNvi">
-                                    <ref role="37wK5l" to="dxuu:~Timer.stop():void" resolve="stop" />
+                                    <ref role="37wK5l" to="dxuu:~Timer.stop()" resolve="stop" />
                                   </node>
                                 </node>
                               </node>
@@ -519,7 +519,7 @@
                                     <ref role="3cqZAo" node="3anL894Txpy" resolve="timeoutTimer" />
                                   </node>
                                   <node concept="liA8E" id="3anL894T$PM" role="2OqNvi">
-                                    <ref role="37wK5l" to="dxuu:~Timer.stop():void" resolve="stop" />
+                                    <ref role="37wK5l" to="dxuu:~Timer.stop()" resolve="stop" />
                                   </node>
                                 </node>
                               </node>
@@ -529,7 +529,7 @@
                                     <ref role="3cqZAo" node="3anL894Tu9U" resolve="checkTimer" />
                                   </node>
                                   <node concept="liA8E" id="3anL894U28v" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Object.notifyAll():void" resolve="notifyAll" />
+                                    <ref role="37wK5l" to="wyt6:~Object.notifyAll()" resolve="notifyAll" />
                                   </node>
                                 </node>
                               </node>
@@ -568,7 +568,7 @@
               <ref role="3cqZAo" node="3anL894Txpy" resolve="timeoutTimer" />
             </node>
             <node concept="liA8E" id="3anL894Tyql" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~Timer.start():void" resolve="start" />
+              <ref role="37wK5l" to="dxuu:~Timer.start()" resolve="start" />
             </node>
           </node>
         </node>
@@ -578,7 +578,7 @@
               <ref role="3cqZAo" node="3anL894Tu9U" resolve="checkTimer" />
             </node>
             <node concept="liA8E" id="3anL894TmFo" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~Timer.start():void" resolve="start" />
+              <ref role="37wK5l" to="dxuu:~Timer.start()" resolve="start" />
             </node>
           </node>
         </node>
@@ -600,10 +600,10 @@
                         <node concept="2OqwBi" id="4IjegxhpURW" role="3uHU7w">
                           <node concept="2YIFZM" id="4IjegxhpURX" role="2Oq$k0">
                             <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                            <ref role="37wK5l" to="wyt6:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
+                            <ref role="37wK5l" to="wyt6:~Thread.currentThread()" resolve="currentThread" />
                           </node>
                           <node concept="liA8E" id="4IjegxhpURY" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Thread.getName():java.lang.String" resolve="getName" />
+                            <ref role="37wK5l" to="wyt6:~Thread.getName()" resolve="getName" />
                           </node>
                         </node>
                       </node>
@@ -614,7 +614,7 @@
                           <ref role="3cqZAo" node="3anL894Tu9U" resolve="checkTimer" />
                         </node>
                         <node concept="liA8E" id="3anL894U5FC" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.wait(long):void" resolve="wait" />
+                          <ref role="37wK5l" to="wyt6:~Object.wait(long)" resolve="wait" />
                           <node concept="37vLTw" id="4IjegxhnORH" role="37wK5m">
                             <ref role="3cqZAo" node="3anL894TtJU" resolve="checkInterval" />
                           </node>
@@ -627,7 +627,7 @@
                       <ref role="3cqZAo" node="3anL894Txpy" resolve="timeoutTimer" />
                     </node>
                     <node concept="liA8E" id="4IjegxhnO7E" role="2OqNvi">
-                      <ref role="37wK5l" to="dxuu:~Timer.isRunning():boolean" resolve="isRunning" />
+                      <ref role="37wK5l" to="dxuu:~Timer.isRunning()" resolve="isRunning" />
                     </node>
                   </node>
                 </node>
@@ -661,7 +661,7 @@
               <ref role="3cqZAo" node="4Ijegxhm7$d" resolve="onceBackToJunit" />
             </node>
             <node concept="liA8E" id="4IjegxhmeMW" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Runnable.run():void" resolve="run" />
+              <ref role="37wK5l" to="wyt6:~Runnable.run()" resolve="run" />
             </node>
           </node>
         </node>
