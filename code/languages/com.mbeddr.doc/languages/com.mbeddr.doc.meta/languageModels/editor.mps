@@ -492,18 +492,18 @@
                                   </node>
                                   <node concept="2YIFZM" id="aiIotXkKkR" role="33vP2m">
                                     <ref role="1Pybhc" to="rvbb:~ProjectPane" resolve="ProjectPane" />
-                                    <ref role="37wK5l" to="rvbb:~ProjectPane.getInstance(jetbrains.mps.project.Project):jetbrains.mps.ide.projectPane.ProjectPane" resolve="getInstance" />
+                                    <ref role="37wK5l" to="rvbb:~ProjectPane.getInstance(jetbrains.mps.project.Project)" resolve="getInstance" />
                                     <node concept="2OqwBi" id="aiIotXkKkS" role="37wK5m">
                                       <node concept="2OqwBi" id="aiIotXkKkT" role="2Oq$k0">
                                         <node concept="37vLTw" id="aiIotXl2uK" role="2Oq$k0">
                                           <ref role="3cqZAo" node="aiIotXl2uH" resolve="edContext" />
                                         </node>
                                         <node concept="liA8E" id="aiIotXkKkV" role="2OqNvi">
-                                          <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                                          <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="aiIotXkKkW" role="2OqNvi">
-                                        <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                                        <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
                                       </node>
                                     </node>
                                   </node>
@@ -541,13 +541,13 @@
                                       <ref role="3cqZAo" node="aiIotXkVUK" resolve="moduleRef" />
                                     </node>
                                     <node concept="liA8E" id="aiIotXlicX" role="2OqNvi">
-                                      <ref role="37wK5l" to="lui2:~SModuleReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.module.SModule" resolve="resolve" />
+                                      <ref role="37wK5l" to="lui2:~SModuleReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                                       <node concept="2OqwBi" id="aiIotXlicY" role="37wK5m">
                                         <node concept="37vLTw" id="aiIotXlicZ" role="2Oq$k0">
                                           <ref role="3cqZAo" node="aiIotXl2uH" resolve="edContext" />
                                         </node>
                                         <node concept="liA8E" id="aiIotXlid0" role="2OqNvi">
-                                          <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                          <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                                         </node>
                                       </node>
                                     </node>
@@ -562,7 +562,7 @@
                                         <ref role="3cqZAo" node="aiIotXkKkQ" resolve="instance" />
                                       </node>
                                       <node concept="liA8E" id="aiIotXkLAz" role="2OqNvi">
-                                        <ref role="37wK5l" to="rvbb:~ProjectPane.selectModule(org.jetbrains.mps.openapi.module.SModule,boolean):void" resolve="selectModule" />
+                                        <ref role="37wK5l" to="rvbb:~ProjectPane.selectModule(org.jetbrains.mps.openapi.module.SModule,boolean)" resolve="selectModule" />
                                         <node concept="37vLTw" id="aiIotXlid1" role="37wK5m">
                                           <ref role="3cqZAo" node="aiIotXlicU" resolve="resolve" />
                                         </node>
@@ -587,7 +587,7 @@
                               <ref role="3cqZAo" node="aiIotXl2uH" resolve="edContext" />
                             </node>
                             <node concept="liA8E" id="5hwpDXA2kf0" role="2OqNvi">
-                              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                             </node>
                           </node>
                         </node>

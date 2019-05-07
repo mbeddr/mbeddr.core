@@ -225,15 +225,15 @@
                   <node concept="2OqwBi" id="3OiIliPRxs4" role="2Oq$k0">
                     <node concept="1XNTG" id="2mAwexAtC4C" role="2Oq$k0" />
                     <node concept="liA8E" id="3OiIliPRxs6" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3OiIliPRxs7" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                    <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3OiIliPRxs8" role="2OqNvi">
-                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection():jetbrains.mps.openapi.editor.selection.Selection" resolve="getSelection" />
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
                 </node>
               </node>
             </node>
@@ -303,7 +303,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2mAwexAtCn3" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
               </node>
             </node>
           </node>
@@ -349,7 +349,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="2mAwexAtNLk" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="37vLTw" id="5Hxjapw9v6a" role="37wK5m">
                             <ref role="3cqZAo" node="2mAwexAtCmI" resolve="word" />
                           </node>
@@ -371,7 +371,7 @@
             <node concept="3clFbF" id="6c8wWdNZ6UL" role="3cqZAp">
               <node concept="2YIFZM" id="6c8wWdNZfsK" role="3clFbG">
                 <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                <ref role="37wK5l" to="jkm4:~Messages.showInfoMessage(java.lang.String,java.lang.String):void" resolve="showInfoMessage" />
+                <ref role="37wK5l" to="jkm4:~Messages.showInfoMessage(java.lang.String,java.lang.String)" resolve="showInfoMessage" />
                 <node concept="3cpWs3" id="14uWAurihOV" role="37wK5m">
                   <node concept="Xl_RD" id="14uWAurihOY" role="3uHU7w">
                     <property role="Xl_RC" value=" not found" />
@@ -490,15 +490,15 @@
                   <node concept="2OqwBi" id="3EwB7OlCGjA" role="2Oq$k0">
                     <node concept="1XNTG" id="3EwB7OlCGjB" role="2Oq$k0" />
                     <node concept="liA8E" id="3EwB7OlCGjC" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3EwB7OlCGjD" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                    <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3EwB7OlCGjE" role="2OqNvi">
-                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection():jetbrains.mps.openapi.editor.selection.Selection" resolve="getSelection" />
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
                 </node>
               </node>
             </node>
@@ -568,7 +568,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="3EwB7OlCGk7" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
               </node>
             </node>
           </node>

@@ -141,7 +141,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7rXn3flJGyQ" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                     <node concept="Xl_RD" id="7rXn3flJGyR" role="37wK5m">
                       <property role="Xl_RC" value=" " />
                     </node>
