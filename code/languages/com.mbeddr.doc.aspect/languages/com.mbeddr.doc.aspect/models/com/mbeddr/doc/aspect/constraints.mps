@@ -232,7 +232,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5CkU_dHijvR" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                 </node>
               </node>
             </node>
@@ -282,7 +282,7 @@
                   <ref role="3cqZAo" node="5CkU_dHijvM" resolve="module" />
                 </node>
                 <node concept="liA8E" id="5CkU_dHijwc" role="2OqNvi">
-                  <ref role="37wK5l" to="lui2:~SModule.getDeclaredDependencies():java.lang.Iterable" resolve="getDeclaredDependencies" />
+                  <ref role="37wK5l" to="lui2:~SModule.getDeclaredDependencies()" resolve="getDeclaredDependencies" />
                 </node>
               </node>
             </node>
@@ -303,7 +303,7 @@
                       <ref role="2Gs0qQ" node="5CkU_dHijwe" resolve="dependency" />
                     </node>
                     <node concept="liA8E" id="5CkU_dHijwl" role="2OqNvi">
-                      <ref role="37wK5l" to="lui2:~SDependency.getTarget():org.jetbrains.mps.openapi.module.SModule" resolve="getTarget" />
+                      <ref role="37wK5l" to="lui2:~SDependency.getTarget()" resolve="getTarget" />
                     </node>
                   </node>
                 </node>
@@ -365,7 +365,7 @@
                               <ref role="3cqZAo" node="5CkU_dHijwM" resolve="it" />
                             </node>
                             <node concept="liA8E" id="5CkU_dHijwL" role="2OqNvi">
-                              <ref role="37wK5l" to="w1kc:~Language.getStructureModelDescriptor():org.jetbrains.mps.openapi.model.SModel" resolve="getStructureModelDescriptor" />
+                              <ref role="37wK5l" to="w1kc:~Language.getStructureModelDescriptor()" resolve="getStructureModelDescriptor" />
                             </node>
                           </node>
                         </node>
