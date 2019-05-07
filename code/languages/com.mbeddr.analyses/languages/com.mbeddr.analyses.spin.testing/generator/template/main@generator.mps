@@ -476,7 +476,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5CkU_dHj3rP" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="3_1$Yv" id="1eEm1HSGloQ" role="3_9lra">

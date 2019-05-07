@@ -602,7 +602,7 @@
               <ref role="3cqZAo" to="ood5:7F8$WoW31Ww" resolve="pi" />
             </node>
             <node concept="liA8E" id="2Tj16Eu$cDK" role="2OqNvi">
-              <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String):void" resolve="setText" />
+              <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String)" resolve="setText" />
               <node concept="3cpWs3" id="6ks7ICU8NGh" role="37wK5m">
                 <node concept="37vLTw" id="6ks7ICU8OcZ" role="3uHU7B">
                   <ref role="3cqZAo" node="6mJYm3jfgk_" resolve="userFriendlyAnalysisName" />
@@ -964,11 +964,11 @@
                             <ref role="2Gs0qQ" node="6K_09qB7G7v" resolve="f" />
                           </node>
                           <node concept="liA8E" id="6K_09qB7LkG" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                            <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                           </node>
                         </node>
                         <node concept="liA8E" id="6K_09qB7Qei" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="6K_09qB7GIh" role="3uHU7B">
@@ -1391,7 +1391,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="qlnqgPYkkS" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                     <node concept="Xl_RD" id="qlnqgPYkkT" role="37wK5m">
                       <property role="Xl_RC" value="." />
                     </node>
@@ -1455,7 +1455,7 @@
                                 <node concept="10Oyi0" id="73dW7J6vZg_" role="1tU5fm" />
                                 <node concept="2YIFZM" id="73dW7J6wngq" role="33vP2m">
                                   <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-                                  <ref role="37wK5l" to="wyt6:~Math.round(float):int" resolve="round" />
+                                  <ref role="37wK5l" to="wyt6:~Math.round(float)" resolve="round" />
                                   <node concept="FJ1c_" id="73dW7J6wngr" role="37wK5m">
                                     <node concept="1eOMI4" id="6llWi9L3nvx" role="3uHU7w">
                                       <node concept="10QFUN" id="6llWi9L3nvu" role="1eOMHV">
@@ -2143,7 +2143,7 @@
                     <ref role="3cqZAo" node="mb65_hzT9e" resolve="e" />
                   </node>
                   <node concept="liA8E" id="mb65_hzXAf" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -2174,7 +2174,7 @@
                       <ref role="3cqZAo" node="mb65_hzT9e" resolve="e" />
                     </node>
                     <node concept="liA8E" id="69N9a9ZNK0f" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="69N9a9ZNK0g" role="37vLTJ">
@@ -2245,7 +2245,7 @@
               <ref role="3cqZAo" node="6ks7ICU_P_N" resolve="claimDescription" />
             </node>
             <node concept="liA8E" id="M7_V6uBqkl" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
               <node concept="Xl_RD" id="M7_V6uBqpd" role="37wK5m">
                 <property role="Xl_RC" value="error label " />
               </node>

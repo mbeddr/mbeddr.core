@@ -257,7 +257,7 @@
               <node concept="2OqwBi" id="6ODCss37mLR" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37mLS" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37mLT" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhD4A" role="37wK5m">
@@ -317,7 +317,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2NphfZ26sPu" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="Xl_RD" id="2NphfZ26sQ5" role="37wK5m">
                 <property role="Xl_RC" value="division by zero in" />
               </node>
@@ -448,7 +448,7 @@
               <node concept="2OqwBi" id="6ODCss37n4L" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37n4M" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37n4N" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhD4B" role="37wK5m">
@@ -558,7 +558,7 @@
               <node concept="2OqwBi" id="6ODCss37oHz" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37oH$" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37oH_" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhGev" role="37wK5m">
@@ -710,7 +710,7 @@
               <node concept="2OqwBi" id="6ODCss37uVf" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37uVg" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37uVh" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhMOz" role="37wK5m">
@@ -859,7 +859,7 @@
               <node concept="2OqwBi" id="6ODCss37q94" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37q95" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37q96" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhHDk" role="37wK5m">
@@ -1004,7 +1004,7 @@
               <node concept="2OqwBi" id="6ODCss37pii" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37pij" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37pik" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhGN4" role="37wK5m">
@@ -1129,7 +1129,7 @@
               <node concept="2OqwBi" id="6ODCss37pC3" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37pC4" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37pC5" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhHae" role="37wK5m">
@@ -1346,7 +1346,7 @@
               <node concept="2OqwBi" id="6ODCss37whN" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37whO" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37whP" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhOxx" role="37wK5m">
@@ -1644,7 +1644,7 @@
               <node concept="2OqwBi" id="6ODCss37nR9" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37nRa" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37nRb" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhEJL" role="37wK5m">
@@ -1822,7 +1822,7 @@
               <node concept="2OqwBi" id="6ODCss37ocX" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37ocY" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37ocZ" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhFj3" role="37wK5m">
@@ -1978,7 +1978,7 @@
               <node concept="2OqwBi" id="6ODCss37ubX" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37ubY" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37ubZ" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhM2k" role="37wK5m">
@@ -2066,7 +2066,7 @@
               <ref role="3cqZAo" node="2mQeHrXgtPd" resolve="msg" />
             </node>
             <node concept="liA8E" id="DaB78DgIbA" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="37vLTw" id="DaB78DgId7" role="37wK5m">
                 <ref role="3cqZAo" node="DaB78DgGFu" resolve="error" />
               </node>
@@ -2154,7 +2154,7 @@
               <node concept="2OqwBi" id="6ODCss37syk" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37syl" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37sym" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhKar" role="37wK5m">
@@ -2287,7 +2287,7 @@
               <node concept="2OqwBi" id="6ODCss37t1A" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37t1B" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37t1C" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="6KXBYUq_A9y" role="37wK5m">
@@ -2551,7 +2551,7 @@
               <node concept="2OqwBi" id="6ODCss37rph" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37rpi" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37rpj" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhJk5" role="37wK5m">
@@ -2673,7 +2673,7 @@
               <node concept="2OqwBi" id="6ODCss37jbE" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37iTa" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37klg" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhRt1" role="37wK5m">
@@ -2802,7 +2802,7 @@
                     <ref role="3cqZAo" node="43x69gbETfg" resolve="cygwinMsg" />
                   </node>
                   <node concept="liA8E" id="43x69gbEXQ9" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbEYWo" role="37wK5m">
                       <node concept="37vLTw" id="43x69gbEYU9" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIjMyn" resolve="res0" />
@@ -2818,7 +2818,7 @@
                     <ref role="3cqZAo" node="43x69gbETyO" resolve="linuxMsg" />
                   </node>
                   <node concept="liA8E" id="43x69gbF1tI" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF1TL" role="37wK5m">
                       <node concept="37vLTw" id="43x69gbF1Kb" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIjMyn" resolve="res0" />
@@ -2916,7 +2916,7 @@
               <node concept="2OqwBi" id="6ODCss37lGG" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37lGH" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37lGI" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="5EwdfGVhSRX" role="37wK5m">
@@ -3044,7 +3044,7 @@
                     <ref role="3cqZAo" node="43x69gbF6b2" resolve="cygwinMsg0" />
                   </node>
                   <node concept="liA8E" id="43x69gbF6bs" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF6bt" role="37wK5m">
                       <node concept="37vLTw" id="43x69gbF6bu" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIlkj5" resolve="res0" />
@@ -3060,7 +3060,7 @@
                     <ref role="3cqZAo" node="43x69gbF6b6" resolve="linuxMsg0" />
                   </node>
                   <node concept="liA8E" id="43x69gbF6by" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF6bz" role="37wK5m">
                       <node concept="37vLTw" id="43x69gbF6b$" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIlkj5" resolve="res0" />
@@ -3173,7 +3173,7 @@
                     <ref role="3cqZAo" node="43x69gbF8$b" resolve="cygwinMsg1" />
                   </node>
                   <node concept="liA8E" id="43x69gbF8$_" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF8$A" role="37wK5m">
                       <node concept="37vLTw" id="5kHkJcGKjOd" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIk1t4" resolve="res1" />
@@ -3189,7 +3189,7 @@
                     <ref role="3cqZAo" node="43x69gbF8$f" resolve="linuxMsg1" />
                   </node>
                   <node concept="liA8E" id="43x69gbF8$F" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF8$G" role="37wK5m">
                       <node concept="37vLTw" id="5kHkJcGKjSD" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIk1t4" resolve="res1" />

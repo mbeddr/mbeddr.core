@@ -1050,7 +1050,7 @@
               <ref role="3cqZAo" node="2lN4cj_MEyJ" resolve="lhs" />
             </node>
             <node concept="liA8E" id="4ATA_JBl4d_" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="37vLTw" id="4ATA_JBlkV$" role="37wK5m">
                 <ref role="3cqZAo" node="4ATA_JBl866" resolve="MAJOR_STATE_LHS_PREFIX_MARKER" />
               </node>

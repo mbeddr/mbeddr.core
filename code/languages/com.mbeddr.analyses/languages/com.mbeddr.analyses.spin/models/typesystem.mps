@@ -740,7 +740,7 @@
               <ref role="3cqZAo" node="3tIDuP5ttMl" resolve="desiredNameOfPanExecutable" />
             </node>
             <node concept="liA8E" id="3tIDuP5toOq" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="2OqwBi" id="7Rf0$0HCP9a" role="37wK5m">
                 <node concept="1YBJjd" id="7Rf0$0HCP9b" role="2Oq$k0">
                   <ref role="1YBMHb" node="7Rf0$0HCP9d" resolve="spinExecutable" />
@@ -1079,7 +1079,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="4l47ydyll8B" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="Xl_RD" id="4l47ydyll8C" role="37wK5m">
                       <property role="Xl_RC" value="clang" />
                     </node>
@@ -1097,7 +1097,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="4l47ydylkS5" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="Xl_RD" id="4l47ydylkS6" role="37wK5m">
                       <property role="Xl_RC" value="clang-cl" />
                     </node>
@@ -1137,7 +1137,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4l47ydyllFt" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                   <node concept="Xl_RD" id="4l47ydyllFu" role="37wK5m">
                     <property role="Xl_RC" value="-fsanitize=undefined" />
                   </node>
@@ -1176,7 +1176,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="57K12X7W2Ev" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                   <node concept="Xl_RD" id="57K12X7W2Ew" role="37wK5m">
                     <property role="Xl_RC" value="-ftrap-function=sanitizer_trap" />
                   </node>
@@ -1264,7 +1264,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="57K12X7W4rx" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="Xl_RD" id="57K12X7W4ry" role="37wK5m">
                       <property role="Xl_RC" value="clang" />
                     </node>

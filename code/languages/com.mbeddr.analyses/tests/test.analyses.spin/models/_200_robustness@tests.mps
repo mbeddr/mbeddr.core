@@ -131,7 +131,7 @@
                 <node concept="2OqwBi" id="1ieRNjmuZHt" role="37wK5m">
                   <node concept="1jxXqW" id="1ieRNjmuZa5" role="2Oq$k0" />
                   <node concept="liA8E" id="1ieRNjmv1wT" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="4l47ydye$l1" role="37wK5m">

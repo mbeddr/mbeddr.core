@@ -4,7 +4,7 @@
   <languages>
     <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="-1" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="223dd778-c44f-4ef3-9535-7aa7d12244a6" name="com.mbeddr.core.debug" version="-1" />
@@ -870,7 +870,7 @@
                                 <node concept="3clFbF" id="5B6zmQubhh5" role="3cqZAp">
                                   <node concept="2YIFZM" id="5B6zmQubhh6" role="3clFbG">
                                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                                    <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                                    <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                                     <node concept="2OqwBi" id="5B6zmQubhh7" role="37wK5m">
                                       <node concept="2OqwBi" id="5B6zmQubhh8" role="2Oq$k0">
                                         <node concept="30H73N" id="5B6zmQubhh9" role="2Oq$k0" />
@@ -945,7 +945,7 @@
                                 <node concept="3clFbF" id="7MMcIPltT07" role="3cqZAp">
                                   <node concept="2YIFZM" id="7MMcIPltT08" role="3clFbG">
                                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                                    <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                                    <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                                     <node concept="2OqwBi" id="7MMcIPltT09" role="37wK5m">
                                       <node concept="2OqwBi" id="7MMcIPltT0a" role="2Oq$k0">
                                         <node concept="1PxgMI" id="7MMcIPltT0b" role="2Oq$k0">
@@ -2117,7 +2117,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="7MMcIPlvHjl" role="2OqNvi">
-                                  <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+                                  <ref role="37wK5l" to="xlxw:~BigInteger.intValue()" resolve="intValue" />
                                 </node>
                               </node>
                             </node>
@@ -2156,7 +2156,7 @@
                                               <ref role="2pJxcJ" to="mj1l:1UQ4qqfV3yK" resolve="value" />
                                               <node concept="2YIFZM" id="7MMcIPlwB91" role="2pJxcZ">
                                                 <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                                                <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                                                <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                                                 <node concept="37vLTw" id="7MMcIPlwCvH" role="37wK5m">
                                                   <ref role="3cqZAo" node="7MMcIPlvO0q" resolve="i" />
                                                 </node>

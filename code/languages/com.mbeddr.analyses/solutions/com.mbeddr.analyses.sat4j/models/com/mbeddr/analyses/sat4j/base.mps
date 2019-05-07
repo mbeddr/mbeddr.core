@@ -260,7 +260,7 @@
                 <ref role="37wK5l" to="2jy7:~GateTranslator.&lt;init&gt;(org.sat4j.specs.ISolver)" resolve="GateTranslator" />
                 <node concept="2YIFZM" id="4hqHmbTBBrR" role="37wK5m">
                   <ref role="1Pybhc" to="st0e:~SolverFactory" resolve="SolverFactory" />
-                  <ref role="37wK5l" to="st0e:~SolverFactory.newDefault():org.sat4j.pb.IPBSolver" resolve="newDefault" />
+                  <ref role="37wK5l" to="st0e:~SolverFactory.newDefault()" resolve="newDefault" />
                 </node>
               </node>
             </node>
@@ -287,7 +287,7 @@
               <ref role="3cqZAo" node="6i3Vykmb159" resolve="solver" />
             </node>
             <node concept="liA8E" id="2hSqXWTFecQ" role="2OqNvi">
-              <ref role="37wK5l" to="2jy7:~SolverDecorator.newVar(int):int" resolve="newVar" />
+              <ref role="37wK5l" to="2jy7:~SolverDecorator.newVar(int)" resolve="newVar" />
               <node concept="37vLTw" id="4hqHmbTDdH0" role="37wK5m">
                 <ref role="3cqZAo" node="4hqHmbTD9OU" resolve="numberOfVariables" />
               </node>
@@ -300,7 +300,7 @@
               <ref role="3cqZAo" node="6i3Vykmb159" resolve="solver" />
             </node>
             <node concept="liA8E" id="2hSqXWTFhRJ" role="2OqNvi">
-              <ref role="37wK5l" to="2jy7:~SolverDecorator.setExpectedNumberOfClauses(int):void" resolve="setExpectedNumberOfClauses" />
+              <ref role="37wK5l" to="2jy7:~SolverDecorator.setExpectedNumberOfClauses(int)" resolve="setExpectedNumberOfClauses" />
               <node concept="37vLTw" id="4hqHmbTDdL9" role="37wK5m">
                 <ref role="3cqZAo" node="4hqHmbTDa8T" resolve="expectedNumberOfClauses" />
               </node>
@@ -338,7 +338,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="tSjOfAbGmb" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="tSjOfAbGDj" role="37wK5m">
                     <node concept="37vLTw" id="3KT4CxIENZo" role="3uHU7w">
                       <ref role="3cqZAo" node="tSjOfAdr_i" resolve="userFriendlyExplanation" />
@@ -352,7 +352,7 @@
                           <ref role="3cqZAo" node="tSjOfA2Kp8" resolve="vars" />
                         </node>
                         <node concept="liA8E" id="tSjOfAbHdz" role="2OqNvi">
-                          <ref role="37wK5l" to="oqkb:~VecInt.toString():java.lang.String" resolve="toString" />
+                          <ref role="37wK5l" to="oqkb:~VecInt.toString()" resolve="toString" />
                         </node>
                       </node>
                     </node>
@@ -373,7 +373,7 @@
                   <ref role="3cqZAo" node="6i3Vykmb159" resolve="solver" />
                 </node>
                 <node concept="liA8E" id="tSjOfA2KoS" role="2OqNvi">
-                  <ref role="37wK5l" to="2jy7:~GroupClauseSelectorSolver.addControlableClause(org.sat4j.specs.IVecInt,int):org.sat4j.specs.IConstr" resolve="addControlableClause" />
+                  <ref role="37wK5l" to="2jy7:~GroupClauseSelectorSolver.addControlableClause(org.sat4j.specs.IVecInt,int)" resolve="addControlableClause" />
                   <node concept="37vLTw" id="tSjOfA2M0c" role="37wK5m">
                     <ref role="3cqZAo" node="tSjOfA2Kp8" resolve="vars" />
                   </node>
@@ -401,7 +401,7 @@
                     <ref role="3cqZAo" node="tSjOfA2KoZ" resolve="e" />
                   </node>
                   <node concept="liA8E" id="tSjOfA2Kp5" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -550,14 +550,14 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="44j14BH51D2" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="44j14BH51D3" role="37wK5m">
                     <node concept="2OqwBi" id="44j14BH51D4" role="3uHU7w">
                       <node concept="37vLTw" id="44j14BH51D5" role="2Oq$k0">
                         <ref role="3cqZAo" node="44j14BH51Dx" resolve="m" />
                       </node>
                       <node concept="liA8E" id="44j14BH51D6" role="2OqNvi">
-                        <ref role="37wK5l" to="oqkb:~VecInt.toString():java.lang.String" resolve="toString" />
+                        <ref role="37wK5l" to="oqkb:~VecInt.toString()" resolve="toString" />
                       </node>
                     </node>
                     <node concept="3cpWs3" id="44j14BH51D7" role="3uHU7B">
@@ -591,7 +591,7 @@
                   <ref role="3cqZAo" node="tSjOfAcIyl" resolve="gt" />
                 </node>
                 <node concept="liA8E" id="44j14BH51Di" role="2OqNvi">
-                  <ref role="37wK5l" to="2jy7:~GateTranslator.xor(int,org.sat4j.specs.IVecInt):org.sat4j.specs.IConstr[]" resolve="xor" />
+                  <ref role="37wK5l" to="2jy7:~GateTranslator.xor(int,org.sat4j.specs.IVecInt)" resolve="xor" />
                   <node concept="37vLTw" id="44j14BH51Dj" role="37wK5m">
                     <ref role="3cqZAo" node="44j14BH51Dv" resolve="r" />
                   </node>
@@ -616,7 +616,7 @@
                     <ref role="3cqZAo" node="44j14BH51Dm" resolve="e" />
                   </node>
                   <node concept="liA8E" id="44j14BH51Ds" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -653,14 +653,14 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="tSjOfAbNfL" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="tSjOfAbQ3P" role="37wK5m">
                     <node concept="2OqwBi" id="tSjOfAbQvZ" role="3uHU7w">
                       <node concept="37vLTw" id="tSjOfAbQrM" role="2Oq$k0">
                         <ref role="3cqZAo" node="tSjOfA2mDD" resolve="m" />
                       </node>
                       <node concept="liA8E" id="tSjOfAbQQE" role="2OqNvi">
-                        <ref role="37wK5l" to="oqkb:~VecInt.toString():java.lang.String" resolve="toString" />
+                        <ref role="37wK5l" to="oqkb:~VecInt.toString()" resolve="toString" />
                       </node>
                     </node>
                     <node concept="3cpWs3" id="tSjOfAbOOL" role="3uHU7B">
@@ -694,7 +694,7 @@
                   <ref role="3cqZAo" node="tSjOfAcIyl" resolve="gt" />
                 </node>
                 <node concept="liA8E" id="tSjOfA2kHC" role="2OqNvi">
-                  <ref role="37wK5l" to="2jy7:~GateTranslator.and(int,org.sat4j.specs.IVecInt):org.sat4j.specs.IConstr[]" resolve="and" />
+                  <ref role="37wK5l" to="2jy7:~GateTranslator.and(int,org.sat4j.specs.IVecInt)" resolve="and" />
                   <node concept="37vLTw" id="tSjOfA2n_4" role="37wK5m">
                     <ref role="3cqZAo" node="tSjOfA2m7b" resolve="r" />
                   </node>
@@ -719,7 +719,7 @@
                     <ref role="3cqZAo" node="tSjOfA2kHJ" resolve="e" />
                   </node>
                   <node concept="liA8E" id="tSjOfA2kHP" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -756,14 +756,14 @@
                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                 </node>
                 <node concept="liA8E" id="44j14BH5amx" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="44j14BH5amy" role="37wK5m">
                     <node concept="2OqwBi" id="44j14BH5amz" role="3uHU7w">
                       <node concept="37vLTw" id="44j14BH5am$" role="2Oq$k0">
                         <ref role="3cqZAo" node="44j14BH5an0" resolve="m" />
                       </node>
                       <node concept="liA8E" id="44j14BH5am_" role="2OqNvi">
-                        <ref role="37wK5l" to="oqkb:~VecInt.toString():java.lang.String" resolve="toString" />
+                        <ref role="37wK5l" to="oqkb:~VecInt.toString()" resolve="toString" />
                       </node>
                     </node>
                     <node concept="3cpWs3" id="44j14BH5amA" role="3uHU7B">
@@ -797,7 +797,7 @@
                   <ref role="3cqZAo" node="tSjOfAcIyl" resolve="gt" />
                 </node>
                 <node concept="liA8E" id="44j14BH5amL" role="2OqNvi">
-                  <ref role="37wK5l" to="2jy7:~GateTranslator.or(int,org.sat4j.specs.IVecInt):org.sat4j.specs.IConstr[]" resolve="or" />
+                  <ref role="37wK5l" to="2jy7:~GateTranslator.or(int,org.sat4j.specs.IVecInt)" resolve="or" />
                   <node concept="37vLTw" id="44j14BH5amM" role="37wK5m">
                     <ref role="3cqZAo" node="44j14BH5amY" resolve="r" />
                   </node>
@@ -822,7 +822,7 @@
                     <ref role="3cqZAo" node="44j14BH5amP" resolve="e" />
                   </node>
                   <node concept="liA8E" id="44j14BH5amV" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -859,7 +859,7 @@
                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                 </node>
                 <node concept="liA8E" id="44j14BH5zU_" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="44j14BH5zUA" role="37wK5m">
                     <node concept="37vLTw" id="44j14BH5zUC" role="3uHU7w">
                       <ref role="3cqZAo" node="44j14BH5zV4" resolve="m" />
@@ -895,7 +895,7 @@
                   <ref role="3cqZAo" node="tSjOfAcIyl" resolve="gt" />
                 </node>
                 <node concept="liA8E" id="44j14BH5zUP" role="2OqNvi">
-                  <ref role="37wK5l" to="2jy7:~GateTranslator.not(int,int):org.sat4j.specs.IConstr[]" resolve="not" />
+                  <ref role="37wK5l" to="2jy7:~GateTranslator.not(int,int)" resolve="not" />
                   <node concept="37vLTw" id="44j14BH5zUQ" role="37wK5m">
                     <ref role="3cqZAo" node="44j14BH5zV2" resolve="r" />
                   </node>
@@ -920,7 +920,7 @@
                     <ref role="3cqZAo" node="44j14BH5zUT" resolve="e" />
                   </node>
                   <node concept="liA8E" id="44j14BH5zUZ" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -1028,7 +1028,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="44j14BH6kg3" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="44j14BH6kg4" role="37wK5m">
                 <property role="Xl_RC" value="Model: " />
               </node>
@@ -1046,7 +1046,7 @@
                 <ref role="3cqZAo" node="6i3Vykmb159" resolve="solver" />
               </node>
               <node concept="liA8E" id="44j14BH6ply" role="2OqNvi">
-                <ref role="37wK5l" to="2jy7:~GroupClauseSelectorSolver.model():int[]" resolve="model" />
+                <ref role="37wK5l" to="2jy7:~GroupClauseSelectorSolver.model()" resolve="model" />
               </node>
             </node>
           </node>
@@ -1060,7 +1060,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="44j14BH6q7Z" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String)" resolve="print" />
                   <node concept="3cpWs3" id="44j14BH6qvd" role="37wK5m">
                     <node concept="AH0OO" id="44j14BH6qFT" role="3uHU7B">
                       <node concept="37vLTw" id="44j14BH6rop" role="AHEQo">

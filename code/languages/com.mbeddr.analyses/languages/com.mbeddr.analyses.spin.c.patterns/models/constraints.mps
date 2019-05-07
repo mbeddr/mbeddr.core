@@ -396,11 +396,11 @@
             <node concept="2OqwBi" id="1GXRyrT9KR6" role="2Oq$k0">
               <node concept="2DD5aU" id="1GXRyrT9KR7" role="2Oq$k0" />
               <node concept="liA8E" id="1GXRyrT9LBN" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="1GXRyrT9MRJ" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="1GXRyrT9N81" role="37wK5m">
                 <property role="Xl_RC" value="TestNodeAnnotation" />
               </node>
@@ -458,7 +458,7 @@
                       <node concept="2OqwBi" id="79i$vAY7sm7" role="10QFUP">
                         <node concept="2DA6wF" id="79i$vAY7sm8" role="2Oq$k0" />
                         <node concept="liA8E" id="79i$vAY7sm9" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+                          <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode()" resolve="getDeclarationNode" />
                         </node>
                       </node>
                       <node concept="3Tqbb2" id="79i$vAY7sma" role="10QFUM">
@@ -473,7 +473,7 @@
               </node>
             </node>
             <node concept="liA8E" id="79i$vAY7slT" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="79i$vAY7slU" role="37wK5m">
                 <property role="Xl_RC" value="vals" />
               </node>
@@ -1461,7 +1461,7 @@
               <node concept="2OqwBi" id="7TvvPtSxhQH" role="3clFbw">
                 <node concept="2DA6wF" id="7TvvPtSxhQI" role="2Oq$k0" />
                 <node concept="liA8E" id="7TvvPtSxmQh" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                   <node concept="359W_D" id="7TvvPtSxn5w" role="37wK5m">
                     <ref role="359W_E" to="llb3:7TvvPtSxhGb" resolve="CombinatorialEntry" />
                     <ref role="359W_F" to="llb3:1BFQdmKhVV8" resolve="vals" />

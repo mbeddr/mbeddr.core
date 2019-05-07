@@ -144,7 +144,7 @@
             <node concept="2OqwBi" id="3$vwvl9YfXz" role="33vP2m">
               <node concept="1jxXqW" id="3$vwvl9YfX$" role="2Oq$k0" />
               <node concept="liA8E" id="3$vwvl9YfX_" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -261,7 +261,7 @@
             <node concept="2OqwBi" id="3$vwvl9UJoA" role="33vP2m">
               <node concept="1jxXqW" id="3$vwvl9UJoB" role="2Oq$k0" />
               <node concept="liA8E" id="3$vwvl9UJoC" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -371,7 +371,7 @@
             <node concept="2OqwBi" id="3$vwvl9UJaf" role="33vP2m">
               <node concept="1jxXqW" id="3$vwvl9UJag" role="2Oq$k0" />
               <node concept="liA8E" id="3$vwvl9UJah" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -486,7 +486,7 @@
               <node concept="2OqwBi" id="3$vwvl9Vt55" role="37wK5m">
                 <node concept="1jxXqW" id="3$vwvl9VsR1" role="2Oq$k0" />
                 <node concept="liA8E" id="3$vwvl9Vu56" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="1X8myJOVGUb" role="37wK5m">

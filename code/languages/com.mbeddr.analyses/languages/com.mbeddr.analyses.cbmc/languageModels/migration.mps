@@ -1845,7 +1845,7 @@
               <ref role="3cqZAo" node="6fP9ZN5mg6m" resolve="m" />
             </node>
             <node concept="liA8E" id="6fP9ZN5mglV" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
           <node concept="3clFbS" id="6fP9ZN5mglW" role="2LFqv$">

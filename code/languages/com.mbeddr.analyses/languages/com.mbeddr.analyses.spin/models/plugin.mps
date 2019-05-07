@@ -286,7 +286,7 @@
     <node concept="15KeUm" id="5zgShfbCrkR" role="15LFul">
       <property role="TrG5h" value="callSpinMake" />
       <property role="2w7fpF" value="PASSTHRU" />
-      <ref role="15KeVY" to="sjfu:5zgShfbCrkR" resolve="callMake" />
+      <ref role="15KeVY" to="sjfu:5zgShfbCrkR" resolve="runMake" />
       <node concept="1aIAsN" id="6KI2Y3Z6tuf" role="1aI7mi">
         <property role="TrG5h" value="Parameters" />
         <node concept="2lGYhJ" id="2bw4b0LZGaq" role="2pHZQ9">
@@ -340,7 +340,7 @@
                       <ref role="2bn25l" to="sjfu:bq6A3e6cTK" resolve="collectPaths" />
                     </node>
                     <node concept="2sxana" id="5zgShfbCz40" role="2OqNvi">
-                      <ref role="2sxfKC" to="sjfu:bq6A3e6cUj" resolve="pathes" />
+                      <ref role="2sxfKC" to="sjfu:bq6A3e6cUj" resolve="paths" />
                     </node>
                   </node>
                   <node concept="3zZkjj" id="5zgShfbCz41" role="2OqNvi">
@@ -367,7 +367,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="5zgShfbCz4d" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                              <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                             </node>
                           </node>
                         </node>
@@ -673,7 +673,7 @@
                           <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
                         </node>
                         <node concept="liA8E" id="5zgShfbCz4P" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~ProcessBuilder.directory(java.io.File):java.lang.ProcessBuilder" resolve="directory" />
+                          <ref role="37wK5l" to="wyt6:~ProcessBuilder.directory(java.io.File)" resolve="directory" />
                           <node concept="2ShNRf" id="5zgShfbCz4Q" role="37wK5m">
                             <node concept="1pGfFk" id="5zgShfbCz4R" role="2ShVmc">
                               <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
@@ -696,7 +696,7 @@
                           <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
                         </node>
                         <node concept="liA8E" id="5zgShfbCz4Y" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~ProcessBuilder.redirectErrorStream(boolean):java.lang.ProcessBuilder" resolve="redirectErrorStream" />
+                          <ref role="37wK5l" to="wyt6:~ProcessBuilder.redirectErrorStream(boolean)" resolve="redirectErrorStream" />
                           <node concept="3clFbT" id="5zgShfbCz4Z" role="37wK5m">
                             <property role="3clFbU" value="true" />
                           </node>
@@ -715,7 +715,7 @@
                             <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
                           </node>
                           <node concept="liA8E" id="5zgShfbCz55" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~ProcessBuilder.start():java.lang.Process" resolve="start" />
+                            <ref role="37wK5l" to="wyt6:~ProcessBuilder.start()" resolve="start" />
                           </node>
                         </node>
                       </node>
@@ -733,7 +733,7 @@
                           <ref role="3uigEE" to="5zyv:~ExecutorService" resolve="ExecutorService" />
                         </node>
                         <node concept="2YIFZM" id="3NVVczyswTU" role="33vP2m">
-                          <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int):java.util.concurrent.ExecutorService" resolve="newFixedThreadPool" />
+                          <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int)" resolve="newFixedThreadPool" />
                           <ref role="1Pybhc" to="5zyv:~Executors" resolve="Executors" />
                           <node concept="3cmrfG" id="3NVVczyswTZ" role="37wK5m">
                             <property role="3cmrfH" value="2" />
@@ -755,7 +755,7 @@
                                 <ref role="3cqZAo" node="5zgShfbCz51" resolve="process" />
                               </node>
                               <node concept="liA8E" id="3NVVczxG8je" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Process.getInputStream():java.io.InputStream" resolve="getInputStream" />
+                                <ref role="37wK5l" to="wyt6:~Process.getInputStream()" resolve="getInputStream" />
                               </node>
                             </node>
                             <node concept="2GrUjf" id="3NVVczxIIY$" role="37wK5m">
@@ -779,7 +779,7 @@
                                 <ref role="3cqZAo" node="5zgShfbCz51" resolve="process" />
                               </node>
                               <node concept="liA8E" id="3NVVczxG9X8" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Process.getErrorStream():java.io.InputStream" resolve="getErrorStream" />
+                                <ref role="37wK5l" to="wyt6:~Process.getErrorStream()" resolve="getErrorStream" />
                               </node>
                             </node>
                             <node concept="2GrUjf" id="3NVVczxILrz" role="37wK5m">
@@ -810,14 +810,14 @@
                                 <ref role="3cqZAo" node="3NVVczysmaT" resolve="executor" />
                               </node>
                               <node concept="liA8E" id="4OhLxls2DXX" role="2OqNvi">
-                                <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.util.concurrent.Callable):java.util.concurrent.Future" resolve="submit" />
+                                <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.util.concurrent.Callable)" resolve="submit" />
                                 <node concept="37vLTw" id="4OhLxls2DXY" role="37wK5m">
                                   <ref role="3cqZAo" node="3NVVczxG3d_" resolve="standardInputWriter" />
                                 </node>
                               </node>
                             </node>
                             <node concept="liA8E" id="4OhLxls2DXZ" role="2OqNvi">
-                              <ref role="37wK5l" to="5zyv:~Future.get():java.lang.Object" resolve="get" />
+                              <ref role="37wK5l" to="5zyv:~Future.get()" resolve="get" />
                             </node>
                           </node>
                         </node>
@@ -843,14 +843,14 @@
                                 <ref role="3cqZAo" node="3NVVczysmaT" resolve="executor" />
                               </node>
                               <node concept="liA8E" id="4OhLxls2GGZ" role="2OqNvi">
-                                <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.util.concurrent.Callable):java.util.concurrent.Future" resolve="submit" />
+                                <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.util.concurrent.Callable)" resolve="submit" />
                                 <node concept="37vLTw" id="4OhLxls2J_$" role="37wK5m">
                                   <ref role="3cqZAo" node="3NVVczxG9X2" resolve="standardErrorWriter" />
                                 </node>
                               </node>
                             </node>
                             <node concept="liA8E" id="4OhLxls2GH1" role="2OqNvi">
-                              <ref role="37wK5l" to="5zyv:~Future.get():java.lang.Object" resolve="get" />
+                              <ref role="37wK5l" to="5zyv:~Future.get()" resolve="get" />
                             </node>
                           </node>
                         </node>
@@ -865,7 +865,7 @@
                             <ref role="3cqZAo" node="5zgShfbCz51" resolve="process" />
                           </node>
                           <node concept="liA8E" id="4OhLxlrFtrM" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Process.waitFor():int" resolve="waitFor" />
+                            <ref role="37wK5l" to="wyt6:~Process.waitFor()" resolve="waitFor" />
                           </node>
                         </node>
                       </node>
@@ -937,7 +937,7 @@
                                 <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
                               </node>
                               <node concept="liA8E" id="6VqaxF9P9n1" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~ProcessBuilder.command():java.util.List" resolve="command" />
+                                <ref role="37wK5l" to="wyt6:~ProcessBuilder.command()" resolve="command" />
                               </node>
                             </node>
                             <node concept="3cpWs3" id="6VqaxF9P61J" role="3uHU7B">
@@ -952,7 +952,7 @@
                                         <ref role="3cqZAo" node="5zgShfbCz51" resolve="process" />
                                       </node>
                                       <node concept="liA8E" id="5zgShfbCz6F" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~Process.exitValue():int" resolve="exitValue" />
+                                        <ref role="37wK5l" to="wyt6:~Process.exitValue()" resolve="exitValue" />
                                       </node>
                                     </node>
                                   </node>
@@ -1013,7 +1013,7 @@
                                   <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
                                 </node>
                                 <node concept="liA8E" id="5mK2hjZ_aFN" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~ProcessBuilder.command():java.util.List" resolve="command" />
+                                  <ref role="37wK5l" to="wyt6:~ProcessBuilder.command()" resolve="command" />
                                 </node>
                               </node>
                             </node>
@@ -1051,7 +1051,7 @@
                               <ref role="3cqZAo" node="5zgShfbCz6Y" resolve="ex" />
                             </node>
                             <node concept="liA8E" id="3cN5OOfBeX6" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                              <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                             </node>
                           </node>
                         </node>
@@ -1112,13 +1112,13 @@
       <ref role="1Mm5Yu" to="tpcq:5L5h3brvz7i" resolve="Generate" />
     </node>
     <node concept="3HPw9p" id="43FRfGKh4T9" role="1Mm5TH">
-      <ref role="1Mm5Yu" to="sjfu:bq6A3e6cTE" resolve="runMake" />
+      <ref role="1Mm5Yu" to="sjfu:bq6A3e6cTE" resolve="RunMake" />
     </node>
     <node concept="3HPw9p" id="2bw4b0LYHfC" role="1Mm5TH">
       <ref role="1Mm5Yu" to="fy8e:taepSZ9r$V" resolve="Make" />
     </node>
     <node concept="1Mm_lO" id="43FRfGKor33" role="1Mm5Yj">
-      <ref role="1Mm5Yu" to="sjfu:bq6A3e6cTE" resolve="runMake" />
+      <ref role="1Mm5Yu" to="sjfu:bq6A3e6cTE" resolve="RunMake" />
     </node>
   </node>
   <node concept="2DaZZR" id="1ptFCtLu4MQ" />

@@ -409,7 +409,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1BFQdmJZaNv" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="1BFQdmJZaZ5" role="37wK5m">
                 <property role="Xl_RC" value="UnMatched" />
               </node>
@@ -432,7 +432,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="1BFQdmJZduy" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="Xl_RD" id="1BFQdmJZdyC" role="37wK5m">
                   <property role="Xl_RC" value="StackOnly" />
                 </node>

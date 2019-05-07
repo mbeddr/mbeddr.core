@@ -364,7 +364,7 @@
               <ref role="3uigEE" to="w1kc:~SModelRepository" resolve="SModelRepository" />
             </node>
             <node concept="2YIFZM" id="3Ts5Ln3Nfvg" role="33vP2m">
-              <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
+              <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
             </node>
           </node>
@@ -377,7 +377,7 @@
                   <ref role="3cqZAo" node="3Ts5Ln3Nfve" resolve="repo" />
                 </node>
                 <node concept="liA8E" id="3Ts5Ln3Nfvm" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptorsByModelName(java.lang.String):java.util.List" resolve="getModelDescriptorsByModelName" />
+                  <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptorsByModelName(java.lang.String)" resolve="getModelDescriptorsByModelName" />
                   <node concept="2OqwBi" id="3Ts5Ln3Nfvn" role="37wK5m">
                     <node concept="2OqwBi" id="3Ts5Ln3Nfvo" role="2Oq$k0">
                       <node concept="13iPFW" id="3Ts5Ln3Nfvp" role="2Oq$k0" />
@@ -392,11 +392,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="3Ts5Ln3Nfvs" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.iterator():java.util.Iterator" resolve="iterator" />
+                <ref role="37wK5l" to="33ny:~List.iterator()" resolve="iterator" />
               </node>
             </node>
             <node concept="liA8E" id="3Ts5Ln3Nfvt" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+              <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
             </node>
           </node>
         </node>
@@ -589,7 +589,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="30nlpkLbJUB" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                         <node concept="Xl_RD" id="30nlpkLbJUC" role="37wK5m">
                                           <property role="Xl_RC" value="Function" />
                                         </node>
@@ -655,7 +655,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="30nlpkLbEbr" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                       <node concept="Xl_RD" id="30nlpkLbEbs" role="37wK5m">
                                         <property role="Xl_RC" value="FunctionCall" />
                                       </node>
@@ -793,7 +793,7 @@
         <node concept="1pGfFk" id="47q1D3Sthrd" role="2ShVmc">
           <ref role="37wK5l" to="33ny:~Random.&lt;init&gt;(long)" resolve="Random" />
           <node concept="2YIFZM" id="47q1D3SthsQ" role="37wK5m">
-            <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+            <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
             <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
           </node>
         </node>
@@ -812,7 +812,7 @@
               <ref role="3cqZAo" node="47q1D3StfST" resolve="rnd" />
             </node>
             <node concept="liA8E" id="47q1D3SthVh" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+              <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
               <node concept="37vLTw" id="47q1D3SthWn" role="37wK5m">
                 <ref role="3cqZAo" node="47q1D3SthvC" resolve="upper" />
               </node>
@@ -865,9 +865,9 @@
                 </node>
               </node>
               <node concept="liA8E" id="52eR6w5PolT" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~SModuleReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.module.SModule" resolve="resolve" />
+                <ref role="37wK5l" to="lui2:~SModuleReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                 <node concept="2YIFZM" id="52eR6w5PolU" role="37wK5m">
-                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
                   <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                 </node>
               </node>
@@ -951,7 +951,7 @@
               <ref role="3cqZAo" node="52eR6w5PolK" resolve="module" />
             </node>
             <node concept="liA8E" id="52eR6w5PpE0" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>

@@ -355,7 +355,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="3$vwvl9U_XI" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
               </node>
@@ -466,7 +466,7 @@
                   <ref role="3cqZAo" node="tSjOfAgvpD" resolve="tool" />
                 </node>
                 <node concept="liA8E" id="1ptFCtLsc8W" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="1ptFCtLsc8X" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -483,7 +483,7 @@
                     <ref role="3cqZAo" node="561jPQnmxkF" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="561jPQnmynv" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="561jPQnmy9p" role="RRSow">
@@ -545,7 +545,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="3$vwvl9Ux2Z" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
               </node>
@@ -657,7 +657,7 @@
                   <ref role="3cqZAo" node="1X8myJONsA4" resolve="tool" />
                 </node>
                 <node concept="liA8E" id="1X8myJONsAj" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="1X8myJONsAk" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -674,7 +674,7 @@
                     <ref role="3cqZAo" node="561jPQnmyMr" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="561jPQnmzi2" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="561jPQnmz6j" role="RRSow">
@@ -747,7 +747,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="3$vwvl9TkOJ" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                       </node>
                     </node>
                   </node>
@@ -816,7 +816,7 @@
                   <ref role="3cqZAo" node="44j14BH2NQ_" resolve="moduleConsistencyTool" />
                 </node>
                 <node concept="liA8E" id="44j14BH2NQO" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="44j14BH2NQP" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -833,7 +833,7 @@
                     <ref role="3cqZAo" node="561jPQnmEId" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="561jPQnmEIb" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="561jPQnmEIc" role="RRSow">
@@ -1078,7 +1078,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="3$vwvl9Vsr6" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="1X8myJOEqck" role="37wK5m">
@@ -1130,7 +1130,7 @@
                   <ref role="3cqZAo" node="1X8myJOEqcF" resolve="moduleConsistencyTool" />
                 </node>
                 <node concept="liA8E" id="1X8myJOEqd2" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="1X8myJOEqd3" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -1147,7 +1147,7 @@
                     <ref role="3cqZAo" node="561jPQnmC$g" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="561jPQnmC$e" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="561jPQnmC$f" role="RRSow">
@@ -1301,7 +1301,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="3$vwvl9W6Py" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="1X8myJOL9pL" role="37wK5m">
@@ -1365,7 +1365,7 @@
                   <ref role="3cqZAo" node="1X8myJOL9pQ" resolve="moduleConsistencyTool" />
                 </node>
                 <node concept="liA8E" id="1X8myJOL9qd" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="1X8myJOL9qe" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -1382,7 +1382,7 @@
                     <ref role="3cqZAo" node="561jPQnmBs0" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="561jPQnmBrY" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="561jPQnmBrZ" role="RRSow">
@@ -1475,7 +1475,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4XJOimFOgKK" role="2OqNvi">
-              <ref role="37wK5l" to="31cb:~SModuleBase.getModels():java.util.List" resolve="getModels" />
+              <ref role="37wK5l" to="31cb:~SModuleBase.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>
@@ -1559,7 +1559,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="3$vwvl9W1x2" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="1X8myJOV2oT" role="37wK5m">
@@ -1611,7 +1611,7 @@
                   <ref role="3cqZAo" node="1X8myJOV2oY" resolve="moduleConsistencyTool" />
                 </node>
                 <node concept="liA8E" id="1X8myJOV2pr" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="1X8myJOV2ps" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -1628,7 +1628,7 @@
                     <ref role="3cqZAo" node="561jPQnmFQ_" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="561jPQnmGC0" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="561jPQnmGhP" role="RRSow">

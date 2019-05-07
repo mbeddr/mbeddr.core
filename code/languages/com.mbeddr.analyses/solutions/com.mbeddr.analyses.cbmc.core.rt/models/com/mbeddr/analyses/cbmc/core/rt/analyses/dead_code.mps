@@ -811,11 +811,11 @@
           <node concept="3cpWs3" id="3x0R1LJ5Dp9" role="3cqZAk">
             <node concept="2OqwBi" id="3x0R1LJ5Dpa" role="3uHU7w">
               <node concept="liA8E" id="3x0R1LJ5Dpb" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
               </node>
               <node concept="2OqwBi" id="3x0R1LJ5Dpc" role="2Oq$k0">
                 <node concept="liA8E" id="3x0R1LJ5Dpd" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                 </node>
                 <node concept="2JrnkZ" id="3x0R1LJ5Dpe" role="2Oq$k0">
                   <node concept="37vLTw" id="3x0R1LJ5Dpf" role="2JrQYb">
@@ -847,7 +847,7 @@
         <node concept="3cpWs6" id="4QaxHTo8Y$9" role="3cqZAp">
           <node concept="2OqwBi" id="4QaxHTo8Y$b" role="3cqZAk">
             <node concept="liA8E" id="4QaxHTo91i7" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="37vLTw" id="4QaxHTolR60" role="37wK5m">
                 <ref role="3cqZAo" node="4QaxHTolQN7" resolve="DEADCODE_LABEL_PREFIX" />
               </node>
@@ -1123,7 +1123,7 @@
                     <node concept="2yIwOk" id="4ZlDVnYUWl0" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="4ZlDVnYV0vD" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                     <node concept="35c_gC" id="4ZlDVnYVHjQ" role="37wK5m">
                       <ref role="35c_gD" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
                     </node>

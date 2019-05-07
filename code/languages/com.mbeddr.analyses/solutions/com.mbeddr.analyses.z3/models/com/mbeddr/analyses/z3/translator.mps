@@ -278,7 +278,7 @@
                           <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="1x37AUT1Uqd" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkAnd(com.microsoft.z3.BoolExpr...):com.microsoft.z3.BoolExpr" resolve="mkAnd" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkAnd(com.microsoft.z3.BoolExpr...)" resolve="mkAnd" />
                           <node concept="10QFUN" id="1x37AUT1Uqe" role="37wK5m">
                             <node concept="3uibUv" id="1x37AUT1UEx" role="10QFUM">
                               <ref role="3uigEE" to="f7eu:~BoolExpr" resolve="BoolExpr" />
@@ -312,7 +312,7 @@
                           <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="7r_y3MyB1vd" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkOr(com.microsoft.z3.BoolExpr...):com.microsoft.z3.BoolExpr" resolve="mkOr" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkOr(com.microsoft.z3.BoolExpr...)" resolve="mkOr" />
                           <node concept="10QFUN" id="7r_y3MyB1ve" role="37wK5m">
                             <node concept="3uibUv" id="7r_y3MyB1vf" role="10QFUM">
                               <ref role="3uigEE" to="f7eu:~BoolExpr" resolve="BoolExpr" />
@@ -346,7 +346,7 @@
                           <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="4gj0JzkUXe" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkLt(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr):com.microsoft.z3.BoolExpr" resolve="mkLt" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkLt(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr)" resolve="mkLt" />
                           <node concept="10QFUN" id="4gj0JzlcN3" role="37wK5m">
                             <node concept="3uibUv" id="4gj0Jzld3p" role="10QFUM">
                               <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
@@ -380,7 +380,7 @@
                           <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="74nUgMber8r" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkLe(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr):com.microsoft.z3.BoolExpr" resolve="mkLe" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkLe(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr)" resolve="mkLe" />
                           <node concept="10QFUN" id="74nUgMber8s" role="37wK5m">
                             <node concept="3uibUv" id="74nUgMber8t" role="10QFUM">
                               <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
@@ -414,7 +414,7 @@
                           <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="74nUgMberof" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkGt(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr):com.microsoft.z3.BoolExpr" resolve="mkGt" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkGt(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr)" resolve="mkGt" />
                           <node concept="10QFUN" id="74nUgMberog" role="37wK5m">
                             <node concept="3uibUv" id="74nUgMberoh" role="10QFUM">
                               <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
@@ -448,7 +448,7 @@
                           <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="74nUgMberot" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkGe(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr):com.microsoft.z3.BoolExpr" resolve="mkGe" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkGe(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr)" resolve="mkGe" />
                           <node concept="10QFUN" id="74nUgMberou" role="37wK5m">
                             <node concept="3uibUv" id="74nUgMberov" role="10QFUM">
                               <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
@@ -482,7 +482,7 @@
                           <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="2SerBSMpW1i" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkEq(com.microsoft.z3.Expr,com.microsoft.z3.Expr):com.microsoft.z3.BoolExpr" resolve="mkEq" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkEq(com.microsoft.z3.Expr,com.microsoft.z3.Expr)" resolve="mkEq" />
                           <node concept="10QFUN" id="2SerBSMpW1j" role="37wK5m">
                             <node concept="3uibUv" id="2SerBSMpW1k" role="10QFUM">
                               <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
@@ -516,13 +516,13 @@
                           <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="2SerBSMq035" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkNot(com.microsoft.z3.BoolExpr):com.microsoft.z3.BoolExpr" resolve="mkNot" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkNot(com.microsoft.z3.BoolExpr)" resolve="mkNot" />
                           <node concept="2OqwBi" id="2SerBSMpWlf" role="37wK5m">
                             <node concept="37vLTw" id="2SerBSMpWlg" role="2Oq$k0">
                               <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                             </node>
                             <node concept="liA8E" id="2SerBSMpWlh" role="2OqNvi">
-                              <ref role="37wK5l" to="f7eu:~Context.mkEq(com.microsoft.z3.Expr,com.microsoft.z3.Expr):com.microsoft.z3.BoolExpr" resolve="mkEq" />
+                              <ref role="37wK5l" to="f7eu:~Context.mkEq(com.microsoft.z3.Expr,com.microsoft.z3.Expr)" resolve="mkEq" />
                               <node concept="10QFUN" id="2SerBSMpWli" role="37wK5m">
                                 <node concept="3uibUv" id="2SerBSMpWlj" role="10QFUM">
                                   <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
@@ -607,7 +607,7 @@
                           <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="7r_y3MyAB$p" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkNot(com.microsoft.z3.BoolExpr):com.microsoft.z3.BoolExpr" resolve="mkNot" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkNot(com.microsoft.z3.BoolExpr)" resolve="mkNot" />
                           <node concept="10QFUN" id="7r_y3MyAB$q" role="37wK5m">
                             <node concept="3uibUv" id="7r_y3MyAB$r" role="10QFUM">
                               <ref role="3uigEE" to="f7eu:~BoolExpr" resolve="BoolExpr" />
@@ -660,7 +660,7 @@
                       <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="4gj0JzpiM0" role="2OqNvi">
-                      <ref role="37wK5l" to="f7eu:~Context.mkConst(java.lang.String,com.microsoft.z3.Sort):com.microsoft.z3.Expr" resolve="mkConst" />
+                      <ref role="37wK5l" to="f7eu:~Context.mkConst(java.lang.String,com.microsoft.z3.Sort)" resolve="mkConst" />
                       <node concept="2OqwBi" id="4gj0JzpjAG" role="37wK5m">
                         <node concept="2OqwBi" id="4gj0Jzpj6D" role="2Oq$k0">
                           <node concept="aMNgE" id="4gj0JzpiTm" role="2Oq$k0" />
@@ -699,7 +699,7 @@
                       <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="1x37AUT20qS" role="2OqNvi">
-                      <ref role="37wK5l" to="f7eu:~Context.mkNumeral(java.lang.String,com.microsoft.z3.Sort):com.microsoft.z3.Expr" resolve="mkNumeral" />
+                      <ref role="37wK5l" to="f7eu:~Context.mkNumeral(java.lang.String,com.microsoft.z3.Sort)" resolve="mkNumeral" />
                       <node concept="2OqwBi" id="1x37AUT20Tq" role="37wK5m">
                         <node concept="aMNgE" id="1x37AUT20BU" role="2Oq$k0" />
                         <node concept="3TrcHB" id="1x37AUT2jrq" role="2OqNvi">
@@ -748,7 +748,7 @@
                     <node concept="2yIwOk" id="4gj0JzlgFG" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="4gj0JzlhyN" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -818,7 +818,7 @@
                     <ref role="3cqZAo" node="4gj0JzpkZv" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="1C$6YK6JZxg" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Context.mkIntSort():com.microsoft.z3.IntSort" resolve="mkIntSort" />
+                    <ref role="37wK5l" to="f7eu:~Context.mkIntSort()" resolve="mkIntSort" />
                   </node>
                 </node>
               </node>
@@ -835,7 +835,7 @@
                     <ref role="3cqZAo" node="4gj0JzpkZv" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="2SerBSMpQoB" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Context.mkIntSort():com.microsoft.z3.IntSort" resolve="mkIntSort" />
+                    <ref role="37wK5l" to="f7eu:~Context.mkIntSort()" resolve="mkIntSort" />
                   </node>
                 </node>
               </node>
@@ -852,7 +852,7 @@
                     <ref role="3cqZAo" node="4gj0JzpkZv" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="5uyAK6LiIp3" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Context.mkFPSortSingle():com.microsoft.z3.FPSort" resolve="mkFPSortSingle" />
+                    <ref role="37wK5l" to="f7eu:~Context.mkFPSortSingle()" resolve="mkFPSortSingle" />
                   </node>
                 </node>
               </node>
@@ -869,7 +869,7 @@
                     <ref role="3cqZAo" node="4gj0JzpkZv" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="1C$6YK6K38K" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Context.mkFPSortDouble():com.microsoft.z3.FPSort" resolve="mkFPSortDouble" />
+                    <ref role="37wK5l" to="f7eu:~Context.mkFPSortDouble()" resolve="mkFPSortDouble" />
                   </node>
                 </node>
               </node>
@@ -897,7 +897,7 @@
                       <node concept="2yIwOk" id="5uyAK6LiG1p" role="2OqNvi" />
                     </node>
                     <node concept="liA8E" id="5uyAK6LiGt1" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                     </node>
                   </node>
                 </node>
@@ -1010,7 +1010,7 @@
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="3E9Q9iDLUK8" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="3E9Q9iDLUK9" role="37wK5m">
                 <node concept="2OqwBi" id="3E9Q9iDM3Ol" role="3uHU7w">
                   <node concept="37vLTw" id="3E9Q9iDM1Bf" role="2Oq$k0">
@@ -1039,7 +1039,7 @@
                 <ref role="3cqZAo" node="4gj0JzplWT" resolve="ctx" />
               </node>
               <node concept="liA8E" id="4gj0JzplWD" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Context.mkSymbol(java.lang.String):com.microsoft.z3.StringSymbol" resolve="mkSymbol" />
+                <ref role="37wK5l" to="f7eu:~Context.mkSymbol(java.lang.String)" resolve="mkSymbol" />
                 <node concept="2OqwBi" id="4gj0JzplWE" role="37wK5m">
                   <node concept="37vLTw" id="4gj0JzplWF" role="2Oq$k0">
                     <ref role="3cqZAo" node="4gj0JzplWV" resolve="vd" />
@@ -1074,7 +1074,7 @@
               <ref role="3cqZAo" node="4gj0JzplWT" resolve="ctx" />
             </node>
             <node concept="liA8E" id="4gj0JzplWK" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Context.mkConstDecl(com.microsoft.z3.Symbol,com.microsoft.z3.Sort):com.microsoft.z3.FuncDecl" resolve="mkConstDecl" />
+              <ref role="37wK5l" to="f7eu:~Context.mkConstDecl(com.microsoft.z3.Symbol,com.microsoft.z3.Sort)" resolve="mkConstDecl" />
               <node concept="37vLTw" id="4gj0JzplWL" role="37wK5m">
                 <ref role="3cqZAo" node="4gj0JzplW_" resolve="varSym" />
               </node>
@@ -1392,7 +1392,7 @@
                 <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
               </node>
               <node concept="liA8E" id="2UFYCfZGViY" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Context.mkGe(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr):com.microsoft.z3.BoolExpr" resolve="mkGe" />
+                <ref role="37wK5l" to="f7eu:~Context.mkGe(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr)" resolve="mkGe" />
                 <node concept="10QFUN" id="2UFYCfZGViZ" role="37wK5m">
                   <node concept="3uibUv" id="2UFYCfZGVj0" role="10QFUM">
                     <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
@@ -1402,7 +1402,7 @@
                       <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="2UFYCfZGVj3" role="2OqNvi">
-                      <ref role="37wK5l" to="f7eu:~Context.mkConst(java.lang.String,com.microsoft.z3.Sort):com.microsoft.z3.Expr" resolve="mkConst" />
+                      <ref role="37wK5l" to="f7eu:~Context.mkConst(java.lang.String,com.microsoft.z3.Sort)" resolve="mkConst" />
                       <node concept="2OqwBi" id="2UFYCfZGVj4" role="37wK5m">
                         <node concept="37vLTw" id="2UFYCfZGVj5" role="2Oq$k0">
                           <ref role="3cqZAo" node="5uyAK6LiOJB" resolve="vd" />
@@ -1416,7 +1416,7 @@
                           <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="2UFYCfZGVj9" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkIntSort():com.microsoft.z3.IntSort" resolve="mkIntSort" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkIntSort()" resolve="mkIntSort" />
                         </node>
                       </node>
                     </node>
@@ -1431,7 +1431,7 @@
                       <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="2UFYCfZGVje" role="2OqNvi">
-                      <ref role="37wK5l" to="f7eu:~Context.mkNumeral(java.lang.String,com.microsoft.z3.Sort):com.microsoft.z3.Expr" resolve="mkNumeral" />
+                      <ref role="37wK5l" to="f7eu:~Context.mkNumeral(java.lang.String,com.microsoft.z3.Sort)" resolve="mkNumeral" />
                       <node concept="37vLTw" id="2UFYCfZGVjf" role="37wK5m">
                         <ref role="3cqZAo" node="5uyAK6LiOTX" resolve="lower" />
                       </node>
@@ -1440,7 +1440,7 @@
                           <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="2UFYCfZGVji" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkIntSort():com.microsoft.z3.IntSort" resolve="mkIntSort" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkIntSort()" resolve="mkIntSort" />
                         </node>
                       </node>
                     </node>
@@ -1461,7 +1461,7 @@
                 <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
               </node>
               <node concept="liA8E" id="2UFYCfZGVNc" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Context.mkLe(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr):com.microsoft.z3.BoolExpr" resolve="mkLe" />
+                <ref role="37wK5l" to="f7eu:~Context.mkLe(com.microsoft.z3.ArithExpr,com.microsoft.z3.ArithExpr)" resolve="mkLe" />
                 <node concept="10QFUN" id="2UFYCfZGVNd" role="37wK5m">
                   <node concept="3uibUv" id="2UFYCfZGVNe" role="10QFUM">
                     <ref role="3uigEE" to="f7eu:~ArithExpr" resolve="ArithExpr" />
@@ -1471,7 +1471,7 @@
                       <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="2UFYCfZGVNh" role="2OqNvi">
-                      <ref role="37wK5l" to="f7eu:~Context.mkConst(java.lang.String,com.microsoft.z3.Sort):com.microsoft.z3.Expr" resolve="mkConst" />
+                      <ref role="37wK5l" to="f7eu:~Context.mkConst(java.lang.String,com.microsoft.z3.Sort)" resolve="mkConst" />
                       <node concept="2OqwBi" id="2UFYCfZGVNi" role="37wK5m">
                         <node concept="37vLTw" id="2UFYCfZGVNj" role="2Oq$k0">
                           <ref role="3cqZAo" node="5uyAK6LiOJB" resolve="vd" />
@@ -1485,7 +1485,7 @@
                           <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="2UFYCfZGVNn" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkIntSort():com.microsoft.z3.IntSort" resolve="mkIntSort" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkIntSort()" resolve="mkIntSort" />
                         </node>
                       </node>
                     </node>
@@ -1500,7 +1500,7 @@
                       <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="2UFYCfZGVNs" role="2OqNvi">
-                      <ref role="37wK5l" to="f7eu:~Context.mkNumeral(java.lang.String,com.microsoft.z3.Sort):com.microsoft.z3.Expr" resolve="mkNumeral" />
+                      <ref role="37wK5l" to="f7eu:~Context.mkNumeral(java.lang.String,com.microsoft.z3.Sort)" resolve="mkNumeral" />
                       <node concept="37vLTw" id="2UFYCfZGVNt" role="37wK5m">
                         <ref role="3cqZAo" node="5uyAK6LiOYY" resolve="upper" />
                       </node>
@@ -1509,7 +1509,7 @@
                           <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="2UFYCfZGVNw" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Context.mkIntSort():com.microsoft.z3.IntSort" resolve="mkIntSort" />
+                          <ref role="37wK5l" to="f7eu:~Context.mkIntSort()" resolve="mkIntSort" />
                         </node>
                       </node>
                     </node>
@@ -1530,7 +1530,7 @@
                 <ref role="3cqZAo" node="5uyAK6LiOJ_" resolve="ctx" />
               </node>
               <node concept="liA8E" id="39x0jxyOFYA" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Context.mkAnd(com.microsoft.z3.BoolExpr...):com.microsoft.z3.BoolExpr" resolve="mkAnd" />
+                <ref role="37wK5l" to="f7eu:~Context.mkAnd(com.microsoft.z3.BoolExpr...)" resolve="mkAnd" />
                 <node concept="37vLTw" id="39x0jxyOFYB" role="37wK5m">
                   <ref role="3cqZAo" node="2UFYCfZGViV" resolve="lhs" />
                 </node>
@@ -1547,7 +1547,7 @@
               <ref role="3cqZAo" node="2UFYCfZGV4z" resolve="solver" />
             </node>
             <node concept="liA8E" id="2UFYCfZGWqv" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Solver.add(com.microsoft.z3.BoolExpr...):void" resolve="add" />
+              <ref role="37wK5l" to="f7eu:~Solver.add(com.microsoft.z3.BoolExpr...)" resolve="add" />
               <node concept="37vLTw" id="39x0jxyOFYD" role="37wK5m">
                 <ref role="3cqZAo" node="39x0jxyOFYz" resolve="and" />
               </node>

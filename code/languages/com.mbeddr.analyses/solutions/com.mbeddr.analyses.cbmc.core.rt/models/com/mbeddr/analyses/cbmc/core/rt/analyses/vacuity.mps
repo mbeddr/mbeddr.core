@@ -340,7 +340,7 @@
               <ref role="3cqZAo" node="3x0R1LJ5Cpv" resolve="userFriendlyMessage" />
             </node>
             <node concept="liA8E" id="6kQ$1ab4AiX" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
               <node concept="37vLTw" id="6kQ$1ab4AmQ" role="37wK5m">
                 <ref role="3cqZAo" to="xiaw:6kQ$1ab4gdy" resolve="NO_VC_FOUND_MESSAGE" />
               </node>
@@ -514,7 +514,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="6v4KKkMPc97" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="Xl_RD" id="6v4KKkMPd8L" role="37wK5m">
                       <property role="Xl_RC" value="vacuity" />
                     </node>
@@ -531,7 +531,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="3WYFqnsxFPp" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="Xl_RD" id="3WYFqnsxG0g" role="37wK5m">
                         <property role="Xl_RC" value="assertion false" />
                       </node>
@@ -547,7 +547,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="1TkmKWB8ZSu" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="Xl_RD" id="1TkmKWB8ZSv" role="37wK5m">
                         <property role="Xl_RC" value="assertion 0" />
                       </node>

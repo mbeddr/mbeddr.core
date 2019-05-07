@@ -80,7 +80,7 @@
     <node concept="2Pg1uL" id="3jTGQV$9VwE" role="2VgMA7">
       <node concept="2Pgd6e" id="3jTGQV$9VwF" role="1t_9vn" />
       <node concept="3Vl8EG" id="3jTGQV$9VwG" role="3VlUeB">
-        <ref role="3Vl8EH" to="e8dq:2SFcQFXcTFp" resolve="addUnitTestFramework2BuildConfig" />
+        <ref role="3Vl8EH" to="e8dq:2SFcQFXcTFp" resolve="addUnitTestModulesToBuildConfig" />
       </node>
     </node>
     <node concept="2Pg1uL" id="3jTGQV$9VwH" role="2VgMA7">
