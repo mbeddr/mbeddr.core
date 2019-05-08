@@ -62,7 +62,7 @@
             <property role="BaGAP" value="" />
           </node>
           <node concept="Xl_RD" id="2qCdpHNSr98" role="1xDQ1B">
-            <property role="Xl_RC" value="ExponentialTest" />
+            <property role="Xl_RC" value="lib_ExponentialTest" />
           </node>
         </node>
       </node>
@@ -77,7 +77,7 @@
             <property role="BaGAP" value="" />
           </node>
           <node concept="Xl_RD" id="63QgsF$VN0B" role="1xDQ1B">
-            <property role="Xl_RC" value="SumTest" />
+            <property role="Xl_RC" value="lib_SumTest" />
           </node>
         </node>
       </node>
@@ -92,7 +92,7 @@
             <property role="BaGAP" value="" />
           </node>
           <node concept="Xl_RD" id="63QgsF$VN1J" role="1xDQ1B">
-            <property role="Xl_RC" value="ProductTest" />
+            <property role="Xl_RC" value="lib_ProductTest" />
           </node>
         </node>
       </node>
@@ -107,7 +107,7 @@
             <property role="BaGAP" value="" />
           </node>
           <node concept="Xl_RD" id="63QgsF$Wbnb" role="1xDQ1B">
-            <property role="Xl_RC" value="LogSqrtTest" />
+            <property role="Xl_RC" value="lib_LogSqrtTest" />
           </node>
         </node>
       </node>
@@ -122,7 +122,7 @@
             <property role="BaGAP" value="" />
           </node>
           <node concept="Xl_RD" id="63QgsF$WboR" role="1xDQ1B">
-            <property role="Xl_RC" value="FractionAbsTest" />
+            <property role="Xl_RC" value="lib_FractionAbsTest" />
           </node>
         </node>
       </node>
