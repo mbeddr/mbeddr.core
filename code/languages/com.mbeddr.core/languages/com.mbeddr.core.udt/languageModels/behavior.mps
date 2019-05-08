@@ -5840,7 +5840,7 @@
     <property role="3GE5qa" value="enum" />
     <ref role="13h7C2" to="clbe:7D99css6O0t" resolve="EnumLiteral" />
     <node concept="13i0hz" id="5AweqC3NcPT" role="13h7CS">
-      <property role="TrG5h" value="mangledName" />
+      <property role="TrG5h" value="getMangledName" />
       <node concept="3Tm1VV" id="5AweqC3NcPU" role="1B3o_S" />
       <node concept="17QB3L" id="5AweqC3NcPX" role="3clF45" />
       <node concept="3clFbS" id="5AweqC3NcPW" role="3clF47">
@@ -5894,7 +5894,7 @@
                         <ref role="3cqZAo" node="5AweqC3NfOh" resolve="enumDecl" />
                       </node>
                       <node concept="2qgKlT" id="5AweqC3NcRc" role="2OqNvi">
-                        <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
+                        <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="getMangledName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5AweqC3NcR$" role="3uHU7w">
@@ -5972,7 +5972,7 @@
           <node concept="2OqwBi" id="7D99css6Pmj" role="3clFbG">
             <node concept="13iPFW" id="5uhLyQTjwrk" role="2Oq$k0" />
             <node concept="2qgKlT" id="5AweqC3NcSo" role="2OqNvi">
-              <ref role="37wK5l" node="5AweqC3NcPT" resolve="mangledName" />
+              <ref role="37wK5l" node="5AweqC3NcPT" resolve="getMangledName" />
             </node>
           </node>
         </node>
@@ -7609,7 +7609,7 @@
           <node concept="2OqwBi" id="3W2cV_pfyHE" role="3clFbG">
             <node concept="13iPFW" id="3W2cV_pfyr3" role="2Oq$k0" />
             <node concept="2qgKlT" id="3W2cV_pfzI2" role="2OqNvi">
-              <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
+              <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="getMangledName" />
             </node>
           </node>
         </node>

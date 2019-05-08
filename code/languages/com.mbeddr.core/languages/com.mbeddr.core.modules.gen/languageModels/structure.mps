@@ -250,7 +250,7 @@
   </node>
   <node concept="1TIwiD" id="7dfuMW5rC75">
     <property role="3GE5qa" value="config" />
-    <property role="TrG5h" value="NameShorteingRoot" />
+    <property role="TrG5h" value="NameShorteningRoot" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="8308995279406662085" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

@@ -3026,11 +3026,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfK" resolve="jetbrains.mps.dataFlow.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4oNjwzxqi8b" role="3bR37C">
-          <node concept="3bR9La" id="4oNjwzxqi8c" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2W1GNPBwWVw" role="3bR37C">
           <node concept="3bR9La" id="2W1GNPBwWVx" role="1SiIV1">
             <ref role="3bR37D" node="2W1GNPBwUiB" resolve="com.mbeddr.core.expressions.runtime" />
@@ -3081,14 +3076,14 @@
             <ref role="3bR37D" to="ffeo:1qokWp1VHJa" resolve="jetbrains.mps.refactoring.participant" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3wkKOSmZ6O$" role="3bR37C">
-          <node concept="3bR9La" id="3wkKOSmZ6O_" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:61Pvu7KHtlo" resolve="com.mbeddr.mpsutil.breadcrumb" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1aL6sVX49Ca" role="3bR37C">
           <node concept="3bR9La" id="1aL6sVX49Cb" role="1SiIV1">
             <ref role="3bR37D" to="90a9:F1NWDqq_DA" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1ImrItTJv5M" role="3bR37C">
+          <node concept="1Busua" id="1ImrItTJv5N" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:61Pvu7KHtlo" resolve="com.mbeddr.mpsutil.breadcrumb" />
           </node>
         </node>
       </node>
