@@ -16,10 +16,57 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)</dependency>
+        <dependency reexport="false">53c31cc6-9e98-4153-905a-a7b5c490ea53(com.mbeddr.core.modules#1758019824472891829)</dependency>
+        <dependency reexport="false">2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)</dependency>
+        <dependency reexport="false">2a2a2e9e-d6c5-45da-a1d8-743a2d7fdafe(com.mbeddr.cc.var.annotations#6514264311693705814)</dependency>
       </dependencies>
       <languageVersions />
       <dependencyVersions />
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="10af8f92-2015-49a5-aee7-62ebdaf53076(com.mbeddr.cc.var.fm#8988108754359387812)" />
+            <external-mapping>
+              <mapping-node modelUID="r:607eadcb-1a27-447e-8d62-1e544632d7b8(main@generator)" nodeID="8988108754359387813" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <mapping-set>
+              <mapping-set-element>
+                <generator generatorUID="10af8f92-2015-49a5-aee7-62ebdaf53076(com.mbeddr.cc.var.fm#8988108754359387812)" />
+                <external-mapping>
+                  <all-local-mappings />
+                </external-mapping>
+              </mapping-set-element>
+              <mapping-set-element>
+                <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
+                <external-mapping>
+                  <all-local-mappings />
+                </external-mapping>
+              </mapping-set-element>
+              <mapping-set-element>
+                <generator generatorUID="53c31cc6-9e98-4153-905a-a7b5c490ea53(com.mbeddr.core.modules#1758019824472891829)" />
+                <external-mapping>
+                  <all-local-mappings />
+                </external-mapping>
+              </mapping-set-element>
+              <mapping-set-element>
+                <generator generatorUID="2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)" />
+                <external-mapping>
+                  <all-local-mappings />
+                </external-mapping>
+              </mapping-set-element>
+              <mapping-set-element>
+                <generator generatorUID="2a2a2e9e-d6c5-45da-a1d8-743a2d7fdafe(com.mbeddr.cc.var.annotations#6514264311693705814)" />
+                <external-mapping>
+                  <all-local-mappings />
+                </external-mapping>
+              </mapping-set-element>
+            </mapping-set>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
