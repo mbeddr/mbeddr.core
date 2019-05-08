@@ -171,7 +171,7 @@
                 <ref role="3cqZAo" node="71B0VAs0eEm" resolve="m" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJStoM" role="37wK5m">
-                <property role="Xl_RC" value="simple_dectabs" />
+                <property role="Xl_RC" value="lib_simple_dectabs" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJStoN" role="37wK5m">
                 <property role="Xl_RC" value="signum" />
@@ -367,7 +367,7 @@
                 <ref role="3cqZAo" node="71B0VAs0h0Z" resolve="m" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJScIk" role="37wK5m">
-                <property role="Xl_RC" value="simple_dectabs" />
+                <property role="Xl_RC" value="lib_simple_dectabs" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJScIl" role="37wK5m">
                 <property role="Xl_RC" value="twoDecTabs" />
@@ -645,7 +645,7 @@
                 <ref role="3cqZAo" node="1_cCL2G2g7s" resolve="model" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVh3k5" role="37wK5m">
-                <property role="Xl_RC" value="signumComputerProxy" />
+                <property role="Xl_RC" value="lib_signumComputerProxy" />
               </node>
             </node>
           </node>

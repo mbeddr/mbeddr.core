@@ -141,7 +141,7 @@
                 <ref role="3cqZAo" node="5EwdfGVh3W9" resolve="m" />
               </node>
               <node concept="Xl_RD" id="72mSD5S011Q" role="37wK5m">
-                <property role="Xl_RC" value="valid_enum" />
+                <property role="Xl_RC" value="lib_valid_enum" />
               </node>
               <node concept="Xl_RD" id="72mSD5S011R" role="37wK5m">
                 <property role="Xl_RC" value="entryValidEnum1" />
@@ -221,7 +221,7 @@
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="72mSD5S00Vp" role="37wK5m">
-                <property role="Xl_RC" value="implies" />
+                <property role="Xl_RC" value="lib_implies" />
               </node>
               <node concept="Xl_RD" id="72mSD5S00Vq" role="37wK5m">
                 <property role="Xl_RC" value="impliesEntry" />

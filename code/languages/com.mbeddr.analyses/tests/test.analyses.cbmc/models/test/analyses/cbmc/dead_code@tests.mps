@@ -168,7 +168,7 @@
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="4pAFZeasiZ0" role="37wK5m">
-                <property role="Xl_RC" value="statemachine" />
+                <property role="Xl_RC" value="lib_statemachine" />
               </node>
               <node concept="Xl_RD" id="4pAFZeasiZ1" role="37wK5m">
                 <property role="Xl_RC" value="entry_sm" />
@@ -320,7 +320,7 @@
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="153zJclN7Om" role="37wK5m">
-                <property role="Xl_RC" value="smoke" />
+                <property role="Xl_RC" value="lib_smoke" />
               </node>
               <node concept="Xl_RD" id="153zJclN7On" role="37wK5m">
                 <property role="Xl_RC" value="allReachable" />
@@ -399,7 +399,7 @@
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="153zJclN7ON" role="37wK5m">
-                <property role="Xl_RC" value="smoke" />
+                <property role="Xl_RC" value="lib_smoke" />
               </node>
               <node concept="Xl_RD" id="153zJclN7OO" role="37wK5m">
                 <property role="Xl_RC" value="dead1" />
@@ -486,7 +486,7 @@
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="153zJclN7Pi" role="37wK5m">
-                <property role="Xl_RC" value="smoke" />
+                <property role="Xl_RC" value="lib_smoke" />
               </node>
               <node concept="Xl_RD" id="153zJclN7Pj" role="37wK5m">
                 <property role="Xl_RC" value="unwinding" />
@@ -619,7 +619,7 @@
                 <ref role="3cqZAo" node="5EwdfGVgZy4" resolve="m" />
               </node>
               <node concept="Xl_RD" id="153zJclTKj8" role="37wK5m">
-                <property role="Xl_RC" value="component" />
+                <property role="Xl_RC" value="lib_component" />
               </node>
               <node concept="Xl_RD" id="153zJclTKj9" role="37wK5m">
                 <property role="Xl_RC" value="entry_comp" />

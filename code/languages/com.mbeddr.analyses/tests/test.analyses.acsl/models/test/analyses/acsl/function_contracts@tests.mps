@@ -146,7 +146,7 @@
                 <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="2$KQXNUNlQO" role="37wK5m">
-                <property role="Xl_RC" value="behavior" />
+                <property role="Xl_RC" value="lib_behavior" />
               </node>
               <node concept="Xl_RD" id="2$KQXNUNlQP" role="37wK5m">
                 <property role="Xl_RC" value="div" />
@@ -297,7 +297,7 @@
                 <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="6WBmVK646SS" role="37wK5m">
-                <property role="Xl_RC" value="ensures" />
+                <property role="Xl_RC" value="lib_ensures" />
               </node>
               <node concept="Xl_RD" id="6WBmVK646ST" role="37wK5m">
                 <property role="Xl_RC" value="add" />
@@ -417,7 +417,7 @@
                 <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="29$2IGZgdJk" role="37wK5m">
-                <property role="Xl_RC" value="requires" />
+                <property role="Xl_RC" value="lib_requires" />
               </node>
               <node concept="Xl_RD" id="29$2IGZgdJl" role="37wK5m">
                 <property role="Xl_RC" value="simpleRequires" />

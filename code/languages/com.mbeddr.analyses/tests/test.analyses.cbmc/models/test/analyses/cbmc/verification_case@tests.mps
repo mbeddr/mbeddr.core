@@ -154,7 +154,7 @@
                 <ref role="3cqZAo" node="5EwdfGVi4pD" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7DvJ5MZ5Era" role="37wK5m">
-                <property role="Xl_RC" value="data_env" />
+                <property role="Xl_RC" value="lib_data_env" />
               </node>
               <node concept="Xl_RD" id="7DvJ5MZ5Erb" role="37wK5m">
                 <property role="Xl_RC" value="countVC1" />
@@ -286,7 +286,7 @@
                 <ref role="3cqZAo" node="5EwdfGVi3zA" resolve="m" />
               </node>
               <node concept="Xl_RD" id="XYEPTiBsg1" role="37wK5m">
-                <property role="Xl_RC" value="change_freq" />
+                <property role="Xl_RC" value="lib_change_freq" />
               </node>
               <node concept="Xl_RD" id="XYEPTiBsg2" role="37wK5m">
                 <property role="Xl_RC" value="verifCase" />
