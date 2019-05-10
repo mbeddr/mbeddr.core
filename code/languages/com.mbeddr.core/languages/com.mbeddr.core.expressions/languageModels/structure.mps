@@ -77,9 +77,6 @@
     <property role="R4oN_" value="--" />
     <property role="EcuMT" value="8860443239512128050" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="jLLIdCmp4d" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
-    </node>
     <node concept="PrWs8" id="79LR_4z937A" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
     </node>
