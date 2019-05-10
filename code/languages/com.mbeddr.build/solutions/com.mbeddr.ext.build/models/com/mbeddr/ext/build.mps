@@ -569,6 +569,22 @@
             <ref role="3bR37D" to="p6ld:yklW1G3HMa" resolve="com.mbeddr.ext.units" />
           </node>
         </node>
+        <node concept="3rtmxn" id="7xmEYdp$IF$" role="3bR31x">
+          <node concept="3LXTmp" id="7xmEYdp$IF_" role="3rtmxm">
+            <node concept="3qWCbU" id="7xmEYdp$IFA" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7xmEYdp$IFB" role="3LXTmr">
+              <ref role="398BVh" node="5qO$P$PrILF" resolve="mbeddr.ext" />
+              <node concept="2Ry0Ak" id="7xmEYdp$IFC" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7xmEYdp$IFD" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.ext.mathunitadapter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="20rWHx3zP6G" role="2G$12L">
         <property role="BnDLt" value="true" />

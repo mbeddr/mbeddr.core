@@ -264,7 +264,7 @@
         </node>
         <node concept="m$_wl" id="1YLj_r8S1PA" role="39821P">
           <ref role="m_rDy" node="1YLj_r8S1Mc" resolve="yourplugin" />
-          <node concept="pUk6x" id="76N1O$Kj6v7" role="pUk7w" />
+          <node concept="pUk6x" id="7xmEYdp$IJo" role="pUk7w" />
         </node>
       </node>
     </node>
@@ -440,7 +440,7 @@
         </node>
         <node concept="m$_wl" id="1YLj_r8S5f$" role="39821P">
           <ref role="m_rDy" node="1YLj_r8S5eZ" resolve="yourplugin" />
-          <node concept="pUk6x" id="76N1O$Kj6v8" role="pUk7w" />
+          <node concept="pUk6x" id="7xmEYdp$IJp" role="pUk7w" />
         </node>
       </node>
     </node>

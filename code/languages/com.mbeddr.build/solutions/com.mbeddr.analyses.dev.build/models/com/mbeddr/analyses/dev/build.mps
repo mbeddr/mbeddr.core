@@ -1621,6 +1621,22 @@
             <ref role="3bR37D" to="p6ld:7eF9rfAnuj5" resolve="com.mbeddr.cc.var.annotations" />
           </node>
         </node>
+        <node concept="3rtmxn" id="7xmEYdp$IB1" role="3bR31x">
+          <node concept="3LXTmp" id="7xmEYdp$IB2" role="3rtmxm">
+            <node concept="3qWCbU" id="7xmEYdp$IB3" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7xmEYdp$IB4" role="3LXTmr">
+              <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
+              <node concept="2Ry0Ak" id="7xmEYdp$IB5" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="7xmEYdp$IB6" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.analyses.stan.ts" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="16PiFwJ4bFN" role="1hWBAP">

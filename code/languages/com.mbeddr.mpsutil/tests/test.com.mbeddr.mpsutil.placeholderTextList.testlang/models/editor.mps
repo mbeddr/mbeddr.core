@@ -169,6 +169,13 @@
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
   </registry>
+  <node concept="2ABfQD" id="6hvYmWkk0bU">
+    <property role="TrG5h" value="PlaceholderTextListHints" />
+    <node concept="2BsEeg" id="6hvYmWkk0bV" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="placeholderTextListHint" />
+    </node>
+  </node>
   <node concept="24kQdi" id="1w_x2MyQ$7o">
     <ref role="1XX52x" to="tpee:fIYIFW9" resolve="StaticMethodCall" />
     <node concept="3EZMnI" id="fITxkhc" role="2wV5jI">
@@ -348,13 +355,6 @@
     </node>
     <node concept="2aJ2om" id="6hvYmWkk0Qu" role="CpUAK">
       <ref role="2$4xQ3" node="6hvYmWkk0bV" resolve="placeholderTextListHint" />
-    </node>
-  </node>
-  <node concept="2ABfQD" id="6hvYmWkk0bU">
-    <property role="TrG5h" value="PlaceholderTextListHints" />
-    <node concept="2BsEeg" id="6hvYmWkk0bV" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="placeholderTextListHint" />
     </node>
   </node>
 </model>

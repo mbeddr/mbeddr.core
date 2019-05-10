@@ -914,6 +914,22 @@
             <ref role="3bR37D" node="360sibZuf$y" resolve="demo.expr" />
           </node>
         </node>
+        <node concept="3rtmxn" id="7xmEYdp$IBh" role="3bR31x">
+          <node concept="3LXTmp" id="7xmEYdp$IBi" role="3rtmxm">
+            <node concept="3qWCbU" id="7xmEYdp$IBj" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7xmEYdp$IBk" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="7xmEYdp$IBl" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7xmEYdp$IBm" role="2Ry0An">
+                  <property role="2Ry0Am" value="demo.expr.interpreter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1yRuzdJ_WVY" role="2G$12L">
         <property role="BnDLt" value="true" />

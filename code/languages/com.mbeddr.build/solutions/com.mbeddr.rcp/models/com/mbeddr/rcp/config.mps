@@ -2678,7 +2678,7 @@
       <node concept="398223" id="1BPeV_LjXvG" role="39821P">
         <node concept="m$_wl" id="4LNFdiVWL4L" role="39821P">
           <ref role="m_rDy" node="4LNFdiVWIZJ" resolve="com.mbeddr.rcp.actions" />
-          <node concept="pUk6x" id="76N1O$Kj6v5" role="pUk7w" />
+          <node concept="pUk6x" id="7xmEYdp$IJj" role="pUk7w" />
         </node>
         <node concept="3ygNvl" id="32YXDrSql99" role="39821P">
           <ref role="3ygNvj" to="ffeo:3IKDaVZn4nh" resolve="plugins" />

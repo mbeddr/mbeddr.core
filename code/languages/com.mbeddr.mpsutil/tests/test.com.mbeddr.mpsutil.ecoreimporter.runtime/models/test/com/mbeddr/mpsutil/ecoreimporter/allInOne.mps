@@ -19,6 +19,7 @@
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -63,6 +64,7 @@
   </registry>
   <node concept="AxPO7" id="7FLq2$JzdL2">
     <property role="TrG5h" value="enumTest1" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
     <node concept="M4N5e" id="7FLq2$JzdL3" role="M5hS2">
       <property role="1uS6qv" value="0" />

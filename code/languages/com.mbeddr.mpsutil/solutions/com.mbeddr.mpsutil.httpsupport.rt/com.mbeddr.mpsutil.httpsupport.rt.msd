@@ -45,6 +45,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="c2788093-51e8-4cfe-943b-eefd5ff309ff(com.mbeddr.mpsutil.httpserver)" version="0" />
     <module reference="7f0984ac-9f5d-4001-9257-17f7d10f3fd5(com.mbeddr.mpsutil.httpsupport.rt)" version="0" />
   </dependencyVersions>
 </solution>
