@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
   </imports>
@@ -980,7 +980,7 @@
       <property role="2GAjPV" value="false" />
       <property role="aoJFB" value="sources and tests" />
       <node concept="398BVA" id="58DJDcMhr6s" role="3LF7KH">
-        <ref role="398BVh" node="2coa6XmoC9_" />
+        <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.core" />
         <node concept="2Ry0Ak" id="58DJDcMhr6t" role="iGT6I">
           <property role="2Ry0Am" value="tests" />
           <node concept="2Ry0Ak" id="58DJDcMhr6u" role="2Ry0An">
@@ -994,7 +994,7 @@
       <node concept="1SiIV0" id="4cEcQIx$y5_" role="3bR37C">
         <node concept="3bR9La" id="4cEcQIx$y5A" role="1SiIV1">
           <property role="3bR36h" value="false" />
-          <ref role="3bR37D" node="4cEcQIx$xWy" />
+          <ref role="3bR37D" node="4cEcQIx$xWy" resolve="com.mbeddr.core.__spreferences.PlatformTemplates" />
         </node>
       </node>
       <node concept="3rtmxn" id="3xFG3bj5c3J" role="3bR31x">
@@ -1003,7 +1003,7 @@
             <property role="3qWCbO" value="icons/**, resources/**" />
           </node>
           <node concept="398BVA" id="3xFG3bj5c3M" role="3LXTmr">
-            <ref role="398BVh" node="2coa6XmoC9_" />
+            <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.core" />
             <node concept="2Ry0Ak" id="3xFG3bj5c3N" role="iGT6I">
               <property role="2Ry0Am" value="tests" />
               <node concept="2Ry0Ak" id="3xFG3bj5c3O" role="2Ry0An">
@@ -1021,7 +1021,7 @@
       <property role="2GAjPV" value="false" />
       <property role="aoJFB" value="sources" />
       <node concept="398BVA" id="4cEcQIx$xWz" role="3LF7KH">
-        <ref role="398BVh" node="2coa6XmoC9_" />
+        <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.core" />
         <node concept="2Ry0Ak" id="4cEcQIx$xW$" role="iGT6I">
           <property role="2Ry0Am" value="_spreferences" />
           <node concept="2Ry0Ak" id="4cEcQIx$xW_" role="2Ry0An">
@@ -1038,7 +1038,7 @@
             <property role="3qWCbO" value="icons/**, resources/**" />
           </node>
           <node concept="398BVA" id="3xFG3bj5c4l" role="3LXTmr">
-            <ref role="398BVh" node="2coa6XmoC9_" />
+            <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.core" />
             <node concept="2Ry0Ak" id="3xFG3bj5c4m" role="iGT6I">
               <property role="2Ry0Am" value="_spreferences" />
               <node concept="2Ry0Ak" id="3xFG3bj5c4n" role="2Ry0An">
