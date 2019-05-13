@@ -2827,7 +2827,7 @@
                 </node>
                 <node concept="3O6GUB" id="71W1KxsAOZ5" role="2OqNvi">
                   <node concept="chp4Y" id="71W1KxsAOZ6" role="3QVz_e">
-                    <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+                    <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="Library" />
                   </node>
                 </node>
               </node>

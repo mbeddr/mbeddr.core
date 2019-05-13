@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -139,7 +139,7 @@
     <property role="TrG5h" value="ReviewAssessmentQuery" />
     <property role="34LRSv" value="code review summary" />
     <property role="EcuMT" value="4901333676674651668" />
-    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery_old" />
     <node concept="1TJgyi" id="3DYDRw0Qxwo" role="1TKVEl">
       <property role="TrG5h" value="doNotShowGreen" />
       <property role="IQ2nx" value="4214990435117570072" />
@@ -157,7 +157,7 @@
     <property role="3GE5qa" value="codereview" />
     <property role="TrG5h" value="ReviewAssessmentResult" />
     <property role="EcuMT" value="4901333676674511261" />
-    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult_old" />
     <node concept="1TJgyj" id="4g52gaNPZk9" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="code" />
