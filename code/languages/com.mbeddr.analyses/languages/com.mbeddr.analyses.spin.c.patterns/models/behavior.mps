@@ -2,9 +2,9 @@
 <model ref="r:fc816f98-4213-44d3-a63b-de181339effd(com.mbeddr.analyses.spin.c.patterns.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
   </languages>
@@ -16,7 +16,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
   </imports>
   <registry>
@@ -29,6 +28,7 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
+        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -161,25 +161,6 @@
               <node concept="13iPFW" id="439FXGfpCD" role="2Oq$k0" />
               <node concept="3TrcHB" id="439FXGfqsT" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="L5b1s43YSP" role="3cqZAp">
-          <node concept="2OqwBi" id="L5b1s44K_v" role="3clFbG">
-            <node concept="2OqwBi" id="L5b1s43Z5i" role="2Oq$k0">
-              <node concept="13iPFW" id="L5b1s43YSN" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="L5b1s44EZ6" role="2OqNvi">
-                <ref role="3TtcxE" to="x27k:5DwX9xlExfN" resolve="contents" />
-              </node>
-            </node>
-            <node concept="TSZUe" id="L5b1s44Pxw" role="2OqNvi">
-              <node concept="2ShNRf" id="L5b1s44PUf" role="25WWJ7">
-                <node concept="3zrR0B" id="L5b1s450UA" role="2ShVmc">
-                  <node concept="3Tqbb2" id="L5b1s450UC" role="3zrR0E">
-                    <ref role="ehGHo" to="x27k:7JWieF82Lsz" resolve="EmptyModuleContent" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -367,7 +348,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getParentPopup" />
-      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getCategory" />
+      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
       <node concept="3Tm1VV" id="pq_X7Y8wTp" role="1B3o_S" />
       <node concept="3clFbS" id="pq_X7Y8wTu" role="3clF47">
         <node concept="3clFbF" id="pq_X7Y8wKO" role="3cqZAp">
@@ -401,6 +382,7 @@
       <node concept="3clFbS" id="7TvvPtSx2JD" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="7TvvPtSx2JM" role="13h7CS">
+      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />

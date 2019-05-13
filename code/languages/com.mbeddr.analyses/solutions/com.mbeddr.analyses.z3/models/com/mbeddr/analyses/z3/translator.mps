@@ -7,15 +7,15 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="-1" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -1658,14 +1658,14 @@
           <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
         </node>
       </node>
-      <node concept="NWlO9" id="4gj0JzpkZz" role="lGtFl">
-        <property role="NWlVz" value="Creates a Z3 type." />
-      </node>
       <node concept="37vLTG" id="381lWUKyxyD" role="3clF46">
         <property role="TrG5h" value="vi" />
         <node concept="3uibUv" id="381lWUKyxyE" role="1tU5fm">
           <ref role="3uigEE" to="q96t:tSj2rSrDcF" resolve="VariabilityInfo" />
         </node>
+      </node>
+      <node concept="NWlO9" id="4gj0JzpkZz" role="lGtFl">
+        <property role="NWlVz" value="Creates a Z3 type." />
       </node>
     </node>
     <node concept="2tJIrI" id="21uobtP04QG" role="jymVt" />
@@ -1733,14 +1733,14 @@
         <property role="TrG5h" value="nodeFromOriginalModel" />
         <node concept="3Tqbb2" id="7YWlEjTqVnh" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="21uobtP04NQ" role="lGtFl">
-        <property role="NWlVz" value="Creates a Z3 type." />
-      </node>
       <node concept="37vLTG" id="381lWUKyBjB" role="3clF46">
         <property role="TrG5h" value="vi" />
         <node concept="3uibUv" id="381lWUKyBjC" role="1tU5fm">
           <ref role="3uigEE" to="q96t:tSj2rSrDcF" resolve="VariabilityInfo" />
         </node>
+      </node>
+      <node concept="NWlO9" id="21uobtP04NQ" role="lGtFl">
+        <property role="NWlVz" value="Creates a Z3 type." />
       </node>
     </node>
     <node concept="3Tm1VV" id="4gj0JzpkFq" role="1B3o_S" />
@@ -1805,14 +1805,14 @@
           <ref role="ehGHo" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
         </node>
       </node>
-      <node concept="NWlO9" id="4gj0JzplWX" role="lGtFl">
-        <property role="NWlVz" value="Adds a variable declaration." />
-      </node>
       <node concept="37vLTG" id="381lWUKzrms" role="3clF46">
         <property role="TrG5h" value="vi" />
         <node concept="3uibUv" id="381lWUKzrmt" role="1tU5fm">
           <ref role="3uigEE" to="q96t:tSj2rSrDcF" resolve="VariabilityInfo" />
         </node>
+      </node>
+      <node concept="NWlO9" id="4gj0JzplWX" role="lGtFl">
+        <property role="NWlVz" value="Adds a variable declaration." />
       </node>
     </node>
     <node concept="2tJIrI" id="lLYWBXViyJ" role="jymVt" />
@@ -2184,14 +2184,14 @@
         <property role="TrG5h" value="varName" />
         <node concept="17QB3L" id="lLYWBXVjVO" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="lLYWBXVi5j" role="lGtFl">
-        <property role="NWlVz" value="Adds a variable declaration." />
-      </node>
       <node concept="37vLTG" id="381lWUKzqUN" role="3clF46">
         <property role="TrG5h" value="vi" />
         <node concept="3uibUv" id="381lWUKzr7p" role="1tU5fm">
           <ref role="3uigEE" to="q96t:tSj2rSrDcF" resolve="VariabilityInfo" />
         </node>
+      </node>
+      <node concept="NWlO9" id="lLYWBXVi5j" role="lGtFl">
+        <property role="NWlVz" value="Adds a variable declaration." />
       </node>
     </node>
     <node concept="2tJIrI" id="5uyAK6LiORb" role="jymVt" />
@@ -2426,14 +2426,14 @@
           <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
         </node>
       </node>
-      <node concept="NWlO9" id="598CSoGhOwY" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this expression can be translated." />
-      </node>
       <node concept="37vLTG" id="381lWUKx4I9" role="3clF46">
         <property role="TrG5h" value="vi" />
         <node concept="3uibUv" id="381lWUKx4Ia" role="1tU5fm">
           <ref role="3uigEE" to="q96t:tSj2rSrDcF" resolve="VariabilityInfo" />
         </node>
+      </node>
+      <node concept="NWlO9" id="598CSoGhOwY" role="lGtFl">
+        <property role="NWlVz" value="Returns true if this expression can be translated." />
       </node>
     </node>
     <node concept="2tJIrI" id="SU$cf9Tmiz" role="jymVt" />
@@ -2476,14 +2476,14 @@
         <property role="TrG5h" value="nodeFromOriginalModel" />
         <node concept="3Tqbb2" id="3WzlSQdPgjd" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="598CSoGhOBp" role="lGtFl">
-        <property role="NWlVz" value="Translates the mbeddr expression to a Z3 expression." />
-      </node>
       <node concept="37vLTG" id="381lWUKx4FC" role="3clF46">
         <property role="TrG5h" value="vi" />
         <node concept="3uibUv" id="381lWUKx4FD" role="1tU5fm">
           <ref role="3uigEE" to="q96t:tSj2rSrDcF" resolve="VariabilityInfo" />
         </node>
+      </node>
+      <node concept="NWlO9" id="598CSoGhOBp" role="lGtFl">
+        <property role="NWlVz" value="Translates the mbeddr expression to a Z3 expression." />
       </node>
     </node>
     <node concept="NWlO9" id="598CSoGhuIN" role="lGtFl">
@@ -3991,14 +3991,14 @@
           <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
         </node>
       </node>
-      <node concept="NWlO9" id="4AeTWAG1cg3" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this type can be translated." />
-      </node>
       <node concept="37vLTG" id="381lWUKx4OM" role="3clF46">
         <property role="TrG5h" value="vi" />
         <node concept="3uibUv" id="381lWUKx4ON" role="1tU5fm">
           <ref role="3uigEE" to="q96t:tSj2rSrDcF" resolve="VariabilityInfo" />
         </node>
+      </node>
+      <node concept="NWlO9" id="4AeTWAG1cg3" role="lGtFl">
+        <property role="NWlVz" value="Returns true if this type can be translated." />
       </node>
     </node>
     <node concept="2tJIrI" id="4AeTWAG1cg4" role="jymVt" />
@@ -4041,14 +4041,14 @@
         <property role="TrG5h" value="nodeFromOriginalModel" />
         <node concept="3Tqbb2" id="4AeTWAG1cgl" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="4AeTWAG1cgm" role="lGtFl">
-        <property role="NWlVz" value="Translates the mbeddr type to a Z3 sort" />
-      </node>
       <node concept="37vLTG" id="381lWUKx4Mh" role="3clF46">
         <property role="TrG5h" value="vi" />
         <node concept="3uibUv" id="381lWUKx4Mi" role="1tU5fm">
           <ref role="3uigEE" to="q96t:tSj2rSrDcF" resolve="VariabilityInfo" />
         </node>
+      </node>
+      <node concept="NWlO9" id="4AeTWAG1cgm" role="lGtFl">
+        <property role="NWlVz" value="Translates the mbeddr type to a Z3 sort" />
       </node>
     </node>
     <node concept="NWlO9" id="4AeTWAG1cgn" role="lGtFl">

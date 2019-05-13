@@ -2,9 +2,9 @@
 <model ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.rt.analyzer.model)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
   </languages>
   <imports>
     <import index="npwl" ref="r:ca7aba72-9b45-4105-b4ef-5e520eda75c0(com.mbeddr.analyses.utils.results_model)" />
@@ -167,6 +167,14 @@
       <node concept="17QB3L" id="Y_s0Wj_nva" role="1tU5fm" />
       <node concept="3Tm1VV" id="Y_s0Wj_nvb" role="1B3o_S" />
     </node>
+    <node concept="312cEg" id="7Rf0$0HT2cv" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="trailOutput" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="7Rf0$0HT2bp" role="1B3o_S" />
+      <node concept="17QB3L" id="7Rf0$0HT2ct" role="1tU5fm" />
+    </node>
     <node concept="312cEg" id="1wu5Hv6fz25" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -233,6 +241,16 @@
               <node concept="2OwXpG" id="Hdy9e2XgMo" role="2OqNvi">
                 <ref role="2Oxat5" node="Hdy9e2Xgsa" resolve="delay" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Rf0$0HT2fW" role="3cqZAp">
+          <node concept="37vLTI" id="7Rf0$0HT2mg" role="3clFbG">
+            <node concept="37vLTw" id="7Rf0$0HT2pu" role="37vLTx">
+              <ref role="3cqZAo" node="7Rf0$0HT2dA" resolve="trail" />
+            </node>
+            <node concept="37vLTw" id="7Rf0$0HT2fU" role="37vLTJ">
+              <ref role="3cqZAo" node="7Rf0$0HT2cv" resolve="trailOutput" />
             </node>
           </node>
         </node>
@@ -372,18 +390,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2lN4cj_OYyN" role="jymVt" />
-    <node concept="312cEg" id="13EXNGXNcrb" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="trailOutput" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="13EXNGXNenX" role="1B3o_S" />
-      <node concept="17QB3L" id="13EXNGXNcrd" role="1tU5fm" />
-      <node concept="NWlO9" id="13EXNGXNdc9" role="lGtFl">
-        <property role="NWlVz" value="Raw trail output." />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="13EXNGXNbEs" role="jymVt" />
     <node concept="3clFbW" id="7XCY$_ragWJ" role="jymVt">
       <node concept="3cqZAl" id="7XCY$_ragWL" role="3clF45" />
       <node concept="3Tm1VV" id="7XCY$_ragWM" role="1B3o_S" />
@@ -803,55 +809,6 @@
       </node>
       <node concept="3Tm1VV" id="2lN4cj_PRXd" role="1B3o_S" />
       <node concept="3Tqbb2" id="2lN4cj_PTw9" role="3clF45" />
-    </node>
-    <node concept="2tJIrI" id="13EXNGXNexw" role="jymVt" />
-    <node concept="3clFb_" id="13EXNGXNgng" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="setTrailOutput" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="13EXNGXNgnj" role="3clF47">
-        <node concept="3clFbF" id="13EXNGXNhMp" role="3cqZAp">
-          <node concept="37vLTI" id="13EXNGXNiDp" role="3clFbG">
-            <node concept="37vLTw" id="13EXNGXNiPh" role="37vLTx">
-              <ref role="3cqZAo" node="13EXNGXNh9u" resolve="trailOutput" />
-            </node>
-            <node concept="2OqwBi" id="13EXNGXNhSY" role="37vLTJ">
-              <node concept="Xjq3P" id="13EXNGXNhMo" role="2Oq$k0" />
-              <node concept="2OwXpG" id="13EXNGXNi9z" role="2OqNvi">
-                <ref role="2Oxat5" node="13EXNGXNcrb" resolve="trailOutput" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="13EXNGXNfsE" role="1B3o_S" />
-      <node concept="3cqZAl" id="13EXNGXNgdK" role="3clF45" />
-      <node concept="37vLTG" id="13EXNGXNh9u" role="3clF46">
-        <property role="TrG5h" value="trailOutput" />
-        <node concept="17QB3L" id="13EXNGXNh9t" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="13EXNGXNiQ$" role="jymVt" />
-    <node concept="3clFb_" id="13EXNGXNlmj" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getTrailOutput" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="13EXNGXNlmm" role="3clF47">
-        <node concept="3clFbF" id="13EXNGXNm9U" role="3cqZAp">
-          <node concept="2OqwBi" id="13EXNGXNmis" role="3clFbG">
-            <node concept="Xjq3P" id="13EXNGXNm9T" role="2Oq$k0" />
-            <node concept="2OwXpG" id="13EXNGXNmz1" role="2OqNvi">
-              <ref role="2Oxat5" node="13EXNGXNcrb" resolve="trailOutput" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="13EXNGXNkqD" role="1B3o_S" />
-      <node concept="17QB3L" id="13EXNGXNlcM" role="3clF45" />
     </node>
     <node concept="NWlO9" id="7XCY$_rbd9N" role="lGtFl">
       <property role="NWlVz" value="Lifted result of an analysis with Spin." />

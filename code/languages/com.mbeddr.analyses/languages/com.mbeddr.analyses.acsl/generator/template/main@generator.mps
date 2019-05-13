@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="3c648e74-bfd0-47ab-a27b-a7ece174dc55" name="com.mbeddr.analyses.acsl" version="-1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
@@ -14,11 +14,11 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -88,13 +88,17 @@
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="7830515785164762753" name="jetbrains.mps.lang.generator.structure.MappingConfiguration_Condition" flags="in" index="avzCv" />
+      <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="7830515785164764091" name="condition" index="avys_" />
-        <child id="7473026166162327259" name="dropAttrubuteRule" index="CYSdJ" />
+        <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
-      <concept id="7473026166162297915" name="jetbrains.mps.lang.generator.structure.DropAttributeRule" flags="lg" index="CY16f">
-        <reference id="7473026166162297918" name="applicableConcept" index="CY16a" />
+      <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
+        <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
+      </concept>
+      <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
+        <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1195499912406" name="jetbrains.mps.lang.generator.structure.MappingScript" flags="lg" index="1pmfR0">
         <child id="1195501105008" name="codeBlock" index="1pqMTA" />
@@ -122,15 +126,11 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
-      </concept>
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -152,6 +152,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
+        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
@@ -193,11 +196,8 @@
               <node concept="Xl_RD" id="78Ts1skq3qR" role="37wK5m">
                 <property role="Xl_RC" value="com.mbeddr.analyses.acsl/main.acslGenerationAsText" />
               </node>
-              <node concept="2OqwBi" id="2nfOfEfFDzj" role="37wK5m">
-                <node concept="35c_gC" id="2nfOfEfFCOt" role="2Oq$k0">
-                  <ref role="35c_gD" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
-                </node>
-                <node concept="FGMqu" id="2nfOfEfFEfV" role="2OqNvi" />
+              <node concept="3TUQnm" id="78Ts1skpDFD" role="37wK5m">
+                <ref role="3TV0OU" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
               </node>
             </node>
           </node>
@@ -412,6 +412,10 @@
   </node>
   <node concept="bUwia" id="5OLOS2sRFlq">
     <property role="TrG5h" value="acslGenerationDoNothing" />
+    <node concept="3aamgX" id="7PLQ5$qaDOg" role="3acgRq">
+      <ref role="30HIoZ" to="97v6:3i$cQqpAZ4J" resolve="FunctionContract" />
+      <node concept="b5Tf3" id="7PLQ5$qaN91" role="1lVwrX" />
+    </node>
     <node concept="avzCv" id="5OLOS2sRFlr" role="avys_">
       <node concept="3clFbS" id="5OLOS2sRFls" role="2VODD2">
         <node concept="3cpWs8" id="5OLOS2sRJ62" role="3cqZAp">
@@ -431,11 +435,8 @@
               <node concept="Xl_RD" id="5OLOS2sRJ6a" role="37wK5m">
                 <property role="Xl_RC" value="com.mbeddr.analyses.acsl/main.acslGenerationDoNothing" />
               </node>
-              <node concept="2OqwBi" id="2nfOfEfFGeK" role="37wK5m">
-                <node concept="35c_gC" id="2nfOfEfFFvU" role="2Oq$k0">
-                  <ref role="35c_gD" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
-                </node>
-                <node concept="FGMqu" id="2nfOfEfFH4A" role="2OqNvi" />
+              <node concept="3TUQnm" id="5OLOS2sRJ6b" role="37wK5m">
+                <ref role="3TV0OU" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
               </node>
             </node>
           </node>
@@ -463,9 +464,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="CY16f" id="6ODCss34jzQ" role="CYSdJ">
-      <ref role="CY16a" to="97v6:3i$cQqpAZ4J" resolve="FunctionContract" />
     </node>
   </node>
 </model>

@@ -2,26 +2,24 @@
 <model ref="r:e051ee3a-6d2f-4e9d-9aeb-3c920e1a5c8b(test.analyses.var.var_c@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
     <import index="oe3g" ref="r:6529d99e-f27c-4f0d-b5a8-fdfbedcb1e34(com.mbeddr.analyses.sat4j.fm.testing)" />
     <import index="vy7l" ref="r:86500bb5-b61d-4584-98de-8e87c2a6a247(com.mbeddr.analyses.sat4j.fm.analyses)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
-      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -182,12 +180,6 @@
             <node concept="NRdvd" id="44j14BHqlEv" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
-              <node concept="2OqwBi" id="3$vwvl9TmPI" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9TmBL" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9Tp53" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="44j14BHqmMY" role="37wK5m">
                 <node concept="2WthIp" id="44j14BHqmN1" role="2Oq$k0" />
                 <node concept="2XshWL" id="44j14BHqmN3" role="2OqNvi">
@@ -243,12 +235,6 @@
             <node concept="NRdvd" id="44j14BHqquA" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
-              <node concept="2OqwBi" id="3$vwvl9TsjI" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9TsjJ" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9TsjK" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="44j14BHqquB" role="37wK5m">
                 <node concept="2WthIp" id="44j14BHqquC" role="2Oq$k0" />
                 <node concept="2XshWL" id="44j14BHqquD" role="2OqNvi">
@@ -336,12 +322,6 @@
             <node concept="NRdvd" id="44j14BHqrtI" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
-              <node concept="2OqwBi" id="3$vwvl9Tsvk" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9Tsvl" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9Tsvm" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="44j14BHqrtJ" role="37wK5m">
                 <node concept="2WthIp" id="44j14BHqrtK" role="2Oq$k0" />
                 <node concept="2XshWL" id="44j14BHqrtL" role="2OqNvi">
@@ -396,7 +376,7 @@
         </node>
         <node concept="3vlDli" id="_qCyBYKWgd" role="3cqZAp">
           <node concept="Xl_RD" id="_qCyBYKWge" role="3tpDZB">
-            <property role="Xl_RC" value="Success: test.analyses.var.testcode.var_c.aVar is consistent." />
+            <property role="Xl_RC" value="Success: aVar is consistent." />
           </node>
           <node concept="2OqwBi" id="_qCyBYKWgf" role="3tpDZA">
             <node concept="2OqwBi" id="_qCyBYKWgg" role="2Oq$k0">
@@ -431,12 +411,6 @@
             <node concept="NRdvd" id="44j14BHqsbd" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
-              <node concept="2OqwBi" id="3$vwvl9TsEj" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9TsEk" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9TsEl" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="44j14BHqsbe" role="37wK5m">
                 <node concept="2WthIp" id="44j14BHqsbf" role="2Oq$k0" />
                 <node concept="2XshWL" id="44j14BHqsbg" role="2OqNvi">
@@ -491,7 +465,7 @@
         </node>
         <node concept="3vlDli" id="_qCyBYL15B" role="3cqZAp">
           <node concept="Xl_RD" id="_qCyBYL15C" role="3tpDZB">
-            <property role="Xl_RC" value="Success: test.analyses.var.testcode.var_c.boo is consistent." />
+            <property role="Xl_RC" value="Success: boo is consistent." />
           </node>
           <node concept="2OqwBi" id="_qCyBYL15D" role="3tpDZA">
             <node concept="2OqwBi" id="_qCyBYL15E" role="2Oq$k0">
@@ -543,12 +517,6 @@
             <node concept="NRdvd" id="44j14BHujUA" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
-              <node concept="2OqwBi" id="3$vwvl9TsQs" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9TsQt" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9TsQu" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="44j14BHujUB" role="37wK5m">
                 <node concept="2WthIp" id="44j14BHujUC" role="2Oq$k0" />
                 <node concept="2XshWL" id="44j14BHujUD" role="2OqNvi">
@@ -603,7 +571,7 @@
         </node>
         <node concept="3vlDli" id="_qCyBYL5DD" role="3cqZAp">
           <node concept="Xl_RD" id="_qCyBYL5DE" role="3tpDZB">
-            <property role="Xl_RC" value="Success: test.analyses.var.testcode.var_c.aGlobalVar is consistent." />
+            <property role="Xl_RC" value="Success: aGlobalVar is consistent." />
           </node>
           <node concept="2OqwBi" id="_qCyBYL5DF" role="3tpDZA">
             <node concept="2OqwBi" id="_qCyBYL5DG" role="2Oq$k0">
@@ -655,12 +623,6 @@
             <node concept="NRdvd" id="44j14BHvdou" role="33vP2m">
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="2OqwBi" id="3$vwvl9Tt2C" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9Tt2D" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9Tt2E" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="44j14BHvdov" role="37wK5m">
                 <node concept="2WthIp" id="44j14BHvdow" role="2Oq$k0" />
                 <node concept="2XshWL" id="44j14BHvdox" role="2OqNvi">
@@ -743,12 +705,6 @@
             <node concept="NRdvd" id="qjOluQgvB9" role="33vP2m">
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="2OqwBi" id="3$vwvl9Tt8H" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9Tt8I" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9Tt8J" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="qjOluQgvBa" role="37wK5m">
                 <node concept="2WthIp" id="qjOluQgvBb" role="2Oq$k0" />
                 <node concept="2XshWL" id="qjOluQgvBc" role="2OqNvi">
@@ -849,12 +805,6 @@
             <node concept="NRdvd" id="Ryij7AnuA_" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
-              <node concept="2OqwBi" id="3$vwvl9TtqP" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9TtqQ" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9TtqR" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="Ryij7AnuAA" role="37wK5m">
                 <node concept="2WthIp" id="Ryij7AnuAB" role="2Oq$k0" />
                 <node concept="2XshWL" id="Ryij7AnuAC" role="2OqNvi">
@@ -971,12 +921,6 @@
             <node concept="NRdvd" id="4$3mDZ0oIem" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
-              <node concept="2OqwBi" id="3$vwvl9TtBh" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9TtBi" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9TtBj" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="4$3mDZ0oIen" role="37wK5m">
                 <node concept="2WthIp" id="4$3mDZ0oIeo" role="2Oq$k0" />
                 <node concept="2XshWL" id="4$3mDZ0oIep" role="2OqNvi">
@@ -1040,12 +984,6 @@
             <node concept="NRdvd" id="44j14BHqsTI" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
-              <node concept="2OqwBi" id="3$vwvl9TtKp" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9TtKq" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9TtKr" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="44j14BHqsTJ" role="37wK5m">
                 <node concept="2WthIp" id="44j14BHqsTK" role="2Oq$k0" />
                 <node concept="2XshWL" id="44j14BHqsTL" role="2OqNvi">
@@ -1101,12 +1039,6 @@
             <node concept="NRdvd" id="Ryij7AnJuA" role="33vP2m">
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="2OqwBi" id="3$vwvl9TtW7" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9TtW8" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9TtW9" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="Ryij7AnJuB" role="37wK5m">
                 <node concept="2WthIp" id="Ryij7AnJuC" role="2Oq$k0" />
                 <node concept="2XshWL" id="Ryij7AnJuD" role="2OqNvi">
@@ -1211,12 +1143,6 @@
             <node concept="NRdvd" id="44j14BHzOdZ" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
-              <node concept="2OqwBi" id="3$vwvl9Tubf" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9Tubg" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9Tubh" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="44j14BHzOe0" role="37wK5m">
                 <node concept="2WthIp" id="44j14BHzOe1" role="2Oq$k0" />
                 <node concept="2XshWL" id="44j14BHzOe2" role="2OqNvi">
