@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.ext.components.embedded" uuid="cc872c37-5126-4cea-bcc0-b45897eba581" moduleVersion="0" compileInMPS="true" generatorOutputPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext/tests/test.ts.ext.components.embedded/source_gen">
+<solution name="test.ts.ext.components.embedded" uuid="cc872c37-5126-4cea-bcc0-b45897eba581" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,7 @@
     <dependency reexport="false">028899e1-bfee-4db6-b470-ed0f9ee5f662(com.mbeddr.ext.components.embedded)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
+    <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
     <language slang="l:2d7fadf5-33f6-4e80-a78f-0f739add2bde:com.mbeddr.core.buildconfig" version="5" />
     <language slang="l:b2da2e1a-b542-47f5-9be0-4dc21efe74a4:com.mbeddr.core.checks" version="0" />
     <language slang="l:390de4af-0c8d-4716-8dec-3d05ca751b28:com.mbeddr.core.cinterpreter" version="0" />
