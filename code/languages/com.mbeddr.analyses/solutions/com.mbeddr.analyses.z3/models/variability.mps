@@ -530,11 +530,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="tSj2rSnrQE" role="3cqZAp">
-          <node concept="3clFbT" id="tSj2rSnscS" role="3cqZAk">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
       </node>
       <node concept="3Tm6S6" id="tSj2rSlQHU" role="1B3o_S" />
       <node concept="10P_77" id="tSj2rSlDUP" role="3clF45" />
