@@ -30,9 +30,6 @@
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -357,7 +354,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="Or98vosDnP" role="2OqNvi">
-                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
                 </node>
               </node>
               <node concept="liA8E" id="Or98vosEwn" role="2OqNvi">
@@ -372,7 +369,7 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="Or98vosIod" role="2OqNvi">
-                    <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                    <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
                   </node>
                 </node>
               </node>
@@ -690,7 +687,6 @@
     <node concept="2tJIrI" id="3eQfn9zMg65" role="jymVt" />
     <node concept="2YIFZL" id="3eQfn9zMkgy" role="jymVt">
       <property role="TrG5h" value="computeTmpVarName" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="3eQfn9zMg72" role="3clF47">

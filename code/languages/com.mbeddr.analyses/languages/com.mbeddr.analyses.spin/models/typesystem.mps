@@ -2,7 +2,7 @@
 <model ref="r:100a60b2-bd86-43c0-9594-2fe7bec0c833(com.mbeddr.analyses.spin.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
@@ -131,6 +131,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -239,9 +242,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1134,6 +1145,45 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbJ" id="57K12X7W2Ei" role="3cqZAp">
+            <node concept="3clFbS" id="57K12X7W2Ej" role="3clFbx">
+              <node concept="a7r0C" id="57K12X7W2Gb" role="3cqZAp">
+                <node concept="Xl_RD" id="57K12X7W2Ge" role="a7wSD">
+                  <property role="Xl_RC" value="the CLANG compiler options must contain '-ftrap-function=sanitizer_trap' in order to hook with Spin to capture the witness" />
+                </node>
+                <node concept="1YBJjd" id="57K12X7W2Gd" role="2OEOjV">
+                  <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
+                </node>
+                <node concept="3Cnw8n" id="57K12X7W2Gf" role="2OEOjU">
+                  <ref role="QpYPw" node="4l47ydylnEZ" resolve="fixClangCompilerSettings" />
+                  <node concept="3CnSsL" id="57K12X7W2Gg" role="3Coj4f">
+                    <ref role="QkamJ" node="4l47ydylsUT" resolve="rsa" />
+                    <node concept="1YBJjd" id="57K12X7W2Gh" role="3CoRuB">
+                      <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="57K12X7W2Eq" role="3clFbw">
+              <node concept="2OqwBi" id="57K12X7W2Er" role="3fr31v">
+                <node concept="2OqwBi" id="57K12X7W2Es" role="2Oq$k0">
+                  <node concept="37vLTw" id="57K12X7W2Et" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4l47ydyleYt" resolve="sp" />
+                  </node>
+                  <node concept="3TrcHB" id="57K12X7W2Eu" role="2OqNvi">
+                    <ref role="3TsBF5" to="v326:7Rf0$0HCP5m" resolve="compilerOptions" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="57K12X7W2Ev" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="57K12X7W2Ew" role="37wK5m">
+                    <property role="Xl_RC" value="-ftrap-function=sanitizer_trap" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2OqwBi" id="4l47ydylfhc" role="3clFbw">
           <node concept="37vLTw" id="4l47ydylf6i" role="2Oq$k0">
@@ -1190,7 +1240,7 @@
                 <node concept="3clFbF" id="4l47ydyltJD" role="3cqZAp">
                   <node concept="37vLTI" id="4l47ydyluLI" role="3clFbG">
                     <node concept="Xl_RD" id="4l47ydyluOE" role="37vLTx">
-                      <property role="Xl_RC" value="clang-cl" />
+                      <property role="Xl_RC" value="clang" />
                     </node>
                     <node concept="2OqwBi" id="4l47ydylu1h" role="37vLTJ">
                       <node concept="37vLTw" id="4l47ydyltJB" role="2Oq$k0">
@@ -1203,33 +1253,54 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="4l47ydylziC" role="3clFbw">
-                <node concept="2OqwBi" id="4l47ydylyu9" role="2Oq$k0">
-                  <node concept="37vLTw" id="4l47ydylyiX" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4l47ydylsoM" resolve="sp" />
+              <node concept="3fqX7Q" id="57K12X7W4rr" role="3clFbw">
+                <node concept="2OqwBi" id="57K12X7W4rt" role="3fr31v">
+                  <node concept="2OqwBi" id="57K12X7W4ru" role="2Oq$k0">
+                    <node concept="37vLTw" id="57K12X7W4rv" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4l47ydylsoM" resolve="sp" />
+                    </node>
+                    <node concept="3TrcHB" id="57K12X7W4rw" role="2OqNvi">
+                      <ref role="3TsBF5" to="v326:7Rf0$0HCP5l" resolve="compiler" />
+                    </node>
                   </node>
-                  <node concept="3TrcHB" id="4l47ydylyLJ" role="2OqNvi">
-                    <ref role="3TsBF5" to="v326:7Rf0$0HCP5l" resolve="compiler" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="4l47ydylzKp" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="Xl_RD" id="4l47ydylzRi" role="37wK5m">
-                    <property role="Xl_RC" value="clang" />
+                  <node concept="liA8E" id="57K12X7W4rx" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="Xl_RD" id="57K12X7W4ry" role="37wK5m">
+                      <property role="Xl_RC" value="clang" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="4l47ydylvde" role="3cqZAp">
-              <node concept="d57v9" id="4l47ydylwjy" role="3clFbG">
-                <node concept="Xl_RD" id="4l47ydylwms" role="37vLTx">
-                  <property role="Xl_RC" value=" -fsanitize=undefined" />
+            <node concept="1X3_iC" id="57K12X7W9zn" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="4l47ydylvde" role="8Wnug">
+                <node concept="d57v9" id="4l47ydylwjy" role="3clFbG">
+                  <node concept="Xl_RD" id="4l47ydylwms" role="37vLTx">
+                    <property role="Xl_RC" value=" -fsanitize=undefined" />
+                  </node>
+                  <node concept="2OqwBi" id="4l47ydylvv2" role="37vLTJ">
+                    <node concept="37vLTw" id="4l47ydylvdc" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4l47ydylsoM" resolve="sp" />
+                    </node>
+                    <node concept="3TrcHB" id="4l47ydylvMB" role="2OqNvi">
+                      <ref role="3TsBF5" to="v326:7Rf0$0HCP5m" resolve="compilerOptions" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="2OqwBi" id="4l47ydylvv2" role="37vLTJ">
-                  <node concept="37vLTw" id="4l47ydylvdc" role="2Oq$k0">
+              </node>
+            </node>
+            <node concept="3clFbF" id="57K12X7W9GP" role="3cqZAp">
+              <node concept="37vLTI" id="57K12X7WaQU" role="3clFbG">
+                <node concept="Xl_RD" id="57K12X7WaYa" role="37vLTx">
+                  <property role="Xl_RC" value="-DWIN32 -DSAFETY -fsanitize=undefined -fsanitize-trap=undefined -ftrap-function=sanitizer_trap" />
+                </node>
+                <node concept="2OqwBi" id="57K12X7W9SE" role="37vLTJ">
+                  <node concept="37vLTw" id="57K12X7W9GN" role="2Oq$k0">
                     <ref role="3cqZAo" node="4l47ydylsoM" resolve="sp" />
                   </node>
-                  <node concept="3TrcHB" id="4l47ydylvMB" role="2OqNvi">
+                  <node concept="3TrcHB" id="57K12X7Waid" role="2OqNvi">
                     <ref role="3TsBF5" to="v326:7Rf0$0HCP5m" resolve="compilerOptions" />
                   </node>
                 </node>
@@ -1249,7 +1320,7 @@
       <node concept="3clFbS" id="4l47ydylnFl" role="2VODD2">
         <node concept="3clFbF" id="4l47ydylnNK" role="3cqZAp">
           <node concept="Xl_RD" id="4l47ydylnNJ" role="3clFbG">
-            <property role="Xl_RC" value="sets the clang-cl compiler and settings to enable instrumentation for undefined behavior" />
+            <property role="Xl_RC" value="sets the clang compiler and settings to enable instrumentation for undefined behavior and replay the witness" />
           </node>
         </node>
       </node>

@@ -3,12 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
   </languages>
@@ -84,9 +84,6 @@
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -7096,7 +7093,6 @@
     <node concept="2tJIrI" id="2HIlBfyAugW" role="jymVt" />
     <node concept="2YIFZL" id="2Ra3lNBh6Jt" role="jymVt">
       <property role="TrG5h" value="readFromFile" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="37vLTG" id="4$9c1ZylM6P" role="3clF46">
@@ -7565,7 +7561,6 @@
     <node concept="2tJIrI" id="2Ra3lNBeQkf" role="jymVt" />
     <node concept="3clFb_" id="2UdJgvDiYpa" role="jymVt">
       <property role="TrG5h" value="runTool" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2UdJgvD2kgT" role="3clF47">
@@ -8589,7 +8584,6 @@
     <node concept="2tJIrI" id="2UdJgvD2kn8" role="jymVt" />
     <node concept="2YIFZL" id="2Ra3lNBiB3G" role="jymVt">
       <property role="TrG5h" value="readStringlistFromFile" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2UdJgvD2knd" role="3clF47">
@@ -8698,7 +8692,6 @@
     </node>
     <node concept="2tJIrI" id="2UdJgvFpFi8" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcSy$M" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastProj" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="5KHBa6l6vYD" role="1tU5fm">
@@ -8711,7 +8704,6 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcSvL$" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcSxMQ" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastModel" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3_HSwtcSvxG" role="1tU5fm">
@@ -8724,7 +8716,6 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcSvMZ" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcSxKV" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastAnalyzerFactory" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3_HSwtcWwN2" role="1tU5fm">
@@ -8737,7 +8728,6 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcWxtx" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcWxhw" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastToolAdapter" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3_HSwtcWxGg" role="1tU5fm">
@@ -8750,7 +8740,6 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcWxHn" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcWxTr" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastAnalysisConfig" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3_HSwtcWybw" role="1tU5fm">
@@ -9483,7 +9472,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="doInBackground" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="4EriiVwjM39" role="1B3o_S" />
       <node concept="_YKpA" id="4EriiVwjM3a" role="3clF45">
         <node concept="3uibUv" id="4EriiVwncyu" role="_ZDj9">
@@ -11967,7 +11955,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="doInBackground" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="4fvA6OQXXBG" role="1B3o_S" />
       <node concept="_YKpA" id="4fvA6OQXXBH" role="3clF45">
         <node concept="16syzq" id="4fvA6OQXXBI" role="_ZDj9">

@@ -105,9 +105,6 @@
     <property role="TrG5h" value="UnspecifiedValue" />
     <property role="EcuMT" value="189280149336900979" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="PrWs8" id="awtkG0g$lT" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
 </model>
 

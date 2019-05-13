@@ -2,7 +2,7 @@
 <model ref="r:2e00714f-c0ab-49b2-b5c5-a4ada80aa17e(com.mbeddr.analyses.z3.translator)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
@@ -11,9 +11,9 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
   </languages>
@@ -112,9 +112,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -2414,7 +2412,6 @@
     <node concept="3Tm1VV" id="598CSoGhuF$" role="1B3o_S" />
     <node concept="2tJIrI" id="598CSoGhuG9" role="jymVt" />
     <node concept="3clFb_" id="598CSoGhuGJ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="canTranslate" />
       <node concept="3clFbS" id="598CSoGhuGM" role="3clF47" />
@@ -2438,7 +2435,6 @@
     </node>
     <node concept="2tJIrI" id="SU$cf9Tmiz" role="jymVt" />
     <node concept="3clFb_" id="SU$cf9TmfF" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="supportedConcepts" />
       <node concept="3clFbS" id="SU$cf9TmfG" role="3clF47" />
@@ -2452,7 +2448,6 @@
     </node>
     <node concept="2tJIrI" id="598CSoGhOzL" role="jymVt" />
     <node concept="3clFb_" id="598CSoGhOrS" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="translateExpression" />
       <node concept="3clFbS" id="598CSoGhOrT" role="3clF47" />
@@ -2753,7 +2748,7 @@
                             </node>
                           </node>
                           <node concept="2qgKlT" id="SU$cf9ULNc" role="2OqNvi">
-                            <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                            <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
                           </node>
                         </node>
                       </node>
@@ -3979,7 +3974,6 @@
     <node concept="3Tm1VV" id="4AeTWAG1cfV" role="1B3o_S" />
     <node concept="2tJIrI" id="4AeTWAG1cfW" role="jymVt" />
     <node concept="3clFb_" id="4AeTWAG1cfX" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="canTranslate" />
       <node concept="3clFbS" id="4AeTWAG1cfY" role="3clF47" />
@@ -4003,7 +3997,6 @@
     </node>
     <node concept="2tJIrI" id="4AeTWAG1cg4" role="jymVt" />
     <node concept="3clFb_" id="4AeTWAG1cg5" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="supportedConcepts" />
       <node concept="3clFbS" id="4AeTWAG1cg6" role="3clF47" />
@@ -4017,7 +4010,6 @@
     </node>
     <node concept="2tJIrI" id="4AeTWAG1cgb" role="jymVt" />
     <node concept="3clFb_" id="4AeTWAG1cgc" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="translateType" />
       <node concept="3clFbS" id="4AeTWAG1cgd" role="3clF47" />
