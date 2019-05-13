@@ -154,13 +154,6 @@
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
-      <concept id="5571169721036828248" name="com.mbeddr.core.embedded.structure.StructuredRegister" flags="ng" index="10BMG0">
-        <property id="5571169721036836232" name="enableLowHighAccess" index="10wczg" />
-        <property id="5571169721036836227" name="highSuffix" index="10wczr" />
-        <property id="5571169721036836229" name="lowSuffix" index="10wczt" />
-        <child id="5571169721036836244" name="lowSetExpr" index="10wczc" />
-        <child id="5571169721036836246" name="highSetExpr" index="10wcze" />
-      </concept>
       <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.DefaultInterruptKind" flags="ng" index="3_UBHe" />
       <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
         <child id="9172009453269286214" name="kind" index="3_UBH6" />
@@ -196,7 +189,6 @@
       <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
-      <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
       <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
@@ -961,26 +953,11 @@
     <node concept="3V4AM8" id="7uAyNpABc6k" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="reg16" />
-      <property role="10wczt" value="l" />
-      <property role="10wczr" value="h" />
-      <property role="10wczg" value="true" />
       <node concept="2BOciq" id="7uAyNpABc_k" role="3V4yCe">
         <node concept="3TlMh9" id="7uAyNpABc_n" role="3TlMhJ">
           <property role="2hmy$m" value="10" />
         </node>
         <node concept="3V4jtZ" id="7uAyNpABc6l" role="3TlMhI" />
-      </node>
-      <node concept="2BOcij" id="7uAyNpABcbJ" role="10wczc">
-        <node concept="3TlMh9" id="7uAyNpABcbM" role="3TlMhJ">
-          <property role="2hmy$m" value="2" />
-        </node>
-        <node concept="3V4jtZ" id="7uAyNpABcaO" role="3TlMhI" />
-      </node>
-      <node concept="2BOciq" id="7uAyNpABcoJ" role="10wcze">
-        <node concept="3TlMh9" id="7uAyNpABcoM" role="3TlMhJ">
-          <property role="2hmy$m" value="2" />
-        </node>
-        <node concept="3V4jtZ" id="7uAyNpABcii" role="3TlMhI" />
       </node>
     </node>
   </node>
