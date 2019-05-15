@@ -2,21 +2,21 @@
 <model ref="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
     <use id="b67a6ca0-735e-4903-b238-4b525bddf96a" name="com.mbeddr.mpsutil.genutil" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26155,6 +26155,25 @@
   <node concept="bUwia" id="4LYKrgdXjYJ">
     <property role="TrG5h" value="switchCase" />
     <property role="3GE5qa" value="switchCase" />
+    <node concept="3aamgX" id="66QQmYDLNpH" role="3acgRq">
+      <ref role="30HIoZ" to="c4fa:2I09F8VKHBW" resolve="SwitchStatement" />
+      <node concept="b5Tf3" id="66QQmYDMh4d" role="1lVwrX" />
+      <node concept="30G5F_" id="66QQmYDLUOv" role="30HLyM">
+        <node concept="3clFbS" id="66QQmYDLUOw" role="2VODD2">
+          <node concept="3clFbF" id="66QQmYDLUVO" role="3cqZAp">
+            <node concept="2OqwBi" id="66QQmYDLUVQ" role="3clFbG">
+              <node concept="2OqwBi" id="66QQmYDLUVR" role="2Oq$k0">
+                <node concept="30H73N" id="66QQmYDMfX$" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="66QQmYDMgRh" role="2OqNvi">
+                  <ref role="3TtcxE" to="c4fa:2I09F8VKHCv" resolve="cases" />
+                </node>
+              </node>
+              <node concept="1v1jN8" id="66QQmYDM4k3" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="4pp8_8Sv_1V" role="3acgRq">
       <ref role="30HIoZ" to="c4fa:2I09F8VKHBW" resolve="SwitchStatement" />
       <node concept="gft3U" id="4pp8_8Sy7uY" role="1lVwrX">
