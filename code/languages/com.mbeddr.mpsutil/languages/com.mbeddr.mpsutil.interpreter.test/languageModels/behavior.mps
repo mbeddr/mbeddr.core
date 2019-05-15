@@ -210,7 +210,7 @@
                       <ref role="3cqZAo" node="65E6xpGVsLD" resolve="ex" />
                     </node>
                     <node concept="liA8E" id="65E6xpGVSkC" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="65E6xpGVx1r" role="3uHU7B">
@@ -232,17 +232,17 @@
                     <ref role="3cqZAo" node="65E6xpGUT7u" resolve="expected" />
                   </node>
                   <node concept="liA8E" id="277McO9hgov" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                   </node>
                 </node>
                 <node concept="liA8E" id="277McO9hi38" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                   <node concept="2OqwBi" id="277McO9hidI" role="37wK5m">
                     <node concept="37vLTw" id="277McO9hi8l" role="2Oq$k0">
                       <ref role="3cqZAo" node="65E6xpGUUOz" resolve="actual" />
                     </node>
                     <node concept="liA8E" id="277McO9hirA" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                      <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                     </node>
                   </node>
                 </node>
@@ -252,7 +252,7 @@
                   <ref role="3cqZAo" node="65E6xpGUT7u" resolve="expected" />
                 </node>
                 <node concept="liA8E" id="65E6xpGUWfz" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                   <node concept="37vLTw" id="65E6xpGUWf$" role="37wK5m">
                     <ref role="3cqZAo" node="65E6xpGUUOz" resolve="actual" />
                   </node>
@@ -335,7 +335,7 @@
                             <ref role="3cqZAo" node="5Gh6GqGJP1y" resolve="expected" />
                           </node>
                           <node concept="liA8E" id="277McO9hj4i" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                            <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                           </node>
                         </node>
                       </node>
@@ -354,7 +354,7 @@
                   <ref role="3cqZAo" node="5Gh6GqGJP22" resolve="actual" />
                 </node>
                 <node concept="liA8E" id="277McO9hk0x" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                 </node>
               </node>
             </node>
@@ -575,7 +575,7 @@
                       <ref role="3cqZAo" node="2pogikRx4NL" resolve="ex" />
                     </node>
                     <node concept="liA8E" id="2pogikRx4NS" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="2pogikRx4NT" role="3uHU7B">
@@ -595,7 +595,7 @@
                 <ref role="3cqZAo" node="2pogikRx4Nn" resolve="expected" />
               </node>
               <node concept="liA8E" id="2pogikRx4NZ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Boolean.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~Boolean.equals(java.lang.Object)" resolve="equals" />
                 <node concept="37vLTw" id="2pogikRx4O0" role="37wK5m">
                   <ref role="3cqZAo" node="2pogikRx4Nq" resolve="actual" />
                 </node>

@@ -202,7 +202,7 @@
                   <ref role="3cqZAo" node="5lKnBeB3Ex$" resolve="fc" />
                 </node>
                 <node concept="liA8E" id="5lKnBeB4syX" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JFileChooser.setFileSelectionMode(int):void" resolve="setFileSelectionMode" />
+                  <ref role="37wK5l" to="dxuu:~JFileChooser.setFileSelectionMode(int)" resolve="setFileSelectionMode" />
                   <node concept="10M0yZ" id="5lKnBeB4sIb" role="37wK5m">
                     <ref role="1PxDUh" to="dxuu:~JFileChooser" resolve="JFileChooser" />
                     <ref role="3cqZAo" to="dxuu:~JFileChooser.DIRECTORIES_ONLY" resolve="DIRECTORIES_ONLY" />
@@ -233,7 +233,7 @@
                     <ref role="3cqZAo" node="5lKnBeB3Ex$" resolve="fc" />
                   </node>
                   <node concept="liA8E" id="5lKnBeB4gbW" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JFileChooser.getSelectedFile():java.io.File" resolve="getSelectedFile" />
+                    <ref role="37wK5l" to="dxuu:~JFileChooser.getSelectedFile()" resolve="getSelectedFile" />
                   </node>
                 </node>
               </node>
@@ -247,7 +247,7 @@
                     <ref role="3cqZAo" node="5lKnBeB4aqo" resolve="f" />
                   </node>
                   <node concept="liA8E" id="5lKnBeB4w0O" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                   </node>
                 </node>
               </node>
@@ -287,7 +287,7 @@
                           <ref role="3cqZAo" node="5lKnBeB4w0L" resolve="ap" />
                         </node>
                         <node concept="liA8E" id="5lKnBeB4Aoi" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                          <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                           <node concept="3cpWs3" id="5lKnBeB4FZB" role="37wK5m">
                             <node concept="3cmrfG" id="5lKnBeB4FZE" role="3uHU7w">
                               <property role="3cmrfH" value="1" />
@@ -300,7 +300,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="5lKnBeB4EUW" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                                <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                               </node>
                             </node>
                           </node>
@@ -328,7 +328,7 @@
                 <ref role="3cqZAo" node="5lKnBeB3Ex$" resolve="fc" />
               </node>
               <node concept="liA8E" id="5lKnBeB3LOH" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JFileChooser.showOpenDialog(java.awt.Component):int" resolve="showOpenDialog" />
+                <ref role="37wK5l" to="dxuu:~JFileChooser.showOpenDialog(java.awt.Component)" resolve="showOpenDialog" />
                 <node concept="10Nm6u" id="5lKnBeB3Vct" role="37wK5m" />
               </node>
             </node>

@@ -277,9 +277,9 @@
                   <ref role="3cqZAo" node="7uOgiT9uro" resolve="panel" />
                 </node>
                 <node concept="liA8E" id="7uOgiT9DD6" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JComponent.setBorder(javax.swing.border.Border):void" resolve="setBorder" />
+                  <ref role="37wK5l" to="dxuu:~JComponent.setBorder(javax.swing.border.Border)" resolve="setBorder" />
                   <node concept="2YIFZM" id="7uOgiT9EjK" role="37wK5m">
-                    <ref role="37wK5l" to="dxuu:~BorderFactory.createLineBorder(java.awt.Color):javax.swing.border.Border" resolve="createLineBorder" />
+                    <ref role="37wK5l" to="dxuu:~BorderFactory.createLineBorder(java.awt.Color)" resolve="createLineBorder" />
                     <ref role="1Pybhc" to="dxuu:~BorderFactory" resolve="BorderFactory" />
                     <node concept="10M0yZ" id="7uOgiT9E_k" role="37wK5m">
                       <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
@@ -336,7 +336,7 @@
                   <ref role="3cqZAo" node="7uOgiT9QxA" resolve="button" />
                 </node>
                 <node concept="liA8E" id="7uOgiT9Ru2" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                  <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                   <node concept="2ShNRf" id="7uOgiT9Rw0" role="37wK5m">
                     <node concept="YeOm9" id="7uOgiT9Sgh" role="2ShVmc">
                       <node concept="1Y3b0j" id="7uOgiT9Sgk" role="YeSDq">
@@ -384,7 +384,7 @@
                               <node concept="2OqwBi" id="7uOgiTa0lR" role="ukAjM">
                                 <node concept="1Q80Hx" id="7uOgiTa0ct" role="2Oq$k0" />
                                 <node concept="liA8E" id="7uOgiTa0q1" role="2OqNvi">
-                                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                                 </node>
                               </node>
                             </node>

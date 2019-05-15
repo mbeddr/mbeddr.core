@@ -558,7 +558,7 @@
                               <ref role="1snrk2" to="mj1l:1UQ4qqfV3yK" resolve="value" />
                               <node concept="2YIFZM" id="4U0cQfJW$f9" role="1snq_E">
                                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                                <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                                <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                                 <node concept="37vLTw" id="4U0cQfJW$fa" role="37wK5m">
                                   <ref role="3cqZAo" node="4U0cQfJW$ff" resolve="i" />
                                 </node>
@@ -667,7 +667,7 @@
                                   <ref role="1snrk2" to="mj1l:1UQ4qqfV3yK" resolve="value" />
                                   <node concept="2YIFZM" id="4U0cQfK87ql" role="1snq_E">
                                     <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                                    <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                                    <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                                     <node concept="37vLTw" id="4U0cQfK87qm" role="37wK5m">
                                       <ref role="3cqZAo" node="4U0cQfJW$ff" resolve="i" />
                                     </node>
@@ -734,7 +734,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4U0cQfJW$fq" role="2OqNvi">
-                <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+                <ref role="37wK5l" to="xlxw:~BigInteger.intValue()" resolve="intValue" />
               </node>
             </node>
           </node>

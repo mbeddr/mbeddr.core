@@ -289,7 +289,7 @@
               <ref role="3cqZAo" node="6xkj9mMqLD" resolve="code" />
             </node>
             <node concept="liA8E" id="17Dyz4Dv362" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
               <node concept="Xl_RD" id="17Dyz4Dv363" role="37wK5m">
                 <property role="Xl_RC" value="@startuml\n" />
               </node>
@@ -383,7 +383,7 @@
               <ref role="3cqZAo" node="6xkj9mMqLD" resolve="code" />
             </node>
             <node concept="liA8E" id="6xkj9mMqMt" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
               <node concept="37vLTw" id="6xkj9mMqMu" role="37wK5m">
                 <ref role="3cqZAo" node="6xkj9mMqLO" resolve="s" />
               </node>
@@ -396,7 +396,7 @@
               <ref role="3cqZAo" node="6xkj9mMqLD" resolve="code" />
             </node>
             <node concept="liA8E" id="2DnVhjr$P8B" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
               <node concept="Xl_RD" id="2DnVhjr$MnO" role="37wK5m">
                 <property role="Xl_RC" value="\n" />
               </node>
@@ -456,7 +456,7 @@
                 <ref role="3cqZAo" node="6xkj9mMqLD" resolve="code" />
               </node>
               <node concept="liA8E" id="6xkj9mMqYZ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~StringBuilder.toString():java.lang.String" resolve="toString" />
+                <ref role="37wK5l" to="wyt6:~StringBuilder.toString()" resolve="toString" />
               </node>
             </node>
           </node>

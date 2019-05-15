@@ -171,14 +171,14 @@
                         <node concept="_YI3z" id="Z4PF258BLk" role="2JrQYb" />
                       </node>
                       <node concept="liA8E" id="Z4PF258BLl" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getReference(java.lang.String):org.jetbrains.mps.openapi.model.SReference" resolve="getReference" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getReference(java.lang.String)" resolve="getReference" />
                         <node concept="Xl_RD" id="Z4PF258BLm" role="37wK5m">
                           <property role="Xl_RC" value="port" />
                         </node>
                       </node>
                     </node>
                     <node concept="liA8E" id="Z4PF258BLn" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SReference.getTargetNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTargetNode" />
+                      <ref role="37wK5l" to="mhbf:~SReference.getTargetNode()" resolve="getTargetNode" />
                     </node>
                   </node>
                   <node concept="3Tqbb2" id="Z4PF258BLg" role="10QFUM">
@@ -218,7 +218,7 @@
                 <node concept="_YI3z" id="Z4PF258YWr" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="Z4PF258YWs" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.setReferenceTarget(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="setReferenceTarget" />
+                <ref role="37wK5l" to="mhbf:~SNode.setReferenceTarget(java.lang.String,org.jetbrains.mps.openapi.model.SNode)" resolve="setReferenceTarget" />
                 <node concept="Xl_RD" id="Z4PF258YWt" role="37wK5m">
                   <property role="Xl_RC" value="port" />
                 </node>
@@ -241,7 +241,7 @@
                   <node concept="_YI3z" id="Z4PF25pQg7" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="Z4PF25pQg8" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getReference(java.lang.String):org.jetbrains.mps.openapi.model.SReference" resolve="getReference" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getReference(java.lang.String)" resolve="getReference" />
                   <node concept="Xl_RD" id="Z4PF25pQg9" role="37wK5m">
                     <property role="Xl_RC" value="port" />
                   </node>
@@ -278,7 +278,7 @@
                       <ref role="3cqZAo" node="Z4PF25pQg4" resolve="reference" />
                     </node>
                     <node concept="liA8E" id="Z4PF258FXg" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SReference.getTargetNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTargetNode" />
+                      <ref role="37wK5l" to="mhbf:~SReference.getTargetNode()" resolve="getTargetNode" />
                     </node>
                   </node>
                   <node concept="3Tqbb2" id="Z4PF258FXh" role="10QFUM">
@@ -341,7 +341,7 @@
             </node>
             <node concept="2OqwBi" id="2BQGECQHQDz" role="1DdaDG">
               <node concept="liA8E" id="2BQGECQHQD_" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getChildren(java.lang.String):java.lang.Iterable" resolve="getChildren" />
+                <ref role="37wK5l" to="mhbf:~SNode.getChildren(java.lang.String)" resolve="getChildren" />
                 <node concept="Xl_RD" id="2BQGECQHQDA" role="37wK5m">
                   <property role="Xl_RC" value="parameters" />
                 </node>
@@ -359,7 +359,7 @@
           <node concept="3clFbF" id="37qHMK0rIQD" role="3cqZAp">
             <node concept="2OqwBi" id="37qHMK0rIQF" role="3clFbG">
               <node concept="liA8E" id="37qHMK0rIQG" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.setReference(java.lang.String,org.jetbrains.mps.openapi.model.SReference):void" resolve="setReference" />
+                <ref role="37wK5l" to="mhbf:~SNode.setReference(java.lang.String,org.jetbrains.mps.openapi.model.SReference)" resolve="setReference" />
                 <node concept="Xl_RD" id="37qHMK0rIQH" role="37wK5m">
                   <property role="Xl_RC" value="parameters" />
                 </node>
@@ -385,7 +385,7 @@
               <node concept="2OqwBi" id="2BQGECQHBbM" role="2Oq$k0">
                 <node concept="2OqwBi" id="2BQGECQHzZw" role="2Oq$k0">
                   <node concept="liA8E" id="2BQGECQH$eD" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getChildren(java.lang.String):java.lang.Iterable" resolve="getChildren" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getChildren(java.lang.String)" resolve="getChildren" />
                     <node concept="Xl_RD" id="2BQGECQH$eK" role="37wK5m">
                       <property role="Xl_RC" value="parameters" />
                     </node>
@@ -400,11 +400,11 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2BQGECQHCrR" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                  <ref role="37wK5l" to="wyt6:~Iterable.iterator()" resolve="iterator" />
                 </node>
               </node>
               <node concept="liA8E" id="2BQGECQHDEi" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
               </node>
             </node>
           </node>

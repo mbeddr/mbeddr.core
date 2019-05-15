@@ -115,11 +115,11 @@
           <node concept="2OqwBi" id="X7OD3Wu782" role="3clFbG">
             <node concept="2OqwBi" id="X7OD3Wu5MH" role="2Oq$k0">
               <node concept="2YIFZM" id="X7OD3Wu5rS" role="2Oq$k0">
-                <ref role="37wK5l" to="9ti4:~Extensions.getRootArea():com.intellij.openapi.extensions.ExtensionsArea" resolve="getRootArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getRootArea()" resolve="getRootArea" />
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
               </node>
               <node concept="liA8E" id="X7OD3Wu5UG" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="X7OD3Wu6i9" role="37wK5m">
                   <ref role="1PxDUh" to="hq8m:~Configurable" resolve="Configurable" />
                   <ref role="3cqZAo" to="hq8m:~Configurable.APPLICATION_CONFIGURABLE" resolve="APPLICATION_CONFIGURABLE" />
@@ -127,7 +127,7 @@
               </node>
             </node>
             <node concept="liA8E" id="X7OD3Wu7Eb" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object):void" resolve="registerExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object)" resolve="registerExtension" />
               <node concept="Xjq3P" id="X7OD3Wu7LW" role="37wK5m" />
             </node>
           </node>
@@ -137,17 +137,17 @@
             <node concept="2OqwBi" id="qD4yGfoMB1" role="2Oq$k0">
               <node concept="2YIFZM" id="qD4yGfoMB2" role="2Oq$k0">
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
-                <ref role="37wK5l" to="9ti4:~Extensions.getRootArea():com.intellij.openapi.extensions.ExtensionsArea" resolve="getRootArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getRootArea()" resolve="getRootArea" />
               </node>
               <node concept="liA8E" id="qD4yGfoMB3" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="37vLTw" id="qD4yGfoMBe" role="37wK5m">
                   <ref role="3cqZAo" to="hq8m:~Configurable.APPLICATION_CONFIGURABLE" resolve="APPLICATION_CONFIGURABLE" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="qD4yGfoOyt" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.getExtensions():java.lang.Object[]" resolve="getExtensions" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.getExtensions()" resolve="getExtensions" />
             </node>
           </node>
         </node>
@@ -170,11 +170,11 @@
           <node concept="2OqwBi" id="X7OD3Wu7UL" role="3clFbG">
             <node concept="2OqwBi" id="X7OD3Wu7UM" role="2Oq$k0">
               <node concept="2YIFZM" id="X7OD3Wu7UN" role="2Oq$k0">
-                <ref role="37wK5l" to="9ti4:~Extensions.getRootArea():com.intellij.openapi.extensions.ExtensionsArea" resolve="getRootArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getRootArea()" resolve="getRootArea" />
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
               </node>
               <node concept="liA8E" id="X7OD3Wu7UO" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="X7OD3Wu7UP" role="37wK5m">
                   <ref role="1PxDUh" to="hq8m:~Configurable" resolve="Configurable" />
                   <ref role="3cqZAo" to="hq8m:~Configurable.APPLICATION_CONFIGURABLE" resolve="APPLICATION_CONFIGURABLE" />
@@ -182,7 +182,7 @@
               </node>
             </node>
             <node concept="liA8E" id="X7OD3Wu7UQ" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object):void" resolve="unregisterExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object)" resolve="unregisterExtension" />
               <node concept="Xjq3P" id="X7OD3Wu7UR" role="37wK5m" />
             </node>
           </node>

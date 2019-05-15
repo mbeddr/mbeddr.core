@@ -325,11 +325,11 @@
                         </node>
                         <node concept="2OqwBi" id="31xWCC5Yt7" role="3uHU7B">
                           <node concept="2YIFZM" id="31xWCC5Yt8" role="2Oq$k0">
-                            <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                            <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                             <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                           </node>
                           <node concept="liA8E" id="31xWCC5Yt9" role="2OqNvi">
-                            <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                            <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                           </node>
                         </node>
                       </node>
@@ -715,11 +715,11 @@
                                                     <node concept="2OqwBi" id="1mj5sqTbijJ" role="2Oq$k0">
                                                       <node concept="1Q80Hx" id="1mj5sqTbiaG" role="2Oq$k0" />
                                                       <node concept="liA8E" id="1mj5sqTbkmv" role="2OqNvi">
-                                                        <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                                                        <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                                                       </node>
                                                     </node>
                                                     <node concept="liA8E" id="1mj5sqTbkKR" role="2OqNvi">
-                                                      <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                                                      <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
                                                     </node>
                                                   </node>
                                                 </node>
@@ -735,11 +735,11 @@
                                                       <node concept="2OqwBi" id="1mj5sqTbluq" role="2Oq$k0">
                                                         <node concept="1Q80Hx" id="1mj5sqTblur" role="2Oq$k0" />
                                                         <node concept="liA8E" id="1mj5sqTblus" role="2OqNvi">
-                                                          <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                                                          <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                                                         </node>
                                                       </node>
                                                       <node concept="liA8E" id="1mj5sqTbmsy" role="2OqNvi">
-                                                        <ref role="37wK5l" to="w1kc:~IOperationContext.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                                                        <ref role="37wK5l" to="w1kc:~IOperationContext.getModule()" resolve="getModule" />
                                                       </node>
                                                     </node>
                                                   </node>
@@ -799,7 +799,7 @@
                                   <node concept="2OqwBi" id="1mj5sqT8KQZ" role="ukAjM">
                                     <node concept="1Q80Hx" id="1mj5sqT8KR0" role="2Oq$k0" />
                                     <node concept="liA8E" id="1mj5sqT8KR1" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                                     </node>
                                   </node>
                                 </node>
@@ -1471,7 +1471,7 @@
               <node concept="2OqwBi" id="55ShMBE4bAy" role="3cqZAk">
                 <node concept="2YIFZM" id="55ShMBE3VdQ" role="2Oq$k0">
                   <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
-                  <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(org.jetbrains.mps.openapi.module.SModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
+                  <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(org.jetbrains.mps.openapi.module.SModule)" resolve="forModule" />
                   <node concept="2OqwBi" id="JJxXu1sFmg" role="37wK5m">
                     <node concept="pncrf" id="JJxXu1sFmh" role="2Oq$k0" />
                     <node concept="2qgKlT" id="JJxXu1sFmi" role="2OqNvi">
@@ -1480,7 +1480,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="55ShMBE4c4i" role="2OqNvi">
-                  <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                  <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String)" resolve="expandPath" />
                   <node concept="2OqwBi" id="55ShMBE4cL9" role="37wK5m">
                     <node concept="pncrf" id="55ShMBE4csx" role="2Oq$k0" />
                     <node concept="3TrcHB" id="55ShMBE4dHG" role="2OqNvi">

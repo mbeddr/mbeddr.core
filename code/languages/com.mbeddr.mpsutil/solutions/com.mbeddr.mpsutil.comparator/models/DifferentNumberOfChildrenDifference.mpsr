@@ -292,11 +292,11 @@
                                       <node concept="2NL2c5" id="5RIakkDJOSP" role="2OqNvi" />
                                     </node>
                                     <node concept="liA8E" id="5RIakkDJOSQ" role="2OqNvi">
-                                      <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                                      <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="6fymoI4XrZv" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                     <node concept="37vLTw" id="6fymoI4XrZw" role="37wK5m">
                                       <ref role="3cqZAo" node="DYlgnA_739" resolve="link" />
                                     </node>
@@ -341,11 +341,11 @@
                               <node concept="2NL2c5" id="5RIakkDJOT4" role="2OqNvi" />
                             </node>
                             <node concept="liA8E" id="5RIakkDJOT5" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                             </node>
                           </node>
                           <node concept="liA8E" id="6fymoI4XrZN" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                             <node concept="37vLTw" id="6fymoI4XrZO" role="37wK5m">
                               <ref role="3cqZAo" node="DYlgnA_739" resolve="link" />
                             </node>

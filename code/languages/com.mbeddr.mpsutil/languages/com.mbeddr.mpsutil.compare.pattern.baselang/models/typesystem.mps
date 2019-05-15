@@ -676,11 +676,11 @@
                     <node concept="2OqwBi" id="3JvTRSXZd8k" role="2Oq$k0">
                       <node concept="2QUAEa" id="3JvTRSXZd8l" role="2Oq$k0" />
                       <node concept="liA8E" id="3JvTRSXZd8m" role="2OqNvi">
-                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                       </node>
                     </node>
                     <node concept="liA8E" id="3JvTRSXZd8n" role="2OqNvi">
-                      <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+                      <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
                       <node concept="37vLTw" id="3JvTRSXZd8o" role="37wK5m">
                         <ref role="3cqZAo" node="3JvTRSXZ7qa" resolve="operandType" />
                       </node>
@@ -699,11 +699,11 @@
                     <node concept="2OqwBi" id="3JvTRSXZde_" role="2Oq$k0">
                       <node concept="2QUAEa" id="3JvTRSXZdeA" role="2Oq$k0" />
                       <node concept="liA8E" id="3JvTRSXZdeB" role="2OqNvi">
-                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                       </node>
                     </node>
                     <node concept="liA8E" id="3JvTRSXZdeC" role="2OqNvi">
-                      <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+                      <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
                       <node concept="37vLTw" id="3JvTRSXZdeE" role="37wK5m">
                         <ref role="3cqZAo" node="3JvTRSXZ7bx" resolve="expressionType" />
                       </node>

@@ -118,7 +118,7 @@
               <node concept="tyxLq" id="v3WHCwUqIz" role="2OqNvi">
                 <node concept="2YIFZM" id="791rit5f63$" role="tz02z">
                   <ref role="1Pybhc" to="18ew:~SNodeOperations" resolve="SNodeOperations" />
-                  <ref role="37wK5l" to="18ew:~SNodeOperations.getModelLongName(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getModelLongName" />
+                  <ref role="37wK5l" to="18ew:~SNodeOperations.getModelLongName(org.jetbrains.mps.openapi.model.SModel)" resolve="getModelLongName" />
                   <node concept="1Q6Npb" id="KILMQGVaSe" role="37wK5m" />
                 </node>
               </node>
@@ -136,7 +136,7 @@
               </node>
               <node concept="tyxLq" id="v3WHCwUqIP" role="2OqNvi">
                 <node concept="2YIFZM" id="791rit5f66L" role="tz02z">
-                  <ref role="37wK5l" to="w1kc:~SModelStereotype.getStereotype(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getStereotype" />
+                  <ref role="37wK5l" to="w1kc:~SModelStereotype.getStereotype(org.jetbrains.mps.openapi.model.SModel)" resolve="getStereotype" />
                   <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
                   <node concept="1Q6Npb" id="KILMQGVaUe" role="37wK5m" />
                 </node>

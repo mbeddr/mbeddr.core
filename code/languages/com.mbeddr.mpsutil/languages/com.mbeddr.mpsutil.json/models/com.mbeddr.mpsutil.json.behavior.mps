@@ -83,15 +83,15 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="34$4Bn6iq2l" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
                 </node>
               </node>
               <node concept="liA8E" id="34$4Bn6iqzz" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
+                <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
               </node>
             </node>
             <node concept="liA8E" id="34$4Bn6itlf" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.replace(char,char):java.lang.String" resolve="replace" />
+              <ref role="37wK5l" to="wyt6:~String.replace(char,char)" resolve="replace" />
               <node concept="1Xhbcc" id="34$4Bn6iubA" role="37wK5m">
                 <property role="1XhdNS" value="." />
               </node>

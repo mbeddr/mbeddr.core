@@ -80,7 +80,7 @@
                 <node concept="_YI3z" id="6hLPhdD4Oet" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="6hLPhdD4Pmu" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String)" resolve="setProperty" />
                 <node concept="Xl_RD" id="6hLPhdD4Pnl" role="37wK5m">
                   <property role="Xl_RC" value="contextNodeIdD" />
                 </node>
@@ -94,7 +94,7 @@
                 <node concept="_YI3z" id="58MiY5_ByMn" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="58MiY5_ByMo" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String)" resolve="setProperty" />
                 <node concept="Xl_RD" id="58MiY5_ByMp" role="37wK5m">
                   <property role="Xl_RC" value="contextNodeId" />
                 </node>
@@ -114,7 +114,7 @@
                     <node concept="_YI3z" id="6hLPhdD1dtg" role="2JrQYb" />
                   </node>
                   <node concept="liA8E" id="6hLPhdD1f5_" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String)" resolve="getProperty" />
                     <node concept="Xl_RD" id="6hLPhdD1fvw" role="37wK5m">
                       <property role="Xl_RC" value="contextNodeIdD" />
                     </node>
@@ -128,7 +128,7 @@
                     <node concept="_YI3z" id="58MiY5_By1f" role="2JrQYb" />
                   </node>
                   <node concept="liA8E" id="58MiY5_By1g" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String)" resolve="getProperty" />
                     <node concept="Xl_RD" id="58MiY5_By1h" role="37wK5m">
                       <property role="Xl_RC" value="contextNodeId" />
                     </node>

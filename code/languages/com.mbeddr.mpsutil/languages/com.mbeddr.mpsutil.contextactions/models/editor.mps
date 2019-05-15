@@ -791,11 +791,11 @@
                       <node concept="2OqwBi" id="4mMeETlpHjm" role="I$8f6">
                         <node concept="2OqwBi" id="4mMeETlpHjn" role="2Oq$k0">
                           <node concept="2YIFZM" id="4mMeETlpHjo" role="2Oq$k0">
-                            <ref role="37wK5l" to="qkt:~ActionManager.getInstance():com.intellij.openapi.actionSystem.ActionManager" resolve="getInstance" />
+                            <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
                             <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
                           </node>
                           <node concept="liA8E" id="4mMeETlpHjp" role="2OqNvi">
-                            <ref role="37wK5l" to="qkt:~ActionManager.getActionIds(java.lang.String):java.lang.String[]" resolve="getActionIds" />
+                            <ref role="37wK5l" to="qkt:~ActionManager.getActionIds(java.lang.String)" resolve="getActionIds" />
                             <node concept="Xl_RD" id="4mMeETlpHjq" role="37wK5m">
                               <property role="Xl_RC" value="" />
                             </node>
@@ -1446,15 +1446,15 @@
                     <node concept="2OqwBi" id="7me2y0SPc6w" role="33vP2m">
                       <node concept="2OqwBi" id="7me2y0SPc6x" role="2Oq$k0">
                         <node concept="2YIFZM" id="7me2y0SPc6y" role="2Oq$k0">
-                          <ref role="37wK5l" to="91lp:~IntentionsManager.getInstance():jetbrains.mps.intentions.IntentionsManager" resolve="getInstance" />
+                          <ref role="37wK5l" to="91lp:~IntentionsManager.getInstance()" resolve="getInstance" />
                           <ref role="1Pybhc" to="91lp:~IntentionsManager" resolve="IntentionsManager" />
                         </node>
                         <node concept="liA8E" id="7me2y0SPc6z" role="2OqNvi">
-                          <ref role="37wK5l" to="91lp:~IntentionsManager.getAllIntentionFactories():java.util.Map" resolve="getAllIntentionFactories" />
+                          <ref role="37wK5l" to="91lp:~IntentionsManager.getAllIntentionFactories()" resolve="getAllIntentionFactories" />
                         </node>
                       </node>
                       <node concept="liA8E" id="7me2y0SPc6$" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Map.values():java.util.Collection" resolve="values" />
+                        <ref role="37wK5l" to="33ny:~Map.values()" resolve="values" />
                       </node>
                     </node>
                   </node>
@@ -1494,7 +1494,7 @@
                                     <ref role="3cqZAo" node="4txsJZupJQm" resolve="it" />
                                   </node>
                                   <node concept="liA8E" id="4txsJZupWfa" role="2OqNvi">
-                                    <ref role="37wK5l" to="nddn:~IntentionDescriptor.getPersistentStateKey():java.lang.String" resolve="getPersistentStateKey" />
+                                    <ref role="37wK5l" to="nddn:~IntentionDescriptor.getPersistentStateKey()" resolve="getPersistentStateKey" />
                                   </node>
                                 </node>
                               </node>

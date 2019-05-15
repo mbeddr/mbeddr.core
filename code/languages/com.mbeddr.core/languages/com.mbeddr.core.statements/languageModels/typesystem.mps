@@ -560,7 +560,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="1OcdQnyTC3Q" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="2OqwBi" id="1OcdQnyTC3S" role="37wK5m">
                         <node concept="1YBJjd" id="1OcdQnyTC3R" role="2Oq$k0">
                           <ref role="1YBMHb" node="1OcdQnyTC1C" resolve="lvd" />
@@ -1300,11 +1300,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="79i$vAY5Zdz" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="4nazFRvnzVd" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="4nazFRvnzVe" role="37wK5m">
                 <property role="Xl_RC" value="Expression" />
               </node>

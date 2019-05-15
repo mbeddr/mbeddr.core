@@ -589,7 +589,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="7TAjv1QVccv" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SNode.getPresentation():java.lang.String" resolve="getPresentation" />
+                                    <ref role="37wK5l" to="mhbf:~SNode.getPresentation()" resolve="getPresentation" />
                                   </node>
                                 </node>
                               </node>
@@ -604,7 +604,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="7TAjv1QVccG" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SNode.getPresentation():java.lang.String" resolve="getPresentation" />
+                                <ref role="37wK5l" to="mhbf:~SNode.getPresentation()" resolve="getPresentation" />
                               </node>
                             </node>
                           </node>

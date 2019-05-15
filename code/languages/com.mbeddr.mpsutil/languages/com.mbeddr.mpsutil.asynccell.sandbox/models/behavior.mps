@@ -306,7 +306,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="17HIJlL0Gns" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~Timer.stop():void" resolve="stop" />
+                  <ref role="37wK5l" to="dxuu:~Timer.stop()" resolve="stop" />
                 </node>
               </node>
             </node>
@@ -380,7 +380,7 @@
               <ref role="3cqZAo" node="17HIJlL0Ew$" resolve="timer" />
             </node>
             <node concept="liA8E" id="17HIJlL0BGc" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~Timer.setRepeats(boolean):void" resolve="setRepeats" />
+              <ref role="37wK5l" to="dxuu:~Timer.setRepeats(boolean)" resolve="setRepeats" />
               <node concept="3clFbT" id="17HIJlL0Cz2" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -393,7 +393,7 @@
               <ref role="3cqZAo" node="17HIJlL0Ew$" resolve="timer" />
             </node>
             <node concept="liA8E" id="17HIJlL0pUp" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~Timer.start():void" resolve="start" />
+              <ref role="37wK5l" to="dxuu:~Timer.start()" resolve="start" />
             </node>
           </node>
         </node>

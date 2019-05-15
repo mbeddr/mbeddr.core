@@ -477,7 +477,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="2nfOfEfM$K6" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c4:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                    <ref role="37wK5l" to="z1c4:~MPSProject.getProject()" resolve="getProject" />
                   </node>
                 </node>
               </node>
@@ -823,7 +823,7 @@
                   <ref role="3cqZAo" node="7XCY$_raYfy" resolve="spinLiftedResultsTool" />
                 </node>
                 <node concept="liA8E" id="7XCY$_rb14R" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="7XCY$_rb19K" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -836,7 +836,7 @@
                   <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="spinRawResultsTool" />
                 </node>
                 <node concept="liA8E" id="6izRX53r8Hx" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="6izRX53r8Hy" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -873,7 +873,7 @@
                 <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="spinRawResultsTool" />
               </node>
               <node concept="liA8E" id="6izRX53r8HA" role="2OqNvi">
-                <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
+                <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened()" resolve="toolIsOpened" />
               </node>
             </node>
           </node>
@@ -1012,7 +1012,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="2nfOfEfMyyt" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c4:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                    <ref role="37wK5l" to="z1c4:~MPSProject.getProject()" resolve="getProject" />
                   </node>
                 </node>
               </node>

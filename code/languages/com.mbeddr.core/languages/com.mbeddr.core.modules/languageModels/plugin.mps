@@ -414,7 +414,7 @@
                         <ref role="3cqZAo" node="PXLOXmyZ7X" resolve="initialState" />
                       </node>
                       <node concept="liA8E" id="7flyvjXxIbV" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                        <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                         <node concept="37vLTw" id="7flyvjXxIbW" role="37wK5m">
                           <ref role="3cqZAo" node="PXLOXmyZ7Z" resolve="repository" />
                         </node>
@@ -439,7 +439,7 @@
                   <ref role="3cqZAo" node="PXLOXmyZ7X" resolve="initialState" />
                 </node>
                 <node concept="liA8E" id="7flyvjXxD88" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                  <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                   <node concept="37vLTw" id="7flyvjXxD89" role="37wK5m">
                     <ref role="3cqZAo" node="PXLOXmyZ7Z" resolve="repository" />
                   </node>
@@ -461,7 +461,7 @@
                   <ref role="3cqZAo" node="PXLOXmyZ7X" resolve="initialState" />
                 </node>
                 <node concept="liA8E" id="1DR1niBkgTH" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                  <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                   <node concept="37vLTw" id="1DR1niBkgTI" role="37wK5m">
                     <ref role="3cqZAo" node="PXLOXmyZ7Z" resolve="repository" />
                   </node>
@@ -729,7 +729,7 @@
                                               <ref role="3cqZAo" node="2aY$7DLS_Am" resolve="finalState" />
                                             </node>
                                             <node concept="liA8E" id="2aY$7DLMwf_" role="2OqNvi">
-                                              <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                                              <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                                               <node concept="37vLTw" id="2aY$7DLMwfA" role="37wK5m">
                                                 <ref role="3cqZAo" node="2aY$7DLS_An" resolve="repository" />
                                               </node>
@@ -908,7 +908,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6O2$eQcB9pq" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getReference():org.jetbrains.mps.openapi.model.SNodeReference" resolve="getReference" />
+                      <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
                     </node>
                   </node>
                 </node>
@@ -934,7 +934,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6O2$eQcB9p_" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getReference():org.jetbrains.mps.openapi.model.SNodeReference" resolve="getReference" />
+                      <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
                     </node>
                   </node>
                 </node>
@@ -1073,7 +1073,7 @@
                   <ref role="3cqZAo" node="6gEjUfBzAKD" resolve="project" />
                 </node>
                 <node concept="liA8E" id="55uxGWy8qqp" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
             </node>
@@ -1129,7 +1129,7 @@
               <ref role="3cqZAo" node="6gEjUfBzAKD" resolve="project" />
             </node>
             <node concept="liA8E" id="1yIP13ODqTF" role="2OqNvi">
-              <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>

@@ -86,7 +86,7 @@
                 <node concept="_YI3z" id="2xRMs06XRQT" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="4LLYoSIkxV" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String)" resolve="setProperty" />
                 <node concept="Xl_RD" id="4LLYoSIkxW" role="37wK5m">
                   <property role="Xl_RC" value="unsigned" />
                 </node>
@@ -111,7 +111,7 @@
                   <node concept="_YI3z" id="2xRMs06XRFb" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="4LLYoSMZH$" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String)" resolve="getProperty" />
                   <node concept="Xl_RD" id="4LLYoSMZH_" role="37wK5m">
                     <property role="Xl_RC" value="unsigned" />
                   </node>

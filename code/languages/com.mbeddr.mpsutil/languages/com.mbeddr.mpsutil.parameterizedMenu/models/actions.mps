@@ -268,7 +268,7 @@
                       <node concept="2yIwOk" id="lb9twMadlG" role="2OqNvi" />
                     </node>
                     <node concept="liA8E" id="lb9twMadlH" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
                     </node>
                   </node>
                 </node>
@@ -419,7 +419,7 @@
                       <node concept="2yIwOk" id="lb9twMaeLB" role="2OqNvi" />
                     </node>
                     <node concept="liA8E" id="lb9twMaeLC" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
                     </node>
                   </node>
                 </node>

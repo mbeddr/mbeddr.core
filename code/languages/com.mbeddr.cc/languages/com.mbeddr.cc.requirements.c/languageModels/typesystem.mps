@@ -575,7 +575,7 @@
                   <ref role="3cqZAo" node="35Kh8LWsSN4" resolve="actual" />
                 </node>
                 <node concept="liA8E" id="1uZspiYytbt" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                   <node concept="37vLTw" id="1uZspiYytbu" role="37wK5m">
                     <ref role="3cqZAo" node="35Kh8LWsSNk" resolve="exp" />
                   </node>
@@ -601,7 +601,7 @@
                         <ref role="3cqZAo" node="35Kh8LWt8n0" resolve="ex" />
                       </node>
                       <node concept="liA8E" id="35Kh8LWt8o0" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="35Kh8LWt8nd" role="3uHU7B">

@@ -471,7 +471,7 @@
         <node concept="3clFbF" id="3eWkbyCTBCK" role="3cqZAp">
           <node concept="2OqwBi" id="5Hxjapwed0v" role="3clFbG">
             <node concept="liA8E" id="5Hxjapwed0w" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
+              <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode)" resolve="addRootNode" />
               <node concept="37vLTw" id="5HxjapweqlR" role="37wK5m">
                 <ref role="3cqZAo" node="7Uz1bYM3TOZ" resolve="immo" />
               </node>
@@ -484,7 +484,7 @@
         <node concept="3clFbF" id="3eWkbyCTBCU" role="3cqZAp">
           <node concept="2OqwBi" id="5Hxjapwed0r" role="3clFbG">
             <node concept="liA8E" id="5Hxjapwed0s" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
+              <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode)" resolve="addRootNode" />
               <node concept="37vLTw" id="5Hxjapwed0t" role="37wK5m">
                 <ref role="3cqZAo" node="3eWkbyCTBCr" resolve="bc" />
               </node>

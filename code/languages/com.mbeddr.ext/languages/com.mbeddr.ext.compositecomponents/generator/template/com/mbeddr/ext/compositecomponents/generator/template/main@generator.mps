@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
@@ -160,9 +160,6 @@
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
         <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
-      <concept id="5015072279636464462" name="jetbrains.mps.lang.generator.structure.VarMacro" flags="lg" index="2jeGV$">
-        <child id="5015072279636624596" name="value" index="2jfP_Y" />
-      </concept>
       <concept id="5015072279636592410" name="jetbrains.mps.lang.generator.structure.VarMacro_ValueQuery" flags="in" index="2jfdEK" />
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
@@ -180,6 +177,12 @@
         <child id="1195501105008" name="codeBlock" index="1pqMTA" />
       </concept>
       <concept id="1195500722856" name="jetbrains.mps.lang.generator.structure.MappingScript_CodeBlock" flags="in" index="1pplIY" />
+      <concept id="1048903277984099206" name="jetbrains.mps.lang.generator.structure.VarDeclaration" flags="ng" index="1ps_xZ">
+        <child id="1048903277984099210" name="value" index="1ps_xN" />
+      </concept>
+      <concept id="1048903277984099198" name="jetbrains.mps.lang.generator.structure.VarMacro2" flags="lg" index="1ps_y7">
+        <child id="1048903277984099213" name="variables" index="1ps_xO" />
+      </concept>
       <concept id="1195502151594" name="jetbrains.mps.lang.generator.structure.MappingScriptReference" flags="lg" index="1puMqW">
         <reference id="1195502167610" name="mappingScript" index="1puQsG" />
       </concept>
@@ -1194,7 +1197,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="3ejBUtVm4bp" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="2OqwBi" id="3ejBUtVm4bq" role="37wK5m">
                                     <node concept="2GrUjf" id="3ejBUtVm4br" role="2Oq$k0">
                                       <ref role="2Gs0qQ" node="3ejBUtVm4aO" resolve="rp" />
@@ -1720,12 +1723,14 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2jeGV$" id="2qwvqnUvor3" role="lGtFl">
-                      <property role="TrG5h" value="initInternalInstances" />
-                      <node concept="2jfdEK" id="2qwvqnUvor4" role="2jfP_Y">
-                        <node concept="3clFbS" id="2qwvqnUvor5" role="2VODD2">
-                          <node concept="3clFbF" id="2qwvqnUvor6" role="3cqZAp">
-                            <node concept="30H73N" id="2qwvqnUvor7" role="3clFbG" />
+                    <node concept="1ps_y7" id="3pRoIUFYqTc" role="lGtFl">
+                      <node concept="1ps_xZ" id="3pRoIUFYqTb" role="1ps_xO">
+                        <property role="TrG5h" value="initInternalInstances" />
+                        <node concept="2jfdEK" id="2qwvqnUvor4" role="1ps_xN">
+                          <node concept="3clFbS" id="2qwvqnUvor5" role="2VODD2">
+                            <node concept="3clFbF" id="2qwvqnUvor6" role="3cqZAp">
+                              <node concept="30H73N" id="2qwvqnUvor7" role="3clFbG" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -1809,7 +1814,7 @@
                                                 </node>
                                               </node>
                                               <node concept="liA8E" id="2qwvqnUvorG" role="2OqNvi">
-                                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                                 <node concept="37vLTw" id="2qwvqnUvorH" role="37wK5m">
                                                   <ref role="3cqZAo" node="2qwvqnUvork" resolve="property" />
                                                 </node>
@@ -3118,7 +3123,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="3ejBUtVm4mb" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="37vLTw" id="3ejBUtVm4mc" role="37wK5m">
                                     <ref role="3cqZAo" node="3ejBUtVm4lU" resolve="shadowInstanceName" />
                                   </node>
@@ -3199,7 +3204,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="3ejBUtVm4mI" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                       <node concept="2OqwBi" id="3ejBUtVm4mJ" role="37wK5m">
                                         <node concept="2OqwBi" id="3ejBUtVm4mK" role="2Oq$k0">
                                           <node concept="2GrUjf" id="3ejBUtVm4mL" role="2Oq$k0">

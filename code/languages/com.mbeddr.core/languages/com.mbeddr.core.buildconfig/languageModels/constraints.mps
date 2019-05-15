@@ -320,7 +320,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5CkU_dHieF3" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                   </node>
                 </node>
               </node>
@@ -369,11 +369,11 @@
                 <node concept="1Q6Npb" id="4ol4Q3pLQOY" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="4ol4Q3pLRk8" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+                <ref role="37wK5l" to="mhbf:~SModel.getModelName()" resolve="getModelName" />
               </node>
             </node>
             <node concept="liA8E" id="4ol4Q3pLTpl" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
               <node concept="Xl_RD" id="4ol4Q3pLRAj" role="37wK5m">
                 <property role="Xl_RC" value="PlatformTemplates" />
               </node>
@@ -548,7 +548,7 @@
                   <node concept="EsrRn" id="7GmkyIHFCdF" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="7GmkyIHFCdG" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty):java.lang.String" resolve="getProperty" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty)" resolve="getProperty" />
                   <node concept="355D3s" id="7GmkyIHFCdH" role="37wK5m">
                     <ref role="355D3t" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
                     <ref role="355D3u" to="51wr:71C71cTwLEc" resolve="parallelProcesses" />

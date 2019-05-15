@@ -255,7 +255,7 @@
                       <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
                     </node>
                     <node concept="liA8E" id="4w7It07pnHq" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+                      <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel)" resolve="is" />
                       <node concept="2OqwBi" id="4w7It07pnLS" role="37wK5m">
                         <node concept="pncrf" id="4w7It07pnJv" role="2Oq$k0" />
                         <node concept="I4A8Y" id="4w7It07pnPK" role="2OqNvi" />
@@ -269,7 +269,7 @@
                         <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
                       </node>
                       <node concept="liA8E" id="4w7It07pok7" role="2OqNvi">
-                        <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+                        <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel)" resolve="is" />
                         <node concept="2OqwBi" id="4w7It07poqD" role="37wK5m">
                           <node concept="pncrf" id="4w7It07pon_" role="2Oq$k0" />
                           <node concept="I4A8Y" id="4w7It07povl" role="2OqNvi" />
@@ -291,7 +291,7 @@
                         <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
                       </node>
                       <node concept="liA8E" id="4w7It07pp7h" role="2OqNvi">
-                        <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+                        <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel)" resolve="is" />
                         <node concept="2OqwBi" id="4w7It07ppfx" role="37wK5m">
                           <node concept="pncrf" id="4w7It07ppbU" role="2Oq$k0" />
                           <node concept="I4A8Y" id="4w7It07ppkK" role="2OqNvi" />

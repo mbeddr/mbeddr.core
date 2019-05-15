@@ -1696,7 +1696,7 @@
                         <ref role="3cqZAo" node="1$baREjM8Z1" resolve="name" />
                       </node>
                       <node concept="liA8E" id="1$baREjMbin" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                         <node concept="3cmrfG" id="1$baREjMbkb" role="37wK5m">
                           <property role="3cmrfH" value="1" />
                         </node>
@@ -1708,7 +1708,7 @@
                           <ref role="3cqZAo" node="1$baREjM8Z1" resolve="name" />
                         </node>
                         <node concept="liA8E" id="1$baREjMahY" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                          <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                           <node concept="3cmrfG" id="1$baREjMaiE" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
@@ -1718,7 +1718,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1$baREjMaYw" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                        <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                       </node>
                     </node>
                   </node>
@@ -1737,7 +1737,7 @@
                       <ref role="3cqZAo" node="1$baREjM8Z1" resolve="name" />
                     </node>
                     <node concept="liA8E" id="1$baREjMpNA" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.replaceFirst(java.lang.String,java.lang.String):java.lang.String" resolve="replaceFirst" />
+                      <ref role="37wK5l" to="wyt6:~String.replaceFirst(java.lang.String,java.lang.String)" resolve="replaceFirst" />
                       <node concept="Xl_RD" id="1$baREjMpNZ" role="37wK5m">
                         <property role="Xl_RC" value="Impl$" />
                       </node>
@@ -2588,12 +2588,12 @@
                   <node concept="1Q6Npb" id="4ol4Q3pLK1h" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="4ol4Q3pLK1i" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                 </node>
               </node>
             </node>
             <node concept="2YIFZM" id="4ol4Q3pLK1j" role="3uHU7w">
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
               <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
               <node concept="1Q6Npb" id="4ol4Q3pLK1k" role="37wK5m" />
             </node>
@@ -3758,11 +3758,11 @@
                     <node concept="EsrRn" id="3Q7Z7lbL7LM" role="2JrQYb" />
                   </node>
                   <node concept="liA8E" id="3Q7Z7lbL8b3" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3Q7Z7lbL8gf" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                 </node>
               </node>
               <node concept="Xl_RD" id="3Q7Z7lbL7Ez" role="3uHU7B">

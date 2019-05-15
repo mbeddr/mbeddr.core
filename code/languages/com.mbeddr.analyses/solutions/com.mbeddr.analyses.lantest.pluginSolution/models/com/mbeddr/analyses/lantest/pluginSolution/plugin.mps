@@ -211,11 +211,11 @@
         <node concept="3clFbF" id="2MpYiTkbqdr" role="3cqZAp">
           <node concept="2OqwBi" id="wzWurgyXF9" role="3clFbG">
             <node concept="2YIFZM" id="wzWurgyXFa" role="2Oq$k0">
-              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
             </node>
             <node concept="liA8E" id="wzWurgyXFb" role="2OqNvi">
-              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
               <node concept="2ShNRf" id="wzWurgyXFc" role="37wK5m">
                 <node concept="YeOm9" id="wzWurgyXFd" role="2ShVmc">
                   <node concept="1Y3b0j" id="wzWurgyXFe" role="YeSDq">
@@ -280,7 +280,7 @@
                                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                                 </node>
                                 <node concept="liA8E" id="2MpYiTkck16" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                   <node concept="3cpWs3" id="2MpYiTkcm_J" role="37wK5m">
                                     <node concept="Xl_RD" id="2MpYiTkckzB" role="3uHU7B">
                                       <property role="Xl_RC" value="-------------------------------- GeneAndCheAsser " />
@@ -291,7 +291,7 @@
                                         <ref role="1PxDUh" to="tase:2xOuuoyA4FD" resolve="Generator" />
                                       </node>
                                       <node concept="liA8E" id="2MpYiTkcook" role="2OqNvi">
-                                        <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+                                        <ref role="37wK5l" to="mhbf:~SModel.getModelName()" resolve="getModelName" />
                                       </node>
                                     </node>
                                   </node>
@@ -328,7 +328,7 @@
                               <node concept="3clFbS" id="6mK5$rOJLEy" role="3clFbx">
                                 <node concept="3clFbF" id="6mK5$rOJKQ7" role="3cqZAp">
                                   <node concept="2YIFZM" id="6mK5$rOJL37" role="3clFbG">
-                                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
                                     <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                                     <node concept="10Nm6u" id="6mK5$rOJL9F" role="37wK5m" />
                                     <node concept="Xl_RD" id="6mK5$rOJLdx" role="37wK5m">
@@ -352,7 +352,7 @@
                                         <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                                       </node>
                                       <node concept="liA8E" id="6mK5$rOK7yq" role="2OqNvi">
-                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
+                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object)" resolve="println" />
                                         <node concept="37vLTw" id="6mK5$rOK7F8" role="37wK5m">
                                           <ref role="3cqZAo" node="6mK5$rOJKi1" resolve="errors" />
                                         </node>
@@ -362,7 +362,7 @@
                                   <node concept="3clFbF" id="6mK5$rOJOHs" role="3cqZAp">
                                     <node concept="2YIFZM" id="6mK5$rOJOHt" role="3clFbG">
                                       <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                      <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                                      <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
                                       <node concept="10Nm6u" id="6mK5$rOJOHu" role="37wK5m" />
                                       <node concept="Xl_RD" id="6mK5$rOK78a" role="37wK5m">
                                         <property role="Xl_RC" value="fail - see stderr for errors" />
@@ -387,7 +387,7 @@
                                     <ref role="3cqZAo" node="wzWurgyXFy" resolve="e" />
                                   </node>
                                   <node concept="liA8E" id="wzWurgyXFC" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                                   </node>
                                 </node>
                               </node>
@@ -398,7 +398,7 @@
                     </node>
                     <node concept="3Tm1VV" id="wzWurgyXFD" role="1B3o_S" />
                     <node concept="2YIFZM" id="wzWurgyXFE" role="37wK5m">
-                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                       <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                       <node concept="2OqwBi" id="wzWurgyXFF" role="37wK5m">
                         <node concept="2WthIp" id="wzWurgyXFG" role="2Oq$k0" />

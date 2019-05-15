@@ -264,7 +264,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="1Qze4b3hpUC" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String)" resolve="setProperty" />
                 <node concept="Xl_RD" id="1Qze4b3hpVk" role="37wK5m">
                   <property role="Xl_RC" value="useCbmc" />
                 </node>
@@ -280,7 +280,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="1Qze4b3hq6R" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String)" resolve="setProperty" />
                 <node concept="Xl_RD" id="1Qze4b3hq6S" role="37wK5m">
                   <property role="Xl_RC" value="hasSpecifiedTimeout" />
                 </node>
@@ -296,7 +296,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="1Qze4b3hqoL" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String)" resolve="setProperty" />
                 <node concept="Xl_RD" id="1Qze4b3hqoM" role="37wK5m">
                   <property role="Xl_RC" value="showUnwindingDepthInfo" />
                 </node>
@@ -327,7 +327,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7hNQJ9lMdVt" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
+                    <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String)" resolve="hasProperty" />
                     <node concept="Xl_RD" id="7hNQJ9lMdVu" role="37wK5m">
                       <property role="Xl_RC" value="useCbmc" />
                     </node>
@@ -340,7 +340,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7hNQJ9lMiqR" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
+                    <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String)" resolve="hasProperty" />
                     <node concept="Xl_RD" id="7hNQJ9lMiqS" role="37wK5m">
                       <property role="Xl_RC" value="hasSpecifiedTimeout" />
                     </node>
@@ -354,7 +354,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7hNQJ9lMjm8" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
+                  <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String)" resolve="hasProperty" />
                   <node concept="Xl_RD" id="7hNQJ9lMjm9" role="37wK5m">
                     <property role="Xl_RC" value="showUnwindingDepthInfo" />
                   </node>

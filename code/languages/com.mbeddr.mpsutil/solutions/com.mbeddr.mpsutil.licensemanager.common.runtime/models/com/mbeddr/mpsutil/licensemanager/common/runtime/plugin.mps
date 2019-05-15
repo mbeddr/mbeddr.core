@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
@@ -225,7 +225,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1m38ANCkwxj" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="1m38ANCkwxk" role="37wK5m">
                             <node concept="37vLTw" id="1m38ANCkwxl" role="2Oq$k0">
                               <ref role="3cqZAo" node="1m38ANCjXIc" resolve="clazz" />
@@ -340,7 +340,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1K5OvKutg7L" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="1K5OvKutgjM" role="37wK5m">
                             <node concept="37vLTw" id="1K5OvKutgci" role="2Oq$k0">
                               <ref role="3cqZAo" node="1K5OvKuskll" resolve="editor" />

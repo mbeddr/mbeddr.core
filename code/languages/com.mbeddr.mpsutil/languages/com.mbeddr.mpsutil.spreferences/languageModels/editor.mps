@@ -267,7 +267,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="1m7X3OEAatu" role="2OqNvi">
-                      <ref role="37wK5l" to="g51k:~EditorCell_Label.setDefaultText(java.lang.String):void" resolve="setDefaultText" />
+                      <ref role="37wK5l" to="g51k:~EditorCell_Label.setDefaultText(java.lang.String)" resolve="setDefaultText" />
                       <node concept="2OqwBi" id="1m7X3OEAa$s" role="37wK5m">
                         <node concept="pncrf" id="1m7X3OEAawE" role="2Oq$k0" />
                         <node concept="2qgKlT" id="1m7X3OEAaVu" role="2OqNvi">
@@ -433,7 +433,7 @@
                           <node concept="3cpWs3" id="2bnm$tmhMxr" role="3uHU7B">
                             <node concept="3cpWs3" id="2bnm$tmhEsf" role="3uHU7B">
                               <node concept="2YIFZM" id="12e5qyQg7aI" role="3uHU7B">
-                                <ref role="37wK5l" to="bd8o:~PathManager.getConfigPath():java.lang.String" resolve="getConfigPath" />
+                                <ref role="37wK5l" to="bd8o:~PathManager.getConfigPath()" resolve="getConfigPath" />
                                 <ref role="1Pybhc" to="bd8o:~PathManager" resolve="PathManager" />
                               </node>
                               <node concept="Xl_RD" id="2bnm$tmhEsk" role="3uHU7w">
@@ -469,7 +469,7 @@
                                   <node concept="3cpWs3" id="2bnm$tmjZBC" role="3uHU7B">
                                     <node concept="2YIFZM" id="2bnm$tmjZBD" role="3uHU7B">
                                       <ref role="1Pybhc" to="bd8o:~PathManager" resolve="PathManager" />
-                                      <ref role="37wK5l" to="bd8o:~PathManager.getConfigPath():java.lang.String" resolve="getConfigPath" />
+                                      <ref role="37wK5l" to="bd8o:~PathManager.getConfigPath()" resolve="getConfigPath" />
                                     </node>
                                     <node concept="Xl_RD" id="2bnm$tmjZBE" role="3uHU7w">
                                       <property role="Xl_RC" value="/spreferences/&lt;project name&gt;/" />

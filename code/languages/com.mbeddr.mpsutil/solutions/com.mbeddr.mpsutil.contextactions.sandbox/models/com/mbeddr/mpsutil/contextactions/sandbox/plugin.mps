@@ -130,7 +130,7 @@
         <child id="5022141054905293092" name="execute" index="geMea" />
         <child id="8645458101909773684" name="tooltip" index="3V80Gy" />
       </concept>
-      <concept id="5022141054905293099" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource_ExecuteFunction" flags="ig" index="geMe5" />
+      <concept id="5022141054905293099" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource_ExecuteFunction" flags="ng" index="geMe5" />
       <concept id="5022141054905332478" name="com.mbeddr.mpsutil.contextactions.structure.ParameterObject" flags="ng" index="geSxg" />
       <concept id="5022141054903714507" name="com.mbeddr.mpsutil.contextactions.structure.ContextExpression" flags="ng" index="gKNx_" />
       <concept id="5022141054903715575" name="com.mbeddr.mpsutil.contextactions.structure.AbstractActionSource" flags="ng" index="gKNLp">
@@ -229,11 +229,11 @@
             </node>
           </node>
           <node concept="liA8E" id="4mMeETlwLAx" role="2OqNvi">
-            <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+            <ref role="37wK5l" to="mhbf:~SModel.getModelName()" resolve="getModelName" />
           </node>
         </node>
         <node concept="liA8E" id="4mMeETlwMy5" role="2OqNvi">
-          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
           <node concept="Xl_RD" id="4mMeETlwMMm" role="37wK5m">
             <property role="Xl_RC" value="plugin" />
           </node>
@@ -273,11 +273,11 @@
               </node>
             </node>
             <node concept="liA8E" id="6W_V$eaOqQH" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+              <ref role="37wK5l" to="mhbf:~SModel.getModelName()" resolve="getModelName" />
             </node>
           </node>
           <node concept="liA8E" id="6W_V$eaOqQI" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
             <node concept="Xl_RD" id="6W_V$eaOqQJ" role="37wK5m">
               <property role="Xl_RC" value="plugin" />
             </node>
@@ -308,7 +308,7 @@
           </node>
         </node>
         <node concept="liA8E" id="4mMeETlyfl6" role="2OqNvi">
-          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
           <node concept="Xl_RD" id="4mMeETlyfl7" role="37wK5m">
             <property role="Xl_RC" value="!" />
           </node>
@@ -366,7 +366,7 @@
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="6c435dJIwTw" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="3cpWs3" id="6c435dJIxrG" role="37wK5m">
                   <node concept="geSxg" id="6c435dJIxsY" role="3uHU7w" />
                   <node concept="Xl_RD" id="6c435dJIwWK" role="3uHU7B">
@@ -403,7 +403,7 @@
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="6c435dJIVFg" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="6c435dJIVIu" role="37wK5m">
                   <property role="Xl_RC" value="Single Generic Action executed" />
                 </node>
@@ -430,7 +430,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="4mMeETlrnTT" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="4mMeETlrpKn" role="37wK5m">
                 <node concept="2OqwBi" id="4mMeETlrpM2" role="3uHU7w">
                   <node concept="2WthIp" id="4mMeETlrpM5" role="2Oq$k0" />
@@ -464,11 +464,11 @@
             <node concept="2OqwBi" id="2Fugwv5EOHO" role="2Oq$k0">
               <node concept="tl45R" id="2Fugwv5EG05" role="2Oq$k0" />
               <node concept="liA8E" id="2Fugwv5EPj7" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getPresentation" />
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="liA8E" id="2Fugwv5EPBk" role="2OqNvi">
-              <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon):void" resolve="setIcon" />
+              <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon)" resolve="setIcon" />
               <node concept="10M0yZ" id="4mMeETlrndU" role="37wK5m">
                 <ref role="1PxDUh" to="9w4s:~Icons" resolve="Icons" />
                 <ref role="3cqZAo" to="9w4s:~PlatformIcons.CHECK_ICON" resolve="CHECK_ICON" />

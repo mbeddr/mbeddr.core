@@ -688,7 +688,7 @@
                   <ref role="3cqZAo" node="33cGTVo65vD" resolve="df" />
                 </node>
                 <node concept="liA8E" id="1VDxRzkOXpB" role="2OqNvi">
-                  <ref role="37wK5l" to="25x5:~NumberFormat.format(long):java.lang.String" resolve="format" />
+                  <ref role="37wK5l" to="25x5:~NumberFormat.format(long)" resolve="format" />
                   <node concept="3uNrnE" id="1VDxRzkOXpC" role="37wK5m">
                     <node concept="37vLTw" id="1VDxRzkOXpD" role="2$L3a6">
                       <ref role="3cqZAo" node="33cGTVo65vK" resolve="orderNum" />
@@ -720,7 +720,7 @@
                       <ref role="3cqZAo" node="33cGTVo65vD" resolve="df" />
                     </node>
                     <node concept="liA8E" id="1VDxRzkOZyy" role="2OqNvi">
-                      <ref role="37wK5l" to="25x5:~NumberFormat.format(long):java.lang.String" resolve="format" />
+                      <ref role="37wK5l" to="25x5:~NumberFormat.format(long)" resolve="format" />
                       <node concept="3uNrnE" id="1VDxRzkOZyz" role="37wK5m">
                         <node concept="37vLTw" id="1VDxRzkOZy$" role="2$L3a6">
                           <ref role="3cqZAo" node="33cGTVo65vK" resolve="orderNum" />
@@ -1120,7 +1120,7 @@
             </node>
             <node concept="TSZUe" id="4ioi0JAbBFK" role="2OqNvi">
               <node concept="3TUQnm" id="4ioi0JAbBFL" role="25WWJ7">
-                <ref role="3TV0OU" to="c4fa:4Kv0gUyBnYQ" resolve="TextAttributePrefix" />
+                <ref role="3TV0OU" to="c4fa:4Kv0gUyBnYQ" resolve="ArbitraryTextAttributePrefix" />
               </node>
             </node>
           </node>
@@ -1740,7 +1740,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="6fGXG$6lvjx" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="Xl_RD" id="6fGXG$6lvGD" role="37wK5m">
                       <property role="Xl_RC" value="isInvisible" />
                     </node>

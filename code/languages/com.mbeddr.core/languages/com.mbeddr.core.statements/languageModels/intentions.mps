@@ -355,7 +355,7 @@
           <node concept="2OqwBi" id="2I09F8VKGAV" role="3clFbG">
             <node concept="1XNTG" id="2I09F8VKGAU" role="2Oq$k0" />
             <node concept="liA8E" id="2I09F8VKGAZ" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+              <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode)" resolve="selectWRTFocusPolicy" />
               <node concept="2OqwBi" id="2I09F8VKGB1" role="37wK5m">
                 <node concept="37vLTw" id="5Hxjapweqdg" role="2Oq$k0">
                   <ref role="3cqZAo" node="2I09F8VKFs_" resolve="ep" />
@@ -529,7 +529,7 @@
             <node concept="2OqwBi" id="6bznNePXVHg" role="33vP2m">
               <node concept="1XNTG" id="6bznNePXVHf" role="2Oq$k0" />
               <node concept="liA8E" id="6bznNePY38C" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNodes():java.util.List" resolve="getSelectedNodes" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNodes()" resolve="getSelectedNodes" />
               </node>
             </node>
           </node>
@@ -635,7 +635,7 @@
             <node concept="2OqwBi" id="6bznNePYd7H" role="33vP2m">
               <node concept="1XNTG" id="6bznNePYd7I" role="2Oq$k0" />
               <node concept="liA8E" id="6bznNePYd7J" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNodes():java.util.List" resolve="getSelectedNodes" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNodes()" resolve="getSelectedNodes" />
               </node>
             </node>
           </node>
@@ -741,7 +741,7 @@
             <node concept="2OqwBi" id="6bznNePYd8s" role="33vP2m">
               <node concept="1XNTG" id="6bznNePYd8t" role="2Oq$k0" />
               <node concept="liA8E" id="6bznNePYd8u" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNodes():java.util.List" resolve="getSelectedNodes" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNodes()" resolve="getSelectedNodes" />
               </node>
             </node>
           </node>
@@ -847,7 +847,7 @@
             <node concept="2OqwBi" id="6bznNePYd9b" role="33vP2m">
               <node concept="1XNTG" id="6bznNePYd9c" role="2Oq$k0" />
               <node concept="liA8E" id="6bznNePYd9d" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNodes():java.util.List" resolve="getSelectedNodes" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNodes()" resolve="getSelectedNodes" />
               </node>
             </node>
           </node>
@@ -1009,7 +1009,7 @@
             <node concept="2OqwBi" id="3bfDwHbEZ5x" role="3uHU7w">
               <node concept="38Zlrr" id="3bfDwHbEYTs" role="2Oq$k0" />
               <node concept="liA8E" id="2cvVnUv9liW" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="Xl_RD" id="3bfDwHbEXYT" role="3uHU7B">

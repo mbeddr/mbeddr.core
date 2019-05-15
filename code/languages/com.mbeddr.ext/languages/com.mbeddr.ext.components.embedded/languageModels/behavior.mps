@@ -494,7 +494,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="7mgpfAOIHTw" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="7mgpfAOIMOF" role="37wK5m">
                             <node concept="2OqwBi" id="7mgpfAOIJ3v" role="2Oq$k0">
                               <node concept="13iPFW" id="7mgpfAOIIp1" role="2Oq$k0" />

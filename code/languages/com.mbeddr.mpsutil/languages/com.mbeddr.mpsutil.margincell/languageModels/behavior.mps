@@ -298,11 +298,11 @@
                         <ref role="3cqZAo" node="1ZvNVeOflcG" resolve="context" />
                       </node>
                       <node concept="liA8E" id="1ZvNVeOflaP" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1ZvNVeOflaQ" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorComponent.findCellWithId(org.jetbrains.mps.openapi.model.SNode,java.lang.String):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCellWithId" />
+                      <ref role="37wK5l" to="cj4x:~EditorComponent.findCellWithId(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="findCellWithId" />
                       <node concept="2OqwBi" id="1ZvNVeOflaR" role="37wK5m">
                         <node concept="13iPFW" id="10nVqVg5v1g" role="2Oq$k0" />
                         <node concept="3TrEf2" id="10nVqVfx053" role="2OqNvi">
@@ -331,11 +331,11 @@
                         <ref role="3cqZAo" node="1ZvNVeOflcG" resolve="context" />
                       </node>
                       <node concept="liA8E" id="1ZvNVeOflb3" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1ZvNVeOflb4" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorComponent.findCellWithId(org.jetbrains.mps.openapi.model.SNode,java.lang.String):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCellWithId" />
+                      <ref role="37wK5l" to="cj4x:~EditorComponent.findCellWithId(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="findCellWithId" />
                       <node concept="2OqwBi" id="1ZvNVeOflb5" role="37wK5m">
                         <node concept="37vLTw" id="1ZvNVeOflb6" role="2Oq$k0">
                           <ref role="3cqZAo" node="10nVqVg5kqK" resolve="other" />
@@ -369,7 +369,7 @@
                           <ref role="3cqZAo" node="1ZvNVeOflaK" resolve="aCell" />
                         </node>
                         <node concept="liA8E" id="1ZvNVeOflbi" role="2OqNvi">
-                          <ref role="37wK5l" to="f4zo:~EditorCell.getY():int" resolve="getY" />
+                          <ref role="37wK5l" to="f4zo:~EditorCell.getY()" resolve="getY" />
                         </node>
                       </node>
                     </node>
@@ -385,7 +385,7 @@
                           <ref role="3cqZAo" node="1ZvNVeOflaY" resolve="bCell" />
                         </node>
                         <node concept="liA8E" id="1ZvNVeOflbo" role="2OqNvi">
-                          <ref role="37wK5l" to="f4zo:~EditorCell.getY():int" resolve="getY" />
+                          <ref role="37wK5l" to="f4zo:~EditorCell.getY()" resolve="getY" />
                         </node>
                       </node>
                     </node>
@@ -400,7 +400,7 @@
                           <ref role="3cqZAo" node="1ZvNVeOflbe" resolve="aY" />
                         </node>
                         <node concept="liA8E" id="1ZvNVeOflbv" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Integer.compareTo(java.lang.Integer):int" resolve="compareTo" />
+                          <ref role="37wK5l" to="wyt6:~Integer.compareTo(java.lang.Integer)" resolve="compareTo" />
                           <node concept="37vLTw" id="1ZvNVeOflbw" role="37wK5m">
                             <ref role="3cqZAo" node="1ZvNVeOflbk" resolve="bY" />
                           </node>

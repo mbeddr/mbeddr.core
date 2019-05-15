@@ -906,7 +906,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7EQZzuztHfa" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                             <node concept="2OqwBi" id="7EQZzuztHfw" role="37wK5m">
                               <node concept="37vLTw" id="7EQZzuztJD0" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7EQZzuztJjD" resolve="feature" />
@@ -1260,7 +1260,7 @@
                     <ref role="3cqZAo" node="7Hpw6GdQZd3" resolve="varValue" />
                   </node>
                   <node concept="liA8E" id="7EQZzuztJEd" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                     <node concept="Xl_RD" id="7EQZzuztJEe" role="37wK5m">
                       <property role="Xl_RC" value="true" />
                     </node>
@@ -1271,7 +1271,7 @@
                     <ref role="3cqZAo" node="7Hpw6GdQZd3" resolve="varValue" />
                   </node>
                   <node concept="liA8E" id="7Hpw6GdR13a" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                     <node concept="Xl_RD" id="7Hpw6GdR13b" role="37wK5m">
                       <property role="Xl_RC" value="1" />
                     </node>
@@ -1294,7 +1294,7 @@
                     <ref role="3cqZAo" node="7Hpw6GdPBKM" resolve="e" />
                   </node>
                   <node concept="liA8E" id="7Hpw6GdPCBR" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -1378,7 +1378,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7EQZzuzuzDw" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                             <node concept="2OqwBi" id="7EQZzuzuzDx" role="37wK5m">
                               <node concept="37vLTw" id="7EQZzuzuzDy" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7EQZzuzuz_k" resolve="attribute" />

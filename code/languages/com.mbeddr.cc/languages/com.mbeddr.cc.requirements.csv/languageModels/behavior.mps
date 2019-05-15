@@ -210,7 +210,7 @@
                 <ref role="3cqZAo" node="5liZiKqPNz0" resolve="s" />
               </node>
               <node concept="liA8E" id="5liZiKqPNzz" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
               </node>
             </node>
           </node>
@@ -232,7 +232,7 @@
                 <ref role="3cqZAo" node="5liZiKqPNz0" resolve="s" />
               </node>
               <node concept="liA8E" id="5liZiKqPN$t" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                 <node concept="3cmrfG" id="5liZiKqPN$u" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -292,7 +292,7 @@
               <ref role="3cqZAo" node="5liZiKqPWgK" resolve="s" />
             </node>
             <node concept="liA8E" id="4Gm$o7XDwth" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="4Gm$o7XDwti" role="37wK5m">
                 <property role="Xl_RC" value="" />
               </node>
@@ -309,7 +309,7 @@
                 <ref role="3cqZAo" node="5liZiKqPWgK" resolve="s" />
               </node>
               <node concept="liA8E" id="5liZiKqPWhe" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                 <node concept="Xl_RD" id="5liZiKqPWhf" role="37wK5m">
                   <property role="Xl_RC" value=" " />
                 </node>
@@ -330,7 +330,7 @@
                 <ref role="3cqZAo" node="5liZiKqPWgK" resolve="s" />
               </node>
               <node concept="liA8E" id="5liZiKqPWHz" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                 <node concept="Xl_RD" id="5liZiKqPWH$" role="37wK5m">
                   <property role="Xl_RC" value="&amp;" />
                 </node>
@@ -351,7 +351,7 @@
                 <ref role="3cqZAo" node="5liZiKqPWgK" resolve="s" />
               </node>
               <node concept="liA8E" id="5liZiKqPWHF" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                 <node concept="Xl_RD" id="5liZiKqPWHG" role="37wK5m">
                   <property role="Xl_RC" value="/" />
                 </node>
@@ -372,7 +372,7 @@
                 <ref role="3cqZAo" node="5liZiKqPWgK" resolve="s" />
               </node>
               <node concept="liA8E" id="5liZiKqPWHN" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                 <node concept="Xl_RD" id="5liZiKqPWHO" role="37wK5m">
                   <property role="Xl_RC" value="\\(" />
                 </node>
@@ -391,7 +391,7 @@
                 <ref role="3cqZAo" node="5liZiKqPWgK" resolve="s" />
               </node>
               <node concept="liA8E" id="5liZiKqPWHV" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                 <node concept="Xl_RD" id="5liZiKqPWHW" role="37wK5m">
                   <property role="Xl_RC" value="\\)" />
                 </node>

@@ -86,7 +86,7 @@
               <node concept="2OqwBi" id="7GaZbxRWqYJ" role="3uHU7B">
                 <node concept="1Wqviy" id="7GaZbxRWqLN" role="2Oq$k0" />
                 <node concept="liA8E" id="7GaZbxRWrXN" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
               </node>
             </node>

@@ -277,7 +277,7 @@
               <ref role="3cqZAo" node="1ENIgcpvnV7" resolve="cfg" />
             </node>
             <node concept="liA8E" id="1ENIgcpvnVu" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="Xl_RD" id="1ENIgcpvnVh" role="37wK5m">
                 <property role="Xl_RC" value="model" />
               </node>
@@ -316,7 +316,7 @@
                 <ref role="3cqZAo" node="1ENIgcpvnVj" resolve="ctx" />
               </node>
               <node concept="liA8E" id="1ENIgcpvsk0" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Context.mkSymbol(java.lang.String):com.microsoft.z3.StringSymbol" resolve="mkSymbol" />
+                <ref role="37wK5l" to="f7eu:~Context.mkSymbol(java.lang.String)" resolve="mkSymbol" />
                 <node concept="Xl_RD" id="1ENIgcpvsle" role="37wK5m">
                   <property role="Xl_RC" value="x" />
                 </node>
@@ -330,7 +330,7 @@
               <ref role="3cqZAo" node="1ENIgcpvnVj" resolve="ctx" />
             </node>
             <node concept="liA8E" id="1ENIgcpvrRd" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Context.mkConstDecl(com.microsoft.z3.Symbol,com.microsoft.z3.Sort):com.microsoft.z3.FuncDecl" resolve="mkConstDecl" />
+              <ref role="37wK5l" to="f7eu:~Context.mkConstDecl(com.microsoft.z3.Symbol,com.microsoft.z3.Sort)" resolve="mkConstDecl" />
               <node concept="37vLTw" id="1ENIgcpvsxK" role="37wK5m">
                 <ref role="3cqZAo" node="1ENIgcpvs5P" resolve="x" />
               </node>
@@ -339,7 +339,7 @@
                   <ref role="3cqZAo" node="1ENIgcpvnVj" resolve="ctx" />
                 </node>
                 <node concept="liA8E" id="1ENIgcpvsKZ" role="2OqNvi">
-                  <ref role="37wK5l" to="f7eu:~Context.mkBoolSort():com.microsoft.z3.BoolSort" resolve="mkBoolSort" />
+                  <ref role="37wK5l" to="f7eu:~Context.mkBoolSort()" resolve="mkBoolSort" />
                 </node>
               </node>
             </node>
@@ -356,13 +356,13 @@
                 <ref role="3cqZAo" node="1ENIgcpvnVj" resolve="ctx" />
               </node>
               <node concept="liA8E" id="1ENIgcpvu5Q" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Context.mkEq(com.microsoft.z3.Expr,com.microsoft.z3.Expr):com.microsoft.z3.BoolExpr" resolve="mkEq" />
+                <ref role="37wK5l" to="f7eu:~Context.mkEq(com.microsoft.z3.Expr,com.microsoft.z3.Expr)" resolve="mkEq" />
                 <node concept="2OqwBi" id="1ENIgcpvu5R" role="37wK5m">
                   <node concept="37vLTw" id="1ENIgcpvu5S" role="2Oq$k0">
                     <ref role="3cqZAo" node="1ENIgcpvnVj" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="1ENIgcpvu5T" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Context.mkConst(com.microsoft.z3.Symbol,com.microsoft.z3.Sort):com.microsoft.z3.Expr" resolve="mkConst" />
+                    <ref role="37wK5l" to="f7eu:~Context.mkConst(com.microsoft.z3.Symbol,com.microsoft.z3.Sort)" resolve="mkConst" />
                     <node concept="37vLTw" id="1ENIgcpvu5U" role="37wK5m">
                       <ref role="3cqZAo" node="1ENIgcpvs5P" resolve="x" />
                     </node>
@@ -371,7 +371,7 @@
                         <ref role="3cqZAo" node="1ENIgcpvnVj" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="1ENIgcpvu5X" role="2OqNvi">
-                        <ref role="37wK5l" to="f7eu:~Context.mkBoolSort():com.microsoft.z3.BoolSort" resolve="mkBoolSort" />
+                        <ref role="37wK5l" to="f7eu:~Context.mkBoolSort()" resolve="mkBoolSort" />
                       </node>
                     </node>
                   </node>
@@ -381,7 +381,7 @@
                     <ref role="3cqZAo" node="1ENIgcpvnVj" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="1ENIgcpvv70" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Context.mkTrue():com.microsoft.z3.BoolExpr" resolve="mkTrue" />
+                    <ref role="37wK5l" to="f7eu:~Context.mkTrue()" resolve="mkTrue" />
                   </node>
                 </node>
               </node>
@@ -400,7 +400,7 @@
                 <ref role="3cqZAo" node="1ENIgcpvnVj" resolve="ctx" />
               </node>
               <node concept="liA8E" id="1ENIgcpvoqQ" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Context.mkSolver():com.microsoft.z3.Solver" resolve="mkSolver" />
+                <ref role="37wK5l" to="f7eu:~Context.mkSolver()" resolve="mkSolver" />
               </node>
             </node>
           </node>
@@ -411,7 +411,7 @@
               <ref role="3cqZAo" node="1ENIgcpvogY" resolve="s" />
             </node>
             <node concept="liA8E" id="1ENIgcpvtZ1" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Solver.add(com.microsoft.z3.BoolExpr...):void" resolve="add" />
+              <ref role="37wK5l" to="f7eu:~Solver.add(com.microsoft.z3.BoolExpr...)" resolve="add" />
               <node concept="37vLTw" id="1ENIgcpvuT7" role="37wK5m">
                 <ref role="3cqZAo" node="1ENIgcpvu5N" resolve="eq" />
               </node>
@@ -430,7 +430,7 @@
                 <ref role="3cqZAo" node="1ENIgcpvogY" resolve="s" />
               </node>
               <node concept="liA8E" id="5hKqgmCn4Cd" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Solver.check():com.microsoft.z3.Status" resolve="check" />
+                <ref role="37wK5l" to="f7eu:~Solver.check()" resolve="check" />
               </node>
             </node>
           </node>
@@ -442,7 +442,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="1ENIgcpvpds" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object)" resolve="println" />
               <node concept="37vLTw" id="5hKqgmCn4Ce" role="37wK5m">
                 <ref role="3cqZAo" node="5hKqgmCn4Ca" resolve="st" />
               </node>
@@ -460,7 +460,7 @@
                 <ref role="3cqZAo" node="1ENIgcpvogY" resolve="s" />
               </node>
               <node concept="liA8E" id="5hKqgmCnwTy" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Solver.getModel():com.microsoft.z3.Model" resolve="getModel" />
+                <ref role="37wK5l" to="f7eu:~Solver.getModel()" resolve="getModel" />
               </node>
             </node>
           </node>
@@ -474,14 +474,14 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="5hKqgmCnyIW" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="5hKqgmCnz2S" role="37wK5m">
                     <node concept="2OqwBi" id="5hKqgmCnzbj" role="3uHU7w">
                       <node concept="37vLTw" id="5hKqgmCnz7B" role="2Oq$k0">
                         <ref role="3cqZAo" node="5hKqgmCnwTv" resolve="m" />
                       </node>
                       <node concept="liA8E" id="5hKqgmCnzeM" role="2OqNvi">
-                        <ref role="37wK5l" to="f7eu:~Model.getConstInterp(com.microsoft.z3.FuncDecl):com.microsoft.z3.Expr" resolve="getConstInterp" />
+                        <ref role="37wK5l" to="f7eu:~Model.getConstInterp(com.microsoft.z3.FuncDecl)" resolve="getConstInterp" />
                         <node concept="37vLTw" id="5hKqgmCnzjl" role="37wK5m">
                           <ref role="3cqZAo" node="5hKqgmCnxT6" resolve="fd" />
                         </node>
@@ -493,7 +493,7 @@
                           <ref role="3cqZAo" node="5hKqgmCnxT6" resolve="fd" />
                         </node>
                         <node concept="liA8E" id="5hKqgmCnyYQ" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~FuncDecl.getName():com.microsoft.z3.Symbol" resolve="getName" />
+                          <ref role="37wK5l" to="f7eu:~FuncDecl.getName()" resolve="getName" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="5hKqgmCnyK9" role="3uHU7w">
@@ -516,7 +516,7 @@
               <ref role="3cqZAo" node="5hKqgmCnwTv" resolve="m" />
             </node>
             <node concept="liA8E" id="5hKqgmCnyGQ" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Model.getConstDecls():com.microsoft.z3.FuncDecl[]" resolve="getConstDecls" />
+              <ref role="37wK5l" to="f7eu:~Model.getConstDecls()" resolve="getConstDecls" />
             </node>
           </node>
         </node>
@@ -581,7 +581,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="2FPaW3Ex8eO" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="2FPaW3ExdZZ" role="37wK5m">
                     <node concept="37vLTw" id="2FPaW3Exeg1" role="3uHU7w">
                       <ref role="3cqZAo" node="2FPaW3Ex7W3" resolve="str" />
@@ -592,7 +592,7 @@
                           <ref role="3VsUkX" node="4gj0JzlNUq" resolve="Z3Checker" />
                         </node>
                         <node concept="liA8E" id="2FPaW3ExdBn" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="2FPaW3ExdMU" role="3uHU7w">
@@ -642,7 +642,7 @@
                   <ref role="3cqZAo" node="4gj0JzjvYV" resolve="exp" />
                 </node>
                 <node concept="2qgKlT" id="2FPaW3ExAJM" role="2OqNvi">
-                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
                 </node>
               </node>
               <node concept="Xl_RD" id="2FPaW3Exf1b" role="3uHU7B">
@@ -675,7 +675,7 @@
               <ref role="3cqZAo" node="4gj0JzlNUv" resolve="cfg" />
             </node>
             <node concept="liA8E" id="4gj0JzlNUE" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="Xl_RD" id="4gj0JzlNUF" role="37wK5m">
                 <property role="Xl_RC" value="model" />
               </node>
@@ -713,7 +713,7 @@
                 <ref role="3cqZAo" node="4gj0JzlNUI" resolve="ctx" />
               </node>
               <node concept="liA8E" id="4gj0JzlNVp" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Context.mkSolver():com.microsoft.z3.Solver" resolve="mkSolver" />
+                <ref role="37wK5l" to="f7eu:~Context.mkSolver()" resolve="mkSolver" />
               </node>
             </node>
           </node>
@@ -824,7 +824,7 @@
               <ref role="3cqZAo" node="4gj0JzlNVl" resolve="solver" />
             </node>
             <node concept="liA8E" id="4gj0JzlNVt" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Solver.add(com.microsoft.z3.BoolExpr...):void" resolve="add" />
+              <ref role="37wK5l" to="f7eu:~Solver.add(com.microsoft.z3.BoolExpr...)" resolve="add" />
               <node concept="37vLTw" id="4gj0JzlNVu" role="37wK5m">
                 <ref role="3cqZAo" node="4gj0JzlNV4" resolve="z3Exp" />
               </node>
@@ -850,7 +850,7 @@
                         <ref role="3cqZAo" node="4gj0JzlNVl" resolve="solver" />
                       </node>
                       <node concept="liA8E" id="2SerBSMq9Pg" role="2OqNvi">
-                        <ref role="37wK5l" to="f7eu:~Solver.getAssertions():com.microsoft.z3.BoolExpr[]" resolve="getAssertions" />
+                        <ref role="37wK5l" to="f7eu:~Solver.getAssertions()" resolve="getAssertions" />
                       </node>
                     </node>
                   </node>
@@ -872,7 +872,7 @@
                   <ref role="3cqZAo" node="4gj0JzlNVl" resolve="solver" />
                 </node>
                 <node concept="liA8E" id="2SerBSMq7$E" role="2OqNvi">
-                  <ref role="37wK5l" to="f7eu:~Solver.getAssertions():com.microsoft.z3.BoolExpr[]" resolve="getAssertions" />
+                  <ref role="37wK5l" to="f7eu:~Solver.getAssertions()" resolve="getAssertions" />
                 </node>
               </node>
               <node concept="1Rwk04" id="2SerBSMq8Iu" role="2OqNvi" />
@@ -896,7 +896,7 @@
                 <ref role="3cqZAo" node="4gj0JzlNVl" resolve="solver" />
               </node>
               <node concept="liA8E" id="4gj0JzlNV_" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Solver.check():com.microsoft.z3.Status" resolve="check" />
+                <ref role="37wK5l" to="f7eu:~Solver.check()" resolve="check" />
               </node>
             </node>
             <node concept="3uibUv" id="4gj0JzlNVy" role="1tU5fm">
@@ -913,7 +913,7 @@
                   <ref role="3cqZAo" node="4gj0JzlNVx" resolve="st" />
                 </node>
                 <node concept="liA8E" id="2FPaW3ExCIP" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Enum.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="wyt6:~Enum.toString()" resolve="toString" />
                 </node>
               </node>
               <node concept="Xl_RD" id="2FPaW3ExCmX" role="3uHU7B">
@@ -933,11 +933,11 @@
                   <ref role="3cqZAo" node="4gj0JzlNVx" resolve="st" />
                 </node>
                 <node concept="liA8E" id="74nUgMbe$TQ" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Enum.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="wyt6:~Enum.toString()" resolve="toString" />
                 </node>
               </node>
               <node concept="liA8E" id="74nUgMbe$TR" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="Xl_RD" id="74nUgMbe$TS" role="37wK5m">
                   <property role="Xl_RC" value="SATISFIABLE" />
                 </node>
@@ -958,7 +958,7 @@
                     <ref role="3cqZAo" node="4gj0JzlNVl" resolve="solver" />
                   </node>
                   <node concept="liA8E" id="4gj0JzlNVK" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Solver.getModel():com.microsoft.z3.Model" resolve="getModel" />
+                    <ref role="37wK5l" to="f7eu:~Solver.getModel()" resolve="getModel" />
                   </node>
                 </node>
               </node>
@@ -1144,32 +1144,32 @@
                         <ref role="3cqZAo" node="7zW9XauYfo6" resolve="sb" />
                       </node>
                       <node concept="liA8E" id="7zW9XauYgeM" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.Object):java.lang.StringBuffer" resolve="append" />
+                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.Object)" resolve="append" />
                         <node concept="2OqwBi" id="7zW9XauYghH" role="37wK5m">
                           <node concept="37vLTw" id="7zW9XauYgfi" role="2Oq$k0">
                             <ref role="3cqZAo" node="7zW9XauYfKg" resolve="fd" />
                           </node>
                           <node concept="liA8E" id="7zW9XauYgmI" role="2OqNvi">
-                            <ref role="37wK5l" to="f7eu:~FuncDecl.getName():com.microsoft.z3.Symbol" resolve="getName" />
+                            <ref role="37wK5l" to="f7eu:~FuncDecl.getName()" resolve="getName" />
                           </node>
                         </node>
                       </node>
                     </node>
                     <node concept="liA8E" id="7zW9XauYgyB" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                      <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                       <node concept="Xl_RD" id="7zW9XauYgzE" role="37wK5m">
                         <property role="Xl_RC" value=" - " />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="7zW9XauYgT0" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.Object):java.lang.StringBuffer" resolve="append" />
+                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.Object)" resolve="append" />
                     <node concept="2OqwBi" id="7zW9XauYgYM" role="37wK5m">
                       <node concept="37vLTw" id="7zW9XauYgU_" role="2Oq$k0">
                         <ref role="3cqZAo" node="7zW9XauYaaC" resolve="model" />
                       </node>
                       <node concept="liA8E" id="7zW9XauYh4w" role="2OqNvi">
-                        <ref role="37wK5l" to="f7eu:~Model.getConstInterp(com.microsoft.z3.FuncDecl):com.microsoft.z3.Expr" resolve="getConstInterp" />
+                        <ref role="37wK5l" to="f7eu:~Model.getConstInterp(com.microsoft.z3.FuncDecl)" resolve="getConstInterp" />
                         <node concept="37vLTw" id="7zW9XauYh5z" role="37wK5m">
                           <ref role="3cqZAo" node="7zW9XauYfKg" resolve="fd" />
                         </node>
@@ -1178,7 +1178,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7zW9XauYhz_" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                   <node concept="Xl_RD" id="7zW9XauYh_K" role="37wK5m">
                     <property role="Xl_RC" value="\n" />
                   </node>
@@ -1197,7 +1197,7 @@
               <ref role="3cqZAo" node="7zW9XauYaaC" resolve="model" />
             </node>
             <node concept="liA8E" id="7zW9XauYfKk" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Model.getConstDecls():com.microsoft.z3.FuncDecl[]" resolve="getConstDecls" />
+              <ref role="37wK5l" to="f7eu:~Model.getConstDecls()" resolve="getConstDecls" />
             </node>
           </node>
         </node>
@@ -1207,7 +1207,7 @@
               <ref role="3cqZAo" node="7zW9XauYfo6" resolve="sb" />
             </node>
             <node concept="liA8E" id="7zW9XauYfJF" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
             </node>
           </node>
         </node>

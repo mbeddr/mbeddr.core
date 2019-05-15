@@ -255,7 +255,7 @@
                   <ref role="3cqZAo" node="5xg5HONnGuH" resolve="fileContent" />
                 </node>
                 <node concept="2YIFZM" id="5xg5HONnFRW" role="37vLTx">
-                  <ref role="37wK5l" to="8oaq:~FileUtils.readFileToString(java.io.File):java.lang.String" resolve="readFileToString" />
+                  <ref role="37wK5l" to="8oaq:~FileUtils.readFileToString(java.io.File)" resolve="readFileToString" />
                   <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
                   <node concept="37vLTw" id="5xg5HONnG5C" role="37wK5m">
                     <ref role="3cqZAo" node="5xg5HONnx9m" resolve="myFile" />
@@ -278,7 +278,7 @@
                     <ref role="3cqZAo" node="5xg5HONnIqX" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="5xg5HONnJ7U" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -312,7 +312,7 @@
               <ref role="3cqZAo" node="5xg5HONnx9m" resolve="myFile" />
             </node>
             <node concept="liA8E" id="5xg5HONnz1j" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+              <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
             </node>
           </node>
         </node>
@@ -334,7 +334,7 @@
       <node concept="3clFbS" id="5xg5HONnvov" role="3clF47">
         <node concept="3clFbF" id="5xg5HONri7K" role="3cqZAp">
           <node concept="2YIFZM" id="5xg5HONriKx" role="3clFbG">
-            <ref role="37wK5l" to="67wg:~Win32LocalFileSystem.getWin32Instance():com.intellij.openapi.vfs.impl.win32.Win32LocalFileSystem" resolve="getWin32Instance" />
+            <ref role="37wK5l" to="67wg:~Win32LocalFileSystem.getWin32Instance()" resolve="getWin32Instance" />
             <ref role="1Pybhc" to="67wg:~Win32LocalFileSystem" resolve="Win32LocalFileSystem" />
           </node>
         </node>
@@ -363,7 +363,7 @@
               <ref role="3cqZAo" node="5xg5HONnx9m" resolve="myFile" />
             </node>
             <node concept="liA8E" id="5xg5HONn$vD" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.getPath():java.lang.String" resolve="getPath" />
+              <ref role="37wK5l" to="guwi:~File.getPath()" resolve="getPath" />
             </node>
           </node>
         </node>
@@ -414,7 +414,7 @@
               <ref role="3cqZAo" node="5xg5HONnx9m" resolve="myFile" />
             </node>
             <node concept="liA8E" id="5xg5HONpYAM" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
             </node>
           </node>
         </node>
@@ -555,7 +555,7 @@
               <ref role="3cqZAo" node="5xg5HONnGuH" resolve="fileContent" />
             </node>
             <node concept="liA8E" id="5xg5HONnMfF" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.getBytes():byte[]" resolve="getBytes" />
+              <ref role="37wK5l" to="wyt6:~String.getBytes()" resolve="getBytes" />
             </node>
           </node>
         </node>
@@ -592,7 +592,7 @@
               <ref role="3cqZAo" node="5xg5HONnGuH" resolve="fileContent" />
             </node>
             <node concept="liA8E" id="5xg5HONnKAh" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+              <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
             </node>
           </node>
         </node>
@@ -664,7 +664,7 @@
               <ref role="3cqZAo" node="5xg5HONnx9m" resolve="myFile" />
             </node>
             <node concept="liA8E" id="5xg5HONpxkX" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="guwi:~File.toString()" resolve="toString" />
             </node>
           </node>
         </node>
@@ -707,7 +707,7 @@
               <ref role="3cqZAo" node="5xg5HONnx9m" resolve="myFile" />
             </node>
             <node concept="liA8E" id="hpy$nv5CMk" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.hashCode():int" resolve="hashCode" />
+              <ref role="37wK5l" to="guwi:~File.hashCode()" resolve="hashCode" />
             </node>
           </node>
         </node>
@@ -757,7 +757,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="hpy$nv49OW" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
               </node>
             </node>
           </node>
@@ -788,7 +788,7 @@
                   <ref role="3uigEE" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
                 </node>
                 <node concept="2YIFZM" id="hpy$nv3xXf" role="33vP2m">
-                  <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project):com.intellij.openapi.fileEditor.FileEditorManager" resolve="getInstance" />
+                  <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
                   <ref role="1Pybhc" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
                   <node concept="37vLTw" id="hpy$nv3xXg" role="37wK5m">
                     <ref role="3cqZAo" node="hpy$nv2tfl" resolve="p" />
@@ -809,7 +809,7 @@
                     <ref role="3cqZAo" node="hpy$nv3xXd" resolve="fem" />
                   </node>
                   <node concept="liA8E" id="hpy$nv56JA" role="2OqNvi">
-                    <ref role="37wK5l" to="iwsx:~FileEditorManager.openFile(com.intellij.openapi.vfs.VirtualFile,boolean):com.intellij.openapi.fileEditor.FileEditor[]" resolve="openFile" />
+                    <ref role="37wK5l" to="iwsx:~FileEditorManager.openFile(com.intellij.openapi.vfs.VirtualFile,boolean)" resolve="openFile" />
                     <node concept="37vLTw" id="hpy$nv56JB" role="37wK5m">
                       <ref role="3cqZAo" node="hpy$nv4VKn" resolve="f" />
                     </node>
@@ -877,15 +877,15 @@
                           <ref role="3cqZAo" node="hpy$nv5bzG" resolve="textEditor" />
                         </node>
                         <node concept="liA8E" id="hpy$nv5bTi" role="2OqNvi">
-                          <ref role="37wK5l" to="iwsx:~TextEditor.getEditor():com.intellij.openapi.editor.Editor" resolve="getEditor" />
+                          <ref role="37wK5l" to="iwsx:~TextEditor.getEditor()" resolve="getEditor" />
                         </node>
                       </node>
                       <node concept="liA8E" id="hpy$nv5b$0" role="2OqNvi">
-                        <ref role="37wK5l" to="s9o5:~Editor.getCaretModel():com.intellij.openapi.editor.CaretModel" resolve="getCaretModel" />
+                        <ref role="37wK5l" to="s9o5:~Editor.getCaretModel()" resolve="getCaretModel" />
                       </node>
                     </node>
                     <node concept="liA8E" id="hpy$nv5b$1" role="2OqNvi">
-                      <ref role="37wK5l" to="s9o5:~CaretModel.moveToLogicalPosition(com.intellij.openapi.editor.LogicalPosition):void" resolve="moveToLogicalPosition" />
+                      <ref role="37wK5l" to="s9o5:~CaretModel.moveToLogicalPosition(com.intellij.openapi.editor.LogicalPosition)" resolve="moveToLogicalPosition" />
                       <node concept="37vLTw" id="hpy$nv5b$2" role="37wK5m">
                         <ref role="3cqZAo" node="hpy$nv5bzO" resolve="position" />
                       </node>
@@ -980,7 +980,7 @@
             </node>
             <node concept="2YIFZM" id="hpy$nv3xEl" role="33vP2m">
               <ref role="1Pybhc" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
-              <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project):com.intellij.openapi.fileEditor.FileEditorManager" resolve="getInstance" />
+              <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
               <node concept="37vLTw" id="hpy$nv3xEm" role="37wK5m">
                 <ref role="3cqZAo" node="hpy$nv2FYo" resolve="p" />
               </node>
@@ -1000,7 +1000,7 @@
                 <ref role="3cqZAo" node="hpy$nv3xEk" resolve="fem" />
               </node>
               <node concept="liA8E" id="hpy$nv2EzD" role="2OqNvi">
-                <ref role="37wK5l" to="iwsx:~FileEditorManager.getOpenFiles():com.intellij.openapi.vfs.VirtualFile[]" resolve="getOpenFiles" />
+                <ref role="37wK5l" to="iwsx:~FileEditorManager.getOpenFiles()" resolve="getOpenFiles" />
               </node>
             </node>
           </node>
@@ -1020,11 +1020,11 @@
                     <ref role="2Gs0qQ" node="hpy$nv2F_p" resolve="vf" />
                   </node>
                   <node concept="liA8E" id="hpy$nv2Hsj" role="2OqNvi">
-                    <ref role="37wK5l" to="jlff:~VirtualFile.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="jlff:~VirtualFile.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="hpy$nv2InX" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="37vLTw" id="hpy$nv4hix" role="37wK5m">
                     <ref role="3cqZAo" node="hpy$nv2Ek$" resolve="fileName" />
                   </node>

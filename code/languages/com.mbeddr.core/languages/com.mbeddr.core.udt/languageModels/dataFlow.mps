@@ -151,7 +151,7 @@
               <ref role="3cqZAo" node="5lHQMoFTxv0" resolve="initTypeMap" />
             </node>
             <node concept="liA8E" id="5lHQMoFTxvG" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="37vLTw" id="5lHQMoFTxvH" role="37wK5m">
                 <ref role="3cqZAo" node="5lHQMoFTxuX" resolve="initExpression" />
               </node>
@@ -194,7 +194,7 @@
                 <ref role="3cqZAo" node="5lHQMoFTxv0" resolve="initTypeMap" />
               </node>
               <node concept="liA8E" id="5lHQMoFTxwv" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
                 <node concept="37vLTw" id="5lHQMoFTxww" role="37wK5m">
                   <ref role="3cqZAo" node="5lHQMoFTxvP" resolve="initExpression" />
                 </node>
@@ -208,7 +208,7 @@
               <ref role="3cqZAo" node="5lHQMoFTxv0" resolve="initTypeMap" />
             </node>
             <node concept="liA8E" id="5lHQMoFTxx1" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object):java.lang.Object" resolve="remove" />
+              <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object)" resolve="remove" />
               <node concept="37vLTw" id="5lHQMoFTxx2" role="37wK5m">
                 <ref role="3cqZAo" node="5lHQMoFTxvP" resolve="initExpression" />
               </node>

@@ -2,7 +2,7 @@
 <model ref="r:b268fb69-5c02-4764-a173-a1b9c3c177db(com.mbeddr.mpsutil.rcp.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -408,7 +408,7 @@
                     <node concept="raruj" id="7o1blyuM5Pl" role="lGtFl" />
                   </node>
                   <node concept="liA8E" id="7o1blyuM6VA" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~AbstractModule.dispose():void" resolve="dispose" />
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.dispose()" resolve="dispose" />
                   </node>
                 </node>
               </node>
@@ -456,7 +456,7 @@
                         <ref role="3uigEE" to="z1c3:~ModuleId" resolve="ModuleId" />
                       </node>
                       <node concept="2YIFZM" id="4aIQuds8sEf" role="HW$Y0">
-                        <ref role="37wK5l" to="z1c3:~ModuleId.fromString(java.lang.String):jetbrains.mps.project.ModuleId" resolve="fromString" />
+                        <ref role="37wK5l" to="z1c3:~ModuleId.fromString(java.lang.String)" resolve="fromString" />
                         <ref role="1Pybhc" to="z1c3:~ModuleId" resolve="ModuleId" />
                         <node concept="Xl_RD" id="4aIQuds8sEg" role="37wK5m">
                           <property role="Xl_RC" value="uuid" />
@@ -506,11 +506,11 @@
                           <ref role="3cqZAo" node="7o1blyuM7oG" resolve="kit" />
                         </node>
                         <node concept="liA8E" id="7o1blyuMrG0" role="2OqNvi">
-                          <ref role="37wK5l" to="z1c3:~DevKit.getModuleDescriptor():jetbrains.mps.project.structure.modules.DevkitDescriptor" resolve="getModuleDescriptor" />
+                          <ref role="37wK5l" to="z1c3:~DevKit.getModuleDescriptor()" resolve="getModuleDescriptor" />
                         </node>
                       </node>
                       <node concept="liA8E" id="7o1blyuMs2D" role="2OqNvi">
-                        <ref role="37wK5l" to="w0gx:~ModuleDescriptor.getId():jetbrains.mps.project.ModuleId" resolve="getId" />
+                        <ref role="37wK5l" to="w0gx:~ModuleDescriptor.getId()" resolve="getId" />
                       </node>
                     </node>
                   </node>
@@ -643,7 +643,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="IviauPUaE" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
               </node>
             </node>
           </node>
@@ -659,15 +659,15 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="16oY6Yuz4U2" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="liA8E" id="16oY6Yuz6v2" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
               </node>
             </node>
             <node concept="liA8E" id="16oY6Yuz94u" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
               <node concept="2ShNRf" id="16oY6Yuz9Hb" role="37wK5m">
                 <node concept="YeOm9" id="16oY6Yuzb36" role="2ShVmc">
                   <node concept="1Y3b0j" id="16oY6Yuzb39" role="YeSDq">
@@ -1017,7 +1017,7 @@
               </node>
             </node>
             <node concept="liA8E" id="16oY6Yu_a9W" role="2OqNvi">
-              <ref role="37wK5l" to="jkm4:~DialogWrapper.show():void" resolve="show" />
+              <ref role="37wK5l" to="jkm4:~DialogWrapper.show()" resolve="show" />
             </node>
           </node>
         </node>
@@ -1051,7 +1051,7 @@
               <node concept="3clFbF" id="16oY6Yu__x_" role="8Wnug">
                 <node concept="2OqwBi" id="16oY6Yu_EjN" role="3clFbG">
                   <node concept="2YIFZM" id="16oY6Yu_DA8" role="2Oq$k0">
-                    <ref role="37wK5l" to="rvbb:~ProjectPane.getInstance(jetbrains.mps.project.Project):jetbrains.mps.ide.projectPane.ProjectPane" resolve="getInstance" />
+                    <ref role="37wK5l" to="rvbb:~ProjectPane.getInstance(jetbrains.mps.project.Project)" resolve="getInstance" />
                     <ref role="1Pybhc" to="rvbb:~ProjectPane" resolve="ProjectPane" />
                     <node concept="2OqwBi" id="16oY6Yu_DPc" role="37wK5m">
                       <node concept="2WthIp" id="16oY6Yu_DPf" role="2Oq$k0" />
@@ -1061,7 +1061,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="16oY6Yu_IR3" role="2OqNvi">
-                    <ref role="37wK5l" to="rvbb:~ProjectPane.selectModel(org.jetbrains.mps.openapi.model.SModel,boolean):void" resolve="selectModel" />
+                    <ref role="37wK5l" to="rvbb:~ProjectPane.selectModel(org.jetbrains.mps.openapi.model.SModel,boolean)" resolve="selectModel" />
                     <node concept="37vLTw" id="16oY6Yu_IV_" role="37wK5m">
                       <ref role="3cqZAo" node="16oY6Yu_oBk" resolve="model" />
                     </node>

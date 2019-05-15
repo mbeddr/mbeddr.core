@@ -90,7 +90,7 @@
           <node concept="3fqX7Q" id="2bng37t2hFe" role="3uHU7w">
             <node concept="2YIFZM" id="2bng37t2hFf" role="3fr31v">
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="btm1:~StringUtils.isBlank(java.lang.CharSequence):boolean" resolve="isBlank" />
+              <ref role="37wK5l" to="btm1:~StringUtils.isBlank(java.lang.CharSequence)" resolve="isBlank" />
               <node concept="2OqwBi" id="2bng37t2hFg" role="37wK5m">
                 <node concept="1YBJjd" id="2bng37t2hFh" role="2Oq$k0">
                   <ref role="1YBMHb" node="2bng37t2hFn" resolve="cellModel_Constant" />
@@ -103,7 +103,7 @@
           </node>
           <node concept="2YIFZM" id="2bng37t2hFj" role="3uHU7B">
             <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-            <ref role="37wK5l" to="btm1:~StringUtils.isAlphaSpace(java.lang.CharSequence):boolean" resolve="isAlphaSpace" />
+            <ref role="37wK5l" to="btm1:~StringUtils.isAlphaSpace(java.lang.CharSequence)" resolve="isAlphaSpace" />
             <node concept="2OqwBi" id="2bng37t2hFk" role="37wK5m">
               <node concept="1YBJjd" id="2bng37t2hFl" role="2Oq$k0">
                 <ref role="1YBMHb" node="2bng37t2hFn" resolve="cellModel_Constant" />

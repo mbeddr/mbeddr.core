@@ -214,7 +214,7 @@
                       <ref role="3cqZAo" node="4IjegxhuabP" resolve="e" />
                     </node>
                     <node concept="liA8E" id="4Ijegxh_QE8" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                     </node>
                   </node>
                 </node>
@@ -269,7 +269,7 @@
                       <ref role="3cqZAo" node="4Ijegxh_SIP" resolve="e" />
                     </node>
                     <node concept="liA8E" id="4Ijegxh_SIW" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                     </node>
                   </node>
                 </node>
@@ -304,18 +304,18 @@
           <node concept="3clFbF" id="4IjegxhuRMD" role="3cqZAp">
             <node concept="2OqwBi" id="4IjegxhuRQq" role="3clFbG">
               <node concept="2YIFZM" id="4IjegxhuRMT" role="2Oq$k0">
-                <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+                <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
                 <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
               </node>
               <node concept="liA8E" id="4IjegxhuTRU" role="2OqNvi">
-                <ref role="37wK5l" to="bd8o:~Application.executeOnPooledThread(java.lang.Runnable):java.util.concurrent.Future" resolve="executeOnPooledThread" />
+                <ref role="37wK5l" to="bd8o:~Application.executeOnPooledThread(java.lang.Runnable)" resolve="executeOnPooledThread" />
                 <node concept="1bVj0M" id="4IjegxhuU0u" role="37wK5m">
                   <node concept="3clFbS" id="4IjegxhuU0v" role="1bW5cS">
                     <node concept="SfApY" id="4Ijegxh_ppu" role="3cqZAp">
                       <node concept="3clFbS" id="4Ijegxh_ppw" role="SfCbr">
                         <node concept="3clFbF" id="4IjegxhuUdo" role="3cqZAp">
                           <node concept="2YIFZM" id="4IjegxhuUet" role="3clFbG">
-                            <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+                            <ref role="37wK5l" to="wyt6:~Thread.sleep(long)" resolve="sleep" />
                             <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
                             <node concept="3cmrfG" id="4IjegxhuUiZ" role="37wK5m">
                               <property role="3cmrfH" value="50" />
@@ -337,7 +337,7 @@
                                 <ref role="3cqZAo" node="4Ijegxh_ppz" resolve="e" />
                               </node>
                               <node concept="liA8E" id="4Ijegxh_qbo" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                               </node>
                             </node>
                           </node>

@@ -225,7 +225,7 @@
               <node concept="3clFbF" id="3C6_kMLMW0a" role="3cqZAp">
                 <node concept="2YIFZM" id="1TS1BLOX$z7" role="3clFbG">
                   <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
-                  <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                  <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable)" resolve="runReadTransparentAction" />
                   <node concept="1bVj0M" id="1TS1BLOX$z8" role="37wK5m">
                     <node concept="3clFbS" id="1TS1BLOX$z9" role="1bW5cS">
                       <node concept="3clFbF" id="1TS1BLOX$za" role="3cqZAp">

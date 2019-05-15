@@ -242,7 +242,7 @@
                         <node concept="2OqwBi" id="2bng37t32P9" role="37wK5m">
                           <node concept="1Q80Hx" id="2bng37t32Pa" role="2Oq$k0" />
                           <node concept="liA8E" id="2bng37t32Pb" role="2OqNvi">
-                            <ref role="37wK5l" to="cj4x:~EditorContext.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                            <ref role="37wK5l" to="cj4x:~EditorContext.getModel()" resolve="getModel" />
                           </node>
                         </node>
                       </node>
@@ -364,7 +364,7 @@
                         <node concept="2OqwBi" id="7Ssz$kYblEO" role="37wK5m">
                           <node concept="1Q80Hx" id="7Ssz$kYblEP" role="2Oq$k0" />
                           <node concept="liA8E" id="7Ssz$kYblEQ" role="2OqNvi">
-                            <ref role="37wK5l" to="cj4x:~EditorContext.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                            <ref role="37wK5l" to="cj4x:~EditorContext.getModel()" resolve="getModel" />
                           </node>
                         </node>
                       </node>

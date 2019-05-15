@@ -337,7 +337,7 @@
               <ref role="3cqZAo" node="6LsWDiKwZCu" resolve="m" />
             </node>
             <node concept="liA8E" id="6LsWDiKx072" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>
@@ -571,7 +571,7 @@
               <ref role="3cqZAo" node="yjDrJEn2Te" resolve="m" />
             </node>
             <node concept="liA8E" id="yjDrJEn49i" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>
@@ -690,7 +690,7 @@
               <ref role="3cqZAo" node="2Wc_BLzliG3" resolve="m" />
             </node>
             <node concept="liA8E" id="2Wc_BLzliLl" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>

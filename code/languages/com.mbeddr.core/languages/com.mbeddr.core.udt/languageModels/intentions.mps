@@ -932,7 +932,7 @@
           <node concept="2OqwBi" id="4fD91B_$wrA" role="3clFbG">
             <node concept="1XNTG" id="4fD91B_$wnr" role="2Oq$k0" />
             <node concept="liA8E" id="4fD91B_$wB5" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+              <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode)" resolve="select" />
               <node concept="2OqwBi" id="4fD91B_$wFl" role="37wK5m">
                 <node concept="37vLTw" id="4fD91B_$wBM" role="2Oq$k0">
                   <ref role="3cqZAo" node="4fD91B_w0$s" resolve="replaceWithNew" />

@@ -744,7 +744,7 @@
               <ref role="3cqZAo" node="5$bT90Zd1fL" resolve="f" />
             </node>
             <node concept="liA8E" id="5$bT90Zd2UT" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
+              <ref role="37wK5l" to="guwi:~File.mkdirs()" resolve="mkdirs" />
             </node>
           </node>
         </node>
@@ -1267,7 +1267,7 @@
             <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
           </node>
           <node concept="liA8E" id="hoMN8EZQjK" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
             <node concept="Xl_RD" id="hoMN8EZQtE" role="37wK5m">
               <property role="Xl_RC" value="Checking rule for doc" />
             </node>

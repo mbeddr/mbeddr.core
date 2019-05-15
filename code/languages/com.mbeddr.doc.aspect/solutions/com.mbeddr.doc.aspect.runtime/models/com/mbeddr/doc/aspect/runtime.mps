@@ -266,19 +266,19 @@
             <node concept="2OqwBi" id="69s3uhHTelM" role="33vP2m">
               <node concept="2YIFZM" id="69s3uhHTelN" role="2Oq$k0">
                 <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository)" resolve="getInstance" />
                 <node concept="37vLTw" id="qh7UMGiqvd" role="37wK5m">
                   <ref role="3cqZAo" node="qh7UMGiq55" resolve="repository" />
                 </node>
               </node>
               <node concept="liA8E" id="69s3uhHTelR" role="2OqNvi">
-                <ref role="37wK5l" to="vndm:~LanguageRegistry.getLanguage(org.jetbrains.mps.openapi.language.SLanguage):jetbrains.mps.smodel.language.LanguageRuntime" resolve="getLanguage" />
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getLanguage(org.jetbrains.mps.openapi.language.SLanguage)" resolve="getLanguage" />
                 <node concept="2OqwBi" id="69s3uhHTelS" role="37wK5m">
                   <node concept="37vLTw" id="69s3uhHTelT" role="2Oq$k0">
                     <ref role="3cqZAo" node="qh7UMGipdd" resolve="concept" />
                   </node>
                   <node concept="liA8E" id="69s3uhHTelU" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage()" resolve="getLanguage" />
                   </node>
                 </node>
               </node>
@@ -324,7 +324,7 @@
                     <ref role="3cqZAo" node="69s3uhHTelL" resolve="language" />
                   </node>
                   <node concept="liA8E" id="qh7UMGiw2A" role="2OqNvi">
-                    <ref role="37wK5l" to="vndm:~LanguageRuntime.getExtendingLanguages():java.lang.Iterable" resolve="getExtendingLanguages" />
+                    <ref role="37wK5l" to="vndm:~LanguageRuntime.getExtendingLanguages()" resolve="getExtendingLanguages" />
                   </node>
                 </node>
               </node>
@@ -344,7 +344,7 @@
                     <ref role="3M$S_o" node="qh7UMGivu9" resolve="nextLanguage" />
                   </node>
                   <node concept="liA8E" id="69s3uhHTfFU" role="2OqNvi">
-                    <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class):jetbrains.mps.smodel.runtime.ILanguageAspect" resolve="getAspect" />
+                    <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class)" resolve="getAspect" />
                     <node concept="3VsKOn" id="69s3uhHTfFV" role="37wK5m">
                       <ref role="3VsUkX" node="tBHOvWexR9" resolve="IDocumentationAspectDescriptor" />
                     </node>
@@ -751,7 +751,7 @@
                         <ref role="3cqZAo" node="2NM$qy7XAKP" resolve="property" />
                       </node>
                       <node concept="liA8E" id="2NM$qy7XAN2" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                         <node concept="2OqwBi" id="2NM$qy7XAN3" role="37wK5m">
                           <node concept="2OqwBi" id="2NM$qy7XAN4" role="2Oq$k0">
                             <node concept="2OqwBi" id="2NM$qy7XAN5" role="2Oq$k0">
@@ -835,7 +835,7 @@
               <node concept="1Wc70l" id="2NM$qy7XANK" role="3clFbw">
                 <node concept="2OqwBi" id="2NM$qy7XANL" role="3uHU7w">
                   <node concept="liA8E" id="2NM$qy7XANM" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="2NM$qy7XANN" role="37wK5m">
                       <node concept="2OqwBi" id="2NM$qy7XANO" role="2Oq$k0">
                         <node concept="2OqwBi" id="2NM$qy7XANP" role="2Oq$k0">

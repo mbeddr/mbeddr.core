@@ -85,7 +85,7 @@
             <node concept="3fqX7Q" id="vzhXZPAWNQ" role="3clFbG">
               <node concept="2YIFZM" id="vzhXZPAWNR" role="3fr31v">
                 <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="btm1:~StringUtils.containsWhitespace(java.lang.CharSequence):boolean" resolve="containsWhitespace" />
+                <ref role="37wK5l" to="btm1:~StringUtils.containsWhitespace(java.lang.CharSequence)" resolve="containsWhitespace" />
                 <node concept="1Wqviy" id="vzhXZPAWNS" role="37wK5m" />
               </node>
             </node>
@@ -110,7 +110,7 @@
             </node>
             <node concept="2YIFZM" id="vzhXZPAWO2" role="3clFbw">
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="btm1:~StringUtils.isBlank(java.lang.CharSequence):boolean" resolve="isBlank" />
+              <ref role="37wK5l" to="btm1:~StringUtils.isBlank(java.lang.CharSequence)" resolve="isBlank" />
               <node concept="2OqwBi" id="vzhXZPAWO3" role="37wK5m">
                 <node concept="EsrRn" id="vzhXZPAWO4" role="2Oq$k0" />
                 <node concept="3TrcHB" id="vzhXZPAWO5" role="2OqNvi">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -311,7 +311,7 @@
                       <property role="1BlNFB" value="true" />
                       <node concept="2YIFZM" id="izC6J7pa6n" role="1m5AlR">
                         <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
-                        <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="getInputNode" />
+                        <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository)" resolve="getInputNode" />
                         <node concept="30H73N" id="izC6J7paHg" role="37wK5m" />
                         <node concept="2OqwBi" id="izC6J7peQf" role="37wK5m">
                           <node concept="2JrnkZ" id="izC6J7petd" role="2Oq$k0">
@@ -321,7 +321,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="izC6J7pfnJ" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                            <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                           </node>
                         </node>
                       </node>
@@ -683,11 +683,11 @@
                             <node concept="2OqwBi" id="4U0cQfJqkwi" role="2Oq$k0">
                               <node concept="2QUAEa" id="4U0cQfJqkwj" role="2Oq$k0" />
                               <node concept="liA8E" id="4U0cQfJqkwk" role="2OqNvi">
-                                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                               </node>
                             </node>
                             <node concept="liA8E" id="4U0cQfJqkwl" role="2OqNvi">
-                              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):boolean" resolve="isSubtype" />
+                              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="isSubtype" />
                               <node concept="2OqwBi" id="4U0cQfJqkwm" role="37wK5m">
                                 <node concept="2OqwBi" id="4U0cQfJqkwn" role="2Oq$k0">
                                   <node concept="37vLTw" id="4U0cQfJqkwo" role="2Oq$k0">

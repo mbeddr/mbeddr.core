@@ -2,7 +2,7 @@
 <model ref="r:bb4764cf-9b44-4239-950c-22ec267d6084(com.mbeddr.mpsutil.interpreter.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
@@ -3628,7 +3628,7 @@
                                                     <ref role="3cqZAo" node="7x8nQJH4wDL" resolve="pres" />
                                                   </node>
                                                   <node concept="liA8E" id="7x8nQJH4$_N" role="2OqNvi">
-                                                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                                                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                                                     <node concept="Xl_RD" id="7x8nQJH4$TG" role="37wK5m">
                                                       <property role="Xl_RC" value="\\" />
                                                     </node>
@@ -3827,11 +3827,11 @@
                               <node concept="3clFbF" id="3wJ9Qm1bPPL" role="3cqZAp">
                                 <node concept="2OqwBi" id="3wJ9Qm1bPPM" role="3clFbG">
                                   <node concept="2YIFZM" id="3wJ9Qm1bPPN" role="2Oq$k0">
-                                    <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance():org.jetbrains.mps.openapi.persistence.PersistenceFacade" resolve="getInstance" />
+                                    <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance()" resolve="getInstance" />
                                     <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
                                   </node>
                                   <node concept="liA8E" id="3wJ9Qm1bPPO" role="2OqNvi">
-                                    <ref role="37wK5l" to="dush:~PersistenceFacade.asString(org.jetbrains.mps.openapi.model.SNodeReference):java.lang.String" resolve="asString" />
+                                    <ref role="37wK5l" to="dush:~PersistenceFacade.asString(org.jetbrains.mps.openapi.model.SNodeReference)" resolve="asString" />
                                     <node concept="2OqwBi" id="3wJ9Qm1hT5S" role="37wK5m">
                                       <node concept="1eOMI4" id="3wJ9Qm1hS_h" role="2Oq$k0">
                                         <node concept="2JrnkZ" id="3wJ9Qm1hQNH" role="1eOMHV">
@@ -3841,7 +3841,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="3wJ9Qm1hU5D" role="2OqNvi">
-                                        <ref role="37wK5l" to="mhbf:~SNode.getReference():org.jetbrains.mps.openapi.model.SNodeReference" resolve="getReference" />
+                                        <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
                                       </node>
                                     </node>
                                   </node>
@@ -4397,11 +4397,11 @@
                               <node concept="3clFbF" id="3wJ9Qm27nbM" role="3cqZAp">
                                 <node concept="2OqwBi" id="3wJ9Qm27nbN" role="3clFbG">
                                   <node concept="2YIFZM" id="3wJ9Qm27nbO" role="2Oq$k0">
-                                    <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance():org.jetbrains.mps.openapi.persistence.PersistenceFacade" resolve="getInstance" />
+                                    <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance()" resolve="getInstance" />
                                     <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
                                   </node>
                                   <node concept="liA8E" id="3wJ9Qm27nbP" role="2OqNvi">
-                                    <ref role="37wK5l" to="dush:~PersistenceFacade.asString(org.jetbrains.mps.openapi.model.SNodeReference):java.lang.String" resolve="asString" />
+                                    <ref role="37wK5l" to="dush:~PersistenceFacade.asString(org.jetbrains.mps.openapi.model.SNodeReference)" resolve="asString" />
                                     <node concept="2OqwBi" id="3wJ9Qm27nbQ" role="37wK5m">
                                       <node concept="1eOMI4" id="3wJ9Qm27nbR" role="2Oq$k0">
                                         <node concept="2JrnkZ" id="3wJ9Qm27nbS" role="1eOMHV">
@@ -4411,7 +4411,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="3wJ9Qm27nbU" role="2OqNvi">
-                                        <ref role="37wK5l" to="mhbf:~SNode.getReference():org.jetbrains.mps.openapi.model.SNodeReference" resolve="getReference" />
+                                        <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
                                       </node>
                                     </node>
                                   </node>
@@ -5771,7 +5771,7 @@
                             <ref role="3cqZAo" node="3oV0py8UBc5" resolve="___t" />
                           </node>
                           <node concept="liA8E" id="3oV0py9mhC4" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~Collection.size():int" resolve="size" />
+                            <ref role="37wK5l" to="33ny:~Collection.size()" resolve="size" />
                           </node>
                         </node>
                       </node>

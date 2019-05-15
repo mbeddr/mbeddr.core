@@ -194,7 +194,7 @@
             <node concept="3clFbF" id="1if8LHMzFwm" role="3cqZAp">
               <node concept="2YIFZM" id="1if8LHMzUnf" role="3clFbG">
                 <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
-                <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
+                <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
                 <node concept="1bVj0M" id="1if8LHMzUnR" role="37wK5m">
                   <node concept="3clFbS" id="1if8LHMzUnS" role="1bW5cS">
                     <node concept="3clFbF" id="1if8LHMzUpU" role="3cqZAp">
@@ -224,7 +224,7 @@
         </node>
         <node concept="3clFbF" id="1if8LHMx0nJ" role="3cqZAp">
           <node concept="3nyPlj" id="1if8LHMx0nI" role="3clFbG">
-            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getAction(jetbrains.mps.openapi.editor.cells.CellActionType):jetbrains.mps.openapi.editor.cells.CellAction" resolve="getAction" />
+            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getAction(jetbrains.mps.openapi.editor.cells.CellActionType)" resolve="getAction" />
             <node concept="37vLTw" id="1if8LHMx0nH" role="37wK5m">
               <ref role="3cqZAo" node="1if8LHMx0nA" resolve="type" />
             </node>
@@ -267,7 +267,7 @@
         </node>
         <node concept="3clFbF" id="6tLsdkfI42c" role="3cqZAp">
           <node concept="3nyPlj" id="6tLsdkfI42d" role="3clFbG">
-            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent():jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="getParent" />
+            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent()" resolve="getParent" />
           </node>
         </node>
       </node>

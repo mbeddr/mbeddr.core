@@ -240,7 +240,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="2NzhyaZyo9V" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="2NzhyaZyomD" role="37wK5m">
                 <node concept="37vLTw" id="2NzhyaZyooc" role="3uHU7w">
                   <ref role="3cqZAo" node="2NzhyaZynLi" resolve="b" />
@@ -279,7 +279,7 @@
             <node concept="2OqwBi" id="70BL6LoUg0C" role="3clFbG">
               <node concept="29H0B1" id="70BL6LoUfR0" role="2Oq$k0" />
               <node concept="liA8E" id="70BL6LoUhp5" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
                 <node concept="2ShNRf" id="rF8Sb8ZHkb" role="37wK5m">
                   <node concept="1pGfFk" id="rF8Sb8ZHDB" role="2ShVmc">
                     <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
@@ -324,7 +324,7 @@
             <node concept="2OqwBi" id="70BL6LoUVBG" role="3clFbG">
               <node concept="29H0B1" id="70BL6LoUVBH" role="2Oq$k0" />
               <node concept="liA8E" id="70BL6LoUVBI" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
                 <node concept="2OqwBi" id="rF8Sb8ZRnk" role="37wK5m">
                   <node concept="2WthIp" id="rF8Sb8ZRnn" role="2Oq$k0" />
                   <node concept="C_CzU" id="rF8Sb8ZRnp" role="2OqNvi">
@@ -348,7 +348,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="rF8Sb8ZL_6" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JLabel.setText(java.lang.String):void" resolve="setText" />
+                <ref role="37wK5l" to="dxuu:~JLabel.setText(java.lang.String)" resolve="setText" />
                 <node concept="3cpWs3" id="rF8Sb8ZLG2" role="37wK5m">
                   <node concept="CVeQV" id="rF8Sb8ZLGU" role="3uHU7w">
                     <ref role="CVeQ8" node="5Kcl6zlGXXY" resolve="y" />
@@ -416,7 +416,7 @@
                 <ref role="3cqZAo" node="rF8Sb8FG$M" resolve="label" />
               </node>
               <node concept="liA8E" id="1J_CuVjhyoO" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JLabel.setLabelFor(java.awt.Component):void" resolve="setLabelFor" />
+                <ref role="37wK5l" to="dxuu:~JLabel.setLabelFor(java.awt.Component)" resolve="setLabelFor" />
                 <node concept="2OqwBi" id="1J_CuVjhywc" role="37wK5m">
                   <node concept="2WthIp" id="1J_CuVjhyvJ" role="2Oq$k0" />
                   <node concept="C_CzU" id="1J_CuVjhyEt" role="2OqNvi">
@@ -430,7 +430,7 @@
             <node concept="2OqwBi" id="rF8Sb8FESQ" role="3clFbG">
               <node concept="29H0B1" id="rF8Sb8FEGy" role="2Oq$k0" />
               <node concept="liA8E" id="rF8Sb8FGgq" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
                 <node concept="37vLTw" id="rF8Sb8FGDq" role="37wK5m">
                   <ref role="3cqZAo" node="rF8Sb8FG$M" resolve="label" />
                 </node>
@@ -442,7 +442,7 @@
             <node concept="2OqwBi" id="1J_CuVjhzuP" role="3clFbG">
               <node concept="29H0B1" id="1J_CuVjhzjj" role="2Oq$k0" />
               <node concept="liA8E" id="1J_CuVjhAaO" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
                 <node concept="2OqwBi" id="1J_CuVjhAh2" role="37wK5m">
                   <node concept="2WthIp" id="1J_CuVjhAbv" role="2Oq$k0" />
                   <node concept="C_CzU" id="1J_CuVjhAu0" role="2OqNvi">
@@ -466,7 +466,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="rF8Sb8LKZe" role="2OqNvi">
-                  <ref role="37wK5l" to="r791:~JTextComponent.getText():java.lang.String" resolve="getText" />
+                  <ref role="37wK5l" to="r791:~JTextComponent.getText()" resolve="getText" />
                 </node>
               </node>
               <node concept="2OqwBi" id="rF8Sb8LGu0" role="37vLTJ">
@@ -511,7 +511,7 @@
             <node concept="2OqwBi" id="rF8Sb8FAXU" role="3clFbG">
               <node concept="29H0B1" id="rF8Sb8FAOs" role="2Oq$k0" />
               <node concept="liA8E" id="rF8Sb8FDCD" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
                 <node concept="2OqwBi" id="rF8Sb8OdzL" role="37wK5m">
                   <node concept="2WthIp" id="rF8Sb8OdzO" role="2Oq$k0" />
                   <node concept="C_CzU" id="rF8Sb8OdzQ" role="2OqNvi">
@@ -534,7 +534,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="rF8Sb8Ohae" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JLabel.setText(java.lang.String):void" resolve="setText" />
+                <ref role="37wK5l" to="dxuu:~JLabel.setText(java.lang.String)" resolve="setText" />
                 <node concept="3cpWs3" id="rF8Sb8OhtJ" role="37wK5m">
                   <node concept="2OqwBi" id="rF8Sb8OhxG" role="3uHU7w">
                     <node concept="CSfHN" id="rF8Sb8OhuG" role="2Oq$k0">
@@ -559,7 +559,7 @@
             <node concept="3clFbS" id="6JByj2Cycnr" role="SfCbr">
               <node concept="3clFbF" id="6JByj2Cus3Q" role="3cqZAp">
                 <node concept="2YIFZM" id="6JByj2Cus48" role="3clFbG">
-                  <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+                  <ref role="37wK5l" to="wyt6:~Thread.sleep(long)" resolve="sleep" />
                   <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
                   <node concept="3cmrfG" id="6JByj2Cus4q" role="37wK5m">
                     <property role="3cmrfH" value="2000" />
@@ -601,7 +601,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="rF8Sb8FJL8" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="Xl_RD" id="rF8Sb8FJVz" role="37wK5m">
                   <property role="Xl_RC" value="Kolja" />
                 </node>
@@ -616,7 +616,7 @@
             <node concept="2OqwBi" id="rF8Sb8FKCE" role="3clFbG">
               <node concept="29H0B1" id="rF8Sb8FKqP" role="2Oq$k0" />
               <node concept="liA8E" id="rF8Sb8FNjp" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
                 <node concept="2ShNRf" id="rF8Sb8FNjS" role="37wK5m">
                   <node concept="1pGfFk" id="rF8Sb8FNCA" role="2ShVmc">
                     <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />

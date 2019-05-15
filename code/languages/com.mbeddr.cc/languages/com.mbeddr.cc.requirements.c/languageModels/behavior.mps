@@ -337,7 +337,7 @@
     </node>
     <node concept="13i0hz" id="519ky_SnusJ" role="13h7CS">
       <property role="TrG5h" value="renderReadable" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
       <node concept="3clFbS" id="519ky_SnusM" role="3clF47">
         <node concept="3clFbF" id="519ky_SnusP" role="3cqZAp">
           <node concept="2OqwBi" id="519ky_SnutB" role="3clFbG">
@@ -390,7 +390,7 @@
                 <node concept="13iPFW" id="6HBFJcsS1xb" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="6HBFJcsS1xc" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                 <node concept="Xl_RD" id="6HBFJcsS1xd" role="37wK5m">
                   <property role="Xl_RC" value="debuggedTest" />
                 </node>
@@ -446,7 +446,7 @@
               <node concept="13iPFW" id="dfV14BYitR" role="2JrQYb" />
             </node>
             <node concept="liA8E" id="dfV14BYiNt" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
               <node concept="Xl_RD" id="dfV14BYiOb" role="37wK5m">
                 <property role="Xl_RC" value="debuggedTest" />
               </node>
@@ -654,7 +654,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="4MVAbAXtlF6" role="2OqNvi">
-                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
                 </node>
               </node>
             </node>
@@ -696,7 +696,7 @@
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
       <node concept="3Tm1VV" id="1e1skYm1akT" role="1B3o_S" />
       <node concept="3clFbS" id="1e1skYm1aln" role="3clF47">
         <node concept="3clFbF" id="1e1skYm1f4u" role="3cqZAp">

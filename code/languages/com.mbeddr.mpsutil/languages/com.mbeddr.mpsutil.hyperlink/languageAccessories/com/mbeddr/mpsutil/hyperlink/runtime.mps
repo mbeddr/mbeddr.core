@@ -146,7 +146,7 @@
       </node>
       <node concept="3Tm6S6" id="5A_Zlt6y2Gw" role="1B3o_S" />
       <node concept="2YIFZM" id="5A_Zlt6y337" role="33vP2m">
-        <ref role="37wK5l" to="q7tw:~Logger.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
+        <ref role="37wK5l" to="q7tw:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
         <ref role="1Pybhc" to="q7tw:~Logger" resolve="Logger" />
         <node concept="3VsKOn" id="5A_Zlt6y34B" role="37wK5m">
           <ref role="3VsUkX" node="5A_Zlt6xR7j" resolve="HyperlinkUtil" />
@@ -194,12 +194,12 @@
                 <node concept="3K4zz7" id="3DAECxFHCV$" role="33vP2m">
                   <node concept="2YIFZM" id="3DAECxFHCV_" role="3K4E3e">
                     <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
-                    <ref role="37wK5l" to="z60i:~Desktop.getDesktop():java.awt.Desktop" resolve="getDesktop" />
+                    <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
                   </node>
                   <node concept="10Nm6u" id="3DAECxFHCVA" role="3K4GZi" />
                   <node concept="2YIFZM" id="3DAECxFHCVB" role="3K4Cdx">
                     <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
-                    <ref role="37wK5l" to="z60i:~Desktop.isDesktopSupported():boolean" resolve="isDesktopSupported" />
+                    <ref role="37wK5l" to="z60i:~Desktop.isDesktopSupported()" resolve="isDesktopSupported" />
                   </node>
                 </node>
               </node>
@@ -214,7 +214,7 @@
                           <ref role="3cqZAo" node="3DAECxFHCVy" resolve="d" />
                         </node>
                         <node concept="liA8E" id="58xH_U7jkJc" role="2OqNvi">
-                          <ref role="37wK5l" to="z60i:~Desktop.browse(java.net.URI):void" resolve="browse" />
+                          <ref role="37wK5l" to="z60i:~Desktop.browse(java.net.URI)" resolve="browse" />
                           <node concept="2ShNRf" id="58xH_U7jkJd" role="37wK5m">
                             <node concept="1pGfFk" id="58xH_U7jkJe" role="2ShVmc">
                               <ref role="37wK5l" to="zf81:~URI.&lt;init&gt;(java.lang.String)" resolve="URI" />
@@ -233,7 +233,7 @@
                       <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
                     </node>
                     <node concept="liA8E" id="58xH_U7jiQN" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                       <node concept="Xl_RD" id="58xH_U7jiRO" role="37wK5m">
                         <property role="Xl_RC" value="mailto:" />
                       </node>
@@ -265,7 +265,7 @@
                           <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
                         </node>
                         <node concept="liA8E" id="gKFhvEOMdQ" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                          <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                           <node concept="Xl_RD" id="gKFhvEOMgg" role="37wK5m">
                             <property role="Xl_RC" value="https://" />
                           </node>
@@ -278,7 +278,7 @@
                           <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
                         </node>
                         <node concept="liA8E" id="50N_nP$es9O" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                          <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                           <node concept="Xl_RD" id="50N_nP$es9P" role="37wK5m">
                             <property role="Xl_RC" value="http://" />
                           </node>
@@ -293,7 +293,7 @@
                       <ref role="3cqZAo" node="3DAECxFHCVy" resolve="d" />
                     </node>
                     <node concept="liA8E" id="3DAECxFHCVH" role="2OqNvi">
-                      <ref role="37wK5l" to="z60i:~Desktop.browse(java.net.URI):void" resolve="browse" />
+                      <ref role="37wK5l" to="z60i:~Desktop.browse(java.net.URI)" resolve="browse" />
                       <node concept="2ShNRf" id="50N_nP$dPHu" role="37wK5m">
                         <node concept="1pGfFk" id="50N_nP$e6K5" role="2ShVmc">
                           <ref role="37wK5l" to="zf81:~URI.&lt;init&gt;(java.lang.String)" resolve="URI" />
@@ -328,7 +328,7 @@
                     <ref role="3cqZAo" node="5A_Zlt6y3bR" resolve="LOG" />
                   </node>
                   <node concept="liA8E" id="5A_Zlt6y5au" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable):void" resolve="error" />
+                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
                     <node concept="3cpWs3" id="5A_Zlt6y6H4" role="37wK5m">
                       <node concept="37vLTw" id="5A_Zlt6y6Hp" role="3uHU7w">
                         <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />

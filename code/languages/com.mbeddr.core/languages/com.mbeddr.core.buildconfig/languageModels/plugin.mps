@@ -283,7 +283,7 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
-        <property id="2423417345669755629" name="whichError" index="1eyWvh" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -428,7 +428,7 @@
                                           <node concept="17QB3L" id="6dqrGHqK54p" role="1tU5fm" />
                                           <node concept="2YIFZM" id="5IpIYYkk2Vp" role="33vP2m">
                                             <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                                            <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
+                                            <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputPathFor" />
                                             <node concept="37vLTw" id="5IpIYYkk3KY" role="37wK5m">
                                               <ref role="3cqZAo" node="2obGnlRg4rC" resolve="model" />
                                             </node>
@@ -446,7 +446,7 @@
                                             <node concept="3cpWs3" id="6dqrGHqK5hm" role="3uHU7B">
                                               <node concept="2OqwBi" id="5Hxjapwed44" role="3uHU7B">
                                                 <node concept="liA8E" id="5Hxjapwed45" role="2OqNvi">
-                                                  <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                                                  <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
                                                 </node>
                                                 <node concept="2OqwBi" id="5Hxjapwed46" role="2Oq$k0">
                                                   <node concept="37vLTw" id="5Hxjapwed47" role="2Oq$k0">
@@ -626,7 +626,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="16gyj4ClDqW" role="2OqNvi">
-                                      <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                                     </node>
                                   </node>
                                 </node>

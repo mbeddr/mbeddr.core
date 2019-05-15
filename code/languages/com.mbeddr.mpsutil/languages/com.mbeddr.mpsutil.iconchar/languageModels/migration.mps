@@ -226,7 +226,7 @@
               <ref role="3cqZAo" node="72HfR5Q9zZi" resolve="m" />
             </node>
             <node concept="liA8E" id="72HfR5Q9Bi7" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
           <node concept="3clFbS" id="72HfR5Q9_H8" role="2LFqv$">
@@ -307,7 +307,7 @@
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="72HfR5QbPFn" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                                          <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                                           <node concept="3cmrfG" id="72HfR5QbPPX" role="37wK5m">
                                             <property role="3cmrfH" value="1" />
                                           </node>
@@ -338,7 +338,7 @@
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="72HfR5QbQww" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                                          <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                                           <node concept="3cmrfG" id="72HfR5QbQwx" role="37wK5m">
                                             <property role="3cmrfH" value="1" />
                                           </node>
@@ -363,7 +363,7 @@
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="72HfR5QbRro" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                                          <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                                           <node concept="3cmrfG" id="72HfR5QbRrp" role="37wK5m">
                                             <property role="3cmrfH" value="1" />
                                           </node>

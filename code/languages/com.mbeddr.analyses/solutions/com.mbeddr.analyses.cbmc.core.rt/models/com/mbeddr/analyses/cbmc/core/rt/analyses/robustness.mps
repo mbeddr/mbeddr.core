@@ -293,7 +293,7 @@
                         <ref role="3VsUkX" node="3x0R1LJ5HeB" resolve="RobustnessAnalyzer" />
                       </node>
                       <node concept="liA8E" id="3GkK2EES8rS" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName()" resolve="getSimpleName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="3GkK2EERZtf" role="3uHU7B">
@@ -310,7 +310,7 @@
                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                 </node>
                 <node concept="liA8E" id="2Ra3lN_4Bot" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="2Ra3lN_4Box" role="37wK5m">
                     <node concept="37vLTw" id="2Ra3lN_4Boy" role="3uHU7w">
                       <ref role="3cqZAo" node="21ftQP2h_NQ" resolve="s" />

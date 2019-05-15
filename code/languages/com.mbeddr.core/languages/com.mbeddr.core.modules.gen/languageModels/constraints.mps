@@ -90,12 +90,12 @@
                   <node concept="1Q6Npb" id="4ol4Q3pLEk7" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="4ol4Q3pLErv" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                 </node>
               </node>
             </node>
             <node concept="2YIFZM" id="4ol4Q3pLHS3" role="3uHU7w">
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
               <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
               <node concept="1Q6Npb" id="4ol4Q3pLI4K" role="37wK5m" />
             </node>
@@ -120,12 +120,12 @@
                   <node concept="1Q6Npb" id="4ol4Q3pLJYo" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="4ol4Q3pLJYp" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                 </node>
               </node>
             </node>
             <node concept="2YIFZM" id="4ol4Q3pLJYq" role="3uHU7w">
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
               <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
               <node concept="1Q6Npb" id="4ol4Q3pLJYr" role="37wK5m" />
             </node>
@@ -150,12 +150,12 @@
                   <node concept="1Q6Npb" id="4ol4Q3pLK1h" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="4ol4Q3pLK1i" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                 </node>
               </node>
             </node>
             <node concept="2YIFZM" id="4ol4Q3pLK1j" role="3uHU7w">
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
               <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
               <node concept="1Q6Npb" id="4ol4Q3pLK1k" role="37wK5m" />
             </node>
@@ -180,12 +180,12 @@
                   <node concept="1Q6Npb" id="4ol4Q3pLK46" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="4ol4Q3pLK47" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                 </node>
               </node>
             </node>
             <node concept="2YIFZM" id="4ol4Q3pLK6l" role="3uHU7w">
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isTestModel" />
               <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
               <node concept="1Q6Npb" id="4ol4Q3pLK6m" role="37wK5m" />
             </node>
@@ -210,12 +210,12 @@
                   <node concept="1Q6Npb" id="4ol4Q3pLKbs" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="4ol4Q3pLKbt" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                 </node>
               </node>
             </node>
             <node concept="2YIFZM" id="4ol4Q3pLKbu" role="3uHU7w">
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
               <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
               <node concept="1Q6Npb" id="4ol4Q3pLKbv" role="37wK5m" />
             </node>

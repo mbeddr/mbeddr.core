@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
@@ -595,7 +595,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2GZiJUXMe6H" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="10M0yZ" id="2GZiJUXMe6I" role="37wK5m">
                   <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
                   <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
@@ -612,7 +612,7 @@
                   <property role="TrG5h" value="tout" />
                   <node concept="10Oyi0" id="1XFitunRfpO" role="1tU5fm" />
                   <node concept="2YIFZM" id="1XFitunRfpP" role="33vP2m">
-                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                     <node concept="2OqwBi" id="1XFitunRfpQ" role="37wK5m">
                       <node concept="1YBJjd" id="1XFitunRfpR" role="2Oq$k0">
@@ -711,7 +711,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2GZiJUXMeDV" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="10M0yZ" id="2GZiJUXMeDW" role="37wK5m">
                   <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
                   <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
@@ -728,7 +728,7 @@
                   <property role="TrG5h" value="tout" />
                   <node concept="10Oyi0" id="5zmbZKrhdp0" role="1tU5fm" />
                   <node concept="2YIFZM" id="5zmbZKrhdp1" role="33vP2m">
-                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                     <node concept="2OqwBi" id="5zmbZKrhdp2" role="37wK5m">
                       <node concept="1YBJjd" id="5zmbZKrhdp3" role="2Oq$k0">
@@ -1721,7 +1721,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2GZiJUXMkAZ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="10M0yZ" id="2GZiJUXMkB0" role="37wK5m">
                   <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
                   <ref role="3cqZAo" to="tzyt:5zmbZKqV1tt" resolve="NO_ANALYSIS_DEPTH_STRING" />
@@ -1738,7 +1738,7 @@
                   <property role="TrG5h" value="depth" />
                   <node concept="10Oyi0" id="2GZiJUXMkB6" role="1tU5fm" />
                   <node concept="2YIFZM" id="2GZiJUXMkB7" role="33vP2m">
-                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                     <node concept="2OqwBi" id="2GZiJUXMkB8" role="37wK5m">
                       <node concept="1YBJjd" id="2GZiJUXMkB9" role="2Oq$k0">

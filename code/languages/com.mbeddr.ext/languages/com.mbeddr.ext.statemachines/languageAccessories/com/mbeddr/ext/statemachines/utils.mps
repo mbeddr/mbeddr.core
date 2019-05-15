@@ -135,7 +135,7 @@
               <ref role="3cqZAo" node="53JsLqwMa54" resolve="varName" />
             </node>
             <node concept="liA8E" id="53JsLqwMa50" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="37vLTw" id="53JsLqwMa51" role="37wK5m">
                 <ref role="3cqZAo" node="53JsLqwMa4E" resolve="EVENT_VAR_PREFIX" />
               </node>
@@ -162,13 +162,13 @@
               <ref role="3cqZAo" node="53JsLqwMa5i" resolve="varName" />
             </node>
             <node concept="liA8E" id="53JsLqwMa5c" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+              <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
               <node concept="2OqwBi" id="53JsLqwMa5d" role="37wK5m">
                 <node concept="37vLTw" id="53JsLqwMa5e" role="2Oq$k0">
                   <ref role="3cqZAo" node="53JsLqwMa4E" resolve="EVENT_VAR_PREFIX" />
                 </node>
                 <node concept="liA8E" id="53JsLqwMa5f" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
               </node>
             </node>

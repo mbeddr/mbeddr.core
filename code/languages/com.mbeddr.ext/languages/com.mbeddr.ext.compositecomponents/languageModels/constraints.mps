@@ -459,7 +459,7 @@
           </node>
           <node concept="2YIFZM" id="79i$vAY79N$" role="3clFbw">
             <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-            <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+            <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
             <node concept="2OqwBi" id="79i$vAY79N_" role="37wK5m">
               <node concept="nLn13" id="79i$vAY79NA" role="2Oq$k0" />
               <node concept="I4A8Y" id="79i$vAY79NB" role="2OqNvi" />

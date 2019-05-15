@@ -670,7 +670,7 @@
               <ref role="3cqZAo" node="3RseghIcKtf" resolve="s" />
             </node>
             <node concept="liA8E" id="3RseghIcKtI" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
               <node concept="Xl_RD" id="3RseghIcKtJ" role="37wK5m">
                 <property role="Xl_RC" value="_" />
               </node>

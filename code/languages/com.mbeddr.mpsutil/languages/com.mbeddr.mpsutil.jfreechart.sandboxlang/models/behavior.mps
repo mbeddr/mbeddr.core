@@ -175,9 +175,9 @@
                               <ref role="3cqZAo" node="75t_nimFmJj" resolve="series" />
                             </node>
                             <node concept="liA8E" id="75t_nimFnuK" role="2OqNvi">
-                              <ref role="37wK5l" to="8en7:~XYSeries.add(double,double):void" resolve="add" />
+                              <ref role="37wK5l" to="8en7:~XYSeries.add(double,double)" resolve="add" />
                               <node concept="2YIFZM" id="7uOgiT9_qo" role="37wK5m">
-                                <ref role="37wK5l" to="wyt6:~Double.parseDouble(java.lang.String):double" resolve="parseDouble" />
+                                <ref role="37wK5l" to="wyt6:~Double.parseDouble(java.lang.String)" resolve="parseDouble" />
                                 <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
                                 <node concept="2OqwBi" id="7uOgiT9$qf" role="37wK5m">
                                   <node concept="2GrUjf" id="7uOgiT9$hv" role="2Oq$k0">
@@ -189,7 +189,7 @@
                                 </node>
                               </node>
                               <node concept="2YIFZM" id="7uOgiT9A6q" role="37wK5m">
-                                <ref role="37wK5l" to="wyt6:~Double.parseDouble(java.lang.String):double" resolve="parseDouble" />
+                                <ref role="37wK5l" to="wyt6:~Double.parseDouble(java.lang.String)" resolve="parseDouble" />
                                 <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
                                 <node concept="2OqwBi" id="7uOgiT9Aq$" role="37wK5m">
                                   <node concept="2GrUjf" id="7uOgiT9Ak1" role="2Oq$k0">
@@ -230,7 +230,7 @@
                       <ref role="3cqZAo" node="75t_nimFpYY" resolve="dataset" />
                     </node>
                     <node concept="liA8E" id="7uOgiT9eiM" role="2OqNvi">
-                      <ref role="37wK5l" to="8en7:~XYSeriesCollection.addSeries(org.jfree.data.xy.XYSeries):void" resolve="addSeries" />
+                      <ref role="37wK5l" to="8en7:~XYSeriesCollection.addSeries(org.jfree.data.xy.XYSeries)" resolve="addSeries" />
                       <node concept="37vLTw" id="7uOgiT9eja" role="37wK5m">
                         <ref role="3cqZAo" node="75t_nimFmJj" resolve="series" />
                       </node>
@@ -264,7 +264,7 @@
             </node>
             <node concept="2YIFZM" id="75t_nimFlmN" role="33vP2m">
               <ref role="1Pybhc" to="k6nw:~ChartFactory" resolve="ChartFactory" />
-              <ref role="37wK5l" to="k6nw:~ChartFactory.createXYLineChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.xy.XYDataset):org.jfree.chart.JFreeChart" resolve="createXYLineChart" />
+              <ref role="37wK5l" to="k6nw:~ChartFactory.createXYLineChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.xy.XYDataset)" resolve="createXYLineChart" />
               <node concept="2OqwBi" id="7uOgiT9vc2" role="37wK5m">
                 <node concept="13iPFW" id="7uOgiT9Mvi" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7uOgiT9vng" role="2OqNvi">

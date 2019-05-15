@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -350,7 +350,7 @@
                         <ref role="3cqZAo" node="3XrE5vcna5N" resolve="aspectClass" />
                       </node>
                       <node concept="liA8E" id="6m8qo2wwecK" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.cast(java.lang.Object):java.lang.Object" resolve="cast" />
+                        <ref role="37wK5l" to="wyt6:~Class.cast(java.lang.Object)" resolve="cast" />
                         <node concept="2ShNRf" id="6m8qo2wweAd" role="37wK5m">
                           <node concept="HV5vD" id="6m8qo2wwkOP" role="2ShVmc">
                             <ref role="HV5vE" node="tBHOvWeyAb" resolve="DocumentationDescriptor" />
@@ -507,7 +507,7 @@
               <ref role="3uigEE" to="w1kc:~ModuleRepositoryFacade" resolve="ModuleRepositoryFacade" />
             </node>
             <node concept="2YIFZM" id="eEuMfA9ydc" role="33vP2m">
-              <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.getInstance():jetbrains.mps.smodel.ModuleRepositoryFacade" resolve="getInstance" />
+              <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="w1kc:~ModuleRepositoryFacade" resolve="ModuleRepositoryFacade" />
             </node>
           </node>
@@ -523,7 +523,7 @@
                 <ref role="3cqZAo" node="eEuMfA9ydb" resolve="repositoryFacade" />
               </node>
               <node concept="liA8E" id="eEuMfA9xXs" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.getModule(org.jetbrains.mps.openapi.module.SModuleReference,java.lang.Class):org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.getModule(org.jetbrains.mps.openapi.module.SModuleReference,java.lang.Class)" resolve="getModule" />
                 <node concept="37shsh" id="eEuMfA9xXt" role="37wK5m">
                   <node concept="20RdaH" id="eEuMfA9xXu" role="37shsm">
                     <property role="20Rdg7" value="com.mbeddr.doc.aspect" />
@@ -607,7 +607,7 @@
                     <ref role="3cqZAo" node="eEuMfA9ydb" resolve="repositoryFacade" />
                   </node>
                   <node concept="liA8E" id="eEuMfA9T2Q" role="2OqNvi">
-                    <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.getAllExtendingLanguages(jetbrains.mps.smodel.Language):java.util.Collection" resolve="getAllExtendingLanguages" />
+                    <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.getAllExtendingLanguages(jetbrains.mps.smodel.Language)" resolve="getAllExtendingLanguages" />
                     <node concept="37vLTw" id="4MX_x9xFOp" role="37wK5m">
                       <ref role="3cqZAo" node="eEuMfA9xXp" resolve="currentLanguage" />
                     </node>

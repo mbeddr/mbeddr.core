@@ -366,7 +366,7 @@
                         <ref role="3uigEE" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                       </node>
                       <node concept="2YIFZM" id="5HS6sdGslnG" role="33vP2m">
-                        <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                        <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
                         <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                       </node>
                     </node>
@@ -380,7 +380,7 @@
                           <ref role="3cqZAo" node="2rgL4xy711U" resolve="first" />
                         </node>
                         <node concept="liA8E" id="5HS6sdGslys" role="2OqNvi">
-                          <ref role="37wK5l" to="w1kc:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                          <ref role="37wK5l" to="w1kc:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                           <node concept="37vLTw" id="5HS6sdGslyt" role="37wK5m">
                             <ref role="3cqZAo" node="5HS6sdGslnE" resolve="repo" />
                           </node>
@@ -538,7 +538,7 @@
                           <ref role="3cqZAo" node="5HS6sdGt6Vn" resolve="tp" />
                         </node>
                         <node concept="liA8E" id="5HS6sdGt8mT" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                          <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                         </node>
                       </node>
                     </node>
@@ -555,7 +555,7 @@
           </node>
           <node concept="2YIFZM" id="5HS6sdGt4EE" role="ukAjM">
             <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-            <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+            <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
           </node>
         </node>
         <node concept="3cpWs6" id="5HS6sdGsK63" role="3cqZAp">
@@ -583,7 +583,7 @@
               <ref role="3uigEE" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
             </node>
             <node concept="2YIFZM" id="2rgL4xy7zYM" role="33vP2m">
-              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
             </node>
           </node>
@@ -597,7 +597,7 @@
                 <ref role="3cqZAo" node="2rgL4xy711U" resolve="first" />
               </node>
               <node concept="liA8E" id="5HS6sdGspRo" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                <ref role="37wK5l" to="w1kc:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                 <node concept="37vLTw" id="5HS6sdGspRp" role="37wK5m">
                   <ref role="3cqZAo" node="2rgL4xy7zYL" resolve="repo" />
                 </node>
@@ -614,7 +614,7 @@
                 <ref role="3cqZAo" node="2rgL4xy71XG" resolve="second" />
               </node>
               <node concept="liA8E" id="5HS6sdGspZf" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                <ref role="37wK5l" to="w1kc:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                 <node concept="37vLTw" id="5HS6sdGspZg" role="37wK5m">
                   <ref role="3cqZAo" node="2rgL4xy7zYL" resolve="repo" />
                 </node>
@@ -634,7 +634,7 @@
                 <node concept="2yIwOk" id="5HS6sdGsqIi" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="5HS6sdGsDmI" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
           </node>
@@ -692,7 +692,7 @@
                 <node concept="2yIwOk" id="5HS6sdGst6q" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="5HS6sdGsDu0" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
           </node>
@@ -847,7 +847,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2rgL4xy7CbM" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
               </node>
             </node>
           </node>

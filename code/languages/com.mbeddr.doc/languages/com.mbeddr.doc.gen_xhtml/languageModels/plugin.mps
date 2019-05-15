@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -1009,11 +1009,11 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="10MSw5ZF8Ns" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.toPath():java.nio.file.Path" resolve="toPath" />
+                      <ref role="37wK5l" to="guwi:~File.toPath()" resolve="toPath" />
                     </node>
                   </node>
                   <node concept="liA8E" id="10MSw5ZF8Nt" role="2OqNvi">
-                    <ref role="37wK5l" to="eoo2:~Path.relativize(java.nio.file.Path):java.nio.file.Path" resolve="relativize" />
+                    <ref role="37wK5l" to="eoo2:~Path.relativize(java.nio.file.Path)" resolve="relativize" />
                     <node concept="2OqwBi" id="10MSw5ZF8Nu" role="37wK5m">
                       <node concept="2ShNRf" id="10MSw5ZF8Nv" role="2Oq$k0">
                         <node concept="1pGfFk" id="10MSw5ZF8Nw" role="2ShVmc">
@@ -1024,7 +1024,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="10MSw5ZF8Ny" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.toPath():java.nio.file.Path" resolve="toPath" />
+                        <ref role="37wK5l" to="guwi:~File.toPath()" resolve="toPath" />
                       </node>
                     </node>
                   </node>
@@ -1039,7 +1039,7 @@
                       <ref role="3cqZAo" node="10MSw5ZF8Nm" resolve="relativePath" />
                     </node>
                     <node concept="liA8E" id="10MSw5ZFM_o" role="2OqNvi">
-                      <ref role="37wK5l" to="eoo2:~Path.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="10MSw5ZFM_p" role="3uHU7w">
