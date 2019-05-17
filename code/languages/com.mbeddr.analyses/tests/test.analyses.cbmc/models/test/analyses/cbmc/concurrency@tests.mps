@@ -178,7 +178,7 @@
                 <ref role="3cqZAo" node="5EwdfGVgYHA" resolve="m" />
               </node>
               <node concept="Xl_RD" id="2sRGoU6rr2J" role="37wK5m">
-                <property role="Xl_RC" value="lib_simple_threading" />
+                <property role="Xl_RC" value="simple_threading" />
               </node>
               <node concept="Xl_RD" id="2sRGoU6rr2K" role="37wK5m">
                 <property role="Xl_RC" value="dispatcher" />
@@ -309,7 +309,7 @@
                 <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="77fajPdkUcp" role="37wK5m">
-                <property role="Xl_RC" value="lib_assert_seq1" />
+                <property role="Xl_RC" value="assert_seq1" />
               </node>
               <node concept="Xl_RD" id="77fajPdkUcq" role="37wK5m">
                 <property role="Xl_RC" value="test1" />
@@ -400,7 +400,7 @@
                 <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="77fajPdjAOH" role="37wK5m">
-                <property role="Xl_RC" value="lib_assert_seq2" />
+                <property role="Xl_RC" value="assert_seq2" />
               </node>
               <node concept="Xl_RD" id="77fajPdjAOI" role="37wK5m">
                 <property role="Xl_RC" value="test2" />
@@ -491,7 +491,7 @@
                 <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="77fajPdkV$6" role="37wK5m">
-                <property role="Xl_RC" value="lib_assert_seq3" />
+                <property role="Xl_RC" value="assert_seq3" />
               </node>
               <node concept="Xl_RD" id="77fajPdkV$7" role="37wK5m">
                 <property role="Xl_RC" value="test3" />
@@ -572,7 +572,7 @@
                 <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="77fajPdlkod" role="37wK5m">
-                <property role="Xl_RC" value="lib_happens_after" />
+                <property role="Xl_RC" value="happens_after" />
               </node>
               <node concept="Xl_RD" id="77fajPdlkoe" role="37wK5m">
                 <property role="Xl_RC" value="main1" />

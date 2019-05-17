@@ -209,7 +209,6 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -2229,27 +2228,19 @@
               </node>
             </node>
           </node>
-          <node concept="1Wc70l" id="5rLu5YTdXTm" role="3clFbw">
-            <node concept="3y3z36" id="5rLu5YTdXIP" role="3uHU7B">
-              <node concept="10Nm6u" id="5rLu5YTdXSf" role="3uHU7w" />
-              <node concept="37vLTw" id="5rLu5YTdWv6" role="3uHU7B">
-                <ref role="3cqZAo" node="3hNQKr2Cad2" resolve="aModel" />
+          <node concept="2OqwBi" id="48FvRI$wU4g" role="3clFbw">
+            <node concept="2OqwBi" id="48FvRI$wRIz" role="2Oq$k0">
+              <node concept="2JrnkZ" id="48FvRI$wRFV" role="2Oq$k0">
+                <node concept="37vLTw" id="48FvRI$wEum" role="2JrQYb">
+                  <ref role="3cqZAo" node="3hNQKr2Cad2" resolve="aModel" />
+                </node>
+              </node>
+              <node concept="liA8E" id="48FvRI$wT2h" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
               </node>
             </node>
-            <node concept="2OqwBi" id="48FvRI$wU4g" role="3uHU7w">
-              <node concept="2OqwBi" id="48FvRI$wRIz" role="2Oq$k0">
-                <node concept="2JrnkZ" id="48FvRI$wRFV" role="2Oq$k0">
-                  <node concept="37vLTw" id="48FvRI$wEum" role="2JrQYb">
-                    <ref role="3cqZAo" node="3hNQKr2Cad2" resolve="aModel" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="48FvRI$wT2h" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
-                </node>
-              </node>
-              <node concept="liA8E" id="48FvRI$wUmM" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~SModule.isPackaged():boolean" resolve="isPackaged" />
-              </node>
+            <node concept="liA8E" id="48FvRI$wUmM" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~SModule.isPackaged():boolean" resolve="isPackaged" />
             </node>
           </node>
           <node concept="9aQIb" id="48FvRI$wVzZ" role="9aQIa">

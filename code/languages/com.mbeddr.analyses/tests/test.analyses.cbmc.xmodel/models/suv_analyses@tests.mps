@@ -137,7 +137,7 @@
                 <ref role="3cqZAo" node="7bmaDMybMt1" resolve="m" />
               </node>
               <node concept="Xl_RD" id="2kft9cs5mbI" role="37wK5m">
-                <property role="Xl_RC" value="lib_speed_computer_harness" />
+                <property role="Xl_RC" value="speed_computer_harness" />
               </node>
             </node>
           </node>

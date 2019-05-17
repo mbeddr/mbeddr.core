@@ -144,7 +144,7 @@
                 <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="7DvJ5MZxlZU" role="37wK5m">
-                <property role="Xl_RC" value="lib_smoke_sut" />
+                <property role="Xl_RC" value="smoke_sut" />
               </node>
               <node concept="Xl_RD" id="7DvJ5MZxlZV" role="37wK5m">
                 <property role="Xl_RC" value="smoke" />

@@ -149,7 +149,7 @@
                 <ref role="3cqZAo" node="5iBCJz7s$X9" resolve="aModel" />
               </node>
               <node concept="Xl_RD" id="5OLOS2sTjgu" role="37wK5m">
-                <property role="Xl_RC" value="lib_behavior" />
+                <property role="Xl_RC" value="behavior" />
               </node>
               <node concept="Xl_RD" id="5OLOS2sTjgv" role="37wK5m">
                 <property role="Xl_RC" value="div" />
@@ -307,7 +307,7 @@
                 <ref role="3cqZAo" node="5iBCJz7sNCA" resolve="aModel" />
               </node>
               <node concept="Xl_RD" id="5OLOS2sTjfM" role="37wK5m">
-                <property role="Xl_RC" value="lib_ensures" />
+                <property role="Xl_RC" value="ensures" />
               </node>
               <node concept="Xl_RD" id="5OLOS2sTjfN" role="37wK5m">
                 <property role="Xl_RC" value="add" />
@@ -508,7 +508,7 @@
                 <ref role="3cqZAo" node="5iBCJz7sNZz" resolve="aModel" />
               </node>
               <node concept="Xl_RD" id="5OLOS2sTjeP" role="37wK5m">
-                <property role="Xl_RC" value="lib_requires" />
+                <property role="Xl_RC" value="requires" />
               </node>
               <node concept="Xl_RD" id="5OLOS2sTjeQ" role="37wK5m">
                 <property role="Xl_RC" value="simpleRequiresClient" />
@@ -633,7 +633,7 @@
                 <ref role="3cqZAo" node="1fdMHEcc4wn" resolve="aModel" />
               </node>
               <node concept="Xl_RD" id="1fdMHEcc4ww" role="37wK5m">
-                <property role="Xl_RC" value="lib_requires" />
+                <property role="Xl_RC" value="requires" />
               </node>
               <node concept="Xl_RD" id="1fdMHEcc4wx" role="37wK5m">
                 <property role="Xl_RC" value="validPointerClient" />

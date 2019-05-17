@@ -163,7 +163,7 @@
                 <ref role="3cqZAo" node="71B0VAs0odN" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7SLmAEO8quv" role="37wK5m">
-                <property role="Xl_RC" value="lib_simple_gswitch" />
+                <property role="Xl_RC" value="simple_gswitch" />
               </node>
               <node concept="Xl_RD" id="7SLmAEO8quw" role="37wK5m">
                 <property role="Xl_RC" value="signum_gswitch" />
@@ -424,7 +424,7 @@
                 <ref role="3cqZAo" node="71B0VAs0oJF" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7SLmAEO8qZp" role="37wK5m">
-                <property role="Xl_RC" value="lib_empty_gswitch" />
+                <property role="Xl_RC" value="empty_gswitch" />
               </node>
             </node>
           </node>
@@ -506,7 +506,7 @@
                 <ref role="3cqZAo" node="5EwdfGVh6TL" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7SLmAEO8sn0" role="37wK5m">
-                <property role="Xl_RC" value="lib_entry_does_not_reach_gswitch" />
+                <property role="Xl_RC" value="entry_does_not_reach_gswitch" />
               </node>
             </node>
           </node>
