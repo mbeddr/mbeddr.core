@@ -4508,7 +4508,7 @@
     <ref role="3gUMe" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
     <node concept="1S7NMz" id="3zugmcFFrWo" role="13RCb5">
       <property role="TrG5h" value="aVar" />
-      <property role="3mNisv" value="true" />
+      <property role="3mNisv" value="false" />
       <property role="2OOxQR" value="true" />
       <node concept="26Vqqz" id="3zugmcFFrWq" role="2C2TGm">
         <node concept="29HgVG" id="3zugmcFFrWt" role="lGtFl">
@@ -7471,36 +7471,6 @@
                   <node concept="3l3mFP" id="7e09zBHh$Pq" role="2Oq$k0" />
                   <node concept="3TrcHB" id="7e09zBHh__9" role="2OqNvi">
                     <ref role="3TsBF5" to="x27k:5Oog2UbP_d2" resolve="preventNameMangling" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="7e09zBHoM0b" role="3cqZAp">
-              <node concept="3clFbS" id="7e09zBHoM0d" role="3clFbx">
-                <node concept="3clFbF" id="7e09zBHoNDL" role="3cqZAp">
-                  <node concept="37vLTI" id="7e09zBHoPz4" role="3clFbG">
-                    <node concept="3clFbT" id="7e09zBHoPCQ" role="37vLTx">
-                      <property role="3clFbU" value="true" />
-                    </node>
-                    <node concept="2OqwBi" id="7e09zBHoNNd" role="37vLTJ">
-                      <node concept="1PxgMI" id="7e09zBHoNHz" role="2Oq$k0">
-                        <node concept="chp4Y" id="1SbcsM$Fuzd" role="3oSUPX">
-                          <ref role="cht4Q" to="x27k:5Oog2UbPmsI" resolve="IExternable" />
-                        </node>
-                        <node concept="3l3mFP" id="7e09zBHoNDJ" role="1m5AlR" />
-                      </node>
-                      <node concept="3TrcHB" id="7e09zBHoOzF" role="2OqNvi">
-                        <ref role="3TsBF5" to="x27k:5Oog2UbPmsL" resolve="extern" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="7e09zBHoM6y" role="3clFbw">
-                <node concept="3l3mFP" id="7e09zBHoM1R" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="7e09zBHoNAK" role="2OqNvi">
-                  <node concept="chp4Y" id="7e09zBHoNC8" role="cj9EA">
-                    <ref role="cht4Q" to="x27k:5Oog2UbPmsI" resolve="IExternable" />
                   </node>
                 </node>
               </node>
