@@ -2728,27 +2728,6 @@
       <node concept="10P_77" id="6clJcrL48EI" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="5m1orIHUCOL">
-    <property role="3GE5qa" value="config" />
-    <ref role="13h7C2" to="d0vh:24KoSSjx2OU" resolve="NameShorteningConfiguration" />
-    <node concept="13hLZK" id="5m1orIHUCOM" role="13h7CW">
-      <node concept="3clFbS" id="5m1orIHUCON" role="2VODD2">
-        <node concept="3clFbF" id="5m1orIHUDa9" role="3cqZAp">
-          <node concept="37vLTI" id="5m1orIHUEBJ" role="3clFbG">
-            <node concept="3clFbT" id="5m1orIHUEC7" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="5m1orIHUDcl" role="37vLTJ">
-              <node concept="13iPFW" id="5m1orIHUDa8" role="2Oq$k0" />
-              <node concept="3TrcHB" id="5m1orIHUDXZ" role="2OqNvi">
-                <ref role="3TsBF5" to="d0vh:24KoSSjxspb" resolve="allowNameShortening" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="13h7C7" id="1lYd87JBZv3">
     <property role="3GE5qa" value="module" />
     <ref role="13h7C2" to="d0vh:1lYd87JBZuY" resolve="UniquifyIncludeGuard" />

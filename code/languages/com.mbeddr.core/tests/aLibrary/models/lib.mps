@@ -2,6 +2,8 @@
 <model ref="r:30bd260c-eeef-48cc-bdac-128d01e18a6f(aLibrary.lib)">
   <persistence version="9" />
   <languages>
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -65,8 +67,18 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
+      <concept id="8667582976643931813" name="com.mbeddr.core.modules.structure.ImplementsExternalFunction" flags="ng" index="oneTI">
+        <reference id="8667582976643954445" name="implements" index="on8v6" />
+      </concept>
+      <concept id="6116558314501417921" name="com.mbeddr.core.modules.structure.ExternalModule" flags="ng" index="rcWEw">
+        <property id="8322694141613199259" name="generateHeader" index="2u_6Ay" />
+      </concept>
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
+      </concept>
+      <concept id="3376775282622142916" name="com.mbeddr.core.modules.structure.AbstractDefineLike" flags="ng" index="2DRUVY">
+        <child id="3376775282622233992" name="value" index="2DQcEM" />
       </concept>
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
@@ -80,6 +92,7 @@
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
         <property id="6708182213627106114" name="preventNameMangling" index="3mNxdG" />
       </concept>
+      <concept id="6437088627575724000" name="com.mbeddr.core.modules.structure.FunctionPrototype" flags="ng" index="N3Fnw" />
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
@@ -100,6 +113,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -121,13 +137,18 @@
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
+    <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
+      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO">
+        <property id="4791118330015841686" name="strategy" index="3r2okE" />
+      </concept>
+    </language>
   </registry>
   <node concept="2v9HqL" id="2kkumeGQeCr">
     <node concept="29Nb31" id="4wjSXytPLKY" role="2ePNbc">
       <property role="TrG5h" value="helper" />
       <ref role="3oK8_y" node="4wjSXytPLVS" resolve="portable" />
       <node concept="2v9HqM" id="4wjSXytPLL4" role="2eOfOg">
-        <ref role="2v9HqP" node="58DJDcMhRF1" resolve="HelperFunctions" />
+        <ref role="2v9HqP" node="58DJDcMhRF1" resolve="ArithmeticFunctions" />
       </node>
       <node concept="2v9HqM" id="7Aba6BzyXd4" role="2eOfOg">
         <ref role="2v9HqP" node="7Aba6BzyWES" resolve="InternalFunctions" />
@@ -138,9 +159,15 @@
       <node concept="2v9HqM" id="7Aba6BzyXHt" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
+      <node concept="2v9HqM" id="1EH1Mz64kxp" role="2eOfOg">
+        <ref role="2v9HqP" node="1EH1Mz64k9k" resolve="Arithmetics" />
+      </node>
     </node>
-    <node concept="2Q9Fgs" id="3R$6B6bNgaa" role="2Q9xDr">
-      <node concept="2Q9FjX" id="3R$6B6bNgab" role="2Q9FjI" />
+    <node concept="2Q9Fgs" id="49XubMpimGh" role="2Q9xDr">
+      <node concept="2Q9FjX" id="49XubMpimGi" role="2Q9FjI" />
+    </node>
+    <node concept="MH4UO" id="49XubMpx39u" role="2Q9xDr">
+      <property role="3r2okE" value="0" />
     </node>
     <node concept="2AWWZL" id="4wjSXytPLVP" role="2AWWZH">
       <property role="2AWWZJ" value="gcc" />
@@ -164,7 +191,16 @@
     </node>
   </node>
   <node concept="N3F5e" id="58DJDcMhRF1">
-    <property role="TrG5h" value="HelperFunctions" />
+    <property role="TrG5h" value="ArithmeticFunctions" />
+    <node concept="4WHVk" id="49XubMq$ezI" role="N3F5h">
+      <property role="TrG5h" value="A_CONSTANT" />
+      <node concept="3TlMh9" id="49XubMq$eIU" role="2DQcEM">
+        <property role="2hmy$m" value="123" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="49XubMq$eu3" role="N3F5h">
+      <property role="TrG5h" value="empty_1557991232842_24" />
+    </node>
     <node concept="1S7NMz" id="7Aba6BziVVU" role="N3F5h">
       <property role="TrG5h" value="var" />
       <node concept="26Vqqz" id="7Aba6BziVVS" role="2C2TGm" />
@@ -221,14 +257,14 @@
     </node>
     <node concept="N3Fnx" id="7Aba6BziVO$" role="N3F5h">
       <property role="TrG5h" value="sub" />
-      <property role="2OOxQR" value="true" />
+      <property role="3mNxdG" value="true" />
       <node concept="19RgSI" id="7Aba6BziVQz" role="1UOdpc">
         <property role="TrG5h" value="x" />
-        <node concept="26Vqqz" id="7Aba6BziVQ$" role="2C2TGm" />
+        <node concept="26Vqqz" id="1EH1Mz64kup" role="2C2TGm" />
       </node>
       <node concept="19RgSI" id="7Aba6BziVQ_" role="1UOdpc">
         <property role="TrG5h" value="y" />
-        <node concept="26Vqqz" id="7Aba6BziVQA" role="2C2TGm" />
+        <node concept="26Vqqz" id="1EH1Mz64kuq" role="2C2TGm" />
       </node>
       <node concept="3XIRFW" id="7Aba6BziVOA" role="3XIRFX">
         <node concept="2BFjQ_" id="7Aba6BziVR9" role="3XIRFZ">
@@ -242,13 +278,19 @@
           </node>
         </node>
       </node>
-      <node concept="26Vqqz" id="7Aba6BziVM_" role="2C2TGm" />
+      <node concept="oneTI" id="1EH1Mz64koi" role="lGtFl">
+        <ref role="on8v6" node="1EH1Mz64k9X" resolve="sub" />
+      </node>
+      <node concept="26Vqqz" id="1EH1Mz64kur" role="2C2TGm" />
     </node>
     <node concept="2NXPZ9" id="7Aba6BzyWTg" role="N3F5h">
       <property role="TrG5h" value="empty_1557260325534_12" />
     </node>
     <node concept="3GEVxB" id="7Aba6BzyWK0" role="2OODSX">
       <ref role="3GEb4d" node="7Aba6BzyWES" resolve="InternalFunctions" />
+    </node>
+    <node concept="3GEVxB" id="1EH1Mz64kgl" role="2OODSX">
+      <ref role="3GEb4d" node="1EH1Mz64k9k" resolve="Arithmetics" />
     </node>
   </node>
   <node concept="N3F5e" id="7Aba6BzyWES">
@@ -270,6 +312,25 @@
     </node>
     <node concept="3GEVxB" id="7Aba6BzyXAx" role="2OODSX">
       <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+    </node>
+    <node concept="3GEVxB" id="4NsxPSU_bXR" role="2OODSX">
+      <ref role="3GEb4d" node="1EH1Mz64k9k" resolve="Arithmetics" />
+    </node>
+  </node>
+  <node concept="rcWEw" id="1EH1Mz64k9k">
+    <property role="TrG5h" value="Arithmetics" />
+    <property role="2u_6Ay" value="true" />
+    <node concept="N3Fnw" id="1EH1Mz64k9X" role="N3F5h">
+      <property role="TrG5h" value="sub" />
+      <node concept="26Vqqz" id="1EH1Mz64k9G" role="2C2TGm" />
+      <node concept="19RgSI" id="1EH1Mz64ka7" role="1UOdpc">
+        <property role="TrG5h" value="x" />
+        <node concept="26Vqqz" id="1EH1Mz64ka6" role="2C2TGm" />
+      </node>
+      <node concept="19RgSI" id="1EH1Mz64kap" role="1UOdpc">
+        <property role="TrG5h" value="y" />
+        <node concept="26Vqqz" id="1EH1Mz64kaq" role="2C2TGm" />
+      </node>
     </node>
   </node>
 </model>

@@ -4059,6 +4059,11 @@
         <node concept="1yeLz9" id="HiHZpX4D1I" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.core.buildconfig#7717755763392579406" />
           <property role="3LESm3" value="3201b692-7d0a-49d1-ac65-5d4aaeb141fb" />
+          <node concept="1SiIV0" id="1EH1Mz6785U" role="3bR37C">
+            <node concept="3bR9La" id="1EH1Mz6785V" role="1SiIV1">
+              <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="3xxBtygh0L0" role="3bR37C">
           <node concept="3bR9La" id="3xxBtygh0L1" role="1SiIV1">
