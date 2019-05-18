@@ -43,6 +43,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -186,6 +187,16 @@
       </concept>
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
+      </concept>
+      <concept id="1240930118027" name="jetbrains.mps.lang.smodel.structure.SEnumOperationInvocation" flags="nn" index="3HcIyF">
+        <reference id="1240930118028" name="enumDeclaration" index="3HcIyG" />
+        <child id="1240930317927" name="operation" index="3Hdvt7" />
+      </concept>
+      <concept id="1240930444878" name="jetbrains.mps.lang.smodel.structure.SEnum_MemberForValueOperation" flags="ng" index="3HdYtI">
+        <child id="1240930444879" name="valueExpression" index="3HdYtJ" />
+      </concept>
+      <concept id="1240930444945" name="jetbrains.mps.lang.smodel.structure.SEnum_MemberOperation" flags="ng" index="3HdYuL">
+        <reference id="1240930444946" name="member" index="3HdYuM" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -1509,7 +1520,7 @@
                       </node>
                       <node concept="1mIQ4w" id="73GSrjd_$al" role="2OqNvi">
                         <node concept="chp4Y" id="73GSrjd_$am" role="cj9EA">
-                          <ref role="cht4Q" to="d0vh:24KoSSjx2OU" resolve="NameShorteningConfiguration" />
+                          <ref role="cht4Q" to="d0vh:24KoSSjx2OU" resolve="NameManglingConfiguration" />
                         </node>
                       </node>
                     </node>
@@ -1528,7 +1539,7 @@
         <node concept="3clFbS" id="73GSrjd$7fm" role="3clFbx">
           <node concept="2MkqsV" id="73GSrjd_ADL" role="3cqZAp">
             <node concept="Xl_RD" id="73GSrjd_AE3" role="2MkJ7o">
-              <property role="Xl_RC" value="concurrency currently requires 'prevent name mangling' to be false" />
+              <property role="Xl_RC" value="concurrency currently requires name mangling strategy to be set to 'use qualified names'" />
             </node>
             <node concept="1YBJjd" id="73GSrjd_APq" role="2OEOjV">
               <ref role="1YBMHb" node="tTL6IVWsDk" resolve="cci" />
@@ -1536,24 +1547,37 @@
           </node>
         </node>
         <node concept="1Wc70l" id="73GSrjd_$Xy" role="3clFbw">
-          <node concept="2OqwBi" id="73GSrjd__$c" role="3uHU7w">
-            <node concept="1PxgMI" id="73GSrjd__vQ" role="2Oq$k0">
-              <node concept="37vLTw" id="73GSrjd__go" role="1m5AlR">
-                <ref role="3cqZAo" node="73GSrjd_$a7" resolve="nsc" />
-              </node>
-              <node concept="chp4Y" id="79i$vAY7av$" role="3oSUPX">
-                <ref role="cht4Q" to="d0vh:24KoSSjx2OU" resolve="NameShorteningConfiguration" />
-              </node>
-            </node>
-            <node concept="3TrcHB" id="73GSrjd_ABM" role="2OqNvi">
-              <ref role="3TsBF5" to="d0vh:24KoSSjxspb" resolve="allowNameShortening" />
-            </node>
-          </node>
           <node concept="3y3z36" id="73GSrjd_$HT" role="3uHU7B">
             <node concept="37vLTw" id="73GSrjd_$ap" role="3uHU7B">
               <ref role="3cqZAo" node="73GSrjd_$a7" resolve="nsc" />
             </node>
             <node concept="10Nm6u" id="73GSrjd_$Sl" role="3uHU7w" />
+          </node>
+          <node concept="17R0WA" id="49XubMpxuSy" role="3uHU7w">
+            <node concept="3HcIyF" id="49XubMpxuX4" role="3uHU7w">
+              <ref role="3HcIyG" to="d0vh:49XubMpsXFf" resolve="NameManglingStrategy" />
+              <node concept="3HdYuL" id="49XubMpxv3t" role="3Hdvt7">
+                <ref role="3HdYuM" to="d0vh:49XubMpsXFh" />
+              </node>
+            </node>
+            <node concept="3HcIyF" id="49XubMpxuwl" role="3uHU7B">
+              <ref role="3HcIyG" to="d0vh:49XubMpsXFf" resolve="NameManglingStrategy" />
+              <node concept="3HdYtI" id="49XubMpxuwQ" role="3Hdvt7">
+                <node concept="2OqwBi" id="73GSrjd__$c" role="3HdYtJ">
+                  <node concept="1PxgMI" id="73GSrjd__vQ" role="2Oq$k0">
+                    <node concept="37vLTw" id="73GSrjd__go" role="1m5AlR">
+                      <ref role="3cqZAo" node="73GSrjd_$a7" resolve="nsc" />
+                    </node>
+                    <node concept="chp4Y" id="79i$vAY7av$" role="3oSUPX">
+                      <ref role="cht4Q" to="d0vh:24KoSSjx2OU" resolve="NameManglingConfiguration" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="49XubMpxubg" role="2OqNvi">
+                    <ref role="3TsBF5" to="d0vh:49XubMptfQm" resolve="strategy" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
