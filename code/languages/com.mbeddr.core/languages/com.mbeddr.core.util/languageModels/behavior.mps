@@ -7541,25 +7541,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4jiR73uWU$T" role="3cqZAp">
-          <node concept="2OqwBi" id="4jiR73uWU$Q" role="3clFbG">
-            <node concept="10M0yZ" id="4jiR73uWU$R" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="4jiR73uWU$S" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="4jiR73uWVbA" role="37wK5m">
-                <node concept="Xl_RD" id="4jiR73uWUCU" role="3uHU7B">
-                  <property role="Xl_RC" value="ErrorAnnotation: number of bits " />
-                </node>
-                <node concept="37vLTw" id="4jiR73uWWkE" role="3uHU7w">
-                  <ref role="3cqZAo" node="4jiR73uWWkC" resolve="bits" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="4jiR73uGog3" role="3cqZAp">
           <node concept="3clFbS" id="4jiR73uGog4" role="3clFbx">
             <node concept="3cpWs6" id="4jiR73uGo$X" role="3cqZAp">

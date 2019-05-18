@@ -484,13 +484,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -9015,43 +9008,6 @@
           <node concept="3clFbH" id="BItIAVcK0H" role="3cqZAp" />
           <node concept="1DcWWT" id="BItIAVcSWs" role="3cqZAp">
             <node concept="3clFbS" id="BItIAVcSWt" role="2LFqv$">
-              <node concept="1X3_iC" id="5GwePVE6Dt_" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="3clFbF" id="5qsqXLsbWFM" role="8Wnug">
-                  <node concept="2OqwBi" id="5qsqXLsbWFJ" role="3clFbG">
-                    <node concept="10M0yZ" id="5qsqXLsbWFK" role="2Oq$k0">
-                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    </node>
-                    <node concept="liA8E" id="5qsqXLsbWFL" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                      <node concept="3cpWs3" id="5qsqXLsbXkA" role="37wK5m">
-                        <node concept="3cpWs3" id="5qsqXLsbX0g" role="3uHU7B">
-                          <node concept="37vLTw" id="5qsqXLsbWWs" role="3uHU7B">
-                            <ref role="3cqZAo" node="BItIAVcT0L" resolve="instruction" />
-                          </node>
-                          <node concept="Xl_RD" id="5qsqXLsbX0j" role="3uHU7w">
-                            <property role="Xl_RC" value=" " />
-                          </node>
-                        </node>
-                        <node concept="2OqwBi" id="5qsqXLsbXvd" role="3uHU7w">
-                          <node concept="37vLTw" id="5qsqXLsbXve" role="2Oq$k0">
-                            <ref role="3cqZAo" node="BItIAVcOy0" resolve="livenessAnalyzerResult" />
-                          </node>
-                          <node concept="liA8E" id="5qsqXLsbXvf" role="2OqNvi">
-                            <ref role="37wK5l" to="1fjm:~AnalysisResult.get(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction):java.lang.Object" resolve="get" />
-                            <node concept="37vLTw" id="5qsqXLsbXJ4" role="37wK5m">
-                              <ref role="3cqZAo" node="BItIAVcT0L" resolve="instruction" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="5qsqXLsbWk8" role="3cqZAp" />
               <node concept="3clFbJ" id="5qsqXLsa$Lf" role="3cqZAp">
                 <node concept="3clFbS" id="5qsqXLsa$Lh" role="3clFbx">
                   <node concept="3cpWs8" id="5qsqXLsa_1L" role="3cqZAp">

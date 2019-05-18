@@ -24,7 +24,6 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -330,8 +329,8 @@
     <node concept="13i0hz" id="4J$Pz4XGFmC" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="mangleNames" />
-      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="mangleNames" />
+      <property role="TrG5h" value="canMangleNames" />
+      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="canMangleNames" />
       <node concept="3Tm1VV" id="4J$Pz4XGFmD" role="1B3o_S" />
       <node concept="10P_77" id="4J$Pz4XGFmF" role="3clF45" />
       <node concept="3clFbS" id="4J$Pz4XGFmJ" role="3clF47">
@@ -341,22 +340,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="13i0hz" id="7Aba6BzzDc1" role="13h7CS">
-      <property role="TrG5h" value="genName" />
-      <ref role="13i0hy" node="7Aba6Bzz6b$" resolve="genName" />
-      <node concept="3clFbS" id="7Aba6BzzDc4" role="3clF47">
-        <node concept="3clFbF" id="7Aba6BzzDPy" role="3cqZAp">
-          <node concept="2OqwBi" id="7Aba6BzzEg4" role="3clFbG">
-            <node concept="13iPFW" id="7Aba6BzzDPx" role="2Oq$k0" />
-            <node concept="2qgKlT" id="7Aba6BzzFDw" role="2OqNvi">
-              <ref role="37wK5l" to="qd6m:7Aba6ByEk1p" resolve="getMangledName" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="7Aba6BzzDGz" role="3clF45" />
-      <node concept="3Tm1VV" id="7Aba6BzzDG$" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="6clJcrKklc3" role="13h7CS">
       <property role="TrG5h" value="importedChunks" />
@@ -534,8 +517,8 @@
     <node concept="13i0hz" id="4J$Pz4XGFm6" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="mangleNames" />
-      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="mangleNames" />
+      <property role="TrG5h" value="canMangleNames" />
+      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="canMangleNames" />
       <node concept="3Tm1VV" id="4J$Pz4XGFm7" role="1B3o_S" />
       <node concept="3clFbS" id="4J$Pz4XGFm8" role="3clF47">
         <node concept="3clFbF" id="4J$Pz4XGFnd" role="3cqZAp">
@@ -545,6 +528,25 @@
         </node>
       </node>
       <node concept="10P_77" id="4J$Pz4XGFm9" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3mNkkAiSEmh" role="13h7CS">
+      <property role="TrG5h" value="genName" />
+      <ref role="13i0hy" node="7Aba6Bzz6b$" resolve="genName" />
+      <node concept="3clFbS" id="3mNkkAiSEmk" role="3clF47">
+        <node concept="3clFbF" id="3mNkkAiSEHM" role="3cqZAp">
+          <node concept="2OqwBi" id="3mNkkAiSF3$" role="3clFbG">
+            <node concept="13iPFW" id="3mNkkAiSEHL" role="2Oq$k0" />
+            <node concept="2qgKlT" id="3mNkkAiSGor" role="2OqNvi">
+              <ref role="37wK5l" to="qd6m:3mNkkAiSu$u" resolve="getMangledModuleName" />
+              <node concept="3clFbT" id="3mNkkAiSGwc" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3mNkkAiSEzo" role="3clF45" />
+      <node concept="3Tm1VV" id="3mNkkAiSEzp" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="6clJcrKk_g$" role="13h7CS">
       <property role="TrG5h" value="importedChunks" />
@@ -685,8 +687,8 @@
     <node concept="13i0hz" id="4J$Pz4XGFnh" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="mangleNames" />
-      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="mangleNames" />
+      <property role="TrG5h" value="canMangleNames" />
+      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="canMangleNames" />
       <node concept="3Tm1VV" id="4J$Pz4XGFni" role="1B3o_S" />
       <node concept="3clFbS" id="4J$Pz4XGFnj" role="3clF47">
         <node concept="3clFbF" id="4J$Pz4XGFnl" role="3cqZAp">
@@ -3226,8 +3228,8 @@
         <node concept="3clFbF" id="7Aba6Bzz6co" role="3cqZAp">
           <node concept="2OqwBi" id="7Aba6Bzz6x8" role="3clFbG">
             <node concept="13iPFW" id="7Aba6Bzz6cn" role="2Oq$k0" />
-            <node concept="3TrcHB" id="7Aba6Bzz7Lg" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            <node concept="2qgKlT" id="3mNkkAiRW3e" role="2OqNvi">
+              <ref role="37wK5l" to="qd6m:7Aba6ByEk1p" resolve="getMangledModuleName" />
             </node>
           </node>
         </node>
