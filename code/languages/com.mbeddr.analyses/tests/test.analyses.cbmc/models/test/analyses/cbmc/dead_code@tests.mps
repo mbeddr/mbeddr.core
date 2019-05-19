@@ -35,6 +35,7 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -553,12 +554,22 @@
             <node concept="3clFbJ" id="153zJclN7PK" role="3cqZAp">
               <node concept="3clFbS" id="153zJclN7PL" role="3clFbx">
                 <node concept="1gVbGN" id="153zJclN7PM" role="3cqZAp">
-                  <node concept="2OqwBi" id="153zJclN7PN" role="1gVkn0">
-                    <node concept="2GrUjf" id="153zJclN7PO" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="153zJclN7PI" resolve="r" />
+                  <node concept="22lmx$" id="6emTBcMT4tR" role="1gVkn0">
+                    <node concept="2OqwBi" id="6emTBcMT4Gq" role="3uHU7w">
+                      <node concept="2GrUjf" id="6emTBcMT4uq" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="153zJclN7PI" resolve="r" />
+                      </node>
+                      <node concept="liA8E" id="6emTBcMTdzI" role="2OqNvi">
+                        <ref role="37wK5l" to="eqhl:7kzfSagKGHX" resolve="isUnwindingFail" />
+                      </node>
                     </node>
-                    <node concept="liA8E" id="153zJclN7PP" role="2OqNvi">
-                      <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+                    <node concept="2OqwBi" id="153zJclN7PN" role="3uHU7B">
+                      <node concept="2GrUjf" id="153zJclN7PO" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="153zJclN7PI" resolve="r" />
+                      </node>
+                      <node concept="liA8E" id="153zJclN7PP" role="2OqNvi">
+                        <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+                      </node>
                     </node>
                   </node>
                 </node>
