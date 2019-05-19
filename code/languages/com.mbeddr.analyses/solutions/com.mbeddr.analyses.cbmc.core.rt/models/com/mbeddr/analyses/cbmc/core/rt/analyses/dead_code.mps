@@ -33,6 +33,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -1705,8 +1706,13 @@
       <node concept="3Tm1VV" id="4QaxHTo8Q4X" role="1B3o_S" />
       <node concept="3clFbS" id="4QaxHTo8Q4Y" role="3clF47">
         <node concept="3clFbF" id="4QaxHTo8Q4Z" role="3cqZAp">
-          <node concept="3nyPlj" id="4QaxHTo8Q53" role="3clFbG">
-            <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+          <node concept="22lmx$" id="6emTBcMSKl2" role="3clFbG">
+            <node concept="3nyPlj" id="6emTBcMSKlA" role="3uHU7w">
+              <ref role="37wK5l" to="eqhl:7kzfSagKGHX" resolve="isUnwindingFail" />
+            </node>
+            <node concept="3nyPlj" id="4QaxHTo8Q53" role="3uHU7B">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
           </node>
         </node>
       </node>
