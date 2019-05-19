@@ -21,6 +21,7 @@
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -1155,6 +1156,16 @@
           </node>
         </node>
         <node concept="3clFbH" id="7lmBuXrWBeT" role="3cqZAp" />
+        <node concept="3clFbF" id="4J_W74Pbc5u" role="3cqZAp">
+          <node concept="2YIFZM" id="4J_W74PbcbK" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:6izRX52tWlf" resolve="prettyPrintCounterexample" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="4J_W74PbcbO" role="37wK5m">
+              <ref role="3cqZAo" node="7lmBuXrWBeF" resolve="res" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4J_W74Pbcc_" role="3cqZAp" />
         <node concept="38rL1p" id="7lmBuXrWBeU" role="3cqZAp">
           <node concept="38rIoz" id="7lmBuXrWBeV" role="38rM$J">
             <property role="38rIoG" value="call" />
