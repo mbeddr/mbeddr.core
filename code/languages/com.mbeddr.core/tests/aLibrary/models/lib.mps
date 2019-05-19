@@ -15,7 +15,6 @@
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
-      <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf" />
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
@@ -126,13 +125,11 @@
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
-      <concept id="3869525881267643673" name="com.mbeddr.core.expressions.structure.SSizeT" flags="ng" index="2B$3hg" />
       <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
       <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
-      <concept id="8863019357864392148" name="com.mbeddr.core.expressions.structure.SizeT" flags="ng" index="2O5j3L" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
         <child id="8860443239512128064" name="left" index="3TlMhI" />
@@ -223,14 +220,6 @@
           <node concept="3O_q_g" id="7Aba6BzyXb6" role="1_9egR">
             <ref role="3O_q_h" node="7Aba6BzyWPM" resolve="internalFunc" />
           </node>
-        </node>
-        <node concept="3XIRlf" id="3mNkkAig3qW" role="3XIRFZ">
-          <property role="TrG5h" value="s" />
-          <node concept="2B$3hg" id="3mNkkAig3qU" role="2C2TGm" />
-        </node>
-        <node concept="3XIRlf" id="3mNkkAig3rB" role="3XIRFZ">
-          <property role="TrG5h" value="x" />
-          <node concept="2O5j3L" id="3mNkkAig3r_" role="2C2TGm" />
         </node>
       </node>
       <node concept="19Rifw" id="7Aba6BzyWZh" role="2C2TGm" />
