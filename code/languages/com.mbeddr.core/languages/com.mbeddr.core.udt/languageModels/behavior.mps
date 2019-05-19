@@ -5879,9 +5879,6 @@
             <node concept="37vLTw" id="MToHDoNeSz" role="37wK5m">
               <ref role="3cqZAo" node="MToHDoNeSl" resolve="preMangledName" />
             </node>
-            <node concept="3clFbT" id="MToHDoNdKG" role="37wK5m">
-              <property role="3clFbU" value="true" />
-            </node>
           </node>
         </node>
       </node>
