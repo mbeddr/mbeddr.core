@@ -1,0 +1,42 @@
+/*
+*
+* Adapt here.
+*
+*
+* DDG CONFIG
+*/
+
+
+apply from : 'dv-ddg-client/ddgusecases.gradle'
+
+
+/*
+ * Remote url
+ */
+project.ext.url = 'http://52.166.104.82:80'
+
+/*
+ * "url == false": use localhost
+ */
+project.ext.remote = false
+
+//project.ext.mps_home = '/Applications/mps-2018-3-6.app/Contents'
+project.ext.mps_home = './../build/mps'
+
+project.ext.projects_home = './../..'
+//not used for iets3
+project.ext.user_home = '-'
+
+project.ext.plugins_location = "${mps_home}/plugins"
+//only used for run_mbeddr_core
+project.ext.application_support_plugins_location = "${user_home}/Library/Application Support/MPS2018.3"
+
+//def projectPath = ""
+
+project.ext.mgch = 'mbeddr.github.core.home'
+project.ext.mgch_path = "${projects_home}/mbeddr.core"
+
+/*
+* define ddg use-cases here.
+*/
+project.ext.ddg_use_cases = [project_structure]

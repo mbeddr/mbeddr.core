@@ -1,0 +1,10 @@
+/*
+* Do not modify!
+*
+* DDG USE-CASES
+*
+*/
+
+project.ext.project_structure = '---usecase-project-structure'
+
+project.ext.concepts_hierarchy = '---usecase-concepts-hierarchy'
