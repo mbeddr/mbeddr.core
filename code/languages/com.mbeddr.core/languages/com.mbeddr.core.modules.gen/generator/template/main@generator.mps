@@ -4546,7 +4546,7 @@
     <ref role="3gUMe" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
     <node concept="1S7NMz" id="3zugmcFFrWo" role="13RCb5">
       <property role="TrG5h" value="aVar" />
-      <property role="3mNisv" value="false" />
+      <property role="3mNisv" value="true" />
       <property role="2OOxQR" value="true" />
       <node concept="26Vqqz" id="3zugmcFFrWq" role="2C2TGm">
         <node concept="29HgVG" id="3zugmcFFrWt" role="lGtFl">
