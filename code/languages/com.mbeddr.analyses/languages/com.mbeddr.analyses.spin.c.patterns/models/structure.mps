@@ -12,6 +12,7 @@
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="velc" ref="r:1af48fac-0627-4691-aa49-4813fdc5ca8e(com.mbeddr.analyses.spin.c.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
@@ -108,6 +109,9 @@
     <property role="TrG5h" value="GlobalDeclarations" />
     <property role="34LRSv" value="global declarations" />
     <ref role="1TJDcQ" to="x27k:5DwX9xlExfL" resolve="Section" />
+    <node concept="PrWs8" id="L5b1s43I3Q" role="PzmwI">
+      <ref role="PrY4T" to="velc:L5b1s40sc$" resolve="ICCodeContext" />
+    </node>
   </node>
   <node concept="1TIwiD" id="439FXGfyCs">
     <property role="EcuMT" value="72944622564682268" />
@@ -284,7 +288,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elements" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrDq" resolve="Literal" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="1BFQdmKfJHu">
@@ -416,6 +420,13 @@
       <property role="20kJfa" value="tracesHandler" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="bnk1STkjmF" resolve="AbstractTracesHandler" />
+    </node>
+    <node concept="1TJgyj" id="41w7Fsd1hl3" role="1TKVEi">
+      <property role="IQ2ns" value="4638741387737896259" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="suv" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
     </node>
   </node>
   <node concept="1TIwiD" id="6AAaFOTVF$K">

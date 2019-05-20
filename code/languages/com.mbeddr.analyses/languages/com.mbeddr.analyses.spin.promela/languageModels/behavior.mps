@@ -250,8 +250,8 @@
     <node concept="13i0hz" id="GpUw9Sa0BN" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="mangleNames" />
-      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="mangleNames" />
+      <property role="TrG5h" value="canMangleNames" />
+      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="canMangleNames" />
       <node concept="3Tm1VV" id="GpUw9Sa0BO" role="1B3o_S" />
       <node concept="3clFbS" id="GpUw9Sa0BR" role="3clF47">
         <node concept="3clFbF" id="GpUw9Sa0BU" role="3cqZAp">
