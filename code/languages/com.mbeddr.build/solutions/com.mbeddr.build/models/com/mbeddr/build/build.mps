@@ -12873,14 +12873,14 @@
             <ref role="3bR37D" to="al5i:6BpYIzuV41g" resolve="com.mbeddr.doc.aspect.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="oYsTqEShNW" role="3bR37C">
-          <node concept="3bR9La" id="oYsTqEShNX" role="1SiIV1">
-            <ref role="3bR37D" node="7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
+        <node concept="1SiIV0" id="1MBznIqMpyF" role="3bR37C">
+          <node concept="1Busua" id="1MBznIqMpyG" role="1SiIV1">
+            <ref role="1Busuk" node="7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
           </node>
         </node>
-        <node concept="1SiIV0" id="oYsTqEShNY" role="3bR37C">
-          <node concept="3bR9La" id="oYsTqEShNZ" role="1SiIV1">
-            <ref role="3bR37D" node="3JmJHJb$UhK" resolve="com.mbeddr.analyses.spin.c" />
+        <node concept="1SiIV0" id="1MBznIqMpyH" role="3bR37C">
+          <node concept="1Busua" id="1MBznIqMpyI" role="1SiIV1">
+            <ref role="1Busuk" node="3JmJHJb$UhK" resolve="com.mbeddr.analyses.spin.c" />
           </node>
         </node>
       </node>
@@ -12947,6 +12947,11 @@
           <node concept="1SiIV0" id="4b2d3GUt0kV" role="3bR37C">
             <node concept="3bR9La" id="4b2d3GUt0kW" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="1MBznIqMpyJ" role="3bR37C">
+            <node concept="3bR9La" id="1MBznIqMpyK" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
           </node>
         </node>
