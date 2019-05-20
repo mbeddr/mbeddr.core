@@ -248,7 +248,7 @@
     <node concept="1gr5ck" id="2s6qLQkocDm" role="2AWWZH">
       <property role="1gr5cl" value="gcc" />
       <property role="1gr5cm" value="-std=c99 -DSAFETY" />
-      <property role="1gr5cn" value="mingw32-make" />
+      <property role="1gr5cn" value="make" />
     </node>
   </node>
   <node concept="3uEX16" id="2s6qLQkocDU">
