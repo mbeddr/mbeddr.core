@@ -53,6 +53,12 @@ def java_args_config = {
 
 // ####################### mbeddr ################
 
+task run_ddg_all_mbeddr(){
+    dependsOn {
+        tasks.findAll {task -> task.name.startsWith('run_mbeddr_')}
+    }
+}
+
 task run_mbeddr_analyses(type: JavaExec) {
 
     configure java_args_config
@@ -68,6 +74,7 @@ task run_mbeddr_analyses(type: JavaExec) {
     args "${mgch_path}"
 }
 
+/*
 task run_mbeddr_build(type: JavaExec) {
 
     configure java_args_config
@@ -395,3 +402,5 @@ task run_tools_mbeddr_eclipseDebugger(type: JavaExec) {
     args "${mgch}"
     args "${mgch_path}"
 }
+
+*/
