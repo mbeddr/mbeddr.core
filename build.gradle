@@ -126,7 +126,3 @@ task buildWithDdg {
     dependsOn run_ddg_all_mbeddr
 }
 //End DependenciesViewer
-
-//DependenciesViewer
-//tasks.findByPath('build:com.mbeddr:languages:publishMbeddrPublicationToMavenRepository').doLast {buildWithDdg}
-//End DependenciesViewer
