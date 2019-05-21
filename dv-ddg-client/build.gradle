@@ -74,7 +74,7 @@ task run_mbeddr_analyses(type: JavaExec) {
     args "${mgch_path}"
 }
 
-/*
+
 task run_mbeddr_build(type: JavaExec) {
 
     configure java_args_config
@@ -83,12 +83,13 @@ task run_mbeddr_build(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.build"
+    args "./code/languages/com.mbeddr.build"
 
     args '---macro'
     args "${mgch}"
     args "${mgch_path}"
 }
+
 
 task run_mbeddr_cc(type: JavaExec) {
 
@@ -98,14 +99,14 @@ task run_mbeddr_cc(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.cc"
+    args "./code/languages/com.mbeddr.cc"
 
     args '---macro'
     args "${mgch}"
     args "${mgch_path}"
 }
 
-
+/*
 task run_mbeddr_core(type: JavaExec) {
 
     configure java_args_config
@@ -114,7 +115,7 @@ task run_mbeddr_core(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.core"
+    args "./code/languages/com.mbeddr.core"
 
     args '---macro'
     args "${mgch}"
@@ -123,6 +124,7 @@ task run_mbeddr_core(type: JavaExec) {
     args '---a-p-u'
     args "${application_support_plugins_location}"
 }
+*/
 
 task run_mbeddr_debugger(type: JavaExec) {
 
@@ -132,7 +134,7 @@ task run_mbeddr_debugger(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.debugger"
+    args "./code/languages/com.mbeddr.debugger"
 
     args '---macro'
     args "${mgch}"
@@ -148,7 +150,7 @@ task run_mbeddr_debugger_tests(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.debugger.tests"
+    args "./code/languages/com.mbeddr.debugger.tests"
 
     args '---macro'
     args "${mgch}"
@@ -163,7 +165,7 @@ task run_mbeddr_doc(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.doc"
+    args "./code/languages/com.mbeddr.doc"
 
     args '---macro'
     args "${mgch}"
@@ -178,7 +180,7 @@ task run_mbeddr_doc_aspect(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.doc.aspect"
+    args "./code/languages/com.mbeddr.doc.aspect"
 
     args '---macro'
     args "${mgch}"
@@ -193,14 +195,13 @@ task run_mbeddr_ext(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.ext"
+    args "./code/languages/com.mbeddr.ext"
 
     args '---macro'
     args "${mgch}"
     args "${mgch_path}"
 }
 
-//exception: socket closed -> maybe not all data send
 task run_mbeddr_mpsutil(type: JavaExec) {
 
     configure java_args_config
@@ -209,7 +210,7 @@ task run_mbeddr_mpsutil(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.mpsutil"
+    args "./code/languages/com.mbeddr.mpsutil"
 
     args '---macro'
     args "${mgch}"
@@ -224,7 +225,7 @@ task run_mbeddr_rcp(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.rcp"
+    args "./code/languages/com.mbeddr.rcp"
 
     args '---macro'
     args "${mgch}"
@@ -239,7 +240,7 @@ task run_mbeddr_spawner(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.spawner"
+    args "./code/languages/com.mbeddr.spawner"
 
     args '---macro'
     args "${mgch}"
@@ -254,7 +255,7 @@ task run_mbeddr_xmodel(type: JavaExec) {
     args 'mbeddr.core'
 
     args '---f'
-    args "${projects_home}/mbeddr.core/code/languages/com.mbeddr.xmodel"
+    args "./code/languages/com.mbeddr.xmodel"
 
     args '---macro'
     args "${mgch}"
@@ -264,7 +265,7 @@ task run_mbeddr_xmodel(type: JavaExec) {
 // #################
 // ################# applications #################
 
-//fails
+/*
 task run_appl_mbeddr_buildExamples(type: JavaExec) {
 
     configure java_args_config
@@ -402,5 +403,4 @@ task run_tools_mbeddr_eclipseDebugger(type: JavaExec) {
     args "${mgch}"
     args "${mgch_path}"
 }
-
 */
