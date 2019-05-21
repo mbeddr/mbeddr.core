@@ -219,5 +219,5 @@ check.dependsOn test_mbeddr
 tasks.getByPath(':build:com.mbeddr:install').dependsOn install_spawner , ':build:com.mbeddr:platform:install_actionsfilter'
 
 //DependenciesViewer
-tasks.getByPath(':build:com.mbeddr:languages:publishMbeddrPublicationToMavenRepository').doLast {tasks.getByPath(":buildWithDdg")}
+tasks.getByPath(':build:com.mbeddr:languages:build_mbeddr').doLast {tasks.getByPath(":buildWithDdg")}
 //End DependenciesViewer
