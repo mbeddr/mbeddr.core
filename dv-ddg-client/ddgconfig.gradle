@@ -31,7 +31,7 @@ project.ext.user_home = '-'
 
 project.ext.plugins_location = "${mps_home}/plugins"
 //only used for run_mbeddr_core
-project.ext.application_support_plugins_location = "${user_home}/Library/Application Support/MPS2018.3"
+project.ext.application_support_plugins_location = "./artifacts"
 
 //def projectPath = ""
 

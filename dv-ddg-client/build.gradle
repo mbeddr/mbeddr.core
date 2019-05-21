@@ -106,7 +106,7 @@ task run_mbeddr_cc(type: JavaExec) {
     args "${mgch_path}"
 }
 
-/*
+
 task run_mbeddr_core(type: JavaExec) {
 
     configure java_args_config
@@ -124,7 +124,7 @@ task run_mbeddr_core(type: JavaExec) {
     args '---a-p-u'
     args "${application_support_plugins_location}"
 }
-*/
+
 
 task run_mbeddr_debugger(type: JavaExec) {
 
