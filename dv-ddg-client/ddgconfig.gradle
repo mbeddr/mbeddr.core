@@ -9,6 +9,7 @@
 
 apply from : 'dv-ddg-client/ddgusecases.gradle'
 
+project.ext.ddgEnabled = true
 
 /*
  * Remote url

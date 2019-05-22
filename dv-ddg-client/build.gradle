@@ -54,8 +54,17 @@ def java_args_config = {
 // ####################### mbeddr ################
 
 task run_ddg_all_mbeddr(){
-    dependsOn {
-        tasks.findAll {task -> task.name.startsWith('run_mbeddr_')}
+    if(project.ext.ciBuild && ddgEnabled){
+        println "ddg is executed."
+        dependsOn {
+            tasks.findAll {task -> task.name.startsWith('run_mbeddr_')}
+        }
+    }else{
+        println "run_ddg: ciBuild: " + project.ext.ciBuild
+        if(project.ext.ciBuild){
+            println "run_ddg: ddgEnabled: " + ddgEnabled
+        }
+        println "run_ddg: SKIPPED"
     }
 }
 
