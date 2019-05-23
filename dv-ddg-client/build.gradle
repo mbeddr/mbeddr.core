@@ -255,7 +255,7 @@ task run_mbeddr_spawner(type: JavaExec) {
     args "${mgch}"
     args "${mgch_path}"
 }
-/*
+
 task run_mbeddr_xmodel(type: JavaExec) {
 
     configure java_args_config
@@ -273,7 +273,7 @@ task run_mbeddr_xmodel(type: JavaExec) {
 
 // #################
 // ################# applications #################
-*/
+
 /*
 task run_appl_mbeddr_buildExamples(type: JavaExec) {
 
