@@ -6934,6 +6934,11 @@
               <ref role="3bR37D" node="4oNjwzxqgch" resolve="com.mbeddr.mpsutil.compare.pattern#3560698633098117280" />
             </node>
           </node>
+          <node concept="1SiIV0" id="sK8YAu2NG7" role="3bR37C">
+            <node concept="3bR9La" id="sK8YAu2NG8" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7YI57w6K08j" resolve="jetbrains.mps.baseLanguage#1129914002933" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="5dYb5krU4$3" role="3bR37C">
           <node concept="3bR9La" id="5dYb5krU4$4" role="1SiIV1">
