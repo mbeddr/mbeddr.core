@@ -20,6 +20,7 @@
         <dependency reexport="false">b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</dependency>
         <dependency reexport="false">17566462-d837-4552-874c-64e45c10778a(com.mbeddr.mpsutil.compare.pattern)</dependency>
         <dependency reexport="false">98c9c105-d602-4d30-920f-ede2039bca65(com.mbeddr.mpsutil.compare.pattern.generator.runtime)</dependency>
+        <dependency reexport="false">985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -73,6 +74,20 @@
             <generator generatorUID="9bd710ee-b327-4b50-8552-ecd3829a9d2b(com.mbeddr.mpsutil.compare.pattern#3560698633098117280)" />
             <external-mapping>
               <mapping-node modelUID="r:77a1f13f-8b60-493a-85be-0cd342d922f6(com.mbeddr.mpsutil.compare.pattern.generator.template.main@generator)" nodeID="3560698633098117281" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="061ef218-57ee-4790-80b3-7fbdddd73f64(com.mbeddr.mpsutil.compare.pattern.generator#8339258394654012058)" />
+            <external-mapping>
+              <mapping-node modelUID="r:85ad44c5-a152-4f14-9818-b030f7043027(com.mbeddr.mpsutil.compare.pattern.generator.generator.template.main@generator)" nodeID="*" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" />
+            <external-mapping>
+              <all-local-mappings />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
