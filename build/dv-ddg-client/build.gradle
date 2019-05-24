@@ -55,7 +55,8 @@ def java_args_config = {
 
 task run_ddg_all_mbeddr(){
     if(project.ext.ciBuild && ddgEnabled){
-        println "ddg is executed."
+        urlTemp = remote? url : "localhost"
+        println "ddg is executed. Sending to url: " + urlTemp
         dependsOn {
             tasks.findAll {task -> task.name.startsWith('run_mbeddr_')}
         }
