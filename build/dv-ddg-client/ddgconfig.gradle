@@ -9,7 +9,8 @@
 
 apply from : 'build/dv-ddg-client/ddgusecases.gradle'
 
-project.ext.ddgEnabled = true
+//-DddgEnabled=true
+project.ext.ddgEnabled = System.getProperty("ddgEnabled") != null && System.getProperty("ddgEnabled").equalsIgnoreCase("true")
 
 /*
  * Remote url
