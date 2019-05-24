@@ -413,3 +413,18 @@ task run_tools_mbeddr_eclipseDebugger(type: JavaExec) {
     args "${mgch_path}"
 }
 */
+
+//DependenciesViewer
+
+task build_mbeddrBeforeDdg {
+    println "task build_mbeddr"
+    dependsOn 'build:com.mbeddr:languages:build_mbeddr'
+}
+
+run_ddg_all_mbeddr.dependsOn build_mbeddrBeforeDdg
+
+task buildWithDdg {
+    println 'ddg'
+    dependsOn run_ddg_all_mbeddr
+}
+//End DependenciesViewer
