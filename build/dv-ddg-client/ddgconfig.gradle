@@ -7,7 +7,7 @@
 */
 
 
-apply from : 'dv-ddg-client/ddgusecases.gradle'
+apply from : 'build/dv-ddg-client/ddgusecases.gradle'
 
 project.ext.ddgEnabled = true
 

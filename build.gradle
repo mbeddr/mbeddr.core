@@ -111,4 +111,4 @@ subprojects {
 }
 
 // DependenciesViewer
-apply from: 'dv-ddg-client/build.gradle'
+apply from: 'build/dv-ddg-client/build.gradle'

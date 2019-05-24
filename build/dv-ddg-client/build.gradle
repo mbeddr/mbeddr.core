@@ -12,7 +12,7 @@
 
 
 
-apply from: 'dv-ddg-client/ddgconfig.gradle'
+apply from: 'build/dv-ddg-client/ddgconfig.gradle'
 
 
 
@@ -39,13 +39,13 @@ def java_args_config = {
   }
 
   //class path for ddg
-  classpath file('./dv-ddg-client/ddg-pipe.jar')
-  classpath file('./dv-ddg-client/gc-client.jar')
-  classpath file('./dv-ddg-client/ddg.jar')
-  classpath fileTree('./dv-ddg-client/dm.client.lib/')
+  classpath file('./build/dv-ddg-client/ddg-pipe.jar')
+  classpath file('./build/dv-ddg-client/gc-client.jar')
+  classpath file('./build/dv-ddg-client/ddg.jar')
+  classpath fileTree('./build/dv-ddg-client/dm.client.lib/')
 
   //mps-specific class path
-  classpath file('./dv-ddg-client/jdi.jar')
+  classpath file('./build/dv-ddg-client/jdi.jar')
 
   classpath fileTree("${mps_home}/lib") // $mps_home points to the MPS installation
   classpath fileTree("${mps_home}/plugins")
