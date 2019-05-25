@@ -271,6 +271,9 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
+      <concept id="7720953548759193022" name="com.mbeddr.core.unittest.structure.StructuredNullOpAssertStatement" flags="ng" index="acKfA">
+        <child id="7720953548759193023" name="actual" index="acKfB" />
+      </concept>
       <concept id="6275792049641586523" name="com.mbeddr.core.unittest.structure.TestCase" flags="ng" index="c0Qz5">
         <child id="6275792049641586525" name="body" index="c0Qz3" />
       </concept>
@@ -286,6 +289,8 @@
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
       </concept>
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
+      <concept id="7720953548740840784" name="com.mbeddr.core.unittest.structure.AssertNull" flags="ng" index="OQLG8" />
+      <concept id="7720953548740747376" name="com.mbeddr.core.unittest.structure.AssertNotNull" flags="ng" index="ORroC" />
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
@@ -564,8 +569,11 @@
             </node>
           </node>
           <node concept="YInwV" id="1JA5qgmfRaz" role="3XIe9u">
-            <node concept="3ZVu4v" id="1JA5qgmfRb9" role="1_9fRO">
-              <ref role="3ZVs_2" node="5IYyAOzBdhl" resolve="x" />
+            <node concept="1S8S4T" id="5vm6H9xUo7O" role="1_9fRO">
+              <node concept="3ZVu4v" id="1JA5qgmfRb9" role="1S8S4V">
+                <ref role="3ZVs_2" node="5IYyAOzBdhl" resolve="x" />
+              </node>
+              <node concept="biTqx" id="5vm6H9xUorE" role="1S8S4N" />
             </node>
           </node>
         </node>
@@ -697,6 +705,11 @@
             <node concept="26Vqqz" id="4qazcyJOfpX" role="2umbIo" />
           </node>
         </node>
+        <node concept="ORroC" id="5vm6H9xCm6W" role="3XIRFZ">
+          <node concept="3ZVu4v" id="5vm6H9xHi5$" role="acKfB">
+            <ref role="3ZVs_2" node="5IYyAOzBgHb" resolve="mem" />
+          </node>
+        </node>
         <node concept="1_9egQ" id="1exqRpao3i" role="3XIRFZ">
           <node concept="3pqW6w" id="1exqRpao3j" role="1_9egR">
             <node concept="3wxyx2" id="5IYyAOzBnD5" role="3TlMhI">
@@ -727,6 +740,19 @@
             <node concept="3ZVu4v" id="5IYyAOzBqOQ" role="3O_q_j">
               <ref role="3ZVs_2" node="5IYyAOzBgHb" resolve="mem" />
             </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="5vm6H9xHijd" role="3XIRFZ">
+          <node concept="3pqW6w" id="5vm6H9xHikg" role="1_9egR">
+            <node concept="Ea8Gl" id="5vm6H9xHiu_" role="3TlMhJ" />
+            <node concept="3ZVu4v" id="5vm6H9xHijb" role="3TlMhI">
+              <ref role="3ZVs_2" node="5IYyAOzBgHb" resolve="mem" />
+            </node>
+          </node>
+        </node>
+        <node concept="OQLG8" id="5vm6H9xHiG8" role="3XIRFZ">
+          <node concept="3ZVu4v" id="5vm6H9xHiHk" role="acKfB">
+            <ref role="3ZVs_2" node="5IYyAOzBgHb" resolve="mem" />
           </node>
         </node>
       </node>
@@ -763,6 +789,11 @@
           </node>
           <node concept="3wxxNl" id="4qazcyJOfrG" role="2C2TGm">
             <node concept="26Vqqz" id="4qazcyJOfrH" role="2umbIo" />
+          </node>
+        </node>
+        <node concept="ORroC" id="5vm6H9xTFeg" role="3XIRFZ">
+          <node concept="3ZVu4v" id="5vm6H9xTFCr" role="acKfB">
+            <ref role="3ZVs_2" node="6OxpEKG0AOJ" resolve="anArray" />
           </node>
         </node>
         <node concept="c0Tn9" id="6OxpEKG0AP1" role="3XIRFZ">
@@ -1306,10 +1337,6 @@
     <node concept="rcWE1" id="5mGJ_8zvWiS" role="rcWEr">
       <property role="rcWEL" value="&lt;stdlib.h&gt;" />
     </node>
-    <node concept="rcJHK" id="5mGJ_8zvWiZ" role="N3F5h">
-      <property role="TrG5h" value="size_t" />
-      <node concept="3TlMh2" id="5mGJ_8zvWj1" role="rcJHR" />
-    </node>
     <node concept="N3Fnw" id="5mGJ_8zvWiT" role="N3F5h">
       <property role="TrG5h" value="malloc" />
       <node concept="3wxxNl" id="4WTYg$PQmOQ" role="2C2TGm">
@@ -1317,9 +1344,7 @@
       </node>
       <node concept="19RgSI" id="5mGJ_8zvWj2" role="1UOdpc">
         <property role="TrG5h" value="size" />
-        <node concept="rcJHQ" id="4WTYg$PM8C7" role="2C2TGm">
-          <ref role="rcJHT" node="5mGJ_8zvWiZ" resolve="size_t" />
-        </node>
+        <node concept="2O5j3L" id="5vm6H9xUp2l" role="2C2TGm" />
       </node>
     </node>
     <node concept="N3Fnw" id="5mGJ_8zvWC3" role="N3F5h">
@@ -7129,8 +7154,7 @@
         <node concept="3wxxNl" id="6Pt2vx4_4P8" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <node concept="26Vqqz" id="6Pt2vx4_4P6" role="2umbIo">
-            <property role="2caQfQ" value="false" />
+          <node concept="biTqx" id="5vm6H9xCf5l" role="2umbIo">
             <property role="2c7vTL" value="true" />
           </node>
         </node>
