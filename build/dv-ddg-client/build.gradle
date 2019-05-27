@@ -53,6 +53,15 @@ def java_args_config = {
 
 // ####################### mbeddr ################
 
+if(ciBuild){
+    project.ext.ddgEnabled = hasProperty("ddgEnabledCi") && property("ddgEnabledCi").equalsIgnoreCase("true")
+    println "findProperty ddgEnabledCi: " + findProperty("ddgEnabledCi")
+}else{
+    project.ext.ddgEnabled = System.getProperty("ddgEnabledLocal") != null && System.getProperty("ddgEnabledLocal").equalsIgnoreCase("true")
+    println "System-property ddgEndabledLocal: " + System.getProperty("ddgEnabledLocal")
+}
+println "project.ext.ddgEnabled: ${ddgEnabled}"
+
 task run_ddg_all_mbeddr(){
     if(project.ext.ciBuild && ddgEnabled){
         def urlTemp = remote? url : "localhost"
