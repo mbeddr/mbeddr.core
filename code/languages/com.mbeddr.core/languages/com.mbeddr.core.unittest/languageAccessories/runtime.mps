@@ -450,6 +450,66 @@
           </node>
         </node>
       </node>
+      <node concept="2vmPJf" id="VfRwLduH1O" role="2vmPJn">
+        <property role="2vn0DO" value="true" />
+        <property role="TrG5h" value="FAILURE_INT_DOUBLE" />
+        <property role="2vmPJh" value="***FAILURE***" />
+        <node concept="2qqzEA" id="VfRwLduH1P" role="2qqzEG">
+          <property role="TrG5h" value="assertId" />
+          <node concept="26Vqp4" id="VfRwLduH1Q" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="VfRwLduH1R" role="2qqzEG">
+          <property role="TrG5h" value="act" />
+          <node concept="26Vqpk" id="VfRwLduH1S" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="VfRwLduH1T" role="2qqzEG">
+          <property role="TrG5h" value="op" />
+          <node concept="Pu267" id="VfRwLduH1U" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="VfRwLduH1V" role="2qqzEG">
+          <property role="TrG5h" value="exp" />
+          <node concept="2fgwQN" id="VfRwLduHz3" role="2C2TGm" />
+        </node>
+      </node>
+      <node concept="2vmPJf" id="VfRwLduHb3" role="2vmPJn">
+        <property role="2vn0DO" value="true" />
+        <property role="TrG5h" value="FAILURE_DOUBLE_INT" />
+        <property role="2vmPJh" value="***FAILURE***" />
+        <node concept="2qqzEA" id="VfRwLduHb4" role="2qqzEG">
+          <property role="TrG5h" value="assertId" />
+          <node concept="26Vqp4" id="VfRwLduHb5" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="VfRwLduHb6" role="2qqzEG">
+          <property role="TrG5h" value="act" />
+          <node concept="2fgwQN" id="VfRwLduHzd" role="2C2TGm" />
+        </node>
+        <node concept="2qqzEA" id="VfRwLduHb8" role="2qqzEG">
+          <property role="TrG5h" value="op" />
+          <node concept="Pu267" id="VfRwLduHb9" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="VfRwLduHba" role="2qqzEG">
+          <property role="TrG5h" value="exp" />
+          <node concept="26Vqpk" id="VfRwLduHbb" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
       <node concept="2vmPJf" id="6Iyv0noES1C" role="2vmPJn">
         <property role="2vn0DO" value="true" />
         <property role="TrG5h" value="FAILURE_DOUBLE" />
