@@ -39,7 +39,7 @@
       <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
+      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
@@ -416,7 +416,7 @@
               <node concept="1xGALR" id="2qCdpHNSEB0" role="lGtFl">
                 <property role="1xEijf" value="2" />
                 <node concept="1xFd8N" id="2qCdpHNSEB2" role="1xGcb7">
-                  <property role="1xFd8M" value="  SM2_SelfTriggerInInitial__execute(instance, SM2_SelfTriggerInInitial__inevents__SelfTriggerInInitial_e__event, NULL);" />
+                  <property role="1xFd8M" value="  SM2_SelfTriggerInInitial__execute(instance, SM2_SM2_SelfTriggerInInitial__inevents__SelfTriggerInInitial_e__event, NULL);" />
                 </node>
               </node>
             </node>

@@ -195,8 +195,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4ol4Q3pLKag">
-    <property role="3GE5qa" value="config" />
-    <ref role="1M2myG" to="d0vh:7dfuMW5rC75" resolve="NameShorteingRoot" />
+    <property role="3GE5qa" value="gen" />
+    <ref role="1M2myG" to="d0vh:7dfuMW5rC75" resolve="ShortNamesRoot" />
     <node concept="2NXJUA" id="4ol4Q3pLKah" role="2NY200">
       <node concept="3clFbS" id="4ol4Q3pLKai" role="2VODD2">
         <node concept="3clFbF" id="4ol4Q3pLKbm" role="3cqZAp">

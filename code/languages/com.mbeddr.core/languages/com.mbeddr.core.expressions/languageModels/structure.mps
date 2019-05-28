@@ -2,7 +2,7 @@
 <model ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -986,6 +986,12 @@
       <property role="IQ2ns" value="8863019357864392147" />
       <ref role="20lvS9" node="7FQByU3CrCQ" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="3mNkkAi8TfG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ssizeTType" />
+      <property role="IQ2ns" value="3869525881267655660" />
+      <ref role="20lvS9" node="7FQByU3CrCQ" resolve="Type" />
+    </node>
     <node concept="1TJgyj" id="4QKDGaBu9Wm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="vaList" />
@@ -1646,6 +1652,23 @@
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
     <node concept="PrWs8" id="2Wc_BLyni6G" role="PzmwI">
       <ref role="PrY4T" node="24lM_j3AaK6" resolve="ISigned" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3mNkkAi8Qkp">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="SSizeT" />
+    <property role="R4oN_" value="ssize_t to represent sizes" />
+    <property role="34LRSv" value="ssize_t" />
+    <property role="EcuMT" value="3869525881267643673" />
+    <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="3mNkkAi8RtU" role="PzmwI">
+      <ref role="PrY4T" node="24lM_j3AaK6" resolve="ISigned" />
+    </node>
+    <node concept="PrWs8" id="3mNkkAi8Qkr" role="PzmwI">
+      <ref role="PrY4T" node="4ZVDCZCa$xx" resolve="IOrdered" />
+    </node>
+    <node concept="PrWs8" id="3mNkkAi8Qks" role="PzmwI">
+      <ref role="PrY4T" node="4ZVDCZCaQ86" resolve="INumber" />
     </node>
   </node>
 </model>

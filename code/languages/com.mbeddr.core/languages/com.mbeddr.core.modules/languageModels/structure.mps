@@ -2,7 +2,7 @@
 <model ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -339,6 +339,17 @@
     <node concept="PrWs8" id="19a6$uAAqkM" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="1TJgyj" id="7oF65pen41M" role="1TKVEi">
+      <property role="IQ2ns" value="8514926279434977394" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mangledNameFinalizer" />
+      <ref role="20lvS9" node="7oF65pen3H4" resolve="IMangledNameFinalizer" />
+    </node>
+    <node concept="1TJgyi" id="7Aba6ByEJr$" role="1TKVEl">
+      <property role="IQ2nx" value="8758138335591593700" />
+      <property role="TrG5h" value="moduleNamePrefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3kEjc_WIKGf">
     <property role="TrG5h" value="StdHeaderImport" />
@@ -355,9 +366,6 @@
       <property role="IQ2nx" value="5420368450507972520" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="PrWs8" id="3tp$LrDIuOx" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
-    </node>
     <node concept="1TJgyi" id="3LB9aGk_ryI" role="1TKVEl">
       <property role="IQ2nx" value="4352487882080237742" />
       <property role="TrG5h" value="preprocessorCondition" />
@@ -367,6 +375,9 @@
       <property role="IQ2nx" value="1559434277892772106" />
       <property role="TrG5h" value="alternativeHeaderFileName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3tp$LrDIuOx" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
     </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fOqJ1">
@@ -1554,12 +1565,12 @@
     <property role="EcuMT" value="3334587323452698462" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="2T6Po3mUMXv" role="lGtFl">
-      <property role="Hh88m" value="nameOverride" />
+      <property role="Hh88m" value="moduleHNameOverride" />
       <node concept="tn0Fv" id="2T6Po3mUMYh" role="HhnKV">
         <property role="tnX3d" value="false" />
       </node>
-      <node concept="trNpa" id="2T6Po3mUMYj" role="EQaZv">
-        <ref role="trN6q" node="5_l8w1EmTde" resolve="ImplementationModule" />
+      <node concept="trNpa" id="4NsxPSUDnDX" role="EQaZv">
+        <ref role="trN6q" node="5_l8w1EmTcX" resolve="Module" />
       </node>
     </node>
   </node>
@@ -1782,6 +1793,23 @@
     <node concept="PrWs8" id="ILcBZLkchD" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="49XubMpBVjJ">
+    <property role="EcuMT" value="4791118330018641135" />
+    <property role="3GE5qa" value="gen" />
+    <property role="TrG5h" value="MinimalNameMangling" />
+    <property role="34LRSv" value="@minimalNameMangling" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="49XubMpBVjK" role="lGtFl">
+      <property role="Hh88m" value="minimalNameMangling" />
+      <node concept="trNpa" id="49XubMpBVn3" role="EQaZv">
+        <ref role="trN6q" node="5_l8w1EmTdf" resolve="IModuleContent" />
+      </node>
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7oF65pen3H4">
+    <property role="EcuMT" value="8514926279434976068" />
+    <property role="TrG5h" value="IMangledNameFinalizer" />
   </node>
 </model>
 
