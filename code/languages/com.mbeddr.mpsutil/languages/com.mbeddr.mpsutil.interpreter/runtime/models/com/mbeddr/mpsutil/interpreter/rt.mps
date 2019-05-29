@@ -7478,6 +7478,52 @@
       <node concept="3Tm1VV" id="7g1Uk$b6H$y" role="1B3o_S" />
       <node concept="3clFbS" id="7g1Uk$b6H$z" role="3clF47" />
     </node>
+    <node concept="2tJIrI" id="6yxXcppgDFx" role="jymVt" />
+    <node concept="2tJIrI" id="6yxXcpph2qP" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcpph2$I" role="jymVt">
+      <property role="TrG5h" value="containsValueInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcpph2$J" role="1B3o_S" />
+      <node concept="10P_77" id="6yxXcpph2$K" role="3clF45" />
+      <node concept="37vLTG" id="6yxXcpph2$L" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcpph8VI" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcpph2$N" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="6yxXcpph2_g" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcpph2_h" role="jymVt">
+      <property role="TrG5h" value="getInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcpph2_i" role="1B3o_S" />
+      <node concept="3uibUv" id="6yxXcpph2_j" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="6yxXcpph2_k" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcppiULe" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcpph2_m" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="6yxXcpph2_K" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcpph2_L" role="jymVt">
+      <property role="TrG5h" value="containsKeyInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcpph2_M" role="1B3o_S" />
+      <node concept="10P_77" id="6yxXcpph2_N" role="3clF45" />
+      <node concept="37vLTG" id="6yxXcpph2_O" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcppiU8L" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcpph2_Q" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="6yxXcpph2sC" role="jymVt" />
     <node concept="3Tm1VV" id="7F2vPZ3KyDY" role="1B3o_S" />
     <node concept="3uibUv" id="7F2vPZ3KXYK" role="3HQHJm">
       <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
@@ -7883,6 +7929,31 @@
       </node>
     </node>
     <node concept="2tJIrI" id="EWig$joLAY" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcppheC1" role="jymVt">
+      <property role="TrG5h" value="containsValueInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcppheC2" role="1B3o_S" />
+      <node concept="10P_77" id="6yxXcppheC3" role="3clF45" />
+      <node concept="37vLTG" id="6yxXcppheC4" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcppheC5" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcppheCh" role="3clF47">
+        <node concept="3clFbF" id="6yxXcpphItD" role="3cqZAp">
+          <node concept="3nyPlj" id="7F2vPZ3Oe8a" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~LinkedHashMap.containsValue(java.lang.Object):boolean" resolve="containsValue" />
+            <node concept="37vLTw" id="7F2vPZ3Oe8b" role="37wK5m">
+              <ref role="3cqZAo" node="6yxXcppheC4" resolve="object" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6yxXcppheCi" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="7F2vPZ3O4x4" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="containsValue" />
@@ -7900,9 +7971,9 @@
           <node concept="3cpWsn" id="7F2vPZ3Oe89" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="10P_77" id="7F2vPZ3Oe86" role="1tU5fm" />
-            <node concept="3nyPlj" id="7F2vPZ3Oe8a" role="33vP2m">
-              <ref role="37wK5l" to="33ny:~LinkedHashMap.containsValue(java.lang.Object):boolean" resolve="containsValue" />
-              <node concept="37vLTw" id="7F2vPZ3Oe8b" role="37wK5m">
+            <node concept="1rXfSq" id="6yxXcpphDA$" role="33vP2m">
+              <ref role="37wK5l" node="6yxXcppheC1" resolve="containsValueInCurrent" />
+              <node concept="37vLTw" id="6yxXcpphGpb" role="37wK5m">
                 <ref role="3cqZAo" node="7F2vPZ3O4x8" resolve="object" />
               </node>
             </node>
@@ -7965,6 +8036,33 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7F2vPZ3PV1$" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcppheCl" role="jymVt">
+      <property role="TrG5h" value="getInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcppheCm" role="1B3o_S" />
+      <node concept="3uibUv" id="6yxXcppheCn" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="6yxXcppheCo" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcppiOKL" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcppheC_" role="3clF47">
+        <node concept="3clFbF" id="6yxXcppjaX7" role="3cqZAp">
+          <node concept="3nyPlj" id="6yxXcppjaX4" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~LinkedHashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+            <node concept="37vLTw" id="6yxXcppjdWb" role="37wK5m">
+              <ref role="3cqZAo" node="6yxXcppheCo" resolve="object" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6yxXcppheCA" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="7F2vPZ3PyjN" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="get" />
@@ -7983,17 +8081,17 @@
         <node concept="3clFbJ" id="7F2vPZ3P$f9" role="3cqZAp">
           <node concept="3clFbS" id="7F2vPZ3P$fc" role="3clFbx">
             <node concept="3cpWs6" id="7F2vPZ3PANv" role="3cqZAp">
-              <node concept="3nyPlj" id="7F2vPZ3PBSb" role="3cqZAk">
-                <ref role="37wK5l" to="33ny:~LinkedHashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
-                <node concept="37vLTw" id="7F2vPZ3PFx8" role="37wK5m">
+              <node concept="1rXfSq" id="6yxXcppiGSG" role="3cqZAk">
+                <ref role="37wK5l" node="6yxXcppheCl" resolve="getInCurrent" />
+                <node concept="37vLTw" id="6yxXcppiKqZ" role="37wK5m">
                   <ref role="3cqZAo" node="7F2vPZ3PyjR" resolve="object" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3nyPlj" id="7F2vPZ3P_b8" role="3clFbw">
-            <ref role="37wK5l" to="33ny:~HashMap.containsKey(java.lang.Object):boolean" resolve="containsKey" />
-            <node concept="37vLTw" id="7F2vPZ3PAkO" role="37wK5m">
+          <node concept="1rXfSq" id="6yxXcppi_3S" role="3clFbw">
+            <ref role="37wK5l" node="6yxXcppheCD" resolve="containsKeyInCurrent" />
+            <node concept="37vLTw" id="6yxXcppiC_O" role="37wK5m">
               <ref role="3cqZAo" node="7F2vPZ3PyjR" resolve="object" />
             </node>
           </node>
@@ -8041,6 +8139,31 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7F2vPZ3PWVb" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcppheCD" role="jymVt">
+      <property role="TrG5h" value="containsKeyInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcppheCE" role="1B3o_S" />
+      <node concept="10P_77" id="6yxXcppheCF" role="3clF45" />
+      <node concept="37vLTG" id="6yxXcppheCG" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcppimos" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcppheCT" role="3clF47">
+        <node concept="3clFbF" id="6yxXcppi5V2" role="3cqZAp">
+          <node concept="3nyPlj" id="6yxXcppi5V4" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~HashMap.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+            <node concept="37vLTw" id="6yxXcppi5V5" role="37wK5m">
+              <ref role="3cqZAo" node="6yxXcppheCG" resolve="object" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6yxXcppheCU" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="7F2vPZ3Q01N" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="containsKey" />
@@ -8058,9 +8181,9 @@
           <node concept="3cpWsn" id="7F2vPZ3Q2a9" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="10P_77" id="7F2vPZ3Q2aa" role="1tU5fm" />
-            <node concept="3nyPlj" id="7F2vPZ3Q2ab" role="33vP2m">
-              <ref role="37wK5l" to="33ny:~HashMap.containsKey(java.lang.Object):boolean" resolve="containsKey" />
-              <node concept="37vLTw" id="7F2vPZ3Q2ac" role="37wK5m">
+            <node concept="1rXfSq" id="6yxXcppiaHf" role="33vP2m">
+              <ref role="37wK5l" node="6yxXcppheCD" resolve="containsKeyInCurrent" />
+              <node concept="37vLTw" id="6yxXcppidHS" role="37wK5m">
                 <ref role="3cqZAo" node="7F2vPZ3Q01R" resolve="object" />
               </node>
             </node>
