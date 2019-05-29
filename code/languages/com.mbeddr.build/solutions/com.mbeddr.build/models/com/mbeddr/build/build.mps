@@ -11815,6 +11815,21 @@
             <ref role="3bR37D" node="7eF9rfAnuj$" resolve="com.mbeddr.cc.var.fm" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3Q1ou7Ok4oq" role="3bR37C">
+          <node concept="3bR9La" id="3Q1ou7Ok4or" role="1SiIV1">
+            <ref role="3bR37D" node="6HIxGZOKo4H" resolve="com.mbeddr.analyses.stan" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3Q1ou7Ok4os" role="3bR37C">
+          <node concept="3bR9La" id="3Q1ou7Ok4ot" role="1SiIV1">
+            <ref role="3bR37D" node="7eF9rfAuFwr" resolve="com.mbeddr.analyses.cbmc" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3Q1ou7Ok4ou" role="3bR37C">
+          <node concept="3bR9La" id="3Q1ou7Ok4ov" role="1SiIV1">
+            <ref role="3bR37D" node="yklW1G3HMa" resolve="com.mbeddr.ext.units" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5l4WPWBs77$" role="3989C9">
