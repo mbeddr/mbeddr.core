@@ -196,7 +196,7 @@
       </concept>
       <concept id="2807401889304965325" name="com.mbeddr.mpsutil.treenotation.structure.OrthogonalTreeLayout" flags="ng" index="37fpnD" />
       <concept id="2807401889304965326" name="com.mbeddr.mpsutil.treenotation.structure.CompactTreeLayout" flags="ng" index="37fpnE" />
-      <concept id="8796347991408045445" name="com.mbeddr.mpsutil.treenotation.structure.IncomingShapeStyle" flags="ng" index="3uywDx">
+      <concept id="8796347991408045445" name="com.mbeddr.mpsutil.treenotation.structure.IncomingShapeStyle" flags="lg" index="3uywDx">
         <child id="8796347991408045465" name="shape" index="3uywDX" />
       </concept>
       <concept id="8796347991406413783" name="com.mbeddr.mpsutil.treenotation.structure.ThisNodeExpression" flags="ng" index="3u$I0N" />
@@ -216,13 +216,13 @@
         <child id="8433232831282903903" name="actualParameters" index="15NUvb" />
       </concept>
       <concept id="8877288515762039493" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_graphics" flags="ng" index="1X_dKq" />
-      <concept id="8877288515762039490" name="com.mbeddr.mpsutil.treenotation.structure.ShapePaintFunction" flags="ng" index="1X_dKt" />
+      <concept id="8877288515762039490" name="com.mbeddr.mpsutil.treenotation.structure.ShapePaintFunction" flags="ig" index="1X_dKt" />
       <concept id="8877288515762039489" name="com.mbeddr.mpsutil.treenotation.structure.Shape" flags="ng" index="1X_dKu">
         <child id="8433232831282905030" name="parameters" index="15NUdi" />
         <child id="8877288515762039491" name="paintFunction" index="1X_dKs" />
       </concept>
-      <concept id="8877288515759654453" name="com.mbeddr.mpsutil.treenotation.structure.DeleteHandler" flags="ng" index="1XG33E" />
-      <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.InserHandler" flags="ng" index="1XI84t" />
+      <concept id="8877288515759654453" name="com.mbeddr.mpsutil.treenotation.structure.DeleteHandler" flags="ig" index="1XG33E" />
+      <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.InserHandler" flags="ig" index="1XI84t" />
       <concept id="8877288515760224565" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_index" flags="ng" index="1XI8ZE" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">

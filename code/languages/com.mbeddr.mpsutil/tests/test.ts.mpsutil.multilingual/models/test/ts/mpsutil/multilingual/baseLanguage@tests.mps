@@ -136,7 +136,7 @@
         <child id="9087294576176418090" name="expressions" index="10icdJ" />
       </concept>
       <concept id="2510545900188478754" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaString" flags="ng" index="3ZQQOj" />
-      <concept id="2510545900188478756" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaStringType" flags="ng" index="3ZQQOl" />
+      <concept id="2510545900188478756" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaStringType" flags="ig" index="3ZQQOl" />
     </language>
     <language id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring">
       <concept id="3354025285337563602" name="com.mbeddr.mpsutil.richstring.structure.ConversionFloatingPointDecimal" flags="ng" index="EGEnC" />

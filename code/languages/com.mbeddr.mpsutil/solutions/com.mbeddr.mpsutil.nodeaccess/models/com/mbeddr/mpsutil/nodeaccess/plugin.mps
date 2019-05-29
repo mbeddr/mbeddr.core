@@ -262,8 +262,8 @@
       </concept>
     </language>
     <language id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport">
-      <concept id="5573986434797682998" name="com.mbeddr.mpsutil.httpsupport.structure.HandleRequestFunction" flags="ng" index="pF8on" />
-      <concept id="5573986434797682964" name="com.mbeddr.mpsutil.httpsupport.structure.CanHandleRequestFunction" flags="ng" index="pF8oP" />
+      <concept id="5573986434797682998" name="com.mbeddr.mpsutil.httpsupport.structure.HandleRequestFunction" flags="ig" index="pF8on" />
+      <concept id="5573986434797682964" name="com.mbeddr.mpsutil.httpsupport.structure.CanHandleRequestFunction" flags="ig" index="pF8oP" />
       <concept id="5573986434797781630" name="com.mbeddr.mpsutil.httpsupport.structure.HttpResponseParameter" flags="ng" index="pFglv" />
       <concept id="5573986434797787081" name="com.mbeddr.mpsutil.httpsupport.structure.SegmentsParameter" flags="ng" index="pFh3C" />
       <concept id="5573986434797765074" name="com.mbeddr.mpsutil.httpsupport.structure.HttpRequestParameter" flags="ng" index="pFkrN" />

@@ -138,10 +138,10 @@
       </concept>
     </language>
     <language id="de1bfc15-870e-4d58-b962-b093dccb50c8" name="com.mbeddr.mpsutil.placeholderTextList">
-      <concept id="1739942158294184652" name="com.mbeddr.mpsutil.placeholderTextList.structure.CellModel_PlaceholderTextList" flags="ng" index="2UZ7rw">
+      <concept id="1739942158294184652" name="com.mbeddr.mpsutil.placeholderTextList.structure.CellModel_PlaceholderTextList" flags="sg" stub="1739942158294203068" index="2UZ7rw">
         <child id="1739942158294184665" name="placeholderTextQuery" index="2UZ7rP" />
       </concept>
-      <concept id="1739942158294184667" name="com.mbeddr.mpsutil.placeholderTextList.structure.QueryFunction_PlaceholderText" flags="ng" index="2UZ7rR" />
+      <concept id="1739942158294184667" name="com.mbeddr.mpsutil.placeholderTextList.structure.QueryFunction_PlaceholderText" flags="ig" index="2UZ7rR" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
