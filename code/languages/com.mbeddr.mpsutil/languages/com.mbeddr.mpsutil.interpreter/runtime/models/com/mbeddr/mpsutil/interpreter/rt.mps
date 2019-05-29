@@ -2,14 +2,14 @@
 <model ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1641,8 +1641,8 @@
                           <ref role="3cqZAo" node="6wNYzrTZngH" resolve="start" />
                         </node>
                         <node concept="2YIFZM" id="6wNYzrTZp14" role="3uHU7B">
-                          <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
                           <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                          <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
                         </node>
                       </node>
                     </node>
@@ -1674,8 +1674,8 @@
                             <ref role="3cqZAo" node="6wNYzrTZngH" resolve="start" />
                           </node>
                           <node concept="2YIFZM" id="7dN4gbad9xs" role="3uHU7B">
-                            <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
                             <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                            <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
                           </node>
                         </node>
                       </node>
@@ -4488,8 +4488,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6ENu_m7rHpu" role="37vLTx">
-              <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
               <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+              <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
               <node concept="37vLTw" id="6ENu_m7rIec" role="37wK5m">
                 <ref role="3cqZAo" node="6ENu_m7rBME" resolve="constraints" />
               </node>
@@ -4907,8 +4907,8 @@
                   <ref role="3cqZAo" node="5Gh6GqH1YeU" resolve="mangledInput" />
                 </node>
                 <node concept="2YIFZM" id="5Gh6GqH24HL" role="37vLTx">
-                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(int)" resolve="valueOf" />
                   <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(int)" resolve="valueOf" />
                   <node concept="1eOMI4" id="5Gh6GqH2omj" role="37wK5m">
                     <node concept="10QFUN" id="5Gh6GqH2omk" role="1eOMHV">
                       <node concept="37vLTw" id="5Gh6GqH2omi" role="10QFUP">
@@ -5143,8 +5143,8 @@
                       <node concept="3clFbS" id="7riAdT3LZmu" role="9aQI4">
                         <node concept="3cpWs6" id="7riAdT3LZE2" role="3cqZAp">
                           <node concept="2YIFZM" id="7riAdT3M0iv" role="3cqZAk">
-                            <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
                             <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
+                            <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
                             <node concept="2OqwBi" id="7riAdT3M0S8" role="37wK5m">
                               <node concept="37vLTw" id="7riAdT3M0Bb" role="2Oq$k0">
                                 <ref role="3cqZAo" node="M6L5HuRguY" resolve="numberInput" />
@@ -5190,8 +5190,8 @@
                       <node concept="3clFbS" id="5hkE98Z4eWv" role="9aQI4">
                         <node concept="3cpWs6" id="5hkE98Z4fIL" role="3cqZAp">
                           <node concept="2YIFZM" id="5hkE98Z4gDS" role="3cqZAk">
-                            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
                             <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
                             <node concept="2OqwBi" id="5hkE98Z4idN" role="37wK5m">
                               <node concept="37vLTw" id="5hkE98Z4hrL" role="2Oq$k0">
                                 <ref role="3cqZAo" node="M6L5HuRguY" resolve="numberInput" />
@@ -5208,8 +5208,8 @@
                       <node concept="3clFbS" id="5hkE98Z44Vs" role="3eOfB_">
                         <node concept="3cpWs6" id="5hkE98Z44Vt" role="3cqZAp">
                           <node concept="2YIFZM" id="5hkE98Z44Vu" role="3cqZAk">
-                            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(double)" resolve="valueOf" />
                             <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(double)" resolve="valueOf" />
                             <node concept="2OqwBi" id="5hkE98Z44Vv" role="37wK5m">
                               <node concept="37vLTw" id="5hkE98Z44Vw" role="2Oq$k0">
                                 <ref role="3cqZAo" node="M6L5HuRguY" resolve="numberInput" />
@@ -5680,8 +5680,8 @@
                     </node>
                     <node concept="2OqwBi" id="30UB7pesVeD" role="33vP2m">
                       <node concept="2YIFZM" id="30UB7pesVeE" role="2Oq$k0">
-                        <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance()" resolve="getInstance" />
                         <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
+                        <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance()" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="30UB7pesVeF" role="2OqNvi">
                         <ref role="37wK5l" to="u78q:~TypeContextManager.createTypeCheckingContext(org.jetbrains.mps.openapi.model.SNode)" resolve="createTypeCheckingContext" />
@@ -6141,8 +6141,8 @@
           <node concept="2OqwBi" id="GsqojYUWD$" role="3clFbG">
             <node concept="2OqwBi" id="6ENu_m7ujXP" role="2Oq$k0">
               <node concept="2YIFZM" id="6ENu_m7ujH0" role="2Oq$k0">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
                 <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="6ENu_m7ukSz" role="2OqNvi">
                 <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
@@ -7488,6 +7488,52 @@
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
     </node>
+    <node concept="2tJIrI" id="6yxXcppgDFx" role="jymVt" />
+    <node concept="2tJIrI" id="6yxXcpph2qP" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcpph2$I" role="jymVt">
+      <property role="TrG5h" value="containsValueInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcpph2$J" role="1B3o_S" />
+      <node concept="10P_77" id="6yxXcpph2$K" role="3clF45" />
+      <node concept="37vLTG" id="6yxXcpph2$L" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcpph8VI" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcpph2$N" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="6yxXcpph2_g" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcpph2_h" role="jymVt">
+      <property role="TrG5h" value="getInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcpph2_i" role="1B3o_S" />
+      <node concept="3uibUv" id="6yxXcpph2_j" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="6yxXcpph2_k" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcppiULe" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcpph2_m" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="6yxXcpph2_K" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcpph2_L" role="jymVt">
+      <property role="TrG5h" value="containsKeyInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcpph2_M" role="1B3o_S" />
+      <node concept="10P_77" id="6yxXcpph2_N" role="3clF45" />
+      <node concept="37vLTG" id="6yxXcpph2_O" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcppiU8L" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcpph2_Q" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="6yxXcpph2sC" role="jymVt" />
   </node>
   <node concept="312cEu" id="7F2vPZ3KZdL">
     <property role="3GE5qa" value="context" />
@@ -7883,6 +7929,31 @@
       </node>
     </node>
     <node concept="2tJIrI" id="EWig$joLAY" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcppheC1" role="jymVt">
+      <property role="TrG5h" value="containsValueInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcppheC2" role="1B3o_S" />
+      <node concept="10P_77" id="6yxXcppheC3" role="3clF45" />
+      <node concept="37vLTG" id="6yxXcppheC4" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcppheC5" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcppheCh" role="3clF47">
+        <node concept="3clFbF" id="6yxXcpphItD" role="3cqZAp">
+          <node concept="3nyPlj" id="7F2vPZ3Oe8a" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~LinkedHashMap.containsValue(java.lang.Object)" resolve="containsValue" />
+            <node concept="37vLTw" id="7F2vPZ3Oe8b" role="37wK5m">
+              <ref role="3cqZAo" node="6yxXcppheC4" resolve="object" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6yxXcppheCi" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="7F2vPZ3O4x4" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="containsValue" />
@@ -7900,9 +7971,9 @@
           <node concept="3cpWsn" id="7F2vPZ3Oe89" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="10P_77" id="7F2vPZ3Oe86" role="1tU5fm" />
-            <node concept="3nyPlj" id="7F2vPZ3Oe8a" role="33vP2m">
-              <ref role="37wK5l" to="33ny:~LinkedHashMap.containsValue(java.lang.Object)" resolve="containsValue" />
-              <node concept="37vLTw" id="7F2vPZ3Oe8b" role="37wK5m">
+            <node concept="1rXfSq" id="6yxXcpphDA$" role="33vP2m">
+              <ref role="37wK5l" node="6yxXcppheC1" resolve="containsValueInCurrent" />
+              <node concept="37vLTw" id="6yxXcpphGpb" role="37wK5m">
                 <ref role="3cqZAo" node="7F2vPZ3O4x8" resolve="object" />
               </node>
             </node>
@@ -7965,6 +8036,33 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7F2vPZ3PV1$" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcppheCl" role="jymVt">
+      <property role="TrG5h" value="getInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcppheCm" role="1B3o_S" />
+      <node concept="3uibUv" id="6yxXcppheCn" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="6yxXcppheCo" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcppiOKL" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcppheC_" role="3clF47">
+        <node concept="3clFbF" id="6yxXcppjaX7" role="3cqZAp">
+          <node concept="3nyPlj" id="6yxXcppjaX4" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~LinkedHashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+            <node concept="37vLTw" id="6yxXcppjdWb" role="37wK5m">
+              <ref role="3cqZAo" node="6yxXcppheCo" resolve="object" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6yxXcppheCA" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="7F2vPZ3PyjN" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="get" />
@@ -7983,17 +8081,17 @@
         <node concept="3clFbJ" id="7F2vPZ3P$f9" role="3cqZAp">
           <node concept="3clFbS" id="7F2vPZ3P$fc" role="3clFbx">
             <node concept="3cpWs6" id="7F2vPZ3PANv" role="3cqZAp">
-              <node concept="3nyPlj" id="7F2vPZ3PBSb" role="3cqZAk">
-                <ref role="37wK5l" to="33ny:~LinkedHashMap.get(java.lang.Object)" resolve="get" />
-                <node concept="37vLTw" id="7F2vPZ3PFx8" role="37wK5m">
+              <node concept="1rXfSq" id="6yxXcppiGSG" role="3cqZAk">
+                <ref role="37wK5l" node="6yxXcppheCl" resolve="getInCurrent" />
+                <node concept="37vLTw" id="6yxXcppiKqZ" role="37wK5m">
                   <ref role="3cqZAo" node="7F2vPZ3PyjR" resolve="object" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3nyPlj" id="7F2vPZ3P_b8" role="3clFbw">
-            <ref role="37wK5l" to="33ny:~HashMap.containsKey(java.lang.Object)" resolve="containsKey" />
-            <node concept="37vLTw" id="7F2vPZ3PAkO" role="37wK5m">
+          <node concept="1rXfSq" id="6yxXcppi_3S" role="3clFbw">
+            <ref role="37wK5l" node="6yxXcppheCD" resolve="containsKeyInCurrent" />
+            <node concept="37vLTw" id="6yxXcppiC_O" role="37wK5m">
               <ref role="3cqZAo" node="7F2vPZ3PyjR" resolve="object" />
             </node>
           </node>
@@ -8041,6 +8139,31 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7F2vPZ3PWVb" role="jymVt" />
+    <node concept="3clFb_" id="6yxXcppheCD" role="jymVt">
+      <property role="TrG5h" value="containsKeyInCurrent" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="6yxXcppheCE" role="1B3o_S" />
+      <node concept="10P_77" id="6yxXcppheCF" role="3clF45" />
+      <node concept="37vLTG" id="6yxXcppheCG" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="6yxXcppimos" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6yxXcppheCT" role="3clF47">
+        <node concept="3clFbF" id="6yxXcppi5V2" role="3cqZAp">
+          <node concept="3nyPlj" id="6yxXcppi5V4" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~HashMap.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+            <node concept="37vLTw" id="6yxXcppi5V5" role="37wK5m">
+              <ref role="3cqZAo" node="6yxXcppheCG" resolve="object" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6yxXcppheCU" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="7F2vPZ3Q01N" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="containsKey" />
@@ -8058,9 +8181,9 @@
           <node concept="3cpWsn" id="7F2vPZ3Q2a9" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="10P_77" id="7F2vPZ3Q2aa" role="1tU5fm" />
-            <node concept="3nyPlj" id="7F2vPZ3Q2ab" role="33vP2m">
-              <ref role="37wK5l" to="33ny:~HashMap.containsKey(java.lang.Object)" resolve="containsKey" />
-              <node concept="37vLTw" id="7F2vPZ3Q2ac" role="37wK5m">
+            <node concept="1rXfSq" id="6yxXcppiaHf" role="33vP2m">
+              <ref role="37wK5l" node="6yxXcppheCD" resolve="containsKeyInCurrent" />
+              <node concept="37vLTw" id="6yxXcppidHS" role="37wK5m">
                 <ref role="3cqZAo" node="7F2vPZ3Q01R" resolve="object" />
               </node>
             </node>
@@ -8792,8 +8915,8 @@
                                 <property role="Xl_RC" value=": " />
                               </node>
                               <node concept="2YIFZM" id="4N5UlZR9g9n" role="3uHU7B">
-                                <ref role="37wK5l" to="wyt6:~System.identityHashCode(java.lang.Object)" resolve="identityHashCode" />
                                 <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                                <ref role="37wK5l" to="wyt6:~System.identityHashCode(java.lang.Object)" resolve="identityHashCode" />
                                 <node concept="Xjq3P" id="4N5UlZR9g9o" role="37wK5m" />
                               </node>
                             </node>
@@ -14637,8 +14760,8 @@
         <node concept="3clFbF" id="4HGbj9ThMoh" role="3cqZAp">
           <node concept="37vLTI" id="4HGbj9ThOSo" role="3clFbG">
             <node concept="2YIFZM" id="4HGbj9ThPoP" role="37vLTx">
-              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
               <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
             </node>
             <node concept="2OqwBi" id="4HGbj9ThMz3" role="37vLTJ">
               <node concept="Xjq3P" id="4HGbj9ThMog" role="2Oq$k0" />
@@ -14670,8 +14793,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="ORfz$DQvcV" role="3uHU7B">
-                <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
                 <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
               </node>
             </node>
           </node>
