@@ -115,6 +115,7 @@
       <concept id="1246687699869804428" name="com.mbeddr.analyses.base.structure.ModelUsedForAnalysesTestsMarker" flags="ng" index="29QVxn" />
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
+      <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
       <concept id="4887422885165654650" name="com.mbeddr.ext.math.structure.Implies" flags="ng" index="1EIBX2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -193,6 +194,7 @@
         <ref role="2v9HqP" node="7CSU6RRYpbc" resolve="implies" />
       </node>
     </node>
+    <node concept="22RD12" id="2W5lLMzQrBQ" role="2Q9xDr" />
   </node>
   <node concept="29QVxn" id="72mSD5RZkza" />
   <node concept="N3F5e" id="72mSD5RZkzb">

@@ -365,6 +365,7 @@
       </concept>
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
+      <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
       <concept id="4887422885165654650" name="com.mbeddr.ext.math.structure.Implies" flags="ng" index="1EIBX2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -604,6 +605,7 @@
     <node concept="2Q9Fgs" id="7Ztu0DHJOk3" role="2Q9xDr">
       <node concept="2Q9FjX" id="7Ztu0DHJOk4" role="2Q9FjI" />
     </node>
+    <node concept="22RD12" id="2W5lLMzUf8G" role="2Q9xDr" />
   </node>
   <node concept="N3F5e" id="7Ztu0DHJOk6">
     <property role="TrG5h" value="heap_sort" />
