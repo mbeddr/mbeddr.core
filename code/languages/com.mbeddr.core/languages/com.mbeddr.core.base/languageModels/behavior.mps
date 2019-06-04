@@ -7794,6 +7794,51 @@
           </node>
           <node concept="3eNFk2" id="7X9GfVcggDy" role="3eNLev">
             <node concept="3clFbS" id="7X9GfVcggDz" role="3eOfB_">
+              <node concept="3clFbF" id="1sMMV94uHjr" role="3cqZAp">
+                <node concept="2OqwBi" id="1sMMV94uHjo" role="3clFbG">
+                  <node concept="10M0yZ" id="1sMMV94uHjp" role="2Oq$k0">
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                  </node>
+                  <node concept="liA8E" id="1sMMV94uHjq" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="3cpWs3" id="1sMMV94uMVk" role="37wK5m">
+                      <node concept="2OqwBi" id="1sMMV94uOV0" role="3uHU7w">
+                        <node concept="2OqwBi" id="1sMMV94uNsR" role="2Oq$k0">
+                          <node concept="13iPFW" id="1sMMV94uNdP" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="1sMMV94uOcM" role="2OqNvi">
+                            <ref role="3Tt5mk" to="vs0r:2GIWVTRHgZp" resolve="nameController" />
+                          </node>
+                        </node>
+                        <node concept="1mIQ4w" id="1sMMV94uR0D" role="2OqNvi">
+                          <node concept="chp4Y" id="1sMMV94uRlf" role="cj9EA">
+                            <ref role="cht4Q" to="vs0r:2GIWVTRHgZm" resolve="IControlledName" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs3" id="1sMMV94uIyd" role="3uHU7B">
+                        <node concept="Xl_RD" id="1sMMV94uHuX" role="3uHU7B">
+                          <property role="Xl_RC" value="Named controller " />
+                        </node>
+                        <node concept="2OqwBi" id="1sMMV94uLbK" role="3uHU7w">
+                          <node concept="2OqwBi" id="1sMMV94uJRO" role="2Oq$k0">
+                            <node concept="2OqwBi" id="1sMMV94uINI" role="2Oq$k0">
+                              <node concept="13iPFW" id="1sMMV94uI_A" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="1sMMV94uJnI" role="2OqNvi">
+                                <ref role="3Tt5mk" to="vs0r:2GIWVTRHgZp" resolve="nameController" />
+                              </node>
+                            </node>
+                            <node concept="2yIwOk" id="1sMMV94uKeD" role="2OqNvi" />
+                          </node>
+                          <node concept="liA8E" id="1sMMV94uLxb" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs6" id="7X9GfVcggD$" role="3cqZAp">
                 <node concept="2OqwBi" id="7X9GfVcggD_" role="3cqZAk">
                   <node concept="2OqwBi" id="7X9GfVcggDA" role="2Oq$k0">
