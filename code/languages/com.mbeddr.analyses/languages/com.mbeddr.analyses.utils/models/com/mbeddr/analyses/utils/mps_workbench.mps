@@ -112,7 +112,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -137,9 +136,6 @@
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
-        <child id="1081516765348" name="expression" index="3fr31v" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -731,43 +727,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="hpy$nv2sS$" role="3clF47">
-        <node concept="3cpWs8" id="3YXj0OiqkQl" role="3cqZAp">
-          <node concept="3cpWsn" id="3YXj0OiqkQm" role="3cpWs9">
-            <property role="TrG5h" value="file" />
-            <node concept="3uibUv" id="3YXj0OiqkQh" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~File" resolve="File" />
-            </node>
-            <node concept="2ShNRf" id="3YXj0OiqkQn" role="33vP2m">
-              <node concept="1pGfFk" id="3YXj0OiqkQo" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="37vLTw" id="3YXj0OiqkQp" role="37wK5m">
-                  <ref role="3cqZAo" node="hpy$nv2tkY" resolve="filePath" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="3YXj0OirgJB" role="3cqZAp">
-          <node concept="3SKdUq" id="3YXj0OirgJD" role="3SKWNk">
-            <property role="3SKdUp" value="Checking for existence of the file" />
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3YXj0OiqIGg" role="3cqZAp">
-          <node concept="3clFbS" id="3YXj0OiqIGi" role="3clFbx">
-            <node concept="3cpWs6" id="3YXj0OiqJIP" role="3cqZAp" />
-          </node>
-          <node concept="3fqX7Q" id="3YXj0OiqJAv" role="3clFbw">
-            <node concept="2OqwBi" id="3YXj0OiqJAx" role="3fr31v">
-              <node concept="37vLTw" id="3YXj0OiqJAy" role="2Oq$k0">
-                <ref role="3cqZAo" node="3YXj0OiqkQm" resolve="file" />
-              </node>
-              <node concept="liA8E" id="3YXj0OiqJAz" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="3YXj0Oir0S9" role="3cqZAp" />
         <node concept="3cpWs8" id="hpy$nv2zEX" role="3cqZAp">
           <node concept="3cpWsn" id="hpy$nv2zEY" role="3cpWs9">
             <property role="TrG5h" value="cfile" />
@@ -784,14 +743,18 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3YXj0Oiqkqb" role="3cqZAp" />
         <node concept="3cpWs8" id="hpy$nv3V4O" role="3cqZAp">
           <node concept="3cpWsn" id="hpy$nv3V4R" role="3cpWs9">
             <property role="TrG5h" value="fileName" />
             <node concept="17QB3L" id="hpy$nv3V4M" role="1tU5fm" />
             <node concept="2OqwBi" id="hpy$nv49HU" role="33vP2m">
-              <node concept="37vLTw" id="3YXj0OiqkQq" role="2Oq$k0">
-                <ref role="3cqZAo" node="3YXj0OiqkQm" resolve="file" />
+              <node concept="2ShNRf" id="hpy$nv3Vky" role="2Oq$k0">
+                <node concept="1pGfFk" id="hpy$nv49xe" role="2ShVmc">
+                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                  <node concept="37vLTw" id="hpy$nv4hSo" role="37wK5m">
+                    <ref role="3cqZAo" node="hpy$nv2tkY" resolve="filePath" />
+                  </node>
+                </node>
               </node>
               <node concept="liA8E" id="hpy$nv49OW" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
@@ -799,7 +762,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3YXj0OiqkC8" role="3cqZAp" />
         <node concept="3cpWs8" id="hpy$nv4VKm" role="3cqZAp">
           <node concept="3cpWsn" id="hpy$nv4VKn" role="3cpWs9">
             <property role="TrG5h" value="f" />

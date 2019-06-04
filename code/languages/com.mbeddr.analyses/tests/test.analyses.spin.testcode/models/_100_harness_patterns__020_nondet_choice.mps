@@ -134,7 +134,6 @@
       </concept>
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
-      <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
       <concept id="4887422885165654650" name="com.mbeddr.ext.math.structure.Implies" flags="ng" index="1EIBX2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -200,7 +199,6 @@
       <property role="1gr5cm" value="-std=c99 -DSAFETY" />
       <property role="1gr5cn" value="make" />
     </node>
-    <node concept="22RD12" id="7JoAhhnzUlD" role="2Q9xDr" />
   </node>
   <node concept="3uEX16" id="2s6qLQkodgU">
     <property role="2lelRm" value="false" />

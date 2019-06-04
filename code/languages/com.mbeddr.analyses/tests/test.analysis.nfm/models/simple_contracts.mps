@@ -178,6 +178,7 @@
     <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base">
       <concept id="6472990431939580591" name="com.mbeddr.analyses.base.structure.AnalysisConfiguration" flags="ng" index="3V_BKJ">
         <child id="6472990431939692464" name="analyses" index="3V$2$K" />
+        <child id="559958203687603517" name="imports" index="3W6d8T" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -985,6 +986,9 @@
       <property role="2lUGbD" value="1000" />
       <ref role="gU3p2" node="1RY5dqNoqQy" resolve="PlauzibilizedSpeedComputer" />
       <ref role="3V$Cn$" node="1RY5dqNoqQR" resolve="emitCurrentSpeed" />
+    </node>
+    <node concept="3GEVxB" id="7ApeIpsWdvg" role="3W6d8T">
+      <ref role="3GEb4d" node="1RY5dqNoqQb" resolve="Contracts" />
     </node>
   </node>
 </model>

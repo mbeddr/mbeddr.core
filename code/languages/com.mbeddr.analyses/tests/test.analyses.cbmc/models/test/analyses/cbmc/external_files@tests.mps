@@ -18,6 +18,7 @@
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -25,6 +26,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -193,13 +195,19 @@
                 <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
               </node>
             </node>
-            <node concept="2YIFZM" id="1_cCL2G2_vJ" role="33vP2m">
-              <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+            <node concept="NRdvd" id="71B0VArMOEL" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
-              <node concept="37vLTw" id="28vOu_uqH5q" role="37wK5m">
+              <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="2OqwBi" id="71B0VArMLZs" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArMLKC" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArMMXS" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="71B0VArMOEM" role="37wK5m">
                 <ref role="3cqZAo" node="1_cCL2G2g7s" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="28vOu_uqHi7" role="37wK5m">
+              <node concept="Xl_RD" id="71B0VArMOEN" role="37wK5m">
                 <property role="Xl_RC" value="simple_assertion_1" />
               </node>
             </node>
@@ -394,13 +402,19 @@
                 <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
               </node>
             </node>
-            <node concept="2YIFZM" id="ZdgXCCImhp" role="33vP2m">
+            <node concept="NRdvd" id="71B0VArMPZD" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
               <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
-              <node concept="37vLTw" id="ZdgXCCImhq" role="37wK5m">
+              <node concept="2OqwBi" id="71B0VArMQoU" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArMQoV" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArMQoW" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="71B0VArMPZE" role="37wK5m">
                 <ref role="3cqZAo" node="ZdgXCCImh8" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="ZdgXCCImhr" role="37wK5m">
+              <node concept="Xl_RD" id="71B0VArMPZF" role="37wK5m">
                 <property role="Xl_RC" value="simple_assertion_1_2" />
               </node>
             </node>
@@ -595,13 +609,19 @@
                 <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
               </node>
             </node>
-            <node concept="2YIFZM" id="28vOu_uryPR" role="33vP2m">
-              <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+            <node concept="NRdvd" id="71B0VArMRl7" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
-              <node concept="37vLTw" id="28vOu_uryPS" role="37wK5m">
+              <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="2OqwBi" id="71B0VArMRDo" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArMRDp" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArMRDq" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="71B0VArMRl8" role="37wK5m">
                 <ref role="3cqZAo" node="28vOu_uryPK" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="28vOu_uryPT" role="37wK5m">
+              <node concept="Xl_RD" id="71B0VArMRl9" role="37wK5m">
                 <property role="Xl_RC" value="simple_assertion_2" />
               </node>
             </node>
@@ -707,6 +727,12 @@
             <node concept="NRdvd" id="5EwdfGVh5vw" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
               <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="2OqwBi" id="71B0VArMRSP" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArMRSQ" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArMRSR" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="5EwdfGVh5vx" role="37wK5m">
                 <ref role="3cqZAo" node="28vOu_ur$ug" resolve="model" />
               </node>
@@ -852,6 +878,12 @@
             <node concept="NRdvd" id="7kPcpiFiWlg" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
               <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="2OqwBi" id="71B0VArMSxi" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArMSxj" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArMSxk" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="7kPcpiFiWlh" role="37wK5m">
                 <ref role="3cqZAo" node="7kPcpiFiVh5" resolve="model" />
               </node>
@@ -948,6 +980,12 @@
             <node concept="NRdvd" id="7kPcpiFiXhZ" role="33vP2m">
               <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
+              <node concept="2OqwBi" id="71B0VArMSGe" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArMSGf" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArMSGg" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="7kPcpiFiXi0" role="37wK5m">
                 <ref role="3cqZAo" node="7kPcpiFiXhI" resolve="model" />
               </node>
@@ -1044,6 +1082,12 @@
             <node concept="NRdvd" id="7kPcpiFiXKo" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
               <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="2OqwBi" id="71B0VArMSQP" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArMSQQ" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArMSQR" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="7kPcpiFiXKp" role="37wK5m">
                 <ref role="3cqZAo" node="7kPcpiFiXK7" resolve="model" />
               </node>

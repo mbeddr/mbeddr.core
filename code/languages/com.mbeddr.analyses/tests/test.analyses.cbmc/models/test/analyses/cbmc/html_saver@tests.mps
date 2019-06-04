@@ -25,12 +25,14 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -196,6 +198,12 @@
             <node concept="NRdvd" id="5EwdfGVhi3W" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="2OqwBi" id="6ODCss37zyF" role="37wK5m">
+                <node concept="1jxXqW" id="6ODCss37ziB" role="2Oq$k0" />
+                <node concept="liA8E" id="6ODCss37$uX" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="BaHAS" id="5EwdfGVhi3X" role="37wK5m">
                 <property role="BaHAW" value="assertion" />
                 <property role="BaGAP" value="" />
@@ -315,6 +323,12 @@
           <node concept="2YIFZM" id="2AkoYuY2jzX" role="3clFbG">
             <ref role="37wK5l" to="tzyt:6GZ1x5Gjo9h" resolve="generateHTMLPage" />
             <ref role="1Pybhc" to="tzyt:6GZ1x5Gjo9f" resolve="HTMLResultsSaver" />
+            <node concept="2OqwBi" id="3$vwvl9L_tJ" role="37wK5m">
+              <node concept="1jxXqW" id="3$vwvl9L$Y9" role="2Oq$k0" />
+              <node concept="liA8E" id="3$vwvl9LB3R" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
             <node concept="Xl_RD" id="2AkoYuY2jGK" role="37wK5m">
               <property role="Xl_RC" value="test" />
             </node>

@@ -3,12 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -18,10 +17,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="rbq9" ref="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -239,8 +235,8 @@
         <node concept="3cpWs6" id="5bSnXVK2okO" role="3cqZAp">
           <node concept="2OqwBi" id="6mJYm3jut0b" role="3cqZAk">
             <node concept="2YIFZM" id="6BM8NjXdCDT" role="2Oq$k0">
-              <ref role="37wK5l" to="3h46:6BM8NjXdCCl" resolve="checkAsserts" />
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+              <ref role="37wK5l" to="3h46:6BM8NjXdCCl" resolve="checkAsserts" />
               <node concept="2OqwBi" id="71B0VArSHy4" role="37wK5m">
                 <node concept="1jxXqW" id="71B0VArSHkR" role="2Oq$k0" />
                 <node concept="liA8E" id="71B0VArSIBx" role="2OqNvi">
@@ -925,6 +921,16 @@
             </node>
           </node>
         </node>
+        <node concept="3vwNmj" id="3RFEChb2Tsy" role="3cqZAp">
+          <node concept="37vLTw" id="3RFEChb2T$e" role="3vwVQn">
+            <ref role="3cqZAo" node="3RFEChb2T90" resolve="paramsOk" />
+          </node>
+          <node concept="3_1$Yv" id="3RFEChb2Ts$" role="3_9lra">
+            <node concept="Xl_RD" id="3RFEChb2Ts_" role="3_1BAH">
+              <property role="Xl_RC" value="cbmc params are OK" />
+            </node>
+          </node>
+        </node>
         <node concept="3vwNmj" id="3RFEChb2OOJ" role="3cqZAp">
           <node concept="37vLTw" id="3RFEChb2TL2" role="3vwVQn">
             <ref role="3cqZAo" node="3RFEChb2TKX" resolve="cbmcCheckResult" />
@@ -962,6 +968,12 @@
             <node concept="NRdvd" id="5KHBa6kSzYW" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="2OqwBi" id="6ODCss37zyF" role="37wK5m">
+                <node concept="1jxXqW" id="6ODCss37ziB" role="2Oq$k0" />
+                <node concept="liA8E" id="6ODCss37$uX" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="5KHBa6kVNmD" role="37wK5m">
                 <ref role="3cqZAo" node="5KHBa6kVNmB" resolve="m" />
               </node>
@@ -1210,6 +1222,12 @@
             <node concept="NRdvd" id="3aDyPAXW6DX" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="2OqwBi" id="6ODCss37N2w" role="37wK5m">
+                <node concept="1jxXqW" id="6ODCss37N2x" role="2Oq$k0" />
+                <node concept="liA8E" id="6ODCss37N2y" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="3aDyPAXW6DY" role="37wK5m">
                 <ref role="3cqZAo" node="3aDyPAXW6DQ" resolve="m" />
               </node>
@@ -1279,6 +1297,12 @@
             <node concept="NRdvd" id="51BKItOC7ae" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="2OqwBi" id="6ODCss37NcZ" role="37wK5m">
+                <node concept="1jxXqW" id="6ODCss37Nd0" role="2Oq$k0" />
+                <node concept="liA8E" id="6ODCss37Nd1" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="51BKItOC7af" role="37wK5m">
                 <ref role="3cqZAo" node="51BKItOC7a7" resolve="m" />
               </node>
@@ -1348,6 +1372,12 @@
             <node concept="NRdvd" id="51BKItODN8n" role="33vP2m">
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+              <node concept="2OqwBi" id="6ODCss37NkV" role="37wK5m">
+                <node concept="1jxXqW" id="6ODCss37NkW" role="2Oq$k0" />
+                <node concept="liA8E" id="6ODCss37NkX" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="51BKItODN8o" role="37wK5m">
                 <ref role="3cqZAo" node="51BKItODN8g" resolve="m" />
               </node>
@@ -1417,6 +1447,12 @@
             <node concept="NRdvd" id="51BKItOEwWi" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="2OqwBi" id="6ODCss37NwQ" role="37wK5m">
+                <node concept="1jxXqW" id="6ODCss37NwR" role="2Oq$k0" />
+                <node concept="liA8E" id="6ODCss37NwS" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="51BKItOEwWj" role="37wK5m">
                 <ref role="3cqZAo" node="51BKItOEwWb" resolve="m" />
               </node>

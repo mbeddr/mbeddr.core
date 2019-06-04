@@ -5,7 +5,7 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
-    <import index="g8am" ref="r:786cf34b-73f0-4e32-a16e-3c11c907b296(examples)" />
+    <import index="fusw" ref="r:786607cf-5f3a-4791-b993-e9f90ed18217(examples)" />
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
   </imports>
   <registry>
@@ -262,7 +262,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3O_q_g" id="4ATA_JB$_Oa" role="3XIe9u">
-            <ref role="3O_q_h" to="g8am:68L3PPuzjup" resolve="crc16" />
+            <ref role="3O_q_h" to="fusw:68L3PPuzjup" resolve="crc16" />
             <node concept="1S7827" id="4ATA_JB$_Qb" role="3O_q_j">
               <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
             </node>
@@ -350,7 +350,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3O_q_g" id="4ATA_JB$AaC" role="3XIe9u">
-            <ref role="3O_q_h" to="g8am:68L3PPuzjup" resolve="crc16" />
+            <ref role="3O_q_h" to="fusw:68L3PPuzjup" resolve="crc16" />
             <node concept="1S7827" id="4ATA_JB$AaD" role="3O_q_j">
               <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
             </node>
@@ -401,7 +401,7 @@
       </node>
     </node>
     <node concept="3GEVxB" id="4ATA_JB$$6Y" role="2OODSX">
-      <ref role="3GEb4d" to="g8am:68L3PPuzjuc" resolve="crc16" />
+      <ref role="3GEb4d" to="fusw:68L3PPuzjuc" resolve="crc16" />
     </node>
     <node concept="3GEVxB" id="4ATA_JB$AMj" role="2OODSX">
       <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
@@ -422,7 +422,7 @@
         <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
       </node>
       <node concept="2v9HqM" id="4ATA_JB$E0W" role="2eOfOg">
-        <ref role="2v9HqP" to="g8am:68L3PPuzjuc" resolve="crc16" />
+        <ref role="2v9HqP" to="fusw:68L3PPuzjuc" resolve="crc16" />
       </node>
       <node concept="2v9HqM" id="4ATA_JB$E0X" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
