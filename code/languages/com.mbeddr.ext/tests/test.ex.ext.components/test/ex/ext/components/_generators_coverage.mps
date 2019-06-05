@@ -3,22 +3,21 @@
   <persistence version="9" />
   <languages>
     <use id="0c8e0d19-c3cf-4b31-af77-531227edbce8" name="com.mbeddr.core.qa" version="0" />
-    <use id="78881741-9502-46a8-b909-4f54d9617eb1" name="com.mbeddr.core.assessment" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
   <imports />
   <registry>
-    <language id="78881741-9502-46a8-b909-4f54d9617eb1" name="com.mbeddr.core.assessment">
-      <concept id="671216505796623802" name="com.mbeddr.core.assessment.structure.DefaultAssessmentSummary" flags="ng" index="qc_Tx">
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="671216505796623802" name="com.mbeddr.core.base.structure.DefaultAssessmentSummary" flags="ng" index="qc_Tx">
         <property id="671216505796623807" name="newlyAdded" index="qc_T$" />
         <property id="671216505796623806" name="ok" index="qc_T_" />
         <property id="671216505796623805" name="totalCount" index="qc_TA" />
       </concept>
-      <concept id="865293814733114043" name="com.mbeddr.core.assessment.structure.AssessmentContainer" flags="ng" index="3pwaUo">
+      <concept id="865293814733114043" name="com.mbeddr.core.base.structure.AssessmentContainer" flags="ng" index="3pwaUo">
         <child id="865293814733114045" name="assessments" index="3pwaUu" />
       </concept>
-      <concept id="865293814733114044" name="com.mbeddr.core.assessment.structure.Assessment" flags="ng" index="3pwaUv">
+      <concept id="865293814733114044" name="com.mbeddr.core.base.structure.Assessment" flags="ng" index="3pwaUv">
         <property id="4423545983997787056" name="lastUdpatedBy" index="2iEaKi" />
         <property id="4423545983997782838" name="lastUpdatedOn" index="2iEbMk" />
         <child id="671216505796427450" name="summaries" index="q3PPx" />
@@ -67,8 +66,8 @@
       </node>
       <node concept="qc_Tx" id="18BOPK$AcVt" role="q3PPx">
         <property role="qc_TA" value="22" />
-        <property role="qc_T_" value="0" />
         <property role="qc_T$" value="22" />
+        <property role="qc_T_" value="0" />
       </node>
     </node>
   </node>
@@ -88,8 +87,8 @@
       </node>
       <node concept="qc_Tx" id="18BOPK$AcQ1" role="q3PPx">
         <property role="qc_TA" value="9" />
-        <property role="qc_T_" value="0" />
         <property role="qc_T$" value="9" />
+        <property role="qc_T_" value="0" />
       </node>
     </node>
   </node>
@@ -106,8 +105,8 @@
       </node>
       <node concept="qc_Tx" id="18BOPK$AcRP" role="q3PPx">
         <property role="qc_TA" value="2" />
-        <property role="qc_T_" value="0" />
         <property role="qc_T$" value="2" />
+        <property role="qc_T_" value="0" />
       </node>
     </node>
   </node>
