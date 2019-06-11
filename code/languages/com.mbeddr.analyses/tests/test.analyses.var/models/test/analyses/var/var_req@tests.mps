@@ -14,14 +14,12 @@
   <imports>
     <import index="oe3g" ref="r:6529d99e-f27c-4f0d-b5a8-fdfbedcb1e34(com.mbeddr.analyses.sat4j.fm.testing)" />
     <import index="vy7l" ref="r:86500bb5-b61d-4584-98de-8e87c2a6a247(com.mbeddr.analyses.sat4j.fm.analyses)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
-      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -149,12 +147,6 @@
             <node concept="NRdvd" id="7t39SXUO41O" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:44j14BH3K8t" resolve="checkImplementationModuleConsistency" />
-              <node concept="2OqwBi" id="3$vwvl9TmPI" role="37wK5m">
-                <node concept="1jxXqW" id="3$vwvl9TmBL" role="2Oq$k0" />
-                <node concept="liA8E" id="3$vwvl9Tp53" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="7t39SXUO41P" role="37wK5m">
                 <node concept="2WthIp" id="7t39SXUO41Q" role="2Oq$k0" />
                 <node concept="2XshWL" id="7t39SXUO41R" role="2OqNvi">
@@ -189,7 +181,7 @@
         </node>
         <node concept="3vlDli" id="7t39SXUO421" role="3cqZAp">
           <node concept="Xl_RD" id="7t39SXUO422" role="3tpDZB">
-            <property role="Xl_RC" value="Success: test.analyses.var.testcode.var_req.req3 is consistent." />
+            <property role="Xl_RC" value="Success: req3 is consistent." />
           </node>
           <node concept="2OqwBi" id="7t39SXUO423" role="3tpDZA">
             <node concept="2OqwBi" id="7t39SXUO424" role="2Oq$k0">

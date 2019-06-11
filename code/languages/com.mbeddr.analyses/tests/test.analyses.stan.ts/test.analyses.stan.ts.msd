@@ -9,8 +9,8 @@
   <dependencies>
     <dependency reexport="false">e0dc4b58-6648-4617-8514-abfaa6d77043(com.mbeddr.analyses.stan)</dependency>
     <dependency reexport="false">8577ff67-8aae-422e-b831-9d78b9a8045a(com.mbeddr.analyses.z3.testing)</dependency>
-    <dependency reexport="false">017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)</dependency>
     <dependency reexport="false">88063d90-aa0a-4f17-8757-92c0f1692f3d(com.mbeddr.analyses.z3)</dependency>
+    <dependency reexport="false">017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:e0dc4b58-6648-4617-8514-abfaa6d77043:com.mbeddr.analyses.stan" version="0" />

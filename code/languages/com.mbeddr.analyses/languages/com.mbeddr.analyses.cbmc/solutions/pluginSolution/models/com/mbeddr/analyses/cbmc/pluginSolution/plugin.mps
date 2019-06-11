@@ -41,6 +41,7 @@
     <import index="b4h4" ref="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)" />
     <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" />
     <import index="npwl" ref="r:ca7aba72-9b45-4105-b4ef-5e520eda75c0(com.mbeddr.analyses.utils.results_model)" />
+    <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -331,6 +332,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
@@ -760,15 +762,21 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4EriiVwnqHm" role="3cqZAp">
-          <node concept="3cpWsn" id="4EriiVwnqHn" role="3cpWs9">
+        <node concept="3cpWs8" id="2QuU6zJivKm" role="3cqZAp">
+          <node concept="3cpWsn" id="2QuU6zJivKn" role="3cpWs9">
             <property role="TrG5h" value="factory" />
-            <node concept="3uibUv" id="3_HSwtcXJ87" role="1tU5fm">
-              <ref role="3uigEE" to="tzyt:3_HSwtcWQWH" resolve="AnalysisConfigurationAnalyzerFactory" />
+            <node concept="3uibUv" id="2QuU6zJivKk" role="1tU5fm">
+              <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
             </node>
-            <node concept="2ShNRf" id="4EriiVwnqHp" role="33vP2m">
-              <node concept="HV5vD" id="3_HSwtcXS_I" role="2ShVmc">
-                <ref role="HV5vE" to="tzyt:3_HSwtcWQWH" resolve="AnalysisConfigurationAnalyzerFactory" />
+            <node concept="2OqwBi" id="2QuU6zJivKo" role="33vP2m">
+              <node concept="2OqwBi" id="2QuU6zJivKp" role="2Oq$k0">
+                <node concept="2WthIp" id="2QuU6zJivKq" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2QuU6zJivKr" role="2OqNvi">
+                  <ref role="2WH_rO" node="5BkFC2yhAHp" resolve="analysisConfig" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="2QuU6zJivKs" role="2OqNvi">
+                <ref role="37wK5l" to="th2u:2QuU6zJiopk" resolve="getTopLevelAnalyzerFactory" />
               </node>
             </node>
           </node>
@@ -790,7 +798,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="4EriiVwnqH_" role="37wK5m">
-              <ref role="3cqZAo" node="4EriiVwnqHn" resolve="factory" />
+              <ref role="3cqZAo" node="2QuU6zJivKn" resolve="factory" />
             </node>
             <node concept="37vLTw" id="3_HSwtcXSLa" role="37wK5m">
               <ref role="3cqZAo" node="3_HSwtcXMtu" resolve="config" />
@@ -945,12 +953,18 @@
         <node concept="3cpWs8" id="3_HSwtcYvy$" role="3cqZAp">
           <node concept="3cpWsn" id="3_HSwtcYvy_" role="3cpWs9">
             <property role="TrG5h" value="factory" />
-            <node concept="3uibUv" id="3_HSwtcYvyA" role="1tU5fm">
-              <ref role="3uigEE" to="tzyt:3_HSwtcWQWH" resolve="AnalysisConfigurationAnalyzerFactory" />
+            <node concept="3uibUv" id="2QuU6zJip8B" role="1tU5fm">
+              <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
             </node>
-            <node concept="2ShNRf" id="3_HSwtcYvyB" role="33vP2m">
-              <node concept="HV5vD" id="3_HSwtcYvyC" role="2ShVmc">
-                <ref role="HV5vE" to="tzyt:3_HSwtcWQWH" resolve="AnalysisConfigurationAnalyzerFactory" />
+            <node concept="2OqwBi" id="2QuU6zITI9T" role="33vP2m">
+              <node concept="2OqwBi" id="2QuU6zITHDC" role="2Oq$k0">
+                <node concept="2WthIp" id="2QuU6zITHDF" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2QuU6zITHDH" role="2OqNvi">
+                  <ref role="2WH_rO" node="6w9LZ1hC3Vo" resolve="analysis" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="2QuU6zITIF5" role="2OqNvi">
+                <ref role="37wK5l" to="th2u:2QuU6zIQ9IH" resolve="topLevelAnalyzerFactory" />
               </node>
             </node>
           </node>
@@ -1126,15 +1140,21 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3_HSwtcXUsF" role="3cqZAp">
-          <node concept="3cpWsn" id="3_HSwtcXUsG" role="3cpWs9">
+        <node concept="3cpWs8" id="2QuU6zJixC1" role="3cqZAp">
+          <node concept="3cpWsn" id="2QuU6zJixC2" role="3cpWs9">
             <property role="TrG5h" value="factory" />
-            <node concept="3uibUv" id="3_HSwtcXUsH" role="1tU5fm">
-              <ref role="3uigEE" to="tzyt:3_HSwtcWQWH" resolve="AnalysisConfigurationAnalyzerFactory" />
+            <node concept="3uibUv" id="2QuU6zJixC3" role="1tU5fm">
+              <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
             </node>
-            <node concept="2ShNRf" id="3_HSwtcXUsI" role="33vP2m">
-              <node concept="HV5vD" id="3_HSwtcXUsJ" role="2ShVmc">
-                <ref role="HV5vE" to="tzyt:3_HSwtcWQWH" resolve="AnalysisConfigurationAnalyzerFactory" />
+            <node concept="2OqwBi" id="2QuU6zJixC4" role="33vP2m">
+              <node concept="2OqwBi" id="2QuU6zJixC5" role="2Oq$k0">
+                <node concept="2WthIp" id="2QuU6zJixC6" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2QuU6zJixC7" role="2OqNvi">
+                  <ref role="2WH_rO" node="EVDykUCksa" resolve="analysisConfig" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="2QuU6zJixC8" role="2OqNvi">
+                <ref role="37wK5l" to="th2u:2QuU6zJiopk" resolve="getTopLevelAnalyzerFactory" />
               </node>
             </node>
           </node>
@@ -1179,7 +1199,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="3_HSwtcY0_I" role="37wK5m">
-              <ref role="3cqZAo" node="3_HSwtcXUsG" resolve="factory" />
+              <ref role="3cqZAo" node="2QuU6zJixC2" resolve="factory" />
             </node>
             <node concept="37vLTw" id="3_HSwtcY0DB" role="37wK5m">
               <ref role="3cqZAo" node="3_HSwtcXUsp" resolve="config" />
@@ -2779,8 +2799,8 @@
       <node concept="3uibUv" id="7l6s1QDMfSr" role="1tU5fm">
         <ref role="3uigEE" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
       </node>
-      <node concept="Rm8GO" id="67TvXTFCsJX" role="33vP2m">
-        <ref role="Rm8GQ" to="tzyt:67TvXTFC38K" resolve="NONE" />
+      <node concept="Rm8GO" id="43paD3Ulb1W" role="33vP2m">
+        <ref role="Rm8GQ" to="tzyt:6DRvbEG0pcM" resolve="W32" />
         <ref role="1Px2BO" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
       </node>
     </node>
@@ -2795,7 +2815,7 @@
       <property role="TrG5h" value="usedCBMCVersion" />
       <node concept="17QB3L" id="4AQNBfV986Z" role="1tU5fm" />
       <node concept="Xl_RD" id="4AQNBfV9eRg" role="33vP2m">
-        <property role="Xl_RC" value="5.8" />
+        <property role="Xl_RC" value="5.9+" />
       </node>
     </node>
     <node concept="34jfKJ" id="1H8VqTvXlsY" role="34lFYf">

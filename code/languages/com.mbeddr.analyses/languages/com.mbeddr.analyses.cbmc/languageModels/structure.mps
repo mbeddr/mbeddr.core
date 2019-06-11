@@ -154,6 +154,139 @@
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.analyses.base.verification_conditions&quot;" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6$qhYL9Fk4m">
+    <property role="TrG5h" value="VerificationConditionBase_old" />
+    <property role="3GE5qa" value="verification_condition" />
+    <property role="R5$K7" value="true" />
+    <property role="EcuMT" value="7573444803550855446" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyi" id="7erX1gT1KjQ" role="1TKVEl">
+      <property role="TrG5h" value="disabled_old" />
+      <property role="IQ2nx" value="8330520303445148918" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="5rSz5xRlS3Q" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.analyses.base.verification_conditions.structure.VerificationConditionBase&quot;" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="46evrC8hdM4" role="1TKVEl">
+      <property role="TrG5h" value="documentation_old" />
+      <property role="IQ2nx" value="4723851297114348676" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="5rSz5xRlS3V" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.analyses.base.verification_conditions.structure.VerificationConditionBase&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="5rSz5xRlS3G" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.analyses.base.verification_conditions&quot;" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6$qhYL9Fk4o">
+    <property role="3GE5qa" value="verification_condition" />
+    <property role="TrG5h" value="AfterPThenQ_old" />
+    <property role="34LRSv" value="after then" />
+    <property role="R4oN_" value="after p, from the next pass on then q" />
+    <property role="EcuMT" value="7573444803550855448" />
+    <ref role="1TJDcQ" node="6qmmy97ZWGO" resolve="BinaryVerificationCondition_old" />
+    <node concept="asaX9" id="5rSz5xRlS2s" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.analyses.base.verification_conditions&quot;" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6qmmy97ZJIi">
+    <property role="3GE5qa" value="verification_condition" />
+    <property role="TrG5h" value="BeforePMustQ_old" />
+    <property role="34LRSv" value="before must" />
+    <property role="EcuMT" value="7392194941658528658" />
+    <ref role="1TJDcQ" node="6qmmy97ZWGO" resolve="BinaryVerificationCondition_old" />
+    <node concept="asaX9" id="5rSz5xRlS34" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.analyses.base.verification_conditions&quot;" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6qmmy97ZWGO">
+    <property role="3GE5qa" value="verification_condition" />
+    <property role="TrG5h" value="BinaryVerificationCondition_old" />
+    <property role="R5$K7" value="true" />
+    <property role="EcuMT" value="7392194941658581812" />
+    <ref role="1TJDcQ" node="6$qhYL9Fk4m" resolve="VerificationConditionBase_old" />
+    <node concept="1TJgyj" id="6qmmy97ZWGP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="p_old" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="7392194941658581813" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="asaX9" id="5rSz5xRlS40" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.analyses.base.verification_conditions.structure.BinaryVerificationCondition&quot;" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="6qmmy97ZWGQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="q_old" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="7392194941658581814" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="asaX9" id="5rSz5xRlS45" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.analyses.base.verification_conditions.structure.BinaryVerificationCondition&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="7FT_tSP32vv" role="PzmwI">
+      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLike" />
+    </node>
+    <node concept="asaX9" id="5rSz5xRlS3e" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.analyses.base.verification_conditions&quot;" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7gaOmgnbMbh">
+    <property role="3GE5qa" value="verification_condition" />
+    <property role="TrG5h" value="AfterQUntilRMustP_old" />
+    <property role="34LRSv" value="after until must" />
+    <property role="EcuMT" value="8361725885982646993" />
+    <ref role="1TJDcQ" node="5XIKRVIuY$_" resolve="TernaryVerificationCondition_old" />
+    <node concept="asaX9" id="5rSz5xRlS2K" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.analyses.base.verification_conditions&quot;" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5XIKRVIuY$_">
+    <property role="3GE5qa" value="verification_condition" />
+    <property role="TrG5h" value="TernaryVerificationCondition_old" />
+    <property role="R5$K7" value="true" />
+    <property role="EcuMT" value="6876648630975719717" />
+    <ref role="1TJDcQ" node="6$qhYL9Fk4m" resolve="VerificationConditionBase_old" />
+    <node concept="1TJgyj" id="5XIKRVIuY$A" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="p_old" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="6876648630975719718" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="asaX9" id="5rSz5xRlS4a" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.analyses.base.verification_conditions.structure.TernaryVerificationCondition&quot;" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="5XIKRVIuY$C" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="q_old" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="6876648630975719720" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="asaX9" id="5rSz5xRlS4f" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.analyses.base.verification_conditions.structure.TernaryVerificationCondition&quot;" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="5XIKRVIuY$E" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="r_old" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="6876648630975719722" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="asaX9" id="5rSz5xRlS4k" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.analyses.base.verification_conditions.structure.TernaryVerificationCondition&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="5rSz5xRMXiW" role="PzmwI">
+      <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLike_old" />
+    </node>
+    <node concept="asaX9" id="5rSz5xRlS3y" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.analyses.base.verification_conditions&quot;" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="7MOa6vKIydd">
     <property role="3GE5qa" value="harness" />
     <property role="TrG5h" value="NondetVarAssignment" />
@@ -231,6 +364,36 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8985851583396634742" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2gQe_W8E0vm">
+    <property role="3GE5qa" value="verification_condition" />
+    <property role="TrG5h" value="AfterQUntilRExistsP_old" />
+    <property role="34LRSv" value="after until exists" />
+    <property role="EcuMT" value="2609337213949315030" />
+    <ref role="1TJDcQ" node="5XIKRVIuY$_" resolve="TernaryVerificationCondition_old" />
+    <node concept="asaX9" id="5rSz5xRlS2A" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.analyses.base.verification_conditions&quot;" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2gQe_W8E0vC">
+    <property role="3GE5qa" value="verification_condition" />
+    <property role="TrG5h" value="BeforePExistsQ_old" />
+    <property role="34LRSv" value="before exists" />
+    <property role="EcuMT" value="2609337213949315048" />
+    <ref role="1TJDcQ" node="6qmmy97ZWGO" resolve="BinaryVerificationCondition_old" />
+    <node concept="asaX9" id="5rSz5xRlS2U" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.analyses.base.verification_conditions&quot;" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2gQe_W8E0vR">
+    <property role="3GE5qa" value="verification_condition" />
+    <property role="TrG5h" value="PImmediatelyPrecedesQ_old" />
+    <property role="34LRSv" value="immediately precedes" />
+    <property role="EcuMT" value="2609337213949315063" />
+    <ref role="1TJDcQ" node="6qmmy97ZWGO" resolve="BinaryVerificationCondition_old" />
+    <node concept="asaX9" id="5rSz5xRlS3o" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.analyses.base.verification_conditions&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Bqs07i8Hdj">
@@ -333,6 +496,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7kPcpiFfDY_" resolve="PreprocessorMacro" />
     </node>
+    <node concept="1TJgyj" id="7yZlKoqhA85" role="1TKVEi">
+      <property role="IQ2ns" value="8700768688825328133" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="replaceCalls" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7yZlKoqhA6Y" resolve="ReplaceCall" />
+    </node>
     <node concept="1TJgyi" id="7ehmsbAE0gk" role="1TKVEl">
       <property role="TrG5h" value="hasLocalCbmcSettings" />
       <property role="IQ2nx" value="8327535879613056020" />
@@ -373,6 +543,11 @@
       <property role="IQ2nx" value="8327535879610783060" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="6b3VADytZVC" role="1TKVEl">
+      <property role="IQ2nx" value="7116793976861490920" />
+      <property role="TrG5h" value="localizeFaults" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyi" id="7ehmsbAxlme" role="1TKVEl">
       <property role="TrG5h" value="hasLocalTimeout" />
       <property role="IQ2nx" value="8327535879610783118" />
@@ -401,6 +576,11 @@
     <node concept="1TJgyi" id="jmYEA6F408" role="1TKVEl">
       <property role="TrG5h" value="hasLocalArchitectureSettings" />
       <property role="IQ2nx" value="348741627183644680" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7yZlKoqhA8m" role="1TKVEl">
+      <property role="IQ2nx" value="8700768688825328150" />
+      <property role="TrG5h" value="hasReplaceCallSettings" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="jmYEA6F41F" role="1TKVEl">
@@ -777,6 +957,22 @@
     <property role="TrG5h" value="CPROVERisfiniteld" />
     <property role="34LRSv" value="__CPROVER_isfiniteld" />
     <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="7yZlKoqhA6Y">
+    <property role="EcuMT" value="8700768688825328062" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="ReplaceCall" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7yZlKoqhA6Z" role="1TKVEl">
+      <property role="IQ2nx" value="8700768688825328063" />
+      <property role="TrG5h" value="initialFunctionName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7yZlKoqhA72" role="1TKVEl">
+      <property role="IQ2nx" value="8700768688825328066" />
+      <property role="TrG5h" value="replacementFunctionName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

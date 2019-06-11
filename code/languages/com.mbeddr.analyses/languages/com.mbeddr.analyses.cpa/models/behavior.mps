@@ -169,7 +169,7 @@
         <node concept="3clFbF" id="3OLe0nF7pw7" role="3cqZAp">
           <node concept="2OqwBi" id="5KYWJPNMTRW" role="3clFbG">
             <node concept="2qgKlT" id="4K1D2BkI69B" role="2OqNvi">
-              <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
+              <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="getMangledName" />
             </node>
             <node concept="1PxgMI" id="5KYWJPNMTt8" role="2Oq$k0">
               <node concept="2OqwBi" id="3OLe0nF7pY7" role="1m5AlR">

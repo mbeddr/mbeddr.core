@@ -937,7 +937,7 @@
                                       <ref role="3cqZAo" node="6lrp79e90e0" resolve="it" />
                                     </node>
                                     <node concept="2qgKlT" id="6lrp79e90dX" role="2OqNvi">
-                                      <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
+                                      <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="getMangledName" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="6lrp79e90dY" role="2OqNvi">

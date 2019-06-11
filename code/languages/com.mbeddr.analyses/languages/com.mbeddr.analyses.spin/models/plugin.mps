@@ -286,14 +286,14 @@
     <node concept="15KeUm" id="5zgShfbCrkR" role="15LFul">
       <property role="TrG5h" value="callSpinMake" />
       <property role="2w7fpF" value="PASSTHRU" />
-      <ref role="15KeVY" to="sjfu:5zgShfbCrkR" resolve="callMake" />
+      <ref role="15KeVY" to="sjfu:5zgShfbCrkR" resolve="runMake" />
       <node concept="1aIAsN" id="6KI2Y3Z6tuf" role="1aI7mi">
         <property role="TrG5h" value="Parameters" />
+        <node concept="3Tm1VV" id="6KI2Y3Z6tug" role="1B3o_S" />
         <node concept="2lGYhJ" id="2bw4b0LZGaq" role="2pHZQ9">
           <property role="TrG5h" value="dummy" />
           <node concept="10P_77" id="2bw4b0LZGdK" role="2lK19J" />
         </node>
-        <node concept="3Tm1VV" id="6KI2Y3Z6tug" role="1B3o_S" />
       </node>
       <node concept="3D36IL" id="6KI2Y3Z4Vdj" role="3D36I4">
         <node concept="3D27Fh" id="6KI2Y3Z5ENC" role="3D36IM">
@@ -340,7 +340,7 @@
                       <ref role="2bn25l" to="sjfu:bq6A3e6cTK" resolve="collectPaths" />
                     </node>
                     <node concept="2sxana" id="5zgShfbCz40" role="2OqNvi">
-                      <ref role="2sxfKC" to="sjfu:bq6A3e6cUj" resolve="pathes" />
+                      <ref role="2sxfKC" to="sjfu:bq6A3e6cUj" resolve="paths" />
                     </node>
                   </node>
                   <node concept="3zZkjj" id="5zgShfbCz41" role="2OqNvi">
@@ -1112,13 +1112,13 @@
       <ref role="1Mm5Yu" to="tpcq:5L5h3brvz7i" resolve="Generate" />
     </node>
     <node concept="3HPw9p" id="43FRfGKh4T9" role="1Mm5TH">
-      <ref role="1Mm5Yu" to="sjfu:bq6A3e6cTE" resolve="runMake" />
+      <ref role="1Mm5Yu" to="sjfu:bq6A3e6cTE" resolve="RunMake" />
+    </node>
+    <node concept="1Mm_lO" id="43FRfGKor33" role="1Mm5Yj">
+      <ref role="1Mm5Yu" to="sjfu:bq6A3e6cTE" resolve="RunMake" />
     </node>
     <node concept="3HPw9p" id="2bw4b0LYHfC" role="1Mm5TH">
       <ref role="1Mm5Yu" to="fy8e:taepSZ9r$V" resolve="Make" />
-    </node>
-    <node concept="1Mm_lO" id="43FRfGKor33" role="1Mm5Yj">
-      <ref role="1Mm5Yu" to="sjfu:bq6A3e6cTE" resolve="runMake" />
     </node>
   </node>
   <node concept="2DaZZR" id="1ptFCtLu4MQ" />

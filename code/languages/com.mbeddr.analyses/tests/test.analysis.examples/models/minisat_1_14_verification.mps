@@ -260,7 +260,7 @@
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
-      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameShorteningConfiguration" flags="ng" index="MH4UO" />
+      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO" />
     </language>
     <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
       <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
@@ -395,6 +395,9 @@
       <node concept="2v9HqM" id="5RBPMWa2qpx" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
+      <node concept="2v9HqM" id="5RBPMWa2qpy" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:pE4rJ9OTT$" resolve="timeval" />
+      </node>
       <node concept="2v9HqM" id="5RBPMWa2qpz" role="2eOfOg">
         <ref role="2v9HqP" to="ahhi:3cMu40vjTAC" resolve="vec" />
       </node>
@@ -453,6 +456,9 @@
       </node>
       <node concept="2v9HqM" id="1qdWvqenuup" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
+      </node>
+      <node concept="2v9HqM" id="1qdWvqenuuq" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:pE4rJ9OTT$" resolve="timeval" />
       </node>
       <node concept="2v9HqM" id="1qdWvqenuur" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />

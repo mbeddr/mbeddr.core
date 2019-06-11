@@ -13,7 +13,6 @@
   </languages>
   <imports>
     <import index="vy7l" ref="r:86500bb5-b61d-4584-98de-8e87c2a6a247(com.mbeddr.analyses.sat4j.fm.analyses)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -25,6 +24,9 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -58,11 +60,6 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -127,12 +124,6 @@
       <node concept="3uibUv" id="7cDRCwNmhKM" role="3clF45">
         <ref role="3uigEE" to="vy7l:7cDRCwNlZa5" resolve="IVariabilityUseConsistencyChecker" />
       </node>
-      <node concept="37vLTG" id="3$vwvl9T2x1" role="3clF46">
-        <property role="TrG5h" value="modelRepository" />
-        <node concept="3uibUv" id="3$vwvl9T2y0" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
-      </node>
       <node concept="37vLTG" id="7cDRCwNmhNW" role="3clF46">
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="7cDRCwNmhNV" role="1tU5fm" />
@@ -193,24 +184,15 @@
       <node concept="3uibUv" id="7cDRCwNmhTB" role="3clF45">
         <ref role="3uigEE" to="vy7l:7cDRCwNlZa5" resolve="IVariabilityUseConsistencyChecker" />
       </node>
-      <node concept="37vLTG" id="3$vwvl9T2__" role="3clF46">
-        <property role="TrG5h" value="repo" />
-        <node concept="3uibUv" id="3$vwvl9T2DY" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
-      </node>
       <node concept="37vLTG" id="7cDRCwNmhTC" role="3clF46">
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="7cDRCwNmhTD" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="7cDRCwNmhTF" role="3clF47">
-        <node concept="3cpWs6" id="3$vwvl9T3Xd" role="3cqZAp">
-          <node concept="2ShNRf" id="3$vwvl9T3XP" role="3cqZAk">
-            <node concept="1pGfFk" id="3$vwvl9T49r" role="2ShVmc">
-              <ref role="37wK5l" to="vy7l:3$vwvl9SQf3" resolve="ModuleConsistencyChecker" />
-              <node concept="37vLTw" id="3$vwvl9T4eF" role="37wK5m">
-                <ref role="3cqZAo" node="3$vwvl9T2__" resolve="repo" />
-              </node>
+        <node concept="3cpWs6" id="7cDRCwNmi88" role="3cqZAp">
+          <node concept="2ShNRf" id="7cDRCwNmi9q" role="3cqZAk">
+            <node concept="HV5vD" id="7cDRCwNmigQ" role="2ShVmc">
+              <ref role="HV5vE" to="vy7l:1X8myJOPC6R" resolve="ModuleConsistencyChecker" />
             </node>
           </node>
         </node>
