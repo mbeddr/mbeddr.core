@@ -339,28 +339,25 @@
             <node concept="2YIFZM" id="5CkU_dHidGP" role="3clFbG">
               <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="5CkU_dHidGQ" role="37wK5m">
-                <node concept="2OqwBi" id="5CkU_dHidGR" role="2Oq$k0">
+              <node concept="2OqwBi" id="9dxmSuNv6G" role="37wK5m">
+                <node concept="2OqwBi" id="5CkU_dHidGQ" role="2Oq$k0">
                   <node concept="2OqwBi" id="5CkU_dHidGS" role="2Oq$k0">
                     <node concept="2rP1CM" id="5CkU_dHidGT" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="5CkU_dHidGU" role="2OqNvi">
                       <node concept="1xMEDy" id="5CkU_dHidGV" role="1xVPHs">
-                        <node concept="chp4Y" id="5CkU_dHidGW" role="ri$Ld">
-                          <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                        <node concept="chp4Y" id="9dxmSuNqp4" role="ri$Ld">
+                          <ref role="cht4Q" to="qqyh:5USXI9KzkZK" resolve="VariabilitySupport" />
                         </node>
                       </node>
                       <node concept="1xIGOp" id="5CkU_dHidGX" role="1xVPHs" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="5CkU_dHidGY" role="2OqNvi">
-                    <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                    <node concept="3TUQnm" id="5CkU_dHidGZ" role="37wK5m">
-                      <ref role="3TV0OU" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
-                    </node>
+                  <node concept="3Tsc0h" id="9dxmSuNrCS" role="2OqNvi">
+                    <ref role="3TtcxE" to="qqyh:5USXI9KzkZL" resolve="contents" />
                   </node>
                 </node>
-                <node concept="v3k3i" id="5CkU_dHidH0" role="2OqNvi">
-                  <node concept="chp4Y" id="5CkU_dHidH1" role="v3oSu">
+                <node concept="v3k3i" id="9dxmSuN$_Q" role="2OqNvi">
+                  <node concept="chp4Y" id="9dxmSuN$LC" role="v3oSu">
                     <ref role="cht4Q" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
                   </node>
                 </node>
