@@ -2,7 +2,7 @@
 <model ref="r:01aeb19e-8306-4286-94fb-3d095bdf5410(com.mbeddr.analyses.spin.c.patterns.documentation)">
   <persistence version="9" />
   <languages>
-    <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
+    <engage id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>

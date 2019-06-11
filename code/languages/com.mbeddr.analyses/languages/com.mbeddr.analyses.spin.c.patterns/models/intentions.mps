@@ -191,7 +191,7 @@
       <node concept="3clFbS" id="6AAaFOTDdXn" role="2VODD2">
         <node concept="3clFbF" id="6AAaFOTDfNA" role="3cqZAp">
           <node concept="Xl_RD" id="6AAaFOTDfN_" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Save Vectors" />
+            <property role="Xl_RC" value="Toggle Generate Wrappers" />
           </node>
         </node>
       </node>
