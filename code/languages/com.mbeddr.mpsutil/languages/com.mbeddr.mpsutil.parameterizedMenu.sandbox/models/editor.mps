@@ -226,19 +226,19 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="1A$OnV5ndBW" role="2OqNvi">
-                      <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project):void" resolve="notify" />
+                      <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project)" resolve="notify" />
                       <node concept="2YIFZM" id="1A$OnV5nzy5" role="37wK5m">
-                        <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                        <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                         <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                         <node concept="2OqwBi" id="1A$OnV5nqU7" role="37wK5m">
                           <node concept="2OqwBi" id="1A$OnV5nlPU" role="2Oq$k0">
                             <node concept="1Q80Hx" id="1A$OnV5nlwN" role="2Oq$k0" />
                             <node concept="liA8E" id="1A$OnV5nqHA" role="2OqNvi">
-                              <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                              <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                             </node>
                           </node>
                           <node concept="liA8E" id="1A$OnV5nrsx" role="2OqNvi">
-                            <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                            <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
                           </node>
                         </node>
                       </node>
@@ -289,19 +289,19 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="1A$OnV5nHaN" role="2OqNvi">
-                      <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project):void" resolve="notify" />
+                      <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project)" resolve="notify" />
                       <node concept="2YIFZM" id="1A$OnV5nHaO" role="37wK5m">
                         <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                        <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                        <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                         <node concept="2OqwBi" id="1A$OnV5nHaP" role="37wK5m">
                           <node concept="2OqwBi" id="1A$OnV5nHaQ" role="2Oq$k0">
                             <node concept="1Q80Hx" id="1A$OnV5nHaR" role="2Oq$k0" />
                             <node concept="liA8E" id="1A$OnV5nHaS" role="2OqNvi">
-                              <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                              <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                             </node>
                           </node>
                           <node concept="liA8E" id="1A$OnV5nHaT" role="2OqNvi">
-                            <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                            <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
                           </node>
                         </node>
                       </node>
@@ -375,19 +375,19 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="1A$OnV5nHSy" role="2OqNvi">
-                    <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project):void" resolve="notify" />
+                    <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project)" resolve="notify" />
                     <node concept="2YIFZM" id="1A$OnV5nHSz" role="37wK5m">
                       <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                       <node concept="2OqwBi" id="1A$OnV5nHS$" role="37wK5m">
                         <node concept="2OqwBi" id="1A$OnV5nHS_" role="2Oq$k0">
                           <node concept="1Q80Hx" id="1A$OnV5nHSA" role="2Oq$k0" />
                           <node concept="liA8E" id="1A$OnV5nHSB" role="2OqNvi">
-                            <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                            <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                           </node>
                         </node>
                         <node concept="liA8E" id="1A$OnV5nHSC" role="2OqNvi">
-                          <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                          <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
                         </node>
                       </node>
                     </node>
@@ -435,19 +435,19 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="1A$OnV5nICZ" role="2OqNvi">
-                    <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project):void" resolve="notify" />
+                    <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project)" resolve="notify" />
                     <node concept="2YIFZM" id="1A$OnV5nID0" role="37wK5m">
                       <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                       <node concept="2OqwBi" id="1A$OnV5nID1" role="37wK5m">
                         <node concept="2OqwBi" id="1A$OnV5nID2" role="2Oq$k0">
                           <node concept="1Q80Hx" id="1A$OnV5nID3" role="2Oq$k0" />
                           <node concept="liA8E" id="1A$OnV5nID4" role="2OqNvi">
-                            <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                            <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                           </node>
                         </node>
                         <node concept="liA8E" id="1A$OnV5nID5" role="2OqNvi">
-                          <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                          <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
                         </node>
                       </node>
                     </node>
@@ -492,19 +492,19 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="1A$OnV5nIJr" role="2OqNvi">
-                    <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project):void" resolve="notify" />
+                    <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project)" resolve="notify" />
                     <node concept="2YIFZM" id="1A$OnV5nIJs" role="37wK5m">
                       <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                       <node concept="2OqwBi" id="1A$OnV5nIJt" role="37wK5m">
                         <node concept="2OqwBi" id="1A$OnV5nIJu" role="2Oq$k0">
                           <node concept="1Q80Hx" id="1A$OnV5nIJv" role="2Oq$k0" />
                           <node concept="liA8E" id="1A$OnV5nIJw" role="2OqNvi">
-                            <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                            <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                           </node>
                         </node>
                         <node concept="liA8E" id="1A$OnV5nIJx" role="2OqNvi">
-                          <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                          <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
                         </node>
                       </node>
                     </node>

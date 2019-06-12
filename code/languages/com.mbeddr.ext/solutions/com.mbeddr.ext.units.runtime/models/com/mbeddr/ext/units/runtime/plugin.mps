@@ -7,7 +7,7 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
   </languages>
@@ -1546,7 +1546,7 @@
                 <node concept="2OqwBi" id="5dSoB2LRRGP" role="3uHU7w">
                   <node concept="Xjq3P" id="5dSoB2LRR$K" role="2Oq$k0" />
                   <node concept="liA8E" id="5dSoB2LRROz" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="5dSoB2LRRhB" role="3uHU7B">
@@ -1554,7 +1554,7 @@
                     <ref role="3cqZAo" node="5dSoB2LRAi2" resolve="obj" />
                   </node>
                   <node concept="liA8E" id="5dSoB2LRRne" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                   </node>
                 </node>
               </node>
@@ -2273,7 +2273,7 @@
                     <ref role="3cqZAo" node="5dSoB2LX7ZG" resolve="o1" />
                   </node>
                   <node concept="liA8E" id="5dSoB2LXNbO" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Integer.compareTo(java.lang.Integer):int" resolve="compareTo" />
+                    <ref role="37wK5l" to="wyt6:~Integer.compareTo(java.lang.Integer)" resolve="compareTo" />
                     <node concept="37vLTw" id="5dSoB2LXP4l" role="37wK5m">
                       <ref role="3cqZAo" node="5dSoB2LXexH" resolve="o2" />
                     </node>
@@ -2298,7 +2298,7 @@
                     <ref role="3cqZAo" node="5dSoB2LX7ZG" resolve="o1" />
                   </node>
                   <node concept="liA8E" id="5dSoB2LXZaa" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Integer.compareTo(java.lang.Integer):int" resolve="compareTo" />
+                    <ref role="37wK5l" to="wyt6:~Integer.compareTo(java.lang.Integer)" resolve="compareTo" />
                     <node concept="37vLTw" id="5dSoB2LY1fF" role="37wK5m">
                       <ref role="3cqZAo" node="5dSoB2LXexH" resolve="o2" />
                     </node>
@@ -2375,7 +2375,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="4DRdDUoCV_e" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="Xl_RD" id="4DRdDUoCVCV" role="37wK5m">
                             <property role="Xl_RC" value="nounit" />
                           </node>
@@ -3293,7 +3293,7 @@
               <node concept="3cpWs6" id="26hWC1I8D6E" role="3cqZAp">
                 <node concept="2YIFZM" id="26hWC1IfSMy" role="3cqZAk">
                   <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-                  <ref role="37wK5l" to="33ny:~Collections.emptyMap():java.util.Map" resolve="emptyMap" />
+                  <ref role="37wK5l" to="33ny:~Collections.emptyMap()" resolve="emptyMap" />
                 </node>
               </node>
             </node>
@@ -3435,7 +3435,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="qWsmfOXxcC" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="qWsmfOXxcD" role="37wK5m">
                             <node concept="2GrUjf" id="qWsmfOXxcE" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="AeX2Dk$r2Y" resolve="component" />
@@ -7203,7 +7203,7 @@
                 <node concept="2OqwBi" id="5dSoB2LOIqi" role="3uHU7w">
                   <node concept="Xjq3P" id="5dSoB2LOIqj" role="2Oq$k0" />
                   <node concept="liA8E" id="5dSoB2LOIqk" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="5dSoB2LOIql" role="3uHU7B">
@@ -7211,7 +7211,7 @@
                     <ref role="3cqZAo" node="5dSoB2LOIq5" resolve="obj" />
                   </node>
                   <node concept="liA8E" id="5dSoB2LOIqn" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                   </node>
                 </node>
               </node>
@@ -7264,7 +7264,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5dSoB2LOIqI" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="5dSoB2LOIqJ" role="37wK5m">
                       <node concept="2OqwBi" id="5dSoB2LOIqK" role="2Oq$k0">
                         <node concept="37vLTw" id="5dSoB2LOIqL" role="2Oq$k0">
@@ -7301,7 +7301,7 @@
           <node concept="3clFbS" id="5dSoB2LOIqW" role="3clFbx">
             <node concept="3cpWs6" id="5dSoB2LOIqX" role="3cqZAp">
               <node concept="3nyPlj" id="5dSoB2LOIqY" role="3cqZAk">
-                <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                <ref role="37wK5l" to="wyt6:~Object.hashCode()" resolve="hashCode" />
               </node>
             </node>
           </node>
@@ -7346,7 +7346,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5dSoB2LOIrl" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.hashCode():int" resolve="hashCode" />
+                    <ref role="37wK5l" to="wyt6:~String.hashCode()" resolve="hashCode" />
                   </node>
                 </node>
               </node>

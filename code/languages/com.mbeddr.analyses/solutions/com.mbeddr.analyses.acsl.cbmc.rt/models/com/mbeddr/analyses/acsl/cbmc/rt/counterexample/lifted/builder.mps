@@ -229,7 +229,7 @@
         <node concept="3cpWs6" id="3x0R1LIQ8f8" role="3cqZAp">
           <node concept="2YIFZM" id="1aITAdxv_Re" role="3cqZAk">
             <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-            <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+            <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
             <node concept="37vLTw" id="1aITAdxv_Rf" role="37wK5m">
               <ref role="3cqZAo" node="5GEvLp_RFMU" resolve="res" />
             </node>

@@ -99,7 +99,7 @@
       </concept>
     </language>
     <language id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences">
-      <concept id="6044976435766352430" name="com.mbeddr.mpsutil.spreferences.structure.InitPageNode" flags="ng" index="U$sw$" />
+      <concept id="6044976435766352430" name="com.mbeddr.mpsutil.spreferences.structure.InitPageNode" flags="ig" index="U$sw$" />
       <concept id="6044976435766352514" name="com.mbeddr.mpsutil.spreferences.structure.Parameter_PageNode" flags="ng" index="U$sy8" />
       <concept id="1551477140197502032" name="com.mbeddr.mpsutil.spreferences.structure.ModuleSettings" flags="ng" index="Z6TxH">
         <child id="1551477140197679137" name="usedLanguages" index="Z6dgs" />
@@ -209,7 +209,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="7$0wAVocWha" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="2OqwBi" id="7$0wAVocWhb" role="37wK5m">
                                   <node concept="37vLTw" id="7$0wAVocWhc" role="2Oq$k0">
                                     <ref role="3cqZAo" node="7$0wAVocLsA" resolve="template" />

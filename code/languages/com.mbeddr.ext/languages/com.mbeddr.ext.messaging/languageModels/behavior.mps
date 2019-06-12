@@ -217,7 +217,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="6JJhAyRcMJe" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
               </node>
             </node>
           </node>
@@ -789,7 +789,7 @@
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
       <node concept="3Tm1VV" id="4PdWDflhTHo" role="1B3o_S" />
       <node concept="3clFbS" id="4PdWDflhTHJ" role="3clF47">
         <node concept="3clFbF" id="4PdWDflhTSF" role="3cqZAp">
@@ -802,7 +802,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="4PdWDflhZnr" role="2OqNvi">
-                <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
               </node>
             </node>
             <node concept="3cpWs3" id="4PdWDflhWaQ" role="3uHU7B">
@@ -895,7 +895,7 @@
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
       <node concept="3Tm1VV" id="4PdWDflhlMP" role="1B3o_S" />
       <node concept="3clFbS" id="4PdWDflhlNc" role="3clF47">
         <node concept="3clFbF" id="4PdWDflhlXa" role="3cqZAp">

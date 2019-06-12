@@ -216,7 +216,7 @@
                 <ref role="37wK5l" node="4o4$mVTwnPA" resolve="getBookmarkText" />
               </node>
               <node concept="liA8E" id="3JErwPFxvFg" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.hashCode():int" resolve="hashCode" />
+                <ref role="37wK5l" to="wyt6:~String.hashCode()" resolve="hashCode" />
               </node>
             </node>
           </node>

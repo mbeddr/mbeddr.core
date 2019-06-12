@@ -1411,7 +1411,7 @@
                   <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="cbmcLiftedResultsTool" />
                 </node>
                 <node concept="liA8E" id="7F8$WoW2Ap2" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="7F8$WoW2Ar5" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -1425,7 +1425,7 @@
                 <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="cbmcLiftedResultsTool" />
               </node>
               <node concept="liA8E" id="5TmSwGor88u" role="2OqNvi">
-                <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
+                <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened()" resolve="toolIsOpened" />
               </node>
             </node>
           </node>
@@ -1438,7 +1438,7 @@
                   <ref role="3cqZAo" node="6izRX53r81V" resolve="rawResultTool" />
                 </node>
                 <node concept="liA8E" id="6izRX53r8Hx" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="6izRX53r8Hy" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -1453,7 +1453,7 @@
                   <ref role="3cqZAo" node="6izRX53r81V" resolve="rawResultTool" />
                 </node>
                 <node concept="liA8E" id="6izRX53r8HA" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened()" resolve="toolIsOpened" />
                 </node>
               </node>
             </node>
@@ -1542,7 +1542,7 @@
               <node concept="2OqwBi" id="4eArAUVty3v" role="2Oq$k0">
                 <node concept="1KvdUw" id="4eArAUVty3w" role="2Oq$k0" />
                 <node concept="liA8E" id="4eArAUVty3x" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c4:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                  <ref role="37wK5l" to="z1c4:~MPSProject.getProject()" resolve="getProject" />
                 </node>
               </node>
               <node concept="LR4Ub" id="4eArAUVty3y" role="2OqNvi">

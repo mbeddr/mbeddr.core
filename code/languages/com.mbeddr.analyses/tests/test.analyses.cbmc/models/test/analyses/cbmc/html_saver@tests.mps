@@ -25,12 +25,14 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -196,6 +198,12 @@
             <node concept="NRdvd" id="5EwdfGVhi3W" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="2OqwBi" id="6ODCss37zyF" role="37wK5m">
+                <node concept="1jxXqW" id="6ODCss37ziB" role="2Oq$k0" />
+                <node concept="liA8E" id="6ODCss37$uX" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="BaHAS" id="5EwdfGVhi3X" role="37wK5m">
                 <property role="BaHAW" value="assertion" />
                 <property role="BaGAP" value="" />
@@ -283,7 +291,7 @@
             <property role="TrG5h" value="tmpDir" />
             <node concept="17QB3L" id="2AkoYuY2kim" role="1tU5fm" />
             <node concept="2YIFZM" id="2AkoYuY2kcg" role="33vP2m">
-              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
               <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
               <node concept="Xl_RD" id="2AkoYuY2kch" role="37wK5m">
                 <property role="Xl_RC" value="java.io.tmpdir" />
@@ -315,6 +323,12 @@
           <node concept="2YIFZM" id="2AkoYuY2jzX" role="3clFbG">
             <ref role="37wK5l" to="tzyt:6GZ1x5Gjo9h" resolve="generateHTMLPage" />
             <ref role="1Pybhc" to="tzyt:6GZ1x5Gjo9f" resolve="HTMLResultsSaver" />
+            <node concept="2OqwBi" id="3$vwvl9L_tJ" role="37wK5m">
+              <node concept="1jxXqW" id="3$vwvl9L$Y9" role="2Oq$k0" />
+              <node concept="liA8E" id="3$vwvl9LB3R" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
             <node concept="Xl_RD" id="2AkoYuY2jGK" role="37wK5m">
               <property role="Xl_RC" value="test" />
             </node>
@@ -349,7 +363,7 @@
               <ref role="3cqZAo" node="2AkoYuY2lTZ" resolve="f" />
             </node>
             <node concept="liA8E" id="2AkoYuY2mWA" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
             </node>
           </node>
         </node>
@@ -369,7 +383,7 @@
             <node concept="3clFbF" id="2AkoYuY2oPy" role="3cqZAp">
               <node concept="37vLTI" id="2AkoYuY2oP$" role="3clFbG">
                 <node concept="2YIFZM" id="2AkoYuY2oBD" role="37vLTx">
-                  <ref role="37wK5l" to="8oaq:~FileUtils.readLines(java.io.File):java.util.List" resolve="readLines" />
+                  <ref role="37wK5l" to="8oaq:~FileUtils.readLines(java.io.File)" resolve="readLines" />
                   <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
                   <node concept="37vLTw" id="2AkoYuY2oBE" role="37wK5m">
                     <ref role="3cqZAo" node="2AkoYuY2lTZ" resolve="f" />
@@ -392,7 +406,7 @@
                       <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     </node>
                     <node concept="liA8E" id="2AkoYuY2v1Q" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="2GrUjf" id="2AkoYuY2v3s" role="37wK5m">
                         <ref role="2Gs0qQ" node="2AkoYuY2upJ" resolve="l" />
                       </node>
@@ -431,7 +445,7 @@
                               <ref role="3cqZAo" node="2AkoYuY2XoF" resolve="it" />
                             </node>
                             <node concept="liA8E" id="2AkoYuY2YdA" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                               <node concept="Xl_RD" id="2AkoYuY2Ygz" role="37wK5m">
                                 <property role="Xl_RC" value="Assert: aParam != 0" />
                               </node>
@@ -458,7 +472,7 @@
                     <ref role="3cqZAo" node="2AkoYuY2omw" resolve="e" />
                   </node>
                   <node concept="liA8E" id="2AkoYuY2ppC" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>

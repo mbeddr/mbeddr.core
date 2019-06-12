@@ -24,6 +24,7 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.rt.analyzer.model)" />
     <import index="qh45" ref="r:f908bdad-115d-4765-b796-2646eba0b9ab(com.mbeddr.analyses.utils.make)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -31,6 +32,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -146,6 +148,12 @@
               <node concept="NRdvd" id="5yxSA$IRWVP" role="2Oq$k0">
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
                 <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
+                <node concept="2OqwBi" id="1ieRNjmuZHt" role="37wK5m">
+                  <node concept="1jxXqW" id="1ieRNjmuZa5" role="2Oq$k0" />
+                  <node concept="liA8E" id="1ieRNjmv1wT" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="37vLTw" id="1TY2kgDXU3r" role="37wK5m">
                   <ref role="3cqZAo" node="1TY2kgDXU3p" resolve="m" />
                 </node>
@@ -164,7 +172,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5yxSA$IRFu5" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="5yxSA$IRFu6" role="37wK5m">
                 <node concept="Xl_RD" id="5yxSA$IRFu7" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />
@@ -202,7 +210,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5yxSA$IRFug" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="5yxSA$IRFuh" role="37wK5m">
                 <property role="Xl_RC" value="max search depth too small" />
               </node>
@@ -245,6 +253,12 @@
               <node concept="NRdvd" id="5yxSA$ISzUR" role="2Oq$k0">
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
                 <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
+                <node concept="2OqwBi" id="1ieRNjmv2fN" role="37wK5m">
+                  <node concept="1jxXqW" id="1ieRNjmv2fO" role="2Oq$k0" />
+                  <node concept="liA8E" id="1ieRNjmv2fP" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="37vLTw" id="1frDWv8azVT" role="37wK5m">
                   <ref role="3cqZAo" node="1frDWv8azVR" resolve="m" />
                 </node>
@@ -263,7 +277,7 @@
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="5yxSA$ISzUX" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="5yxSA$ISzUY" role="37wK5m">
                 <node concept="Xl_RD" id="5yxSA$ISzUZ" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />

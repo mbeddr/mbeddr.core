@@ -20,6 +20,7 @@
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -104,12 +105,15 @@
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="2U3GXggUhnO" role="M5hS2">
       <property role="1uS6qo" value="activate" />
+      <property role="1uS6qv" value="activate" />
     </node>
     <node concept="M4N5e" id="2U3GXggUhnP" role="M5hS2">
       <property role="1uS6qo" value="deactivate" />
+      <property role="1uS6qv" value="deactivate" />
     </node>
     <node concept="M4N5e" id="2U3GXggUhnS" role="M5hS2">
       <property role="1uS6qo" value="unchanged" />
+      <property role="1uS6qv" value="unchanged" />
     </node>
   </node>
   <node concept="1TIwiD" id="7iLD7IPG5qn">

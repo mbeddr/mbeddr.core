@@ -128,6 +128,12 @@
       <property role="TrG5h" value="checkConsistency" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
+      <node concept="37vLTG" id="3$vwvl9ViDb" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="3$vwvl9ViXm" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="1X8myJOLmZc" role="3clF46">
         <property role="TrG5h" value="solution" />
         <property role="3TUv4t" value="false" />
@@ -168,7 +174,7 @@
                       <ref role="3cqZAo" node="1X8myJOLmZc" resolve="solution" />
                     </node>
                     <node concept="liA8E" id="4XJOimFNXBY" role="2OqNvi">
-                      <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                      <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="1X8myJOLnl9" role="2LFqv$">
@@ -197,6 +203,9 @@
                             </node>
                             <node concept="liA8E" id="4XJOimFN8zk" role="2OqNvi">
                               <ref role="37wK5l" to="ky9n:1X8myJOUIph" resolve="checkConsistency" />
+                              <node concept="37vLTw" id="3$vwvl9VjyH" role="37wK5m">
+                                <ref role="3cqZAo" node="3$vwvl9ViDb" resolve="repo" />
+                              </node>
                               <node concept="2GrUjf" id="4XJOimFN8zl" role="37wK5m">
                                 <ref role="2Gs0qQ" node="1X8myJOLnl5" resolve="m" />
                               </node>
@@ -230,6 +239,9 @@
                             </node>
                             <node concept="liA8E" id="1X8myJOLdqC" role="2OqNvi">
                               <ref role="37wK5l" to="ky9n:2hSqXWTF6yB" resolve="checkConsistency" />
+                              <node concept="37vLTw" id="3$vwvl9Vngf" role="37wK5m">
+                                <ref role="3cqZAo" node="3$vwvl9ViDb" resolve="repo" />
+                              </node>
                               <node concept="2GrUjf" id="1X8myJOLpWX" role="37wK5m">
                                 <ref role="2Gs0qQ" node="1X8myJOLnl5" resolve="m" />
                               </node>

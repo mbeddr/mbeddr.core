@@ -169,11 +169,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="79i$vAY5PCW" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="3Wi_6mk9ATr" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="3Wi_6mk9B08" role="37wK5m">
                 <property role="Xl_RC" value="NodesTestCase" />
               </node>
@@ -259,11 +259,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="79i$vAY5PD0" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="2pogikRzXX0" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="2pogikRzXX1" role="37wK5m">
                 <property role="Xl_RC" value="NodesTestCase" />
               </node>

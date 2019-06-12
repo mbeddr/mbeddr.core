@@ -136,45 +136,6 @@
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
     </language>
   </registry>
-  <node concept="2S6QgY" id="2h3YlM502AZ">
-    <property role="3GE5qa" value="verification_condition" />
-    <property role="TrG5h" value="toggleDisabled" />
-    <ref role="2ZfgGC" to="q5q6:6$qhYL9Fk4m" resolve="VerificationConditionBase_old" />
-    <node concept="2S6ZIM" id="2h3YlM502B0" role="2ZfVej">
-      <node concept="3clFbS" id="2h3YlM502B1" role="2VODD2">
-        <node concept="3clFbF" id="2h3YlM505e4" role="3cqZAp">
-          <node concept="Xl_RD" id="2h3YlM505e5" role="3clFbG">
-            <property role="Xl_RC" value="Toggles Disabled" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="2h3YlM502B2" role="2ZfgGD">
-      <node concept="3clFbS" id="2h3YlM502B3" role="2VODD2">
-        <node concept="3clFbF" id="2h3YlM505e6" role="3cqZAp">
-          <node concept="37vLTI" id="2h3YlM505eR" role="3clFbG">
-            <node concept="3fqX7Q" id="2h3YlM505eU" role="37vLTx">
-              <node concept="2OqwBi" id="2h3YlM505fi" role="3fr31v">
-                <node concept="2Sf5sV" id="2h3YlM505eX" role="2Oq$k0" />
-                <node concept="3TrcHB" id="2h3YlM505fn" role="2OqNvi">
-                  <ref role="3TsBF5" to="q5q6:7erX1gT1KjQ" resolve="disabled_old" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="2h3YlM505es" role="37vLTJ">
-              <node concept="2Sf5sV" id="2h3YlM505e7" role="2Oq$k0" />
-              <node concept="3TrcHB" id="2h3YlM505ex" role="2OqNvi">
-                <ref role="3TsBF5" to="q5q6:7erX1gT1KjQ" resolve="disabled_old" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1SWQZ3" id="1rEu0HvneDr" role="lGtFl">
-      <property role="1SWRpm" value="ANALYSIS" />
-    </node>
-  </node>
   <node concept="2S6QgY" id="2h3YlM50CDk">
     <property role="3GE5qa" value="harness" />
     <property role="TrG5h" value="toggleGuard" />

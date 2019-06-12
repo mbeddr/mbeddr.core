@@ -165,6 +165,7 @@
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
@@ -172,7 +173,7 @@
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348174" name="jetbrains.mps.lang.access.structure.ExecuteCommandInEDTStatement" flags="nn" index="1QHqEF" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
-        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="1423104411234567454" name="repo" index="ukAjN" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
     </language>
@@ -544,7 +545,7 @@
                 </node>
                 <node concept="3clFbF" id="6hXQBIqV$UR" role="3cqZAp">
                   <node concept="1rXfSq" id="6hXQBIqV$UP" role="3clFbG">
-                    <ref role="37wK5l" to="dxuu:~SwingWorker.publish(java.lang.Object...):void" resolve="publish" />
+                    <ref role="37wK5l" to="dxuu:~SwingWorker.publish(java.lang.Object...)" resolve="publish" />
                     <node concept="37vLTw" id="6hXQBIqV_eM" role="37wK5m">
                       <ref role="3cqZAo" node="6hXQBIqVz8o" resolve="r" />
                     </node>
@@ -752,7 +753,7 @@
                                     <node concept="2yIwOk" id="5uusKVkJjPf" role="2OqNvi" />
                                   </node>
                                   <node concept="liA8E" id="5uusKVkJkke" role="2OqNvi">
-                                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                                   </node>
                                 </node>
                                 <node concept="3cpWs3" id="5uusKVkJhCP" role="3uHU7B">
@@ -785,6 +786,9 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9L2zv" role="ukAjM">
+                <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
               </node>
             </node>
             <node concept="3clFbH" id="5etR5IKiPjL" role="3cqZAp" />
@@ -830,7 +834,7 @@
             <node concept="3clFbJ" id="5etR5IKiQdL" role="3cqZAp">
               <node concept="3clFbS" id="5etR5IKiQdN" role="3clFbx">
                 <node concept="1QHqEF" id="5etR5IKoQOm" role="3cqZAp">
-                  <node concept="37vLTw" id="5KHBa6kYrt5" role="ukAjM">
+                  <node concept="37vLTw" id="5KHBa6kYrt5" role="ukAjN">
                     <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
                   </node>
                   <node concept="1QHqEC" id="5etR5IKoQOo" role="1QHqEI">
@@ -921,7 +925,7 @@
                     <ref role="3cqZAo" node="mb65_hzT9e" resolve="e" />
                   </node>
                   <node concept="liA8E" id="mb65_hzXAf" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -1028,6 +1032,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="3$vwvl9L3HX" role="ukAjM">
+            <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
           </node>
         </node>
         <node concept="3cpWs6" id="3x0R1LJ5Cqi" role="3cqZAp">

@@ -21,6 +21,7 @@
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)" />
     <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.rt.analyzer.model)" />
     <import index="3o3s" ref="r:c8f6abe2-4235-462a-965b-fe6307bc1863(com.mbeddr.analyses.spin.behavior)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -154,6 +155,7 @@
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
@@ -229,6 +231,12 @@
       <node concept="NWlO9" id="5yxSA$IRH$V" role="lGtFl">
         <property role="NWlVz" value="Check and return a lifted result." />
       </node>
+      <node concept="37vLTG" id="1ieRNjmuHLC" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuI1S" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="6BM8NjXd_zo" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="6BM8NjXd_zp" role="1tU5fm">
@@ -285,7 +293,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="4QGaVz5sUXj" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="4QGaVz5sUXk" role="37wK5m">
                                   <ref role="3cqZAo" node="6BM8NjXd_zq" resolve="spinModuleName" />
                                 </node>
@@ -306,6 +314,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="1ieRNjmuIny" role="ukAjM">
+            <ref role="3cqZAo" node="1ieRNjmuHLC" resolve="repo" />
           </node>
         </node>
         <node concept="3cpWs8" id="3lXW7OZ6VXk" role="3cqZAp">
@@ -346,6 +357,9 @@
               <node concept="37vLTw" id="5yxSA$IRGlo" role="37wK5m">
                 <ref role="3cqZAo" node="3lXW7OZ6VXn" resolve="aa" />
               </node>
+              <node concept="37vLTw" id="1ieRNjmFLvo" role="37wK5m">
+                <ref role="3cqZAo" node="1ieRNjmuHLC" resolve="repo" />
+              </node>
             </node>
             <node concept="1uHKPH" id="63QgsF$O_Ke" role="2OqNvi" />
           </node>
@@ -359,6 +373,12 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="1ieRNjmuRg3" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuRrH" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="_jsMICrMge" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="_jsMICrMgf" role="1tU5fm">
@@ -374,6 +394,9 @@
           <node concept="2OqwBi" id="_jsMICrOai" role="3clFbG">
             <node concept="1rXfSq" id="_jsMICrNP3" role="2Oq$k0">
               <ref role="37wK5l" node="4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="37vLTw" id="1ieRNjmuRHF" role="37wK5m">
+                <ref role="3cqZAo" node="1ieRNjmuRg3" resolve="repo" />
+              </node>
               <node concept="37vLTw" id="_jsMICrNYR" role="37wK5m">
                 <ref role="3cqZAo" node="_jsMICrMge" resolve="model" />
               </node>
@@ -407,6 +430,12 @@
       <node concept="_YKpA" id="63QgsF$OB6R" role="3clF45">
         <node concept="3uibUv" id="63QgsF$OB6S" role="_ZDj9">
           <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1ieRNjmuXPa" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuXWQ" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="5yxSA$IRHT3" role="3clF46">
@@ -472,7 +501,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="5yxSA$IRT3h" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="5yxSA$IRT3i" role="37wK5m">
                                   <ref role="3cqZAo" node="5yxSA$IRHT5" resolve="spinModuleName" />
                                 </node>
@@ -515,12 +544,18 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="1ieRNjmuY98" role="ukAjM">
+            <ref role="3cqZAo" node="1ieRNjmuXPa" resolve="repo" />
+          </node>
         </node>
         <node concept="3clFbF" id="5yxSA$IRUpT" role="3cqZAp">
           <node concept="1rXfSq" id="5yxSA$IRUpR" role="3clFbG">
             <ref role="37wK5l" node="5yxSA$IRGjq" resolve="doCheck" />
             <node concept="37vLTw" id="5yxSA$IRUx8" role="37wK5m">
               <ref role="3cqZAo" node="5yxSA$IRT34" resolve="sba" />
+            </node>
+            <node concept="37vLTw" id="1ieRNjmFLeV" role="37wK5m">
+              <ref role="3cqZAo" node="1ieRNjmuXPa" resolve="repo" />
             </node>
           </node>
         </node>
@@ -545,6 +580,12 @@
           <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
         </node>
       </node>
+      <node concept="37vLTG" id="1ieRNjmFK51" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmFKv_" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3clFbS" id="5yxSA$IRGiH" role="3clF47">
         <node concept="3cpWs8" id="4l47ydyeJ8h" role="3cqZAp">
           <node concept="3cpWsn" id="4l47ydyeJ8i" role="3cpWs9">
@@ -562,7 +603,9 @@
                   <ref role="37wK5l" to="d8ej:HmUOIGAXzl" resolve="newInstance" />
                   <ref role="1Pybhc" to="d8ej:HmUOIGARns" resolve="EmptyToolAdapter" />
                 </node>
-                <node concept="10Nm6u" id="4l47ydyeJ8n" role="37wK5m" />
+                <node concept="37vLTw" id="1ieRNjmFKNu" role="37wK5m">
+                  <ref role="3cqZAo" node="1ieRNjmFK51" resolve="repo" />
+                </node>
               </node>
             </node>
           </node>
@@ -613,7 +656,7 @@
                   <ref role="3cqZAo" node="5yxSA$IRGiJ" resolve="analyzer" />
                 </node>
                 <node concept="liA8E" id="5yxSA$IRGj1" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~SwingWorker.execute():void" resolve="execute" />
+                  <ref role="37wK5l" to="dxuu:~SwingWorker.execute()" resolve="execute" />
                 </node>
               </node>
             </node>
@@ -624,7 +667,7 @@
                     <ref role="3cqZAo" node="5yxSA$IRGiJ" resolve="analyzer" />
                   </node>
                   <node concept="liA8E" id="5yxSA$IRGj6" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
+                    <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit)" resolve="get" />
                     <node concept="3cmrfG" id="5yxSA$IRGj7" role="37wK5m">
                       <property role="3cmrfH" value="60" />
                     </node>
@@ -648,7 +691,7 @@
                     <ref role="3cqZAo" node="5yxSA$IRGjg" resolve="e" />
                   </node>
                   <node concept="liA8E" id="5yxSA$IRGjf" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -702,7 +745,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="63QgsF$OKWY" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="37vLTw" id="63QgsF$OKWZ" role="37wK5m">
                             <ref role="3cqZAo" node="63QgsF$OC9d" resolve="msg" />
                           </node>
@@ -728,7 +771,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="63QgsF$OT19" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="Xl_RD" id="63QgsF$OTdh" role="37wK5m">
                     <property role="Xl_RC" value="&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;" />
                   </node>
@@ -742,7 +785,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="63QgsF$OLHX" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="63QgsF$OM_0" role="37wK5m">
                     <node concept="Xl_RD" id="63QgsF$OMUJ" role="3uHU7w">
                       <property role="Xl_RC" value="' available results are:" />
@@ -774,7 +817,7 @@
                             <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                           </node>
                           <node concept="liA8E" id="63QgsF$OQc9" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="3cpWs3" id="63QgsF$OQF9" role="37wK5m">
                               <node concept="2OqwBi" id="63QgsF$ORCn" role="3uHU7w">
                                 <node concept="37vLTw" id="63QgsF$ORol" role="2Oq$k0">
@@ -807,7 +850,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="63QgsF$OSeh" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="Xl_RD" id="63QgsF$OSpZ" role="37wK5m">
                     <property role="Xl_RC" value="&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;" />
                   </node>

@@ -12,7 +12,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -1645,7 +1645,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1UQ4qqkvab9" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="1UQ4qqkvaeA" role="37wK5m">
                 <property role="Xl_RC" value="5" />
               </node>
@@ -1799,7 +1799,7 @@
               <ref role="3cqZAo" node="7xjZ2Jfx4Qp" resolve="outerSize" />
             </node>
             <node concept="liA8E" id="7xjZ2Jfx24W" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="7xjZ2Jfx24X" role="37wK5m">
                 <property role="Xl_RC" value="5" />
               </node>
@@ -1939,7 +1939,7 @@
               <ref role="3cqZAo" node="7xjZ2Jfx4QS" resolve="innerSize" />
             </node>
             <node concept="liA8E" id="7xjZ2Jfx3uB" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="7xjZ2Jfx3uC" role="37wK5m">
                 <property role="Xl_RC" value="2" />
               </node>

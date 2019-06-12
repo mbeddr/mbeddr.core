@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="f8f68d92-c6d2-44b3-8d63-c00ade75ec86" name="com.mbeddr.doc.latex" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
@@ -223,9 +223,9 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1004,7 +1004,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="5yxqZJwzYWh" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+                          <ref role="37wK5l" to="mhbf:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode)" resolve="addChild" />
                           <node concept="Xl_RD" id="5yxqZJwzYWi" role="37wK5m">
                             <property role="Xl_RC" value="documentexport" />
                           </node>
@@ -1342,7 +1342,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="yrKNEnAlgP" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                              <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
                             </node>
                           </node>
                         </node>
@@ -3498,7 +3498,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="5kTg4zghvtX" role="2OqNvi">
-                        <ref role="37wK5l" to="lui2:~SModuleReference.getModuleName():java.lang.String" resolve="getModuleName" />
+                        <ref role="37wK5l" to="lui2:~SModuleReference.getModuleName()" resolve="getModuleName" />
                       </node>
                     </node>
                   </node>
@@ -3625,11 +3625,11 @@
                           <property role="3rM5sR" value="f44f6b9a-bf30-4f73-866e-fac17c177409" />
                         </node>
                         <node concept="liA8E" id="3mn43GOEuMc" role="2OqNvi">
-                          <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
+                          <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir()" resolve="getModuleSourceDir" />
                         </node>
                       </node>
                       <node concept="liA8E" id="3mn43GOEuMd" role="2OqNvi">
-                        <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
+                        <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="3mn43GOEuMe" role="37wK5m">
@@ -3644,9 +3644,9 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="3mn43GORoBb" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="3mn43GOExVG" role="34bqiv">
+        <node concept="2xdQw9" id="2Fugwv5QHT5" role="3cqZAp">
+          <property role="2xdLsb" value="info" />
+          <node concept="3cpWs3" id="3mn43GOExVG" role="9lYJi">
             <node concept="37vLTw" id="3mn43GOExX6" role="3uHU7w">
               <ref role="3cqZAo" node="3mn43GOEuM4" resolve="defaultPrologFile" />
             </node>
@@ -3702,7 +3702,7 @@
                               <ref role="3cqZAo" node="3mn43GOEuM4" resolve="defaultPrologFile" />
                             </node>
                             <node concept="liA8E" id="3mn43GOExo6" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                              <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="3mn43GOD2mm" role="37vLTJ">
@@ -3730,7 +3730,7 @@
               <ref role="3cqZAo" node="3mn43GOEuM4" resolve="defaultPrologFile" />
             </node>
             <node concept="liA8E" id="3mn43GOEvWx" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
             </node>
           </node>
         </node>

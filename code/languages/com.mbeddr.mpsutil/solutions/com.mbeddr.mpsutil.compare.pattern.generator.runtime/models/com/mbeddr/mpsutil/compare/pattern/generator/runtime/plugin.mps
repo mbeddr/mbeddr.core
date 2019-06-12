@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
@@ -209,7 +209,7 @@
               <ref role="3cqZAo" node="7P2BN5H6NH5" resolve="_context" />
             </node>
             <node concept="liA8E" id="235WQ3Sf$fs" role="2OqNvi">
-              <ref role="37wK5l" to="q1l7:~TemplateQueryContext.putStepObject(java.lang.Object,java.lang.Object):java.lang.Object" resolve="putStepObject" />
+              <ref role="37wK5l" to="q1l7:~TemplateQueryContext.putStepObject(java.lang.Object,java.lang.Object)" resolve="putStepObject" />
               <node concept="1Ls8ON" id="235WQ3Sf$ia" role="37wK5m">
                 <node concept="37vLTw" id="235WQ3Sf$oA" role="1Lso8e">
                   <ref role="3cqZAo" node="5dYb5krQecE" resolve="MATCH_RESULT" />
@@ -222,7 +222,7 @@
                     <ref role="3cqZAo" node="7P2BN5H6NH5" resolve="_context" />
                   </node>
                   <node concept="liA8E" id="235WQ3Sf$EE" role="2OqNvi">
-                    <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getInputNode():org.jetbrains.mps.openapi.model.SNode" resolve="getInputNode" />
+                    <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getInputNode()" resolve="getInputNode" />
                   </node>
                 </node>
               </node>
@@ -265,7 +265,7 @@
                   <ref role="3cqZAo" node="7P2BN5H74gJ" resolve="_context" />
                 </node>
                 <node concept="liA8E" id="235WQ3Sf_os" role="2OqNvi">
-                  <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getStepObject(java.lang.Object):java.lang.Object" resolve="getStepObject" />
+                  <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getStepObject(java.lang.Object)" resolve="getStepObject" />
                   <node concept="1Ls8ON" id="235WQ3Sf_ot" role="37wK5m">
                     <node concept="37vLTw" id="235WQ3Sf_ou" role="1Lso8e">
                       <ref role="3cqZAo" node="5dYb5krQecE" resolve="MATCH_RESULT" />
@@ -278,7 +278,7 @@
                         <ref role="3cqZAo" node="7P2BN5H74gJ" resolve="_context" />
                       </node>
                       <node concept="liA8E" id="235WQ3Sf_ox" role="2OqNvi">
-                        <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getInputNode():org.jetbrains.mps.openapi.model.SNode" resolve="getInputNode" />
+                        <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getInputNode()" resolve="getInputNode" />
                       </node>
                     </node>
                   </node>

@@ -203,7 +203,7 @@
     <node concept="1TJgyj" id="41uzL3ENZML" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="atomicContract" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="4638301969059937457" />
       <ref role="20lvS9" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>

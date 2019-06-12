@@ -226,7 +226,7 @@
             </node>
           </node>
           <node concept="liA8E" id="4gj0Jzqy3n" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~Thread.start():void" resolve="start" />
+            <ref role="37wK5l" to="wyt6:~Thread.start()" resolve="start" />
           </node>
         </node>
       </node>

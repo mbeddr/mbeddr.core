@@ -324,7 +324,7 @@
           </node>
           <node concept="2YIFZM" id="7Ssz$kYq8ho" role="33vP2m">
             <ref role="1Pybhc" to="3o3z:~LinkedHashMultimap" resolve="LinkedHashMultimap" />
-            <ref role="37wK5l" to="3o3z:~LinkedHashMultimap.create():com.google.common.collect.LinkedHashMultimap" resolve="create" />
+            <ref role="37wK5l" to="3o3z:~LinkedHashMultimap.create()" resolve="create" />
             <node concept="3uibUv" id="7Ssz$kYr$vb" role="3PaCim">
               <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
             </node>
@@ -377,7 +377,7 @@
                       <ref role="3cqZAo" node="7Ssz$kYq6zl" resolve="indices" />
                     </node>
                     <node concept="liA8E" id="7Ssz$kYqhhr" role="2OqNvi">
-                      <ref role="37wK5l" to="3o3z:~Multimap.put(java.lang.Object,java.lang.Object):boolean" resolve="put" />
+                      <ref role="37wK5l" to="3o3z:~Multimap.put(java.lang.Object,java.lang.Object)" resolve="put" />
                       <node concept="37vLTw" id="7Ssz$kYqhoP" role="37wK5m">
                         <ref role="3cqZAo" node="7Ssz$kYm9s5" resolve="argumentIndex" />
                       </node>
@@ -406,13 +406,13 @@
               <node concept="2OqwBi" id="7Ssz$kYqIeb" role="33vP2m">
                 <node concept="2YIFZM" id="7Ssz$kYr_em" role="2Oq$k0">
                   <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-                  <ref role="37wK5l" to="33ny:~Collections.max(java.util.Collection,java.util.Comparator):java.lang.Object" resolve="max" />
+                  <ref role="37wK5l" to="33ny:~Collections.max(java.util.Collection,java.util.Comparator)" resolve="max" />
                   <node concept="2OqwBi" id="7Ssz$kYr_en" role="37wK5m">
                     <node concept="37vLTw" id="7Ssz$kYr_eo" role="2Oq$k0">
                       <ref role="3cqZAo" node="7Ssz$kYq6zl" resolve="indices" />
                     </node>
                     <node concept="liA8E" id="7Ssz$kYr_ep" role="2OqNvi">
-                      <ref role="37wK5l" to="3o3z:~Multimap.values():java.util.Collection" resolve="values" />
+                      <ref role="37wK5l" to="3o3z:~Multimap.values()" resolve="values" />
                     </node>
                   </node>
                   <node concept="1bVj0M" id="7Ssz$kYr_eq" role="37wK5m">
@@ -421,7 +421,7 @@
                         <node concept="2OqwBi" id="2F_EZZyyDlQ" role="3clFbG">
                           <node concept="2YIFZM" id="2F_EZZyyBEe" role="2Oq$k0">
                             <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                            <ref role="37wK5l" to="wyt6:~Integer.valueOf(int):java.lang.Integer" resolve="valueOf" />
+                            <ref role="37wK5l" to="wyt6:~Integer.valueOf(int)" resolve="valueOf" />
                             <node concept="2OqwBi" id="2F_EZZyyBEf" role="37wK5m">
                               <node concept="37vLTw" id="2F_EZZyyBEg" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7Ssz$kYr_e$" resolve="a" />
@@ -432,7 +432,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="2F_EZZyyEbG" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Integer.compareTo(java.lang.Integer):int" resolve="compareTo" />
+                            <ref role="37wK5l" to="wyt6:~Integer.compareTo(java.lang.Integer)" resolve="compareTo" />
                             <node concept="2OqwBi" id="2F_EZZyyBEi" role="37wK5m">
                               <node concept="37vLTw" id="2F_EZZyyBEj" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7Ssz$kYr_eA" resolve="b" />
@@ -496,7 +496,7 @@
                       <ref role="3cqZAo" node="7Ssz$kYq6zl" resolve="indices" />
                     </node>
                     <node concept="liA8E" id="7Ssz$kYqMWY" role="2OqNvi">
-                      <ref role="37wK5l" to="3o3z:~Multimap.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                      <ref role="37wK5l" to="3o3z:~Multimap.containsKey(java.lang.Object)" resolve="containsKey" />
                       <node concept="37vLTw" id="7Ssz$kYqN0c" role="37wK5m">
                         <ref role="3cqZAo" node="7Ssz$kYmf_Y" resolve="i" />
                       </node>
@@ -519,7 +519,7 @@
                             <ref role="3cqZAo" node="7Ssz$kYq6zl" resolve="indices" />
                           </node>
                           <node concept="liA8E" id="7Ssz$kYs6PL" role="2OqNvi">
-                            <ref role="37wK5l" to="3o3z:~Multimap.get(java.lang.Object):java.util.Collection" resolve="get" />
+                            <ref role="37wK5l" to="3o3z:~Multimap.get(java.lang.Object)" resolve="get" />
                             <node concept="37vLTw" id="7Ssz$kYs6PM" role="37wK5m">
                               <ref role="3cqZAo" node="7Ssz$kYmf_Y" resolve="i" />
                             </node>
@@ -562,7 +562,7 @@
                             <ref role="3cqZAo" node="7Ssz$kYs6PI" resolve="entry" />
                           </node>
                           <node concept="liA8E" id="7Ssz$kYqQ6d" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~Collection.size():int" resolve="size" />
+                            <ref role="37wK5l" to="33ny:~Collection.size()" resolve="size" />
                           </node>
                         </node>
                       </node>
@@ -797,7 +797,7 @@
               <node concept="2OqwBi" id="7Ssz$kYQi5w" role="33vP2m">
                 <node concept="2QUAEa" id="7Ssz$kYQi5x" role="2Oq$k0" />
                 <node concept="liA8E" id="7Ssz$kYQi5y" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeChecker.getTypeOf(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf" />
+                  <ref role="37wK5l" to="u78q:~TypeChecker.getTypeOf(org.jetbrains.mps.openapi.model.SNode)" resolve="getTypeOf" />
                   <node concept="1y4W85" id="7Ssz$kYQi5z" role="37wK5m">
                     <node concept="37vLTw" id="7Ssz$kYQi5$" role="1y58nS">
                       <ref role="3cqZAo" node="7Ssz$kYvQtE" resolve="i" />

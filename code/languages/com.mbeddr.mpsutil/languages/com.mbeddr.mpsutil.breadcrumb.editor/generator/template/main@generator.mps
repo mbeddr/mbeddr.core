@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -314,7 +314,7 @@
                     <ref role="3cqZAo" node="3JErwPFIF8V" resolve="editorContext" />
                   </node>
                   <node concept="liA8E" id="1DVF61P8qvO" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                   </node>
                 </node>
               </node>
@@ -322,7 +322,7 @@
                 <node concept="22lmx$" id="2RawscbPHzP" role="3uHU7B">
                   <node concept="22lmx$" id="3JErwPFIF3V" role="3uHU7B">
                     <node concept="2YIFZM" id="3JErwPFIF40" role="3uHU7B">
-                      <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+                      <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
                       <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
                       <node concept="2OqwBi" id="3JErwPFIF41" role="37wK5m">
                         <node concept="37vLTw" id="3JErwPFIF42" role="2Oq$k0">
@@ -332,7 +332,7 @@
                       </node>
                     </node>
                     <node concept="2YIFZM" id="3JErwPFIF3W" role="3uHU7w">
-                      <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
+                      <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isTestModel" />
                       <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
                       <node concept="2OqwBi" id="3JErwPFIF3X" role="37wK5m">
                         <node concept="37vLTw" id="3JErwPFIF3Y" role="2Oq$k0">
@@ -343,12 +343,12 @@
                     </node>
                   </node>
                   <node concept="2YIFZM" id="2RawscbQDb6" role="3uHU7w">
-                    <ref role="37wK5l" to="fyhk:~RuntimeFlags.isMergeDriverMode():boolean" resolve="isMergeDriverMode" />
+                    <ref role="37wK5l" to="fyhk:~RuntimeFlags.isMergeDriverMode()" resolve="isMergeDriverMode" />
                     <ref role="1Pybhc" to="fyhk:~RuntimeFlags" resolve="RuntimeFlags" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="263VI$g7S4W" role="3uHU7w">
-                  <ref role="37wK5l" to="fyhk:~RuntimeFlags.isTestMode():boolean" resolve="isTestMode" />
+                  <ref role="37wK5l" to="fyhk:~RuntimeFlags.isTestMode()" resolve="isTestMode" />
                   <ref role="1Pybhc" to="fyhk:~RuntimeFlags" resolve="RuntimeFlags" />
                 </node>
               </node>
@@ -360,7 +360,7 @@
                     <ref role="3cqZAo" node="3JErwPFIF3B" resolve="wrapped" />
                   </node>
                   <node concept="liA8E" id="5wABxA4h2Ld" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.setBig(boolean):void" resolve="setBig" />
+                    <ref role="37wK5l" to="f4zo:~EditorCell.setBig(boolean)" resolve="setBig" />
                     <node concept="3clFbT" id="5wABxA4h2LX" role="37wK5m">
                       <property role="3clFbU" value="true" />
                     </node>
@@ -388,7 +388,7 @@
                     <ref role="3cqZAo" node="3JErwPFIF8V" resolve="editorContext" />
                   </node>
                   <node concept="liA8E" id="3JErwPFIF4b" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                   </node>
                 </node>
                 <node concept="3uibUv" id="3JErwPFIF4c" role="10QFUM">
@@ -617,7 +617,7 @@
                   <ref role="3cqZAo" node="3JErwPFIF46" resolve="editorComponent" />
                 </node>
                 <node concept="liA8E" id="3JErwPFIF5G" role="2OqNvi">
-                  <ref role="37wK5l" to="exr9:~EditorComponent.getViewport():javax.swing.JViewport" resolve="getViewport" />
+                  <ref role="37wK5l" to="exr9:~EditorComponent.getViewport()" resolve="getViewport" />
                 </node>
               </node>
             </node>
@@ -671,7 +671,7 @@
                                     <ref role="3cqZAo" node="3JErwPFIF46" resolve="editorComponent" />
                                   </node>
                                   <node concept="liA8E" id="3JErwPFIF66" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                                    <ref role="37wK5l" to="wyt6:~Object.hashCode()" resolve="hashCode" />
                                   </node>
                                 </node>
                               </node>
@@ -709,7 +709,7 @@
                                       <ref role="3cqZAo" node="3JErwPFIF5C" resolve="viewport" />
                                     </node>
                                     <node concept="liA8E" id="3JErwPFIF6m" role="2OqNvi">
-                                      <ref role="37wK5l" to="dxuu:~JViewport.removeChangeListener(javax.swing.event.ChangeListener):void" resolve="removeChangeListener" />
+                                      <ref role="37wK5l" to="dxuu:~JViewport.removeChangeListener(javax.swing.event.ChangeListener)" resolve="removeChangeListener" />
                                       <node concept="37vLTw" id="3JErwPFIF6n" role="37wK5m">
                                         <ref role="3cqZAo" node="3JErwPFIF6c" resolve="listener" />
                                       </node>
@@ -723,11 +723,11 @@
                                         <ref role="3cqZAo" node="3JErwPFIF46" resolve="editorComponent" />
                                       </node>
                                       <node concept="liA8E" id="3JErwPFIF6s" role="2OqNvi">
-                                        <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                                        <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="3JErwPFIF6t" role="2OqNvi">
-                                      <ref role="37wK5l" to="lwvz:~SelectionManager.removeSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener):void" resolve="removeSelectionListener" />
+                                      <ref role="37wK5l" to="lwvz:~SelectionManager.removeSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener)" resolve="removeSelectionListener" />
                                       <node concept="37vLTw" id="3JErwPFIF6u" role="37wK5m">
                                         <ref role="3cqZAo" node="3JErwPFIF6c" resolve="listener" />
                                       </node>
@@ -786,7 +786,7 @@
                                       <ref role="3cqZAo" node="3JErwPFIF5C" resolve="viewport" />
                                     </node>
                                     <node concept="liA8E" id="3JErwPFIF6R" role="2OqNvi">
-                                      <ref role="37wK5l" to="dxuu:~JViewport.removeChangeListener(javax.swing.event.ChangeListener):void" resolve="removeChangeListener" />
+                                      <ref role="37wK5l" to="dxuu:~JViewport.removeChangeListener(javax.swing.event.ChangeListener)" resolve="removeChangeListener" />
                                       <node concept="37vLTw" id="3JErwPFIF6S" role="37wK5m">
                                         <ref role="3cqZAo" node="3JErwPFIF6H" resolve="listener" />
                                       </node>
@@ -800,11 +800,11 @@
                                         <ref role="3cqZAo" node="3JErwPFIF46" resolve="editorComponent" />
                                       </node>
                                       <node concept="liA8E" id="3JErwPFIF6X" role="2OqNvi">
-                                        <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                                        <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="3JErwPFIF6Y" role="2OqNvi">
-                                      <ref role="37wK5l" to="lwvz:~SelectionManager.removeSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener):void" resolve="removeSelectionListener" />
+                                      <ref role="37wK5l" to="lwvz:~SelectionManager.removeSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener)" resolve="removeSelectionListener" />
                                       <node concept="37vLTw" id="3JErwPFIF6Z" role="37wK5m">
                                         <ref role="3cqZAo" node="3JErwPFIF6H" resolve="listener" />
                                       </node>
@@ -837,7 +837,7 @@
                         </node>
                         <node concept="3clFbF" id="3JErwPFIF7a" role="3cqZAp">
                           <node concept="3nyPlj" id="3JErwPFIF7b" role="3clFbG">
-                            <ref role="37wK5l" to="g51k:~EditorCell_Collection.onRemove():void" resolve="onRemove" />
+                            <ref role="37wK5l" to="g51k:~EditorCell_Collection.onRemove()" resolve="onRemove" />
                           </node>
                         </node>
                       </node>
@@ -854,7 +854,7 @@
                       <node concept="3clFbS" id="3JErwPFIF7g" role="3clF47">
                         <node concept="3clFbF" id="3JErwPFIF7h" role="3cqZAp">
                           <node concept="3nyPlj" id="3JErwPFIF7i" role="3clFbG">
-                            <ref role="37wK5l" to="g51k:~EditorCell_Collection.onAdd():void" resolve="onAdd" />
+                            <ref role="37wK5l" to="g51k:~EditorCell_Collection.onAdd()" resolve="onAdd" />
                           </node>
                         </node>
                         <node concept="3clFbH" id="3JErwPFIF7j" role="3cqZAp" />
@@ -874,7 +874,7 @@
                                     <ref role="3cqZAo" node="3JErwPFIF46" resolve="editorComponent" />
                                   </node>
                                   <node concept="liA8E" id="3JErwPFIF7s" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                                    <ref role="37wK5l" to="wyt6:~Object.hashCode()" resolve="hashCode" />
                                   </node>
                                 </node>
                               </node>
@@ -914,7 +914,7 @@
                                           <ref role="3cqZAo" node="3JErwPFIF5C" resolve="viewport" />
                                         </node>
                                         <node concept="liA8E" id="3JErwPFIF7G" role="2OqNvi">
-                                          <ref role="37wK5l" to="dxuu:~JViewport.addChangeListener(javax.swing.event.ChangeListener):void" resolve="addChangeListener" />
+                                          <ref role="37wK5l" to="dxuu:~JViewport.addChangeListener(javax.swing.event.ChangeListener)" resolve="addChangeListener" />
                                           <node concept="37vLTw" id="3JErwPFIF7H" role="37wK5m">
                                             <ref role="3cqZAo" node="3JErwPFIF7y" resolve="listener" />
                                           </node>
@@ -928,11 +928,11 @@
                                             <ref role="3cqZAo" node="3JErwPFIF46" resolve="editorComponent" />
                                           </node>
                                           <node concept="liA8E" id="3JErwPFIF7M" role="2OqNvi">
-                                            <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                                            <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="3JErwPFIF7N" role="2OqNvi">
-                                          <ref role="37wK5l" to="lwvz:~SelectionManager.addSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener):void" resolve="addSelectionListener" />
+                                          <ref role="37wK5l" to="lwvz:~SelectionManager.addSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener)" resolve="addSelectionListener" />
                                           <node concept="37vLTw" id="3JErwPFIF7O" role="37wK5m">
                                             <ref role="3cqZAo" node="3JErwPFIF7y" resolve="listener" />
                                           </node>
@@ -963,7 +963,7 @@
                                             <ref role="3cqZAo" node="3JErwPFIF5C" resolve="viewport" />
                                           </node>
                                           <node concept="liA8E" id="5pyBnOIhC9m" role="2OqNvi">
-                                            <ref role="37wK5l" to="dxuu:~JViewport.getChangeListeners():javax.swing.event.ChangeListener[]" resolve="getChangeListeners" />
+                                            <ref role="37wK5l" to="dxuu:~JViewport.getChangeListeners()" resolve="getChangeListeners" />
                                           </node>
                                         </node>
                                         <node concept="39bAoz" id="5pyBnOIhC9n" role="2OqNvi" />
@@ -1028,7 +1028,7 @@
                                       <ref role="3cqZAo" node="3JErwPFIF5C" resolve="viewport" />
                                     </node>
                                     <node concept="liA8E" id="3JErwPFIF8k" role="2OqNvi">
-                                      <ref role="37wK5l" to="dxuu:~JViewport.addChangeListener(javax.swing.event.ChangeListener):void" resolve="addChangeListener" />
+                                      <ref role="37wK5l" to="dxuu:~JViewport.addChangeListener(javax.swing.event.ChangeListener)" resolve="addChangeListener" />
                                       <node concept="37vLTw" id="3JErwPFIF8l" role="37wK5m">
                                         <ref role="3cqZAo" node="3JErwPFIF8a" resolve="listener" />
                                       </node>
@@ -1042,11 +1042,11 @@
                                         <ref role="3cqZAo" node="3JErwPFIF46" resolve="editorComponent" />
                                       </node>
                                       <node concept="liA8E" id="3JErwPFIF8q" role="2OqNvi">
-                                        <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                                        <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="3JErwPFIF8r" role="2OqNvi">
-                                      <ref role="37wK5l" to="lwvz:~SelectionManager.addSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener):void" resolve="addSelectionListener" />
+                                      <ref role="37wK5l" to="lwvz:~SelectionManager.addSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener)" resolve="addSelectionListener" />
                                       <node concept="37vLTw" id="3JErwPFIF8s" role="37wK5m">
                                         <ref role="3cqZAo" node="3JErwPFIF8a" resolve="listener" />
                                       </node>
@@ -1108,7 +1108,7 @@
                 <ref role="3cqZAo" node="3JErwPFIF5J" resolve="result" />
               </node>
               <node concept="liA8E" id="3JErwPFIF8M" role="2OqNvi">
-                <ref role="37wK5l" to="f4zo:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="addEditorCell" />
+                <ref role="37wK5l" to="f4zo:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
                 <node concept="37vLTw" id="3JErwPFIF8N" role="37wK5m">
                   <ref role="3cqZAo" node="3JErwPFIF3B" resolve="wrapped" />
                 </node>
@@ -1121,7 +1121,7 @@
                 <ref role="3cqZAo" node="3JErwPFIF5J" resolve="result" />
               </node>
               <node concept="liA8E" id="3JErwPFIF8R" role="2OqNvi">
-                <ref role="37wK5l" to="f4zo:~EditorCell.setBig(boolean):void" resolve="setBig" />
+                <ref role="37wK5l" to="f4zo:~EditorCell.setBig(boolean)" resolve="setBig" />
                 <node concept="3clFbT" id="3JErwPFIF8S" role="37wK5m">
                   <property role="3clFbU" value="true" />
                 </node>

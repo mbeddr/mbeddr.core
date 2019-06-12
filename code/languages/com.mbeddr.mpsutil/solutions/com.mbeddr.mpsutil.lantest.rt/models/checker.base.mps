@@ -248,11 +248,11 @@
                               <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
                             </node>
                             <node concept="liA8E" id="7VeUlv8MlOX" role="2OqNvi">
-                              <ref role="37wK5l" to="lx42:~LoggingEvent.getMessage():java.lang.Object" resolve="getMessage" />
+                              <ref role="37wK5l" to="lx42:~LoggingEvent.getMessage()" resolve="getMessage" />
                             </node>
                           </node>
                           <node concept="liA8E" id="7VeUlv8MlOY" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>
@@ -265,7 +265,7 @@
                               <ref role="3cqZAo" node="7VeUlv8Mlq5" resolve="stackTrace" />
                             </node>
                             <node concept="2YIFZM" id="7VeUlv8MlP2" role="37vLTx">
-                              <ref role="37wK5l" to="fya2:~ExceptionUtils.getStackTrace(java.lang.Throwable):java.lang.String" resolve="getStackTrace" />
+                              <ref role="37wK5l" to="fya2:~ExceptionUtils.getStackTrace(java.lang.Throwable)" resolve="getStackTrace" />
                               <ref role="1Pybhc" to="fya2:~ExceptionUtils" resolve="ExceptionUtils" />
                               <node concept="2OqwBi" id="7VeUlv8MlP3" role="37wK5m">
                                 <node concept="2OqwBi" id="7VeUlv8MlP4" role="2Oq$k0">
@@ -273,11 +273,11 @@
                                     <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
                                   </node>
                                   <node concept="liA8E" id="7VeUlv8MlP6" role="2OqNvi">
-                                    <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation():org.apache.log4j.spi.ThrowableInformation" resolve="getThrowableInformation" />
+                                    <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation()" resolve="getThrowableInformation" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="7VeUlv8MlP7" role="2OqNvi">
-                                  <ref role="37wK5l" to="lx42:~ThrowableInformation.getThrowable():java.lang.Throwable" resolve="getThrowable" />
+                                  <ref role="37wK5l" to="lx42:~ThrowableInformation.getThrowable()" resolve="getThrowable" />
                                 </node>
                               </node>
                             </node>
@@ -291,7 +291,7 @@
                             <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
                           </node>
                           <node concept="liA8E" id="2k2sHrVGpmj" role="2OqNvi">
-                            <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation():org.apache.log4j.spi.ThrowableInformation" resolve="getThrowableInformation" />
+                            <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation()" resolve="getThrowableInformation" />
                           </node>
                         </node>
                       </node>
@@ -318,7 +318,7 @@
                           <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
                         </node>
                         <node concept="liA8E" id="7VeUlv92Rrg" role="2OqNvi">
-                          <ref role="37wK5l" to="lx42:~LoggingEvent.getLevel():org.apache.log4j.Level" resolve="getLevel" />
+                          <ref role="37wK5l" to="lx42:~LoggingEvent.getLevel()" resolve="getLevel" />
                         </node>
                       </node>
                       <node concept="10M0yZ" id="7VeUlv92SwU" role="3uHU7w">
@@ -333,7 +333,7 @@
                           <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
                         </node>
                         <node concept="liA8E" id="3mOqkJu8608" role="2OqNvi">
-                          <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation():org.apache.log4j.spi.ThrowableInformation" resolve="getThrowableInformation" />
+                          <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation()" resolve="getThrowableInformation" />
                         </node>
                       </node>
                     </node>
@@ -406,7 +406,7 @@
                     <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                   </node>
                   <node concept="liA8E" id="7VeUlv92MXj" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                     <node concept="3cpWs3" id="7VeUlv92Ngc" role="37wK5m">
                       <node concept="Xl_RD" id="7VeUlv92Ngd" role="3uHU7w">
                         <property role="Xl_RC" value=" does not have enabled debug. Will be ignored." />
@@ -420,7 +420,7 @@
                             <ref role="3cqZAo" node="7VeUlv8MmVh" resolve="log" />
                           </node>
                           <node concept="liA8E" id="7VeUlv92Ngi" role="2OqNvi">
-                            <ref role="37wK5l" to="q7tw:~Category.getName():java.lang.String" resolve="getName" />
+                            <ref role="37wK5l" to="q7tw:~Category.getName()" resolve="getName" />
                           </node>
                         </node>
                       </node>
@@ -436,7 +436,7 @@
                   <ref role="3cqZAo" node="7VeUlv8MmVh" resolve="log" />
                 </node>
                 <node concept="liA8E" id="7VeUlv92MVw" role="2OqNvi">
-                  <ref role="37wK5l" to="q7tw:~Category.isDebugEnabled():boolean" resolve="isDebugEnabled" />
+                  <ref role="37wK5l" to="q7tw:~Category.isDebugEnabled()" resolve="isDebugEnabled" />
                 </node>
               </node>
             </node>
@@ -448,7 +448,7 @@
               <ref role="3cqZAo" node="7VeUlv8MmVh" resolve="log" />
             </node>
             <node concept="liA8E" id="7VeUlv8MmV9" role="2OqNvi">
-              <ref role="37wK5l" to="q7tw:~Category.setLevel(org.apache.log4j.Level):void" resolve="setLevel" />
+              <ref role="37wK5l" to="q7tw:~Category.setLevel(org.apache.log4j.Level)" resolve="setLevel" />
               <node concept="10M0yZ" id="7VeUlv8MmVa" role="37wK5m">
                 <ref role="1PxDUh" to="q7tw:~Level" resolve="Level" />
                 <ref role="3cqZAo" to="q7tw:~Level.DEBUG" resolve="DEBUG" />
@@ -462,7 +462,7 @@
               <ref role="3cqZAo" node="7VeUlv8MmVh" resolve="log" />
             </node>
             <node concept="liA8E" id="7VeUlv8MmVe" role="2OqNvi">
-              <ref role="37wK5l" to="q7tw:~Category.addAppender(org.apache.log4j.Appender):void" resolve="addAppender" />
+              <ref role="37wK5l" to="q7tw:~Category.addAppender(org.apache.log4j.Appender)" resolve="addAppender" />
               <node concept="37vLTw" id="7VeUlv8MmVf" role="37wK5m">
                 <ref role="3cqZAo" node="7VeUlv8MlOq" resolve="appender" />
               </node>

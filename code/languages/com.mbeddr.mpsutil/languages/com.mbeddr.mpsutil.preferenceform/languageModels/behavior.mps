@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -214,11 +214,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="86yKXFJUJQ" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
               </node>
             </node>
             <node concept="liA8E" id="86yKXFJVKu" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
             </node>
           </node>
         </node>
@@ -238,11 +238,11 @@
                 <node concept="13iPFW" id="86yKXFJVZt" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="86yKXFJWk$" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
               </node>
             </node>
             <node concept="liA8E" id="86yKXFJWMB" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
             </node>
           </node>
         </node>
@@ -264,11 +264,11 @@
                     <node concept="13iPFW" id="5YZamx7Brls" role="2JrQYb" />
                   </node>
                   <node concept="liA8E" id="5YZamx7Bsiv" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5YZamx7BsH3" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                 </node>
               </node>
             </node>
@@ -278,7 +278,7 @@
                 <node concept="13iPFW" id="5YZamx7Bqqb" role="2Oq$k0" />
               </node>
               <node concept="liA8E" id="5RIakkDJ1IX" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
           </node>
@@ -490,7 +490,7 @@
             </node>
             <node concept="2YIFZM" id="X7OD3Wy$iR" role="3uHU7B">
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String)" resolve="deleteWhitespace" />
               <node concept="2OqwBi" id="X7OD3Wy$iS" role="37wK5m">
                 <node concept="13iPFW" id="X7OD3Wy$iT" role="2Oq$k0" />
                 <node concept="3TrcHB" id="X7OD3Wy$iU" role="2OqNvi">
@@ -513,7 +513,7 @@
               <property role="Xl_RC" value="_PreferencesComponent" />
             </node>
             <node concept="2YIFZM" id="86yKXFUB2N" role="3uHU7B">
-              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String)" resolve="deleteWhitespace" />
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="86yKXFUB2O" role="37wK5m">
                 <node concept="13iPFW" id="86yKXFUB2P" role="2Oq$k0" />
@@ -537,7 +537,7 @@
               <property role="Xl_RC" value="_Plugin" />
             </node>
             <node concept="2YIFZM" id="1DjGUwRg1up" role="3uHU7B">
-              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String)" resolve="deleteWhitespace" />
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="1DjGUwRg1uq" role="37wK5m">
                 <node concept="13iPFW" id="1DjGUwRg1ur" role="2Oq$k0" />
@@ -561,7 +561,7 @@
               <property role="Xl_RC" value="_State" />
             </node>
             <node concept="2YIFZM" id="41w3udzip3A" role="3uHU7B">
-              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String)" resolve="deleteWhitespace" />
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="41w3udzip3B" role="37wK5m">
                 <node concept="13iPFW" id="41w3udzip3C" role="2Oq$k0" />
@@ -585,7 +585,7 @@
               <property role="Xl_RC" value="_StorageId" />
             </node>
             <node concept="2YIFZM" id="41w3udzipEQ" role="3uHU7B">
-              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String)" resolve="deleteWhitespace" />
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="41w3udzipER" role="37wK5m">
                 <node concept="13iPFW" id="41w3udzipES" role="2Oq$k0" />

@@ -73,7 +73,7 @@
               <ref role="Rm8GQ" to="w1kc:~LanguageAspect.EDITOR" resolve="EDITOR" />
             </node>
             <node concept="liA8E" id="5RIakkDIXGH" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+              <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel)" resolve="is" />
               <node concept="2OqwBi" id="5RIakkDIXGI" role="37wK5m">
                 <node concept="nLn13" id="5RIakkDIXGJ" role="2Oq$k0" />
                 <node concept="I4A8Y" id="5RIakkDIXGK" role="2OqNvi" />
@@ -96,7 +96,7 @@
               <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
             </node>
             <node concept="liA8E" id="5RIakkDJ0sA" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+              <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel)" resolve="is" />
               <node concept="2OqwBi" id="5RIakkDJ0sB" role="37wK5m">
                 <node concept="nLn13" id="5RIakkDJ0sC" role="2Oq$k0" />
                 <node concept="I4A8Y" id="5RIakkDJ0sD" role="2OqNvi" />
@@ -120,7 +120,7 @@
                   <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
                 </node>
                 <node concept="liA8E" id="4w7It07pbp$" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+                  <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel)" resolve="is" />
                   <node concept="1Q6Npb" id="4w7It07pbp_" role="37wK5m" />
                 </node>
               </node>
@@ -130,7 +130,7 @@
                   <ref role="Rm8GQ" to="w1kc:~LanguageAspect.ACTIONS" resolve="ACTIONS" />
                 </node>
                 <node concept="liA8E" id="4w7It07pbpC" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+                  <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel)" resolve="is" />
                   <node concept="1Q6Npb" id="4w7It07pbpD" role="37wK5m" />
                 </node>
               </node>
@@ -141,7 +141,7 @@
                 <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
               </node>
               <node concept="liA8E" id="4w7It07pbpG" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+                <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel)" resolve="is" />
                 <node concept="1Q6Npb" id="4w7It07pbpH" role="37wK5m" />
               </node>
             </node>

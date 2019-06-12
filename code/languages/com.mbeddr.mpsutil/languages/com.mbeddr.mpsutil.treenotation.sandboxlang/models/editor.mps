@@ -196,7 +196,7 @@
       </concept>
       <concept id="2807401889304965325" name="com.mbeddr.mpsutil.treenotation.structure.OrthogonalTreeLayout" flags="ng" index="37fpnD" />
       <concept id="2807401889304965326" name="com.mbeddr.mpsutil.treenotation.structure.CompactTreeLayout" flags="ng" index="37fpnE" />
-      <concept id="8796347991408045445" name="com.mbeddr.mpsutil.treenotation.structure.IncomingShapeStyle" flags="lg" index="3uywDx">
+      <concept id="8796347991408045445" name="com.mbeddr.mpsutil.treenotation.structure.IncomingShapeStyle" flags="ng" index="3uywDx">
         <child id="8796347991408045465" name="shape" index="3uywDX" />
       </concept>
       <concept id="8796347991406413783" name="com.mbeddr.mpsutil.treenotation.structure.ThisNodeExpression" flags="ng" index="3u$I0N" />
@@ -216,13 +216,13 @@
         <child id="8433232831282903903" name="actualParameters" index="15NUvb" />
       </concept>
       <concept id="8877288515762039493" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_graphics" flags="ng" index="1X_dKq" />
-      <concept id="8877288515762039490" name="com.mbeddr.mpsutil.treenotation.structure.ShapePaintFunction" flags="ig" index="1X_dKt" />
+      <concept id="8877288515762039490" name="com.mbeddr.mpsutil.treenotation.structure.ShapePaintFunction" flags="ng" index="1X_dKt" />
       <concept id="8877288515762039489" name="com.mbeddr.mpsutil.treenotation.structure.Shape" flags="ng" index="1X_dKu">
         <child id="8433232831282905030" name="parameters" index="15NUdi" />
         <child id="8877288515762039491" name="paintFunction" index="1X_dKs" />
       </concept>
-      <concept id="8877288515759654453" name="com.mbeddr.mpsutil.treenotation.structure.DeleteHandler" flags="ig" index="1XG33E" />
-      <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.InserHandler" flags="ig" index="1XI84t" />
+      <concept id="8877288515759654453" name="com.mbeddr.mpsutil.treenotation.structure.DeleteHandler" flags="ng" index="1XG33E" />
+      <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.InserHandler" flags="ng" index="1XI84t" />
       <concept id="8877288515760224565" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_index" flags="ng" index="1XI8ZE" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
@@ -1094,7 +1094,7 @@
                     <ref role="2Gs0qQ" node="7k8R9gKNdsL" resolve="edge" />
                   </node>
                   <node concept="liA8E" id="7k8R9gKNh4Z" role="2OqNvi">
-                    <ref role="37wK5l" to="fbzs:~Line2D.getP1():java.awt.geom.Point2D" resolve="getP1" />
+                    <ref role="37wK5l" to="fbzs:~Line2D.getP1()" resolve="getP1" />
                   </node>
                 </node>
               </node>
@@ -1110,7 +1110,7 @@
                     <ref role="2Gs0qQ" node="7k8R9gKNdsL" resolve="edge" />
                   </node>
                   <node concept="liA8E" id="7k8R9gKNdO1" role="2OqNvi">
-                    <ref role="37wK5l" to="fbzs:~Line2D.getP2():java.awt.geom.Point2D" resolve="getP2" />
+                    <ref role="37wK5l" to="fbzs:~Line2D.getP2()" resolve="getP2" />
                   </node>
                 </node>
               </node>
@@ -1129,7 +1129,7 @@
                         <ref role="3cqZAo" node="7k8R9gKNdNY" resolve="end" />
                       </node>
                       <node concept="liA8E" id="7k8R9gKNnfR" role="2OqNvi">
-                        <ref role="37wK5l" to="fbzs:~Point2D.getX():double" resolve="getX" />
+                        <ref role="37wK5l" to="fbzs:~Point2D.getX()" resolve="getX" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="7k8R9gKNnfS" role="37wK5m">
@@ -1137,7 +1137,7 @@
                         <ref role="3cqZAo" node="7k8R9gKNdNY" resolve="end" />
                       </node>
                       <node concept="liA8E" id="7k8R9gKNnfU" role="2OqNvi">
-                        <ref role="37wK5l" to="fbzs:~Point2D.getY():double" resolve="getY" />
+                        <ref role="37wK5l" to="fbzs:~Point2D.getY()" resolve="getY" />
                       </node>
                     </node>
                   </node>
@@ -1158,7 +1158,7 @@
                         <ref role="3cqZAo" node="7k8R9gKNh4V" resolve="start" />
                       </node>
                       <node concept="liA8E" id="7k8R9gKNnDD" role="2OqNvi">
-                        <ref role="37wK5l" to="fbzs:~Point2D.getX():double" resolve="getX" />
+                        <ref role="37wK5l" to="fbzs:~Point2D.getX()" resolve="getX" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="7k8R9gKNnDE" role="37wK5m">
@@ -1166,7 +1166,7 @@
                         <ref role="3cqZAo" node="7k8R9gKNh4V" resolve="start" />
                       </node>
                       <node concept="liA8E" id="7k8R9gKNnDG" role="2OqNvi">
-                        <ref role="37wK5l" to="fbzs:~Point2D.getY():double" resolve="getY" />
+                        <ref role="37wK5l" to="fbzs:~Point2D.getY()" resolve="getY" />
                       </node>
                     </node>
                   </node>
@@ -1184,7 +1184,7 @@
                     <ref role="3cqZAo" node="7k8R9gKNnfM" resolve="endVector" />
                   </node>
                   <node concept="liA8E" id="7k8R9gKNoL$" role="2OqNvi">
-                    <ref role="37wK5l" to="4io5:~Vector2D.add(double,org.apache.commons.math3.geometry.Vector):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="add" />
+                    <ref role="37wK5l" to="4io5:~Vector2D.add(double,org.apache.commons.math3.geometry.Vector)" resolve="add" />
                     <node concept="3cpWsd" id="7k8R9gKOTTr" role="37wK5m">
                       <node concept="3cmrfG" id="7k8R9gKOTTu" role="3uHU7w">
                         <property role="3cmrfH" value="1" />
@@ -1199,14 +1199,14 @@
                           <ref role="3cqZAo" node="7k8R9gKNnD$" resolve="startVector" />
                         </node>
                         <node concept="liA8E" id="7k8R9gKNpwn" role="2OqNvi">
-                          <ref role="37wK5l" to="4io5:~Vector2D.subtract(org.apache.commons.math3.geometry.Vector):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="subtract" />
+                          <ref role="37wK5l" to="4io5:~Vector2D.subtract(org.apache.commons.math3.geometry.Vector)" resolve="subtract" />
                           <node concept="37vLTw" id="7k8R9gKNp$j" role="37wK5m">
                             <ref role="3cqZAo" node="7k8R9gKNnfM" resolve="endVector" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="7k8R9gKNpYn" role="2OqNvi">
-                        <ref role="37wK5l" to="4io5:~Vector2D.normalize():org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="normalize" />
+                        <ref role="37wK5l" to="4io5:~Vector2D.normalize()" resolve="normalize" />
                       </node>
                     </node>
                   </node>
@@ -1217,7 +1217,7 @@
               <node concept="2OqwBi" id="7k8R9gKNegN" role="3clFbG">
                 <node concept="1X_dKq" id="7k8R9gKNefP" role="2Oq$k0" />
                 <node concept="liA8E" id="7k8R9gKNelI" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Graphics2D.fill(java.awt.Shape):void" resolve="fill" />
+                  <ref role="37wK5l" to="z60i:~Graphics2D.fill(java.awt.Shape)" resolve="fill" />
                   <node concept="2ShNRf" id="7k8R9gKNelX" role="37wK5m">
                     <node concept="1pGfFk" id="7k8R9gKNeQM" role="2ShVmc">
                       <ref role="37wK5l" to="fbzs:~Ellipse2D$Double.&lt;init&gt;(double,double,double,double)" resolve="Ellipse2D.Double" />
@@ -1230,7 +1230,7 @@
                             <ref role="3cqZAo" node="7k8R9gKNomB" resolve="center" />
                           </node>
                           <node concept="liA8E" id="7k8R9gKNeVw" role="2OqNvi">
-                            <ref role="37wK5l" to="4io5:~Vector2D.getX():double" resolve="getX" />
+                            <ref role="37wK5l" to="4io5:~Vector2D.getX()" resolve="getX" />
                           </node>
                         </node>
                       </node>
@@ -1243,7 +1243,7 @@
                             <ref role="3cqZAo" node="7k8R9gKNomB" resolve="center" />
                           </node>
                           <node concept="liA8E" id="7k8R9gKNf1b" role="2OqNvi">
-                            <ref role="37wK5l" to="4io5:~Vector2D.getY():double" resolve="getY" />
+                            <ref role="37wK5l" to="4io5:~Vector2D.getY()" resolve="getY" />
                           </node>
                         </node>
                       </node>
@@ -1335,18 +1335,18 @@
               <ref role="3cqZAo" node="7k8R9gKOJwO" resolve="arc" />
             </node>
             <node concept="liA8E" id="7k8R9gKOQAv" role="2OqNvi">
-              <ref role="37wK5l" to="fbzs:~Arc2D.setArcByCenter(double,double,double,double,double,int):void" resolve="setArcByCenter" />
+              <ref role="37wK5l" to="fbzs:~Arc2D.setArcByCenter(double,double,double,double,double,int)" resolve="setArcByCenter" />
               <node concept="2OqwBi" id="7k8R9gKOQGo" role="37wK5m">
                 <node concept="2OqwBi" id="7k8R9gKOQCb" role="2Oq$k0">
                   <node concept="37vLTw" id="7k8R9gKOQAO" role="2Oq$k0">
                     <ref role="3cqZAo" node="7k8R9gKOJaI" resolve="first" />
                   </node>
                   <node concept="liA8E" id="7k8R9gKOQF4" role="2OqNvi">
-                    <ref role="37wK5l" to="fbzs:~Line2D.getP2():java.awt.geom.Point2D" resolve="getP2" />
+                    <ref role="37wK5l" to="fbzs:~Line2D.getP2()" resolve="getP2" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7k8R9gKOQIO" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~Point2D.getX():double" resolve="getX" />
+                  <ref role="37wK5l" to="fbzs:~Point2D.getX()" resolve="getX" />
                 </node>
               </node>
               <node concept="2OqwBi" id="7k8R9gKOQJA" role="37wK5m">
@@ -1355,11 +1355,11 @@
                     <ref role="3cqZAo" node="7k8R9gKOJaI" resolve="first" />
                   </node>
                   <node concept="liA8E" id="7k8R9gKOQJD" role="2OqNvi">
-                    <ref role="37wK5l" to="fbzs:~Line2D.getP2():java.awt.geom.Point2D" resolve="getP2" />
+                    <ref role="37wK5l" to="fbzs:~Line2D.getP2()" resolve="getP2" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7k8R9gKOQJE" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~Point2D.getY():double" resolve="getY" />
+                  <ref role="37wK5l" to="fbzs:~Point2D.getY()" resolve="getY" />
                 </node>
               </node>
               <node concept="15NUKc" id="7k8R9gKOQNO" role="37wK5m">
@@ -1384,13 +1384,13 @@
               <ref role="3cqZAo" node="7k8R9gKOJwO" resolve="arc" />
             </node>
             <node concept="liA8E" id="7k8R9gKOR8w" role="2OqNvi">
-              <ref role="37wK5l" to="fbzs:~Arc2D.setAngles(java.awt.geom.Point2D,java.awt.geom.Point2D):void" resolve="setAngles" />
+              <ref role="37wK5l" to="fbzs:~Arc2D.setAngles(java.awt.geom.Point2D,java.awt.geom.Point2D)" resolve="setAngles" />
               <node concept="2OqwBi" id="7k8R9gKORa4" role="37wK5m">
                 <node concept="37vLTw" id="7k8R9gKOR8P" role="2Oq$k0">
                   <ref role="3cqZAo" node="7k8R9gKOJaI" resolve="first" />
                 </node>
                 <node concept="liA8E" id="7k8R9gKORcS" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~Line2D.getP1():java.awt.geom.Point2D" resolve="getP1" />
+                  <ref role="37wK5l" to="fbzs:~Line2D.getP1()" resolve="getP1" />
                 </node>
               </node>
               <node concept="2OqwBi" id="7k8R9gKORfS" role="37wK5m">
@@ -1398,7 +1398,7 @@
                   <ref role="3cqZAo" node="7k8R9gKOJcD" resolve="last" />
                 </node>
                 <node concept="liA8E" id="7k8R9gKORj0" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~Line2D.getP1():java.awt.geom.Point2D" resolve="getP1" />
+                  <ref role="37wK5l" to="fbzs:~Line2D.getP1()" resolve="getP1" />
                 </node>
               </node>
             </node>
@@ -1408,7 +1408,7 @@
           <node concept="2OqwBi" id="7k8R9gKONM9" role="3clFbG">
             <node concept="1X_dKq" id="7k8R9gKONJO" role="2Oq$k0" />
             <node concept="liA8E" id="7k8R9gKONPL" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics2D.fill(java.awt.Shape):void" resolve="fill" />
+              <ref role="37wK5l" to="z60i:~Graphics2D.fill(java.awt.Shape)" resolve="fill" />
               <node concept="37vLTw" id="7k8R9gKONQ0" role="37wK5m">
                 <ref role="3cqZAo" node="7k8R9gKOJwO" resolve="arc" />
               </node>

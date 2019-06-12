@@ -192,7 +192,7 @@
                     <ref role="3cqZAo" node="17HIJlKZU71" resolve="button" />
                   </node>
                   <node concept="liA8E" id="17HIJlKZWfd" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                     <node concept="2ShNRf" id="17HIJlKZWt8" role="37wK5m">
                       <node concept="YeOm9" id="17HIJlKZXp_" role="2ShVmc">
                         <node concept="1Y3b0j" id="17HIJlKZXpC" role="YeSDq">
@@ -236,11 +236,11 @@
                                   <node concept="2OqwBi" id="2u$73V9t9yn" role="2Oq$k0">
                                     <node concept="1Q80Hx" id="2u$73V9t9yo" role="2Oq$k0" />
                                     <node concept="liA8E" id="2u$73V9t9yp" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2u$73V9t9yq" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                                   </node>
                                 </node>
                               </node>
@@ -291,7 +291,7 @@
                     <ref role="3cqZAo" node="2u$73V9r4da" resolve="button" />
                   </node>
                   <node concept="liA8E" id="2u$73V9r4di" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                     <node concept="2ShNRf" id="2u$73V9r4dj" role="37wK5m">
                       <node concept="YeOm9" id="2u$73V9r4dk" role="2ShVmc">
                         <node concept="1Y3b0j" id="2u$73V9r4dl" role="YeSDq">
@@ -330,11 +330,11 @@
                                   <node concept="2OqwBi" id="2u$73V9t9pz" role="2Oq$k0">
                                     <node concept="1Q80Hx" id="2u$73V9t9p$" role="2Oq$k0" />
                                     <node concept="liA8E" id="2u$73V9t9p_" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2u$73V9t9pA" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                                   </node>
                                 </node>
                               </node>
@@ -379,7 +379,7 @@
                     <ref role="3cqZAo" node="2u$73V9r4Bu" resolve="button" />
                   </node>
                   <node concept="liA8E" id="2u$73V9r4BA" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                     <node concept="2ShNRf" id="2u$73V9r4BB" role="37wK5m">
                       <node concept="YeOm9" id="2u$73V9r4BC" role="2ShVmc">
                         <node concept="1Y3b0j" id="2u$73V9r4BD" role="YeSDq">
@@ -420,11 +420,11 @@
                                   <node concept="2OqwBi" id="2u$73V9r4BN" role="2Oq$k0">
                                     <node concept="1Q80Hx" id="2u$73V9r4BO" role="2Oq$k0" />
                                     <node concept="liA8E" id="2u$73V9r4BP" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2u$73V9r4BQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                                   </node>
                                 </node>
                               </node>
@@ -497,11 +497,11 @@
                             <node concept="2EnYce" id="2u$73V9uyfS" role="2Oq$k0">
                               <node concept="1Q80Hx" id="2u$73V9uwFY" role="2Oq$k0" />
                               <node concept="liA8E" id="2u$73V9uwFZ" role="2OqNvi">
-                                <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getContextCell" />
+                                <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell()" resolve="getContextCell" />
                               </node>
                             </node>
                             <node concept="liA8E" id="2u$73V9uwG0" role="2OqNvi">
-                              <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                              <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
                             </node>
                           </node>
                         </node>

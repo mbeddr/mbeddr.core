@@ -363,7 +363,7 @@
           <node concept="2OqwBi" id="7JjETeGcJon" role="3clFbG">
             <node concept="1XNTG" id="7JjETeGcJom" role="2Oq$k0" />
             <node concept="liA8E" id="7JjETeGcK_a" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+              <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode)" resolve="selectWRTFocusPolicy" />
               <node concept="2OqwBi" id="7JjETeGcK_c" role="37wK5m">
                 <node concept="2Sf5sV" id="7JjETeGcK_b" role="2Oq$k0" />
                 <node concept="3TrEf2" id="7JjETeGcK_h" role="2OqNvi">
@@ -1975,7 +1975,7 @@
       <node concept="3clFbS" id="7moPk051JMP" role="2VODD2">
         <node concept="3clFbF" id="7moPk051JMQ" role="3cqZAp">
           <node concept="Xl_RD" id="7moPk051JMR" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Direct Callable From Tests" />
+            <property role="Xl_RC" value="Toggle Direct Callable from Tests" />
           </node>
         </node>
       </node>

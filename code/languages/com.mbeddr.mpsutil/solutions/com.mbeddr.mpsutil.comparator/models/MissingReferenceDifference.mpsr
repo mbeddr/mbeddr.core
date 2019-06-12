@@ -318,7 +318,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="5RIakkDJOTF" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                         </node>
                       </node>
                     </node>
@@ -476,7 +476,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="Pu8Vy2dL4u" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                 </node>
               </node>
             </node>

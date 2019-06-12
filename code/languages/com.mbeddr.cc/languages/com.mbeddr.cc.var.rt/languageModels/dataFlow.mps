@@ -185,7 +185,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="50VOb6Khs23" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                       <node concept="37vLTw" id="2AZbPfMaNvR" role="37wK5m">
                         <ref role="3cqZAo" node="50VOb6Khs2_" resolve="i" />
                       </node>
@@ -221,7 +221,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="50VOb6Khs2j" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                      <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
                     </node>
                   </node>
                 </node>

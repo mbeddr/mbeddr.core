@@ -191,7 +191,7 @@
                 <property role="Xl_RC" value="" />
               </node>
               <node concept="2YIFZM" id="77gEP6zyLi1" role="3K4Cdx">
-                <ref role="37wK5l" to="btm1:~StringUtils.isNotBlank(java.lang.CharSequence):boolean" resolve="isNotBlank" />
+                <ref role="37wK5l" to="btm1:~StringUtils.isNotBlank(java.lang.CharSequence)" resolve="isNotBlank" />
                 <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                 <node concept="37vLTw" id="77gEP6zyLnp" role="37wK5m">
                   <ref role="3cqZAo" node="77gEP6zyKmf" resolve="keyPrefixInBundle" />
@@ -208,7 +208,7 @@
               <node concept="3K4zz7" id="77gEP6zyK_i" role="1eOMHV">
                 <node concept="2YIFZM" id="77gEP6zyK_j" role="3K4Cdx">
                   <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                  <ref role="37wK5l" to="btm1:~StringUtils.isNotBlank(java.lang.CharSequence):boolean" resolve="isNotBlank" />
+                  <ref role="37wK5l" to="btm1:~StringUtils.isNotBlank(java.lang.CharSequence)" resolve="isNotBlank" />
                   <node concept="2OqwBi" id="77gEP6zyK_k" role="37wK5m">
                     <node concept="13iPFW" id="77gEP6zyK_l" role="2Oq$k0" />
                     <node concept="3TrcHB" id="77gEP6zyK_m" role="2OqNvi">
@@ -252,13 +252,13 @@
         <node concept="3clFbF" id="vzhXZPAXZn" role="3cqZAp">
           <node concept="2YIFZM" id="vzhXZPAXZo" role="3clFbG">
             <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-            <ref role="37wK5l" to="btm1:~StringUtils.isNotBlank(java.lang.CharSequence):boolean" resolve="isNotBlank" />
+            <ref role="37wK5l" to="btm1:~StringUtils.isNotBlank(java.lang.CharSequence)" resolve="isNotBlank" />
             <node concept="2OqwBi" id="vzhXZPAXZp" role="37wK5m">
               <node concept="2JrnkZ" id="vzhXZPAXZq" role="2Oq$k0">
                 <node concept="13iPFW" id="vzhXZPAXZr" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="vzhXZPAXZs" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String)" resolve="getProperty" />
                 <node concept="Xl_RD" id="vzhXZPAXZt" role="37wK5m">
                   <property role="Xl_RC" value="default" />
                 </node>
@@ -319,7 +319,7 @@
               <property role="Xl_RC" value="BundleClass" />
             </node>
             <node concept="2YIFZM" id="5Q1XZgMoKQF" role="3uHU7B">
-              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String)" resolve="deleteWhitespace" />
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="5Q1XZgMoKUk" role="37wK5m">
                 <node concept="13iPFW" id="5Q1XZgMoKRn" role="2Oq$k0" />
@@ -343,7 +343,7 @@
               <property role="Xl_RC" value="BundleClass" />
             </node>
             <node concept="2YIFZM" id="15QjPzrh8B6" role="3uHU7B">
-              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String)" resolve="deleteWhitespace" />
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="15QjPzrh85C" role="37wK5m">
                 <node concept="13iPFW" id="15QjPzrh835" role="2Oq$k0" />
@@ -373,7 +373,7 @@
                 <node concept="10QFUN" id="5Q1XZgMGtw8" role="1eOMHV">
                   <node concept="2YIFZM" id="5Q1XZgMGtw5" role="10QFUP">
                     <ref role="1Pybhc" to="wyt6:~Class" resolve="Class" />
-                    <ref role="37wK5l" to="wyt6:~Class.forName(java.lang.String):java.lang.Class" resolve="forName" />
+                    <ref role="37wK5l" to="wyt6:~Class.forName(java.lang.String)" resolve="forName" />
                     <node concept="BsUDl" id="5Q1XZgMGtw6" role="37wK5m">
                       <ref role="37wK5l" node="5Q1XZgMFyWg" resolve="getFQBundleProviderClassName" />
                     </node>
@@ -396,7 +396,7 @@
                     <ref role="3cqZAo" node="15QjPzreUhq" resolve="e" />
                   </node>
                   <node concept="liA8E" id="15QjPzreV6y" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -457,7 +457,7 @@
                   <ref role="3cqZAo" node="15QjPzreYC3" resolve="clazz" />
                 </node>
                 <node concept="liA8E" id="5Q1XZgMGt48" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Class.newInstance():java.lang.Object" resolve="newInstance" />
+                  <ref role="37wK5l" to="wyt6:~Class.newInstance()" resolve="newInstance" />
                 </node>
               </node>
             </node>
@@ -470,7 +470,7 @@
                     <ref role="3cqZAo" node="5Q1XZgMGsAk" resolve="e" />
                   </node>
                   <node concept="liA8E" id="5Q1XZgMGutN" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -490,7 +490,7 @@
                     <ref role="3cqZAo" node="5Q1XZgMGsAr" resolve="e" />
                   </node>
                   <node concept="liA8E" id="5Q1XZgMGuJa" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>

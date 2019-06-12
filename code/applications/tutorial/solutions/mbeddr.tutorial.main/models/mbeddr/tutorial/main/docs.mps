@@ -30,7 +30,6 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
-      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
@@ -174,9 +173,9 @@
         </node>
       </node>
     </node>
-    <node concept="A7cYH" id="4PBxP34YM2u" role="A10yx">
+    <node concept="2SbYGw" id="2N9rErU8Q$" role="A10yx">
       <property role="TrG5h" value="img" />
-      <node concept="9PVaO" id="4PBxP34YM2v" role="9PVG_">
+      <node concept="9PVaO" id="2N9rErU8Qz" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="." />

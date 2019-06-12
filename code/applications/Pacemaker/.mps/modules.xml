@@ -5,7 +5,6 @@
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/languages/history/history.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/pacemakermodel/pacemakermodel.msd" folder="" />
     </projectModules>
   </component>

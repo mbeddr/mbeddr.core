@@ -98,7 +98,7 @@
               <node concept="1pGfFk" id="24ObHxTnYFb" role="2ShVmc">
                 <ref role="37wK5l" to="vvqb:24ObHxTnVFF" resolve="CustomTreeHighlighterExtension" />
                 <node concept="2YIFZM" id="24ObHxTnZhM" role="37wK5m">
-                  <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                  <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                   <node concept="1KvdUw" id="24ObHxTnZim" role="37wK5m" />
                 </node>

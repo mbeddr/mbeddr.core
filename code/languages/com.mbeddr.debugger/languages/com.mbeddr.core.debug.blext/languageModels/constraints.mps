@@ -443,7 +443,7 @@
                                   <ref role="3cqZAo" node="79i$vAY6rnr" resolve="param" />
                                 </node>
                                 <node concept="liA8E" id="79i$vAY6rnp" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="2GrUjf" id="79i$vAY6rnq" role="37wK5m">
                                     <ref role="2Gs0qQ" node="79i$vAY6rn9" resolve="expectedParam" />
                                   </node>
@@ -520,15 +520,15 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="79i$vAY6rkJ" role="2OqNvi">
-                                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                               </node>
                             </node>
                             <node concept="liA8E" id="79i$vAY6rkK" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="79i$vAY6rkL" role="37wK5m">
                                 <node concept="2DD5aU" id="79i$vAY6rkX" role="2Oq$k0" />
                                 <node concept="liA8E" id="5CkU_dHrN8R" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                                 </node>
                               </node>
                             </node>
@@ -695,15 +695,15 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="79i$vAY6rm3" role="2OqNvi">
-                                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                               </node>
                             </node>
                             <node concept="liA8E" id="79i$vAY6rm4" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="79i$vAY6rm5" role="37wK5m">
                                 <node concept="2DD5aU" id="79i$vAY6rmh" role="2Oq$k0" />
                                 <node concept="liA8E" id="5CkU_dHrO78" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                                 </node>
                               </node>
                             </node>
@@ -824,12 +824,12 @@
                   <node concept="1Q6Npb" id="4ol4Q3pLEk7" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="4ol4Q3pLErv" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                 </node>
               </node>
             </node>
             <node concept="2YIFZM" id="4ol4Q3pLHS3" role="3uHU7w">
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
               <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
               <node concept="1Q6Npb" id="4ol4Q3pLI4K" role="37wK5m" />
             </node>

@@ -223,11 +223,11 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="55ShMBE5dym" role="2OqNvi">
-                  <ref role="37wK5l" to="lui2:~SModule.getModuleId():org.jetbrains.mps.openapi.module.SModuleId" resolve="getModuleId" />
+                  <ref role="37wK5l" to="lui2:~SModule.getModuleId()" resolve="getModuleId" />
                 </node>
               </node>
               <node concept="liA8E" id="55ShMBE5dyn" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
               </node>
             </node>
           </node>

@@ -335,11 +335,11 @@
                                       <ref role="3cqZAo" node="agjuZp43cy" resolve="context" />
                                     </node>
                                     <node concept="liA8E" id="agjuZp2G5M" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="agjuZp2GGF" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorComponent.scrollToNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="scrollToNode" />
+                                    <ref role="37wK5l" to="cj4x:~EditorComponent.scrollToNode(org.jetbrains.mps.openapi.model.SNode)" resolve="scrollToNode" />
                                     <node concept="2OqwBi" id="agjuZp8ooZ" role="37wK5m">
                                       <node concept="37vLTw" id="agjuZp8op0" role="2Oq$k0">
                                         <ref role="3cqZAo" node="agjuZp5sS5" resolve="targetNode" />
@@ -356,7 +356,7 @@
                           <node concept="2OqwBi" id="6m8qo2wujTq" role="ukAjM">
                             <node concept="1Q80Hx" id="6m8qo2wujMq" role="2Oq$k0" />
                             <node concept="liA8E" id="6m8qo2wuk1M" role="2OqNvi">
-                              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                             </node>
                           </node>
                         </node>

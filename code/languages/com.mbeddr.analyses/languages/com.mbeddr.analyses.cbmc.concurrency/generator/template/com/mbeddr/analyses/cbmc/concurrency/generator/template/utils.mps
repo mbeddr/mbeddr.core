@@ -389,7 +389,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="3V3CJZuMyEC" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="3cpWs3" id="3V3CJZuMyED" role="37wK5m">
                             <node concept="Xl_RD" id="3V3CJZuMyEE" role="3uHU7B">
                               <property role="Xl_RC" value="label_" />
@@ -465,7 +465,7 @@
         </node>
         <node concept="3clFbF" id="3V3CJZuO0Fa" role="3cqZAp">
           <node concept="2YIFZM" id="3V3CJZuO10t" role="3clFbG">
-            <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
+            <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="fillOriginalNode" />
             <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
             <node concept="37vLTw" id="3V3CJZuO1ck" role="37wK5m">
               <ref role="3cqZAo" node="3V3CJZuM6F2" resolve="hap" />

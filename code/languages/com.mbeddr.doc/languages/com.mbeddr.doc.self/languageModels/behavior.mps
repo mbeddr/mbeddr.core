@@ -79,11 +79,11 @@
           <node concept="3cpWs3" id="7$DvC4gQTWi" role="3clFbG">
             <node concept="2OqwBi" id="5Hxjapw9uC8" role="3uHU7w">
               <node concept="liA8E" id="5Hxjapw9uC9" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
               </node>
               <node concept="2OqwBi" id="5Hxjapw9uCa" role="2Oq$k0">
                 <node concept="liA8E" id="5Hxjapw9uCb" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                 </node>
                 <node concept="2JrnkZ" id="5Hxjapw9uCc" role="2Oq$k0">
                   <node concept="13iPFW" id="5Hxjapw9uCd" role="2JrQYb" />

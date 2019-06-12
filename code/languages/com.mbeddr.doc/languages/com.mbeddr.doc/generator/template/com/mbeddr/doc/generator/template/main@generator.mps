@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
@@ -1098,7 +1098,7 @@
                           <ref role="3cqZAo" node="5pyBnOIETAw" resolve="reader" />
                         </node>
                         <node concept="liA8E" id="5pyBnOIEUyU" role="2OqNvi">
-                          <ref role="37wK5l" to="81o:~SourceStringReader.generateImage(java.io.File):java.lang.String" resolve="generateImage" />
+                          <ref role="37wK5l" to="81o:~SourceStringReader.generateImage(java.io.File)" resolve="generateImage" />
                           <node concept="2ShNRf" id="5pyBnOIEW3n" role="37wK5m">
                             <node concept="1pGfFk" id="5pyBnOIEWn7" role="2ShVmc">
                               <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
@@ -1143,7 +1143,7 @@
                             <ref role="3cqZAo" node="2fGuOSYbJKs" resolve="ex" />
                           </node>
                           <node concept="liA8E" id="2fGuOSYbJKy" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                           </node>
                         </node>
                       </node>
@@ -1333,7 +1333,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="49PUF$HTiTz" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
               </node>
             </node>
           </node>
@@ -1366,7 +1366,7 @@
                   <ref role="37wK5l" to="znf5:2DWJLXXzCiq" resolve="getDocGenFolder" />
                   <ref role="1Pybhc" to="znf5:6RvWQYjPIDF" resolve="GenerationHelper" />
                   <node concept="37vLTw" id="271UTRL8jig" role="37wK5m">
-                    <ref role="3cqZAo" node="49PUF$HTiTB" />
+                    <ref role="3cqZAo" node="49PUF$HTiTB" resolve="m" />
                   </node>
                 </node>
               </node>
@@ -1385,7 +1385,7 @@
                           <ref role="2pJxcJ" to="2c95:2cjkfC8rZLY" resolve="location" />
                           <node concept="2OqwBi" id="49PUF$HTybA" role="2pJxcZ">
                             <node concept="liA8E" id="49PUF$HTyqf" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                              <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                             </node>
                             <node concept="2YIFZM" id="6RvWQYjPPHe" role="2Oq$k0">
                               <ref role="37wK5l" to="znf5:6RvWQYjPOPp" resolve="getOutputLocation" />
@@ -1511,7 +1511,7 @@
                                   <ref role="3cqZAo" node="6JxhqyiyMBo" resolve="imgPath" />
                                 </node>
                                 <node concept="liA8E" id="6Jxhqyiz0jR" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                                 </node>
                               </node>
                             </node>
@@ -1726,7 +1726,7 @@
                       <ref role="3cqZAo" node="4pIcGABAi7N" resolve="defaultImages" />
                     </node>
                     <node concept="liA8E" id="4pIcGABAjil" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
+                      <ref role="37wK5l" to="guwi:~File.mkdirs()" resolve="mkdirs" />
                     </node>
                   </node>
                 </node>
@@ -1780,7 +1780,7 @@
                         <ref role="3cqZAo" node="4pIcGAB_SKE" resolve="imagefile" />
                       </node>
                       <node concept="liA8E" id="4pIcGAB_Uxm" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="54ozzUwo46J" role="37wK5m">
@@ -1835,7 +1835,7 @@
                               <ref role="3cqZAo" node="4pIcGABAi7N" resolve="defaultImages" />
                             </node>
                             <node concept="liA8E" id="6JxhqyiyM2D" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                              <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                             </node>
                           </node>
                         </node>
@@ -2310,7 +2310,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="4PBxP351IPc" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="37vLTw" id="mQGf9iJRde" role="37wK5m">
                                     <ref role="3cqZAo" node="mQGf9iJPql" resolve="nameOfReferencedDoc" />
                                   </node>
@@ -2364,7 +2364,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="mQGf9iK4XY" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="37vLTw" id="mQGf9iK4XZ" role="37wK5m">
                                     <ref role="3cqZAo" node="4PBxP351xv$" resolve="nameOfReferencedSection" />
                                   </node>
@@ -2484,7 +2484,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="mQGf9iJKlq" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="37vLTw" id="mQGf9iJKlr" role="37wK5m">
                                     <ref role="3cqZAo" node="mQGf9iJKl4" resolve="nameOfReferencedDoc" />
                                   </node>

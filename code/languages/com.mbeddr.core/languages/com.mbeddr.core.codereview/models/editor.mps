@@ -223,7 +223,7 @@
       </concept>
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
-      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ng" index="s8sZD" />
+      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
       <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
         <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
         <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
@@ -443,11 +443,11 @@
                             </node>
                             <node concept="2OqwBi" id="3DYDRw0P9mu" role="3uHU7B">
                               <node concept="2YIFZM" id="3DYDRw0P9mv" role="2Oq$k0">
-                                <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                                <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                                 <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                               </node>
                               <node concept="liA8E" id="3DYDRw0P9mw" role="2OqNvi">
-                                <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                                <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                               </node>
                             </node>
                           </node>
@@ -579,10 +579,10 @@
                           <node concept="2OqwBi" id="5j5biBQHVwl" role="3uHU7B">
                             <node concept="2YIFZM" id="5j5biBQHVwm" role="2Oq$k0">
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                             </node>
                             <node concept="liA8E" id="5j5biBQHVwn" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -822,7 +822,7 @@
               </node>
               <node concept="3clFbF" id="3DYDRw0SwyE" role="3cqZAp">
                 <node concept="2YIFZM" id="3DYDRw0SwEQ" role="3clFbG">
-                  <ref role="37wK5l" to="btm1:~StringUtils.rightPad(java.lang.String,int):java.lang.String" resolve="rightPad" />
+                  <ref role="37wK5l" to="btm1:~StringUtils.rightPad(java.lang.String,int)" resolve="rightPad" />
                   <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                   <node concept="37vLTw" id="3DYDRw0SwIC" role="37wK5m">
                     <ref role="3cqZAo" node="3DYDRw0Sv7R" resolve="s" />
@@ -852,7 +852,7 @@
             <node concept="3clFbS" id="5ZqHcKGK8Vt" role="2VODD2">
               <node concept="3clFbF" id="3DYDRw0RPwq" role="3cqZAp">
                 <node concept="2YIFZM" id="3DYDRw0RPNG" role="3clFbG">
-                  <ref role="37wK5l" to="btm1:~StringUtils.rightPad(java.lang.String,int):java.lang.String" resolve="rightPad" />
+                  <ref role="37wK5l" to="btm1:~StringUtils.rightPad(java.lang.String,int)" resolve="rightPad" />
                   <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                   <node concept="2EnYce" id="3DYDRw0RPGM" role="37wK5m">
                     <node concept="2OqwBi" id="79i$vAY5P56" role="2Oq$k0">
@@ -865,7 +865,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="79i$vAY5P58" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="3cmrfG" id="3DYDRw0RQ0Y" role="37wK5m">

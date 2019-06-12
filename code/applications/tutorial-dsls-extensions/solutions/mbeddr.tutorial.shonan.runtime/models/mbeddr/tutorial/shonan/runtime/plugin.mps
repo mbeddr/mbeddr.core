@@ -2,9 +2,9 @@
 <model ref="r:d8b1d80a-31f5-40eb-88dd-5fc679b6223b(mbeddr.tutorial.shonan.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
@@ -10188,7 +10188,6 @@
     <property role="TrG5h" value="IValueOperations" />
     <node concept="2tJIrI" id="3SeAmI7MbG5" role="jymVt" />
     <node concept="3clFb_" id="3SeAmI7M3up" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="min" />
       <node concept="3clFbS" id="3SeAmI7M3us" role="3clF47" />
@@ -10204,7 +10203,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="3SeAmI7M3wr" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="max" />
       <node concept="3clFbS" id="3SeAmI7M3ws" role="3clF47" />
@@ -10220,7 +10218,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="3SeAmI7M3xh" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="sub" />
       <node concept="3clFbS" id="3SeAmI7M3xi" role="3clF47" />
@@ -10236,7 +10233,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="3SeAmI7MivI" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="sub" />
       <node concept="3clFbS" id="3SeAmI7MivL" role="3clF47" />
@@ -10250,7 +10246,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="3SeAmI7M3yj" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="add" />
       <node concept="3clFbS" id="3SeAmI7M3yk" role="3clF47" />
@@ -10276,7 +10271,6 @@
     <property role="TrG5h" value="IValue" />
     <node concept="2tJIrI" id="3SeAmI7M28n" role="jymVt" />
     <node concept="3clFb_" id="3SeAmI7M2a2" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="asNode" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -10288,7 +10282,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="3SeAmI7M2a7" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="asInteger" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />

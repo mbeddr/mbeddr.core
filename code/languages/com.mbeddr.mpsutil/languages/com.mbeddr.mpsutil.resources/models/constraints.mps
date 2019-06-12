@@ -91,7 +91,7 @@
               <node concept="3clFbF" id="5wA$eKdv0lH" role="3cqZAp">
                 <node concept="2YIFZM" id="5wA$eKdv0lJ" role="3clFbG">
                   <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
-                  <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String):float" resolve="parseFloat" />
+                  <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
                   <node concept="1Wqviy" id="5wA$eKdv0lK" role="37wK5m" />
                 </node>
               </node>
@@ -128,7 +128,7 @@
             <node concept="3clFbS" id="5wA$eKdv271" role="SfCbr">
               <node concept="3clFbF" id="5wA$eKdv272" role="3cqZAp">
                 <node concept="2YIFZM" id="5wA$eKdv273" role="3clFbG">
-                  <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String):float" resolve="parseFloat" />
+                  <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
                   <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
                   <node concept="1Wqviy" id="5wA$eKdv274" role="37wK5m" />
                 </node>

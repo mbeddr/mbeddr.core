@@ -103,6 +103,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -256,7 +257,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="tSjOfAav48" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="37vLTw" id="tSjOfAavrZ" role="37wK5m">
                             <ref role="3cqZAo" node="tSjOfAadGQ" resolve="fmName" />
                           </node>
@@ -281,8 +282,11 @@
               <ref role="3uigEE" to="vy7l:2hSqXWTF6wS" resolve="FeatureModelConsistencyChecker" />
             </node>
             <node concept="2ShNRf" id="tSjOfAadIg" role="33vP2m">
-              <node concept="HV5vD" id="tSjOfAjC07" role="2ShVmc">
-                <ref role="HV5vE" to="vy7l:2hSqXWTF6wS" resolve="FeatureModelConsistencyChecker" />
+              <node concept="1pGfFk" id="3$vwvl9T_FT" role="2ShVmc">
+                <ref role="37wK5l" to="vy7l:3$vwvl9SYJj" resolve="FeatureModelConsistencyChecker" />
+                <node concept="37vLTw" id="3$vwvl9TAsB" role="37wK5m">
+                  <ref role="3cqZAo" node="3$vwvl9T_Sj" resolve="repo" />
+                </node>
               </node>
             </node>
           </node>
@@ -312,7 +316,7 @@
                     <ref role="3cqZAo" node="tSjOfAaXSM" resolve="e" />
                   </node>
                   <node concept="liA8E" id="tSjOfAaYtQ" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -333,6 +337,12 @@
       <node concept="3Tm1VV" id="tSjOfAadGi" role="1B3o_S" />
       <node concept="3uibUv" id="6A4JgbUYiEQ" role="3clF45">
         <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+      </node>
+      <node concept="37vLTG" id="3$vwvl9T_Sj" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="3$vwvl9TA4T" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="37vLTG" id="tSjOfAaebb" role="3clF46">
         <property role="TrG5h" value="m" />
@@ -418,7 +428,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="tSjOfAjCIb" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="37vLTw" id="tSjOfAjCIc" role="37wK5m">
                             <ref role="3cqZAo" node="tSjOfAjCII" resolve="cmName" />
                           </node>
@@ -443,8 +453,11 @@
               <ref role="3uigEE" to="vy7l:tSjOfAiztB" resolve="ConfigurationModelConsistencyChecker" />
             </node>
             <node concept="2ShNRf" id="tSjOfAjCIj" role="33vP2m">
-              <node concept="HV5vD" id="tSjOfAjFCu" role="2ShVmc">
-                <ref role="HV5vE" to="vy7l:tSjOfAiztB" resolve="ConfigurationModelConsistencyChecker" />
+              <node concept="1pGfFk" id="3$vwvl9Twaj" role="2ShVmc">
+                <ref role="37wK5l" to="vy7l:3$vwvl9T0UG" resolve="ConfigurationModelConsistencyChecker" />
+                <node concept="37vLTw" id="3$vwvl9TwKa" role="37wK5m">
+                  <ref role="3cqZAo" node="3$vwvl9TwmF" resolve="repo" />
+                </node>
               </node>
             </node>
           </node>
@@ -474,7 +487,7 @@
                     <ref role="3cqZAo" node="tSjOfAjCI_" resolve="e" />
                   </node>
                   <node concept="liA8E" id="tSjOfAjCI$" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -495,6 +508,12 @@
       <node concept="3Tm1VV" id="tSjOfAjCIE" role="1B3o_S" />
       <node concept="3uibUv" id="6A4JgbUY5kG" role="3clF45">
         <ref role="3uigEE" to="vy7l:tSjOfAjb8n" resolve="ConfigurationModelAnalysisResult" />
+      </node>
+      <node concept="37vLTG" id="3$vwvl9TwmF" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="3$vwvl9Twzf" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="37vLTG" id="tSjOfAjCIG" role="3clF46">
         <property role="TrG5h" value="m" />
@@ -540,7 +559,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="44j14BH3XjD" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="37vLTw" id="44j14BH3Y4e" role="37wK5m">
                             <ref role="3cqZAo" node="44j14BH3K9y" resolve="imName" />
                           </node>
@@ -567,8 +586,11 @@
               <ref role="3uigEE" to="vy7l:1X8myJOPC6R" resolve="ModuleConsistencyChecker" />
             </node>
             <node concept="2ShNRf" id="44j14BH3K97" role="33vP2m">
-              <node concept="HV5vD" id="44j14BH4096" role="2ShVmc">
-                <ref role="HV5vE" to="vy7l:1X8myJOPC6R" resolve="ModuleConsistencyChecker" />
+              <node concept="1pGfFk" id="3$vwvl9T60k" role="2ShVmc">
+                <ref role="37wK5l" to="vy7l:3$vwvl9SQf3" resolve="ModuleConsistencyChecker" />
+                <node concept="37vLTw" id="3$vwvl9T6mP" role="37wK5m">
+                  <ref role="3cqZAo" node="3$vwvl9T4Sr" resolve="repo" />
+                </node>
               </node>
             </node>
           </node>
@@ -612,7 +634,7 @@
                     <ref role="3cqZAo" node="44j14BH3K9p" resolve="e" />
                   </node>
                   <node concept="liA8E" id="44j14BH3K9o" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -634,6 +656,12 @@
       <node concept="_YKpA" id="44j14BHqjyW" role="3clF45">
         <node concept="3uibUv" id="44j14BHqjUN" role="_ZDj9">
           <ref role="3uigEE" to="vy7l:1X8myJOPCj$" resolve="VariabilityAnalysisResult" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3$vwvl9T4Sr" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="3$vwvl9T5dj" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="44j14BH3K9w" role="3clF46">
@@ -677,6 +705,9 @@
                 </node>
                 <node concept="liA8E" id="1X8myJOImru" role="2OqNvi">
                   <ref role="37wK5l" to="ky9n:2hSqXWTF6yB" resolve="checkConsistency" />
+                  <node concept="37vLTw" id="3$vwvl9Vli8" role="37wK5m">
+                    <ref role="3cqZAo" node="3$vwvl9VkvN" resolve="repo" />
+                  </node>
                   <node concept="37vLTw" id="1X8myJOIoym" role="37wK5m">
                     <ref role="3cqZAo" node="1X8myJOImrI" resolve="m" />
                   </node>
@@ -692,7 +723,7 @@
                     <ref role="3cqZAo" node="1X8myJOImrA" resolve="e" />
                   </node>
                   <node concept="liA8E" id="1X8myJOImr_" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -714,6 +745,12 @@
       <node concept="_YKpA" id="1X8myJOImrG" role="3clF45">
         <node concept="3uibUv" id="4Q07H0PQRPr" role="_ZDj9">
           <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3$vwvl9VkvN" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="3$vwvl9VkHn" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="1X8myJOImrI" role="3clF46">
@@ -753,6 +790,9 @@
                 </node>
                 <node concept="liA8E" id="1X8myJOVvDX" role="2OqNvi">
                   <ref role="37wK5l" to="ky9n:1X8myJOUIph" resolve="checkConsistency" />
+                  <node concept="37vLTw" id="3$vwvl9ULp9" role="37wK5m">
+                    <ref role="3cqZAo" node="3$vwvl9UGJT" resolve="repo" />
+                  </node>
                   <node concept="37vLTw" id="1X8myJOVvDY" role="37wK5m">
                     <ref role="3cqZAo" node="1X8myJOVvEd" resolve="m" />
                   </node>
@@ -768,7 +808,7 @@
                     <ref role="3cqZAo" node="1X8myJOVvE5" resolve="e" />
                   </node>
                   <node concept="liA8E" id="1X8myJOVvE4" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -790,6 +830,12 @@
       <node concept="_YKpA" id="1X8myJOVvEb" role="3clF45">
         <node concept="3uibUv" id="1X8myJOVwms" role="_ZDj9">
           <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3$vwvl9UGJT" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="3$vwvl9UGW8" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="1X8myJOVvEd" role="3clF46">
@@ -836,6 +882,9 @@
                 </node>
                 <node concept="liA8E" id="6eIJF_HROcl" role="2OqNvi">
                   <ref role="37wK5l" to="i6v0:1X8myJOLdq5" resolve="checkConsistency" />
+                  <node concept="37vLTw" id="3$vwvl9Vmyg" role="37wK5m">
+                    <ref role="3cqZAo" node="3$vwvl9VlDm" resolve="repo" />
+                  </node>
                   <node concept="37vLTw" id="6eIJF_HROcm" role="37wK5m">
                     <ref role="3cqZAo" node="6eIJF_HROc_" resolve="m" />
                   </node>
@@ -851,7 +900,7 @@
                     <ref role="3cqZAo" node="6eIJF_HROct" resolve="e" />
                   </node>
                   <node concept="liA8E" id="6eIJF_HROcs" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -873,6 +922,12 @@
       <node concept="_YKpA" id="6eIJF_HROcz" role="3clF45">
         <node concept="3uibUv" id="6eIJF_HROc$" role="_ZDj9">
           <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3$vwvl9VlDm" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="3$vwvl9VlPJ" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="37vLTG" id="6eIJF_HROc_" role="3clF46">
@@ -915,7 +970,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4hqHmbTCXKK" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                   <node concept="37vLTw" id="4hqHmbTCXO4" role="37wK5m">
                     <ref role="3cqZAo" node="4hqHmbTCWS9" resolve="msgPrefix" />
                   </node>
@@ -974,7 +1029,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="6BowXlDOZuI" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="2OqwBi" id="6BowXlDOZ$p" role="37wK5m">
                     <node concept="2GrUjf" id="6BowXlDOZzD" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="6BowXlDOYHO" resolve="r" />

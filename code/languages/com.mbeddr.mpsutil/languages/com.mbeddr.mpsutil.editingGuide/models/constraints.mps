@@ -171,7 +171,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -277,7 +277,7 @@
               <property role="TrG5h" value="allImportedModels" />
               <node concept="2YIFZM" id="3Wx3Ow96AFF" role="33vP2m">
                 <ref role="1Pybhc" to="w1kc:~SModelOperations" resolve="SModelOperations" />
-                <ref role="37wK5l" to="w1kc:~SModelOperations.allImportedModels(org.jetbrains.mps.openapi.model.SModel):java.util.List" resolve="allImportedModels" />
+                <ref role="37wK5l" to="w1kc:~SModelOperations.allImportedModels(org.jetbrains.mps.openapi.model.SModel)" resolve="allImportedModels" />
                 <node concept="2OqwBi" id="3Wx3Ow96AFG" role="37wK5m">
                   <node concept="2rP1CM" id="3Wx3Ow96AFH" role="2Oq$k0" />
                   <node concept="I4A8Y" id="3Wx3Ow96AFI" role="2OqNvi" />
@@ -456,7 +456,7 @@
               <node concept="3cpWsn" id="PYICs0YmxH" role="3cpWs9">
                 <property role="TrG5h" value="allImportedModels" />
                 <node concept="2YIFZM" id="PYICs0YmxI" role="33vP2m">
-                  <ref role="37wK5l" to="w1kc:~SModelOperations.allImportedModels(org.jetbrains.mps.openapi.model.SModel):java.util.List" resolve="allImportedModels" />
+                  <ref role="37wK5l" to="w1kc:~SModelOperations.allImportedModels(org.jetbrains.mps.openapi.model.SModel)" resolve="allImportedModels" />
                   <ref role="1Pybhc" to="w1kc:~SModelOperations" resolve="SModelOperations" />
                   <node concept="2OqwBi" id="PYICs0YmxJ" role="37wK5m">
                     <node concept="2rP1CM" id="PYICs0YmxK" role="2Oq$k0" />

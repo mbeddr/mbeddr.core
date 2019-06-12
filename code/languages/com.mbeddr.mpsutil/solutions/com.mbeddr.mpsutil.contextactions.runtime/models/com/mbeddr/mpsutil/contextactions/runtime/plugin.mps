@@ -233,7 +233,7 @@
               <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
             </node>
             <node concept="2YIFZM" id="5tr7YH$Uku9" role="33vP2m">
-              <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
               <node concept="1KvdUw" id="5tr7YH$Ukua" role="37wK5m" />
             </node>
@@ -527,7 +527,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7vUP_qcxt7X" role="2OqNvi">
-                  <ref role="37wK5l" to="qkt:~DefaultActionGroup.add(com.intellij.openapi.actionSystem.AnAction):void" resolve="add" />
+                  <ref role="37wK5l" to="qkt:~DefaultActionGroup.add(com.intellij.openapi.actionSystem.AnAction)" resolve="add" />
                   <node concept="2ShNRf" id="7vUP_qcyjXb" role="37wK5m">
                     <node concept="1pGfFk" id="7vUP_qcykgP" role="2ShVmc">
                       <ref role="37wK5l" to="1ne1:7vUP_qcxVPt" resolve="ChangeViewAction" />
@@ -559,7 +559,7 @@
                     <ref role="3cqZAo" node="QmW6bqNGmN" resolve="tool" />
                   </node>
                   <node concept="liA8E" id="7vUP_qcxfPx" role="2OqNvi">
-                    <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow():com.intellij.openapi.wm.ToolWindow" resolve="getToolWindow" />
+                    <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
                   </node>
                 </node>
                 <node concept="3uibUv" id="7vUP_qcxggA" role="10QFUM">
@@ -568,7 +568,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7vUP_qcxi0V" role="2OqNvi">
-              <ref role="37wK5l" to="b9kz:~ToolWindowEx.setAdditionalGearActions(com.intellij.openapi.actionSystem.ActionGroup):void" resolve="setAdditionalGearActions" />
+              <ref role="37wK5l" to="b9kz:~ToolWindowEx.setAdditionalGearActions(com.intellij.openapi.actionSystem.ActionGroup)" resolve="setAdditionalGearActions" />
               <node concept="2OqwBi" id="7vUP_qcxoai" role="37wK5m">
                 <node concept="2WthIp" id="7vUP_qcxoal" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="7vUP_qcxoan" role="2OqNvi">
@@ -581,7 +581,7 @@
         <node concept="3clFbH" id="7MNKXiIOLBT" role="3cqZAp" />
         <node concept="3clFbF" id="QmW6bqNB94" role="3cqZAp">
           <node concept="2YIFZM" id="QmW6bqNB9U" role="3clFbG">
-            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable):void" resolve="runInUIThreadNoWait" />
+            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable)" resolve="runInUIThreadNoWait" />
             <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
             <node concept="1bVj0M" id="QmW6bqNBa6" role="37wK5m">
               <node concept="3clFbS" id="QmW6bqNBa7" role="1bW5cS">
@@ -591,7 +591,7 @@
                       <ref role="3cqZAo" node="QmW6bqNGmN" resolve="tool" />
                     </node>
                     <node concept="liA8E" id="QmW6bqNCn0" role="2OqNvi">
-                      <ref role="37wK5l" to="71xd:~BaseTool.makeAvailableLater():void" resolve="makeAvailableLater" />
+                      <ref role="37wK5l" to="71xd:~BaseTool.makeAvailableLater()" resolve="makeAvailableLater" />
                     </node>
                   </node>
                 </node>

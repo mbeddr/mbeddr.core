@@ -340,7 +340,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1wGuEUwtQtA" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                        <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
                       </node>
                     </node>
                   </node>
@@ -378,18 +378,18 @@
               <node concept="2OqwBi" id="79uxL3R5lQB" role="3uHU7w">
                 <node concept="1Wqviy" id="79uxL3R5lra" role="2Oq$k0" />
                 <node concept="liA8E" id="79uxL3R5mPd" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
               </node>
               <node concept="2OqwBi" id="79uxL3R5jDh" role="3uHU7B">
                 <node concept="2OqwBi" id="79uxL3R5inQ" role="2Oq$k0">
                   <node concept="1Wqviy" id="79uxL3R5i7_" role="2Oq$k0" />
                   <node concept="liA8E" id="79uxL3R5jl6" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                    <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
                   </node>
                 </node>
                 <node concept="liA8E" id="79uxL3R5kDw" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
               </node>
             </node>

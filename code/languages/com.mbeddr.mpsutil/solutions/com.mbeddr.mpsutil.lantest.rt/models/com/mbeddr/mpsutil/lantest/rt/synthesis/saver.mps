@@ -245,7 +245,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="7rZVxqnvm57" role="2OqNvi">
-                <ref role="37wK5l" to="25x5:~DateFormat.format(java.util.Date):java.lang.String" resolve="format" />
+                <ref role="37wK5l" to="25x5:~DateFormat.format(java.util.Date)" resolve="format" />
                 <node concept="2ShNRf" id="7rZVxqnvm9d" role="37wK5m">
                   <node concept="1pGfFk" id="7rZVxqnvmGo" role="2ShVmc">
                     <ref role="37wK5l" to="33ny:~Date.&lt;init&gt;()" resolve="Date" />
@@ -324,7 +324,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="3Ts5Ln3Ittz" role="2OqNvi">
-                <ref role="37wK5l" to="25x5:~NumberFormat.format(long):java.lang.String" resolve="format" />
+                <ref role="37wK5l" to="25x5:~NumberFormat.format(long)" resolve="format" />
                 <node concept="37vLTw" id="3Ts5Ln3Iu0k" role="37wK5m">
                   <ref role="3cqZAo" node="3Ts5Ln3Iu0e" resolve="size" />
                 </node>
@@ -475,7 +475,7 @@
             <node concept="17QB3L" id="3OCr4RATa2Q" role="1tU5fm" />
             <node concept="3cpWs3" id="3OCr4RATa2X" role="33vP2m">
               <node concept="2YIFZM" id="3OCr4RATa2Y" role="3uHU7w">
-                <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
                 <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
               </node>
               <node concept="3cpWs3" id="3OCr4RATa2Z" role="3uHU7B">

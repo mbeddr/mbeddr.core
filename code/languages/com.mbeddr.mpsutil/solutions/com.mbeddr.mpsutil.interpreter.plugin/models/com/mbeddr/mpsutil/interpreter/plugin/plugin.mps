@@ -337,11 +337,11 @@
             </node>
             <node concept="2OqwBi" id="2hXd3rt0pxz" role="33vP2m">
               <node concept="2YIFZM" id="2hXd3rt0px$" role="2Oq$k0">
-                <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+                <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
                 <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
               </node>
               <node concept="liA8E" id="2hXd3rt0px_" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
                 <node concept="3VsKOn" id="2hXd3rt0pxA" role="37wK5m">
                   <ref role="3VsUkX" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
                 </node>
@@ -356,11 +356,11 @@
                 <ref role="3cqZAo" node="2hXd3rt0pxy" resolve="mpsCoreComponents" />
               </node>
               <node concept="liA8E" id="2hXd3rt0q$x" role="2OqNvi">
-                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getClassLoaderManager():jetbrains.mps.classloading.ClassLoaderManager" resolve="getClassLoaderManager" />
+                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getClassLoaderManager()" resolve="getClassLoaderManager" />
               </node>
             </node>
             <node concept="liA8E" id="2hXd3rt0r9N" role="2OqNvi">
-              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.addListener(jetbrains.mps.classloading.DeployListener):void" resolve="addListener" />
+              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.addListener(jetbrains.mps.classloading.DeployListener)" resolve="addListener" />
               <node concept="2OqwBi" id="2hXd3rt0wTU" role="37wK5m">
                 <node concept="2WthIp" id="2hXd3rt0wTX" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="2hXd3rt0wTZ" role="2OqNvi">
@@ -382,11 +382,11 @@
             </node>
             <node concept="2OqwBi" id="2hXd3rt0x5P" role="33vP2m">
               <node concept="2YIFZM" id="2hXd3rt0x5Q" role="2Oq$k0">
-                <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+                <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
                 <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
               </node>
               <node concept="liA8E" id="2hXd3rt0x5R" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
                 <node concept="3VsKOn" id="2hXd3rt0x5S" role="37wK5m">
                   <ref role="3VsUkX" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
                 </node>
@@ -401,11 +401,11 @@
                 <ref role="3cqZAo" node="2hXd3rt0x5N" resolve="mpsCoreComponents" />
               </node>
               <node concept="liA8E" id="2hXd3rt0x5X" role="2OqNvi">
-                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getClassLoaderManager():jetbrains.mps.classloading.ClassLoaderManager" resolve="getClassLoaderManager" />
+                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getClassLoaderManager()" resolve="getClassLoaderManager" />
               </node>
             </node>
             <node concept="liA8E" id="2hXd3rt0x5Y" role="2OqNvi">
-              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.removeListener(jetbrains.mps.classloading.DeployListener):void" resolve="removeListener" />
+              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.removeListener(jetbrains.mps.classloading.DeployListener)" resolve="removeListener" />
               <node concept="2OqwBi" id="2hXd3rt0x5Z" role="37wK5m">
                 <node concept="2WthIp" id="2hXd3rt0x60" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="2hXd3rt0x61" role="2OqNvi">

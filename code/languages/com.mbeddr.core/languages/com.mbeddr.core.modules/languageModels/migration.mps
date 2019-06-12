@@ -8445,7 +8445,7 @@
               <ref role="3cqZAo" node="7J4_xE8dm7T" resolve="m" />
             </node>
             <node concept="liA8E" id="7J4_xE8do8I" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
           <node concept="3clFbS" id="7J4_xE8dnTB" role="2LFqv$">
@@ -8502,7 +8502,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7J4_xE8dkI8" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty):java.lang.String" resolve="getProperty" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty)" resolve="getProperty" />
                         <node concept="37vLTw" id="7J4_xE8dkI9" role="37wK5m">
                           <ref role="3cqZAo" node="7J4_xE8dkHZ" resolve="property" />
                         </node>
@@ -8534,7 +8534,7 @@
                       <property role="Xl_RC" value="" />
                     </node>
                     <node concept="liA8E" id="7J4_xE8ds0z" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="37vLTw" id="7J4_xE8ds1B" role="37wK5m">
                         <ref role="3cqZAo" node="7J4_xE8dkI3" resolve="value" />
                       </node>
@@ -8583,7 +8583,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7J4_xE8d_km" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty):java.lang.String" resolve="getProperty" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty)" resolve="getProperty" />
                         <node concept="37vLTw" id="7J4_xE8d_kn" role="37wK5m">
                           <ref role="3cqZAo" node="7J4_xE8d_kd" resolve="property" />
                         </node>
@@ -8615,7 +8615,7 @@
                       <property role="Xl_RC" value="" />
                     </node>
                     <node concept="liA8E" id="7J4_xE8d_ky" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="37vLTw" id="7J4_xE8d_kz" role="37wK5m">
                         <ref role="3cqZAo" node="7J4_xE8d_kh" resolve="value" />
                       </node>

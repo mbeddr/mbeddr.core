@@ -301,11 +301,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -314,7 +314,7 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -359,7 +359,7 @@
                             <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                           </node>
                           <node concept="liA8E" id="5tCRMPTcnPt" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println():void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println()" resolve="println" />
                           </node>
                         </node>
                         <node concept="2b32R4" id="5tCRMPTcnT8" role="lGtFl">
@@ -416,10 +416,10 @@
                 </node>
               </node>
               <node concept="liA8E" id="5tCRMPTlzLo" role="2OqNvi">
-                <ref role="37wK5l" to="18ew:~ModelComputeRunnable.runRead(org.jetbrains.mps.openapi.module.ModelAccess):java.lang.Object" resolve="runRead" />
+                <ref role="37wK5l" to="18ew:~ModelComputeRunnable.runRead(org.jetbrains.mps.openapi.module.ModelAccess)" resolve="runRead" />
                 <node concept="2YIFZM" id="5tCRMPTlRna" role="37wK5m">
                   <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-                  <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
+                  <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
                 </node>
               </node>
             </node>
@@ -464,7 +464,7 @@
                             <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                           </node>
                           <node concept="liA8E" id="5tCRMPTxfYr" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println():void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println()" resolve="println" />
                           </node>
                         </node>
                         <node concept="2b32R4" id="5tCRMPTxfYs" role="lGtFl">
@@ -488,10 +488,10 @@
                 </node>
               </node>
               <node concept="liA8E" id="5tCRMPTxfYM" role="2OqNvi">
-                <ref role="37wK5l" to="18ew:~ModelComputeRunnable.runRead(org.jetbrains.mps.openapi.module.ModelAccess):java.lang.Object" resolve="runRead" />
+                <ref role="37wK5l" to="18ew:~ModelComputeRunnable.runRead(org.jetbrains.mps.openapi.module.ModelAccess)" resolve="runRead" />
                 <node concept="2YIFZM" id="5tCRMPTxfYN" role="37wK5m">
                   <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-                  <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
+                  <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
                 </node>
               </node>
             </node>
@@ -756,7 +756,7 @@
           <node concept="3clFbF" id="3EZUZhn2e7F" role="3cqZAp">
             <node concept="2YIFZM" id="3EZUZhn2eac" role="3clFbG">
               <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-              <ref role="37wK5l" to="33ny:~Collections.emptyList():java.util.List" resolve="emptyList" />
+              <ref role="37wK5l" to="33ny:~Collections.emptyList()" resolve="emptyList" />
             </node>
           </node>
           <node concept="29HgVG" id="3EZUZhn2evq" role="lGtFl">
@@ -813,7 +813,7 @@
           <node concept="3cpWs6" id="5_UfM9yI80l" role="3cqZAp">
             <node concept="2YIFZM" id="5_UfM9yIc4u" role="3cqZAk">
               <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
-              <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
+              <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
               <node concept="3uibUv" id="5_UfM9yIc4v" role="3PaCim">
                 <ref role="3uigEE" to="v95p:~MenuPart" resolve="MenuPart" />
                 <node concept="3uibUv" id="5_UfM9yIc4w" role="11_B2D">
@@ -896,9 +896,9 @@
                       <ref role="3cqZAo" node="5_UfM9y15Yq" resolve="result" />
                     </node>
                     <node concept="liA8E" id="5_UfM9y1wxK" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                      <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
                       <node concept="2YIFZM" id="4sA1wzjcsC4" role="37wK5m">
-                        <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
+                        <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
                         <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
                         <node concept="3uibUv" id="h6sCaJPNTf" role="3PaCim">
                           <ref role="3uigEE" to="v95p:~MenuPart" resolve="MenuPart" />

@@ -341,7 +341,7 @@
                             <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                           </node>
                           <node concept="liA8E" id="2ovHP4NwX6C" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="3cpWs3" id="2ovHP4NwX6D" role="37wK5m">
                               <node concept="37vLTw" id="2ovHP4NB9lO" role="3uHU7w">
                                 <ref role="3cqZAo" node="2ovHP4NyHVU" resolve="it" />
@@ -680,7 +680,7 @@
                                             </node>
                                           </node>
                                           <node concept="liA8E" id="6lrp79e90cg" role="2OqNvi">
-                                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                             <node concept="2OqwBi" id="6lrp79e90ch" role="37wK5m">
                                               <node concept="37vLTw" id="6lrp79e90ci" role="2Oq$k0">
                                                 <ref role="3cqZAo" node="6lrp79e90bT" resolve="h" />
@@ -753,7 +753,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="6lrp79e90cI" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                         <node concept="2OqwBi" id="6lrp79e90cJ" role="37wK5m">
                                           <node concept="37vLTw" id="6lrp79e90cK" role="2Oq$k0">
                                             <ref role="3cqZAo" node="6lrp79e90bB" resolve="functionSignature" />
@@ -941,7 +941,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="6lrp79e90dY" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                     <node concept="37vLTw" id="6lrp79e90dZ" role="37wK5m">
                                       <ref role="3cqZAo" node="6lrp79e90dg" resolve="calledFunName" />
                                     </node>

@@ -4,7 +4,7 @@
   <languages>
     <use id="f3ed62ca-3490-40d0-890b-9b3133cc2ead" name="com.mbeddr.cc.requirements.c" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="-1" />
     <use id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites" version="-1" />
     <use id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components" version="0" />
@@ -365,8 +365,6 @@
     </language>
     <language id="7d323e61-8358-4656-a071-a2bb68438615" name="com.mbeddr.core.codereview">
       <concept id="4901333676673876644" name="com.mbeddr.core.codereview.structure.CodeReviewData" flags="ng" index="3RMOIA">
-        <property id="279511073609046054" name="lastReviewState" index="IC5RL" />
-        <property id="1687004685686364087" name="codeState" index="37E2p_" />
         <property id="4901333676674426578" name="reviewIsCurrent" index="3ROUZg" />
         <property id="4901333676674177026" name="lastReviewTimestamp" index="3RPX40" />
         <property id="4901333676674177031" name="lastReviewReviewer" index="3RPX45" />
@@ -740,7 +738,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -844,9 +842,6 @@
         <reference id="6209278014151498295" name="protocolErrorMsgTable" index="3Z3Pd3" />
         <reference id="6209278014151498296" name="protocolErrorMsgDef" index="3Z3Pdc" />
         <child id="4491876417845484926" name="contents" index="2EX0iN" />
-      </concept>
-      <concept id="4491876417845484919" name="com.mbeddr.ext.components.structure.Interface" flags="ng" index="2EX0iU">
-        <property id="1539255704408883009" name="canBeUsedAsType" index="1M_7uD" />
       </concept>
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
@@ -4956,9 +4951,7 @@
           <property role="3RPX40" value="1412119978179" />
           <property role="3RPX45" value="zaur" />
           <property role="3RPX4i" value="206973739" />
-          <property role="IC5RL" value="ready" />
           <property role="3ROUZg" value="true" />
-          <property role="37E2p_" value="ready" />
         </node>
       </node>
       <node concept="2NXPZ9" id="4usdeMNSK97" role="fMItF">
@@ -4994,9 +4987,7 @@
           <property role="3RPX40" value="1412120033188" />
           <property role="3RPX45" value="zaur" />
           <property role="3RPX4i" value="390831465" />
-          <property role="IC5RL" value="raw" />
           <property role="3ROUZg" value="false" />
-          <property role="37E2p_" value="raw" />
         </node>
       </node>
       <node concept="2NXPZ9" id="4usdeMNSHXR" role="fMItF">
@@ -5209,9 +5200,7 @@
           <property role="3RPX40" value="1412120037587" />
           <property role="3RPX45" value="zaur" />
           <property role="3RPX4i" value="2051785108" />
-          <property role="IC5RL" value="raw" />
           <property role="3ROUZg" value="true" />
-          <property role="37E2p_" value="raw" />
         </node>
       </node>
       <node concept="2NXPZ9" id="4usdeMNSK98" role="fMItF">
@@ -13701,7 +13690,6 @@
       <node concept="2EX0iR" id="6xLvLC0aXJK" role="fMItF">
         <property role="2OOxQR" value="true" />
         <property role="TrG5h" value="NmeaCommandHandler" />
-        <property role="1M_7uD" value="true" />
         <node concept="2EX0iL" id="6xLvLC0aXJL" role="2EX0iN">
           <property role="TrG5h" value="canHandle" />
           <node concept="3TlMgk" id="6xLvLC0aXJM" role="2C2TGm">

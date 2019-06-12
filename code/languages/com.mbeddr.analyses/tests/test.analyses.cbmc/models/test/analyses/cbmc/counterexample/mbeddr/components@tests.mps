@@ -20,12 +20,15 @@
     <import index="3h46" ref="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -147,6 +150,12 @@
               <node concept="NRdvd" id="k5g7iqvykS" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2OqwBi" id="6ODCss37zyF" role="37wK5m">
+                  <node concept="1jxXqW" id="6ODCss37ziB" role="2Oq$k0" />
+                  <node concept="liA8E" id="6ODCss37$uX" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="2YIFZM" id="k5g7iqvykT" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
@@ -244,6 +253,12 @@
               <node concept="NRdvd" id="k5g7iqvDzj" role="2Oq$k0">
                 <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
                 <ref role="37wK5l" to="dxnt:5KvlJsgh9pp" resolve="checkPrePostCondition" />
+                <node concept="2OqwBi" id="71B0VArYP0t" role="37wK5m">
+                  <node concept="1jxXqW" id="71B0VArYOEF" role="2Oq$k0" />
+                  <node concept="liA8E" id="71B0VArYPVM" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="2YIFZM" id="k5g7iqvDzk" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
@@ -427,6 +442,12 @@
               <node concept="NRdvd" id="5EwdfGVi74V" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2OqwBi" id="6ODCss37R34" role="37wK5m">
+                  <node concept="1jxXqW" id="6ODCss37R35" role="2Oq$k0" />
+                  <node concept="liA8E" id="6ODCss37R36" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="2YIFZM" id="5EwdfGVi74W" role="37wK5m">
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
@@ -576,6 +597,12 @@
               <node concept="NRdvd" id="57Wj6IPetoA" role="2Oq$k0">
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+                <node concept="2OqwBi" id="6ODCss37Q5D" role="37wK5m">
+                  <node concept="1jxXqW" id="6ODCss37Q5E" role="2Oq$k0" />
+                  <node concept="liA8E" id="6ODCss37Q5F" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="2YIFZM" id="57Wj6IPetoB" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
@@ -733,6 +760,12 @@
               <node concept="NRdvd" id="13FtHz69kyK" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2OqwBi" id="6ODCss37QiI" role="37wK5m">
+                  <node concept="1jxXqW" id="6ODCss37QiJ" role="2Oq$k0" />
+                  <node concept="liA8E" id="6ODCss37QiK" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="2YIFZM" id="13FtHz69kyL" role="37wK5m">
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
@@ -897,6 +930,12 @@
               <node concept="NRdvd" id="7UyXkgB5zCH" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2OqwBi" id="6ODCss37QyS" role="37wK5m">
+                  <node concept="1jxXqW" id="6ODCss37QyT" role="2Oq$k0" />
+                  <node concept="liA8E" id="6ODCss37QyU" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="2YIFZM" id="7UyXkgB5zCI" role="37wK5m">
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
@@ -1080,6 +1119,12 @@
               <node concept="NRdvd" id="7lmBuXrWBeI" role="2Oq$k0">
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+                <node concept="2OqwBi" id="6ODCss37QMY" role="37wK5m">
+                  <node concept="1jxXqW" id="6ODCss37QMZ" role="2Oq$k0" />
+                  <node concept="liA8E" id="6ODCss37QN0" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="2YIFZM" id="7lmBuXrWBeJ" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
@@ -1111,6 +1156,16 @@
           </node>
         </node>
         <node concept="3clFbH" id="7lmBuXrWBeT" role="3cqZAp" />
+        <node concept="3clFbF" id="4J_W74Pbc5u" role="3cqZAp">
+          <node concept="2YIFZM" id="4J_W74PbcbK" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:6izRX52tWlf" resolve="prettyPrintCounterexample" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="4J_W74PbcbO" role="37wK5m">
+              <ref role="3cqZAo" node="7lmBuXrWBeF" resolve="res" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4J_W74Pbcc_" role="3cqZAp" />
         <node concept="38rL1p" id="7lmBuXrWBeU" role="3cqZAp">
           <node concept="38rIoz" id="7lmBuXrWBeV" role="38rM$J">
             <property role="38rIoG" value="call" />
@@ -1131,18 +1186,6 @@
             <property role="38rMdH" value="*" />
           </node>
           <node concept="38rIoz" id="23JWu_CfPwQ" role="38rM$J">
-            <property role="38rIoG" value="*" />
-            <property role="38rMdH" value="*" />
-          </node>
-          <node concept="38rIoz" id="1nc7pln0L7B" role="38rM$J">
-            <property role="38rIoG" value="*" />
-            <property role="38rMdH" value="*" />
-          </node>
-          <node concept="38rIoz" id="1nc7pln0LcY" role="38rM$J">
-            <property role="38rIoG" value="*" />
-            <property role="38rMdH" value="*" />
-          </node>
-          <node concept="38rIoz" id="1nc7pln0Lip" role="38rM$J">
             <property role="38rIoG" value="*" />
             <property role="38rMdH" value="*" />
           </node>

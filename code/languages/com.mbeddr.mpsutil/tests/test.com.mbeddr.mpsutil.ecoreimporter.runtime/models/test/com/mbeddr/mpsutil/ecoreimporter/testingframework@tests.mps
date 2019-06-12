@@ -186,13 +186,13 @@
                     <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                   </node>
                   <node concept="liA8E" id="7FLq2$JzE1Y" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                     <node concept="2OqwBi" id="7FLq2$JzEiU" role="37wK5m">
                       <node concept="37vLTw" id="7FLq2$JzE2D" role="2Oq$k0">
                         <ref role="3cqZAo" node="7FLq2$JzDTX" resolve="err" />
                       </node>
                       <node concept="liA8E" id="7FLq2$JzF8T" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                   </node>
@@ -269,13 +269,13 @@
                     <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                   </node>
                   <node concept="liA8E" id="7FLq2$JzFaZ" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                     <node concept="2OqwBi" id="7FLq2$JzFb0" role="37wK5m">
                       <node concept="37vLTw" id="7FLq2$JzFb1" role="2Oq$k0">
                         <ref role="3cqZAo" node="7FLq2$JzFaT" resolve="err" />
                       </node>
                       <node concept="liA8E" id="7FLq2$JzFb2" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                   </node>

@@ -249,7 +249,7 @@
               <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
             </node>
             <node concept="2YIFZM" id="58oUBCRuVQd" role="33vP2m">
-              <ref role="37wK5l" to="ap4t:~GenerationOptions.getDefaults():jetbrains.mps.generator.GenerationOptions$OptionsBuilder" resolve="getDefaults" />
+              <ref role="37wK5l" to="ap4t:~GenerationOptions.getDefaults()" resolve="getDefaults" />
               <ref role="1Pybhc" to="ap4t:~GenerationOptions" resolve="GenerationOptions" />
             </node>
           </node>
@@ -265,7 +265,7 @@
               <node concept="1pGfFk" id="5io19FFm5T7" role="2ShVmc">
                 <ref role="37wK5l" to="tft2:~RigidPlanBuilder.&lt;init&gt;(jetbrains.mps.smodel.language.LanguageRegistry)" resolve="RigidPlanBuilder" />
                 <node concept="2YIFZM" id="5io19FFm5Uj" role="37wK5m">
-                  <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                  <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository)" resolve="getInstance" />
                   <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
                   <node concept="37vLTw" id="5io19FFm5Uk" role="37wK5m">
                     <ref role="3cqZAo" node="58oUBCRuVS3" resolve="repo" />
@@ -315,7 +315,7 @@
                 <ref role="3cqZAo" node="5io19FFm5KO" resolve="planBuilder" />
               </node>
               <node concept="liA8E" id="5io19FFm7ux" role="2OqNvi">
-                <ref role="37wK5l" to="tft2:~RigidPlanBuilder.wrapUp(jetbrains.mps.generator.plan.PlanIdentity):jetbrains.mps.generator.RigidGenerationPlan" resolve="wrapUp" />
+                <ref role="37wK5l" to="tft2:~RigidPlanBuilder.wrapUp(jetbrains.mps.generator.plan.PlanIdentity)" resolve="wrapUp" />
                 <node concept="2OqwBi" id="5io19FFm7B2" role="37wK5m">
                   <node concept="37vLTw" id="5io19FFm7wM" role="2Oq$k0">
                     <ref role="3cqZAo" node="5io19FFm6aI" resolve="planTranslator" />
@@ -334,7 +334,7 @@
               <ref role="3cqZAo" node="58oUBCRuVQb" resolve="defaults" />
             </node>
             <node concept="liA8E" id="58oUBCRuVQs" role="2OqNvi">
-              <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.customPlan(org.jetbrains.mps.openapi.model.SModel,jetbrains.mps.generator.ModelGenerationPlan):jetbrains.mps.generator.GenerationOptions$OptionsBuilder" resolve="customPlan" />
+              <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.customPlan(org.jetbrains.mps.openapi.model.SModel,jetbrains.mps.generator.ModelGenerationPlan)" resolve="customPlan" />
               <node concept="37vLTw" id="58oUBCRuVQt" role="37wK5m">
                 <ref role="3cqZAo" node="58oUBCRuVS7" resolve="modelToGenerate" />
               </node>
@@ -350,7 +350,7 @@
               <ref role="3cqZAo" node="58oUBCRuVQb" resolve="defaults" />
             </node>
             <node concept="liA8E" id="58oUBCRuVQB" role="2OqNvi">
-              <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.saveTransientModels(boolean):jetbrains.mps.generator.GenerationOptions$OptionsBuilder" resolve="saveTransientModels" />
+              <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.saveTransientModels(boolean)" resolve="saveTransientModels" />
               <node concept="3clFbT" id="58oUBCRuVQC" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -363,7 +363,7 @@
               <ref role="3cqZAo" node="58oUBCRuVQb" resolve="defaults" />
             </node>
             <node concept="liA8E" id="58oUBCRuVQG" role="2OqNvi">
-              <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.generateInParallel(boolean,int):jetbrains.mps.generator.GenerationOptions$OptionsBuilder" resolve="generateInParallel" />
+              <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.generateInParallel(boolean,int)" resolve="generateInParallel" />
               <node concept="3clFbT" id="58oUBCRuVQH" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -381,7 +381,7 @@
                   <ref role="3cqZAo" node="58oUBCRuVQb" resolve="defaults" />
                 </node>
                 <node concept="liA8E" id="58oUBCRvpZO" role="2OqNvi">
-                  <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.parameters(jetbrains.mps.generator.GenerationParametersProvider):jetbrains.mps.generator.GenerationOptions$OptionsBuilder" resolve="parameters" />
+                  <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.parameters(jetbrains.mps.generator.GenerationParametersProvider)" resolve="parameters" />
                   <node concept="37vLTw" id="58oUBCRwmtK" role="37wK5m">
                     <ref role="3cqZAo" node="58oUBCRwl1z" resolve="paramProvider" />
                   </node>
@@ -409,7 +409,7 @@
                 <ref role="3cqZAo" node="58oUBCRuVQb" resolve="defaults" />
               </node>
               <node concept="liA8E" id="58oUBCRuVQP" role="2OqNvi">
-                <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.create():jetbrains.mps.generator.GenerationOptions" resolve="create" />
+                <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.create()" resolve="create" />
               </node>
             </node>
           </node>
@@ -422,7 +422,7 @@
             </node>
             <node concept="2OqwBi" id="58oUBCRuVR1" role="33vP2m">
               <node concept="liA8E" id="58oUBCRuVR2" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
                 <node concept="3VsKOn" id="58oUBCRuVR3" role="37wK5m">
                   <ref role="3VsUkX" to="ap4t:~TransientModelsProvider" resolve="TransientModelsProvider" />
                 </node>
@@ -533,7 +533,7 @@
               <ref role="3cqZAo" node="58oUBCRuYwX" resolve="tmp" />
             </node>
             <node concept="liA8E" id="58oUBCRuYwh" role="2OqNvi">
-              <ref role="37wK5l" to="ap4t:~TransientModelsProvider.removeAllTransient():void" resolve="removeAllTransient" />
+              <ref role="37wK5l" to="ap4t:~TransientModelsProvider.removeAllTransient()" resolve="removeAllTransient" />
             </node>
           </node>
         </node>
@@ -566,21 +566,21 @@
                   <ref role="3cqZAo" node="58oUBCRuYw1" resolve="genFacade" />
                 </node>
                 <node concept="liA8E" id="58oUBCRuYwy" role="2OqNvi">
-                  <ref role="37wK5l" to="ap4t:~GenerationFacade.transients(jetbrains.mps.generator.TransientModelsProvider):jetbrains.mps.generator.GenerationFacade" resolve="transients" />
+                  <ref role="37wK5l" to="ap4t:~GenerationFacade.transients(jetbrains.mps.generator.TransientModelsProvider)" resolve="transients" />
                   <node concept="37vLTw" id="58oUBCRuYwz" role="37wK5m">
                     <ref role="3cqZAo" node="58oUBCRuYwX" resolve="tmp" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="58oUBCRuYw$" role="2OqNvi">
-                <ref role="37wK5l" to="ap4t:~GenerationFacade.messages(jetbrains.mps.messages.IMessageHandler):jetbrains.mps.generator.GenerationFacade" resolve="messages" />
+                <ref role="37wK5l" to="ap4t:~GenerationFacade.messages(jetbrains.mps.messages.IMessageHandler)" resolve="messages" />
                 <node concept="37vLTw" id="58oUBCRuYw_" role="37wK5m">
                   <ref role="3cqZAo" node="58oUBCRuYwZ" resolve="messageHandler" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="58oUBCRuYwA" role="2OqNvi">
-              <ref role="37wK5l" to="ap4t:~GenerationFacade.taskHandler(jetbrains.mps.generator.GeneratorTaskListener):jetbrains.mps.generator.GenerationFacade" resolve="taskHandler" />
+              <ref role="37wK5l" to="ap4t:~GenerationFacade.taskHandler(jetbrains.mps.generator.GeneratorTaskListener)" resolve="taskHandler" />
               <node concept="37vLTw" id="58oUBCRuYwB" role="37wK5m">
                 <ref role="3cqZAo" node="58oUBCRuYwl" resolve="taskHandler" />
               </node>
@@ -598,7 +598,7 @@
                 <ref role="3cqZAo" node="58oUBCRuYw1" resolve="genFacade" />
               </node>
               <node concept="liA8E" id="58oUBCRuYwI" role="2OqNvi">
-                <ref role="37wK5l" to="ap4t:~GenerationFacade.process(org.jetbrains.mps.openapi.util.ProgressMonitor,org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.generator.GenerationStatus" resolve="process" />
+                <ref role="37wK5l" to="ap4t:~GenerationFacade.process(org.jetbrains.mps.openapi.util.ProgressMonitor,org.jetbrains.mps.openapi.model.SModel)" resolve="process" />
                 <node concept="37vLTw" id="58oUBCRv8a3" role="37wK5m">
                   <ref role="3cqZAo" node="58oUBCRv7nI" resolve="monitor" />
                 </node>
@@ -739,7 +739,7 @@
                       <ref role="3cqZAo" node="58oUBCRwKR7" resolve="message" />
                     </node>
                     <node concept="liA8E" id="XhdFKwle9G" role="2OqNvi">
-                      <ref role="37wK5l" to="et5u:~IMessage.getText():java.lang.String" resolve="getText" />
+                      <ref role="37wK5l" to="et5u:~IMessage.getText()" resolve="getText" />
                     </node>
                   </node>
                 </node>
@@ -752,7 +752,7 @@
                 <ref role="3cqZAo" node="58oUBCRwKR7" resolve="message" />
               </node>
               <node concept="liA8E" id="XhdFKwlal9" role="2OqNvi">
-                <ref role="37wK5l" to="et5u:~IMessage.getKind():jetbrains.mps.messages.MessageKind" resolve="getKind" />
+                <ref role="37wK5l" to="et5u:~IMessage.getKind()" resolve="getKind" />
               </node>
             </node>
             <node concept="Rm8GO" id="XhdFKwlaRi" role="3uHU7w">
@@ -767,13 +767,13 @@
               <ref role="3cqZAo" node="58oUBCRwLNM" resolve="stream" />
             </node>
             <node concept="liA8E" id="58oUBCRwNQT" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="2OqwBi" id="58oUBCRwOEJ" role="37wK5m">
                 <node concept="37vLTw" id="58oUBCRwO8K" role="2Oq$k0">
                   <ref role="3cqZAo" node="58oUBCRwKR7" resolve="message" />
                 </node>
                 <node concept="liA8E" id="58oUBCRwPiH" role="2OqNvi">
-                  <ref role="37wK5l" to="et5u:~IMessage.getText():java.lang.String" resolve="getText" />
+                  <ref role="37wK5l" to="et5u:~IMessage.getText()" resolve="getText" />
                 </node>
               </node>
             </node>

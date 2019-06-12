@@ -13,6 +13,7 @@
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)" />
     <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.rt.testing_utils)" />
     <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.rt.analyzer.model)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -20,6 +21,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -96,6 +98,7 @@
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -119,6 +122,12 @@
             <node concept="2YIFZM" id="13EXNGXNHos" role="33vP2m">
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="2OqwBi" id="1ieRNjmuKmU" role="37wK5m">
+                <node concept="1jxXqW" id="1ieRNjmuKmV" role="2Oq$k0" />
+                <node concept="liA8E" id="1ieRNjmuKmW" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="BaHAS" id="2s6qLQkl_Jv" role="37wK5m">
                 <property role="BaHAW" value="_020_promela" />
                 <property role="BaGAP" value="" />
@@ -136,7 +145,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="4Nq31LVunA6" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="4Nq31LVunT6" role="37wK5m">
                 <node concept="Xl_RD" id="4Nq31LVunUS" role="3uHU7B">
                   <property role="Xl_RC" value="Trail: \n\n" />
@@ -164,7 +173,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4Nq31LVu8z5" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="4Nq31LVuhnH" role="37wK5m">
                 <property role="Xl_RC" value="init process, my pid is: 0" />
               </node>
@@ -184,6 +193,16 @@
       <property role="TrG5h" value="smoke" />
       <node concept="3cqZAl" id="24G9CRyL3qZ" role="3clF45" />
       <node concept="3clFbS" id="24G9CRyL3r0" role="3clF47">
+        <node concept="3cpWs8" id="1ieRNjmuW66" role="3cqZAp">
+          <node concept="3cpWsn" id="1ieRNjmuW67" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="1ieRNjmuW65" role="1tU5fm" />
+            <node concept="BaHAS" id="1ieRNjmuW68" role="33vP2m">
+              <property role="BaHAW" value="_020_promela" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="24G9CRyL3yE" role="3cqZAp">
           <node concept="3cpWsn" id="24G9CRyL3yF" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -193,9 +212,14 @@
             <node concept="2YIFZM" id="_jsMICrQuN" role="33vP2m">
               <ref role="37wK5l" to="hr62:_jsMICrMgd" resolve="checkModel2" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <node concept="BaHAS" id="2s6qLQklAtw" role="37wK5m">
-                <property role="BaHAW" value="_020_promela" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="1ieRNjmuXpR" role="37wK5m">
+                <node concept="1jxXqW" id="1ieRNjmuXpS" role="2Oq$k0" />
+                <node concept="liA8E" id="1ieRNjmuXpT" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="1ieRNjmuW69" role="37wK5m">
+                <ref role="3cqZAo" node="1ieRNjmuW67" resolve="m" />
               </node>
               <node concept="Xl_RD" id="_jsMICrQuP" role="37wK5m">
                 <property role="Xl_RC" value="if_test" />
@@ -210,7 +234,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="24G9CRyL7ce" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="24G9CRyL7cf" role="37wK5m">
                 <node concept="Xl_RD" id="24G9CRyL7cg" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />
@@ -238,7 +262,7 @@
               </node>
             </node>
             <node concept="liA8E" id="24G9CRyL3z0" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="24G9CRyL3z1" role="37wK5m">
                 <property role="Xl_RC" value="assertion violated (n!=2)" />
               </node>
@@ -255,6 +279,16 @@
       <property role="TrG5h" value="smoke" />
       <node concept="3cqZAl" id="24G9CRyL9ua" role="3clF45" />
       <node concept="3clFbS" id="24G9CRyL9ub" role="3clF47">
+        <node concept="3cpWs8" id="1ieRNjmuSyY" role="3cqZAp">
+          <node concept="3cpWsn" id="1ieRNjmuSyZ" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="1ieRNjmuSyX" role="1tU5fm" />
+            <node concept="BaHAS" id="1ieRNjmuSz0" role="33vP2m">
+              <property role="BaHAW" value="_020_promela" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="24G9CRyL9uc" role="3cqZAp">
           <node concept="3cpWsn" id="24G9CRyL9ud" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -264,9 +298,14 @@
             <node concept="2YIFZM" id="_jsMICrOFy" role="33vP2m">
               <ref role="37wK5l" to="hr62:_jsMICrMgd" resolve="checkModel2" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <node concept="BaHAS" id="_jsMICrOFz" role="37wK5m">
-                <property role="BaHAW" value="_020_promela" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="1ieRNjmuUan" role="37wK5m">
+                <node concept="1jxXqW" id="1ieRNjmuTQL" role="2Oq$k0" />
+                <node concept="liA8E" id="1ieRNjmuV3U" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="1ieRNjmuSz1" role="37wK5m">
+                <ref role="3cqZAo" node="1ieRNjmuSyZ" resolve="m" />
               </node>
               <node concept="Xl_RD" id="_jsMICrOF$" role="37wK5m">
                 <property role="Xl_RC" value="do_test" />
@@ -281,7 +320,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="24G9CRyL9um" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="24G9CRyL9un" role="37wK5m">
                 <node concept="Xl_RD" id="24G9CRyL9uo" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />
@@ -309,7 +348,7 @@
               </node>
             </node>
             <node concept="liA8E" id="24G9CRyL9uy" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="24G9CRyL9uz" role="37wK5m">
                 <property role="Xl_RC" value="assertion violated (n!=2)" />
               </node>
@@ -335,6 +374,12 @@
             <node concept="2YIFZM" id="54ptZbPSAqg" role="33vP2m">
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="2OqwBi" id="1ieRNjmuLJt" role="37wK5m">
+                <node concept="1jxXqW" id="1ieRNjmuLJu" role="2Oq$k0" />
+                <node concept="liA8E" id="1ieRNjmuLJv" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="BaHAS" id="2s6qLQklB61" role="37wK5m">
                 <property role="BaHAW" value="_020_promela" />
                 <property role="BaGAP" value="" />
@@ -352,7 +397,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="Rd$2EC6oxR" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="Rd$2EC6oxS" role="37wK5m">
                 <node concept="Xl_RD" id="Rd$2EC6oxT" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />
@@ -390,7 +435,7 @@
               </node>
             </node>
             <node concept="liA8E" id="Rd$2EC6oy3" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="Rd$2EC6oy4" role="37wK5m">
                 <property role="Xl_RC" value="assertion violated ((v1!=3)&amp;&amp;(v2!=4))" />
               </node>
@@ -429,6 +474,12 @@
             <node concept="2YIFZM" id="1RC3LaKCwCz" role="33vP2m">
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="2OqwBi" id="1ieRNjmuL2x" role="37wK5m">
+                <node concept="1jxXqW" id="1ieRNjmuL2y" role="2Oq$k0" />
+                <node concept="liA8E" id="1ieRNjmuL2z" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="BaHAS" id="2s6qLQklBTS" role="37wK5m">
                 <property role="BaHAW" value="_020_promela" />
                 <property role="BaGAP" value="" />
@@ -446,7 +497,7 @@
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="1RC3LaKCwCD" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="1RC3LaKCwCE" role="37wK5m">
                 <node concept="Xl_RD" id="1RC3LaKCwCF" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />
@@ -484,7 +535,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1RC3LaKCwCS" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="1RC3LaKCwCT" role="37wK5m">
                 <property role="Xl_RC" value="assertion violated (n!=6)" />
               </node>
@@ -523,6 +574,12 @@
             <node concept="2YIFZM" id="5p$33BW3gtY" role="33vP2m">
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="2OqwBi" id="1ieRNjmuITX" role="37wK5m">
+                <node concept="1jxXqW" id="1ieRNjmuIHT" role="2Oq$k0" />
+                <node concept="liA8E" id="1ieRNjmuJzh" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="BaHAS" id="5p$33BW3gtZ" role="37wK5m">
                 <property role="BaHAW" value="_020_promela" />
                 <property role="BaGAP" value="" />

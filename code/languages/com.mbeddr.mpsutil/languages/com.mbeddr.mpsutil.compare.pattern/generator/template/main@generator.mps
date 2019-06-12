@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -338,7 +338,7 @@
                   </node>
                   <node concept="2YIFZM" id="1xH_Y2Tu2vI" role="37wK5m">
                     <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
-                    <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
+                    <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
                     <node concept="10Nm6u" id="1xH_Y2Tu2vJ" role="37wK5m">
                       <node concept="1WS0z7" id="1xH_Y2Tu2vK" role="lGtFl">
                         <node concept="3JmXsc" id="1xH_Y2Tu2vL" role="3Jn$fo">
@@ -1154,7 +1154,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="2cknNXbNfAy" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SProperty.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+                        <ref role="37wK5l" to="c17a:~SProperty.getDeclarationNode()" resolve="getDeclarationNode" />
                       </node>
                     </node>
                     <node concept="3Tqbb2" id="2cknNXbNknh" role="10QFUM">

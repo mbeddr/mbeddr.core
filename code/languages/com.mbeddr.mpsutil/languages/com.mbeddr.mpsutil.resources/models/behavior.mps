@@ -229,7 +229,7 @@
       <node concept="3clFbS" id="4kGsAe0sT3B" role="3clF47">
         <node concept="3cpWs6" id="7AIFj4M8XQ" role="3cqZAp">
           <node concept="2YIFZM" id="7AIFj4NmG5" role="3cqZAk">
-            <ref role="37wK5l" to="18ew:~IconCreationUtil.drawIcon(org.jetbrains.mps.openapi.util.Consumer):byte[]" resolve="drawIcon" />
+            <ref role="37wK5l" to="18ew:~IconCreationUtil.drawIcon(org.jetbrains.mps.openapi.util.Consumer)" resolve="drawIcon" />
             <ref role="1Pybhc" to="18ew:~IconCreationUtil" resolve="IconCreationUtil" />
             <node concept="1bVj0M" id="7AIFj4NmG6" role="37wK5m">
               <node concept="3clFbS" id="7AIFj4NmG7" role="1bW5cS">
@@ -553,7 +553,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7AIFj4NmGd" role="2OqNvi">
-                      <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                      <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
                       <node concept="2ShNRf" id="7AIFj4NmGe" role="37wK5m">
                         <node concept="1pGfFk" id="7AIFj4NmGf" role="2ShVmc">
                           <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int)" resolve="Color" />
@@ -584,7 +584,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5afrdV3dmRs" role="2OqNvi">
-                      <ref role="37wK5l" to="z60i:~Graphics.setFont(java.awt.Font):void" resolve="setFont" />
+                      <ref role="37wK5l" to="z60i:~Graphics.setFont(java.awt.Font)" resolve="setFont" />
                       <node concept="37vLTw" id="1ng4Vf3X07I" role="37wK5m">
                         <ref role="3cqZAo" node="1ng4Vf3X07_" resolve="font" />
                       </node>
@@ -620,7 +620,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="1ng4Vf3XbKc" role="2OqNvi">
-                            <ref role="37wK5l" to="z60i:~Graphics2D.getFontRenderContext():java.awt.font.FontRenderContext" resolve="getFontRenderContext" />
+                            <ref role="37wK5l" to="z60i:~Graphics2D.getFontRenderContext()" resolve="getFontRenderContext" />
                           </node>
                         </node>
                       </node>
@@ -638,7 +638,7 @@
                         <ref role="3cqZAo" node="1ng4Vf3XbK1" resolve="text" />
                       </node>
                       <node concept="liA8E" id="1ng4Vf3Xd3X" role="2OqNvi">
-                        <ref role="37wK5l" to="ewej:~TextLayout.getBounds():java.awt.geom.Rectangle2D" resolve="getBounds" />
+                        <ref role="37wK5l" to="ewej:~TextLayout.getBounds()" resolve="getBounds" />
                       </node>
                     </node>
                   </node>
@@ -650,7 +650,7 @@
                       <ref role="3cqZAo" node="1ng4Vf3XbK1" resolve="text" />
                     </node>
                     <node concept="liA8E" id="1ng4Vf3Xi$O" role="2OqNvi">
-                      <ref role="37wK5l" to="ewej:~TextLayout.draw(java.awt.Graphics2D,float,float):void" resolve="draw" />
+                      <ref role="37wK5l" to="ewej:~TextLayout.draw(java.awt.Graphics2D,float,float)" resolve="draw" />
                       <node concept="2OqwBi" id="1ng4Vf3Xl8J" role="37wK5m">
                         <node concept="37vLTw" id="1ng4Vf3Xje2" role="2Oq$k0">
                           <ref role="3cqZAo" node="7AIFj4NmH6" resolve="dc" />
@@ -664,7 +664,7 @@
                           <node concept="1eOMI4" id="5afrdV3chMu" role="10QFUP">
                             <node concept="3cpWs3" id="3mKaBWVVhmV" role="1eOMHV">
                               <node concept="2YIFZM" id="3mKaBWVVuyv" role="3uHU7w">
-                                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String):float" resolve="parseFloat" />
+                                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
                                 <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
                                 <node concept="2OqwBi" id="3mKaBWVVk6M" role="37wK5m">
                                   <node concept="13iPFW" id="3mKaBWVVjid" role="2Oq$k0" />
@@ -697,7 +697,7 @@
                                     <ref role="3cqZAo" node="1ng4Vf3Xd3U" resolve="rect" />
                                   </node>
                                   <node concept="liA8E" id="5afrdV3chMj" role="2OqNvi">
-                                    <ref role="37wK5l" to="fbzs:~RectangularShape.getCenterX():double" resolve="getCenterX" />
+                                    <ref role="37wK5l" to="fbzs:~RectangularShape.getCenterX()" resolve="getCenterX" />
                                   </node>
                                 </node>
                               </node>
@@ -734,12 +734,12 @@
                                     <ref role="3cqZAo" node="1ng4Vf3Xd3U" resolve="rect" />
                                   </node>
                                   <node concept="liA8E" id="5afrdV3cftj" role="2OqNvi">
-                                    <ref role="37wK5l" to="fbzs:~RectangularShape.getCenterY():double" resolve="getCenterY" />
+                                    <ref role="37wK5l" to="fbzs:~RectangularShape.getCenterY()" resolve="getCenterY" />
                                   </node>
                                 </node>
                               </node>
                               <node concept="2YIFZM" id="3mKaBWVVwin" role="3uHU7w">
-                                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String):float" resolve="parseFloat" />
+                                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
                                 <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
                                 <node concept="2OqwBi" id="3mKaBWVVwio" role="37wK5m">
                                   <node concept="13iPFW" id="3mKaBWVVwip" role="2Oq$k0" />
@@ -801,7 +801,7 @@
         <node concept="3cpWs6" id="2p1v3tObBjS" role="3cqZAp">
           <node concept="2YIFZM" id="7AIFj4NnAx" role="3cqZAk">
             <ref role="1Pybhc" to="18ew:~IconCreationUtil" resolve="IconCreationUtil" />
-            <ref role="37wK5l" to="18ew:~IconCreationUtil.drawIcon(org.jetbrains.mps.openapi.util.Consumer):byte[]" resolve="drawIcon" />
+            <ref role="37wK5l" to="18ew:~IconCreationUtil.drawIcon(org.jetbrains.mps.openapi.util.Consumer)" resolve="drawIcon" />
             <node concept="1bVj0M" id="7AIFj4NnAy" role="37wK5m">
               <node concept="3clFbS" id="7AIFj4NnAz" role="1bW5cS">
                 <node concept="3cpWs8" id="5afrdV3culR" role="3cqZAp">
@@ -933,7 +933,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1ng4Vf3UrHY" role="2OqNvi">
-                          <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                          <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
                           <node concept="37vLTw" id="1ng4Vf3Utus" role="37wK5m">
                             <ref role="3cqZAo" node="1ng4Vf3TNAa" resolve="fillColor" />
                           </node>
@@ -951,7 +951,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1ng4Vf3UvXz" role="2OqNvi">
-                          <ref role="37wK5l" to="z60i:~Graphics.fillOval(int,int,int,int):void" resolve="fillOval" />
+                          <ref role="37wK5l" to="z60i:~Graphics.fillOval(int,int,int,int)" resolve="fillOval" />
                           <node concept="37vLTw" id="1ng4Vf3UvX$" role="37wK5m">
                             <ref role="3cqZAo" node="5afrdV3culS" resolve="x" />
                           </node>
@@ -995,7 +995,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7AIFj4NnAD" role="2OqNvi">
-                            <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                            <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
                             <node concept="2ShNRf" id="7AIFj4NnAE" role="37wK5m">
                               <node concept="1pGfFk" id="7AIFj4NnAF" role="2ShVmc">
                                 <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int)" resolve="Color" />
@@ -1026,7 +1026,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7AIFj4NnAP" role="2OqNvi">
-                            <ref role="37wK5l" to="z60i:~Graphics.fillOval(int,int,int,int):void" resolve="fillOval" />
+                            <ref role="37wK5l" to="z60i:~Graphics.fillOval(int,int,int,int)" resolve="fillOval" />
                             <node concept="37vLTw" id="5afrdV3cwGP" role="37wK5m">
                               <ref role="3cqZAo" node="5afrdV3culS" resolve="x" />
                             </node>
@@ -1059,7 +1059,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7AIFj4NnBb" role="2OqNvi">
-                            <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                            <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
                             <node concept="37vLTw" id="1ng4Vf3TNAi" role="37wK5m">
                               <ref role="3cqZAo" node="1ng4Vf3TNAa" resolve="fillColor" />
                             </node>
@@ -1077,7 +1077,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7AIFj4NnBn" role="2OqNvi">
-                            <ref role="37wK5l" to="z60i:~Graphics.fillOval(int,int,int,int):void" resolve="fillOval" />
+                            <ref role="37wK5l" to="z60i:~Graphics.fillOval(int,int,int,int)" resolve="fillOval" />
                             <node concept="3cpWs3" id="2BoHnyJKbi2" role="37wK5m">
                               <node concept="37vLTw" id="5afrdV3cYGl" role="3uHU7B">
                                 <ref role="3cqZAo" node="5afrdV3culS" resolve="x" />

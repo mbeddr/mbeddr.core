@@ -159,7 +159,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6fD9I8g1KST" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                       <node concept="Xl_RD" id="6fD9I8g1KTD" role="37wK5m">
                         <property role="Xl_RC" value="export " />
                       </node>
@@ -200,11 +200,11 @@
                         <ref role="3cqZAo" node="6fD9I8g1LHX" resolve="unprefixedVarName" />
                       </node>
                       <node concept="liA8E" id="2Vizpn2MewG" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                        <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                       </node>
                     </node>
                     <node concept="liA8E" id="2Vizpn2MewL" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="37vLTw" id="6fD9I8g1Mtx" role="37wK5m">
                         <ref role="3cqZAo" node="6fD9I8g1LHX" resolve="unprefixedVarName" />
                       </node>
@@ -266,7 +266,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Vizpn2MxjQ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
               </node>
             </node>
             <node concept="2OqwBi" id="2Vizpn2Mxj$" role="37vLTJ">

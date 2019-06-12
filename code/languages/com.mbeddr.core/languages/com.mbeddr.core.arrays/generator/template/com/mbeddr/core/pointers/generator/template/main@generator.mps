@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
@@ -390,7 +390,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="4DjlAm4KYIg" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                            <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                             <node concept="Xl_RD" id="4DjlAm4KYLw" role="37wK5m">
                               <property role="Xl_RC" value="\\" />
                             </node>
@@ -400,7 +400,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="4DjlAm4KZYn" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                           <node concept="Xl_RD" id="4DjlAm4L021" role="37wK5m">
                             <property role="Xl_RC" value="'" />
                           </node>
@@ -410,7 +410,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="4DjlAm4L0zS" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                        <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                         <node concept="Xl_RD" id="4DjlAm4L0BP" role="37wK5m">
                           <property role="Xl_RC" value="\&quot;" />
                         </node>
@@ -420,7 +420,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="4DjlAm4L2oY" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                       <node concept="Xl_RD" id="4DjlAm4L2ry" role="37wK5m">
                         <property role="Xl_RC" value="?" />
                       </node>

@@ -218,10 +218,10 @@
           <node concept="2OqwBi" id="7Rf0$0HCPaW" role="3clFbG">
             <node concept="2YIFZM" id="7Rf0$0HCPaX" role="2Oq$k0">
               <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
-              <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+              <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal()" resolve="getGlobal" />
             </node>
             <node concept="liA8E" id="7Rf0$0HCPaY" role="2OqNvi">
-              <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+              <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String)" resolve="expandPath" />
               <node concept="2OqwBi" id="7Rf0$0HCPaZ" role="37wK5m">
                 <node concept="13iPFW" id="7Rf0$0HCPb0" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7Rf0$0HCPb1" role="2OqNvi">

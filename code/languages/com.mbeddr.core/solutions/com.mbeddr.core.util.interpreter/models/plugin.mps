@@ -384,7 +384,7 @@
                       <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     </node>
                     <node concept="liA8E" id="3VM1o5wb$Du" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="3cpWs3" id="3VM1o5wb$Dv" role="37wK5m">
                         <node concept="37vLTw" id="3VM1o5wb$Dw" role="3uHU7w">
                           <ref role="3cqZAo" node="3VM1o5wb$Dn" resolve="b" />

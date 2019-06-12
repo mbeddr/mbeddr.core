@@ -293,7 +293,7 @@
                 <ref role="3cqZAo" node="5XHLjGSJqDv" resolve="constantAnalyzer" />
               </node>
               <node concept="liA8E" id="5XHLjGSJqDB" role="2OqNvi">
-                <ref role="37wK5l" to="1fjm:~AnalyzerRunner.analyze():jetbrains.mps.lang.dataFlow.framework.AnalysisResult" resolve="analyze" />
+                <ref role="37wK5l" to="1fjm:~AnalyzerRunner.analyze()" resolve="analyze" />
               </node>
             </node>
           </node>
@@ -621,7 +621,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="2sRGoU6nheN" role="2OqNvi">
-                    <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+                    <ref role="37wK5l" to="xlxw:~BigInteger.intValue()" resolve="intValue" />
                   </node>
                 </node>
               </node>
@@ -810,7 +810,7 @@
                     <ref role="3cqZAo" node="2sRGoU6fsA3" resolve="analysisResult" />
                   </node>
                   <node concept="liA8E" id="2sRGoU6futC" role="2OqNvi">
-                    <ref role="37wK5l" to="1fjm:~AnalysisResult.get(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction):java.lang.Object" resolve="get" />
+                    <ref role="37wK5l" to="1fjm:~AnalysisResult.get(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction)" resolve="get" />
                     <node concept="37vLTw" id="2sRGoU6futD" role="37wK5m">
                       <ref role="3cqZAo" node="2sRGoU6ftPs" resolve="instruction" />
                     </node>

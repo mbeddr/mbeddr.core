@@ -217,11 +217,11 @@
                           <ref role="3cqZAo" node="5Gh6GqGKohB" resolve="expected" />
                         </node>
                         <node concept="liA8E" id="5Gh6GqGKtVo" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                          <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5Gh6GqGKuDP" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                       </node>
                     </node>
                   </node>
@@ -267,11 +267,11 @@
                           <ref role="3cqZAo" node="5Gh6GqGKohD" resolve="actual" />
                         </node>
                         <node concept="liA8E" id="5Gh6GqGKxId" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                          <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5Gh6GqGKyv9" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                       </node>
                     </node>
                   </node>

@@ -123,10 +123,10 @@
             <node concept="2OqwBi" id="4glh_DcgCnS" role="33vP2m">
               <node concept="2YIFZM" id="4glh_DcgCnT" role="2Oq$k0">
                 <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-                <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+                <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="4glh_DcgCnU" role="2OqNvi">
-                <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+                <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
                 <node concept="3xONca" id="4glh_DchqYP" role="37wK5m">
                   <ref role="3xOPvv" node="3J7tYMoqr6C" resolve="testConcept" />
                 </node>

@@ -2102,7 +2102,7 @@
         <node concept="3eOVzh" id="37qHMK08xCt" role="1Dwp0S">
           <node concept="2YIFZM" id="37qHMK08xF8" role="3uHU7w">
             <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-            <ref role="37wK5l" to="wyt6:~Math.min(int,int):int" resolve="min" />
+            <ref role="37wK5l" to="wyt6:~Math.min(int,int)" resolve="min" />
             <node concept="2OqwBi" id="37qHMK08OjW" role="37wK5m">
               <node concept="2OqwBi" id="37qHMK08xR8" role="2Oq$k0">
                 <node concept="1YBJjd" id="37qHMK08xJf" role="2Oq$k0">

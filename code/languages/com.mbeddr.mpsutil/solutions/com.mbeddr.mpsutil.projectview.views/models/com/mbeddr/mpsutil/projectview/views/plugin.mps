@@ -198,7 +198,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="5692182839349412519" name="jetbrains.mps.lang.smodel.structure.Reference_GetRoleOperation" flags="nn" index="90r25" />
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
@@ -208,6 +207,7 @@
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -295,7 +295,7 @@
               <node concept="1eOMI4" id="$6jtTwPrN5" role="2Oq$k0">
                 <node concept="10QFUN" id="$6jtTwPrN6" role="1eOMHV">
                   <node concept="2YIFZM" id="$6jtTwPrN7" role="10QFUP">
-                    <ref role="37wK5l" to="w1kc:~LanguageAspect.getAspectModels(jetbrains.mps.smodel.Language):java.util.Collection" resolve="getAspectModels" />
+                    <ref role="37wK5l" to="w1kc:~LanguageAspect.getAspectModels(jetbrains.mps.smodel.Language)" resolve="getAspectModels" />
                     <ref role="1Pybhc" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
                     <node concept="14b0Wr" id="XSoA18OPot" role="37wK5m">
                       <ref role="14b0Uw" node="75_oBQVPKCm" resolve="language" />
@@ -383,7 +383,7 @@
                   <node concept="10QFUN" id="$6jtTwOElh" role="1eOMHV">
                     <node concept="2YIFZM" id="$6jtTwOEle" role="10QFUP">
                       <ref role="1Pybhc" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
-                      <ref role="37wK5l" to="w1kc:~LanguageAspect.getAspectModels(jetbrains.mps.smodel.Language):java.util.Collection" resolve="getAspectModels" />
+                      <ref role="37wK5l" to="w1kc:~LanguageAspect.getAspectModels(jetbrains.mps.smodel.Language)" resolve="getAspectModels" />
                       <node concept="14b0Wr" id="$6jtTwOElf" role="37wK5m">
                         <ref role="14b0Uw" node="75_oBQVPKCm" resolve="language" />
                       </node>
@@ -478,10 +478,10 @@
       <node concept="2OqwBi" id="4glh_DcgCnS" role="3actZa">
         <node concept="2YIFZM" id="4glh_DcgCnT" role="2Oq$k0">
           <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
         </node>
         <node concept="liA8E" id="4glh_DcgCnU" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
           <node concept="14b0Wr" id="4glh_DchmkJ" role="37wK5m">
             <ref role="14b0Uw" node="$6jtTwO_OM" resolve="concept" />
           </node>
@@ -511,7 +511,7 @@
           <ref role="14b0Uw" node="7diJr$RvF92" resolve="project" />
         </node>
         <node concept="liA8E" id="7diJr$RwzJ7" role="2OqNvi">
-          <ref role="37wK5l" to="z1c4:~MPSProject.getName():java.lang.String" resolve="getName" />
+          <ref role="37wK5l" to="z1c4:~MPSProject.getName()" resolve="getName" />
         </node>
       </node>
     </node>
@@ -538,10 +538,10 @@
             <node concept="2OqwBi" id="75_oBQVq5FG" role="10QFUP">
               <node concept="2YIFZM" id="75_oBQVq5FH" role="2Oq$k0">
                 <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="75_oBQVq5FI" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules():java.lang.Iterable" resolve="getModules" />
+                <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules()" resolve="getModules" />
               </node>
             </node>
             <node concept="A3Dl8" id="75_oBQVq5GE" role="10QFUM">
@@ -590,7 +590,7 @@
           <ref role="14b0Uw" node="7diJr$RuyJf" resolve="module" />
         </node>
         <node concept="liA8E" id="7diJr$RwfqZ" role="2OqNvi">
-          <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+          <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
         </node>
       </node>
       <node concept="2YIFZM" id="75_oBQVx4Sv" role="3a5v6p">
@@ -615,10 +615,10 @@
       <node concept="2OqwBi" id="4glh_Dchogj" role="3actZa">
         <node concept="2YIFZM" id="4glh_Dchogk" role="2Oq$k0">
           <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
         </node>
         <node concept="liA8E" id="4glh_Dchogl" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.module.SModule):javax.swing.Icon" resolve="getIconFor" />
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.module.SModule)" resolve="getIconFor" />
           <node concept="14b0Wr" id="4glh_DchoHJ" role="37wK5m">
             <ref role="14b0Uw" node="7diJr$RuyJf" resolve="module" />
           </node>
@@ -630,7 +630,7 @@
       <ref role="3GDMyY" node="7diJr$RuyJf" resolve="module" />
       <ref role="14a85i" node="7diJr$RvF92" resolve="project" />
       <node concept="2YIFZM" id="$6jtTx7gF6" role="14bQOc">
-        <ref role="37wK5l" to="7e8u:~SortUtil.sortModules(java.util.Collection):java.util.List" resolve="sortModules" />
+        <ref role="37wK5l" to="7e8u:~SortUtil.sortModules(java.util.Collection)" resolve="sortModules" />
         <ref role="1Pybhc" to="7e8u:~SortUtil" resolve="SortUtil" />
         <node concept="2OqwBi" id="$6jtTx7gSy" role="37wK5m">
           <node concept="2OqwBi" id="7PuCnELuL$g" role="2Oq$k0">
@@ -641,7 +641,7 @@
                     <ref role="14b0Uw" node="7diJr$RvF92" resolve="project" />
                   </node>
                   <node concept="liA8E" id="75_oBQVXwuq" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c5:~Project.getModules():java.lang.Iterable" resolve="getModules" />
+                    <ref role="37wK5l" to="z1c5:~Project.getModules()" resolve="getModules" />
                   </node>
                 </node>
                 <node concept="A3Dl8" id="75_oBQVXwur" role="10QFUM">
@@ -688,11 +688,11 @@
             <node concept="10QFUN" id="75_oBQVX$DA" role="1eOMHV">
               <node concept="2OqwBi" id="75_oBQVX$DB" role="10QFUP">
                 <node concept="2YIFZM" id="75_oBQVX$DC" role="2Oq$k0">
-                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
                   <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                 </node>
                 <node concept="liA8E" id="75_oBQVX$DD" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules():java.lang.Iterable" resolve="getModules" />
+                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules()" resolve="getModules" />
                 </node>
               </node>
               <node concept="A3Dl8" id="75_oBQVX$DE" role="10QFUM">
@@ -734,7 +734,7 @@
                     <ref role="3cqZAo" node="75_oBQVX$DP" resolve="it" />
                   </node>
                   <node concept="liA8E" id="75_oBQVX$DO" role="2OqNvi">
-                    <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                    <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
                   </node>
                 </node>
               </node>
@@ -761,7 +761,7 @@
           <ref role="14b0Uw" node="75_oBQVPKCm" resolve="language" />
         </node>
         <node concept="liA8E" id="$6jtTw$ONP" role="2OqNvi">
-          <ref role="37wK5l" to="z1c5:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
+          <ref role="37wK5l" to="z1c5:~AbstractModule.getModuleName()" resolve="getModuleName" />
         </node>
       </node>
     </node>
@@ -776,7 +776,7 @@
           <ref role="14b0Uw" node="7diJr$Rw$m0" resolve="model" />
         </node>
         <node concept="liA8E" id="7diJr$Rx0OK" role="2OqNvi">
-          <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+          <ref role="37wK5l" to="mhbf:~SModel.getModelName()" resolve="getModelName" />
         </node>
       </node>
       <node concept="2YIFZM" id="75_oBQVx58N" role="3a5v6p">
@@ -798,7 +798,7 @@
       </node>
       <node concept="2YIFZM" id="$6jtTx6cSH" role="14bQOc">
         <ref role="1Pybhc" to="7e8u:~SortUtil" resolve="SortUtil" />
-        <ref role="37wK5l" to="7e8u:~SortUtil.sortModels(java.util.List):java.util.List" resolve="sortModels" />
+        <ref role="37wK5l" to="7e8u:~SortUtil.sortModels(java.util.List)" resolve="sortModels" />
         <node concept="2OqwBi" id="$6jtTx6d7y" role="37wK5m">
           <node concept="1eOMI4" id="75_oBQVPjMe" role="2Oq$k0">
             <node concept="10QFUN" id="75_oBQVPjMf" role="1eOMHV">
@@ -807,7 +807,7 @@
                   <ref role="14b0Uw" node="7diJr$RuyJf" resolve="module" />
                 </node>
                 <node concept="liA8E" id="75_oBQVPjMd" role="2OqNvi">
-                  <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                  <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
                 </node>
               </node>
               <node concept="A3Dl8" id="75_oBQVPjOo" role="10QFUM">
@@ -823,10 +823,10 @@
       <node concept="2OqwBi" id="4glh_DchoLo" role="3actZa">
         <node concept="2YIFZM" id="4glh_DchoLp" role="2Oq$k0">
           <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
         </node>
         <node concept="liA8E" id="4glh_DchoLq" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SModel):javax.swing.Icon" resolve="getIconFor" />
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SModel)" resolve="getIconFor" />
           <node concept="14b0Wr" id="4glh_Dchp2k" role="37wK5m">
             <ref role="14b0Uw" node="7diJr$Rw$m0" resolve="model" />
           </node>
@@ -854,7 +854,7 @@
                       <ref role="3cqZAo" node="75_oBQVPYql" resolve="it" />
                     </node>
                     <node concept="liA8E" id="75_oBQVPZaH" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~LanguageAspect.get(jetbrains.mps.smodel.Language):org.jetbrains.mps.openapi.model.SModel" resolve="get" />
+                      <ref role="37wK5l" to="w1kc:~LanguageAspect.get(jetbrains.mps.smodel.Language)" resolve="get" />
                       <node concept="14b0Wr" id="75_oBQVPZeN" role="37wK5m">
                         <ref role="14b0Uw" node="75_oBQVPKCm" resolve="language" />
                       </node>
@@ -891,13 +891,13 @@
       <node concept="2OqwBi" id="75_oBQVQ2kx" role="14a853">
         <node concept="2YIFZM" id="75_oBQVQ295" role="2Oq$k0">
           <ref role="1Pybhc" to="w1kc:~Language" resolve="Language" />
-          <ref role="37wK5l" to="w1kc:~Language.getModelAspect(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.smodel.LanguageAspect" resolve="getModelAspect" />
+          <ref role="37wK5l" to="w1kc:~Language.getModelAspect(org.jetbrains.mps.openapi.model.SModel)" resolve="getModelAspect" />
           <node concept="14b0Wr" id="75_oBQVQ2ee" role="37wK5m">
             <ref role="14b0Uw" node="75_oBQVPTUz" resolve="aspectModel" />
           </node>
         </node>
         <node concept="liA8E" id="75_oBQVQ3mt" role="2OqNvi">
-          <ref role="37wK5l" to="w1kc:~LanguageAspect.getName():java.lang.String" resolve="getName" />
+          <ref role="37wK5l" to="w1kc:~LanguageAspect.getName()" resolve="getName" />
         </node>
       </node>
     </node>
@@ -939,7 +939,7 @@
           <ref role="14b0Uw" node="75_oBQVPKCm" resolve="language" />
         </node>
         <node concept="liA8E" id="75_oBQVJIuE" role="2OqNvi">
-          <ref role="37wK5l" to="w1kc:~Language.getGenerators():java.util.Collection" resolve="getGenerators" />
+          <ref role="37wK5l" to="w1kc:~Language.getGenerators()" resolve="getGenerators" />
         </node>
       </node>
       <node concept="3uibUv" id="75_oBQVXD3g" role="3GGxor">
@@ -956,7 +956,7 @@
           </node>
         </node>
         <node concept="liA8E" id="3ZnFyBjrP_8" role="2OqNvi">
-          <ref role="37wK5l" to="mhbf:~SNode.getPresentation():java.lang.String" resolve="getPresentation" />
+          <ref role="37wK5l" to="mhbf:~SNode.getPresentation()" resolve="getPresentation" />
         </node>
       </node>
       <node concept="2YIFZM" id="75_oBQVx5cB" role="3a5v6p">
@@ -968,7 +968,7 @@
       </node>
       <node concept="2OqwBi" id="4GrfODAX8D6" role="fGNDj">
         <node concept="2YIFZM" id="4GrfODAWBdu" role="2Oq$k0">
-          <ref role="37wK5l" to="btm1:~StringUtils.split(java.lang.String,char):java.lang.String[]" resolve="split" />
+          <ref role="37wK5l" to="btm1:~StringUtils.split(java.lang.String,char)" resolve="split" />
           <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
           <node concept="2OqwBi" id="4GrfODAWAtY" role="37wK5m">
             <node concept="14b0Wr" id="4GrfODAWAhj" role="2Oq$k0">
@@ -991,10 +991,10 @@
       <node concept="2OqwBi" id="4glh_Dchphp" role="3actZa">
         <node concept="2YIFZM" id="4glh_Dchphq" role="2Oq$k0">
           <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
         </node>
         <node concept="liA8E" id="4glh_Dchphr" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
           <node concept="14b0Wr" id="4glh_DchpCv" role="37wK5m">
             <ref role="14b0Uw" node="3ZnFyBjojbx" resolve="node" />
           </node>
@@ -1012,16 +1012,16 @@
           <node concept="2yIwOk" id="75_oBQVFZeM" role="2OqNvi" />
         </node>
         <node concept="liA8E" id="75_oBQVFZyz" role="2OqNvi">
-          <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+          <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
         </node>
       </node>
       <node concept="2OqwBi" id="4glh_DchpN2" role="3actZa">
         <node concept="2YIFZM" id="4glh_DchpN3" role="2Oq$k0">
           <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
         </node>
         <node concept="liA8E" id="4glh_DchpN4" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
           <node concept="2OqwBi" id="4glh_DchpXi" role="37wK5m">
             <node concept="14b0Wr" id="4glh_DchpPt" role="2Oq$k0">
               <ref role="14b0Uw" node="3ZnFyBjojbx" resolve="node" />
@@ -1095,10 +1095,10 @@
       <node concept="2OqwBi" id="4glh_Dchqa0" role="3actZa">
         <node concept="2YIFZM" id="4glh_Dchqa1" role="2Oq$k0">
           <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
         </node>
         <node concept="liA8E" id="4glh_Dchqa2" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
           <node concept="2OqwBi" id="4glh_DchqKb" role="37wK5m">
             <node concept="14b0Wr" id="4glh_Dchqxa" role="2Oq$k0">
               <ref role="14b0Uw" node="75_oBQVK55f" resolve="reference" />
@@ -1120,7 +1120,7 @@
                 <ref role="14b0Uw" node="7diJr$Rw$m0" resolve="model" />
               </node>
               <node concept="liA8E" id="$6jtTx7i6x" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getRootNodes():java.lang.Iterable" resolve="getRootNodes" />
+                <ref role="37wK5l" to="mhbf:~SModel.getRootNodes()" resolve="getRootNodes" />
               </node>
             </node>
             <node concept="A3Dl8" id="$6jtTx7i7l" role="10QFUM">
@@ -1139,7 +1139,7 @@
                     <ref role="3cqZAo" node="$6jtTx7iR5" resolve="it" />
                   </node>
                   <node concept="liA8E" id="$6jtTx7ji1" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getPresentation():java.lang.String" resolve="getPresentation" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getPresentation()" resolve="getPresentation" />
                   </node>
                 </node>
               </node>
@@ -1173,7 +1173,7 @@
             </node>
           </node>
           <node concept="liA8E" id="75_oBQV_wDC" role="2OqNvi">
-            <ref role="37wK5l" to="mhbf:~SNode.getPresentation():java.lang.String" resolve="getPresentation" />
+            <ref role="37wK5l" to="mhbf:~SNode.getPresentation()" resolve="getPresentation" />
           </node>
         </node>
         <node concept="3cpWs3" id="75_oBQV_vWl" role="3uHU7B">
@@ -1182,10 +1182,10 @@
               <node concept="14b0Wr" id="75_oBQV_v_t" role="2Oq$k0">
                 <ref role="14b0Uw" node="3ZnFyBjojbx" resolve="node" />
               </node>
-              <node concept="25OxAV" id="XSoA18NvUG" role="2OqNvi" />
+              <node concept="2NL2c5" id="2Fugwv5LwFU" role="2OqNvi" />
             </node>
-            <node concept="3TrcHB" id="XSoA18Nwzx" role="2OqNvi">
-              <ref role="3TsBF5" to="tpce:fA0kJcN" resolve="role" />
+            <node concept="liA8E" id="2Fugwv5Lxwa" role="2OqNvi">
+              <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
             </node>
           </node>
           <node concept="Xl_RD" id="75_oBQV_vWo" role="3uHU7w">
@@ -1207,7 +1207,7 @@
           </node>
         </node>
         <node concept="liA8E" id="75_oBQVgsRN" role="2OqNvi">
-          <ref role="37wK5l" to="mhbf:~SNode.getProperties():java.lang.Iterable" resolve="getProperties" />
+          <ref role="37wK5l" to="mhbf:~SNode.getProperties()" resolve="getProperties" />
         </node>
       </node>
       <node concept="3cpWs3" id="75_oBQVgtXq" role="14a853">
@@ -1218,7 +1218,7 @@
             </node>
           </node>
           <node concept="liA8E" id="75_oBQVgvEK" role="2OqNvi">
-            <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty):java.lang.String" resolve="getProperty" />
+            <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty)" resolve="getProperty" />
             <node concept="14b0Wr" id="75_oBQVgvID" role="37wK5m">
               <ref role="14b0Uw" node="75_oBQVgsl1" resolve="property" />
             </node>
@@ -1230,7 +1230,7 @@
               <ref role="14b0Uw" node="75_oBQVgsl1" resolve="property" />
             </node>
             <node concept="liA8E" id="75_oBQVgtOQ" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SProperty.getName():java.lang.String" resolve="getName" />
+              <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
             </node>
           </node>
           <node concept="Xl_RD" id="75_oBQVgtod" role="3uHU7w">
@@ -1400,7 +1400,7 @@
                 <ref role="3cqZAo" node="75_oBQVwQmh" resolve="object" />
               </node>
               <node concept="liA8E" id="75_oBQVx3M9" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
               </node>
             </node>
           </node>
@@ -1498,7 +1498,7 @@
               <ref role="3cqZAo" node="75_oBQVwWK8" resolve="clazz" />
             </node>
             <node concept="liA8E" id="75_oBQVwZbw" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Class.getInterfaces():java.lang.Class[]" resolve="getInterfaces" />
+              <ref role="37wK5l" to="wyt6:~Class.getInterfaces()" resolve="getInterfaces" />
             </node>
           </node>
         </node>
@@ -1510,7 +1510,7 @@
                 <ref role="3cqZAo" node="75_oBQVwWK8" resolve="clazz" />
               </node>
               <node concept="liA8E" id="75_oBQVx32E" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Class.getSuperclass():java.lang.Class" resolve="getSuperclass" />
+                <ref role="37wK5l" to="wyt6:~Class.getSuperclass()" resolve="getSuperclass" />
               </node>
             </node>
           </node>
@@ -1541,7 +1541,7 @@
                       <ref role="3cqZAo" node="75_oBQVUe31" resolve="language" />
                     </node>
                     <node concept="liA8E" id="75_oBQVUe4q" role="2OqNvi">
-                      <ref role="37wK5l" to="31cb:~SModuleBase.getModels():java.util.List" resolve="getModels" />
+                      <ref role="37wK5l" to="31cb:~SModuleBase.getModels()" resolve="getModels" />
                     </node>
                   </node>
                   <node concept="A3Dl8" id="75_oBQVUe4r" role="10QFUM">
@@ -1557,7 +1557,7 @@
                     <node concept="3clFbF" id="75_oBQVUfb$" role="3cqZAp">
                       <node concept="2OqwBi" id="75_oBQVUg0z" role="3clFbG">
                         <node concept="2YIFZM" id="75_oBQVUfFH" role="2Oq$k0">
-                          <ref role="37wK5l" to="w1kc:~SModelStereotype.getStereotype(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getStereotype" />
+                          <ref role="37wK5l" to="w1kc:~SModelStereotype.getStereotype(org.jetbrains.mps.openapi.model.SModel)" resolve="getStereotype" />
                           <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
                           <node concept="37vLTw" id="75_oBQVUfOd" role="37wK5m">
                             <ref role="3cqZAo" node="75_oBQVUf5_" resolve="it" />
@@ -1581,7 +1581,7 @@
                     <node concept="3clFbC" id="75_oBQVUe4x" role="3clFbG">
                       <node concept="10Nm6u" id="75_oBQVUe4y" role="3uHU7w" />
                       <node concept="2YIFZM" id="75_oBQVUe4z" role="3uHU7B">
-                        <ref role="37wK5l" to="w1kc:~Language.getModelAspect(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.smodel.LanguageAspect" resolve="getModelAspect" />
+                        <ref role="37wK5l" to="w1kc:~Language.getModelAspect(org.jetbrains.mps.openapi.model.SModel)" resolve="getModelAspect" />
                         <ref role="1Pybhc" to="w1kc:~Language" resolve="Language" />
                         <node concept="37vLTw" id="75_oBQVUe4$" role="37wK5m">
                           <ref role="3cqZAo" node="75_oBQVUe4_" resolve="it" />
@@ -1640,7 +1640,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4GrfODAR3LA" role="2OqNvi">
-                <ref role="37wK5l" to="z1c5:~AbstractModule.getDescriptorFile():jetbrains.mps.vfs.IFile" resolve="getDescriptorFile" />
+                <ref role="37wK5l" to="z1c5:~AbstractModule.getDescriptorFile()" resolve="getDescriptorFile" />
               </node>
             </node>
           </node>
@@ -1660,7 +1660,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4GrfODAR5xm" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~StandaloneMPSProject.getFolderFor(org.jetbrains.mps.openapi.module.SModule):java.lang.String" resolve="getFolderFor" />
+                <ref role="37wK5l" to="z1c3:~StandaloneMPSProject.getFolderFor(org.jetbrains.mps.openapi.module.SModule)" resolve="getFolderFor" />
                 <node concept="37vLTw" id="4GrfODAR5xn" role="37wK5m">
                   <ref role="3cqZAo" node="4GrfODAR0cd" resolve="module" />
                 </node>
@@ -1689,7 +1689,7 @@
         <node concept="3cpWs6" id="4GrfODAR13E" role="3cqZAp">
           <node concept="2OqwBi" id="4GrfODAV2KW" role="3cqZAk">
             <node concept="2YIFZM" id="4GrfODAV23u" role="2Oq$k0">
-              <ref role="37wK5l" to="btm1:~StringUtils.split(java.lang.String,char):java.lang.String[]" resolve="split" />
+              <ref role="37wK5l" to="btm1:~StringUtils.split(java.lang.String,char)" resolve="split" />
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="37vLTw" id="4GrfODAV29v" role="37wK5m">
                 <ref role="3cqZAo" node="4GrfODAR5xh" resolve="path" />

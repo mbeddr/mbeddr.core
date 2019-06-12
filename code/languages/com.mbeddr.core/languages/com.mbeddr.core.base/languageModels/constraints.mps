@@ -14,7 +14,6 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -309,7 +308,7 @@
                   <node concept="2OqwBi" id="51GCMCFoM1z" role="3fr31v">
                     <node concept="1Wqviy" id="51GCMCFoM1$" role="2Oq$k0" />
                     <node concept="liA8E" id="51GCMCFoM1_" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                       <node concept="Xl_RD" id="51GCMCFoM1A" role="37wK5m">
                         <property role="Xl_RC" value=" " />
                       </node>
@@ -332,7 +331,7 @@
                   <node concept="2OqwBi" id="8q0nkX_l9N" role="3fr31v">
                     <node concept="1Wqviy" id="8q0nkX_l9O" role="2Oq$k0" />
                     <node concept="liA8E" id="8q0nkX_l9P" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                       <node concept="Xl_RD" id="8q0nkX_l9Q" role="37wK5m">
                         <property role="Xl_RC" value=" " />
                       </node>
@@ -366,7 +365,7 @@
             <node concept="2OqwBi" id="65XyadYKJgV" role="3clFbw">
               <node concept="1Wqviy" id="65XyadYKJgW" role="2Oq$k0" />
               <node concept="liA8E" id="65XyadYKJgX" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="65XyadYKJgY" role="37wK5m">
                   <property role="Xl_RC" value="[a-zA-Z$[_]][a-zA-Z0-9$[_]]*" />
                 </node>
@@ -822,7 +821,7 @@
             <node concept="2OqwBi" id="2tP2JaaAY52" role="3clFbw">
               <node concept="1Wqviy" id="2tP2JaaAY53" role="2Oq$k0" />
               <node concept="liA8E" id="2tP2JaaAY54" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="2tP2JaaAY55" role="37wK5m">
                   <property role="Xl_RC" value="[a-zA-Z$[_]][a-zA-Z0-9$[_][-]]*" />
                 </node>
@@ -910,10 +909,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="1c0z7yfFz0O">
-    <property role="3GE5qa" value="valueDebugger" />
-    <ref role="1M2myG" to="vs0r:$bJ0jgQ80g" resolve="ValueDebugger" />
-  </node>
   <node concept="1M2fIO" id="GKLijSKPAR">
     <property role="3GE5qa" value="exref" />
     <ref role="1M2myG" to="vs0r:GKLijS$AT1" resolve="IExtRef" />
@@ -970,31 +965,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="gjBy3ThgJB">
-    <ref role="1M2myG" to="vs0r:gjBy3ThgJz" resolve="ConceptDeclarationReference_old" />
-    <node concept="1N5Pfh" id="4uR15_er0x3" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:4uR15_er0pl" resolve="concept_old" />
-      <node concept="3dgokm" id="4uR15_erk3i" role="1N6uqs">
-        <node concept="3clFbS" id="5CkU_dHiezW" role="2VODD2">
-          <node concept="3clFbF" id="5CkU_dHiezX" role="3cqZAp">
-            <node concept="2YIFZM" id="5CkU_dHie$x" role="3clFbG">
-              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="5CkU_dHie$y" role="37wK5m">
-                <node concept="2OqwBi" id="5CkU_dHie$z" role="2Oq$k0">
-                  <node concept="2rP1CM" id="5CkU_dHie$$" role="2Oq$k0" />
-                  <node concept="I4A8Y" id="5CkU_dHie$_" role="2OqNvi" />
-                </node>
-                <node concept="1j9C0f" id="5CkU_dHie$A" role="2OqNvi">
-                  <ref role="1j9C0d" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="1JcbkuyR6kS">
     <property role="3GE5qa" value="pathAndFile" />
     <ref role="1M2myG" to="vs0r:1JcbkuyFcOM" resolve="SolutionRelativeHashedFilePicker" />
@@ -1036,7 +1006,7 @@
                   <property role="Xl_RC" value="" />
                 </node>
                 <node concept="2YIFZM" id="1JcbkuyR8ry" role="3uHU7B">
-                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
                   <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                 </node>
               </node>
