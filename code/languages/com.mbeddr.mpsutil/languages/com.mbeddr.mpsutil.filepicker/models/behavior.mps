@@ -190,9 +190,6 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -2854,36 +2851,20 @@
             </node>
           </node>
           <node concept="1Wc70l" id="_kBiYDa78F" role="3clFbw">
-            <node concept="2OqwBi" id="2De0Cj6_fKk" role="3uHU7B">
-              <node concept="3VsKOn" id="2De0Cj6_fgU" role="2Oq$k0">
-                <ref role="3VsUkX" to="g3l6:~TransientSModel" resolve="TransientSModel" />
+            <node concept="2ZW3vV" id="1$T4OZGSq4e" role="3uHU7B">
+              <node concept="3uibUv" id="1$T4OZGSqbA" role="2ZW6by">
+                <ref role="3uigEE" to="g3l6:~TransientSModel" resolve="TransientSModel" />
               </node>
-              <node concept="liA8E" id="2De0Cj6_grW" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Class.isAssignableFrom(java.lang.Class):boolean" resolve="isAssignableFrom" />
-                <node concept="2OqwBi" id="2De0Cj6_gUB" role="37wK5m">
-                  <node concept="37vLTw" id="2De0Cj6_gCB" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Wn4fzjJqEP" resolve="model" />
-                  </node>
-                  <node concept="liA8E" id="2De0Cj6_hcO" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="1$T4OZGSpMD" role="2ZW6bz">
+                <ref role="3cqZAo" node="4Wn4fzjJqEP" resolve="model" />
               </node>
             </node>
-            <node concept="2OqwBi" id="2De0Cj6_9Ao" role="3uHU7w">
-              <node concept="3VsKOn" id="2De0Cj6_8De" role="2Oq$k0">
-                <ref role="3VsUkX" to="ap4t:~TransientModelsModule" resolve="TransientModelsModule" />
+            <node concept="2ZW3vV" id="1$T4OZGSqZ6" role="3uHU7w">
+              <node concept="3uibUv" id="1$T4OZGSr3W" role="2ZW6by">
+                <ref role="3uigEE" to="ap4t:~TransientModelsModule" resolve="TransientModelsModule" />
               </node>
-              <node concept="liA8E" id="2De0Cj6_afV" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Class.isAssignableFrom(java.lang.Class):boolean" resolve="isAssignableFrom" />
-                <node concept="2OqwBi" id="2De0Cj6_aEi" role="37wK5m">
-                  <node concept="37vLTw" id="2De0Cj6_aqx" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Wn4fzjJqEW" resolve="module" />
-                  </node>
-                  <node concept="liA8E" id="2De0Cj6_aUe" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="1$T4OZGSqlN" role="2ZW6bz">
+                <ref role="3cqZAo" node="4Wn4fzjJqEW" resolve="module" />
               </node>
             </node>
           </node>
