@@ -6,6 +6,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -20,6 +21,7 @@
     <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
+    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -573,8 +575,8 @@
                   <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
                 </node>
                 <node concept="2YIFZM" id="5Dpaey8AQEJ" role="33vP2m">
-                  <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
                   <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+                  <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
                   <node concept="Xl_RD" id="5Dpaey8AQF8" role="37wK5m">
                     <property role="Xl_RC" value="(.*)\\$([^$()]+)\\$(.*)" />
                   </node>
@@ -936,8 +938,8 @@
                       </node>
                     </node>
                     <node concept="2YIFZM" id="7ZxIDztvVaw" role="33vP2m">
-                      <ref role="37wK5l" to="guwi:~File.listRoots()" resolve="listRoots" />
                       <ref role="1Pybhc" to="guwi:~File" resolve="File" />
+                      <ref role="37wK5l" to="guwi:~File.listRoots()" resolve="listRoots" />
                     </node>
                   </node>
                 </node>
@@ -1670,13 +1672,13 @@
                 </node>
                 <node concept="3K4zz7" id="50N_nP$dNZl" role="33vP2m">
                   <node concept="2YIFZM" id="50N_nP$dNZr" role="3K4E3e">
-                    <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
                     <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                    <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
                   </node>
                   <node concept="10Nm6u" id="50N_nP$dNZK" role="3K4GZi" />
                   <node concept="2YIFZM" id="50N_nP$dNZ0" role="3K4Cdx">
-                    <ref role="37wK5l" to="z60i:~Desktop.isDesktopSupported()" resolve="isDesktopSupported" />
                     <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                    <ref role="37wK5l" to="z60i:~Desktop.isDesktopSupported()" resolve="isDesktopSupported" />
                   </node>
                 </node>
               </node>
@@ -1775,13 +1777,13 @@
                 </node>
                 <node concept="3K4zz7" id="2HwAvL$nEXY" role="33vP2m">
                   <node concept="2YIFZM" id="2HwAvL$nEXZ" role="3K4E3e">
-                    <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
                     <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                    <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
                   </node>
                   <node concept="10Nm6u" id="2HwAvL$nEY0" role="3K4GZi" />
                   <node concept="2YIFZM" id="2HwAvL$nEY1" role="3K4Cdx">
-                    <ref role="37wK5l" to="z60i:~Desktop.isDesktopSupported()" resolve="isDesktopSupported" />
                     <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                    <ref role="37wK5l" to="z60i:~Desktop.isDesktopSupported()" resolve="isDesktopSupported" />
                   </node>
                 </node>
               </node>
@@ -1880,13 +1882,13 @@
                 </node>
                 <node concept="3K4zz7" id="6uhyUqXhg1U" role="33vP2m">
                   <node concept="2YIFZM" id="6uhyUqXhg1V" role="3K4E3e">
-                    <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
                     <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                    <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
                   </node>
                   <node concept="10Nm6u" id="6uhyUqXhg1W" role="3K4GZi" />
                   <node concept="2YIFZM" id="6uhyUqXhg1X" role="3K4Cdx">
-                    <ref role="37wK5l" to="z60i:~Desktop.isDesktopSupported()" resolve="isDesktopSupported" />
                     <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                    <ref role="37wK5l" to="z60i:~Desktop.isDesktopSupported()" resolve="isDesktopSupported" />
                   </node>
                 </node>
               </node>
@@ -2355,8 +2357,8 @@
         <node concept="3cpWs6" id="6M3J7P6$Cz5" role="3cqZAp">
           <node concept="2OqwBi" id="6M3J7P6$Cz6" role="3cqZAk">
             <node concept="2YIFZM" id="6M3J7P6$Cz7" role="2Oq$k0">
-              <ref role="37wK5l" to="z1c3:~PathMacros.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
+              <ref role="37wK5l" to="z1c3:~PathMacros.getInstance()" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="6M3J7P6$Cz8" role="2OqNvi">
               <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String)" resolve="getValue" />
@@ -2801,8 +2803,8 @@
                   <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                 </node>
                 <node concept="2YIFZM" id="_kBiYDa66C" role="33vP2m">
-                  <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository)" resolve="getInputNode" />
                   <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                  <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository)" resolve="getInputNode" />
                   <node concept="37vLTw" id="7xif6eKvZWc" role="37wK5m">
                     <ref role="3cqZAo" node="4Wn4fzjJqFe" resolve="n" />
                   </node>
@@ -2849,23 +2851,20 @@
             </node>
           </node>
           <node concept="1Wc70l" id="_kBiYDa78F" role="3clFbw">
-            <node concept="2ZW3vV" id="_kBiYD9ZN4" role="3uHU7B">
-              <node concept="3uibUv" id="7xif6eKvZyM" role="2ZW6by">
+            <node concept="2ZW3vV" id="1$T4OZGSq4e" role="3uHU7B">
+              <node concept="3uibUv" id="1$T4OZGSqbA" role="2ZW6by">
                 <ref role="3uigEE" to="g3l6:~TransientSModel" resolve="TransientSModel" />
               </node>
-              <node concept="37vLTw" id="7xif6eKvZwh" role="2ZW6bz">
+              <node concept="37vLTw" id="1$T4OZGSpMD" role="2ZW6bz">
                 <ref role="3cqZAo" node="4Wn4fzjJqEP" resolve="model" />
               </node>
             </node>
-            <node concept="3y3z36" id="_kBiYDa7yY" role="3uHU7w">
-              <node concept="10Nm6u" id="_kBiYDa7Jg" role="3uHU7w" />
-              <node concept="2OqwBi" id="_kBiYDa7ma" role="3uHU7B">
-                <node concept="37vLTw" id="7xif6eKvZQW" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4Wn4fzjJqEP" resolve="model" />
-                </node>
-                <node concept="liA8E" id="_kBiYDa7mc" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
-                </node>
+            <node concept="2ZW3vV" id="1$T4OZGSqZ6" role="3uHU7w">
+              <node concept="3uibUv" id="1$T4OZGSr3W" role="2ZW6by">
+                <ref role="3uigEE" to="ap4t:~TransientModelsModule" resolve="TransientModelsModule" />
+              </node>
+              <node concept="37vLTw" id="1$T4OZGSqlN" role="2ZW6bz">
+                <ref role="3cqZAo" node="4Wn4fzjJqEW" resolve="module" />
               </node>
             </node>
           </node>
