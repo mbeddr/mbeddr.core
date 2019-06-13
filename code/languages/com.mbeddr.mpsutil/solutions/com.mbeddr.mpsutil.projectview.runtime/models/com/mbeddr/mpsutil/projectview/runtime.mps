@@ -5850,6 +5850,72 @@
       </node>
     </node>
     <node concept="2tJIrI" id="VPgi8egh0M" role="jymVt" />
+    <node concept="3clFb_" id="b512__M_RO" role="jymVt">
+      <property role="TrG5h" value="getView" />
+      <node concept="37vLTG" id="b512__MMT3" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="b512__MPU9" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="b512__MGre" role="3clF46">
+        <property role="TrG5h" value="id" />
+        <node concept="3uibUv" id="b512__MIZO" role="1tU5fm">
+          <ref role="3uigEE" node="3ZnFyBjwz$i" resolve="ViewId" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="b512__MJbF" role="3clF45">
+        <ref role="3uigEE" to="uhdf:2ZGhpRfcKKF" resolve="CustomProjectView" />
+      </node>
+      <node concept="3Tm1VV" id="b512__M_RR" role="1B3o_S" />
+      <node concept="3clFbS" id="b512__M_RS" role="3clF47">
+        <node concept="3cpWs8" id="b512__MRad" role="3cqZAp">
+          <node concept="3cpWsn" id="b512__MRae" role="3cpWs9">
+            <property role="TrG5h" value="views" />
+            <node concept="3rvAFt" id="b512__MRa6" role="1tU5fm">
+              <node concept="3uibUv" id="b512__MRab" role="3rvQeY">
+                <ref role="3uigEE" node="3ZnFyBjwz$i" resolve="ViewId" />
+              </node>
+              <node concept="3uibUv" id="b512__MRac" role="3rvSg0">
+                <ref role="3uigEE" to="uhdf:2ZGhpRfcKKF" resolve="CustomProjectView" />
+              </node>
+            </node>
+            <node concept="3EllGN" id="b512__MRaf" role="33vP2m">
+              <node concept="37vLTw" id="b512__MRag" role="3ElVtu">
+                <ref role="3cqZAo" node="b512__MMT3" resolve="project" />
+              </node>
+              <node concept="37vLTw" id="b512__MRah" role="3ElQJh">
+                <ref role="3cqZAo" node="VPgi8ehRQY" resolve="myViewInstances" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="b512__MR$O" role="3cqZAp">
+          <node concept="3clFbS" id="b512__MR$Q" role="3clFbx">
+            <node concept="3cpWs6" id="b512__N3Dn" role="3cqZAp">
+              <node concept="10Nm6u" id="b512__N3L_" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="b512__N3gg" role="3clFbw">
+            <node concept="10Nm6u" id="b512__N3wE" role="3uHU7w" />
+            <node concept="37vLTw" id="b512__MRSU" role="3uHU7B">
+              <ref role="3cqZAo" node="b512__MRae" resolve="views" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="b512__MLKP" role="3cqZAp">
+          <node concept="3EllGN" id="b512__MQHb" role="3clFbG">
+            <node concept="37vLTw" id="b512__MR2O" role="3ElVtu">
+              <ref role="3cqZAo" node="b512__MGre" resolve="id" />
+            </node>
+            <node concept="37vLTw" id="b512__MRai" role="3ElQJh">
+              <ref role="3cqZAo" node="b512__MRae" resolve="views" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="b512__Mznz" role="jymVt" />
     <node concept="3clFb_" id="VPgi8ehHG4" role="jymVt">
       <property role="TrG5h" value="registerProject" />
       <node concept="37vLTG" id="VPgi8ehKRR" role="3clF46">
