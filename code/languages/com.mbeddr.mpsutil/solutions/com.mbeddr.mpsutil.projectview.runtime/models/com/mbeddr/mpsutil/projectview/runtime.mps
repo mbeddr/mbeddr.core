@@ -2,9 +2,9 @@
 <model ref="r:744546b3-28d0-4d16-91c8-8f406ef84c6e(com.mbeddr.mpsutil.projectview.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2678,8 +2678,8 @@
         <node concept="3clFbF" id="3kZeI292ztm" role="3cqZAp">
           <node concept="3K4zz7" id="3kZeI292zTM" role="3clFbG">
             <node concept="2YIFZM" id="3kZeI292F7U" role="3K4GZi">
-              <ref role="37wK5l" to="33ny:~Collections.emptySet()" resolve="emptySet" />
               <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+              <ref role="37wK5l" to="33ny:~Collections.emptySet()" resolve="emptySet" />
               <node concept="3uibUv" id="3kZeI292Izj" role="3PaCim">
                 <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
               </node>
@@ -5850,6 +5850,72 @@
       </node>
     </node>
     <node concept="2tJIrI" id="VPgi8egh0M" role="jymVt" />
+    <node concept="3clFb_" id="b512__M_RO" role="jymVt">
+      <property role="TrG5h" value="getView" />
+      <node concept="37vLTG" id="b512__MMT3" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="b512__MPU9" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="b512__MGre" role="3clF46">
+        <property role="TrG5h" value="id" />
+        <node concept="3uibUv" id="b512__MIZO" role="1tU5fm">
+          <ref role="3uigEE" node="3ZnFyBjwz$i" resolve="ViewId" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="b512__MJbF" role="3clF45">
+        <ref role="3uigEE" to="uhdf:2ZGhpRfcKKF" resolve="CustomProjectView" />
+      </node>
+      <node concept="3Tm1VV" id="b512__M_RR" role="1B3o_S" />
+      <node concept="3clFbS" id="b512__M_RS" role="3clF47">
+        <node concept="3cpWs8" id="b512__MRad" role="3cqZAp">
+          <node concept="3cpWsn" id="b512__MRae" role="3cpWs9">
+            <property role="TrG5h" value="views" />
+            <node concept="3rvAFt" id="b512__MRa6" role="1tU5fm">
+              <node concept="3uibUv" id="b512__MRab" role="3rvQeY">
+                <ref role="3uigEE" node="3ZnFyBjwz$i" resolve="ViewId" />
+              </node>
+              <node concept="3uibUv" id="b512__MRac" role="3rvSg0">
+                <ref role="3uigEE" to="uhdf:2ZGhpRfcKKF" resolve="CustomProjectView" />
+              </node>
+            </node>
+            <node concept="3EllGN" id="b512__MRaf" role="33vP2m">
+              <node concept="37vLTw" id="b512__MRag" role="3ElVtu">
+                <ref role="3cqZAo" node="b512__MMT3" resolve="project" />
+              </node>
+              <node concept="37vLTw" id="b512__MRah" role="3ElQJh">
+                <ref role="3cqZAo" node="VPgi8ehRQY" resolve="myViewInstances" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="b512__MR$O" role="3cqZAp">
+          <node concept="3clFbS" id="b512__MR$Q" role="3clFbx">
+            <node concept="3cpWs6" id="b512__N3Dn" role="3cqZAp">
+              <node concept="10Nm6u" id="b512__N3L_" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="b512__N3gg" role="3clFbw">
+            <node concept="10Nm6u" id="b512__N3wE" role="3uHU7w" />
+            <node concept="37vLTw" id="b512__MRSU" role="3uHU7B">
+              <ref role="3cqZAo" node="b512__MRae" resolve="views" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="b512__MLKP" role="3cqZAp">
+          <node concept="3EllGN" id="b512__MQHb" role="3clFbG">
+            <node concept="37vLTw" id="b512__MR2O" role="3ElVtu">
+              <ref role="3cqZAo" node="b512__MGre" resolve="id" />
+            </node>
+            <node concept="37vLTw" id="b512__MRai" role="3ElQJh">
+              <ref role="3cqZAo" node="b512__MRae" resolve="views" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="b512__Mznz" role="jymVt" />
     <node concept="3clFb_" id="VPgi8ehHG4" role="jymVt">
       <property role="TrG5h" value="registerProject" />
       <node concept="37vLTG" id="VPgi8ehKRR" role="3clF46">
@@ -6216,8 +6282,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="2lGHmHy8M58" role="33vP2m">
-              <ref role="37wK5l" to="33ny:~Collections.emptySet()" resolve="emptySet" />
               <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+              <ref role="37wK5l" to="33ny:~Collections.emptySet()" resolve="emptySet" />
             </node>
           </node>
         </node>
@@ -6446,8 +6512,8 @@
               <node concept="1pGfFk" id="VPgi8etJvQ" role="2ShVmc">
                 <ref role="37wK5l" to="uhdf:7diJr$Rj_vi" resolve="CustomProjectView" />
                 <node concept="2YIFZM" id="VPgi8etJvR" role="37wK5m">
-                  <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                  <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                   <node concept="37vLTw" id="VPgi8etJvS" role="37wK5m">
                     <ref role="3cqZAo" node="VPgi8eu125" resolve="project" />
                   </node>
@@ -6485,8 +6551,8 @@
         <node concept="3clFbH" id="VPgi8eufIu" role="3cqZAp" />
         <node concept="3clFbF" id="1md9KyKAArR" role="3cqZAp">
           <node concept="2YIFZM" id="1md9KyKAAx8" role="3clFbG">
-            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable)" resolve="runInUIThreadNoWait" />
             <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable)" resolve="runInUIThreadNoWait" />
             <node concept="1bVj0M" id="1md9KyKAA_p" role="37wK5m">
               <node concept="3clFbS" id="1md9KyKAA_q" role="1bW5cS">
                 <node concept="3clFbF" id="63vN1tgoJVZ" role="3cqZAp">
@@ -6566,8 +6632,8 @@
         </node>
         <node concept="3clFbF" id="1md9KyKAA7H" role="3cqZAp">
           <node concept="2YIFZM" id="1md9KyKAAe4" role="3clFbG">
-            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable)" resolve="runInUIThreadNoWait" />
             <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable)" resolve="runInUIThreadNoWait" />
             <node concept="1bVj0M" id="1md9KyKAAf1" role="37wK5m">
               <node concept="3clFbS" id="1md9KyKAAf2" role="1bW5cS">
                 <node concept="3cpWs8" id="VPgi8eujhL" role="3cqZAp">
@@ -6577,8 +6643,8 @@
                       <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
                     </node>
                     <node concept="2YIFZM" id="VPgi8eujhO" role="33vP2m">
-                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                       <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                       <node concept="37vLTw" id="VPgi8eujhP" role="37wK5m">
                         <ref role="3cqZAo" node="VPgi8eu22P" resolve="project" />
                       </node>
@@ -6652,8 +6718,8 @@
         <node concept="3clFbF" id="VPgi8egh9W" role="3cqZAp">
           <node concept="2OqwBi" id="VPgi8eghcQ" role="3clFbG">
             <node concept="2YIFZM" id="VPgi8eghca" role="2Oq$k0">
-              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
+              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance()" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="VPgi8eghpo" role="2OqNvi">
               <ref role="37wK5l" to="3qmy:~ClassLoaderManager.addListener(jetbrains.mps.classloading.DeployListener)" resolve="addListener" />
@@ -6697,8 +6763,8 @@
                 </node>
                 <node concept="2OqwBi" id="52ZF9D3g4gR" role="2GsD0m">
                   <node concept="2YIFZM" id="52ZF9D3g4eU" role="2Oq$k0">
-                    <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
                     <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                    <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="52ZF9D3g4tz" role="2OqNvi">
                     <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules()" resolve="getModules" />
@@ -6727,8 +6793,8 @@
         <node concept="3clFbF" id="VPgi8eghQA" role="3cqZAp">
           <node concept="2OqwBi" id="VPgi8eghRK" role="3clFbG">
             <node concept="2YIFZM" id="VPgi8eghR3" role="2Oq$k0">
-              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
+              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance()" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="VPgi8egi4v" role="2OqNvi">
               <ref role="37wK5l" to="3qmy:~ClassLoaderManager.removeListener(jetbrains.mps.classloading.DeployListener)" resolve="removeListener" />

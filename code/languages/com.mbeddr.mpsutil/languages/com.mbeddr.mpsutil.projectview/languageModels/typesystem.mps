@@ -8,6 +8,7 @@
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
     <import index="d04j" ref="r:904a58f9-8bb7-4ceb-b8a8-e6d7b5fc9126(com.mbeddr.mpsutil.projectview.structure)" implicit="true" />
     <import index="os9e" ref="r:97eb5271-8e83-4b12-a8f1-f764eae13815(com.mbeddr.mpsutil.projectview.behavior)" implicit="true" />
   </imports>
@@ -584,6 +585,31 @@
     <node concept="1YaCAy" id="4f8kqjwl8gh" role="1YuTPh">
       <property role="TrG5h" value="treeNodeElement" />
       <ref role="1YaFvo" to="d04j:7diJr$RulqU" resolve="TreeNodeElement" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="b512__NLmu">
+    <property role="TrG5h" value="typeof_ProjectViewReference" />
+    <node concept="3clFbS" id="b512__NLmv" role="18ibNy">
+      <node concept="1Z5TYs" id="b512__NLuK" role="3cqZAp">
+        <node concept="mw_s8" id="b512__NLv4" role="1ZfhKB">
+          <node concept="2c44tf" id="b512__NLv0" role="mwGJk">
+            <node concept="3uibUv" id="b512__NLxx" role="2c44tc">
+              <ref role="3uigEE" to="uhdf:2ZGhpRfcKKF" resolve="CustomProjectView" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="b512__NLuN" role="1ZfhK$">
+          <node concept="1Z2H0r" id="b512__NLmF" role="mwGJk">
+            <node concept="1YBJjd" id="b512__NLmV" role="1Z2MuG">
+              <ref role="1YBMHb" node="b512__NLmx" resolve="n" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="b512__NLmx" role="1YuTPh">
+      <property role="TrG5h" value="n" />
+      <ref role="1YaFvo" to="d04j:b512__MuTr" resolve="ProjectViewReference" />
     </node>
   </node>
 </model>
