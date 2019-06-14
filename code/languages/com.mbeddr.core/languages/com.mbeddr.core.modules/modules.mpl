@@ -147,6 +147,7 @@
     <dependency reexport="false">bfbdd672-7ff5-403f-af4f-16da5226f34c(jetbrains.mps.findUsages.runtime)</dependency>
     <dependency reexport="false">5187f5c9-b8a8-4309-90b3-14f9919bd2d8(jetbrains.mps.refactoring)</dependency>
     <dependency reexport="false">d81a5f75-df55-4511-9df4-4dbac0cdcf06(jetbrains.mps.refactoring.participant)</dependency>
+    <dependency reexport="false">acc1f724-624c-43b2-998a-71c39acc0405(com.mbeddr.mpsutil.dataflow.ui)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:ebb5e132-d298-4649-b320-b3f4d7f3acff:com.mbeddr.core.debug.blext" version="0" />

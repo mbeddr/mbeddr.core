@@ -3122,6 +3122,11 @@
             <ref role="1Busuk" to="al5i:61Pvu7KHtlo" resolve="com.mbeddr.mpsutil.breadcrumb" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4zNbfSI1Eep" role="3bR37C">
+          <node concept="3bR9La" id="4zNbfSI1Eeq" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:4sjR92JQxBH" resolve="com.mbeddr.mpsutil.dataflow.ui" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6vuuYkaSA$p" role="2G$12L">
         <property role="BnDLt" value="true" />
