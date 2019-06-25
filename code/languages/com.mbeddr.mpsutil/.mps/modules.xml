@@ -232,6 +232,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.extensionclass/test.com.mbeddr.mpsutil.extensionclass.msd" folder="staging.extensionclass" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar.test/test.com.mbeddr.mpsutil.iconchar.test.msd" folder="stable.iconchar" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar/test.com.mbeddr.mpsutil.iconchar.mpl" folder="stable.iconchar" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.incrementalcomputation.runtime/test.com.mbeddr.mpsutil.incrementalcomputation.runtime.msd" folder="staging.incrementalcomputation.test" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.incrementalcomputation.utils/test.com.mbeddr.mpsutil.incrementalcomputation.utils.mpl" folder="staging.incrementalcomputation.test" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.parameterizedMenu/test.com.mbeddr.mpsutil.parameterizedMenu.msd" folder="parameterizedMenu" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.placeholderTextList.testlang/test.com.mbeddr.mpsutil.placeholderTextList.testlang.mpl" folder="staging.placeholderTextList" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.placeholderTextList/test.com.mbeddr.mpsutil.placeholderTextList.msd" folder="staging.placeholderTextList" />
