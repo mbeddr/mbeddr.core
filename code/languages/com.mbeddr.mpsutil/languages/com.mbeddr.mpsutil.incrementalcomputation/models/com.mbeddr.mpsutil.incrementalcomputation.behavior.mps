@@ -89,9 +89,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -278,38 +276,6 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="5nAcTtn9HEK" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="isActive" />
-      <node concept="37vLTG" id="5nAcTtn9IUF" role="3clF46">
-        <property role="TrG5h" value="valueSelector" />
-        <node concept="3uibUv" id="5nAcTtn9IUG" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="5nAcTtn9HEL" role="1B3o_S" />
-      <node concept="10P_77" id="5nAcTtn9Iyi" role="3clF45" />
-      <node concept="3clFbS" id="5nAcTtn9HEN" role="3clF47">
-        <node concept="3cpWs6" id="5nAcTtn9IyH" role="3cqZAp">
-          <node concept="3clFbT" id="5nAcTtn9Iz0" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="P$JXv" id="5nAcTtn9Izj" role="lGtFl">
-        <node concept="TZ5HA" id="5nAcTtn9Izk" role="TZ5H$">
-          <node concept="1dT_AC" id="5nAcTtn9Izl" role="1dT_Ay">
-            <property role="1dT_AB" value="This method is called by the propagation framework before (re-)calculation is executed. If 'false' is returned," />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5nAcTtn9IzK" role="TZ5H$">
-          <node concept="1dT_AC" id="5nAcTtn9IzL" role="1dT_Ay">
-            <property role="1dT_AB" value="(re-)calculation is not executed and getValue() returns null." />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="13i0hz" id="5nAcTtnb1YA" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -407,7 +373,7 @@
       <node concept="P$JXv" id="lNBnHjW_T3" role="lGtFl">
         <node concept="TZ5HA" id="lNBnHjW_T4" role="TZ5H$">
           <node concept="1dT_AC" id="lNBnHjWA0E" role="1dT_Ay">
-            <property role="1dT_AB" value="API to read cached information" />
+            <property role="1dT_AB" value="API to read cached information. Returns wether the value holder has a cycle regarding this value selector." />
           </node>
         </node>
       </node>
