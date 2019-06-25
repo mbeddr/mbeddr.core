@@ -22,6 +22,7 @@
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -2095,6 +2096,11 @@
                               </node>
                               <node concept="TDmWw" id="3anL894Mo0F" role="TEbGg">
                                 <node concept="3clFbS" id="3anL894Mo0G" role="TDEfX">
+                                  <node concept="3SKdUt" id="4BfR_zSgRHm" role="3cqZAp">
+                                    <node concept="3SKdUq" id="4BfR_zSgRHo" role="3SKWNk">
+                                      <property role="3SKdUp" value="print" />
+                                    </node>
+                                  </node>
                                   <node concept="3clFbF" id="3anL894Mo0H" role="3cqZAp">
                                     <node concept="2OqwBi" id="3anL894Mo0I" role="3clFbG">
                                       <node concept="37vLTw" id="3anL894Mo0J" role="2Oq$k0">
@@ -2102,6 +2108,60 @@
                                       </node>
                                       <node concept="liA8E" id="3anL894Mo0K" role="2OqNvi">
                                         <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3SKdUt" id="7ZJOHLTFv82" role="3cqZAp">
+                                    <node concept="3SKdUq" id="7ZJOHLTFv84" role="3SKWNk">
+                                      <property role="3SKdUp" value="show error" />
+                                    </node>
+                                  </node>
+                                  <node concept="3cpWs8" id="7ZJOHLTGvUy" role="3cqZAp">
+                                    <node concept="3cpWsn" id="7ZJOHLTGvUz" role="3cpWs9">
+                                      <property role="TrG5h" value="impl" />
+                                      <node concept="3uibUv" id="7ZJOHLTGvUx" role="1tU5fm">
+                                        <ref role="3uigEE" to="5ueo:~StyleImpl" resolve="StyleImpl" />
+                                      </node>
+                                      <node concept="2ShNRf" id="7ZJOHLTGvU$" role="33vP2m">
+                                        <node concept="1pGfFk" id="7ZJOHLTGvU_" role="2ShVmc">
+                                          <ref role="37wK5l" to="5ueo:~StyleImpl.&lt;init&gt;()" resolve="StyleImpl" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbF" id="2YOONxNTwUS" role="3cqZAp">
+                                    <node concept="37vLTI" id="2YOONxNTxt0" role="3clFbG">
+                                      <node concept="37vLTw" id="2YOONxNTwUQ" role="37vLTJ">
+                                        <ref role="3cqZAo" node="3anL894Mo0i" resolve="result" />
+                                      </node>
+                                      <node concept="2ShNRf" id="7ZJOHLTFByJ" role="37vLTx">
+                                        <node concept="1pGfFk" id="7ZJOHLTFT7g" role="2ShVmc">
+                                          <ref role="37wK5l" node="5HPe_Jxcpw8" resolve="AsyncCellValue" />
+                                          <node concept="Xl_RD" id="7ZJOHLTFUgx" role="37wK5m">
+                                            <property role="Xl_RC" value="ERR" />
+                                          </node>
+                                          <node concept="37vLTw" id="7ZJOHLTGvUA" role="37wK5m">
+                                            <ref role="3cqZAo" node="7ZJOHLTGvUz" resolve="impl" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3SKdUt" id="4BfR_zSgQLn" role="3cqZAp">
+                                    <node concept="3SKdUq" id="4BfR_zSgQLo" role="3SKWNk">
+                                      <property role="3SKdUp" value="and forget about it immediately to prevent spamming" />
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbF" id="4BfR_zSgQLp" role="3cqZAp">
+                                    <node concept="2OqwBi" id="4BfR_zSgQLq" role="3clFbG">
+                                      <node concept="37vLTw" id="4BfR_zSgQLr" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="5HPe_JwXHEl" resolve="_cellManager" />
+                                      </node>
+                                      <node concept="liA8E" id="4BfR_zSgQLs" role="2OqNvi">
+                                        <ref role="37wK5l" node="5HPe_JwZDXR" resolve="removeAsyncCell" />
+                                        <node concept="2GrUjf" id="4BfR_zSgQLt" role="37wK5m">
+                                          <ref role="2Gs0qQ" node="3anL894Mo04" resolve="cell" />
+                                        </node>
                                       </node>
                                     </node>
                                   </node>
