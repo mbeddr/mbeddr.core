@@ -99,6 +99,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -405,6 +408,38 @@
         <node concept="TZ5HA" id="lNBnHjW_T4" role="TZ5H$">
           <node concept="1dT_AC" id="lNBnHjWA0E" role="1dT_Ay">
             <property role="1dT_AB" value="API to read cached information" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6MPBOWiFIsN" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="canCalculate" />
+      <node concept="3Tm1VV" id="6MPBOWiFIsO" role="1B3o_S" />
+      <node concept="10P_77" id="6MPBOWiFIsP" role="3clF45" />
+      <node concept="3clFbS" id="6MPBOWiFIsQ" role="3clF47">
+        <node concept="3cpWs6" id="6MPBOWiFIsR" role="3cqZAp">
+          <node concept="3fqX7Q" id="6MPBOWiFJLV" role="3cqZAk">
+            <node concept="BsUDl" id="6MPBOWiFJLX" role="3fr31v">
+              <ref role="37wK5l" node="QuEk0ZLOai" resolve="hasCycle" />
+              <node concept="37vLTw" id="6MPBOWiFJLY" role="37wK5m">
+                <ref role="3cqZAo" node="6MPBOWiFIsW" resolve="valueSelector" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6MPBOWiFIsW" role="3clF46">
+        <property role="TrG5h" value="valueSelector" />
+        <node concept="3uibUv" id="6MPBOWiFIsX" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="6MPBOWiFIsY" role="lGtFl">
+        <node concept="TZ5HA" id="6MPBOWiFIsZ" role="TZ5H$">
+          <node concept="1dT_AC" id="6MPBOWiFIt0" role="1dT_Ay">
+            <property role="1dT_AB" value="I decide if the value can be calculated. By default, this is exactly, when having no cycles." />
           </node>
         </node>
       </node>
