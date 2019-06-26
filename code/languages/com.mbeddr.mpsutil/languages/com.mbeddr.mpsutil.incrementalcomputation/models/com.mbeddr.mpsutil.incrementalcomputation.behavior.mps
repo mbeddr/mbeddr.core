@@ -239,11 +239,6 @@
             <property role="1dT_AB" value="The implementation of this function does not have to check for endless recursion (e.g. due to visiting the same node multiple times)." />
           </node>
         </node>
-        <node concept="TZ5HA" id="2YOONxNWUrW" role="TZ5H$">
-          <node concept="1dT_AC" id="2YOONxNWUrX" role="1dT_Ay">
-            <property role="1dT_AB" value="Note that only one thread can enter this function at a time; so beware of deadlocks." />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="13i0hz" id="KudFejX3SG" role="13h7CS">
