@@ -285,10 +285,6 @@
         </node>
         <node concept="3clFbH" id="4kJ3EIm6bJP" role="3cqZAp" />
         <node concept="38rL1p" id="8FyjeteYz7" role="3cqZAp">
-          <node concept="38rIoz" id="4Y$LvVOrnb7" role="38rM$J">
-            <property role="38rIoG" value="*" />
-            <property role="38rMdH" value="*" />
-          </node>
           <node concept="38rIoz" id="4Y$LvVOrney" role="38rM$J">
             <property role="38rIoG" value="call" />
             <property role="38rMdH" value="main" />
@@ -969,13 +965,6 @@
               <ref role="ehGHo" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
             </node>
           </node>
-          <node concept="38rIoz" id="7lmBuXrV$S_" role="38rM$J">
-            <property role="38rIoG" value="fileContent" />
-            <property role="38rMdH" value="&quot;some content&quot;" />
-            <node concept="3Tqbb2" id="7lmBuXrV_rA" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-            </node>
-          </node>
           <node concept="38rIoz" id="7lmBuXrV$W3" role="38rM$J">
             <property role="38rIoG" value="return" />
             <property role="38rMdH" value="init" />
@@ -1022,13 +1011,6 @@
             <property role="38rIoG" value="protId" />
             <property role="38rMdH" value="0" />
             <node concept="3Tqbb2" id="2UdC0h0Qqos" role="38rYrG">
-              <ref role="ehGHo" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
-            </node>
-          </node>
-          <node concept="38rIoz" id="2UdC0h0Qqou" role="38rM$J">
-            <property role="38rIoG" value="loc" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="2UdC0h0Qqs4" role="38rYrG">
               <ref role="ehGHo" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
             </node>
           </node>
@@ -1142,6 +1124,22 @@
             <property role="38rMdH" value="*" />
           </node>
           <node concept="38rIoz" id="3Sa0kpM9XKY" role="38rM$J">
+            <property role="38rIoG" value="*" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="5cKTps7p9gX" role="38rM$J">
+            <property role="38rIoG" value="*" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="5cKTps7pgwn" role="38rM$J">
+            <property role="38rIoG" value="*" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="5cKTps7ptJM" role="38rM$J">
+            <property role="38rIoG" value="*" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="5cKTps7p_3g" role="38rM$J">
             <property role="38rIoG" value="*" />
             <property role="38rMdH" value="*" />
           </node>

@@ -2639,7 +2639,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl9001" role="38rM$J">
-            <property role="38rIoG" value="r\\.points\\[0l?\\]\\.x" />
+            <property role="38rIoG" value="r\\.points\\[0l?l?\\]\\.x" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl9002" role="38rYrG">
@@ -2647,7 +2647,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl9003" role="38rM$J">
-            <property role="38rIoG" value="r\\.points\\[0l?\\]\\.y" />
+            <property role="38rIoG" value="r\\.points\\[0l?l?\\]\\.y" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl9004" role="38rYrG">
@@ -2718,7 +2718,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl93Ht" role="38rM$J">
-            <property role="38rIoG" value="r\\.points\\[1l?\\]\\.x" />
+            <property role="38rIoG" value="r\\.points\\[1l?l?\\]\\.x" />
             <property role="38rMdH" value="10" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl93Hu" role="38rYrG">
@@ -2726,7 +2726,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl93Hv" role="38rM$J">
-            <property role="38rIoG" value="r\\.points\\[1l?\\]\\.y" />
+            <property role="38rIoG" value="r\\.points\\[1l?l?\\]\\.y" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl93Hw" role="38rYrG">
@@ -4144,13 +4144,6 @@
               <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
           </node>
-          <node concept="38rIoz" id="2V53qRfZKzk" role="38rM$J">
-            <property role="38rIoG" value="stringLiteral" />
-            <property role="38rMdH" value="&quot;some value&quot;" />
-            <node concept="3Tqbb2" id="2V53qRfZKzl" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
           <node concept="38rIoz" id="2V53qRfZKzm" role="38rM$J">
             <property role="38rIoG" value="octalLiteral" />
             <property role="38rMdH" value="9" />
@@ -4225,27 +4218,6 @@
             <property role="38rIoG" value="intArray[2]" />
             <property role="38rMdH" value="3" />
             <node concept="3Tqbb2" id="21uLVwEIpU4" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
-          <node concept="38rIoz" id="70FTS8kdTsk" role="38rM$J">
-            <property role="38rIoG" value="stringArray[0]" />
-            <property role="38rMdH" value="&quot;a&quot;" />
-            <node concept="3Tqbb2" id="70FTS8kdTsl" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
-          <node concept="38rIoz" id="70FTS8kdTsm" role="38rM$J">
-            <property role="38rIoG" value="stringArray[1]" />
-            <property role="38rMdH" value="&quot;b&quot;" />
-            <node concept="3Tqbb2" id="70FTS8kdTsn" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
-          <node concept="38rIoz" id="70FTS8kdTso" role="38rM$J">
-            <property role="38rIoG" value="stringArray[2]" />
-            <property role="38rMdH" value="&quot;c&quot;" />
-            <node concept="3Tqbb2" id="70FTS8kdTsp" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
@@ -4385,7 +4357,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="wSZHMcrqmG" role="38rM$J">
-            <property role="38rIoG" value="intarr\\[0l?\\]" />
+            <property role="38rIoG" value="intarr\\[0l?l?\\]" />
             <property role="38rMdH" value="2" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="wSZHMcrr10" role="38rYrG">
@@ -4421,7 +4393,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="wSZHMcrrbE" role="38rM$J">
-            <property role="38rIoG" value="intarr\\[1l?\\]" />
+            <property role="38rIoG" value="intarr\\[1l?l?\\]" />
             <property role="38rMdH" value="4" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="wSZHMcrrNd" role="38rYrG">
@@ -5678,13 +5650,6 @@
               <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
           </node>
-          <node concept="38rIoz" id="6Xk4NhNawEu" role="38rM$J">
-            <property role="38rIoG" value="john.name" />
-            <property role="38rMdH" value="&quot;John&quot;" />
-            <node concept="3Tqbb2" id="6Xk4NhNawEv" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
           <node concept="38rIoz" id="6Xk4NhNawEw" role="38rM$J">
             <property role="38rIoG" value="john.age" />
             <property role="38rMdH" value="32" />
@@ -5887,13 +5852,6 @@
               <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
           </node>
-          <node concept="38rIoz" id="3kmIFBmen93" role="38rM$J">
-            <property role="38rIoG" value="stringLiteral" />
-            <property role="38rMdH" value="&quot;some string&quot;" />
-            <node concept="3Tqbb2" id="3kmIFBmen94" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
           <node concept="38rIoz" id="3kmIFBmfodX" role="38rM$J">
             <property role="38rIoG" value="aStringArrayInstance[0]" />
             <property role="38rMdH" value="48" />
@@ -5919,13 +5877,6 @@
             <property role="38rIoG" value="aStringArrayInstance[3]" />
             <property role="38rMdH" value="0" />
             <node concept="3Tqbb2" id="6dVgVd3HW$I" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-            </node>
-          </node>
-          <node concept="38rIoz" id="3kmIFBmen97" role="38rM$J">
-            <property role="38rIoG" value="i8Ptr" />
-            <property role="38rMdH" value="&quot;Hallo Welt&quot;" />
-            <node concept="3Tqbb2" id="3kmIFBmen98" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>

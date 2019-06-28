@@ -4,10 +4,10 @@
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
@@ -1574,6 +1574,10 @@
         <node concept="3clFbF" id="4AQNBfVakxR" role="3cqZAp">
           <node concept="37vLTI" id="4AQNBfVala5" role="3clFbG">
             <node concept="3K4zz7" id="4AQNBfVaDu6" role="37vLTx">
+              <node concept="Rm8GO" id="5UQlnwu7ThJ" role="3K4GZi">
+                <ref role="Rm8GQ" node="4AQNBfVaAtL" resolve="CBMC_OLDER_THAN_5_9" />
+                <ref role="1Px2BO" node="4AQNBfVaxbs" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
+              </node>
               <node concept="2OqwBi" id="4AQNBfVaB65" role="3K4Cdx">
                 <node concept="2OqwBi" id="4AQNBfVal$W" role="2Oq$k0">
                   <node concept="37vLTw" id="5UQlnwu7S7h" role="2Oq$k0">
@@ -1592,10 +1596,6 @@
               </node>
               <node concept="Rm8GO" id="5UQlnwu7T3f" role="3K4E3e">
                 <ref role="Rm8GQ" node="4AQNBfVaxbt" resolve="CBMC_5_9_PLUS" />
-                <ref role="1Px2BO" node="4AQNBfVaxbs" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
-              </node>
-              <node concept="Rm8GO" id="5UQlnwu7ThJ" role="3K4GZi">
-                <ref role="Rm8GQ" node="4AQNBfVaAtL" resolve="CBMC_OLDER_THAN_5_9" />
                 <ref role="1Px2BO" node="4AQNBfVaxbs" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
               </node>
             </node>
@@ -12209,19 +12209,19 @@
           </node>
         </node>
         <node concept="3clFbJ" id="4fvA6ORpci8" role="3cqZAp">
-          <node concept="3clFbS" id="4fvA6ORpcib" role="3clFbx">
-            <node concept="3clFbF" id="4fvA6ORpe0d" role="3cqZAp">
-              <node concept="1rXfSq" id="4fvA6ORpe0c" role="3clFbG">
-                <ref role="37wK5l" to="ood5:2UdJgvCLu_j" resolve="stopProgress" />
-              </node>
-            </node>
-          </node>
           <node concept="2d3UOw" id="2GJ7cFTTz0S" role="3clFbw">
             <node concept="37vLTw" id="4fvA6ORpc$e" role="3uHU7B">
               <ref role="3cqZAo" node="4fvA6ORp8nJ" resolve="publishedResultsNumber" />
             </node>
             <node concept="37vLTw" id="4fvA6ORpdIh" role="3uHU7w">
               <ref role="3cqZAo" to="ood5:7F8$WoW5PEY" resolve="stepsNumber" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4fvA6ORpcib" role="3clFbx">
+            <node concept="3clFbF" id="4fvA6ORpe0d" role="3cqZAp">
+              <node concept="1rXfSq" id="4fvA6ORpe0c" role="3clFbG">
+                <ref role="37wK5l" to="ood5:2UdJgvCLu_j" resolve="stopProgress" />
+              </node>
             </node>
           </node>
         </node>

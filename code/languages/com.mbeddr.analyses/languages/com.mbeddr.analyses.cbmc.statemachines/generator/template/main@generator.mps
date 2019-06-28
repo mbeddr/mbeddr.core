@@ -23,6 +23,10 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -38,12 +42,14 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -57,6 +63,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -595,12 +604,68 @@
       <ref role="30HIoZ" to="clqz:50Lk78xBraf" resolve="State" />
       <node concept="30G5F_" id="3oU9lB0JAPy" role="30HLyM">
         <node concept="3clFbS" id="3oU9lB0JAPz" role="2VODD2">
+          <node concept="3cpWs8" id="5cKTps7kS$1" role="3cqZAp">
+            <node concept="3cpWsn" id="5cKTps7kS$2" role="3cpWs9">
+              <property role="TrG5h" value="shouldGenerateLabels" />
+              <node concept="10P_77" id="5cKTps7kSzZ" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="5cKTps7kSI0" role="3cqZAp">
+            <node concept="37vLTI" id="5cKTps7kSI2" role="3clFbG">
+              <node concept="2YIFZM" id="5cKTps7kS$3" role="37vLTx">
+                <ref role="1Pybhc" to="9fwh:3r65a9Far3_" resolve="StatemachineGeneratorAnalysisUtils" />
+                <ref role="37wK5l" to="9fwh:3r65a9FaQ8v" resolve="shouldGenerateLabels" />
+                <node concept="1iwH7S" id="5cKTps7kS$4" role="37wK5m" />
+                <node concept="30H73N" id="5cKTps7kS$5" role="37wK5m" />
+              </node>
+              <node concept="37vLTw" id="5cKTps7kSI6" role="37vLTJ">
+                <ref role="3cqZAo" node="5cKTps7kS$2" resolve="shouldGenerateLabels" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5cKTps7kZx7" role="3cqZAp">
+            <node concept="3clFbS" id="5cKTps7kZx9" role="3clFbx">
+              <node concept="3cpWs6" id="5cKTps7l0sx" role="3cqZAp">
+                <node concept="3clFbT" id="5cKTps7l0U0" role="3cqZAk">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="5cKTps7kZPo" role="3clFbw">
+              <node concept="37vLTw" id="5cKTps7l08Y" role="3fr31v">
+                <ref role="3cqZAo" node="5cKTps7kS$2" resolve="shouldGenerateLabels" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="5cKTps7l1jy" role="3cqZAp">
+            <node concept="3cpWsn" id="5cKTps7l1jz" role="3cpWs9">
+              <property role="TrG5h" value="nodeIsInitialState" />
+              <node concept="10P_77" id="5cKTps7l1ju" role="1tU5fm" />
+              <node concept="3clFbC" id="5cKTps7l4re" role="33vP2m">
+                <node concept="2OqwBi" id="5cKTps7l1jA" role="3uHU7B">
+                  <node concept="2OqwBi" id="5cKTps7l1jB" role="2Oq$k0">
+                    <node concept="30H73N" id="5cKTps7l1jC" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="5cKTps7l1jD" role="2OqNvi">
+                      <node concept="1xMEDy" id="5cKTps7l1jE" role="1xVPHs">
+                        <node concept="chp4Y" id="5cKTps7l1jF" role="ri$Ld">
+                          <ref role="cht4Q" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="5cKTps7l1jG" role="2OqNvi">
+                    <ref role="3Tt5mk" to="clqz:50Lk78xBrai" resolve="initial" />
+                  </node>
+                </node>
+                <node concept="30H73N" id="5cKTps7l1j_" role="3uHU7w" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="3r65a9FbpWG" role="3cqZAp">
-            <node concept="2YIFZM" id="3r65a9FbpWH" role="3clFbG">
-              <ref role="1Pybhc" to="9fwh:3r65a9Far3_" resolve="StatemachineGeneratorAnalysisUtils" />
-              <ref role="37wK5l" to="9fwh:3r65a9FaQ8v" resolve="shouldGenerateLabels" />
-              <node concept="1iwH7S" id="3r65a9FbpWI" role="37wK5m" />
-              <node concept="30H73N" id="3r65a9FbpWJ" role="37wK5m" />
+            <node concept="3fqX7Q" id="5cKTps7l4Xh" role="3clFbG">
+              <node concept="37vLTw" id="5cKTps7l4Xj" role="3fr31v">
+                <ref role="3cqZAo" node="5cKTps7l1jz" resolve="nodeIsInitialState" />
+              </node>
             </node>
           </node>
         </node>

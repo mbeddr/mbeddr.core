@@ -1,4 +1,4 @@
-#include "file.h"
+//#include "file.h"
 #include <stdio.h>
 
 int my_global = 0;
