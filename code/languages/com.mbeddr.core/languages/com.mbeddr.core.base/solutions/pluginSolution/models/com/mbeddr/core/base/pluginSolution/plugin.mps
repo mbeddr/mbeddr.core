@@ -11917,6 +11917,45 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="2qDF1txPDno" role="3clF47">
+        <node concept="3clFbF" id="4nPvwjhRro$" role="3cqZAp">
+          <node concept="2OqwBi" id="4nPvwjhS1Gh" role="3clFbG">
+            <node concept="2ShNRf" id="4nPvwjhRroy" role="2Oq$k0">
+              <node concept="1pGfFk" id="4nPvwjhS0KF" role="2ShVmc">
+                <ref role="37wK5l" to="w1kc:~ModelAccessHelper.&lt;init&gt;(org.jetbrains.mps.openapi.module.ModelAccess)" resolve="ModelAccessHelper" />
+                <node concept="2OqwBi" id="4nPvwjhS19_" role="37wK5m">
+                  <node concept="37vLTw" id="4nPvwjhS0MU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2qDF1txGFKi" resolve="myProject" />
+                  </node>
+                  <node concept="liA8E" id="4nPvwjhS1zv" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="4nPvwjhS1Uw" role="2OqNvi">
+              <ref role="37wK5l" to="w1kc:~ModelAccessHelper.runReadAction(jetbrains.mps.util.Computable)" resolve="runReadAction" />
+              <node concept="1bVj0M" id="4nPvwjhS1Wd" role="37wK5m">
+                <node concept="3clFbS" id="4nPvwjhS1We" role="1bW5cS">
+                  <node concept="3clFbF" id="4nPvwjhS2aM" role="3cqZAp">
+                    <node concept="1rXfSq" id="4nPvwjhS2aL" role="3clFbG">
+                      <ref role="37wK5l" node="4nPvwjhQRUM" resolve="checkImpl" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="2qDF1txPrY5" role="1B3o_S" />
+      <node concept="10P_77" id="79AXByygrFc" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="4nPvwjhRa6b" role="jymVt" />
+    <node concept="3clFb_" id="4nPvwjhQRUM" role="jymVt">
+      <property role="TrG5h" value="checkImpl" />
+      <node concept="10P_77" id="4nPvwjhRiMX" role="3clF45" />
+      <node concept="3Tm6S6" id="4nPvwjhR69Z" role="1B3o_S" />
+      <node concept="3clFbS" id="4nPvwjhQRUQ" role="3clF47">
         <node concept="3cpWs8" id="79AXByyg7fo" role="3cqZAp">
           <node concept="3cpWsn" id="79AXByyg7fn" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -12343,8 +12382,6 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="2qDF1txPrY5" role="1B3o_S" />
-      <node concept="10P_77" id="79AXByygrFc" role="3clF45" />
     </node>
     <node concept="3clFb_" id="79AXByyfNRK" role="jymVt">
       <property role="1EzhhJ" value="false" />
