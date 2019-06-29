@@ -145,6 +145,7 @@
     </language>
     <language id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing">
       <concept id="4791280061046124023" name="com.mbeddr.analyses.cbmc.testing.structure.CBMCCounterexampleStateTest" flags="ng" index="38rIoz">
+        <property id="4401090025822530191" name="isOptional" index="10InE0" />
         <property id="5665549241468834974" name="alternativeSteps" index="35AWuq" />
         <property id="5665549241468854500" name="hasAlternativeSteps" index="35B3fw" />
         <property id="4791280061046124024" name="nodeKind" index="38rIoG" />
@@ -3110,6 +3111,7 @@
           <node concept="38rIoz" id="F6wzHuIsUZ" role="38rM$J">
             <property role="38rIoG" value="matrix" />
             <property role="38rMdH" value="*" />
+            <property role="10InE0" value="true" />
             <node concept="3Tqbb2" id="F6wzHuIsV0" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
@@ -4258,6 +4260,7 @@
           <node concept="38rIoz" id="3OjO0XXzrPi" role="38rM$J">
             <property role="38rIoG" value="stringLiteral" />
             <property role="38rMdH" value="&quot;some value&quot;" />
+            <property role="10InE0" value="true" />
           </node>
           <node concept="38rIoz" id="2V53qRfZKzm" role="38rM$J">
             <property role="38rIoG" value="octalLiteral" />
