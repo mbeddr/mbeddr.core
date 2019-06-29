@@ -142,5 +142,43 @@
       <property role="1SWRpm" value="ANALYSIS" />
     </node>
   </node>
+  <node concept="2S6QgY" id="3OjO0XXFuCc">
+    <property role="TrG5h" value="toggleOptionalCexEntry" />
+    <ref role="2ZfgGC" to="o23b:49Y2Xia4eRR" resolve="CBMCCounterexampleStateTest" />
+    <node concept="2S6ZIM" id="3OjO0XXFuCd" role="2ZfVej">
+      <node concept="3clFbS" id="3OjO0XXFuCe" role="2VODD2">
+        <node concept="3clFbF" id="3OjO0XXFuCf" role="3cqZAp">
+          <node concept="Xl_RD" id="3OjO0XXFuCg" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Optional Step" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3OjO0XXFuCh" role="2ZfgGD">
+      <node concept="3clFbS" id="3OjO0XXFuCi" role="2VODD2">
+        <node concept="3clFbF" id="3OjO0XXFuCj" role="3cqZAp">
+          <node concept="37vLTI" id="3OjO0XXFuCk" role="3clFbG">
+            <node concept="3fqX7Q" id="3OjO0XXFuCl" role="37vLTx">
+              <node concept="2OqwBi" id="3OjO0XXFuCm" role="3fr31v">
+                <node concept="2Sf5sV" id="3OjO0XXFuCn" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3OjO0XXFxcv" role="2OqNvi">
+                  <ref role="3TsBF5" to="o23b:3OjO0XXEEEf" resolve="isOptional" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3OjO0XXFuCp" role="37vLTJ">
+              <node concept="2Sf5sV" id="3OjO0XXFuCq" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3OjO0XXFx0D" role="2OqNvi">
+                <ref role="3TsBF5" to="o23b:3OjO0XXEEEf" resolve="isOptional" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="3OjO0XXFuCs" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
+    </node>
+  </node>
 </model>
 

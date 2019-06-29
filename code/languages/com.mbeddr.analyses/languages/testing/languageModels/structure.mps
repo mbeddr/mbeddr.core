@@ -101,6 +101,11 @@
       <property role="IQ2nx" value="1417041907773541157" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="3OjO0XXEEEf" role="1TKVEl">
+      <property role="IQ2nx" value="4401090025822530191" />
+      <property role="TrG5h" value="isOptional" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49Y2Xia4hId">
     <property role="TrG5h" value="CBMCCounterexampleTest" />
