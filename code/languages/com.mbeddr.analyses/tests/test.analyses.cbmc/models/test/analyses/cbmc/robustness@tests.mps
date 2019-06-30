@@ -1959,6 +1959,42 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3OjO0XXJ9Mc" role="3cqZAp" />
+        <node concept="3clFbF" id="3OjO0XXJ2dx" role="3cqZAp">
+          <node concept="2OqwBi" id="3OjO0XXJ2du" role="3clFbG">
+            <node concept="10M0yZ" id="3OjO0XXJ2dv" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="3OjO0XXJ2dw" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="3OjO0XXJ7gF" role="37wK5m">
+                <node concept="Xl_RD" id="3OjO0XXJ85g" role="3uHU7w">
+                  <property role="Xl_RC" value="\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;--------------\n\n" />
+                </node>
+                <node concept="3cpWs3" id="3OjO0XXJ2Er" role="3uHU7B">
+                  <node concept="Xl_RD" id="3OjO0XXJ2hG" role="3uHU7B">
+                    <property role="Xl_RC" value="\n\n------------&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;\n" />
+                  </node>
+                  <node concept="2OqwBi" id="3OjO0XXJ3vy" role="3uHU7w">
+                    <node concept="2OqwBi" id="3OjO0XXJ2Tt" role="2Oq$k0">
+                      <node concept="37vLTw" id="3OjO0XXJ2GB" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5bSnXVJRAHE" resolve="res" />
+                      </node>
+                      <node concept="liA8E" id="3OjO0XXJ3hM" role="2OqNvi">
+                        <ref role="37wK5l" to="eqhl:6izRX5333uV" resolve="getRawResult" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3OjO0XXJ6MV" role="2OqNvi">
+                      <ref role="37wK5l" to="rbq9:6izRX52HX30" resolve="getRawOutput" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3OjO0XXJ9Od" role="3cqZAp" />
         <node concept="3vlDli" id="23klwgWg5sz" role="3cqZAp">
           <node concept="Rm8GO" id="23klwgWg62p" role="3tpDZB">
             <ref role="Rm8GQ" to="rbq9:6oOIJNsBXkZ" resolve="RUNTIME_ERROR" />
