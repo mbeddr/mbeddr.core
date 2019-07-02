@@ -3420,5 +3420,30 @@
       <node concept="3clFbS" id="6GAl_xx8sdn" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="249RaWunj4N">
+    <property role="3GE5qa" value="configItem" />
+    <ref role="13h7C2" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
+    <node concept="13hLZK" id="249RaWunj4O" role="13h7CW">
+      <node concept="3clFbS" id="249RaWunj4P" role="2VODD2">
+        <node concept="3clFbF" id="249RaWunj4Z" role="3cqZAp">
+          <node concept="37vLTI" id="249RaWunkq$" role="3clFbG">
+            <node concept="2ShNRf" id="249RaWunktE" role="37vLTx">
+              <node concept="3zrR0B" id="249RaWunkW8" role="2ShVmc">
+                <node concept="3Tqbb2" id="249RaWunkWa" role="3zrR0E">
+                  <ref role="ehGHo" to="yz9a:ILZbnBPQGH" resolve="TestIsolationStrategy" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="249RaWunjfd" role="37vLTJ">
+              <node concept="13iPFW" id="249RaWunj4Y" role="2Oq$k0" />
+              <node concept="3TrEf2" id="249RaWunjUS" role="2OqNvi">
+                <ref role="3Tt5mk" to="yz9a:ILZbnBPQGC" resolve="testStrategy" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
