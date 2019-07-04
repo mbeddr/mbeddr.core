@@ -1000,6 +1000,20 @@
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
           </node>
+          <node concept="38rIoz" id="3ETivokdsh0" role="38rM$J">
+            <property role="38rIoG" value="p.x" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3ETivokdsh1" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="3ETivokdsgY" role="38rM$J">
+            <property role="38rIoG" value="p.y" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3ETivokdsgZ" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
           <node concept="38rIoz" id="8Fyjetf2GT" role="38rM$J">
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
