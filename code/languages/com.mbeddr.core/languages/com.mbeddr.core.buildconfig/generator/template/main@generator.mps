@@ -739,84 +739,45 @@
         <property role="2qtEX9" value="value" />
         <node concept="3zFVjK" id="1it8M3uXpIY" role="3zH0cK">
           <node concept="3clFbS" id="1it8M3uXpIZ" role="2VODD2">
-            <node concept="3clFbJ" id="2sCeb$dFuS9" role="3cqZAp">
-              <node concept="3clFbS" id="2sCeb$dFuSb" role="3clFbx">
-                <node concept="3cpWs8" id="2sCeb$dFszo" role="3cqZAp">
-                  <node concept="3cpWsn" id="2sCeb$dFszp" role="3cpWs9">
-                    <property role="TrG5h" value="targetName" />
-                    <node concept="17QB3L" id="2sCeb$dFszn" role="1tU5fm" />
-                    <node concept="2OqwBi" id="2sCeb$dGNlj" role="33vP2m">
-                      <node concept="2OqwBi" id="2sCeb$dGrAg" role="2Oq$k0">
-                        <node concept="30H73N" id="2sCeb$dGr8Q" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="2sCeb$dGBjf" role="2OqNvi">
-                          <ref role="3Tt5mk" to="51wr:2b2D8jU0yRA" resolve="target" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="2sCeb$dGYIL" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3cpWs6" id="2sCeb$dH8FI" role="3cqZAp">
-                  <node concept="2OqwBi" id="2sCeb$dH8FK" role="3cqZAk">
-                    <node concept="37vLTw" id="2sCeb$dH8FL" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2sCeb$dFszp" resolve="targetName" />
-                    </node>
-                    <node concept="liA8E" id="2sCeb$dH8FM" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
-                      <node concept="2OqwBi" id="2sCeb$dH8FN" role="37wK5m">
-                        <node concept="10M0yZ" id="2sCeb$dH8FO" role="2Oq$k0">
-                          <ref role="3cqZAo" to="ahli:5Dpaey8tcu8" resolve="TARGET_PORTABLE" />
-                          <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
-                        </node>
-                        <node concept="3TrcHB" id="2sCeb$dH8FP" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                      <node concept="2OqwBi" id="2sCeb$dH8FQ" role="37wK5m">
-                        <node concept="2YIFZM" id="2sCeb$dH8FR" role="2Oq$k0">
-                          <ref role="37wK5l" to="ahli:47Hq2tqUTdZ" resolve="getEffectiveTarget" />
-                          <ref role="1Pybhc" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
-                          <node concept="2OqwBi" id="2sCeb$dH8FS" role="37wK5m">
-                            <node concept="30H73N" id="2sCeb$dH8FT" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="2sCeb$dH8FU" role="2OqNvi">
-                              <ref role="3Tt5mk" to="51wr:2b2D8jU0yRA" resolve="target" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3TrcHB" id="2sCeb$dH8FV" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3y3z36" id="2sCeb$dGqm_" role="3clFbw">
-                <node concept="10Nm6u" id="2sCeb$dGqnD" role="3uHU7w" />
-                <node concept="2OqwBi" id="2sCeb$dFZCA" role="3uHU7B">
-                  <node concept="30H73N" id="2sCeb$dFZcT" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="2sCeb$dGbFQ" role="2OqNvi">
-                    <ref role="3Tt5mk" to="51wr:2b2D8jU0yRA" resolve="target" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="2sCeb$dH9FE" role="3cqZAp">
-              <node concept="2OqwBi" id="2sCeb$dHa8B" role="3cqZAk">
-                <node concept="2YIFZM" id="2sCeb$dHa8C" role="2Oq$k0">
-                  <ref role="1Pybhc" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
-                  <ref role="37wK5l" to="ahli:47Hq2tqUTdZ" resolve="getEffectiveTarget" />
-                  <node concept="2OqwBi" id="2sCeb$dHa8D" role="37wK5m">
-                    <node concept="30H73N" id="2sCeb$dHa8E" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="2sCeb$dHa8F" role="2OqNvi">
+            <node concept="3clFbF" id="1it8M3uXq8s" role="3cqZAp">
+              <node concept="2OqwBi" id="2b2D8jTTtHB" role="3clFbG">
+                <node concept="2OqwBi" id="2b2D8jU0OGD" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1it8M3uXqpI" role="2Oq$k0">
+                    <node concept="30H73N" id="1it8M3uXq8r" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2b2D8jU0NZH" role="2OqNvi">
                       <ref role="3Tt5mk" to="51wr:2b2D8jU0yRA" resolve="target" />
                     </node>
                   </node>
+                  <node concept="3TrcHB" id="3K0ugPlzNkN" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
                 </node>
-                <node concept="3TrcHB" id="2sCeb$dHa8G" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                <node concept="liA8E" id="2b2D8jTTuGE" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                  <node concept="2OqwBi" id="hd0CHp5$13" role="37wK5m">
+                    <node concept="10M0yZ" id="hd0CHp5zbB" role="2Oq$k0">
+                      <ref role="3cqZAo" to="ahli:5Dpaey8tcu8" resolve="TARGET_PORTABLE" />
+                      <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
+                    </node>
+                    <node concept="3TrcHB" id="hd0CHp5_Tx" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7BqFpRy51fu" role="37wK5m">
+                    <node concept="2YIFZM" id="7BqFpRy4XmL" role="2Oq$k0">
+                      <ref role="37wK5l" to="ahli:47Hq2tqUTdZ" resolve="getEffectiveTarget" />
+                      <ref role="1Pybhc" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
+                      <node concept="2OqwBi" id="7BqFpRy4Yvr" role="37wK5m">
+                        <node concept="30H73N" id="7BqFpRy4XX1" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="7BqFpRy503P" role="2OqNvi">
+                          <ref role="3Tt5mk" to="51wr:2b2D8jU0yRA" resolve="target" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="7BqFpRy523t" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -6046,7 +6007,7 @@
           <property role="12ErFq" value="$(vecho) &quot;LD $(notdir $@)&quot;" />
         </node>
         <node concept="12Eqlt" id="2b2D8jTWm6Z" role="3r8OHu">
-          <property role="12ErFq" value="$(Q) $(LD) $(LDFLAGS) -o bin/$@ $^ $(ALL_LIBDIR_FLAGS) $(ALL_LIB_FLAGS)" />
+          <property role="12ErFq" value="$(Q) $(LD) $(LDFLAGS) -o $@ $^ $(ALL_LIBDIR_FLAGS) $(ALL_LIB_FLAGS)" />
           <node concept="17Uvod" id="2b2D8jTWmng" role="lGtFl">
             <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/7595578942778593171/7595578942778593300" />
             <property role="2qtEX9" value="command" />
@@ -6061,7 +6022,7 @@
                       <node concept="3cpWs3" id="2Rx8UqeMqEZ" role="3uHU7B">
                         <node concept="3cpWs3" id="2Rx8UqeMqF0" role="3uHU7B">
                           <node concept="Xl_RD" id="2Rx8UqeMqF1" role="3uHU7B">
-                            <property role="Xl_RC" value="$(Q) $(LD) $(LDFLAGS) -o bin/$@ $^ $(" />
+                            <property role="Xl_RC" value="$(Q) $(LD) $(LDFLAGS) -o $@ $^ $(" />
                           </node>
                           <node concept="2YIFZM" id="5yBZnF54CUN" role="3uHU7w">
                             <ref role="37wK5l" to="ahli:5yBZnF51Qna" resolve="getAllLibDirFlagsVarName" />
