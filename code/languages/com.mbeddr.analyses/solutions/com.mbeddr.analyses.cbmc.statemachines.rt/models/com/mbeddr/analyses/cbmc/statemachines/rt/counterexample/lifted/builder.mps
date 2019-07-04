@@ -25,6 +25,7 @@
     <import index="byxr" ref="r:0408ee73-1f2e-4dd0-8c67-48f28bb6adce(com.mbeddr.ext.statemachines.utils)" />
     <import index="qeyn" ref="r:d5ce6636-5f1f-4da1-bbec-81328740259a(com.mbeddr.analyses.cbmc.core.rt.counterexample.lifted.builder)" />
     <import index="e22t" ref="r:c6d4c6ab-1599-4d6d-8a1f-943cb86651ff(com.mbeddr.analyses.cbmc.core.rt.counterexample.lifted.model)" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -980,6 +981,26 @@
           </node>
           <node concept="3eNFk2" id="7uiPZBBZE3$" role="3eNLev">
             <node concept="3clFbS" id="7uiPZBBZE3A" role="3eOfB_">
+              <node concept="3clFbF" id="3ETivok8u0a" role="3cqZAp">
+                <node concept="37vLTI" id="3ETivok8uRq" role="3clFbG">
+                  <node concept="37vLTw" id="3ETivok8u08" role="37vLTJ">
+                    <ref role="3cqZAo" node="4arT0cnseGy" resolve="originalNode" />
+                  </node>
+                  <node concept="2OqwBi" id="3ETivok8vmK" role="37vLTx">
+                    <node concept="37vLTw" id="3ETivok8vmL" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4arT0cnseGy" resolve="originalNode" />
+                    </node>
+                    <node concept="2Xjw5R" id="3ETivok8vmM" role="2OqNvi">
+                      <node concept="1xMEDy" id="3ETivok8vmN" role="1xVPHs">
+                        <node concept="chp4Y" id="3ETivok8vmO" role="ri$Ld">
+                          <ref role="cht4Q" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+                        </node>
+                      </node>
+                      <node concept="1xIGOp" id="3ETivok8vmP" role="1xVPHs" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3SKdUt" id="7uiPZBBZQ$E" role="3cqZAp">
                 <node concept="3SKdUq" id="7uiPZBBZRFh" role="3SKWNk">
                   <property role="3SKdUp" value="we have an assignment to an event parameter" />
@@ -1355,11 +1376,21 @@
               <node concept="3cpWsn" id="4arT0cnseIB" role="3cpWs9">
                 <property role="TrG5h" value="originalNode" />
                 <node concept="3Tqbb2" id="4arT0cnseIC" role="1tU5fm" />
-                <node concept="2YIFZM" id="4arT0cnseID" role="33vP2m">
-                  <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
-                  <ref role="1Pybhc" to="8ear:7iLQIU2tUXc" resolve="NodesFinderFacade" />
-                  <node concept="37vLTw" id="4arT0cnseIE" role="37wK5m">
-                    <ref role="3cqZAo" node="4arT0cnseJ5" resolve="crtState" />
+                <node concept="2OqwBi" id="3ETivok8aKB" role="33vP2m">
+                  <node concept="2YIFZM" id="4arT0cnseID" role="2Oq$k0">
+                    <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
+                    <ref role="1Pybhc" to="8ear:7iLQIU2tUXc" resolve="NodesFinderFacade" />
+                    <node concept="37vLTw" id="4arT0cnseIE" role="37wK5m">
+                      <ref role="3cqZAo" node="4arT0cnseJ5" resolve="crtState" />
+                    </node>
+                  </node>
+                  <node concept="2Xjw5R" id="3ETivok8eJJ" role="2OqNvi">
+                    <node concept="1xMEDy" id="3ETivok8eJL" role="1xVPHs">
+                      <node concept="chp4Y" id="3ETivok8eVE" role="ri$Ld">
+                        <ref role="cht4Q" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="3ETivok8fkb" role="1xVPHs" />
                   </node>
                 </node>
               </node>
