@@ -50,6 +50,8 @@
     <import index="8fsg" ref="r:4c26acae-0f84-4664-bc8e-eb85ca6494bf(com.mbeddr.analyses.utils.nodes)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -374,6 +376,12 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
+        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
+      </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -404,6 +412,10 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
+        <child id="1146171026732" name="value" index="3t7uKA" />
+      </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -842,6 +854,94 @@
       <node concept="37vLTG" id="3fAfgHYmwFa" role="3clF46">
         <property role="TrG5h" value="aNodeFromTheImplModule" />
         <node concept="3Tqbb2" id="3fAfgHYmwF9" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="nSzxU4NSqV" role="jymVt" />
+    <node concept="2YIFZL" id="nSzxU4NS97" role="jymVt">
+      <property role="TrG5h" value="checkBuildConfigDisablesNamesMangling" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="NWlO9" id="nSzxU4NS98" role="lGtFl">
+        <property role="NWlVz" value="Check that names mangling is not enabled." />
+      </node>
+      <node concept="3clFbS" id="nSzxU4NS99" role="3clF47">
+        <node concept="3cpWs8" id="nSzxU4NS9j" role="3cqZAp">
+          <node concept="3cpWsn" id="nSzxU4NS9k" role="3cpWs9">
+            <property role="TrG5h" value="bc" />
+            <node concept="3Tqbb2" id="nSzxU4NS9l" role="1tU5fm">
+              <ref role="ehGHo" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+            </node>
+            <node concept="2YIFZM" id="nSzxU4NS9m" role="33vP2m">
+              <ref role="37wK5l" to="axpu:4EriiVvTART" resolve="findBuildConfigFromSameModel" />
+              <ref role="1Pybhc" to="axpu:4EriiVvT_0n" resolve="BuildConfigFacade" />
+              <node concept="37vLTw" id="nSzxU4NS9n" role="37wK5m">
+                <ref role="3cqZAo" node="nSzxU4NS9x" resolve="aNodeFromTheModelWithBuildConfig" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="nSzxU4O79k" role="3cqZAp">
+          <node concept="3cpWsn" id="nSzxU4O79l" role="3cpWs9">
+            <property role="TrG5h" value="nmc" />
+            <node concept="3Tqbb2" id="nSzxU4O79g" role="1tU5fm">
+              <ref role="ehGHo" to="d0vh:24KoSSjx2OU" resolve="NameManglingConfiguration" />
+            </node>
+            <node concept="2OqwBi" id="nSzxU4O79m" role="33vP2m">
+              <node concept="2OqwBi" id="nSzxU4O79n" role="2Oq$k0">
+                <node concept="2OqwBi" id="nSzxU4O79o" role="2Oq$k0">
+                  <node concept="37vLTw" id="nSzxU4O79p" role="2Oq$k0">
+                    <ref role="3cqZAo" node="nSzxU4NS9k" resolve="bc" />
+                  </node>
+                  <node concept="3Tsc0h" id="nSzxU4O79q" role="2OqNvi">
+                    <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="nSzxU4O79r" role="2OqNvi">
+                  <node concept="chp4Y" id="nSzxU4O79s" role="v3oSu">
+                    <ref role="cht4Q" to="d0vh:24KoSSjx2OU" resolve="NameManglingConfiguration" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="nSzxU4O79t" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="nSzxU4O7Cq" role="3cqZAp">
+          <node concept="3clFbS" id="nSzxU4O7Cs" role="3clFbx">
+            <node concept="3cpWs6" id="nSzxU4ObDE" role="3cqZAp">
+              <node concept="3clFbT" id="nSzxU4ObGQ" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="nSzxU4O83m" role="3clFbw">
+            <node concept="37vLTw" id="nSzxU4O7NZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="nSzxU4O79l" resolve="nmc" />
+            </node>
+            <node concept="3w_OXm" id="nSzxU4Ob$7" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="nSzxU4Oceq" role="3cqZAp">
+          <node concept="2OqwBi" id="nSzxU4Oi0i" role="3cqZAk">
+            <node concept="2OqwBi" id="nSzxU4Od1T" role="2Oq$k0">
+              <node concept="37vLTw" id="nSzxU4Oc$b" role="2Oq$k0">
+                <ref role="3cqZAo" node="nSzxU4O79l" resolve="nmc" />
+              </node>
+              <node concept="3TrcHB" id="nSzxU4OdYD" role="2OqNvi">
+                <ref role="3TsBF5" to="d0vh:49XubMptfQm" resolve="strategy" />
+              </node>
+            </node>
+            <node concept="3t7uKx" id="nSzxU4OiHL" role="2OqNvi">
+              <node concept="uoxfO" id="nSzxU4OiHN" role="3t7uKA">
+                <ref role="uo_Cq" to="d0vh:49XubMpsXFh" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="nSzxU4NS9v" role="1B3o_S" />
+      <node concept="10P_77" id="nSzxU4NS9w" role="3clF45" />
+      <node concept="37vLTG" id="nSzxU4NS9x" role="3clF46">
+        <property role="TrG5h" value="aNodeFromTheModelWithBuildConfig" />
+        <node concept="3Tqbb2" id="nSzxU4NS9y" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvERUp0" role="jymVt" />
