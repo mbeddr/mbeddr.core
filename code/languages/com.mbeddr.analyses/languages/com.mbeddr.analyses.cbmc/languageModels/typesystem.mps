@@ -1687,6 +1687,26 @@
           <node concept="3w_OXm" id="7cbtYkHd2GD" role="2OqNvi" />
         </node>
       </node>
+      <node concept="3clFbH" id="nSzxU4UgJV" role="3cqZAp" />
+      <node concept="3clFbJ" id="nSzxU4UGLw" role="3cqZAp">
+        <node concept="3clFbS" id="nSzxU4UGLy" role="3clFbx">
+          <node concept="2MkqsV" id="nSzxU4UHLt" role="3cqZAp">
+            <node concept="Xl_RD" id="nSzxU4UHLu" role="2MkJ7o">
+              <property role="Xl_RC" value="this analysis requires that the names mangling is enabled in the BuildConfiguration" />
+            </node>
+            <node concept="1YBJjd" id="nSzxU4UHLv" role="2OEOjV">
+              <ref role="1YBMHb" node="7cbtYkHd14E" resolve="cProverBasedMbeddrAnalysis" />
+            </node>
+          </node>
+        </node>
+        <node concept="2YIFZM" id="nSzxU4UHxg" role="3clFbw">
+          <ref role="37wK5l" to="tzyt:nSzxU4NS97" resolve="checkBuildConfigDisablesNamesMangling" />
+          <ref role="1Pybhc" to="tzyt:37sMrNxDVH9" resolve="CProverConfigCheckingUtils" />
+          <node concept="1YBJjd" id="nSzxU4UHxh" role="37wK5m">
+            <ref role="1YBMHb" node="7cbtYkHd14E" resolve="cProverBasedMbeddrAnalysis" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="7cbtYkHd14E" role="1YuTPh">
       <property role="TrG5h" value="cProverBasedMbeddrAnalysis" />
