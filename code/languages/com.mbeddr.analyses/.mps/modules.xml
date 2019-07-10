@@ -62,6 +62,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.z3/com.mbeddr.analyses.z3.msd" folder="z3" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.results/com.mbeddr.lantest.results.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.testdata/com.mbeddr.lantest.testdata.msd" folder="lantest" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.analyses.spin.sandbox/test.analyses.spin.sandbox.msd" folder="test.spin.sandbox" />
       <modulePath path="$PROJECT_DIR$/solutions/test.analysis.screen_casts/test.analysis.screen_casts.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.acsl.testcode/test.analyses.acsl.testcode.msd" folder="test.acsl" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.acsl.ts/test.analyses.acsl.ts.msd" folder="test.acsl" />

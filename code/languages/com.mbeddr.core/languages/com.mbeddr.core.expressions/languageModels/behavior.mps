@@ -20722,9 +20722,24 @@
       <property role="TrG5h" value="getPrintfFormatString" />
       <ref role="13i0hy" node="4XMHJL4FDjg" resolve="getPrintfFormatString" />
       <node concept="3clFbS" id="4OZvNwFAvxN" role="3clF47">
+        <node concept="3SKdUt" id="3slaYOWZDsI" role="3cqZAp">
+          <node concept="3SKdUq" id="3slaYOWZDsK" role="3SKWNk">
+            <property role="3SKdUp" value="!!! Important Note !!! Don't use %zi as format specifier but just %d instead. The 'z' length sub-specifier appears " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3slaYOWZD$b" role="3cqZAp">
+          <node concept="3SKdUq" id="3slaYOWZD$c" role="3SKWNk">
+            <property role="3SKdUp" value="not to work and may cause all kinds of undefined results, ranging from that the format specifier does not get replaced " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3slaYOWZD_z" role="3cqZAp">
+          <node concept="3SKdUq" id="3slaYOWZD_$" role="3SKWNk">
+            <property role="3SKdUp" value="by the corresponding argument in the best case, to that the program ends up crashing down in the worst case." />
+          </node>
+        </node>
         <node concept="3clFbF" id="4OZvNwFAvxO" role="3cqZAp">
           <node concept="Xl_RD" id="4OZvNwFAvxP" role="3clFbG">
-            <property role="Xl_RC" value="%zi" />
+            <property role="Xl_RC" value="%d" />
           </node>
         </node>
       </node>

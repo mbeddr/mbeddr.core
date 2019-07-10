@@ -67,7 +67,7 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
+      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
@@ -276,10 +276,7 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
       <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
@@ -7283,9 +7280,7 @@
       <node concept="31U8vq" id="7zW9XauP7$3" role="31UYnO" />
     </node>
     <node concept="22RD12" id="13bv9czoHlZ" role="2Q9xDr" />
-    <node concept="12mU2y" id="1U5CTQBq1hn" role="2Q9xDr">
-      <node concept="3GpDuo" id="1U5CTQBq1ho" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="1U5CTQBq1hn" role="2Q9xDr" />
     <node concept="2bCUPO" id="12n15PAdX_Q" role="2Q9xDr">
       <node concept="2bCQJM" id="12n15PAdXAl" role="2bCqU6">
         <ref role="2bCQz$" node="1Xa7X_jmhHr" resolve="verification_demo" />

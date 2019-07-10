@@ -16,6 +16,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
   </imports>
   <registry>
@@ -161,6 +162,25 @@
               <node concept="13iPFW" id="439FXGfpCD" role="2Oq$k0" />
               <node concept="3TrcHB" id="439FXGfqsT" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="L5b1s43YSP" role="3cqZAp">
+          <node concept="2OqwBi" id="L5b1s44K_v" role="3clFbG">
+            <node concept="2OqwBi" id="L5b1s43Z5i" role="2Oq$k0">
+              <node concept="13iPFW" id="L5b1s43YSN" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="L5b1s44EZ6" role="2OqNvi">
+                <ref role="3TtcxE" to="x27k:5DwX9xlExfN" resolve="contents" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="L5b1s44Pxw" role="2OqNvi">
+              <node concept="2ShNRf" id="L5b1s44PUf" role="25WWJ7">
+                <node concept="3zrR0B" id="L5b1s450UA" role="2ShVmc">
+                  <node concept="3Tqbb2" id="L5b1s450UC" role="3zrR0E">
+                    <ref role="ehGHo" to="x27k:7JWieF82Lsz" resolve="EmptyModuleContent" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

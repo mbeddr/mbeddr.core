@@ -737,5 +737,25 @@
     <property role="34LRSv" value="len" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
   </node>
+  <node concept="1TIwiD" id="3jcp2Edtmp7">
+    <property role="EcuMT" value="3804525919145911879" />
+    <property role="TrG5h" value="EndState" />
+    <property role="3GE5qa" value="statement" />
+    <property role="34LRSv" value="end state" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="PrWs8" id="3jcp2Edtmp8" role="PzmwI">
+      <ref role="PrY4T" node="7Hmzdkr1hpt" resolve="IPromelaStatement" />
+    </node>
+    <node concept="PrWs8" id="3jcp2Edtmpj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="3jcp2Edtmpb" role="1TKVEi">
+      <property role="IQ2ns" value="3804525919145911883" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cond" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

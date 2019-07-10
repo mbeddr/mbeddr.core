@@ -197,10 +197,7 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
-      <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations">
       <concept id="6617704999132114000" name="com.mbeddr.cc.var.annotations.structure.ConfigurationMapping" flags="ng" index="IjAfM">
@@ -374,9 +371,7 @@
     <node concept="2Q9Fgs" id="5RBPMWa2qpn" role="2Q9xDr">
       <node concept="2Q9FjX" id="5RBPMWa2qpo" role="2Q9FjI" />
     </node>
-    <node concept="12mU2y" id="4P4jRotgfZW" role="2Q9xDr">
-      <node concept="3GpDuv" id="24_rWT2AXuG" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="4P4jRotgfZW" role="2Q9xDr" />
     <node concept="MH4UO" id="5RBPMWa2qpq" role="2Q9xDr" />
     <node concept="35TzUN" id="5RBPMWa2qpr" role="2Q9xDr">
       <node concept="IjAfM" id="5RBPMWa2qps" role="19yoJo">
@@ -399,9 +394,6 @@
       </node>
       <node concept="2v9HqM" id="5RBPMWa2qpx" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
-      </node>
-      <node concept="2v9HqM" id="5RBPMWa2qpy" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:pE4rJ9OTT$" resolve="timeval" />
       </node>
       <node concept="2v9HqM" id="5RBPMWa2qpz" role="2eOfOg">
         <ref role="2v9HqP" to="ahhi:3cMu40vjTAC" resolve="vec" />
@@ -461,9 +453,6 @@
       </node>
       <node concept="2v9HqM" id="1qdWvqenuup" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
-      </node>
-      <node concept="2v9HqM" id="1qdWvqenuuq" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:pE4rJ9OTT$" resolve="timeval" />
       </node>
       <node concept="2v9HqM" id="1qdWvqenuur" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />

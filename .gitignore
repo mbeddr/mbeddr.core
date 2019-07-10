@@ -184,3 +184,9 @@ antlib.xml
 **/.project
 # ecore transformation tools
 code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.ecoretransofmation.sandbox
+
+# -----------------------------------------------------------
+# Visual Studio Code settings
+.vscode
+/.project
+/.settings/org.eclipse.buildship.core.prefs

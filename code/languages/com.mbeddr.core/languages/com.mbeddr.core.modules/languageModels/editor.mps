@@ -625,7 +625,12 @@
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
@@ -1936,13 +1941,46 @@
         </node>
       </node>
     </node>
-    <node concept="3EZMnI" id="7DFugYEkeoS" role="6VMZX">
-      <node concept="l2Vlx" id="7DFugYEkeoT" role="2iSdaV" />
-      <node concept="3F0ifn" id="7DFugYEkeoU" role="3EZMnx">
-        <property role="3F0ifm" value="add to header:" />
+    <node concept="3EZMnI" id="3LB9aGk_ryP" role="6VMZX">
+      <node concept="2iRkQZ" id="3LB9aGk_ryQ" role="2iSdaV" />
+      <node concept="3EZMnI" id="7DFugYEkeoS" role="3EZMnx">
+        <node concept="l2Vlx" id="7DFugYEkeoT" role="2iSdaV" />
+        <node concept="3F0ifn" id="7DFugYEkeoU" role="3EZMnx">
+          <property role="3F0ifm" value="add to header:" />
+        </node>
+        <node concept="3F0A7n" id="7DFugYEkeoW" role="3EZMnx">
+          <ref role="1NtTu8" to="x27k:4GT16cGgLYC" resolve="addToHeader" />
+        </node>
       </node>
-      <node concept="3F0A7n" id="7DFugYEkeoW" role="3EZMnx">
-        <ref role="1NtTu8" to="x27k:4GT16cGgLYC" resolve="addToHeader" />
+      <node concept="3EZMnI" id="3LB9aGk_rzm" role="3EZMnx">
+        <node concept="VPM3Z" id="3LB9aGk_rzo" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="3LB9aGk_rzq" role="3EZMnx">
+          <property role="3F0ifm" value="preprocessor condition: " />
+        </node>
+        <node concept="3F0A7n" id="3LB9aGk_rHY" role="3EZMnx">
+          <ref role="1NtTu8" to="x27k:3LB9aGk_ryI" resolve="preprocessorCondition" />
+          <node concept="OXEIz" id="3LB9aGk_rI4" role="P5bDN">
+            <node concept="PvTIS" id="3LB9aGk_rId" role="OY2wv">
+              <node concept="MLZmj" id="3LB9aGk_rIf" role="PvTIR">
+                <node concept="3clFbS" id="3LB9aGk_rIh" role="2VODD2">
+                  <node concept="3clFbF" id="3LB9aGk_rYG" role="3cqZAp">
+                    <node concept="2ShNRf" id="3LB9aGk_rYE" role="3clFbG">
+                      <node concept="Tc6Ow" id="3LB9aGk_DF2" role="2ShVmc">
+                        <node concept="17QB3L" id="3LB9aGk_EBA" role="HW$YZ" />
+                        <node concept="Xl_RD" id="3LB9aGk_FCZ" role="HW$Y0">
+                          <property role="Xl_RC" value="defined(_WIN32)" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="l2Vlx" id="3LB9aGk_rzr" role="2iSdaV" />
       </node>
     </node>
   </node>

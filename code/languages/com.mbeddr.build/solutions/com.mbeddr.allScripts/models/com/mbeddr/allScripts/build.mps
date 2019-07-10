@@ -184,7 +184,7 @@
         <ref role="m$_y1" to="ffeo:5CFKsRWVb8B" resolve="jetbrains.mps.execution.configurations" />
       </node>
       <node concept="m$_yC" id="7i5Cc6LAJYE" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions" />
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
       </node>
       <node concept="m$_yB" id="46zCYP2p$17" role="m$_yh">
         <ref role="m$_yA" node="2UI1wmC3wCq" resolve="com.mbeddr.tutorial.dev.build" />
@@ -1509,7 +1509,7 @@
         <ref role="m_rDy" node="46zCYP2pxWG" resolve="com.mbeddr.allScripts" />
       </node>
       <node concept="3_I8Xc" id="DJVnBnJZ9T" role="39821P">
-        <ref role="3_I8Xa" to="90a9:4hvHh3QWqH0" resolve="de.itemis.mps.extensions" />
+        <ref role="3_I8Xa" to="90a9:4hvHh3QWqH0" resolve="de.slisson.mps.all" />
       </node>
     </node>
     <node concept="2igEWh" id="3R8XMuzZsAh" role="1hWBAP">

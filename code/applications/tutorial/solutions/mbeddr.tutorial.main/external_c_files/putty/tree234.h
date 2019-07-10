@@ -61,6 +61,8 @@ tree234 *newtree234(cmpfn234 cmp);
  */
 void freetree234(tree234 * t);
 
+void freerootnode234(tree234 * t);
+
 /*
  * Add an element e to a sorted 2-3-4 tree t. Returns e on success,
  * or if an existing element compares equal, returns that.

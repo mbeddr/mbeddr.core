@@ -10206,7 +10206,7 @@
                       <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
                     </node>
                     <node concept="liA8E" id="7EUokiVl658" role="2OqNvi">
-                      <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                       <node concept="2GrUjf" id="65o8lrcNwZ" role="37wK5m">
                         <ref role="2Gs0qQ" node="65o8lrcFay" resolve="m" />
                       </node>
@@ -13858,7 +13858,7 @@
                       <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="65o8lr53tT" role="2OqNvi">
-                      <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                       <node concept="2GrUjf" id="65o8lr53tU" role="37wK5m">
                         <ref role="2Gs0qQ" node="65o8lr53tL" resolve="m" />
                       </node>
@@ -15942,7 +15942,7 @@
                       <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
                     </node>
                     <node concept="liA8E" id="65o8lr50FB" role="2OqNvi">
-                      <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                       <node concept="2GrUjf" id="65o8lr50FC" role="37wK5m">
                         <ref role="2Gs0qQ" node="65o8lr50Fv" resolve="m" />
                       </node>
@@ -16854,7 +16854,7 @@
                           <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                         </node>
                         <node concept="liA8E" id="65o8lr592q" role="2OqNvi">
-                          <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                          <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                           <node concept="2GrUjf" id="65o8lr592r" role="37wK5m">
                             <ref role="2Gs0qQ" node="65o8lr592i" resolve="m" />
                           </node>
@@ -29798,7 +29798,7 @@
                       <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="65o8lqSQmi" role="2OqNvi">
-                      <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                       <node concept="2GrUjf" id="65o8lqSQmj" role="37wK5m">
                         <ref role="2Gs0qQ" node="65o8lqSQma" resolve="m" />
                       </node>
@@ -35235,7 +35235,7 @@
                                     <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
                                   </node>
                                   <node concept="liA8E" id="65o8lqRWlZ" role="2OqNvi">
-                                    <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                                    <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                                     <node concept="2GrUjf" id="65o8lqRWm0" role="37wK5m">
                                       <ref role="2Gs0qQ" node="65o8lqRWlR" resolve="m" />
                                     </node>
@@ -35323,7 +35323,7 @@
                                     <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                                   </node>
                                   <node concept="liA8E" id="65o8lqRPnr" role="2OqNvi">
-                                    <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                                    <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                                     <node concept="2GrUjf" id="65o8lqRPns" role="37wK5m">
                                       <ref role="2Gs0qQ" node="65o8lqROny" resolve="m" />
                                     </node>
@@ -35491,7 +35491,7 @@
                       <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="65o8lqSjDf" role="2OqNvi">
-                      <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                       <node concept="2GrUjf" id="65o8lqSjDg" role="37wK5m">
                         <ref role="2Gs0qQ" node="65o8lqSgWH" resolve="m" />
                       </node>
@@ -56888,7 +56888,7 @@
                       <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
                     </node>
                     <node concept="liA8E" id="$zo7noTD4f" role="2OqNvi">
-                      <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                       <node concept="2GrUjf" id="65o8lr4POT" role="37wK5m">
                         <ref role="2Gs0qQ" node="65o8lr4Mid" resolve="m" />
                       </node>
@@ -57474,7 +57474,7 @@
                       <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
                     </node>
                     <node concept="liA8E" id="65o8lrd5lm" role="2OqNvi">
-                      <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                       <node concept="2GrUjf" id="65o8lrd5ln" role="37wK5m">
                         <ref role="2Gs0qQ" node="65o8lrd5le" resolve="m" />
                       </node>
@@ -57780,7 +57780,7 @@
                       <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="65o8lrdtU_" role="2OqNvi">
-                      <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                       <node concept="2GrUjf" id="65o8lrdtUA" role="37wK5m">
                         <ref role="2Gs0qQ" node="65o8lrdtUt" resolve="m" />
                       </node>
@@ -58869,7 +58869,7 @@
                           <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
                         </node>
                         <node concept="liA8E" id="65o8lr4VMj" role="2OqNvi">
-                          <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                          <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                           <node concept="2GrUjf" id="65o8lr4VMk" role="37wK5m">
                             <ref role="2Gs0qQ" node="65o8lr4VMb" resolve="m" />
                           </node>
@@ -59632,7 +59632,7 @@
                       <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
                     </node>
                     <node concept="liA8E" id="65o8lqSzRI" role="2OqNvi">
-                      <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                       <node concept="2GrUjf" id="65o8lqSzRJ" role="37wK5m">
                         <ref role="2Gs0qQ" node="65o8lqSzcA" resolve="m" />
                       </node>
@@ -60514,7 +60514,7 @@
                       <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="65o8lqSFnU" role="2OqNvi">
-                      <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.textgen.trace.DebugInfo" resolve="get" />
                       <node concept="2GrUjf" id="65o8lqSFnV" role="37wK5m">
                         <ref role="2Gs0qQ" node="65o8lqSFnM" resolve="m" />
                       </node>

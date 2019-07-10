@@ -1331,6 +1331,28 @@
         <ref role="3uigEE" to="hwgx:2bPPn51Sxsu" resolve="AbstractTreeViewNode" />
       </node>
     </node>
+    <node concept="13i0hz" id="7NleypPGjRL" role="13h7CS">
+      <property role="TrG5h" value="allowEverythingExceptWhitespace" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="hwgx:8q0nkX_5K4" resolve="allowEverythingExceptWhitespace" />
+      <node concept="3Tm1VV" id="7NleypPGjRM" role="1B3o_S" />
+      <node concept="3clFbS" id="7NleypPGjRR" role="3clF47">
+        <node concept="3SKdUt" id="7NleypPGkH2" role="3cqZAp">
+          <node concept="3SKdUq" id="7NleypPGkH4" role="3SKWNk">
+            <property role="3SKdUp" value="documents names are only used for text generation and file names (hence no need for strict identifier names)" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7NleypPGkDh" role="3cqZAp">
+          <node concept="3clFbT" id="7NleypPGkDg" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7NleypPGjRS" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="2TZO3DbvVvX">
     <property role="3GE5qa" value="structure" />
@@ -4045,6 +4067,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="jOb2ThWFdP" role="3cqZAp">
+          <node concept="2OqwBi" id="jOb2ThWFdQ" role="3clFbG">
+            <node concept="37vLTw" id="jOb2ThWFdR" role="2Oq$k0">
+              <ref role="3cqZAo" node="2vLLb0Tlq_m" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="jOb2ThWFdS" role="2OqNvi">
+              <node concept="2OqwBi" id="jOb2ThWFdT" role="25WWJ7">
+                <node concept="13iPFW" id="jOb2ThWFdU" role="2Oq$k0" />
+                <node concept="3TrEf2" id="jOb2ThWKbJ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2vLLb0Tlq_w" role="3cqZAp">
           <node concept="2OqwBi" id="2vLLb0TlqAd" role="3clFbG">
             <node concept="37vLTw" id="5Hxjapw9v94" role="2Oq$k0">
@@ -4151,6 +4188,21 @@
                 <node concept="13iPFW" id="5L$H31Kh1bQ" role="2Oq$k0" />
                 <node concept="3TrEf2" id="5L$H31Kh1ch" role="2OqNvi">
                   <ref role="3Tt5mk" to="2c95:519ky_SprCS" resolve="defaultTempPath" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="jOb2ThWKqJ" role="3cqZAp">
+          <node concept="2OqwBi" id="jOb2ThWKqK" role="3clFbG">
+            <node concept="37vLTw" id="jOb2ThWKqL" role="2Oq$k0">
+              <ref role="3cqZAo" node="5L$H31Kh1af" resolve="paths" />
+            </node>
+            <node concept="TSZUe" id="jOb2ThWKqM" role="2OqNvi">
+              <node concept="2OqwBi" id="jOb2ThWKqN" role="25WWJ7">
+                <node concept="13iPFW" id="jOb2ThWKqO" role="2Oq$k0" />
+                <node concept="3TrEf2" id="jOb2ThWODP" role="2OqNvi">
+                  <ref role="3Tt5mk" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
                 </node>
               </node>
             </node>

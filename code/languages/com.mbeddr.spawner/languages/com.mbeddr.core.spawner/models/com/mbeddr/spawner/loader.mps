@@ -665,7 +665,7 @@
                       <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
                     </node>
                     <node concept="liA8E" id="3wED9Ce4$gw" role="2OqNvi">
-                      <ref role="37wK5l" to="3ju5:~FileSystem.getFileByPath(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFileByPath" />
+                      <ref role="37wK5l" to="3ju5:~FileSystem.getFile(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFile" />
                       <node concept="2YIFZM" id="1o_$mJEgxDo" role="37wK5m">
                         <ref role="1Pybhc" node="3wED9Ce43t1" resolve="SpawnerLoader25" />
                         <ref role="37wK5l" node="5qi0JV6b2S$" resolve="getLanguagesPath" />
@@ -858,7 +858,7 @@
                   <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
                 </node>
                 <node concept="liA8E" id="3wED9Ce4eKF" role="2OqNvi">
-                  <ref role="37wK5l" to="3ju5:~FileSystem.getFileByPath(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFileByPath" />
+                  <ref role="37wK5l" to="3ju5:~FileSystem.getFile(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFile" />
                   <node concept="2OqwBi" id="3wED9Ce4eKh" role="37wK5m">
                     <node concept="2OqwBi" id="3wED9Ce4e5d" role="2Oq$k0">
                       <node concept="37vLTw" id="1o_$mJE5Yt$" role="2Oq$k0">
