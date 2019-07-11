@@ -3199,6 +3199,21 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2IziEAJENyq" role="3clF47">
+        <node concept="3clFbJ" id="70_$wOgiVeP" role="3cqZAp">
+          <node concept="3clFbS" id="70_$wOgiVeR" role="3clFbx">
+            <node concept="3SKdUt" id="70_$wOgj83j" role="3cqZAp">
+              <node concept="3SKdUq" id="70_$wOgj83l" role="3SKWNk">
+                <property role="3SKdUp" value="Try to avoid HeadlessException in tests" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="70_$wOgj4B6" role="3cqZAp" />
+          </node>
+          <node concept="2YIFZM" id="70_$wOgj1oa" role="3clFbw">
+            <ref role="37wK5l" to="z60i:~GraphicsEnvironment.isHeadless()" resolve="isHeadless" />
+            <ref role="1Pybhc" to="z60i:~GraphicsEnvironment" resolve="GraphicsEnvironment" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="70_$wOgj4Bj" role="3cqZAp" />
         <node concept="3SKdUt" id="3dXNG5u8zvF" role="3cqZAp">
           <node concept="3SKdUq" id="3dXNG5u8zvH" role="3SKWNk">
             <property role="3SKdUp" value="sets the UI the first time the Code Review Tab is opened" />
