@@ -16232,38 +16232,24 @@
       <property role="TrG5h" value="group.preventLoadingModuleTwice" />
       <node concept="1E1JtA" id="4tS3Z9TWA00" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.mbeddr.mpsutil.preventLoadingModulesTwice.plugin" />
-        <property role="3LESm3" value="03283716-25b6-438d-958e-c19bf2367052" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.errorWhenLoadingModuleTwice" />
+        <property role="3LESm3" value="96b88dc2-64db-4a9b-acff-4e19488e7926" />
         <node concept="398BVA" id="4tS3Z9TWAl3" role="3LF7KH">
           <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
           <node concept="2Ry0Ak" id="4tS3Z9TWAl4" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="4tS3Z9TWAl5" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.mpsutil.preventLoadingModulesTwice.plugin" />
-              <node concept="2Ry0Ak" id="4tS3Z9TWBk8" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.mpsutil.preventLoadingModulesTwice.plugin.msd" />
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.errorWhenLoadingModuleTwice" />
+              <node concept="2Ry0Ak" id="4tS3Z9U89ka" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.errorWhenLoadingModuleTwice.msd" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="4tS3Z9TWBXI" role="3bR37C">
-          <node concept="3bR9La" id="4tS3Z9TWBXJ" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4tS3Z9TWBXK" role="3bR37C">
-          <node concept="3bR9La" id="4tS3Z9TWBXL" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4tS3Z9TWBXM" role="3bR37C">
           <node concept="3bR9La" id="4tS3Z9TWBXN" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4tS3Z9TWBXO" role="3bR37C">
-          <node concept="3bR9La" id="4tS3Z9TWBXP" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
         <node concept="1SiIV0" id="4tS3Z9TWBXQ" role="3bR37C">
@@ -16285,6 +16271,11 @@
             <node concept="3qWCbU" id="4tS3Z9TWCjx" role="3LXTna">
               <property role="3qWCbO" value="icons/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4tS3Z9U8aBI" role="3bR37C">
+          <node concept="3bR9La" id="4tS3Z9U8aBJ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
       </node>
@@ -16312,7 +16303,7 @@
         </node>
       </node>
       <node concept="m$_yB" id="4tS3Z9TWMk$" role="m$_yh">
-        <ref role="m$_yA" node="4tS3Z9TWA00" resolve="com.mbeddr.mpsutil.preventLoadingModulesTwice.plugin" />
+        <ref role="m$_yA" node="4tS3Z9TWA00" resolve="com.mbeddr.mpsutil.errorWhenLoadingModuleTwice" />
       </node>
       <node concept="m$_yC" id="4tS3Z9TWMD_" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />

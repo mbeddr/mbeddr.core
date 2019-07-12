@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0562c71b-99d3-4e25-b222-6d2bedb161ba(com.mbeddr.mpsutil.preventLoadingModulesTwice.plugin.plugin)">
+<model ref="r:968d51c0-e211-4f7c-8527-29798d9834c4(com.mbeddr.mpsutil.errorWhenLoadingModuleTwice.plugin)">
   <persistence version="9" />
   <languages>
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="qmvx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project.impl(MPS.IDEA/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
-    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
-    <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -35,13 +29,11 @@
       <concept id="481983775135178846" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginDisposeBlock" flags="in" index="2uRRBI" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
-        <child id="1082485599096" name="statements" index="9aQI4" />
-      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
@@ -77,14 +69,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
-        <child id="1164991057263" name="throwable" index="YScLw" />
-      </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
-        <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -109,7 +96,6 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
-        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -135,10 +121,8 @@
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
-        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
-      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -146,7 +130,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -163,6 +146,7 @@
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
@@ -190,6 +174,9 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
       <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
@@ -204,19 +191,24 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
       </concept>
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
+        <child id="1240687658305" name="delimiter" index="3uJOhx" />
+      </concept>
+      <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
   </registry>
   <node concept="2uRRBC" id="2Nh7uOqoIoe">
-    <property role="TrG5h" value="PreventLoadingModulesTwice" />
+    <property role="TrG5h" value="ErrorWhenLoadingModulesTwice" />
     <node concept="2BZ0e9" id="2Nh7uOqoNQX" role="2uRRBG">
       <property role="TrG5h" value="listener" />
       <node concept="3Tm6S6" id="2Nh7uOqoNQY" role="1B3o_S" />
-      <node concept="3uibUv" id="2Nh7uOqoYcY" role="1tU5fm">
-        <ref role="3uigEE" node="2Nh7uOqoY4s" resolve="StopOpeningProjectWithModuleDuplicatesListener" />
+      <node concept="3uibUv" id="4tS3Z9U7YQc" role="1tU5fm">
+        <ref role="3uigEE" node="2Nh7uOqoY4s" resolve="ErrorWhenLoadingModulesTwiceListener" />
       </node>
     </node>
     <node concept="2uRRBj" id="2Nh7uOqoJiW" role="2uRRBE">
@@ -231,7 +223,7 @@
             </node>
             <node concept="2ShNRf" id="2Nh7uOqoOlB" role="37vLTx">
               <node concept="HV5vD" id="2Nh7uOqoZb2" role="2ShVmc">
-                <ref role="HV5vE" node="2Nh7uOqoY4s" resolve="StopOpeningProjectWithModuleDuplicatesListener" />
+                <ref role="HV5vE" node="2Nh7uOqoY4s" resolve="ErrorWhenLoadingModulesTwiceListener" />
               </node>
             </node>
           </node>
@@ -279,22 +271,13 @@
     </node>
   </node>
   <node concept="312cEu" id="2Nh7uOqoY4s">
-    <property role="TrG5h" value="StopOpeningProjectWithModuleDuplicatesListener" />
+    <property role="TrG5h" value="ErrorWhenLoadingModulesTwiceListener" />
     <node concept="Wx3nA" id="rcHTmjsAH8" role="jymVt">
       <property role="TrG5h" value="ENABLED" />
       <node concept="3Tm1VV" id="rcHTmjsAcj" role="1B3o_S" />
       <node concept="10P_77" id="rcHTmjsAB$" role="1tU5fm" />
       <node concept="3clFbT" id="rcHTmjuwqn" role="33vP2m">
         <property role="3clFbU" value="true" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="rcHTmjsYlx" role="jymVt" />
-    <node concept="312cEu" id="rcHTmjt0_o" role="jymVt">
-      <property role="2bfB8j" value="true" />
-      <property role="TrG5h" value="DuplicateModuleIdException" />
-      <node concept="3Tm1VV" id="rcHTmjt0rb" role="1B3o_S" />
-      <node concept="3uibUv" id="rcHTmjt3tJ" role="1zkMxy">
-        <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
     </node>
     <node concept="2tJIrI" id="rcHTmjsYyH" role="jymVt" />
@@ -338,21 +321,11 @@
               <ref role="3uigEE" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
             </node>
             <node concept="2YIFZM" id="Pib7f2DzJo" role="33vP2m">
-              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
               <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="rcHTmjvb_W" role="3cqZAp">
-          <node concept="3cpWsn" id="rcHTmjvb_X" role="3cpWs9">
-            <property role="TrG5h" value="exceptionToBeRaised" />
-            <node concept="3uibUv" id="rcHTmjvb_V" role="1tU5fm">
-              <ref role="3uigEE" node="rcHTmjt0_o" resolve="StopOpeningProjectWithModuleDuplicatesListener.DuplicateModuleIdException" />
-            </node>
-            <node concept="10Nm6u" id="rcHTmjvjms" role="33vP2m" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="rcHTmjvie2" role="3cqZAp" />
         <node concept="1QHqEK" id="Pib7f2F$Wc" role="3cqZAp">
           <node concept="1QHqEC" id="Pib7f2F$We" role="1QHqEI">
             <node concept="3clFbS" id="Pib7f2F$Wg" role="1bW5cS">
@@ -468,15 +441,123 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="rcHTmjvfCw" role="3cqZAp">
-                        <node concept="37vLTI" id="rcHTmjvfCy" role="3clFbG">
-                          <node concept="2ShNRf" id="rcHTmjvb_Y" role="37vLTx">
-                            <node concept="HV5vD" id="rcHTmjvb_Z" role="2ShVmc">
-                              <ref role="HV5vE" node="rcHTmjt0_o" resolve="StopOpeningProjectWithModuleDuplicatesListener.DuplicateModuleIdException" />
+                      <node concept="3clFbJ" id="rcHTmjs_xw" role="3cqZAp">
+                        <node concept="37vLTw" id="rcHTmjsBPV" role="3clFbw">
+                          <ref role="3cqZAo" node="rcHTmjsAH8" resolve="ENABLED" />
+                        </node>
+                        <node concept="3clFbS" id="rcHTmjs_xy" role="3clFbx">
+                          <node concept="3cpWs8" id="4tS3Z9TWdyn" role="3cqZAp">
+                            <node concept="3cpWsn" id="4tS3Z9TWdyo" role="3cpWs9">
+                              <property role="TrG5h" value="title" />
+                              <node concept="17QB3L" id="4tS3Z9TWdyh" role="1tU5fm" />
+                              <node concept="Xl_RD" id="4tS3Z9U3vQb" role="33vP2m">
+                                <property role="Xl_RC" value="Duplicate module IDs found" />
+                              </node>
                             </node>
                           </node>
-                          <node concept="37vLTw" id="rcHTmjvfCA" role="37vLTJ">
-                            <ref role="3cqZAo" node="rcHTmjvb_X" resolve="exceptionToBeRaised" />
+                          <node concept="3cpWs8" id="4tS3Z9TWeGX" role="3cqZAp">
+                            <node concept="3cpWsn" id="4tS3Z9TWeGY" role="3cpWs9">
+                              <property role="TrG5h" value="content" />
+                              <node concept="17QB3L" id="4tS3Z9TWeGW" role="1tU5fm" />
+                              <node concept="3cpWs3" id="4tS3Z9U3uEB" role="33vP2m">
+                                <node concept="Xl_RD" id="rcHTmjwE7f" role="3uHU7w">
+                                  <property role="Xl_RC" value="You should only have one of these open at a time. Close one of the projects and restart MPS now." />
+                                </node>
+                                <node concept="3cpWs3" id="4tS3Z9TWdyp" role="3uHU7B">
+                                  <node concept="3cpWs3" id="4tS3Z9TWdyq" role="3uHU7B">
+                                    <node concept="Xl_RD" id="4tS3Z9TWdyr" role="3uHU7B">
+                                      <property role="Xl_RC" value="Projects " />
+                                    </node>
+                                    <node concept="2OqwBi" id="4tS3Z9U3QZ_" role="3uHU7w">
+                                      <node concept="2OqwBi" id="4tS3Z9U3Mnz" role="2Oq$k0">
+                                        <node concept="37vLTw" id="4tS3Z9U3Phd" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="rcHTmjyucY" resolve="projectOwners" />
+                                        </node>
+                                        <node concept="3$u5V9" id="4tS3Z9U3Nyo" role="2OqNvi">
+                                          <node concept="1bVj0M" id="4tS3Z9U3Nyq" role="23t8la">
+                                            <node concept="3clFbS" id="4tS3Z9U3Nyr" role="1bW5cS">
+                                              <node concept="3clFbF" id="4tS3Z9U3O66" role="3cqZAp">
+                                                <node concept="2OqwBi" id="4tS3Z9U3OCQ" role="3clFbG">
+                                                  <node concept="37vLTw" id="4tS3Z9U3O65" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="4tS3Z9U3Nys" resolve="it" />
+                                                  </node>
+                                                  <node concept="liA8E" id="4tS3Z9U3Qlm" role="2OqNvi">
+                                                    <ref role="37wK5l" to="z1c3:~MPSProject.getName():java.lang.String" resolve="getName" />
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="Rh6nW" id="4tS3Z9U3Nys" role="1bW2Oz">
+                                              <property role="TrG5h" value="it" />
+                                              <node concept="2jxLKc" id="4tS3Z9U3Nyt" role="1tU5fm" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="3uJxvA" id="4tS3Z9U5yF5" role="2OqNvi">
+                                        <node concept="Xl_RD" id="4tS3Z9U7vHH" role="3uJOhx">
+                                          <property role="Xl_RC" value=", " />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="4tS3Z9TWenc" role="3uHU7w">
+                                    <property role="Xl_RC" value=" both have the same module. " />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbH" id="4tS3Z9U3DzV" role="3cqZAp" />
+                          <node concept="RRSsy" id="rcHTmjwpi_" role="3cqZAp">
+                            <property role="RRSoG" value="warn" />
+                            <node concept="3cpWs3" id="4tS3Z9U3Jrj" role="RRSoy">
+                              <node concept="Xl_RD" id="4tS3Z9U3JUb" role="3uHU7w">
+                                <property role="Xl_RC" value=")" />
+                              </node>
+                              <node concept="3cpWs3" id="4tS3Z9TWgN6" role="3uHU7B">
+                                <node concept="3cpWs3" id="4tS3Z9U3E6x" role="3uHU7B">
+                                  <node concept="Xl_RD" id="4tS3Z9U3E$J" role="3uHU7w">
+                                    <property role="Xl_RC" value=" (" />
+                                  </node>
+                                  <node concept="37vLTw" id="4tS3Z9TWdyx" role="3uHU7B">
+                                    <ref role="3cqZAo" node="4tS3Z9TWdyo" resolve="title" />
+                                  </node>
+                                </node>
+                                <node concept="37vLTw" id="4tS3Z9TWgOh" role="3uHU7w">
+                                  <ref role="3cqZAo" node="4tS3Z9TWeGY" resolve="content" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbH" id="4tS3Z9TWdjc" role="3cqZAp" />
+                          <node concept="3clFbF" id="4tS3Z9TW6sE" role="3cqZAp">
+                            <node concept="2OqwBi" id="1A$OnV5nHaE" role="3clFbG">
+                              <node concept="2ShNRf" id="1A$OnV5nHaF" role="2Oq$k0">
+                                <node concept="1pGfFk" id="1A$OnV5nHaG" role="2ShVmc">
+                                  <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType)" resolve="Notification" />
+                                  <node concept="Xl_RD" id="1A$OnV5nHaH" role="37wK5m">
+                                    <property role="Xl_RC" value="preventLoadingModulesTwice" />
+                                  </node>
+                                  <node concept="37vLTw" id="4tS3Z9TWdyw" role="37wK5m">
+                                    <ref role="3cqZAo" node="4tS3Z9TWdyo" resolve="title" />
+                                  </node>
+                                  <node concept="37vLTw" id="4tS3Z9TWhVH" role="37wK5m">
+                                    <ref role="3cqZAo" node="4tS3Z9TWeGY" resolve="content" />
+                                  </node>
+                                  <node concept="Rm8GO" id="4tS3Z9TW7st" role="37wK5m">
+                                    <ref role="Rm8GQ" to="fnpx:~NotificationType.ERROR" resolve="ERROR" />
+                                    <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="1A$OnV5nHaN" role="2OqNvi">
+                                <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project):void" resolve="notify" />
+                                <node concept="37vLTw" id="4tS3Z9TWi7C" role="37wK5m">
+                                  <ref role="3cqZAo" node="2Nh7uOqoOlI" resolve="project" />
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -488,148 +569,6 @@
           </node>
           <node concept="37vLTw" id="Pib7f2F_nC" role="ukAjM">
             <ref role="3cqZAo" node="Pib7f2DzJn" resolve="repo" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="rcHTmjveZs" role="3cqZAp" />
-        <node concept="3clFbJ" id="rcHTmjvmxg" role="3cqZAp">
-          <node concept="3clFbS" id="rcHTmjvmxi" role="3clFbx">
-            <node concept="3clFbJ" id="rcHTmjs_xw" role="3cqZAp">
-              <node concept="37vLTw" id="rcHTmjsBPV" role="3clFbw">
-                <ref role="3cqZAo" node="rcHTmjsAH8" resolve="ENABLED" />
-              </node>
-              <node concept="3clFbS" id="rcHTmjs_xy" role="3clFbx">
-                <node concept="3cpWs8" id="4tS3Z9TWeGX" role="3cqZAp">
-                  <node concept="3cpWsn" id="4tS3Z9TWeGY" role="3cpWs9">
-                    <property role="TrG5h" value="content" />
-                    <node concept="17QB3L" id="4tS3Z9TWeGW" role="1tU5fm" />
-                    <node concept="3cpWs3" id="4tS3Z9TWg5I" role="33vP2m">
-                      <node concept="3cpWs3" id="4tS3Z9TWfsY" role="3uHU7B">
-                        <node concept="Xl_RD" id="4tS3Z9TWeGZ" role="3uHU7B">
-                          <property role="Xl_RC" value="To disable this temporarily, set " />
-                        </node>
-                        <node concept="2OqwBi" id="rcHTmjwuFy" role="3uHU7w">
-                          <node concept="1rXfSq" id="rcHTmjwtlF" role="2Oq$k0">
-                            <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                          </node>
-                          <node concept="liA8E" id="rcHTmjwvmf" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Class.getCanonicalName():java.lang.String" resolve="getCanonicalName" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="rcHTmjwE7f" role="3uHU7w">
-                        <property role="Xl_RC" value=".ENABLED to false" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3cpWs8" id="4tS3Z9TWdyn" role="3cqZAp">
-                  <node concept="3cpWsn" id="4tS3Z9TWdyo" role="3cpWs9">
-                    <property role="TrG5h" value="title" />
-                    <node concept="17QB3L" id="4tS3Z9TWdyh" role="1tU5fm" />
-                    <node concept="3cpWs3" id="4tS3Z9TWdyp" role="33vP2m">
-                      <node concept="3cpWs3" id="4tS3Z9TWdyq" role="3uHU7B">
-                        <node concept="Xl_RD" id="4tS3Z9TWdyr" role="3uHU7B">
-                          <property role="Xl_RC" value="Stopping to open project " />
-                        </node>
-                        <node concept="2OqwBi" id="4tS3Z9TWdys" role="3uHU7w">
-                          <node concept="37vLTw" id="4tS3Z9TWdyt" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2Nh7uOqoOlI" resolve="project" />
-                          </node>
-                          <node concept="liA8E" id="4tS3Z9TWdyu" role="2OqNvi">
-                            <ref role="37wK5l" to="4nm9:~Project.getName():java.lang.String" resolve="getName" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="4tS3Z9TWenc" role="3uHU7w">
-                        <property role="Xl_RC" value=" which has modules that are already loaded." />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="RRSsy" id="rcHTmjwpi_" role="3cqZAp">
-                  <property role="RRSoG" value="warn" />
-                  <node concept="3cpWs3" id="4tS3Z9TWgN6" role="RRSoy">
-                    <node concept="37vLTw" id="4tS3Z9TWgOh" role="3uHU7w">
-                      <ref role="3cqZAo" node="4tS3Z9TWeGY" resolve="content" />
-                    </node>
-                    <node concept="37vLTw" id="4tS3Z9TWdyx" role="3uHU7B">
-                      <ref role="3cqZAo" node="4tS3Z9TWdyo" resolve="title" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbH" id="4tS3Z9TWdjc" role="3cqZAp" />
-                <node concept="3clFbF" id="4tS3Z9TW6sE" role="3cqZAp">
-                  <node concept="2OqwBi" id="1A$OnV5nHaE" role="3clFbG">
-                    <node concept="2ShNRf" id="1A$OnV5nHaF" role="2Oq$k0">
-                      <node concept="1pGfFk" id="1A$OnV5nHaG" role="2ShVmc">
-                        <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType)" resolve="Notification" />
-                        <node concept="Xl_RD" id="1A$OnV5nHaH" role="37wK5m">
-                          <property role="Xl_RC" value="preventLoadingModulesTwice" />
-                        </node>
-                        <node concept="37vLTw" id="4tS3Z9TWdyw" role="37wK5m">
-                          <ref role="3cqZAo" node="4tS3Z9TWdyo" resolve="title" />
-                        </node>
-                        <node concept="37vLTw" id="4tS3Z9TWhVH" role="37wK5m">
-                          <ref role="3cqZAo" node="4tS3Z9TWeGY" resolve="content" />
-                        </node>
-                        <node concept="Rm8GO" id="4tS3Z9TW7st" role="37wK5m">
-                          <ref role="Rm8GQ" to="fnpx:~NotificationType.ERROR" resolve="ERROR" />
-                          <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="1A$OnV5nHaN" role="2OqNvi">
-                      <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project):void" resolve="notify" />
-                      <node concept="37vLTw" id="4tS3Z9TWi7C" role="37wK5m">
-                        <ref role="3cqZAo" node="2Nh7uOqoOlI" resolve="project" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbH" id="4tS3Z9TVRpz" role="3cqZAp" />
-                <node concept="YS8fn" id="rcHTmjsCjd" role="3cqZAp">
-                  <node concept="2ShNRf" id="rcHTmjsQTL" role="YScLw">
-                    <node concept="1pGfFk" id="rcHTmjsWOY" role="2ShVmc">
-                      <ref role="37wK5l" to="xygl:~ProcessCanceledException.&lt;init&gt;(java.lang.Throwable)" resolve="ProcessCanceledException" />
-                      <node concept="37vLTw" id="rcHTmjvllL" role="37wK5m">
-                        <ref role="3cqZAo" node="rcHTmjvb_X" resolve="exceptionToBeRaised" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="9aQIb" id="rcHTmjubwx" role="9aQIa">
-                <node concept="3clFbS" id="rcHTmjubwy" role="9aQI4">
-                  <node concept="RRSsy" id="rcHTmjuiBL" role="3cqZAp">
-                    <property role="RRSoG" value="warn" />
-                    <node concept="3cpWs3" id="rcHTmjtrV$" role="RRSoy">
-                      <node concept="Xl_RD" id="rcHTmjts$7" role="3uHU7w">
-                        <property role="Xl_RC" value=".ENABLED is false" />
-                      </node>
-                      <node concept="3cpWs3" id="rcHTmjtnYq" role="3uHU7B">
-                        <node concept="Xl_RD" id="rcHTmjt4xJ" role="3uHU7B">
-                          <property role="Xl_RC" value="Not stopping to open project with duplicate module ids since " />
-                        </node>
-                        <node concept="2OqwBi" id="rcHTmjtp86" role="3uHU7w">
-                          <node concept="1rXfSq" id="rcHTmjtorP" role="2Oq$k0">
-                            <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                          </node>
-                          <node concept="liA8E" id="rcHTmjtrgS" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="rcHTmjvnRV" role="3clFbw">
-            <node concept="10Nm6u" id="rcHTmjvonf" role="3uHU7w" />
-            <node concept="37vLTw" id="rcHTmjvnbu" role="3uHU7B">
-              <ref role="3cqZAo" node="rcHTmjvb_X" resolve="exceptionToBeRaised" />
-            </node>
           </node>
         </node>
       </node>
