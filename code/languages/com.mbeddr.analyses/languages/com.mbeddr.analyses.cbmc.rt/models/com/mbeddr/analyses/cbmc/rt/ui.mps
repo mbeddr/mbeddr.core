@@ -3969,6 +3969,30 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="RwRvu6U2S8" role="jymVt" />
+    <node concept="312cEg" id="RwRvu6TWxd" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="objectBitsSpinner" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="RwRvu6TWxe" role="1B3o_S" />
+      <node concept="3uibUv" id="RwRvu6TWxf" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JSpinner" resolve="JSpinner" />
+      </node>
+      <node concept="2ShNRf" id="RwRvu6TWxg" role="33vP2m">
+        <node concept="1pGfFk" id="RwRvu6TWxh" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~JSpinner.&lt;init&gt;(javax.swing.SpinnerModel)" resolve="JSpinner" />
+          <node concept="2OqwBi" id="RwRvu6TWxi" role="37wK5m">
+            <node concept="37vLTw" id="RwRvu6TWxj" role="2Oq$k0">
+              <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+            </node>
+            <node concept="2OwXpG" id="RwRvu6UcqT" role="2OqNvi">
+              <ref role="2Oxat5" node="RwRvu6SpnW" resolve="objectBitsModel" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="7xDyb4Pkmwm" role="jymVt" />
     <node concept="312cEg" id="7xDyb4PGsXm" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -5041,6 +5065,51 @@
           </node>
         </node>
         <node concept="3clFbH" id="7xDyb4PliZS" role="3cqZAp" />
+        <node concept="3clFbF" id="RwRvu6Uinn" role="3cqZAp">
+          <node concept="2OqwBi" id="RwRvu6Uino" role="3clFbG">
+            <node concept="37vLTw" id="RwRvu6Uinp" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4Plki0" resolve="advancedPanel" />
+            </node>
+            <node concept="liA8E" id="RwRvu6Uinq" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="2ShNRf" id="RwRvu6Uinr" role="37wK5m">
+                <node concept="1pGfFk" id="RwRvu6Uins" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                  <node concept="Xl_RD" id="RwRvu6Uint" role="37wK5m">
+                    <property role="Xl_RC" value="Object bits: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="RwRvu6Uinu" role="3cqZAp">
+          <node concept="2OqwBi" id="RwRvu6Uinv" role="3clFbG">
+            <node concept="37vLTw" id="RwRvu6Uinw" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4Plki0" resolve="advancedPanel" />
+            </node>
+            <node concept="liA8E" id="RwRvu6Uinx" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="RwRvu6Utjq" role="37wK5m">
+                <ref role="3cqZAo" node="RwRvu6TWxd" resolve="objectBitsSpinner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="RwRvu6Uinz" role="3cqZAp">
+          <node concept="2OqwBi" id="RwRvu6Uin$" role="3clFbG">
+            <node concept="37vLTw" id="RwRvu6UuQK" role="2Oq$k0">
+              <ref role="3cqZAo" node="RwRvu6TWxd" resolve="objectBitsSpinner" />
+            </node>
+            <node concept="liA8E" id="RwRvu6UinA" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="RwRvu6UinD" role="37wK5m">
+                <property role="Xl_RC" value="The --object-bits argument of CBMC. Number of bits used for object addresses." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="RwRvu6UfS5" role="3cqZAp" />
         <node concept="3clFbF" id="FDeiXqA7XU" role="3cqZAp">
           <node concept="2OqwBi" id="FDeiXqA7XV" role="3clFbG">
             <node concept="37vLTw" id="FDeiXqA7XW" role="2Oq$k0">
@@ -6279,7 +6348,17 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="FDeiXqAffl" role="3cqZAp" />
+        <node concept="3clFbF" id="RwRvu6Vd93" role="3cqZAp">
+          <node concept="2OqwBi" id="RwRvu6VeFI" role="3clFbG">
+            <node concept="37vLTw" id="RwRvu6Vd91" role="2Oq$k0">
+              <ref role="3cqZAo" node="RwRvu6TWxd" resolve="objectBitsSpinner" />
+            </node>
+            <node concept="liA8E" id="RwRvu6VsAp" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JSpinner.updateUI():void" resolve="updateUI" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="RwRvu6Vtka" role="3cqZAp" />
         <node concept="3clFbF" id="1Fm2OOqPQHY" role="3cqZAp">
           <node concept="2OqwBi" id="1Fm2OOqPRaI" role="3clFbG">
             <node concept="37vLTw" id="1Fm2OOqPQHX" role="2Oq$k0">
@@ -8800,6 +8879,32 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="RwRvu6SpnW" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="objectBitsModel" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="RwRvu6SpnX" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~SpinnerNumberModel" resolve="SpinnerNumberModel" />
+      </node>
+      <node concept="2ShNRf" id="RwRvu6SpnY" role="33vP2m">
+        <node concept="1pGfFk" id="RwRvu6SpnZ" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.&lt;init&gt;(int,int,int,int)" resolve="SpinnerNumberModel" />
+          <node concept="3cmrfG" id="RwRvu6Spo0" role="37wK5m">
+            <property role="3cmrfH" value="12" />
+          </node>
+          <node concept="3cmrfG" id="RwRvu6Spo2" role="37wK5m">
+            <property role="3cmrfH" value="6" />
+          </node>
+          <node concept="3cmrfG" id="RwRvu6SuXy" role="37wK5m">
+            <property role="3cmrfH" value="32" />
+          </node>
+          <node concept="3cmrfG" id="RwRvu6Spo3" role="37wK5m">
+            <property role="3cmrfH" value="1" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="3OhBgB4hwP9" role="jymVt" />
     <node concept="312cEg" id="3OhBgB4hwPa" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -9418,6 +9523,60 @@
       </node>
       <node concept="3Tm1VV" id="3OhBgB4hx3H" role="1B3o_S" />
       <node concept="10Oyi0" id="3OhBgB4hx3I" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="RwRvu6SwNt" role="jymVt" />
+    <node concept="3clFb_" id="RwRvu6SvaQ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setObjectBits" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="RwRvu6SvaR" role="3clF47">
+        <node concept="3clFbF" id="RwRvu6SvaS" role="3cqZAp">
+          <node concept="2OqwBi" id="RwRvu6SvaT" role="3clFbG">
+            <node concept="37vLTw" id="RwRvu6SDkt" role="2Oq$k0">
+              <ref role="3cqZAo" node="RwRvu6SpnW" resolve="objectBitsModel" />
+            </node>
+            <node concept="liA8E" id="RwRvu6SvaV" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.setValue(java.lang.Object):void" resolve="setValue" />
+              <node concept="37vLTw" id="RwRvu6SvaW" role="37wK5m">
+                <ref role="3cqZAo" node="RwRvu6SvaZ" resolve="objectBits" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="RwRvu6SvaX" role="1B3o_S" />
+      <node concept="3cqZAl" id="RwRvu6SvaY" role="3clF45" />
+      <node concept="37vLTG" id="RwRvu6SvaZ" role="3clF46">
+        <property role="TrG5h" value="objectBits" />
+        <node concept="10Oyi0" id="RwRvu6Svb0" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="RwRvu6SvaP" role="jymVt" />
+    <node concept="3clFb_" id="RwRvu6SvaF" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getObjectBits" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="RwRvu6SvaG" role="3clF47">
+        <node concept="3cpWs6" id="RwRvu6SvaH" role="3cqZAp">
+          <node concept="10QFUN" id="RwRvu6SvaI" role="3cqZAk">
+            <node concept="3uibUv" id="RwRvu6SvaJ" role="10QFUM">
+              <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+            </node>
+            <node concept="2OqwBi" id="RwRvu6SvaK" role="10QFUP">
+              <node concept="37vLTw" id="RwRvu6SIQf" role="2Oq$k0">
+                <ref role="3cqZAo" node="RwRvu6SpnW" resolve="objectBitsModel" />
+              </node>
+              <node concept="liA8E" id="RwRvu6SvaM" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.getValue():java.lang.Object" resolve="getValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="RwRvu6SvaN" role="1B3o_S" />
+      <node concept="10Oyi0" id="RwRvu6SvaO" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="3OhBgB4hx3J" role="jymVt" />
     <node concept="3clFb_" id="3OhBgB4hx3K" role="jymVt">

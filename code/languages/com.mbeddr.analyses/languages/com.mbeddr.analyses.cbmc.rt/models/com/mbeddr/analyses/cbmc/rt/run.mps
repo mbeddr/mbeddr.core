@@ -1679,8 +1679,13 @@
         </node>
         <node concept="3clFbF" id="2NB$h7SA9o_" role="3cqZAp">
           <node concept="37vLTI" id="2NB$h7SAawI" role="3clFbG">
-            <node concept="37vLTw" id="2NB$h7SAty_" role="37vLTx">
-              <ref role="3cqZAo" node="2NB$h7SAoch" resolve="DEFAULT_OBJECT_BITS" />
+            <node concept="2OqwBi" id="RwRvu6TgAc" role="37vLTx">
+              <node concept="37vLTw" id="RwRvu6Tgh$" role="2Oq$k0">
+                <ref role="3cqZAo" node="7xDyb4PlcpF" resolve="preference" />
+              </node>
+              <node concept="liA8E" id="RwRvu6ThwG" role="2OqNvi">
+                <ref role="37wK5l" to="p8vh:RwRvu6SvaF" resolve="getObjectBits" />
+              </node>
             </node>
             <node concept="338YkY" id="2NB$h7SA9oz" role="37vLTJ">
               <ref role="338YkT" node="2NB$h7SA50R" resolve="objectBits" />
