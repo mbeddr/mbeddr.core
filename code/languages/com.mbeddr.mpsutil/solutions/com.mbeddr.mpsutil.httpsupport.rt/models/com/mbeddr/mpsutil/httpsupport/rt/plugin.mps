@@ -166,8 +166,8 @@
       <concept id="4728279602824475247" name="com.mbeddr.mpsutil.preferenceform.structure.IntegerFieldPreferenceFormProperty" flags="ng" index="czsHg">
         <property id="4728279602824496322" name="defaultValue" index="cyBRX" />
       </concept>
-      <concept id="1210676672555" name="com.mbeddr.mpsutil.preferenceform.structure.OnBeforeWriteBlockApplication" flags="ng" index="3xWZ$M" />
-      <concept id="1210676879526" name="com.mbeddr.mpsutil.preferenceform.structure.OnAfterReadBlockApplication" flags="ng" index="3xXM6Z" />
+      <concept id="1210676672555" name="com.mbeddr.mpsutil.preferenceform.structure.OnBeforeWriteBlockApplication" flags="in" index="3xWZ$M" />
+      <concept id="1210676879526" name="com.mbeddr.mpsutil.preferenceform.structure.OnAfterReadBlockApplication" flags="in" index="3xXM6Z" />
       <concept id="145956936283289547" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceForm" flags="ng" index="1DFvN4">
         <property id="1101080154068563577" name="scope" index="3NeIjD" />
         <child id="145956936283569518" name="properties" index="1DEjpx" />
@@ -386,7 +386,7 @@
       <node concept="3clFbS" id="3vXSZsAPQkE" role="2VODD2">
         <node concept="3cpWs8" id="24HfET2s2DB" role="3cqZAp">
           <node concept="3cpWsn" id="24HfET2s2DC" role="3cpWs9">
-            <property role="TrG5h" value="info" />
+            <property role="TrG5h" value="config" />
             <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="24HfET2s2DD" role="1tU5fm">
               <ref role="3uigEE" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
@@ -420,7 +420,7 @@
             <ref role="37wK5l" node="24HfET2s0Ve" resolve="setCurrentConfig" />
             <ref role="1Pybhc" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
             <node concept="37vLTw" id="24HfET2s2DA" role="37wK5m">
-              <ref role="3cqZAo" node="24HfET2s2DC" resolve="info" />
+              <ref role="3cqZAo" node="24HfET2s2DC" resolve="config" />
             </node>
           </node>
         </node>
@@ -443,7 +443,7 @@
                       <node concept="liA8E" id="3vXSZsAPTd7" role="2OqNvi">
                         <ref role="37wK5l" node="3vXSZsAPOHl" resolve="serverChanged" />
                         <node concept="37vLTw" id="3vXSZsAQ0Ma" role="37wK5m">
-                          <ref role="3cqZAo" node="24HfET2s2DC" resolve="info" />
+                          <ref role="3cqZAo" node="24HfET2s2DC" resolve="config" />
                         </node>
                       </node>
                     </node>
@@ -461,31 +461,42 @@
     </node>
     <node concept="3xXM6Z" id="24HfET2s4cG" role="3NKUo6">
       <node concept="3clFbS" id="24HfET2s4cH" role="2VODD2">
-        <node concept="3clFbF" id="24HfET2s2_E" role="3cqZAp">
-          <node concept="2YIFZM" id="24HfET2s2C4" role="3clFbG">
-            <ref role="37wK5l" node="24HfET2s0Ve" resolve="setCurrentConfig" />
-            <ref role="1Pybhc" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
-            <node concept="2ShNRf" id="24HfET2s4Bp" role="37wK5m">
-              <node concept="1pGfFk" id="24HfET2s4Bq" role="2ShVmc">
+        <node concept="3cpWs8" id="6eYr0J6qUwU" role="3cqZAp">
+          <node concept="3cpWsn" id="6eYr0J6qUwV" role="3cpWs9">
+            <property role="TrG5h" value="config" />
+            <node concept="3uibUv" id="6eYr0J6qUwM" role="1tU5fm">
+              <ref role="3uigEE" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
+            </node>
+            <node concept="2ShNRf" id="6eYr0J6qUwW" role="33vP2m">
+              <node concept="1pGfFk" id="6eYr0J6qUwX" role="2ShVmc">
                 <ref role="37wK5l" node="3vXSZsAPOZP" resolve="HttpServerConfig" />
-                <node concept="1eOMI4" id="24HfET2s4Br" role="37wK5m">
-                  <node concept="10QFUN" id="24HfET2s4Bs" role="1eOMHV">
-                    <node concept="2OqwBi" id="24HfET2s4Bt" role="10QFUP">
-                      <node concept="2WthIp" id="24HfET2s4Bu" role="2Oq$k0" />
-                      <node concept="1DZHhv" id="24HfET2s4Bv" role="2OqNvi">
+                <node concept="1eOMI4" id="6eYr0J6qUwY" role="37wK5m">
+                  <node concept="10QFUN" id="6eYr0J6qUwZ" role="1eOMHV">
+                    <node concept="2OqwBi" id="6eYr0J6qUx0" role="10QFUP">
+                      <node concept="2WthIp" id="6eYr0J6qUx1" role="2Oq$k0" />
+                      <node concept="1DZHhv" id="6eYr0J6qUx2" role="2OqNvi">
                         <ref role="2WH_rO" node="3vXSZsAPQkA" resolve="port" />
                       </node>
                     </node>
-                    <node concept="10Oyi0" id="24HfET2s4Bw" role="10QFUM" />
+                    <node concept="10Oyi0" id="6eYr0J6qUx3" role="10QFUM" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="24HfET2s4Bx" role="37wK5m">
-                  <node concept="2WthIp" id="24HfET2s4By" role="2Oq$k0" />
-                  <node concept="1DZHhv" id="24HfET2s4Bz" role="2OqNvi">
+                <node concept="2OqwBi" id="6eYr0J6qUx4" role="37wK5m">
+                  <node concept="2WthIp" id="6eYr0J6qUx5" role="2Oq$k0" />
+                  <node concept="1DZHhv" id="6eYr0J6qUx6" role="2OqNvi">
                     <ref role="2WH_rO" node="3vXSZsAPQkz" resolve="enabled" />
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="24HfET2s2_E" role="3cqZAp">
+          <node concept="2YIFZM" id="24HfET2s2C4" role="3clFbG">
+            <ref role="37wK5l" node="24HfET2s0Ve" resolve="setCurrentConfig" />
+            <ref role="1Pybhc" node="3vXSZsAPOLr" resolve="HttpServerConfig" />
+            <node concept="37vLTw" id="6eYr0J6qUx7" role="37wK5m">
+              <ref role="3cqZAo" node="6eYr0J6qUwV" resolve="config" />
             </node>
           </node>
         </node>
