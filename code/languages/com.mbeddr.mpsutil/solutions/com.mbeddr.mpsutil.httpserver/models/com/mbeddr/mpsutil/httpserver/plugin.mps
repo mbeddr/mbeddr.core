@@ -2,11 +2,11 @@
 <model ref="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -118,9 +118,6 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
-        <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
@@ -660,6 +657,22 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="2N1CSrznbV9" role="3clF47">
+        <node concept="3clFbJ" id="3rTragM5oTE" role="3cqZAp">
+          <node concept="3clFbS" id="3rTragM5oTG" role="3clFbx">
+            <node concept="3cpWs6" id="3rTragM5tgF" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="3rTragM5sOm" role="3clFbw">
+            <node concept="2OqwBi" id="3rTragM5sOo" role="3fr31v">
+              <node concept="2YIFZM" id="3rTragM5sOp" role="2Oq$k0">
+                <ref role="37wK5l" to="r85u:24HfET2rY9t" resolve="getCurrentConfig" />
+                <ref role="1Pybhc" to="r85u:3vXSZsAPOLr" resolve="HttpServerConfig" />
+              </node>
+              <node concept="liA8E" id="3rTragM5sOq" role="2OqNvi">
+                <ref role="37wK5l" to="r85u:3vXSZsAPOMa" resolve="isEnabled" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="2GUZhq" id="2DnVhjrEKyi" role="3cqZAp">
           <node concept="TDmWw" id="42PEbb2EW2f" role="TEXxN">
             <node concept="3clFbS" id="42PEbb2EW2g" role="TDEfX" />
@@ -1129,22 +1142,6 @@
         </node>
       </node>
       <node concept="3clFbS" id="3vXSZsAOPue" role="3clF47">
-        <node concept="3clFbJ" id="7GB4siXizBI" role="3cqZAp">
-          <node concept="3clFbS" id="7GB4siXizBL" role="3clFbx">
-            <node concept="RRSsy" id="42VTAcDfnTG" role="3cqZAp">
-              <property role="RRSoG" value="info" />
-              <node concept="Xl_RD" id="7GB4siXi$Jr" role="RRSoy">
-                <property role="Xl_RC" value="NOT starting http server because it's disabled" />
-              </node>
-            </node>
-            <node concept="3cpWs6" id="7GB4siXi_6i" role="3cqZAp" />
-          </node>
-          <node concept="3fqX7Q" id="7GB4siXi$uz" role="3clFbw">
-            <node concept="1rXfSq" id="3vXSZsAOTG3" role="3fr31v">
-              <ref role="37wK5l" node="3vXSZsAOTbI" resolve="isServerEnabled" />
-            </node>
-          </node>
-        </node>
         <node concept="SfApY" id="3vXSZsAOPuf" role="3cqZAp">
           <node concept="3clFbS" id="3vXSZsAOPug" role="SfCbr">
             <node concept="3cpWs8" id="3vXSZsAOPuh" role="3cqZAp">
@@ -1378,25 +1375,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3vXSZsAPB9W" role="jymVt" />
-    <node concept="2YIFZL" id="3vXSZsAOTbI" role="jymVt">
-      <property role="TrG5h" value="isServerEnabled" />
-      <node concept="3Tm1VV" id="3vXSZsAOTC_" role="1B3o_S" />
-      <node concept="10P_77" id="3vXSZsAOTbK" role="3clF45" />
-      <node concept="3clFbS" id="3vXSZsAOTbc" role="3clF47">
-        <node concept="3cpWs6" id="3vXSZsAOTbr" role="3cqZAp">
-          <node concept="2OqwBi" id="24HfET2sjq5" role="3cqZAk">
-            <node concept="2YIFZM" id="24HfET2sjq6" role="2Oq$k0">
-              <ref role="37wK5l" to="r85u:24HfET2rY9t" resolve="getCurrentConfig" />
-              <ref role="1Pybhc" to="r85u:3vXSZsAPOLr" resolve="HttpServerConfig" />
-            </node>
-            <node concept="liA8E" id="24HfET2sjq7" role="2OqNvi">
-              <ref role="37wK5l" to="r85u:3vXSZsAPOMa" resolve="isEnabled" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3ZjlwXBFyUS" role="jymVt" />
     <node concept="2YIFZL" id="3ZjlwXBExSh" role="jymVt">
       <property role="TrG5h" value="stopServer" />
       <property role="od$2w" value="false" />
@@ -1488,6 +1466,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="3rTragM5vQy" role="jymVt" />
     <node concept="2YIFZL" id="3vXSZsAOJUt" role="jymVt">
       <property role="TrG5h" value="stopServerInternal" />
       <node concept="3Tm6S6" id="3vXSZsAOJUu" role="1B3o_S" />
@@ -2260,8 +2239,6 @@
           </node>
         </node>
       </node>
-      <node concept="2tJIrI" id="4nkJFds2em4" role="jymVt" />
-      <node concept="2tJIrI" id="4nkJFds2evQ" role="jymVt" />
     </node>
     <node concept="3Tm1VV" id="3ZjlwXBExfR" role="1B3o_S" />
   </node>
@@ -2308,18 +2285,18 @@
     </node>
     <node concept="2tJIrI" id="3vXSZsAMCVS" role="jymVt" />
     <node concept="312cEg" id="7hHer08e1Ns" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="server" />
       <property role="3TUv4t" value="false" />
+      <property role="IEkAT" value="false" />
       <node concept="3uibUv" id="3ZjlwXBFz6W" role="1tU5fm">
         <ref role="3uigEE" to="m2xw:~Server" resolve="Server" />
       </node>
       <node concept="3Tm6S6" id="3ZjlwXBFyY8" role="1B3o_S" />
     </node>
     <node concept="312cEg" id="7hHer08e1Mq" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="serverLock" />
       <property role="3TUv4t" value="false" />
+      <property role="IEkAT" value="false" />
       <node concept="3uibUv" id="7rr3ESJBgKV" role="1tU5fm">
         <ref role="3uigEE" to="17wx:~ReentrantLock" resolve="ReentrantLock" />
       </node>
@@ -2577,7 +2554,6 @@
       <node concept="3Tm6S6" id="7J17bbWaLyR" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="7J17bbWaLyg" role="jymVt" />
-    <node concept="2tJIrI" id="7J17bbWaLzA" role="jymVt" />
     <node concept="2YIFZL" id="7J17bbWaLU9" role="jymVt">
       <property role="TrG5h" value="start" />
       <property role="od$2w" value="false" />
@@ -2586,16 +2562,7 @@
       <node concept="3clFbS" id="7J17bbWaLUc" role="3clF47">
         <node concept="3clFbJ" id="7J17bbWaMoX" role="3cqZAp">
           <node concept="3clFbS" id="7J17bbWaMoZ" role="3clFbx">
-            <node concept="YS8fn" id="7J17bbWaMCA" role="3cqZAp">
-              <node concept="2ShNRf" id="7J17bbWaMDz" role="YScLw">
-                <node concept="1pGfFk" id="7J17bbWaN1r" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
-                  <node concept="Xl_RD" id="7J17bbWaN7F" role="37wK5m">
-                    <property role="Xl_RC" value="Server must be stopped first" />
-                  </node>
-                </node>
-              </node>
-            </node>
+            <node concept="3cpWs6" id="3rTragM5gCl" role="3cqZAp" />
           </node>
           <node concept="3y3z36" id="7J17bbWaMz0" role="3clFbw">
             <node concept="10Nm6u" id="7J17bbWaM$v" role="3uHU7w" />
@@ -2629,25 +2596,16 @@
       <node concept="3Tm1VV" id="7J17bbWaLEm" role="1B3o_S" />
       <node concept="3cqZAl" id="7J17bbWaLXO" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="3rTragM3X40" role="jymVt" />
     <node concept="2YIFZL" id="7J17bbWaM7z" role="jymVt">
       <property role="TrG5h" value="stop" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="7J17bbWaM7$" role="3clF47">
-        <node concept="3clFbH" id="6zbOzdHhP$U" role="3cqZAp" />
         <node concept="3clFbJ" id="7J17bbWaNAL" role="3cqZAp">
           <node concept="3clFbS" id="7J17bbWaNAM" role="3clFbx">
-            <node concept="YS8fn" id="7J17bbWaNAN" role="3cqZAp">
-              <node concept="2ShNRf" id="7J17bbWaNAO" role="YScLw">
-                <node concept="1pGfFk" id="7J17bbWaNAP" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
-                  <node concept="Xl_RD" id="7J17bbWaNAQ" role="37wK5m">
-                    <property role="Xl_RC" value="Server must be started first" />
-                  </node>
-                </node>
-              </node>
-            </node>
+            <node concept="3cpWs6" id="3rTragM48Hq" role="3cqZAp" />
           </node>
           <node concept="3clFbC" id="7J17bbWaNG9" role="3clFbw">
             <node concept="37vLTw" id="7J17bbWaNAV" role="3uHU7B">
@@ -2656,7 +2614,6 @@
             <node concept="10Nm6u" id="7J17bbWaNAS" role="3uHU7w" />
           </node>
         </node>
-        <node concept="3clFbH" id="7J17bbWaN_y" role="3cqZAp" />
         <node concept="3clFbF" id="7J17bbWaMc7" role="3cqZAp">
           <node concept="2YIFZM" id="7J17bbWaMc8" role="3clFbG">
             <ref role="37wK5l" node="3ZjlwXBExSh" resolve="stopServer" />
@@ -2678,6 +2635,7 @@
       <node concept="3Tm1VV" id="7J17bbWaM7H" role="1B3o_S" />
       <node concept="3cqZAl" id="7J17bbWaM7I" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="3rTragM3X5J" role="jymVt" />
     <node concept="2YIFZL" id="7J17bbWaOau" role="jymVt">
       <property role="TrG5h" value="restart" />
       <property role="od$2w" value="false" />
