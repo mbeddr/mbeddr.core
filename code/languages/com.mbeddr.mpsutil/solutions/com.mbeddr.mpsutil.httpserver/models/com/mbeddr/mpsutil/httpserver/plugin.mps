@@ -355,32 +355,17 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="7GB4siXi_Lj" role="3clF47">
-        <node concept="3cpWs8" id="_jqqJb0kxC" role="3cqZAp">
-          <node concept="3cpWsn" id="_jqqJb0kxD" role="3cpWs9">
-            <property role="TrG5h" value="port" />
-            <node concept="10Oyi0" id="_jqqJb0kxB" role="1tU5fm" />
-            <node concept="2OqwBi" id="_jqqJb0kxE" role="33vP2m">
-              <node concept="2YIFZM" id="_jqqJb0kxF" role="2Oq$k0">
-                <ref role="37wK5l" to="r85u:24HfET2rY9t" resolve="getCurrentConfig" />
-                <ref role="1Pybhc" to="r85u:3vXSZsAPOLr" resolve="HttpServerConfig" />
-              </node>
-              <node concept="liA8E" id="_jqqJb0kxG" role="2OqNvi">
-                <ref role="37wK5l" to="r85u:3vXSZsAPOM5" resolve="getPort" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="_jqqJb0g2V" role="3cqZAp">
           <node concept="3clFbS" id="_jqqJb0g2X" role="3clFbx">
             <node concept="RRSsy" id="42VTAcDfnS2" role="3cqZAp">
               <property role="RRSoG" value="info" />
               <node concept="Xl_RD" id="_jqqJb0$WK" role="RRSoy">
-                <property role="Xl_RC" value="unit test mode detected. looking for alternate port" />
+                <property role="Xl_RC" value="unit test mode detected. looking for alternate port setting" />
               </node>
             </node>
             <node concept="3cpWs8" id="_jqqJb0p$2" role="3cqZAp">
               <node concept="3cpWsn" id="_jqqJb0p$3" role="3cpWs9">
-                <property role="TrG5h" value="env" />
+                <property role="TrG5h" value="portSetting" />
                 <node concept="17QB3L" id="_jqqJb0pC9" role="1tU5fm" />
                 <node concept="2YIFZM" id="_jqqJb0p$4" role="33vP2m">
                   <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
@@ -397,24 +382,73 @@
                   <property role="RRSoG" value="info" />
                   <node concept="3cpWs3" id="_jqqJb0xsy" role="RRSoy">
                     <node concept="37vLTw" id="_jqqJb0xtR" role="3uHU7w">
-                      <ref role="3cqZAo" node="_jqqJb0p$3" resolve="env" />
+                      <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
                     </node>
                     <node concept="Xl_RD" id="_jqqJb0x3d" role="3uHU7B">
                       <property role="Xl_RC" value="found http server port in env: " />
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="3y3z36" id="_jqqJb0pPo" role="3clFbw">
+                <node concept="37vLTw" id="_jqqJb0pKG" role="3uHU7B">
+                  <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
+                </node>
+                <node concept="10Nm6u" id="_jqqJb0pPP" role="3uHU7w" />
+              </node>
+              <node concept="9aQIb" id="_jqqJb0ssj" role="9aQIa">
+                <node concept="3clFbS" id="_jqqJb0ssk" role="9aQI4">
+                  <node concept="3clFbF" id="7uvldrz6gGr" role="3cqZAp">
+                    <node concept="37vLTI" id="7uvldrz6i2S" role="3clFbG">
+                      <node concept="37vLTw" id="7uvldrz6gGp" role="37vLTJ">
+                        <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
+                      </node>
+                      <node concept="2YIFZM" id="_jqqJb0sNN" role="37vLTx">
+                        <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                        <node concept="Xl_RD" id="_jqqJb0sNO" role="37wK5m">
+                          <property role="Xl_RC" value="mbeddr.test.http.port" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="_jqqJb0sYt" role="3cqZAp">
+                    <node concept="3clFbS" id="_jqqJb0sYx" role="3clFbx">
+                      <node concept="RRSsy" id="42VTAcDfnSG" role="3cqZAp">
+                        <property role="RRSoG" value="info" />
+                        <node concept="3cpWs3" id="_jqqJb0xG5" role="RRSoy">
+                          <node concept="37vLTw" id="7uvldrz6rjK" role="3uHU7w">
+                            <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
+                          </node>
+                          <node concept="Xl_RD" id="_jqqJb0xzp" role="3uHU7B">
+                            <property role="Xl_RC" value="found http server port in system property: " />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3y3z36" id="_jqqJb0t2p" role="3clFbw">
+                      <node concept="10Nm6u" id="_jqqJb0t2S" role="3uHU7w" />
+                      <node concept="37vLTw" id="7uvldrz6q$a" role="3uHU7B">
+                        <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="7uvldrz6d4m" role="3cqZAp">
+              <node concept="3clFbS" id="7uvldrz6d4o" role="3clFbx">
                 <node concept="SfApY" id="_jqqJb0q1i" role="3cqZAp">
                   <node concept="3clFbS" id="_jqqJb0q1j" role="SfCbr">
                     <node concept="3cpWs8" id="_jqqJb0pWP" role="3cqZAp">
                       <node concept="3cpWsn" id="_jqqJb0pWQ" role="3cpWs9">
-                        <property role="TrG5h" value="parseInt" />
+                        <property role="TrG5h" value="port" />
                         <node concept="10Oyi0" id="_jqqJb0pWN" role="1tU5fm" />
                         <node concept="2YIFZM" id="_jqqJb0pWR" role="33vP2m">
                           <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                           <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
                           <node concept="37vLTw" id="_jqqJb0pWS" role="37wK5m">
-                            <ref role="3cqZAo" node="_jqqJb0p$3" resolve="env" />
+                            <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
                           </node>
                         </node>
                       </node>
@@ -423,14 +457,14 @@
                       <node concept="3clFbS" id="_jqqJb0q8B" role="3clFbx">
                         <node concept="3cpWs6" id="_jqqJb0rdH" role="3cqZAp">
                           <node concept="37vLTw" id="_jqqJb0rr2" role="3cqZAk">
-                            <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="parseInt" />
+                            <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="port" />
                           </node>
                         </node>
                       </node>
                       <node concept="1Wc70l" id="_jqqJb0quu" role="3clFbw">
                         <node concept="2dkUwp" id="_jqqJb0qRY" role="3uHU7w">
                           <node concept="37vLTw" id="_jqqJb0qBN" role="3uHU7B">
-                            <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="parseInt" />
+                            <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="port" />
                           </node>
                           <node concept="3cmrfG" id="_jqqJb0qU6" role="3uHU7w">
                             <property role="3cmrfH" value="65535" />
@@ -438,7 +472,7 @@
                         </node>
                         <node concept="3eOSWO" id="_jqqJb0qlN" role="3uHU7B">
                           <node concept="37vLTw" id="_jqqJb0q9O" role="3uHU7B">
-                            <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="parseInt" />
+                            <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="port" />
                           </node>
                           <node concept="3cmrfG" id="_jqqJb0qmC" role="3uHU7w">
                             <property role="3cmrfH" value="0" />
@@ -449,12 +483,12 @@
                         <node concept="3clFbS" id="_jqqJb0tho" role="9aQI4">
                           <node concept="RRSsy" id="42VTAcDfnSi" role="3cqZAp">
                             <property role="RRSoG" value="error" />
-                            <node concept="3cpWs3" id="_jqqJb0wui" role="RRSoy">
-                              <node concept="37vLTw" id="_jqqJb0wvw" role="3uHU7w">
-                                <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="parseInt" />
+                            <node concept="3cpWs3" id="7uvldrz6rqt" role="RRSoy">
+                              <node concept="37vLTw" id="7uvldrz6rtV" role="3uHU7B">
+                                <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="port" />
                               </node>
-                              <node concept="Xl_RD" id="_jqqJb0wke" role="3uHU7B">
-                                <property role="Xl_RC" value="port in env var is not a valid TCP port: " />
+                              <node concept="Xl_RD" id="_jqqJb0wke" role="3uHU7w">
+                                <property role="Xl_RC" value=" is not a valid TCP port" />
                               </node>
                             </node>
                           </node>
@@ -475,7 +509,7 @@
                               <property role="Xl_RC" value="can't parse " />
                             </node>
                             <node concept="37vLTw" id="_jqqJb0seg" role="3uHU7w">
-                              <ref role="3cqZAo" node="_jqqJb0p$3" resolve="env" />
+                              <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
                             </node>
                           </node>
                         </node>
@@ -493,136 +527,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="3y3z36" id="_jqqJb0pPo" role="3clFbw">
-                <node concept="37vLTw" id="_jqqJb0pKG" role="3uHU7B">
-                  <ref role="3cqZAo" node="_jqqJb0p$3" resolve="env" />
-                </node>
-                <node concept="10Nm6u" id="_jqqJb0pPP" role="3uHU7w" />
-              </node>
-              <node concept="9aQIb" id="_jqqJb0ssj" role="9aQIa">
-                <node concept="3clFbS" id="_jqqJb0ssk" role="9aQI4">
-                  <node concept="3cpWs8" id="_jqqJb0sNL" role="3cqZAp">
-                    <node concept="3cpWsn" id="_jqqJb0sNM" role="3cpWs9">
-                      <property role="TrG5h" value="property" />
-                      <node concept="17QB3L" id="_jqqJb0sSt" role="1tU5fm" />
-                      <node concept="2YIFZM" id="_jqqJb0sNN" role="33vP2m">
-                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
-                        <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                        <node concept="Xl_RD" id="_jqqJb0sNO" role="37wK5m">
-                          <property role="Xl_RC" value="mbeddr.test.http.port" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbJ" id="_jqqJb0sYt" role="3cqZAp">
-                    <node concept="3clFbS" id="_jqqJb0sYx" role="3clFbx">
-                      <node concept="RRSsy" id="42VTAcDfnSG" role="3cqZAp">
-                        <property role="RRSoG" value="info" />
-                        <node concept="3cpWs3" id="_jqqJb0xG5" role="RRSoy">
-                          <node concept="37vLTw" id="_jqqJb0xIe" role="3uHU7w">
-                            <ref role="3cqZAo" node="_jqqJb0sNM" resolve="property" />
-                          </node>
-                          <node concept="Xl_RD" id="_jqqJb0xzp" role="3uHU7B">
-                            <property role="Xl_RC" value="found http server port in property: " />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="SfApY" id="_jqqJb0xW3" role="3cqZAp">
-                        <node concept="3clFbS" id="_jqqJb0xW4" role="SfCbr">
-                          <node concept="3cpWs8" id="_jqqJb0xUI" role="3cqZAp">
-                            <node concept="3cpWsn" id="_jqqJb0xUJ" role="3cpWs9">
-                              <property role="TrG5h" value="parseInt" />
-                              <node concept="10Oyi0" id="_jqqJb0xUF" role="1tU5fm" />
-                              <node concept="2YIFZM" id="_jqqJb0xUK" role="33vP2m">
-                                <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                                <node concept="37vLTw" id="_jqqJb0xUL" role="37wK5m">
-                                  <ref role="3cqZAo" node="_jqqJb0sNM" resolve="property" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbJ" id="_jqqJb0y3X" role="3cqZAp">
-                            <node concept="3clFbS" id="_jqqJb0y3Z" role="3clFbx">
-                              <node concept="3cpWs6" id="_jqqJb0z32" role="3cqZAp">
-                                <node concept="37vLTw" id="_jqqJb0z4F" role="3cqZAk">
-                                  <ref role="3cqZAo" node="_jqqJb0xUJ" resolve="parseInt" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="1Wc70l" id="_jqqJb0y$0" role="3clFbw">
-                              <node concept="2dkUwp" id="_jqqJb0yJ_" role="3uHU7w">
-                                <node concept="3cmrfG" id="_jqqJb0yMh" role="3uHU7w">
-                                  <property role="3cmrfH" value="65535" />
-                                </node>
-                                <node concept="37vLTw" id="_jqqJb0yAN" role="3uHU7B">
-                                  <ref role="3cqZAo" node="_jqqJb0xUJ" resolve="parseInt" />
-                                </node>
-                              </node>
-                              <node concept="3eOSWO" id="_jqqJb0ynv" role="3uHU7B">
-                                <node concept="37vLTw" id="_jqqJb0y5K" role="3uHU7B">
-                                  <ref role="3cqZAo" node="_jqqJb0xUJ" resolve="parseInt" />
-                                </node>
-                                <node concept="3cmrfG" id="_jqqJb0ynK" role="3uHU7w">
-                                  <property role="3cmrfH" value="0" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="9aQIb" id="_jqqJb0yVl" role="9aQIa">
-                              <node concept="3clFbS" id="_jqqJb0yVm" role="9aQI4">
-                                <node concept="RRSsy" id="42VTAcDfnSQ" role="3cqZAp">
-                                  <property role="RRSoG" value="error" />
-                                  <node concept="3cpWs3" id="_jqqJb0yXW" role="RRSoy">
-                                    <node concept="37vLTw" id="_jqqJb0yXX" role="3uHU7w">
-                                      <ref role="3cqZAo" node="_jqqJb0xUJ" resolve="parseInt" />
-                                    </node>
-                                    <node concept="Xl_RD" id="_jqqJb0yXY" role="3uHU7B">
-                                      <property role="Xl_RC" value="port in env var is not a valid TCP port: " />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="TDmWw" id="_jqqJb0xWa" role="TEbGg">
-                          <node concept="3clFbS" id="_jqqJb0xWd" role="TDEfX">
-                            <node concept="RRSsy" id="42VTAcDfnT0" role="3cqZAp">
-                              <property role="RRSoG" value="warn" />
-                              <node concept="3cpWs3" id="_jqqJb0zkO" role="RRSoy">
-                                <node concept="Xl_RD" id="_jqqJb0zkP" role="3uHU7w">
-                                  <property role="Xl_RC" value=" to integer" />
-                                </node>
-                                <node concept="3cpWs3" id="_jqqJb0zkQ" role="3uHU7B">
-                                  <node concept="Xl_RD" id="_jqqJb0zkR" role="3uHU7B">
-                                    <property role="Xl_RC" value="can't parse " />
-                                  </node>
-                                  <node concept="37vLTw" id="_jqqJb0znM" role="3uHU7w">
-                                    <ref role="3cqZAo" node="_jqqJb0sNM" resolve="property" />
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="37vLTw" id="_jqqJb0zkT" role="RRSow">
-                                <ref role="3cqZAo" node="_jqqJb0xWe" resolve="e" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3cpWsn" id="_jqqJb0xWe" role="TDEfY">
-                            <property role="TrG5h" value="e" />
-                            <node concept="3uibUv" id="_jqqJb0xW9" role="1tU5fm">
-                              <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3y3z36" id="_jqqJb0t2p" role="3clFbw">
-                      <node concept="10Nm6u" id="_jqqJb0t2S" role="3uHU7w" />
-                      <node concept="37vLTw" id="_jqqJb0sNP" role="3uHU7B">
-                        <ref role="3cqZAo" node="_jqqJb0sNM" resolve="property" />
-                      </node>
-                    </node>
-                  </node>
+              <node concept="3y3z36" id="7uvldrz6edO" role="3clFbw">
+                <node concept="10Nm6u" id="7uvldrz6eho" role="3uHU7w" />
+                <node concept="37vLTw" id="7uvldrz6dP2" role="3uHU7B">
+                  <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
                 </node>
               </node>
             </node>
@@ -637,9 +545,16 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7GB4siXiAif" role="3cqZAp">
-          <node concept="37vLTw" id="_jqqJb0kxH" role="3clFbG">
-            <ref role="3cqZAo" node="_jqqJb0kxD" resolve="port" />
+        <node concept="3clFbH" id="7uvldrz6x2B" role="3cqZAp" />
+        <node concept="3clFbF" id="7uvldrz6y7n" role="3cqZAp">
+          <node concept="2OqwBi" id="_jqqJb0kxE" role="3clFbG">
+            <node concept="2YIFZM" id="_jqqJb0kxF" role="2Oq$k0">
+              <ref role="37wK5l" to="r85u:24HfET2rY9t" resolve="getCurrentConfig" />
+              <ref role="1Pybhc" to="r85u:3vXSZsAPOLr" resolve="HttpServerConfig" />
+            </node>
+            <node concept="liA8E" id="_jqqJb0kxG" role="2OqNvi">
+              <ref role="37wK5l" to="r85u:3vXSZsAPOM5" resolve="getPort" />
+            </node>
           </node>
         </node>
       </node>
@@ -668,6 +583,133 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7uvldrz6BVg" role="3cqZAp" />
+        <node concept="3clFbJ" id="7uvldrz5_Bj" role="3cqZAp">
+          <node concept="3clFbS" id="7uvldrz5_Bl" role="3clFbx">
+            <node concept="RRSsy" id="7uvldrz66aJ" role="3cqZAp">
+              <property role="RRSoG" value="info" />
+              <node concept="Xl_RD" id="7uvldrz66aK" role="RRSoy">
+                <property role="Xl_RC" value="unit test mode detected. checking for alternate enabled setting" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7uvldrz5WRC" role="3cqZAp">
+              <node concept="3cpWsn" id="7uvldrz5WRF" role="3cpWs9">
+                <property role="TrG5h" value="enabledSetting" />
+                <node concept="17QB3L" id="7uvldrz5WRA" role="1tU5fm" />
+                <node concept="2YIFZM" id="7uvldrz5A0V" role="33vP2m">
+                  <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                  <node concept="Xl_RD" id="7uvldrz5A0W" role="37wK5m">
+                    <property role="Xl_RC" value="MBEDDR_TEST_HTTP_ENABLED" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="7uvldrz5A0X" role="3cqZAp">
+              <node concept="3clFbS" id="7uvldrz5A0Y" role="3clFbx">
+                <node concept="RRSsy" id="7uvldrz5A0Z" role="3cqZAp">
+                  <property role="RRSoG" value="info" />
+                  <node concept="3cpWs3" id="7uvldrz5A10" role="RRSoy">
+                    <node concept="37vLTw" id="7uvldrz62ix" role="3uHU7w">
+                      <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
+                    </node>
+                    <node concept="Xl_RD" id="7uvldrz5A12" role="3uHU7B">
+                      <property role="Xl_RC" value="found http server enabled in env: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="7uvldrz5A1A" role="3clFbw">
+                <node concept="37vLTw" id="7uvldrz629q" role="3uHU7B">
+                  <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
+                </node>
+                <node concept="10Nm6u" id="7uvldrz5A1C" role="3uHU7w" />
+              </node>
+              <node concept="9aQIb" id="7uvldrz5A1D" role="9aQIa">
+                <node concept="3clFbS" id="7uvldrz5A1E" role="9aQI4">
+                  <node concept="3clFbF" id="7uvldrz62Bc" role="3cqZAp">
+                    <node concept="37vLTI" id="7uvldrz63pc" role="3clFbG">
+                      <node concept="37vLTw" id="7uvldrz62Ba" role="37vLTJ">
+                        <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
+                      </node>
+                      <node concept="2YIFZM" id="7uvldrz5A1I" role="37vLTx">
+                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                        <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                        <node concept="Xl_RD" id="7uvldrz5A1J" role="37wK5m">
+                          <property role="Xl_RC" value="mbeddr.test.http.enabled" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="7uvldrz5A1K" role="3cqZAp">
+                    <node concept="3clFbS" id="7uvldrz5A1L" role="3clFbx">
+                      <node concept="RRSsy" id="7uvldrz5A1M" role="3cqZAp">
+                        <property role="RRSoG" value="info" />
+                        <node concept="3cpWs3" id="7uvldrz5A1N" role="RRSoy">
+                          <node concept="37vLTw" id="7uvldrz63WE" role="3uHU7w">
+                            <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
+                          </node>
+                          <node concept="Xl_RD" id="7uvldrz5A1P" role="3uHU7B">
+                            <property role="Xl_RC" value="found http server enabled in system property: " />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3y3z36" id="7uvldrz5A2p" role="3clFbw">
+                      <node concept="10Nm6u" id="7uvldrz5A2q" role="3uHU7w" />
+                      <node concept="37vLTw" id="7uvldrz63Up" role="3uHU7B">
+                        <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="7uvldrz64iY" role="3cqZAp">
+              <node concept="3clFbS" id="7uvldrz64j0" role="3clFbx">
+                <node concept="3cpWs8" id="7uvldrz5A15" role="3cqZAp">
+                  <node concept="3cpWsn" id="7uvldrz5A16" role="3cpWs9">
+                    <property role="TrG5h" value="enabled" />
+                    <node concept="10P_77" id="7uvldrz5Fxe" role="1tU5fm" />
+                    <node concept="2YIFZM" id="7uvldrz5EIm" role="33vP2m">
+                      <ref role="37wK5l" to="wyt6:~Boolean.parseBoolean(java.lang.String):boolean" resolve="parseBoolean" />
+                      <ref role="1Pybhc" to="wyt6:~Boolean" resolve="Boolean" />
+                      <node concept="37vLTw" id="7uvldrz5YK5" role="37wK5m">
+                        <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="7uvldrz5A1a" role="3cqZAp">
+                  <node concept="3clFbS" id="7uvldrz5A1b" role="3clFbx">
+                    <node concept="3cpWs6" id="7uvldrz5A1c" role="3cqZAp" />
+                  </node>
+                  <node concept="3fqX7Q" id="7uvldrz5JrK" role="3clFbw">
+                    <node concept="37vLTw" id="7uvldrz5K4G" role="3fr31v">
+                      <ref role="3cqZAo" node="7uvldrz5A16" resolve="enabled" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="7uvldrz64Sg" role="3clFbw">
+                <node concept="10Nm6u" id="7uvldrz64Uy" role="3uHU7w" />
+                <node concept="37vLTw" id="7uvldrz64wK" role="3uHU7B">
+                  <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7uvldrz5_Sx" role="3clFbw">
+            <node concept="2YIFZM" id="7uvldrz5_Sy" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+            </node>
+            <node concept="liA8E" id="7uvldrz5_Sz" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.isUnitTestMode():boolean" resolve="isUnitTestMode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7uvldrz5UZ0" role="3cqZAp" />
         <node concept="2GUZhq" id="2DnVhjrEKyi" role="3cqZAp">
           <node concept="TDmWw" id="42PEbb2EW2f" role="TEXxN">
             <node concept="3clFbS" id="42PEbb2EW2g" role="TDEfX" />
