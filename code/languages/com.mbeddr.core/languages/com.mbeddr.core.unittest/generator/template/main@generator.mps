@@ -2,20 +2,20 @@
 <model ref="r:33527e56-fea6-47d6-9105-ca1061f3d17e(com.mbeddr.core.unittest.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
-    <use id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
+    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
+    <use id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -6623,6 +6623,76 @@
                               </node>
                               <node concept="3TrcHB" id="2qT7pMC22hF" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2xZu8t" id="1jWUAujVFBU" role="3o3WLE">
+                  <ref role="2xZoc7" to="9g8w:1jWUAujVDpl" resolve="model_id" />
+                  <node concept="1ZhdrF" id="1jWUAujVMq3" role="lGtFl">
+                    <property role="2qtEX8" value="element" />
+                    <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/4202685725779366523/4202685725779391329" />
+                    <node concept="3$xsQk" id="1jWUAujVMq4" role="3$ytzL">
+                      <node concept="3clFbS" id="1jWUAujVMq5" role="2VODD2">
+                        <node concept="3clFbF" id="1jWUAujVN6t" role="3cqZAp">
+                          <node concept="Xl_RD" id="1jWUAujVN6s" role="3clFbG">
+                            <property role="Xl_RC" value="model_id" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="PhEJO" id="1jWUAujVPl4" role="2xZpY0">
+                    <property role="PhEJT" value="model_id" />
+                    <node concept="17Uvod" id="1jWUAujVPl5" role="lGtFl">
+                      <property role="P4ACc" value="3bf5377a-e904-4ded-9754-5a516023bfaa/6113173064526131575/6113173064526131578" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="1jWUAujVPl6" role="3zH0cK">
+                        <node concept="3clFbS" id="1jWUAujVPl7" role="2VODD2">
+                          <node concept="3clFbF" id="1jWUAujVPl8" role="3cqZAp">
+                            <node concept="2OqwBi" id="1jWUAujVZAB" role="3clFbG">
+                              <node concept="30H73N" id="1jWUAujVYsa" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="1jWUAujWsOQ" role="2OqNvi">
+                                <ref role="3TsBF5" to="x27k:7g7VcRh8Cc2" resolve="contextModelId" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2xZu8t" id="1jWUAujVIXw" role="3o3WLE">
+                  <ref role="2xZoc7" to="9g8w:1jWUAujVDsE" resolve="node_id" />
+                  <node concept="1ZhdrF" id="1jWUAujVN9h" role="lGtFl">
+                    <property role="2qtEX8" value="element" />
+                    <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/4202685725779366523/4202685725779391329" />
+                    <node concept="3$xsQk" id="1jWUAujVN9i" role="3$ytzL">
+                      <node concept="3clFbS" id="1jWUAujVN9j" role="2VODD2">
+                        <node concept="3clFbF" id="1jWUAujVNQG" role="3cqZAp">
+                          <node concept="Xl_RD" id="1jWUAujVNQF" role="3clFbG">
+                            <property role="Xl_RC" value="node_id" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="PhEJO" id="1jWUAujVRI7" role="2xZpY0">
+                    <property role="PhEJT" value="node_id" />
+                    <node concept="17Uvod" id="1jWUAujVRI8" role="lGtFl">
+                      <property role="P4ACc" value="3bf5377a-e904-4ded-9754-5a516023bfaa/6113173064526131575/6113173064526131578" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="1jWUAujVRI9" role="3zH0cK">
+                        <node concept="3clFbS" id="1jWUAujVRIa" role="2VODD2">
+                          <node concept="3clFbF" id="1jWUAujVRIb" role="3cqZAp">
+                            <node concept="2OqwBi" id="1jWUAujWuho" role="3clFbG">
+                              <node concept="30H73N" id="1jWUAujWt6t" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="1jWUAujWR$H" role="2OqNvi">
+                                <ref role="3TsBF5" to="x27k:4rTlJCHVgHT" resolve="contextNodeId" />
                               </node>
                             </node>
                           </node>
