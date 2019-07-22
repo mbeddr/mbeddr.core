@@ -5865,6 +5865,14 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="1dpRTG" id="1jWUAujVDpl" role="HszBJ">
+        <property role="TrG5h" value="model_id" />
+        <node concept="Pu267" id="1jWUAujVDpj" role="2C2TGm" />
+      </node>
+      <node concept="1dpRTG" id="1jWUAujVDsE" role="HszBJ">
+        <property role="TrG5h" value="node_id" />
+        <node concept="Pu267" id="1jWUAujVDsF" role="2C2TGm" />
+      </node>
       <node concept="1dpRTG" id="4DjlAm4JT_z" role="HszBJ">
         <property role="TrG5h" value="state" />
         <node concept="1AkAi2" id="2PyooRHW9OU" role="2C2TGm">
@@ -6337,7 +6345,7 @@
               <ref role="3ZUYvu" node="2PyooRI1bY9" resolve="suite_result_file" />
             </node>
             <node concept="3eV9cR" id="2PyooRI1c0t" role="3O_q_j">
-              <property role="PhEJT" value="&lt;testcase name=&quot;%s&quot; classname=&quot;%s&quot;&gt;" />
+              <property role="PhEJT" value="&lt;testcase name=&quot;%s&quot; classname=&quot;%s&quot; modelId=&quot;%s&quot; nodeId=&quot;%s&quot;&gt;" />
             </node>
             <node concept="2qmXGp" id="2PyooRI1c0u" role="3O_q_j">
               <node concept="1E4Tgc" id="2PyooRI1c0v" role="1ESnxz">
@@ -6352,6 +6360,22 @@
                 <ref role="1E4Tge" node="4DjlAm4LHqx" resolve="class_name" />
               </node>
               <node concept="3ZUYvv" id="2PyooRI1dFo" role="1_9fRO">
+                <ref role="3ZUYvu" node="2PyooRI1dh$" resolve="caze" />
+              </node>
+            </node>
+            <node concept="2qmXGp" id="1jWUAujWWv_" role="3O_q_j">
+              <node concept="1E4Tgc" id="1jWUAujWX55" role="1ESnxz">
+                <ref role="1E4Tge" node="1jWUAujVDpl" resolve="model_id" />
+              </node>
+              <node concept="3ZUYvv" id="1jWUAujWVY$" role="1_9fRO">
+                <ref role="3ZUYvu" node="2PyooRI1dh$" resolve="caze" />
+              </node>
+            </node>
+            <node concept="2qmXGp" id="1jWUAujWXAq" role="3O_q_j">
+              <node concept="1E4Tgc" id="1jWUAujWYc1" role="1ESnxz">
+                <ref role="1E4Tge" node="1jWUAujVDsE" resolve="node_id" />
+              </node>
+              <node concept="3ZUYvv" id="1jWUAujWX5V" role="1_9fRO">
                 <ref role="3ZUYvu" node="2PyooRI1dh$" resolve="caze" />
               </node>
             </node>
