@@ -7376,7 +7376,7 @@
           </node>
         </node>
         <node concept="3XIRlf" id="68PB5rZa0qI" role="3XIRFZ">
-          <property role="TrG5h" value="suite_result_copy_path" />
+          <property role="TrG5h" value="temp_suite_result_path" />
           <node concept="PhEJO" id="68PB5rZa0qJ" role="3XIe9u" />
           <node concept="12rfTQ" id="68PB5rZa0qK" role="2C2TGm">
             <property role="2caQfQ" value="false" />
@@ -7390,18 +7390,18 @@
           <node concept="3O_q_g" id="68PB5rZa0qN" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycK1" resolve="snprintf" />
             <node concept="3ZVu4v" id="68PB5rZa0qO" role="3O_q_j">
-              <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="suite_result_copy_path" />
+              <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="temp_suite_result_path" />
             </node>
             <node concept="Vihyy" id="68PB5rZa0qP" role="3O_q_j">
               <node concept="3ZVu4v" id="68PB5rZa0qQ" role="1_9fRO">
-                <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="suite_result_copy_path" />
+                <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="temp_suite_result_path" />
               </node>
             </node>
             <node concept="PhEJO" id="68PB5rZa13y" role="3O_q_j">
-              <property role="PhEJT" value="%s-copy" />
+              <property role="PhEJT" value="%s.tmp" />
             </node>
-            <node concept="3ZVu4v" id="68PB5rZa4kM" role="3O_q_j">
-              <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="suite_result_copy_path" />
+            <node concept="3ZVu4v" id="2MF0N8s2ZfR" role="3O_q_j">
+              <ref role="3ZVs_2" node="6On3mjTdtKB" resolve="suite_result_path" />
             </node>
           </node>
         </node>
@@ -7419,7 +7419,7 @@
           <node concept="3O_q_g" id="6On3mjTdWLX" role="3XIe9u">
             <ref role="3O_q_h" to="3y0n:137zkozycFr" resolve="fopen" />
             <node concept="3ZVu4v" id="68PB5rZeGIU" role="3O_q_j">
-              <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="suite_result_copy_path" />
+              <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="temp_suite_result_path" />
             </node>
             <node concept="PhEJO" id="6On3mjTdWO3" role="3O_q_j">
               <property role="PhEJT" value="w" />
@@ -7438,7 +7438,7 @@
                   <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
                 </node>
                 <node concept="3ZVu4v" id="68PB5rZeGUn" role="3O_q_j">
-                  <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="suite_result_copy_path" />
+                  <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="temp_suite_result_path" />
                 </node>
               </node>
             </node>
@@ -7629,7 +7629,7 @@
           <node concept="3O_q_g" id="6On3mjTekRK" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycFS" resolve="rename" />
             <node concept="3ZVu4v" id="68PB5rZeGWB" role="3O_q_j">
-              <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="suite_result_copy_path" />
+              <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="temp_suite_result_path" />
             </node>
             <node concept="3ZVu4v" id="6On3mjTekUU" role="3O_q_j">
               <ref role="3ZVs_2" node="6On3mjTdtKB" resolve="suite_result_path" />
