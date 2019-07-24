@@ -2166,6 +2166,32 @@
       <property role="TrG5h" value="run_test_case" />
       <property role="2OOxQR" value="false" />
       <node concept="3XIRFW" id="1m$ejqD793o" role="3XIRFX">
+        <node concept="1QiMYF" id="2MF0N8sq3xp" role="3XIRFZ">
+          <node concept="OjmMv" id="2MF0N8sq3xr" role="3SJzmv">
+            <node concept="19SGf9" id="2MF0N8sq3xs" role="OjmMu">
+              <node concept="19SUe$" id="2MF0N8sq3xt" role="19SJt6">
+                <property role="19SUeA" value="Flush all unrelated stdout/stderr output that may have been accumulated up to here to make sure that it doesn't &#10;get mixed into the stdout/stderr output being captured when running given test case  " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="2MF0N8sq27w" role="3XIRFZ">
+          <node concept="3O_q_g" id="2MF0N8sq27x" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycFl" resolve="fflush" />
+            <node concept="4ZOvp" id="2MF0N8sq27y" role="3O_q_j">
+              <ref role="2DPCA0" to="3y0n:6Iiej_Uhsyk" resolve="stdout" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="2MF0N8sq27z" role="3XIRFZ">
+          <node concept="3O_q_g" id="2MF0N8sq27$" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycFl" resolve="fflush" />
+            <node concept="4ZOvp" id="2MF0N8sq27_" role="3O_q_j">
+              <ref role="2DPCA0" to="3y0n:6Iiej_UhpRS" resolve="stderr" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="2MF0N8sq33$" role="3XIRFZ" />
         <node concept="1QiMYF" id="4j41pMpmFqB" role="3XIRFZ">
           <node concept="OjmMv" id="4j41pMpmFqD" role="3SJzmv">
             <node concept="19SGf9" id="4j41pMpmFqE" role="OjmMu">
