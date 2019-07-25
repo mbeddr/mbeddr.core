@@ -104,7 +104,7 @@
     <node concept="1TJgyj" id="3L4lRB2GdnM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="values" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="4342692121161029106" />
       <ref role="20lvS9" node="3L4lRB2GdnB" resolve="IValue" />
     </node>

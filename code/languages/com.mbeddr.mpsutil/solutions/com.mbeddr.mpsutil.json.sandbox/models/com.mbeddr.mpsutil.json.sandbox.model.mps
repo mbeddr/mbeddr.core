@@ -76,6 +76,18 @@
                   <property role="2xKZ1a" value="1.232E+231231" />
                 </node>
               </node>
+              <node concept="3YX88e" id="4gPdtuDwz7P" role="3YX86K">
+                <property role="TrG5h" value="empty array" />
+                <node concept="3YX8am" id="4gPdtuDyCnr" role="3YX8ah" />
+              </node>
+              <node concept="3YX88e" id="4gPdtuDyD96" role="3YX86K">
+                <property role="TrG5h" value="empty object" />
+                <node concept="3YX88f" id="4gPdtuDzC$z" role="3YX8ah" />
+              </node>
+              <node concept="3YX88e" id="4gPdtuDzmkU" role="3YX86K">
+                <property role="TrG5h" value="empty string" />
+                <node concept="3YX86M" id="4gPdtuDzvB4" role="3YX8ah" />
+              </node>
             </node>
           </node>
         </node>
