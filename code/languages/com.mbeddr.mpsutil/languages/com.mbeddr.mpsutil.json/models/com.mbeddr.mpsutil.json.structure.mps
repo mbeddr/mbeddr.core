@@ -2,7 +2,7 @@
 <model ref="r:be665d13-1e1d-44cd-9817-8bd4d610f422(com.mbeddr.mpsutil.json.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -104,7 +104,7 @@
     <node concept="1TJgyj" id="3L4lRB2GdnM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="values" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="4342692121161029106" />
       <ref role="20lvS9" node="3L4lRB2GdnB" resolve="IValue" />
     </node>
@@ -156,11 +156,6 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="4342692121161094115" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="34$4Bn6i2gb" role="1TKVEl">
-      <property role="IQ2nx" value="3540975504067142667" />
-      <property role="TrG5h" value="folder" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="3L4lRB2GtfY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="object" />
@@ -170,6 +165,11 @@
     </node>
     <node concept="PrWs8" id="6Cwq1JbSPoF" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="34$4Bn6i2gb" role="1TKVEl">
+      <property role="IQ2nx" value="3540975504067142667" />
+      <property role="TrG5h" value="folder" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
