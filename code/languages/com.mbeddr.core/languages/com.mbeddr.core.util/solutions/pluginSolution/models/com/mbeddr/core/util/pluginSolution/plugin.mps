@@ -2,8 +2,8 @@
 <model ref="r:ce72d29b-3d3e-4ef3-809e-155db4cf8f41(com.mbeddr.core.util.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.process" version="-1" />
@@ -12,8 +12,8 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="-1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
@@ -141,9 +141,6 @@
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -347,10 +344,10 @@
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
     <language id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions">
-      <concept id="1856959976861964558" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddToGroupIdAnchor" flags="lg" index="2Zfapc">
+      <concept id="1856959976861964558" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddToGroupIdAnchor" flags="ng" index="2Zfapc">
         <property id="1856959976861964583" name="groupId" index="2Zfap_" />
       </concept>
-      <concept id="3826319847679748876" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddWithConstantArchor" flags="lg" index="30SVEG">
+      <concept id="3826319847679748876" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddWithConstantArchor" flags="ng" index="30SVEG">
         <property id="3023910107019687778" name="anchor" index="2Sq25q" />
         <property id="3826319847679982768" name="archor" index="30T2Og" />
       </concept>
@@ -373,7 +370,7 @@
       <concept id="8081644025964866007" name="com.mbeddr.mpsutil.process.structure.ProcessInputRef" flags="ng" index="CVeQV">
         <reference id="8081644025964866020" name="input" index="CVeQ8" />
       </concept>
-      <concept id="4724180912012713611" name="com.mbeddr.mpsutil.process.structure.CreateComponentFunction" flags="ig" index="UJns9" />
+      <concept id="4724180912012713611" name="com.mbeddr.mpsutil.process.structure.CreateComponentFunction" flags="ng" index="UJns9" />
       <concept id="4724180912012648918" name="com.mbeddr.mpsutil.process.structure.Step" flags="ng" index="UJ$xk">
         <property id="4671234082065499041" name="titel" index="2WTsO4" />
         <child id="6632769160448739358" name="validate" index="29IHLQ" />
@@ -391,23 +388,23 @@
         <child id="4724180912012650163" name="steps" index="UJ$WL" />
         <child id="498531228381448308" name="output" index="3fXEJQ" />
       </concept>
-      <concept id="4724180912013637171" name="com.mbeddr.mpsutil.process.structure.IsValidFunction" flags="ig" index="UNPYL" />
-      <concept id="4671234082065542312" name="com.mbeddr.mpsutil.process.structure.OnNextFunction" flags="ig" index="2WTm8d" />
+      <concept id="4724180912013637171" name="com.mbeddr.mpsutil.process.structure.IsValidFunction" flags="ng" index="UNPYL" />
+      <concept id="4671234082065542312" name="com.mbeddr.mpsutil.process.structure.OnNextFunction" flags="ng" index="2WTm8d" />
       <concept id="7775334123755359387" name="com.mbeddr.mpsutil.process.structure.FinishOp" flags="ng" index="33zGmF" />
       <concept id="7775334123752824657" name="com.mbeddr.mpsutil.process.structure.CreateWizardExpression" flags="ng" index="33Dhpx" />
       <concept id="7775334123752824719" name="com.mbeddr.mpsutil.process.structure.CreateWizardExpressionBase" flags="ng" index="33DhqZ">
         <reference id="7775334123752824741" name="process" index="33Dhql" />
         <child id="7775334123752824734" name="initVals" index="33DhqI" />
       </concept>
-      <concept id="7775334123752756248" name="com.mbeddr.mpsutil.process.structure.WizardType" flags="ig" index="33DxOC">
+      <concept id="7775334123752756248" name="com.mbeddr.mpsutil.process.structure.WizardType" flags="ng" index="33DxOC">
         <reference id="7775334123752756259" name="wizard" index="33DxOj" />
       </concept>
       <concept id="7775334123753877828" name="com.mbeddr.mpsutil.process.structure.ShowOperation" flags="ng" index="33HjxO" />
       <concept id="2010190855810948494" name="com.mbeddr.mpsutil.process.structure.ValidateExpression" flags="ng" index="38J3Lw" />
       <concept id="1352395058067409207" name="com.mbeddr.mpsutil.process.structure.ProgressOutputFunctionParameter" flags="ng" index="3aREkk" />
-      <concept id="498531228376113013" name="com.mbeddr.mpsutil.process.structure.UpdateUIFunction" flags="ig" index="3e9NNR" />
+      <concept id="498531228376113013" name="com.mbeddr.mpsutil.process.structure.UpdateUIFunction" flags="ng" index="3e9NNR" />
       <concept id="498531228381748916" name="com.mbeddr.mpsutil.process.structure.OutputExecuteFunctionParameter" flags="ng" index="3fMjOQ" />
-      <concept id="498531228381780164" name="com.mbeddr.mpsutil.process.structure.OnFinshFunction" flags="ig" index="3fMrH6" />
+      <concept id="498531228381780164" name="com.mbeddr.mpsutil.process.structure.OnFinshFunction" flags="ng" index="3fMrH6" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp">
@@ -500,7 +497,7 @@
       <concept id="8018258162245748350" name="com.mbeddr.mpsutil.smodule.structure.AddSolutionOperation" flags="ng" index="29j_kI">
         <child id="8018258162245748891" name="name" index="29j_Jb" />
       </concept>
-      <concept id="8018258162245800709" name="com.mbeddr.mpsutil.smodule.structure.SolutionType" flags="ig" index="29jK1l" />
+      <concept id="8018258162245800709" name="com.mbeddr.mpsutil.smodule.structure.SolutionType" flags="ng" index="29jK1l" />
       <concept id="386247815699362375" name="com.mbeddr.mpsutil.smodule.structure.SingleFilePersistence" flags="ng" index="2fmWwg" />
       <concept id="3692959419668441282" name="com.mbeddr.mpsutil.smodule.structure.AddModelOperation" flags="ng" index="2o1iZ4">
         <child id="9193920352840482545" name="storageType" index="bRicC" />
@@ -1207,7 +1204,6 @@
     <property role="3GE5qa" value="wizards.templates" />
     <property role="TrG5h" value="IModelTemplate" />
     <node concept="3clFb_" id="16Wkjq0tj18" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getName" />
       <node concept="3clFbS" id="16Wkjq0tj1b" role="3clF47" />
@@ -1215,7 +1211,6 @@
       <node concept="17QB3L" id="16Wkjq0tj11" role="3clF45" />
     </node>
     <node concept="3clFb_" id="16Wkjq0tj7a" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="populateModel" />
       <node concept="3clFbS" id="16Wkjq0tj7d" role="3clF47" />
@@ -1418,7 +1413,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="actionPerformed" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="4ZRMpUzd1U3" role="1B3o_S" />
                         <node concept="3cqZAl" id="4ZRMpUzd1U5" role="3clF45" />
                         <node concept="37vLTG" id="4ZRMpUzd1U6" role="3clF46">
@@ -1461,7 +1455,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="actionPerformed" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="4ZRMpUzez0y" role="1B3o_S" />
                         <node concept="3cqZAl" id="4ZRMpUzez0$" role="3clF45" />
                         <node concept="37vLTG" id="4ZRMpUzez0_" role="3clF46">
@@ -1504,7 +1497,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="actionPerformed" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="4ZRMpUzeDlX" role="1B3o_S" />
                         <node concept="3cqZAl" id="4ZRMpUzeDlZ" role="3clF45" />
                         <node concept="37vLTG" id="4ZRMpUzeDm0" role="3clF46">

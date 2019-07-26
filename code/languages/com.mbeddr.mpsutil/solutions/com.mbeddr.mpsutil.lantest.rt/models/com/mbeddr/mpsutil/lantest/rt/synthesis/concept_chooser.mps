@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
@@ -208,7 +208,6 @@
     <property role="TrG5h" value="IConceptChooser" />
     <node concept="2tJIrI" id="7sjDQ2_p0fq" role="jymVt" />
     <node concept="3clFb_" id="7sjDQ2_p0fr" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="chooseConcept" />
       <node concept="3Tqbb2" id="7sjDQ2_p0fs" role="3clF45">
         <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
@@ -231,7 +230,6 @@
     </node>
     <node concept="2tJIrI" id="3S9K2OvpBOj" role="jymVt" />
     <node concept="3clFb_" id="3S9K2OvpBPu" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="newGenerationStart" />
       <node concept="3cqZAl" id="3S9K2OvpC35" role="3clF45" />
       <node concept="3Tm1VV" id="3S9K2OvpBPw" role="1B3o_S" />

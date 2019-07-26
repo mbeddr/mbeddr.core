@@ -2,7 +2,7 @@
 <model ref="r:f99898f8-594f-4be9-a26e-b68a09c45444(com.mbeddr.mpsutil.placeholderTextList.runtime.rt)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
@@ -27,9 +27,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
@@ -171,7 +168,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getAction" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="1if8LHMx0nz" role="1B3o_S" />
       <node concept="3uibUv" id="1if8LHMx0n_" role="3clF45">
         <ref role="3uigEE" to="f4zo:~CellAction" resolve="CellAction" />
@@ -244,7 +240,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getParent" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="6MTMjob3xGr" role="1B3o_S" />
       <node concept="3uibUv" id="6MTMjob3xGt" role="3clF45">
         <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />

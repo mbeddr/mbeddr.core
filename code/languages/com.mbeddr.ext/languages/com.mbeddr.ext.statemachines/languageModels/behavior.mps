@@ -2,7 +2,7 @@
 <model ref="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachines.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -41,7 +41,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -1607,7 +1606,6 @@
       <property role="TrG5h" value="exportable" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="qd6m:5HxjapwgqKI" resolve="exportable" />
       <node concept="3Tm1VV" id="20ezT9ZDJb0" role="1B3o_S" />
       <node concept="10P_77" id="20ezT9ZDJaY" role="3clF45" />
@@ -1623,7 +1621,6 @@
       <property role="TrG5h" value="getConfigItem" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="hwgx:5HxjapwgqMb" resolve="getConfigItem" />
       <node concept="3Tm1VV" id="20ezT9ZDJpE" role="1B3o_S" />
       <node concept="_YKpA" id="20ezT9ZDJpB" role="3clF45">
@@ -3995,7 +3992,6 @@
       <property role="TrG5h" value="getCommentConcept" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="hwgx:5HxjapwgqLb" resolve="getCommentConcept" />
       <node concept="3Tm1VV" id="20ezT9ZDJww" role="1B3o_S" />
       <node concept="3clFbS" id="20ezT9ZDJwz" role="3clF47">
@@ -5711,7 +5707,6 @@
       <property role="TrG5h" value="getCommentConcept" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="true" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" to="hwgx:5HxjapwgqLb" resolve="getCommentConcept" />
       <node concept="3Tm1VV" id="5uEcop4eMqE" role="1B3o_S" />
@@ -7127,7 +7122,6 @@
       <property role="TrG5h" value="getCommentConcept" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="hwgx:5HxjapwgqLb" resolve="getCommentConcept" />
       <node concept="3Tm1VV" id="20ezT9ZDJtt" role="1B3o_S" />
       <node concept="3clFbS" id="20ezT9ZDJtw" role="3clF47">
@@ -7633,7 +7627,6 @@
       <property role="TrG5h" value="getLabel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="rj8d:5HxjapwgqK6" resolve="getLabel" />
       <node concept="3Tm1VV" id="20ezT9ZDJ5U" role="1B3o_S" />
       <node concept="17QB3L" id="20ezT9ZDJ5S" role="3clF45" />

@@ -2,7 +2,7 @@
 <model ref="r:722f8266-449c-4155-873d-91829d73cfc2(test.ex.ext.components.compWithArrayField@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -64,6 +64,7 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="1553713790141527405" name="wireStatically" index="35zhco" />
         <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
@@ -545,6 +546,7 @@
     <node concept="3i2$bm" id="21TQWIH2r1q" role="2Q9xDr">
       <node concept="3i3YCL" id="21TQWIH2r1A" role="3i30U9">
         <property role="35zhco" value="true" />
+        <property role="2$yeXr" value="true" />
         <ref role="35zhcq" node="21TQWIH23Kp" resolve="instances" />
       </node>
     </node>

@@ -17,6 +17,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
     <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" implicit="true" />
@@ -149,6 +150,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -202,7 +204,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -596,6 +598,21 @@
     </node>
     <node concept="9SLcT" id="L5b1s40t1P" role="9SGkU">
       <node concept="3clFbS" id="L5b1s40t1Q" role="2VODD2">
+        <node concept="3clFbJ" id="1ieRNjmIsyy" role="3cqZAp">
+          <node concept="3clFbS" id="1ieRNjmIsy$" role="3clFbx">
+            <node concept="3cpWs6" id="1ieRNjmIuLg" role="3cqZAp">
+              <node concept="3clFbT" id="1ieRNjmIuQw" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1ieRNjmIt7y" role="3clFbw">
+            <node concept="EsrRn" id="1ieRNjmIsHf" role="2Oq$k0" />
+            <node concept="2qgKlT" id="1ieRNjmIusj" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="L5b1s40$BF" role="3cqZAp">
           <node concept="3clFbS" id="L5b1s40$BH" role="3clFbx">
             <node concept="3cpWs6" id="L5b1s40_02" role="3cqZAp">

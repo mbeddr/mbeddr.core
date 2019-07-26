@@ -5,8 +5,8 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -28,9 +28,7 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -182,21 +180,18 @@
     <property role="TrG5h" value="IStackFrameMapping" />
     <node concept="2tJIrI" id="1brT1d_Fqa5" role="jymVt" />
     <node concept="3clFb_" id="1brT1d_FqbE" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="isShownInCallStack" />
       <node concept="10P_77" id="1brT1d_FqbR" role="3clF45" />
       <node concept="3Tm1VV" id="1brT1d_FqbH" role="1B3o_S" />
       <node concept="3clFbS" id="1brT1d_FqbI" role="3clF47" />
     </node>
     <node concept="3clFb_" id="1brT1d_Fqc$" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getStackFrameName" />
       <node concept="17QB3L" id="1brT1d_FqcP" role="3clF45" />
       <node concept="3Tm1VV" id="1brT1d_FqcB" role="1B3o_S" />
       <node concept="3clFbS" id="1brT1d_FqcC" role="3clF47" />
     </node>
     <node concept="3clFb_" id="1brT1d_FqdA" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getStepOutStrategies" />
       <node concept="_YKpA" id="1brT1dA2Ca2" role="3clF45">
         <node concept="3uibUv" id="1brT1dA2Cai" role="_ZDj9">

@@ -3,12 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="b1c7d06f-525d-43b5-9b0a-2fc8f7f076ba" name="jetbrains.mps.editor.contextActionsTool.lang.menus" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <use id="3a48930f-3451-44fd-9b09-4e7ef448f2bb" name="com.mbeddr.mpsutil.parameterizedMenu" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
   </languages>
   <imports>
@@ -165,7 +165,7 @@
     </language>
     <language id="3a48930f-3451-44fd-9b09-4e7ef448f2bb" name="com.mbeddr.mpsutil.parameterizedMenu">
       <concept id="6447535233437925591" name="com.mbeddr.mpsutil.parameterizedMenu.structure.TransformationMenuPart_ParameterizableSubMenu" flags="ng" index="SA3ZP" />
-      <concept id="6447535233477338909" name="com.mbeddr.mpsutil.parameterizedMenu.structure.QueryFunction_TransformationMenu_ParameterizableParameter" flags="ig" index="XglwZ" />
+      <concept id="6447535233477338909" name="com.mbeddr.mpsutil.parameterizedMenu.structure.QueryFunction_TransformationMenu_ParameterizableParameter" flags="ng" index="XglwZ" />
       <concept id="6447535233477338386" name="com.mbeddr.mpsutil.parameterizedMenu.structure.TransformationMenuPart_ParameterizableParameterized" flags="ng" index="XglCK" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -36,9 +36,6 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -163,9 +160,6 @@
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
       </concept>
-      <concept id="1194565793557" name="jetbrains.mps.lang.generator.structure.IncludeMacro" flags="ln" index="xERo3">
-        <reference id="1194566366375" name="includeTemplate" index="xH3mL" />
-      </concept>
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
@@ -221,7 +215,7 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -531,7 +525,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="isRestricted" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="2nIaZ7ixfGi" role="1B3o_S" />
                         <node concept="10P_77" id="2nIaZ7ixfGj" role="3clF45" />
                         <node concept="37vLTG" id="2nIaZ7ixfGk" role="3clF46">
@@ -1029,7 +1022,6 @@
                             <property role="1EzhhJ" value="false" />
                             <property role="TrG5h" value="run" />
                             <property role="DiZV1" value="false" />
-                            <property role="IEkAT" value="false" />
                             <node concept="3Tm1VV" id="2nIaZ7ixfHS" role="1B3o_S" />
                             <node concept="3cqZAl" id="2nIaZ7ixfHT" role="3clF45" />
                             <node concept="3clFbS" id="2nIaZ7ixfHU" role="3clF47">
@@ -1200,8 +1192,8 @@
           </node>
           <node concept="3clFbH" id="2nIaZ7ixfI8" role="3cqZAp" />
           <node concept="3cpWs8" id="2nIaZ7ixfI9" role="3cqZAp">
-            <node concept="xERo3" id="2nIaZ7ixfIa" role="lGtFl">
-              <ref role="xH3mL" to="tpc3:4v1iCryNDHi" resolve="template_cellSetupBlock" />
+            <node concept="5jKBG" id="76N1O$Kguu$" role="lGtFl">
+              <ref role="v9R2y" to="tpc3:4v1iCryNDHi" resolve="template_cellSetupBlock" />
             </node>
             <node concept="3cpWsn" id="2nIaZ7ixfIb" role="3cpWs9">
               <property role="TrG5h" value="i" />

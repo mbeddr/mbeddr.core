@@ -2,10 +2,10 @@
 <model ref="r:22eca94c-69be-4da1-91ba-2d3e5b402425(com.mbeddr.cc.requirements.scenario2doc.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="e865cad2-7cc8-437a-951a-665bcbcb8b1a" name="com.mbeddr.cc.requirements" version="0" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="d6714220-402d-48cb-a4a2-88223c6257f6" name="com.mbeddr.cc.requirements.scenarios" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
@@ -90,7 +90,6 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="5785245534399940636" name="com.mbeddr.doc.structure.InlineTableParagraph" flags="ng" index="C6TCP" />
       <concept id="5785245534399928042" name="com.mbeddr.doc.structure.AbstractTableParagraph" flags="ng" index="C6Wj3">
         <property id="5785245534399940634" name="numCols" index="C6TCN" />
@@ -253,11 +252,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -1193,8 +1192,8 @@
     <node concept="2SbYGw" id="519ky_Spzux" role="Cbewh">
       <property role="TrG5h" value="temp" />
     </node>
-    <node concept="A7cYH" id="5V9QM6oskBu" role="A10yx">
-      <node concept="9PVaO" id="5V9QM6oskBv" role="9PVG_">
+    <node concept="2SbYGw" id="47UE$_dXHkz" role="A10yx">
+      <node concept="9PVaO" id="47UE$_dXHky" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
       </node>

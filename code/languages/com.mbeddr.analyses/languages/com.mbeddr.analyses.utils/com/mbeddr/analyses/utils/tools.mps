@@ -2,13 +2,13 @@
 <model ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -267,7 +267,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -2366,7 +2366,6 @@
     <property role="TrG5h" value="ToolRunner" />
     <node concept="2tJIrI" id="4CtHBqNlaPp" role="jymVt" />
     <node concept="3clFb_" id="4CtHBqNmr2e" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="runTool" />
       <node concept="37vLTG" id="4CtHBqNmr2f" role="3clF46">
         <property role="TrG5h" value="files" />
@@ -2420,7 +2419,6 @@
     </node>
     <node concept="2tJIrI" id="4CtHBqNmpQ5" role="jymVt" />
     <node concept="3clFb_" id="4CtHBqNmogG" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="runTool" />
       <node concept="37vLTG" id="4CtHBqNmpHf" role="3clF46">
         <property role="TrG5h" value="files" />
@@ -2486,7 +2484,6 @@
     </node>
     <node concept="2tJIrI" id="4CtHBqNlaPt" role="jymVt" />
     <node concept="3clFb_" id="4CtHBqNopjD" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="setTimeout" />
       <node concept="3cqZAl" id="4CtHBqNopjF" role="3clF45" />
       <node concept="3Tm1VV" id="4CtHBqNopjG" role="1B3o_S" />
@@ -2497,7 +2494,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="4CtHBqNotdZ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="setProgress" />
       <node concept="3cqZAl" id="4CtHBqNote1" role="3clF45" />
       <node concept="3Tm1VV" id="4CtHBqNote2" role="1B3o_S" />
@@ -3037,7 +3033,6 @@
       <property role="TrG5h" value="ToolRunnerFactory" />
       <node concept="3Tm1VV" id="sEP8ohtEIP" role="1B3o_S" />
       <node concept="3clFb_" id="sEP8ohtFEk" role="jymVt">
-        <property role="1EzhhJ" value="true" />
         <property role="TrG5h" value="createNewToolRunner" />
         <node concept="16syzq" id="1CPQBcrdD9s" role="3clF45">
           <ref role="16sUi3" node="1CPQBcrdD5y" resolve="T" />
@@ -3220,7 +3215,6 @@
     <property role="TrG5h" value="ToolsAvailabilityChecker" />
     <node concept="2tJIrI" id="7GloF9XTgER" role="jymVt" />
     <node concept="3clFb_" id="7GloF9XTkEl" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="categoryName" />
       <node concept="17QB3L" id="7GloF9XTkEm" role="3clF45" />
       <node concept="3Tm1VV" id="7GloF9XTkEn" role="1B3o_S" />
@@ -3231,7 +3225,6 @@
     </node>
     <node concept="2tJIrI" id="7GloF9XTkDD" role="jymVt" />
     <node concept="3clFb_" id="7GloF9XTgF8" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="checkAvailability" />
       <node concept="10P_77" id="7Quig7_Pqgw" role="3clF45" />
       <node concept="3Tm1VV" id="7GloF9XTgFb" role="1B3o_S" />

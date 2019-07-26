@@ -148,7 +148,6 @@
     </node>
     <node concept="2tJIrI" id="2CFqHq6ssem" role="jymVt" />
     <node concept="3clFb_" id="2CFqHq6sseN" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getTabs" />
       <node concept="A3Dl8" id="2CFqHq6ssIt" role="3clF45">
         <node concept="3uibUv" id="2CFqHq6ssID" role="A3Ik2">
@@ -159,7 +158,6 @@
       <node concept="3clFbS" id="2CFqHq6sseR" role="3clF47" />
     </node>
     <node concept="3clFb_" id="1uZEtAijCZm" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getSorters" />
       <node concept="A3Dl8" id="1uZEtAijD0m" role="3clF45">
         <node concept="3uibUv" id="1uZEtAijD1s" role="A3Ik2">
@@ -170,7 +168,6 @@
       <node concept="3clFbS" id="1uZEtAijCZq" role="3clF47" />
     </node>
     <node concept="3clFb_" id="1uZEtAiqnir" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getStyles" />
       <node concept="A3Dl8" id="1uZEtAiqBkm" role="3clF45">
         <node concept="3uibUv" id="1uZEtAiqBko" role="A3Ik2">
@@ -185,14 +182,12 @@
   <node concept="3HP615" id="2CFqHq6ssiI">
     <property role="TrG5h" value="ITabExtension" />
     <node concept="3clFb_" id="2CFqHq6sskh" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getLabel" />
       <node concept="17QB3L" id="2CFqHq6sskV" role="3clF45" />
       <node concept="3Tm1VV" id="2CFqHq6sskk" role="1B3o_S" />
       <node concept="3clFbS" id="2CFqHq6sskl" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2CFqHq6ssmw" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getActions" />
       <node concept="37vLTG" id="2CFqHq6BCtE" role="3clF46">
         <property role="TrG5h" value="contextCell" />
@@ -243,7 +238,6 @@
   <node concept="3HP615" id="1uZEtAijD0D">
     <property role="TrG5h" value="ISorter" />
     <node concept="3clFb_" id="1uZEtAikauW" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="isApplicable" />
       <node concept="P$JXv" id="1uZEtAikaE2" role="lGtFl">
         <node concept="TUZQ0" id="1uZEtAikaE5" role="3nqlJM">
@@ -265,7 +259,6 @@
       <node concept="3clFbS" id="1uZEtAikav0" role="3clF47" />
     </node>
     <node concept="3clFb_" id="1uZEtAijGSg" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="sort" />
       <node concept="37vLTG" id="1uZEtAijGSG" role="3clF46">
         <property role="TrG5h" value="entries" />

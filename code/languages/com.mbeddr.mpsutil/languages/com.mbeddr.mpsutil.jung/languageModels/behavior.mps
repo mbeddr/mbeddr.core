@@ -2,7 +2,7 @@
 <model ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -70,9 +70,6 @@
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -1260,7 +1257,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="16Fq3WQqo2B" role="1B3o_S" />
       <node concept="17QB3L" id="1vLY0DthC5r" role="3clF45" />
       <node concept="3clFbS" id="16Fq3WQqo2E" role="3clF47">
@@ -3915,7 +3911,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5mfd1_i339q" role="1B3o_S" />
       <node concept="3uibUv" id="5mfd1_i339s" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
@@ -3945,7 +3940,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5mfd1_i33kP" role="1B3o_S" />
       <node concept="3uibUv" id="5mfd1_i33kQ" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
@@ -3993,7 +3987,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5mfd1_i33BM" role="1B3o_S" />
       <node concept="3uibUv" id="5mfd1_i33BN" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
@@ -4053,7 +4046,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5mfd1_i33ii" role="1B3o_S" />
       <node concept="3uibUv" id="5mfd1_i33ij" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
@@ -4084,7 +4076,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5mfd1_i33nC" role="1B3o_S" />
       <node concept="3uibUv" id="5mfd1_i33nD" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
@@ -4284,7 +4275,6 @@
     <node concept="2tJIrI" id="2QWptevlCke" role="jymVt" />
     <node concept="2YIFZL" id="2QWptevlCln" role="jymVt">
       <property role="TrG5h" value="rectangle" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2QWptevlCky" role="3clF47">
@@ -4340,7 +4330,6 @@
     <node concept="2tJIrI" id="13o1gUiPweS" role="jymVt" />
     <node concept="2YIFZL" id="13o1gUiPw7d" role="jymVt">
       <property role="TrG5h" value="polygon" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="13o1gUiPw7e" role="3clF47">
@@ -4388,7 +4377,6 @@
     <node concept="2tJIrI" id="2H0DgtbcWnA" role="jymVt" />
     <node concept="2YIFZL" id="2QWptevlClF" role="jymVt">
       <property role="TrG5h" value="circle" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2QWptevlClG" role="3clF47">
@@ -4444,7 +4432,6 @@
     <node concept="2tJIrI" id="2H0Dgtbd3R_" role="jymVt" />
     <node concept="2YIFZL" id="2H0Dgtbd3JQ" role="jymVt">
       <property role="TrG5h" value="composite" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2H0Dgtbd3JR" role="3clF47">
@@ -4518,7 +4505,6 @@
     <node concept="2tJIrI" id="2$2HGUewAu8" role="jymVt" />
     <node concept="2YIFZL" id="2$2HGUewAu9" role="jymVt">
       <property role="TrG5h" value="arrow" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2$2HGUewAua" role="3clF47">
@@ -4638,7 +4624,6 @@
     <node concept="2tJIrI" id="veUazBUlkl" role="jymVt" />
     <node concept="2YIFZL" id="veUazBUkDg" role="jymVt">
       <property role="TrG5h" value="square" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="veUazBUkDh" role="3clF47">
@@ -4683,7 +4668,6 @@
     <node concept="2tJIrI" id="2$2HGUewEF7" role="jymVt" />
     <node concept="2YIFZL" id="2$2HGUewE1x" role="jymVt">
       <property role="TrG5h" value="circle" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2$2HGUewE1y" role="3clF47">

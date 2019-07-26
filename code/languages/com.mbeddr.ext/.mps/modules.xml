@@ -49,6 +49,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ext.components.nodes_tracing/test.ext.components.nodes_tracing.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ext.math.nodes_tracing/test.ext.math.nodes_tracing.msd" folder="tests.math" />
       <modulePath path="$PROJECT_DIR$/tests/test.ext.statemachine.nodes_tracing/test.ext.statemachine.nodes_tracing.msd" folder="tests.statemachine" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.components.embedded/tests.ts.ext.components.embedded.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.concurrency/test.ts.ext.concurrency.msd" folder="tests.concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.statemachine/test.ts.ext.statemachine.msd" folder="tests" />

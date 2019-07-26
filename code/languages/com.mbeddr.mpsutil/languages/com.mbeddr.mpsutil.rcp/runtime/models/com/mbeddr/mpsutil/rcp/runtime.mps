@@ -2,9 +2,9 @@
 <model ref="r:dc582f36-7f2f-4855-8ed2-c9f96fb47f5e(com.mbeddr.mpsutil.rcp.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
@@ -59,9 +59,6 @@
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -638,7 +635,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="init" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="7o1blyuHLKV" role="1B3o_S" />
       <node concept="3cqZAl" id="7o1blyuHLKX" role="3clF45" />
       <node concept="3clFbS" id="7o1blyuHLKY" role="3clF47">
@@ -1865,7 +1861,6 @@
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="keyReleased" />
                       <property role="DiZV1" value="false" />
-                      <property role="IEkAT" value="false" />
                       <node concept="3Tm1VV" id="2qDF1txPklh" role="1B3o_S" />
                       <node concept="3cqZAl" id="2qDF1txPklj" role="3clF45" />
                       <node concept="37vLTG" id="2qDF1txPklk" role="3clF46">
@@ -2230,19 +2225,24 @@
                             <node concept="3clFbF" id="79AXByy9Qzd" role="3cqZAp">
                               <node concept="1rXfSq" id="79AXByy9Qze" role="3clFbG">
                                 <ref role="37wK5l" to="lzb2:~SimpleColoredComponent.append(java.lang.String):com.intellij.ui.SimpleColoredComponent" resolve="append" />
-                                <node concept="2OqwBi" id="79AXByy9Qzf" role="37wK5m">
-                                  <node concept="1eOMI4" id="79AXByy9Qzj" role="2Oq$k0">
-                                    <node concept="10QFUN" id="79AXByy9Qzg" role="1eOMHV">
-                                      <node concept="37vLTw" id="79AXByy9Qzh" role="10QFUP">
-                                        <ref role="3cqZAo" node="79AXByy9QyV" resolve="p1" />
-                                      </node>
-                                      <node concept="3uibUv" id="79AXByy9Qzi" role="10QFUM">
-                                        <ref role="3uigEE" to="dush:~ModelFactory" resolve="ModelFactory" />
+                                <node concept="2OqwBi" id="5q3qRuQDhzd" role="37wK5m">
+                                  <node concept="2OqwBi" id="79AXByy9Qzf" role="2Oq$k0">
+                                    <node concept="1eOMI4" id="79AXByy9Qzj" role="2Oq$k0">
+                                      <node concept="10QFUN" id="79AXByy9Qzg" role="1eOMHV">
+                                        <node concept="37vLTw" id="79AXByy9Qzh" role="10QFUP">
+                                          <ref role="3cqZAo" node="79AXByy9QyV" resolve="p1" />
+                                        </node>
+                                        <node concept="3uibUv" id="79AXByy9Qzi" role="10QFUM">
+                                          <ref role="3uigEE" to="dush:~ModelFactory" resolve="ModelFactory" />
+                                        </node>
                                       </node>
                                     </node>
+                                    <node concept="liA8E" id="5q3qRuQDhxc" role="2OqNvi">
+                                      <ref role="37wK5l" to="dush:~ModelFactory.getType():org.jetbrains.mps.openapi.persistence.ModelFactoryType" resolve="getType" />
+                                    </node>
                                   </node>
-                                  <node concept="liA8E" id="79AXByy9Qzk" role="2OqNvi">
-                                    <ref role="37wK5l" to="dush:~ModelFactory.getFormatTitle():java.lang.String" resolve="getFormatTitle" />
+                                  <node concept="liA8E" id="5q3qRuQDia6" role="2OqNvi">
+                                    <ref role="37wK5l" to="dush:~ModelFactoryType.getFormatTitle():java.lang.String" resolve="getFormatTitle" />
                                   </node>
                                 </node>
                               </node>
@@ -2360,7 +2360,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createCenterPanel" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="2qDF1txFU4k" role="1B3o_S" />
       <node concept="3uibUv" id="2qDF1txFU4m" role="3clF45">
         <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
@@ -2832,7 +2831,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="doOKAction" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="79AXByyfNRL" role="1B3o_S" />
       <node concept="3cqZAl" id="79AXByyfNRN" role="3clF45" />
       <node concept="3clFbS" id="79AXByyfNRO" role="3clF47">
@@ -3413,54 +3411,13 @@
                 <ref role="3uigEE" to="dush:~ModelFactory" resolve="ModelFactory" />
               </node>
             </node>
-            <node concept="2ShNRf" id="79AXByxOrmo" role="33vP2m">
-              <node concept="1pGfFk" id="79AXByxOrmp" role="2ShVmc">
-                <ref role="37wK5l" to="33ny:~LinkedList.&lt;init&gt;()" resolve="LinkedList" />
-                <node concept="3uibUv" id="79AXByxOrlY" role="1pMfVU">
-                  <ref role="3uigEE" to="dush:~ModelFactory" resolve="ModelFactory" />
-                </node>
+            <node concept="2OqwBi" id="79AXByxOrmb" role="33vP2m">
+              <node concept="2YIFZM" id="5q3qRuQD7PR" role="2Oq$k0">
+                <ref role="1Pybhc" to="ends:~ModelFactoryService" resolve="ModelFactoryService" />
+                <ref role="37wK5l" to="ends:~ModelFactoryService.getInstance():jetbrains.mps.extapi.persistence.ModelFactoryService" resolve="getInstance" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DcWWT" id="79AXByxOrlZ" role="3cqZAp">
-          <node concept="2OqwBi" id="79AXByxOrmb" role="1DdaDG">
-            <node concept="2YIFZM" id="79AXByxOrmr" role="2Oq$k0">
-              <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
-              <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance():org.jetbrains.mps.openapi.persistence.PersistenceFacade" resolve="getInstance" />
-            </node>
-            <node concept="liA8E" id="79AXByxOrmd" role="2OqNvi">
-              <ref role="37wK5l" to="dush:~PersistenceFacade.getModelFactoryExtensions():java.util.Set" resolve="getModelFactoryExtensions" />
-            </node>
-          </node>
-          <node concept="3cpWsn" id="79AXByxOrm8" role="1Duv9x">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="formatId" />
-            <node concept="3uibUv" id="79AXByxOrma" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="79AXByxOrm1" role="2LFqv$">
-            <node concept="3clFbF" id="79AXByxOrm2" role="3cqZAp">
-              <node concept="2OqwBi" id="79AXByxOrmu" role="3clFbG">
-                <node concept="37vLTw" id="79AXByxOrmt" role="2Oq$k0">
-                  <ref role="3cqZAo" node="79AXByxOrlT" resolve="list" />
-                </node>
-                <node concept="liA8E" id="79AXByxOrmv" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
-                  <node concept="2OqwBi" id="79AXByxOrm4" role="37wK5m">
-                    <node concept="2YIFZM" id="79AXByxOrmx" role="2Oq$k0">
-                      <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
-                      <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance():org.jetbrains.mps.openapi.persistence.PersistenceFacade" resolve="getInstance" />
-                    </node>
-                    <node concept="liA8E" id="79AXByxOrm6" role="2OqNvi">
-                      <ref role="37wK5l" to="dush:~PersistenceFacade.getModelFactory(java.lang.String):org.jetbrains.mps.openapi.persistence.ModelFactory" resolve="getModelFactory" />
-                      <node concept="37vLTw" id="79AXByxOrm7" role="37wK5m">
-                        <ref role="3cqZAo" node="79AXByxOrm8" resolve="formatId" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
+              <node concept="liA8E" id="5q3qRuQD8L4" role="2OqNvi">
+                <ref role="37wK5l" to="ends:~ModelFactoryService.getFactories():java.util.List" resolve="getFactories" />
               </node>
             </node>
           </node>
@@ -3500,9 +3457,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="7o1blyu_iGL" role="jymVt" />
-    <node concept="2tJIrI" id="7o1blyu_p6f" role="jymVt" />
-    <node concept="2tJIrI" id="79AXByxOmbM" role="jymVt" />
   </node>
   <node concept="312cEu" id="2arDlsKId99">
     <property role="3GE5qa" value="ideEnhancement" />

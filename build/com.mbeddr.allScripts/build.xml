@@ -560,7 +560,10 @@
   
   <target name="buildDependents" />
   
-  <target name="fetchDependencies" />
+  <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+    <unzip src="${artifacts.mps}/lib/mps-workbench.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+  </target>
   
   <target name="build" depends="assemble" />
   
@@ -591,6 +594,7 @@
       <plugin path="${artifacts.mps}/plugins/mps-execution-configurations" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
+      <plugin path="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar/META-INF/plugin.xml/../.." />
       <library file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -599,6 +603,7 @@
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
+      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk8.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
@@ -629,13 +634,12 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.query.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.refactoring.participant.jar" />
-      <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
-      <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.makeup.jar" />
@@ -648,6 +652,7 @@
       <library file="${artifacts.mps}/lib/mps-environment.jar" />
       <library file="${artifacts.mps}/lib/mps-openapi.jar" />
       <library file="${artifacts.mps}/lib/mps-platform.jar" />
+      <library file="${artifacts.mps}/lib/mps-references.jar" />
       <library file="${artifacts.mps}/lib/mps-stubs.jar" />
       <library file="${artifacts.mps}/lib/mps-test.jar" />
       <library file="${artifacts.mps}/lib/mps-tool.jar" />
@@ -670,7 +675,6 @@
       <library file="${artifacts.mps}/plugins/mps-execution-api/languages/mps-execution-api/jetbrains.mps.execution.settings.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.ant.execution.jar" />
-      <library file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.baseLanguage.execution.startup.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.baseLanguage.execution.util.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.baseLanguage.unitTest.execution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.execution.configurations.implementation.plugin.jar" />
@@ -737,6 +741,7 @@
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
@@ -745,7 +750,7 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.execution.configurations.implementation.plugin.jar" />
       </classpath>

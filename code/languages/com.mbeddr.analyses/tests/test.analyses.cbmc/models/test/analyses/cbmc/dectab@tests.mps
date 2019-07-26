@@ -2,15 +2,15 @@
 <model ref="r:317092c3-1c56-4f97-81ac-f30246184f75(test.analyses.cbmc.dectab@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="3h46" ref="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" />
@@ -20,6 +20,7 @@
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
     <import index="hj5x" ref="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" implicit="true" />
   </imports>
   <registry>
@@ -27,6 +28,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -137,6 +139,17 @@
       <property role="TrG5h" value="testSignum" />
       <node concept="3cqZAl" id="6HtDYEDCZSF" role="3clF45" />
       <node concept="3clFbS" id="6HtDYEDCZSG" role="3clF47">
+        <node concept="3cpWs8" id="71B0VAs0eEl" role="3cqZAp">
+          <node concept="3cpWsn" id="71B0VAs0eEm" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="71B0VAs0eEk" role="1tU5fm" />
+            <node concept="BaHAS" id="71B0VAs0eEn" role="33vP2m">
+              <property role="BaHAW" value="dectab" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="de" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1iGXuFZV1Bx" role="3cqZAp">
           <node concept="3cpWsn" id="1iGXuFZV1By" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -148,10 +161,14 @@
             <node concept="NRdvd" id="5A4xqPJStoK" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:17FqOSBEnOX" resolve="checkDecisionTables" />
-              <node concept="BaHAS" id="5A4xqPJStoL" role="37wK5m">
-                <property role="BaHAW" value="dectab" />
-                <property role="BaGAP" value="" />
-                <property role="BaBD8" value="de" />
+              <node concept="2OqwBi" id="71B0VAs0fxj" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VAs0fit" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VAs0gSw" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="71B0VAs0eEo" role="37wK5m">
+                <ref role="3cqZAo" node="71B0VAs0eEm" resolve="m" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJStoM" role="37wK5m">
                 <property role="Xl_RC" value="simple_dectabs" />
@@ -318,6 +335,17 @@
       <property role="TrG5h" value="testTwoDecisionTables" />
       <node concept="3cqZAl" id="3oJxBI_0vNg" role="3clF45" />
       <node concept="3clFbS" id="3oJxBI_0vNh" role="3clF47">
+        <node concept="3cpWs8" id="71B0VAs0h0Y" role="3cqZAp">
+          <node concept="3cpWsn" id="71B0VAs0h0Z" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="71B0VAs0h0X" role="1tU5fm" />
+            <node concept="BaHAS" id="71B0VAs0h10" role="33vP2m">
+              <property role="BaHAW" value="dectab" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="de" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3oJxBI_0vNi" role="3cqZAp">
           <node concept="3cpWsn" id="3oJxBI_0vNj" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -329,10 +357,14 @@
             <node concept="NRdvd" id="5A4xqPJScIi" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:17FqOSBEnOX" resolve="checkDecisionTables" />
-              <node concept="BaHAS" id="5A4xqPJScIj" role="37wK5m">
-                <property role="BaHAW" value="dectab" />
-                <property role="BaGAP" value="" />
-                <property role="BaBD8" value="de" />
+              <node concept="2OqwBi" id="71B0VAs0im9" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VAs0i2$" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VAs0jK5" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="71B0VAs0h11" role="37wK5m">
+                <ref role="3cqZAo" node="71B0VAs0h0Z" resolve="m" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJScIk" role="37wK5m">
                 <property role="Xl_RC" value="simple_dectabs" />
@@ -603,6 +635,12 @@
             <node concept="NRdvd" id="5EwdfGVh3k3" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
               <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="2OqwBi" id="71B0VArMLZs" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArMLKC" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArMMXS" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="5EwdfGVh3k4" role="37wK5m">
                 <ref role="3cqZAo" node="1_cCL2G2g7s" resolve="model" />
               </node>

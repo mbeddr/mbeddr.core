@@ -18,6 +18,7 @@
       <modulePath path="$PROJECT_DIR$/languages/metadata/metadata.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/osconfig/osconfig.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/spellcheck/spellcheck.mpl" folder="utils" />
+      <modulePath path="$PROJECT_DIR$/solutions/demo.expr.interpreter/demo.expr.interpreter.msd" folder="languages" />
       <modulePath path="$PROJECT_DIR$/solutions/demo.expr.sandbox/demo.expr.sandbox.msd" folder="languages" />
       <modulePath path="$PROJECT_DIR$/solutions/lib/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.library.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.dsls.extensions.main/mbeddr.tutorial.dsls.extensions.main.msd" folder="examples" />

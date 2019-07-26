@@ -52,9 +52,6 @@
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
         <child id="1164903700860" name="catchClause" index="TEXxN" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -284,7 +281,6 @@
       <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
         <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
       </concept>
-      <concept id="1547759872598425067" name="jetbrains.mps.lang.smodel.structure.Reference_GetLinkDeclarationOperation" flags="nn" index="1eFSac" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -547,7 +543,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3JMPeKaHTtr" role="1B3o_S" />
       <node concept="17QB3L" id="3JMPeKaHTts" role="3clF45" />
       <node concept="3clFbS" id="3JMPeKaHTtt" role="3clF47">
@@ -1205,7 +1200,7 @@
             </node>
             <node concept="2YIFZM" id="3JMPeKaHTii" role="33vP2m">
               <ref role="1Pybhc" to="3o3z:~Lists" resolve="Lists" />
-              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Object...):java.util.ArrayList" resolve="newArrayList" />
+              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Iterable):java.util.ArrayList" resolve="newArrayList" />
               <node concept="2OqwBi" id="3JMPeKaHTij" role="37wK5m">
                 <node concept="2JrnkZ" id="3JMPeKaHTik" role="2Oq$k0">
                   <node concept="37vLTw" id="3JMPeKaHTil" role="2JrQYb">
@@ -1227,7 +1222,7 @@
             </node>
             <node concept="2YIFZM" id="3JMPeKaHTir" role="33vP2m">
               <ref role="1Pybhc" to="3o3z:~Lists" resolve="Lists" />
-              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Object...):java.util.ArrayList" resolve="newArrayList" />
+              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Iterable):java.util.ArrayList" resolve="newArrayList" />
               <node concept="2OqwBi" id="3JMPeKaHTis" role="37wK5m">
                 <node concept="2JrnkZ" id="3JMPeKaHTit" role="2Oq$k0">
                   <node concept="37vLTw" id="3JMPeKaHTiu" role="2JrQYb">
@@ -1481,7 +1476,7 @@
                             <node concept="37vLTw" id="3JMPeKaHTkb" role="2Oq$k0">
                               <ref role="3cqZAo" node="3JMPeKaHTkd" resolve="it" />
                             </node>
-                            <node concept="1eFSac" id="3JMPeKaHTkc" role="2OqNvi" />
+                            <node concept="CsP83" id="2Fugwv5K5WN" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
@@ -1510,7 +1505,7 @@
                             <node concept="37vLTw" id="3JMPeKaHTkq" role="2Oq$k0">
                               <ref role="3cqZAo" node="3JMPeKaHTks" resolve="it" />
                             </node>
-                            <node concept="1eFSac" id="3JMPeKaHTkr" role="2OqNvi" />
+                            <node concept="CsP83" id="2Fugwv5K6Ub" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
@@ -2865,7 +2860,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="hashCode" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="6UjzKD00$PY" role="1B3o_S" />
       <node concept="10Oyi0" id="6UjzKD00$Q0" role="3clF45" />
       <node concept="3clFbS" id="6UjzKD00$Q1" role="3clF47">
@@ -2888,7 +2882,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="equals" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="6UjzKD00$Q6" role="1B3o_S" />
       <node concept="10P_77" id="6UjzKD00$Q8" role="3clF45" />
       <node concept="37vLTG" id="6UjzKD00$Q9" role="3clF46">
@@ -2972,7 +2965,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="4yXzf2tU0gV" role="1B3o_S" />
       <node concept="3uibUv" id="4yXzf2tU0gX" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />

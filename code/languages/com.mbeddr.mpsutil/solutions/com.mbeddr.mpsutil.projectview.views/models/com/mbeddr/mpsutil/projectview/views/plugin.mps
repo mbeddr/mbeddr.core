@@ -4,10 +4,10 @@
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
@@ -46,9 +46,6 @@
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1224573963862" name="jetbrains.mps.baseLanguage.structure.EnumValuesExpression" flags="nn" index="uiWXb">
         <reference id="1224573974191" name="enumClass" index="uiZuM" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -201,7 +198,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="5692182839349412519" name="jetbrains.mps.lang.smodel.structure.Reference_GetRoleOperation" flags="nn" index="90r25" />
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
@@ -211,6 +207,7 @@
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -1101,7 +1098,7 @@
           <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
         </node>
         <node concept="liA8E" id="4glh_Dchqa2" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
           <node concept="2OqwBi" id="4glh_DchqKb" role="37wK5m">
             <node concept="14b0Wr" id="4glh_Dchqxa" role="2Oq$k0">
               <ref role="14b0Uw" node="75_oBQVK55f" resolve="reference" />
@@ -1185,10 +1182,10 @@
               <node concept="14b0Wr" id="75_oBQV_v_t" role="2Oq$k0">
                 <ref role="14b0Uw" node="3ZnFyBjojbx" resolve="node" />
               </node>
-              <node concept="25OxAV" id="XSoA18NvUG" role="2OqNvi" />
+              <node concept="2NL2c5" id="2Fugwv5LwFU" role="2OqNvi" />
             </node>
-            <node concept="3TrcHB" id="XSoA18Nwzx" role="2OqNvi">
-              <ref role="3TsBF5" to="tpce:fA0kJcN" resolve="role" />
+            <node concept="liA8E" id="2Fugwv5Lxwa" role="2OqNvi">
+              <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
             </node>
           </node>
           <node concept="Xl_RD" id="75_oBQV_vWo" role="3uHU7w">
@@ -1247,7 +1244,6 @@
     <property role="TrG5h" value="ProjectViewUtil" />
     <node concept="2tJIrI" id="75_oBQVwQmW" role="jymVt" />
     <node concept="Wx3nA" id="75_oBQVwQpr" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="actionGroupsIds" />
       <property role="3TUv4t" value="false" />
       <node concept="3rvAFt" id="75_oBQVwQnT" role="1tU5fm">
@@ -1393,7 +1389,6 @@
     <node concept="2tJIrI" id="75_oBQVwQnl" role="jymVt" />
     <node concept="2YIFZL" id="75_oBQVwQmH" role="jymVt">
       <property role="TrG5h" value="getActionGroupId" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="75_oBQVwQm3" role="3clF47">
@@ -1423,7 +1418,6 @@
     <node concept="2tJIrI" id="75_oBQVwW_9" role="jymVt" />
     <node concept="2YIFZL" id="75_oBQVwWIs" role="jymVt">
       <property role="TrG5h" value="getActionGroupId" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="75_oBQVwWBJ" role="3clF47">
@@ -1534,7 +1528,6 @@
     <node concept="2tJIrI" id="75_oBQVUdXm" role="jymVt" />
     <node concept="2YIFZL" id="75_oBQVUee1" role="jymVt">
       <property role="TrG5h" value="getUtilModels" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="75_oBQVUe0R" role="3clF47">
@@ -1622,7 +1615,6 @@
     <node concept="2tJIrI" id="4GrfODAQZBK" role="jymVt" />
     <node concept="2YIFZL" id="4GrfODAR8kC" role="jymVt">
       <property role="TrG5h" value="getFolders" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="4GrfODAQZYV" role="3clF47">

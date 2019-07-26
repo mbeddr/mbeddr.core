@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="blwm" ref="r:61a45d85-604a-4af4-8729-16a36d455774(com.mbeddr.core.debug.plugin)" />
@@ -411,12 +411,12 @@
                         <node concept="3cpWs8" id="3WFvXLXBsbE" role="3cqZAp">
                           <node concept="3cpWsn" id="3WFvXLXBsbF" role="3cpWs9">
                             <property role="TrG5h" value="mi" />
-                            <node concept="3uibUv" id="3WFvXLXBsbD" role="1tU5fm">
-                              <ref role="3uigEE" to="52cq:~MIPlugin" resolve="MIPlugin" />
-                            </node>
                             <node concept="2YIFZM" id="3WFvXLXBsbG" role="33vP2m">
                               <ref role="37wK5l" to="52cq:~MIPlugin.getDefault():org.eclipse.cdt.debug.mi.core.MIPlugin" resolve="getDefault" />
                               <ref role="1Pybhc" to="52cq:~MIPlugin" resolve="MIPlugin" />
+                            </node>
+                            <node concept="3uibUv" id="3WFvXLXBsbD" role="1tU5fm">
+                              <ref role="3uigEE" to="52cq:~MIPlugin" resolve="MIPlugin" />
                             </node>
                           </node>
                         </node>

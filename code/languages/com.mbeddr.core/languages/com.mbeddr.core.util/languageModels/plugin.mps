@@ -2,7 +2,7 @@
 <model ref="r:94684e53-e178-4b85-9402-d0df7f2c7994(com.mbeddr.core.util.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <use id="935bff03-e393-4547-a3a2-60335e0cad25" name="com.mbeddr.mpsutil.ccmenu" version="-1" />
     <use id="f92af8d7-1fae-4067-8109-17acf80f8e58" name="com.mbeddr.mpsutil.ccmenu.reftarget" version="-1" />
@@ -56,7 +56,7 @@
         <child id="3273307157325357976" name="selectors" index="1WszKs" />
         <child id="3273307157325365793" name="modifications" index="1Ws_Q_" />
       </concept>
-      <concept id="3273307157325372934" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.ConditionSelector" flags="ig" index="1Ws$62" />
+      <concept id="3273307157325372934" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.ConditionSelector" flags="ng" index="1Ws$62" />
       <concept id="3273307157325365790" name="com.mbeddr.mpsutil.ccmenu.reftarget.structure.RemoveModification" flags="ng" index="1Ws_Qq" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">

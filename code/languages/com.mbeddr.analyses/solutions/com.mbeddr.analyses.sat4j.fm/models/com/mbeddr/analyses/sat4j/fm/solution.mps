@@ -2,9 +2,9 @@
 <model ref="r:2614f5fc-e90d-4f99-b5fb-05bc371282e5(com.mbeddr.analyses.sat4j.fm.solution)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="j6po" ref="d280cd6b-3d77-4bf2-b70d-fe049ab4c77e/java:org.sat4j.specs(com.mbeddr.analyses.sat4j/)" />
@@ -128,6 +128,12 @@
       <property role="TrG5h" value="checkConsistency" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
+      <node concept="37vLTG" id="3$vwvl9ViDb" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="3$vwvl9ViXm" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="1X8myJOLmZc" role="3clF46">
         <property role="TrG5h" value="solution" />
         <property role="3TUv4t" value="false" />
@@ -197,6 +203,9 @@
                             </node>
                             <node concept="liA8E" id="4XJOimFN8zk" role="2OqNvi">
                               <ref role="37wK5l" to="ky9n:1X8myJOUIph" resolve="checkConsistency" />
+                              <node concept="37vLTw" id="3$vwvl9VjyH" role="37wK5m">
+                                <ref role="3cqZAo" node="3$vwvl9ViDb" resolve="repo" />
+                              </node>
                               <node concept="2GrUjf" id="4XJOimFN8zl" role="37wK5m">
                                 <ref role="2Gs0qQ" node="1X8myJOLnl5" resolve="m" />
                               </node>
@@ -230,6 +239,9 @@
                             </node>
                             <node concept="liA8E" id="1X8myJOLdqC" role="2OqNvi">
                               <ref role="37wK5l" to="ky9n:2hSqXWTF6yB" resolve="checkConsistency" />
+                              <node concept="37vLTw" id="3$vwvl9Vngf" role="37wK5m">
+                                <ref role="3cqZAo" node="3$vwvl9ViDb" resolve="repo" />
+                              </node>
                               <node concept="2GrUjf" id="1X8myJOLpWX" role="37wK5m">
                                 <ref role="2Gs0qQ" node="1X8myJOLnl5" resolve="m" />
                               </node>

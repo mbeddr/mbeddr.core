@@ -2,7 +2,7 @@
 <model ref="r:48d2610f-6773-4e46-97fb-081cb431c5f4(demo.expr.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="444fc60e-b7e2-46c2-95fa-301dd48918b2" name="demo.expr" version="0" />
   </languages>
   <imports>

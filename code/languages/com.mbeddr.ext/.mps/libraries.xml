@@ -7,7 +7,15 @@
           <value>
             <Library>
               <option name="name" value="mbeddr" />
-              <option name="path" value="${mbeddr.github.core.home}" />
+              <option name="path" value="${mbeddr.github.core.home}/code" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.platform">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.platform" />
+              <option name="path" value="${mbeddr.github.core.home}/artifacts/com.mbeddr.platform" />
             </Library>
           </value>
         </entry>

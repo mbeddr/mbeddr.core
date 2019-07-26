@@ -2,14 +2,14 @@
 <model ref="r:b8423fde-9681-49ac-b372-eb21bacf6077(test.editor.ext.components@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="-1" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
@@ -226,6 +226,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="2423417345669755629" name="whichError" index="1eyWvh" />
+      </concept>
     </language>
     <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
       <concept id="6616025724454668918" name="com.mbeddr.ext.components.structure.AdapterInstancePortRef" flags="ng" index="219P8x">
@@ -313,7 +316,7 @@
       <concept id="9184727592626304283" name="com.mbeddr.ext.components.structure.ComponentFieldRef" flags="ng" index="1ijC0e">
         <reference id="9184727592626304284" name="field" index="1ijC09" />
       </concept>
-      <concept id="3457272138385423166" name="com.mbeddr.ext.components.structure.ReqPortCardinality" flags="ng" index="1FEWAf">
+      <concept id="3457272138385423166" name="com.mbeddr.ext.components.structure.Cardinality" flags="ng" index="1FEWAf">
         <child id="2742494070477836211" name="upperBound" index="23vghw" />
         <child id="2798845822163873817" name="lowerBound" index="1_ZCXF" />
       </concept>
@@ -2383,19 +2386,19 @@
     <property role="TrG5h" value="DataElement_create" />
     <node concept="N3F5e" id="2c84p9PP97_" role="LiRBU">
       <property role="TrG5h" value="M" />
-      <node concept="2q5ZbU" id="2c84p9PP97K" role="N3F5h">
+      <node concept="2q5ZbU" id="6LJSgT2oOUY" role="N3F5h">
         <property role="2OOxQR" value="true" />
         <property role="TrG5h" value="I1" />
-        <node concept="LIFWc" id="2c84p9PP9bl" role="lGtFl">
+        <node concept="LIFWc" id="6LJSgT2oOVL" role="lGtFl">
           <property role="ZRATv" value="true" />
           <property role="OXtK3" value="true" />
           <property role="p6zMq" value="0" />
           <property role="p6zMs" value="0" />
-          <property role="LIFWd" value="Constant_d0ee7f_a6a" />
+          <property role="LIFWd" value="Constant_d0ee7f_a5a" />
         </node>
       </node>
-      <node concept="2NXPZ9" id="2c84p9PP97N" role="N3F5h">
-        <property role="TrG5h" value="empty_1447173060241_12" />
+      <node concept="2NXPZ9" id="6LJSgT2oOVa" role="N3F5h">
+        <property role="TrG5h" value="empty_1552641610107_9" />
       </node>
     </node>
     <node concept="3clFbS" id="2c84p9PP97O" role="LjaKd">
@@ -2405,20 +2408,20 @@
     </node>
     <node concept="N3F5e" id="2c84p9PP97Q" role="LiZbd">
       <property role="TrG5h" value="M" />
-      <node concept="2q5ZbU" id="2c84p9PP981" role="N3F5h">
+      <node concept="2q5ZbU" id="6LJSgT2oOWb" role="N3F5h">
         <property role="2OOxQR" value="true" />
         <property role="TrG5h" value="I1" />
-        <node concept="2q5ZbO" id="2c84p9PPj1c" role="2q5ZbA">
+        <node concept="2q5ZbO" id="6LJSgT2oOWq" role="2q5ZbA">
           <property role="TrG5h" value="f1" />
-          <node concept="26Vqp4" id="2c84p9PPj1b" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
+          <node concept="26Vqp4" id="6LJSgT2oOWp" role="2C2TGm" />
         </node>
       </node>
-      <node concept="2NXPZ9" id="2c84p9PP984" role="N3F5h">
-        <property role="TrG5h" value="empty_1447173060241_12" />
+      <node concept="2NXPZ9" id="6LJSgT2oRuN" role="N3F5h">
+        <property role="TrG5h" value="empty_1552641610107_9" />
       </node>
+    </node>
+    <node concept="15s5l7" id="6LJSgT2oQdF" role="lGtFl">
+      <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: The 'before' section must have an AnonymousCellAnnotation attached&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c89590385(jetbrains.mps.lang.test.typesystem)/5960383906433090718]&quot;;" />
     </node>
   </node>
   <node concept="LiM7Y" id="2c84p9PPke8">
@@ -2667,10 +2670,10 @@
         <node concept="2EWDwb" id="3eoPjwNZab5" role="2RW2fA">
           <property role="TrG5h" value="r1" />
           <node concept="3XIRFW" id="3eoPjwNZab6" role="2EWMhI">
-            <node concept="1_9egQ" id="3eoPjwNZab7" role="3XIRFZ">
-              <node concept="2OhZ_J" id="3eoPjwNZaeN" role="1_9egR">
+            <node concept="1_9egQ" id="16SY6ghDCFI" role="3XIRFZ">
+              <node concept="2OhZ_J" id="16SY6ghDCFJ" role="1_9egR">
                 <ref role="2H6loY" node="3eoPjwNZab0" resolve="i1" />
-                <node concept="3TlMh9" id="3eoPjwNZaf0" role="2OhZuM">
+                <node concept="3TlMh9" id="16SY6ghDCFK" role="2OhZuM">
                   <property role="2hmy$m" value="1" />
                 </node>
               </node>

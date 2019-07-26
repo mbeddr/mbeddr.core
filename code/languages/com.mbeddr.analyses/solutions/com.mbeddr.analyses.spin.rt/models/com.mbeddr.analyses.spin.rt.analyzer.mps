@@ -2,8 +2,8 @@
 <model ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
@@ -64,9 +64,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -248,6 +245,7 @@
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
@@ -398,7 +396,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="doInBackground" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="_YKpA" id="71H03GAOCJS" role="3clF45">
         <node concept="3uibUv" id="71H03GAOCJT" role="_ZDj9">
           <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
@@ -436,6 +433,9 @@
             <node concept="2YIFZM" id="4kcU3YrlWD0" role="33vP2m">
               <ref role="1Pybhc" to="xm5e:4kcU3YrkdpN" resolve="SpinRunner" />
               <ref role="37wK5l" to="xm5e:4kcU3YrkduH" resolve="runPan" />
+              <node concept="37vLTw" id="1ieRNjmu$Xy" role="37wK5m">
+                <ref role="3cqZAo" node="5etR5IKp21T" resolve="modelRepository" />
+              </node>
               <node concept="37vLTw" id="3lXW7OZ7ocX" role="37wK5m">
                 <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
               </node>
@@ -482,6 +482,9 @@
                   <node concept="2YIFZM" id="7XCY$_rakm7" role="37vLTx">
                     <ref role="37wK5l" node="7XCY$_rajCX" resolve="lift" />
                     <ref role="1Pybhc" node="7XCY$_rajB3" resolve="SpinResultLifter" />
+                    <node concept="37vLTw" id="1ieRNjmu_sR" role="37wK5m">
+                      <ref role="3cqZAo" node="5etR5IKp21T" resolve="modelRepository" />
+                    </node>
                     <node concept="37vLTw" id="7XCY$_rakqu" role="37wK5m">
                       <ref role="3cqZAo" node="1wu5Hv6fyJS" resolve="srr" />
                     </node>
@@ -495,6 +498,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="1ieRNjmurvW" role="ukAjM">
+            <ref role="3cqZAo" node="5etR5IKp21T" resolve="modelRepository" />
           </node>
         </node>
         <node concept="3clFbF" id="1wu5Hv6k6Eo" role="3cqZAp">
@@ -656,7 +662,6 @@
     <property role="3GE5qa" value="base" />
     <node concept="2tJIrI" id="1wu5Hv6fAKA" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcSy$M" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastProj" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="2nfOfEfMw2F" role="1tU5fm">
@@ -669,7 +674,6 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcSvL$" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcSxMQ" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastModel" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3_HSwtcSvxG" role="1tU5fm">
@@ -682,7 +686,6 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcWxtx" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcWxhw" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastToolAdapter" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3_HSwtcWxGg" role="1tU5fm">
@@ -695,7 +698,6 @@
     </node>
     <node concept="2tJIrI" id="3_HSwtcWxHn" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcWxTr" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="lastAnalysis" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tqbb2" id="7YdkGnux7S" role="1tU5fm">
@@ -709,7 +711,6 @@
     <node concept="2tJIrI" id="7YdkGnuwJv" role="jymVt" />
     <node concept="2YIFZL" id="1wu5Hv6hn_r" role="jymVt">
       <property role="TrG5h" value="performAnalysis" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="1wu5Hv6fAKX" role="3clF47">
@@ -1534,6 +1535,9 @@
                               <node concept="2YIFZM" id="HmUOIG_b6H" role="33vP2m">
                                 <ref role="1Pybhc" to="xm5e:4kcU3YrkdpN" resolve="SpinRunner" />
                                 <ref role="37wK5l" to="xm5e:HmUOIG_5a1" resolve="readAndExecuteTrail" />
+                                <node concept="37vLTw" id="1ieRNjmuEqw" role="37wK5m">
+                                  <ref role="3cqZAo" node="1ieRNjmuyiF" resolve="repo" />
+                                </node>
                                 <node concept="37vLTw" id="71H03GAUMoQ" role="37wK5m">
                                   <ref role="3cqZAo" node="71H03GAU_u6" resolve="config" />
                                 </node>
@@ -1951,6 +1955,12 @@
           <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
         </node>
       </node>
+      <node concept="37vLTG" id="1ieRNjmuyiF" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuzp4" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="7XCY$_rajDp" role="3clF46">
         <property role="TrG5h" value="raw" />
         <node concept="3uibUv" id="7XCY$_rajDo" role="1tU5fm">
@@ -2311,7 +2321,7 @@
                       <ref role="3cqZAo" node="2lN4cj_NvUb" resolve="lhs" />
                     </node>
                     <node concept="2qgKlT" id="4b2d3GUmGfS" role="2OqNvi">
-                      <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                      <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="4b2d3GUmGfT" role="37vLTJ">
@@ -2912,7 +2922,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="doInBackground" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="_YKpA" id="1U03KaUIQ8A" role="3clF45">
         <node concept="3uibUv" id="1U03KaUIQ8B" role="_ZDj9">
           <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
@@ -2950,6 +2959,9 @@
             <node concept="2YIFZM" id="1U03KaUIQ8P" role="33vP2m">
               <ref role="1Pybhc" to="xm5e:4kcU3YrkdpN" resolve="SpinRunner" />
               <ref role="37wK5l" to="xm5e:4kcU3YrkduH" resolve="runPan" />
+              <node concept="37vLTw" id="1ieRNjmuAEH" role="37wK5m">
+                <ref role="3cqZAo" node="5etR5IKp21T" resolve="modelRepository" />
+              </node>
               <node concept="37vLTw" id="1U03KaUIQ8Q" role="37wK5m">
                 <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
               </node>
@@ -3011,6 +3023,9 @@
                       <node concept="2YIFZM" id="1U03KaUIQ9z" role="37vLTx">
                         <ref role="1Pybhc" node="7XCY$_rajB3" resolve="SpinResultLifter" />
                         <ref role="37wK5l" node="7XCY$_rajCX" resolve="lift" />
+                        <node concept="37vLTw" id="1ieRNjmuBgq" role="37wK5m">
+                          <ref role="3cqZAo" node="5etR5IKp21T" resolve="modelRepository" />
+                        </node>
                         <node concept="37vLTw" id="1U03KaUIQ9$" role="37wK5m">
                           <ref role="3cqZAo" node="1U03KaUIQ8V" resolve="srr" />
                         </node>
@@ -3032,6 +3047,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="1ieRNjmusfd" role="ukAjM">
+            <ref role="3cqZAo" node="5etR5IKp21T" resolve="modelRepository" />
           </node>
         </node>
         <node concept="3clFbH" id="4l47ydybR8h" role="3cqZAp" />
@@ -3504,6 +3522,9 @@
                 <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="1ieRNjmuoOp" role="ukAjM">
+            <ref role="3cqZAo" node="5etR5IKp21T" resolve="modelRepository" />
           </node>
         </node>
       </node>

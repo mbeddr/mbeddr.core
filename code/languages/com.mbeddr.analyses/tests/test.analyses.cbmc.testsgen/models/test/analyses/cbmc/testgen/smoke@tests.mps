@@ -2,12 +2,12 @@
 <model ref="r:3b509dec-cc62-432c-a270-e52646b97c68(test.analyses.cbmc.testgen.smoke@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports>
@@ -16,12 +16,14 @@
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="mog" ref="r:8001815d-bc5a-4aed-8490-b69f15a3e4ff(com.mbeddr.analyses.cbmc.testsgen.rt.analyses.testsgen)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -138,6 +140,12 @@
             <node concept="NRdvd" id="73BQep1SfdK" role="33vP2m">
               <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
               <ref role="37wK5l" to="pyil:7yN$Xh8otP7" resolve="testsgenBranch" />
+              <node concept="2OqwBi" id="71B0VArQz0j" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArQyGB" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArQ_zn" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="73BQep1SfdL" role="37wK5m">
                 <ref role="3cqZAo" node="73BQep1R8G6" resolve="m" />
               </node>
@@ -281,6 +289,12 @@
             <node concept="2YIFZM" id="2jb6dmWQqjt" role="33vP2m">
               <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
               <ref role="37wK5l" to="pyil:7yN$Xh8otP7" resolve="testsgenBranch" />
+              <node concept="2OqwBi" id="71B0VArQ_OE" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArQ_OF" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArQ_OG" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="BaHAS" id="2jb6dmWQqju" role="37wK5m">
                 <property role="BaHAW" value="test.analyses.cbmc.testgen.testcode.smoke" />
                 <property role="BaGAP" value="" />
@@ -412,6 +426,12 @@
             <node concept="2YIFZM" id="341WyjDj8uW" role="33vP2m">
               <ref role="37wK5l" to="pyil:341WyjDj7Hm" resolve="testsgenLocation" />
               <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <node concept="2OqwBi" id="71B0VArQI3L" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArQHOX" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArQIYT" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="341WyjDj8uX" role="37wK5m">
                 <ref role="3cqZAo" node="341WyjDj2rL" resolve="m" />
               </node>

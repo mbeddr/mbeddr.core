@@ -2,7 +2,7 @@
 <model ref="r:b7c154ce-18ee-4bbf-abb3-f4d8536d9886(test.ex.ext.components.commenting@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
@@ -51,7 +51,9 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
+        <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -110,7 +112,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -210,6 +212,8 @@
     <node concept="3i2$bm" id="AakJEmcTiL" role="2Q9xDr">
       <node concept="3i3YCL" id="AakJEmcTiR" role="3i30U9">
         <property role="3Ewwow" value="true" />
+        <property role="2$yeXr" value="true" />
+        <ref role="35zhcq" node="AakJEmcOnV" resolve="instances" />
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJF7" role="2Q9xDr" />

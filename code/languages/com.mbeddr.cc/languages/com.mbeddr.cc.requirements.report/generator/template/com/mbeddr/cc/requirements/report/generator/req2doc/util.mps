@@ -29,9 +29,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -450,7 +447,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="getModules" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="2AZbPfOrIv1" role="1B3o_S" />
         <node concept="3uibUv" id="2AZbPfOrIv3" role="3clF45">
           <ref role="3uigEE" to="wyt6:~Iterable" resolve="Iterable" />
@@ -529,7 +525,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="getModels" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="2AZbPfOrIv9" role="1B3o_S" />
         <node concept="3uibUv" id="2AZbPfOrIvb" role="3clF45">
           <ref role="3uigEE" to="wyt6:~Iterable" resolve="Iterable" />
@@ -625,7 +620,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="resolve" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="2AZbPfOrIvh" role="1B3o_S" />
         <node concept="3uibUv" id="2AZbPfOrIvj" role="3clF45">
           <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
@@ -664,7 +658,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="resolve" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="2AZbPfOrIvr" role="1B3o_S" />
         <node concept="3uibUv" id="2AZbPfOrIvt" role="3clF45">
           <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />

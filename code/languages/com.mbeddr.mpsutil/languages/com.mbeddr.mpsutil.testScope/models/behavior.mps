@@ -2,10 +2,10 @@
 <model ref="r:0f97720d-6a69-499a-8233-f35c1872d466(com.mbeddr.mpsutil.testScope.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -162,7 +162,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -265,15 +264,6 @@
       <ref role="13i0hy" to="tp5o:1kgh5YabdhC" resolve="perform" />
       <node concept="3Tm1VV" id="Uhkfo4FJjb" role="1B3o_S" />
       <node concept="3clFbS" id="Uhkfo4FJjg" role="3clF47">
-        <node concept="3clFbF" id="Uhkfo4G1II" role="3cqZAp">
-          <node concept="2OqwBi" id="Uhkfo4G1yT" role="3clFbG">
-            <node concept="37vLTw" id="Uhkfo4G1xz" role="2Oq$k0">
-              <ref role="3cqZAo" node="Uhkfo4FJjh" resolve="node" />
-            </node>
-            <node concept="25OxAV" id="Uhkfo4G1C7" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="Uhkfo4G1GE" role="3cqZAp" />
         <node concept="3cpWs8" id="Uhkfo4G4ph" role="3cqZAp">
           <node concept="3cpWsn" id="Uhkfo4G4pi" role="3cpWs9">
             <property role="TrG5h" value="scope" />

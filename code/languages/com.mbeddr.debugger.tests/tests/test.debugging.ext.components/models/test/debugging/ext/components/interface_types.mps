@@ -4,8 +4,8 @@
   <languages>
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
-    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
+    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="1" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
@@ -180,9 +180,6 @@
       <concept id="4491876417845484922" name="com.mbeddr.ext.components.structure.ClientServerInterface" flags="ng" index="2EX0iR">
         <child id="4491876417845484926" name="contents" index="2EX0iN" />
       </concept>
-      <concept id="4491876417845484919" name="com.mbeddr.ext.components.structure.Interface" flags="ng" index="2EX0iU">
-        <property id="1539255704408883009" name="canBeUsedAsType" index="1M_7uD" />
-      </concept>
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
@@ -313,7 +310,6 @@
     <node concept="2EX0iR" id="uZ8WnxB_Xe" role="N3F5h">
       <property role="2OOxQR" value="false" />
       <property role="TrG5h" value="ISquare" />
-      <property role="1M_7uD" value="true" />
       <node concept="2EX0iL" id="uZ8WnxB_Xf" role="2EX0iN">
         <property role="TrG5h" value="square" />
         <node concept="2EWNYT" id="4jk7wJx5qJt" role="1UOdpc">
@@ -554,7 +550,6 @@
     <node concept="2EX0iR" id="3yeYUb95Uoq" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Tweaker" />
-      <property role="1M_7uD" value="true" />
       <node concept="2EX0iL" id="4jk7wJwFxX9" role="2EX0iN">
         <property role="TrG5h" value="setErrorValue" />
         <node concept="2EWNYT" id="4jk7wJwFzaZ" role="1UOdpc">

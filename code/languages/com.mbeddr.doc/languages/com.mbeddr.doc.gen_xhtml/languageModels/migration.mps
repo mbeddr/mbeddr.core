@@ -2,7 +2,7 @@
 <model ref="r:ae055ed2-d275-4240-a55e-5cc3d3f0b957(com.mbeddr.doc.gen_xhtml.migration)">
   <persistence version="9" />
   <languages>
-    <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="0" />
+    <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>

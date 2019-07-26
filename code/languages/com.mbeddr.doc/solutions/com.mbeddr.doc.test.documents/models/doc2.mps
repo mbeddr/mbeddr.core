@@ -2,8 +2,8 @@
 <model ref="r:ec8f5bd7-b4be-44a4-b858-cf2a0b6fd7e1(com.mbeddr.doc.test.documents.doc2)">
   <persistence version="9" />
   <languages>
-    <use id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml" version="1" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
+    <use id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml" version="-1" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
   </languages>
   <imports>
     <import index="u9wj" ref="r:5de29430-c053-484a-9826-87e7556eee3e(com.mbeddr.doc.test.documents.code)" />
@@ -187,6 +187,7 @@
       </node>
     </node>
     <node concept="2SbYGw" id="2B9KjOuvX9f" role="A10yx">
+      <property role="TrG5h" value="imgs" />
       <node concept="9PVaO" id="2B9KjOuvX9e" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />

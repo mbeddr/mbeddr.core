@@ -12,12 +12,8 @@ repositories {
 }
 configurations {
     junitAnt
-    mpsArtifacts
+    mbeddrPlatform
 }
-
-ext.dependencyRepositories = [
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
 
 dependencies {
     junitAnt 'junit:junit:4.12'
@@ -27,15 +23,15 @@ dependencies {
     junitAnt('org.apache.ant:ant-junit4:1.9.7') {
         transitive = false
     }
-    mpsArtifacts "com.mbeddr:platform:$mbeddrBuildNumber"
+    mbeddrPlatform "com.mbeddr:platform:$mbeddrPlatformBuildNumber"
 }
 
 
-task resolveMpsArtifacts() {
+task resolve_mbeddr_platform() {
     doLast {
         copy {
             from {
-                    configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+                    configurations.mbeddrPlatform.resolve().collect { zipTree(it) }
                  }
             into artifactsDir
         }
@@ -74,7 +70,7 @@ def mbeddrDependencies
 
 //on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
 if (ciBuild) {
-    mbeddrDependencies = [copy_spawner, resolveMpsArtifacts]
+    mbeddrDependencies = [copy_spawner, resolve_mbeddr_platform]
 } else {
     mbeddrDependencies = [copy_spawner, ':build:com.mbeddr:platform:build_platform']
 }
@@ -129,31 +125,24 @@ task build_mbeddr_core_ex(type: BuildLanguages, dependsOn: [build_mbeddr, copy_l
     script script_test_mbeddrCoreEx
 }
 
-task build_mbeddr_core_ex_library(type: BuildLanguages, dependsOn: build_mbeddr) {
-    script script_test_mbeddrCoreExLibrary
-}
-
 task test_mbeddr_core_ts(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCoreTs
 }
 
-task test_mbeddr_core_ex_library << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core/tests/aLibrary/source_gen/aLibrary/lib")
+task test_mbeddr_core_ex {
+	doLast {
+		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core")
+	}
 }
 
-task test_mbeddr_core_ex << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core")
-}
-
-task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts, test_mbeddr_core_ex_library]) {
+task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts]) {
 
 }
-test_mbeddr_core_ex_library.dependsOn build_mbeddr_core_ex
-test_mbeddr_core_ex.dependsOn test_mbeddr_core_ex_library
-test_mbeddr_core_ex_library.dependsOn build_mbeddr_core_ex_library
 
-task test_mbeddr_cc_ex << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.cc")
+task test_mbeddr_cc_ex {
+	doLast {
+		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.cc")
+	}
 }
 
 task build_mbeddr_cc_ex(type: RunMbeddrAntScript, dependsOn: build_mbeddr) {
@@ -174,8 +163,10 @@ task build_mbeddr_xmodel_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrXmodelEx
 }
 
-task test_mbeddr_ext_ex << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.ext")
+task test_mbeddr_ext_ex {
+	doLast {
+		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.ext")
+	}
 }
 
 task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
@@ -206,7 +197,7 @@ publishing {
             artifact(publish_mbeddr) {}
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mpsArtifacts.resolvedConfiguration.firstLevelModuleDependencies.each{
+                configurations.mbeddrPlatform.resolvedConfiguration.firstLevelModuleDependencies.each{
                     def dependencyNode = dependenciesNode.appendNode('dependency')
                     dependencyNode.appendNode('groupId', it.moduleGroup)
                     dependencyNode.appendNode('artifactId', it.moduleName)

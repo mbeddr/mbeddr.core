@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -45,9 +45,6 @@
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
         <child id="1164903700860" name="catchClause" index="TEXxN" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -299,7 +296,6 @@
   <node concept="312cEu" id="52ZF9D36_0i">
     <property role="TrG5h" value="GlobalListener" />
     <node concept="Wx3nA" id="5iW7uqbU3pi" role="jymVt">
-      <property role="IEkAT" value="false" />
       <property role="TrG5h" value="LOG" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="5iW7uqbU0r8" role="1tU5fm">
@@ -362,7 +358,6 @@
               <property role="1EzhhJ" value="false" />
               <property role="TrG5h" value="createCollection" />
               <property role="DiZV1" value="false" />
-              <property role="IEkAT" value="false" />
               <node concept="3Tmbuc" id="52ZF9D39KsQ" role="1B3o_S" />
               <node concept="3uibUv" id="52ZF9D39KsS" role="3clF45">
                 <ref role="3uigEE" to="33ny:~Collection" resolve="Collection" />
@@ -519,7 +514,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="onUnloaded" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D38J0k" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D38J0m" role="3clF45" />
       <node concept="37vLTG" id="5m02zYhEOKN" role="3clF46">
@@ -612,7 +606,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="onLoaded" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D38J0u" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D38J0w" role="3clF45" />
       <node concept="37vLTG" id="5m02zYhI59w" role="3clF46">
@@ -1230,7 +1223,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="beforeChildRemoved" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MI7" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MI9" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MIa" role="3clF46">
@@ -1338,7 +1330,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="childAdded" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MIE" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MIG" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MIH" role="3clF46">
@@ -1446,7 +1437,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="childRemoved" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MIL" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MIN" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MIO" role="3clF46">
@@ -1726,7 +1716,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="beforeModelDisposed" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MIe" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MIg" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MIh" role="3clF46">
@@ -1744,7 +1733,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="beforeModelFileChanged" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MIl" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MIn" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MIo" role="3clF46">
@@ -1762,7 +1750,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="beforeModelRenamed" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MIs" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MIu" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MIv" role="3clF46">
@@ -1780,7 +1767,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="beforeRootRemoved" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MIz" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MI_" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MIA" role="3clF46">
@@ -1874,7 +1860,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="devkitAdded" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MIS" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MIU" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MIV" role="3clF46">
@@ -1892,7 +1877,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="devkitRemoved" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MIZ" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MJ1" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MJ2" role="3clF46">
@@ -1910,7 +1894,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getPriority" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MJ6" role="1B3o_S" />
       <node concept="3uibUv" id="52ZF9D37MJ8" role="3clF45">
         <ref role="3uigEE" to="j9co:~SModelListener$SModelListenerPriority" resolve="SModelListener.SModelListenerPriority" />
@@ -1934,7 +1917,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="importAdded" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MJe" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MJg" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MJh" role="3clF46">
@@ -1952,7 +1934,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="importRemoved" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MJl" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MJn" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MJo" role="3clF46">
@@ -1970,7 +1951,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="languageAdded" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MJs" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MJu" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MJv" role="3clF46">
@@ -1988,7 +1968,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="languageRemoved" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MJz" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MJ_" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MJA" role="3clF46">
@@ -2006,7 +1985,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="modelFileChanged" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MJE" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MJG" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MJH" role="3clF46">
@@ -2024,7 +2002,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="modelLoadingStateChanged" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MJL" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MJN" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MJO" role="3clF46">
@@ -2048,7 +2025,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="modelRenamed" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MJU" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MJW" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MJX" role="3clF46">
@@ -2066,7 +2042,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="modelSaved" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MK1" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MK3" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MK4" role="3clF46">
@@ -2084,7 +2059,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="propertyChanged" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MK8" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MKa" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MKb" role="3clF46">
@@ -2207,7 +2181,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="referenceAdded" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MKf" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MKh" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MKi" role="3clF46">
@@ -2339,7 +2312,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="referenceRemoved" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MKm" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MKo" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MKp" role="3clF46">
@@ -2471,7 +2443,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="rootAdded" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MKt" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MKv" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MKw" role="3clF46">
@@ -2568,7 +2539,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="rootRemoved" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="52ZF9D37MK_" role="1B3o_S" />
       <node concept="3cqZAl" id="52ZF9D37MKB" role="3clF45" />
       <node concept="37vLTG" id="52ZF9D37MKC" role="3clF46">
@@ -2676,7 +2646,6 @@
   <node concept="3HP615" id="52ZF9D37UKv">
     <property role="TrG5h" value="IChildListener" />
     <node concept="3clFb_" id="52ZF9D37Vn2" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getRole" />
       <node concept="3uibUv" id="52ZF9D37VxT" role="3clF45">
         <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
@@ -2686,7 +2655,6 @@
     </node>
     <node concept="2tJIrI" id="52ZF9D37XnV" role="jymVt" />
     <node concept="3clFb_" id="52ZF9D37Xq3" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="beforeChildRemoved" />
       <node concept="37vLTG" id="52ZF9D37Y7g" role="3clF46">
         <property role="TrG5h" value="parent" />
@@ -2701,7 +2669,6 @@
       <node concept="3clFbS" id="52ZF9D37Xq7" role="3clF47" />
     </node>
     <node concept="3clFb_" id="52ZF9D380Ng" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="childAdded" />
       <node concept="37vLTG" id="52ZF9D380Nh" role="3clF46">
         <property role="TrG5h" value="parent" />
@@ -2716,7 +2683,6 @@
       <node concept="3clFbS" id="52ZF9D380Nn" role="3clF47" />
     </node>
     <node concept="3clFb_" id="52ZF9D37Zht" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="childRemoved" />
       <node concept="37vLTG" id="52ZF9D37ZDR" role="3clF46">
         <property role="TrG5h" value="parent" />
@@ -2739,7 +2705,6 @@
   <node concept="3HP615" id="52ZF9D37Xxh">
     <property role="TrG5h" value="IModelListener" />
     <node concept="3clFb_" id="5iW7uqbKDl6" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getParentConcept" />
       <node concept="3uibUv" id="5iW7uqbKDl7" role="3clF45">
         <ref role="3uigEE" to="c17a:~SConcept" resolve="SConcept" />
@@ -2762,7 +2727,6 @@
     </node>
     <node concept="2tJIrI" id="52ZF9D3941e" role="jymVt" />
     <node concept="3clFb_" id="52ZF9D382Kd" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getListeners" />
       <node concept="A3Dl8" id="52ZF9D383gT" role="3clF45">
         <node concept="3uibUv" id="5iW7uqbJwrQ" role="A3Ik2">
@@ -2902,7 +2866,6 @@
   <node concept="3HP615" id="52ZF9D3n3Zt">
     <property role="TrG5h" value="IReferenceAddedListener" />
     <node concept="3clFb_" id="52ZF9D3nFog" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="referenceAdded" />
       <node concept="3cqZAl" id="52ZF9D3nFoi" role="3clF45" />
       <node concept="3Tm1VV" id="52ZF9D3nFoj" role="1B3o_S" />
@@ -2930,7 +2893,6 @@
   <node concept="3HP615" id="52ZF9D3ni7X">
     <property role="TrG5h" value="IForwarder" />
     <node concept="3clFb_" id="52ZF9D3nj_A" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="forward" />
       <node concept="3cqZAl" id="52ZF9D3nj_C" role="3clF45" />
       <node concept="3Tm1VV" id="52ZF9D3nj_D" role="1B3o_S" />
@@ -3022,7 +2984,6 @@
   <node concept="3HP615" id="5iW7uqbGLWV">
     <property role="TrG5h" value="IReferenceListener" />
     <node concept="3clFb_" id="5iW7uqbGM3h" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getRole" />
       <node concept="3uibUv" id="5iW7uqbGMg_" role="3clF45">
         <ref role="3uigEE" to="c17a:~SReferenceLink" resolve="SReferenceLink" />
@@ -3038,7 +2999,6 @@
   <node concept="3HP615" id="5iW7uqbGMUZ">
     <property role="TrG5h" value="IReferenceRemovedListener" />
     <node concept="3clFb_" id="5iW7uqbGMV0" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="referenceRemoved" />
       <node concept="3cqZAl" id="5iW7uqbGMV1" role="3clF45" />
       <node concept="3Tm1VV" id="5iW7uqbGMV2" role="1B3o_S" />
@@ -3142,7 +3102,6 @@
   <node concept="3HP615" id="5iW7uqbOQBG">
     <property role="TrG5h" value="IPropertyListener" />
     <node concept="3clFb_" id="5iW7uqbP2Dl" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getProperty" />
       <node concept="3uibUv" id="5iW7uqbP2Vk" role="3clF45">
         <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
@@ -3151,7 +3110,6 @@
       <node concept="3clFbS" id="5iW7uqbP2Dp" role="3clF47" />
     </node>
     <node concept="3clFb_" id="5iW7uqbORwP" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="propertyChanged" />
       <node concept="37vLTG" id="5iW7uqbORHL" role="3clF46">
         <property role="TrG5h" value="node" />
@@ -3261,7 +3219,6 @@
   <node concept="3HP615" id="5iW7uqbUKMO">
     <property role="TrG5h" value="IRootAddedListener" />
     <node concept="3clFb_" id="5iW7uqbUKWF" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="rootAdded" />
       <node concept="37vLTG" id="5iW7uqbULcD" role="3clF46">
         <property role="TrG5h" value="root" />
@@ -3283,7 +3240,6 @@
   <node concept="3HP615" id="5iW7uqbULr1">
     <property role="TrG5h" value="IRootRemovedListener" />
     <node concept="3clFb_" id="5iW7uqbULr2" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="rootRemoved" />
       <node concept="37vLTG" id="5iW7uqbULr3" role="3clF46">
         <property role="TrG5h" value="root" />
@@ -3305,7 +3261,6 @@
   <node concept="3HP615" id="5iW7uqbULUf">
     <property role="TrG5h" value="IRootBeforeRemovedListener" />
     <node concept="3clFb_" id="5iW7uqbUM52" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="beforeRootRemoved" />
       <node concept="37vLTG" id="5iW7uqbUM53" role="3clF46">
         <property role="TrG5h" value="root" />
@@ -4088,8 +4043,8 @@
             <node concept="37vLTw" id="5m02zYhGM9h" role="2Oq$k0">
               <ref role="3cqZAo" node="5m02zYhGsuC" resolve="myModules" />
             </node>
-            <node concept="TSZUe" id="5m02zYhGKO9" role="2OqNvi">
-              <node concept="37vLTw" id="5m02zYhGMhV" role="25WWJ7">
+            <node concept="3dhRuq" id="2WH8I$so_4j" role="2OqNvi">
+              <node concept="37vLTw" id="2WH8I$so_4l" role="25WWJ7">
                 <ref role="3cqZAo" node="ncHX0OSUkG" resolve="module" />
               </node>
             </node>

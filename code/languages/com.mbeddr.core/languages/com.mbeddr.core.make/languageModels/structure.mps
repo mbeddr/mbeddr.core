@@ -91,22 +91,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
       <node concept="asaX9" id="gGhq7horWY" role="lGtFl" />
     </node>
-    <node concept="1TJgyj" id="2Vizpn2LEtl" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="variables" />
-      <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="3373914745211365205" />
-      <ref role="20lvS9" node="2Vizpn2LEtm" resolve="Variable" />
-      <node concept="asaX9" id="6_CUGSFJ0GY" role="lGtFl" />
-    </node>
-    <node concept="1TJgyj" id="5ak6HMA0Ex_" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="targets" />
-      <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="5950410542643587173" />
-      <ref role="20lvS9" node="5ak6HMA0Ext" resolve="Target" />
-      <node concept="asaX9" id="6_CUGSFJ0H0" role="lGtFl" />
-    </node>
     <node concept="PrWs8" id="5ak6HMA0E3w" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -189,12 +173,6 @@
     <property role="R4oN_" value="a make file variable" />
     <property role="EcuMT" value="3373914745211365206" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1ViOc8L8idT" role="1TKVEl">
-      <property role="TrG5h" value="conditional" />
-      <property role="IQ2nx" value="2221067098713564025" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="6_CUGSFHqbH" role="lGtFl" />
-    </node>
     <node concept="1TJgyi" id="6_CUGSFFpZF" role="1TKVEl">
       <property role="TrG5h" value="assignmentType" />
       <property role="IQ2nx" value="7595578942777303019" />
@@ -367,9 +345,6 @@
     <property role="EcuMT" value="7595578942776868431" />
     <node concept="PrWs8" id="6_CUGSFHTH2" role="PzmwI">
       <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
-    </node>
-    <node concept="PrWs8" id="6_CUGSFER5X" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="AxPO7" id="6_CUGSFFpW0">

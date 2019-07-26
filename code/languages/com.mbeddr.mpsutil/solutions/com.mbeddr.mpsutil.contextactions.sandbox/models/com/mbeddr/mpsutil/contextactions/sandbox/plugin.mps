@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
@@ -21,23 +21,21 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
-    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
-      </concept>
-    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
-        <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
+      <concept id="1203082695294" name="jetbrains.mps.lang.plugin.structure.DoUpdateBlock" flags="in" index="tkhdA" />
+      <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
         <child id="1207145245948" name="contents" index="ftER_" />
@@ -459,10 +457,25 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.NODE" resolve="NODE" />
       <node concept="1oajcY" id="4mMeETlroWM" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="4mMeETlrjh3" role="3Uehp1">
-      <node concept="10M0yZ" id="4mMeETlrndU" role="3xaMm5">
-        <ref role="1PxDUh" to="9w4s:~Icons" resolve="Icons" />
-        <ref role="3cqZAo" to="9w4s:~PlatformIcons.CHECK_ICON" resolve="CHECK_ICON" />
+    <node concept="tkhdA" id="2Fugwv5EF_5" role="tmbBb">
+      <node concept="3clFbS" id="2Fugwv5EF_6" role="2VODD2">
+        <node concept="3clFbF" id="2Fugwv5EG06" role="3cqZAp">
+          <node concept="2OqwBi" id="2Fugwv5EPrY" role="3clFbG">
+            <node concept="2OqwBi" id="2Fugwv5EOHO" role="2Oq$k0">
+              <node concept="tl45R" id="2Fugwv5EG05" role="2Oq$k0" />
+              <node concept="liA8E" id="2Fugwv5EPj7" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getPresentation" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2Fugwv5EPBk" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon):void" resolve="setIcon" />
+              <node concept="10M0yZ" id="4mMeETlrndU" role="37wK5m">
+                <ref role="1PxDUh" to="9w4s:~Icons" resolve="Icons" />
+                <ref role="3cqZAo" to="9w4s:~PlatformIcons.CHECK_ICON" resolve="CHECK_ICON" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

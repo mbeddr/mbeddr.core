@@ -2,14 +2,14 @@
 <model ref="r:099721f8-3f0c-473f-82a7-0c946130548a(test.analyses.cbmc.gswitch@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
@@ -23,6 +23,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" implicit="true" />
   </imports>
   <registry>
@@ -30,6 +31,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -129,6 +131,17 @@
       <property role="TrG5h" value="testSignum" />
       <node concept="3cqZAl" id="7yN$Xh8olDK" role="3clF45" />
       <node concept="3clFbS" id="7yN$Xh8olDL" role="3clF47">
+        <node concept="3cpWs8" id="71B0VAs0odM" role="3cqZAp">
+          <node concept="3cpWsn" id="71B0VAs0odN" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="71B0VAs0odL" role="1tU5fm" />
+            <node concept="BaHAS" id="71B0VAs0odO" role="33vP2m">
+              <property role="BaHAW" value="gswitch" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="gsw" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7yN$Xh8olDM" role="3cqZAp">
           <node concept="3cpWsn" id="7yN$Xh8olDN" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -140,10 +153,14 @@
             <node concept="NRdvd" id="7SLmAEO8qut" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:7yN$Xh8otP7" resolve="checkGSwitchExpression" />
-              <node concept="BaHAS" id="7SLmAEO8quu" role="37wK5m">
-                <property role="BaHAW" value="gswitch" />
-                <property role="BaGAP" value="" />
-                <property role="BaBD8" value="gsw" />
+              <node concept="2OqwBi" id="71B0VAs0mEY" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VAs0mjL" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VAs0o0e" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="71B0VAs0odP" role="37wK5m">
+                <ref role="3cqZAo" node="71B0VAs0odN" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7SLmAEO8quv" role="37wK5m">
                 <property role="Xl_RC" value="simple_gswitch" />
@@ -375,6 +392,17 @@
       <property role="TrG5h" value="testEmpty" />
       <node concept="3cqZAl" id="7SLmAEO8mtu" role="3clF45" />
       <node concept="3clFbS" id="7SLmAEO8mtv" role="3clF47">
+        <node concept="3cpWs8" id="71B0VAs0oJE" role="3cqZAp">
+          <node concept="3cpWsn" id="71B0VAs0oJF" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="71B0VAs0oJD" role="1tU5fm" />
+            <node concept="BaHAS" id="71B0VAs0oJG" role="33vP2m">
+              <property role="BaHAW" value="gswitch" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="gsw" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7SLmAEO8mtw" role="3cqZAp">
           <node concept="3cpWsn" id="7SLmAEO8mtx" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -386,10 +414,14 @@
             <node concept="NRdvd" id="7SLmAEO8q9I" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
               <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
-              <node concept="BaHAS" id="7SLmAEO8q_8" role="37wK5m">
-                <property role="BaHAW" value="gswitch" />
-                <property role="BaGAP" value="" />
-                <property role="BaBD8" value="gsw" />
+              <node concept="2OqwBi" id="71B0VArMLZs" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArMLKC" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArMMXS" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="71B0VAs0oJH" role="37wK5m">
+                <ref role="3cqZAo" node="71B0VAs0oJF" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7SLmAEO8qZp" role="37wK5m">
                 <property role="Xl_RC" value="empty_gswitch" />
@@ -464,6 +496,12 @@
             <node concept="NRdvd" id="7SLmAEO8smY" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
               <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="2OqwBi" id="71B0VArMUiz" role="37wK5m">
+                <node concept="1jxXqW" id="71B0VArMUi$" role="2Oq$k0" />
+                <node concept="liA8E" id="71B0VArMUi_" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="5EwdfGVh6TN" role="37wK5m">
                 <ref role="3cqZAo" node="5EwdfGVh6TL" resolve="m" />
               </node>

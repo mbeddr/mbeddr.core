@@ -152,10 +152,15 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3L4lRB2Gtfz">
-    <property role="TrG5h" value="ObjectClass" />
+    <property role="TrG5h" value="JsonFile" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="4342692121161094115" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="34$4Bn6i2gb" role="1TKVEl">
+      <property role="IQ2nx" value="3540975504067142667" />
+      <property role="TrG5h" value="folder" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="3L4lRB2GtfY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="object" />

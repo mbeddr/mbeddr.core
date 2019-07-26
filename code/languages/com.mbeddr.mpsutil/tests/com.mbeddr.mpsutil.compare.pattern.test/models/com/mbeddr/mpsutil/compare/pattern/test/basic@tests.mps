@@ -4,14 +4,14 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="36590f48-d68b-4c16-bfba-c769260bbac0" name="com.mbeddr.mpsutil.compare.pattern.baselang" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
@@ -216,7 +216,7 @@
       <concept id="91081616816046016" name="com.mbeddr.mpsutil.compare.pattern.structure.PatternRefExpression" flags="ng" index="1QCeBZ">
         <child id="91081616816046017" name="expression" index="1QCeBY" />
       </concept>
-      <concept id="91081616816150757" name="com.mbeddr.mpsutil.compare.pattern.structure.PatternType" flags="ig" index="1QDCVq">
+      <concept id="91081616816150757" name="com.mbeddr.mpsutil.compare.pattern.structure.PatternType" flags="ng" index="1QDCVq">
         <reference id="91081616816150758" name="concept" index="1QDCVp" />
       </concept>
     </language>
@@ -295,7 +295,7 @@
         <reference id="665537614209771460" name="pattern" index="uBx4F" />
         <child id="665537614210671828" name="expression" index="uz58V" />
       </concept>
-      <concept id="665537614208854349" name="com.mbeddr.mpsutil.compare.pattern.baselang.structure.MatchResultType" flags="ig" index="uE1Yy">
+      <concept id="665537614208854349" name="com.mbeddr.mpsutil.compare.pattern.baselang.structure.MatchResultType" flags="ng" index="uE1Yy">
         <reference id="665537614209425697" name="pattern" index="uClve" />
       </concept>
       <concept id="665537614208925379" name="com.mbeddr.mpsutil.compare.pattern.baselang.structure.NamedGetTarget" flags="ng" index="uEgwG" />

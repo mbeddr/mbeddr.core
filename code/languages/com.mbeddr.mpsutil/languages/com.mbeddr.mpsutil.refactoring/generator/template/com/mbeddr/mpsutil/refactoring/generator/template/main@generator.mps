@@ -2,13 +2,13 @@
 <model ref="f47c72c0-b22e-4aef-a0e3-1bd67990c535/r:836cb6d0-7a03-40c1-8e6a-754de267c44b(com.mbeddr.mpsutil.refactoring#7518061998923596540/com.mbeddr.mpsutil.refactoring.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="3ecd7c84-cde3-45de-886c-135ecc69b742" name="jetbrains.mps.lang.refactoring" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -113,9 +113,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -428,11 +425,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -1090,7 +1087,6 @@
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="run" />
                       <property role="DiZV1" value="false" />
-                      <property role="IEkAT" value="false" />
                       <node concept="3Tm1VV" id="1sk$UGQ12tQ" role="1B3o_S" />
                       <node concept="3cqZAl" id="1sk$UGQ12tR" role="3clF45" />
                       <node concept="3clFbS" id="1sk$UGQ12tS" role="3clF47">
@@ -1384,7 +1380,6 @@
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="compute" />
                       <property role="DiZV1" value="false" />
-                      <property role="IEkAT" value="false" />
                       <node concept="3Tm1VV" id="1sk$UGQ12wt" role="1B3o_S" />
                       <node concept="2I9FWS" id="1sk$UGQ12x6" role="3clF45" />
                       <node concept="3clFbS" id="1sk$UGQ12wv" role="3clF47">
@@ -1976,7 +1971,6 @@
                                     <node concept="3clFb_" id="3e2grRPIlws" role="jymVt">
                                       <property role="1EzhhJ" value="false" />
                                       <property role="TrG5h" value="keep" />
-                                      <property role="IEkAT" value="false" />
                                       <node concept="37vLTG" id="3e2grRPIlwt" role="3clF46">
                                         <property role="TrG5h" value="snode" />
                                         <node concept="3Tqbb2" id="3e2grRPIlwu" role="1tU5fm" />
@@ -2023,7 +2017,6 @@
                                     <node concept="3clFb_" id="3e2grRPIlwK" role="jymVt">
                                       <property role="1EzhhJ" value="false" />
                                       <property role="TrG5h" value="validate" />
-                                      <property role="IEkAT" value="false" />
                                       <node concept="17QB3L" id="3e2grRPIlwL" role="3clF45" />
                                       <node concept="3Tm1VV" id="3e2grRPIlwM" role="1B3o_S" />
                                       <node concept="37vLTG" id="3e2grRPIlwN" role="3clF46">
@@ -2881,7 +2874,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="setSelected" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="1URh_kuDmXP" role="1B3o_S" />
       <node concept="3cqZAl" id="1URh_kuDmXQ" role="3clF45" />
       <node concept="37vLTG" id="1URh_kuDmXR" role="3clF46">
@@ -3357,7 +3349,6 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="setSelected" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="1URh_ku$bbt" role="1B3o_S" />
         <node concept="3cqZAl" id="1URh_ku$bbu" role="3clF45" />
         <node concept="37vLTG" id="1URh_ku$bbv" role="3clF46">

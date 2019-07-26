@@ -12,12 +12,8 @@ repositories {
 }
 configurations {
     junitAnt
-    mpsArtifacts
+    mbeddr
 }
-
-ext.dependencyRepositories = [
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
 
 dependencies {
     junitAnt 'junit:junit:4.12'
@@ -27,15 +23,15 @@ dependencies {
     junitAnt('org.apache.ant:ant-junit4:1.9.7') {
         transitive = false
     }
-    mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
+    mbeddr "com.mbeddr:mbeddr:$mbeddrBuildNumber"
 }
 
 
-task resolveMpsArtifacts() {
+task resolve_mbeddr() {
     doLast {
         copy {
             from {
-                    configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+                    configurations.mbeddr.resolve().collect { zipTree(it) }
                  }
             into artifactsDir
         }
@@ -43,14 +39,16 @@ task resolveMpsArtifacts() {
 }
 
 
-task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: [resolveMpsArtifacts, ':build:com.mbeddr:platform:copy_allScripts']) {
+task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: [resolve_mbeddr, ':build:com.mbeddr:platform:copy_allScripts']) {
     script script_test_mbeddrAnalysisTs
 }
-task test_mbeddr_analysis_ex << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.analyses")
+task test_mbeddr_analysis_ex {
+	doLast {
+		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.analyses")
+	}
 }
 
-task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: resolveMpsArtifacts) {
+task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: resolve_mbeddr) {
     script script_test_mbeddrAnalysisEx
 }
 

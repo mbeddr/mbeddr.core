@@ -15,6 +15,7 @@
     <import index="pr99" ref="r:d360eb14-6c2a-48bb-8591-1dfcadaf9f6e(com.mbeddr.analyses.spin.rt.utils)" />
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -124,12 +125,14 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjN" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -137,6 +140,12 @@
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -242,6 +251,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="1ieRNjmuxg_" role="ukAjM">
+            <ref role="3cqZAo" node="1ieRNjmuwQX" resolve="repo" />
+          </node>
         </node>
         <node concept="3clFbH" id="7VkE0BpuWKg" role="3cqZAp" />
         <node concept="3clFbJ" id="Hdy9e2WjWT" role="3cqZAp">
@@ -263,8 +275,40 @@
           </node>
         </node>
         <node concept="3clFbH" id="7VkE0BpwcPf" role="3cqZAp" />
+        <node concept="3cpWs8" id="2bw4b0M2WTA" role="3cqZAp">
+          <node concept="3cpWsn" id="2bw4b0M2WTB" role="3cpWs9">
+            <property role="TrG5h" value="panFile" />
+            <node concept="3uibUv" id="2bw4b0M2WT_" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="2bw4b0M2WTC" role="33vP2m">
+              <node concept="1pGfFk" id="2bw4b0M2WTD" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="2bw4b0M2WTE" role="37wK5m">
+                  <ref role="3cqZAo" node="4kcU3Yrkv2h" resolve="panFileFullyQualifiedName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="7VkE0BpuGuC" role="3cqZAp">
           <node concept="3clFbS" id="7VkE0BpuGuE" role="3clFbx">
+            <node concept="RRSsy" id="2bw4b0M2Wzc" role="3cqZAp">
+              <property role="RRSoG" value="error" />
+              <node concept="3cpWs3" id="2bw4b0M2XLU" role="RRSoy">
+                <node concept="2OqwBi" id="2bw4b0M2Y7O" role="3uHU7w">
+                  <node concept="37vLTw" id="2bw4b0M2XNK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bw4b0M2WTB" resolve="panFile" />
+                  </node>
+                  <node concept="liA8E" id="2bw4b0M2ZgZ" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2bw4b0M2Wze" role="3uHU7B">
+                  <property role="Xl_RC" value="pan file does not exist - " />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="69N9a9ZRext" role="3cqZAp">
               <node concept="3cpWsn" id="69N9a9ZRexu" role="3cpWs9">
                 <property role="TrG5h" value="result" />
@@ -321,13 +365,8 @@
           </node>
           <node concept="3fqX7Q" id="7VkE0BpuIQD" role="3clFbw">
             <node concept="2OqwBi" id="7VkE0BpuIQF" role="3fr31v">
-              <node concept="2ShNRf" id="7VkE0BpuIQG" role="2Oq$k0">
-                <node concept="1pGfFk" id="7VkE0BpuIQH" role="2ShVmc">
-                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                  <node concept="37vLTw" id="7VkE0BpuIQI" role="37wK5m">
-                    <ref role="3cqZAo" node="4kcU3Yrkv2h" resolve="panFileFullyQualifiedName" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="2bw4b0M2WTF" role="2Oq$k0">
+                <ref role="3cqZAo" node="2bw4b0M2WTB" resolve="panFile" />
               </node>
               <node concept="liA8E" id="7VkE0BpuIQJ" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
@@ -340,13 +379,8 @@
           <node concept="3clFbS" id="5wKAmZ3RDqs" role="3clFbx">
             <node concept="3clFbF" id="5wKAmZ3RKf5" role="3cqZAp">
               <node concept="2OqwBi" id="5wKAmZ3RMhN" role="3clFbG">
-                <node concept="2ShNRf" id="5wKAmZ3RKf1" role="2Oq$k0">
-                  <node concept="1pGfFk" id="5wKAmZ3RLAC" role="2ShVmc">
-                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                    <node concept="37vLTw" id="5wKAmZ3RLOR" role="37wK5m">
-                      <ref role="3cqZAo" node="4kcU3Yrkv2h" resolve="panFileFullyQualifiedName" />
-                    </node>
-                  </node>
+                <node concept="37vLTw" id="2bw4b0M2WTG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2bw4b0M2WTB" resolve="panFile" />
                 </node>
                 <node concept="liA8E" id="5wKAmZ3RNiC" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~File.setExecutable(boolean):boolean" resolve="setExecutable" />
@@ -437,6 +471,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="1ieRNjmux_W" role="ukAjM">
+            <ref role="3cqZAo" node="1ieRNjmuwQX" resolve="repo" />
+          </node>
         </node>
         <node concept="3clFbH" id="7VkE0Bpwiun" role="3cqZAp" />
         <node concept="3clFbH" id="Hdy9e2WA5B" role="3cqZAp" />
@@ -499,6 +536,12 @@
       <node concept="3Tm1VV" id="4kcU3Yrkdux" role="1B3o_S" />
       <node concept="3uibUv" id="4kcU3YrkV18" role="3clF45">
         <ref role="3uigEE" to="8e9v:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
+      </node>
+      <node concept="37vLTG" id="1ieRNjmuwQX" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuxch" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="37vLTG" id="4kcU3Yrkd$2" role="3clF46">
         <property role="TrG5h" value="pm" />
@@ -573,6 +616,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="1ieRNjmuCV2" role="ukAjN">
+            <ref role="3cqZAo" node="1ieRNjmuCC2" resolve="repo" />
           </node>
         </node>
         <node concept="3clFbJ" id="5wKAmZ3RNO$" role="3cqZAp">
@@ -704,6 +750,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="1ieRNjmuGrV" role="ukAjM">
+            <ref role="3cqZAo" node="1ieRNjmuCC2" resolve="repo" />
+          </node>
         </node>
         <node concept="3clFbH" id="3lXW7OZ5rU9" role="3cqZAp" />
         <node concept="3cpWs8" id="HmUOIG_5bg" role="3cqZAp">
@@ -767,6 +816,12 @@
       <node concept="3Tm1VV" id="HmUOIG_5b_" role="1B3o_S" />
       <node concept="3uibUv" id="HmUOIG_5bA" role="3clF45">
         <ref role="3uigEE" to="8e9v:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
+      </node>
+      <node concept="37vLTG" id="1ieRNjmuCC2" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="1ieRNjmuCQH" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="37vLTG" id="3lXW7OZ7oU3" role="3clF46">
         <property role="TrG5h" value="panSettings" />

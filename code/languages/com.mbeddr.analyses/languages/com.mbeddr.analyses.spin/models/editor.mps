@@ -2,12 +2,12 @@
 <model ref="r:b536c1ef-ad5a-4ba9-99fe-f353751ef7fc(com.mbeddr.analyses.spin.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
@@ -399,65 +399,6 @@
                   </node>
                 </node>
                 <node concept="3GX2aA" id="5KYWJPNP2eM" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3EZMnI" id="7Rf0$0HCQrw" role="3EZMnx">
-        <node concept="VPM3Z" id="7Rf0$0HCQrx" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="lj46D" id="7Rf0$0HCQry" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pVoyu" id="7Rf0$0HCQrz" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3F0ifn" id="7Rf0$0HCQr$" role="3EZMnx">
-          <property role="3F0ifm" value="external libraries:" />
-        </node>
-        <node concept="3EZMnI" id="7Rf0$0HCQr_" role="3EZMnx">
-          <node concept="l2Vlx" id="7Rf0$0HCQrA" role="2iSdaV" />
-          <node concept="3F2HdR" id="7Rf0$0HCQrB" role="3EZMnx">
-            <ref role="1NtTu8" to="51wr:4aYGoLbxbV6" resolve="externalLibraries" />
-            <node concept="l2Vlx" id="7Rf0$0HCQrC" role="2czzBx" />
-            <node concept="lj46D" id="7Rf0$0HCQrD" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
-            <node concept="pj6Ft" id="7Rf0$0HCQrE" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
-            <node concept="pj6Ft" id="7Rf0$0HCQrF" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
-            <node concept="3F0ifn" id="7Rf0$0HCQrG" role="2czzBI">
-              <property role="3F0ifm" value="" />
-              <node concept="VPxyj" id="7Rf0$0HCQrH" role="3F10Kt">
-                <property role="VOm3f" value="true" />
-              </node>
-            </node>
-          </node>
-          <node concept="pVoyu" id="7Rf0$0HCQrI" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="2iRkQZ" id="7Rf0$0HCQrJ" role="2iSdaV" />
-        <node concept="pkWqt" id="7Rf0$0HCQrK" role="pqm2j">
-          <node concept="3clFbS" id="7Rf0$0HCQrL" role="2VODD2">
-            <node concept="3clFbF" id="7Rf0$0HCQrM" role="3cqZAp">
-              <node concept="2OqwBi" id="5KYWJPNP2eG" role="3clFbG">
-                <node concept="2OqwBi" id="7Rf0$0HCQrO" role="2Oq$k0">
-                  <node concept="pncrf" id="7Rf0$0HCQrP" role="2Oq$k0" />
-                  <node concept="Bykcj" id="5KYWJPNP2eD" role="2OqNvi">
-                    <node concept="1aIX9F" id="5KYWJPNP2eE" role="1xVPHs">
-                      <node concept="26LbJo" id="5KYWJPNP2eF" role="1aIX9E">
-                        <ref role="26LbJp" to="51wr:4aYGoLbxbV6" resolve="externalLibraries" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3GX2aA" id="5KYWJPNP2eH" role="2OqNvi" />
               </node>
             </node>
           </node>

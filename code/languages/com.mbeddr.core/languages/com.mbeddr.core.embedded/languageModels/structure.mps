@@ -15,6 +15,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -97,7 +98,7 @@
     </node>
     <node concept="1TJgyj" id="5W7baq$5gqC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="setterExpression" />
+      <property role="20kJfa" value="setExpression" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="6847490852669163176" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
@@ -122,35 +123,40 @@
     <property role="TrG5h" value="Register16" />
     <property role="34LRSv" value="register16" />
     <property role="EcuMT" value="6847490852669177902" />
-    <ref role="1TJDcQ" node="5W7baq$5gqy" resolve="Register" />
+    <ref role="1TJDcQ" node="4PgLlwdNYTo" resolve="StructuredRegister" />
     <node concept="1TJgyj" id="5W7baq$5k0J" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lowSetterExpr" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="6847490852669177903" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="asaX9" id="4PgLlwdOfpW" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="5W7baq$5k0K" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="highSetterExpr" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="6847490852669177904" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="asaX9" id="50jlhG3woTi" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="5W7baq$5k0L" role="1TKVEl">
-      <property role="TrG5h" value="highSuffix" />
+      <property role="TrG5h" value="highSuffix_old" />
       <property role="IQ2nx" value="6847490852669177905" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="4PgLlwdOfpN" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="5W7baq$5k0M" role="1TKVEl">
-      <property role="TrG5h" value="lowSuffix" />
+      <property role="TrG5h" value="lowSuffix_old" />
       <property role="IQ2nx" value="6847490852669177906" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="4PgLlwdOfpP" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="5W7baq$5k0N" role="1TKVEl">
       <property role="TrG5h" value="allowCharAccess" />
       <property role="IQ2nx" value="6847490852669177907" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="4PgLlwdOfpR" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="5W7baq$5rLS">
@@ -224,25 +230,19 @@
   </node>
   <node concept="1TIwiD" id="5W7baq$60kL">
     <property role="3GE5qa" value="registers.access" />
-    <property role="TrG5h" value="LowByteRefExpr" />
+    <property role="TrG5h" value="LowerHalfRegisterRefExpr" />
     <property role="EcuMT" value="6847490852669359409" />
-    <ref role="1TJDcQ" node="5W7baq$60l7" resolve="HalfRegRefExpr" />
-    <node concept="PrWs8" id="5W7baq$60kM" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
+    <ref role="1TJDcQ" node="5W7baq$60l7" resolve="HalfRegisterRefExpr" />
   </node>
   <node concept="1TIwiD" id="5W7baq$60kW">
     <property role="3GE5qa" value="registers.access" />
-    <property role="TrG5h" value="HighByteRefExpr" />
+    <property role="TrG5h" value="HigherHalfRegisterRefExpr" />
     <property role="EcuMT" value="6847490852669359420" />
-    <ref role="1TJDcQ" node="5W7baq$60l7" resolve="HalfRegRefExpr" />
-    <node concept="PrWs8" id="5W7baq$60kX" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
+    <ref role="1TJDcQ" node="5W7baq$60l7" resolve="HalfRegisterRefExpr" />
   </node>
   <node concept="1TIwiD" id="5W7baq$60l7">
     <property role="3GE5qa" value="registers.access" />
-    <property role="TrG5h" value="HalfRegRefExpr" />
+    <property role="TrG5h" value="HalfRegisterRefExpr" />
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="6847490852669359431" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
@@ -450,6 +450,49 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4vpAkafSVMK" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Gu0DtJhnlT">
+    <property role="3GE5qa" value="registers" />
+    <property role="TrG5h" value="Register32" />
+    <property role="34LRSv" value="register32" />
+    <property role="EcuMT" value="6565688156182902137" />
+    <ref role="1TJDcQ" node="4PgLlwdNYTo" resolve="StructuredRegister" />
+  </node>
+  <node concept="1TIwiD" id="4PgLlwdNYTo">
+    <property role="EcuMT" value="5571169721036828248" />
+    <property role="3GE5qa" value="registers" />
+    <property role="TrG5h" value="StructuredRegister" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="5W7baq$5gqy" resolve="Register" />
+    <node concept="1TJgyi" id="4PgLlwdO0Q3" role="1TKVEl">
+      <property role="IQ2nx" value="5571169721036836227" />
+      <property role="TrG5h" value="highSuffix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4PgLlwdO0Q5" role="1TKVEl">
+      <property role="IQ2nx" value="5571169721036836229" />
+      <property role="TrG5h" value="lowSuffix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4PgLlwdO0Q8" role="1TKVEl">
+      <property role="IQ2nx" value="5571169721036836232" />
+      <property role="TrG5h" value="enableLowHighAccess" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="4PgLlwdO0Qk" role="1TKVEi">
+      <property role="IQ2ns" value="5571169721036836244" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lowSetExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4PgLlwdO0Qm" role="1TKVEi">
+      <property role="IQ2ns" value="5571169721036836246" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="highSetExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>

@@ -2,11 +2,11 @@
 <model ref="r:cdc08bc2-cc35-4158-a21d-d8ef0f9c4cd3(test.ts.richstring.model@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
@@ -49,9 +49,6 @@
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -213,7 +210,7 @@
       <concept id="3354025285337528500" name="com.mbeddr.mpsutil.richstring.structure.InlineExpression" flags="ng" index="EGPMe">
         <child id="3354025285337528503" name="expression" index="EGPMd" />
       </concept>
-      <concept id="3354025285337211097" name="com.mbeddr.mpsutil.richstring.structure.RichStringType" flags="ig" index="EI0jz" />
+      <concept id="3354025285337211097" name="com.mbeddr.mpsutil.richstring.structure.RichStringType" flags="ng" index="EI0jz" />
       <concept id="3354025285337049262" name="com.mbeddr.mpsutil.richstring.structure.RichString" flags="ng" index="EICMk">
         <child id="3354025285337210729" name="text" index="EI3Hj" />
       </concept>
@@ -7367,7 +7364,6 @@
                   <property role="1EzhhJ" value="false" />
                   <property role="TrG5h" value="formatTo" />
                   <property role="DiZV1" value="false" />
-                  <property role="IEkAT" value="false" />
                   <node concept="3Tm1VV" id="7hVsScEJCjE" role="1B3o_S" />
                   <node concept="3cqZAl" id="7hVsScEJCjG" role="3clF45" />
                   <node concept="37vLTG" id="7hVsScEJCjH" role="3clF46">

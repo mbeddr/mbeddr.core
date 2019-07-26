@@ -4,7 +4,7 @@
   <languages>
     <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
     <use id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -37,7 +37,6 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
@@ -332,8 +331,8 @@
         <property role="3kgbRO" value="false" />
       </node>
     </node>
-    <node concept="A7cYH" id="5V9QM6omahc" role="A10yx">
-      <node concept="9PVaO" id="5V9QM6omahd" role="9PVG_">
+    <node concept="2SbYGw" id="47UE$_dUiYw" role="A10yx">
+      <node concept="9PVaO" id="47UE$_dUiYv" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
       </node>

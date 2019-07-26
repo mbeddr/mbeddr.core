@@ -2,7 +2,7 @@
 <model ref="r:3cbf80ca-1cd1-479c-afbf-95b69356a6d3(com.mbeddr.cc.requirements.scenarios.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -28,7 +28,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -321,7 +320,6 @@
       <property role="TrG5h" value="getRequiredDataKind" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="xvsr:2AZbPfMcvYE" resolve="getRequiredDataKind" />
       <node concept="3Tm1VV" id="2AZbPfMcyN3" role="1B3o_S" />
       <node concept="3clFbS" id="2AZbPfMcyN6" role="3clF47">
@@ -4774,7 +4772,6 @@
       <property role="TrG5h" value="getRequiredDataKind" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="xvsr:2AZbPfMcvYE" resolve="getRequiredDataKind" />
       <node concept="3Tm1VV" id="2AZbPfMcyP4" role="1B3o_S" />
       <node concept="3clFbS" id="2AZbPfMcyP7" role="3clF47">
@@ -4852,7 +4849,6 @@
       <property role="TrG5h" value="getRequiredDataKind" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <ref role="13i0hy" to="xvsr:2AZbPfMcvYE" resolve="getRequiredDataKind" />
       <node concept="3Tm1VV" id="2AZbPfMcyR2" role="1B3o_S" />
       <node concept="3clFbS" id="2AZbPfMcyR5" role="3clF47">

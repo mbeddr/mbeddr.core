@@ -1130,7 +1130,6 @@
     </node>
     <node concept="2tJIrI" id="1gJuyfgAxXc" role="jymVt" />
     <node concept="3clFb_" id="1gJuyfgAzSO" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getItems" />
       <node concept="_YKpA" id="1gJuyfgAzYu" role="3clF45">
         <node concept="3uibUv" id="1gJuyfgA$83" role="_ZDj9">

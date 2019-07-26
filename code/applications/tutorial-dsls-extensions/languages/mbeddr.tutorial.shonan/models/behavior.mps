@@ -2,7 +2,7 @@
 <model ref="r:54afdbc3-5ab8-43b5-b09c-40cc96834e65(mbeddr.tutorial.shonan.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -28,7 +28,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -409,7 +408,7 @@
     </node>
     <node concept="13i0hz" id="2JIP8cA02hB" role="13h7CS">
       <property role="TrG5h" value="renderReadable" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
       <node concept="3clFbS" id="2JIP8cA02hC" role="3clF47">
         <node concept="3cpWs6" id="4S40IZty4RO" role="3cqZAp">
           <node concept="3cpWs3" id="4S40IZty4RP" role="3cqZAk">
@@ -426,7 +425,7 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="4S40IZty4RX" role="2OqNvi">
-                    <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                    <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="4S40IZty4RY" role="3uHU7w">
@@ -441,7 +440,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="4S40IZty4S3" role="2OqNvi">
-                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
                 </node>
               </node>
             </node>
@@ -948,7 +947,7 @@
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
       <node concept="3Tm1VV" id="6VDcRItjysQ" role="1B3o_S" />
       <node concept="3clFbS" id="6VDcRItjytd" role="3clF47">
         <node concept="3cpWs6" id="6VDcRItjyzU" role="3cqZAp">
@@ -1369,7 +1368,6 @@
       <node concept="3clFbS" id="2bjUlm3Fx44" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="2bjUlm3Fx45" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -1656,7 +1654,6 @@
     <property role="3GE5qa" value="stencil.intermediate" />
     <ref role="13h7C2" to="5l2n:12852iL5uZJ" resolve="IntermediateInterval" />
     <node concept="13i0hz" id="12852iL5JbE" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />

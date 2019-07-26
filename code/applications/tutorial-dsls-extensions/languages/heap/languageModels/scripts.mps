@@ -2,7 +2,7 @@
 <model ref="r:9bba2280-dffd-4fa3-a800-4d8d82bb78b6(mbeddr.tutorial.heap.scripts)">
   <persistence version="9" />
   <languages>
-    <use id="0eddeefa-c2d6-4437-bc2c-de50fd4ce470" name="jetbrains.mps.lang.script" version="0" />
+    <use id="0eddeefa-c2d6-4437-bc2c-de50fd4ce470" name="jetbrains.mps.lang.script" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -108,18 +108,18 @@
                     <node concept="2OqwBi" id="15Sel8ANPL6" role="2Oq$k0">
                       <node concept="_YI3z" id="15Sel8ANRBo" role="2Oq$k0" />
                       <node concept="3TrEf2" id="15Sel8ANPLe" role="2OqNvi">
-                        <ref role="3Tt5mk" to="rijl:6GXPbpLk5rB" />
+                        <ref role="3Tt5mk" to="rijl:6GXPbpLk5rB" resolve="body" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="15Sel8ANPLO" role="2OqNvi">
-                      <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                      <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                     </node>
                   </node>
                   <node concept="X8dFx" id="15Sel8ANPMg" role="2OqNvi">
                     <node concept="2OqwBi" id="15Sel8ANPMB" role="25WWJ7">
                       <node concept="_YI3z" id="15Sel8ANRBp" role="2Oq$k0" />
                       <node concept="3Tsc0h" id="15Sel8ANPMH" role="2OqNvi">
-                        <ref role="3TtcxE" to="rijl:6GXPbpLk5s0" />
+                        <ref role="3TtcxE" to="rijl:6GXPbpLk5s0" resolve="vars" />
                       </node>
                     </node>
                   </node>
@@ -131,11 +131,11 @@
                 <node concept="2OqwBi" id="15Sel8ANPJi" role="2Oq$k0">
                   <node concept="_YI3z" id="15Sel8ANRBn" role="2Oq$k0" />
                   <node concept="3TrEf2" id="15Sel8ANPJo" role="2OqNvi">
-                    <ref role="3Tt5mk" to="rijl:6GXPbpLk5rB" />
+                    <ref role="3Tt5mk" to="rijl:6GXPbpLk5rB" resolve="body" />
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="15Sel8ANPJO" role="2OqNvi">
-                  <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                  <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                 </node>
               </node>
               <node concept="1v1jN8" id="15Sel8ANPKJ" role="2OqNvi" />
@@ -146,7 +146,7 @@
                   <node concept="2OqwBi" id="15Sel8ANPNy" role="3clFbG">
                     <node concept="2OqwBi" id="15Sel8ANPN6" role="2Oq$k0">
                       <node concept="3Tsc0h" id="15Sel8ANPNc" role="2OqNvi">
-                        <ref role="3TtcxE" to="rijl:6GXPbpLk5s0" />
+                        <ref role="3TtcxE" to="rijl:6GXPbpLk5s0" resolve="vars" />
                       </node>
                       <node concept="_YI3z" id="15Sel8ANRBI" role="2Oq$k0" />
                     </node>
@@ -160,11 +160,11 @@
                                   <node concept="2OqwBi" id="15Sel8ANPO3" role="2Oq$k0">
                                     <node concept="_YI3z" id="15Sel8ANRBJ" role="2Oq$k0" />
                                     <node concept="3TrEf2" id="15Sel8ANPO9" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="rijl:6GXPbpLk5rB" />
+                                      <ref role="3Tt5mk" to="rijl:6GXPbpLk5rB" resolve="body" />
                                     </node>
                                   </node>
                                   <node concept="3Tsc0h" id="15Sel8ANPO_" role="2OqNvi">
-                                    <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                                    <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                                   </node>
                                 </node>
                                 <node concept="1uHKPH" id="15Sel8ANPP1" role="2OqNvi" />
@@ -197,7 +197,7 @@
               <node concept="2OqwBi" id="15Sel8ANRAO" role="2Oq$k0">
                 <node concept="_YI3z" id="15Sel8ANRAv" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="15Sel8ANRAU" role="2OqNvi">
-                  <ref role="3TtcxE" to="rijl:6GXPbpLk5s0" />
+                  <ref role="3TtcxE" to="rijl:6GXPbpLk5s0" resolve="vars" />
                 </node>
               </node>
               <node concept="3GX2aA" id="15Sel8ANRBm" role="2OqNvi" />

@@ -2,7 +2,7 @@
 <model ref="r:70f80dec-8580-44c0-ad9d-103cf07213ef(com.mbeddr.core.codereview.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -26,9 +26,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
-        <child id="1169127546356" name="extends" index="PrDN$" />
-      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -64,7 +62,6 @@
     <property role="TrG5h" value="CodeReviewConfig" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="293752265167076767" />
-    <ref role="1TJDcQ" to="vs0r:gjBy3TfZQv" resolve="CodeReviewConfig_old" />
     <node concept="1TJgyj" id="gjBy3ThgKr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="concepts" />
@@ -80,7 +77,7 @@
     <property role="TrG5h" value="CodeReviewData" />
     <property role="3GE5qa" value="codereview" />
     <property role="EcuMT" value="4901333676673876644" />
-    <ref role="1TJDcQ" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData_old" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="4g52gaNOHw2" role="1TKVEl">
       <property role="TrG5h" value="lastReviewTimestamp" />
       <property role="IQ2nx" value="4901333676674177026" />
@@ -122,7 +119,7 @@
     <property role="3GE5qa" value="codereview" />
     <property role="TrG5h" value="ConceptDeclarationReference" />
     <property role="EcuMT" value="293752265167408099" />
-    <ref role="1TJDcQ" to="vs0r:gjBy3ThgJz" resolve="ConceptDeclarationReference_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4uR15_er0pl" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="concept" />
@@ -135,16 +132,13 @@
     <property role="TrG5h" value="ICodeReviewEntity" />
     <property role="3GE5qa" value="codereview" />
     <property role="EcuMT" value="4901333676673876592" />
-    <node concept="PrWs8" id="48qh2gXL8s8" role="PrDN$">
-      <ref role="PrY4T" to="vs0r:4g52gaNN$9K" resolve="ICodeReviewEntity_old" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4g52gaNQxok">
     <property role="3GE5qa" value="codereview" />
     <property role="TrG5h" value="ReviewAssessmentQuery" />
     <property role="34LRSv" value="code review summary" />
     <property role="EcuMT" value="4901333676674651668" />
-    <ref role="1TJDcQ" to="vs0r:4g52gaNQxok" resolve="ReviewAssessmentQuery_old" />
+    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyi" id="3DYDRw0Qxwo" role="1TKVEl">
       <property role="TrG5h" value="doNotShowGreen" />
       <property role="IQ2nx" value="4214990435117570072" />
@@ -162,7 +156,7 @@
     <property role="3GE5qa" value="codereview" />
     <property role="TrG5h" value="ReviewAssessmentResult" />
     <property role="EcuMT" value="4901333676674511261" />
-    <ref role="1TJDcQ" to="vs0r:4g52gaNPZ6t" resolve="ReviewAssessmentResult_old" />
+    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="4g52gaNPZk9" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="code" />

@@ -22,7 +22,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.slides.sandbox/com.mbeddr.doc.slides.sandbox.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.spreadsheat.sandbox/com.mbeddr.spreadsheat.sandbox.msd" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/tests/tests.ts.doc/tests.ts.doc.msd" folder="test" />
+      <modulePath path="$PROJECT_DIR$/tests/tests.ts.doc/tests.ts.doc.msd" folder="" />
     </projectModules>
   </component>
 </project>

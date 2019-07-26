@@ -4,12 +4,12 @@
   <languages>
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -5587,6 +5587,57 @@
   <node concept="3p36aQ" id="143iErn7gSH">
     <property role="3GE5qa" value="reporting" />
     <ref role="aqKnT" to="k146:69lKCLH$b91" resolve="EmptyMessageDefinition" />
+  </node>
+  <node concept="24kQdi" id="5FIjVbwQAYR">
+    <property role="3GE5qa" value="switch" />
+    <ref role="1XX52x" to="k146:5FIjVbwQAYI" resolve="DefaultSwitchGenerationStrategy" />
+    <node concept="3F0ifn" id="5FIjVbwQAYT" role="2wV5jI">
+      <property role="3F0ifm" value="switch/case" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5FIjVbwQAZ5">
+    <property role="3GE5qa" value="switch" />
+    <ref role="1XX52x" to="k146:5FIjVbwQAYW" resolve="IfElseSwitchGenerationStrategy" />
+    <node concept="3F0ifn" id="5FIjVbwQAZ7" role="2wV5jI">
+      <property role="3F0ifm" value="if/else" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5FIjVbwQB3C">
+    <property role="3GE5qa" value="switch" />
+    <ref role="1XX52x" to="k146:5FIjVbwQwdt" resolve="SwitchGenerationConfiguration" />
+    <node concept="3EZMnI" id="5FIjVbwQB3E" role="2wV5jI">
+      <node concept="3F0ifn" id="5FIjVbwQB3L" role="3EZMnx">
+        <property role="3F0ifm" value="switch generation strategy" />
+      </node>
+      <node concept="gc7cB" id="4LYKrgdXjR7" role="3EZMnx">
+        <node concept="3VJUX4" id="4LYKrgdXjR8" role="3YsKMw">
+          <node concept="3clFbS" id="4LYKrgdXjR9" role="2VODD2">
+            <node concept="3clFbF" id="4LYKrgdXjRa" role="3cqZAp">
+              <node concept="2ShNRf" id="4LYKrgdXjRb" role="3clFbG">
+                <node concept="1pGfFk" id="4LYKrgdXjRc" role="2ShVmc">
+                  <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
+                  <node concept="pncrf" id="4LYKrgdXjRd" role="37wK5m" />
+                  <node concept="10M0yZ" id="4LYKrgdXjRe" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  </node>
+                  <node concept="3cmrfG" id="4LYKrgdXjRf" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="4LYKrgdXjRg" role="37wK5m">
+                    <property role="3cmrfH" value="2" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5FIjVbwQBcV" role="3EZMnx">
+        <ref role="1NtTu8" to="k146:5FIjVbwQAYF" resolve="strategy" />
+      </node>
+      <node concept="2iRfu4" id="5FIjVbwQB3H" role="2iSdaV" />
+    </node>
   </node>
 </model>
 

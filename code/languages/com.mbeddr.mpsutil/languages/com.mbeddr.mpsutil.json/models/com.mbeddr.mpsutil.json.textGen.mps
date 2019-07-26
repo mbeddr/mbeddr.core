@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="21pk" ref="r:be665d13-1e1d-44cd-9817-8bd4d610f422(com.mbeddr.mpsutil.json.structure)" implicit="true" />
+    <import index="41ey" ref="r:f005c0ad-4467-4fc6-b611-c9d0774d1591(com.mbeddr.mpsutil.json.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -26,10 +27,12 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -44,9 +47,17 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
@@ -66,6 +77,7 @@
         <reference id="1233670257997" name="conceptDeclaration" index="WuzLi" />
         <child id="1233749296504" name="textGenBlock" index="11c4hB" />
         <child id="7991274449437422201" name="extension" index="33IsuW" />
+        <child id="7844911294523354450" name="filePath" index="1Knhgg" />
       </concept>
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
@@ -73,8 +85,10 @@
       <concept id="1236188139846" name="jetbrains.mps.lang.textGen.structure.WithIndentOperation" flags="nn" index="3izx1p">
         <child id="1236188238861" name="list" index="3izTki" />
       </concept>
+      <concept id="7844911294523361055" name="jetbrains.mps.lang.textGen.structure.FilePathQuery" flags="ig" index="1KnnTt" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -103,7 +117,7 @@
     </language>
   </registry>
   <node concept="WtQ9Q" id="3L4lRB2Gv5B">
-    <ref role="WuzLi" to="21pk:3L4lRB2Gtfz" resolve="ObjectClass" />
+    <ref role="WuzLi" to="21pk:3L4lRB2Gtfz" resolve="JsonFile" />
     <node concept="9MYSb" id="3L4lRB2Gv5E" role="33IsuW">
       <node concept="3clFbS" id="3L4lRB2Gv5F" role="2VODD2">
         <node concept="3clFbF" id="3L4lRB2Gv6R" role="3cqZAp">
@@ -125,6 +139,36 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="1KnnTt" id="34$4Bn6i2Sr" role="1Knhgg">
+      <node concept="3clFbS" id="34$4Bn6i2Ss" role="2VODD2">
+        <node concept="3clFbF" id="34$4Bn6i3U5" role="3cqZAp">
+          <node concept="3K4zz7" id="34$4Bn6i6D4" role="3clFbG">
+            <node concept="2OqwBi" id="4egfvirUyMS" role="3K4E3e">
+              <node concept="117lpO" id="4egfvirUye5" role="2Oq$k0" />
+              <node concept="2qgKlT" id="4egfvirUzkB" role="2OqNvi">
+                <ref role="37wK5l" to="41ey:4egfvirUw0c" resolve="defaultLocation" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="34$4Bn6i7En" role="3K4GZi">
+              <node concept="117lpO" id="34$4Bn6i6Zg" role="2Oq$k0" />
+              <node concept="3TrcHB" id="34$4Bn6i8c6" role="2OqNvi">
+                <ref role="3TsBF5" to="21pk:34$4Bn6i2gb" resolve="folder" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="34$4Bn6i4XK" role="3K4Cdx">
+              <node concept="2OqwBi" id="34$4Bn6i46d" role="2Oq$k0">
+                <node concept="117lpO" id="34$4Bn6i3U0" role="2Oq$k0" />
+                <node concept="3TrcHB" id="34$4Bn6i4ng" role="2OqNvi">
+                  <ref role="3TsBF5" to="21pk:34$4Bn6i2gb" resolve="folder" />
+                </node>
+              </node>
+              <node concept="17RlXB" id="34$4Bn6i5QY" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="34$4Bn6i3CL" role="3cqZAp" />
       </node>
     </node>
   </node>

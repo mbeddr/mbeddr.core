@@ -2,21 +2,23 @@
 <model ref="r:da1c2acf-cf96-4530-a404-d902653caa1a(test.analyses.var.fm@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="oe3g" ref="r:6529d99e-f27c-4f0d-b5a8-fdfbedcb1e34(com.mbeddr.analyses.sat4j.fm.testing)" />
     <import index="vy7l" ref="r:86500bb5-b61d-4584-98de-8e87c2a6a247(com.mbeddr.analyses.sat4j.fm.analyses)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -112,7 +114,7 @@
       <node concept="3clFbS" id="6qmmy9803D8" role="3clF47">
         <node concept="3cpWs8" id="4$3mDZ0lOid" role="3cqZAp">
           <node concept="3cpWsn" id="4$3mDZ0lOie" role="3cpWs9">
-            <property role="TrG5h" value="model" />
+            <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4$3mDZ0lOic" role="1tU5fm" />
             <node concept="BaHAS" id="4$3mDZ0lOif" role="33vP2m">
               <property role="BaBD8" value="fm" />
@@ -130,8 +132,14 @@
             <node concept="NRdvd" id="6A4JgbUYiJO" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
+              <node concept="2OqwBi" id="3$vwvl9TGfb" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TGfc" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TGfd" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="6A4JgbUYiJP" role="37wK5m">
-                <ref role="3cqZAo" node="4$3mDZ0lOie" resolve="model" />
+                <ref role="3cqZAo" node="4$3mDZ0lOie" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYiJQ" role="37wK5m">
                 <property role="Xl_RC" value="MandatoryFeatures" />
@@ -183,7 +191,7 @@
       <node concept="3clFbS" id="tSjOfAaIrl" role="3clF47">
         <node concept="3cpWs8" id="4$3mDZ0lOkb" role="3cqZAp">
           <node concept="3cpWsn" id="4$3mDZ0lOkc" role="3cpWs9">
-            <property role="TrG5h" value="model" />
+            <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4$3mDZ0lOka" role="1tU5fm" />
             <node concept="BaHAS" id="4$3mDZ0lOkd" role="33vP2m">
               <property role="BaBD8" value="fm" />
@@ -201,8 +209,14 @@
             <node concept="NRdvd" id="6A4JgbUYiUp" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
+              <node concept="2OqwBi" id="3$vwvl9TGkH" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TGkI" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TGkJ" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="6A4JgbUYiUq" role="37wK5m">
-                <ref role="3cqZAo" node="4$3mDZ0lOkc" resolve="model" />
+                <ref role="3cqZAo" node="4$3mDZ0lOkc" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYiUr" role="37wK5m">
                 <property role="Xl_RC" value="MandatoryFeaturesInConflict" />
@@ -269,7 +283,7 @@
       <node concept="3clFbS" id="44j14BGT7wi" role="3clF47">
         <node concept="3cpWs8" id="4$3mDZ0lOm9" role="3cqZAp">
           <node concept="3cpWsn" id="4$3mDZ0lOma" role="3cpWs9">
-            <property role="TrG5h" value="model" />
+            <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4$3mDZ0lOm8" role="1tU5fm" />
             <node concept="BaHAS" id="4$3mDZ0lOmb" role="33vP2m">
               <property role="BaBD8" value="fm" />
@@ -287,8 +301,14 @@
             <node concept="NRdvd" id="6A4JgbUYj60" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
+              <node concept="2OqwBi" id="3$vwvl9TGpR" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TGpS" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TGpT" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="6A4JgbUYj61" role="37wK5m">
-                <ref role="3cqZAo" node="4$3mDZ0lOma" resolve="model" />
+                <ref role="3cqZAo" node="4$3mDZ0lOma" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYj62" role="37wK5m">
                 <property role="Xl_RC" value="OptionalFeaturesInConflict2" />
@@ -314,7 +334,7 @@
       <node concept="3clFbS" id="44j14BGTodr" role="3clF47">
         <node concept="3cpWs8" id="4$3mDZ0lOo7" role="3cqZAp">
           <node concept="3cpWsn" id="4$3mDZ0lOo8" role="3cpWs9">
-            <property role="TrG5h" value="model" />
+            <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4$3mDZ0lOo6" role="1tU5fm" />
             <node concept="BaHAS" id="4$3mDZ0lOo9" role="33vP2m">
               <property role="BaBD8" value="fm" />
@@ -332,8 +352,14 @@
             <node concept="NRdvd" id="6A4JgbUYjh4" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
+              <node concept="2OqwBi" id="3$vwvl9TG$1" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TG$2" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TG$3" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="6A4JgbUYjh5" role="37wK5m">
-                <ref role="3cqZAo" node="4$3mDZ0lOo8" resolve="model" />
+                <ref role="3cqZAo" node="4$3mDZ0lOo8" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYjh6" role="37wK5m">
                 <property role="Xl_RC" value="OptionalFeaturesInConflict3" />
@@ -359,7 +385,7 @@
       <node concept="3clFbS" id="4$3mDZ0lO6w" role="3clF47">
         <node concept="3cpWs8" id="4$3mDZ0lOq5" role="3cqZAp">
           <node concept="3cpWsn" id="4$3mDZ0lOq6" role="3cpWs9">
-            <property role="TrG5h" value="model" />
+            <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4$3mDZ0lOq4" role="1tU5fm" />
             <node concept="BaHAS" id="4$3mDZ0lOq7" role="33vP2m">
               <property role="BaBD8" value="fm" />
@@ -377,8 +403,14 @@
             <node concept="NRdvd" id="6A4JgbUYjsm" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
+              <node concept="2OqwBi" id="3$vwvl9TGBL" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TGBM" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TGBN" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="6A4JgbUYjsn" role="37wK5m">
-                <ref role="3cqZAo" node="4$3mDZ0lOq6" resolve="model" />
+                <ref role="3cqZAo" node="4$3mDZ0lOq6" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYjso" role="37wK5m">
                 <property role="Xl_RC" value="AtLeastOneOrSubfeatureMustBeAvailable" />
@@ -404,7 +436,7 @@
       <node concept="3clFbS" id="44j14BGT8gr" role="3clF47">
         <node concept="3cpWs8" id="4$3mDZ0lOs3" role="3cqZAp">
           <node concept="3cpWsn" id="4$3mDZ0lOs4" role="3cpWs9">
-            <property role="TrG5h" value="model" />
+            <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4$3mDZ0lOs2" role="1tU5fm" />
             <node concept="BaHAS" id="4$3mDZ0lOs5" role="33vP2m">
               <property role="BaBD8" value="fm" />
@@ -422,8 +454,14 @@
             <node concept="NRdvd" id="6A4JgbUYjCB" role="33vP2m">
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <node concept="2OqwBi" id="3$vwvl9TGGN" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TGGO" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TGGP" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="6A4JgbUYjCC" role="37wK5m">
-                <ref role="3cqZAo" node="4$3mDZ0lOs4" resolve="model" />
+                <ref role="3cqZAo" node="4$3mDZ0lOs4" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYjCD" role="37wK5m">
                 <property role="Xl_RC" value="XorFeaturesInConflict3" />
@@ -449,7 +487,7 @@
       <node concept="3clFbS" id="44j14BGT8BB" role="3clF47">
         <node concept="3cpWs8" id="4$3mDZ0lOu1" role="3cqZAp">
           <node concept="3cpWsn" id="4$3mDZ0lOu2" role="3cpWs9">
-            <property role="TrG5h" value="model" />
+            <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4$3mDZ0lOu0" role="1tU5fm" />
             <node concept="BaHAS" id="4$3mDZ0lOu3" role="33vP2m">
               <property role="BaBD8" value="fm" />
@@ -467,8 +505,14 @@
             <node concept="NRdvd" id="6A4JgbUYjOl" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
+              <node concept="2OqwBi" id="3$vwvl9THmU" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9THmV" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9THmW" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="6A4JgbUYjOm" role="37wK5m">
-                <ref role="3cqZAo" node="4$3mDZ0lOu2" resolve="model" />
+                <ref role="3cqZAo" node="4$3mDZ0lOu2" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYjOn" role="37wK5m">
                 <property role="Xl_RC" value="XorFeaturesRequire4" />
@@ -500,6 +544,17 @@
             <property role="3SKdUp" value="mandatory children" />
           </node>
         </node>
+        <node concept="3cpWs8" id="3$vwvl9TCJm" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TCJn" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TCJl" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TCJo" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYk4w" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYk4x" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -509,10 +564,14 @@
             <node concept="NRdvd" id="6A4JgbUYk4y" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="6A4JgbUYk4z" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TD0n" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TD0o" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TD0p" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TCJp" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TCJn" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYk4$" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures1" />
@@ -536,6 +595,17 @@
       <property role="TrG5h" value="testDerivedFeatures2" />
       <node concept="3cqZAl" id="3KT4CxIEH2e" role="3clF45" />
       <node concept="3clFbS" id="3KT4CxIEH2f" role="3clF47">
+        <node concept="3cpWs8" id="3$vwvl9TD2W" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TD2X" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TD2V" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TD2Y" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYkfT" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYkfU" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -545,10 +615,14 @@
             <node concept="NRdvd" id="6A4JgbUYkfV" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="6A4JgbUYkfW" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TDjR" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TDjS" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TDjT" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TD2Z" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TD2X" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYkfX" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures2" />
@@ -577,6 +651,17 @@
             <property role="3SKdUp" value="optional children" />
           </node>
         </node>
+        <node concept="3cpWs8" id="3$vwvl9TDm$" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TDm_" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TDmz" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TDmA" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYkn$" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYkn_" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -586,10 +671,14 @@
             <node concept="NRdvd" id="6A4JgbUYknA" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="6A4JgbUYknB" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TDB_" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TDBA" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TDBB" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TDmB" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TDm_" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYknC" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures3" />
@@ -618,6 +707,17 @@
             <property role="3SKdUp" value="xor children" />
           </node>
         </node>
+        <node concept="3cpWs8" id="3$vwvl9TDEq" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TDEr" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TDEp" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TDEs" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYkvk" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYkvl" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -627,10 +727,14 @@
             <node concept="NRdvd" id="6A4JgbUYkvm" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="6A4JgbUYkvn" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TDT_" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TDTA" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TDTB" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TDEt" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TDEr" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYkvo" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures4" />
@@ -659,6 +763,17 @@
             <property role="3SKdUp" value="two independent derived features" />
           </node>
         </node>
+        <node concept="3cpWs8" id="3$vwvl9TDWy" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TDWz" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TDWx" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TDW$" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYkEA" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYkEB" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -668,10 +783,14 @@
             <node concept="NRdvd" id="6A4JgbUYkEC" role="33vP2m">
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="BaHAS" id="6A4JgbUYkED" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TEdz" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TEd$" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TEd_" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TDW_" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TDWz" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYkEE" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures5" />
@@ -700,6 +819,17 @@
             <property role="3SKdUp" value="conflicts constraints on derived features - FAIL" />
           </node>
         </node>
+        <node concept="3cpWs8" id="3$vwvl9TEgC" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TEgD" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TEgB" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TEgE" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYkR1" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYkR2" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -709,10 +839,14 @@
             <node concept="NRdvd" id="6A4JgbUYkR3" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="6A4JgbUYkR4" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TEwv" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TEww" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TEwx" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TEgF" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TEgD" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYkR5" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures6" />
@@ -741,6 +875,17 @@
             <property role="3SKdUp" value="requires constraints on derived features - FAIL" />
           </node>
         </node>
+        <node concept="3cpWs8" id="3$vwvl9TEzG" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TEzH" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TEzF" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TEzI" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYl3V" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYl3W" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -750,10 +895,14 @@
             <node concept="NRdvd" id="6A4JgbUYl3X" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="6A4JgbUYl3Y" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TEHX" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TEHY" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TEHZ" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TEzJ" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TEzH" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYl3Z" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures7" />
@@ -782,6 +931,17 @@
             <property role="3SKdUp" value="cross constraints on derived features - SUCCESS" />
           </node>
         </node>
+        <node concept="3cpWs8" id="3$vwvl9TFcd" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TFce" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TFcc" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TFcf" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYlgE" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYlgF" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -791,10 +951,14 @@
             <node concept="NRdvd" id="6A4JgbUYlgG" role="33vP2m">
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="BaHAS" id="6A4JgbUYlgH" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TFro" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TFrp" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TFrq" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TFcg" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TFce" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYlgI" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures8" />
@@ -823,6 +987,17 @@
             <property role="3SKdUp" value="parenthesis in expressions of derived features - SUCCESS" />
           </node>
         </node>
+        <node concept="3cpWs8" id="3$vwvl9TFuP" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TFuQ" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TFuO" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TFuR" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYltB" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYltC" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -832,10 +1007,14 @@
             <node concept="NRdvd" id="6A4JgbUYltD" role="33vP2m">
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="BaHAS" id="6A4JgbUYltE" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TFJg" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TFJh" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TFJi" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TFuS" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TFuQ" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYltF" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures9" />
@@ -862,6 +1041,17 @@
       <property role="TrG5h" value="testComplex2" />
       <node concept="3cqZAl" id="44j14BH8Zr1" role="3clF45" />
       <node concept="3clFbS" id="44j14BH8Zr2" role="3clF47">
+        <node concept="3cpWs8" id="3$vwvl9TAMy" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TAMz" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TAMx" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TAM$" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYlFK" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYlFL" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -871,10 +1061,14 @@
             <node concept="NRdvd" id="6A4JgbUYlFM" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="6A4JgbUYlFN" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TBe_" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TB3v" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TC22" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TAM_" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TAMz" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYlFO" role="37wK5m">
                 <property role="Xl_RC" value="Motor" />
@@ -898,6 +1092,17 @@
       <property role="TrG5h" value="testComplex1" />
       <node concept="3cqZAl" id="44j14BH8Dvs" role="3clF45" />
       <node concept="3clFbS" id="44j14BH8Dvt" role="3clF47">
+        <node concept="3cpWs8" id="3$vwvl9TC4q" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9TC4r" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3$vwvl9TC4p" role="1tU5fm" />
+            <node concept="BaHAS" id="3$vwvl9TC4s" role="33vP2m">
+              <property role="BaBD8" value="fm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6A4JgbUYlOz" role="3cqZAp">
           <node concept="3cpWsn" id="6A4JgbUYlO$" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -907,10 +1112,14 @@
             <node concept="NRdvd" id="6A4JgbUYlO_" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="6A4JgbUYlOA" role="37wK5m">
-                <property role="BaBD8" value="fm" />
-                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="3$vwvl9TCll" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9TClm" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9TCln" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3$vwvl9TC4t" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9TC4r" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6A4JgbUYlOB" role="37wK5m">
                 <property role="Xl_RC" value="IntelligentActuatorFamily" />

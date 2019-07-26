@@ -11,11 +11,9 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildconfig/solution/pluginSolution/com.mbddr.core.buildconfig.pluginSolution.msd" folder="core-extended.solutions" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildvalidation/com.mbeddr.mpsutil.buildvalidation.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.checks/com.mbeddr.core.checks.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cinterpreter/com.mbeddr.core.cinterpreter.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.codereview/com.mbeddr.core.codereview.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dataflow.test/com.mbeddr.core.dataflow.test.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dependencies/com.mbeddr.core.dependencies.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
@@ -35,8 +33,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
-      <modulePath path="$PROJECT_DIR$/languages/test.lang.hierchicalstructure/sandbox/test.lang.hierchicalstructure.sandbox.msd" folder="tests.hierarchicalstructure" />
-      <modulePath path="$PROJECT_DIR$/languages/test.lang.hierchicalstructure/test.lang.hierchicalstructure.mpl" folder="tests.hierarchicalstructure" />
+      <modulePath path="$PROJECT_DIR$/solutions/TestSolution/TestSolution.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.debugger.default/com.mbeddr.core.debugger.default.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.expressions.interpreter/com.mbeddr.core.expressions.interpreter.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.expressions.runtime/com.mbeddr.core.expressions.runtime.msd" folder="core.solutions" />
@@ -49,8 +46,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.util.interpreter/com.mbeddr.core.util.interpreter.msd" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorialActions/com.mbeddr.tutorialActions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/aLibrary/aLibrary.msd" folder="tests" />
-      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.sandbox/com.mbeddr.mpsutil.uniquenames.msd" folder="tests.uniquenames" />
-      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.sandboxlang/com.mbeddr.mpsutil.uniquenames.sandboxlang.mpl" folder="tests.uniquenames" />
       <modulePath path="$PROJECT_DIR$/tests/test.editor.core/test.editor.core.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />

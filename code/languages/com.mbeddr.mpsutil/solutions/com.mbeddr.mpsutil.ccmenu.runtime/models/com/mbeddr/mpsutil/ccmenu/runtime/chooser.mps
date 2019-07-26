@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -11129,7 +11129,6 @@
   <node concept="3HP615" id="2m7vnlruHia">
     <property role="TrG5h" value="ISubstituteChooser" />
     <node concept="3clFb_" id="2m7vnlrwBPk" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getPatternEditor" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11140,7 +11139,6 @@
       <node concept="3clFbS" id="2m7vnlrwBPn" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwMw8" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="setPatternEditor" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11155,7 +11153,6 @@
       <node concept="3clFbS" id="2m7vnlrwMwd" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwMvc" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="isVisible" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11164,7 +11161,6 @@
       <node concept="3clFbS" id="2m7vnlrwMvf" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwMwe" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="setVisible" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11177,7 +11173,6 @@
       <node concept="3clFbS" id="2m7vnlrwMwj" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwBOY" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="calcPatternEditorLocation" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11191,7 +11186,6 @@
       <node concept="3clFbS" id="2m7vnlrwBP2" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwMw1" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="setNodeSubstituteInfo" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11209,7 +11203,6 @@
       <node concept="3clFbS" id="2m7vnlrwMw7" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwBQV" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="setLocationRelative" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11230,7 +11223,6 @@
       <node concept="3clFbS" id="2m7vnlrwBR3" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwMvN" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="setIsSmart" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11243,7 +11235,6 @@
       <node concept="3clFbS" id="2m7vnlrwMvS" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwMvG" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="setContextCell" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11261,7 +11252,6 @@
       <node concept="3clFbS" id="2m7vnlrwMvM" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwMv4" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getWindow" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11272,7 +11262,6 @@
       <node concept="3clFbS" id="2m7vnlrwMv7" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwMuS" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="clearContent" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11281,7 +11270,6 @@
       <node concept="3clFbS" id="2m7vnlrwMuV" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwBPK" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="moveToContextCell" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11290,7 +11278,6 @@
       <node concept="3clFbS" id="2m7vnlrwBPN" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwMuW" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="dispose" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11299,7 +11286,6 @@
       <node concept="3clFbS" id="2m7vnlrwMuZ" role="3clF47" />
     </node>
     <node concept="3clFb_" id="2m7vnlrwUTc" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="isMenuEmpty" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -11308,7 +11294,6 @@
       <node concept="3clFbS" id="2m7vnlrwUTf" role="3clF47" />
     </node>
     <node concept="3clFb_" id="~NodeSubstituteChooser.getNumberOfActions():int" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getNumberOfActions" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -13510,7 +13495,6 @@
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="IActionProvider" />
     <node concept="3clFb_" id="3n7FoehoJXj" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getActions" />
       <node concept="3Tm1VV" id="3n7FoehoJXm" role="1B3o_S" />
       <node concept="3clFbS" id="3n7FoehoJXn" role="3clF47" />
@@ -13968,7 +13952,6 @@
     <property role="3GE5qa" value="model" />
     <property role="TrG5h" value="IMenuEntryStyle" />
     <node concept="3clFb_" id="1uZEtAir4ZK" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="isApplicable" />
       <node concept="37vLTG" id="1uZEtAir5PL" role="3clF46">
         <property role="TrG5h" value="entry" />
@@ -13981,7 +13964,6 @@
       <node concept="3clFbS" id="1uZEtAir4ZO" role="3clF47" />
     </node>
     <node concept="3clFb_" id="1uZEtAiovxQ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getFontStyle" />
       <node concept="37vLTG" id="1uZEtAioNwM" role="3clF46">
         <property role="TrG5h" value="entry" />
@@ -14000,7 +13982,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="1uZEtAipm98" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getForegroundColor" />
       <node concept="37vLTG" id="1uZEtAipAxk" role="3clF46">
         <property role="TrG5h" value="entry" />
@@ -14019,7 +14000,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="1uZEtAipmeV" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getBackgroundColor" />
       <node concept="37vLTG" id="1uZEtAipAxU" role="3clF46">
         <property role="TrG5h" value="entry" />

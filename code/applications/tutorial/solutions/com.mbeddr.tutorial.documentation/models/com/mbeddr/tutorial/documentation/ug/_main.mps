@@ -2,7 +2,7 @@
 <model ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)">
   <persistence version="9" />
   <languages>
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
@@ -44,7 +44,6 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
@@ -416,9 +415,9 @@
         <property role="3N1Lgt" value="." />
       </node>
     </node>
-    <node concept="A7cYH" id="4PBxP34YM2y" role="A10yx">
+    <node concept="2SbYGw" id="2N9rErU8Qq" role="A10yx">
       <property role="TrG5h" value="img" />
-      <node concept="9PVaO" id="4PBxP34YM2z" role="9PVG_">
+      <node concept="9PVaO" id="2N9rErU8Qp" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="." />

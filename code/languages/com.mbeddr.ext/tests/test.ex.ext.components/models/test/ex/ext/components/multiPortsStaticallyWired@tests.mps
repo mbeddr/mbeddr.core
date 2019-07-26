@@ -2,11 +2,11 @@
 <model ref="r:21335f01-5073-4834-91ec-ccce98343307(test.ex.ext.components.multiPortsStaticallyWired@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
-    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="0" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
+    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test" version="0" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
@@ -57,28 +57,17 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="1553713790141527405" name="wireStatically" index="35zhco" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
         <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
-      <concept id="8729447926330198396" name="com.mbeddr.core.util.structure.ForRangeStatement" flags="ng" index="n2Vfv">
-        <child id="8729447926330241132" name="range" index="n2wFf" />
-        <child id="8729447926330241139" name="body" index="n2wFg" />
-      </concept>
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
-      <concept id="7297559910934293472" name="com.mbeddr.core.util.structure.ForRangeRef" flags="ng" index="1f68ZN">
-        <reference id="7297559910934293473" name="forRange" index="1f68ZM" />
-      </concept>
-      <concept id="6307143892175911066" name="com.mbeddr.core.util.structure.RangeExpression" flags="ng" index="1vV05I">
-        <property id="8729447926330623085" name="rightExclude" index="n43Ve" />
-        <child id="6307143892175911068" name="right" index="1vV05C" />
-        <child id="6307143892175911067" name="left" index="1vV05J" />
-      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
@@ -138,6 +127,10 @@
       <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
+      <concept id="7634590097754663225" name="com.mbeddr.ext.components.structure.ForEachPortStatement" flags="ng" index="n$yC7">
+        <child id="6321794478502972489" name="body" index="HyoFs" />
+        <child id="4532785557658370366" name="portRefExpr" index="3hQ35c" />
+      </concept>
       <concept id="1302968767135003933" name="com.mbeddr.ext.components.structure.InternalRunnableCall" flags="ng" index="2$_UoH">
         <reference id="1302968767135003934" name="runnable" index="2$_UoI" />
         <child id="5950410542643524495" name="actuals" index="3O_q_j" />
@@ -180,9 +173,6 @@
       <concept id="4491876417845484924" name="com.mbeddr.ext.components.structure.Operation" flags="ng" index="2EX0iL" />
       <concept id="4491876417845484922" name="com.mbeddr.ext.components.structure.ClientServerInterface" flags="ng" index="2EX0iR">
         <child id="4491876417845484926" name="contents" index="2EX0iN" />
-      </concept>
-      <concept id="4491876417845484919" name="com.mbeddr.ext.components.structure.Interface" flags="ng" index="2EX0iU">
-        <property id="1539255704408883009" name="canBeUsedAsType" index="1M_7uD" />
       </concept>
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
@@ -276,6 +266,7 @@
       <node concept="3i3YCL" id="5meTu9orWaH" role="3i30U9">
         <property role="35zhco" value="true" />
         <property role="3Ewwow" value="true" />
+        <property role="2$yeXr" value="true" />
         <ref role="35zhcq" node="2ZUGF54kk83" resolve="instances" />
       </node>
     </node>
@@ -297,7 +288,6 @@
     <node concept="2EX0iR" id="2ZUGF54k32G" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="ObserverIf" />
-      <property role="1M_7uD" value="true" />
       <node concept="2EX0iL" id="2ZUGF54kk7T" role="2EX0iN">
         <property role="TrG5h" value="notify" />
         <node concept="19Rifw" id="7$$5StonVLq" role="2C2TGm">
@@ -328,36 +318,16 @@
       <node concept="2EWDwb" id="Z4PF25qNmu" role="2RW2fA">
         <property role="TrG5h" value="notifyAllUsingLoop" />
         <node concept="3XIRFW" id="Z4PF25qNmv" role="2EWMhI">
-          <node concept="n2Vfv" id="Z4PF25qNry" role="3XIRFZ">
-            <property role="TrG5h" value="ports" />
-            <node concept="1vV05I" id="Z4PF25qNr$" role="n2wFf">
-              <property role="n43Ve" value="true" />
-              <node concept="3TlMh9" id="Z4PF25qNsk" role="1vV05J">
-                <property role="2hmy$m" value="0" />
-              </node>
-              <node concept="3TlMh9" id="Z4PF25qNsY" role="1vV05C">
-                <property role="2hmy$m" value="3" />
-              </node>
+          <node concept="n$yC7" id="6C8IiUrtsNK" role="3XIRFZ">
+            <node concept="2H6loZ" id="6C8IiUrtsOs" role="3hQ35c">
+              <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
             </node>
-            <node concept="3XIRFW" id="Z4PF25qNrE" role="n2wFg">
-              <node concept="EanFS" id="Z4PF25qN$o" role="3XIRFZ">
-                <node concept="3XIRFW" id="Z4PF25qN$p" role="EanFY">
-                  <node concept="1_9egQ" id="Z4PF25qNmw" role="3XIRFZ">
-                    <node concept="30IBQI" id="Z4PF25qNGd" role="1_9egR">
-                      <ref role="2H6Oet" node="2ZUGF54kk7T" resolve="notify" />
-                      <node concept="2OhZ_J" id="Z4PF25qNHp" role="1_9fRO">
-                        <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
-                        <node concept="1f68ZN" id="Z4PF25qNIB" role="2OhZuM">
-                          <ref role="1f68ZM" node="Z4PF25qNry" resolve="ports" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OhZ_J" id="Z4PF25qN$G" role="2aTQa8">
-                  <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
-                  <node concept="1f68ZN" id="Z4PF25qN$S" role="2OhZuM">
-                    <ref role="1f68ZM" node="Z4PF25qNry" resolve="ports" />
+            <node concept="3XIRFW" id="6C8IiUrtsNO" role="HyoFs">
+              <node concept="1_9egQ" id="6C8IiUrtsRp" role="3XIRFZ">
+                <node concept="30IBQI" id="6C8IiUrtsS2" role="1_9egR">
+                  <ref role="2H6Oet" node="2ZUGF54kk7T" resolve="notify" />
+                  <node concept="2H6loZ" id="6C8IiUrtsRn" role="1_9fRO">
+                    <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
                   </node>
                 </node>
               </node>
@@ -393,18 +363,27 @@
       <node concept="2EWDwb" id="3XxRpIb9RKv" role="2RW2fA">
         <property role="TrG5h" value="notifyFirst" />
         <node concept="3XIRFW" id="3XxRpIb9RKw" role="2EWMhI">
-          <node concept="1_9egQ" id="2ofiXe_rmEO" role="3XIRFZ">
-            <node concept="2$_UoH" id="2ofiXe_rmEP" role="1_9egR">
-              <ref role="2$_UoI" node="2ofiXe_rmEA" resolve="notifySingle" />
-              <node concept="2OhZ_J" id="2ofiXe_rmET" role="3O_q_j">
-                <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
-                <node concept="3TlMh9" id="2ofiXe_rmEU" role="2OhZuM">
-                  <property role="2hmy$m" value="1" />
+          <node concept="EanFS" id="16SY6ghDEA8" role="3XIRFZ">
+            <node concept="3XIRFW" id="16SY6ghDEAa" role="EanFY">
+              <node concept="1_9egQ" id="2ofiXe_rmEO" role="3XIRFZ">
+                <node concept="2$_UoH" id="2ofiXe_rmEP" role="1_9egR">
+                  <ref role="2$_UoI" node="2ofiXe_rmEA" resolve="notifySingle" />
+                  <node concept="2OhZ_J" id="2ofiXe_rmET" role="3O_q_j">
+                    <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
+                    <node concept="3TlMh9" id="2ofiXe_rmEU" role="2OhZuM">
+                      <property role="2hmy$m" value="1" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
+            <node concept="2OhZ_J" id="16SY6ghDEDj" role="2aTQa8">
+              <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
+              <node concept="3TlMh9" id="16SY6ghDEDw" role="2OhZuM">
+                <property role="2hmy$m" value="1" />
+              </node>
+            </node>
           </node>
-          <node concept="3XISUE" id="2ofiXe_rmEN" role="3XIRFZ" />
         </node>
         <node concept="19Rifw" id="3XxRpIb9RKu" role="2C2TGm">
           <property role="2caQfQ" value="false" />

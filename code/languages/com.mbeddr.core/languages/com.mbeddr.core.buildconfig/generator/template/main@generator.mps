@@ -2,16 +2,16 @@
 <model ref="r:5502bfb4-a967-4ca4-be6d-8754034c6d99(com.mbeddr.core.buildconfig.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -359,7 +359,7 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -2389,7 +2389,7 @@
                           <ref role="2Gs0qQ" node="6VqaxFadEg$" resolve="mbeddrLibraryRef" />
                         </node>
                         <node concept="2qgKlT" id="6VqaxFadEgJ" role="2OqNvi">
-                          <ref role="37wK5l" to="ahli:1mfTBng0dAT" resolve="pathToLib" />
+                          <ref role="37wK5l" to="ahli:1mfTBng0dAT" resolve="libDir" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="6VqaxFadEgK" role="37vLTJ">
@@ -2705,7 +2705,7 @@
                                 <ref role="2Gs0qQ" node="5yBZnF52i1O" resolve="mbeddrLibrary" />
                               </node>
                               <node concept="2qgKlT" id="5yBZnF52sfJ" role="2OqNvi">
-                                <ref role="37wK5l" to="ahli:1mfTBng0dAT" resolve="pathToLib" />
+                                <ref role="37wK5l" to="ahli:1mfTBng0dAT" resolve="libDir" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="5yBZnF52taC" role="3uHU7w">
@@ -2981,6 +2981,101 @@
           </node>
         </node>
       </node>
+      <node concept="3G52F3" id="1jv4Nu0bCGl" role="3r8OHu">
+        <property role="TrG5h" value="MBEDDR_INCDIRS" />
+        <property role="3G5mJX" value="mbeddrIncludeDirs" />
+        <node concept="17Uvod" id="1jv4Nu0bCGm" role="lGtFl">
+          <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+          <property role="2qtEX9" value="name" />
+          <node concept="3zFVjK" id="1jv4Nu0bCGn" role="3zH0cK">
+            <node concept="3clFbS" id="1jv4Nu0bCGo" role="2VODD2">
+              <node concept="3clFbF" id="1jv4Nu0bCGp" role="3cqZAp">
+                <node concept="2YIFZM" id="1jv4Nu0bQ_W" role="3clFbG">
+                  <ref role="37wK5l" to="ahli:1jv4Nu0bMlV" resolve="getMbeddrIncDirsVarName" />
+                  <ref role="1Pybhc" to="ahli:6VqaxF9qVvF" resolve="MakeVariableHelper" />
+                  <node concept="30H73N" id="1jv4Nu0bQ_X" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17Uvod" id="1jv4Nu0bCGs" role="lGtFl">
+          <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211365206/3373914745211446888" />
+          <property role="2qtEX9" value="value" />
+          <node concept="3zFVjK" id="1jv4Nu0bCGt" role="3zH0cK">
+            <node concept="3clFbS" id="1jv4Nu0bCGu" role="2VODD2">
+              <node concept="3cpWs8" id="1jv4Nu0bCGv" role="3cqZAp">
+                <node concept="3cpWsn" id="1jv4Nu0bCGw" role="3cpWs9">
+                  <property role="TrG5h" value="result" />
+                  <node concept="17QB3L" id="1jv4Nu0bCGx" role="1tU5fm" />
+                  <node concept="Xl_RD" id="1jv4Nu0bCGy" role="33vP2m" />
+                </node>
+              </node>
+              <node concept="2Gpval" id="1jv4Nu0bCGz" role="3cqZAp">
+                <node concept="2GrKxI" id="1jv4Nu0bCG$" role="2Gsz3X">
+                  <property role="TrG5h" value="mbeddrLibraryRef" />
+                </node>
+                <node concept="2OqwBi" id="1jv4Nu0bCG_" role="2GsD0m">
+                  <node concept="30H73N" id="1jv4Nu0bCGA" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="1jv4Nu0bCGB" role="2OqNvi">
+                    <ref role="3TtcxE" to="51wr:2kkumeGQBlk" resolve="referencedLibs" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="1jv4Nu0bCGC" role="2LFqv$">
+                  <node concept="3clFbF" id="1jv4Nu0bCGD" role="3cqZAp">
+                    <node concept="d57v9" id="1jv4Nu0bCGE" role="3clFbG">
+                      <node concept="2OqwBi" id="1jv4Nu0bCGF" role="37vLTx">
+                        <node concept="2GrUjf" id="1jv4Nu0bCGG" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="1jv4Nu0bCG$" resolve="mbeddrLibraryRef" />
+                        </node>
+                        <node concept="2qgKlT" id="1jv4Nu0cp_K" role="2OqNvi">
+                          <ref role="37wK5l" to="ahli:1jv4Nu0bqCb" resolve="includeDirs" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="1jv4Nu0bCGI" role="37vLTJ">
+                        <ref role="3cqZAo" node="1jv4Nu0bCGw" resolve="result" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="1jv4Nu0bCGJ" role="3cqZAp">
+                    <node concept="3clFbS" id="1jv4Nu0bCGK" role="3clFbx">
+                      <node concept="3clFbF" id="1jv4Nu0bCGL" role="3cqZAp">
+                        <node concept="d57v9" id="1jv4Nu0bCGM" role="3clFbG">
+                          <node concept="Xl_RD" id="1jv4Nu0bCGN" role="37vLTx">
+                            <property role="Xl_RC" value=" " />
+                          </node>
+                          <node concept="37vLTw" id="1jv4Nu0bCGO" role="37vLTJ">
+                            <ref role="3cqZAo" node="1jv4Nu0bCGw" resolve="result" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="17QLQc" id="1jv4Nu0bCGP" role="3clFbw">
+                      <node concept="2GrUjf" id="1jv4Nu0bCGQ" role="3uHU7B">
+                        <ref role="2Gs0qQ" node="1jv4Nu0bCG$" resolve="mbeddrLibraryRef" />
+                      </node>
+                      <node concept="2OqwBi" id="1jv4Nu0bCGR" role="3uHU7w">
+                        <node concept="2OqwBi" id="1jv4Nu0bCGS" role="2Oq$k0">
+                          <node concept="30H73N" id="1jv4Nu0bCGT" role="2Oq$k0" />
+                          <node concept="3Tsc0h" id="1jv4Nu0bCGU" role="2OqNvi">
+                            <ref role="3TtcxE" to="51wr:2kkumeGQBlk" resolve="referencedLibs" />
+                          </node>
+                        </node>
+                        <node concept="1yVyf7" id="1jv4Nu0bCGV" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1jv4Nu0bCGW" role="3cqZAp">
+                <node concept="37vLTw" id="1jv4Nu0bCGX" role="3clFbG">
+                  <ref role="3cqZAo" node="1jv4Nu0bCGw" resolve="result" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3G52F3" id="6VqaxFadEeQ" role="3r8OHu">
         <property role="TrG5h" value="EXT_INCDIRS" />
         <property role="12Lnk_" value="=" />
@@ -3085,7 +3180,7 @@
       <node concept="3G52F3" id="6VqaxFadEfm" role="3r8OHu">
         <property role="TrG5h" value="ALL_INCDIR_FLAGS" />
         <property role="12Lnk_" value="=" />
-        <property role="3G5mJX" value="$(addprefix -I,$(INCDIRS)) $(addprefix -I,$(FOREIGN_MODEL_INCDIRS)) $(addprefix -I,$(EXT_INCDIRS))" />
+        <property role="3G5mJX" value="$(addprefix -I,$(INCDIRS)) $(addprefix -I,$(FOREIGN_MODEL_INCDIRS)) -I,$(MBEDDR_INCDIRS)) $(addprefix -I,$(EXT_INCDIRS))" />
         <node concept="17Uvod" id="6VqaxFadEfn" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
           <property role="2qtEX9" value="name" />
@@ -3112,19 +3207,31 @@
                     <property role="Xl_RC" value="))" />
                   </node>
                   <node concept="3cpWs3" id="6VqaxFadEfz" role="3uHU7B">
-                    <node concept="3cpWs3" id="6VqaxFadEf$" role="3uHU7B">
-                      <node concept="Xl_RD" id="6VqaxFadEf_" role="3uHU7w">
-                        <property role="Xl_RC" value=")) $(addprefix -I,$(" />
-                      </node>
-                      <node concept="3cpWs3" id="6VqaxFadEfA" role="3uHU7B">
-                        <node concept="Xl_RD" id="6VqaxFadEfB" role="3uHU7B">
-                          <property role="Xl_RC" value="$(addprefix -I,$(INCDIRS)) $(addprefix -I,$(" />
+                    <node concept="3cpWs3" id="1jv4Nu0cwq7" role="3uHU7B">
+                      <node concept="3cpWs3" id="1jv4Nu0ctfD" role="3uHU7B">
+                        <node concept="3cpWs3" id="6VqaxFadEf$" role="3uHU7B">
+                          <node concept="3cpWs3" id="6VqaxFadEfA" role="3uHU7B">
+                            <node concept="Xl_RD" id="6VqaxFadEfB" role="3uHU7B">
+                              <property role="Xl_RC" value="$(addprefix -I,$(INCDIRS)) $(addprefix -I,$(" />
+                            </node>
+                            <node concept="2YIFZM" id="6VqaxFadEfC" role="3uHU7w">
+                              <ref role="37wK5l" to="ahli:6VqaxF9rKRm" resolve="getForeignModelIncDirsVarName" />
+                              <ref role="1Pybhc" to="ahli:6VqaxF9qVvF" resolve="MakeVariableHelper" />
+                              <node concept="30H73N" id="6VqaxFadEfD" role="37wK5m" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="6VqaxFadEf_" role="3uHU7w">
+                            <property role="Xl_RC" value=")) $(addprefix -I,$(" />
+                          </node>
                         </node>
-                        <node concept="2YIFZM" id="6VqaxFadEfC" role="3uHU7w">
-                          <ref role="37wK5l" to="ahli:6VqaxF9rKRm" resolve="getForeignModelIncDirsVarName" />
+                        <node concept="2YIFZM" id="1jv4Nu0cuRx" role="3uHU7w">
+                          <ref role="37wK5l" to="ahli:1jv4Nu0bMlV" resolve="getMbeddrIncDirsVarName" />
                           <ref role="1Pybhc" to="ahli:6VqaxF9qVvF" resolve="MakeVariableHelper" />
-                          <node concept="30H73N" id="6VqaxFadEfD" role="37wK5m" />
+                          <node concept="30H73N" id="1jv4Nu0cvrm" role="37wK5m" />
                         </node>
+                      </node>
+                      <node concept="Xl_RD" id="1jv4Nu0cwqz" role="3uHU7w">
+                        <property role="Xl_RC" value=")) $(addprefix -I,$(" />
                       </node>
                     </node>
                     <node concept="2YIFZM" id="6VqaxFadEfE" role="3uHU7w">
@@ -3142,7 +3249,7 @@
       <node concept="3G52F3" id="6VqaxFadEfG" role="3r8OHu">
         <property role="TrG5h" value="ALL_INCS" />
         <property role="12Lnk_" value="=" />
-        <property role="3G5mJX" value="*.h $(foreach idir,$(INCDIRS),$(wildcard $(idir)/*.h)) $(foreach fmidir,$(FOREIGN_MODEL_INCDIRS),$(wildcard $(fmidir)/*.h) $(foreach eidir,$(EXT_INCDIRS),$(wildcard $(eidir)/*.h))" />
+        <property role="3G5mJX" value="*.h $(foreach idir,$(INCDIRS),$(wildcard $(idir)/*.h)) $(foreach fmidir,$(FOREIGN_MODEL_INCDIRS),$(wildcard $(fmidir)/*.h) $(foreach midir,$(MBEDDR_INCDIRS),$(wildcard $(midir)/*.h) $(foreach eidir,$(EXT_INCDIRS),$(wildcard $(eidir)/*.h))" />
         <node concept="17Uvod" id="6VqaxFadEfH" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
           <property role="2qtEX9" value="name" />
@@ -3243,8 +3350,18 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="29eTPKGQo1M" role="3uHU7w">
-                      <property role="Xl_RC" value="),$(wildcard $(fmidir)/*.h)) " />
+                      <property role="Xl_RC" value="),$(wildcard $(fmidir)/*.h))" />
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7CpWRXzL$En" role="3cqZAp">
+                <node concept="d57v9" id="7CpWRXzL$Eo" role="3clFbG">
+                  <node concept="Xl_RD" id="7CpWRXzL$Ep" role="37vLTx">
+                    <property role="Xl_RC" value=" " />
+                  </node>
+                  <node concept="37vLTw" id="7CpWRXzL$Eq" role="37vLTJ">
+                    <ref role="3cqZAo" node="2Ka$uvN5hNN" resolve="result" />
                   </node>
                 </node>
               </node>
@@ -3257,15 +3374,48 @@
                   <node concept="3cpWs3" id="29eTPKGQtev" role="37vLTx">
                     <node concept="3cpWs3" id="29eTPKGQraW" role="3uHU7B">
                       <node concept="Xl_RD" id="29eTPKGQo1O" role="3uHU7B">
-                        <property role="Xl_RC" value="$(foreach eidir,$(" />
+                        <property role="Xl_RC" value="$(foreach  midir,$(" />
                       </node>
-                      <node concept="2YIFZM" id="6VqaxFadEg0" role="3uHU7w">
-                        <ref role="37wK5l" to="ahli:6VqaxF9rMmO" resolve="getExtIncDirsVarName" />
+                      <node concept="2YIFZM" id="1jv4Nu0cKT3" role="3uHU7w">
+                        <ref role="37wK5l" to="ahli:1jv4Nu0bMlV" resolve="getMbeddrIncDirsVarName" />
                         <ref role="1Pybhc" to="ahli:6VqaxF9qVvF" resolve="MakeVariableHelper" />
-                        <node concept="30H73N" id="6VqaxFadEg1" role="37wK5m" />
+                        <node concept="30H73N" id="1jv4Nu0cKT4" role="37wK5m" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="6VqaxFadEfS" role="3uHU7w">
+                      <property role="Xl_RC" value="),$(wildcard $(midir)/*.h))" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7CpWRXzL$F6" role="3cqZAp">
+                <node concept="d57v9" id="7CpWRXzL$F7" role="3clFbG">
+                  <node concept="Xl_RD" id="7CpWRXzL$F8" role="37vLTx">
+                    <property role="Xl_RC" value=" " />
+                  </node>
+                  <node concept="37vLTw" id="7CpWRXzL$F9" role="37vLTJ">
+                    <ref role="3cqZAo" node="2Ka$uvN5hNN" resolve="result" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="1jv4Nu0cI1h" role="3cqZAp" />
+              <node concept="3clFbF" id="1jv4Nu0cFQ0" role="3cqZAp">
+                <node concept="d57v9" id="1jv4Nu0cFQ1" role="3clFbG">
+                  <node concept="37vLTw" id="1jv4Nu0cFQ2" role="37vLTJ">
+                    <ref role="3cqZAo" node="2Ka$uvN5hNN" resolve="result" />
+                  </node>
+                  <node concept="3cpWs3" id="1jv4Nu0cFQ3" role="37vLTx">
+                    <node concept="3cpWs3" id="1jv4Nu0cFQ4" role="3uHU7B">
+                      <node concept="Xl_RD" id="1jv4Nu0cFQ5" role="3uHU7B">
+                        <property role="Xl_RC" value="$(foreach eidir,$(" />
+                      </node>
+                      <node concept="2YIFZM" id="1jv4Nu0cFQ6" role="3uHU7w">
+                        <ref role="37wK5l" to="ahli:6VqaxF9rMmO" resolve="getExtIncDirsVarName" />
+                        <ref role="1Pybhc" to="ahli:6VqaxF9qVvF" resolve="MakeVariableHelper" />
+                        <node concept="30H73N" id="1jv4Nu0cFQ7" role="37wK5m" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="1jv4Nu0cFQ8" role="3uHU7w">
                       <property role="Xl_RC" value="),$(wildcard $(eidir)/*.h))" />
                     </node>
                   </node>

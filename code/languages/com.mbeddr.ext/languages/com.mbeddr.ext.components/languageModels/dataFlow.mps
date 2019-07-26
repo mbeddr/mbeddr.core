@@ -936,5 +936,79 @@
     </node>
   </node>
   <node concept="39xIXt" id="4sjR92KayHk" />
+  <node concept="3_zdsH" id="7_KH4FPHyKH">
+    <property role="3GE5qa" value="comp.runnable.whenconnected" />
+    <ref role="3_znuS" to="v7ag:7_KH4FPG_3N" resolve="WhenPortVarConnectedStatement" />
+    <node concept="3__wT9" id="7_KH4FPHyKI" role="3_A6iZ">
+      <node concept="3clFbS" id="7_KH4FPHyKJ" role="2VODD2">
+        <node concept="3AgYrR" id="7_KH4FPHyL2" role="3cqZAp">
+          <node concept="2OqwBi" id="7_KH4FPHyL3" role="3Ah4Yx">
+            <node concept="3__QtB" id="7_KH4FPHyL4" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6_0HAqgnaBO" role="2OqNvi">
+              <ref role="3Tt5mk" to="v7ag:6_0HAqfOELN" resolve="portVarExpr" />
+            </node>
+          </node>
+        </node>
+        <node concept="3_J$rt" id="7_KH4FPHyL6" role="3cqZAp">
+          <node concept="ayLgZ" id="7_KH4FPHyL7" role="3_JbIs">
+            <ref role="ayMZ1" node="7_KH4FPHyLn" resolve="endOfThenPart" />
+          </node>
+        </node>
+        <node concept="3AgYrR" id="7_KH4FPHyL8" role="3cqZAp">
+          <node concept="2OqwBi" id="7_KH4FPHyL9" role="3Ah4Yx">
+            <node concept="3__QtB" id="7_KH4FPHyLa" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7_KH4FPHyLb" role="2OqNvi">
+              <ref role="3Tt5mk" to="v7ag:7_KH4FPG_3O" resolve="body" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7_KH4FPHyLc" role="3cqZAp">
+          <node concept="3clFbS" id="7_KH4FPHyLd" role="3clFbx">
+            <node concept="3F2QtG" id="7_KH4FPHyLe" role="3cqZAp">
+              <node concept="3_JC1X" id="7_KH4FPHyLf" role="3F2SoO">
+                <node concept="3_IKw2" id="7_KH4FPHyLg" role="3_JbIs">
+                  <node concept="3__QtB" id="7_KH4FPHyLh" role="3_I9Fq" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7_KH4FPHyLi" role="3clFbw">
+            <node concept="2OqwBi" id="7_KH4FPHyLj" role="2Oq$k0">
+              <node concept="3__QtB" id="7_KH4FPHyLk" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7_KH4FPHyLl" role="2OqNvi">
+                <ref role="3Tt5mk" to="v7ag:7_KH4FPG_3P" resolve="elsePart" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7_KH4FPHyLm" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="axUMO" id="7_KH4FPHyLn" role="3cqZAp">
+          <property role="TrG5h" value="endOfThenPart" />
+        </node>
+        <node concept="3clFbH" id="7_KH4FPHyLo" role="3cqZAp" />
+        <node concept="3clFbJ" id="7_KH4FPHyLp" role="3cqZAp">
+          <node concept="3clFbS" id="7_KH4FPHyLq" role="3clFbx">
+            <node concept="3AgYrR" id="7_KH4FPHyLr" role="3cqZAp">
+              <node concept="2OqwBi" id="7_KH4FPHyLs" role="3Ah4Yx">
+                <node concept="3__QtB" id="7_KH4FPHyLt" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7_KH4FPHyLu" role="2OqNvi">
+                  <ref role="3Tt5mk" to="v7ag:7_KH4FPG_3P" resolve="elsePart" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7_KH4FPHyLv" role="3clFbw">
+            <node concept="2OqwBi" id="7_KH4FPHyLw" role="2Oq$k0">
+              <node concept="3__QtB" id="7_KH4FPHyLx" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7_KH4FPHyLy" role="2OqNvi">
+                <ref role="3Tt5mk" to="v7ag:7_KH4FPG_3P" resolve="elsePart" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7_KH4FPHyLz" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

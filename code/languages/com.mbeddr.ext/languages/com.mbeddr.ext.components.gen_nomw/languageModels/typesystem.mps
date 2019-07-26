@@ -2,7 +2,7 @@
 <model ref="r:1ff0a2e1-cb01-42b4-88e2-1a5bc0b655f8(com.mbeddr.ext.components.gen_nomw.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
@@ -15,6 +15,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -69,6 +70,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -199,19 +203,31 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="1mfTBng0Jmx" role="3uHU7B">
-            <node concept="1YBJjd" id="1mfTBng0Jmw" role="2Oq$k0">
-              <ref role="1YBMHb" node="1mfTBng0Jms" resolve="s" />
-            </node>
-            <node concept="3TrcHB" id="1mfTBng0Jm_" role="2OqNvi">
-              <ref role="3TsBF5" to="p7vm:1mfTBng0JlH" resolve="wireStatically" />
+          <node concept="1eOMI4" id="6PAG9z9W5pk" role="3uHU7B">
+            <node concept="22lmx$" id="6PAG9z9W8Eg" role="1eOMHV">
+              <node concept="2OqwBi" id="6PAG9z9WbrP" role="3uHU7w">
+                <node concept="1YBJjd" id="6PAG9z9Wbf5" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1mfTBng0Jms" resolve="s" />
+                </node>
+                <node concept="3TrcHB" id="6PAG9z9WegL" role="2OqNvi">
+                  <ref role="3TsBF5" to="p7vm:6PAG9z9V_Z3" resolve="removeUnusedRequiredPorts" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1mfTBng0Jmx" role="3uHU7B">
+                <node concept="1YBJjd" id="1mfTBng0Jmw" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1mfTBng0Jms" resolve="s" />
+                </node>
+                <node concept="3TrcHB" id="1mfTBng0Jm_" role="2OqNvi">
+                  <ref role="3TsBF5" to="p7vm:1mfTBng0JlH" resolve="wireStatically" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="3clFbS" id="1mfTBng0Jmv" role="3clFbx">
           <node concept="2MkqsV" id="1mfTBng0JmQ" role="3cqZAp">
             <node concept="Xl_RD" id="1mfTBng0JmT" role="2MkJ7o">
-              <property role="Xl_RC" value="instance config must be specified if wireStatically is selected" />
+              <property role="Xl_RC" value="instance config must be specified if wireStatically or removeUnusedRequiredPorts is selected" />
             </node>
             <node concept="1YBJjd" id="1mfTBng0JmU" role="2OEOjV">
               <ref role="1YBMHb" node="1mfTBng0Jms" resolve="s" />
@@ -919,11 +935,11 @@
           </node>
           <node concept="3clFbH" id="1ijJyTDr46$" role="3cqZAp" />
         </node>
-        <node concept="2OqwBi" id="7OvXfhzPDHr" role="3clFbw">
-          <node concept="1YBJjd" id="7OvXfhzPDHq" role="2Oq$k0">
+        <node concept="2OqwBi" id="6PAG9z9WgZV" role="3clFbw">
+          <node concept="1YBJjd" id="6PAG9z9WgZW" role="2Oq$k0">
             <ref role="1YBMHb" node="1mfTBng0Jms" resolve="s" />
           </node>
-          <node concept="3TrcHB" id="7OvXfhzPDHv" role="2OqNvi">
+          <node concept="3TrcHB" id="6PAG9z9WgZX" role="2OqNvi">
             <ref role="3TsBF5" to="p7vm:1mfTBng0JlH" resolve="wireStatically" />
           </node>
         </node>

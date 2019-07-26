@@ -2,7 +2,7 @@
 <model ref="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.process.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -45,9 +45,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -369,7 +366,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getStepId" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5Kcl6zlEDH1" role="1B3o_S" />
       <node concept="3uibUv" id="5Kcl6zlEDH3" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
@@ -390,7 +386,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getPreferredFocusedComponent" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5Kcl6zlEEf6" role="1B3o_S" />
       <node concept="3uibUv" id="5Kcl6zlEEf8" role="3clF45">
         <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
@@ -408,7 +403,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isComplete" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="43jzEnWb_se" role="1B3o_S" />
       <node concept="10P_77" id="43jzEnWb_sg" role="3clF45" />
       <node concept="3clFbS" id="43jzEnWb_sh" role="3clF47">
@@ -439,7 +433,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getNextStepId" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="43jzEnWb6bT" role="1B3o_S" />
       <node concept="3uibUv" id="43jzEnWb6bV" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
@@ -497,7 +490,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getPreviousStepId" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="43jzEnWb6c2" role="1B3o_S" />
       <node concept="3uibUv" id="43jzEnWb6c4" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
@@ -586,7 +578,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getComponent" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5Kcl6zlEOwf" role="1B3o_S" />
       <node concept="3uibUv" id="5Kcl6zlEOwh" role="3clF45">
         <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
@@ -1109,7 +1100,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="init" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="70BL6LoZsAC" role="1B3o_S" />
       <node concept="3cqZAl" id="70BL6LoZsAE" role="3clF45" />
       <node concept="3clFbS" id="70BL6LoZsAH" role="3clF47">
@@ -1261,7 +1251,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="updateStep" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="rF8Sb8MWZq" role="1B3o_S" />
       <node concept="3cqZAl" id="rF8Sb8MWZs" role="3clF45" />
       <node concept="3clFbS" id="rF8Sb8MWZt" role="3clF47">
@@ -1596,7 +1585,6 @@
                     <property role="1EzhhJ" value="false" />
                     <property role="TrG5h" value="run" />
                     <property role="DiZV1" value="false" />
-                    <property role="IEkAT" value="false" />
                     <node concept="3Tm1VV" id="4biM00JgWuX" role="1B3o_S" />
                     <node concept="3cqZAl" id="4biM00JgWuY" role="3clF45" />
                     <node concept="3clFbS" id="4biM00JgWuZ" role="3clF47">
@@ -1996,7 +1984,6 @@
   <node concept="3HP615" id="e7wQ4XAbY8">
     <property role="TrG5h" value="IWizardExtension" />
     <node concept="3clFb_" id="e7wQ4XAjLQ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="forWizard" />
       <node concept="3clFbS" id="e7wQ4XAjLT" role="3clF47" />
@@ -2004,7 +1991,6 @@
       <node concept="17QB3L" id="e7wQ4XAjLb" role="3clF45" />
     </node>
     <node concept="3clFb_" id="e7wQ4XAccB" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="apply" />
       <node concept="3clFbS" id="e7wQ4XAccE" role="3clF47" />
@@ -2209,7 +2195,6 @@
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
       <property role="eg7rD" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="17QB3L" id="e7wQ4XBJvB" role="1tU5fm" />
       <node concept="3Tm6S6" id="e7wQ4XBJvA" role="1B3o_S" />
     </node>

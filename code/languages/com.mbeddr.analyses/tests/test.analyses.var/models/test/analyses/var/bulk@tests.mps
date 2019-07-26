@@ -2,22 +2,24 @@
 <model ref="r:b571111b-22b6-46ca-bc45-c38c1badfc96(test.analyses.var.bulk@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="oe3g" ref="r:6529d99e-f27c-4f0d-b5a8-fdfbedcb1e34(com.mbeddr.analyses.sat4j.fm.testing)" />
     <import index="vy7l" ref="r:86500bb5-b61d-4584-98de-8e87c2a6a247(com.mbeddr.analyses.sat4j.fm.analyses)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -133,7 +135,21 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6eIJF_HRMZK" role="3cqZAp" />
+        <node concept="3cpWs8" id="3$vwvl9YfXx" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9YfXy" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="3$vwvl9YfXu" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="3$vwvl9YfXz" role="33vP2m">
+              <node concept="1jxXqW" id="3$vwvl9YfX$" role="2Oq$k0" />
+              <node concept="liA8E" id="3$vwvl9YfX_" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3$vwvl9Yghu" role="3cqZAp" />
         <node concept="3cpWs8" id="6eIJF_HRRu2" role="3cqZAp">
           <node concept="3cpWsn" id="6eIJF_HRRu3" role="3cpWs9">
             <property role="TrG5h" value="r" />
@@ -145,6 +161,9 @@
             <node concept="NRdvd" id="6eIJF_HRROU" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:6eIJF_HROc8" resolve="checkConsistencyOfVariabilityUseWithinSolution" />
+              <node concept="37vLTw" id="3$vwvl9YfXA" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9YfXy" resolve="repo" />
+              </node>
               <node concept="37vLTw" id="6eIJF_HRROV" role="37wK5m">
                 <ref role="3cqZAo" node="6eIJF_HRME8" resolve="module" />
               </node>
@@ -233,6 +252,20 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="3$vwvl9UJo$" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9UJo_" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="3$vwvl9UJox" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="3$vwvl9UJoA" role="33vP2m">
+              <node concept="1jxXqW" id="3$vwvl9UJoB" role="2Oq$k0" />
+              <node concept="liA8E" id="3$vwvl9UJoC" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1X8myJOVrei" role="3cqZAp">
           <node concept="3cpWsn" id="1X8myJOVrej" role="3cpWs9">
             <property role="TrG5h" value="r" />
@@ -244,6 +277,9 @@
             <node concept="NRdvd" id="1X8myJOVFNa" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:1X8myJOVvDK" resolve="checkConsistencyOfVariabilityDefinitionWithinModel" />
+              <node concept="37vLTw" id="3$vwvl9UJoD" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9UJo_" resolve="repo" />
+              </node>
               <node concept="37vLTw" id="1X8myJOVHYH" role="37wK5m">
                 <ref role="3cqZAo" node="1X8myJOVHEb" resolve="fm" />
               </node>
@@ -326,6 +362,20 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="3$vwvl9UJad" role="3cqZAp">
+          <node concept="3cpWsn" id="3$vwvl9UJae" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="3$vwvl9UJaa" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="3$vwvl9UJaf" role="33vP2m">
+              <node concept="1jxXqW" id="3$vwvl9UJag" role="2Oq$k0" />
+              <node concept="liA8E" id="3$vwvl9UJah" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1X8myJOVIW5" role="3cqZAp">
           <node concept="3cpWsn" id="1X8myJOVIW6" role="3cpWs9">
             <property role="TrG5h" value="r" />
@@ -337,6 +387,9 @@
             <node concept="NRdvd" id="1X8myJOVIW9" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:1X8myJOVvDK" resolve="checkConsistencyOfVariabilityDefinitionWithinModel" />
+              <node concept="37vLTw" id="3$vwvl9UJai" role="37wK5m">
+                <ref role="3cqZAo" node="3$vwvl9UJae" resolve="repo" />
+              </node>
               <node concept="37vLTw" id="1X8myJOVIWa" role="37wK5m">
                 <ref role="3cqZAo" node="1X8myJOVIW2" resolve="cm" />
               </node>
@@ -430,6 +483,12 @@
             <node concept="NRdvd" id="1X8myJOVGc8" role="33vP2m">
               <ref role="37wK5l" to="oe3g:1X8myJOImqY" resolve="checkConsistencyOfVariabilityUseWithinModel" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <node concept="2OqwBi" id="3$vwvl9Vt55" role="37wK5m">
+                <node concept="1jxXqW" id="3$vwvl9VsR1" role="2Oq$k0" />
+                <node concept="liA8E" id="3$vwvl9Vu56" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="37vLTw" id="1X8myJOVGUb" role="37wK5m">
                 <ref role="3cqZAo" node="1X8myJOVGCM" resolve="var_c" />
               </node>

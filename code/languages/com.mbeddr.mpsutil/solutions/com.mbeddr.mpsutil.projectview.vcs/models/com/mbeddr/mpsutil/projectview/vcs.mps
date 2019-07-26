@@ -157,6 +157,12 @@
         <child id="1170075728144" name="expression" index="1HWFw0" />
         <child id="1170075736412" name="block" index="1HWHxc" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -660,6 +666,11 @@
               <ref role="3uigEE" to="ippn:7YINie3rdNP" resolve="TreeHighlighter" />
             </node>
             <node concept="10Nm6u" id="24ObHxTnsTA" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7q9qYyzDOyx" role="3cqZAp">
+          <node concept="3SKdUq" id="7q9qYyzDOyz" role="3SKWNk">
+            <property role="3SKdUp" value="FIXME once MPS 2019.2 is in use, switch to project.getComponent(TreeHighligherFactory.class)#instantiateHighlighter(tree, new CustomTreeFeatureExtractor())" />
           </node>
         </node>
         <node concept="3clFbF" id="24ObHxTnsTH" role="3cqZAp">

@@ -137,17 +137,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1278,18 +1270,9 @@
     <ref role="WuzLi" to="x27k:4AGl5dzxvNW" resolve="NoOp" />
     <node concept="11bSqf" id="4AGl5dzxvOi" role="11c4hB">
       <node concept="3clFbS" id="4AGl5dzxvOj" role="2VODD2">
-        <node concept="1X3_iC" id="2y8cGnkd7IC" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="4AGl5dzxvOk" role="8Wnug">
-            <node concept="la8eA" id="4AGl5dzxvOm" role="lcghm">
-              <property role="lacIc" value="__asm__ (&quot;nop&quot;)" />
-            </node>
-          </node>
-        </node>
         <node concept="lc7rE" id="2y8cGnkd7Ij" role="3cqZAp">
           <node concept="la8eA" id="2y8cGnkd7Ik" role="lcghm">
-            <property role="lacIc" value="0" />
+            <property role="lacIc" value="(void)0" />
           </node>
         </node>
       </node>
@@ -1704,30 +1687,6 @@
           <node concept="la8eA" id="1Iv4$fSvfyD" role="lcghm">
             <property role="lacIc" value="__VA_ARGS__" />
           </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="WtQ9Q" id="xN636rZcEm">
-    <ref role="WuzLi" to="x27k:IrwlmWyLju" resolve="PragmaModuleContent" />
-    <node concept="11bSqf" id="xN636rZcEn" role="11c4hB">
-      <node concept="3clFbS" id="xN636rZcEo" role="2VODD2">
-        <node concept="lc7rE" id="IrwlmWyTkv" role="3cqZAp">
-          <node concept="la8eA" id="IrwlmWyTkx" role="lcghm">
-            <property role="lacIc" value="#pragma" />
-          </node>
-          <node concept="la8eA" id="IrwlmWyTk$" role="lcghm">
-            <property role="lacIc" value=" " />
-          </node>
-          <node concept="l9hG8" id="IrwlmWyTkA" role="lcghm">
-            <node concept="2OqwBi" id="IrwlmWyTkX" role="lb14g">
-              <node concept="117lpO" id="IrwlmWyTkC" role="2Oq$k0" />
-              <node concept="3TrcHB" id="IrwlmWyTl3" role="2OqNvi">
-                <ref role="3TsBF5" to="x27k:IrwlmWyLjw" resolve="pragmaText" />
-              </node>
-            </node>
-          </node>
-          <node concept="l8MVK" id="xN636rZdAe" role="lcghm" />
         </node>
       </node>
     </node>

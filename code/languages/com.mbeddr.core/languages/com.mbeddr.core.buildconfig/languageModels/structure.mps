@@ -20,7 +20,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
@@ -65,7 +64,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -187,14 +185,6 @@
       <property role="IQ2ns" value="5046689135693761559" />
       <ref role="20lvS9" node="6GqYvBOf2Xb" resolve="ModuleRef" />
     </node>
-    <node concept="1TJgyj" id="4aYGoLbxbV6" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="externalLibraries" />
-      <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="4809476668198796998" />
-      <ref role="20lvS9" node="4aYGoLbxbUW" resolve="Linkable" />
-      <node concept="asaX9" id="4LhGMnjejg5" role="lGtFl" />
-    </node>
     <node concept="1TJgyj" id="4an21yEJ7nX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="externalLibs" />
@@ -268,9 +258,6 @@
     </node>
     <node concept="PrWs8" id="65XyadYP2sC" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
-    </node>
-    <node concept="PrWs8" id="5HxjapwgqUF" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="2kkumeGQBhY">
@@ -395,25 +382,6 @@
     <property role="EcuMT" value="440773076688628186" />
     <ref role="1TJDcQ" node="4BxItZJ4BoF" resolve="Platform" />
   </node>
-  <node concept="1TIwiD" id="4aYGoLbxbUW">
-    <property role="TrG5h" value="Linkable" />
-    <property role="34LRSv" value="linkable" />
-    <property role="R4oN_" value="a library that has not been created withing mbeddr" />
-    <property role="3GE5qa" value="binary" />
-    <property role="EcuMT" value="4809476668198796988" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="4aYGoLbxeFM" role="1TKVEl">
-      <property role="TrG5h" value="name" />
-      <property role="IQ2nx" value="4809476668198808306" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="4aYGoLbxbUX" role="1TKVEl">
-      <property role="TrG5h" value="path" />
-      <property role="IQ2nx" value="4809476668198796989" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="asaX9" id="4LhGMnjf2GC" role="lGtFl" />
-  </node>
   <node concept="PlHQZ" id="2obGnlQSrk0">
     <property role="TrG5h" value="IBuildProcessor" />
     <property role="3GE5qa" value="platform.processor" />
@@ -536,9 +504,6 @@
       <property role="IQ2ns" value="8719112291175211414" />
       <ref role="20lvS9" node="7$0wAVob3nZ" resolve="PlatformTemplate" />
     </node>
-    <node concept="PrWs8" id="4zqPC3auYk5" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="51p726VIDRb">
     <property role="TrG5h" value="ExternalBuild" />
@@ -616,12 +581,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
     </node>
-    <node concept="1TJgyi" id="5lP9ZVaAU_v" role="1TKVEl">
-      <property role="IQ2nx" value="6157872040773396831" />
-      <property role="TrG5h" value="path_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="1hPQTELVfE8" role="lGtFl" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7FeXv2EtoDW">
     <property role="EcuMT" value="8849280731830389372" />
@@ -648,10 +607,6 @@
       <property role="TrG5h" value="outputLocation" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="4_vItr5czAZ">
-    <property role="EcuMT" value="5287148819638794687" />
-    <property role="TrG5h" value="IHostTargetAwarePicker" />
   </node>
   <node concept="1TIwiD" id="1hPQTEM4W9y">
     <property role="EcuMT" value="1474325910492791394" />

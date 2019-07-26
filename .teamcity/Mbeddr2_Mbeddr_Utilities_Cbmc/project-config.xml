@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="Mbeddr2_Mbeddr_Utilities" uuid="132e59a4-b6da-4611-863e-c300ae9b8519" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
-  <name>CBMC</name>
-  <description>www.cprover.org/cbmc/</description>
-  <parameters />
-  <cleanup />
-</project>
-

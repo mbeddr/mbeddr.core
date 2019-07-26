@@ -2,8 +2,8 @@
 <model ref="r:b9b93e9f-00ad-495e-a01c-4765753bd132(com.mbeddr.mpsutil.asynccell.sandbox.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -29,6 +29,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -39,6 +40,9 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
+      </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -443,6 +447,9 @@
         <node concept="2iRfu4" id="17HIJlL0f2x" role="2iSdaV" />
       </node>
       <node concept="gc7cB" id="17HIJlL001o" role="3EZMnx">
+        <node concept="2SqB2G" id="3Wx3Ow9bTSR" role="2SqHTX">
+          <property role="TrG5h" value="result" />
+        </node>
         <node concept="3VJUX4" id="17HIJlL001q" role="3YsKMw">
           <node concept="3clFbS" id="17HIJlL001s" role="2VODD2">
             <node concept="3clFbF" id="17HIJlL069s" role="3cqZAp">

@@ -2,7 +2,7 @@
 <model ref="r:00d6ee44-268c-4818-b3e7-4eecf669c7ee(com.mbeddr.mpsutil.treenotation.styles.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -39,9 +39,15 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -59,6 +65,12 @@
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199542442495" name="jetbrains.mps.baseLanguage.closures.structure.FunctionType" flags="in" index="1ajhzC">
+        <child id="1199542457201" name="resultType" index="1ajl9A" />
+        <child id="1199542501692" name="parameterType" index="1ajw0F" />
+      </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
@@ -150,6 +162,20 @@
       <property role="TrG5h" value="tree-layout" />
       <node concept="3uibUv" id="7dj$mdORr6h" role="3t5Oan">
         <ref role="3uigEE" node="7dj$mdORr5K" resolve="ITreeLayoutType" />
+      </node>
+    </node>
+    <node concept="3t5Usi" id="3fc1D1myqBF" role="V601i">
+      <property role="TrG5h" value="tree-button-opacity" />
+      <node concept="10QFUN" id="3fc1D1mzs5n" role="3t49C2">
+        <node concept="10Nm6u" id="3fc1D1mAWoC" role="10QFUP" />
+        <node concept="1ajhzC" id="3fc1D1mzs6l" role="10QFUM">
+          <node concept="10P55v" id="3fc1D1mzsiP" role="1ajw0F" />
+          <node concept="10P55v" id="3fc1D1mzsuX" role="1ajl9A" />
+        </node>
+      </node>
+      <node concept="1ajhzC" id="3fc1D1myqC_" role="3t5Oan">
+        <node concept="10P55v" id="3fc1D1myqCK" role="1ajw0F" />
+        <node concept="10P55v" id="3fc1D1myqCW" role="1ajl9A" />
       </node>
     </node>
   </node>

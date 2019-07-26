@@ -2,6 +2,7 @@
 <model ref="r:8eb3f548-a86c-47df-8e7e-c1b50200de75(com.mbeddr.mpsutil.editingGuide.sandbox.demo)">
   <persistence version="9" />
   <languages>
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <devkit ref="1ca21c70-6e61-4b62-8771-dfd96620ef7c(com.mbeddr.mpsutil.guides)" />
   </languages>
   <imports>
@@ -49,6 +50,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <property id="4467513934994662257" name="forceMultiLine" index="TyiWK" />
         <property id="4467513934994662256" name="forceOneLine" index="TyiWL" />
@@ -105,13 +107,19 @@
       </concept>
     </language>
     <language id="67506b1e-43ad-47fe-a8e6-bc7837e9e11f" name="com.mbeddr.mpsutil.editingGuide">
+      <concept id="3453511597021550269" name="com.mbeddr.mpsutil.editingGuide.structure.CodeWord" flags="ng" index="JL00X">
+        <property id="3453511597021550288" name="text" index="JL01g" />
+      </concept>
       <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ig" index="2LPuA2" />
       <concept id="3909459679554886014" name="com.mbeddr.mpsutil.editingGuide.structure.Exercise" flags="ng" index="2LPuAz">
         <child id="3909459679554886019" name="description" index="2LPu_u" />
         <child id="3909459679554886015" name="tasks" index="2LPuAy" />
       </concept>
-      <concept id="3909459679554886011" name="com.mbeddr.mpsutil.editingGuide.structure.InlineProgramFragment" flags="ng" index="2LPuAA">
+      <concept id="3909459679554886011" name="com.mbeddr.mpsutil.editingGuide.structure.LiteralProgramFragment" flags="ng" index="2LPuAA">
         <child id="3909459679554886012" name="node" index="2LPuAx" />
+      </concept>
+      <concept id="3909459679554886010" name="com.mbeddr.mpsutil.editingGuide.structure.ProgramFragment" flags="ng" index="2LPuAB">
+        <property id="5902522736467820007" name="showErrors" index="2Sfkj0" />
       </concept>
       <concept id="3909459679554885948" name="com.mbeddr.mpsutil.editingGuide.structure.Task" flags="ng" index="2LPuBx">
         <child id="3453511597019902484" name="explanation" index="JZmik" />
@@ -147,7 +155,7 @@
     </language>
   </registry>
   <node concept="2LPuAz" id="3p1cdQ7_M87">
-    <property role="TrG5h" value="Demo" />
+    <property role="TrG5h" value="Demo1" />
     <node concept="2LPuBx" id="3p1cdQ7_M88" role="2LPuAy">
       <property role="TrG5h" value="Deletion" />
       <node concept="19SGf9" id="3p1cdQ7_M89" role="2LPuBy">
@@ -162,7 +170,10 @@
               <node concept="3cpWs6" id="3p1cdQ7_U_b" role="3cqZAp">
                 <node concept="2ShNRf" id="3p1cdQ7_U_R" role="3cqZAk">
                   <node concept="1pGfFk" id="31xWCC4R1s" role="2ShVmc">
-                    <ref role="37wK5l" to="2vci:31xWCC4QvC" resolve="MonitorResultDone" />
+                    <ref role="37wK5l" to="2vci:31xWCC4QkL" resolve="MonitorResultDone" />
+                    <node concept="Xl_RD" id="7t7ujt$ox8J" role="37wK5m">
+                      <property role="Xl_RC" value="You got it!" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -215,6 +226,12 @@
               </node>
             </node>
           </node>
+          <node concept="3cpWs8" id="4sSf$eKinW_" role="3cqZAp">
+            <node concept="3cpWsn" id="4sSf$eKinWC" role="3cpWs9">
+              <property role="TrG5h" value="m1" />
+              <node concept="10Oyi0" id="4sSf$eKinWz" role="1tU5fm" />
+            </node>
+          </node>
           <node concept="3clFbF" id="3p1cdQ7_M9i" role="3cqZAp">
             <node concept="10Nm6u" id="31xWCC4Q4F" role="3clFbG" />
           </node>
@@ -228,7 +245,7 @@
           <node concept="3clFbS" id="3p1cdQ7_M8Y" role="3clF47">
             <node concept="3cpWs8" id="3p1cdQ7_M95" role="3cqZAp">
               <node concept="3cpWsn" id="3p1cdQ7_M98" role="3cpWs9">
-                <property role="TrG5h" value="i" />
+                <property role="TrG5h" value="i1" />
                 <node concept="10Oyi0" id="3p1cdQ7_M94" role="1tU5fm" />
               </node>
             </node>
@@ -236,14 +253,28 @@
         </node>
       </node>
       <node concept="19SGf9" id="2ZHlC004k$A" role="JZmik">
-        <node concept="19SUe$" id="2ZHlC004k$B" role="19SJt6" />
+        <node concept="19SUe$" id="2ZHlC004k$B" role="19SJt6">
+          <property role="19SUeA" value="Because you are clever!" />
+        </node>
       </node>
     </node>
     <node concept="2LPuBx" id="31xWCC4R$X" role="2LPuAy">
       <property role="TrG5h" value="Selection" />
       <node concept="19SGf9" id="31xWCC4R$Y" role="2LPuBy">
         <node concept="19SUe$" id="31xWCC4R$Z" role="19SJt6">
-          <property role="19SUeA" value="Das ist der zweite Schritt. Bitte selektiere 4*7 indem Du auf die 4 gehst und nach oben selektierst." />
+          <property role="19SUeA" value="This is the second step. Now, we provide you with a warning that the variable is unused.&#10;&#10;Please select 4*7 by clicking on 4 and selecting up the tree with " />
+        </node>
+        <node concept="JL00X" id="4sSf$eKlDhu" role="19SJt6">
+          <property role="JL01g" value="CTRL" />
+        </node>
+        <node concept="19SUe$" id="4sSf$eKlDhv" role="19SJt6">
+          <property role="19SUeA" value=" + " />
+        </node>
+        <node concept="JL00X" id="4sSf$eKlDhz" role="19SJt6">
+          <property role="JL01g" value="W" />
+        </node>
+        <node concept="19SUe$" id="4sSf$eKlDh$" role="19SJt6">
+          <property role="19SUeA" value="&#10;" />
         </node>
       </node>
       <node concept="2LPuA2" id="31xWCC4R_0" role="2LPuA6">
@@ -320,12 +351,19 @@
               </node>
             </node>
           </node>
+          <node concept="3cpWs8" id="4sSf$eKipO9" role="3cqZAp">
+            <node concept="3cpWsn" id="4sSf$eKipOc" role="3cpWs9">
+              <property role="TrG5h" value="m2" />
+              <node concept="10Oyi0" id="4sSf$eKipO7" role="1tU5fm" />
+            </node>
+          </node>
           <node concept="3cpWs6" id="4TMjSvbGRcF" role="3cqZAp">
             <node concept="10Nm6u" id="4TMjSvbGRhO" role="3cqZAk" />
           </node>
         </node>
       </node>
       <node concept="2LPuAA" id="31xWCC4RBn" role="2LPuAs">
+        <property role="2Sfkj0" value="true" />
         <node concept="3clFb_" id="31xWCC4RBv" role="2LPuAx">
           <property role="TrG5h" value="dummy" />
           <node concept="3cqZAl" id="31xWCC4RBx" role="3clF45" />
@@ -333,7 +371,7 @@
           <node concept="3clFbS" id="31xWCC4RBz" role="3clF47">
             <node concept="3cpWs8" id="31xWCC4RBE" role="3cqZAp">
               <node concept="3cpWsn" id="31xWCC4RBH" role="3cpWs9">
-                <property role="TrG5h" value="i" />
+                <property role="TrG5h" value="i2" />
                 <node concept="10Oyi0" id="31xWCC4RBD" role="1tU5fm" />
                 <node concept="3cpWs3" id="31xWCC4RKX" role="33vP2m">
                   <node concept="17qRlL" id="31xWCC4RRl" role="3uHU7w">
@@ -359,12 +397,47 @@
         </node>
       </node>
       <node concept="19SGf9" id="2ZHlC004kGI" role="JZmik">
-        <node concept="19SUe$" id="2ZHlC004kGJ" role="19SJt6" />
+        <node concept="19SUe$" id="2ZHlC004kGJ" role="19SJt6">
+          <property role="19SUeA" value="" />
+        </node>
       </node>
     </node>
     <node concept="19SGf9" id="3p1cdQ7_M8e" role="2LPu_u">
       <node concept="19SUe$" id="3p1cdQ7_M8f" role="19SJt6">
-        <property role="19SUeA" value="Hier lernst Du, wie Du den Editor bedienen tust." />
+        <property role="19SUeA" value="" />
+      </node>
+    </node>
+  </node>
+  <node concept="2LPuAz" id="DBaqrF0bAq">
+    <property role="TrG5h" value="Demo2" />
+    <node concept="2LPuBx" id="DBaqrF0bAr" role="2LPuAy">
+      <property role="TrG5h" value="Deletion" />
+      <node concept="19SGf9" id="DBaqrF0bAs" role="2LPuBy">
+        <node concept="19SUe$" id="DBaqrF0bAt" role="19SJt6">
+          <property role="19SUeA" value="You don't have to do anything here." />
+        </node>
+      </node>
+      <node concept="2LPuA2" id="DBaqrF0bAu" role="2LPuA6">
+        <node concept="3clFbS" id="DBaqrF0bAv" role="2VODD2">
+          <node concept="3cpWs6" id="DBaqrF0cni" role="3cqZAp">
+            <node concept="2ShNRf" id="DBaqrF0cnj" role="3cqZAk">
+              <node concept="1pGfFk" id="DBaqrF0cnk" role="2ShVmc">
+                <ref role="37wK5l" to="2vci:31xWCC4QvC" resolve="MonitorResultDone" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2LPuAA" id="DBaqrF0bAX" role="2LPuAs">
+        <node concept="3clFbH" id="DBaqrF0cP0" role="2LPuAx" />
+      </node>
+      <node concept="19SGf9" id="DBaqrF0bB5" role="JZmik">
+        <node concept="19SUe$" id="DBaqrF0bB6" role="19SJt6" />
+      </node>
+    </node>
+    <node concept="19SGf9" id="DBaqrF0bBX" role="2LPu_u">
+      <node concept="19SUe$" id="DBaqrF0bBY" role="19SJt6">
+        <property role="19SUeA" value="This is another example Exercise." />
       </node>
     </node>
   </node>

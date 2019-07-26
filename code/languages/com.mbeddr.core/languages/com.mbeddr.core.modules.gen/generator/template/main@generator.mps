@@ -2,7 +2,7 @@
 <model ref="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
@@ -387,9 +387,9 @@
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -502,11 +502,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -514,7 +514,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -1862,7 +1862,7 @@
       <property role="TrG5h" value="dummy" />
       <property role="34HlcH" value=" " />
       <node concept="3IwBUS" id="7BEN_Nebcl$" role="3O7dZk">
-        <property role="3IwBUT" value="modifiers" />
+        <property role="3IwBUT" value="prefix" />
         <node concept="2b32R4" id="7BEN_Nebd5L" role="lGtFl">
           <node concept="3JmXsc" id="7BEN_Nebd5O" role="2P8S$">
             <node concept="3clFbS" id="7BEN_Nebd5P" role="2VODD2">
@@ -7200,9 +7200,9 @@
             <node concept="3clFbH" id="dxqELdskkZ" role="3cqZAp" />
             <node concept="3clFbJ" id="dxqELdskl0" role="3cqZAp">
               <node concept="3clFbS" id="dxqELdskl1" role="3clFbx">
-                <node concept="34ab3g" id="dxqELdskl2" role="3cqZAp">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="3cpWs3" id="jK_Dl7cbZ" role="34bqiv">
+                <node concept="2xdQw9" id="2Fugwv5QbJY" role="3cqZAp">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="3cpWs3" id="jK_Dl7cbZ" role="9lYJi">
                     <node concept="Xl_RD" id="jK_Dl7khT" role="3uHU7w">
                       <property role="Xl_RC" value="' due to cycle between some module content items" />
                     </node>
@@ -7301,9 +7301,9 @@
             <node concept="3clFbH" id="dxqELdt3wi" role="3cqZAp" />
             <node concept="3clFbJ" id="dxqELdt3wj" role="3cqZAp">
               <node concept="3clFbS" id="dxqELdt3wk" role="3clFbx">
-                <node concept="34ab3g" id="dxqELdt3wl" role="3cqZAp">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="3cpWs3" id="jK_Dl7m8h" role="34bqiv">
+                <node concept="2xdQw9" id="2Fugwv5QbT_" role="3cqZAp">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="3cpWs3" id="jK_Dl7m8h" role="9lYJi">
                     <node concept="Xl_RD" id="jK_Dl7m8i" role="3uHU7w">
                       <property role="Xl_RC" value="' due to cycle between some module content items" />
                     </node>

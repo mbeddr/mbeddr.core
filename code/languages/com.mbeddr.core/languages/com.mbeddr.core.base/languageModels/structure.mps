@@ -9,7 +9,7 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -19,8 +19,8 @@
     <import index="10jo" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.structure)" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -899,9 +899,6 @@
     <node concept="PrWs8" id="7katCQkBK3h" role="PrDN$">
       <ref role="PrY4T" node="1DVNPtFPUDE" resolve="IHideFromOutline" />
     </node>
-    <node concept="PrWs8" id="2AZbPfMcw3J" role="PrDN$">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="PlHQZ" id="1rXJcsmD0fG">
     <property role="3GE5qa" value="config" />
@@ -1365,61 +1362,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5lKnBeAtNw8">
-    <property role="TrG5h" value="AbstractPicker_old" />
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="6156524541422549000" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5lKnBeAtODI" role="1TKVEl">
-      <property role="TrG5h" value="path_old" />
-      <property role="IQ2nx" value="6156524541422553710" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="7CLMy5mpPoI" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.AbstractPicker&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="2mxBqli8MW4" role="1TKVEl">
-      <property role="TrG5h" value="pointOnlyToExistingFile_old" />
-      <property role="IQ2nx" value="2711621784026951428" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="7CLMy5mpPoN" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.AbstractPicker&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="x1qBkorxt" role="1TKVEl">
-      <property role="TrG5h" value="mayBeEmpty_old" />
-      <property role="IQ2nx" value="9294901202237533" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="7CLMy5mpPoS" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.AbstractPicker&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="7CLMy5mpPnC" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5lKnBeAxLdJ">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="SolutionRelativeFilePicker_old" />
-    <property role="34LRSv" value="solution relative file picker" />
-    <property role="EcuMT" value="6156524541423588207" />
-    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPo$" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2iGZqsHuOWj">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="SolutionRelativeDirPicker_old" />
-    <property role="34LRSv" value="solution relative dir picker" />
-    <property role="EcuMT" value="2642765975824060179" />
-    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPoq" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="DubiFAXpld">
     <property role="3GE5qa" value="chunk" />
     <property role="TrG5h" value="DefaultGenericChunkDependency" />
@@ -1458,34 +1400,6 @@
     <property role="TrG5h" value="IValueDebuggable" />
     <property role="EcuMT" value="651821299954673486" />
   </node>
-  <node concept="1TIwiD" id="$bJ0jgQ80g">
-    <property role="3GE5qa" value="valueDebugger" />
-    <property role="TrG5h" value="ValueDebugger" />
-    <property role="EcuMT" value="651821299954909200" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="$bJ0jgQ80j" role="lGtFl">
-      <property role="Hh88m" value="debugger" />
-      <node concept="trNpa" id="7hziiiew9o4" role="EQaZv">
-        <ref role="trN6q" node="$bJ0jgPete" resolve="IValueDebuggable" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="$bJ0jgQ80h" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <property role="IQ2nx" value="651821299954909201" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="$bJ0jgQ80i" role="1TKVEl">
-      <property role="TrG5h" value="expanded" />
-      <property role="IQ2nx" value="651821299954909202" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="2BbcAuIdyyA" role="1TKVEl">
-      <property role="TrG5h" value="debugKeyString" />
-      <property role="IQ2nx" value="3011556196713113766" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="asaX9" id="7hziiiew9o7" role="lGtFl" />
-  </node>
   <node concept="1TIwiD" id="7XSydqUPm9">
     <property role="TrG5h" value="ChunkDependencyConstraint" />
     <property role="R5$K7" value="true" />
@@ -1515,24 +1429,6 @@
     <property role="EcuMT" value="176285146686936640" />
     <node concept="PrWs8" id="9MiAwFsXuS" role="PrDN$">
       <ref role="PrY4T" node="7NyyyjNt9Bq" resolve="ITreeViewable" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7c_RIoB8H2I">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="MacroFilePicker_old" />
-    <property role="34LRSv" value="macro file picker" />
-    <property role="EcuMT" value="8297282968580444334" />
-    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker_old" />
-    <node concept="1TJgyi" id="7c_RIoB8OqH" role="1TKVEl">
-      <property role="TrG5h" value="macro_old" />
-      <property role="IQ2nx" value="8297282968580474541" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="7CLMy5mpPoX" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.MacroFilePicker&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="7CLMy5mpPo6" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="GKLijSvTd0">
@@ -1635,124 +1531,6 @@
       <ref role="PrY4T" node="7NyyyjNt9Bq" resolve="ITreeViewable" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4g52gaNPZ6t">
-    <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="ReviewAssessmentResult_old" />
-    <property role="EcuMT" value="4901333676674511261" />
-    <ref role="1TJDcQ" node="K292flwHw9" resolve="AssessmentResult" />
-    <node concept="1TJgyj" id="4g52gaNPZk9" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="code_old" />
-      <property role="20lbJX" value="0..1" />
-      <property role="IQ2ns" value="4901333676674512137" />
-      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      <node concept="asaX9" id="48qh2gXL8uj" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.codereview.structure.ReviewAssessmentResult&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="48qh2gXL8sr" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4g52gaNQxok">
-    <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="ReviewAssessmentQuery_old" />
-    <property role="34LRSv" value="code review summary" />
-    <property role="EcuMT" value="4901333676674651668" />
-    <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery" />
-    <node concept="1TJgyi" id="3DYDRw0Qxwo" role="1TKVEl">
-      <property role="TrG5h" value="doNotShowGreen_old" />
-      <property role="IQ2nx" value="4214990435117570072" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="48qh2gXL8tB" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.ReviewAssessmentQuery&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="7nkDZJXlKZu" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="scope_old" />
-      <property role="20lbJX" value="0..1" />
-      <property role="IQ2ns" value="8490595898229198814" />
-      <ref role="20lvS9" node="7nkDZJXluO4" resolve="AssessmentScope" />
-      <node concept="asaX9" id="48qh2gXL8tX" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.codereview.structure.ReviewAssessmentQuery&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="48qh2gXL8sh" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4g52gaNN$a$">
-    <property role="TrG5h" value="CodeReviewData_old" />
-    <property role="3GE5qa" value="codereview" />
-    <property role="EcuMT" value="4901333676673876644" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="1TJgyi" id="4g52gaNOHw2" role="1TKVEl">
-      <property role="TrG5h" value="lastReviewTimestamp_old" />
-      <property role="IQ2nx" value="4901333676674177026" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="48qh2gXL8s_" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="4g52gaNOHw7" role="1TKVEl">
-      <property role="TrG5h" value="lastReviewReviewer_old" />
-      <property role="IQ2nx" value="4901333676674177031" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="48qh2gXL8sK" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="4g52gaNOHwg" role="1TKVEl">
-      <property role="TrG5h" value="lastReviewHash_old" />
-      <property role="IQ2nx" value="4901333676674177040" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-      <node concept="asaX9" id="48qh2gXL8sV" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="fx1tsHglwA" role="1TKVEl">
-      <property role="TrG5h" value="lastReviewState_old" />
-      <property role="IQ2nx" value="279511073609046054" />
-      <ref role="AX2Wp" node="1tDstbgKlCo" resolve="CodeState" />
-      <node concept="asaX9" id="48qh2gXL8t6" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="4g52gaNPEri" role="1TKVEl">
-      <property role="TrG5h" value="reviewIsCurrent_old" />
-      <property role="IQ2nx" value="4901333676674426578" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="48qh2gXL8th" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="1tDstbgKluR" role="1TKVEl">
-      <property role="TrG5h" value="codeState_old" />
-      <property role="IQ2nx" value="1687004685686364087" />
-      <ref role="AX2Wp" node="1tDstbgKlCo" resolve="CodeState" />
-      <node concept="asaX9" id="48qh2gXL8ts" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
-      </node>
-    </node>
-    <node concept="M6xJ_" id="4g52gaNN$a_" role="lGtFl">
-      <property role="Hh88m" value="codereview_old" />
-      <node concept="trNpa" id="1tDstbgC7cf" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-    <node concept="asaX9" id="48qh2gXL8rM" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="4g52gaNN$9K">
-    <property role="TrG5h" value="ICodeReviewEntity_old" />
-    <property role="3GE5qa" value="codereview" />
-    <property role="EcuMT" value="4901333676673876592" />
-    <node concept="asaX9" id="48qh2gXL8s6" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7nkDZJXluO4">
     <property role="TrG5h" value="AssessmentScope" />
     <property role="3GE5qa" value="assessment.scope" />
@@ -1787,48 +1565,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8490595898229164172" />
       <ref role="20lvS9" node="6clJcrJYOUA" resolve="Chunk" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="gjBy3TfZQv">
-    <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="CodeReviewConfig_old" />
-    <property role="19KtqR" value="true" />
-    <property role="EcuMT" value="293752265167076767" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="gjBy3ThgKr" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="concepts_old" />
-      <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="293752265167408155" />
-      <ref role="20lvS9" node="gjBy3ThgJz" resolve="ConceptDeclarationReference_old" />
-      <node concept="asaX9" id="48qh2gXL8tM" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewConfig&quot;" />
-      </node>
-    </node>
-    <node concept="PrWs8" id="1ir19b4JZNn" role="PzmwI">
-      <ref role="PrY4T" node="IviauXabd" resolve="IMbeddrIDERoot" />
-    </node>
-    <node concept="asaX9" id="48qh2gXL8rC" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="gjBy3ThgJz">
-    <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="ConceptDeclarationReference_old" />
-    <property role="EcuMT" value="293752265167408099" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4uR15_er0pl" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="concept_old" />
-      <property role="20lbJX" value="0..1" />
-      <property role="IQ2ns" value="5167603879045236309" />
-      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
-      <node concept="asaX9" id="48qh2gXL8u8" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.codereview.structure.ConceptDeclarationReference&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="48qh2gXL8rW" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JcbkuyFcOM">
@@ -1868,66 +1604,6 @@
   <node concept="PlHQZ" id="6ucVliiGuzs">
     <property role="TrG5h" value="ISuppressStaticEvalWarnings" />
     <property role="EcuMT" value="7461599630140238044" />
-  </node>
-  <node concept="1TIwiD" id="4eXJ6EO9ZKx">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="MacroFolderPicker_old" />
-    <property role="34LRSv" value="macro folder picker" />
-    <property role="EcuMT" value="4881264737614560289" />
-    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
-    <node concept="1TJgyi" id="4eXJ6EO9ZKy" role="1TKVEl">
-      <property role="TrG5h" value="macro_old" />
-      <property role="IQ2nx" value="4881264737614560290" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="7CLMy5mpPp2" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.MacroFolderPicker&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="7CLMy5mpPog" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4eXJ6EOwIAn">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="FileSystemDirPicker_old" />
-    <property role="34LRSv" value="file system dir picker" />
-    <property role="EcuMT" value="4881264737620519319" />
-    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPnM" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1jw2PJJHS3i">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="FileSystemFilePicker_old" />
-    <property role="34LRSv" value="file system file picker" />
-    <property role="EcuMT" value="1504214765033455826" />
-    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPnW" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5Wocj7wnolM">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="AbstractFolderPicker_old" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="6852280923331593586" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPnu" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5Wocj7wnotA">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="AbstractFilePicker_old" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="6852280923331594086" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker_old" />
-    <node concept="asaX9" id="7CLMy5mpPnk" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
-    </node>
   </node>
   <node concept="PlHQZ" id="3RtPbXOi5Ir">
     <property role="3GE5qa" value="commenting" />
@@ -2026,6 +1702,20 @@
   <node concept="PlHQZ" id="3x8oZgKbem1">
     <property role="EcuMT" value="4055601364878550401" />
     <property role="TrG5h" value="ISupportsLocalLanguage" />
+  </node>
+  <node concept="1TIwiD" id="4WU0y9pWgP_">
+    <property role="3GE5qa" value="assessment.scope" />
+    <property role="TrG5h" value="ListOfModelsScope" />
+    <property role="34LRSv" value="list of models" />
+    <property role="EcuMT" value="5708877824206638437" />
+    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <node concept="1TJgyj" id="4WU0y9pWgVa" role="1TKVEi">
+      <property role="IQ2ns" value="5708877824206638794" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="models" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+    </node>
   </node>
 </model>
 
