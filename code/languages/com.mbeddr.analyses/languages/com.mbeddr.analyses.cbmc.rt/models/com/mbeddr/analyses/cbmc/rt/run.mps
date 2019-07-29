@@ -3069,6 +3069,13 @@
           <property role="Xl_RC" value="satabs" />
         </node>
       </node>
+      <node concept="QsSxf" id="5lmv0usHN12" role="Qtgdg">
+        <property role="TrG5h" value="FASTCHECK" />
+        <ref role="37wK5l" node="40PV5hA1DQ5" resolve="CBMCAnalysisConfig.PROVER" />
+        <node concept="Xl_RD" id="5lmv0usHNIU" role="37wK5m">
+          <property role="Xl_RC" value="fastcheck" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="40PV5hA1DQ4" role="1B3o_S" />
       <node concept="312cEg" id="40PV5hA1DQL" role="jymVt">
         <property role="TrG5h" value="cmd" />
@@ -6406,6 +6413,18 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbF" id="5js0mJYKRTr" role="3cqZAp">
+                    <node concept="2OqwBi" id="5js0mJYKRTs" role="3clFbG">
+                      <node concept="37vLTw" id="5js0mJYKRTt" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                      </node>
+                      <node concept="TSZUe" id="5js0mJYKRTu" role="2OqNvi">
+                        <node concept="Xl_RD" id="5js0mJYKRTv" role="25WWJ7">
+                          <property role="Xl_RC" value="-D_INC_CYGWIN" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbJ" id="2aciK4JtCTs" role="3cqZAp">
                     <node concept="3clFbS" id="2aciK4JtCTu" role="3clFbx">
                       <node concept="3clFbF" id="2aciK4JrRyL" role="3cqZAp">
@@ -6416,6 +6435,18 @@
                           <node concept="TSZUe" id="2aciK4JrSSn" role="2OqNvi">
                             <node concept="Xl_RD" id="2aciK4JrT4u" role="25WWJ7">
                               <property role="Xl_RC" value="-D__stdcall=" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="5js0mJYKUYg" role="3cqZAp">
+                        <node concept="2OqwBi" id="5js0mJYKUYh" role="3clFbG">
+                          <node concept="37vLTw" id="5js0mJYKUYi" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                          </node>
+                          <node concept="TSZUe" id="5js0mJYKUYj" role="2OqNvi">
+                            <node concept="Xl_RD" id="5js0mJYKUYk" role="25WWJ7">
+                              <property role="Xl_RC" value="-D__cdecl=" />
                             </node>
                           </node>
                         </node>
