@@ -3091,6 +3091,13 @@
           <property role="Xl_RC" value="satabs" />
         </node>
       </node>
+      <node concept="QsSxf" id="5lmv0usHN12" role="Qtgdg">
+        <property role="TrG5h" value="FASTCHECK" />
+        <ref role="37wK5l" node="40PV5hA1DQ5" resolve="CBMCAnalysisConfig.PROVER" />
+        <node concept="Xl_RD" id="5lmv0usHNIU" role="37wK5m">
+          <property role="Xl_RC" value="fastcheck" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="40PV5hA1DQ4" role="1B3o_S" />
       <node concept="312cEg" id="40PV5hA1DQL" role="jymVt">
         <property role="TrG5h" value="cmd" />

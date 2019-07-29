@@ -62,9 +62,6 @@
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -257,6 +254,9 @@
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
+      <concept id="1221737317277" name="jetbrains.mps.baseLanguage.structure.StaticInitializer" flags="lg" index="1Pe0a1">
+        <child id="1221737317278" name="statementList" index="1Pe0a2" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -1205,12 +1205,12 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="42G5eOpPNgZ" role="1B3o_S" />
       <node concept="3cqZAl" id="42G5eOpPNiP" role="3clF45" />
       <node concept="37vLTG" id="42G5eOpPNkL" role="3clF46">
         <property role="TrG5h" value="s" />
         <node concept="17QB3L" id="42G5eOpPNkK" role="1tU5fm" />
       </node>
+      <node concept="3Tmbuc" id="5lmv0usHR6g" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="3GkK2EEPLng" role="jymVt" />
     <node concept="Wx3nA" id="4vY$tOPRbWc" role="jymVt">
@@ -2112,7 +2112,6 @@
     <node concept="2tJIrI" id="5WN2hYTStTC" role="jymVt" />
     <node concept="2YIFZL" id="6izRX52KeZM" role="jymVt">
       <property role="TrG5h" value="joinAndEscapeOutputLines" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="6izRX52K8eC" role="3clF47">
@@ -2192,15 +2191,14 @@
         </node>
       </node>
       <node concept="3cqZAl" id="3RFEChb1yu9" role="3clF45" />
-      <node concept="3Tm6S6" id="6izRX52K7jC" role="1B3o_S" />
       <node concept="NWlO9" id="6izRX52KgiF" role="lGtFl">
         <property role="NWlVz" value="Joins and escapes output lines; test true if CBMC 4.9 is used." />
       </node>
+      <node concept="3Tmbuc" id="5lmv0usI8ge" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6izRX52K6oQ" role="jymVt" />
     <node concept="2YIFZL" id="7lqcRYfXkVE" role="jymVt">
       <property role="TrG5h" value="formatErrorExplanation" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="7lqcRYfXaRg" role="3clF47">
@@ -2227,6 +2225,66 @@
       <node concept="17QB3L" id="7lqcRYfXaR9" role="3clF45" />
       <node concept="NWlO9" id="7lqcRYfXnHj" role="lGtFl">
         <property role="NWlVz" value="Utility to format error explanations." />
+      </node>
+      <node concept="3Tmbuc" id="5lmv0usIpc$" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="191E9vaceYA" role="jymVt" />
+    <node concept="Wx3nA" id="191E9vacinT" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="mySAXParser" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="191E9vacind" role="1tU5fm">
+        <ref role="3uigEE" to="vpqd:~SAXParser" resolve="SAXParser" />
+      </node>
+      <node concept="NWlO9" id="560HybK_zY3" role="lGtFl">
+        <property role="NWlVz" value="The SAX parser which will parse the lifted results." />
+      </node>
+      <node concept="3Tmbuc" id="5lmv0usIjeO" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="191E9vaciPx" role="jymVt" />
+    <node concept="1Pe0a1" id="191E9vackOo" role="jymVt">
+      <node concept="3clFbS" id="191E9vackOp" role="1Pe0a2">
+        <node concept="SfApY" id="191E9vaclAK" role="3cqZAp">
+          <node concept="3clFbS" id="191E9vaclAM" role="SfCbr">
+            <node concept="3clFbF" id="191E9vacllz" role="3cqZAp">
+              <node concept="37vLTI" id="191E9vaclqZ" role="3clFbG">
+                <node concept="37vLTw" id="191E9vaclly" role="37vLTJ">
+                  <ref role="3cqZAo" node="191E9vacinT" resolve="mySAXParser" />
+                </node>
+                <node concept="2OqwBi" id="191E9vaclts" role="37vLTx">
+                  <node concept="2YIFZM" id="191E9vacltt" role="2Oq$k0">
+                    <ref role="1Pybhc" to="vpqd:~SAXParserFactory" resolve="SAXParserFactory" />
+                    <ref role="37wK5l" to="vpqd:~SAXParserFactory.newInstance():javax.xml.parsers.SAXParserFactory" resolve="newInstance" />
+                  </node>
+                  <node concept="liA8E" id="191E9vacltu" role="2OqNvi">
+                    <ref role="37wK5l" to="vpqd:~SAXParserFactory.newSAXParser():javax.xml.parsers.SAXParser" resolve="newSAXParser" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="191E9vaclAN" role="TEbGg">
+            <node concept="3cpWsn" id="191E9vaclAP" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="191E9vaclT3" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="191E9vaclAT" role="TDEfX">
+              <node concept="3clFbF" id="191E9vacm3$" role="3cqZAp">
+                <node concept="2OqwBi" id="191E9vacm9f" role="3clFbG">
+                  <node concept="37vLTw" id="191E9vacm3z" role="2Oq$k0">
+                    <ref role="3cqZAo" node="191E9vaclAP" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="191E9vacmlq" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="NWlO9" id="3_HSwtcH$N6" role="lGtFl">
@@ -4146,10 +4204,6 @@
         <property role="NWlVz" value="Returns the integer representing the line number. This method is a convenience that treats NumberFormatEx." />
       </node>
     </node>
-    <node concept="3Tm1VV" id="4yi9mPsdwG2" role="1B3o_S" />
-    <node concept="3uibUv" id="4yi9mPsdwHZ" role="1zkMxy">
-      <ref role="3uigEE" to="p34w:~DefaultHandler" resolve="DefaultHandler" />
-    </node>
     <node concept="2tJIrI" id="6lZZfFP0ej7" role="jymVt" />
     <node concept="3clFb_" id="6lZZfFP0fgs" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -4308,6 +4362,10 @@
         <node concept="17QB3L" id="6lZZfFP0ffN" role="1Lm7xW" />
         <node concept="10Oyi0" id="6lZZfFP0fge" role="1Lm7xW" />
       </node>
+    </node>
+    <node concept="3Tm1VV" id="4yi9mPsdwG2" role="1B3o_S" />
+    <node concept="3uibUv" id="4yi9mPsdwHZ" role="1zkMxy">
+      <ref role="3uigEE" to="p34w:~DefaultHandler" resolve="DefaultHandler" />
     </node>
   </node>
   <node concept="312cEu" id="4yi9mPskzkL">
