@@ -11,9 +11,7 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
-      </concept>
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu" />
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
@@ -90,9 +88,7 @@
         <ref role="trN6q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
       </node>
     </node>
-    <node concept="1QGGSu" id="6LCinStDt6d" role="rwd14">
-      <property role="1iqoE4" value="${mps_home}/bin/sadf" />
-    </node>
+    <node concept="1QGGSu" id="6LCinStDt6d" role="rwd14" />
   </node>
   <node concept="Az7Fb" id="7GaZbxRWsMP">
     <property role="TrG5h" value="rgbaColor" />
