@@ -27,9 +27,6 @@
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
       </concept>
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
-      </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
@@ -75,9 +72,6 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="8866176685655302685" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1QGGSu" id="6LCinStDt9E" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/units.png" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7GaZbxSmbiz">
     <property role="TrG5h" value="TestConcept2" />
