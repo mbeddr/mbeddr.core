@@ -2102,20 +2102,20 @@
       <node concept="3clFbS" id="5Oog2UbP_cf" role="3clF47">
         <node concept="3clFbF" id="5Oog2UbP_ci" role="3cqZAp">
           <node concept="22lmx$" id="4NsxPSUwmRl" role="3clFbG">
-            <node concept="2OqwBi" id="1EH1Mz68Tmz" role="3uHU7w">
-              <node concept="13iAh5" id="1EH1Mz68U1x" role="2Oq$k0">
-                <ref role="3eA5LN" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-              </node>
-              <node concept="2qgKlT" id="1EH1Mz68Wmv" role="2OqNvi">
-                <ref role="37wK5l" node="5Oog2UbP_bT" resolve="preventNameMangling" />
-              </node>
-            </node>
             <node concept="2OqwBi" id="20agw22Ew8U" role="3uHU7B">
               <node concept="13iPFW" id="20agw22EvTq" role="2Oq$k0" />
               <node concept="1mIQ4w" id="20agw22EwSZ" role="2OqNvi">
                 <node concept="chp4Y" id="20agw22EwXp" role="cj9EA">
                   <ref role="cht4Q" to="x27k:20agw21I6x2" resolve="IImplementsKnownFunctionPrototype" />
                 </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1EH1Mz68Tmz" role="3uHU7w">
+              <node concept="13iAh5" id="1EH1Mz68U1x" role="2Oq$k0">
+                <ref role="3eA5LN" to="x27k:5Oog2UbPmsI" resolve="IExternable" />
+              </node>
+              <node concept="2qgKlT" id="1EH1Mz68Wmv" role="2OqNvi">
+                <ref role="37wK5l" node="5Oog2UbP_bT" resolve="preventNameMangling" />
               </node>
             </node>
           </node>
