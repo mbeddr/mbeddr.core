@@ -5867,7 +5867,7 @@
             </node>
             <node concept="2OqwBi" id="1EH1Mz68Tmz" role="3uHU7w">
               <node concept="13iAh5" id="1EH1Mz68U1x" role="2Oq$k0">
-                <ref role="3eA5LN" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+                <ref role="3eA5LN" to="x27k:2ofiXe_tTHX" resolve="ICanMangleNames" />
               </node>
               <node concept="2qgKlT" id="1EH1Mz68Wmv" role="2OqNvi">
                 <ref role="37wK5l" to="qd6m:5Oog2UbP_bT" resolve="preventNameMangling" />

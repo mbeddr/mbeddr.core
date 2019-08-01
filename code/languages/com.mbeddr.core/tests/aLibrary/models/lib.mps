@@ -105,6 +105,9 @@
         <reference id="5950410542643524493" name="function" index="3O_q_h" />
         <child id="5950410542643524495" name="actuals" index="3O_q_j" />
       </concept>
+      <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
+        <reference id="6610873504380357355" name="var" index="1S7826" />
+      </concept>
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
         <child id="2771264470558526601" name="init" index="1cecVj" />
       </concept>
@@ -205,6 +208,8 @@
     </node>
     <node concept="1S7NMz" id="7Aba6BziVVU" role="N3F5h">
       <property role="TrG5h" value="var" />
+      <property role="3mNisv" value="false" />
+      <property role="2OOxQR" value="false" />
       <node concept="26Vqqz" id="7Aba6BziVVS" role="2C2TGm" />
       <node concept="3TlMh9" id="7Aba6BziVYV" role="1cecVj">
         <property role="2hmy$m" value="0" />
@@ -216,6 +221,17 @@
     <node concept="N3Fnx" id="7Aba6BzyX5b" role="N3F5h">
       <property role="TrG5h" value="func" />
       <node concept="3XIRFW" id="7Aba6BzyX5d" role="3XIRFX">
+        <node concept="1_9egQ" id="4sIWb0Annpw" role="3XIRFZ">
+          <node concept="3O_q_g" id="4sIWb0Annpu" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+            <node concept="PhEJO" id="4sIWb0AnnpJ" role="3O_q_j">
+              <property role="PhEJT" value="%d" />
+            </node>
+            <node concept="1S7827" id="4sIWb0Annub" role="3O_q_j">
+              <ref role="1S7826" node="7Aba6BziVVU" resolve="var" />
+            </node>
+          </node>
+        </node>
         <node concept="1_9egQ" id="7Aba6BzyXb8" role="3XIRFZ">
           <node concept="3O_q_g" id="7Aba6BzyXb6" role="1_9egR">
             <ref role="3O_q_h" node="7Aba6BzyWPM" resolve="internalFunc" />
@@ -293,6 +309,9 @@
     </node>
     <node concept="3GEVxB" id="1EH1Mz64kgl" role="2OODSX">
       <ref role="3GEb4d" node="1EH1Mz64k9k" resolve="Arithmetics" />
+    </node>
+    <node concept="3GEVxB" id="4sIWb0Anni1" role="2OODSX">
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
     </node>
   </node>
   <node concept="N3F5e" id="7Aba6BzyWES">
