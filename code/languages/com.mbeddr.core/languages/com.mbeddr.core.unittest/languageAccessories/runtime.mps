@@ -2233,8 +2233,8 @@
                 <node concept="4ZOvp" id="4j41pMpn0oN" role="3O_q_j">
                   <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
                 </node>
-                <node concept="3ZVu4v" id="4j41pMpn1$R" role="3O_q_j">
-                  <ref role="3ZVs_2" node="1m$ejqD79Mw" resolve="stdout_capture_file" />
+                <node concept="3ZUYvv" id="3yL83Dv_bLb" role="3O_q_j">
+                  <ref role="3ZUYvu" node="68PB5rZby59" resolve="stdout_capture_path" />
                 </node>
               </node>
             </node>
@@ -2286,8 +2286,8 @@
                 <node concept="4ZOvp" id="4j41pMpn17c" role="3O_q_j">
                   <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
                 </node>
-                <node concept="3ZVu4v" id="4j41pMpn1PB" role="3O_q_j">
-                  <ref role="3ZVs_2" node="1m$ejqD79MI" resolve="stderr_capture_file" />
+                <node concept="3ZUYvv" id="3yL83Dv_c6n" role="3O_q_j">
+                  <ref role="3ZUYvu" node="68PB5rZby6O" resolve="stderr_capture_path" />
                 </node>
               </node>
             </node>
@@ -2350,8 +2350,8 @@
                 <node concept="4ZOvp" id="4j41pMpng0J" role="3O_q_j">
                   <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
                 </node>
-                <node concept="3ZVu4v" id="4j41pMpnhJT" role="3O_q_j">
-                  <ref role="3ZVs_2" node="1m$ejqD79Mw" resolve="stdout_capture_file" />
+                <node concept="3ZUYvv" id="3yL83Dv_b8t" role="3O_q_j">
+                  <ref role="3ZUYvu" node="68PB5rZby59" resolve="stdout_capture_path" />
                 </node>
               </node>
             </node>
@@ -2388,8 +2388,8 @@
                 <node concept="4ZOvp" id="4j41pMpnifr" role="3O_q_j">
                   <ref role="2DPCA0" node="1m$ejqCWVD4" resolve="IO_ERROR" />
                 </node>
-                <node concept="3ZVu4v" id="4j41pMpnkcR" role="3O_q_j">
-                  <ref role="3ZVs_2" node="1m$ejqD79MI" resolve="stderr_capture_file" />
+                <node concept="3ZUYvv" id="3yL83Dv_bs4" role="3O_q_j">
+                  <ref role="3ZUYvu" node="68PB5rZby6O" resolve="stderr_capture_path" />
                 </node>
               </node>
             </node>
@@ -7682,9 +7682,6 @@
     </node>
     <node concept="3GEVxB" id="68PB5rZa1Wc" role="2OODSX">
       <ref role="3GEb4d" to="3y0n:2RIhi0HBZdt" resolve="string" />
-    </node>
-    <node concept="3GEVxB" id="2PyooRI2c9Q" role="2OODSX">
-      <ref role="3GEb4d" to="ml7g:6LsWDiKmfzg" resolve="unistd" />
     </node>
   </node>
   <node concept="rcWEw" id="1m$ejqBHL_i">
