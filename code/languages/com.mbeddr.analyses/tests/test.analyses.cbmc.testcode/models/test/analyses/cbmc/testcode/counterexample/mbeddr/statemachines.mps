@@ -274,11 +274,6 @@
       <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
     </language>
-    <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
-      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO">
-        <property id="4791118330015841686" name="strategy" index="3r2okE" />
-      </concept>
-    </language>
     <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
       <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
         <child id="6973658835837826906" name="exp" index="Y9XUp" />
@@ -292,9 +287,6 @@
     <node concept="3yF7LM" id="4kJ3EIm6kkr" role="2Q9xDr">
       <property role="3yF7Mc" value="true" />
       <property role="1m3O_J" value="true" />
-    </node>
-    <node concept="MH4UO" id="4sIWb0C32Xe" role="2Q9xDr">
-      <property role="3r2okE" value="1" />
     </node>
     <node concept="29Nb31" id="2WJ8cS_AEjC" role="2ePNbc">
       <property role="TrG5h" value="lib" />

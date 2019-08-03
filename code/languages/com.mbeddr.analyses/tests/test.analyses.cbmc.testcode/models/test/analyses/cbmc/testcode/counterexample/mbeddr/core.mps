@@ -262,7 +262,6 @@
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
-        <property id="6708182213627106114" name="preventNameMangling" index="3mNxdG" />
       </concept>
       <concept id="6437088627575724000" name="com.mbeddr.core.modules.structure.FunctionPrototype" flags="ng" index="N3Fnw" />
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
@@ -377,11 +376,6 @@
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
       <concept id="4375898003726285487" name="com.mbeddr.core.expressions.structure.PreIncrementExpression" flags="ng" index="3TM6Ez" />
     </language>
-    <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
-      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO">
-        <property id="4791118330015841686" name="strategy" index="3r2okE" />
-      </concept>
-    </language>
     <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
       <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
         <child id="6973658835837826906" name="exp" index="Y9XUp" />
@@ -440,9 +434,6 @@
   <node concept="2v9HqL" id="6iM0fX1M8WA">
     <node concept="2Q9Fgs" id="6iM0fX1M8WC" role="2Q9xDr">
       <node concept="2Q9FjX" id="6iM0fX1M8WD" role="2Q9FjI" />
-    </node>
-    <node concept="MH4UO" id="4sIWb0C2YdJ" role="2Q9xDr">
-      <property role="3r2okE" value="1" />
     </node>
     <node concept="2eOfOl" id="6iM0fX1M8WE" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
@@ -1771,7 +1762,6 @@
     <property role="TrG5h" value="global_vars1" />
     <node concept="1S7NMz" id="3kLBXRrpYXc" role="N3F5h">
       <property role="TrG5h" value="anIntVar" />
-      <property role="3mNxdG" value="false" />
       <node concept="26Vqqz" id="7iLQIU2FlAv" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -1787,7 +1777,6 @@
       <property role="TrG5h" value="someFunctionToAnalyze1" />
       <property role="2OOxQR" value="true" />
       <property role="3mNisv" value="false" />
-      <property role="3mNxdG" value="false" />
       <node concept="3XIRFW" id="3kLBXRrpYY6" role="3XIRFX">
         <node concept="Y9XUq" id="3kLBXRrpYYp" role="3XIRFZ">
           <node concept="25Bbzn" id="_qCyBYoege" role="Y9XUp">
