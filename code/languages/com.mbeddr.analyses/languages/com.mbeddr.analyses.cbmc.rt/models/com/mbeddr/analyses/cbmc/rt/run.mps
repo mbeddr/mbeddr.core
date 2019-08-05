@@ -6463,6 +6463,32 @@
                       <node concept="17RlXB" id="2aciK4JtEix" role="2OqNvi" />
                     </node>
                   </node>
+                  <node concept="3clFbJ" id="3UO_md_fIIF" role="3cqZAp">
+                    <node concept="3clFbS" id="3UO_md_fIIG" role="3clFbx">
+                      <node concept="3clFbF" id="3UO_md_fIIH" role="3cqZAp">
+                        <node concept="2OqwBi" id="3UO_md_fIII" role="3clFbG">
+                          <node concept="37vLTw" id="3UO_md_fIIJ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                          </node>
+                          <node concept="TSZUe" id="3UO_md_fIIK" role="2OqNvi">
+                            <node concept="Xl_RD" id="3UO_md_fIIL" role="25WWJ7">
+                              <property role="Xl_RC" value="-D_IA64_" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="3UO_md_fIIR" role="3clFbw">
+                      <node concept="2YIFZM" id="3UO_md_fIIS" role="2Oq$k0">
+                        <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                        <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                        <node concept="Xl_RD" id="3UO_md_fIIT" role="37wK5m">
+                          <property role="Xl_RC" value="CBMC_AVOID_IA64_DEFINITION" />
+                        </node>
+                      </node>
+                      <node concept="17RlXB" id="3UO_md_fIIU" role="2OqNvi" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="1Wc70l" id="2UdJgvD2kh6" role="3clFbw">
                   <node concept="2OqwBi" id="2UdJgvD2kh7" role="3uHU7w">
