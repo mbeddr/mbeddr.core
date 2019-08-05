@@ -12907,26 +12907,69 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="2OqwBi" id="1y6QQG7rHgw" role="3clFbw">
-            <node concept="10M0yZ" id="1y6QQG7rHgx" role="2Oq$k0">
-              <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
-              <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
-            </node>
-            <node concept="liA8E" id="1y6QQG7rHgy" role="2OqNvi">
-              <ref role="37wK5l" to="p8vh:3OhBgB4hx2h" resolve="shouldUseGCC" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4kMmiswJx$A" role="3cqZAp">
-          <node concept="2OqwBi" id="4kMmiswJx$B" role="3clFbG">
-            <node concept="37vLTw" id="4kMmiswJx$C" role="2Oq$k0">
-              <ref role="3cqZAo" node="3OhBgB4bpAd" resolve="args" />
-            </node>
-            <node concept="TSZUe" id="4kMmiswJx$D" role="2OqNvi">
-              <node concept="Xl_RD" id="4kMmiswJx$E" role="25WWJ7">
-                <property role="Xl_RC" value="--32" />
+            <node concept="3clFbH" id="2gLmbweqaGP" role="3cqZAp" />
+            <node concept="3clFbF" id="4kMmiswJx$A" role="3cqZAp">
+              <node concept="2OqwBi" id="4kMmiswJx$B" role="3clFbG">
+                <node concept="37vLTw" id="4kMmiswJx$C" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3OhBgB4bpAd" resolve="args" />
+                </node>
+                <node concept="TSZUe" id="4kMmiswJx$D" role="2OqNvi">
+                  <node concept="Xl_RD" id="4kMmiswJx$E" role="25WWJ7">
+                    <property role="Xl_RC" value="-D_INC_CYGWIN" />
+                  </node>
+                </node>
               </node>
+            </node>
+            <node concept="3clFbF" id="2gLmbweq1KW" role="3cqZAp">
+              <node concept="2OqwBi" id="2gLmbweq1KX" role="3clFbG">
+                <node concept="37vLTw" id="2gLmbweq1KY" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3OhBgB4bpAd" resolve="args" />
+                </node>
+                <node concept="TSZUe" id="2gLmbweq1KZ" role="2OqNvi">
+                  <node concept="Xl_RD" id="2gLmbweq1L0" role="25WWJ7">
+                    <property role="Xl_RC" value="-D__CYGWIN__" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2gLmbweq4l6" role="3cqZAp">
+              <node concept="2OqwBi" id="2gLmbweq4l7" role="3clFbG">
+                <node concept="37vLTw" id="2gLmbweq4l8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3OhBgB4bpAd" resolve="args" />
+                </node>
+                <node concept="TSZUe" id="2gLmbweq4l9" role="2OqNvi">
+                  <node concept="Xl_RD" id="2gLmbweq58H" role="25WWJ7">
+                    <property role="Xl_RC" value="-D__stdcall=" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2gLmbweq5au" role="3cqZAp">
+              <node concept="2OqwBi" id="2gLmbweq5av" role="3clFbG">
+                <node concept="37vLTw" id="2gLmbweq5aw" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3OhBgB4bpAd" resolve="args" />
+                </node>
+                <node concept="TSZUe" id="2gLmbweq5ax" role="2OqNvi">
+                  <node concept="Xl_RD" id="2gLmbweq5ay" role="25WWJ7">
+                    <property role="Xl_RC" value="-D__cdecl=" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="2gLmbweq7Wn" role="3clFbw">
+            <node concept="2OqwBi" id="1y6QQG7rHgw" role="3uHU7B">
+              <node concept="10M0yZ" id="1y6QQG7rHgx" role="2Oq$k0">
+                <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
+                <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
+              </node>
+              <node concept="liA8E" id="1y6QQG7rHgy" role="2OqNvi">
+                <ref role="37wK5l" to="p8vh:3OhBgB4hx2h" resolve="shouldUseGCC" />
+              </node>
+            </node>
+            <node concept="10M0yZ" id="2gLmbweq9VG" role="3uHU7w">
+              <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+              <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
             </node>
           </node>
         </node>
