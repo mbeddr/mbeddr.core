@@ -3256,6 +3256,21 @@
             <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5hcw$WGw2vc" role="3bR37C">
+          <node concept="3bR9La" id="5hcw$WGw2vd" role="1SiIV1">
+            <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5hcw$WGw2ve" role="3bR37C">
+          <node concept="3bR9La" id="5hcw$WGw2vf" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5hcw$WGw2vg" role="3bR37C">
+          <node concept="3bR9La" id="5hcw$WGw2vh" role="1SiIV1">
+            <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43Lo" role="2G$12L">
         <property role="BnDLt" value="true" />
