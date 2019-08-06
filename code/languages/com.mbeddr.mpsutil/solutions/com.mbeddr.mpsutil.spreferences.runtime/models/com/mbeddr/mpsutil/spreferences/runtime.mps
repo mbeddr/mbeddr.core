@@ -76,6 +76,7 @@
         <child id="1224071154657" name="classifierType" index="0kSFW" />
         <child id="1224071154656" name="expression" index="0kSFX" />
       </concept>
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -2535,10 +2536,20 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="7lgjy2PSoFf" role="3clFbw">
-            <node concept="10Nm6u" id="7lgjy2PSoQR" role="3uHU7w" />
-            <node concept="37vLTw" id="7lgjy2PSovg" role="3uHU7B">
-              <ref role="3cqZAo" node="Nmj9rdB0AL" resolve="model" />
+          <node concept="22lmx$" id="2ePes8opeme" role="3clFbw">
+            <node concept="3clFbC" id="7lgjy2PSoFf" role="3uHU7B">
+              <node concept="37vLTw" id="7lgjy2PSovg" role="3uHU7B">
+                <ref role="3cqZAo" node="Nmj9rdB0AL" resolve="model" />
+              </node>
+              <node concept="10Nm6u" id="7lgjy2PSoQR" role="3uHU7w" />
+            </node>
+            <node concept="2ZW3vV" id="2ePes8opfyA" role="3uHU7w">
+              <node concept="3uibUv" id="2ePes8opfyB" role="2ZW6by">
+                <ref role="3uigEE" to="w1kc:~TrivialModelDescriptor" resolve="TrivialModelDescriptor" />
+              </node>
+              <node concept="37vLTw" id="2ePes8opfyC" role="2ZW6bz">
+                <ref role="3cqZAo" node="Nmj9rdB0AL" resolve="model" />
+              </node>
             </node>
           </node>
         </node>
@@ -3882,6 +3893,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2ePes8omtbE" role="3cqZAp" />
         <node concept="3cpWs8" id="2Wc_BLz9rqD" role="3cqZAp">
           <node concept="3cpWsn" id="2Wc_BLz9rqE" role="3cpWs9">
             <property role="TrG5h" value="model" />
