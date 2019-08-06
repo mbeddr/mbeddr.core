@@ -114,7 +114,7 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -129,7 +129,7 @@
         <property id="7246949367815681727" name="fileExtension" index="2LtQ2M" />
       </concept>
       <concept id="3830958861296806570" name="com.mbeddr.core.modules.gen.structure.GenStdHeaderImport" flags="ng" index="19$mpz">
-        <property id="3830958861296806571" name="haeaderFileName" index="19$mpy" />
+        <property id="3830958861296806571" name="headerFileName" index="19$mpy" />
       </concept>
       <concept id="1758019824472688222" name="com.mbeddr.core.modules.gen.structure.GenModuleH" flags="ng" index="1hFVJD">
         <child id="5569318043966868262" name="headerImports" index="2IAVDA" />
