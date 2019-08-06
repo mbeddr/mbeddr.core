@@ -18,11 +18,8 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -3151,70 +3148,6 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="3LB9aGl8_Ol" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="headerToImport" />
-      <ref role="13i0hy" to="hwgx:7RHXOmw3XK4" resolve="headerToImport" />
-      <node concept="3Tm1VV" id="3LB9aGl8_Om" role="1B3o_S" />
-      <node concept="3clFbS" id="3LB9aGl8_Op" role="3clF47">
-        <node concept="3clFbF" id="3LB9aGl8EtY" role="3cqZAp">
-          <node concept="2OqwBi" id="3LB9aGl8EK8" role="3clFbG">
-            <node concept="13iPFW" id="3LB9aGl8EtX" role="2Oq$k0" />
-            <node concept="3TrcHB" id="3LB9aGl8FC2" role="2OqNvi">
-              <ref role="3TsBF5" to="d0vh:3LB9aGk$WfX" resolve="win32ExtraHeader" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="3LB9aGl8_Oq" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="3LB9aGl8_Or" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="onlyForImplementation" />
-      <ref role="13i0hy" to="hwgx:7RHXOmw7Mgm" resolve="onlyForImplementation" />
-      <node concept="3Tm1VV" id="3LB9aGl8_Os" role="1B3o_S" />
-      <node concept="3clFbS" id="3LB9aGl8_Ov" role="3clF47">
-        <node concept="3clFbF" id="3LB9aGl8_Oy" role="3cqZAp">
-          <node concept="3clFbT" id="3LB9aGl8_Ox" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="3LB9aGl8_Ow" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="3LB9aGl8EgE" role="13h7CS">
-      <property role="TrG5h" value="preprocessorCondition" />
-      <property role="2Ki8OM" value="false" />
-      <ref role="13i0hy" to="hwgx:3LB9aGl8_PP" resolve="preprocessorCondition" />
-      <node concept="3clFbS" id="3LB9aGl8EgH" role="3clF47">
-        <node concept="3clFbF" id="3LB9aGl8EhL" role="3cqZAp">
-          <node concept="Xl_RD" id="3LB9aGl8Es5" role="3clFbG">
-            <property role="Xl_RC" value="defined(_WIN32)" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="3LB9aGl8Ehy" role="3clF45" />
-      <node concept="3Tm1VV" id="3LB9aGl8Ehz" role="1B3o_S" />
-    </node>
-    <node concept="13i0hz" id="1m$ejqCsrVH" role="13h7CS">
-      <property role="TrG5h" value="alternativeHeaderToImport" />
-      <property role="2Ki8OM" value="false" />
-      <ref role="13i0hy" to="hwgx:1m$ejqCnFa4" resolve="alternativeHeaderToImport" />
-      <node concept="3clFbS" id="1m$ejqCsrVK" role="3clF47">
-        <node concept="3clFbF" id="1m$ejqCt42k" role="3cqZAp">
-          <node concept="2OqwBi" id="1m$ejqCt4lm" role="3clFbG">
-            <node concept="13iPFW" id="1m$ejqCt42j" role="2Oq$k0" />
-            <node concept="3TrcHB" id="1m$ejqCt5gr" role="2OqNvi">
-              <ref role="3TsBF5" to="d0vh:1m$ejqChbly" resolve="othersExtraHeader" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="1m$ejqCsEQV" role="3clF45" />
-      <node concept="3Tm1VV" id="1m$ejqCsEQW" role="1B3o_S" />
-    </node>
   </node>
   <node concept="13h7C7" id="7Aba6BzyYIQ">
     <property role="3GE5qa" value="module" />
@@ -3237,6 +3170,77 @@
     </node>
     <node concept="13hLZK" id="7Aba6BzyYIR" role="13h7CW">
       <node concept="3clFbS" id="7Aba6BzyYIS" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5hcw$WGctj9">
+    <property role="3GE5qa" value="portability" />
+    <ref role="13h7C2" to="d0vh:5hcw$WGctfJ" resolve="IMultiPlatformConstruct" />
+    <node concept="13i0hz" id="5hcw$WGctjk" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="headerToImport" />
+      <ref role="13i0hy" to="hwgx:7RHXOmw3XK4" resolve="headerToImport" />
+      <node concept="3Tm1VV" id="5hcw$WGctjl" role="1B3o_S" />
+      <node concept="3clFbS" id="5hcw$WGctjm" role="3clF47">
+        <node concept="3clFbF" id="5hcw$WGctjn" role="3cqZAp">
+          <node concept="2OqwBi" id="5hcw$WGctjo" role="3clFbG">
+            <node concept="13iPFW" id="5hcw$WGctjp" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5hcw$WGctjq" role="2OqNvi">
+              <ref role="3TsBF5" to="d0vh:5hcw$WGctfK" resolve="win32Header" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5hcw$WGctjr" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="5hcw$WGctjs" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="onlyForImplementation" />
+      <ref role="13i0hy" to="hwgx:7RHXOmw7Mgm" resolve="onlyForImplementation" />
+      <node concept="3Tm1VV" id="5hcw$WGctjt" role="1B3o_S" />
+      <node concept="3clFbS" id="5hcw$WGctju" role="3clF47">
+        <node concept="3clFbF" id="5hcw$WGctjv" role="3cqZAp">
+          <node concept="3clFbT" id="5hcw$WGctjw" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5hcw$WGctjx" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="5hcw$WGctjy" role="13h7CS">
+      <property role="TrG5h" value="preprocessorCondition" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="hwgx:3LB9aGl8_PP" resolve="preprocessorCondition" />
+      <node concept="3clFbS" id="5hcw$WGctjz" role="3clF47">
+        <node concept="3clFbF" id="5hcw$WGctj$" role="3cqZAp">
+          <node concept="Xl_RD" id="5hcw$WGctj_" role="3clFbG">
+            <property role="Xl_RC" value="defined(_WIN32)" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5hcw$WGctjA" role="3clF45" />
+      <node concept="3Tm1VV" id="5hcw$WGctjB" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="5hcw$WGctjC" role="13h7CS">
+      <property role="TrG5h" value="alternativeHeaderToImport" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="hwgx:1m$ejqCnFa4" resolve="alternativeHeaderToImport" />
+      <node concept="3clFbS" id="5hcw$WGctjD" role="3clF47">
+        <node concept="3clFbF" id="5hcw$WGctjE" role="3cqZAp">
+          <node concept="2OqwBi" id="5hcw$WGctjF" role="3clFbG">
+            <node concept="13iPFW" id="5hcw$WGctjG" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5hcw$WGctjH" role="2OqNvi">
+              <ref role="3TsBF5" to="d0vh:5hcw$WGctfL" resolve="othersHeader" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5hcw$WGctjI" role="3clF45" />
+      <node concept="3Tm1VV" id="5hcw$WGctjJ" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="5hcw$WGctja" role="13h7CW">
+      <node concept="3clFbS" id="5hcw$WGctjb" role="2VODD2" />
     </node>
   </node>
 </model>
