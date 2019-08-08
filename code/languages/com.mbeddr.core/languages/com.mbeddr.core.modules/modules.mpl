@@ -229,6 +229,7 @@
     <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />
     <module reference="57416e5b-eba5-4910-ade8-42ad18cb5f4d(com.mbeddr.mpsutil.dataflow)" version="0" />
     <module reference="a28465ca-fa05-4dd6-ad81-d2ce1a342cb0(com.mbeddr.mpsutil.dataflow.runtime)" version="0" />
+    <module reference="acc1f724-624c-43b2-998a-71c39acc0405(com.mbeddr.mpsutil.dataflow.ui)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
     <module reference="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" version="0" />
     <module reference="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" version="0" />
