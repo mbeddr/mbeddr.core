@@ -58,6 +58,12 @@
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
+    <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
+      <concept id="8811614583515725853" name="com.mbeddr.core.udt.structure.EnumLiteral" flags="ng" index="1AkAjq" />
+      <concept id="8811614583515725851" name="com.mbeddr.core.udt.structure.EnumDeclaration" flags="ng" index="1AkAjs">
+        <child id="8811614583515725857" name="literals" index="1AkAjA" />
+      </concept>
+    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
@@ -316,6 +322,19 @@
   </node>
   <node concept="N3F5e" id="7Aba6BzyWES">
     <property role="TrG5h" value="InternalFunctions" />
+    <node concept="1AkAjs" id="5ip5HRzU$Dz" role="N3F5h">
+      <property role="TrG5h" value="InternalEnum" />
+      <property role="3mNxdG" value="false" />
+      <node concept="1AkAjq" id="5ip5HRzU$D_" role="1AkAjA">
+        <property role="TrG5h" value="FIRST" />
+      </node>
+      <node concept="1AkAjq" id="5ip5HRzU$ES" role="1AkAjA">
+        <property role="TrG5h" value="LAST" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="5ip5HRzU$DQ" role="N3F5h">
+      <property role="TrG5h" value="empty_1565220718461_3" />
+    </node>
     <node concept="N3Fnx" id="7Aba6BzyWPM" role="N3F5h">
       <property role="TrG5h" value="internalFunc" />
       <property role="2OOxQR" value="true" />
