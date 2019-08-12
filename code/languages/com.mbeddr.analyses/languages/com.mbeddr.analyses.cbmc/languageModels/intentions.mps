@@ -1125,6 +1125,18 @@
     <node concept="1SWQZ3" id="7yZlKoqhExX" role="lGtFl">
       <property role="1SWRpm" value="ANALYSIS" />
     </node>
+    <node concept="2SaL7w" id="78L4hw8t43W" role="2ZfVeh">
+      <node concept="3clFbS" id="78L4hw8t43X" role="2VODD2">
+        <node concept="3clFbF" id="78L4hw8tkfx" role="3cqZAp">
+          <node concept="2OqwBi" id="78L4hw8tksx" role="3clFbG">
+            <node concept="2Sf5sV" id="78L4hw8tkfw" role="2Oq$k0" />
+            <node concept="2qgKlT" id="78L4hw8tkVq" role="2OqNvi">
+              <ref role="37wK5l" to="th2u:78L4hw8tdoz" resolve="supportsReplaceCall" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

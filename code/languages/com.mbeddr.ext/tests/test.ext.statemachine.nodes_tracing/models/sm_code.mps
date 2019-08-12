@@ -416,7 +416,7 @@
               <node concept="1xGALR" id="2qCdpHNSEB0" role="lGtFl">
                 <property role="1xEijf" value="2" />
                 <node concept="1xFd8N" id="2qCdpHNSEB2" role="1xGcb7">
-                  <property role="1xFd8M" value="  SM2_SelfTriggerInInitial__execute(instance, SM2_SM2_SelfTriggerInInitial__inevents__SelfTriggerInInitial_e__event, NULL);" />
+                  <property role="1xFd8M" value="  SM2_SelfTriggerInInitial__execute(instance, SM2_SelfTriggerInInitial__inevents__SelfTriggerInInitial_e__event, NULL);" />
                 </node>
               </node>
             </node>

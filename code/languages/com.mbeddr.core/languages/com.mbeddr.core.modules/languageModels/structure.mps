@@ -207,6 +207,9 @@
       <property role="IQ2ns" value="1437197461779767913" />
       <ref role="20lvS9" node="L2WnbQO1DI" resolve="ArgumentKindContainer" />
     </node>
+    <node concept="PrWs8" id="2UsYkT0mQP8" role="PzmwI">
+      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
     <node concept="PrWs8" id="5Oog2UbSUrA" role="PzmwI">
       <ref role="PrY4T" node="5Oog2UbPmsI" resolve="IExternable" />
     </node>
@@ -471,6 +474,9 @@
       <property role="20kJfa" value="init" />
       <property role="IQ2ns" value="2771264470558526601" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="2UsYkT0mL6K" role="PzmwI">
+      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
     <node concept="PrWs8" id="4k0bDztzd$w" role="PzmwI">
       <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />

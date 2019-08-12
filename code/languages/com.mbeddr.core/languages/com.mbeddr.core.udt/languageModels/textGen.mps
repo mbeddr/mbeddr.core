@@ -309,7 +309,7 @@
             </node>
           </node>
           <node concept="la8eA" id="7D99css6PlP" role="lcghm">
-            <property role="lacIc" value="{" />
+            <property role="lacIc" value=" {" />
           </node>
           <node concept="l8MVK" id="1z9MsBsVazu" role="lcghm" />
         </node>
