@@ -23,6 +23,7 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -281,7 +282,9 @@
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
+        <child id="1423104411233404408" name="repo" index="up2gk" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -2354,6 +2357,19 @@
                 <node concept="BaHAS" id="4DRdDUoCJqU" role="2Oq$k0">
                   <property role="BaHAW" value="com.mbeddr.ext.units.siunits" />
                   <property role="BaGAP" value="" />
+                  <node concept="2OqwBi" id="7pWkCkdYnAh" role="up2gk">
+                    <node concept="2JrnkZ" id="7pWkCkdYpyR" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7pWkCkdYl8f" role="2JrQYb">
+                        <node concept="37vLTw" id="7pWkCkdYjaL" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6FK1Pb8yBLh" resolve="node" />
+                        </node>
+                        <node concept="I4A8Y" id="7pWkCkdYnuT" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7pWkCkdYpL2" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="2SmgA7" id="4DRdDUoCJAf" role="2OqNvi">
                   <node concept="chp4Y" id="31zYnCC2Dh5" role="1dBWTz">
