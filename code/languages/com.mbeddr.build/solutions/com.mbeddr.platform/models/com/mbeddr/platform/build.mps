@@ -7690,6 +7690,11 @@
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
           </node>
+          <node concept="1SiIV0" id="6GEt3emTuLB" role="3bR37C">
+            <node concept="3bR9La" id="6GEt3emTuLC" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L5O" resolve="jetbrains.mps.lang.extension" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="5GUwywcVawd" role="3bR37C">
           <node concept="3bR9La" id="5GUwywcVawe" role="1SiIV1">
