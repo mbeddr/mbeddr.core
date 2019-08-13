@@ -24,7 +24,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="v54s" ref="r:2a0fe383-d602-4f5b-813c-e41afdbbb97e(jetbrains.mps.lang.extension.structure)" implicit="true" />
+    <import index="v54s" ref="r:2a0fe383-d602-4f5b-813c-e41afdbbb97e(jetbrains.mps.lang.extension.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
   </imports>
@@ -433,6 +433,10 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1075,6 +1079,10 @@
                               </node>
                             </node>
                           </node>
+                        </node>
+                        <node concept="15s5l7" id="6GEt3emBkW4" role="lGtFl">
+                          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: type java.lang.Object is not a subtype of node&lt;Classifier&gt;&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902b1(jetbrains.mps.lang.typesystem.typesystem)/8991952304890041665,r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/1186053540847]&quot;;" />
+                          <property role="huDt6" value="Error: type java.lang.Object is not a subtype of node&lt;Classifier&gt;" />
                         </node>
                       </node>
                     </node>
@@ -1849,6 +1857,22 @@
                   <node concept="10Nm6u" id="7F2vPZ3ViyU" role="33vP2m" />
                 </node>
               </node>
+              <node concept="3cpWs8" id="6GEt3emyEvI" role="3cqZAp">
+                <node concept="3cpWsn" id="6GEt3emyEvJ" role="3cpWs9">
+                  <property role="TrG5h" value="nodeList" />
+                  <node concept="2I9FWS" id="6GEt3emyEvK" role="1tU5fm" />
+                  <node concept="10Nm6u" id="6GEt3emyEvL" role="33vP2m" />
+                </node>
+              </node>
+              <node concept="3cpWs8" id="6GEt3emyPkr" role="3cqZAp">
+                <node concept="3cpWsn" id="6GEt3emyPks" role="3cpWs9">
+                  <property role="TrG5h" value="list" />
+                  <node concept="3uibUv" id="6GEt3emyPkt" role="1tU5fm">
+                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  </node>
+                  <node concept="10Nm6u" id="6GEt3emyPku" role="33vP2m" />
+                </node>
+              </node>
               <node concept="3clFbH" id="7F2vPZ3Viph" role="3cqZAp" />
               <node concept="3clFbF" id="7F2vPZ3U2kz" role="3cqZAp">
                 <node concept="1rXfSq" id="7F2vPZ3U2ky" role="3clFbG">
@@ -1906,17 +1930,17 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3cmrfG" id="7F2vPZ3VGag" role="37wK5m">
-                    <property role="3cmrfH" value="1" />
-                    <node concept="29HgVG" id="7F2vPZ3Wf5a" role="lGtFl">
-                      <node concept="3NFfHV" id="7F2vPZ3Wf5b" role="3NFExx">
-                        <node concept="3clFbS" id="7F2vPZ3Wf5c" role="2VODD2">
-                          <node concept="3clFbF" id="7F2vPZ3Wf5i" role="3cqZAp">
-                            <node concept="2OqwBi" id="7F2vPZ3Wf5d" role="3clFbG">
-                              <node concept="3TrEf2" id="7F2vPZ3Wf5g" role="2OqNvi">
+                  <node concept="37vLTw" id="6GEt3emyQel" role="37wK5m">
+                    <ref role="3cqZAo" node="6GEt3emyPks" resolve="list" />
+                    <node concept="29HgVG" id="6GEt3emyQxT" role="lGtFl">
+                      <node concept="3NFfHV" id="6GEt3emyQxU" role="3NFExx">
+                        <node concept="3clFbS" id="6GEt3emyQxV" role="2VODD2">
+                          <node concept="3clFbF" id="6GEt3emyQy1" role="3cqZAp">
+                            <node concept="2OqwBi" id="6GEt3emyQxW" role="3clFbG">
+                              <node concept="3TrEf2" id="6GEt3emyQxZ" role="2OqNvi">
                                 <ref role="3Tt5mk" to="3673:7F2vPZ3K2Uf" resolve="actuals" />
                               </node>
-                              <node concept="30H73N" id="7F2vPZ3Wf5h" role="2Oq$k0" />
+                              <node concept="30H73N" id="6GEt3emyQy0" role="2Oq$k0" />
                             </node>
                           </node>
                         </node>
@@ -1924,7 +1948,7 @@
                     </node>
                   </node>
                   <node concept="37vLTw" id="7F2vPZ3W976" role="37wK5m">
-                    <ref role="3cqZAo" node="7F2vPZ3ViyS" resolve="myNode" />
+                    <ref role="3cqZAo" node="6GEt3emyEvJ" resolve="nodeList" />
                     <node concept="29HgVG" id="7F2vPZ3WfpA" role="lGtFl">
                       <node concept="3NFfHV" id="7F2vPZ3WfpB" role="3NFExx">
                         <node concept="3clFbS" id="7F2vPZ3WfpC" role="2VODD2">
@@ -2017,6 +2041,22 @@
                   <node concept="10Nm6u" id="6MNhNeU50TX" role="33vP2m" />
                 </node>
               </node>
+              <node concept="3cpWs8" id="6GEt3emyCkI" role="3cqZAp">
+                <node concept="3cpWsn" id="6GEt3emyCkL" role="3cpWs9">
+                  <property role="TrG5h" value="nodeList" />
+                  <node concept="2I9FWS" id="6GEt3emyCkG" role="1tU5fm" />
+                  <node concept="10Nm6u" id="6GEt3emyCPM" role="33vP2m" />
+                </node>
+              </node>
+              <node concept="3cpWs8" id="6GEt3emyJ4D" role="3cqZAp">
+                <node concept="3cpWsn" id="6GEt3emyJ4E" role="3cpWs9">
+                  <property role="TrG5h" value="list" />
+                  <node concept="3uibUv" id="6GEt3emyJ4F" role="1tU5fm">
+                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  </node>
+                  <node concept="10Nm6u" id="6GEt3emyJFt" role="33vP2m" />
+                </node>
+              </node>
               <node concept="3clFbH" id="6MNhNeU50TY" role="3cqZAp" />
               <node concept="3clFbF" id="6MNhNeU50TZ" role="3cqZAp">
                 <node concept="1rXfSq" id="6MNhNeU50U0" role="3clFbG">
@@ -2054,17 +2094,17 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3cmrfG" id="6MNhNeU50Um" role="37wK5m">
-                    <property role="3cmrfH" value="1" />
-                    <node concept="29HgVG" id="6MNhNeU50Un" role="lGtFl">
-                      <node concept="3NFfHV" id="6MNhNeU50Uo" role="3NFExx">
-                        <node concept="3clFbS" id="6MNhNeU50Up" role="2VODD2">
-                          <node concept="3clFbF" id="6MNhNeU50Uq" role="3cqZAp">
-                            <node concept="2OqwBi" id="6MNhNeU50Ur" role="3clFbG">
-                              <node concept="3TrEf2" id="6MNhNeUavwy" role="2OqNvi">
+                  <node concept="37vLTw" id="6GEt3emyOO4" role="37wK5m">
+                    <ref role="3cqZAo" node="6GEt3emyJ4E" resolve="list" />
+                    <node concept="29HgVG" id="6GEt3emyP5W" role="lGtFl">
+                      <node concept="3NFfHV" id="6GEt3emyP5X" role="3NFExx">
+                        <node concept="3clFbS" id="6GEt3emyP5Y" role="2VODD2">
+                          <node concept="3clFbF" id="6GEt3emyP64" role="3cqZAp">
+                            <node concept="2OqwBi" id="6GEt3emyP5Z" role="3clFbG">
+                              <node concept="3TrEf2" id="6GEt3emyP62" role="2OqNvi">
                                 <ref role="3Tt5mk" to="3673:6MNhNeU4Xm6" resolve="actuals" />
                               </node>
-                              <node concept="30H73N" id="6MNhNeU50Ut" role="2Oq$k0" />
+                              <node concept="30H73N" id="6GEt3emyP63" role="2Oq$k0" />
                             </node>
                           </node>
                         </node>
@@ -2072,7 +2112,7 @@
                     </node>
                   </node>
                   <node concept="37vLTw" id="6MNhNeU50Uu" role="37wK5m">
-                    <ref role="3cqZAo" node="6MNhNeU50TV" resolve="myNode" />
+                    <ref role="3cqZAo" node="6GEt3emyCkL" resolve="nodeList" />
                     <node concept="29HgVG" id="6MNhNeU50Uv" role="lGtFl">
                       <node concept="3NFfHV" id="6MNhNeU50Uw" role="3NFExx">
                         <node concept="3clFbS" id="6MNhNeU50Ux" role="2VODD2">
@@ -5895,6 +5935,10 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="15s5l7" id="6GEt3emqm2Y" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_CLASS=&quot;class jetbrains.mps.project.validation.ConceptFeatureCardinalityError&quot;;FLAVOUR_MESSAGE=&quot;No reference in obligatory role concept&quot;;FLAVOUR_NODE_FEATURE=&quot;concept&quot;;" />
+          <property role="huDt6" value="No reference in obligatory role concept" />
         </node>
       </node>
     </node>
