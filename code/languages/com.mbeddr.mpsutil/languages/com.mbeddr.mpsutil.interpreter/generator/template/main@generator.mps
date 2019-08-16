@@ -1488,6 +1488,68 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="3FW9mgp_rst" role="3acgRq">
+      <ref role="30HIoZ" to="3673:3FW9mgpuDNq" resolve="EvaluatorExpression" />
+      <node concept="1Koe21" id="3FW9mgp_rsr" role="1lVwrX">
+        <node concept="312cEu" id="3FW9mgp_FBG" role="1Koe22">
+          <property role="2bfB8j" value="true" />
+          <property role="TrG5h" value="asdf" />
+          <node concept="2tJIrI" id="3FW9mgp_FBH" role="jymVt" />
+          <node concept="3clFb_" id="3FW9mgp_FBI" role="jymVt">
+            <property role="1EzhhJ" value="false" />
+            <property role="TrG5h" value="evaluate" />
+            <property role="od$2w" value="false" />
+            <property role="DiZV1" value="false" />
+            <node concept="3clFbS" id="3FW9mgp_FBJ" role="3clF47">
+              <node concept="3clFbF" id="3FW9mgp_GCQ" role="3cqZAp">
+                <node concept="2ShNRf" id="3FW9mgp_GCM" role="3clFbG">
+                  <node concept="1pGfFk" id="3FW9mgp_HcL" role="2ShVmc">
+                    <ref role="37wK5l" to="2ahs:3FW9mgpv077" resolve="Evaluator" />
+                    <node concept="37vLTw" id="3FW9mgp_Hdi" role="37wK5m">
+                      <ref role="3cqZAo" node="3FW9mgp_FCy" resolve="context" />
+                    </node>
+                    <node concept="37vLTw" id="3FW9mgp_Hei" role="37wK5m">
+                      <ref role="3cqZAo" node="3FW9mgp_FC$" resolve="coverage" />
+                    </node>
+                    <node concept="37vLTw" id="3FW9mgp_Hfs" role="37wK5m">
+                      <ref role="3cqZAo" node="3FW9mgp_FCA" resolve="trace" />
+                    </node>
+                  </node>
+                  <node concept="raruj" id="3FW9mgp_HhA" role="lGtFl" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tm1VV" id="3FW9mgp_FCu" role="1B3o_S" />
+            <node concept="3uibUv" id="3FW9mgp_FCv" role="3clF45">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
+            <node concept="37vLTG" id="3FW9mgp_FCw" role="3clF46">
+              <property role="TrG5h" value="node" />
+              <node concept="3Tqbb2" id="3FW9mgp_FCx" role="1tU5fm" />
+            </node>
+            <node concept="37vLTG" id="3FW9mgp_FCy" role="3clF46">
+              <property role="TrG5h" value="context" />
+              <node concept="3uibUv" id="3FW9mgp_FCz" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="3FW9mgp_FC$" role="3clF46">
+              <property role="TrG5h" value="coverage" />
+              <node concept="3uibUv" id="3FW9mgp_FC_" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="3FW9mgp_FCA" role="3clF46">
+              <property role="TrG5h" value="trace" />
+              <node concept="3uibUv" id="3FW9mgp_FCB" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+              </node>
+            </node>
+          </node>
+          <node concept="3Tm1VV" id="3FW9mgp_FCC" role="1B3o_S" />
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="4aQvnnixSM6" role="3acgRq">
       <ref role="30HIoZ" to="3673:4aQvnnixpDq" resolve="DelegateToNextInterpreterExpression" />
       <node concept="gft3U" id="4aQvnnixV5P" role="1lVwrX">
