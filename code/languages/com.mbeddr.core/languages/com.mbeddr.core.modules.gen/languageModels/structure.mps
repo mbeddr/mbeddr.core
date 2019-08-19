@@ -368,14 +368,14 @@
       <property role="IQ2ns" value="4352487882080109573" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="win32Stmts" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     </node>
     <node concept="1TJgyj" id="3LB9aGk$Wg8" role="1TKVEi">
       <property role="IQ2ns" value="4352487882080109576" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="othersStmts" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     </node>
     <node concept="PrWs8" id="5hcw$WGctqV" role="PzmwI">
