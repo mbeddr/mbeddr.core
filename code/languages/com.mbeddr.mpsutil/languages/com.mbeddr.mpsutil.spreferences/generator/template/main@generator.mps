@@ -720,6 +720,9 @@
                                             <property role="3rM5sR" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
                                             <node concept="29HgVG" id="1MMv7XpBoGJ" role="lGtFl" />
                                           </node>
+                                          <node concept="37vLTw" id="1a9tAsKGbC$" role="37wK5m">
+                                            <ref role="3cqZAo" node="1m7X3OECMUP" resolve="mpsProject" />
+                                          </node>
                                         </node>
                                         <node concept="1WS0z7" id="1MMv7XpBoUZ" role="lGtFl">
                                           <node concept="3JmXsc" id="1MMv7XpBoV1" role="3Jn$fo">
