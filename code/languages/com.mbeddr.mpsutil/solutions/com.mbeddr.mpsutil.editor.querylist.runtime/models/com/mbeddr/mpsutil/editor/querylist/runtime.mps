@@ -31,6 +31,7 @@
     <import index="2w5c" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.updater(MPS.Editor/)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="nivk" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.descriptor(MPS.Editor/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
@@ -1874,29 +1875,65 @@
           </node>
         </node>
         <node concept="3clFbH" id="lPJxikdHQc" role="3cqZAp" />
+        <node concept="3SKdUt" id="HKH097ACcS" role="3cqZAp">
+          <node concept="3SKdUq" id="HKH097ACcU" role="3SKWNk">
+            <property role="3SKdUp" value="use EditorCell_Basic dummy cell instead of EditorCell_Empty to avoid unwanted vertical size" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="HKH097ACfq" role="3cqZAp">
+          <node concept="3SKdUq" id="HKH097ACfr" role="3SKWNk">
+            <property role="3SKdUp" value="(in case empty query should not take any space in the editor)" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="lPJxikdMw4" role="3cqZAp">
           <node concept="3cpWsn" id="lPJxikdMw5" role="3cpWs9">
             <property role="TrG5h" value="rightEnd" />
-            <node concept="3uibUv" id="lPJxikdMw6" role="1tU5fm">
-              <ref role="3uigEE" to="7a0s:7dwhomQPrAw" resolve="EditorCell_Empty" />
+            <node concept="3uibUv" id="HKH096bj_D" role="1tU5fm">
+              <ref role="3uigEE" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
             </node>
             <node concept="2ShNRf" id="lPJxikdNPa" role="33vP2m">
-              <node concept="1pGfFk" id="lPJxikdNP9" role="2ShVmc">
-                <ref role="37wK5l" to="7a0s:7dwhomQPrAJ" resolve="EditorCell_Empty" />
-                <node concept="2OqwBi" id="lPJxikdNW6" role="37wK5m">
-                  <node concept="37vLTw" id="lPJxikdNS6" role="2Oq$k0">
-                    <ref role="3cqZAo" node="lPJxikdveR" resolve="cell" />
+              <node concept="YeOm9" id="HKH096aRuE" role="2ShVmc">
+                <node concept="1Y3b0j" id="HKH096aRuH" role="YeSDq">
+                  <property role="2bfB8j" value="true" />
+                  <ref role="1Y3XeK" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="EditorCell_Basic" />
+                  <node concept="3Tm1VV" id="HKH096aRuI" role="1B3o_S" />
+                  <node concept="3clFb_" id="HKH096aRw7" role="jymVt">
+                    <property role="TrG5h" value="paintContent" />
+                    <node concept="3Tmbuc" id="HKH096aRw8" role="1B3o_S" />
+                    <node concept="3cqZAl" id="HKH096aRwa" role="3clF45" />
+                    <node concept="37vLTG" id="HKH096aRwb" role="3clF46">
+                      <property role="TrG5h" value="graphics" />
+                      <node concept="3uibUv" id="HKH096aRwc" role="1tU5fm">
+                        <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
+                      </node>
+                    </node>
+                    <node concept="37vLTG" id="HKH096aRwd" role="3clF46">
+                      <property role="TrG5h" value="settings" />
+                      <node concept="3uibUv" id="HKH096aRwe" role="1tU5fm">
+                        <ref role="3uigEE" to="g51k:~ParentSettings" resolve="ParentSettings" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="HKH096aRwf" role="3clF47" />
+                    <node concept="2AHcQZ" id="HKH096aRwh" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="lPJxikdOa1" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
+                  <node concept="2OqwBi" id="HKH096aTzI" role="37wK5m">
+                    <node concept="37vLTw" id="HKH096aTcT" role="2Oq$k0">
+                      <ref role="3cqZAo" node="lPJxikdveR" resolve="cell" />
+                    </node>
+                    <node concept="liA8E" id="HKH096b6A5" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
+                    </node>
                   </node>
-                </node>
-                <node concept="2OqwBi" id="lPJxikdOlH" role="37wK5m">
-                  <node concept="37vLTw" id="lPJxikdOh4" role="2Oq$k0">
-                    <ref role="3cqZAo" node="lPJxikdveR" resolve="cell" />
-                  </node>
-                  <node concept="liA8E" id="lPJxikdOuK" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.getSNode()" resolve="getSNode" />
+                  <node concept="2OqwBi" id="HKH096aV0f" role="37wK5m">
+                    <node concept="37vLTw" id="HKH096aUIR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="lPJxikdveR" resolve="cell" />
+                    </node>
+                    <node concept="liA8E" id="HKH096aVHp" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell.getSNode()" resolve="getSNode" />
+                    </node>
                   </node>
                 </node>
               </node>
