@@ -7892,9 +7892,15 @@
   <node concept="N3F5e" id="68PB5rZa8TZ">
     <property role="TrG5h" value="UnitTestCLI" />
     <node concept="4WHVk" id="68PB5rZgz0h" role="N3F5h">
-      <property role="TrG5h" value="USAGE_MESSAGE_FORMAT" />
+      <property role="TrG5h" value="DESCRIPTION_MESSAGE" />
       <node concept="PhEJO" id="68PB5rZgz7k" role="2DQcEM">
-        <property role="PhEJT" value="Run mbeddr tests contained in this test runner executable. Include all test\ncases unless the indexes of a specific test collection and test case are\nspecified.\n\nUsage: %s [option ...] [test-collection-index test-case-index]\n\nOptions:\n  -b, --build-dir=DIR\tabsolute or relative path to directory in which to\n\t\t\tplace the artifacts produced during the test run \n\t\t\t(defaults to './build')\n  -i, --isolated\twhether to run each test case in an isolated process\n\t\t\tto enable tracking of fatal errors (e.g., segfaults))\n  -h, --help\t\tdisplay this help and exit\n\n" />
+        <property role="PhEJT" value="Run tests contained in this test runner executable. Include a single test as\nper provided test collection and test case indexes, or all tests otherwise.\n\n" />
+      </node>
+    </node>
+    <node concept="4WHVk" id="7_F882GknLC" role="N3F5h">
+      <property role="TrG5h" value="USAGE_MESSAGE_FORMAT" />
+      <node concept="PhEJO" id="7_F882GknLD" role="2DQcEM">
+        <property role="PhEJT" value="Usage: %s [option ...] [test-collection-index test-case-index]\n\nOptions:\n  -b, --build-dir=DIR\tabsolute or relative path to directory in which to\n\t\t\tplace the artifacts produced during the test run \n\t\t\t(defaults to './build')\n  -i, --isolated\twhether to run each test case in an isolated process\n\t\t\tto enable tracking of fatal errors (e.g., segfaults)\n  -h, --help\t\tdisplay this help and exit\n\n" />
       </node>
     </node>
     <node concept="2NXPZ9" id="68PB5rZgyXH" role="N3F5h">
@@ -8189,8 +8195,8 @@
                         <node concept="1_9egQ" id="63XDlz4JcDm" role="3XIRFZ">
                           <node concept="3O_q_g" id="63XDlz4JcDn" role="1_9egR">
                             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-                            <node concept="4ZOvp" id="63XDlz4JcDo" role="3O_q_j">
-                              <ref role="2DPCA0" node="68PB5rZgz0h" resolve="USAGE_MESSAGE_FORMAT" />
+                            <node concept="4ZOvp" id="7_F882GknVn" role="3O_q_j">
+                              <ref role="2DPCA0" node="7_F882GknLC" resolve="USAGE_MESSAGE_FORMAT" />
                             </node>
                             <node concept="3O_q_g" id="63XDlz4JcDp" role="3O_q_j">
                               <ref role="3O_q_h" node="68PB5rZgEVP" resolve="getSimpleProgramName" />
@@ -8335,11 +8341,19 @@
                 </node>
                 <node concept="c0U19" id="63XDlz5nAkp" role="3XIRFZ">
                   <node concept="3XIRFW" id="63XDlz5nAkq" role="c0U17">
+                    <node concept="1_9egQ" id="7_F882GkpaO" role="3XIRFZ">
+                      <node concept="3O_q_g" id="7_F882GkpaM" role="1_9egR">
+                        <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+                        <node concept="4ZOvp" id="7_F882Gkpbi" role="3O_q_j">
+                          <ref role="2DPCA0" node="68PB5rZgz0h" resolve="DESCRIPTION_MESSAGE" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="1_9egQ" id="63XDlz5nAZJ" role="3XIRFZ">
                       <node concept="3O_q_g" id="63XDlz5nAZK" role="1_9egR">
                         <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-                        <node concept="4ZOvp" id="63XDlz5nAZL" role="3O_q_j">
-                          <ref role="2DPCA0" node="68PB5rZgz0h" resolve="USAGE_MESSAGE_FORMAT" />
+                        <node concept="4ZOvp" id="7_F882Gkp6H" role="3O_q_j">
+                          <ref role="2DPCA0" node="7_F882GknLC" resolve="USAGE_MESSAGE_FORMAT" />
                         </node>
                         <node concept="3O_q_g" id="63XDlz5nAZM" role="3O_q_j">
                           <ref role="3O_q_h" node="68PB5rZgEVP" resolve="getSimpleProgramName" />
@@ -8470,8 +8484,8 @@
                           <node concept="1_9egQ" id="68PB5rZgz_1" role="3XIRFZ">
                             <node concept="3O_q_g" id="68PB5rZgz$Z" role="1_9egR">
                               <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-                              <node concept="4ZOvp" id="68PB5rZgz_e" role="3O_q_j">
-                                <ref role="2DPCA0" node="68PB5rZgz0h" resolve="USAGE_MESSAGE_FORMAT" />
+                              <node concept="4ZOvp" id="7_F882GkpbF" role="3O_q_j">
+                                <ref role="2DPCA0" node="7_F882GknLC" resolve="USAGE_MESSAGE_FORMAT" />
                               </node>
                               <node concept="3O_q_g" id="68PB5rZgMWF" role="3O_q_j">
                                 <ref role="3O_q_h" node="68PB5rZgEVP" resolve="getSimpleProgramName" />
@@ -8586,8 +8600,8 @@
                             <node concept="1_9egQ" id="63XDlz4JRm0" role="3XIRFZ">
                               <node concept="3O_q_g" id="63XDlz4JRm1" role="1_9egR">
                                 <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-                                <node concept="4ZOvp" id="63XDlz4JRm2" role="3O_q_j">
-                                  <ref role="2DPCA0" node="68PB5rZgz0h" resolve="USAGE_MESSAGE_FORMAT" />
+                                <node concept="4ZOvp" id="7_F882GkpfG" role="3O_q_j">
+                                  <ref role="2DPCA0" node="7_F882GknLC" resolve="USAGE_MESSAGE_FORMAT" />
                                 </node>
                                 <node concept="3O_q_g" id="63XDlz4JRm3" role="3O_q_j">
                                   <ref role="3O_q_h" node="68PB5rZgEVP" resolve="getSimpleProgramName" />
@@ -8700,8 +8714,8 @@
                 <node concept="1_9egQ" id="63XDlz5ytji" role="3XIRFZ">
                   <node concept="3O_q_g" id="63XDlz5ytjj" role="1_9egR">
                     <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-                    <node concept="4ZOvp" id="63XDlz5ytjk" role="3O_q_j">
-                      <ref role="2DPCA0" node="68PB5rZgz0h" resolve="USAGE_MESSAGE_FORMAT" />
+                    <node concept="4ZOvp" id="7_F882Gkpk0" role="3O_q_j">
+                      <ref role="2DPCA0" node="7_F882GknLC" resolve="USAGE_MESSAGE_FORMAT" />
                     </node>
                     <node concept="3O_q_g" id="63XDlz5ytjl" role="3O_q_j">
                       <ref role="3O_q_h" node="68PB5rZgEVP" resolve="getSimpleProgramName" />
@@ -8749,8 +8763,8 @@
                   <node concept="1_9egQ" id="63XDlz4JY4c" role="3XIRFZ">
                     <node concept="3O_q_g" id="63XDlz4JY4d" role="1_9egR">
                       <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-                      <node concept="4ZOvp" id="63XDlz4JY4e" role="3O_q_j">
-                        <ref role="2DPCA0" node="68PB5rZgz0h" resolve="USAGE_MESSAGE_FORMAT" />
+                      <node concept="4ZOvp" id="7_F882GkpsB" role="3O_q_j">
+                        <ref role="2DPCA0" node="7_F882GknLC" resolve="USAGE_MESSAGE_FORMAT" />
                       </node>
                       <node concept="3O_q_g" id="63XDlz4JY4f" role="3O_q_j">
                         <ref role="3O_q_h" node="68PB5rZgEVP" resolve="getSimpleProgramName" />
@@ -8813,8 +8827,8 @@
             <node concept="1_9egQ" id="63XDlz4Kdbl" role="3XIRFZ">
               <node concept="3O_q_g" id="63XDlz4Kdbm" role="1_9egR">
                 <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-                <node concept="4ZOvp" id="63XDlz4Kdbn" role="3O_q_j">
-                  <ref role="2DPCA0" node="68PB5rZgz0h" resolve="USAGE_MESSAGE_FORMAT" />
+                <node concept="4ZOvp" id="7_F882Gkp_x" role="3O_q_j">
+                  <ref role="2DPCA0" node="7_F882GknLC" resolve="USAGE_MESSAGE_FORMAT" />
                 </node>
                 <node concept="3O_q_g" id="63XDlz4Kdbo" role="3O_q_j">
                   <ref role="3O_q_h" node="68PB5rZgEVP" resolve="getSimpleProgramName" />
@@ -8880,8 +8894,8 @@
             <node concept="1_9egQ" id="63XDlz4K8AB" role="3XIRFZ">
               <node concept="3O_q_g" id="63XDlz4K8AC" role="1_9egR">
                 <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-                <node concept="4ZOvp" id="63XDlz4K8AD" role="3O_q_j">
-                  <ref role="2DPCA0" node="68PB5rZgz0h" resolve="USAGE_MESSAGE_FORMAT" />
+                <node concept="4ZOvp" id="7_F882GkpE8" role="3O_q_j">
+                  <ref role="2DPCA0" node="7_F882GknLC" resolve="USAGE_MESSAGE_FORMAT" />
                 </node>
                 <node concept="3O_q_g" id="63XDlz4K8AE" role="3O_q_j">
                   <ref role="3O_q_h" node="68PB5rZgEVP" resolve="getSimpleProgramName" />
