@@ -156,6 +156,9 @@
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
+        <child id="1196350785114" name="quotedNode" index="2c44tc" />
+      </concept>
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
       </concept>
@@ -3813,6 +3816,31 @@
     <node concept="1YaCAy" id="FYOt3k0_Gv" role="1YuTPh">
       <property role="TrG5h" value="intp" />
       <ref role="1YaFvo" to="3673:7ueT7DHTBbE" resolve="Interpreter" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3FW9mgpuFYI">
+    <property role="TrG5h" value="typeof_EvaluatorExpression" />
+    <node concept="3clFbS" id="3FW9mgpuFYJ" role="18ibNy">
+      <node concept="1Z5TYs" id="3FW9mgpv7UT" role="3cqZAp">
+        <node concept="mw_s8" id="3FW9mgpyETu" role="1ZfhKB">
+          <node concept="2c44tf" id="3FW9mgpyETi" role="mwGJk">
+            <node concept="3uibUv" id="3FW9mgpyEUF" role="2c44tc">
+              <ref role="3uigEE" to="2ahs:3FW9mgpuNnI" resolve="Evaluator" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3FW9mgpv7UW" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3FW9mgpv7Ki" role="mwGJk">
+            <node concept="1YBJjd" id="3FW9mgpv7NI" role="1Z2MuG">
+              <ref role="1YBMHb" node="3FW9mgpuFYL" resolve="evaluatorExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3FW9mgpuFYL" role="1YuTPh">
+      <property role="TrG5h" value="evaluatorExpression" />
+      <ref role="1YaFvo" to="3673:3FW9mgpuDNq" resolve="EvaluatorExpression" />
     </node>
   </node>
 </model>
