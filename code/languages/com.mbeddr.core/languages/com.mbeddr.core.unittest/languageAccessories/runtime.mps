@@ -480,36 +480,6 @@
           <node concept="2fgwQN" id="VfRwLduHz3" role="2C2TGm" />
         </node>
       </node>
-      <node concept="2vmPJf" id="VfRwLduHb3" role="2vmPJn">
-        <property role="2vn0DO" value="true" />
-        <property role="TrG5h" value="FAILURE_DOUBLE_INT" />
-        <property role="2vmPJh" value="***FAILURE***" />
-        <node concept="2qqzEA" id="VfRwLduHb4" role="2qqzEG">
-          <property role="TrG5h" value="assertId" />
-          <node concept="26Vqp4" id="VfRwLduHb5" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-        <node concept="2qqzEA" id="VfRwLduHb6" role="2qqzEG">
-          <property role="TrG5h" value="act" />
-          <node concept="2fgwQN" id="VfRwLduHzd" role="2C2TGm" />
-        </node>
-        <node concept="2qqzEA" id="VfRwLduHb8" role="2qqzEG">
-          <property role="TrG5h" value="op" />
-          <node concept="Pu267" id="VfRwLduHb9" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-        <node concept="2qqzEA" id="VfRwLduHba" role="2qqzEG">
-          <property role="TrG5h" value="exp" />
-          <node concept="26Vqpk" id="VfRwLduHbb" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-      </node>
       <node concept="2vmPJf" id="6Iyv0noES1C" role="2vmPJn">
         <property role="2vn0DO" value="true" />
         <property role="TrG5h" value="FAILURE_DOUBLE" />
@@ -584,6 +554,36 @@
         <node concept="2qqzEA" id="kUiAaZgCtP" role="2qqzEG">
           <property role="TrG5h" value="exp" />
           <node concept="2fgwQN" id="kUiAaZgCtQ" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="2vmPJf" id="VfRwLduHb3" role="2vmPJn">
+        <property role="2vn0DO" value="true" />
+        <property role="TrG5h" value="FAILURE_DOUBLE_INT" />
+        <property role="2vmPJh" value="***FAILURE***" />
+        <node concept="2qqzEA" id="VfRwLduHb4" role="2qqzEG">
+          <property role="TrG5h" value="assertId" />
+          <node concept="26Vqp4" id="VfRwLduHb5" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="VfRwLduHb6" role="2qqzEG">
+          <property role="TrG5h" value="act" />
+          <node concept="2fgwQN" id="VfRwLduHzd" role="2C2TGm" />
+        </node>
+        <node concept="2qqzEA" id="VfRwLduHb8" role="2qqzEG">
+          <property role="TrG5h" value="op" />
+          <node concept="Pu267" id="VfRwLduHb9" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="VfRwLduHba" role="2qqzEG">
+          <property role="TrG5h" value="exp" />
+          <node concept="26Vqpk" id="VfRwLduHbb" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
@@ -2704,7 +2704,7 @@
       <property role="TrG5h" value="empty_1540737381086_11" />
     </node>
     <node concept="N3Fnx" id="6On3mjTuLTx" role="N3F5h">
-      <property role="TrG5h" value="log_assert_fail_int" />
+      <property role="TrG5h" value="log_assert_fail_int_int" />
       <property role="2OOxQR" value="true" />
       <node concept="19RgSI" id="6On3mjTuLTy" role="1UOdpc">
         <property role="TrG5h" value="messageFormat" />
@@ -2821,8 +2821,126 @@
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="shBE9Kmj2A" role="N3F5h">
-      <property role="TrG5h" value="empty_1558771337284_2" />
+    <node concept="2NXPZ9" id="X1k1LAZnst" role="N3F5h">
+      <property role="TrG5h" value="empty_1567172888634_2" />
+    </node>
+    <node concept="N3Fnx" id="X1k1LAZguw" role="N3F5h">
+      <property role="TrG5h" value="log_assert_fail_double_int" />
+      <property role="2OOxQR" value="true" />
+      <node concept="19RgSI" id="X1k1LAZgux" role="1UOdpc">
+        <property role="TrG5h" value="messageFormat" />
+        <node concept="Pu267" id="X1k1LAZguy" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="true" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="X1k1LAZguz" role="1UOdpc">
+        <property role="TrG5h" value="assertType" />
+        <node concept="Pu267" id="X1k1LAZgu$" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="true" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="X1k1LAZgu_" role="1UOdpc">
+        <property role="TrG5h" value="assertId" />
+        <node concept="26Vqp4" id="X1k1LAZguA" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="3XIRFW" id="X1k1LAZguB" role="3XIRFX">
+        <node concept="3XIRlf" id="X1k1LAZguC" role="3XIRFZ">
+          <property role="TrG5h" value="message" />
+          <node concept="12rfTQ" id="X1k1LAZguD" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="4ZOvp" id="X1k1LAZguE" role="12rfTL">
+              <ref role="2DPCA0" node="2qT7pMC7PKQ" resolve="MAX_TEST_FAILURE_MESSAGE_LENGTH" />
+            </node>
+          </node>
+          <node concept="PhEJO" id="X1k1LAZguF" role="3XIe9u" />
+        </node>
+        <node concept="1_9egQ" id="X1k1LAZguG" role="3XIRFZ">
+          <node concept="3O_q_g" id="X1k1LAZguH" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycK1" resolve="snprintf" />
+            <node concept="3ZVu4v" id="X1k1LAZguI" role="3O_q_j">
+              <ref role="3ZVs_2" node="X1k1LAZguC" resolve="message" />
+            </node>
+            <node concept="Vihyy" id="X1k1LAZguJ" role="3O_q_j">
+              <node concept="3ZVu4v" id="X1k1LAZguK" role="1_9fRO">
+                <ref role="3ZVs_2" node="X1k1LAZguC" resolve="message" />
+              </node>
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZguL" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZgux" resolve="messageFormat" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZguM" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZguz" resolve="assertType" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZguN" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZgu_" resolve="assertId" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZguO" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZguY" resolve="expected" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZguP" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZgv0" resolve="actual" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="X1k1LAZguQ" role="3XIRFZ">
+          <node concept="3O_q_g" id="X1k1LAZguR" role="1_9egR">
+            <ref role="3O_q_h" node="2PyooRI1LE5" resolve="append_failure_info" />
+            <node concept="1S7827" id="X1k1LAZguS" role="3O_q_j">
+              <ref role="1S7826" node="2PyooRI5lAR" resolve="suite_result_file" />
+            </node>
+            <node concept="3ZVu4v" id="X1k1LAZguT" role="3O_q_j">
+              <ref role="3ZVs_2" node="X1k1LAZguC" resolve="message" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZguU" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZguz" resolve="assertType" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZguV" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZgv2" resolve="modelId" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZguW" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZgv4" resolve="nodeId" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="X1k1LAZguX" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="X1k1LAZguY" role="1UOdpc">
+        <property role="TrG5h" value="expected" />
+        <node concept="2fgwQN" id="X1k1LAZguZ" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="X1k1LAZgv0" role="1UOdpc">
+        <property role="TrG5h" value="actual" />
+        <node concept="26Vqpk" id="X1k1LAZ$8a" role="2C2TGm" />
+      </node>
+      <node concept="19RgSI" id="X1k1LAZgv2" role="1UOdpc">
+        <property role="TrG5h" value="modelId" />
+        <node concept="Pu267" id="X1k1LAZgv3" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="true" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="X1k1LAZgv4" role="1UOdpc">
+        <property role="TrG5h" value="nodeId" />
+        <node concept="Pu267" id="X1k1LAZgv5" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6On3mjTuLWn" role="N3F5h">
+      <property role="TrG5h" value="empty_1448655283792_2" />
     </node>
     <node concept="N3Fnx" id="6On3mjTuLSk" role="N3F5h">
       <property role="TrG5h" value="log_assert_fail_range_int" />
@@ -2946,7 +3064,7 @@
       <property role="TrG5h" value="empty_1448653237078_1" />
     </node>
     <node concept="N3Fnx" id="6On3mjTuLUI" role="N3F5h">
-      <property role="TrG5h" value="log_assert_fail_double" />
+      <property role="TrG5h" value="log_assert_fail_double_double" />
       <property role="2OOxQR" value="true" />
       <node concept="19RgSI" id="6On3mjTuLUJ" role="1UOdpc">
         <property role="TrG5h" value="messageFormat" />
@@ -3066,6 +3184,124 @@
     <node concept="2NXPZ9" id="6On3mjTuLVy" role="N3F5h">
       <property role="TrG5h" value="empty_1490092795708_10" />
     </node>
+    <node concept="N3Fnx" id="X1k1LAZmgE" role="N3F5h">
+      <property role="TrG5h" value="log_assert_fail_int_double" />
+      <property role="2OOxQR" value="true" />
+      <node concept="19RgSI" id="X1k1LAZmgF" role="1UOdpc">
+        <property role="TrG5h" value="messageFormat" />
+        <node concept="Pu267" id="X1k1LAZmgG" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="true" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="X1k1LAZmgH" role="1UOdpc">
+        <property role="TrG5h" value="assertType" />
+        <node concept="Pu267" id="X1k1LAZmgI" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="true" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="X1k1LAZmgJ" role="1UOdpc">
+        <property role="TrG5h" value="assertId" />
+        <node concept="26Vqp4" id="X1k1LAZmgK" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="3XIRFW" id="X1k1LAZmgL" role="3XIRFX">
+        <node concept="3XIRlf" id="X1k1LAZmgM" role="3XIRFZ">
+          <property role="TrG5h" value="message" />
+          <node concept="12rfTQ" id="X1k1LAZmgN" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="4ZOvp" id="X1k1LAZmgO" role="12rfTL">
+              <ref role="2DPCA0" node="2qT7pMC7PKQ" resolve="MAX_TEST_FAILURE_MESSAGE_LENGTH" />
+            </node>
+          </node>
+          <node concept="PhEJO" id="X1k1LAZmgP" role="3XIe9u" />
+        </node>
+        <node concept="1_9egQ" id="X1k1LAZmgQ" role="3XIRFZ">
+          <node concept="3O_q_g" id="X1k1LAZmgR" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycK1" resolve="snprintf" />
+            <node concept="3ZVu4v" id="X1k1LAZmgS" role="3O_q_j">
+              <ref role="3ZVs_2" node="X1k1LAZmgM" resolve="message" />
+            </node>
+            <node concept="Vihyy" id="X1k1LAZmgT" role="3O_q_j">
+              <node concept="3ZVu4v" id="X1k1LAZmgU" role="1_9fRO">
+                <ref role="3ZVs_2" node="X1k1LAZmgM" resolve="message" />
+              </node>
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZmgV" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZmgF" resolve="messageFormat" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZmgW" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZmgH" resolve="assertType" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZmgX" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZmgJ" resolve="assertId" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZmgY" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZmh8" resolve="expected" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZmgZ" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZmha" resolve="actual" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="X1k1LAZmh0" role="3XIRFZ">
+          <node concept="3O_q_g" id="X1k1LAZmh1" role="1_9egR">
+            <ref role="3O_q_h" node="2PyooRI1LE5" resolve="append_failure_info" />
+            <node concept="1S7827" id="X1k1LAZmh2" role="3O_q_j">
+              <ref role="1S7826" node="2PyooRI5lAR" resolve="suite_result_file" />
+            </node>
+            <node concept="3ZVu4v" id="X1k1LAZmh3" role="3O_q_j">
+              <ref role="3ZVs_2" node="X1k1LAZmgM" resolve="message" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZmh4" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZmgH" resolve="assertType" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZmh5" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZmhc" resolve="modelId" />
+            </node>
+            <node concept="3ZUYvv" id="X1k1LAZmh6" role="3O_q_j">
+              <ref role="3ZUYvu" node="X1k1LAZmhe" resolve="nodeId" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="X1k1LAZmh7" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="X1k1LAZmh8" role="1UOdpc">
+        <property role="TrG5h" value="expected" />
+        <node concept="26Vqpk" id="X1k1LAZmh9" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="X1k1LAZmha" role="1UOdpc">
+        <property role="TrG5h" value="actual" />
+        <node concept="2fgwQN" id="X1k1LAZr20" role="2C2TGm" />
+      </node>
+      <node concept="19RgSI" id="X1k1LAZmhc" role="1UOdpc">
+        <property role="TrG5h" value="modelId" />
+        <node concept="Pu267" id="X1k1LAZmhd" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="true" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="X1k1LAZmhe" role="1UOdpc">
+        <property role="TrG5h" value="nodeId" />
+        <node concept="Pu267" id="X1k1LAZmhf" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="shBE9Kmj2A" role="N3F5h">
+      <property role="TrG5h" value="empty_1558771337284_2" />
+    </node>
     <node concept="N3Fnx" id="6On3mjTuLVz" role="N3F5h">
       <property role="TrG5h" value="log_assert_fail_range_double" />
       <property role="2OOxQR" value="true" />
@@ -3184,8 +3420,8 @@
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="6On3mjTuLWn" role="N3F5h">
-      <property role="TrG5h" value="empty_1448655283792_2" />
+    <node concept="2NXPZ9" id="X1k1LAZj8Y" role="N3F5h">
+      <property role="TrG5h" value="empty_1567172859669_1" />
     </node>
     <node concept="N3Fnx" id="6On3mjTuLWM" role="N3F5h">
       <property role="TrG5h" value="log_assert_fail_bool" />
