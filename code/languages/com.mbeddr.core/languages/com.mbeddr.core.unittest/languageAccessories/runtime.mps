@@ -3424,7 +3424,7 @@
       <property role="TrG5h" value="empty_1567172859669_1" />
     </node>
     <node concept="N3Fnx" id="6On3mjTuLWM" role="N3F5h">
-      <property role="TrG5h" value="log_assert_fail_bool" />
+      <property role="TrG5h" value="log_assert_fail_bool_bool" />
       <property role="2OOxQR" value="true" />
       <node concept="19RgSI" id="6On3mjTuLWN" role="1UOdpc">
         <property role="TrG5h" value="messageFormat" />
@@ -3551,7 +3551,7 @@
       <property role="TrG5h" value="empty_1558532769960_28" />
     </node>
     <node concept="N3Fnx" id="shBE9Kmtpq" role="N3F5h">
-      <property role="TrG5h" value="log_assert_fail_ptr" />
+      <property role="TrG5h" value="log_assert_fail_ptr_ptr" />
       <property role="2OOxQR" value="true" />
       <node concept="19RgSI" id="shBE9Kmtpr" role="1UOdpc">
         <property role="TrG5h" value="messageFormat" />
