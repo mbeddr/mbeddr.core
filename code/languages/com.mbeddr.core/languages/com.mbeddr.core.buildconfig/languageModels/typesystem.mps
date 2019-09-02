@@ -21,6 +21,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="zgpd" ref="r:5723595d-8d9d-4118-b46d-d56508505371(com.mbeddr.mpsutil.genutil.plugin)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -2579,6 +2580,172 @@
           <node concept="17RlXB" id="3s1LyzGuBl3" role="2OqNvi" />
         </node>
       </node>
+      <node concept="3clFbJ" id="56jrqO8InEx" role="3cqZAp">
+        <node concept="3clFbS" id="56jrqO8InEz" role="3clFbx">
+          <node concept="2MkqsV" id="56jrqO8I_J8" role="3cqZAp">
+            <node concept="Xl_RD" id="56jrqO8IA3H" role="2MkJ7o">
+              <property role="Xl_RC" value="C90 standard must be used" />
+            </node>
+            <node concept="1YBJjd" id="56jrqO8IA3S" role="2OEOjV">
+              <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+            </node>
+            <node concept="3Cnw8n" id="56jrqO8IHJo" role="2OEOjU">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="56jrqO8IHqY" resolve="fix_DesktopPlatform_compilerOptions" />
+              <node concept="3CnSsL" id="56jrqO8IIfK" role="3Coj4f">
+                <ref role="QkamJ" node="56jrqO8IIft" resolve="platform" />
+                <node concept="1YBJjd" id="56jrqO8IIfX" role="3CoRuB">
+                  <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="56jrqO8IAoP" role="3clFbw">
+          <node concept="2OqwBi" id="56jrqO8ICFX" role="3uHU7B">
+            <node concept="2OqwBi" id="56jrqO8IB2l" role="2Oq$k0">
+              <node concept="1YBJjd" id="56jrqO8IADA" role="2Oq$k0">
+                <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+              </node>
+              <node concept="3TrcHB" id="56jrqO8IBB1" role="2OqNvi">
+                <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+              </node>
+            </node>
+            <node concept="liA8E" id="56jrqO8IDvC" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="10M0yZ" id="56jrqO8ISwL" role="37wK5m">
+                <ref role="3cqZAo" to="ahli:56jrqO8IRr4" resolve="COMPILER_OPTION_STD_C99" />
+                <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="56jrqO8IuU9" role="3uHU7w">
+            <node concept="2OqwBi" id="56jrqO8IpaZ" role="2Oq$k0">
+              <node concept="2OqwBi" id="56jrqO8InUK" role="2Oq$k0">
+                <node concept="1YBJjd" id="56jrqO8InFn" role="2Oq$k0">
+                  <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+                </node>
+                <node concept="2Xjw5R" id="56jrqO8IoQv" role="2OqNvi">
+                  <node concept="1xMEDy" id="56jrqO8IoQx" role="1xVPHs">
+                    <node concept="chp4Y" id="56jrqO8IoSP" role="ri$Ld">
+                      <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="56jrqO8IpE9" role="2OqNvi">
+                <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
+              </node>
+            </node>
+            <node concept="2HwmR7" id="56jrqO8Iw_C" role="2OqNvi">
+              <node concept="1bVj0M" id="56jrqO8Iw_E" role="23t8la">
+                <node concept="3clFbS" id="56jrqO8Iw_F" role="1bW5cS">
+                  <node concept="3clFbF" id="56jrqO8IwDg" role="3cqZAp">
+                    <node concept="2OqwBi" id="56jrqO8IwRl" role="3clFbG">
+                      <node concept="37vLTw" id="56jrqO8IwDf" role="2Oq$k0">
+                        <ref role="3cqZAo" node="56jrqO8Iw_G" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="56jrqO8I_7s" role="2OqNvi">
+                        <node concept="chp4Y" id="56jrqO8I_u2" role="cj9EA">
+                          <ref role="cht4Q" to="k146:5tbhN$4LlsX" resolve="C90CompatibleCode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="56jrqO8Iw_G" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="56jrqO8Iw_H" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="56jrqO8KkSb" role="3cqZAp">
+        <node concept="3clFbS" id="56jrqO8KkSc" role="3clFbx">
+          <node concept="2MkqsV" id="56jrqO8KkSd" role="3cqZAp">
+            <node concept="Xl_RD" id="56jrqO8KkSe" role="2MkJ7o">
+              <property role="Xl_RC" value="C99 standard must be used" />
+            </node>
+            <node concept="1YBJjd" id="56jrqO8KkSf" role="2OEOjV">
+              <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+            </node>
+            <node concept="3Cnw8n" id="56jrqO8KkSg" role="2OEOjU">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="56jrqO8IHqY" resolve="fix_DesktopPlatform_compilerOptions" />
+              <node concept="3CnSsL" id="56jrqO8KkSh" role="3Coj4f">
+                <ref role="QkamJ" node="56jrqO8IIft" resolve="platform" />
+                <node concept="1YBJjd" id="56jrqO8KkSi" role="3CoRuB">
+                  <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="56jrqO8KkSj" role="3clFbw">
+          <node concept="2OqwBi" id="56jrqO8KkSk" role="3uHU7B">
+            <node concept="2OqwBi" id="56jrqO8KkSl" role="2Oq$k0">
+              <node concept="1YBJjd" id="56jrqO8KkSm" role="2Oq$k0">
+                <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+              </node>
+              <node concept="3TrcHB" id="56jrqO8KkSn" role="2OqNvi">
+                <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+              </node>
+            </node>
+            <node concept="liA8E" id="56jrqO8KkSo" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="10M0yZ" id="56jrqO8Klg3" role="37wK5m">
+                <ref role="3cqZAo" to="ahli:56jrqO8IRFM" resolve="COMPILER_OPTION_STD_C90" />
+                <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="56jrqO8KlAX" role="3uHU7w">
+            <node concept="2OqwBi" id="56jrqO8KlAZ" role="3fr31v">
+              <node concept="2OqwBi" id="56jrqO8KlB0" role="2Oq$k0">
+                <node concept="2OqwBi" id="56jrqO8KlB1" role="2Oq$k0">
+                  <node concept="1YBJjd" id="56jrqO8KlB2" role="2Oq$k0">
+                    <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+                  </node>
+                  <node concept="2Xjw5R" id="56jrqO8KlB3" role="2OqNvi">
+                    <node concept="1xMEDy" id="56jrqO8KlB4" role="1xVPHs">
+                      <node concept="chp4Y" id="56jrqO8KlB5" role="ri$Ld">
+                        <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="56jrqO8KlB6" role="2OqNvi">
+                  <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
+                </node>
+              </node>
+              <node concept="2HwmR7" id="56jrqO8KlB7" role="2OqNvi">
+                <node concept="1bVj0M" id="56jrqO8KlB8" role="23t8la">
+                  <node concept="3clFbS" id="56jrqO8KlB9" role="1bW5cS">
+                    <node concept="3clFbF" id="56jrqO8KlBa" role="3cqZAp">
+                      <node concept="2OqwBi" id="56jrqO8KlBb" role="3clFbG">
+                        <node concept="37vLTw" id="56jrqO8KlBc" role="2Oq$k0">
+                          <ref role="3cqZAo" node="56jrqO8KlBf" resolve="it" />
+                        </node>
+                        <node concept="1mIQ4w" id="56jrqO8KlBd" role="2OqNvi">
+                          <node concept="chp4Y" id="56jrqO8KlBe" role="cj9EA">
+                            <ref role="cht4Q" to="k146:5tbhN$4LlsX" resolve="C90CompatibleCode" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="56jrqO8KlBf" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="56jrqO8KlBg" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="3s1LyzGuwaB" role="1YuTPh">
       <property role="TrG5h" value="platform" />
@@ -3675,6 +3842,135 @@
       <property role="TrG5h" value="binary" />
       <node concept="3Tqbb2" id="1E90JpQujgP" role="Q6QK4">
         <ref role="ehGHo" to="51wr:4o9sgv8QoKk" resolve="Binary" />
+      </node>
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="56jrqO8IHqY">
+    <property role="3GE5qa" value="platform" />
+    <property role="TrG5h" value="fix_DesktopPlatform_compilerOptions" />
+    <node concept="Q6JDH" id="56jrqO8IIft" role="Q6Id_">
+      <property role="TrG5h" value="platform" />
+      <node concept="3Tqbb2" id="56jrqO8IIfu" role="Q6QK4">
+        <ref role="ehGHo" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="56jrqO8IHqZ" role="Q6x$H">
+      <node concept="3clFbS" id="56jrqO8IHr0" role="2VODD2">
+        <node concept="3clFbJ" id="56jrqO8Kj5F" role="3cqZAp">
+          <node concept="3clFbS" id="56jrqO8Kj5H" role="3clFbx">
+            <node concept="3clFbF" id="56jrqO8IIg9" role="3cqZAp">
+              <node concept="37vLTI" id="56jrqO8JQnP" role="3clFbG">
+                <node concept="2OqwBi" id="56jrqO8IKjT" role="37vLTx">
+                  <node concept="2OqwBi" id="56jrqO8IIyO" role="2Oq$k0">
+                    <node concept="QwW4i" id="56jrqO8IIg8" role="2Oq$k0">
+                      <ref role="QwW4h" node="56jrqO8IIft" resolve="platform" />
+                    </node>
+                    <node concept="3TrcHB" id="56jrqO8IJQ0" role="2OqNvi">
+                      <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="56jrqO8IL8A" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.replaceFirst(java.lang.String,java.lang.String):java.lang.String" resolve="replaceFirst" />
+                    <node concept="10M0yZ" id="56jrqO8ISZd" role="37wK5m">
+                      <ref role="3cqZAo" to="ahli:56jrqO8IRr4" resolve="COMPILER_OPTION_STD_C99" />
+                      <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
+                    </node>
+                    <node concept="10M0yZ" id="56jrqO8ITbD" role="37wK5m">
+                      <ref role="3cqZAo" to="ahli:56jrqO8IRFM" resolve="COMPILER_OPTION_STD_C90" />
+                      <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="56jrqO8JQsw" role="37vLTJ">
+                  <node concept="QwW4i" id="56jrqO8JQsx" role="2Oq$k0">
+                    <ref role="QwW4h" node="56jrqO8IIft" resolve="platform" />
+                  </node>
+                  <node concept="3TrcHB" id="56jrqO8JQsy" role="2OqNvi">
+                    <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="56jrqO8Kjeg" role="3clFbw">
+            <node concept="2OqwBi" id="56jrqO8Kjeh" role="2Oq$k0">
+              <node concept="2OqwBi" id="56jrqO8Kjei" role="2Oq$k0">
+                <node concept="QwW4i" id="56jrqO8KjJ6" role="2Oq$k0">
+                  <ref role="QwW4h" node="56jrqO8IIft" resolve="platform" />
+                </node>
+                <node concept="2Xjw5R" id="56jrqO8Kjek" role="2OqNvi">
+                  <node concept="1xMEDy" id="56jrqO8Kjel" role="1xVPHs">
+                    <node concept="chp4Y" id="56jrqO8Kjem" role="ri$Ld">
+                      <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="56jrqO8Kjen" role="2OqNvi">
+                <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
+              </node>
+            </node>
+            <node concept="2HwmR7" id="56jrqO8Kjeo" role="2OqNvi">
+              <node concept="1bVj0M" id="56jrqO8Kjep" role="23t8la">
+                <node concept="3clFbS" id="56jrqO8Kjeq" role="1bW5cS">
+                  <node concept="3clFbF" id="56jrqO8Kjer" role="3cqZAp">
+                    <node concept="2OqwBi" id="56jrqO8Kjes" role="3clFbG">
+                      <node concept="37vLTw" id="56jrqO8Kjet" role="2Oq$k0">
+                        <ref role="3cqZAo" node="56jrqO8Kjew" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="56jrqO8Kjeu" role="2OqNvi">
+                        <node concept="chp4Y" id="56jrqO8Kjev" role="cj9EA">
+                          <ref role="cht4Q" to="k146:5tbhN$4LlsX" resolve="C90CompatibleCode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="56jrqO8Kjew" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="56jrqO8Kjex" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="56jrqO8Kkkd" role="9aQIa">
+            <node concept="3clFbS" id="56jrqO8Kkke" role="9aQI4">
+              <node concept="3clFbF" id="56jrqO8Kk_D" role="3cqZAp">
+                <node concept="37vLTI" id="56jrqO8Kk_E" role="3clFbG">
+                  <node concept="2OqwBi" id="56jrqO8Kk_F" role="37vLTx">
+                    <node concept="2OqwBi" id="56jrqO8Kk_G" role="2Oq$k0">
+                      <node concept="QwW4i" id="56jrqO8Kk_H" role="2Oq$k0">
+                        <ref role="QwW4h" node="56jrqO8IIft" resolve="platform" />
+                      </node>
+                      <node concept="3TrcHB" id="56jrqO8Kk_I" role="2OqNvi">
+                        <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="56jrqO8Kk_J" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.replaceFirst(java.lang.String,java.lang.String):java.lang.String" resolve="replaceFirst" />
+                      <node concept="10M0yZ" id="56jrqO8KOxN" role="37wK5m">
+                        <ref role="3cqZAo" to="ahli:56jrqO8IRFM" resolve="COMPILER_OPTION_STD_C90" />
+                        <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
+                      </node>
+                      <node concept="10M0yZ" id="56jrqO8KkJj" role="37wK5m">
+                        <ref role="3cqZAo" to="ahli:56jrqO8IRr4" resolve="COMPILER_OPTION_STD_C99" />
+                        <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="56jrqO8Kk_M" role="37vLTJ">
+                    <node concept="QwW4i" id="56jrqO8Kk_N" role="2Oq$k0">
+                      <ref role="QwW4h" node="56jrqO8IIft" resolve="platform" />
+                    </node>
+                    <node concept="3TrcHB" id="56jrqO8Kk_O" role="2OqNvi">
+                      <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
