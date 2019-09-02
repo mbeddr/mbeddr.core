@@ -1467,7 +1467,7 @@
                 <node concept="3XIRFW" id="3kEjc_WIG$6" role="c0U17">
                   <node concept="1_9egQ" id="3Ojsb45cYi6" role="3XIRFZ">
                     <node concept="3O_q_g" id="3Ojsb45cYi4" role="1_9egR">
-                      <ref role="3O_q_h" to="9g8w:6On3mjTuLWM" resolve="log_assert_fail_bool" />
+                      <ref role="3O_q_h" to="9g8w:6On3mjTuLWM" resolve="log_assert_fail_bool_bool" />
                       <node concept="PhEJO" id="Bqp3R00c0_" role="3O_q_j">
                         <property role="PhEJT" value="messageFormat" />
                         <node concept="17Uvod" id="Bqp3R00c0A" role="lGtFl">
@@ -1580,7 +1580,7 @@
                           <node concept="3clFbS" id="3Ojsb45cYYl" role="2VODD2">
                             <node concept="3cpWs6" id="fv0ouCVzgn" role="3cqZAp">
                               <node concept="Xl_RD" id="fv0ouCVzgo" role="3cqZAk">
-                                <property role="Xl_RC" value="log_assert_fail_bool" />
+                                <property role="Xl_RC" value="log_assert_fail_bool_bool" />
                               </node>
                             </node>
                           </node>
@@ -3980,7 +3980,7 @@
                   <node concept="3XIRFW" id="shBE9Kl_rf" role="c0U17">
                     <node concept="1_9egQ" id="shBE9Kl_rg" role="3XIRFZ">
                       <node concept="3O_q_g" id="shBE9Kl_rh" role="1_9egR">
-                        <ref role="3O_q_h" to="9g8w:shBE9Kmtpq" resolve="log_assert_fail_ptr" />
+                        <ref role="3O_q_h" to="9g8w:shBE9Kmtpq" resolve="log_assert_fail_ptr_ptr" />
                         <node concept="PhEJO" id="shBE9Kl_ri" role="3O_q_j">
                           <property role="PhEJT" value="messageFormat" />
                           <node concept="17Uvod" id="shBE9Kl_rj" role="lGtFl">
@@ -4097,7 +4097,7 @@
                             <node concept="3clFbS" id="shBE9Kl_s2" role="2VODD2">
                               <node concept="3clFbF" id="shBE9Kl_se" role="3cqZAp">
                                 <node concept="Xl_RD" id="shBE9Kl_sg" role="3clFbG">
-                                  <property role="Xl_RC" value="log_assert_fail_ptr" />
+                                  <property role="Xl_RC" value="log_assert_fail_ptr_ptr" />
                                 </node>
                               </node>
                             </node>
