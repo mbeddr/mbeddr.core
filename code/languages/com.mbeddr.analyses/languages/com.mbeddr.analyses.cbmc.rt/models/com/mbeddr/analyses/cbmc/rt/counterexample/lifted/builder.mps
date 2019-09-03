@@ -2,13 +2,13 @@
 <model ref="r:80dc224f-cfbc-4d66-ab57-5e00bae3bc4a(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.builder)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
   </languages>
   <imports>
@@ -1728,7 +1728,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="4ZoQlQrjsl8" role="2OqNvi">
-                        <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
+                        <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="getMangledName" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="4ZoQlQrjq2i" role="37vLTJ">
@@ -2303,11 +2303,11 @@
                   <node concept="3clFbF" id="DaB78DhSf7" role="3cqZAp">
                     <node concept="2OqwBi" id="DaB78DhUkz" role="3clFbG">
                       <node concept="2OqwBi" id="DaB78DhSov" role="2Oq$k0">
-                        <node concept="2qgKlT" id="3vKfeqE7ofG" role="2OqNvi">
-                          <ref role="37wK5l" to="2rho:5AweqC3NcPT" resolve="mangledName" />
-                        </node>
                         <node concept="37vLTw" id="DaB78DhSf6" role="2Oq$k0">
                           <ref role="3cqZAo" node="DaB78DhNZC" resolve="it" />
+                        </node>
+                        <node concept="2qgKlT" id="7q96xLED8_a" role="2OqNvi">
+                          <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="getMangledName" />
                         </node>
                       </node>
                       <node concept="liA8E" id="DaB78DhVBa" role="2OqNvi">
@@ -6206,8 +6206,8 @@
             </node>
             <node concept="3cpWs6" id="4ngEEZdby4R" role="3cqZAp">
               <node concept="2YIFZM" id="4hqHmbT_B$s" role="3cqZAk">
-                <ref role="37wK5l" to="33ny:~Collections.emptyList()" resolve="emptyList" />
                 <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                <ref role="37wK5l" to="33ny:~Collections.emptyList()" resolve="emptyList" />
                 <node concept="3uibUv" id="395kdzFr6a$" role="3PaCim">
                   <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
                 </node>
@@ -6223,8 +6223,8 @@
         </node>
         <node concept="3cpWs6" id="4ngEEZdbzgd" role="3cqZAp">
           <node concept="2YIFZM" id="4ngEEZdbzQt" role="3cqZAk">
-            <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
             <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+            <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
             <node concept="37vLTw" id="4ngEEZdb$47" role="37wK5m">
               <ref role="3cqZAo" node="4ngEEZdbv0R" resolve="res" />
             </node>

@@ -2,13 +2,13 @@
 <model ref="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16876,8 +16876,8 @@
                   <node concept="1Wc70l" id="6RCWEZG5e5Y" role="3clFbw">
                     <node concept="3fqX7Q" id="6RCWEZG5e65" role="3uHU7w">
                       <node concept="2YIFZM" id="6RCWEZG5e6c" role="3fr31v">
-                        <ref role="37wK5l" to="wyt6:~Character.isUpperCase(char)" resolve="isUpperCase" />
                         <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
+                        <ref role="37wK5l" to="wyt6:~Character.isUpperCase(char)" resolve="isUpperCase" />
                         <node concept="2OqwBi" id="6RCWEZG5e6$" role="37wK5m">
                           <node concept="37vLTw" id="6RCWEZG5e6f" role="2Oq$k0">
                             <ref role="3cqZAo" node="6RCWEZG4VGL" resolve="s" />
@@ -16897,8 +16897,8 @@
                       </node>
                     </node>
                     <node concept="2YIFZM" id="6RCWEZG57W0" role="3uHU7B">
-                      <ref role="37wK5l" to="wyt6:~Character.isUpperCase(char)" resolve="isUpperCase" />
                       <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
+                      <ref role="37wK5l" to="wyt6:~Character.isUpperCase(char)" resolve="isUpperCase" />
                       <node concept="2GrUjf" id="6RCWEZG57W1" role="37wK5m">
                         <ref role="2Gs0qQ" node="6RCWEZG57U1" resolve="c" />
                       </node>

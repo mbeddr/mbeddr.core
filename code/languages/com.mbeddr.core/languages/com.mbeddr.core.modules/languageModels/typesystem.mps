@@ -26,7 +26,6 @@
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="9xhd" ref="r:2462c642-dc5b-476a-b684-01d77df4913e(com.mbeddr.core.modules.dataFlow)" />
@@ -36,7 +35,6 @@
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="aplb" ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6/r:a1d8bbbf-d4f0-431f-8dcd-a6badc777315(jetbrains.mps.dataFlow.runtime/jetbrains.mps.lang.dataFlow)" />
-    <import index="xpog" ref="r:fe8ac1c2-4441-43ed-8c6b-75093fa00e66(com.mbeddr.mpsutil.compare.pattern.runtime.plugin)" />
   </imports>
   <registry>
     <language id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers">
@@ -485,13 +483,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -5506,8 +5497,8 @@
           <node concept="3cpWsn" id="2QNVH28OXRu" role="3cpWs9">
             <property role="TrG5h" value="expectedReturns" />
             <node concept="2YIFZM" id="2QNVH28OXRv" role="33vP2m">
-              <ref role="37wK5l" to="8ov6:~DataFlow.getExpectedReturns(jetbrains.mps.lang.dataFlow.framework.Program)" resolve="getExpectedReturns" />
               <ref role="1Pybhc" to="8ov6:~DataFlow" resolve="DataFlow" />
+              <ref role="37wK5l" to="8ov6:~DataFlow.getExpectedReturns(jetbrains.mps.lang.dataFlow.framework.Program)" resolve="getExpectedReturns" />
               <node concept="37vLTw" id="2QNVH28OXSD" role="37wK5m">
                 <ref role="3cqZAo" node="79XQS8Vh12d" resolve="program" />
               </node>
@@ -5693,8 +5684,8 @@
               <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
             </node>
             <node concept="2YIFZM" id="7t5t4Tsyg09" role="33vP2m">
-              <ref role="37wK5l" to="8ov6:~DataFlow.buildProgram(org.jetbrains.mps.openapi.model.SNode)" resolve="buildProgram" />
               <ref role="1Pybhc" to="8ov6:~DataFlow" resolve="DataFlow" />
+              <ref role="37wK5l" to="8ov6:~DataFlow.buildProgram(org.jetbrains.mps.openapi.model.SNode)" resolve="buildProgram" />
               <node concept="37vLTw" id="7t5t4Tsyg0a" role="37wK5m">
                 <ref role="3cqZAo" node="2QNVH28YmOf" resolve="statements" />
               </node>
@@ -9017,43 +9008,6 @@
           <node concept="3clFbH" id="BItIAVcK0H" role="3cqZAp" />
           <node concept="1DcWWT" id="BItIAVcSWs" role="3cqZAp">
             <node concept="3clFbS" id="BItIAVcSWt" role="2LFqv$">
-              <node concept="1X3_iC" id="5GwePVE6Dt_" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="3clFbF" id="5qsqXLsbWFM" role="8Wnug">
-                  <node concept="2OqwBi" id="5qsqXLsbWFJ" role="3clFbG">
-                    <node concept="10M0yZ" id="5qsqXLsbWFK" role="2Oq$k0">
-                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    </node>
-                    <node concept="liA8E" id="5qsqXLsbWFL" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                      <node concept="3cpWs3" id="5qsqXLsbXkA" role="37wK5m">
-                        <node concept="3cpWs3" id="5qsqXLsbX0g" role="3uHU7B">
-                          <node concept="37vLTw" id="5qsqXLsbWWs" role="3uHU7B">
-                            <ref role="3cqZAo" node="BItIAVcT0L" resolve="instruction" />
-                          </node>
-                          <node concept="Xl_RD" id="5qsqXLsbX0j" role="3uHU7w">
-                            <property role="Xl_RC" value=" " />
-                          </node>
-                        </node>
-                        <node concept="2OqwBi" id="5qsqXLsbXvd" role="3uHU7w">
-                          <node concept="37vLTw" id="5qsqXLsbXve" role="2Oq$k0">
-                            <ref role="3cqZAo" node="BItIAVcOy0" resolve="livenessAnalyzerResult" />
-                          </node>
-                          <node concept="liA8E" id="5qsqXLsbXvf" role="2OqNvi">
-                            <ref role="37wK5l" to="1fjm:~AnalysisResult.get(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction)" resolve="get" />
-                            <node concept="37vLTw" id="5qsqXLsbXJ4" role="37wK5m">
-                              <ref role="3cqZAo" node="BItIAVcT0L" resolve="instruction" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="5qsqXLsbWk8" role="3cqZAp" />
               <node concept="3clFbJ" id="5qsqXLsa$Lf" role="3cqZAp">
                 <node concept="3clFbS" id="5qsqXLsa$Lh" role="3clFbx">
                   <node concept="3cpWs8" id="5qsqXLsa_1L" role="3cqZAp">
@@ -13631,8 +13585,7 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="75BiFae1R3u" role="3cqZAp" />
-      <node concept="3clFbH" id="75BiFae1R4B" role="3cqZAp" />
+      <node concept="3clFbH" id="3mNkkAi3cbC" role="3cqZAp" />
       <node concept="3cpWs8" id="6caIvWDRPAu" role="3cqZAp">
         <node concept="3cpWsn" id="6caIvWDRPAv" role="3cpWs9">
           <property role="TrG5h" value="resultType" />

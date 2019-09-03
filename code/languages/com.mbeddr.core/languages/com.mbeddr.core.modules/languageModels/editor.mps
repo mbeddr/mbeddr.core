@@ -2,14 +2,14 @@
 <model ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)">
   <persistence version="9" />
   <languages>
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
+    <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="-1" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -1761,8 +1761,8 @@
                 <node concept="3clFbS" id="2CEi94eH1At" role="2VODD2">
                   <node concept="3clFbF" id="6vtRRikVsv0" role="3cqZAp">
                     <node concept="2YIFZM" id="6vtRRikVy7r" role="3clFbG">
-                      <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable)" resolve="runReadTransparentAction" />
                       <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                      <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable)" resolve="runReadTransparentAction" />
                       <node concept="1bVj0M" id="6vtRRikVy7s" role="37wK5m">
                         <property role="3yWfEV" value="true" />
                         <node concept="3clFbS" id="6vtRRikVy7t" role="1bW5cS">
@@ -3958,8 +3958,8 @@
       <node concept="3clFbS" id="2$xXL4HmqJA" role="2VODD2">
         <node concept="3clFbF" id="2$xXL4HpNc1" role="3cqZAp">
           <node concept="2YIFZM" id="2$xXL4HpNJj" role="3clFbG">
-            <ref role="37wK5l" to="33ny:~Collections.singleton(java.lang.Object)" resolve="singleton" />
             <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+            <ref role="37wK5l" to="33ny:~Collections.singleton(java.lang.Object)" resolve="singleton" />
             <node concept="jzRn0" id="2$xXL4HpO2D" role="37wK5m" />
           </node>
         </node>
@@ -6304,6 +6304,17 @@
       </node>
     </node>
     <node concept="382kZG" id="3Q2hMLtQ6vr" role="lGtFl" />
+  </node>
+  <node concept="24kQdi" id="1EH1Mz5VmdO">
+    <property role="3GE5qa" value="gen" />
+    <ref role="1XX52x" to="x27k:49XubMpBVjJ" resolve="MinimalNameMangling" />
+    <node concept="3EZMnI" id="1EH1Mz5VmdT" role="2wV5jI">
+      <node concept="2iRkQZ" id="1EH1Mz5VmdZ" role="2iSdaV" />
+      <node concept="PMmxH" id="1EH1Mz5Vmec" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="2SsqMj" id="1EH1Mz5VmdQ" role="3EZMnx" />
+    </node>
   </node>
 </model>
 

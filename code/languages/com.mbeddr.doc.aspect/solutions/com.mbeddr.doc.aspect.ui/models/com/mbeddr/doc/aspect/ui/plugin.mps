@@ -388,11 +388,6 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
       <node concept="1oajcY" id="69s3uhHTaJo" role="1oa70y" />
     </node>
-    <node concept="1DS2jV" id="11K_5nNg2eQ" role="1NuT2Z">
-      <property role="TrG5h" value="editorCell" />
-      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CELL" resolve="EDITOR_CELL" />
-      <node concept="1oajcY" id="11K_5nNg2eR" role="1oa70y" />
-    </node>
     <node concept="tnohg" id="69s3uhHSZqu" role="tncku">
       <node concept="3clFbS" id="69s3uhHSZqv" role="2VODD2">
         <node concept="3cpWs8" id="69s3uhHTVgS" role="3cqZAp">
@@ -504,6 +499,11 @@
     </node>
     <node concept="1QGGSu" id="UK_oBpzHVU" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
+    </node>
+    <node concept="1DS2jV" id="11K_5nNg2eQ" role="1NuT2Z">
+      <property role="TrG5h" value="editorCell" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CELL" resolve="EDITOR_CELL" />
+      <node concept="1oajcY" id="11K_5nNg2eR" role="1oa70y" />
     </node>
   </node>
   <node concept="tC5Ba" id="69s3uhHThi8">

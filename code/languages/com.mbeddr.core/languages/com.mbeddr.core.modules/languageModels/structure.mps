@@ -2,7 +2,7 @@
 <model ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -206,11 +206,11 @@
       <property role="IQ2ns" value="1437197461779767913" />
       <ref role="20lvS9" node="L2WnbQO1DI" resolve="ArgumentKindContainer" />
     </node>
+    <node concept="PrWs8" id="2UsYkT0mQP8" role="PzmwI">
+      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
     <node concept="PrWs8" id="5Oog2UbSUrA" role="PzmwI">
       <ref role="PrY4T" node="5Oog2UbPmsI" resolve="IExternable" />
-    </node>
-    <node concept="PrWs8" id="5Oog2UbPmtr" role="PzmwI">
-      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
     <node concept="1TJgyi" id="7RiewQ_kDL5" role="1TKVEl">
       <property role="TrG5h" value="hasEllipsis" />
@@ -338,6 +338,17 @@
     <node concept="PrWs8" id="19a6$uAAqkM" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="1TJgyi" id="7Aba6ByEJr$" role="1TKVEl">
+      <property role="IQ2nx" value="8758138335591593700" />
+      <property role="TrG5h" value="moduleNamePrefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="7oF65pen41M" role="1TKVEi">
+      <property role="IQ2ns" value="8514926279434977394" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mangledNameFinalizer" />
+      <ref role="20lvS9" node="7oF65pen3H4" resolve="IMangledNameFinalizer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3kEjc_WIKGf">
     <property role="TrG5h" value="StdHeaderImport" />
@@ -463,7 +474,7 @@
       <property role="IQ2ns" value="2771264470558526601" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
-    <node concept="PrWs8" id="5IYyAOzCrrf" role="PzmwI">
+    <node concept="PrWs8" id="2UsYkT0mL6K" role="PzmwI">
       <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
     <node concept="PrWs8" id="4k0bDztzd$w" role="PzmwI">
@@ -1553,12 +1564,12 @@
     <property role="EcuMT" value="3334587323452698462" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="2T6Po3mUMXv" role="lGtFl">
-      <property role="Hh88m" value="nameOverride" />
+      <property role="Hh88m" value="moduleHNameOverride" />
       <node concept="tn0Fv" id="2T6Po3mUMYh" role="HhnKV">
         <property role="tnX3d" value="false" />
       </node>
-      <node concept="trNpa" id="2T6Po3mUMYj" role="EQaZv">
-        <ref role="trN6q" node="5_l8w1EmTde" resolve="ImplementationModule" />
+      <node concept="trNpa" id="4NsxPSUDnDX" role="EQaZv">
+        <ref role="trN6q" node="5_l8w1EmTcX" resolve="Module" />
       </node>
     </node>
   </node>
@@ -1609,6 +1620,23 @@
     <property role="TrG5h" value="IImplementsKnownFunctionPrototype" />
     <node concept="PrWs8" id="20agw21I6Ig" role="PrDN$">
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7oF65pen3H4">
+    <property role="EcuMT" value="8514926279434976068" />
+    <property role="TrG5h" value="IMangledNameFinalizer" />
+  </node>
+  <node concept="1TIwiD" id="49XubMpBVjJ">
+    <property role="EcuMT" value="4791118330018641135" />
+    <property role="3GE5qa" value="gen" />
+    <property role="TrG5h" value="MinimalNameMangling" />
+    <property role="34LRSv" value="@minimalNameMangling" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="49XubMpBVjK" role="lGtFl">
+      <property role="Hh88m" value="minimalNameMangling" />
+      <node concept="trNpa" id="49XubMpBVn3" role="EQaZv">
+        <ref role="trN6q" node="5_l8w1EmTdf" resolve="IModuleContent" />
+      </node>
     </node>
   </node>
 </model>
