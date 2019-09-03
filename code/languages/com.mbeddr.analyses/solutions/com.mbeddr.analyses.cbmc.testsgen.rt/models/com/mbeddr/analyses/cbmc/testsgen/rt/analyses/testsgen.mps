@@ -324,10 +324,12 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
@@ -4086,6 +4088,7 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="667l08zLDWH" role="3cqZAp" />
             <node concept="3SKdUt" id="1cqjeUW7sBI" role="3cqZAp">
               <node concept="3SKdUq" id="1cqjeUW7sBK" role="3SKWNk">
                 <property role="3SKdUp" value="if this goal already got inputs2values, then do not add the current ones" />
@@ -4121,6 +4124,125 @@
                   </node>
                 </node>
                 <node concept="1v1jN8" id="1cqjeUW7rNN" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="667l08zFLGx" role="3cqZAp" />
+            <node concept="3SKdUt" id="667l08zLGk6" role="3cqZAp">
+              <node concept="3SKdUq" id="667l08zLGk8" role="3SKWNk">
+                <property role="3SKdUp" value="if already saved vector for this goal contain improper values (NaN, Infinity, etc) then save it again" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="667l08zIOQN" role="3cqZAp">
+              <node concept="3cpWsn" id="667l08zIOQO" role="3cpWs9">
+                <property role="TrG5h" value="alreadySavedVectorContainsNanOrInfinity" />
+                <node concept="10P_77" id="667l08zIOQr" role="1tU5fm" />
+                <node concept="2OqwBi" id="667l08zIOQP" role="33vP2m">
+                  <node concept="2OqwBi" id="667l08zIOQQ" role="2Oq$k0">
+                    <node concept="37vLTw" id="667l08zIOQR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3aDyPAXUwX8" resolve="info" />
+                    </node>
+                    <node concept="2OwXpG" id="667l08zIOQS" role="2OqNvi">
+                      <ref role="2Oxat5" node="3aDyPAXUcTk" resolve="inputs2Values" />
+                    </node>
+                  </node>
+                  <node concept="2HwmR7" id="667l08zIOQT" role="2OqNvi">
+                    <node concept="1bVj0M" id="667l08zIOQU" role="23t8la">
+                      <node concept="3clFbS" id="667l08zIOQV" role="1bW5cS">
+                        <node concept="3cpWs8" id="667l08zIOQW" role="3cqZAp">
+                          <node concept="3cpWsn" id="667l08zIOQX" role="3cpWs9">
+                            <property role="TrG5h" value="val" />
+                            <node concept="17QB3L" id="667l08zIOQY" role="1tU5fm" />
+                            <node concept="2OqwBi" id="667l08zIOQZ" role="33vP2m">
+                              <node concept="2OqwBi" id="667l08zIOR0" role="2Oq$k0">
+                                <node concept="2OqwBi" id="667l08zIOR1" role="2Oq$k0">
+                                  <node concept="37vLTw" id="667l08zIOR2" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="667l08zIORg" resolve="it" />
+                                  </node>
+                                  <node concept="liA8E" id="667l08zIOR3" role="2OqNvi">
+                                    <ref role="37wK5l" to="1qo3:~Pair.getRight():java.lang.Object" resolve="getRight" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="667l08zIOR4" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="667l08zIOR5" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="667l08zIOR6" role="3cqZAp">
+                          <node concept="22lmx$" id="667l08zIOR7" role="3clFbG">
+                            <node concept="2OqwBi" id="667l08zIOR8" role="3uHU7w">
+                              <node concept="37vLTw" id="667l08zIOR9" role="2Oq$k0">
+                                <ref role="3cqZAo" node="667l08zIOQX" resolve="val" />
+                              </node>
+                              <node concept="liA8E" id="667l08zIORa" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                                <node concept="Xl_RD" id="667l08zIORb" role="37wK5m">
+                                  <property role="Xl_RC" value="infinity" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="667l08zIORc" role="3uHU7B">
+                              <node concept="37vLTw" id="667l08zIORd" role="2Oq$k0">
+                                <ref role="3cqZAo" node="667l08zIOQX" resolve="val" />
+                              </node>
+                              <node concept="liA8E" id="667l08zIORe" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                                <node concept="Xl_RD" id="667l08zIORf" role="37wK5m">
+                                  <property role="Xl_RC" value="nan" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="667l08zIORg" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="667l08zIORh" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="667l08zIS7h" role="3cqZAp">
+              <node concept="3clFbS" id="667l08zIS7i" role="3clFbx">
+                <node concept="3clFbF" id="667l08zJ_9m" role="3cqZAp">
+                  <node concept="2OqwBi" id="667l08zJVW5" role="3clFbG">
+                    <node concept="2OqwBi" id="667l08zJ_9o" role="2Oq$k0">
+                      <node concept="37vLTw" id="667l08zJ_9p" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3aDyPAXUwX8" resolve="info" />
+                      </node>
+                      <node concept="2OwXpG" id="667l08zJ_9q" role="2OqNvi">
+                        <ref role="2Oxat5" node="3aDyPAXUcTk" resolve="inputs2Values" />
+                      </node>
+                    </node>
+                    <node concept="2Kehj3" id="667l08zKHY1" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="667l08zIS7j" role="3cqZAp">
+                  <node concept="2OqwBi" id="667l08zIS7k" role="3clFbG">
+                    <node concept="2OqwBi" id="667l08zIS7l" role="2Oq$k0">
+                      <node concept="37vLTw" id="667l08zIS7m" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3aDyPAXUwX8" resolve="info" />
+                      </node>
+                      <node concept="2OwXpG" id="667l08zIS7n" role="2OqNvi">
+                        <ref role="2Oxat5" node="3aDyPAXUcTk" resolve="inputs2Values" />
+                      </node>
+                    </node>
+                    <node concept="X8dFx" id="667l08zIS7o" role="2OqNvi">
+                      <node concept="37vLTw" id="667l08zIS7p" role="25WWJ7">
+                        <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="667l08zITS$" role="3clFbw">
+                <ref role="3cqZAo" node="667l08zIOQO" resolve="alreadySavedVectorContainsNanOrInfinity" />
               </node>
             </node>
           </node>
