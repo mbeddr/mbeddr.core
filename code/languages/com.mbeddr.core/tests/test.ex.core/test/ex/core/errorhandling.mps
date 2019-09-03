@@ -158,6 +158,9 @@
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
+    <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
+      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO" />
+    </language>
   </registry>
   <node concept="N3F5e" id="7kmhBx2NBAC">
     <property role="TrG5h" value="ErrorHandlingTest" />
@@ -577,6 +580,7 @@
       </node>
     </node>
     <node concept="12mU2y" id="7BqFpRy4s0Q" role="2Q9xDr" />
+    <node concept="MH4UO" id="4QnOXk_y73o" role="2Q9xDr" />
   </node>
 </model>
 
