@@ -192,6 +192,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -2914,7 +2915,7 @@
               <node concept="1Rwk04" id="4_Ba8HNRsUn" role="2OqNvi" />
             </node>
             <node concept="3cmrfG" id="NfDeW0RLaa" role="3uHU7w">
-              <property role="3cmrfH" value="52" />
+              <property role="3cmrfH" value="50" />
             </node>
           </node>
         </node>
@@ -6392,6 +6393,82 @@
                           <property role="Xl_RC" value="-D__CYGWIN__" />
                         </node>
                       </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="5js0mJYKRTr" role="3cqZAp">
+                    <node concept="2OqwBi" id="5js0mJYKRTs" role="3clFbG">
+                      <node concept="37vLTw" id="5js0mJYKRTt" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                      </node>
+                      <node concept="TSZUe" id="5js0mJYKRTu" role="2OqNvi">
+                        <node concept="Xl_RD" id="5js0mJYKRTv" role="25WWJ7">
+                          <property role="Xl_RC" value="-D_INC_CYGWIN" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="2aciK4JtCTs" role="3cqZAp">
+                    <node concept="3clFbS" id="2aciK4JtCTu" role="3clFbx">
+                      <node concept="3clFbF" id="2aciK4JrRyL" role="3cqZAp">
+                        <node concept="2OqwBi" id="2aciK4JrSdk" role="3clFbG">
+                          <node concept="37vLTw" id="2aciK4JrRyJ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                          </node>
+                          <node concept="TSZUe" id="2aciK4JrSSn" role="2OqNvi">
+                            <node concept="Xl_RD" id="2aciK4JrT4u" role="25WWJ7">
+                              <property role="Xl_RC" value="-D__stdcall=" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="5js0mJYKUYg" role="3cqZAp">
+                        <node concept="2OqwBi" id="5js0mJYKUYh" role="3clFbG">
+                          <node concept="37vLTw" id="5js0mJYKUYi" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                          </node>
+                          <node concept="TSZUe" id="5js0mJYKUYj" role="2OqNvi">
+                            <node concept="Xl_RD" id="5js0mJYKUYk" role="25WWJ7">
+                              <property role="Xl_RC" value="-D__cdecl=" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2aciK4JtDFE" role="3clFbw">
+                      <node concept="2YIFZM" id="2aciK4JtD5U" role="2Oq$k0">
+                        <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                        <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                        <node concept="Xl_RD" id="2aciK4JtDpP" role="37wK5m">
+                          <property role="Xl_RC" value="CBMC_BASED_ANALYSES_DO_NOT_OVERRIDE_STDCALL_MACRO" />
+                        </node>
+                      </node>
+                      <node concept="17RlXB" id="2aciK4JtEix" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="3UO_md_fIIF" role="3cqZAp">
+                    <node concept="3clFbS" id="3UO_md_fIIG" role="3clFbx">
+                      <node concept="3clFbF" id="3UO_md_fIIH" role="3cqZAp">
+                        <node concept="2OqwBi" id="3UO_md_fIII" role="3clFbG">
+                          <node concept="37vLTw" id="3UO_md_fIIJ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                          </node>
+                          <node concept="TSZUe" id="3UO_md_fIIK" role="2OqNvi">
+                            <node concept="Xl_RD" id="3UO_md_fIIL" role="25WWJ7">
+                              <property role="Xl_RC" value="-D_IA64_" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="3UO_md_fIIR" role="3clFbw">
+                      <node concept="2YIFZM" id="3UO_md_fIIS" role="2Oq$k0">
+                        <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                        <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                        <node concept="Xl_RD" id="3UO_md_fIIT" role="37wK5m">
+                          <property role="Xl_RC" value="CBMC_AVOID_IA64_DEFINITION" />
+                        </node>
+                      </node>
+                      <node concept="17RlXB" id="3UO_md_fIIU" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
