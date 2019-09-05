@@ -189,6 +189,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     </node>
+    <node concept="PrWs8" id="3fbvvGId0LQ" role="PzmwI">
+      <ref role="PrY4T" node="3fbvvGId0Is" resolve="IVariabilityContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6S8I43GcUAb">
     <property role="EcuMT" value="7928789732965984651" />
@@ -206,6 +209,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="3fbvvGId0Is">
+    <property role="EcuMT" value="3732215233972013980" />
+    <property role="TrG5h" value="IVariabilityContent" />
   </node>
 </model>
 
