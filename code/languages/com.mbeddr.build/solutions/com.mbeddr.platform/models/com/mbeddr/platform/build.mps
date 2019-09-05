@@ -5966,10 +5966,10 @@
             </node>
           </node>
         </node>
-        <node concept="2EVzJI" id="73O5juxU7Af" role="2EVzJD">
+        <node concept="2EVzJI" id="5u_l2Lir5Eq" role="2EVzJD">
           <ref role="2EVzJJ" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
         </node>
-        <node concept="2EVzJI" id="73O5juxU7Ag" role="2EVzJD">
+        <node concept="2EVzJI" id="5u_l2Lir5Er" role="2EVzJD">
           <ref role="2EVzJJ" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
         </node>
       </node>
@@ -7073,44 +7073,6 @@
         <node concept="1SiIV0" id="2VC4eVYf7uE" role="3bR37C">
           <node concept="3bR9La" id="2VC4eVYf7uF" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rYz9YXtvoo" role="3bR37C">
-          <node concept="1BurEX" id="1rYz9YXtvop" role="1SiIV1">
-            <node concept="398BVA" id="1rYz9YXtvob" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="1rYz9YXtvoc" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1rYz9YXtvod" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.httpsupport.rt" />
-                  <node concept="2Ry0Ak" id="1rYz9YXtvoe" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1rYz9YXtvof" role="2Ry0An">
-                      <property role="2Ry0Am" value="slf4j-api-1.7.10.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1E_ghOz1iU7" role="3bR37C">
-          <node concept="1BurEX" id="1E_ghOz1iU8" role="1SiIV1">
-            <node concept="398BVA" id="1E_ghOz1iTU" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="1E_ghOz1iTV" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1E_ghOz1iTW" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.httpsupport.rt" />
-                  <node concept="2Ry0Ak" id="1E_ghOz1iTX" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1E_ghOz1iTY" role="2Ry0An">
-                      <property role="2Ry0Am" value="slf4j-log4j12-1.7.10.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="1SiIV0" id="3lZeU8ehpZU" role="3bR37C">

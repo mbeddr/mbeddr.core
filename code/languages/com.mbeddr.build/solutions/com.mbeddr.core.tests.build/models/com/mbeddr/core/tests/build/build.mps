@@ -974,7 +974,6 @@
       <property role="BnDLt" value="true" />
       <property role="TrG5h" value="aLibrary" />
       <property role="3LESm3" value="ac9da4f2-d564-40a2-a35a-213ed1655172" />
-      <property role="2GAjPV" value="false" />
       <property role="aoJFB" value="sources and tests" />
       <node concept="398BVA" id="58DJDcMhr6s" role="3LF7KH">
         <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.core" />
@@ -990,7 +989,6 @@
       </node>
       <node concept="1SiIV0" id="4cEcQIx$y5_" role="3bR37C">
         <node concept="3bR9La" id="4cEcQIx$y5A" role="1SiIV1">
-          <property role="3bR36h" value="false" />
           <ref role="3bR37D" node="4cEcQIx$xWy" resolve="com.mbeddr.core.__spreferences.PlatformTemplates" />
         </node>
       </node>
@@ -1010,12 +1008,16 @@
           </node>
         </node>
       </node>
+      <node concept="1SiIV0" id="7Aba6BzyYMj" role="3bR37C">
+        <node concept="3bR9La" id="7Aba6BzyYMk" role="1SiIV1">
+          <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="4cEcQIx$xWy" role="3989C9">
       <property role="BnDLt" value="true" />
       <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates" />
       <property role="TrG5h" value="com.mbeddr.core.__spreferences.PlatformTemplates" />
-      <property role="2GAjPV" value="false" />
       <property role="aoJFB" value="sources" />
       <node concept="398BVA" id="4cEcQIx$xWz" role="3LF7KH">
         <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.core" />

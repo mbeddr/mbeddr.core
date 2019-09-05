@@ -2,7 +2,7 @@
 <model ref="r:21a752c5-ce3e-4f24-9768-ac2e963d3f7d(com.mbeddr.analyses.spin.promela.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -250,8 +250,8 @@
     <node concept="13i0hz" id="GpUw9Sa0BN" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="mangleNames" />
-      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="mangleNames" />
+      <property role="TrG5h" value="canMangleNames" />
+      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="canMangleNames" />
       <node concept="3Tm1VV" id="GpUw9Sa0BO" role="1B3o_S" />
       <node concept="3clFbS" id="GpUw9Sa0BR" role="3clF47">
         <node concept="3clFbF" id="GpUw9Sa0BU" role="3cqZAp">

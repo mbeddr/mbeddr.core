@@ -3,7 +3,6 @@ import de.itemis.mps.gradle.GitBasedVersioning
 ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 
-
 //MPS extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2019.1.+"
 ext.mpsMajor = "2019.1"

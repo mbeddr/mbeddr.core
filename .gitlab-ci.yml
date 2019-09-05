@@ -5,7 +5,6 @@ variables:
   # !! Important Note !! Don't use GRADLE_OPTS as it can only be provided with JVM arguments
   # (see https://github.com/gradle/gradle/issues/7491 for details)
   GRADLE_OPTIONS: "
-      -g $GRADLE_USER_HOME
       -Dorg.gradle.daemon=false
       -PforceCI=true
       -PmpsExtensionsVersion=$MPS_EXTENSIONS_VERSION

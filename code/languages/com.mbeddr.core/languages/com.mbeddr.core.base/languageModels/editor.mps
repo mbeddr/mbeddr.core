@@ -2,22 +2,22 @@
 <model ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)">
   <persistence version="9" />
   <languages>
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
-    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
-    <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
-    <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
-    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
+    <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
+    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -3621,8 +3621,8 @@
                   <ref role="3TsBF5" to="vs0r:7McwK6mrL3z" resolve="hideOkOnes" />
                 </node>
                 <node concept="2YIFZM" id="1TS1BLOWtGR" role="2Oq$k0">
-                  <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable)" resolve="runReadTransparentAction" />
                   <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                  <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable)" resolve="runReadTransparentAction" />
                   <node concept="1bVj0M" id="1TS1BLOWtGS" role="37wK5m">
                     <node concept="3clFbS" id="1TS1BLOWtGT" role="1bW5cS">
                       <node concept="3clFbF" id="1TS1BLOWtGU" role="3cqZAp">
@@ -4051,8 +4051,8 @@
                     <ref role="3TsBF5" to="vs0r:3jNX2XuL9g9" resolve="mustBeOk" />
                   </node>
                   <node concept="2YIFZM" id="1TS1BLOWs33" role="2Oq$k0">
-                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable)" resolve="runReadTransparentAction" />
                     <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable)" resolve="runReadTransparentAction" />
                     <node concept="1bVj0M" id="1TS1BLOWs34" role="37wK5m">
                       <node concept="3clFbS" id="1TS1BLOWs35" role="1bW5cS">
                         <node concept="3clFbF" id="1TS1BLOWs36" role="3cqZAp">
@@ -4195,8 +4195,8 @@
                       <ref role="3uigEE" to="25x5:~DateFormat" resolve="DateFormat" />
                     </node>
                     <node concept="2YIFZM" id="3WZzKB5bo9U" role="33vP2m">
-                      <ref role="37wK5l" to="25x5:~DateFormat.getDateTimeInstance(int,int)" resolve="getDateTimeInstance" />
                       <ref role="1Pybhc" to="25x5:~SimpleDateFormat" resolve="SimpleDateFormat" />
+                      <ref role="37wK5l" to="25x5:~DateFormat.getDateTimeInstance(int,int)" resolve="getDateTimeInstance" />
                       <node concept="10M0yZ" id="3WZzKB5bsGq" role="37wK5m">
                         <ref role="1PxDUh" to="25x5:~DateFormat" resolve="DateFormat" />
                         <ref role="3cqZAo" to="25x5:~DateFormat.SHORT" resolve="SHORT" />
@@ -5108,8 +5108,8 @@
               <ref role="3uigEE" to="exr9:~EditorSettings" resolve="EditorSettings" />
             </node>
             <node concept="2YIFZM" id="CPtprWM32R" role="33vP2m">
-              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
             </node>
           </node>
         </node>
@@ -7238,8 +7238,8 @@
         <node concept="3clFbF" id="CWtn7Mkrvx" role="3cqZAp">
           <node concept="2OqwBi" id="CWtn7Mkrvy" role="3clFbG">
             <node concept="2YIFZM" id="CWtn7Mkrvz" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
               <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
+              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
             </node>
             <node concept="liA8E" id="CWtn7Mkrv$" role="2OqNvi">
               <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
@@ -7315,8 +7315,8 @@
               <node concept="2OqwBi" id="633huCnq1wc" role="37wK5m">
                 <node concept="2OqwBi" id="633huCnq1wd" role="2Oq$k0">
                   <node concept="2YIFZM" id="633huCnq1we" role="2Oq$k0">
-                    <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
                     <ref role="1Pybhc" to="zwau:~ConceptEditorHintSettingsComponent" resolve="ConceptEditorHintSettingsComponent" />
+                    <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
                     <node concept="37vLTw" id="633huCnq1wf" role="37wK5m">
                       <ref role="3cqZAo" node="6Jye7ey1hQV" resolve="p" />
                     </node>
@@ -7356,8 +7356,8 @@
               <ref role="3uigEE" to="zwau:~ConceptEditorHintSettingsComponent" resolve="ConceptEditorHintSettingsComponent" />
             </node>
             <node concept="2YIFZM" id="2spo683qPyr" role="33vP2m">
-              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
               <ref role="1Pybhc" to="zwau:~ConceptEditorHintSettingsComponent" resolve="ConceptEditorHintSettingsComponent" />
+              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
               <node concept="37vLTw" id="2spo683qPys" role="37wK5m">
                 <ref role="3cqZAo" node="6Jye7ey1hQV" resolve="p" />
               </node>
@@ -9180,20 +9180,6 @@
       </node>
       <node concept="2PzhpH" id="$bJ0jgQ83D" role="2PL9iG">
         <node concept="3clFbS" id="$bJ0jgQ83E" role="2VODD2">
-          <node concept="3clFbF" id="NqpzEWEqrB" role="3cqZAp">
-            <node concept="2OqwBi" id="NqpzEWEqr$" role="3clFbG">
-              <node concept="10M0yZ" id="NqpzEWEqr_" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              </node>
-              <node concept="liA8E" id="NqpzEWEqrA" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                <node concept="Xl_RD" id="NqpzEWEqtD" role="37wK5m">
-                  <property role="Xl_RC" value="toggleDebugger" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbJ" id="$bJ0jgQ83F" role="3cqZAp">
             <node concept="3clFbS" id="$bJ0jgQ83G" role="3clFbx">
               <node concept="3clFbF" id="$bJ0jgQ83H" role="3cqZAp">
@@ -9278,8 +9264,8 @@
                     </node>
                     <node concept="3clFbF" id="GKLijT3Uf$" role="3cqZAp">
                       <node concept="2YIFZM" id="44jZT9p0HlR" role="3clFbG">
-                        <ref role="37wK5l" to="btm1:~StringUtils.rightPad(java.lang.String,int)" resolve="rightPad" />
                         <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                        <ref role="37wK5l" to="btm1:~StringUtils.rightPad(java.lang.String,int)" resolve="rightPad" />
                         <node concept="2YIFZM" id="44jZT9p0Ho2" role="37wK5m">
                           <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                           <ref role="37wK5l" to="btm1:~StringUtils.abbreviate(java.lang.String,int)" resolve="abbreviate" />
@@ -11198,8 +11184,8 @@
                   <node concept="liA8E" id="3VQE5sAu2Qc" role="2OqNvi">
                     <ref role="37wK5l" to="fbzs:~Path2D$Float.transform(java.awt.geom.AffineTransform)" resolve="transform" />
                     <node concept="2YIFZM" id="3VQE5sAu2US" role="37wK5m">
-                      <ref role="37wK5l" to="fbzs:~AffineTransform.getTranslateInstance(double,double)" resolve="getTranslateInstance" />
                       <ref role="1Pybhc" to="fbzs:~AffineTransform" resolve="AffineTransform" />
+                      <ref role="37wK5l" to="fbzs:~AffineTransform.getTranslateInstance(double,double)" resolve="getTranslateInstance" />
                       <node concept="3cpWsd" id="3VQE5sAK4k2" role="37wK5m">
                         <node concept="1rXfSq" id="3VQE5sAK4k5" role="3uHU7B">
                           <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
@@ -12660,8 +12646,8 @@
                             <node concept="Xjq3P" id="5IQEFjDHOTX" role="2Oq$k0" />
                           </node>
                           <node concept="2YIFZM" id="5IQEFjDHOTY" role="37vLTx">
-                            <ref role="37wK5l" to="wyt6:~Math.max(int,int)" resolve="max" />
                             <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                            <ref role="37wK5l" to="wyt6:~Math.max(int,int)" resolve="max" />
                             <node concept="1rXfSq" id="5IQEFjDHOTZ" role="37wK5m">
                               <ref role="37wK5l" node="5IQEFjDHOTw" resolve="getHeightInternal" />
                             </node>

@@ -3,11 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
+    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -7538,25 +7538,6 @@
             <node concept="10Oyi0" id="4jiR73uWWkA" role="1tU5fm" />
             <node concept="BsUDl" id="4jiR73uWWkD" role="33vP2m">
               <ref role="37wK5l" node="4jiR73uG8hv" resolve="requiredNumberOfBits" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4jiR73uWU$T" role="3cqZAp">
-          <node concept="2OqwBi" id="4jiR73uWU$Q" role="3clFbG">
-            <node concept="10M0yZ" id="4jiR73uWU$R" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="4jiR73uWU$S" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="3cpWs3" id="4jiR73uWVbA" role="37wK5m">
-                <node concept="Xl_RD" id="4jiR73uWUCU" role="3uHU7B">
-                  <property role="Xl_RC" value="ErrorAnnotation: number of bits " />
-                </node>
-                <node concept="37vLTw" id="4jiR73uWWkE" role="3uHU7w">
-                  <ref role="3cqZAo" node="4jiR73uWWkC" resolve="bits" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
