@@ -329,7 +329,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
+      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference_Old" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
@@ -424,6 +424,10 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
@@ -665,7 +669,7 @@
             <property role="TrG5h" value="allCheckers" />
             <node concept="_YKpA" id="5OVrJHOej6A" role="1tU5fm">
               <node concept="3uibUv" id="5OVrJHOej6B" role="_ZDj9">
-                <ref role="3uigEE" to="wsw7:4r$i1_aEwSg" resolve="IChecker" />
+                <ref role="3uigEE" to="k2t0:~IChecker" resolve="IChecker" />
                 <node concept="3uibUv" id="5OVrJHOel64" role="11_B2D">
                   <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                 </node>
@@ -677,7 +681,7 @@
             <node concept="2ShNRf" id="3WTAHuoGu6l" role="33vP2m">
               <node concept="Tc6Ow" id="3WTAHuoGu5_" role="2ShVmc">
                 <node concept="3uibUv" id="3WTAHuoGu5A" role="HW$YZ">
-                  <ref role="3uigEE" to="wsw7:4r$i1_aEwSg" resolve="IChecker" />
+                  <ref role="3uigEE" to="k2t0:~IChecker" resolve="IChecker" />
                   <node concept="3uibUv" id="3WTAHuoGu5B" role="11_B2D">
                     <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                   </node>
@@ -695,22 +699,9 @@
               <ref role="3cqZAo" node="KiQtdg5FjD" resolve="allCheckers" />
             </node>
             <node concept="TSZUe" id="3WTAHuoHm4t" role="2OqNvi">
-              <node concept="1eOMI4" id="3WTAHuoJElL" role="25WWJ7">
-                <node concept="10QFUN" id="3WTAHuoJEBC" role="1eOMHV">
-                  <node concept="3uibUv" id="3WTAHuoJEBD" role="10QFUM">
-                    <ref role="3uigEE" to="k2t0:~IChecker" resolve="IChecker" />
-                    <node concept="3uibUv" id="3WTAHuoJEBE" role="11_B2D">
-                      <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-                    </node>
-                    <node concept="3uibUv" id="3WTAHuoJEBF" role="11_B2D">
-                      <ref role="3uigEE" to="d6hs:~NodeReportItem" resolve="NodeReportItem" />
-                    </node>
-                  </node>
-                  <node concept="2ShNRf" id="3WTAHuoJEBG" role="10QFUP">
-                    <node concept="1pGfFk" id="3WTAHuoJEBH" role="2ShVmc">
-                      <ref role="37wK5l" to="j7l4:~TypesystemChecker.&lt;init&gt;()" resolve="TypesystemChecker" />
-                    </node>
-                  </node>
+              <node concept="2ShNRf" id="3WTAHuoJEBG" role="25WWJ7">
+                <node concept="1pGfFk" id="3WTAHuoJEBH" role="2ShVmc">
+                  <ref role="37wK5l" to="j7l4:~TypesystemChecker.&lt;init&gt;()" resolve="TypesystemChecker" />
                 </node>
               </node>
             </node>
@@ -725,11 +716,12 @@
               <node concept="2OqwBi" id="3WTAHuoJpDU" role="25WWJ7">
                 <node concept="2ShNRf" id="3WTAHuoJpDV" role="2Oq$k0">
                   <node concept="1pGfFk" id="3WTAHuoJpDW" role="2ShVmc">
-                    <ref role="37wK5l" to="wsw7:6qi2OtU3uwS" resolve="ConstraintsChecker" />
+                    <ref role="37wK5l" to="k2t0:~ConstraintsChecker.&lt;init&gt;(jetbrains.mps.components.ComponentHost)" resolve="ConstraintsChecker" />
+                    <node concept="10Nm6u" id="u8WRrZ1Tvl" role="37wK5m" />
                   </node>
                 </node>
-                <node concept="liA8E" id="3WTAHuoJpDX" role="2OqNvi">
-                  <ref role="37wK5l" to="wsw7:5P_sMle3Nj6" resolve="asRootChecker" />
+                <node concept="liA8E" id="u8WRrZ1UiU" role="2OqNvi">
+                  <ref role="37wK5l" to="k2t0:~IChecker$AbstractNodeChecker.asRootChecker()" resolve="asRootChecker" />
                 </node>
               </node>
             </node>
@@ -744,17 +736,22 @@
               <node concept="2OqwBi" id="3WTAHuoHzt0" role="25WWJ7">
                 <node concept="2ShNRf" id="5P_sMle9gg9" role="2Oq$k0">
                   <node concept="1pGfFk" id="5P_sMle9nR4" role="2ShVmc">
-                    <ref role="37wK5l" to="wsw7:6qi2OtU3tXr" resolve="RefScopeChecker" />
+                    <ref role="37wK5l" to="k2t0:~RefScopeChecker.&lt;init&gt;(jetbrains.mps.components.ComponentHost)" resolve="RefScopeChecker" />
+                    <node concept="10Nm6u" id="u8WRrZ1XKx" role="37wK5m" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3WTAHuoHAph" role="2OqNvi">
-                  <ref role="37wK5l" to="wsw7:5P_sMle3Nj6" resolve="asRootChecker" />
+                  <ref role="37wK5l" to="k2t0:~IChecker$AbstractNodeChecker.asRootChecker()" resolve="asRootChecker" />
                 </node>
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="3WTAHuoHxz8" role="3cqZAp">
+          <node concept="15s5l7" id="u8WRrZ2ir5" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: AbstractRootChecker&lt;NodeReportItem&gt; is not a subtype of IChecker&lt;SNode,NodeReportItem&gt;&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/5875805516898273487,r:00000000-0000-4000-0000-011c8959032b(jetbrains.mps.baseLanguage.collections.typesystem)/9103385281676385015]&quot;;" />
+            <property role="huDt6" value="Error: AbstractRootChecker&lt;NodeReportItem&gt; is not a subtype of IChecker&lt;SNode,NodeReportItem&gt;" />
+          </node>
           <node concept="2OqwBi" id="3WTAHuoHxz9" role="3clFbG">
             <node concept="37vLTw" id="3WTAHuoHxza" role="2Oq$k0">
               <ref role="3cqZAo" node="KiQtdg5FjD" resolve="allCheckers" />
@@ -768,33 +765,6 @@
                 </node>
                 <node concept="liA8E" id="5P_sMle9jd3" role="2OqNvi">
                   <ref role="37wK5l" to="wsw7:5P_sMle3Nj6" resolve="asRootChecker" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3WTAHuoHHyr" role="3cqZAp">
-          <node concept="2OqwBi" id="3WTAHuoHJ6O" role="3clFbG">
-            <node concept="37vLTw" id="3WTAHuoHHyp" role="2Oq$k0">
-              <ref role="3cqZAo" node="KiQtdg5FjD" resolve="allCheckers" />
-            </node>
-            <node concept="TSZUe" id="3WTAHuoHPZy" role="2OqNvi">
-              <node concept="1eOMI4" id="3WTAHuoI9GM" role="25WWJ7">
-                <node concept="10QFUN" id="3WTAHuoI9GJ" role="1eOMHV">
-                  <node concept="3uibUv" id="3WTAHuozuSY" role="10QFUM">
-                    <ref role="3uigEE" to="k2t0:~IChecker" resolve="IChecker" />
-                    <node concept="3uibUv" id="3WTAHuozuSZ" role="11_B2D">
-                      <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-                    </node>
-                    <node concept="3uibUv" id="3WTAHuozuT0" role="11_B2D">
-                      <ref role="3uigEE" to="d6hs:~NodeReportItem" resolve="NodeReportItem" />
-                    </node>
-                  </node>
-                  <node concept="2ShNRf" id="3WTAHuoIqD0" role="10QFUP">
-                    <node concept="1pGfFk" id="3WTAHuoIsuf" role="2ShVmc">
-                      <ref role="37wK5l" to="j7l4:~TypesystemChecker.&lt;init&gt;()" resolve="TypesystemChecker" />
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
@@ -866,7 +836,7 @@
                   <ref role="2Gs0qQ" node="5OVrJHOfdUM" resolve="checker" />
                 </node>
                 <node concept="liA8E" id="5OVrJHOffy7" role="2OqNvi">
-                  <ref role="37wK5l" to="wsw7:4SGXHKgYYAZ" resolve="check" />
+                  <ref role="37wK5l" to="k2t0:~IChecker.check(java.lang.Object,org.jetbrains.mps.openapi.module.SRepository,org.jetbrains.mps.openapi.util.Consumer,org.jetbrains.mps.openapi.util.ProgressMonitor)" resolve="check" />
                   <node concept="37vLTw" id="3WTAHuoIg38" role="37wK5m">
                     <ref role="3cqZAo" node="2bbAj1HdpJP" resolve="rootNode" />
                   </node>
@@ -951,7 +921,8 @@
             </node>
             <node concept="2ShNRf" id="4m$eX95mSeW" role="33vP2m">
               <node concept="1pGfFk" id="4m$eX95mSeX" role="2ShVmc">
-                <ref role="37wK5l" to="wsw7:6qi2OtU3uwS" resolve="ConstraintsChecker" />
+                <ref role="37wK5l" to="k2t0:~ConstraintsChecker.&lt;init&gt;(jetbrains.mps.components.ComponentHost)" resolve="ConstraintsChecker" />
+                <node concept="10Nm6u" id="u8WRrZ0qTS" role="37wK5m" />
               </node>
             </node>
           </node>

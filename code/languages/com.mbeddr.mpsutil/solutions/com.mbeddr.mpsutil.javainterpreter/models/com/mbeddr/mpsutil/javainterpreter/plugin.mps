@@ -270,7 +270,6 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -537,14 +536,12 @@
     </node>
     <node concept="d$4Dx" id="M6L5HuvyMm" role="d$6nW">
       <node concept="BaHAS" id="M6L5HuvyMn" role="cpn$n">
-        <property role="BaBD8" value="bas" />
         <property role="BaHAW" value="jetbrains.mps.baseLanguage.classifiers.structure" />
         <property role="BaGAP" value="" />
       </node>
     </node>
     <node concept="d$4Dx" id="M6L5HuvyNl" role="d$6nW">
       <node concept="BaHAS" id="M6L5HuvyNm" role="cpn$n">
-        <property role="BaBD8" value="bas" />
         <property role="BaHAW" value="jetbrains.mps.baseLanguage.constructors.structure" />
         <property role="BaGAP" value="" />
       </node>
