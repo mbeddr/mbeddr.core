@@ -107,6 +107,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="2329696648445392942" name="jetbrains.mps.lang.typesystem.structure.CheckingRuleReference" flags="ng" index="dlsrG">
+        <reference id="2329696648445392943" name="declaration" index="dlsrH" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -130,7 +133,9 @@
         <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
-      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G">
+        <child id="2329696648448631592" name="overridenRules" index="dp_RE" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
@@ -257,7 +262,6 @@
   </registry>
   <node concept="18kY7G" id="4X7wieqoMQ0">
     <property role="TrG5h" value="parametersCount" />
-    <property role="18ip37" value="true" />
     <node concept="3clFbS" id="4X7wieqoMQ1" role="18ibNy">
       <node concept="3cpWs8" id="hKa_1Ag" role="3cqZAp">
         <node concept="3cpWsn" id="hKa_1Ah" role="3cpWs9">
@@ -445,6 +449,9 @@
     <node concept="1YaCAy" id="4X7wieqoMU8" role="1YuTPh">
       <property role="TrG5h" value="iMethodCall" />
       <ref role="1YaFvo" to="sh3l:4X7wieq8Uik" resolve="ExtensionClassMethodCall" />
+    </node>
+    <node concept="dlsrG" id="17qUVvSZofn" role="dp_RE">
+      <ref role="dlsrH" to="tpeh:hKa$$$K" resolve="check_parametersCount" />
     </node>
   </node>
   <node concept="1YbPZF" id="4X7wieqp0y4">
