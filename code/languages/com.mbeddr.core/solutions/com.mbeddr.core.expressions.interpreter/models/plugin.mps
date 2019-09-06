@@ -230,7 +230,7 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
+      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference_Old" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
@@ -238,7 +238,6 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -284,14 +283,12 @@
     <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="3VM1o5wbfkq" role="d$6nW">
       <node concept="BaHAS" id="3VM1o5wbfkr" role="cpn$n">
-        <property role="BaBD8" value="com.mbeddr.core.base.st" />
         <property role="BaHAW" value="com.mbeddr.core.base.structure" />
         <property role="BaGAP" value="" />
       </node>
     </node>
     <node concept="d$4Dx" id="3VM1o5wbfks" role="d$6nW">
       <node concept="BaHAS" id="3VM1o5wbfkt" role="cpn$n">
-        <property role="BaBD8" value="com.mbedd" />
         <property role="BaHAW" value="com.mbeddr.core.expressions.structure" />
         <property role="BaGAP" value="" />
       </node>

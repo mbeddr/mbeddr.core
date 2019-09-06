@@ -137,7 +137,6 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -176,7 +175,6 @@
     <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="3VM1o5wb$BT" role="d$6nW">
       <node concept="BaHAS" id="3VM1o5wb$BU" role="cpn$n">
-        <property role="BaBD8" value="com.mbeddr.core.base.ut" />
         <property role="BaHAW" value="com.mbeddr.core.util.structure" />
         <property role="BaGAP" value="" />
       </node>

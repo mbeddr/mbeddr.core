@@ -101,7 +101,6 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -129,7 +128,6 @@
     <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="3VM1o5wbzoY" role="d$6nW">
       <node concept="BaHAS" id="3VM1o5wbzoZ" role="cpn$n">
-        <property role="BaBD8" value="com.mbeddr.core.mod" />
         <property role="BaHAW" value="com.mbeddr.core.modules.structure" />
         <property role="BaGAP" value="" />
       </node>
@@ -226,7 +224,6 @@
     <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="3VM1o5wblfu" role="d$6nW">
       <node concept="BaHAS" id="3VM1o5wblfv" role="cpn$n">
-        <property role="BaBD8" value="com.mbeddr.core.mod" />
         <property role="BaHAW" value="com.mbeddr.core.modules.gen.structure" />
         <property role="BaGAP" value="" />
       </node>
