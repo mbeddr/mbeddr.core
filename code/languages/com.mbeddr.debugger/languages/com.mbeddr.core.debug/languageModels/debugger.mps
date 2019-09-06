@@ -56822,7 +56822,7 @@
               <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
             </node>
             <node concept="liA8E" id="$zo7noTqSt" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.isInsideCommand()" resolve="isInsideCommand" />
+              <ref role="37wK5l" to="w1kc:~ModelAccess.isInsideCommand()" resolve="isInsideCommand" />
             </node>
           </node>
           <node concept="9aQIb" id="$zo7noTqSx" role="9aQIa">

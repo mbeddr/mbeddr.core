@@ -319,7 +319,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
+      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference_Old" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
@@ -3358,17 +3358,16 @@
                           <node concept="3IZrLx" id="7ekR8t0puUP" role="3IZSJc">
                             <node concept="3clFbS" id="7ekR8t0puUQ" role="2VODD2">
                               <node concept="3clFbF" id="7ekR8t0uUrk" role="3cqZAp">
-                                <node concept="2OqwBi" id="7ekR8t0uW$o" role="3clFbG">
+                                <node concept="2OqwBi" id="17qUVvT84$Z" role="3clFbG">
                                   <node concept="2OqwBi" id="7ekR8t0uUV2" role="2Oq$k0">
                                     <node concept="30H73N" id="7ekR8t0uUE9" role="2Oq$k0" />
                                     <node concept="3TrcHB" id="7ekR8t0uV_K" role="2OqNvi">
                                       <ref role="3TsBF5" to="talm:7ekR8t0fydD" resolve="variableKind" />
                                     </node>
                                   </node>
-                                  <node concept="liA8E" id="7ekR8t0uXDm" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                                    <node concept="Xl_RD" id="7ekR8t0uY4p" role="37wK5m">
-                                      <property role="Xl_RC" value="global" />
+                                  <node concept="3t7uKx" id="17qUVvT84YR" role="2OqNvi">
+                                    <node concept="uoxfO" id="17qUVvT84YT" role="3t7uKA">
+                                      <ref role="uo_Cq" to="talm:79czkGCIzXS" />
                                     </node>
                                   </node>
                                 </node>
@@ -3389,10 +3388,9 @@
                                       <ref role="3TsBF5" to="talm:7ekR8t0fydD" resolve="variableKind" />
                                     </node>
                                   </node>
-                                  <node concept="liA8E" id="7ekR8t0puVa" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                                    <node concept="Xl_RD" id="7ekR8t0puVb" role="37wK5m">
-                                      <property role="Xl_RC" value="local" />
+                                  <node concept="3t7uKx" id="17qUVvT865M" role="2OqNvi">
+                                    <node concept="uoxfO" id="17qUVvT865P" role="3t7uKA">
+                                      <ref role="uo_Cq" to="talm:79czkGCIx5I" />
                                     </node>
                                   </node>
                                 </node>
@@ -3424,10 +3422,9 @@
                                       <ref role="3TsBF5" to="talm:7ekR8t0fydD" resolve="variableKind" />
                                     </node>
                                   </node>
-                                  <node concept="liA8E" id="7ekR8t0puVo" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                                    <node concept="Xl_RD" id="7ekR8t0puVp" role="37wK5m">
-                                      <property role="Xl_RC" value="argument" />
+                                  <node concept="3t7uKx" id="17qUVvT86n2" role="2OqNvi">
+                                    <node concept="uoxfO" id="17qUVvT86n5" role="3t7uKA">
+                                      <ref role="uo_Cq" to="talm:79czkGCIzXU" />
                                     </node>
                                   </node>
                                 </node>
