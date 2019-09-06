@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -96,13 +96,13 @@
     <node concept="14StLt" id="1gJuyfgBvu4" role="V601i">
       <property role="TrG5h" value="style2" />
       <node concept="VechU" id="1gJuyfgBvu5" role="3F10Kt">
-        <property role="Vb096" value="blue" />
+        <property role="Vb096" value="fLwANPu/blue" />
       </node>
       <node concept="30gYXW" id="5klmD47ZeSN" role="3F10Kt">
-        <property role="Vb096" value="cyan" />
+        <property role="Vb096" value="fLwANPt/cyan" />
       </node>
       <node concept="Vb9p2" id="5klmD47ZeTf" role="3F10Kt">
-        <property role="Vbekb" value="ITALIC" />
+        <property role="Vbekb" value="g1_kEg4/ITALIC" />
       </node>
       <node concept="3nxI2P" id="2qSTDMxYt2O" role="3F10Kt">
         <property role="VOm3f" value="true" />
@@ -116,7 +116,7 @@
     <node concept="14StLt" id="4RSukN8gTM9" role="V601i">
       <property role="TrG5h" value="style1" />
       <node concept="Vb9p2" id="4RSukN8gTMc" role="3F10Kt">
-        <property role="Vbekb" value="ITALIC" />
+        <property role="Vbekb" value="g1_kEg4/ITALIC" />
       </node>
       <node concept="1Ex9Rl" id="4RSukN8gTMf" role="lGtFl">
         <property role="34HCRG" value="Abcde 1" />

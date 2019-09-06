@@ -8,7 +8,7 @@
   <sourcePath />
   <languageVersions>
     <language slang="l:032e4d4e-a71c-4d57-826e-d354d35582f1:com.mbeddr.mpsutil.jfreechart.sandboxlang" version="-1" />
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
     <module reference="6d253c79-e787-4b2c-8398-677fe9f47189(com.mbeddr.mpsutil.jfreechart.sandbox)" version="0" />

@@ -2,7 +2,7 @@
 <model ref="r:39b958bb-7da9-4bc2-9784-d9d48c80e227(test.com.mbeddr.mpsutil.placeholderTextList.testlang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="de1bfc15-870e-4d58-b962-b093dccb50c8" name="com.mbeddr.mpsutil.placeholderTextList" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -138,10 +138,10 @@
       </concept>
     </language>
     <language id="de1bfc15-870e-4d58-b962-b093dccb50c8" name="com.mbeddr.mpsutil.placeholderTextList">
-      <concept id="1739942158294184652" name="com.mbeddr.mpsutil.placeholderTextList.structure.CellModel_PlaceholderTextList" flags="ng" index="2UZ7rw">
+      <concept id="1739942158294184652" name="com.mbeddr.mpsutil.placeholderTextList.structure.CellModel_PlaceholderTextList" flags="sg" stub="1739942158294203068" index="2UZ7rw">
         <child id="1739942158294184665" name="placeholderTextQuery" index="2UZ7rP" />
       </concept>
-      <concept id="1739942158294184667" name="com.mbeddr.mpsutil.placeholderTextList.structure.QueryFunction_PlaceholderText" flags="ng" index="2UZ7rR" />
+      <concept id="1739942158294184667" name="com.mbeddr.mpsutil.placeholderTextList.structure.QueryFunction_PlaceholderText" flags="ig" index="2UZ7rR" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
@@ -214,13 +214,13 @@
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
               <ref role="1k5W1q" to="tpen:6H7j4iMM5Cm" resolve="MPSMethodCall" />
               <node concept="Vb9p2" id="hEUNQY6" role="3F10Kt">
-                <property role="Vbekb" value="ITALIC" />
+                <property role="Vbekb" value="g1_kEg4/ITALIC" />
               </node>
             </node>
           </node>
           <node concept="OXEIz" id="gX0y5AU" role="P5bDN">
             <node concept="ZEniJ" id="gX0y7Ez" role="OY2wv">
-              <property role="1ezIyd" value="default_referent" />
+              <property role="1ezIyd" value="gWZPhPb/referent_" />
               <node concept="3Tqbb2" id="gX0y8GN" role="1eyP2E" />
               <node concept="3GJtP1" id="gX0y7E_" role="ZF_Y3">
                 <node concept="3clFbS" id="gX0y7EA" role="2VODD2">
@@ -267,9 +267,7 @@
           <node concept="3F0ifn" id="h5nk5Qm" role="3EZMnx">
             <property role="3F0ifm" value="(" />
             <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
-            <node concept="Vb9p2" id="hEUNQWt" role="3F10Kt">
-              <property role="Vbekb" value="PLAIN" />
-            </node>
+            <node concept="Vb9p2" id="hEUNQWt" role="3F10Kt" />
           </node>
           <node concept="2UZ7rw" id="6hvYmWkegQe" role="3EZMnx">
             <property role="2czwfO" value="," />
@@ -320,14 +318,12 @@
           </node>
           <node concept="3F0ifn" id="h5nk5Qp" role="3EZMnx">
             <property role="3F0ifm" value=")" />
-            <property role="1cu_pB" value="1" />
+            <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
             <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
             <node concept="VPM3Z" id="hEU$Q2r" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
-            <node concept="Vb9p2" id="hEUNQWy" role="3F10Kt">
-              <property role="Vbekb" value="PLAIN" />
-            </node>
+            <node concept="Vb9p2" id="hEUNQWy" role="3F10Kt" />
             <node concept="VPxyj" id="hEZKQxW" role="3F10Kt">
               <property role="VOm3f" value="false" />
             </node>

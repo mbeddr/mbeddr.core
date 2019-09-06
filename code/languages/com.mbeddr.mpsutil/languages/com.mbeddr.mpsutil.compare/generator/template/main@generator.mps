@@ -2,7 +2,7 @@
 <model ref="r:4e2e8730-5cdd-4a73-9b92-3f36ecd3ae72(com.mbeddr.mpsutil.compare.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -121,9 +121,7 @@
       </concept>
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -316,15 +314,15 @@
                                           <ref role="2pJxaS" to="tpee:gEShNN5" resolve="GenericNewExpression" />
                                           <node concept="2pIpSj" id="2Y6yZU2frZx" role="2pJxcM">
                                             <ref role="2pIpSl" to="tpee:gEShVi6" resolve="creator" />
-                                            <node concept="2pJPED" id="2Y6yZU2ftl$" role="2pJxcZ">
+                                            <node concept="2pJPED" id="2Y6yZU2ftl$" role="28nt2d">
                                               <ref role="2pJxaS" to="tp2q:gSTc6KI" resolve="ListCreatorWithInit" />
                                               <node concept="2pIpSj" id="2Y6yZU2ftrP" role="2pJxcM">
                                                 <ref role="2pIpSl" to="tp2q:i0HW$Uv" resolve="elementType" />
-                                                <node concept="2pJPED" id="2Y6yZU2fts4" role="2pJxcZ">
+                                                <node concept="2pJPED" id="2Y6yZU2fts4" role="28nt2d">
                                                   <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
                                                   <node concept="2pIpSj" id="2Y6yZU2ftsf" role="2pJxcM">
                                                     <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
-                                                    <node concept="36bGnv" id="2Y6yZU2ftta" role="2pJxcZ">
+                                                    <node concept="36bGnv" id="2Y6yZU2ftta" role="28nt2d">
                                                       <ref role="36bGnp" to="mqum:DYlgnBstFb" resolve="IgnoredProperty" />
                                                     </node>
                                                   </node>
@@ -375,15 +373,15 @@
                                           <ref role="2pJxaS" to="tpee:gEShNN5" resolve="GenericNewExpression" />
                                           <node concept="2pIpSj" id="3qPjHtYuXWg" role="2pJxcM">
                                             <ref role="2pIpSl" to="tpee:gEShVi6" resolve="creator" />
-                                            <node concept="2pJPED" id="3qPjHtYuXWh" role="2pJxcZ">
+                                            <node concept="2pJPED" id="3qPjHtYuXWh" role="28nt2d">
                                               <ref role="2pJxaS" to="tp2q:gSTc6KI" resolve="ListCreatorWithInit" />
                                               <node concept="2pIpSj" id="3qPjHtYuXWi" role="2pJxcM">
                                                 <ref role="2pIpSl" to="tp2q:i0HW$Uv" resolve="elementType" />
-                                                <node concept="2pJPED" id="3qPjHtYuXWj" role="2pJxcZ">
+                                                <node concept="2pJPED" id="3qPjHtYuXWj" role="28nt2d">
                                                   <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
                                                   <node concept="2pIpSj" id="3qPjHtYuXWk" role="2pJxcM">
                                                     <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
-                                                    <node concept="36bGnv" id="3qPjHtYuZA8" role="2pJxcZ">
+                                                    <node concept="36bGnv" id="3qPjHtYuZA8" role="28nt2d">
                                                       <ref role="36bGnp" to="mqum:2mzdNw3ouFX" resolve="IgnoredReference" />
                                                     </node>
                                                   </node>
@@ -727,15 +725,15 @@
                                       <ref role="2pJxaS" to="tpee:gEShNN5" resolve="GenericNewExpression" />
                                       <node concept="2pIpSj" id="3qPjHtY$aM3" role="2pJxcM">
                                         <ref role="2pIpSl" to="tpee:gEShVi6" resolve="creator" />
-                                        <node concept="2pJPED" id="3qPjHtY$aM4" role="2pJxcZ">
+                                        <node concept="2pJPED" id="3qPjHtY$aM4" role="28nt2d">
                                           <ref role="2pJxaS" to="tp2q:gSTc6KI" resolve="ListCreatorWithInit" />
                                           <node concept="2pIpSj" id="3qPjHtY$aM5" role="2pJxcM">
                                             <ref role="2pIpSl" to="tp2q:i0HW$Uv" resolve="elementType" />
-                                            <node concept="2pJPED" id="3qPjHtY$aM6" role="2pJxcZ">
+                                            <node concept="2pJPED" id="3qPjHtY$aM6" role="28nt2d">
                                               <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
                                               <node concept="2pIpSj" id="3qPjHtY$aM7" role="2pJxcM">
                                                 <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
-                                                <node concept="36bGnv" id="3qPjHtY$aM8" role="2pJxcZ">
+                                                <node concept="36bGnv" id="3qPjHtY$aM8" role="28nt2d">
                                                   <ref role="36bGnp" to="mqum:2mzdNw3ouFX" resolve="IgnoredReference" />
                                                 </node>
                                               </node>

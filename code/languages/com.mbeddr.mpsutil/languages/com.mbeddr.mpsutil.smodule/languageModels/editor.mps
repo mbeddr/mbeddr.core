@@ -2,7 +2,7 @@
 <model ref="r:e19a6c16-cc41-40fc-987e-f8049007fd30(com.mbeddr.mpsutil.smodule.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -176,7 +176,7 @@
     <property role="TrG5h" value="addSolutionActions" />
     <ref role="1h_SK9" to="gt8j:6X6$P3A2cpY" resolve="AddSolutionOperation" />
     <node concept="1hA7zw" id="6X6$P3A2nBn" role="1h_SK8">
-      <property role="1hAc7j" value="insert_action_id" />
+      <property role="1hAc7j" value="13S4mXuSN7V/insert_action_id" />
       <node concept="1hAIg9" id="6X6$P3A2nBo" role="1hA7z_">
         <node concept="3clFbS" id="6X6$P3A2nBp" role="2VODD2">
           <node concept="3clFbF" id="6X6$P3A2nBu" role="3cqZAp">
@@ -385,7 +385,7 @@
     <property role="TrG5h" value="addModelActions" />
     <ref role="1h_SK9" to="gt8j:3d01KqFhiz2" resolve="AddModelOperation" />
     <node concept="1hA7zw" id="3d01KqFjaWe" role="1h_SK8">
-      <property role="1hAc7j" value="insert_action_id" />
+      <property role="1hAc7j" value="13S4mXuSN7V/insert_action_id" />
       <node concept="1hAIg9" id="3d01KqFjaWf" role="1hA7z_">
         <node concept="3clFbS" id="3d01KqFjaWg" role="2VODD2">
           <node concept="3clFbF" id="3d01KqFjaWl" role="3cqZAp">

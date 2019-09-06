@@ -2,6 +2,7 @@
 <model ref="r:279d7db7-e1a6-4021-b62b-41a039aefc7f(com.mbeddr.mpsutil.editingGuide.typesystem)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -57,11 +58,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -115,6 +113,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
   </registry>
   <node concept="18kY7G" id="7r9XsdeqjUf">
     <property role="TrG5h" value="check_ImageWord" />
@@ -123,16 +129,101 @@
       <node concept="3clFbJ" id="JJxXu1sHvy" role="3cqZAp">
         <node concept="3clFbS" id="JJxXu1sHv$" role="3clFbx">
           <node concept="3SKdUt" id="7r9Xsdeqto9" role="3cqZAp">
-            <node concept="3SKdUq" id="7r9Xsdeqtob" role="3SKWNk">
-              <property role="3SKdUp" value="because the editing guide is shown in a temporary model, CellModel_Image cannot find the original module" />
+            <node concept="1PaTwC" id="17qUVvSZkIy" role="3ndbpf">
+              <node concept="3oM_SD" id="17qUVvSZkIz" role="1PaTwD">
+                <property role="3oM_SC" value="because" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkI$" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkI_" role="1PaTwD">
+                <property role="3oM_SC" value="editing" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIA" role="1PaTwD">
+                <property role="3oM_SC" value="guide" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIB" role="1PaTwD">
+                <property role="3oM_SC" value="is" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIC" role="1PaTwD">
+                <property role="3oM_SC" value="shown" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkID" role="1PaTwD">
+                <property role="3oM_SC" value="in" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIE" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIF" role="1PaTwD">
+                <property role="3oM_SC" value="temporary" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIG" role="1PaTwD">
+                <property role="3oM_SC" value="model," />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIH" role="1PaTwD">
+                <property role="3oM_SC" value="CellModel_Image" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkII" role="1PaTwD">
+                <property role="3oM_SC" value="cannot" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIJ" role="1PaTwD">
+                <property role="3oM_SC" value="find" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIK" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIL" role="1PaTwD">
+                <property role="3oM_SC" value="original" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIM" role="1PaTwD">
+                <property role="3oM_SC" value="module" />
+              </node>
             </node>
           </node>
           <node concept="3SKdUt" id="7r9Xsdequcj" role="3cqZAp">
-            <node concept="3SKdUq" id="7r9Xsdequcl" role="3SKWNk">
-              <property role="3SKdUp" value="for the image =&gt;" />
-            </node>
-            <node concept="3SKdUq" id="7r9Xsdequc2" role="3SKWNk">
-              <property role="3SKdUp" value="developer must specify the module explicitly (automated with quick fix)" />
+            <node concept="1PaTwC" id="17qUVvSZkIN" role="3ndbpf">
+              <node concept="3oM_SD" id="17qUVvSZkIO" role="1PaTwD">
+                <property role="3oM_SC" value="for" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIP" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIQ" role="1PaTwD">
+                <property role="3oM_SC" value="image" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIR" role="1PaTwD">
+                <property role="3oM_SC" value="=&gt;" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIS" role="1PaTwD">
+                <property role="3oM_SC" value="developer" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIT" role="1PaTwD">
+                <property role="3oM_SC" value="must" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIU" role="1PaTwD">
+                <property role="3oM_SC" value="specify" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIV" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIW" role="1PaTwD">
+                <property role="3oM_SC" value="module" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIX" role="1PaTwD">
+                <property role="3oM_SC" value="explicitly" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIY" role="1PaTwD">
+                <property role="3oM_SC" value="(automated" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIZ" role="1PaTwD">
+                <property role="3oM_SC" value="with" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkJ0" role="1PaTwD">
+                <property role="3oM_SC" value="quick" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkJ1" role="1PaTwD">
+                <property role="3oM_SC" value="fix)" />
+              </node>
             </node>
           </node>
           <node concept="2MkqsV" id="7r9XsdeqnpY" role="3cqZAp">

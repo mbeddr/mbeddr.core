@@ -210,9 +210,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -269,7 +267,7 @@
       <concept id="8018258162245748350" name="com.mbeddr.mpsutil.smodule.structure.AddSolutionOperation" flags="ng" index="29j_kI">
         <child id="8018258162245748891" name="name" index="29j_Jb" />
       </concept>
-      <concept id="8018258162245800709" name="com.mbeddr.mpsutil.smodule.structure.SolutionType" flags="ng" index="29jK1l" />
+      <concept id="8018258162245800709" name="com.mbeddr.mpsutil.smodule.structure.SolutionType" flags="ig" index="29jK1l" />
       <concept id="386247815699362375" name="com.mbeddr.mpsutil.smodule.structure.SingleFilePersistence" flags="ng" index="2fmWwg" />
       <concept id="3692959419668441282" name="com.mbeddr.mpsutil.smodule.structure.AddModelOperation" flags="ng" index="2o1iZ4">
         <child id="9193920352840482545" name="storageType" index="bRicC" />
@@ -459,7 +457,7 @@
         <node concept="3clFbJ" id="5ZP7uETyccw" role="3cqZAp">
           <node concept="3clFbS" id="5ZP7uETyccy" role="3clFbx">
             <node concept="2xdQw9" id="5ZP7uETylms" role="3cqZAp">
-              <property role="2xdLsb" value="warn" />
+              <property role="2xdLsb" value="gZ5fksE/warn" />
               <node concept="2OqwBi" id="5ZP7uETylAs" role="9lYEk">
                 <node concept="2WthIp" id="5ZP7uETylnS" role="2Oq$k0" />
                 <node concept="1DTwFV" id="5ZP7uETym4Q" role="2OqNvi">
@@ -760,7 +758,7 @@
                               <ref role="2pJxaS" to="gxwz:6KgrWUnhely" resolve="MappingConfigurationReference" />
                               <node concept="2pIpSj" id="5ZP7uETyu3F" role="2pJxcM">
                                 <ref role="2pIpSl" to="gxwz:6KgrWUnhelz" resolve="mc" />
-                                <node concept="36biLy" id="5ZP7uETyu3G" role="2pJxcZ">
+                                <node concept="36biLy" id="5ZP7uETyu3G" role="28nt2d">
                                   <node concept="37vLTw" id="5ZP7uETyu3H" role="36biLW">
                                     <ref role="3cqZAo" node="5ZP7uETyu3p" resolve="mappingNode" />
                                   </node>
@@ -1062,13 +1060,13 @@
               <node concept="9aQIb" id="4yCyDr3aovX" role="9aQIa">
                 <node concept="3clFbS" id="4yCyDr3aovY" role="9aQI4">
                   <node concept="RRSsy" id="4yCyDr3aoC_" role="3cqZAp">
-                    <property role="RRSoG" value="error" />
+                    <property role="RRSoG" value="gZ5fh_4/error" />
                     <node concept="Xl_RD" id="4yCyDr3aoCB" role="RRSoy">
                       <property role="Xl_RC" value="model data is not jetbrains.mps.smodel.SModel" />
                     </node>
                   </node>
                   <node concept="2xdQw9" id="4yCyDr3apnD" role="3cqZAp">
-                    <property role="2xdLsb" value="error" />
+                    <property role="2xdLsb" value="gZ5fh_4/error" />
                     <node concept="Xl_RD" id="4yCyDr3apok" role="9lYJi">
                       <property role="Xl_RC" value="model data is not jetbrains.mps.smodel.SModel" />
                     </node>
@@ -1094,13 +1092,13 @@
           <node concept="9aQIb" id="4yCyDr3apvh" role="9aQIa">
             <node concept="3clFbS" id="4yCyDr3apvi" role="9aQI4">
               <node concept="RRSsy" id="4yCyDr3apRT" role="3cqZAp">
-                <property role="RRSoG" value="error" />
+                <property role="RRSoG" value="gZ5fh_4/error" />
                 <node concept="Xl_RD" id="4yCyDr3apRU" role="RRSoy">
                   <property role="Xl_RC" value="model is not jetbrains.mps.extapi.model.SModelBase" />
                 </node>
               </node>
               <node concept="2xdQw9" id="4yCyDr3apRV" role="3cqZAp">
-                <property role="2xdLsb" value="error" />
+                <property role="2xdLsb" value="gZ5fh_4/error" />
                 <node concept="2OqwBi" id="4yCyDr3apRX" role="9lYEk">
                   <node concept="2WthIp" id="4yCyDr3apRY" role="2Oq$k0" />
                   <node concept="1DTwFV" id="4yCyDr3apRZ" role="2OqNvi">
@@ -1252,7 +1250,7 @@
         <node concept="3clFbJ" id="4yCyDr396qb" role="3cqZAp">
           <node concept="3clFbS" id="4yCyDr396qc" role="3clFbx">
             <node concept="2xdQw9" id="4yCyDr396qd" role="3cqZAp">
-              <property role="2xdLsb" value="warn" />
+              <property role="2xdLsb" value="gZ5fksE/warn" />
               <node concept="2OqwBi" id="4yCyDr396qe" role="9lYEk">
                 <node concept="2WthIp" id="4yCyDr396qf" role="2Oq$k0" />
                 <node concept="1DTwFV" id="4yCyDr396qg" role="2OqNvi">

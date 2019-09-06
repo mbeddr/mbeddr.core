@@ -52,9 +52,7 @@
       </concept>
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -539,7 +537,7 @@
               <ref role="2pJxaS" to="hbjw:6JByj2Cgpgo" resolve="WizardType" />
               <node concept="2pIpSj" id="6JByj2Ch1FL" role="2pJxcM">
                 <ref role="2pIpSl" to="hbjw:6JByj2Cgpgz" resolve="wizard" />
-                <node concept="36biLy" id="6JByj2Ch1JT" role="2pJxcZ">
+                <node concept="36biLy" id="6JByj2Ch1JT" role="28nt2d">
                   <node concept="2OqwBi" id="6JByj2Ch1Mo" role="36biLW">
                     <node concept="1YBJjd" id="6JByj2Ch1K6" role="2Oq$k0">
                       <ref role="1YBMHb" node="6JByj2CgMtx" resolve="cwe" />
@@ -631,13 +629,13 @@
               <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
               <node concept="2pIpSj" id="4biM00JbhJB" role="2pJxcM">
                 <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
-                <node concept="36bGnv" id="4biM00JbhKk" role="2pJxcZ">
+                <node concept="36bGnv" id="4biM00JbhKk" role="28nt2d">
                   <ref role="36bGnp" to="zn9m:~AsyncResult" resolve="AsyncResult" />
                 </node>
               </node>
               <node concept="2pIpSj" id="4biM00JbhL5" role="2pJxcM">
                 <ref role="2pIpSl" to="tpee:g91_B6F" resolve="parameter" />
-                <node concept="36biLy" id="4biM00JbhPs" role="2pJxcZ">
+                <node concept="36biLy" id="4biM00JbhPs" role="28nt2d">
                   <node concept="2ShNRf" id="4biM00Jbi8O" role="36biLW">
                     <node concept="Tc6Ow" id="4biM00Jbl0P" role="2ShVmc">
                       <node concept="2OqwBi" id="4biM00JeySC" role="HW$Y0">

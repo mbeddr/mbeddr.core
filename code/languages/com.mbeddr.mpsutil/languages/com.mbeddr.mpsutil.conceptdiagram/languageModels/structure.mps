@@ -44,17 +44,17 @@
     <property role="EcuMT" value="2634829965774842138" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2igMYjp_Ggs" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="contents" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="2634829965775258652" />
       <ref role="20lvS9" node="2igMYjpPzq7" resolve="AbstractConceptDeclarationRef" />
     </node>
     <node concept="1TJgyj" id="7APyAbMnxWJ" role="1TKVEi">
       <property role="IQ2ns" value="8770068006951591727" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="languagesInScope" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     </node>
     <node concept="PrWs8" id="2igMYjp$jPf" role="PzmwI">
@@ -66,9 +66,8 @@
     <property role="EcuMT" value="2634829965779416711" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2igMYjpPzq8" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="concept" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="2634829965779416712" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>

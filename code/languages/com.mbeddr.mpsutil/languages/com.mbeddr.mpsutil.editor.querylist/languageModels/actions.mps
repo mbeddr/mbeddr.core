@@ -53,9 +53,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -172,24 +170,24 @@
                   <ref role="2pJxaS" to="bbp5:5oklODadpyz" resolve="Function_GetElements" />
                   <node concept="2pIpSj" id="74InMvL0ZNQ" role="2pJxcM">
                     <ref role="2pIpSl" to="tpee:gyVODHa" resolve="body" />
-                    <node concept="2pJPED" id="74InMvL0ZNG" role="2pJxcZ">
+                    <node concept="2pJPED" id="74InMvL0ZNG" role="28nt2d">
                       <ref role="2pJxaS" to="tpee:fzclF80" resolve="StatementList" />
                       <node concept="2pIpSj" id="74InMvL0ZNO" role="2pJxcM">
                         <ref role="2pIpSl" to="tpee:fzcqZ_x" resolve="statement" />
-                        <node concept="36be1Y" id="74InMvL0ZNP" role="2pJxcZ">
+                        <node concept="36be1Y" id="74InMvL0ZNP" role="28nt2d">
                           <node concept="2pJPED" id="74InMvL0ZNH" role="36be1Z">
                             <ref role="2pJxaS" to="tpee:fzclF8j" resolve="ExpressionStatement" />
                             <node concept="2pIpSj" id="74InMvL0ZNN" role="2pJxcM">
                               <ref role="2pIpSl" to="tpee:fzclF8k" resolve="expression" />
-                              <node concept="2pJPED" id="74InMvL0ZNI" role="2pJxcZ">
+                              <node concept="2pJPED" id="74InMvL0ZNI" role="28nt2d">
                                 <ref role="2pJxaS" to="tpee:gEShNN5" resolve="GenericNewExpression" />
                                 <node concept="2pIpSj" id="74InMvL0ZNM" role="2pJxcM">
                                   <ref role="2pIpSl" to="tpee:gEShVi6" resolve="creator" />
-                                  <node concept="2pJPED" id="74InMvL0ZNJ" role="2pJxcZ">
+                                  <node concept="2pJPED" id="74InMvL0ZNJ" role="28nt2d">
                                     <ref role="2pJxaS" to="tp2q:hOkMnGm" resolve="SequenceCreator" />
                                     <node concept="2pIpSj" id="74InMvL0ZNL" role="2pJxcM">
                                       <ref role="2pIpSl" to="tp2q:hOkMuDu" resolve="elementType" />
-                                      <node concept="2pJPED" id="74InMvL0ZNK" role="2pJxcZ">
+                                      <node concept="2pJPED" id="74InMvL0ZNK" role="28nt2d">
                                         <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
                                       </node>
                                     </node>

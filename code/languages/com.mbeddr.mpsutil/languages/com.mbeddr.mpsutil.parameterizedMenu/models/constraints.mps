@@ -2,7 +2,8 @@
 <model ref="r:31a189cd-2d93-4bf2-8b99-11ae1a7452f0(com.mbeddr.mpsutil.parameterizedMenu.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -50,11 +51,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -94,6 +92,14 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="5_UfM9xSCt1">
     <ref role="1M2myG" to="2ouu:5_UfM9xSw3n" resolve="TransformationMenuPart_ParameterizableSubMenu" />
@@ -120,15 +126,40 @@
     <node concept="9SLcT" id="5_UfM9zBSS1" role="9SGkU">
       <node concept="3clFbS" id="5_UfM9zBSS2" role="2VODD2">
         <node concept="3SKdUt" id="5_UfM9zCk8i" role="3cqZAp">
-          <node concept="3SKdUq" id="5_UfM9zCk8k" role="3SKWNk">
-            <property role="3SKdUp" value="check the menu items" />
+          <node concept="1PaTwC" id="17qUVvSZkUi" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkUj" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkUk" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkUl" role="1PaTwD">
+              <property role="3oM_SC" value="menu" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkUm" role="1PaTwD">
+              <property role="3oM_SC" value="items" />
+            </node>
           </node>
         </node>
         <node concept="3clFbJ" id="5_UfM9$L1Ut" role="3cqZAp">
           <node concept="3clFbS" id="5_UfM9$L1Uu" role="3clFbx">
             <node concept="3SKdUt" id="5_UfM9$L5yG" role="3cqZAp">
-              <node concept="3SKdUq" id="5_UfM9$L5yI" role="3SKWNk">
-                <property role="3SKdUp" value="only use our parameterizable parameterized" />
+              <node concept="1PaTwC" id="17qUVvSZkUn" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkUo" role="1PaTwD">
+                  <property role="3oM_SC" value="only" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkUp" role="1PaTwD">
+                  <property role="3oM_SC" value="use" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkUq" role="1PaTwD">
+                  <property role="3oM_SC" value="our" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkUr" role="1PaTwD">
+                  <property role="3oM_SC" value="parameterizable" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkUs" role="1PaTwD">
+                  <property role="3oM_SC" value="parameterized" />
+                </node>
               </node>
             </node>
             <node concept="3clFbJ" id="5_UfM9$L2ov" role="3cqZAp">
@@ -163,8 +194,25 @@
         </node>
         <node concept="3clFbH" id="5_UfM9$L1LI" role="3cqZAp" />
         <node concept="3SKdUt" id="5_UfM9zCkJQ" role="3cqZAp">
-          <node concept="3SKdUq" id="5_UfM9zCkJS" role="3SKWNk">
-            <property role="3SKdUp" value="all others (e.g. Query) are ok" />
+          <node concept="1PaTwC" id="17qUVvSZkUt" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkUu" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkUv" role="1PaTwD">
+              <property role="3oM_SC" value="others" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkUw" role="1PaTwD">
+              <property role="3oM_SC" value="(e.g." />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkUx" role="1PaTwD">
+              <property role="3oM_SC" value="Query)" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkUy" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkUz" role="1PaTwD">
+              <property role="3oM_SC" value="ok" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs6" id="5_UfM9zCipL" role="3cqZAp">
@@ -182,8 +230,22 @@
         <node concept="3clFbJ" id="7P1t3vY1t_F" role="3cqZAp">
           <node concept="3clFbS" id="7P1t3vY1t_H" role="3clFbx">
             <node concept="3SKdUt" id="7P1t3vY1mZW" role="3cqZAp">
-              <node concept="3SKdUq" id="7P1t3vY1mZY" role="3SKWNk">
-                <property role="3SKdUp" value="we'll need a parameterizableParameterized instead" />
+              <node concept="1PaTwC" id="17qUVvSZkU$" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkU_" role="1PaTwD">
+                  <property role="3oM_SC" value="we'll" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkUA" role="1PaTwD">
+                  <property role="3oM_SC" value="need" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkUB" role="1PaTwD">
+                  <property role="3oM_SC" value="a" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkUC" role="1PaTwD">
+                  <property role="3oM_SC" value="parameterizableParameterized" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkUD" role="1PaTwD">
+                  <property role="3oM_SC" value="instead" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs6" id="7P1t3vY1lWQ" role="3cqZAp">

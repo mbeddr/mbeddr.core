@@ -2,7 +2,7 @@
 <model ref="r:00d6ee44-268c-4818-b3e7-4eecf669c7ee(com.mbeddr.mpsutil.treenotation.styles.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -118,7 +118,7 @@
     </node>
     <node concept="3t5Usi" id="7uOgiTdLM0" role="V601i">
       <property role="TrG5h" value="tree-incoming-line-color" />
-      <property role="iBDjm" value="false" />
+      <property role="iBDjm" value="7zL4upErSle/simple" />
       <node concept="3uibUv" id="7GMtHW6qHaf" role="3t5Oan">
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
@@ -129,14 +129,14 @@
     </node>
     <node concept="3t5Usi" id="7GMtHW6qHaD" role="V601i">
       <property role="TrG5h" value="tree-incoming-line-width" />
-      <property role="iBDjm" value="false" />
+      <property role="iBDjm" value="7zL4upErSle/simple" />
       <node concept="10OMs4" id="7GMtHW6qHbh" role="3t5Oan" />
       <node concept="2$xPTn" id="7GMtHW6qHbv" role="3t49C2">
         <property role="2$xPTl" value="1.0f" />
       </node>
     </node>
     <node concept="3t5Usi" id="7CiTYi$AegP" role="V601i">
-      <property role="iBDjm" value="false" />
+      <property role="iBDjm" value="7zL4upErSle/simple" />
       <property role="TrG5h" value="_tree-incoming-shape" />
       <node concept="3uibUv" id="7CiTYi$Aejc" role="3t5Oan">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
@@ -144,7 +144,7 @@
     </node>
     <node concept="3t5Usi" id="2rPTijxl$1X" role="V601i">
       <property role="TrG5h" value="tree-transparent-collection" />
-      <property role="iBDjm" value="false" />
+      <property role="iBDjm" value="7zL4upErSle/simple" />
       <node concept="10P_77" id="2rPTijxl$3d" role="3t5Oan" />
       <node concept="3clFbT" id="2rPTijxl$3j" role="3t49C2">
         <property role="3clFbU" value="false" />
@@ -152,7 +152,7 @@
     </node>
     <node concept="3t5Usi" id="6Z0IExzTWYb" role="V601i">
       <property role="TrG5h" value="tree-flatten" />
-      <property role="iBDjm" value="false" />
+      <property role="iBDjm" value="7zL4upErSle/simple" />
       <node concept="10P_77" id="6Z0IExzTWYc" role="3t5Oan" />
       <node concept="3clFbT" id="6Z0IExzTWYd" role="3t49C2">
         <property role="3clFbU" value="false" />

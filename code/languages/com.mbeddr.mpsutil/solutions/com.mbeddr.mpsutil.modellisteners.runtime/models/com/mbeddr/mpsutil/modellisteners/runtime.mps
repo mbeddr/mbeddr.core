@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -194,11 +194,8 @@
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
         <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -217,11 +214,13 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
       </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
@@ -240,6 +239,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -559,9 +566,9 @@
               </node>
               <node concept="17R0WA" id="4jHuzb0EKIQ" role="3clFbw">
                 <node concept="37shsh" id="4jHuzb0EKPR" role="3uHU7w">
-                  <node concept="20RdaH" id="4jHuzb0EKR5" role="37shsm">
-                    <property role="20Rdg5" value="7197c640-b458-406b-8636-40c7936ef8c8" />
-                    <property role="20Rdg7" value="com.mbeddr.mpsutil.modellisteners.runtime" />
+                  <node concept="1dCxOk" id="17qUVvSZmF6" role="37shsm">
+                    <property role="1XxBO9" value="com.mbeddr.mpsutil.modellisteners.runtime" />
+                    <property role="1XweGW" value="7197c640-b458-406b-8636-40c7936ef8c8" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="4jHuzb0EKmk" role="3uHU7B">
@@ -1101,8 +1108,40 @@
       <node concept="3Tmbuc" id="5iW7uqbO7$O" role="1B3o_S" />
       <node concept="3clFbS" id="5iW7uqbO5_i" role="3clF47">
         <node concept="3SKdUt" id="5iW7uqbOmH9" role="3cqZAp">
-          <node concept="3SKdUq" id="5iW7uqbOmNq" role="3SKWNk">
-            <property role="3SKdUp" value="prevent endless recursions caused by listeners producing events they listen on" />
+          <node concept="1PaTwC" id="17qUVvSZlCX" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZlCY" role="1PaTwD">
+              <property role="3oM_SC" value="prevent" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlCZ" role="1PaTwD">
+              <property role="3oM_SC" value="endless" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlD0" role="1PaTwD">
+              <property role="3oM_SC" value="recursions" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlD1" role="1PaTwD">
+              <property role="3oM_SC" value="caused" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlD2" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlD3" role="1PaTwD">
+              <property role="3oM_SC" value="listeners" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlD4" role="1PaTwD">
+              <property role="3oM_SC" value="producing" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlD5" role="1PaTwD">
+              <property role="3oM_SC" value="events" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlD6" role="1PaTwD">
+              <property role="3oM_SC" value="they" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlD7" role="1PaTwD">
+              <property role="3oM_SC" value="listen" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlD8" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="5iW7uqbOmSs" role="3cqZAp" />

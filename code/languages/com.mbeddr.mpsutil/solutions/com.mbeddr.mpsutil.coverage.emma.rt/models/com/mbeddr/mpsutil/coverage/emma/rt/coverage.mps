@@ -2,7 +2,7 @@
 <model ref="r:74a059b2-01a6-4e08-ad37-56669b8924be(com.mbeddr.mpsutil.coverage.emma.rt.coverage)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -173,11 +173,8 @@
       <concept id="1144231330558" name="jetbrains.mps.baseLanguage.structure.ForStatement" flags="nn" index="1Dw8fO">
         <child id="1144231399730" name="condition" index="1Dwp0S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -221,6 +218,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -580,8 +585,46 @@
           </node>
         </node>
         <node concept="3SKdUt" id="7Fb9EHH60sw" role="3cqZAp">
-          <node concept="3SKdUq" id="7Fb9EHH60sy" role="3SKWNk">
-            <property role="3SKdUp" value="get the class loader which contains the coverage data from current MPS run" />
+          <node concept="1PaTwC" id="17qUVvSZlg4" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZlg5" role="1PaTwD">
+              <property role="3oM_SC" value="get" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlg6" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlg7" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlg8" role="1PaTwD">
+              <property role="3oM_SC" value="loader" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlg9" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlga" role="1PaTwD">
+              <property role="3oM_SC" value="contains" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgb" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgc" role="1PaTwD">
+              <property role="3oM_SC" value="coverage" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgd" role="1PaTwD">
+              <property role="3oM_SC" value="data" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlge" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgf" role="1PaTwD">
+              <property role="3oM_SC" value="current" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgg" role="1PaTwD">
+              <property role="3oM_SC" value="MPS" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgh" role="1PaTwD">
+              <property role="3oM_SC" value="run" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="7Fb9EHH5a2E" role="3cqZAp">
@@ -609,8 +652,31 @@
         <node concept="SfApY" id="7Fb9EHH5bsN" role="3cqZAp">
           <node concept="3clFbS" id="7Fb9EHH5bsO" role="SfCbr">
             <node concept="3SKdUt" id="7Fb9EHH61yF" role="3cqZAp">
-              <node concept="3SKdUq" id="7Fb9EHH61yH" role="3SKWNk">
-                <property role="3SKdUp" value="dump that coverage information into the coverage file" />
+              <node concept="1PaTwC" id="17qUVvSZlgi" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZlgj" role="1PaTwD">
+                  <property role="3oM_SC" value="dump" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlgk" role="1PaTwD">
+                  <property role="3oM_SC" value="that" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlgl" role="1PaTwD">
+                  <property role="3oM_SC" value="coverage" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlgm" role="1PaTwD">
+                  <property role="3oM_SC" value="information" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlgn" role="1PaTwD">
+                  <property role="3oM_SC" value="into" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlgo" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlgp" role="1PaTwD">
+                  <property role="3oM_SC" value="coverage" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlgq" role="1PaTwD">
+                  <property role="3oM_SC" value="file" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="7Fb9EHH5h38" role="3cqZAp">
@@ -804,8 +870,31 @@
           </node>
         </node>
         <node concept="3SKdUt" id="7Fb9EHH62fe" role="3cqZAp">
-          <node concept="3SKdUq" id="7Fb9EHH62fg" role="3SKWNk">
-            <property role="3SKdUp" value="reload the coverage information from the updated file" />
+          <node concept="1PaTwC" id="17qUVvSZlgr" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZlgs" role="1PaTwD">
+              <property role="3oM_SC" value="reload" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgt" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgu" role="1PaTwD">
+              <property role="3oM_SC" value="coverage" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgv" role="1PaTwD">
+              <property role="3oM_SC" value="information" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgw" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgx" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgy" role="1PaTwD">
+              <property role="3oM_SC" value="updated" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgz" role="1PaTwD">
+              <property role="3oM_SC" value="file" />
+            </node>
           </node>
         </node>
         <node concept="sxT6M" id="7Fb9EHH656x" role="3cqZAp">
@@ -908,8 +997,61 @@
           </node>
         </node>
         <node concept="3SKdUt" id="1JmpgZOqyo3" role="3cqZAp">
-          <node concept="3SKdUq" id="1JmpgZOqyo5" role="3SKWNk">
-            <property role="3SKdUp" value="FIXME pass context repository in there, we need one to find out models and their respective trace cache." />
+          <node concept="1PaTwC" id="17qUVvSZlg$" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZlg_" role="1PaTwD">
+              <property role="3oM_SC" value="FIXME" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgA" role="1PaTwD">
+              <property role="3oM_SC" value="pass" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgB" role="1PaTwD">
+              <property role="3oM_SC" value="context" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgC" role="1PaTwD">
+              <property role="3oM_SC" value="repository" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgD" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgE" role="1PaTwD">
+              <property role="3oM_SC" value="there," />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgF" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgG" role="1PaTwD">
+              <property role="3oM_SC" value="need" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgH" role="1PaTwD">
+              <property role="3oM_SC" value="one" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgI" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgJ" role="1PaTwD">
+              <property role="3oM_SC" value="find" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgK" role="1PaTwD">
+              <property role="3oM_SC" value="out" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgL" role="1PaTwD">
+              <property role="3oM_SC" value="models" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgM" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgN" role="1PaTwD">
+              <property role="3oM_SC" value="their" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgO" role="1PaTwD">
+              <property role="3oM_SC" value="respective" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgP" role="1PaTwD">
+              <property role="3oM_SC" value="trace" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlgQ" role="1PaTwD">
+              <property role="3oM_SC" value="cache." />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1JmpgZOqvzO" role="3cqZAp">

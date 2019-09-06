@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -287,7 +287,7 @@
               <property role="2rfbtB" value="Key" />
               <node concept="1g0IQG" id="vzhXZPAW_z" role="1geGt4">
                 <node concept="3hWdWw" id="vzhXZPAW_$" role="3F10Kt">
-                  <property role="Vb096" value="lightGray" />
+                  <property role="Vb096" value="fLJRk5A/lightGray" />
                 </node>
               </node>
             </node>
@@ -295,7 +295,7 @@
               <property role="2rfbtB" value="Default" />
               <node concept="1g0IQG" id="vzhXZPAW_A" role="1geGt4">
                 <node concept="3hWdWw" id="vzhXZPAW_B" role="3F10Kt">
-                  <property role="Vb096" value="lightGray" />
+                  <property role="Vb096" value="fLJRk5A/lightGray" />
                 </node>
               </node>
             </node>
@@ -303,13 +303,13 @@
               <property role="2rfbtB" value="Technical Key" />
               <node concept="1g0IQG" id="vzhXZPAW_D" role="1geGt4">
                 <node concept="3hWdWw" id="vzhXZPAW_E" role="3F10Kt">
-                  <property role="Vb096" value="lightGray" />
+                  <property role="Vb096" value="fLJRk5A/lightGray" />
                 </node>
               </node>
             </node>
             <node concept="1g0IQG" id="vzhXZPAW_F" role="1geGt4">
               <node concept="3hWdWw" id="vzhXZPAW_G" role="3F10Kt">
-                <property role="Vb096" value="gray" />
+                <property role="Vb096" value="fLJRk5_/gray" />
               </node>
             </node>
           </node>
@@ -367,7 +367,7 @@
               </node>
             </node>
             <node concept="Vb9p2" id="vzhXZPAWA4" role="3F10Kt">
-              <property role="Vbekb" value="QUERY" />
+              <property role="Vbekb" value="hL7GYu6/QUERY" />
               <node concept="17KAyr" id="vzhXZPAWA5" role="17MNgL">
                 <node concept="3clFbS" id="vzhXZPAWA6" role="2VODD2">
                   <node concept="3clFbJ" id="vzhXZPAWA7" role="3cqZAp">

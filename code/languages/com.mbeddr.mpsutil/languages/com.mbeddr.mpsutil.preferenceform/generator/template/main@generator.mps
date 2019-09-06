@@ -2,8 +2,8 @@
 <model ref="7d01d37a-2398-4f30-a95d-7e42e5f56c19/r:234d8e6f-4f91-4920-a623-ee8dfd3ca830(com.mbeddr.mpsutil.preferenceform#145956936283286626/com.mbeddr.mpsutil.preferenceform.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
@@ -378,6 +378,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -385,9 +391,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
-        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
-      </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -418,9 +421,6 @@
       </concept>
       <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
         <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
-      </concept>
-      <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
-        <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -494,7 +494,7 @@
       <ref role="1puQsG" node="1DjGUwRhkRk" resolve="AddStandalonePluginDescriptor" />
     </node>
     <node concept="3lhOvk" id="86yKXFIDF5" role="3lj3bC">
-      <property role="13Pg2o" value="true" />
+      <property role="13Pg2o" value="h94ayQF/true_" />
       <ref role="30HIoZ" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
       <ref role="3lhOvi" node="hB4myvK" resolve="MyProjectPreferenceComponent" />
       <ref role="2sgKRv" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
@@ -505,12 +505,12 @@
               <node concept="2OqwBi" id="X7OD3WxjYx" role="2Oq$k0">
                 <node concept="30H73N" id="X7OD3WxjT3" role="2Oq$k0" />
                 <node concept="3TrcHB" id="X7OD3WxkGL" role="2OqNvi">
-                  <ref role="3TsBF5" to="3iid:X7OD3WvjpT" resolve="scope" />
+                  <ref role="3TsBF5" to="3iid:17qUVvSZm9k" resolve="scope" />
                 </node>
               </node>
-              <node concept="3t7uKx" id="X7OD3Wxn2s" role="2OqNvi">
-                <node concept="uoxfO" id="X7OD3Wxn2u" role="3t7uKA">
-                  <ref role="uo_Cq" to="3iid:X7OD3Wvjw2" />
+              <node concept="21noJN" id="17qUVvSZmXB" role="2OqNvi">
+                <node concept="21nZrQ" id="17qUVvSZmXC" role="21noJM">
+                  <ref role="21nZrZ" to="3iid:17qUVvSZm65" resolve="project" />
                 </node>
               </node>
             </node>
@@ -519,7 +519,7 @@
       </node>
     </node>
     <node concept="3lhOvk" id="X7OD3WxtqR" role="3lj3bC">
-      <property role="13Pg2o" value="true" />
+      <property role="13Pg2o" value="h94ayQF/true_" />
       <ref role="30HIoZ" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
       <ref role="3lhOvi" node="X7OD3WwKWK" resolve="MyApplicationPreferenceComponent" />
       <ref role="2sgKRv" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
@@ -530,12 +530,12 @@
               <node concept="2OqwBi" id="X7OD3WxtqW" role="2Oq$k0">
                 <node concept="30H73N" id="X7OD3WxtqX" role="2Oq$k0" />
                 <node concept="3TrcHB" id="X7OD3WxtqY" role="2OqNvi">
-                  <ref role="3TsBF5" to="3iid:X7OD3WvjpT" resolve="scope" />
+                  <ref role="3TsBF5" to="3iid:17qUVvSZm9k" resolve="scope" />
                 </node>
               </node>
-              <node concept="3t7uKx" id="X7OD3WxtqZ" role="2OqNvi">
-                <node concept="uoxfO" id="X7OD3Wxtr0" role="3t7uKA">
-                  <ref role="uo_Cq" to="3iid:X7OD3Wvjwr" />
+              <node concept="21noJN" id="17qUVvSZmXD" role="2OqNvi">
+                <node concept="21nZrQ" id="17qUVvSZmXE" role="21noJM">
+                  <ref role="21nZrZ" to="3iid:17qUVvSZm66" resolve="application" />
                 </node>
               </node>
             </node>
@@ -544,7 +544,7 @@
       </node>
     </node>
     <node concept="3lhOvk" id="59Slv24jSaw" role="3lj3bC">
-      <property role="13Pg2o" value="true" />
+      <property role="13Pg2o" value="h94ayQF/true_" />
       <ref role="30HIoZ" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
       <ref role="3lhOvi" node="1DjGUwRh5uT" resolve="ProjectPlugin" />
       <node concept="30G5F_" id="59Slv24jSA$" role="30HLyM">
@@ -554,12 +554,12 @@
               <node concept="2OqwBi" id="1DjGUwRfQoC" role="2Oq$k0">
                 <node concept="30H73N" id="1DjGUwRfQoD" role="2Oq$k0" />
                 <node concept="3TrcHB" id="1DjGUwRfQoE" role="2OqNvi">
-                  <ref role="3TsBF5" to="3iid:X7OD3WvjpT" resolve="scope" />
+                  <ref role="3TsBF5" to="3iid:17qUVvSZm9k" resolve="scope" />
                 </node>
               </node>
-              <node concept="3t7uKx" id="1DjGUwRfQoF" role="2OqNvi">
-                <node concept="uoxfO" id="1DjGUwRfQoG" role="3t7uKA">
-                  <ref role="uo_Cq" to="3iid:X7OD3Wvjw2" />
+              <node concept="21noJN" id="17qUVvSZmXF" role="2OqNvi">
+                <node concept="21nZrQ" id="17qUVvSZmXG" role="21noJM">
+                  <ref role="21nZrZ" to="3iid:17qUVvSZm65" resolve="project" />
                 </node>
               </node>
             </node>
@@ -568,7 +568,7 @@
       </node>
     </node>
     <node concept="3lhOvk" id="1DjGUwRfS7C" role="3lj3bC">
-      <property role="13Pg2o" value="true" />
+      <property role="13Pg2o" value="h94ayQF/true_" />
       <ref role="30HIoZ" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
       <ref role="3lhOvi" node="1DjGUwRfWos" resolve="ApplicationPlugin" />
       <node concept="30G5F_" id="1DjGUwRfS7D" role="30HLyM">
@@ -578,12 +578,12 @@
               <node concept="2OqwBi" id="1DjGUwRfS7H" role="2Oq$k0">
                 <node concept="30H73N" id="1DjGUwRfS7I" role="2Oq$k0" />
                 <node concept="3TrcHB" id="1DjGUwRfS7J" role="2OqNvi">
-                  <ref role="3TsBF5" to="3iid:X7OD3WvjpT" resolve="scope" />
+                  <ref role="3TsBF5" to="3iid:17qUVvSZm9k" resolve="scope" />
                 </node>
               </node>
-              <node concept="3t7uKx" id="1DjGUwRfS7K" role="2OqNvi">
-                <node concept="uoxfO" id="1DjGUwRfS7L" role="3t7uKA">
-                  <ref role="uo_Cq" to="3iid:X7OD3Wvjwr" />
+              <node concept="21noJN" id="17qUVvSZmXH" role="2OqNvi">
+                <node concept="21nZrQ" id="17qUVvSZmXI" role="21noJM">
+                  <ref role="21nZrZ" to="3iid:17qUVvSZm66" resolve="application" />
                 </node>
               </node>
             </node>
@@ -602,12 +602,12 @@
               <node concept="2OqwBi" id="4vnGofEtxRB" role="2Oq$k0">
                 <node concept="30H73N" id="4vnGofEtxM9" role="2Oq$k0" />
                 <node concept="3TrcHB" id="4vnGofEty_R" role="2OqNvi">
-                  <ref role="3TsBF5" to="3iid:X7OD3WvjpT" resolve="scope" />
+                  <ref role="3TsBF5" to="3iid:17qUVvSZm9k" resolve="scope" />
                 </node>
               </node>
-              <node concept="3t7uKx" id="4vnGofEt$YT" role="2OqNvi">
-                <node concept="uoxfO" id="4vnGofEt$YV" role="3t7uKA">
-                  <ref role="uo_Cq" to="3iid:X7OD3Wvjw2" />
+              <node concept="21noJN" id="17qUVvSZmXJ" role="2OqNvi">
+                <node concept="21nZrQ" id="17qUVvSZmXK" role="21noJM">
+                  <ref role="21nZrZ" to="3iid:17qUVvSZm65" resolve="project" />
                 </node>
               </node>
             </node>
@@ -626,12 +626,12 @@
               <node concept="2OqwBi" id="4vnGofEt_LN" role="2Oq$k0">
                 <node concept="30H73N" id="4vnGofEt_LO" role="2Oq$k0" />
                 <node concept="3TrcHB" id="4vnGofEt_LP" role="2OqNvi">
-                  <ref role="3TsBF5" to="3iid:X7OD3WvjpT" resolve="scope" />
+                  <ref role="3TsBF5" to="3iid:17qUVvSZm9k" resolve="scope" />
                 </node>
               </node>
-              <node concept="3t7uKx" id="4vnGofEt_LQ" role="2OqNvi">
-                <node concept="uoxfO" id="4vnGofEt_LR" role="3t7uKA">
-                  <ref role="uo_Cq" to="3iid:X7OD3Wvjwr" />
+              <node concept="21noJN" id="17qUVvSZmXL" role="2OqNvi">
+                <node concept="21nZrQ" id="17qUVvSZmXM" role="21noJM">
+                  <ref role="21nZrZ" to="3iid:17qUVvSZm66" resolve="application" />
                 </node>
               </node>
             </node>
@@ -941,12 +941,12 @@
                                 <ref role="3cqZAo" node="4vnGofExloV" resolve="it" />
                               </node>
                               <node concept="3TrcHB" id="4vnGofExmVE" role="2OqNvi">
-                                <ref role="3TsBF5" to="3iid:X7OD3WvjpT" resolve="scope" />
+                                <ref role="3TsBF5" to="3iid:17qUVvSZm9k" resolve="scope" />
                               </node>
                             </node>
-                            <node concept="3t7uKx" id="4vnGofExpFE" role="2OqNvi">
-                              <node concept="uoxfO" id="4vnGofExpFG" role="3t7uKA">
-                                <ref role="uo_Cq" to="3iid:X7OD3Wvjw2" />
+                            <node concept="21noJN" id="17qUVvSZmXN" role="2OqNvi">
+                              <node concept="21nZrQ" id="17qUVvSZmXO" role="21noJM">
+                                <ref role="21nZrZ" to="3iid:17qUVvSZm65" resolve="project" />
                               </node>
                             </node>
                           </node>
@@ -1043,12 +1043,12 @@
                                 <ref role="3cqZAo" node="4vnGofExukA" resolve="it" />
                               </node>
                               <node concept="3TrcHB" id="4vnGofExukz" role="2OqNvi">
-                                <ref role="3TsBF5" to="3iid:X7OD3WvjpT" resolve="scope" />
+                                <ref role="3TsBF5" to="3iid:17qUVvSZm9k" resolve="scope" />
                               </node>
                             </node>
-                            <node concept="3t7uKx" id="4vnGofExuk$" role="2OqNvi">
-                              <node concept="uoxfO" id="4vnGofExuk_" role="3t7uKA">
-                                <ref role="uo_Cq" to="3iid:X7OD3Wvjwr" />
+                            <node concept="21noJN" id="17qUVvSZmXP" role="2OqNvi">
+                              <node concept="21nZrQ" id="17qUVvSZmXQ" role="21noJM">
+                                <ref role="21nZrZ" to="3iid:17qUVvSZm66" resolve="application" />
                               </node>
                             </node>
                           </node>
@@ -3881,7 +3881,7 @@
           </node>
         </node>
         <node concept="RRSsy" id="42VTAcDfnPq" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="6Gguuh0Ul3s" role="RRSoy">
             <node concept="37vLTw" id="6Gguuh0Ul3t" role="3uHU7w">
               <ref role="3cqZAo" node="5CNjqUbZCao" resolve="loadFields" />
@@ -4031,7 +4031,7 @@
           </node>
         </node>
         <node concept="RRSsy" id="42VTAcDfnPQ" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="6Gguuh0UlGV" role="RRSoy">
             <node concept="37vLTw" id="6Gguuh0Umi8" role="3uHU7w">
               <ref role="3cqZAo" node="5CNjqUbZG3f" resolve="saveFields" />
@@ -4644,7 +4644,7 @@
           </node>
         </node>
         <node concept="RRSsy" id="42VTAcDfnOy" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="4OZbTlQt72O" role="RRSoy">
             <node concept="37vLTw" id="4OZbTlQt72P" role="3uHU7w">
               <ref role="3cqZAo" node="4OZbTlQt72E" resolve="loadFields" />
@@ -4828,7 +4828,7 @@
           </node>
         </node>
         <node concept="RRSsy" id="42VTAcDfnOY" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="6Gguuh0TYtK" role="RRSoy">
             <node concept="37vLTw" id="6Gguuh0U2Ou" role="3uHU7w">
               <ref role="3cqZAo" node="4OZbTlQszUY" resolve="saveFields" />
@@ -6758,7 +6758,7 @@
     <node concept="2uRRBT" id="1DjGUwRha88" role="2uRRB$">
       <node concept="3clFbS" id="1DjGUwRha89" role="2VODD2">
         <node concept="RRSsy" id="42VTAcDfnR6" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="Xl_RD" id="6Gguuh0Uw9e" role="RRSoy">
             <property role="Xl_RC" value="init project" />
           </node>
@@ -6887,7 +6887,7 @@
     <node concept="2uRRBN" id="1DjGUwRhdMg" role="2uRRB_">
       <node concept="3clFbS" id="1DjGUwRhdMh" role="2VODD2">
         <node concept="RRSsy" id="42VTAcDfnRc" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="Xl_RD" id="6Gguuh0UwO2" role="RRSoy">
             <property role="Xl_RC" value="dispose project" />
           </node>
@@ -8887,7 +8887,7 @@
     <node concept="2uRRBj" id="1DjGUwRg8$z" role="2uRRBE">
       <node concept="3clFbS" id="1DjGUwRg8$$" role="2VODD2">
         <node concept="RRSsy" id="42VTAcDfnFI" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="Xl_RD" id="6Gguuh0TOYm" role="RRSoy">
             <property role="Xl_RC" value="init app" />
           </node>
@@ -9012,7 +9012,7 @@
     <node concept="2uRRBI" id="1DjGUwRh0wG" role="2uRRBF">
       <node concept="3clFbS" id="1DjGUwRh0wH" role="2VODD2">
         <node concept="RRSsy" id="42VTAcDfnFO" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="Xl_RD" id="6sutvFq57c8" role="RRSoy">
             <property role="Xl_RC" value="dispose app" />
           </node>

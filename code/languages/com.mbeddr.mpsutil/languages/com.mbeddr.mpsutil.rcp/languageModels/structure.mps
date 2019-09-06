@@ -53,20 +53,20 @@
     <property role="EcuMT" value="8503127430094868034" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7o1blyuFPT4" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="defaultPersistence" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8503127430094872132" />
       <ref role="20lvS9" node="7o1blyuFOTm" resolve="Persistence" />
     </node>
     <node concept="1TJgyj" id="7o1blyuG26G" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="mandantoryDevKits" />
       <property role="IQ2ns" value="8503127430094922156" />
       <ref role="20lvS9" node="7o1blyuG26$" resolve="IDevKitSelector" />
     </node>
     <node concept="1TJgyj" id="7o1blyuG26L" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="optionalDevKits" />
       <property role="IQ2ns" value="8503127430094922161" />
       <ref role="20lvS9" node="7o1blyuG26$" resolve="IDevKitSelector" />
@@ -136,9 +136,9 @@
       <ref role="PrY4T" node="7o1blyuG26$" resolve="IDevKitSelector" />
     </node>
     <node concept="1TJgyj" id="7o1blyuG7_o" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="devkits" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="8503127430094944600" />
       <ref role="20lvS9" node="7o1blyuG7yO" resolve="DefKitRef" />
     </node>
@@ -148,9 +148,8 @@
     <property role="EcuMT" value="8503127430094944436" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7o1blyuG7yW" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="devkit" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8503127430094944444" />
       <ref role="20lvS9" to="hypd:5xDtKQA7vSJ" resolve="DevKit" />
     </node>

@@ -2,7 +2,7 @@
 <model ref="r:17b09ba0-cbd7-488a-91a1-9ee54b7e6e87(com.mbeddr.mpsutil.compare.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -161,7 +161,7 @@
       <node concept="3F0ifn" id="h3vlKCz" role="3EZMnx">
         <property role="3F0ifm" value="assert" />
         <node concept="VechU" id="hEZR8yA" role="3F10Kt">
-          <property role="Vb096" value="blue" />
+          <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F1sOY" id="h3vm$Fz" role="3EZMnx">
@@ -171,7 +171,7 @@
       <node concept="3F0ifn" id="h3vlQYs" role="3EZMnx">
         <property role="3F0ifm" value="equals" />
         <node concept="VechU" id="hEZR8tX" role="3F10Kt">
-          <property role="Vb096" value="blue" />
+          <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F1sOY" id="h3vmArp" role="3EZMnx">
@@ -288,7 +288,7 @@
       <node concept="3F0ifn" id="3C6_kMLO7ul" role="3EZMnx">
         <property role="3F0ifm" value="assert" />
         <node concept="VechU" id="3C6_kMLO7um" role="3F10Kt">
-          <property role="Vb096" value="blue" />
+          <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F1sOY" id="3C6_kMLO7un" role="3EZMnx">
@@ -298,7 +298,7 @@
       <node concept="3F0ifn" id="3C6_kMLO7uo" role="3EZMnx">
         <property role="3F0ifm" value="has" />
         <node concept="VechU" id="3C6_kMLO7up" role="3F10Kt">
-          <property role="Vb096" value="blue" />
+          <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F1sOY" id="3C6_kMLO7uq" role="3EZMnx">
@@ -308,7 +308,7 @@
       <node concept="3F0ifn" id="3C6_kMLO7Ju" role="3EZMnx">
         <property role="3F0ifm" value="element(s)" />
         <node concept="VechU" id="3C6_kMLO7JJ" role="3F10Kt">
-          <property role="Vb096" value="blue" />
+          <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F0ifn" id="3C6_kMLO7uL" role="3EZMnx">
@@ -469,14 +469,14 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="Veino" id="5uUCR4LCWT0" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="2SsqMj" id="5uUCR4LBJAQ" role="3EZMnx" />
       <node concept="3F0ifn" id="5uUCR4LCI9B" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
         <node concept="Veino" id="5uUCR4LCWUC" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
     </node>
@@ -509,7 +509,7 @@
     <property role="TrG5h" value="deleteIgnoreAnnotation" />
     <ref role="1h_SK9" to="8do3:5uUCR4L$q0N" resolve="IgnorePropertiesAnnotation" />
     <node concept="1hA7zw" id="5uUCR4LKWK6" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="5uUCR4LKWK7" role="1hA7z_">
         <node concept="3clFbS" id="5uUCR4LKWK8" role="2VODD2">
           <node concept="3clFbF" id="5uUCR4LKWKo" role="3cqZAp">

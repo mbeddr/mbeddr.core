@@ -2,13 +2,14 @@
 <model ref="r:bb4764cf-9b44-4239-950c-22ec267d6084(com.mbeddr.mpsutil.interpreter.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -204,11 +205,8 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -435,6 +433,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -479,7 +485,7 @@
     </node>
     <node concept="3lhOvk" id="24ZS0JTzdcF" role="3lj3bC">
       <property role="36QftV" value="true" />
-      <property role="13Pg2o" value="true" />
+      <property role="13Pg2o" value="h94ayQF/true_" />
       <ref role="30HIoZ" to="3673:7ueT7DHTBbE" resolve="Interpreter" />
       <ref role="2sgKRv" node="7piNMo9E4CI" resolve="interpreterExtensionPoint" />
       <ref role="3lhOvi" node="73exJLGDCjP" resolve="InterpreterExtensionPoint_extension" />
@@ -3355,7 +3361,7 @@
   </node>
   <node concept="1pmfR0" id="2bBLuwRpG5Q">
     <property role="TrG5h" value="removeEmptyLinesInInterpeter" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="2bBLuwRpG5R" role="1pqMTA">
       <node concept="3clFbS" id="2bBLuwRpG5S" role="2VODD2">
@@ -3680,8 +3686,52 @@
                                               </node>
                                               <node concept="3clFbH" id="1ovA3RmFG9H" role="3cqZAp" />
                                               <node concept="3SKdUt" id="1ovA3RmFGZy" role="3cqZAp">
-                                                <node concept="3SKdUq" id="1ovA3RmFGZ$" role="3SKWNk">
-                                                  <property role="3SKdUp" value="a single backslash will lead to a Java compile error, we have to escape it" />
+                                                <node concept="1PaTwC" id="17qUVvSZkSg" role="3ndbpf">
+                                                  <node concept="3oM_SD" id="17qUVvSZkSh" role="1PaTwD">
+                                                    <property role="3oM_SC" value="a" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSi" role="1PaTwD">
+                                                    <property role="3oM_SC" value="single" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSj" role="1PaTwD">
+                                                    <property role="3oM_SC" value="backslash" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSk" role="1PaTwD">
+                                                    <property role="3oM_SC" value="will" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSl" role="1PaTwD">
+                                                    <property role="3oM_SC" value="lead" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSm" role="1PaTwD">
+                                                    <property role="3oM_SC" value="to" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSn" role="1PaTwD">
+                                                    <property role="3oM_SC" value="a" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSo" role="1PaTwD">
+                                                    <property role="3oM_SC" value="Java" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSp" role="1PaTwD">
+                                                    <property role="3oM_SC" value="compile" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSq" role="1PaTwD">
+                                                    <property role="3oM_SC" value="error," />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSr" role="1PaTwD">
+                                                    <property role="3oM_SC" value="we" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSs" role="1PaTwD">
+                                                    <property role="3oM_SC" value="have" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSt" role="1PaTwD">
+                                                    <property role="3oM_SC" value="to" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSu" role="1PaTwD">
+                                                    <property role="3oM_SC" value="escape" />
+                                                  </node>
+                                                  <node concept="3oM_SD" id="17qUVvSZkSv" role="1PaTwD">
+                                                    <property role="3oM_SC" value="it" />
+                                                  </node>
                                                 </node>
                                               </node>
                                               <node concept="3clFbF" id="6ENu_m7x3G$" role="3cqZAp">
@@ -5558,7 +5608,7 @@
   </node>
   <node concept="1pmfR0" id="3oV0py8XkVc">
     <property role="TrG5h" value="declareBranchesForDLC" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="3oV0py8XkVd" role="1pqMTA">
       <node concept="3clFbS" id="3oV0py8XkVe" role="2VODD2">

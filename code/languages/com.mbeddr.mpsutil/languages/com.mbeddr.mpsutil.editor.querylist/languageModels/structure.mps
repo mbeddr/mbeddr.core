@@ -13,6 +13,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
+        <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
+      </concept>
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -70,10 +73,17 @@
       <property role="IQ2nx" value="1140524450557" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="gOQ2I60" role="1TKVEl">
+    <node concept="1TJgyi" id="17qUVvSZm9a" role="1TKVEl">
       <property role="TrG5h" value="separatorLayoutConstraint" />
       <property role="IQ2nx" value="1156252885376" />
-      <ref role="AX2Wp" to="tpc2:g$1Qttv" resolve="_Layout_Constraints_Enum" />
+      <ref role="AX2Wp" to="tpc2:3Ftr4R6BF9A" resolve="_Layout_Constraints_Enum" />
+      <node concept="3l_iC" id="17qUVvSZm9b" role="lGtFl">
+        <node concept="1TJgyi" id="gOQ2I60" role="3l_iP">
+          <property role="TrG5h" value="separatorLayoutConstraint" />
+          <property role="IQ2nx" value="1156252885376" />
+          <ref role="AX2Wp" to="tpc2:g$1Qttv" resolve="_Layout_Constraints_Enum" />
+        </node>
+      </node>
     </node>
     <node concept="1TJgyi" id="g_$x2vM" role="1TKVEl">
       <property role="TrG5h" value="noTargetText" />
@@ -106,82 +116,80 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="5oklODae9g3" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="query" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="6202678563380433923" />
       <ref role="20lvS9" node="5oklODadpyz" resolve="Function_GetElements" />
     </node>
     <node concept="1TJgyj" id="535SrlQ9trx" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="insertNewNode" />
       <property role="IQ2ns" value="5820306262933755617" />
       <ref role="20lvS9" node="535SrlQ6ZQc" resolve="Function_InsertNewNode" />
     </node>
     <node concept="1TJgyj" id="puVMIbt82E" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="deleteNode" />
       <property role="IQ2ns" value="459067182340669610" />
       <ref role="20lvS9" node="535SrlQaP0B" resolve="Function_DeleteElement" />
     </node>
     <node concept="1TJgyj" id="lPJxik8hdo" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="getSubstituteInfo" />
       <property role="IQ2ns" value="393429538058605400" />
       <ref role="20lvS9" node="lPJxik6yHd" resolve="Function_GetSubstituteInfo" />
     </node>
     <node concept="1TJgyj" id="gAczzzC" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cellLayout" />
-      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="1140524464360" />
       <ref role="20lvS9" to="tpc2:g6iR17a" resolve="CellLayout" />
     </node>
     <node concept="1TJgyj" id="gAczzzB" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="emptyCellModel" />
-      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="1140524464359" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="5fDszETGVtQ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="foldedCellModel" />
       <property role="IQ2ns" value="6046489571270834038" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="hWsWeqI" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="separatorStyle" />
       <property role="IQ2ns" value="1233141163694" />
       <ref role="20lvS9" to="tpc2:hWtppjH" resolve="InlineStyleDeclaration" />
     </node>
     <node concept="1TJgyj" id="Ny5pAsx39_" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="separatorTextQuery" />
       <property role="IQ2ns" value="928328222691832421" />
       <ref role="20lvS9" to="tpc2:Bqq$mhZ7YP" resolve="QueryFunction_SeparatorText" />
     </node>
     <node concept="1TJgyj" id="3ZqNA5Aj2vB" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="usesFoldingCondition" />
       <property role="IQ2ns" value="4601216887035799527" />
       <ref role="20lvS9" to="tpc2:gCpkWun" resolve="QueryFunction_NodeCondition" />
     </node>
     <node concept="1TJgyj" id="gXk68OO" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="elementMenuDescriptor" />
       <property role="IQ2ns" value="1165347032372" />
       <ref role="20lvS9" to="tpc2:gWOXEEG" resolve="CellMenuDescriptor" />
     </node>
     <node concept="1TJgyj" id="6hPjX46YZPG" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="editorComponent" />
       <property role="IQ2ns" value="7238779735251877228" />
       <ref role="20lvS9" node="6hPjX46YnED" resolve="QueryListInlineEditorComponent" />
     </node>
     <node concept="1TJgyj" id="5qrsiYWrGSD" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="collapseByDefaultCondition" />
       <property role="IQ2ns" value="6240706158490734121" />
       <ref role="20lvS9" to="tpc2:gCpkWun" resolve="QueryFunction_NodeCondition" />
@@ -192,9 +200,8 @@
       <ref role="20lvS9" to="tpc2:g_h_SNY" resolve="CellActionMapDeclaration" />
     </node>
     <node concept="1TJgyj" id="C$q8A2yeI6" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="elementsConcept" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="730823979350682502" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
@@ -264,22 +271,21 @@
     <property role="EcuMT" value="943947710602559009" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="Op$R494Obt" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="elementConcept" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="943947710603674333" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
     <node concept="1TJgyj" id="Op$R494vYf" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="editorComponent" />
       <property role="IQ2ns" value="943947710603591567" />
       <ref role="20lvS9" node="6hPjX46YnED" resolve="QueryListInlineEditorComponent" />
     </node>
     <node concept="1TJgyj" id="Op$R494Lfz" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="query" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="943947710603662307" />
       <ref role="20lvS9" node="Op$R494_Vp" resolve="Function_LoadQueryLinkData" />
     </node>
@@ -322,10 +328,17 @@
       <property role="IQ2nx" value="1145360728033" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="8dI1zL2qOP" role="1TKVEl">
+    <node concept="1TJgyi" id="17qUVvSZm9c" role="1TKVEl">
       <property role="TrG5h" value="separatorLayoutConstraint" />
       <property role="IQ2nx" value="147976780035763509" />
-      <ref role="AX2Wp" to="tpc2:g$1Qttv" resolve="_Layout_Constraints_Enum" />
+      <ref role="AX2Wp" to="tpc2:3Ftr4R6BF9A" resolve="_Layout_Constraints_Enum" />
+      <node concept="3l_iC" id="17qUVvSZm9d" role="lGtFl">
+        <node concept="1TJgyi" id="8dI1zL2qOP" role="3l_iP">
+          <property role="TrG5h" value="separatorLayoutConstraint" />
+          <property role="IQ2nx" value="147976780035763509" />
+          <ref role="AX2Wp" to="tpc2:g$1Qttv" resolve="_Layout_Constraints_Enum" />
+        </node>
+      </node>
     </node>
     <node concept="1TJgyi" id="8dI1zL2ebE" role="1TKVEl">
       <property role="TrG5h" value="separatorText" />
@@ -343,71 +356,68 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="8dI1zL1Gh_" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="elementConcept" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="147976780035572837" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
     <node concept="1TJgyj" id="8dI1zL1AIg" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="query" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="147976780035550096" />
       <ref role="20lvS9" node="8dI1zL1AIk" resolve="Function_LoadQueryLinkListData" />
     </node>
     <node concept="1TJgyj" id="8dI1zL1POh" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="emptyCellModel" />
-      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="147976780035611921" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="8dI1zL1XLl" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="editorComponent" />
       <property role="IQ2ns" value="147976780035644501" />
       <ref role="20lvS9" node="6hPjX46YnED" resolve="QueryListInlineEditorComponent" />
     </node>
     <node concept="1TJgyj" id="hd2AuTj" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="filter" />
       <property role="IQ2ns" value="1182233390675" />
       <ref role="20lvS9" to="tpc2:hd07P1K" resolve="QueryFunction_NodeListFilter" />
     </node>
     <node concept="1TJgyj" id="8dI1zL225B" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cellLayout" />
-      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="147976780035662183" />
       <ref role="20lvS9" to="tpc2:g6iR17a" resolve="CellLayout" />
     </node>
     <node concept="1TJgyj" id="8dI1zL2b7_" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="usesFoldingCondition" />
       <property role="IQ2ns" value="147976780035699173" />
       <ref role="20lvS9" to="tpc2:gCpkWun" resolve="QueryFunction_NodeCondition" />
     </node>
     <node concept="1TJgyj" id="8dI1zL2h8L" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="separatorTextQuery" />
       <property role="IQ2ns" value="147976780035723825" />
       <ref role="20lvS9" to="tpc2:Bqq$mhZ7YP" resolve="QueryFunction_SeparatorText" />
     </node>
     <node concept="1TJgyj" id="8dI1zL2sMK" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="separatorStyle" />
       <property role="IQ2ns" value="147976780035771568" />
       <ref role="20lvS9" to="tpc2:hWtppjH" resolve="InlineStyleDeclaration" />
     </node>
     <node concept="1TJgyj" id="h84_6ER" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="nodeFactory" />
       <property role="IQ2ns" value="1176897874615" />
       <ref role="20lvS9" to="tpc2:h84$FLY" resolve="QueryFunction_NodeFactory" />
     </node>
     <node concept="1TJgyj" id="8dI1zL2D3E" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="elementMenuDescriptor" />
       <property role="IQ2ns" value="147976780035821802" />
       <ref role="20lvS9" to="tpc2:gWOXEEG" resolve="CellMenuDescriptor" />
@@ -418,20 +428,19 @@
       <ref role="20lvS9" to="tpc2:g_h_SNY" resolve="CellActionMapDeclaration" />
     </node>
     <node concept="1TJgyj" id="6k6gsLy95p6" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="addHints" />
-      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="7279578193766667846" />
       <ref role="20lvS9" to="tpc2:42lfqf__buC" resolve="ContextHintsSpecification" />
     </node>
     <node concept="1TJgyj" id="6k6gsLy95p7" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="removeHints" />
       <property role="IQ2ns" value="7279578193766667847" />
       <ref role="20lvS9" to="tpc2:42lfqf__buC" resolve="ContextHintsSpecification" />
     </node>
     <node concept="1TJgyj" id="8dI1zL5Aeb" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="foldedCellModel" />
       <property role="IQ2ns" value="147976780036596619" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
@@ -458,9 +467,9 @@
     <property role="EcuMT" value="4299801941278870712" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="3IFXLmitGXp" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="query" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4299801941278904153" />
       <ref role="20lvS9" node="3IFXLmitBYG" resolve="Function_LoadQueryPropertyData" />
     </node>

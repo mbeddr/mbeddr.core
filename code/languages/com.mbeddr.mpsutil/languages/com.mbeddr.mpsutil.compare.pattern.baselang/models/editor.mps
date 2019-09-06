@@ -2,8 +2,8 @@
 <model ref="r:85abeca6-54b2-49d1-b3a9-2a4d0795ea4f(com.mbeddr.mpsutil.compare.pattern.baselang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -313,7 +313,7 @@
       </node>
       <node concept="3F0A7n" id="fHu_EjQ" role="3EZMnx">
         <property role="1O74Pk" value="true" />
-        <property role="1cu_pB" value="1" />
+        <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
         <property role="39s7Ar" value="true" />
         <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
         <ref role="1ERwB7" to="tpen:1Yuvn_OhcEp" resolve="Delete_StringValueInLiteral" />
@@ -385,7 +385,7 @@
     <property role="TrG5h" value="PatternHint_ActionMap" />
     <ref role="1h_SK9" to="ycll:$WtIWnCAuj" resolve="PatternHint" />
     <node concept="1hA7zw" id="$WtIWnGjsz" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="$WtIWnGjs$" role="1hA7z_">
         <node concept="3clFbS" id="$WtIWnGjs_" role="2VODD2">
           <node concept="3clFbF" id="$WtIWnGjsL" role="3cqZAp">
@@ -443,7 +443,7 @@
     <node concept="1Qtc8_" id="2cvVnUuAo$g" role="IW6Ez">
       <node concept="3cWJ9i" id="2cvVnUuAo$e" role="1Qtc8$">
         <node concept="CtIbL" id="2cvVnUuAo$f" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="aenpk" id="2cvVnUuAo$i" role="1Qtc8A">
@@ -517,7 +517,7 @@
                   <node concept="1OKiuA" id="2cvVnUuAo$Q" role="2OqNvi">
                     <node concept="1Q80Hx" id="2cvVnUuAo$X" role="lBI5i" />
                     <node concept="2B6iha" id="2cvVnUuAo$S" role="lGT1i">
-                      <property role="1lyBwo" value="lastEditable" />
+                      <property role="1lyBwo" value="1S2pyLby17D/lastEditable" />
                     </node>
                   </node>
                 </node>
@@ -530,7 +530,7 @@
                   <node concept="1OKiuA" id="2cvVnUuAo$Z" role="2OqNvi">
                     <node concept="1Q80Hx" id="2cvVnUuAo_0" role="lBI5i" />
                     <node concept="2B6iha" id="2cvVnUuAo_1" role="lGT1i">
-                      <property role="1lyBwo" value="mostRelevant" />
+                      <property role="1lyBwo" value="59pBc0SIIVt/mostRelevant" />
                     </node>
                     <node concept="3cmrfG" id="2cvVnUuAo_2" role="3dN3m$">
                       <property role="3cmrfH" value="-1" />

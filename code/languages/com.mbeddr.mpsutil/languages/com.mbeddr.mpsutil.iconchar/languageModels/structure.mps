@@ -20,6 +20,9 @@
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
         <property id="1083066089218" name="constraint" index="FLfZY" />
       </concept>
@@ -93,6 +96,7 @@
   <node concept="Az7Fb" id="7GaZbxRWsMP">
     <property role="TrG5h" value="rgbaColor" />
     <property role="FLfZY" value="#[0-9a-fA-F]{6,8}" />
+    <property role="3F6X1D" value="8866176685648759989" />
   </node>
 </model>
 

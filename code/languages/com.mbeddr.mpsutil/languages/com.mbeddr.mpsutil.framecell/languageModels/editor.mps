@@ -2,7 +2,7 @@
 <model ref="b33d119e-196d-4497-977c-5c167b21fe33/r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -119,7 +119,7 @@
       <node concept="3F0ifn" id="7AjS6YE$nup" role="3EZMnx">
         <property role="3F0ifm" value="frame" />
         <node concept="Veino" id="7AjS6YE$ny5" role="3F10Kt">
-          <property role="Vb096" value="black" />
+          <property role="Vb096" value="6cZGtrcKCoS/black" />
         </node>
         <node concept="VechU" id="7AjS6YE$nzT" role="3F10Kt">
           <node concept="1iSF2X" id="7AjS6YE$n$1" role="VblUZ">

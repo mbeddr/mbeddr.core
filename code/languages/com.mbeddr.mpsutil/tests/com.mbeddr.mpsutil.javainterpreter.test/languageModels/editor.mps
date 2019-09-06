@@ -2,7 +2,7 @@
 <model ref="r:8a5339ba-74c3-432a-af00-eb2b8a4fc7e4(com.mbeddr.mpsutil.javainterpreter.test.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -60,7 +60,7 @@
           <property role="3F0ifm" value="expected:" />
           <ref role="1ERwB7" to="e9u7:5Yf_R4Bt0rV" resolve="deleteInterpreterEvaluation" />
           <node concept="VechU" id="65E6xpGSukK" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
+            <property role="Vb096" value="g1_qRwE/darkGreen" />
           </node>
         </node>
         <node concept="3F1sOY" id="5rU7RIw_m1k" role="3EZMnx">
@@ -92,7 +92,7 @@
           <property role="3F0ifm" value="expected for list:" />
           <ref role="1ERwB7" to="e9u7:5Yf_R4Bt0rV" resolve="deleteInterpreterEvaluation" />
           <node concept="VechU" id="1V2ngNhC6UF" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
+            <property role="Vb096" value="g1_qRwE/darkGreen" />
           </node>
         </node>
         <node concept="3F1sOY" id="1V2ngNhC6UG" role="3EZMnx">

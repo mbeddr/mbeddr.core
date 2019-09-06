@@ -2,7 +2,7 @@
 <model ref="692e0a46-0d23-4c8a-8ce0-ea4c2266672a/r:ca5b7335-69da-40cc-8648-ad45c48a7af5(com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -59,7 +59,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -157,7 +156,6 @@
     <ref role="1XX52x" to="fnbo:2gGfLsWQL6y" resolve="TransitivelyDependsOnBuildProjectOperation" />
     <node concept="3EZMnI" id="2gGfLsWSjT4" role="2wV5jI">
       <node concept="PMmxH" id="2gGfLsWSjT5" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <node concept="OXEIz" id="2gGfLsWSjT6" role="P5bDN">
           <node concept="UkePV" id="2gGfLsWSjT7" role="OY2wv">
@@ -165,7 +163,7 @@
           </node>
         </node>
         <node concept="Vb9p2" id="2gGfLsWSjT8" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="2gGfLsWSjT9" role="3EZMnx">
@@ -178,7 +176,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="Vb9p2" id="2gGfLsWSjTc" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
         <node concept="11L4FC" id="2gGfLsWSjTd" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -201,7 +199,7 @@
           <property role="1413C4" value="AngleBracet" />
         </node>
         <node concept="Vb9p2" id="2gGfLsWSjTj" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
         <node concept="11L4FC" id="2gGfLsWSjTk" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -215,7 +213,6 @@
     <ref role="1XX52x" to="fnbo:2gGfLsWS1ZN" resolve="AddBuildProjectDependencyOperation" />
     <node concept="3EZMnI" id="h$6$4Ou" role="2wV5jI">
       <node concept="PMmxH" id="2wdLO7KhY76" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <node concept="OXEIz" id="2wdLO7KhY77" role="P5bDN">
           <node concept="UkePV" id="2wdLO7KhY78" role="OY2wv">
@@ -223,7 +220,7 @@
           </node>
         </node>
         <node concept="Vb9p2" id="2wdLO7KhY79" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="h$6$c1v" role="3EZMnx">
@@ -236,7 +233,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="Vb9p2" id="hEUNQWC" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
         <node concept="11L4FC" id="hX77U2S" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -272,7 +269,7 @@
           <property role="1413C4" value="AngleBracet" />
         </node>
         <node concept="Vb9p2" id="hEUNR0$" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
         <node concept="11L4FC" id="hX7803$" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -286,7 +283,6 @@
     <ref role="1XX52x" to="fnbo:6YaWssNZJ5X" resolve="HasDependencyOnBuildProjectOperation" />
     <node concept="3EZMnI" id="6YaWssNZJ69" role="2wV5jI">
       <node concept="PMmxH" id="6YaWssNZJ6a" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <node concept="OXEIz" id="6YaWssNZJ6b" role="P5bDN">
           <node concept="UkePV" id="6YaWssNZJ6c" role="OY2wv">
@@ -294,7 +290,7 @@
           </node>
         </node>
         <node concept="Vb9p2" id="6YaWssNZJ6d" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="6YaWssNZJ6e" role="3EZMnx">
@@ -307,7 +303,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="Vb9p2" id="6YaWssNZJ6h" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
         <node concept="11L4FC" id="6YaWssNZJ6i" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -330,7 +326,7 @@
           <property role="1413C4" value="AngleBracet" />
         </node>
         <node concept="Vb9p2" id="6YaWssNZJ6o" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
         <node concept="11L4FC" id="6YaWssNZJ6p" role="3F10Kt">
           <property role="VOm3f" value="true" />

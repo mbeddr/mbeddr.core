@@ -3,13 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="2sud" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.treeStructure(MPS.IDEA/)" />
@@ -29,7 +29,7 @@
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
-        <child id="1229187676388" name="nodeToEdit" index="LiRBU" />
+        <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
         <child id="1229187755283" name="code" index="LjaKd" />
       </concept>
       <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
@@ -43,6 +43,9 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
+      <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
+        <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
+      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -166,17 +169,6 @@
   <node concept="LiM7Y" id="72neNfy3uyO">
     <property role="TrG5h" value="SpeedSearch" />
     <property role="26Nn1l" value="false" />
-    <node concept="3clFbS" id="72neNfy3vO4" role="LiRBU">
-      <node concept="3clFbH" id="72neNfy3U2G" role="3cqZAp">
-        <node concept="LIFWc" id="72neNfy3UdQ" role="lGtFl">
-          <property role="ZRATv" value="true" />
-          <property role="OXtK3" value="true" />
-          <property role="p6zMq" value="0" />
-          <property role="p6zMs" value="0" />
-          <property role="LIFWd" value="Constant_7h2wce_a" />
-        </node>
-      </node>
-    </node>
     <node concept="3clFbS" id="72neNfy3vO8" role="LjaKd">
       <node concept="3clFbH" id="72neNfy3vOb" role="3cqZAp" />
       <node concept="3cpWs8" id="72neNfy3wxe" role="3cqZAp">
@@ -490,6 +482,19 @@
       <node concept="3clFbH" id="72neNfy511g" role="3cqZAp" />
       <node concept="3clFbH" id="72neNfyaCca" role="3cqZAp" />
       <node concept="3clFbH" id="72neNfy3vOz" role="3cqZAp" />
+    </node>
+    <node concept="1qefOq" id="17qUVvSZniU" role="25YQCW">
+      <node concept="3clFbS" id="72neNfy3vO4" role="1qenE9">
+        <node concept="3clFbH" id="72neNfy3U2G" role="3cqZAp">
+          <node concept="LIFWc" id="72neNfy3UdQ" role="lGtFl">
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+            <property role="LIFWd" value="Constant_7h2wce_a" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2XOHcx" id="5kFTseQQT1w">

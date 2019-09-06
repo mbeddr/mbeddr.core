@@ -2,8 +2,8 @@
 <model ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:c473d4a9-f86e-463a-bf76-f8263f085aec(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -179,13 +179,13 @@
         <node concept="3F0ifn" id="5JsRhvxdzY" role="3EZMnx">
           <property role="3F0ifm" value="☸" />
           <node concept="VechU" id="5JsRhvxdCq" role="3F10Kt">
-            <property role="Vb096" value="LIGHT_BLUE" />
+            <property role="Vb096" value="hGRnIZc/lightBlue" />
           </node>
         </node>
         <node concept="3F0ifn" id="5JsRhvuNBX" role="3EZMnx">
           <property role="3F0ifm" value="models synthesis config:" />
           <node concept="VechU" id="5JsRhvwhJw" role="3F10Kt">
-            <property role="Vb096" value="DARK_MAGENTA" />
+            <property role="Vb096" value="g1_qVrt/darkMagenta" />
           </node>
         </node>
         <node concept="3EZMnI" id="5JsRhvuNIf" role="3EZMnx">
@@ -393,13 +393,13 @@
         <node concept="3F0ifn" id="5JsRhvxdvh" role="3EZMnx">
           <property role="3F0ifm" value="✅" />
           <node concept="VechU" id="5JsRhvxdvv" role="3F10Kt">
-            <property role="Vb096" value="green" />
+            <property role="Vb096" value="fLwANPr/green" />
           </node>
         </node>
         <node concept="3F0ifn" id="484XVyxOHMc" role="3EZMnx">
           <property role="3F0ifm" value="checking config:" />
           <node concept="VechU" id="5JsRhvwhJ$" role="3F10Kt">
-            <property role="Vb096" value="DARK_MAGENTA" />
+            <property role="Vb096" value="g1_qVrt/darkMagenta" />
           </node>
         </node>
         <node concept="l2Vlx" id="484XVyxOHMd" role="2iSdaV" />
@@ -489,13 +489,13 @@
         <node concept="3F0ifn" id="2zqpPfizysE" role="3EZMnx">
           <property role="3F0ifm" value="✅" />
           <node concept="VechU" id="2zqpPfizysF" role="3F10Kt">
-            <property role="Vb096" value="green" />
+            <property role="Vb096" value="fLwANPr/green" />
           </node>
         </node>
         <node concept="3F0ifn" id="2zqpPfizysG" role="3EZMnx">
           <property role="3F0ifm" value="editor (smart) actions checking config:" />
           <node concept="VechU" id="2zqpPfizysH" role="3F10Kt">
-            <property role="Vb096" value="DARK_MAGENTA" />
+            <property role="Vb096" value="g1_qVrt/darkMagenta" />
           </node>
         </node>
         <node concept="l2Vlx" id="2zqpPfizysI" role="2iSdaV" />
@@ -509,7 +509,7 @@
         <node concept="3F0ifn" id="2zqpPfizDa4" role="3EZMnx">
           <property role="3F0ifm" value="check that existing models can be instantiated again via the editor (e.g. discover bugs in constraints) " />
           <node concept="VechU" id="2zqpPfizDad" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
           </node>
         </node>
         <node concept="l2Vlx" id="2zqpPfizD3b" role="2iSdaV" />
@@ -728,7 +728,7 @@
         <node concept="3F0ifn" id="30nlpkL5nwT" role="3EZMnx">
           <property role="3F0ifm" value="mutated" />
           <node concept="VechU" id="30nlpkL9kmD" role="3F10Kt">
-            <property role="Vb096" value="red" />
+            <property role="Vb096" value="fLwANPn/red" />
           </node>
         </node>
         <node concept="3F0ifn" id="3acDVtI_ylT" role="3EZMnx">
@@ -749,7 +749,7 @@
       </node>
       <node concept="2SsqMj" id="30nlpkL5nxi" role="3EZMnx">
         <node concept="Veino" id="30nlpkL5nz2" role="3F10Kt">
-          <property role="Vb096" value="LIGHT_BLUE" />
+          <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
       </node>
       <node concept="2iRkQZ" id="30nlpkL5nwJ" role="2iSdaV" />
@@ -770,7 +770,7 @@
         <node concept="3F0ifn" id="tJrHRTVPJX" role="3EZMnx">
           <property role="3F0ifm" value="ERROR" />
           <node concept="Veino" id="3OCr4RAR13W" role="3F10Kt">
-            <property role="Vb096" value="red" />
+            <property role="Vb096" value="fLwANPn/red" />
           </node>
         </node>
         <node concept="3F0A7n" id="64cByBTL3mK" role="3EZMnx">
@@ -785,7 +785,7 @@
       <node concept="3F0ifn" id="7VeUlv6ZvDW" role="3EZMnx">
         <property role="3F0ifm" value="StackTrace" />
         <node concept="Veino" id="7VeUlv6ZvDX" role="3F10Kt">
-          <property role="Vb096" value="red" />
+          <property role="Vb096" value="fLwANPn/red" />
         </node>
       </node>
       <node concept="3F0A7n" id="7VeUlv6ZvDY" role="3EZMnx">
@@ -881,7 +881,7 @@
       <node concept="3F0ifn" id="35FiawLuTEU" role="3EZMnx">
         <property role="3F0ifm" value="(check instantiability of nodes from this model)" />
         <node concept="VechU" id="35FiawLuTF2" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
       </node>
       <node concept="l2Vlx" id="2zqpPfi$27l" role="2iSdaV" />

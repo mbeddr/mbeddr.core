@@ -2,7 +2,7 @@
 <model ref="r:71832b82-d87a-4966-ac3d-65fac49d19ae(com.mbeddr.mpsutil.suppresswarning.gen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -131,7 +131,7 @@
           <property role="3F0ifm" value="@Check category" />
           <ref role="1ERwB7" node="4uzYbTZcVNI" resolve="CheckCategoryAnnotation_Delete" />
           <node concept="VechU" id="7U3Fobb_8H1" role="3F10Kt">
-            <property role="Vb096" value="orange" />
+            <property role="Vb096" value="fLwANPp/orange" />
           </node>
           <node concept="11LMrY" id="79g_UwJYzTp" role="3F10Kt">
             <property role="VOm3f" value="false" />
@@ -148,7 +148,7 @@
     <property role="TrG5h" value="CheckCategoryAnnotation_Delete" />
     <ref role="1h_SK9" to="szok:7U3Fobb_Ynz" resolve="CheckCategoryAnnotation" />
     <node concept="1hA7zw" id="4uzYbTZcVNJ" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="4uzYbTZcVNK" role="1hA7z_">
         <node concept="3clFbS" id="4uzYbTZcVNL" role="2VODD2">
           <node concept="3clFbF" id="4uzYbTZd6fM" role="3cqZAp">
@@ -165,7 +165,7 @@
     <ref role="1XX52x" to="szok:7U3FobbBed$" resolve="KindReference" />
     <node concept="1HlG4h" id="79g_UwJZyB4" role="2wV5jI">
       <node concept="VechU" id="79g_UwJZLeB" role="3F10Kt">
-        <property role="Vb096" value="orange" />
+        <property role="Vb096" value="fLwANPp/orange" />
       </node>
       <node concept="1HfYo3" id="79g_UwJZyB6" role="1HlULh">
         <node concept="3TQlhw" id="79g_UwJZyB8" role="1Hhtcw">

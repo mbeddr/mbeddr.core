@@ -55,9 +55,9 @@
     </node>
     <node concept="1TJgyj" id="2S2eLhiN8e9" role="1TKVEi">
       <property role="IQ2ns" value="3315277234172625801" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="linkedTo" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2S2eLhiN8eg" resolve="GraphEdge" />
     </node>
     <node concept="PrWs8" id="2S2eLhiN6xG" role="PzmwI">
@@ -85,9 +85,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2S2eLhiN8eq" role="1TKVEi">
       <property role="IQ2ns" value="3315277234172625818" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="graphNode" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2S2eLhiN6xF" resolve="GraphNode" />
     </node>
   </node>
@@ -99,9 +98,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2S2eLhiN8et" role="1TKVEi">
       <property role="IQ2ns" value="3315277234172625821" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="graphNodes" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2S2eLhiN6xF" resolve="GraphNode" />
     </node>
     <node concept="PrWs8" id="2S2eLhiN8ev" role="PzmwI">

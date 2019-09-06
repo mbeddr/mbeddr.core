@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -167,11 +168,8 @@
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -211,6 +209,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -630,8 +636,31 @@
               </node>
             </node>
             <node concept="3SKdUt" id="55eOZdvWiQ2" role="3cqZAp">
-              <node concept="3SKdUq" id="55eOZdvWjyg" role="3SKWNk">
-                <property role="3SKdUp" value="under windows we have both slashes in path" />
+              <node concept="1PaTwC" id="17qUVvSZkTl" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkTm" role="1PaTwD">
+                  <property role="3oM_SC" value="under" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTn" role="1PaTwD">
+                  <property role="3oM_SC" value="windows" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTo" role="1PaTwD">
+                  <property role="3oM_SC" value="we" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTp" role="1PaTwD">
+                  <property role="3oM_SC" value="have" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTq" role="1PaTwD">
+                  <property role="3oM_SC" value="both" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTr" role="1PaTwD">
+                  <property role="3oM_SC" value="slashes" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTs" role="1PaTwD">
+                  <property role="3oM_SC" value="in" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTt" role="1PaTwD">
+                  <property role="3oM_SC" value="path" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="1UfP5ow0Gnd" role="3cqZAp">
@@ -775,13 +804,47 @@
         </node>
         <node concept="3clFbH" id="t7rMogLF$K" role="3cqZAp" />
         <node concept="3SKdUt" id="t7rMogLFNa" role="3cqZAp">
-          <node concept="3SKdUq" id="t7rMogLFW2" role="3SKWNk">
-            <property role="3SKdUp" value="the path is relative" />
+          <node concept="1PaTwC" id="17qUVvSZkTu" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkTv" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkTw" role="1PaTwD">
+              <property role="3oM_SC" value="path" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkTx" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkTy" role="1PaTwD">
+              <property role="3oM_SC" value="relative" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="55eOZdvWrGE" role="3cqZAp">
-          <node concept="3SKdUq" id="55eOZdvWrGF" role="3SKWNk">
-            <property role="3SKdUp" value="under windows we have both slashes in path" />
+          <node concept="1PaTwC" id="17qUVvSZkTz" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkT$" role="1PaTwD">
+              <property role="3oM_SC" value="under" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkT_" role="1PaTwD">
+              <property role="3oM_SC" value="windows" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkTA" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkTB" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkTC" role="1PaTwD">
+              <property role="3oM_SC" value="both" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkTD" role="1PaTwD">
+              <property role="3oM_SC" value="slashes" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkTE" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkTF" role="1PaTwD">
+              <property role="3oM_SC" value="path" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="t7rMogLIXs" role="3cqZAp">
@@ -1296,8 +1359,64 @@
         <node concept="3clFbJ" id="48FvRI$wCGB" role="3cqZAp">
           <node concept="3clFbS" id="48FvRI$wCGE" role="3clFbx">
             <node concept="3SKdUt" id="48FvRI$xaSW" role="3cqZAp">
-              <node concept="3SKdUq" id="48FvRI$xaT4" role="3SKWNk">
-                <property role="3SKdUp" value="we come here if the module resides in a JAR file (e.g. from JUnit tests on the build server)" />
+              <node concept="1PaTwC" id="17qUVvSZkTG" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkTH" role="1PaTwD">
+                  <property role="3oM_SC" value="we" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTI" role="1PaTwD">
+                  <property role="3oM_SC" value="come" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTJ" role="1PaTwD">
+                  <property role="3oM_SC" value="here" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTK" role="1PaTwD">
+                  <property role="3oM_SC" value="if" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTL" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTM" role="1PaTwD">
+                  <property role="3oM_SC" value="module" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTN" role="1PaTwD">
+                  <property role="3oM_SC" value="resides" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTO" role="1PaTwD">
+                  <property role="3oM_SC" value="in" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTP" role="1PaTwD">
+                  <property role="3oM_SC" value="a" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTQ" role="1PaTwD">
+                  <property role="3oM_SC" value="JAR" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTR" role="1PaTwD">
+                  <property role="3oM_SC" value="file" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTS" role="1PaTwD">
+                  <property role="3oM_SC" value="(e.g." />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTT" role="1PaTwD">
+                  <property role="3oM_SC" value="from" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTU" role="1PaTwD">
+                  <property role="3oM_SC" value="JUnit" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTV" role="1PaTwD">
+                  <property role="3oM_SC" value="tests" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTW" role="1PaTwD">
+                  <property role="3oM_SC" value="on" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTX" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTY" role="1PaTwD">
+                  <property role="3oM_SC" value="build" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkTZ" role="1PaTwD">
+                  <property role="3oM_SC" value="server)" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="48FvRI$xPWq" role="3cqZAp">
