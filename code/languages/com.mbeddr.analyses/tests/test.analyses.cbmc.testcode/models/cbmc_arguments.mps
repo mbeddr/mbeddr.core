@@ -187,6 +187,9 @@
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
@@ -198,6 +201,9 @@
       <concept id="8551646674110395547" name="com.mbeddr.core.modules.structure.FunctionRefType" flags="ng" index="pFrBc">
         <child id="8551646674110395549" name="argTypes" index="pFrBa" />
         <child id="8551646674110395548" name="returnType" index="pFrBb" />
+      </concept>
+      <concept id="1028666136487545270" name="com.mbeddr.core.modules.structure.CommentModuleContent" flags="ng" index="2B_Gvg">
+        <child id="1028666136487550078" name="text" index="2B_H8o" />
       </concept>
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
@@ -234,6 +240,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -324,34 +333,11 @@
     <node concept="2NXPZ9" id="oxt36$afxc" role="N3F5h">
       <property role="TrG5h" value="empty_1346846121984_1" />
     </node>
-    <node concept="N3Fnx" id="oxt36$aePE" role="N3F5h">
-      <property role="TrG5h" value="analysisDepth18" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="oxt36$aePF" role="3XIRFX">
-        <node concept="Y9XUq" id="oxt36$afyX" role="3XIRFZ">
-          <node concept="3TlMhd" id="oxt36$afyY" role="Y9XUp" />
-        </node>
-      </node>
-      <node concept="19Rifw" id="oxt36$aePN" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="19RgSI" id="oxt36$aePO" role="1UOdpc">
-        <property role="TrG5h" value="par" />
-        <node concept="26Vqpq" id="oxt36$aePP" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-    </node>
     <node concept="2NXPZ9" id="oxt36$adhm" role="N3F5h">
       <property role="TrG5h" value="empty_1367053147086_3" />
     </node>
-    <node concept="2NXPZ9" id="oxt36$afyZ" role="N3F5h">
-      <property role="TrG5h" value="empty_1367053805506_6" />
-    </node>
     <node concept="N3Fnx" id="oxt36$adhn" role="N3F5h">
-      <property role="TrG5h" value="analysisDepth19" />
+      <property role="TrG5h" value="analysisDepth1" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="oxt36$adho" role="3XIRFX">
         <node concept="1_9egQ" id="oxt36$adh$" role="3XIRFZ">
@@ -379,12 +365,30 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="1z9TsT" id="3Thx9qBQp$v" role="lGtFl">
+        <node concept="OjmMv" id="3Thx9qBQp$w" role="1w35rA">
+          <node concept="19SGf9" id="3Thx9qBQp$x" role="OjmMu">
+            <node concept="19SUe$" id="3Thx9qBQp$y" role="19SJt6">
+              <property role="19SUeA" value="in the analysis configuration, the asserion checking is done with very small depth =&gt; the assertion is not reached and thereby the analysis is GREEN" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2NXPZ9" id="oxt36$aePQ" role="N3F5h">
       <property role="TrG5h" value="empty_1367053437196_4" />
     </node>
+    <node concept="2B_Gvg" id="3Thx9qBQpX_" role="N3F5h">
+      <node concept="OjmMv" id="3Thx9qBQpXB" role="2B_H8o">
+        <node concept="19SGf9" id="3Thx9qBQpXC" role="OjmMu">
+          <node concept="19SUe$" id="3Thx9qBQpXD" role="19SJt6">
+            <property role="19SUeA" value="this is checked in the analysis configuration with a sufficient depth" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="N3Fnx" id="oxt36$a9SV" role="N3F5h">
-      <property role="TrG5h" value="analysisDepth21" />
+      <property role="TrG5h" value="analysisDepth2" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="oxt36$a9SW" role="3XIRFX">
         <node concept="c0U19" id="oxt36$a9SX" role="3XIRFZ">
@@ -554,29 +558,17 @@
     <node concept="3GEVxB" id="6b3VADyz16R" role="3W6d8T">
       <ref role="3GEb4d" node="6b3VADyz0Ie" resolve="localize_faults" />
     </node>
-    <node concept="1nvAUJ" id="oxt36$aePR" role="3V$2$K">
-      <property role="2lUGeZ" value="true" />
-      <property role="2lUHrg" value="25" />
-      <property role="2l50Ka" value="10" />
-      <property role="2lelRm" value="true" />
-      <property role="2lUGcN" value="false" />
-      <property role="2l50Mm" value="false" />
-      <property role="2lUGe1" value="true" />
-      <property role="2lUGdP" value="false" />
-      <property role="2lUGbD" value="16" />
-      <ref role="3V$Cn$" node="oxt36$aePE" resolve="analysisDepth18" />
-    </node>
     <node concept="1nvAUJ" id="oxt36$adhO" role="3V$2$K">
       <property role="2lUGeZ" value="true" />
       <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="19" />
+      <property role="2lUGbD" value="5" />
       <property role="2l50Ka" value="11" />
       <property role="2lelRm" value="true" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <property role="2lUGe1" value="true" />
       <property role="2lUGdP" value="false" />
-      <ref role="3V$Cn$" node="oxt36$adhn" resolve="analysisDepth19" />
+      <ref role="3V$Cn$" node="oxt36$adhn" resolve="analysisDepth1" />
     </node>
     <node concept="1nvAUJ" id="oxt36$a9TA" role="3V$2$K">
       <property role="2lUGeZ" value="true" />
@@ -587,15 +579,15 @@
       <property role="2l50Mm" value="false" />
       <property role="2lUGe1" value="true" />
       <property role="2lUGdP" value="false" />
-      <property role="2lUGbD" value="21" />
-      <ref role="3V$Cn$" node="oxt36$a9SV" resolve="analysisDepth21" />
+      <property role="2lUGbD" value="50" />
+      <ref role="3V$Cn$" node="oxt36$a9SV" resolve="analysisDepth2" />
     </node>
     <node concept="1nvAUJ" id="oxt36$adhl" role="3V$2$K">
       <property role="2lUGeZ" value="false" />
       <property role="2lUHrg" value="25" />
       <property role="2lUGbD" value="17" />
       <property role="2l50Ka" value="11" />
-      <ref role="3V$Cn$" node="oxt36$a9SV" resolve="analysisDepth21" />
+      <ref role="3V$Cn$" node="oxt36$a9SV" resolve="analysisDepth2" />
     </node>
     <node concept="1nvAUJ" id="7yZlKoqiI8a" role="3V$2$K">
       <property role="2lelRm" value="false" />
