@@ -17,7 +17,6 @@
   </languages>
   <imports>
     <import index="lj1a" ref="r:4678d28a-4cfe-45ce-be25-7ac92fa82f13(com.mbeddr.doc.typesystem)" />
-    <import index="11dg" ref="r:7d858e44-95d5-480a-95d8-19a428ba2fde(com.mbeddr.doc.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
