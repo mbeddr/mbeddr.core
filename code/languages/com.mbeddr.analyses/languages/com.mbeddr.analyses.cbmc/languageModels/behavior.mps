@@ -1424,6 +1424,72 @@
         <node concept="17QB3L" id="7yZlKoqiM15" role="3rvQeY" />
       </node>
     </node>
+    <node concept="13i0hz" id="6b3VADytW_I" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="localizeFaults" />
+      <node concept="3Tm1VV" id="6b3VADytW_J" role="1B3o_S" />
+      <node concept="10P_77" id="6b3VADytXX5" role="3clF45" />
+      <node concept="3clFbS" id="6b3VADytW_L" role="3clF47">
+        <node concept="3clFbJ" id="6b3VADytXXU" role="3cqZAp">
+          <node concept="3clFbS" id="6b3VADytXXV" role="3clFbx">
+            <node concept="3cpWs6" id="6b3VADytXXW" role="3cqZAp">
+              <node concept="2OqwBi" id="6b3VADytXXX" role="3cqZAk">
+                <node concept="13iPFW" id="6b3VADytXXY" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6b3VADyu1H0" role="2OqNvi">
+                  <ref role="3TsBF5" to="q5q6:6b3VADytZVC" resolve="localizeFaults" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6b3VADytXY0" role="3clFbw">
+            <node concept="13iPFW" id="6b3VADytXY1" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6b3VADytXY2" role="2OqNvi">
+              <ref role="3TsBF5" to="q5q6:7ehmsbAE0gk" resolve="hasLocalCbmcSettings" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6b3VADytXY3" role="3cqZAp">
+          <node concept="3clFbS" id="6b3VADytXY4" role="3clFbx">
+            <node concept="3cpWs6" id="6b3VADytXY5" role="3cqZAp">
+              <node concept="2OqwBi" id="6b3VADytXY6" role="3cqZAk">
+                <node concept="2OqwBi" id="6b3VADytXY7" role="2Oq$k0">
+                  <node concept="13iPFW" id="6b3VADytXY8" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="6b3VADytXY9" role="2OqNvi">
+                    <node concept="1xMEDy" id="6b3VADytXYa" role="1xVPHs">
+                      <node concept="chp4Y" id="6b3VADytXYb" role="ri$Ld">
+                        <ref role="cht4Q" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6b3VADytY$6" role="2OqNvi">
+                  <ref role="37wK5l" node="6b3VADytW_I" resolve="localizeFaults" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6b3VADytXYd" role="3clFbw">
+            <node concept="2OqwBi" id="6b3VADytXYe" role="2Oq$k0">
+              <node concept="13iPFW" id="6b3VADytXYf" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="6b3VADytXYg" role="2OqNvi">
+                <node concept="1xMEDy" id="6b3VADytXYh" role="1xVPHs">
+                  <node concept="chp4Y" id="6b3VADytXYi" role="ri$Ld">
+                    <ref role="cht4Q" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6b3VADytXYj" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6b3VADytYXg" role="3cqZAp">
+          <node concept="3clFbT" id="6b3VADytZ7g" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="1Qze4b3i4Bp" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -2113,6 +2179,19 @@
               <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
               <ref role="3cqZAo" to="tzyt:5zmbZKqV1tt" resolve="NO_ANALYSIS_DEPTH_STRING" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="78L4hw8tdoz" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="supportsReplaceCall" />
+      <node concept="3Tm1VV" id="78L4hw8tdo$" role="1B3o_S" />
+      <node concept="10P_77" id="78L4hw8teC2" role="3clF45" />
+      <node concept="3clFbS" id="78L4hw8tdoA" role="3clF47">
+        <node concept="3clFbF" id="78L4hw8teDf" role="3cqZAp">
+          <node concept="3clFbT" id="78L4hw8teDe" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
