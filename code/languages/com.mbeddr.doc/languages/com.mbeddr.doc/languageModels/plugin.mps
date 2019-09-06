@@ -615,9 +615,8 @@
     <property role="TrG5h" value="placeGeneratedFiles" />
     <node concept="15KeUm" id="7dpRDOjHSh5" role="15LFul">
       <property role="TrG5h" value="cleanDocGen" />
-      <property role="2w7fpF" value="TRANSFORM" />
       <node concept="15KeVb" id="7dpRDOjIj6w" role="15LFui">
-        <property role="3HPxAp" value="AFTER" />
+        <property role="3HPxAp" value="7fB872ucjBA/AFTER" />
         <ref role="15KeV8" to="tpcq:5L5h3brvz8m" resolve="configure" />
       </node>
       <node concept="15KeVb" id="7dpRDOjIkQr" role="15LFui">
@@ -694,7 +693,7 @@
                                     <node concept="TDmWw" id="2DWJLXXASXo" role="TEbGg">
                                       <node concept="3clFbS" id="2DWJLXXASXr" role="TDEfX">
                                         <node concept="RRSsy" id="2DWJLXXzTP6" role="3cqZAp">
-                                          <property role="RRSoG" value="error" />
+                                          <property role="RRSoG" value="gZ5fh_4/error" />
                                           <node concept="Xl_RD" id="2DWJLXXzTP8" role="RRSoy">
                                             <property role="Xl_RC" value="Can't delete doc_gen content" />
                                           </node>
@@ -719,7 +718,7 @@
                                       </node>
                                       <node concept="3clFbS" id="30PIwxM_UtC" role="TDEfX">
                                         <node concept="RRSsy" id="30PIwxM_VjY" role="3cqZAp">
-                                          <property role="RRSoG" value="error" />
+                                          <property role="RRSoG" value="gZ5fh_4/error" />
                                           <node concept="Xl_RD" id="30PIwxM_Vk0" role="RRSoy">
                                             <property role="Xl_RC" value="Can't delete as file is null" />
                                           </node>
@@ -758,7 +757,7 @@
                               </node>
                               <node concept="3clFbS" id="2DWJLXXA_X_" role="3eOfB_">
                                 <node concept="RRSsy" id="2DWJLXXAF47" role="3cqZAp">
-                                  <property role="RRSoG" value="error" />
+                                  <property role="RRSoG" value="gZ5fh_4/error" />
                                   <node concept="Xl_RD" id="2DWJLXXAF49" role="RRSoy">
                                     <property role="Xl_RC" value="Can't get doc_gen folder" />
                                   </node>
@@ -778,7 +777,7 @@
                               </node>
                               <node concept="3clFbS" id="2DWJLXXAF8k" role="3eOfB_">
                                 <node concept="RRSsy" id="2DWJLXXAHTs" role="3cqZAp">
-                                  <property role="RRSoG" value="info" />
+                                  <property role="RRSoG" value="h1akgim/info" />
                                   <node concept="Xl_RD" id="2DWJLXXAHTu" role="RRSoy">
                                     <property role="Xl_RC" value="doc_gen folder doesn't exist nothing to clean" />
                                   </node>
@@ -808,7 +807,7 @@
                         <node concept="9aQIb" id="2DWJLXXzKO5" role="9aQIa">
                           <node concept="3clFbS" id="2DWJLXXzKO6" role="9aQI4">
                             <node concept="RRSsy" id="2DWJLXXzKWY" role="3cqZAp">
-                              <property role="RRSoG" value="error" />
+                              <property role="RRSoG" value="gZ5fh_4/error" />
                               <node concept="Xl_RD" id="2DWJLXXzKX0" role="RRSoy">
                                 <property role="Xl_RC" value="Module is not a AbstractModule" />
                               </node>
@@ -845,7 +844,7 @@
     </node>
     <node concept="15KeUm" id="2cjkfC8rZMx" role="15LFul">
       <property role="TrG5h" value="placeFiles" />
-      <property role="2w7fpF" value="CONSUME" />
+      <property role="2w7fpF" value="1t0JkeRn4GA/CONSUME" />
       <node concept="2aLE7I" id="2cjkfC8rZMy" role="ElM8M">
         <node concept="ElOhj" id="2cjkfC8rZMz" role="2aLE7H">
           <node concept="3clFbS" id="2cjkfC8rZM$" role="2VODD2">
@@ -1317,7 +1316,7 @@
                                                       </node>
                                                       <node concept="3clFbS" id="271UTRKH3__" role="TDEfX">
                                                         <node concept="RRSsy" id="271UTRKH58d" role="3cqZAp">
-                                                          <property role="RRSoG" value="error" />
+                                                          <property role="RRSoG" value="gZ5fh_4/error" />
                                                           <node concept="Xl_RD" id="271UTRKH58f" role="RRSoy">
                                                             <property role="Xl_RC" value="Failed to copy default images folder to doc gen output" />
                                                           </node>
@@ -1449,7 +1448,7 @@
         </node>
       </node>
       <node concept="15KeVb" id="2cjkfC8s5qM" role="15LFui">
-        <property role="3HPxAp" value="AFTER" />
+        <property role="3HPxAp" value="7fB872ucjBA/AFTER" />
         <ref role="15KeV8" to="tpcq:5L5h3brvDHA" resolve="textGen" />
       </node>
       <node concept="15KeVb" id="2cjkfC8s5qO" role="15LFui">

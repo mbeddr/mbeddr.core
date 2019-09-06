@@ -45,16 +45,14 @@
     <property role="EcuMT" value="6416473402306197330" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="5$bT90ZcZtG" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="path" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="6416473402306197356" />
       <ref role="20lvS9" to="2c95:5yxqZJwzC3r" resolve="PathDefinition" />
     </node>
     <node concept="1TJgyj" id="7$DvC4gPSIs" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="section" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8730648445432859548" />
       <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -65,23 +63,23 @@
       <ref role="PrY4T" to="2c95:47ZkZt5YzN8" resolve="IFloating" />
     </node>
     <node concept="1TJgyj" id="7uLL3Mf1Tk4" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="sizeSpec" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8624890525767931140" />
       <ref role="20lvS9" to="2c95:7uLL3Mf0t_w" resolve="FigureSizeSpec" />
     </node>
     <node concept="1TJgyj" id="7$DvC4gQTYZ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="description" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8730648445433126847" />
       <ref role="20lvS9" to="vs0r:7gVrg_0tw6m" resolve="TextBlock" />
     </node>
     <node concept="1TJgyj" id="54ozzUwooJ9" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="hints" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5843576916143082441" />
       <ref role="20lvS9" to="tpc2:5UHFGFk4ozs" resolve="ConceptEditorHintDeclarationReference" />
     </node>

@@ -5,8 +5,8 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -295,12 +295,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -407,33 +406,33 @@
                 <ref role="2pJxaS" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
                 <node concept="2pJxcG" id="3$GaJTCVbJB" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:hnGE5uv" resolve="virtualPackage" />
-                  <node concept="Xl_RD" id="3$GaJTCVbLL" role="2pJxcZ">
+                  <node concept="Xl_RD" id="3$GaJTCVbLL" role="28ntcv">
                     <property role="Xl_RC" value="config" />
                   </node>
                 </node>
                 <node concept="2pJxcG" id="3$GaJTCV33k" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                  <node concept="Xl_RD" id="3$GaJTCV33O" role="2pJxcZ">
+                  <node concept="Xl_RD" id="3$GaJTCV33O" role="28ntcv">
                     <property role="Xl_RC" value="Config" />
                   </node>
                 </node>
                 <node concept="2pIpSj" id="3$GaJTCV34F" role="2pJxcM">
                   <ref role="2pIpSl" to="2c95:519ky_SprCS" resolve="defaultTempPath" />
-                  <node concept="2pJPED" id="3$GaJTCV35h" role="2pJxcZ">
+                  <node concept="2pJPED" id="3$GaJTCV35h" role="28nt2d">
                     <ref role="2pJxaS" to="2c95:5yxqZJwzC3r" resolve="PathDefinition" />
                     <node concept="2pJxcG" id="3$GaJTCV35I" role="2pJxcM">
                       <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                      <node concept="Xl_RD" id="3$GaJTCV36y" role="2pJxcZ">
+                      <node concept="Xl_RD" id="3$GaJTCV36y" role="28ntcv">
                         <property role="Xl_RC" value="temp" />
                       </node>
                     </node>
                     <node concept="2pIpSj" id="3$GaJTCV37r" role="2pJxcM">
                       <ref role="2pIpSl" to="2c95:2iGZqsHuOq2" resolve="pathPicker" />
-                      <node concept="2pJPED" id="3$GaJTCV387" role="2pJxcZ">
+                      <node concept="2pJPED" id="3$GaJTCV387" role="28nt2d">
                         <ref role="2pJxaS" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
                         <node concept="2pJxcG" id="3$GaJTCV3m_" role="2pJxcM">
                           <ref role="2pJxcJ" to="68mc:5lKnBeAtODI" resolve="path" />
-                          <node concept="Xl_RD" id="3$GaJTCV3n5" role="2pJxcZ">
+                          <node concept="Xl_RD" id="3$GaJTCV3n5" role="28ntcv">
                             <property role="Xl_RC" value="temp" />
                           </node>
                         </node>
@@ -458,29 +457,29 @@
                 <ref role="2pJxaS" to="2c95:2TZO3DbvPDI" resolve="DocumentExport" />
                 <node concept="2pJxcG" id="3$GaJTCVbOa" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:hnGE5uv" resolve="virtualPackage" />
-                  <node concept="Xl_RD" id="3$GaJTCVbQo" role="2pJxcZ">
+                  <node concept="Xl_RD" id="3$GaJTCVbQo" role="28ntcv">
                     <property role="Xl_RC" value="config" />
                   </node>
                 </node>
                 <node concept="2pJxcG" id="3$GaJTCV9Hu" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                  <node concept="Xl_RD" id="3$GaJTCV9IC" role="2pJxcZ">
+                  <node concept="Xl_RD" id="3$GaJTCV9IC" role="28ntcv">
                     <property role="Xl_RC" value="DocumentExport" />
                   </node>
                 </node>
                 <node concept="2pJxcG" id="3$GaJTCV9JL" role="2pJxcM">
                   <ref role="2pJxcJ" to="2c95:72XbSXEzBI" resolve="title" />
-                  <node concept="Xl_RD" id="3$GaJTCV9Kn" role="2pJxcZ">
+                  <node concept="Xl_RD" id="3$GaJTCV9Kn" role="28ntcv">
                     <property role="Xl_RC" value="My first export" />
                   </node>
                 </node>
                 <node concept="2pIpSj" id="3$GaJTCV9LC" role="2pJxcM">
                   <ref role="2pIpSl" to="2c95:5gTlpaky6t1" resolve="root" />
-                  <node concept="2pJPED" id="3$GaJTCV9XM" role="2pJxcZ">
+                  <node concept="2pJPED" id="3$GaJTCV9XM" role="28nt2d">
                     <ref role="2pJxaS" to="2c95:2TZO3DbvI5D" resolve="DocumentRef" />
                     <node concept="2pIpSj" id="3$GaJTCV9Yf" role="2pJxcM">
                       <ref role="2pIpSl" to="2c95:2TZO3DbvI5E" resolve="doc" />
-                      <node concept="36biLy" id="3$GaJTCV9YJ" role="2pJxcZ">
+                      <node concept="36biLy" id="3$GaJTCV9YJ" role="28nt2d">
                         <node concept="2OqwBi" id="3$GaJTCWQMB" role="36biLW">
                           <node concept="2WthIp" id="3$GaJTCWQME" role="2Oq$k0" />
                           <node concept="3gHZIF" id="3$GaJTCWQMG" role="2OqNvi">
@@ -493,17 +492,17 @@
                 </node>
                 <node concept="2pIpSj" id="3$GaJTCV9PE" role="2pJxcM">
                   <ref role="2pIpSl" to="2c95:5gTlpaky6sZ" resolve="renderer" />
-                  <node concept="2pJPED" id="3$GaJTCV9Rx" role="2pJxcZ">
+                  <node concept="2pJPED" id="3$GaJTCV9Rx" role="28nt2d">
                     <ref role="2pJxaS" to="2c95:2TZO3DbvSLP" resolve="NullRenderer" />
                   </node>
                 </node>
                 <node concept="2pIpSj" id="3$GaJTCVb5M" role="2pJxcM">
                   <ref role="2pIpSl" to="2c95:5gTlpaky6t2" resolve="mappings" />
-                  <node concept="2pJPED" id="3$GaJTCVb6z" role="2pJxcZ">
+                  <node concept="2pJPED" id="3$GaJTCVb6z" role="28nt2d">
                     <ref role="2pJxaS" to="2c95:5yxqZJwzW1O" resolve="PathMapping" />
                     <node concept="2pIpSj" id="3$GaJTCVb8h" role="2pJxcM">
                       <ref role="2pIpSl" to="2c95:5yxqZJwzW1P" resolve="pathDef" />
-                      <node concept="36biLy" id="3$GaJTCVb8O" role="2pJxcZ">
+                      <node concept="36biLy" id="3$GaJTCVb8O" role="28nt2d">
                         <node concept="2OqwBi" id="3$GaJTCVbe8" role="36biLW">
                           <node concept="37vLTw" id="3$GaJTCVb9h" role="2Oq$k0">
                             <ref role="3cqZAo" node="3$GaJTCUFmg" resolve="dc" />
@@ -516,7 +515,7 @@
                     </node>
                     <node concept="2pJxcG" id="3$GaJTCVb72" role="2pJxcM">
                       <ref role="2pJxcJ" to="2c95:5yxqZJwzW1Q" resolve="mappedPath" />
-                      <node concept="Xl_RD" id="3$GaJTCVb7z" role="2pJxcZ">
+                      <node concept="Xl_RD" id="3$GaJTCVb7z" role="28ntcv">
                         <property role="Xl_RC" value="_vis" />
                       </node>
                     </node>
