@@ -132,12 +132,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -238,7 +237,7 @@
                 <ref role="2pJxaS" to="yz9a:5so5TTr6RXr" resolve="TestCase" />
                 <node concept="2pIpSj" id="60EGPLFGSEP" role="2pJxcM">
                   <ref role="2pIpSl" to="mj1l:hEaDaGor64" resolve="type" />
-                  <node concept="36biLy" id="60EGPLFGSET" role="2pJxcZ">
+                  <node concept="36biLy" id="60EGPLFGSET" role="28nt2d">
                     <node concept="2ShNRf" id="60EGPLFGSEQ" role="36biLW">
                       <node concept="3zrR0B" id="60EGPLFGSER" role="2ShVmc">
                         <node concept="3Tqbb2" id="60EGPLFGSES" role="3zrR0E">
@@ -250,13 +249,13 @@
                 </node>
                 <node concept="2pIpSj" id="60EGPLFGSEU" role="2pJxcM">
                   <ref role="2pIpSl" to="yz9a:5so5TTr6RXt" resolve="body" />
-                  <node concept="2pJPED" id="60EGPLFGSEV" role="2pJxcZ">
+                  <node concept="2pJPED" id="60EGPLFGSEV" role="28nt2d">
                     <ref role="2pJxaS" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
                   </node>
                 </node>
                 <node concept="2pJxcG" id="60EGPLFGSEW" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                  <node concept="Xl_RD" id="7Uz1bYM40kC" role="2pJxcZ">
+                  <node concept="Xl_RD" id="7Uz1bYM40kC" role="28ntcv">
                     <property role="Xl_RC" value="testCase1" />
                   </node>
                 </node>
@@ -289,13 +288,13 @@
                 <ref role="2pJxaS" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
                 <node concept="2pJxcG" id="60EGPLFGSHc" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                  <node concept="37vLTw" id="7Uz1bYM3TPk" role="2pJxcZ">
+                  <node concept="37vLTw" id="7Uz1bYM3TPk" role="28ntcv">
                     <ref role="3cqZAo" node="78Ts1skpkAX" resolve="name" />
                   </node>
                 </node>
                 <node concept="2pIpSj" id="60EGPLFGSHd" role="2pJxcM">
                   <ref role="2pIpSl" to="x27k:5_l8w1EmTdh" resolve="contents" />
-                  <node concept="36be1Y" id="28XegukkCE3" role="2pJxcZ">
+                  <node concept="36be1Y" id="28XegukkCE3" role="28nt2d">
                     <node concept="36biLy" id="60EGPLFGSHf" role="36be1Z">
                       <node concept="37vLTw" id="60EGPLFGSHe" role="36biLW">
                         <ref role="3cqZAo" node="7Uz1bYM40l2" resolve="main" />
@@ -324,15 +323,15 @@
                 <ref role="2pJxaS" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
                 <node concept="2pIpSj" id="60EGPLFGTeT" role="2pJxcM">
                   <ref role="2pIpSl" to="x27k:7LOsK3rQkUA" resolve="expression" />
-                  <node concept="2pJPED" id="60EGPLFGTeU" role="2pJxcZ">
+                  <node concept="2pJPED" id="60EGPLFGTeU" role="28nt2d">
                     <ref role="2pJxaS" to="yz9a:anPxzp2Iu_" resolve="ExecuteTestExpression" />
                     <node concept="2pIpSj" id="60EGPLFGTeV" role="2pJxcM">
                       <ref role="2pIpSl" to="yz9a:4VEDcE28GYo" resolve="tests" />
-                      <node concept="2pJPED" id="60EGPLFGTeW" role="2pJxcZ">
+                      <node concept="2pJPED" id="60EGPLFGTeW" role="28nt2d">
                         <ref role="2pJxaS" to="yz9a:4VEDcE28GXT" resolve="TestCaseRef" />
                         <node concept="2pIpSj" id="60EGPLFGTeX" role="2pJxcM">
                           <ref role="2pIpSl" to="yz9a:4VEDcE28GXU" resolve="testcase" />
-                          <node concept="36biLy" id="60EGPLFGTeZ" role="2pJxcZ">
+                          <node concept="36biLy" id="60EGPLFGTeZ" role="28nt2d">
                             <node concept="37vLTw" id="60EGPLFGTeY" role="36biLW">
                               <ref role="3cqZAo" node="7Uz1bYM40kr" resolve="tc" />
                             </node>

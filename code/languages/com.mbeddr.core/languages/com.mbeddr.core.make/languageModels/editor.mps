@@ -2,9 +2,9 @@
 <model ref="r:ba37bec2-7828-4ffa-9647-4547cb9898ae(com.mbeddr.core.make.editor)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
   </languages>
   <imports>
@@ -357,7 +357,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0A7n" id="6_CUGSFFq66" role="3EZMnx">
-        <ref role="1NtTu8" to="i2y7:6_CUGSFFpZF" resolve="assignmentType" />
+        <ref role="1NtTu8" to="i2y7:13p6s1wtfz4" resolve="assignmentType" />
       </node>
       <node concept="3F0A7n" id="2Vizpn2LYpE" role="3EZMnx">
         <property role="1O74Pk" value="true" />
@@ -396,7 +396,7 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <node concept="Vb9p2" id="2Vizpn2MCde" role="3F10Kt">
-              <property role="Vbekb" value="BOLD" />
+              <property role="Vbekb" value="g1_k_vY/BOLD" />
             </node>
           </node>
         </node>
@@ -434,7 +434,7 @@
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <node concept="Vb9p2" id="bzEfeAYe9p" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
         </node>
       </node>
@@ -450,7 +450,7 @@
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <node concept="Vb9p2" id="bzEfeAYMGg" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
         </node>
       </node>
@@ -468,7 +468,7 @@
         </node>
       </node>
       <node concept="Vb9p2" id="Dp4TemBLC1" role="3F10Kt">
-        <property role="Vbekb" value="ITALIC" />
+        <property role="Vbekb" value="g1_kEg4/ITALIC" />
       </node>
       <node concept="OXEIz" id="1WO2x6Zt9Gx" role="P5bDN">
         <node concept="ZcVJ$" id="1WO2x6Zt9Gw" role="OY2wv">
@@ -709,10 +709,10 @@
     <node concept="1Qtc8_" id="2cvVnUv6BKm" role="IW6Ez">
       <node concept="3cWJ9i" id="2cvVnUv6BKn" role="1Qtc8$">
         <node concept="CtIbL" id="2cvVnUv6BKo" role="CtIbM">
-          <property role="CtIbK" value="LEFT" />
+          <property role="CtIbK" value="1A4kJjlVmVt/LEFT" />
         </node>
         <node concept="CtIbL" id="2cvVnUv6BKp" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="L$LW2" id="2cvVnUv6BKq" role="1Qtc8A" />
@@ -720,7 +720,7 @@
     <node concept="1Qtc8_" id="2cvVnUv6BKt" role="IW6Ez">
       <node concept="3cWJ9i" id="2cvVnUv6BKr" role="1Qtc8$">
         <node concept="CtIbL" id="2cvVnUv6BKs" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="IWgqT" id="2cvVnUv6BKv" role="1Qtc8A">
@@ -791,7 +791,7 @@
                 <node concept="1OKiuA" id="2cvVnUv6BL3" role="2OqNvi">
                   <node concept="1Q80Hx" id="2cvVnUv6BL4" role="lBI5i" />
                   <node concept="2B6iha" id="2cvVnUv6BL5" role="lGT1i">
-                    <property role="1lyBwo" value="mostRelevant" />
+                    <property role="1lyBwo" value="59pBc0SIIVt/mostRelevant" />
                   </node>
                   <node concept="3cmrfG" id="2cvVnUv6BL6" role="3dN3m$">
                     <property role="3cmrfH" value="-1" />

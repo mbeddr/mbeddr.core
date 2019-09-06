@@ -1654,8 +1654,8 @@
                   <node concept="liA8E" id="4rHwORqB1Pk" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                     <node concept="2YIFZM" id="4rHwORqB1Pl" role="37wK5m">
-                      <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                       <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
+                      <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                     </node>
                   </node>
                   <node concept="2GrUjf" id="4rHwORqB1Pm" role="2Oq$k0">
@@ -1923,8 +1923,8 @@
               <ref role="3uigEE" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
             </node>
             <node concept="2YIFZM" id="3GFY9ZncysJ" role="33vP2m">
-              <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
               <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
             </node>
           </node>
         </node>

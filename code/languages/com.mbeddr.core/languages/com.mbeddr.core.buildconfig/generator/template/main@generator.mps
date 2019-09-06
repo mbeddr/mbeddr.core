@@ -2,16 +2,16 @@
 <model ref="r:5502bfb4-a967-4ca4-be6d-8754034c6d99(com.mbeddr.core.buildconfig.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
-    <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -283,9 +283,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -706,7 +704,6 @@
     <node concept="12Nxi1" id="2b2D8jU07M0" role="12RR68" />
     <node concept="3G52F3" id="1it8M3uXgNN" role="12RR68">
       <property role="TrG5h" value="TARGET" />
-      <property role="12Lnk_" value="=" />
       <property role="3G5mJX" value="target" />
       <node concept="1WS0z7" id="1it8M3uXmnr" role="lGtFl">
         <node concept="3JmXsc" id="1it8M3uXmnu" role="3Jn$fo">
@@ -1083,12 +1080,12 @@
     <node concept="3G52F3" id="1mGdcSSKgqo" role="12RR68">
       <property role="TrG5h" value="OROOT" />
       <property role="3G5mJX" value="./build" />
-      <property role="12Lnk_" value="?=" />
+      <property role="12Lnk_" value="6_CUGSFFpYb/?=" />
     </node>
     <node concept="3G52F3" id="2Rx8UqeMqzi" role="12RR68">
       <property role="TrG5h" value="OBJODIR" />
       <property role="3G5mJX" value=" ./bin" />
-      <property role="12Lnk_" value="?=" />
+      <property role="12Lnk_" value="6_CUGSFFpYb/?=" />
     </node>
     <node concept="12Nxi1" id="63XDlz5TE79" role="12RR68" />
     <node concept="3r3xyQ" id="63XDlz5TM$w" role="12RR68">
@@ -1100,7 +1097,6 @@
       </node>
       <node concept="3G52F3" id="63XDlz5TUDU" role="3r8OHu">
         <property role="TrG5h" value="TEST_EXEC_OPTS" />
-        <property role="12Lnk_" value="=" />
         <property role="3G5mJX" value="--build-dir=$(OROOT)" />
       </node>
       <node concept="3G52F3" id="63XDlz5U_jg" role="3r8OGI">
@@ -1569,7 +1565,6 @@
       </node>
       <node concept="3G52F3" id="6VqaxFaerhd" role="3r8OHu">
         <property role="TrG5h" value="EXT_INCDIRS" />
-        <property role="12Lnk_" value="=" />
         <property role="3G5mJX" value="externalIncludePaths" />
         <node concept="17Uvod" id="6VqaxFaerhe" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -1670,7 +1665,6 @@
       </node>
       <node concept="3G52F3" id="6VqaxFaerhH" role="3r8OHu">
         <property role="TrG5h" value="ALL_INCDIR_FLAGS" />
-        <property role="12Lnk_" value="=" />
         <property role="3G5mJX" value="$(addprefix -I,$(INCDIRS)) $(addprefix -I,$(EXT_INCDIRS))" />
         <node concept="17Uvod" id="6VqaxFaerhI" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -1715,7 +1709,6 @@
       </node>
       <node concept="3G52F3" id="6VqaxFaerhY" role="3r8OHu">
         <property role="TrG5h" value="ALL_INCS" />
-        <property role="12Lnk_" value="=" />
         <property role="3G5mJX" value="*.h $(foreach idir,$(INCDIRS),$(wildcard $(idir)/*.h)) $(foreach eidir,$(EXT_INCDIRS),$(wildcard $(eidir)/*.h))" />
         <node concept="17Uvod" id="6VqaxFaerhZ" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -1835,7 +1828,6 @@
       <node concept="12Nxi1" id="6VqaxFaerg0" role="3r8OHu" />
       <node concept="3G52F3" id="6VqaxFaerg1" role="3r8OHu">
         <property role="TrG5h" value="ALL_SRCS_" />
-        <property role="12Lnk_" value="=" />
         <property role="3G5mJX" value="*.c" />
         <node concept="17Uvod" id="6VqaxFaerg2" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -2995,7 +2987,6 @@
       </node>
       <node concept="3G52F3" id="6VqaxFadEeQ" role="3r8OHu">
         <property role="TrG5h" value="EXT_INCDIRS" />
-        <property role="12Lnk_" value="=" />
         <property role="3G5mJX" value="externalIncludePaths" />
         <node concept="17Uvod" id="6VqaxFadEeR" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -3096,7 +3087,6 @@
       </node>
       <node concept="3G52F3" id="6VqaxFadEfm" role="3r8OHu">
         <property role="TrG5h" value="ALL_INCDIR_FLAGS" />
-        <property role="12Lnk_" value="=" />
         <property role="3G5mJX" value="$(addprefix -I,$(INCDIRS)) $(addprefix -I,$(FOREIGN_MODEL_INCDIRS)) -I,$(MBEDDR_INCDIRS)) $(addprefix -I,$(EXT_INCDIRS))" />
         <node concept="17Uvod" id="6VqaxFadEfn" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -3165,7 +3155,6 @@
       </node>
       <node concept="3G52F3" id="6VqaxFadEfG" role="3r8OHu">
         <property role="TrG5h" value="ALL_INCS" />
-        <property role="12Lnk_" value="=" />
         <property role="3G5mJX" value="*.h $(foreach idir,$(INCDIRS),$(wildcard $(idir)/*.h)) $(foreach fmidir,$(FOREIGN_MODEL_INCDIRS),$(wildcard $(fmidir)/*.h) $(foreach midir,$(MBEDDR_INCDIRS),$(wildcard $(midir)/*.h) $(foreach eidir,$(EXT_INCDIRS),$(wildcard $(eidir)/*.h))" />
         <node concept="17Uvod" id="6VqaxFadEfH" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -3405,7 +3394,6 @@
       </node>
       <node concept="3G52F3" id="6VqaxFadEbr" role="3r8OHu">
         <property role="TrG5h" value="EXT_SRCDIR" />
-        <property role="12Lnk_" value="=" />
         <property role="3G5mJX" value="externalSourcePath" />
         <node concept="17Uvod" id="6VqaxFadEbs" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -3460,7 +3448,6 @@
       </node>
       <node concept="3G52F3" id="6VqaxFadEbM" role="3r8OHu">
         <property role="TrG5h" value="ALL_SRCS" />
-        <property role="12Lnk_" value="=" />
         <property role="3G5mJX" value="*.c $(FOREIGN_MODEL_SRCDIR)/*.c $(wildcard $(EXT_SRCDIR)/*.c))" />
         <node concept="17Uvod" id="6VqaxFadEbN" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -4072,7 +4059,7 @@
                               <ref role="2pJxaS" to="51wr:6eRyKv6L44j" resolve="ModelInfo" />
                               <node concept="2pJxcG" id="5yBZnF4ZsMs" role="2pJxcM">
                                 <ref role="2pJxcJ" to="51wr:6eRyKv6L44k" resolve="name" />
-                                <node concept="2OqwBi" id="5yBZnF4ZsMt" role="2pJxcZ">
+                                <node concept="2OqwBi" id="5yBZnF4ZsMt" role="28ntcv">
                                   <node concept="37vLTw" id="5yBZnF4ZsMu" role="2Oq$k0">
                                     <ref role="3cqZAo" node="5yBZnF4ZsMD" resolve="it" />
                                   </node>
@@ -4081,7 +4068,7 @@
                               </node>
                               <node concept="2pJxcG" id="5yBZnF4ZsMw" role="2pJxcM">
                                 <ref role="2pJxcJ" to="51wr:6eRyKv6P5qI" resolve="outputLocation" />
-                                <node concept="3K4zz7" id="5yBZnF4ZsMx" role="2pJxcZ">
+                                <node concept="3K4zz7" id="5yBZnF4ZsMx" role="28ntcv">
                                   <node concept="3y3z36" id="5yBZnF4ZsMy" role="3K4Cdx">
                                     <node concept="37vLTw" id="5yBZnF4ZsMz" role="3uHU7B">
                                       <ref role="3cqZAo" node="5yBZnF4ZsMl" resolve="outputLocation" />

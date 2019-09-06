@@ -123,6 +123,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="5779574625832259537" name="jetbrains.mps.lang.smodel.structure.EnumMember_PresentationOperation" flags="ng" index="1XCIdh" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -325,10 +326,13 @@
             <property role="lacIc" value=" " />
           </node>
           <node concept="l9hG8" id="6_CUGSFFqkx" role="lcghm">
-            <node concept="2OqwBi" id="6_CUGSFFqn_" role="lb14g">
-              <node concept="117lpO" id="6_CUGSFFqlh" role="2Oq$k0" />
-              <node concept="3TrcHB" id="6_CUGSFFqHG" role="2OqNvi">
-                <ref role="3TsBF5" to="i2y7:6_CUGSFFpZF" resolve="assignmentType" />
+            <node concept="2OqwBi" id="13p6s1wthJ3" role="lb14g">
+              <node concept="1XCIdh" id="13p6s1wthJ5" role="2OqNvi" />
+              <node concept="2OqwBi" id="6_CUGSFFqn_" role="2Oq$k0">
+                <node concept="117lpO" id="6_CUGSFFqlh" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6_CUGSFFqHG" role="2OqNvi">
+                  <ref role="3TsBF5" to="i2y7:13p6s1wtfz4" resolve="assignmentType" />
+                </node>
               </node>
             </node>
           </node>

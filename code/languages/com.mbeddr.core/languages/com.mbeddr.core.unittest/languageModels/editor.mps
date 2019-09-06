@@ -309,7 +309,7 @@
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F0A7n" id="5so5TTr6RXA" role="3EZMnx">
-        <property role="1cu_pB" value="2" />
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" to="r4b4:5v_KyvNCJ0N" resolve="StructuralIdentifier" />
       </node>
@@ -346,7 +346,6 @@
       </node>
       <node concept="l2Vlx" id="5so5TTr6S9t" role="2iSdaV" />
       <node concept="3F1sOY" id="5so5TTr6S9w" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="1NtTu8" to="yz9a:5so5TTr6S9o" resolve="expr" />
         <node concept="pkWqt" id="5so5TTr6UD4" role="cStSX">
           <node concept="3clFbS" id="5so5TTr6UD5" role="2VODD2">
@@ -410,13 +409,13 @@
     <node concept="14StLt" id="anPxzp2LWs" role="V601i">
       <property role="TrG5h" value="report" />
       <node concept="VechU" id="anPxzp2LWt" role="3F10Kt">
-        <property role="Vb096" value="blue" />
+        <property role="Vb096" value="fLwANPu/blue" />
       </node>
       <node concept="Vb9p2" id="anPxzp2P4t" role="3F10Kt">
-        <property role="Vbekb" value="ITALIC" />
+        <property role="Vbekb" value="g1_kEg4/ITALIC" />
       </node>
       <node concept="Veino" id="anPxzp2PvK" role="3F10Kt">
-        <property role="Vb096" value="lightGray" />
+        <property role="Vb096" value="fLJRk5A/lightGray" />
         <node concept="1iSF2X" id="anPxzp2PGr" role="VblUZ">
           <property role="1iTho6" value="EEEEEE" />
         </node>
@@ -585,7 +584,6 @@
       </node>
       <node concept="l2Vlx" id="7qHzltJ00zF" role="2iSdaV" />
       <node concept="PMmxH" id="5Hxjapwguft" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="3F1sOY" id="7qHzltJ00zK" role="3EZMnx">
@@ -605,7 +603,7 @@
     <property role="TrG5h" value="deleteStatement" />
     <ref role="1h_SK9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1hA7zw" id="7apEgWbKSQI" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="7apEgWbKSQJ" role="1hA7z_">
         <node concept="3clFbS" id="7apEgWbKSQK" role="2VODD2">
           <node concept="3clFbF" id="7apEgWbJM1e" role="3cqZAp">
@@ -841,7 +839,6 @@
     <ref role="1XX52x" to="yz9a:6Iyv0noEbti" resolve="StructuredBinOpAssertStatement" />
     <node concept="3EZMnI" id="6Iyv0noEbto" role="2wV5jI">
       <node concept="PMmxH" id="5HxjapwgufC" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="5so5TTr6URT" resolve="asserting" />
       </node>
@@ -930,7 +927,7 @@
     <property role="TrG5h" value="deleteTestHelper" />
     <ref role="1h_SK9" to="yz9a:78Ts1sksSoD" resolve="TestHelperFunctionAnnotation" />
     <node concept="1hA7zw" id="1nTCJdUhP_y" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="1nTCJdUhP_z" role="1hA7z_">
         <node concept="3clFbS" id="1nTCJdUhP_$" role="2VODD2">
           <node concept="3clFbF" id="1nTCJdUhQ0l" role="3cqZAp">
@@ -1149,7 +1146,7 @@
     <property role="TrG5h" value="deleteIgnore" />
     <ref role="1h_SK9" to="yz9a:6On3mjUaIW2" resolve="IgnoreAnnotation" />
     <node concept="1hA7zw" id="6On3mjUaJ7r" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="6On3mjUaJ7s" role="1hA7z_">
         <node concept="3clFbS" id="6On3mjUaJ7t" role="2VODD2">
           <node concept="3clFbF" id="6On3mjUaJ7J" role="3cqZAp">

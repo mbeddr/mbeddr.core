@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -22,12 +22,12 @@
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
@@ -382,6 +382,16 @@
       <ref role="PrY4T" node="5hcw$WGctfJ" resolve="IMultiPlatformConstruct" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5hcw$WGe5JR">
+    <property role="EcuMT" value="6074373273971874807" />
+    <property role="3GE5qa" value="portability" />
+    <property role="TrG5h" value="MultiPlatformFunctionCall" />
+    <property role="34LRSv" value="multi-platform function call" />
+    <ref role="1TJDcQ" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+    <node concept="PrWs8" id="5hcw$WGe5JS" role="PzmwI">
+      <ref role="PrY4T" node="5hcw$WGctfJ" resolve="IMultiPlatformConstruct" />
+    </node>
+  </node>
   <node concept="AxPO7" id="49XubMpsXFf">
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="NameManglingStrategy" />
@@ -412,16 +422,6 @@
     </node>
     <node concept="PrWs8" id="5hcw$WGctnB" role="PrDN$">
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5hcw$WGe5JR">
-    <property role="EcuMT" value="6074373273971874807" />
-    <property role="3GE5qa" value="portability" />
-    <property role="TrG5h" value="MultiPlatformFunctionCall" />
-    <property role="34LRSv" value="multi-platform function call" />
-    <ref role="1TJDcQ" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
-    <node concept="PrWs8" id="5hcw$WGe5JS" role="PzmwI">
-      <ref role="PrY4T" node="5hcw$WGctfJ" resolve="IMultiPlatformConstruct" />
     </node>
   </node>
 </model>

@@ -2,9 +2,9 @@
 <model ref="r:9c1c1236-1028-4c6e-8e58-34d90c5070e7(com.mbeddr.core.codereview.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
@@ -21,6 +21,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="hhch" ref="r:6c7111c6-ffee-4eb3-88d6-17dba9e005bf(com.mbeddr.core.codereview.behavior)" />
+    <import index="bqxk" ref="r:c93f2be3-1de1-4106-85fd-653ed63baac3(com.mbeddr.core.base.enumMigration)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -359,16 +360,20 @@
             </node>
             <node concept="1HlG4h" id="5SHUFrIjbt9" role="3EZMnx">
               <node concept="Vb9p2" id="5SHUFrImw4r" role="3F10Kt">
-                <property role="Vbekb" value="BOLD" />
+                <property role="Vbekb" value="g1_k_vY/BOLD" />
               </node>
               <node concept="1HfYo3" id="5SHUFrIjbtb" role="1HlULh">
                 <node concept="3TQlhw" id="5SHUFrIjbtd" role="1Hhtcw">
                   <node concept="3clFbS" id="5SHUFrIjbtf" role="2VODD2">
                     <node concept="3clFbF" id="5SHUFrIji1g" role="3cqZAp">
-                      <node concept="2OqwBi" id="5SHUFrIji5O" role="3clFbG">
-                        <node concept="pncrf" id="5SHUFrIji1f" role="2Oq$k0" />
-                        <node concept="3TrcHB" id="5SHUFrIjiIZ" role="2OqNvi">
-                          <ref role="3TsBF5" to="w8vz:1tDstbgKluR" resolve="codeState" />
+                      <node concept="2YIFZM" id="13p6s1wth$w" role="3clFbG">
+                        <ref role="37wK5l" to="bqxk:13p6s1wtcJy" resolve="value" />
+                        <ref role="1Pybhc" to="bqxk:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
+                        <node concept="2OqwBi" id="5SHUFrIji5O" role="37wK5m">
+                          <node concept="pncrf" id="5SHUFrIji1f" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="5SHUFrIjiIZ" role="2OqNvi">
+                            <ref role="3TsBF5" to="w8vz:13p6s1wtfz0" resolve="codeState" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -405,7 +410,7 @@
             <node concept="3F0A7n" id="gjBy3TbXn7" role="3EZMnx">
               <ref role="1NtTu8" to="w8vz:4g52gaNOHw7" resolve="lastReviewReviewer" />
               <node concept="Vb9p2" id="fx1tsH99uA" role="3F10Kt">
-                <property role="Vbekb" value="ITALIC" />
+                <property role="Vbekb" value="g1_kEg4/ITALIC" />
               </node>
             </node>
             <node concept="3F0ifn" id="4uR15_ei8am" role="3EZMnx">
@@ -607,7 +612,7 @@
     <property role="3GE5qa" value="codereview" />
     <ref role="1h_SK9" to="w8vz:4g52gaNN$a$" resolve="CodeReviewData" />
     <node concept="1hA7zw" id="rEiHtt6Lg2" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="rEiHtt6Lg3" role="1hA7z_">
         <node concept="3clFbS" id="rEiHtt6Lg4" role="2VODD2">
           <node concept="3clFbF" id="rEiHtt6Lgf" role="3cqZAp">
@@ -836,14 +841,14 @@
           </node>
         </node>
         <node concept="Vb9p2" id="4g52gaO4Wu2" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="l2Vlx" id="4g52gaNQ2_o" role="2iSdaV" />
       <node concept="3F0ifn" id="4g52gaO4WX9" role="3EZMnx">
         <property role="3F0ifm" value="|" />
         <node concept="Vb9p2" id="4g52gaO4Xf7" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="1HlG4h" id="5ZqHcKGK8Vn" role="3EZMnx">
@@ -954,7 +959,7 @@
     <node concept="14StLt" id="5SHUFrIjkZF" role="V601i">
       <property role="TrG5h" value="ready" />
       <node concept="Veino" id="5SHUFrIjrr4" role="3F10Kt">
-        <property role="Vb096" value="yellow" />
+        <property role="Vb096" value="fLwANPq/yellow" />
         <node concept="1iSF2X" id="5SHUFrIjs$A" role="VblUZ">
           <property role="1iTho6" value="faf89d" />
         </node>
