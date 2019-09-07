@@ -2,8 +2,8 @@
 <model ref="r:23ce84b3-7dc4-479d-a4ba-481817934114(com.mbeddr.doc.aspect.editor)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -209,10 +209,10 @@
         <node concept="3F0ifn" id="UK_oBpA4Fo" role="3EZMnx">
           <property role="3F0ifm" value="[Documents" />
           <node concept="Vb9p2" id="UK_oBpA4H3" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
           <node concept="VechU" id="UK_oBpA4Kn" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
+            <property role="Vb096" value="g1_qRwE/darkGreen" />
           </node>
         </node>
         <node concept="1iCGBv" id="UK_oBpA4Hn" role="3EZMnx">
@@ -222,7 +222,7 @@
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
               <node concept="VechU" id="UK_oBpA4NH" role="3F10Kt">
-                <property role="Vb096" value="blue" />
+                <property role="Vb096" value="fLwANPu/blue" />
               </node>
             </node>
           </node>
@@ -230,10 +230,10 @@
         <node concept="3F0ifn" id="UK_oBpAt3_" role="3EZMnx">
           <property role="3F0ifm" value="]" />
           <node concept="Vb9p2" id="UK_oBpAt3A" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
           <node concept="VechU" id="UK_oBpAt3B" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
+            <property role="Vb096" value="g1_qRwE/darkGreen" />
           </node>
         </node>
       </node>
@@ -405,10 +405,10 @@
           <property role="3F0ifm" value="[Documents" />
           <ref role="1ERwB7" node="6jNheA9q_CP" resolve="DocumentedPropertyAnnotation_ActionMap" />
           <node concept="Vb9p2" id="1o6EjwiSKwl" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
           <node concept="VechU" id="1o6EjwiSKwm" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
+            <property role="Vb096" value="g1_qRwE/darkGreen" />
           </node>
         </node>
         <node concept="1iCGBv" id="1o6EjwiSKwn" role="3EZMnx">
@@ -418,7 +418,7 @@
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
               <node concept="VechU" id="1o6EjwiSKwq" role="3F10Kt">
-                <property role="Vb096" value="blue" />
+                <property role="Vb096" value="fLwANPu/blue" />
               </node>
             </node>
           </node>
@@ -439,7 +439,7 @@
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
               <node concept="VechU" id="1o6EjwiSKAI" role="3F10Kt">
-                <property role="Vb096" value="blue" />
+                <property role="Vb096" value="fLwANPu/blue" />
               </node>
             </node>
           </node>
@@ -448,10 +448,10 @@
           <property role="3F0ifm" value="]" />
           <ref role="1ERwB7" node="6jNheA9q_CP" resolve="DocumentedPropertyAnnotation_ActionMap" />
           <node concept="Vb9p2" id="1o6EjwiSKws" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
           <node concept="VechU" id="1o6EjwiSKwt" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
+            <property role="Vb096" value="g1_qRwE/darkGreen" />
           </node>
         </node>
       </node>
@@ -462,7 +462,7 @@
   <node concept="1h_SRR" id="6jNheA9q_CP">
     <property role="TrG5h" value="DocumentedPropertyAnnotation_ActionMap" />
     <node concept="1hA7zw" id="6jNheA9q_CQ" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="6jNheA9q_CR" role="1hA7z_">
         <node concept="3clFbS" id="6jNheA9q_CS" role="2VODD2">
           <node concept="3clFbF" id="6jNheA9qDUp" role="3cqZAp">
@@ -475,7 +475,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="6jNheA9qDXM" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="6jNheA9qDXN" role="1hA7z_">
         <node concept="3clFbS" id="6jNheA9qDXO" role="2VODD2">
           <node concept="3clFbF" id="6jNheA9qDXP" role="3cqZAp">
