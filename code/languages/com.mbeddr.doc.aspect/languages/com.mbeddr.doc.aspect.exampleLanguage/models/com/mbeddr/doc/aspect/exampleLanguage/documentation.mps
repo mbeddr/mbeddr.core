@@ -95,6 +95,7 @@
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
@@ -309,7 +310,7 @@
           </node>
         </node>
         <node concept="2Sb_l4" id="YJrcxt4Nvk" role="2SbwM5">
-          <property role="2Sb_kV" value="images\20141103_142727.jpg" />
+          <property role="2Sb_kV" value="images/20141103_142727.jpg" />
           <ref role="2Sb_kU" node="5CkU_dHcLvT" resolve="tmp" />
         </node>
         <node concept="3SG1Pu" id="YJrcxt4Ogw" role="3SHJ_F">
@@ -329,12 +330,15 @@
       <node concept="9PVaO" id="5CkU_dHcLvU" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="." />
       </node>
     </node>
     <node concept="2SbYGw" id="47UE$_dUiYw" role="A10yx">
+      <property role="TrG5h" value="def" />
       <node concept="9PVaO" id="47UE$_dUiYv" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="." />
       </node>
     </node>
   </node>
