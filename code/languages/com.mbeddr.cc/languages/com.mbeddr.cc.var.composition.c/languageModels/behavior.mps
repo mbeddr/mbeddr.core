@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -119,9 +119,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -929,7 +927,7 @@
                 <ref role="2pJxaS" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
                 <node concept="2pIpSj" id="12n15PAdaZ4" role="2pJxcM">
                   <ref role="2pIpSl" to="x27k:5ak6HMA0red" resolve="function" />
-                  <node concept="36biLy" id="12n15PAdb2r" role="2pJxcZ">
+                  <node concept="36biLy" id="12n15PAdb2r" role="28nt2d">
                     <node concept="1PxgMI" id="12n15PAdbiK" role="36biLW">
                       <node concept="chp4Y" id="12n15PAdbk5" role="3oSUPX">
                         <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />

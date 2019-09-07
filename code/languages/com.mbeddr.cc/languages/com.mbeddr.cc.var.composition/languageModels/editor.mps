@@ -2,7 +2,7 @@
 <model ref="r:cbcf1573-e9f3-4829-a7ec-4101a2386c4c(com.mbeddr.cc.var.composition.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -263,16 +263,16 @@
     <node concept="14StLt" id="3YyHFqO5oWz" role="V601i">
       <property role="TrG5h" value="annotations" />
       <node concept="Veino" id="3YyHFqO5oW_" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
       </node>
       <node concept="VechU" id="3YyHFqO5oWE" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
     <node concept="14StLt" id="5be2k4k4zdO" role="V601i">
       <property role="TrG5h" value="keywords" />
       <node concept="VechU" id="5be2k4k4zdQ" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
   </node>
@@ -363,7 +363,7 @@
   <node concept="1h_SRR" id="5be2k4jT5A6">
     <property role="TrG5h" value="deleteAnnotation" />
     <node concept="1hA7zw" id="5be2k4jTcf6" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="5be2k4jTcf7" role="1hA7z_">
         <node concept="3clFbS" id="5be2k4jTicK" role="2VODD2">
           <node concept="3clFbF" id="5be2k4jTtrr" role="3cqZAp">
@@ -402,7 +402,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VLuvy" id="5be2k4jXOK1" role="3F10Kt">
-          <property role="Vb096" value="LIGHT_BLUE" />
+          <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
       </node>
       <node concept="2iRfu4" id="5be2k4jXNQV" role="2iSdaV" />
@@ -497,7 +497,7 @@
         <property role="VOm3f" value="true" />
       </node>
       <node concept="VLuvy" id="5B$wwdfidTi" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
       </node>
     </node>
   </node>

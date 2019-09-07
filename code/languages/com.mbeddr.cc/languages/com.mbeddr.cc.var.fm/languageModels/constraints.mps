@@ -2,6 +2,7 @@
 <model ref="r:6931d509-c614-495e-afa5-7bb50f15b429(com.mbeddr.cc.var.fm.constraints)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -101,11 +102,8 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -217,6 +215,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -789,8 +795,31 @@
           </node>
           <node concept="3clFbH" id="5CkU_dHidzF" role="3cqZAp" />
           <node concept="3SKdUt" id="5CkU_dHidzG" role="3cqZAp">
-            <node concept="3SKdUq" id="5CkU_dHidzH" role="3SKWNk">
-              <property role="3SKdUp" value="if it is used in a feature model" />
+            <node concept="1PaTwC" id="6JXsDxttw1o" role="3ndbpf">
+              <node concept="3oM_SD" id="6JXsDxttw1p" role="1PaTwD">
+                <property role="3oM_SC" value="if" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxttw1q" role="1PaTwD">
+                <property role="3oM_SC" value="it" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxttw1r" role="1PaTwD">
+                <property role="3oM_SC" value="is" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxttw1s" role="1PaTwD">
+                <property role="3oM_SC" value="used" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxttw1t" role="1PaTwD">
+                <property role="3oM_SC" value="in" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxttw1u" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxttw1v" role="1PaTwD">
+                <property role="3oM_SC" value="feature" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxttw1w" role="1PaTwD">
+                <property role="3oM_SC" value="model" />
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="5CkU_dHidzI" role="3cqZAp">
@@ -905,8 +934,40 @@
         <node concept="3clFbJ" id="79i$vAY7iKt" role="3cqZAp">
           <node concept="3clFbS" id="79i$vAY7iKu" role="3clFbx">
             <node concept="3SKdUt" id="79i$vAY7iKv" role="3cqZAp">
-              <node concept="3SKdUq" id="79i$vAY7iKw" role="3SKWNk">
-                <property role="3SKdUp" value="all these restrictions are driven by limitations in the interpreter FeatureConditionEvalHelper" />
+              <node concept="1PaTwC" id="6JXsDxttw1x" role="3ndbpf">
+                <node concept="3oM_SD" id="6JXsDxttw1y" role="1PaTwD">
+                  <property role="3oM_SC" value="all" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxttw1z" role="1PaTwD">
+                  <property role="3oM_SC" value="these" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxttw1$" role="1PaTwD">
+                  <property role="3oM_SC" value="restrictions" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxttw1_" role="1PaTwD">
+                  <property role="3oM_SC" value="are" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxttw1A" role="1PaTwD">
+                  <property role="3oM_SC" value="driven" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxttw1B" role="1PaTwD">
+                  <property role="3oM_SC" value="by" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxttw1C" role="1PaTwD">
+                  <property role="3oM_SC" value="limitations" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxttw1D" role="1PaTwD">
+                  <property role="3oM_SC" value="in" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxttw1E" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxttw1F" role="1PaTwD">
+                  <property role="3oM_SC" value="interpreter" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxttw1G" role="1PaTwD">
+                  <property role="3oM_SC" value="FeatureConditionEvalHelper" />
+                </node>
               </node>
             </node>
             <node concept="3clFbJ" id="79i$vAY7iKx" role="3cqZAp">

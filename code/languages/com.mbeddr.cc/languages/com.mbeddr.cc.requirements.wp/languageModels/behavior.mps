@@ -163,6 +163,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -170,9 +176,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
-        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
-      </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
@@ -193,9 +196,6 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
-        <child id="1146171026732" name="value" index="3t7uKA" />
-      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -952,12 +952,12 @@
             <node concept="2OqwBi" id="2ka6MWOv706" role="2Oq$k0">
               <node concept="13iPFW" id="2ka6MWOv707" role="2Oq$k0" />
               <node concept="3TrcHB" id="2ka6MWOv708" role="2OqNvi">
-                <ref role="3TsBF5" to="6pek:2ka6MWOv4ZU" resolve="status" />
+                <ref role="3TsBF5" to="6pek:6JXsDxttw5d" resolve="status" />
               </node>
             </node>
-            <node concept="3t7uKx" id="2ka6MWOv709" role="2OqNvi">
-              <node concept="uoxfO" id="2ka6MWOv70a" role="3t7uKA">
-                <ref role="uo_Cq" to="6pek:2ka6MWOv4ZQ" />
+            <node concept="21noJN" id="6JXsDxttw5l" role="2OqNvi">
+              <node concept="21nZrQ" id="6JXsDxttw5m" role="21noJM">
+                <ref role="21nZrZ" to="6pek:6JXsDxttw2w" resolve="active" />
               </node>
             </node>
           </node>
@@ -1004,12 +1004,12 @@
             <node concept="2OqwBi" id="2ka6MWOv72l" role="2Oq$k0">
               <node concept="13iPFW" id="2ka6MWOv72m" role="2Oq$k0" />
               <node concept="3TrcHB" id="2ka6MWOv72n" role="2OqNvi">
-                <ref role="3TsBF5" to="6pek:2ka6MWOv4ZU" resolve="status" />
+                <ref role="3TsBF5" to="6pek:6JXsDxttw5d" resolve="status" />
               </node>
             </node>
-            <node concept="3t7uKx" id="2ka6MWOv72o" role="2OqNvi">
-              <node concept="uoxfO" id="2ka6MWOv72p" role="3t7uKA">
-                <ref role="uo_Cq" to="6pek:2ka6MWOv4ZR" />
+            <node concept="21noJN" id="6JXsDxttw5n" role="2OqNvi">
+              <node concept="21nZrQ" id="6JXsDxttw5o" role="21noJM">
+                <ref role="21nZrZ" to="6pek:6JXsDxttw2x" resolve="done" />
               </node>
             </node>
           </node>
@@ -1056,12 +1056,12 @@
             <node concept="2OqwBi" id="2ka6MWOv72K" role="2Oq$k0">
               <node concept="13iPFW" id="2ka6MWOv72L" role="2Oq$k0" />
               <node concept="3TrcHB" id="2ka6MWOv72M" role="2OqNvi">
-                <ref role="3TsBF5" to="6pek:2ka6MWOv4ZU" resolve="status" />
+                <ref role="3TsBF5" to="6pek:6JXsDxttw5d" resolve="status" />
               </node>
             </node>
-            <node concept="3t7uKx" id="2ka6MWOv72N" role="2OqNvi">
-              <node concept="uoxfO" id="2ka6MWOv72O" role="3t7uKA">
-                <ref role="uo_Cq" to="6pek:2ka6MWOv4ZT" />
+            <node concept="21noJN" id="6JXsDxttw5p" role="2OqNvi">
+              <node concept="21nZrQ" id="6JXsDxttw5q" role="21noJM">
+                <ref role="21nZrZ" to="6pek:6JXsDxttw2z" resolve="over_budget" />
               </node>
             </node>
           </node>
@@ -1108,12 +1108,12 @@
             <node concept="2OqwBi" id="2ka6MWOv73b" role="2Oq$k0">
               <node concept="13iPFW" id="2ka6MWOv73c" role="2Oq$k0" />
               <node concept="3TrcHB" id="2ka6MWOv73d" role="2OqNvi">
-                <ref role="3TsBF5" to="6pek:2ka6MWOv4ZU" resolve="status" />
+                <ref role="3TsBF5" to="6pek:6JXsDxttw5d" resolve="status" />
               </node>
             </node>
-            <node concept="3t7uKx" id="2ka6MWOv73e" role="2OqNvi">
-              <node concept="uoxfO" id="2ka6MWOv73f" role="3t7uKA">
-                <ref role="uo_Cq" to="6pek:2ka6MWOv4ZS" />
+            <node concept="21noJN" id="6JXsDxttw5r" role="2OqNvi">
+              <node concept="21nZrQ" id="6JXsDxttw5s" role="21noJM">
+                <ref role="21nZrZ" to="6pek:6JXsDxttw2y" resolve="bad_trend" />
               </node>
             </node>
           </node>

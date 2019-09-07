@@ -4,7 +4,7 @@
   <languages>
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1194,7 +1194,7 @@
     <node concept="14StLt" id="$GQ7u4kgB4" role="V601i">
       <property role="TrG5h" value="presenceCondition" />
       <node concept="VechU" id="$GQ7u4kgB5" role="3F10Kt">
-        <property role="Vb096" value="darkGray" />
+        <property role="Vb096" value="fLJRk5B/darkGray" />
       </node>
     </node>
   </node>
@@ -1202,7 +1202,7 @@
     <property role="TrG5h" value="deletePCOnPC" />
     <ref role="1h_SK9" to="qdv7:$GQ7u4kg_N" resolve="PresenceCondition" />
     <node concept="1hA7zw" id="2h6lNbWnTU4" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="2h6lNbWnTU5" role="1hA7z_">
         <node concept="3clFbS" id="2h6lNbWnTU6" role="2VODD2">
           <node concept="3clFbF" id="2h6lNbWnTU7" role="3cqZAp">
@@ -1232,7 +1232,7 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="VLuvy" id="t5cH1EHNyx" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
           <node concept="2SsqMj" id="2h6lNbWnXgE" role="3EZMnx">
             <node concept="Veino" id="2h6lNbWnZMp" role="3F10Kt" />
@@ -1250,7 +1250,7 @@
             <property role="VOm3f" value="false" />
           </node>
           <node concept="3F1sOY" id="2h6lNbWnXfI" role="3EZMnx">
-            <property role="1cu_pB" value="2" />
+            <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
             <ref role="1k5W1q" node="$GQ7u4kgB4" resolve="presenceCondition" />
             <ref role="1NtTu8" to="qdv7:2h6lNbWnUrx" resolve="condition" />
           </node>
@@ -1338,7 +1338,7 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="VLuvy" id="t5cH1EIzSI" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
           <node concept="2SsqMj" id="7fIR9QmEn0b" role="3EZMnx">
             <node concept="Veino" id="7fIR9QmEn0c" role="3F10Kt" />
@@ -1477,7 +1477,6 @@
         <property role="3F0ifm" value="condition:" />
       </node>
       <node concept="3F1sOY" id="7fIR9QmEws$" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="1k5W1q" node="$GQ7u4kgB4" resolve="presenceCondition" />
         <ref role="1NtTu8" to="qdv7:2h6lNbWnUrx" resolve="condition" />
       </node>
@@ -1567,7 +1566,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="2h6lNbWo01S" role="3EZMnx">
-        <property role="1cu_pB" value="2" />
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
         <ref role="1k5W1q" node="1Jq6Hv131a" resolve="greyAndBig" />
         <ref role="1NtTu8" to="qdv7:2h6lNbWo01I" resolve="expr" />
       </node>
@@ -1586,10 +1585,10 @@
     <node concept="14StLt" id="2h6lNbWosam" role="V601i">
       <property role="TrG5h" value="greyAndSmall" />
       <node concept="VechU" id="2h6lNbWosao" role="3F10Kt">
-        <property role="Vb096" value="WHITE" />
+        <property role="Vb096" value="hEZAO13/white" />
       </node>
       <node concept="30gYXW" id="2h6lNbWosap" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="fLJRk5_/gray" />
       </node>
       <node concept="VSNWy" id="1wLq5fNPz6p" role="3F10Kt">
         <node concept="1cFabM" id="1wLq5fNPz6v" role="1d8cEk">
@@ -1614,19 +1613,19 @@
         </node>
       </node>
       <node concept="Veino" id="2h6lNbWosaq" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="fLJRk5_/gray" />
       </node>
     </node>
     <node concept="14StLt" id="1Jq6Hv131a" role="V601i">
       <property role="TrG5h" value="greyAndBig" />
       <node concept="VechU" id="1Jq6Hv131c" role="3F10Kt">
-        <property role="Vb096" value="WHITE" />
+        <property role="Vb096" value="hEZAO13/white" />
       </node>
       <node concept="30gYXW" id="1Jq6Hv131d" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="fLJRk5_/gray" />
       </node>
       <node concept="Veino" id="1Jq6Hv131e" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="fLJRk5_/gray" />
       </node>
     </node>
   </node>
@@ -2039,7 +2038,7 @@
     <property role="TrG5h" value="deletePCOnFC" />
     <ref role="1h_SK9" to="qdv7:2h6lNbWo01H" resolve="FeatureCondition" />
     <node concept="1hA7zw" id="2qCeyL$LA4M" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="2qCeyL$LA4N" role="1hA7z_">
         <node concept="3clFbS" id="2qCeyL$LA4O" role="2VODD2">
           <node concept="3clFbF" id="2qCeyL$LA4P" role="3cqZAp">
@@ -2097,7 +2096,7 @@
         <node concept="3F0ifn" id="3UhOf8WVZaU" role="3EZMnx">
           <property role="3F0ifm" value="if" />
           <node concept="Vb9p2" id="3UhOf8WVZaV" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
         </node>
         <node concept="1iCGBv" id="3UhOf8WVZaW" role="3EZMnx">
@@ -2108,7 +2107,7 @@
             </node>
           </node>
           <node concept="Vb9p2" id="3UhOf8WVZaZ" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
         </node>
       </node>
@@ -2127,7 +2126,7 @@
         <property role="39s7Ar" value="true" />
         <ref role="1NtTu8" to="qdv7:5fj8FNWaakA" resolve="text" />
         <node concept="Vb9p2" id="5fj8FNWaakG" role="3F10Kt">
-          <property role="Vbekb" value="ITALIC" />
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
         </node>
       </node>
     </node>
@@ -2152,7 +2151,7 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="VLuvy" id="3SIytSCuoNT" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
           <node concept="2SsqMj" id="1wLq5fNoxja" role="3EZMnx">
             <node concept="Veino" id="1wLq5fNoxjb" role="3F10Kt" />
@@ -2401,7 +2400,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VLuvy" id="3SIytSCvc8m" role="3F10Kt">
-          <property role="Vb096" value="gray" />
+          <property role="Vb096" value="fLJRk5_/gray" />
         </node>
         <node concept="l2Vlx" id="3SIytSCvbHU" role="2iSdaV" />
         <node concept="pkWqt" id="3SIytSCvbHV" role="pqm2j">
@@ -2717,7 +2716,7 @@
     <node concept="3EZMnI" id="1wLq5fNqMRI" role="2wV5jI">
       <node concept="2iRfu4" id="3SIytSCvcrW" role="2iSdaV" />
       <node concept="3F1sOY" id="1wLq5fNqMRK" role="3EZMnx">
-        <property role="1cu_pB" value="2" />
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
         <ref role="1k5W1q" node="$GQ7u4kgB4" resolve="presenceCondition" />
         <ref role="1NtTu8" to="qdv7:1wLq5fNouH8" resolve="condition" />
       </node>
@@ -2776,7 +2775,7 @@
     <property role="TrG5h" value="deleteFMC" />
     <ref role="1h_SK9" to="qdv7:$GQ7u4ko40" resolve="FeatureModelConfiguration" />
     <node concept="1hA7zw" id="1rK2Om8_Wfe" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="1rK2Om8_Wff" role="1hA7z_">
         <node concept="3clFbS" id="1rK2Om8_Wfg" role="2VODD2">
           <node concept="3clFbF" id="1rK2Om8_WtP" role="3cqZAp">
