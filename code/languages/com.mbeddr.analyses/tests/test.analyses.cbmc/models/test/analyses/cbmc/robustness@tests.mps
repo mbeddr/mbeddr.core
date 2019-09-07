@@ -1484,17 +1484,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1iGXuG0fSTp" role="3cqZAp" />
-        <node concept="3SKdUt" id="7IFaMBYDKYl" role="3cqZAp">
-          <node concept="3SKdUq" id="7IFaMBYDLCO" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: CBMC returns different results on the build server and windows - on win is correct, the property fails" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="7IFaMBYDO50" role="3cqZAp">
-          <node concept="3SKdUq" id="7IFaMBYDOJj" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: on linux the property holds" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="1iGXuG0fT3C" role="3cqZAp" />
         <node concept="3cpWs8" id="1iGXuG0fTW0" role="3cqZAp">
           <node concept="3cpWsn" id="1iGXuG0fTW1" role="3cpWs9">
             <property role="TrG5h" value="res3" />
@@ -1518,8 +1507,8 @@
             <node concept="37vLTw" id="1iGXuG0fTW9" role="2Oq$k0">
               <ref role="3cqZAo" node="1iGXuG0fTW1" resolve="res3" />
             </node>
-            <node concept="liA8E" id="1iGXuG0fTWa" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            <node concept="liA8E" id="3Thx9qBUGOH" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
             </node>
           </node>
           <node concept="3_1$Yv" id="5hfVsymuvTP" role="3_9lra">
@@ -2050,7 +2039,7 @@
             <property role="TrG5h" value="error" />
             <node concept="17QB3L" id="DaB78DgGFs" role="1tU5fm" />
             <node concept="Xl_RD" id="DaB78DgGFv" role="33vP2m">
-              <property role="Xl_RC" value="ERROR:  - \&quot;failed to open input file" />
+              <property role="Xl_RC" value="ERROR:  - \&quot;Failed to open input file" />
             </node>
           </node>
         </node>
@@ -2340,7 +2329,7 @@
             <node concept="34oBXx" id="7lmBuXs2t8j" role="2OqNvi" />
           </node>
           <node concept="3cmrfG" id="2UdC0h0Pgss" role="3tpDZB">
-            <property role="3cmrfH" value="5" />
+            <property role="3cmrfH" value="6" />
           </node>
         </node>
         <node concept="3clFbH" id="7lmBuXs2t8l" role="3cqZAp" />
