@@ -92,7 +92,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -140,7 +139,6 @@
               <node concept="BaHAS" id="5EwdfGVgITC" role="37wK5m">
                 <property role="BaHAW" value="assertion" />
                 <property role="BaGAP" value="" />
-                <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVgITD" role="37wK5m">
                 <property role="Xl_RC" value="main" />
@@ -241,7 +239,6 @@
                   </node>
                 </node>
                 <node concept="BaHAS" id="5EwdfGVgJbp" role="37wK5m">
-                  <property role="BaBD8" value="cou" />
                   <property role="BaHAW" value="assertion" />
                   <property role="BaGAP" value="" />
                 </node>
@@ -293,7 +290,6 @@
                   </node>
                 </node>
                 <node concept="BaHAS" id="5EwdfGVgJrT" role="37wK5m">
-                  <property role="BaBD8" value="cou" />
                   <property role="BaHAW" value="assertion" />
                   <property role="BaGAP" value="" />
                 </node>
@@ -345,7 +341,6 @@
                   </node>
                 </node>
                 <node concept="BaHAS" id="5EwdfGVgJGp" role="37wK5m">
-                  <property role="BaBD8" value="cou" />
                   <property role="BaHAW" value="assertion" />
                   <property role="BaGAP" value="" />
                 </node>
@@ -397,7 +392,6 @@
                   </node>
                 </node>
                 <node concept="BaHAS" id="5EwdfGVgJWT" role="37wK5m">
-                  <property role="BaBD8" value="cou" />
                   <property role="BaHAW" value="assertion" />
                   <property role="BaGAP" value="" />
                 </node>
@@ -465,7 +459,6 @@
               <node concept="BaHAS" id="5EwdfGVgKdB" role="37wK5m">
                 <property role="BaHAW" value="assertion" />
                 <property role="BaGAP" value="" />
-                <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVgKdC" role="37wK5m">
                 <property role="Xl_RC" value="main" />

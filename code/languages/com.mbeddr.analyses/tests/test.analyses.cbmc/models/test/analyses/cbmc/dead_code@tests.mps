@@ -113,7 +113,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -164,7 +163,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="4pAFZeasiYZ" role="37wK5m">
-                <property role="BaBD8" value="ass" />
                 <property role="BaHAW" value="dead_code" />
                 <property role="BaGAP" value="" />
               </node>
@@ -316,7 +314,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="153zJclN7Ol" role="37wK5m">
-                <property role="BaBD8" value="ass" />
                 <property role="BaHAW" value="dead_code" />
                 <property role="BaGAP" value="" />
               </node>
@@ -395,7 +392,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="153zJclN7OM" role="37wK5m">
-                <property role="BaBD8" value="ass" />
                 <property role="BaHAW" value="dead_code" />
                 <property role="BaGAP" value="" />
               </node>
@@ -482,7 +478,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="153zJclN7Ph" role="37wK5m">
-                <property role="BaBD8" value="ass" />
                 <property role="BaHAW" value="dead_code" />
                 <property role="BaGAP" value="" />
               </node>
@@ -603,7 +598,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVgZy2" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVgZy5" role="33vP2m">
-              <property role="BaBD8" value="ass" />
               <property role="BaHAW" value="dead_code" />
               <property role="BaGAP" value="" />
             </node>

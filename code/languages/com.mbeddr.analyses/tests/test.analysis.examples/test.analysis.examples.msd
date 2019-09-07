@@ -73,6 +73,7 @@
     <module reference="a3733d9d-fa94-4706-bdd4-596b968eba8e(com.mbeddr.analyses.cbmc.rt)" version="0" />
     <module reference="4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)" version="0" />
     <module reference="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" version="0" />
+    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="094b2842-e972-4406-b60e-898cdcdb9de5(test.analyses.cbmc.testcode)" version="0" />
     <module reference="6b202e43-bd05-470f-a0ed-3694c312be88(test.analysis.examples)" version="0" />
   </dependencyVersions>

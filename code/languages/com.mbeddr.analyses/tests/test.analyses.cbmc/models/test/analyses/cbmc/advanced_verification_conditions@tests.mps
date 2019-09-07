@@ -99,7 +99,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -137,7 +136,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVgL4N" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVgL4Q" role="33vP2m">
-              <property role="BaBD8" value="advanced_verification_condition@" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -233,7 +231,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVgLaB" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVgLaE" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -311,7 +308,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="46evrC8ir2b" role="1tU5fm" />
             <node concept="BaHAS" id="46evrC8ir2e" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -400,7 +396,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="46evrC8iqTR" role="1tU5fm" />
             <node concept="BaHAS" id="46evrC8iqTU" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -479,7 +474,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk$23" role="1tU5fm" />
             <node concept="BaHAS" id="5O4lpk$26" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -568,7 +562,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk$jW" role="1tU5fm" />
             <node concept="BaHAS" id="5O4lpk$jZ" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -647,7 +640,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk$Kn" role="1tU5fm" />
             <node concept="BaHAS" id="5O4lpk$Kq" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -735,7 +727,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk_2f" role="1tU5fm" />
             <node concept="BaHAS" id="5O4lpk_2i" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -813,7 +804,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk_oN" role="1tU5fm" />
             <node concept="BaHAS" id="5O4lpk_oQ" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -901,7 +891,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk_yj" role="1tU5fm" />
             <node concept="BaHAS" id="5O4lpk_ym" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -979,7 +968,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpksuV" role="1tU5fm" />
             <node concept="BaHAS" id="5O4lpksuY" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>
@@ -1067,7 +1055,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpktuz" role="1tU5fm" />
             <node concept="BaHAS" id="5O4lpktuA" role="33vP2m">
-              <property role="BaBD8" value="ad" />
               <property role="BaHAW" value="advanced_verification_condition" />
               <property role="BaGAP" value="" />
             </node>

@@ -129,7 +129,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -170,7 +169,6 @@
       <node concept="3clFbS" id="4Y$LvVOimF_" role="3clF47">
         <node concept="3clFbF" id="4Y$LvVOinV5" role="3cqZAp">
           <node concept="BaHAS" id="4Y$LvVOinV7" role="3clFbG">
-            <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.scomponents" />
             <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
             <property role="BaGAP" value="" />
           </node>
@@ -186,7 +184,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="2WJ8cS_xNJ1" role="1tU5fm" />
             <node concept="BaHAS" id="2WJ8cS_xNO6" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.scomponents" />
               <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
               <property role="BaGAP" value="" />
             </node>
@@ -369,7 +366,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="2WJ8cS_xNsd" role="1tU5fm" />
             <node concept="BaHAS" id="2WJ8cS_xIzC" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.scomponents" />
               <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
               <property role="BaGAP" value="" />
             </node>
@@ -675,7 +671,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1hCIBtjelpj" role="1tU5fm" />
             <node concept="BaHAS" id="1hCIBtjelpk" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.scomponents" />
               <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
               <property role="BaGAP" value="" />
             </node>
@@ -950,7 +945,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1hCIBtje_fv" role="1tU5fm" />
             <node concept="BaHAS" id="1hCIBtje_fw" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.scomponents" />
               <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
               <property role="BaGAP" value="" />
             </node>
@@ -1163,7 +1157,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1hCIBtjePNJ" role="1tU5fm" />
             <node concept="BaHAS" id="1hCIBtjePNK" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.scomponents" />
               <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
               <property role="BaGAP" value="" />
             </node>
@@ -1286,7 +1279,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1fLSIrNnaVE" role="1tU5fm" />
             <node concept="BaHAS" id="1fLSIrNnaVF" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.scomponents" />
               <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
               <property role="BaGAP" value="" />
             </node>
@@ -1441,7 +1433,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="38xi_3mwZTZ" role="1tU5fm" />
             <node concept="BaHAS" id="38xi_3mwZU0" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.scomponents" />
               <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
               <property role="BaGAP" value="" />
             </node>

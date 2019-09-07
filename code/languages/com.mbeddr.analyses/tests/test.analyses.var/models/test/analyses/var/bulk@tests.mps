@@ -89,7 +89,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -246,7 +245,6 @@
             <property role="TrG5h" value="fm" />
             <node concept="H_c77" id="1X8myJOVHE6" role="1tU5fm" />
             <node concept="BaHAS" id="1X8myJOVHNv" role="33vP2m">
-              <property role="BaBD8" value="fm" />
               <property role="BaHAW" value="test.analyses.var.testcode.fm" />
               <property role="BaGAP" value="" />
             </node>
@@ -356,7 +354,6 @@
             <property role="TrG5h" value="cm" />
             <node concept="H_c77" id="1X8myJOVIW3" role="1tU5fm" />
             <node concept="BaHAS" id="1X8myJOVIW4" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
               <property role="BaHAW" value="test.analyses.var.testcode.cm" />
               <property role="BaGAP" value="" />
             </node>
@@ -466,7 +463,6 @@
             <property role="TrG5h" value="var_c" />
             <node concept="H_c77" id="1X8myJOVGCH" role="1tU5fm" />
             <node concept="BaHAS" id="1X8myJOVGME" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
               <property role="BaHAW" value="test.analyses.var.testcode.var_c" />
               <property role="BaGAP" value="" />
             </node>

@@ -82,7 +82,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -114,7 +113,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVh3W7" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVh3Wa" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="expressions" />
               <property role="BaGAP" value="" />
             </node>
@@ -216,7 +214,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="72mSD5S00Vo" role="37wK5m">
-                <property role="BaBD8" value="hppc" />
                 <property role="BaHAW" value="expressions" />
                 <property role="BaGAP" value="" />
               </node>

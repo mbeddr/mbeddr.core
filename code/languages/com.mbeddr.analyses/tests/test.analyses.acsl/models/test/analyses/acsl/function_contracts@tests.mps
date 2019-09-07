@@ -94,7 +94,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -143,7 +142,6 @@
               <node concept="BaHAS" id="2$KQXNUNlQN" role="37wK5m">
                 <property role="BaHAW" value="acsl_to_cbmc" />
                 <property role="BaGAP" value="" />
-                <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="2$KQXNUNlQO" role="37wK5m">
                 <property role="Xl_RC" value="behavior" />
@@ -294,7 +292,6 @@
               <node concept="BaHAS" id="6WBmVK646SR" role="37wK5m">
                 <property role="BaHAW" value="acsl_to_cbmc" />
                 <property role="BaGAP" value="" />
-                <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="6WBmVK646SS" role="37wK5m">
                 <property role="Xl_RC" value="ensures" />
@@ -414,7 +411,6 @@
               <node concept="BaHAS" id="29$2IGZgdJj" role="37wK5m">
                 <property role="BaHAW" value="acsl_to_cbmc" />
                 <property role="BaGAP" value="" />
-                <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="29$2IGZgdJk" role="37wK5m">
                 <property role="Xl_RC" value="requires" />

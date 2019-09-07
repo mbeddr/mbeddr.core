@@ -103,7 +103,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -141,7 +140,6 @@
             <property role="TrG5h" value="crtModel" />
             <node concept="H_c77" id="47H95zxg6pJ" role="1tU5fm" />
             <node concept="BaHAS" id="47H95zxg6pM" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.scomponents" />
               <property role="BaHAW" value="statemachines" />
               <property role="BaGAP" value="" />
             </node>
@@ -349,7 +347,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhX7P" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhX7S" role="33vP2m">
-              <property role="BaBD8" value="ver" />
               <property role="BaHAW" value="statemachines" />
               <property role="BaGAP" value="" />
             </node>
@@ -548,7 +545,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhUZl" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhUZo" role="33vP2m">
-              <property role="BaBD8" value="ver" />
               <property role="BaHAW" value="statemachines" />
               <property role="BaGAP" value="" />
             </node>
@@ -724,7 +720,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhZ3o" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhZ3r" role="33vP2m">
-              <property role="BaBD8" value="ver" />
               <property role="BaHAW" value="statemachines" />
               <property role="BaGAP" value="" />
             </node>

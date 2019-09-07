@@ -2,12 +2,12 @@
 <model ref="r:80a16b42-34ca-4cc9-8fef-ec3728e102a4(test.analyses.cbmc.harness@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -112,7 +112,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -160,7 +159,6 @@
                   </node>
                 </node>
                 <node concept="BaHAS" id="5EwdfGVhbnY" role="37wK5m">
-                  <property role="BaBD8" value="hppc" />
                   <property role="BaHAW" value="harness" />
                   <property role="BaGAP" value="" />
                 </node>
@@ -212,7 +210,6 @@
                   </node>
                 </node>
                 <node concept="BaHAS" id="5EwdfGVhbDW" role="37wK5m">
-                  <property role="BaBD8" value="hppc" />
                   <property role="BaHAW" value="harness" />
                   <property role="BaGAP" value="" />
                 </node>
@@ -270,7 +267,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhcoh" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhcok" role="33vP2m">
-              <property role="BaBD8" value="cou" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -331,7 +327,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhct2" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhct5" role="33vP2m">
-              <property role="BaBD8" value="cou" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -413,7 +408,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhcNl" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhcNo" role="33vP2m">
-              <property role="BaBD8" value="cou" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -478,7 +472,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhdf6" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhdf9" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -539,7 +532,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhdzU" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhdzX" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -615,7 +607,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhdLN" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhdLQ" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -676,7 +667,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhe65" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhe68" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -752,7 +742,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhejI" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhejL" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -813,7 +802,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="sn0OadKFrI" role="1tU5fm" />
             <node concept="BaHAS" id="sn0OadKFrL" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -1130,7 +1118,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="5KHBa6kSzYX" role="37wK5m">
-                <property role="BaBD8" value="hppc" />
                 <property role="BaHAW" value="harness" />
                 <property role="BaGAP" value="" />
               </node>
@@ -1262,7 +1249,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="prDxnvpqAR" role="1tU5fm" />
             <node concept="BaHAS" id="prDxnvpqAU" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -1421,7 +1407,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="6ODCss3871z" role="37wK5m">
-                <property role="BaBD8" value="hppc" />
                 <property role="BaHAW" value="harness" />
                 <property role="BaGAP" value="" />
               </node>
@@ -1575,7 +1560,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVh9UY" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVh9V1" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -1808,7 +1792,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="5EwdfGVhaUB" role="37wK5m">
-                <property role="BaBD8" value="hppc" />
                 <property role="BaHAW" value="harness" />
                 <property role="BaGAP" value="" />
               </node>
@@ -2039,7 +2022,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVheXU" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVheXX" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="harness" />
               <property role="BaGAP" value="" />
             </node>
@@ -2141,7 +2123,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="awtkG0cIaD" role="37wK5m">
-                <property role="BaBD8" value="hppc" />
                 <property role="BaHAW" value="harness" />
                 <property role="BaGAP" value="" />
               </node>
@@ -2206,7 +2187,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="awtkG0cIC1" role="37wK5m">
-                <property role="BaBD8" value="hppc" />
                 <property role="BaHAW" value="harness" />
                 <property role="BaGAP" value="" />
               </node>
@@ -2271,7 +2251,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="3SvxfU18eFG" role="37wK5m">
-                <property role="BaBD8" value="hppc" />
                 <property role="BaHAW" value="harness" />
                 <property role="BaGAP" value="" />
               </node>
@@ -2336,7 +2315,6 @@
                 </node>
               </node>
               <node concept="BaHAS" id="3SvxfU18eG1" role="37wK5m">
-                <property role="BaBD8" value="hppc" />
                 <property role="BaHAW" value="harness" />
                 <property role="BaGAP" value="" />
               </node>

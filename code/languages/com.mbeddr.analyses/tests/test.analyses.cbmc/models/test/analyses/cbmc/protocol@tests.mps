@@ -102,7 +102,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -144,7 +143,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhAWR" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhAWU" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_unwinding_loops" />
               <property role="BaGAP" value="" />
             </node>
@@ -319,7 +317,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhu3R" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhu3U" role="33vP2m">
-              <property role="BaBD8" value="p" />
               <property role="BaHAW" value="protocol_extended_component" />
               <property role="BaGAP" value="" />
             </node>
@@ -398,7 +395,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhvBN" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhvBQ" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_smoke" />
               <property role="BaGAP" value="" />
             </node>
@@ -568,7 +564,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhwel" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhweo" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_smoke" />
               <property role="BaGAP" value="" />
             </node>
@@ -698,7 +693,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="71B0VAs00dx" role="1tU5fm" />
             <node concept="BaHAS" id="71B0VAs00d$" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_smoke" />
               <property role="BaGAP" value="" />
             </node>
@@ -850,7 +844,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="71B0VArZZUc" role="1tU5fm" />
             <node concept="BaHAS" id="71B0VArZZUf" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_smoke" />
               <property role="BaGAP" value="" />
             </node>
@@ -979,7 +972,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhyft" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhyfw" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_smoke" />
               <property role="BaGAP" value="" />
             </node>
@@ -1109,7 +1101,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="71B0VArZZE6" role="1tU5fm" />
             <node concept="BaHAS" id="71B0VArZZE9" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_smoke" />
               <property role="BaGAP" value="" />
             </node>
@@ -1218,7 +1209,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhyGM" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhyGP" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_smoke" />
               <property role="BaGAP" value="" />
             </node>
@@ -1348,7 +1338,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhz9Z" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhza2" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_smoke" />
               <property role="BaGAP" value="" />
             </node>
@@ -1478,7 +1467,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVhztE" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVhztH" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_smoke" />
               <property role="BaGAP" value="" />
             </node>
@@ -1557,7 +1545,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVh$6_" role="1tU5fm" />
             <node concept="BaHAS" id="5EwdfGVh$6C" role="33vP2m">
-              <property role="BaBD8" value="pro" />
               <property role="BaHAW" value="protocol_smoke" />
               <property role="BaGAP" value="" />
             </node>

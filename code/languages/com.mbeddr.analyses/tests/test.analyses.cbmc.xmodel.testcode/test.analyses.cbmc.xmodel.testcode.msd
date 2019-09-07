@@ -83,6 +83,7 @@
     <module reference="0a31509b-f803-4558-b840-db9f6dc14b2f(com.mbeddr.analyses.cbmc.statemachines.rt)" version="0" />
     <module reference="89149c16-0102-4ac4-b76c-cce9604a7e8c(com.mbeddr.analyses.cbmc.xmodel.plan)" version="0" />
     <module reference="4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)" version="0" />
+    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="3356a855-d10d-4fe9-8789-eb4d9abd8cd7(test.analyses.cbmc.xmodel.testcode)" version="0" />
   </dependencyVersions>
 </solution>
