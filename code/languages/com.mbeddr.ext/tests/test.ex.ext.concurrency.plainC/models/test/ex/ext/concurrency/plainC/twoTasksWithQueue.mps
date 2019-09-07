@@ -157,7 +157,6 @@
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
       <concept id="7551459360495600340" name="com.mbeddr.ext.concurrency.structure.TimeWithUnit" flags="ng" index="6VUUj">
-        <property id="7551459360495620501" name="unit" index="6VZRi" />
         <child id="7551459360495619535" name="value" index="6VY68" />
       </concept>
       <concept id="1787645152775151429" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueDeclaration" flags="ng" index="2jkAae">
@@ -449,7 +448,6 @@
         <property role="3_dPry" value="2" />
         <ref role="6qQL_" node="4mSSgpjw4_s" resolve="sumUp" />
         <node concept="6VUUj" id="6zcb4tIu9r0" role="6EqoZ">
-          <property role="6VZRi" value="ms" />
           <node concept="3TlMh9" id="6zcb4tIu9ra" role="6VY68">
             <property role="2hmy$m" value="10" />
           </node>

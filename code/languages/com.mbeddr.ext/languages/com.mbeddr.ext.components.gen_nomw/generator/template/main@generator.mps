@@ -2,17 +2,18 @@
 <model ref="r:769ad9a0-f26a-4d17-9cc6-f3ae937bc774(com.mbeddr.ext.components.gen_nomw.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="b67a6ca0-735e-4903-b238-4b525bddf96a" name="com.mbeddr.mpsutil.genutil" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -162,11 +163,8 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
@@ -234,7 +232,7 @@
         <child id="7254843406768606787" name="condition" index="1_amZB" />
       </concept>
       <concept id="7254843406768606755" name="com.mbeddr.core.statements.structure.ForVarDecl" flags="ng" index="1_amY7" />
-      <concept id="5485104033529954230" name="com.mbeddr.core.statements.structure.TextAttributePrefix" flags="ng" index="3IwBUS">
+      <concept id="5485104033529954230" name="com.mbeddr.core.statements.structure.ArbitraryTextAttributePrefix" flags="ng" index="3IwBUS">
         <property id="5485104033529954231" name="text" index="3IwBUT" />
       </concept>
       <concept id="605413736672002878" name="com.mbeddr.core.statements.structure.IHasPrefixes" flags="ng" index="3O7dYF">
@@ -483,12 +481,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -707,6 +704,14 @@
         <reference id="8105003328815054493" name="intf" index="2H6ZW8" />
       </concept>
       <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="7615572890648529894" name="com.mbeddr.core.expressions.structure.NotEqualsExpression" flags="ng" index="25Bbzn" />
@@ -1330,8 +1335,46 @@
                   </node>
                 </node>
                 <node concept="3SKdUt" id="2E5EJrXDO5L" role="3cqZAp">
-                  <node concept="3SKdUq" id="2E5EJrXDO5N" role="3SKWNk">
-                    <property role="3SKdUp" value="exclude composite component setup runnables since provided ports refs arguments are already appended" />
+                  <node concept="1PaTwC" id="6JXsDxrKBK8" role="3ndbpf">
+                    <node concept="3oM_SD" id="6JXsDxrKBK9" role="1PaTwD">
+                      <property role="3oM_SC" value="exclude" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKa" role="1PaTwD">
+                      <property role="3oM_SC" value="composite" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKb" role="1PaTwD">
+                      <property role="3oM_SC" value="component" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKc" role="1PaTwD">
+                      <property role="3oM_SC" value="setup" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKd" role="1PaTwD">
+                      <property role="3oM_SC" value="runnables" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKe" role="1PaTwD">
+                      <property role="3oM_SC" value="since" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKf" role="1PaTwD">
+                      <property role="3oM_SC" value="provided" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKg" role="1PaTwD">
+                      <property role="3oM_SC" value="ports" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKh" role="1PaTwD">
+                      <property role="3oM_SC" value="refs" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKi" role="1PaTwD">
+                      <property role="3oM_SC" value="arguments" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKj" role="1PaTwD">
+                      <property role="3oM_SC" value="are" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKk" role="1PaTwD">
+                      <property role="3oM_SC" value="already" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKl" role="1PaTwD">
+                      <property role="3oM_SC" value="appended" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbJ" id="7Wp9ngQhpL3" role="3cqZAp">
@@ -1661,8 +1704,46 @@
                   </node>
                 </node>
                 <node concept="3SKdUt" id="XyAj1CU236" role="3cqZAp">
-                  <node concept="3SKdUq" id="XyAj1CU27E" role="3SKWNk">
-                    <property role="3SKdUp" value="this depends on two inputs; dunno how to do this with a label" />
+                  <node concept="1PaTwC" id="6JXsDxrKBKm" role="3ndbpf">
+                    <node concept="3oM_SD" id="6JXsDxrKBKn" role="1PaTwD">
+                      <property role="3oM_SC" value="this" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKo" role="1PaTwD">
+                      <property role="3oM_SC" value="depends" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKp" role="1PaTwD">
+                      <property role="3oM_SC" value="on" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKq" role="1PaTwD">
+                      <property role="3oM_SC" value="two" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKr" role="1PaTwD">
+                      <property role="3oM_SC" value="inputs;" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKs" role="1PaTwD">
+                      <property role="3oM_SC" value="dunno" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKt" role="1PaTwD">
+                      <property role="3oM_SC" value="how" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKu" role="1PaTwD">
+                      <property role="3oM_SC" value="to" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKv" role="1PaTwD">
+                      <property role="3oM_SC" value="do" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKw" role="1PaTwD">
+                      <property role="3oM_SC" value="this" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKx" role="1PaTwD">
+                      <property role="3oM_SC" value="with" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKy" role="1PaTwD">
+                      <property role="3oM_SC" value="a" />
+                    </node>
+                    <node concept="3oM_SD" id="6JXsDxrKBKz" role="1PaTwD">
+                      <property role="3oM_SC" value="label" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbF" id="3yeYUb91ssG" role="3cqZAp">
@@ -4773,7 +4854,7 @@
   </node>
   <node concept="1pmfR0" id="58nhJFE6maW">
     <property role="TrG5h" value="addImportsForStaticRunnableCalls" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <property role="3GE5qa" value="transform2C" />
     <node concept="1pplIY" id="58nhJFE6maX" role="1pqMTA">
@@ -5716,7 +5797,7 @@
                                     <ref role="2pJxaS" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                                     <node concept="2pJxcG" id="7g$Nqfo2bcB" role="2pJxcM">
                                       <ref role="2pJxcJ" to="mj1l:1UQ4qqfV3yK" resolve="value" />
-                                      <node concept="2OqwBi" id="7g$Nqfo2bcC" role="2pJxcZ">
+                                      <node concept="2OqwBi" id="7g$Nqfo2bcC" role="28ntcv">
                                         <node concept="37vLTw" id="7g$Nqfo2bcD" role="2Oq$k0">
                                           <ref role="3cqZAo" node="7g$Nqfo2bcr" resolve="maxConnectionCount" />
                                         </node>
@@ -5812,8 +5893,37 @@
                           <node concept="3clFbJ" id="4LFZhuY5tVs" role="3cqZAp">
                             <node concept="3clFbS" id="4LFZhuY5tVu" role="3clFbx">
                               <node concept="3SKdUt" id="4LFZhuY6dFb" role="3cqZAp">
-                                <node concept="3SKdUq" id="4LFZhuY6dFd" role="3SKWNk">
-                                  <property role="3SKdUp" value="exclude non connected multiple ports (calculated cardinality equals to 0)" />
+                                <node concept="1PaTwC" id="6JXsDxrKBK$" role="3ndbpf">
+                                  <node concept="3oM_SD" id="6JXsDxrKBK_" role="1PaTwD">
+                                    <property role="3oM_SC" value="exclude" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxrKBKA" role="1PaTwD">
+                                    <property role="3oM_SC" value="non" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxrKBKB" role="1PaTwD">
+                                    <property role="3oM_SC" value="connected" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxrKBKC" role="1PaTwD">
+                                    <property role="3oM_SC" value="multiple" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxrKBKD" role="1PaTwD">
+                                    <property role="3oM_SC" value="ports" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxrKBKE" role="1PaTwD">
+                                    <property role="3oM_SC" value="(calculated" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxrKBKF" role="1PaTwD">
+                                    <property role="3oM_SC" value="cardinality" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxrKBKG" role="1PaTwD">
+                                    <property role="3oM_SC" value="equals" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxrKBKH" role="1PaTwD">
+                                    <property role="3oM_SC" value="to" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxrKBKI" role="1PaTwD">
+                                    <property role="3oM_SC" value="0)" />
+                                  </node>
                                 </node>
                               </node>
                               <node concept="3cpWs8" id="4LFZhuY5pGQ" role="3cqZAp">
@@ -6260,11 +6370,11 @@
                                   <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
                                   <node concept="2pIpSj" id="3EJ_ji9R$mb" role="2pJxcM">
                                     <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                                    <node concept="2pJPED" id="3EJ_ji9VG5I" role="2pJxcZ">
+                                    <node concept="2pJPED" id="3EJ_ji9VG5I" role="28nt2d">
                                       <ref role="2pJxaS" to="v7ag:71UKpntojUs" resolve="InterfaceType" />
                                       <node concept="2pIpSj" id="3EJ_ji9VH_c" role="2pJxcM">
                                         <ref role="2pIpSl" to="v7ag:71UKpntojUt" resolve="intf" />
-                                        <node concept="36biLy" id="3EJ_ji9VH_d" role="2pJxcZ">
+                                        <node concept="36biLy" id="3EJ_ji9VH_d" role="28nt2d">
                                           <node concept="2OqwBi" id="3EJ_ji9VH_e" role="36biLW">
                                             <node concept="2OqwBi" id="3EJ_ji9VH_f" role="2Oq$k0">
                                               <node concept="30H73N" id="3EJ_ji9VH_g" role="2Oq$k0" />
@@ -6297,7 +6407,7 @@
                               <ref role="2pJxaS" to="v7ag:71UKpntojUs" resolve="InterfaceType" />
                               <node concept="2pIpSj" id="3EJ_ji9MUD8" role="2pJxcM">
                                 <ref role="2pIpSl" to="v7ag:71UKpntojUt" resolve="intf" />
-                                <node concept="36biLy" id="3EJ_ji9MULI" role="2pJxcZ">
+                                <node concept="36biLy" id="3EJ_ji9MULI" role="28nt2d">
                                   <node concept="2OqwBi" id="3EJ_ji9MXw4" role="36biLW">
                                     <node concept="2OqwBi" id="3EJ_ji9MVmr" role="2Oq$k0">
                                       <node concept="30H73N" id="3EJ_ji9MUVe" role="2Oq$k0" />
@@ -9058,7 +9168,7 @@
                                     <ref role="2pJxaS" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                                     <node concept="2pJxcG" id="4AyUuvyMNyD" role="2pJxcM">
                                       <ref role="2pJxcJ" to="mj1l:1UQ4qqfV3yK" resolve="value" />
-                                      <node concept="2OqwBi" id="4AyUuvyMNyE" role="2pJxcZ">
+                                      <node concept="2OqwBi" id="4AyUuvyMNyE" role="28ntcv">
                                         <node concept="37vLTw" id="4AyUuvyMNyF" role="2Oq$k0">
                                           <ref role="3cqZAo" node="4AyUuvyMNyt" resolve="maxConnectionCount" />
                                         </node>
@@ -14020,8 +14130,40 @@
       <node concept="30G5F_" id="2mhTzLINf7t" role="30HLyM">
         <node concept="3clFbS" id="2mhTzLINf7u" role="2VODD2">
           <node concept="3SKdUt" id="4PVmln3jeZD" role="3cqZAp">
-            <node concept="3SKdUq" id="4PVmln3jEKL" role="3SKWNk">
-              <property role="3SKdUp" value="TODO: works only if expression inside multiport access ist statically evaluatable" />
+            <node concept="1PaTwC" id="6JXsDxrKBKJ" role="3ndbpf">
+              <node concept="3oM_SD" id="6JXsDxrKBKK" role="1PaTwD">
+                <property role="3oM_SC" value="TODO:" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKL" role="1PaTwD">
+                <property role="3oM_SC" value="works" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKM" role="1PaTwD">
+                <property role="3oM_SC" value="only" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKN" role="1PaTwD">
+                <property role="3oM_SC" value="if" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKO" role="1PaTwD">
+                <property role="3oM_SC" value="expression" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKP" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKQ" role="1PaTwD">
+                <property role="3oM_SC" value="multiport" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKR" role="1PaTwD">
+                <property role="3oM_SC" value="access" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKS" role="1PaTwD">
+                <property role="3oM_SC" value="ist" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKT" role="1PaTwD">
+                <property role="3oM_SC" value="statically" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKU" role="1PaTwD">
+                <property role="3oM_SC" value="evaluatable" />
+              </node>
             </node>
           </node>
           <node concept="1X3_iC" id="3AWqwDsprpb" role="lGtFl">
@@ -14476,8 +14618,40 @@
       <node concept="30G5F_" id="2mhTzLIXS$D" role="30HLyM">
         <node concept="3clFbS" id="2mhTzLIXS$E" role="2VODD2">
           <node concept="3SKdUt" id="4PVmln3oiP3" role="3cqZAp">
-            <node concept="3SKdUq" id="4PVmln3p3AA" role="3SKWNk">
-              <property role="3SKdUp" value="TODO: works only if expression inside multiport access ist statically evaluatable" />
+            <node concept="1PaTwC" id="6JXsDxrKBKV" role="3ndbpf">
+              <node concept="3oM_SD" id="6JXsDxrKBKW" role="1PaTwD">
+                <property role="3oM_SC" value="TODO:" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKX" role="1PaTwD">
+                <property role="3oM_SC" value="works" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKY" role="1PaTwD">
+                <property role="3oM_SC" value="only" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBKZ" role="1PaTwD">
+                <property role="3oM_SC" value="if" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBL0" role="1PaTwD">
+                <property role="3oM_SC" value="expression" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBL1" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBL2" role="1PaTwD">
+                <property role="3oM_SC" value="multiport" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBL3" role="1PaTwD">
+                <property role="3oM_SC" value="access" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBL4" role="1PaTwD">
+                <property role="3oM_SC" value="ist" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBL5" role="1PaTwD">
+                <property role="3oM_SC" value="statically" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBL6" role="1PaTwD">
+                <property role="3oM_SC" value="evaluatable" />
+              </node>
             </node>
           </node>
           <node concept="1X3_iC" id="3AWqwDsprpd" role="lGtFl">
@@ -14808,8 +14982,40 @@
       <node concept="30G5F_" id="2mhTzLIKupM" role="30HLyM">
         <node concept="3clFbS" id="2mhTzLIKupN" role="2VODD2">
           <node concept="3SKdUt" id="4PVmln3gWyg" role="3cqZAp">
-            <node concept="3SKdUq" id="4PVmln3hGPc" role="3SKWNk">
-              <property role="3SKdUp" value="TODO: works only if expression inside multiport access ist statically evaluatable" />
+            <node concept="1PaTwC" id="6JXsDxrKBL7" role="3ndbpf">
+              <node concept="3oM_SD" id="6JXsDxrKBL8" role="1PaTwD">
+                <property role="3oM_SC" value="TODO:" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBL9" role="1PaTwD">
+                <property role="3oM_SC" value="works" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBLa" role="1PaTwD">
+                <property role="3oM_SC" value="only" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBLb" role="1PaTwD">
+                <property role="3oM_SC" value="if" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBLc" role="1PaTwD">
+                <property role="3oM_SC" value="expression" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBLd" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBLe" role="1PaTwD">
+                <property role="3oM_SC" value="multiport" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBLf" role="1PaTwD">
+                <property role="3oM_SC" value="access" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBLg" role="1PaTwD">
+                <property role="3oM_SC" value="ist" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBLh" role="1PaTwD">
+                <property role="3oM_SC" value="statically" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKBLi" role="1PaTwD">
+                <property role="3oM_SC" value="evaluatable" />
+              </node>
             </node>
           </node>
           <node concept="1X3_iC" id="5GwePVE7yQJ" role="lGtFl">
@@ -15533,8 +15739,40 @@
                 </node>
               </node>
               <node concept="3SKdUt" id="4PVmln2X8HC" role="3cqZAp">
-                <node concept="3SKdUq" id="4PVmln2X$i9" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: works only if expression inside multiport access ist statically evaluatable" />
+                <node concept="1PaTwC" id="6JXsDxrKBLj" role="3ndbpf">
+                  <node concept="3oM_SD" id="6JXsDxrKBLk" role="1PaTwD">
+                    <property role="3oM_SC" value="TODO:" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLl" role="1PaTwD">
+                    <property role="3oM_SC" value="works" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLm" role="1PaTwD">
+                    <property role="3oM_SC" value="only" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLn" role="1PaTwD">
+                    <property role="3oM_SC" value="if" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLo" role="1PaTwD">
+                    <property role="3oM_SC" value="expression" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLp" role="1PaTwD">
+                    <property role="3oM_SC" value="inside" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLq" role="1PaTwD">
+                    <property role="3oM_SC" value="multiport" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLr" role="1PaTwD">
+                    <property role="3oM_SC" value="access" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLs" role="1PaTwD">
+                    <property role="3oM_SC" value="ist" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLt" role="1PaTwD">
+                    <property role="3oM_SC" value="statically" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLu" role="1PaTwD">
+                    <property role="3oM_SC" value="evaluatable" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="5meTu9orqsf" role="3cqZAp">
@@ -16251,7 +16489,7 @@
                                     <ref role="2pJxaS" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                                     <node concept="2pJxcG" id="fJOzbTy3y2" role="2pJxcM">
                                       <ref role="2pJxcJ" to="mj1l:1UQ4qqfV3yK" resolve="value" />
-                                      <node concept="2OqwBi" id="7g$Nqfo1qiE" role="2pJxcZ">
+                                      <node concept="2OqwBi" id="7g$Nqfo1qiE" role="28ntcv">
                                         <node concept="37vLTw" id="7g$Nqfo11z$" role="2Oq$k0">
                                           <ref role="3cqZAo" node="7g$Nqfo11zu" resolve="maxConnectionCount" />
                                         </node>
@@ -16565,8 +16803,16 @@
                 </node>
               </node>
               <node concept="3SKdUt" id="4PVmln30AQU" role="3cqZAp">
-                <node concept="3SKdUq" id="4PVmln312D_" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: see above" />
+                <node concept="1PaTwC" id="6JXsDxrKBLv" role="3ndbpf">
+                  <node concept="3oM_SD" id="6JXsDxrKBLw" role="1PaTwD">
+                    <property role="3oM_SC" value="TODO:" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLx" role="1PaTwD">
+                    <property role="3oM_SC" value="see" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLy" role="1PaTwD">
+                    <property role="3oM_SC" value="above" />
+                  </node>
                 </node>
               </node>
               <node concept="1X3_iC" id="5GwePVE7yQK" role="lGtFl">
@@ -17175,8 +17421,40 @@
                 </node>
               </node>
               <node concept="3SKdUt" id="4PVmln34uHd" role="3cqZAp">
-                <node concept="3SKdUq" id="4PVmln35eTI" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: works only if expression inside multiport access ist statically evaluatable" />
+                <node concept="1PaTwC" id="6JXsDxrKBLz" role="3ndbpf">
+                  <node concept="3oM_SD" id="6JXsDxrKBL$" role="1PaTwD">
+                    <property role="3oM_SC" value="TODO:" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBL_" role="1PaTwD">
+                    <property role="3oM_SC" value="works" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLA" role="1PaTwD">
+                    <property role="3oM_SC" value="only" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLB" role="1PaTwD">
+                    <property role="3oM_SC" value="if" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLC" role="1PaTwD">
+                    <property role="3oM_SC" value="expression" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLD" role="1PaTwD">
+                    <property role="3oM_SC" value="inside" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLE" role="1PaTwD">
+                    <property role="3oM_SC" value="multiport" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLF" role="1PaTwD">
+                    <property role="3oM_SC" value="access" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLG" role="1PaTwD">
+                    <property role="3oM_SC" value="ist" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLH" role="1PaTwD">
+                    <property role="3oM_SC" value="statically" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLI" role="1PaTwD">
+                    <property role="3oM_SC" value="evaluatable" />
+                  </node>
                 </node>
               </node>
               <node concept="1X3_iC" id="5GwePVE7yQL" role="lGtFl">
@@ -17982,8 +18260,16 @@
                 </node>
               </node>
               <node concept="3SKdUt" id="4PVmln36Lg8" role="3cqZAp">
-                <node concept="3SKdUq" id="4PVmln37cPl" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: see above" />
+                <node concept="1PaTwC" id="6JXsDxrKBLJ" role="3ndbpf">
+                  <node concept="3oM_SD" id="6JXsDxrKBLK" role="1PaTwD">
+                    <property role="3oM_SC" value="TODO:" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLL" role="1PaTwD">
+                    <property role="3oM_SC" value="see" />
+                  </node>
+                  <node concept="3oM_SD" id="6JXsDxrKBLM" role="1PaTwD">
+                    <property role="3oM_SC" value="above" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="4PVmln35fgO" role="3cqZAp">
@@ -26233,7 +26519,7 @@
                                     <ref role="2pJxaS" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                                     <node concept="2pJxcG" id="J$0dc$u3cF" role="2pJxcM">
                                       <ref role="2pJxcJ" to="mj1l:1UQ4qqfV3yK" resolve="value" />
-                                      <node concept="2OqwBi" id="7Giw0p7Ed2I" role="2pJxcZ">
+                                      <node concept="2OqwBi" id="7Giw0p7Ed2I" role="28ntcv">
                                         <node concept="37vLTw" id="7Giw0p7EcVW" role="2Oq$k0">
                                           <ref role="3cqZAo" node="7Giw0p7Ea0T" resolve="maxConnectionCount" />
                                         </node>
@@ -26342,8 +26628,34 @@
                         </node>
                       </node>
                       <node concept="3SKdUt" id="7Giw0p7iL$a" role="3cqZAp">
-                        <node concept="3SKdUq" id="7Giw0p7iL$b" role="3SKWNk">
-                          <property role="3SKdUp" value="exclude non connected multiple ports (multiplicity equals to 0)" />
+                        <node concept="1PaTwC" id="6JXsDxrKBLN" role="3ndbpf">
+                          <node concept="3oM_SD" id="6JXsDxrKBLO" role="1PaTwD">
+                            <property role="3oM_SC" value="exclude" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBLP" role="1PaTwD">
+                            <property role="3oM_SC" value="non" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBLQ" role="1PaTwD">
+                            <property role="3oM_SC" value="connected" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBLR" role="1PaTwD">
+                            <property role="3oM_SC" value="multiple" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBLS" role="1PaTwD">
+                            <property role="3oM_SC" value="ports" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBLT" role="1PaTwD">
+                            <property role="3oM_SC" value="(multiplicity" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBLU" role="1PaTwD">
+                            <property role="3oM_SC" value="equals" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBLV" role="1PaTwD">
+                            <property role="3oM_SC" value="to" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBLW" role="1PaTwD">
+                            <property role="3oM_SC" value="0)" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbJ" id="7Giw0p7jnY1" role="3cqZAp">
@@ -26722,7 +27034,7 @@
                                     <ref role="2pJxaS" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                                     <node concept="2pJxcG" id="7_KH4FPo4HR" role="2pJxcM">
                                       <ref role="2pJxcJ" to="mj1l:1UQ4qqfV3yK" resolve="value" />
-                                      <node concept="2OqwBi" id="7_KH4FPo4HS" role="2pJxcZ">
+                                      <node concept="2OqwBi" id="7_KH4FPo4HS" role="28ntcv">
                                         <node concept="37vLTw" id="7_KH4FPo4HT" role="2Oq$k0">
                                           <ref role="3cqZAo" node="7_KH4FPo4HF" resolve="maxConnectionCount" />
                                         </node>
@@ -26836,8 +27148,34 @@
                         </node>
                       </node>
                       <node concept="3SKdUt" id="7_KH4FPo4Iz" role="3cqZAp">
-                        <node concept="3SKdUq" id="7_KH4FPo4I$" role="3SKWNk">
-                          <property role="3SKdUp" value="exclude non connected multiple ports (multiplicity equals to 0)" />
+                        <node concept="1PaTwC" id="6JXsDxrKBLX" role="3ndbpf">
+                          <node concept="3oM_SD" id="6JXsDxrKBLY" role="1PaTwD">
+                            <property role="3oM_SC" value="exclude" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBLZ" role="1PaTwD">
+                            <property role="3oM_SC" value="non" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBM0" role="1PaTwD">
+                            <property role="3oM_SC" value="connected" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBM1" role="1PaTwD">
+                            <property role="3oM_SC" value="multiple" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBM2" role="1PaTwD">
+                            <property role="3oM_SC" value="ports" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBM3" role="1PaTwD">
+                            <property role="3oM_SC" value="(multiplicity" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBM4" role="1PaTwD">
+                            <property role="3oM_SC" value="equals" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBM5" role="1PaTwD">
+                            <property role="3oM_SC" value="to" />
+                          </node>
+                          <node concept="3oM_SD" id="6JXsDxrKBM6" role="1PaTwD">
+                            <property role="3oM_SC" value="0)" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbJ" id="7_KH4FPo4I_" role="3cqZAp">
@@ -27023,7 +27361,7 @@
   </node>
   <node concept="1pmfR0" id="vMpGaW1CdU">
     <property role="TrG5h" value="tagRunnableBody" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="vMpGaW1CdV" role="1pqMTA">
       <node concept="3clFbS" id="vMpGaW1CdW" role="2VODD2">
@@ -27100,7 +27438,7 @@
   </node>
   <node concept="1pmfR0" id="5oFMniD6Feb">
     <property role="TrG5h" value="addReturnAtEndOfVoidRunnable" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <property role="3GE5qa" value="ppc" />
     <node concept="1pplIY" id="5oFMniD6Fec" role="1pqMTA">
@@ -27239,7 +27577,7 @@
   <node concept="1pmfR0" id="7Ua2xCXXORZ">
     <property role="3GE5qa" value="transform2C" />
     <property role="TrG5h" value="deleteUnusedComponents" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="7Ua2xCXXOS0" role="1pqMTA">
       <node concept="3clFbS" id="7Ua2xCXXOS1" role="2VODD2">
@@ -27311,7 +27649,7 @@
   <node concept="1pmfR0" id="4KCBE0grmGD">
     <property role="3GE5qa" value="transform2C" />
     <property role="TrG5h" value="calculateRequiredPortsMaxConnections" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <node concept="1pplIY" id="4KCBE0grmGE" role="1pqMTA">
       <node concept="3clFbS" id="4KCBE0grmGF" role="2VODD2">
         <node concept="3cpWs8" id="59fMuWJ4$gD" role="3cqZAp">
@@ -27723,7 +28061,7 @@
   <node concept="1pmfR0" id="6Q2bzfCejyq">
     <property role="3GE5qa" value="transform2C" />
     <property role="TrG5h" value="calculateProvidedPortsToGenerate" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <node concept="1pplIY" id="6Q2bzfCejyr" role="1pqMTA">
       <node concept="3clFbS" id="6Q2bzfCejys" role="2VODD2">
         <node concept="3clFbH" id="6Q2bzfCHm_6" role="3cqZAp" />
@@ -27902,8 +28240,34 @@
                     </node>
                   </node>
                   <node concept="3SKdUt" id="5hO4USfgy4K" role="3cqZAp">
-                    <node concept="3SKdUq" id="5hO4USfgy4L" role="3SKWNk">
-                      <property role="3SKdUp" value="generate ports for provied interface used as value expression" />
+                    <node concept="1PaTwC" id="6JXsDxrKBM7" role="3ndbpf">
+                      <node concept="3oM_SD" id="6JXsDxrKBM8" role="1PaTwD">
+                        <property role="3oM_SC" value="generate" />
+                      </node>
+                      <node concept="3oM_SD" id="6JXsDxrKBM9" role="1PaTwD">
+                        <property role="3oM_SC" value="ports" />
+                      </node>
+                      <node concept="3oM_SD" id="6JXsDxrKBMa" role="1PaTwD">
+                        <property role="3oM_SC" value="for" />
+                      </node>
+                      <node concept="3oM_SD" id="6JXsDxrKBMb" role="1PaTwD">
+                        <property role="3oM_SC" value="provied" />
+                      </node>
+                      <node concept="3oM_SD" id="6JXsDxrKBMc" role="1PaTwD">
+                        <property role="3oM_SC" value="interface" />
+                      </node>
+                      <node concept="3oM_SD" id="6JXsDxrKBMd" role="1PaTwD">
+                        <property role="3oM_SC" value="used" />
+                      </node>
+                      <node concept="3oM_SD" id="6JXsDxrKBMe" role="1PaTwD">
+                        <property role="3oM_SC" value="as" />
+                      </node>
+                      <node concept="3oM_SD" id="6JXsDxrKBMf" role="1PaTwD">
+                        <property role="3oM_SC" value="value" />
+                      </node>
+                      <node concept="3oM_SD" id="6JXsDxrKBMg" role="1PaTwD">
+                        <property role="3oM_SC" value="expression" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3clFbF" id="5hO4USfgy4M" role="3cqZAp">
@@ -27959,8 +28323,40 @@
           </node>
         </node>
         <node concept="3SKdUt" id="6Q2bzfCf66L" role="3cqZAp">
-          <node concept="3SKdUq" id="6Q2bzfCf66M" role="3SKWNk">
-            <property role="3SKdUp" value="genrate ports for provided interfaces  referenced outside On init runnable " />
+          <node concept="1PaTwC" id="6JXsDxrKBMh" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxrKBMi" role="1PaTwD">
+              <property role="3oM_SC" value="genrate" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKBMj" role="1PaTwD">
+              <property role="3oM_SC" value="ports" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKBMk" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKBMl" role="1PaTwD">
+              <property role="3oM_SC" value="provided" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKBMm" role="1PaTwD">
+              <property role="3oM_SC" value="interfaces" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKBMn" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKBMo" role="1PaTwD">
+              <property role="3oM_SC" value="referenced" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKBMp" role="1PaTwD">
+              <property role="3oM_SC" value="outside" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKBMq" role="1PaTwD">
+              <property role="3oM_SC" value="On" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKBMr" role="1PaTwD">
+              <property role="3oM_SC" value="init" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKBMs" role="1PaTwD">
+              <property role="3oM_SC" value="runnable" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="6Q2bzfCg5h1" role="3cqZAp">

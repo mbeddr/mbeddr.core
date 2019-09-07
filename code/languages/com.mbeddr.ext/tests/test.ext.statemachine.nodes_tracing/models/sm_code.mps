@@ -2,8 +2,8 @@
 <model ref="r:e7ec37da-9b0c-445d-8cf7-3e043620f94d(sm_code)">
   <persistence version="9" />
   <languages>
-    <use id="85e94e86-9fcb-43a2-9083-64c40006219e" name="com.mbeddr.mpsutil.nodes_tracing.test" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="85e94e86-9fcb-43a2-9083-64c40006219e" name="com.mbeddr.mpsutil.nodes_tracing.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
@@ -260,7 +260,7 @@
               <ref role="3498Oq" node="EEDqFMvMFa" resolve="par1" />
             </node>
             <node concept="1xGALR" id="EEDqFMwhnk" role="lGtFl">
-              <property role="1xEijf" value="2" />
+              <property role="1xEijf" value="7HmzdkqZUwl/2" />
               <node concept="1xFd8N" id="EEDqFMytYr" role="1xGcb7">
                 <property role="1xFd8M" value="if ( (*((int8_t *)((arguments[0])))) == 2 )" />
               </node>
@@ -271,7 +271,7 @@
             <node concept="_lVzq" id="EEDqFMz8fL" role="3XIRFZ">
               <ref role="_lVy$" node="EEDqFMz8hR" resolve="OutEvent" />
               <node concept="1xGALR" id="EEDqFMz8mz" role="lGtFl">
-                <property role="1xEijf" value="2" />
+                <property role="1xEijf" value="7HmzdkqZUwl/2" />
                 <node concept="1xFd8N" id="EEDqFMzlOm" role="1xGcb7">
                   <property role="1xFd8M" value="SM1_handleEvent();" />
                 </node>
@@ -295,7 +295,7 @@
                 <property role="2hmy$m" value="42" />
               </node>
               <node concept="1xGALR" id="EEDqFMytdi" role="lGtFl">
-                <property role="1xEijf" value="2" />
+                <property role="1xEijf" value="7HmzdkqZUwl/2" />
                 <node concept="1xFd8N" id="EEDqFMytdI" role="1xGcb7">
                   <property role="1xFd8M" value="42;" />
                 </node>
@@ -316,7 +316,7 @@
         <node concept="ODFVE" id="EEDqFMyvDm" role="1KoBSX" />
         <node concept="OCETd" id="EEDqFMyuyN" role="1KoBSX">
           <node concept="1xGALR" id="EEDqFMyu_B" role="lGtFl">
-            <property role="1xEijf" value="2" />
+            <property role="1xEijf" value="7HmzdkqZUwl/2" />
             <node concept="1xFd8N" id="EEDqFMyvFg" role="1xGcb7">
               <property role="1xFd8M" value="static inline void  SM1_S1_s2_ExitAction2(SM1_S1__data_t *instance)" />
             </node>
@@ -334,7 +334,7 @@
             </node>
             <node concept="1_9egQ" id="EEDqFMyDt1" role="3XIRFZ">
               <node concept="1xGALR" id="EEDqFMz6gH" role="lGtFl">
-                <property role="1xEijf" value="2" />
+                <property role="1xEijf" value="7HmzdkqZUwl/2" />
                 <node concept="1xFd8N" id="EEDqFMz6j8" role="1xGcb7">
                   <property role="1xFd8M" value="instance-&gt;value = 3;" />
                 </node>
@@ -414,7 +414,7 @@
             <node concept="2tqLt1" id="7gVrg_0w_lF" role="3XIRFZ">
               <ref role="2tqLt0" node="7gVrg_0w_kL" resolve="e" />
               <node concept="1xGALR" id="2qCdpHNSEB0" role="lGtFl">
-                <property role="1xEijf" value="2" />
+                <property role="1xEijf" value="7HmzdkqZUwl/2" />
                 <node concept="1xFd8N" id="2qCdpHNSEB2" role="1xGcb7">
                   <property role="1xFd8M" value="  SM2_SelfTriggerInInitial__execute(instance, SM2_SelfTriggerInInitial__inevents__SelfTriggerInInitial_e__event, NULL);" />
                 </node>

@@ -9,8 +9,8 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -580,10 +580,10 @@
         </node>
       </node>
       <node concept="3F0A7n" id="vg5qBCe_RZ" role="3EZMnx">
-        <ref role="1NtTu8" to="5wll:vg5qBCe_P8" resolve="kind" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <ref role="1NtTu8" to="5wll:6JXsDxrKBEk" resolve="kind" />
         <node concept="Vb9p2" id="66UaKxB_fHg" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
     </node>
@@ -922,7 +922,7 @@
         <property role="3F0ifm" value=";" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
         <node concept="Vb9p2" id="6zcb4tI8Pin" role="3F10Kt">
-          <property role="Vbekb" value="ITALIC" />
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
         </node>
       </node>
     </node>
@@ -1332,9 +1332,9 @@
         <ref role="1NtTu8" to="5wll:6zcb4tI8WRf" resolve="value" />
       </node>
       <node concept="3F0A7n" id="6zcb4tIdC3g" role="3EZMnx">
-        <ref role="1NtTu8" to="5wll:6zcb4tI8X6l" resolve="unit" />
+        <ref role="1NtTu8" to="5wll:6JXsDxrKBEo" resolve="unit" />
         <node concept="Vb9p2" id="6zcb4tIdC4W" role="3F10Kt">
-          <property role="Vbekb" value="ITALIC" />
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
         </node>
       </node>
     </node>
@@ -1500,7 +1500,7 @@
     <property role="TrG5h" value="deleteUseResource" />
     <ref role="1h_SK9" to="5wll:6u_410TLnZf" resolve="UseResourceAnnotation" />
     <node concept="1hA7zw" id="6u_410TNDAY" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="6u_410TNDAZ" role="1hA7z_">
         <node concept="3clFbS" id="6u_410TNDB0" role="2VODD2">
           <node concept="3clFbF" id="6u_410TNDFe" role="3cqZAp">
@@ -1513,7 +1513,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="6u_410TNDTc" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="6u_410TNDTd" role="1hA7z_">
         <node concept="3clFbS" id="6u_410TNDTe" role="2VODD2">
           <node concept="3clFbF" id="6u_410TNDTf" role="3cqZAp">
@@ -1587,7 +1587,7 @@
         <property role="3F0ifm" value=";" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
         <node concept="Vb9p2" id="5M$KybkpCdP" role="3F10Kt">
-          <property role="Vbekb" value="ITALIC" />
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
         </node>
       </node>
     </node>

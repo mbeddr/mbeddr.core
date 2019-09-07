@@ -69,9 +69,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -420,7 +418,7 @@
                 <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
                 <node concept="2pIpSj" id="2hvQkqd4$sZ" role="2pJxcM">
                   <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                  <node concept="2pJPED" id="2hvQkqd4$ti" role="2pJxcZ">
+                  <node concept="2pJPED" id="2hvQkqd4$ti" role="28nt2d">
                     <ref role="2pJxaS" to="vuss:2hvQkqd3RcE" resolve="AnonymousMessageType" />
                   </node>
                 </node>
@@ -467,7 +465,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="2hvQkqcZLWR" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="2hvQkqd6fTM" role="2pJxcZ">
+                <node concept="2pJPED" id="2hvQkqd6fTM" role="28nt2d">
                   <ref role="2pJxaS" to="vuss:2hvQkqd3RcE" resolve="AnonymousMessageType" />
                 </node>
               </node>
@@ -505,7 +503,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="2hvQkqd0_Ce" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="2hvQkqdiWg1" role="2pJxcZ">
+                <node concept="2pJPED" id="2hvQkqdiWg1" role="28nt2d">
                   <ref role="2pJxaS" to="jtc1:2hvQkqd75Mv" resolve="AnonymousSerialContextType" />
                 </node>
               </node>
@@ -542,7 +540,7 @@
               <ref role="2pJxaS" to="vuss:6MQ2rNXJAO$" resolve="MessageType" />
               <node concept="2pIpSj" id="2hvQkqd14aq" role="2pJxcM">
                 <ref role="2pIpSl" to="vuss:2hvQkqcLEjv" resolve="decl" />
-                <node concept="36biLy" id="2hvQkqd14aP" role="2pJxcZ">
+                <node concept="36biLy" id="2hvQkqd14aP" role="28nt2d">
                   <node concept="2OqwBi" id="2hvQkqd14M2" role="36biLW">
                     <node concept="2OqwBi" id="2hvQkqd14ey" role="2Oq$k0">
                       <node concept="1YBJjd" id="2hvQkqd14b0" role="2Oq$k0">
