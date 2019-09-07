@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="0" />
@@ -13,7 +13,7 @@
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="jz4c" ref="r:dd031eba-ced3-46e5-a32e-7a59148de78a(test.debugging.ext.statemachines.step_out)" />
@@ -43,7 +43,7 @@
       <concept id="8867272038842303611" name="com.mbeddr.core.debug.test.structure.DebuggerTestcaseReference" flags="ng" index="UZuib">
         <reference id="8867272038842351965" name="testCase" index="UZi6H" />
       </concept>
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -106,7 +106,6 @@
       <node concept="3clFbS" id="7SbCYlqP0Go" role="3clF47" />
       <node concept="3F5Y_J" id="7SbCYlqP0Gp" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0xUa" role="3F5Y$9">
-          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="3wYrwRBNg0r" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbhzFHI" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -114,7 +113,7 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0yx_" role="16XPZB">
-            <property role="16EpFF" value="nux" />
+            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
             <node concept="30a7bf" id="7SbCYlqP0Gq" role="16XPZy">
               <node concept="3cQ7K9" id="3uHGTbhzFHG" role="30a7be">
                 <property role="3sdDOw" value="marker" />

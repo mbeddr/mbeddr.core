@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="9vx0" ref="r:d5a91f39-5e47-494d-a956-af239649a283(test.debugging.core.closures)" />
@@ -34,7 +34,7 @@
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -235,7 +235,6 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2lYs" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0yvS" role="3F5Y$9">
-          <property role="16EpFF" value="mac" />
           <node concept="1l46Ie" id="4WY_RKG$PDy" role="16YnsZ">
             <node concept="1vv375" id="4WY_RKG$PD$" role="1vv36M">
               <ref role="1vv99g" node="4WY_RKG$PD5" resolve="inAHof" />
@@ -251,9 +250,9 @@
             <ref role="1vtf2j" node="4WY_RKG$PC9" resolve="inAHof" />
           </node>
           <node concept="16XR13" id="7qzmU5U0Ad6" role="16XPZB">
-            <property role="16EpFF" value="nux" />
+            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
             <node concept="16XR13" id="7cisAzZ8Jnq" role="16XKT6">
-              <property role="16EpFF" value="win" />
+              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
               <node concept="1l46Ie" id="7cisAzZ8Jst" role="16XPZy">
                 <node concept="1vv375" id="7cisAzZ8Jsu" role="1vv36M">
                   <ref role="1vv99g" node="4WY_RKG$PD1" resolve="inTestClosure" />
@@ -431,7 +430,6 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2mhj" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0ysE" role="3F5Y$9">
-          <property role="16EpFF" value="mac" />
           <node concept="1l46Ie" id="4WY_RKG$PDe" role="16YnsZ">
             <node concept="1vv375" id="4WY_RKG$PDg" role="1vv36M">
               <ref role="1vv99g" node="4WY_RKG$PD5" resolve="inAHof" />
@@ -447,9 +445,9 @@
             <ref role="1vtf2j" node="4WY_RKG$PC9" resolve="inAHof" />
           </node>
           <node concept="16XR13" id="7qzmU5U0AdZ" role="16XPZB">
-            <property role="16EpFF" value="nux" />
+            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
             <node concept="16XR13" id="7cisAzZ8JtN" role="16XKT6">
-              <property role="16EpFF" value="win" />
+              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
               <node concept="30a7bf" id="7cisAzZ8Ju9" role="16XPZy">
                 <node concept="3cQ7K9" id="3GPxRNRaM0j" role="30a7be">
                   <property role="3sdDOw" value="marker" />

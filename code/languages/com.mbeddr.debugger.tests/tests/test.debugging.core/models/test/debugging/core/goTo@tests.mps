@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
@@ -11,7 +11,7 @@
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="zvet" ref="r:23c9e1f0-d1fa-4276-9e6b-c4c305dca180(test.debugging.core.goTo)" />
@@ -39,7 +39,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -144,7 +144,6 @@
       <node concept="3savIG" id="7Jr7T0w2lV8" role="3savwP" />
       <node concept="3F5Y_J" id="7Jr7T0w2lV9" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0xUE" role="3F5Y$9">
-          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="7Jr7T0w2lVa" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaNKW" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -152,9 +151,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0AGX" role="16XPZB">
-            <property role="16EpFF" value="nux" />
+            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
             <node concept="16XR13" id="7cisAzZ66yl" role="16XKT6">
-              <property role="16EpFF" value="win" />
+              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
               <node concept="30a7bf" id="7cisAzZ6sGK" role="16XPZy">
                 <node concept="3cQ7K9" id="3GPxRNRaNKI" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -205,7 +204,6 @@
           </node>
         </node>
         <node concept="16YvwY" id="7qzmU5U0yj1" role="3F5Y$9">
-          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="1KSABIutI0A" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaNKU" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -213,9 +211,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0AHq" role="16XPZB">
-            <property role="16EpFF" value="nux" />
+            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
             <node concept="16XR13" id="7cisAzZ6sJS" role="16XKT6">
-              <property role="16EpFF" value="win" />
+              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
               <node concept="30a7bf" id="7cisAzZ6sK2" role="16XPZy">
                 <node concept="3cQ7K9" id="3GPxRNRaNKO" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -258,7 +256,6 @@
           </node>
         </node>
         <node concept="16YvwY" id="7qzmU5U0ylv" role="3F5Y$9">
-          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="7Jr7T0w2mcP" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaNKS" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -266,9 +263,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0ATF" role="16XPZB">
-            <property role="16EpFF" value="nux" />
+            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
             <node concept="16XR13" id="7cisAzZ6sLO" role="16XKT6">
-              <property role="16EpFF" value="win" />
+              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
               <node concept="30a7bf" id="7cisAzZ6sLP" role="16XPZy">
                 <node concept="3cQ7K9" id="3GPxRNRaNKK" role="30a7be">
                   <property role="3sdDOw" value="marker" />
