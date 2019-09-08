@@ -361,10 +361,6 @@
         </node>
         <node concept="3clFbH" id="vbJ3AuLzsA" role="3cqZAp" />
         <node concept="38rL1p" id="8Fyjetf65m" role="3cqZAp">
-          <node concept="38rIoz" id="6_uSt8oDn_F" role="38rM$J">
-            <property role="38rIoG" value="*" />
-            <property role="38rMdH" value="*" />
-          </node>
           <node concept="38rIoz" id="49Y2Xia51br" role="38rM$J">
             <property role="38rIoG" value="call" />
             <property role="38rMdH" value="main" />

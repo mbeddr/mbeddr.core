@@ -3528,7 +3528,7 @@
           </node>
           <node concept="38rIoz" id="3HvJSbHBbMo" role="38rM$J">
             <property role="38rIoG" value="t.points[0].x" />
-            <property role="38rMdH" value="1" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="3HvJSbHBbMp" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -3565,6 +3565,14 @@
             <property role="38rIoG" value="t.points[2].y" />
             <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="7MMcIPliUzz" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="sy$mvDiB7e" role="38rM$J">
+            <property role="38rIoG" value="t.points\\[0l?l?\\]\\.x" />
+            <property role="38rMdH" value="1" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="sy$mvDiB7f" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
