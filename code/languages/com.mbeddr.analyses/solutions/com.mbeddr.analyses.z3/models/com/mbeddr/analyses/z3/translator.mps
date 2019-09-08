@@ -27,8 +27,8 @@
     <import index="19k1" ref="r:8adfbc0c-2e95-438e-bde2-5fa4acf91c87(com.mbeddr.analyses.stan.plugin)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="f7eu" ref="88063d90-aa0a-4f17-8757-92c0f1692f3d/java:com.microsoft.z3(com.mbeddr.analyses.z3/)" />
     <import index="q96t" ref="r:1a160c0d-0942-4582-a592-33c4925b444e(com.mbeddr.analyses.z3.variability)" />
+    <import index="f7eu" ref="6e9e9327-19d7-416c-8dd0-24b15ea19915/java:com.microsoft.z3(com.mbeddr.analyses.z3.lib/)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="qlb5" ref="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" implicit="true" />

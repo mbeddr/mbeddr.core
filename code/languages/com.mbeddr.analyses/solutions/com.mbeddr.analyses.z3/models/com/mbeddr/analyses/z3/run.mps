@@ -20,8 +20,8 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="22we" ref="r:2e00714f-c0ab-49b2-b5c5-a4ada80aa17e(com.mbeddr.analyses.z3.translator)" />
-    <import index="f7eu" ref="88063d90-aa0a-4f17-8757-92c0f1692f3d/java:com.microsoft.z3(com.mbeddr.analyses.z3/)" />
     <import index="q96t" ref="r:1a160c0d-0942-4582-a592-33c4925b444e(com.mbeddr.analyses.z3.variability)" />
+    <import index="f7eu" ref="6e9e9327-19d7-416c-8dd0-24b15ea19915/java:com.microsoft.z3(com.mbeddr.analyses.z3.lib/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
@@ -1200,7 +1200,7 @@
           </node>
           <node concept="3cpWsn" id="7zW9XauYfKg" role="1Duv9x">
             <property role="TrG5h" value="fd" />
-            <node concept="3uibUv" id="7zW9XauYfKh" role="1tU5fm">
+            <node concept="3uibUv" id="5puIighMXXH" role="1tU5fm">
               <ref role="3uigEE" to="f7eu:~FuncDecl" resolve="FuncDecl" />
             </node>
           </node>
