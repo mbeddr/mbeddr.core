@@ -879,6 +879,15 @@
           </node>
         </node>
         <node concept="3clFbH" id="1eEm1HSJvVn" role="3cqZAp" />
+        <node concept="3clFbF" id="vbJ3AuLz82" role="3cqZAp">
+          <node concept="2YIFZM" id="vbJ3AuLzpB" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:6izRX52tWlf" resolve="prettyPrintCounterexample" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="3Thx9qBUYOF" role="37wK5m">
+              <ref role="3cqZAo" node="7MMcIPlt_6B" resolve="res" />
+            </node>
+          </node>
+        </node>
         <node concept="38rL1p" id="8Fyjetf2zA" role="3cqZAp">
           <node concept="38rIoz" id="8Fyjetf2GG" role="38rM$J">
             <property role="38rIoG" value="call" />

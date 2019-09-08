@@ -3512,6 +3512,15 @@
           </node>
         </node>
         <node concept="3clFbH" id="3HvJSbHBbMl" role="3cqZAp" />
+        <node concept="3clFbF" id="vbJ3AuLz82" role="3cqZAp">
+          <node concept="2YIFZM" id="vbJ3AuLzpB" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:6izRX52tWlf" resolve="prettyPrintCounterexample" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="3Thx9qBUP_6" role="37wK5m">
+              <ref role="3cqZAo" node="3HvJSbHBbM2" resolve="resTriangleAccess" />
+            </node>
+          </node>
+        </node>
         <node concept="38rL1p" id="8Fyjetfaha" role="3cqZAp">
           <node concept="38rIoz" id="3HvJSbHBbMn" role="38rM$J">
             <property role="38rIoG" value="call" />
