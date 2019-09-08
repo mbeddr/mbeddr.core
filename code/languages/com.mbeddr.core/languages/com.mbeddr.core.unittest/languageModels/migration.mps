@@ -2,16 +2,16 @@
 <model ref="r:c4872e01-c9c6-4375-9e02-9c9b86cc86f4(com.mbeddr.core.unittest.migration)">
   <persistence version="9" />
   <languages>
-    <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
-    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -712,7 +712,7 @@
                                                                   <node concept="37vLTw" id="7l4X52HepPG" role="3uHU7B">
                                                                     <ref role="3cqZAo" node="7l4X52HeoX5" resolve="configItem" />
                                                                   </node>
-                                                                  <node concept="3B5_sB" id="7BqFpRy4IVl" role="3uHU7w">
+                                                                  <node concept="2OqwBi" id="7BqFpRy4IVl" role="3uHU7w">
                                                                     <ref role="3B5MYn" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
                                                                   </node>
                                                                 </node>
@@ -768,7 +768,7 @@
                               </node>
                             </node>
                             <node concept="2DeJg1" id="ILZbnBShUk" role="2OqNvi">
-                              <ref role="1A0vxQ" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
+                              <ref role="1A0vxQ" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
                             </node>
                           </node>
                         </node>
@@ -790,7 +790,7 @@
                       </node>
                       <node concept="v3k3i" id="5B69dDbewNG" role="2OqNvi">
                         <node concept="chp4Y" id="5B69dDbewOO" role="v3oSu">
-                          <ref role="cht4Q" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
+                          <ref role="cht4Q" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
                         </node>
                       </node>
                     </node>
@@ -1687,7 +1687,7 @@
                   </node>
                   <node concept="v3k3i" id="7BqFpRybKYL" role="2OqNvi">
                     <node concept="chp4Y" id="7BqFpRybKZs" role="v3oSu">
-                      <ref role="cht4Q" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
+                      <ref role="cht4Q" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
                     </node>
                   </node>
                 </node>

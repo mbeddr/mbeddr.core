@@ -196,6 +196,7 @@
         <child id="7496733358578231498" name="basicType" index="15Utuf" />
       </concept>
       <concept id="3335993110369795380" name="com.mbeddr.core.expressions.structure.TypeSizeConfiguration" flags="ng" index="MXy$V">
+        <child id="3869525881267655660" name="ssizeTType" index="2B$ca_" />
         <child id="3335993110369805710" name="specifications" index="MXv61" />
         <child id="8863019357864392147" name="sizeTType" index="2O5j3Q" />
         <child id="3813668170744198630" name="pointerDiffType" index="3kxMGo" />
@@ -405,6 +406,7 @@
       <property role="3VGQ4h" value="1" />
       <property role="3VGQ4j" value="37" />
     </node>
+    <node concept="26Vqph" id="7EZ1Sps3KTE" role="2B$ca_" />
   </node>
   <node concept="rcWEw" id="3WQPxwFiyJb">
     <property role="TrG5h" value="setjmp" />
