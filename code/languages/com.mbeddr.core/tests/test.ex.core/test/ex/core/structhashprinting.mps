@@ -8,7 +8,7 @@
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="6" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
   </languages>
   <imports>
@@ -39,9 +39,7 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -129,7 +127,7 @@
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
       </concept>
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
@@ -175,7 +173,6 @@
   <node concept="2v9HqL" id="kOmZ6t0Cdw">
     <node concept="2eOfOl" id="kOmZ6t1fZP" role="2ePNbc">
       <property role="TrG5h" value="main" />
-      <property role="iO3LB" value="true" />
       <ref role="3oK8_y" to="1ok9:4LhGMnjfiNC" resolve="portable" />
       <node concept="2v9HqM" id="2CzB6HF9bsI" role="2eOfOg">
         <ref role="2v9HqP" node="kOmZ6t0CdN" resolve="TestHashPrinting" />

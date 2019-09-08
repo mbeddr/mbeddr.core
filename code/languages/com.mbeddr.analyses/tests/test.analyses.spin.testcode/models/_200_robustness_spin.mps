@@ -56,9 +56,6 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
       </concept>
@@ -208,7 +205,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -266,7 +263,7 @@
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
-      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameShorteningConfiguration" flags="ng" index="MH4UO" />
+      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO" />
     </language>
     <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
       <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
@@ -420,7 +417,6 @@
       <property role="3V$3am" value="binaries" />
       <property role="3V$3ak" value="2d7fadf5-33f6-4e80-a78f-0f739add2bde/7717755763392524104/5046689135694070731" />
       <node concept="1gr5cj" id="70fpbbgzyvl" role="8Wnug">
-        <property role="iO3LB" value="false" />
         <property role="TrG5h" value="pan__010_overflow_harness" />
         <node concept="2v9HqM" id="70fpbbgzyvo" role="2eOfOg">
           <ref role="2v9HqP" node="70fpbbgzxMo" resolve="_010_overflow_harness" />

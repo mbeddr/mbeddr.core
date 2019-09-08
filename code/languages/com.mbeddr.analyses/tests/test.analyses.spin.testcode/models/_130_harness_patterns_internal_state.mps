@@ -54,9 +54,6 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -269,7 +266,7 @@
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
-      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameShorteningConfiguration" flags="ng" index="MH4UO">
+      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO">
         <property id="2391520863997773387" name="allowNameShortening" index="MHqn5" />
       </concept>
     </language>
@@ -281,7 +278,6 @@
   </registry>
   <node concept="2v9HqL" id="n$tw_allGw">
     <node concept="1gr5cj" id="n$tw_allGE" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__010_harness_for_manual_proxy" />
       <node concept="2v9HqM" id="n$tw_allH8" role="2eOfOg">
         <ref role="2v9HqP" node="n$tw_allQG" resolve="_010_harness_for_manual_proxy" />
@@ -294,7 +290,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="n$tw_allGF" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__011_harness_for_manual_proxy" />
       <node concept="2v9HqM" id="n$tw_allHb" role="2eOfOg">
         <ref role="2v9HqP" node="n$tw_allTB" resolve="_011_harness_for_manual_proxy" />
@@ -307,7 +302,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="n$tw_allGG" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__020_harness_with_reset_and_replay" />
       <node concept="2v9HqM" id="n$tw_allHe" role="2eOfOg">
         <ref role="2v9HqP" node="n$tw_allWi" resolve="_020_harness_with_reset_and_replay" />
@@ -335,7 +329,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="n$tw_allGH" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__200_harness_suv_with_hidden_state_generated_save_traces_in_file" />
       <node concept="2v9HqM" id="n$tw_allHj" role="2eOfOg">
         <ref role="2v9HqP" node="n$tw_allVI" resolve="_200_harness_suv_with_hidden_state_generated_save_traces_in_file" />

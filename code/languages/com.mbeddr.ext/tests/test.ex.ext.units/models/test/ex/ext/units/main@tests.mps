@@ -2,7 +2,7 @@
 <model ref="r:6fe398db-6d5e-4884-87d3-18e70160d222(test.ex.ext.units.main@tests)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="6" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
@@ -91,9 +91,7 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -180,7 +178,7 @@
         <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
@@ -257,7 +255,6 @@
     <node concept="2eh4Hv" id="4CUqBF4znbX" role="2Q9xDr" />
     <node concept="2eOfOl" id="7j7F_4ow9iC" role="2ePNbc">
       <property role="TrG5h" value="UnitsTests" />
-      <property role="iO3LB" value="true" />
       <ref role="3oK8_y" node="4LhGMnjpRfV" resolve="portable" />
       <node concept="2v9HqM" id="7j7F_4ow9iD" role="2eOfOg">
         <ref role="2v9HqP" node="7j7F_4owjQ0" resolve="UnitsTests" />

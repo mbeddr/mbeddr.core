@@ -2149,15 +2149,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="39Zt5ivY$SA" role="3cqZAp">
-          <node concept="3cpWsn" id="39Zt5ivY$SD" role="3cpWs9">
-            <property role="TrG5h" value="isTest" />
-            <node concept="10P_77" id="39Zt5ivY$S$" role="1tU5fm" />
-            <node concept="3clFbT" id="39Zt5ivY_gN" role="33vP2m">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="16TbH9W4nS3" role="3cqZAp">
           <node concept="3cpWsn" id="16TbH9W4nS4" role="3cpWs9">
             <property role="TrG5h" value="repo" />
@@ -2207,38 +2198,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="39Zt5ivY_tu" role="3cqZAp">
-                <node concept="37vLTI" id="39Zt5ivY_IB" role="3clFbG">
-                  <node concept="1Wc70l" id="39Zt5ivYBGp" role="37vLTx">
-                    <node concept="2OqwBi" id="39Zt5ivYCKv" role="3uHU7w">
-                      <node concept="1PxgMI" id="39Zt5ivYC97" role="2Oq$k0">
-                        <node concept="37vLTw" id="39Zt5ivYBVs" role="1m5AlR">
-                          <ref role="3cqZAo" node="1sHR4zG9UAn" resolve="node" />
-                        </node>
-                        <node concept="chp4Y" id="79i$vAY6eOz" role="3oSUPX">
-                          <ref role="cht4Q" to="51wr:4o9sgv8QoKi" resolve="Executable" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="39Zt5ivYEmD" role="2OqNvi">
-                        <ref role="3TsBF5" to="51wr:2YvytGXjVmW" resolve="isTest" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="39Zt5ivYA2$" role="3uHU7B">
-                      <node concept="37vLTw" id="39Zt5ivY_SK" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1sHR4zG9UAn" resolve="node" />
-                      </node>
-                      <node concept="1mIQ4w" id="39Zt5ivYB2Q" role="2OqNvi">
-                        <node concept="chp4Y" id="39Zt5ivYBhr" role="cj9EA">
-                          <ref role="cht4Q" to="51wr:4o9sgv8QoKi" resolve="Executable" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="37vLTw" id="39Zt5ivY_tt" role="37vLTJ">
-                    <ref role="3cqZAo" node="39Zt5ivY$SD" resolve="isTest" />
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
           <node concept="37vLTw" id="16TbH9W4o6T" role="ukAjM">
@@ -2254,7 +2213,7 @@
             </node>
             <node concept="21ER0p" id="Orr3VbwKYQ" role="37wK5m" />
             <node concept="Xl_RD" id="Orr3VbwaAT" role="37wK5m">
-              <property role="Xl_RC" value="all" />
+              <property role="Xl_RC" value="debug" />
             </node>
           </node>
         </node>
