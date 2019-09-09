@@ -368,7 +368,7 @@
         <property role="TrG5h" value="test.debugging.core" />
         <property role="3LESm3" value="e7bd1f04-9809-412c-acab-9bc644133ec1" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="6v3tcHGMVS4" role="3LF7KH">
           <ref role="398BVh" node="62XMcUo5H0w" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="6v3tcHGMVS5" role="iGT6I">
@@ -448,7 +448,7 @@
         <property role="TrG5h" value="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources" />
+        <property role="aoJFB" value="eYcmk9QOli/sources" />
         <node concept="398BVA" id="62XMcUo6Gwm" role="3LF7KH">
           <ref role="398BVh" node="62XMcUo5H0w" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="62XMcUo6Gzg" role="iGT6I">
@@ -700,7 +700,7 @@
         <property role="TrG5h" value="test.debugger.test.runtime" />
         <property role="3LESm3" value="44b49c3e-4fe3-49b7-8667-d1ea789dd97a" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="62XMcUo6Gvz" role="3LF7KH">
           <ref role="398BVh" node="62XMcUo5H0L" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="62XMcUo6Gzm" role="iGT6I">
@@ -1097,7 +1097,7 @@
         <property role="TrG5h" value="test.debugging.ext.components" />
         <property role="3LESm3" value="b43f6f25-cef0-4845-94e2-ffba339d609e" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="62XMcUo9RlE" role="3LF7KH">
           <ref role="398BVh" node="62XMcUo9Rmc" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="62XMcUo9RlF" role="iGT6I">
@@ -1168,7 +1168,7 @@
         <property role="TrG5h" value="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources" />
+        <property role="aoJFB" value="eYcmk9QOli/sources" />
         <node concept="398BVA" id="6v3tcHGMX8$" role="3LF7KH">
           <ref role="398BVh" node="62XMcUo9Rmc" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="6v3tcHGMX8_" role="iGT6I">
@@ -1666,7 +1666,7 @@
         <property role="TrG5h" value="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources" />
+        <property role="aoJFB" value="eYcmk9QOli/sources" />
         <node concept="398BVA" id="6v3tcHGMXcg" role="3LF7KH">
           <ref role="398BVh" node="3OuI4NZK0uF" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="6v3tcHGMXch" role="iGT6I">
@@ -1722,7 +1722,7 @@
         <property role="TrG5h" value="test.debugging.ext.statemachines" />
         <property role="3LESm3" value="fe5c0028-7b17-4eb8-9f6c-04a138aa2de5" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="1SiIV0" id="58boHs0SvR3" role="3bR37C">
           <node concept="3bR9La" id="58boHs0SvR4" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -1981,7 +1981,7 @@
         <property role="TrG5h" value="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources" />
+        <property role="aoJFB" value="eYcmk9QOli/sources" />
         <node concept="398BVA" id="6v3tcHGMXas" role="3LF7KH">
           <ref role="398BVh" node="6ey1bOhy9X0" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="6v3tcHGMXat" role="iGT6I">
@@ -2037,7 +2037,7 @@
         <property role="TrG5h" value="test.debugging.ext.physicalunits" />
         <property role="3LESm3" value="18301da2-9df6-42b3-9529-654087394850" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="1SiIV0" id="58boHs0SvQq" role="3bR37C">
           <node concept="3bR9La" id="58boHs0SvQr" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -2286,7 +2286,7 @@
         <property role="TrG5h" value="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources" />
+        <property role="aoJFB" value="eYcmk9QOli/sources" />
         <node concept="398BVA" id="3q6VMvxn4jm" role="3LF7KH">
           <ref role="398BVh" node="3q6VMvxn393" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="3q6VMvxn4jn" role="iGT6I">
@@ -2345,7 +2345,7 @@
         <property role="TrG5h" value="test.debugging.core" />
         <property role="3LESm3" value="e7bd1f04-9809-412c-acab-9bc644133ec1" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="3q6VMvxn4b2" role="3LF7KH">
           <ref role="398BVh" node="3q6VMvxn393" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="3q6VMvxn4b3" role="iGT6I">

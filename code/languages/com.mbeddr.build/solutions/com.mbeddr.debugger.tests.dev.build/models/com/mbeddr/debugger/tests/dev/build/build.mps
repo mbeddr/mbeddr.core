@@ -350,7 +350,7 @@
         <property role="TrG5h" value="test.debugger.cdt" />
         <property role="3LESm3" value="1c78eae5-6fae-4ae8-a6f2-8a34ea9ab06f" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAuv4B" role="3LF7KH">
           <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
           <node concept="2Ry0Ak" id="7eF9rfAuv4C" role="iGT6I">
@@ -403,7 +403,7 @@
         <property role="TrG5h" value="test.debugger.core" />
         <property role="3LESm3" value="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAuv54" role="3LF7KH">
           <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
           <node concept="2Ry0Ak" id="7eF9rfAuv55" role="iGT6I">
