@@ -6476,6 +6476,25 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="56jrqO8ILXK" role="jymVt" />
+    <node concept="Wx3nA" id="56jrqO8IRr4" role="jymVt">
+      <property role="TrG5h" value="COMPILER_OPTION_STD_C99" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="56jrqO8IQV7" role="1B3o_S" />
+      <node concept="17QB3L" id="56jrqO8IR3H" role="1tU5fm" />
+      <node concept="Xl_RD" id="56jrqO8IRwU" role="33vP2m">
+        <property role="Xl_RC" value="-std=c99" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="56jrqO8IRFM" role="jymVt">
+      <property role="TrG5h" value="COMPILER_OPTION_STD_C90" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="56jrqO8IRFN" role="1B3o_S" />
+      <node concept="17QB3L" id="56jrqO8IRFO" role="1tU5fm" />
+      <node concept="Xl_RD" id="56jrqO8IRFP" role="33vP2m">
+        <property role="Xl_RC" value="-std=c90" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="5Dpaey8tDZ_" role="jymVt" />
     <node concept="Wx3nA" id="5Dpaey8tEdv" role="jymVt">
       <property role="2dlcS1" value="false" />

@@ -663,5 +663,47 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="b512__MuTR">
+    <ref role="1XX52x" to="d04j:b512__MuTr" resolve="ProjectViewReference" />
+    <node concept="3EZMnI" id="b512__MuTT" role="2wV5jI">
+      <node concept="PMmxH" id="b512__MuU0" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="b512__MuU5" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11L4FC" id="b512__MuUD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="b512__MuUI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="b512__MuUn" role="3EZMnx">
+        <ref role="1NtTu8" to="d04j:b512__MuTs" resolve="view" />
+        <node concept="1sVBvm" id="b512__MuUp" role="1sWHZn">
+          <node concept="3F0A7n" id="b512__MuUA" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="b512__N4_P" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="b512__N4Aq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="b512__N4Ad" role="3EZMnx">
+        <ref role="1NtTu8" to="d04j:b512__N4_B" resolve="project" />
+      </node>
+      <node concept="3F0ifn" id="b512__MuUd" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="b512__MuUM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="b512__MuTW" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

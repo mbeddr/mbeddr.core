@@ -281,5 +281,25 @@
     <property role="34LRSv" value="view" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
+  <node concept="1TIwiD" id="b512__MuTr">
+    <property role="EcuMT" value="199570334335757915" />
+    <property role="TrG5h" value="ProjectViewReference" />
+    <property role="34LRSv" value="projectView" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="b512__N4_B" role="1TKVEi">
+      <property role="IQ2ns" value="199570334335912295" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="project" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="b512__MuTs" role="1TKVEi">
+      <property role="IQ2ns" value="199570334335757916" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="view" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7diJr$Rulpu" resolve="ProjectView" />
+    </node>
+  </node>
 </model>
 
