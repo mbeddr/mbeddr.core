@@ -884,9 +884,6 @@
       <node concept="L2wRC" id="3JmJHJbDhqH" role="39821P">
         <ref role="L2wRA" node="3JmJHJbDg_X" resolve="test.analyses.spin.testcode" />
       </node>
-      <node concept="L2wRC" id="5_e$7m1SKLf" role="39821P">
-        <ref role="L2wRA" node="5_e$7m1SKyT" resolve="test.analyses.stan.ts" />
-      </node>
     </node>
     <node concept="2G$12M" id="7Vt15sLWjNi" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.analyses.ts.tests" />
@@ -1576,44 +1573,6 @@
           </node>
         </node>
       </node>
-      <node concept="1E1JtA" id="5_e$7m1SKyT" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.analyses.stan.ts" />
-        <property role="3LESm3" value="09137596-3930-4a52-b39f-4d1c6f28f43e" />
-        <property role="aoJFB" value="sources and tests" />
-        <node concept="398BVA" id="5_e$7m1SKId" role="3LF7KH">
-          <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
-          <node concept="2Ry0Ak" id="5_e$7m1SKIe" role="iGT6I">
-            <property role="2Ry0Am" value="tests" />
-            <node concept="2Ry0Ak" id="5_e$7m1SKIf" role="2Ry0An">
-              <property role="2Ry0Am" value="test.analyses.stan.ts" />
-              <node concept="2Ry0Ak" id="5_e$7m1SKIt" role="2Ry0An">
-                <property role="2Ry0Am" value="test.analyses.stan.ts.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5_e$7m1SKIx" role="3bR37C">
-          <node concept="3bR9La" id="5_e$7m1SKIy" role="1SiIV1">
-            <ref role="3bR37D" to="p6ld:6HIxGZOKjFs" resolve="com.mbeddr.analyses.z3" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5_e$7m1SKIz" role="3bR37C">
-          <node concept="3bR9La" id="5_e$7m1SKI$" role="1SiIV1">
-            <ref role="3bR37D" to="p6ld:7eF9rfAnuj5" resolve="com.mbeddr.cc.var.annotations" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5_e$7m1SKI_" role="3bR37C">
-          <node concept="3bR9La" id="5_e$7m1SKIA" role="1SiIV1">
-            <ref role="3bR37D" to="p6ld:6HIxGZOKxlC" resolve="com.mbeddr.analyses.z3.testing" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5_e$7m1SKIB" role="3bR37C">
-          <node concept="3bR9La" id="5_e$7m1SKIC" role="1SiIV1">
-            <ref role="3bR37D" to="p6ld:6HIxGZOKo4H" resolve="com.mbeddr.analyses.stan" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="22LTRH" id="16PiFwJ4bFN" role="1hWBAP">
       <property role="TrG5h" value="com.mbeddr.analyses.ts.tests" />
@@ -1655,9 +1614,6 @@
       </node>
       <node concept="22LTRM" id="3JmJHJbDhGt" role="22LTRK">
         <ref role="22LTRN" node="3JmJHJbDg_X" resolve="test.analyses.spin.testcode" />
-      </node>
-      <node concept="22LTRM" id="5_e$7m1SKO9" role="22LTRK">
-        <ref role="22LTRN" node="5_e$7m1SKyT" resolve="test.analyses.stan.ts" />
       </node>
       <node concept="24cAiW" id="76N1O$Kj6vl" role="24cAkG" />
     </node>
