@@ -109,9 +109,6 @@
     <property role="TrG5h" value="GlobalDeclarations" />
     <property role="34LRSv" value="global declarations" />
     <ref role="1TJDcQ" to="x27k:5DwX9xlExfL" resolve="Section" />
-    <node concept="PrWs8" id="L5b1s43I3Q" role="PzmwI">
-      <ref role="PrY4T" to="velc:L5b1s40sc$" resolve="ICCodeContext" />
-    </node>
   </node>
   <node concept="1TIwiD" id="439FXGfyCs">
     <property role="EcuMT" value="72944622564682268" />

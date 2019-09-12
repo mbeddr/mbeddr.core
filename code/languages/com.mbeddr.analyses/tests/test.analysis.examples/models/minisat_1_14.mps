@@ -255,7 +255,7 @@
         <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
@@ -16373,9 +16373,6 @@
       <node concept="2v9HqM" id="5RBPMWa2qpx" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
-      <node concept="2v9HqM" id="5RBPMWa2qpy" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:pE4rJ9OTT$" resolve="timeval" />
-      </node>
       <node concept="2v9HqM" id="5RBPMWa2qpz" role="2eOfOg">
         <ref role="2v9HqP" node="3cMu40vjTAC" resolve="vec" />
       </node>
@@ -16427,9 +16424,6 @@
       </node>
       <node concept="2v9HqM" id="1qdWvqenuup" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
-      </node>
-      <node concept="2v9HqM" id="1qdWvqenuuq" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:pE4rJ9OTT$" resolve="timeval" />
       </node>
       <node concept="2v9HqM" id="1qdWvqenuur" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />

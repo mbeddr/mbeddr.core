@@ -213,6 +213,7 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
@@ -238,13 +239,13 @@
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
-        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
-      </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
@@ -708,12 +709,15 @@
                                                           <node concept="1bVj0M" id="7l4X52HeoX3" role="23t8la">
                                                             <node concept="3clFbS" id="7l4X52HeoX4" role="1bW5cS">
                                                               <node concept="3clFbF" id="7l4X52HepPC" role="3cqZAp">
-                                                                <node concept="3clFbC" id="7l4X52HepPD" role="3clFbG">
+                                                                <node concept="3clFbC" id="rDnCMErpDi" role="3clFbG">
+                                                                  <node concept="2OqwBi" id="rDnCMErrBZ" role="3uHU7w">
+                                                                    <node concept="35c_gC" id="rDnCMErqbE" role="2Oq$k0">
+                                                                      <ref role="35c_gD" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
+                                                                    </node>
+                                                                    <node concept="FGMqu" id="rDnCMErt33" role="2OqNvi" />
+                                                                  </node>
                                                                   <node concept="37vLTw" id="7l4X52HepPG" role="3uHU7B">
                                                                     <ref role="3cqZAo" node="7l4X52HeoX5" resolve="configItem" />
-                                                                  </node>
-                                                                  <node concept="2OqwBi" id="7BqFpRy4IVl" role="3uHU7w">
-                                                                    <ref role="3B5MYn" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
                                                                   </node>
                                                                 </node>
                                                               </node>
