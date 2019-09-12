@@ -113,6 +113,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -700,6 +701,29 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbJ" id="74Kofaqq$kW" role="3cqZAp">
+            <node concept="3clFbS" id="74Kofaqq$kY" role="3clFbx">
+              <node concept="3cpWs6" id="74KofaqqBi2" role="3cqZAp">
+                <node concept="2ShNRf" id="74KofaqqFwn" role="3cqZAk">
+                  <node concept="1pGfFk" id="74KofaqqFPA" role="2ShVmc">
+                    <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="74KofaqqB15" role="3clFbw">
+              <node concept="2OqwBi" id="74KofaqqB17" role="3fr31v">
+                <node concept="37vLTw" id="74KofaqqB18" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5CkU_dHies9" resolve="enclosingNode" />
+                </node>
+                <node concept="1mIQ4w" id="74KofaqqB19" role="2OqNvi">
+                  <node concept="chp4Y" id="74KofaqqB1a" role="cj9EA">
+                    <ref role="cht4Q" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3cpWs8" id="5CkU_dHieq4" role="3cqZAp">
             <node concept="3cpWsn" id="5CkU_dHieq5" role="3cpWs9">
               <property role="TrG5h" value="cnc" />
@@ -971,9 +995,9 @@
     </node>
   </node>
   <node concept="1M2fIO" id="gjBy3ThgJB">
-    <ref role="1M2myG" to="vs0r:gjBy3ThgJz" resolve="ConceptDeclarationReference" />
+    <ref role="1M2myG" to="vs0r:gjBy3ThgJz" resolve="ConceptDeclarationReference_old" />
     <node concept="1N5Pfh" id="4uR15_er0x3" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:4uR15_er0pl" resolve="concept" />
+      <ref role="1N5Vy1" to="vs0r:4uR15_er0pl" resolve="concept_old" />
       <node concept="3dgokm" id="4uR15_erk3i" role="1N6uqs">
         <node concept="3clFbS" id="5CkU_dHiezW" role="2VODD2">
           <node concept="3clFbF" id="5CkU_dHiezX" role="3cqZAp">
