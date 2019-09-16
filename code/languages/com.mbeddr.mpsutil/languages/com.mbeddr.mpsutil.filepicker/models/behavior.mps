@@ -109,6 +109,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -2207,7 +2208,7 @@
                   <ref role="3TsBF5" to="68mc:7c_RIoB8OqH" resolve="macro" />
                 </node>
               </node>
-              <node concept="17RlXB" id="1zEFxxW7zvw" role="2OqNvi" />
+              <node concept="17RvpY" id="1zEFxxW7RYZ" role="2OqNvi" />
             </node>
             <node concept="2OqwBi" id="HgIalQMxEE" role="3K4E3e">
               <node concept="2YIFZM" id="HgIalQMxEF" role="2Oq$k0">
@@ -2374,7 +2375,7 @@
                   <ref role="3TsBF5" to="68mc:4eXJ6EO9ZKy" resolve="macro" />
                 </node>
               </node>
-              <node concept="17RlXB" id="1zEFxxW7Bu5" role="2OqNvi" />
+              <node concept="17RvpY" id="1zEFxxW7QJu" role="2OqNvi" />
             </node>
             <node concept="2OqwBi" id="6M3J7P6$Cz6" role="3K4E3e">
               <node concept="2YIFZM" id="6M3J7P6$Cz7" role="2Oq$k0">
