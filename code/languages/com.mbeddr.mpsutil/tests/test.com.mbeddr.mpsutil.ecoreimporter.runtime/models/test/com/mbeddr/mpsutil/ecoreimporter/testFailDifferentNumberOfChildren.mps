@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d146aed2-5e94-444c-91f0-f6e336f68f7b(test.com.mbeddr.mpsutil.ecoreimporter.testFailDifferentNumberOfChildren)">
+<model ref="r:d146aed2-5e94-444c-91f0-f6e336f68f7b(test.com.mbeddr.mpsutil.ecoreimporter.testFailDifferentNumberOfChildren)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />

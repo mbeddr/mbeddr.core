@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:97f0f375-f988-4fd7-96f6-6064fa5b9b7f(test.com.mbeddr.mpsutil.ecoreimporter.enumInterface)">
+<model ref="r:97f0f375-f988-4fd7-96f6-6064fa5b9b7f(test.com.mbeddr.mpsutil.ecoreimporter.enumInterface)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />

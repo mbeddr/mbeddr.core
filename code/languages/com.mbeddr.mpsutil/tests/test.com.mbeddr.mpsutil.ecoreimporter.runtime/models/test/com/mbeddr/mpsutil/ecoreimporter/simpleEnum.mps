@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9d45cf3f-c9f8-4605-a72d-217aa128ef62(test.com.mbeddr.mpsutil.ecoreimporter.simpleEnum)">
+<model ref="r:9d45cf3f-c9f8-4605-a72d-217aa128ef62(test.com.mbeddr.mpsutil.ecoreimporter.simpleEnum)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />

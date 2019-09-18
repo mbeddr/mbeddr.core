@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:679ddd2a-675f-4aaf-8311-c8eecf410a8f(test.com.mbeddr.mpsutil.ecoreimporter.testingFrameworkTestLanguageMatch)">
+<model ref="r:679ddd2a-675f-4aaf-8311-c8eecf410a8f(test.com.mbeddr.mpsutil.ecoreimporter.testingFrameworkTestLanguageMatch)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
