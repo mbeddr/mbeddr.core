@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:30d958b4-8ee9-4446-b41a-31c9e96713b0(test.com.mbeddr.mpsutil.ecoreimporter.simpleClassVaryingPropertyWithEnum)">
+<model ref="r:30d958b4-8ee9-4446-b41a-31c9e96713b0(test.com.mbeddr.mpsutil.ecoreimporter.simpleClassVaryingPropertyWithEnum)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
