@@ -8,7 +8,7 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -1366,7 +1366,7 @@
                   <ref role="37wK5l" to="znf5:2DWJLXXzCiq" resolve="getDocGenFolder" />
                   <ref role="1Pybhc" to="znf5:6RvWQYjPIDF" resolve="GenerationHelper" />
                   <node concept="37vLTw" id="271UTRL8jig" role="37wK5m">
-                    <ref role="3cqZAo" node="49PUF$HTiTB" resolve="m" />
+                    <ref role="3cqZAo" node="49PUF$HTiTB" />
                   </node>
                 </node>
               </node>

@@ -78,6 +78,9 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
+      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -618,42 +621,49 @@
   </node>
   <node concept="2v9HqL" id="7Ztu0DHJOjW">
     <node concept="1gr5cj" id="2lN4cj_VxYg" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__000_test_whitness_logger_01" />
       <node concept="2v9HqM" id="2lN4cj_VxYN" role="2eOfOg">
         <ref role="2v9HqP" node="2lN4cj_Vq8T" resolve="_000_test_whitness_logger_01" />
       </node>
     </node>
     <node concept="1gr5cj" id="1GXRyrSX_Fz" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__010_test_nondet_assign_01" />
       <node concept="2v9HqM" id="1GXRyrSX_GZ" role="2eOfOg">
         <ref role="2v9HqP" node="1GXRyrSXxBF" resolve="_010_test_nondet_assign_01" />
       </node>
     </node>
     <node concept="1gr5cj" id="1BFQdmK5SSj" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__010_test_nondet_assign_02" />
       <node concept="2v9HqM" id="1BFQdmK5SSV" role="2eOfOg">
         <ref role="2v9HqP" node="1BFQdmK5LWm" resolve="_010_test_nondet_assign_02" />
       </node>
     </node>
     <node concept="1gr5cj" id="1BFQdmK1xII" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__010_test_nondet_assign_03" />
       <node concept="2v9HqM" id="1BFQdmK1xJ2" role="2eOfOg">
         <ref role="2v9HqP" node="1BFQdmK11Px" resolve="_010_test_nondet_assign_03" />
       </node>
     </node>
     <node concept="1gr5cj" id="5hi7ucOsCIp" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__020_test_nondet_choice_01" />
       <node concept="2v9HqM" id="5hi7ucOsCIE" role="2eOfOg">
         <ref role="2v9HqP" node="5hi7ucOs3J7" resolve="_020_test_nondet_choice_01" />
       </node>
     </node>
     <node concept="1gr5cj" id="4b2d3GUpOlH" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__030_test_assume_01" />
       <node concept="2v9HqM" id="4b2d3GUpOlZ" role="2eOfOg">
         <ref role="2v9HqP" node="4b2d3GUoJw1" resolve="_030_test_assume_01" />
       </node>
     </node>
     <node concept="1gr5cj" id="4ly_4leUANk" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__040_test_multistep_01" />
       <node concept="2v9HqM" id="4ly_4leUANl" role="2eOfOg">
         <ref role="2v9HqP" node="4ly_4leQJJR" resolve="_040_test_multistep_01" />
@@ -666,6 +676,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="4ly_4leSG_o" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__040_test_multistep_02" />
       <node concept="2v9HqM" id="4ly_4leUAOc" role="2eOfOg">
         <ref role="2v9HqP" node="4ly_4leU_I8" resolve="_040_test_multistep_02" />
@@ -690,6 +701,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="6E3dSCjC9L9" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__050_harness_suv_with_hidden_state_manual" />
       <node concept="2v9HqM" id="6E3dSCjC9Ma" role="2eOfOg">
         <ref role="2v9HqP" node="6E3dSCjANMk" resolve="_050_harness_suv_with_hidden_state_manual" />
@@ -702,6 +714,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="6E3dSCjC9Nt" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__051_harness_suv_with_hidden_state_manual" />
       <node concept="2v9HqM" id="6E3dSCjC9OA" role="2eOfOg">
         <ref role="2v9HqP" node="6E3dSCjB6f5" resolve="_051_harness_suv_with_hidden_state_manual" />
@@ -714,6 +727,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="6AAaFOTERfg" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__055_harness_suv_with_hidden_state_generated_reset_suv_and_replay" />
       <node concept="2v9HqM" id="bnk1STsuhK" role="2eOfOg">
         <ref role="2v9HqP" node="bnk1STstVy" resolve="_055_harness_suv_with_hidden_state_generated_reset_suv_and_replay" />
@@ -732,6 +746,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="bnk1STsugN" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__056_harness_suv_with_hidden_state_generated_save_traces_in_file" />
       <node concept="2v9HqM" id="bnk1STsuh$" role="2eOfOg">
         <ref role="2v9HqP" node="6AAaFOTEQc7" resolve="_056_harness_suv_with_hidden_state_generated_save_traces_in_file" />
@@ -750,6 +765,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="7Ztu0DHJOjX" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__100_harness_simple_function" />
       <node concept="2v9HqM" id="6efVUW9uuxn" role="2eOfOg">
         <ref role="2v9HqP" node="439FXGfpCw" resolve="_100_harness_simple_function" />
@@ -768,6 +784,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="6efVUW9BJbL" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__110_harness_simple_statemachine_C" />
       <node concept="2v9HqM" id="6efVUW9BJcc" role="2eOfOg">
         <ref role="2v9HqP" node="6efVUW9Ayv6" resolve="_110_harness_simple_statemachine_C" />
@@ -780,6 +797,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="63QgsF$SDrc" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__200_multiple_assertions" />
       <node concept="2v9HqM" id="63QgsF$SDxe" role="2eOfOg">
         <ref role="2v9HqP" node="63QgsF$On$g" resolve="_200_multiple_assertions" />
@@ -789,6 +807,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="63QgsF$TbcD" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__201_multiple_assertions_true" />
       <node concept="2v9HqM" id="63QgsF$Tbd$" role="2eOfOg">
         <ref role="2v9HqP" node="63QgsF$TacL" resolve="_201_multiple_assertions_true" />
@@ -798,6 +817,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="7TvvPtSFoac" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__400_combinatorial_fail" />
       <node concept="2v9HqM" id="7TvvPtSFoeb" role="2eOfOg">
         <ref role="2v9HqP" node="7TvvPtSxpwB" resolve="_400_combinatorial_fail" />
@@ -807,6 +827,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="1U8LoddT5E6" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__400_combinatorial_pass" />
       <node concept="2v9HqM" id="1U8LoddT5Fb" role="2eOfOg">
         <ref role="2v9HqP" node="1U8LoddT4AC" resolve="_400_combinatorial_pass" />
@@ -816,6 +837,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="4XXfoy4Pzry" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__450_fuzzy_fail" />
       <node concept="2v9HqM" id="4XXfoy4PzvT" role="2eOfOg">
         <ref role="2v9HqP" node="4XXfoy4OO$m" resolve="_450_fuzzy_fail" />
@@ -825,6 +847,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="5NkG1_QHon2" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__450_fuzzy_pass" />
       <node concept="2v9HqM" id="5NkG1_QHoqt" role="2eOfOg">
         <ref role="2v9HqP" node="5NkG1_QHmYQ" resolve="_450_fuzzy_pass" />
