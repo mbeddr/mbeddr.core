@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:96fc0a69-4c23-4263-8df2-60e3d1d7fd3b(_020_promela)">
+<model ref="r:96fc0a69-4c23-4263-8df2-60e3d1d7fd3b(promela)">
   <persistence version="9" />
   <languages>
-    <use id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela" version="-1" />
-    <use id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin" version="-1" />
-    <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="-1" />
-    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="-1" />
+    <use id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela" version="0" />
+    <use id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin" version="0" />
+    <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
+    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="4" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -74,6 +74,9 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
@@ -290,12 +293,14 @@
   </node>
   <node concept="2v9HqL" id="7Rf0$0HKRGO">
     <node concept="1gr5cj" id="7Rf0$0HKRGP" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_do_test" />
       <node concept="2v9HqM" id="7Rf0$0HKRZ_" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRK1" resolve="do_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRGR" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_hello" />
       <node concept="2v9HqM" id="7Rf0$0HKRZI" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRGp" resolve="hello" />
@@ -308,24 +313,28 @@
       </node>
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRGT" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_if_test" />
       <node concept="2v9HqM" id="7Rf0$0HKRZF" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRJt" resolve="if_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="Rd$2EC649N" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_multiple_choice_test" />
       <node concept="2v9HqM" id="Rd$2EC649Y" role="2eOfOg">
         <ref role="2v9HqP" node="Rd$2EC61sj" resolve="multiple_choice_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="1RC3LaKCwd4" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_select_test" />
       <node concept="2v9HqM" id="1RC3LaKCwdi" role="2eOfOg">
         <ref role="2v9HqP" node="1RC3LaKCvT2" resolve="select_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="1RC3LaKFjcP" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_for_test" />
       <node concept="2v9HqM" id="1RC3LaKFlni" role="2eOfOg">
         <ref role="2v9HqP" node="1RC3LaKF8Oj" resolve="for_test" />

@@ -2,9 +2,9 @@
 <model ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
   </languages>
   <imports>
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
@@ -299,15 +299,6 @@
       <node concept="m$_yC" id="5fGcQI98QbW" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:6EN03E8oSte" resolve="jetbrains.mps.ide.make" />
       </node>
-      <node concept="3_J27D" id="7uZw0yZ43JE" role="m_cZH">
-        <node concept="3Mxwew" id="7uZw0yZ43JF" role="3MwsjC">
-          <property role="3MwjfP" value="mbeddr.core" />
-        </node>
-      </node>
-      <node concept="2iUeEo" id="7uZw0yZ43Nd" role="2iVFfd">
-        <property role="2iUeEt" value="mbeddr" />
-        <property role="2iUeEu" value="http://mbeddr.com" />
-      </node>
       <node concept="m$_yC" id="631ZZAfPFM6" role="m$_yJ">
         <ref role="m$_y1" to="al5i:5bCFa$D2ROM" resolve="com.mbeddr.mpsutil.dataflow" />
       </node>
@@ -319,6 +310,15 @@
       </node>
       <node concept="m$_yC" id="631ZZAfPKBG" role="m$_yJ">
         <ref role="m$_y1" to="al5i:7tNo_gxoK8h" resolve="com.mbeddr.doc" />
+      </node>
+      <node concept="3_J27D" id="7uZw0yZ43JE" role="m_cZH">
+        <node concept="3Mxwew" id="7uZw0yZ43JF" role="3MwsjC">
+          <property role="3MwjfP" value="mbeddr.core" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="7uZw0yZ43Nd" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
     <node concept="m$_wf" id="7eF9rfAuANa" role="3989C9">
@@ -816,6 +816,9 @@
       <node concept="m$_yC" id="4q9_DTOCET9" role="m$_yJ">
         <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
       </node>
+      <node concept="m$_yC" id="631ZZAfPLP6" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:3lZeU8ehrPx" resolve="com.mbeddr.mpsutil.httpsupport" />
+      </node>
       <node concept="3_J27D" id="7eF9rfAuDVv" role="m_cZH">
         <node concept="3Mxwew" id="7eF9rfAuDVw" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.analysesbase" />
@@ -824,9 +827,6 @@
       <node concept="2iUeEo" id="7eF9rfAuDVx" role="2iVFfd">
         <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
-      </node>
-      <node concept="m$_yC" id="631ZZAfPLP6" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:3lZeU8ehrPx" resolve="com.mbeddr.mpsutil.httpsupport" />
       </node>
     </node>
     <node concept="m$_wf" id="7eF9rfAuFw7" role="3989C9">
@@ -2910,11 +2910,6 @@
             <ref role="3bR37D" node="7uZw0yZ43L4" resolve="com.mbeddr.core.make" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7EZ1Spq$wjN" role="3bR37C">
-          <node concept="3bR9La" id="7EZ1Spq$wjO" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43L9" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -4475,11 +4470,6 @@
           <node concept="1SiIV0" id="8Vbr6_EUhA" role="3bR37C">
             <node concept="3bR9La" id="8Vbr6_EUhB" role="1SiIV1">
               <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="7EZ1Spq$wjP" role="3bR37C">
-            <node concept="3bR9La" id="7EZ1Spq$wjQ" role="1SiIV1">
-              <ref role="3bR37D" node="HiHZpX4D1I" resolve="com.mbeddr.core.buildconfig#7717755763392579406" />
             </node>
           </node>
         </node>

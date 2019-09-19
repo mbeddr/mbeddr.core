@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -413,9 +413,6 @@
             <node concept="3cpWs8" id="4CJNaUzzdUJ" role="3cqZAp">
               <node concept="3cpWsn" id="4CJNaUzzdUK" role="3cpWs9">
                 <property role="TrG5h" value="concept" />
-                <node concept="3uibUv" id="7d6ZyVlYnY6" role="1tU5fm">
-                  <ref role="3uigEE" to="c17a:~SAbstractConcept" resolve="SAbstractConcept" />
-                </node>
                 <node concept="2OqwBi" id="7d6ZyVlYjKR" role="33vP2m">
                   <node concept="2OqwBi" id="4CJNaUzzdUN" role="2Oq$k0">
                     <node concept="37vLTw" id="2AZbPfMaN6U" role="2Oq$k0">
@@ -426,6 +423,9 @@
                   <node concept="liA8E" id="7d6ZyVlYkCv" role="2OqNvi">
                     <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                   </node>
+                </node>
+                <node concept="3uibUv" id="7d6ZyVlYnY6" role="1tU5fm">
+                  <ref role="3uigEE" to="c17a:~SAbstractConcept" resolve="SAbstractConcept" />
                 </node>
               </node>
             </node>

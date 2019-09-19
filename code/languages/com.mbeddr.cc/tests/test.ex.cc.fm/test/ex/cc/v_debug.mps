@@ -15,7 +15,9 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
+      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -50,7 +52,7 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations">
       <concept id="6617704999132114000" name="com.mbeddr.cc.var.annotations.structure.ConfigurationMapping" flags="ng" index="IjAfM">
@@ -70,6 +72,7 @@
   <node concept="2v9HqL" id="2h6lNbWokfG">
     <node concept="2eOfOl" id="2h6lNbWokfH" role="2ePNbc">
       <property role="TrG5h" value="App" />
+      <property role="iO3LB" value="true" />
       <ref role="3oK8_y" node="14WbUXJQd_n" resolve="portable" />
       <node concept="2v9HqM" id="2h6lNbWokfI" role="2eOfOg">
         <ref role="2v9HqP" to="n76k:5JmNU9PApDE" resolve="ApplicationModule" />

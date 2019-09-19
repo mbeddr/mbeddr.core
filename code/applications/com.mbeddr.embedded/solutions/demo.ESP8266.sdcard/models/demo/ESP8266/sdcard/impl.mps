@@ -66,7 +66,9 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
+      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -132,7 +134,7 @@
       <concept id="8551646674110484035" name="com.mbeddr.core.modules.structure.FunctionRefExpr" flags="ng" index="pF0ck">
         <reference id="8551646674110484037" name="function" index="pF0ci" />
       </concept>
-      <concept id="159275153966479361" name="com.mbeddr.core.modules.structure.ModifierDeclarationRef" flags="ng" index="2vwAfD">
+      <concept id="159275153966479361" name="com.mbeddr.core.modules.structure.PragmaDeclarationRef" flags="ng" index="2vwAfD">
         <reference id="159275153966479362" name="decl" index="2vwAfE" />
       </concept>
       <concept id="3376775282622142916" name="com.mbeddr.core.modules.structure.AbstractDefineLike" flags="ng" index="2DRUVY">
@@ -697,6 +699,7 @@
       <node concept="3b89nv" id="4b64BCbhbM5" role="2Q9FjI" />
     </node>
     <node concept="2eOfOl" id="4b64BCbhbM6" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="SDCardInfo" />
       <node concept="2v9HqM" id="7e09zBH1U32" role="2eOfOg">
         <ref role="2v9HqP" node="4b64BCclxYd" resolve="user_main" />

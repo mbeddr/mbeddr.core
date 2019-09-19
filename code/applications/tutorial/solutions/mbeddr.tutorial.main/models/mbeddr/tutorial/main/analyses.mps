@@ -129,7 +129,9 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
+      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
       </concept>
@@ -248,7 +250,9 @@
       <concept id="6307143892175831839" name="com.mbeddr.core.util.structure.IsInRangeExpression" flags="ng" index="1vVjFF" />
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
-      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK" />
+      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK">
+        <child id="6116558314501347862" name="original_old" index="rcJHR" />
+      </concept>
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
@@ -346,7 +350,7 @@
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
       <concept id="7713191144372389655" name="com.mbeddr.core.modules.structure.ITypeDef" flags="ng" index="2I2SlH">
-        <child id="6116558314501347862" name="original" index="rcJHR" />
+        <child id="6116558314501347862" name="original" index="rcJHS" />
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
@@ -397,7 +401,7 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
       <concept id="6118219496725500902" name="com.mbeddr.ext.statemachines.structure.SmTriggerTarget" flags="ng" index="$QhJh">
@@ -739,6 +743,7 @@
       </node>
     </node>
     <node concept="2eOfOl" id="7zW9XauV1oF" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="hamming" />
       <node concept="2v9HqM" id="7zW9XauV1pr" role="2eOfOg">
         <ref role="2v9HqP" node="7ANKYSIDYxk" resolve="_060_hamming_main" />
@@ -3710,7 +3715,7 @@
     <node concept="rcJHK" id="2sC9iiGe4gW" role="N3F5h">
       <property role="TrG5h" value="bool1" />
       <property role="2OOxQR" value="true" />
-      <node concept="3TlMgk" id="_gbhdwI5HI" role="rcJHR">
+      <node concept="3TlMgk" id="_gbhdwI5HI" role="rcJHS">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
@@ -7501,7 +7506,7 @@
     <node concept="rcJHK" id="5flih_m2zxk" role="N3F5h">
       <property role="TrG5h" value="crc" />
       <property role="2OOxQR" value="true" />
-      <node concept="26VqpV" id="5flih_m2zxg" role="rcJHR">
+      <node concept="26VqpV" id="5flih_m2zxg" role="rcJHS">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
@@ -10327,7 +10332,15 @@
     <node concept="rcJHK" id="RcTPi1yMBT" role="N3F5h">
       <property role="TrG5h" value="DATA_TYPE" />
       <property role="2OOxQR" value="true" />
-      <node concept="3wxxNl" id="6WeeguEAs8x" role="rcJHR">
+      <node concept="3wxxNl" id="RcTPi1yMBU" role="rcJHR">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="19Rifw" id="RcTPi1yMBV" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="3wxxNl" id="6WeeguEAs8x" role="rcJHS">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <node concept="19Rifw" id="6WeeguEArzm" role="2umbIo">
@@ -10375,7 +10388,12 @@
     <node concept="rcJHK" id="RcTPi1yMC7" role="N3F5h">
       <property role="TrG5h" value="stk_stack_node_t" />
       <property role="2OOxQR" value="true" />
-      <node concept="1sgJKr" id="6WeeguEAnCi" role="rcJHR">
+      <node concept="1sgJKr" id="RcTPi1yMC8" role="rcJHR">
+        <property role="2c7vTL" value="false" />
+        <property role="2caQfQ" value="false" />
+        <ref role="1sgJKq" node="RcTPi1yMC1" resolve="stk_stack_node" />
+      </node>
+      <node concept="1sgJKr" id="6WeeguEAnCi" role="rcJHS">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <ref role="1sgJKq" node="RcTPi1yMC1" resolve="stk_stack_node" />
@@ -10424,7 +10442,12 @@
     <node concept="rcJHK" id="RcTPi1yMCl" role="N3F5h">
       <property role="TrG5h" value="stk_stack_t" />
       <property role="2OOxQR" value="true" />
-      <node concept="1sgJKr" id="6WeeguEAnBH" role="rcJHR">
+      <node concept="1sgJKr" id="RcTPi1yMCm" role="rcJHR">
+        <property role="2c7vTL" value="false" />
+        <property role="2caQfQ" value="false" />
+        <ref role="1sgJKq" node="RcTPi1yMCe" resolve="stk_stack" />
+      </node>
+      <node concept="1sgJKr" id="6WeeguEAnBH" role="rcJHS">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <ref role="1sgJKq" node="RcTPi1yMCe" resolve="stk_stack" />
@@ -11338,7 +11361,7 @@
     <property role="TrG5h" value="_090_data_structures_stack_harness" />
     <node concept="rcJHK" id="6WeeguEAven" role="N3F5h">
       <property role="TrG5h" value="MY_TYPE" />
-      <node concept="26Vqpk" id="6WeeguEAvwU" role="rcJHR">
+      <node concept="26Vqpk" id="6WeeguEAvwU" role="rcJHS">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>

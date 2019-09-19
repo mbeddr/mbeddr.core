@@ -172,7 +172,9 @@
       <concept id="6307143892175831839" name="com.mbeddr.core.util.structure.IsInRangeExpression" flags="ng" index="1vVjFF" />
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
-      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK" />
+      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK">
+        <child id="6116558314501347862" name="original_old" index="rcJHR" />
+      </concept>
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
@@ -235,7 +237,7 @@
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
       <concept id="7713191144372389655" name="com.mbeddr.core.modules.structure.ITypeDef" flags="ng" index="2I2SlH">
-        <child id="6116558314501347862" name="original" index="rcJHR" />
+        <child id="6116558314501347862" name="original" index="rcJHS" />
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
@@ -274,7 +276,7 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
       <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
@@ -288,7 +290,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -452,7 +454,12 @@
     <node concept="rcJHK" id="RcTPi1yMI4" role="N3F5h">
       <property role="TrG5h" value="rb_red_blk_node_t" />
       <property role="2OOxQR" value="true" />
-      <node concept="1sgJKr" id="gWE$qai7pA" role="rcJHR">
+      <node concept="1sgJKr" id="RcTPi1yMI5" role="rcJHR">
+        <property role="2c7vTL" value="false" />
+        <property role="2caQfQ" value="false" />
+        <ref role="1sgJKq" node="RcTPi1yMHI" resolve="rb_red_blk_node" />
+      </node>
+      <node concept="1sgJKr" id="gWE$qai7pA" role="rcJHS">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <ref role="1sgJKq" node="RcTPi1yMHI" resolve="rb_red_blk_node" />
@@ -613,7 +620,12 @@
     <node concept="rcJHK" id="RcTPi1yMIK" role="N3F5h">
       <property role="TrG5h" value="rb_red_blk_tree_t" />
       <property role="2OOxQR" value="true" />
-      <node concept="1sgJKr" id="gWE$qai7wf" role="rcJHR">
+      <node concept="1sgJKr" id="RcTPi1yMIL" role="rcJHR">
+        <property role="2c7vTL" value="false" />
+        <property role="2caQfQ" value="false" />
+        <ref role="1sgJKq" node="RcTPi1yMI6" resolve="rb_red_blk_tree" />
+      </node>
+      <node concept="1sgJKr" id="gWE$qai7wf" role="rcJHS">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <ref role="1sgJKq" node="RcTPi1yMI6" resolve="rb_red_blk_tree" />
@@ -6474,7 +6486,7 @@
     <property role="TrG5h" value="_100_data_structures_red_black_tree_harness" />
     <node concept="rcJHK" id="6WeeguEJHW1" role="N3F5h">
       <property role="TrG5h" value="MY_TYPE" />
-      <node concept="26Vqpk" id="6WeeguEJHW2" role="rcJHR">
+      <node concept="26Vqpk" id="6WeeguEJHW2" role="rcJHS">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>

@@ -20,7 +20,9 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
+      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -60,7 +62,7 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="54f2a59b-97bb-4c09-af92-928ebf9c5966" name="com.mbeddr.ext.compositecomponents">
       <concept id="7540109328385923714" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponentsConfigItem" flags="ng" index="1eFCfY" />
@@ -110,6 +112,7 @@
       </node>
     </node>
     <node concept="2eOfOl" id="3xRFG9PQKjc" role="2ePNbc">
+      <property role="iO3LB" value="true" />
       <property role="TrG5h" value="ScheduleInCompositeComponent" />
       <ref role="3oK8_y" node="4LhGMnjpRd2" resolve="Linux" />
       <node concept="2v9HqM" id="2kF1PD77BQ8" role="2eOfOg">

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0aef4ea3-08ec-44a0-9b3c-c675bdae5d40(_030_promela_c_suv_mbeddr_core)">
+<model ref="r:0aef4ea3-08ec-44a0-9b3c-c675bdae5d40(c_suv_mbeddr_core)">
   <persistence version="9" />
   <languages>
-    <use id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela" version="-1" />
-    <use id="17b818a8-8533-4efe-8f51-f532146ae66b" name="com.mbeddr.analyses.spin.c" version="-1" />
-    <use id="4ddb29eb-11e5-46c6-a894-6b8a4c38587d" name="com.mbeddr.analyses.spin.promela.patterns" version="-1" />
-    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="-1" />
-    <use id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin" version="-1" />
-    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="-1" />
-    <use id="f027a490-7082-492e-99ce-dfe65d7342f7" name="com.mbeddr.analyses.spin.c.patterns" version="-1" />
+    <use id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela" version="0" />
+    <use id="17b818a8-8533-4efe-8f51-f532146ae66b" name="com.mbeddr.analyses.spin.c" version="0" />
+    <use id="4ddb29eb-11e5-46c6-a894-6b8a4c38587d" name="com.mbeddr.analyses.spin.promela.patterns" version="0" />
+    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="4" />
+    <use id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin" version="0" />
+    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="0" />
+    <use id="f027a490-7082-492e-99ce-dfe65d7342f7" name="com.mbeddr.analyses.spin.c.patterns" version="0" />
     <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -90,6 +90,9 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
@@ -321,6 +324,7 @@
   </registry>
   <node concept="2v9HqL" id="1wu5Hv66n4w">
     <node concept="1gr5cj" id="Hdy9e32IFu" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__010_automatic_handling_of_local_var_access" />
       <node concept="2v9HqM" id="Hdy9e32IH9" role="2eOfOg">
         <ref role="2v9HqP" node="Hdy9e32zbw" resolve="_010_automatic_handling_of_local_var_access" />
@@ -333,6 +337,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="Hdy9e33ioO" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__020_automatic_handling_of_global_var_access" />
       <node concept="2v9HqM" id="Hdy9e33iq$" role="2eOfOg">
         <ref role="2v9HqP" node="Hdy9e334tI" resolve="_020_automatic_handling_of_global_var_access" />
@@ -345,6 +350,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="1wu5Hv66n4_" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv1_harness_smoke" />
       <node concept="2v9HqM" id="1wu5Hv66n4A" role="2eOfOg">
         <ref role="2v9HqP" node="1wu5Hv66n66" resolve="suv1" />
@@ -354,6 +360,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5sho6" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv2_harness_pick_nondet" />
       <node concept="2v9HqM" id="3tIDuP5shor" role="2eOfOg">
         <ref role="2v9HqP" node="1wu5Hv68xEZ" resolve="suv2" />
@@ -369,6 +376,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5shof" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv3_harness" />
       <node concept="2v9HqM" id="3tIDuP5shoz" role="2eOfOg">
         <ref role="2v9HqP" node="HmUOIGD8pr" resolve="suv3_code_with_assertions" />
@@ -384,6 +392,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5sKUS" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv4_harness_assume" />
       <node concept="2v9HqM" id="3tIDuP5sKV8" role="2eOfOg">
         <ref role="2v9HqP" node="HmUOIGGcMV" resolve="suv4_harness_assume" />
@@ -399,6 +408,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="Hdy9e32qva" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv4_harness_when" />
       <node concept="2v9HqM" id="Hdy9e32qwF" role="2eOfOg">
         <ref role="2v9HqP" node="Hdy9e32kwK" resolve="suv4_harness_when" />
@@ -414,6 +424,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5sPfL" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv5_harness_suv_embedded" />
       <node concept="2v9HqM" id="3tIDuP5sPg6" role="2eOfOg">
         <ref role="2v9HqP" node="HmUOIGKHL$" resolve="suv5_harness_suv_embedded" />
@@ -426,6 +437,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5sSMi" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv6_harness_pick_random" />
       <node concept="2v9HqM" id="3tIDuP5sTGE" role="2eOfOg">
         <ref role="2v9HqP" node="3$JFeG$Zuc8" resolve="suv6_harness_pick_random" />
@@ -438,6 +450,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5t5eE" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv7_harness_external_files" />
       <node concept="2v9HqM" id="3tIDuP5t5f7" role="2eOfOg">
         <ref role="2v9HqP" node="6qQmI_32Gw4" resolve="suv7_harness_external_files" />
@@ -453,6 +466,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="5Gboyv9E$Os" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv8_int_nondet_assign_harness" />
       <node concept="2v9HqM" id="3tIDuP5t7q$" role="2eOfOg">
         <ref role="2v9HqP" node="5Gboyv9E$Pe" resolve="suv8_int_nondet_assign_harness" />
@@ -468,6 +482,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="Y_s0Wj_GPA" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv8_array_nondet_assign_harness" />
       <node concept="2v9HqM" id="3tIDuP5t7qK" role="2eOfOg">
         <ref role="2v9HqP" node="Y_s0Wj_GjA" resolve="suv8_array_nondet_assign_harness" />
@@ -1158,12 +1173,12 @@
       <property role="TrG5h" value="c_decl_7420364574299279464" />
       <node concept="1S7NMz" id="6rUr$fV059a" role="fMItF">
         <property role="TrG5h" value="sum" />
-        <node concept="3TlMh9" id="6rUr$fV059c" role="1cecVj">
-          <property role="2hmy$m" value="0" />
-        </node>
         <node concept="1N1mD7" id="6rUr$fV059b" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="6rUr$fV059c" role="1cecVj">
+          <property role="2hmy$m" value="0" />
         </node>
       </node>
     </node>
@@ -1296,12 +1311,12 @@
       <property role="TrG5h" value="c_decl_7420364574299279464" />
       <node concept="1S7NMz" id="3$JFeG$Zucb" role="fMItF">
         <property role="TrG5h" value="sum" />
-        <node concept="3TlMh9" id="3$JFeG$Zucd" role="1cecVj">
-          <property role="2hmy$m" value="0" />
-        </node>
         <node concept="1N1mD7" id="3$JFeG$Zucc" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="3$JFeG$Zucd" role="1cecVj">
+          <property role="2hmy$m" value="0" />
         </node>
       </node>
     </node>

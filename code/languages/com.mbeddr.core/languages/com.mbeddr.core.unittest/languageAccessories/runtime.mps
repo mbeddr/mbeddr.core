@@ -16,6 +16,7 @@
   <imports>
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
     <import index="ml7g" ref="r:390a5909-c09f-4e14-a3b3-7c642512a1a5(com.mbeddr.core.sys)" />
+    <import index="b609" ref="r:efe52142-2859-43ed-9ac0-75009c205686(com.mbeddr.core.posix)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">

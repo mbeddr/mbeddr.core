@@ -106,34 +106,5 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="7EZ1SpqcGxs">
-    <property role="3GE5qa" value="isr" />
-    <ref role="WuzLi" to="nbyu:SwwM9UHCHB" resolve="ISRCallExpression" />
-    <node concept="11bSqf" id="7EZ1SpqcGxt" role="11c4hB">
-      <node concept="3clFbS" id="7EZ1SpqcGxu" role="2VODD2">
-        <node concept="lc7rE" id="5ak6HMA0uHQ" role="3cqZAp">
-          <node concept="l9hG8" id="5ak6HMA0uHS" role="lcghm">
-            <node concept="2OqwBi" id="5ak6HMA0uI0" role="lb14g">
-              <node concept="2OqwBi" id="5ak6HMA0uHV" role="2Oq$k0">
-                <node concept="117lpO" id="5ak6HMA0uHU" role="2Oq$k0" />
-                <node concept="3TrEf2" id="7EZ1SpqcHsd" role="2OqNvi">
-                  <ref role="3Tt5mk" to="nbyu:SwwM9UHCHC" resolve="isr" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="7EZ1SpqcJHV" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="5ak6HMA0uI6" role="lcghm">
-            <property role="lacIc" value="(" />
-          </node>
-          <node concept="la8eA" id="5ak6HMA0uId" role="lcghm">
-            <property role="lacIc" value=")" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 

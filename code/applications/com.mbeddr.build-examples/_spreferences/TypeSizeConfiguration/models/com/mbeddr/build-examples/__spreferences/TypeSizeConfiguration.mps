@@ -2,7 +2,7 @@
 <model ref="r:0ae0344d-4a44-4118-89f6-d97273042ea2(com.mbeddr.build-examples.__spreferences.TypeSizeConfiguration)">
   <persistence version="9" />
   <languages>
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
   </languages>
   <imports />
   <registry>
@@ -36,7 +36,6 @@
       </concept>
       <concept id="3335993110369795380" name="com.mbeddr.core.expressions.structure.TypeSizeConfiguration" flags="ng" index="MXy$V">
         <child id="9149785691755067704" name="ieee754Specifications" index="2mYqyz" />
-        <child id="3869525881267655660" name="ssizeTType" index="2B$ca_" />
         <child id="3335993110369805710" name="specifications" index="MXv61" />
         <child id="8863019357864392147" name="sizeTType" index="2O5j3Q" />
         <child id="3813668170744198630" name="pointerDiffType" index="3kxMGo" />
@@ -242,7 +241,6 @@
         <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node concept="26Vqph" id="7EZ1Sps4f7c" role="2B$ca_" />
   </node>
 </model>
 

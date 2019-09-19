@@ -101,6 +101,9 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
+      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -579,6 +582,7 @@
       <node concept="2Q9FjX" id="4b_XKf3YQsd" role="2Q9FjI" />
     </node>
     <node concept="1gr5cj" id="4b_XKf3YQsg" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_Example_15_1" />
       <node concept="2v9HqM" id="4b_XKf3YQsj" role="2eOfOg">
         <ref role="2v9HqP" node="4b_XKf3YQ8a" resolve="Example_15_1" />
@@ -591,6 +595,7 @@
       </node>
     </node>
     <node concept="1gr5cj" id="4f352SjxOW9" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_Example_15_2" />
       <node concept="2v9HqM" id="4f352SjxOWc" role="2eOfOg">
         <ref role="2v9HqP" node="4f352SjxKE0" resolve="Example_15_2" />
@@ -603,18 +608,21 @@
       </node>
     </node>
     <node concept="1gr5cj" id="4f352SjxP6j" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_Example_15_3" />
       <node concept="2v9HqM" id="4f352SjxP6m" role="2eOfOg">
         <ref role="2v9HqP" node="4f352SjxOEu" resolve="Example_15_3" />
       </node>
     </node>
     <node concept="1gr5cj" id="_RSgMcKnvo" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_Example_15_5" />
       <node concept="2v9HqM" id="_RSgMcKnvA" role="2eOfOg">
         <ref role="2v9HqP" node="3JySWtkt1a2" resolve="Example_15_5" />
       </node>
     </node>
     <node concept="1gr5cj" id="_RSgMcKupW" role="2ePNbc">
+      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_Example_15_7" />
       <node concept="2v9HqM" id="_RSgMcKuqc" role="2eOfOg">
         <ref role="2v9HqP" node="3JySWtkt4dw" resolve="Example_15_7" />
