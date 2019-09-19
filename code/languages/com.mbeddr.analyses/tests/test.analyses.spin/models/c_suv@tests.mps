@@ -67,7 +67,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -82,10 +81,6 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -132,7 +127,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3tIDuP5sifs" role="1tU5fm" />
             <node concept="BaHAS" id="3tIDuP5sifv" role="33vP2m">
-              <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+              <property role="BaHAW" value="c_suv_mbeddr_core" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -215,7 +210,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3tIDuP5sjCJ" role="1tU5fm" />
             <node concept="BaHAS" id="3tIDuP5sjCM" role="33vP2m">
-              <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+              <property role="BaHAW" value="c_suv_mbeddr_core" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -298,7 +293,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3tIDuP5skRj" role="1tU5fm" />
             <node concept="BaHAS" id="3tIDuP5skRm" role="33vP2m">
-              <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+              <property role="BaHAW" value="c_suv_mbeddr_core" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -386,7 +381,7 @@
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <node concept="BaHAS" id="3tIDuP5sLFr" role="37wK5m">
-                <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+                <property role="BaHAW" value="c_suv_mbeddr_core" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="3tIDuP5sLFs" role="37wK5m">
@@ -459,7 +454,7 @@
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
               <node concept="BaHAS" id="Hdy9e32oqv" role="37wK5m">
-                <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+                <property role="BaHAW" value="c_suv_mbeddr_core" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="Hdy9e32oqw" role="37wK5m">
@@ -532,7 +527,7 @@
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <node concept="BaHAS" id="3tIDuP5sQ2b" role="37wK5m">
-                <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+                <property role="BaHAW" value="c_suv_mbeddr_core" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="3tIDuP5sQ2c" role="37wK5m">
@@ -603,7 +598,7 @@
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
               <node concept="BaHAS" id="3tIDuP5sViv" role="37wK5m">
-                <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+                <property role="BaHAW" value="c_suv_mbeddr_core" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="3tIDuP5sViw" role="37wK5m">
@@ -717,7 +712,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3tIDuP5t5qM" role="1tU5fm" />
             <node concept="BaHAS" id="3tIDuP5t5qN" role="33vP2m">
-              <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+              <property role="BaHAW" value="c_suv_mbeddr_core" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -787,7 +782,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3tIDuP5t7Of" role="1tU5fm" />
             <node concept="BaHAS" id="3tIDuP5t7Og" role="33vP2m">
-              <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+              <property role="BaHAW" value="c_suv_mbeddr_core" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -857,7 +852,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3tIDuP5t7OE" role="1tU5fm" />
             <node concept="BaHAS" id="3tIDuP5t7OF" role="33vP2m">
-              <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+              <property role="BaHAW" value="c_suv_mbeddr_core" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -927,7 +922,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="Hdy9e32QbL" role="1tU5fm" />
             <node concept="BaHAS" id="Hdy9e32QbM" role="33vP2m">
-              <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+              <property role="BaHAW" value="c_suv_mbeddr_core" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -970,23 +965,8 @@
             </node>
             <node concept="liA8E" id="Hdy9e32Qc0" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-              <node concept="3cpWs3" id="6_Kz6RYpJ0C" role="37wK5m">
-                <node concept="Xl_RD" id="Hdy9e32Qc1" role="3uHU7B">
-                  <property role="Xl_RC" value="assertion violated (incremented!=88) " />
-                </node>
-                <node concept="2OqwBi" id="6_Kz6RYpJ2D" role="3uHU7w">
-                  <node concept="2OqwBi" id="6_Kz6RYpJ2E" role="2Oq$k0">
-                    <node concept="37vLTw" id="6_Kz6RYpJ2F" role="2Oq$k0">
-                      <ref role="3cqZAo" node="Hdy9e32QbO" resolve="res" />
-                    </node>
-                    <node concept="liA8E" id="6_Kz6RYpJ2G" role="2OqNvi">
-                      <ref role="37wK5l" to="imq8:7XCY$_ranFq" resolve="getRawResult" />
-                    </node>
-                  </node>
-                  <node concept="2OwXpG" id="6_Kz6RYpJ2H" role="2OqNvi">
-                    <ref role="2Oxat5" to="imq8:1wu5Hv6fz1d" resolve="spinRawOutput" />
-                  </node>
-                </node>
+              <node concept="Xl_RD" id="Hdy9e32Qc1" role="37wK5m">
+                <property role="Xl_RC" value="assertion violated (incremented!=88)" />
               </node>
             </node>
           </node>
@@ -1025,7 +1005,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="Hdy9e33afD" role="1tU5fm" />
             <node concept="BaHAS" id="Hdy9e33afE" role="33vP2m">
-              <property role="BaHAW" value="_030_promela_c_suv_mbeddr_core" />
+              <property role="BaHAW" value="c_suv_mbeddr_core" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -1112,7 +1092,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3tIDuP5tl3A" role="1tU5fm" />
             <node concept="BaHAS" id="3tIDuP5tl3D" role="33vP2m">
-              <property role="BaHAW" value="_030_promela_c_suv_statemachines" />
+              <property role="BaHAW" value="c_suv_statemachines" />
               <property role="BaGAP" value="" />
             </node>
           </node>
