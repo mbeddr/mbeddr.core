@@ -217,7 +217,7 @@
               <ref role="37wK5l" to="hr62:_jsMICrMgd" resolve="checkModel2" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
               <node concept="BaHAS" id="_jsMICrOFz" role="37wK5m">
-                <property role="BaHAW" value="_020_promela" />
+                <property role="BaHAW" value="promela" />
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="_jsMICrOF$" role="37wK5m">
