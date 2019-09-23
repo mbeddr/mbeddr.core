@@ -43,7 +43,7 @@ subprojects {
     apply plugin: "base"
     apply plugin: "maven-publish"
     ext.mbeddrMajor = "1"
-    ext.mbeddrMinor = "3"
+    ext.mbeddrMinor = "4"
 
     // switch to snapshot/release repositories passed with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
