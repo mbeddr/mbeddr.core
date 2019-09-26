@@ -65,7 +65,6 @@
       <concept id="1177458491964" name="jetbrains.mps.lang.script.structure.MigrationScriptPart_Instance_Updater" flags="in" index="_ZGcI" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1966870290083281362" name="jetbrains.mps.lang.smodel.structure.EnumMember_NameOperation" flags="ng" index="24Tkf9" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
@@ -231,13 +230,10 @@
           </node>
           <node concept="3clFbF" id="7ekR8t0jAHt" role="3cqZAp">
             <node concept="2OqwBi" id="7ekR8t0jB7I" role="3clFbG">
-              <node concept="2OqwBi" id="17qUVvT8gjY" role="2Oq$k0">
-                <node concept="24Tkf9" id="17qUVvT8gk0" role="2OqNvi" />
-                <node concept="2OqwBi" id="7ekR8t0jAHv" role="2Oq$k0">
-                  <node concept="_YI3z" id="7ekR8t0jAHw" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="7ekR8t0jAHx" role="2OqNvi">
-                    <ref role="3TsBF5" to="talm:17qUVvT8gi$" resolve="variableKind" />
-                  </node>
+              <node concept="2OqwBi" id="7ekR8t0jAHv" role="2Oq$k0">
+                <node concept="_YI3z" id="7ekR8t0jAHw" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7ekR8t0jAHx" role="2OqNvi">
+                  <ref role="3TsBF5" to="talm:17qUVvT8gi$" resolve="variableKind" />
                 </node>
               </node>
               <node concept="3ZvMEC" id="7ekR8t0jC17" role="2OqNvi" />

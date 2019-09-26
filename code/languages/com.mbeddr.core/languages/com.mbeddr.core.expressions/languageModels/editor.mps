@@ -485,7 +485,6 @@
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
-      <concept id="1966870290083281362" name="jetbrains.mps.lang.smodel.structure.EnumMember_NameOperation" flags="ng" index="24Tkf9" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -2665,13 +2664,10 @@
           <node concept="3clFbF" id="6ydhAa2rhpw" role="3cqZAp">
             <node concept="2OqwBi" id="2cAst3TCfU1" role="3clFbG">
               <node concept="3ZvMEC" id="2cAst3TCjo4" role="2OqNvi" />
-              <node concept="2OqwBi" id="13p6s1wthGW" role="2Oq$k0">
-                <node concept="24Tkf9" id="13p6s1wthGY" role="2OqNvi" />
-                <node concept="2OqwBi" id="6ydhAa2rh$k" role="2Oq$k0">
-                  <node concept="0IXxy" id="6ydhAa2rhpv" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="2cAst3TCdyP" role="2OqNvi">
-                    <ref role="3TsBF5" to="mj1l:13p6s1wtfz2" resolve="operation" />
-                  </node>
+              <node concept="2OqwBi" id="6ydhAa2rh$k" role="2Oq$k0">
+                <node concept="0IXxy" id="6ydhAa2rhpv" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2cAst3TCdyP" role="2OqNvi">
+                  <ref role="3TsBF5" to="mj1l:13p6s1wtfz2" resolve="operation" />
                 </node>
               </node>
             </node>
