@@ -6,6 +6,5 @@ include ":build:com.mbeddr",
         ":build:thirdparty",
         ":build:thirdparty:graphviz",
         ":build:thirdparty:jdk",
-        ":build:thirdparty:mps",
         ":build:publishing"
 rootProject.name = 'mbeddr.core'
