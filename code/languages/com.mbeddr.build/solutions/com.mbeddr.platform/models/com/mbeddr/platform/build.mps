@@ -14122,6 +14122,11 @@
               <ref role="3bR37D" node="$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
             </node>
           </node>
+          <node concept="1SiIV0" id="3bjKkRQa5CC" role="3bR37C">
+            <node concept="3bR9La" id="3bjKkRQa5CD" role="1SiIV1">
+              <ref role="3bR37D" node="Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="2rKfGsWJCNl" role="3bR37C">
           <node concept="3bR9La" id="2rKfGsWJCNm" role="1SiIV1">

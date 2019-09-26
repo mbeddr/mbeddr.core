@@ -433,7 +433,7 @@
               <node concept="pUk6x" id="76N1O$Kj6vb" role="pUk7w" />
             </node>
             <node concept="3ygNvl" id="2Lc6rkuhDyC" role="39821P">
-              <ref role="3ygNvj" to="ffeo:1diLdO26H7E" resolve="plugins" />
+              <ref role="3ygNvj" to="ffeo:3IKDaVZn4nh" resolve="plugins" />
               <node concept="3LWZYq" id="t6obDo63LY" role="1juEy9">
                 <property role="3LWZYl" value="migrationAssistant.jar" />
               </node>
@@ -608,7 +608,7 @@
               <node concept="pUk6x" id="76N1O$Kj6vc" role="pUk7w" />
             </node>
             <node concept="3ygNvl" id="2Lc6rkuhDxn" role="39821P">
-              <ref role="3ygNvj" to="ffeo:1diLdO26H7E" resolve="plugins" />
+              <ref role="3ygNvj" to="ffeo:3IKDaVZn4nh" resolve="plugins" />
               <node concept="3LWZYq" id="t6obDo64N0" role="1juEy9">
                 <property role="3LWZYl" value="migrationAssistant.jar" />
               </node>
@@ -1003,7 +1003,7 @@
                 <node concept="pUk6x" id="76N1O$Kj6vd" role="pUk7w" />
               </node>
               <node concept="3ygNvl" id="2Lc6rkuhDw6" role="39821P">
-                <ref role="3ygNvj" to="ffeo:1diLdO26H7E" resolve="plugins" />
+                <ref role="3ygNvj" to="ffeo:3IKDaVZn4nh" resolve="plugins" />
                 <node concept="3LWZYq" id="t6obDo64O1" role="1juEy9">
                   <property role="3LWZYl" value="migrationAssistant.jar" />
                 </node>
