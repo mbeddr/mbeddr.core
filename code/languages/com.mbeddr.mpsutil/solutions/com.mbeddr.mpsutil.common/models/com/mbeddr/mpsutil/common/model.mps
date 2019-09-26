@@ -115,12 +115,8 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="1350122676458893092" name="text" index="3ndbpf" />
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
@@ -673,8 +669,31 @@
           </node>
         </node>
         <node concept="3SKdUt" id="71Kd4qWLTWN" role="3cqZAp">
-          <node concept="3SKdUq" id="71Kd4qWLTWP" role="3SKWNk">
-            <property role="3SKdUp" value="look up FindUsagesManager instead of depricated singleton access" />
+          <node concept="1PaTwC" id="3AWV0N_FJso" role="3ndbpf">
+            <node concept="3oM_SD" id="3AWV0N_FJsp" role="1PaTwD">
+              <property role="3oM_SC" value="look" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJsq" role="1PaTwD">
+              <property role="3oM_SC" value="up" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJsr" role="1PaTwD">
+              <property role="3oM_SC" value="FindUsagesManager" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJss" role="1PaTwD">
+              <property role="3oM_SC" value="instead" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJst" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJsu" role="1PaTwD">
+              <property role="3oM_SC" value="depricated" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJsv" role="1PaTwD">
+              <property role="3oM_SC" value="singleton" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJsw" role="1PaTwD">
+              <property role="3oM_SC" value="access" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="71Kd4qWLOqw" role="3cqZAp">

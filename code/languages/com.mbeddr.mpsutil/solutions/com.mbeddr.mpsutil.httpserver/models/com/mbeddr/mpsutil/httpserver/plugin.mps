@@ -363,7 +363,7 @@
         <node concept="3clFbJ" id="_jqqJb0g2V" role="3cqZAp">
           <node concept="3clFbS" id="_jqqJb0g2X" role="3clFbx">
             <node concept="RRSsy" id="42VTAcDfnS2" role="3cqZAp">
-              <property role="RRSoG" value="info" />
+              <property role="RRSoG" value="h1akgim/info" />
               <node concept="Xl_RD" id="_jqqJb0$WK" role="RRSoy">
                 <property role="Xl_RC" value="unit test mode detected. looking for alternate port setting" />
               </node>
@@ -384,7 +384,7 @@
             <node concept="3clFbJ" id="_jqqJb0pJy" role="3cqZAp">
               <node concept="3clFbS" id="_jqqJb0pJ$" role="3clFbx">
                 <node concept="RRSsy" id="42VTAcDfnS8" role="3cqZAp">
-                  <property role="RRSoG" value="info" />
+                  <property role="RRSoG" value="h1akgim/info" />
                   <node concept="3cpWs3" id="_jqqJb0xsy" role="RRSoy">
                     <node concept="37vLTw" id="_jqqJb0xtR" role="3uHU7w">
                       <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
@@ -420,7 +420,7 @@
                   <node concept="3clFbJ" id="_jqqJb0sYt" role="3cqZAp">
                     <node concept="3clFbS" id="_jqqJb0sYx" role="3clFbx">
                       <node concept="RRSsy" id="42VTAcDfnSG" role="3cqZAp">
-                        <property role="RRSoG" value="info" />
+                        <property role="RRSoG" value="h1akgim/info" />
                         <node concept="3cpWs3" id="_jqqJb0xG5" role="RRSoy">
                           <node concept="Xl_RD" id="_jqqJb0xzp" role="3uHU7B">
                             <property role="Xl_RC" value="found http server port in system property: " />
@@ -487,7 +487,7 @@
                       <node concept="9aQIb" id="_jqqJb0thn" role="9aQIa">
                         <node concept="3clFbS" id="_jqqJb0tho" role="9aQI4">
                           <node concept="RRSsy" id="42VTAcDfnSi" role="3cqZAp">
-                            <property role="RRSoG" value="error" />
+                            <property role="RRSoG" value="gZ5fh_4/error" />
                             <node concept="3cpWs3" id="7uvldrz6rqt" role="RRSoy">
                               <node concept="37vLTw" id="7uvldrz6rtV" role="3uHU7B">
                                 <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="port" />
@@ -504,7 +504,7 @@
                   <node concept="TDmWw" id="_jqqJb0q1p" role="TEbGg">
                     <node concept="3clFbS" id="_jqqJb0q1s" role="TDEfX">
                       <node concept="RRSsy" id="42VTAcDfnSs" role="3cqZAp">
-                        <property role="RRSoG" value="warn" />
+                        <property role="RRSoG" value="gZ5fksE/warn" />
                         <node concept="3cpWs3" id="_jqqJb0ske" role="RRSoy">
                           <node concept="Xl_RD" id="_jqqJb0sm7" role="3uHU7w">
                             <property role="Xl_RC" value=" to integer" />
@@ -592,7 +592,7 @@
         <node concept="3clFbJ" id="7uvldrz5_Bj" role="3cqZAp">
           <node concept="3clFbS" id="7uvldrz5_Bl" role="3clFbx">
             <node concept="RRSsy" id="7uvldrz66aJ" role="3cqZAp">
-              <property role="RRSoG" value="info" />
+              <property role="RRSoG" value="h1akgim/info" />
               <node concept="Xl_RD" id="7uvldrz66aK" role="RRSoy">
                 <property role="Xl_RC" value="unit test mode detected. checking for alternate enabled setting" />
               </node>
@@ -613,7 +613,7 @@
             <node concept="3clFbJ" id="7uvldrz5A0X" role="3cqZAp">
               <node concept="3clFbS" id="7uvldrz5A0Y" role="3clFbx">
                 <node concept="RRSsy" id="7uvldrz5A0Z" role="3cqZAp">
-                  <property role="RRSoG" value="info" />
+                  <property role="RRSoG" value="h1akgim/info" />
                   <node concept="3cpWs3" id="7uvldrz5A10" role="RRSoy">
                     <node concept="37vLTw" id="7uvldrz62ix" role="3uHU7w">
                       <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
@@ -649,7 +649,7 @@
                   <node concept="3clFbJ" id="7uvldrz5A1K" role="3cqZAp">
                     <node concept="3clFbS" id="7uvldrz5A1L" role="3clFbx">
                       <node concept="RRSsy" id="7uvldrz5A1M" role="3cqZAp">
-                        <property role="RRSoG" value="info" />
+                        <property role="RRSoG" value="h1akgim/info" />
                         <node concept="3cpWs3" id="7uvldrz5A1N" role="RRSoy">
                           <node concept="37vLTw" id="7uvldrz63WE" role="3uHU7w">
                             <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
@@ -776,7 +776,7 @@
                                     </node>
                                   </node>
                                   <node concept="RRSsy" id="42VTAcDfnTg" role="3cqZAp">
-                                    <property role="RRSoG" value="info" />
+                                    <property role="RRSoG" value="h1akgim/info" />
                                     <node concept="3cpWs3" id="3zAWwLKh8BV" role="RRSoy">
                                       <node concept="37vLTw" id="3zAWwLKh8Co" role="3uHU7w">
                                         <ref role="3cqZAo" node="3zAWwLKh7X_" resolve="port" />
@@ -983,7 +983,7 @@
                                       </node>
                                       <node concept="3clFbS" id="39h1xietdNb" role="TDEfX">
                                         <node concept="RRSsy" id="42VTAcDfnTq" role="3cqZAp">
-                                          <property role="RRSoG" value="error" />
+                                          <property role="RRSoG" value="gZ5fh_4/error" />
                                           <node concept="2OqwBi" id="39h1xietdNd" role="RRSoy">
                                             <node concept="37vLTw" id="39h1xietdNe" role="2Oq$k0">
                                               <ref role="3cqZAo" node="39h1xietdN9" resolve="ex" />
@@ -1030,7 +1030,7 @@
                   </node>
                 </node>
                 <node concept="RRSsy" id="42VTAcDfnTA" role="3cqZAp">
-                  <property role="RRSoG" value="info" />
+                  <property role="RRSoG" value="h1akgim/info" />
                   <node concept="Xl_RD" id="39h1xietqjv" role="RRSoy">
                     <property role="Xl_RC" value="Server started successfully" />
                   </node>
@@ -1209,7 +1209,7 @@
                             <node concept="3cqZAl" id="3vXSZsAOPus" role="3clF45" />
                             <node concept="3clFbS" id="3vXSZsAOPut" role="3clF47">
                               <node concept="RRSsy" id="42VTAcDfnTM" role="3cqZAp">
-                                <property role="RRSoG" value="info" />
+                                <property role="RRSoG" value="h1akgim/info" />
                                 <node concept="3cpWs3" id="3vXSZsAOPuv" role="RRSoy">
                                   <node concept="1rXfSq" id="3vXSZsAOPuw" role="3uHU7w">
                                     <ref role="37wK5l" node="7GB4siXi_Lg" resolve="getPort" />
@@ -1329,7 +1329,7 @@
                                   </node>
                                   <node concept="3clFbS" id="3vXSZsAOPvb" role="TDEfX">
                                     <node concept="RRSsy" id="42VTAcDfnTW" role="3cqZAp">
-                                      <property role="RRSoG" value="error" />
+                                      <property role="RRSoG" value="gZ5fh_4/error" />
                                       <node concept="2OqwBi" id="3vXSZsAOPvd" role="RRSoy">
                                         <node concept="37vLTw" id="3vXSZsAOPve" role="2Oq$k0">
                                           <ref role="3cqZAo" node="3vXSZsAOPv9" resolve="ex" />
@@ -1376,7 +1376,7 @@
               </node>
             </node>
             <node concept="RRSsy" id="42VTAcDfnU8" role="3cqZAp">
-              <property role="RRSoG" value="info" />
+              <property role="RRSoG" value="h1akgim/info" />
               <node concept="Xl_RD" id="3vXSZsAOPvr" role="RRSoy">
                 <property role="Xl_RC" value="Server started successfully" />
               </node>
@@ -1391,7 +1391,7 @@
             </node>
             <node concept="3clFbS" id="3vXSZsAOPvv" role="TDEfX">
               <node concept="RRSsy" id="42VTAcDfnUe" role="3cqZAp">
-                <property role="RRSoG" value="error" />
+                <property role="RRSoG" value="gZ5fh_4/error" />
                 <node concept="Xl_RD" id="3vXSZsAOPvx" role="RRSoy">
                   <property role="Xl_RC" value="Server could not be started" />
                 </node>
@@ -1521,7 +1521,7 @@
         <node concept="SfApY" id="3vXSZsAOJTX" role="3cqZAp">
           <node concept="3clFbS" id="3vXSZsAOJTY" role="SfCbr">
             <node concept="RRSsy" id="42VTAcDfnUm" role="3cqZAp">
-              <property role="RRSoG" value="info" />
+              <property role="RRSoG" value="h1akgim/info" />
               <node concept="Xl_RD" id="3vXSZsAOJU0" role="RRSoy">
                 <property role="Xl_RC" value="Stopping server" />
               </node>
@@ -1553,7 +1553,7 @@
               </node>
             </node>
             <node concept="RRSsy" id="42VTAcDfnUs" role="3cqZAp">
-              <property role="RRSoG" value="info" />
+              <property role="RRSoG" value="h1akgim/info" />
               <node concept="Xl_RD" id="3vXSZsAOJUd" role="RRSoy">
                 <property role="Xl_RC" value="Server stopped" />
               </node>
@@ -1562,7 +1562,7 @@
           <node concept="TDmWw" id="3vXSZsAOJUe" role="TEbGg">
             <node concept="3clFbS" id="3vXSZsAOJUf" role="TDEfX">
               <node concept="RRSsy" id="42VTAcDfnUy" role="3cqZAp">
-                <property role="RRSoG" value="error" />
+                <property role="RRSoG" value="gZ5fh_4/error" />
                 <node concept="2OqwBi" id="3vXSZsAOJUh" role="RRSoy">
                   <node concept="37vLTw" id="3vXSZsAOJUi" role="2Oq$k0">
                     <ref role="3cqZAo" node="3vXSZsAOJUl" resolve="e" />
