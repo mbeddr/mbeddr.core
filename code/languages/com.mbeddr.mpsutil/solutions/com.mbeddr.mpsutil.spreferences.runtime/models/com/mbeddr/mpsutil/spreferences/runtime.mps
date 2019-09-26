@@ -60,7 +60,7 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
-    <import index="3aup" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.migration.runtime.base(MPS.Core/)" />
+    <import index="6f4m" ref="528ff3b9-5fc4-40dd-931f-c6ce3650640e/r:f69c3fa1-0e30-4980-84e2-190ae44e4c3d(jetbrains.mps.lang.migration.runtime/jetbrains.mps.lang.migration.runtime.base)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -6830,12 +6830,12 @@
         <node concept="3cpWs8" id="4g2jb9OpVwx" role="3cqZAp">
           <node concept="3cpWsn" id="4g2jb9OpVwy" role="3cpWs9">
             <property role="TrG5h" value="fixer" />
-            <node concept="3uibUv" id="4g2jb9OpVwp" role="1tU5fm">
-              <ref role="3uigEE" to="3aup:~VersionFixer" resolve="VersionFixer" />
+            <node concept="3uibUv" id="6SWF67vQVF8" role="1tU5fm">
+              <ref role="3uigEE" to="6f4m:5gIiJF05pHn" resolve="VersionFixer" />
             </node>
             <node concept="2ShNRf" id="4g2jb9OpVwz" role="33vP2m">
               <node concept="1pGfFk" id="4g2jb9OpVw$" role="2ShVmc">
-                <ref role="37wK5l" to="3aup:~VersionFixer.&lt;init&gt;(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.module.SModule,boolean)" resolve="VersionFixer" />
+                <ref role="37wK5l" to="6f4m:5gIiJF05pI8" resolve="VersionFixer" />
                 <node concept="37vLTw" id="1a9tAsKG8H3" role="37wK5m">
                   <ref role="3cqZAo" node="1a9tAsKG7vO" resolve="project" />
                 </node>
@@ -6858,7 +6858,7 @@
               <ref role="3cqZAo" node="4g2jb9OpVwy" resolve="fixer" />
             </node>
             <node concept="liA8E" id="4g2jb9OpH$y" role="2OqNvi">
-              <ref role="37wK5l" to="3aup:~VersionFixer.updateImportVersions():void" resolve="updateImportVersions" />
+              <ref role="37wK5l" to="6f4m:2V3ml1v0Uym" resolve="updateImportVersions" />
             </node>
           </node>
         </node>
