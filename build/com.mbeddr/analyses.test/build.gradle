@@ -1,3 +1,5 @@
+import de.itemis.mps.gradle.*
+
 def script_test_mbeddrAnalysisTs = new File(scriptsBasePath + "/com.mbeddr.analyses/" + "build-ts-tests.xml")
 def script_test_mbeddrAnalysisEx = new File(scriptsBasePath + "/com.mbeddr.analyses/" + "build-ex-tests.xml")
 

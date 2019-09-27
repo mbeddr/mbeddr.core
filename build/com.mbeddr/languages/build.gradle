@@ -1,3 +1,5 @@
+import de.itemis.mps.gradle.*
+
 // :build:com.mbeddr.build
 def script_build_mbeddr = new File(scriptsBasePath + "/com.mbeddr.build/" + "build.xml")
 
@@ -145,7 +147,7 @@ task test_mbeddr_cc_ex {
 	}
 }
 
-task build_mbeddr_cc_ex(type: RunMbeddrAntScript, dependsOn: build_mbeddr) {
+task build_mbeddr_cc_ex(type: RunAntScript, dependsOn: build_mbeddr) {
     script script_test_mbeddrCcEx
     targets 'clean', 'generate'
 }

@@ -1,5 +1,3 @@
-
-
 // path variables
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
 // the root directory).
@@ -58,7 +56,7 @@ String minorVersion = '-Dminor.version=' + ext.mbeddrMinor
 ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.slall_home = ['-Dsl-all.home=' + file(artifactsDir.absolutePath + '/de.itemis.mps.extensions').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
-ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
 
 // path locations
 ext.mbeddrScripts_basePath = file(ant.properties['mbeddr.github.core.home'] + "/build").getAbsolutePath()
@@ -90,6 +88,8 @@ subprojects {
         mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
         ant_lib "org.apache.ant:ant-junit:1.10.1"
     }
+
+    ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = configurations.ant_lib
 }
 
 
