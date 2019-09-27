@@ -2,9 +2,9 @@
 <model ref="r:dd41cdb8-4c69-4e7f-9e0a-399d92fed94a(com.mbeddr.mpsutil.projectview.runtime.tree.highlighter)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="7e8u" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.ui.tree(MPS.Platform/)" />
@@ -2397,6 +2397,15 @@
     <node concept="3uibUv" id="6B7erwvED6c" role="1zkMxy">
       <ref role="3uigEE" node="6B7erwvEDvj" resolve="TreeUpdateVisitor" />
     </node>
+    <node concept="312cEg" id="6V$9Iu5FJrG" role="jymVt">
+      <property role="TrG5h" value="myMakeComponent" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="6V$9Iu5FJrH" role="1B3o_S" />
+      <node concept="3uibUv" id="6V$9Iu5FHBf" role="1tU5fm">
+        <ref role="3uigEE" to="vqh0:~MakeServiceComponent" resolve="MakeServiceComponent" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6V$9Iu5FHWx" role="jymVt" />
     <node concept="3clFbW" id="6B7erwvED6d" role="jymVt">
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -2413,6 +2422,24 @@
           <ref role="37wK5l" node="6B7erwvEDvz" resolve="TreeUpdateVisitor" />
           <node concept="37vLTw" id="6B7erwvED6j" role="37wK5m">
             <ref role="3cqZAo" node="6B7erwvED6f" resolve="mpsProject" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6V$9Iu5FHDG" role="3cqZAp">
+          <node concept="37vLTI" id="6V$9Iu5FHDI" role="3clFbG">
+            <node concept="2OqwBi" id="6V$9Iu5FHBP" role="37vLTx">
+              <node concept="37vLTw" id="6V$9Iu5FHBQ" role="2Oq$k0">
+                <ref role="3cqZAo" node="6B7erwvED6f" resolve="mpsProject" />
+              </node>
+              <node concept="liA8E" id="6V$9Iu5FHBR" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
+                <node concept="3VsKOn" id="6V$9Iu5FHBS" role="37wK5m">
+                  <ref role="3VsUkX" to="vqh0:~MakeServiceComponent" resolve="MakeServiceComponent" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="6V$9Iu5FLlk" role="37vLTJ">
+              <ref role="3cqZAo" node="6V$9Iu5FJrG" resolve="myMakeComponent" />
+            </node>
           </node>
         </node>
       </node>
@@ -2500,15 +2527,19 @@
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="6B7erwvED6N" role="3clF47">
         <node concept="3clFbJ" id="6B7erwvED6U" role="3cqZAp">
-          <node concept="2YIFZM" id="6B7erwvEIG3" role="3clFbw">
-            <ref role="1Pybhc" to="vqh0:~IMakeService$INSTANCE" resolve="IMakeService.INSTANCE" />
-            <ref role="37wK5l" to="vqh0:~IMakeService$INSTANCE.isSessionActive()" resolve="isSessionActive" />
-          </node>
           <node concept="3clFbS" id="6B7erwvED6Y" role="3clFbx">
             <node concept="3cpWs6" id="6B7erwvED6W" role="3cqZAp">
               <node concept="3clFbT" id="6B7erwvED6X" role="3cqZAk">
                 <property role="3clFbU" value="true" />
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6V$9Iu5FOuI" role="3clFbw">
+            <node concept="37vLTw" id="6V$9Iu5FMX2" role="2Oq$k0">
+              <ref role="3cqZAo" node="6V$9Iu5FJrG" resolve="myMakeComponent" />
+            </node>
+            <node concept="liA8E" id="6V$9Iu5FPTl" role="2OqNvi">
+              <ref role="37wK5l" to="vqh0:~MakeServiceComponent.isSessionActive()" resolve="isSessionActive" />
             </node>
           </node>
         </node>

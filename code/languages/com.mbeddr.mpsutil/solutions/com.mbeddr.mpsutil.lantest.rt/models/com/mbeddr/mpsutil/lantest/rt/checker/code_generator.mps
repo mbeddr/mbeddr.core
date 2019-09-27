@@ -2,12 +2,12 @@
 <model ref="r:636418bd-de3f-4994-9ed6-575fd575a6a8(com.mbeddr.mpsutil.lantest.rt.checker.code_generator)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
   </languages>
   <imports>
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
@@ -1226,9 +1226,21 @@
               <node concept="3uibUv" id="1Fm2OOqLLNW" role="1tU5fm">
                 <ref role="3uigEE" to="hfuk:1NAY6bPd4nM" resolve="IMakeService" />
               </node>
-              <node concept="2YIFZM" id="1Fm2OOqLLNZ" role="33vP2m">
-                <ref role="37wK5l" to="hfuk:7yGn3z4MRr2" resolve="get" />
-                <ref role="1Pybhc" to="hfuk:7yGn3z4MRqM" resolve="IMakeService.INSTANCE" />
+              <node concept="2OqwBi" id="6V$9Iu5EQfS" role="33vP2m">
+                <node concept="2OqwBi" id="6V$9Iu5ENyM" role="2Oq$k0">
+                  <node concept="37vLTw" id="6V$9Iu5EMMV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="dYMG7cS$ZI" resolve="proj" />
+                  </node>
+                  <node concept="liA8E" id="6V$9Iu5EOk$" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
+                    <node concept="3VsKOn" id="6V$9Iu5EP$5" role="37wK5m">
+                      <ref role="3VsUkX" to="hfuk:4QUA3Sqts3M" resolve="MakeServiceComponent" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="6V$9Iu5ER3p" role="2OqNvi">
+                  <ref role="37wK5l" to="hfuk:4QUA3SqtLoe" resolve="get" />
+                </node>
               </node>
             </node>
           </node>

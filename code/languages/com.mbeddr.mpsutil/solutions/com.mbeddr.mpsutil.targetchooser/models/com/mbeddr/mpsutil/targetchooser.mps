@@ -2,10 +2,10 @@
 <model ref="r:24b43531-125c-4436-b4b0-f3444d2173fd(com.mbeddr.mpsutil.targetchooser)">
   <persistence version="9" />
   <languages>
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2098,12 +2098,6 @@
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="3clFbJ" id="2Nt6pro7irF" role="8Wnug">
-            <node concept="3fqX7Q" id="2Nt6pro7irG" role="3clFbw">
-              <node concept="2YIFZM" id="2Nt6pro7iwV" role="3fr31v">
-                <ref role="1Pybhc" to="hfuk:7yGn3z4MRqM" resolve="IMakeService.INSTANCE" />
-                <ref role="37wK5l" to="hfuk:2eO7$PQ1ZfE" resolve="isSessionActive" />
-              </node>
-            </node>
             <node concept="9aQIb" id="2Nt6pro7is8" role="9aQIa">
               <node concept="3clFbS" id="2Nt6pro7is9" role="9aQI4">
                 <node concept="3clFbH" id="2Nt6pro8fpV" role="3cqZAp" />
@@ -2171,13 +2165,12 @@
                                 </node>
                                 <node concept="3clFbF" id="2Nt6pro7iso" role="3cqZAp">
                                   <node concept="2OqwBi" id="2Nt6pro7isp" role="3clFbG">
-                                    <node concept="2YIFZM" id="2Nt6pro7ixM" role="2Oq$k0">
-                                      <ref role="1Pybhc" to="vqh0:~IMakeService$INSTANCE" resolve="IMakeService.INSTANCE" />
-                                      <ref role="37wK5l" to="vqh0:~IMakeService$INSTANCE.get()" resolve="get" />
-                                    </node>
                                     <node concept="liA8E" id="2Nt6pro7isr" role="2OqNvi">
                                       <ref role="37wK5l" to="vqh0:~IMakeService.removeListener(jetbrains.mps.make.IMakeNotificationListener)" resolve="removeListener" />
                                       <node concept="Xjq3P" id="2Nt6pro7iss" role="37wK5m" />
+                                    </node>
+                                    <node concept="Xl_RD" id="6V$9Iu5FxC6" role="2Oq$k0">
+                                      <property role="Xl_RC" value="componentHost.getComponent(MakeServiceComponent.class).get()" />
                                     </node>
                                   </node>
                                 </node>
@@ -2229,10 +2222,6 @@
                   <node concept="3clFbS" id="2Nt6pro7isz" role="3clFbx">
                     <node concept="3clFbF" id="2Nt6pro7is$" role="3cqZAp">
                       <node concept="2OqwBi" id="2Nt6pro7is_" role="3clFbG">
-                        <node concept="2YIFZM" id="2Nt6pro7iyD" role="2Oq$k0">
-                          <ref role="1Pybhc" to="vqh0:~IMakeService$INSTANCE" resolve="IMakeService.INSTANCE" />
-                          <ref role="37wK5l" to="vqh0:~IMakeService$INSTANCE.get()" resolve="get" />
-                        </node>
                         <node concept="liA8E" id="2Nt6pro7isB" role="2OqNvi">
                           <ref role="37wK5l" to="vqh0:~IMakeService.addListener(jetbrains.mps.make.IMakeNotificationListener)" resolve="addListener" />
                           <node concept="2OqwBi" id="2Nt6pro8pTo" role="37wK5m">
@@ -2253,6 +2242,9 @@
                               </node>
                             </node>
                           </node>
+                        </node>
+                        <node concept="Xl_RD" id="6V$9Iu5FwdX" role="2Oq$k0">
+                          <property role="Xl_RC" value="componentHost.getComponent(MakeServiceComponent.class).get()" />
                         </node>
                       </node>
                     </node>
@@ -2331,6 +2323,9 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="Xl_RD" id="6V$9Iu5Fcr$" role="3clFbw">
+              <property role="Xl_RC" value="componentHost.getComponent(MakeServiceComponent.class).isSessionActive" />
             </node>
           </node>
         </node>
