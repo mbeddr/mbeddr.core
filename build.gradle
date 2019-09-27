@@ -113,7 +113,7 @@ subprojects {
             if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("mps-")) {
                 mbeddrBuild = "master"
             }
-            ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
+            ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
         } else {
             ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
         }
