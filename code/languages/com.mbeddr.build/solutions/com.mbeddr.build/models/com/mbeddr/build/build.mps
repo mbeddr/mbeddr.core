@@ -8878,6 +8878,11 @@
             <ref role="3bR37D" to="al5i:4Wyno57pInE" resolve="com.mbeddr.mpsutil.suppresswarning" />
           </node>
         </node>
+        <node concept="1SiIV0" id="38KoYwHOtP5" role="3bR37C">
+          <node concept="3bR9La" id="38KoYwHOtP6" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:61Pvu7KHtlo" resolve="com.mbeddr.mpsutil.breadcrumb" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6ijKbgMcVHW" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -8996,6 +9001,11 @@
         <node concept="1SiIV0" id="4hvHh3QYlcl" role="3bR37C">
           <node concept="1Busua" id="4hvHh3QYlcm" role="1SiIV1">
             <ref role="1Busuk" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38KoYwHOtP7" role="3bR37C">
+          <node concept="3bR9La" id="38KoYwHOtP8" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
       </node>
