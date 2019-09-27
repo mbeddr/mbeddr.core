@@ -968,7 +968,7 @@
                 <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
               </node>
               <node concept="liA8E" id="Dp4TemBOGI" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Hashtable.get(java.lang.Object)" resolve="get" />
+                <ref role="37wK5l" to="33ny:~Properties.get(java.lang.Object)" resolve="get" />
                 <node concept="Xl_RD" id="Dp4TemBOGJ" role="37wK5m">
                   <property role="Xl_RC" value="file.separator" />
                 </node>
