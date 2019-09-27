@@ -4,6 +4,7 @@ buildscript {
     repositories {
         mavenLocal()
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        mavenCentral()
     }
 
     dependencies {
