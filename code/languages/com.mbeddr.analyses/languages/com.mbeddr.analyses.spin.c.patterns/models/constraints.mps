@@ -10,12 +10,12 @@
     <import index="i3mj" ref="r:828f323f-b068-42aa-8988-4151fb6af01f(com.mbeddr.analyses.spin.promela.patterns.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="velc" ref="r:1af48fac-0627-4691-aa49-4813fdc5ca8e(com.mbeddr.analyses.spin.c.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="llb3" ref="r:38e1b852-361b-47c0-99e1-1944e9fcd4c9(com.mbeddr.analyses.spin.c.patterns.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -106,6 +106,9 @@
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -413,6 +416,20 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="61XOOojGN_6" role="3cqZAp">
+          <node concept="3cpWsn" id="61XOOojGN_7" role="3cpWs9">
+            <property role="TrG5h" value="childConceptName" />
+            <node concept="3uibUv" id="61XOOojGNzR" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2OqwBi" id="61XOOojGN_8" role="33vP2m">
+              <node concept="2DD5aU" id="61XOOojGN_9" role="2Oq$k0" />
+              <node concept="liA8E" id="61XOOojGN_a" role="2OqNvi">
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="1GXRyrT9KR2" role="3cqZAp">
           <node concept="3clFbS" id="1GXRyrT9KR3" role="3clFbx">
             <node concept="3cpWs6" id="1GXRyrT9KR4" role="3cqZAp">
@@ -421,17 +438,27 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="1GXRyrT9M7V" role="3clFbw">
-            <node concept="2OqwBi" id="1GXRyrT9KR6" role="2Oq$k0">
-              <node concept="2DD5aU" id="1GXRyrT9KR7" role="2Oq$k0" />
-              <node concept="liA8E" id="1GXRyrT9LBN" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+          <node concept="22lmx$" id="61XOOojGOkk" role="3clFbw">
+            <node concept="2OqwBi" id="61XOOojGOVH" role="3uHU7w">
+              <node concept="37vLTw" id="61XOOojGOA1" role="2Oq$k0">
+                <ref role="3cqZAo" node="61XOOojGN_7" resolve="childConceptName" />
+              </node>
+              <node concept="liA8E" id="61XOOojGPAx" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                <node concept="Xl_RD" id="61XOOojGPF1" role="37wK5m">
+                  <property role="Xl_RC" value="NodeOperationsContainer" />
+                </node>
               </node>
             </node>
-            <node concept="liA8E" id="1GXRyrT9MRJ" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-              <node concept="Xl_RD" id="1GXRyrT9N81" role="37wK5m">
-                <property role="Xl_RC" value="TestNodeAnnotation" />
+            <node concept="2OqwBi" id="1GXRyrT9M7V" role="3uHU7B">
+              <node concept="37vLTw" id="61XOOojGN_b" role="2Oq$k0">
+                <ref role="3cqZAo" node="61XOOojGN_7" resolve="childConceptName" />
+              </node>
+              <node concept="liA8E" id="1GXRyrT9MRJ" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                <node concept="Xl_RD" id="1GXRyrT9N81" role="37wK5m">
+                  <property role="Xl_RC" value="TestNodeAnnotation" />
+                </node>
               </node>
             </node>
           </node>

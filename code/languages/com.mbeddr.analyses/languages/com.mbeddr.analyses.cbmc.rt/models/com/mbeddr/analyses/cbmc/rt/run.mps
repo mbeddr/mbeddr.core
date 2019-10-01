@@ -366,6 +366,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -373,9 +379,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference_Old" flags="nn" index="uoxfO">
-        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
-      </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -408,9 +411,6 @@
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
-      </concept>
-      <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
-        <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
@@ -925,18 +925,18 @@
           </node>
         </node>
         <node concept="3cpWs6" id="nSzxU4Oceq" role="3cqZAp">
-          <node concept="2OqwBi" id="nSzxU4Oi0i" role="3cqZAk">
+          <node concept="2OqwBi" id="61XOOojGInW" role="3cqZAk">
             <node concept="2OqwBi" id="nSzxU4Od1T" role="2Oq$k0">
               <node concept="37vLTw" id="nSzxU4Oc$b" role="2Oq$k0">
                 <ref role="3cqZAo" node="nSzxU4O79l" resolve="nmc" />
               </node>
-              <node concept="3TrcHB" id="nSzxU4OdYD" role="2OqNvi">
-                <ref role="3TsBF5" to="d0vh:49XubMptfQm" resolve="strategy" />
+              <node concept="3TrcHB" id="61XOOojGF2b" role="2OqNvi">
+                <ref role="3TsBF5" to="d0vh:61XOOojGe7k" resolve="strategy" />
               </node>
             </node>
-            <node concept="3t7uKx" id="nSzxU4OiHL" role="2OqNvi">
-              <node concept="uoxfO" id="nSzxU4OiHN" role="3t7uKA">
-                <ref role="uo_Cq" to="d0vh:49XubMpsXFh" />
+            <node concept="21noJN" id="61XOOojGIzh" role="2OqNvi">
+              <node concept="21nZrQ" id="61XOOojGIAZ" role="21noJM">
+                <ref role="21nZrZ" to="d0vh:61XOOojGe6$" resolve="_1" />
               </node>
             </node>
           </node>

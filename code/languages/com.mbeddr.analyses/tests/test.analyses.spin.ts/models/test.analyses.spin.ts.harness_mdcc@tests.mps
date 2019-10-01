@@ -17,7 +17,9 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
-      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
+        <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
+      </concept>
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -791,55 +793,6 @@
   </node>
   <node concept="1lH9Xt" id="1GXRyrTcvhM">
     <property role="TrG5h" value="test_30_Harness_BasicMode" />
-    <node concept="1LZb2c" id="1GXRyrTgMOJ" role="1SL9yI">
-      <property role="TrG5h" value="testAllowed" />
-      <node concept="3cqZAl" id="1GXRyrTgMOK" role="3clF45" />
-      <node concept="3clFbS" id="1GXRyrTgMOO" role="3clF47">
-        <node concept="3SKdUt" id="61XOOojFZX2" role="3cqZAp">
-          <node concept="1PaTwC" id="61XOOojFZX3" role="3ndbpf">
-            <node concept="3oM_SD" id="61XOOojFZX4" role="1PaTwD">
-              <property role="3oM_SC" value="Check" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZX5" role="1PaTwD">
-              <property role="3oM_SC" value="statement" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZX6" role="1PaTwD">
-              <property role="3oM_SC" value="was" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZX7" role="1PaTwD">
-              <property role="3oM_SC" value="moved" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZX8" role="1PaTwD">
-              <property role="3oM_SC" value="to" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZX9" role="1PaTwD">
-              <property role="3oM_SC" value="node" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZXa" role="1PaTwD">
-              <property role="3oM_SC" value="annotation" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="61XOOojFZXb" role="3cqZAp">
-          <node concept="1PaTwC" id="61XOOojFZXc" role="3ndbpf">
-            <node concept="3oM_SD" id="61XOOojFZXd" role="1PaTwD">
-              <property role="3oM_SC" value="check" />
-            </node>
-            <node concept="tu5oc" id="61XOOojFZXe" role="1PaTwD">
-              <node concept="3xONca" id="61XOOojFZXf" role="tu5of">
-                <ref role="3xOPvv" node="1GXRyrTh0Wd" resolve="allowed" />
-              </node>
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZXg" role="1PaTwD">
-              <property role="3oM_SC" value="error" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZXh" role="1PaTwD">
-              <property role="3oM_SC" value="messages" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="1GXRyrTcvhN" role="1SKRRt">
       <node concept="1HfMva" id="1GXRyrTcvhO" role="1qenE9">
         <property role="TrG5h" value="harness_allowed_elements" />
@@ -1097,13 +1050,11 @@
           <ref role="3GEb4d" node="1GXRyrTmtOH" resolve="dummySUT" />
         </node>
         <node concept="1CU$1Q" id="1GXRyrTmpfj" role="2OODSX" />
-      </node>
-      <node concept="3xLA65" id="1GXRyrTh0Wd" role="lGtFl">
-        <property role="TrG5h" value="allowed" />
-      </node>
-      <node concept="7CXmI" id="61XOOojFZX0" role="lGtFl">
-        <node concept="7OXhh" id="61XOOojFZX1" role="7EUXB">
-          <property role="TrG5h" value="testAllowed_migrated" />
+        <node concept="7CXmI" id="61XOOojGLAp" role="lGtFl">
+          <node concept="7OXhh" id="61XOOojGLAr" role="7EUXB">
+            <property role="GvXf4" value="true" />
+            <property role="TrG5h" value="allowed" />
+          </node>
         </node>
       </node>
     </node>
@@ -1126,9 +1077,9 @@
           <ref role="3GEb4d" node="1GXRyrTmtOH" resolve="dummySUT" />
         </node>
         <node concept="1CU$1Q" id="4g0pd6rpDse" role="2OODSX" />
-      </node>
-      <node concept="3xLA65" id="4g0pd6rpDsf" role="lGtFl">
-        <property role="TrG5h" value="disallowed" />
+        <node concept="3xLA65" id="61XOOojGMhO" role="lGtFl">
+          <property role="TrG5h" value="disallowed" />
+        </node>
       </node>
     </node>
   </node>
