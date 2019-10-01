@@ -2,9 +2,9 @@
 <model ref="r:4cca77bb-25f2-455e-a1a2-de97cca7b4ba(com.mbeddr.analyses.base.verification_conditions.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -228,7 +228,7 @@
       <node concept="3F0ifn" id="5U$1m7mf34R" role="3EZMnx">
         <property role="3F0ifm" value="sketch of the generated code:" />
         <node concept="Vb9p2" id="5U$1m7mf3by" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="5U$1m7mf37n" role="3EZMnx" />
@@ -403,7 +403,7 @@
       <node concept="3F0ifn" id="5U$1m7mjUi8" role="3EZMnx">
         <property role="3F0ifm" value="sketch of the generated code:" />
         <node concept="Vb9p2" id="5U$1m7mjUi9" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="5U$1m7mjUia" role="3EZMnx" />
@@ -683,7 +683,7 @@
       <node concept="3F0ifn" id="5U$1m7mlde$" role="3EZMnx">
         <property role="3F0ifm" value="sketch of the generated code:" />
         <node concept="Vb9p2" id="5U$1m7mlde_" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="5U$1m7mldeA" role="3EZMnx" />
@@ -901,7 +901,7 @@
       <node concept="3F0ifn" id="5U$1m7mg$L8" role="3EZMnx">
         <property role="3F0ifm" value="sketch of the generated code:" />
         <node concept="Vb9p2" id="5U$1m7mg$L9" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="5U$1m7mg$La" role="3EZMnx" />
@@ -1070,7 +1070,7 @@
       <node concept="3F0ifn" id="5U$1m7mfFZz" role="3EZMnx">
         <property role="3F0ifm" value="sketch of the generated code:" />
         <node concept="Vb9p2" id="5U$1m7mfFZ$" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="5U$1m7mfFZ_" role="3EZMnx" />
@@ -1220,7 +1220,7 @@
       <node concept="3F0ifn" id="5U$1m7miLdy" role="3EZMnx">
         <property role="3F0ifm" value="sketch of the generated code:" />
         <node concept="Vb9p2" id="5U$1m7miLdz" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="5U$1m7miLd$" role="3EZMnx" />
@@ -1370,10 +1370,10 @@
       <property role="3F0ifm" value="disabled" />
       <ref role="1ERwB7" node="7erX1gT1RL2" resolve="removeDisabled" />
       <node concept="VechU" id="7erX1gT1KkX" role="3F10Kt">
-        <property role="Vb096" value="DARK_MAGENTA" />
+        <property role="Vb096" value="g1_qVrt/darkMagenta" />
       </node>
       <node concept="30gYXW" id="2h3YlM50byS" role="3F10Kt">
-        <property role="Vb096" value="cyan" />
+        <property role="Vb096" value="fLwANPt/cyan" />
       </node>
       <node concept="pkWqt" id="2h3YlM4ZTXQ" role="pqm2j">
         <node concept="3clFbS" id="2h3YlM4ZTXR" role="2VODD2">
@@ -1394,7 +1394,7 @@
     <property role="TrG5h" value="removeDisabled" />
     <ref role="1h_SK9" to="pyey:6$qhYL9Fk4m" resolve="VerificationConditionBase" />
     <node concept="1hA7zw" id="7erX1gT1RL3" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="7erX1gT1RL4" role="1hA7z_">
         <node concept="3clFbS" id="7erX1gT1RL5" role="2VODD2">
           <node concept="3clFbF" id="2h3YlM4ZYpz" role="3cqZAp">
@@ -1461,13 +1461,13 @@
         <node concept="3F0ifn" id="6RCrcvOtZww" role="3EZMnx">
           <property role="3F0ifm" value="//" />
           <node concept="30gYXW" id="6RCrcvOyoh$" role="3F10Kt">
-            <property role="Vb096" value="LIGHT_BLUE" />
+            <property role="Vb096" value="hGRnIZc/lightBlue" />
           </node>
         </node>
         <node concept="3F0A7n" id="6RCrcvOtZxc" role="3EZMnx">
           <ref role="1NtTu8" to="pyey:6RCrcvOtNXu" resolve="explanation" />
           <node concept="30gYXW" id="6RCrcvOyoit" role="3F10Kt">
-            <property role="Vb096" value="LIGHT_BLUE" />
+            <property role="Vb096" value="hGRnIZc/lightBlue" />
           </node>
         </node>
         <node concept="2iRfu4" id="6RCrcvOtZwx" role="2iSdaV" />

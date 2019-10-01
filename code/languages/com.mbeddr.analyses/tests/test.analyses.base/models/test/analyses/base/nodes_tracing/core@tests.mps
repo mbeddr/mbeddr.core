@@ -3,8 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -47,11 +48,8 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
@@ -85,6 +83,14 @@
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
@@ -113,8 +119,49 @@
         </node>
         <node concept="3clFbH" id="5Lx3sEEr0lu" role="3cqZAp" />
         <node concept="3SKdUt" id="4wbjntDYYoQ" role="3cqZAp">
-          <node concept="3SKdUq" id="4wbjntDYYrl" role="3SKWNk">
-            <property role="3SKdUp" value="TODO known problems as of 13.06. -- commented out to get the build green" />
+          <node concept="1PaTwC" id="61XOOojFZCc" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZCd" role="1PaTwD">
+              <property role="3oM_SC" value="TODO" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCe" role="1PaTwD">
+              <property role="3oM_SC" value="known" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCf" role="1PaTwD">
+              <property role="3oM_SC" value="problems" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCg" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCh" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCi" role="1PaTwD">
+              <property role="3oM_SC" value="13.06." />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCj" role="1PaTwD">
+              <property role="3oM_SC" value="--" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCk" role="1PaTwD">
+              <property role="3oM_SC" value="commented" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCl" role="1PaTwD">
+              <property role="3oM_SC" value="out" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCm" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCn" role="1PaTwD">
+              <property role="3oM_SC" value="get" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCo" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCp" role="1PaTwD">
+              <property role="3oM_SC" value="build" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCq" role="1PaTwD">
+              <property role="3oM_SC" value="green" />
+            </node>
           </node>
         </node>
         <node concept="1X3_iC" id="5GwePVE7d8y" role="lGtFl">
@@ -257,13 +304,77 @@
         </node>
         <node concept="3clFbH" id="5Lx3sEEs2EE" role="3cqZAp" />
         <node concept="3SKdUt" id="4wbjntDYV$I" role="3cqZAp">
-          <node concept="3SKdUq" id="4wbjntDYVB5" role="3SKWNk">
-            <property role="3SKdUp" value="TODO known problem - commented out to get a green build as of 13.06." />
+          <node concept="1PaTwC" id="61XOOojFZCr" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZCs" role="1PaTwD">
+              <property role="3oM_SC" value="TODO" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCt" role="1PaTwD">
+              <property role="3oM_SC" value="known" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCu" role="1PaTwD">
+              <property role="3oM_SC" value="problem" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCv" role="1PaTwD">
+              <property role="3oM_SC" value="-" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCw" role="1PaTwD">
+              <property role="3oM_SC" value="commented" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCx" role="1PaTwD">
+              <property role="3oM_SC" value="out" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCy" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCz" role="1PaTwD">
+              <property role="3oM_SC" value="get" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZC$" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZC_" role="1PaTwD">
+              <property role="3oM_SC" value="green" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCA" role="1PaTwD">
+              <property role="3oM_SC" value="build" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCB" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCC" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCD" role="1PaTwD">
+              <property role="3oM_SC" value="13.06." />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="HxQJLPNmww" role="3cqZAp">
-          <node concept="3SKdUq" id="HxQJLPNmyN" role="3SKWNk">
-            <property role="3SKdUp" value="these asserts document the problem by lifting cells " />
+          <node concept="1PaTwC" id="61XOOojFZCE" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZCF" role="1PaTwD">
+              <property role="3oM_SC" value="these" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCG" role="1PaTwD">
+              <property role="3oM_SC" value="asserts" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCH" role="1PaTwD">
+              <property role="3oM_SC" value="document" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCI" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCJ" role="1PaTwD">
+              <property role="3oM_SC" value="problem" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCK" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCL" role="1PaTwD">
+              <property role="3oM_SC" value="lifting" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCM" role="1PaTwD">
+              <property role="3oM_SC" value="cells" />
+            </node>
           </node>
         </node>
         <node concept="1X3_iC" id="5GwePVE7d8$" role="lGtFl">

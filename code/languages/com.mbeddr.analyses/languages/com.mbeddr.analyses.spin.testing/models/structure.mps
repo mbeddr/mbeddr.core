@@ -46,16 +46,16 @@
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="2lN4cj_UilP" role="1TKVEi">
       <property role="IQ2ns" value="2698519039581955445" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="spinLiftedResult" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="2lN4cj_Uimc" role="1TKVEi">
       <property role="IQ2ns" value="2698519039581955468" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="states" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="2lN4cj_Uimj" resolve="SpinWhitnessState" />
     </node>
   </node>
@@ -65,7 +65,7 @@
     <property role="34LRSv" value="whitness state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="49Y2Xia4uOS" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="node" />
       <property role="IQ2ns" value="4791280061046189368" />
       <ref role="20lvS9" to="tp25:gzTqbfa" resolve="SNodeType" />

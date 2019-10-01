@@ -94,6 +94,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1966870290083281362" name="jetbrains.mps.lang.smodel.structure.EnumMember_NameOperation" flags="ng" index="24Tkf9" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -168,10 +169,13 @@
         </node>
         <node concept="3clFbF" id="67iKQ7ohcP9" role="3cqZAp">
           <node concept="37vLTI" id="67iKQ7ohdeG" role="3clFbG">
-            <node concept="2OqwBi" id="67iKQ7ohdlK" role="37vLTx">
-              <node concept="13iPFW" id="67iKQ7ohdid" role="2Oq$k0" />
-              <node concept="3TrcHB" id="67iKQ7ohg59" role="2OqNvi">
-                <ref role="3TsBF5" to="iq83:67iKQ7ohdEj" resolve="coverageCriterion" />
+            <node concept="2OqwBi" id="61XOOojFZOt" role="37vLTx">
+              <node concept="24Tkf9" id="61XOOojFZOv" role="2OqNvi" />
+              <node concept="2OqwBi" id="67iKQ7ohdlK" role="2Oq$k0">
+                <node concept="13iPFW" id="67iKQ7ohdid" role="2Oq$k0" />
+                <node concept="3TrcHB" id="67iKQ7ohg59" role="2OqNvi">
+                  <ref role="3TsBF5" to="iq83:61XOOojFZOm" resolve="coverageCriterion" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="67iKQ7ohcRD" role="37vLTJ">

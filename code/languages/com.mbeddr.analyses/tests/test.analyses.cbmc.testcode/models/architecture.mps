@@ -342,7 +342,7 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <property role="22uFEx" value="true" />
-      <property role="22uFF2" value="16 bits" />
+      <property role="22uFF2" value="jmYEA6H9sw/16 bits" />
       <ref role="3V$Cn$" node="6DRvbEG5EJh" resolve="word_width_16" />
     </node>
     <node concept="1nvAUJ" id="jmYEA6IKkv" role="3V$2$K">
@@ -358,7 +358,7 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <property role="22uFEx" value="true" />
-      <property role="22uFF2" value="32 bits" />
+      <property role="22uFF2" value="jmYEA6H9sx/32 bits" />
       <ref role="3V$Cn$" node="jmYEA6EVD1" resolve="word_width_32" />
     </node>
     <node concept="1nvAUJ" id="jmYEA6IKkD" role="3V$2$K">
@@ -374,7 +374,7 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <property role="22uFEx" value="true" />
-      <property role="22uFF2" value="64 bits" />
+      <property role="22uFF2" value="jmYEA6H9sC/64 bits" />
       <ref role="3V$Cn$" node="jmYEA6EW3A" resolve="word_width_64" />
     </node>
     <node concept="3GEVxB" id="jmYEA6EXm9" role="3W6d8T">

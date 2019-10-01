@@ -2,9 +2,9 @@
 <model ref="r:8a3eb243-518a-4061-96dc-bcb9025c3611(com.mbeddr.analyses.lantest.pluginSolution.semantic_checker_statemachines)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="ccdc24b1-37a8-44ac-8a87-b53bd9c96407" name="com.mbeddr.mpsutil.lantest.assertions" version="0" />
@@ -113,11 +113,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -197,6 +194,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -312,8 +317,22 @@
           </node>
           <node concept="3clFbS" id="2mgCt7fh_XF" role="3EPuou">
             <node concept="3SKdUt" id="4saLLt27W1E" role="3cqZAp">
-              <node concept="3SKdUq" id="4saLLt27W1G" role="3SKWNk">
-                <property role="3SKdUp" value="enum declaration for input events" />
+              <node concept="1PaTwC" id="61XOOojFZzk" role="3ndbpf">
+                <node concept="3oM_SD" id="61XOOojFZzl" role="1PaTwD">
+                  <property role="3oM_SC" value="enum" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZzm" role="1PaTwD">
+                  <property role="3oM_SC" value="declaration" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZzn" role="1PaTwD">
+                  <property role="3oM_SC" value="for" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZzo" role="1PaTwD">
+                  <property role="3oM_SC" value="input" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZzp" role="1PaTwD">
+                  <property role="3oM_SC" value="events" />
+                </node>
               </node>
             </node>
             <node concept="26N1gM" id="4saLLt27qsW" role="3cqZAp">
@@ -485,8 +504,22 @@
               </node>
             </node>
             <node concept="3SKdUt" id="4saLLt27YGL" role="3cqZAp">
-              <node concept="3SKdUq" id="4saLLt27YGN" role="3SKWNk">
-                <property role="3SKdUp" value="structure declaration for statemachine state" />
+              <node concept="1PaTwC" id="61XOOojFZzq" role="3ndbpf">
+                <node concept="3oM_SD" id="61XOOojFZzr" role="1PaTwD">
+                  <property role="3oM_SC" value="structure" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZzs" role="1PaTwD">
+                  <property role="3oM_SC" value="declaration" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZzt" role="1PaTwD">
+                  <property role="3oM_SC" value="for" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZzu" role="1PaTwD">
+                  <property role="3oM_SC" value="statemachine" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZzv" role="1PaTwD">
+                  <property role="3oM_SC" value="state" />
+                </node>
               </node>
             </node>
             <node concept="26N1gM" id="4saLLt27ZxC" role="3cqZAp">
@@ -690,8 +723,19 @@
             </node>
             <node concept="3clFbH" id="4saLLt27UlV" role="3cqZAp" />
             <node concept="3SKdUt" id="4saLLt27p7q" role="3cqZAp">
-              <node concept="3SKdUq" id="4saLLt27p7s" role="3SKWNk">
-                <property role="3SKdUp" value="enum declarations for states" />
+              <node concept="1PaTwC" id="61XOOojFZzw" role="3ndbpf">
+                <node concept="3oM_SD" id="61XOOojFZzx" role="1PaTwD">
+                  <property role="3oM_SC" value="enum" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZzy" role="1PaTwD">
+                  <property role="3oM_SC" value="declarations" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZzz" role="1PaTwD">
+                  <property role="3oM_SC" value="for" />
+                </node>
+                <node concept="3oM_SD" id="61XOOojFZz$" role="1PaTwD">
+                  <property role="3oM_SC" value="states" />
+                </node>
               </node>
             </node>
             <node concept="26N1gM" id="4saLLt26M9u" role="3cqZAp">

@@ -4,11 +4,11 @@
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="d8ej" ref="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" />
@@ -74,11 +74,8 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -111,6 +108,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -174,8 +179,46 @@
         </node>
         <node concept="3clFbH" id="2ZKh15ogkvW" role="3cqZAp" />
         <node concept="3SKdUt" id="4wbjntDVDMi" role="3cqZAp">
-          <node concept="3SKdUq" id="4wbjntDVE1b" role="3SKWNk">
-            <property role="3SKdUp" value="at this date we have 14 lines (function prototypes) without any lifting info" />
+          <node concept="1PaTwC" id="61XOOojFZBO" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZBP" role="1PaTwD">
+              <property role="3oM_SC" value="at" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZBQ" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZBR" role="1PaTwD">
+              <property role="3oM_SC" value="date" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZBS" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZBT" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZBU" role="1PaTwD">
+              <property role="3oM_SC" value="14" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZBV" role="1PaTwD">
+              <property role="3oM_SC" value="lines" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZBW" role="1PaTwD">
+              <property role="3oM_SC" value="(function" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZBX" role="1PaTwD">
+              <property role="3oM_SC" value="prototypes)" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZBY" role="1PaTwD">
+              <property role="3oM_SC" value="without" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZBZ" role="1PaTwD">
+              <property role="3oM_SC" value="any" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZC0" role="1PaTwD">
+              <property role="3oM_SC" value="lifting" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZC1" role="1PaTwD">
+              <property role="3oM_SC" value="info" />
+            </node>
           </node>
         </node>
         <node concept="3vlDli" id="2ZKh15oiweQ" role="3cqZAp">
@@ -243,8 +286,19 @@
         </node>
         <node concept="3clFbH" id="2ZKh15oi_AT" role="3cqZAp" />
         <node concept="3SKdUt" id="4wbjntDVF_2" role="3cqZAp">
-          <node concept="3SKdUq" id="4wbjntDVFNV" role="3SKWNk">
-            <property role="3SKdUp" value="TODO fix the lifting" />
+          <node concept="1PaTwC" id="61XOOojFZC2" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZC3" role="1PaTwD">
+              <property role="3oM_SC" value="TODO" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZC4" role="1PaTwD">
+              <property role="3oM_SC" value="fix" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZC5" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZC6" role="1PaTwD">
+              <property role="3oM_SC" value="lifting" />
+            </node>
           </node>
         </node>
         <node concept="1X3_iC" id="5GwePVE7d8A" role="lGtFl">
@@ -316,8 +370,19 @@
         </node>
         <node concept="3clFbH" id="2ZKh15oiAIu" role="3cqZAp" />
         <node concept="3SKdUt" id="4wbjntDVGBI" role="3cqZAp">
-          <node concept="3SKdUq" id="4wbjntDVGBJ" role="3SKWNk">
-            <property role="3SKdUp" value="TODO fix the lifting" />
+          <node concept="1PaTwC" id="61XOOojFZC7" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZC8" role="1PaTwD">
+              <property role="3oM_SC" value="TODO" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZC9" role="1PaTwD">
+              <property role="3oM_SC" value="fix" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCa" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZCb" role="1PaTwD">
+              <property role="3oM_SC" value="lifting" />
+            </node>
           </node>
         </node>
         <node concept="1X3_iC" id="5GwePVE7d8B" role="lGtFl">

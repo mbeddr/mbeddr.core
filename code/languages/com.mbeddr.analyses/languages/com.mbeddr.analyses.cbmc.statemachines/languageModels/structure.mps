@@ -30,7 +30,6 @@
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
-        <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -52,9 +51,8 @@
     <property role="EcuMT" value="6085839724192268104" />
     <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
     <node concept="1TJgyj" id="5hPfJKCsfX9" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="satemachine" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="6085839724192268105" />
       <ref role="20lvS9" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
     </node>

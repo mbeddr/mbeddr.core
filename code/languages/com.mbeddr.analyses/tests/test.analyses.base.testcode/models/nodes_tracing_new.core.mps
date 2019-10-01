@@ -152,7 +152,7 @@
             </node>
           </node>
           <node concept="1xGALR" id="7HmzdkqZpfi" role="lGtFl">
-            <property role="1xEijf" value="2" />
+            <property role="1xEijf" value="7HmzdkqZUwl/one_of_subnodes" />
             <node concept="1xFd8N" id="7HmzdkqZpGf" role="1xGcb7">
               <property role="1xFd8M" value="if (x == 3)" />
             </node>

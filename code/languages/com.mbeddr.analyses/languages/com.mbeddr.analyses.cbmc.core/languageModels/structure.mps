@@ -35,7 +35,6 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
-        <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -75,7 +74,6 @@
     <property role="EcuMT" value="4053481679317021364" />
     <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
     <node concept="1TJgyj" id="3x0R1LJfFaP" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="decTabContainer" />
       <property role="IQ2ns" value="4053481679317021365" />
       <ref role="20lvS9" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
@@ -140,7 +138,6 @@
     <property role="EcuMT" value="8697457845339756478" />
     <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
     <node concept="1TJgyj" id="7yN$Xh8qhuZ" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="gswitchContainer" />
       <property role="IQ2ns" value="8697457845339756479" />
       <ref role="20lvS9" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />

@@ -3,12 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -127,11 +127,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -195,6 +192,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1079,8 +1084,37 @@
       <node concept="3cqZAl" id="1iGXuG0l6Tu" role="3clF45" />
       <node concept="3clFbS" id="1iGXuG0l6Tv" role="3clF47">
         <node concept="3SKdUt" id="1iGXuG0leVH" role="3cqZAp">
-          <node concept="3SKdUq" id="1iGXuG0lfaJ" role="3SKWNk">
-            <property role="3SKdUp" value="we test for smth. for which no VC was generated" />
+          <node concept="1PaTwC" id="61XOOojFZHv" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZHw" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHx" role="1PaTwD">
+              <property role="3oM_SC" value="test" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHy" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHz" role="1PaTwD">
+              <property role="3oM_SC" value="smth." />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZH$" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZH_" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHA" role="1PaTwD">
+              <property role="3oM_SC" value="no" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHB" role="1PaTwD">
+              <property role="3oM_SC" value="VC" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHC" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHD" role="1PaTwD">
+              <property role="3oM_SC" value="generated" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1iGXuG0l6Tw" role="3cqZAp">
@@ -1697,8 +1731,67 @@
           </node>
         </node>
         <node concept="3SKdUt" id="5bSnXVK1sRz" role="3cqZAp">
-          <node concept="3SKdUq" id="5bSnXVK1sVL" role="3SKWNk">
-            <property role="3SKdUp" value="1 / (0.1 - x) does not lead to Div-By-Zero since 0.1 does not have an exact representation in floating-point" />
+          <node concept="1PaTwC" id="61XOOojFZHE" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZHF" role="1PaTwD">
+              <property role="3oM_SC" value="1" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHG" role="1PaTwD">
+              <property role="3oM_SC" value="/" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHH" role="1PaTwD">
+              <property role="3oM_SC" value="(0.1" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHI" role="1PaTwD">
+              <property role="3oM_SC" value="-" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHJ" role="1PaTwD">
+              <property role="3oM_SC" value="x)" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHK" role="1PaTwD">
+              <property role="3oM_SC" value="does" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHL" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHM" role="1PaTwD">
+              <property role="3oM_SC" value="lead" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHN" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHO" role="1PaTwD">
+              <property role="3oM_SC" value="Div-By-Zero" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHP" role="1PaTwD">
+              <property role="3oM_SC" value="since" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHQ" role="1PaTwD">
+              <property role="3oM_SC" value="0.1" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHR" role="1PaTwD">
+              <property role="3oM_SC" value="does" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHS" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHT" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHU" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHV" role="1PaTwD">
+              <property role="3oM_SC" value="exact" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHW" role="1PaTwD">
+              <property role="3oM_SC" value="representation" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHX" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZHY" role="1PaTwD">
+              <property role="3oM_SC" value="floating-point" />
+            </node>
           </node>
         </node>
         <node concept="3vwNmj" id="5bSnXVJNQzO" role="3cqZAp">
@@ -1864,8 +1957,55 @@
           </node>
         </node>
         <node concept="3SKdUt" id="1iGXuG0i460" role="3cqZAp">
-          <node concept="3SKdUq" id="1iGXuG0i461" role="3SKWNk">
-            <property role="3SKdUp" value="1 / (0 - x) leads to Div-By-Zero since 0 has an exact representation in floating-point" />
+          <node concept="1PaTwC" id="61XOOojFZHZ" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZI0" role="1PaTwD">
+              <property role="3oM_SC" value="1" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZI1" role="1PaTwD">
+              <property role="3oM_SC" value="/" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZI2" role="1PaTwD">
+              <property role="3oM_SC" value="(0" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZI3" role="1PaTwD">
+              <property role="3oM_SC" value="-" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZI4" role="1PaTwD">
+              <property role="3oM_SC" value="x)" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZI5" role="1PaTwD">
+              <property role="3oM_SC" value="leads" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZI6" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZI7" role="1PaTwD">
+              <property role="3oM_SC" value="Div-By-Zero" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZI8" role="1PaTwD">
+              <property role="3oM_SC" value="since" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZI9" role="1PaTwD">
+              <property role="3oM_SC" value="0" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZIa" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZIb" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZIc" role="1PaTwD">
+              <property role="3oM_SC" value="exact" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZId" role="1PaTwD">
+              <property role="3oM_SC" value="representation" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZIe" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZIf" role="1PaTwD">
+              <property role="3oM_SC" value="floating-point" />
+            </node>
           </node>
         </node>
         <node concept="3vwNmj" id="1iGXuG0i462" role="3cqZAp">

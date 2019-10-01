@@ -2,7 +2,7 @@
 <model ref="r:e5273d18-e58b-474b-a23a-5a3775ab9a5f(com.mbeddr.analyses.acsl.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -230,14 +230,14 @@
         <node concept="3F0ifn" id="5OLOS2sTbRv" role="AHCbl">
           <property role="3F0ifm" value="acsl contract available ..." />
           <node concept="VechU" id="5OLOS2sTbTg" role="3F10Kt">
-            <property role="Vb096" value="LIGHT_BLUE" />
+            <property role="Vb096" value="hGRnIZc/lightBlue" />
           </node>
           <node concept="30gYXW" id="5OLOS2sTggQ" role="3F10Kt">
-            <property role="Vb096" value="WHITE" />
+            <property role="Vb096" value="hEZAO13/white" />
           </node>
         </node>
         <node concept="Veino" id="3i$cQqpB5OV" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
         <node concept="3EZMnI" id="3i$cQqpDeIO" role="3EZMnx">
           <node concept="2iRfu4" id="3i$cQqpDeIP" role="2iSdaV" />
@@ -417,7 +417,7 @@
         <node concept="3F0ifn" id="41uzL3EMGMw" role="3EZMnx">
           <property role="3F0ifm" value="  @ behavior:" />
           <node concept="Vb9p2" id="41uzL3EMNFP" role="3F10Kt">
-            <property role="Vbekb" value="BOLD" />
+            <property role="Vbekb" value="g1_k_vY/BOLD" />
           </node>
         </node>
         <node concept="3F0A7n" id="41uzL3EMGMC" role="3EZMnx">
@@ -435,7 +435,7 @@
         <node concept="3F0ifn" id="41uzL3EMNI1" role="3EZMnx">
           <property role="3F0ifm" value="  @   assumes:" />
           <node concept="Vb9p2" id="41uzL3EMTpy" role="3F10Kt">
-            <property role="Vbekb" value="BOLD" />
+            <property role="Vbekb" value="g1_k_vY/BOLD" />
           </node>
         </node>
         <node concept="l2Vlx" id="41uzL3EMNHJ" role="2iSdaV" />
@@ -485,7 +485,7 @@
             </node>
           </node>
           <node concept="VechU" id="41uzL3EMWH4" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
           <node concept="pkWqt" id="41uzL3EMWJx" role="pqm2j">
             <node concept="3clFbS" id="41uzL3EMWJy" role="2VODD2">

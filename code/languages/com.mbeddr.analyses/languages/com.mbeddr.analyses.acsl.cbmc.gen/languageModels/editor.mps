@@ -2,7 +2,7 @@
 <model ref="r:3a6613fd-81c9-4043-9ffa-56f3076bbe59(com.mbeddr.analyses.acsl.cbmc.gen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -78,7 +78,7 @@
         <property role="3F0ifm" value="generate assumptions from 'requires'" />
         <ref role="1ERwB7" node="5iBCJz7sLQ5" resolve="deleteGenerateAssumptions" />
         <node concept="Veino" id="10dmWHgzfHw" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="2SsqMj" id="10dmWHgx9Wg" role="3EZMnx" />
@@ -95,7 +95,7 @@
     <property role="TrG5h" value="deleteGenerateAssumptions" />
     <ref role="1h_SK9" to="b239:10dmWHgx9Od" resolve="GenerateRequiresAsAssumptions" />
     <node concept="1hA7zw" id="5iBCJz7sLQ6" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="5iBCJz7sLQ7" role="1hA7z_">
         <node concept="3clFbS" id="5iBCJz7sLQ8" role="2VODD2">
           <node concept="3clFbF" id="5iBCJz7sLQe" role="3cqZAp">

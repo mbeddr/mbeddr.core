@@ -2,8 +2,8 @@
 <model ref="r:56afd84b-493d-4061-9ee5-c2552c2737e1(com.mbeddr.analyses.cbmc.testsgen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
@@ -259,7 +259,7 @@
           <property role="3F0ifm" value="coverage criteria:" />
         </node>
         <node concept="3F0A7n" id="1UHnSpzBiFB" role="3EZMnx">
-          <ref role="1NtTu8" to="iq83:67iKQ7ohdEj" resolve="coverageCriterion" />
+          <ref role="1NtTu8" to="iq83:61XOOojFZOm" resolve="coverageCriterion" />
         </node>
         <node concept="l2Vlx" id="1UHnSpzBiFC" role="2iSdaV" />
       </node>
@@ -321,7 +321,7 @@
     <node concept="3F0ifn" id="awtkG0g$mr" role="2wV5jI">
       <property role="3F0ifm" value="UNSPECIFIED" />
       <node concept="Vb9p2" id="awtkG0heQz" role="3F10Kt">
-        <property role="Vbekb" value="BOLD_ITALIC" />
+        <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
       </node>
     </node>
   </node>
