@@ -2,7 +2,6 @@
 <model ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:3c883a7b-279a-47f7-887b-386365a6772c(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
