@@ -148,7 +148,6 @@
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
       <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO">
-        <property id="4791118330015841686" name="strategy" index="3r2okE" />
         <property id="4791118330015767240" name="enforceGloballyUniqueNamesForLibraries" index="3r3E9O" />
       </concept>
     </language>
@@ -177,7 +176,6 @@
       <node concept="2Q9FjX" id="49XubMpimGi" role="2Q9FjI" />
     </node>
     <node concept="MH4UO" id="49XubMpx39u" role="2Q9xDr">
-      <property role="3r2okE" value="0" />
       <property role="3r3E9O" value="true" />
     </node>
     <node concept="2AWWZL" id="4wjSXytPLVP" role="2AWWZH">

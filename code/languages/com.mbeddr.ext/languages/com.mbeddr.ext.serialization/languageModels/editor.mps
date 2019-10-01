@@ -4,8 +4,8 @@
   <languages>
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -264,7 +264,7 @@
     <property role="TrG5h" value="deleteMessage" />
     <ref role="1h_SK9" to="jtc1:3XvCV0KwBKd" resolve="SerialAnnotation" />
     <node concept="1hA7zw" id="3XvCV0KwKbk" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="3XvCV0KwKbl" role="1hA7z_">
         <node concept="3clFbS" id="3XvCV0KwKbm" role="2VODD2">
           <node concept="3clFbF" id="3XvCV0KwKf_" role="3cqZAp">
@@ -676,7 +676,7 @@
               </node>
             </node>
             <node concept="VechU" id="7PpDuQ6G1pu" role="3F10Kt">
-              <property role="Vb096" value="lightGray" />
+              <property role="Vb096" value="fLJRk5A/lightGray" />
             </node>
             <node concept="VPxyj" id="7PpDuQ6G$db" role="3F10Kt">
               <property role="VOm3f" value="false" />
@@ -924,7 +924,7 @@
             </node>
           </node>
           <node concept="VechU" id="2hvQkqcTnaw" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
       </node>
@@ -1076,7 +1076,7 @@
                 <node concept="1OKiuA" id="2mvFNoTuqlM" role="2OqNvi">
                   <node concept="1Q80Hx" id="2mvFNoTuqlT" role="lBI5i" />
                   <node concept="2B6iha" id="2mvFNoTuqlO" role="lGT1i">
-                    <property role="1lyBwo" value="last" />
+                    <property role="1lyBwo" value="1S2pyLby17K/last" />
                   </node>
                   <node concept="3cmrfG" id="2mvFNoTuqlP" role="3dN3m$">
                     <property role="3cmrfH" value="-1" />

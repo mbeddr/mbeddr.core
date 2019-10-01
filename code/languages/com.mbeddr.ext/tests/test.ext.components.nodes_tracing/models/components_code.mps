@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="85e94e86-9fcb-43a2-9083-64c40006219e" name="com.mbeddr.mpsutil.nodes_tracing.test" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
     <devkit ref="b1972fb0-9171-4e58-8cee-05866bb91ec2(de.itemis.mps.editor.diagram.devkit)" />
@@ -547,7 +547,7 @@
                 </node>
               </node>
               <node concept="1xGALR" id="73SKUHFb2Dw" role="lGtFl">
-                <property role="1xEijf" value="2" />
+                <property role="1xEijf" value="7HmzdkqZUwl/2" />
                 <node concept="1xFd8N" id="73SKUHFb6BH" role="1xGcb7">
                   <property role="1xFd8M" value="(*___cid-&gt;r_motor__ops-&gt;move)(10,___cid-&gt;r_motor__ops-&gt;__instance);" />
                 </node>

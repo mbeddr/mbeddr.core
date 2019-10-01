@@ -2,7 +2,7 @@
 <model ref="r:19401f7e-1c25-4f0d-94e2-cc76977ecaba(test.com.mbeddr.mpsutil.ecoreimporter.classMultipleReference)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -49,7 +49,6 @@
     <node concept="1TJgyj" id="7FLq2$JzpfP" role="1TKVEi">
       <property role="IQ2ns" value="8858976468115231733" />
       <property role="20kJfa" value="ref1" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="7FLq2$JzpfI" resolve="testRefClass1" />
     </node>
   </node>
@@ -66,8 +65,8 @@
     <node concept="1TJgyj" id="7FLq2$JzpfO" role="1TKVEi">
       <property role="IQ2ns" value="8858976468115231732" />
       <property role="20kJfa" value="testRef2" />
-      <property role="20lbJX" value="0..n" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="7FLq2$JzpfK" resolve="testRefClass2" />
     </node>
   </node>

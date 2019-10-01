@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -100,11 +101,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -133,6 +131,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -377,13 +383,68 @@
     <node concept="13hLZK" id="3x0R1LJfFda" role="13h7CW">
       <node concept="3clFbS" id="3x0R1LJfFdb" role="2VODD2">
         <node concept="3SKdUt" id="21F0XZSdMgn" role="3cqZAp">
-          <node concept="3SKdUq" id="21F0XZSdMjt" role="3SKWNk">
-            <property role="3SKdUp" value="These defaults are needed, because otherwise being set to false" />
+          <node concept="1PaTwC" id="61XOOojFYCT" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFYCU" role="1PaTwD">
+              <property role="3oM_SC" value="These" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYCV" role="1PaTwD">
+              <property role="3oM_SC" value="defaults" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYCW" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYCX" role="1PaTwD">
+              <property role="3oM_SC" value="needed," />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYCY" role="1PaTwD">
+              <property role="3oM_SC" value="because" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYCZ" role="1PaTwD">
+              <property role="3oM_SC" value="otherwise" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYD0" role="1PaTwD">
+              <property role="3oM_SC" value="being" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYD1" role="1PaTwD">
+              <property role="3oM_SC" value="set" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYD2" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYD3" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="21F0XZSdMkQ" role="3cqZAp">
-          <node concept="3SKdUq" id="21F0XZSdMme" role="3SKWNk">
-            <property role="3SKdUp" value="they result to robustness successful test, which tests nothing!" />
+          <node concept="1PaTwC" id="61XOOojFYD4" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFYD5" role="1PaTwD">
+              <property role="3oM_SC" value="they" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYD6" role="1PaTwD">
+              <property role="3oM_SC" value="result" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYD7" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYD8" role="1PaTwD">
+              <property role="3oM_SC" value="robustness" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYD9" role="1PaTwD">
+              <property role="3oM_SC" value="successful" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYDa" role="1PaTwD">
+              <property role="3oM_SC" value="test," />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYDb" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYDc" role="1PaTwD">
+              <property role="3oM_SC" value="tests" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYDd" role="1PaTwD">
+              <property role="3oM_SC" value="nothing!" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="21F0XZSdGYj" role="3cqZAp">

@@ -84,9 +84,7 @@
       </concept>
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -225,7 +223,7 @@
               <ref role="2pJxaS" to="tp2q:gKA3Dh4" resolve="SequenceType" />
               <node concept="2pIpSj" id="1ywENH5E8RL" role="2pJxcM">
                 <ref role="2pIpSl" to="tp2q:gKA3Ige" resolve="elementType" />
-                <node concept="2pJPED" id="1ywENH5E8RM" role="2pJxcZ">
+                <node concept="2pJPED" id="1ywENH5E8RM" role="28nt2d">
                   <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
                 </node>
               </node>

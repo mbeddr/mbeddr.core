@@ -82,15 +82,15 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
-        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
         <reference id="1176109685394" name="concept" index="3lApI3" />
-      </concept>
-      <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
-        <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -215,12 +215,12 @@
                               <ref role="3cqZAo" node="2lop6rSgaHc" resolve="it" />
                             </node>
                             <node concept="3TrcHB" id="2lop6rSgaH9" role="2OqNvi">
-                              <ref role="3TsBF5" to="3iid:X7OD3WvjpT" resolve="scope" />
+                              <ref role="3TsBF5" to="3iid:17qUVvSZm9k" resolve="scope" />
                             </node>
                           </node>
-                          <node concept="3t7uKx" id="2lop6rSgaHa" role="2OqNvi">
-                            <node concept="uoxfO" id="2lop6rSgaHb" role="3t7uKA">
-                              <ref role="uo_Cq" to="3iid:X7OD3Wvjwr" />
+                          <node concept="21noJN" id="17qUVvSZmXv" role="2OqNvi">
+                            <node concept="21nZrQ" id="17qUVvSZmXw" role="21noJM">
+                              <ref role="21nZrZ" to="3iid:17qUVvSZm66" resolve="application" />
                             </node>
                           </node>
                         </node>
@@ -396,12 +396,12 @@
                               <ref role="3cqZAo" node="2lop6rSgaEx" resolve="it" />
                             </node>
                             <node concept="3TrcHB" id="2lop6rSgaEu" role="2OqNvi">
-                              <ref role="3TsBF5" to="3iid:X7OD3WvjpT" resolve="scope" />
+                              <ref role="3TsBF5" to="3iid:17qUVvSZm9k" resolve="scope" />
                             </node>
                           </node>
-                          <node concept="3t7uKx" id="2lop6rSgaEv" role="2OqNvi">
-                            <node concept="uoxfO" id="2lop6rSgaEw" role="3t7uKA">
-                              <ref role="uo_Cq" to="3iid:X7OD3Wvjw2" />
+                          <node concept="21noJN" id="17qUVvSZmXx" role="2OqNvi">
+                            <node concept="21nZrQ" id="17qUVvSZmXy" role="21noJM">
+                              <ref role="21nZrZ" to="3iid:17qUVvSZm65" resolve="project" />
                             </node>
                           </node>
                         </node>

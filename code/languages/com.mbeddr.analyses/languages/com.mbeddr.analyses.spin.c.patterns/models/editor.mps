@@ -2,15 +2,15 @@
 <model ref="r:e9357dbe-2605-437a-b005-0301667599a9(com.mbeddr.analyses.spin.c.patterns.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="3" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -813,7 +813,7 @@
       <node concept="3F0ifn" id="1GXRyrT9VhR" role="3EZMnx">
         <property role="3F0ifm" value="&lt;&lt;&lt; Expert Mode &gt;&gt;&gt;" />
         <node concept="VechU" id="1GXRyrT9Vi6" role="3F10Kt">
-          <property role="Vb096" value="DARK_GREEN" />
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
       </node>
       <node concept="2SsqMj" id="1GXRyrT9Vi0" role="3EZMnx" />
@@ -829,7 +829,7 @@
         <node concept="3F0ifn" id="6AAaFOTBk1K" role="3EZMnx">
           <property role="3F0ifm" value="&lt;&lt; generate wrappers for SUV " />
           <node concept="30gYXW" id="41w7FscTYSh" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
             <node concept="1iSF2X" id="41w7FscTYSi" role="VblUZ">
               <property role="1iTho6" value="D3D3D3" />
             </node>
@@ -838,7 +838,7 @@
         <node concept="3F2HdR" id="7zkyYZXYFz$" role="3EZMnx">
           <ref role="1NtTu8" to="llb3:41w7Fsd1hl3" resolve="suv" />
           <node concept="30gYXW" id="7zkyYZXYFz_" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
             <node concept="1iSF2X" id="7zkyYZXYFzA" role="VblUZ">
               <property role="1iTho6" value="D3D3D3" />
             </node>
@@ -851,7 +851,7 @@
         <node concept="3F0ifn" id="bnk1SThRvB" role="3EZMnx">
           <property role="3F0ifm" value=" &gt;&gt;" />
           <node concept="30gYXW" id="41w7FscTYS9" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
             <node concept="1iSF2X" id="41w7FscTYSa" role="VblUZ">
               <property role="1iTho6" value="D3D3D3" />
             </node>
@@ -869,7 +869,7 @@
         <node concept="3F0ifn" id="41w7Fsd1hng" role="3EZMnx">
           <property role="3F0ifm" value="&lt;&lt; " />
           <node concept="30gYXW" id="7zkyYZXTGJ2" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
             <node concept="1iSF2X" id="7zkyYZXTGJ3" role="VblUZ">
               <property role="1iTho6" value="D3D3D3" />
             </node>
@@ -878,7 +878,7 @@
         <node concept="3F1sOY" id="bnk1SThRvt" role="3EZMnx">
           <ref role="1NtTu8" to="llb3:bnk1SThRv6" resolve="tracesHandler" />
           <node concept="30gYXW" id="41w7FscTYSp" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
             <node concept="1iSF2X" id="41w7FscTYSq" role="VblUZ">
               <property role="1iTho6" value="D3D3D3" />
             </node>
@@ -887,7 +887,7 @@
         <node concept="3F0ifn" id="7zkyYZXTGJg" role="3EZMnx">
           <property role="3F0ifm" value=" &gt;&gt;" />
           <node concept="30gYXW" id="7zkyYZXTGJr" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
             <node concept="1iSF2X" id="7zkyYZXTGJs" role="VblUZ">
               <property role="1iTho6" value="D3D3D3" />
             </node>

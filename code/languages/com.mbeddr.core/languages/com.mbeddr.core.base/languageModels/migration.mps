@@ -2,9 +2,9 @@
 <model ref="r:08408afe-adba-43cf-b2b1-96ecf6380bb8(com.mbeddr.core.base.migration)">
   <persistence version="9" />
   <languages>
-    <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="1" />
+    <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="2" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
-    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="1" />
+    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="2" />
     <use id="9882f4ad-1955-46fe-8269-94189e5dbbf2" name="jetbrains.mps.lang.migration.util" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -116,9 +116,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -527,7 +525,7 @@
                                 <ref role="2pJxaS" to="bdcd:7U3Fobb_8El" resolve="SuppressWarnings" />
                                 <node concept="2pIpSj" id="4uK_SszeeGp" role="2pJxcM">
                                   <ref role="2pIpSl" to="bdcd:7U3Fobb_8Em" resolve="kinds" />
-                                  <node concept="36biLy" id="4uK_SszeeLv" role="2pJxcZ">
+                                  <node concept="36biLy" id="4uK_SszeeLv" role="28nt2d">
                                     <node concept="2OqwBi" id="4uK_SszeeS_" role="36biLW">
                                       <node concept="37vLTw" id="4uK_SszeeOq" role="2Oq$k0">
                                         <ref role="3cqZAo" node="4uK_SszedmI" resolve="sw" />

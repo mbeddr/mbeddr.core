@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="85e94e86-9fcb-43a2-9083-64c40006219e" name="com.mbeddr.mpsutil.nodes_tracing.test" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <devkit ref="bad61089-aa44-4252-8f72-63f3375f5e64(com.mbeddr.math)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -42,7 +42,7 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
+      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
@@ -194,7 +194,7 @@
             </node>
           </node>
           <node concept="1xGALR" id="63QgsF$VMhK" role="lGtFl">
-            <property role="1xEijf" value="2" />
+            <property role="1xEijf" value="7HmzdkqZUwl/2" />
             <node concept="1xFd8N" id="63QgsF$VMhL" role="1xGcb7">
               <property role="1xFd8M" value="double sum = SumTest_blockexpr_func_4();" />
             </node>
@@ -227,7 +227,7 @@
                 <property role="2hmy$m" value="2" />
               </node>
               <node concept="1xGALR" id="63QgsF$VMhW" role="lGtFl">
-                <property role="1xEijf" value="2" />
+                <property role="1xEijf" value="7HmzdkqZUwl/2" />
                 <node concept="1xFd8N" id="63QgsF$VMhX" role="1xGcb7">
                   <property role="1xFd8M" value="sum_a3a0 += (2 * i);" />
                 </node>
@@ -261,7 +261,7 @@
                   <property role="2hmy$m" value="2" />
                 </node>
                 <node concept="1xGALR" id="70fpbbg$Adb" role="lGtFl">
-                  <property role="1xEijf" value="2" />
+                  <property role="1xEijf" value="7HmzdkqZUwl/2" />
                   <node concept="1xFd8N" id="70fpbbg$Asr" role="1xGcb7">
                     <property role="1xFd8M" value="sum_a5a0 += (((1) / (2 * k)));" />
                   </node>
@@ -330,7 +330,7 @@
             </node>
           </node>
           <node concept="1xGALR" id="63QgsF$W0_S" role="lGtFl">
-            <property role="1xEijf" value="2" />
+            <property role="1xEijf" value="7HmzdkqZUwl/2" />
             <node concept="1xFd8N" id="63QgsF$W0_T" role="1xGcb7">
               <property role="1xFd8M" value="double logNumber = (log(4)/log(2));" />
             </node>
@@ -350,7 +350,7 @@
             </node>
           </node>
           <node concept="1xGALR" id="63QgsF$W0A0" role="lGtFl">
-            <property role="1xEijf" value="2" />
+            <property role="1xEijf" value="7HmzdkqZUwl/2" />
             <node concept="1xFd8N" id="63QgsF$W0A1" role="1xGcb7">
               <property role="1xFd8M" value="double sqrt = sqrt(4);" />
             </node>
@@ -396,7 +396,7 @@
             </node>
           </node>
           <node concept="1xGALR" id="63QgsF$W_Zt" role="lGtFl">
-            <property role="1xEijf" value="2" />
+            <property role="1xEijf" value="7HmzdkqZUwl/2" />
             <node concept="1xFd8N" id="63QgsF$W_ZJ" role="1xGcb7">
               <property role="1xFd8M" value="double product = ProductTest_blockexpr_func_4();" />
             </node>
@@ -424,7 +424,7 @@
               <ref role="39zGOu" node="63QgsF$W_Y2" resolve="i" />
             </node>
             <node concept="1xGALR" id="63QgsF$WC84" role="lGtFl">
-              <property role="1xEijf" value="2" />
+              <property role="1xEijf" value="7HmzdkqZUwl/2" />
               <node concept="1xFd8N" id="63QgsF$WUb_" role="1xGcb7">
                 <property role="1xFd8M" value="int32_t product_a2a0 = 1;" />
               </node>
@@ -458,7 +458,7 @@
                 <ref role="39zGOu" node="63QgsF$WBYB" resolve="i" />
               </node>
               <node concept="1xGALR" id="63QgsF$WXAz" role="lGtFl">
-                <property role="1xEijf" value="2" />
+                <property role="1xEijf" value="7HmzdkqZUwl/2" />
                 <node concept="1xFd8N" id="63QgsF$WZxw" role="1xGcb7">
                   <property role="1xFd8M" value="product_a4a0 *= (i + 2);" />
                 </node>
@@ -503,7 +503,7 @@
             </node>
           </node>
           <node concept="1xGALR" id="63QgsF$VNjF" role="lGtFl">
-            <property role="1xEijf" value="2" />
+            <property role="1xEijf" value="7HmzdkqZUwl/2" />
             <node concept="1xFd8N" id="63QgsF$VNjG" role="1xGcb7">
               <property role="1xFd8M" value="double exponential = pow(4, pow(2, 3));" />
             </node>
@@ -546,7 +546,7 @@
             </node>
           </node>
           <node concept="1xGALR" id="D5rWzbJmST" role="lGtFl">
-            <property role="1xEijf" value="2" />
+            <property role="1xEijf" value="7HmzdkqZUwl/2" />
             <node concept="1xFd8N" id="D5rWzbJmSU" role="1xGcb7">
               <property role="1xFd8M" value="fract = abs(3);" />
             </node>
@@ -568,7 +568,7 @@
             </node>
           </node>
           <node concept="1xGALR" id="63QgsF$W2kP" role="lGtFl">
-            <property role="1xEijf" value="2" />
+            <property role="1xEijf" value="7HmzdkqZUwl/2" />
             <node concept="1xFd8N" id="63QgsF$W2qA" role="1xGcb7">
               <property role="1xFd8M" value="fract = ((7) / (3));" />
             </node>

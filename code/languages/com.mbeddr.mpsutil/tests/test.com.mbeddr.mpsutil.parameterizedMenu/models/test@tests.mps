@@ -2,11 +2,11 @@
 <model ref="r:6299b318-ce6d-4990-8944-5f6743bd3ab4(test.com.mbeddr.mpsutil.parameterizedMenu.test@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="b1c7d06f-525d-43b5-9b0a-2fc8f7f076ba" name="jetbrains.mps.editor.contextActionsTool.lang.menus" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="3a48930f-3451-44fd-9b09-4e7ef448f2bb" name="com.mbeddr.mpsutil.parameterizedMenu" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
@@ -39,8 +39,8 @@
         <child id="1101347953350127927" name="actionReference" index="3iKnsn" />
       </concept>
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
-        <child id="1229187676388" name="nodeToEdit" index="LiRBU" />
-        <child id="1229187707859" name="result" index="LiZbd" />
+        <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
+        <child id="3143335925185262981" name="testNodeResult" index="25YQFr" />
         <child id="1229187755283" name="code" index="LjaKd" />
       </concept>
       <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
@@ -165,7 +165,7 @@
     </language>
     <language id="3a48930f-3451-44fd-9b09-4e7ef448f2bb" name="com.mbeddr.mpsutil.parameterizedMenu">
       <concept id="6447535233437925591" name="com.mbeddr.mpsutil.parameterizedMenu.structure.TransformationMenuPart_ParameterizableSubMenu" flags="ng" index="SA3ZP" />
-      <concept id="6447535233477338909" name="com.mbeddr.mpsutil.parameterizedMenu.structure.QueryFunction_TransformationMenu_ParameterizableParameter" flags="ng" index="XglwZ" />
+      <concept id="6447535233477338909" name="com.mbeddr.mpsutil.parameterizedMenu.structure.QueryFunction_TransformationMenu_ParameterizableParameter" flags="ig" index="XglwZ" />
       <concept id="6447535233477338386" name="com.mbeddr.mpsutil.parameterizedMenu.structure.TransformationMenuPart_ParameterizableParameterized" flags="ng" index="XglCK" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -367,38 +367,6 @@
   </node>
   <node concept="LiM7Y" id="4l0F8G24H2f">
     <property role="TrG5h" value="addParameterizedWithSubMenu" />
-    <node concept="1Qtc8_" id="4l0F8G24H2g" role="LiRBU">
-      <node concept="2j_NTm" id="4l0F8G24H2j" role="1Qtc8$" />
-      <node concept="LIFWc" id="4l0F8G24H2m" role="lGtFl">
-        <property role="ZRATv" value="true" />
-        <property role="OXtK3" value="true" />
-        <property role="p6zMq" value="0" />
-        <property role="p6zMs" value="0" />
-        <property role="LIFWd" value="empty_parts" />
-      </node>
-    </node>
-    <node concept="1Qtc8_" id="4l0F8G24H2p" role="LiZbd">
-      <node concept="2j_NTm" id="4l0F8G24H2q" role="1Qtc8$" />
-      <node concept="1GhOrh" id="4l0F8G24I42" role="1Qtc8A">
-        <node concept="1GhMSn" id="4l0F8G24I43" role="1GhOrs">
-          <node concept="3clFbS" id="4l0F8G24I44" role="2VODD2" />
-        </node>
-        <node concept="17QB3L" id="4l0F8G24IbR" role="2ZBHrp" />
-        <node concept="SA3ZP" id="lb9twM5nc0" role="1GhOri">
-          <node concept="293xgL" id="lb9twM5nc2" role="1hCDOS">
-            <node concept="3clFbS" id="lb9twM5nc4" role="2VODD2">
-              <node concept="LIFWc" id="lb9twM5nF6" role="lGtFl">
-                <property role="ZRATv" value="true" />
-                <property role="OXtK3" value="true" />
-                <property role="p6zMq" value="0" />
-                <property role="p6zMs" value="0" />
-                <property role="LIFWd" value="Constant_u338ov_a0a" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3clFbS" id="4l0F8G24HhN" role="LjaKd">
       <node concept="2HxZob" id="lb9twM42bg" role="3cqZAp">
         <node concept="1iFQzN" id="lb9twM42iG" role="3iKnsn">
@@ -552,58 +520,45 @@
       <node concept="3clFbH" id="lb9twM4ZEa" role="3cqZAp" />
       <node concept="3clFbH" id="4l0F8G24Ika" role="3cqZAp" />
     </node>
-  </node>
-  <node concept="LiM7Y" id="lb9twM60B8">
-    <property role="TrG5h" value="substituteSubmenuWithParameterizedSubmenu" />
-    <node concept="1GhOrh" id="lb9twM65KU" role="LiRBU">
-      <node concept="1vlq3a" id="lb9twM60B9" role="1GhOri">
-        <node concept="293xgL" id="lb9twM60Bc" role="1hCDOS">
-          <node concept="3clFbS" id="lb9twM60Bd" role="2VODD2">
-            <node concept="3clFbF" id="lb9twM60NJ" role="3cqZAp">
-              <node concept="Xl_RD" id="lb9twM60NI" role="3clFbG">
-                <property role="Xl_RC" value="Menu Title" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="IWgqT" id="lb9twM62xE" role="1vlqcB">
-          <node concept="1hCUdq" id="lb9twM62xF" role="1hCUd6">
-            <node concept="3clFbS" id="lb9twM62xG" role="2VODD2">
-              <node concept="3clFbF" id="lb9twM62N3" role="3cqZAp">
-                <node concept="Xl_RD" id="lb9twM62N2" role="3clFbG">
-                  <property role="Xl_RC" value="Action 1" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="IWg2L" id="lb9twM62xH" role="IWgqQ">
-            <node concept="3clFbS" id="lb9twM62xI" role="2VODD2" />
-          </node>
-        </node>
-        <node concept="LIFWc" id="lb9twM7XdQ" role="lGtFl">
-          <property role="LIFWa" value="1" />
+    <node concept="1qefOq" id="17qUVvSZniQ" role="25YQCW">
+      <node concept="1Qtc8_" id="4l0F8G24H2g" role="1qenE9">
+        <node concept="2j_NTm" id="4l0F8G24H2j" role="1Qtc8$" />
+        <node concept="LIFWc" id="4l0F8G24H2m" role="lGtFl">
+          <property role="ZRATv" value="true" />
           <property role="OXtK3" value="true" />
-          <property role="p6zMq" value="1" />
-          <property role="p6zMs" value="1" />
-          <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="empty_parts" />
         </node>
       </node>
-      <node concept="17QB3L" id="lb9twM66__" role="2ZBHrp" />
-      <node concept="1GhMSn" id="lb9twM66Jj" role="1GhOrs">
-        <node concept="3clFbS" id="lb9twM66Jk" role="2VODD2">
-          <node concept="3clFbF" id="lb9twM67co" role="3cqZAp">
-            <node concept="1Ls8ON" id="lb9twM67WI" role="3clFbG">
-              <node concept="Xl_RD" id="lb9twM68IX" role="1Lso8e">
-                <property role="Xl_RC" value="Apple" />
-              </node>
-              <node concept="Xl_RD" id="lb9twM6axI" role="1Lso8e">
-                <property role="Xl_RC" value="Banana" />
+    </node>
+    <node concept="1qefOq" id="17qUVvSZniS" role="25YQFr">
+      <node concept="1Qtc8_" id="4l0F8G24H2p" role="1qenE9">
+        <node concept="2j_NTm" id="4l0F8G24H2q" role="1Qtc8$" />
+        <node concept="1GhOrh" id="4l0F8G24I42" role="1Qtc8A">
+          <node concept="1GhMSn" id="4l0F8G24I43" role="1GhOrs">
+            <node concept="3clFbS" id="4l0F8G24I44" role="2VODD2" />
+          </node>
+          <node concept="17QB3L" id="4l0F8G24IbR" role="2ZBHrp" />
+          <node concept="SA3ZP" id="lb9twM5nc0" role="1GhOri">
+            <node concept="293xgL" id="lb9twM5nc2" role="1hCDOS">
+              <node concept="3clFbS" id="lb9twM5nc4" role="2VODD2">
+                <node concept="LIFWc" id="lb9twM5nF6" role="lGtFl">
+                  <property role="ZRATv" value="true" />
+                  <property role="OXtK3" value="true" />
+                  <property role="p6zMq" value="0" />
+                  <property role="p6zMs" value="0" />
+                  <property role="LIFWd" value="Constant_u338ov_a0a" />
+                </node>
               </node>
             </node>
           </node>
         </node>
       </node>
     </node>
+  </node>
+  <node concept="LiM7Y" id="lb9twM60B8">
+    <property role="TrG5h" value="substituteSubmenuWithParameterizedSubmenu" />
     <node concept="3clFbS" id="lb9twM7JR$" role="LjaKd">
       <node concept="2HxZob" id="lb9twM7JRy" role="3cqZAp">
         <node concept="1iFQzN" id="lb9twM7K6s" role="3iKnsn">
@@ -616,49 +571,102 @@
         </node>
       </node>
     </node>
-    <node concept="1GhOrh" id="lb9twM7WdR" role="LiZbd">
-      <node concept="SA3ZP" id="lb9twMarvo" role="1GhOri">
-        <node concept="IWgqT" id="lb9twMarvA" role="1vlqcB">
-          <node concept="1hCUdq" id="lb9twMarvB" role="1hCUd6">
-            <node concept="3clFbS" id="lb9twMarvC" role="2VODD2">
-              <node concept="3clFbF" id="lb9twMarvD" role="3cqZAp">
-                <node concept="Xl_RD" id="lb9twMarvE" role="3clFbG">
-                  <property role="Xl_RC" value="Action 1" />
+    <node concept="1qefOq" id="17qUVvSZniR" role="25YQCW">
+      <node concept="1GhOrh" id="lb9twM65KU" role="1qenE9">
+        <node concept="1vlq3a" id="lb9twM60B9" role="1GhOri">
+          <node concept="293xgL" id="lb9twM60Bc" role="1hCDOS">
+            <node concept="3clFbS" id="lb9twM60Bd" role="2VODD2">
+              <node concept="3clFbF" id="lb9twM60NJ" role="3cqZAp">
+                <node concept="Xl_RD" id="lb9twM60NI" role="3clFbG">
+                  <property role="Xl_RC" value="Menu Title" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="IWg2L" id="lb9twMarvF" role="IWgqQ">
-            <node concept="3clFbS" id="lb9twMarvG" role="2VODD2" />
+          <node concept="IWgqT" id="lb9twM62xE" role="1vlqcB">
+            <node concept="1hCUdq" id="lb9twM62xF" role="1hCUd6">
+              <node concept="3clFbS" id="lb9twM62xG" role="2VODD2">
+                <node concept="3clFbF" id="lb9twM62N3" role="3cqZAp">
+                  <node concept="Xl_RD" id="lb9twM62N2" role="3clFbG">
+                    <property role="Xl_RC" value="Action 1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="IWg2L" id="lb9twM62xH" role="IWgqQ">
+              <node concept="3clFbS" id="lb9twM62xI" role="2VODD2" />
+            </node>
+          </node>
+          <node concept="LIFWc" id="lb9twM7XdQ" role="lGtFl">
+            <property role="LIFWa" value="1" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="1" />
+            <property role="p6zMs" value="1" />
+            <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
           </node>
         </node>
-        <node concept="293xgL" id="lb9twMarvH" role="1hCDOS">
-          <node concept="3clFbS" id="lb9twMarvI" role="2VODD2">
-            <node concept="3clFbF" id="lb9twMarvJ" role="3cqZAp">
-              <node concept="Xl_RD" id="lb9twMarvK" role="3clFbG">
-                <property role="Xl_RC" value="Menu Title" />
+        <node concept="17QB3L" id="lb9twM66__" role="2ZBHrp" />
+        <node concept="1GhMSn" id="lb9twM66Jj" role="1GhOrs">
+          <node concept="3clFbS" id="lb9twM66Jk" role="2VODD2">
+            <node concept="3clFbF" id="lb9twM67co" role="3cqZAp">
+              <node concept="1Ls8ON" id="lb9twM67WI" role="3clFbG">
+                <node concept="Xl_RD" id="lb9twM68IX" role="1Lso8e">
+                  <property role="Xl_RC" value="Apple" />
+                </node>
+                <node concept="Xl_RD" id="lb9twM6axI" role="1Lso8e">
+                  <property role="Xl_RC" value="Banana" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="LIFWc" id="lb9twMas1K" role="lGtFl">
-          <property role="ZRATv" value="true" />
-          <property role="OXtK3" value="true" />
-          <property role="p6zMq" value="21" />
-          <property role="p6zMs" value="21" />
-          <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
-        </node>
       </node>
-      <node concept="17QB3L" id="lb9twM7We7" role="2ZBHrp" />
-      <node concept="1GhMSn" id="lb9twM7We8" role="1GhOrs">
-        <node concept="3clFbS" id="lb9twM7We9" role="2VODD2">
-          <node concept="3clFbF" id="lb9twM7Wea" role="3cqZAp">
-            <node concept="1Ls8ON" id="lb9twM7Web" role="3clFbG">
-              <node concept="Xl_RD" id="lb9twM7Wec" role="1Lso8e">
-                <property role="Xl_RC" value="Apple" />
+    </node>
+    <node concept="1qefOq" id="17qUVvSZniT" role="25YQFr">
+      <node concept="1GhOrh" id="lb9twM7WdR" role="1qenE9">
+        <node concept="SA3ZP" id="lb9twMarvo" role="1GhOri">
+          <node concept="IWgqT" id="lb9twMarvA" role="1vlqcB">
+            <node concept="1hCUdq" id="lb9twMarvB" role="1hCUd6">
+              <node concept="3clFbS" id="lb9twMarvC" role="2VODD2">
+                <node concept="3clFbF" id="lb9twMarvD" role="3cqZAp">
+                  <node concept="Xl_RD" id="lb9twMarvE" role="3clFbG">
+                    <property role="Xl_RC" value="Action 1" />
+                  </node>
+                </node>
               </node>
-              <node concept="Xl_RD" id="lb9twM7Wed" role="1Lso8e">
-                <property role="Xl_RC" value="Banana" />
+            </node>
+            <node concept="IWg2L" id="lb9twMarvF" role="IWgqQ">
+              <node concept="3clFbS" id="lb9twMarvG" role="2VODD2" />
+            </node>
+          </node>
+          <node concept="293xgL" id="lb9twMarvH" role="1hCDOS">
+            <node concept="3clFbS" id="lb9twMarvI" role="2VODD2">
+              <node concept="3clFbF" id="lb9twMarvJ" role="3cqZAp">
+                <node concept="Xl_RD" id="lb9twMarvK" role="3clFbG">
+                  <property role="Xl_RC" value="Menu Title" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="LIFWc" id="lb9twMas1K" role="lGtFl">
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="21" />
+            <property role="p6zMs" value="21" />
+            <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
+          </node>
+        </node>
+        <node concept="17QB3L" id="lb9twM7We7" role="2ZBHrp" />
+        <node concept="1GhMSn" id="lb9twM7We8" role="1GhOrs">
+          <node concept="3clFbS" id="lb9twM7We9" role="2VODD2">
+            <node concept="3clFbF" id="lb9twM7Wea" role="3cqZAp">
+              <node concept="1Ls8ON" id="lb9twM7Web" role="3clFbG">
+                <node concept="Xl_RD" id="lb9twM7Wec" role="1Lso8e">
+                  <property role="Xl_RC" value="Apple" />
+                </node>
+                <node concept="Xl_RD" id="lb9twM7Wed" role="1Lso8e">
+                  <property role="Xl_RC" value="Banana" />
+                </node>
               </node>
             </node>
           </node>

@@ -55,9 +55,8 @@
     <property role="EcuMT" value="5190321398696163768" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4w7It07pbHt" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="editor" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="5190321398696164189" />
       <ref role="20lvS9" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
     </node>
@@ -70,9 +69,9 @@
     <property role="3GE5qa" value="element" />
     <property role="EcuMT" value="5190321398696163767" />
     <node concept="1TJgyj" id="4w7It07pbMt" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="feature" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="5190321398696164509" />
       <ref role="20lvS9" node="4w7It07oHes" resolve="Feature" />
     </node>
@@ -83,9 +82,8 @@
     <property role="EcuMT" value="5190321398696194443" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4w7It07pjcA" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="intention" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="5190321398696194854" />
       <ref role="20lvS9" to="tp3j:hmS6QkF" resolve="IntentionDeclaration" />
     </node>
@@ -124,9 +122,9 @@
     <property role="EcuMT" value="5190321398696039323" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4w7It07pbAN" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="elements" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <property role="IQ2ns" value="5190321398696163763" />
       <ref role="20lvS9" node="4w7It07pbAR" resolve="IGuardedElement" />
     </node>

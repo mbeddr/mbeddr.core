@@ -4,7 +4,7 @@
   <languages>
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -90,9 +90,6 @@
       </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
-      </concept>
-      <concept id="1212056081426" name="jetbrains.mps.lang.typesystem.structure.AbstractInequationStatement" flags="ng" index="Ob1k8">
-        <property id="1212056105818" name="inequationPriority" index="Ob790" />
       </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
@@ -1726,7 +1723,6 @@
         <property role="TrG5h" value="elementType" />
       </node>
       <node concept="1ZoDhX" id="6DFN5BsVqHl" role="3cqZAp">
-        <property role="Ob790" value="0" />
         <property role="3wDh2S" value="false" />
         <node concept="mw_s8" id="hPz4DfY" role="1ZfhKB">
           <node concept="1Z2H0r" id="hPz4ARX" role="mwGJk">

@@ -2,7 +2,7 @@
 <model ref="r:12b70fb1-3152-466e-b80a-86270a0592b7(com.mbeddr.mpsutil.interpreter.test.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -49,7 +49,7 @@
     <property role="TrG5h" value="deleteInterpreterCondition" />
     <ref role="1h_SK9" to="7cx9:2pogikRx2nv" resolve="AbstractInterpreterCondition" />
     <node concept="1hA7zw" id="2pogikRx4gz" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="2pogikRx4g$" role="1hA7z_">
         <node concept="3clFbS" id="2pogikRx4g_" role="2VODD2">
           <node concept="3clFbF" id="2pogikRx4gA" role="3cqZAp">
@@ -66,7 +66,7 @@
     <property role="TrG5h" value="deleteInterpreterEvaluation" />
     <ref role="1h_SK9" to="7cx9:65E6xpGS32M" resolve="AbstractInterpreterEvaluation" />
     <node concept="1hA7zw" id="5Yf_R4Bt0sJ" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="5Yf_R4Bt0sK" role="1hA7z_">
         <node concept="3clFbS" id="5Yf_R4Bt0sL" role="2VODD2">
           <node concept="3clFbF" id="5Yf_R4Bt0sQ" role="3cqZAp">

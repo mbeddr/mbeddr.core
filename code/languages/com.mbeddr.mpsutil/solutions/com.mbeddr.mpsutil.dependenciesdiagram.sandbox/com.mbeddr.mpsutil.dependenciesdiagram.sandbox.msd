@@ -9,7 +9,7 @@
   <languageVersions>
     <language slang="l:cab214f9-7127-4f03-923a-c64fb67fed05:com.mbeddr.mpsutil.dependenciesdiagram" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:86ef8290-12bb-4ca7-947f-093788f263a9:jetbrains.mps.lang.project" version="0" />
   </languageVersions>
   <dependencyVersions>

@@ -2,7 +2,7 @@
 <model ref="r:efcfb29a-e20b-4200-8c4e-d58bb27558a0(com.mbeddr.mpsutil.nodes_tracing.test.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -60,13 +60,13 @@
         <node concept="3F0ifn" id="7HmzdkqT$PQ" role="3EZMnx">
           <property role="3F0ifm" value="file name:" />
           <node concept="30gYXW" id="7HmzdkqZKzu" role="3F10Kt">
-            <property role="Vb096" value="yellow" />
+            <property role="Vb096" value="fLwANPq/yellow" />
           </node>
         </node>
         <node concept="3F0A7n" id="7HmzdkqT$Q9" role="3EZMnx">
           <ref role="1NtTu8" to="ls3:7HmzdkqTyFd" resolve="fileName" />
           <node concept="30gYXW" id="7HmzdkqZKzx" role="3F10Kt">
-            <property role="Vb096" value="yellow" />
+            <property role="Vb096" value="fLwANPq/yellow" />
           </node>
         </node>
       </node>
@@ -85,14 +85,14 @@
           <node concept="3F0ifn" id="7HmzdkqT$Rt" role="3EZMnx">
             <property role="3F0ifm" value="-&gt;" />
             <node concept="30gYXW" id="7HmzdkqZKzF" role="3F10Kt">
-              <property role="Vb096" value="yellow" />
+              <property role="Vb096" value="fLwANPq/yellow" />
             </node>
           </node>
           <node concept="3F1sOY" id="7HmzdkqT$Sl" role="3EZMnx">
             <ref role="1NtTu8" to="ls3:7HmzdkqT$Si" resolve="tacingInfo" />
           </node>
           <node concept="Veino" id="7HmzdkqZQdc" role="3F10Kt">
-            <property role="Vb096" value="yellow" />
+            <property role="Vb096" value="fLwANPq/yellow" />
           </node>
           <node concept="3F0ifn" id="7HmzdkqZUwG" role="3EZMnx">
             <property role="3F0ifm" value="(" />
@@ -101,12 +101,12 @@
             </node>
           </node>
           <node concept="3F0A7n" id="7HmzdkqZUx1" role="3EZMnx">
-            <ref role="1NtTu8" to="ls3:7HmzdkqZUwq" resolve="precision" />
+            <ref role="1NtTu8" to="ls3:17qUVvSZm9i" resolve="precision" />
             <node concept="Vb9p2" id="7HmzdkqZWqH" role="3F10Kt">
-              <property role="Vbekb" value="BOLD" />
+              <property role="Vbekb" value="g1_k_vY/BOLD" />
             </node>
             <node concept="VechU" id="7HmzdkqZYT6" role="3F10Kt">
-              <property role="Vb096" value="magenta" />
+              <property role="Vb096" value="fLwANPs/magenta" />
             </node>
           </node>
           <node concept="3F0ifn" id="7HmzdkqZWqq" role="3EZMnx">
@@ -117,7 +117,7 @@
           </node>
         </node>
         <node concept="Veino" id="7HmzdkqZKzI" role="3F10Kt">
-          <property role="Vb096" value="LIGHT_BLUE" />
+          <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
       </node>
       <node concept="2iRkQZ" id="7HmzdkqT$QQ" role="2iSdaV" />
@@ -177,7 +177,7 @@
       <node concept="3F0ifn" id="7HmzdkqY_VP" role="3EZMnx">
         <property role="3F0ifm" value="string:" />
         <node concept="30gYXW" id="7HmzdkqZPt0" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="3F0ifn" id="7HmzdkqZXey" role="3EZMnx">
@@ -189,7 +189,7 @@
       <node concept="3F0A7n" id="7HmzdkqY_VQ" role="3EZMnx">
         <ref role="1NtTu8" to="ls3:7HmzdkqY_VB" resolve="lineAsString" />
         <node concept="30gYXW" id="7HmzdkqZPt4" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="3F0ifn" id="7HmzdkqZXeV" role="3EZMnx">

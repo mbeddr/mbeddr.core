@@ -2,7 +2,8 @@
 <model ref="r:8eb3f548-a86c-47df-8e7e-c1b50200de75(com.mbeddr.mpsutil.editingGuide.sandbox.demo)">
   <persistence version="9" />
   <languages>
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="3" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="1ca21c70-6e61-4b62-8771-dfd96620ef7c(com.mbeddr.mpsutil.guides)" />
   </languages>
   <imports>
@@ -89,11 +90,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -110,7 +108,7 @@
       <concept id="3453511597021550269" name="com.mbeddr.mpsutil.editingGuide.structure.CodeWord" flags="ng" index="JL00X">
         <property id="3453511597021550288" name="text" index="JL01g" />
       </concept>
-      <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ng" index="2LPuA2" />
+      <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ig" index="2LPuA2" />
       <concept id="3909459679554886014" name="com.mbeddr.mpsutil.editingGuide.structure.Exercise" flags="ng" index="2LPuAz">
         <child id="3909459679554886019" name="description" index="2LPu_u" />
         <child id="3909459679554886015" name="tasks" index="2LPuAy" />
@@ -147,6 +145,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -280,8 +286,25 @@
       <node concept="2LPuA2" id="31xWCC4R_0" role="2LPuA6">
         <node concept="3clFbS" id="31xWCC4R_1" role="2VODD2">
           <node concept="3SKdUt" id="31xWCC4RTW" role="3cqZAp">
-            <node concept="3SKdUq" id="31xWCC4RTX" role="3SKWNk">
-              <property role="3SKdUp" value="if selection.getNode == Mul dann gut" />
+            <node concept="1PaTwC" id="17qUVvSZls4" role="3ndbpf">
+              <node concept="3oM_SD" id="17qUVvSZls5" role="1PaTwD">
+                <property role="3oM_SC" value="if" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZls6" role="1PaTwD">
+                <property role="3oM_SC" value="selection.getNode" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZls7" role="1PaTwD">
+                <property role="3oM_SC" value="==" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZls8" role="1PaTwD">
+                <property role="3oM_SC" value="Mul" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZls9" role="1PaTwD">
+                <property role="3oM_SC" value="dann" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZlsa" role="1PaTwD">
+                <property role="3oM_SC" value="gut" />
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="4TMjSvbGPT$" role="3cqZAp">

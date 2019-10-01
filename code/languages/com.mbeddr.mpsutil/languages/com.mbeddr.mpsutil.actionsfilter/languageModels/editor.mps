@@ -5,7 +5,7 @@
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -369,7 +369,7 @@
         <node concept="3F0ifn" id="5ReuVUpcYAv" role="3EZMnx">
           <property role="3F0ifm" value="specify actions to remove" />
           <node concept="VechU" id="5ReuVUpd2Eg" role="3F10Kt">
-            <property role="Vb096" value="DARK_BLUE" />
+            <property role="Vb096" value="g1_eI4o/darkBlue" />
           </node>
           <node concept="pkWqt" id="5ReuVUpd0nR" role="pqm2j">
             <node concept="3clFbS" id="5ReuVUpd0nS" role="2VODD2">
@@ -387,7 +387,7 @@
         <node concept="3F0ifn" id="5ReuVUpcYMg" role="3EZMnx">
           <property role="3F0ifm" value="specify actions to allow" />
           <node concept="VechU" id="5ReuVUpd2Sd" role="3F10Kt">
-            <property role="Vb096" value="DARK_BLUE" />
+            <property role="Vb096" value="g1_eI4o/darkBlue" />
           </node>
           <node concept="pkWqt" id="5ReuVUpcYMm" role="pqm2j">
             <node concept="3clFbS" id="5ReuVUpcYMn" role="2VODD2">
@@ -445,17 +445,17 @@
         <node concept="3F0ifn" id="7I52n9WCCwe" role="3EZMnx">
           <property role="3F0ifm" value="specify toolbar" />
           <node concept="VechU" id="7I52n9WCCwf" role="3F10Kt">
-            <property role="Vb096" value="DARK_BLUE" />
+            <property role="Vb096" value="g1_eI4o/darkBlue" />
           </node>
         </node>
         <node concept="3F0ifn" id="6hyuZyX9wzG" role="3EZMnx" />
         <node concept="3F0ifn" id="7I52n9WCDhs" role="3EZMnx">
           <property role="3F0ifm" value="Make sure actions from the toolbar aren't filtered elsewhere otherwise runtime problems may appear" />
           <node concept="Veino" id="7I52n9WCDYl" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
           </node>
           <node concept="30gYXW" id="6hyuZyX9xgE" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
           </node>
         </node>
         <node concept="2iRfu4" id="7I52n9WCCwg" role="2iSdaV" />
@@ -1819,7 +1819,7 @@
         <ref role="1NtTu8" to="au0v:5FJiYrlIpAw" resolve="actionId" />
         <node concept="OXEIz" id="7LkwBl9EfxH" role="P5bDN">
           <node concept="1ou48o" id="7LkwBl9F3YH" role="OY2wv">
-            <property role="1ezIyd" value="custom" />
+            <property role="1ezIyd" value="gWZP3tU/custom_" />
             <node concept="1ouSdP" id="7LkwBl9F3YJ" role="1ou48m">
               <node concept="3clFbS" id="7LkwBl9F3YL" role="2VODD2">
                 <node concept="3clFbF" id="7LkwBl9GFoc" role="3cqZAp">
@@ -1949,7 +1949,7 @@
         <ref role="1NtTu8" to="au0v:5ReuVUpc9R6" resolve="actionId" />
         <node concept="OXEIz" id="5ReuVUpcab4" role="P5bDN">
           <node concept="1ou48o" id="5ReuVUpcab5" role="OY2wv">
-            <property role="1ezIyd" value="custom" />
+            <property role="1ezIyd" value="gWZP3tU/custom_" />
             <node concept="1ouSdP" id="5ReuVUpcab6" role="1ou48m">
               <node concept="3clFbS" id="5ReuVUpcab7" role="2VODD2">
                 <node concept="3clFbF" id="5ReuVUpcab8" role="3cqZAp">
@@ -2088,7 +2088,7 @@
         <ref role="1NtTu8" to="au0v:6nrtUqYfdz4" resolve="actionID" />
         <node concept="OXEIz" id="6nrtUqYnbEz" role="P5bDN">
           <node concept="1ou48o" id="6nrtUqYnbEA" role="OY2wv">
-            <property role="1ezIyd" value="custom" />
+            <property role="1ezIyd" value="gWZP3tU/custom_" />
             <node concept="1ouSdP" id="6nrtUqYnbEB" role="1ou48m">
               <node concept="3clFbS" id="6nrtUqYnbEC" role="2VODD2">
                 <node concept="3clFbF" id="6nrtUqYnbED" role="3cqZAp">

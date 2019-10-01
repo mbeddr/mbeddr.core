@@ -2,9 +2,10 @@
 <model ref="r:e5112c1a-86c5-4178-8db2-7e1be9fc4f78(com.mbeddr.spreadsheat.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -134,11 +135,8 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
@@ -191,17 +189,13 @@
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
+      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
+        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1240930118027" name="jetbrains.mps.lang.smodel.structure.SEnumOperationInvocation" flags="nn" index="3HcIyF">
-        <reference id="1240930118028" name="enumDeclaration" index="3HcIyG" />
-        <child id="1240930317927" name="operation" index="3Hdvt7" />
-      </concept>
-      <concept id="1240930444945" name="jetbrains.mps.lang.smodel.structure.SEnum_MemberOperation" flags="ng" index="3HdYuL">
-        <reference id="1240930444946" name="member" index="3HdYuM" />
-      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -215,10 +209,21 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
+        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -261,7 +266,7 @@
   </node>
   <node concept="1pmfR0" id="1LnB5xdv3Ch">
     <property role="TrG5h" value="transformToExcelWorkbooks" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <node concept="1pplIY" id="1LnB5xdv3Ci" role="1pqMTA">
       <node concept="3clFbS" id="1LnB5xdv3Cj" role="2VODD2">
         <node concept="3cpWs8" id="6qrqamS13R5" role="3cqZAp">
@@ -966,10 +971,12 @@
                                 </node>
                               </node>
                               <node concept="3clFbC" id="1LnB5xdvCmX" role="3clFbw">
-                                <node concept="3HcIyF" id="1LnB5xdvCn0" role="3uHU7w">
-                                  <ref role="3HcIyG" to="gnwj:1LnB5xdvCkI" resolve="TextCellType" />
-                                  <node concept="3HdYuL" id="1LnB5xdvCn2" role="3Hdvt7">
-                                    <ref role="3HdYuM" to="gnwj:1LnB5xdvCkL" />
+                                <node concept="2OqwBi" id="6JXsDxqZXD9" role="3uHU7w">
+                                  <node concept="1XH99k" id="6JXsDxqZXDa" role="2Oq$k0">
+                                    <ref role="1XH99l" to="gnwj:6JXsDxqZWr1" resolve="TextCellType" />
+                                  </node>
+                                  <node concept="2ViDtV" id="6JXsDxqZXDb" role="2OqNvi">
+                                    <ref role="2ViDtZ" to="gnwj:6JXsDxqZWr5" resolve="STRING" />
                                   </node>
                                 </node>
                                 <node concept="2OqwBi" id="1LnB5xdvClU" role="3uHU7B">
@@ -1008,10 +1015,12 @@
                                 </node>
                               </node>
                               <node concept="3clFbC" id="1LnB5xdvCnI" role="3clFbw">
-                                <node concept="3HcIyF" id="1LnB5xdvCnJ" role="3uHU7w">
-                                  <ref role="3HcIyG" to="gnwj:1LnB5xdvCkI" resolve="TextCellType" />
-                                  <node concept="3HdYuL" id="1LnB5xdvCnK" role="3Hdvt7">
-                                    <ref role="3HdYuM" to="gnwj:1LnB5xdvCkK" />
+                                <node concept="2OqwBi" id="6JXsDxqZXDc" role="3uHU7w">
+                                  <node concept="1XH99k" id="6JXsDxqZXDd" role="2Oq$k0">
+                                    <ref role="1XH99l" to="gnwj:6JXsDxqZWr1" resolve="TextCellType" />
+                                  </node>
+                                  <node concept="2ViDtV" id="6JXsDxqZXDe" role="2OqNvi">
+                                    <ref role="2ViDtZ" to="gnwj:6JXsDxqZWr4" resolve="NUMBER" />
                                   </node>
                                 </node>
                                 <node concept="2OqwBi" id="1LnB5xdvCnL" role="3uHU7B">
@@ -1050,10 +1059,12 @@
                                 </node>
                               </node>
                               <node concept="3clFbC" id="1LnB5xdvCog" role="3clFbw">
-                                <node concept="3HcIyF" id="1LnB5xdvCoh" role="3uHU7w">
-                                  <ref role="3HcIyG" to="gnwj:1LnB5xdvCkI" resolve="TextCellType" />
-                                  <node concept="3HdYuL" id="1LnB5xdvCoi" role="3Hdvt7">
-                                    <ref role="3HdYuM" to="gnwj:1LnB5xdvCkJ" />
+                                <node concept="2OqwBi" id="6JXsDxqZXDf" role="3uHU7w">
+                                  <node concept="1XH99k" id="6JXsDxqZXDg" role="2Oq$k0">
+                                    <ref role="1XH99l" to="gnwj:6JXsDxqZWr1" resolve="TextCellType" />
+                                  </node>
+                                  <node concept="2ViDtV" id="6JXsDxqZXDh" role="2OqNvi">
+                                    <ref role="2ViDtZ" to="gnwj:6JXsDxqZWr3" resolve="BOOLEAN" />
                                   </node>
                                 </node>
                                 <node concept="2OqwBi" id="1LnB5xdvCoj" role="3uHU7B">
@@ -1321,8 +1332,37 @@
         </node>
         <node concept="3clFbH" id="6qrqamS1BTp" role="3cqZAp" />
         <node concept="3SKdUt" id="6qrqamS7kNO" role="3cqZAp">
-          <node concept="3SKdUq" id="6qrqamS7kNP" role="3SKWNk">
-            <property role="3SKdUp" value="Stash Excel workbooks generated from underlying model as session object" />
+          <node concept="1PaTwC" id="6JXsDxqZW0O" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxqZW0P" role="1PaTwD">
+              <property role="3oM_SC" value="Stash" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW0Q" role="1PaTwD">
+              <property role="3oM_SC" value="Excel" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW0R" role="1PaTwD">
+              <property role="3oM_SC" value="workbooks" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW0S" role="1PaTwD">
+              <property role="3oM_SC" value="generated" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW0T" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW0U" role="1PaTwD">
+              <property role="3oM_SC" value="underlying" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW0V" role="1PaTwD">
+              <property role="3oM_SC" value="model" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW0W" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW0X" role="1PaTwD">
+              <property role="3oM_SC" value="session" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW0Y" role="1PaTwD">
+              <property role="3oM_SC" value="object" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="6qrqamRZrsV" role="3cqZAp">
@@ -1360,8 +1400,31 @@
         </node>
         <node concept="3clFbH" id="6qrqamS77le" role="3cqZAp" />
         <node concept="3SKdUt" id="6qrqamS7edI" role="3cqZAp">
-          <node concept="3SKdUq" id="6qrqamS7edK" role="3SKWNk">
-            <property role="3SKdUp" value="Unstash Excel workbooks to serialize from session objects" />
+          <node concept="1PaTwC" id="6JXsDxqZW0Z" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxqZW10" role="1PaTwD">
+              <property role="3oM_SC" value="Unstash" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW11" role="1PaTwD">
+              <property role="3oM_SC" value="Excel" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW12" role="1PaTwD">
+              <property role="3oM_SC" value="workbooks" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW13" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW14" role="1PaTwD">
+              <property role="3oM_SC" value="serialize" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW15" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW16" role="1PaTwD">
+              <property role="3oM_SC" value="session" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW17" role="1PaTwD">
+              <property role="3oM_SC" value="objects" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="6qrqamS1F6P" role="3cqZAp">
@@ -1406,8 +1469,16 @@
         </node>
         <node concept="3clFbH" id="6qrqamS7dBS" role="3cqZAp" />
         <node concept="3SKdUt" id="6qrqamS7eU1" role="3cqZAp">
-          <node concept="3SKdUq" id="6qrqamS7eU3" role="3SKWNk">
-            <property role="3SKdUp" value="Compute output directory" />
+          <node concept="1PaTwC" id="6JXsDxqZW18" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxqZW19" role="1PaTwD">
+              <property role="3oM_SC" value="Compute" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW1a" role="1PaTwD">
+              <property role="3oM_SC" value="output" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW1b" role="1PaTwD">
+              <property role="3oM_SC" value="directory" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="6qrqamRS0hW" role="3cqZAp">
@@ -1459,8 +1530,31 @@
         </node>
         <node concept="3clFbH" id="6qrqamRZZRj" role="3cqZAp" />
         <node concept="3SKdUt" id="6qrqamS7fuc" role="3cqZAp">
-          <node concept="3SKdUq" id="6qrqamS7fue" role="3SKWNk">
-            <property role="3SKdUp" value="Serialize every Excel workbook generated from underlying model" />
+          <node concept="1PaTwC" id="6JXsDxqZW1c" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxqZW1d" role="1PaTwD">
+              <property role="3oM_SC" value="Serialize" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW1e" role="1PaTwD">
+              <property role="3oM_SC" value="every" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW1f" role="1PaTwD">
+              <property role="3oM_SC" value="Excel" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW1g" role="1PaTwD">
+              <property role="3oM_SC" value="workbook" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW1h" role="1PaTwD">
+              <property role="3oM_SC" value="generated" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW1i" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW1j" role="1PaTwD">
+              <property role="3oM_SC" value="underlying" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW1k" role="1PaTwD">
+              <property role="3oM_SC" value="model" />
+            </node>
           </node>
         </node>
         <node concept="2Gpval" id="6qrqamRZAwq" role="3cqZAp">

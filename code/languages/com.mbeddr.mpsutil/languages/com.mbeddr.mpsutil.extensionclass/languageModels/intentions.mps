@@ -2,7 +2,7 @@
 <model ref="r:3d5fe22f-32a1-42dd-b820-687fc92a6d5a(com.mbeddr.mpsutil.extensionclass.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -89,9 +89,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -263,7 +261,7 @@
                               <ref role="2pJxaS" to="sh3l:4X7wieqsg3v" resolve="ExtensionClassMethodAnnotation" />
                               <node concept="2pIpSj" id="4X7wieqOgCf" role="2pJxcM">
                                 <ref role="2pIpSl" to="sh3l:4X7wieqsg3V" resolve="method" />
-                                <node concept="36biLy" id="4X7wieqOjWf" role="2pJxcZ">
+                                <node concept="36biLy" id="4X7wieqOjWf" role="28nt2d">
                                   <node concept="37vLTw" id="4X7wieqOkni" role="36biLW">
                                     <ref role="3cqZAo" node="4X7wieqO1_j" resolve="method" />
                                   </node>
@@ -271,7 +269,7 @@
                               </node>
                               <node concept="2pIpSj" id="4X7wieqOsjy" role="2pJxcM">
                                 <ref role="2pIpSl" to="sh3l:4X7wieqsgeg" resolve="parameters" />
-                                <node concept="36biLy" id="4X7wieqOsIL" role="2pJxcZ">
+                                <node concept="36biLy" id="4X7wieqOsIL" role="28nt2d">
                                   <node concept="2OqwBi" id="4X7wieqOVMN" role="36biLW">
                                     <node concept="2OqwBi" id="4X7wieqO_3C" role="2Oq$k0">
                                       <node concept="2OqwBi" id="4X7wieqOv0c" role="2Oq$k0">

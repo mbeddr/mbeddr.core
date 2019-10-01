@@ -2,9 +2,9 @@
 <model ref="r:676e52c4-154a-4223-8306-fb9fbca551af(com.mbeddr.mpsutil.compare.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -250,7 +250,7 @@
             <node concept="1OKiuA" id="5KwXTP_WF7X" role="2OqNvi">
               <node concept="1XNTG" id="5KwXTP_WF8I" role="lBI5i" />
               <node concept="2B6iha" id="5KwXTP_WFiP" role="lGT1i">
-                <property role="1lyBwo" value="firstEditable" />
+                <property role="1lyBwo" value="1S2pyLby17G/firstEditable" />
               </node>
             </node>
           </node>
@@ -377,7 +377,7 @@
             <node concept="1OKiuA" id="5KwXTP_WMYD" role="2OqNvi">
               <node concept="1XNTG" id="5KwXTP_WMYE" role="lBI5i" />
               <node concept="2B6iha" id="5KwXTP_WMYF" role="lGT1i">
-                <property role="1lyBwo" value="firstEditable" />
+                <property role="1lyBwo" value="1S2pyLby17G/firstEditable" />
               </node>
             </node>
           </node>

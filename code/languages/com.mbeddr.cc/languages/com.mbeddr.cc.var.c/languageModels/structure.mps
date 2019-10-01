@@ -45,9 +45,9 @@
     <property role="TrG5h" value="IVariantAware" />
     <property role="EcuMT" value="5959167564566749003" />
     <node concept="1TJgyj" id="5aNdPeN1Y5K" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="conditions" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5959167564566749552" />
       <ref role="20lvS9" to="qdv7:2h6lNbWo01H" resolve="FeatureCondition" />
     </node>
@@ -57,16 +57,16 @@
     <property role="EcuMT" value="5959167564566749004" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyj" id="5aNdPeN2by6" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="baseCase" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="5959167564566804614" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
     <node concept="1TJgyj" id="5aNdPeN2$UH" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="caseTypes" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5959167564566908589" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
@@ -79,16 +79,16 @@
     <property role="EcuMT" value="5959167564566953249" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="5aNdPeN2JOy" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="baseCase" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="5959167564566953250" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="5aNdPeN2JOz" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="caseExpressions" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5959167564566953251" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>

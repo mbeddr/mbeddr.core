@@ -190,3 +190,6 @@ code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.ecoretransofmatio
 .vscode
 /.project
 /.settings/org.eclipse.buildship.core.prefs
+
+/config/
+/system/

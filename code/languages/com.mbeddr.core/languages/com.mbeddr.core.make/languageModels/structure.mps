@@ -16,14 +16,34 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+        <reference id="899069222106091871" name="oldMember" index="2wpffI" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclartaion" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
+        <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
+      </concept>
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <reference id="1083241965437" name="defaultMember" index="Qgau1" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+      <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
+        <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
+        <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
+        <child id="6491077959632451996" name="oldEnum" index="3lCyv" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
         <property id="1192116978809" name="javaIdentifier" index="2fHolG" />
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
@@ -79,9 +99,9 @@
       <property role="1iqoE4" value="${module}/makefile.gif" />
     </node>
     <node concept="1TJgyj" id="6_CUGSFHTH6" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="content" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="7595578942777957190" />
       <ref role="20lvS9" node="6_CUGSFHTGe" resolve="IMakefileContent" />
     </node>
@@ -102,24 +122,24 @@
     <property role="34LRSv" value="tar" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ak6HMA0Exz" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dependencies" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5950410542643587171" />
       <ref role="20lvS9" node="5ak6HMA0Exv" resolve="Dependency" />
     </node>
     <node concept="1TJgyj" id="5ak6HMA0Ex$" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="commands" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5950410542643587172" />
       <ref role="20lvS9" node="5ak6HMA0Exx" resolve="Command" />
     </node>
     <node concept="1TJgyj" id="2b2D8jTPIPW" role="1TKVEi">
       <property role="IQ2ns" value="2504745233805667708" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="conditionalDirectives" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2b2D8jTN4pN" resolve="ConditionalDirective" />
     </node>
     <node concept="1TJgyi" id="5ak6HMA0Exu" role="1TKVEl">
@@ -146,9 +166,9 @@
     <property role="EcuMT" value="5950410542643587169" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2Vizpn2Mx$v" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="items" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <property role="IQ2ns" value="3373914745211590943" />
       <ref role="20lvS9" node="2Vizpn2Mx$w" resolve="CommandItem" />
     </node>
@@ -173,10 +193,17 @@
     <property role="R4oN_" value="a make file variable" />
     <property role="EcuMT" value="3373914745211365206" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6_CUGSFFpZF" role="1TKVEl">
+    <node concept="1TJgyi" id="13p6s1wtfz4" role="1TKVEl">
       <property role="TrG5h" value="assignmentType" />
       <property role="IQ2nx" value="7595578942777303019" />
-      <ref role="AX2Wp" node="6_CUGSFFpW0" resolve="VariableAssignmentType" />
+      <ref role="AX2Wp" node="13p6s1wtcL2" resolve="VariableAssignmentType" />
+      <node concept="3l_iC" id="13p6s1wtfz5" role="lGtFl">
+        <node concept="1TJgyi" id="6_CUGSFFpZF" role="3l_iP">
+          <property role="TrG5h" value="assignmentType" />
+          <property role="IQ2nx" value="7595578942777303019" />
+          <ref role="AX2Wp" node="6_CUGSFFpW0" resolve="VariableAssignmentType" />
+        </node>
+      </node>
     </node>
     <node concept="1TJgyi" id="2Vizpn2LYpC" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -218,9 +245,8 @@
     <property role="EcuMT" value="3373914745211590969" />
     <ref role="1TJDcQ" node="2Vizpn2Mx$w" resolve="CommandItem" />
     <node concept="1TJgyj" id="2Vizpn2Mx$U" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="var" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="3373914745211590970" />
       <ref role="20lvS9" node="2Vizpn2LEtm" resolve="Variable" />
     </node>
@@ -232,9 +258,8 @@
     <property role="EcuMT" value="208195772221022787" />
     <ref role="1TJDcQ" node="2Vizpn2Mx$w" resolve="CommandItem" />
     <node concept="1TJgyj" id="bzEfeAYe94" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="module" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="208195772221022788" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTcX" resolve="Module" />
     </node>
@@ -246,9 +271,8 @@
     <property role="EcuMT" value="208195772221043021" />
     <ref role="1TJDcQ" node="5ak6HMA0Exv" resolve="Dependency" />
     <node concept="1TJgyj" id="bzEfeAYj5B" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="module" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="208195772221043047" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTcX" resolve="Module" />
     </node>
@@ -260,9 +284,8 @@
     <property role="EcuMT" value="745648737914657273" />
     <ref role="1TJDcQ" node="5ak6HMA0Exv" resolve="Dependency" />
     <node concept="1TJgyj" id="Dp4TemBLBU" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="745648737914657274" />
       <ref role="20lvS9" node="5ak6HMA0Ext" resolve="Target" />
     </node>
@@ -347,33 +370,6 @@
       <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
     </node>
   </node>
-  <node concept="AxPO7" id="6_CUGSFFpW0">
-    <property role="3GE5qa" value="var" />
-    <property role="TrG5h" value="VariableAssignmentType" />
-    <property role="3lZH7k" value="custom" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <ref role="Qgau1" node="6_CUGSFFpW1" />
-    <node concept="M4N5e" id="6_CUGSFFpW1" role="M5hS2">
-      <property role="1uS6qo" value="=" />
-      <property role="1uS6qv" value="=" />
-      <property role="2fHolG" value="assign" />
-    </node>
-    <node concept="M4N5e" id="6_CUGSFFpWI" role="M5hS2">
-      <property role="1uS6qo" value=":=" />
-      <property role="1uS6qv" value=":=" />
-      <property role="2fHolG" value="expand" />
-    </node>
-    <node concept="M4N5e" id="6_CUGSFFpYb" role="M5hS2">
-      <property role="1uS6qo" value="?=" />
-      <property role="1uS6qv" value="?=" />
-      <property role="2fHolG" value="conditional" />
-    </node>
-    <node concept="M4N5e" id="2sFzOapsDlr" role="M5hS2">
-      <property role="1uS6qo" value="+=" />
-      <property role="1uS6qv" value="+=" />
-      <property role="2fHolG" value="append" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="6_CUGSFHTGe">
     <property role="TrG5h" value="IMakefileContent" />
     <property role="EcuMT" value="7595578942777957134" />
@@ -390,16 +386,16 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyj" id="6_CUGSFJ0IW" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="targets" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="7595578942778248124" />
       <ref role="20lvS9" node="5ak6HMA0Ext" resolve="Target" />
     </node>
     <node concept="1TJgyj" id="4T_y5Me_pOo" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="commands" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5649071238716693784" />
       <ref role="20lvS9" node="5ak6HMA0Exx" resolve="Command" />
     </node>
@@ -442,16 +438,16 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyj" id="2b2D8jTSuZq" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="contentIfTrue" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="2504745233806389210" />
       <ref role="20lvS9" node="6_CUGSFHTGe" resolve="IMakefileContent" />
     </node>
     <node concept="1TJgyj" id="2b2D8jTSuYE" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="contentIfFalse" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="2504745233806389162" />
       <ref role="20lvS9" node="6_CUGSFHTGe" resolve="IMakefileContent" />
     </node>
@@ -480,6 +476,68 @@
       <property role="IQ2nx" value="300691836431621909" />
       <property role="TrG5h" value="path" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="25R3W" id="13p6s1wtcL2">
+    <property role="TrG5h" value="VariableAssignmentType" />
+    <property role="3GE5qa" value="var" />
+    <property role="3F6X1D" value="7595578942777302784" />
+    <ref role="1H5jkz" node="13p6s1wtcL4" resolve="assign" />
+    <node concept="2JgGob" id="13p6s1wtcL3" role="lGtFl">
+      <property role="3scbB" value="5CkWgdpp3eZ/string_presentation" />
+      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
+      <node concept="AxPO7" id="6_CUGSFFpW0" role="3lCyv">
+        <property role="3GE5qa" value="var" />
+        <property role="TrG5h" value="VariableAssignmentType" />
+        <property role="3lZH7k" value="hrlZpEz/custom" />
+        <property role="3F6X1D" value="7595578942777302784" />
+        <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+        <ref role="Qgau1" node="6_CUGSFFpW1" />
+        <node concept="M4N5e" id="6_CUGSFFpW1" role="M5hS2">
+          <property role="1uS6qo" value="=" />
+          <property role="1uS6qv" value="=" />
+          <property role="2fHolG" value="assign" />
+        </node>
+        <node concept="M4N5e" id="6_CUGSFFpWI" role="M5hS2">
+          <property role="1uS6qo" value=":=" />
+          <property role="1uS6qv" value=":=" />
+          <property role="2fHolG" value="expand" />
+        </node>
+        <node concept="M4N5e" id="6_CUGSFFpYb" role="M5hS2">
+          <property role="1uS6qo" value="?=" />
+          <property role="1uS6qv" value="?=" />
+          <property role="2fHolG" value="conditional" />
+        </node>
+        <node concept="M4N5e" id="2sFzOapsDlr" role="M5hS2">
+          <property role="1uS6qo" value="+=" />
+          <property role="1uS6qv" value="+=" />
+          <property role="2fHolG" value="append" />
+        </node>
+      </node>
+    </node>
+    <node concept="25R33" id="13p6s1wtcL4" role="25R1y">
+      <property role="TrG5h" value="assign" />
+      <property role="1L1pqM" value="=" />
+      <property role="3tVfz5" value="7595578942777302785" />
+      <ref role="2wpffI" node="6_CUGSFFpW1" />
+    </node>
+    <node concept="25R33" id="13p6s1wtcL5" role="25R1y">
+      <property role="TrG5h" value="expand" />
+      <property role="1L1pqM" value=":=" />
+      <property role="3tVfz5" value="7595578942777302830" />
+      <ref role="2wpffI" node="6_CUGSFFpWI" />
+    </node>
+    <node concept="25R33" id="13p6s1wtcL6" role="25R1y">
+      <property role="TrG5h" value="conditional" />
+      <property role="1L1pqM" value="?=" />
+      <property role="3tVfz5" value="7595578942777302923" />
+      <ref role="2wpffI" node="6_CUGSFFpYb" />
+    </node>
+    <node concept="25R33" id="13p6s1wtcL7" role="25R1y">
+      <property role="TrG5h" value="append" />
+      <property role="1L1pqM" value="+=" />
+      <property role="3tVfz5" value="2822507107682784603" />
+      <ref role="2wpffI" node="2sFzOapsDlr" />
     </node>
   </node>
 </model>

@@ -271,7 +271,6 @@
       <property role="TrG5h" value="errors" />
       <property role="2OOxQR" value="false" />
       <node concept="2vmPJf" id="2lgwE2U38zb" role="2vmPJn">
-        <property role="2vmPJm" value="3" />
         <property role="TrG5h" value="BELOW_ZERO" />
         <property role="2vmPJh" value="The value is below zero" />
         <property role="2vn0DO" value="true" />
@@ -282,7 +281,7 @@
       </node>
       <node concept="2vmPJf" id="2lgwE2U3MPa" role="2vmPJn">
         <property role="2vn0DO" value="true" />
-        <property role="2vmPJm" value="1" />
+        <property role="2vmPJm" value="2lgwE2U2X_P/1" />
         <property role="TrG5h" value="ANOTE" />
         <property role="2vmPJh" value="Some Message." />
       </node>

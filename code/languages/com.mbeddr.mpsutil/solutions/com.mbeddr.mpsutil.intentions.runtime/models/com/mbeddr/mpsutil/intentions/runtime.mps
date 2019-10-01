@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -216,11 +217,8 @@
       <concept id="1206629501431" name="jetbrains.mps.baseLanguage.structure.InstanceInitializer" flags="lg" index="3KIgzJ">
         <child id="1206629521979" name="statementList" index="3KIlGz" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -247,6 +245,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1154,8 +1160,10 @@
       </node>
       <node concept="3clFbS" id="3pwG8PSkQL8" role="3clF47">
         <node concept="3SKdUt" id="3pwG8PSkQRX" role="3cqZAp">
-          <node concept="3SKdUq" id="3pwG8PSkQRW" role="3SKWNk">
-            <property role="3SKdUp" value="intentions" />
+          <node concept="1PaTwC" id="17qUVvSZlt8" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZlt9" role="1PaTwD">
+              <property role="3oM_SC" value="intentions" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="3pwG8PSkQLa" role="3cqZAp">
@@ -1204,8 +1212,16 @@
           </node>
         </node>
         <node concept="3SKdUt" id="3pwG8PSkQRZ" role="3cqZAp">
-          <node concept="3SKdUq" id="3pwG8PSkQRY" role="3SKWNk">
-            <property role="3SKdUp" value="actions as intentions" />
+          <node concept="1PaTwC" id="17qUVvSZlta" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZltb" role="1PaTwD">
+              <property role="3oM_SC" value="actions" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZltc" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZltd" role="1PaTwD">
+              <property role="3oM_SC" value="intentions" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="3pwG8PSkQLn" role="3cqZAp">
@@ -1278,8 +1294,25 @@
           </node>
         </node>
         <node concept="3SKdUt" id="3pwG8PSkQS1" role="3cqZAp">
-          <node concept="3SKdUq" id="3pwG8PSkQS0" role="3SKWNk">
-            <property role="3SKdUp" value="TODO sort actions &amp; intentions together" />
+          <node concept="1PaTwC" id="17qUVvSZlte" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZltf" role="1PaTwD">
+              <property role="3oM_SC" value="TODO" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZltg" role="1PaTwD">
+              <property role="3oM_SC" value="sort" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlth" role="1PaTwD">
+              <property role="3oM_SC" value="actions" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlti" role="1PaTwD">
+              <property role="3oM_SC" value="&amp;" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZltj" role="1PaTwD">
+              <property role="3oM_SC" value="intentions" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZltk" role="1PaTwD">
+              <property role="3oM_SC" value="together" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="3pwG8PSkQLG" role="3cqZAp">
@@ -3487,8 +3520,25 @@
                     </node>
                     <node concept="3clFbH" id="2xgTENkSgld" role="3cqZAp" />
                     <node concept="3SKdUt" id="2xgTENkVr05" role="3cqZAp">
-                      <node concept="3SKdUq" id="2xgTENkVrxg" role="3SKWNk">
-                        <property role="3SKdUp" value="allow to search by group name" />
+                      <node concept="1PaTwC" id="17qUVvSZltl" role="3ndbpf">
+                        <node concept="3oM_SD" id="17qUVvSZltm" role="1PaTwD">
+                          <property role="3oM_SC" value="allow" />
+                        </node>
+                        <node concept="3oM_SD" id="17qUVvSZltn" role="1PaTwD">
+                          <property role="3oM_SC" value="to" />
+                        </node>
+                        <node concept="3oM_SD" id="17qUVvSZlto" role="1PaTwD">
+                          <property role="3oM_SC" value="search" />
+                        </node>
+                        <node concept="3oM_SD" id="17qUVvSZltp" role="1PaTwD">
+                          <property role="3oM_SC" value="by" />
+                        </node>
+                        <node concept="3oM_SD" id="17qUVvSZltq" role="1PaTwD">
+                          <property role="3oM_SC" value="group" />
+                        </node>
+                        <node concept="3oM_SD" id="17qUVvSZltr" role="1PaTwD">
+                          <property role="3oM_SC" value="name" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3cpWs8" id="2xgTENkShUN" role="3cqZAp">

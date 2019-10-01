@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="2d90dfd2-4b63-4216-b74d-8e16508c4961" name="com.mbeddr.mpsutil.hyperlink.sandbox" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports />
   <registry>

@@ -69,9 +69,9 @@
     <property role="EcuMT" value="9116320848000879253" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="7U3Fobb_8Em" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="kinds" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="9116320848000879254" />
       <ref role="20lvS9" node="7U3Fobb_8Ek" resolve="SuppressWarningKind" />
     </node>

@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -92,7 +92,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -140,7 +139,6 @@
               <node concept="BaHAS" id="5EwdfGVgITC" role="37wK5m">
                 <property role="BaHAW" value="assertion" />
                 <property role="BaGAP" value="" />
-                <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVgITD" role="37wK5m">
                 <property role="Xl_RC" value="main" />
@@ -241,7 +239,6 @@
                   </node>
                 </node>
                 <node concept="BaHAS" id="5EwdfGVgJbp" role="37wK5m">
-                  <property role="BaBD8" value="cou" />
                   <property role="BaHAW" value="assertion" />
                   <property role="BaGAP" value="" />
                 </node>
@@ -293,7 +290,6 @@
                   </node>
                 </node>
                 <node concept="BaHAS" id="5EwdfGVgJrT" role="37wK5m">
-                  <property role="BaBD8" value="cou" />
                   <property role="BaHAW" value="assertion" />
                   <property role="BaGAP" value="" />
                 </node>
@@ -345,7 +341,6 @@
                   </node>
                 </node>
                 <node concept="BaHAS" id="5EwdfGVgJGp" role="37wK5m">
-                  <property role="BaBD8" value="cou" />
                   <property role="BaHAW" value="assertion" />
                   <property role="BaGAP" value="" />
                 </node>
@@ -397,7 +392,6 @@
                   </node>
                 </node>
                 <node concept="BaHAS" id="5EwdfGVgJWT" role="37wK5m">
-                  <property role="BaBD8" value="cou" />
                   <property role="BaHAW" value="assertion" />
                   <property role="BaGAP" value="" />
                 </node>
@@ -465,7 +459,6 @@
               <node concept="BaHAS" id="5EwdfGVgKdB" role="37wK5m">
                 <property role="BaHAW" value="assertion" />
                 <property role="BaGAP" value="" />
-                <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVgKdC" role="37wK5m">
                 <property role="Xl_RC" value="main" />

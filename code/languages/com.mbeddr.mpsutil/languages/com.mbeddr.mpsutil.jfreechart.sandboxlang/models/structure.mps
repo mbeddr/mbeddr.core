@@ -48,9 +48,9 @@
     <property role="EcuMT" value="134774857083974450" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7uOgiT9g8S" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="charts" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="134774857083978296" />
       <ref role="20lvS9" node="7uOgiT9fcN" resolve="XYChart" />
     </node>
@@ -60,9 +60,9 @@
     <property role="EcuMT" value="134774857083974451" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7uOgiT9fi9" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="series" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="134774857083974793" />
       <ref role="20lvS9" node="7uOgiT9fcO" resolve="XYDataSeries" />
     </node>
@@ -75,9 +75,9 @@
     <property role="EcuMT" value="134774857083974452" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7uOgiT9fcQ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="items" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="134774857083974454" />
       <ref role="20lvS9" node="7uOgiT9fcP" resolve="XYDataItem" />
     </node>

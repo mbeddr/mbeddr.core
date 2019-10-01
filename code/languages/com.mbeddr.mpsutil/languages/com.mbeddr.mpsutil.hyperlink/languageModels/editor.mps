@@ -2,7 +2,7 @@
 <model ref="04e1f940-330e-483b-9a6a-1648b396a81c/r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,7 +20,6 @@
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
       <concept id="3982520150113085419" name="jetbrains.mps.lang.editor.structure.StyleAttributeDeclaration" flags="ig" index="3t5Usi">
-        <property id="8714766435264464176" name="inherited" index="iBDjm" />
         <child id="3982520150113147643" name="defaultValue" index="3t49C2" />
         <child id="3982520150113092206" name="valueType" index="3t5Oan" />
       </concept>
@@ -68,7 +67,6 @@
     <property role="TrG5h" value="HyperlinkStyleAttribute" />
     <node concept="3t5Usi" id="80_psBRB9K" role="V601i">
       <property role="TrG5h" value="hyperlink-reference" />
-      <property role="iBDjm" value="true" />
       <node concept="10P_77" id="80_psBRBa8" role="3t5Oan" />
       <node concept="3clFbT" id="80_psBRBac" role="3t49C2">
         <property role="3clFbU" value="false" />
@@ -76,7 +74,6 @@
     </node>
     <node concept="3t5Usi" id="5A_Zlt6qyoK" role="V601i">
       <property role="TrG5h" value="hyperlink-handler" />
-      <property role="iBDjm" value="true" />
       <node concept="3uibUv" id="5A_Zlt6xRbN" role="3t5Oan">
         <ref role="3uigEE" to="ag3p:5A_Zlt6xR6d" resolve="HyperlinkHandler" />
       </node>

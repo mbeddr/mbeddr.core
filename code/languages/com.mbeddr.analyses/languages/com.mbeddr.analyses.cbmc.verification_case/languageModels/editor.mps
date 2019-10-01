@@ -2,7 +2,7 @@
 <model ref="r:c3969769-35f3-47e6-8cd9-08ace4a1ebf7(com.mbeddr.analyses.cbmc.verification_case.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -142,11 +142,11 @@
           <property role="3F0ifm" value="verification_case" />
           <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
           <node concept="Vb9p2" id="2L0t9wIZ79C" role="3F10Kt">
-            <property role="Vbekb" value="BOLD" />
+            <property role="Vbekb" value="g1_k_vY/BOLD" />
           </node>
         </node>
         <node concept="3F0A7n" id="4By$TDgYO4f" role="3EZMnx">
-          <property role="1cu_pB" value="2" />
+          <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="3F0ifn" id="4By$TDgYIvd" role="3EZMnx">
@@ -358,7 +358,7 @@
         <node concept="3F0ifn" id="2L0t9wIZplu" role="3EZMnx">
           <property role="3F0ifm" value="-&gt;" />
           <node concept="VechU" id="2L0t9wJkKq0" role="3F10Kt">
-            <property role="Vb096" value="darkGray" />
+            <property role="Vb096" value="fLJRk5B/darkGray" />
           </node>
         </node>
         <node concept="1iCGBv" id="HiHa_$iCV4" role="3EZMnx">
@@ -370,7 +370,7 @@
             </node>
           </node>
           <node concept="VechU" id="HiHa_$jHpa" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
           </node>
         </node>
         <node concept="1HlG4h" id="HiHa_$iCVB" role="3EZMnx">
@@ -412,7 +412,7 @@
             </node>
           </node>
           <node concept="VechU" id="HiHa_$iVzn" role="3F10Kt">
-            <property role="Vb096" value="LIGHT_BLUE" />
+            <property role="Vb096" value="hGRnIZc/lightBlue" />
           </node>
         </node>
         <node concept="3F1sOY" id="1E$o3HVImq1" role="3EZMnx">
@@ -447,7 +447,7 @@
       <node concept="3F0ifn" id="2L0t9wJlJaN" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
         <node concept="VechU" id="2L0t9wJlJaO" role="3F10Kt">
-          <property role="Vb096" value="darkGray" />
+          <property role="Vb096" value="fLJRk5B/darkGray" />
         </node>
       </node>
       <node concept="1iCGBv" id="2L0t9wJlJrU" role="3EZMnx">

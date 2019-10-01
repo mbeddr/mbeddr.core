@@ -4,8 +4,8 @@
   <languages>
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -679,7 +679,7 @@
           <property role="2aYyvO" value="summary" />
           <ref role="1NtTu8" to="6pek:4BCrzPI_jZV" resolve="editable" />
           <node concept="Vb9p2" id="4BCrzPIBJ22" role="3F10Kt">
-            <property role="Vbekb" value="BOLD" />
+            <property role="Vbekb" value="g1_k_vY/BOLD" />
           </node>
         </node>
       </node>
@@ -721,7 +721,7 @@
         </node>
         <node concept="3F0A7n" id="4BCrzPI_jMW" role="3EZMnx">
           <property role="1O74Pk" value="true" />
-          <ref role="1NtTu8" to="6pek:2ka6MWOv4ZU" resolve="status" />
+          <ref role="1NtTu8" to="6pek:6JXsDxttw5d" resolve="status" />
         </node>
         <node concept="2iRfu4" id="4BCrzPI_jMX" role="2iSdaV" />
       </node>
@@ -829,12 +829,12 @@
               <node concept="3F0ifn" id="6i2qCb7QvTb" role="3EZMnx">
                 <property role="3F0ifm" value="in requirement:" />
                 <node concept="VechU" id="6i2qCb7SkNS" role="3F10Kt">
-                  <property role="Vb096" value="gray" />
+                  <property role="Vb096" value="fLJRk5_/gray" />
                 </node>
               </node>
               <node concept="1HlG4h" id="6i2qCb7RF9L" role="3EZMnx">
                 <node concept="VechU" id="6i2qCb7Sl_K" role="3F10Kt">
-                  <property role="Vb096" value="gray" />
+                  <property role="Vb096" value="fLJRk5_/gray" />
                 </node>
                 <node concept="3k4GqR" id="6i2qCb7QvXI" role="3F10Kt">
                   <node concept="3k4GqP" id="6i2qCb7QvXJ" role="3k4GqO">

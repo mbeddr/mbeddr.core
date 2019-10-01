@@ -2,7 +2,7 @@
 <model ref="r:bc145e93-c03d-4a07-8073-c1ff6ef2fc90(com.mbeddr.mpsutil.licensemanager.common.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -139,7 +139,7 @@
           </node>
         </node>
         <node concept="Vb9p2" id="1K5OvKurZCm" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
         <node concept="3k4GqR" id="1K5OvKut9i2" role="3F10Kt">
           <node concept="3k4GqP" id="1K5OvKut9i4" role="3k4GqO">
@@ -318,7 +318,7 @@
             </node>
           </node>
           <node concept="Vb9p2" id="4w7It07pnjU" role="3F10Kt">
-            <property role="Vbekb" value="BOLD" />
+            <property role="Vbekb" value="g1_k_vY/BOLD" />
           </node>
         </node>
         <node concept="3F0ifn" id="4w7It07pni1" role="3EZMnx">

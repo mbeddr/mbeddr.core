@@ -2,7 +2,7 @@
 <model ref="r:8b1352aa-99a0-4051-966c-597abfa8e99f(com.mbeddr.ext.serialization.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -126,9 +126,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -1347,7 +1345,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdoz5ZD" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdoz60A" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdoz60A" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7lNBHBNBzyi" resolve="UnsignedInt32tType" />
                 </node>
               </node>
@@ -1683,7 +1681,7 @@
                 <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
                 <node concept="2pIpSj" id="7PpDuQ7tCS9" role="2pJxcM">
                   <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                  <node concept="2pJPED" id="2hvQkqd7uM5" role="2pJxcZ">
+                  <node concept="2pJPED" id="2hvQkqd7uM5" role="28nt2d">
                     <ref role="2pJxaS" to="jtc1:2hvQkqd75Mv" resolve="AnonymousSerialContextType" />
                   </node>
                 </node>

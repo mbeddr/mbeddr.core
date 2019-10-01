@@ -6,7 +6,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
@@ -393,7 +393,7 @@
   <node concept="sEfby" id="5tr7YH$U35C">
     <property role="TrG5h" value="ContextActionsTool" />
     <property role="2XNbzY" value="Context Actions 2" />
-    <property role="2bmUCM" value="RIGHT" />
+    <property role="2bmUCM" value="2aGS$UDXOxV/RIGHT" />
     <node concept="2XrIbr" id="4IZABA$xIx4" role="2XNbBy">
       <property role="TrG5h" value="changeContext" />
       <node concept="37vLTG" id="4IZABA$xIUn" role="3clF46">

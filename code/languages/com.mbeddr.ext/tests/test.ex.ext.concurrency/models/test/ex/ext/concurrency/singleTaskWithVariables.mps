@@ -125,7 +125,6 @@
         <child id="7551459360504815631" name="init" index="6v0L8" />
       </concept>
       <concept id="7551459360495600340" name="com.mbeddr.ext.concurrency.structure.TimeWithUnit" flags="ng" index="6VUUj">
-        <property id="7551459360495620501" name="unit" index="6VZRi" />
         <child id="7551459360495619535" name="value" index="6VY68" />
       </concept>
       <concept id="852765151729684538" name="com.mbeddr.ext.concurrency.structure.TaskVarRef" flags="ng" index="yuV5p">
@@ -304,7 +303,6 @@
         </node>
         <node concept="1OFKyr" id="JlCmcDNyu3" role="3XIRFZ">
           <node concept="6VUUj" id="JlCmcDNyu4" role="1OFKyo">
-            <property role="6VZRi" value="ms" />
             <node concept="2BOcij" id="JlCmcDT$nG" role="6VY68">
               <node concept="4ZOvp" id="JlCmcDT$oc" role="3TlMhJ">
                 <ref role="2DPCA0" node="JlCmcDNyt5" resolve="MAX_COUNT" />

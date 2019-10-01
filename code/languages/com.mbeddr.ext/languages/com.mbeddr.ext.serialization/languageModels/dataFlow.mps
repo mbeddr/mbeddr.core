@@ -4,9 +4,10 @@
   <languages>
     <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="1" />
     <use id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" version="0" />
-    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="2" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <use id="57416e5b-eba5-4910-ade8-42ad18cb5f4d" name="com.mbeddr.mpsutil.dataflow" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -92,11 +93,8 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -133,6 +131,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -253,13 +259,74 @@
             </node>
           </node>
           <node concept="3SKdUt" id="2KWWERxmPBY" role="3cqZAp">
-            <node concept="3SKdUq" id="2KWWERxmPDk" role="3SKWNk">
-              <property role="3SKdUp" value="put the defInit exactly before the expression" />
+            <node concept="1PaTwC" id="6JXsDxrKC5K" role="3ndbpf">
+              <node concept="3oM_SD" id="6JXsDxrKC5L" role="1PaTwD">
+                <property role="3oM_SC" value="put" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5M" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5N" role="1PaTwD">
+                <property role="3oM_SC" value="defInit" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5O" role="1PaTwD">
+                <property role="3oM_SC" value="exactly" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5P" role="1PaTwD">
+                <property role="3oM_SC" value="before" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5Q" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5R" role="1PaTwD">
+                <property role="3oM_SC" value="expression" />
+              </node>
             </node>
           </node>
           <node concept="3SKdUt" id="2KWWERxmPE7" role="3cqZAp">
-            <node concept="3SKdUq" id="2KWWERxmPES" role="3SKWNk">
-              <property role="3SKdUp" value="this ensures that calling init on the context is already not marked as erroneous" />
+            <node concept="1PaTwC" id="6JXsDxrKC5S" role="3ndbpf">
+              <node concept="3oM_SD" id="6JXsDxrKC5T" role="1PaTwD">
+                <property role="3oM_SC" value="this" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5U" role="1PaTwD">
+                <property role="3oM_SC" value="ensures" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5V" role="1PaTwD">
+                <property role="3oM_SC" value="that" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5W" role="1PaTwD">
+                <property role="3oM_SC" value="calling" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5X" role="1PaTwD">
+                <property role="3oM_SC" value="init" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5Y" role="1PaTwD">
+                <property role="3oM_SC" value="on" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC5Z" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC60" role="1PaTwD">
+                <property role="3oM_SC" value="context" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC61" role="1PaTwD">
+                <property role="3oM_SC" value="is" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC62" role="1PaTwD">
+                <property role="3oM_SC" value="already" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC63" role="1PaTwD">
+                <property role="3oM_SC" value="not" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC64" role="1PaTwD">
+                <property role="3oM_SC" value="marked" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC65" role="1PaTwD">
+                <property role="3oM_SC" value="as" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxrKC66" role="1PaTwD">
+                <property role="3oM_SC" value="erroneous" />
+              </node>
             </node>
           </node>
           <node concept="2qeTo9" id="7GQSabAEmES" role="3cqZAp">

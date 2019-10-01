@@ -4,6 +4,7 @@
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -216,11 +217,8 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -295,6 +293,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -3069,8 +3075,16 @@
               <node concept="TDmWw" id="4biM00Jgbyn" role="TEbGg">
                 <node concept="3clFbS" id="4biM00Jgbyj" role="TDEfX">
                   <node concept="3SKdUt" id="4biM00Jgb$t" role="3cqZAp">
-                    <node concept="3SKdUq" id="4biM00Jgb$s" role="3SKWNk">
-                      <property role="3SKdUp" value="ok to ignore." />
+                    <node concept="1PaTwC" id="17qUVvSZleS" role="3ndbpf">
+                      <node concept="3oM_SD" id="17qUVvSZleT" role="1PaTwD">
+                        <property role="3oM_SC" value="ok" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZleU" role="1PaTwD">
+                        <property role="3oM_SC" value="to" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZleV" role="1PaTwD">
+                        <property role="3oM_SC" value="ignore." />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -3133,13 +3147,89 @@
           </node>
         </node>
         <node concept="3SKdUt" id="4biM00Jgb$v" role="3cqZAp">
-          <node concept="3SKdUq" id="4biM00Jgb$u" role="3SKWNk">
-            <property role="3SKdUp" value="in case of abrupt application exit when 'ProgressManager.getInstance().runProcess(process, progress)' below" />
+          <node concept="1PaTwC" id="17qUVvSZleW" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZleX" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZleY" role="1PaTwD">
+              <property role="3oM_SC" value="case" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZleZ" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlf0" role="1PaTwD">
+              <property role="3oM_SC" value="abrupt" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlf1" role="1PaTwD">
+              <property role="3oM_SC" value="application" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlf2" role="1PaTwD">
+              <property role="3oM_SC" value="exit" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlf3" role="1PaTwD">
+              <property role="3oM_SC" value="when" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlf4" role="1PaTwD">
+              <property role="3oM_SC" value="'ProgressManager.getInstance().runProcess(process," />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlf5" role="1PaTwD">
+              <property role="3oM_SC" value="progress)'" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlf6" role="1PaTwD">
+              <property role="3oM_SC" value="below" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="4biM00Jgb$x" role="3cqZAp">
-          <node concept="3SKdUq" id="4biM00Jgb$w" role="3SKWNk">
-            <property role="3SKdUp" value="does not have a chance to run, and as a result the progress won't be disposed" />
+          <node concept="1PaTwC" id="17qUVvSZlf7" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZlf8" role="1PaTwD">
+              <property role="3oM_SC" value="does" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlf9" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfa" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfb" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfc" role="1PaTwD">
+              <property role="3oM_SC" value="chance" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfd" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfe" role="1PaTwD">
+              <property role="3oM_SC" value="run," />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlff" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfg" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfh" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfi" role="1PaTwD">
+              <property role="3oM_SC" value="result" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfj" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfk" role="1PaTwD">
+              <property role="3oM_SC" value="progress" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfl" role="1PaTwD">
+              <property role="3oM_SC" value="won't" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfm" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlfn" role="1PaTwD">
+              <property role="3oM_SC" value="disposed" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="4biM00JgbyB" role="3cqZAp">
@@ -3173,8 +3263,13 @@
               </node>
             </node>
             <node concept="3SKdUt" id="4biM00Jgb$z" role="3cqZAp">
-              <node concept="3SKdUq" id="4biM00Jgb$y" role="3SKWNk">
-                <property role="3SKdUp" value="noinspection SSBasedInspection" />
+              <node concept="1PaTwC" id="17qUVvSZlfo" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZlfp" role="1PaTwD">
+                  <property role="3oM_SC" value="noinspection" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlfq" role="1PaTwD">
+                  <property role="3oM_SC" value="SSBasedInspection" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="4biM00JgbyO" role="3cqZAp">
@@ -3236,8 +3331,16 @@
                                                   </node>
                                                 </node>
                                                 <node concept="3SKdUt" id="4biM00Jgb$_" role="3cqZAp">
-                                                  <node concept="3SKdUq" id="4biM00Jgb$$" role="3SKWNk">
-                                                    <property role="3SKdUp" value="ok to ignore." />
+                                                  <node concept="1PaTwC" id="17qUVvSZlfr" role="3ndbpf">
+                                                    <node concept="3oM_SD" id="17qUVvSZlfs" role="1PaTwD">
+                                                      <property role="3oM_SC" value="ok" />
+                                                    </node>
+                                                    <node concept="3oM_SD" id="17qUVvSZlft" role="1PaTwD">
+                                                      <property role="3oM_SC" value="to" />
+                                                    </node>
+                                                    <node concept="3oM_SD" id="17qUVvSZlfu" role="1PaTwD">
+                                                      <property role="3oM_SC" value="ignore." />
+                                                    </node>
                                                   </node>
                                                 </node>
                                               </node>

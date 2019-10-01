@@ -38,7 +38,7 @@
     <property role="EcuMT" value="877857976371880700" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="KILMQGSUtM" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="redirectToModel" />
       <property role="IQ2ns" value="877857976371881842" />
       <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />

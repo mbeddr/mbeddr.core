@@ -14,11 +14,30 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <reference id="899069222106091871" name="oldMember" index="2wpffI" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclartaion" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
+        <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+      <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
+        <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
+        <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
+        <child id="6491077959632451996" name="oldEnum" index="3lCyv" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
@@ -80,10 +99,17 @@
     <property role="34LRSv" value="Preference Form" />
     <property role="EcuMT" value="145956936283289547" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="X7OD3WvjpT" role="1TKVEl">
+    <node concept="1TJgyi" id="17qUVvSZm9k" role="1TKVEl">
       <property role="TrG5h" value="scope" />
       <property role="IQ2nx" value="1101080154068563577" />
-      <ref role="AX2Wp" node="X7OD3Wvjw1" resolve="PreferenceFormScope" />
+      <ref role="AX2Wp" node="17qUVvSZm63" resolve="PreferenceFormScope" />
+      <node concept="3l_iC" id="17qUVvSZm9l" role="lGtFl">
+        <node concept="1TJgyi" id="X7OD3WvjpT" role="3l_iP">
+          <property role="TrG5h" value="scope" />
+          <property role="IQ2nx" value="1101080154068563577" />
+          <ref role="AX2Wp" node="X7OD3Wvjw1" resolve="PreferenceFormScope" />
+        </node>
+      </node>
     </node>
     <node concept="1TJgyi" id="X7OD3Wz5kT" role="1TKVEl">
       <property role="TrG5h" value="icon" />
@@ -96,34 +122,32 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="86yKXFFVPI" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="properties" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="145956936283569518" />
       <ref role="20lvS9" node="86yKXFFVPT" resolve="IPreferenceFormProperty" />
     </node>
     <node concept="1TJgyj" id="hBxXST0" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="afterReadBlockProject" />
-      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="1210676907584" />
       <ref role="20lvS9" to="tp4k:hBxXM2A" resolve="OnAfterReadBlock" />
     </node>
     <node concept="1TJgyj" id="hBxXV_8" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="beforeWriteBlockProject" />
-      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="1210676918600" />
       <ref role="20lvS9" to="tp4k:hBxWZwF" resolve="OnBeforeWriteBlock" />
     </node>
     <node concept="1TJgyj" id="X7OD3Wx7im" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="afterReadBlockApplication" />
       <property role="IQ2ns" value="1101080154069038230" />
       <ref role="20lvS9" node="hBxXM2A" resolve="OnAfterReadBlockApplication" />
     </node>
     <node concept="1TJgyj" id="X7OD3Wx7lE" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="beforeWriteBlockApplication" />
       <property role="IQ2ns" value="1101080154069038442" />
       <ref role="20lvS9" node="hBxWZwF" resolve="OnBeforeWriteBlockApplication" />
@@ -148,9 +172,9 @@
     <property role="EcuMT" value="145956936284064811" />
     <ref role="1TJDcQ" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
     <node concept="1TJgyj" id="7Hbe8h6YX0T" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="label" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8884256830696181817" />
       <ref role="20lvS9" to="tnjx:2bng37t32Oy" resolve="MultilingualJavaString" />
     </node>
@@ -203,9 +227,8 @@
     <property role="EcuMT" value="145956936287670670" />
     <ref role="1TJDcQ" to="tp4f:hyWtXx5" resolve="BaseClassifierType" />
     <node concept="1TJgyj" id="86yKXFVA3h" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="preferenceForm" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="145956936287674577" />
       <ref role="20lvS9" node="86yKXFERvb" resolve="PreferenceForm" />
     </node>
@@ -224,9 +247,8 @@
     <property role="EcuMT" value="145956936288329552" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="86yKXFY5Xj" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="formProperty" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="145956936288329555" />
       <ref role="20lvS9" node="86yKXFFVPT" resolve="IPreferenceFormProperty" />
       <ref role="20ksaX" to="tp4f:hyWH_vG" resolve="member" />
@@ -243,24 +265,12 @@
     <property role="EcuMT" value="8201243288561432125" />
     <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractPreferenceFormProperty" />
   </node>
-  <node concept="AxPO7" id="X7OD3Wvjw1">
-    <property role="TrG5h" value="PreferenceFormScope" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <node concept="M4N5e" id="X7OD3Wvjw2" role="M5hS2">
-      <property role="1uS6qo" value="project" />
-      <property role="1uS6qv" value="0" />
-    </node>
-    <node concept="M4N5e" id="X7OD3Wvjwr" role="M5hS2">
-      <property role="1uS6qo" value="application" />
-      <property role="1uS6qv" value="1" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="hBxWZwF">
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="OnBeforeWriteBlockApplication" />
     <property role="3GE5qa" value="Preference.Members" />
-    <property role="2_RsDV" value="none" />
+    <property role="2_RsDV" value="4G1g3fIR8JG/none" />
     <property role="34LRSv" value="before write" />
     <property role="EcuMT" value="1210676672555" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
@@ -272,9 +282,9 @@
     <property role="EcuMT" value="8201243288561455947" />
     <ref role="1TJDcQ" node="77gEP6zgFoX" resolve="AbstractComboBoxPreferenceFormProperty" />
     <node concept="1TJgyj" id="77gEP6zgLdc" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="entries" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="8201243288561455948" />
       <ref role="20lvS9" node="77gEP6zgLdF" resolve="PredefinedComboBoxEntry" />
     </node>
@@ -298,9 +308,8 @@
     <property role="TrG5h" value="IPreferenceFormExpression" />
     <property role="EcuMT" value="3057648661793083867" />
     <node concept="1TJgyj" id="86yKXFVl2p" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="formDeclaration" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="145956936287604889" />
       <ref role="20lvS9" node="86yKXFERvb" resolve="PreferenceForm" />
     </node>
@@ -346,16 +355,15 @@
     <property role="EcuMT" value="8201243288561530716" />
     <ref role="1TJDcQ" node="77gEP6zgFoX" resolve="AbstractComboBoxPreferenceFormProperty" />
     <node concept="1TJgyj" id="77gEP6zh6SY" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="getEntriesFunction" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8201243288561544766" />
       <ref role="20lvS9" node="77gEP6zh3ul" resolve="DynamicComboBoxEntriesFunction" />
     </node>
     <node concept="1TJgyj" id="77gEP6zh79o" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="defaultEntryFunction" />
-      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8201243288561545816" />
       <ref role="20lvS9" node="77gEP6zh6UN" resolve="DynamicComboBoxDefaultEntryFunction" />
     </node>
@@ -371,7 +379,7 @@
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="OnAfterReadBlockApplication" />
     <property role="3GE5qa" value="Preference.Members" />
-    <property role="2_RsDV" value="none" />
+    <property role="2_RsDV" value="4G1g3fIR8JG/none" />
     <property role="34LRSv" value="after read" />
     <property role="EcuMT" value="1210676879526" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
@@ -407,6 +415,38 @@
     <property role="34LRSv" value="diskData" />
     <property role="EcuMT" value="1869287722499775694" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="25R3W" id="17qUVvSZm63">
+    <property role="TrG5h" value="PreferenceFormScope" />
+    <property role="3F6X1D" value="1101080154068563969" />
+    <ref role="1H5jkz" node="17qUVvSZm65" resolve="project" />
+    <node concept="2JgGob" id="17qUVvSZm64" role="lGtFl">
+      <property role="3scbB" value="5CkWgdpp3fb/int_ordinal" />
+      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
+      <node concept="AxPO7" id="X7OD3Wvjw1" role="3lCyv">
+        <property role="TrG5h" value="PreferenceFormScope" />
+        <property role="3F6X1D" value="1101080154068563969" />
+        <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+        <node concept="M4N5e" id="X7OD3Wvjw2" role="M5hS2">
+          <property role="1uS6qo" value="project" />
+          <property role="1uS6qv" value="0" />
+        </node>
+        <node concept="M4N5e" id="X7OD3Wvjwr" role="M5hS2">
+          <property role="1uS6qo" value="application" />
+          <property role="1uS6qv" value="1" />
+        </node>
+      </node>
+    </node>
+    <node concept="25R33" id="17qUVvSZm65" role="25R1y">
+      <property role="TrG5h" value="project" />
+      <property role="3tVfz5" value="1101080154068563970" />
+      <ref role="2wpffI" node="X7OD3Wvjw2" />
+    </node>
+    <node concept="25R33" id="17qUVvSZm66" role="25R1y">
+      <property role="TrG5h" value="application" />
+      <property role="3tVfz5" value="1101080154068563995" />
+      <ref role="2wpffI" node="X7OD3Wvjwr" />
+    </node>
   </node>
 </model>
 

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -117,12 +117,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -281,21 +280,21 @@
                   <ref role="2pJxaS" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
                   <node concept="2pJxcG" id="1LleiTPxIyC" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="1LleiTPxIJ7" role="2pJxcZ">
+                    <node concept="Xl_RD" id="1LleiTPxIJ7" role="28ntcv">
                       <property role="Xl_RC" value="data" />
                     </node>
                   </node>
                   <node concept="2pIpSj" id="1LleiTPxIVX" role="2pJxcM">
                     <ref role="2pIpSl" to="mj1l:hEaDaGor64" resolve="type" />
-                    <node concept="2pJPED" id="1LleiTPxJ8w" role="2pJxcZ">
+                    <node concept="2pJPED" id="1LleiTPxJ8w" role="28nt2d">
                       <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
                       <node concept="2pIpSj" id="1LleiTPxJ9v" role="2pJxcM">
                         <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                        <node concept="2pJPED" id="1LleiTPxJay" role="2pJxcZ">
+                        <node concept="2pJPED" id="1LleiTPxJay" role="28nt2d">
                           <ref role="2pJxaS" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
                           <node concept="2pJxcG" id="6pWLWdpM1_f" role="2pJxcM">
                             <ref role="2pJxcJ" to="mj1l:2zhwXA$N7QC" resolve="const" />
-                            <node concept="3clFbT" id="6pWLWdpM1Am" role="2pJxcZ">
+                            <node concept="3clFbT" id="6pWLWdpM1Am" role="28ntcv">
                               <property role="3clFbU" value="true" />
                             </node>
                           </node>
@@ -322,13 +321,13 @@
                   <ref role="2pJxaS" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
                   <node concept="2pJxcG" id="1LleiTPxK$p" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="1LleiTPxK$q" role="2pJxcZ">
+                    <node concept="Xl_RD" id="1LleiTPxK$q" role="28ntcv">
                       <property role="Xl_RC" value="size" />
                     </node>
                   </node>
                   <node concept="2pIpSj" id="1LleiTPxK$r" role="2pJxcM">
                     <ref role="2pIpSl" to="mj1l:hEaDaGor64" resolve="type" />
-                    <node concept="2pJPED" id="1LleiTPxKWk" role="2pJxcZ">
+                    <node concept="2pJPED" id="1LleiTPxKWk" role="28nt2d">
                       <ref role="2pJxaS" to="mj1l:7FZLineUJnk" resolve="SizeT" />
                     </node>
                   </node>
@@ -380,17 +379,17 @@
                   <ref role="2pJxaS" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
                   <node concept="2pJxcG" id="1LleiTPzwBw" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="1LleiTPzwBx" role="2pJxcZ">
+                    <node concept="Xl_RD" id="1LleiTPzwBx" role="28ntcv">
                       <property role="Xl_RC" value="data" />
                     </node>
                   </node>
                   <node concept="2pIpSj" id="1LleiTPzwBy" role="2pJxcM">
                     <ref role="2pIpSl" to="mj1l:hEaDaGor64" resolve="type" />
-                    <node concept="2pJPED" id="1LleiTPzwBz" role="2pJxcZ">
+                    <node concept="2pJPED" id="1LleiTPzwBz" role="28nt2d">
                       <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
                       <node concept="2pIpSj" id="1LleiTPzwB$" role="2pJxcM">
                         <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                        <node concept="2pJPED" id="1LleiTPzwB_" role="2pJxcZ">
+                        <node concept="2pJPED" id="1LleiTPzwB_" role="28nt2d">
                           <ref role="2pJxaS" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
                         </node>
                       </node>
@@ -409,13 +408,13 @@
                   <ref role="2pJxaS" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
                   <node concept="2pJxcG" id="1LleiTPzwBI" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="1LleiTPzwBJ" role="2pJxcZ">
+                    <node concept="Xl_RD" id="1LleiTPzwBJ" role="28ntcv">
                       <property role="Xl_RC" value="size" />
                     </node>
                   </node>
                   <node concept="2pIpSj" id="1LleiTPzwBK" role="2pJxcM">
                     <ref role="2pIpSl" to="mj1l:hEaDaGor64" resolve="type" />
-                    <node concept="2pJPED" id="1LleiTPzwBL" role="2pJxcZ">
+                    <node concept="2pJPED" id="1LleiTPzwBL" role="28nt2d">
                       <ref role="2pJxaS" to="mj1l:7FZLineUJnk" resolve="SizeT" />
                     </node>
                   </node>
@@ -912,7 +911,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="7op4RkOvZXc" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="7op4RkOvZXA" role="2pJxcZ">
+                <node concept="2pJPED" id="7op4RkOvZXA" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:1spqZOskJPs" resolve="CharType" />
                 </node>
               </node>
@@ -1059,7 +1058,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdp3ysW" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdp3ytj" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdp3ytj" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
                 </node>
               </node>
@@ -1088,7 +1087,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdoHb5H" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdoHb64" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdoHb64" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7lNBHBNBzyi" resolve="UnsignedInt32tType" />
                 </node>
               </node>
@@ -1120,7 +1119,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdpiHlH" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdpiHm7" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdpiHm7" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7G6iUFOh4op" resolve="DoubleType" />
                 </node>
               </node>
@@ -1152,7 +1151,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdpiHjX" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdpiHkn" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdpiHkn" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:477NaqBEMuv" resolve="FloatType" />
                 </node>
               </node>
@@ -1184,7 +1183,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdpiHid" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdpiHiB" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdpiHiB" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7lNBHBNBzy3" resolve="Int16tType" />
                 </node>
               </node>
@@ -1216,7 +1215,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdpiHgx" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdpiHgV" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdpiHgV" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7lNBHBNBzy8" resolve="Int32tType" />
                 </node>
               </node>
@@ -1248,7 +1247,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdpiHeP" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdpiHff" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdpiHff" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7lNBHBNBzyd" resolve="Int64tType" />
                 </node>
               </node>
@@ -1280,7 +1279,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdpiHd4" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdpiHdu" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdpiHdu" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7lNBHBNBzxU" resolve="Int8tType" />
                 </node>
               </node>
@@ -1312,7 +1311,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="7op4RkOwRqP" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="7op4RkOwRrf" role="2pJxcZ">
+                <node concept="2pJPED" id="7op4RkOwRrf" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:1spqZOskJPs" resolve="CharType" />
                 </node>
               </node>
@@ -1344,7 +1343,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdp4ft5" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdp4fts" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdp4fts" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7lNBHBNBzyy" resolve="UnsignedInt16tType" />
                 </node>
               </node>
@@ -1376,7 +1375,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdpiH9M" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdpiHac" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdpiHac" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7lNBHBNBzyi" resolve="UnsignedInt32tType" />
                 </node>
               </node>
@@ -1408,7 +1407,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdpiH0t" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdpiH8n" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdpiH8n" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7lNBHBNBzyo" resolve="UnsignedInt64tType" />
                 </node>
               </node>
@@ -1440,7 +1439,7 @@
               <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
               <node concept="2pIpSj" id="6pWLWdp3Wbk" role="2pJxcM">
                 <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
-                <node concept="2pJPED" id="6pWLWdp3WbF" role="2pJxcZ">
+                <node concept="2pJPED" id="6pWLWdp3WbF" role="28nt2d">
                   <ref role="2pJxaS" to="mj1l:7lNBHBNBzyt" resolve="UnsignedInt8tType" />
                 </node>
               </node>

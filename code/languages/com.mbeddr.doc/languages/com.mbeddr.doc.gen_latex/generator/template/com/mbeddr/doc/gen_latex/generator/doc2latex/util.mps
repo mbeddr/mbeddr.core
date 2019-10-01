@@ -2,7 +2,8 @@
 <model ref="r:ffb49228-550f-40e9-bd2b-e6792a745104(com.mbeddr.doc.gen_latex.generator.doc2latex.util)">
   <persistence version="9" />
   <languages>
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -88,11 +89,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -130,6 +128,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -170,8 +176,13 @@
         </node>
         <node concept="3clFbH" id="1LnB5xdq8mN" role="3cqZAp" />
         <node concept="3SKdUt" id="1LnB5xdq8mP" role="3cqZAp">
-          <node concept="3SKdUq" id="1LnB5xdq8mQ" role="3SKWNk">
-            <property role="3SKdUp" value="basic latex" />
+          <node concept="1PaTwC" id="6JXsDxqZVZR" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxqZVZS" role="1PaTwD">
+              <property role="3oM_SC" value="basic" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZVZT" role="1PaTwD">
+              <property role="3oM_SC" value="latex" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="1LnB5xdrNS1" role="3cqZAp">
@@ -323,8 +334,40 @@
         </node>
         <node concept="3clFbH" id="6Gq6fWPFKYL" role="3cqZAp" />
         <node concept="3SKdUt" id="6Gq6fWPFKYN" role="3cqZAp">
-          <node concept="3SKdUq" id="6Gq6fWPFKYO" role="3SKWNk">
-            <property role="3SKdUp" value=" I see the following two are wrong (Markus). Commented out." />
+          <node concept="1PaTwC" id="6JXsDxqZVZU" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxqZVZV" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZVZW" role="1PaTwD">
+              <property role="3oM_SC" value="I" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZVZX" role="1PaTwD">
+              <property role="3oM_SC" value="see" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZVZY" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZVZZ" role="1PaTwD">
+              <property role="3oM_SC" value="following" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW00" role="1PaTwD">
+              <property role="3oM_SC" value="two" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW01" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW02" role="1PaTwD">
+              <property role="3oM_SC" value="wrong" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW03" role="1PaTwD">
+              <property role="3oM_SC" value="(Markus)." />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW04" role="1PaTwD">
+              <property role="3oM_SC" value="Commented" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW05" role="1PaTwD">
+              <property role="3oM_SC" value="out." />
+            </node>
           </node>
         </node>
         <node concept="1X3_iC" id="3AWqwDsquoU" role="lGtFl">
@@ -400,8 +443,13 @@
         </node>
         <node concept="3clFbH" id="1LnB5xdq7Te" role="3cqZAp" />
         <node concept="3SKdUt" id="1LnB5xdq8mU" role="3cqZAp">
-          <node concept="3SKdUq" id="1LnB5xdq8mV" role="3SKWNk">
-            <property role="3SKdUp" value="other stuff" />
+          <node concept="1PaTwC" id="6JXsDxqZW06" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxqZW07" role="1PaTwD">
+              <property role="3oM_SC" value="other" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxqZW08" role="1PaTwD">
+              <property role="3oM_SC" value="stuff" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="1LnB5xdq8mW" role="3cqZAp">

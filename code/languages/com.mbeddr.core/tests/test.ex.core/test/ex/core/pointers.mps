@@ -2,8 +2,8 @@
 <model ref="r:252d4127-ccd8-4120-b21c-006b1b59410b(test.ex.core.pointers)">
   <persistence version="9" />
   <languages>
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -2292,7 +2292,7 @@
       <node concept="2vmPJf" id="2lgwE2U3u1O" role="2vmPJn">
         <property role="2vn0DO" value="true" />
         <property role="TrG5h" value="HelloMessage" />
-        <property role="2vmPJm" value="1" />
+        <property role="2vmPJm" value="2lgwE2U2X_P/1" />
         <property role="2vmPJh" value="Hello!" />
       </node>
     </node>
@@ -3445,7 +3445,7 @@
       <property role="TrG5h" value="Log" />
       <node concept="2vmPJf" id="6FLcSer$d7v" role="2vmPJn">
         <property role="2vn0DO" value="true" />
-        <property role="2vmPJm" value="1" />
+        <property role="2vmPJm" value="2lgwE2U2X_P/1" />
         <property role="TrG5h" value="info" />
         <property role="2vmPJh" value="value" />
         <node concept="2qqzEA" id="6FLcSer$d7w" role="2qqzEG">

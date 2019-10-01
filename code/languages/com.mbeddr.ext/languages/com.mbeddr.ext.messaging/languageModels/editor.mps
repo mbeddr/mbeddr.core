@@ -2,7 +2,7 @@
 <model ref="r:cd048ac4-8e5b-4b55-9410-a33f2c5c3342(com.mbeddr.ext.messaging.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -238,7 +238,6 @@
         </node>
       </node>
       <node concept="PMmxH" id="5Hxjapwgufs" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
@@ -246,7 +245,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhQNo" resolve="StructUnion" />
         <node concept="Vb9p2" id="5v_KyvOh$PY" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="6MQ2rNXJItZ" role="3EZMnx">
@@ -304,7 +303,7 @@
     <ref role="1XX52x" to="vuss:6MQ2rNXJFf4" resolve="MessageMember" />
     <node concept="3EZMnI" id="56ytRgsLg$x" role="2wV5jI">
       <node concept="3F1sOY" id="56ytRgsLg$D" role="3EZMnx">
-        <property role="1cu_pB" value="2" />
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
       <node concept="3F0A7n" id="56ytRgsLg$E" role="3EZMnx">
@@ -578,7 +577,7 @@
                 <node concept="1OKiuA" id="2mvFNoTurW5" role="2OqNvi">
                   <node concept="1Q80Hx" id="2mvFNoTurWc" role="lBI5i" />
                   <node concept="2B6iha" id="2mvFNoTurW7" role="lGT1i">
-                    <property role="1lyBwo" value="last" />
+                    <property role="1lyBwo" value="1S2pyLby17K/last" />
                   </node>
                   <node concept="3cmrfG" id="2mvFNoTurW8" role="3dN3m$">
                     <property role="3cmrfH" value="-1" />

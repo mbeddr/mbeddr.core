@@ -37,14 +37,14 @@
     <property role="EcuMT" value="1159656764131978331" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="10nVqVftMMh" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="child" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="1159656764131978385" />
       <ref role="20lvS9" to="elym:10nVqVftA9h" resolve="IMarginCellContent" />
     </node>
     <node concept="1TJgyj" id="66jx6gIAjoA" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="notes" />
       <property role="IQ2ns" value="7031109009068865062" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />

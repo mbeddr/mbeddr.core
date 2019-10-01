@@ -36,7 +36,7 @@
       <concept id="8867272038842303611" name="com.mbeddr.core.debug.test.structure.DebuggerTestcaseReference" flags="ng" index="UZuib">
         <reference id="8867272038842351965" name="testCase" index="UZi6H" />
       </concept>
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -231,7 +231,6 @@
       </node>
       <node concept="3F5Y_J" id="3xl_a9y1_dD" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0xLE" role="3F5Y$9">
-          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="7Hpw6GdNaYc" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbhzEvB" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -239,7 +238,7 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0yy4" role="16XPZB">
-            <property role="16EpFF" value="win" />
+            <property role="16EpFF" value="4TbX0$8Gx8R/win" />
             <node concept="30a7bf" id="3xl_a9y1_dE" role="16XPZy">
               <node concept="3cQ7K9" id="3uHGTbhzEvF" role="30a7be">
                 <property role="3sdDOw" value="marker" />

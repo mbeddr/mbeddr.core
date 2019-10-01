@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="309e0004-4976-4416-b947-ec02ae4ecef2" name="com.mbeddr.mpsutil.modellisteners" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -83,11 +83,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
@@ -131,6 +128,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="309e0004-4976-4416-b947-ec02ae4ecef2" name="com.mbeddr.mpsutil.modellisteners">
@@ -279,8 +284,40 @@
         </node>
         <node concept="3clFbH" id="4vVfYP3y3rQ" role="3cqZAp" />
         <node concept="3SKdUt" id="6WhEtfYUdKK" role="3cqZAp">
-          <node concept="3SKdUq" id="6WhEtfYUe9I" role="3SKWNk">
-            <property role="3SKdUp" value="deletion requires delayed execution because of internal MPS reasons (node anchoring)" />
+          <node concept="1PaTwC" id="6JXsDxttvYH" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxttvYI" role="1PaTwD">
+              <property role="3oM_SC" value="deletion" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYJ" role="1PaTwD">
+              <property role="3oM_SC" value="requires" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYK" role="1PaTwD">
+              <property role="3oM_SC" value="delayed" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYL" role="1PaTwD">
+              <property role="3oM_SC" value="execution" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYM" role="1PaTwD">
+              <property role="3oM_SC" value="because" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYN" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYO" role="1PaTwD">
+              <property role="3oM_SC" value="internal" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYP" role="1PaTwD">
+              <property role="3oM_SC" value="MPS" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYQ" role="1PaTwD">
+              <property role="3oM_SC" value="reasons" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYR" role="1PaTwD">
+              <property role="3oM_SC" value="(node" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYS" role="1PaTwD">
+              <property role="3oM_SC" value="anchoring)" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="4vVfYP3xPoM" role="3cqZAp">

@@ -3,7 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -189,11 +190,8 @@
       <concept id="1225894555487" name="jetbrains.mps.baseLanguage.structure.BitwiseNotExpression" flags="nn" index="1H0AT2">
         <child id="1225894555490" name="expression" index="1H0ATZ" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -242,6 +240,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -743,8 +749,10 @@
             </node>
             <node concept="3clFbH" id="5L7BF$C7MHS" role="3cqZAp" />
             <node concept="3SKdUt" id="5L7BF$C7WKK" role="3cqZAp">
-              <node concept="3SKdUq" id="5L7BF$C7Xfu" role="3SKWNk">
-                <property role="3SKdUp" value="circles" />
+              <node concept="1PaTwC" id="17qUVvSZkR1" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkR2" role="1PaTwD">
+                  <property role="3oM_SC" value="circles" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="7GaZbxS0Vxw" role="3cqZAp">
@@ -819,8 +827,13 @@
             </node>
             <node concept="3clFbH" id="608oBgqs5Qe" role="3cqZAp" />
             <node concept="3SKdUt" id="5L7BF$C7SAk" role="3cqZAp">
-              <node concept="3SKdUq" id="5L7BF$C7T4z" role="3SKWNk">
-                <property role="3SKdUp" value="background circle" />
+              <node concept="1PaTwC" id="17qUVvSZkR3" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkR4" role="1PaTwD">
+                  <property role="3oM_SC" value="background" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkR5" role="1PaTwD">
+                  <property role="3oM_SC" value="circle" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="7GaZbxS0VzI" role="3cqZAp">
@@ -872,8 +885,13 @@
             </node>
             <node concept="3clFbH" id="5L7BF$C7MQl" role="3cqZAp" />
             <node concept="3SKdUt" id="5L7BF$C7ZtJ" role="3cqZAp">
-              <node concept="3SKdUq" id="5L7BF$C7ZXk" role="3SKWNk">
-                <property role="3SKdUp" value="border circle" />
+              <node concept="1PaTwC" id="17qUVvSZkR6" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkR7" role="1PaTwD">
+                  <property role="3oM_SC" value="border" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkR8" role="1PaTwD">
+                  <property role="3oM_SC" value="circle" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="608oBgqtmqu" role="3cqZAp">
@@ -957,8 +975,40 @@
             </node>
             <node concept="3clFbH" id="5L7BF$C82As" role="3cqZAp" />
             <node concept="3SKdUt" id="5L7BF$C83eL" role="3cqZAp">
-              <node concept="3SKdUq" id="5L7BF$C83Is" role="3SKWNk">
-                <property role="3SKdUp" value="prepare character image (required to preciclely place it in the middle)" />
+              <node concept="1PaTwC" id="17qUVvSZkR9" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkRa" role="1PaTwD">
+                  <property role="3oM_SC" value="prepare" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRb" role="1PaTwD">
+                  <property role="3oM_SC" value="character" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRc" role="1PaTwD">
+                  <property role="3oM_SC" value="image" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRd" role="1PaTwD">
+                  <property role="3oM_SC" value="(required" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRe" role="1PaTwD">
+                  <property role="3oM_SC" value="to" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRf" role="1PaTwD">
+                  <property role="3oM_SC" value="preciclely" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRg" role="1PaTwD">
+                  <property role="3oM_SC" value="place" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRh" role="1PaTwD">
+                  <property role="3oM_SC" value="it" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRi" role="1PaTwD">
+                  <property role="3oM_SC" value="in" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRj" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRk" role="1PaTwD">
+                  <property role="3oM_SC" value="middle)" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="7GaZbxSiGlg" role="3cqZAp">
@@ -1087,8 +1137,31 @@
             </node>
             <node concept="3clFbH" id="7GaZbxS9R8o" role="3cqZAp" />
             <node concept="3SKdUt" id="5L7BF$C84uh" role="3cqZAp">
-              <node concept="3SKdUq" id="5L7BF$C84Y0" role="3SKWNk">
-                <property role="3SKdUp" value="find area actually drawn on in character image" />
+              <node concept="1PaTwC" id="17qUVvSZkRl" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkRm" role="1PaTwD">
+                  <property role="3oM_SC" value="find" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRn" role="1PaTwD">
+                  <property role="3oM_SC" value="area" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRo" role="1PaTwD">
+                  <property role="3oM_SC" value="actually" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRp" role="1PaTwD">
+                  <property role="3oM_SC" value="drawn" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRq" role="1PaTwD">
+                  <property role="3oM_SC" value="on" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRr" role="1PaTwD">
+                  <property role="3oM_SC" value="in" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRs" role="1PaTwD">
+                  <property role="3oM_SC" value="character" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRt" role="1PaTwD">
+                  <property role="3oM_SC" value="image" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="5L7BF$C7ynT" role="3cqZAp">
@@ -1224,8 +1297,22 @@
             </node>
             <node concept="3clFbH" id="7GaZbxSjkHN" role="3cqZAp" />
             <node concept="3SKdUt" id="5L7BF$C8ei7" role="3cqZAp">
-              <node concept="3SKdUq" id="5L7BF$C8eJK" role="3SKWNk">
-                <property role="3SKdUp" value="position character in final image" />
+              <node concept="1PaTwC" id="17qUVvSZkRu" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkRv" role="1PaTwD">
+                  <property role="3oM_SC" value="position" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRw" role="1PaTwD">
+                  <property role="3oM_SC" value="character" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRx" role="1PaTwD">
+                  <property role="3oM_SC" value="in" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRy" role="1PaTwD">
+                  <property role="3oM_SC" value="final" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkRz" role="1PaTwD">
+                  <property role="3oM_SC" value="image" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="7GaZbxSbetm" role="3cqZAp">

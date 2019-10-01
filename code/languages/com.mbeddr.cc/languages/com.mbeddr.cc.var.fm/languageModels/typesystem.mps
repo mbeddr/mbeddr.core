@@ -2,8 +2,9 @@
 <model ref="r:106c8ec8-5206-4ec1-ae0f-cd9d3c8dd559(com.mbeddr.cc.var.fm.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -80,11 +81,8 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
@@ -187,6 +185,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
@@ -747,8 +753,40 @@
     <property role="TrG5h" value="check_IFeatureConditionsOnly" />
     <node concept="3clFbS" id="6hM2_xW38RS" role="18ibNy">
       <node concept="3SKdUt" id="6hM2_xW33ub" role="3cqZAp">
-        <node concept="3SKdUq" id="6hM2_xW33Er" role="3SKWNk">
-          <property role="3SKdUp" value="all these restrictions are driven by limitations in the interpreter FeatureConditionEvalHelper" />
+        <node concept="1PaTwC" id="6JXsDxttw1Q" role="3ndbpf">
+          <node concept="3oM_SD" id="6JXsDxttw1R" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1S" role="1PaTwD">
+            <property role="3oM_SC" value="these" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1T" role="1PaTwD">
+            <property role="3oM_SC" value="restrictions" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1U" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1V" role="1PaTwD">
+            <property role="3oM_SC" value="driven" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1W" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1X" role="1PaTwD">
+            <property role="3oM_SC" value="limitations" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1Y" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1Z" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw20" role="1PaTwD">
+            <property role="3oM_SC" value="interpreter" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw21" role="1PaTwD">
+            <property role="3oM_SC" value="FeatureConditionEvalHelper" />
+          </node>
         </node>
       </node>
       <node concept="3clFbF" id="6hM2_xW38X6" role="3cqZAp">

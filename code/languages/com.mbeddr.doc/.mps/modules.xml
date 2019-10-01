@@ -2,9 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/../languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/AaaaaaaPreferences/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" folder="" />

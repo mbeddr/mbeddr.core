@@ -48,9 +48,9 @@
     <property role="EcuMT" value="8663730687027689188" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7wVKixdVVsm" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="machine" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8663730687027689238" />
       <ref role="20lvS9" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
     </node>
@@ -73,9 +73,8 @@
     <property role="EcuMT" value="1598382569875775232" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1oIA7EcBLW2" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="runnable" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="1598382569875775234" />
       <ref role="20lvS9" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
     </node>
@@ -116,16 +115,14 @@
     <property role="EcuMT" value="7525936201958402473" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6xLvLBZYUAG" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="port" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7525936201958402476" />
       <ref role="20lvS9" to="v7ag:3TmmsQkD8YD" resolve="RequiredPort" />
     </node>
     <node concept="1TJgyj" id="6xLvLBZYUAI" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="operation" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7525936201958402478" />
       <ref role="20lvS9" to="v7ag:3TmmsQkC_PW" resolve="Operation" />
     </node>

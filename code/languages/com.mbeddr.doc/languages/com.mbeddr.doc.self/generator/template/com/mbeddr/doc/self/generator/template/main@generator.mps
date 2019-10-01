@@ -2,8 +2,8 @@
 <model ref="r:be59ed93-bd81-496c-abdd-771fe24de64e(com.mbeddr.doc.self.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
@@ -344,7 +344,7 @@
   </node>
   <node concept="1pmfR0" id="5$bT90ZdhPx">
     <property role="TrG5h" value="renderCodeScreenshots" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <node concept="1pplIY" id="5$bT90ZdhPy" role="1pqMTA">
       <node concept="3clFbS" id="5$bT90ZdhPz" role="2VODD2">
         <node concept="2Gpval" id="5$bT90ZdhP$" role="3cqZAp">

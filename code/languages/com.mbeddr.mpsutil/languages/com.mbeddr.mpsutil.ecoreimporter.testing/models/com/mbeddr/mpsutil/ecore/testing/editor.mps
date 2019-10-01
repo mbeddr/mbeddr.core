@@ -2,7 +2,7 @@
 <model ref="r:44431e00-de7e-4f6b-8825-857a6dbdd309(com.mbeddr.mpsutil.ecore.testing.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
   </languages>
   <imports>
     <import index="3yw8" ref="r:b5d28a75-8cfb-4432-902c-b787795e0ea8(com.mbeddr.mpsutil.ecore.testing.structure)" implicit="true" />
@@ -57,7 +57,7 @@
       <node concept="PMmxH" id="rt4C5o1OTA" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <node concept="VechU" id="rt4C5o1OXS" role="3F10Kt">
-          <property role="Vb096" value="blue" />
+          <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F1sOY" id="rt4C5o1Ji_" role="3EZMnx">
@@ -70,7 +70,7 @@
       <node concept="3F0ifn" id="rt4C5o1JiJ" role="3EZMnx">
         <property role="3F0ifm" value="equals" />
         <node concept="VechU" id="rt4C5o1Jn7" role="3F10Kt">
-          <property role="Vb096" value="blue" />
+          <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F1sOY" id="rt4C5o1Jnj" role="3EZMnx">
@@ -92,7 +92,7 @@
       <node concept="PMmxH" id="oUNR1QQ4XH" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <node concept="VechU" id="oUNR1QQ4ZF" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="fLwANPr/green" />
         </node>
       </node>
       <node concept="3EZMnI" id="oUNR1QQ35N" role="3EZMnx">
@@ -102,7 +102,7 @@
         <node concept="3F0ifn" id="oUNR1QQ35R" role="3EZMnx">
           <property role="3F0ifm" value="Path To Ecore File: " />
           <node concept="VechU" id="oUNR1QQ3Ql" role="3F10Kt">
-            <property role="Vb096" value="blue" />
+            <property role="Vb096" value="fLwANPu/blue" />
           </node>
         </node>
         <node concept="2iRfu4" id="oUNR1QQ35S" role="2iSdaV" />
@@ -117,7 +117,7 @@
         <node concept="3F0ifn" id="oUNR1QQ3QJ" role="3EZMnx">
           <property role="3F0ifm" value="MPS Meta Model: " />
           <node concept="VechU" id="oUNR1QQ3QK" role="3F10Kt">
-            <property role="Vb096" value="blue" />
+            <property role="Vb096" value="fLwANPu/blue" />
           </node>
         </node>
         <node concept="2iRfu4" id="oUNR1QQ3QL" role="2iSdaV" />
@@ -132,7 +132,7 @@
         <node concept="3F0ifn" id="oUNR1QQ3R5" role="3EZMnx">
           <property role="3F0ifm" value="MPS Model Instance: " />
           <node concept="VechU" id="oUNR1QQ3R6" role="3F10Kt">
-            <property role="Vb096" value="blue" />
+            <property role="Vb096" value="fLwANPu/blue" />
           </node>
         </node>
         <node concept="2iRfu4" id="oUNR1QQ3R7" role="2iSdaV" />

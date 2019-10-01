@@ -2,6 +2,7 @@
 <model ref="r:74143256-d104-4a94-8780-1d2ad3f1a97c(com.mbeddr.mpsutil.extensionclass.typesystem)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -89,11 +90,8 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -109,6 +107,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="2329696648445392942" name="jetbrains.mps.lang.typesystem.structure.CheckingRuleReference" flags="ng" index="dlsrG">
+        <reference id="2329696648445392943" name="declaration" index="dlsrH" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -121,9 +122,6 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1179832490862" name="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" flags="nn" index="2NvLDW" />
-      <concept id="1212056081426" name="jetbrains.mps.lang.typesystem.structure.AbstractInequationStatement" flags="ng" index="Ob1k8">
-        <property id="1212056105818" name="inequationPriority" index="Ob790" />
-      </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
       </concept>
@@ -135,7 +133,9 @@
         <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
-      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G">
+        <child id="2329696648448631592" name="overridenRules" index="dp_RE" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
@@ -205,6 +205,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -254,7 +262,6 @@
   </registry>
   <node concept="18kY7G" id="4X7wieqoMQ0">
     <property role="TrG5h" value="parametersCount" />
-    <property role="18ip37" value="true" />
     <node concept="3clFbS" id="4X7wieqoMQ1" role="18ibNy">
       <node concept="3cpWs8" id="hKa_1Ag" role="3cqZAp">
         <node concept="3cpWsn" id="hKa_1Ah" role="3cpWs9">
@@ -443,6 +450,9 @@
       <property role="TrG5h" value="iMethodCall" />
       <ref role="1YaFvo" to="sh3l:4X7wieq8Uik" resolve="ExtensionClassMethodCall" />
     </node>
+    <node concept="dlsrG" id="17qUVvSZofn" role="dp_RE">
+      <ref role="dlsrH" to="tpeh:hKa$$$K" resolve="check_parametersCount" />
+    </node>
   </node>
   <node concept="1YbPZF" id="4X7wieqp0y4">
     <property role="TrG5h" value="typeof_ExtensionClassMethodCall" />
@@ -493,8 +503,19 @@
         </node>
       </node>
       <node concept="3SKdUt" id="5ZbU$b1EWBs" role="3cqZAp">
-        <node concept="3SKdUq" id="5ZbU$b1EWBt" role="3SKWNk">
-          <property role="3SKdUp" value="check the inference context" />
+        <node concept="1PaTwC" id="17qUVvSZkO1" role="3ndbpf">
+          <node concept="3oM_SD" id="17qUVvSZkO2" role="1PaTwD">
+            <property role="3oM_SC" value="check" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkO3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkO4" role="1PaTwD">
+            <property role="3oM_SC" value="inference" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkO5" role="1PaTwD">
+            <property role="3oM_SC" value="context" />
+          </node>
         </node>
       </node>
       <node concept="3clFbJ" id="4cxv$9$kS2O" role="3cqZAp">
@@ -513,8 +534,40 @@
             </node>
             <node concept="3clFbS" id="5ZbU$b1FuNr" role="2LFqv$">
               <node concept="3SKdUt" id="4cxv$9$kS9z" role="3cqZAp">
-                <node concept="3SKdUq" id="4cxv$9$kS9$" role="3SKWNk">
-                  <property role="3SKdUp" value="assume all unbound type vars outside an inference context are Object" />
+                <node concept="1PaTwC" id="17qUVvSZkO6" role="3ndbpf">
+                  <node concept="3oM_SD" id="17qUVvSZkO7" role="1PaTwD">
+                    <property role="3oM_SC" value="assume" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZkO8" role="1PaTwD">
+                    <property role="3oM_SC" value="all" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZkO9" role="1PaTwD">
+                    <property role="3oM_SC" value="unbound" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZkOa" role="1PaTwD">
+                    <property role="3oM_SC" value="type" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZkOb" role="1PaTwD">
+                    <property role="3oM_SC" value="vars" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZkOc" role="1PaTwD">
+                    <property role="3oM_SC" value="outside" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZkOd" role="1PaTwD">
+                    <property role="3oM_SC" value="an" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZkOe" role="1PaTwD">
+                    <property role="3oM_SC" value="inference" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZkOf" role="1PaTwD">
+                    <property role="3oM_SC" value="context" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZkOg" role="1PaTwD">
+                    <property role="3oM_SC" value="are" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZkOh" role="1PaTwD">
+                    <property role="3oM_SC" value="Object" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbF" id="5ZbU$b1FuNT" role="3cqZAp">
@@ -966,7 +1019,6 @@
         </node>
       </node>
       <node concept="1ZobV4" id="44CoXJM3HCv" role="3cqZAp">
-        <property role="Ob790" value="0" />
         <property role="3wDh2S" value="false" />
         <node concept="mw_s8" id="42GEWFmWpQ0" role="1ZfhKB">
           <node concept="1Z2H0r" id="42GEWFmWpQ1" role="mwGJk">
@@ -1090,7 +1142,6 @@
             <node concept="9aQIb" id="7PtaNzUmI6Y" role="9aQIa">
               <node concept="3clFbS" id="7PtaNzUmI6Z" role="9aQI4">
                 <node concept="1ZoDhX" id="7PtaNzUmI70" role="3cqZAp">
-                  <property role="Ob790" value="0" />
                   <property role="3wDh2S" value="true" />
                   <node concept="3Cnw8n" id="3v2v_L9L92r" role="FrUEy">
                     <ref role="QpYPw" to="tpeh:3v2v_L9koo3" resolve="AddCast" />

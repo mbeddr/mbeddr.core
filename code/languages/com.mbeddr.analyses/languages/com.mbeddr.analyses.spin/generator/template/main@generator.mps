@@ -2,12 +2,12 @@
 <model ref="r:e002630a-ed53-4195-9b41-7e73fd77f560(com.mbeddr.analyses.spin.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
   </languages>
   <imports>
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
@@ -88,11 +88,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -138,7 +135,6 @@
       </concept>
       <concept id="7595578942776868431" name="com.mbeddr.core.make.structure.EmptyLine" flags="ng" index="12Nxi1" />
       <concept id="3373914745211365206" name="com.mbeddr.core.make.structure.Variable" flags="ng" index="3G52F3">
-        <property id="7595578942777303019" name="assignmentType" index="12Lnk_" />
         <property id="3373914745211446888" name="value" index="3G5mJX" />
       </concept>
       <concept id="3373914745211590947" name="com.mbeddr.core.make.structure.TextCommandItem" flags="ng" index="3G69iQ">
@@ -212,6 +208,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
@@ -229,7 +233,6 @@
     <node concept="3G52F3" id="2bthWyzEzKk" role="12RR68">
       <property role="TrG5h" value="CC" />
       <property role="3G5mJX" value="gcc" />
-      <property role="12Lnk_" value="=" />
       <node concept="17Uvod" id="2bthWyzEzKl" role="lGtFl">
         <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211365206/3373914745211446888" />
         <property role="2qtEX9" value="value" />
@@ -260,7 +263,6 @@
     <node concept="3G52F3" id="2bthWyzEzKv" role="12RR68">
       <property role="TrG5h" value="CFLAGS" />
       <property role="3G5mJX" value="opts" />
-      <property role="12Lnk_" value="=" />
       <node concept="17Uvod" id="2bthWyzEzKw" role="lGtFl">
         <property role="2qtEX9" value="value" />
         <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211365206/3373914745211446888" />
@@ -291,7 +293,6 @@
     <node concept="3G52F3" id="2bthWyzEzKE" role="12RR68">
       <property role="TrG5h" value="SPIN" />
       <property role="3G5mJX" value="spin" />
-      <property role="12Lnk_" value="=" />
     </node>
     <node concept="12Nxi1" id="2bthWyzE_lA" role="12RR68" />
     <node concept="3O_Fa1" id="2bthWyzEAyd" role="12RR68">
@@ -567,8 +568,40 @@
                       <node concept="3clFbJ" id="1U03KaUGxRS" role="3cqZAp">
                         <node concept="3clFbS" id="1U03KaUGxRU" role="3clFbx">
                           <node concept="3SKdUt" id="1U03KaUGOmI" role="3cqZAp">
-                            <node concept="3SKdUq" id="1U03KaUGOmK" role="3SKWNk">
-                              <property role="3SKdUp" value="when using clang under windows one must specify the extension explicitly" />
+                            <node concept="1PaTwC" id="61XOOojFYOb" role="3ndbpf">
+                              <node concept="3oM_SD" id="61XOOojFYOc" role="1PaTwD">
+                                <property role="3oM_SC" value="when" />
+                              </node>
+                              <node concept="3oM_SD" id="61XOOojFYOd" role="1PaTwD">
+                                <property role="3oM_SC" value="using" />
+                              </node>
+                              <node concept="3oM_SD" id="61XOOojFYOe" role="1PaTwD">
+                                <property role="3oM_SC" value="clang" />
+                              </node>
+                              <node concept="3oM_SD" id="61XOOojFYOf" role="1PaTwD">
+                                <property role="3oM_SC" value="under" />
+                              </node>
+                              <node concept="3oM_SD" id="61XOOojFYOg" role="1PaTwD">
+                                <property role="3oM_SC" value="windows" />
+                              </node>
+                              <node concept="3oM_SD" id="61XOOojFYOh" role="1PaTwD">
+                                <property role="3oM_SC" value="one" />
+                              </node>
+                              <node concept="3oM_SD" id="61XOOojFYOi" role="1PaTwD">
+                                <property role="3oM_SC" value="must" />
+                              </node>
+                              <node concept="3oM_SD" id="61XOOojFYOj" role="1PaTwD">
+                                <property role="3oM_SC" value="specify" />
+                              </node>
+                              <node concept="3oM_SD" id="61XOOojFYOk" role="1PaTwD">
+                                <property role="3oM_SC" value="the" />
+                              </node>
+                              <node concept="3oM_SD" id="61XOOojFYOl" role="1PaTwD">
+                                <property role="3oM_SC" value="extension" />
+                              </node>
+                              <node concept="3oM_SD" id="61XOOojFYOm" role="1PaTwD">
+                                <property role="3oM_SC" value="explicitly" />
+                              </node>
                             </node>
                           </node>
                           <node concept="3clFbF" id="1U03KaUGFo3" role="3cqZAp">

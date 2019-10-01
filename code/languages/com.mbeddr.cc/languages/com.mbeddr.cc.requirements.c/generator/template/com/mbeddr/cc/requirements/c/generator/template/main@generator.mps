@@ -2,9 +2,9 @@
 <model ref="r:9590a8b4-24e6-4baf-b498-d58326d5ed83(com.mbeddr.cc.requirements.c.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -83,9 +83,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -397,7 +395,7 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="4MVAbAXtoL3" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="2OqwBi" id="4MVAbAXtoPN" role="2pJxcZ">
+                        <node concept="2OqwBi" id="4MVAbAXtoPN" role="28ntcv">
                           <node concept="30H73N" id="4MVAbAXtoM6" role="2Oq$k0" />
                           <node concept="2qgKlT" id="4MVAbAXtp2N" role="2OqNvi">
                             <ref role="37wK5l" to="tbr6:3Q5enzfMT4t" resolve="toTextString" />
@@ -427,7 +425,7 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="4MVAbAXtp5n" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="2OqwBi" id="4MVAbAXtp5o" role="2pJxcZ">
+                        <node concept="2OqwBi" id="4MVAbAXtp5o" role="28ntcv">
                           <node concept="30H73N" id="4MVAbAXtp5p" role="2Oq$k0" />
                           <node concept="2qgKlT" id="4MVAbAXtp5q" role="2OqNvi">
                             <ref role="37wK5l" to="tbr6:3Q5enzfMT4t" resolve="toTextString" />

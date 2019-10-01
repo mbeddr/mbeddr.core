@@ -2,6 +2,7 @@
 <model ref="r:adcd7296-cd7f-4373-b1b1-e2c580647861(com.mbeddr.mpsutil.editingGuide.constraints)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -96,11 +97,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
@@ -175,6 +173,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -268,8 +274,43 @@
       <node concept="3dgokm" id="3Wx3Ow93Qen" role="1N6uqs">
         <node concept="3clFbS" id="3Wx3Ow93Qep" role="2VODD2">
           <node concept="3SKdUt" id="3Wx3Ow97Yvy" role="3cqZAp">
-            <node concept="3SKdUq" id="3Wx3Ow97Yv$" role="3SKWNk">
-              <property role="3SKdUp" value="all root nodes in this model and imported ones without the exercises" />
+            <node concept="1PaTwC" id="17qUVvSZkI2" role="3ndbpf">
+              <node concept="3oM_SD" id="17qUVvSZkI3" role="1PaTwD">
+                <property role="3oM_SC" value="all" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkI4" role="1PaTwD">
+                <property role="3oM_SC" value="root" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkI5" role="1PaTwD">
+                <property role="3oM_SC" value="nodes" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkI6" role="1PaTwD">
+                <property role="3oM_SC" value="in" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkI7" role="1PaTwD">
+                <property role="3oM_SC" value="this" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkI8" role="1PaTwD">
+                <property role="3oM_SC" value="model" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkI9" role="1PaTwD">
+                <property role="3oM_SC" value="and" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIa" role="1PaTwD">
+                <property role="3oM_SC" value="imported" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIb" role="1PaTwD">
+                <property role="3oM_SC" value="ones" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIc" role="1PaTwD">
+                <property role="3oM_SC" value="without" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkId" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIe" role="1PaTwD">
+                <property role="3oM_SC" value="exercises" />
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="3Wx3Ow96AFD" role="3cqZAp">
@@ -365,8 +406,19 @@
           </node>
           <node concept="3clFbH" id="3Wx3Ow97Mym" role="3cqZAp" />
           <node concept="3SKdUt" id="3Wx3Ow97Zm8" role="3cqZAp">
-            <node concept="3SKdUq" id="3Wx3Ow97Zma" role="3SKWNk">
-              <property role="3SKdUp" value="all inline program fragments" />
+            <node concept="1PaTwC" id="17qUVvSZkIf" role="3ndbpf">
+              <node concept="3oM_SD" id="17qUVvSZkIg" role="1PaTwD">
+                <property role="3oM_SC" value="all" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIh" role="1PaTwD">
+                <property role="3oM_SC" value="inline" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIi" role="1PaTwD">
+                <property role="3oM_SC" value="program" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIj" role="1PaTwD">
+                <property role="3oM_SC" value="fragments" />
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="3Wx3Ow96Enx" role="3cqZAp">
@@ -445,8 +497,46 @@
       <node concept="3dgokm" id="PYICs0YmxC" role="1N6uqs">
         <node concept="3clFbS" id="PYICs0YmxD" role="2VODD2">
           <node concept="3SKdUt" id="PYICs0YmxE" role="3cqZAp">
-            <node concept="3SKdUq" id="PYICs0YmxF" role="3SKWNk">
-              <property role="3SKdUp" value="all nodes in this model and imported ones (without the exercises for convenience)" />
+            <node concept="1PaTwC" id="17qUVvSZkIk" role="3ndbpf">
+              <node concept="3oM_SD" id="17qUVvSZkIl" role="1PaTwD">
+                <property role="3oM_SC" value="all" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIm" role="1PaTwD">
+                <property role="3oM_SC" value="nodes" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIn" role="1PaTwD">
+                <property role="3oM_SC" value="in" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIo" role="1PaTwD">
+                <property role="3oM_SC" value="this" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIp" role="1PaTwD">
+                <property role="3oM_SC" value="model" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIq" role="1PaTwD">
+                <property role="3oM_SC" value="and" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIr" role="1PaTwD">
+                <property role="3oM_SC" value="imported" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIs" role="1PaTwD">
+                <property role="3oM_SC" value="ones" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIt" role="1PaTwD">
+                <property role="3oM_SC" value="(without" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIu" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIv" role="1PaTwD">
+                <property role="3oM_SC" value="exercises" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIw" role="1PaTwD">
+                <property role="3oM_SC" value="for" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkIx" role="1PaTwD">
+                <property role="3oM_SC" value="convenience)" />
+              </node>
             </node>
           </node>
           <node concept="1X3_iC" id="4fWdCdB0E5i" role="lGtFl">

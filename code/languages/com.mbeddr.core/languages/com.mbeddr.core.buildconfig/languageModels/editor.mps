@@ -4,9 +4,9 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="0" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
@@ -370,7 +370,7 @@
       <node concept="3F0ifn" id="6hM2_xVYyOH" role="3EZMnx">
         <property role="3F0ifm" value="NEVER GENERATE THIS MODEL" />
         <node concept="VechU" id="6hM2_xVYz5U" role="3F10Kt">
-          <property role="Vb096" value="red" />
+          <property role="Vb096" value="fLwANPn/red" />
         </node>
         <node concept="pkWqt" id="6hM2_xVYz5Z" role="pqm2j">
           <node concept="3clFbS" id="6hM2_xVYz60" role="2VODD2">
@@ -577,7 +577,7 @@
               <property role="VOm3f" value="true" />
             </node>
             <node concept="Vb9p2" id="6$I8XuFqaa9" role="3F10Kt">
-              <property role="Vbekb" value="QUERY" />
+              <property role="Vbekb" value="hL7GYu6/QUERY" />
               <node concept="17KAyr" id="6$I8XuFqaQX" role="17MNgL">
                 <node concept="3clFbS" id="6$I8XuFqaQY" role="2VODD2">
                   <node concept="3clFbJ" id="2_NeK7g26YP" role="3cqZAp">
@@ -1697,7 +1697,7 @@
           <property role="3F0ifm" value="disabled" />
           <node concept="Vb9p2" id="70OfiL2QkQK" role="3F10Kt" />
           <node concept="VechU" id="70OfiL2QkQP" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
           <node concept="pkWqt" id="70OfiL2Qliy" role="pqm2j">
             <node concept="3clFbS" id="70OfiL2Qliz" role="2VODD2">

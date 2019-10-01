@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -141,9 +141,7 @@
       </concept>
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -507,7 +505,7 @@
               <ref role="2pJxaS" to="hbjw:70BL6LoDTw9" resolve="StepType" />
               <node concept="2pIpSj" id="70BL6LoF2MF" role="2pJxcM">
                 <ref role="2pIpSl" to="hbjw:70BL6LoDTRZ" resolve="step" />
-                <node concept="36biLy" id="70BL6LoF2N4" role="2pJxcZ">
+                <node concept="36biLy" id="70BL6LoF2N4" role="28nt2d">
                   <node concept="13iPFW" id="70BL6LoF2Nf" role="36biLW" />
                 </node>
               </node>
@@ -1451,11 +1449,11 @@
                       <ref role="2pJxaS" to="tpee:gEShNN5" resolve="GenericNewExpression" />
                       <node concept="2pIpSj" id="2rKkvx5SKN3" role="2pJxcM">
                         <ref role="2pIpSl" to="tpee:gEShVi6" resolve="creator" />
-                        <node concept="2pJPED" id="2rKkvx5SNqM" role="2pJxcZ">
+                        <node concept="2pJPED" id="2rKkvx5SNqM" role="28nt2d">
                           <ref role="2pJxaS" to="tpee:hDpGfJe" resolve="ClassCreator" />
                           <node concept="2pIpSj" id="2rKkvx5T5lI" role="2pJxcM">
                             <ref role="2pIpSl" to="tpee:hDpISCB" resolve="constructorDeclaration" />
-                            <node concept="36biLy" id="2rKkvx5TeyM" role="2pJxcZ">
+                            <node concept="36biLy" id="2rKkvx5TeyM" role="28nt2d">
                               <node concept="37vLTw" id="2rKkvx5TeyX" role="36biLW">
                                 <ref role="3cqZAo" node="2rKkvx5SIoZ" resolve="defaultConstrunctor" />
                               </node>

@@ -81,9 +81,9 @@
     <property role="EcuMT" value="7780999115923947731" />
     <ref role="1TJDcQ" to="v7ag:6JVEnxIhAG0" resolve="AbstractInstanceConfiguration" />
     <node concept="1TJgyj" id="6JVEnxIj0hA" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="initParameters" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="7780999115924309094" />
       <ref role="20lvS9" node="6JVEnxIj9v0" resolve="CompositeComponentInstanceParam" />
     </node>
@@ -97,23 +97,20 @@
     <property role="EcuMT" value="7780999115924218270" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6JVEnxIiRsX" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="internalInstance" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7780999115924272957" />
       <ref role="20lvS9" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
     </node>
     <node concept="1TJgyj" id="6JVEnxIiRsY" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="internalPort" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7780999115924272958" />
       <ref role="20lvS9" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
     </node>
     <node concept="1TJgyj" id="6JVEnxIiE77" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="outsidePort" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7780999115924218311" />
       <ref role="20lvS9" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
     </node>
@@ -137,9 +134,8 @@
     <property role="EcuMT" value="7780999115924351522" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="6JVEnxIjaCT" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="param" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7780999115924351545" />
       <ref role="20lvS9" node="6JVEnxIj9v0" resolve="CompositeComponentInstanceParam" />
     </node>
@@ -150,9 +146,9 @@
     <property role="EcuMT" value="7780999115924356938" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="6JVEnxIjbX$" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="params" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="7780999115924356964" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
@@ -175,16 +171,14 @@
     <property role="EcuMT" value="4859596973183806269" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4dKKrcEbMHL" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="instance" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4859596973183806321" />
       <ref role="20lvS9" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
     </node>
     <node concept="1TJgyj" id="4dKKrcEgM1Y" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="providedPort" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4859596973185114238" />
       <ref role="20lvS9" to="v7ag:3TmmsQkD8YC" resolve="ProvidedPort" />
     </node>

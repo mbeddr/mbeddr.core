@@ -60,9 +60,9 @@
     <property role="EcuMT" value="185414526253001068" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="aiIotXwuAy" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="description" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="185414526253001122" />
       <ref role="20lvS9" to="phyx:2bng37sXCCN" resolve="MultilingualText" />
     </node>

@@ -2,9 +2,9 @@
 <model ref="44ad0baa-db6e-4793-9250-f08ab386ec56/r:a9d5f5c6-b55f-4bb9-8d35-0ab16f5a6136(com.mbeddr.mpsutil.langstats/com.mbeddr.mpsutil.langstats.editor)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="gbcn" ref="44ad0baa-db6e-4793-9250-f08ab386ec56/r:ae5422b8-2aa2-4f57-80cb-0636bf6344ae(com.mbeddr.mpsutil.langstats/com.mbeddr.mpsutil.langstats.structure)" />
@@ -24,9 +24,6 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
-      </concept>
-      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -237,7 +234,6 @@
         </node>
         <node concept="l2Vlx" id="2orFXO3GJC3" role="2iSdaV" />
         <node concept="1HlG4h" id="2orFXO3GJC6" role="3EZMnx">
-          <property role="1cu_pB" value="0" />
           <node concept="1HfYo3" id="2orFXO3GJC7" role="1HlULh">
             <node concept="3TQlhw" id="2orFXO3GJC8" role="1Hhtcw">
               <node concept="3clFbS" id="2orFXO3GJC9" role="2VODD2">

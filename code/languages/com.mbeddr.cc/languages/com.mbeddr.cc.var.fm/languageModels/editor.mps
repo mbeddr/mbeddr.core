@@ -2,7 +2,7 @@
 <model ref="r:1e889373-bd3c-4acd-972a-d9526584c597(com.mbeddr.cc.var.fm.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -101,7 +101,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
@@ -892,7 +891,6 @@
     <property role="3GE5qa" value="fm.constraints" />
     <ref role="1XX52x" to="qqyh:5USXI9Kzg5Z" resolve="StdChildrenConstraint" />
     <node concept="PMmxH" id="2AZbPfMcyJO" role="2wV5jI">
-      <property role="1cu_pB" value="0" />
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
@@ -1079,7 +1077,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0A7n" id="3MTLjr1zjHi" role="3EZMnx">
-          <ref role="1NtTu8" to="qqyh:6CjD3888YIG" resolve="type" />
+          <ref role="1NtTu8" to="qqyh:6JXsDxttw5j" resolve="type" />
         </node>
         <node concept="3F1sOY" id="3MTLjr1_4$0" role="3EZMnx">
           <ref role="1NtTu8" to="qqyh:1UlxOSesyDY" resolve="condition" />
@@ -1097,7 +1095,7 @@
         <node concept="3F0A7n" id="3MTLjr1_4$4" role="3EZMnx">
           <ref role="1NtTu8" to="qqyh:1UlxOSesyDX" resolve="message" />
           <node concept="Vb9p2" id="3MTLjr1_4$5" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
         </node>
       </node>

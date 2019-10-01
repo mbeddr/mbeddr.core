@@ -7,6 +7,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -91,11 +92,8 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -197,6 +195,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -950,7 +956,7 @@
               <node concept="2OqwBi" id="5YGS28LT9XQ" role="3fr31v">
                 <node concept="1Wqviy" id="5YGS28LXqwg" role="2Oq$k0" />
                 <node concept="liA8E" id="5YGS28LT9XS" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                   <node concept="Xl_RD" id="5YGS28LT9XT" role="37wK5m">
                     <property role="Xl_RC" value="=" />
                   </node>
@@ -1539,8 +1545,22 @@
           <node concept="3clFbH" id="5CkU_dHiiTv" role="3cqZAp" />
           <node concept="3clFbH" id="5CkU_dHiiTw" role="3cqZAp" />
           <node concept="3SKdUt" id="5CkU_dHiiTx" role="3cqZAp">
-            <node concept="3SKdUq" id="5CkU_dHiiTy" role="3SKWNk">
-              <property role="3SKdUp" value="we are inside an level-stack" />
+            <node concept="1PaTwC" id="6JXsDxtHdM$" role="3ndbpf">
+              <node concept="3oM_SD" id="6JXsDxtHdM_" role="1PaTwD">
+                <property role="3oM_SC" value="we" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxtHdMA" role="1PaTwD">
+                <property role="3oM_SC" value="are" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxtHdMB" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxtHdMC" role="1PaTwD">
+                <property role="3oM_SC" value="an" />
+              </node>
+              <node concept="3oM_SD" id="6JXsDxtHdMD" role="1PaTwD">
+                <property role="3oM_SC" value="level-stack" />
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="5CkU_dHiiTz" role="3cqZAp">

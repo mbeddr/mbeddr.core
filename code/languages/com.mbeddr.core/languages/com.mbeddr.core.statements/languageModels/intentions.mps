@@ -2,16 +2,16 @@
 <model ref="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -132,10 +132,8 @@
       </concept>
       <concept id="1240322627579" name="jetbrains.mps.lang.intentions.structure.IntentionParameter" flags="nn" index="38Zlrr" />
       <concept id="1240395258925" name="jetbrains.mps.lang.intentions.structure.ParameterizedIntentionDeclaration" flags="ig" index="3dkpOd">
-        <child id="1240395532443" name="queryBlock" index="3dlsAV" />
+        <child id="1240395532443" name="queryFunction" index="3dlsAV" />
       </concept>
-      <concept id="1812109616120608865" name="jetbrains.mps.lang.intentions.structure.ParameterizedDescriptionBlock" flags="in" index="1jPt1T" />
-      <concept id="1812109616120795373" name="jetbrains.mps.lang.intentions.structure.ParameterizedExecuteBlock" flags="in" index="1jPJzP" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -1002,7 +1000,7 @@
   <node concept="3dkpOd" id="3bfDwHbEJBw">
     <property role="TrG5h" value="wrapWithIWrapperExpression" />
     <ref role="2ZfgGC" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1jPt1T" id="3bfDwHbEJBx" role="2ZfVej">
+    <node concept="2S6ZIM" id="3bfDwHbEJBx" role="2ZfVej">
       <node concept="3clFbS" id="3bfDwHbEJBy" role="2VODD2">
         <node concept="3clFbF" id="3bfDwHbEXYU" role="3cqZAp">
           <node concept="3cpWs3" id="3bfDwHbEYIX" role="3clFbG">
@@ -1019,7 +1017,7 @@
         </node>
       </node>
     </node>
-    <node concept="1jPJzP" id="3bfDwHbEJBz" role="2ZfgGD">
+    <node concept="2Sbjvc" id="3bfDwHbEJBz" role="2ZfgGD">
       <node concept="3clFbS" id="3bfDwHbEJB$" role="2VODD2">
         <node concept="3clFbF" id="2cvVnUv95_b" role="3cqZAp">
           <node concept="2OqwBi" id="2cvVnUv95TT" role="3clFbG">
@@ -1199,7 +1197,7 @@
             <node concept="1OKiuA" id="4NFs2i9yB43" role="2OqNvi">
               <node concept="1XNTG" id="4NFs2i9yBcD" role="lBI5i" />
               <node concept="2B6iha" id="1wca57XU6qT" role="lGT1i">
-                <property role="1lyBwo" value="firstEditable" />
+                <property role="1lyBwo" value="1S2pyLby17G/firstEditable" />
               </node>
             </node>
           </node>

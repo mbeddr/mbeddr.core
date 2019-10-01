@@ -2,10 +2,10 @@
 <model ref="r:636418bd-de3f-4994-9ed6-575fd575a6a8(com.mbeddr.mpsutil.lantest.rt.checker.code_generator)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
@@ -221,11 +221,8 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -303,6 +300,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -804,8 +809,22 @@
               </node>
               <node concept="3clFbH" id="26HFG8DNfsK" role="3cqZAp" />
               <node concept="3SKdUt" id="5__329AzDsO" role="3cqZAp">
-                <node concept="3SKdUq" id="5__329AzDsQ" role="3SKWNk">
-                  <property role="3SKdUp" value="FIXME This code duplicates com.mbeddr.core.runconfiguration.pluginSolution.plugin.MakeUtils" />
+                <node concept="1PaTwC" id="17qUVvSZlur" role="3ndbpf">
+                  <node concept="3oM_SD" id="17qUVvSZlus" role="1PaTwD">
+                    <property role="3oM_SC" value="FIXME" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZlut" role="1PaTwD">
+                    <property role="3oM_SC" value="This" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluu" role="1PaTwD">
+                    <property role="3oM_SC" value="code" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluv" role="1PaTwD">
+                    <property role="3oM_SC" value="duplicates" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluw" role="1PaTwD">
+                    <property role="3oM_SC" value="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MakeUtils" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs8" id="68pU13V29oN" role="3cqZAp">
@@ -829,13 +848,86 @@
                 </node>
               </node>
               <node concept="3SKdUt" id="5__329AzsPX" role="3cqZAp">
-                <node concept="3SKdUq" id="5__329AzsPZ" role="3SKWNk">
-                  <property role="3SKdUp" value="FIXME Guys, please review this code, what's the reason to have countDownLatch in PM when GenerationStatus " />
+                <node concept="1PaTwC" id="17qUVvSZlux" role="3ndbpf">
+                  <node concept="3oM_SD" id="17qUVvSZluy" role="1PaTwD">
+                    <property role="3oM_SC" value="FIXME" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluz" role="1PaTwD">
+                    <property role="3oM_SC" value="Guys," />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZlu$" role="1PaTwD">
+                    <property role="3oM_SC" value="please" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZlu_" role="1PaTwD">
+                    <property role="3oM_SC" value="review" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluA" role="1PaTwD">
+                    <property role="3oM_SC" value="this" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluB" role="1PaTwD">
+                    <property role="3oM_SC" value="code," />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluC" role="1PaTwD">
+                    <property role="3oM_SC" value="what's" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluD" role="1PaTwD">
+                    <property role="3oM_SC" value="the" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluE" role="1PaTwD">
+                    <property role="3oM_SC" value="reason" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluF" role="1PaTwD">
+                    <property role="3oM_SC" value="to" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluG" role="1PaTwD">
+                    <property role="3oM_SC" value="have" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluH" role="1PaTwD">
+                    <property role="3oM_SC" value="countDownLatch" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluI" role="1PaTwD">
+                    <property role="3oM_SC" value="in" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluJ" role="1PaTwD">
+                    <property role="3oM_SC" value="PM" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluK" role="1PaTwD">
+                    <property role="3oM_SC" value="when" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluL" role="1PaTwD">
+                    <property role="3oM_SC" value="GenerationStatus" />
+                  </node>
                 </node>
               </node>
               <node concept="3SKdUt" id="5__329Azt6I" role="3cqZAp">
-                <node concept="3SKdUq" id="5__329Azt6J" role="3SKWNk">
-                  <property role="3SKdUp" value="      is available directly?" />
+                <node concept="1PaTwC" id="17qUVvSZluM" role="3ndbpf">
+                  <node concept="3oM_SD" id="17qUVvSZluN" role="1PaTwD">
+                    <property role="3oM_SC" value="" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluO" role="1PaTwD">
+                    <property role="3oM_SC" value="" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluP" role="1PaTwD">
+                    <property role="3oM_SC" value="" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluQ" role="1PaTwD">
+                    <property role="3oM_SC" value="" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluR" role="1PaTwD">
+                    <property role="3oM_SC" value="" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluS" role="1PaTwD">
+                    <property role="3oM_SC" value="" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluT" role="1PaTwD">
+                    <property role="3oM_SC" value="is" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluU" role="1PaTwD">
+                    <property role="3oM_SC" value="available" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZluV" role="1PaTwD">
+                    <property role="3oM_SC" value="directly?" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs8" id="7Z4mKjks8$K" role="3cqZAp">

@@ -2,7 +2,7 @@
 <model ref="r:92be9b01-6c9d-4dbc-b7d2-06feed9c261a(test.ex.ext.compositeComponents.basic@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
     <use id="54f2a59b-97bb-4c09-af92-928ebf9c5966" name="com.mbeddr.ext.compositecomponents" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
@@ -20,7 +20,9 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
-      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
+        <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
+      </concept>
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
@@ -123,9 +125,6 @@
   <node concept="1lH9Xt" id="K3KnZNL8bZ">
     <property role="TrG5h" value="MandatoryPortTest" />
     <node concept="1qefOq" id="5TsAcJo1hvO" role="1SKRRt">
-      <node concept="7CXmI" id="5TsAcJo1hvP" role="lGtFl">
-        <node concept="7OXhh" id="5TsAcJo1hvQ" role="7EUXB" />
-      </node>
       <node concept="N3F5e" id="5TsAcJo1hvR" role="1qenE9">
         <property role="TrG5h" value="MandatoryPortBugs" />
         <node concept="5JLF8" id="K3KnZNINum" role="N3F5h">
@@ -241,6 +240,11 @@
         </node>
         <node concept="2NXPZ9" id="5TsAcJo1hwk" role="N3F5h">
           <property role="TrG5h" value="empty_1390382393197_4" />
+        </node>
+        <node concept="7CXmI" id="5TsAcJo1hvP" role="lGtFl">
+          <node concept="7OXhh" id="5TsAcJo1hvQ" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
         </node>
       </node>
     </node>

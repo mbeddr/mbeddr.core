@@ -2,8 +2,9 @@
 <model ref="r:be61998d-497c-41de-b5ac-4591c5e1e32f(com.mbeddr.analyses.cbmc.generator.utils)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -120,11 +121,8 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -185,6 +183,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -691,8 +697,37 @@
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="3eQfn9zMg72" role="3clF47">
         <node concept="3SKdUt" id="1CPQBcoR2mr" role="3cqZAp">
-          <node concept="3SKdUq" id="1CPQBcoR2qi" role="3SKWNk">
-            <property role="3SKdUp" value="find a stable tmp var name between different code generations" />
+          <node concept="1PaTwC" id="61XOOojFYHU" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFYHV" role="1PaTwD">
+              <property role="3oM_SC" value="find" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYHW" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYHX" role="1PaTwD">
+              <property role="3oM_SC" value="stable" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYHY" role="1PaTwD">
+              <property role="3oM_SC" value="tmp" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYHZ" role="1PaTwD">
+              <property role="3oM_SC" value="var" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYI0" role="1PaTwD">
+              <property role="3oM_SC" value="name" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYI1" role="1PaTwD">
+              <property role="3oM_SC" value="between" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYI2" role="1PaTwD">
+              <property role="3oM_SC" value="different" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYI3" role="1PaTwD">
+              <property role="3oM_SC" value="code" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFYI4" role="1PaTwD">
+              <property role="3oM_SC" value="generations" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1CPQBcoBqgp" role="3cqZAp">

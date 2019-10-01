@@ -2,7 +2,7 @@
 <model ref="r:d1d515af-5af3-44f5-a946-5e460bea88a8(com.mbeddr.cc.var.rt.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -533,7 +533,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7H6_Qip5U2P" role="3EZMnx">
-        <property role="1cu_pB" value="2" />
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
         <ref role="1NtTu8" to="yvrq:7H6_Qip5U2L" resolve="featureExpression" />
         <ref role="1k5W1q" node="7H6_Qip5KrB" resolve="rt" />
       </node>
@@ -619,10 +619,10 @@
     <node concept="1Qtc8_" id="3cUcim$a$fR" role="IW6Ez">
       <node concept="3cWJ9i" id="3cUcim$a$fS" role="1Qtc8$">
         <node concept="CtIbL" id="3cUcim$a$fT" role="CtIbM">
-          <property role="CtIbK" value="LEFT" />
+          <property role="CtIbK" value="1A4kJjlVmVt/LEFT" />
         </node>
         <node concept="CtIbL" id="3cUcim$a$fU" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="L$LW2" id="3cUcim$a$fV" role="1Qtc8A" />
@@ -630,7 +630,7 @@
     <node concept="1Qtc8_" id="3cUcim$a$fY" role="IW6Ez">
       <node concept="3cWJ9i" id="3cUcim$a$fW" role="1Qtc8$">
         <node concept="CtIbL" id="3cUcim$a$fX" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="IWgqT" id="3cUcim$a$g0" role="1Qtc8A">
@@ -686,7 +686,7 @@
                 <node concept="1OKiuA" id="3cUcim$a$gr" role="2OqNvi">
                   <node concept="1Q80Hx" id="3cUcim$a$gs" role="lBI5i" />
                   <node concept="2B6iha" id="3cUcim$a$gt" role="lGT1i">
-                    <property role="1lyBwo" value="mostRelevant" />
+                    <property role="1lyBwo" value="59pBc0SIIVt/mostRelevant" />
                   </node>
                   <node concept="3cmrfG" id="3cUcim$a$gu" role="3dN3m$">
                     <property role="3cmrfH" value="-1" />

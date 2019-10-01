@@ -2,8 +2,8 @@
 <model ref="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
   </languages>
@@ -146,11 +146,8 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -185,6 +182,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -477,8 +482,49 @@
           </node>
         </node>
         <node concept="3SKdUt" id="6m31kJuCoyT" role="3cqZAp">
-          <node concept="3SKdUq" id="6m31kJuCoyV" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Remove hard coded string. Use a reference to the exact property in Abstractconceptdeclaration" />
+          <node concept="1PaTwC" id="17qUVvSZlqr" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZlqs" role="1PaTwD">
+              <property role="3oM_SC" value="TODO:" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqt" role="1PaTwD">
+              <property role="3oM_SC" value="Remove" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqu" role="1PaTwD">
+              <property role="3oM_SC" value="hard" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqv" role="1PaTwD">
+              <property role="3oM_SC" value="coded" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqw" role="1PaTwD">
+              <property role="3oM_SC" value="string." />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqx" role="1PaTwD">
+              <property role="3oM_SC" value="Use" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqy" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqz" role="1PaTwD">
+              <property role="3oM_SC" value="reference" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlq$" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlq_" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqA" role="1PaTwD">
+              <property role="3oM_SC" value="exact" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqB" role="1PaTwD">
+              <property role="3oM_SC" value="property" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqC" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqD" role="1PaTwD">
+              <property role="3oM_SC" value="Abstractconceptdeclaration" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="7CVN7FEjCER" role="3cqZAp">
@@ -1231,8 +1277,49 @@
           </node>
         </node>
         <node concept="3SKdUt" id="1XBwKttgJOQ" role="3cqZAp">
-          <node concept="3SKdUq" id="1XBwKttgJOR" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Remove hard coded string. Use a reference to the exact property in Abstractconceptdeclaration" />
+          <node concept="1PaTwC" id="17qUVvSZlqE" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZlqF" role="1PaTwD">
+              <property role="3oM_SC" value="TODO:" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqG" role="1PaTwD">
+              <property role="3oM_SC" value="Remove" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqH" role="1PaTwD">
+              <property role="3oM_SC" value="hard" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqI" role="1PaTwD">
+              <property role="3oM_SC" value="coded" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqJ" role="1PaTwD">
+              <property role="3oM_SC" value="string." />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqK" role="1PaTwD">
+              <property role="3oM_SC" value="Use" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqL" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqM" role="1PaTwD">
+              <property role="3oM_SC" value="reference" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqN" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqO" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqP" role="1PaTwD">
+              <property role="3oM_SC" value="exact" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqQ" role="1PaTwD">
+              <property role="3oM_SC" value="property" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqR" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlqS" role="1PaTwD">
+              <property role="3oM_SC" value="Abstractconceptdeclaration" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="1XBwKttgJOS" role="3cqZAp">

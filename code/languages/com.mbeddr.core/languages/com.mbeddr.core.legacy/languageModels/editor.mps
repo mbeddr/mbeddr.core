@@ -2,7 +2,7 @@
 <model ref="r:ddac0c79-8ede-44d2-b6d8-d977583295cf(com.mbeddr.core.legacy.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
   </languages>
   <imports>
     <import index="s5bn" ref="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" />
@@ -83,7 +83,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VechU" id="8YNEm0WK4B" role="3F10Kt">
-          <property role="Vb096" value="magenta" />
+          <property role="Vb096" value="fLwANPs/magenta" />
         </node>
       </node>
       <node concept="l2Vlx" id="8YNEm0WHcx" role="2iSdaV" />
@@ -93,7 +93,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VechU" id="8YNEm0WK4D" role="3F10Kt">
-          <property role="Vb096" value="magenta" />
+          <property role="Vb096" value="fLwANPs/magenta" />
         </node>
       </node>
     </node>
@@ -156,10 +156,10 @@
     <node concept="14StLt" id="69ZS$qQFzer" role="V601i">
       <property role="TrG5h" value="manualChangesInImportedHeader" />
       <node concept="Veino" id="69ZS$qQFzes" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
       </node>
       <node concept="30gYXW" id="69ZS$qQFzeu" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
       </node>
     </node>
   </node>
@@ -185,10 +185,10 @@
       <node concept="3F0A7n" id="4IbDSDgm$E2" role="3EZMnx">
         <ref role="1NtTu8" to="s5bn:4IbDSDgm$g9" resolve="value" />
         <node concept="VechU" id="4IbDSDgm$E3" role="3F10Kt">
-          <property role="Vb096" value="DARK_MAGENTA" />
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
         </node>
         <node concept="Vb9p2" id="4IbDSDgm$E4" role="3F10Kt">
-          <property role="Vbekb" value="ITALIC" />
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
         </node>
       </node>
     </node>

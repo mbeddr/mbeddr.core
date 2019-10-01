@@ -3,13 +3,14 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -110,11 +111,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -171,6 +169,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule">
@@ -235,8 +241,31 @@
           <node concept="3clFbS" id="2gGfLsWTj7t" role="3clFbx">
             <node concept="3clFbH" id="2gGfLsWTEIO" role="3cqZAp" />
             <node concept="3SKdUt" id="2gGfLsWTEQM" role="3cqZAp">
-              <node concept="3SKdUq" id="2gGfLsWTEQO" role="3SKWNk">
-                <property role="3SKdUp" value="retrieve the artifacts.root macro or create it otherwise" />
+              <node concept="1PaTwC" id="17qUVvSZl0u" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZl0v" role="1PaTwD">
+                  <property role="3oM_SC" value="retrieve" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0w" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0x" role="1PaTwD">
+                  <property role="3oM_SC" value="artifacts.root" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0y" role="1PaTwD">
+                  <property role="3oM_SC" value="macro" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0z" role="1PaTwD">
+                  <property role="3oM_SC" value="or" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0$" role="1PaTwD">
+                  <property role="3oM_SC" value="create" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0_" role="1PaTwD">
+                  <property role="3oM_SC" value="it" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0A" role="1PaTwD">
+                  <property role="3oM_SC" value="otherwise" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="2gGfLsWTs2u" role="3cqZAp">
@@ -397,8 +426,16 @@
             </node>
             <node concept="3clFbH" id="2gGfLsWTn1t" role="3cqZAp" />
             <node concept="3SKdUt" id="2gGfLsWTCfJ" role="3cqZAp">
-              <node concept="3SKdUq" id="2gGfLsWTCfL" role="3SKWNk">
-                <property role="3SKdUp" value="adding the new " />
+              <node concept="1PaTwC" id="17qUVvSZl0B" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZl0C" role="1PaTwD">
+                  <property role="3oM_SC" value="adding" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0D" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0E" role="1PaTwD">
+                  <property role="3oM_SC" value="new" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="2gGfLsWTCtQ" role="3cqZAp">
@@ -481,8 +518,31 @@
             </node>
             <node concept="3clFbH" id="2gGfLsWTDQG" role="3cqZAp" />
             <node concept="3SKdUt" id="2gGfLsWTDYu" role="3cqZAp">
-              <node concept="3SKdUq" id="2gGfLsWTDYw" role="3SKWNk">
-                <property role="3SKdUp" value="create the new dependency with the specified macro" />
+              <node concept="1PaTwC" id="17qUVvSZl0F" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZl0G" role="1PaTwD">
+                  <property role="3oM_SC" value="create" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0H" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0I" role="1PaTwD">
+                  <property role="3oM_SC" value="new" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0J" role="1PaTwD">
+                  <property role="3oM_SC" value="dependency" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0K" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0L" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0M" role="1PaTwD">
+                  <property role="3oM_SC" value="specified" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZl0N" role="1PaTwD">
+                  <property role="3oM_SC" value="macro" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="2gGfLsWTCnb" role="3cqZAp">
@@ -525,8 +585,25 @@
           <node concept="9aQIb" id="2gGfLsWTj9E" role="9aQIa">
             <node concept="3clFbS" id="2gGfLsWTj9F" role="9aQI4">
               <node concept="3SKdUt" id="2gGfLsWTE2U" role="3cqZAp">
-                <node concept="3SKdUq" id="2gGfLsWTE2W" role="3SKWNk">
-                  <property role="3SKdUp" value="just add the dependency without macro" />
+                <node concept="1PaTwC" id="17qUVvSZl0O" role="3ndbpf">
+                  <node concept="3oM_SD" id="17qUVvSZl0P" role="1PaTwD">
+                    <property role="3oM_SC" value="just" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZl0Q" role="1PaTwD">
+                    <property role="3oM_SC" value="add" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZl0R" role="1PaTwD">
+                    <property role="3oM_SC" value="the" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZl0S" role="1PaTwD">
+                    <property role="3oM_SC" value="dependency" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZl0T" role="1PaTwD">
+                    <property role="3oM_SC" value="without" />
+                  </node>
+                  <node concept="3oM_SD" id="17qUVvSZl0U" role="1PaTwD">
+                    <property role="3oM_SC" value="macro" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbF" id="2gGfLsWTlUq" role="3cqZAp">
@@ -555,8 +632,31 @@
         </node>
         <node concept="3clFbH" id="2gGfLsWTEd6" role="3cqZAp" />
         <node concept="3SKdUt" id="2gGfLsWTEmD" role="3cqZAp">
-          <node concept="3SKdUq" id="2gGfLsWTEmF" role="3SKWNk">
-            <property role="3SKdUp" value="add the new dependency to the Buiold Project" />
+          <node concept="1PaTwC" id="17qUVvSZl0V" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZl0W" role="1PaTwD">
+              <property role="3oM_SC" value="add" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl0X" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl0Y" role="1PaTwD">
+              <property role="3oM_SC" value="new" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl0Z" role="1PaTwD">
+              <property role="3oM_SC" value="dependency" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl10" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl11" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl12" role="1PaTwD">
+              <property role="3oM_SC" value="Buiold" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl13" role="1PaTwD">
+              <property role="3oM_SC" value="Project" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="2gGfLsWTjaO" role="3cqZAp">
@@ -578,8 +678,40 @@
         </node>
         <node concept="3clFbH" id="2gGfLsWTE_a" role="3cqZAp" />
         <node concept="3SKdUt" id="2gGfLsWTEwv" role="3cqZAp">
-          <node concept="3SKdUq" id="2gGfLsWTEwx" role="3SKWNk">
-            <property role="3SKdUp" value="add dependencies to the new BuildProject on the model + module" />
+          <node concept="1PaTwC" id="17qUVvSZl14" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZl15" role="1PaTwD">
+              <property role="3oM_SC" value="add" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl16" role="1PaTwD">
+              <property role="3oM_SC" value="dependencies" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl17" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl18" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl19" role="1PaTwD">
+              <property role="3oM_SC" value="new" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1a" role="1PaTwD">
+              <property role="3oM_SC" value="BuildProject" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1b" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1c" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1d" role="1PaTwD">
+              <property role="3oM_SC" value="model" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1e" role="1PaTwD">
+              <property role="3oM_SC" value="+" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1f" role="1PaTwD">
+              <property role="3oM_SC" value="module" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="2gGfLsWUd4H" role="3cqZAp">
@@ -693,8 +825,43 @@
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2gGfLsWVk2g" role="3clF47">
         <node concept="3SKdUt" id="2YK7iA9Smmz" role="3cqZAp">
-          <node concept="3SKdUq" id="2YK7iA9Smm_" role="3SKWNk">
-            <property role="3SKdUp" value="we check, if any of the transitive dependencies requires the dep. BuildProject" />
+          <node concept="1PaTwC" id="17qUVvSZl1g" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZl1h" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1i" role="1PaTwD">
+              <property role="3oM_SC" value="check," />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1j" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1k" role="1PaTwD">
+              <property role="3oM_SC" value="any" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1l" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1m" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1n" role="1PaTwD">
+              <property role="3oM_SC" value="transitive" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1o" role="1PaTwD">
+              <property role="3oM_SC" value="dependencies" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1p" role="1PaTwD">
+              <property role="3oM_SC" value="requires" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1q" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1r" role="1PaTwD">
+              <property role="3oM_SC" value="dep." />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZl1s" role="1PaTwD">
+              <property role="3oM_SC" value="BuildProject" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="2YK7iA9SkXD" role="3cqZAp">

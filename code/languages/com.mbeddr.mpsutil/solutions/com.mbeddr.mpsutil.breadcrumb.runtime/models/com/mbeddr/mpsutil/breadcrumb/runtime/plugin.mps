@@ -12,8 +12,8 @@
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
   </languages>
   <imports>
@@ -483,7 +483,6 @@
         <reference id="145956936287604889" name="formDeclaration" index="1DUXIm" />
       </concept>
       <concept id="145956936283289547" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceForm" flags="ng" index="1DFvN4">
-        <property id="1101080154068563577" name="scope" index="3NeIjD" />
         <child id="1210676918600" name="beforeWriteBlockProject" index="3xXVxh" />
         <child id="145956936283569518" name="properties" index="1DEjpx" />
       </concept>
@@ -1227,7 +1226,7 @@
         </node>
         <node concept="3clFbH" id="4o4$mVTA4_4" role="3cqZAp" />
         <node concept="RRSsy" id="42VTAcDfnHw" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="4o4$mVTA4_6" role="RRSoy">
             <node concept="37vLTw" id="4o4$mVTA4_7" role="3uHU7w">
               <ref role="3cqZAo" node="4o4$mVTA4$S" resolve="rootNode" />
@@ -1241,7 +1240,7 @@
         <node concept="3clFbJ" id="4o4$mVTA4_a" role="3cqZAp">
           <node concept="3clFbS" id="4o4$mVTA4_b" role="3clFbx">
             <node concept="RRSsy" id="42VTAcDfnHE" role="3cqZAp">
-              <property role="RRSoG" value="trace" />
+              <property role="RRSoG" value="gZ5frni/trace" />
               <node concept="3cpWs3" id="4o4$mVTA4_d" role="RRSoy">
                 <node concept="37vLTw" id="4o4$mVTA4_e" role="3uHU7w">
                   <ref role="3cqZAo" node="4o4$mVTA4$Z" resolve="nodePointer" />
@@ -1279,7 +1278,7 @@
             </node>
             <node concept="3clFbH" id="4o4$mVTA4_s" role="3cqZAp" />
             <node concept="RRSsy" id="42VTAcDfnHO" role="3cqZAp">
-              <property role="RRSoG" value="trace" />
+              <property role="RRSoG" value="gZ5frni/trace" />
               <node concept="3cpWs3" id="4o4$mVTA4_u" role="RRSoy">
                 <node concept="37vLTw" id="4o4$mVTA4_v" role="3uHU7w">
                   <ref role="3cqZAo" node="4o4$mVTA4_i" resolve="descendants" />
@@ -1345,7 +1344,7 @@
           <node concept="9aQIb" id="4o4$mVTA4A5" role="9aQIa">
             <node concept="3clFbS" id="4o4$mVTA4A6" role="9aQI4">
               <node concept="RRSsy" id="42VTAcDfnHY" role="3cqZAp">
-                <property role="RRSoG" value="trace" />
+                <property role="RRSoG" value="gZ5frni/trace" />
                 <node concept="3cpWs3" id="4o4$mVTA4A8" role="RRSoy">
                   <node concept="37vLTw" id="4o4$mVTA4A9" role="3uHU7w">
                     <ref role="3cqZAo" node="4o4$mVTA4$Z" resolve="nodePointer" />
@@ -1389,7 +1388,7 @@
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="4o4$mVTANua" role="3clF47">
         <node concept="RRSsy" id="42VTAcDfnI8" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="65h4zEqSyK6" role="RRSoy">
             <node concept="2OqwBi" id="65h4zEqSyK7" role="3uHU7w">
               <node concept="37vLTw" id="4o4$mVTATnQ" role="2Oq$k0">
@@ -1440,7 +1439,7 @@
           </node>
           <node concept="3clFbS" id="3VQE5s_Bex7" role="2LFqv$">
             <node concept="RRSsy" id="42VTAcDfnIu" role="3cqZAp">
-              <property role="RRSoG" value="trace" />
+              <property role="RRSoG" value="gZ5frni/trace" />
               <node concept="3cpWs3" id="3VQE5s_$oyW" role="RRSoy">
                 <node concept="2GrUjf" id="3VQE5s_BhXL" role="3uHU7w">
                   <ref role="2Gs0qQ" node="3VQE5s_Bex3" resolve="it" />
@@ -1454,7 +1453,7 @@
             <node concept="3clFbJ" id="3VQE5s_BigR" role="3cqZAp">
               <node concept="3clFbS" id="3VQE5s_BigU" role="3clFbx">
                 <node concept="RRSsy" id="42VTAcDfnIC" role="3cqZAp">
-                  <property role="RRSoG" value="trace" />
+                  <property role="RRSoG" value="gZ5frni/trace" />
                   <node concept="3cpWs3" id="2W7DBH1IKZW" role="RRSoy">
                     <node concept="2OqwBi" id="2W7DBH1ILHw" role="3uHU7w">
                       <node concept="2GrUjf" id="3VQE5s_BptZ" role="2Oq$k0">
@@ -2378,7 +2377,7 @@
                     <node concept="9aQIb" id="4CeXgFlwLZ$" role="9aQIa">
                       <node concept="3clFbS" id="4CeXgFlwLZ_" role="9aQI4">
                         <node concept="RRSsy" id="42VTAcDfnIQ" role="3cqZAp">
-                          <property role="RRSoG" value="trace" />
+                          <property role="RRSoG" value="gZ5frni/trace" />
                           <node concept="3cpWs3" id="4CeXgFlwPH3" role="RRSoy">
                             <node concept="2OqwBi" id="4CeXgFlwPYo" role="3uHU7w">
                               <node concept="37vLTw" id="4CeXgFlwPHo" role="2Oq$k0">
@@ -2418,7 +2417,7 @@
                     </node>
                     <node concept="3clFbS" id="JWythCLhI_" role="3clFbx">
                       <node concept="RRSsy" id="42VTAcDfnJ4" role="3cqZAp">
-                        <property role="RRSoG" value="trace" />
+                        <property role="RRSoG" value="gZ5frni/trace" />
                         <node concept="3cpWs3" id="4CeXgFlwKnu" role="RRSoy">
                           <node concept="2OqwBi" id="4CeXgFlwKS6" role="3uHU7w">
                             <node concept="37vLTw" id="4CeXgFlwKnN" role="2Oq$k0">
@@ -3439,7 +3438,7 @@
         </node>
         <node concept="3clFbH" id="61Pvu7KFmRO" role="3cqZAp" />
         <node concept="RRSsy" id="42VTAcDfnG$" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="6orTcRHWonR" role="RRSoy">
             <node concept="37vLTw" id="6orTcRHWoP4" role="3uHU7w">
               <ref role="3cqZAo" node="3JrMqIyfmCS" resolve="rootNode" />
@@ -3463,7 +3462,7 @@
         </node>
         <node concept="3clFbH" id="6orTcRHWphI" role="3cqZAp" />
         <node concept="RRSsy" id="42VTAcDfnGI" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="6orTcRHWuGk" role="RRSoy">
             <node concept="37vLTw" id="6orTcRHWv8A" role="3uHU7w">
               <ref role="3cqZAo" node="61Pvu7KAf2P" resolve="breadcrumbPanel" />
@@ -3508,7 +3507,7 @@
             </node>
             <node concept="3clFbH" id="3$xysz6GUvw" role="3cqZAp" />
             <node concept="RRSsy" id="42VTAcDfnGS" role="3cqZAp">
-              <property role="RRSoG" value="trace" />
+              <property role="RRSoG" value="gZ5frni/trace" />
               <node concept="3cpWs3" id="3$xysz6H06A" role="RRSoy">
                 <node concept="37vLTw" id="3$xysz6H0UE" role="3uHU7w">
                   <ref role="3cqZAo" node="3JrMqIyl47Z" resolve="breadcrumbs" />
@@ -3782,7 +3781,7 @@
         <node concept="3clFbJ" id="4CeXgFlrjqX" role="3cqZAp">
           <node concept="3clFbS" id="4CeXgFlrjr0" role="3clFbx">
             <node concept="RRSsy" id="42VTAcDfnHa" role="3cqZAp">
-              <property role="RRSoG" value="trace" />
+              <property role="RRSoG" value="gZ5frni/trace" />
               <node concept="Xl_RD" id="3nOU3_5aGQ9" role="RRSoy">
                 <property role="Xl_RC" value="no BreadcrumbManager" />
               </node>
@@ -3804,7 +3803,7 @@
         <node concept="3clFbJ" id="4CeXgFlrluz" role="3cqZAp">
           <node concept="3clFbS" id="4CeXgFlrluA" role="3clFbx">
             <node concept="RRSsy" id="42VTAcDfnHg" role="3cqZAp">
-              <property role="RRSoG" value="trace" />
+              <property role="RRSoG" value="gZ5frni/trace" />
               <node concept="Xl_RD" id="3nOU3_57uxC" role="RRSoy">
                 <property role="Xl_RC" value="breadcrumb disabled" />
               </node>
@@ -3980,7 +3979,7 @@
         </node>
         <node concept="3clFbH" id="4jPzBIIBkOF" role="3cqZAp" />
         <node concept="RRSsy" id="42VTAcDfnHm" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="4jPzBIIBscf" role="RRSoy">
             <node concept="37vLTw" id="4jPzBIIBsvA" role="3uHU7w">
               <ref role="3cqZAo" node="61Pvu7KFjql" resolve="rootNode" />
@@ -4318,7 +4317,6 @@
   </node>
   <node concept="1DFvN4" id="ty4hbPIVUW">
     <property role="TrG5h" value="Breadcrumb Preferences" />
-    <property role="3NeIjD" value="0" />
     <property role="3GE5qa" value="common" />
     <node concept="1DJMfN" id="ty4hbPIVUX" role="1DEjpx">
       <property role="TrG5h" value="showBreadcrumb" />
@@ -8249,7 +8247,7 @@
                     <node concept="9aQIb" id="4o4$mVU0CRk" role="9aQIa">
                       <node concept="3clFbS" id="4o4$mVU0CRl" role="9aQI4">
                         <node concept="RRSsy" id="42VTAcDfnRI" role="3cqZAp">
-                          <property role="RRSoG" value="trace" />
+                          <property role="RRSoG" value="gZ5frni/trace" />
                           <node concept="3cpWs3" id="4o4$mVU0CRn" role="RRSoy">
                             <node concept="37vLTw" id="4o4$mVUg07C" role="3uHU7w">
                               <ref role="3cqZAo" node="4o4$mVUg07y" resolve="sectionIndex" />
@@ -8284,7 +8282,7 @@
                     </node>
                     <node concept="3clFbS" id="4o4$mVU0CR_" role="3clFbx">
                       <node concept="RRSsy" id="42VTAcDfnRS" role="3cqZAp">
-                        <property role="RRSoG" value="trace" />
+                        <property role="RRSoG" value="gZ5frni/trace" />
                         <node concept="3cpWs3" id="4o4$mVU0CRB" role="RRSoy">
                           <node concept="37vLTw" id="4o4$mVUg07D" role="3uHU7w">
                             <ref role="3cqZAo" node="4o4$mVUg07y" resolve="sectionIndex" />
@@ -9534,7 +9532,7 @@
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="4o4$mVTzrGU" role="3clF47">
         <node concept="RRSsy" id="42VTAcDfnEU" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="5Q1XZgMwMQ8" role="RRSoy">
             <node concept="Xjq3P" id="5Q1XZgMwMQq" role="3uHU7w" />
             <node concept="Xl_RD" id="5Q1XZgMwMcG" role="3uHU7B">
@@ -9866,7 +9864,6 @@
                 </node>
               </node>
               <node concept="RRSsy" id="42VTAcDfnF4" role="3cqZAp">
-                <property role="RRSoG" value="debug" />
                 <node concept="3cpWs3" id="3nOU3_5od8_" role="RRSoy">
                   <node concept="37vLTw" id="3nOU3_5odel" role="3uHU7w">
                     <ref role="3cqZAo" node="61Pvu7KGmEt" resolve="node" />
@@ -10205,7 +10202,7 @@
                           </node>
                         </node>
                         <node concept="RRSsy" id="42VTAcDfnFe" role="3cqZAp">
-                          <property role="RRSoG" value="trace" />
+                          <property role="RRSoG" value="gZ5frni/trace" />
                           <node concept="3cpWs3" id="4E__2YAijRV" role="RRSoy">
                             <node concept="Xl_RD" id="4E__2YAijRW" role="3uHU7w">
                               <property role="Xl_RC" value=" editor disposed" />
@@ -10958,7 +10955,7 @@
         <node concept="3clFbJ" id="4o4$mVTBZ8D" role="3cqZAp">
           <node concept="3clFbS" id="4o4$mVTBZ8E" role="3clFbx">
             <node concept="RRSsy" id="42VTAcDfnEI" role="3cqZAp">
-              <property role="RRSoG" value="trace" />
+              <property role="RRSoG" value="gZ5frni/trace" />
               <node concept="Xl_RD" id="4o4$mVTBZ8G" role="RRSoy">
                 <property role="Xl_RC" value="no viewport change" />
               </node>
@@ -10978,7 +10975,7 @@
           </node>
         </node>
         <node concept="RRSsy" id="42VTAcDfnEO" role="3cqZAp">
-          <property role="RRSoG" value="trace" />
+          <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="Xl_RD" id="4o4$mVTBZ8Q" role="RRSoy">
             <property role="Xl_RC" value="viewport change" />
           </node>
@@ -11916,7 +11913,7 @@
         <node concept="3clFbJ" id="4o4$mVTGd39" role="3cqZAp">
           <node concept="3clFbS" id="4o4$mVTGd3a" role="3clFbx">
             <node concept="RRSsy" id="42VTAcDfnRy" role="3cqZAp">
-              <property role="RRSoG" value="trace" />
+              <property role="RRSoG" value="gZ5frni/trace" />
               <node concept="Xl_RD" id="4o4$mVTGd3c" role="RRSoy">
                 <property role="Xl_RC" value="no BreadcrumbManager" />
               </node>
@@ -11938,7 +11935,7 @@
         <node concept="3clFbJ" id="4o4$mVTGd3j" role="3cqZAp">
           <node concept="3clFbS" id="4o4$mVTGd3k" role="3clFbx">
             <node concept="RRSsy" id="42VTAcDfnRC" role="3cqZAp">
-              <property role="RRSoG" value="trace" />
+              <property role="RRSoG" value="gZ5frni/trace" />
               <node concept="Xl_RD" id="4o4$mVTGd3m" role="RRSoy">
                 <property role="Xl_RC" value="breadcrumb disabled" />
               </node>

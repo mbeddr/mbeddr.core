@@ -40,20 +40,19 @@
     <property role="EcuMT" value="97401520565568823" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="5q2yETTckS" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="content" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="97401520565568824" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="5q2yETTckT" role="1TKVEi">
       <property role="20kJfa" value="marginContents" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="97401520565568825" />
       <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
     </node>
     <node concept="1TJgyj" id="5q2yETTckU" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="styleClass" />
       <property role="IQ2ns" value="97401520565568826" />
       <ref role="20lvS9" to="tpee:g7pOWCK" resolve="Classifier" />

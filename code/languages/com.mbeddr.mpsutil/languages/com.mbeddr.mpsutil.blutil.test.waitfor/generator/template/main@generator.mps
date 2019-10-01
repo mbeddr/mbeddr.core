@@ -4,6 +4,7 @@
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -115,11 +116,8 @@
         <child id="1170075728144" name="expression" index="1HWFw0" />
         <child id="1170075736412" name="block" index="1HWHxc" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -190,6 +188,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -303,7 +309,7 @@
                       </node>
                       <node concept="3clFbS" id="HSidVhCy1S" role="1HWHxc">
                         <node concept="RRSsy" id="4IjegxhmNUT" role="3cqZAp">
-                          <property role="RRSoG" value="warn" />
+                          <property role="RRSoG" value="gZ5fksE/warn" />
                           <node concept="3cpWs3" id="4IjegxhmQYl" role="RRSoy">
                             <node concept="3cpWs3" id="4IjegxhmQYn" role="3uHU7B">
                               <node concept="Xl_RD" id="4IjegxhmQYo" role="3uHU7B">
@@ -458,7 +464,7 @@
                     <node concept="3clFbJ" id="3anL894Tua0" role="3cqZAp">
                       <node concept="3clFbS" id="3anL894Tua1" role="3clFbx">
                         <node concept="RRSsy" id="4IjegxhmzEz" role="3cqZAp">
-                          <property role="RRSoG" value="info" />
+                          <property role="RRSoG" value="h1akgim/info" />
                           <node concept="Xl_RD" id="4IjegxhmzE_" role="RRSoy">
                             <property role="Xl_RC" value="wait for condition to come true" />
                           </node>
@@ -496,7 +502,7 @@
                       <node concept="9aQIb" id="3anL894Tv3x" role="9aQIa">
                         <node concept="3clFbS" id="3anL894Tv3y" role="9aQI4">
                           <node concept="RRSsy" id="4IjegxhohDZ" role="3cqZAp">
-                            <property role="RRSoG" value="trace" />
+                            <property role="RRSoG" value="gZ5frni/trace" />
                             <node concept="Xl_RD" id="4IjegxhohE1" role="RRSoy">
                               <property role="Xl_RC" value="condition checked ok" />
                             </node>
@@ -539,8 +545,13 @@
                             </node>
                           </node>
                           <node concept="3SKdUt" id="3anL894TYut" role="3cqZAp">
-                            <node concept="3SKdUq" id="3anL894TYuv" role="3SKWNk">
-                              <property role="3SKdUp" value="test passed" />
+                            <node concept="1PaTwC" id="17qUVvSZkDP" role="3ndbpf">
+                              <node concept="3oM_SD" id="17qUVvSZkDQ" role="1PaTwD">
+                                <property role="3oM_SC" value="test" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkDR" role="1PaTwD">
+                                <property role="3oM_SC" value="passed" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -592,7 +603,7 @@
                 <node concept="2$JKZl" id="4IjegxhnNgn" role="3cqZAp">
                   <node concept="3clFbS" id="4IjegxhnNgp" role="2LFqv$">
                     <node concept="RRSsy" id="4IjegxhpU$W" role="3cqZAp">
-                      <property role="RRSoG" value="trace" />
+                      <property role="RRSoG" value="gZ5frni/trace" />
                       <node concept="3cpWs3" id="4IjegxhpUR$" role="RRSoy">
                         <node concept="Xl_RD" id="4IjegxhpU$Y" role="3uHU7B">
                           <property role="Xl_RC" value="suspending " />
