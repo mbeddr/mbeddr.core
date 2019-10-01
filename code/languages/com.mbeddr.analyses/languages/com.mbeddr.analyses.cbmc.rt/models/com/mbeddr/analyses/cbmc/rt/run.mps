@@ -10963,28 +10963,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="6GZ1x5Gjo9U" role="3cqZAp">
-              <node concept="3cpWsn" id="6GZ1x5Gjo9V" role="3cpWs9">
-                <property role="TrG5h" value="timestamp" />
-                <property role="3TUv4t" value="false" />
-                <node concept="3uibUv" id="6GZ1x5Gjo9W" role="1tU5fm">
-                  <ref role="3uigEE" to="zj7m:~Timestamp" resolve="Timestamp" />
-                </node>
-                <node concept="2ShNRf" id="6GZ1x5Gjo9X" role="33vP2m">
-                  <node concept="1pGfFk" id="6GZ1x5Gjo9Y" role="2ShVmc">
-                    <ref role="37wK5l" to="zj7m:~Timestamp.&lt;init&gt;(long)" resolve="Timestamp" />
-                    <node concept="2OqwBi" id="6GZ1x5Gjo9Z" role="37wK5m">
-                      <node concept="37vLTw" id="3IsZZljIB5F" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6GZ1x5Gjo9Q" resolve="date" />
-                      </node>
-                      <node concept="liA8E" id="6GZ1x5Gjoa1" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Date.getTime()" resolve="getTime" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbH" id="6GZ1x5Gjoa2" role="3cqZAp" />
             <node concept="3cpWs8" id="6GZ1x5Gjoa3" role="3cqZAp">
               <node concept="3cpWsn" id="6GZ1x5Gjoa4" role="3cpWs9">
@@ -11143,8 +11121,8 @@
                 <node concept="3cpWs3" id="6GZ1x5Gjob2" role="37vLTx">
                   <node concept="3cpWs3" id="6GZ1x5Gjob3" role="3uHU7B">
                     <node concept="3cpWs3" id="6GZ1x5Gjob4" role="3uHU7B">
-                      <node concept="37vLTw" id="3IsZZljIB5T" role="3uHU7w">
-                        <ref role="3cqZAo" node="6GZ1x5Gjo9V" resolve="timestamp" />
+                      <node concept="37vLTw" id="61XOOojH36V" role="3uHU7w">
+                        <ref role="3cqZAo" node="6GZ1x5Gjo9Q" resolve="date" />
                       </node>
                       <node concept="Xl_RD" id="6GZ1x5Gjob5" role="3uHU7B">
                         <property role="Xl_RC" value="&lt;td align=\&quot;right\&quot; colspan=\&quot;2\&quot;&gt;&lt;i&gt;Time of analysis:&lt;/i&gt; &lt;b&gt;" />
