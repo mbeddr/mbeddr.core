@@ -61,6 +61,8 @@
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="6f4m" ref="528ff3b9-5fc4-40dd-931f-c6ce3650640e/r:f69c3fa1-0e30-4980-84e2-190ae44e4c3d(jetbrains.mps.lang.migration.runtime/jetbrains.mps.lang.migration.runtime.base)" />
+    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
+    <import index="4o98" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.platform(MPS.Core/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1818,6 +1820,52 @@
             <node concept="3oM_SD" id="1Fd_RKNzgQy" role="1PaTwD">
               <property role="3oM_SC" value="cons" />
             </node>
+            <node concept="3oM_SD" id="3gLLjJU2UVJ" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="3gLLjJU2UW3" role="1PaTwD">
+              <property role="3oM_SC" value="access" />
+            </node>
+            <node concept="3oM_SD" id="3gLLjJU2UWo" role="1PaTwD">
+              <property role="3oM_SC" value="implementation" />
+            </node>
+            <node concept="3oM_SD" id="3gLLjJU2UX6" role="1PaTwD">
+              <property role="3oM_SC" value="ApplicationComponent" />
+            </node>
+            <node concept="3oM_SD" id="3gLLjJU2UYl" role="1PaTwD">
+              <property role="3oM_SC" value="through" />
+            </node>
+            <node concept="3oM_SD" id="3gLLjJU2UYP" role="1PaTwD">
+              <property role="3oM_SC" value="IDEA" />
+            </node>
+            <node concept="3oM_SD" id="3gLLjJU2UZm" role="1PaTwD">
+              <property role="3oM_SC" value="AppManager!" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3gLLjJU2MmX" role="3cqZAp">
+          <node concept="3cpWsn" id="3gLLjJU2MmY" role="3cpWs9">
+            <property role="TrG5h" value="mpsPlatform" />
+            <node concept="3uibUv" id="3gLLjJU2Mls" role="1tU5fm">
+              <ref role="3uigEE" to="4o98:~Platform" resolve="Platform" />
+            </node>
+            <node concept="2OqwBi" id="3gLLjJU2MmZ" role="33vP2m">
+              <node concept="2OqwBi" id="3gLLjJU2Mn0" role="2Oq$k0">
+                <node concept="2YIFZM" id="3gLLjJU2Mn1" role="2Oq$k0">
+                  <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                  <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+                </node>
+                <node concept="liA8E" id="3gLLjJU2Mn2" role="2OqNvi">
+                  <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
+                  <node concept="3VsKOn" id="3gLLjJU2Mn3" role="37wK5m">
+                    <ref role="3VsUkX" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3gLLjJU2Mn4" role="2OqNvi">
+                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getPlatform()" resolve="getPlatform" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1Fd_RKNyh$N" role="3cqZAp">
@@ -1828,7 +1876,10 @@
             </node>
             <node concept="2ShNRf" id="1Fd_RKNyh$P" role="33vP2m">
               <node concept="1pGfFk" id="1Fd_RKNyh$Q" role="2ShVmc">
-                <ref role="37wK5l" to="32g5:~ModulesMiner.&lt;init&gt;()" resolve="ModulesMiner" />
+                <ref role="37wK5l" to="32g5:~ModulesMiner.&lt;init&gt;(jetbrains.mps.components.ComponentHost)" resolve="ModulesMiner" />
+                <node concept="37vLTw" id="3gLLjJU2UMf" role="37wK5m">
+                  <ref role="3cqZAo" node="3gLLjJU2MmY" resolve="mpsPlatform" />
+                </node>
               </node>
             </node>
           </node>
