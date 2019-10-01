@@ -496,7 +496,7 @@
             <property role="3F0ifm" value="strategy:" />
           </node>
           <node concept="3F0A7n" id="49XubMptjxX" role="3EZMnx">
-            <ref role="1NtTu8" to="d0vh:49XubMptfQm" resolve="strategy" />
+            <ref role="1NtTu8" to="d0vh:61XOOojGe7k" resolve="strategy" />
           </node>
         </node>
         <node concept="3EZMnI" id="49XubMpt0GA" role="3EZMnx">
@@ -751,7 +751,7 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <node concept="Vb9p2" id="2CEi94eH1Ao" role="3F10Kt">
-              <property role="Vbekb" value="QUERY" />
+              <property role="Vbekb" value="hL7GYu6/QUERY" />
               <node concept="17KAyr" id="2CEi94eH1As" role="17MNgL">
                 <node concept="3clFbS" id="2CEi94eH1At" role="2VODD2">
                   <node concept="3clFbF" id="6vtRRikVsv0" role="3cqZAp">
@@ -813,11 +813,10 @@
       <node concept="l2Vlx" id="5ak6HMA0rek" role="2iSdaV" />
       <node concept="3F2HdR" id="5ak6HMA0re_" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <property role="1cu_pB" value="2" />
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
         <ref role="1NtTu8" to="x27k:5ak6HMA0ref" resolve="actuals" />
         <node concept="l2Vlx" id="5ak6HMA0reA" role="2czzBx" />
         <node concept="1HlG4h" id="5ak6HMA0sGi" role="2czzBI">
-          <property role="1cu_pB" value="0" />
           <node concept="1HfYo3" id="5ak6HMA0sGj" role="1HlULh">
             <node concept="3TQlhw" id="5ak6HMA0sGk" role="1Hhtcw">
               <node concept="3clFbS" id="5ak6HMA0sGl" role="2VODD2">

@@ -1197,7 +1197,6 @@
     </node>
     <node concept="3EZMnI" id="6GAl_xx8u7K" role="2wV5jI">
       <node concept="PMmxH" id="6GAl_xx8u7L" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="1k5W1q" node="5so5TTr6URT" resolve="asserting" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>

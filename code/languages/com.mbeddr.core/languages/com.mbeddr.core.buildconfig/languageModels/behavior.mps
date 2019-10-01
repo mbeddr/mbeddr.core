@@ -298,7 +298,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -339,6 +338,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
+      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -3895,11 +3897,8 @@
               <ref role="3cqZAo" node="5Hxjapwguln" resolve="result" />
             </node>
             <node concept="TSZUe" id="5Hxjapwgulu" role="2OqNvi">
-              <node concept="2OqwBi" id="47Hq2tr1PWa" role="25WWJ7">
-                <node concept="35c_gC" id="47Hq2tr1PuW" role="2Oq$k0">
-                  <ref role="35c_gD" to="51wr:4o9sgv8QoKi" resolve="Executable" />
-                </node>
-                <node concept="FGMqu" id="47Hq2tr1QLZ" role="2OqNvi" />
+              <node concept="3B5_sB" id="47Hq2tr1PWa" role="25WWJ7">
+                <ref role="3B5MYn" to="51wr:4o9sgv8QoKi" resolve="Executable" />
               </node>
             </node>
           </node>
@@ -3910,11 +3909,8 @@
               <ref role="3cqZAo" node="5Hxjapwguln" resolve="result" />
             </node>
             <node concept="TSZUe" id="5Hxjapwgulz" role="2OqNvi">
-              <node concept="2OqwBi" id="47Hq2tr1RGk" role="25WWJ7">
-                <node concept="35c_gC" id="47Hq2tr1Rd4" role="2Oq$k0">
-                  <ref role="35c_gD" to="51wr:2kkumeGQcAy" resolve="Library" />
-                </node>
-                <node concept="FGMqu" id="47Hq2tr1Ssh" role="2OqNvi" />
+              <node concept="3B5_sB" id="47Hq2tr1RGk" role="25WWJ7">
+                <ref role="3B5MYn" to="51wr:2kkumeGQcAy" resolve="Library" />
               </node>
             </node>
           </node>
