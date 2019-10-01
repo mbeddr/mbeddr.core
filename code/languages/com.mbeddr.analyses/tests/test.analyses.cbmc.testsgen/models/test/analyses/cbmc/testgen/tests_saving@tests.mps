@@ -119,7 +119,6 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -1992,7 +1991,6 @@
             <node concept="BaHAS" id="J0Nj4zYVaL" role="33vP2m">
               <property role="BaHAW" value="test.analyses.cbmc.testgen.testcode.tests_saving" />
               <property role="BaGAP" value="" />
-              <property role="BaBD8" value="gsw" />
             </node>
           </node>
         </node>
@@ -2211,7 +2209,6 @@
             <node concept="BaHAS" id="J0Nj4$02rW" role="33vP2m">
               <property role="BaHAW" value="test.analyses.cbmc.testgen.testcode.tests_saving" />
               <property role="BaGAP" value="" />
-              <property role="BaBD8" value="gsw" />
             </node>
           </node>
         </node>

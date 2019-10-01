@@ -204,7 +204,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -1421,7 +1420,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="7yZlKoqjuyd" role="1tU5fm" />
             <node concept="BaHAS" id="7yZlKoqjuye" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="cbmc_arguments" />
               <property role="BaGAP" value="" />
             </node>
@@ -1510,7 +1508,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="7yZlKoqjCiw" role="1tU5fm" />
             <node concept="BaHAS" id="7yZlKoqjCix" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="cbmc_arguments" />
               <property role="BaGAP" value="" />
             </node>
@@ -1668,7 +1665,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="7yZlKoqkLQL" role="1tU5fm" />
             <node concept="BaHAS" id="7yZlKoqkLQM" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="cbmc_arguments" />
               <property role="BaGAP" value="" />
             </node>
@@ -1757,7 +1753,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="7yZlKoqkLRi" role="1tU5fm" />
             <node concept="BaHAS" id="7yZlKoqkLRj" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="cbmc_arguments" />
               <property role="BaGAP" value="" />
             </node>
@@ -1833,7 +1828,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="6b3VADyzkXm" role="1tU5fm" />
             <node concept="BaHAS" id="6b3VADyzkXn" role="33vP2m">
-              <property role="BaBD8" value="hppc" />
               <property role="BaHAW" value="cbmc_arguments" />
               <property role="BaGAP" value="" />
             </node>
