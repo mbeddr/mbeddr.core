@@ -162,7 +162,7 @@
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
       </concept>
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
@@ -287,7 +287,7 @@
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
-      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameShorteningConfiguration" flags="ng" index="MH4UO" />
+      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO" />
     </language>
   </registry>
   <node concept="N3F5e" id="73GSrjduqBj">
@@ -444,7 +444,6 @@
         </node>
         <node concept="1OFKyr" id="1zeZsIba3xX" role="3XIRFZ">
           <node concept="6VUUj" id="6zcb4tIerUQ" role="1OFKyo">
-            <property role="6VZRi" value="ms" />
             <node concept="2BOcij" id="6zcb4tIes0T" role="6VY68">
               <node concept="3TlMh9" id="6zcb4tIes0W" role="3TlMhJ">
                 <property role="2hmy$m" value="20" />
@@ -836,7 +835,7 @@
         </node>
         <node concept="1OFKyr" id="4hMIGYxmNEd" role="3XIRFZ">
           <node concept="6VUUj" id="6zcb4tIesbS" role="1OFKyo">
-            <property role="6VZRi" value="s" />
+            <property role="6VZRi" value="6zcb4tI8Sb8/s" />
             <node concept="3TlMh9" id="6zcb4tIeseU" role="6VY68">
               <property role="2hmy$m" value="2" />
             </node>

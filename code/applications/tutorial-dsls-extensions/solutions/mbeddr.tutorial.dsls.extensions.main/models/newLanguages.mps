@@ -1241,7 +1241,6 @@
       <property role="TrG5h" value="Adder" />
       <node concept="3mK28C" id="6URxCt9p_ol" role="3mK28z">
         <property role="TrG5h" value="a" />
-        <property role="3mK28V" value="0" />
         <node concept="26Vqqz" id="6URxCt9p_on" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -1249,14 +1248,13 @@
       </node>
       <node concept="3mK28C" id="6URxCt9p_op" role="3mK28z">
         <property role="TrG5h" value="b" />
-        <property role="3mK28V" value="0" />
         <node concept="26Vqqz" id="6URxCt9p_or" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
       </node>
       <node concept="3mK28C" id="6URxCt9p_oy" role="3mK28z">
-        <property role="3mK28V" value="1" />
+        <property role="3mK28V" value="3NI0$JEby1B/1" />
         <property role="TrG5h" value="sum" />
         <node concept="26Vqqz" id="6URxCt9p_o$" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -1319,14 +1317,13 @@
       <property role="TrG5h" value="Integrator" />
       <node concept="3mK28C" id="6URxCt9p_p2" role="3mK28z">
         <property role="TrG5h" value="signal" />
-        <property role="3mK28V" value="0" />
         <node concept="26Vqpq" id="6URxCt9p_p4" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
       </node>
       <node concept="3mK28C" id="6URxCt9p_p6" role="3mK28z">
-        <property role="3mK28V" value="1" />
+        <property role="3mK28V" value="3NI0$JEby1B/1" />
         <property role="TrG5h" value="integrated" />
         <node concept="26Vqpq" id="6URxCt9p_p8" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -2539,9 +2536,7 @@
   <node concept="N3F5e" id="5rgUaxOsJom">
     <property role="3GE5qa" value="examples.layers" />
     <property role="TrG5h" value="DatabaseStuff" />
-    <node concept="yJPcn" id="5rgUaxOsJXJ" role="lGtFl">
-      <property role="yJPmV" value="0" />
-    </node>
+    <node concept="yJPcn" id="5rgUaxOsJXJ" role="lGtFl" />
     <node concept="2EX0iR" id="5rgUaxOsOjK" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="IDatabaseInitializer" />
@@ -2558,7 +2553,7 @@
     <property role="3GE5qa" value="examples.layers" />
     <property role="TrG5h" value="PricingEngine" />
     <node concept="yJPcn" id="5rgUaxOsOkb" role="lGtFl">
-      <property role="yJPmV" value="1" />
+      <property role="yJPmV" value="5rgUaxOrVOf/1" />
     </node>
     <node concept="2EX0iR" id="5rgUaxOsOko" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -2584,7 +2579,7 @@
     <property role="3GE5qa" value="examples.layers" />
     <property role="TrG5h" value="Catalog" />
     <node concept="yJPcn" id="5rgUaxOsOkw" role="lGtFl">
-      <property role="yJPmV" value="1" />
+      <property role="yJPmV" value="5rgUaxOrVOf/1" />
     </node>
     <node concept="2EX0iR" id="5rgUaxOsOkG" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -2616,7 +2611,7 @@
     <property role="3GE5qa" value="examples.layers" />
     <property role="TrG5h" value="CatalogUI" />
     <node concept="yJPcn" id="5rgUaxOsWig" role="lGtFl">
-      <property role="yJPmV" value="2" />
+      <property role="yJPmV" value="5rgUaxOrVOc/2" />
     </node>
     <node concept="2EWCuY" id="5rgUaxOsWit" role="N3F5h">
       <property role="2OOxQR" value="true" />

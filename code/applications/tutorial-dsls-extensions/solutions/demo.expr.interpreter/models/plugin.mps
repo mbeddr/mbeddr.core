@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="usyq" ref="r:9cdd4513-d443-4d67-ade0-9f644c838532(demo.expr.structure)" />
@@ -114,7 +114,7 @@
       <ref role="qq9wM" to="usyq:3xDNhgd2C3P" resolve="NumberLiteral" />
       <node concept="3vetai" id="3xDNhgd4DYz" role="3vQZUl">
         <node concept="2YIFZM" id="3xDNhgd4DZ7" role="3vdyny">
-          <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+          <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
           <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
           <node concept="2OqwBi" id="3xDNhgd4E2i" role="37wK5m">
             <node concept="oxGPV" id="3xDNhgd4DZN" role="2Oq$k0" />

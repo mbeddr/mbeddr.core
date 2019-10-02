@@ -208,12 +208,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -1003,9 +1002,9 @@
             <node concept="2pJPEk" id="4QnOXkATaY$" role="3clFbG">
               <node concept="2pJPED" id="4QnOXkATb5M" role="2pJPEn">
                 <ref role="2pJxaS" to="i2y7:2Vizpn2Mx$z" resolve="PlainTextFragment" />
-                <node concept="2pJxcG" id="4QnOXkATba3" role="2pJxcM">
+                <node concept="2pJxcG" id="115mCuKBg8I" role="2pJxcM">
                   <ref role="2pJxcJ" to="i2y7:2Vizpn2Mx$$" resolve="text" />
-                  <node concept="ub8z3" id="4QnOXkATbo9" role="2pJxcZ" />
+                  <node concept="ub8z3" id="115mCuKBgbk" role="28ntcv" />
                 </node>
               </node>
             </node>
@@ -1325,13 +1324,13 @@
             <node concept="2pJPEk" id="4QnOXkBj5Pg" role="3clFbG">
               <node concept="2pJPED" id="4QnOXkBj5Ph" role="2pJPEn">
                 <ref role="2pJxaS" to="i2y7:5ak6HMA0Exx" resolve="Command" />
-                <node concept="2pIpSj" id="4QnOXkBj6EL" role="2pJxcM">
+                <node concept="2pIpSj" id="115mCuKBeJF" role="2pJxcM">
                   <ref role="2pIpSl" to="i2y7:2Vizpn2Mx$v" resolve="items" />
-                  <node concept="2pJPED" id="4QnOXkBj6L6" role="2pJxcZ">
+                  <node concept="2pJPED" id="115mCuKBeSc" role="28nt2d">
                     <ref role="2pJxaS" to="i2y7:2Vizpn2Mx$z" resolve="PlainTextFragment" />
-                    <node concept="2pJxcG" id="4QnOXkBj6XJ" role="2pJxcM">
+                    <node concept="2pJxcG" id="115mCuKBeXn" role="2pJxcM">
                       <ref role="2pJxcJ" to="i2y7:2Vizpn2Mx$$" resolve="text" />
-                      <node concept="ub8z3" id="4QnOXkBj74b" role="2pJxcZ" />
+                      <node concept="ub8z3" id="115mCuKBf03" role="28ntcv" />
                     </node>
                   </node>
                 </node>

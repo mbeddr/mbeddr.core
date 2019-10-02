@@ -23,14 +23,31 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+        <reference id="899069222106091871" name="oldMember" index="2wpffI" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclartaion" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
+        <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
+        <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
+        <child id="6491077959632451996" name="oldEnum" index="3lCyv" />
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
@@ -508,7 +525,7 @@
     <node concept="1TJgyi" id="4QnOXk_SC3u" role="1TKVEl">
       <property role="IQ2nx" value="5591170374820856030" />
       <property role="TrG5h" value="testResultLayout" />
-      <ref role="AX2Wp" node="4QnOXk_GDsn" resolve="TestResultLayout" />
+      <ref role="AX2Wp" node="115mCuKV8DU" resolve="TestResultLayout" />
     </node>
   </node>
   <node concept="1TIwiD" id="6TAwvhVRBLA">
@@ -660,18 +677,41 @@
       <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
     </node>
   </node>
-  <node concept="AxPO7" id="4QnOXk_GDsn">
-    <property role="3GE5qa" value="configItem" />
+  <node concept="25R3W" id="115mCuKV8DU">
     <property role="TrG5h" value="TestResultLayout" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <node concept="M4N5e" id="4QnOXk_GDso" role="M5hS2">
-      <property role="1uS6qv" value="0" />
-      <property role="1uS6qo" value="JUnit-like" />
+    <property role="3GE5qa" value="configItem" />
+    <property role="3F6X1D" value="5591170374817715991" />
+    <ref role="1H5jkz" node="115mCuKV8DW" resolve="junitLike" />
+    <node concept="2JgGob" id="115mCuKV8DV" role="lGtFl">
+      <property role="3scbB" value="5CkWgdpp3fb/int_ordinal" />
+      <property role="3sfsH" value="5CkWgdpp0p5/by_custom_methods" />
+      <node concept="AxPO7" id="4QnOXk_GDsn" role="3lCyv">
+        <property role="3GE5qa" value="configItem" />
+        <property role="TrG5h" value="TestResultLayout" />
+        <property role="3lZH7k" value="derive_from_internal_value" />
+        <property role="3F6X1D" value="5591170374817715991" />
+        <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+        <node concept="M4N5e" id="4QnOXk_GDso" role="M5hS2">
+          <property role="1uS6qv" value="0" />
+          <property role="1uS6qo" value="JUnit-like" />
+        </node>
+        <node concept="M4N5e" id="4QnOXk_GDsp" role="M5hS2">
+          <property role="1uS6qo" value="flat" />
+          <property role="1uS6qv" value="1" />
+        </node>
+      </node>
     </node>
-    <node concept="M4N5e" id="4QnOXk_GDsp" role="M5hS2">
-      <property role="1uS6qo" value="flat" />
-      <property role="1uS6qv" value="1" />
+    <node concept="25R33" id="115mCuKV8DW" role="25R1y">
+      <property role="TrG5h" value="junitLike" />
+      <property role="1L1pqM" value="JUnit-like" />
+      <property role="3tVfz5" value="5591170374817715992" />
+      <ref role="2wpffI" node="4QnOXk_GDso" />
+    </node>
+    <node concept="25R33" id="115mCuKV8DX" role="25R1y">
+      <property role="TrG5h" value="flat" />
+      <property role="1L1pqM" value="flat" />
+      <property role="3tVfz5" value="5591170374817715993" />
+      <ref role="2wpffI" node="4QnOXk_GDsp" />
     </node>
   </node>
 </model>

@@ -2,7 +2,7 @@
 <model ref="r:d2dd5f17-6f72-4fd4-8b55-407c336ddb2d(mbeddr.tutorial.metadata.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
   </languages>
   <imports>
     <import index="od47" ref="r:3cf56826-6fbe-46d2-acbd-1aca19d54159(mbeddr.tutorial.metadata.structure)" />
@@ -128,7 +128,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="2zx$mQQxDp$" role="3EZMnx">
-        <ref role="1NtTu8" to="od47:2zx$mQQxDpy" resolve="activity" />
+        <ref role="1NtTu8" to="od47:115mCuLnE1w" resolve="activity" />
       </node>
     </node>
   </node>

@@ -52,9 +52,9 @@
     <property role="EcuMT" value="2572590289490699031" />
     <ref role="1TJDcQ" to="tpce:2A8AB0r$C6l" resolve="AttributeInfo" />
     <node concept="1TJgyj" id="55YMheoaiO9" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="wrong_spellings" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5872352050132102409" />
       <ref role="20lvS9" node="55YMheoaiOh" resolve="SpellingMistake" />
     </node>
@@ -75,9 +75,9 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="55YMheoeWBW" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="alternatives" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5872352050133322236" />
       <ref role="20lvS9" node="55YMheoeGD1" resolve="Alternative" />
     </node>

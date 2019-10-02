@@ -239,7 +239,7 @@
         <node concept="1TJgyi" id="6_CUGSFFpZF" role="3l_iP">
           <property role="TrG5h" value="assignmentType" />
           <property role="IQ2nx" value="7595578942777303019" />
-          <ref role="AX2Wp" node="6_CUGSFFpW0" resolve="VariableAssignmentType" />
+          <ref role="AX2Wp" node="6_CUGSFFpW0" resolve="VariablAssignmentType" />
         </node>
       </node>
     </node>
@@ -434,33 +434,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6_CUGSFHTH2" role="PzmwI">
       <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="6_CUGSFFpW0">
-    <property role="3GE5qa" value="variables" />
-    <property role="TrG5h" value="VariableAssignmentType" />
-    <property role="3lZH7k" value="custom" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <ref role="Qgau1" node="6_CUGSFFpW1" />
-    <node concept="M4N5e" id="6_CUGSFFpW1" role="M5hS2">
-      <property role="1uS6qo" value="=" />
-      <property role="1uS6qv" value="=" />
-      <property role="2fHolG" value="assign" />
-    </node>
-    <node concept="M4N5e" id="6_CUGSFFpWI" role="M5hS2">
-      <property role="1uS6qo" value=":=" />
-      <property role="1uS6qv" value=":=" />
-      <property role="2fHolG" value="expand" />
-    </node>
-    <node concept="M4N5e" id="6_CUGSFFpYb" role="M5hS2">
-      <property role="1uS6qo" value="?=" />
-      <property role="1uS6qv" value="?=" />
-      <property role="2fHolG" value="conditional" />
-    </node>
-    <node concept="M4N5e" id="2sFzOapsDlr" role="M5hS2">
-      <property role="1uS6qo" value="+=" />
-      <property role="1uS6qv" value="+=" />
-      <property role="2fHolG" value="append" />
     </node>
   </node>
   <node concept="PlHQZ" id="6_CUGSFHTGe">
@@ -686,7 +659,7 @@
   </node>
   <node concept="25R3W" id="13p6s1wtcL2">
     <property role="TrG5h" value="VariableAssignmentType" />
-    <property role="3GE5qa" value="var" />
+    <property role="3GE5qa" value="variables" />
     <property role="3F6X1D" value="7595578942777302784" />
     <ref role="1H5jkz" node="13p6s1wtcL4" resolve="assign" />
     <node concept="2JgGob" id="13p6s1wtcL3" role="lGtFl">
@@ -786,6 +759,68 @@
     <property role="R4oN_" value="make macro" />
     <property role="EcuMT" value="5591170374827384568" />
     <ref role="1TJDcQ" node="7CaEhHZNn5r" resolve="Macro" />
+  </node>
+  <node concept="25R3W" id="115mCuKV8D_">
+    <property role="TrG5h" value="VariablAssignmentType" />
+    <property role="3GE5qa" value="variables" />
+    <property role="3F6X1D" value="5855318100909942784" />
+    <ref role="1H5jkz" node="115mCuKV8DB" resolve="assign" />
+    <node concept="2JgGob" id="115mCuKV8DA" role="lGtFl">
+      <property role="3scbB" value="5CkWgdpp3eZ/string_presentation" />
+      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
+      <node concept="AxPO7" id="6_CUGSFFpW0" role="3lCyv">
+        <property role="3GE5qa" value="variables" />
+        <property role="TrG5h" value="VariablAssignmentType" />
+        <property role="3lZH7k" value="custom" />
+        <property role="3F6X1D" value="5855318100909942784" />
+        <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+        <ref role="Qgau1" node="6_CUGSFFpW1" />
+        <node concept="M4N5e" id="6_CUGSFFpW1" role="M5hS2">
+          <property role="1uS6qo" value="=" />
+          <property role="1uS6qv" value="=" />
+          <property role="2fHolG" value="assign" />
+        </node>
+        <node concept="M4N5e" id="6_CUGSFFpWI" role="M5hS2">
+          <property role="1uS6qo" value=":=" />
+          <property role="1uS6qv" value=":=" />
+          <property role="2fHolG" value="expand" />
+        </node>
+        <node concept="M4N5e" id="6_CUGSFFpYb" role="M5hS2">
+          <property role="1uS6qo" value="?=" />
+          <property role="1uS6qv" value="?=" />
+          <property role="2fHolG" value="conditional" />
+        </node>
+        <node concept="M4N5e" id="2sFzOapsDlr" role="M5hS2">
+          <property role="1uS6qo" value="+=" />
+          <property role="1uS6qv" value="+=" />
+          <property role="2fHolG" value="append" />
+        </node>
+      </node>
+    </node>
+    <node concept="25R33" id="115mCuKV8DB" role="25R1y">
+      <property role="TrG5h" value="assign" />
+      <property role="1L1pqM" value="=" />
+      <property role="3tVfz5" value="7595578942777302785" />
+      <ref role="2wpffI" node="6_CUGSFFpW1" />
+    </node>
+    <node concept="25R33" id="115mCuKV8DC" role="25R1y">
+      <property role="TrG5h" value="expand" />
+      <property role="1L1pqM" value=":=" />
+      <property role="3tVfz5" value="7595578942777302830" />
+      <ref role="2wpffI" node="6_CUGSFFpWI" />
+    </node>
+    <node concept="25R33" id="115mCuKV8DD" role="25R1y">
+      <property role="TrG5h" value="conditional" />
+      <property role="1L1pqM" value="?=" />
+      <property role="3tVfz5" value="7595578942777302923" />
+      <ref role="2wpffI" node="6_CUGSFFpYb" />
+    </node>
+    <node concept="25R33" id="115mCuKV8DE" role="25R1y">
+      <property role="TrG5h" value="append" />
+      <property role="1L1pqM" value="+=" />
+      <property role="3tVfz5" value="2822507107682784603" />
+      <ref role="2wpffI" node="2sFzOapsDlr" />
+    </node>
   </node>
 </model>
 

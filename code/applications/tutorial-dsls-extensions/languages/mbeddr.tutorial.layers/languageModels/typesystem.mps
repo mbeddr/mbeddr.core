@@ -100,6 +100,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1966870290088668520" name="jetbrains.mps.lang.smodel.structure.Enum_MembersOperation" flags="ng" index="2ViDtN" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -119,6 +120,9 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
+        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -126,6 +130,9 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -134,6 +141,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1171391069720" name="jetbrains.mps.baseLanguage.collections.structure.GetIndexOfOperation" flags="nn" index="2WmjW8" />
     </language>
   </registry>
   <node concept="18kY7G" id="5rgUaxOsj8$">
@@ -183,12 +191,22 @@
             <node concept="3cpWsn" id="5rgUaxOstuZ" role="3cpWs9">
               <property role="TrG5h" value="componentLayer" />
               <node concept="10Oyi0" id="5rgUaxOstuV" role="1tU5fm" />
-              <node concept="2OqwBi" id="5rgUaxOsty5" role="33vP2m">
-                <node concept="37vLTw" id="5rgUaxOstvL" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5rgUaxOstkH" resolve="l" />
+              <node concept="2OqwBi" id="115mCuLnE1G" role="33vP2m">
+                <node concept="2OqwBi" id="115mCuLnE1H" role="2Oq$k0">
+                  <node concept="1XH99k" id="115mCuLnE1I" role="2Oq$k0">
+                    <ref role="1XH99l" to="49b8:115mCuLnDX2" resolve="Layers" />
+                  </node>
+                  <node concept="2ViDtN" id="115mCuLnE1J" role="2OqNvi" />
                 </node>
-                <node concept="3TrcHB" id="5rgUaxOstQd" role="2OqNvi">
-                  <ref role="3TsBF5" to="49b8:5rgUaxOrVOj" resolve="layer" />
+                <node concept="2WmjW8" id="115mCuLnE1K" role="2OqNvi">
+                  <node concept="2OqwBi" id="5rgUaxOsty5" role="25WWJ7">
+                    <node concept="37vLTw" id="5rgUaxOstvL" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5rgUaxOstkH" resolve="l" />
+                    </node>
+                    <node concept="3TrcHB" id="5rgUaxOstQd" role="2OqNvi">
+                      <ref role="3TsBF5" to="49b8:115mCuLnE1m" resolve="layer" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -277,12 +295,22 @@
                 </node>
                 <node concept="3eNFk2" id="5rgUaxOsCg$" role="3eNLev">
                   <node concept="3y3z36" id="5rgUaxOsCSV" role="3eO9$A">
-                    <node concept="2OqwBi" id="5rgUaxOsD6E" role="3uHU7w">
-                      <node concept="37vLTw" id="5rgUaxOsCTm" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5rgUaxOszlE" resolve="provIfLayer" />
+                    <node concept="2OqwBi" id="115mCuLnE1M" role="3uHU7w">
+                      <node concept="2OqwBi" id="115mCuLnE1N" role="2Oq$k0">
+                        <node concept="1XH99k" id="115mCuLnE1O" role="2Oq$k0">
+                          <ref role="1XH99l" to="49b8:115mCuLnDX2" resolve="Layers" />
+                        </node>
+                        <node concept="2ViDtN" id="115mCuLnE1P" role="2OqNvi" />
                       </node>
-                      <node concept="3TrcHB" id="5rgUaxOsDqS" role="2OqNvi">
-                        <ref role="3TsBF5" to="49b8:5rgUaxOrVOj" resolve="layer" />
+                      <node concept="2WmjW8" id="115mCuLnE1Q" role="2OqNvi">
+                        <node concept="2OqwBi" id="5rgUaxOsD6E" role="25WWJ7">
+                          <node concept="37vLTw" id="5rgUaxOsCTm" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5rgUaxOszlE" resolve="provIfLayer" />
+                          </node>
+                          <node concept="3TrcHB" id="5rgUaxOsDqS" role="2OqNvi">
+                            <ref role="3TsBF5" to="49b8:115mCuLnE1m" resolve="layer" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                     <node concept="37vLTw" id="5rgUaxOsCkK" role="3uHU7B">
@@ -352,12 +380,22 @@
                 <node concept="3cpWsn" id="5rgUaxOsZjH" role="3cpWs9">
                   <property role="TrG5h" value="reqIfLayer" />
                   <node concept="10Oyi0" id="5rgUaxOsZiK" role="1tU5fm" />
-                  <node concept="2OqwBi" id="5rgUaxOsZjI" role="33vP2m">
-                    <node concept="37vLTw" id="5rgUaxOsZjJ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5rgUaxOsDv9" resolve="ifLayer" />
+                  <node concept="2OqwBi" id="115mCuLnE1S" role="33vP2m">
+                    <node concept="2OqwBi" id="115mCuLnE1T" role="2Oq$k0">
+                      <node concept="1XH99k" id="115mCuLnE1U" role="2Oq$k0">
+                        <ref role="1XH99l" to="49b8:115mCuLnDX2" resolve="Layers" />
+                      </node>
+                      <node concept="2ViDtN" id="115mCuLnE1V" role="2OqNvi" />
                     </node>
-                    <node concept="3TrcHB" id="5rgUaxOsZjK" role="2OqNvi">
-                      <ref role="3TsBF5" to="49b8:5rgUaxOrVOj" resolve="layer" />
+                    <node concept="2WmjW8" id="115mCuLnE1W" role="2OqNvi">
+                      <node concept="2OqwBi" id="5rgUaxOsZjI" role="25WWJ7">
+                        <node concept="37vLTw" id="5rgUaxOsZjJ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5rgUaxOsDv9" resolve="ifLayer" />
+                        </node>
+                        <node concept="3TrcHB" id="5rgUaxOsZjK" role="2OqNvi">
+                          <ref role="3TsBF5" to="49b8:115mCuLnE1m" resolve="layer" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

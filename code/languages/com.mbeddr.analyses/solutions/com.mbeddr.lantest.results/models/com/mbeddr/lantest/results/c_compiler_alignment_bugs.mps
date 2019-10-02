@@ -39,11 +39,11 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -172,10 +172,10 @@
     <node concept="3_UEaq" id="4rz8YcWCKo2" role="2Q9xDr">
       <node concept="3_UBHe" id="4rz8YcWCKoc" role="3_UBH6" />
     </node>
-    <node concept="2eOfOl" id="2bbAj1HmMpD" role="2ePNbc">
+    <node concept="29Nb31" id="115mCuL5T_V" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
-      <ref role="3oK8_y" node="7fmKiPEtW_4" resolve="portable" />
-      <node concept="2v9HqM" id="7PCj1T5GmYQ" role="2eOfOg">
+      <ref role="3oK8_y" node="7fmKiPEtW_1" resolve="Win32" />
+      <node concept="2v9HqM" id="115mCuL5TA0" role="2eOfOg">
         <ref role="2v9HqP" node="5atDsHNhyoO" resolve="bug4" />
       </node>
     </node>
