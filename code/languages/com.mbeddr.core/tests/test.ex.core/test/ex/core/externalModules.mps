@@ -31,9 +31,7 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -238,7 +236,7 @@
       <node concept="2vmPJf" id="2lgwE2U3u1F" role="2vmPJn">
         <property role="2vn0DO" value="true" />
         <property role="TrG5h" value="RunSuccessfully" />
-        <property role="2vmPJm" value="2lgwE2U2X_P/1" />
+        <property role="2vmPJm" value="1" />
         <property role="2vmPJh" value="It runs successfully" />
       </node>
     </node>
@@ -257,7 +255,6 @@
   <node concept="2v9HqL" id="7RiewQ_lHnP">
     <node concept="2eOfOl" id="7RiewQ_lHnQ" role="2ePNbc">
       <property role="TrG5h" value="ExtTest" />
-      <property role="iO3LB" value="true" />
       <ref role="3oK8_y" to="1ok9:4LhGMnjfiNC" resolve="portable" />
       <node concept="2v9HqM" id="7RiewQ_lHnR" role="2eOfOg">
         <ref role="2v9HqP" node="7RiewQ_kJAn" resolve="TestVaraArgs" />
@@ -287,7 +284,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3mNxdG" value="true" />
       <node concept="3DXrvS" id="6ydhAa2uRZE" role="2DQcEM">
-        <property role="3qmUMc" value="2cAst3TvtBF/round" />
+        <property role="3qmUMc" value="round" />
         <node concept="3VGQI6" id="2cAst3TENx1" role="3D7$A5">
           <property role="3VGQ4h" value="22" />
           <property role="3VGQ4j" value="0" />

@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
@@ -31,9 +31,7 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -1042,7 +1040,7 @@
         </node>
         <node concept="n2Vfv" id="2I5SFMdyWtL" role="3XIRFZ">
           <property role="TrG5h" value="x" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="1vV05I" id="2I5SFMdyWtM" role="n2wFf">
             <node concept="3TlMh9" id="2I5SFMdyWtN" role="1vV05J">
               <property role="2hmy$m" value="0" />
@@ -1112,7 +1110,7 @@
         </node>
         <node concept="n2Vfv" id="2I5SFMdyWue" role="3XIRFZ">
           <property role="TrG5h" value="x" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="3XIRFW" id="2I5SFMdyWuf" role="n2wFg">
             <node concept="c0Tn9" id="2I5SFMdyWug" role="3XIRFZ">
               <node concept="3TlM44" id="2I5SFMdyWuh" role="c0Tn6">
@@ -1183,7 +1181,7 @@
         </node>
         <node concept="n2Vfv" id="2I5SFMdyWuF" role="3XIRFZ">
           <property role="TrG5h" value="x" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="3XIRFW" id="2I5SFMdyWuG" role="n2wFg">
             <node concept="c0Tn9" id="2I5SFMdyWuH" role="3XIRFZ">
               <node concept="3TlM44" id="2I5SFMdyWuI" role="c0Tn6">
@@ -1255,7 +1253,7 @@
         </node>
         <node concept="n2Vfv" id="2I5SFMdyWv8" role="3XIRFZ">
           <property role="TrG5h" value="x" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="3XIRFW" id="2I5SFMdyWv9" role="n2wFg">
             <node concept="c0Tn9" id="2I5SFMdyWva" role="3XIRFZ">
               <node concept="3TlM44" id="2I5SFMdyWvb" role="c0Tn6">
@@ -1326,7 +1324,7 @@
         </node>
         <node concept="n2Vfv" id="2I5SFMdyWv_" role="3XIRFZ">
           <property role="TrG5h" value="r" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="1vV05I" id="2I5SFMdyWvA" role="n2wFf">
             <node concept="3TlMh9" id="2I5SFMdyWvB" role="1vV05J">
               <property role="2hmy$m" value="0" />
@@ -1425,7 +1423,7 @@
         </node>
         <node concept="n2Vfv" id="2I5SFMdyWyK" role="3XIRFZ">
           <property role="TrG5h" value="x" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="1vV05I" id="2I5SFMdyWyL" role="n2wFf">
             <node concept="3TlMh9" id="2I5SFMdyWyM" role="1vV05J">
               <property role="2hmy$m" value="-5" />
@@ -1495,7 +1493,7 @@
         </node>
         <node concept="n2Vfv" id="2I5SFMdyWzd" role="3XIRFZ">
           <property role="TrG5h" value="x" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="3XIRFW" id="2I5SFMdyWze" role="n2wFg">
             <node concept="c0Tn9" id="2I5SFMdyWzf" role="3XIRFZ">
               <node concept="3TlM44" id="2I5SFMdyWzg" role="c0Tn6">
@@ -1566,7 +1564,7 @@
         </node>
         <node concept="n2Vfv" id="2I5SFMdyWzE" role="3XIRFZ">
           <property role="TrG5h" value="x" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="3XIRFW" id="2I5SFMdyWzF" role="n2wFg">
             <node concept="c0Tn9" id="2I5SFMdyWzG" role="3XIRFZ">
               <node concept="3TlM44" id="2I5SFMdyWzH" role="c0Tn6">
@@ -1638,7 +1636,7 @@
         </node>
         <node concept="n2Vfv" id="2I5SFMdyW$7" role="3XIRFZ">
           <property role="TrG5h" value="x" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="3XIRFW" id="2I5SFMdyW$8" role="n2wFg">
             <node concept="c0Tn9" id="2I5SFMdyW$9" role="3XIRFZ">
               <node concept="3TlM44" id="2I5SFMdyW$a" role="c0Tn6">
@@ -1709,7 +1707,7 @@
         </node>
         <node concept="n2Vfv" id="2I5SFMdyW$$" role="3XIRFZ">
           <property role="TrG5h" value="r" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="1vV05I" id="2I5SFMdyW$_" role="n2wFf">
             <node concept="3TlMh9" id="2I5SFMdyW$A" role="1vV05J">
               <property role="2hmy$m" value="-5" />
@@ -1872,7 +1870,6 @@
   <node concept="2v9HqL" id="7$_eEdIdk_N">
     <node concept="2eOfOl" id="7$_eEdIdk_O" role="2ePNbc">
       <property role="TrG5h" value="Ranges" />
-      <property role="iO3LB" value="true" />
       <node concept="2v9HqM" id="7$_eEdIdk_P" role="2eOfOg">
         <ref role="2v9HqP" node="7$_eEdIdklP" resolve="RangeStuff" />
       </node>

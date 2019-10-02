@@ -2,9 +2,9 @@
 <model ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
   </languages>
   <imports>
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
@@ -2911,6 +2911,11 @@
             <ref role="3bR37D" node="7uZw0yZ43L4" resolve="com.mbeddr.core.make" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7EZ1Spq$wjN" role="3bR37C">
+          <node concept="3bR9La" id="7EZ1Spq$wjO" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43L9" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -4466,6 +4471,11 @@
           <node concept="1SiIV0" id="8Vbr6_EUhA" role="3bR37C">
             <node concept="3bR9La" id="8Vbr6_EUhB" role="1SiIV1">
               <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="7EZ1Spq$wjP" role="3bR37C">
+            <node concept="3bR9La" id="7EZ1Spq$wjQ" role="1SiIV1">
+              <ref role="3bR37D" node="HiHZpX4D1I" resolve="com.mbeddr.core.buildconfig#7717755763392579406" />
             </node>
           </node>
         </node>
@@ -7078,6 +7088,11 @@
         <node concept="1SiIV0" id="6ix7nEPvJ6e" role="3bR37C">
           <node concept="3bR9La" id="6ix7nEPvJ6f" role="1SiIV1">
             <ref role="3bR37D" node="6vuuYkaSA$x" resolve="com.mbeddr.core.expressions.interpreter" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7NdzLQDWnfe" role="3bR37C">
+          <node concept="3bR9La" id="7NdzLQDWnff" role="1SiIV1">
+            <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
           </node>
         </node>
       </node>

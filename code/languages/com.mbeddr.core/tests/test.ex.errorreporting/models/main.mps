@@ -35,9 +35,7 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -271,6 +269,7 @@
       <property role="TrG5h" value="errors" />
       <property role="2OOxQR" value="false" />
       <node concept="2vmPJf" id="2lgwE2U38zb" role="2vmPJn">
+        <property role="2vmPJm" value="3" />
         <property role="TrG5h" value="BELOW_ZERO" />
         <property role="2vmPJh" value="The value is below zero" />
         <property role="2vn0DO" value="true" />
@@ -281,7 +280,7 @@
       </node>
       <node concept="2vmPJf" id="2lgwE2U3MPa" role="2vmPJn">
         <property role="2vn0DO" value="true" />
-        <property role="2vmPJm" value="2lgwE2U2X_P/1" />
+        <property role="2vmPJm" value="1" />
         <property role="TrG5h" value="ANOTE" />
         <property role="2vmPJh" value="Some Message." />
       </node>
@@ -384,7 +383,6 @@
     </node>
     <node concept="2eOfOl" id="EAKPqgNv5T" role="2ePNbc">
       <property role="TrG5h" value="TestErrorReporting" />
-      <property role="iO3LB" value="true" />
       <ref role="3oK8_y" to="1ok9:4LhGMnjfiNC" resolve="portable" />
       <node concept="2v9HqM" id="EAKPqgNv5U" role="2eOfOg">
         <ref role="2v9HqP" node="3hgxKzbjbJQ" resolve="M1" />

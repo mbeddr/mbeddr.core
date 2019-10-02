@@ -5,12 +5,12 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
-    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
+    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
@@ -236,6 +236,7 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2lQE" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0ytD" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="vlkQkRZg3q" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaObF" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -243,7 +244,7 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0AWt" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+            <property role="16EpFF" value="win" />
             <node concept="30a7bf" id="7Jr7T0w2lQF" role="16XPZy">
               <node concept="3cQ7K9" id="3GPxRNRaObH" role="30a7be">
                 <property role="3sdDOw" value="marker" />
@@ -395,6 +396,7 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2lZV" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0ygr" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="5n8CFM4hDqc" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaObp" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -402,9 +404,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0AWE" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
+            <property role="16EpFF" value="nux" />
             <node concept="16XR13" id="7cisAzZ8KcF" role="16XKT6">
-              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+              <property role="16EpFF" value="win" />
               <node concept="30a7bf" id="7cisAzZ8KcP" role="16XPZy">
                 <node concept="3cQ7K9" id="3GPxRNRaObj" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -539,6 +541,7 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2m9o" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0xUX" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="5n8CFM4hIpL" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaObN" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -546,9 +549,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0AYD" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
+            <property role="16EpFF" value="nux" />
             <node concept="16XR13" id="7cisAzZ8KcV" role="16XKT6">
-              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+              <property role="16EpFF" value="win" />
               <node concept="30a7bf" id="7cisAzZ8Kd3" role="16XPZy">
                 <node concept="3cQ7K9" id="3GPxRNRaObV" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -655,6 +658,7 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2mff" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0ykj" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="vlkQkSIQN9" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaObn" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -662,7 +666,7 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0AZa" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+            <property role="16EpFF" value="win" />
             <node concept="30a7bf" id="7Jr7T0w2mfg" role="16XPZy">
               <node concept="3cQ7K9" id="3GPxRNRaObL" role="30a7be">
                 <property role="3sdDOw" value="marker" />

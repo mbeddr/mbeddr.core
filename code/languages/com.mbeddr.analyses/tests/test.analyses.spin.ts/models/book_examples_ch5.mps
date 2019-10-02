@@ -100,9 +100,6 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -458,21 +455,18 @@
       <node concept="2Q9FjX" id="4b_XKf3Wndu" role="2Q9FjI" />
     </node>
     <node concept="1gr5cj" id="4f352SjeJDv" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_Example_5_2" />
       <node concept="2v9HqM" id="4f352SjeJDB" role="2eOfOg">
         <ref role="2v9HqP" node="4b_XKf3WnF6" resolve="Example_5_2" />
       </node>
     </node>
     <node concept="1gr5cj" id="4b_XKf3Wndx" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_Example_5_3" />
       <node concept="2v9HqM" id="4b_XKf3WnnJ" role="2eOfOg">
         <ref role="2v9HqP" node="4b_XKf3VDdA" resolve="Example_5_3" />
       </node>
     </node>
     <node concept="1gr5cj" id="2h_qe3UN2Pr" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_Example_5_7" />
       <node concept="2v9HqM" id="2h_qe3UN2Pz" role="2eOfOg">
         <ref role="2v9HqP" node="4f352SjfsWs" resolve="Example_5_7" />

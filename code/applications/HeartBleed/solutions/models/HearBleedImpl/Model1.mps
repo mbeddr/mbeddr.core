@@ -232,6 +232,7 @@
       </concept>
       <concept id="3335993110369795380" name="com.mbeddr.core.expressions.structure.TypeSizeConfiguration" flags="ng" index="MXy$V">
         <child id="9149785691755067704" name="ieee754Specifications" index="2mYqyz" />
+        <child id="3869525881267655660" name="ssizeTType" index="2B$ca_" />
         <child id="3335993110369805710" name="specifications" index="MXv61" />
         <child id="8863019357864392147" name="sizeTType" index="2O5j3Q" />
         <child id="3813668170744198630" name="pointerDiffType" index="3kxMGo" />
@@ -1235,6 +1236,7 @@
       <property role="2caQfQ" value="false" />
       <property role="2c7vTL" value="false" />
     </node>
+    <node concept="26Vqph" id="7EZ1Sps4cO4" role="2B$ca_" />
   </node>
   <node concept="2v9HqL" id="4yOgC5DNb8O">
     <node concept="2AWWZL" id="4yOgC5DNkxj" role="2AWWZH">

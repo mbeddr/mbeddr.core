@@ -397,7 +397,7 @@
       </concept>
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
-      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameShorteningConfiguration" flags="ng" index="MH4UO" />
+      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO" />
     </language>
   </registry>
   <node concept="N3F5e" id="5RBPMWa2oJK">
@@ -16413,7 +16413,6 @@
       </node>
     </node>
     <node concept="2eOfOl" id="1qdWvqenuu3" role="2ePNbc">
-      <property role="iO3LB" value="true" />
       <property role="TrG5h" value="test_minisat" />
       <ref role="3oK8_y" node="7fmKiPEtW$$" resolve="portable" />
       <node concept="2v9HqM" id="1qdWvqenuuj" role="2eOfOg">

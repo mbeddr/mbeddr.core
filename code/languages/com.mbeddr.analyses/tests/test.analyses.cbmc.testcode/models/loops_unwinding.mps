@@ -429,9 +429,6 @@
     <node concept="3GEVxB" id="24GUsn9CRn4" role="3W6d8T">
       <ref role="3GEb4d" node="24GUsn9CPj0" resolve="show_loops" />
     </node>
-    <node concept="3GEVxB" id="5cKTps7HSJg" role="3W6d8T">
-      <ref role="3GEb4d" node="5cKTps7HQPE" resolve="incremental_loops" />
-    </node>
     <node concept="1nvAUJ" id="7xDyb4PI$KF" role="3V$2$K">
       <property role="2lUGeZ" value="true" />
       <property role="2lUHrg" value="3" />
@@ -529,6 +526,9 @@
         <property role="39JtYE" value="unwind_set_unwind_set_entry2.0" />
         <property role="39JtYG" value="11" />
       </node>
+    </node>
+    <node concept="3GEVxB" id="5cKTps7HSJg" role="3W6d8T">
+      <ref role="3GEb4d" node="5cKTps7HQPE" resolve="incremental_loops" />
     </node>
     <node concept="1nvAUJ" id="5cKTps7HSJX" role="3V$2$K">
       <property role="2lelRm" value="true" />

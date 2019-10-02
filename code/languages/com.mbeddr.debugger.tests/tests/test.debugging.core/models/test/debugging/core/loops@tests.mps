@@ -6,12 +6,12 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
-    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
+    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
@@ -171,6 +171,7 @@
       </node>
       <node concept="3F5Y_J" id="4WY_RKGzlul" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0xuW" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="4WY_RKGzlum" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbh6zc8" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -178,9 +179,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0B2h" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
+            <property role="16EpFF" value="nux" />
             <node concept="16XR13" id="7cisAzZ8KtC" role="16XKT6">
-              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+              <property role="16EpFF" value="win" />
               <node concept="30a7bf" id="7cisAzZ8KCW" role="16XPZy">
                 <node concept="3cQ7K9" id="3uHGTbh6zcc" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -253,6 +254,7 @@
       </node>
       <node concept="3F5Y_J" id="4WY_RKGzluJ" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0xrW" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="4WY_RKGzluK" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbh6zcm" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -260,9 +262,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0B1K" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
+            <property role="16EpFF" value="nux" />
             <node concept="16XR13" id="7cisAzZ8KZn" role="16XKT6">
-              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+              <property role="16EpFF" value="win" />
               <node concept="30a7bf" id="7cisAzZ8KZx" role="16XPZy">
                 <node concept="3cQ7K9" id="3uHGTbh6zco" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -372,6 +374,7 @@
       </node>
       <node concept="3F5Y_J" id="4WY_RKGzlvo" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0yt3" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="4WY_RKGzlvp" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbh6z5g" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -379,9 +382,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0B2M" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
+            <property role="16EpFF" value="nux" />
             <node concept="16XR13" id="7cisAzZ8KZB" role="16XKT6">
-              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+              <property role="16EpFF" value="win" />
               <node concept="30a7bf" id="7cisAzZ8KZJ" role="16XPZy">
                 <node concept="3cQ7K9" id="3uHGTbh6z5c" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -423,6 +426,7 @@
       </node>
       <node concept="3F5Y_J" id="4WY_RKGzlvy" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0yf0" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="4WY_RKGzlvz" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbh6z5k" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -430,9 +434,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0B3j" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
+            <property role="16EpFF" value="nux" />
             <node concept="16XR13" id="7cisAzZ8KZN" role="16XKT6">
-              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+              <property role="16EpFF" value="win" />
               <node concept="30a7bf" id="7cisAzZ8KZX" role="16XPZy">
                 <node concept="3cQ7K9" id="3uHGTbh6z5i" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -686,6 +690,7 @@
           <ref role="1vtf2j" node="4WY_RKGzltB" resolve="inWhileStatement" />
         </node>
         <node concept="16YvwY" id="7qzmU5U0yjk" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="4WY_RKGzlAF" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbh6zh4" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -693,9 +698,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0B3O" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
+            <property role="16EpFF" value="nux" />
             <node concept="16XR13" id="7cisAzZ8Lbp" role="16XKT6">
-              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+              <property role="16EpFF" value="win" />
               <node concept="30a7bf" id="7cisAzZ8Lbx" role="16XPZy">
                 <node concept="3cQ7K9" id="3uHGTbh6zgM" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -764,6 +769,7 @@
           <ref role="1vtf2j" node="4WY_RKGzltB" resolve="inWhileStatement" />
         </node>
         <node concept="16YvwY" id="7qzmU5U0xKL" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="4WY_RKGzlB2" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbh6zgO" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -771,9 +777,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0B4l" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
+            <property role="16EpFF" value="nux" />
             <node concept="16XR13" id="7cisAzZ8LbT" role="16XKT6">
-              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+              <property role="16EpFF" value="win" />
               <node concept="30a7bf" id="7cisAzZ8Lc3" role="16XPZy">
                 <node concept="3cQ7K9" id="3uHGTbh6zh0" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -869,6 +875,7 @@
       </node>
       <node concept="3F5Y_J" id="4WY_RKGzlBy" role="3F5AM1">
         <node concept="16YvwY" id="7qzmU5U0ylc" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="4WY_RKGzlBz" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbh6zgG" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -876,9 +883,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0B4Q" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
+            <property role="16EpFF" value="nux" />
             <node concept="16XR13" id="7cisAzZ8Lc7" role="16XKT6">
-              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+              <property role="16EpFF" value="win" />
               <node concept="30a7bf" id="7cisAzZ8Lch" role="16XPZy">
                 <node concept="3cQ7K9" id="3uHGTbh6zgU" role="30a7be">
                   <property role="3sdDOw" value="marker" />
@@ -924,6 +931,7 @@
           <ref role="1vtf2j" node="4WY_RKGzltB" resolve="inWhileStatement" />
         </node>
         <node concept="16YvwY" id="7qzmU5U0xHO" role="3F5Y$9">
+          <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="4WY_RKGzlBH" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbh6zh8" role="30a7be">
               <property role="3sdDOw" value="marker" />
@@ -931,9 +939,9 @@
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0B5n" role="16XPZB">
-            <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
+            <property role="16EpFF" value="nux" />
             <node concept="16XR13" id="7cisAzZ8Lcl" role="16XKT6">
-              <property role="16EpFF" value="4TbX0$8Gx8R/win" />
+              <property role="16EpFF" value="win" />
               <node concept="30a7bf" id="7cisAzZ8Lcv" role="16XPZy">
                 <node concept="3cQ7K9" id="3uHGTbh6zgY" role="30a7be">
                   <property role="3sdDOw" value="marker" />

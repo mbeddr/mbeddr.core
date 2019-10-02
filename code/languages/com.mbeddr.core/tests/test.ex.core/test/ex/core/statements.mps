@@ -2,7 +2,7 @@
 <model ref="r:6bf4d6d5-fdea-48fe-ba4e-9fa5a02f21b2(test.ex.core.statements)">
   <persistence version="9" />
   <languages>
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -80,9 +80,7 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -776,7 +774,6 @@
   <node concept="2v9HqL" id="2I09F8VKR8Y">
     <node concept="2eOfOl" id="2I09F8VKR95" role="2ePNbc">
       <property role="TrG5h" value="StatementTests" />
-      <property role="iO3LB" value="true" />
       <ref role="3oK8_y" to="1ok9:4LhGMnjfiNC" resolve="portable" />
       <node concept="2v9HqM" id="2I09F8VKR96" role="2eOfOg">
         <ref role="2v9HqP" node="2I09F8VKR8Z" resolve="Driver" />
@@ -1512,7 +1509,7 @@
         </node>
         <node concept="n2Vfv" id="7VR7M8vThYi" role="3XIRFZ">
           <property role="TrG5h" value="i" />
-          <property role="2AYyFU" value="2I5SFMdvWx9/backward" />
+          <property role="2AYyFU" value="backward" />
           <node concept="1vV05I" id="7VR7M8vThYj" role="n2wFf">
             <property role="n43Ve" value="false" />
             <node concept="3TlMh9" id="7VR7M8vThYk" role="1vV05J">

@@ -2,8 +2,8 @@
 <model ref="r:252d4127-ccd8-4120-b21c-006b1b59410b(test.ex.core.pointers)">
   <persistence version="9" />
   <languages>
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -74,9 +74,7 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -568,12 +566,14 @@
               <property role="2c7vTL" value="false" />
             </node>
           </node>
-          <node concept="YInwV" id="1JA5qgmfRaz" role="3XIe9u">
-            <node concept="1S8S4T" id="5vm6H9xUo7O" role="1_9fRO">
-              <node concept="3ZVu4v" id="1JA5qgmfRb9" role="1S8S4V">
+          <node concept="1S8S4T" id="5vm6H9xUo7O" role="3XIe9u">
+            <node concept="YInwV" id="7EZ1SpqmYE0" role="1S8S4V">
+              <node concept="3ZVu4v" id="1JA5qgmfRb9" role="1_9fRO">
                 <ref role="3ZVs_2" node="5IYyAOzBdhl" resolve="x" />
               </node>
-              <node concept="biTqx" id="5vm6H9xUorE" role="1S8S4N" />
+            </node>
+            <node concept="3wxxNl" id="7EZ1SpqmYXu" role="1S8S4N">
+              <node concept="biTqx" id="5vm6H9xUorE" role="2umbIo" />
             </node>
           </node>
         </node>
@@ -1364,7 +1364,6 @@
     </node>
     <node concept="2eOfOl" id="4Y0lNFa3ShG" role="2ePNbc">
       <property role="TrG5h" value="PointersAndArrays" />
-      <property role="iO3LB" value="true" />
       <ref role="3oK8_y" to="1ok9:4LhGMnjfiNC" resolve="portable" />
       <node concept="2v9HqM" id="4Y0lNFa3TsP" role="2eOfOg">
         <ref role="2v9HqP" node="4Y0lNFa3gJV" resolve="Driver" />
@@ -2292,7 +2291,7 @@
       <node concept="2vmPJf" id="2lgwE2U3u1O" role="2vmPJn">
         <property role="2vn0DO" value="true" />
         <property role="TrG5h" value="HelloMessage" />
-        <property role="2vmPJm" value="2lgwE2U2X_P/1" />
+        <property role="2vmPJm" value="1" />
         <property role="2vmPJh" value="Hello!" />
       </node>
     </node>
@@ -3445,7 +3444,7 @@
       <property role="TrG5h" value="Log" />
       <node concept="2vmPJf" id="6FLcSer$d7v" role="2vmPJn">
         <property role="2vn0DO" value="true" />
-        <property role="2vmPJm" value="2lgwE2U2X_P/1" />
+        <property role="2vmPJm" value="1" />
         <property role="TrG5h" value="info" />
         <property role="2vmPJh" value="value" />
         <node concept="2qqzEA" id="6FLcSer$d7w" role="2qqzEG">

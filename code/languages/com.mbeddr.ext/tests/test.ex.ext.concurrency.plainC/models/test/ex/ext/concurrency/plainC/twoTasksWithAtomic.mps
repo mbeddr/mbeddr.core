@@ -38,9 +38,7 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -253,7 +251,6 @@
       </node>
     </node>
     <node concept="2eOfOl" id="6ndohCVa4KI" role="2ePNbc">
-      <property role="iO3LB" value="true" />
       <property role="TrG5h" value="TwoTasksWithAtomic" />
       <ref role="3oK8_y" node="4LhGMnjpR53" resolve="portable" />
       <node concept="2v9HqM" id="6ndohCVaa_E" role="2eOfOg">
@@ -417,7 +414,7 @@
             </node>
           </node>
           <node concept="3JTKKU" id="6ndohCVaaYX" role="3JU$Ix">
-            <property role="3JU$zx" value="vg5qBCe_P5/readWrite" />
+            <property role="3JU$zx" value="readWrite" />
             <ref role="3JU$zz" node="6ndohCVa4IR" resolve="values" />
           </node>
         </node>

@@ -44,9 +44,7 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -150,6 +148,7 @@
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
       <concept id="7551459360495600340" name="com.mbeddr.ext.concurrency.structure.TimeWithUnit" flags="ng" index="6VUUj">
+        <property id="7551459360495620501" name="unit" index="6VZRi" />
         <child id="7551459360495619535" name="value" index="6VY68" />
       </concept>
       <concept id="1787645152775151429" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueDeclaration" flags="ng" index="2jkAae">
@@ -417,6 +416,7 @@
         </node>
         <node concept="1OFKyr" id="1zeZsIba3xX" role="3XIRFZ">
           <node concept="6VUUj" id="6zcb4tIerUQ" role="1OFKyo">
+            <property role="6VZRi" value="ms" />
             <node concept="2BOcij" id="6zcb4tIes0T" role="6VY68">
               <node concept="3TlMh9" id="6zcb4tIes0W" role="3TlMhJ">
                 <property role="2hmy$m" value="20" />
@@ -484,7 +484,6 @@
       </node>
     </node>
     <node concept="2eOfOl" id="1zeZsIba3yo" role="2ePNbc">
-      <property role="iO3LB" value="true" />
       <property role="TrG5h" value="TwoTasksWithBlockingQueue" />
       <ref role="3oK8_y" node="4LhGMnjpR9e" resolve="Linux" />
       <node concept="2v9HqM" id="1zeZsIba80M" role="2eOfOg">
