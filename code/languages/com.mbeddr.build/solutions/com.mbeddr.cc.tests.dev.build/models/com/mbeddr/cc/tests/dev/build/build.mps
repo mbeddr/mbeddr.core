@@ -300,9 +300,6 @@
       </node>
     </node>
     <node concept="1l3spV" id="7eF9rfAnzV1" role="1l3spN">
-      <node concept="L2wRC" id="7eF9rfAnzV2" role="39821P">
-        <ref role="L2wRA" node="7eF9rfAnzVj" resolve="test.ts.cc.requirements.scenarios" />
-      </node>
       <node concept="L2wRC" id="7eF9rfAnzV3" role="39821P">
         <ref role="L2wRA" node="7eF9rfAnzVo" resolve="test.ts.cc.var.c" />
       </node>
@@ -401,41 +398,6 @@
           </node>
         </node>
       </node>
-      <node concept="1E1JtA" id="7eF9rfAnzVj" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.ts.cc.requirements.scenarios" />
-        <property role="3LESm3" value="68d2e84f-0dce-4703-aa89-7b509c580d11" />
-        <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
-        <node concept="398BVA" id="7eF9rfAnzVk" role="3LF7KH">
-          <ref role="398BVh" node="7eF9rfAnzUi" resolve="mbeddr.cc" />
-          <node concept="2Ry0Ak" id="7eF9rfAnzVl" role="iGT6I">
-            <property role="2Ry0Am" value="tests" />
-            <node concept="2Ry0Ak" id="7eF9rfAnzVm" role="2Ry0An">
-              <property role="2Ry0Am" value="test.ts.cc.requirements.scenarios" />
-              <node concept="2Ry0Ak" id="7eF9rfAnzVn" role="2Ry0An">
-                <property role="2Ry0Am" value="scenarios.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3rtmxn" id="3xFG3bj5bYf" role="3bR31x">
-          <node concept="3LXTmp" id="3xFG3bj5bYg" role="3rtmxm">
-            <node concept="3qWCbU" id="3xFG3bj5bYh" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="398BVA" id="3xFG3bj5bYi" role="3LXTmr">
-              <ref role="398BVh" node="7eF9rfAnzUi" resolve="mbeddr.cc" />
-              <node concept="2Ry0Ak" id="3xFG3bj5bYj" role="iGT6I">
-                <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="3xFG3bj5bYk" role="2Ry0An">
-                  <property role="2Ry0Am" value="test.ts.cc.requirements.scenarios" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1E1JtA" id="7eF9rfAnzVo" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.ts.cc.var.c" />
@@ -523,9 +485,6 @@
       <property role="TrG5h" value="com.mbeddr.cc.tests" />
       <node concept="22LTRM" id="7eF9rfAnzVu" role="22LTRK">
         <ref role="22LTRN" node="7eF9rfAnzVo" resolve="test.ts.cc.var.c" />
-      </node>
-      <node concept="22LTRM" id="7eF9rfAnzVv" role="22LTRK">
-        <ref role="22LTRN" node="7eF9rfAnzVj" resolve="test.ts.cc.requirements.scenarios" />
       </node>
       <node concept="22LTRM" id="7eF9rfAnzVw" role="22LTRK">
         <ref role="22LTRN" node="7eF9rfAnzVe" resolve="test.ts.requirements" />
