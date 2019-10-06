@@ -132,11 +132,8 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -299,6 +296,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -866,8 +871,16 @@
     <property role="3GE5qa" value="items" />
     <node concept="3clFbS" id="4QnOXkB1M4R" role="18ibNy">
       <node concept="3SKdUt" id="7EZ1Spo05vQ" role="3cqZAp">
-        <node concept="3SKdUq" id="7EZ1Spo05vS" role="3SKWNk">
-          <property role="3SKdUp" value="Automatic command conversions" />
+        <node concept="1PaTwC" id="3thiB5GVRlk" role="3ndbpf">
+          <node concept="3oM_SD" id="3thiB5GVRlm" role="1PaTwD">
+            <property role="3oM_SC" value="Automatic" />
+          </node>
+          <node concept="3oM_SD" id="3thiB5GVRln" role="1PaTwD">
+            <property role="3oM_SC" value="command" />
+          </node>
+          <node concept="3oM_SD" id="3thiB5GVRlo" role="1PaTwD">
+            <property role="3oM_SC" value="conversions" />
+          </node>
         </node>
       </node>
       <node concept="3clFbJ" id="7EZ1SpnHuOa" role="3cqZAp">
@@ -959,8 +972,19 @@
                 <node concept="3eNFk2" id="7EZ1Spof9pu" role="3eNLev">
                   <node concept="3clFbS" id="7EZ1Spof9pv" role="3eOfB_">
                     <node concept="3SKdUt" id="7EZ1Spof9pw" role="3cqZAp">
-                      <node concept="3SKdUq" id="7EZ1Spof9px" role="3SKWNk">
-                        <property role="3SKdUp" value="Detect plain text directives" />
+                      <node concept="1PaTwC" id="3thiB5GVRhx" role="3ndbpf">
+                        <node concept="3oM_SD" id="3thiB5GVRhz" role="1PaTwD">
+                          <property role="3oM_SC" value="Detect" />
+                        </node>
+                        <node concept="3oM_SD" id="3thiB5GVRh$" role="1PaTwD">
+                          <property role="3oM_SC" value="plain" />
+                        </node>
+                        <node concept="3oM_SD" id="3thiB5GVRh_" role="1PaTwD">
+                          <property role="3oM_SC" value="text" />
+                        </node>
+                        <node concept="3oM_SD" id="3thiB5GVRhA" role="1PaTwD">
+                          <property role="3oM_SC" value="directives" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3cpWs8" id="7EZ1Spof9py" role="3cqZAp">
@@ -1127,8 +1151,19 @@
                     </node>
                     <node concept="3clFbH" id="7EZ1Spof9qA" role="3cqZAp" />
                     <node concept="3SKdUt" id="7EZ1Spof9qB" role="3cqZAp">
-                      <node concept="3SKdUq" id="7EZ1Spof9qC" role="3SKWNk">
-                        <property role="3SKdUp" value="Detect plain text rules" />
+                      <node concept="1PaTwC" id="3thiB5GVRhi" role="3ndbpf">
+                        <node concept="3oM_SD" id="3thiB5GVRhk" role="1PaTwD">
+                          <property role="3oM_SC" value="Detect" />
+                        </node>
+                        <node concept="3oM_SD" id="3thiB5GVRhl" role="1PaTwD">
+                          <property role="3oM_SC" value="plain" />
+                        </node>
+                        <node concept="3oM_SD" id="3thiB5GVRhm" role="1PaTwD">
+                          <property role="3oM_SC" value="text" />
+                        </node>
+                        <node concept="3oM_SD" id="3thiB5GVRhn" role="1PaTwD">
+                          <property role="3oM_SC" value="rules" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3cpWs8" id="7EZ1Spof9qD" role="3cqZAp">
@@ -1172,7 +1207,7 @@
                               </node>
                             </node>
                             <node concept="Xl_RD" id="7EZ1Spof9qU" role="3uHU7w">
-                              <property role="Xl_RC" value=" rule must not be delared as plain text fragment" />
+                              <property role="Xl_RC" value=" rule must not be declared as plain text fragment" />
                             </node>
                           </node>
                           <node concept="1YBJjd" id="7EZ1Spof9qV" role="2OEOjV">
@@ -1201,8 +1236,19 @@
                     </node>
                     <node concept="3clFbH" id="7EZ1Spof9r2" role="3cqZAp" />
                     <node concept="3SKdUt" id="7EZ1Spof9r3" role="3cqZAp">
-                      <node concept="3SKdUq" id="7EZ1Spof9r4" role="3SKWNk">
-                        <property role="3SKdUp" value="Detect plain text variables" />
+                      <node concept="1PaTwC" id="3thiB5GVRh3" role="3ndbpf">
+                        <node concept="3oM_SD" id="3thiB5GVRh5" role="1PaTwD">
+                          <property role="3oM_SC" value="Detect" />
+                        </node>
+                        <node concept="3oM_SD" id="3thiB5GVRh6" role="1PaTwD">
+                          <property role="3oM_SC" value="plain" />
+                        </node>
+                        <node concept="3oM_SD" id="3thiB5GVRh7" role="1PaTwD">
+                          <property role="3oM_SC" value="text" />
+                        </node>
+                        <node concept="3oM_SD" id="3thiB5GVRh8" role="1PaTwD">
+                          <property role="3oM_SC" value="variables" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3clFbJ" id="7EZ1Spof9r5" role="3cqZAp">
@@ -1247,7 +1293,7 @@
                       <node concept="3clFbS" id="7EZ1Spof9rk" role="3clFbx">
                         <node concept="2MkqsV" id="7EZ1Spof9rl" role="3cqZAp">
                           <node concept="Xl_RD" id="7EZ1Spof9rm" role="2MkJ7o">
-                            <property role="Xl_RC" value="variables must not be delared as plain text fragment" />
+                            <property role="Xl_RC" value="variables must not be declared as plain text fragment" />
                           </node>
                           <node concept="1YBJjd" id="7EZ1Spof9rn" role="2OEOjV">
                             <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
@@ -1330,15 +1376,40 @@
       </node>
       <node concept="3clFbH" id="7EZ1SpnK1Md" role="3cqZAp" />
       <node concept="3SKdUt" id="7EZ1Spo08$t" role="3cqZAp">
-        <node concept="3SKdUq" id="7EZ1Spo08$v" role="3SKWNk">
-          <property role="3SKdUp" value="Manual Makefile item extractions" />
+        <node concept="1PaTwC" id="3thiB5GVRgO" role="3ndbpf">
+          <node concept="3oM_SD" id="3thiB5GVRgQ" role="1PaTwD">
+            <property role="3oM_SC" value="Manual" />
+          </node>
+          <node concept="3oM_SD" id="3thiB5GVRgR" role="1PaTwD">
+            <property role="3oM_SC" value="Makefile" />
+          </node>
+          <node concept="3oM_SD" id="3thiB5GVRgS" role="1PaTwD">
+            <property role="3oM_SC" value="item" />
+          </node>
+          <node concept="3oM_SD" id="3thiB5GVRgT" role="1PaTwD">
+            <property role="3oM_SC" value="extractions" />
+          </node>
         </node>
       </node>
       <node concept="3clFbJ" id="7EZ1SpoFSdI" role="3cqZAp">
         <node concept="3clFbS" id="7EZ1SpoFSdK" role="3clFbx">
           <node concept="3SKdUt" id="7EZ1SpnJPfc" role="3cqZAp">
-            <node concept="3SKdUq" id="7EZ1SpnJPfe" role="3SKWNk">
-              <property role="3SKdUp" value="Detect plain text rule references" />
+            <node concept="1PaTwC" id="3thiB5GVRgy" role="3ndbpf">
+              <node concept="3oM_SD" id="3thiB5GVRg$" role="1PaTwD">
+                <property role="3oM_SC" value="Detect" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRg_" role="1PaTwD">
+                <property role="3oM_SC" value="plain" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRgA" role="1PaTwD">
+                <property role="3oM_SC" value="text" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRgB" role="1PaTwD">
+                <property role="3oM_SC" value="rule" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRgC" role="1PaTwD">
+                <property role="3oM_SC" value="references" />
+              </node>
             </node>
           </node>
           <node concept="3clFbJ" id="7EZ1SpnK6kQ" role="3cqZAp">
@@ -1523,13 +1594,89 @@
           </node>
           <node concept="3clFbH" id="7EZ1SpoGro1" role="3cqZAp" />
           <node concept="3SKdUt" id="7EZ1SpnJXAG" role="3cqZAp">
-            <node concept="3SKdUq" id="7EZ1SpnJXAI" role="3SKWNk">
-              <property role="3SKdUp" value="Detect plain text macros" />
+            <node concept="1PaTwC" id="3thiB5GVRgj" role="3ndbpf">
+              <node concept="3oM_SD" id="3thiB5GVRgl" role="1PaTwD">
+                <property role="3oM_SC" value="Detect" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRgm" role="1PaTwD">
+                <property role="3oM_SC" value="plain" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRgn" role="1PaTwD">
+                <property role="3oM_SC" value="text" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRgo" role="1PaTwD">
+                <property role="3oM_SC" value="macros" />
+              </node>
             </node>
           </node>
           <node concept="3SKdUt" id="7EZ1SpoarOo" role="3cqZAp">
-            <node concept="3SKdUq" id="7EZ1SpoarOq" role="3SKWNk">
-              <property role="3SKdUp" value="!! Important note!! Be sure to do this before dealing with plain text variable references as macros are given priority over variables." />
+            <node concept="1PaTwC" id="3thiB5GVRfe" role="3ndbpf">
+              <node concept="3oM_SD" id="3thiB5GVRfg" role="1PaTwD">
+                <property role="3oM_SC" value="!!" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfh" role="1PaTwD">
+                <property role="3oM_SC" value="Important" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfi" role="1PaTwD">
+                <property role="3oM_SC" value="note!!" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfj" role="1PaTwD">
+                <property role="3oM_SC" value="Be" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfk" role="1PaTwD">
+                <property role="3oM_SC" value="sure" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfl" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfm" role="1PaTwD">
+                <property role="3oM_SC" value="do" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfn" role="1PaTwD">
+                <property role="3oM_SC" value="this" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfo" role="1PaTwD">
+                <property role="3oM_SC" value="before" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfp" role="1PaTwD">
+                <property role="3oM_SC" value="dealing" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfq" role="1PaTwD">
+                <property role="3oM_SC" value="with" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfr" role="1PaTwD">
+                <property role="3oM_SC" value="plain" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfs" role="1PaTwD">
+                <property role="3oM_SC" value="text" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRft" role="1PaTwD">
+                <property role="3oM_SC" value="variable" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfu" role="1PaTwD">
+                <property role="3oM_SC" value="references" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfv" role="1PaTwD">
+                <property role="3oM_SC" value="as" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfw" role="1PaTwD">
+                <property role="3oM_SC" value="macros" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfx" role="1PaTwD">
+                <property role="3oM_SC" value="are" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfy" role="1PaTwD">
+                <property role="3oM_SC" value="given" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRfz" role="1PaTwD">
+                <property role="3oM_SC" value="priority" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRf$" role="1PaTwD">
+                <property role="3oM_SC" value="over" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRf_" role="1PaTwD">
+                <property role="3oM_SC" value="variables." />
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="4QnOXkB8GEk" role="3cqZAp">
@@ -1652,8 +1799,22 @@
           </node>
           <node concept="3clFbH" id="7EZ1SpoarIk" role="3cqZAp" />
           <node concept="3SKdUt" id="7EZ1SpnYRE6" role="3cqZAp">
-            <node concept="3SKdUq" id="7EZ1SpnYRE7" role="3SKWNk">
-              <property role="3SKdUp" value="Detect plain text variable references" />
+            <node concept="1PaTwC" id="3thiB5GVReW" role="3ndbpf">
+              <node concept="3oM_SD" id="3thiB5GVReY" role="1PaTwD">
+                <property role="3oM_SC" value="Detect" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVReZ" role="1PaTwD">
+                <property role="3oM_SC" value="plain" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRf0" role="1PaTwD">
+                <property role="3oM_SC" value="text" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRf1" role="1PaTwD">
+                <property role="3oM_SC" value="variable" />
+              </node>
+              <node concept="3oM_SD" id="3thiB5GVRf2" role="1PaTwD">
+                <property role="3oM_SC" value="references" />
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="7EZ1SpnYREa" role="3cqZAp">
@@ -1718,6 +1879,12 @@
                               </node>
                               <node concept="2qgKlT" id="7EZ1Spo18wO" role="2OqNvi">
                                 <ref role="37wK5l" to="vog7:7EZ1Spo0Yz_" resolve="getReferencePresentation" />
+                                <node concept="2OqwBi" id="50D6DLJIJa5" role="37wK5m">
+                                  <node concept="1YBJjd" id="50D6DLJIICg" role="2Oq$k0">
+                                    <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
+                                  </node>
+                                  <node concept="1mfA1w" id="50D6DLJIOd9" role="2OqNvi" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -2870,6 +3037,12 @@
                   </node>
                   <node concept="2qgKlT" id="7EZ1SpomMsG" role="2OqNvi">
                     <ref role="37wK5l" to="vog7:7EZ1Spo0Yz_" resolve="getReferencePresentation" />
+                    <node concept="2OqwBi" id="50D6DLJIWFP" role="37wK5m">
+                      <node concept="QwW4i" id="50D6DLJIWFQ" role="2Oq$k0">
+                        <ref role="QwW4h" node="7EZ1Spo1rUh" resolve="plainTextFragment" />
+                      </node>
+                      <node concept="1mfA1w" id="50D6DLJIWFR" role="2OqNvi" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -3041,6 +3214,12 @@
                           </node>
                           <node concept="2qgKlT" id="7EZ1SpomO5m" role="2OqNvi">
                             <ref role="37wK5l" to="vog7:7EZ1Spo0Yz_" resolve="getReferencePresentation" />
+                            <node concept="2OqwBi" id="50D6DLJIXez" role="37wK5m">
+                              <node concept="QwW4i" id="50D6DLJIXe$" role="2Oq$k0">
+                                <ref role="QwW4h" node="7EZ1Spo1rUh" resolve="plainTextFragment" />
+                              </node>
+                              <node concept="1mfA1w" id="50D6DLJIXe_" role="2OqNvi" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -3085,6 +3264,12 @@
                   </node>
                   <node concept="2qgKlT" id="7EZ1SpomNrP" role="2OqNvi">
                     <ref role="37wK5l" to="vog7:7EZ1Spo0Yz_" resolve="getReferencePresentation" />
+                    <node concept="2OqwBi" id="50D6DLJIXcI" role="37wK5m">
+                      <node concept="QwW4i" id="50D6DLJIXcJ" role="2Oq$k0">
+                        <ref role="QwW4h" node="7EZ1Spo1rUh" resolve="plainTextFragment" />
+                      </node>
+                      <node concept="1mfA1w" id="50D6DLJIXcK" role="2OqNvi" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -3420,6 +3605,12 @@
                 </node>
                 <node concept="2qgKlT" id="7EZ1Spoqr5t" role="2OqNvi">
                   <ref role="37wK5l" to="vog7:7EZ1Spo0Yz_" resolve="getReferencePresentation" />
+                  <node concept="2OqwBi" id="50D6DLJIUCo" role="37wK5m">
+                    <node concept="QwW4i" id="50D6DLJIUge" role="2Oq$k0">
+                      <ref role="QwW4h" node="7EZ1Spo1rUh" resolve="plainTextFragment" />
+                    </node>
+                    <node concept="1mfA1w" id="50D6DLJIVYB" role="2OqNvi" />
+                  </node>
                 </node>
               </node>
               <node concept="Xl_RD" id="7EZ1Spoqa1M" role="3uHU7B">
