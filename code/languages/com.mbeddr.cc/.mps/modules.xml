@@ -37,7 +37,6 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.var.c/c.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.var.composition/test.ex.cc.var.composition.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.requirements.report/test.ex.requirements.report.msd" folder="tests" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.requirements.scenarios/scenarios.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.requirements/requirements.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.var.c/c.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.var.composition/test.ts.cc.var.composition.msd" folder="tests" />
