@@ -917,8 +917,17 @@
   <node concept="24kQdi" id="7EZ1SpmmM6J">
     <property role="3GE5qa" value="items" />
     <ref role="1XX52x" to="i2y7:4QnOXkAFewL" resolve="IMakefileItem" />
-    <node concept="1xolST" id="50D6DLKliUM" role="2wV5jI">
-      <property role="1xolSY" value=" " />
+    <node concept="3EZMnI" id="50D6DLKuVNU" role="2wV5jI">
+      <node concept="11L4FC" id="50D6DLKuVO4" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="11LMrY" id="50D6DLKuVO5" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="2iRfu4" id="50D6DLKuVNV" role="2iSdaV" />
+      <node concept="1xolST" id="50D6DLKliUM" role="3EZMnx">
+        <property role="1xolSY" value=" " />
+      </node>
     </node>
   </node>
   <node concept="3p36aQ" id="4QnOXkAP5J1">
@@ -1476,6 +1485,34 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="50D6DLKrwmI">
+    <property role="3GE5qa" value="items" />
+    <ref role="1XX52x" to="i2y7:50D6DLKrwmy" resolve="ItemSequence" />
+    <node concept="3EZMnI" id="50D6DLKrwmK" role="2wV5jI">
+      <node concept="2iRfu4" id="50D6DLKrwmL" role="2iSdaV" />
+      <node concept="3F2HdR" id="50D6DLKrwmM" role="3EZMnx">
+        <ref role="1NtTu8" to="i2y7:50D6DLKrwmz" resolve="items" />
+        <node concept="3F0ifn" id="50D6DLKrwmN" role="2czzBI">
+          <property role="3F0ifm" value="" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="50D6DLKrwmO" role="3EZMnx">
+        <property role="3F0ifm" value="¤" />
+        <node concept="11L4FC" id="50D6DLKrwmP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="50D6DLKrwmQ" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
+      </node>
+      <node concept="11L4FC" id="50D6DLKrwmR" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="11LMrY" id="50D6DLKrwmS" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>

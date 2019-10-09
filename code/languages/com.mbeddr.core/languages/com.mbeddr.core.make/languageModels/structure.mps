@@ -22,7 +22,7 @@
         <property id="672037151186491528" name="presentation" index="1L1pqM" />
         <reference id="899069222106091871" name="oldMember" index="2wpffI" />
       </concept>
-      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclartaion" flags="ng" index="25R3W">
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
@@ -820,6 +820,23 @@
       <property role="1L1pqM" value="+=" />
       <property role="3tVfz5" value="2822507107682784603" />
       <ref role="2wpffI" node="2sFzOapsDlr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="50D6DLKrwmy">
+    <property role="EcuMT" value="5776177256282850722" />
+    <property role="3GE5qa" value="items" />
+    <property role="TrG5h" value="ItemSequence" />
+    <property role="34LRSv" value="item sequence" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="50D6DLKrwmz" role="1TKVEi">
+      <property role="IQ2ns" value="5776177256282850723" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="items" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4QnOXkAFewL" resolve="IMakefileItem" />
+    </node>
+    <node concept="PrWs8" id="50D6DLKssri" role="PzmwI">
+      <ref role="PrY4T" node="4QnOXkAFewL" resolve="IMakefileItem" />
     </node>
   </node>
 </model>
