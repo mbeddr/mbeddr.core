@@ -1201,7 +1201,7 @@
       <node concept="12NxFx" id="4QnOXkAb6fv" role="1CrrWa">
         <property role="12NxFY" value=" " />
       </node>
-      <node concept="3O_FaX" id="7EZ1SpnCKB6" role="1CrrWa" />
+      <node concept="12Nxi1" id="50D6DLKPtCG" role="1CrrWa" />
       <node concept="3G52F3" id="4QnOXkAb5Wj" role="1CrrWa">
         <property role="TrG5h" value="ALL_CFLAGS" />
         <node concept="17Uvod" id="4QnOXkAb5Wd" role="lGtFl">
@@ -1564,7 +1564,7 @@
           </node>
         </node>
         <node concept="3G69iQ" id="7EZ1Spl4bMi" role="3BGHvq">
-          <property role="3G69iL" value="externalIncludePaths" />
+          <property role="3G69iL" value="externalIncDirs" />
           <node concept="17Uvod" id="7EZ1Spl4bMj" role="lGtFl">
             <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211590947/3373914745211590948" />
             <property role="2qtEX9" value="text" />
@@ -2859,7 +2859,7 @@
           </node>
         </node>
         <node concept="3G69iQ" id="7EZ1Spl4bTo" role="3BGHvq">
-          <property role="3G69iL" value="externalIncludePaths" />
+          <property role="3G69iL" value="externalIncDirs" />
           <node concept="17Uvod" id="7EZ1Spl4bTp" role="lGtFl">
             <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211590947/3373914745211590948" />
             <property role="2qtEX9" value="text" />
