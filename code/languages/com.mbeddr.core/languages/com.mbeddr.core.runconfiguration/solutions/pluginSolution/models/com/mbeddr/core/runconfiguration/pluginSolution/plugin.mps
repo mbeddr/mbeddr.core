@@ -792,14 +792,6 @@
                     <node concept="2ShNRf" id="6N7ktxtOfPB" role="37wK5m">
                       <node concept="1pGfFk" id="6N7ktxtOfPC" role="2ShVmc">
                         <ref role="37wK5l" to="x30c:6WfZQfTHrkn" resolve="MbeddrDebugger" />
-                        <node concept="2YIFZM" id="6N7ktxtOfPD" role="37wK5m">
-                          <ref role="37wK5l" to="1l1h:3SnNvqCaJeC" resolve="getInstance" />
-                          <ref role="1Pybhc" to="1l1h:3SnNvqCaJc8" resolve="Debuggers" />
-                        </node>
-                        <node concept="2YIFZM" id="6N7ktxtOfPE" role="37wK5m">
-                          <ref role="37wK5l" to="rw00:3SnNvqCaK4A" resolve="getInstance" />
-                          <ref role="1Pybhc" to="rw00:3SnNvqCaK4d" resolve="BreakpointProvidersManager" />
-                        </node>
                       </node>
                     </node>
                   </node>
