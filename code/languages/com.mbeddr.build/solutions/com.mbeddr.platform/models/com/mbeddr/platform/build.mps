@@ -18417,7 +18417,7 @@
         <node concept="3rtmxn" id="3xFG3bj5cS4" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cS5" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cS6" role="3LXTna">
-              <property role="3qWCbO" value="test_gen/**/*.xml" />
+              <property role="3qWCbO" value="**/*.xml" />
             </node>
             <node concept="398BVA" id="3xFG3bj5cS7" role="3LXTmr">
               <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
@@ -18425,6 +18425,9 @@
                 <property role="2Ry0Am" value="tests" />
                 <node concept="2Ry0Ak" id="3xFG3bj5cS9" role="2Ry0An">
                   <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.xml.fix" />
+                  <node concept="2Ry0Ak" id="1_mn3XDnZ3Q" role="2Ry0An">
+                    <property role="2Ry0Am" value="test_gen" />
+                  </node>
                 </node>
               </node>
             </node>
