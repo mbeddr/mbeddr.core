@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.xml" uuid="96569509-ecfc-4944-b6c9-075faf02fe2c" moduleVersion="0" compileInMPS="true">
+<solution name="org.xml" uuid="96569509-ecfc-4944-b6c9-075faf02fe2c" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="false">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="lib/xml-apis-ext.jar" />
       <sourceRoot location="lib/resolver.jar" />

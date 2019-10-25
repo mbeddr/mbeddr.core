@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.plantuml.pluginSolution" uuid="c0488c1e-322f-4f38-92d4-5520a7ce96c1" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-all-1.10.jar" />
-      <sourceRoot location="plantuml.jar" />
-      <sourceRoot location="rhino-1.7.10.jar" />
-    </modelRoot>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="plantuml.jar" />
+      <sourceRoot location="rhino-1.7.10.jar" />
+    </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/batik-all-1.10.jar" />
     <stubModelEntry path="${module}/lib/plantuml.jar" />
     <stubModelEntry path="${module}/lib/rhino-1.7.10.jar" />
   </stubModelEntries>
@@ -23,6 +21,7 @@
     <dependency reexport="false">b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
     <dependency reexport="false">96569509-ecfc-4944-b6c9-075faf02fe2c(org.xml)</dependency>
+    <dependency reexport="false">5ad14eca-28d7-4bce-b8e0-648908a49062(org.apache.batik)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="9" />
@@ -59,6 +58,7 @@
     <module reference="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
+    <module reference="5ad14eca-28d7-4bce-b8e0-648908a49062(org.apache.batik)" version="0" />
     <module reference="96569509-ecfc-4944-b6c9-075faf02fe2c(org.xml)" version="0" />
   </dependencyVersions>
 </solution>

@@ -34,15 +34,16 @@
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
-    <import index="dnq3" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.dom.util(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="4anb" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
-    <import index="er5d" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="41rc" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.gvt(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="ugom" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.bridge(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="e373" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.util(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="ughz" ref="96569509-ecfc-4944-b6c9-075faf02fe2c/java:org.w3c.dom.svg(org.xml/)" />
+    <import index="dnq3" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.dom.util(org.apache.batik/)" />
+    <import index="ugom" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.bridge(org.apache.batik/)" />
+    <import index="e373" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.util(org.apache.batik/)" />
+    <import index="er5d" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing(org.apache.batik/)" />
+    <import index="4anb" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.svg(org.apache.batik/)" />
+    <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -384,6 +385,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -869,6 +871,17 @@
               </node>
             </node>
           </node>
+          <node concept="2OqwBi" id="35JynOkD1y1" role="ukAjM">
+            <node concept="2OqwBi" id="35JynOkD0Y$" role="2Oq$k0">
+              <node concept="2WthIp" id="35JynOkD0YB" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="35JynOkD0YD" role="2OqNvi">
+                <ref role="2WH_rO" node="buDqkdUFCR" resolve="project" />
+              </node>
+            </node>
+            <node concept="liA8E" id="35JynOkD2ex" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+            </node>
+          </node>
         </node>
         <node concept="3clFbF" id="2sPLpCfXI1m" role="3cqZAp">
           <node concept="2OqwBi" id="2sPLpCfXI28" role="3clFbG">
@@ -1064,6 +1077,17 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="35JynOkD2fi" role="ukAjM">
+            <node concept="2OqwBi" id="35JynOkD2fj" role="2Oq$k0">
+              <node concept="2WthIp" id="35JynOkD2fk" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="35JynOkD2fl" role="2OqNvi">
+                <ref role="2WH_rO" node="buDqkdUFCR" resolve="project" />
+              </node>
+            </node>
+            <node concept="liA8E" id="35JynOkD2fm" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -1346,6 +1370,12 @@
               <node concept="2ShNRf" id="2sPLpCfXNbg" role="37wK5m">
                 <node concept="1pGfFk" id="2sPLpCfXNbl" role="2ShVmc">
                   <ref role="37wK5l" node="2sPLpCfXLoO" resolve="ChangeCategoryAction" />
+                  <node concept="2OqwBi" id="35JynOkEwEq" role="37wK5m">
+                    <node concept="2WthIp" id="35JynOkEw6r" role="2Oq$k0" />
+                    <node concept="2BZ7hE" id="35JynOkExm8" role="2OqNvi">
+                      <ref role="2WH_rO" node="buDqkdUFCR" resolve="project" />
+                    </node>
+                  </node>
                   <node concept="2OqwBi" id="2sPLpCfXNyd" role="37wK5m">
                     <node concept="2WthIp" id="2sPLpCfXNye" role="2Oq$k0" />
                     <node concept="2BZ7hE" id="2sPLpCfXNyf" role="2OqNvi">
@@ -1775,17 +1805,17 @@
             <node concept="3cpWs8" id="2aP19v2Yufp" role="3cqZAp">
               <node concept="3cpWsn" id="2aP19v2YueZ" role="3cpWs9">
                 <property role="TrG5h" value="svgDocument" />
-                <node concept="3uibUv" id="2aP19v2Yufq" role="1tU5fm">
+                <node concept="3uibUv" id="35JynOkDShI" role="1tU5fm">
                   <ref role="3uigEE" to="ughz:~SVGDocument" resolve="SVGDocument" />
                 </node>
-                <node concept="2OqwBi" id="2aP19v2Yufr" role="33vP2m">
-                  <node concept="2OqwBi" id="2aP19v2Yufs" role="2Oq$k0">
-                    <node concept="2WthIp" id="2aP19v2Yuft" role="2Oq$k0" />
-                    <node concept="2BZ7hE" id="2aP19v2Yufu" role="2OqNvi">
+                <node concept="2OqwBi" id="35JynOkEegx" role="33vP2m">
+                  <node concept="2OqwBi" id="35JynOkEdbh" role="2Oq$k0">
+                    <node concept="2WthIp" id="35JynOkEd16" role="2Oq$k0" />
+                    <node concept="2BZ7hE" id="35JynOkEdtl" role="2OqNvi">
                       <ref role="2WH_rO" node="18ZQ$P82k1d" resolve="svgCanvas" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="2aP19v2Yufv" role="2OqNvi">
+                  <node concept="liA8E" id="35JynOkEf4q" role="2OqNvi">
                     <ref role="37wK5l" to="4anb:~JSVGComponent.getSVGDocument()" resolve="getSVGDocument" />
                   </node>
                 </node>
@@ -1826,8 +1856,8 @@
             </node>
             <node concept="3clFbF" id="2aP19v2Yw8y" role="3cqZAp">
               <node concept="2YIFZM" id="2aP19v2Yw8_" role="3clFbG">
-                <ref role="37wK5l" to="dnq3:~DOMUtilities.writeDocument(org.w3c.dom.Document,java.io.Writer)" resolve="writeDocument" />
                 <ref role="1Pybhc" to="dnq3:~DOMUtilities" resolve="DOMUtilities" />
+                <ref role="37wK5l" to="dnq3:~DOMUtilities.writeDocument(org.w3c.dom.Document,java.io.Writer)" resolve="writeDocument" />
                 <node concept="37vLTw" id="2aP19v2Yw8A" role="37wK5m">
                   <ref role="3cqZAo" node="2aP19v2YueZ" resolve="svgDocument" />
                 </node>
@@ -3859,8 +3889,8 @@
         <node concept="YeOm9" id="2sPLpCfQE7o" role="2ShVmc">
           <node concept="1Y3b0j" id="2sPLpCfQE7p" role="YeSDq">
             <property role="2bfB8j" value="true" />
-            <ref role="1Y3XeK" to="e373:~EventDispatcher$Dispatcher" resolve="EventDispatcher.Dispatcher" />
             <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+            <ref role="1Y3XeK" to="e373:~EventDispatcher$Dispatcher" resolve="EventDispatcher.Dispatcher" />
             <node concept="3Tm1VV" id="2sPLpCfQE7q" role="1B3o_S" />
             <node concept="3clFb_" id="2sPLpCfQE7r" role="jymVt">
               <property role="1EzhhJ" value="false" />
@@ -4616,6 +4646,13 @@
     <node concept="3uibUv" id="2sPLpCfXNaY" role="1zkMxy">
       <ref role="3uigEE" to="qkt:~AnAction" resolve="AnAction" />
     </node>
+    <node concept="312cEg" id="35JynOkEAXe" role="jymVt">
+      <property role="TrG5h" value="project" />
+      <node concept="3uibUv" id="35JynOkEAtl" role="1tU5fm">
+        <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+      </node>
+      <node concept="3Tm6S6" id="35JynOkEBt8" role="1B3o_S" />
+    </node>
     <node concept="312cEg" id="2sPLpCfXNyq" role="jymVt">
       <property role="TrG5h" value="model" />
       <node concept="3Tm6S6" id="2sPLpCfXNyr" role="1B3o_S" />
@@ -4634,6 +4671,19 @@
       <node concept="3cqZAl" id="2sPLpCfXLoP" role="3clF45" />
       <node concept="3Tm1VV" id="2sPLpCfXLoQ" role="1B3o_S" />
       <node concept="3clFbS" id="2sPLpCfXLoR" role="3clF47">
+        <node concept="3clFbF" id="35JynOkECf6" role="3cqZAp">
+          <node concept="37vLTI" id="35JynOkEDB6" role="3clFbG">
+            <node concept="37vLTw" id="35JynOkEE1Q" role="37vLTx">
+              <ref role="3cqZAo" node="35JynOkExXt" resolve="project" />
+            </node>
+            <node concept="2OqwBi" id="35JynOkECw$" role="37vLTJ">
+              <node concept="Xjq3P" id="35JynOkECf4" role="2Oq$k0" />
+              <node concept="2OwXpG" id="35JynOkECML" role="2OqNvi">
+                <ref role="2Oxat5" node="35JynOkEAXe" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2sPLpCfXNyx" role="3cqZAp">
           <node concept="37vLTI" id="2sPLpCfXNzi" role="3clFbG">
             <node concept="37vLTw" id="2sPLpCfXNzl" role="37vLTx">
@@ -4659,6 +4709,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="35JynOkExXt" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="35JynOkEyqr" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="37vLTG" id="2sPLpCfXNyn" role="3clF46">
@@ -4772,6 +4828,14 @@
                                       </node>
                                     </node>
                                   </node>
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="35JynOkEGnK" role="ukAjM">
+                                <node concept="37vLTw" id="35JynOkEFqL" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="35JynOkEAXe" resolve="project" />
+                                </node>
+                                <node concept="liA8E" id="35JynOkEH4e" role="2OqNvi">
+                                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                                 </node>
                               </node>
                             </node>
