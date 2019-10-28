@@ -413,7 +413,7 @@
               </node>
               <node concept="1iwH7S" id="78Ts1skpDx2" role="37wK5m" />
               <node concept="Xl_RD" id="78Ts1skq3qF" role="37wK5m">
-                <property role="Xl_RC" value="com.mbeddr.core.modules.gen/main.desktop" />
+                <property role="Xl_RC" value="com.mbeddr.core.buldconfig/main.desktop" />
               </node>
             </node>
           </node>
@@ -530,6 +530,38 @@
     <property role="TrG5h" value="runConfigItemPreprocessors" />
     <node concept="1puMqW" id="4qSf1u20kjx" role="1pvy6N">
       <ref role="1puQsG" node="4qSf1u20j2j" resolve="runConfigItemPreprocessors" />
+    </node>
+    <node concept="avzCv" id="54qfH0vEBXk" role="avys_">
+      <node concept="3clFbS" id="54qfH0vEBXl" role="2VODD2">
+        <node concept="3cpWs8" id="54qfH0vuk2D" role="3cqZAp">
+          <node concept="3cpWsn" id="54qfH0vuk2E" role="3cpWs9">
+            <property role="TrG5h" value="bc" />
+            <node concept="3Tqbb2" id="54qfH0vuk2F" role="1tU5fm">
+              <ref role="ehGHo" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+            </node>
+            <node concept="2YIFZM" id="54qfH0vuk2G" role="33vP2m">
+              <ref role="1Pybhc" to="ahli:78Ts1skprjP" resolve="BCHelper" />
+              <ref role="37wK5l" to="ahli:78Ts1skpCf_" resolve="findBC" />
+              <node concept="2OqwBi" id="54qfH0vEC4H" role="37wK5m">
+                <node concept="1iwH7S" id="54qfH0vEC4I" role="2Oq$k0" />
+                <node concept="1r8y6K" id="54qfH0vEC4J" role="2OqNvi" />
+              </node>
+              <node concept="1iwH7S" id="54qfH0vEC4K" role="37wK5m" />
+              <node concept="Xl_RD" id="54qfH0vF4Sk" role="37wK5m">
+                <property role="Xl_RC" value="com.mbeddr.core.buildconfig/main.runConfigItemPreprocessors" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="54qfH0vukHX" role="3cqZAp">
+          <node concept="2OqwBi" id="54qfH0vulGA" role="3clFbG">
+            <node concept="37vLTw" id="54qfH0vukHV" role="2Oq$k0">
+              <ref role="3cqZAo" node="54qfH0vuk2E" resolve="bc" />
+            </node>
+            <node concept="3x8VRR" id="54qfH0vunOI" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1pmfR0" id="4qSf1u20j2j">
@@ -6243,6 +6275,38 @@
     <property role="TrG5h" value="adjustImplModulePrefixes" />
     <node concept="1puMqW" id="7Aba6Bzh2Oa" role="1puA0r">
       <ref role="1puQsG" node="7Aba6ByGqqn" resolve="adjustImplModulePrefixes" />
+    </node>
+    <node concept="avzCv" id="54qfH0vMDq2" role="avys_">
+      <node concept="3clFbS" id="54qfH0vMDq3" role="2VODD2">
+        <node concept="3cpWs8" id="54qfH0vMDQX" role="3cqZAp">
+          <node concept="3cpWsn" id="54qfH0vMDQY" role="3cpWs9">
+            <property role="TrG5h" value="bc" />
+            <node concept="3Tqbb2" id="54qfH0vMDQZ" role="1tU5fm">
+              <ref role="ehGHo" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+            </node>
+            <node concept="2YIFZM" id="54qfH0vMDR0" role="33vP2m">
+              <ref role="1Pybhc" to="ahli:78Ts1skprjP" resolve="BCHelper" />
+              <ref role="37wK5l" to="ahli:78Ts1skpCf_" resolve="findBC" />
+              <node concept="2OqwBi" id="54qfH0vMDR1" role="37wK5m">
+                <node concept="1iwH7S" id="54qfH0vMDR2" role="2Oq$k0" />
+                <node concept="1r8y6K" id="54qfH0vMDR3" role="2OqNvi" />
+              </node>
+              <node concept="1iwH7S" id="54qfH0vMDR4" role="37wK5m" />
+              <node concept="Xl_RD" id="54qfH0vuFe7" role="37wK5m">
+                <property role="Xl_RC" value="com.mbeddr.core.buildconfig/main.adjustImplModulePrefixes" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="54qfH0vMDR5" role="3cqZAp">
+          <node concept="2OqwBi" id="54qfH0vMDR6" role="3clFbG">
+            <node concept="37vLTw" id="54qfH0vMDR7" role="2Oq$k0">
+              <ref role="3cqZAo" node="54qfH0vMDQY" resolve="bc" />
+            </node>
+            <node concept="3x8VRR" id="54qfH0vMDR8" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
