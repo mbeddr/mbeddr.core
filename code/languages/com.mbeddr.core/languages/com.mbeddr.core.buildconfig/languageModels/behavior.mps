@@ -2,7 +2,7 @@
 <model ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
@@ -4491,7 +4491,7 @@
                 <node concept="2kEO4f" id="78Ts1skq2zB" role="2OqNvi">
                   <node concept="3cpWs3" id="78Ts1skq2$M" role="2k5Stb">
                     <node concept="Xl_RD" id="78Ts1skq2$P" role="3uHU7w">
-                      <property role="Xl_RC" value="; not generating any code." />
+                      <property role="Xl_RC" value="; not generating any code" />
                     </node>
                     <node concept="3cpWs3" id="78Ts1skq2zY" role="3uHU7B">
                       <node concept="3cpWs3" id="78Ts1skq3pi" role="3uHU7B">
