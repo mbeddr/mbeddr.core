@@ -3287,6 +3287,7 @@
         </node>
         <node concept="1SiIV0" id="35JynOkFDOf" role="3bR37C">
           <node concept="3bR9La" id="35JynOkFDOg" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="35JynOkF_BM" resolve="org.apache.batik" />
           </node>
         </node>

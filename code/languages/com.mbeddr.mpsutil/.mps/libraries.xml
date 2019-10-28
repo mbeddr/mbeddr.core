@@ -3,6 +3,14 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="mbeddr">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr" />
+              <option name="path" value="${mbeddr.github.core.home}/code" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mps.extensions">
           <value>
             <Library>
