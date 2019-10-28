@@ -21,7 +21,7 @@
     <dependency reexport="false">b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
     <dependency reexport="false">96569509-ecfc-4944-b6c9-075faf02fe2c(org.xml)</dependency>
-    <dependency reexport="false">5ad14eca-28d7-4bce-b8e0-648908a49062(org.apache.batik)</dependency>
+    <dependency reexport="true">5ad14eca-28d7-4bce-b8e0-648908a49062(org.apache.batik)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="9" />
