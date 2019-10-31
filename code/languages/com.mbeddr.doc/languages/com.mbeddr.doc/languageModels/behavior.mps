@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -202,8 +202,12 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -1334,6 +1338,28 @@
       <node concept="3uibUv" id="3RyTuhdwWEY" role="3clF45">
         <ref role="3uigEE" to="hwgx:2bPPn51Sxsu" resolve="AbstractTreeViewNode" />
       </node>
+    </node>
+    <node concept="13i0hz" id="7NleypPGjRL" role="13h7CS">
+      <property role="TrG5h" value="allowEverythingExceptWhitespace" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="hwgx:8q0nkX_5K4" resolve="allowEverythingExceptWhitespace" />
+      <node concept="3Tm1VV" id="7NleypPGjRM" role="1B3o_S" />
+      <node concept="3clFbS" id="7NleypPGjRR" role="3clF47">
+        <node concept="3SKdUt" id="7NleypPGkH2" role="3cqZAp">
+          <node concept="3SKdUq" id="7NleypPGkH4" role="3SKWNk">
+            <property role="3SKdUp" value="documents names are only used for text generation and file names (hence no need for strict identifier names)" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7NleypPGkDh" role="3cqZAp">
+          <node concept="3clFbT" id="7NleypPGkDg" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7NleypPGjRS" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="2TZO3DbvVvX">
