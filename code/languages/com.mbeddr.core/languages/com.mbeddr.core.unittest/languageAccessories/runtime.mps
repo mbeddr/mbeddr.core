@@ -4847,13 +4847,23 @@
           </node>
         </node>
         <node concept="2BFjQ_" id="6Eb3bNeydnh" role="3XIRFZ">
-          <node concept="n5E$d" id="1m$ejqD02sw" role="2BFjQA">
-            <node concept="3TlM44" id="1m$ejqD02sz" role="n5E$c">
-              <node concept="3ZVu4v" id="7nMAuIoOR93" role="3TlMhI">
-                <ref role="3ZVs_2" node="7nMAuIoOIN0" resolve="total_failure_count" />
+          <node concept="n5E$d" id="22SNkXJu7Tw" role="2BFjQA">
+            <node concept="2EHzL6" id="22SNkXJu7TI" role="n5E$c">
+              <node concept="3TlM44" id="22SNkXJu7T$" role="3TlMhI">
+                <node concept="3ZVu4v" id="7nMAuIoOR93" role="3TlMhI">
+                  <ref role="3ZVs_2" node="7nMAuIoOIN0" resolve="total_failure_count" />
+                </node>
+                <node concept="3TlMh9" id="22SNkXJu7T_" role="3TlMhJ">
+                  <property role="2hmy$m" value="0" />
+                </node>
               </node>
-              <node concept="3TlMh9" id="1m$ejqD02s$" role="3TlMhJ">
-                <property role="2hmy$m" value="0" />
+              <node concept="3TlM44" id="22SNkXJu83P" role="3TlMhJ">
+                <node concept="3TlMh9" id="22SNkXJu84c" role="3TlMhJ">
+                  <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="3ZVu4v" id="22SNkXJu7Ua" role="3TlMhI">
+                  <ref role="3ZVs_2" node="6On3mjUHazG" resolve="total_error_count" />
+                </node>
               </node>
             </node>
             <node concept="4ZOvp" id="1m$ejqD02xs" role="n5E$j">
