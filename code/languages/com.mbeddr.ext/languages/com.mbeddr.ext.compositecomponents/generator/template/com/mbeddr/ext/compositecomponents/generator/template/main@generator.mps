@@ -2916,7 +2916,7 @@
               <property role="3oM_SC" value="all" />
             </node>
             <node concept="3oM_SD" id="6JXsDxrKBWw" role="1PaTwD">
-              <property role="3oM_SC" value="intance" />
+              <property role="3oM_SC" value="instance" />
             </node>
             <node concept="3oM_SD" id="6JXsDxrKBWx" role="1PaTwD">
               <property role="3oM_SC" value="configs" />
@@ -3386,23 +3386,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3ejBUtVm4kq" role="3cqZAp">
-              <node concept="2OqwBi" id="3ejBUtVm4kr" role="3clFbG">
-                <node concept="2OqwBi" id="3ejBUtVm4ks" role="2Oq$k0">
-                  <node concept="2GrUjf" id="3ejBUtVm4kt" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="3ejBUtVm4jb" resolve="instanceConfig" />
-                  </node>
-                  <node concept="3Tsc0h" id="3ejBUtVm4ku" role="2OqNvi">
-                    <ref role="3TtcxE" to="v7ag:6JVEnxIhBcl" resolve="contents" />
-                  </node>
-                </node>
-                <node concept="X8dFx" id="3ejBUtVm4kv" role="2OqNvi">
-                  <node concept="37vLTw" id="3ejBUtVm4kw" role="25WWJ7">
-                    <ref role="3cqZAo" node="3ejBUtVm4k8" resolve="collectedConnectors" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3SKdUt" id="3ejBUtVm4kx" role="3cqZAp">
               <node concept="1PaTwC" id="6JXsDxrKBY4" role="3ndbpf">
                 <node concept="3oM_SD" id="6JXsDxrKBY5" role="1PaTwD">
@@ -3486,6 +3469,24 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="3ejBUtVm4kq" role="3cqZAp">
+              <node concept="2OqwBi" id="3ejBUtVm4kr" role="3clFbG">
+                <node concept="2OqwBi" id="3ejBUtVm4ks" role="2Oq$k0">
+                  <node concept="2GrUjf" id="3ejBUtVm4kt" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="3ejBUtVm4jb" resolve="instanceConfig" />
+                  </node>
+                  <node concept="3Tsc0h" id="3ejBUtVm4ku" role="2OqNvi">
+                    <ref role="3TtcxE" to="v7ag:6JVEnxIhBcl" resolve="contents" />
+                  </node>
+                </node>
+                <node concept="X8dFx" id="3ejBUtVm4kv" role="2OqNvi">
+                  <node concept="37vLTw" id="3ejBUtVm4kw" role="25WWJ7">
+                    <ref role="3cqZAo" node="3ejBUtVm4k8" resolve="collectedConnectors" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1TAh8J6hy49" role="3cqZAp" />
             <node concept="3clFbH" id="3ejBUtVm4kJ" role="3cqZAp" />
             <node concept="3SKdUt" id="3ejBUtVm4kK" role="3cqZAp">
               <node concept="1PaTwC" id="6JXsDxrKBYn" role="3ndbpf">
@@ -4598,13 +4599,13 @@
                       <property role="3oM_SC" value="temporary" />
                     </node>
                     <node concept="3oM_SD" id="6JXsDxrKC0i" role="1PaTwD">
-                      <property role="3oM_SC" value="varaible" />
+                      <property role="3oM_SC" value="variable" />
                     </node>
                     <node concept="3oM_SD" id="6JXsDxrKC0j" role="1PaTwD">
                       <property role="3oM_SC" value="needed" />
                     </node>
                     <node concept="3oM_SD" id="6JXsDxrKC0k" role="1PaTwD">
-                      <property role="3oM_SC" value="becuase" />
+                      <property role="3oM_SC" value="because" />
                     </node>
                     <node concept="3oM_SD" id="6JXsDxrKC0l" role="1PaTwD">
                       <property role="3oM_SC" value="of" />
@@ -5441,7 +5442,7 @@
                                   <property role="3oM_SC" value="the" />
                                 </node>
                                 <node concept="3oM_SD" id="6JXsDxrKC2Z" role="1PaTwD">
-                                  <property role="3oM_SC" value="plattening" />
+                                  <property role="3oM_SC" value="flattening" />
                                 </node>
                                 <node concept="3oM_SD" id="6JXsDxrKC30" role="1PaTwD">
                                   <property role="3oM_SC" value="process" />
@@ -5564,7 +5565,7 @@
                                   <property role="3oM_SC" value="the" />
                                 </node>
                                 <node concept="3oM_SD" id="6JXsDxrKC3C" role="1PaTwD">
-                                  <property role="3oM_SC" value="orignal" />
+                                  <property role="3oM_SC" value="original" />
                                 </node>
                                 <node concept="3oM_SD" id="6JXsDxrKC3D" role="1PaTwD">
                                   <property role="3oM_SC" value="init" />
@@ -5675,7 +5676,7 @@
               <property role="3oM_SC" value="composite" />
             </node>
             <node concept="3oM_SD" id="6JXsDxrKC3N" role="1PaTwD">
-              <property role="3oM_SC" value="componets." />
+              <property role="3oM_SC" value="components." />
             </node>
           </node>
         </node>
