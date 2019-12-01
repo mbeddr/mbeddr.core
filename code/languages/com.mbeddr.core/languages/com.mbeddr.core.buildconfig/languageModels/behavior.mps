@@ -7083,7 +7083,7 @@
     </node>
     <node concept="2tJIrI" id="4QnOXkAv$Kj" role="jymVt" />
     <node concept="2YIFZL" id="47Hq2tqUTVh" role="jymVt">
-      <property role="TrG5h" value="getLibraryName" />
+      <property role="TrG5h" value="getLibraryFileName" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="5ara9PcnOy2" role="3clF47">
@@ -7221,7 +7221,7 @@
             <node concept="3clFbS" id="5ara9Pco3kw" role="9aQI4">
               <node concept="3cpWs6" id="5ara9Pco3$O" role="3cqZAp">
                 <node concept="1rXfSq" id="7EZ1SppIsLX" role="3cqZAk">
-                  <ref role="37wK5l" node="7EZ1SppIqCw" resolve="getStaticLibraryName" />
+                  <ref role="37wK5l" node="7EZ1SppIqCw" resolve="getStaticLibraryFileName" />
                   <node concept="37vLTw" id="7EZ1SppIsLZ" role="37wK5m">
                     <ref role="3cqZAo" node="5ara9PcnOD_" resolve="library" />
                   </node>
@@ -7242,7 +7242,7 @@
     </node>
     <node concept="2tJIrI" id="5ara9Pcr3pb" role="jymVt" />
     <node concept="2YIFZL" id="47Hq2tqUUj9" role="jymVt">
-      <property role="TrG5h" value="getImportLibraryName" />
+      <property role="TrG5h" value="getImportLibraryFileName" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="5ara9Pcr2JN" role="3clF47">
@@ -7258,7 +7258,7 @@
           <node concept="3clFbS" id="5ara9Pcr2JS" role="3clFbx">
             <node concept="3cpWs6" id="5ara9Pcr2Kn" role="3cqZAp">
               <node concept="1rXfSq" id="7EZ1SppIrh$" role="3cqZAk">
-                <ref role="37wK5l" node="7EZ1SppIqCw" resolve="getStaticLibraryName" />
+                <ref role="37wK5l" node="7EZ1SppIqCw" resolve="getStaticLibraryFileName" />
                 <node concept="37vLTw" id="7EZ1SppIrlh" role="37wK5m">
                   <ref role="3cqZAo" node="5ara9Pcr2KD" resolve="library" />
                 </node>
@@ -7288,7 +7288,7 @@
     <node concept="3Tm1VV" id="5Dpaey8tcmX" role="1B3o_S" />
     <node concept="2tJIrI" id="7EZ1SppIqnC" role="jymVt" />
     <node concept="2YIFZL" id="7EZ1SppIqCw" role="jymVt">
-      <property role="TrG5h" value="getStaticLibraryName" />
+      <property role="TrG5h" value="getStaticLibraryFileName" />
       <node concept="3clFbS" id="7EZ1SppIqCz" role="3clF47">
         <node concept="3clFbF" id="7EZ1SppIqQe" role="3cqZAp">
           <node concept="3cpWs3" id="7EZ1SppIqQg" role="3clFbG">
