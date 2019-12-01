@@ -2589,17 +2589,12 @@
                                 <node concept="2YIFZM" id="7EZ1SppIzsP" role="3uHU7w">
                                   <ref role="37wK5l" to="ahli:7EZ1SppIqCw" resolve="getStaticLibraryName" />
                                   <ref role="1Pybhc" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
-                                  <node concept="2OqwBi" id="7EZ1SppIOBy" role="37wK5m">
-                                    <node concept="2OqwBi" id="7EZ1SppI$eE" role="2Oq$k0">
-                                      <node concept="37vLTw" id="7EZ1SppIzTm" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="7EZ1SppGtVG" resolve="it" />
-                                      </node>
-                                      <node concept="3TrEf2" id="7EZ1SppIObh" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="51wr:2kkumeGQBhZ" resolve="lib" />
-                                      </node>
+                                  <node concept="2OqwBi" id="7EZ1SppI$eE" role="37wK5m">
+                                    <node concept="37vLTw" id="7EZ1SppIzTm" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="7EZ1SppGtVG" resolve="it" />
                                     </node>
-                                    <node concept="3TrcHB" id="7EZ1SppJ4PM" role="2OqNvi">
-                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                    <node concept="3TrEf2" id="7EZ1SppIObh" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="51wr:2kkumeGQBhZ" resolve="lib" />
                                     </node>
                                   </node>
                                 </node>
