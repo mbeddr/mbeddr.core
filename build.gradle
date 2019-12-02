@@ -20,7 +20,7 @@ ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2019
 
 //MPS version
 ext.mpsMajor = "2019.2"
-ext.mpsBuild = "2019.2.3"
+ext.mpsBuild = "2019.2.4"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
