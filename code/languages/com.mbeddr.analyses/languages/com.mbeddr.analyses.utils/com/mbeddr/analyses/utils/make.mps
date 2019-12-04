@@ -985,31 +985,23 @@
                   </node>
                   <node concept="2OqwBi" id="5psiJWPxItJ" role="33vP2m">
                     <node concept="2OqwBi" id="7kEiJU7tLvG" role="2Oq$k0">
-                      <node concept="2OqwBi" id="ETuBV6jxSd" role="2Oq$k0">
-                        <node concept="2OqwBi" id="ETuBV6lGwa" role="2Oq$k0">
-                          <node concept="37vLTw" id="5pNvrID27Vg" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5pNvrID27Ve" resolve="builder" />
-                          </node>
-                          <node concept="liA8E" id="ETuBV6lH7s" role="2OqNvi">
-                            <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.reporting(boolean,boolean,boolean,int)" resolve="reporting" />
-                            <node concept="3clFbT" id="ETuBV6lHD9" role="37wK5m">
-                              <property role="3clFbU" value="true" />
-                            </node>
-                            <node concept="3clFbT" id="ETuBV6lI8s" role="37wK5m">
-                              <property role="3clFbU" value="true" />
-                            </node>
-                            <node concept="3clFbT" id="ETuBV6lJ7S" role="37wK5m">
-                              <property role="3clFbU" value="true" />
-                            </node>
-                            <node concept="3cmrfG" id="ETuBV6lLcJ" role="37wK5m">
-                              <property role="3cmrfH" value="-1" />
-                            </node>
-                          </node>
+                      <node concept="2OqwBi" id="ETuBV6lGwa" role="2Oq$k0">
+                        <node concept="37vLTw" id="5pNvrID27Vg" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5pNvrID27Ve" resolve="builder" />
                         </node>
-                        <node concept="liA8E" id="ETuBV6jzbp" role="2OqNvi">
-                          <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.rebuildAll(boolean)" resolve="rebuildAll" />
-                          <node concept="3clFbT" id="ETuBV6jAB6" role="37wK5m">
+                        <node concept="liA8E" id="ETuBV6lH7s" role="2OqNvi">
+                          <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.reporting(boolean,boolean,boolean,int)" resolve="reporting" />
+                          <node concept="3clFbT" id="ETuBV6lHD9" role="37wK5m">
                             <property role="3clFbU" value="true" />
+                          </node>
+                          <node concept="3clFbT" id="ETuBV6lI8s" role="37wK5m">
+                            <property role="3clFbU" value="true" />
+                          </node>
+                          <node concept="3clFbT" id="ETuBV6lJ7S" role="37wK5m">
+                            <property role="3clFbU" value="true" />
+                          </node>
+                          <node concept="3cmrfG" id="ETuBV6lLcJ" role="37wK5m">
+                            <property role="3cmrfH" value="-1" />
                           </node>
                         </node>
                       </node>
@@ -1020,7 +1012,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="liA8E" id="5psiJWPxJyY" role="2OqNvi">
+                    <node concept="liA8E" id="ga3RMZZPDf" role="2OqNvi">
                       <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.create()" resolve="create" />
                     </node>
                   </node>
