@@ -2592,7 +2592,7 @@
             <property role="TrG5h" value="concepts" />
             <node concept="A3Dl8" id="SU$cf9Tlbc" role="1tU5fm">
               <node concept="3bZ5Sz" id="SU$cf9Tlbf" role="A3Ik2">
-                <ref role="3bZ5Sy" to="tpck:gw2VY9q" resolve="BaseConcept" />
+                <ref role="3bZ5Sy" to="mj1l:7FQByU3CrCM" resolve="Expression" />
               </node>
             </node>
           </node>
