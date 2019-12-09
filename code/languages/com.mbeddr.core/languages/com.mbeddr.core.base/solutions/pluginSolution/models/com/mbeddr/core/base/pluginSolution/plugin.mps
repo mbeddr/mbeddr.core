@@ -17519,6 +17519,7 @@
         <node concept="3cpWs8" id="2bPPn51By9c" role="3cqZAp">
           <node concept="3cpWsn" id="2bPPn51By9d" role="3cpWs9">
             <property role="TrG5h" value="root" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="7UXZ7U8pL8T" role="1tU5fm">
               <ref role="3uigEE" to="hwgx:2bPPn51Sxsu" resolve="AbstractTreeViewNode" />
             </node>
@@ -17574,25 +17575,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1yljmw4zT36" role="3cqZAp">
-          <node concept="2OqwBi" id="1yljmw4zTa8" role="3clFbG">
-            <node concept="37vLTw" id="1yljmw4zT35" role="2Oq$k0">
-              <ref role="3cqZAo" node="7Q6Q5uyym_z" resolve="tool" />
-            </node>
-            <node concept="2XshWL" id="1yljmw4zUn8" role="2OqNvi">
-              <ref role="2WH_rO" node="7Q6Q5uyAeIO" resolve="setRoot" />
-              <node concept="37vLTw" id="2bPPn51By9k" role="2XxRq1">
-                <ref role="3cqZAo" node="2bPPn51By9d" resolve="root" />
-              </node>
-              <node concept="2OqwBi" id="1yljmw4QWDR" role="2XxRq1">
-                <node concept="2WthIp" id="1yljmw4QWDU" role="2Oq$k0" />
-                <node concept="1DTwFV" id="1yljmw4ScxU" role="2OqNvi">
-                  <ref role="2WH_rO" node="1yljmw4RRr6" resolve="mpsproject" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="7Q6Q5uyymGE" role="3cqZAp">
           <node concept="2OqwBi" id="7Q6Q5uyymNf" role="3clFbG">
             <node concept="37vLTw" id="7Q6Q5uyymGD" role="2Oq$k0">
@@ -17602,6 +17584,47 @@
               <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
               <node concept="3clFbT" id="7Q6Q5uyzDxA" role="37wK5m">
                 <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="o5KpuIKclg" role="3cqZAp">
+          <node concept="3cpWsn" id="o5KpuIKclh" role="3cpWs9">
+            <property role="TrG5h" value="p" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="o5KpuIKceE" role="1tU5fm">
+              <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+            </node>
+            <node concept="2OqwBi" id="o5KpuIKcli" role="33vP2m">
+              <node concept="2WthIp" id="o5KpuIKclj" role="2Oq$k0" />
+              <node concept="1DTwFV" id="o5KpuIKclk" role="2OqNvi">
+                <ref role="2WH_rO" node="1yljmw4RRr6" resolve="mpsproject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="o5KpuIKbP_" role="3cqZAp">
+          <node concept="2YIFZM" id="o5KpuIKc2o" role="3clFbG">
+            <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+            <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
+            <node concept="1bVj0M" id="o5KpuIKc6i" role="37wK5m">
+              <node concept="3clFbS" id="o5KpuIKc6j" role="1bW5cS">
+                <node concept="3clFbF" id="1yljmw4zT36" role="3cqZAp">
+                  <node concept="2OqwBi" id="1yljmw4zTa8" role="3clFbG">
+                    <node concept="37vLTw" id="1yljmw4zT35" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7Q6Q5uyym_z" resolve="tool" />
+                    </node>
+                    <node concept="2XshWL" id="1yljmw4zUn8" role="2OqNvi">
+                      <ref role="2WH_rO" node="7Q6Q5uyAeIO" resolve="setRoot" />
+                      <node concept="37vLTw" id="2bPPn51By9k" role="2XxRq1">
+                        <ref role="3cqZAo" node="2bPPn51By9d" resolve="root" />
+                      </node>
+                      <node concept="37vLTw" id="o5KpuIKcll" role="2XxRq1">
+                        <ref role="3cqZAo" node="o5KpuIKclh" resolve="p" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
