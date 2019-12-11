@@ -1953,8 +1953,8 @@
         </node>
         <node concept="3clFbF" id="3EF07BwtZDa" role="3cqZAp">
           <node concept="37vLTI" id="3EF07BwtZDb" role="3clFbG">
-            <node concept="3clFbT" id="3EF07BwtZDc" role="37vLTx">
-              <property role="3clFbU" value="false" />
+            <node concept="37vLTw" id="GAojRMV3jM" role="37vLTx">
+              <ref role="3cqZAo" node="5syY_AMw32R" resolve="supportFiltering" />
             </node>
             <node concept="2OqwBi" id="3EF07BwtZDd" role="37vLTJ">
               <node concept="Xjq3P" id="3EF07BwtZDe" role="2Oq$k0" />
