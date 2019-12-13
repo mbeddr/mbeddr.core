@@ -26,6 +26,7 @@
     <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="evo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context(MPS.Core/)" />
+    <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -37,6 +38,8 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
+        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -4720,6 +4723,48 @@
     </node>
     <node concept="13hLZK" id="2ufoZQIGI7P" role="13h7CW">
       <node concept="3clFbS" id="2ufoZQIGI7Q" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="dyYABzFEL">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <ref role="13h7C2" to="3673:7ueT7DHU8j_" resolve="InterpretExpression" />
+    <node concept="13hLZK" id="dyYABzFEM" role="13h7CW">
+      <node concept="3clFbS" id="dyYABzFEN" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="dyYABzFF6" role="13h7CS">
+      <property role="2Ki8OM" value="true" />
+      <property role="TrG5h" value="legalAsStatement" />
+      <property role="13i0is" value="false" />
+      <ref role="13i0hy" to="tpek:1653mnvAgqK" resolve="legalAsStatement" />
+      <node concept="3Tm1VV" id="dyYABzFF7" role="1B3o_S" />
+      <node concept="3clFbS" id="dyYABzFFc" role="3clF47">
+        <node concept="3clFbF" id="dyYABzG2c" role="3cqZAp">
+          <node concept="3clFbT" id="dyYABzG2b" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="dyYABzFFd" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="dyYABzN86">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <ref role="13h7C2" to="3673:4_QpjDi7hcK" resolve="InterpretConstraintExpression" />
+    <node concept="13hLZK" id="dyYABzN87" role="13h7CW">
+      <node concept="3clFbS" id="dyYABzN88" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="dyYABzN8_" role="13h7CS">
+      <property role="TrG5h" value="isLegalAsStatement" />
+      <ref role="13i0hy" to="tpek:i26MfYG" resolve="isLegalAsStatement" />
+      <node concept="3Tm1VV" id="dyYABzN8A" role="1B3o_S" />
+      <node concept="3clFbS" id="dyYABzN8T" role="3clF47">
+        <node concept="3clFbF" id="dyYABzNia" role="3cqZAp">
+          <node concept="3clFbT" id="dyYABzNi9" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="dyYABzN8U" role="3clF45" />
     </node>
   </node>
 </model>
