@@ -40,6 +40,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
+    <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -7750,10 +7751,10 @@
               <node concept="3cpWsn" id="WieAE6GpU3" role="3cpWs9">
                 <property role="TrG5h" value="ep" />
                 <node concept="Sf$Xq" id="WieAE6GpU1" role="1tU5fm">
-                  <ref role="Sf$Xr" node="13FXotcVDbM" resolve="cutomValueRenderer" />
+                  <ref role="Sf$Xr" node="13FXotcVDbM" resolve="customValueRenderer" />
                 </node>
                 <node concept="2O5UvJ" id="WieAE6GpU4" role="33vP2m">
-                  <ref role="2O5UnU" node="13FXotcVDbM" resolve="cutomValueRenderer" />
+                  <ref role="2O5UnU" node="13FXotcVDbM" resolve="customValueRenderer" />
                 </node>
               </node>
             </node>
@@ -7955,6 +7956,14 @@
               </node>
             </node>
           </node>
+          <node concept="2OqwBi" id="6lCdCJoeEZS" role="ukAjM">
+            <node concept="37vLTw" id="6lCdCJoeEvR" role="2Oq$k0">
+              <ref role="3cqZAo" node="3iAE2QOqK5D" resolve="project" />
+            </node>
+            <node concept="liA8E" id="6lCdCJoeGtw" role="2OqNvi">
+              <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
+            </node>
+          </node>
         </node>
         <node concept="3cpWs8" id="3djJ2XoiFO9" role="3cqZAp">
           <node concept="3cpWsn" id="3djJ2XoiFOa" role="3cpWs9">
@@ -7979,9 +7988,9 @@
             </node>
             <node concept="liA8E" id="3djJ2XoiHFr" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JComponent.setBackground(java.awt.Color)" resolve="setBackground" />
-              <node concept="10M0yZ" id="3djJ2XoiHPG" role="37wK5m">
-                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+              <node concept="2YIFZM" id="6lCdCJoeEoK" role="37wK5m">
+                <ref role="37wK5l" to="g1qu:~UIUtil.getLabelTextForeground()" resolve="getLabelTextForeground" />
+                <ref role="1Pybhc" to="g1qu:~UIUtil" resolve="UIUtil" />
               </node>
             </node>
           </node>
@@ -8098,7 +8107,7 @@
     </node>
   </node>
   <node concept="vrV6u" id="13FXotcVDbM">
-    <property role="TrG5h" value="cutomValueRenderer" />
+    <property role="TrG5h" value="customValueRenderer" />
     <property role="3GE5qa" value="customValue" />
     <node concept="3uibUv" id="13FXotcVDeM" role="luc8K">
       <ref role="3uigEE" node="13FXotcVCgO" resolve="CustomValueRenderer" />
