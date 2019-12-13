@@ -37,13 +37,13 @@
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="k4pk" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/r:e053bdde-b82f-4d5b-a735-e0af382d4ef2(com.mbeddr.mpsutil.plantuml.pluginSolution/com.mbeddr.mpsutil.plantuml.pluginSolution.plugin)" />
-    <import index="er5d" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="41rc" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.gvt(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="u99y" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model.style(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="er5d" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing(org.apache.batik/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
+    <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -171,9 +171,6 @@
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
         <child id="1164903700860" name="catchClause" index="TEXxN" />
-      </concept>
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -3643,7 +3640,7 @@
       <property role="TrG5h" value="_view" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="6x5UxX2YZeJ" role="1B3o_S" />
-      <node concept="3uibUv" id="6x5UxX2Z0dg" role="1tU5fm">
+      <node concept="3uibUv" id="5oDe0RHc_zD" role="1tU5fm">
         <ref role="3uigEE" to="er5d:~JSVGScrollPane" resolve="JSVGScrollPane" />
       </node>
     </node>
@@ -4051,8 +4048,8 @@
       <node concept="3clFbS" id="1V72FUbz0RW" role="3clF47">
         <node concept="YS8fn" id="1V72FUbz3u1" role="3cqZAp">
           <node concept="2ShNRf" id="1V72FUbz3yj" role="YScLw">
-            <node concept="HV5vD" id="1V72FUbzaYl" role="2ShVmc">
-              <ref role="HV5vE" to="wyt6:~UnsupportedOperationException" resolve="UnsupportedOperationException" />
+            <node concept="1pGfFk" id="5oDe0RHaHJn" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
             </node>
           </node>
         </node>
@@ -4072,8 +4069,8 @@
       <node concept="3clFbS" id="1V72FUbz0S6" role="3clF47">
         <node concept="YS8fn" id="1V72FUbzb19" role="3cqZAp">
           <node concept="2ShNRf" id="1V72FUbzb1a" role="YScLw">
-            <node concept="HV5vD" id="1V72FUbzb1b" role="2ShVmc">
-              <ref role="HV5vE" to="wyt6:~UnsupportedOperationException" resolve="UnsupportedOperationException" />
+            <node concept="1pGfFk" id="5oDe0RHaHJp" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
             </node>
           </node>
         </node>
