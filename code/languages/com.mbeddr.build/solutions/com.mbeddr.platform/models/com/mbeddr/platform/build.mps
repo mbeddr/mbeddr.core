@@ -7734,6 +7734,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6aj7S9e2mHL" role="3bR37C">
+          <node concept="3bR9La" id="6aj7S9e2mHM" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:4p3FRivDLPL" resolve="de.slisson.mps.editor.multiline.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2bBLuwR9LnB" role="2G$12L">
         <property role="BnDLt" value="true" />
