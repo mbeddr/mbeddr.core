@@ -21,6 +21,7 @@
     <import index="grbm" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.text(org.apache.commons/)" />
     <import index="tp5r" ref="r:3ef5075b-89c5-437c-8971-b29ab29bb322(com.mbeddr.mpsutil.multilingual.common.behavior)" />
     <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -199,6 +200,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -221,6 +223,9 @@
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
         <reference id="1176109685394" name="concept" index="3lApI3" />
@@ -399,6 +404,19 @@
               </node>
             </node>
           </node>
+          <node concept="2OqwBi" id="3HHdT04nzoZ" role="ukAjM">
+            <node concept="2JrnkZ" id="3HHdT04nzjI" role="2Oq$k0">
+              <node concept="2OqwBi" id="3HHdT04nyVl" role="2JrQYb">
+                <node concept="1rXfSq" id="3HHdT04nyDs" role="2Oq$k0">
+                  <ref role="37wK5l" node="2bng37t0hf2" resolve="getCurrentLanguage" />
+                </node>
+                <node concept="I4A8Y" id="3HHdT04nzeM" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3HHdT04nz_0" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+            </node>
+          </node>
         </node>
         <node concept="3cpWs6" id="15QjPzrjRZR" role="3cqZAp">
           <node concept="37vLTw" id="15QjPzrjS0n" role="3cqZAk">
@@ -470,6 +488,19 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3HHdT04nzA6" role="ukAjM">
+            <node concept="2JrnkZ" id="3HHdT04nzA7" role="2Oq$k0">
+              <node concept="2OqwBi" id="3HHdT04nzA8" role="2JrQYb">
+                <node concept="37vLTw" id="3HHdT04nzLY" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2bng37t0hfg" resolve="currentLanguage" />
+                </node>
+                <node concept="I4A8Y" id="3HHdT04nzAa" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3HHdT04nzAb" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -773,6 +804,19 @@
                   <node concept="3w_OXm" id="2GRHOLINmIZ" role="2OqNvi" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3HHdT04n$qM" role="ukAjM">
+            <node concept="2JrnkZ" id="3HHdT04n$AO" role="2Oq$k0">
+              <node concept="2OqwBi" id="3HHdT04n$4k" role="2JrQYb">
+                <node concept="3B5_sB" id="3HHdT04nzUU" role="2Oq$k0">
+                  <ref role="3B5MYn" to="sv0f:2bng37sXbGM" resolve="GlobalLanguageContainer" />
+                </node>
+                <node concept="I4A8Y" id="3HHdT04n$lx" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3HHdT04n$LX" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>

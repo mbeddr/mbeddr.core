@@ -1054,6 +1054,16 @@
             </node>
             <node concept="liA8E" id="6XBHSVMGJnZ" role="2OqNvi">
               <ref role="37wK5l" to="rpb:6TiIOkRA79C" resolve="importEcoreModel" />
+              <node concept="2OqwBi" id="3HHdT04oCha" role="37wK5m">
+                <node concept="2JrnkZ" id="3HHdT04oCeq" role="2Oq$k0">
+                  <node concept="37vLTw" id="3HHdT04oC6c" role="2JrQYb">
+                    <ref role="3cqZAo" node="4MUcKNHm4$K" resolve="importedModel" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3HHdT04oClb" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

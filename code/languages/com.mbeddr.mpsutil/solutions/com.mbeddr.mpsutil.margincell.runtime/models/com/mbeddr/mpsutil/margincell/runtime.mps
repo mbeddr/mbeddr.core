@@ -259,6 +259,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -728,6 +729,24 @@
                   </node>
                 </node>
               </node>
+              <node concept="2OqwBi" id="3HHdT04ntOu" role="ukAjM">
+                <node concept="2OqwBi" id="3HHdT04ntbP" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3HHdT04nsnf" role="2Oq$k0">
+                    <node concept="37vLTw" id="3HHdT04nrS3" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1ZvNVeOgU3h" resolve="editorCell" />
+                    </node>
+                    <node concept="liA8E" id="3HHdT04nsTV" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell.getSNode()" resolve="getSNode" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3HHdT04ntLJ" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3HHdT04nujv" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="22lmx$" id="3S$6tmXTIMr" role="3clFbw">
@@ -1070,6 +1089,24 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3HHdT04nx0K" role="ukAjM">
+                <node concept="2OqwBi" id="3HHdT04nwn0" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3HHdT04nv2X" role="2Oq$k0">
+                    <node concept="37vLTw" id="3HHdT04nuy$" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4A3glljUQIx" resolve="editorCell" />
+                    </node>
+                    <node concept="liA8E" id="3HHdT04nw3u" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell.getSNode()" resolve="getSNode" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3HHdT04nwXW" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3HHdT04nxry" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                 </node>
               </node>
             </node>

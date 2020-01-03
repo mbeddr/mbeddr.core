@@ -34,6 +34,8 @@
     <import index="nwfd" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/)" />
     <import index="4h87" ref="r:05ff02e5-9836-4ae9-a454-eab43fa58c8f(jetbrains.mps.ide.httpsupport.manager.plugin)" />
     <import index="ciba" ref="r:11b7cdb2-cc58-456e-bb9a-ce45b78edd2f(jetbrains.mps.ide.httpsupport.runtime.base)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" implicit="true" />
     <import index="opgt" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:javax.servlet(com.mbeddr.mpsutil.httpsupport.rt/)" implicit="true" />
@@ -236,6 +238,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -1034,7 +1037,7 @@
               <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
             </node>
             <node concept="liA8E" id="2N1CSrzKNPz" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteInEDT(java.lang.Runnable)" resolve="runWriteInEDT" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runWriteInEDT(java.lang.Runnable)" resolve="runWriteInEDT" />
               <node concept="2ShNRf" id="2N1CSrzKNP$" role="37wK5m">
                 <node concept="YeOm9" id="2N1CSrzKNP_" role="2ShVmc">
                   <node concept="1Y3b0j" id="2N1CSrzKNPA" role="YeSDq">
@@ -1297,6 +1300,28 @@
               </node>
             </node>
           </node>
+          <node concept="2OqwBi" id="3HHdT04o01p" role="ukAjM">
+            <node concept="2OqwBi" id="3HHdT04nYRq" role="2Oq$k0">
+              <node concept="2OqwBi" id="3HHdT04nYoM" role="2Oq$k0">
+                <node concept="2YIFZM" id="3HHdT04nYoN" role="2Oq$k0">
+                  <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance()" resolve="getInstance" />
+                  <ref role="1Pybhc" to="z1c3:~ProjectManager" resolve="ProjectManager" />
+                </node>
+                <node concept="liA8E" id="3HHdT04nYoO" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects()" resolve="getOpenedProjects" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3HHdT04nZEh" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                <node concept="3cmrfG" id="3HHdT04nZM9" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3HHdT04o0np" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+            </node>
+          </node>
         </node>
         <node concept="3clFbH" id="4nkJFds07Fn" role="3cqZAp" />
         <node concept="3cpWs6" id="4nkJFds07Ph" role="3cqZAp">
@@ -1377,6 +1402,28 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3HHdT04o0rB" role="ukAjM">
+            <node concept="2OqwBi" id="3HHdT04o0rC" role="2Oq$k0">
+              <node concept="2OqwBi" id="3HHdT04o0rD" role="2Oq$k0">
+                <node concept="2YIFZM" id="3HHdT04o0rE" role="2Oq$k0">
+                  <ref role="1Pybhc" to="z1c3:~ProjectManager" resolve="ProjectManager" />
+                  <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance()" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="3HHdT04o0rF" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects()" resolve="getOpenedProjects" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3HHdT04o0rG" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                <node concept="3cmrfG" id="3HHdT04o0rH" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3HHdT04o0rI" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -1472,6 +1519,28 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3HHdT04o0Kb" role="ukAjM">
+            <node concept="2OqwBi" id="3HHdT04o0Kc" role="2Oq$k0">
+              <node concept="2OqwBi" id="3HHdT04o0Kd" role="2Oq$k0">
+                <node concept="2YIFZM" id="3HHdT04o0Ke" role="2Oq$k0">
+                  <ref role="1Pybhc" to="z1c3:~ProjectManager" resolve="ProjectManager" />
+                  <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance()" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="3HHdT04o0Kf" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects()" resolve="getOpenedProjects" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3HHdT04o0Kg" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                <node concept="3cmrfG" id="3HHdT04o0Kh" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3HHdT04o0Ki" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -2820,6 +2889,19 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3HHdT04nXRW" role="ukAjM">
+            <node concept="2JrnkZ" id="3HHdT04nXKy" role="2Oq$k0">
+              <node concept="2OqwBi" id="3HHdT04nXkn" role="2JrQYb">
+                <node concept="37vLTw" id="3HHdT04nX1P" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7rr3ESJD3YJ" resolve="resolveNode" />
+                </node>
+                <node concept="I4A8Y" id="3HHdT04nXF$" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3HHdT04nY79" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
