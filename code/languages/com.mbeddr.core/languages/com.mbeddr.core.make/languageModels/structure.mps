@@ -95,7 +95,7 @@
   <node concept="1TIwiD" id="5ak6HMA0E3v">
     <property role="TrG5h" value="Makefile" />
     <property role="19KtqR" value="true" />
-    <property role="R4oN_" value="a make file" />
+    <property role="R4oN_" value="a makefile" />
     <property role="EcuMT" value="5950410542643585247" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$AJpf" role="rwd14">
@@ -418,6 +418,7 @@
     <property role="34LRSv" value="#" />
     <property role="EcuMT" value="7595578942776864815" />
     <property role="R4oN_" value="a comment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6_CUGSFDJ0K" role="1TKVEl">
       <property role="TrG5h" value="comment" />
       <property role="IQ2nx" value="7595578942776864816" />
@@ -837,6 +838,39 @@
     </node>
     <node concept="PrWs8" id="50D6DLKssri" role="PzmwI">
       <ref role="PrY4T" node="4QnOXkAFewL" resolve="IMakefileItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3z9Ctyj5Nzp">
+    <property role="EcuMT" value="4091979687995586777" />
+    <property role="3GE5qa" value="conditionals" />
+    <property role="TrG5h" value="IfNDefDirective" />
+    <property role="34LRSv" value="ifndef" />
+    <property role="R4oN_" value="an if not defined condition" />
+    <ref role="1TJDcQ" node="4QnOXk_YBdy" resolve="UnaryConditionalDirective" />
+  </node>
+  <node concept="1TIwiD" id="3z9Ctyj5NXY">
+    <property role="EcuMT" value="4091979687995588478" />
+    <property role="3GE5qa" value="conditionals" />
+    <property role="TrG5h" value="IfNEqDirective" />
+    <property role="34LRSv" value="ifneq" />
+    <property role="R4oN_" value="an if not equals condition" />
+    <ref role="1TJDcQ" node="2b2D8jTN4pN" resolve="BinaryConditionalDirective" />
+  </node>
+  <node concept="1TIwiD" id="3z9Ctyjj9ED">
+    <property role="EcuMT" value="4091979687999085225" />
+    <property role="TrG5h" value="MakefileFragment" />
+    <property role="R4oN_" value="a makefile fragment" />
+    <property role="34LRSv" value="fragment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3z9Ctyjj9EE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="4091979687999085226" />
+      <ref role="20lvS9" node="6_CUGSFHTGe" resolve="IMakefileContent" />
+    </node>
+    <node concept="PrWs8" id="3z9Ctyjk89a" role="PzmwI">
+      <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
     </node>
   </node>
 </model>
