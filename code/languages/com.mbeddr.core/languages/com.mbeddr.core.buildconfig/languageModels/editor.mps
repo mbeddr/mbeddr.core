@@ -2358,10 +2358,10 @@
   </node>
   <node concept="24kQdi" id="7FeXv2EtpPh">
     <property role="3GE5qa" value="binary" />
-    <ref role="1XX52x" to="51wr:7FeXv2EtoDW" resolve="ExternalItem" />
+    <ref role="1XX52x" to="51wr:7FeXv2EtoDW" resolve="ExternalLibrary" />
     <node concept="1kIj98" id="7FeXv2EyI2Y" role="2wV5jI">
       <node concept="3F0A7n" id="7FeXv2EyI3o" role="1kIj9b">
-        <ref role="1NtTu8" to="51wr:7FeXv2EtpOY" resolve="value" />
+        <ref role="1NtTu8" to="51wr:7FeXv2EtpOY" resolve="name" />
       </node>
     </node>
   </node>

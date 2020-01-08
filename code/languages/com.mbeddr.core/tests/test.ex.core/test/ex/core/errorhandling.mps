@@ -543,12 +543,6 @@
     <node concept="2NXPZ9" id="7kmhBx2PWyh" role="N3F5h">
       <property role="TrG5h" value="empty_1437749436562_23" />
     </node>
-    <node concept="2NXPZ9" id="7kmhBx2PVH4" role="N3F5h">
-      <property role="TrG5h" value="empty_1437749424873_21" />
-    </node>
-    <node concept="2NXPZ9" id="7kmhBx2NBIv" role="N3F5h">
-      <property role="TrG5h" value="empty_1437749060890_12" />
-    </node>
     <node concept="lIfQi" id="6TAwvhVWkhM" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />

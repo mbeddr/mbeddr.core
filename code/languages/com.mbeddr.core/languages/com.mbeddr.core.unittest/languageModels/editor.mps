@@ -220,6 +220,9 @@
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
+      <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -1260,6 +1263,57 @@
         <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
         <node concept="11L4FC" id="6GAl_xx8u84" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2NUzdxFpjF5">
+    <ref role="1XX52x" to="yz9a:2NUzdxFlHY8" resolve="RequiredTagsAnnotation" />
+    <node concept="3EZMnI" id="2NUzdxFpjF7" role="2wV5jI">
+      <node concept="3F0ifn" id="2NUzdxFpjF8" role="3EZMnx">
+        <property role="3F0ifm" value="@required tags" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dhDUJ" resolve="Metadata" />
+        <ref role="1ERwB7" node="2NUzdxFpjGp" resolve="deleteRequiredTags" />
+      </node>
+      <node concept="3F2HdR" id="2NUzdxFpw1I" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="yz9a:2NUzdxFpuko" resolve="tags" />
+        <ref role="1ERwB7" node="2NUzdxFpjGp" resolve="deleteRequiredTags" />
+        <node concept="l2Vlx" id="2NUzdxFpw1K" role="2czzBx" />
+      </node>
+      <node concept="2SsqMj" id="2NUzdxFpjF9" role="3EZMnx">
+        <node concept="pVoyu" id="2NUzdxFpjFa" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2NUzdxFpjFb" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="2NUzdxFpjGp">
+    <property role="TrG5h" value="deleteRequiredTags" />
+    <ref role="1h_SK9" to="yz9a:2NUzdxFlHY8" resolve="RequiredTagsAnnotation" />
+    <node concept="1hA7zw" id="2NUzdxFpjGq" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="2NUzdxFpjGr" role="1hA7z_">
+        <node concept="3clFbS" id="2NUzdxFpjGs" role="2VODD2">
+          <node concept="3clFbF" id="2NUzdxFpjJ2" role="3cqZAp">
+            <node concept="2OqwBi" id="2NUzdxFpjJ4" role="3clFbG">
+              <node concept="0IXxy" id="2NUzdxFpjJ5" role="2Oq$k0" />
+              <node concept="3YRAZt" id="2NUzdxFpjJ6" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2NUzdxFt7Jg">
+    <property role="3GE5qa" value="" />
+    <ref role="1XX52x" to="yz9a:2NUzdxFt7J4" resolve="Tag" />
+    <node concept="1kIj98" id="2NUzdxFKijf" role="2wV5jI">
+      <node concept="3F0A7n" id="2NUzdxFKijo" role="1kIj9b">
+        <ref role="1NtTu8" to="yz9a:2NUzdxFt7J5" resolve="value" />
+        <node concept="VechU" id="2NUzdxFv5jL" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
       </node>
     </node>
