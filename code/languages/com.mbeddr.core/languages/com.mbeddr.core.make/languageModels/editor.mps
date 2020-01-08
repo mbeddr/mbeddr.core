@@ -2,11 +2,11 @@
 <model ref="r:ba37bec2-7828-4ffa-9647-4547cb9898ae(com.mbeddr.core.make.editor)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="3" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
   </languages>
   <imports>
     <import index="i2y7" ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)" />
@@ -451,7 +451,7 @@
       </node>
       <node concept="3F2HdR" id="64pi6e6EUff" role="3EZMnx">
         <property role="1cu_pB" value="0" />
-        <ref role="1NtTu8" to="i2y7:64pi6e6ETYT" resolve="valueItems" />
+        <ref role="1NtTu8" to="i2y7:2NUzdxFe9VC" resolve="values" />
         <node concept="l2Vlx" id="64pi6e6EUfh" role="2czzBx" />
         <node concept="3F0ifn" id="64pi6e6EUfn" role="2czzBI">
           <property role="3F0ifm" value="" />
@@ -1548,6 +1548,26 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2NUzdxFdHHE">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="i2y7:7PBrk8TNYO" resolve="VariableValue" />
+    <node concept="3EZMnI" id="2NUzdxFdHHO" role="2wV5jI">
+      <node concept="2iRfu4" id="2NUzdxFdHHP" role="2iSdaV" />
+      <node concept="3F2HdR" id="2NUzdxFdHHJ" role="3EZMnx">
+        <ref role="1NtTu8" to="i2y7:2NUzdxFdHHw" resolve="valueItems" />
+        <node concept="3F0ifn" id="2NUzdxFdHHM" role="2czzBI" />
+      </node>
+      <node concept="3F0ifn" id="2NUzdxFdHHW" role="3EZMnx">
+        <property role="3F0ifm" value="¤" />
+        <node concept="11L4FC" id="2NUzdxFdHHX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="2NUzdxFdHHY" role="3F10Kt">
+          <property role="Vb096" value="gray" />
         </node>
       </node>
     </node>

@@ -2,8 +2,8 @@
 <model ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -269,6 +269,14 @@
       <property role="20kJfa" value="valueItems" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4QnOXkAFewL" resolve="IMakefileItem" />
+      <node concept="asaX9" id="2NUzdxFe9VI" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="2NUzdxFe9VC" role="1TKVEi">
+      <property role="IQ2ns" value="3241057742986190568" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="values" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7PBrk8TNYO" resolve="VariableValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="2Vizpn2Mx$z">
@@ -848,14 +856,6 @@
     <property role="R4oN_" value="an if not defined condition" />
     <ref role="1TJDcQ" node="4QnOXk_YBdy" resolve="UnaryConditionalDirective" />
   </node>
-  <node concept="1TIwiD" id="3z9Ctyj5NXY">
-    <property role="EcuMT" value="4091979687995588478" />
-    <property role="3GE5qa" value="conditionals" />
-    <property role="TrG5h" value="IfNEqDirective" />
-    <property role="34LRSv" value="ifneq" />
-    <property role="R4oN_" value="an if not equals condition" />
-    <ref role="1TJDcQ" node="2b2D8jTN4pN" resolve="BinaryConditionalDirective" />
-  </node>
   <node concept="1TIwiD" id="3z9Ctyjj9ED">
     <property role="EcuMT" value="4091979687999085225" />
     <property role="TrG5h" value="MakefileFragment" />
@@ -871,6 +871,27 @@
     </node>
     <node concept="PrWs8" id="3z9Ctyjk89a" role="PzmwI">
       <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3z9Ctyj5NXY">
+    <property role="EcuMT" value="4091979687995588478" />
+    <property role="3GE5qa" value="conditionals" />
+    <property role="TrG5h" value="IfNEqDirective" />
+    <property role="34LRSv" value="ifneq" />
+    <property role="R4oN_" value="an if not equals condition" />
+    <ref role="1TJDcQ" node="2b2D8jTN4pN" resolve="BinaryConditionalDirective" />
+  </node>
+  <node concept="1TIwiD" id="7PBrk8TNYO">
+    <property role="EcuMT" value="141192364196052916" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="VariableValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2NUzdxFdHHw" role="1TKVEi">
+      <property role="IQ2ns" value="3241057742986074976" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="valueItems" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4QnOXkAFewL" resolve="IMakefileItem" />
     </node>
   </node>
 </model>

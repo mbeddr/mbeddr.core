@@ -2,7 +2,7 @@
 <model ref="r:6de0fec9-28ce-4092-a00d-c37c6ae81d03(com.mbeddr.mpsutil.javainterpreter.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
+    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
@@ -190,9 +190,6 @@
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter">
-      <concept id="7019451652830285943" name="com.mbeddr.mpsutil.interpreter.structure.ApplicableLanguage" flags="ng" index="d$4Dx">
-        <child id="7019451652831666945" name="language" index="cpn$n" />
-      </concept>
       <concept id="2515196518060811313" name="com.mbeddr.mpsutil.interpreter.structure.DummyEvaluator" flags="ng" index="lHU7p" />
       <concept id="5293529713177831489" name="com.mbeddr.mpsutil.interpreter.structure.NodeExpression" flags="ng" index="oxGPV" />
       <concept id="8615074351687435493" name="com.mbeddr.mpsutil.interpreter.structure.InterpretExpression" flags="ng" index="qpA2v" />
@@ -202,7 +199,6 @@
       </concept>
       <concept id="8615074351687299818" name="com.mbeddr.mpsutil.interpreter.structure.Interpreter" flags="ng" index="qq9qg">
         <property id="8426159527444241399" name="category" index="UYu25" />
-        <child id="7019451652830298090" name="applicableLanguages" index="d$6nW" />
         <child id="8615074351687302154" name="typeMappings" index="qq9xK" />
         <child id="8615074351687302157" name="evaluators" index="qq9xR" />
         <child id="6663324787725059267" name="relationships" index="1J4apk" />
@@ -265,10 +261,6 @@
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
-      </concept>
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -543,24 +535,6 @@
       </node>
     </node>
     <node concept="lHU7p" id="M6L5HuLPH4" role="qq9xR" />
-    <node concept="d$4Dx" id="M6L5Huv02$" role="d$6nW">
-      <node concept="BaHAS" id="M6L5Huv02_" role="cpn$n">
-        <property role="BaHAW" value="jetbrains.mps.baseLanguage.structure" />
-        <property role="BaGAP" value="" />
-      </node>
-    </node>
-    <node concept="d$4Dx" id="M6L5HuvyMm" role="d$6nW">
-      <node concept="BaHAS" id="M6L5HuvyMn" role="cpn$n">
-        <property role="BaHAW" value="jetbrains.mps.baseLanguage.classifiers.structure" />
-        <property role="BaGAP" value="" />
-      </node>
-    </node>
-    <node concept="d$4Dx" id="M6L5HuvyNl" role="d$6nW">
-      <node concept="BaHAS" id="M6L5HuvyNm" role="cpn$n">
-        <property role="BaHAW" value="jetbrains.mps.baseLanguage.constructors.structure" />
-        <property role="BaGAP" value="" />
-      </node>
-    </node>
     <node concept="rvkaK" id="M6L5Huv$pd" role="qq9xK">
       <node concept="10P_77" id="M6L5Huv$qc" role="r5wI3" />
       <node concept="rxStX" id="M6L5Huv$pv" role="rai9p">
