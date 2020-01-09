@@ -39,7 +39,6 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="w827" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs.openapi(MPS.Core/)" />
-    <import index="eurq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs.path(MPS.Core/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
   </imports>
@@ -7319,19 +7318,6 @@
           <ref role="ehGHo" to="51wr:2kkumeGQcAy" resolve="Library" />
         </node>
       </node>
-    </node>
-    <node concept="2tJIrI" id="4QnOXk_I9H9" role="jymVt" />
-    <node concept="3clFb_" id="4QnOXk_I9Qw" role="jymVt">
-      <property role="TrG5h" value="getTestExecutionOptions" />
-      <node concept="3clFbS" id="4QnOXk_HKRt" role="3clF47">
-        <node concept="3clFbF" id="4QnOXk_HTKV" role="3cqZAp">
-          <node concept="Xl_RD" id="4QnOXk_HTLb" role="3clFbG">
-            <property role="Xl_RC" value="" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="4QnOXk_HTJO" role="3clF45" />
-      <node concept="3Tm1VV" id="4QnOXk_HKRr" role="1B3o_S" />
     </node>
   </node>
   <node concept="312cEu" id="6VqaxF9qVvF">

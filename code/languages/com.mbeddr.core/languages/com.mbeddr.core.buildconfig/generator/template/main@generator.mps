@@ -295,6 +295,7 @@
         <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
       </concept>
       <concept id="1217004708011" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetInputModel" flags="nn" index="1r8y6K" />
+      <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
@@ -1385,7 +1386,7 @@
                                     <ref role="3cqZAo" node="2NUzdxFid2k" resolve="it" />
                                   </node>
                                   <node concept="3TrcHB" id="2NUzdxFid2j" role="2OqNvi">
-                                    <ref role="3TsBF5" to="51wr:7FeXv2EtpOY" resolve="value" />
+                                    <ref role="3TsBF5" to="51wr:7FeXv2EtpOY" resolve="name" />
                                   </node>
                                 </node>
                               </node>
@@ -1472,8 +1473,15 @@
                                       <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
                                     </node>
                                   </node>
-                                  <node concept="2qgKlT" id="2NUzdxFid2G" role="2OqNvi">
-                                    <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                                  <node concept="2qgKlT" id="5Fmx6J538ig" role="2OqNvi">
+                                    <ref role="37wK5l" to="48kf:5Fmx6J52q6D" resolve="getOutputLocationRelativePath" />
+                                    <node concept="2OqwBi" id="5Fmx6J538ih" role="37wK5m">
+                                      <node concept="1iwH7S" id="5Fmx6J538ii" role="2Oq$k0" />
+                                      <node concept="1st3f0" id="5Fmx6J538ij" role="2OqNvi" />
+                                    </node>
+                                    <node concept="3clFbT" id="5Fmx6J5bwZ3" role="37wK5m">
+                                      <property role="3clFbU" value="true" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -1674,8 +1682,15 @@
                                       <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
                                     </node>
                                   </node>
-                                  <node concept="2qgKlT" id="2NUzdxFid3n" role="2OqNvi">
-                                    <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                                  <node concept="2qgKlT" id="5Fmx6J538v2" role="2OqNvi">
+                                    <ref role="37wK5l" to="48kf:5Fmx6J52q6D" resolve="getOutputLocationRelativePath" />
+                                    <node concept="2OqwBi" id="5Fmx6J538v3" role="37wK5m">
+                                      <node concept="1iwH7S" id="5Fmx6J538v4" role="2Oq$k0" />
+                                      <node concept="1st3f0" id="5Fmx6J538v5" role="2OqNvi" />
+                                    </node>
+                                    <node concept="3clFbT" id="5Fmx6J5bwRE" role="37wK5m">
+                                      <property role="3clFbU" value="true" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -2509,7 +2524,7 @@
                                     <ref role="3cqZAo" node="2NUzdxFid60" resolve="it" />
                                   </node>
                                   <node concept="3TrcHB" id="2NUzdxFid5Z" role="2OqNvi">
-                                    <ref role="3TsBF5" to="51wr:7FeXv2EtpOY" resolve="value" />
+                                    <ref role="3TsBF5" to="51wr:7FeXv2EtpOY" resolve="name" />
                                   </node>
                                 </node>
                               </node>
@@ -2582,8 +2597,15 @@
                                       <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
                                     </node>
                                   </node>
-                                  <node concept="2qgKlT" id="2NUzdxFid6o" role="2OqNvi">
-                                    <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                                  <node concept="2qgKlT" id="5Fmx6J538$G" role="2OqNvi">
+                                    <ref role="37wK5l" to="48kf:5Fmx6J52q6D" resolve="getOutputLocationRelativePath" />
+                                    <node concept="2OqwBi" id="5Fmx6J538$H" role="37wK5m">
+                                      <node concept="1iwH7S" id="5Fmx6J538$I" role="2Oq$k0" />
+                                      <node concept="1st3f0" id="5Fmx6J538$J" role="2OqNvi" />
+                                    </node>
+                                    <node concept="3clFbT" id="5Fmx6J5bwhD" role="37wK5m">
+                                      <property role="3clFbU" value="true" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -2994,8 +3016,15 @@
                                       <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
                                     </node>
                                   </node>
-                                  <node concept="2qgKlT" id="2NUzdxFid8p" role="2OqNvi">
-                                    <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                                  <node concept="2qgKlT" id="5Fmx6J538U8" role="2OqNvi">
+                                    <ref role="37wK5l" to="48kf:5Fmx6J52q6D" resolve="getOutputLocationRelativePath" />
+                                    <node concept="2OqwBi" id="5Fmx6J538U9" role="37wK5m">
+                                      <node concept="1iwH7S" id="5Fmx6J538Ua" role="2Oq$k0" />
+                                      <node concept="1st3f0" id="5Fmx6J538Ub" role="2OqNvi" />
+                                    </node>
+                                    <node concept="3clFbT" id="5Fmx6J5bw_C" role="37wK5m">
+                                      <property role="3clFbU" value="true" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -3368,8 +3397,15 @@
                           <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="2NUzdxFida2" role="2OqNvi">
-                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                      <node concept="2qgKlT" id="5Fmx6J538ZM" role="2OqNvi">
+                        <ref role="37wK5l" to="48kf:5Fmx6J52q6D" resolve="getOutputLocationRelativePath" />
+                        <node concept="2OqwBi" id="5Fmx6J538ZN" role="37wK5m">
+                          <node concept="1iwH7S" id="5Fmx6J538ZO" role="2Oq$k0" />
+                          <node concept="1st3f0" id="5Fmx6J538ZP" role="2OqNvi" />
+                        </node>
+                        <node concept="3clFbT" id="5Fmx6J5bwfU" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -4253,8 +4289,15 @@
                           <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="4QnOXkAwLUw" role="2OqNvi">
-                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                      <node concept="2qgKlT" id="5Fmx6J537df" role="2OqNvi">
+                        <ref role="37wK5l" to="48kf:5Fmx6J52q6D" resolve="getOutputLocationRelativePath" />
+                        <node concept="2OqwBi" id="5Fmx6J537$9" role="37wK5m">
+                          <node concept="1iwH7S" id="5Fmx6J537q_" role="2Oq$k0" />
+                          <node concept="1st3f0" id="5Fmx6J537X4" role="2OqNvi" />
+                        </node>
+                        <node concept="3clFbT" id="5Fmx6J5bveO" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -4884,8 +4927,15 @@
                           <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="4QnOXkAw$AI" role="2OqNvi">
-                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                      <node concept="2qgKlT" id="5Fmx6J537YC" role="2OqNvi">
+                        <ref role="37wK5l" to="48kf:5Fmx6J52q6D" resolve="getOutputLocationRelativePath" />
+                        <node concept="2OqwBi" id="5Fmx6J537YD" role="37wK5m">
+                          <node concept="1iwH7S" id="5Fmx6J537YE" role="2Oq$k0" />
+                          <node concept="1st3f0" id="5Fmx6J537YF" role="2OqNvi" />
+                        </node>
+                        <node concept="3clFbT" id="5Fmx6J5bxiL" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
                       </node>
                     </node>
                   </node>
