@@ -10799,6 +10799,11 @@
                   <node concept="17QB3L" id="5hcw$WGg1Us" role="kMuH3" />
                   <node concept="1bVj0M" id="5hcw$WGg2v$" role="kMx8a">
                     <node concept="3clFbS" id="5hcw$WGg2v_" role="1bW5cS">
+                      <node concept="2n63Yl" id="5Fmx6J6AMrn" role="3cqZAp">
+                        <node concept="Xl_RD" id="5Fmx6J6AMGf" role="2n6tg2">
+                          <property role="Xl_RC" value="access" />
+                        </node>
+                      </node>
                       <node concept="2n63Yl" id="5hcw$WGg2FU" role="3cqZAp">
                         <node concept="Xl_RD" id="5hcw$WGg2Qy" role="2n6tg2">
                           <property role="Xl_RC" value="close" />
@@ -10846,7 +10851,7 @@
                 <node concept="1StdAS" id="5hcw$WGmI_Y" role="1_9egR">
                   <property role="1Svl6Z" value="&lt;io.h&gt;" />
                   <property role="1Svl6Y" value="&lt;unistd.h&gt;" />
-                  <ref role="3O_q_h" node="5hcw$WGkOw_" resolve="bar" />
+                  <ref role="3O_q_h" node="5hcw$WGkOw_" resolve="bar_in_unistd_h_or_io_h" />
                   <node concept="3TlMh9" id="5hcw$WGmIAh" role="3O_q_j">
                     <property role="2hmy$m" value="0" />
                     <node concept="2b32R4" id="5hcw$WGmNDf" role="lGtFl">
@@ -10890,7 +10895,7 @@
             <property role="TrG5h" value="empty_1565048344390_10" />
           </node>
           <node concept="N3Fnx" id="5hcw$WGkOw_" role="N3F5h">
-            <property role="TrG5h" value="bar" />
+            <property role="TrG5h" value="bar_in_unistd_h_or_io_h" />
             <property role="2OOxQR" value="false" />
             <node concept="3XIRFW" id="5hcw$WGkOwA" role="3XIRFX">
               <node concept="3XISUE" id="5hcw$WGkOwB" role="3XIRFZ" />
@@ -10952,7 +10957,7 @@
                 <node concept="1StdAS" id="5hcw$WGkK8K" role="1_9egR">
                   <property role="1Svl6Z" value="&lt;direct.h&gt;" />
                   <property role="1Svl6Y" value="&lt;unistd.h&gt;" />
-                  <ref role="3O_q_h" node="5hcw$WGkEjt" resolve="bar" />
+                  <ref role="3O_q_h" node="5hcw$WGkEjt" resolve="bar_in_unistd_h_or_direct_h" />
                   <node concept="raruj" id="5hcw$WGkK8V" role="lGtFl" />
                   <node concept="3TlMh9" id="5hcw$WGkK96" role="3O_q_j">
                     <property role="2hmy$m" value="0" />
@@ -10996,7 +11001,7 @@
             <property role="TrG5h" value="empty_1565048239502_8" />
           </node>
           <node concept="N3Fnx" id="5hcw$WGkEjt" role="N3F5h">
-            <property role="TrG5h" value="bar" />
+            <property role="TrG5h" value="bar_in_unistd_h_or_direct_h" />
             <property role="2OOxQR" value="false" />
             <node concept="3XIRFW" id="5hcw$WGkEju" role="3XIRFX">
               <node concept="3XISUE" id="5hcw$WGkFfi" role="3XIRFZ" />
