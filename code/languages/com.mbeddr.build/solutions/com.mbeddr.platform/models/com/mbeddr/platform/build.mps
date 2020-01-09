@@ -181,6 +181,9 @@
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
+      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -971,6 +974,9 @@
       </node>
       <node concept="m$f5U" id="Vtr7jyB3SQ" role="m$_yh">
         <ref role="m$f5T" node="7Nsh5Tc2mTg" resolve="group.filepicker" />
+      </node>
+      <node concept="m$_yB" id="5Fmx6J5w3Be" role="m$_yh">
+        <ref role="m$_yA" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
       </node>
       <node concept="m$_yC" id="Vtr7jyB0oS" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
@@ -13955,6 +13961,11 @@
         <node concept="1yeLz9" id="Vtr7jyAXEK" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.filepicker#4067882553846359376" />
           <property role="3LESm3" value="4b706ccc-acf2-4850-a93e-1884d0a0fb68" />
+        </node>
+        <node concept="1SiIV0" id="5Fmx6J5w2Xa" role="3bR37C">
+          <node concept="3bR9La" id="5Fmx6J5w2Xb" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
         </node>
       </node>
     </node>
