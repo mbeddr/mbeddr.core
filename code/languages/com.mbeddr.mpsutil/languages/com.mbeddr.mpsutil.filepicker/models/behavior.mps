@@ -366,6 +366,58 @@
           </node>
         </node>
         <node concept="3clFbH" id="5Fmx6J5pQHx" role="3cqZAp" />
+        <node concept="3SKdUt" id="3T0oVfE1gU$" role="3cqZAp">
+          <node concept="1PaTwC" id="3T0oVfE1gU_" role="3ndbpf">
+            <node concept="3oM_SD" id="3T0oVfE1gUB" role="1PaTwD">
+              <property role="3oM_SC" value="Ignore" />
+            </node>
+            <node concept="3oM_SD" id="3T0oVfE1hmQ" role="1PaTwD">
+              <property role="3oM_SC" value="paths" />
+            </node>
+            <node concept="3oM_SD" id="3T0oVfE1hnX" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3T0oVfE1hos" role="1PaTwD">
+              <property role="3oM_SC" value="already" />
+            </node>
+            <node concept="3oM_SD" id="3T0oVfE1hrp" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="3T0oVfE1hrW" role="1PaTwD">
+              <property role="3oM_SC" value="relative" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3T0oVfE1g0m" role="3cqZAp">
+          <node concept="3clFbS" id="3T0oVfE1g0o" role="3clFbx">
+            <node concept="3cpWs6" id="3T0oVfE1iir" role="3cqZAp">
+              <node concept="37vLTw" id="3T0oVfE1iHZ" role="3cqZAk">
+                <ref role="3cqZAo" node="5Fmx6J52TlT" resolve="path" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3T0oVfE1hvH" role="3clFbw">
+            <node concept="2OqwBi" id="3T0oVfE1hvI" role="2Oq$k0">
+              <node concept="2YIFZM" id="3T0oVfE1hvJ" role="2Oq$k0">
+                <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+                <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
+                <node concept="Xl_RD" id="3T0oVfE1hvK" role="37wK5m">
+                  <property role="Xl_RC" value="^(\\.|\\.\\.)" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3T0oVfE1hvL" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
+                <node concept="37vLTw" id="3T0oVfE1hvM" role="37wK5m">
+                  <ref role="3cqZAo" node="5Fmx6J52TlT" resolve="path" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3T0oVfE1hvN" role="2OqNvi">
+              <ref role="37wK5l" to="ni5j:~Matcher.find()" resolve="find" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3T0oVfE1euH" role="3cqZAp" />
         <node concept="3SKdUt" id="3mZVitHMIpq" role="3cqZAp">
           <node concept="1PaTwC" id="3mZVitHMIpr" role="3ndbpf">
             <node concept="3oM_SD" id="3mZVitHMIpt" role="1PaTwD">
