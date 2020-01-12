@@ -975,6 +975,9 @@
       <node concept="m$_yC" id="Vtr7jyB0oS" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="3mZVitHC1kc" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
+      </node>
       <node concept="3_J27D" id="Vtr7jyB0oV" role="m_cZH">
         <node concept="3Mxwew" id="Vtr7jyB0oW" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.filepicker" />
@@ -13955,6 +13958,11 @@
         <node concept="1yeLz9" id="Vtr7jyAXEK" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.filepicker#4067882553846359376" />
           <property role="3LESm3" value="4b706ccc-acf2-4850-a93e-1884d0a0fb68" />
+        </node>
+        <node concept="1SiIV0" id="5Fmx6J5w2Xa" role="3bR37C">
+          <node concept="3bR9La" id="5Fmx6J5w2Xb" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
         </node>
       </node>
     </node>
