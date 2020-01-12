@@ -257,7 +257,6 @@
         <child id="1217960314448" name="messageText" index="2k5Stb" />
         <child id="1217960407512" name="referenceNode" index="2k6f33" />
       </concept>
-      <concept id="1217969995796" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowWarningMessage" flags="nn" index="2kEO4f" />
       <concept id="1217970068025" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowInfoMessage" flags="nn" index="2kF5Gy" />
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
     </language>
@@ -4482,36 +4481,6 @@
         </node>
         <node concept="3clFbJ" id="78Ts1skpCfJ" role="3cqZAp">
           <node concept="3clFbS" id="78Ts1skpCfK" role="3clFbx">
-            <node concept="3clFbF" id="78Ts1skpDuV" role="3cqZAp">
-              <node concept="2OqwBi" id="78Ts1skq2zx" role="3clFbG">
-                <node concept="37vLTw" id="78Ts1skpDuW" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7DLjGBGRiyT" resolve="ctx" />
-                </node>
-                <node concept="2kEO4f" id="78Ts1skq2zB" role="2OqNvi">
-                  <node concept="3cpWs3" id="78Ts1skq2$M" role="2k5Stb">
-                    <node concept="Xl_RD" id="78Ts1skq2$P" role="3uHU7w">
-                      <property role="Xl_RC" value="; not generating any code" />
-                    </node>
-                    <node concept="3cpWs3" id="78Ts1skq2zY" role="3uHU7B">
-                      <node concept="3cpWs3" id="78Ts1skq3pi" role="3uHU7B">
-                        <node concept="37vLTw" id="78Ts1skq3pl" role="3uHU7B">
-                          <ref role="3cqZAo" node="78Ts1skq3p6" resolve="sourceGenerator" />
-                        </node>
-                        <node concept="Xl_RD" id="78Ts1skq2zD" role="3uHU7w">
-                          <property role="Xl_RC" value=": no build configuration found for model " />
-                        </node>
-                      </node>
-                      <node concept="2OqwBi" id="78Ts1skq2$m" role="3uHU7w">
-                        <node concept="37vLTw" id="78Ts1skq2$1" role="2Oq$k0">
-                          <ref role="3cqZAo" node="78Ts1skpCfU" resolve="m" />
-                        </node>
-                        <node concept="LkI2h" id="78Ts1skq2$s" role="2OqNvi" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs6" id="78Ts1skpCfL" role="3cqZAp">
               <node concept="10Nm6u" id="78Ts1skpCfM" role="3cqZAk" />
             </node>
