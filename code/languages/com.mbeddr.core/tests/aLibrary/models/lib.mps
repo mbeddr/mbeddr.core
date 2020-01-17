@@ -22,12 +22,12 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
-        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
-        <child id="5323740605968447026" name="target" index="2AWWZH" />
+        <child id="5323740605968447026" name="platform" index="2AWWZH" />
       </concept>
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
@@ -40,9 +40,8 @@
       </concept>
       <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
         <property id="5952395988556102274" name="supportsSharedLibraries" index="uKT8v" />
-        <child id="1485382076185232212" name="targets" index="3anu1O" />
       </concept>
-      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -161,7 +160,6 @@
   <node concept="2v9HqL" id="2kkumeGQeCr">
     <node concept="29Nb31" id="4wjSXytPLKY" role="2ePNbc">
       <property role="TrG5h" value="helper" />
-      <ref role="3oK8_y" node="4wjSXytPLVS" resolve="portable" />
       <node concept="2v9HqM" id="4wjSXytPLL4" role="2eOfOg">
         <ref role="2v9HqP" node="58DJDcMhRF1" resolve="ArithmeticFunctions" />
       </node>
@@ -177,6 +175,9 @@
       <node concept="2v9HqM" id="1EH1Mz64kxp" role="2eOfOg">
         <ref role="2v9HqP" node="1EH1Mz64k9k" resolve="Arithmetics" />
       </node>
+      <node concept="1l1$C7" id="4JZ_DSvTv_M" role="1kZvWc">
+        <property role="TrG5h" value="any" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="49XubMpimGh" role="2Q9xDr">
       <node concept="2Q9FjX" id="49XubMpimGi" role="2Q9FjI" />
@@ -191,18 +192,6 @@
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
       <property role="uKT8v" value="true" />
-      <node concept="3abb7c" id="4wjSXytPLVQ" role="3anu1O">
-        <property role="TrG5h" value="Win32" />
-      </node>
-      <node concept="3abb7c" id="4wjSXytPLVR" role="3anu1O">
-        <property role="TrG5h" value="Linux" />
-      </node>
-      <node concept="3abb7c" id="4wjSXytPLVS" role="3anu1O">
-        <property role="TrG5h" value="portable" />
-      </node>
-      <node concept="3abb7c" id="4wjSXytPLVT" role="3anu1O">
-        <property role="TrG5h" value="MacOSX" />
-      </node>
     </node>
   </node>
   <node concept="N3F5e" id="58DJDcMhRF1">

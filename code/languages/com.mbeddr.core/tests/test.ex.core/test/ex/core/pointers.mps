@@ -71,13 +71,13 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
-        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
-        <child id="5323740605968447026" name="target" index="2AWWZH" />
+        <child id="5323740605968447026" name="platform" index="2AWWZH" />
       </concept>
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
@@ -85,6 +85,7 @@
       <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
         <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
+      <concept id="5476261277774416029" name="com.mbeddr.core.buildconfig.structure.Win32" flags="ng" index="1l1LS3" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
@@ -289,7 +290,7 @@
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
       <concept id="7720953548740840784" name="com.mbeddr.core.unittest.structure.AssertNull" flags="ng" index="OQLG8" />
       <concept id="7720953548740747376" name="com.mbeddr.core.unittest.structure.AssertNotNull" flags="ng" index="ORroC" />
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
@@ -1364,7 +1365,6 @@
     </node>
     <node concept="2eOfOl" id="4Y0lNFa3ShG" role="2ePNbc">
       <property role="TrG5h" value="PointersAndArrays" />
-      <ref role="3oK8_y" to="1ok9:4LhGMnjfiNC" resolve="portable" />
       <node concept="2v9HqM" id="4Y0lNFa3TsP" role="2eOfOg">
         <ref role="2v9HqP" node="4Y0lNFa3gJV" resolve="Driver" />
       </node>
@@ -1415,6 +1415,9 @@
       </node>
       <node concept="2v9HqM" id="2W1GNPB4rei" role="2eOfOg">
         <ref role="2v9HqP" node="2W1GNPB4nJt" resolve="SignalHandler" />
+      </node>
+      <node concept="1l1LS3" id="4JZ_DSvTvA3" role="1kZvWc">
+        <property role="TrG5h" value="Win32" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bNgvT" role="2Q9xDr">

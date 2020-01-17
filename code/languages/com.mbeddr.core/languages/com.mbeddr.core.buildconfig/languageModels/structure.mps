@@ -104,7 +104,7 @@
     </node>
     <node concept="1TJgyj" id="4BxItZJ4BoM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="target" />
+      <property role="20kJfa" value="platform" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="5323740605968447026" />
       <ref role="20lvS9" node="4BxItZJ4BoF" resolve="Platform" />
@@ -231,6 +231,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5lP9ZVaAU_u" resolve="ExternalPath" />
     </node>
+    <node concept="1TJgyj" id="4JZ_DSv0AAi" role="1TKVEi">
+      <property role="IQ2ns" value="5476261277775063442" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
+    </node>
     <node concept="PrWs8" id="1YUFCeFKT9R" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -249,9 +256,10 @@
     <node concept="1TJgyj" id="2b2D8jU0yRA" role="1TKVEi">
       <property role="IQ2ns" value="2504745233808502246" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
+      <property role="20kJfa" value="target_old" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="1it8M3uGpbG" resolve="Target" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
+      <node concept="asaX9" id="4JZ_DSv0AAa" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="65XyadYP0CJ">
@@ -316,7 +324,8 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="targets" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1it8M3uGpbG" resolve="Target" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
+      <node concept="asaX9" id="4JZ_DSuWtYV" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="4BxItZJ4BoH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -571,10 +580,10 @@
   </node>
   <node concept="1TIwiD" id="1it8M3uGpbG">
     <property role="EcuMT" value="1485382076184236780" />
-    <property role="3GE5qa" value="platform" />
-    <property role="TrG5h" value="Target" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="System" />
     <property role="R4oN_" value="--" />
-    <property role="34LRSv" value="target" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3K0ugPlqtqM" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -647,6 +656,82 @@
       <property role="3tVfz5" value="767515563077365660" />
       <ref role="2wpffI" node="EAKPqgNQYs" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuWeoI">
+    <property role="EcuMT" value="5476261277773915694" />
+    <property role="3GE5qa" value="crosscompilation" />
+    <property role="TrG5h" value="CrossCompilationToolchain" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4JZ_DSuWeoL" role="1TKVEi">
+      <property role="IQ2ns" value="5476261277773915697" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="supportedTargets" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
+    </node>
+    <node concept="1TJgyj" id="4JZ_DSuZPQV" role="1TKVEi">
+      <property role="IQ2ns" value="5476261277774863803" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="defaultHomeLocations" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4JZ_DSuWeoX" resolve="ToolchainHomeLocation" />
+    </node>
+    <node concept="1TJgyi" id="4JZ_DSuWeoR" role="1TKVEl">
+      <property role="IQ2nx" value="5476261277773915703" />
+      <property role="TrG5h" value="homeVariableName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4JZ_DSuZQfB" role="1TKVEl">
+      <property role="IQ2nx" value="5476261277774865383" />
+      <property role="TrG5h" value="binPrefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuWeoX">
+    <property role="EcuMT" value="5476261277773915709" />
+    <property role="3GE5qa" value="crosscompilation" />
+    <property role="TrG5h" value="ToolchainHomeLocation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4JZ_DSuWeoY" role="1TKVEi">
+      <property role="IQ2ns" value="5476261277773915710" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="host" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
+    </node>
+    <node concept="1TJgyi" id="4JZ_DSuZPR0" role="1TKVEl">
+      <property role="IQ2nx" value="5476261277774863808" />
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuY8yt">
+    <property role="EcuMT" value="5476261277774416029" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="Win32" />
+    <property role="34LRSv" value="Win32" />
+    <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuYrDY">
+    <property role="EcuMT" value="5476261277774494334" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="Linux" />
+    <property role="34LRSv" value="Linux" />
+    <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuYsJO">
+    <property role="EcuMT" value="5476261277774498804" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="MacOSX" />
+    <property role="34LRSv" value="MacOSX" />
+    <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuYtMp">
+    <property role="EcuMT" value="5476261277774503065" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="Any" />
+    <property role="34LRSv" value="any" />
+    <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
   </node>
 </model>
 

@@ -30,6 +30,7 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" implicit="true" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
@@ -467,7 +468,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5S6wb2j5pgG" role="3EZMnx">
-        <ref role="1NtTu8" to="51wr:4BxItZJ4BoM" resolve="target" />
+        <ref role="1NtTu8" to="51wr:4BxItZJ4BoM" resolve="platform" />
         <node concept="pVoyu" id="5S6wb2j5pgI" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -774,11 +775,11 @@
                         </node>
                       </node>
                       <node concept="3TrEf2" id="6VqaxFamWi7" role="2OqNvi">
-                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                       </node>
                     </node>
-                    <node concept="3Tsc0h" id="6VqaxFamXiq" role="2OqNvi">
-                      <ref role="3TtcxE" to="51wr:1it8M3uKcdk" resolve="targets" />
+                    <node concept="2qgKlT" id="4JZ_DSuXfGc" role="2OqNvi">
+                      <ref role="37wK5l" to="ahli:4JZ_DSuX5Ql" resolve="getSupportedTargets" />
                     </node>
                   </node>
                   <node concept="34oBXx" id="6VqaxFan3Nt" role="2OqNvi" />
@@ -789,7 +790,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="3K0ugPluZoQ" role="3EZMnx">
-        <ref role="1NtTu8" to="51wr:2b2D8jU0yRA" resolve="target" />
+        <ref role="1NtTu8" to="51wr:4JZ_DSv0AAi" resolve="target" />
         <node concept="1sVBvm" id="3K0ugPluZoS" role="1sWHZn">
           <node concept="3F0A7n" id="3K0ugPluZFL" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -817,11 +818,11 @@
                         </node>
                       </node>
                       <node concept="3TrEf2" id="6VqaxFan8Y_" role="2OqNvi">
-                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                       </node>
                     </node>
-                    <node concept="3Tsc0h" id="6VqaxFan8YA" role="2OqNvi">
-                      <ref role="3TtcxE" to="51wr:1it8M3uKcdk" resolve="targets" />
+                    <node concept="2qgKlT" id="4JZ_DSuXg5I" role="2OqNvi">
+                      <ref role="37wK5l" to="ahli:4JZ_DSuX5Ql" resolve="getSupportedTargets" />
                     </node>
                   </node>
                   <node concept="34oBXx" id="6VqaxFan8YB" role="2OqNvi" />
@@ -1271,11 +1272,11 @@
                         </node>
                       </node>
                       <node concept="3TrEf2" id="5CuCVUfjTCd" role="2OqNvi">
-                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                       </node>
                     </node>
-                    <node concept="3Tsc0h" id="5CuCVUfjTCe" role="2OqNvi">
-                      <ref role="3TtcxE" to="51wr:1it8M3uKcdk" resolve="targets" />
+                    <node concept="2qgKlT" id="4JZ_DSuXfg9" role="2OqNvi">
+                      <ref role="37wK5l" to="ahli:4JZ_DSuX5Ql" resolve="getSupportedTargets" />
                     </node>
                   </node>
                   <node concept="34oBXx" id="5CuCVUfjTCf" role="2OqNvi" />
@@ -1286,7 +1287,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="3K0ugPltvH_" role="3EZMnx">
-        <ref role="1NtTu8" to="51wr:2b2D8jU0yRA" resolve="target" />
+        <ref role="1NtTu8" to="51wr:4JZ_DSv0AAi" resolve="target" />
         <node concept="1sVBvm" id="3K0ugPltvHB" role="1sWHZn">
           <node concept="3F0A7n" id="3K0ugPltvS2" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -1314,11 +1315,11 @@
                         </node>
                       </node>
                       <node concept="3TrEf2" id="5CuCVUfjUnn" role="2OqNvi">
-                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                       </node>
                     </node>
-                    <node concept="3Tsc0h" id="5CuCVUfjUno" role="2OqNvi">
-                      <ref role="3TtcxE" to="51wr:1it8M3uKcdk" resolve="targets" />
+                    <node concept="2qgKlT" id="4JZ_DSuXeEe" role="2OqNvi">
+                      <ref role="37wK5l" to="ahli:4JZ_DSuX5Ql" resolve="getSupportedTargets" />
                     </node>
                   </node>
                   <node concept="34oBXx" id="5CuCVUfjUnp" role="2OqNvi" />
@@ -1355,7 +1356,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="5ara9PcnvnL" role="2OqNvi">
-                    <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                    <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="5ara9PcnwTZ" role="2OqNvi">
@@ -2628,6 +2629,13 @@
       <node concept="2AHcQZ" id="2xlYByYGhrr" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4JZ_DSvrzzq">
+    <property role="3GE5qa" value="platform.systems" />
+    <ref role="1XX52x" to="51wr:1it8M3uGpbG" resolve="System" />
+    <node concept="3F0A7n" id="4JZ_DSvrzzs" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
 </model>

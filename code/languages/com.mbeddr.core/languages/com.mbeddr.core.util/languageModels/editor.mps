@@ -36,7 +36,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="j4gk" ref="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -1409,20 +1408,6 @@
                                   <node concept="1P9Npp" id="5SRWded_qIX" role="2OqNvi">
                                     <node concept="37vLTw" id="5SRWded_rHk" role="1P9ThW">
                                       <ref role="3cqZAo" node="2vWNQYd$Tqb" resolve="nodeFromClipboard" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="3clFbF" id="2vWNQYd$lbD" role="3cqZAp">
-                                <node concept="2OqwBi" id="2vWNQYd$lbA" role="3clFbG">
-                                  <node concept="10M0yZ" id="2vWNQYd$lbB" role="2Oq$k0">
-                                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                                  </node>
-                                  <node concept="liA8E" id="2vWNQYd$lbC" role="2OqNvi">
-                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                                    <node concept="Xl_RD" id="2vWNQYd$lcf" role="37wK5m">
-                                      <property role="Xl_RC" value="PASTE!!!!!" />
                                     </node>
                                   </node>
                                 </node>
