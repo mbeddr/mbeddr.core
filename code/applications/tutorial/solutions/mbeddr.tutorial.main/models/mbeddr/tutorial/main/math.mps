@@ -24,14 +24,14 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
-        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
         <child id="4798312830023267837" name="externalLibs" index="3CaRR_" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
-        <child id="5323740605968447026" name="target" index="2AWWZH" />
+        <child id="5323740605968447026" name="platform" index="2AWWZH" />
       </concept>
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
@@ -43,13 +43,10 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
-      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
-        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      <concept id="8849280731830389372" name="com.mbeddr.core.buildconfig.structure.ExternalLibrary" flags="ng" index="3gIRYc">
+        <property id="8849280731830394174" name="name" index="3gIQze" />
       </concept>
-      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
-      <concept id="8849280731830389372" name="com.mbeddr.core.buildconfig.structure.ExternalItem" flags="ng" index="3gIRYc">
-        <property id="8849280731830394174" name="value" index="3gIQze" />
-      </concept>
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
       <concept id="7171543680058566278" name="com.mbeddr.core.buildconfig.structure.ExternalLibraries" flags="ng" index="1A$dpX">
         <child id="8849280731830394219" name="libraries" index="3gIQyr" />
       </concept>
@@ -698,18 +695,6 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
-      <node concept="3abb7c" id="OnnrMNmT2c" role="3anu1O">
-        <property role="TrG5h" value="Win32" />
-      </node>
-      <node concept="3abb7c" id="OnnrMNmT2d" role="3anu1O">
-        <property role="TrG5h" value="MacOSX" />
-      </node>
-      <node concept="3abb7c" id="OnnrMNmT2e" role="3anu1O">
-        <property role="TrG5h" value="Linux" />
-      </node>
-      <node concept="3abb7c" id="OnnrMNmT2f" role="3anu1O">
-        <property role="TrG5h" value="portable" />
-      </node>
     </node>
     <node concept="2Q9Fgs" id="4r1mNB_vx4T" role="2Q9xDr">
       <node concept="2Q9FjX" id="4r1mNB_vx4U" role="2Q9FjI" />
@@ -717,7 +702,6 @@
     <node concept="22RD12" id="13bv9czlA1t" role="2Q9xDr" />
     <node concept="2eOfOl" id="4r1mNB_vx4V" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
-      <ref role="3oK8_y" node="OnnrMNmT2f" resolve="portable" />
       <node concept="2v9HqM" id="4r1mNB_vx4W" role="2eOfOg">
         <ref role="2v9HqP" node="4r1mNB_vx3b" resolve="HelloMath" />
       </node>
@@ -725,6 +709,9 @@
         <node concept="3gIRYc" id="OnnrMNmT3L" role="3gIQyr">
           <property role="3gIQze" value="m" />
         </node>
+      </node>
+      <node concept="1l1$C7" id="4JZ_DSxyj7r" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
   </node>

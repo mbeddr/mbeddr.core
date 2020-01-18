@@ -7119,12 +7119,6 @@
                     <ref role="2pIpSl" to="hvgx:5n6IlFzyEc9" resolve="pathToEcoreFile" />
                     <node concept="2pJPED" id="5n6IlFzzfQh" role="28nt2d">
                       <ref role="2pJxaS" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
-                      <node concept="2pJxcG" id="5n6IlFzzfXM" role="2pJxcM">
-                        <ref role="2pJxcJ" to="68mc:2mxBqli8MW4" resolve="pointOnlyToExistingFile" />
-                        <node concept="3clFbT" id="5n6IlFzzg5W" role="28ntcv">
-                          <property role="3clFbU" value="true" />
-                        </node>
-                      </node>
                       <node concept="2pJxcG" id="5n6IlFzzgBx" role="2pJxcM">
                         <ref role="2pJxcJ" to="68mc:5lKnBeAtODI" resolve="path" />
                         <node concept="3cpWs3" id="375LOh7ngog" role="28ntcv">

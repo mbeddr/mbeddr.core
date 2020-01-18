@@ -135,8 +135,8 @@
             <node concept="1YBJjd" id="x1qBkovPM" role="2Oq$k0">
               <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
             </node>
-            <node concept="3TrcHB" id="x1qBkowaE" role="2OqNvi">
-              <ref role="3TsBF5" to="68mc:x1qBkorxt" resolve="mayBeEmpty" />
+            <node concept="2qgKlT" id="2RM$2qudGTC" role="2OqNvi">
+              <ref role="37wK5l" to="48kf:2RM$2qudEJJ" resolve="mayBeEmpty" />
             </node>
           </node>
           <node concept="2OqwBi" id="x1qBkouqo" role="3uHU7B">
@@ -393,8 +393,8 @@
                             <node concept="1YBJjd" id="4WvfojApmci" role="2Oq$k0">
                               <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
                             </node>
-                            <node concept="3TrcHB" id="4WvfojApmcj" role="2OqNvi">
-                              <ref role="3TsBF5" to="68mc:2mxBqli8MW4" resolve="pointOnlyToExistingFile" />
+                            <node concept="2qgKlT" id="2RM$2quhzmS" role="2OqNvi">
+                              <ref role="37wK5l" to="48kf:2RM$2quh1HO" resolve="mustExist" />
                             </node>
                           </node>
                         </node>
@@ -419,7 +419,7 @@
                             <node concept="3clFbS" id="3PuSfTTlfOr" role="3clFbx">
                               <node concept="2MkqsV" id="3PuSfTTlh4x" role="3cqZAp">
                                 <node concept="Xl_RD" id="3PuSfTTlh4K" role="2MkJ7o">
-                                  <property role="Xl_RC" value="Even on Windows, please use a forward slash (/) as a separator." />
+                                  <property role="Xl_RC" value="Even under Microsoft(R) Windows(R), please use a forward slash (/) as a separator." />
                                 </node>
                                 <node concept="1YBJjd" id="3PuSfTTlh81" role="2OEOjV">
                                   <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
@@ -533,8 +533,8 @@
                       <node concept="1YBJjd" id="2mxBqli8NSU" role="2Oq$k0">
                         <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
                       </node>
-                      <node concept="3TrcHB" id="2mxBqli8Oey" role="2OqNvi">
-                        <ref role="3TsBF5" to="68mc:2mxBqli8MW4" resolve="pointOnlyToExistingFile" />
+                      <node concept="2qgKlT" id="2RM$2quhzie" role="2OqNvi">
+                        <ref role="37wK5l" to="48kf:2RM$2quh1HO" resolve="mustExist" />
                       </node>
                     </node>
                     <node concept="3fqX7Q" id="5lKnBeAW4ef" role="3uHU7B">

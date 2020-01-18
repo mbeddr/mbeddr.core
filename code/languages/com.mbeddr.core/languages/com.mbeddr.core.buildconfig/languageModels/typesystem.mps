@@ -2919,7 +2919,6 @@
   <node concept="312cEu" id="6rpJXYBVX74">
     <property role="TrG5h" value="MakeHelper" />
     <node concept="2tJIrI" id="6rpJXYBVX8Q" role="jymVt" />
-    <node concept="2tJIrI" id="6rpJXYBVX8S" role="jymVt" />
     <node concept="2YIFZL" id="6rpJXYBVZAY" role="jymVt">
       <property role="TrG5h" value="conflictsWithMakeTargetName" />
       <property role="DiZV1" value="false" />
@@ -2942,9 +2941,6 @@
                 </node>
                 <node concept="Xl_RD" id="476OnZonXJ2" role="HW$Y0">
                   <property role="Xl_RC" value="all" />
-                </node>
-                <node concept="Xl_RD" id="476OnZonXJ3" role="HW$Y0">
-                  <property role="Xl_RC" value="removeStuffFromLibraries" />
                 </node>
                 <node concept="Xl_RD" id="476OnZonXJ4" role="HW$Y0">
                   <property role="Xl_RC" value="test" />
