@@ -207,6 +207,7 @@
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
+      <concept id="1525129109275491768" name="com.mbeddr.core.buildconfig.structure.None" flags="ng" index="ZOQlw" />
       <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
@@ -6417,24 +6418,6 @@
           <node concept="BCzjf" id="79g_UwK0PHc" role="2P5Msk" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="2v9HqL" id="4ifG318a7qu">
-    <node concept="2eOfOl" id="bwlJLAhCPi" role="2ePNbc">
-      <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="dummy" />
-      <node concept="2v9HqM" id="bwlJLAhYUc" role="2eOfOg">
-        <ref role="2v9HqP" node="476OnZoiej2" resolve="dummy" />
-      </node>
-      <node concept="1l1$C7" id="1kEmdwETFm0" role="1kZvWc">
-        <property role="TrG5h" value="any" />
-      </node>
-    </node>
-    <node concept="2Q9Fgs" id="3R$6B6bNgP7" role="2Q9xDr">
-      <node concept="2Q9FjX" id="3R$6B6bNgP8" role="2Q9FjI" />
-    </node>
-    <node concept="1l1$C7" id="1kEmdwETFlZ" role="1kZvWc">
-      <property role="TrG5h" value="any" />
     </node>
   </node>
   <node concept="1lH9Xt" id="78UlKzSad1O">
@@ -30823,6 +30806,20 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2v9HqL" id="1kEmdwEVALv">
+    <node concept="2eOfOl" id="1kEmdwEZriF" role="2ePNbc">
+      <property role="TrG5h" value="dummy" />
+      <node concept="ZOQlw" id="1kEmdwEZriG" role="1kZvWc">
+        <property role="TrG5h" value="none" />
+      </node>
+      <node concept="2v9HqM" id="1kEmdwEZriN" role="2eOfOg">
+        <ref role="2v9HqP" node="476OnZoiej2" resolve="dummy" />
+      </node>
+    </node>
+    <node concept="2Q9Fgs" id="1kEmdwEZriJ" role="2Q9xDr">
+      <node concept="2Q9FjX" id="1kEmdwEZriK" role="2Q9FjI" />
     </node>
   </node>
 </model>

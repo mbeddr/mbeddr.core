@@ -97,5 +97,11 @@
     <property role="EcuMT" value="1927508255683082068" />
     <ref role="1TJDcQ" to="k146:3R$6B6bKEUa" resolve="ReportingStrategy" />
   </node>
+  <node concept="1TIwiD" id="1kEmdwEYcMK">
+    <property role="EcuMT" value="1525129109275462832" />
+    <property role="TrG5h" value="Esp8266" />
+    <property role="34LRSv" value="Esp8266" />
+    <ref role="1TJDcQ" to="51wr:1it8M3uGpbG" resolve="System" />
+  </node>
 </model>
 

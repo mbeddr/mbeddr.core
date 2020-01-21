@@ -582,7 +582,6 @@
     <property role="EcuMT" value="1485382076184236780" />
     <property role="3GE5qa" value="platform.systems" />
     <property role="TrG5h" value="System" />
-    <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3K0ugPlqtqM" role="PzmwI">
@@ -741,6 +740,13 @@
     <property role="3GE5qa" value="platform.systems" />
     <property role="TrG5h" value="Any" />
     <property role="34LRSv" value="any" />
+    <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
+  </node>
+  <node concept="1TIwiD" id="1kEmdwEYjQS">
+    <property role="EcuMT" value="1525129109275491768" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="None" />
+    <property role="34LRSv" value="none" />
     <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
   </node>
 </model>
