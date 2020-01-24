@@ -135,11 +135,6 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -161,6 +156,11 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
@@ -453,7 +453,7 @@
             <node concept="Xl_RD" id="6yeRgC0uq_e" role="2MkJ7o">
               <property role="Xl_RC" value="test helpers must be called directly from test cases" />
             </node>
-            <node concept="1YBJjd" id="6yeRgC0uq_f" role="2OEOjV">
+            <node concept="1YBJjd" id="6yeRgC0uq_f" role="1urrMF">
               <ref role="1YBMHb" node="6yeRgC0uqyt" resolve="fc" />
             </node>
           </node>
@@ -515,11 +515,11 @@
             <node concept="Xl_RD" id="2gAdhaBD_3x" role="2MkJ7o">
               <property role="Xl_RC" value="cannot use non-couting message in this expression" />
             </node>
-            <node concept="1YBJjd" id="2gAdhaBD_3y" role="2OEOjV">
-              <ref role="1YBMHb" node="2gAdhaBD_3$" resolve="mce" />
-            </node>
-            <node concept="2OE7Q9" id="2gAdhaBD_3z" role="2OEWyd">
+            <node concept="2OE7Q9" id="2gAdhaBD_3z" role="1urrC5">
               <ref role="2OEe5H" to="yz9a:2gAdhaBD_33" resolve="msgDef" />
+            </node>
+            <node concept="1YBJjd" id="2gAdhaBD_3y" role="1urrMF">
+              <ref role="1YBMHb" node="2gAdhaBD_3$" resolve="mce" />
             </node>
           </node>
         </node>
@@ -624,7 +624,7 @@
               <node concept="Xl_RD" id="4h2fJwlQSvj" role="2MkJ7o">
                 <property role="Xl_RC" value="wrong number of expressions" />
               </node>
-              <node concept="1YBJjd" id="4h2fJwlQSvk" role="2OEOjV">
+              <node concept="1YBJjd" id="4h2fJwlQSvk" role="1urrMF">
                 <ref role="1YBMHb" node="4h2fJwlQKJN" resolve="ael" />
               </node>
             </node>
@@ -1057,7 +1057,7 @@
             <node concept="Xl_RD" id="7dSitqLVbuV" role="2MkJ7o">
               <property role="Xl_RC" value="assignments cannot be used in assertions" />
             </node>
-            <node concept="2OqwBi" id="7dSitqLVbAl" role="2OEOjV">
+            <node concept="2OqwBi" id="7dSitqLVbAl" role="1urrMF">
               <node concept="1YBJjd" id="7dSitqLVbxd" role="2Oq$k0">
                 <ref role="1YBMHb" node="7dSitqLUJhQ" resolve="as" />
               </node>
@@ -1243,11 +1243,11 @@
           <node concept="3clFbJ" id="3xLG8$efdpQ" role="3cqZAp">
             <node concept="3clFbS" id="3xLG8$efdpR" role="3clFbx">
               <node concept="a7r0C" id="3xLG8$efdqq" role="3cqZAp">
-                <node concept="1YBJjd" id="x1qBkTz$y" role="2OEOjV">
-                  <ref role="1YBMHb" node="x1qBkTy4v" resolve="sboas" />
-                </node>
                 <node concept="Xl_RD" id="3xLG8$efdqt" role="a7wSD">
                   <property role="Xl_RC" value="comparison of unsigned and signed types" />
+                </node>
+                <node concept="1YBJjd" id="x1qBkTz$y" role="1urrMF">
+                  <ref role="1YBMHb" node="x1qBkTy4v" resolve="sboas" />
                 </node>
               </node>
             </node>
@@ -1274,11 +1274,11 @@
               </node>
               <node concept="3clFbS" id="3xLG8$efdqz" role="3eOfB_">
                 <node concept="a7r0C" id="3xLG8$efdqZ" role="3cqZAp">
-                  <node concept="1YBJjd" id="x1qBkTzE4" role="2OEOjV">
-                    <ref role="1YBMHb" node="x1qBkTy4v" resolve="sboas" />
-                  </node>
                   <node concept="Xl_RD" id="3xLG8$efdr1" role="a7wSD">
                     <property role="Xl_RC" value="comparison of signed and unsigned types" />
+                  </node>
+                  <node concept="1YBJjd" id="x1qBkTzE4" role="1urrMF">
+                    <ref role="1YBMHb" node="x1qBkTy4v" resolve="sboas" />
                   </node>
                 </node>
               </node>
@@ -1312,7 +1312,7 @@
             <node concept="Xl_RD" id="5xim$7tIKR9" role="2MkJ7o">
               <property role="Xl_RC" value="the maximum amount of tests per binary is 256" />
             </node>
-            <node concept="1YBJjd" id="5xim$7tIKSQ" role="2OEOjV">
+            <node concept="1YBJjd" id="5xim$7tIKSQ" role="1urrMF">
               <ref role="1YBMHb" node="5xim$7tIFm5" resolve="testCollection" />
             </node>
           </node>
@@ -1347,10 +1347,10 @@
                     <node concept="Xl_RD" id="7nMAuIoJi82" role="2MkJ7o">
                       <property role="Xl_RC" value="All tests have to be exported" />
                     </node>
-                    <node concept="2GrUjf" id="7nMAuIoJiab" role="2OEOjV">
+                    <node concept="2GrUjf" id="7nMAuIoJiab" role="1urrMF">
                       <ref role="2Gs0qQ" node="7nMAuIoJcXd" resolve="t" />
                     </node>
-                    <node concept="3Cnw8n" id="76Xv5Ts1v9B" role="2OEOjU">
+                    <node concept="3Cnw8n" id="76Xv5Ts1v9B" role="1urrFz">
                       <ref role="QpYPw" node="76Xv5Ts1f0f" resolve="exportAllUsedTests" />
                       <node concept="3CnSsL" id="76Xv5Ts1BQg" role="3Coj4f">
                         <ref role="QkamJ" node="76Xv5Ts1ByH" resolve="collection" />
@@ -1566,7 +1566,7 @@
             <node concept="Xl_RD" id="2NUzdxF$WwR" role="2MkJ7o">
               <property role="Xl_RC" value="the number of required tags must not exceed 10" />
             </node>
-            <node concept="1YBJjd" id="2NUzdxFAPc6" role="2OEOjV">
+            <node concept="1YBJjd" id="2NUzdxFAPc6" role="1urrMF">
               <ref role="1YBMHb" node="2NUzdxF$R8K" resolve="requiredTagsAnnotation" />
             </node>
           </node>

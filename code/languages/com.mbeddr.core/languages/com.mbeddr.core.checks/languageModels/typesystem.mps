@@ -157,13 +157,13 @@
         <child id="1207055552304" name="warningText" index="a7wSD" />
       </concept>
       <concept id="7992060018732187444" name="jetbrains.mps.lang.typesystem.structure.WarningStatementAnnotation" flags="ng" index="AMVWa" />
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -646,7 +646,7 @@
                       <property role="Xl_RC" value="(MISRA-C:2004 12.8): right-hand operand of a shift operator shall lie between " />
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="7Ny2UQe_qxu" role="2OEOjV">
+                  <node concept="2OqwBi" id="7Ny2UQe_qxu" role="1urrMF">
                     <node concept="37vLTw" id="7Ny2UQe_qxv" role="2Oq$k0">
                       <ref role="3cqZAo" node="2sRGoU6nkgT" resolve="positionsCount" />
                     </node>
@@ -961,11 +961,11 @@
             <node concept="AMVWa" id="7Ny2UQe_ULB" role="lGtFl">
               <property role="TrG5h" value="BitwiseArithmeticOperationsAppliedToSignedVars" />
             </node>
-            <node concept="1YBJjd" id="7Ny2UQe_Vs8" role="2OEOjV">
-              <ref role="1YBMHb" node="1kFLyoDrBe0" resolve="bae" />
-            </node>
             <node concept="Xl_RD" id="7Ny2UQe_Vlg" role="a7wSD">
               <property role="Xl_RC" value="(MISRA-C:2004 12.7): bitwise operators should not be used with signed types" />
+            </node>
+            <node concept="1YBJjd" id="7Ny2UQe_Vs8" role="1urrMF">
+              <ref role="1YBMHb" node="1kFLyoDrBe0" resolve="bae" />
             </node>
           </node>
         </node>
@@ -1024,11 +1024,11 @@
             <node concept="AMVWa" id="7Ny2UQe_W43" role="lGtFl">
               <property role="TrG5h" value="BitwiseDirectAssignmentAppliedToSignedVars" />
             </node>
-            <node concept="1YBJjd" id="7Ny2UQe_WtY" role="2OEOjV">
-              <ref role="1YBMHb" node="1kFLyoDrnaX" resolve="dae" />
-            </node>
             <node concept="Xl_RD" id="7Ny2UQe_W45" role="a7wSD">
               <property role="Xl_RC" value="(MISRA-C:2004 12.7): bitwise operators should not be used with signed types" />
+            </node>
+            <node concept="1YBJjd" id="7Ny2UQe_WtY" role="1urrMF">
+              <ref role="1YBMHb" node="1kFLyoDrnaX" resolve="dae" />
             </node>
           </node>
           <node concept="3clFbH" id="7Ny2UQe_W1D" role="3cqZAp" />
