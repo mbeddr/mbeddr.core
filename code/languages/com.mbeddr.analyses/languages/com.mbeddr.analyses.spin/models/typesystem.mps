@@ -133,10 +133,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -156,6 +152,10 @@
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G">
         <child id="2329696648448631592" name="overridenRules" index="dp_RE" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <property id="1216127910019" name="applyImmediately" index="ARO6o" />
@@ -360,11 +360,11 @@
       <node concept="3clFbJ" id="7Rf0$0HCP7n" role="3cqZAp">
         <node concept="3clFbS" id="7Rf0$0HCP7o" role="3clFbx">
           <node concept="2MkqsV" id="7Rf0$0HCP7p" role="3cqZAp">
-            <node concept="1YBJjd" id="7Rf0$0HCP7q" role="2OEOjV">
-              <ref role="1YBMHb" node="7Rf0$0HCP9d" resolve="spinExecutable" />
-            </node>
             <node concept="Xl_RD" id="7Rf0$0HCP7r" role="2MkJ7o">
               <property role="Xl_RC" value="Exactly one Promela model must be referenced" />
+            </node>
+            <node concept="1YBJjd" id="7Rf0$0HCP7q" role="1urrMF">
+              <ref role="1YBMHb" node="7Rf0$0HCP9d" resolve="spinExecutable" />
             </node>
           </node>
           <node concept="3cpWs6" id="3tIDuP5tyeK" role="3cqZAp" />
@@ -478,11 +478,11 @@
       <node concept="3clFbJ" id="7Rf0$0HCP7B" role="3cqZAp">
         <node concept="3clFbS" id="7Rf0$0HCP7C" role="3clFbx">
           <node concept="2MkqsV" id="7Rf0$0HCP7D" role="3cqZAp">
-            <node concept="1YBJjd" id="7Rf0$0HCP7E" role="2OEOjV">
-              <ref role="1YBMHb" node="7Rf0$0HCP9d" resolve="spinExecutable" />
-            </node>
             <node concept="Xl_RD" id="7Rf0$0HCP7F" role="2MkJ7o">
               <property role="Xl_RC" value="Exactly one init process is needed in the Promela model" />
+            </node>
+            <node concept="1YBJjd" id="7Rf0$0HCP7E" role="1urrMF">
+              <ref role="1YBMHb" node="7Rf0$0HCP9d" resolve="spinExecutable" />
             </node>
           </node>
         </node>
@@ -512,9 +512,6 @@
       <node concept="3clFbJ" id="7Rf0$0HCP8Z" role="3cqZAp">
         <node concept="3clFbS" id="7Rf0$0HCP90" role="3clFbx">
           <node concept="2MkqsV" id="7Rf0$0HCP91" role="3cqZAp">
-            <node concept="1YBJjd" id="7Rf0$0HCP92" role="2OEOjV">
-              <ref role="1YBMHb" node="7Rf0$0HCP9d" resolve="spinExecutable" />
-            </node>
             <node concept="3cpWs3" id="3tIDuP5tLHy" role="2MkJ7o">
               <node concept="37vLTw" id="3tIDuP5tM92" role="3uHU7w">
                 <ref role="3cqZAo" node="3tIDuP5ttMl" resolve="desiredNameOfPanExecutable" />
@@ -523,7 +520,10 @@
                 <property role="Xl_RC" value="Executable name must be " />
               </node>
             </node>
-            <node concept="3Cnw8n" id="3tIDuP5tU5_" role="2OEOjU">
+            <node concept="1YBJjd" id="7Rf0$0HCP92" role="1urrMF">
+              <ref role="1YBMHb" node="7Rf0$0HCP9d" resolve="spinExecutable" />
+            </node>
+            <node concept="3Cnw8n" id="3tIDuP5tU5_" role="1urrFz">
               <property role="ARO6o" value="true" />
               <ref role="QpYPw" node="3tIDuP5tR3S" resolve="fixSpinExecutableName" />
               <node concept="3CnSsL" id="3tIDuP5tU_8" role="3Coj4f">
@@ -805,10 +805,10 @@
         <node concept="Xl_RD" id="6E3dSCjBSTC" role="2MkJ7o">
           <property role="Xl_RC" value="no Spin executable found" />
         </node>
-        <node concept="1YBJjd" id="6E3dSCjBSZ4" role="2OEOjV">
+        <node concept="1YBJjd" id="6E3dSCjBSZ4" role="1urrMF">
           <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="spinBasedAnalysis" />
         </node>
-        <node concept="3Cnw8n" id="63DPgoN5br2" role="2OEOjU">
+        <node concept="3Cnw8n" id="63DPgoN5br2" role="1urrFz">
           <ref role="QpYPw" node="63DPgoN4Bi0" resolve="fixSpinExecutable" />
           <node concept="3CnSsL" id="63DPgoN5bII" role="3Coj4f">
             <ref role="QkamJ" node="63DPgoN4EX9" resolve="pm" />
@@ -857,13 +857,13 @@
           <node concept="3clFbJ" id="4l47ydylkao" role="3cqZAp">
             <node concept="3clFbS" id="4l47ydylkaq" role="3clFbx">
               <node concept="2MkqsV" id="4l47ydylljG" role="3cqZAp">
-                <node concept="1YBJjd" id="4l47ydylljV" role="2OEOjV">
-                  <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
-                </node>
                 <node concept="Xl_RD" id="4l47ydyllkp" role="2MkJ7o">
                   <property role="Xl_RC" value="the CLANG compiler needs to be used to enable the instrumentation of code with sanity checks" />
                 </node>
-                <node concept="3Cnw8n" id="4l47ydylxwX" role="2OEOjU">
+                <node concept="1YBJjd" id="4l47ydylljV" role="1urrMF">
+                  <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
+                </node>
+                <node concept="3Cnw8n" id="4l47ydylxwX" role="1urrFz">
                   <ref role="QpYPw" node="4l47ydylnEZ" resolve="fixClangCompilerSettings" />
                   <node concept="3CnSsL" id="4l47ydylxS$" role="3Coj4f">
                     <ref role="QkamJ" node="4l47ydylsUT" resolve="rsa" />
@@ -916,13 +916,13 @@
           <node concept="3clFbJ" id="4l47ydyllFi" role="3cqZAp">
             <node concept="3clFbS" id="4l47ydyllFj" role="3clFbx">
               <node concept="2MkqsV" id="4l47ydyllFk" role="3cqZAp">
-                <node concept="1YBJjd" id="4l47ydyllFl" role="2OEOjV">
-                  <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
-                </node>
                 <node concept="Xl_RD" id="4l47ydyllFm" role="2MkJ7o">
                   <property role="Xl_RC" value="the CLANG compiler options must contain '-fsanitize=undefined'" />
                 </node>
-                <node concept="3Cnw8n" id="4l47ydylxGz" role="2OEOjU">
+                <node concept="1YBJjd" id="4l47ydyllFl" role="1urrMF">
+                  <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
+                </node>
+                <node concept="3Cnw8n" id="4l47ydylxGz" role="1urrFz">
                   <ref role="QpYPw" node="4l47ydylnEZ" resolve="fixClangCompilerSettings" />
                   <node concept="3CnSsL" id="4l47ydylxS9" role="3Coj4f">
                     <ref role="QkamJ" node="4l47ydylsUT" resolve="rsa" />
@@ -958,10 +958,10 @@
                 <node concept="Xl_RD" id="57K12X7W2Ge" role="a7wSD">
                   <property role="Xl_RC" value="the CLANG compiler options must contain '-ftrap-function=sanitizer_trap' in order to hook with Spin to capture the witness" />
                 </node>
-                <node concept="1YBJjd" id="57K12X7W2Gd" role="2OEOjV">
+                <node concept="1YBJjd" id="57K12X7W2Gd" role="1urrMF">
                   <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
                 </node>
-                <node concept="3Cnw8n" id="57K12X7W2Gf" role="2OEOjU">
+                <node concept="3Cnw8n" id="57K12X7W2Gf" role="1urrFz">
                   <ref role="QpYPw" node="4l47ydylnEZ" resolve="fixClangCompilerSettings" />
                   <node concept="3CnSsL" id="57K12X7W2Gg" role="3Coj4f">
                     <ref role="QkamJ" node="4l47ydylsUT" resolve="rsa" />

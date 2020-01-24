@@ -2,10 +2,10 @@
 <model ref="r:a2c6041f-cf17-4d52-9bb6-8da2d5e2cf9c(com.mbeddr.analyses.base.verification_conditions.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="3" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="4" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -55,13 +55,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -110,7 +110,7 @@
             <node concept="Xl_RD" id="46evrC8jtVW" role="2MkJ7o">
               <property role="Xl_RC" value="condition should be side effect free" />
             </node>
-            <node concept="2OqwBi" id="46evrC8ju28" role="2OEOjV">
+            <node concept="2OqwBi" id="46evrC8ju28" role="1urrMF">
               <node concept="1YBJjd" id="46evrC8jtX$" role="2Oq$k0">
                 <ref role="1YBMHb" node="46evrC8jq57" resolve="bvc" />
               </node>
@@ -142,7 +142,7 @@
             <node concept="Xl_RD" id="46evrC8juCm" role="2MkJ7o">
               <property role="Xl_RC" value="condition should be side effect free" />
             </node>
-            <node concept="2OqwBi" id="46evrC8juCn" role="2OEOjV">
+            <node concept="2OqwBi" id="46evrC8juCn" role="1urrMF">
               <node concept="1YBJjd" id="46evrC8juCo" role="2Oq$k0">
                 <ref role="1YBMHb" node="46evrC8jq57" resolve="bvc" />
               </node>
@@ -238,7 +238,7 @@
             <node concept="Xl_RD" id="46evrC8jvPs" role="2MkJ7o">
               <property role="Xl_RC" value="condition should be side effect free" />
             </node>
-            <node concept="2OqwBi" id="46evrC8jvPt" role="2OEOjV">
+            <node concept="2OqwBi" id="46evrC8jvPt" role="1urrMF">
               <node concept="1YBJjd" id="46evrC8jwfJ" role="2Oq$k0">
                 <ref role="1YBMHb" node="46evrC8jvNS" resolve="tvc" />
               </node>
@@ -270,7 +270,7 @@
             <node concept="Xl_RD" id="46evrC8jvPD" role="2MkJ7o">
               <property role="Xl_RC" value="condition should be side effect free" />
             </node>
-            <node concept="2OqwBi" id="46evrC8jvPE" role="2OEOjV">
+            <node concept="2OqwBi" id="46evrC8jvPE" role="1urrMF">
               <node concept="1YBJjd" id="46evrC8jwml" role="2Oq$k0">
                 <ref role="1YBMHb" node="46evrC8jvNS" resolve="tvc" />
               </node>
@@ -302,7 +302,7 @@
             <node concept="Xl_RD" id="46evrC8jwsE" role="2MkJ7o">
               <property role="Xl_RC" value="condition should be side effect free" />
             </node>
-            <node concept="2OqwBi" id="46evrC8jwsF" role="2OEOjV">
+            <node concept="2OqwBi" id="46evrC8jwsF" role="1urrMF">
               <node concept="1YBJjd" id="46evrC8jwsG" role="2Oq$k0">
                 <ref role="1YBMHb" node="46evrC8jvNS" resolve="tvc" />
               </node>

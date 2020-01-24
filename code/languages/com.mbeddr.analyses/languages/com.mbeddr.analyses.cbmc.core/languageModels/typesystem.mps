@@ -73,13 +73,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -209,7 +209,7 @@
             <node concept="Xl_RD" id="3x0R1LJfFhl" role="2MkJ7o">
               <property role="Xl_RC" value="Only decision tables marked as 'checked' can be analyzed." />
             </node>
-            <node concept="1YBJjd" id="3x0R1LJfFhm" role="2OEOjV">
+            <node concept="1YBJjd" id="3x0R1LJfFhm" role="1urrMF">
               <ref role="1YBMHb" node="3x0R1LJfFht" resolve="decTabAnalysis" />
             </node>
           </node>
@@ -265,7 +265,7 @@
             <node concept="Xl_RD" id="7yN$Xh8qmFL" role="2MkJ7o">
               <property role="Xl_RC" value="Only generic switches marked as 'checked' can be analyzed." />
             </node>
-            <node concept="1YBJjd" id="7yN$Xh8qnWy" role="2OEOjV">
+            <node concept="1YBJjd" id="7yN$Xh8qnWy" role="1urrMF">
               <ref role="1YBMHb" node="7yN$Xh8qmxB" resolve="gSwitchAnalysis" />
             </node>
           </node>
@@ -340,7 +340,7 @@
                 <node concept="37vLTw" id="1_dsrLeqhGO" role="2MkJ7o">
                   <ref role="3cqZAo" node="1_dsrLeqhGM" resolve="errorMsg" />
                 </node>
-                <node concept="2GrUjf" id="1_dsrLeqhG4" role="2OEOjV">
+                <node concept="2GrUjf" id="1_dsrLeqhG4" role="1urrMF">
                   <ref role="2Gs0qQ" node="1_dsrLeq9ae" resolve="exp" />
                 </node>
               </node>
@@ -377,7 +377,7 @@
                 <node concept="37vLTw" id="1_dsrLeqkQp" role="2MkJ7o">
                   <ref role="3cqZAo" node="1_dsrLeqhGM" resolve="errorMsg" />
                 </node>
-                <node concept="2GrUjf" id="1_dsrLeqkQq" role="2OEOjV">
+                <node concept="2GrUjf" id="1_dsrLeqkQq" role="1urrMF">
                   <ref role="2Gs0qQ" node="1_dsrLeqkQh" resolve="exp" />
                 </node>
               </node>
@@ -486,7 +486,7 @@
                 <node concept="37vLTw" id="576QrOJusaf" role="2MkJ7o">
                   <ref role="3cqZAo" node="576QrOJusa3" resolve="errorMsg" />
                 </node>
-                <node concept="2GrUjf" id="576QrOJusag" role="2OEOjV">
+                <node concept="2GrUjf" id="576QrOJusag" role="1urrMF">
                   <ref role="2Gs0qQ" node="576QrOJusa7" resolve="exp" />
                 </node>
               </node>
@@ -517,11 +517,11 @@
       <node concept="3clFbJ" id="5zPqP2q$fDq" role="3cqZAp">
         <node concept="3clFbS" id="5zPqP2q$fDs" role="3clFbx">
           <node concept="2MkqsV" id="5zPqP2q$hHu" role="3cqZAp">
-            <node concept="1YBJjd" id="5zPqP2q$hJz" role="2OEOjV">
-              <ref role="1YBMHb" node="fupCap9hR" resolve="deadCodeAnalysis" />
-            </node>
             <node concept="Xl_RD" id="5zPqP2q$hHO" role="2MkJ7o">
               <property role="Xl_RC" value="The entry point in the dead-code analysis must be a function" />
+            </node>
+            <node concept="1YBJjd" id="5zPqP2q$hJz" role="1urrMF">
+              <ref role="1YBMHb" node="fupCap9hR" resolve="deadCodeAnalysis" />
             </node>
           </node>
         </node>
@@ -776,7 +776,7 @@
             <node concept="Xl_RD" id="4_A2_RN4RcC" role="2MkJ7o">
               <property role="Xl_RC" value="The Build Configuration from the same model should contain an 'analysis configuration item' pointing to this node" />
             </node>
-            <node concept="37vLTw" id="fupCau0kV" role="2OEOjV">
+            <node concept="37vLTw" id="fupCau0kV" role="1urrMF">
               <ref role="3cqZAo" node="fupCapc38" resolve="cfg" />
             </node>
           </node>
