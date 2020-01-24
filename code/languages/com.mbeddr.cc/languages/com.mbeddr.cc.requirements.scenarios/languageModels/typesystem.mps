@@ -94,11 +94,6 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -116,6 +111,11 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
@@ -262,7 +262,7 @@
             <node concept="Xl_RD" id="4YQM_89w2ty" role="2MkJ7o">
               <property role="Xl_RC" value="cannot call on self; use the self call (&lt;&lt;)" />
             </node>
-            <node concept="2OqwBi" id="4YQM_89w5FA" role="2OEOjV">
+            <node concept="2OqwBi" id="4YQM_89w5FA" role="1urrMF">
               <node concept="1YBJjd" id="4YQM_89w5F7" role="2Oq$k0">
                 <ref role="1YBMHb" node="4YQM_89vh4c" resolve="c" />
               </node>
@@ -306,7 +306,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="4YQM_89vjWS" role="2OEOjV">
+              <node concept="2OqwBi" id="4YQM_89vjWS" role="1urrMF">
                 <node concept="1YBJjd" id="4YQM_89vjWz" role="2Oq$k0">
                   <ref role="1YBMHb" node="4YQM_89vh4c" resolve="c" />
                 </node>
@@ -314,7 +314,7 @@
                   <ref role="3Tt5mk" to="4l29:4YQM_89uOtI" resolve="targetParticipant" />
                 </node>
               </node>
-              <node concept="3Cnw8n" id="4YQM_89vkuQ" role="2OEOjU">
+              <node concept="3Cnw8n" id="4YQM_89vkuQ" role="1urrFz">
                 <ref role="QpYPw" node="4YQM_89vjWZ" resolve="addCollaborator" />
                 <node concept="3CnSsL" id="4YQM_89vkuR" role="3Coj4f">
                   <ref role="QkamJ" node="4YQM_89vjX2" resolve="ctx" />
@@ -521,9 +521,6 @@
                 </node>
               </node>
               <node concept="2MkqsV" id="5YVZL2k_FFx" role="3cqZAp">
-                <node concept="1YBJjd" id="5YVZL2k_FFy" role="2OEOjV">
-                  <ref role="1YBMHb" node="4YQM_89vt9f" resolve="c" />
-                </node>
                 <node concept="3cpWs3" id="5YVZL2k_FFz" role="2MkJ7o">
                   <node concept="2OqwBi" id="5YVZL2k_FF$" role="3uHU7w">
                     <node concept="2OqwBi" id="5YVZL2k_FF_" role="2Oq$k0">
@@ -552,10 +549,13 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2OE7Q9" id="5YVZL2k_FFI" role="2OEWyd">
+                <node concept="2OE7Q9" id="5YVZL2k_FFI" role="1urrC5">
                   <ref role="2OEe5H" to="4l29:4YQM_89uPHZ" resolve="capability" />
                 </node>
-                <node concept="3Cnw8n" id="5YVZL2k_FFJ" role="2OEOjU">
+                <node concept="1YBJjd" id="5YVZL2k_FFy" role="1urrMF">
+                  <ref role="1YBMHb" node="4YQM_89vt9f" resolve="c" />
+                </node>
+                <node concept="3Cnw8n" id="5YVZL2k_FFJ" role="1urrFz">
                   <ref role="QpYPw" node="5YVZL2k_jjg" resolve="addArgument" />
                   <node concept="3CnSsL" id="5YVZL2k_FFK" role="3Coj4f">
                     <ref role="QkamJ" node="5YVZL2k_jjj" resolve="cap" />
@@ -616,9 +616,6 @@
             <node concept="9aQIb" id="5YVZL2k_FFX" role="9aQIa">
               <node concept="3clFbS" id="5YVZL2k_FFY" role="9aQI4">
                 <node concept="2MkqsV" id="4YQM_89vtcg" role="3cqZAp">
-                  <node concept="1YBJjd" id="4YQM_89vtgF" role="2OEOjV">
-                    <ref role="1YBMHb" node="4YQM_89vt9f" resolve="c" />
-                  </node>
                   <node concept="3cpWs3" id="4YQM_89vK$T" role="2MkJ7o">
                     <node concept="2OqwBi" id="4YQM_89vtg$" role="3uHU7w">
                       <node concept="2OqwBi" id="4YQM_89vtd0" role="2Oq$k0">
@@ -647,8 +644,11 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2OE7Q9" id="4YQM_89vwhu" role="2OEWyd">
+                  <node concept="2OE7Q9" id="4YQM_89vwhu" role="1urrC5">
                     <ref role="2OEe5H" to="4l29:4YQM_89uPHZ" resolve="capability" />
+                  </node>
+                  <node concept="1YBJjd" id="4YQM_89vtgF" role="1urrMF">
+                    <ref role="1YBMHb" node="4YQM_89vt9f" resolve="c" />
                   </node>
                 </node>
               </node>
@@ -798,11 +798,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1YBJjd" id="5YZjOkv$Eno" role="2OEOjV">
-                  <ref role="1YBMHb" node="5YZjOkv$Efi" resolve="call" />
-                </node>
-                <node concept="2OE7Q9" id="5YZjOkv$EnQ" role="2OEWyd">
+                <node concept="2OE7Q9" id="5YZjOkv$EnQ" role="1urrC5">
                   <ref role="2OEe5H" to="4l29:5YZjOkv$EdL" resolve="scenario" />
+                </node>
+                <node concept="1YBJjd" id="5YZjOkv$Eno" role="1urrMF">
+                  <ref role="1YBMHb" node="5YZjOkv$Efi" resolve="call" />
                 </node>
               </node>
             </node>
@@ -814,11 +814,11 @@
               <node concept="Xl_RD" id="5YZjOkv$Ehf" role="2MkJ7o">
                 <property role="Xl_RC" value="only scenarios with one initial actor can be called" />
               </node>
-              <node concept="1YBJjd" id="5YZjOkv$Ehg" role="2OEOjV">
-                <ref role="1YBMHb" node="5YZjOkv$Efi" resolve="call" />
-              </node>
-              <node concept="2OE7Q9" id="5YZjOkv$EnT" role="2OEWyd">
+              <node concept="2OE7Q9" id="5YZjOkv$EnT" role="1urrC5">
                 <ref role="2OEe5H" to="4l29:5YZjOkv$EdL" resolve="scenario" />
+              </node>
+              <node concept="1YBJjd" id="5YZjOkv$Ehg" role="1urrMF">
+                <ref role="1YBMHb" node="5YZjOkv$Efi" resolve="call" />
               </node>
             </node>
           </node>

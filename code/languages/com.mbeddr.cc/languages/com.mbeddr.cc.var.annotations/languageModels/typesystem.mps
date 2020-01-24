@@ -2,7 +2,7 @@
 <model ref="r:b6c2ea2b-94d4-4291-9ab5-6b0b10da5dd6(com.mbeddr.cc.var.annotations.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -117,11 +117,6 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -139,6 +134,11 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
@@ -291,7 +291,7 @@
             <node concept="Xl_RD" id="2h6lNbWoELE" role="2MkJ7o">
               <property role="Xl_RC" value="a feature model must be specified" />
             </node>
-            <node concept="1YBJjd" id="2h6lNbWoELF" role="2OEOjV">
+            <node concept="1YBJjd" id="2h6lNbWoELF" role="1urrMF">
               <ref role="1YBMHb" node="2h6lNbWoELp" resolve="fmc" />
             </node>
           </node>
@@ -305,7 +305,7 @@
                 <node concept="Xl_RD" id="7tA49iWEsub" role="2MkJ7o">
                   <property role="Xl_RC" value="no feature models imported; this variability specification has no effect" />
                 </node>
-                <node concept="1YBJjd" id="7tA49iWEswy" role="2OEOjV">
+                <node concept="1YBJjd" id="7tA49iWEswy" role="1urrMF">
                   <ref role="1YBMHb" node="2h6lNbWoELp" resolve="fmc" />
                 </node>
               </node>
@@ -376,7 +376,7 @@
             <node concept="Xl_RD" id="6tmg$_SAkf5" role="2MkJ7o">
               <property role="Xl_RC" value="Feature Attribute References can only be used with Expressions" />
             </node>
-            <node concept="1YBJjd" id="6tmg$_SAkH$" role="2OEOjV">
+            <node concept="1YBJjd" id="6tmg$_SAkH$" role="1urrMF">
               <ref role="1YBMHb" node="4CJNaUzzdUn" resolve="cr" />
             </node>
           </node>
@@ -445,7 +445,7 @@
                       <property role="Xl_RC" value="cannot have this here; expecting a " />
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="4CJNaUzzdVs" role="2OEOjV">
+                  <node concept="2OqwBi" id="4CJNaUzzdVs" role="1urrMF">
                     <node concept="1YBJjd" id="4CJNaUzzdVr" role="2Oq$k0">
                       <ref role="1YBMHb" node="4CJNaUzzdUn" resolve="cr" />
                     </node>
@@ -484,7 +484,7 @@
             <node concept="Xl_RD" id="3Yyx8GtXNfA" role="a7wSD">
               <property role="Xl_RC" value="nodes with names that can be referneced should use Original/Alaternative instead of Conditional Replacement" />
             </node>
-            <node concept="1YBJjd" id="3Yyx8GtXNmc" role="2OEOjV">
+            <node concept="1YBJjd" id="3Yyx8GtXNmc" role="1urrMF">
               <ref role="1YBMHb" node="4CJNaUzzdUn" resolve="cr" />
             </node>
           </node>
@@ -606,13 +606,13 @@
                 <property role="Xl_RC" value="presence condition cannot be attached to this node, " />
               </node>
             </node>
-            <node concept="2OqwBi" id="opE5jFfT6O" role="2OEOjV">
+            <node concept="2OqwBi" id="opE5jFfT6O" role="1urrMF">
               <node concept="1YBJjd" id="opE5jFfT6N" role="2Oq$k0">
                 <ref role="1YBMHb" node="opE5jFfT6t" resolve="pc" />
               </node>
               <node concept="1mfA1w" id="opE5jFfT6S" role="2OqNvi" />
             </node>
-            <node concept="3Cnw8n" id="opE5jFfTKD" role="2OEOjU">
+            <node concept="3Cnw8n" id="opE5jFfTKD" role="1urrFz">
               <ref role="QpYPw" node="opE5jFfTKx" resolve="findValidParentForPC" />
               <node concept="3CnSsL" id="opE5jFfTKE" role="3Coj4f">
                 <ref role="QkamJ" node="opE5jFfTK$" resolve="pc" />
@@ -781,7 +781,7 @@
             <node concept="Xl_RD" id="3yKJMlzzMib" role="2MkJ7o">
               <property role="Xl_RC" value="Feature model mappings are missing; use the 'Discover Feature Models' intention to add them." />
             </node>
-            <node concept="1YBJjd" id="3yKJMlzzMm0" role="2OEOjV">
+            <node concept="1YBJjd" id="3yKJMlzzMm0" role="1urrMF">
               <ref role="1YBMHb" node="4omMoHUAG4z" resolve="vci" />
             </node>
           </node>
@@ -817,7 +817,7 @@
                       <node concept="Xl_RD" id="4omMoHUAZwk" role="2MkJ7o">
                         <property role="Xl_RC" value="cannot have two mappings for a single feature model" />
                       </node>
-                      <node concept="37vLTw" id="4omMoHUB0jh" role="2OEOjV">
+                      <node concept="37vLTw" id="4omMoHUB0jh" role="1urrMF">
                         <ref role="3cqZAo" node="4omMoHUAPpS" resolve="m" />
                       </node>
                     </node>
@@ -895,7 +895,7 @@
             <node concept="Xl_RD" id="6ixWMIzDUXU" role="2MkJ7o">
               <property role="Xl_RC" value="Conditional alternatives must not be referenced directly; reference the original instead" />
             </node>
-            <node concept="1YBJjd" id="6ixWMIzDV1I" role="2OEOjV">
+            <node concept="1YBJjd" id="6ixWMIzDV1I" role="1urrMF">
               <ref role="1YBMHb" node="6ixWMIzDS$y" resolve="ref" />
             </node>
           </node>
@@ -1010,11 +1010,11 @@
             <node concept="Xl_RD" id="6ixWMI$jO2V" role="a7wSD">
               <property role="Xl_RC" value="it is recommended that the name of an alternative starts with the name of the original, and underscore and a suitable suffix" />
             </node>
-            <node concept="37vLTw" id="6ixWMI$jO$6" role="2OEOjV">
-              <ref role="3cqZAo" node="6ixWMI$jO$1" resolve="altNode" />
-            </node>
-            <node concept="2ODE4t" id="6ixWMI$jPrA" role="2OEWyd">
+            <node concept="2ODE4t" id="6ixWMI$jPrA" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="37vLTw" id="6ixWMI$jO$6" role="1urrMF">
+              <ref role="3cqZAo" node="6ixWMI$jO$1" resolve="altNode" />
             </node>
           </node>
         </node>
@@ -1053,7 +1053,7 @@
             <node concept="Xl_RD" id="3Yyx8GtXPcB" role="a7wSD">
               <property role="Xl_RC" value="nodes with names that can be referneced should use Original/Alaternative instead of Conditional Switch" />
             </node>
-            <node concept="1YBJjd" id="3Yyx8GtZh$Q" role="2OEOjV">
+            <node concept="1YBJjd" id="3Yyx8GtZh$Q" role="1urrMF">
               <ref role="1YBMHb" node="3Yyx8GtXPbQ" resolve="cs" />
             </node>
           </node>
