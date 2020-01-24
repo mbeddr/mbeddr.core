@@ -5,6 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <languageVersions>
     <language slang="l:0280da2d-83c6-47d3-bddd-baff7e1a110f:com.mbeddr.mpsutil.parameterizedMenu.sandbox" version="0" />

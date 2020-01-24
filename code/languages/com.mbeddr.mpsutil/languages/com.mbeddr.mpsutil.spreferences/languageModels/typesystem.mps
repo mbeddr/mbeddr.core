@@ -68,13 +68,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -173,7 +173,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1YBJjd" id="3dlzMguF0z4" role="2OEOjV">
+            <node concept="1YBJjd" id="3dlzMguF0z4" role="1urrMF">
               <ref role="1YBMHb" node="3dlzMguEWYb" resolve="node" />
             </node>
           </node>
@@ -210,7 +210,7 @@
                 <property role="Xl_RC" value="Cannot be in a model together with " />
               </node>
             </node>
-            <node concept="1YBJjd" id="3dlzMguF78H" role="2OEOjV">
+            <node concept="1YBJjd" id="3dlzMguF78H" role="1urrMF">
               <ref role="1YBMHb" node="3dlzMguEWYb" resolve="node" />
             </node>
           </node>
@@ -288,7 +288,7 @@
             <node concept="Xl_RD" id="6yXlhvg51zY" role="2MkJ7o">
               <property role="Xl_RC" value="'scope' and 'storage location' must be 'project'" />
             </node>
-            <node concept="2OqwBi" id="6yXlhvg51oq" role="2OEOjV">
+            <node concept="2OqwBi" id="6yXlhvg51oq" role="1urrMF">
               <node concept="1YBJjd" id="6yXlhvg51mN" role="2Oq$k0">
                 <ref role="1YBMHb" node="6yXlhvg4ZaM" resolve="node" />
               </node>

@@ -5,6 +5,12 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+    <facet type="tests" />
+  </facets>
   <sourcePath />
   <languageVersions>
     <language slang="l:9d748a1e-8ab4-4032-8897-cb398a650954:com.mbeddr.mpsutil.testScope" version="0" />

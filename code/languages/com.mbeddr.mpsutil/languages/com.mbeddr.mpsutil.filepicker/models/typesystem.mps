@@ -71,14 +71,14 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -160,7 +160,7 @@
                 <node concept="Xl_RD" id="5lKnBeBaeLU" role="2MkJ7o">
                   <property role="Xl_RC" value="a valid file must be picked." />
                 </node>
-                <node concept="1YBJjd" id="5lKnBeBaeLV" role="2OEOjV">
+                <node concept="1YBJjd" id="5lKnBeBaeLV" role="1urrMF">
                   <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
                 </node>
               </node>
@@ -191,7 +191,7 @@
                   <node concept="Xl_RD" id="4WvfojApzcI" role="2MkJ7o">
                     <property role="Xl_RC" value="a valid folder must be picked." />
                   </node>
-                  <node concept="1YBJjd" id="4WvfojApzcJ" role="2OEOjV">
+                  <node concept="1YBJjd" id="4WvfojApzcJ" role="1urrMF">
                     <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
                   </node>
                 </node>
@@ -408,11 +408,11 @@
                                 <ref role="37wK5l" to="48kf:5lKnBeAutg0" resolve="getErrorMessage" />
                               </node>
                             </node>
-                            <node concept="1YBJjd" id="5lKnBeAuxog" role="2OEOjV">
-                              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-                            </node>
-                            <node concept="2ODE4t" id="5lKnBeAuxrw" role="2OEWyd">
+                            <node concept="2ODE4t" id="5lKnBeAuxrw" role="1urrC5">
                               <ref role="2ODJFN" to="68mc:5lKnBeAtODI" resolve="path" />
+                            </node>
+                            <node concept="1YBJjd" id="5lKnBeAuxog" role="1urrMF">
+                              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
                             </node>
                           </node>
                           <node concept="3clFbJ" id="3PuSfTTlfOp" role="3cqZAp">
@@ -421,11 +421,11 @@
                                 <node concept="Xl_RD" id="3PuSfTTlh4K" role="2MkJ7o">
                                   <property role="Xl_RC" value="Even under Microsoft(R) Windows(R), please use a forward slash (/) as a separator." />
                                 </node>
-                                <node concept="1YBJjd" id="3PuSfTTlh81" role="2OEOjV">
-                                  <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-                                </node>
-                                <node concept="2ODE4t" id="3PuSfTTlh8E" role="2OEWyd">
+                                <node concept="2ODE4t" id="3PuSfTTlh8E" role="1urrC5">
                                   <ref role="2ODJFN" to="68mc:5lKnBeAtODI" resolve="path" />
+                                </node>
+                                <node concept="1YBJjd" id="3PuSfTTlh81" role="1urrMF">
+                                  <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
                                 </node>
                               </node>
                             </node>
@@ -454,9 +454,6 @@
                     <node concept="3clFbJ" id="51aJIRsCq$H" role="3cqZAp">
                       <node concept="3clFbS" id="51aJIRsCq$J" role="3clFbx">
                         <node concept="2MkqsV" id="51aJIRsCv1F" role="3cqZAp">
-                          <node concept="1YBJjd" id="51aJIRsCx$_" role="2OEOjV">
-                            <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-                          </node>
                           <node concept="3cpWs3" id="51aJIRsCx7R" role="2MkJ7o">
                             <node concept="3cpWs3" id="51aJIRsCvUH" role="3uHU7B">
                               <node concept="2OqwBi" id="51aJIRsCssT" role="3uHU7B">
@@ -488,6 +485,9 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="1YBJjd" id="51aJIRsCx$_" role="1urrMF">
+                            <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3y3z36" id="51aJIRsCrYx" role="3clFbw">
@@ -517,11 +517,11 @@
                                 <property role="Xl_RC" value=" does not exist" />
                               </node>
                             </node>
-                            <node concept="1YBJjd" id="5lKnBeAW7eM" role="2OEOjV">
-                              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-                            </node>
-                            <node concept="2ODE4t" id="5lKnBeAW7wl" role="2OEWyd">
+                            <node concept="2ODE4t" id="5lKnBeAW7wl" role="1urrC5">
                               <ref role="2ODJFN" to="68mc:5lKnBeAtODI" resolve="path" />
+                            </node>
+                            <node concept="1YBJjd" id="5lKnBeAW7eM" role="1urrMF">
+                              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
                             </node>
                           </node>
                         </node>
@@ -580,11 +580,11 @@
                         <node concept="Xl_RD" id="5lKnBeB03rv" role="2MkJ7o">
                           <property role="Xl_RC" value="cannot have slash after file selection" />
                         </node>
-                        <node concept="1YBJjd" id="5lKnBeB03Q5" role="2OEOjV">
-                          <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-                        </node>
-                        <node concept="2ODE4t" id="5lKnBeB041X" role="2OEWyd">
+                        <node concept="2ODE4t" id="5lKnBeB041X" role="1urrC5">
                           <ref role="2ODJFN" to="68mc:5lKnBeAtODI" resolve="path" />
+                        </node>
+                        <node concept="1YBJjd" id="5lKnBeB03Q5" role="1urrMF">
+                          <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
                         </node>
                       </node>
                     </node>
@@ -660,9 +660,6 @@
         </node>
         <node concept="3clFbS" id="HgIalQMxLl" role="3clFbx">
           <node concept="2MkqsV" id="HgIalQMBE3" role="3cqZAp">
-            <node concept="1YBJjd" id="HgIalQMBHg" role="2OEOjV">
-              <ref role="1YBMHb" node="HgIalQMxLf" resolve="macroFolderPicker" />
-            </node>
             <node concept="3cpWs3" id="HgIalQMQi1" role="2MkJ7o">
               <node concept="3cpWs3" id="HgIalQMQi2" role="3uHU7B">
                 <node concept="Xl_RD" id="HgIalQMQi3" role="3uHU7B">
@@ -680,6 +677,9 @@
               <node concept="Xl_RD" id="HgIalQMQi7" role="3uHU7w">
                 <property role="Xl_RC" value=" does not exist" />
               </node>
+            </node>
+            <node concept="1YBJjd" id="HgIalQMBHg" role="1urrMF">
+              <ref role="1YBMHb" node="HgIalQMxLf" resolve="macroFolderPicker" />
             </node>
           </node>
         </node>
@@ -752,7 +752,7 @@
                 <property role="Xl_RC" value=" does not exist" />
               </node>
             </node>
-            <node concept="1YBJjd" id="HgIalQMCwf" role="2OEOjV">
+            <node concept="1YBJjd" id="HgIalQMCwf" role="1urrMF">
               <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />
             </node>
           </node>
