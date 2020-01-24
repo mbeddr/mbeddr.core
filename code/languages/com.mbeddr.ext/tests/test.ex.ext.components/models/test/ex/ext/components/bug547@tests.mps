@@ -109,6 +109,7 @@
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
         <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
+        <child id="6223244215015180089" name="testinit" index="1$8m2t" />
       </concept>
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
@@ -154,6 +155,9 @@
       </concept>
       <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
         <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
+      </concept>
+      <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
+        <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
       <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
       <concept id="8473757169836531451" name="com.mbeddr.ext.components.structure.DirectRunnableCallable" flags="ng" index="1KB$IV" />
@@ -513,6 +517,11 @@
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAIcn" role="lIfQt">
         <ref role="3cM6IK" node="6$zgR4RzMjQ" resolve="testMultiDimArraysAsFields" />
+      </node>
+      <node concept="3XIRFW" id="1GMvKXN4Y3k" role="1$8m2t">
+        <node concept="3t9XKO" id="1GMvKXN4Y2X" role="3XIRFZ">
+          <ref role="3t9XKR" node="6$zgR4RzMjZ" resolve="instances" />
+        </node>
       </node>
     </node>
   </node>
