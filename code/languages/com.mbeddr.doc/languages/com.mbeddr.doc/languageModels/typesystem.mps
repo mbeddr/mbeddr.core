@@ -115,11 +115,6 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -137,6 +132,11 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
@@ -272,11 +272,11 @@
             <node concept="Xl_RD" id="5yxqZJwzj15" role="2MkJ7o">
               <property role="Xl_RC" value="no valid image specified" />
             </node>
-            <node concept="1YBJjd" id="5yxqZJwzj16" role="2OEOjV">
-              <ref role="1YBMHb" node="5yxqZJwzj0s" resolve="ip" />
-            </node>
-            <node concept="2ODE4t" id="5yxqZJwzj19" role="2OEWyd">
+            <node concept="2ODE4t" id="5yxqZJwzj19" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="1YBJjd" id="5yxqZJwzj16" role="1urrMF">
+              <ref role="1YBMHb" node="5yxqZJwzj0s" resolve="ip" />
             </node>
           </node>
         </node>
@@ -307,13 +307,13 @@
             <node concept="Xl_RD" id="5yxqZJwzC59" role="2MkJ7o">
               <property role="Xl_RC" value="invalid path" />
             </node>
-            <node concept="1YBJjd" id="5yxqZJwzC5a" role="2OEOjV">
-              <ref role="1YBMHb" node="5yxqZJwzC4a" resolve="pd" />
-            </node>
-            <node concept="2ODE4t" id="5yxqZJwzC5d" role="2OEWyd">
+            <node concept="2ODE4t" id="5yxqZJwzC5d" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
             </node>
-            <node concept="3Cnw8n" id="5$bT90ZdcU8" role="2OEOjU">
+            <node concept="1YBJjd" id="5yxqZJwzC5a" role="1urrMF">
+              <ref role="1YBMHb" node="5yxqZJwzC4a" resolve="pd" />
+            </node>
+            <node concept="3Cnw8n" id="5$bT90ZdcU8" role="1urrFz">
               <ref role="QpYPw" node="5$bT90Zd1f3" resolve="createPathDir" />
               <node concept="3CnSsL" id="5$bT90ZdcUa" role="3Coj4f">
                 <ref role="QkamJ" node="5$bT90Zd1f6" resolve="pd" />
@@ -341,11 +341,11 @@
             <node concept="Xl_RD" id="5yxqZJwzYQV" role="2MkJ7o">
               <property role="Xl_RC" value="you can only have one document export per model" />
             </node>
-            <node concept="1YBJjd" id="5yxqZJwzYQW" role="2OEOjV">
-              <ref role="1YBMHb" node="5yxqZJwzYP5" resolve="ae" />
-            </node>
-            <node concept="2ODE4t" id="5yxqZJwzYQZ" role="2OEWyd">
+            <node concept="2ODE4t" id="5yxqZJwzYQZ" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="1YBJjd" id="5yxqZJwzYQW" role="1urrMF">
+              <ref role="1YBMHb" node="5yxqZJwzYP5" resolve="ae" />
             </node>
           </node>
         </node>
@@ -500,11 +500,11 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="1YBJjd" id="3UlEobTHJWa" role="2OEOjV">
-                      <ref role="1YBMHb" node="5yxqZJwzYP5" resolve="ae" />
-                    </node>
-                    <node concept="2ODE4t" id="3UlEobTHJWd" role="2OEWyd">
+                    <node concept="2ODE4t" id="3UlEobTHJWd" role="1urrC5">
                       <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                    <node concept="1YBJjd" id="3UlEobTHJWa" role="1urrMF">
+                      <ref role="1YBMHb" node="5yxqZJwzYP5" resolve="ae" />
                     </node>
                   </node>
                 </node>
@@ -611,7 +611,7 @@
                 <node concept="Xl_RD" id="3RseghIeKDq" role="a7wSD">
                   <property role="Xl_RC" value="ununsed argument" />
                 </node>
-                <node concept="1YBJjd" id="3RseghIeKDr" role="2OEOjV">
+                <node concept="1YBJjd" id="3RseghIeKDr" role="1urrMF">
                   <ref role="1YBMHb" node="3RseghIeK_J" resolve="sa" />
                 </node>
               </node>
@@ -682,11 +682,11 @@
             <node concept="Xl_RD" id="3RseghIeSt2" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of arguments" />
             </node>
-            <node concept="1YBJjd" id="3RseghIeSt3" role="2OEOjV">
-              <ref role="1YBMHb" node="3RseghIeSqn" resolve="ref" />
-            </node>
-            <node concept="2OE7Q9" id="3RseghIeSt6" role="2OEWyd">
+            <node concept="2OE7Q9" id="3RseghIeSt6" role="1urrC5">
               <ref role="2OEe5H" to="2c95:3RseghIemTt" resolve="shortcut" />
+            </node>
+            <node concept="1YBJjd" id="3RseghIeSt3" role="1urrMF">
+              <ref role="1YBMHb" node="3RseghIeSqn" resolve="ref" />
             </node>
           </node>
         </node>
@@ -785,11 +785,11 @@
                 <node concept="Xl_RD" id="4vQSg$AqR2U" role="a7wSD">
                   <property role="Xl_RC" value="some renderers may ignore nesting levels &gt; 2" />
                 </node>
-                <node concept="1YBJjd" id="4vQSg$AqR2V" role="2OEOjV">
-                  <ref role="1YBMHb" node="4vQSg$AqR1Z" resolve="as" />
-                </node>
-                <node concept="2ODE4t" id="4vQSg$AqR2Y" role="2OEWyd">
+                <node concept="2ODE4t" id="4vQSg$AqR2Y" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="1YBJjd" id="4vQSg$AqR2V" role="1urrMF">
+                  <ref role="1YBMHb" node="4vQSg$AqR1Z" resolve="as" />
                 </node>
               </node>
             </node>
@@ -854,7 +854,7 @@
             <node concept="Xl_RD" id="519ky_Sk7Ko" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of cells" />
             </node>
-            <node concept="1YBJjd" id="519ky_Sk7Kr" role="2OEOjV">
+            <node concept="1YBJjd" id="519ky_Sk7Kr" role="1urrMF">
               <ref role="1YBMHb" node="519ky_Sk7HJ" resolve="tr" />
             </node>
           </node>
@@ -875,7 +875,7 @@
             <node concept="Xl_RD" id="5MdJlxzHGJP" role="2MkJ7o">
               <property role="Xl_RC" value="target node must be an an IVisualizable" />
             </node>
-            <node concept="1YBJjd" id="5MdJlxzHGR5" role="2OEOjV">
+            <node concept="1YBJjd" id="5MdJlxzHGR5" role="1urrMF">
               <ref role="1YBMHb" node="2fGuOSYbw1j" resolve="v" />
             </node>
           </node>
@@ -929,11 +929,11 @@
                   <node concept="Xl_RD" id="2fGuOSYbw1g" role="2MkJ7o">
                     <property role="Xl_RC" value="invalid category for this IVisualizable" />
                   </node>
-                  <node concept="1YBJjd" id="2fGuOSYbw1h" role="2OEOjV">
-                    <ref role="1YBMHb" node="2fGuOSYbw1j" resolve="v" />
-                  </node>
-                  <node concept="2ODE4t" id="2fGuOSYbw1i" role="2OEWyd">
+                  <node concept="2ODE4t" id="2fGuOSYbw1i" role="1urrC5">
                     <ref role="2ODJFN" to="2c95:2fGuOSYbvZ1" resolve="category" />
+                  </node>
+                  <node concept="1YBJjd" id="2fGuOSYbw1h" role="1urrMF">
+                    <ref role="1YBMHb" node="2fGuOSYbw1j" resolve="v" />
                   </node>
                 </node>
               </node>
@@ -966,7 +966,7 @@
             <node concept="Xl_RD" id="3DAECxG6zoF" role="2MkJ7o">
               <property role="Xl_RC" value="chapters must be used top level in documents." />
             </node>
-            <node concept="1YBJjd" id="3DAECxG6zpE" role="2OEOjV">
+            <node concept="1YBJjd" id="3DAECxG6zpE" role="1urrMF">
               <ref role="1YBMHb" node="3DAECxG6xHK" resolve="chapter" />
             </node>
           </node>
@@ -1045,10 +1045,10 @@
                 <node concept="Xl_RD" id="1SYZy6QXdZ6" role="a7wSD">
                   <property role="Xl_RC" value="empty code pointer in spite of prefix" />
                 </node>
-                <node concept="1YBJjd" id="1SYZy6QXe3J" role="2OEOjV">
+                <node concept="1YBJjd" id="1SYZy6QXe3J" role="1urrMF">
                   <ref role="1YBMHb" node="1SYZy6QWXM5" resolve="cp" />
                 </node>
-                <node concept="3Cnw8n" id="1SYZy6QXf0n" role="2OEOjU">
+                <node concept="3Cnw8n" id="1SYZy6QXf0n" role="1urrFz">
                   <property role="ARO6o" value="true" />
                   <ref role="QpYPw" node="1SYZy6QXe56" resolve="fixEmptyCodePointer" />
                   <node concept="3CnSsL" id="1SYZy6QXf4O" role="3Coj4f">
@@ -1207,7 +1207,7 @@
             <node concept="Xl_RD" id="2CRkjeish$$" role="2MkJ7o">
               <property role="Xl_RC" value="Currently only references to nodes in the same model are supported" />
             </node>
-            <node concept="1YBJjd" id="2CRkjeishG4" role="2OEOjV">
+            <node concept="1YBJjd" id="2CRkjeishG4" role="1urrMF">
               <ref role="1YBMHb" node="2CRkjeisemZ" resolve="documentInclude" />
             </node>
           </node>
@@ -1224,9 +1224,6 @@
     <property role="3GE5qa" value="words" />
     <node concept="3clFbS" id="t5DIOhGZfw" role="18ibNy">
       <node concept="2Mj0R9" id="t5DIOhGZm_" role="3cqZAp">
-        <node concept="1YBJjd" id="5J0kEUnY5sd" role="2OEOjV">
-          <ref role="1YBMHb" node="t5DIOhGZfy" resolve="docRefWord" />
-        </node>
         <node concept="17R0WA" id="t5DIOhGZmA" role="2MkoU_">
           <node concept="2OqwBi" id="t5DIOhGZmB" role="3uHU7B">
             <node concept="2OqwBi" id="t5DIOhGZmC" role="2Oq$k0">
@@ -1248,6 +1245,9 @@
         </node>
         <node concept="Xl_RD" id="t5DIOhGZmJ" role="2MkJ7o">
           <property role="Xl_RC" value="Currently only references to nodes in the same model are supported" />
+        </node>
+        <node concept="1YBJjd" id="5J0kEUnY5sd" role="1urrMF">
+          <ref role="1YBMHb" node="t5DIOhGZfy" resolve="docRefWord" />
         </node>
       </node>
     </node>
@@ -1312,7 +1312,7 @@
                 <property role="Xl_RC" value="Cannot co-exist with Document in the same model" />
               </node>
             </node>
-            <node concept="1YBJjd" id="hoMN8EUNmH" role="2OEOjV">
+            <node concept="1YBJjd" id="hoMN8EUNmH" role="1urrMF">
               <ref role="1YBMHb" node="hoMN8EQ94Z" resolve="document" />
             </node>
           </node>
