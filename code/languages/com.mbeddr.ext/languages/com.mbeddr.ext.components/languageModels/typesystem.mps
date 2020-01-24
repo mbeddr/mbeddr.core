@@ -2,7 +2,7 @@
 <model ref="r:c480d4b6-a379-41b5-b76a-c94ccc817c4e(com.mbeddr.ext.components.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
@@ -225,11 +225,6 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -255,6 +250,11 @@
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1188811367543" name="jetbrains.mps.lang.typesystem.structure.ComparisonRule" flags="ig" index="3aFulz">
         <child id="1188820750135" name="anotherNode" index="3bfgSz" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <property id="1216127910019" name="applyImmediately" index="ARO6o" />
@@ -714,7 +714,13 @@
       <node concept="3clFbJ" id="36fOCWjG4vL" role="3cqZAp">
         <node concept="3clFbS" id="36fOCWjG4vO" role="3clFbx">
           <node concept="2MkqsV" id="36fOCWjG4KH" role="3cqZAp">
-            <node concept="3Cnw8n" id="36fOCWjG7Yy" role="2OEOjU">
+            <node concept="Xl_RD" id="36fOCWjG4KZ" role="2MkJ7o">
+              <property role="Xl_RC" value="parameters must be synced with runnable" />
+            </node>
+            <node concept="1YBJjd" id="36fOCWjG7Z6" role="1urrMF">
+              <ref role="1YBMHb" node="71UKpntn6GQ" resolve="ot" />
+            </node>
+            <node concept="3Cnw8n" id="36fOCWjG7Yy" role="1urrFz">
               <property role="ARO6o" value="true" />
               <ref role="QpYPw" node="2WRRjDdqhVz" resolve="syncRunnableSignatureWithTrigger" />
               <node concept="3CnSsL" id="36fOCWjG7Yz" role="3Coj4f">
@@ -723,12 +729,6 @@
                   <ref role="1YBMHb" node="71UKpntn6GQ" resolve="ot" />
                 </node>
               </node>
-            </node>
-            <node concept="Xl_RD" id="36fOCWjG4KZ" role="2MkJ7o">
-              <property role="Xl_RC" value="parameters must be synced with runnable" />
-            </node>
-            <node concept="1YBJjd" id="36fOCWjG7Z6" role="2OEOjV">
-              <ref role="1YBMHb" node="71UKpntn6GQ" resolve="ot" />
             </node>
           </node>
         </node>
@@ -774,10 +774,13 @@
             <node concept="Xl_RD" id="71UKpntne3t" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of arguments" />
             </node>
-            <node concept="37vLTw" id="71UKpntne4d" role="2OEOjV">
+            <node concept="2ODE4t" id="5z2tTokeOSm" role="1urrC5">
+              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="37vLTw" id="71UKpntne4d" role="1urrMF">
               <ref role="3cqZAo" node="71UKpntne46" resolve="runnable" />
             </node>
-            <node concept="3Cnw8n" id="2WRRjDdqhW9" role="2OEOjU">
+            <node concept="3Cnw8n" id="2WRRjDdqhW9" role="1urrFz">
               <property role="ARO6o" value="true" />
               <ref role="QpYPw" node="2WRRjDdqhVz" resolve="syncRunnableSignatureWithTrigger" />
               <node concept="3CnSsL" id="2WRRjDdqijG" role="3Coj4f">
@@ -786,9 +789,6 @@
                   <ref role="1YBMHb" node="71UKpntne3p" resolve="ot" />
                 </node>
               </node>
-            </node>
-            <node concept="2ODE4t" id="5z2tTokeOSm" role="2OEWyd">
-              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>
@@ -839,16 +839,6 @@
       <node concept="3clFbJ" id="1CmbRoT9$yW" role="3cqZAp">
         <node concept="3clFbS" id="1CmbRoT9$yZ" role="3clFbx">
           <node concept="2MkqsV" id="1CmbRoT9VL5" role="3cqZAp">
-            <node concept="3Cnw8n" id="1B$MOTJHihD" role="2OEOjU">
-              <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="2WRRjDdqhVz" resolve="syncRunnableSignatureWithTrigger" />
-              <node concept="3CnSsL" id="1B$MOTJHihE" role="3Coj4f">
-                <ref role="QkamJ" node="2WRRjDdqhVA" resolve="trigger" />
-                <node concept="1YBJjd" id="1B$MOTJHihF" role="3CoRuB">
-                  <ref role="1YBMHb" node="71UKpntne3p" resolve="ot" />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs3" id="1CmbRoTa2LK" role="2MkJ7o">
               <node concept="Xl_RD" id="1CmbRoTa2LN" role="3uHU7w">
                 <property role="Xl_RC" value="'" />
@@ -862,11 +852,21 @@
                 </node>
               </node>
             </node>
-            <node concept="37vLTw" id="1CmbRoTa3S3" role="2OEOjV">
+            <node concept="2ODE4t" id="1CmbRoTa4U7" role="1urrC5">
+              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="37vLTw" id="1CmbRoTa3S3" role="1urrMF">
               <ref role="3cqZAo" node="71UKpntne46" resolve="runnable" />
             </node>
-            <node concept="2ODE4t" id="1CmbRoTa4U7" role="2OEWyd">
-              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            <node concept="3Cnw8n" id="1B$MOTJHihD" role="1urrFz">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="2WRRjDdqhVz" resolve="syncRunnableSignatureWithTrigger" />
+              <node concept="3CnSsL" id="1B$MOTJHihE" role="3Coj4f">
+                <ref role="QkamJ" node="2WRRjDdqhVA" resolve="trigger" />
+                <node concept="1YBJjd" id="1B$MOTJHihF" role="3CoRuB">
+                  <ref role="1YBMHb" node="71UKpntne3p" resolve="ot" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1156,9 +1156,6 @@
                               <node concept="3clFbJ" id="C7lj4lZwsw" role="3cqZAp">
                                 <node concept="3clFbS" id="C7lj4lZwsy" role="3clFbx">
                                   <node concept="2MkqsV" id="C7lj4lZyYc" role="3cqZAp">
-                                    <node concept="2GrUjf" id="C7lj4lZEjt" role="2OEOjV">
-                                      <ref role="2Gs0qQ" node="71UKpntoZZ7" resolve="t" />
-                                    </node>
                                     <node concept="3cpWs3" id="C7lj4lZyYA" role="2MkJ7o">
                                       <node concept="Xl_RD" id="C7lj4lZyYB" role="3uHU7w">
                                         <property role="Xl_RC" value=" can only have one implementation in this component" />
@@ -1191,6 +1188,9 @@
                                           </node>
                                         </node>
                                       </node>
+                                    </node>
+                                    <node concept="2GrUjf" id="C7lj4lZEjt" role="1urrMF">
+                                      <ref role="2Gs0qQ" node="71UKpntoZZ7" resolve="t" />
                                     </node>
                                   </node>
                                 </node>
@@ -1276,7 +1276,7 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="2GrUjf" id="71UKpntp00t" role="2OEOjV">
+                            <node concept="2GrUjf" id="71UKpntp00t" role="1urrMF">
                               <ref role="2Gs0qQ" node="71UKpntoZUd" resolve="port" />
                             </node>
                           </node>
@@ -1389,7 +1389,7 @@
             <node concept="Xl_RD" id="7OITQieWcjD" role="2MkJ7o">
               <property role="Xl_RC" value="cannot connect an instance to itself" />
             </node>
-            <node concept="1YBJjd" id="7OITQieWcjE" role="2OEOjV">
+            <node concept="1YBJjd" id="7OITQieWcjE" role="1urrMF">
               <ref role="1YBMHb" node="71UKpntpfzu" resolve="conn" />
             </node>
           </node>
@@ -1431,7 +1431,7 @@
             <node concept="Xl_RD" id="71UKpntpf$9" role="2MkJ7o">
               <property role="Xl_RC" value="source must be a required port" />
             </node>
-            <node concept="2OqwBi" id="wOd6nl5dc$" role="2OEOjV">
+            <node concept="2OqwBi" id="wOd6nl5dc$" role="1urrMF">
               <node concept="1YBJjd" id="wOd6nl5dcz" role="2Oq$k0">
                 <ref role="1YBMHb" node="71UKpntpfzu" resolve="conn" />
               </node>
@@ -1461,7 +1461,7 @@
                   <node concept="Xl_RD" id="wOd6nl5dco" role="2MkJ7o">
                     <property role="Xl_RC" value="target must be a provided port" />
                   </node>
-                  <node concept="2OqwBi" id="wOd6nl5dcH" role="2OEOjV">
+                  <node concept="2OqwBi" id="wOd6nl5dcH" role="1urrMF">
                     <node concept="1YBJjd" id="wOd6nl5dcG" role="2Oq$k0">
                       <ref role="1YBMHb" node="71UKpntpfzu" resolve="conn" />
                     </node>
@@ -1489,9 +1489,6 @@
                   <node concept="3clFbJ" id="9z$8oKZw5v" role="3cqZAp">
                     <node concept="3clFbS" id="9z$8oKZw5w" role="3clFbx">
                       <node concept="2MkqsV" id="9z$8oKZxl1" role="3cqZAp">
-                        <node concept="1YBJjd" id="9z$8oKZxl_" role="2OEOjV">
-                          <ref role="1YBMHb" node="71UKpntpfzu" resolve="conn" />
-                        </node>
                         <node concept="3cpWs3" id="9z$8oKZxln" role="2MkJ7o">
                           <node concept="2OqwBi" id="9z$8oKZxlw" role="3uHU7w">
                             <node concept="2OqwBi" id="9z$8oKZxlr" role="2Oq$k0">
@@ -1529,6 +1526,9 @@
                               <property role="Xl_RC" value=" -&gt; " />
                             </node>
                           </node>
+                        </node>
+                        <node concept="1YBJjd" id="9z$8oKZxl_" role="1urrMF">
+                          <ref role="1YBMHb" node="71UKpntpfzu" resolve="conn" />
                         </node>
                       </node>
                     </node>
@@ -1606,7 +1606,7 @@
                                 <property role="Xl_RC" value="characteristics mismatch: " />
                               </node>
                             </node>
-                            <node concept="1YBJjd" id="1lsyexBObsL" role="2OEOjV">
+                            <node concept="1YBJjd" id="1lsyexBObsL" role="1urrMF">
                               <ref role="1YBMHb" node="71UKpntpfzu" resolve="conn" />
                             </node>
                           </node>
@@ -1685,7 +1685,7 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="2IX5vYSkSgs" role="2OEOjV">
+                            <node concept="2OqwBi" id="2IX5vYSkSgs" role="1urrMF">
                               <node concept="1YBJjd" id="2IX5vYSkSgr" role="2Oq$k0">
                                 <ref role="1YBMHb" node="71UKpntpfzu" resolve="conn" />
                               </node>
@@ -1862,7 +1862,7 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="2ZUGF54kCyK" role="2OEOjV">
+                            <node concept="2OqwBi" id="2ZUGF54kCyK" role="1urrMF">
                               <node concept="1YBJjd" id="2ZUGF54kCyr" role="2Oq$k0">
                                 <ref role="1YBMHb" node="71UKpntpfzu" resolve="conn" />
                               </node>
@@ -1972,7 +1972,7 @@
                             <node concept="Xl_RD" id="5meTu9orL9O" role="2MkJ7o">
                               <property role="Xl_RC" value="this provided port can only be used with one required port" />
                             </node>
-                            <node concept="2OqwBi" id="5meTu9orLaa" role="2OEOjV">
+                            <node concept="2OqwBi" id="5meTu9orLaa" role="1urrMF">
                               <node concept="1YBJjd" id="5meTu9orL9P" role="2Oq$k0">
                                 <ref role="1YBMHb" node="71UKpntpfzu" resolve="conn" />
                               </node>
@@ -2080,7 +2080,7 @@
             <node concept="Xl_RD" id="3PT6Z48L3o_" role="2MkJ7o">
               <property role="Xl_RC" value="cannot instantiate abstract components" />
             </node>
-            <node concept="1YBJjd" id="3PT6Z48LwPb" role="2OEOjV">
+            <node concept="1YBJjd" id="3PT6Z48LwPb" role="1urrMF">
               <ref role="1YBMHb" node="LUz4xAqTZP" resolve="ci" />
             </node>
           </node>
@@ -2285,7 +2285,7 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="1YBJjd" id="2fh5q8VJ077" role="2OEOjV">
+                        <node concept="1YBJjd" id="2fh5q8VJ077" role="1urrMF">
                           <ref role="1YBMHb" node="LUz4xAqTZP" resolve="ci" />
                         </node>
                       </node>
@@ -2339,7 +2339,7 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="1YBJjd" id="2fh5q8VJ09W" role="2OEOjV">
+                          <node concept="1YBJjd" id="2fh5q8VJ09W" role="1urrMF">
                             <ref role="1YBMHb" node="LUz4xAqTZP" resolve="ci" />
                           </node>
                         </node>
@@ -2368,9 +2368,6 @@
                     <node concept="3clFbJ" id="LUz4xAqU0I" role="3cqZAp">
                       <node concept="3clFbS" id="LUz4xAqU0J" role="3clFbx">
                         <node concept="2MkqsV" id="LUz4xAqU1_" role="3cqZAp">
-                          <node concept="2ODE4t" id="7XQHhkHfJ0r" role="2OEWyd">
-                            <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
-                          </node>
                           <node concept="3cpWs3" id="LUz4xAqU1M" role="2MkJ7o">
                             <node concept="3cpWs3" id="3_MZZHruuCG" role="3uHU7B">
                               <node concept="3cpWs3" id="3_MZZHruuCk" role="3uHU7B">
@@ -2409,10 +2406,13 @@
                               <property role="Xl_RC" value=") is not connected" />
                             </node>
                           </node>
-                          <node concept="1YBJjd" id="LUz4xAqU1Q" role="2OEOjV">
+                          <node concept="2ODE4t" id="7XQHhkHfJ0r" role="1urrC5">
+                            <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                          <node concept="1YBJjd" id="LUz4xAqU1Q" role="1urrMF">
                             <ref role="1YBMHb" node="LUz4xAqTZP" resolve="ci" />
                           </node>
-                          <node concept="3Cnw8n" id="9z$8oL1p13" role="2OEOjU">
+                          <node concept="3Cnw8n" id="9z$8oL1p13" role="1urrFz">
                             <ref role="QpYPw" node="9z$8oL1nTE" resolve="addConnectorForMissingPort" />
                             <node concept="3CnSsL" id="9z$8oL1p14" role="3Coj4f">
                               <ref role="QkamJ" node="9z$8oL1oZL" resolve="instance" />
@@ -2532,9 +2532,6 @@
           <node concept="3clFbJ" id="36Bkyc4p1y1" role="3cqZAp">
             <node concept="3clFbS" id="36Bkyc4p1y3" role="3clFbx">
               <node concept="2MkqsV" id="36Bkyc4pcK2" role="3cqZAp">
-                <node concept="1YBJjd" id="36Bkyc4pdOV" role="2OEOjV">
-                  <ref role="1YBMHb" node="LUz4xAqTZP" resolve="ci" />
-                </node>
                 <node concept="3cpWs3" id="36Bkyc4pdqN" role="2MkJ7o">
                   <node concept="3cpWs3" id="36Bkyc4pdqO" role="3uHU7B">
                     <node concept="Xl_RD" id="36Bkyc4pdqP" role="3uHU7B">
@@ -2552,6 +2549,9 @@
                   <node concept="Xl_RD" id="36Bkyc4pdqT" role="3uHU7w">
                     <property role="Xl_RC" value=") is not connected" />
                   </node>
+                </node>
+                <node concept="1YBJjd" id="36Bkyc4pdOV" role="1urrMF">
+                  <ref role="1YBMHb" node="LUz4xAqTZP" resolve="ci" />
                 </node>
               </node>
             </node>
@@ -2858,10 +2858,10 @@
             <node concept="Xl_RD" id="5ak6HMA0tzY" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of arguments" />
             </node>
-            <node concept="1YBJjd" id="18l4N2QwGzD" role="2OEOjV">
+            <node concept="1YBJjd" id="18l4N2QwGzD" role="1urrMF">
               <ref role="1YBMHb" node="18l4N2QwFlz" resolve="irc" />
             </node>
-            <node concept="3Cnw8n" id="6HkC4mqYJC4" role="2OEOjU">
+            <node concept="3Cnw8n" id="6HkC4mqYJC4" role="1urrFz">
               <ref role="QpYPw" node="6HkC4mqYbk_" resolve="addRunnableArguments" />
               <node concept="3CnSsL" id="6HkC4mqYJC5" role="3Coj4f">
                 <ref role="QkamJ" node="6HkC4mqYbkC" resolve="call" />
@@ -3056,11 +3056,11 @@
             <node concept="Xl_RD" id="5HTuIUPD_bw" role="2MkJ7o">
               <property role="Xl_RC" value="query operations cannot take parameters" />
             </node>
-            <node concept="1YBJjd" id="5HTuIUPD_bx" role="2OEOjV">
-              <ref role="1YBMHb" node="5HTuIUPD_aU" resolve="op" />
-            </node>
-            <node concept="2OE7Q9" id="5HTuIUPD_by" role="2OEWyd">
+            <node concept="2OE7Q9" id="5HTuIUPD_by" role="1urrC5">
               <ref role="2OEe5H" to="v7ag:3TmmsQkDmpS" resolve="parameters" />
+            </node>
+            <node concept="1YBJjd" id="5HTuIUPD_bx" role="1urrMF">
+              <ref role="1YBMHb" node="5HTuIUPD_aU" resolve="op" />
             </node>
           </node>
         </node>
@@ -3094,11 +3094,11 @@
                 <node concept="Xl_RD" id="5ak6HMA0t94" role="2MkJ7o">
                   <property role="Xl_RC" value="operation with duplicate name: " />
                 </node>
-                <node concept="1YBJjd" id="3v8JrkPNvjX" role="2OEOjV">
-                  <ref role="1YBMHb" node="5HTuIUPD_aU" resolve="op" />
-                </node>
-                <node concept="2ODE4t" id="5z2tTokeOSd" role="2OEWyd">
+                <node concept="2ODE4t" id="5z2tTokeOSd" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="1YBJjd" id="3v8JrkPNvjX" role="1urrMF">
+                  <ref role="1YBMHb" node="5HTuIUPD_aU" resolve="op" />
                 </node>
               </node>
             </node>
@@ -3309,13 +3309,13 @@
                 <node concept="Xl_RD" id="3xi4v11Xj3a" role="2MkJ7o">
                   <property role="Xl_RC" value="message required in case the protocol fails" />
                 </node>
-                <node concept="1YBJjd" id="3xi4v11Xj3b" role="2OEOjV">
-                  <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
-                </node>
-                <node concept="2ODE4t" id="3xi4v11Xj3g" role="2OEWyd">
+                <node concept="2ODE4t" id="3xi4v11Xj3g" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
                 </node>
-                <node concept="3Cnw8n" id="6IaWKRC96lQ" role="2OEOjU">
+                <node concept="1YBJjd" id="3xi4v11Xj3b" role="1urrMF">
+                  <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
+                </node>
+                <node concept="3Cnw8n" id="6IaWKRC96lQ" role="1urrFz">
                   <ref role="QpYPw" node="6IaWKRC7UVx" resolve="createNewMessageTableForProtocolErrors" />
                   <node concept="3CnSsL" id="6IaWKRC96$B" role="3Coj4f">
                     <ref role="QkamJ" node="6IaWKRC7VdS" resolve="csIf" />
@@ -3334,11 +3334,11 @@
                 <node concept="Xl_RD" id="34x64NyRg_g" role="2MkJ7o">
                   <property role="Xl_RC" value="if interface is exported, the protocol error message list must be experted as well" />
                 </node>
-                <node concept="1YBJjd" id="34x64NyRg_h" role="2OEOjV">
-                  <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
-                </node>
-                <node concept="2ODE4t" id="34x64NyRg_i" role="2OEWyd">
+                <node concept="2ODE4t" id="34x64NyRg_i" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="1YBJjd" id="34x64NyRg_h" role="1urrMF">
+                  <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
                 </node>
               </node>
             </node>
@@ -3373,7 +3373,16 @@
               <node concept="3clFbJ" id="3xi4v11WKQ0" role="3cqZAp">
                 <node concept="3clFbS" id="3xi4v11WKQ1" role="3clFbx">
                   <node concept="2MkqsV" id="3xi4v11WKPE" role="3cqZAp">
-                    <node concept="3Cnw8n" id="69lKCLH_oFP" role="2OEOjU">
+                    <node concept="Xl_RD" id="3xi4v11WKPH" role="2MkJ7o">
+                      <property role="Xl_RC" value="exactly two int8_t arguments needed (operation ID and protocol ID)" />
+                    </node>
+                    <node concept="2OE7Q9" id="3xi4v11WKPJ" role="1urrC5">
+                      <ref role="2OEe5H" to="v7ag:5oFMniD99CS" resolve="protocolErrorMsgDef" />
+                    </node>
+                    <node concept="1YBJjd" id="3xi4v11Xj2f" role="1urrMF">
+                      <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
+                    </node>
+                    <node concept="3Cnw8n" id="69lKCLH_oFP" role="1urrFz">
                       <ref role="QpYPw" node="69lKCLH_oAK" resolve="fixPPCMessage" />
                       <node concept="3CnSsL" id="69lKCLH_oFQ" role="3Coj4f">
                         <ref role="QkamJ" node="69lKCLH_oAN" resolve="md" />
@@ -3386,15 +3395,6 @@
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="Xl_RD" id="3xi4v11WKPH" role="2MkJ7o">
-                      <property role="Xl_RC" value="exactly two int8_t arguments needed (operation ID and protocol ID)" />
-                    </node>
-                    <node concept="1YBJjd" id="3xi4v11Xj2f" role="2OEOjV">
-                      <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
-                    </node>
-                    <node concept="2OE7Q9" id="3xi4v11WKPJ" role="2OEWyd">
-                      <ref role="2OEe5H" to="v7ag:5oFMniD99CS" resolve="protocolErrorMsgDef" />
                     </node>
                   </node>
                 </node>
@@ -3468,7 +3468,16 @@
             <node concept="9aQIb" id="3xi4v11WKPT" role="9aQIa">
               <node concept="3clFbS" id="3xi4v11WKPU" role="9aQI4">
                 <node concept="2MkqsV" id="5S6wb2j5vOW" role="3cqZAp">
-                  <node concept="3Cnw8n" id="69lKCLH_oFK" role="2OEOjU">
+                  <node concept="Xl_RD" id="5S6wb2j5vOX" role="2MkJ7o">
+                    <property role="Xl_RC" value="exactly two int8_t arguments needed (operation ID and protocol ID)" />
+                  </node>
+                  <node concept="2OE7Q9" id="5S6wb2j5vOZ" role="1urrC5">
+                    <ref role="2OEe5H" to="v7ag:5oFMniD99CS" resolve="protocolErrorMsgDef" />
+                  </node>
+                  <node concept="1YBJjd" id="5S6wb2j5vOY" role="1urrMF">
+                    <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
+                  </node>
+                  <node concept="3Cnw8n" id="69lKCLH_oFK" role="1urrFz">
                     <ref role="QpYPw" node="69lKCLH_oAK" resolve="fixPPCMessage" />
                     <node concept="3CnSsL" id="69lKCLH_oFL" role="3Coj4f">
                       <ref role="QkamJ" node="69lKCLH_oAN" resolve="md" />
@@ -3481,15 +3490,6 @@
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="Xl_RD" id="5S6wb2j5vOX" role="2MkJ7o">
-                    <property role="Xl_RC" value="exactly two int8_t arguments needed (operation ID and protocol ID)" />
-                  </node>
-                  <node concept="1YBJjd" id="5S6wb2j5vOY" role="2OEOjV">
-                    <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
-                  </node>
-                  <node concept="2OE7Q9" id="5S6wb2j5vOZ" role="2OEWyd">
-                    <ref role="2OEe5H" to="v7ag:5oFMniD99CS" resolve="protocolErrorMsgDef" />
                   </node>
                 </node>
               </node>
@@ -3559,7 +3559,16 @@
             </node>
             <node concept="3clFbS" id="2dn8_TmKtQJ" role="3clFbx">
               <node concept="2MkqsV" id="2dn8_TmKtQK" role="3cqZAp">
-                <node concept="3Cnw8n" id="6xLvLC01Ra1" role="2OEOjU">
+                <node concept="Xl_RD" id="2dn8_TmKtQL" role="2MkJ7o">
+                  <property role="Xl_RC" value="message required in case the contract fails" />
+                </node>
+                <node concept="2ODE4t" id="2dn8_TmKtQN" role="1urrC5">
+                  <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="1YBJjd" id="2dn8_TmKtQM" role="1urrMF">
+                  <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
+                </node>
+                <node concept="3Cnw8n" id="6xLvLC01Ra1" role="1urrFz">
                   <ref role="QpYPw" node="6xLvLC01PjB" resolve="createNewMessageTableForPrePostErrors" />
                   <node concept="3CnSsL" id="6xLvLC01RiO" role="3Coj4f">
                     <ref role="QkamJ" node="6xLvLC01PjC" resolve="csIf" />
@@ -3567,15 +3576,6 @@
                       <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
                     </node>
                   </node>
-                </node>
-                <node concept="Xl_RD" id="2dn8_TmKtQL" role="2MkJ7o">
-                  <property role="Xl_RC" value="message required in case the contract fails" />
-                </node>
-                <node concept="1YBJjd" id="2dn8_TmKtQM" role="2OEOjV">
-                  <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
-                </node>
-                <node concept="2ODE4t" id="2dn8_TmKtQN" role="2OEWyd">
-                  <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
               <node concept="3cpWs6" id="2dn8_TmKtQO" role="3cqZAp" />
@@ -3587,11 +3587,11 @@
                 <node concept="Xl_RD" id="34x64NyRg_n" role="2MkJ7o">
                   <property role="Xl_RC" value="if interface is exported, the contract error message list must be experted as well" />
                 </node>
-                <node concept="1YBJjd" id="34x64NyRg_o" role="2OEOjV">
-                  <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
-                </node>
-                <node concept="2ODE4t" id="34x64NyRg_p" role="2OEWyd">
+                <node concept="2ODE4t" id="34x64NyRg_p" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="1YBJjd" id="34x64NyRg_o" role="1urrMF">
+                  <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
                 </node>
               </node>
             </node>
@@ -3626,7 +3626,16 @@
               <node concept="3clFbJ" id="2dn8_TmKtQR" role="3cqZAp">
                 <node concept="3clFbS" id="2dn8_TmKtQS" role="3clFbx">
                   <node concept="2MkqsV" id="2dn8_TmKtQT" role="3cqZAp">
-                    <node concept="3Cnw8n" id="69lKCLH_oFU" role="2OEOjU">
+                    <node concept="Xl_RD" id="2dn8_TmKtQU" role="2MkJ7o">
+                      <property role="Xl_RC" value="exactly two int8_t arguments needed (operation ID and prePost ID)" />
+                    </node>
+                    <node concept="2OE7Q9" id="2dn8_TmKtQW" role="1urrC5">
+                      <ref role="2OEe5H" to="v7ag:5oFMniD99CS" resolve="protocolErrorMsgDef" />
+                    </node>
+                    <node concept="1YBJjd" id="2dn8_TmKtQV" role="1urrMF">
+                      <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
+                    </node>
+                    <node concept="3Cnw8n" id="69lKCLH_oFU" role="1urrFz">
                       <ref role="QpYPw" node="69lKCLH_oAK" resolve="fixPPCMessage" />
                       <node concept="3CnSsL" id="69lKCLH_oFV" role="3Coj4f">
                         <ref role="QkamJ" node="69lKCLH_oAN" resolve="md" />
@@ -3639,15 +3648,6 @@
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="Xl_RD" id="2dn8_TmKtQU" role="2MkJ7o">
-                      <property role="Xl_RC" value="exactly two int8_t arguments needed (operation ID and prePost ID)" />
-                    </node>
-                    <node concept="1YBJjd" id="2dn8_TmKtQV" role="2OEOjV">
-                      <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
-                    </node>
-                    <node concept="2OE7Q9" id="2dn8_TmKtQW" role="2OEWyd">
-                      <ref role="2OEe5H" to="v7ag:5oFMniD99CS" resolve="protocolErrorMsgDef" />
                     </node>
                   </node>
                 </node>
@@ -3721,7 +3721,16 @@
             <node concept="9aQIb" id="2dn8_TmKtRp" role="9aQIa">
               <node concept="3clFbS" id="2dn8_TmKtRq" role="9aQI4">
                 <node concept="2MkqsV" id="2dn8_TmKtRr" role="3cqZAp">
-                  <node concept="3Cnw8n" id="69lKCLH_oAQ" role="2OEOjU">
+                  <node concept="Xl_RD" id="2dn8_TmKtRs" role="2MkJ7o">
+                    <property role="Xl_RC" value="exactly two int8_t arguments needed (operation ID and prePost ID)" />
+                  </node>
+                  <node concept="2OE7Q9" id="2dn8_TmKtRu" role="1urrC5">
+                    <ref role="2OEe5H" to="v7ag:5oFMniD99CS" resolve="protocolErrorMsgDef" />
+                  </node>
+                  <node concept="1YBJjd" id="2dn8_TmKtRt" role="1urrMF">
+                    <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
+                  </node>
+                  <node concept="3Cnw8n" id="69lKCLH_oAQ" role="1urrFz">
                     <ref role="QpYPw" node="69lKCLH_oAK" resolve="fixPPCMessage" />
                     <node concept="3CnSsL" id="69lKCLH_oAR" role="3Coj4f">
                       <ref role="QkamJ" node="69lKCLH_oAN" resolve="md" />
@@ -3734,15 +3743,6 @@
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="Xl_RD" id="2dn8_TmKtRs" role="2MkJ7o">
-                    <property role="Xl_RC" value="exactly two int8_t arguments needed (operation ID and prePost ID)" />
-                  </node>
-                  <node concept="1YBJjd" id="2dn8_TmKtRt" role="2OEOjV">
-                    <ref role="1YBMHb" node="3xi4v11Xj1d" resolve="csi" />
-                  </node>
-                  <node concept="2OE7Q9" id="2dn8_TmKtRu" role="2OEWyd">
-                    <ref role="2OEe5H" to="v7ag:5oFMniD99CS" resolve="protocolErrorMsgDef" />
                   </node>
                 </node>
               </node>
@@ -3814,11 +3814,11 @@
             <node concept="Xl_RD" id="3xi4v11W_JL" role="2MkJ7o">
               <property role="Xl_RC" value="any cannot be used as target" />
             </node>
-            <node concept="1YBJjd" id="3xi4v11Xj1j" role="2OEOjV">
-              <ref role="1YBMHb" node="3xi4v11Xj1h" resolve="ps" />
-            </node>
-            <node concept="2OE7Q9" id="3xi4v11W_JN" role="2OEWyd">
+            <node concept="2OE7Q9" id="3xi4v11W_JN" role="1urrC5">
               <ref role="2OEe5H" to="v7ag:5oFMniD8XPH" resolve="to" />
+            </node>
+            <node concept="1YBJjd" id="3xi4v11Xj1j" role="1urrMF">
+              <ref role="1YBMHb" node="3xi4v11Xj1h" resolve="ps" />
             </node>
           </node>
         </node>
@@ -3844,7 +3844,7 @@
             <node concept="Xl_RD" id="1QyYWQT9w6w" role="2MkJ7o">
               <property role="Xl_RC" value="cannot use 'new' in the from part of a protocol" />
             </node>
-            <node concept="2OqwBi" id="1QyYWQT9M2u" role="2OEOjV">
+            <node concept="2OqwBi" id="1QyYWQT9M2u" role="1urrMF">
               <node concept="1YBJjd" id="1QyYWQT9M29" role="2Oq$k0">
                 <ref role="1YBMHb" node="3xi4v11Xj1h" resolve="ps" />
               </node>
@@ -3880,11 +3880,11 @@
             <node concept="Xl_RD" id="3xi4v11Y2jU" role="2MkJ7o">
               <property role="Xl_RC" value="cannot have several specs with the same from state" />
             </node>
-            <node concept="1YBJjd" id="3xi4v11Y2jV" role="2OEOjV">
-              <ref role="1YBMHb" node="3xi4v11Xj1h" resolve="ps" />
-            </node>
-            <node concept="2OE7Q9" id="3xi4v11Y2jW" role="2OEWyd">
+            <node concept="2OE7Q9" id="3xi4v11Y2jW" role="1urrC5">
               <ref role="2OEe5H" to="v7ag:5oFMniD8XPG" resolve="from" />
+            </node>
+            <node concept="1YBJjd" id="3xi4v11Y2jV" role="1urrMF">
+              <ref role="1YBMHb" node="3xi4v11Xj1h" resolve="ps" />
             </node>
           </node>
         </node>
@@ -3984,11 +3984,11 @@
             <node concept="Xl_RD" id="F_QT7XsuBR" role="2MkJ7o">
               <property role="Xl_RC" value="init fields cannot be initialized; they are set upon instantiation" />
             </node>
-            <node concept="1YBJjd" id="F_QT7XsuBS" role="2OEOjV">
-              <ref role="1YBMHb" node="F_QT7XsuBq" resolve="f" />
-            </node>
-            <node concept="2ODE4t" id="F_QT7XsuBT" role="2OEWyd">
+            <node concept="2ODE4t" id="F_QT7XsuBT" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="1YBJjd" id="F_QT7XsuBS" role="1urrMF">
+              <ref role="1YBMHb" node="F_QT7XsuBq" resolve="f" />
             </node>
           </node>
         </node>
@@ -3999,7 +3999,7 @@
             <node concept="Xl_RD" id="67hg1wLIhsC" role="2MkJ7o">
               <property role="Xl_RC" value="init fields cannot be const" />
             </node>
-            <node concept="1YBJjd" id="67hg1wLIhuu" role="2OEOjV">
+            <node concept="1YBJjd" id="67hg1wLIhuu" role="1urrMF">
               <ref role="1YBMHb" node="F_QT7XsuBq" resolve="f" />
             </node>
           </node>
@@ -4109,13 +4109,13 @@
                     <property role="Xl_RC" value="no initializer found for init field " />
                   </node>
                 </node>
-                <node concept="1YBJjd" id="F_QT7XsuG2" role="2OEOjV">
-                  <ref role="1YBMHb" node="F_QT7XsuF6" resolve="ci" />
-                </node>
-                <node concept="2ODE4t" id="F_QT7XsuG7" role="2OEWyd">
+                <node concept="2ODE4t" id="F_QT7XsuG7" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
                 </node>
-                <node concept="3Cnw8n" id="6hD5iiwansD" role="2OEOjU">
+                <node concept="1YBJjd" id="F_QT7XsuG2" role="1urrMF">
+                  <ref role="1YBMHb" node="F_QT7XsuF6" resolve="ci" />
+                </node>
+                <node concept="3Cnw8n" id="6hD5iiwansD" role="1urrFz">
                   <ref role="QpYPw" node="6hD5iiwansz" resolve="fix_ComponentInstanceForInitValues" />
                   <node concept="3CnSsL" id="6hD5iiwansE" role="3Coj4f">
                     <ref role="QkamJ" node="6hD5iiwansA" resolve="instance" />
@@ -4141,11 +4141,11 @@
             <node concept="Xl_RD" id="F_QT7XsuGI" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of (or duplicate) initializers" />
             </node>
-            <node concept="1YBJjd" id="F_QT7XsuGJ" role="2OEOjV">
-              <ref role="1YBMHb" node="F_QT7XsuF6" resolve="ci" />
-            </node>
-            <node concept="2ODE4t" id="F_QT7XsuGK" role="2OEWyd">
+            <node concept="2ODE4t" id="F_QT7XsuGK" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="1YBJjd" id="F_QT7XsuGJ" role="1urrMF">
+              <ref role="1YBMHb" node="F_QT7XsuF6" resolve="ci" />
             </node>
           </node>
         </node>
@@ -4533,10 +4533,10 @@
                 <property role="Xl_RC" value="import required for " />
               </node>
             </node>
-            <node concept="1YBJjd" id="5aaBiRozqBj" role="2OEOjV">
+            <node concept="1YBJjd" id="5aaBiRozqBj" role="1urrMF">
               <ref role="1YBMHb" node="5aaBiRozqAz" resolve="pare" />
             </node>
-            <node concept="3Cnw8n" id="5aaBiRozqB1" role="2OEOjU">
+            <node concept="3Cnw8n" id="5aaBiRozqB1" role="1urrFz">
               <property role="ARO6o" value="true" />
               <ref role="QpYPw" node="5aaBiRoyQOq" resolve="addNecessaryImport" />
               <node concept="3CnSsL" id="5aaBiRozqB2" role="3Coj4f">
@@ -4708,7 +4708,7 @@
                         <node concept="Xl_RD" id="6A4xWqfTfvI" role="2MkJ7o">
                           <property role="Xl_RC" value="duplicate trigger - no two runnables can be triggered by the same trigger" />
                         </node>
-                        <node concept="2OqwBi" id="6A4xWqfTfw4" role="2OEOjV">
+                        <node concept="2OqwBi" id="6A4xWqfTfw4" role="1urrMF">
                           <node concept="2GrUjf" id="6A4xWqfTfvJ" role="2Oq$k0">
                             <ref role="2Gs0qQ" node="6A4xWqfTbMp" resolve="r" />
                           </node>
@@ -4769,11 +4769,11 @@
                 <node concept="Xl_RD" id="57eqSrvwmZi" role="a7wSD">
                   <property role="Xl_RC" value="no initialization found for this instance configuration in current model" />
                 </node>
-                <node concept="1YBJjd" id="57eqSrvwmZj" role="2OEOjV">
-                  <ref role="1YBMHb" node="57eqSrvw6ie" resolve="ic" />
-                </node>
-                <node concept="2ODE4t" id="57eqSrvwmZr" role="2OEWyd">
+                <node concept="2ODE4t" id="57eqSrvwmZr" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="1YBJjd" id="57eqSrvwmZj" role="1urrMF">
+                  <ref role="1YBMHb" node="57eqSrvw6ie" resolve="ic" />
                 </node>
               </node>
             </node>
@@ -4904,11 +4904,11 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2GrUjf" id="5Xnv3$QBd$U" role="2OEOjV">
-                      <ref role="2Gs0qQ" node="5Xnv3$QBdxj" resolve="i" />
-                    </node>
-                    <node concept="2ODE4t" id="5Xnv3$QBd$X" role="2OEWyd">
+                    <node concept="2ODE4t" id="5Xnv3$QBd$X" role="1urrC5">
                       <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                    <node concept="2GrUjf" id="5Xnv3$QBd$U" role="1urrMF">
+                      <ref role="2Gs0qQ" node="5Xnv3$QBdxj" resolve="i" />
                     </node>
                   </node>
                 </node>
@@ -4965,7 +4965,7 @@
                 <node concept="Xl_RD" id="3PT6Z48Islv" role="2MkJ7o">
                   <property role="Xl_RC" value="inline runnables must be internal (i.e. have no trigger) or triggered by an operation" />
                 </node>
-                <node concept="2OqwBi" id="3PT6Z48IslP" role="2OEOjV">
+                <node concept="2OqwBi" id="3PT6Z48IslP" role="1urrMF">
                   <node concept="1YBJjd" id="3PT6Z48Islw" role="2Oq$k0">
                     <ref role="1YBMHb" node="3PT6Z48Isf3" resolve="r" />
                   </node>
@@ -5003,11 +5003,11 @@
                 <node concept="Xl_RD" id="5basnX2lS$D" role="2MkJ7o">
                   <property role="Xl_RC" value="this kind of trigger does not support abstract runnables" />
                 </node>
-                <node concept="1YBJjd" id="5basnX2lSKz" role="2OEOjV">
-                  <ref role="1YBMHb" node="3PT6Z48Isf3" resolve="r" />
-                </node>
-                <node concept="2ODE4t" id="5basnX2lSOd" role="2OEWyd">
+                <node concept="2ODE4t" id="5basnX2lSOd" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="1YBJjd" id="5basnX2lSKz" role="1urrMF">
+                  <ref role="1YBMHb" node="3PT6Z48Isf3" resolve="r" />
                 </node>
               </node>
             </node>
@@ -5054,7 +5054,7 @@
                 <node concept="Xl_RD" id="3PT6Z48KUl7" role="2MkJ7o">
                   <property role="Xl_RC" value="abstract runnables cannot be inline" />
                 </node>
-                <node concept="1YBJjd" id="3PT6Z48KUl8" role="2OEOjV">
+                <node concept="1YBJjd" id="3PT6Z48KUl8" role="1urrMF">
                   <ref role="1YBMHb" node="3PT6Z48Isf3" resolve="r" />
                 </node>
               </node>
@@ -5071,7 +5071,7 @@
                 <node concept="Xl_RD" id="3PT6Z48LOBm" role="2MkJ7o">
                   <property role="Xl_RC" value="only abstract runnables can be implemented" />
                 </node>
-                <node concept="2OqwBi" id="3PT6Z48LOBG" role="2OEOjV">
+                <node concept="2OqwBi" id="3PT6Z48LOBG" role="1urrMF">
                   <node concept="1YBJjd" id="3PT6Z48LOBn" role="2Oq$k0">
                     <ref role="1YBMHb" node="3PT6Z48Isf3" resolve="r" />
                   </node>
@@ -5108,7 +5108,7 @@
                 <node concept="Xl_RD" id="3PT6Z48LOCJ" role="2MkJ7o">
                   <property role="Xl_RC" value="runnables that implement an abstract runnable must be internal (i.e. no trigger)" />
                 </node>
-                <node concept="2OqwBi" id="3PT6Z48LOD5" role="2OEOjV">
+                <node concept="2OqwBi" id="3PT6Z48LOD5" role="1urrMF">
                   <node concept="1YBJjd" id="3PT6Z48LOCK" role="2Oq$k0">
                     <ref role="1YBMHb" node="3PT6Z48Isf3" resolve="r" />
                   </node>
@@ -5136,7 +5136,7 @@
                 <node concept="Xl_RD" id="3PT6Z48LODK" role="2MkJ7o">
                   <property role="Xl_RC" value="abstract runnables cannot implement other abstract runnables" />
                 </node>
-                <node concept="1YBJjd" id="3PT6Z48LODL" role="2OEOjV">
+                <node concept="1YBJjd" id="3PT6Z48LODL" role="1urrMF">
                   <ref role="1YBMHb" node="3PT6Z48Isf3" resolve="r" />
                 </node>
               </node>
@@ -5218,7 +5218,7 @@
                       <node concept="Xl_RD" id="3PT6Z48IMD_" role="a7wSD">
                         <property role="Xl_RC" value="this expression is not idempotent and may be evaluated more than once by the inlined runnable " />
                       </node>
-                      <node concept="37vLTw" id="3PT6Z48IMDA" role="2OEOjV">
+                      <node concept="37vLTw" id="3PT6Z48IMDA" role="1urrMF">
                         <ref role="3cqZAo" node="3PT6Z48IMCZ" resolve="it" />
                       </node>
                     </node>
@@ -5427,10 +5427,10 @@
                 <node concept="Xl_RD" id="3PT6Z48McGR" role="2MkJ7o">
                   <property role="Xl_RC" value="signature out of sync" />
                 </node>
-                <node concept="1YBJjd" id="3PT6Z48McGS" role="2OEOjV">
+                <node concept="1YBJjd" id="3PT6Z48McGS" role="1urrMF">
                   <ref role="1YBMHb" node="3PT6Z48McKd" resolve="function" />
                 </node>
-                <node concept="3Cnw8n" id="3PT6Z48McSJ" role="2OEOjU">
+                <node concept="3Cnw8n" id="3PT6Z48McSJ" role="1urrFz">
                   <property role="ARO6o" value="true" />
                   <ref role="QpYPw" node="3PT6Z48McSl" resolve="syncRunnableSignatureWithImplementedMethod" />
                   <node concept="3CnSsL" id="3PT6Z48McSK" role="3Coj4f">
@@ -5645,10 +5645,10 @@
                           <node concept="Xl_RD" id="62LQjF07GBs" role="2MkJ7o">
                             <property role="Xl_RC" value="signature out of sync" />
                           </node>
-                          <node concept="1YBJjd" id="62LQjF07GCp" role="2OEOjV">
+                          <node concept="1YBJjd" id="62LQjF07GCp" role="1urrMF">
                             <ref role="1YBMHb" node="3PT6Z48McKd" resolve="function" />
                           </node>
-                          <node concept="3Cnw8n" id="62LQjF0aiuw" role="2OEOjU">
+                          <node concept="3Cnw8n" id="62LQjF0aiuw" role="1urrFz">
                             <property role="ARO6o" value="true" />
                             <ref role="QpYPw" node="3PT6Z48McSl" resolve="syncRunnableSignatureWithImplementedMethod" />
                             <node concept="3CnSsL" id="62LQjF0aiQN" role="3Coj4f">
@@ -5679,7 +5679,13 @@
                     <node concept="3clFbJ" id="3PT6Z48McP_" role="3cqZAp">
                       <node concept="3clFbS" id="3PT6Z48McPA" role="3clFbx">
                         <node concept="2MkqsV" id="3PT6Z48McSg" role="3cqZAp">
-                          <node concept="3Cnw8n" id="3PT6Z48McST" role="2OEOjU">
+                          <node concept="Xl_RD" id="3PT6Z48McSj" role="2MkJ7o">
+                            <property role="Xl_RC" value="signature out of sync" />
+                          </node>
+                          <node concept="2GrUjf" id="3PT6Z48McSk" role="1urrMF">
+                            <ref role="2Gs0qQ" node="3PT6Z48McGY" resolve="concreteArgument" />
+                          </node>
+                          <node concept="3Cnw8n" id="3PT6Z48McST" role="1urrFz">
                             <property role="ARO6o" value="true" />
                             <ref role="QpYPw" node="3PT6Z48McSl" resolve="syncRunnableSignatureWithImplementedMethod" />
                             <node concept="3CnSsL" id="3PT6Z48McSU" role="3Coj4f">
@@ -5694,12 +5700,6 @@
                                 <ref role="3cqZAo" node="62LQjF0aY1u" resolve="prototype" />
                               </node>
                             </node>
-                          </node>
-                          <node concept="Xl_RD" id="3PT6Z48McSj" role="2MkJ7o">
-                            <property role="Xl_RC" value="signature out of sync" />
-                          </node>
-                          <node concept="2GrUjf" id="3PT6Z48McSk" role="2OEOjV">
-                            <ref role="2Gs0qQ" node="3PT6Z48McGY" resolve="concreteArgument" />
                           </node>
                         </node>
                       </node>
@@ -6061,7 +6061,7 @@
             <node concept="Xl_RD" id="6hS8P3pzeOM" role="2MkJ7o">
               <property role="Xl_RC" value="can only implement a particular abstract runnable once per component" />
             </node>
-            <node concept="1YBJjd" id="6hS8P3pzeON" role="2OEOjV">
+            <node concept="1YBJjd" id="6hS8P3pzeON" role="1urrMF">
               <ref role="1YBMHb" node="6hS8P3pzeK2" resolve="irr" />
             </node>
           </node>
@@ -6402,7 +6402,7 @@
             <node concept="Xl_RD" id="2mhTzLJfxLY" role="2MkJ7o">
               <property role="Xl_RC" value="multiple operation calls are only supported for operations returning void" />
             </node>
-            <node concept="1YBJjd" id="2ZUGF54k3hU" role="2OEOjV">
+            <node concept="1YBJjd" id="2ZUGF54k3hU" role="1urrMF">
               <ref role="1YBMHb" node="2ZUGF54k34M" resolve="requiredPortOpCallExpr" />
             </node>
           </node>
@@ -6452,16 +6452,16 @@
           <node concept="3clFbJ" id="4AGl5dzxiWr" role="3cqZAp">
             <node concept="3clFbS" id="4AGl5dzxiWt" role="3clFbx">
               <node concept="2MkqsV" id="ocEBR5sqpd" role="3cqZAp">
-                <node concept="2OqwBi" id="4zcsoWjOiP$" role="2OEOjV">
+                <node concept="Xl_RD" id="ocEBR5sqqH" role="2MkJ7o">
+                  <property role="Xl_RC" value="access to an optional port must happen inside a 'when connected' statement for that port" />
+                </node>
+                <node concept="2OqwBi" id="4zcsoWjOiP$" role="1urrMF">
                   <node concept="1YBJjd" id="ocEBR5sqp$" role="2Oq$k0">
                     <ref role="1YBMHb" node="2ZUGF54k34M" resolve="requiredPortOpCallExpr" />
                   </node>
                   <node concept="3TrEf2" id="4zcsoWjOklm" role="2OqNvi">
                     <ref role="3Tt5mk" to="v7ag:pTHqv6KWwa" resolve="port" />
                   </node>
-                </node>
-                <node concept="Xl_RD" id="ocEBR5sqqH" role="2MkJ7o">
-                  <property role="Xl_RC" value="access to an optional port must happen inside a 'when connected' statement for that port" />
                 </node>
               </node>
             </node>
@@ -6527,7 +6527,7 @@
             <node concept="Xl_RD" id="2fh5q8VHAas" role="2MkJ7o">
               <property role="Xl_RC" value="no upper bound configured" />
             </node>
-            <node concept="1YBJjd" id="2fh5q8VHAau" role="2OEOjV">
+            <node concept="1YBJjd" id="2fh5q8VHAau" role="1urrMF">
               <ref role="1YBMHb" node="2ZUGF54knMz" resolve="cardinality" />
             </node>
           </node>
@@ -6549,10 +6549,10 @@
               <node concept="Xl_RD" id="2fh5q8VHAan" role="2MkJ7o">
                 <property role="Xl_RC" value="no lower bound configured" />
               </node>
-              <node concept="1YBJjd" id="2fh5q8VHAap" role="2OEOjV">
+              <node concept="1YBJjd" id="2fh5q8VHAap" role="1urrMF">
                 <ref role="1YBMHb" node="2ZUGF54knMz" resolve="cardinality" />
               </node>
-              <node concept="3Cnw8n" id="2fh5q8VI30s" role="2OEOjU">
+              <node concept="3Cnw8n" id="2fh5q8VI30s" role="1urrFz">
                 <property role="ARO6o" value="true" />
                 <ref role="QpYPw" node="2rnvR939tzi" resolve="setLowerBoundForPortCardinality" />
                 <node concept="3CnSsL" id="2fh5q8VInnO" role="3Coj4f">
@@ -6582,7 +6582,7 @@
               <node concept="Xl_RD" id="2ofiXe_s$ZZ" role="2MkJ7o">
                 <property role="Xl_RC" value="upper bound must be statically evaluatable" />
               </node>
-              <node concept="2OqwBi" id="2rnvR93av2v" role="2OEOjV">
+              <node concept="2OqwBi" id="2rnvR93av2v" role="1urrMF">
                 <node concept="1YBJjd" id="2ofiXe_s_00" role="2Oq$k0">
                   <ref role="1YBMHb" node="2ZUGF54knMz" resolve="cardinality" />
                 </node>
@@ -6614,7 +6614,7 @@
               <node concept="Xl_RD" id="2rnvR93av1I" role="2MkJ7o">
                 <property role="Xl_RC" value="lower bound must be statically evaluatable" />
               </node>
-              <node concept="2OqwBi" id="2rnvR93av24" role="2OEOjV">
+              <node concept="2OqwBi" id="2rnvR93av24" role="1urrMF">
                 <node concept="1YBJjd" id="2rnvR93av1J" role="2Oq$k0">
                   <ref role="1YBMHb" node="2ZUGF54knMz" resolve="cardinality" />
                 </node>
@@ -6646,7 +6646,7 @@
               <node concept="Xl_RD" id="2fh5q8VJnhh" role="2MkJ7o">
                 <property role="Xl_RC" value="cardinality must be &gt;= 2" />
               </node>
-              <node concept="2OqwBi" id="2fh5q8VJnhG" role="2OEOjV">
+              <node concept="2OqwBi" id="2fh5q8VJnhG" role="1urrMF">
                 <node concept="1YBJjd" id="2fh5q8VJnhi" role="2Oq$k0">
                   <ref role="1YBMHb" node="2ZUGF54knMz" resolve="cardinality" />
                 </node>
@@ -6676,7 +6676,7 @@
               <node concept="Xl_RD" id="2fh5q8VJnhQ" role="2MkJ7o">
                 <property role="Xl_RC" value="lower bound must be &gt;= 0" />
               </node>
-              <node concept="2OqwBi" id="2fh5q8VJnhR" role="2OEOjV">
+              <node concept="2OqwBi" id="2fh5q8VJnhR" role="1urrMF">
                 <node concept="1YBJjd" id="2fh5q8VJnhS" role="2Oq$k0">
                   <ref role="1YBMHb" node="2ZUGF54knMz" resolve="cardinality" />
                 </node>
@@ -6706,7 +6706,7 @@
               <node concept="Xl_RD" id="2fh5q8VJq3q" role="2MkJ7o">
                 <property role="Xl_RC" value="lower bound must be &lt;= upper bound" />
               </node>
-              <node concept="1YBJjd" id="2fh5q8VJq3s" role="2OEOjV">
+              <node concept="1YBJjd" id="2fh5q8VJq3s" role="1urrMF">
                 <ref role="1YBMHb" node="2ZUGF54knMz" resolve="cardinality" />
               </node>
             </node>
@@ -6865,7 +6865,7 @@
             <node concept="Xl_RD" id="6hD5iiwauAS" role="2MkJ7o">
               <property role="Xl_RC" value="references to fields can only be used inside runnables (use an 'on init' runnable for field initialization" />
             </node>
-            <node concept="1YBJjd" id="6hD5iiwauAT" role="2OEOjV">
+            <node concept="1YBJjd" id="6hD5iiwauAT" role="1urrMF">
               <ref role="1YBMHb" node="6hD5iiwau_T" resolve="fr" />
             </node>
           </node>
@@ -6900,7 +6900,7 @@
                 <node concept="Xl_RD" id="1ijJyTDpV8U" role="2MkJ7o">
                   <property role="Xl_RC" value="port adapter is not reconnectable" />
                 </node>
-                <node concept="2OqwBi" id="1ijJyTDpV9g" role="2OEOjV">
+                <node concept="2OqwBi" id="1ijJyTDpV9g" role="1urrMF">
                   <node concept="1YBJjd" id="1ijJyTDpV8V" role="2Oq$k0">
                     <ref role="1YBMHb" node="1ijJyTDpUyf" resolve="ras" />
                   </node>
@@ -6937,11 +6937,11 @@
                 <node concept="Xl_RD" id="1ijJyTDqJfW" role="2MkJ7o">
                   <property role="Xl_RC" value="can only reconnect to ports with the same interface" />
                 </node>
-                <node concept="1YBJjd" id="1ijJyTDqJfX" role="2OEOjV">
-                  <ref role="1YBMHb" node="1ijJyTDpUyf" resolve="ras" />
-                </node>
-                <node concept="2OE7Q9" id="1ijJyTDqJgr" role="2OEWyd">
+                <node concept="2OE7Q9" id="1ijJyTDqJgr" role="1urrC5">
                   <ref role="2OEe5H" to="v7ag:1ijJyTDqygI" resolve="port" />
+                </node>
+                <node concept="1YBJjd" id="1ijJyTDqJfX" role="1urrMF">
+                  <ref role="1YBMHb" node="1ijJyTDpUyf" resolve="ras" />
                 </node>
               </node>
             </node>
@@ -7216,9 +7216,6 @@
                 </node>
               </node>
               <node concept="2MkqsV" id="1DVNPtFPbmz" role="3cqZAp">
-                <node concept="1YBJjd" id="7XQHhkHdz3l" role="2OEOjV">
-                  <ref role="1YBMHb" node="7XQHhkHdz1q" resolve="crr" />
-                </node>
                 <node concept="3cpWs3" id="1DVNPtFPkbJ" role="2MkJ7o">
                   <node concept="37vLTw" id="20ezT9ZEdOT" role="3uHU7w">
                     <ref role="3cqZAo" node="1DVNPtFPbnF" resolve="args" />
@@ -7226,6 +7223,9 @@
                   <node concept="Xl_RD" id="1DVNPtFPbmA" role="3uHU7B">
                     <property role="Xl_RC" value="wrong number of arguments. expected: " />
                   </node>
+                </node>
+                <node concept="1YBJjd" id="7XQHhkHdz3l" role="1urrMF">
+                  <ref role="1YBMHb" node="7XQHhkHdz1q" resolve="crr" />
                 </node>
               </node>
             </node>
@@ -7585,7 +7585,7 @@
             <node concept="Xl_RD" id="6JVEnxIjn_O" role="2MkJ7o">
               <property role="Xl_RC" value="only one 'on init' trigger allowed per component" />
             </node>
-            <node concept="1YBJjd" id="6JVEnxIjn_P" role="2OEOjV">
+            <node concept="1YBJjd" id="6JVEnxIjn_P" role="1urrMF">
               <ref role="1YBMHb" node="6JVEnxIjnyc" resolve="oit" />
             </node>
           </node>
@@ -7908,7 +7908,7 @@
                     <node concept="Xl_RD" id="RsLjUnOUWL" role="2MkJ7o">
                       <property role="Xl_RC" value="cannot be read; port is provided." />
                     </node>
-                    <node concept="1YBJjd" id="RsLjUnOUWM" role="2OEOjV">
+                    <node concept="1YBJjd" id="RsLjUnOUWM" role="1urrMF">
                       <ref role="1YBMHb" node="RsLjUnOUQ9" resolve="abstractDataElementRefTarget" />
                     </node>
                   </node>
@@ -8055,7 +8055,7 @@
                 <node concept="Xl_RD" id="1PvAkX2tdIK" role="2MkJ7o">
                   <property role="Xl_RC" value="Cannot assign to substructure of atomic elements" />
                 </node>
-                <node concept="2OqwBi" id="1PvAkX2tdJv" role="2OEOjV">
+                <node concept="2OqwBi" id="1PvAkX2tdJv" role="1urrMF">
                   <node concept="37vLTw" id="1PvAkX2tdJa" role="2Oq$k0">
                     <ref role="3cqZAo" node="1PvAkX2tdG9" resolve="ae" />
                   </node>
@@ -8136,7 +8136,7 @@
                 <node concept="Xl_RD" id="4paRqaMe41p" role="2MkJ7o">
                   <property role="Xl_RC" value="can only be used with required ports" />
                 </node>
-                <node concept="2GrUjf" id="4paRqaMe41r" role="2OEOjV">
+                <node concept="2GrUjf" id="4paRqaMe41r" role="1urrMF">
                   <ref role="2Gs0qQ" node="4paRqaMdWjk" resolve="pr" />
                 </node>
               </node>
@@ -8164,7 +8164,7 @@
                       <node concept="Xl_RD" id="4paRqaMeXdY" role="2MkJ7o">
                         <property role="Xl_RC" value="port must be optional to be usable here" />
                       </node>
-                      <node concept="2GrUjf" id="4paRqaMeXdZ" role="2OEOjV">
+                      <node concept="2GrUjf" id="4paRqaMeXdZ" role="1urrMF">
                         <ref role="2Gs0qQ" node="4paRqaMdWjk" resolve="pr" />
                       </node>
                     </node>
@@ -8537,13 +8537,13 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2OqwBi" id="slnbckFBxp" role="2OEOjV">
+                <node concept="2OqwBi" id="slnbckFBxp" role="1urrMF">
                   <node concept="37vLTw" id="slnbckF$Ex" role="2Oq$k0">
                     <ref role="3cqZAo" node="slnbckENgR" resolve="relatedImports" />
                   </node>
                   <node concept="1uHKPH" id="slnbckFFGX" role="2OqNvi" />
                 </node>
-                <node concept="3Cnw8n" id="slnbckY_b6" role="2OEOjU">
+                <node concept="3Cnw8n" id="slnbckY_b6" role="1urrFz">
                   <property role="ARO6o" value="true" />
                   <ref role="QpYPw" node="1vywkZBbSsj" resolve="reexportDependency" />
                   <node concept="3CnSsL" id="slnbckY_BN" role="3Coj4f">
@@ -8987,7 +8987,7 @@
                           <property role="Xl_RC" value=" not initialized" />
                         </node>
                       </node>
-                      <node concept="1YBJjd" id="6Ywynt2TVzw" role="2OEOjV">
+                      <node concept="1YBJjd" id="6Ywynt2TVzw" role="1urrMF">
                         <ref role="1YBMHb" node="6Ywynt2TVns" resolve="componentInstance" />
                       </node>
                     </node>
@@ -9225,7 +9225,7 @@
             <node concept="Xl_RD" id="21TQWIPH8gc" role="2MkJ7o">
               <property role="Xl_RC" value="array, struct and union initExpressions are not allowed in this context. You have to use pass a pointer" />
             </node>
-            <node concept="2OqwBi" id="21TQWIPH8Iy" role="2OEOjV">
+            <node concept="2OqwBi" id="21TQWIPH8Iy" role="1urrMF">
               <node concept="1YBJjd" id="21TQWIPH8Ey" role="2Oq$k0">
                 <ref role="1YBMHb" node="21TQWIPH4I2" resolve="initFieldInitializer" />
               </node>
@@ -9267,10 +9267,10 @@
             <node concept="Xl_RD" id="7BIOMJwWn5Z" role="2MkJ7o">
               <property role="Xl_RC" value="PortRefExpression should be used" />
             </node>
-            <node concept="1YBJjd" id="7BIOMJwWouG" role="2OEOjV">
+            <node concept="1YBJjd" id="7BIOMJwWouG" role="1urrMF">
               <ref role="1YBMHb" node="7BIOMJwVovN" resolve="interfaceTypeOpCallExpr" />
             </node>
-            <node concept="3Cnw8n" id="7BIOMJwWowv" role="2OEOjU">
+            <node concept="3Cnw8n" id="7BIOMJwWowv" role="1urrFz">
               <property role="ARO6o" value="true" />
               <ref role="QpYPw" node="7BIOMJwWovD" resolve="convertToPortRefExpr" />
               <node concept="3CnSsL" id="7BIOMJwWoDK" role="3Coj4f">
@@ -9342,11 +9342,11 @@
           <node concept="3clFbJ" id="73HHpfc4CIW" role="3cqZAp">
             <node concept="3clFbS" id="73HHpfc4CIY" role="3clFbx">
               <node concept="2MkqsV" id="73HHpfc4UJ3" role="3cqZAp">
-                <node concept="1YBJjd" id="73HHpfc4V1A" role="2OEOjV">
-                  <ref role="1YBMHb" node="7BIOMJwVovN" resolve="interfaceTypeOpCallExpr" />
-                </node>
                 <node concept="Xl_RD" id="73HHpfc4V1p" role="2MkJ7o">
                   <property role="Xl_RC" value="multiple operation calls are only supported for operations returning void" />
+                </node>
+                <node concept="1YBJjd" id="73HHpfc4V1A" role="1urrMF">
+                  <ref role="1YBMHb" node="7BIOMJwVovN" resolve="interfaceTypeOpCallExpr" />
                 </node>
               </node>
             </node>
@@ -9560,7 +9560,7 @@
             <node concept="Xl_RD" id="Z4PF2596mr" role="2MkJ7o">
               <property role="Xl_RC" value="only required ports can be used here" />
             </node>
-            <node concept="1YBJjd" id="Z4PF2596pn" role="2OEOjV">
+            <node concept="1YBJjd" id="Z4PF2596pn" role="1urrMF">
               <ref role="1YBMHb" node="Z4PF255OYP" resolve="whenPortConnectedStatement" />
             </node>
           </node>
@@ -9996,7 +9996,7 @@
             <node concept="Xl_RD" id="1_dsrLe$kxT" role="2MkJ7o">
               <property role="Xl_RC" value="Expressions of pre/postconditions must be side-effects free." />
             </node>
-            <node concept="2OqwBi" id="1_dsrLe$kFT" role="2OEOjV">
+            <node concept="2OqwBi" id="1_dsrLe$kFT" role="1urrMF">
               <node concept="1YBJjd" id="1_dsrLe$kDT" role="2Oq$k0">
                 <ref role="1YBMHb" node="1_dsrLe$jb9" resolve="prePostCondition" />
               </node>
@@ -10069,7 +10069,7 @@
             <node concept="Xl_RD" id="1Q5RJWOHMOL" role="2MkJ7o">
               <property role="Xl_RC" value="Cannot instantiate the structure with flexible array member without size. Use a global variable instead." />
             </node>
-            <node concept="1YBJjd" id="1Q5RJWOHMOM" role="2OEOjV">
+            <node concept="1YBJjd" id="1Q5RJWOHMOM" role="1urrMF">
               <ref role="1YBMHb" node="1Q5RJWOHMO6" resolve="f" />
             </node>
           </node>
@@ -10416,9 +10416,6 @@
                   <node concept="3clFbJ" id="slnbckyIDk" role="3cqZAp">
                     <node concept="3clFbS" id="slnbckyIDm" role="3clFbx">
                       <node concept="2MkqsV" id="3AX8Th8g55P" role="3cqZAp">
-                        <node concept="2GrUjf" id="3AX8Th8g55Q" role="2OEOjV">
-                          <ref role="2Gs0qQ" node="3AX8Th8g55y" resolve="referencedContent" />
-                        </node>
                         <node concept="3cpWs3" id="slnbckrwug" role="2MkJ7o">
                           <node concept="2OqwBi" id="slnbckrxVd" role="3uHU7w">
                             <node concept="2GrUjf" id="slnbckrx_R" role="2Oq$k0">
@@ -10462,10 +10459,13 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="2ODE4t" id="3AX8Th8g564" role="2OEWyd">
+                        <node concept="2ODE4t" id="3AX8Th8g564" role="1urrC5">
                           <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
                         </node>
-                        <node concept="3Cnw8n" id="3AX8Th8g565" role="2OEOjU">
+                        <node concept="2GrUjf" id="3AX8Th8g55Q" role="1urrMF">
+                          <ref role="2Gs0qQ" node="3AX8Th8g55y" resolve="referencedContent" />
+                        </node>
+                        <node concept="3Cnw8n" id="3AX8Th8g565" role="1urrFz">
                           <ref role="QpYPw" node="1vywkZBbUwM" resolve="exportModuleContent" />
                           <node concept="3CnSsL" id="3AX8Th8g566" role="3Coj4f">
                             <ref role="QkamJ" node="71oKhSFGljO" resolve="content" />
@@ -10565,13 +10565,13 @@
                               <property role="Xl_RC" value=" which is exported" />
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="slnbckC7KL" role="2OEOjV">
+                          <node concept="2OqwBi" id="slnbckC7KL" role="1urrMF">
                             <node concept="37vLTw" id="slnbckC7KM" role="2Oq$k0">
                               <ref role="3cqZAo" node="slnbckBCbl" resolve="relatedImports" />
                             </node>
                             <node concept="1uHKPH" id="slnbckC7KN" role="2OqNvi" />
                           </node>
-                          <node concept="3Cnw8n" id="slnbckVNSW" role="2OEOjU">
+                          <node concept="3Cnw8n" id="slnbckVNSW" role="1urrFz">
                             <ref role="QpYPw" node="1vywkZBbSsj" resolve="reexportDependency" />
                             <node concept="3CnSsL" id="slnbckVOHM" role="3Coj4f">
                               <ref role="QkamJ" node="5wUiFbGUmmJ" resolve="dep" />
@@ -10826,7 +10826,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1YBJjd" id="6niK5Rchdf5" role="2OEOjV">
+                <node concept="1YBJjd" id="6niK5Rchdf5" role="1urrMF">
                   <ref role="1YBMHb" node="6niK5RcgwV7" resolve="portAdapter" />
                 </node>
               </node>
@@ -10986,7 +10986,10 @@
                   </node>
                   <node concept="3clFbS" id="5LQ__EQokJ" role="3eOfB_">
                     <node concept="2MkqsV" id="5LQ__EQHsl" role="3cqZAp">
-                      <node concept="2OqwBi" id="5LQ__EQHzw" role="2OEOjV">
+                      <node concept="Xl_RD" id="5LQ__EQHs$" role="2MkJ7o">
+                        <property role="Xl_RC" value="index can't be smaller than zero" />
+                      </node>
+                      <node concept="2OqwBi" id="5LQ__EQHzw" role="1urrMF">
                         <node concept="1YBJjd" id="73HHpfajH27" role="2Oq$k0">
                           <ref role="1YBMHb" node="73HHpfaiaTL" resolve="arrayAccessExpr" />
                         </node>
@@ -10994,22 +10997,11 @@
                           <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" resolve="index" />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="5LQ__EQHs$" role="2MkJ7o">
-                        <property role="Xl_RC" value="index can't be smaller than zero" />
-                      </node>
                     </node>
                   </node>
                 </node>
                 <node concept="3clFbS" id="VuCligKpZr" role="3clFbx">
                   <node concept="2MkqsV" id="VuCligKq2Q" role="3cqZAp">
-                    <node concept="2OqwBi" id="VuCligKq3L" role="2OEOjV">
-                      <node concept="1YBJjd" id="73HHpfajrLH" role="2Oq$k0">
-                        <ref role="1YBMHb" node="73HHpfaiaTL" resolve="arrayAccessExpr" />
-                      </node>
-                      <node concept="3TrEf2" id="VuCligKq3R" role="2OqNvi">
-                        <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" resolve="index" />
-                      </node>
-                    </node>
                     <node concept="3cpWs3" id="VuCligKq3e" role="2MkJ7o">
                       <node concept="37vLTw" id="5HxjapweqD5" role="3uHU7w">
                         <ref role="3cqZAo" node="VuCligKmTc" resolve="staticUpperBound" />
@@ -11021,6 +11013,14 @@
                         <node concept="Xl_RD" id="VuCligKq2T" role="3uHU7w">
                           <property role="Xl_RC" value=" too large as index for multiple interface with upper bound of " />
                         </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="VuCligKq3L" role="1urrMF">
+                      <node concept="1YBJjd" id="73HHpfajrLH" role="2Oq$k0">
+                        <ref role="1YBMHb" node="73HHpfaiaTL" resolve="arrayAccessExpr" />
+                      </node>
+                      <node concept="3TrEf2" id="VuCligKq3R" role="2OqNvi">
+                        <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" resolve="index" />
                       </node>
                     </node>
                   </node>
@@ -11161,7 +11161,7 @@
                 <node concept="Xl_RD" id="6BNwNTYm_LO" role="2MkJ7o">
                   <property role="Xl_RC" value="Single port reference expression should not be used inside a loop, use foreach required port statement instead" />
                 </node>
-                <node concept="1YBJjd" id="6BNwNTYm_M$" role="2OEOjV">
+                <node concept="1YBJjd" id="6BNwNTYm_M$" role="1urrMF">
                   <ref role="1YBMHb" node="6BNwNTYmvis" resolve="singlePortRefExpr" />
                 </node>
               </node>
@@ -11689,11 +11689,11 @@
           <node concept="3clFbJ" id="6kTuxKCK93x" role="3cqZAp">
             <node concept="3clFbS" id="6kTuxKCK93z" role="3clFbx">
               <node concept="2MkqsV" id="6kTuxKCHxWS" role="3cqZAp">
-                <node concept="1YBJjd" id="6kTuxKCHyfZ" role="2OEOjV">
-                  <ref role="1YBMHb" node="6kTuxKCHjv7" resolve="portRefExpr" />
-                </node>
                 <node concept="Xl_RD" id="6kTuxKCHxWW" role="2MkJ7o">
                   <property role="Xl_RC" value="multiple required port reference must be used inside a 'when connected' statement " />
+                </node>
+                <node concept="1YBJjd" id="6kTuxKCHyfZ" role="1urrMF">
+                  <ref role="1YBMHb" node="6kTuxKCHjv7" resolve="portRefExpr" />
                 </node>
               </node>
             </node>
@@ -11775,11 +11775,11 @@
           <node concept="3clFbJ" id="1tylWjerfST" role="3cqZAp">
             <node concept="3clFbS" id="1tylWjerfSU" role="3clFbx">
               <node concept="2MkqsV" id="1tylWjerfSV" role="3cqZAp">
-                <node concept="1YBJjd" id="1tylWjerlI7" role="2OEOjV">
-                  <ref role="1YBMHb" node="1tylWjerfOd" resolve="portVarOpCallExpr" />
-                </node>
                 <node concept="Xl_RD" id="1tylWjerfSX" role="2MkJ7o">
                   <property role="Xl_RC" value="multiple operation calls are only supported for operations returning void" />
+                </node>
+                <node concept="1YBJjd" id="1tylWjerlI7" role="1urrMF">
+                  <ref role="1YBMHb" node="1tylWjerfOd" resolve="portVarOpCallExpr" />
                 </node>
               </node>
             </node>
@@ -11896,7 +11896,7 @@
             <node concept="Xl_RD" id="7_KH4FP57y_" role="2MkJ7o">
               <property role="Xl_RC" value="foreach port loop is not allowed for provided ports" />
             </node>
-            <node concept="2OqwBi" id="7_KH4FP57sw" role="2OEOjV">
+            <node concept="2OqwBi" id="7_KH4FP57sw" role="1urrMF">
               <node concept="1YBJjd" id="7_KH4FP57sx" role="2Oq$k0">
                 <ref role="1YBMHb" node="7_KH4FP4RCo" resolve="forEachPortStatement" />
               </node>
@@ -12076,7 +12076,7 @@
             <node concept="Xl_RD" id="6_0HAqg5adY" role="2MkJ7o">
               <property role="Xl_RC" value="only required port variables are allowed in this expression" />
             </node>
-            <node concept="2OqwBi" id="6_0HAqgcXBd" role="2OEOjV">
+            <node concept="2OqwBi" id="6_0HAqgcXBd" role="1urrMF">
               <node concept="1YBJjd" id="6_0HAqg6MKC" role="2Oq$k0">
                 <ref role="1YBMHb" node="6_0HAqg4DTs" resolve="whenPortVarConnectedStatement" />
               </node>

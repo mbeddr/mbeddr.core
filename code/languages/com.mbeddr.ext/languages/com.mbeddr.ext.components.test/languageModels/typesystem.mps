@@ -47,11 +47,11 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -153,11 +153,11 @@
       <node concept="3clFbJ" id="69lKCLH_8wB" role="3cqZAp">
         <node concept="3clFbS" id="69lKCLH_8wC" role="3clFbx">
           <node concept="2MkqsV" id="69lKCLH_8yx" role="3cqZAp">
-            <node concept="1YBJjd" id="69lKCLH_8$c" role="2OEOjV">
-              <ref role="1YBMHb" node="78Ts1skoV7G" resolve="drc" />
-            </node>
             <node concept="Xl_RD" id="69lKCLH_8y$" role="2MkJ7o">
               <property role="Xl_RC" value="can only call test helpers in the same module" />
+            </node>
+            <node concept="1YBJjd" id="69lKCLH_8$c" role="1urrMF">
+              <ref role="1YBMHb" node="78Ts1skoV7G" resolve="drc" />
             </node>
           </node>
         </node>
@@ -219,7 +219,7 @@
             <node concept="Xl_RD" id="6W5EUuUD$EA" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of args" />
             </node>
-            <node concept="1YBJjd" id="78Ts1skoV7W" role="2OEOjV">
+            <node concept="1YBJjd" id="78Ts1skoV7W" role="1urrMF">
               <ref role="1YBMHb" node="78Ts1skoV7G" resolve="drc" />
             </node>
           </node>

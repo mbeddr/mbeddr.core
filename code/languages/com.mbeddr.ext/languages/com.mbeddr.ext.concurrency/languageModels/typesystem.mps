@@ -118,9 +118,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -129,6 +126,9 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -190,10 +190,10 @@
         <reference id="1240930118028" name="enumDeclaration" index="3HcIyG" />
         <child id="1240930317927" name="operation" index="3Hdvt7" />
       </concept>
-      <concept id="1240930444878" name="jetbrains.mps.lang.smodel.structure.SEnum_MemberForValueOperation" flags="ng" index="3HdYtI">
+      <concept id="1240930444878" name="jetbrains.mps.lang.smodel.structure.SEnum_MemberForValueOperation_Old" flags="ng" index="3HdYtI">
         <child id="1240930444879" name="valueExpression" index="3HdYtJ" />
       </concept>
-      <concept id="1240930444945" name="jetbrains.mps.lang.smodel.structure.SEnum_MemberOperation" flags="ng" index="3HdYuL">
+      <concept id="1240930444945" name="jetbrains.mps.lang.smodel.structure.SEnum_MemberOperation_Old" flags="ng" index="3HdYuL">
         <reference id="1240930444946" name="member" index="3HdYuM" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -318,7 +318,7 @@
             <node concept="Xl_RD" id="66UaKxBAi3$" role="2MkJ7o">
               <property role="Xl_RC" value="only shared variables can be used in atomic blocks" />
             </node>
-            <node concept="1YBJjd" id="66UaKxBAi4p" role="2OEOjV">
+            <node concept="1YBJjd" id="66UaKxBAi4p" role="1urrMF">
               <ref role="1YBMHb" node="66UaKxBwIva" resolve="as" />
             </node>
           </node>
@@ -427,7 +427,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1YBJjd" id="66UaKxBxF1O" role="2OEOjV">
+            <node concept="1YBJjd" id="66UaKxBxF1O" role="1urrMF">
               <ref role="1YBMHb" node="66UaKxBwIva" resolve="as" />
             </node>
           </node>
@@ -560,7 +560,7 @@
                 <node concept="Xl_RD" id="66UaKxBzcQi" role="2MkJ7o">
                   <property role="Xl_RC" value="Shared global variables can only be accessed inside an atomic block" />
                 </node>
-                <node concept="1YBJjd" id="66UaKxBzcRZ" role="2OEOjV">
+                <node concept="1YBJjd" id="66UaKxBzcRZ" role="1urrMF">
                   <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
                 </node>
               </node>
@@ -645,7 +645,7 @@
                     <node concept="Xl_RD" id="66UaKxBzAXK" role="2MkJ7o">
                       <property role="Xl_RC" value="global variables can only be written to if they are declared 'readWrite' in the atomic" />
                     </node>
-                    <node concept="1YBJjd" id="66UaKxBzB0e" role="2OEOjV">
+                    <node concept="1YBJjd" id="66UaKxBzB0e" role="1urrMF">
                       <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
                     </node>
                   </node>
@@ -701,7 +701,7 @@
                       <node concept="Xl_RD" id="66UaKxBzBFX" role="2MkJ7o">
                         <property role="Xl_RC" value="global variables can only be read from if they are declared 'read' in the atomic" />
                       </node>
-                      <node concept="1YBJjd" id="66UaKxBzBFY" role="2OEOjV">
+                      <node concept="1YBJjd" id="66UaKxBzBFY" role="1urrMF">
                         <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
                       </node>
                     </node>
@@ -734,11 +734,11 @@
             <node concept="3clFbJ" id="66UaKxBzafO" role="3cqZAp">
               <node concept="3clFbS" id="66UaKxBzafS" role="3clFbx">
                 <node concept="a7r0C" id="66UaKxBG3HQ" role="3cqZAp">
-                  <node concept="1YBJjd" id="66UaKxBG3Vq" role="2OEOjV">
-                    <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
-                  </node>
                   <node concept="Xl_RD" id="66UaKxBA71H" role="a7wSD">
                     <property role="Xl_RC" value="global variables should be accessed from a task if they are shared" />
+                  </node>
+                  <node concept="1YBJjd" id="66UaKxBG3Vq" role="1urrMF">
+                    <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
                   </node>
                 </node>
               </node>
@@ -776,7 +776,7 @@
             <node concept="Xl_RD" id="12_KeTzWuv4" role="2MkJ7o">
               <property role="Xl_RC" value="only cyclic tasks can be scheduled cyclicly" />
             </node>
-            <node concept="1YBJjd" id="12_KeTzWuwe" role="2OEOjV">
+            <node concept="1YBJjd" id="12_KeTzWuwe" role="1urrMF">
               <ref role="1YBMHb" node="12_KeTzWrQf" resolve="cc" />
             </node>
           </node>
@@ -846,7 +846,7 @@
             <node concept="Xl_RD" id="4hMIGYxmYcH" role="2MkJ7o">
               <property role="Xl_RC" value="only blocking tasks can be scheduled cyclicly" />
             </node>
-            <node concept="1YBJjd" id="74RuH7aiOC9" role="2OEOjV">
+            <node concept="1YBJjd" id="74RuH7aiOC9" role="1urrMF">
               <ref role="1YBMHb" node="4hMIGYxmY7N" resolve="bc" />
             </node>
           </node>
@@ -997,7 +997,7 @@
                   <node concept="Xl_RD" id="2TPZctDesH7" role="2MkJ7o">
                     <property role="Xl_RC" value="a queue must be used here" />
                   </node>
-                  <node concept="2OqwBi" id="2TPZctDesMV" role="2OEOjV">
+                  <node concept="2OqwBi" id="2TPZctDesMV" role="1urrMF">
                     <node concept="1YBJjd" id="2TPZctDesIO" role="2Oq$k0">
                       <ref role="1YBMHb" node="2TPZctDep_g" resolve="es" />
                     </node>
@@ -1091,7 +1091,7 @@
             <node concept="Xl_RD" id="4mSSgpjqWXt" role="2MkJ7o">
               <property role="Xl_RC" value="can only use queues marked as 'shared'" />
             </node>
-            <node concept="1YBJjd" id="4mSSgpjqWXX" role="2OEOjV">
+            <node concept="1YBJjd" id="4mSSgpjqWXX" role="1urrMF">
               <ref role="1YBMHb" node="4mSSgpjqVaY" resolve="qu" />
             </node>
           </node>
@@ -1133,7 +1133,7 @@
                 <node concept="Xl_RD" id="1zeZsIbdc37" role="2MkJ7o">
                   <property role="Xl_RC" value="queue is not marked as 'blocking'" />
                 </node>
-                <node concept="1YBJjd" id="1zeZsIbdc3W" role="2OEOjV">
+                <node concept="1YBJjd" id="1zeZsIbdc3W" role="1urrMF">
                   <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
                 </node>
               </node>
@@ -1175,7 +1175,7 @@
                 <node concept="Xl_RD" id="1zeZsIb$2Ij" role="2MkJ7o">
                   <property role="Xl_RC" value="blocking take can only be used from inside blockable tasks" />
                 </node>
-                <node concept="1YBJjd" id="1zeZsIb$2Ik" role="2OEOjV">
+                <node concept="1YBJjd" id="1zeZsIb$2Ik" role="1urrMF">
                   <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
                 </node>
               </node>
@@ -1231,7 +1231,7 @@
             <node concept="Xl_RD" id="6bs538lRaw2" role="2MkJ7o">
               <property role="Xl_RC" value="otherwise clause can only be used for non-blocking dequeue" />
             </node>
-            <node concept="1YBJjd" id="6bs538lRayI" role="2OEOjV">
+            <node concept="1YBJjd" id="6bs538lRayI" role="1urrMF">
               <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
             </node>
           </node>
@@ -1506,7 +1506,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1YBJjd" id="tTL6IVX1V4" role="2OEOjV">
+                <node concept="1YBJjd" id="tTL6IVX1V4" role="1urrMF">
                   <ref role="1YBMHb" node="tTL6IVWsDk" resolve="cci" />
                 </node>
               </node>
@@ -1614,7 +1614,7 @@
             <node concept="Xl_RD" id="73GSrjd_AE3" role="2MkJ7o">
               <property role="Xl_RC" value="concurrency currently requires name mangling strategy to be set to 'use qualified names'" />
             </node>
-            <node concept="1YBJjd" id="73GSrjd_APq" role="2OEOjV">
+            <node concept="1YBJjd" id="73GSrjd_APq" role="1urrMF">
               <ref role="1YBMHb" node="tTL6IVWsDk" resolve="cci" />
             </node>
           </node>
@@ -1805,9 +1805,6 @@
                 </node>
               </node>
               <node concept="2MkqsV" id="6u_410TQFk5" role="3cqZAp">
-                <node concept="1YBJjd" id="6u_410TQGoh" role="2OEOjV">
-                  <ref role="1YBMHb" node="6u_410TQ6g2" resolve="fc" />
-                </node>
                 <node concept="3cpWs3" id="6u_410TQFsO" role="2MkJ7o">
                   <node concept="2OqwBi" id="6u_410TQFDW" role="3uHU7w">
                     <node concept="2GrUjf" id="6u_410TQFsR" role="2Oq$k0">
@@ -1820,6 +1817,9 @@
                   <node concept="Xl_RD" id="6u_410TQFmK" role="3uHU7B">
                     <property role="Xl_RC" value="The called function requires a lock for " />
                   </node>
+                </node>
+                <node concept="1YBJjd" id="6u_410TQGoh" role="1urrMF">
+                  <ref role="1YBMHb" node="6u_410TQ6g2" resolve="fc" />
                 </node>
               </node>
             </node>
@@ -1861,7 +1861,7 @@
             <node concept="Xl_RD" id="3pVON$40CC_" role="a7wSD">
               <property role="Xl_RC" value="atomic statements should not be nested because this prevents global lock ordering and may result in deadlocks; please use one atomic with several access specifiers" />
             </node>
-            <node concept="1YBJjd" id="3pVON$40CHj" role="2OEOjV">
+            <node concept="1YBJjd" id="3pVON$40CHj" role="1urrMF">
               <ref role="1YBMHb" node="3pVON$40sIH" resolve="as" />
             </node>
           </node>

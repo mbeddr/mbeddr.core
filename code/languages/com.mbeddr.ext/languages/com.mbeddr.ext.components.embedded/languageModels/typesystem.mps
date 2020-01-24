@@ -91,13 +91,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -293,7 +293,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1YBJjd" id="16gyj4AsJL1" role="2OEOjV">
+            <node concept="1YBJjd" id="16gyj4AsJL1" role="1urrMF">
               <ref role="1YBMHb" node="16gyj4ArNdH" resolve="interruptRunnableMapping" />
             </node>
           </node>
@@ -368,9 +368,6 @@
           <node concept="3clFbJ" id="33VMAJZfwWd" role="3cqZAp">
             <node concept="3clFbS" id="33VMAJZfwWe" role="3clFbx">
               <node concept="2MkqsV" id="33VMAJZfwWf" role="3cqZAp">
-                <node concept="1YBJjd" id="RL5s9UOujf" role="2OEOjV">
-                  <ref role="1YBMHb" node="RL5s9UOnOM" resolve="componentInstance" />
-                </node>
                 <node concept="3cpWs3" id="33VMAJZfwWi" role="2MkJ7o">
                   <node concept="Xl_RD" id="33VMAJZfwWj" role="3uHU7B">
                     <property role="Xl_RC" value="missing interrupt binding for interrupt-triggered runnable " />
@@ -383,6 +380,9 @@
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
+                </node>
+                <node concept="1YBJjd" id="RL5s9UOujf" role="1urrMF">
+                  <ref role="1YBMHb" node="RL5s9UOnOM" resolve="componentInstance" />
                 </node>
               </node>
             </node>
@@ -481,7 +481,7 @@
             <node concept="Xl_RD" id="3F9kUGauyqj" role="2MkJ7o">
               <property role="Xl_RC" value="interrupt-triggered runnables are currently only supported for no-middleware generators" />
             </node>
-            <node concept="2OqwBi" id="3F9kUGauyqv" role="2OEOjV">
+            <node concept="2OqwBi" id="3F9kUGauyqv" role="1urrMF">
               <node concept="3TrEf2" id="3F9kUGauyqw" role="2OqNvi">
                 <ref role="3Tt5mk" to="v7ag:1OLGDVffrKn" resolve="genStrategy" />
               </node>
@@ -568,11 +568,11 @@
                 <node concept="1bVj0M" id="3F9kUGauO_8" role="23t8la">
                   <node concept="3clFbS" id="3F9kUGauO_9" role="1bW5cS">
                     <node concept="2MkqsV" id="3F9kUGauCK3" role="3cqZAp">
-                      <node concept="37vLTw" id="3F9kUGauQyJ" role="2OEOjV">
-                        <ref role="3cqZAo" node="3F9kUGauO_a" resolve="it" />
-                      </node>
                       <node concept="Xl_RD" id="3F9kUGauCKz" role="2MkJ7o">
                         <property role="Xl_RC" value="interrupt-triggered runnables are currently only supported for build configurations with a single binary" />
+                      </node>
+                      <node concept="37vLTw" id="3F9kUGauQyJ" role="1urrMF">
+                        <ref role="3cqZAo" node="3F9kUGauO_a" resolve="it" />
                       </node>
                     </node>
                   </node>
@@ -762,9 +762,6 @@
                           <node concept="1bVj0M" id="3F9kUGayptX" role="23t8la">
                             <node concept="3clFbS" id="3F9kUGayptY" role="1bW5cS">
                               <node concept="2MkqsV" id="3F9kUGawZZA" role="3cqZAp">
-                                <node concept="37vLTw" id="3F9kUGays3Z" role="2OEOjV">
-                                  <ref role="3cqZAo" node="3F9kUGayptZ" resolve="it" />
-                                </node>
                                 <node concept="3cpWs3" id="3ClwVOArcDU" role="2MkJ7o">
                                   <node concept="3cpWs3" id="3ClwVOArcDV" role="3uHU7B">
                                     <node concept="3cpWs3" id="3ClwVOArcDW" role="3uHU7B">
@@ -786,6 +783,9 @@
                                       <ref role="3cqZAo" node="3F9kUGayAjw" resolve="visibleCompanions" />
                                     </node>
                                   </node>
+                                </node>
+                                <node concept="37vLTw" id="3F9kUGays3Z" role="1urrMF">
+                                  <ref role="3cqZAo" node="3F9kUGayptZ" resolve="it" />
                                 </node>
                               </node>
                             </node>
@@ -963,7 +963,7 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="37vLTw" id="3ClwVOAo5Cf" role="2OEOjV">
+                                <node concept="37vLTw" id="3ClwVOAo5Cf" role="1urrMF">
                                   <ref role="3cqZAo" node="3ClwVOAo5Cg" resolve="it" />
                                 </node>
                               </node>

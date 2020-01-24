@@ -2,7 +2,7 @@
 <model ref="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -111,11 +111,6 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -133,6 +128,11 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
@@ -293,11 +293,11 @@
                 </node>
               </node>
             </node>
-            <node concept="1YBJjd" id="1AYgJalDzmj" role="2OEOjV">
-              <ref role="1YBMHb" node="1AYgJalDzlu" resolve="amc" />
-            </node>
-            <node concept="2OE7Q9" id="1AYgJalDzmo" role="2OEWyd">
+            <node concept="2OE7Q9" id="1AYgJalDzmo" role="1urrC5">
               <ref role="2OEe5H" to="v7ag:1ijJyTDpXkM" resolve="instance" />
+            </node>
+            <node concept="1YBJjd" id="1AYgJalDzmj" role="1urrMF">
+              <ref role="1YBMHb" node="1AYgJalDzlu" resolve="amc" />
             </node>
           </node>
         </node>
@@ -338,11 +338,11 @@
             <node concept="Xl_RD" id="4jc_TWT399v" role="2MkJ7o">
               <property role="Xl_RC" value="there can only be one sequence in a mock component" />
             </node>
-            <node concept="37vLTw" id="20ezT9ZBYXr" role="2OEOjV">
-              <ref role="3cqZAo" node="4jc_TWT399y" resolve="mockComponent" />
-            </node>
-            <node concept="2ODE4t" id="4jc_TWT399F" role="2OEWyd">
+            <node concept="2ODE4t" id="4jc_TWT399F" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="37vLTw" id="20ezT9ZBYXr" role="1urrMF">
+              <ref role="3cqZAo" node="4jc_TWT399y" resolve="mockComponent" />
             </node>
           </node>
         </node>
@@ -393,7 +393,7 @@
             <node concept="Xl_RD" id="Ug1QzfnJQM" role="2MkJ7o">
               <property role="Xl_RC" value="cannot have an empty sequence; use 'no call' expectation instead." />
             </node>
-            <node concept="1YBJjd" id="Ug1QzfnJQN" role="2OEOjV">
+            <node concept="1YBJjd" id="Ug1QzfnJQN" role="1urrMF">
               <ref role="1YBMHb" node="4jc_TWT398M" resolve="seq" />
             </node>
           </node>
@@ -649,13 +649,13 @@
             <node concept="Xl_RD" id="5vll4VdvQHo" role="2MkJ7o">
               <property role="Xl_RC" value="Must have exactly two arguments of type phase" />
             </node>
-            <node concept="37vLTw" id="5vll4VdvQHq" role="2OEOjV">
-              <ref role="3cqZAo" node="5vll4VdvQGc" resolve="runnable" />
-            </node>
-            <node concept="2ODE4t" id="5vll4VdvQHK" role="2OEWyd">
+            <node concept="2ODE4t" id="5vll4VdvQHK" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
             </node>
-            <node concept="3Cnw8n" id="5vll4VdvS4M" role="2OEOjU">
+            <node concept="37vLTw" id="5vll4VdvQHq" role="1urrMF">
+              <ref role="3cqZAo" node="5vll4VdvQGc" resolve="runnable" />
+            </node>
+            <node concept="3Cnw8n" id="5vll4VdvS4M" role="1urrFz">
               <ref role="QpYPw" node="5vll4VdvQKX" resolve="FixPhaseTrigger" />
               <node concept="3CnSsL" id="5vll4VdvS4N" role="3Coj4f">
                 <ref role="QkamJ" node="5vll4VdvQL0" resolve="runnable" />
@@ -726,7 +726,16 @@
               </node>
               <node concept="3clFbS" id="5vll4VdvQHP" role="3clFbx">
                 <node concept="2MkqsV" id="5vll4VdvQKS" role="3cqZAp">
-                  <node concept="3Cnw8n" id="5vll4VdvS4V" role="2OEOjU">
+                  <node concept="Xl_RD" id="5vll4VdvQKT" role="2MkJ7o">
+                    <property role="Xl_RC" value="Must have exactly two arguments of type phase" />
+                  </node>
+                  <node concept="2ODE4t" id="5vll4VdvQKV" role="1urrC5">
+                    <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                  <node concept="37vLTw" id="5vll4VdvQKU" role="1urrMF">
+                    <ref role="3cqZAo" node="5vll4VdvQGc" resolve="runnable" />
+                  </node>
+                  <node concept="3Cnw8n" id="5vll4VdvS4V" role="1urrFz">
                     <ref role="QpYPw" node="5vll4VdvQKX" resolve="FixPhaseTrigger" />
                     <node concept="3CnSsL" id="5vll4VdvS4W" role="3Coj4f">
                       <ref role="QkamJ" node="5vll4VdvQL0" resolve="runnable" />
@@ -734,15 +743,6 @@
                         <ref role="3cqZAo" node="5vll4VdvQGc" resolve="runnable" />
                       </node>
                     </node>
-                  </node>
-                  <node concept="Xl_RD" id="5vll4VdvQKT" role="2MkJ7o">
-                    <property role="Xl_RC" value="Must have exactly two arguments of type phase" />
-                  </node>
-                  <node concept="37vLTw" id="5vll4VdvQKU" role="2OEOjV">
-                    <ref role="3cqZAo" node="5vll4VdvQGc" resolve="runnable" />
-                  </node>
-                  <node concept="2ODE4t" id="5vll4VdvQKV" role="2OEWyd">
-                    <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
               </node>
@@ -757,7 +757,7 @@
             <node concept="Xl_RD" id="5vll4Vdwmsd" role="2MkJ7o">
               <property role="Xl_RC" value="Maximum 1 phase change trigger allowed" />
             </node>
-            <node concept="1YBJjd" id="5vll4Vdwmse" role="2OEOjV">
+            <node concept="1YBJjd" id="5vll4Vdwmse" role="1urrMF">
               <ref role="1YBMHb" node="5vll4VdvQFD" resolve="pct" />
             </node>
           </node>
@@ -1050,7 +1050,7 @@
             <node concept="Xl_RD" id="7OITQieW0aX" role="2MkJ7o">
               <property role="Xl_RC" value="only ports, fields and expectations and onInit runnable can be used in mock components" />
             </node>
-            <node concept="2GrUjf" id="7OITQieW0bm" role="2OEOjV">
+            <node concept="2GrUjf" id="7OITQieW0bm" role="1urrMF">
               <ref role="2Gs0qQ" node="7OITQieW0b0" resolve="c" />
             </node>
           </node>
@@ -1154,7 +1154,7 @@
             <node concept="Xl_RD" id="7OITQieW632" role="2MkJ7o">
               <property role="Xl_RC" value="cannot be used together with 'total no. of calls'" />
             </node>
-            <node concept="1YBJjd" id="7OITQieW633" role="2OEOjV">
+            <node concept="1YBJjd" id="7OITQieW633" role="1urrMF">
               <ref role="1YBMHb" node="7OITQieW60K" resolve="enc" />
             </node>
           </node>
