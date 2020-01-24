@@ -47,7 +47,7 @@
       <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
         <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
-      <concept id="5476261277774416029" name="com.mbeddr.core.buildconfig.structure.Win32" flags="ng" index="1l1LS3" />
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="722659542937082434" name="com.mbeddr.core.util.structure.ErrorDeclaration" flags="ng" index="2cifP4">
@@ -560,9 +560,6 @@
     </node>
   </node>
   <node concept="2v9HqL" id="7kmhBx2NBBd">
-    <node concept="2xfidK" id="7kmhBx2NBBe" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
-    </node>
     <node concept="2Q9Fgs" id="7kmhBx2NBBf" role="2Q9xDr">
       <node concept="2Q9FjX" id="7kmhBx2NBBg" role="2Q9FjI" />
     </node>
@@ -571,14 +568,17 @@
       <node concept="2v9HqM" id="7kmhBx2PTor" role="2eOfOg">
         <ref role="2v9HqP" node="7kmhBx2NBAC" resolve="ErrorHandlingTest" />
       </node>
-      <node concept="1l1LS3" id="4JZ_DSvTv_R" role="1kZvWc">
-        <property role="TrG5h" value="Win32" />
+      <node concept="1l1$C7" id="7B3zdKLsTi7" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="12mU2y" id="4QnOXkA2Bzo" role="2Q9xDr">
       <property role="1Ctlcb" value="0" />
     </node>
     <node concept="MH4UO" id="4QnOXk_y73o" role="2Q9xDr" />
+    <node concept="2xfidK" id="7B3zdKLrKrl" role="2AWWZH">
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+    </node>
   </node>
 </model>
 

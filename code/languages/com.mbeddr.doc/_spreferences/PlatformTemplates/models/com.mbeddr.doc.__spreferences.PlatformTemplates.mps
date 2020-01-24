@@ -2,7 +2,7 @@
 <model ref="r:7b7ff472-1d36-4351-95d1-b6dc02f5e011(com.mbeddr.doc.__spreferences.PlatformTemplates)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="8" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="9" />
   </languages>
   <imports />
   <registry>
@@ -16,6 +16,7 @@
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
         <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
       </concept>
@@ -42,6 +43,7 @@
         <property role="3r8Kxs" value="make" />
         <property role="2AWWZI" value="-std=c99" />
         <property role="1FkSt$" value="-g" />
+        <property role="18_EFo" value="gcc" />
       </node>
     </node>
   </node>

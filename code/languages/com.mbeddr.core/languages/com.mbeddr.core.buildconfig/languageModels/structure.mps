@@ -348,30 +348,25 @@
     <property role="3GE5qa" value="platform" />
     <property role="EcuMT" value="5323740605968447022" />
     <ref role="1TJDcQ" node="4BxItZJ4BoF" resolve="Platform" />
-    <node concept="1TJgyi" id="71C71cTwLEc" role="1TKVEl">
-      <property role="IQ2nx" value="8099754798720686732" />
-      <property role="TrG5h" value="parallelProcesses" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="PrWs8" id="77mJsGsFMiE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="PrWs8" id="2nSRgleEPDE" role="PzmwI">
       <ref role="PrY4T" node="2nSRgleEPDw" resolve="IDebuggablePlatform" />
     </node>
-    <node concept="1TJgyi" id="4BxItZJ4BoK" role="1TKVEl">
-      <property role="TrG5h" value="compiler" />
-      <property role="IQ2nx" value="5323740605968447024" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="3s1LyzG8GSD" role="1TKVEl">
-      <property role="TrG5h" value="gdb" />
-      <property role="IQ2nx" value="3963667026125442601" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="3s1LyzG8GTO" role="1TKVEl">
       <property role="TrG5h" value="make" />
       <property role="IQ2nx" value="3963667026125442676" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="71C71cTwLEc" role="1TKVEl">
+      <property role="IQ2nx" value="8099754798720686732" />
+      <property role="TrG5h" value="parallelProcesses" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4BxItZJ4BoK" role="1TKVEl">
+      <property role="TrG5h" value="compiler" />
+      <property role="IQ2nx" value="5323740605968447024" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="4BxItZJ4BoL" role="1TKVEl">
@@ -379,9 +374,19 @@
       <property role="IQ2nx" value="5323740605968447025" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="7B3zdKLlio4" role="1TKVEl">
+      <property role="IQ2nx" value="8774011376396215812" />
+      <property role="TrG5h" value="linker" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="1tTyxbTm6yO" role="1TKVEl">
       <property role="TrG5h" value="linkerOptions" />
       <property role="IQ2nx" value="1691534949151697076" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3s1LyzG8GSD" role="1TKVEl">
+      <property role="TrG5h" value="gdb" />
+      <property role="IQ2nx" value="3963667026125442601" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

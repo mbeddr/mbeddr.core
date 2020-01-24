@@ -43,7 +43,7 @@
       <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
         <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
-      <concept id="5476261277774416029" name="com.mbeddr.core.buildconfig.structure.Win32" flags="ng" index="1l1LS3" />
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
@@ -146,12 +146,12 @@
       <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
     <node concept="2eOfOl" id="53$tGqN_oC0" role="2ePNbc">
-      <property role="TrG5h" value="test" />
+      <property role="TrG5h" value="testapp" />
       <node concept="2v9HqM" id="53$tGqN_oC4" role="2eOfOg">
         <ref role="2v9HqP" node="53$tGqN$XNE" resolve="structtest" />
       </node>
-      <node concept="1l1LS3" id="4JZ_DSvTvAh" role="1kZvWc">
-        <property role="TrG5h" value="Win32" />
+      <node concept="1l1$C7" id="7B3zdKLrzg_" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="53$tGqN_pqY" role="2Q9xDr">

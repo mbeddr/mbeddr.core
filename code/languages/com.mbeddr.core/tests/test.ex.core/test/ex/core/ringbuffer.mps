@@ -42,7 +42,7 @@
       <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
         <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
-      <concept id="5476261277774416029" name="com.mbeddr.core.buildconfig.structure.Win32" flags="ng" index="1l1LS3" />
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
@@ -884,8 +884,8 @@
       <node concept="2v9HqM" id="35Mepj$oa3Z" role="2eOfOg">
         <ref role="2v9HqP" node="gaSsNUi9MH" resolve="RingBufferTest" />
       </node>
-      <node concept="1l1LS3" id="4JZ_DSvTvA8" role="1kZvWc">
-        <property role="TrG5h" value="Win32" />
+      <node concept="1l1$C7" id="7B3zdKLrzgl" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="12mU2y" id="3mKW6ZYeYtJ" role="2Q9xDr" />

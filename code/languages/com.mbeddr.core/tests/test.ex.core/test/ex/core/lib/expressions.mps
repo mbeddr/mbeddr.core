@@ -2,7 +2,7 @@
 <model ref="r:f61ef1b3-c47f-43c1-9bb8-140b503bbd1b(test.ex.core.lib.expressions)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="8" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="9" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
@@ -83,7 +83,7 @@
       <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
         <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
-      <concept id="5476261277774416029" name="com.mbeddr.core.buildconfig.structure.Win32" flags="ng" index="1l1LS3" />
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
@@ -320,8 +320,8 @@
       <node concept="2v9HqM" id="1JA5qgmxVtK" role="2eOfOg">
         <ref role="2v9HqP" node="1JA5qgmxJab" resolve="VariadicFunctions" />
       </node>
-      <node concept="1l1LS3" id="4JZ_DSvTv_Z" role="1kZvWc">
-        <property role="TrG5h" value="Win32" />
+      <node concept="1l1$C7" id="7B3zdKLrzg7" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="5CQ$U_OAkY7" role="2Q9xDr">
