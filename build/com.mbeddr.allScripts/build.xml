@@ -87,7 +87,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.tutorial.dev.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.build.build-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.tutorial.dev.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen">
@@ -127,7 +127,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.allInOne.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.allInOne-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.allInOne/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.allInOne/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.allInOne-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.allInOne/source_gen">
@@ -167,7 +167,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.build-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build/source_gen">
@@ -210,7 +210,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.debugger.testing.build.dev.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.debugger-test.build.dev.build-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.debugger.testing.build.dev.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/source_gen">
@@ -250,7 +250,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.core.tests.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.core.tests.build-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.core.tests.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen">
@@ -290,7 +290,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.core.tests.performance.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.core.tests.performance.build-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.core.tests.performance.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen">
@@ -330,7 +330,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.debugger.tests.dev.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.debugger.tests.dev.build-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.debugger.tests.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.debugger.tests.dev.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.debugger.tests.dev.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.debugger.tests.dev.build/source_gen">
@@ -370,7 +370,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.cc.tests.dev.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.cc.tests.dev.build-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.cc.tests.dev.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/source_gen">
@@ -410,7 +410,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.ext.tests.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.build-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.ext.tests.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen">
@@ -450,7 +450,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.analyses.tests.dev.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.dev.build-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.dev.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.analyses.tests.dev.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.dev.build/source_gen">
@@ -492,7 +492,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.xmodel.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.xmodel.build-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.xmodel.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.xmodel.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.xmodel/com.mbeddr.xmodel.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.xmodel.build/source_gen">
@@ -532,7 +532,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.allScripts.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.allScripts-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.allScripts/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.allScripts/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/mbeddr.allScripts/com.mbeddr.allScripts-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.allScripts/source_gen">
@@ -570,7 +570,7 @@
       <fileset dir="${build.tmp}/default/jetbrains.mps.minimal.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.minimal-models">
-      <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/mbeddr/jetbrains.mps.minimal-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen">
@@ -614,7 +614,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.rcp.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.rcp-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.rcp/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.rcp/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/mbeddr/com.mbeddr.rcp-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.rcp/source_gen">
@@ -653,7 +653,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.build.jar1" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.build-models1">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/mbeddr/com.mbeddr.build-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build/source_gen">
@@ -695,7 +695,7 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.platform.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.platform-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.platform/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.platform/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform-src.jar" duplicate="preserve">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen">
@@ -775,6 +775,11 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.rules.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.rules.kinds.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.rules.skeleton.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.context.defs.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.context.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
@@ -809,6 +814,7 @@
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.search.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.platform.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />

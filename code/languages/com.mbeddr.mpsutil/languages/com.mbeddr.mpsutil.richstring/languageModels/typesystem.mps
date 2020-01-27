@@ -146,14 +146,14 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -342,7 +342,7 @@
             <node concept="37vLTw" id="6Go9U2yp8RA" role="2MkJ7o">
               <ref role="3cqZAo" node="6Go9U2yp7Lx" resolve="errorMsg" />
             </node>
-            <node concept="1YBJjd" id="6Go9U2yp1TY" role="2OEOjV">
+            <node concept="1YBJjd" id="6Go9U2yp1TY" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2yp1aG" resolve="iInlineFormatDescendantsCharacter" />
             </node>
           </node>
@@ -386,7 +386,7 @@
             <node concept="37vLTw" id="6Go9U2yp96P" role="2MkJ7o">
               <ref role="3cqZAo" node="6Go9U2yp96H" resolve="errorMsg" />
             </node>
-            <node concept="1YBJjd" id="6Go9U2yp9cW" role="2OEOjV">
+            <node concept="1YBJjd" id="6Go9U2yp9cW" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2yp1b$" resolve="iInlineFormatDescendantsDateTime" />
             </node>
           </node>
@@ -430,7 +430,7 @@
             <node concept="37vLTw" id="6Go9U2yp9ox" role="2MkJ7o">
               <ref role="3cqZAo" node="6Go9U2yp9op" resolve="errorMsg" />
             </node>
-            <node concept="1YBJjd" id="6Go9U2yp9uy" role="2OEOjV">
+            <node concept="1YBJjd" id="6Go9U2yp9uy" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2yp1cs" resolve="iInlineFormatDescendantsFloatingPoint" />
             </node>
           </node>
@@ -474,7 +474,7 @@
             <node concept="37vLTw" id="6Go9U2yp9xW" role="2MkJ7o">
               <ref role="3cqZAo" node="6Go9U2yp9xO" resolve="errorMsg" />
             </node>
-            <node concept="1YBJjd" id="6Go9U2yp9BX" role="2OEOjV">
+            <node concept="1YBJjd" id="6Go9U2yp9BX" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2yp1dk" resolve="iInlineFormatDescendantsGeneral" />
             </node>
           </node>
@@ -518,7 +518,7 @@
             <node concept="37vLTw" id="6Go9U2yp9Fn" role="2MkJ7o">
               <ref role="3cqZAo" node="6Go9U2yp9Ff" resolve="errorMsg" />
             </node>
-            <node concept="1YBJjd" id="6Go9U2yp9Lo" role="2OEOjV">
+            <node concept="1YBJjd" id="6Go9U2yp9Lo" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2yp1ec" resolve="iInlineFormatDescendantsIntegral" />
             </node>
           </node>
@@ -872,7 +872,7 @@
                 <property role="Xl_RC" value=" expression cannot have a precision" />
               </node>
             </node>
-            <node concept="1YBJjd" id="6Go9U2yrX5E" role="2OEOjV">
+            <node concept="1YBJjd" id="6Go9U2yrX5E" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2yrUSD" resolve="iFormatConversionPrecision" />
             </node>
           </node>
@@ -921,7 +921,7 @@
                 <property role="Xl_RC" value=" conversion cannot have a precision" />
               </node>
             </node>
-            <node concept="1YBJjd" id="7hVsScEG7Fm" role="2OEOjV">
+            <node concept="1YBJjd" id="7hVsScEG7Fm" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2yrUSD" resolve="iFormatConversionPrecision" />
             </node>
           </node>
@@ -1091,7 +1091,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1YBJjd" id="6Go9U2yy4b2" role="2OEOjV">
+            <node concept="1YBJjd" id="6Go9U2yy4b2" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2yxUZg" resolve="iFormatConversionFlag" />
             </node>
           </node>
@@ -1167,7 +1167,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1YBJjd" id="6Go9U2y_TUf" role="2OEOjV">
+            <node concept="1YBJjd" id="6Go9U2y_TUf" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2y_TAz" resolve="iFormatConversionFlagNeedsWidth" />
             </node>
           </node>
@@ -1308,7 +1308,7 @@
                 <property role="Xl_RC" value="only one of the following flags can be used: " />
               </node>
             </node>
-            <node concept="1YBJjd" id="6Go9U2yA8hF" role="2OEOjV">
+            <node concept="1YBJjd" id="6Go9U2yA8hF" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2y_TAz" resolve="iFormatConversionFlagNeedsWidth" />
             </node>
           </node>
@@ -1506,7 +1506,7 @@
                 <property role="Xl_RC" value="only one of the following flags can be used: " />
               </node>
             </node>
-            <node concept="1YBJjd" id="6Go9U2yAdHA" role="2OEOjV">
+            <node concept="1YBJjd" id="6Go9U2yAdHA" role="1urrMF">
               <ref role="1YBMHb" node="6Go9U2yA8WH" resolve="iFormatConversionFlagPrefixesValue" />
             </node>
           </node>
@@ -1575,9 +1575,6 @@
       <node concept="3clFbJ" id="7hVsScEjtdb" role="3cqZAp">
         <node concept="3clFbS" id="7hVsScEjtdc" role="3clFbx">
           <node concept="2MkqsV" id="7hVsScEjuVJ" role="3cqZAp">
-            <node concept="1YBJjd" id="7hVsScEjx5N" role="2OEOjV">
-              <ref role="1YBMHb" node="7hVsScEjt5N" resolve="iFormatConversionFloatingPointNoBigDecimal" />
-            </node>
             <node concept="3cpWs3" id="7hVsScEjvl1" role="2MkJ7o">
               <node concept="3cpWs3" id="7hVsScEjvl2" role="3uHU7B">
                 <node concept="2OqwBi" id="7hVsScEjvl3" role="3uHU7w">
@@ -1595,6 +1592,9 @@
               <node concept="Xl_RD" id="7hVsScEjvl7" role="3uHU7w">
                 <property role="Xl_RC" value=" expressions" />
               </node>
+            </node>
+            <node concept="1YBJjd" id="7hVsScEjx5N" role="1urrMF">
+              <ref role="1YBMHb" node="7hVsScEjt5N" resolve="iFormatConversionFloatingPointNoBigDecimal" />
             </node>
           </node>
         </node>
@@ -1634,11 +1634,11 @@
       <node concept="3clFbJ" id="41Fzz2axGOp" role="3cqZAp">
         <node concept="3clFbS" id="41Fzz2axGOq" role="3clFbx">
           <node concept="a7r0C" id="41Fzz2azdtW" role="3cqZAp">
-            <node concept="1YBJjd" id="41Fzz2azftb" role="2OEOjV">
-              <ref role="1YBMHb" node="41Fzz2axGFg" resolve="conversionWidthInteger" />
-            </node>
             <node concept="Xl_RD" id="41Fzz2axIxa" role="a7wSD">
               <property role="Xl_RC" value="width should not start with 0" />
+            </node>
+            <node concept="1YBJjd" id="41Fzz2azftb" role="1urrMF">
+              <ref role="1YBMHb" node="41Fzz2axGFg" resolve="conversionWidthInteger" />
             </node>
           </node>
         </node>

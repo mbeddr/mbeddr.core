@@ -86,9 +86,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -97,6 +94,9 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -335,7 +335,7 @@
         <node concept="Xl_RD" id="7T$_el8ntYM" role="2MkJ7o">
           <property role="Xl_RC" value="set of values must be given by a range" />
         </node>
-        <node concept="1YBJjd" id="7T$_el8nu7_" role="2OEOjV">
+        <node concept="1YBJjd" id="7T$_el8nu7_" role="1urrMF">
           <ref role="1YBMHb" node="7T$_el8nrLu" resolve="randomAssign" />
         </node>
       </node>
@@ -460,7 +460,7 @@
             <node concept="Xl_RD" id="L5b1s45vuc" role="2MkJ7o">
               <property role="Xl_RC" value="missing constraints definition" />
             </node>
-            <node concept="1YBJjd" id="L5b1s45vEc" role="2OEOjV">
+            <node concept="1YBJjd" id="L5b1s45vEc" role="1urrMF">
               <ref role="1YBMHb" node="L5b1s45qpp" resolve="nondetAssign" />
             </node>
           </node>
@@ -514,7 +514,7 @@
             <node concept="37vLTw" id="74PFMXeeS7A" role="2MkJ7o">
               <ref role="3cqZAo" node="74PFMXeeS7$" resolve="msg" />
             </node>
-            <node concept="2GrUjf" id="74PFMXeeS5r" role="2OEOjV">
+            <node concept="2GrUjf" id="74PFMXeeS5r" role="1urrMF">
               <ref role="2Gs0qQ" node="74PFMXeeRYd" resolve="ps" />
             </node>
           </node>

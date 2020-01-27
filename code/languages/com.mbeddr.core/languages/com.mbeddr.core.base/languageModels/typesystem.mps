@@ -168,11 +168,6 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -190,6 +185,11 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
@@ -371,9 +371,6 @@
             </node>
             <node concept="3clFbS" id="3R$6B6bKxFb" role="3clFbx">
               <node concept="2MkqsV" id="3R$6B6bKxGd" role="3cqZAp">
-                <node concept="2GrUjf" id="3R$6B6bKxGK" role="2OEOjV">
-                  <ref role="2Gs0qQ" node="3R$6B6bKxEX" resolve="item" />
-                </node>
                 <node concept="3cpWs3" id="3R$6B6bKxGC" role="2MkJ7o">
                   <node concept="Xl_RD" id="3R$6B6bKxGF" role="3uHU7w">
                     <property role="Xl_RC" value=")" />
@@ -394,6 +391,9 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="2GrUjf" id="3R$6B6bKxGK" role="1urrMF">
+                  <ref role="2Gs0qQ" node="3R$6B6bKxEX" resolve="item" />
                 </node>
               </node>
             </node>
@@ -419,13 +419,13 @@
                     <node concept="Xl_RD" id="7uYRIghZpWP" role="a7wSD">
                       <property role="Xl_RC" value="name should start with a lower case letter" />
                     </node>
-                    <node concept="1YBJjd" id="7uYRIghZpWQ" role="2OEOjV">
-                      <ref role="1YBMHb" node="7uYRIghZpWu" resolve="fcl" />
-                    </node>
-                    <node concept="2ODE4t" id="7uYRIghZpWR" role="2OEWyd">
+                    <node concept="2ODE4t" id="7uYRIghZpWR" role="1urrC5">
                       <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
                     </node>
-                    <node concept="3Cnw8n" id="7uYRIghZq9T" role="2OEOjU">
+                    <node concept="1YBJjd" id="7uYRIghZpWQ" role="1urrMF">
+                      <ref role="1YBMHb" node="7uYRIghZpWu" resolve="fcl" />
+                    </node>
+                    <node concept="3Cnw8n" id="7uYRIghZq9T" role="1urrFz">
                       <ref role="QpYPw" node="7uYRIghZpWS" resolve="fixNameCase" />
                       <node concept="3CnSsL" id="7uYRIghZq9Z" role="3Coj4f">
                         <ref role="QkamJ" node="7uYRIghZpWV" resolve="node" />
@@ -725,13 +725,13 @@
                     <node concept="Xl_RD" id="1TNmgng1yvr" role="a7wSD">
                       <property role="Xl_RC" value="name should start with an upper case letter" />
                     </node>
-                    <node concept="1YBJjd" id="1TNmgng1yvU" role="2OEOjV">
-                      <ref role="1YBMHb" node="7uYRIghZqap" resolve="ucl" />
-                    </node>
-                    <node concept="2ODE4t" id="1TNmgng1yvt" role="2OEWyd">
+                    <node concept="2ODE4t" id="1TNmgng1yvt" role="1urrC5">
                       <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
                     </node>
-                    <node concept="3Cnw8n" id="1TNmgng1yvu" role="2OEOjU">
+                    <node concept="1YBJjd" id="1TNmgng1yvU" role="1urrMF">
+                      <ref role="1YBMHb" node="7uYRIghZqap" resolve="ucl" />
+                    </node>
+                    <node concept="3Cnw8n" id="1TNmgng1yvu" role="1urrFz">
                       <ref role="QpYPw" node="7uYRIghZpWS" resolve="fixNameCase" />
                       <node concept="3CnSsL" id="1TNmgng1yvv" role="3Coj4f">
                         <ref role="QkamJ" node="7uYRIghZpWV" resolve="node" />
@@ -921,11 +921,11 @@
                         <property role="Xl_RC" value="duplicate name " />
                       </node>
                     </node>
-                    <node concept="2GrUjf" id="4qSf1u1TRgs" role="2OEOjV">
-                      <ref role="2Gs0qQ" node="4qSf1u1TRfw" resolve="e" />
-                    </node>
-                    <node concept="2ODE4t" id="4qSf1u1TRgv" role="2OEWyd">
+                    <node concept="2ODE4t" id="4qSf1u1TRgv" role="1urrC5">
                       <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                    <node concept="2GrUjf" id="4qSf1u1TRgs" role="1urrMF">
+                      <ref role="2Gs0qQ" node="4qSf1u1TRfw" resolve="e" />
                     </node>
                   </node>
                 </node>
@@ -979,10 +979,10 @@
             <node concept="Xl_RD" id="7uLL3Mf3R41" role="2MkJ7o">
               <property role="Xl_RC" value="cannot have empty text blocks" />
             </node>
-            <node concept="1YBJjd" id="7uLL3Mf3R42" role="2OEOjV">
+            <node concept="1YBJjd" id="7uLL3Mf3R42" role="1urrMF">
               <ref role="1YBMHb" node="7uLL3Mf3R44" resolve="to" />
             </node>
-            <node concept="3Cnw8n" id="7uLL3Mf3R43" role="2OEOjU">
+            <node concept="3Cnw8n" id="7uLL3Mf3R43" role="1urrFz">
               <property role="ARO6o" value="true" />
               <ref role="QpYPw" node="7uLL3Mf3R45" resolve="fixEmptyTextBlockOwner" />
               <node concept="3CnSsL" id="7uLL3Mf3WNg" role="3Coj4f">
@@ -1048,11 +1048,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1YBJjd" id="3jNX2XuL9kt" role="2OEOjV">
-                  <ref role="1YBMHb" node="3jNX2XuKSmN" resolve="ass" />
-                </node>
-                <node concept="2ODE4t" id="3jNX2XuLcGn" role="2OEWyd">
+                <node concept="2ODE4t" id="3jNX2XuLcGn" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="1YBJjd" id="3jNX2XuL9kt" role="1urrMF">
+                  <ref role="1YBMHb" node="3jNX2XuKSmN" resolve="ass" />
                 </node>
               </node>
             </node>
@@ -1089,11 +1089,11 @@
             <node concept="Xl_RD" id="2PGidvqimZ2" role="2MkJ7o">
               <property role="Xl_RC" value="some results have errors" />
             </node>
-            <node concept="1YBJjd" id="2PGidvqimZ3" role="2OEOjV">
-              <ref role="1YBMHb" node="3jNX2XuKSmN" resolve="ass" />
-            </node>
-            <node concept="2ODE4t" id="2PGidvqimZ6" role="2OEWyd">
+            <node concept="2ODE4t" id="2PGidvqimZ6" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="1YBJjd" id="2PGidvqimZ3" role="1urrMF">
+              <ref role="1YBMHb" node="3jNX2XuKSmN" resolve="ass" />
             </node>
           </node>
         </node>
@@ -1158,7 +1158,7 @@
             <node concept="37vLTw" id="5Hxjapweq69" role="2MkJ7o">
               <ref role="3cqZAo" node="2PGidvqiiit" resolve="m" />
             </node>
-            <node concept="1YBJjd" id="2PGidvqiij6" role="2OEOjV">
+            <node concept="1YBJjd" id="2PGidvqiij6" role="1urrMF">
               <ref role="1YBMHb" node="2PGidvqiihY" resolve="ar" />
             </node>
           </node>
@@ -1206,11 +1206,11 @@
             <node concept="Xl_RD" id="6ibju5018ry" role="2MkJ7o">
               <property role="Xl_RC" value="this assessment must require to be ok" />
             </node>
-            <node concept="37vLTw" id="6ibju5018v9" role="2OEOjV">
-              <ref role="3cqZAo" node="6ibju50132j" resolve="assess" />
-            </node>
-            <node concept="2ODE4t" id="6ibju501rVw" role="2OEWyd">
+            <node concept="2ODE4t" id="6ibju501rVw" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="37vLTw" id="6ibju5018v9" role="1urrMF">
+              <ref role="3cqZAo" node="6ibju50132j" resolve="assess" />
             </node>
           </node>
         </node>
@@ -1307,7 +1307,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="1YBJjd" id="7ii2FhSPnh9" role="2OEOjV">
+                    <node concept="1YBJjd" id="7ii2FhSPnh9" role="1urrMF">
                       <ref role="1YBMHb" node="7ii2FhSOKRZ" resolve="cnc" />
                     </node>
                   </node>
@@ -1421,7 +1421,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1YBJjd" id="2tP2JaaU$4X" role="2OEOjV">
+            <node concept="1YBJjd" id="2tP2JaaU$4X" role="1urrMF">
               <ref role="1YBMHb" node="2tP2JaaUoUl" resolve="cna" />
             </node>
           </node>
@@ -1644,7 +1644,7 @@
                     <property role="Xl_RC" value="can only have one constraint of type " />
                   </node>
                 </node>
-                <node concept="1YBJjd" id="7XSydr9KYs" role="2OEOjV">
+                <node concept="1YBJjd" id="7XSydr9KYs" role="1urrMF">
                   <ref role="1YBMHb" node="7XSydr9rRn" resolve="c" />
                 </node>
               </node>
@@ -1790,7 +1790,7 @@
                               <property role="Xl_RC" value="invalid dependency: " />
                             </node>
                           </node>
-                          <node concept="1YBJjd" id="7XSydrbCFI" role="2OEOjV">
+                          <node concept="1YBJjd" id="7XSydrbCFI" role="1urrMF">
                             <ref role="1YBMHb" node="7XSydrbi6u" resolve="dep" />
                           </node>
                         </node>
@@ -1855,7 +1855,7 @@
                               <property role="Xl_RC" value="invalid dependency: " />
                             </node>
                           </node>
-                          <node concept="1YBJjd" id="7XSydrbDji" role="2OEOjV">
+                          <node concept="1YBJjd" id="7XSydrbDji" role="1urrMF">
                             <ref role="1YBMHb" node="7XSydrbi6u" resolve="dep" />
                           </node>
                         </node>
@@ -1957,7 +1957,7 @@
                             <ref role="37wK5l" to="hwgx:2G8yZXxNStd" resolve="getErrorMessageForElementInCycle" />
                           </node>
                         </node>
-                        <node concept="2GrUjf" id="4ISByPoZ7HO" role="2OEOjV">
+                        <node concept="2GrUjf" id="4ISByPoZ7HO" role="1urrMF">
                           <ref role="2Gs0qQ" node="4ISByPoZ7Gp" resolve="element" />
                         </node>
                       </node>
@@ -2000,7 +2000,7 @@
         <node concept="Xl_RD" id="39ze6xJWX_E" role="2MkJ7o">
           <property role="Xl_RC" value="This is a temporary construct that cannot exist alone!" />
         </node>
-        <node concept="1YBJjd" id="39ze6xJWXGo" role="2OEOjV">
+        <node concept="1YBJjd" id="39ze6xJWXGo" role="1urrMF">
           <ref role="1YBMHb" node="39ze6xJWXe8" resolve="iTemporaryConcept" />
         </node>
       </node>

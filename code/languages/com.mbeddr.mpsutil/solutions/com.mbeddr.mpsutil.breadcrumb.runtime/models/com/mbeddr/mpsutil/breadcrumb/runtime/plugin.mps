@@ -41,6 +41,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -296,6 +297,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -2861,6 +2863,24 @@
                                           </node>
                                         </node>
                                       </node>
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="3HHdT04mxLq" role="ukAjM">
+                                    <node concept="2OqwBi" id="3HHdT04mwtH" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="3HHdT04mupV" role="2Oq$k0">
+                                        <node concept="1rXfSq" id="3HHdT04msZs" role="2Oq$k0">
+                                          <ref role="37wK5l" node="50bu4eotx1l" resolve="getEditorComponent" />
+                                        </node>
+                                        <node concept="liA8E" id="3HHdT04mwhM" role="2OqNvi">
+                                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode()" resolve="getEditedNode" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="3HHdT04mxC1" role="2OqNvi">
+                                        <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="3HHdT04myQa" role="2OqNvi">
+                                      <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                                     </node>
                                   </node>
                                 </node>
@@ -9996,6 +10016,24 @@
               </node>
             </node>
           </node>
+          <node concept="2OqwBi" id="3HHdT04maCT" role="ukAjM">
+            <node concept="2OqwBi" id="3HHdT04m8Nc" role="2Oq$k0">
+              <node concept="2OqwBi" id="3HHdT04m6pz" role="2Oq$k0">
+                <node concept="37vLTw" id="3HHdT04m5iZ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="50bu4epd93V" resolve="editorComponent" />
+                </node>
+                <node concept="liA8E" id="3HHdT04m8uM" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode()" resolve="getEditedNode" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3HHdT04ma_w" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3HHdT04mclr" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3Tmbuc" id="61Pvu7KGePg" role="1B3o_S" />
@@ -11022,7 +11060,40 @@
               </node>
             </node>
           </node>
+          <node concept="1rXfSq" id="3HHdT04lYEG" role="ukAjM">
+            <ref role="37wK5l" node="3HHdT04lTQn" resolve="getRepo" />
+          </node>
         </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3HHdT04lPMj" role="jymVt" />
+    <node concept="3clFb_" id="3HHdT04lTQn" role="jymVt">
+      <property role="TrG5h" value="getRepo" />
+      <node concept="3clFbS" id="3HHdT04lTQq" role="3clF47">
+        <node concept="3cpWs6" id="3HHdT04lV7V" role="3cqZAp">
+          <node concept="2OqwBi" id="3HHdT04lV8d" role="3cqZAk">
+            <node concept="2OqwBi" id="3HHdT04lV8e" role="2Oq$k0">
+              <node concept="2OqwBi" id="3HHdT04lV8f" role="2Oq$k0">
+                <node concept="1rXfSq" id="3HHdT04lV8g" role="2Oq$k0">
+                  <ref role="37wK5l" node="50bu4eov1RO" resolve="getEditorComponent" />
+                </node>
+                <node concept="liA8E" id="3HHdT04lV8h" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode()" resolve="getEditedNode" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3HHdT04lV8i" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3HHdT04lV8j" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="3HHdT04lRe_" role="1B3o_S" />
+      <node concept="3uibUv" id="3HHdT04lWzE" role="3clF45">
+        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
       </node>
     </node>
     <node concept="2tJIrI" id="4o4$mVTCuuL" role="jymVt" />
@@ -11131,6 +11202,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="1rXfSq" id="3HHdT04lZoS" role="ukAjM">
+            <ref role="37wK5l" node="3HHdT04lTQn" resolve="getRepo" />
           </node>
         </node>
       </node>

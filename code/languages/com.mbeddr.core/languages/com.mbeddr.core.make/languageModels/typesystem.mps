@@ -172,11 +172,6 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -194,6 +189,11 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
@@ -367,13 +367,13 @@
                     <node concept="Xl_RD" id="2Vizpn2Mex5" role="a7wSD">
                       <property role="Xl_RC" value="constants should be all upper case" />
                     </node>
-                    <node concept="1YBJjd" id="2Vizpn2Mexb" role="2OEOjV">
-                      <ref role="1YBMHb" node="2Vizpn2MelG" resolve="var" />
-                    </node>
-                    <node concept="2ODE4t" id="2Vizpn2Mw$L" role="2OEWyd">
+                    <node concept="2ODE4t" id="2Vizpn2Mw$L" role="1urrC5">
                       <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
                     </node>
-                    <node concept="3Cnw8n" id="2Vizpn2MxjV" role="2OEOjU">
+                    <node concept="1YBJjd" id="2Vizpn2Mexb" role="1urrMF">
+                      <ref role="1YBMHb" node="2Vizpn2MelG" resolve="var" />
+                    </node>
+                    <node concept="3Cnw8n" id="2Vizpn2MxjV" role="1urrFz">
                       <ref role="QpYPw" node="2Vizpn2Mxjh" resolve="fix_lowerCaseVariable" />
                       <node concept="3CnSsL" id="2Vizpn2MxjW" role="3Coj4f">
                         <ref role="QkamJ" node="2Vizpn2Mxjq" resolve="variable" />
@@ -894,10 +894,10 @@
                             <node concept="Xl_RD" id="1zVqtvgbgUU" role="2MkJ7o">
                               <property role="Xl_RC" value="there must not be any commands with leading empty plain text fragments" />
                             </node>
-                            <node concept="1YBJjd" id="1zVqtvgbgV5" role="2OEOjV">
+                            <node concept="1YBJjd" id="1zVqtvgbgV5" role="1urrMF">
                               <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
                             </node>
-                            <node concept="3Cnw8n" id="1zVqtvgbszI" role="2OEOjU">
+                            <node concept="3Cnw8n" id="1zVqtvgbszI" role="1urrFz">
                               <property role="ARO6o" value="true" />
                               <ref role="QpYPw" node="1zVqtvgbgXa" resolve="fix_convertPlainTextToEmptyLineBefore" />
                               <node concept="3CnSsL" id="1zVqtvgbwGM" role="3Coj4f">
@@ -1076,9 +1076,6 @@
                         <node concept="3clFbJ" id="7PBrk8Pb_h" role="3cqZAp">
                           <node concept="3clFbS" id="7PBrk8Pb_j" role="3clFbx">
                             <node concept="2MkqsV" id="7PBrk8ON$M" role="3cqZAp">
-                              <node concept="1YBJjd" id="7PBrk8ONAh" role="2OEOjV">
-                                <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
-                              </node>
                               <node concept="3cpWs3" id="7PBrk8ON_8" role="2MkJ7o">
                                 <node concept="2OqwBi" id="7PBrk8ON_9" role="3uHU7B">
                                   <node concept="37vLTw" id="7PBrk8ON_a" role="2Oq$k0">
@@ -1090,7 +1087,10 @@
                                   <property role="Xl_RC" value=" directive must not be declared as plain text fragment" />
                                 </node>
                               </node>
-                              <node concept="3Cnw8n" id="7PBrk8PVwV" role="2OEOjU">
+                              <node concept="1YBJjd" id="7PBrk8ONAh" role="1urrMF">
+                                <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
+                              </node>
+                              <node concept="3Cnw8n" id="7PBrk8PVwV" role="1urrFz">
                                 <property role="ARO6o" value="true" />
                                 <ref role="QpYPw" node="7PBrk8P6_Q" resolve="fix_convertPlainTextToDirective" />
                                 <node concept="3CnSsL" id="7PBrk8Q0iK" role="3Coj4f">
@@ -1127,9 +1127,6 @@
                           <node concept="9aQIb" id="7PBrk8PA9E" role="9aQIa">
                             <node concept="3clFbS" id="7PBrk8PA9F" role="9aQI4">
                               <node concept="a7r0C" id="7PBrk8PLlT" role="3cqZAp">
-                                <node concept="1YBJjd" id="7PBrk8PLnZ" role="2OEOjV">
-                                  <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
-                                </node>
                                 <node concept="3cpWs3" id="7PBrk8PLml" role="a7wSD">
                                   <node concept="2OqwBi" id="7PBrk8PLmm" role="3uHU7B">
                                     <node concept="37vLTw" id="7PBrk8PLmn" role="2Oq$k0">
@@ -1140,6 +1137,9 @@
                                   <node concept="Xl_RD" id="7PBrk8PLmp" role="3uHU7w">
                                     <property role="Xl_RC" value=" directive should not be declared as plain text fragment" />
                                   </node>
+                                </node>
+                                <node concept="1YBJjd" id="7PBrk8PLnZ" role="1urrMF">
+                                  <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
                                 </node>
                               </node>
                             </node>
@@ -1185,9 +1185,6 @@
                     <node concept="3clFbJ" id="7EZ1Spof9qq" role="3cqZAp">
                       <node concept="3clFbS" id="7EZ1Spof9qr" role="3clFbx">
                         <node concept="a7r0C" id="7PBrk8PQ9S" role="3cqZAp">
-                          <node concept="1YBJjd" id="7PBrk8PQbG" role="2OEOjV">
-                            <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
-                          </node>
                           <node concept="3cpWs3" id="7PBrk8PQaI" role="a7wSD">
                             <node concept="2OqwBi" id="7PBrk8PQaJ" role="3uHU7B">
                               <node concept="37vLTw" id="7PBrk8PQaK" role="2Oq$k0">
@@ -1200,6 +1197,9 @@
                             <node concept="Xl_RD" id="7PBrk8PQaM" role="3uHU7w">
                               <property role="Xl_RC" value=" directive should not be declared as plain text fragment" />
                             </node>
+                          </node>
+                          <node concept="1YBJjd" id="7PBrk8PQbG" role="1urrMF">
+                            <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
                           </node>
                         </node>
                       </node>
@@ -1273,10 +1273,10 @@
                               <property role="Xl_RC" value=" rule must not be declared as plain text fragment" />
                             </node>
                           </node>
-                          <node concept="1YBJjd" id="7EZ1Spof9qV" role="2OEOjV">
+                          <node concept="1YBJjd" id="7EZ1Spof9qV" role="1urrMF">
                             <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
                           </node>
-                          <node concept="3Cnw8n" id="7EZ1Spof9qW" role="2OEOjU">
+                          <node concept="3Cnw8n" id="7EZ1Spof9qW" role="1urrFz">
                             <property role="ARO6o" value="true" />
                             <ref role="QpYPw" node="7EZ1SpntyOZ" resolve="fix_convertPlainTextToRule" />
                             <node concept="3CnSsL" id="7EZ1Spof9qX" role="3Coj4f">
@@ -1320,10 +1320,10 @@
                           <node concept="Xl_RD" id="7EZ1Spof9r8" role="2MkJ7o">
                             <property role="Xl_RC" value="export modifier must not be entered as plain text fragment" />
                           </node>
-                          <node concept="1YBJjd" id="7EZ1Spof9r9" role="2OEOjV">
+                          <node concept="1YBJjd" id="7EZ1Spof9r9" role="1urrMF">
                             <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
                           </node>
-                          <node concept="3Cnw8n" id="7EZ1Spof9ra" role="2OEOjU">
+                          <node concept="3Cnw8n" id="7EZ1Spof9ra" role="1urrFz">
                             <property role="ARO6o" value="true" />
                             <ref role="QpYPw" node="1zVqtvg1c1F" resolve="fix_convertPlainTextToExportedVariable" />
                             <node concept="3CnSsL" id="7EZ1Spof9rb" role="3Coj4f">
@@ -1358,10 +1358,10 @@
                           <node concept="Xl_RD" id="7EZ1Spof9rm" role="2MkJ7o">
                             <property role="Xl_RC" value="variables must not be declared as plain text fragment" />
                           </node>
-                          <node concept="1YBJjd" id="7EZ1Spof9rn" role="2OEOjV">
+                          <node concept="1YBJjd" id="7EZ1Spof9rn" role="1urrMF">
                             <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
                           </node>
-                          <node concept="3Cnw8n" id="7EZ1Spof9ro" role="2OEOjU">
+                          <node concept="3Cnw8n" id="7EZ1Spof9ro" role="1urrFz">
                             <property role="ARO6o" value="true" />
                             <ref role="QpYPw" node="1zVqtvg5vG_" resolve="fix_convertPlainTextToVariable" />
                             <node concept="3CnSsL" id="7EZ1Spof9rp" role="3Coj4f">
@@ -1584,10 +1584,10 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="1YBJjd" id="l3KBCjYwn0" role="2OEOjV">
+                    <node concept="1YBJjd" id="l3KBCjYwn0" role="1urrMF">
                       <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
                     </node>
-                    <node concept="3Cnw8n" id="l3KBCjYwn1" role="2OEOjU">
+                    <node concept="3Cnw8n" id="l3KBCjYwn1" role="1urrFz">
                       <ref role="QpYPw" node="7EZ1SpnamHL" resolve="fix_extractRuleRefFromPlainText" />
                       <node concept="3CnSsL" id="l3KBCjYwn2" role="3Coj4f">
                         <ref role="QkamJ" node="7EZ1SpnamI6" resolve="plainTextFragment" />
@@ -1850,10 +1850,10 @@
                     <node concept="3n3YKJ" id="l3KBCk3ZI3" role="2OqNvi" />
                   </node>
                 </node>
-                <node concept="1YBJjd" id="l3KBCk3ZI9" role="2OEOjV">
+                <node concept="1YBJjd" id="l3KBCk3ZI9" role="1urrMF">
                   <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
                 </node>
-                <node concept="3Cnw8n" id="l3KBCk3ZI4" role="2OEOjU">
+                <node concept="3Cnw8n" id="l3KBCk3ZI4" role="1urrFz">
                   <ref role="QpYPw" node="4QnOXkB21Ky" resolve="fix_extractMacroFromPlainText" />
                   <node concept="3CnSsL" id="l3KBCk3ZI5" role="3Coj4f">
                     <ref role="QkamJ" node="4QnOXkB21KR" resolve="plainTextFragment" />
@@ -1996,10 +1996,10 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1YBJjd" id="l3KBCk3VjK" role="2OEOjV">
+                <node concept="1YBJjd" id="l3KBCk3VjK" role="1urrMF">
                   <ref role="1YBMHb" node="4QnOXkB1M4T" resolve="plainTextFragment" />
                 </node>
-                <node concept="3Cnw8n" id="l3KBCk3VjL" role="2OEOjU">
+                <node concept="3Cnw8n" id="l3KBCk3VjL" role="1urrFz">
                   <ref role="QpYPw" node="7EZ1Spo1rUg" resolve="fix_extractVariableRefFromPlainText" />
                   <node concept="3CnSsL" id="l3KBCk3VjM" role="3Coj4f">
                     <ref role="QkamJ" node="7EZ1Spo1rUh" resolve="plainTextFragment" />
@@ -2662,13 +2662,13 @@
       <node concept="3clFbJ" id="ErGx9V8KME" role="3cqZAp">
         <node concept="3clFbS" id="ErGx9V8KMG" role="3clFbx">
           <node concept="2MkqsV" id="ErGx9VmqKA" role="3cqZAp">
-            <node concept="1YBJjd" id="ErGx9Vmrae" role="2OEOjV">
-              <ref role="1YBMHb" node="1zVqtvghHSl" resolve="command" />
-            </node>
             <node concept="Xl_RD" id="ErGx9Vmra3" role="2MkJ7o">
               <property role="Xl_RC" value="there must not be any empty commands" />
             </node>
-            <node concept="3Cnw8n" id="ErGx9VnFJQ" role="2OEOjU">
+            <node concept="1YBJjd" id="ErGx9Vmrae" role="1urrMF">
+              <ref role="1YBMHb" node="1zVqtvghHSl" resolve="command" />
+            </node>
+            <node concept="3Cnw8n" id="ErGx9VnFJQ" role="1urrFz">
               <property role="ARO6o" value="true" />
               <ref role="QpYPw" node="1zVqtvghMTL" resolve="fix_emptyCommand" />
               <node concept="3CnSsL" id="ErGx9VnFSo" role="3Coj4f">
@@ -3748,7 +3748,13 @@
       <node concept="3clFbJ" id="2NUzdxFkHgR" role="3cqZAp">
         <node concept="3clFbS" id="2NUzdxFkHgT" role="3clFbx">
           <node concept="2MkqsV" id="2NUzdxFkNnO" role="3cqZAp">
-            <node concept="3Cnw8n" id="2NUzdxFkO2I" role="2OEOjU">
+            <node concept="Xl_RD" id="2NUzdxFkNo0" role="2MkJ7o">
+              <property role="Xl_RC" value="there must not be any empty variable values" />
+            </node>
+            <node concept="1YBJjd" id="2NUzdxFkNpv" role="1urrMF">
+              <ref role="1YBMHb" node="2NUzdxFjklC" resolve="variableValue" />
+            </node>
+            <node concept="3Cnw8n" id="2NUzdxFkO2I" role="1urrFz">
               <ref role="QpYPw" node="2NUzdxFkNqz" resolve="fix_emptyVariableValue" />
               <node concept="3CnSsL" id="2NUzdxFkO61" role="3Coj4f">
                 <ref role="QkamJ" node="2NUzdxFkN_9" resolve="variableValue" />
@@ -3756,12 +3762,6 @@
                   <ref role="1YBMHb" node="2NUzdxFjklC" resolve="variableValue" />
                 </node>
               </node>
-            </node>
-            <node concept="Xl_RD" id="2NUzdxFkNo0" role="2MkJ7o">
-              <property role="Xl_RC" value="there must not be any empty variable values" />
-            </node>
-            <node concept="1YBJjd" id="2NUzdxFkNpv" role="2OEOjV">
-              <ref role="1YBMHb" node="2NUzdxFjklC" resolve="variableValue" />
             </node>
           </node>
         </node>
@@ -3863,13 +3863,13 @@
       <node concept="3clFbJ" id="2NUzdxFlmJu" role="3cqZAp">
         <node concept="3clFbS" id="2NUzdxFlmJv" role="3clFbx">
           <node concept="2MkqsV" id="2NUzdxFlnpL" role="3cqZAp">
-            <node concept="1YBJjd" id="2NUzdxFlnqh" role="2OEOjV">
-              <ref role="1YBMHb" node="2NUzdxFlmJY" resolve="target" />
-            </node>
             <node concept="Xl_RD" id="2NUzdxFlnq6" role="2MkJ7o">
               <property role="Xl_RC" value="there must not be any empty targets" />
             </node>
-            <node concept="3Cnw8n" id="2NUzdxFlouz" role="2OEOjU">
+            <node concept="1YBJjd" id="2NUzdxFlnqh" role="1urrMF">
+              <ref role="1YBMHb" node="2NUzdxFlmJY" resolve="target" />
+            </node>
+            <node concept="3Cnw8n" id="2NUzdxFlouz" role="1urrFz">
               <ref role="QpYPw" node="2NUzdxFlo58" resolve="fix_emptyTarget" />
               <node concept="3CnSsL" id="2NUzdxFloCb" role="3Coj4f">
                 <ref role="QkamJ" node="2NUzdxFlo59" resolve="target" />
@@ -3947,13 +3947,13 @@
       <node concept="3clFbJ" id="2NUzdxFln$7" role="3cqZAp">
         <node concept="3clFbS" id="2NUzdxFln$8" role="3clFbx">
           <node concept="2MkqsV" id="2NUzdxFln$9" role="3cqZAp">
-            <node concept="1YBJjd" id="2NUzdxFln$a" role="2OEOjV">
-              <ref role="1YBMHb" node="2NUzdxFln$$" resolve="prerequisite" />
-            </node>
             <node concept="Xl_RD" id="2NUzdxFln$b" role="2MkJ7o">
               <property role="Xl_RC" value="there must not be any empty prerequisites" />
             </node>
-            <node concept="3Cnw8n" id="2NUzdxFloIb" role="2OEOjU">
+            <node concept="1YBJjd" id="2NUzdxFln$a" role="1urrMF">
+              <ref role="1YBMHb" node="2NUzdxFln$$" resolve="prerequisite" />
+            </node>
+            <node concept="3Cnw8n" id="2NUzdxFloIb" role="1urrFz">
               <ref role="QpYPw" node="2NUzdxFlomw" resolve="fix_emptyPrerequisite" />
               <node concept="3CnSsL" id="2NUzdxFloLt" role="3Coj4f">
                 <ref role="QkamJ" node="2NUzdxFlomx" resolve="prerequisite" />

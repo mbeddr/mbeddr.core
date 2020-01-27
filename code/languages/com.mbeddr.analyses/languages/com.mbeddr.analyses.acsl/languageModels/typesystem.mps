@@ -92,13 +92,13 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1179832490862" name="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" flags="nn" index="2NvLDW" />
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -270,7 +270,7 @@
             <node concept="Xl_RD" id="10dmWHgkVJd" role="2MkJ7o">
               <property role="Xl_RC" value="Condition must be side effects free." />
             </node>
-            <node concept="2OqwBi" id="10dmWHgkVPW" role="2OEOjV">
+            <node concept="2OqwBi" id="10dmWHgkVPW" role="1urrMF">
               <node concept="1YBJjd" id="10dmWHgkVOl" role="2Oq$k0">
                 <ref role="1YBMHb" node="10dmWHgkq18" resolve="iAtomicContract" />
               </node>
@@ -397,11 +397,11 @@
       <node concept="3clFbJ" id="41uzL3EQH0x" role="3cqZAp">
         <node concept="3clFbS" id="41uzL3EQH0y" role="3clFbx">
           <node concept="2MkqsV" id="41uzL3EQLz4" role="3cqZAp">
-            <node concept="1YBJjd" id="41uzL3EQL$x" role="2OEOjV">
-              <ref role="1YBMHb" node="41uzL3EQGu7" resolve="behavior" />
-            </node>
             <node concept="Xl_RD" id="41uzL3EQLzg" role="2MkJ7o">
               <property role="Xl_RC" value="maximum one requires is allowed" />
+            </node>
+            <node concept="1YBJjd" id="41uzL3EQL$x" role="1urrMF">
+              <ref role="1YBMHb" node="41uzL3EQGu7" resolve="behavior" />
             </node>
           </node>
         </node>
@@ -432,11 +432,11 @@
       <node concept="3clFbJ" id="41uzL3EQL_Y" role="3cqZAp">
         <node concept="3clFbS" id="41uzL3EQL_Z" role="3clFbx">
           <node concept="2MkqsV" id="41uzL3EQLA0" role="3cqZAp">
-            <node concept="1YBJjd" id="41uzL3EQLA1" role="2OEOjV">
-              <ref role="1YBMHb" node="41uzL3EQGu7" resolve="behavior" />
-            </node>
             <node concept="Xl_RD" id="41uzL3EQLA2" role="2MkJ7o">
               <property role="Xl_RC" value="maximum one ensures is allowed" />
+            </node>
+            <node concept="1YBJjd" id="41uzL3EQLA1" role="1urrMF">
+              <ref role="1YBMHb" node="41uzL3EQGu7" resolve="behavior" />
             </node>
           </node>
         </node>

@@ -122,9 +122,6 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1179832490862" name="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" flags="nn" index="2NvLDW" />
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -135,6 +132,9 @@
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G">
         <child id="2329696648448631592" name="overridenRules" index="dp_RE" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
@@ -429,11 +429,11 @@
           <node concept="3clFbJ" id="hKaA8r7" role="3cqZAp">
             <node concept="3clFbS" id="hKaA8r8" role="3clFbx">
               <node concept="2MkqsV" id="hKaAhKS" role="3cqZAp">
-                <node concept="1YBJjd" id="hKaAnSG" role="2OEOjV">
-                  <ref role="1YBMHb" node="4X7wieqoMU8" resolve="iMethodCall" />
-                </node>
                 <node concept="Xl_RD" id="hKaAilo" role="2MkJ7o">
                   <property role="Xl_RC" value="wrong number of parameters" />
+                </node>
+                <node concept="1YBJjd" id="hKaAnSG" role="1urrMF">
+                  <ref role="1YBMHb" node="4X7wieqoMU8" resolve="iMethodCall" />
                 </node>
               </node>
             </node>

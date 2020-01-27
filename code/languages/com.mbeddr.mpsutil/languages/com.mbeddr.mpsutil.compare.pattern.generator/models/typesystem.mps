@@ -107,9 +107,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -118,6 +115,9 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -582,11 +582,11 @@
           <node concept="3clFbJ" id="ShU0rYY_4x" role="3cqZAp">
             <node concept="3clFbS" id="ShU0rYY_4z" role="3clFbx">
               <node concept="2MkqsV" id="ShU0rYY_yj" role="3cqZAp">
-                <node concept="1YBJjd" id="ShU0rYY_Hy" role="2OEOjV">
-                  <ref role="1YBMHb" node="ShU0rYY9rG" resolve="condition" />
-                </node>
                 <node concept="Xl_RD" id="ShU0rYY_y_" role="2MkJ7o">
                   <property role="Xl_RC" value="Condition must be in the form of \&quot;node.match(&lt;pattern&gt;)\&quot; when pattern is used!" />
+                </node>
+                <node concept="1YBJjd" id="ShU0rYY_Hy" role="1urrMF">
+                  <ref role="1YBMHb" node="ShU0rYY9rG" resolve="condition" />
                 </node>
               </node>
             </node>

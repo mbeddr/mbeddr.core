@@ -393,22 +393,27 @@
                     <ref role="ehGHo" to="3ior:6qcrfIJFdKY" resolve="BuildSourcePath" />
                   </node>
                   <node concept="2OqwBi" id="702JZvVdZdr" role="33vP2m">
-                    <node concept="2OqwBi" id="702JZvVdZds" role="2Oq$k0">
-                      <node concept="2OqwBi" id="702JZvVdZdt" role="2Oq$k0">
-                        <node concept="2OqwBi" id="702JZvVdZdu" role="2Oq$k0">
-                          <node concept="30H73N" id="702JZvVdZdv" role="2Oq$k0" />
-                          <node concept="3Tsc0h" id="702JZvVdZdw" role="2OqNvi">
-                            <ref role="3TtcxE" to="kdzh:4zCbl23d1OL" resolve="sources" />
+                    <node concept="2OqwBi" id="3GX5LHIVost" role="2Oq$k0">
+                      <node concept="2OqwBi" id="702JZvVdZds" role="2Oq$k0">
+                        <node concept="2OqwBi" id="702JZvVdZdt" role="2Oq$k0">
+                          <node concept="2OqwBi" id="702JZvVdZdu" role="2Oq$k0">
+                            <node concept="30H73N" id="702JZvVdZdv" role="2Oq$k0" />
+                            <node concept="3Tsc0h" id="702JZvVdZdw" role="2OqNvi">
+                              <ref role="3TtcxE" to="kdzh:4zCbl23d1OL" resolve="sources" />
+                            </node>
+                          </node>
+                          <node concept="v3k3i" id="702JZvVdZdx" role="2OqNvi">
+                            <node concept="chp4Y" id="702JZvVdZdy" role="v3oSu">
+                              <ref role="cht4Q" to="kdzh:3HwLahs6lLg" resolve="BuildMps_ModuleModelRoot" />
+                            </node>
                           </node>
                         </node>
-                        <node concept="v3k3i" id="702JZvVdZdx" role="2OqNvi">
-                          <node concept="chp4Y" id="702JZvVdZdy" role="v3oSu">
-                            <ref role="cht4Q" to="kdzh:3HwLahs6lLg" resolve="BuildMps_ModuleModelRoot" />
-                          </node>
+                        <node concept="13MTOL" id="3GX5LHIVnzm" role="2OqNvi">
+                          <ref role="13MTZf" to="kdzh:73GUf$tPojz" resolve="location" />
                         </node>
                       </node>
-                      <node concept="13MTOL" id="702JZvVdZdz" role="2OqNvi">
-                        <ref role="13MTZf" to="kdzh:3HwLahs6lLi" resolve="folder" />
+                      <node concept="13MTOL" id="3GX5LHIVoRv" role="2OqNvi">
+                        <ref role="13MTZf" to="3ior:4zlO3QT8$mA" resolve="dir" />
                       </node>
                     </node>
                     <node concept="1uHKPH" id="702JZvVdZd$" role="2OqNvi" />

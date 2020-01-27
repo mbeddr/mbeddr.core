@@ -294,13 +294,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
@@ -348,27 +341,6 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="47xghtTLh$P" role="3clF47">
-        <node concept="1X3_iC" id="7J$VjvlXEs8" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="1QHqEM" id="6DZK4Biu$5c" role="8Wnug">
-            <node concept="1QHqEC" id="6DZK4Biu$5e" role="1QHqEI">
-              <node concept="3clFbS" id="6DZK4Biu$5g" role="1bW5cS">
-                <node concept="3clFbF" id="5dSPU6qaBD4" role="3cqZAp">
-                  <node concept="2OqwBi" id="5dSPU6qaBD5" role="3clFbG">
-                    <node concept="2YIFZM" id="5dSPU6qaBD6" role="2Oq$k0">
-                      <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
-                      <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
-                    </node>
-                    <node concept="liA8E" id="5dSPU6qaBD7" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~SModelRepository.saveAll()" resolve="saveAll" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="7MIfWCw4NVT" role="3cqZAp" />
         <node concept="3clFbF" id="6wKLD3Gl2G7" role="3cqZAp">
           <node concept="37vLTI" id="6wKLD3Gl4ps" role="3clFbG">

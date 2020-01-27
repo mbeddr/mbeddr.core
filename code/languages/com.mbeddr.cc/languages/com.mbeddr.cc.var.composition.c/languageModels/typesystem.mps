@@ -86,13 +86,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -237,7 +237,7 @@
         <node concept="Xl_RD" id="12n15PAsfF7" role="2MkJ7o">
           <property role="Xl_RC" value="replacement function must be exported" />
         </node>
-        <node concept="1YBJjd" id="12n15PAsgbs" role="2OEOjV">
+        <node concept="1YBJjd" id="12n15PAsgbs" role="1urrMF">
           <ref role="1YBMHb" node="12n15PAscUo" resolve="replaceCall" />
         </node>
       </node>
@@ -270,11 +270,11 @@
       <node concept="3clFbJ" id="12n15PAsih0" role="3cqZAp">
         <node concept="3clFbS" id="12n15PAsih2" role="3clFbx">
           <node concept="2MkqsV" id="12n15PAsjrb" role="3cqZAp">
-            <node concept="37vLTw" id="12n15PAsjrE" role="2OEOjV">
-              <ref role="3cqZAo" node="12n15PAsi1O" resolve="matchStrategy" />
-            </node>
             <node concept="Xl_RD" id="12n15PAsjrt" role="2MkJ7o">
               <property role="Xl_RC" value="matching strategy must be exactly function call matchers" />
+            </node>
+            <node concept="37vLTw" id="12n15PAsjrE" role="1urrMF">
+              <ref role="3cqZAo" node="12n15PAsi1O" resolve="matchStrategy" />
             </node>
           </node>
         </node>
@@ -468,9 +468,6 @@
             <node concept="Xl_RD" id="12n15PAsSV6" role="2MkJ7o">
               <property role="Xl_RC" value="replacement and to be replaced functions must have the same number of arguments" />
             </node>
-            <node concept="37vLTw" id="12n15PAsTrs" role="2OEOjV">
-              <ref role="3cqZAo" node="12n15PAsvtE" resolve="replacementFunction" />
-            </node>
             <node concept="3clFbC" id="12n15PAsRDU" role="2MkoU_">
               <node concept="37vLTw" id="12n15PAsTVH" role="3uHU7B">
                 <ref role="3cqZAo" node="12n15PAsTVB" resolve="s1" />
@@ -478,6 +475,9 @@
               <node concept="37vLTw" id="12n15PAsUUE" role="3uHU7w">
                 <ref role="3cqZAo" node="12n15PAsUU$" resolve="s2" />
               </node>
+            </node>
+            <node concept="37vLTw" id="12n15PAsTrs" role="1urrMF">
+              <ref role="3cqZAo" node="12n15PAsvtE" resolve="replacementFunction" />
             </node>
           </node>
           <node concept="3clFbH" id="12n15PAs$tD" role="3cqZAp" />

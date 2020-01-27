@@ -2,7 +2,7 @@
 <model ref="r:4595fe28-70e7-433c-8fef-2b74cf276f62(com.mbeddr.ext.compositecomponents.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -121,10 +121,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -142,6 +138,10 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
@@ -311,7 +311,7 @@
                 <node concept="Xl_RD" id="6JVEnxIjsW1" role="a7wSD">
                   <property role="Xl_RC" value="internal instances might not be initialized from within the 'on init' runnable" />
                 </node>
-                <node concept="1YBJjd" id="6JVEnxIjsW0" role="2OEOjV">
+                <node concept="1YBJjd" id="6JVEnxIjsW0" role="1urrMF">
                   <ref role="1YBMHb" node="6JVEnxIjpG1" resolve="ccic" />
                 </node>
               </node>
@@ -477,10 +477,10 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="2GrUjf" id="36a7yl96IMD" role="2OEOjV">
+                      <node concept="2GrUjf" id="36a7yl96IMD" role="1urrMF">
                         <ref role="2Gs0qQ" node="3NbXXzWvorq" resolve="ci" />
                       </node>
-                      <node concept="3Cnw8n" id="36a7yl96IME" role="2OEOjU">
+                      <node concept="3Cnw8n" id="36a7yl96IME" role="1urrFz">
                         <ref role="QpYPw" node="6qL8nDXpIFc" resolve="reexportModuleContainingInterface" />
                         <node concept="3CnSsL" id="36a7yl96IMF" role="3Coj4f">
                           <ref role="QkamJ" node="6qL8nDXpIFf" resolve="import" />
@@ -548,10 +548,10 @@
                           <node concept="Xl_RD" id="jSY5CLegml" role="2MkJ7o">
                             <property role="Xl_RC" value="Component must be exported because Composite Component is exported" />
                           </node>
-                          <node concept="37vLTw" id="jSY5CLegmm" role="2OEOjV">
+                          <node concept="37vLTw" id="jSY5CLegmm" role="1urrMF">
                             <ref role="3cqZAo" node="jSY5CLeglg" resolve="it" />
                           </node>
-                          <node concept="3Cnw8n" id="jSY5CLeh$P" role="2OEOjU">
+                          <node concept="3Cnw8n" id="jSY5CLeh$P" role="1urrFz">
                             <ref role="QpYPw" node="jSY5CLegmn" resolve="exportComponent" />
                             <node concept="3CnSsL" id="jSY5CLeh$Q" role="3Coj4f">
                               <ref role="QkamJ" node="jSY5CLegmq" resolve="c" />
@@ -805,7 +805,7 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="2GrUjf" id="71UKpntp00t" role="2OEOjV">
+                            <node concept="2GrUjf" id="71UKpntp00t" role="1urrMF">
                               <ref role="2Gs0qQ" node="71UKpntoZUd" resolve="port" />
                             </node>
                           </node>
@@ -855,7 +855,7 @@
                 <node concept="Xl_RD" id="7Ua2xCYiqhQ" role="2MkJ7o">
                   <property role="Xl_RC" value="required port is not delegated to internal instance" />
                 </node>
-                <node concept="2GrUjf" id="7Ua2xCYiql1" role="2OEOjV">
+                <node concept="2GrUjf" id="7Ua2xCYiql1" role="1urrMF">
                   <ref role="2Gs0qQ" node="7Ua2xCYipk8" resolve="port" />
                 </node>
               </node>
@@ -875,7 +875,7 @@
                 <node concept="Xl_RD" id="7moPk04GDYP" role="2MkJ7o">
                   <property role="Xl_RC" value="same provided port already delegated" />
                 </node>
-                <node concept="2GrUjf" id="7moPk04GE0t" role="2OEOjV">
+                <node concept="2GrUjf" id="7moPk04GE0t" role="1urrMF">
                   <ref role="2Gs0qQ" node="7moPk04GqQa" resolve="dc" />
                 </node>
               </node>
@@ -1097,7 +1097,7 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="2GrUjf" id="6TyOmiFHDdx" role="2OEOjV">
+                        <node concept="2GrUjf" id="6TyOmiFHDdx" role="1urrMF">
                           <ref role="2Gs0qQ" node="6TyOmiFHm8I" resolve="port" />
                         </node>
                       </node>
@@ -1247,7 +1247,7 @@
                     <node concept="Xl_RD" id="3MbWJkYcp4H" role="2MkJ7o">
                       <property role="Xl_RC" value="optional ports can only be delegated to optional ports" />
                     </node>
-                    <node concept="1YBJjd" id="3MbWJkYcp6L" role="2OEOjV">
+                    <node concept="1YBJjd" id="3MbWJkYcp6L" role="1urrMF">
                       <ref role="1YBMHb" node="3MbWJkYbWTc" resolve="dc" />
                     </node>
                   </node>
@@ -1409,9 +1409,6 @@
               <node concept="3clFbJ" id="K3KnZNFfq2" role="3cqZAp">
                 <node concept="3clFbS" id="K3KnZNFfq3" role="3clFbx">
                   <node concept="2MkqsV" id="K3KnZNFfq4" role="3cqZAp">
-                    <node concept="1YBJjd" id="K3KnZNIEPj" role="2OEOjV">
-                      <ref role="1YBMHb" node="K3KnZNI9p4" resolve="ci" />
-                    </node>
                     <node concept="3cpWs3" id="K3KnZNFfq6" role="2MkJ7o">
                       <node concept="3cpWs3" id="K3KnZNFfq7" role="3uHU7B">
                         <node concept="Xl_RD" id="K3KnZNFfq8" role="3uHU7B">
@@ -1429,6 +1426,9 @@
                       <node concept="Xl_RD" id="K3KnZNFfqc" role="3uHU7w">
                         <property role="Xl_RC" value=") is not connected and is not a delegation" />
                       </node>
+                    </node>
+                    <node concept="1YBJjd" id="K3KnZNIEPj" role="1urrMF">
+                      <ref role="1YBMHb" node="K3KnZNI9p4" resolve="ci" />
                     </node>
                   </node>
                 </node>

@@ -2,7 +2,7 @@
 <model ref="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachines.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -130,10 +130,6 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -142,6 +138,10 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -377,7 +377,7 @@
             <node concept="Xl_RD" id="5ak6HMA0tzY" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of arguments" />
             </node>
-            <node concept="1YBJjd" id="vvmfCe70jG" role="2OEOjV">
+            <node concept="1YBJjd" id="vvmfCe70jG" role="1urrMF">
               <ref role="1YBMHb" node="7BISmlsIpPF" resolve="sendStatement" />
             </node>
           </node>
@@ -531,7 +531,7 @@
             <node concept="Xl_RD" id="vvmfCe7haO" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of arguments" />
             </node>
-            <node concept="1YBJjd" id="vvmfCe7haP" role="2OEOjV">
+            <node concept="1YBJjd" id="vvmfCe7haP" role="1urrMF">
               <ref role="1YBMHb" node="vvmfCe77TN" resolve="binding" />
             </node>
           </node>
@@ -705,7 +705,7 @@
             <node concept="Xl_RD" id="41KMvfcfWUA" role="2MkJ7o">
               <property role="Xl_RC" value="only state machines can be used here" />
             </node>
-            <node concept="2OqwBi" id="41KMvfcfWUC" role="2OEOjV">
+            <node concept="2OqwBi" id="41KMvfcfWUC" role="1urrMF">
               <node concept="1YBJjd" id="41KMvfcfWUB" role="2Oq$k0">
                 <ref role="1YBMHb" node="41KMvfcfWU0" resolve="smt" />
               </node>
@@ -808,7 +808,7 @@
             <node concept="Xl_RD" id="1nOZGI8BYC9" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of arguments" />
             </node>
-            <node concept="1YBJjd" id="1nOZGI8BYCA" role="2OEOjV">
+            <node concept="1YBJjd" id="1nOZGI8BYCA" role="1urrMF">
               <ref role="1YBMHb" node="1nOZGI8BYC5" resolve="triggerSt" />
             </node>
           </node>
@@ -864,7 +864,7 @@
             <node concept="Xl_RD" id="1nOZGI8BYHy" role="2MkJ7o">
               <property role="Xl_RC" value="trigger can only be the last element of an entry action" />
             </node>
-            <node concept="1YBJjd" id="1nOZGI8BYHz" role="2OEOjV">
+            <node concept="1YBJjd" id="1nOZGI8BYHz" role="1urrMF">
               <ref role="1YBMHb" node="1nOZGI8BYC5" resolve="triggerSt" />
             </node>
           </node>
@@ -1027,11 +1027,11 @@
             <node concept="Xl_RD" id="3UlEobTHn7F" role="2MkJ7o">
               <property role="Xl_RC" value="Currently, composite states cannot be initial states." />
             </node>
-            <node concept="1YBJjd" id="3UlEobTHn7G" role="2OEOjV">
-              <ref role="1YBMHb" node="3Ppi0nTiYMI" resolve="sm" />
-            </node>
-            <node concept="2OE7Q9" id="3UlEobTHn87" role="2OEWyd">
+            <node concept="2OE7Q9" id="3UlEobTHn87" role="1urrC5">
               <ref role="2OEe5H" to="clqz:50Lk78xBrai" resolve="initial" />
+            </node>
+            <node concept="1YBJjd" id="3UlEobTHn7G" role="1urrMF">
+              <ref role="1YBMHb" node="3Ppi0nTiYMI" resolve="sm" />
             </node>
           </node>
         </node>
@@ -1060,11 +1060,11 @@
                 <node concept="Xl_RD" id="7cdlZsDKfVW" role="2MkJ7o">
                   <property role="Xl_RC" value="strict state machines need an error message defined (in the inspector)" />
                 </node>
-                <node concept="1YBJjd" id="7cdlZsDKfVX" role="2OEOjV">
-                  <ref role="1YBMHb" node="3Ppi0nTiYMI" resolve="sm" />
-                </node>
-                <node concept="2ODE4t" id="7cdlZsDKfW0" role="2OEWyd">
+                <node concept="2ODE4t" id="7cdlZsDKfW0" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="1YBJjd" id="7cdlZsDKfVX" role="1urrMF">
+                  <ref role="1YBMHb" node="3Ppi0nTiYMI" resolve="sm" />
                 </node>
               </node>
             </node>
@@ -1153,11 +1153,11 @@
                 <node concept="Xl_RD" id="4qSf1u1TRgr" role="2MkJ7o">
                   <property role="Xl_RC" value="duplicate name" />
                 </node>
-                <node concept="2GrUjf" id="4qSf1u1TRgs" role="2OEOjV">
-                  <ref role="2Gs0qQ" node="4qSf1u1TRfw" resolve="e" />
-                </node>
-                <node concept="2ODE4t" id="4qSf1u1TRgv" role="2OEWyd">
+                <node concept="2ODE4t" id="4qSf1u1TRgv" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="2GrUjf" id="4qSf1u1TRgs" role="1urrMF">
+                  <ref role="2Gs0qQ" node="4qSf1u1TRfw" resolve="e" />
                 </node>
               </node>
             </node>
@@ -1227,11 +1227,11 @@
                 <node concept="Xl_RD" id="3Ppi0nTiYNg" role="2MkJ7o">
                   <property role="Xl_RC" value="duplicate name" />
                 </node>
-                <node concept="2GrUjf" id="3Ppi0nTiYNh" role="2OEOjV">
-                  <ref role="2Gs0qQ" node="3Ppi0nTiYN1" resolve="e" />
-                </node>
-                <node concept="2ODE4t" id="3Ppi0nTiYNi" role="2OEWyd">
+                <node concept="2ODE4t" id="3Ppi0nTiYNi" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="2GrUjf" id="3Ppi0nTiYNh" role="1urrMF">
+                  <ref role="2Gs0qQ" node="3Ppi0nTiYN1" resolve="e" />
                 </node>
               </node>
             </node>
@@ -1301,11 +1301,11 @@
                 <node concept="Xl_RD" id="3Ppi0nTiYNN" role="2MkJ7o">
                   <property role="Xl_RC" value="duplicate name" />
                 </node>
-                <node concept="2GrUjf" id="3Ppi0nTiYNO" role="2OEOjV">
-                  <ref role="2Gs0qQ" node="3Ppi0nTiYN$" resolve="e" />
-                </node>
-                <node concept="2ODE4t" id="3Ppi0nTiYNP" role="2OEWyd">
+                <node concept="2ODE4t" id="3Ppi0nTiYNP" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="2GrUjf" id="3Ppi0nTiYNO" role="1urrMF">
+                  <ref role="2Gs0qQ" node="3Ppi0nTiYN$" resolve="e" />
                 </node>
               </node>
             </node>
@@ -1375,11 +1375,11 @@
                 <node concept="Xl_RD" id="3Ppi0nTiYOm" role="2MkJ7o">
                   <property role="Xl_RC" value="duplicate name" />
                 </node>
-                <node concept="2GrUjf" id="3Ppi0nTiYOn" role="2OEOjV">
-                  <ref role="2Gs0qQ" node="3Ppi0nTiYO7" resolve="e" />
-                </node>
-                <node concept="2ODE4t" id="3Ppi0nTiYOo" role="2OEWyd">
+                <node concept="2ODE4t" id="3Ppi0nTiYOo" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="2GrUjf" id="3Ppi0nTiYOn" role="1urrMF">
+                  <ref role="2Gs0qQ" node="3Ppi0nTiYO7" resolve="e" />
                 </node>
               </node>
             </node>
@@ -1484,7 +1484,7 @@
                 <node concept="Xl_RD" id="47Sr75PnVmr" role="2MkJ7o">
                   <property role="Xl_RC" value="can only have one entry action" />
                 </node>
-                <node concept="2GrUjf" id="47Sr75PnVnm" role="2OEOjV">
+                <node concept="2GrUjf" id="47Sr75PnVnm" role="1urrMF">
                   <ref role="2Gs0qQ" node="47Sr75PnVmL" resolve="e" />
                 </node>
               </node>
@@ -1559,7 +1559,7 @@
                 <node concept="Xl_RD" id="47Sr75PnVnA" role="2MkJ7o">
                   <property role="Xl_RC" value="can only have one exit action" />
                 </node>
-                <node concept="2GrUjf" id="47Sr75PnVnB" role="2OEOjV">
+                <node concept="2GrUjf" id="47Sr75PnVnB" role="1urrMF">
                   <ref role="2Gs0qQ" node="47Sr75PnVny" resolve="e" />
                 </node>
               </node>
@@ -1598,7 +1598,7 @@
             <node concept="Xl_RD" id="6hD5iiwaVxW" role="2MkJ7o">
               <property role="Xl_RC" value="references to state machine variables cannot be used in variable initializers" />
             </node>
-            <node concept="1YBJjd" id="6hD5iiwaVxX" role="2OEOjV">
+            <node concept="1YBJjd" id="6hD5iiwaVxX" role="1urrMF">
               <ref role="1YBMHb" node="6hD5iiwaVwV" resolve="vr" />
             </node>
           </node>
@@ -1630,11 +1630,11 @@
             <node concept="Xl_RD" id="3FSHg1aAZcl" role="2MkJ7o">
               <property role="Xl_RC" value="Statemachines without events are not allowed" />
             </node>
-            <node concept="1YBJjd" id="3FSHg1aAZcm" role="2OEOjV">
-              <ref role="1YBMHb" node="3FSHg1aAZbn" resolve="statemachine" />
-            </node>
-            <node concept="2ODE4t" id="3FSHg1aAZcp" role="2OEWyd">
+            <node concept="2ODE4t" id="3FSHg1aAZcp" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="1YBJjd" id="3FSHg1aAZcm" role="1urrMF">
+              <ref role="1YBMHb" node="3FSHg1aAZbn" resolve="statemachine" />
             </node>
           </node>
         </node>
@@ -1717,11 +1717,11 @@
                 <node concept="Xl_RD" id="7rX8gRKHIqx" role="a7wSD">
                   <property role="Xl_RC" value="unreachable state" />
                 </node>
-                <node concept="1YBJjd" id="7rX8gRKHIqy" role="2OEOjV">
-                  <ref role="1YBMHb" node="7rX8gRKHIeW" resolve="s" />
-                </node>
-                <node concept="2ODE4t" id="7rX8gRKHJDZ" role="2OEWyd">
+                <node concept="2ODE4t" id="7rX8gRKHJDZ" role="1urrC5">
                   <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="1YBJjd" id="7rX8gRKHIqy" role="1urrMF">
+                  <ref role="1YBMHb" node="7rX8gRKHIeW" resolve="s" />
                 </node>
               </node>
             </node>
@@ -1977,7 +1977,7 @@
             <node concept="Xl_RD" id="5jCi3tKcLHf" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of arguments" />
             </node>
-            <node concept="1YBJjd" id="5jCi3tKcQzt" role="2OEOjV">
+            <node concept="1YBJjd" id="5jCi3tKcQzt" role="1urrMF">
               <ref role="1YBMHb" node="5jCi3tKcLgL" resolve="trigger" />
             </node>
           </node>
@@ -2261,11 +2261,11 @@
       <node concept="3clFbJ" id="748qYEDI$ZT" role="3cqZAp">
         <node concept="3clFbS" id="748qYEDI$ZV" role="3clFbx">
           <node concept="2MkqsV" id="748qYEDI_ki" role="3cqZAp">
-            <node concept="1YBJjd" id="748qYEDI_mH" role="2OEOjV">
-              <ref role="1YBMHb" node="748qYEDI$$Y" resolve="eventArg" />
-            </node>
             <node concept="Xl_RD" id="1LDGRqyYkUg" role="2MkJ7o">
               <property role="Xl_RC" value="event argument cannot have 'void' type" />
+            </node>
+            <node concept="1YBJjd" id="748qYEDI_mH" role="1urrMF">
+              <ref role="1YBMHb" node="748qYEDI$$Y" resolve="eventArg" />
             </node>
           </node>
         </node>
@@ -2296,7 +2296,7 @@
             <node concept="Xl_RD" id="5sNDy3bBMzO" role="2MkJ7o">
               <property role="Xl_RC" value="statemachine variable must not be const" />
             </node>
-            <node concept="1YBJjd" id="5sNDy3bBM_C" role="2OEOjV">
+            <node concept="1YBJjd" id="5sNDy3bBM_C" role="1urrMF">
               <ref role="1YBMHb" node="5sNDy3bBKzk" resolve="svd" />
             </node>
           </node>

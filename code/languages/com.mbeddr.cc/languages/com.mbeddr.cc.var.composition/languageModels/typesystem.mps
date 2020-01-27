@@ -73,13 +73,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -151,7 +151,7 @@
             <node concept="Xl_RD" id="3YyHFqO644q" role="2MkJ7o">
               <property role="Xl_RC" value="can only be used with named concepts" />
             </node>
-            <node concept="1YBJjd" id="3YyHFqO645o" role="2OEOjV">
+            <node concept="1YBJjd" id="3YyHFqO645o" role="1urrMF">
               <ref role="1YBMHb" node="3YyHFqO62Dc" resolve="strategy" />
             </node>
           </node>
@@ -189,7 +189,7 @@
             <node concept="Xl_RD" id="5be2k4jVPG5" role="2MkJ7o">
               <property role="Xl_RC" value="can only be used inside chunks marked as Compose Only" />
             </node>
-            <node concept="1YBJjd" id="5be2k4jVPKl" role="2OEOjV">
+            <node concept="1YBJjd" id="5be2k4jVPKl" role="1urrMF">
               <ref role="1YBMHb" node="5be2k4jVHWk" resolve="icc" />
             </node>
           </node>
@@ -253,7 +253,7 @@
             <node concept="Xl_RD" id="5be2k4jZpt7" role="2MkJ7o">
               <property role="Xl_RC" value="can be used only with collections" />
             </node>
-            <node concept="1YBJjd" id="5be2k4jZpuX" role="2OEOjV">
+            <node concept="1YBJjd" id="5be2k4jZpuX" role="1urrMF">
               <ref role="1YBMHb" node="5be2k4jZg3H" resolve="add" />
             </node>
           </node>
@@ -326,7 +326,7 @@
             <node concept="Xl_RD" id="5B$wwdfb9e$" role="2MkJ7o">
               <property role="Xl_RC" value="can only be used if the composition strategy is 'child-controlled'" />
             </node>
-            <node concept="1YBJjd" id="5B$wwdfb9jU" role="2OEOjV">
+            <node concept="1YBJjd" id="5B$wwdfb9jU" role="1urrMF">
               <ref role="1YBMHb" node="5B$wwdfb4KM" resolve="cca" />
             </node>
           </node>
@@ -371,7 +371,7 @@
             <node concept="Xl_RD" id="5B$wwdfkG0x" role="2MkJ7o">
               <property role="Xl_RC" value="name required" />
             </node>
-            <node concept="1YBJjd" id="5B$wwdfkG2n" role="2OEOjV">
+            <node concept="1YBJjd" id="5B$wwdfkG2n" role="1urrMF">
               <ref role="1YBMHb" node="5B$wwdfkEmP" resolve="ha" />
             </node>
           </node>

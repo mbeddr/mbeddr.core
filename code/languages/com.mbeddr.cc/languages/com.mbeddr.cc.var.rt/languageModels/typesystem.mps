@@ -97,13 +97,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -272,7 +272,7 @@
             <node concept="Xl_RD" id="7H6_Qip5U5Y" role="2MkJ7o">
               <property role="Xl_RC" value="must be an fmconfig&lt;...&gt; type" />
             </node>
-            <node concept="2OqwBi" id="7H6_Qip5U6k" role="2OEOjV">
+            <node concept="2OqwBi" id="7H6_Qip5U6k" role="1urrMF">
               <node concept="1YBJjd" id="7H6_Qip5U5Z" role="2Oq$k0">
                 <ref role="1YBMHb" node="7H6_Qip5U35" resolve="vs" />
               </node>
@@ -291,7 +291,7 @@
                 <node concept="Xl_RD" id="3el1Vh3VFIE" role="a7wSD">
                   <property role="Xl_RC" value="this expression is not idempotent and will likely be evaluated several times in the generated code" />
                 </node>
-                <node concept="2OqwBi" id="3el1Vh3VFJ0" role="2OEOjV">
+                <node concept="2OqwBi" id="3el1Vh3VFJ0" role="1urrMF">
                   <node concept="1YBJjd" id="3el1Vh3VFIF" role="2Oq$k0">
                     <ref role="1YBMHb" node="7H6_Qip5U35" resolve="vs" />
                   </node>
@@ -337,7 +337,7 @@
             <node concept="Xl_RD" id="3el1Vh3VSMD" role="2MkJ7o">
               <property role="Xl_RC" value="at least one case required" />
             </node>
-            <node concept="1YBJjd" id="3el1Vh3VSME" role="2OEOjV">
+            <node concept="1YBJjd" id="3el1Vh3VSME" role="1urrMF">
               <ref role="1YBMHb" node="7H6_Qip5U35" resolve="vs" />
             </node>
           </node>
@@ -434,7 +434,7 @@
                       <node concept="Xl_RD" id="3el1Vh3VSVV" role="2MkJ7o">
                         <property role="Xl_RC" value="only one default allowed" />
                       </node>
-                      <node concept="37vLTw" id="3el1Vh3VSWU" role="2OEOjV">
+                      <node concept="37vLTw" id="3el1Vh3VSWU" role="1urrMF">
                         <ref role="3cqZAo" node="3el1Vh3VSWR" resolve="it" />
                       </node>
                     </node>
@@ -467,7 +467,7 @@
                   <node concept="Xl_RD" id="3el1Vh3VT0b" role="2MkJ7o">
                     <property role="Xl_RC" value="default must be the last option" />
                   </node>
-                  <node concept="2OqwBi" id="3el1Vh3VT0x" role="2OEOjV">
+                  <node concept="2OqwBi" id="3el1Vh3VT0x" role="1urrMF">
                     <node concept="37vLTw" id="2AZbPfMaN2i" role="2Oq$k0">
                       <ref role="3cqZAo" node="3el1Vh3VSUF" resolve="defaults" />
                     </node>
@@ -684,11 +684,11 @@
             <node concept="1bVj0M" id="7H6_Qip6edJ" role="23t8la">
               <node concept="3clFbS" id="7H6_Qip6edK" role="1bW5cS">
                 <node concept="2MkqsV" id="7H6_Qip6edN" role="3cqZAp">
-                  <node concept="37vLTw" id="7H6_Qip6eel" role="2OEOjV">
-                    <ref role="3cqZAo" node="7H6_Qip6edL" resolve="it" />
-                  </node>
                   <node concept="Xl_RD" id="7H6_Qip6ee0" role="2MkJ7o">
                     <property role="Xl_RC" value="not allowed in this context" />
+                  </node>
+                  <node concept="37vLTw" id="7H6_Qip6eel" role="1urrMF">
+                    <ref role="3cqZAo" node="7H6_Qip6edL" resolve="it" />
                   </node>
                 </node>
               </node>
@@ -733,7 +733,7 @@
             <node concept="Xl_RD" id="6W8yq39nY$r" role="2MkJ7o">
               <property role="Xl_RC" value="can only be used on feature refences" />
             </node>
-            <node concept="2OqwBi" id="6W8yq39nY$L" role="2OEOjV">
+            <node concept="2OqwBi" id="6W8yq39nY$L" role="1urrMF">
               <node concept="1YBJjd" id="6W8yq39nY$s" role="2Oq$k0">
                 <ref role="1YBMHb" node="6W8yq39nYyn" resolve="fare" />
               </node>

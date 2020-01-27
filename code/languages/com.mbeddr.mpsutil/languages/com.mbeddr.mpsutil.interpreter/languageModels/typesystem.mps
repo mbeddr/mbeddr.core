@@ -197,9 +197,6 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1179832490862" name="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" flags="nn" index="2NvLDW" />
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
@@ -209,6 +206,9 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -1990,7 +1990,7 @@
                     <property role="Xl_RC" value="duplicated type mapping" />
                   </node>
                 </node>
-                <node concept="1YBJjd" id="44jZT9ptiAj" role="2OEOjV">
+                <node concept="1YBJjd" id="44jZT9ptiAj" role="1urrMF">
                   <ref role="1YBMHb" node="5LSSDsNUTQ5" resolve="baseLanguageTypeMapping" />
                 </node>
               </node>
@@ -2121,7 +2121,7 @@
                     <property role="Xl_RC" value="same fromType, different toType as " />
                   </node>
                 </node>
-                <node concept="1YBJjd" id="44jZT9ptrtd" role="2OEOjV">
+                <node concept="1YBJjd" id="44jZT9ptrtd" role="1urrMF">
                   <ref role="1YBMHb" node="5LSSDsNUTQ5" resolve="baseLanguageTypeMapping" />
                 </node>
               </node>
@@ -2201,7 +2201,7 @@
                 <node concept="Xl_RD" id="27SkbdyVRE4" role="2MkJ7o">
                   <property role="Xl_RC" value="unsolvable relationship order" />
                 </node>
-                <node concept="2GrUjf" id="27Skbdz4gIk" role="2OEOjV">
+                <node concept="2GrUjf" id="27Skbdz4gIk" role="1urrMF">
                   <ref role="2Gs0qQ" node="27Skbdz4eGG" resolve="dependency" />
                 </node>
               </node>
@@ -2313,7 +2313,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2GrUjf" id="27Skbdz5haW" role="2OEOjV">
+                <node concept="2GrUjf" id="27Skbdz5haW" role="1urrMF">
                   <ref role="2Gs0qQ" node="27Skbdz4BHR" resolve="dependency" />
                 </node>
               </node>
@@ -2607,7 +2607,7 @@
                           <node concept="37vLTw" id="5x677oP7XSz" role="2MkJ7o">
                             <ref role="3cqZAo" node="5x677oP7XSp" resolve="errorMessage" />
                           </node>
-                          <node concept="1YBJjd" id="5I6_y3Zgdl4" role="2OEOjV">
+                          <node concept="1YBJjd" id="5I6_y3Zgdl4" role="1urrMF">
                             <ref role="1YBMHb" node="5I6_y3ZcINI" resolve="conceptEvaluator" />
                           </node>
                         </node>
@@ -2621,7 +2621,7 @@
                             <node concept="37vLTw" id="5x677oP8wjK" role="a7wSD">
                               <ref role="3cqZAo" node="5x677oP7XSp" resolve="errorMessage" />
                             </node>
-                            <node concept="1YBJjd" id="5x677oP8ypl" role="2OEOjV">
+                            <node concept="1YBJjd" id="5x677oP8ypl" role="1urrMF">
                               <ref role="1YBMHb" node="5I6_y3ZcINI" resolve="conceptEvaluator" />
                             </node>
                           </node>
@@ -2692,7 +2692,7 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="1YBJjd" id="35ZE6VW3wWj" role="2OEOjV">
+                        <node concept="1YBJjd" id="35ZE6VW3wWj" role="1urrMF">
                           <ref role="1YBMHb" node="5I6_y3ZcINI" resolve="conceptEvaluator" />
                         </node>
                       </node>
@@ -2724,7 +2724,7 @@
             <node concept="Xl_RD" id="5x677oPnrCt" role="2MkJ7o">
               <property role="Xl_RC" value="Evaluator must return a value" />
             </node>
-            <node concept="1YBJjd" id="5x677oPnrQq" role="2OEOjV">
+            <node concept="1YBJjd" id="5x677oPnrQq" role="1urrMF">
               <ref role="1YBMHb" node="5x677oPn6YT" resolve="conceptEvaluatorBody" />
             </node>
           </node>
@@ -3032,7 +3032,7 @@
             <node concept="Xl_RD" id="7oujAIePaaD" role="2MkJ7o">
               <property role="Xl_RC" value="Condition must return a value" />
             </node>
-            <node concept="1YBJjd" id="7oujAIePaEV" role="2OEOjV">
+            <node concept="1YBJjd" id="7oujAIePaEV" role="1urrMF">
               <ref role="1YBMHb" node="7oujAIePa2a" resolve="evaluatorConditionBody" />
             </node>
           </node>
@@ -3288,7 +3288,7 @@
                 <node concept="Xl_RD" id="18$bUx5QaU4" role="2MkJ7o">
                   <property role="Xl_RC" value="must be used as the first statement in an evaluator" />
                 </node>
-                <node concept="1YBJjd" id="18$bUx5QaU5" role="2OEOjV">
+                <node concept="1YBJjd" id="18$bUx5QaU5" role="1urrMF">
                   <ref role="1YBMHb" node="18$bUx5OAwc" resolve="rbs" />
                 </node>
               </node>
@@ -3356,7 +3356,7 @@
               <node concept="Xl_RD" id="18$bUx5OL$m" role="2MkJ7o">
                 <property role="Xl_RC" value="must be used as the first statement in an evaluator" />
               </node>
-              <node concept="1YBJjd" id="18$bUx5OL_q" role="2OEOjV">
+              <node concept="1YBJjd" id="18$bUx5OL_q" role="1urrMF">
                 <ref role="1YBMHb" node="18$bUx5OAwc" resolve="rbs" />
               </node>
             </node>
@@ -3562,9 +3562,6 @@
                 <ref role="Rm8GQ" to="w0gx:~SolutionKind.PLUGIN_OTHER" resolve="PLUGIN_OTHER" />
               </node>
             </node>
-            <node concept="1YBJjd" id="FYOt3k1Sbc" role="2OEOjV">
-              <ref role="1YBMHb" node="FYOt3k0_Gv" resolve="intp" />
-            </node>
             <node concept="3clFbC" id="FYOt3k1RpQ" role="2MkoU_">
               <node concept="Rm8GO" id="FYOt3k1RZB" role="3uHU7w">
                 <ref role="Rm8GQ" to="w0gx:~SolutionKind.PLUGIN_OTHER" resolve="PLUGIN_OTHER" />
@@ -3585,6 +3582,9 @@
                   <ref role="37wK5l" to="z1c3:~Solution.getKind()" resolve="getKind" />
                 </node>
               </node>
+            </node>
+            <node concept="1YBJjd" id="FYOt3k1Sbc" role="1urrMF">
+              <ref role="1YBMHb" node="FYOt3k0_Gv" resolve="intp" />
             </node>
           </node>
         </node>

@@ -8,6 +8,11 @@
       <sourceRoot location="lib/microba-0.4.4.jar" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/microba-0.4.4.jar" />
   </stubModelEntries>

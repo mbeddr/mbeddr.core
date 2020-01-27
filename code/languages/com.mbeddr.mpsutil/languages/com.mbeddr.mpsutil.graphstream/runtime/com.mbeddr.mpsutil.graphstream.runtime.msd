@@ -13,6 +13,11 @@
       <sourceRoot location="de.itemis.graphing.jar" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/gs-algo-1.3.jar" />
     <stubModelEntry path="${module}/lib/gs-core-1.3.jar" />

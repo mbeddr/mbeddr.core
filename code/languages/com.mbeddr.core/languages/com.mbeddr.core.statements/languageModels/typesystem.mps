@@ -154,11 +154,6 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -179,6 +174,11 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
@@ -529,7 +529,7 @@
                         <node concept="Xl_RD" id="1OcdQnyTC4e" role="2MkJ7o">
                           <property role="Xl_RC" value="duplicate local variable" />
                         </node>
-                        <node concept="2GrUjf" id="1OcdQnyTC4f" role="2OEOjV">
+                        <node concept="2GrUjf" id="1OcdQnyTC4f" role="1urrMF">
                           <ref role="2Gs0qQ" node="1OcdQnyTC3p" resolve="other" />
                         </node>
                       </node>
@@ -817,11 +817,11 @@
             <node concept="Xl_RD" id="2I09F8VKNTb" role="2MkJ7o">
               <property role="Xl_RC" value="only one default can be used per switch statement" />
             </node>
-            <node concept="1YBJjd" id="2I09F8VKNTc" role="2OEOjV">
-              <ref role="1YBMHb" node="2I09F8VKNQm" resolve="ss" />
-            </node>
-            <node concept="2OE7Q9" id="5z2tTokeOSk" role="2OEWyd">
+            <node concept="2OE7Q9" id="5z2tTokeOSk" role="1urrC5">
               <ref role="2OEe5H" to="c4fa:2I09F8VKHBX" resolve="expression" />
+            </node>
+            <node concept="1YBJjd" id="2I09F8VKNTc" role="1urrMF">
+              <ref role="1YBMHb" node="2I09F8VKNQm" resolve="ss" />
             </node>
           </node>
         </node>
@@ -934,7 +934,7 @@
                 <node concept="Xl_RD" id="2I09F8VKNRp" role="2MkJ7o">
                   <property role="Xl_RC" value="this type cannot be used in a switch statement" />
                 </node>
-                <node concept="2OqwBi" id="2I09F8VKNRr" role="2OEOjV">
+                <node concept="2OqwBi" id="2I09F8VKNRr" role="1urrMF">
                   <node concept="1YBJjd" id="2I09F8VKNRq" role="2Oq$k0">
                     <ref role="1YBMHb" node="2I09F8VKNQm" resolve="ss" />
                   </node>
@@ -975,7 +975,7 @@
                 <node concept="Xl_RD" id="2I09F8VKNSu" role="a7wSD">
                   <property role="Xl_RC" value="Default should be used as the last element in the cases!" />
                 </node>
-                <node concept="1YBJjd" id="2I09F8VKNSv" role="2OEOjV">
+                <node concept="1YBJjd" id="2I09F8VKNSv" role="1urrMF">
                   <ref role="1YBMHb" node="2I09F8VKNRy" resolve="sd" />
                 </node>
               </node>
@@ -1077,11 +1077,11 @@
             <node concept="Xl_RD" id="3bunux_0Q5D" role="2MkJ7o">
               <property role="Xl_RC" value="must be initialized" />
             </node>
-            <node concept="1YBJjd" id="3bunux_0Q5E" role="2OEOjV">
-              <ref role="1YBMHb" node="3bunux_0Q5h" resolve="forVarDecl" />
-            </node>
-            <node concept="2OE7Q9" id="5z2tTokeOSj" role="2OEWyd">
+            <node concept="2OE7Q9" id="5z2tTokeOSj" role="1urrC5">
               <ref role="2OEe5H" to="c4fa:3CmSUB7Fw7R" resolve="init" />
+            </node>
+            <node concept="1YBJjd" id="3bunux_0Q5E" role="1urrMF">
+              <ref role="1YBMHb" node="3bunux_0Q5h" resolve="forVarDecl" />
             </node>
           </node>
         </node>
@@ -1362,10 +1362,10 @@
             <node concept="Xl_RD" id="4nazFRvnshj" role="2MkJ7o">
               <property role="Xl_RC" value="empty expression statements are not allowed" />
             </node>
-            <node concept="1YBJjd" id="4nazFRvnshk" role="2OEOjV">
+            <node concept="1YBJjd" id="4nazFRvnshk" role="1urrMF">
               <ref role="1YBMHb" node="4nazFRvnsfQ" resolve="es" />
             </node>
-            <node concept="3Cnw8n" id="4nazFRvnshS" role="2OEOjU">
+            <node concept="3Cnw8n" id="4nazFRvnshS" role="1urrFz">
               <property role="ARO6o" value="true" />
               <ref role="QpYPw" node="4nazFRvnshl" resolve="deleteEmptyExpressionStatement" />
               <node concept="3CnSsL" id="4nazFRvnshT" role="3Coj4f">
@@ -1521,11 +1521,11 @@
                       <node concept="3clFbJ" id="7bjxLYAbrLS" role="3cqZAp">
                         <node concept="3clFbS" id="7bjxLYAbrLT" role="3clFbx">
                           <node concept="a7r0C" id="7bjxLYAbrLU" role="3cqZAp">
-                            <node concept="1YBJjd" id="7bjxLYAbrLV" role="2OEOjV">
-                              <ref role="1YBMHb" node="7bjxLYAbrMm" resolve="assignmentExpr" />
-                            </node>
                             <node concept="Xl_RD" id="7bjxLYAbrLW" role="a7wSD">
                               <property role="Xl_RC" value="Undefinded behavior, runtime result might be compiler dependent" />
+                            </node>
+                            <node concept="1YBJjd" id="7bjxLYAbrLV" role="1urrMF">
+                              <ref role="1YBMHb" node="7bjxLYAbrMm" resolve="assignmentExpr" />
                             </node>
                           </node>
                         </node>
@@ -1855,7 +1855,7 @@
                               <node concept="Xl_RD" id="2hvQkqcOMMf" role="2MkJ7o">
                                 <property role="Xl_RC" value="could not calculate type" />
                               </node>
-                              <node concept="2GrUjf" id="2hvQkqcOMO3" role="2OEOjV">
+                              <node concept="2GrUjf" id="2hvQkqcOMO3" role="1urrMF">
                                 <ref role="2Gs0qQ" node="7FkLcyyQK$t" resolve="element" />
                               </node>
                             </node>
@@ -1905,7 +1905,7 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="1YBJjd" id="5aZFu$82xFY" role="2OEOjV">
+                  <node concept="1YBJjd" id="5aZFu$82xFY" role="1urrMF">
                     <ref role="1YBMHb" node="7FkLcyyQK_6" resolve="initExpression" />
                   </node>
                 </node>
@@ -1979,7 +1979,7 @@
                 <node concept="37vLTw" id="7FkLcyyQK_u" role="2MkJ7o">
                   <ref role="3cqZAo" node="7FkLcyyQK_i" resolve="checkForErrors" />
                 </node>
-                <node concept="1YBJjd" id="7FkLcyyQK_v" role="2OEOjV">
+                <node concept="1YBJjd" id="7FkLcyyQK_v" role="1urrMF">
                   <ref role="1YBMHb" node="7FkLcyyQK_B" resolve="initExpression" />
                 </node>
               </node>
@@ -2024,7 +2024,7 @@
                 <node concept="37vLTw" id="5aZFu$86hJc" role="a7wSD">
                   <ref role="3cqZAo" node="5aZFu$86h8Y" resolve="checkForWarnings" />
                 </node>
-                <node concept="1YBJjd" id="5aZFu$86hJ$" role="2OEOjV">
+                <node concept="1YBJjd" id="5aZFu$86hJ$" role="1urrMF">
                   <ref role="1YBMHb" node="7FkLcyyQK_B" resolve="initExpression" />
                 </node>
               </node>
@@ -2146,9 +2146,6 @@
     <property role="TrG5h" value="check_DesignatedInitializer" />
     <node concept="3clFbS" id="1wca57Y4IEm" role="18ibNy">
       <node concept="2Mj0R9" id="1wca57Y4LlQ" role="3cqZAp">
-        <node concept="1YBJjd" id="1wca57Y4Lw2" role="2OEOjV">
-          <ref role="1YBMHb" node="1wca57Y4IEo" resolve="initializer" />
-        </node>
         <node concept="Xl_RD" id="1wca57Y4Lsd" role="2MkJ7o">
           <property role="Xl_RC" value="Must be statically evaluatable!" />
         </node>
@@ -2177,6 +2174,9 @@
               <ref role="37wK5l" to="ywuz:3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
             </node>
           </node>
+        </node>
+        <node concept="1YBJjd" id="1wca57Y4Lw2" role="1urrMF">
+          <ref role="1YBMHb" node="1wca57Y4IEo" resolve="initializer" />
         </node>
       </node>
     </node>
@@ -2350,7 +2350,7 @@
                 <node concept="Xl_RD" id="6T3uXzTgMe7" role="2MkJ7o">
                   <property role="Xl_RC" value="multiple storage classes at the same time (static, extern and register)" />
                 </node>
-                <node concept="1YBJjd" id="6T3uXzTgMfh" role="2OEOjV">
+                <node concept="1YBJjd" id="6T3uXzTgMfh" role="1urrMF">
                   <ref role="1YBMHb" node="6T3uXzTgIE4" resolve="lvd" />
                 </node>
               </node>
@@ -2434,7 +2434,7 @@
             <node concept="Xl_RD" id="6T3uXzTi9_f" role="2MkJ7o">
               <property role="Xl_RC" value="invisible statement lists are only allowed in the generator" />
             </node>
-            <node concept="1YBJjd" id="6T3uXzTi9Ai" role="2OEOjV">
+            <node concept="1YBJjd" id="6T3uXzTi9Ai" role="1urrMF">
               <ref role="1YBMHb" node="6T3uXzTi8ud" resolve="statementList" />
             </node>
           </node>

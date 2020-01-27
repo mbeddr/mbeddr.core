@@ -23,6 +23,7 @@
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="pa15" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.persistence(MPS.Core/)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -869,6 +870,14 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="2OqwBi" id="3HHdT04kCnq" role="ukAjM">
+                    <node concept="37vLTw" id="3HHdT04kB_L" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7Ynnt_OibxO" resolve="module" />
+                    </node>
+                    <node concept="liA8E" id="3HHdT04kD27" role="2OqNvi">
+                      <ref role="37wK5l" to="31cb:~SModuleBase.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -987,6 +996,14 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3HHdT04kDUI" role="ukAjM">
+            <node concept="37vLTw" id="3HHdT04kDf$" role="2Oq$k0">
+              <ref role="3cqZAo" node="sa5eTsu7F4" resolve="module" />
+            </node>
+            <node concept="liA8E" id="3HHdT04kEsp" role="2OqNvi">
+              <ref role="37wK5l" to="31cb:~SModuleBase.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>

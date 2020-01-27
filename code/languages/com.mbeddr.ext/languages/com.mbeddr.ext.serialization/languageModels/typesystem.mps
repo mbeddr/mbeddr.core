@@ -2,7 +2,7 @@
 <model ref="r:8b1352aa-99a0-4051-966c-597abfa8e99f(com.mbeddr.ext.serialization.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -155,9 +155,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -166,6 +163,9 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -318,7 +318,7 @@
             <node concept="Xl_RD" id="3XvCV0KwP9P" role="2MkJ7o">
               <property role="Xl_RC" value="type cannot be used in a message" />
             </node>
-            <node concept="2GrUjf" id="3XvCV0KwPgQ" role="2OEOjV">
+            <node concept="2GrUjf" id="3XvCV0KwPgQ" role="1urrMF">
               <ref role="2Gs0qQ" node="3XvCV0KwM9H" resolve="m" />
             </node>
           </node>
@@ -773,7 +773,7 @@
                 <node concept="Xl_RD" id="3XvCV0KysrV" role="2MkJ7o">
                   <property role="Xl_RC" value="must be a message struct a pointer to a message struct" />
                 </node>
-                <node concept="2OqwBi" id="3XvCV0KyuKR" role="2OEOjV">
+                <node concept="2OqwBi" id="3XvCV0KyuKR" role="1urrMF">
                   <node concept="1YBJjd" id="3XvCV0KyuGC" role="2Oq$k0">
                     <ref role="1YBMHb" node="3XvCV0Kypqt" resolve="writeTarget" />
                   </node>
@@ -925,7 +925,7 @@
                 <node concept="Xl_RD" id="3XvCV0KzA2q" role="2MkJ7o">
                   <property role="Xl_RC" value="must be a pointer to a message struct" />
                 </node>
-                <node concept="2OqwBi" id="3XvCV0KzA2r" role="2OEOjV">
+                <node concept="2OqwBi" id="3XvCV0KzA2r" role="1urrMF">
                   <node concept="1YBJjd" id="3XvCV0KzA2s" role="2Oq$k0">
                     <ref role="1YBMHb" node="3XvCV0KzA2A" resolve="readStatement" />
                   </node>
@@ -1130,7 +1130,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="1YBJjd" id="6pWLWdpyyIb" role="2OEOjV">
+                    <node concept="1YBJjd" id="6pWLWdpyyIb" role="1urrMF">
                       <ref role="1YBMHb" node="1LleiTPosRW" resolve="bufferInitTarget" />
                     </node>
                   </node>
@@ -1392,7 +1392,7 @@
             <node concept="Xl_RD" id="7op4RkOAXfm" role="2MkJ7o">
               <property role="Xl_RC" value="No lenght must be set for StringLiterals" />
             </node>
-            <node concept="2OqwBi" id="7op4RkOAXqk" role="2OEOjV">
+            <node concept="2OqwBi" id="7op4RkOAXqk" role="1urrMF">
               <node concept="1YBJjd" id="7op4RkOAXjY" role="2Oq$k0">
                 <ref role="1YBMHb" node="7op4RkOAUo5" resolve="writeStringArray" />
               </node>
@@ -1717,7 +1717,7 @@
             <node concept="Xl_RD" id="7PpDuQ7AMS6" role="2MkJ7o">
               <property role="Xl_RC" value="can only be called on types with known handler" />
             </node>
-            <node concept="1YBJjd" id="7PpDuQ7AMVS" role="2OEOjV">
+            <node concept="1YBJjd" id="7PpDuQ7AMVS" role="1urrMF">
               <ref role="1YBMHb" node="7PpDuQ7ALk$" resolve="serialInitTarget" />
             </node>
           </node>
@@ -1750,7 +1750,7 @@
             <node concept="Xl_RD" id="7PpDuQ7AMXl" role="2MkJ7o">
               <property role="Xl_RC" value="can only be called on types with known handler" />
             </node>
-            <node concept="1YBJjd" id="7PpDuQ7AMXm" role="2OEOjV">
+            <node concept="1YBJjd" id="7PpDuQ7AMXm" role="1urrMF">
               <ref role="1YBMHb" node="7PpDuQ7AMXs" resolve="serialDisposeTarget" />
             </node>
           </node>

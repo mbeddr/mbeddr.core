@@ -5,6 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <languageVersions>
     <language slang="l:27e888f7-20c7-4b89-9a66-3c9207e0608b:com.mbeddr.mpsutil.datepicker.sandbox" version="0" />

@@ -5,6 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <languageVersions>
     <language slang="l:cab214f9-7127-4f03-923a-c64fb67fed05:com.mbeddr.mpsutil.dependenciesdiagram" version="0" />

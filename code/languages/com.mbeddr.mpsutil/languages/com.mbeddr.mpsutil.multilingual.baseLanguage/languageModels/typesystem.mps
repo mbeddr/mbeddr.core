@@ -148,15 +148,15 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -485,7 +485,7 @@
                         <ref role="3cqZAo" node="7Ssz$kYmf_Y" resolve="i" />
                       </node>
                     </node>
-                    <node concept="1YBJjd" id="7Ssz$kYmn3r" role="2OEOjV">
+                    <node concept="1YBJjd" id="7Ssz$kYmn3r" role="1urrMF">
                       <ref role="1YBMHb" node="7Ssz$kYlSUd" resolve="richStringMessageKey" />
                     </node>
                   </node>
@@ -546,7 +546,7 @@
                                   <ref role="3cqZAo" node="7Ssz$kYmf_Y" resolve="i" />
                                 </node>
                               </node>
-                              <node concept="2GrUjf" id="7Ssz$kYqXvN" role="2OEOjV">
+                              <node concept="2GrUjf" id="7Ssz$kYqXvN" role="1urrMF">
                                 <ref role="2Gs0qQ" node="7Ssz$kYqVt6" resolve="it" />
                               </node>
                             </node>
@@ -711,7 +711,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3K4zz7" id="7Ssz$kYygVL" role="2OEOjV">
+            <node concept="3K4zz7" id="7Ssz$kYygVL" role="1urrMF">
               <node concept="2OqwBi" id="7Ssz$kYyhyO" role="3K4E3e">
                 <node concept="37vLTw" id="7Ssz$kYyh5V" role="2Oq$k0">
                   <ref role="3cqZAo" node="7Ssz$kYw7dy" resolve="expressions" />
@@ -855,14 +855,6 @@
           <node concept="3clFbJ" id="7Ssz$kYwDBB" role="3cqZAp">
             <node concept="3clFbS" id="7Ssz$kYwDBC" role="3clFbx">
               <node concept="2MkqsV" id="7Ssz$kYwKH6" role="3cqZAp">
-                <node concept="1y4W85" id="7Ssz$kYwO3B" role="2OEOjV">
-                  <node concept="37vLTw" id="7Ssz$kYwOaN" role="1y58nS">
-                    <ref role="3cqZAo" node="7Ssz$kYvQtE" resolve="i" />
-                  </node>
-                  <node concept="37vLTw" id="7Ssz$kYwNdk" role="1y566C">
-                    <ref role="3cqZAo" node="7Ssz$kYw7dy" resolve="expressions" />
-                  </node>
-                </node>
                 <node concept="3cpWs3" id="6Go9U2yp64H" role="2MkJ7o">
                   <node concept="3cpWs3" id="6Go9U2yp6m4" role="3uHU7B">
                     <node concept="2OqwBi" id="6Go9U2yp6HK" role="3uHU7w">
@@ -879,6 +871,14 @@
                   </node>
                   <node concept="Xl_RD" id="6Go9U2yp64P" role="3uHU7w">
                     <property role="Xl_RC" value=" expressions" />
+                  </node>
+                </node>
+                <node concept="1y4W85" id="7Ssz$kYwO3B" role="1urrMF">
+                  <node concept="37vLTw" id="7Ssz$kYwOaN" role="1y58nS">
+                    <ref role="3cqZAo" node="7Ssz$kYvQtE" resolve="i" />
+                  </node>
+                  <node concept="37vLTw" id="7Ssz$kYwNdk" role="1y566C">
+                    <ref role="3cqZAo" node="7Ssz$kYw7dy" resolve="expressions" />
                   </node>
                 </node>
               </node>

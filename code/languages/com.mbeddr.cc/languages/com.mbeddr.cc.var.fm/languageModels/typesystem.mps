@@ -2,7 +2,7 @@
 <model ref="r:106c8ec8-5206-4ec1-ae0f-cd9d3c8dd559(com.mbeddr.cc.var.fm.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -115,14 +115,14 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -265,11 +265,11 @@
             <node concept="37vLTw" id="5USXI9Kzbga" role="2MkJ7o">
               <ref role="3cqZAo" node="5USXI9KzbfX" resolve="childError" />
             </node>
-            <node concept="1YBJjd" id="5USXI9Kzbgb" role="2OEOjV">
-              <ref role="1YBMHb" node="5USXI9KzbhD" resolve="sf" />
-            </node>
-            <node concept="2OE7Q9" id="5USXI9Kzbgc" role="2OEWyd">
+            <node concept="2OE7Q9" id="5USXI9Kzbgc" role="1urrC5">
               <ref role="2OEe5H" to="qqyh:5USXI9Kzbah" resolve="feature" />
+            </node>
+            <node concept="1YBJjd" id="5USXI9Kzbgb" role="1urrMF">
+              <ref role="1YBMHb" node="5USXI9KzbhD" resolve="sf" />
             </node>
           </node>
         </node>
@@ -306,9 +306,6 @@
           <node concept="3clFbJ" id="5MNZoCA0bMg" role="3cqZAp">
             <node concept="3clFbS" id="5MNZoCA0bMh" role="3clFbx">
               <node concept="a7r0C" id="1UQqPl7ttMs" role="3cqZAp">
-                <node concept="1YBJjd" id="1UQqPl7ttN3" role="2OEOjV">
-                  <ref role="1YBMHb" node="5USXI9KzbhD" resolve="sf" />
-                </node>
                 <node concept="3cpWs3" id="1UQqPl7tusA" role="a7wSD">
                   <node concept="37vLTw" id="1UQqPl7ttMP" role="3uHU7B">
                     <ref role="3cqZAo" node="5MNZoCA0eUa" resolve="crossError" />
@@ -316,6 +313,9 @@
                   <node concept="Xl_RD" id="1UQqPl7tuJR" role="3uHU7w">
                     <property role="Xl_RC" value=" (use 'Check Consistency of Variability Definition' to confirm error)" />
                   </node>
+                </node>
+                <node concept="1YBJjd" id="1UQqPl7ttN3" role="1urrMF">
+                  <ref role="1YBMHb" node="5USXI9KzbhD" resolve="sf" />
                 </node>
               </node>
             </node>
@@ -370,7 +370,10 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1PxgMI" id="5USXI9Kzbgu" role="2OEOjV">
+                <node concept="2OE7Q9" id="5USXI9Kzbgy" role="1urrC5">
+                  <ref role="2OEe5H" to="qqyh:5USXI9Kzbah" resolve="feature" />
+                </node>
+                <node concept="1PxgMI" id="5USXI9Kzbgu" role="1urrMF">
                   <node concept="2OqwBi" id="5USXI9Kzbgv" role="1m5AlR">
                     <node concept="1YBJjd" id="5USXI9Kzbgw" role="2Oq$k0">
                       <ref role="1YBMHb" node="5USXI9KzbhD" resolve="sf" />
@@ -380,9 +383,6 @@
                   <node concept="chp4Y" id="79i$vAY7iOd" role="3oSUPX">
                     <ref role="cht4Q" to="qqyh:5USXI9Kzbae" resolve="SelectedFeature" />
                   </node>
-                </node>
-                <node concept="2OE7Q9" id="5USXI9Kzbgy" role="2OEWyd">
-                  <ref role="2OEe5H" to="qqyh:5USXI9Kzbah" resolve="feature" />
                 </node>
               </node>
             </node>
@@ -503,7 +503,7 @@
                     <property role="Xl_RC" value="no (or more than on) value for attribute " />
                   </node>
                 </node>
-                <node concept="1YBJjd" id="5USXI9Kzbhl" role="2OEOjV">
+                <node concept="1YBJjd" id="5USXI9Kzbhl" role="1urrMF">
                   <ref role="1YBMHb" node="5USXI9KzbhD" resolve="sf" />
                 </node>
               </node>
@@ -679,11 +679,11 @@
                       <node concept="Xl_RD" id="3rVIKr67v7d" role="2MkJ7o">
                         <property role="Xl_RC" value="duplicate feature name" />
                       </node>
-                      <node concept="37vLTw" id="3rVIKr67yoK" role="2OEOjV">
-                        <ref role="3cqZAo" node="3rVIKr67nu8" resolve="it" />
-                      </node>
-                      <node concept="2ODE4t" id="6Ce4x7KKUv3" role="2OEWyd">
+                      <node concept="2ODE4t" id="6Ce4x7KKUv3" role="1urrC5">
                         <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                      <node concept="37vLTw" id="3rVIKr67yoK" role="1urrMF">
+                        <ref role="3cqZAo" node="3rVIKr67nu8" resolve="it" />
                       </node>
                     </node>
                   </node>
@@ -865,7 +865,7 @@
                       <node concept="Xl_RD" id="6hM2_xW3kk5" role="2MkJ7o">
                         <property role="Xl_RC" value="binary expressions cannot be nested in feature conditions" />
                       </node>
-                      <node concept="37vLTw" id="6hM2_xW3lES" role="2OEOjV">
+                      <node concept="37vLTw" id="6hM2_xW3lES" role="1urrMF">
                         <ref role="3cqZAo" node="6hM2_xW3iry" resolve="it" />
                       </node>
                     </node>

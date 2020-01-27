@@ -2,11 +2,11 @@
 <model ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
-    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -975,9 +975,6 @@
       <node concept="m$_yC" id="Vtr7jyB0oS" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
-      <node concept="m$_yC" id="3mZVitHC1kc" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
-      </node>
       <node concept="3_J27D" id="Vtr7jyB0oV" role="m_cZH">
         <node concept="3Mxwew" id="Vtr7jyB0oW" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.filepicker" />
@@ -991,6 +988,9 @@
         <node concept="3Mxwew" id="Vtr7jyB0oZ" role="3MwsjC">
           <property role="3MwjfP" value="File Picker Langauge from mbeddr.mpsutil" />
         </node>
+      </node>
+      <node concept="m$_yC" id="3mZVitHC1kc" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
     </node>
     <node concept="m$_wf" id="TAJODzUQvo" role="3989C9">
@@ -18417,7 +18417,7 @@
         <node concept="3rtmxn" id="3xFG3bj5cS4" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cS5" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cS6" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+              <property role="3qWCbO" value="**/*.xml" />
             </node>
             <node concept="398BVA" id="3xFG3bj5cS7" role="3LXTmr">
               <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
@@ -18425,6 +18425,9 @@
                 <property role="2Ry0Am" value="tests" />
                 <node concept="2Ry0Ak" id="3xFG3bj5cS9" role="2Ry0An">
                   <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.xml.fix" />
+                  <node concept="2Ry0Ak" id="1_mn3XDnZ3Q" role="2Ry0An">
+                    <property role="2Ry0Am" value="test_gen" />
+                  </node>
                 </node>
               </node>
             </node>

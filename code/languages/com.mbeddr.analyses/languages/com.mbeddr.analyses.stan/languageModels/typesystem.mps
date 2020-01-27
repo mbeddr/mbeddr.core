@@ -2,7 +2,7 @@
 <model ref="r:6bf990da-e552-495f-8c58-077862f441bf(com.mbeddr.analyses.stan.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -205,13 +205,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -330,7 +330,7 @@
             <node concept="Xl_RD" id="41hIld_dsRl" role="2MkJ7o">
               <property role="Xl_RC" value="decision table not statically analyzable" />
             </node>
-            <node concept="37vLTw" id="41hIld_dWhg" role="2OEOjV">
+            <node concept="37vLTw" id="41hIld_dWhg" role="1urrMF">
               <ref role="3cqZAo" node="4gj0JzqzcL" resolve="sca" />
             </node>
           </node>
@@ -822,7 +822,7 @@
                   <property role="Xl_RC" value="decision table is incomplete - example\n\n" />
                 </node>
               </node>
-              <node concept="37vLTw" id="2FPaW3EzqRQ" role="2OEOjV">
+              <node concept="37vLTw" id="2FPaW3EzqRQ" role="1urrMF">
                 <ref role="3cqZAo" node="2FPaW3EyRqS" resolve="dt" />
               </node>
             </node>
@@ -1375,7 +1375,7 @@
                   <property role="Xl_RC" value="decision table is inconsistent - example:\n\n" />
                 </node>
               </node>
-              <node concept="37vLTw" id="4gj0Jzo2$5" role="2OEOjV">
+              <node concept="37vLTw" id="4gj0Jzo2$5" role="1urrMF">
                 <ref role="3cqZAo" node="4gj0Jzo2$9" resolve="dt" />
               </node>
             </node>

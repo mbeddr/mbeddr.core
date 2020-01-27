@@ -5,6 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <languageVersions>
     <language slang="l:c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1:de.slisson.mps.hacks.xmodelgen" version="0" />

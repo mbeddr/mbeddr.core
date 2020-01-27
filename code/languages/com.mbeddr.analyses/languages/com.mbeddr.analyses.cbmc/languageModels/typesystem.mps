@@ -2,8 +2,8 @@
 <model ref="r:191d4094-120c-4eb3-b601-c05696ec8de9(com.mbeddr.analyses.cbmc.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="3" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="4" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
@@ -191,10 +191,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -213,6 +209,10 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
@@ -440,7 +440,7 @@
             <node concept="Xl_RD" id="5IjQP6cssre" role="2MkJ7o">
               <property role="Xl_RC" value="Build configuration needs to be defined to run the analyses." />
             </node>
-            <node concept="1YBJjd" id="5IjQP6csspT" role="2OEOjV">
+            <node concept="1YBJjd" id="5IjQP6csspT" role="1urrMF">
               <ref role="1YBMHb" node="5IjQP6cssjO" resolve="analysis" />
             </node>
           </node>
@@ -519,7 +519,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1YBJjd" id="5IjQP6csst1" role="2OEOjV">
+            <node concept="1YBJjd" id="5IjQP6csst1" role="1urrMF">
               <ref role="1YBMHb" node="5IjQP6cssjO" resolve="analysis" />
             </node>
           </node>
@@ -632,13 +632,13 @@
               <node concept="3clFbJ" id="1XFitunRfq2" role="3cqZAp">
                 <node concept="3clFbS" id="1XFitunRfq3" role="3clFbx">
                   <node concept="2MkqsV" id="1XFitunRfqv" role="3cqZAp">
-                    <node concept="1YBJjd" id="1XFitunRfqw" role="2OEOjV">
-                      <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                    </node>
                     <node concept="Xl_RD" id="1XFitunRfqx" role="2MkJ7o">
                       <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
                     </node>
-                    <node concept="3Cnw8n" id="5zmbZKrhcCX" role="2OEOjU">
+                    <node concept="1YBJjd" id="1XFitunRfqw" role="1urrMF">
+                      <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                    </node>
+                    <node concept="3Cnw8n" id="5zmbZKrhcCX" role="1urrFz">
                       <ref role="QpYPw" node="5zmbZKrhbHz" resolve="fix_timeout" />
                       <node concept="3CnSsL" id="5zmbZKrhcNg" role="3Coj4f">
                         <ref role="QkamJ" node="5zmbZKrhbH$" resolve="analysis" />
@@ -668,13 +668,13 @@
               </node>
               <node concept="3clFbS" id="1XFitunRfpi" role="TDEfX">
                 <node concept="2MkqsV" id="1XFitunRfpW" role="3cqZAp">
-                  <node concept="1YBJjd" id="1XFitunRfq0" role="2OEOjV">
-                    <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                  </node>
                   <node concept="Xl_RD" id="1XFitunRfpZ" role="2MkJ7o">
                     <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
                   </node>
-                  <node concept="3Cnw8n" id="5zmbZKrhcT2" role="2OEOjU">
+                  <node concept="1YBJjd" id="1XFitunRfq0" role="1urrMF">
+                    <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                  </node>
+                  <node concept="3Cnw8n" id="5zmbZKrhcT2" role="1urrFz">
                     <property role="ARO6o" value="true" />
                     <ref role="QpYPw" node="5zmbZKrhbHz" resolve="fix_timeout" />
                     <node concept="3CnSsL" id="5zmbZKrhcZi" role="3Coj4f">
@@ -748,13 +748,13 @@
               <node concept="3clFbJ" id="5zmbZKrhdp5" role="3cqZAp">
                 <node concept="3clFbS" id="5zmbZKrhdp6" role="3clFbx">
                   <node concept="2MkqsV" id="5zmbZKrhdp7" role="3cqZAp">
-                    <node concept="1YBJjd" id="5zmbZKrhdp8" role="2OEOjV">
-                      <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                    </node>
                     <node concept="Xl_RD" id="5zmbZKrhdp9" role="2MkJ7o">
                       <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
                     </node>
-                    <node concept="3Cnw8n" id="5zmbZKrhdpa" role="2OEOjU">
+                    <node concept="1YBJjd" id="5zmbZKrhdp8" role="1urrMF">
+                      <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                    </node>
+                    <node concept="3Cnw8n" id="5zmbZKrhdpa" role="1urrFz">
                       <ref role="QpYPw" node="5zmbZKrhema" resolve="fix_timeoutForSingleAnalysis" />
                       <node concept="3CnSsL" id="5zmbZKrhdpb" role="3Coj4f">
                         <ref role="QkamJ" node="5zmbZKrhemb" resolve="analysis" />
@@ -784,13 +784,13 @@
               </node>
               <node concept="3clFbS" id="5zmbZKrhdpj" role="TDEfX">
                 <node concept="2MkqsV" id="5zmbZKrhdpk" role="3cqZAp">
-                  <node concept="1YBJjd" id="5zmbZKrhdpl" role="2OEOjV">
-                    <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                  </node>
                   <node concept="Xl_RD" id="5zmbZKrhdpm" role="2MkJ7o">
                     <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
                   </node>
-                  <node concept="3Cnw8n" id="5zmbZKrhdpn" role="2OEOjU">
+                  <node concept="1YBJjd" id="5zmbZKrhdpl" role="1urrMF">
+                    <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                  </node>
+                  <node concept="3Cnw8n" id="5zmbZKrhdpn" role="1urrFz">
                     <property role="ARO6o" value="true" />
                     <ref role="QpYPw" node="5zmbZKrhema" resolve="fix_timeoutForSingleAnalysis" />
                     <node concept="3CnSsL" id="5zmbZKrhdpo" role="3Coj4f">
@@ -939,7 +939,7 @@
             <node concept="Xl_RD" id="2jFbKzL2d_t" role="2MkJ7o">
               <property role="Xl_RC" value="At least two choices need to be defined" />
             </node>
-            <node concept="1YBJjd" id="2jFbKzL2dAU" role="2OEOjV">
+            <node concept="1YBJjd" id="2jFbKzL2dAU" role="1urrMF">
               <ref role="1YBMHb" node="2jFbKzL20LP" resolve="nondetChoice" />
             </node>
           </node>
@@ -1157,11 +1157,11 @@
           </node>
           <node concept="3x8VRR" id="7VJQUau7vVG" role="2OqNvi" />
         </node>
-        <node concept="1YBJjd" id="7VJQUau7vX5" role="2OEOjV">
-          <ref role="1YBMHb" node="6$rx9V1Q7yn" resolve="ac" />
-        </node>
         <node concept="Xl_RD" id="7VJQUau7vVV" role="2MkJ7o">
           <property role="Xl_RC" value="a BuildConfiguration must reside in the same model as the analysis config." />
+        </node>
+        <node concept="1YBJjd" id="7VJQUau7vX5" role="1urrMF">
+          <ref role="1YBMHb" node="6$rx9V1Q7yn" resolve="ac" />
         </node>
       </node>
       <node concept="3clFbH" id="3i$cQqpw7Tl" role="3cqZAp" />
@@ -1315,15 +1315,6 @@
             </node>
           </node>
           <node concept="2MkqsV" id="6mf3eSrhk$q" role="3cqZAp">
-            <node concept="3Cnw8n" id="7dVPiZb9Vr_" role="2OEOjU">
-              <ref role="QpYPw" node="7dVPiZb7y7C" resolve="addImplementationModuleToBuildConfig" />
-              <node concept="3CnSsL" id="7dVPiZb9VEk" role="3Coj4f">
-                <ref role="QkamJ" node="7dVPiZb7ypJ" resolve="dep" />
-                <node concept="37vLTw" id="7dVPiZb9VEE" role="3CoRuB">
-                  <ref role="3cqZAo" node="6mf3eSrk$EB" resolve="problematicNode" />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs3" id="6mf3eSrhk$r" role="2MkJ7o">
               <node concept="2OqwBi" id="6mf3eSrhk$s" role="3uHU7w">
                 <node concept="37vLTw" id="6mf3eSrhlRg" role="2Oq$k0">
@@ -1347,8 +1338,17 @@
                 </node>
               </node>
             </node>
-            <node concept="37vLTw" id="6mf3eSrkAsc" role="2OEOjV">
+            <node concept="37vLTw" id="6mf3eSrkAsc" role="1urrMF">
               <ref role="3cqZAo" node="6mf3eSrk$EB" resolve="problematicNode" />
+            </node>
+            <node concept="3Cnw8n" id="7dVPiZb9Vr_" role="1urrFz">
+              <ref role="QpYPw" node="7dVPiZb7y7C" resolve="addImplementationModuleToBuildConfig" />
+              <node concept="3CnSsL" id="7dVPiZb9VEk" role="3Coj4f">
+                <ref role="QkamJ" node="7dVPiZb7ypJ" resolve="dep" />
+                <node concept="37vLTw" id="7dVPiZb9VEE" role="3CoRuB">
+                  <ref role="3cqZAo" node="6mf3eSrk$EB" resolve="problematicNode" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1541,11 +1541,11 @@
       <node concept="3clFbJ" id="72mSD5R_Wdc" role="3cqZAp">
         <node concept="3clFbS" id="72mSD5R_Wdd" role="3clFbx">
           <node concept="2MkqsV" id="72mSD5R_Ymf" role="3cqZAp">
-            <node concept="1YBJjd" id="72mSD5R_YoG" role="2OEOjV">
-              <ref role="1YBMHb" node="72mSD5R_VLG" resolve="vev" />
-            </node>
             <node concept="Xl_RD" id="72mSD5R_Ymx" role="2MkJ7o">
               <property role="Xl_RC" value="Expected an expression with an EnumType" />
+            </node>
+            <node concept="1YBJjd" id="72mSD5R_YoG" role="1urrMF">
+              <ref role="1YBMHb" node="72mSD5R_VLG" resolve="vev" />
             </node>
           </node>
         </node>
@@ -1565,16 +1565,16 @@
       <node concept="3clFbJ" id="72mSD5R_Zqo" role="3cqZAp">
         <node concept="3clFbS" id="72mSD5R_Zqp" role="3clFbx">
           <node concept="2MkqsV" id="72mSD5R_Zqq" role="3cqZAp">
-            <node concept="2OqwBi" id="72mSD5RA1a9" role="2OEOjV">
+            <node concept="Xl_RD" id="72mSD5R_Zqs" role="2MkJ7o">
+              <property role="Xl_RC" value="Expression should be side-effects free" />
+            </node>
+            <node concept="2OqwBi" id="72mSD5RA1a9" role="1urrMF">
               <node concept="1YBJjd" id="72mSD5R_Zqr" role="2Oq$k0">
                 <ref role="1YBMHb" node="72mSD5R_VLG" resolve="vev" />
               </node>
               <node concept="3TrEf2" id="72mSD5RA1Wx" role="2OqNvi">
                 <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
               </node>
-            </node>
-            <node concept="Xl_RD" id="72mSD5R_Zqs" role="2MkJ7o">
-              <property role="Xl_RC" value="Expression should be side-effects free" />
             </node>
           </node>
         </node>
@@ -1618,7 +1618,7 @@
             <node concept="Xl_RD" id="3V3CJZuxtVl" role="2MkJ7o">
               <property role="Xl_RC" value="conditions of asserts must be side-effects free" />
             </node>
-            <node concept="2OqwBi" id="3V3CJZuxu1Q" role="2OEOjV">
+            <node concept="2OqwBi" id="3V3CJZuxu1Q" role="1urrMF">
               <node concept="1YBJjd" id="3V3CJZuxtXN" role="2Oq$k0">
                 <ref role="1YBMHb" node="3V3CJZuxqEM" resolve="cpa" />
               </node>
@@ -1686,7 +1686,7 @@
             <node concept="Xl_RD" id="6BJ5EqKyi0r" role="2MkJ7o">
               <property role="Xl_RC" value="at least one analysis configuration must be referenced" />
             </node>
-            <node concept="1YBJjd" id="6BJ5EqKyi2a" role="2OEOjV">
+            <node concept="1YBJjd" id="6BJ5EqKyi2a" role="1urrMF">
               <ref role="1YBMHb" node="6BJ5EqKyhi7" resolve="analysisConfigItem" />
             </node>
           </node>
@@ -1724,7 +1724,7 @@
             <node concept="Xl_RD" id="7cbtYkHd3QN" role="2MkJ7o">
               <property role="Xl_RC" value="entry point in the verification must be defined" />
             </node>
-            <node concept="1YBJjd" id="7cbtYkHd3RS" role="2OEOjV">
+            <node concept="1YBJjd" id="7cbtYkHd3RS" role="1urrMF">
               <ref role="1YBMHb" node="7cbtYkHd14E" resolve="cProverBasedMbeddrAnalysis" />
             </node>
           </node>
@@ -1748,7 +1748,7 @@
             <node concept="Xl_RD" id="nSzxU4UHLu" role="2MkJ7o">
               <property role="Xl_RC" value="this analysis requires that the names mangling is enabled in the BuildConfiguration" />
             </node>
-            <node concept="1YBJjd" id="nSzxU4UHLv" role="2OEOjV">
+            <node concept="1YBJjd" id="nSzxU4UHLv" role="1urrMF">
               <ref role="1YBMHb" node="7cbtYkHd14E" resolve="cProverBasedMbeddrAnalysis" />
             </node>
           </node>
@@ -1828,7 +1828,13 @@
               <node concept="3clFbJ" id="2GZiJUXMkBb" role="3cqZAp">
                 <node concept="3clFbS" id="2GZiJUXMkBc" role="3clFbx">
                   <node concept="2MkqsV" id="2GZiJUXMkBd" role="3cqZAp">
-                    <node concept="3Cnw8n" id="2GZiJUXMkBe" role="2OEOjU">
+                    <node concept="Xl_RD" id="2GZiJUXMkBi" role="2MkJ7o">
+                      <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
+                    </node>
+                    <node concept="1YBJjd" id="2GZiJUXMkBh" role="1urrMF">
+                      <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
+                    </node>
+                    <node concept="3Cnw8n" id="2GZiJUXMkBe" role="1urrFz">
                       <property role="ARO6o" value="true" />
                       <ref role="QpYPw" node="5zmbZKrh4FK" resolve="fix_analysisDepth" />
                       <node concept="3CnSsL" id="2GZiJUXMkBf" role="3Coj4f">
@@ -1837,12 +1843,6 @@
                           <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
                         </node>
                       </node>
-                    </node>
-                    <node concept="1YBJjd" id="2GZiJUXMkBh" role="2OEOjV">
-                      <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
-                    </node>
-                    <node concept="Xl_RD" id="2GZiJUXMkBi" role="2MkJ7o">
-                      <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
                     </node>
                   </node>
                 </node>
@@ -1865,13 +1865,13 @@
               </node>
               <node concept="3clFbS" id="2GZiJUXMkBp" role="TDEfX">
                 <node concept="2MkqsV" id="2GZiJUXMkBq" role="3cqZAp">
-                  <node concept="1YBJjd" id="2GZiJUXMkBr" role="2OEOjV">
-                    <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
-                  </node>
                   <node concept="Xl_RD" id="2GZiJUXMkBs" role="2MkJ7o">
                     <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
                   </node>
-                  <node concept="3Cnw8n" id="2GZiJUXMkBt" role="2OEOjU">
+                  <node concept="1YBJjd" id="2GZiJUXMkBr" role="1urrMF">
+                    <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
+                  </node>
+                  <node concept="3Cnw8n" id="2GZiJUXMkBt" role="1urrFz">
                     <property role="ARO6o" value="true" />
                     <ref role="QpYPw" node="5zmbZKrh4FK" resolve="fix_analysisDepth" />
                     <node concept="3CnSsL" id="2GZiJUXMkBu" role="3Coj4f">
@@ -1903,7 +1903,7 @@
             <node concept="Xl_RD" id="7VJQUau7kKx" role="2MkJ7o">
               <property role="Xl_RC" value="unwinding assertions and partial loops must not be enabled at the same time" />
             </node>
-            <node concept="1YBJjd" id="7VJQUau7kPD" role="2OEOjV">
+            <node concept="1YBJjd" id="7VJQUau7kPD" role="1urrMF">
               <ref role="1YBMHb" node="7VJQUau7iAG" resolve="iCbmcSettings" />
             </node>
           </node>
@@ -1941,10 +1941,10 @@
         <node concept="Xl_RD" id="4Sxr3A_YCzt" role="2MkJ7o">
           <property role="Xl_RC" value="deprecated concept - use 'implies' from the math-language" />
         </node>
-        <node concept="1YBJjd" id="4Sxr3A_YC$c" role="2OEOjV">
+        <node concept="1YBJjd" id="4Sxr3A_YC$c" role="1urrMF">
           <ref role="1YBMHb" node="4Sxr3A_YBqX" resolve="implies_old" />
         </node>
-        <node concept="3Cnw8n" id="4Sxr3A_YEfN" role="2OEOjU">
+        <node concept="3Cnw8n" id="4Sxr3A_YEfN" role="1urrFz">
           <property role="ARO6o" value="true" />
           <ref role="QpYPw" node="4Sxr3A_YCFS" resolve="convertImpliesOldToImpliesMath" />
         </node>

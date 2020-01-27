@@ -16,11 +16,11 @@ ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/reposi
 ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 
 //MPS-extensions version
-ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2019.2.+"
+ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2019.3.+"
 
 //MPS version
-ext.mpsMajor = "2019.2"
-ext.mpsBuild = "2019.2.4"
+ext.mpsMajor = "2019.3"
+ext.mpsBuild = "2019.3.1"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
@@ -66,7 +66,7 @@ subprojects {
     apply plugin: "base"
     apply plugin: "maven-publish"
     ext.mbeddrMajor = "2019"
-    ext.mbeddrMinor = "2"
+    ext.mbeddrMinor = "3"
 
     // switch to snapshot/release repositories passed with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise

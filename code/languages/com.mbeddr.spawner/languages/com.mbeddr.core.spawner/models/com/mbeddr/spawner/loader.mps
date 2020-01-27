@@ -431,8 +431,8 @@
       <node concept="3clFbS" id="3wED9Ce4fi1" role="3clF47">
         <node concept="3clFbF" id="3wED9Ce4fif" role="3cqZAp">
           <node concept="2YIFZM" id="3wED9Ce4fih" role="3clFbG">
-            <ref role="37wK5l" to="ctgy:~PluginManager.getPlugin(com.intellij.openapi.extensions.PluginId)" resolve="getPlugin" />
             <ref role="1Pybhc" to="ctgy:~PluginManager" resolve="PluginManager" />
+            <ref role="37wK5l" to="ctgy:~PluginManagerCore.getPlugin(com.intellij.openapi.extensions.PluginId)" resolve="getPlugin" />
             <node concept="1rXfSq" id="1o_$mJE5Ytq" role="37wK5m">
               <ref role="37wK5l" node="3wED9Ce4fhT" resolve="getPluginId" />
             </node>

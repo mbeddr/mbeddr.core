@@ -14,14 +14,8 @@
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="9ti4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.extensions(MPS.IDEA/)" />
-    <import index="k9t0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.internal.collections.runtime(MPS.Core/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
-    <import index="4mvv" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.hierarchy(MPS.Workbench/)" />
-    <import index="dsdj" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.findusages.view.treeholder.treeview(MPS.Platform/)" />
-    <import index="paf" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.projectPane.logicalview(MPS.Workbench/)" />
-    <import index="lcr" ref="r:d634c129-ecb4-4acd-bd8c-5f057c144ffa(jetbrains.mps.vcs.changesmanager)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -63,10 +57,7 @@
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
-      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
-        <property id="8606350594693632173" name="isTransient" index="eg7rD" />
-        <property id="1240249534625" name="isVolatile" index="34CwA1" />
-      </concept>
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
         <property id="1221565133444" name="isFinal" index="1EXbeo" />
@@ -135,31 +126,20 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
-        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
-      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
-      </concept>
-      <concept id="1170075670744" name="jetbrains.mps.baseLanguage.structure.SynchronizedStatement" flags="nn" index="1HWtB8">
-        <child id="1170075728144" name="expression" index="1HWFw0" />
-        <child id="1170075736412" name="block" index="1HWHxc" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -171,14 +151,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
-        <property id="155656958578482949" name="value" index="3oM_SC" />
-      </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
-        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -544,58 +516,15 @@
     <property role="2bfB8j" value="true" />
     <property role="1sVAO0" value="false" />
     <property role="1EXbeo" value="false" />
-    <node concept="3Tm1VV" id="24ObHxTnsSO" role="1B3o_S" />
-    <node concept="312cEg" id="24ObHxTnsSQ" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="myRegistry" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="24ObHxTnzFM" role="1tU5fm">
-        <ref role="3uigEE" to="lcr:2JwSLRbyYN6" resolve="CurrentDifferenceRegistry" />
-      </node>
-      <node concept="3Tm6S6" id="24ObHxTnsST" role="1B3o_S" />
-    </node>
-    <node concept="312cEg" id="24ObHxTnsSU" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="myFeatureForestMapSupport" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="24ObHxTnsSW" role="1tU5fm">
-        <ref role="3uigEE" to="ippn:3ghtVL8Toqs" resolve="FeatureForestMapSupport" />
-      </node>
-      <node concept="3Tm6S6" id="24ObHxTnsSX" role="1B3o_S" />
-    </node>
-    <node concept="312cEg" id="24ObHxTnsSY" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="myTreeToHighlighter" />
+    <node concept="312cEg" id="b6WULTTMBW" role="jymVt">
+      <property role="TrG5h" value="myProject" />
       <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="24ObHxTnsT0" role="1tU5fm">
-        <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-        <node concept="3uibUv" id="24ObHxTnsT1" role="11_B2D">
-          <ref role="3uigEE" to="7e8u:~MPSTree" resolve="MPSTree" />
-        </node>
-        <node concept="3uibUv" id="24ObHxTnsT2" role="11_B2D">
-          <ref role="3uigEE" to="ippn:7YINie3rdNP" resolve="TreeHighlighter" />
-        </node>
+      <node concept="3Tm6S6" id="b6WULTTKWe" role="1B3o_S" />
+      <node concept="3uibUv" id="b6WULTTMBF" role="1tU5fm">
+        <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
       </node>
-      <node concept="2YIFZM" id="24ObHxTnuFe" role="33vP2m">
-        <ref role="1Pybhc" to="k9t0:~MapSequence" resolve="MapSequence" />
-        <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map)" resolve="fromMap" />
-        <node concept="2ShNRf" id="24ObHxTnuFf" role="37wK5m">
-          <node concept="1pGfFk" id="24ObHxTnuFg" role="2ShVmc">
-            <ref role="37wK5l" to="33ny:~HashMap.&lt;init&gt;()" resolve="HashMap" />
-            <node concept="3uibUv" id="24ObHxTnsT5" role="1pMfVU">
-              <ref role="3uigEE" to="7e8u:~MPSTree" resolve="MPSTree" />
-            </node>
-            <node concept="3uibUv" id="24ObHxTnsT6" role="1pMfVU">
-              <ref role="3uigEE" to="ippn:7YINie3rdNP" resolve="TreeHighlighter" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm6S6" id="24ObHxTnsT7" role="1B3o_S" />
     </node>
+    <node concept="3Tm1VV" id="24ObHxTnsSO" role="1B3o_S" />
     <node concept="2tJIrI" id="24ObHxTnG6P" role="jymVt" />
     <node concept="3clFbW" id="24ObHxTnsT8" role="jymVt">
       <property role="DiZV1" value="false" />
@@ -612,39 +541,13 @@
         </node>
       </node>
       <node concept="3clFbS" id="24ObHxTnsTj" role="3clF47">
-        <node concept="3clFbF" id="24ObHxTnsTk" role="3cqZAp">
-          <node concept="37vLTI" id="24ObHxTnsTl" role="3clFbG">
-            <node concept="37vLTw" id="24ObHxTnsTm" role="37vLTJ">
-              <ref role="3cqZAo" node="24ObHxTnsSQ" resolve="myRegistry" />
+        <node concept="3clFbF" id="b6WULTTOsq" role="3cqZAp">
+          <node concept="37vLTI" id="b6WULTTOOr" role="3clFbG">
+            <node concept="37vLTw" id="b6WULTTOSj" role="37vLTx">
+              <ref role="3cqZAo" node="24ObHxTnsTa" resolve="project" />
             </node>
-            <node concept="2OqwBi" id="24ObHxTnF16" role="37vLTx">
-              <node concept="37vLTw" id="24ObHxTnF17" role="2Oq$k0">
-                <ref role="3cqZAo" node="24ObHxTnsTa" resolve="project" />
-              </node>
-              <node concept="liA8E" id="24ObHxTnF18" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-                <node concept="3VsKOn" id="24ObHxTnF19" role="37wK5m">
-                  <ref role="3VsUkX" to="lcr:2JwSLRbyYN6" resolve="CurrentDifferenceRegistry" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="24ObHxTnsTo" role="3cqZAp">
-          <node concept="37vLTI" id="24ObHxTnsTp" role="3clFbG">
-            <node concept="37vLTw" id="24ObHxTnsTq" role="37vLTJ">
-              <ref role="3cqZAo" node="24ObHxTnsSU" resolve="myFeatureForestMapSupport" />
-            </node>
-            <node concept="2OqwBi" id="24ObHxTnF4m" role="37vLTx">
-              <node concept="37vLTw" id="24ObHxTnF4n" role="2Oq$k0">
-                <ref role="3cqZAo" node="24ObHxTnsTa" resolve="project" />
-              </node>
-              <node concept="liA8E" id="24ObHxTnF4o" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-                <node concept="3VsKOn" id="24ObHxTnF4p" role="37wK5m">
-                  <ref role="3VsUkX" to="ippn:3ghtVL8Toqs" resolve="FeatureForestMapSupport" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="b6WULTTOso" role="37vLTJ">
+              <ref role="3cqZAo" node="b6WULTTMBW" resolve="myProject" />
             </node>
           </node>
         </node>
@@ -664,6 +567,25 @@
         </node>
       </node>
       <node concept="3clFbS" id="24ObHxTnsTy" role="3clF47">
+        <node concept="3cpWs8" id="b6WULTTPtP" role="3cqZAp">
+          <node concept="3cpWsn" id="b6WULTTPtQ" role="3cpWs9">
+            <property role="TrG5h" value="highlighterFactory" />
+            <node concept="3uibUv" id="b6WULTTPfv" role="1tU5fm">
+              <ref role="3uigEE" to="ippn:3zYHoP1k4BP" resolve="TreeHighlighterFactory" />
+            </node>
+            <node concept="2OqwBi" id="b6WULTTPtR" role="33vP2m">
+              <node concept="37vLTw" id="b6WULTTPtS" role="2Oq$k0">
+                <ref role="3cqZAo" node="b6WULTTMBW" resolve="myProject" />
+              </node>
+              <node concept="liA8E" id="b6WULTTPtT" role="2OqNvi">
+                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
+                <node concept="3VsKOn" id="b6WULTTPtU" role="37wK5m">
+                  <ref role="3VsUkX" to="ippn:3zYHoP1k4BP" resolve="TreeHighlighterFactory" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="24ObHxTnsT$" role="3cqZAp">
           <node concept="3cpWsn" id="24ObHxTnsTz" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -671,64 +593,13 @@
             <node concept="3uibUv" id="24ObHxTnsT_" role="1tU5fm">
               <ref role="3uigEE" to="ippn:7YINie3rdNP" resolve="TreeHighlighter" />
             </node>
-            <node concept="10Nm6u" id="24ObHxTnsTA" role="33vP2m" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="7q9qYyzDOyx" role="3cqZAp">
-          <node concept="1PaTwC" id="17qUVvSZlM7" role="3ndbpf">
-            <node concept="3oM_SD" id="17qUVvSZlM8" role="1PaTwD">
-              <property role="3oM_SC" value="FIXME" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlM9" role="1PaTwD">
-              <property role="3oM_SC" value="once" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMa" role="1PaTwD">
-              <property role="3oM_SC" value="MPS" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMb" role="1PaTwD">
-              <property role="3oM_SC" value="2019.2" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMc" role="1PaTwD">
-              <property role="3oM_SC" value="is" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMd" role="1PaTwD">
-              <property role="3oM_SC" value="in" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMe" role="1PaTwD">
-              <property role="3oM_SC" value="use," />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMf" role="1PaTwD">
-              <property role="3oM_SC" value="switch" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMg" role="1PaTwD">
-              <property role="3oM_SC" value="to" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMh" role="1PaTwD">
-              <property role="3oM_SC" value="project.getComponent(TreeHighligherFactory.class)#instantiateHighlighter(tree," />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMi" role="1PaTwD">
-              <property role="3oM_SC" value="new" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMj" role="1PaTwD">
-              <property role="3oM_SC" value="CustomTreeFeatureExtractor())" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="24ObHxTnsTH" role="3cqZAp">
-          <node concept="37vLTI" id="24ObHxTnsTI" role="3clFbG">
-            <node concept="37vLTw" id="24ObHxTnsTJ" role="37vLTJ">
-              <ref role="3cqZAo" node="24ObHxTnsTz" resolve="highlighter" />
-            </node>
-            <node concept="2ShNRf" id="24ObHxTnuFq" role="37vLTx">
-              <node concept="1pGfFk" id="24ObHxTnuFr" role="2ShVmc">
-                <ref role="37wK5l" to="ippn:7YINie3rdO6" resolve="TreeHighlighter" />
-                <node concept="37vLTw" id="24ObHxTnsTL" role="37wK5m">
-                  <ref role="3cqZAo" node="24ObHxTnsSQ" resolve="myRegistry" />
-                </node>
-                <node concept="37vLTw" id="24ObHxTnsTM" role="37wK5m">
-                  <ref role="3cqZAo" node="24ObHxTnsSU" resolve="myFeatureForestMapSupport" />
-                </node>
-                <node concept="37vLTw" id="24ObHxTnsTN" role="37wK5m">
+            <node concept="2OqwBi" id="b6WULTTRoC" role="33vP2m">
+              <node concept="37vLTw" id="b6WULTTQNX" role="2Oq$k0">
+                <ref role="3cqZAo" node="b6WULTTPtQ" resolve="highlighterFactory" />
+              </node>
+              <node concept="liA8E" id="b6WULTTRVN" role="2OqNvi">
+                <ref role="37wK5l" to="ippn:b6WULTU9Gt" resolve="instantiateHighlighter" />
+                <node concept="37vLTw" id="b6WULTTRWC" role="37wK5m">
                   <ref role="3cqZAo" node="24ObHxTnsTw" resolve="tree" />
                 </node>
                 <node concept="2ShNRf" id="24ObHxTnuFs" role="37wK5m">
@@ -736,160 +607,26 @@
                     <ref role="HV5vE" node="24ObHxTmYDT" resolve="CustomTreeFeatureExtractor" />
                   </node>
                 </node>
-                <node concept="3clFbT" id="24ObHxTnsTP" role="37wK5m">
+                <node concept="3clFbT" id="b6WULTU$m4" role="37wK5m">
                   <property role="3clFbU" value="true" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="24ObHxTnsUk" role="3cqZAp">
-          <node concept="3y3z36" id="24ObHxTnsUl" role="3clFbw">
-            <node concept="37vLTw" id="24ObHxTnsUm" role="3uHU7B">
+        <node concept="3clFbF" id="24ObHxTnsUq" role="3cqZAp">
+          <node concept="2OqwBi" id="24ObHxTnuFw" role="3clFbG">
+            <node concept="37vLTw" id="24ObHxTnuFv" role="2Oq$k0">
               <ref role="3cqZAo" node="24ObHxTnsTz" resolve="highlighter" />
             </node>
-            <node concept="10Nm6u" id="24ObHxTnsUn" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="24ObHxTnsUp" role="3clFbx">
-            <node concept="3clFbF" id="24ObHxTnsUq" role="3cqZAp">
-              <node concept="2OqwBi" id="24ObHxTnuFw" role="3clFbG">
-                <node concept="37vLTw" id="24ObHxTnuFv" role="2Oq$k0">
-                  <ref role="3cqZAo" node="24ObHxTnsTz" resolve="highlighter" />
-                </node>
-                <node concept="liA8E" id="24ObHxTnuFx" role="2OqNvi">
-                  <ref role="37wK5l" to="ippn:7YINie3rlti" resolve="init" />
-                </node>
-              </node>
-            </node>
-            <node concept="1HWtB8" id="24ObHxTnsUs" role="3cqZAp">
-              <node concept="37vLTw" id="24ObHxTnsUA" role="1HWFw0">
-                <ref role="3cqZAo" node="24ObHxTnsSY" resolve="myTreeToHighlighter" />
-              </node>
-              <node concept="3clFbS" id="24ObHxTnsUu" role="1HWHxc">
-                <node concept="3clFbF" id="24ObHxTnsUv" role="3cqZAp">
-                  <node concept="2OqwBi" id="24ObHxTnsUw" role="3clFbG">
-                    <node concept="2YIFZM" id="24ObHxTnuFz" role="2Oq$k0">
-                      <ref role="1Pybhc" to="k9t0:~MapSequence" resolve="MapSequence" />
-                      <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map)" resolve="fromMap" />
-                      <node concept="37vLTw" id="24ObHxTnsUy" role="37wK5m">
-                        <ref role="3cqZAo" node="24ObHxTnsSY" resolve="myTreeToHighlighter" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="24ObHxTnsUz" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-                      <node concept="37vLTw" id="24ObHxTnsU$" role="37wK5m">
-                        <ref role="3cqZAo" node="24ObHxTnsTw" resolve="tree" />
-                      </node>
-                      <node concept="37vLTw" id="24ObHxTnsU_" role="37wK5m">
-                        <ref role="3cqZAo" node="24ObHxTnsTz" resolve="highlighter" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+            <node concept="liA8E" id="24ObHxTnuFx" role="2OqNvi">
+              <ref role="37wK5l" to="ippn:7YINie3rlti" resolve="init" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="24ObHxTnsUB" role="1B3o_S" />
       <node concept="3cqZAl" id="24ObHxTnsUC" role="3clF45" />
-    </node>
-    <node concept="2tJIrI" id="24ObHxTnGXC" role="jymVt" />
-    <node concept="3clFb_" id="24ObHxTnsUD" role="jymVt">
-      <property role="TrG5h" value="unhighlightTree" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="37vLTG" id="24ObHxTnsUE" role="3clF46">
-        <property role="TrG5h" value="tree" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="24ObHxTnsUF" role="1tU5fm">
-          <ref role="3uigEE" to="7e8u:~MPSTree" resolve="MPSTree" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="24ObHxTnsUG" role="3clF47">
-        <node concept="3clFbJ" id="24ObHxTnDpM" role="3cqZAp">
-          <node concept="3clFbS" id="24ObHxTnDpN" role="3clFbx">
-            <node concept="3cpWs6" id="24ObHxTnDpO" role="3cqZAp" />
-          </node>
-          <node concept="3fqX7Q" id="24ObHxTnDpP" role="3clFbw">
-            <node concept="2ZW3vV" id="24ObHxTnDpQ" role="3fr31v">
-              <node concept="3uibUv" id="24ObHxTnDpR" role="2ZW6by">
-                <ref role="3uigEE" to="uhdf:7diJr$RhsEC" resolve="CustomProjectTree" />
-              </node>
-              <node concept="37vLTw" id="24ObHxTnDpS" role="2ZW6bz">
-                <ref role="3cqZAo" node="24ObHxTnsUE" resolve="tree" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1HWtB8" id="24ObHxTnsUH" role="3cqZAp">
-          <node concept="37vLTw" id="24ObHxTnsV6" role="1HWFw0">
-            <ref role="3cqZAo" node="24ObHxTnsSY" resolve="myTreeToHighlighter" />
-          </node>
-          <node concept="3clFbS" id="24ObHxTnsUJ" role="1HWHxc">
-            <node concept="3clFbJ" id="24ObHxTnsUK" role="3cqZAp">
-              <node concept="2OqwBi" id="24ObHxTnsUL" role="3clFbw">
-                <node concept="2YIFZM" id="24ObHxTnuF_" role="2Oq$k0">
-                  <ref role="1Pybhc" to="k9t0:~MapSequence" resolve="MapSequence" />
-                  <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map)" resolve="fromMap" />
-                  <node concept="37vLTw" id="24ObHxTnsUN" role="37wK5m">
-                    <ref role="3cqZAo" node="24ObHxTnsSY" resolve="myTreeToHighlighter" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="24ObHxTnsUO" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object)" resolve="containsKey" />
-                  <node concept="37vLTw" id="24ObHxTnsUP" role="37wK5m">
-                    <ref role="3cqZAo" node="24ObHxTnsUE" resolve="tree" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbS" id="24ObHxTnsUR" role="3clFbx">
-                <node concept="3clFbF" id="24ObHxTnsUS" role="3cqZAp">
-                  <node concept="2OqwBi" id="24ObHxTnsUT" role="3clFbG">
-                    <node concept="2OqwBi" id="24ObHxTnsUU" role="2Oq$k0">
-                      <node concept="2YIFZM" id="24ObHxTnuFB" role="2Oq$k0">
-                        <ref role="1Pybhc" to="k9t0:~MapSequence" resolve="MapSequence" />
-                        <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map)" resolve="fromMap" />
-                        <node concept="37vLTw" id="24ObHxTnsUW" role="37wK5m">
-                          <ref role="3cqZAo" node="24ObHxTnsSY" resolve="myTreeToHighlighter" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="24ObHxTnsUX" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
-                        <node concept="37vLTw" id="24ObHxTnsUY" role="37wK5m">
-                          <ref role="3cqZAo" node="24ObHxTnsUE" resolve="tree" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="24ObHxTnsUZ" role="2OqNvi">
-                      <ref role="37wK5l" to="ippn:7YINie3rltm" resolve="dispose" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="24ObHxTnsV0" role="3cqZAp">
-                  <node concept="2OqwBi" id="24ObHxTnsV1" role="3clFbG">
-                    <node concept="2YIFZM" id="24ObHxTnuFD" role="2Oq$k0">
-                      <ref role="1Pybhc" to="k9t0:~MapSequence" resolve="MapSequence" />
-                      <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map)" resolve="fromMap" />
-                      <node concept="37vLTw" id="24ObHxTnsV3" role="37wK5m">
-                        <ref role="3cqZAo" node="24ObHxTnsSY" resolve="myTreeToHighlighter" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="24ObHxTnsV4" role="2OqNvi">
-                      <ref role="37wK5l" to="k9t0:~IMapSequence.removeKey(java.lang.Object)" resolve="removeKey" />
-                      <node concept="37vLTw" id="24ObHxTnsV5" role="37wK5m">
-                        <ref role="3cqZAo" node="24ObHxTnsUE" resolve="tree" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="24ObHxTnsV7" role="1B3o_S" />
-      <node concept="3cqZAl" id="24ObHxTnsV8" role="3clF45" />
     </node>
   </node>
 </model>

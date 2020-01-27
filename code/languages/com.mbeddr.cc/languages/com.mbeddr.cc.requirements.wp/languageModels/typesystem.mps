@@ -45,14 +45,14 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -90,11 +90,11 @@
                 <node concept="Xl_RD" id="5BlDGARhtFf" role="2MkJ7o">
                   <property role="Xl_RC" value="priority is expected to be between 0 (lowest) and 9 (highest)" />
                 </node>
-                <node concept="1YBJjd" id="5BlDGARhtFg" role="2OEOjV">
-                  <ref role="1YBMHb" node="4kXQNJTesnY" resolve="wp" />
-                </node>
-                <node concept="2ODE4t" id="5BlDGARhtFh" role="2OEWyd">
+                <node concept="2ODE4t" id="5BlDGARhtFh" role="1urrC5">
                   <ref role="2ODJFN" to="6pek:4kXQNJTektt" resolve="priority" />
+                </node>
+                <node concept="1YBJjd" id="5BlDGARhtFg" role="1urrMF">
+                  <ref role="1YBMHb" node="4kXQNJTesnY" resolve="wp" />
                 </node>
               </node>
             </node>

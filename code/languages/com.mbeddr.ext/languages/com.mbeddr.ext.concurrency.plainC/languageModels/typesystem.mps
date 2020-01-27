@@ -2,7 +2,7 @@
 <model ref="r:0edeb6ba-4a39-4128-a90d-cb2819f4b8a0(com.mbeddr.ext.concurrency.plainC.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -59,13 +59,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -116,11 +116,11 @@
           <node concept="3clFbJ" id="6_bq3OpcWMl" role="3cqZAp">
             <node concept="3clFbS" id="6_bq3OpcWMm" role="3clFbx">
               <node concept="2MkqsV" id="6_bq3OpcXhG" role="3cqZAp">
-                <node concept="1YBJjd" id="6_bq3OpcYI1" role="2OEOjV">
-                  <ref role="1YBMHb" node="6_bq3Opcxlu" resolve="node" />
-                </node>
                 <node concept="Xl_RD" id="6_bq3OpcXhV" role="2MkJ7o">
                   <property role="Xl_RC" value="Generator strategy doesn't support 'continue'" />
+                </node>
+                <node concept="1YBJjd" id="6_bq3OpcYI1" role="1urrMF">
+                  <ref role="1YBMHb" node="6_bq3Opcxlu" resolve="node" />
                 </node>
               </node>
             </node>

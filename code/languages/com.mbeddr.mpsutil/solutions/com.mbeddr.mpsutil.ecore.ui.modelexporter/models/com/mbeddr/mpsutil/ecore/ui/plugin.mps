@@ -885,6 +885,14 @@
                     </node>
                     <node concept="liA8E" id="1I0RpYE8sK_" role="2OqNvi">
                       <ref role="37wK5l" to="rpb:6TiIOkRA79C" resolve="importEcoreModel" />
+                      <node concept="2OqwBi" id="3HHdT04oA$Z" role="37wK5m">
+                        <node concept="37vLTw" id="3HHdT04ohPL" role="2Oq$k0">
+                          <ref role="3cqZAo" node="70ujcM$eckC" resolve="project" />
+                        </node>
+                        <node concept="liA8E" id="3HHdT04oBak" role="2OqNvi">
+                          <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

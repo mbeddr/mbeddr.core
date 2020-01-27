@@ -3087,24 +3087,6 @@
           <node concept="Xl_RD" id="6WfZQfTHrks" role="37wK5m">
             <property role="Xl_RC" value="Mbeddr" />
           </node>
-          <node concept="37vLTw" id="6WfZQfTHrkt" role="37wK5m">
-            <ref role="3cqZAo" node="6WfZQfTHrkv" resolve="debuggers" />
-          </node>
-          <node concept="37vLTw" id="6WfZQfTHrku" role="37wK5m">
-            <ref role="3cqZAo" node="6WfZQfTHrkx" resolve="breakpointProvidersManager" />
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="6WfZQfTHrkv" role="3clF46">
-        <property role="TrG5h" value="debuggers" />
-        <node concept="3uibUv" id="6WfZQfTHrkw" role="1tU5fm">
-          <ref role="3uigEE" to="1l1h:3SnNvqCaJc8" resolve="Debuggers" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="6WfZQfTHrkx" role="3clF46">
-        <property role="TrG5h" value="breakpointProvidersManager" />
-        <node concept="3uibUv" id="6WfZQfTHrky" role="1tU5fm">
-          <ref role="3uigEE" to="rw00:3SnNvqCaK4d" resolve="BreakpointProvidersManager" />
         </node>
       </node>
     </node>
@@ -3216,7 +3198,7 @@
                   <node concept="1Y3b0j" id="3naHrQFOhUD" role="YeSDq">
                     <property role="2bfB8j" value="true" />
                     <ref role="1Y3XeK" to="ez3t:~AbstractModule" resolve="AbstractModule" />
-                    <ref role="37wK5l" to="ez3t:~AbstractModule.&lt;init&gt;()" resolve="AbstractModule" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="3naHrQFOhUE" role="1B3o_S" />
                     <node concept="3clFb_" id="3naHrQFOhUF" role="jymVt">
                       <property role="1EzhhJ" value="false" />
