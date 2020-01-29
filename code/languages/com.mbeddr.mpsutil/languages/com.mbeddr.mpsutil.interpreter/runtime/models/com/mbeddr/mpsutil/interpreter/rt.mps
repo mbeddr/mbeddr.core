@@ -11,6 +11,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -94,12 +95,23 @@
         <child id="1083245396908" name="enumConstant" index="Qtgdg" />
       </concept>
       <concept id="1083245299891" name="jetbrains.mps.baseLanguage.structure.EnumConstantDeclaration" flags="ig" index="QsSxf" />
+      <concept id="1201370618622" name="jetbrains.mps.baseLanguage.structure.Property" flags="ig" index="2RhdJD">
+        <property id="1201371481316" name="propertyName" index="2RkwnN" />
+        <child id="1201371521209" name="type" index="2RkE6I" />
+        <child id="1201372378714" name="propertyImplementation" index="2RnVtd" />
+      </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1201398722958" name="jetbrains.mps.baseLanguage.structure.CustomPropertyImplementation" flags="ng" index="2SWr2p">
+        <child id="1201402259264" name="getAccessor" index="2T9Upn" />
+      </concept>
+      <concept id="1201402044357" name="jetbrains.mps.baseLanguage.structure.GetAccessor" flags="ng" index="2T95Vi">
+        <child id="1202593363480" name="statementList" index="09Bs0" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
         <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
@@ -299,6 +311,11 @@
         <reference id="6626851894249712469" name="extensionPoint" index="2O5UnU" />
       </concept>
       <concept id="3175313036448560967" name="jetbrains.mps.lang.extension.structure.GetExtensionObjectsOperation" flags="nn" index="SfwO_" />
+    </language>
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
+        <property id="6451706574539345425" name="text" index="NWlVz" />
+      </concept>
     </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
@@ -18053,6 +18070,46 @@
       <node concept="3Tm1VV" id="3FW9mgpuZXu" role="1B3o_S" />
       <node concept="3uibUv" id="3FW9mgpv01E" role="1tU5fm">
         <ref role="3uigEE" node="7cNsFS_gTK8" resolve="ComputationTrace" />
+      </node>
+    </node>
+    <node concept="2RhdJD" id="67TQl7WWyDp" role="jymVt">
+      <property role="2RkwnN" value="env" />
+      <node concept="3Tm1VV" id="67TQl7WWyDq" role="1B3o_S" />
+      <node concept="2SWr2p" id="67TQl7WWzfP" role="2RnVtd">
+        <node concept="2T95Vi" id="67TQl7WWzfU" role="2T9Upn">
+          <node concept="3clFbS" id="67TQl7WWzfZ" role="09Bs0">
+            <node concept="3clFbF" id="67TQl7WWzpF" role="3cqZAp">
+              <node concept="1eOMI4" id="67TQl7X2jph" role="3clFbG">
+                <node concept="10QFUN" id="67TQl7X2jpe" role="1eOMHV">
+                  <node concept="3uibUv" id="67TQl7X2lM8" role="10QFUM">
+                    <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                    <node concept="3Tqbb2" id="67TQl7X2ma5" role="11_B2D" />
+                    <node concept="3uibUv" id="67TQl7X2msf" role="11_B2D">
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="67TQl7X2jpj" role="10QFUP">
+                    <node concept="37vLTw" id="67TQl7X2jpk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3FW9mgpuZs$" resolve="context" />
+                    </node>
+                    <node concept="liA8E" id="67TQl7X2jpl" role="2OqNvi">
+                      <ref role="37wK5l" node="2X4$XGmeh8R" resolve="getEnvironment" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="NWlO9" id="67TQl7X1i1y" role="lGtFl">
+        <property role="NWlVz" value="provides convenient access to the current environment as map&lt;&gt;" />
+      </node>
+      <node concept="3rvAFt" id="67TQl7X2hv5" role="2RkE6I">
+        <node concept="3Tqbb2" id="67TQl7X2iju" role="3rvQeY" />
+        <node concept="3uibUv" id="67TQl7X2i_v" role="3rvSg0">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3FW9mgpv06l" role="jymVt" />
