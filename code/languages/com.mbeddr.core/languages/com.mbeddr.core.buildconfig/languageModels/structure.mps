@@ -635,8 +635,9 @@
   <node concept="1TIwiD" id="1hPQTEM4W9y">
     <property role="EcuMT" value="1474325910492791394" />
     <property role="TrG5h" value="MakeVariableDirPicker" />
-    <property role="34LRSv" value="make variable dir picker" />
-    <ref role="1TJDcQ" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+    <property role="34LRSv" value="$(&lt;make variable&gt;) dir picker" />
+    <property role="3GE5qa" value="pickers" />
+    <ref role="1TJDcQ" node="6xoAPBjOMvr" resolve="AbstractMakeVariableDirPicker" />
     <node concept="1TJgyi" id="35Yirdv2Bka" role="1TKVEl">
       <property role="IQ2nx" value="3566368989666505994" />
       <property role="TrG5h" value="variable" />
@@ -753,6 +754,28 @@
     <property role="TrG5h" value="None" />
     <property role="34LRSv" value="none" />
     <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
+  </node>
+  <node concept="1TIwiD" id="6xoAPBjMbmQ">
+    <property role="EcuMT" value="7518930388002583990" />
+    <property role="3GE5qa" value="pickers" />
+    <property role="TrG5h" value="PrefixDirPicker" />
+    <property role="34LRSv" value="$(PREFIX) dir picker" />
+    <ref role="1TJDcQ" node="6xoAPBjOMvr" resolve="AbstractMakeVariableDirPicker" />
+  </node>
+  <node concept="PlHQZ" id="6xoAPBjOH1$">
+    <property role="EcuMT" value="7518930388003246180" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="IMakeVariableProvider" />
+  </node>
+  <node concept="1TIwiD" id="6xoAPBjOMvr">
+    <property role="EcuMT" value="7518930388003268571" />
+    <property role="3GE5qa" value="pickers" />
+    <property role="TrG5h" value="AbstractMakeVariableDirPicker" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+    <node concept="PrWs8" id="6xoAPBjOMvs" role="PzmwI">
+      <ref role="PrY4T" node="6xoAPBjOH1$" resolve="IMakeVariableProvider" />
+    </node>
   </node>
 </model>
 
