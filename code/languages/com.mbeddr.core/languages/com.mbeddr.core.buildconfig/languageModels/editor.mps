@@ -2614,6 +2614,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1hPQTEM4WpC">
+    <property role="3GE5qa" value="pickers" />
     <ref role="1XX52x" to="51wr:1hPQTEM4W9y" resolve="MakeVariableDirPicker" />
     <node concept="3EZMnI" id="4eXJ6EOjCfB" role="2wV5jI">
       <node concept="3F0ifn" id="35Yirdv2BO5" role="3EZMnx">
@@ -2949,6 +2950,64 @@
     <ref role="1XX52x" to="51wr:1it8M3uGpbG" resolve="System" />
     <node concept="3F0A7n" id="4JZ_DSvrzzs" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6xoAPBjMea5">
+    <property role="3GE5qa" value="pickers" />
+    <ref role="1XX52x" to="51wr:6xoAPBjMbmQ" resolve="PrefixDirPicker" />
+    <node concept="3EZMnI" id="6xoAPBjMeae" role="2wV5jI">
+      <node concept="3F0ifn" id="6xoAPBjMeaf" role="3EZMnx">
+        <property role="3F0ifm" value="$(PREFIX)/" />
+        <node concept="11LMrY" id="6xoAPBjMeag" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6xoAPBjMeam" role="2iSdaV" />
+      <node concept="3F0A7n" id="6xoAPBjMean" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="68mc:5lKnBeAtODI" resolve="path" />
+        <node concept="OXEIz" id="6xoAPBjMeao" role="P5bDN">
+          <node concept="PvTIS" id="6xoAPBjMeap" role="OY2wv">
+            <node concept="MLZmj" id="6xoAPBjMeaq" role="PvTIR">
+              <node concept="3clFbS" id="6xoAPBjMear" role="2VODD2">
+                <node concept="3clFbF" id="6xoAPBjMeas" role="3cqZAp">
+                  <node concept="2OqwBi" id="6xoAPBjMeat" role="3clFbG">
+                    <node concept="3GMtW1" id="6xoAPBjMeau" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="6xoAPBjMeav" role="2OqNvi">
+                      <ref role="37wK5l" to="48kf:5lKnBeAuxBd" resolve="proposals" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3EZMnI" id="6xoAPBjMlNJ" role="6VMZX">
+      <node concept="2iRkQZ" id="6xoAPBjMlNK" role="2iSdaV" />
+      <node concept="3EZMnI" id="6xoAPBjMlP5" role="3EZMnx">
+        <node concept="l2Vlx" id="6xoAPBjMlP6" role="2iSdaV" />
+        <node concept="3F0ifn" id="6xoAPBjMlP7" role="3EZMnx">
+          <property role="3F0ifm" value="Current path:" />
+        </node>
+        <node concept="1HlG4h" id="6xoAPBjMlP8" role="3EZMnx">
+          <node concept="1HfYo3" id="6xoAPBjMlP9" role="1HlULh">
+            <node concept="3TQlhw" id="6xoAPBjMlPa" role="1Hhtcw">
+              <node concept="3clFbS" id="6xoAPBjMlPb" role="2VODD2">
+                <node concept="3clFbF" id="6xoAPBjMlPc" role="3cqZAp">
+                  <node concept="2OqwBi" id="6xoAPBjMlPd" role="3clFbG">
+                    <node concept="pncrf" id="6xoAPBjMlPe" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="6xoAPBjMlPf" role="2OqNvi">
+                      <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

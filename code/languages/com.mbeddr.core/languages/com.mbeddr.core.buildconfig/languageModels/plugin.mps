@@ -81,6 +81,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -89,6 +90,7 @@
         <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
         <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
@@ -898,7 +900,7 @@
     </node>
   </node>
   <node concept="vrV6u" id="7$0wAVocpKa">
-    <property role="TrG5h" value="PlatformTemplateProvider" />
+    <property role="TrG5h" value="PlatformTemplateProviders" />
     <node concept="3uibUv" id="7$0wAVocrDb" role="luc8K">
       <ref role="3uigEE" node="7$0wAVocpKZ" resolve="PlatformTemplateProvider" />
     </node>
@@ -922,8 +924,8 @@
   </node>
   <node concept="1lYeZD" id="7$0wAVocrDh">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="PlatformTemplateProvider_extension" />
-    <ref role="1lYe$Y" node="7$0wAVocpKa" resolve="PlatformTemplateProvider" />
+    <property role="TrG5h" value="DesktopPlatformTemplateProvider" />
+    <ref role="1lYe$Y" node="7$0wAVocpKa" resolve="PlatformTemplateProviders" />
     <node concept="3Tm1VV" id="6XfQs9tM2qh" role="1B3o_S" />
     <node concept="2tJIrI" id="6XfQs9tM2qi" role="jymVt" />
     <node concept="2tJIrI" id="6XfQs9tM2qj" role="jymVt" />
@@ -1028,6 +1030,33 @@
       <node concept="3Tqbb2" id="4JZ_DSvxPOd" role="3clF45">
         <ref role="ehGHo" to="51wr:4JZ_DSuWeoI" resolve="CrossCompilationToolchain" />
       </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="6xoAPBjQ1z2">
+    <property role="TrG5h" value="MakeVariableResolver" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="6xoAPBjQ1zZ" role="jymVt" />
+    <node concept="3clFb_" id="6xoAPBjQ3Dk" role="jymVt">
+      <property role="TrG5h" value="resolveVariable" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="3clFbS" id="6xoAPBjQ3Dn" role="3clF47" />
+      <node concept="3Tm1VV" id="6xoAPBjQ1By" role="1B3o_S" />
+      <node concept="17QB3L" id="6xoAPBjQ3D9" role="3clF45" />
+      <node concept="37vLTG" id="6xoAPBjQ3Kd" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="6xoAPBjQ3Kc" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6xoAPBjQ3Ok" role="3clF46">
+        <property role="TrG5h" value="variableName" />
+        <node concept="17QB3L" id="6xoAPBjQ3S9" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="6xoAPBjQ1z3" role="1B3o_S" />
+  </node>
+  <node concept="vrV6u" id="6xoAPBjQ3U9">
+    <property role="TrG5h" value="MakeVariableResolvers" />
+    <node concept="3uibUv" id="6xoAPBjQ6Rb" role="luc8K">
+      <ref role="3uigEE" node="6xoAPBjQ1z2" resolve="MakeVariableResolver" />
     </node>
   </node>
 </model>
