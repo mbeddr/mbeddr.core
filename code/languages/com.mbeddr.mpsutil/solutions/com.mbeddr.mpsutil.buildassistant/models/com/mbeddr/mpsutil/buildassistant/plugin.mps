@@ -2,12 +2,12 @@
 <model ref="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
@@ -31,6 +31,28 @@
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
+        <property id="1205250923097" name="caption" index="2uzpH1" />
+        <child id="1203083461638" name="executeFunction" index="tncku" />
+        <child id="1217413222820" name="parameter" index="1NuT2Z" />
+        <child id="8976425910813834639" name="icon" index="3Uehp1" />
+      </concept>
+      <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
+      <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
+      <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
+        <reference id="1217252646389" name="key" index="1DUlNI" />
+      </concept>
+      <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
+      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
+        <child id="5538333046911298738" name="condition" index="1oa70y" />
+      </concept>
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
@@ -66,6 +88,9 @@
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
@@ -190,6 +215,12 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
+      <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
+        <reference id="1205756909548" name="member" index="2WH_rO" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -219,6 +250,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -1927,5 +1961,409 @@
     </node>
   </node>
   <node concept="2DaZZR" id="3_loG33b5a" />
+  <node concept="sE7Ow" id="3x_7aSMkOzC">
+    <property role="TrG5h" value="RebuildDependencies_Project" />
+    <property role="2uzpH1" value="Rebuild with Dependencies" />
+    <property role="3GE5qa" value="project" />
+    <node concept="tnohg" id="3x_7aSMkOzD" role="tncku">
+      <node concept="3clFbS" id="3x_7aSMkOzE" role="2VODD2">
+        <node concept="3cpWs8" id="3x_7aSMkOzF" role="3cqZAp">
+          <node concept="3cpWsn" id="3x_7aSMkOzG" role="3cpWs9">
+            <property role="TrG5h" value="builder" />
+            <node concept="3uibUv" id="3x_7aSMkOzH" role="1tU5fm">
+              <ref role="3uigEE" node="3_loG33_Tx" resolve="DependencyBuilder" />
+            </node>
+            <node concept="2ShNRf" id="3x_7aSMkOzI" role="33vP2m">
+              <node concept="1pGfFk" id="3x_7aSMkOzJ" role="2ShVmc">
+                <ref role="37wK5l" node="3x_7aSMhu4_" resolve="DependencyBuilder" />
+                <node concept="2OqwBi" id="3x_7aSMkOzK" role="37wK5m">
+                  <node concept="2WthIp" id="3x_7aSMkOzL" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3x_7aSMkOzM" role="2OqNvi">
+                    <ref role="2WH_rO" node="3x_7aSMkO$4" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="3x_7aSMkOzN" role="3cqZAp">
+          <node concept="2GrKxI" id="3x_7aSMkOzO" role="2Gsz3X">
+            <property role="TrG5h" value="module" />
+          </node>
+          <node concept="2OqwBi" id="3x_7aSMkOzP" role="2GsD0m">
+            <node concept="2OqwBi" id="3x_7aSMkOzQ" role="2Oq$k0">
+              <node concept="2WthIp" id="3x_7aSMkOzR" role="2Oq$k0" />
+              <node concept="1DTwFV" id="3x_7aSMkOzS" role="2OqNvi">
+                <ref role="2WH_rO" node="3x_7aSMkO$4" resolve="project" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3x_7aSMkOzT" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~ProjectBase.getProjectModules()" resolve="getProjectModules" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="3x_7aSMkOzU" role="2LFqv$">
+            <node concept="3clFbF" id="3x_7aSMkOzV" role="3cqZAp">
+              <node concept="2OqwBi" id="3x_7aSMkOzW" role="3clFbG">
+                <node concept="37vLTw" id="3x_7aSMkOzX" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3x_7aSMkOzG" resolve="builder" />
+                </node>
+                <node concept="liA8E" id="3x_7aSMkOzY" role="2OqNvi">
+                  <ref role="37wK5l" node="3x_7aSI2d18" resolve="with" />
+                  <node concept="2GrUjf" id="3x_7aSMkOzZ" role="37wK5m">
+                    <ref role="2Gs0qQ" node="3x_7aSMkOzO" resolve="module" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3x_7aSMkO$0" role="3cqZAp">
+          <node concept="2OqwBi" id="3x_7aSMkO$1" role="3clFbG">
+            <node concept="37vLTw" id="3x_7aSMkO$2" role="2Oq$k0">
+              <ref role="3cqZAo" node="3x_7aSMkOzG" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="3x_7aSMkO$3" role="2OqNvi">
+              <ref role="37wK5l" node="3x_7aSMhNDN" resolve="startRebuild" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="3x_7aSMkO$4" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="3x_7aSMkO$5" role="1oa70y" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="3x_7aSMkI7r">
+    <property role="TrG5h" value="RebuildDependencies_Module" />
+    <property role="2uzpH1" value="Rebuild with Dependencies" />
+    <property role="3GE5qa" value="module" />
+    <node concept="tnohg" id="3x_7aSMkI7s" role="tncku">
+      <node concept="3clFbS" id="3x_7aSMkI7t" role="2VODD2">
+        <node concept="3cpWs8" id="3x_7aSMkI7u" role="3cqZAp">
+          <node concept="3cpWsn" id="3x_7aSMkI7v" role="3cpWs9">
+            <property role="TrG5h" value="builder" />
+            <node concept="3uibUv" id="3x_7aSMkI7w" role="1tU5fm">
+              <ref role="3uigEE" node="3_loG33_Tx" resolve="DependencyBuilder" />
+            </node>
+            <node concept="2ShNRf" id="3x_7aSMkI7x" role="33vP2m">
+              <node concept="1pGfFk" id="3x_7aSMkI7y" role="2ShVmc">
+                <ref role="37wK5l" node="3x_7aSMhu4_" resolve="DependencyBuilder" />
+                <node concept="2OqwBi" id="3x_7aSMkI7z" role="37wK5m">
+                  <node concept="2WthIp" id="3x_7aSMkI7$" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3x_7aSMkI7_" role="2OqNvi">
+                    <ref role="2WH_rO" node="3x_7aSMkI7P" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="3x_7aSMkI7A" role="3cqZAp">
+          <node concept="2GrKxI" id="3x_7aSMkI7B" role="2Gsz3X">
+            <property role="TrG5h" value="module" />
+          </node>
+          <node concept="2OqwBi" id="3x_7aSMkI7C" role="2GsD0m">
+            <node concept="2WthIp" id="3x_7aSMkI7D" role="2Oq$k0" />
+            <node concept="1DTwFV" id="3x_7aSMkI7E" role="2OqNvi">
+              <ref role="2WH_rO" node="3x_7aSMkI7R" resolve="modules" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="3x_7aSMkI7F" role="2LFqv$">
+            <node concept="3clFbF" id="3x_7aSMkI7G" role="3cqZAp">
+              <node concept="2OqwBi" id="3x_7aSMkI7H" role="3clFbG">
+                <node concept="37vLTw" id="3x_7aSMkI7I" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3x_7aSMkI7v" resolve="builder" />
+                </node>
+                <node concept="liA8E" id="3x_7aSMkI7J" role="2OqNvi">
+                  <ref role="37wK5l" node="3x_7aSI2d18" resolve="with" />
+                  <node concept="2GrUjf" id="3x_7aSMkI7K" role="37wK5m">
+                    <ref role="2Gs0qQ" node="3x_7aSMkI7B" resolve="module" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3x_7aSMkI7L" role="3cqZAp">
+          <node concept="2OqwBi" id="3x_7aSMkI7M" role="3clFbG">
+            <node concept="37vLTw" id="3x_7aSMkI7N" role="2Oq$k0">
+              <ref role="3cqZAo" node="3x_7aSMkI7v" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="3x_7aSMkI7O" role="2OqNvi">
+              <ref role="37wK5l" node="3x_7aSMhNDN" resolve="startRebuild" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="3x_7aSMkI7P" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="3x_7aSMkI7Q" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="3x_7aSMkI7R" role="1NuT2Z">
+      <property role="TrG5h" value="modules" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULES" resolve="MODULES" />
+      <node concept="1oajcY" id="3x_7aSMkI7S" role="1oa70y" />
+    </node>
+    <node concept="1QGGSu" id="6YP03IIYksX" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="3_loG3uwDi">
+    <property role="TrG5h" value="RebuildDependencies_Model" />
+    <property role="2uzpH1" value="Rebuild with Dependencies" />
+    <property role="3GE5qa" value="model" />
+    <node concept="tnohg" id="3_loG3uwDj" role="tncku">
+      <node concept="3clFbS" id="3_loG3uwDk" role="2VODD2">
+        <node concept="3clFbF" id="3_loG3uwDu" role="3cqZAp">
+          <node concept="2OqwBi" id="3x_7aSMky64" role="3clFbG">
+            <node concept="2OqwBi" id="3x_7aSMkuvp" role="2Oq$k0">
+              <node concept="2ShNRf" id="3_loG3uwDw" role="2Oq$k0">
+                <node concept="1pGfFk" id="3x_7aSMjzPV" role="2ShVmc">
+                  <ref role="37wK5l" node="3x_7aSMhu4_" resolve="DependencyBuilder" />
+                  <node concept="2OqwBi" id="3x_7aSMjzSU" role="37wK5m">
+                    <node concept="2WthIp" id="3x_7aSMjzSX" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="3x_7aSMjzSZ" role="2OqNvi">
+                      <ref role="2WH_rO" node="3_loG3uwDE" resolve="project" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3x_7aSMkuLx" role="2OqNvi">
+                <ref role="37wK5l" node="3x_7aSI1Ej2" resolve="with" />
+                <node concept="2OqwBi" id="3x_7aSMkwJ9" role="37wK5m">
+                  <node concept="2WthIp" id="3x_7aSMkvic" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3x_7aSMkxVX" role="2OqNvi">
+                    <ref role="2WH_rO" node="3_loG3uwDG" resolve="model" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3x_7aSMk$qE" role="2OqNvi">
+              <ref role="37wK5l" node="3x_7aSMhNDN" resolve="startRebuild" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="3_loG3uwDE" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="3_loG3uwDF" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="3_loG3uwDG" role="1NuT2Z">
+      <property role="TrG5h" value="model" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
+      <node concept="1oajcY" id="3_loG3uwDH" role="1oa70y" />
+    </node>
+    <node concept="1QGGSu" id="FniR$CiprS" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="3x_7aSMkC8e">
+    <property role="TrG5h" value="BuildDependencies_Module" />
+    <property role="2uzpH1" value="Make with Dependencies" />
+    <property role="3GE5qa" value="module" />
+    <node concept="tnohg" id="3x_7aSMkC8f" role="tncku">
+      <node concept="3clFbS" id="3x_7aSMkC8g" role="2VODD2">
+        <node concept="3cpWs8" id="3x_7aSMkFnW" role="3cqZAp">
+          <node concept="3cpWsn" id="3x_7aSMkFnX" role="3cpWs9">
+            <property role="TrG5h" value="builder" />
+            <node concept="3uibUv" id="3x_7aSMkFnV" role="1tU5fm">
+              <ref role="3uigEE" node="3_loG33_Tx" resolve="DependencyBuilder" />
+            </node>
+            <node concept="2ShNRf" id="3x_7aSMkFnY" role="33vP2m">
+              <node concept="1pGfFk" id="3x_7aSMkFnZ" role="2ShVmc">
+                <ref role="37wK5l" node="3x_7aSMhu4_" resolve="DependencyBuilder" />
+                <node concept="2OqwBi" id="3x_7aSMkFo0" role="37wK5m">
+                  <node concept="2WthIp" id="3x_7aSMkFo1" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3x_7aSMkFo2" role="2OqNvi">
+                    <ref role="2WH_rO" node="3x_7aSMkC8u" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="3x_7aSMkFJB" role="3cqZAp">
+          <node concept="2GrKxI" id="3x_7aSMkFJD" role="2Gsz3X">
+            <property role="TrG5h" value="module" />
+          </node>
+          <node concept="2OqwBi" id="3x_7aSMkFQo" role="2GsD0m">
+            <node concept="2WthIp" id="3x_7aSMkFQr" role="2Oq$k0" />
+            <node concept="1DTwFV" id="3x_7aSMkFQt" role="2OqNvi">
+              <ref role="2WH_rO" node="3x_7aSMkEFK" resolve="modules" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="3x_7aSMkFJH" role="2LFqv$">
+            <node concept="3clFbF" id="3x_7aSMkG0N" role="3cqZAp">
+              <node concept="2OqwBi" id="3x_7aSMkG6A" role="3clFbG">
+                <node concept="37vLTw" id="3x_7aSMkG0M" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3x_7aSMkFnX" resolve="builder" />
+                </node>
+                <node concept="liA8E" id="3x_7aSMkGdI" role="2OqNvi">
+                  <ref role="37wK5l" node="3x_7aSI2d18" resolve="with" />
+                  <node concept="2GrUjf" id="3x_7aSMkGG4" role="37wK5m">
+                    <ref role="2Gs0qQ" node="3x_7aSMkFJD" resolve="module" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3x_7aSMkC8h" role="3cqZAp">
+          <node concept="2OqwBi" id="3x_7aSMkC8i" role="3clFbG">
+            <node concept="37vLTw" id="3x_7aSMkFo3" role="2Oq$k0">
+              <ref role="3cqZAo" node="3x_7aSMkFnX" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="3x_7aSMkC8t" role="2OqNvi">
+              <ref role="37wK5l" node="3x_7aSMhBjF" resolve="startBuild" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="3x_7aSMkC8u" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="3x_7aSMkC8v" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="3x_7aSMkEFK" role="1NuT2Z">
+      <property role="TrG5h" value="modules" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULES" resolve="MODULES" />
+      <node concept="1oajcY" id="3x_7aSMkEFL" role="1oa70y" />
+    </node>
+    <node concept="1QGGSu" id="6YP03IIYkCy" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="3_loG33b7f">
+    <property role="TrG5h" value="BuildDependencies_Model" />
+    <property role="2uzpH1" value="Make with Dependencies" />
+    <property role="3GE5qa" value="model" />
+    <node concept="tnohg" id="3_loG33b7g" role="tncku">
+      <node concept="3clFbS" id="3_loG33b7h" role="2VODD2">
+        <node concept="3clFbF" id="3x_7aSMkAvw" role="3cqZAp">
+          <node concept="2OqwBi" id="3x_7aSMkAvx" role="3clFbG">
+            <node concept="2OqwBi" id="3x_7aSMkAvy" role="2Oq$k0">
+              <node concept="2ShNRf" id="3x_7aSMkAvz" role="2Oq$k0">
+                <node concept="1pGfFk" id="3x_7aSMkAv$" role="2ShVmc">
+                  <ref role="37wK5l" node="3x_7aSMhu4_" resolve="DependencyBuilder" />
+                  <node concept="2OqwBi" id="3x_7aSMkAv_" role="37wK5m">
+                    <node concept="2WthIp" id="3x_7aSMkAvA" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="3x_7aSMkAvB" role="2OqNvi">
+                      <ref role="2WH_rO" node="3_loG34x6F" resolve="project" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3x_7aSMkAvC" role="2OqNvi">
+                <ref role="37wK5l" node="3x_7aSI1Ej2" resolve="with" />
+                <node concept="2OqwBi" id="3x_7aSMkAvD" role="37wK5m">
+                  <node concept="2WthIp" id="3x_7aSMkAvE" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3x_7aSMkAvF" role="2OqNvi">
+                    <ref role="2WH_rO" node="3_loG33bje" resolve="model" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3x_7aSMkAvG" role="2OqNvi">
+              <ref role="37wK5l" node="3x_7aSMhBjF" resolve="startBuild" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="3_loG34x6F" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="3_loG34x6G" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="3_loG33bje" role="1NuT2Z">
+      <property role="TrG5h" value="model" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
+      <node concept="1oajcY" id="3_loG33bjf" role="1oa70y" />
+    </node>
+    <node concept="1QGGSu" id="74geI_h41wO" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="3x_7aSMkJ6n">
+    <property role="TrG5h" value="BuildDependencies_Project" />
+    <property role="2uzpH1" value="Build with Dependencies" />
+    <property role="3GE5qa" value="project" />
+    <node concept="tnohg" id="3x_7aSMkJ6o" role="tncku">
+      <node concept="3clFbS" id="3x_7aSMkJ6p" role="2VODD2">
+        <node concept="3cpWs8" id="3x_7aSMkJ6q" role="3cqZAp">
+          <node concept="3cpWsn" id="3x_7aSMkJ6r" role="3cpWs9">
+            <property role="TrG5h" value="builder" />
+            <node concept="3uibUv" id="3x_7aSMkJ6s" role="1tU5fm">
+              <ref role="3uigEE" node="3_loG33_Tx" resolve="DependencyBuilder" />
+            </node>
+            <node concept="2ShNRf" id="3x_7aSMkJ6t" role="33vP2m">
+              <node concept="1pGfFk" id="3x_7aSMkJ6u" role="2ShVmc">
+                <ref role="37wK5l" node="3x_7aSMhu4_" resolve="DependencyBuilder" />
+                <node concept="2OqwBi" id="3x_7aSMkJ6v" role="37wK5m">
+                  <node concept="2WthIp" id="3x_7aSMkJ6w" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3x_7aSMkJ6x" role="2OqNvi">
+                    <ref role="2WH_rO" node="3x_7aSMkJ6L" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="3x_7aSMkJ6y" role="3cqZAp">
+          <node concept="2GrKxI" id="3x_7aSMkJ6z" role="2Gsz3X">
+            <property role="TrG5h" value="module" />
+          </node>
+          <node concept="2OqwBi" id="3x_7aSMkLfG" role="2GsD0m">
+            <node concept="2OqwBi" id="3x_7aSMkKuw" role="2Oq$k0">
+              <node concept="2WthIp" id="3x_7aSMkKuz" role="2Oq$k0" />
+              <node concept="1DTwFV" id="3x_7aSMkKu_" role="2OqNvi">
+                <ref role="2WH_rO" node="3x_7aSMkJ6L" resolve="project" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3x_7aSMkMkV" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~ProjectBase.getProjectModules()" resolve="getProjectModules" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="3x_7aSMkJ6B" role="2LFqv$">
+            <node concept="3clFbF" id="3x_7aSMkJ6C" role="3cqZAp">
+              <node concept="2OqwBi" id="3x_7aSMkJ6D" role="3clFbG">
+                <node concept="37vLTw" id="3x_7aSMkJ6E" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3x_7aSMkJ6r" resolve="builder" />
+                </node>
+                <node concept="liA8E" id="3x_7aSMkJ6F" role="2OqNvi">
+                  <ref role="37wK5l" node="3x_7aSI2d18" resolve="with" />
+                  <node concept="2GrUjf" id="3x_7aSMkJ6G" role="37wK5m">
+                    <ref role="2Gs0qQ" node="3x_7aSMkJ6z" resolve="module" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3x_7aSMkJ6H" role="3cqZAp">
+          <node concept="2OqwBi" id="3x_7aSMkJ6I" role="3clFbG">
+            <node concept="37vLTw" id="3x_7aSMkJ6J" role="2Oq$k0">
+              <ref role="3cqZAo" node="3x_7aSMkJ6r" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="3x_7aSMkJ6K" role="2OqNvi">
+              <ref role="37wK5l" node="3x_7aSMhBjF" resolve="startBuild" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="3x_7aSMkJ6L" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="3x_7aSMkJ6M" role="1oa70y" />
+    </node>
+  </node>
 </model>
 
