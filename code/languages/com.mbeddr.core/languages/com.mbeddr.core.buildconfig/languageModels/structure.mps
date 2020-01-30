@@ -292,6 +292,9 @@
       <property role="IQ2ns" value="2671893947946267775" />
       <ref role="20lvS9" node="2kkumeGQcAy" resolve="Library" />
     </node>
+    <node concept="PrWs8" id="6xoAPBk0T7K" role="PzmwI">
+      <ref role="PrY4T" node="6xoAPBjOH1$" resolve="IMakeVariableProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2kkumeGQcAy">
     <property role="TrG5h" value="Library" />
