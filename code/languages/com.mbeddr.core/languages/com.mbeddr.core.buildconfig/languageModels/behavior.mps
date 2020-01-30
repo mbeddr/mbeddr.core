@@ -8821,17 +8821,21 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6xoAPBjOZol" role="3cqZAp">
-          <node concept="3K4zz7" id="6xoAPBjOZNH" role="3clFbG">
-            <node concept="Xl_RD" id="6xoAPBjOZQX" role="3K4E3e">
-              <property role="Xl_RC" value="/mingw64" />
+        <node concept="3clFbF" id="22zIbaOE760" role="3cqZAp">
+          <node concept="3cpWs3" id="22zIbaOEdM$" role="3clFbG">
+            <node concept="3cpWs3" id="22zIbaOEdHD" role="3uHU7B">
+              <node concept="Xl_RD" id="22zIbaOEdHJ" role="3uHU7B">
+                <property role="Xl_RC" value="$(if $(filter " />
+              </node>
+              <node concept="2OqwBi" id="22zIbaOEedK" role="3uHU7w">
+                <node concept="35c_gC" id="22zIbaOEdPp" role="2Oq$k0">
+                  <ref role="35c_gD" to="51wr:4JZ_DSuY8yt" resolve="Win32" />
+                </node>
+                <node concept="3n3YKJ" id="22zIbaOEeBH" role="2OqNvi" />
+              </node>
             </node>
-            <node concept="Xl_RD" id="6xoAPBjP4Tz" role="3K4GZi">
-              <property role="Xl_RC" value="/usr" />
-            </node>
-            <node concept="10M0yZ" id="6xoAPBjOZs$" role="3K4Cdx">
-              <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
-              <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
+            <node concept="Xl_RD" id="22zIbaOEdMG" role="3uHU7w">
+              <property role="Xl_RC" value=",$(TARGET)),/mingw64,/usr)" />
             </node>
           </node>
         </node>
