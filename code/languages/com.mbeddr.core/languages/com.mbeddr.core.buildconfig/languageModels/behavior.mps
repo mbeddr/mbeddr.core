@@ -41,6 +41,7 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="w827" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs.openapi(MPS.Core/)" />
     <import index="7otb" ref="r:12f155ed-0af0-4e37-8eac-70f4cf323371(com.mbeddr.core.buildconfig.plugin)" />
+    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
   </imports>
@@ -8544,7 +8545,7 @@
         </node>
         <node concept="3cpWs8" id="6xoAPBjQiSa" role="3cqZAp">
           <node concept="3cpWsn" id="6xoAPBjQiSd" role="3cpWs9">
-            <property role="TrG5h" value="prefix" />
+            <property role="TrG5h" value="defaultPrefix" />
             <node concept="17QB3L" id="6xoAPBjQiS8" role="1tU5fm" />
             <node concept="2OqwBi" id="6xoAPBjQazo" role="33vP2m">
               <node concept="13iAh5" id="6xoAPBjQamw" role="2Oq$k0" />
@@ -8560,15 +8561,19 @@
         <node concept="3clFbJ" id="6xoAPBjQbj$" role="3cqZAp">
           <node concept="3clFbS" id="6xoAPBjQbj_" role="3clFbx">
             <node concept="3cpWs6" id="6xoAPBjQbjA" role="3cqZAp">
-              <node concept="37vLTw" id="6xoAPBjQbjB" role="3cqZAk">
-                <ref role="3cqZAo" node="6xoAPBjQiSd" resolve="prefix" />
+              <node concept="2YIFZM" id="35YirduUTnC" role="3cqZAk">
+                <ref role="37wK5l" to="8oaq:~FilenameUtils.separatorsToUnix(java.lang.String)" resolve="separatorsToUnix" />
+                <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
+                <node concept="37vLTw" id="22zIbaODsiG" role="37wK5m">
+                  <ref role="3cqZAo" node="6xoAPBjQiSd" resolve="defaultPrefix" />
+                </node>
               </node>
             </node>
           </node>
           <node concept="3y3z36" id="6xoAPBjQbjC" role="3clFbw">
             <node concept="10Nm6u" id="6xoAPBjQbjD" role="3uHU7w" />
             <node concept="37vLTw" id="6xoAPBjQbjE" role="3uHU7B">
-              <ref role="3cqZAo" node="6xoAPBjQiSd" resolve="prefix" />
+              <ref role="3cqZAo" node="6xoAPBjQiSd" resolve="defaultPrefix" />
             </node>
           </node>
         </node>
@@ -8634,7 +8639,7 @@
         <node concept="3clFbF" id="6xoAPBjPVQD" role="3cqZAp">
           <node concept="37vLTI" id="6xoAPBjPWlC" role="3clFbG">
             <node concept="37vLTw" id="6xoAPBjPVQB" role="37vLTJ">
-              <ref role="3cqZAo" node="6xoAPBjQiSd" resolve="prefix" />
+              <ref role="3cqZAo" node="6xoAPBjQiSd" resolve="defaultPrefix" />
             </node>
             <node concept="2YIFZM" id="6xoAPBjPBQI" role="37vLTx">
               <ref role="37wK5l" node="6xoAPBjPtca" resolve="findAncestorDir" />
@@ -8765,15 +8770,19 @@
         <node concept="3clFbJ" id="6xoAPBjPX0Z" role="3cqZAp">
           <node concept="3clFbS" id="6xoAPBjPX10" role="3clFbx">
             <node concept="3cpWs6" id="6xoAPBjPX11" role="3cqZAp">
-              <node concept="37vLTw" id="6xoAPBjPX12" role="3cqZAk">
-                <ref role="3cqZAo" node="6xoAPBjQiSd" resolve="prefix" />
+              <node concept="2YIFZM" id="22zIbaODDt9" role="3cqZAk">
+                <ref role="37wK5l" to="8oaq:~FilenameUtils.separatorsToUnix(java.lang.String)" resolve="separatorsToUnix" />
+                <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
+                <node concept="37vLTw" id="22zIbaODDta" role="37wK5m">
+                  <ref role="3cqZAo" node="6xoAPBjQiSd" resolve="defaultPrefix" />
+                </node>
               </node>
             </node>
           </node>
           <node concept="3y3z36" id="6xoAPBjPX13" role="3clFbw">
             <node concept="10Nm6u" id="6xoAPBjPX14" role="3uHU7w" />
             <node concept="37vLTw" id="6xoAPBjPX15" role="3uHU7B">
-              <ref role="3cqZAo" node="6xoAPBjQiSd" resolve="prefix" />
+              <ref role="3cqZAo" node="6xoAPBjQiSd" resolve="defaultPrefix" />
             </node>
           </node>
         </node>
