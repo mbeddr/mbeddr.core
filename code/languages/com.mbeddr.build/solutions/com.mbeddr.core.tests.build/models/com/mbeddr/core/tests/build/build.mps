@@ -987,11 +987,6 @@
           </node>
         </node>
       </node>
-      <node concept="1SiIV0" id="4cEcQIx$y5_" role="3bR37C">
-        <node concept="3bR9La" id="4cEcQIx$y5A" role="1SiIV1">
-          <ref role="3bR37D" node="4cEcQIx$xWy" resolve="com.mbeddr.core.__spreferences.PlatformTemplates" />
-        </node>
-      </node>
       <node concept="3rtmxn" id="3xFG3bj5c3J" role="3bR31x">
         <node concept="3LXTmp" id="3xFG3bj5c3K" role="3rtmxm">
           <node concept="3qWCbU" id="3xFG3bj5c3L" role="3LXTna">
@@ -1011,40 +1006,6 @@
       <node concept="1SiIV0" id="7Aba6BzyYMj" role="3bR37C">
         <node concept="3bR9La" id="7Aba6BzyYMk" role="1SiIV1">
           <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
-        </node>
-      </node>
-    </node>
-    <node concept="1E1JtA" id="4cEcQIx$xWy" role="3989C9">
-      <property role="BnDLt" value="true" />
-      <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates" />
-      <property role="TrG5h" value="com.mbeddr.core.__spreferences.PlatformTemplates" />
-      <property role="aoJFB" value="eYcmk9QOli/sources" />
-      <node concept="398BVA" id="4cEcQIx$xWz" role="3LF7KH">
-        <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.core" />
-        <node concept="2Ry0Ak" id="4cEcQIx$xW$" role="iGT6I">
-          <property role="2Ry0Am" value="_spreferences" />
-          <node concept="2Ry0Ak" id="4cEcQIx$xW_" role="2Ry0An">
-            <property role="2Ry0Am" value="PlatformTemplates" />
-            <node concept="2Ry0Ak" id="4cEcQIx$xWA" role="2Ry0An">
-              <property role="2Ry0Am" value="module.msd" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3rtmxn" id="3xFG3bj5c4i" role="3bR31x">
-        <node concept="3LXTmp" id="3xFG3bj5c4j" role="3rtmxm">
-          <node concept="3qWCbU" id="3xFG3bj5c4k" role="3LXTna">
-            <property role="3qWCbO" value="icons/**, resources/**" />
-          </node>
-          <node concept="398BVA" id="3xFG3bj5c4l" role="3LXTmr">
-            <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.core" />
-            <node concept="2Ry0Ak" id="3xFG3bj5c4m" role="iGT6I">
-              <property role="2Ry0Am" value="_spreferences" />
-              <node concept="2Ry0Ak" id="3xFG3bj5c4n" role="2Ry0An">
-                <property role="2Ry0Am" value="PlatformTemplates" />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>
@@ -1175,9 +1136,6 @@
     <node concept="1l3spV" id="58DJDcMhr7o" role="1l3spN">
       <node concept="L2wRC" id="58DJDcMhr7s" role="39821P">
         <ref role="L2wRA" node="58DJDcMhr6r" resolve="aLibrary" />
-      </node>
-      <node concept="L2wRC" id="4cEcQIx$$y8" role="39821P">
-        <ref role="L2wRA" node="4cEcQIx$xWy" resolve="com.mbeddr.core.__spreferences.PlatformTemplates" />
       </node>
       <node concept="2HvfSZ" id="40wZOneoWer" role="39821P">
         <node concept="3LWZYx" id="40wZOneoWff" role="2HvfZ1">
