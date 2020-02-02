@@ -84,9 +84,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -104,6 +101,9 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -193,7 +193,7 @@
             <node concept="Xl_RD" id="5k1FOfehdos" role="2MkJ7o">
               <property role="Xl_RC" value="nested safeheap blocks are not supported" />
             </node>
-            <node concept="1YBJjd" id="5k1FOfehdot" role="2OEOjV">
+            <node concept="1YBJjd" id="5k1FOfehdot" role="1urrMF">
               <ref role="1YBMHb" node="5k1FOfehdn2" resolve="shb" />
             </node>
           </node>
@@ -226,7 +226,7 @@
             <node concept="Xl_RD" id="1fAuj8TvUWF" role="2MkJ7o">
               <property role="Xl_RC" value="safeheap requires malloc and free to be visible, for example by importing stdlib.h" />
             </node>
-            <node concept="1YBJjd" id="1fAuj8TvUWG" role="2OEOjV">
+            <node concept="1YBJjd" id="1fAuj8TvUWG" role="1urrMF">
               <ref role="1YBMHb" node="5k1FOfehdn2" resolve="shb" />
             </node>
           </node>
@@ -301,7 +301,7 @@
             <node concept="Xl_RD" id="3NI0$JEaJBP" role="2MkJ7o">
               <property role="Xl_RC" value="must be a pointer type" />
             </node>
-            <node concept="2OqwBi" id="3NI0$JEaJCb" role="2OEOjV">
+            <node concept="2OqwBi" id="3NI0$JEaJCb" role="1urrMF">
               <node concept="1YBJjd" id="3NI0$JEaJBQ" role="2Oq$k0">
                 <ref role="1YBMHb" node="3NI0$JEaJAN" resolve="shv" />
               </node>
@@ -340,7 +340,7 @@
                 <node concept="Xl_RD" id="4$_MUgdg2i5" role="a7wSD">
                   <property role="Xl_RC" value="should be migrated" />
                 </node>
-                <node concept="1YBJjd" id="4$_MUgdg2mZ" role="2OEOjV">
+                <node concept="1YBJjd" id="4$_MUgdg2mZ" role="1urrMF">
                   <ref role="1YBMHb" node="15Sel8ANPW3" resolve="shb" />
                 </node>
               </node>

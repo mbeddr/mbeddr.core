@@ -2140,6 +2140,7 @@
       <node concept="3Khz0B" id="7e09zBIbaLj" role="2RW2fA" />
     </node>
     <node concept="3GEVxB" id="7e09zBI9Z65" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" to="9mbu:1c9NWo49CE8" resolve="SPI" />
     </node>
     <node concept="3GEVxB" id="7e09zBIbhOj" role="2OODSX">

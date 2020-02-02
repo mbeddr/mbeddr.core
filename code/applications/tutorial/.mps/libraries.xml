@@ -11,14 +11,6 @@
             </Library>
           </value>
         </entry>
-        <entry key="mps-ext">
-          <value>
-            <Library>
-              <option name="name" value="mps-ext" />
-              <option name="path" value="${mps-ext.github.core.home}/code" />
-            </Library>
-          </value>
-        </entry>
       </map>
     </option>
   </component>

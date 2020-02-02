@@ -13,7 +13,7 @@
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -525,7 +525,7 @@
                 <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
               </node>
               <node concept="3TrEf2" id="3R$6B6bPvJ9" role="2OqNvi">
-                <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
               </node>
             </node>
           </node>
@@ -537,7 +537,7 @@
                 <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
               </node>
               <node concept="3TrEf2" id="4BxItZJ4BDB" role="2OqNvi">
-                <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
               </node>
             </node>
             <node concept="1mIQ4w" id="4BxItZJ4BDG" role="2OqNvi">
@@ -603,7 +603,7 @@
                         <node concept="2OqwBi" id="20Blhoik6yz" role="1m5AlR">
                           <node concept="30H73N" id="20Blhoik6y$" role="2Oq$k0" />
                           <node concept="3TrEf2" id="20Blhoik6y_" role="2OqNvi">
-                            <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                            <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                           </node>
                         </node>
                         <node concept="chp4Y" id="20Blhoik6yA" role="3oSUPX">
@@ -663,7 +663,7 @@
                         <node concept="2OqwBi" id="20Blhoik6yQ" role="1m5AlR">
                           <node concept="30H73N" id="20Blhoik6yR" role="2Oq$k0" />
                           <node concept="3TrEf2" id="20Blhoik6yS" role="2OqNvi">
-                            <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                            <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                           </node>
                         </node>
                         <node concept="chp4Y" id="20Blhoik6yT" role="3oSUPX">
@@ -715,7 +715,7 @@
                       <node concept="2OqwBi" id="20Blhoik6z6" role="1m5AlR">
                         <node concept="30H73N" id="20Blhoik6z7" role="2Oq$k0" />
                         <node concept="3TrEf2" id="20Blhoik6z8" role="2OqNvi">
-                          <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                          <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                         </node>
                       </node>
                       <node concept="chp4Y" id="20Blhoik6z9" role="3oSUPX">

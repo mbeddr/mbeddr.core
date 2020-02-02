@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b322c5a3-91d6-4b0b-b6f8-6e2fcbe958d8(mbeddr.tutorial.shonan.complex)">
+<model ref="r:b322c5a3-91d6-4b0b-b6f8-6e2fcbe958d8(mbeddr.tutorial.shonan.complex)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />

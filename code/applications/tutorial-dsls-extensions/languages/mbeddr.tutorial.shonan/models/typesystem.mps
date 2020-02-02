@@ -196,9 +196,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
@@ -231,6 +228,9 @@
       <concept id="1236083248858" name="jetbrains.mps.lang.typesystem.structure.RightOperandType_parameter" flags="nn" index="3cjoZ5" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -2288,11 +2288,11 @@
       <node concept="3clFbJ" id="5TPCPz$cNGO" role="3cqZAp">
         <node concept="3clFbS" id="5TPCPz$cNGP" role="3clFbx">
           <node concept="2MkqsV" id="5TPCPz$cNGS" role="3cqZAp">
-            <node concept="1YBJjd" id="5TPCPz$cNGW" role="2OEOjV">
-              <ref role="1YBMHb" node="5TPCPz$cNCP" resolve="literal" />
-            </node>
             <node concept="Xl_RD" id="5TPCPz$cNGV" role="2MkJ7o">
               <property role="Xl_RC" value="all columns must have the same size" />
+            </node>
+            <node concept="1YBJjd" id="5TPCPz$cNGW" role="1urrMF">
+              <ref role="1YBMHb" node="5TPCPz$cNCP" resolve="literal" />
             </node>
           </node>
         </node>
@@ -2544,7 +2544,7 @@
                   <node concept="Xl_RD" id="6zw2wI8fGpr" role="2MkJ7o">
                     <property role="Xl_RC" value="not a matrix" />
                   </node>
-                  <node concept="2OqwBi" id="6zw2wI8fGps" role="2OEOjV">
+                  <node concept="2OqwBi" id="6zw2wI8fGps" role="1urrMF">
                     <node concept="1YBJjd" id="6zw2wI8fGpt" role="2Oq$k0">
                       <ref role="1YBMHb" node="3yoEvFpCQJs" resolve="access" />
                     </node>
@@ -2808,7 +2808,7 @@
                 <node concept="Xl_RD" id="2diR0I37gGp" role="2MkJ7o">
                   <property role="Xl_RC" value="Direct access of array elements is not allowed when struct of arrays representation is used!" />
                 </node>
-                <node concept="1YBJjd" id="2diR0I37gNg" role="2OEOjV">
+                <node concept="1YBJjd" id="2diR0I37gNg" role="1urrMF">
                   <ref role="1YBMHb" node="7ILxbOzUWuP" resolve="representation" />
                 </node>
               </node>
@@ -3505,7 +3505,7 @@
             <node concept="Xl_RD" id="12852iL1MsS" role="2MkJ7o">
               <property role="Xl_RC" value="The referenced variable must have pointer type!" />
             </node>
-            <node concept="2OqwBi" id="12852iL1MxV" role="2OEOjV">
+            <node concept="2OqwBi" id="12852iL1MxV" role="1urrMF">
               <node concept="1YBJjd" id="12852iL1MtB" role="2Oq$k0">
                 <ref role="1YBMHb" node="12852iL1LK8" resolve="statement" />
               </node>
