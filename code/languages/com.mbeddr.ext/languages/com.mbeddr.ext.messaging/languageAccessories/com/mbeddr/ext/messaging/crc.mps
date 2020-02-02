@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3e2cab9f-ef04-4626-abca-728117c6459d(com.mbeddr.ext.messaging.crc)">
+<model ref="r:3e2cab9f-ef04-4626-abca-728117c6459d(com.mbeddr.ext.messaging.crc)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />

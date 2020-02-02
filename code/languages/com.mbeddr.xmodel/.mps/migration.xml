@@ -8,5 +8,6 @@
     <entry key="jetbrains.mps.ide.mpsmigration.v35.EditorGeneratorRefactoring" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v35.RemoveHistoryFiles" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v35.SetGenRequiredToEmptyAspects" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2019_3.DefaultFacetExplicitPersistence" value="executed" />
   </component>
 </project>
