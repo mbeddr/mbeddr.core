@@ -38,6 +38,10 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1173175405605" name="jetbrains.mps.baseLanguage.structure.ArrayAccessExpression" flags="nn" index="AH0OO">
+        <child id="1173175577737" name="index" index="AHEQo" />
+        <child id="1173175590490" name="array" index="AHHXb" />
+      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
         <child id="1188214630783" name="value" index="2B76xF" />
@@ -467,7 +471,7 @@
             <property role="TrG5h" value="currentBuildNumber" />
             <node concept="10Oyi0" id="7836$RyVWkX" role="1tU5fm" />
             <node concept="1rXfSq" id="7836$RyVWkY" role="33vP2m">
-              <ref role="37wK5l" node="7836$RyVWle" resolve="currentBuildNumberString" />
+              <ref role="37wK5l" node="7836$RyVWle" resolve="currentBuildNumber" />
             </node>
           </node>
         </node>
@@ -507,7 +511,7 @@
       <node concept="3cqZAl" id="7836$RyVWld" role="3clF45" />
     </node>
     <node concept="3clFb_" id="7836$RyVWle" role="jymVt">
-      <property role="TrG5h" value="currentBuildNumberString" />
+      <property role="TrG5h" value="currentBuildNumber" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="7836$RyVWlf" role="3clF47">
@@ -704,12 +708,17 @@
           </node>
         </node>
         <node concept="3cpWs6" id="7836$RyVWly" role="3cqZAp">
-          <node concept="2OqwBi" id="7836$RyVWpP" role="3cqZAk">
-            <node concept="37vLTw" id="7836$RyVWpO" role="2Oq$k0">
-              <ref role="3cqZAo" node="7836$RyVWlg" resolve="buildNumber" />
+          <node concept="AH0OO" id="5MNe$sLTeDg" role="3cqZAk">
+            <node concept="3cmrfG" id="5MNe$sLThrx" role="AHEQo">
+              <property role="3cmrfH" value="1" />
             </node>
-            <node concept="liA8E" id="7836$RyVWpQ" role="2OqNvi">
-              <ref role="37wK5l" to="zn9m:~BuildNumber.getBuildNumber()" resolve="getBuildNumber" />
+            <node concept="2OqwBi" id="7836$RyVWpP" role="AHHXb">
+              <node concept="37vLTw" id="7836$RyVWpO" role="2Oq$k0">
+                <ref role="3cqZAo" node="7836$RyVWlg" resolve="buildNumber" />
+              </node>
+              <node concept="liA8E" id="5MNe$sLTd8b" role="2OqNvi">
+                <ref role="37wK5l" to="zn9m:~BuildNumber.getComponents()" resolve="getComponents" />
+              </node>
             </node>
           </node>
         </node>
@@ -1106,7 +1115,7 @@
               </node>
             </node>
             <node concept="1rXfSq" id="7836$RyVWod" role="37vLTx">
-              <ref role="37wK5l" node="7836$RyVWle" resolve="currentBuildNumberString" />
+              <ref role="37wK5l" node="7836$RyVWle" resolve="currentBuildNumber" />
             </node>
           </node>
         </node>

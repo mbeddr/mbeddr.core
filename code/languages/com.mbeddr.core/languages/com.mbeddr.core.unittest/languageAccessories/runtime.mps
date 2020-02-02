@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5ed6e5dc-ec13-45f6-960b-a889d781d323(com.mbeddr.core.unittest.runtime)">
+<model ref="r:5ed6e5dc-ec13-45f6-960b-a889d781d323(com.mbeddr.core.unittest.runtime)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen" version="-1" />
@@ -2821,9 +2821,9 @@
             <node concept="3XIRFW" id="2NUzdxAe$Yl" role="1ly_ph">
               <node concept="1_9egQ" id="2NUzdxAATuT" role="3XIRFZ">
                 <node concept="3O_q_g" id="Bqp3R0lrIX" role="1_9egR">
-                  <ref role="3O_q_h" node="2PyooRI1C6P" />
+                  <ref role="3O_q_h" node="2PyooRI1C6P" resolve="append_skipped_info" />
                   <node concept="1S7827" id="1m$ejqC4LNM" role="3O_q_j">
-                    <ref role="1S7826" node="2PyooRI5lAR" />
+                    <ref role="1S7826" node="2PyooRI5lAR" resolve="suite_result_file" />
                   </node>
                 </node>
               </node>
