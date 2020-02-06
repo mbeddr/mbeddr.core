@@ -156,6 +156,19 @@
         <property id="6478870542308871876" name="value" index="3tYpME" />
       </concept>
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
+        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -193,6 +206,9 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
+        <child id="1140131861877" name="replacementNode" index="1P9ThW" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -2454,6 +2470,35 @@
                           </node>
                           <node concept="liA8E" id="35Yirdv2SsG" role="2OqNvi">
                             <ref role="37wK5l" to="ni5j:~Matcher.find()" resolve="find" />
+                          </node>
+                        </node>
+                        <node concept="9aQIb" id="6NFEZ$q7Fuq" role="9aQIa">
+                          <node concept="3clFbS" id="6NFEZ$q7Fur" role="9aQI4">
+                            <node concept="3clFbF" id="6NFEZ$q7FQP" role="3cqZAp">
+                              <node concept="2OqwBi" id="6NFEZ$q7G8T" role="3clFbG">
+                                <node concept="37vLTw" id="6NFEZ$q7FQO" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="35Yirdv2L02" resolve="it" />
+                                </node>
+                                <node concept="1P9Npp" id="6NFEZ$q7GFl" role="2OqNvi">
+                                  <node concept="2pJPEk" id="6NFEZ$qpsMl" role="1P9ThW">
+                                    <node concept="2pJPED" id="6NFEZ$qpsZ8" role="2pJPEn">
+                                      <ref role="2pJxaS" to="68mc:4eXJ6EOwIAn" resolve="FileSystemDirPicker" />
+                                      <node concept="2pJxcG" id="6NFEZ$qptkk" role="2pJxcM">
+                                        <ref role="2pJxcJ" to="68mc:5lKnBeAtODI" resolve="path" />
+                                        <node concept="2OqwBi" id="6NFEZ$qptI9" role="28ntcv">
+                                          <node concept="37vLTw" id="6NFEZ$qptrC" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="35Yirdv2L02" resolve="it" />
+                                          </node>
+                                          <node concept="3TrcHB" id="6NFEZ$qpufu" role="2OqNvi">
+                                            <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>

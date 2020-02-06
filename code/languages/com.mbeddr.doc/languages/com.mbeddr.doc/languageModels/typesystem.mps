@@ -14,7 +14,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -38,9 +37,6 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -272,11 +268,11 @@
             <node concept="Xl_RD" id="5yxqZJwzj15" role="2MkJ7o">
               <property role="Xl_RC" value="no valid image specified" />
             </node>
-            <node concept="2ODE4t" id="5yxqZJwzj19" role="1urrC5">
-              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
-            </node>
             <node concept="1YBJjd" id="5yxqZJwzj16" role="1urrMF">
               <ref role="1YBMHb" node="5yxqZJwzj0s" resolve="ip" />
+            </node>
+            <node concept="2ODE4t" id="5yxqZJwzj19" role="1urrC5">
+              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>
@@ -307,9 +303,6 @@
             <node concept="Xl_RD" id="5yxqZJwzC59" role="2MkJ7o">
               <property role="Xl_RC" value="invalid path" />
             </node>
-            <node concept="2ODE4t" id="5yxqZJwzC5d" role="1urrC5">
-              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
-            </node>
             <node concept="1YBJjd" id="5yxqZJwzC5a" role="1urrMF">
               <ref role="1YBMHb" node="5yxqZJwzC4a" resolve="pd" />
             </node>
@@ -321,6 +314,9 @@
                   <ref role="1YBMHb" node="5yxqZJwzC4a" resolve="pd" />
                 </node>
               </node>
+            </node>
+            <node concept="2ODE4t" id="5yxqZJwzC5d" role="1urrC5">
+              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>
@@ -341,11 +337,11 @@
             <node concept="Xl_RD" id="5yxqZJwzYQV" role="2MkJ7o">
               <property role="Xl_RC" value="you can only have one document export per model" />
             </node>
-            <node concept="2ODE4t" id="5yxqZJwzYQZ" role="1urrC5">
-              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
-            </node>
             <node concept="1YBJjd" id="5yxqZJwzYQW" role="1urrMF">
               <ref role="1YBMHb" node="5yxqZJwzYP5" resolve="ae" />
+            </node>
+            <node concept="2ODE4t" id="5yxqZJwzYQZ" role="1urrC5">
+              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>
@@ -500,11 +496,11 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2ODE4t" id="3UlEobTHJWd" role="1urrC5">
-                      <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
-                    </node>
                     <node concept="1YBJjd" id="3UlEobTHJWa" role="1urrMF">
                       <ref role="1YBMHb" node="5yxqZJwzYP5" resolve="ae" />
+                    </node>
+                    <node concept="2ODE4t" id="3UlEobTHJWd" role="1urrC5">
+                      <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
                 </node>
@@ -682,11 +678,11 @@
             <node concept="Xl_RD" id="3RseghIeSt2" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of arguments" />
             </node>
-            <node concept="2OE7Q9" id="3RseghIeSt6" role="1urrC5">
-              <ref role="2OEe5H" to="2c95:3RseghIemTt" resolve="shortcut" />
-            </node>
             <node concept="1YBJjd" id="3RseghIeSt3" role="1urrMF">
               <ref role="1YBMHb" node="3RseghIeSqn" resolve="ref" />
+            </node>
+            <node concept="2OE7Q9" id="3RseghIeSt6" role="1urrC5">
+              <ref role="2OEe5H" to="2c95:3RseghIemTt" resolve="shortcut" />
             </node>
           </node>
         </node>
@@ -785,11 +781,11 @@
                 <node concept="Xl_RD" id="4vQSg$AqR2U" role="a7wSD">
                   <property role="Xl_RC" value="some renderers may ignore nesting levels &gt; 2" />
                 </node>
-                <node concept="2ODE4t" id="4vQSg$AqR2Y" role="1urrC5">
-                  <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
-                </node>
                 <node concept="1YBJjd" id="4vQSg$AqR2V" role="1urrMF">
                   <ref role="1YBMHb" node="4vQSg$AqR1Z" resolve="as" />
+                </node>
+                <node concept="2ODE4t" id="4vQSg$AqR2Y" role="1urrC5">
+                  <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>
@@ -929,11 +925,11 @@
                   <node concept="Xl_RD" id="2fGuOSYbw1g" role="2MkJ7o">
                     <property role="Xl_RC" value="invalid category for this IVisualizable" />
                   </node>
-                  <node concept="2ODE4t" id="2fGuOSYbw1i" role="1urrC5">
-                    <ref role="2ODJFN" to="2c95:2fGuOSYbvZ1" resolve="category" />
-                  </node>
                   <node concept="1YBJjd" id="2fGuOSYbw1h" role="1urrMF">
                     <ref role="1YBMHb" node="2fGuOSYbw1j" resolve="v" />
+                  </node>
+                  <node concept="2ODE4t" id="2fGuOSYbw1i" role="1urrC5">
+                    <ref role="2ODJFN" to="2c95:2fGuOSYbvZ1" resolve="category" />
                   </node>
                 </node>
               </node>
@@ -1260,20 +1256,6 @@
     <property role="TrG5h" value="check_BuildConfiguration_Presence" />
     <property role="3GE5qa" value="modelContent" />
     <node concept="3clFbS" id="hoMN8EQ94X" role="18ibNy">
-      <node concept="3clFbF" id="hoMN8EZQjL" role="3cqZAp">
-        <node concept="2OqwBi" id="hoMN8EZQjI" role="3clFbG">
-          <node concept="10M0yZ" id="hoMN8EZQjJ" role="2Oq$k0">
-            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-          </node>
-          <node concept="liA8E" id="hoMN8EZQjK" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-            <node concept="Xl_RD" id="hoMN8EZQtE" role="37wK5m">
-              <property role="Xl_RC" value="Checking rule for doc" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3cpWs8" id="hoMN8EUSEy" role="3cqZAp">
         <node concept="3cpWsn" id="hoMN8EUSEz" role="3cpWs9">
           <property role="TrG5h" value="cannotLiveInDocModel" />
