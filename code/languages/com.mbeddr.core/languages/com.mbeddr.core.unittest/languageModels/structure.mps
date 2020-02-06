@@ -28,7 +28,7 @@
         <property id="672037151186491528" name="presentation" index="1L1pqM" />
         <reference id="899069222106091871" name="oldMember" index="2wpffI" />
       </concept>
-      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclartaion" flags="ng" index="25R3W">
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
@@ -712,6 +712,38 @@
       <property role="1L1pqM" value="flat" />
       <property role="3tVfz5" value="5591170374817715993" />
       <ref role="2wpffI" node="4QnOXk_GDsp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2NUzdxFlHY8">
+    <property role="TrG5h" value="RequiredTagsAnnotation" />
+    <property role="EcuMT" value="3241057742988173192" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="PrWs8" id="2NUzdxFlHY9" role="PzmwI">
+      <ref role="PrY4T" node="3Rzs0kGBKjV" resolve="IRequireUnitTestFramework" />
+    </node>
+    <node concept="M6xJ_" id="2NUzdxFlHYa" role="lGtFl">
+      <property role="Hh88m" value="requiredTags" />
+      <node concept="trNpa" id="2NUzdxFprD3" role="EQaZv">
+        <ref role="trN6q" node="6TAwvhVRBLA" resolve="TestCollection" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="2NUzdxFpuko" role="1TKVEi">
+      <property role="IQ2ns" value="3241057742989157656" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tags" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2NUzdxFt7J4" resolve="Tag" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2NUzdxFt7J4">
+    <property role="EcuMT" value="8849280731830389372" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="Tag" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2NUzdxFt7J5" role="1TKVEl">
+      <property role="IQ2nx" value="8849280731830394174" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

@@ -2804,10 +2804,12 @@
       <node concept="3Tm1VV" id="7RHXOmw7MGP" role="1B3o_S" />
       <node concept="3clFbS" id="7RHXOmw7MGS" role="3clF47">
         <node concept="3clFbF" id="7RHXOmw7MGV" role="3cqZAp">
-          <node concept="2OqwBi" id="4tQ03vHx5bT" role="3clFbG">
-            <node concept="13iPFW" id="4tQ03vHx4w0" role="2Oq$k0" />
-            <node concept="3TrcHB" id="4tQ03vHx5QN" role="2OqNvi">
-              <ref role="3TsBF5" to="c4fa:4tQ03vHx4cF" resolve="reexport" />
+          <node concept="3fqX7Q" id="5pFLCOFrbH$" role="3clFbG">
+            <node concept="2OqwBi" id="5pFLCOFrbHA" role="3fr31v">
+              <node concept="13iPFW" id="5pFLCOFrbHB" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5pFLCOFrbHC" role="2OqNvi">
+                <ref role="3TsBF5" to="c4fa:4tQ03vHx4cF" resolve="reexport" />
+              </node>
             </node>
           </node>
         </node>
@@ -6987,7 +6989,7 @@
                   <ref role="1M0zk5" node="3Kc$0Lv_BZN" resolve="moduleContent" />
                 </node>
                 <node concept="2qgKlT" id="3Kc$0Lv_Eyd" role="2OqNvi">
-                  <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
+                  <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="getMangledName" />
                 </node>
               </node>
             </node>

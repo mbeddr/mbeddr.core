@@ -316,7 +316,6 @@
         <child id="1217960314448" name="messageText" index="2k5Stb" />
         <child id="1217960407512" name="referenceNode" index="2k6f33" />
       </concept>
-      <concept id="1217969995796" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowWarningMessage" flags="nn" index="2kEO4f" />
       <concept id="1217970068025" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowInfoMessage" flags="nn" index="2kF5Gy" />
       <concept id="2537089342344712322" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_CopyWithTrace" flags="ng" index="2QPPRi">
         <child id="2537089342344730415" name="nodes" index="2QPDDZ" />
@@ -3160,35 +3159,6 @@
               </node>
               <node concept="9aQIb" id="3juJO4ZFC2e" role="9aQIa">
                 <node concept="3clFbS" id="3juJO4ZFC2f" role="9aQI4">
-                  <node concept="3clFbF" id="54wV1sdxTXs" role="3cqZAp">
-                    <node concept="2OqwBi" id="54wV1sdxTXM" role="3clFbG">
-                      <node concept="1iwH7S" id="54wV1sdxTXt" role="2Oq$k0" />
-                      <node concept="2kEO4f" id="54wV1sdxTXS" role="2OqNvi">
-                        <node concept="2OqwBi" id="54wV1sdxTXV" role="2k6f33">
-                          <node concept="1iwH7S" id="54wV1sdxTXW" role="2Oq$k0" />
-                          <node concept="12$id9" id="54wV1sdxTXX" role="2OqNvi">
-                            <node concept="37vLTw" id="54wV1sdxTXY" role="12$y8L">
-                              <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3cpWs3" id="1v5M85V3$ZJ" role="2k5Stb">
-                          <node concept="Xl_RD" id="1v5M85V3_53" role="3uHU7w">
-                            <property role="Xl_RC" value="; not generating any code" />
-                          </node>
-                          <node concept="3cpWs3" id="1v5M85V3zVU" role="3uHU7B">
-                            <node concept="Xl_RD" id="54wV1sdxTXU" role="3uHU7B">
-                              <property role="Xl_RC" value="no binary found in model " />
-                            </node>
-                            <node concept="2OqwBi" id="1v5M85V3$7V" role="3uHU7w">
-                              <node concept="1Q6Npb" id="1v5M85V3zWx" role="2Oq$k0" />
-                              <node concept="LkI2h" id="1v5M85V3$kW" role="2OqNvi" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="7UUkaBfeXPx" role="3cqZAp">
                     <node concept="2OqwBi" id="7UUkaBfeXPy" role="3clFbG">
                       <node concept="2OqwBi" id="36EXhjbTUWS" role="2Oq$k0">
@@ -3669,7 +3639,7 @@
                         <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
                       </node>
                       <node concept="3TrEf2" id="2vBUIEiDgt9" role="2OqNvi">
-                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                       </node>
                     </node>
                   </node>
@@ -3687,11 +3657,11 @@
                         <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
                       </node>
                       <node concept="3TrEf2" id="6eRyKv6JPwg" role="2OqNvi">
-                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                        <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="6eRyKv6JPwh" role="2OqNvi">
-                      <ref role="37wK5l" to="ahli:6eRyKv6J$$i" resolve="canHandleCrossmodelGeneration" />
+                      <ref role="37wK5l" to="ahli:6eRyKv6J$$i" resolve="canHandleCrossModelGeneration" />
                     </node>
                   </node>
                 </node>
@@ -4094,7 +4064,7 @@
                           <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
                         </node>
                         <node concept="3TrEf2" id="3_DQCSSJNu0" role="2OqNvi">
-                          <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                          <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3_DQCSSJNu1" role="2OqNvi">
@@ -4110,7 +4080,7 @@
                       <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
                     </node>
                     <node concept="3TrEf2" id="3_DQCSSJNu6" role="2OqNvi">
-                      <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                      <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                     </node>
                   </node>
                 </node>
@@ -5307,7 +5277,6 @@
     <property role="3GE5qa" value="main" />
     <node concept="1pplIY" id="7RHXOmw7R8a" role="1pqMTA">
       <node concept="3clFbS" id="7RHXOmw7R8b" role="2VODD2">
-        <node concept="3clFbH" id="7RHXOmy5Q2j" role="3cqZAp" />
         <node concept="3clFbF" id="7RHXOmw7S1k" role="3cqZAp">
           <node concept="2OqwBi" id="7RHXOmw7T0b" role="3clFbG">
             <node concept="2OqwBi" id="7RHXOmxr3m5" role="2Oq$k0">

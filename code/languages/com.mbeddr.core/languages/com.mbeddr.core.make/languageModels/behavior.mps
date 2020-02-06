@@ -691,5 +691,30 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="2NUzdxFdHSL">
+    <property role="3GE5qa" value="variables" />
+    <ref role="13h7C2" to="i2y7:7PBrk8TNYO" resolve="VariableValue" />
+    <node concept="13hLZK" id="2NUzdxFdHSM" role="13h7CW">
+      <node concept="3clFbS" id="2NUzdxFdHSN" role="2VODD2">
+        <node concept="3clFbF" id="2NUzdxFD6Gy" role="3cqZAp">
+          <node concept="2OqwBi" id="2NUzdxFD85P" role="3clFbG">
+            <node concept="2OqwBi" id="2NUzdxFD6Ok" role="2Oq$k0">
+              <node concept="13iPFW" id="2NUzdxFD6Gx" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="2NUzdxFD6WM" role="2OqNvi">
+                <ref role="3TtcxE" to="i2y7:2NUzdxFdHHw" resolve="valueItems" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="2NUzdxFD9vu" role="2OqNvi">
+              <node concept="2pJPEk" id="2NUzdxFD9BU" role="25WWJ7">
+                <node concept="2pJPED" id="2NUzdxFD9L8" role="2pJPEn">
+                  <ref role="2pJxaS" to="i2y7:2Vizpn2Mx$z" resolve="PlainTextFragment" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

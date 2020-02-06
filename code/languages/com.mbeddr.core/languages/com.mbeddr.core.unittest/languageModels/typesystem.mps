@@ -1541,5 +1541,42 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="2NUzdxF$R8H">
+    <property role="TrG5h" value="check_RequiredTagsAnnotation" />
+    <node concept="3clFbS" id="2NUzdxF$R8I" role="18ibNy">
+      <node concept="3clFbJ" id="2NUzdxF$R8O" role="3cqZAp">
+        <node concept="3eOSWO" id="2NUzdxF$Wnt" role="3clFbw">
+          <node concept="3cmrfG" id="2NUzdxF$Wnw" role="3uHU7w">
+            <property role="3cmrfH" value="10" />
+          </node>
+          <node concept="2OqwBi" id="2NUzdxF$TuW" role="3uHU7B">
+            <node concept="2OqwBi" id="2NUzdxF$Rmz" role="2Oq$k0">
+              <node concept="1YBJjd" id="2NUzdxF$R90" role="2Oq$k0">
+                <ref role="1YBMHb" node="2NUzdxF$R8K" resolve="requiredTagsAnnotation" />
+              </node>
+              <node concept="3Tsc0h" id="2NUzdxF$RAN" role="2OqNvi">
+                <ref role="3TtcxE" to="yz9a:2NUzdxFpuko" resolve="tags" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="2NUzdxF$Vb7" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="2NUzdxF$R8Q" role="3clFbx">
+          <node concept="2MkqsV" id="2NUzdxF$WwF" role="3cqZAp">
+            <node concept="Xl_RD" id="2NUzdxF$WwR" role="2MkJ7o">
+              <property role="Xl_RC" value="the number of required tags must not exceed 10" />
+            </node>
+            <node concept="1YBJjd" id="2NUzdxFAPc6" role="2OEOjV">
+              <ref role="1YBMHb" node="2NUzdxF$R8K" resolve="requiredTagsAnnotation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2NUzdxF$R8K" role="1YuTPh">
+      <property role="TrG5h" value="requiredTagsAnnotation" />
+      <ref role="1YaFvo" to="yz9a:2NUzdxFlHY8" resolve="RequiredTagsAnnotation" />
+    </node>
+  </node>
 </model>
 

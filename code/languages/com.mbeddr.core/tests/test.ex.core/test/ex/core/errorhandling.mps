@@ -33,13 +33,13 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
-        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
-        <child id="5323740605968447026" name="target" index="2AWWZH" />
+        <child id="5323740605968447026" name="platform" index="2AWWZH" />
       </concept>
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
@@ -47,6 +47,7 @@
       <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
         <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="722659542937082434" name="com.mbeddr.core.util.structure.ErrorDeclaration" flags="ng" index="2cifP4">
@@ -543,12 +544,6 @@
     <node concept="2NXPZ9" id="7kmhBx2PWyh" role="N3F5h">
       <property role="TrG5h" value="empty_1437749436562_23" />
     </node>
-    <node concept="2NXPZ9" id="7kmhBx2PVH4" role="N3F5h">
-      <property role="TrG5h" value="empty_1437749424873_21" />
-    </node>
-    <node concept="2NXPZ9" id="7kmhBx2NBIv" role="N3F5h">
-      <property role="TrG5h" value="empty_1437749060890_12" />
-    </node>
     <node concept="lIfQi" id="6TAwvhVWkhM" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />
@@ -565,23 +560,25 @@
     </node>
   </node>
   <node concept="2v9HqL" id="7kmhBx2NBBd">
-    <node concept="2xfidK" id="7kmhBx2NBBe" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
-    </node>
     <node concept="2Q9Fgs" id="7kmhBx2NBBf" role="2Q9xDr">
       <node concept="2Q9FjX" id="7kmhBx2NBBg" role="2Q9FjI" />
     </node>
     <node concept="2eOfOl" id="7kmhBx2NBBh" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
-      <ref role="3oK8_y" to="1ok9:4LhGMnjfiNC" resolve="portable" />
       <node concept="2v9HqM" id="7kmhBx2PTor" role="2eOfOg">
         <ref role="2v9HqP" node="7kmhBx2NBAC" resolve="ErrorHandlingTest" />
+      </node>
+      <node concept="1l1$C7" id="7B3zdKLsTi7" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="12mU2y" id="4QnOXkA2Bzo" role="2Q9xDr">
       <property role="1Ctlcb" value="0" />
     </node>
     <node concept="MH4UO" id="4QnOXk_y73o" role="2Q9xDr" />
+    <node concept="2xfidK" id="7B3zdKLrKrl" role="2AWWZH">
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+    </node>
   </node>
 </model>
 

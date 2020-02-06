@@ -8,6 +8,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,8 +21,8 @@
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
+    <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" implicit="true" />
-    <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -80,6 +81,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -88,6 +90,7 @@
         <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
         <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
@@ -676,7 +679,7 @@
                                               <node concept="1uHKPH" id="2obGnlRih2N" role="2OqNvi" />
                                             </node>
                                             <node concept="3TrEf2" id="2obGnlRih2O" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                                              <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                                             </node>
                                           </node>
                                         </node>
@@ -897,13 +900,13 @@
     </node>
   </node>
   <node concept="vrV6u" id="7$0wAVocpKa">
-    <property role="TrG5h" value="PlatformTemplateProvider" />
+    <property role="TrG5h" value="PlatformTemplateProviders" />
     <node concept="3uibUv" id="7$0wAVocrDb" role="luc8K">
-      <ref role="3uigEE" node="7$0wAVocpKZ" resolve="AbstractPlatformTemplateProvider" />
+      <ref role="3uigEE" node="7$0wAVocpKZ" resolve="PlatformTemplateProvider" />
     </node>
   </node>
   <node concept="312cEu" id="7$0wAVocpKZ">
-    <property role="TrG5h" value="AbstractPlatformTemplateProvider" />
+    <property role="TrG5h" value="PlatformTemplateProvider" />
     <property role="1sVAO0" value="true" />
     <node concept="2tJIrI" id="7$0wAVocpLm" role="jymVt" />
     <node concept="3clFb_" id="7$0wAVocq2z" role="jymVt">
@@ -921,8 +924,8 @@
   </node>
   <node concept="1lYeZD" id="7$0wAVocrDh">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="PlatformTemplateProvider_extension" />
-    <ref role="1lYe$Y" node="7$0wAVocpKa" resolve="PlatformTemplateProvider" />
+    <property role="TrG5h" value="DesktopPlatformTemplateProvider" />
+    <ref role="1lYe$Y" node="7$0wAVocpKa" resolve="PlatformTemplateProviders" />
     <node concept="3Tm1VV" id="6XfQs9tM2qh" role="1B3o_S" />
     <node concept="2tJIrI" id="6XfQs9tM2qi" role="jymVt" />
     <node concept="2tJIrI" id="6XfQs9tM2qj" role="jymVt" />
@@ -945,7 +948,7 @@
             <node concept="YeOm9" id="7$0wAVocs2e" role="2ShVmc">
               <node concept="1Y3b0j" id="7$0wAVocs2h" role="YeSDq">
                 <property role="2bfB8j" value="true" />
-                <ref role="1Y3XeK" node="7$0wAVocpKZ" resolve="AbstractPlatformTemplateProvider" />
+                <ref role="1Y3XeK" node="7$0wAVocpKZ" resolve="PlatformTemplateProvider" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <node concept="3Tm1VV" id="7$0wAVocs2i" role="1B3o_S" />
                 <node concept="3clFb_" id="7$0wAVocs2j" role="jymVt">
@@ -1006,6 +1009,54 @@
         <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
         <ref role="1QQUv3" node="6XfQs9tM2ql" resolve="get" />
       </node>
+    </node>
+  </node>
+  <node concept="vrV6u" id="4JZ_DSvsu08">
+    <property role="TrG5h" value="CrossCompilationToolchainProviders" />
+    <node concept="3uibUv" id="4JZ_DSwfRvP" role="luc8K">
+      <ref role="3uigEE" node="4JZ_DSwfP$7" resolve="CrossCompilationToolchainProvider" />
+    </node>
+  </node>
+  <node concept="312cEu" id="4JZ_DSwfP$7">
+    <property role="TrG5h" value="CrossCompilationToolchainProvider" />
+    <property role="1sVAO0" value="true" />
+    <node concept="3Tm1VV" id="4JZ_DSwfP$8" role="1B3o_S" />
+    <node concept="2tJIrI" id="4JZ_DSwjF2q" role="jymVt" />
+    <node concept="3clFb_" id="4JZ_DSvxPO_" role="jymVt">
+      <property role="TrG5h" value="getCrossCompilationToolchain" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="3clFbS" id="4JZ_DSvxPOC" role="3clF47" />
+      <node concept="3Tm1VV" id="4JZ_DSvxPOD" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4JZ_DSvxPOd" role="3clF45">
+        <ref role="ehGHo" to="51wr:4JZ_DSuWeoI" resolve="CrossCompilationToolchain" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="6xoAPBjQ1z2">
+    <property role="TrG5h" value="MakeVariableResolver" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="6xoAPBjQ1zZ" role="jymVt" />
+    <node concept="3clFb_" id="6xoAPBjQ3Dk" role="jymVt">
+      <property role="TrG5h" value="resolveVariable" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="3clFbS" id="6xoAPBjQ3Dn" role="3clF47" />
+      <node concept="3Tm1VV" id="6xoAPBjQ1By" role="1B3o_S" />
+      <node concept="17QB3L" id="6xoAPBjQ3D9" role="3clF45" />
+      <node concept="37vLTG" id="6xoAPBjQ3Kd" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="6xoAPBjQ3Kc" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6xoAPBjQ3Ok" role="3clF46">
+        <property role="TrG5h" value="variableName" />
+        <node concept="17QB3L" id="6xoAPBjQ3S9" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="6xoAPBjQ1z3" role="1B3o_S" />
+  </node>
+  <node concept="vrV6u" id="6xoAPBjQ3U9">
+    <property role="TrG5h" value="MakeVariableResolvers" />
+    <node concept="3uibUv" id="6xoAPBjQ6Rb" role="luc8K">
+      <ref role="3uigEE" node="6xoAPBjQ1z2" resolve="MakeVariableResolver" />
     </node>
   </node>
 </model>

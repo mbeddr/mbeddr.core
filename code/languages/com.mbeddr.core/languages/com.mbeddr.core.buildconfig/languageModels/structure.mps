@@ -24,7 +24,7 @@
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
         <reference id="899069222106091871" name="oldMember" index="2wpffI" />
       </concept>
-      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclartaion" flags="ng" index="25R3W">
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
@@ -104,7 +104,7 @@
     </node>
     <node concept="1TJgyj" id="4BxItZJ4BoM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="target" />
+      <property role="20kJfa" value="platform" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="5323740605968447026" />
       <ref role="20lvS9" node="4BxItZJ4BoF" resolve="Platform" />
@@ -231,6 +231,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5lP9ZVaAU_u" resolve="ExternalPath" />
     </node>
+    <node concept="1TJgyj" id="4JZ_DSv0AAi" role="1TKVEi">
+      <property role="IQ2ns" value="5476261277775063442" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
+    </node>
     <node concept="PrWs8" id="1YUFCeFKT9R" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -249,9 +256,10 @@
     <node concept="1TJgyj" id="2b2D8jU0yRA" role="1TKVEi">
       <property role="IQ2ns" value="2504745233808502246" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
+      <property role="20kJfa" value="target_old" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="1it8M3uGpbG" resolve="Target" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
+      <node concept="asaX9" id="4JZ_DSv0AAa" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="65XyadYP0CJ">
@@ -283,6 +291,9 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="2671893947946267775" />
       <ref role="20lvS9" node="2kkumeGQcAy" resolve="Library" />
+    </node>
+    <node concept="PrWs8" id="6xoAPBk0T7K" role="PzmwI">
+      <ref role="PrY4T" node="6xoAPBjOH1$" resolve="IMakeVariableProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="2kkumeGQcAy">
@@ -316,7 +327,8 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="targets" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1it8M3uGpbG" resolve="Target" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
+      <node concept="asaX9" id="4JZ_DSuWtYV" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="4BxItZJ4BoH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -339,30 +351,25 @@
     <property role="3GE5qa" value="platform" />
     <property role="EcuMT" value="5323740605968447022" />
     <ref role="1TJDcQ" node="4BxItZJ4BoF" resolve="Platform" />
-    <node concept="1TJgyi" id="71C71cTwLEc" role="1TKVEl">
-      <property role="IQ2nx" value="8099754798720686732" />
-      <property role="TrG5h" value="parallelProcesses" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="PrWs8" id="77mJsGsFMiE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="PrWs8" id="2nSRgleEPDE" role="PzmwI">
       <ref role="PrY4T" node="2nSRgleEPDw" resolve="IDebuggablePlatform" />
     </node>
-    <node concept="1TJgyi" id="4BxItZJ4BoK" role="1TKVEl">
-      <property role="TrG5h" value="compiler" />
-      <property role="IQ2nx" value="5323740605968447024" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="3s1LyzG8GSD" role="1TKVEl">
-      <property role="TrG5h" value="gdb" />
-      <property role="IQ2nx" value="3963667026125442601" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="3s1LyzG8GTO" role="1TKVEl">
       <property role="TrG5h" value="make" />
       <property role="IQ2nx" value="3963667026125442676" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="71C71cTwLEc" role="1TKVEl">
+      <property role="IQ2nx" value="8099754798720686732" />
+      <property role="TrG5h" value="parallelProcesses" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4BxItZJ4BoK" role="1TKVEl">
+      <property role="TrG5h" value="compiler" />
+      <property role="IQ2nx" value="5323740605968447024" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="4BxItZJ4BoL" role="1TKVEl">
@@ -370,9 +377,19 @@
       <property role="IQ2nx" value="5323740605968447025" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="7B3zdKLlio4" role="1TKVEl">
+      <property role="IQ2nx" value="8774011376396215812" />
+      <property role="TrG5h" value="linker" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="1tTyxbTm6yO" role="1TKVEl">
       <property role="TrG5h" value="linkerOptions" />
       <property role="IQ2nx" value="1691534949151697076" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3s1LyzG8GSD" role="1TKVEl">
+      <property role="TrG5h" value="gdb" />
+      <property role="IQ2nx" value="3963667026125442601" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -546,7 +563,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="libraries" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7FeXv2EtoDW" resolve="ExternalItem" />
+      <ref role="20lvS9" node="7FeXv2EtoDW" resolve="ExternalLibrary" />
     </node>
     <node concept="1TJgyj" id="7FeXv2EvrYS" role="1TKVEi">
       <property role="IQ2ns" value="8849280731830927288" />
@@ -571,10 +588,9 @@
   </node>
   <node concept="1TIwiD" id="1it8M3uGpbG">
     <property role="EcuMT" value="1485382076184236780" />
-    <property role="3GE5qa" value="platform" />
-    <property role="TrG5h" value="Target" />
-    <property role="R4oN_" value="--" />
-    <property role="34LRSv" value="target" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="System" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3K0ugPlqtqM" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -596,11 +612,11 @@
   <node concept="1TIwiD" id="7FeXv2EtoDW">
     <property role="EcuMT" value="8849280731830389372" />
     <property role="3GE5qa" value="binary" />
-    <property role="TrG5h" value="ExternalItem" />
+    <property role="TrG5h" value="ExternalLibrary" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7FeXv2EtpOY" role="1TKVEl">
       <property role="IQ2nx" value="8849280731830394174" />
-      <property role="TrG5h" value="value" />
+      <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -621,9 +637,20 @@
   </node>
   <node concept="1TIwiD" id="1hPQTEM4W9y">
     <property role="EcuMT" value="1474325910492791394" />
-    <property role="TrG5h" value="MakeTimeDirPicker" />
-    <property role="34LRSv" value="make time dir picker" />
-    <ref role="1TJDcQ" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+    <property role="TrG5h" value="MakeVariableDirPicker" />
+    <property role="34LRSv" value="$(&lt;make variable&gt;) dir picker" />
+    <property role="3GE5qa" value="pickers" />
+    <ref role="1TJDcQ" node="6xoAPBjOMvr" resolve="AbstractMakeVariableDirPicker" />
+    <node concept="1TJgyi" id="35Yirdv2Bka" role="1TKVEl">
+      <property role="IQ2nx" value="3566368989666505994" />
+      <property role="TrG5h" value="variable" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="35Yirdv2GSi" role="1TKVEl">
+      <property role="IQ2nx" value="3566368989666528786" />
+      <property role="TrG5h" value="defaultPrefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="25R3W" id="13p6s1wtcKO">
     <property role="TrG5h" value="EnvironmentKind" />
@@ -646,6 +673,111 @@
       <property role="TrG5h" value="desktop" />
       <property role="3tVfz5" value="767515563077365660" />
       <ref role="2wpffI" node="EAKPqgNQYs" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuWeoI">
+    <property role="EcuMT" value="5476261277773915694" />
+    <property role="3GE5qa" value="crosscompilation" />
+    <property role="TrG5h" value="CrossCompilationToolchain" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4JZ_DSuWeoL" role="1TKVEi">
+      <property role="IQ2ns" value="5476261277773915697" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="supportedTargets" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
+    </node>
+    <node concept="1TJgyj" id="4JZ_DSuZPQV" role="1TKVEi">
+      <property role="IQ2ns" value="5476261277774863803" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="defaultHomeLocations" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4JZ_DSuWeoX" resolve="ToolchainHomeLocation" />
+    </node>
+    <node concept="1TJgyi" id="4JZ_DSuWeoR" role="1TKVEl">
+      <property role="IQ2nx" value="5476261277773915703" />
+      <property role="TrG5h" value="homeVariableName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4JZ_DSuZQfB" role="1TKVEl">
+      <property role="IQ2nx" value="5476261277774865383" />
+      <property role="TrG5h" value="binPrefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuWeoX">
+    <property role="EcuMT" value="5476261277773915709" />
+    <property role="3GE5qa" value="crosscompilation" />
+    <property role="TrG5h" value="ToolchainHomeLocation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4JZ_DSuWeoY" role="1TKVEi">
+      <property role="IQ2ns" value="5476261277773915710" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="host" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
+    </node>
+    <node concept="1TJgyi" id="4JZ_DSuZPR0" role="1TKVEl">
+      <property role="IQ2nx" value="5476261277774863808" />
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuY8yt">
+    <property role="EcuMT" value="5476261277774416029" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="Win32" />
+    <property role="34LRSv" value="Win32" />
+    <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuYrDY">
+    <property role="EcuMT" value="5476261277774494334" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="Linux" />
+    <property role="34LRSv" value="Linux" />
+    <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuYsJO">
+    <property role="EcuMT" value="5476261277774498804" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="MacOSX" />
+    <property role="34LRSv" value="MacOSX" />
+    <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
+  </node>
+  <node concept="1TIwiD" id="4JZ_DSuYtMp">
+    <property role="EcuMT" value="5476261277774503065" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="Any" />
+    <property role="34LRSv" value="any" />
+    <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
+  </node>
+  <node concept="1TIwiD" id="1kEmdwEYjQS">
+    <property role="EcuMT" value="1525129109275491768" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="None" />
+    <property role="34LRSv" value="none" />
+    <ref role="1TJDcQ" node="1it8M3uGpbG" resolve="System" />
+  </node>
+  <node concept="1TIwiD" id="6xoAPBjMbmQ">
+    <property role="EcuMT" value="7518930388002583990" />
+    <property role="3GE5qa" value="pickers" />
+    <property role="TrG5h" value="PrefixDirPicker" />
+    <property role="34LRSv" value="$(PREFIX) dir picker" />
+    <ref role="1TJDcQ" node="6xoAPBjOMvr" resolve="AbstractMakeVariableDirPicker" />
+  </node>
+  <node concept="PlHQZ" id="6xoAPBjOH1$">
+    <property role="EcuMT" value="7518930388003246180" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="IMakeVariableProvider" />
+  </node>
+  <node concept="1TIwiD" id="6xoAPBjOMvr">
+    <property role="EcuMT" value="7518930388003268571" />
+    <property role="3GE5qa" value="pickers" />
+    <property role="TrG5h" value="AbstractMakeVariableDirPicker" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+    <node concept="PrWs8" id="6xoAPBjOMvs" role="PzmwI">
+      <ref role="PrY4T" node="6xoAPBjOH1$" resolve="IMakeVariableProvider" />
     </node>
   </node>
 </model>

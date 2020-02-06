@@ -3,14 +3,6 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="importer">
-          <value>
-            <Library>
-              <option name="name" value="importer" />
-              <option name="path" value="${mbeddr.importer.home}/code/languages" />
-            </Library>
-          </value>
-        </entry>
         <entry key="mbeddr">
           <value>
             <Library>
