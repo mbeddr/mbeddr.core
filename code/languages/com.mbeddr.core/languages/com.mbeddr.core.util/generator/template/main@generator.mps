@@ -199,6 +199,7 @@
         <property id="3830958861296879114" name="text" index="19_wF3" />
       </concept>
       <concept id="3830958861296871078" name="com.mbeddr.core.statements.structure.ArbitraryTextExpression" flags="ng" index="19_ADJ">
+        <property id="5149303464152810283" name="reexport" index="2EW$cs" />
         <property id="6275956088645591175" name="requiredStdHeader" index="3YGKL8" />
         <child id="3830958861296879115" name="items" index="19_wF2" />
       </concept>
@@ -17507,6 +17508,7 @@
               <node concept="1_9egQ" id="1EZSCJhUG1k" role="3XIRFZ">
                 <node concept="19_ADJ" id="1EZSCJhUG1l" role="1_9egR">
                   <property role="3YGKL8" value="&lt;stdio.h&gt;" />
+                  <property role="2EW$cs" value="true" />
                   <node concept="19_wF0" id="1EZSCJhUG1m" role="19_wF2">
                     <property role="19_wF3" value="printf(&quot;" />
                   </node>
