@@ -14,7 +14,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -38,9 +37,6 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -1260,20 +1256,6 @@
     <property role="TrG5h" value="check_BuildConfiguration_Presence" />
     <property role="3GE5qa" value="modelContent" />
     <node concept="3clFbS" id="hoMN8EQ94X" role="18ibNy">
-      <node concept="3clFbF" id="hoMN8EZQjL" role="3cqZAp">
-        <node concept="2OqwBi" id="hoMN8EZQjI" role="3clFbG">
-          <node concept="10M0yZ" id="hoMN8EZQjJ" role="2Oq$k0">
-            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-          </node>
-          <node concept="liA8E" id="hoMN8EZQjK" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-            <node concept="Xl_RD" id="hoMN8EZQtE" role="37wK5m">
-              <property role="Xl_RC" value="Checking rule for doc" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3cpWs8" id="hoMN8EUSEy" role="3cqZAp">
         <node concept="3cpWsn" id="hoMN8EUSEz" role="3cpWs9">
           <property role="TrG5h" value="cannotLiveInDocModel" />
