@@ -375,6 +375,7 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
@@ -3408,6 +3409,27 @@
         <ref role="3uigEE" to="w1kc:~IOperationContext" resolve="IOperationContext" />
       </node>
     </node>
+    <node concept="2tJIrI" id="12OxVjMZFS9" role="jymVt" />
+    <node concept="2tJIrI" id="12OxVjN0j$C" role="jymVt" />
+    <node concept="312cEg" id="12OxVjN0bgx" role="jymVt">
+      <property role="TrG5h" value="isDisposed" />
+      <node concept="3Tm6S6" id="12OxVjN0iFQ" role="1B3o_S" />
+      <node concept="10P_77" id="12OxVjN0azP" role="1tU5fm" />
+      <node concept="z59LJ" id="12OxVjN0u6r" role="lGtFl">
+        <node concept="TZ5HA" id="12OxVjN0u6s" role="TZ5H$">
+          <node concept="1dT_AC" id="12OxVjN0u6t" role="1dT_Ay">
+            <property role="1dT_AB" value="Use this flag to signal if this view has already been disposed." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="12OxVjN0v3L" role="TZ5H$">
+          <node concept="1dT_AC" id="12OxVjN0v3M" role="1dT_Ay">
+            <property role="1dT_AB" value="We simply guard against repeated calls of the dispose method with the flag." />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbT" id="12OxVjN1y_1" role="33vP2m" />
+    </node>
+    <node concept="2tJIrI" id="12OxVjMZRq6" role="jymVt" />
     <node concept="3clFb_" id="6B7erwvFKhe" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="dispose" />
@@ -3416,35 +3438,60 @@
       <node concept="3Tm1VV" id="6B7erwvFKhf" role="1B3o_S" />
       <node concept="3cqZAl" id="6B7erwvFKhh" role="3clF45" />
       <node concept="3clFbS" id="6B7erwvFKhi" role="3clF47">
-        <node concept="3clFbF" id="6B7erwvFM1N" role="3cqZAp">
-          <node concept="2EnYce" id="5ZdiHtipXYT" role="3clFbG">
-            <node concept="1eOMI4" id="6B7erwvFQJw" role="2Oq$k0">
-              <node concept="10QFUN" id="6B7erwvFQJx" role="1eOMHV">
-                <node concept="37vLTw" id="6B7erwvFQJv" role="10QFUP">
-                  <ref role="3cqZAo" to="k21q:~AbstractProjectViewPane.myTree" resolve="myTree" />
+        <node concept="3clFbJ" id="12OxVjN0yn8" role="3cqZAp">
+          <node concept="3clFbS" id="12OxVjN0yna" role="3clFbx">
+            <node concept="3clFbF" id="6B7erwvFM1N" role="3cqZAp">
+              <node concept="2EnYce" id="5ZdiHtipXYT" role="3clFbG">
+                <node concept="1eOMI4" id="6B7erwvFQJw" role="2Oq$k0">
+                  <node concept="10QFUN" id="6B7erwvFQJx" role="1eOMHV">
+                    <node concept="37vLTw" id="6B7erwvFQJv" role="10QFUP">
+                      <ref role="3cqZAo" to="k21q:~AbstractProjectViewPane.myTree" resolve="myTree" />
+                    </node>
+                    <node concept="3uibUv" id="6B7erwvFQVb" role="10QFUM">
+                      <ref role="3uigEE" node="7diJr$RhsEC" resolve="CustomProjectTree" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="3uibUv" id="6B7erwvFQVb" role="10QFUM">
-                  <ref role="3uigEE" node="7diJr$RhsEC" resolve="CustomProjectTree" />
+                <node concept="liA8E" id="6B7erwvFSbE" role="2OqNvi">
+                  <ref role="37wK5l" node="6B7erwvFBN1" resolve="dispose" />
                 </node>
               </node>
             </node>
-            <node concept="liA8E" id="6B7erwvFSbE" role="2OqNvi">
-              <ref role="37wK5l" node="6B7erwvFBN1" resolve="dispose" />
+            <node concept="3clFbF" id="6B7erwvFKhl" role="3cqZAp">
+              <node concept="3nyPlj" id="6B7erwvFKhk" role="3clFbG">
+                <ref role="37wK5l" to="rvbb:~BaseLogicalViewProjectPane.dispose()" resolve="dispose" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="4$gzJvfSePS" role="3cqZAp">
+              <node concept="2EnYce" id="4$gzJvfSgxK" role="3clFbG">
+                <node concept="37vLTw" id="4$gzJvfSePQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4$gzJvfQv3Z" resolve="myWeight" />
+                </node>
+                <node concept="liA8E" id="4$gzJvfShu7" role="2OqNvi">
+                  <ref role="37wK5l" node="4$gzJvfQ9Pl" resolve="release" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="12OxVjN0CM2" role="3cqZAp">
+              <node concept="37vLTI" id="12OxVjN0FvC" role="3clFbG">
+                <node concept="3clFbT" id="12OxVjN0FJL" role="37vLTx">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="2OqwBi" id="12OxVjN0Dqk" role="37vLTJ">
+                  <node concept="Xjq3P" id="12OxVjN0CM0" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="12OxVjN0DSL" role="2OqNvi">
+                    <ref role="2Oxat5" node="12OxVjN0bgx" resolve="isDisposed" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="6B7erwvFKhl" role="3cqZAp">
-          <node concept="3nyPlj" id="6B7erwvFKhk" role="3clFbG">
-            <ref role="37wK5l" to="rvbb:~BaseLogicalViewProjectPane.dispose():void" resolve="dispose" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="4$gzJvfSePS" role="3cqZAp">
-          <node concept="2EnYce" id="4$gzJvfSgxK" role="3clFbG">
-            <node concept="37vLTw" id="4$gzJvfSePQ" role="2Oq$k0">
-              <ref role="3cqZAo" node="4$gzJvfQv3Z" resolve="myWeight" />
-            </node>
-            <node concept="liA8E" id="4$gzJvfShu7" role="2OqNvi">
-              <ref role="37wK5l" node="4$gzJvfQ9Pl" resolve="release" />
+          <node concept="3fqX7Q" id="12OxVjN0_9t" role="3clFbw">
+            <node concept="2OqwBi" id="12OxVjN0_9v" role="3fr31v">
+              <node concept="Xjq3P" id="12OxVjN0_9w" role="2Oq$k0" />
+              <node concept="2OwXpG" id="12OxVjN0_9x" role="2OqNvi">
+                <ref role="2Oxat5" node="12OxVjN0bgx" resolve="isDisposed" />
+              </node>
             </node>
           </node>
         </node>
@@ -3453,11 +3500,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="4gq8yQBYWXg" role="jymVt" />
-    <node concept="2tJIrI" id="4gq8yQBYYHf" role="jymVt" />
-    <node concept="2tJIrI" id="4gq8yQBYZu0" role="jymVt" />
-    <node concept="2tJIrI" id="4gq8yQBZ0eQ" role="jymVt" />
-    <node concept="2tJIrI" id="4gq8yQBZ0ZL" role="jymVt" />
     <node concept="2tJIrI" id="4gq8yQBZ1KL" role="jymVt" />
     <node concept="Wx3nA" id="4gq8yQBZ6Mg" role="jymVt">
       <property role="TrG5h" value="LOG" />
