@@ -432,7 +432,7 @@
         <node concept="3clFbF" id="3wED9Ce4fif" role="3cqZAp">
           <node concept="2YIFZM" id="3wED9Ce4fih" role="3clFbG">
             <ref role="1Pybhc" to="ctgy:~PluginManager" resolve="PluginManager" />
-            <ref role="37wK5l" to="ctgy:~PluginManagerCore.getPlugin(com.intellij.openapi.extensions.PluginId)" resolve="getPlugin" />
+            <ref role="37wK5l" to="ctgy:~PluginManager.getPlugin(com.intellij.openapi.extensions.PluginId)" resolve="getPlugin" />
             <node concept="1rXfSq" id="1o_$mJE5Ytq" role="37wK5m">
               <ref role="37wK5l" node="3wED9Ce4fhT" resolve="getPluginId" />
             </node>
@@ -455,7 +455,7 @@
                   <ref role="37wK5l" node="3wED9Ce4fhZ" resolve="getPluginDescriptor" />
                 </node>
                 <node concept="liA8E" id="5qi0JV6b2SK" role="2OqNvi">
-                  <ref role="37wK5l" to="ctgy:~IdeaPluginDescriptor.getPath()" resolve="getPath" />
+                  <ref role="37wK5l" to="9ti4:~PluginDescriptor.getPath()" resolve="getPath" />
                 </node>
               </node>
               <node concept="liA8E" id="5qi0JV6b2SL" role="2OqNvi">
@@ -853,7 +853,7 @@
                         <ref role="3cqZAo" node="3wED9Ce4eKI" resolve="plugin" />
                       </node>
                       <node concept="liA8E" id="3wED9Ce4eK6" role="2OqNvi">
-                        <ref role="37wK5l" to="ctgy:~IdeaPluginDescriptor.getPath()" resolve="getPath" />
+                        <ref role="37wK5l" to="9ti4:~PluginDescriptor.getPath()" resolve="getPath" />
                       </node>
                     </node>
                     <node concept="liA8E" id="3wED9Ce4eKn" role="2OqNvi">
