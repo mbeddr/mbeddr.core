@@ -372,9 +372,9 @@
               <node concept="Xl_RD" id="2VC4eVY6bFk" role="3uHU7B">
                 <property role="Xl_RC" value="http://localhost:" />
               </node>
-              <node concept="10M0yZ" id="1_yOWEXevEb" role="3uHU7w">
-                <ref role="3cqZAo" to="4h87:3PMO5H7WJ51" resolve="PORT" />
-                <ref role="1PxDUh" to="4h87:3PMO5H7WIrG" resolve="MPSInternalPortManager" />
+              <node concept="2YIFZM" id="6UfXqIN_JJU" role="3uHU7w">
+                <ref role="37wK5l" to="4h87:3BwRxVwW$fn" resolve="getCurrentPort" />
+                <ref role="1Pybhc" to="4h87:3PMO5H7WIrG" resolve="MPSInternalPortManager" />
               </node>
             </node>
           </node>
