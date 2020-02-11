@@ -2,10 +2,10 @@
 <model ref="r:6522897c-3500-48e0-b54e-2bb1e978c4d7(com.mbeddr.spawner.loader)">
   <persistence version="9" />
   <languages>
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -303,6 +303,9 @@
       <node concept="3clFbS" id="3wED9Ce43t6" role="3clF47">
         <node concept="3clFbF" id="1KXoG6mZExt" role="3cqZAp">
           <node concept="37vLTI" id="1KXoG6mZEMy" role="3clFbG">
+            <node concept="37vLTw" id="1KXoG6mZExs" role="37vLTJ">
+              <ref role="3cqZAo" node="1KXoG6mZDua" resolve="libraryInitializer" />
+            </node>
             <node concept="2OqwBi" id="7e_V6p5zey_" role="37vLTx">
               <node concept="37vLTw" id="1KXoG6mZEXh" role="2Oq$k0">
                 <ref role="3cqZAo" node="1KXoG6mZA6t" resolve="mpsComponents" />
@@ -310,9 +313,6 @@
               <node concept="liA8E" id="7e_V6p5zeHM" role="2OqNvi">
                 <ref role="37wK5l" to="3a50:~MPSCoreComponents.getLibraryInitializer()" resolve="getLibraryInitializer" />
               </node>
-            </node>
-            <node concept="37vLTw" id="1KXoG6mZExs" role="37vLTJ">
-              <ref role="3cqZAo" node="1KXoG6mZDua" resolve="libraryInitializer" />
             </node>
           </node>
         </node>
@@ -427,7 +427,7 @@
         <node concept="3clFbF" id="3wED9Ce4fif" role="3cqZAp">
           <node concept="2YIFZM" id="3wED9Ce4fih" role="3clFbG">
             <ref role="1Pybhc" to="ctgy:~PluginManager" resolve="PluginManager" />
-            <ref role="37wK5l" to="ctgy:~PluginManagerCore.getPlugin(com.intellij.openapi.extensions.PluginId)" resolve="getPlugin" />
+            <ref role="37wK5l" to="ctgy:~PluginManager.getPlugin(com.intellij.openapi.extensions.PluginId)" resolve="getPlugin" />
             <node concept="1rXfSq" id="1o_$mJE5Ytq" role="37wK5m">
               <ref role="37wK5l" node="3wED9Ce4fhT" resolve="getPluginId" />
             </node>
@@ -450,7 +450,7 @@
                   <ref role="37wK5l" node="3wED9Ce4fhZ" resolve="getPluginDescriptor" />
                 </node>
                 <node concept="liA8E" id="5qi0JV6b2SK" role="2OqNvi">
-                  <ref role="37wK5l" to="ctgy:~IdeaPluginDescriptor.getPath()" resolve="getPath" />
+                  <ref role="37wK5l" to="9ti4:~PluginDescriptor.getPath()" resolve="getPath" />
                 </node>
               </node>
               <node concept="liA8E" id="5qi0JV6b2SL" role="2OqNvi">
@@ -848,7 +848,7 @@
                         <ref role="3cqZAo" node="3wED9Ce4eKI" resolve="plugin" />
                       </node>
                       <node concept="liA8E" id="3wED9Ce4eK6" role="2OqNvi">
-                        <ref role="37wK5l" to="ctgy:~IdeaPluginDescriptor.getPath()" resolve="getPath" />
+                        <ref role="37wK5l" to="9ti4:~PluginDescriptor.getPath()" resolve="getPath" />
                       </node>
                     </node>
                     <node concept="liA8E" id="3wED9Ce4eKn" role="2OqNvi">
