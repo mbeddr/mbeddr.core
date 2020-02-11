@@ -2,10 +2,10 @@
 <model ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -4308,7 +4308,7 @@
                 <node concept="2kEO4f" id="78Ts1skq2zB" role="2OqNvi">
                   <node concept="3cpWs3" id="78Ts1skq2$M" role="2k5Stb">
                     <node concept="Xl_RD" id="78Ts1skq2$P" role="3uHU7w">
-                      <property role="Xl_RC" value="; not generating any code." />
+                      <property role="Xl_RC" value="; not generating any code" />
                     </node>
                     <node concept="3cpWs3" id="78Ts1skq2zY" role="3uHU7B">
                       <node concept="3cpWs3" id="78Ts1skq3pi" role="3uHU7B">
@@ -6476,6 +6476,25 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="56jrqO8ILXK" role="jymVt" />
+    <node concept="Wx3nA" id="56jrqO8IRr4" role="jymVt">
+      <property role="TrG5h" value="COMPILER_OPTION_STD_C99" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="56jrqO8IQV7" role="1B3o_S" />
+      <node concept="17QB3L" id="56jrqO8IR3H" role="1tU5fm" />
+      <node concept="Xl_RD" id="56jrqO8IRwU" role="33vP2m">
+        <property role="Xl_RC" value="-std=c99" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="56jrqO8IRFM" role="jymVt">
+      <property role="TrG5h" value="COMPILER_OPTION_STD_C90" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="56jrqO8IRFN" role="1B3o_S" />
+      <node concept="17QB3L" id="56jrqO8IRFO" role="1tU5fm" />
+      <node concept="Xl_RD" id="56jrqO8IRFP" role="33vP2m">
+        <property role="Xl_RC" value="-std=c90" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="5Dpaey8tDZ_" role="jymVt" />
     <node concept="Wx3nA" id="5Dpaey8tEdv" role="jymVt">
       <property role="2dlcS1" value="false" />
@@ -6648,7 +6667,7 @@
     </node>
     <node concept="2tJIrI" id="39y9foMj7x8" role="jymVt" />
     <node concept="2YIFZL" id="47Hq2tqUT5m" role="jymVt">
-      <property role="TrG5h" value="getOSVersionMacroDefinitions" />
+      <property role="TrG5h" value="getOSVersionFlags" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="39y9foMj6w1" role="3clF47">
@@ -6716,7 +6735,7 @@
       <node concept="17QB3L" id="39y9foMj6vT" role="3clF45" />
       <node concept="3Tm1VV" id="39y9foMj4UC" role="1B3o_S" />
     </node>
-    <node concept="2tJIrI" id="5ara9PcnOc2" role="jymVt" />
+    <node concept="2tJIrI" id="4QnOXkAv$Kj" role="jymVt" />
     <node concept="2YIFZL" id="47Hq2tqUTVh" role="jymVt">
       <property role="TrG5h" value="getLibraryName" />
       <property role="DiZV1" value="false" />
@@ -6855,21 +6874,14 @@
           <node concept="9aQIb" id="5ara9Pco3kv" role="9aQIa">
             <node concept="3clFbS" id="5ara9Pco3kw" role="9aQI4">
               <node concept="3cpWs6" id="5ara9Pco3$O" role="3cqZAp">
-                <node concept="3cpWs3" id="5ara9Pco3$P" role="3cqZAk">
-                  <node concept="Xl_RD" id="5ara9Pco3$Q" role="3uHU7w">
-                    <property role="Xl_RC" value=".a" />
-                  </node>
-                  <node concept="3cpWs3" id="5ara9Pco3$R" role="3uHU7B">
-                    <node concept="Xl_RD" id="5ara9Pco3$S" role="3uHU7B">
-                      <property role="Xl_RC" value="lib" />
+                <node concept="1rXfSq" id="7EZ1SppIsLX" role="3cqZAk">
+                  <ref role="37wK5l" node="7EZ1SppIqCw" resolve="getStaticLibraryName" />
+                  <node concept="2OqwBi" id="7EZ1SppIsLY" role="37wK5m">
+                    <node concept="37vLTw" id="7EZ1SppIsLZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5ara9PcnOD_" resolve="library" />
                     </node>
-                    <node concept="2OqwBi" id="5ara9Pco3$T" role="3uHU7w">
-                      <node concept="37vLTw" id="5ara9Pco3$U" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5ara9PcnOD_" resolve="library" />
-                      </node>
-                      <node concept="3TrcHB" id="5ara9Pco3$V" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
+                    <node concept="3TrcHB" id="7EZ1SppIsM0" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
                 </node>
@@ -6904,21 +6916,14 @@
           </node>
           <node concept="3clFbS" id="5ara9Pcr2JS" role="3clFbx">
             <node concept="3cpWs6" id="5ara9Pcr2Kn" role="3cqZAp">
-              <node concept="3cpWs3" id="5ara9Pcr2Ko" role="3cqZAk">
-                <node concept="Xl_RD" id="5ara9Pcr2Kp" role="3uHU7w">
-                  <property role="Xl_RC" value=".a" />
-                </node>
-                <node concept="3cpWs3" id="5ara9Pcr2Kq" role="3uHU7B">
-                  <node concept="Xl_RD" id="5ara9Pcr2Kr" role="3uHU7B">
-                    <property role="Xl_RC" value="lib" />
+              <node concept="1rXfSq" id="7EZ1SppIrh$" role="3cqZAk">
+                <ref role="37wK5l" node="7EZ1SppIqCw" resolve="getStaticLibraryName" />
+                <node concept="2OqwBi" id="7EZ1SppIrCT" role="37wK5m">
+                  <node concept="37vLTw" id="7EZ1SppIrlh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ara9Pcr2KD" resolve="library" />
                   </node>
-                  <node concept="2OqwBi" id="5ara9Pcr2Ks" role="3uHU7w">
-                    <node concept="37vLTw" id="5ara9Pcr2Kt" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5ara9Pcr2KD" resolve="library" />
-                    </node>
-                    <node concept="3TrcHB" id="5ara9Pcr2Ku" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
+                  <node concept="3TrcHB" id="7EZ1SppIsG3" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
               </node>
@@ -6945,6 +6950,46 @@
       <node concept="3Tm1VV" id="5ara9Pcr2KG" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="5Dpaey8tcmX" role="1B3o_S" />
+    <node concept="2tJIrI" id="7EZ1SppIqnC" role="jymVt" />
+    <node concept="2YIFZL" id="7EZ1SppIqCw" role="jymVt">
+      <property role="TrG5h" value="getStaticLibraryName" />
+      <node concept="3clFbS" id="7EZ1SppIqCz" role="3clF47">
+        <node concept="3clFbF" id="7EZ1SppIqQe" role="3cqZAp">
+          <node concept="3cpWs3" id="7EZ1SppIqQg" role="3clFbG">
+            <node concept="Xl_RD" id="7EZ1SppIqQh" role="3uHU7w">
+              <property role="Xl_RC" value=".a" />
+            </node>
+            <node concept="3cpWs3" id="7EZ1SppIqQi" role="3uHU7B">
+              <node concept="Xl_RD" id="7EZ1SppIqQj" role="3uHU7B">
+                <property role="Xl_RC" value="lib" />
+              </node>
+              <node concept="37vLTw" id="7EZ1SppIr3K" role="3uHU7w">
+                <ref role="3cqZAo" node="7EZ1SppIqIn" resolve="libraryName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7EZ1SppIqx3" role="1B3o_S" />
+      <node concept="17QB3L" id="7EZ1SppIqAT" role="3clF45" />
+      <node concept="37vLTG" id="7EZ1SppIqIn" role="3clF46">
+        <property role="TrG5h" value="libraryName" />
+        <node concept="17QB3L" id="7EZ1SppIqIm" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4QnOXk_I9H9" role="jymVt" />
+    <node concept="3clFb_" id="4QnOXk_I9Qw" role="jymVt">
+      <property role="TrG5h" value="getTestExecutionOptions" />
+      <node concept="3clFbS" id="4QnOXk_HKRt" role="3clF47">
+        <node concept="3clFbF" id="4QnOXk_HTKV" role="3cqZAp">
+          <node concept="Xl_RD" id="4QnOXk_HTLb" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4QnOXk_HTJO" role="3clF45" />
+      <node concept="3Tm1VV" id="4QnOXk_HKRr" role="1B3o_S" />
+    </node>
   </node>
   <node concept="312cEu" id="6VqaxF9qVvF">
     <property role="TrG5h" value="MakeVariableHelper" />
@@ -7022,7 +7067,7 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="47Hq2tqUdOo" role="jymVt" />
+    <node concept="2tJIrI" id="7EZ1SpozaYK" role="jymVt" />
     <node concept="2YIFZL" id="6VqaxF9yDdY" role="jymVt">
       <property role="TrG5h" value="getTargetVarName" />
       <property role="od$2w" value="false" />

@@ -1366,7 +1366,7 @@
                   <ref role="37wK5l" to="znf5:2DWJLXXzCiq" resolve="getDocGenFolder" />
                   <ref role="1Pybhc" to="znf5:6RvWQYjPIDF" resolve="GenerationHelper" />
                   <node concept="37vLTw" id="271UTRL8jig" role="37wK5m">
-                    <ref role="3cqZAo" node="49PUF$HTiTB" />
+                    <ref role="3cqZAo" node="49PUF$HTiTB" resolve="m" />
                   </node>
                 </node>
               </node>

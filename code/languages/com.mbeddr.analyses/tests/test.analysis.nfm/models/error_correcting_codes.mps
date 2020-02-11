@@ -5,7 +5,7 @@
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
     <use id="66fa30ae-4b73-4f2b-b199-9a072902ec06" name="com.mbeddr.analyses.cbmc.testsgen" version="-1" />
     <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
@@ -66,9 +66,7 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -357,7 +355,6 @@
       <node concept="2Q9FjX" id="5hXEsQi42By" role="2Q9FjI" />
     </node>
     <node concept="2eOfOl" id="7ANKYSIE01d" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="hamming_test" />
       <ref role="3oK8_y" node="7fmKiPEtW_S" resolve="portable" />
       <node concept="2v9HqM" id="7ANKYSIE01t" role="2eOfOg">
@@ -408,7 +405,6 @@
       </node>
     </node>
     <node concept="2eOfOl" id="8eVegzBnGX" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="crc_test" />
       <ref role="3oK8_y" node="7fmKiPEtW_S" resolve="portable" />
       <node concept="2v9HqM" id="8eVegzBnHX" role="2eOfOg">

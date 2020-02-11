@@ -1753,21 +1753,15 @@
           <node concept="9aQIb" id="53rYRk97lHN" role="9aQIa">
             <node concept="3clFbS" id="53rYRk97lHO" role="9aQI4">
               <node concept="3cpWs6" id="53rYRk97lUj" role="3cqZAp">
-                <node concept="2OqwBi" id="53rYRk97lUl" role="3cqZAk">
+                <node concept="2OqwBi" id="7EZ1SprZrCQ" role="3cqZAk">
                   <node concept="2OqwBi" id="53rYRk97lUm" role="2Oq$k0">
                     <node concept="37vLTw" id="53rYRk97lUn" role="2Oq$k0">
                       <ref role="3cqZAo" node="53rYRk95bpU" resolve="type" />
                     </node>
-                    <node concept="2qgKlT" id="53rYRk97lUo" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                    </node>
+                    <node concept="2yIwOk" id="7EZ1SprZpWq" role="2OqNvi" />
                   </node>
-                  <node concept="liA8E" id="53rYRk97lUp" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                    <node concept="Xl_RD" id="53rYRk97lUq" role="37wK5m">
-                      <property role="Xl_RC" value="node|&lt;|&gt;" />
-                    </node>
-                    <node concept="Xl_RD" id="53rYRk97lUr" role="37wK5m" />
+                  <node concept="liA8E" id="7EZ1SprZstr" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                   </node>
                 </node>
               </node>
@@ -1800,7 +1794,10 @@
               <property role="Xl_RC" value="]" />
             </node>
             <node concept="3cpWs3" id="53rYRk94M7Q" role="3uHU7B">
-              <node concept="3cpWs3" id="53rYRk94LKQ" role="3uHU7B">
+              <node concept="3cpWs3" id="7EZ1SprVxDJ" role="3uHU7B">
+                <node concept="Xl_RD" id="53rYRk94LKT" role="3uHU7w">
+                  <property role="Xl_RC" value="[" />
+                </node>
                 <node concept="2OqwBi" id="4_QpjDi93tY" role="3uHU7B">
                   <node concept="2OqwBi" id="4_QpjDi92Uf" role="2Oq$k0">
                     <node concept="13iPFW" id="4_QpjDi92PE" role="2Oq$k0" />
@@ -1811,9 +1808,6 @@
                   <node concept="2qgKlT" id="4_QpjDi94bI" role="2OqNvi">
                     <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                   </node>
-                </node>
-                <node concept="Xl_RD" id="53rYRk94LKT" role="3uHU7w">
-                  <property role="Xl_RC" value="[" />
                 </node>
               </node>
               <node concept="2YIFZM" id="53rYRk99YCA" role="3uHU7w">

@@ -2,9 +2,9 @@
 <model ref="r:c414c326-1f3c-4c25-a6e1-a886a8a5ae3c(com.mbeddr.cc.var.annotations.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -375,14 +375,23 @@
               </node>
             </node>
           </node>
-          <node concept="3fqX7Q" id="2Fugwv5X2v6" role="3clFbw">
-            <node concept="2OqwBi" id="2Fugwv5X2v7" role="3fr31v">
-              <node concept="2OqwBi" id="2Fugwv5X2v8" role="2Oq$k0">
-                <node concept="2Sf5sV" id="2Fugwv5X2v9" role="2Oq$k0" />
-                <node concept="2NL2c5" id="2Fugwv5X2va" role="2OqNvi" />
+          <node concept="1Wc70l" id="3wRT_$tw9QA" role="3clFbw">
+            <node concept="3y3z36" id="3wRT_$twf6r" role="3uHU7B">
+              <node concept="10Nm6u" id="3wRT_$twfKu" role="3uHU7w" />
+              <node concept="2OqwBi" id="3wRT_$twbiL" role="3uHU7B">
+                <node concept="2Sf5sV" id="3wRT_$twawV" role="2Oq$k0" />
+                <node concept="2NL2c5" id="3wRT_$twc9A" role="2OqNvi" />
               </node>
-              <node concept="liA8E" id="2Fugwv5X2vb" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional():boolean" resolve="isOptional" />
+            </node>
+            <node concept="3fqX7Q" id="2Fugwv5X2v6" role="3uHU7w">
+              <node concept="2OqwBi" id="2Fugwv5X2v7" role="3fr31v">
+                <node concept="2OqwBi" id="2Fugwv5X2v8" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="2Fugwv5X2v9" role="2Oq$k0" />
+                  <node concept="2NL2c5" id="2Fugwv5X2va" role="2OqNvi" />
+                </node>
+                <node concept="liA8E" id="2Fugwv5X2vb" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional():boolean" resolve="isOptional" />
+                </node>
               </node>
             </node>
           </node>

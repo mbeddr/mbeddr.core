@@ -23,7 +23,7 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -251,9 +251,6 @@
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
-      <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
-        <reference id="5950410542643524493" name="function" index="3O_q_h" />
-      </concept>
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
@@ -400,50 +397,6 @@
     <node concept="3aamgX" id="to$mQWqpW9" role="3acgRq">
       <ref role="30HIoZ" to="nbyu:SwwM9UHCGQ" resolve="InterruptDeclaration" />
       <node concept="b5Tf3" id="to$mQWqpWa" role="1lVwrX" />
-    </node>
-    <node concept="3aamgX" id="to$mQWqpWL" role="3acgRq">
-      <ref role="30HIoZ" to="nbyu:SwwM9UHCHB" resolve="ISRCallExpression" />
-      <node concept="1Koe21" id="to$mQWqpWM" role="1lVwrX">
-        <node concept="N3F5e" id="to$mQWqpWN" role="1Koe22">
-          <property role="TrG5h" value="aModule" />
-          <node concept="N3Fnx" id="to$mQWqpWO" role="N3F5h">
-            <property role="TrG5h" value="isr" />
-            <node concept="3XIRFW" id="to$mQWqpWP" role="3XIRFX">
-              <node concept="1_9egQ" id="to$mQWqpWQ" role="3XIRFZ">
-                <node concept="3O_q_g" id="to$mQWqpWR" role="1_9egR">
-                  <ref role="3O_q_h" node="to$mQWqpWO" resolve="isr" />
-                  <node concept="raruj" id="to$mQWqpWS" role="lGtFl" />
-                  <node concept="1ZhdrF" id="to$mQWqpWT" role="lGtFl">
-                    <property role="2qtEX8" value="function" />
-                    <property role="P3scX" value="6d11763d-483d-4b2b-8efc-09336c1b0001/5950410542643524492/5950410542643524493" />
-                    <node concept="3$xsQk" id="to$mQWqpWU" role="3$ytzL">
-                      <node concept="3clFbS" id="to$mQWqpWV" role="2VODD2">
-                        <node concept="3clFbF" id="to$mQWqpWW" role="3cqZAp">
-                          <node concept="2OqwBi" id="to$mQWqpWX" role="3clFbG">
-                            <node concept="2OqwBi" id="to$mQWqpWY" role="2Oq$k0">
-                              <node concept="3TrEf2" id="to$mQWqpWZ" role="2OqNvi">
-                                <ref role="3Tt5mk" to="nbyu:SwwM9UHCHC" resolve="isr" />
-                              </node>
-                              <node concept="30H73N" id="to$mQWqpX0" role="2Oq$k0" />
-                            </node>
-                            <node concept="3TrcHB" id="to$mQWqpX1" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="19Rifw" id="to$mQWqpX2" role="2C2TGm">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="avzCv" id="7X9xw2qErGt" role="avys_">
       <node concept="3clFbS" id="7X9xw2qErJw" role="2VODD2">

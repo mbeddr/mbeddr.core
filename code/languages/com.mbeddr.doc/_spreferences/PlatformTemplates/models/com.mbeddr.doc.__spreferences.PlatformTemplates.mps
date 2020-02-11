@@ -2,7 +2,7 @@
 <model ref="r:7b7ff472-1d36-4351-95d1-b6dc02f5e011(com.mbeddr.doc.__spreferences.PlatformTemplates)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="6" />
   </languages>
   <imports />
   <registry>

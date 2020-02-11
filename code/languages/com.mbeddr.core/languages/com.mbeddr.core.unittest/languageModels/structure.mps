@@ -27,6 +27,15 @@
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
@@ -399,7 +408,7 @@
     <property role="3GE5qa" value="asserts" />
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="7755897872837031762" />
-    <ref role="1TJDcQ" node="1Rr52SXzYA6" resolve="TestSpecificStatement" />
+    <ref role="1TJDcQ" node="6GAl_xx8rPW" resolve="AbstractStructuredBinOpAssertStatement" />
     <node concept="1TJgyj" id="6Iyv0noEbtk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expected" />
@@ -413,9 +422,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7755897872837031765" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="6Iyv0noEK$a" role="PzmwI">
-      <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
     </node>
     <node concept="PrWs8" id="3JtoPqpBal3" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
@@ -484,7 +490,7 @@
     <property role="EcuMT" value="6088504579966012354" />
   </node>
   <node concept="1TIwiD" id="7tWSY$P9Odb">
-    <property role="TrG5h" value="TestCaseConfigItem" />
+    <property role="TrG5h" value="UnitTestConfigItem" />
     <property role="34LRSv" value="unit testing" />
     <property role="3GE5qa" value="configItem" />
     <property role="EcuMT" value="8610007178384196427" />
@@ -498,6 +504,11 @@
     </node>
     <node concept="PrWs8" id="7tWSY$P9Oes" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+    <node concept="1TJgyi" id="4QnOXk_SC3u" role="1TKVEl">
+      <property role="IQ2nx" value="5591170374820856030" />
+      <property role="TrG5h" value="testResultLayout" />
+      <ref role="AX2Wp" node="4QnOXk_GDsn" resolve="TestResultLayout" />
     </node>
   </node>
   <node concept="1TIwiD" id="6TAwvhVRBLA">
@@ -607,6 +618,60 @@
       <node concept="trNpa" id="6On3mjUaIW8" role="EQaZv">
         <ref role="trN6q" node="5so5TTr6RXr" resolve="TestCase" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6GAl_xvYY1K">
+    <property role="3GE5qa" value="asserts" />
+    <property role="TrG5h" value="AssertNotNull" />
+    <property role="34LRSv" value="assert-not-null" />
+    <property role="R4oN_" value="assert actual != NULL" />
+    <property role="EcuMT" value="7720953548740747376" />
+    <ref role="1TJDcQ" node="6GAl_xx5lmY" resolve="StructuredNullOpAssertStatement" />
+  </node>
+  <node concept="1TIwiD" id="6GAl_xvZkPg">
+    <property role="3GE5qa" value="asserts" />
+    <property role="TrG5h" value="AssertNull" />
+    <property role="34LRSv" value="assert-null" />
+    <property role="R4oN_" value="assert actual == NULL" />
+    <property role="EcuMT" value="7720953548740840784" />
+    <ref role="1TJDcQ" node="6GAl_xx5lmY" resolve="StructuredNullOpAssertStatement" />
+  </node>
+  <node concept="1TIwiD" id="6GAl_xx5lmY">
+    <property role="3GE5qa" value="asserts" />
+    <property role="TrG5h" value="StructuredNullOpAssertStatement" />
+    <property role="EcuMT" value="7720953548759193022" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="6GAl_xx8rPW" resolve="AbstractStructuredBinOpAssertStatement" />
+    <node concept="1TJgyj" id="6GAl_xx5lmZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actual" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7720953548759193023" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6GAl_xx8rPW">
+    <property role="TrG5h" value="AbstractStructuredBinOpAssertStatement" />
+    <property role="3GE5qa" value="asserts" />
+    <property role="R5$K7" value="true" />
+    <property role="EcuMT" value="7720953548760006012" />
+    <ref role="1TJDcQ" node="1Rr52SXzYA6" resolve="TestSpecificStatement" />
+    <node concept="PrWs8" id="6GAl_xx8rPZ" role="PzmwI">
+      <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="4QnOXk_GDsn">
+    <property role="3GE5qa" value="configItem" />
+    <property role="TrG5h" value="TestResultLayout" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="4QnOXk_GDso" role="M5hS2">
+      <property role="1uS6qv" value="0" />
+      <property role="1uS6qo" value="JUnit-like" />
+    </node>
+    <node concept="M4N5e" id="4QnOXk_GDsp" role="M5hS2">
+      <property role="1uS6qo" value="flat" />
+      <property role="1uS6qv" value="1" />
     </node>
   </node>
 </model>

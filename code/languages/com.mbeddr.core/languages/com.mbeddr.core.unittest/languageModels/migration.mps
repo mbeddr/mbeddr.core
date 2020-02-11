@@ -715,7 +715,7 @@
                                                                   </node>
                                                                   <node concept="2OqwBi" id="7BqFpRy4IVl" role="3uHU7w">
                                                                     <node concept="35c_gC" id="7BqFpRy4HGn" role="2Oq$k0">
-                                                                      <ref role="35c_gD" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
+                                                                      <ref role="35c_gD" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
                                                                     </node>
                                                                     <node concept="FGMqu" id="7BqFpRy4K4R" role="2OqNvi" />
                                                                   </node>
@@ -772,7 +772,7 @@
                               </node>
                             </node>
                             <node concept="2DeJg1" id="ILZbnBShUk" role="2OqNvi">
-                              <ref role="1A0vxQ" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
+                              <ref role="1A0vxQ" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
                             </node>
                           </node>
                         </node>
@@ -794,7 +794,7 @@
                       </node>
                       <node concept="v3k3i" id="5B69dDbewNG" role="2OqNvi">
                         <node concept="chp4Y" id="5B69dDbewOO" role="v3oSu">
-                          <ref role="cht4Q" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
+                          <ref role="cht4Q" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
                         </node>
                       </node>
                     </node>
@@ -1691,7 +1691,7 @@
                   </node>
                   <node concept="v3k3i" id="7BqFpRybKYL" role="2OqNvi">
                     <node concept="chp4Y" id="7BqFpRybKZs" role="v3oSu">
-                      <ref role="cht4Q" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
+                      <ref role="cht4Q" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
                     </node>
                   </node>
                 </node>

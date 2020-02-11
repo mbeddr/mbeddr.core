@@ -35,9 +35,7 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -409,7 +407,6 @@
   </node>
   <node concept="2v9HqL" id="4ATA_JB$E0s">
     <node concept="2eOfOl" id="4ATA_JB$DEI" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="crc16_test" />
       <ref role="3oK8_y" node="7fmKiPEtW_g" resolve="portable" />
       <node concept="2v9HqM" id="4ATA_JB$E0S" role="2eOfOg">

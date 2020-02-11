@@ -1728,7 +1728,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="4ZoQlQrjsl8" role="2OqNvi">
-                        <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
+                        <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="getMangledName" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="4ZoQlQrjq2i" role="37vLTJ">
@@ -2303,8 +2303,8 @@
                   <node concept="3clFbF" id="DaB78DhSf7" role="3cqZAp">
                     <node concept="2OqwBi" id="DaB78DhUkz" role="3clFbG">
                       <node concept="2OqwBi" id="DaB78DhSov" role="2Oq$k0">
-                        <node concept="2qgKlT" id="3vKfeqE7ofG" role="2OqNvi">
-                          <ref role="37wK5l" to="2rho:5AweqC3NcPT" resolve="mangledName" />
+                        <node concept="2qgKlT" id="7q96xLED8_a" role="2OqNvi">
+                          <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="getMangledName" />
                         </node>
                         <node concept="37vLTw" id="DaB78DhSf6" role="2Oq$k0">
                           <ref role="3cqZAo" node="DaB78DhNZC" resolve="it" />

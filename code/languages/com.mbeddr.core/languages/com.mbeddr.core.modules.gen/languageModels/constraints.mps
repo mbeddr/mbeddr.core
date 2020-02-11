@@ -9,7 +9,6 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
-    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
@@ -195,8 +194,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4ol4Q3pLKag">
-    <property role="3GE5qa" value="config" />
-    <ref role="1M2myG" to="d0vh:7dfuMW5rC75" resolve="NameShorteingRoot" />
+    <property role="3GE5qa" value="gen" />
+    <ref role="1M2myG" to="d0vh:7dfuMW5rC75" resolve="ShortNamesRoot" />
     <node concept="2NXJUA" id="4ol4Q3pLKah" role="2NY200">
       <node concept="3clFbS" id="4ol4Q3pLKai" role="2VODD2">
         <node concept="3clFbF" id="4ol4Q3pLKbm" role="3cqZAp">

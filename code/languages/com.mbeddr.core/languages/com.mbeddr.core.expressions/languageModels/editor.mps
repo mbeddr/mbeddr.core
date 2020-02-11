@@ -1742,6 +1742,18 @@
             </node>
             <node concept="2iRfu4" id="7FZLineUJnt" role="2iSdaV" />
           </node>
+          <node concept="3EZMnI" id="3mNkkAi8TkW" role="3EZMnx">
+            <node concept="VPM3Z" id="3mNkkAi8TkX" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="3mNkkAi8TkY" role="3EZMnx">
+              <property role="3F0ifm" value="ssize_t type (size of ssize_t)" />
+            </node>
+            <node concept="3F1sOY" id="3mNkkAi8TkZ" role="3EZMnx">
+              <ref role="1NtTu8" to="mj1l:3mNkkAi8TfG" resolve="ssizeTType" />
+            </node>
+            <node concept="2iRfu4" id="3mNkkAi8Tl0" role="2iSdaV" />
+          </node>
           <node concept="3EZMnI" id="3jGRJVwqZnM" role="3EZMnx">
             <node concept="VPM3Z" id="3jGRJVwqZnN" role="3F10Kt">
               <property role="VOm3f" value="false" />

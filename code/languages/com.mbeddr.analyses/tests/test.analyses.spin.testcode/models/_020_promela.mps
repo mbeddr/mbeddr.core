@@ -75,9 +75,6 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -169,7 +166,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -293,14 +290,12 @@
   </node>
   <node concept="2v9HqL" id="7Rf0$0HKRGO">
     <node concept="1gr5cj" id="7Rf0$0HKRGP" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_do_test" />
       <node concept="2v9HqM" id="7Rf0$0HKRZ_" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRK1" resolve="do_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRGR" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_hello" />
       <node concept="2v9HqM" id="7Rf0$0HKRZI" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRGp" resolve="hello" />
@@ -313,28 +308,24 @@
       </node>
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRGT" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_if_test" />
       <node concept="2v9HqM" id="7Rf0$0HKRZF" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRJt" resolve="if_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="Rd$2EC649N" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_multiple_choice_test" />
       <node concept="2v9HqM" id="Rd$2EC649Y" role="2eOfOg">
         <ref role="2v9HqP" node="Rd$2EC61sj" resolve="multiple_choice_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="1RC3LaKCwd4" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_select_test" />
       <node concept="2v9HqM" id="1RC3LaKCwdi" role="2eOfOg">
         <ref role="2v9HqP" node="1RC3LaKCvT2" resolve="select_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="1RC3LaKFjcP" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_for_test" />
       <node concept="2v9HqM" id="1RC3LaKFlni" role="2eOfOg">
         <ref role="2v9HqP" node="1RC3LaKF8Oj" resolve="for_test" />
