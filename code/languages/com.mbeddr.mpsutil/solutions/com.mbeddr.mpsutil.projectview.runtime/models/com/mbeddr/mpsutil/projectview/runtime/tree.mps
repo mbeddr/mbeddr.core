@@ -2,14 +2,14 @@
 <model ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)">
   <persistence version="9" />
   <languages>
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="qqrq" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.components(MPS.IDEA/)" />
@@ -3404,6 +3404,14 @@
         <ref role="3uigEE" to="w1kc:~IOperationContext" resolve="IOperationContext" />
       </node>
     </node>
+    <node concept="2tJIrI" id="3U7D96Xn8jP" role="jymVt" />
+    <node concept="312cEg" id="12OxVjN0bgx" role="jymVt">
+      <property role="TrG5h" value="isDisposed" />
+      <node concept="3Tm6S6" id="12OxVjN0iFQ" role="1B3o_S" />
+      <node concept="10P_77" id="12OxVjN0azP" role="1tU5fm" />
+      <node concept="3clFbT" id="12OxVjN1y_1" role="33vP2m" />
+    </node>
+    <node concept="2tJIrI" id="12OxVjMZRq6" role="jymVt" />
     <node concept="3clFb_" id="6B7erwvFKhe" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="dispose" />
@@ -3412,35 +3420,60 @@
       <node concept="3Tm1VV" id="6B7erwvFKhf" role="1B3o_S" />
       <node concept="3cqZAl" id="6B7erwvFKhh" role="3clF45" />
       <node concept="3clFbS" id="6B7erwvFKhi" role="3clF47">
-        <node concept="3clFbF" id="6B7erwvFM1N" role="3cqZAp">
-          <node concept="2EnYce" id="5ZdiHtipXYT" role="3clFbG">
-            <node concept="1eOMI4" id="6B7erwvFQJw" role="2Oq$k0">
-              <node concept="10QFUN" id="6B7erwvFQJx" role="1eOMHV">
-                <node concept="37vLTw" id="6B7erwvFQJv" role="10QFUP">
-                  <ref role="3cqZAo" to="k21q:~AbstractProjectViewPane.myTree" resolve="myTree" />
+        <node concept="3clFbJ" id="12OxVjN0yn8" role="3cqZAp">
+          <node concept="3clFbS" id="12OxVjN0yna" role="3clFbx">
+            <node concept="3clFbF" id="6B7erwvFM1N" role="3cqZAp">
+              <node concept="2EnYce" id="5ZdiHtipXYT" role="3clFbG">
+                <node concept="1eOMI4" id="6B7erwvFQJw" role="2Oq$k0">
+                  <node concept="10QFUN" id="6B7erwvFQJx" role="1eOMHV">
+                    <node concept="37vLTw" id="6B7erwvFQJv" role="10QFUP">
+                      <ref role="3cqZAo" to="k21q:~AbstractProjectViewPane.myTree" resolve="myTree" />
+                    </node>
+                    <node concept="3uibUv" id="3U7D96XnPDq" role="10QFUM">
+                      <ref role="3uigEE" node="7diJr$RhsEC" resolve="CustomProjectTree" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="3uibUv" id="6B7erwvFQVb" role="10QFUM">
-                  <ref role="3uigEE" node="7diJr$RhsEC" resolve="CustomProjectTree" />
+                <node concept="liA8E" id="3U7D96XnV$E" role="2OqNvi">
+                  <ref role="37wK5l" node="6B7erwvFBN1" resolve="dispose" />
                 </node>
               </node>
             </node>
-            <node concept="liA8E" id="6B7erwvFSbE" role="2OqNvi">
-              <ref role="37wK5l" node="6B7erwvFBN1" resolve="dispose" />
+            <node concept="3clFbF" id="6B7erwvFKhl" role="3cqZAp">
+              <node concept="3nyPlj" id="6B7erwvFKhk" role="3clFbG">
+                <ref role="37wK5l" to="rvbb:~BaseLogicalViewProjectPane.dispose()" resolve="dispose" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="4$gzJvfSePS" role="3cqZAp">
+              <node concept="2EnYce" id="4$gzJvfSgxK" role="3clFbG">
+                <node concept="37vLTw" id="3U7D96XnWFF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4$gzJvfQv3Z" resolve="myWeight" />
+                </node>
+                <node concept="liA8E" id="3U7D96XnXPk" role="2OqNvi">
+                  <ref role="37wK5l" node="4$gzJvfQ9Pl" resolve="release" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="12OxVjN0CM2" role="3cqZAp">
+              <node concept="37vLTI" id="12OxVjN0FvC" role="3clFbG">
+                <node concept="3clFbT" id="12OxVjN0FJL" role="37vLTx">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="2OqwBi" id="12OxVjN0Dqk" role="37vLTJ">
+                  <node concept="Xjq3P" id="12OxVjN0CM0" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="12OxVjN0DSL" role="2OqNvi">
+                    <ref role="2Oxat5" node="12OxVjN0bgx" resolve="isDisposed" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="6B7erwvFKhl" role="3cqZAp">
-          <node concept="3nyPlj" id="6B7erwvFKhk" role="3clFbG">
-            <ref role="37wK5l" to="rvbb:~BaseLogicalViewProjectPane.dispose():void" resolve="dispose" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="4$gzJvfSePS" role="3cqZAp">
-          <node concept="2EnYce" id="4$gzJvfSgxK" role="3clFbG">
-            <node concept="37vLTw" id="4$gzJvfSePQ" role="2Oq$k0">
-              <ref role="3cqZAo" node="4$gzJvfQv3Z" resolve="myWeight" />
-            </node>
-            <node concept="liA8E" id="4$gzJvfShu7" role="2OqNvi">
-              <ref role="37wK5l" node="4$gzJvfQ9Pl" resolve="release" />
+          <node concept="3fqX7Q" id="12OxVjN0_9t" role="3clFbw">
+            <node concept="2OqwBi" id="12OxVjN0_9v" role="3fr31v">
+              <node concept="Xjq3P" id="12OxVjN0_9w" role="2Oq$k0" />
+              <node concept="2OwXpG" id="12OxVjN0_9x" role="2OqNvi">
+                <ref role="2Oxat5" node="12OxVjN0bgx" resolve="isDisposed" />
+              </node>
             </node>
           </node>
         </node>
@@ -3449,11 +3482,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="4gq8yQBYWXg" role="jymVt" />
-    <node concept="2tJIrI" id="4gq8yQBYYHf" role="jymVt" />
-    <node concept="2tJIrI" id="4gq8yQBYZu0" role="jymVt" />
-    <node concept="2tJIrI" id="4gq8yQBZ0eQ" role="jymVt" />
-    <node concept="2tJIrI" id="4gq8yQBZ0ZL" role="jymVt" />
     <node concept="2tJIrI" id="4gq8yQBZ1KL" role="jymVt" />
     <node concept="Wx3nA" id="4gq8yQBZ6Mg" role="jymVt">
       <property role="TrG5h" value="LOG" />
