@@ -3152,7 +3152,7 @@
                   <node concept="2Ry0Ak" id="35JynOkFDbM" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="35JynOkFDbN" role="2Ry0An">
-                      <property role="2Ry0Am" value="batik-all-1.11.jar" />
+                      <property role="2Ry0Am" value="batik-all-1.12.jar" />
                     </node>
                   </node>
                 </node>

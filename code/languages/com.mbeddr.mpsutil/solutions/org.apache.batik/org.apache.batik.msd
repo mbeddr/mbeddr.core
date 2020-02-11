@@ -2,10 +2,10 @@
 <solution name="org.apache.batik" uuid="5ad14eca-28d7-4bce-b8e0-648908a49062" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/batik-all-1.11.jar" />
+      <sourceRoot location="lib/batik-all-1.12.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-all-1.11.jar" />
+      <sourceRoot location="batik-all-1.12.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -14,7 +14,7 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/batik-all-1.11.jar" />
+    <stubModelEntry path="${module}/lib/batik-all-1.12.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
