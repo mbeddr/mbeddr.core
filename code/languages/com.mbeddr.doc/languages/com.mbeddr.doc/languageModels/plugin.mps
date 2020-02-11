@@ -2,14 +2,14 @@
 <model ref="r:07597124-beb3-41b7-beb1-a882af3ded40(com.mbeddr.doc.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
-    <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
-    <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
+    <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1268,38 +1268,50 @@
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="SfApY" id="271UTRKH3_s" role="3cqZAp">
-                                      <node concept="3clFbS" id="271UTRKH3_u" role="SfCbr">
-                                        <node concept="3clFbF" id="271UTRKGGMv" role="3cqZAp">
-                                          <node concept="2YIFZM" id="271UTRKGH0C" role="3clFbG">
-                                            <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-                                            <ref role="37wK5l" to="8oaq:~FileUtils.copyDirectory(java.io.File,java.io.File)" resolve="copyDirectory" />
-                                            <node concept="37vLTw" id="271UTRKGPgx" role="37wK5m">
-                                              <ref role="3cqZAo" node="271UTRKGL2b" resolve="defaultImageFolder" />
+                                    <node concept="3clFbJ" id="12OxVjN1U40" role="3cqZAp">
+                                      <node concept="3clFbS" id="12OxVjN1U42" role="3clFbx">
+                                        <node concept="SfApY" id="271UTRKH3_s" role="3cqZAp">
+                                          <node concept="3clFbS" id="271UTRKH3_u" role="SfCbr">
+                                            <node concept="3clFbF" id="271UTRKGGMv" role="3cqZAp">
+                                              <node concept="2YIFZM" id="271UTRKGH0C" role="3clFbG">
+                                                <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
+                                                <ref role="37wK5l" to="8oaq:~FileUtils.copyDirectory(java.io.File,java.io.File)" resolve="copyDirectory" />
+                                                <node concept="37vLTw" id="271UTRKGPgx" role="37wK5m">
+                                                  <ref role="3cqZAo" node="271UTRKGL2b" resolve="defaultImageFolder" />
+                                                </node>
+                                                <node concept="37vLTw" id="271UTRKGIwZ" role="37wK5m">
+                                                  <ref role="3cqZAo" node="271UTRKGI02" resolve="outputImgFolder" />
+                                                </node>
+                                              </node>
                                             </node>
-                                            <node concept="37vLTw" id="271UTRKGIwZ" role="37wK5m">
-                                              <ref role="3cqZAo" node="271UTRKGI02" resolve="outputImgFolder" />
+                                          </node>
+                                          <node concept="TDmWw" id="271UTRKH3_v" role="TEbGg">
+                                            <node concept="3cpWsn" id="271UTRKH3_x" role="TDEfY">
+                                              <property role="TrG5h" value="e" />
+                                              <node concept="3uibUv" id="271UTRKH4v$" role="1tU5fm">
+                                                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                                              </node>
+                                            </node>
+                                            <node concept="3clFbS" id="271UTRKH3__" role="TDEfX">
+                                              <node concept="RRSsy" id="271UTRKH58d" role="3cqZAp">
+                                                <property role="RRSoG" value="error" />
+                                                <node concept="Xl_RD" id="271UTRKH58f" role="RRSoy">
+                                                  <property role="Xl_RC" value="Failed to copy default images folder to doc gen output" />
+                                                </node>
+                                                <node concept="37vLTw" id="271UTRKH58h" role="RRSow">
+                                                  <ref role="3cqZAo" node="271UTRKH3_x" resolve="e" />
+                                                </node>
+                                              </node>
                                             </node>
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="TDmWw" id="271UTRKH3_v" role="TEbGg">
-                                        <node concept="3cpWsn" id="271UTRKH3_x" role="TDEfY">
-                                          <property role="TrG5h" value="e" />
-                                          <node concept="3uibUv" id="271UTRKH4v$" role="1tU5fm">
-                                            <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-                                          </node>
+                                      <node concept="2OqwBi" id="12OxVjN1V9S" role="3clFbw">
+                                        <node concept="37vLTw" id="12OxVjN1UCE" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="271UTRKGL2b" resolve="defaultImageFolder" />
                                         </node>
-                                        <node concept="3clFbS" id="271UTRKH3__" role="TDEfX">
-                                          <node concept="RRSsy" id="271UTRKH58d" role="3cqZAp">
-                                            <property role="RRSoG" value="error" />
-                                            <node concept="Xl_RD" id="271UTRKH58f" role="RRSoy">
-                                              <property role="Xl_RC" value="Failed to copy default images folder to doc gen output" />
-                                            </node>
-                                            <node concept="37vLTw" id="271UTRKH58h" role="RRSow">
-                                              <ref role="3cqZAo" node="271UTRKH3_x" resolve="e" />
-                                            </node>
-                                          </node>
+                                        <node concept="liA8E" id="12OxVjN1VYz" role="2OqNvi">
+                                          <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                                         </node>
                                       </node>
                                     </node>
@@ -1355,11 +1367,11 @@
                     </node>
                   </node>
                   <node concept="2OqwBi" id="5AsWgkJq8jY" role="ukAjM">
-                    <node concept="liA8E" id="5AsWgkJqdLK" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                    </node>
                     <node concept="37vLTw" id="1A8gWv2rGYZ" role="2Oq$k0">
                       <ref role="3cqZAo" node="1A8gWv2rvct" resolve="model" />
+                    </node>
+                    <node concept="liA8E" id="5AsWgkJqdLK" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                     </node>
                   </node>
                 </node>
