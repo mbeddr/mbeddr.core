@@ -1268,38 +1268,50 @@
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="SfApY" id="271UTRKH3_s" role="3cqZAp">
-                                      <node concept="3clFbS" id="271UTRKH3_u" role="SfCbr">
-                                        <node concept="3clFbF" id="271UTRKGGMv" role="3cqZAp">
-                                          <node concept="2YIFZM" id="271UTRKGH0C" role="3clFbG">
-                                            <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-                                            <ref role="37wK5l" to="8oaq:~FileUtils.copyDirectory(java.io.File,java.io.File)" resolve="copyDirectory" />
-                                            <node concept="37vLTw" id="271UTRKGPgx" role="37wK5m">
-                                              <ref role="3cqZAo" node="271UTRKGL2b" resolve="defaultImageFolder" />
+                                    <node concept="3clFbJ" id="12OxVjN1U40" role="3cqZAp">
+                                      <node concept="3clFbS" id="12OxVjN1U42" role="3clFbx">
+                                        <node concept="SfApY" id="271UTRKH3_s" role="3cqZAp">
+                                          <node concept="3clFbS" id="271UTRKH3_u" role="SfCbr">
+                                            <node concept="3clFbF" id="271UTRKGGMv" role="3cqZAp">
+                                              <node concept="2YIFZM" id="271UTRKGH0C" role="3clFbG">
+                                                <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
+                                                <ref role="37wK5l" to="8oaq:~FileUtils.copyDirectory(java.io.File,java.io.File)" resolve="copyDirectory" />
+                                                <node concept="37vLTw" id="271UTRKGPgx" role="37wK5m">
+                                                  <ref role="3cqZAo" node="271UTRKGL2b" resolve="defaultImageFolder" />
+                                                </node>
+                                                <node concept="37vLTw" id="271UTRKGIwZ" role="37wK5m">
+                                                  <ref role="3cqZAo" node="271UTRKGI02" resolve="outputImgFolder" />
+                                                </node>
+                                              </node>
                                             </node>
-                                            <node concept="37vLTw" id="271UTRKGIwZ" role="37wK5m">
-                                              <ref role="3cqZAo" node="271UTRKGI02" resolve="outputImgFolder" />
+                                          </node>
+                                          <node concept="TDmWw" id="271UTRKH3_v" role="TEbGg">
+                                            <node concept="3cpWsn" id="271UTRKH3_x" role="TDEfY">
+                                              <property role="TrG5h" value="e" />
+                                              <node concept="3uibUv" id="271UTRKH4v$" role="1tU5fm">
+                                                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                                              </node>
+                                            </node>
+                                            <node concept="3clFbS" id="271UTRKH3__" role="TDEfX">
+                                              <node concept="RRSsy" id="271UTRKH58d" role="3cqZAp">
+                                                <property role="RRSoG" value="error" />
+                                                <node concept="Xl_RD" id="271UTRKH58f" role="RRSoy">
+                                                  <property role="Xl_RC" value="Failed to copy default images folder to doc gen output" />
+                                                </node>
+                                                <node concept="37vLTw" id="271UTRKH58h" role="RRSow">
+                                                  <ref role="3cqZAo" node="271UTRKH3_x" resolve="e" />
+                                                </node>
+                                              </node>
                                             </node>
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="TDmWw" id="271UTRKH3_v" role="TEbGg">
-                                        <node concept="3cpWsn" id="271UTRKH3_x" role="TDEfY">
-                                          <property role="TrG5h" value="e" />
-                                          <node concept="3uibUv" id="271UTRKH4v$" role="1tU5fm">
-                                            <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-                                          </node>
+                                      <node concept="2OqwBi" id="12OxVjN1V9S" role="3clFbw">
+                                        <node concept="37vLTw" id="12OxVjN1UCE" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="271UTRKGL2b" resolve="defaultImageFolder" />
                                         </node>
-                                        <node concept="3clFbS" id="271UTRKH3__" role="TDEfX">
-                                          <node concept="RRSsy" id="271UTRKH58d" role="3cqZAp">
-                                            <property role="RRSoG" value="error" />
-                                            <node concept="Xl_RD" id="271UTRKH58f" role="RRSoy">
-                                              <property role="Xl_RC" value="Failed to copy default images folder to doc gen output" />
-                                            </node>
-                                            <node concept="37vLTw" id="271UTRKH58h" role="RRSow">
-                                              <ref role="3cqZAo" node="271UTRKH3_x" resolve="e" />
-                                            </node>
-                                          </node>
+                                        <node concept="liA8E" id="12OxVjN1VYz" role="2OqNvi">
+                                          <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                                         </node>
                                       </node>
                                     </node>
