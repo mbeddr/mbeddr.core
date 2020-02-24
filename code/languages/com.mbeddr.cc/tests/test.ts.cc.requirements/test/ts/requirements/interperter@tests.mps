@@ -22,7 +22,6 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="1v9t" ref="r:ad2e741a-fd00-4d35-bff4-cd40053b55fe(com.mbeddr.cc.requirements.c.intentions)" />
-    <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
@@ -33,6 +32,7 @@
     <import index="3vkx" ref="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -146,6 +146,7 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -883,40 +884,95 @@
               </node>
             </node>
             <node concept="3clFbH" id="2BbcAuIkgGQ" role="3cqZAp" />
+            <node concept="3cpWs8" id="6d0zIQxhZCs" role="3cqZAp">
+              <node concept="3cpWsn" id="6d0zIQxhZCt" role="3cpWs9">
+                <property role="TrG5h" value="referenceValue1" />
+                <node concept="3uibUv" id="6d0zIQxhWSs" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="17QB3L" id="6d0zIQxhWSv" role="11_B2D" />
+                </node>
+                <node concept="2YIFZM" id="6d0zIQxi6iR" role="33vP2m">
+                  <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+                  <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+                  <node concept="Xl_RD" id="6d0zIQxi6iS" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 1)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi6iT" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 2)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi6iU" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 3)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi6iV" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 4)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi6iW" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 5)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi6iX" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 6)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi6iY" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 7)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi6iZ" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 8)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi6j0" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 9)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi6j1" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 10)" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6d0zIQxi2gt" role="3cqZAp">
+              <node concept="3cpWsn" id="6d0zIQxi2gu" role="3cpWs9">
+                <property role="TrG5h" value="referenceValue2" />
+                <node concept="3uibUv" id="6d0zIQxhZOb" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="17QB3L" id="6d0zIQxhZOe" role="11_B2D" />
+                </node>
+                <node concept="2YIFZM" id="6d0zIQxi8Hj" role="33vP2m">
+                  <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+                  <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+                  <node concept="Xl_RD" id="6d0zIQxi8Hk" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 1)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi8Hl" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 2)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi8Hm" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 3)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi8Hn" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 4)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi8Ho" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 5)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi8Hp" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 6)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi8Hq" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 7)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi8Hr" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 8)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi8Hs" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 9)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxi8Ht" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 10)" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3vlDli" id="2BbcAuIk9fU" role="3cqZAp">
-              <node concept="2YIFZM" id="2BbcAuIk9fV" role="3tpDZB">
-                <ref role="1Pybhc" to="3o3z:~ImmutableList" resolve="ImmutableList" />
-                <ref role="37wK5l" to="3o3z:~ImmutableList.of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)" resolve="of" />
-                <node concept="Xl_RD" id="2BbcAuIk9fW" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 1)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIk9fX" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 2)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIk9fY" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 3)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIk9fZ" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 4)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIk9g0" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 5)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIk9g1" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 6)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIk9g2" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 7)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIk9g3" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 8)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIk9g4" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 9)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIk9g5" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 10)" />
-                </node>
+              <node concept="37vLTw" id="6d0zIQxhZCD" role="3tpDZB">
+                <ref role="3cqZAo" node="6d0zIQxhZCt" resolve="referenceValue1" />
               </node>
               <node concept="2OqwBi" id="2BbcAuIkc2O" role="3tpDZA">
                 <node concept="2WthIp" id="2BbcAuIkc2R" role="2Oq$k0" />
@@ -929,39 +985,8 @@
               </node>
             </node>
             <node concept="3vlDli" id="2BbcAuIkd3e" role="3cqZAp">
-              <node concept="2YIFZM" id="2BbcAuIkd3f" role="3tpDZB">
-                <ref role="1Pybhc" to="3o3z:~ImmutableList" resolve="ImmutableList" />
-                <ref role="37wK5l" to="3o3z:~ImmutableList.of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)" resolve="of" />
-                <node concept="Xl_RD" id="2BbcAuIkd3g" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 1)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkd3h" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 2)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkd3i" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 3)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkd3j" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 4)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkd3k" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 5)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkd3l" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 6)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkd3m" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 7)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkd3n" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 8)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkd3o" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 9)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkd3p" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 10)" />
-                </node>
+              <node concept="37vLTw" id="6d0zIQxi2gE" role="3tpDZB">
+                <ref role="3cqZAo" node="6d0zIQxi2gu" resolve="referenceValue2" />
               </node>
               <node concept="2OqwBi" id="2BbcAuIkd3q" role="3tpDZA">
                 <node concept="2WthIp" id="2BbcAuIkd3r" role="2Oq$k0" />
@@ -1043,28 +1068,40 @@
               </node>
             </node>
             <node concept="3clFbH" id="2BbcAuIkiv1" role="3cqZAp" />
+            <node concept="3cpWs8" id="6d0zIQxi9hb" role="3cqZAp">
+              <node concept="3cpWsn" id="6d0zIQxi9hc" role="3cpWs9">
+                <property role="TrG5h" value="referenceValue3" />
+                <node concept="3uibUv" id="6d0zIQxi446" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="17QB3L" id="6d0zIQxi449" role="11_B2D" />
+                </node>
+                <node concept="2YIFZM" id="6d0zIQxibIe" role="33vP2m">
+                  <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+                  <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+                  <node concept="Xl_RD" id="6d0zIQxibIf" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 1)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxibIg" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 2)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxibIh" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 3)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxibIi" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 4)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxibIj" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 5)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxibIk" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:j = 6)" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3vlDli" id="2BbcAuIkfg5" role="3cqZAp">
-              <node concept="2YIFZM" id="2BbcAuIkfg6" role="3tpDZB">
-                <ref role="1Pybhc" to="3o3z:~ImmutableList" resolve="ImmutableList" />
-                <ref role="37wK5l" to="3o3z:~ImmutableList.of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)" resolve="of" />
-                <node concept="Xl_RD" id="2BbcAuIkfg7" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 1)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkfg8" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 2)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkfg9" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 3)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkfga" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 4)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkfgb" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 5)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkfgc" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 6)" />
-                </node>
+              <node concept="37vLTw" id="6d0zIQxi9hk" role="3tpDZB">
+                <ref role="3cqZAo" node="6d0zIQxi9hc" resolve="referenceValue3" />
               </node>
               <node concept="2OqwBi" id="2BbcAuIkfgh" role="3tpDZA">
                 <node concept="2WthIp" id="2BbcAuIkfgi" role="2Oq$k0" />
@@ -1147,39 +1184,8 @@
             </node>
             <node concept="3clFbH" id="2BbcAuIkmNz" role="3cqZAp" />
             <node concept="3vlDli" id="2BbcAuIkmN$" role="3cqZAp">
-              <node concept="2YIFZM" id="2BbcAuIkmN_" role="3tpDZB">
-                <ref role="37wK5l" to="3o3z:~ImmutableList.of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)" resolve="of" />
-                <ref role="1Pybhc" to="3o3z:~ImmutableList" resolve="ImmutableList" />
-                <node concept="Xl_RD" id="2BbcAuIkmNA" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 1)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNB" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 2)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNC" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 3)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmND" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 4)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNE" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 5)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNF" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 6)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNG" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 7)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNH" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 8)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNI" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 9)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNJ" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 10)" />
-                </node>
+              <node concept="37vLTw" id="6d0zIQxhZCE" role="3tpDZB">
+                <ref role="3cqZAo" node="6d0zIQxhZCt" resolve="referenceValue1" />
               </node>
               <node concept="2OqwBi" id="2BbcAuIkmNK" role="3tpDZA">
                 <node concept="2WthIp" id="2BbcAuIkmNL" role="2Oq$k0" />
@@ -1192,39 +1198,8 @@
               </node>
             </node>
             <node concept="3vlDli" id="2BbcAuIkmNO" role="3cqZAp">
-              <node concept="2YIFZM" id="2BbcAuIkmNP" role="3tpDZB">
-                <ref role="1Pybhc" to="3o3z:~ImmutableList" resolve="ImmutableList" />
-                <ref role="37wK5l" to="3o3z:~ImmutableList.of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)" resolve="of" />
-                <node concept="Xl_RD" id="2BbcAuIkmNQ" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 1)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNR" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 2)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNS" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 3)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNT" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 4)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNU" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 5)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNV" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 6)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNW" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 7)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNX" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 8)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNY" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 9)" />
-                </node>
-                <node concept="Xl_RD" id="2BbcAuIkmNZ" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:j = 10)" />
-                </node>
+              <node concept="37vLTw" id="6d0zIQxi2gF" role="3tpDZB">
+                <ref role="3cqZAo" node="6d0zIQxi2gu" resolve="referenceValue2" />
               </node>
               <node concept="2OqwBi" id="2BbcAuIkmO0" role="3tpDZA">
                 <node concept="2WthIp" id="2BbcAuIkmO1" role="2Oq$k0" />
@@ -1535,6 +1510,49 @@
         <node concept="3clFbH" id="54R_Vj4DtjZ" role="3cqZAp" />
         <node concept="2GUZhq" id="54R_Vj4K1gZ" role="3cqZAp">
           <node concept="3clFbS" id="54R_Vj4K1h1" role="2GV8ay">
+            <node concept="3cpWs8" id="6d0zIQxieV5" role="3cqZAp">
+              <node concept="3cpWsn" id="6d0zIQxieV6" role="3cpWs9">
+                <property role="TrG5h" value="referenceValue" />
+                <node concept="3uibUv" id="6d0zIQxhWNP" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="17QB3L" id="6d0zIQxhWNS" role="11_B2D" />
+                </node>
+                <node concept="2YIFZM" id="6d0zIQxigCp" role="33vP2m">
+                  <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+                  <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+                  <node concept="Xl_RD" id="6d0zIQxigCq" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 1)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxigCr" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 2)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxigCs" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 3)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxigCt" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 4)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxigCu" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 5)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxigCv" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 6)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxigCw" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 7)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxigCx" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 8)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxigCy" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 9)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxigCz" role="37wK5m">
+                    <property role="Xl_RC" value="(sum:i = 10)" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3vlDli" id="54R_Vj4DwNT" role="3cqZAp">
               <node concept="2OqwBi" id="2BbcAuIkcsy" role="3tpDZA">
                 <node concept="2WthIp" id="2BbcAuIkcs_" role="2Oq$k0" />
@@ -1545,39 +1563,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="2YIFZM" id="54R_Vj4DHwu" role="3tpDZB">
-                <ref role="1Pybhc" to="3o3z:~ImmutableList" resolve="ImmutableList" />
-                <ref role="37wK5l" to="3o3z:~ImmutableList.of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)" resolve="of" />
-                <node concept="Xl_RD" id="54R_Vj4DHGJ" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 1)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DMrA" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 2)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DM$C" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 3)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DNgH" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 4)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DMII" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 5)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DMOx" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 6)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DMPu" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 7)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DMQo" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 8)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DMOR" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 9)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DMPX" role="37wK5m">
-                  <property role="Xl_RC" value="(sum:i = 10)" />
-                </node>
+              <node concept="37vLTw" id="6d0zIQxieVi" role="3tpDZB">
+                <ref role="3cqZAo" node="6d0zIQxieV6" resolve="referenceValue" />
               </node>
             </node>
           </node>
@@ -1611,6 +1598,64 @@
         <node concept="3clFbH" id="54R_Vj4DRiH" role="3cqZAp" />
         <node concept="2GUZhq" id="2nXykL7nZY$" role="3cqZAp">
           <node concept="3clFbS" id="2nXykL7nZYA" role="2GV8ay">
+            <node concept="3cpWs8" id="6d0zIQxic8S" role="3cqZAp">
+              <node concept="3cpWsn" id="6d0zIQxic8T" role="3cpWs9">
+                <property role="TrG5h" value="referenceValue" />
+                <node concept="3uibUv" id="6d0zIQxhWQn" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="17QB3L" id="6d0zIQxhWQq" role="11_B2D" />
+                </node>
+                <node concept="2YIFZM" id="6d0zIQxieBi" role="33vP2m">
+                  <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+                  <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+                  <node concept="Xl_RD" id="6d0zIQxieBj" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 1, j = 2)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBk" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 1, j = 3)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBl" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 1, j = 4)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBm" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 1, j = 5)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBn" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 1, j = 6)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBo" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 2, j = 2)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBp" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 2, j = 3)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBq" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 2, j = 4)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBr" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 2, j = 5)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBs" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 2, j = 6)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBt" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 3, j = 2)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBu" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 3, j = 3)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBv" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 3, j = 4)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBw" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 3, j = 5)" />
+                  </node>
+                  <node concept="Xl_RD" id="6d0zIQxieBx" role="37wK5m">
+                    <property role="Xl_RC" value="(i = 3, j = 6)" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3vlDli" id="54R_Vj4DRiI" role="3cqZAp">
               <node concept="2OqwBi" id="2BbcAuIkcJj" role="3tpDZA">
                 <node concept="2WthIp" id="2BbcAuIkcJm" role="2Oq$k0" />
@@ -1621,54 +1666,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="2YIFZM" id="54R_Vj4DRiJ" role="3tpDZB">
-                <ref role="1Pybhc" to="3o3z:~ImmutableList" resolve="ImmutableList" />
-                <ref role="37wK5l" to="3o3z:~ImmutableList.of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object...)" resolve="of" />
-                <node concept="Xl_RD" id="54R_Vj4DTPs" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 1, j = 2)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DTPt" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 1, j = 3)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DTPu" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 1, j = 4)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DTPv" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 1, j = 5)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DTPw" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 1, j = 6)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DSuV" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 2, j = 2)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DRiK" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 2, j = 3)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DSCa" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 2, j = 4)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DSGG" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 2, j = 5)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DSLS" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 2, j = 6)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DUaS" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 3, j = 2)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DUaT" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 3, j = 3)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DUaU" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 3, j = 4)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DUaV" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 3, j = 5)" />
-                </node>
-                <node concept="Xl_RD" id="54R_Vj4DUaW" role="37wK5m">
-                  <property role="Xl_RC" value="(i = 3, j = 6)" />
-                </node>
+              <node concept="37vLTw" id="6d0zIQxic9a" role="3tpDZB">
+                <ref role="3cqZAo" node="6d0zIQxic8T" resolve="referenceValue" />
               </node>
             </node>
           </node>
