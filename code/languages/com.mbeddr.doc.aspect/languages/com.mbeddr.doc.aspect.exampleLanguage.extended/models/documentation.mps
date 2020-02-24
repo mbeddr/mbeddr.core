@@ -12,6 +12,10 @@
   </imports>
   <registry>
     <language id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect">
+      <concept id="1587141976994809824" name="com.mbeddr.doc.aspect.structure.DocumentedPropertyAnnotation" flags="ng" index="4TqVo">
+        <reference id="1587141976994809836" name="property" index="4TqVk" />
+      </concept>
+      <concept id="7810506636291686467" name="com.mbeddr.doc.aspect.structure.DocumentedPropertyItemAnnotation" flags="ng" index="fANS$" />
       <concept id="1058510331725720478" name="com.mbeddr.doc.aspect.structure.DocumentedConceptAnnotation" flags="ng" index="3n9NSn">
         <reference id="1058510331725761196" name="concept" index="3nadW_" />
       </concept>
@@ -49,6 +53,17 @@
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
+      <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
+        <child id="5378658552262903589" name="text" index="3X6T9h" />
+      </concept>
+      <concept id="5378658552262893169" name="com.mbeddr.doc.structure.ItemList" flags="ng" index="3X6WG5">
+        <child id="5378658552262986137" name="items" index="3Xp5NH" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
@@ -69,48 +84,53 @@
   <node concept="1_1swa" id="3TrpzyP_Ftq">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="AdditionalDocumentation" />
-    <ref role="G9hjw" node="5CkU_dHbJMe" resolve="DocConfig" />
-    <node concept="1_0VNX" id="lp9ZKwURLT" role="1_0VJ0">
-      <property role="TrG5h" value="introSection" />
-      <property role="1_0VJr" value="Introduction Section" />
-      <node concept="1_0LV8" id="lp9ZKwURMi" role="1_0VJ0">
-        <node concept="19SGf9" id="lp9ZKwURMj" role="1_0LWR">
-          <node concept="19SUe$" id="lp9ZKwURMk" role="19SJt6">
-            <property role="19SUeA" value="Introduction section for the extended language." />
-          </node>
-        </node>
-      </node>
-      <node concept="1_0LV8" id="lp9ZKwURMp" role="1_0VJ0">
-        <node concept="19SGf9" id="lp9ZKwURMq" role="1_0LWR">
-          <node concept="19SUe$" id="lp9ZKwURMr" role="19SJt6">
-            <property role="19SUeA" value="Documentation of this language demostrates how you can provide a documentation for a extended language." />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1_1sxE" id="lp9ZKwURM1" role="1_0VJ0">
-      <property role="TrG5h" value="empty_-1" />
-    </node>
-    <node concept="1_1sxE" id="lp9ZKwURM9" role="1_0VJ0">
-      <property role="TrG5h" value="empty_-1" />
-    </node>
+    <ref role="G9hjw" node="5CkU_dHbJMe" resolve="DocumentConfig" />
     <node concept="1_0VNX" id="3TrpzyP_Ftu" role="1_0VJ0">
-      <property role="TrG5h" value="additionSection" />
-      <property role="1_0VJr" value="Extended Section" />
-      <node concept="1_0LV8" id="3TrpzyP_Ftw" role="1_0VJ0">
-        <node concept="19SGf9" id="3TrpzyP_Ftx" role="1_0LWR">
-          <node concept="19SUe$" id="3TrpzyP_Fty" role="19SJt6">
-            <property role="19SUeA" value="This section documents concept from the extended language" />
+      <property role="TrG5h" value="ColoredNode" />
+      <property role="1_0VJr" value="Colored Node" />
+      <node concept="1_0LV8" id="4jXS_uRrfC6" role="1_0VJ0">
+        <node concept="19SGf9" id="4jXS_uRrfC7" role="1_0LWR">
+          <node concept="19SUe$" id="4jXS_uRrfC8" role="19SJt6">
+            <property role="19SUeA" value="More than a basic Node because it also has a color specified." />
           </node>
         </node>
+      </node>
+      <node concept="3X6WG5" id="6L$vAt$5U5G" role="1_0VJ0">
+        <node concept="3X6T9g" id="6L$vAt$5U5H" role="3Xp5NH">
+          <node concept="OjmMv" id="6L$vAt$5U5I" role="3X6T9h">
+            <node concept="19SGf9" id="6L$vAt$5U5J" role="OjmMu">
+              <node concept="19SUe$" id="6L$vAt$5U5K" role="19SJt6">
+                <property role="19SUeA" value="A bullet point item representing the color property of a colored node." />
+              </node>
+            </node>
+          </node>
+          <node concept="fANS$" id="6L$vAt$5U7Q" role="lGtFl">
+            <ref role="3nadW_" to="hauh:1MEM7LwynlN" resolve="ColoredNode" />
+            <ref role="4TqVk" to="hauh:1MEM7LwynlO" resolve="color" />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="1MEM7LwyEgh" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
       </node>
       <node concept="3n9NSn" id="3TrpzyP_FtB" role="lGtFl">
-        <ref role="3nadW_" to="hauh:tBHOvWfftF" resolve="SampleDocumentedConcept" />
+        <ref role="3nadW_" to="hauh:1MEM7LwynlN" resolve="ColoredNode" />
+      </node>
+    </node>
+    <node concept="1_0VNX" id="7NPCd7DDTfZ" role="1_0VJ0">
+      <property role="TrG5h" value="UndirectedEdge" />
+      <property role="1_0VJr" value="Undirected Edge" />
+      <node concept="1_0LV8" id="7NPCd7DDTg0" role="1_0VJ0">
+        <node concept="19SGf9" id="7NPCd7DDTg1" role="1_0LWR">
+          <node concept="19SUe$" id="7NPCd7DDTg2" role="19SJt6">
+            <property role="19SUeA" value="This is a node documentation for undirected edges." />
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node concept="2SbYGP" id="5CkU_dHbJMe">
-    <property role="TrG5h" value="DocConfig" />
+    <property role="TrG5h" value="DocumentConfig" />
     <node concept="2SbYGw" id="5CkU_dHbJMf" role="Cbewh">
       <property role="TrG5h" value="tmp" />
       <node concept="9PVaO" id="5CkU_dHbJMg" role="9PVG_">
@@ -119,6 +139,7 @@
       </node>
     </node>
     <node concept="2SbYGw" id="47UE$_dUiYs" role="A10yx">
+      <property role="TrG5h" value="def" />
       <node concept="9PVaO" id="47UE$_dUiYr" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
