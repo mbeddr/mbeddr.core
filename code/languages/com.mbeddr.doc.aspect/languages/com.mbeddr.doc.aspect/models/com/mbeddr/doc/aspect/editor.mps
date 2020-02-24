@@ -4,7 +4,7 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -92,7 +92,6 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
       </concept>
@@ -369,30 +368,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2UZ9O9PWCif">
-    <ref role="1XX52x" to="748g:2UZ9O9PWChM" resolve="SampleInstanceWord" />
-    <node concept="3EZMnI" id="2UZ9O9PWCik" role="2wV5jI">
-      <node concept="2iRfu4" id="2UZ9O9PWCil" role="2iSdaV" />
-      <node concept="3F0ifn" id="2UZ9O9PWCih" role="3EZMnx">
-        <property role="3F0ifm" value="\sample{" />
-      </node>
-      <node concept="3F1sOY" id="2UZ9O9PXtW8" role="3EZMnx">
-        <ref role="1NtTu8" to="748g:2UZ9O9PWChP" resolve="sampleInstance" />
-      </node>
-      <node concept="3F0ifn" id="2UZ9O9PXuhA" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="1UEcrCk89OW">
-    <ref role="1XX52x" to="748g:2UZ9O9PWChM" resolve="SampleInstanceWord" />
-    <node concept="3F1sOY" id="1UEcrCk89Pe" role="2wV5jI">
-      <ref role="1NtTu8" to="748g:2UZ9O9PWChP" resolve="sampleInstance" />
-    </node>
-    <node concept="2aJ2om" id="1UEcrCk8ndc" role="CpUAK">
-      <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
   </node>
   <node concept="24kQdi" id="1o6EjwiSKwf">
