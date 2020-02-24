@@ -9,7 +9,6 @@
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="fvs5" ref="9ea6119e-d73d-42a8-8d7b-e60e0d7b845d/r:732be188-20bb-49ee-8e19-08268650a3e5(com.mbeddr.mpsutil.margincell.runtime/com.mbeddr.mpsutil.margincell.runtime)" />
@@ -104,7 +103,6 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
-        <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -231,70 +229,32 @@
           <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
         </node>
       </node>
-      <node concept="2OqwBi" id="7lmVLrULCNY" role="33vP2m">
-        <node concept="2OqwBi" id="7lmVLrULCNZ" role="2Oq$k0">
-          <node concept="2OqwBi" id="7lmVLrULCO0" role="2Oq$k0">
-            <node concept="2OqwBi" id="7lmVLrULCO1" role="2Oq$k0">
-              <node concept="2OqwBi" id="7lmVLrULCO2" role="2Oq$k0">
-                <node concept="2OqwBi" id="7lmVLrULCO3" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7lmVLrULCO4" role="2Oq$k0">
-                    <node concept="2YIFZM" id="7lmVLrULCO5" role="2Oq$k0">
-                      <ref role="37wK5l" to="3o3z:~ImmutableList.builder()" resolve="builder" />
-                      <ref role="1Pybhc" to="3o3z:~ImmutableList" resolve="ImmutableList" />
-                      <node concept="3uibUv" id="7lmVLrULCO6" role="3PaCim">
-                        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="7lmVLrULCO7" role="2OqNvi">
-                      <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...)" resolve="add" />
-                      <node concept="10M0yZ" id="7lmVLrULCO8" role="37wK5m">
-                        <ref role="3cqZAo" to="z60i:~Color.BLUE" resolve="BLUE" />
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="7lmVLrULCO9" role="2OqNvi">
-                    <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...)" resolve="add" />
-                    <node concept="10M0yZ" id="7lmVLrULCOa" role="37wK5m">
-                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="z60i:~Color.CYAN" resolve="CYAN" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="7lmVLrULCOb" role="2OqNvi">
-                  <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...)" resolve="add" />
-                  <node concept="10M0yZ" id="7lmVLrULCOc" role="37wK5m">
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="z60i:~Color.GREEN" resolve="GREEN" />
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="7lmVLrULCOd" role="2OqNvi">
-                <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...)" resolve="add" />
-                <node concept="10M0yZ" id="7lmVLrULCOe" role="37wK5m">
-                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  <ref role="3cqZAo" to="z60i:~Color.MAGENTA" resolve="MAGENTA" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="7lmVLrULCOf" role="2OqNvi">
-              <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...)" resolve="add" />
-              <node concept="10M0yZ" id="7lmVLrULCOg" role="37wK5m">
-                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="z60i:~Color.ORANGE" resolve="ORANGE" />
-              </node>
-            </node>
-          </node>
-          <node concept="liA8E" id="7lmVLrULCOh" role="2OqNvi">
-            <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...)" resolve="add" />
-            <node concept="10M0yZ" id="7lmVLrULCOi" role="37wK5m">
-              <ref role="3cqZAo" to="z60i:~Color.PINK" resolve="PINK" />
-              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-            </node>
-          </node>
+      <node concept="2YIFZM" id="6d0zIQxaei9" role="33vP2m">
+        <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+        <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+        <node concept="10M0yZ" id="6d0zIQxaeYM" role="37wK5m">
+          <ref role="3cqZAo" to="z60i:~Color.BLUE" resolve="BLUE" />
+          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
         </node>
-        <node concept="liA8E" id="7lmVLrULCOj" role="2OqNvi">
-          <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.build()" resolve="build" />
+        <node concept="10M0yZ" id="7lmVLrULCOa" role="37wK5m">
+          <ref role="3cqZAo" to="z60i:~Color.CYAN" resolve="CYAN" />
+          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+        </node>
+        <node concept="10M0yZ" id="7lmVLrULCOc" role="37wK5m">
+          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+          <ref role="3cqZAo" to="z60i:~Color.GREEN" resolve="GREEN" />
+        </node>
+        <node concept="10M0yZ" id="7lmVLrULCOe" role="37wK5m">
+          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+          <ref role="3cqZAo" to="z60i:~Color.MAGENTA" resolve="MAGENTA" />
+        </node>
+        <node concept="10M0yZ" id="7lmVLrULCOg" role="37wK5m">
+          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+          <ref role="3cqZAo" to="z60i:~Color.ORANGE" resolve="ORANGE" />
+        </node>
+        <node concept="10M0yZ" id="7lmVLrULCOi" role="37wK5m">
+          <ref role="3cqZAo" to="z60i:~Color.PINK" resolve="PINK" />
+          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
         </node>
       </node>
     </node>
