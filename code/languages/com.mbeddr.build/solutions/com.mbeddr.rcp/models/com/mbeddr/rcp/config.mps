@@ -2285,6 +2285,7 @@
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="6096" />
       <property role="TZNOO" value="1.8" />
+      <property role="2_Ic$B" value="true" />
     </node>
     <node concept="2sgV4H" id="1BPeV_LjXr_" role="1l3spa">
       <ref role="1l3spb" to="ffeo:7pdFgzxlDme" resolve="mpsBuild" />

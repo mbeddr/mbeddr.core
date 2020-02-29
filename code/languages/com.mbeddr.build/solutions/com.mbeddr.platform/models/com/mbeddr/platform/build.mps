@@ -263,6 +263,7 @@
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="2048" />
       <property role="TZNOO" value="1.8" />
+      <property role="2_Ic$B" value="true" />
     </node>
     <node concept="1wNqPr" id="3AVJcIMlF8m" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -328,7 +329,7 @@
         <ref role="m$f5T" node="7Pr7tifzjKW" resolve="com.mbeddr.platform.build" />
       </node>
       <node concept="m$_yC" id="33r_JpZ6rtT" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions.build" />
       </node>
     </node>
     <node concept="m$_wf" id="1g7oDhK0dwB" role="3989C9">
@@ -17666,6 +17667,7 @@
       <property role="2_GNG2" value="2048" />
       <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
+      <property role="2_Ic$B" value="true" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1mPqn" role="3989C9">
       <property role="1wNuhc" value="true" />

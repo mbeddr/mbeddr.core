@@ -159,6 +159,7 @@
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="6096" />
       <property role="TZNOO" value="1.8" />
+      <property role="2_Ic$B" value="true" />
     </node>
     <node concept="m$_wf" id="1YLj_r8S1Mc" role="3989C9">
       <property role="m$_wk" value="yourplugin" />
@@ -284,6 +285,7 @@
       <property role="2_GNG2" value="2048" />
       <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
+      <property role="2_Ic$B" value="true" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1qmcz" role="3989C9">
       <property role="1wNuhc" value="true" />
