@@ -4507,7 +4507,7 @@
         <node concept="3rtmxn" id="3xFG3bj5cRJ" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cRK" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cRL" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+              <property role="3qWCbO" value="com/mbeddr/mpsutil/genericactions/plugin/*.png" />
             </node>
             <node concept="398BVA" id="3xFG3bj5cRM" role="3LXTmr">
               <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
@@ -4515,6 +4515,9 @@
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="3xFG3bj5cRO" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.mpsutil.genericactions" />
+                  <node concept="2Ry0Ak" id="7q6vbwbtq5G" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -13592,9 +13595,6 @@
         <property role="TrG5h" value="com.mbeddr.core.base.pluginSolution" />
         <node concept="3rtmxn" id="3xFG3bj5cX3" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cX4" role="3rtmxm">
-            <node concept="3qWCbU" id="3xFG3bj5cX5" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
             <node concept="398BVA" id="3xFG3bj5cX6" role="3LXTmr">
               <ref role="398BVh" node="$bJ0jguQbM" resolve="mbeddr.core" />
               <node concept="2Ry0Ak" id="3xFG3bj5cX7" role="iGT6I">
@@ -13605,10 +13605,16 @@
                     <property role="2Ry0Am" value="solutions" />
                     <node concept="2Ry0Ak" id="3xFG3bj5cXa" role="2Ry0An">
                       <property role="2Ry0Am" value="pluginSolution" />
+                      <node concept="2Ry0Ak" id="7q6vbwbzS05" role="2Ry0An">
+                        <property role="2Ry0Am" value="source_gen" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="3LWZYx" id="7q6vbwbzSjV" role="3LXTna">
+              <property role="3LWZYw" value="com/mbeddr/core/base/pluginSolution/plugin/*.png" />
             </node>
           </node>
         </node>
