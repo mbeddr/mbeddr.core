@@ -24,7 +24,6 @@
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
     <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
-    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="drih" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.colors(MPS.IDEA/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
@@ -43,8 +42,8 @@
     <import index="65ig" ref="r:9f3f2f34-2a33-43b6-85a0-4c0a87900ae0(com.mbeddr.mpsutil.ccmenu.runtime.api)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="cttk" ref="r:5ff047e0-2953-4750-806a-bdc16824aa89(jetbrains.mps.smodel)" />
-    <import index="p7b3" ref="r:8538f2f4-eda6-442a-9dd4-b04bd1d678aa(com.mbeddr.mpsutil.ccmenu.runtime.chooser)" />
     <import index="j0b4" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.keyboard(MPS.Editor/)" />
+    <import index="1ka" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -314,6 +313,7 @@
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <property id="890797661671409019" name="forceMultiLine" index="3yWfEV" />
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
@@ -5484,145 +5484,122 @@
         <node concept="10P_77" id="2Z2H3pkZiMW" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="2Z2H3pkZiMX" role="3clF47">
-        <node concept="3cpWs8" id="2Z2H3pkZiMZ" role="3cqZAp">
-          <node concept="3cpWsn" id="2Z2H3pkZiMY" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
-            <property role="TrG5h" value="contextOwner" />
-            <node concept="3uibUv" id="2Z2H3pkZiN0" role="1tU5fm">
-              <ref role="3uigEE" to="u78q:~ITypeContextOwner" resolve="ITypeContextOwner" />
+        <node concept="3clFbJ" id="4wDwLRQF7tq" role="3cqZAp">
+          <node concept="3clFbS" id="4wDwLRQF7ts" role="3clFbx">
+            <node concept="3cpWs8" id="4wDwLRRIKKB" role="3cqZAp">
+              <node concept="3cpWsn" id="4wDwLRRIKKC" role="3cpWs9">
+                <property role="TrG5h" value="sessionFlags" />
+                <node concept="3uibUv" id="4wDwLRRICwv" role="1tU5fm">
+                  <ref role="3uigEE" to="1ka:~TypecheckingSession$Flags" resolve="TypecheckingSession.Flags" />
+                </node>
+                <node concept="2OqwBi" id="4wDwLRRIKKD" role="33vP2m">
+                  <node concept="2YIFZM" id="4wDwLRRIKKE" role="2Oq$k0">
+                    <ref role="37wK5l" to="1ka:~TypecheckingSession$Flags.forRoot(org.jetbrains.mps.openapi.model.SNode)" resolve="forRoot" />
+                    <ref role="1Pybhc" to="1ka:~TypecheckingSession$Flags" resolve="TypecheckingSession.Flags" />
+                    <node concept="2OqwBi" id="4wDwLRRIKKF" role="37wK5m">
+                      <node concept="37vLTw" id="4wDwLRRIKKG" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
+                      </node>
+                      <node concept="liA8E" id="4wDwLRRIKKH" role="2OqNvi">
+                        <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode()" resolve="getEditedNode" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4wDwLRRIKKI" role="2OqNvi">
+                    <ref role="37wK5l" to="1ka:~TypecheckingSession$Flags.incremental()" resolve="incremental" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="3K4zz7" id="2Z2H3pkZiN4" role="33vP2m">
-              <node concept="37vLTw" id="2Z2H3pkZiN1" role="3K4Cdx">
-                <ref role="3cqZAo" node="2Z2H3pkZiG5" resolve="myIsSmart" />
-              </node>
-              <node concept="2ShNRf" id="2Z2H3pkZkRm" role="3K4E3e">
-                <node concept="1pGfFk" id="2Z2H3pkZkRn" role="2ShVmc">
-                  <ref role="37wK5l" to="u78q:~NonReusableTypecheckingContextOwner.&lt;init&gt;()" resolve="NonReusableTypecheckingContextOwner" />
+            <node concept="3cpWs6" id="4wDwLRQGe0h" role="3cqZAp">
+              <node concept="2OqwBi" id="4wDwLRQGe0j" role="3cqZAk">
+                <node concept="2YIFZM" id="4wDwLRQJJlM" role="2Oq$k0">
+                  <ref role="37wK5l" to="1ka:~TypecheckingFacade.getFromContext()" resolve="getFromContext" />
+                  <ref role="1Pybhc" to="1ka:~TypecheckingFacade" resolve="TypecheckingFacade" />
                 </node>
-              </node>
-              <node concept="2OqwBi" id="2Z2H3pkZkRr" role="3K4GZi">
-                <node concept="37vLTw" id="2Z2H3pkZkRq" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
-                </node>
-                <node concept="liA8E" id="2Z2H3pkZkRs" role="2OqNvi">
-                  <ref role="37wK5l" to="exr9:~EditorComponent.getTypecheckingContextOwner()" resolve="getTypecheckingContextOwner" />
+                <node concept="liA8E" id="4wDwLRQGe0l" role="2OqNvi">
+                  <ref role="37wK5l" to="1ka:~TypecheckingComputations.computeIsolated(jetbrains.mps.typechecking.TypecheckingSession$Flags,java.util.function.Supplier)" resolve="computeIsolated" />
+                  <node concept="37vLTw" id="4wDwLRRIKKJ" role="37wK5m">
+                    <ref role="3cqZAo" node="4wDwLRRIKKC" resolve="sessionFlags" />
+                  </node>
+                  <node concept="1bVj0M" id="4wDwLRQGe0m" role="37wK5m">
+                    <property role="3yWfEV" value="true" />
+                    <node concept="3clFbS" id="4wDwLRQGe0n" role="1bW5cS">
+                      <node concept="3clFbF" id="4wDwLRQGe0o" role="3cqZAp">
+                        <node concept="2OqwBi" id="4wDwLRQGe0p" role="3clFbG">
+                          <node concept="2OqwBi" id="4wDwLRQGe0q" role="2Oq$k0">
+                            <node concept="37vLTw" id="4wDwLRQGe0r" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4rTrx84J$T0" resolve="myModel" />
+                            </node>
+                            <node concept="liA8E" id="4wDwLRQGe0s" role="2OqNvi">
+                              <ref role="37wK5l" node="4rTrx84JEvn" resolve="getSubstituteInfo" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="4wDwLRQGe0t" role="2OqNvi">
+                            <ref role="37wK5l" to="f4zo:~SubstituteInfo.getSmartMatchingActions(java.lang.String,boolean,jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="getSmartMatchingActions" />
+                            <node concept="37vLTw" id="4wDwLRQGe0u" role="37wK5m">
+                              <ref role="3cqZAo" node="2Z2H3pkZiMT" resolve="pattern" />
+                            </node>
+                            <node concept="37vLTw" id="4wDwLRQGe0v" role="37wK5m">
+                              <ref role="3cqZAo" node="2Z2H3pkZiMV" resolve="strictMatching" />
+                            </node>
+                            <node concept="37vLTw" id="4wDwLRQGe0w" role="37wK5m">
+                              <ref role="3cqZAo" node="2Z2H3pkZiG1" resolve="myContextCell" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3cpWs6" id="2Z2H3pkZiN5" role="3cqZAp">
-          <node concept="2OqwBi" id="2Z2H3pkZiN6" role="3cqZAk">
-            <node concept="2YIFZM" id="2Z2H3pkZkRv" role="2Oq$k0">
-              <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance()" resolve="getInstance" />
-              <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
-            </node>
-            <node concept="liA8E" id="2Z2H3pkZiN8" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~TypeContextManager.runTypeCheckingComputation(jetbrains.mps.typesystem.inference.ITypeContextOwner,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.ITypechecking$Computation)" resolve="runTypeCheckingComputation" />
-              <node concept="37vLTw" id="2Z2H3pkZiN9" role="37wK5m">
-                <ref role="3cqZAo" node="2Z2H3pkZiMY" resolve="contextOwner" />
-              </node>
-              <node concept="2OqwBi" id="2Z2H3pkZkRz" role="37wK5m">
-                <node concept="37vLTw" id="2Z2H3pkZkRy" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
-                </node>
-                <node concept="liA8E" id="2Z2H3pkZkR$" role="2OqNvi">
-                  <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode()" resolve="getEditedNode" />
-                </node>
-              </node>
-              <node concept="2ShNRf" id="2Z2H3pkZiNb" role="37wK5m">
-                <node concept="YeOm9" id="2Z2H3pkZiNc" role="2ShVmc">
-                  <node concept="1Y3b0j" id="2Z2H3pkZiNd" role="YeSDq">
-                    <property role="2bfB8j" value="true" />
-                    <property role="1sVAO0" value="false" />
-                    <property role="1EXbeo" value="false" />
-                    <ref role="1Y3XeK" to="u78q:~ITypechecking$Computation" resolve="ITypechecking.Computation" />
-                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                    <node concept="3Tm1VV" id="2Z2H3pkZiNe" role="1B3o_S" />
-                    <node concept="3clFb_" id="2Z2H3pkZiNf" role="jymVt">
-                      <property role="TrG5h" value="compute" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="2AHcQZ" id="2Z2H3pkZiNg" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+          <node concept="37vLTw" id="4wDwLRQFgsH" role="3clFbw">
+            <ref role="3cqZAo" node="2Z2H3pkZiG5" resolve="myIsSmart" />
+          </node>
+          <node concept="9aQIb" id="4wDwLRQGfac" role="9aQIa">
+            <node concept="3clFbS" id="4wDwLRQGfad" role="9aQI4">
+              <node concept="3cpWs6" id="4wDwLRQGt1c" role="3cqZAp">
+                <node concept="2OqwBi" id="4wDwLRQGFEQ" role="3cqZAk">
+                  <node concept="2YIFZM" id="4wDwLRQJJlL" role="2Oq$k0">
+                    <ref role="37wK5l" to="1ka:~TypecheckingFacade.getFromContext()" resolve="getFromContext" />
+                    <ref role="1Pybhc" to="1ka:~TypecheckingFacade" resolve="TypecheckingFacade" />
+                  </node>
+                  <node concept="liA8E" id="4wDwLRQGTYb" role="2OqNvi">
+                    <ref role="37wK5l" to="1ka:~TypecheckingComputations.computeWithSession(jetbrains.mps.typechecking.TypecheckingSession,java.util.function.Supplier)" resolve="computeWithSession" />
+                    <node concept="2OqwBi" id="4wDwLRQHevN" role="37wK5m">
+                      <node concept="37vLTw" id="4wDwLRQH88z" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
                       </node>
-                      <node concept="37vLTG" id="2Z2H3pkZiNh" role="3clF46">
-                        <property role="TrG5h" value="context" />
-                        <property role="3TUv4t" value="false" />
-                        <node concept="3uibUv" id="2Z2H3pkZiNi" role="1tU5fm">
-                          <ref role="3uigEE" to="u78q:~TypeCheckingContext" resolve="TypeCheckingContext" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="2Z2H3pkZiNj" role="3clF47">
-                        <node concept="3clFbJ" id="2Z2H3pkZiNk" role="3cqZAp">
-                          <node concept="37vLTw" id="2Z2H3pkZiNl" role="3clFbw">
-                            <ref role="3cqZAo" node="2Z2H3pkZiG5" resolve="myIsSmart" />
-                          </node>
-                          <node concept="9aQIb" id="2Z2H3pkZiNt" role="9aQIa">
-                            <node concept="3clFbS" id="2Z2H3pkZiNu" role="9aQI4">
-                              <node concept="3cpWs6" id="2Z2H3pkZiNv" role="3cqZAp">
-                                <node concept="2OqwBi" id="2Z2H3pkZkRI" role="3cqZAk">
-                                  <node concept="2OqwBi" id="4rTrx84Kk20" role="2Oq$k0">
-                                    <node concept="37vLTw" id="4rTrx84Kh7G" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="4rTrx84J$T0" resolve="myModel" />
-                                    </node>
-                                    <node concept="liA8E" id="4rTrx84Km_5" role="2OqNvi">
-                                      <ref role="37wK5l" node="4rTrx84JEvn" resolve="getSubstituteInfo" />
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="2Z2H3pkZkRJ" role="2OqNvi">
-                                    <ref role="37wK5l" to="f4zo:~SubstituteInfo.getMatchingActions(java.lang.String,boolean)" resolve="getMatchingActions" />
-                                    <node concept="37vLTw" id="2Z2H3pkZiNx" role="37wK5m">
-                                      <ref role="3cqZAo" node="2Z2H3pkZiMT" resolve="pattern" />
-                                    </node>
-                                    <node concept="37vLTw" id="2Z2H3pkZiNy" role="37wK5m">
-                                      <ref role="3cqZAo" node="2Z2H3pkZiMV" resolve="strictMatching" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbS" id="2Z2H3pkZiNn" role="3clFbx">
-                            <node concept="3cpWs6" id="2Z2H3pkZiNo" role="3cqZAp">
-                              <node concept="2OqwBi" id="2Z2H3pkZkRT" role="3cqZAk">
-                                <node concept="2OqwBi" id="4rTrx84K8OY" role="2Oq$k0">
-                                  <node concept="37vLTw" id="4rTrx84K4XZ" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="4rTrx84J$T0" resolve="myModel" />
-                                  </node>
-                                  <node concept="liA8E" id="4rTrx84KbhS" role="2OqNvi">
-                                    <ref role="37wK5l" node="4rTrx84JEvn" resolve="getSubstituteInfo" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="2Z2H3pkZkRU" role="2OqNvi">
-                                  <ref role="37wK5l" to="f4zo:~SubstituteInfo.getSmartMatchingActions(java.lang.String,boolean,jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="getSmartMatchingActions" />
-                                  <node concept="37vLTw" id="2Z2H3pkZiNq" role="37wK5m">
-                                    <ref role="3cqZAo" node="2Z2H3pkZiMT" resolve="pattern" />
-                                  </node>
-                                  <node concept="37vLTw" id="2Z2H3pkZiNr" role="37wK5m">
-                                    <ref role="3cqZAo" node="2Z2H3pkZiMV" resolve="strictMatching" />
-                                  </node>
-                                  <node concept="37vLTw" id="2Z2H3pkZiNs" role="37wK5m">
-                                    <ref role="3cqZAo" node="2Z2H3pkZiG1" resolve="myContextCell" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3Tm1VV" id="2Z2H3pkZiNz" role="1B3o_S" />
-                      <node concept="3uibUv" id="2Z2H3pkZiN$" role="3clF45">
-                        <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                        <node concept="3uibUv" id="2Z2H3pkZiN_" role="11_B2D">
-                          <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
-                        </node>
+                      <node concept="liA8E" id="4wDwLRQHtjF" role="2OqNvi">
+                        <ref role="37wK5l" to="exr9:~EditorComponent.getTypecheckingSession()" resolve="getTypecheckingSession" />
                       </node>
                     </node>
-                    <node concept="3uibUv" id="2Z2H3pkZiNA" role="2Ghqu4">
-                      <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                      <node concept="3uibUv" id="2Z2H3pkZiNB" role="11_B2D">
-                        <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
+                    <node concept="1bVj0M" id="4wDwLRQHLD_" role="37wK5m">
+                      <property role="3yWfEV" value="true" />
+                      <node concept="3clFbS" id="4wDwLRQHLDB" role="1bW5cS">
+                        <node concept="3clFbF" id="4wDwLRQI$tr" role="3cqZAp">
+                          <node concept="2OqwBi" id="2Z2H3pkZkRI" role="3clFbG">
+                            <node concept="2OqwBi" id="4rTrx84Kk20" role="2Oq$k0">
+                              <node concept="37vLTw" id="4rTrx84Kh7G" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4rTrx84J$T0" resolve="myModel" />
+                              </node>
+                              <node concept="liA8E" id="4rTrx84Km_5" role="2OqNvi">
+                                <ref role="37wK5l" node="4rTrx84JEvn" resolve="getSubstituteInfo" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="2Z2H3pkZkRJ" role="2OqNvi">
+                              <ref role="37wK5l" to="f4zo:~SubstituteInfo.getMatchingActions(java.lang.String,boolean)" resolve="getMatchingActions" />
+                              <node concept="37vLTw" id="2Z2H3pkZiNx" role="37wK5m">
+                                <ref role="3cqZAo" node="2Z2H3pkZiMT" resolve="pattern" />
+                              </node>
+                              <node concept="37vLTw" id="2Z2H3pkZiNy" role="37wK5m">
+                                <ref role="3cqZAo" node="2Z2H3pkZiMV" resolve="strictMatching" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
