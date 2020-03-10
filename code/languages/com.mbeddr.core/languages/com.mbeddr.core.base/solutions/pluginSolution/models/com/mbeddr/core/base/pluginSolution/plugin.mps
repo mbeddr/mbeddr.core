@@ -22239,23 +22239,34 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="xCk$O6nIr8" role="3cqZAp">
+          <node concept="3cpWsn" id="xCk$O6nIr9" role="3cpWs9">
+            <property role="TrG5h" value="croppedImage" />
+            <node concept="3uibUv" id="xCk$O6nHON" role="1tU5fm">
+              <ref role="3uigEE" to="jan3:~BufferedImage" resolve="BufferedImage" />
+            </node>
+            <node concept="2OqwBi" id="xCk$O6nIra" role="33vP2m">
+              <node concept="37vLTw" id="xCk$O6nIrb" role="2Oq$k0">
+                <ref role="3cqZAo" node="7SQqK0Fdk59" resolve="t" />
+              </node>
+              <node concept="liA8E" id="xCk$O6nIrc" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:1yFmGPnLcNR" resolve="getCroppedImage" />
+                <node concept="37vLTw" id="xCk$O6nIrd" role="37wK5m">
+                  <ref role="3cqZAo" node="7SQqK0Fdk1W" resolve="image" />
+                </node>
+                <node concept="3cmrfG" id="xCk$O6nIre" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7SQqK0Fdk5d" role="3cqZAp">
           <node concept="2YIFZM" id="7SQqK0Fdk5e" role="3clFbG">
             <ref role="37wK5l" to="oqcp:~ImageIO.write(java.awt.image.RenderedImage,java.lang.String,java.io.File)" resolve="write" />
             <ref role="1Pybhc" to="oqcp:~ImageIO" resolve="ImageIO" />
-            <node concept="2OqwBi" id="7SQqK0Fo3js" role="37wK5m">
-              <node concept="37vLTw" id="7SQqK0Fo3jt" role="2Oq$k0">
-                <ref role="3cqZAo" node="7SQqK0Fdk59" resolve="t" />
-              </node>
-              <node concept="liA8E" id="7SQqK0Fo3ju" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:1yFmGPnLcNR" resolve="getCroppedImage" />
-                <node concept="37vLTw" id="7SQqK0Fo3jv" role="37wK5m">
-                  <ref role="3cqZAo" node="7SQqK0Fdk1W" resolve="image" />
-                </node>
-                <node concept="3cmrfG" id="7SQqK0Fo3jw" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="xCk$O6nIrf" role="37wK5m">
+              <ref role="3cqZAo" node="xCk$O6nIr9" resolve="croppedImage" />
             </node>
             <node concept="Xl_RD" id="7SQqK0Fdk5k" role="37wK5m">
               <property role="Xl_RC" value="png" />
@@ -22270,8 +22281,15 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs6" id="xCk$O6nKov" role="3cqZAp">
+          <node concept="37vLTw" id="xCk$O6nM1b" role="3cqZAk">
+            <ref role="3cqZAo" node="xCk$O6nIr9" resolve="croppedImage" />
+          </node>
+        </node>
       </node>
-      <node concept="3cqZAl" id="7SQqK0FdieT" role="3clF45" />
+      <node concept="3uibUv" id="xCk$O6nH2H" role="3clF45">
+        <ref role="3uigEE" to="z60i:~Image" resolve="Image" />
+      </node>
       <node concept="3Tm1VV" id="7SQqK0FdieU" role="1B3o_S" />
       <node concept="3uibUv" id="7SQqK0FeJHM" role="Sfmx6">
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
