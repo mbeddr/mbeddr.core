@@ -1272,6 +1272,9 @@
       <node concept="m$_yC" id="1g7oDhKa4YK" role="m$_yJ">
         <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
       </node>
+      <node concept="m$_yC" id="1cC_ZeCXoII" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
+      </node>
       <node concept="3_J27D" id="1g7oDhK9QTT" role="m_cZH">
         <node concept="3Mxwew" id="1g7oDhK9QTU" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.actionsfilter.lang" />
@@ -12160,6 +12163,11 @@
         <node concept="1SiIV0" id="6tFU$uW7JQ6" role="3bR37C">
           <node concept="3bR9La" id="6tFU$uW7JQ7" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1cC_ZeCXo1o" role="3bR37C">
+          <node concept="3bR9La" id="1cC_ZeCXo1p" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:5sovPIfS$nd" resolve="jetbrains.mps.ide.mpsdevkit" />
           </node>
         </node>
       </node>

@@ -41,6 +41,9 @@
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
     <import index="4hrd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.vfs(MPS.Platform/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="zdfu" ref="cac2fef0-41a6-4fcd-923f-f893d536b2ab/java:jetbrains.mps.ide.devkit.actions(jetbrains.mps.ide.mpsdevkit/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="qq04" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.actions(MPS.Workbench/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4805,8 +4808,9 @@
               <node concept="2ShNRf" id="5FJiYrlCA_z" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCE41" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="5FJiYrlCE7p" role="37wK5m">
-                    <property role="Xl_RC" value="MainMenu" />
+                  <node concept="10M0yZ" id="7SUKPfy4G4o" role="37wK5m">
+                    <ref role="3cqZAo" to="qkt:~IdeActions.GROUP_MAIN_MENU" resolve="GROUP_MAIN_MENU" />
+                    <ref role="1PxDUh" to="qkt:~IdeActions" resolve="IdeActions" />
                   </node>
                   <node concept="Xl_RD" id="5FJiYrlCE7q" role="37wK5m">
                     <property role="Xl_RC" value="Main Menu" />
@@ -4825,8 +4829,9 @@
               <node concept="2ShNRf" id="5FJiYrlCEaJ" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCEaK" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="5FJiYrlCFQN" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.EditorPopup_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4A_8" role="37wK5m">
+                    <ref role="3cqZAo" to="qq03:~MPSActions.EDITOR_POPUP_GROUP" resolve="EDITOR_POPUP_GROUP" />
+                    <ref role="1PxDUh" to="qq03:~MPSActions" resolve="MPSActions" />
                   </node>
                   <node concept="Xl_RD" id="5FJiYrlCFQO" role="37wK5m">
                     <property role="Xl_RC" value="Editor Context Menu" />
@@ -4845,8 +4850,9 @@
               <node concept="2ShNRf" id="5FJiYrlCEoh" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCEoi" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNf3" role="37wK5m">
-                    <property role="Xl_RC" value="MainToolBar" />
+                  <node concept="10M0yZ" id="7SUKPfy4Gba" role="37wK5m">
+                    <ref role="3cqZAo" to="qkt:~IdeActions.GROUP_MAIN_TOOLBAR" resolve="GROUP_MAIN_TOOLBAR" />
+                    <ref role="1PxDUh" to="qkt:~IdeActions" resolve="IdeActions" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNf4" role="37wK5m">
                     <property role="Xl_RC" value="Main Toolbar" />
@@ -4865,8 +4871,9 @@
               <node concept="2ShNRf" id="5FJiYrlCEzb" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCEzc" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNfa" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.NodeActions_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4Ehz" role="37wK5m">
+                    <ref role="1PxDUh" to="qq04:~NodeActions_ActionGroup" resolve="NodeActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~NodeActions_ActionGroup.ID" resolve="ID" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfb" role="37wK5m">
                     <property role="Xl_RC" value="Node" />
@@ -4885,8 +4892,9 @@
               <node concept="2ShNRf" id="5FJiYrlCEIg" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCEIh" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNfh" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.ModelActions_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4ESL" role="37wK5m">
+                    <ref role="3cqZAo" to="qq04:~ModelActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~ModelActions_ActionGroup" resolve="ModelActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfi" role="37wK5m">
                     <property role="Xl_RC" value="Model" />
@@ -4905,8 +4913,9 @@
               <node concept="2ShNRf" id="5FJiYrlCEOO" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCEOP" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNfo" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.LanguageActions_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4FgH" role="37wK5m">
+                    <ref role="3cqZAo" to="qq04:~LanguageActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~LanguageActions_ActionGroup" resolve="LanguageActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfp" role="37wK5m">
                     <property role="Xl_RC" value="Language" />
@@ -4925,13 +4934,121 @@
               <node concept="2ShNRf" id="5FJiYrlCEVE" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCEVF" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNfv" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.GeneratorActions_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4FD4" role="37wK5m">
+                    <ref role="3cqZAo" to="qq04:~GeneratorActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~GeneratorActions_ActionGroup" resolve="GeneratorActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfw" role="37wK5m">
                     <property role="Xl_RC" value="Generator" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6_xeB7oXnWU" role="3cqZAp">
+          <node concept="1PaTwC" id="6_xeB7oXnWV" role="3ndbpf">
+            <node concept="3oM_SD" id="6_xeB7oXnWX" role="1PaTwD">
+              <property role="3oM_SC" value="FIXME:" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXooT" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXo4n" role="1PaTwD">
+              <property role="3oM_SC" value="MPS" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXo6u" role="1PaTwD">
+              <property role="3oM_SC" value="2019.2.4" />
+            </node>
+            <node concept="3oM_SD" id="7knwKBVubK_" role="1PaTwD">
+              <property role="3oM_SC" value="referencing" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXoeg" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXoeV" role="1PaTwD">
+              <property role="3oM_SC" value="action" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXofl" role="1PaTwD">
+              <property role="3oM_SC" value="group" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXozA" role="1PaTwD">
+              <property role="3oM_SC" value="causes" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXogB" role="1PaTwD">
+              <property role="3oM_SC" value="broken" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXoh5" role="1PaTwD">
+              <property role="3oM_SC" value="ref" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXoi6" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXo$K" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXo_j" role="1PaTwD">
+              <property role="3oM_SC" value="generated" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXoA7" role="1PaTwD">
+              <property role="3oM_SC" value="code" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXoiI" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXoAQ" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXojV" role="1PaTwD">
+              <property role="3oM_SC" value="ant" />
+            </node>
+            <node concept="3oM_SD" id="6_xeB7oXok_" role="1PaTwD">
+              <property role="3oM_SC" value="build" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="1N2UgSJHHvT" role="3ndbpf">
+            <node concept="3oM_SD" id="1N2UgSJHHvS" role="1PaTwD">
+              <property role="3oM_SC" value="see" />
+            </node>
+            <node concept="3oM_SD" id="7knwKBVuf09" role="1PaTwD">
+              <property role="3oM_SC" value="https://youtrack.jetbrains.com/issue/MPS-31865" />
+            </node>
+            <node concept="3oM_SD" id="7knwKBVubLb" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="1N2UgSJMvWX" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="1N2UgSJMvFx" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="1N2UgSJMv$q" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="1N2UgSJMvwK" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="1N2UgSJMuX_" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="1N2UgSJMvt7" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="1N2UgSJHHzW" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="6_xeB7oXnzc" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="6_xeB7oXmVH" role="8Wnug">
+            <node concept="3cpWsn" id="6_xeB7oXmVI" role="3cpWs9">
+              <property role="TrG5h" value="id" />
+              <node concept="17QB3L" id="6_xeB7oXneC" role="1tU5fm" />
+              <node concept="10M0yZ" id="6_xeB7oXmVJ" role="33vP2m">
+                <ref role="1PxDUh" to="zdfu:~RuntimeFolderActions_ActionGroup" resolve="RuntimeFolderActions_ActionGroup" />
+                <ref role="3cqZAo" to="zdfu:~RuntimeFolderActions_ActionGroup.ID" resolve="ID" />
               </node>
             </node>
           </node>
@@ -4945,8 +5062,8 @@
               <node concept="2ShNRf" id="5FJiYrlCF2M" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCF2N" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNfA" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.RuntimeFolderActions_ActionGroup" />
+                  <node concept="Xl_RD" id="6_xeB7oXnv$" role="37wK5m">
+                    <property role="Xl_RC" value="jetbrains.mps.ide.devkit.actions.RuntimeFolderActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfB" role="37wK5m">
                     <property role="Xl_RC" value="Runtime" />
@@ -4965,8 +5082,9 @@
               <node concept="2ShNRf" id="5FJiYrlCFac" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCFad" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNfH" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.SolutionActions_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4JfU" role="37wK5m">
+                    <ref role="3cqZAo" to="qq04:~SolutionActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~SolutionActions_ActionGroup" resolve="SolutionActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfI" role="37wK5m">
                     <property role="Xl_RC" value="Solution" />
@@ -4985,8 +5103,9 @@
               <node concept="2ShNRf" id="5FJiYrlCFhS" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCFhT" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNfO" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.DevkitActions_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4JCr" role="37wK5m">
+                    <ref role="3cqZAo" to="qq04:~DevkitActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~DevkitActions_ActionGroup" resolve="DevkitActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfP" role="37wK5m">
                     <property role="Xl_RC" value="DevKit" />
@@ -5005,8 +5124,9 @@
               <node concept="2ShNRf" id="5FJiYrlCFpQ" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCFpR" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNfV" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.TransientModulesActions_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4Kn5" role="37wK5m">
+                    <ref role="3cqZAo" to="qq04:~TransientModulesActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~TransientModulesActions_ActionGroup" resolve="TransientModulesActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfW" role="37wK5m">
                     <property role="Xl_RC" value="Transient Modules" />
@@ -5025,8 +5145,9 @@
               <node concept="2ShNRf" id="5FJiYrlCFy6" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCFy7" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNg2" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.NamespaceActions_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4NsJ" role="37wK5m">
+                    <ref role="3cqZAo" to="qq04:~NamespaceActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~NamespaceActions_ActionGroup" resolve="NamespaceActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNg3" role="37wK5m">
                     <property role="Xl_RC" value="Namespace Folder" />
@@ -5045,8 +5166,9 @@
               <node concept="2ShNRf" id="5FJiYrlCHFN" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCHFO" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNg9" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.PackageActions_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4NFc" role="37wK5m">
+                    <ref role="3cqZAo" to="qq04:~PackageActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~PackageActions_ActionGroup" resolve="PackageActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNga" role="37wK5m">
                     <property role="Xl_RC" value="Virtual Folder" />
@@ -5065,8 +5187,9 @@
               <node concept="2ShNRf" id="5FJiYrlCHU8" role="25WWJ7">
                 <node concept="1pGfFk" id="5FJiYrlCHU9" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
-                  <node concept="Xl_RD" id="3NH93czhNgg" role="37wK5m">
-                    <property role="Xl_RC" value="jetbrains.mps.ide.actions.ProjectActions_ActionGroup" />
+                  <node concept="10M0yZ" id="7SUKPfy4NTO" role="37wK5m">
+                    <ref role="3cqZAo" to="qq04:~ProjectActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~ProjectActions_ActionGroup" resolve="ProjectActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNgh" role="37wK5m">
                     <property role="Xl_RC" value="Project" />
