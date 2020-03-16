@@ -126,7 +126,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -583,24 +582,12 @@
                       </node>
                     </node>
                     <node concept="3clFbF" id="2AZbPfOHYGp" role="3cqZAp">
-                      <node concept="1Wc70l" id="2AZbPfOJ_X5" role="3clFbG">
-                        <node concept="3fqX7Q" id="2AZbPfOJA4m" role="3uHU7w">
-                          <node concept="2ZW3vV" id="2AZbPfOJAqn" role="3fr31v">
-                            <node concept="3uibUv" id="2AZbPfOJAxd" role="2ZW6by">
-                              <ref role="3uigEE" to="z1c3:~StubSolution" resolve="StubSolution" />
-                            </node>
-                            <node concept="37vLTw" id="2AZbPfOJAbf" role="2ZW6bz">
-                              <ref role="3cqZAo" node="2AZbPfOJ_K6" resolve="module" />
-                            </node>
-                          </node>
+                      <node concept="2ZW3vV" id="2AZbPfOI0MT" role="3clFbG">
+                        <node concept="3uibUv" id="2AZbPfOI1IV" role="2ZW6by">
+                          <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
                         </node>
-                        <node concept="2ZW3vV" id="2AZbPfOI0MT" role="3uHU7B">
-                          <node concept="3uibUv" id="2AZbPfOI1IV" role="2ZW6by">
-                            <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
-                          </node>
-                          <node concept="37vLTw" id="2AZbPfOJ_Kb" role="2ZW6bz">
-                            <ref role="3cqZAo" node="2AZbPfOJ_K6" resolve="module" />
-                          </node>
+                        <node concept="37vLTw" id="2AZbPfOJ_Kb" role="2ZW6bz">
+                          <ref role="3cqZAo" node="2AZbPfOJ_K6" resolve="module" />
                         </node>
                       </node>
                     </node>
