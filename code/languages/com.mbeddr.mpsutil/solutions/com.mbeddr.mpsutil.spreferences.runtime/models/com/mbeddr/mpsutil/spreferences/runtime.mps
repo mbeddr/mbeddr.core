@@ -4595,7 +4595,7 @@
                   <ref role="3cqZAo" node="2Wc_BLz6vCK" resolve="solution" />
                 </node>
                 <node concept="liA8E" id="2Wc_BLz6hdi" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Solution.updateModelsSet()" resolve="updateModelsSet" />
+                  <ref role="37wK5l" to="z1c3:~AbstractModule.updateModelsSet()" resolve="updateModelsSet" />
                 </node>
               </node>
             </node>
