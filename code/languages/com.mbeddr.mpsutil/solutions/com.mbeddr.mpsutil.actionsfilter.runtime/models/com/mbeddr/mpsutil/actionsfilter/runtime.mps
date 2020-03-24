@@ -41,9 +41,9 @@
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
     <import index="4hrd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.vfs(MPS.Platform/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
-    <import index="qq03" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.actions(MPS.Workbench/)" />
-    <import index="zdfu" ref="cac2fef0-41a6-4fcd-923f-f893d536b2ab/java:jetbrains.mps.ide.devkit.actions(jetbrains.mps.ide.mpsdevkit/)" />
-    <import index="qq04" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="qq04" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.actions(MPS.Workbench/)" />
+    <import index="zdfu" ref="cac2fef0-41a6-4fcd-923f-f893d536b2ab/java:jetbrains.mps.ide.devkit.actions(jetbrains.mps.ide.mpsdevkit/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4831,8 +4831,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCEaK" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4A_8" role="37wK5m">
-                    <ref role="3cqZAo" to="qq04:~MPSActions.EDITOR_POPUP_GROUP" resolve="EDITOR_POPUP_GROUP" />
-                    <ref role="1PxDUh" to="qq04:~MPSActions" resolve="MPSActions" />
+                    <ref role="3cqZAo" to="qq03:~MPSActions.EDITOR_POPUP_GROUP" resolve="EDITOR_POPUP_GROUP" />
+                    <ref role="1PxDUh" to="qq03:~MPSActions" resolve="MPSActions" />
                   </node>
                   <node concept="Xl_RD" id="5FJiYrlCFQO" role="37wK5m">
                     <property role="Xl_RC" value="Editor Context Menu" />
@@ -4873,8 +4873,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCEzc" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4Ehz" role="37wK5m">
-                    <ref role="1PxDUh" to="qq03:~NodeActions_ActionGroup" resolve="NodeActions_ActionGroup" />
-                    <ref role="3cqZAo" to="qq03:~NodeActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~NodeActions_ActionGroup" resolve="NodeActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~NodeActions_ActionGroup.ID" resolve="ID" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfb" role="37wK5m">
                     <property role="Xl_RC" value="Node" />
@@ -4894,8 +4894,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCEIh" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4ESL" role="37wK5m">
-                    <ref role="3cqZAo" to="qq03:~ModelActions_ActionGroup.ID" resolve="ID" />
-                    <ref role="1PxDUh" to="qq03:~ModelActions_ActionGroup" resolve="ModelActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~ModelActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~ModelActions_ActionGroup" resolve="ModelActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfi" role="37wK5m">
                     <property role="Xl_RC" value="Model" />
@@ -4915,8 +4915,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCEOP" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4FgH" role="37wK5m">
-                    <ref role="3cqZAo" to="qq03:~LanguageActions_ActionGroup.ID" resolve="ID" />
-                    <ref role="1PxDUh" to="qq03:~LanguageActions_ActionGroup" resolve="LanguageActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~LanguageActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~LanguageActions_ActionGroup" resolve="LanguageActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfp" role="37wK5m">
                     <property role="Xl_RC" value="Language" />
@@ -4936,8 +4936,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCEVF" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4FD4" role="37wK5m">
-                    <ref role="3cqZAo" to="qq03:~GeneratorActions_ActionGroup.ID" resolve="ID" />
-                    <ref role="1PxDUh" to="qq03:~GeneratorActions_ActionGroup" resolve="GeneratorActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~GeneratorActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~GeneratorActions_ActionGroup" resolve="GeneratorActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfw" role="37wK5m">
                     <property role="Xl_RC" value="Generator" />
@@ -5040,6 +5040,20 @@
             </node>
           </node>
         </node>
+        <node concept="1X3_iC" id="6_xeB7oXnzc" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="6_xeB7oXmVH" role="8Wnug">
+            <node concept="3cpWsn" id="6_xeB7oXmVI" role="3cpWs9">
+              <property role="TrG5h" value="id" />
+              <node concept="17QB3L" id="6_xeB7oXneC" role="1tU5fm" />
+              <node concept="10M0yZ" id="6_xeB7oXmVJ" role="33vP2m">
+                <ref role="1PxDUh" to="zdfu:~RuntimeFolderActions_ActionGroup" resolve="RuntimeFolderActions_ActionGroup" />
+                <ref role="3cqZAo" to="zdfu:~RuntimeFolderActions_ActionGroup.ID" resolve="ID" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5FJiYrlCF2I" role="3cqZAp">
           <node concept="2OqwBi" id="5FJiYrlCF2J" role="3clFbG">
             <node concept="37vLTw" id="5FJiYrlCF2K" role="2Oq$k0">
@@ -5070,8 +5084,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCFad" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4JfU" role="37wK5m">
-                    <ref role="3cqZAo" to="qq03:~SolutionActions_ActionGroup.ID" resolve="ID" />
-                    <ref role="1PxDUh" to="qq03:~SolutionActions_ActionGroup" resolve="SolutionActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~SolutionActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~SolutionActions_ActionGroup" resolve="SolutionActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfI" role="37wK5m">
                     <property role="Xl_RC" value="Solution" />
@@ -5091,8 +5105,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCFhT" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4JCr" role="37wK5m">
-                    <ref role="3cqZAo" to="qq03:~DevkitActions_ActionGroup.ID" resolve="ID" />
-                    <ref role="1PxDUh" to="qq03:~DevkitActions_ActionGroup" resolve="DevkitActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~DevkitActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~DevkitActions_ActionGroup" resolve="DevkitActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfP" role="37wK5m">
                     <property role="Xl_RC" value="DevKit" />
@@ -5112,8 +5126,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCFpR" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4Kn5" role="37wK5m">
-                    <ref role="3cqZAo" to="qq03:~TransientModulesActions_ActionGroup.ID" resolve="ID" />
-                    <ref role="1PxDUh" to="qq03:~TransientModulesActions_ActionGroup" resolve="TransientModulesActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~TransientModulesActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~TransientModulesActions_ActionGroup" resolve="TransientModulesActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNfW" role="37wK5m">
                     <property role="Xl_RC" value="Transient Modules" />
@@ -5133,8 +5147,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCFy7" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4NsJ" role="37wK5m">
-                    <ref role="3cqZAo" to="qq03:~NamespaceActions_ActionGroup.ID" resolve="ID" />
-                    <ref role="1PxDUh" to="qq03:~NamespaceActions_ActionGroup" resolve="NamespaceActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~NamespaceActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~NamespaceActions_ActionGroup" resolve="NamespaceActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNg3" role="37wK5m">
                     <property role="Xl_RC" value="Namespace Folder" />
@@ -5154,8 +5168,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCHFO" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4NFc" role="37wK5m">
-                    <ref role="3cqZAo" to="qq03:~PackageActions_ActionGroup.ID" resolve="ID" />
-                    <ref role="1PxDUh" to="qq03:~PackageActions_ActionGroup" resolve="PackageActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~PackageActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~PackageActions_ActionGroup" resolve="PackageActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNga" role="37wK5m">
                     <property role="Xl_RC" value="Virtual Folder" />
@@ -5175,8 +5189,8 @@
                 <node concept="1pGfFk" id="5FJiYrlCHU9" role="2ShVmc">
                   <ref role="37wK5l" node="5FJiYrlCcTL" resolve="ActionRootGroup" />
                   <node concept="10M0yZ" id="7SUKPfy4NTO" role="37wK5m">
-                    <ref role="3cqZAo" to="qq03:~ProjectActions_ActionGroup.ID" resolve="ID" />
-                    <ref role="1PxDUh" to="qq03:~ProjectActions_ActionGroup" resolve="ProjectActions_ActionGroup" />
+                    <ref role="3cqZAo" to="qq04:~ProjectActions_ActionGroup.ID" resolve="ID" />
+                    <ref role="1PxDUh" to="qq04:~ProjectActions_ActionGroup" resolve="ProjectActions_ActionGroup" />
                   </node>
                   <node concept="Xl_RD" id="3NH93czhNgh" role="37wK5m">
                     <property role="Xl_RC" value="Project" />
@@ -5189,20 +5203,6 @@
         <node concept="3cpWs6" id="5FJiYrlCJlI" role="3cqZAp">
           <node concept="37vLTw" id="5FJiYrlCJlK" role="3cqZAk">
             <ref role="3cqZAo" node="5FJiYrlCzWY" resolve="result" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6_xeB7oXnzc" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="6_xeB7oXmVH" role="8Wnug">
-            <node concept="3cpWsn" id="6_xeB7oXmVI" role="3cpWs9">
-              <property role="TrG5h" value="id" />
-              <node concept="17QB3L" id="6_xeB7oXneC" role="1tU5fm" />
-              <node concept="10M0yZ" id="6_xeB7oXmVJ" role="33vP2m">
-                <ref role="1PxDUh" to="zdfu:~RuntimeFolderActions_ActionGroup" resolve="RuntimeFolderActions_ActionGroup" />
-                <ref role="3cqZAo" to="zdfu:~RuntimeFolderActions_ActionGroup.ID" resolve="ID" />
-              </node>
-            </node>
           </node>
         </node>
       </node>
