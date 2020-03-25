@@ -111,7 +111,7 @@
       <concept id="1188220165133" name="jetbrains.mps.baseLanguage.structure.ArrayLiteral" flags="nn" index="2BsdOp">
         <child id="1188220173759" name="item" index="2BsfMF" />
       </concept>
-      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
+      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryFinallyStatement" flags="nn" index="2GUZhq">
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
         <child id="1164903700860" name="catchClause" index="TEXxN" />
@@ -57525,8 +57525,8 @@
               <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
               <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
             </node>
-            <node concept="liA8E" id="$zo7noTqSt" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.isInsideCommand()" resolve="isInsideCommand" />
+            <node concept="liA8E" id="351TenG5HUb" role="2OqNvi">
+              <ref role="37wK5l" to="w1kc:~ModelAccess.isCommandAction()" resolve="isCommandAction" />
             </node>
           </node>
           <node concept="9aQIb" id="$zo7noTqSx" role="9aQIa">
