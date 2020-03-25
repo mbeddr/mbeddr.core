@@ -3,33 +3,70 @@
   <persistence version="9" />
   <languages>
     <use id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage" version="0" />
+    <use id="1e00450a-fc72-4f66-9571-30e5e083c1fa" name="com.mbeddr.doc.aspect.exampleLanguage.extended" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="1e00450a-fc72-4f66-9571-30e5e083c1fa" name="com.mbeddr.doc.aspect.exampleLanguage.extended">
+      <concept id="9004279853425732280" name="com.mbeddr.doc.aspect.exampleLanguage.extended.structure.UndirectedEdge" flags="ng" index="2lk0DD" />
+    </language>
     <language id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage">
-      <concept id="7952933245487812686" name="com.mbeddr.doc.aspect.exampleLanguage.structure.DocumentedChild1" flags="ng" index="lV6VC">
-        <property id="1587141976994883238" name="prop1" index="4SCYu" />
-        <property id="7810506636293284363" name="prop2" index="8sXLG" />
+      <concept id="86363842539034081" name="com.mbeddr.doc.aspect.exampleLanguage.structure.Node" flags="ng" index="aMcqk" />
+      <concept id="2065683815623914867" name="com.mbeddr.doc.aspect.exampleLanguage.structure.ColoredNode" flags="ng" index="1W8VOf">
+        <property id="2065683815623914868" name="color" index="1W8VO8" />
       </concept>
-      <concept id="7952933245487813087" name="com.mbeddr.doc.aspect.exampleLanguage.structure.DocumentedChild2" flags="ng" index="lV6XT" />
-      <concept id="1130241639305082012" name="com.mbeddr.doc.aspect.exampleLanguage.structure.DocumentedChildWithRef" flags="ng" index="1izhxk">
-        <reference id="1130241639305082013" name="refChild" index="1izhxl" />
+      <concept id="2065683815623615655" name="com.mbeddr.doc.aspect.exampleLanguage.structure.Edge" flags="ng" index="1WbyNr">
+        <reference id="2065683815623615656" name="source" index="1WbyNk" />
+        <reference id="2065683815623615658" name="target" index="1WbyNm" />
       </concept>
-      <concept id="4971378430054307133" name="com.mbeddr.doc.aspect.exampleLanguage.structure.AnotherChild" flags="ng" index="3N$ftE" />
-      <concept id="533596600669108075" name="com.mbeddr.doc.aspect.exampleLanguage.structure.SampleDocumentedConcept" flags="ng" index="3VmO0G">
-        <child id="7952933245487812878" name="children" index="lV6YC" />
+      <concept id="2065683815623615751" name="com.mbeddr.doc.aspect.exampleLanguage.structure.Graph" flags="ng" index="1WbyPV">
+        <child id="2065683815623615752" name="nodes" index="1WbyPO" />
+        <child id="2065683815623615754" name="edges" index="1WbyPQ" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
-  <node concept="3VmO0G" id="5gWJwbZmr7g">
-    <node concept="lV6VC" id="6TuvEpVGBn3" role="lV6YC">
-      <property role="4SCYu" value="some value" />
-      <property role="8sXLG" value="43" />
+  <node concept="1WbyPV" id="1MEM7Lwynlm">
+    <property role="TrG5h" value="SimpleGraph" />
+    <node concept="1WbyNr" id="1MEM7Lwynl_" role="1WbyPQ">
+      <ref role="1WbyNk" node="1MEM7Lwynln" resolve="N1" />
+      <ref role="1WbyNm" node="1MEM7Lwynlp" resolve="N2" />
     </node>
-    <node concept="lV6XT" id="6TuvEpVGBn8" role="lV6YC" />
-    <node concept="3N$ftE" id="4jXS_uRrj2E" role="lV6YC" />
-    <node concept="1izhxk" id="YJrcxt8DjZ" role="lV6YC">
-      <ref role="1izhxl" node="6TuvEpVGBn3" />
+    <node concept="1WbyNr" id="1MEM7LwynlB" role="1WbyPQ">
+      <ref role="1WbyNk" node="1MEM7Lwynls" resolve="N3" />
+      <ref role="1WbyNm" node="1MEM7Lwynlw" resolve="N4" />
+    </node>
+    <node concept="1WbyNr" id="1MEM7LwynlE" role="1WbyPQ">
+      <ref role="1WbyNk" node="1MEM7Lwynlw" resolve="N4" />
+      <ref role="1WbyNm" node="1MEM7Lwynln" resolve="N1" />
+    </node>
+    <node concept="1WbyNr" id="1MEM7LwynlI" role="1WbyPQ">
+      <ref role="1WbyNk" node="1MEM7Lwynlp" resolve="N2" />
+      <ref role="1WbyNm" node="1MEM7Lwynls" resolve="N3" />
+    </node>
+    <node concept="2lk0DD" id="7NPCd7DD$6r" role="1WbyPQ">
+      <ref role="1WbyNk" node="1MEM7Lwynlp" resolve="N2" />
+      <ref role="1WbyNm" node="1MEM7Lwynlp" resolve="N2" />
+    </node>
+    <node concept="aMcqk" id="1MEM7Lwynln" role="1WbyPO">
+      <property role="TrG5h" value="N1" />
+    </node>
+    <node concept="aMcqk" id="1MEM7Lwynlp" role="1WbyPO">
+      <property role="TrG5h" value="N2" />
+    </node>
+    <node concept="aMcqk" id="1MEM7Lwynls" role="1WbyPO">
+      <property role="TrG5h" value="N3" />
+    </node>
+    <node concept="aMcqk" id="1MEM7Lwynlw" role="1WbyPO">
+      <property role="TrG5h" value="N4" />
+    </node>
+    <node concept="1W8VOf" id="1MEM7LwyyPS" role="1WbyPO">
+      <property role="TrG5h" value="N5" />
+      <property role="1W8VO8" value="1" />
     </node>
   </node>
 </model>
