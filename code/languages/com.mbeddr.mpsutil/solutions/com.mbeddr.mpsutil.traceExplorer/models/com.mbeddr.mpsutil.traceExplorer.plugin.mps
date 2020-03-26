@@ -239,7 +239,6 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -8460,31 +8459,6 @@
             </node>
           </node>
           <node concept="3clFbS" id="6YEc$xLiw3w" role="2LFqv$">
-            <node concept="3clFbJ" id="5O42Tc3$Ly0" role="3cqZAp">
-              <node concept="3clFbS" id="5O42Tc3$Ly2" role="3clFbx">
-                <node concept="3clFbF" id="5O42Tc3$NrL" role="3cqZAp">
-                  <node concept="2OqwBi" id="5O42Tc3$NrM" role="3clFbG">
-                    <node concept="37vLTw" id="5O42Tc3$NrO" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6YEc$xLiw3h" resolve="sb" />
-                    </node>
-                    <node concept="liA8E" id="5O42Tc3$NrR" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
-                      <node concept="Xl_RD" id="5O42Tc3$NrS" role="37wK5m">
-                        <property role="Xl_RC" value="," />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3eOSWO" id="5O42Tc3$NeO" role="3clFbw">
-                <node concept="3cmrfG" id="5O42Tc3$Njf" role="3uHU7w">
-                  <property role="3cmrfH" value="0" />
-                </node>
-                <node concept="37vLTw" id="5O42Tc3$MyL" role="3uHU7B">
-                  <ref role="3cqZAo" node="6YEc$xLiw3m" resolve="i" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbJ" id="6YEc$xLiw3x" role="3cqZAp">
               <node concept="2OqwBi" id="6YEc$xLiw3y" role="3clFbw">
                 <node concept="37vLTw" id="6YEc$xLiw3z" role="2Oq$k0">
@@ -8498,6 +8472,36 @@
                 </node>
               </node>
               <node concept="3clFbS" id="6YEc$xLiw3A" role="3clFbx">
+                <node concept="3clFbJ" id="3QGq4Warq58" role="3cqZAp">
+                  <node concept="3clFbS" id="3QGq4Warq5a" role="3clFbx">
+                    <node concept="3clFbF" id="5O42Tc3$NrL" role="3cqZAp">
+                      <node concept="2OqwBi" id="5O42Tc3$NrM" role="3clFbG">
+                        <node concept="37vLTw" id="5O42Tc3$NrO" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6YEc$xLiw3h" resolve="sb" />
+                        </node>
+                        <node concept="liA8E" id="5O42Tc3$NrR" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
+                          <node concept="Xl_RD" id="5O42Tc3$NrS" role="37wK5m">
+                            <property role="Xl_RC" value="," />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3y3z36" id="3QGq4WartO3" role="3clFbw">
+                    <node concept="3cmrfG" id="3QGq4WarukS" role="3uHU7w">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="2OqwBi" id="3QGq4WarrcO" role="3uHU7B">
+                      <node concept="37vLTw" id="3QGq4WarqLb" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6YEc$xLiw3h" resolve="sb" />
+                      </node>
+                      <node concept="liA8E" id="3QGq4Warsr2" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~AbstractStringBuilder.length()" resolve="length" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="6YEc$xLiw3B" role="3cqZAp">
                   <node concept="2OqwBi" id="6YEc$xLiw3D" role="3clFbG">
                     <node concept="37vLTw" id="6YEc$xLiw3E" role="2Oq$k0">
