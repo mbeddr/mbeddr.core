@@ -2,13 +2,13 @@
 <model ref="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="4457ca2e-a7c9-4452-9578-e94701cc4942" name="com.mbeddr.core.debug.util" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1643,10 +1643,6 @@
                           </node>
                           <node concept="2OqwBi" id="1q1yZ9Ql2yj" role="33vP2m">
                             <node concept="2OqwBi" id="1q1yZ9Ql2yk" role="2Oq$k0">
-                              <node concept="2YIFZM" id="1q1yZ9Ql2yl" role="2Oq$k0">
-                                <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
-                                <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance()" resolve="getInstance" />
-                              </node>
                               <node concept="liA8E" id="1q1yZ9Ql2ym" role="2OqNvi">
                                 <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel)" resolve="get" />
                                 <node concept="2OqwBi" id="1q1yZ9Ql2yn" role="37wK5m">
@@ -1658,6 +1654,11 @@
                                   <node concept="liA8E" id="1q1yZ9Ql2yq" role="2OqNvi">
                                     <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
                                   </node>
+                                </node>
+                              </node>
+                              <node concept="2ShNRf" id="4ntWkOTernU" role="2Oq$k0">
+                                <node concept="1pGfFk" id="4ntWkOTetpP" role="2ShVmc">
+                                  <ref role="37wK5l" to="fwk:~TraceInfoCache.&lt;init&gt;()" resolve="TraceInfoCache" />
                                 </node>
                               </node>
                             </node>
@@ -1951,10 +1952,6 @@
                           </node>
                           <node concept="2OqwBi" id="2JD$NjcdLA_" role="33vP2m">
                             <node concept="2OqwBi" id="2JD$NjcdLzY" role="2Oq$k0">
-                              <node concept="2YIFZM" id="2JD$NjcdLzD" role="2Oq$k0">
-                                <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
-                                <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance()" resolve="getInstance" />
-                              </node>
                               <node concept="liA8E" id="2JD$NjcdL$4" role="2OqNvi">
                                 <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel)" resolve="get" />
                                 <node concept="2OqwBi" id="2s7Bv57IBF$" role="37wK5m">
@@ -1966,6 +1963,11 @@
                                   <node concept="liA8E" id="2s7Bv57IBFF" role="2OqNvi">
                                     <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
                                   </node>
+                                </node>
+                              </node>
+                              <node concept="2ShNRf" id="4ntWkOTetJs" role="2Oq$k0">
+                                <node concept="1pGfFk" id="4ntWkOTetJt" role="2ShVmc">
+                                  <ref role="37wK5l" to="fwk:~TraceInfoCache.&lt;init&gt;()" resolve="TraceInfoCache" />
                                 </node>
                               </node>
                             </node>
