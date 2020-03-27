@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9c9eecd0-a4b4-4af6-bdbb-d7ad6681eddb(test.com.mbeddr.mpsutil.ecoreimporter.allInOne)" doNotGenerate="true">
+<model ref="r:9c9eecd0-a4b4-4af6-bdbb-d7ad6681eddb(test.com.mbeddr.mpsutil.ecoreimporter.allInOne)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore" version="-1" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -18,6 +18,9 @@
       <concept id="2995083582054930500" name="com.mbeddr.mpsutil.ecore.structure.EChar" flags="ng" index="trrjy" />
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
+        <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
@@ -47,7 +50,6 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
-        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -127,15 +129,9 @@
         <node concept="trrjg" id="7FLq2$JzdKO" role="tqAd9" />
       </node>
     </node>
-    <node concept="1TJgyi" id="7FLq2$JzdKP" role="1TKVEl">
-      <property role="IQ2nx" value="8858976468115184693" />
-      <property role="TrG5h" value="testEnumAttr" />
-      <ref role="AX2Wp" node="7FLq2$JzdL2" resolve="enumTest1" />
-    </node>
     <node concept="1TJgyj" id="7FLq2$JzdL9" role="1TKVEi">
       <property role="IQ2ns" value="8858976468115184713" />
       <property role="20kJfa" value="testRef" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="7FLq2$JzdL5" resolve="testReference" />
     </node>
     <node concept="PrWs8" id="7FLq2$JzdLa" role="PzmwI">
@@ -146,6 +142,17 @@
     </node>
     <node concept="PrWs8" id="7FLq2$JzdLc" role="PzmwI">
       <ref role="PrY4T" node="7FLq2$JzdLd" resolve="i_superClass2" />
+    </node>
+    <node concept="1TJgyi" id="17qUVvSZm9u" role="1TKVEl">
+      <property role="TrG5h" value="testEnumAttr" />
+      <property role="IQ2nx" value="8858976468115184693" />
+      <node concept="3l_iC" id="17qUVvSZm9v" role="lGtFl">
+        <node concept="1TJgyi" id="7FLq2$JzdKP" role="3l_iP">
+          <property role="IQ2nx" value="8858976468115184693" />
+          <property role="TrG5h" value="testEnumAttr" />
+          <ref role="AX2Wp" node="7FLq2$JzdL2" resolve="enumTest1" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="7FLq2$JzdKQ">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1193,7 +1193,7 @@
         <node concept="3clFbJ" id="4QhMqW3m4sa" role="3cqZAp">
           <node concept="3clFbS" id="4QhMqW3m4sd" role="3clFbx">
             <node concept="RRSsy" id="42VTAcDfnEs" role="3cqZAp">
-              <property role="RRSoG" value="error" />
+              <property role="RRSoG" value="gZ5fh_4/error" />
               <node concept="3cpWs3" id="4QhMqW3o5QB" role="RRSoy">
                 <node concept="37vLTw" id="4QhMqW3o5X9" role="3uHU7w">
                   <ref role="3cqZAo" node="4QhMqW3k5MM" resolve="containingBigCell" />
@@ -1271,7 +1271,7 @@
     <property role="TrG5h" value="deleteDoc1" />
     <ref role="1h_SK9" to="s9ok:3QkagoxiNHp" resolve="BLDoc" />
     <node concept="1hA7zw" id="3QkagoxjNmV" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="3QkagoxjNmW" role="1hA7z_">
         <node concept="3clFbS" id="3QkagoxjNmX" role="2VODD2">
           <node concept="3clFbF" id="3QkagoxjNn5" role="3cqZAp">
@@ -1284,7 +1284,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="3QkagoxjNL4" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="3QkagoxjNL5" role="1hA7z_">
         <node concept="3clFbS" id="3QkagoxjNL6" role="2VODD2">
           <node concept="3clFbF" id="3QkagoxjNL7" role="3cqZAp">

@@ -247,7 +247,6 @@
         <child id="3620245844559757630" name="children" index="uF3dk" />
       </concept>
       <concept id="87867697803479856" name="com.mbeddr.core.debug.blext.structure.AddNodesFromSubtreeStatement" flags="ng" index="2zXI04">
-        <property id="87867697806781712" name="steppingCommand" index="2yego$" />
         <child id="87867697804210672" name="subtree" index="2zStF4" />
       </concept>
       <concept id="4985013377831073945" name="com.mbeddr.core.debug.blext.structure.InjectDebuggingInformationDebugger" flags="ng" index="B7EJo">
@@ -2534,7 +2533,6 @@
       <node concept="3Tm1VV" id="WMIrWR4iyr" role="1B3o_S" />
       <node concept="3clFbS" id="WMIrWR4iys" role="3clF47">
         <node concept="2zXI04" id="4SaNizNozx" role="3cqZAp">
-          <property role="2yego$" value="step-into" />
           <node concept="2OqwBi" id="4SaNizNoFC" role="2zStF4">
             <node concept="13iPFW" id="4SaNizNoBb" role="2Oq$k0" />
             <node concept="3TrEf2" id="4SaNizNpaL" role="2OqNvi">
@@ -4708,7 +4706,7 @@
                       </node>
                     </node>
                     <node concept="1L7Vhn" id="38XGACIm4xO" role="1x$ftD">
-                      <property role="1L6fTB" value="argument" />
+                      <property role="1L6fTB" value="79czkGCIzXU/argument" />
                     </node>
                   </node>
                 </node>
@@ -4771,7 +4769,7 @@
           </node>
         </node>
         <node concept="2QERvH" id="4UIScla_5t2" role="3cqZAp">
-          <property role="3dKHWn" value="argument" />
+          <property role="3dKHWn" value="79czkGCIzXU/argument" />
           <node concept="2OqwBi" id="5hYHEwZIxe8" role="2QERvC">
             <node concept="13iPFW" id="5hYHEwZIwIN" role="2Oq$k0" />
             <node concept="2qgKlT" id="5hYHEwZIya1" role="2OqNvi">
@@ -4780,8 +4778,8 @@
           </node>
         </node>
         <node concept="2QERvH" id="39uR9NmP6wa" role="3cqZAp">
-          <property role="3dKHWn" value="argument" />
-          <property role="qSxYb" value="1" />
+          <property role="3dKHWn" value="79czkGCIzXU/argument" />
+          <property role="qSxYb" value="lZU3wvBvuK/1" />
           <node concept="Xl_RD" id="39uR9NmP6wb" role="2QERvC">
             <property role="Xl_RC" value="a" />
           </node>
@@ -5636,7 +5634,7 @@
       <node concept="3Tm1VV" id="1yKRj6BOjKb" role="1B3o_S" />
       <node concept="3clFbS" id="1yKRj6BOjKc" role="3clF47">
         <node concept="2QERvH" id="1yKRj6BOjKw" role="3cqZAp">
-          <property role="qSxYb" value="1" />
+          <property role="qSxYb" value="lZU3wvBvuK/1" />
           <node concept="Xl_RD" id="1yKRj6BOjKy" role="2QERvC">
             <property role="Xl_RC" value="old" />
           </node>

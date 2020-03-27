@@ -2,7 +2,7 @@
 <model ref="r:da3b94e8-b082-482a-8b65-e659c50b6828(com.mbeddr.analyses.cbmc.components.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -33,9 +33,7 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
-        <property id="1186403771423" name="style" index="Vbekb" />
-      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -198,9 +196,7 @@
         </node>
         <node concept="3F0ifn" id="3SmHfhJ98rZ" role="3EZMnx">
           <property role="3F0ifm" value="         the component implementation is correct." />
-          <node concept="Vb9p2" id="3SmHfhJ9KSR" role="3F10Kt">
-            <property role="Vbekb" value="PLAIN" />
-          </node>
+          <node concept="Vb9p2" id="3SmHfhJ9KSR" role="3F10Kt" />
         </node>
         <node concept="l2Vlx" id="3SmHfhJ98s0" role="2iSdaV" />
       </node>

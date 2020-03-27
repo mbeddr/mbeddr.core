@@ -2,10 +2,10 @@
 <model ref="r:4c91ec0a-ccf6-434e-850e-de62db9cd901(com.mbeddr.mpsutil.postprocessGeneratedFiles.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="9ee3d5d2-5388-460b-b1dc-d98f27db499b" name="com.mbeddr.mpsutil.postprocessGeneratedFiles" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
@@ -250,7 +250,7 @@
     <node concept="15KeUm" id="6JOuUGYl4rP" role="15LFul">
       <property role="TrG5h" value="postprocessGeneratedFiles" />
       <node concept="15KeVb" id="6JOuUGYlp1M" role="15LFui">
-        <property role="3HPxAp" value="AFTER" />
+        <property role="3HPxAp" value="7fB872ucjBA/AFTER" />
         <ref role="15KeV8" to="tpcq:5L5h3brvDHA" resolve="textGen" />
       </node>
       <node concept="15KeVb" id="6JOuUGYlp1X" role="15LFui">
@@ -260,7 +260,7 @@
         <node concept="ElOhj" id="6JOuUGYl4rR" role="2aLE7H">
           <node concept="3clFbS" id="6JOuUGYl4rS" role="2VODD2">
             <node concept="RRSsy" id="42VTAcDfnY0" role="3cqZAp">
-              <property role="RRSoG" value="info" />
+              <property role="RRSoG" value="h1akgim/info" />
               <node concept="3cpWs3" id="5pm8$Zewq2w" role="RRSoy">
                 <node concept="Xl_RD" id="5pm8$Zewq2O" role="3uHU7w">
                   <property role="Xl_RC" value="" />

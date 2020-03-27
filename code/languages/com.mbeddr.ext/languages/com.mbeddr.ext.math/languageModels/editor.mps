@@ -4,7 +4,7 @@
   <languages>
     <use id="766348f7-6a67-4b85-9323-384840132299" name="de.itemis.mps.editor.math" version="0" />
     <use id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -831,10 +831,10 @@
     <node concept="1Qtc8_" id="3cUcim$6pZ3" role="IW6Ez">
       <node concept="3cWJ9i" id="3cUcim$6pZ4" role="1Qtc8$">
         <node concept="CtIbL" id="3cUcim$6pZ5" role="CtIbM">
-          <property role="CtIbK" value="LEFT" />
+          <property role="CtIbK" value="1A4kJjlVmVt/LEFT" />
         </node>
         <node concept="CtIbL" id="3cUcim$6pZ6" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="mvV$s" id="3cUcim$6pZ7" role="1Qtc8A">
@@ -855,7 +855,7 @@
     <node concept="1Qtc8_" id="3cUcim$6pYt" role="IW6Ez">
       <node concept="3cWJ9i" id="3cUcim$6pYr" role="1Qtc8$">
         <node concept="CtIbL" id="3cUcim$6pYs" role="CtIbM">
-          <property role="CtIbK" value="LEFT" />
+          <property role="CtIbK" value="1A4kJjlVmVt/LEFT" />
         </node>
       </node>
       <node concept="IWgqT" id="3cUcim$6pYv" role="1Qtc8A">
@@ -916,7 +916,7 @@
                 <node concept="1OKiuA" id="3cUcim$6pYW" role="2OqNvi">
                   <node concept="1Q80Hx" id="3cUcim$6pYX" role="lBI5i" />
                   <node concept="2B6iha" id="3cUcim$6pYY" role="lGT1i">
-                    <property role="1lyBwo" value="mostRelevant" />
+                    <property role="1lyBwo" value="59pBc0SIIVt/mostRelevant" />
                   </node>
                   <node concept="3cmrfG" id="3cUcim$6pYZ" role="3dN3m$">
                     <property role="3cmrfH" value="-1" />
@@ -938,7 +938,7 @@
     <node concept="1Qtc8_" id="3cUcim$6pZc" role="IW6Ez">
       <node concept="3cWJ9i" id="3cUcim$6pZa" role="1Qtc8$">
         <node concept="CtIbL" id="3cUcim$6pZb" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="IWgqT" id="3cUcim$6pZe" role="1Qtc8A">
@@ -1001,7 +1001,7 @@
                 <node concept="1OKiuA" id="3cUcim$6pZG" role="2OqNvi">
                   <node concept="1Q80Hx" id="3cUcim$6pZH" role="lBI5i" />
                   <node concept="2B6iha" id="3cUcim$6pZI" role="lGT1i">
-                    <property role="1lyBwo" value="mostRelevant" />
+                    <property role="1lyBwo" value="59pBc0SIIVt/mostRelevant" />
                   </node>
                   <node concept="3cmrfG" id="3cUcim$6pZJ" role="3dN3m$">
                     <property role="3cmrfH" value="-1" />

@@ -113,12 +113,10 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
-        <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
@@ -130,6 +128,9 @@
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
         <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
+      </concept>
+      <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
+        <child id="4278635856200826394" name="path" index="1BurEY" />
       </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
         <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
@@ -349,8 +350,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.debugger.cdt" />
         <property role="3LESm3" value="1c78eae5-6fae-4ae8-a6f2-8a34ea9ab06f" />
-        <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAuv4B" role="3LF7KH">
           <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
           <node concept="2Ry0Ak" id="7eF9rfAuv4C" role="iGT6I">
@@ -365,19 +365,16 @@
         </node>
         <node concept="1SiIV0" id="7eF9rfAuv4H" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv4I" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
         <node concept="1SiIV0" id="7eF9rfAuv4N" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv4O" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
         <node concept="1SiIV0" id="6BHziVI1Ff_" role="3bR37C">
           <node concept="3bR9La" id="6BHziVI1FfA" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:6YaWssNXVWy" resolve="Eclipse.Debugger" />
           </node>
         </node>
@@ -402,8 +399,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.debugger.core" />
         <property role="3LESm3" value="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e" />
-        <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAuv54" role="3LF7KH">
           <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
           <node concept="2Ry0Ak" id="7eF9rfAuv55" role="iGT6I">
@@ -418,67 +414,56 @@
         </node>
         <node concept="1SiIV0" id="7eF9rfAuv5a" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv5b" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
         <node concept="1SiIV0" id="7eF9rfAuv5c" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv5d" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
         <node concept="1SiIV0" id="7eF9rfAuv5e" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv5f" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
         <node concept="1SiIV0" id="7eF9rfAuv5g" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv5h" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
         <node concept="1SiIV0" id="7eF9rfAuv5i" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv5j" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L0C" resolve="collections.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="7eF9rfAuv5o" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv5p" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7gdoTYdo$et" resolve="jetbrains.mps.debugger.api.api" />
           </node>
         </node>
         <node concept="1SiIV0" id="7eF9rfAuv5s" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv5t" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmpnDc" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmpnDd" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:7uZw0yZ43K1" resolve="com.mbeddr.core.debug" />
           </node>
         </node>
         <node concept="1SiIV0" id="5jdSgR7XyMh" role="3bR37C">
           <node concept="3bR9La" id="5jdSgR7XyMi" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:5jdSgR7UUMt" resolve="com.mbeddr.core.debugger.gdb" />
           </node>
         </node>
         <node concept="1SiIV0" id="6BHziVI1FfT" role="3bR37C">
           <node concept="3bR9La" id="6BHziVI1FfU" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:6YaWssNXVWy" resolve="Eclipse.Debugger" />
           </node>
         </node>
         <node concept="1SiIV0" id="6eTFad7eMDK" role="3bR37C">
           <node concept="3bR9La" id="6eTFad7eMDL" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
           </node>
         </node>
@@ -500,14 +485,31 @@
         </node>
         <node concept="1SiIV0" id="5AvhxT48mB_" role="3bR37C">
           <node concept="3bR9La" id="5AvhxT48mBA" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1xb0AuwMYDt" resolve="Hamcrest" />
           </node>
         </node>
         <node concept="1SiIV0" id="6xaPNaK93ok" role="3bR37C">
           <node concept="3bR9La" id="6xaPNaK93ol" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:6xaPNaK8EVQ" resolve="org.mockito" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3bjKkRQa52f" role="3bR37C">
+          <node concept="1BurEX" id="3bjKkRQa52g" role="1SiIV1">
+            <node concept="398BVA" id="3bjKkRQa51U" role="1BurEY">
+              <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
+              <node concept="2Ry0Ak" id="3bjKkRQa51V" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="3bjKkRQa51W" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.debugger.core" />
+                  <node concept="2Ry0Ak" id="3bjKkRQa51X" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="3bjKkRQa51Y" role="2Ry0An">
+                      <property role="2Ry0Am" value="easymock-3.1.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

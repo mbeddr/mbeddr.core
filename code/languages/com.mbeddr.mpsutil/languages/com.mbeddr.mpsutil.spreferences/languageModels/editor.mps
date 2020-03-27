@@ -4,7 +4,7 @@
   <languages>
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -220,7 +220,7 @@
         <node concept="3F0ifn" id="5FuuJYqk4f2" role="3EZMnx">
           <property role="3F0ifm" value="SPreference Page" />
           <node concept="VQ3r3" id="5f$4wDDuowj" role="3F10Kt">
-            <property role="2USNnj" value="2" />
+            <property role="2USNnj" value="gtbM8PH/underlined" />
           </node>
           <node concept="VPM3Z" id="5f$4wDDuyf5" role="3F10Kt">
             <property role="VOm3f" value="false" />
@@ -349,10 +349,10 @@
               </node>
             </node>
             <node concept="VechU" id="5f$4wDDuXhp" role="3F10Kt">
-              <property role="Vb096" value="gray" />
+              <property role="Vb096" value="fLJRk5_/gray" />
             </node>
             <node concept="Vb9p2" id="2bnm$tmiCeg" role="3F10Kt">
-              <property role="Vbekb" value="ITALIC" />
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
             </node>
             <node concept="VPxyj" id="5f$4wDDvjfa" role="3F10Kt">
               <property role="VOm3f" value="false" />
@@ -400,11 +400,9 @@
             <node concept="3F0ifn" id="2bnm$tmjcXm" role="1QoVPY">
               <property role="3F0ifm" value="user" />
               <node concept="VechU" id="2bnm$tmjdaU" role="3F10Kt">
-                <property role="Vb096" value="gray" />
+                <property role="Vb096" value="fLJRk5_/gray" />
               </node>
-              <node concept="Vb9p2" id="2bnm$tmjdcL" role="3F10Kt">
-                <property role="Vbekb" value="PLAIN" />
-              </node>
+              <node concept="Vb9p2" id="2bnm$tmjdcL" role="3F10Kt" />
             </node>
             <node concept="2aMyGU" id="2bnm$tmhl3r" role="1QoS34">
               <property role="2aYyza" value="user" />
@@ -521,10 +519,10 @@
               </node>
             </node>
             <node concept="VechU" id="2bnm$tmioIQ" role="3F10Kt">
-              <property role="Vb096" value="gray" />
+              <property role="Vb096" value="fLJRk5_/gray" />
             </node>
             <node concept="Vb9p2" id="2bnm$tmiBPZ" role="3F10Kt">
-              <property role="Vbekb" value="ITALIC" />
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
             </node>
             <node concept="VPxyj" id="2bnm$tmipYA" role="3F10Kt">
               <property role="VOm3f" value="false" />
@@ -687,7 +685,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <node concept="Vb9p2" id="6yXlhvg7_7w" role="3F10Kt" />
         <node concept="VechU" id="6yXlhvg7R52" role="3F10Kt">
-          <property role="Vb096" value="blue" />
+          <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F0ifn" id="4RGMQ_4mI$u" role="3EZMnx">

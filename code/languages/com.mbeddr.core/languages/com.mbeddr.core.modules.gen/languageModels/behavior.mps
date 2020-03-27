@@ -152,11 +152,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -171,9 +168,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -228,6 +223,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1450,8 +1453,22 @@
       <node concept="3Tm1VV" id="ReXz9EbQD5" role="1B3o_S" />
       <node concept="3clFbS" id="ReXz9EbQD6" role="3clF47">
         <node concept="3SKdUt" id="ReXz9EbQDb" role="3cqZAp">
-          <node concept="3SKdUq" id="ReXz9EbQDc" role="3SKWNk">
-            <property role="3SKdUp" value="calculate all transitively imported headers" />
+          <node concept="1PaTwC" id="13p6s1wtixZ" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtiy0" role="1PaTwD">
+              <property role="3oM_SC" value="calculate" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiy1" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiy2" role="1PaTwD">
+              <property role="3oM_SC" value="transitively" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiy3" role="1PaTwD">
+              <property role="3oM_SC" value="imported" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiy4" role="1PaTwD">
+              <property role="3oM_SC" value="headers" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="ReXz9EbQDf" role="3cqZAp">
@@ -2286,8 +2303,25 @@
         </node>
         <node concept="3clFbH" id="6Dsu9vjKMbe" role="3cqZAp" />
         <node concept="3SKdUt" id="2d4Z3BU2Su9" role="3cqZAp">
-          <node concept="3SKdUq" id="2d4Z3BU2T6A" role="3SKWNk">
-            <property role="3SKdUp" value="TODO chache disables due to https://github.com/mbeddr/mbeddr.core/issues/791" />
+          <node concept="1PaTwC" id="13p6s1wtiy5" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtiy6" role="1PaTwD">
+              <property role="3oM_SC" value="TODO" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiy7" role="1PaTwD">
+              <property role="3oM_SC" value="chache" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiy8" role="1PaTwD">
+              <property role="3oM_SC" value="disables" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiy9" role="1PaTwD">
+              <property role="3oM_SC" value="due" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiya" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiyb" role="1PaTwD">
+              <property role="3oM_SC" value="https://github.com/mbeddr/mbeddr.core/issues/791" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="2d4Z3BU7W60" role="3cqZAp">
@@ -2953,7 +2987,7 @@
                 <ref role="2pJxaS" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
                 <node concept="2pJxcG" id="JcUDbjgn0y" role="2pJxcM">
                   <ref role="2pJxcJ" to="c4fa:41KMvfcgiZ1" resolve="isInvisible" />
-                  <node concept="3clFbT" id="JcUDbjgn5f" role="2pJxcZ">
+                  <node concept="3clFbT" id="JcUDbjgn5f" role="28ntcv">
                     <property role="3clFbU" value="true" />
                   </node>
                 </node>
@@ -2974,7 +3008,7 @@
                 <ref role="2pJxaS" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
                 <node concept="2pJxcG" id="JcUDbjgn9x" role="2pJxcM">
                   <ref role="2pJxcJ" to="c4fa:41KMvfcgiZ1" resolve="isInvisible" />
-                  <node concept="3clFbT" id="JcUDbjgn9y" role="2pJxcZ">
+                  <node concept="3clFbT" id="JcUDbjgn9y" role="28ntcv">
                     <property role="3clFbU" value="true" />
                   </node>
                 </node>

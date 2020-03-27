@@ -52,7 +52,6 @@
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
-      <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -109,9 +108,6 @@
             <ref role="4TqVk" to="hauh:1MEM7LwynlO" resolve="color" />
           </node>
         </node>
-      </node>
-      <node concept="1_1sxE" id="1MEM7LwyEgh" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
       </node>
       <node concept="3n9NSn" id="3TrpzyP_FtB" role="lGtFl">
         <ref role="3nadW_" to="hauh:1MEM7LwynlN" resolve="ColoredNode" />

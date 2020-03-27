@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -502,7 +502,7 @@
     <node concept="14StLt" id="7RiewQ_kc2v" role="V601i">
       <property role="TrG5h" value="typedef" />
       <node concept="Vb9p2" id="7RiewQ_kc2y" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
     </node>
   </node>
@@ -729,7 +729,7 @@
       </node>
       <node concept="1kIj98" id="49FqtR5XkHv" role="3EZMnx">
         <node concept="3F1sOY" id="56ytRgsLg$D" role="1kIj9b">
-          <property role="1cu_pB" value="2" />
+          <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
           <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
         </node>
       </node>
@@ -881,7 +881,6 @@
         </node>
       </node>
       <node concept="PMmxH" id="5Hxjapwgufs" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
@@ -892,7 +891,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhQNo" resolve="StructUnion" />
         <node concept="Vb9p2" id="5v_KyvOh$PY" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="6a5SBPfZfTb" role="3EZMnx">
@@ -1028,7 +1027,7 @@
     <property role="TrG5h" value="deleteEnum2Int" />
     <ref role="1h_SK9" to="clbe:5aaBiRoxDVn" resolve="Enum2Int" />
     <node concept="1hA7zw" id="3uE$8gOwjbe" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="3uE$8gOwjbf" role="1hA7z_">
         <node concept="3clFbS" id="3uE$8gOwjbg" role="2VODD2">
           <node concept="3clFbF" id="3uE$8gOwjbh" role="3cqZAp">
@@ -1104,7 +1103,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3P6mq8CeVxN" role="3EZMnx">
-        <property role="1cu_pB" value="2" />
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
         <ref role="1NtTu8" to="clbe:1frRXyHUCOf" resolve="targetType" />
       </node>
       <node concept="3F0ifn" id="3P6mq8CeVxP" role="3EZMnx">
@@ -1198,7 +1197,6 @@
     <ref role="1XX52x" to="clbe:6a5SBPfXGBP" resolve="SUDeclaration" />
     <node concept="3EZMnI" id="7ya9dte4f3y" role="2wV5jI">
       <node concept="PMmxH" id="7ya9dte4f3B" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
@@ -1268,7 +1266,6 @@
         </node>
       </node>
       <node concept="PMmxH" id="6QawkaHMacZ" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
@@ -1318,7 +1315,6 @@
     <ref role="1XX52x" to="clbe:7ya9dte0lCz" resolve="AnonymousUnionDeclaration" />
     <node concept="3EZMnI" id="2UJM6DuMJ_8" role="2wV5jI">
       <node concept="PMmxH" id="2UJM6DuMJ_9" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
@@ -1368,10 +1364,10 @@
     <node concept="1Qtc8_" id="2cvVnUv6BxM" role="IW6Ez">
       <node concept="3cWJ9i" id="2cvVnUv6BxN" role="1Qtc8$">
         <node concept="CtIbL" id="2cvVnUv6BxO" role="CtIbM">
-          <property role="CtIbK" value="LEFT" />
+          <property role="CtIbK" value="1A4kJjlVmVt/LEFT" />
         </node>
         <node concept="CtIbL" id="2cvVnUv6BxP" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="L$LW2" id="2cvVnUv6BxQ" role="1Qtc8A" />
@@ -1379,10 +1375,10 @@
     <node concept="1Qtc8_" id="2cvVnUv6BxU" role="IW6Ez">
       <node concept="3cWJ9i" id="2cvVnUv6BxR" role="1Qtc8$">
         <node concept="CtIbL" id="2cvVnUv6BxS" role="CtIbM">
-          <property role="CtIbK" value="LEFT" />
+          <property role="CtIbK" value="1A4kJjlVmVt/LEFT" />
         </node>
         <node concept="CtIbL" id="2cvVnUv6BxT" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="IWgqT" id="2cvVnUv6BxW" role="1Qtc8A">
@@ -1419,7 +1415,7 @@
                 <node concept="1OKiuA" id="2cvVnUv6Byc" role="2OqNvi">
                   <node concept="1Q80Hx" id="2cvVnUv6Byj" role="lBI5i" />
                   <node concept="2B6iha" id="2cvVnUv6Bye" role="lGT1i">
-                    <property role="1lyBwo" value="lastEditable" />
+                    <property role="1lyBwo" value="1S2pyLby17D/lastEditable" />
                   </node>
                 </node>
               </node>
@@ -1433,7 +1429,7 @@
                 <node concept="1OKiuA" id="2cvVnUv6Byl" role="2OqNvi">
                   <node concept="1Q80Hx" id="2cvVnUv6Bym" role="lBI5i" />
                   <node concept="2B6iha" id="2cvVnUv6Byn" role="lGT1i">
-                    <property role="1lyBwo" value="mostRelevant" />
+                    <property role="1lyBwo" value="59pBc0SIIVt/mostRelevant" />
                   </node>
                   <node concept="3cmrfG" id="2cvVnUv6Byo" role="3dN3m$">
                     <property role="3cmrfH" value="-1" />

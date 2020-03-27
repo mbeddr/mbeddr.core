@@ -4,7 +4,7 @@
   <languages>
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -69,9 +69,7 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
-        <property id="1186403771423" name="style" index="Vbekb" />
-      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="615427434521884870" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Subconcepts" flags="ng" index="2VfDsV" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
@@ -462,12 +460,10 @@
         <node concept="3F0ifn" id="h5nk5Qm" role="3EZMnx">
           <property role="3F0ifm" value="(" />
           <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
-          <node concept="Vb9p2" id="hEUNQWt" role="3F10Kt">
-            <property role="Vbekb" value="PLAIN" />
-          </node>
+          <node concept="Vb9p2" id="hEUNQWt" role="3F10Kt" />
         </node>
         <node concept="3F2HdR" id="h5nk5Qn" role="3EZMnx">
-          <property role="1cu_pB" value="2" />
+          <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
           <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="tpee:fz7wK6I" resolve="actualArgument" />
           <node concept="3F0ifn" id="h5nk5Qo" role="2czzBI">
@@ -513,7 +509,7 @@
         </node>
         <node concept="3F0ifn" id="h5nk5Qp" role="3EZMnx">
           <property role="3F0ifm" value=")" />
-          <property role="1cu_pB" value="1" />
+          <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
           <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
           <node concept="pkWqt" id="hsdTu_e" role="cStSX">
             <node concept="3clFbS" id="hsdTu_f" role="2VODD2">
@@ -561,9 +557,7 @@
           <node concept="VPM3Z" id="hEU$Q2r" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="Vb9p2" id="hEUNQWy" role="3F10Kt">
-            <property role="Vbekb" value="PLAIN" />
-          </node>
+          <node concept="Vb9p2" id="hEUNQWy" role="3F10Kt" />
           <node concept="VPxyj" id="hEZKQxW" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
@@ -1397,7 +1391,7 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="VechU" id="4X7wieqKV0k" role="3F10Kt">
-              <property role="Vb096" value="gray" />
+              <property role="Vb096" value="fLJRk5_/gray" />
             </node>
           </node>
         </node>

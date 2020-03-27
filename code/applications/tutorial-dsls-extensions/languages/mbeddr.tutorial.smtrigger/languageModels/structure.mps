@@ -71,9 +71,9 @@
     <property role="EcuMT" value="2051642899460644244" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="1LST_zkjtQn" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="instance" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="2051642899460644247" />
       <ref role="20lvS9" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
     </node>

@@ -44,13 +44,12 @@
     <property role="EcuMT" value="7020116223055689796" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5s_Hn9on188" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="class1" />
       <property role="IQ2ns" value="6279624758151352840" />
       <ref role="20lvS9" to="tpee:g7pOWCK" resolve="Classifier" />
     </node>
     <node concept="1TJgyj" id="65GtCaXcg1F" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="childA" />
       <property role="IQ2ns" value="7020116223055691883" />
       <ref role="20lvS9" node="65GtCaXchx3" resolve="IChild" />

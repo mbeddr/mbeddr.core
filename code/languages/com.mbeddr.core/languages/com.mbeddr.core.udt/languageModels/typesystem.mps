@@ -135,9 +135,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -1002,13 +1000,13 @@
                       <ref role="2pJxaS" to="mj1l:3iFvLdAqk9N" resolve="PC99MeetType" />
                       <node concept="2pIpSj" id="53FcewPvysu" role="2pJxcM">
                         <ref role="2pIpSl" to="tpd4:hiQyKgb" resolve="argument" />
-                        <node concept="2pJPED" id="53FcewPvyts" role="2pJxcZ">
+                        <node concept="2pJPED" id="53FcewPvyts" role="28nt2d">
                           <ref role="2pJxaS" to="mj1l:7lNBHBNBzxU" resolve="Int8tType" />
                         </node>
                       </node>
                       <node concept="2pIpSj" id="53FcewPvyuy" role="2pJxcM">
                         <ref role="2pIpSl" to="tpd4:hiQyKgb" resolve="argument" />
-                        <node concept="2pJPED" id="53FcewPvyvC" role="2pJxcZ">
+                        <node concept="2pJPED" id="53FcewPvyvC" role="28nt2d">
                           <ref role="2pJxaS" to="mj1l:7lNBHBNBzyt" resolve="UnsignedInt8tType" />
                         </node>
                       </node>
@@ -3580,6 +3578,26 @@
     <node concept="1YaCAy" id="27dKu0Hrz1Y" role="1YuTPh">
       <property role="TrG5h" value="abstractBitType" />
       <ref role="1YaFvo" to="clbe:2H3Yrqdbnnx" resolve="AbstractBitType" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="7NdzLQDGHhP">
+    <property role="3GE5qa" value="typedef" />
+    <property role="TrG5h" value="typedef" />
+    <node concept="3clFbS" id="7NdzLQDGHhQ" role="2sgrp5">
+      <node concept="3clFbF" id="7NdzLQDGIGM" role="3cqZAp">
+        <node concept="2OqwBi" id="7NdzLQDGI7N" role="3clFbG">
+          <node concept="1YBJjd" id="7NdzLQDGHkT" role="2Oq$k0">
+            <ref role="1YBMHb" node="7NdzLQDGHio" resolve="typeDef" />
+          </node>
+          <node concept="3TrEf2" id="7NdzLQDGIxu" role="2OqNvi">
+            <ref role="3Tt5mk" to="x27k:5jyom5fO9Cm" resolve="original" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7NdzLQDGHio" role="1YuTPh">
+      <property role="TrG5h" value="typeDef" />
+      <ref role="1YaFvo" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
     </node>
   </node>
 </model>

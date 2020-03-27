@@ -2,8 +2,8 @@
 <model ref="r:5dd88e70-1467-46ec-8265-f0c31a048788(com.mbeddr.ext.units.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -115,12 +115,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -291,7 +290,7 @@
                         <ref role="2pJxaS" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
                         <node concept="2pIpSj" id="7eOyx9r9BqW" role="2pJxcM">
                           <ref role="2pIpSl" to="mj1l:6ngD7lvl1tc" resolve="valueType" />
-                          <node concept="36biLy" id="7eOyx9r9Byw" role="2pJxcZ">
+                          <node concept="36biLy" id="7eOyx9r9Byw" role="28nt2d">
                             <node concept="2OqwBi" id="7eOyx9r9B_P" role="36biLW">
                               <node concept="2Sf5sV" id="7eOyx9r9Bzy" role="2Oq$k0" />
                               <node concept="1$rogu" id="7eOyx9r9BZ3" role="2OqNvi" />
@@ -300,16 +299,16 @@
                         </node>
                         <node concept="2pIpSj" id="7eOyx9r9C4L" role="2pJxcM">
                           <ref role="2pIpSl" to="qlb5:7eOyx9r3NX8" resolve="specification" />
-                          <node concept="2pJPED" id="7eOyx9r9C8g" role="2pJxcZ">
+                          <node concept="2pJPED" id="7eOyx9r9C8g" role="28nt2d">
                             <ref role="2pJxaS" to="qlb5:7eOyx9r3k4t" resolve="UnitSpecification" />
                             <node concept="2pIpSj" id="7eOyx9r9C9M" role="2pJxcM">
                               <ref role="2pIpSl" to="qlb5:7eOyx9r3qG3" resolve="components" />
-                              <node concept="36be1Y" id="7eOyx9r9CaQ" role="2pJxcZ">
+                              <node concept="36be1Y" id="7eOyx9r9CaQ" role="28nt2d">
                                 <node concept="2pJPED" id="7eOyx9r9Cc_" role="36be1Z">
                                   <ref role="2pJxaS" to="qlb5:7eOyx9r3kR5" resolve="UnitReference" />
                                   <node concept="2pIpSj" id="7eOyx9r9Cf7" role="2pJxcM">
                                     <ref role="2pIpSl" to="qlb5:7eOyx9r3qFW" resolve="unit" />
-                                    <node concept="36biLy" id="3pRoIUFYqL_" role="2pJxcZ">
+                                    <node concept="36biLy" id="3pRoIUFYqL_" role="28nt2d">
                                       <node concept="10Nm6u" id="3pRoIUFYqLA" role="36biLW" />
                                     </node>
                                   </node>
@@ -432,11 +431,11 @@
                     <ref role="2pJxaS" to="qlb5:49YGTZdU5eN" resolve="GenericUnitDeclarationAttribute" />
                     <node concept="2pIpSj" id="lqDNwvoxdq" role="2pJxcM">
                       <ref role="2pIpSl" to="qlb5:49YGTZdUaDI" resolve="units" />
-                      <node concept="2pJPED" id="lqDNwvoxr4" role="2pJxcZ">
+                      <node concept="2pJPED" id="lqDNwvoxr4" role="28nt2d">
                         <ref role="2pJxaS" to="qlb5:7eOyx9raabt" resolve="MetaUnit" />
                         <node concept="2pJxcG" id="lqDNwvoxrS" role="2pJxcM">
                           <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                          <node concept="Xl_RD" id="lqDNwvoxsQ" role="2pJxcZ">
+                          <node concept="Xl_RD" id="lqDNwvoxsQ" role="28ntcv">
                             <property role="Xl_RC" value="UNIT" />
                           </node>
                         </node>
@@ -826,7 +825,7 @@
                   <ref role="2pJxaS" to="qlb5:7eOyx9r3kR5" resolve="UnitReference" />
                   <node concept="2pIpSj" id="4jkbLB5K6qv" role="2pJxcM">
                     <ref role="2pIpSl" to="qlb5:7eOyx9r3qFW" resolve="unit" />
-                    <node concept="36biLy" id="3pRoIUFYqLB" role="2pJxcZ">
+                    <node concept="36biLy" id="3pRoIUFYqLB" role="28nt2d">
                       <node concept="10Nm6u" id="3pRoIUFYqLC" role="36biLW" />
                     </node>
                   </node>

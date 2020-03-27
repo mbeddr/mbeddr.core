@@ -1858,7 +1858,7 @@
         <property role="TrG5h" value="mbeddr.tutorial.typesystemtests" />
         <property role="3LESm3" value="8d0b45ab-f5f6-42ef-9f1c-c9dab8872e09" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="1cfjnjdGZbC" role="3LF7KH">
           <ref role="398BVh" node="1cfjnjdGZ8I" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="1cfjnjdGZbD" role="iGT6I">

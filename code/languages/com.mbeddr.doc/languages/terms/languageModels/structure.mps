@@ -65,9 +65,8 @@
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
     <node concept="1TJgyj" id="7rXn3flJtYD" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="term" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8574110643282370473" />
       <ref role="20lvS9" node="7rXn3flJFxh" resolve="TermDefParagraph" />
     </node>
@@ -83,9 +82,9 @@
     <property role="EcuMT" value="8574110643282425937" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="7rXn3flJFxk" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="text" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8574110643282425940" />
       <ref role="20lvS9" to="vs0r:7gVrg_0tw6m" resolve="TextBlock" />
     </node>
@@ -109,9 +108,8 @@
     <property role="EcuMT" value="4224548511521359213" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="3EwB7OlCGlI" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="doc" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4224548511521359214" />
       <ref role="20lvS9" to="2c95:2TZO3DbuxwK" resolve="Document" />
     </node>

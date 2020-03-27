@@ -78,9 +78,8 @@
     <property role="3GE5qa" value="configs" />
     <ref role="1TJDcQ" to="q46j:5BkFC2yh8uL" resolve="Analysis" />
     <node concept="1TJgyj" id="3lXW7OZ694h" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="env" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="3854501276819165457" />
       <ref role="20lvS9" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
     </node>
@@ -96,7 +95,7 @@
     <property role="TrG5h" value="IPanRunSettings" />
     <node concept="1TJgyj" id="5yxSA$IR$iQ" role="1TKVEi">
       <property role="IQ2ns" value="6386634687973835958" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="searchDepth" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
     </node>

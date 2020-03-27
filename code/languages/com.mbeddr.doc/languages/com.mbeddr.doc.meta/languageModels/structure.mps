@@ -70,7 +70,7 @@
     <property role="EcuMT" value="4411878964391805161" />
     <ref role="1TJDcQ" to="2c95:3mn43GPgUJP" resolve="AbstractRefWord" />
     <node concept="1TJgyj" id="3OU98G0_S3I" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="moduleRef" />
       <property role="IQ2ns" value="4411878964391805166" />
       <ref role="20lvS9" to="hypd:1AZH1sZHi4c" resolve="ModuleReference" />

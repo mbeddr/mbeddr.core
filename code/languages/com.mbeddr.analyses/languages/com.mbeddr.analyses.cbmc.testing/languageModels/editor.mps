@@ -2,7 +2,7 @@
 <model ref="r:696a1270-f4db-4b72-a396-a924b905f9bb(com.mbeddr.analyses.cbmc.testing.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -251,7 +251,7 @@
       <node concept="3F0ifn" id="1eEm1HSG09q" role="3EZMnx">
         <property role="3F0ifm" value=" (REGEX)" />
         <node concept="VechU" id="1eEm1HSG6Vs" role="3F10Kt">
-          <property role="Vb096" value="DARK_MAGENTA" />
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
         </node>
         <node concept="pkWqt" id="1eEm1HSG12g" role="pqm2j">
           <node concept="3clFbS" id="1eEm1HSG12h" role="2VODD2">
@@ -307,7 +307,7 @@
       <node concept="3F0ifn" id="1fRCgvb5VT_" role="3EZMnx">
         <property role="3F0ifm" value="end of counterexample test" />
         <node concept="VechU" id="1fRCgvb5VVP" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
       </node>
     </node>

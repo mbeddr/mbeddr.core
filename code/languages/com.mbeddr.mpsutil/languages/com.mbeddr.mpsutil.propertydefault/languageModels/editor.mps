@@ -2,7 +2,7 @@
 <model ref="r:43fa966b-22ce-4dca-976c-c25d74f40558(com.mbeddr.mpsutil.propertydefault.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -77,7 +77,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="VechU" id="hEZR8rS" role="3F10Kt">
-          <property role="Vb096" value="DARK_MAGENTA" />
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
         </node>
         <node concept="11LMrY" id="hX77qbV" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -92,7 +92,7 @@
             <property role="1$x2rV" value="&lt;no name&gt;" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <node concept="VechU" id="hEZR8Cj" role="3F10Kt">
-              <property role="Vb096" value="DARK_MAGENTA" />
+              <property role="Vb096" value="g1_qVrt/darkMagenta" />
             </node>
             <node concept="3$7jql" id="hOIeUQ2" role="3F10Kt">
               <property role="3$6WeP" value="0.0" />
@@ -107,7 +107,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="VechU" id="hEZR8BC" role="3F10Kt">
-          <property role="Vb096" value="DARK_MAGENTA" />
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
         </node>
         <node concept="11L4FC" id="hX77sz0" role="3F10Kt">
           <property role="VOm3f" value="true" />

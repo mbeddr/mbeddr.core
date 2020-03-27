@@ -2,9 +2,10 @@
 <model ref="r:f261c159-a1e7-49d3-802b-b6a2779d1389(com.mbeddr.mpsutil.dataflow.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -127,11 +128,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
@@ -272,6 +270,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -687,13 +693,80 @@
                     </node>
                   </node>
                   <node concept="3SKdUt" id="183c22F78v0" role="3cqZAp">
-                    <node concept="3SKdUq" id="183c22F78v2" role="3SKWNk">
-                      <property role="3SKdUp" value="the instruction must be added before the current program is set" />
+                    <node concept="1PaTwC" id="17qUVvSZkEH" role="3ndbpf">
+                      <node concept="3oM_SD" id="17qUVvSZkEI" role="1PaTwD">
+                        <property role="3oM_SC" value="the" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEJ" role="1PaTwD">
+                        <property role="3oM_SC" value="instruction" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEK" role="1PaTwD">
+                        <property role="3oM_SC" value="must" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEL" role="1PaTwD">
+                        <property role="3oM_SC" value="be" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEM" role="1PaTwD">
+                        <property role="3oM_SC" value="added" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEN" role="1PaTwD">
+                        <property role="3oM_SC" value="before" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEO" role="1PaTwD">
+                        <property role="3oM_SC" value="the" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEP" role="1PaTwD">
+                        <property role="3oM_SC" value="current" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEQ" role="1PaTwD">
+                        <property role="3oM_SC" value="program" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkER" role="1PaTwD">
+                        <property role="3oM_SC" value="is" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkES" role="1PaTwD">
+                        <property role="3oM_SC" value="set" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3SKdUt" id="183c22F78_0" role="3cqZAp">
-                    <node concept="3SKdUq" id="183c22F78_2" role="3SKWNk">
-                      <property role="3SKdUp" value="in order for the context sensitive program instruction lookups to work correctly" />
+                    <node concept="1PaTwC" id="17qUVvSZkET" role="3ndbpf">
+                      <node concept="3oM_SD" id="17qUVvSZkEU" role="1PaTwD">
+                        <property role="3oM_SC" value="in" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEV" role="1PaTwD">
+                        <property role="3oM_SC" value="order" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEW" role="1PaTwD">
+                        <property role="3oM_SC" value="for" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEX" role="1PaTwD">
+                        <property role="3oM_SC" value="the" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEY" role="1PaTwD">
+                        <property role="3oM_SC" value="context" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkEZ" role="1PaTwD">
+                        <property role="3oM_SC" value="sensitive" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkF0" role="1PaTwD">
+                        <property role="3oM_SC" value="program" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkF1" role="1PaTwD">
+                        <property role="3oM_SC" value="instruction" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkF2" role="1PaTwD">
+                        <property role="3oM_SC" value="lookups" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkF3" role="1PaTwD">
+                        <property role="3oM_SC" value="to" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkF4" role="1PaTwD">
+                        <property role="3oM_SC" value="work" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkF5" role="1PaTwD">
+                        <property role="3oM_SC" value="correctly" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3clFbF" id="5caPF5jNb2r" role="3cqZAp">
@@ -1477,8 +1550,49 @@
                                           </node>
                                         </node>
                                         <node concept="3SKdUt" id="3jCOofoTCns" role="3cqZAp">
-                                          <node concept="3SKdUq" id="3jCOofoTCnu" role="3SKWNk">
-                                            <property role="3SKdUp" value=" fallback, compatibility code for models generated without a GP that specifies DescriptorClasses CP." />
+                                          <node concept="1PaTwC" id="17qUVvSZkF6" role="3ndbpf">
+                                            <node concept="3oM_SD" id="17qUVvSZkF7" role="1PaTwD">
+                                              <property role="3oM_SC" value="" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkF8" role="1PaTwD">
+                                              <property role="3oM_SC" value="fallback," />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkF9" role="1PaTwD">
+                                              <property role="3oM_SC" value="compatibility" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFa" role="1PaTwD">
+                                              <property role="3oM_SC" value="code" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFb" role="1PaTwD">
+                                              <property role="3oM_SC" value="for" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFc" role="1PaTwD">
+                                              <property role="3oM_SC" value="models" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFd" role="1PaTwD">
+                                              <property role="3oM_SC" value="generated" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFe" role="1PaTwD">
+                                              <property role="3oM_SC" value="without" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFf" role="1PaTwD">
+                                              <property role="3oM_SC" value="a" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFg" role="1PaTwD">
+                                              <property role="3oM_SC" value="GP" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFh" role="1PaTwD">
+                                              <property role="3oM_SC" value="that" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFi" role="1PaTwD">
+                                              <property role="3oM_SC" value="specifies" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFj" role="1PaTwD">
+                                              <property role="3oM_SC" value="DescriptorClasses" />
+                                            </node>
+                                            <node concept="3oM_SD" id="17qUVvSZkFk" role="1PaTwD">
+                                              <property role="3oM_SC" value="CP." />
+                                            </node>
                                           </node>
                                         </node>
                                         <node concept="3cpWs6" id="3jCOofoTDvP" role="3cqZAp">
@@ -2028,8 +2142,49 @@
                                         </node>
                                       </node>
                                       <node concept="3SKdUt" id="4Xag4OYsdbI" role="3cqZAp">
-                                        <node concept="3SKdUq" id="4Xag4OYsdbJ" role="3SKWNk">
-                                          <property role="3SKdUp" value=" fallback, compatibility code for models generated without a GP that specifies DescriptorClasses CP." />
+                                        <node concept="1PaTwC" id="17qUVvSZkFl" role="3ndbpf">
+                                          <node concept="3oM_SD" id="17qUVvSZkFm" role="1PaTwD">
+                                            <property role="3oM_SC" value="" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFn" role="1PaTwD">
+                                            <property role="3oM_SC" value="fallback," />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFo" role="1PaTwD">
+                                            <property role="3oM_SC" value="compatibility" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFp" role="1PaTwD">
+                                            <property role="3oM_SC" value="code" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFq" role="1PaTwD">
+                                            <property role="3oM_SC" value="for" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFr" role="1PaTwD">
+                                            <property role="3oM_SC" value="models" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFs" role="1PaTwD">
+                                            <property role="3oM_SC" value="generated" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFt" role="1PaTwD">
+                                            <property role="3oM_SC" value="without" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFu" role="1PaTwD">
+                                            <property role="3oM_SC" value="a" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFv" role="1PaTwD">
+                                            <property role="3oM_SC" value="GP" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFw" role="1PaTwD">
+                                            <property role="3oM_SC" value="that" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFx" role="1PaTwD">
+                                            <property role="3oM_SC" value="specifies" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFy" role="1PaTwD">
+                                            <property role="3oM_SC" value="DescriptorClasses" />
+                                          </node>
+                                          <node concept="3oM_SD" id="17qUVvSZkFz" role="1PaTwD">
+                                            <property role="3oM_SC" value="CP." />
+                                          </node>
                                         </node>
                                       </node>
                                       <node concept="3cpWs6" id="4Xag4OYsdbK" role="3cqZAp">

@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -91,7 +91,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
@@ -125,7 +124,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="71B0VArZX1L" role="1tU5fm" />
             <node concept="BaHAS" id="71B0VArZX1O" role="33vP2m">
-              <property role="BaBD8" value="ver" />
               <property role="BaHAW" value="verification_config" />
               <property role="BaGAP" value="" />
             </node>
@@ -218,7 +216,6 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="71B0VArZWIU" role="1tU5fm" />
             <node concept="BaHAS" id="71B0VArZWIX" role="33vP2m">
-              <property role="BaBD8" value="ver" />
               <property role="BaHAW" value="verification_config" />
               <property role="BaGAP" value="" />
             </node>

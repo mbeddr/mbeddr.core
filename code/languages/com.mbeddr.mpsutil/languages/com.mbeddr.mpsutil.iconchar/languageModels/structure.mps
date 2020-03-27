@@ -11,9 +11,7 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
-      </concept>
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu" />
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
@@ -21,6 +19,9 @@
       </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
       <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
         <property id="1083066089218" name="constraint" index="FLfZY" />
@@ -90,13 +91,12 @@
         <ref role="trN6q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
       </node>
     </node>
-    <node concept="1QGGSu" id="6LCinStDt6d" role="rwd14">
-      <property role="1iqoE4" value="${mps_home}/bin/sadf" />
-    </node>
+    <node concept="1QGGSu" id="6LCinStDt6d" role="rwd14" />
   </node>
   <node concept="Az7Fb" id="7GaZbxRWsMP">
     <property role="TrG5h" value="rgbaColor" />
     <property role="FLfZY" value="#[0-9a-fA-F]{6,8}" />
+    <property role="3F6X1D" value="8866176685648759989" />
   </node>
 </model>
 

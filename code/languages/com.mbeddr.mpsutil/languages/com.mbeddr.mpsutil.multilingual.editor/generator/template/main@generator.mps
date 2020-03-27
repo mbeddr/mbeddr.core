@@ -2,11 +2,11 @@
 <model ref="r:b0eee9d8-2291-4a67-bcf1-287db75d556a(com.mbeddr.mpsutil.multilingual.editor.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="13a9e567-3b9e-4ccf-b94c-9155f5e78586" name="com.mbeddr.mpsutil.multilingual.editor" version="0" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -28,7 +28,6 @@
       <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
         <child id="4323500428121274054" name="id" index="2SqHTX" />
@@ -182,6 +181,7 @@
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
         <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
+        <property id="1189424455254633007" name="enumUsageMigrated" index="1I7cki" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
         <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
@@ -400,13 +400,14 @@
           <node concept="17Uvod" id="5hf8C2EyiVT" role="lGtFl">
             <property role="2qtEX9" value="attractsFocus" />
             <property role="P4ACc" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265/1130859485024" />
+            <property role="1I7cki" value="true" />
             <node concept="3zFVjK" id="5hf8C2EyiVU" role="3zH0cK">
               <node concept="3clFbS" id="5hf8C2EyiVV" role="2VODD2">
                 <node concept="3clFbF" id="5hf8C2Eyk0a" role="3cqZAp">
                   <node concept="2OqwBi" id="5hf8C2Eyk9w" role="3clFbG">
                     <node concept="30H73N" id="5hf8C2Eyk09" role="2Oq$k0" />
                     <node concept="3TrcHB" id="5hf8C2Eyl42" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpc2:gtcu_tw" resolve="attractsFocus" />
+                      <ref role="3TsBF5" to="tpc2:3Ftr4R6BH0x" resolve="attractsFocus" />
                     </node>
                   </node>
                 </node>
@@ -420,7 +421,6 @@
       <ref role="30HIoZ" to="17ki:2bng37t24BP" resolve="MultilingualAlias" />
       <node concept="gft3U" id="2bng37t2j10" role="1lVwrX">
         <node concept="1HlG4h" id="2bng37t2j11" role="gfFT$">
-          <property role="1cu_pB" value="0" />
           <node concept="1HfYo3" id="2bng37t2j12" role="1HlULh">
             <node concept="3TQlhw" id="2bng37t2j13" role="1Hhtcw">
               <node concept="3clFbS" id="2bng37t2j14" role="2VODD2">
@@ -591,13 +591,14 @@
           <node concept="17Uvod" id="2d55UFtki1g" role="lGtFl">
             <property role="2qtEX9" value="attractsFocus" />
             <property role="P4ACc" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265/1130859485024" />
+            <property role="1I7cki" value="true" />
             <node concept="3zFVjK" id="2d55UFtki1h" role="3zH0cK">
               <node concept="3clFbS" id="2d55UFtki1i" role="2VODD2">
                 <node concept="3clFbF" id="2d55UFtkk70" role="3cqZAp">
                   <node concept="2OqwBi" id="2d55UFtkkfV" role="3clFbG">
                     <node concept="30H73N" id="2d55UFtkk6Z" role="2Oq$k0" />
                     <node concept="3TrcHB" id="2d55UFtkv6g" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpc2:gtcu_tw" resolve="attractsFocus" />
+                      <ref role="3TsBF5" to="tpc2:3Ftr4R6BH0x" resolve="attractsFocus" />
                     </node>
                   </node>
                 </node>

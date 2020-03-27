@@ -2,7 +2,7 @@
 <model ref="r:c88b1023-4c07-4a69-9a92-acf44e04b778(DomainSpecificLanguage.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -152,7 +152,7 @@
                     <ref role="3cqZAo" node="7iLD7IPUItI" resolve="row" />
                   </node>
                   <node concept="3Tsc0h" id="7iLD7IPULyX" role="2OqNvi">
-                    <ref role="3TtcxE" to="9ug2:7iLD7IPLmUW" />
+                    <ref role="3TtcxE" to="9ug2:7iLD7IPLmUW" resolve="values" />
                   </node>
                 </node>
                 <node concept="WFELt" id="7iLD7IPUNMn" role="2OqNvi" />
@@ -163,11 +163,11 @@
             <node concept="2OqwBi" id="7iLD7IPUJ5J" role="2Oq$k0">
               <node concept="2Sf5sV" id="7iLD7IPUJ0E" role="2Oq$k0" />
               <node concept="3TrEf2" id="7iLD7IPUJRW" role="2OqNvi">
-                <ref role="3Tt5mk" to="9ug2:7pFWc46H8FA" />
+                <ref role="3Tt5mk" to="9ug2:7pFWc46H8FA" resolve="enumeration" />
               </node>
             </node>
             <node concept="3Tsc0h" id="7iLD7IPUL9D" role="2OqNvi">
-              <ref role="3TtcxE" to="clbe:7D99css6O0x" />
+              <ref role="3TtcxE" to="clbe:7D99css6O0x" resolve="literals" />
             </node>
           </node>
         </node>
@@ -176,7 +176,7 @@
             <node concept="2OqwBi" id="7iLD7IPUCIX" role="2Oq$k0">
               <node concept="2Sf5sV" id="7iLD7IPUCF0" role="2Oq$k0" />
               <node concept="3Tsc0h" id="7iLD7IPUDnG" role="2OqNvi">
-                <ref role="3TtcxE" to="9ug2:7iLD7IPHpfn" />
+                <ref role="3TtcxE" to="9ug2:7iLD7IPHpfn" resolve="profiles" />
               </node>
             </node>
             <node concept="TSZUe" id="7iLD7IPUIeF" role="2OqNvi">
@@ -246,7 +246,7 @@
           <node concept="2OqwBi" id="7iLD7IPZjH7" role="2GsD0m">
             <node concept="2Sf5sV" id="7iLD7IPZjCO" role="2Oq$k0" />
             <node concept="3Tsc0h" id="7iLD7IPZjTY" role="2OqNvi">
-              <ref role="3TtcxE" to="9ug2:7iLD7IPLmUW" />
+              <ref role="3TtcxE" to="9ug2:7iLD7IPLmUW" resolve="values" />
             </node>
           </node>
           <node concept="3clFbS" id="7iLD7IPZiT7" role="2LFqv$">

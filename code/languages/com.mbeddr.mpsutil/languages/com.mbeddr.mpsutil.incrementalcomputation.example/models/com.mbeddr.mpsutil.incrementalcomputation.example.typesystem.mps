@@ -2,6 +2,7 @@
 <model ref="r:cdb85e4b-8cf8-473a-b888-c94ce64cb7e5(com.mbeddr.mpsutil.incrementalcomputation.example.typesystem)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -52,11 +53,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -94,6 +92,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -106,13 +112,71 @@
     <property role="TrG5h" value="check_GraphNode" />
     <node concept="3clFbS" id="6QoXIYUbgcv" role="18ibNy">
       <node concept="3SKdUt" id="6QoXIYUbSf8" role="3cqZAp">
-        <node concept="3SKdUq" id="6QoXIYUbSfa" role="3SKWNk">
-          <property role="3SKdUp" value="TODO: this check can also be found in check_IPropagationParticipant where it belongs." />
+        <node concept="1PaTwC" id="17qUVvSZkR$" role="3ndbpf">
+          <node concept="3oM_SD" id="17qUVvSZkR_" role="1PaTwD">
+            <property role="3oM_SC" value="TODO:" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRA" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRB" role="1PaTwD">
+            <property role="3oM_SC" value="check" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRC" role="1PaTwD">
+            <property role="3oM_SC" value="can" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRD" role="1PaTwD">
+            <property role="3oM_SC" value="also" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRE" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRF" role="1PaTwD">
+            <property role="3oM_SC" value="found" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRG" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRH" role="1PaTwD">
+            <property role="3oM_SC" value="check_IPropagationParticipant" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRI" role="1PaTwD">
+            <property role="3oM_SC" value="where" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRJ" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRK" role="1PaTwD">
+            <property role="3oM_SC" value="belongs." />
+          </node>
         </node>
       </node>
       <node concept="3SKdUt" id="5uCOCQhZJPK" role="3cqZAp">
-        <node concept="3SKdUq" id="5uCOCQhZJPL" role="3SKWNk">
-          <property role="3SKdUp" value="TODO: unfortunately it is not triggered there. WHY?!" />
+        <node concept="1PaTwC" id="17qUVvSZkRL" role="3ndbpf">
+          <node concept="3oM_SD" id="17qUVvSZkRM" role="1PaTwD">
+            <property role="3oM_SC" value="TODO:" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRN" role="1PaTwD">
+            <property role="3oM_SC" value="unfortunately" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRO" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRP" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRQ" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRR" role="1PaTwD">
+            <property role="3oM_SC" value="triggered" />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRS" role="1PaTwD">
+            <property role="3oM_SC" value="there." />
+          </node>
+          <node concept="3oM_SD" id="17qUVvSZkRT" role="1PaTwD">
+            <property role="3oM_SC" value="WHY?!" />
+          </node>
         </node>
       </node>
       <node concept="3clFbF" id="6QoXIYUbHy0" role="3cqZAp">

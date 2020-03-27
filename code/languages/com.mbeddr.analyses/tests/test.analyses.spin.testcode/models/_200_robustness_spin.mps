@@ -264,7 +264,7 @@
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
-      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameShorteningConfiguration" flags="ng" index="MH4UO" />
+      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO" />
     </language>
     <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
       <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
@@ -405,6 +405,10 @@
     </node>
   </node>
   <node concept="2v9HqL" id="70fpbbgzyva">
+    <node concept="2Q9Fgs" id="70fpbbgzyvt" role="2Q9xDr">
+      <node concept="2Q9FjX" id="70fpbbgzyvu" role="2Q9FjI" />
+    </node>
+    <node concept="MH4UO" id="3yoZyYdAHxK" role="2Q9xDr" />
     <node concept="1X3_iC" id="4J_W74Pbj_u" role="lGtFl">
       <property role="3V$3am" value="target" />
       <property role="3V$3ak" value="2d7fadf5-33f6-4e80-a78f-0f739add2bde/7717755763392524104/5323740605968447026" />
@@ -434,10 +438,6 @@
         </node>
       </node>
     </node>
-    <node concept="2Q9Fgs" id="70fpbbgzyvt" role="2Q9xDr">
-      <node concept="2Q9FjX" id="70fpbbgzyvu" role="2Q9FjI" />
-    </node>
-    <node concept="MH4UO" id="3yoZyYdAHxK" role="2Q9xDr" />
     <node concept="1X3_iC" id="4J_W74PbjAL" role="lGtFl">
       <property role="3V$3am" value="binaries" />
       <property role="3V$3ak" value="2d7fadf5-33f6-4e80-a78f-0f739add2bde/7717755763392524104/5046689135694070731" />

@@ -222,7 +222,6 @@
       </concept>
       <concept id="2688792604367903087" name="com.mbeddr.core.util.structure.MessageDefinition" flags="ng" index="2vmPJf">
         <property id="2688792604367903089" name="text" index="2vmPJh" />
-        <property id="2688792604367903094" name="kind" index="2vmPJm" />
         <property id="2688792604367947988" name="active" index="2vn0DO" />
         <child id="767515563077204474" name="properties" index="2qqzEG" />
       </concept>
@@ -701,7 +700,6 @@
       </node>
       <node concept="2vmPJf" id="qjOluQfFXq" role="2vmPJn">
         <property role="2vn0DO" value="true" />
-        <property role="2vmPJm" value="3" />
         <property role="TrG5h" value="log_verbose" />
         <property role="2vmPJh" value="s" />
         <node concept="2qqzEA" id="qjOluQfGsR" role="2qqzEG">

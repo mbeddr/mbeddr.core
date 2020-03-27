@@ -4,7 +4,7 @@
   <languages>
     <use id="13a9e567-3b9e-4ccf-b94c-9155f5e78586" name="com.mbeddr.mpsutil.multilingual.editor" version="0" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,9 +16,6 @@
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
-      </concept>
-      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -55,12 +52,9 @@
     <ref role="1XX52x" to="1zxe:4gGXGcMdKrM" resolve="TestMultilingualEditorConcept" />
     <node concept="3EZMnI" id="4gGXGcMdVX5" role="2wV5jI">
       <node concept="3ZRKB6" id="4gGXGcMdLMe" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
         <ref role="3ZOmrH" node="4gGXGcMdLMd" resolve="MyConstant" />
       </node>
-      <node concept="3ZRKB4" id="4gGXGcMes04" role="3EZMnx">
-        <property role="1cu_pB" value="0" />
-      </node>
+      <node concept="3ZRKB4" id="4gGXGcMes04" role="3EZMnx" />
       <node concept="2iRfu4" id="4gGXGcMdVX6" role="2iSdaV" />
     </node>
   </node>

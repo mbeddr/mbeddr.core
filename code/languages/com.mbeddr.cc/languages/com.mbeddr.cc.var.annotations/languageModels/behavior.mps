@@ -4,6 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -169,11 +170,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -276,6 +274,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1589,8 +1595,49 @@
         </node>
         <node concept="3clFbH" id="1wLq5fOd2t7" role="3cqZAp" />
         <node concept="3SKdUt" id="1wLq5fOd2vK" role="3cqZAp">
-          <node concept="3SKdUq" id="1wLq5fOd2xY" role="3SKWNk">
-            <property role="3SKdUp" value="this is a workaround because the node factory in the editor is not working." />
+          <node concept="1PaTwC" id="6JXsDxttvYT" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxttvYU" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYV" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYW" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYX" role="1PaTwD">
+              <property role="3oM_SC" value="workaround" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYY" role="1PaTwD">
+              <property role="3oM_SC" value="because" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvYZ" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvZ0" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvZ1" role="1PaTwD">
+              <property role="3oM_SC" value="factory" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvZ2" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvZ3" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvZ4" role="1PaTwD">
+              <property role="3oM_SC" value="editor" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvZ5" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvZ6" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttvZ7" role="1PaTwD">
+              <property role="3oM_SC" value="working." />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="1wLq5fOd0$9" role="3cqZAp">
@@ -2549,18 +2596,69 @@
                           <node concept="1bVj0M" id="4omMoHU$CIK" role="23t8la">
                             <node concept="3clFbS" id="4omMoHU$CIL" role="1bW5cS">
                               <node concept="3SKdUt" id="4Z2KgTfEshV" role="3cqZAp">
-                                <node concept="3SKdUq" id="4Z2KgTfEsqg" role="3SKWNk">
-                                  <property role="3SKdUp" value="WORKAROUND:" />
+                                <node concept="1PaTwC" id="6JXsDxttvZ8" role="3ndbpf">
+                                  <node concept="3oM_SD" id="6JXsDxttvZ9" role="1PaTwD">
+                                    <property role="3oM_SC" value="WORKAROUND:" />
+                                  </node>
                                 </node>
                               </node>
                               <node concept="3SKdUt" id="4Z2KgTfEqbj" role="3cqZAp">
-                                <node concept="3SKdUq" id="4Z2KgTfEqoa" role="3SKWNk">
-                                  <property role="3SKdUp" value="I compare via qualified names because of some reason" />
+                                <node concept="1PaTwC" id="6JXsDxttvZa" role="3ndbpf">
+                                  <node concept="3oM_SD" id="6JXsDxttvZb" role="1PaTwD">
+                                    <property role="3oM_SC" value="I" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZc" role="1PaTwD">
+                                    <property role="3oM_SC" value="compare" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZd" role="1PaTwD">
+                                    <property role="3oM_SC" value="via" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZe" role="1PaTwD">
+                                    <property role="3oM_SC" value="qualified" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZf" role="1PaTwD">
+                                    <property role="3oM_SC" value="names" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZg" role="1PaTwD">
+                                    <property role="3oM_SC" value="because" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZh" role="1PaTwD">
+                                    <property role="3oM_SC" value="of" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZi" role="1PaTwD">
+                                    <property role="3oM_SC" value="some" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZj" role="1PaTwD">
+                                    <property role="3oM_SC" value="reason" />
+                                  </node>
                                 </node>
                               </node>
                               <node concept="3SKdUt" id="4Z2KgTfErk8" role="3cqZAp">
-                                <node concept="3SKdUq" id="4Z2KgTfErsr" role="3SKWNk">
-                                  <property role="3SKdUp" value="(probably model import!) identity check does not work" />
+                                <node concept="1PaTwC" id="6JXsDxttvZk" role="3ndbpf">
+                                  <node concept="3oM_SD" id="6JXsDxttvZl" role="1PaTwD">
+                                    <property role="3oM_SC" value="(probably" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZm" role="1PaTwD">
+                                    <property role="3oM_SC" value="model" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZn" role="1PaTwD">
+                                    <property role="3oM_SC" value="import!)" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZo" role="1PaTwD">
+                                    <property role="3oM_SC" value="identity" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZp" role="1PaTwD">
+                                    <property role="3oM_SC" value="check" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZq" role="1PaTwD">
+                                    <property role="3oM_SC" value="does" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZr" role="1PaTwD">
+                                    <property role="3oM_SC" value="not" />
+                                  </node>
+                                  <node concept="3oM_SD" id="6JXsDxttvZs" role="1PaTwD">
+                                    <property role="3oM_SC" value="work" />
+                                  </node>
                                 </node>
                               </node>
                               <node concept="3clFbF" id="1B8w38pRV3c" role="3cqZAp">

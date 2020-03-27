@@ -51,9 +51,9 @@
     <property role="EcuMT" value="7977993180520290853" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6URxCt9pDD2" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="contents" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="7977993180520290882" />
       <ref role="20lvS9" node="6URxCt9pDCA" resolve="IOSConfigContents" />
     </node>

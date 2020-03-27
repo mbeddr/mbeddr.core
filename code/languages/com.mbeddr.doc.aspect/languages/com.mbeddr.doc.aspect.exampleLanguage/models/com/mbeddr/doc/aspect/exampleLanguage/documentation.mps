@@ -2,10 +2,10 @@
 <model ref="r:74bfd413-8b64-4223-893e-f8a87bb1cf7a(com.mbeddr.doc.aspect.exampleLanguage.documentation)">
   <persistence version="9" />
   <languages>
-    <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
-    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
+    <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
+    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -58,7 +58,6 @@
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
-      <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -75,6 +74,7 @@
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
@@ -141,9 +141,6 @@
           </node>
         </node>
       </node>
-      <node concept="1_1sxE" id="4jXS_uRq4FD" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
       <node concept="1_0VNX" id="UK_oBpCt_h" role="1_0VJ0">
         <property role="TrG5h" value="Edge" />
         <property role="1_0VJr" value="Edge" />
@@ -158,15 +155,12 @@
           <ref role="3nadW_" to="hauh:1MEM7LwxeiB" resolve="Edge" />
         </node>
       </node>
-      <node concept="1_1sxE" id="1o6EjwiT2sm" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
       <node concept="1_0VNX" id="1o6EjwiT2xF" role="1_0VJ0">
         <property role="TrG5h" value="GraphNameProperty" />
         <property role="1_0VJr" value="Graph.name" />
         <node concept="4TqVo" id="1o6EjwiT6Dl" role="lGtFl">
-          <ref role="4TqVk" to="tpck:h0TrG11" resolve="name" />
           <ref role="3nadW_" to="hauh:1MEM7Lwxek7" resolve="Graph" />
+          <ref role="4TqVk" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="1_0LV8" id="1o6EjwiT6DW" role="1_0VJ0">
           <node concept="19SGf9" id="1o6EjwiT6DX" role="1_0LWR">
@@ -201,6 +195,7 @@
       <node concept="9PVaO" id="5CkU_dHcLvU" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="." />
       </node>
     </node>
     <node concept="2SbYGw" id="47UE$_dUiYw" role="A10yx">
@@ -208,6 +203,7 @@
       <node concept="9PVaO" id="47UE$_dUiYv" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="." />
       </node>
     </node>
   </node>

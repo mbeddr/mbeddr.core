@@ -13,7 +13,7 @@ variables:
       -PsnapshotRepository=$MBEDDR_SNAPTHOT_REPOSITORY
       -PreleaseRepository=$MBEDDR_RELEASE_REPOSITORY
       -PnexusUsername=$NEXUS_USER 
-      -PnexusPassword=$NEXUS_PASSWORD
+      -PnexusPassword=$NEXUS_PASS
     "
 
 before_script:

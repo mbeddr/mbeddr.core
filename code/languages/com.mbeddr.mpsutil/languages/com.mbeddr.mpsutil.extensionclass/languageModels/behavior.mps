@@ -3,8 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -129,11 +130,8 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -210,6 +208,14 @@
       <concept id="1234971358450" name="jetbrains.mps.lang.core.structure.IType" flags="ng" index="2a1RnH" />
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -430,8 +436,31 @@
               </node>
             </node>
             <node concept="3SKdUt" id="6ffEDrb$cbT" role="3cqZAp">
-              <node concept="3SKdUq" id="6ffEDrb$cbU" role="3SKWNk">
-                <property role="3SKdUp" value="replace the vararg formal param for easier computations" />
+              <node concept="1PaTwC" id="17qUVvSZkNJ" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZkNK" role="1PaTwD">
+                  <property role="3oM_SC" value="replace" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkNL" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkNM" role="1PaTwD">
+                  <property role="3oM_SC" value="vararg" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkNN" role="1PaTwD">
+                  <property role="3oM_SC" value="formal" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkNO" role="1PaTwD">
+                  <property role="3oM_SC" value="param" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkNP" role="1PaTwD">
+                  <property role="3oM_SC" value="for" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkNQ" role="1PaTwD">
+                  <property role="3oM_SC" value="easier" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZkNR" role="1PaTwD">
+                  <property role="3oM_SC" value="computations" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="6ffEDrb$cbV" role="3cqZAp">
@@ -502,8 +531,31 @@
               <node concept="3eNFk2" id="6ffEDrb$ccn" role="3eNLev">
                 <node concept="3clFbS" id="6ffEDrb$cco" role="3eOfB_">
                   <node concept="3SKdUt" id="6ffEDrb$ccp" role="3cqZAp">
-                    <node concept="3SKdUq" id="6ffEDrb$ccq" role="3SKWNk">
-                      <property role="3SKdUp" value="array may be passed as value for vararg" />
+                    <node concept="1PaTwC" id="17qUVvSZkNS" role="3ndbpf">
+                      <node concept="3oM_SD" id="17qUVvSZkNT" role="1PaTwD">
+                        <property role="3oM_SC" value="array" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkNU" role="1PaTwD">
+                        <property role="3oM_SC" value="may" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkNV" role="1PaTwD">
+                        <property role="3oM_SC" value="be" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkNW" role="1PaTwD">
+                        <property role="3oM_SC" value="passed" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkNX" role="1PaTwD">
+                        <property role="3oM_SC" value="as" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkNY" role="1PaTwD">
+                        <property role="3oM_SC" value="value" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkNZ" role="1PaTwD">
+                        <property role="3oM_SC" value="for" />
+                      </node>
+                      <node concept="3oM_SD" id="17qUVvSZkO0" role="1PaTwD">
+                        <property role="3oM_SC" value="vararg" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3clFbF" id="6ffEDrb$ccr" role="3cqZAp">

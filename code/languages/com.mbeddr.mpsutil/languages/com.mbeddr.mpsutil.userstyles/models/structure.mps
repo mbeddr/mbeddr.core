@@ -87,9 +87,9 @@
     <property role="EcuMT" value="1072158555907409226" />
     <ref role="1TJDcQ" to="tpc2:hgV6hR6" resolve="StyleClassItem" />
     <node concept="1TJgyj" id="Vx4CqFKsle" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="style" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="1072158555907409230" />
       <ref role="20lvS9" to="tpc2:2VNGR_E4AW$" resolve="StyleClass" />
     </node>

@@ -2,7 +2,7 @@
 <model ref="13a9e567-3b9e-4ccf-b94c-9155f5e78586/r:2e547867-11e9-4cc7-9db8-b680058bda22(com.mbeddr.mpsutil.multilingual.editor/com.mbeddr.mpsutil.multilingual.editor.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -228,7 +228,7 @@
             <node concept="2OqwBi" id="4gGXGcMdoHo" role="37vLTx">
               <node concept="2Sf5sV" id="4gGXGcMdoHp" role="2Oq$k0" />
               <node concept="3TrcHB" id="4gGXGcMdoHq" role="2OqNvi">
-                <ref role="3TsBF5" to="tpc2:gtcu_tw" resolve="attractsFocus" />
+                <ref role="3TsBF5" to="tpc2:3Ftr4R6BH0x" resolve="attractsFocus" />
               </node>
             </node>
             <node concept="2OqwBi" id="4gGXGcMdoHr" role="37vLTJ">
@@ -236,7 +236,7 @@
                 <ref role="3cqZAo" node="2bng37t3331" resolve="multilingualConstant" />
               </node>
               <node concept="3TrcHB" id="4gGXGcMdoHt" role="2OqNvi">
-                <ref role="3TsBF5" to="tpc2:gtcu_tw" resolve="attractsFocus" />
+                <ref role="3TsBF5" to="tpc2:3Ftr4R6BH0x" resolve="attractsFocus" />
               </node>
             </node>
           </node>
@@ -380,7 +380,7 @@
             <node concept="2OqwBi" id="4gGXGcMdUZl" role="37vLTx">
               <node concept="2Sf5sV" id="4gGXGcMdUZm" role="2Oq$k0" />
               <node concept="3TrcHB" id="4gGXGcMdUZn" role="2OqNvi">
-                <ref role="3TsBF5" to="tpc2:gtcu_tw" resolve="attractsFocus" />
+                <ref role="3TsBF5" to="tpc2:3Ftr4R6BH0x" resolve="attractsFocus" />
               </node>
             </node>
             <node concept="2OqwBi" id="4gGXGcMdUZo" role="37vLTJ">
@@ -388,7 +388,7 @@
                 <ref role="3cqZAo" node="4gGXGcMdUYO" resolve="multilingualAlias" />
               </node>
               <node concept="3TrcHB" id="4gGXGcMdUZq" role="2OqNvi">
-                <ref role="3TsBF5" to="tpc2:gtcu_tw" resolve="attractsFocus" />
+                <ref role="3TsBF5" to="tpc2:3Ftr4R6BH0x" resolve="attractsFocus" />
               </node>
             </node>
           </node>

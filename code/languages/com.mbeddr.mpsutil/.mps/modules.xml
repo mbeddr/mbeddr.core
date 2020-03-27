@@ -214,6 +214,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.xmlImport/com.mbeddr.mpsutil.xmlImport.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.xmodel.actions/com.mbeddr.mpsutil.xmodel.actions.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.opencsv/com.opencsv.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.apache.batik/org.apache.batik.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mockito/org.mockito.msd" folder="stubs" />
       <modulePath path="$PROJECT_DIR$/solutions/org.xml/org.xml.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.compare.pattern.test/com.mbeddr.mpsutil.compare.pattern.test.msd" folder="staging.comparator" />

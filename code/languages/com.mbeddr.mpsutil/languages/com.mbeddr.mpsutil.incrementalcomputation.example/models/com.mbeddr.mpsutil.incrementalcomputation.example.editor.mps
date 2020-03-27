@@ -2,7 +2,7 @@
 <model ref="r:e589f2dd-37de-40f7-8458-e11beefb82aa(com.mbeddr.mpsutil.incrementalcomputation.example.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -203,7 +203,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="30gYXW" id="5YITc37MB5V" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
         <node concept="VPM3Z" id="5YITc37MGyT" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -242,7 +242,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="30gYXW" id="3mJtqpyRbSY" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
         <node concept="VPM3Z" id="3mJtqpyRbSZ" role="3F10Kt">
           <property role="VOm3f" value="false" />

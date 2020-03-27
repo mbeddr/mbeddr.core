@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.xmodel" uuid="6a3e0eff-37cf-42b0-b9f7-f73a415ebbfd">
+  <exported-solutions>
+    <exported-solution>ba2ac496-8745-40ba-babe-060b0c8daaad(com.mbeddr.xmodel.plan)</exported-solution>
+  </exported-solutions>
+  <generation-plan model="r:8bed4b02-7437-49bf-bfa1-4f220b72fa26(com.mbeddr.xmodel.plan.genplan)" />
+</dev-kit>
+

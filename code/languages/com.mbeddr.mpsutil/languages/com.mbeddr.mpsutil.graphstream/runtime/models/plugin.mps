@@ -4,9 +4,9 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
@@ -37,13 +37,13 @@
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="k4pk" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/r:e053bdde-b82f-4d5b-a735-e0af382d4ef2(com.mbeddr.mpsutil.plantuml.pluginSolution/com.mbeddr.mpsutil.plantuml.pluginSolution.plugin)" />
-    <import index="er5d" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="41rc" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.gvt(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="u99y" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model.style(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="er5d" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing(org.apache.batik/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
+    <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -171,9 +171,6 @@
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
         <child id="1164903700860" name="catchClause" index="TEXxN" />
-      </concept>
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -357,11 +354,8 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -441,6 +435,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -493,7 +495,7 @@
   <node concept="2DaZZR" id="4IojDAdgZru" />
   <node concept="sEfby" id="1X6acCMyKUd">
     <property role="TrG5h" value="GraphingTool" />
-    <property role="2bmUCM" value="RIGHT" />
+    <property role="2bmUCM" value="2aGS$UDXOxV/RIGHT" />
     <property role="2XNbzY" value="Graphing" />
     <node concept="2BZ0e9" id="1aZIu9Ypiwv" role="2XNbBz">
       <property role="TrG5h" value="project" />
@@ -2231,8 +2233,67 @@
       </node>
       <node concept="3clFbS" id="64_1OWexjgE" role="3clF47">
         <node concept="3SKdUt" id="64_1OWe$NDA" role="3cqZAp">
-          <node concept="3SKdUq" id="64_1OWe$NDC" role="3SKWNk">
-            <property role="3SKdUp" value="if paintComponent is called in the context of a tool-window-repaint, the drawing is erased. call to repaint() fixes this problem." />
+          <node concept="1PaTwC" id="17qUVvSZkVK" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkVL" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVM" role="1PaTwD">
+              <property role="3oM_SC" value="paintComponent" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVN" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVO" role="1PaTwD">
+              <property role="3oM_SC" value="called" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVP" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVQ" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVR" role="1PaTwD">
+              <property role="3oM_SC" value="context" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVS" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVT" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVU" role="1PaTwD">
+              <property role="3oM_SC" value="tool-window-repaint," />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVV" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVW" role="1PaTwD">
+              <property role="3oM_SC" value="drawing" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVX" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVY" role="1PaTwD">
+              <property role="3oM_SC" value="erased." />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkVZ" role="1PaTwD">
+              <property role="3oM_SC" value="call" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkW0" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkW1" role="1PaTwD">
+              <property role="3oM_SC" value="repaint()" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkW2" role="1PaTwD">
+              <property role="3oM_SC" value="fixes" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkW3" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkW4" role="1PaTwD">
+              <property role="3oM_SC" value="problem." />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="64_1OWezR6r" role="3cqZAp">
@@ -2365,13 +2426,101 @@
       </node>
       <node concept="3clFbS" id="6I5RWbd3OdY" role="3clF47">
         <node concept="3SKdUt" id="6I5RWbd3PVx" role="3cqZAp">
-          <node concept="3SKdUq" id="6I5RWbd3PVy" role="3SKWNk">
-            <property role="3SKdUp" value="the camera does not seem to be in synch after the view lost the focus in MPS. maybe related to repaint() problem above." />
+          <node concept="1PaTwC" id="17qUVvSZkW5" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkW6" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkW7" role="1PaTwD">
+              <property role="3oM_SC" value="camera" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkW8" role="1PaTwD">
+              <property role="3oM_SC" value="does" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkW9" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWa" role="1PaTwD">
+              <property role="3oM_SC" value="seem" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWb" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWc" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWd" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWe" role="1PaTwD">
+              <property role="3oM_SC" value="synch" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWf" role="1PaTwD">
+              <property role="3oM_SC" value="after" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWg" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWh" role="1PaTwD">
+              <property role="3oM_SC" value="view" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWi" role="1PaTwD">
+              <property role="3oM_SC" value="lost" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWj" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWk" role="1PaTwD">
+              <property role="3oM_SC" value="focus" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWl" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWm" role="1PaTwD">
+              <property role="3oM_SC" value="MPS." />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWn" role="1PaTwD">
+              <property role="3oM_SC" value="maybe" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWo" role="1PaTwD">
+              <property role="3oM_SC" value="related" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWp" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWq" role="1PaTwD">
+              <property role="3oM_SC" value="repaint()" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWr" role="1PaTwD">
+              <property role="3oM_SC" value="problem" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWs" role="1PaTwD">
+              <property role="3oM_SC" value="above." />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6I5RWbd40fJ" role="3cqZAp">
-          <node concept="3SKdUq" id="6I5RWbd40fL" role="3SKWNk">
-            <property role="3SKdUp" value="move the camera to fix the problem" />
+          <node concept="1PaTwC" id="17qUVvSZkWt" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkWu" role="1PaTwD">
+              <property role="3oM_SC" value="move" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWv" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWw" role="1PaTwD">
+              <property role="3oM_SC" value="camera" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWx" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWy" role="1PaTwD">
+              <property role="3oM_SC" value="fix" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWz" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkW$" role="1PaTwD">
+              <property role="3oM_SC" value="problem" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="6I5RWbd3U0Y" role="3cqZAp">
@@ -2451,28 +2600,236 @@
       </node>
       <node concept="3clFbS" id="6I5RWbd3OdA" role="3clF47">
         <node concept="3SKdUt" id="6I5RWbd44L8" role="3cqZAp">
-          <node concept="3SKdUq" id="6I5RWbd44L9" role="3SKWNk">
-            <property role="3SKdUp" value="This registers a mouse listener that forces camera synch before the use clicks somewhere (see above)" />
+          <node concept="1PaTwC" id="17qUVvSZkW_" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkWA" role="1PaTwD">
+              <property role="3oM_SC" value="This" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWB" role="1PaTwD">
+              <property role="3oM_SC" value="registers" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWC" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWD" role="1PaTwD">
+              <property role="3oM_SC" value="mouse" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWE" role="1PaTwD">
+              <property role="3oM_SC" value="listener" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWF" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWG" role="1PaTwD">
+              <property role="3oM_SC" value="forces" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWH" role="1PaTwD">
+              <property role="3oM_SC" value="camera" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWI" role="1PaTwD">
+              <property role="3oM_SC" value="synch" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWJ" role="1PaTwD">
+              <property role="3oM_SC" value="before" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWK" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWL" role="1PaTwD">
+              <property role="3oM_SC" value="use" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWM" role="1PaTwD">
+              <property role="3oM_SC" value="clicks" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWN" role="1PaTwD">
+              <property role="3oM_SC" value="somewhere" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWO" role="1PaTwD">
+              <property role="3oM_SC" value="(see" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWP" role="1PaTwD">
+              <property role="3oM_SC" value="above)" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="7PLVYgqNj9v" role="3cqZAp">
-          <node concept="3SKdUq" id="7PLVYgqNj9x" role="3SKWNk">
-            <property role="3SKdUp" value="First idea was to place it in AncestorAdded, but it seems to be called to early. In MPS ancestorMoved also seems to" />
+          <node concept="1PaTwC" id="17qUVvSZkWQ" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkWR" role="1PaTwD">
+              <property role="3oM_SC" value="First" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWS" role="1PaTwD">
+              <property role="3oM_SC" value="idea" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWT" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWU" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWV" role="1PaTwD">
+              <property role="3oM_SC" value="place" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWW" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWX" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWY" role="1PaTwD">
+              <property role="3oM_SC" value="AncestorAdded," />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkWZ" role="1PaTwD">
+              <property role="3oM_SC" value="but" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX0" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX1" role="1PaTwD">
+              <property role="3oM_SC" value="seems" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX2" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX3" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX4" role="1PaTwD">
+              <property role="3oM_SC" value="called" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX5" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX6" role="1PaTwD">
+              <property role="3oM_SC" value="early." />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX7" role="1PaTwD">
+              <property role="3oM_SC" value="In" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX8" role="1PaTwD">
+              <property role="3oM_SC" value="MPS" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX9" role="1PaTwD">
+              <property role="3oM_SC" value="ancestorMoved" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXa" role="1PaTwD">
+              <property role="3oM_SC" value="also" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXb" role="1PaTwD">
+              <property role="3oM_SC" value="seems" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXc" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="7PLVYgqNk0Y" role="3cqZAp">
-          <node concept="3SKdUq" id="7PLVYgqNk10" role="3SKWNk">
-            <property role="3SKdUp" value="be called every time (WHY??!), so maybe this is a better place." />
+          <node concept="1PaTwC" id="17qUVvSZkXd" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkXe" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXf" role="1PaTwD">
+              <property role="3oM_SC" value="called" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXg" role="1PaTwD">
+              <property role="3oM_SC" value="every" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXh" role="1PaTwD">
+              <property role="3oM_SC" value="time" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXi" role="1PaTwD">
+              <property role="3oM_SC" value="(WHY??!)," />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXj" role="1PaTwD">
+              <property role="3oM_SC" value="so" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXk" role="1PaTwD">
+              <property role="3oM_SC" value="maybe" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXl" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXm" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXn" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXo" role="1PaTwD">
+              <property role="3oM_SC" value="better" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXp" role="1PaTwD">
+              <property role="3oM_SC" value="place." />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="7PLVYgqL5gI" role="3cqZAp">
-          <node concept="3SKdUq" id="7PLVYgqL5gJ" role="3SKWNk">
-            <property role="3SKdUp" value="The additional delay makes sure that view is built up before MouseMotionListener gets registered (otherwise autofit" />
+          <node concept="1PaTwC" id="17qUVvSZkXq" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkXr" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXs" role="1PaTwD">
+              <property role="3oM_SC" value="additional" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXt" role="1PaTwD">
+              <property role="3oM_SC" value="delay" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXu" role="1PaTwD">
+              <property role="3oM_SC" value="makes" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXv" role="1PaTwD">
+              <property role="3oM_SC" value="sure" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXw" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXx" role="1PaTwD">
+              <property role="3oM_SC" value="view" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXy" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXz" role="1PaTwD">
+              <property role="3oM_SC" value="built" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX$" role="1PaTwD">
+              <property role="3oM_SC" value="up" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkX_" role="1PaTwD">
+              <property role="3oM_SC" value="before" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXA" role="1PaTwD">
+              <property role="3oM_SC" value="MouseMotionListener" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXB" role="1PaTwD">
+              <property role="3oM_SC" value="gets" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXC" role="1PaTwD">
+              <property role="3oM_SC" value="registered" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXD" role="1PaTwD">
+              <property role="3oM_SC" value="(otherwise" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXE" role="1PaTwD">
+              <property role="3oM_SC" value="autofit" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="7PLVYgqNkqJ" role="3cqZAp">
-          <node concept="3SKdUq" id="7PLVYgqNkqK" role="3SKWNk">
-            <property role="3SKdUp" value="might be disabled too early)" />
+          <node concept="1PaTwC" id="17qUVvSZkXF" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZkXG" role="1PaTwD">
+              <property role="3oM_SC" value="might" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXH" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXI" role="1PaTwD">
+              <property role="3oM_SC" value="disabled" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXJ" role="1PaTwD">
+              <property role="3oM_SC" value="too" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZkXK" role="1PaTwD">
+              <property role="3oM_SC" value="early)" />
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="7PLVYgqNhj4" role="3cqZAp" />
@@ -3283,7 +3640,7 @@
       <property role="TrG5h" value="_view" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="6x5UxX2YZeJ" role="1B3o_S" />
-      <node concept="3uibUv" id="6x5UxX2Z0dg" role="1tU5fm">
+      <node concept="3uibUv" id="5oDe0RHc_zD" role="1tU5fm">
         <ref role="3uigEE" to="er5d:~JSVGScrollPane" resolve="JSVGScrollPane" />
       </node>
     </node>
@@ -3691,8 +4048,8 @@
       <node concept="3clFbS" id="1V72FUbz0RW" role="3clF47">
         <node concept="YS8fn" id="1V72FUbz3u1" role="3cqZAp">
           <node concept="2ShNRf" id="1V72FUbz3yj" role="YScLw">
-            <node concept="HV5vD" id="1V72FUbzaYl" role="2ShVmc">
-              <ref role="HV5vE" to="wyt6:~UnsupportedOperationException" resolve="UnsupportedOperationException" />
+            <node concept="1pGfFk" id="5oDe0RHaHJn" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
             </node>
           </node>
         </node>
@@ -3712,8 +4069,8 @@
       <node concept="3clFbS" id="1V72FUbz0S6" role="3clF47">
         <node concept="YS8fn" id="1V72FUbzb19" role="3cqZAp">
           <node concept="2ShNRf" id="1V72FUbzb1a" role="YScLw">
-            <node concept="HV5vD" id="1V72FUbzb1b" role="2ShVmc">
-              <ref role="HV5vE" to="wyt6:~UnsupportedOperationException" resolve="UnsupportedOperationException" />
+            <node concept="1pGfFk" id="5oDe0RHaHJp" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
             </node>
           </node>
         </node>

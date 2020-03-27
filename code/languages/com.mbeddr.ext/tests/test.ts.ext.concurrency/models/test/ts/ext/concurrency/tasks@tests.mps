@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -82,19 +82,16 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
-        <child id="5323740605968447026" name="target" index="2AWWZH" />
+        <child id="5323740605968447026" name="platform" index="2AWWZH" />
       </concept>
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
         <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
-      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
-        <child id="1485382076185232212" name="targets" index="3anu1O" />
-      </concept>
-      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -188,7 +185,6 @@
         <child id="7551459360504815631" name="init" index="6v0L8" />
       </concept>
       <concept id="7551459360495600340" name="com.mbeddr.ext.concurrency.structure.TimeWithUnit" flags="ng" index="6VUUj">
-        <property id="7551459360495620501" name="unit" index="6VZRi" />
         <child id="7551459360495619535" name="value" index="6VY68" />
       </concept>
       <concept id="6675674002518000425" name="com.mbeddr.ext.concurrency.structure.PeriodConstraint" flags="ng" index="28Ko4b">
@@ -416,18 +412,7 @@
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
       <property role="3I8uaA" value="" />
-      <node concept="3abb7c" id="4LhGMnjpRco" role="3anu1O">
-        <property role="TrG5h" value="Win32" />
-      </node>
-      <node concept="3abb7c" id="4LhGMnjpRcp" role="3anu1O">
-        <property role="TrG5h" value="MacOSX" />
-      </node>
-      <node concept="3abb7c" id="4LhGMnjpRcq" role="3anu1O">
-        <property role="TrG5h" value="Linux" />
-      </node>
-      <node concept="3abb7c" id="4LhGMnjpRcr" role="3anu1O">
-        <property role="TrG5h" value="portable" />
-      </node>
+      <property role="18_EFo" value="gcc" />
     </node>
     <node concept="2Q9Fgs" id="73JrkgyAU1q" role="2Q9xDr">
       <node concept="2Q9FjX" id="73JrkgyAU1r" role="2Q9FjI" />
@@ -778,7 +763,7 @@
                 </node>
               </node>
               <node concept="3JTKKU" id="66UaKxBzW3y" role="3JU$Ix">
-                <property role="3JU$zx" value="readWrite" />
+                <property role="3JU$zx" value="vg5qBCe_P5/readWrite" />
                 <ref role="3JU$zz" node="vg5qBCfD_L" resolve="data" />
               </node>
             </node>
@@ -844,7 +829,7 @@
                 </node>
               </node>
               <node concept="3JTKKU" id="66UaKxBG2ED" role="3JU$Ix">
-                <property role="3JU$zx" value="readWrite" />
+                <property role="3JU$zx" value="vg5qBCe_P5/readWrite" />
                 <ref role="3JU$zz" node="vg5qBCfD_L" resolve="data" />
               </node>
             </node>
@@ -935,7 +920,6 @@
             <property role="3_dPry" value="2" />
             <ref role="6qQL_" node="12_KeTzW_69" resolve="aCyclicTask" />
             <node concept="6VUUj" id="6zcb4tIttAE" role="6EqoZ">
-              <property role="6VZRi" value="ms" />
               <node concept="3TlMh9" id="6zcb4tIttAO" role="6VY68">
                 <property role="2hmy$m" value="20" />
               </node>

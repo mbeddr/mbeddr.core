@@ -2,6 +2,7 @@
 <model ref="r:ff92def5-2ec5-4bf5-a21f-4f9214c42bb9(com.mbeddr.mpsutil.suppresswarning.gen.constraints)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -52,11 +53,8 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -94,6 +92,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -112,8 +118,85 @@
       <node concept="3dgokm" id="79g_UwJJ6Dk" role="1N6uqs">
         <node concept="3clFbS" id="2lop6rSgbuc" role="2VODD2">
           <node concept="3SKdUt" id="2lop6rSgbud" role="3cqZAp">
-            <node concept="3SKdUq" id="2lop6rSgbue" role="3SKWNk">
-              <property role="3SKdUp" value="todo [Mihail Muhin]: should be rewritten to work on nodes, without translating to concepts. Now MPS misses a method to get concept's ancestors from a node" />
+            <node concept="1PaTwC" id="17qUVvSZkV6" role="3ndbpf">
+              <node concept="3oM_SD" id="17qUVvSZkV7" role="1PaTwD">
+                <property role="3oM_SC" value="todo" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkV8" role="1PaTwD">
+                <property role="3oM_SC" value="[Mihail" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkV9" role="1PaTwD">
+                <property role="3oM_SC" value="Muhin]:" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVa" role="1PaTwD">
+                <property role="3oM_SC" value="should" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVb" role="1PaTwD">
+                <property role="3oM_SC" value="be" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVc" role="1PaTwD">
+                <property role="3oM_SC" value="rewritten" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVd" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVe" role="1PaTwD">
+                <property role="3oM_SC" value="work" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVf" role="1PaTwD">
+                <property role="3oM_SC" value="on" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVg" role="1PaTwD">
+                <property role="3oM_SC" value="nodes," />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVh" role="1PaTwD">
+                <property role="3oM_SC" value="without" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVi" role="1PaTwD">
+                <property role="3oM_SC" value="translating" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVj" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVk" role="1PaTwD">
+                <property role="3oM_SC" value="concepts." />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVl" role="1PaTwD">
+                <property role="3oM_SC" value="Now" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVm" role="1PaTwD">
+                <property role="3oM_SC" value="MPS" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVn" role="1PaTwD">
+                <property role="3oM_SC" value="misses" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVo" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVp" role="1PaTwD">
+                <property role="3oM_SC" value="method" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVq" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVr" role="1PaTwD">
+                <property role="3oM_SC" value="get" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVs" role="1PaTwD">
+                <property role="3oM_SC" value="concept's" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVt" role="1PaTwD">
+                <property role="3oM_SC" value="ancestors" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVu" role="1PaTwD">
+                <property role="3oM_SC" value="from" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVv" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="17qUVvSZkVw" role="1PaTwD">
+                <property role="3oM_SC" value="node" />
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="2lop6rSgbuf" role="3cqZAp">

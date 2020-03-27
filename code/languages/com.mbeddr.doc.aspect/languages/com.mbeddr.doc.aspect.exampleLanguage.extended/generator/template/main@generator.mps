@@ -2,7 +2,7 @@
 <model ref="r:d03fd8f4-c1b2-4a91-b882-b3d01efef88c(com.mbeddr.doc.aspect.exampleLanguage.extended.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
   </languages>
   <imports />
   <registry>

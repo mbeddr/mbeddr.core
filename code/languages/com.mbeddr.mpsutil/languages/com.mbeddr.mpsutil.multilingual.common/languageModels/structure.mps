@@ -10,6 +10,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
         <property id="1083066089218" name="constraint" index="FLfZY" />
       </concept>
@@ -52,6 +55,7 @@
     <property role="3GE5qa" value="language" />
     <property role="TrG5h" value="CountryCode" />
     <property role="FLfZY" value="[A-Z]{2}" />
+    <property role="3F6X1D" value="568377005202317227" />
   </node>
   <node concept="1TIwiD" id="vzhXZP_pYG">
     <property role="TrG5h" value="Language" />
@@ -76,6 +80,7 @@
     <property role="3GE5qa" value="language" />
     <property role="TrG5h" value="LanguageCode" />
     <property role="FLfZY" value="[a-z]{2}" />
+    <property role="3F6X1D" value="568377005202317232" />
   </node>
   <node concept="1TIwiD" id="vzhXZP_pYL">
     <property role="3GE5qa" value="language" />
@@ -84,9 +89,9 @@
     <property role="EcuMT" value="568377005202317233" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="vzhXZP_pYM" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="languages" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="568377005202317234" />
       <ref role="20lvS9" node="vzhXZP_pYG" resolve="Language" />
     </node>
@@ -130,9 +135,9 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="vzhXZP_pZs" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="keys" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="568377005202317276" />
       <ref role="20lvS9" node="vzhXZP_pZm" resolve="MessageKey" />
     </node>
@@ -145,9 +150,8 @@
     <property role="TrG5h" value="IMessageKeyHolder" />
     <property role="EcuMT" value="2510545900188083931" />
     <node concept="1TJgyj" id="2bng37t1yrs" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="key" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="2510545900188083932" />
       <ref role="20lvS9" node="vzhXZP_pZm" resolve="MessageKey" />
     </node>

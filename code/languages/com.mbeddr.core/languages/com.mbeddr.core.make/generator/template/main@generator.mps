@@ -2,11 +2,11 @@
 <model ref="r:af37fca1-798b-45df-aec5-ad383e112865(com.mbeddr.core.make.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="9" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,7 +15,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -71,15 +70,15 @@
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
     </language>
     <language id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make">
+      <concept id="141192364196052916" name="com.mbeddr.core.make.structure.VariableValue" flags="ng" index="94E81">
+        <child id="3241057742986074976" name="valueItems" index="17N5uS" />
+      </concept>
       <concept id="3373914745211365206" name="com.mbeddr.core.make.structure.Variable" flags="ng" index="3G52F3">
         <property id="7595578942777303019" name="assignmentType" index="12Lnk_" />
-        <property id="3373914745211446888" name="value" index="3G5mJX" />
+        <child id="3241057742986190568" name="values" index="17Kx8K" />
       </concept>
-      <concept id="3373914745211590947" name="com.mbeddr.core.make.structure.TextCommandItem" flags="ng" index="3G69iQ">
+      <concept id="3373914745211590947" name="com.mbeddr.core.make.structure.PlainTextFragment" flags="ng" index="3G69iQ">
         <property id="3373914745211590948" name="text" index="3G69iL" />
-      </concept>
-      <concept id="5950410542643589987" name="com.mbeddr.core.make.structure.TextDependency" flags="ng" index="3O_EAZ">
-        <property id="5950410542643589988" name="text" index="3O_EAS" />
       </concept>
       <concept id="5950410542643585247" name="com.mbeddr.core.make.structure.Makefile" flags="ng" index="3O_FC3">
         <child id="7595578942777957190" name="content" index="12RR68" />
@@ -131,33 +130,18 @@
       <node concept="30G5F_" id="bzEfeAYKWt" role="30HLyM">
         <node concept="3clFbS" id="bzEfeAYKWu" role="2VODD2">
           <node concept="3clFbF" id="bzEfeAYKWv" role="3cqZAp">
-            <node concept="22lmx$" id="bzEfeAYKWJ" role="3clFbG">
-              <node concept="2OqwBi" id="bzEfeAYKWE" role="3uHU7B">
-                <node concept="2OqwBi" id="bzEfeAYKWx" role="2Oq$k0">
-                  <node concept="30H73N" id="bzEfeAYKWw" role="2Oq$k0" />
-                  <node concept="2Rf3mk" id="bzEfeAYKW_" role="2OqNvi">
-                    <node concept="1xMEDy" id="bzEfeAYKWA" role="1xVPHs">
-                      <node concept="chp4Y" id="bzEfeAYKWD" role="ri$Ld">
-                        <ref role="cht4Q" to="i2y7:bzEfeAYe93" resolve="ModuleRefCommandItem" />
-                      </node>
+            <node concept="2OqwBi" id="bzEfeAYKWE" role="3clFbG">
+              <node concept="2OqwBi" id="bzEfeAYKWx" role="2Oq$k0">
+                <node concept="30H73N" id="bzEfeAYKWw" role="2Oq$k0" />
+                <node concept="2Rf3mk" id="bzEfeAYKW_" role="2OqNvi">
+                  <node concept="1xMEDy" id="bzEfeAYKWA" role="1xVPHs">
+                    <node concept="chp4Y" id="bzEfeAYKWD" role="ri$Ld">
+                      <ref role="cht4Q" to="i2y7:bzEfeAYe93" resolve="ModuleRef" />
                     </node>
                   </node>
                 </node>
-                <node concept="3GX2aA" id="bzEfeAYKWI" role="2OqNvi" />
               </node>
-              <node concept="2OqwBi" id="bzEfeAYKWM" role="3uHU7w">
-                <node concept="2OqwBi" id="bzEfeAYKWN" role="2Oq$k0">
-                  <node concept="30H73N" id="bzEfeAYKWO" role="2Oq$k0" />
-                  <node concept="2Rf3mk" id="bzEfeAYKWP" role="2OqNvi">
-                    <node concept="1xMEDy" id="bzEfeAYKWQ" role="1xVPHs">
-                      <node concept="chp4Y" id="bzEfeAYKWT" role="ri$Ld">
-                        <ref role="cht4Q" to="i2y7:bzEfeAYj5d" resolve="ModuleRefDependency" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3GX2aA" id="bzEfeAYKWS" role="2OqNvi" />
-              </node>
+              <node concept="3GX2aA" id="bzEfeAYKWI" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -165,7 +149,7 @@
     </node>
     <node concept="3aamgX" id="bzEfeAYKVS" role="3acgRq">
       <property role="3GE5qa" value="command" />
-      <ref role="30HIoZ" to="i2y7:bzEfeAYe93" resolve="ModuleRefCommandItem" />
+      <ref role="30HIoZ" to="i2y7:bzEfeAYe93" resolve="ModuleRef" />
       <node concept="gft3U" id="bzEfeAYKVU" role="1lVwrX">
         <node concept="3G69iQ" id="bzEfeAYKVW" role="gfFT$">
           <property role="3G69iL" value="bla" />
@@ -198,47 +182,11 @@
         </node>
       </node>
     </node>
-    <node concept="3aamgX" id="bzEfeAYKVX" role="3acgRq">
-      <property role="3GE5qa" value="dependency" />
-      <ref role="30HIoZ" to="i2y7:bzEfeAYj5d" resolve="ModuleRefDependency" />
-      <node concept="gft3U" id="bzEfeAYKVZ" role="1lVwrX">
-        <node concept="3O_EAZ" id="bzEfeAYKW1" role="gfFT$">
-          <property role="3O_EAS" value="blub" />
-          <node concept="17Uvod" id="bzEfeAYME2" role="lGtFl">
-            <property role="2qtEX9" value="text" />
-            <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/5950410542643589987/5950410542643589988" />
-            <node concept="3zFVjK" id="bzEfeAYME3" role="3zH0cK">
-              <node concept="3clFbS" id="bzEfeAYME4" role="2VODD2">
-                <node concept="3clFbF" id="bzEfeAYME5" role="3cqZAp">
-                  <node concept="3cpWs3" id="bzEfeAYME6" role="3clFbG">
-                    <node concept="Xl_RD" id="bzEfeAYME7" role="3uHU7w">
-                      <property role="Xl_RC" value=".c" />
-                    </node>
-                    <node concept="2OqwBi" id="bzEfeAYME8" role="3uHU7B">
-                      <node concept="2OqwBi" id="bzEfeAYME9" role="2Oq$k0">
-                        <node concept="30H73N" id="bzEfeAYMEa" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="bzEfeAYMEd" role="2OqNvi">
-                          <ref role="3Tt5mk" to="i2y7:bzEfeAYj5B" resolve="module" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="bzEfeAYMEc" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="3O_FC3" id="bzEfeAYKWU">
     <property role="TrG5h" value="Makefile" />
     <node concept="3G52F3" id="bzEfeAYKX6" role="12RR68">
       <property role="TrG5h" value="V" />
-      <property role="3G5mJX" value="V" />
       <property role="12Lnk_" value="=" />
       <node concept="2b32R4" id="bzEfeAYKX8" role="lGtFl">
         <node concept="3JmXsc" id="bzEfeAYKXb" role="2P8S$">
@@ -252,6 +200,11 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="94E81" id="2NUzdxFidc7" role="17Kx8K">
+        <node concept="3G69iQ" id="2NUzdxFidc8" role="17N5uS">
+          <property role="3G69iL" value="V" />
         </node>
       </node>
     </node>

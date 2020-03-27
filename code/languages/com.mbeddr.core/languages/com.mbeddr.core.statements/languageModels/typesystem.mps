@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -110,11 +111,8 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -286,6 +284,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -887,8 +893,22 @@
         </node>
       </node>
       <node concept="3SKdUt" id="3fV$BrW89oX" role="3cqZAp">
-        <node concept="3SKdUq" id="3fV$BrW89oY" role="3SKWNk">
-          <property role="3SKdUp" value="might be a runtime type" />
+        <node concept="1PaTwC" id="13p6s1wtiRT" role="3ndbpf">
+          <node concept="3oM_SD" id="13p6s1wtiRU" role="1PaTwD">
+            <property role="3oM_SC" value="might" />
+          </node>
+          <node concept="3oM_SD" id="13p6s1wtiRV" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="13p6s1wtiRW" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="13p6s1wtiRX" role="1PaTwD">
+            <property role="3oM_SC" value="runtime" />
+          </node>
+          <node concept="3oM_SD" id="13p6s1wtiRY" role="1PaTwD">
+            <property role="3oM_SC" value="type" />
+          </node>
         </node>
       </node>
       <node concept="3clFbJ" id="3fV$BrW89oq" role="3cqZAp">
@@ -1152,18 +1172,90 @@
     <node concept="Q5ZZ6" id="4nazFRvnshm" role="Q6x$H">
       <node concept="3clFbS" id="4nazFRvnshn" role="2VODD2">
         <node concept="3SKdUt" id="3W7xeEKzUpl" role="3cqZAp">
-          <node concept="3SKdUq" id="3W7xeEKzUpn" role="3SKWNk">
-            <property role="3SKdUp" value="Delete the ExpressionStatement when the expression is empty" />
+          <node concept="1PaTwC" id="13p6s1wtiRZ" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtiS0" role="1PaTwD">
+              <property role="3oM_SC" value="Delete" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiS1" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiS2" role="1PaTwD">
+              <property role="3oM_SC" value="ExpressionStatement" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiS3" role="1PaTwD">
+              <property role="3oM_SC" value="when" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiS4" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiS5" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiS6" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiS7" role="1PaTwD">
+              <property role="3oM_SC" value="empty" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="3W7xeEKzUAN" role="3cqZAp">
-          <node concept="3SKdUq" id="3W7xeEKzUAP" role="3SKWNk">
-            <property role="3SKdUp" value="If the expression has been commented out, keep the ex[pression statement commented out" />
+          <node concept="1PaTwC" id="13p6s1wtiS8" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtiS9" role="1PaTwD">
+              <property role="3oM_SC" value="If" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSa" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSb" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSc" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSd" role="1PaTwD">
+              <property role="3oM_SC" value="been" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSe" role="1PaTwD">
+              <property role="3oM_SC" value="commented" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSf" role="1PaTwD">
+              <property role="3oM_SC" value="out," />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSg" role="1PaTwD">
+              <property role="3oM_SC" value="keep" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSh" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSi" role="1PaTwD">
+              <property role="3oM_SC" value="ex[pression" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSj" role="1PaTwD">
+              <property role="3oM_SC" value="statement" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSk" role="1PaTwD">
+              <property role="3oM_SC" value="commented" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSl" role="1PaTwD">
+              <property role="3oM_SC" value="out" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="3W7xeEKzUS2" role="3cqZAp">
-          <node concept="3SKdUq" id="3W7xeEKzUS4" role="3SKWNk">
-            <property role="3SKdUp" value=" Solves issue accent-1773" />
+          <node concept="1PaTwC" id="13p6s1wtiSm" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtiSn" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSo" role="1PaTwD">
+              <property role="3oM_SC" value="Solves" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSp" role="1PaTwD">
+              <property role="3oM_SC" value="issue" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiSq" role="1PaTwD">
+              <property role="3oM_SC" value="accent-1773" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="3W7xeEKzwKe" role="3cqZAp">

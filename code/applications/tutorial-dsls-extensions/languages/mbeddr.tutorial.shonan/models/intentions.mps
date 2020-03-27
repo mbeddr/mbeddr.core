@@ -2,7 +2,7 @@
 <model ref="r:3afcdb27-e971-45cb-b071-8cbab916d114(mbeddr.tutorial.shonan.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -320,7 +320,7 @@
           <node concept="2OqwBi" id="4S40IZtyKKf" role="3clFbG">
             <node concept="1XNTG" id="4S40IZtyKKg" role="2Oq$k0" />
             <node concept="liA8E" id="4S40IZtyKKh" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+              <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode)" resolve="select" />
               <node concept="2OqwBi" id="4S40IZtyKKi" role="37wK5m">
                 <node concept="2OqwBi" id="4S40IZtyKKj" role="2Oq$k0">
                   <node concept="37vLTw" id="4S40IZtyKKk" role="2Oq$k0">

@@ -39,16 +39,15 @@
     <property role="EcuMT" value="8455208232410321431" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7lmVLrULD8o" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="reviewedRoot" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8455208232410321432" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
     <node concept="1TJgyj" id="7lmVLrULD8p" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="notes" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="8455208232410321433" />
       <ref role="20lvS9" to="7krq:10nVqVfzGFV" resolve="ReviewNote" />
     </node>

@@ -2,7 +2,7 @@
 <model ref="r:2808793a-b965-4dc3-b84a-20f62bd763cb(com.mbeddr.doc.aspect.exampleLanguage.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -78,15 +78,21 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="4MORkbYxo7">
-    <ref role="1XX52x" to="hauh:4MORkbYxnx" resolve="Node" />
-    <node concept="3EZMnI" id="1MEM7LwxejR" role="2wV5jI">
-      <node concept="l2Vlx" id="1MEM7LwxejS" role="2iSdaV" />
-      <node concept="PMmxH" id="1MEM7Lwxek4" role="3EZMnx">
+  <node concept="24kQdi" id="1MEM7LwynlY">
+    <ref role="1XX52x" to="hauh:1MEM7LwynlN" resolve="ColoredNode" />
+    <node concept="3EZMnI" id="1MEM7Lwynm2" role="2wV5jI">
+      <node concept="l2Vlx" id="1MEM7Lwynm3" role="2iSdaV" />
+      <node concept="PMmxH" id="1MEM7Lwynm0" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
-      <node concept="3F0A7n" id="4MORkbYxo9" role="3EZMnx">
+      <node concept="3F0A7n" id="1MEM7Lwynmb" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="1MEM7Lwynmj" role="3EZMnx">
+        <property role="3F0ifm" value="with color" />
+      </node>
+      <node concept="3F0A7n" id="1MEM7Lwynmt" role="3EZMnx">
+        <ref role="1NtTu8" to="hauh:1MEM7LwynlO" resolve="color" />
       </node>
     </node>
   </node>
@@ -196,21 +202,15 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="1MEM7LwynlY">
-    <ref role="1XX52x" to="hauh:1MEM7LwynlN" resolve="ColoredNode" />
-    <node concept="3EZMnI" id="1MEM7Lwynm2" role="2wV5jI">
-      <node concept="l2Vlx" id="1MEM7Lwynm3" role="2iSdaV" />
-      <node concept="PMmxH" id="1MEM7Lwynm0" role="3EZMnx">
+  <node concept="24kQdi" id="4MORkbYxo7">
+    <ref role="1XX52x" to="hauh:4MORkbYxnx" resolve="Node" />
+    <node concept="3EZMnI" id="1MEM7LwxejR" role="2wV5jI">
+      <node concept="l2Vlx" id="1MEM7LwxejS" role="2iSdaV" />
+      <node concept="PMmxH" id="1MEM7Lwxek4" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
-      <node concept="3F0A7n" id="1MEM7Lwynmb" role="3EZMnx">
+      <node concept="3F0A7n" id="4MORkbYxo9" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="1MEM7Lwynmj" role="3EZMnx">
-        <property role="3F0ifm" value="with color" />
-      </node>
-      <node concept="3F0A7n" id="1MEM7Lwynmt" role="3EZMnx">
-        <ref role="1NtTu8" to="hauh:1MEM7LwynlO" resolve="color" />
       </node>
     </node>
   </node>

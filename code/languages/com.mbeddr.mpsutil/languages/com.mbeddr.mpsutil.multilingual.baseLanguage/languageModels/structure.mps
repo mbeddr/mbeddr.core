@@ -73,14 +73,13 @@
     <property role="EcuMT" value="9087294576173492452" />
     <ref role="1TJDcQ" node="2bng37t32Oy" resolve="MultilingualJavaString" />
     <node concept="1TJgyj" id="7Ssz$kYl4OE" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="expressions" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="9087294576176418090" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="7Ssz$kYbmEd" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="key" />
       <property role="IQ2ns" value="9087294576173869709" />
       <ref role="20lvS9" node="7Ssz$kY9UUa" resolve="RichStringMessageKey" />
@@ -96,9 +95,9 @@
     <property role="EcuMT" value="9087294576173493898" />
     <ref role="1TJDcQ" to="sxyo:vzhXZP_pZm" resolve="MessageKey" />
     <node concept="1TJgyj" id="7Ssz$kYb9jR" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="richDefault" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="9087294576173815031" />
       <ref role="20lvS9" to="spci:2UbT3C4cmyI" resolve="RichString" />
     </node>
@@ -110,9 +109,8 @@
     <property role="EcuMT" value="9087294576174751931" />
     <ref role="1TJDcQ" to="spci:2UbT3C4elwQ" resolve="InlineFormat" />
     <node concept="1TJgyj" id="7Ssz$kYeQ8p" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="argumentCategory" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="9087294576174785049" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>

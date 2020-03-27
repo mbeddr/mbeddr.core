@@ -129,15 +129,13 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
-        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
-        <child id="5323740605968447026" name="target" index="2AWWZH" />
+        <child id="5323740605968447026" name="platform" index="2AWWZH" />
       </concept>
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
@@ -145,14 +143,12 @@
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
         <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
-      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
-        <child id="1485382076185232212" name="targets" index="3anu1O" />
-      </concept>
-      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -352,7 +348,7 @@
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
       </concept>
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
@@ -993,18 +989,7 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
-      <node concept="3abb7c" id="OnnrMNmT2g" role="3anu1O">
-        <property role="TrG5h" value="Win32" />
-      </node>
-      <node concept="3abb7c" id="OnnrMNmT2h" role="3anu1O">
-        <property role="TrG5h" value="MacOSX" />
-      </node>
-      <node concept="3abb7c" id="OnnrMNmT2i" role="3anu1O">
-        <property role="TrG5h" value="Linux" />
-      </node>
-      <node concept="3abb7c" id="OnnrMNmT2j" role="3anu1O">
-        <property role="TrG5h" value="portable" />
-      </node>
+      <property role="18_EFo" value="gcc" />
     </node>
     <node concept="2Q9Fgs" id="7VsgA5L655q" role="2Q9xDr">
       <node concept="2Q9FjX" id="7VsgA5L655r" role="2Q9FjI" />
@@ -1016,9 +1001,7 @@
       <node concept="3_UBHe" id="2wGmDEKnOQc" role="3_UBH6" />
     </node>
     <node concept="2eOfOl" id="7VsgA5L655s" role="2ePNbc">
-      <property role="iO3LB" value="true" />
       <property role="TrG5h" value="MbeddrTutorialNewLangs" />
-      <ref role="3oK8_y" node="OnnrMNmT2j" resolve="portable" />
       <node concept="2v9HqM" id="6URxCt9oBG4" role="2eOfOg">
         <ref role="2v9HqP" node="zSFqGmbqdm" resolve="Main" />
       </node>
@@ -1051,6 +1034,9 @@
       </node>
       <node concept="2v9HqM" id="37N_GLZx11u" role="2eOfOg">
         <ref role="2v9HqP" node="INbVHCRAQg" resolve="GotoFail" />
+      </node>
+      <node concept="1l1$C7" id="4JZ_DSxyjjI" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="3yF7LM" id="5ngFs$3T$P_" role="2Q9xDr">
@@ -1244,7 +1230,6 @@
       <property role="TrG5h" value="Adder" />
       <node concept="3mK28C" id="6URxCt9p_ol" role="3mK28z">
         <property role="TrG5h" value="a" />
-        <property role="3mK28V" value="0" />
         <node concept="26Vqqz" id="6URxCt9p_on" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -1252,14 +1237,13 @@
       </node>
       <node concept="3mK28C" id="6URxCt9p_op" role="3mK28z">
         <property role="TrG5h" value="b" />
-        <property role="3mK28V" value="0" />
         <node concept="26Vqqz" id="6URxCt9p_or" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
       </node>
       <node concept="3mK28C" id="6URxCt9p_oy" role="3mK28z">
-        <property role="3mK28V" value="1" />
+        <property role="3mK28V" value="3NI0$JEby1B/1" />
         <property role="TrG5h" value="sum" />
         <node concept="26Vqqz" id="6URxCt9p_o$" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -1322,14 +1306,13 @@
       <property role="TrG5h" value="Integrator" />
       <node concept="3mK28C" id="6URxCt9p_p2" role="3mK28z">
         <property role="TrG5h" value="signal" />
-        <property role="3mK28V" value="0" />
         <node concept="26Vqpq" id="6URxCt9p_p4" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
       </node>
       <node concept="3mK28C" id="6URxCt9p_p6" role="3mK28z">
-        <property role="3mK28V" value="1" />
+        <property role="3mK28V" value="3NI0$JEby1B/1" />
         <property role="TrG5h" value="integrated" />
         <node concept="26Vqpq" id="6URxCt9p_p8" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -2542,9 +2525,7 @@
   <node concept="N3F5e" id="5rgUaxOsJom">
     <property role="3GE5qa" value="examples.layers" />
     <property role="TrG5h" value="DatabaseStuff" />
-    <node concept="yJPcn" id="5rgUaxOsJXJ" role="lGtFl">
-      <property role="yJPmV" value="0" />
-    </node>
+    <node concept="yJPcn" id="5rgUaxOsJXJ" role="lGtFl" />
     <node concept="2EX0iR" id="5rgUaxOsOjK" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="IDatabaseInitializer" />
@@ -2561,7 +2542,7 @@
     <property role="3GE5qa" value="examples.layers" />
     <property role="TrG5h" value="PricingEngine" />
     <node concept="yJPcn" id="5rgUaxOsOkb" role="lGtFl">
-      <property role="yJPmV" value="1" />
+      <property role="yJPmV" value="5rgUaxOrVOf/1" />
     </node>
     <node concept="2EX0iR" id="5rgUaxOsOko" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -2587,7 +2568,7 @@
     <property role="3GE5qa" value="examples.layers" />
     <property role="TrG5h" value="Catalog" />
     <node concept="yJPcn" id="5rgUaxOsOkw" role="lGtFl">
-      <property role="yJPmV" value="1" />
+      <property role="yJPmV" value="5rgUaxOrVOf/1" />
     </node>
     <node concept="2EX0iR" id="5rgUaxOsOkG" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -2619,7 +2600,7 @@
     <property role="3GE5qa" value="examples.layers" />
     <property role="TrG5h" value="CatalogUI" />
     <node concept="yJPcn" id="5rgUaxOsWig" role="lGtFl">
-      <property role="yJPmV" value="2" />
+      <property role="yJPmV" value="5rgUaxOrVOc/2" />
     </node>
     <node concept="2EWCuY" id="5rgUaxOsWit" role="N3F5h">
       <property role="2OOxQR" value="true" />

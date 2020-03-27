@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -248,13 +248,13 @@
           <node concept="3F0ifn" id="48QV5n8clSB" role="3EZMnx">
             <property role="3F0ifm" value="Comments:" />
             <node concept="VechU" id="48QV5n8clSC" role="3F10Kt">
-              <property role="Vb096" value="gray" />
+              <property role="Vb096" value="fLJRk5_/gray" />
             </node>
           </node>
           <node concept="2iRfu4" id="48QV5n8clSD" role="2iSdaV" />
           <node concept="1HlG4h" id="48QV5n8clSE" role="3EZMnx">
             <node concept="VechU" id="48QV5n8clSF" role="3F10Kt">
-              <property role="Vb096" value="gray" />
+              <property role="Vb096" value="fLJRk5_/gray" />
             </node>
             <node concept="1HfYo3" id="48QV5n8clSG" role="1HlULh">
               <node concept="3TQlhw" id="48QV5n8clSH" role="1Hhtcw">
@@ -281,7 +281,7 @@
           </node>
           <node concept="1HlG4h" id="48QV5n8clSR" role="3EZMnx">
             <node concept="VechU" id="48QV5n8clSS" role="3F10Kt">
-              <property role="Vb096" value="gray" />
+              <property role="Vb096" value="fLJRk5_/gray" />
             </node>
             <node concept="1HfYo3" id="48QV5n8clST" role="1HlULh">
               <node concept="3TQlhw" id="48QV5n8clSU" role="1Hhtcw">

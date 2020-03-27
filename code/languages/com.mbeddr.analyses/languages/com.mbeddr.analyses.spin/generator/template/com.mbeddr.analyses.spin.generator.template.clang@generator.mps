@@ -87,9 +87,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -163,7 +161,7 @@
     </node>
   </node>
   <node concept="1pmfR0" id="5uY69zuVJZs">
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <property role="TrG5h" value="enable_trapping" />
     <node concept="1pplIY" id="5uY69zuVJZt" role="1pqMTA">
@@ -288,7 +286,7 @@
                           <ref role="2pJxaS" to="51wr:6GqYvBOf2Xb" resolve="ModuleRef" />
                           <node concept="2pIpSj" id="5uY69zuWB8o" role="2pJxcM">
                             <ref role="2pIpSl" to="51wr:6GqYvBOf2Xc" resolve="module" />
-                            <node concept="36biLy" id="5uY69zuWBxG" role="2pJxcZ">
+                            <node concept="36biLy" id="5uY69zuWBxG" role="28nt2d">
                               <node concept="3B5_sB" id="5uY69zuWBqI" role="36biLW">
                                 <ref role="3B5MYn" to="rdyw:5uY69zuVGd8" resolve="clang_sanitizer_trap" />
                               </node>

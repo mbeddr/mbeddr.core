@@ -6,7 +6,7 @@
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -372,9 +372,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -458,9 +456,7 @@
       <concept id="8637411062062430894" name="de.itemis.mps.editor.diagram.structure.Function_PaletteFolder" flags="ig" index="1yB8kR" />
       <concept id="2229224827675633914" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType_fromPort" flags="ng" index="1$Yqjh" />
       <concept id="2229224827675637816" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType_toPort" flags="ng" index="1$Yrgj" />
-      <concept id="6987730699888898446" name="de.itemis.mps.editor.diagram.structure.LineStyle" flags="lg" index="3C0lA2">
-        <property id="6987730699889504313" name="value" index="3DY1wP" />
-      </concept>
+      <concept id="6987730699888898446" name="de.itemis.mps.editor.diagram.structure.LineStyle" flags="lg" index="3C0lA2" />
       <concept id="6987730699889040828" name="de.itemis.mps.editor.diagram.structure.LineColor" flags="lg" index="3C0NmK" />
       <concept id="6987730699889040827" name="de.itemis.mps.editor.diagram.structure.LineWidth" flags="lg" index="3C0NmR">
         <property id="6987730699889499559" name="value" index="3DY3mF" />
@@ -866,7 +862,7 @@
     <ref role="1XX52x" to="g88q:6JVEnxIj9v0" resolve="CompositeComponentInstanceParam" />
     <node concept="3EZMnI" id="6Q7bJ$$my3s" role="2wV5jI">
       <node concept="3F1sOY" id="6Q7bJ$$my3y" role="3EZMnx">
-        <property role="1cu_pB" value="1" />
+        <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
         <property role="39s7Ar" value="true" />
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
         <node concept="pkWqt" id="6Q7bJ$$n11w" role="cStSX">
@@ -2451,7 +2447,7 @@
         </node>
       </node>
       <node concept="3C0NmK" id="4IDnpfaIkVX" role="3F10Kt">
-        <property role="Vb096" value="darkGray" />
+        <property role="Vb096" value="fLJRk5B/darkGray" />
         <node concept="3ZlJ5R" id="3QtXdiOV9PF" role="VblUZ">
           <node concept="3clFbS" id="3QtXdiOV9PG" role="2VODD2">
             <node concept="3cpWs6" id="3QtXdiOVpHt" role="3cqZAp">
@@ -2466,9 +2462,7 @@
       <node concept="3C0NmR" id="4IDnpfaIl_I" role="3F10Kt">
         <property role="3DY3mF" value="1.0" />
       </node>
-      <node concept="3C0lA2" id="4IDnpfaImf$" role="3F10Kt">
-        <property role="3DY1wP" value="SOLID" />
-      </node>
+      <node concept="3C0lA2" id="4IDnpfaImf$" role="3F10Kt" />
       <node concept="2OqwBi" id="67vyfssufn_" role="1hJWav">
         <node concept="2OqwBi" id="67vyfssuer3" role="2Oq$k0">
           <node concept="1Pxb5l" id="67vyfssue2M" role="2Oq$k0" />
@@ -3425,7 +3419,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="4dKKrcEgM3Y" role="3EZMnx">
-        <property role="1cu_pB" value="1" />
+        <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
         <ref role="1NtTu8" to="g88q:4dKKrcEgM1Y" resolve="providedPort" />
         <node concept="1sVBvm" id="4dKKrcEgM40" role="1sWHZn">
           <node concept="3F0A7n" id="4dKKrcEgM4i" role="2wV5jI">
@@ -3570,13 +3564,13 @@
                     <ref role="2pJxaS" to="g88q:4dKKrcEbMGX" resolve="ComponentRefExpr" />
                     <node concept="2pIpSj" id="2mvFNoTurJ4" role="2pJxcM">
                       <ref role="2pIpSl" to="g88q:4dKKrcEbMHL" resolve="instance" />
-                      <node concept="36biLy" id="2mvFNoTurJ5" role="2pJxcZ">
+                      <node concept="36biLy" id="2mvFNoTurJ5" role="28nt2d">
                         <node concept="2ZBlsa" id="2mvFNoTurJ9" role="36biLW" />
                       </node>
                     </node>
                     <node concept="2pIpSj" id="2mvFNoTurJ7" role="2pJxcM">
                       <ref role="2pIpSl" to="g88q:4dKKrcEgM1Y" resolve="providedPort" />
-                      <node concept="36biLy" id="3pRoIUFYqLr" role="2pJxcZ">
+                      <node concept="36biLy" id="3pRoIUFYqLr" role="28nt2d">
                         <node concept="10Nm6u" id="3pRoIUFYqLs" role="36biLW" />
                       </node>
                     </node>

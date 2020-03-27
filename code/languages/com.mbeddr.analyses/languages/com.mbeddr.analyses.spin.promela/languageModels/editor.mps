@@ -2,9 +2,9 @@
 <model ref="r:b34294cb-3f82-4e84-82e0-4475bd61d964(com.mbeddr.analyses.spin.promela.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -584,7 +584,7 @@
       </node>
       <node concept="3F2HdR" id="5ak6HMA0re_" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <property role="1cu_pB" value="2" />
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
         <ref role="1NtTu8" to="x27k:5ak6HMA0ref" resolve="actuals" />
         <node concept="l2Vlx" id="5ak6HMA0reA" role="2czzBx" />
         <node concept="1HlG4h" id="5ak6HMA0sGi" role="2czzBI">
@@ -654,7 +654,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="2A5UqXJPGUe" role="3EZMnx">
-        <property role="1cu_pB" value="2" />
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
         <ref role="1k5W1q" to="r4b4:7TAjv1QUX$w" resolve="heading" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>

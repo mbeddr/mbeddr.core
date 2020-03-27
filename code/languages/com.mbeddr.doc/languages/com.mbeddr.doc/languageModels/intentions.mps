@@ -2,11 +2,11 @@
 <model ref="r:7c2726cf-5697-49bb-92f6-2986272fb311(com.mbeddr.doc.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -812,7 +812,7 @@
             <node concept="1OKiuA" id="6PYNGEwWGZq" role="2OqNvi">
               <node concept="1XNTG" id="6PYNGEwWGZr" role="lBI5i" />
               <node concept="2B6iha" id="6PYNGEwWGZs" role="lGT1i">
-                <property role="1lyBwo" value="last" />
+                <property role="1lyBwo" value="1S2pyLby17K/last" />
               </node>
               <node concept="3cmrfG" id="6PYNGEwWGZt" role="3dN3m$">
                 <property role="3cmrfH" value="-1" />
@@ -876,7 +876,7 @@
             <node concept="1OKiuA" id="6PYNGEwWGhx" role="2OqNvi">
               <node concept="1XNTG" id="6PYNGEwWGhy" role="lBI5i" />
               <node concept="2B6iha" id="6PYNGEwWGhz" role="lGT1i">
-                <property role="1lyBwo" value="last" />
+                <property role="1lyBwo" value="1S2pyLby17K/last" />
               </node>
               <node concept="3cmrfG" id="6PYNGEwWGh$" role="3dN3m$">
                 <property role="3cmrfH" value="-1" />
@@ -1122,7 +1122,7 @@
             <node concept="1OKiuA" id="6PYNGEwWFyN" role="2OqNvi">
               <node concept="1XNTG" id="6PYNGEwWFz$" role="lBI5i" />
               <node concept="2B6iha" id="6PYNGEwWFDZ" role="lGT1i">
-                <property role="1lyBwo" value="last" />
+                <property role="1lyBwo" value="1S2pyLby17K/last" />
               </node>
               <node concept="3cmrfG" id="6PYNGEwWFFB" role="3dN3m$">
                 <property role="3cmrfH" value="-1" />
@@ -1186,7 +1186,7 @@
             <node concept="1OKiuA" id="yrKNEnZF14" role="2OqNvi">
               <node concept="1XNTG" id="yrKNEnZF15" role="lBI5i" />
               <node concept="2B6iha" id="yrKNEnZF16" role="lGT1i">
-                <property role="1lyBwo" value="last" />
+                <property role="1lyBwo" value="1S2pyLby17K/last" />
               </node>
               <node concept="3cmrfG" id="yrKNEnZF17" role="3dN3m$">
                 <property role="3cmrfH" value="-1" />
@@ -1972,7 +1972,7 @@
             <node concept="1OKiuA" id="2ncjLWkn6vE" role="2OqNvi">
               <node concept="1XNTG" id="2ncjLWkn6wy" role="lBI5i" />
               <node concept="2B6iha" id="2ncjLWkn6yN" role="lGT1i">
-                <property role="1lyBwo" value="firstEditable" />
+                <property role="1lyBwo" value="1S2pyLby17G/firstEditable" />
               </node>
             </node>
           </node>

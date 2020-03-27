@@ -2,7 +2,7 @@
 <model ref="r:fceba264-2376-4ee7-ad8b-c2b3392af9ae(com.mbeddr.mpsutil.resources.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -80,7 +80,7 @@
         <property role="3F0ifm" value="font-family:" />
       </node>
       <node concept="3F0A7n" id="4kGsAe0wcPV" role="3EZMnx">
-        <ref role="1NtTu8" to="e8s3:4kGsAe0sSYF" resolve="fontFamily" />
+        <ref role="1NtTu8" to="e8s3:17qUVvSZm9o" resolve="fontFamily" />
       </node>
       <node concept="3F0ifn" id="1BguvjG4kLK" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -92,7 +92,7 @@
         <property role="3F0ifm" value="font-style:" />
       </node>
       <node concept="3F0A7n" id="4kGsAe0sBgF" role="3EZMnx">
-        <ref role="1NtTu8" to="e8s3:4kGsAe0tlFm" resolve="fontStyle" />
+        <ref role="1NtTu8" to="e8s3:17qUVvSZm9m" resolve="fontStyle" />
       </node>
       <node concept="3F0ifn" id="4kGsAe0sBiI" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -199,7 +199,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="1ng4Vf3VLdY" role="3EZMnx">
-        <ref role="1NtTu8" to="1oap:2p1v3tObyz1" resolve="r" />
+        <ref role="1NtTu8" to="1oap:3Ftr4R6BH86" resolve="r" />
       </node>
       <node concept="3F0ifn" id="6ZzNS$a2wgM" role="3EZMnx">
         <property role="3F0ifm" value="," />

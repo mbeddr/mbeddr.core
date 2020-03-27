@@ -2,6 +2,7 @@
 <model ref="r:26804c6a-9521-4a83-8503-23e28c70ae2a(com.mbeddr.cc.var.composition.c.typesystem)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -71,11 +72,8 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -158,6 +156,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -296,8 +302,28 @@
     <property role="3GE5qa" value="function_calls" />
     <node concept="3clFbS" id="12n15PAsuS4" role="18ibNy">
       <node concept="3SKdUt" id="12n15PAs_Tg" role="3cqZAp">
-        <node concept="3SKdUq" id="12n15PAs_Ti" role="3SKWNk">
-          <property role="3SKdUp" value="check the return type and signatures compatibility" />
+        <node concept="1PaTwC" id="6JXsDxttw1g" role="3ndbpf">
+          <node concept="3oM_SD" id="6JXsDxttw1h" role="1PaTwD">
+            <property role="3oM_SC" value="check" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1i" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1j" role="1PaTwD">
+            <property role="3oM_SC" value="return" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1k" role="1PaTwD">
+            <property role="3oM_SC" value="type" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1l" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1m" role="1PaTwD">
+            <property role="3oM_SC" value="signatures" />
+          </node>
+          <node concept="3oM_SD" id="6JXsDxttw1n" role="1PaTwD">
+            <property role="3oM_SC" value="compatibility" />
+          </node>
         </node>
       </node>
       <node concept="3cpWs8" id="12n15PAsvtD" role="3cqZAp">

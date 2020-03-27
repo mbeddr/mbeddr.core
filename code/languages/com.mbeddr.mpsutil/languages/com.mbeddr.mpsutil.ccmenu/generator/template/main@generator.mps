@@ -2,8 +2,8 @@
 <model ref="r:857a6149-79f8-402e-bfa4-afd942bb40e7(com.mbeddr.mpsutil.ccmenu.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="935bff03-e393-4547-a3a2-60335e0cad25" name="com.mbeddr.mpsutil.ccmenu" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -399,7 +399,7 @@
       </node>
     </node>
     <node concept="3lhOvk" id="2CFqHq6sT1e" role="3lj3bC">
-      <property role="13Pg2o" value="true" />
+      <property role="13Pg2o" value="h94ayQF/true_" />
       <ref role="30HIoZ" to="l27w:5q$OYBAQCvC" resolve="CCMenuExtensions" />
       <ref role="3lhOvi" node="2CFqHq6sT1k" resolve="map_CCMenuExtensions" />
       <ref role="2sgKRv" node="rf2b76NB05" resolve="descriptorClass" />

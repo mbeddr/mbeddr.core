@@ -11,8 +11,8 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1384,7 +1384,7 @@
                   <property role="VOm3f" value="false" />
                 </node>
                 <node concept="37jFXN" id="7Pfa1XGiA81" role="3F10Kt">
-                  <property role="37lx6p" value="CENTER" />
+                  <property role="37lx6p" value="hZ7kQ4a/CENTER" />
                 </node>
                 <node concept="2iRfu4" id="3mf03aPUHZr" role="2iSdaV" />
                 <node concept="3F0ifn" id="3mf03aPQH8r" role="3EZMnx">
@@ -1442,10 +1442,10 @@
                   </node>
                 </node>
                 <node concept="Vb9p2" id="3mf03aPSNQh" role="3F10Kt">
-                  <property role="Vbekb" value="ITALIC" />
+                  <property role="Vbekb" value="g1_kEg4/ITALIC" />
                 </node>
                 <node concept="37jFXN" id="7Pfa1XGiANZ" role="3F10Kt">
-                  <property role="37lx6p" value="CENTER" />
+                  <property role="37lx6p" value="hZ7kQ4a/CENTER" />
                 </node>
                 <node concept="pkWqt" id="3mf03aPUKhf" role="pqm2j">
                   <node concept="3clFbS" id="3mf03aPUKhg" role="2VODD2">
@@ -1480,7 +1480,7 @@
             </node>
           </node>
           <node concept="3C0NmK" id="3mf03aPuWJ_" role="3F10Kt">
-            <property role="Vb096" value="black" />
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
           </node>
           <node concept="2YIFZM" id="3mf03aPxjff" role="2M4AHK">
             <ref role="37wK5l" node="3mf03aPwYql" resolve="getIdModuleDependency" />
@@ -1680,12 +1680,12 @@
             <node concept="3F0ifn" id="6bKTjCNjZls" role="2wV5jI">
               <property role="3F0ifm" value="uses" />
               <node concept="VechU" id="3mf03aPP_xW" role="3F10Kt">
-                <property role="Vb096" value="blue" />
+                <property role="Vb096" value="fLwANPu/blue" />
               </node>
             </node>
           </node>
           <node concept="3C0NmK" id="3mf03aPuXqB" role="3F10Kt">
-            <property role="Vb096" value="blue" />
+            <property role="Vb096" value="fLwANPu/blue" />
           </node>
           <node concept="2YIFZM" id="3mf03aPz2st" role="2M4AHK">
             <ref role="37wK5l" node="3mf03aPwYjs" resolve="getIdModuleUsedLanguage" />
@@ -1941,12 +1941,12 @@
               <property role="3F0ifm" value="uses" />
               <node concept="Vb9p2" id="3mf03aPuYpc" role="3F10Kt" />
               <node concept="VechU" id="3mf03aPP_$E" role="3F10Kt">
-                <property role="Vb096" value="blue" />
+                <property role="Vb096" value="fLwANPu/blue" />
               </node>
             </node>
           </node>
           <node concept="3C0NmK" id="3mf03aPuYpf" role="3F10Kt">
-            <property role="Vb096" value="LIGHT_BLUE" />
+            <property role="Vb096" value="hGRnIZc/lightBlue" />
           </node>
         </node>
         <node concept="2M4Efz" id="3mf03aP8eEF" role="aCds2">
@@ -2236,15 +2236,15 @@
             <node concept="3F0ifn" id="3mf03aP8eGl" role="2wV5jI">
               <property role="3F0ifm" value="imports" />
               <node concept="Vb9p2" id="3mf03aPv0kJ" role="3F10Kt">
-                <property role="Vbekb" value="BOLD" />
+                <property role="Vbekb" value="g1_k_vY/BOLD" />
               </node>
               <node concept="VechU" id="3mf03aPP_A$" role="3F10Kt">
-                <property role="Vb096" value="darkGray" />
+                <property role="Vb096" value="fLJRk5B/darkGray" />
               </node>
             </node>
           </node>
           <node concept="3C0NmK" id="3mf03aPv1aw" role="3F10Kt">
-            <property role="Vb096" value="darkGray" />
+            <property role="Vb096" value="fLJRk5B/darkGray" />
           </node>
         </node>
       </node>
@@ -4767,12 +4767,12 @@
               <property role="3F0ifm" value="imports" />
               <node concept="Vb9p2" id="3mf03aPp3Cy" role="3F10Kt" />
               <node concept="VechU" id="3mf03aPPAI_" role="3F10Kt">
-                <property role="Vb096" value="lightGray" />
+                <property role="Vb096" value="fLJRk5A/lightGray" />
               </node>
             </node>
           </node>
           <node concept="3C0NmK" id="3mf03aPo9hM" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="fLJRk5A/lightGray" />
           </node>
           <node concept="2YIFZM" id="3mf03aPzal1" role="2M4AHK">
             <ref role="37wK5l" node="3mf03aPxnE5" resolve="getIdModelDependency" />

@@ -91,9 +91,6 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -324,7 +321,6 @@
   </registry>
   <node concept="2v9HqL" id="1wu5Hv66n4w">
     <node concept="1gr5cj" id="Hdy9e32IFu" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__010_automatic_handling_of_local_var_access" />
       <node concept="2v9HqM" id="Hdy9e32IH9" role="2eOfOg">
         <ref role="2v9HqP" node="Hdy9e32zbw" resolve="_010_automatic_handling_of_local_var_access" />
@@ -337,7 +333,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="Hdy9e33ioO" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan__020_automatic_handling_of_global_var_access" />
       <node concept="2v9HqM" id="Hdy9e33iq$" role="2eOfOg">
         <ref role="2v9HqP" node="Hdy9e334tI" resolve="_020_automatic_handling_of_global_var_access" />
@@ -350,7 +345,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="1wu5Hv66n4_" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv1_harness_smoke" />
       <node concept="2v9HqM" id="1wu5Hv66n4A" role="2eOfOg">
         <ref role="2v9HqP" node="1wu5Hv66n66" resolve="suv1" />
@@ -360,7 +354,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5sho6" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv2_harness_pick_nondet" />
       <node concept="2v9HqM" id="3tIDuP5shor" role="2eOfOg">
         <ref role="2v9HqP" node="1wu5Hv68xEZ" resolve="suv2" />
@@ -376,7 +369,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5shof" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv3_harness" />
       <node concept="2v9HqM" id="3tIDuP5shoz" role="2eOfOg">
         <ref role="2v9HqP" node="HmUOIGD8pr" resolve="suv3_code_with_assertions" />
@@ -392,7 +384,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5sKUS" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv4_harness_assume" />
       <node concept="2v9HqM" id="3tIDuP5sKV8" role="2eOfOg">
         <ref role="2v9HqP" node="HmUOIGGcMV" resolve="suv4_harness_assume" />
@@ -408,7 +399,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="Hdy9e32qva" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv4_harness_when" />
       <node concept="2v9HqM" id="Hdy9e32qwF" role="2eOfOg">
         <ref role="2v9HqP" node="Hdy9e32kwK" resolve="suv4_harness_when" />
@@ -424,7 +414,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5sPfL" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv5_harness_suv_embedded" />
       <node concept="2v9HqM" id="3tIDuP5sPg6" role="2eOfOg">
         <ref role="2v9HqP" node="HmUOIGKHL$" resolve="suv5_harness_suv_embedded" />
@@ -437,7 +426,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5sSMi" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv6_harness_pick_random" />
       <node concept="2v9HqM" id="3tIDuP5sTGE" role="2eOfOg">
         <ref role="2v9HqP" node="3$JFeG$Zuc8" resolve="suv6_harness_pick_random" />
@@ -450,7 +438,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="3tIDuP5t5eE" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv7_harness_external_files" />
       <node concept="2v9HqM" id="3tIDuP5t5f7" role="2eOfOg">
         <ref role="2v9HqP" node="6qQmI_32Gw4" resolve="suv7_harness_external_files" />
@@ -466,7 +453,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="5Gboyv9E$Os" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv8_int_nondet_assign_harness" />
       <node concept="2v9HqM" id="3tIDuP5t7q$" role="2eOfOg">
         <ref role="2v9HqP" node="5Gboyv9E$Pe" resolve="suv8_int_nondet_assign_harness" />
@@ -482,7 +468,6 @@
       </node>
     </node>
     <node concept="1gr5cj" id="Y_s0Wj_GPA" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv8_array_nondet_assign_harness" />
       <node concept="2v9HqM" id="3tIDuP5t7qK" role="2eOfOg">
         <ref role="2v9HqP" node="Y_s0Wj_GjA" resolve="suv8_array_nondet_assign_harness" />

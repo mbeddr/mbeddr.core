@@ -3,18 +3,18 @@
   <persistence version="9" />
   <languages>
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="cl6c" ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="vrqd" ref="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -496,7 +496,7 @@
             <property role="3F0ifm" value="strategy:" />
           </node>
           <node concept="3F0A7n" id="49XubMptjxX" role="3EZMnx">
-            <ref role="1NtTu8" to="d0vh:49XubMptfQm" resolve="strategy" />
+            <ref role="1NtTu8" to="d0vh:61XOOojGe7k" resolve="strategy" />
           </node>
         </node>
         <node concept="3EZMnI" id="49XubMpt0GA" role="3EZMnx">
@@ -647,7 +647,7 @@
             </node>
           </node>
           <node concept="Vb9p2" id="5wYC9YOSe20" role="3F10Kt">
-            <property role="Vbekb" value="BOLD" />
+            <property role="Vbekb" value="g1_k_vY/BOLD" />
           </node>
         </node>
       </node>
@@ -689,6 +689,41 @@
       </node>
     </node>
   </node>
+  <node concept="PKFIW" id="5hcw$WGeipp">
+    <property role="3GE5qa" value="portability" />
+    <property role="TrG5h" value="multiPlatformConstructComponent" />
+    <ref role="1XX52x" to="d0vh:5hcw$WGctfJ" resolve="IMultiPlatformConstruct" />
+    <node concept="3EZMnI" id="5hcw$WGeipr" role="2wV5jI">
+      <node concept="3EZMnI" id="5hcw$WGeip_" role="3EZMnx">
+        <node concept="l2Vlx" id="5hcw$WGeipA" role="2iSdaV" />
+        <node concept="3F0ifn" id="5hcw$WGeipB" role="3EZMnx">
+          <property role="3F0ifm" value="header for Win32: " />
+        </node>
+        <node concept="3F0A7n" id="5hcw$WGeipC" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="d0vh:5hcw$WGctfK" resolve="win32Header" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5hcw$WGeipD" role="3EZMnx">
+        <node concept="l2Vlx" id="5hcw$WGeipE" role="2iSdaV" />
+        <node concept="3F0ifn" id="5hcw$WGeipF" role="3EZMnx">
+          <property role="3F0ifm" value="header for other platforms: " />
+        </node>
+        <node concept="3F0A7n" id="5hcw$WGeipG" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="d0vh:5hcw$WGctfL" resolve="othersHeader" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="5hcw$WGeipu" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="5hcw$WGh20z">
+    <property role="3GE5qa" value="portability" />
+    <ref role="aqKnT" to="d0vh:5hcw$WGe5JR" resolve="MultiPlatformFunctionCall" />
+    <node concept="3ft5Ry" id="5hcw$WGh2h2" role="3ft7WO">
+      <ref role="4PJHt" to="d0vh:5hcw$WGe5JR" resolve="MultiPlatformFunctionCall" />
+    </node>
+  </node>
   <node concept="24kQdi" id="5hcw$WGe8Dk">
     <property role="3GE5qa" value="portability" />
     <ref role="1XX52x" to="d0vh:5hcw$WGe5JR" resolve="MultiPlatformFunctionCall" />
@@ -716,7 +751,7 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <node concept="Vb9p2" id="2CEi94eH1Ao" role="3F10Kt">
-              <property role="Vbekb" value="QUERY" />
+              <property role="Vbekb" value="hL7GYu6/QUERY" />
               <node concept="17KAyr" id="2CEi94eH1As" role="17MNgL">
                 <node concept="3clFbS" id="2CEi94eH1At" role="2VODD2">
                   <node concept="3clFbF" id="6vtRRikVsv0" role="3cqZAp">
@@ -778,11 +813,10 @@
       <node concept="l2Vlx" id="5ak6HMA0rek" role="2iSdaV" />
       <node concept="3F2HdR" id="5ak6HMA0re_" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <property role="1cu_pB" value="2" />
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
         <ref role="1NtTu8" to="x27k:5ak6HMA0ref" resolve="actuals" />
         <node concept="l2Vlx" id="5ak6HMA0reA" role="2czzBx" />
         <node concept="1HlG4h" id="5ak6HMA0sGi" role="2czzBI">
-          <property role="1cu_pB" value="0" />
           <node concept="1HfYo3" id="5ak6HMA0sGj" role="1HlULh">
             <node concept="3TQlhw" id="5ak6HMA0sGk" role="1Hhtcw">
               <node concept="3clFbS" id="5ak6HMA0sGl" role="2VODD2">
@@ -842,41 +876,6 @@
       <node concept="PMmxH" id="5hcw$WGekcj" role="3EZMnx">
         <ref role="PMmxG" node="5hcw$WGeipp" resolve="multiPlatformConstructComponent" />
       </node>
-    </node>
-  </node>
-  <node concept="PKFIW" id="5hcw$WGeipp">
-    <property role="3GE5qa" value="portability" />
-    <property role="TrG5h" value="multiPlatformConstructComponent" />
-    <ref role="1XX52x" to="d0vh:5hcw$WGctfJ" resolve="IMultiPlatformConstruct" />
-    <node concept="3EZMnI" id="5hcw$WGeipr" role="2wV5jI">
-      <node concept="3EZMnI" id="5hcw$WGeip_" role="3EZMnx">
-        <node concept="l2Vlx" id="5hcw$WGeipA" role="2iSdaV" />
-        <node concept="3F0ifn" id="5hcw$WGeipB" role="3EZMnx">
-          <property role="3F0ifm" value="header for Win32: " />
-        </node>
-        <node concept="3F0A7n" id="5hcw$WGeipC" role="3EZMnx">
-          <property role="1O74Pk" value="true" />
-          <ref role="1NtTu8" to="d0vh:5hcw$WGctfK" resolve="win32Header" />
-        </node>
-      </node>
-      <node concept="3EZMnI" id="5hcw$WGeipD" role="3EZMnx">
-        <node concept="l2Vlx" id="5hcw$WGeipE" role="2iSdaV" />
-        <node concept="3F0ifn" id="5hcw$WGeipF" role="3EZMnx">
-          <property role="3F0ifm" value="header for other platforms: " />
-        </node>
-        <node concept="3F0A7n" id="5hcw$WGeipG" role="3EZMnx">
-          <property role="1O74Pk" value="true" />
-          <ref role="1NtTu8" to="d0vh:5hcw$WGctfL" resolve="othersHeader" />
-        </node>
-      </node>
-      <node concept="2iRkQZ" id="5hcw$WGeipu" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="3p36aQ" id="5hcw$WGh20z">
-    <property role="3GE5qa" value="portability" />
-    <ref role="aqKnT" to="d0vh:5hcw$WGe5JR" resolve="MultiPlatformFunctionCall" />
-    <node concept="3ft5Ry" id="5hcw$WGh2h2" role="3ft7WO">
-      <ref role="4PJHt" to="d0vh:5hcw$WGe5JR" resolve="MultiPlatformFunctionCall" />
     </node>
   </node>
 </model>

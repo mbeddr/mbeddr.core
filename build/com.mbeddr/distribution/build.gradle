@@ -1,4 +1,4 @@
-import de.itemis.mps.gradle.CreateDmg
+import de.itemis.mps.gradle.*
 
 configurations {
     junitAnt
@@ -51,7 +51,7 @@ task build_mbeddr_branding(type: BuildLanguages, dependsOn: prepare_distribution
     script script_build_mbeddr_branding
 }
 
-task build_mbeddrRCP(type: RunMbeddrAntScript, dependsOn: build_mbeddr_branding) {
+task build_mbeddrRCP(type: RunAntScript, dependsOn: build_mbeddr_branding) {
     script script_build_mbeddrRCP
     targets 'clean', 'assemble'
 }

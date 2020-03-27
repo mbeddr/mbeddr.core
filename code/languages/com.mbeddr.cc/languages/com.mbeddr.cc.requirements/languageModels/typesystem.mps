@@ -98,12 +98,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -1033,17 +1032,17 @@
                         <ref role="2pJxaS" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
                         <node concept="2pIpSj" id="1LLGf91xmDn" role="2pJxcM">
                           <ref role="2pIpSl" to="2c95:519ky_SprCS" resolve="defaultTempPath" />
-                          <node concept="2pJPED" id="1LLGf91xmK2" role="2pJxcZ">
+                          <node concept="2pJPED" id="1LLGf91xmK2" role="28nt2d">
                             <ref role="2pJxaS" to="2c95:5yxqZJwzC3r" resolve="PathDefinition" />
                             <node concept="2pIpSj" id="1LLGf91xmNU" role="2pJxcM">
                               <ref role="2pIpSl" to="2c95:2iGZqsHuOq2" resolve="pathPicker" />
-                              <node concept="2pJPED" id="1LLGf91xmP4" role="2pJxcZ">
+                              <node concept="2pJPED" id="1LLGf91xmP4" role="28nt2d">
                                 <ref role="2pJxaS" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
                               </node>
                             </node>
                             <node concept="2pJxcG" id="1LLGf91xmLi" role="2pJxcM">
                               <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                              <node concept="Xl_RD" id="1LLGf91xmMq" role="2pJxcZ">
+                              <node concept="Xl_RD" id="1LLGf91xmMq" role="28ntcv">
                                 <property role="Xl_RC" value="temp" />
                               </node>
                             </node>
@@ -1051,7 +1050,7 @@
                         </node>
                         <node concept="2pJxcG" id="1LLGf91xmAw" role="2pJxcM">
                           <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                          <node concept="Xl_RD" id="1LLGf91xmBk" role="2pJxcZ">
+                          <node concept="Xl_RD" id="1LLGf91xmBk" role="28ntcv">
                             <property role="Xl_RC" value="DefaultDocConfig" />
                           </node>
                         </node>

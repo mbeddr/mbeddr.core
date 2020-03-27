@@ -6,6 +6,7 @@
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -101,11 +102,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -151,6 +149,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -595,8 +601,37 @@
       <node concept="3Tqbb2" id="2Zy_zYsMphp" role="3clF45" />
       <node concept="3clFbS" id="2Zy_zYsMphn" role="3clF47">
         <node concept="3SKdUt" id="$YquQC59Pr" role="3cqZAp">
-          <node concept="3SKdUq" id="$YquQC59PP" role="3SKWNk">
-            <property role="3SKdUp" value="returns the node on which the breakpoint should be created" />
+          <node concept="1PaTwC" id="17qUVvT8fY2" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvT8fY3" role="1PaTwD">
+              <property role="3oM_SC" value="returns" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fY4" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fY5" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fY6" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fY7" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fY8" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fY9" role="1PaTwD">
+              <property role="3oM_SC" value="breakpoint" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYa" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYb" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYc" role="1PaTwD">
+              <property role="3oM_SC" value="created" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="2Zy_zYsMphq" role="3cqZAp">
@@ -612,8 +647,43 @@
       <node concept="10P_77" id="VC7RuZYMN0" role="3clF45" />
       <node concept="3clFbS" id="VC7RuZYMH4" role="3clF47">
         <node concept="3SKdUt" id="VC7Rv019so" role="3cqZAp">
-          <node concept="3SKdUq" id="VC7Rv019sB" role="3SKWNk">
-            <property role="3SKdUp" value="wether we can set a breakpoint on the node instance or not" />
+          <node concept="1PaTwC" id="17qUVvT8fYd" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvT8fYe" role="1PaTwD">
+              <property role="3oM_SC" value="wether" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYf" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYg" role="1PaTwD">
+              <property role="3oM_SC" value="can" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYh" role="1PaTwD">
+              <property role="3oM_SC" value="set" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYi" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYj" role="1PaTwD">
+              <property role="3oM_SC" value="breakpoint" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYk" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYl" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYm" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYn" role="1PaTwD">
+              <property role="3oM_SC" value="instance" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYo" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvT8fYp" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="VC7RuZYMPO" role="3cqZAp">

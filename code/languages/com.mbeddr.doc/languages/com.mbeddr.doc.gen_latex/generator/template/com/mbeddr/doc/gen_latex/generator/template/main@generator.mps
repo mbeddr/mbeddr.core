@@ -2,8 +2,8 @@
 <model ref="r:64ab5fae-7c1b-4d46-84f7-7027407a369b(com.mbeddr.doc.gen_latex.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="f8f68d92-c6d2-44b3-8d63-c00ade75ec86" name="com.mbeddr.doc.latex" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
@@ -892,7 +892,7 @@
   </node>
   <node concept="1pmfR0" id="5yxqZJwzYOv">
     <property role="TrG5h" value="storeExportInDocument" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="5yxqZJwzYOw" role="1pqMTA">
       <node concept="3clFbS" id="5yxqZJwzYOx" role="2VODD2">
@@ -3603,7 +3603,7 @@
   </node>
   <node concept="1pmfR0" id="3mn43GOCWP4">
     <property role="TrG5h" value="addDefaultProlog" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="3mn43GOCWP5" role="1pqMTA">
       <node concept="3clFbS" id="3mn43GOCWP6" role="2VODD2">
@@ -3645,7 +3645,7 @@
           </node>
         </node>
         <node concept="2xdQw9" id="2Fugwv5QHT5" role="3cqZAp">
-          <property role="2xdLsb" value="info" />
+          <property role="2xdLsb" value="h1akgim/info" />
           <node concept="3cpWs3" id="3mn43GOExVG" role="9lYJi">
             <node concept="37vLTw" id="3mn43GOExX6" role="3uHU7w">
               <ref role="3cqZAo" node="3mn43GOEuM4" resolve="defaultPrologFile" />

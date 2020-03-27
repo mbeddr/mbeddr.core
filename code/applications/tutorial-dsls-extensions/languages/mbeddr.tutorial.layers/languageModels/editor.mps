@@ -2,7 +2,7 @@
 <model ref="r:88e11130-dec5-42a7-9cd6-438e14d1a6e5(mbeddr.tutorial.layers.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
   </languages>
   <imports>
     <import index="49b8" ref="r:ae0cd17b-0638-4639-a98b-abf596746b93(mbeddr.tutorial.layers.structure)" implicit="true" />
@@ -52,13 +52,13 @@
         <node concept="3F0ifn" id="5rgUaxOrVO1" role="3EZMnx">
           <property role="3F0ifm" value="[Layer:" />
           <node concept="VechU" id="5rgUaxOsLhb" role="3F10Kt">
-            <property role="Vb096" value="darkGray" />
+            <property role="Vb096" value="fLJRk5B/darkGray" />
           </node>
         </node>
         <node concept="3F0A7n" id="5rgUaxOrVOo" role="3EZMnx">
-          <ref role="1NtTu8" to="49b8:5rgUaxOrVOj" resolve="layer" />
+          <ref role="1NtTu8" to="49b8:115mCuLnE1m" resolve="layer" />
           <node concept="VechU" id="5rgUaxOsMWx" role="3F10Kt">
-            <property role="Vb096" value="darkGray" />
+            <property role="Vb096" value="fLJRk5B/darkGray" />
           </node>
         </node>
         <node concept="3F0ifn" id="5rgUaxOsKmr" role="3EZMnx">
@@ -68,7 +68,7 @@
           </node>
         </node>
         <node concept="Veino" id="5rgUaxOsMYb" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
       </node>
       <node concept="2iRkQZ" id="5rgUaxOrVNQ" role="2iSdaV" />

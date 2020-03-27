@@ -2,15 +2,15 @@
 <model ref="r:a754188c-924f-4201-9121-9a393a13f524(test.com.mbeddr.mpsutil.asynccell.test@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="4d43042b-3d26-46a9-888a-1ec4e4a2c81d" name="com.mbeddr.mpsutil.asynccell.sandbox" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
     <use id="a8e9d313-443b-4557-a1d0-05f5ab8ab6d4" name="com.mbeddr.mpsutil.blutil.test.waitfor" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="3" />
   </languages>
   <imports>
     <import index="re1d" ref="r:515ec77b-87d0-4871-9d0a-f5cfa3bbab14(com.mbeddr.mpsutil.asynccell.sandbox.behavior)" />
@@ -94,11 +94,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
@@ -136,6 +133,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -185,8 +190,22 @@
           <node concept="3Tm1VV" id="4IjegxhBalj" role="1B3o_S" />
           <node concept="3clFbS" id="4IjegxhBalk" role="3clF47">
             <node concept="3SKdUt" id="4IjegxhBaqb" role="3cqZAp">
-              <node concept="3SKdUq" id="4IjegxhBaqc" role="3SKWNk">
-                <property role="3SKdUp" value="given the updater is stopped" />
+              <node concept="1PaTwC" id="17qUVvSZlSX" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZlSY" role="1PaTwD">
+                  <property role="3oM_SC" value="given" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlSZ" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlT0" role="1PaTwD">
+                  <property role="3oM_SC" value="updater" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlT1" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlT2" role="1PaTwD">
+                  <property role="3oM_SC" value="stopped" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="4IjegxhBLLz" role="3cqZAp">
@@ -221,8 +240,22 @@
             </node>
             <node concept="3clFbH" id="4IjegxhBmP8" role="3cqZAp" />
             <node concept="3SKdUt" id="4IjegxhBmWw" role="3cqZAp">
-              <node concept="3SKdUq" id="4IjegxhBmWy" role="3SKWNk">
-                <property role="3SKdUp" value="when I register a cell" />
+              <node concept="1PaTwC" id="17qUVvSZlT3" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZlT4" role="1PaTwD">
+                  <property role="3oM_SC" value="when" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlT5" role="1PaTwD">
+                  <property role="3oM_SC" value="I" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlT6" role="1PaTwD">
+                  <property role="3oM_SC" value="register" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlT7" role="1PaTwD">
+                  <property role="3oM_SC" value="a" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlT8" role="1PaTwD">
+                  <property role="3oM_SC" value="cell" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="4IjegxhBn91" role="3cqZAp">
@@ -244,8 +277,22 @@
             </node>
             <node concept="3clFbH" id="4IjegxhBueu" role="3cqZAp" />
             <node concept="3SKdUt" id="4IjegxhBunl" role="3cqZAp">
-              <node concept="3SKdUq" id="4IjegxhBunn" role="3SKWNk">
-                <property role="3SKdUp" value="then the manager is running" />
+              <node concept="1PaTwC" id="17qUVvSZlT9" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZlTa" role="1PaTwD">
+                  <property role="3oM_SC" value="then" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTb" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTc" role="1PaTwD">
+                  <property role="3oM_SC" value="manager" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTd" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTe" role="1PaTwD">
+                  <property role="3oM_SC" value="running" />
+                </node>
               </node>
             </node>
             <node concept="3vwNmj" id="4IjegxhBuNa" role="3cqZAp">
@@ -290,8 +337,28 @@
           <node concept="3Tm1VV" id="4IjegxhBa3D" role="1B3o_S" />
           <node concept="3clFbS" id="4IjegxhBa3E" role="3clF47">
             <node concept="3SKdUt" id="4IjegxhBXY$" role="3cqZAp">
-              <node concept="3SKdUq" id="4IjegxhBXYA" role="3SKWNk">
-                <property role="3SKdUp" value="Given I have one registered async cell" />
+              <node concept="1PaTwC" id="17qUVvSZlTf" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZlTg" role="1PaTwD">
+                  <property role="3oM_SC" value="Given" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTh" role="1PaTwD">
+                  <property role="3oM_SC" value="I" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTi" role="1PaTwD">
+                  <property role="3oM_SC" value="have" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTj" role="1PaTwD">
+                  <property role="3oM_SC" value="one" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTk" role="1PaTwD">
+                  <property role="3oM_SC" value="registered" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTl" role="1PaTwD">
+                  <property role="3oM_SC" value="async" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTm" role="1PaTwD">
+                  <property role="3oM_SC" value="cell" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="4IjegxhBX6x" role="3cqZAp">
@@ -324,8 +391,22 @@
             </node>
             <node concept="3clFbH" id="4IjegxhBVDv" role="3cqZAp" />
             <node concept="3SKdUt" id="4IjegxhBVDw" role="3cqZAp">
-              <node concept="3SKdUq" id="4IjegxhBVDx" role="3SKWNk">
-                <property role="3SKdUp" value="when I remove that cell" />
+              <node concept="1PaTwC" id="17qUVvSZlTn" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZlTo" role="1PaTwD">
+                  <property role="3oM_SC" value="when" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTp" role="1PaTwD">
+                  <property role="3oM_SC" value="I" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTq" role="1PaTwD">
+                  <property role="3oM_SC" value="remove" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTr" role="1PaTwD">
+                  <property role="3oM_SC" value="that" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTs" role="1PaTwD">
+                  <property role="3oM_SC" value="cell" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="4IjegxhBYuq" role="3cqZAp">
@@ -343,8 +424,28 @@
             </node>
             <node concept="3clFbH" id="4IjegxhBVDC" role="3cqZAp" />
             <node concept="3SKdUt" id="4IjegxhBVDD" role="3cqZAp">
-              <node concept="3SKdUq" id="4IjegxhBVDE" role="3SKWNk">
-                <property role="3SKdUp" value="then the updater is not running anymore" />
+              <node concept="1PaTwC" id="17qUVvSZlTt" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZlTu" role="1PaTwD">
+                  <property role="3oM_SC" value="then" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTv" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTw" role="1PaTwD">
+                  <property role="3oM_SC" value="updater" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTx" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTy" role="1PaTwD">
+                  <property role="3oM_SC" value="not" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTz" role="1PaTwD">
+                  <property role="3oM_SC" value="running" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlT$" role="1PaTwD">
+                  <property role="3oM_SC" value="anymore" />
+                </node>
               </node>
             </node>
             <node concept="3vFxKo" id="4IjegxhBVDp" role="3cqZAp">
@@ -389,8 +490,28 @@
           <node concept="3Tm1VV" id="4IjegxhC5qe" role="1B3o_S" />
           <node concept="3clFbS" id="4IjegxhC5qf" role="3clF47">
             <node concept="3SKdUt" id="4IjegxhC5qg" role="3cqZAp">
-              <node concept="3SKdUq" id="4IjegxhC5qh" role="3SKWNk">
-                <property role="3SKdUp" value="Given I have a just created AsyncCellManager" />
+              <node concept="1PaTwC" id="17qUVvSZlT_" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZlTA" role="1PaTwD">
+                  <property role="3oM_SC" value="Given" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTB" role="1PaTwD">
+                  <property role="3oM_SC" value="I" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTC" role="1PaTwD">
+                  <property role="3oM_SC" value="have" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTD" role="1PaTwD">
+                  <property role="3oM_SC" value="a" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTE" role="1PaTwD">
+                  <property role="3oM_SC" value="just" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTF" role="1PaTwD">
+                  <property role="3oM_SC" value="created" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTG" role="1PaTwD">
+                  <property role="3oM_SC" value="AsyncCellManager" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="4IjegxhC6Zz" role="3cqZAp">
@@ -407,8 +528,22 @@
             </node>
             <node concept="3clFbH" id="4IjegxhC7AU" role="3cqZAp" />
             <node concept="3SKdUt" id="4IjegxhC7Jb" role="3cqZAp">
-              <node concept="3SKdUq" id="4IjegxhC7Jd" role="3SKWNk">
-                <property role="3SKdUp" value="Then the updater is stopped" />
+              <node concept="1PaTwC" id="17qUVvSZlTH" role="3ndbpf">
+                <node concept="3oM_SD" id="17qUVvSZlTI" role="1PaTwD">
+                  <property role="3oM_SC" value="Then" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTJ" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTK" role="1PaTwD">
+                  <property role="3oM_SC" value="updater" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTL" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="17qUVvSZlTM" role="1PaTwD">
+                  <property role="3oM_SC" value="stopped" />
+                </node>
               </node>
             </node>
             <node concept="3vFxKo" id="4IjegxhC5qB" role="3cqZAp">

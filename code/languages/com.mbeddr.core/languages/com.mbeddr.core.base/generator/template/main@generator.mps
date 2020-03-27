@@ -2,9 +2,10 @@
 <model ref="r:949d91ba-b3c5-483a-aab7-460e656aee7b(com.mbeddr.core.base.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -66,11 +67,8 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -152,6 +150,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -181,14 +187,49 @@
   </node>
   <node concept="1pmfR0" id="3RsvcbxPZ3a">
     <property role="TrG5h" value="deleteNoneImplementationChunksAndTheirImports" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="3RsvcbxPZ3b" role="1pqMTA">
       <node concept="3clFbS" id="3RsvcbxPZ3c" role="2VODD2">
         <node concept="3clFbH" id="94IdDKrsy9" role="3cqZAp" />
         <node concept="3SKdUt" id="3RsvcbxQWj3" role="3cqZAp">
-          <node concept="3SKdUq" id="3RsvcbxQWjR" role="3SKWNk">
-            <property role="3SKdUp" value="delete all chunk dependencies from implementation artifacts which point to non-implementation artifacts" />
+          <node concept="1PaTwC" id="13p6s1wtil3" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtil4" role="1PaTwD">
+              <property role="3oM_SC" value="delete" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtil5" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtil6" role="1PaTwD">
+              <property role="3oM_SC" value="chunk" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtil7" role="1PaTwD">
+              <property role="3oM_SC" value="dependencies" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtil8" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtil9" role="1PaTwD">
+              <property role="3oM_SC" value="implementation" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtila" role="1PaTwD">
+              <property role="3oM_SC" value="artifacts" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilb" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilc" role="1PaTwD">
+              <property role="3oM_SC" value="point" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtild" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtile" role="1PaTwD">
+              <property role="3oM_SC" value="non-implementation" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilf" role="1PaTwD">
+              <property role="3oM_SC" value="artifacts" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="3RsvcbxPZ3e" role="3cqZAp">
@@ -289,8 +330,19 @@
         </node>
         <node concept="3clFbH" id="3RsvcbxQWg1" role="3cqZAp" />
         <node concept="3SKdUt" id="3RsvcbxR0Ub" role="3cqZAp">
-          <node concept="3SKdUq" id="3RsvcbxR0Vq" role="3SKWNk">
-            <property role="3SKdUp" value="delete all non-implementation artifacts" />
+          <node concept="1PaTwC" id="13p6s1wtilg" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtilh" role="1PaTwD">
+              <property role="3oM_SC" value="delete" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtili" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilj" role="1PaTwD">
+              <property role="3oM_SC" value="non-implementation" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilk" role="1PaTwD">
+              <property role="3oM_SC" value="artifacts" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="3RsvcbxQWly" role="3cqZAp">
@@ -387,13 +439,24 @@
   </node>
   <node concept="1pmfR0" id="3ZdGyCQXLtL">
     <property role="TrG5h" value="deleteControlledNamesANdHandleReexports" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="3ZdGyCQXLtM" role="1pqMTA">
       <node concept="3clFbS" id="3ZdGyCQXLtN" role="2VODD2">
         <node concept="3SKdUt" id="3ZdGyCQXLtO" role="3cqZAp">
-          <node concept="3SKdUq" id="3ZdGyCQXLtP" role="3SKWNk">
-            <property role="3SKdUp" value="delete name controller stuff" />
+          <node concept="1PaTwC" id="13p6s1wtill" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtilm" role="1PaTwD">
+              <property role="3oM_SC" value="delete" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiln" role="1PaTwD">
+              <property role="3oM_SC" value="name" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilo" role="1PaTwD">
+              <property role="3oM_SC" value="controller" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilp" role="1PaTwD">
+              <property role="3oM_SC" value="stuff" />
+            </node>
           </node>
         </node>
         <node concept="2Gpval" id="3ZdGyCQXLtQ" role="3cqZAp">
@@ -482,8 +545,28 @@
         </node>
         <node concept="3clFbH" id="3ZdGyCREpBL" role="3cqZAp" />
         <node concept="3SKdUt" id="94IdDKx9rM" role="3cqZAp">
-          <node concept="3SKdUq" id="94IdDKxa9p" role="3SKWNk">
-            <property role="3SKdUp" value="Pull up reexported imports of non-Impl artifacts" />
+          <node concept="1PaTwC" id="13p6s1wtilq" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtilr" role="1PaTwD">
+              <property role="3oM_SC" value="Pull" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtils" role="1PaTwD">
+              <property role="3oM_SC" value="up" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilt" role="1PaTwD">
+              <property role="3oM_SC" value="reexported" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilu" role="1PaTwD">
+              <property role="3oM_SC" value="imports" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilv" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilw" role="1PaTwD">
+              <property role="3oM_SC" value="non-Impl" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtilx" role="1PaTwD">
+              <property role="3oM_SC" value="artifacts" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="94IdDKwpae" role="3cqZAp">

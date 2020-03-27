@@ -2,16 +2,16 @@
 <model ref="r:dcc99f72-dd42-4b2e-80a9-24831f4e47a3(test.com.mbeddr.mpsutil.xml.fix.tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="a71fc24a-23c8-4871-87d3-e77b414b28d2" name="test.com.mbeddr.mpsutil.xml.fix.support" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="771359e3-76e1-4788-8a8b-4c991a9c4893" name="com.mbeddr.mpsutil.xml.fix" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="a71fc24a-23c8-4871-87d3-e77b414b28d2" name="test.com.mbeddr.mpsutil.xml.fix.support" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="771359e3-76e1-4788-8a8b-4c991a9c4893" name="com.mbeddr.mpsutil.xml.fix" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <engage id="771359e3-76e1-4788-8a8b-4c991a9c4893" name="com.mbeddr.mpsutil.xml.fix" />
   </languages>
   <imports>
@@ -26,12 +26,14 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -113,6 +115,19 @@
     <language id="a71fc24a-23c8-4871-87d3-e77b414b28d2" name="test.com.mbeddr.mpsutil.xml.fix.support">
       <concept id="210803258685954773" name="test.com.mbeddr.mpsutil.xml.fix.support.structure.TestConcept" flags="ng" index="1__7qB" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
+      </concept>
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
@@ -128,13 +143,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
-      <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
-      <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
-        <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
+      <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
+        <child id="1678062499342629861" name="moduleId" index="37shsm" />
+      </concept>
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -159,11 +175,25 @@
                 </node>
                 <node concept="1eOMI4" id="bGV79Bu$Sr" role="33vP2m">
                   <node concept="10QFUN" id="bGV79Bu$Ss" role="1eOMHV">
-                    <node concept="3rM5sP" id="bGV79BuB$W" role="10QFUP">
-                      <property role="3rM5sR" value="6d3c26cb-5a54-45af-9595-ca1921bdbf09" />
-                    </node>
                     <node concept="3uibUv" id="bGV79Bu$Sw" role="10QFUM">
                       <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
+                    </node>
+                    <node concept="2OqwBi" id="UA8EIkt4Tj" role="10QFUP">
+                      <node concept="37shsh" id="UA8EIkt4w1" role="2Oq$k0">
+                        <node concept="1dCxOk" id="UA8EIkt4LY" role="37shsm">
+                          <property role="1XweGW" value="6d3c26cb-5a54-45af-9595-ca1921bdbf09" />
+                          <property role="1XxBO9" value="test.com.mbeddr.mpsutil.xml.fix" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="UA8EIkt52C" role="2OqNvi">
+                        <ref role="37wK5l" to="lui2:~SModuleReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
+                        <node concept="2OqwBi" id="UA8EIkt5lA" role="37wK5m">
+                          <node concept="1jxXqW" id="UA8EIkt567" role="2Oq$k0" />
+                          <node concept="liA8E" id="UA8EIkt5Fp" role="2OqNvi">
+                            <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -193,13 +223,6 @@
                 <property role="TrG5h" value="path" />
                 <node concept="17QB3L" id="lMaDrUhN7K" role="1tU5fm" />
                 <node concept="2OqwBi" id="lMaDrUhMVc" role="33vP2m">
-                  <node concept="2OqwBi" id="lMaDrUhMVd" role="2Oq$k0">
-                    <node concept="BaHAS" id="lMaDrUhMVe" role="2Oq$k0">
-                      <property role="BaHAW" value="test.com.mbeddr.mpsutil.xml.fix.tests" />
-                      <property role="BaGAP" value="tests" />
-                    </node>
-                    <node concept="LkI2h" id="lMaDrUhMVf" role="2OqNvi" />
-                  </node>
                   <node concept="liA8E" id="lMaDrUhMVg" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                     <node concept="Xl_RD" id="lMaDrUhMVh" role="37wK5m">
@@ -207,6 +230,26 @@
                     </node>
                     <node concept="Xl_RD" id="lMaDrUhMVi" role="37wK5m">
                       <property role="Xl_RC" value="/" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="UA8EIkt2nd" role="2Oq$k0">
+                    <node concept="2OqwBi" id="UA8EIkt1K1" role="2Oq$k0">
+                      <node concept="2JrnkZ" id="UA8EIkt25O" role="2Oq$k0">
+                        <node concept="1Xw6AR" id="UA8EIksQ6L" role="2JrQYb">
+                          <node concept="1dCxOl" id="UA8EIkt1$v" role="1XwpL7">
+                            <property role="1XweGQ" value="r:dcc99f72-dd42-4b2e-80a9-24831f4e47a3" />
+                            <node concept="1j_P7g" id="UA8EIkt1$w" role="1j$8Uc">
+                              <property role="1j_P7h" value="test.com.mbeddr.mpsutil.xml.fix.tests@tests" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="UA8EIkt2ga" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SModelReference.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="UA8EIkt2y5" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
                     </node>
                   </node>
                 </node>

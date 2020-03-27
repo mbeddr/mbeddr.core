@@ -2,10 +2,11 @@
 <model ref="r:77a1f13f-8b60-493a-85be-0cd342d922f6(com.mbeddr.mpsutil.compare.pattern.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -103,11 +104,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -151,6 +149,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -158,9 +162,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
-        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
-      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -179,9 +180,6 @@
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
-      </concept>
-      <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
-        <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -220,6 +218,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -464,8 +470,22 @@
                       <node concept="3zFVjK" id="wcyv5jS6S$" role="3zH0cK">
                         <node concept="3clFbS" id="wcyv5jS6S_" role="2VODD2">
                           <node concept="3SKdUt" id="18iyr$QYNqJ" role="3cqZAp">
-                            <node concept="3SKdUq" id="18iyr$QYNqL" role="3SKWNk">
-                              <property role="3SKdUp" value="PatternBuilderNode expression handles negation itself" />
+                            <node concept="1PaTwC" id="17qUVvSZkDS" role="3ndbpf">
+                              <node concept="3oM_SD" id="17qUVvSZkDT" role="1PaTwD">
+                                <property role="3oM_SC" value="PatternBuilderNode" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkDU" role="1PaTwD">
+                                <property role="3oM_SC" value="expression" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkDV" role="1PaTwD">
+                                <property role="3oM_SC" value="handles" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkDW" role="1PaTwD">
+                                <property role="3oM_SC" value="negation" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkDX" role="1PaTwD">
+                                <property role="3oM_SC" value="itself" />
+                              </node>
                             </node>
                           </node>
                           <node concept="3cpWs6" id="wcyv5jS7sh" role="3cqZAp">
@@ -579,8 +599,22 @@
                       <node concept="3zFVjK" id="wcyv5jS8a0" role="3zH0cK">
                         <node concept="3clFbS" id="wcyv5jS8a1" role="2VODD2">
                           <node concept="3SKdUt" id="18iyr$QYN_v" role="3cqZAp">
-                            <node concept="3SKdUq" id="18iyr$QYN_w" role="3SKWNk">
-                              <property role="3SKdUp" value="PatternBuilderNode expression handles negation itself" />
+                            <node concept="1PaTwC" id="17qUVvSZkDY" role="3ndbpf">
+                              <node concept="3oM_SD" id="17qUVvSZkDZ" role="1PaTwD">
+                                <property role="3oM_SC" value="PatternBuilderNode" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkE0" role="1PaTwD">
+                                <property role="3oM_SC" value="expression" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkE1" role="1PaTwD">
+                                <property role="3oM_SC" value="handles" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkE2" role="1PaTwD">
+                                <property role="3oM_SC" value="negation" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkE3" role="1PaTwD">
+                                <property role="3oM_SC" value="itself" />
+                              </node>
                             </node>
                           </node>
                           <node concept="3cpWs6" id="18iyr$QYN_x" role="3cqZAp">
@@ -694,8 +728,22 @@
                       <node concept="3zFVjK" id="wcyv5jS8$h" role="3zH0cK">
                         <node concept="3clFbS" id="wcyv5jS8$i" role="2VODD2">
                           <node concept="3SKdUt" id="18iyr$QYNGA" role="3cqZAp">
-                            <node concept="3SKdUq" id="18iyr$QYNGB" role="3SKWNk">
-                              <property role="3SKdUp" value="PatternBuilderNode expression handles negation itself" />
+                            <node concept="1PaTwC" id="17qUVvSZkE4" role="3ndbpf">
+                              <node concept="3oM_SD" id="17qUVvSZkE5" role="1PaTwD">
+                                <property role="3oM_SC" value="PatternBuilderNode" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkE6" role="1PaTwD">
+                                <property role="3oM_SC" value="expression" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkE7" role="1PaTwD">
+                                <property role="3oM_SC" value="handles" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkE8" role="1PaTwD">
+                                <property role="3oM_SC" value="negation" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkE9" role="1PaTwD">
+                                <property role="3oM_SC" value="itself" />
+                              </node>
                             </node>
                           </node>
                           <node concept="3cpWs6" id="18iyr$QYNGC" role="3cqZAp">
@@ -868,12 +916,12 @@
                                   </node>
                                 </node>
                                 <node concept="3TrcHB" id="4oNjwzxsNHl" role="2OqNvi">
-                                  <ref role="3TsBF5" to="iqxq:4oNjwzxoYgs" resolve="kind" />
+                                  <ref role="3TsBF5" to="iqxq:17qUVvSZm7A" resolve="kind" />
                                 </node>
                               </node>
-                              <node concept="3t7uKx" id="4oNjwzxsS$h" role="2OqNvi">
-                                <node concept="uoxfO" id="4oNjwzxsS$j" role="3t7uKA">
-                                  <ref role="uo_Cq" to="iqxq:4oNjwzxp3wy" />
+                              <node concept="21noJN" id="17qUVvSZmF8" role="2OqNvi">
+                                <node concept="21nZrQ" id="17qUVvSZmF9" role="21noJM">
+                                  <ref role="21nZrZ" to="iqxq:17qUVvSZlZm" resolve="_0" />
                                 </node>
                               </node>
                             </node>
@@ -1021,8 +1069,22 @@
                       <node concept="3zFVjK" id="wcyv5jSbU2" role="3zH0cK">
                         <node concept="3clFbS" id="wcyv5jSbU3" role="2VODD2">
                           <node concept="3SKdUt" id="18iyr$QYNO5" role="3cqZAp">
-                            <node concept="3SKdUq" id="18iyr$QYNO6" role="3SKWNk">
-                              <property role="3SKdUp" value="PatternBuilderNode expression handles negation itself" />
+                            <node concept="1PaTwC" id="17qUVvSZkEa" role="3ndbpf">
+                              <node concept="3oM_SD" id="17qUVvSZkEb" role="1PaTwD">
+                                <property role="3oM_SC" value="PatternBuilderNode" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkEc" role="1PaTwD">
+                                <property role="3oM_SC" value="expression" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkEd" role="1PaTwD">
+                                <property role="3oM_SC" value="handles" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkEe" role="1PaTwD">
+                                <property role="3oM_SC" value="negation" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkEf" role="1PaTwD">
+                                <property role="3oM_SC" value="itself" />
+                              </node>
                             </node>
                           </node>
                           <node concept="3cpWs6" id="18iyr$QYNO7" role="3cqZAp">
@@ -1212,8 +1274,22 @@
                       <node concept="3zFVjK" id="wcyv5jScXg" role="3zH0cK">
                         <node concept="3clFbS" id="wcyv5jScXh" role="2VODD2">
                           <node concept="3SKdUt" id="18iyr$QYPPr" role="3cqZAp">
-                            <node concept="3SKdUq" id="18iyr$QYPPs" role="3SKWNk">
-                              <property role="3SKdUp" value="PatternBuilderNode expression handles negation itself" />
+                            <node concept="1PaTwC" id="17qUVvSZkEg" role="3ndbpf">
+                              <node concept="3oM_SD" id="17qUVvSZkEh" role="1PaTwD">
+                                <property role="3oM_SC" value="PatternBuilderNode" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkEi" role="1PaTwD">
+                                <property role="3oM_SC" value="expression" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkEj" role="1PaTwD">
+                                <property role="3oM_SC" value="handles" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkEk" role="1PaTwD">
+                                <property role="3oM_SC" value="negation" />
+                              </node>
+                              <node concept="3oM_SD" id="17qUVvSZkEl" role="1PaTwD">
+                                <property role="3oM_SC" value="itself" />
+                              </node>
                             </node>
                           </node>
                           <node concept="3cpWs6" id="18iyr$QYPPt" role="3cqZAp">

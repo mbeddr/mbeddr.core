@@ -2,7 +2,7 @@
 <model ref="r:906d001d-0c5b-46c4-b2ac-d7aa146d16f8(test.analyses.spin.ts.harness_mdcc@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <devkit ref="537c2fcd-71ef-4c92-a9e5-27af92b5182b(com.mbeddr.analyses.spin.mdcc)" />
@@ -17,6 +17,9 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
+        <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
+      </concept>
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -27,14 +30,10 @@
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
-      <concept id="1214846310980" name="jetbrains.mps.lang.test.structure.AbstractNodeAssert" flags="nn" index="3quTHu">
-        <child id="1214846370530" name="nodeToCheck" index="3qv8fS" />
-      </concept>
       <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
       <concept id="1210674524691" name="jetbrains.mps.lang.test.structure.TestNodeReference" flags="nn" index="3xONca">
         <reference id="1210674534086" name="declaration" index="3xOPvv" />
       </concept>
-      <concept id="1215075719096" name="jetbrains.mps.lang.test.structure.CheckNodeForErrors" flags="nn" index="3Ca1qy" />
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
@@ -58,6 +57,9 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
+      </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
@@ -215,6 +217,17 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="3133179214568824809" name="jetbrains.mps.lang.text.structure.NodeWrapperElement" flags="ng" index="tu5oc">
+        <child id="3133179214568824810" name="node" index="tu5of" />
+      </concept>
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="7615572890648529894" name="com.mbeddr.core.expressions.structure.NotEqualsExpression" flags="ng" index="25Bbzn" />
       <concept id="8463282783691618461" name="com.mbeddr.core.expressions.structure.UnsignedInt8tType" flags="ng" index="26Vqp4" />
@@ -265,9 +278,47 @@
       <property role="TrG5h" value="testAllowedTopElementsInBasicMode" />
       <node concept="3cqZAl" id="1GXRyrT8qAt" role="3clF45" />
       <node concept="3clFbS" id="1GXRyrT8qAx" role="3clF47">
-        <node concept="3Ca1qy" id="1GXRyrT8qB2" role="3cqZAp">
-          <node concept="3xONca" id="1GXRyrT8qBa" role="3qv8fS">
-            <ref role="3xOPvv" node="1GXRyrT8qAP" resolve="allowed" />
+        <node concept="3SKdUt" id="61XOOojFZVU" role="3cqZAp">
+          <node concept="1PaTwC" id="61XOOojFZVV" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZVW" role="1PaTwD">
+              <property role="3oM_SC" value="Check" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZVX" role="1PaTwD">
+              <property role="3oM_SC" value="statement" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZVY" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZVZ" role="1PaTwD">
+              <property role="3oM_SC" value="moved" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZW0" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZW1" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZW2" role="1PaTwD">
+              <property role="3oM_SC" value="annotation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="61XOOojFZW3" role="3cqZAp">
+          <node concept="1PaTwC" id="61XOOojFZW4" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZW5" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="tu5oc" id="61XOOojFZW6" role="1PaTwD">
+              <node concept="3xONca" id="61XOOojFZW7" role="tu5of">
+                <ref role="3xOPvv" node="1GXRyrT8qAP" resolve="allowed" />
+              </node>
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZW8" role="1PaTwD">
+              <property role="3oM_SC" value="error" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZW9" role="1PaTwD">
+              <property role="3oM_SC" value="messages" />
+            </node>
           </node>
         </node>
       </node>
@@ -327,6 +378,11 @@
           <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
         </node>
         <node concept="1CU$1Q" id="1GXRyrTmpfU" role="2OODSX" />
+        <node concept="7CXmI" id="61XOOojFZVS" role="lGtFl">
+          <node concept="7OXhh" id="61XOOojFZVT" role="7EUXB">
+            <property role="TrG5h" value="testAllowedTopElementsInBasicMode_migrated" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1qefOq" id="1GXRyrTazcQ" role="1SKRRt">
@@ -405,9 +461,47 @@
       <property role="TrG5h" value="testAllowedTopElementsInExpertMode" />
       <node concept="3cqZAl" id="1GXRyrTazVA" role="3clF45" />
       <node concept="3clFbS" id="1GXRyrTazVB" role="3clF47">
-        <node concept="3Ca1qy" id="1GXRyrTazVC" role="3cqZAp">
-          <node concept="3xONca" id="1GXRyrTazVD" role="3qv8fS">
-            <ref role="3xOPvv" node="1GXRyrTazVW" resolve="allowed" />
+        <node concept="3SKdUt" id="61XOOojFZWc" role="3cqZAp">
+          <node concept="1PaTwC" id="61XOOojFZWd" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZWe" role="1PaTwD">
+              <property role="3oM_SC" value="Check" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWf" role="1PaTwD">
+              <property role="3oM_SC" value="statement" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWg" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWh" role="1PaTwD">
+              <property role="3oM_SC" value="moved" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWi" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWj" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWk" role="1PaTwD">
+              <property role="3oM_SC" value="annotation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="61XOOojFZWl" role="3cqZAp">
+          <node concept="1PaTwC" id="61XOOojFZWm" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZWn" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="tu5oc" id="61XOOojFZWo" role="1PaTwD">
+              <node concept="3xONca" id="61XOOojFZWp" role="tu5of">
+                <ref role="3xOPvv" node="1GXRyrTazVW" resolve="allowed" />
+              </node>
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWq" role="1PaTwD">
+              <property role="3oM_SC" value="error" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWr" role="1PaTwD">
+              <property role="3oM_SC" value="messages" />
+            </node>
           </node>
         </node>
       </node>
@@ -492,6 +586,11 @@
             <property role="2c7vTL" value="false" />
           </node>
         </node>
+        <node concept="7CXmI" id="61XOOojFZWa" role="lGtFl">
+          <node concept="7OXhh" id="61XOOojFZWb" role="7EUXB">
+            <property role="TrG5h" value="testAllowedTopElementsInExpertMode_migrated" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -550,6 +649,11 @@
         <node concept="3GEVxB" id="1GXRyrTb2w8" role="2OODSX">
           <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
         </node>
+        <node concept="7CXmI" id="61XOOojFZWs" role="lGtFl">
+          <node concept="7OXhh" id="61XOOojFZWt" role="7EUXB">
+            <property role="TrG5h" value="testAllowedCDeclElementsInBasicMode_migrated" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1qefOq" id="L5b1s40mVY" role="1SKRRt">
@@ -581,15 +685,58 @@
         <node concept="3xLA65" id="L5b1s40mWb" role="lGtFl">
           <property role="TrG5h" value="dissallowed_1" />
         </node>
+        <node concept="7CXmI" id="61XOOojFZWI" role="lGtFl">
+          <node concept="7OXhh" id="61XOOojFZWJ" role="7EUXB">
+            <property role="TrG5h" value="testDisallowedCDeclElementsInBasicMode_migrated" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1LZb2c" id="L5b1s40mUn" role="1SL9yI">
       <property role="TrG5h" value="testAllowedCDeclElementsInBasicMode" />
       <node concept="3cqZAl" id="L5b1s40mUo" role="3clF45" />
       <node concept="3clFbS" id="L5b1s40mUp" role="3clF47">
-        <node concept="3Ca1qy" id="L5b1s40mVI" role="3cqZAp">
-          <node concept="3xONca" id="L5b1s40mVQ" role="3qv8fS">
-            <ref role="3xOPvv" node="1GXRyrTb2w7" resolve="allowed" />
+        <node concept="3SKdUt" id="61XOOojFZWu" role="3cqZAp">
+          <node concept="1PaTwC" id="61XOOojFZWv" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZWw" role="1PaTwD">
+              <property role="3oM_SC" value="Check" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWx" role="1PaTwD">
+              <property role="3oM_SC" value="statement" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWy" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWz" role="1PaTwD">
+              <property role="3oM_SC" value="moved" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZW$" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZW_" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWA" role="1PaTwD">
+              <property role="3oM_SC" value="annotation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="61XOOojFZWB" role="3cqZAp">
+          <node concept="1PaTwC" id="61XOOojFZWC" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZWD" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="tu5oc" id="61XOOojFZWE" role="1PaTwD">
+              <node concept="3xONca" id="61XOOojFZWF" role="tu5of">
+                <ref role="3xOPvv" node="1GXRyrTb2w7" resolve="allowed" />
+              </node>
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWG" role="1PaTwD">
+              <property role="3oM_SC" value="error" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWH" role="1PaTwD">
+              <property role="3oM_SC" value="messages" />
+            </node>
           </node>
         </node>
       </node>
@@ -598,9 +745,47 @@
       <property role="TrG5h" value="testDisallowedCDeclElementsInBasicMode" />
       <node concept="3cqZAl" id="L5b1s43JeE" role="3clF45" />
       <node concept="3clFbS" id="L5b1s43JeF" role="3clF47">
-        <node concept="3Ca1qy" id="L5b1s43JeG" role="3cqZAp">
-          <node concept="3xONca" id="L5b1s43JfU" role="3qv8fS">
-            <ref role="3xOPvv" node="L5b1s40mWb" resolve="dissallowed_1" />
+        <node concept="3SKdUt" id="61XOOojFZWK" role="3cqZAp">
+          <node concept="1PaTwC" id="61XOOojFZWL" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZWM" role="1PaTwD">
+              <property role="3oM_SC" value="Check" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWN" role="1PaTwD">
+              <property role="3oM_SC" value="statement" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWO" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWP" role="1PaTwD">
+              <property role="3oM_SC" value="moved" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWQ" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWR" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWS" role="1PaTwD">
+              <property role="3oM_SC" value="annotation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="61XOOojFZWT" role="3cqZAp">
+          <node concept="1PaTwC" id="61XOOojFZWU" role="3ndbpf">
+            <node concept="3oM_SD" id="61XOOojFZWV" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="tu5oc" id="61XOOojFZWW" role="1PaTwD">
+              <node concept="3xONca" id="61XOOojFZWX" role="tu5of">
+                <ref role="3xOPvv" node="L5b1s40mWb" resolve="dissallowed_1" />
+              </node>
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWY" role="1PaTwD">
+              <property role="3oM_SC" value="error" />
+            </node>
+            <node concept="3oM_SD" id="61XOOojFZWZ" role="1PaTwD">
+              <property role="3oM_SC" value="messages" />
+            </node>
           </node>
         </node>
       </node>
@@ -608,17 +793,6 @@
   </node>
   <node concept="1lH9Xt" id="1GXRyrTcvhM">
     <property role="TrG5h" value="test_30_Harness_BasicMode" />
-    <node concept="1LZb2c" id="1GXRyrTgMOJ" role="1SL9yI">
-      <property role="TrG5h" value="testAllowed" />
-      <node concept="3cqZAl" id="1GXRyrTgMOK" role="3clF45" />
-      <node concept="3clFbS" id="1GXRyrTgMOO" role="3clF47">
-        <node concept="3Ca1qy" id="1GXRyrTgRPK" role="3cqZAp">
-          <node concept="3xONca" id="1GXRyrTgRQ0" role="3qv8fS">
-            <ref role="3xOPvv" node="1GXRyrTh0Wd" resolve="allowed" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="1GXRyrTcvhN" role="1SKRRt">
       <node concept="1HfMva" id="1GXRyrTcvhO" role="1qenE9">
         <property role="TrG5h" value="harness_allowed_elements" />
@@ -876,9 +1050,12 @@
           <ref role="3GEb4d" node="1GXRyrTmtOH" resolve="dummySUT" />
         </node>
         <node concept="1CU$1Q" id="1GXRyrTmpfj" role="2OODSX" />
-      </node>
-      <node concept="3xLA65" id="1GXRyrTh0Wd" role="lGtFl">
-        <property role="TrG5h" value="allowed" />
+        <node concept="7CXmI" id="61XOOojGLAp" role="lGtFl">
+          <node concept="7OXhh" id="61XOOojGLAr" role="7EUXB">
+            <property role="GvXf4" value="true" />
+            <property role="TrG5h" value="allowed" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1qefOq" id="4g0pd6rpDrc" role="1SKRRt">
@@ -900,9 +1077,9 @@
           <ref role="3GEb4d" node="1GXRyrTmtOH" resolve="dummySUT" />
         </node>
         <node concept="1CU$1Q" id="4g0pd6rpDse" role="2OODSX" />
-      </node>
-      <node concept="3xLA65" id="4g0pd6rpDsf" role="lGtFl">
-        <property role="TrG5h" value="disallowed" />
+        <node concept="3xLA65" id="61XOOojGMhO" role="lGtFl">
+          <property role="TrG5h" value="disallowed" />
+        </node>
       </node>
     </node>
   </node>

@@ -180,7 +180,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3DXrvS" id="69uDFDb3z98" role="3XIe9u">
-            <property role="3qmUMc" value="round" />
+            <property role="3qmUMc" value="2cAst3TvtBF/round" />
             <node concept="BUAnR" id="69uDFDb1cK5" role="3D7$A5">
               <ref role="BUAnL" node="69uDFDaUBWH" resolve="circleArea" />
               <node concept="3TlMh9" id="69uDFDb1d62" role="BULBh">

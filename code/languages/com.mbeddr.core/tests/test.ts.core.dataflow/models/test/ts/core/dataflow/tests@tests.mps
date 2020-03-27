@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -23,6 +23,9 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
+        <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
+      </concept>
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
@@ -34,30 +37,10 @@
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
-        <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
-      <concept id="1214846310980" name="jetbrains.mps.lang.test.structure.AbstractNodeAssert" flags="nn" index="3quTHu">
-        <child id="1214846370530" name="nodeToCheck" index="3qv8fS" />
-      </concept>
-      <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
-      <concept id="1210674524691" name="jetbrains.mps.lang.test.structure.TestNodeReference" flags="nn" index="3xONca">
-        <reference id="1210674534086" name="declaration" index="3xOPvv" />
-      </concept>
-      <concept id="1215075719096" name="jetbrains.mps.lang.test.structure.CheckNodeForErrors" flags="nn" index="3Ca1qy" />
-      <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
-    </language>
-    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <child id="1068580123133" name="returnType" index="3clF45" />
-        <child id="1068580123135" name="body" index="3clF47" />
-      </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
-        <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="8441331188640862326" name="com.mbeddr.core.statements.structure.BreakStatement" flags="ng" index="27uf6b" />
@@ -285,17 +268,6 @@
   </registry>
   <node concept="1lH9Xt" id="2QNVH28HPXA">
     <property role="TrG5h" value="DataflowTest_misc" />
-    <node concept="1LZb2c" id="20xms4Afg0W" role="1SL9yI">
-      <property role="TrG5h" value="doCheck" />
-      <node concept="3cqZAl" id="20xms4Afg0X" role="3clF45" />
-      <node concept="3clFbS" id="20xms4Afg0Y" role="3clF47">
-        <node concept="3Ca1qy" id="20xms4Afg0Z" role="3cqZAp">
-          <node concept="3xONca" id="20xms4Afg10" role="3qv8fS">
-            <ref role="3xOPvv" node="20xms4AffVT" resolve="doCheck1" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="2QNVH28HQfx" role="1SKRRt">
       <node concept="N3F5e" id="2QNVH28HQF0" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -495,26 +467,17 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="3xLA65" id="20xms4AffVT" role="lGtFl">
-        <property role="TrG5h" value="doCheck1" />
+        <node concept="7CXmI" id="13p6s1wtttU" role="lGtFl">
+          <node concept="7OXhh" id="13p6s1wttxE" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node concept="2v9HqL" id="2QNVH28YqHa" />
   <node concept="1lH9Xt" id="1MdOvoQc4gY">
     <property role="TrG5h" value="DataFlowTest_basic" />
-    <node concept="1LZb2c" id="1MdOvoQccUD" role="1SL9yI">
-      <property role="TrG5h" value="doCheck" />
-      <node concept="3cqZAl" id="1MdOvoQccUE" role="3clF45" />
-      <node concept="3clFbS" id="1MdOvoQccUI" role="3clF47">
-        <node concept="3Ca1qy" id="1MdOvoQcj93" role="3cqZAp">
-          <node concept="3xONca" id="1MdOvoQcj97" role="3qv8fS">
-            <ref role="3xOPvv" node="1MdOvoQccKl" resolve="doCheck1" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="1MdOvoQc81x" role="1SKRRt">
       <node concept="N3F5e" id="1MdOvoQc81$" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -625,7 +588,7 @@
               </node>
             </node>
             <node concept="3U$IGs" id="56zXiDu$oLC" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
           </node>
         </node>
@@ -1205,9 +1168,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3U$IGs" id="5i$ZYHjDx89" role="3U$Ho4">
-              <property role="3U$IFK" value="0" />
-            </node>
+            <node concept="3U$IGs" id="5i$ZYHjDx89" role="3U$Ho4" />
           </node>
         </node>
         <node concept="2NXPZ9" id="5i$ZYHjDwTE" role="N3F5h">
@@ -1215,26 +1176,17 @@
         </node>
         <node concept="2P5Msn" id="4cUhQNk5mB7" role="lGtFl">
           <node concept="3pcXbI" id="4cUhQNk5mIA" role="2P5Msk" />
+          <node concept="7CXmI" id="13p6s1wtyBV" role="lGtFl">
+            <node concept="7OXhh" id="13p6s1wtyBX" role="7EUXB">
+              <property role="GvXf4" value="true" />
+            </node>
+          </node>
         </node>
-      </node>
-      <node concept="3xLA65" id="1MdOvoQccKl" role="lGtFl">
-        <property role="TrG5h" value="doCheck1" />
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="7PgKJZvmaQN">
     <property role="TrG5h" value="DataFlowTest_advanced" />
-    <node concept="1LZb2c" id="7PgKJZvmaQO" role="1SL9yI">
-      <property role="TrG5h" value="doCheck" />
-      <node concept="3cqZAl" id="7PgKJZvmaQP" role="3clF45" />
-      <node concept="3clFbS" id="7PgKJZvmaQQ" role="3clF47">
-        <node concept="3Ca1qy" id="7PgKJZvmaQR" role="3cqZAp">
-          <node concept="3xONca" id="7PgKJZvmaQS" role="3qv8fS">
-            <ref role="3xOPvv" node="7PgKJZvmaRo" resolve="doCheck1" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="7PgKJZvmaQV" role="1SKRRt">
       <node concept="N3F5e" id="7PgKJZvmaQW" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -1436,7 +1388,7 @@
               </node>
             </node>
             <node concept="3U$IGs" id="4WcM_cuNNYK" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
           </node>
         </node>
@@ -1477,7 +1429,7 @@
               </node>
             </node>
             <node concept="3U$IGs" id="7DvJ5MYN_ob" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
           </node>
         </node>
@@ -1669,32 +1621,23 @@
               </node>
             </node>
             <node concept="3U$IGs" id="4cUhQNk1RQH" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
           </node>
         </node>
         <node concept="2P5Msn" id="4cUhQNk5lsH" role="lGtFl">
           <node concept="3pcXbI" id="4cUhQNk5lEb" role="2P5Msk" />
+          <node concept="7CXmI" id="13p6s1wtzPL" role="lGtFl">
+            <node concept="7OXhh" id="13p6s1wtzRs" role="7EUXB">
+              <property role="GvXf4" value="true" />
+            </node>
+          </node>
         </node>
-      </node>
-      <node concept="3xLA65" id="7PgKJZvmaRo" role="lGtFl">
-        <property role="TrG5h" value="doCheck1" />
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="20xms4Afe1A">
     <property role="TrG5h" value="DataflowTest_annotation1" />
-    <node concept="1LZb2c" id="6t992PQ7R3g" role="1SL9yI">
-      <property role="TrG5h" value="doCheck" />
-      <node concept="3cqZAl" id="6t992PQ7R3h" role="3clF45" />
-      <node concept="3clFbS" id="6t992PQ7R3i" role="3clF47">
-        <node concept="3Ca1qy" id="6t992PQ7R3j" role="3cqZAp">
-          <node concept="3xONca" id="6t992PQ7R3k" role="3qv8fS">
-            <ref role="3xOPvv" node="20xms4Aff5V" resolve="doCheck" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="20xms4Aff3N" role="1SKRRt">
       <node concept="N3F5e" id="20xms4Aff3O" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -1715,7 +1658,7 @@
                 <property role="2c7vTL" value="false" />
               </node>
               <node concept="61hT8" id="6CEc1EZPuQX" role="lGtFl">
-                <property role="61jdZ" value="1" />
+                <property role="61jdZ" value="3_CPcn39d$G/1" />
               </node>
             </node>
           </node>
@@ -1737,7 +1680,7 @@
               </node>
             </node>
             <node concept="3U$IGs" id="6t992PQ7Fot" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
           </node>
           <node concept="3XIRFW" id="20xms4Aff3Q" role="3XIRFX">
@@ -1855,11 +1798,11 @@
               </node>
             </node>
             <node concept="3U$IGs" id="1fLWRCl$yl$" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
           </node>
           <node concept="3U$IGs" id="1fLWRCl$yhg" role="6y14j">
-            <property role="3U$IFK" value="1" />
+            <property role="3U$IFK" value="3_CPcn39d$G/1" />
           </node>
         </node>
         <node concept="2NXPZ9" id="1fLWRCl$yhp" role="N3F5h">
@@ -1976,7 +1919,7 @@
               </node>
             </node>
             <node concept="3U$IGs" id="47919nGj7Zi" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
             <node concept="7CXmI" id="4oEPQFRq76w" role="lGtFl">
               <node concept="1TM$A" id="3n5vksRNkx0" role="7EUXB" />
@@ -2046,7 +1989,7 @@
               </node>
             </node>
             <node concept="3U$IGs" id="2fpkel0o40r" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
             <node concept="7CXmI" id="7u$ukFDjNBv" role="lGtFl">
               <node concept="1TM$A" id="7u$ukFDjNBw" role="7EUXB" />
@@ -2103,7 +2046,7 @@
               </node>
             </node>
             <node concept="3U$IGs" id="7u$ukFDnOGn" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
             <node concept="7CXmI" id="7u$ukFDnOGo" role="lGtFl">
               <node concept="1TM$A" id="7u$ukFDnOGp" role="7EUXB" />
@@ -2115,26 +2058,17 @@
         </node>
         <node concept="2P5Msn" id="4cUhQNk5kNS" role="lGtFl">
           <node concept="3pcXbI" id="4cUhQNk5kNY" role="2P5Msk" />
+          <node concept="7CXmI" id="13p6s1wtwz0" role="lGtFl">
+            <node concept="7OXhh" id="13p6s1wtwz2" role="7EUXB">
+              <property role="GvXf4" value="true" />
+            </node>
+          </node>
         </node>
-      </node>
-      <node concept="3xLA65" id="20xms4Aff5V" role="lGtFl">
-        <property role="TrG5h" value="doCheck" />
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="7wx0fKc$ppE">
     <property role="TrG5h" value="DataflowTest_liveness" />
-    <node concept="1LZb2c" id="7wx0fKc$ppF" role="1SL9yI">
-      <property role="TrG5h" value="doCheck" />
-      <node concept="3cqZAl" id="7wx0fKc$ppG" role="3clF45" />
-      <node concept="3clFbS" id="7wx0fKc$ppH" role="3clF47">
-        <node concept="3Ca1qy" id="7wx0fKc$ppI" role="3cqZAp">
-          <node concept="3xONca" id="7wx0fKc$ppJ" role="3qv8fS">
-            <ref role="3xOPvv" node="7wx0fKc$pqX" resolve="doCheck" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="7wx0fKc$ppK" role="1SKRRt">
       <node concept="N3F5e" id="7wx0fKc$ppL" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -2502,25 +2436,16 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="3xLA65" id="7wx0fKc$pqX" role="lGtFl">
-        <property role="TrG5h" value="doCheck" />
+        <node concept="7CXmI" id="13p6s1wtuHS" role="lGtFl">
+          <node concept="7OXhh" id="13p6s1wtv0l" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="2KWWERxLlxo">
     <property role="TrG5h" value="DataFlowTest_switch" />
-    <node concept="1LZb2c" id="2KWWERxLlxp" role="1SL9yI">
-      <property role="TrG5h" value="doCheck" />
-      <node concept="3cqZAl" id="2KWWERxLlxq" role="3clF45" />
-      <node concept="3clFbS" id="2KWWERxLlxr" role="3clF47">
-        <node concept="3Ca1qy" id="2KWWERxLlxs" role="3cqZAp">
-          <node concept="3xONca" id="2KWWERxLlxt" role="3qv8fS">
-            <ref role="3xOPvv" node="2KWWERxLlzC" resolve="doCheck1" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="2KWWERxLlxu" role="1SKRRt">
       <node concept="N3F5e" id="2KWWERxLlxv" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -2642,25 +2567,16 @@
         <node concept="2NXPZ9" id="2KWWERxLlyv" role="N3F5h">
           <property role="TrG5h" value="empty_1423053895962_1" />
         </node>
-      </node>
-      <node concept="3xLA65" id="2KWWERxLlzC" role="lGtFl">
-        <property role="TrG5h" value="doCheck1" />
+        <node concept="7CXmI" id="13p6s1wtxrN" role="lGtFl">
+          <node concept="7OXhh" id="13p6s1wtxss" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="25K78YYroCJ">
     <property role="TrG5h" value="DataflowTest_annotation2" />
-    <node concept="1LZb2c" id="25K78YYroCK" role="1SL9yI">
-      <property role="TrG5h" value="doCheck" />
-      <node concept="3cqZAl" id="25K78YYroCL" role="3clF45" />
-      <node concept="3clFbS" id="25K78YYroCM" role="3clF47">
-        <node concept="3Ca1qy" id="25K78YYroCN" role="3cqZAp">
-          <node concept="3xONca" id="25K78YYroCO" role="3qv8fS">
-            <ref role="3xOPvv" node="25K78YYroEo" resolve="doCheck" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="25K78YYroCP" role="1SKRRt">
       <node concept="N3F5e" id="25K78YYroCQ" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -2678,7 +2594,7 @@
               </node>
             </node>
             <node concept="3U$IGs" id="25K78YYroD2" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
           </node>
           <node concept="3XIRFW" id="25K78YYroD3" role="3XIRFX">
@@ -2713,7 +2629,7 @@
               </node>
             </node>
             <node concept="3U$IGs" id="25K78YYrK8K" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
           </node>
           <node concept="3XIRFW" id="25K78YYrK8L" role="3XIRFX">
@@ -2748,7 +2664,7 @@
               </node>
             </node>
             <node concept="3U$IGs" id="25K78YYrKdj" role="3U$Ho4">
-              <property role="3U$IFK" value="1" />
+              <property role="3U$IFK" value="3_CPcn39d$G/1" />
             </node>
           </node>
           <node concept="3XIRFW" id="25K78YYrKdk" role="3XIRFX">
@@ -2772,10 +2688,12 @@
         </node>
         <node concept="2P5Msn" id="25K78YYroEm" role="lGtFl">
           <node concept="3pcXbI" id="25K78YYroEn" role="2P5Msk" />
+          <node concept="7CXmI" id="13p6s1wtvY5" role="lGtFl">
+            <node concept="7OXhh" id="13p6s1wtvY7" role="7EUXB">
+              <property role="GvXf4" value="true" />
+            </node>
+          </node>
         </node>
-      </node>
-      <node concept="3xLA65" id="25K78YYroEo" role="lGtFl">
-        <property role="TrG5h" value="doCheck" />
       </node>
     </node>
   </node>
@@ -2784,17 +2702,6 @@
   </node>
   <node concept="1lH9Xt" id="6WeeguF3NFS">
     <property role="TrG5h" value="DataflowTest_GenericDotExpressions" />
-    <node concept="1LZb2c" id="6WeeguF3NFT" role="1SL9yI">
-      <property role="TrG5h" value="doCheck" />
-      <node concept="3cqZAl" id="6WeeguF3NFU" role="3clF45" />
-      <node concept="3clFbS" id="6WeeguF3NFV" role="3clF47">
-        <node concept="3Ca1qy" id="6WeeguF3NFW" role="3cqZAp">
-          <node concept="3xONca" id="6WeeguF3NFX" role="3qv8fS">
-            <ref role="3xOPvv" node="6WeeguF3NHb" resolve="doCheck1" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="6WeeguF3NFY" role="1SKRRt">
       <node concept="N3F5e" id="6WeeguF3NFZ" role="1qenE9">
         <property role="TrG5h" value="GenericDotExpressions" />
@@ -2899,9 +2806,11 @@
         <node concept="2NXPZ9" id="6WeeguF3Pjl" role="N3F5h">
           <property role="TrG5h" value="empty_1505308383656_1" />
         </node>
-      </node>
-      <node concept="3xLA65" id="6WeeguF3NHb" role="lGtFl">
-        <property role="TrG5h" value="doCheck1" />
+        <node concept="7CXmI" id="13p6s1wtxnH" role="lGtFl">
+          <node concept="7OXhh" id="13p6s1wtxnJ" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

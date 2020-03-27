@@ -2,7 +2,7 @@
 <model ref="r:623b1867-06d7-4ae0-8ba0-23b3df1d9ee6(test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -39,7 +39,6 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
-        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
@@ -64,7 +63,6 @@
     <node concept="1TJgyj" id="2Q$Xn1yGonX" role="1TKVEi">
       <property role="IQ2ns" value="3289023490928248317" />
       <property role="20kJfa" value="ref1" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2Q$Xn1yGonS" resolve="testRefClass1" />
     </node>
   </node>
@@ -87,15 +85,13 @@
     <node concept="1TJgyj" id="2Q$Xn1yGonV" role="1TKVEi">
       <property role="IQ2ns" value="3289023490928248315" />
       <property role="20kJfa" value="one" />
-      <property role="20lbJX" value="0..1" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="2Q$Xn1yGonQ" resolve="testClass1" />
     </node>
     <node concept="1TJgyj" id="2Q$Xn1yGonW" role="1TKVEi">
       <property role="IQ2ns" value="3289023490928248316" />
       <property role="20kJfa" value="two" />
-      <property role="20lbJX" value="0..1" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="2Q$Xn1yGonS" resolve="testRefClass1" />
     </node>
   </node>

@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="0eddeefa-c2d6-4437-bc2c-de50fd4ce470" name="jetbrains.mps.lang.script" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -39,11 +39,8 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="0eddeefa-c2d6-4437-bc2c-de50fd4ce470" name="jetbrains.mps.lang.script">
@@ -69,6 +66,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -99,8 +104,31 @@
       <node concept="_Y34e" id="2nSRgleF2LR" role="_XDHO">
         <node concept="3clFbS" id="2nSRgleF2LS" role="2VODD2">
           <node concept="3SKdUt" id="2xRMs06XSBD" role="3cqZAp">
-            <node concept="3SKdUq" id="2xRMs06XSN_" role="3SKWNk">
-              <property role="3SKdUp" value="TODO delete INumericLiteral along with the migration script" />
+            <node concept="1PaTwC" id="13p6s1wtis2" role="3ndbpf">
+              <node concept="3oM_SD" id="13p6s1wtis3" role="1PaTwD">
+                <property role="3oM_SC" value="TODO" />
+              </node>
+              <node concept="3oM_SD" id="13p6s1wtis4" role="1PaTwD">
+                <property role="3oM_SC" value="delete" />
+              </node>
+              <node concept="3oM_SD" id="13p6s1wtis5" role="1PaTwD">
+                <property role="3oM_SC" value="INumericLiteral" />
+              </node>
+              <node concept="3oM_SD" id="13p6s1wtis6" role="1PaTwD">
+                <property role="3oM_SC" value="along" />
+              </node>
+              <node concept="3oM_SD" id="13p6s1wtis7" role="1PaTwD">
+                <property role="3oM_SC" value="with" />
+              </node>
+              <node concept="3oM_SD" id="13p6s1wtis8" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="13p6s1wtis9" role="1PaTwD">
+                <property role="3oM_SC" value="migration" />
+              </node>
+              <node concept="3oM_SD" id="13p6s1wtisa" role="1PaTwD">
+                <property role="3oM_SC" value="script" />
+              </node>
             </node>
           </node>
           <node concept="3clFbF" id="4LLYoSMZHw" role="3cqZAp">

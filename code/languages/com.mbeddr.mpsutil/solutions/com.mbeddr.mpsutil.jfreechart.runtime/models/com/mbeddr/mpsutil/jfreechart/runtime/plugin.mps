@@ -4,7 +4,7 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -31,7 +31,6 @@
       <concept id="1213888653896" name="jetbrains.mps.lang.plugin.structure.InitBlock" flags="in" index="2xpIHi" />
       <concept id="1214307303872" name="jetbrains.mps.lang.plugin.structure.GetComponentBlock" flags="in" index="2UmK3q" />
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
-        <property id="2498620720770664572" name="position" index="2bmUCM" />
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
@@ -103,6 +102,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -167,7 +167,6 @@
   <node concept="sEfby" id="75t_nimFd6o">
     <property role="TrG5h" value="ChartTool" />
     <property role="2XNbzY" value="Chart" />
-    <property role="2bmUCM" value="BOTTOM" />
     <node concept="2XrIbr" id="7uOgiT8Is_" role="2XNbBy">
       <property role="TrG5h" value="setChart" />
       <node concept="37vLTG" id="7uOgiT8Sj5" role="3clF46">
@@ -295,6 +294,39 @@
     </node>
     <node concept="2UmK3q" id="75t_nimFd6p" role="2Um5zG">
       <node concept="3clFbS" id="75t_nimFd6q" role="2VODD2">
+        <node concept="3clFbF" id="75t_nimFdlj" role="3cqZAp">
+          <node concept="2OqwBi" id="75t_nimFdld" role="3clFbG">
+            <node concept="2WthIp" id="75t_nimFdlg" role="2Oq$k0" />
+            <node concept="2BZ7hE" id="75t_nimFdli" role="2OqNvi">
+              <ref role="2WH_rO" node="75t_nimFd7S" resolve="myComponent" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2BZ0e9" id="75t_nimFd7S" role="2XNbBz">
+      <property role="TrG5h" value="myComponent" />
+      <node concept="3Tm6S6" id="75t_nimFd7T" role="1B3o_S" />
+      <node concept="3uibUv" id="7uOgiTa2nJ" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JScrollPane" resolve="JScrollPane" />
+      </node>
+    </node>
+    <node concept="2BZ0e9" id="7uOgiT8PA3" role="2XNbBz">
+      <property role="TrG5h" value="myChartPanel" />
+      <node concept="3Tm6S6" id="7uOgiT8PA4" role="1B3o_S" />
+      <node concept="3uibUv" id="7uOgiT8PLj" role="1tU5fm">
+        <ref role="3uigEE" to="k6nw:~ChartPanel" resolve="ChartPanel" />
+      </node>
+    </node>
+    <node concept="2BZ0e9" id="7uOgiT8Uq1" role="2XNbBz">
+      <property role="TrG5h" value="myChartManager" />
+      <node concept="3Tm6S6" id="7uOgiT8Uq2" role="1B3o_S" />
+      <node concept="3uibUv" id="7uOgiT8U_R" role="1tU5fm">
+        <ref role="3uigEE" node="7uOgiT8LxA" resolve="ChartManager" />
+      </node>
+    </node>
+    <node concept="2xpIHi" id="75t_nimFdvw" role="uR5cp">
+      <node concept="3clFbS" id="75t_nimFdvx" role="2VODD2">
         <node concept="3clFbF" id="1cPvvekEyJx" role="3cqZAp">
           <node concept="37vLTI" id="1cPvvekEyOo" role="3clFbG">
             <node concept="2ShNRf" id="1cPvvekEyR1" role="37vLTx">
@@ -373,39 +405,8 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="75t_nimFdlj" role="3cqZAp">
-          <node concept="2OqwBi" id="75t_nimFdld" role="3clFbG">
-            <node concept="2WthIp" id="75t_nimFdlg" role="2Oq$k0" />
-            <node concept="2BZ7hE" id="75t_nimFdli" role="2OqNvi">
-              <ref role="2WH_rO" node="75t_nimFd7S" resolve="myComponent" />
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="C_LCOTqUC5" role="3cqZAp" />
       </node>
-    </node>
-    <node concept="2BZ0e9" id="75t_nimFd7S" role="2XNbBz">
-      <property role="TrG5h" value="myComponent" />
-      <node concept="3Tm6S6" id="75t_nimFd7T" role="1B3o_S" />
-      <node concept="3uibUv" id="7uOgiTa2nJ" role="1tU5fm">
-        <ref role="3uigEE" to="dxuu:~JScrollPane" resolve="JScrollPane" />
-      </node>
-    </node>
-    <node concept="2BZ0e9" id="7uOgiT8PA3" role="2XNbBz">
-      <property role="TrG5h" value="myChartPanel" />
-      <node concept="3Tm6S6" id="7uOgiT8PA4" role="1B3o_S" />
-      <node concept="3uibUv" id="7uOgiT8PLj" role="1tU5fm">
-        <ref role="3uigEE" to="k6nw:~ChartPanel" resolve="ChartPanel" />
-      </node>
-    </node>
-    <node concept="2BZ0e9" id="7uOgiT8Uq1" role="2XNbBz">
-      <property role="TrG5h" value="myChartManager" />
-      <node concept="3Tm6S6" id="7uOgiT8Uq2" role="1B3o_S" />
-      <node concept="3uibUv" id="7uOgiT8U_R" role="1tU5fm">
-        <ref role="3uigEE" node="7uOgiT8LxA" resolve="ChartManager" />
-      </node>
-    </node>
-    <node concept="2xpIHi" id="75t_nimFdvw" role="uR5cp">
-      <node concept="3clFbS" id="75t_nimFdvx" role="2VODD2" />
     </node>
   </node>
   <node concept="312cEu" id="7uOgiT8LxA">
@@ -431,15 +432,26 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7uOgiT95nf" role="3cqZAp">
-          <node concept="2OqwBi" id="7uOgiT95gX" role="3clFbG">
-            <node concept="2OqwBi" id="7uOgiT953z" role="2Oq$k0">
-              <node concept="37vLTw" id="7uOgiT953$" role="2Oq$k0">
+        <node concept="3cpWs8" id="C_LCOTqt_A" role="3cqZAp">
+          <node concept="3cpWsn" id="C_LCOTqt_B" role="3cpWs9">
+            <property role="TrG5h" value="tool" />
+            <node concept="1xUVSX" id="C_LCOTqnsn" role="1tU5fm">
+              <ref role="1xYkEM" node="75t_nimFd6o" resolve="ChartTool" />
+            </node>
+            <node concept="2OqwBi" id="C_LCOTqt_C" role="33vP2m">
+              <node concept="37vLTw" id="C_LCOTqt_D" role="2Oq$k0">
                 <ref role="3cqZAo" node="7uOgiT8OYi" resolve="ideaProject" />
               </node>
-              <node concept="LR4U6" id="7uOgiT953_" role="2OqNvi">
+              <node concept="LR4U6" id="C_LCOTqt_E" role="2OqNvi">
                 <ref role="LR4U5" node="75t_nimFd6o" resolve="ChartTool" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7uOgiT95nf" role="3cqZAp">
+          <node concept="2OqwBi" id="7uOgiT95gX" role="3clFbG">
+            <node concept="37vLTw" id="C_LCOTqt_F" role="2Oq$k0">
+              <ref role="3cqZAo" node="C_LCOTqt_B" resolve="tool" />
             </node>
             <node concept="2XshWL" id="7uOgiT95mA" role="2OqNvi">
               <ref role="2WH_rO" node="7uOgiT8TZf" resolve="getChartManager" />

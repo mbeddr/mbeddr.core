@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -188,11 +189,8 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -244,6 +242,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -559,13 +565,134 @@
           </node>
           <node concept="3clFbS" id="7836$RyVWlv" role="3clFbx">
             <node concept="3SKdUt" id="7836$RyVWpe" role="3cqZAp">
-              <node concept="3SKdUq" id="7836$RyVWpd" role="3SKWNk">
-                <property role="3SKdUp" value="&quot;Normal&quot; build number starts with MPS, then goes some actual build number with numbers and dots and dashes, then goes some suffix like M1." />
+              <node concept="1PaTwC" id="13p6s1wtj4$" role="3ndbpf">
+                <node concept="3oM_SD" id="13p6s1wtj4_" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;Normal&quot;" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4A" role="1PaTwD">
+                  <property role="3oM_SC" value="build" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4B" role="1PaTwD">
+                  <property role="3oM_SC" value="number" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4C" role="1PaTwD">
+                  <property role="3oM_SC" value="starts" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4D" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4E" role="1PaTwD">
+                  <property role="3oM_SC" value="MPS," />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4F" role="1PaTwD">
+                  <property role="3oM_SC" value="then" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4G" role="1PaTwD">
+                  <property role="3oM_SC" value="goes" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4H" role="1PaTwD">
+                  <property role="3oM_SC" value="some" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4I" role="1PaTwD">
+                  <property role="3oM_SC" value="actual" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4J" role="1PaTwD">
+                  <property role="3oM_SC" value="build" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4K" role="1PaTwD">
+                  <property role="3oM_SC" value="number" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4L" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4M" role="1PaTwD">
+                  <property role="3oM_SC" value="numbers" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4N" role="1PaTwD">
+                  <property role="3oM_SC" value="and" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4O" role="1PaTwD">
+                  <property role="3oM_SC" value="dots" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4P" role="1PaTwD">
+                  <property role="3oM_SC" value="and" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4Q" role="1PaTwD">
+                  <property role="3oM_SC" value="dashes," />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4R" role="1PaTwD">
+                  <property role="3oM_SC" value="then" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4S" role="1PaTwD">
+                  <property role="3oM_SC" value="goes" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4T" role="1PaTwD">
+                  <property role="3oM_SC" value="some" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4U" role="1PaTwD">
+                  <property role="3oM_SC" value="suffix" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4V" role="1PaTwD">
+                  <property role="3oM_SC" value="like" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4W" role="1PaTwD">
+                  <property role="3oM_SC" value="M1." />
+                </node>
               </node>
             </node>
             <node concept="3SKdUt" id="7836$RyVWpg" role="3cqZAp">
-              <node concept="3SKdUq" id="7836$RyVWpf" role="3SKWNk">
-                <property role="3SKdUp" value="If build number looks like &quot;11.snapshot&quot;, we consider it developers build and do not to extract samples." />
+              <node concept="1PaTwC" id="13p6s1wtj4X" role="3ndbpf">
+                <node concept="3oM_SD" id="13p6s1wtj4Y" role="1PaTwD">
+                  <property role="3oM_SC" value="If" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj4Z" role="1PaTwD">
+                  <property role="3oM_SC" value="build" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj50" role="1PaTwD">
+                  <property role="3oM_SC" value="number" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj51" role="1PaTwD">
+                  <property role="3oM_SC" value="looks" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj52" role="1PaTwD">
+                  <property role="3oM_SC" value="like" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj53" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;11.snapshot&quot;," />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj54" role="1PaTwD">
+                  <property role="3oM_SC" value="we" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj55" role="1PaTwD">
+                  <property role="3oM_SC" value="consider" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj56" role="1PaTwD">
+                  <property role="3oM_SC" value="it" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj57" role="1PaTwD">
+                  <property role="3oM_SC" value="developers" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj58" role="1PaTwD">
+                  <property role="3oM_SC" value="build" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj59" role="1PaTwD">
+                  <property role="3oM_SC" value="and" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj5a" role="1PaTwD">
+                  <property role="3oM_SC" value="do" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj5b" role="1PaTwD">
+                  <property role="3oM_SC" value="not" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj5c" role="1PaTwD">
+                  <property role="3oM_SC" value="to" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj5d" role="1PaTwD">
+                  <property role="3oM_SC" value="extract" />
+                </node>
+                <node concept="3oM_SD" id="13p6s1wtj5e" role="1PaTwD">
+                  <property role="3oM_SC" value="samples." />
+                </node>
               </node>
             </node>
             <node concept="3cpWs6" id="7836$RyVWlw" role="3cqZAp">

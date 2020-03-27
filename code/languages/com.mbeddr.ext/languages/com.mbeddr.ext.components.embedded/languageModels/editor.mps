@@ -2,7 +2,7 @@
 <model ref="r:785fa9c8-f837-4deb-8b2a-5851f3658bf3(com.mbeddr.ext.components.embedded.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -195,7 +195,7 @@
     <property role="TrG5h" value="deleteInterruptRunnableExitHandler" />
     <ref role="1h_SK9" to="bs45:16gyj4A9wF1" resolve="InterruptExitHandler" />
     <node concept="1hA7zw" id="16gyj4A9_UP" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="16gyj4A9_UQ" role="1hA7z_">
         <node concept="3clFbS" id="16gyj4A9_UR" role="2VODD2">
           <node concept="3clFbF" id="16gyj4A9_V7" role="3cqZAp">

@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -87,11 +88,8 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -197,6 +195,14 @@
       </concept>
       <concept id="1174653354106" name="jetbrains.mps.baseLanguage.regexp.structure.RegexpUsingConstruction" flags="ng" index="1YMW5F">
         <child id="1174653387388" name="regexp" index="1YN4dH" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1071,8 +1077,10 @@
                 </node>
               </node>
               <node concept="3SKdUt" id="2CeBpnxkpd_" role="3cqZAp">
-                <node concept="3SKdUq" id="2CeBpnxkpdA" role="3SKWNk">
-                  <property role="3SKdUp" value="octal" />
+                <node concept="1PaTwC" id="13p6s1wtirG" role="3ndbpf">
+                  <node concept="3oM_SD" id="13p6s1wtirH" role="1PaTwD">
+                    <property role="3oM_SC" value="octal" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbJ" id="2CeBpnxkpaL" role="3cqZAp">
@@ -1094,8 +1102,28 @@
                 </node>
               </node>
               <node concept="3SKdUt" id="2CeBpnxkpdC" role="3cqZAp">
-                <node concept="3SKdUq" id="2CeBpnxkpdD" role="3SKWNk">
-                  <property role="3SKdUp" value="hex with 2 or 4 hex numbers" />
+                <node concept="1PaTwC" id="13p6s1wtirI" role="3ndbpf">
+                  <node concept="3oM_SD" id="13p6s1wtirJ" role="1PaTwD">
+                    <property role="3oM_SC" value="hex" />
+                  </node>
+                  <node concept="3oM_SD" id="13p6s1wtirK" role="1PaTwD">
+                    <property role="3oM_SC" value="with" />
+                  </node>
+                  <node concept="3oM_SD" id="13p6s1wtirL" role="1PaTwD">
+                    <property role="3oM_SC" value="2" />
+                  </node>
+                  <node concept="3oM_SD" id="13p6s1wtirM" role="1PaTwD">
+                    <property role="3oM_SC" value="or" />
+                  </node>
+                  <node concept="3oM_SD" id="13p6s1wtirN" role="1PaTwD">
+                    <property role="3oM_SC" value="4" />
+                  </node>
+                  <node concept="3oM_SD" id="13p6s1wtirO" role="1PaTwD">
+                    <property role="3oM_SC" value="hex" />
+                  </node>
+                  <node concept="3oM_SD" id="13p6s1wtirP" role="1PaTwD">
+                    <property role="3oM_SC" value="numbers" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbJ" id="2CeBpnxkq7i" role="3cqZAp">

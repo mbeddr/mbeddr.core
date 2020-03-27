@@ -1,31 +1,54 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.168.+'
+    }
+}
+
 ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 
-//MPS extensions version
-ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2019.1.+"
-ext.mpsMajor = "2019.1"
-ext.mpsBuild = "2019.1.6"
+//MPS-extensions version
+ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2019.2.+"
+
+//MPS version
+ext.mpsMajor = "2019.2"
+ext.mpsBuild = "2019.2.4"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
 ext.ciBuild = findNonEmptyProperty("forceCI") ?: !hasNonEmptyProperty('mpsHomeDir') && project.hasProperty("teamcity")
 
-buildscript {
-    if(JavaVersion.current() != JavaVersion.VERSION_1_8){
-        throw new GradleException("This build script requires java " + JavaVersion.VERSION_1_8 + ", but you are currently using " + JavaVersion.current())
-    }
-    repositories {
-        mavenLocal()
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
-    }
+def jdk_home
 
-    dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1' +
-                '.0.22.+'
+if (ext.has('java11_home')) {
+    jdk_home = ext.get('java11_home')
+} else if (System.getenv('JB_JAVA11_HOME') != null) {
+    jdk_home = System.getenv('JB_JAVA11_HOME')
+} else {
+    def expected = JavaVersion.VERSION_11
+    if (JavaVersion.current() != expected) {
+        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
+            + "  * Use project property java11_home to point to the Java 11 JDK.\n"
+            + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
+            + "  * Run Gradle using Java 11")
     }
+    jdk_home = System.getProperty('java.home')
 }
+
+// Check JDK location
+if (!new File(jdk_home, "lib").exists()) {
+    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
+}
+
+logger.info 'Using JDK at {}', jdk_home
 
 def hasNonEmptyProperty(property) {
     return project.hasProperty(property) && !project.getProperty(property).empty
@@ -42,13 +65,15 @@ subprojects {
     // required plugins
     apply plugin: "base"
     apply plugin: "maven-publish"
-    ext.mbeddrMajor = "1"
-    ext.mbeddrMinor = "3"
+    ext.mbeddrMajor = "2019"
+    ext.mbeddrMinor = "2"
 
     // switch to snapshot/release repositories passed with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
     ext.snapshotRepository = findNonEmptyProperty('snapshotRepository') ?: defaultSnapshotRepository
     ext.releaseRepository = findNonEmptyProperty('releaseRepository') ?: defaultReleaseRepository
+    ext.jdk_home = jdk_home
+    ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
     // use depencency repositories passed as comma-separated list with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
@@ -87,10 +112,10 @@ subprojects {
             } else {
                 ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
             }
-            if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("mps-")) {
+            if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("maintenance-")) {
                 mbeddrBuild = "master"
             }
-            ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
+            ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
         } else {
             ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
         }

@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -132,11 +133,8 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -214,6 +212,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -415,8 +421,22 @@
         <node concept="3clFbJ" id="5gYn0x8h0m7" role="3cqZAp">
           <node concept="3clFbS" id="5gYn0x8h0m9" role="3clFbx">
             <node concept="3SKdUt" id="5gYn0x8hioI" role="3cqZAp">
-              <node concept="3SKdUq" id="5gYn0x8hj27" role="3SKWNk">
-                <property role="3SKdUp" value="Has already its own section" />
+              <node concept="1PaTwC" id="6JXsDxrKC3O" role="3ndbpf">
+                <node concept="3oM_SD" id="6JXsDxrKC3P" role="1PaTwD">
+                  <property role="3oM_SC" value="Has" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxrKC3Q" role="1PaTwD">
+                  <property role="3oM_SC" value="already" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxrKC3R" role="1PaTwD">
+                  <property role="3oM_SC" value="its" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxrKC3S" role="1PaTwD">
+                  <property role="3oM_SC" value="own" />
+                </node>
+                <node concept="3oM_SD" id="6JXsDxrKC3T" role="1PaTwD">
+                  <property role="3oM_SC" value="section" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs6" id="5gYn0x8hgCu" role="3cqZAp">
@@ -567,8 +587,58 @@
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="5gYn0x8oTiT" role="3clF47">
         <node concept="3SKdUt" id="1TgsdXPQTFH" role="3cqZAp">
-          <node concept="3SKdUq" id="1TgsdXPQTNi" role="3SKWNk">
-            <property role="3SKdUp" value="For reducing the complexity of the generator, we always use at least one section for the task" />
+          <node concept="1PaTwC" id="6JXsDxrKC3U" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxrKC3V" role="1PaTwD">
+              <property role="3oM_SC" value="For" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC3W" role="1PaTwD">
+              <property role="3oM_SC" value="reducing" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC3X" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC3Y" role="1PaTwD">
+              <property role="3oM_SC" value="complexity" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC3Z" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC40" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC41" role="1PaTwD">
+              <property role="3oM_SC" value="generator," />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC42" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC43" role="1PaTwD">
+              <property role="3oM_SC" value="always" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC44" role="1PaTwD">
+              <property role="3oM_SC" value="use" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC45" role="1PaTwD">
+              <property role="3oM_SC" value="at" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC46" role="1PaTwD">
+              <property role="3oM_SC" value="least" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC47" role="1PaTwD">
+              <property role="3oM_SC" value="one" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC48" role="1PaTwD">
+              <property role="3oM_SC" value="section" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC49" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC4a" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC4b" role="1PaTwD">
+              <property role="3oM_SC" value="task" />
+            </node>
           </node>
         </node>
         <node concept="3clFbJ" id="1TgsdXPQRM9" role="3cqZAp">
@@ -886,8 +956,16 @@
         </node>
         <node concept="3clFbH" id="5gYn0x8f7Xk" role="3cqZAp" />
         <node concept="3SKdUt" id="1TgsdXP4CPt" role="3cqZAp">
-          <node concept="3SKdUq" id="1TgsdXP4DsG" role="3SKWNk">
-            <property role="3SKdUp" value="add goto statement" />
+          <node concept="1PaTwC" id="6JXsDxrKC4c" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxrKC4d" role="1PaTwD">
+              <property role="3oM_SC" value="add" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC4e" role="1PaTwD">
+              <property role="3oM_SC" value="goto" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxrKC4f" role="1PaTwD">
+              <property role="3oM_SC" value="statement" />
+            </node>
           </node>
         </node>
         <node concept="1Dw8fO" id="1TgsdXP4JQW" role="3cqZAp">

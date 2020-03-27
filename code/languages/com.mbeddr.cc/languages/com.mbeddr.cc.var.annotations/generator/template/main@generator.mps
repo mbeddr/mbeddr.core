@@ -2,24 +2,24 @@
 <model ref="r:62d92012-8061-40a9-9f5f-893e60f8aedd(com.mbeddr.cc.var.annotations.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="223dd778-c44f-4ef3-9535-7aa7d12244a6" name="com.mbeddr.core.debug" version="-1" />
+    <use id="223dd778-c44f-4ef3-9535-7aa7d12244a6" name="com.mbeddr.core.debug" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
-    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
-    <use id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm" version="1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -87,11 +87,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -163,6 +160,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -339,23 +344,139 @@
     <node concept="1pplIY" id="7oNb1MJX$mg" role="1pqMTA">
       <node concept="3clFbS" id="7oNb1MJX$mh" role="2VODD2">
         <node concept="3SKdUt" id="7oNb1MK3rNf" role="3cqZAp">
-          <node concept="3SKdUq" id="7oNb1MK3rNh" role="3SKWNk">
-            <property role="3SKdUp" value="Workaround for erratic behavior of drop attributes generator rule for FeatureModelConfiguration attributes in " />
+          <node concept="1PaTwC" id="6JXsDxttw0$" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxttw0_" role="1PaTwD">
+              <property role="3oM_SC" value="Workaround" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0A" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0B" role="1PaTwD">
+              <property role="3oM_SC" value="erratic" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0C" role="1PaTwD">
+              <property role="3oM_SC" value="behavior" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0D" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0E" role="1PaTwD">
+              <property role="3oM_SC" value="drop" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0F" role="1PaTwD">
+              <property role="3oM_SC" value="attributes" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0G" role="1PaTwD">
+              <property role="3oM_SC" value="generator" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0H" role="1PaTwD">
+              <property role="3oM_SC" value="rule" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0I" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0J" role="1PaTwD">
+              <property role="3oM_SC" value="FeatureModelConfiguration" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0K" role="1PaTwD">
+              <property role="3oM_SC" value="attributes" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0L" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="7oNb1MK3rOm" role="3cqZAp">
-          <node concept="3SKdUq" id="7oNb1MK3rOn" role="3SKWNk">
-            <property role="3SKdUp" value="com.mbeddr.cc.var.annotations.generator.template.main.main mapping configuration which apparently only works " />
+          <node concept="1PaTwC" id="6JXsDxttw0M" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxttw0N" role="1PaTwD">
+              <property role="3oM_SC" value="com.mbeddr.cc.var.annotations.generator.template.main.main" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0O" role="1PaTwD">
+              <property role="3oM_SC" value="mapping" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0P" role="1PaTwD">
+              <property role="3oM_SC" value="configuration" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0Q" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0R" role="1PaTwD">
+              <property role="3oM_SC" value="apparently" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0S" role="1PaTwD">
+              <property role="3oM_SC" value="only" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0T" role="1PaTwD">
+              <property role="3oM_SC" value="works" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="7oNb1MK3rPv" role="3cqZAp">
-          <node concept="3SKdUq" id="7oNb1MK3rPw" role="3SKWNk">
-            <property role="3SKdUp" value="as expected when model/solution is made/rebuilt from within IDE but not when it is built using MPS-generated " />
+          <node concept="1PaTwC" id="6JXsDxttw0U" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxttw0V" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0W" role="1PaTwD">
+              <property role="3oM_SC" value="expected" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0X" role="1PaTwD">
+              <property role="3oM_SC" value="when" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0Y" role="1PaTwD">
+              <property role="3oM_SC" value="model/solution" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw0Z" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw10" role="1PaTwD">
+              <property role="3oM_SC" value="made/rebuilt" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw11" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw12" role="1PaTwD">
+              <property role="3oM_SC" value="within" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw13" role="1PaTwD">
+              <property role="3oM_SC" value="IDE" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw14" role="1PaTwD">
+              <property role="3oM_SC" value="but" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw15" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw16" role="1PaTwD">
+              <property role="3oM_SC" value="when" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw17" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw18" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw19" role="1PaTwD">
+              <property role="3oM_SC" value="built" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw1a" role="1PaTwD">
+              <property role="3oM_SC" value="using" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw1b" role="1PaTwD">
+              <property role="3oM_SC" value="MPS-generated" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="7oNb1MK3uA6" role="3cqZAp">
-          <node concept="3SKdUq" id="7oNb1MK3uA7" role="3SKWNk">
-            <property role="3SKdUp" value="Ant build scripts" />
+          <node concept="1PaTwC" id="6JXsDxttw1c" role="3ndbpf">
+            <node concept="3oM_SD" id="6JXsDxttw1d" role="1PaTwD">
+              <property role="3oM_SC" value="Ant" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw1e" role="1PaTwD">
+              <property role="3oM_SC" value="build" />
+            </node>
+            <node concept="3oM_SD" id="6JXsDxttw1f" role="1PaTwD">
+              <property role="3oM_SC" value="scripts" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="7oNb1MJX_4l" role="3cqZAp">

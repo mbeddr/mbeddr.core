@@ -1,3 +1,5 @@
+import de.itemis.mps.gradle.*
+
 def script_test_mbeddrPlatform = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-ts-tests.xml")
 
 if (project.skipresolve_mps) {

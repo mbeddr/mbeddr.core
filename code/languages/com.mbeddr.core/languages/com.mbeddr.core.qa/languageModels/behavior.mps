@@ -4,8 +4,9 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -222,11 +223,8 @@
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -263,9 +261,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -370,6 +366,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1315,7 +1319,7 @@
         <node concept="3clFbJ" id="6Xk4NhOGWrU" role="3cqZAp">
           <node concept="3clFbS" id="6Xk4NhOGWrX" role="3clFbx">
             <node concept="2xdQw9" id="2Fugwv5QlEr" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="6Xk4NhOHja2" role="9lYJi">
                 <property role="Xl_RC" value="Please generate the models for which coverage is to be measured and save the transient models." />
               </node>
@@ -1625,7 +1629,7 @@
                           <ref role="2pJxaS" to="79wq:6Xk4NhNlKo_" resolve="GeneratorCoverageAssessmentResult" />
                           <node concept="2pIpSj" id="7NouExiI1OO" role="2pJxcM">
                             <ref role="2pIpSl" to="79wq:6Xk4NhNlKoA" resolve="generatorFragment" />
-                            <node concept="36biLy" id="7NouExiI1OQ" role="2pJxcZ">
+                            <node concept="36biLy" id="7NouExiI1OQ" role="28nt2d">
                               <node concept="2GrUjf" id="7NouExiI1OP" role="36biLW">
                                 <ref role="2Gs0qQ" node="6Xk4NhNpaBl" resolve="crtTemplate" />
                               </node>
@@ -2645,8 +2649,13 @@
       </node>
       <node concept="3clFbS" id="6Xk4NhNoSfW" role="3clF47">
         <node concept="3SKdUt" id="6Xk4NhNoTr4" role="3cqZAp">
-          <node concept="3SKdUq" id="6Xk4NhNoTr7" role="3SKWNk">
-            <property role="3SKdUp" value="do nothing" />
+          <node concept="1PaTwC" id="13p6s1wtiQQ" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtiQR" role="1PaTwD">
+              <property role="3oM_SC" value="do" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiQS" role="1PaTwD">
+              <property role="3oM_SC" value="nothing" />
+            </node>
           </node>
         </node>
       </node>
@@ -3042,8 +3051,13 @@
       </node>
       <node concept="3clFbS" id="6Xk4NhNoSgl" role="3clF47">
         <node concept="3SKdUt" id="6Xk4NhNoTri" role="3cqZAp">
-          <node concept="3SKdUq" id="6Xk4NhNoTrl" role="3SKWNk">
-            <property role="3SKdUp" value="do nothing" />
+          <node concept="1PaTwC" id="13p6s1wtiQT" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtiQU" role="1PaTwD">
+              <property role="3oM_SC" value="do" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtiQV" role="1PaTwD">
+              <property role="3oM_SC" value="nothing" />
+            </node>
           </node>
         </node>
       </node>
@@ -5660,11 +5674,14 @@
               </node>
               <node concept="2Zo12i" id="5stuwjVhvTl" role="2OqNvi">
                 <node concept="25Kdxt" id="5stuwjVhvWP" role="2Zo12j">
-                  <node concept="2OqwBi" id="5stuwjVhw2C" role="25KhWn">
-                    <node concept="13iPFW" id="5stuwjVhw0q" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="5stuwjVi8S3" role="2OqNvi">
-                      <ref role="3Tt5mk" to="79wq:5stuwjVbubz" resolve="ref" />
+                  <node concept="2OqwBi" id="3$C$d1y$FA0" role="25KhWn">
+                    <node concept="2OqwBi" id="5stuwjVhw2C" role="2Oq$k0">
+                      <node concept="13iPFW" id="5stuwjVhw0q" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="5stuwjVi8S3" role="2OqNvi">
+                        <ref role="3Tt5mk" to="79wq:5stuwjVbubz" resolve="ref" />
+                      </node>
                     </node>
+                    <node concept="1rGIog" id="3$C$d1y$G5I" role="2OqNvi" />
                   </node>
                 </node>
               </node>

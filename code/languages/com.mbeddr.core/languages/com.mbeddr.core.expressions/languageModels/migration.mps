@@ -103,11 +103,8 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -146,9 +143,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -200,6 +195,14 @@
     <language id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration">
       <concept id="8352104482584315555" name="jetbrains.mps.lang.migration.structure.MigrationScript" flags="ig" index="3SyAh_">
         <property id="5820409521797704727" name="fromVersion" index="qMTe8" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -396,8 +399,40 @@
       <node concept="3Tm1VV" id="4OmSVnTnGAs" role="1B3o_S" />
       <node concept="3clFbS" id="4OmSVnTnGAu" role="3clF47">
         <node concept="3SKdUt" id="4IfjsNg$0Wn" role="3cqZAp">
-          <node concept="3SKdUq" id="4IfjsNg$0Wo" role="3SKWNk">
-            <property role="3SKdUp" value="Do nothing: the deprecated int2bool and bool2int concepts have been removed" />
+          <node concept="1PaTwC" id="13p6s1wtirQ" role="3ndbpf">
+            <node concept="3oM_SD" id="13p6s1wtirR" role="1PaTwD">
+              <property role="3oM_SC" value="Do" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtirS" role="1PaTwD">
+              <property role="3oM_SC" value="nothing:" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtirT" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtirU" role="1PaTwD">
+              <property role="3oM_SC" value="deprecated" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtirV" role="1PaTwD">
+              <property role="3oM_SC" value="int2bool" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtirW" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtirX" role="1PaTwD">
+              <property role="3oM_SC" value="bool2int" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtirY" role="1PaTwD">
+              <property role="3oM_SC" value="concepts" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtirZ" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtis0" role="1PaTwD">
+              <property role="3oM_SC" value="been" />
+            </node>
+            <node concept="3oM_SD" id="13p6s1wtis1" role="1PaTwD">
+              <property role="3oM_SC" value="removed" />
+            </node>
           </node>
         </node>
       </node>
@@ -544,7 +579,7 @@
                         <ref role="2pJxaS" to="mj1l:4ZVDCZCbtj7" resolve="ParensExpression" />
                         <node concept="2pIpSj" id="yjDrJEnb2E" role="2pJxcM">
                           <ref role="2pIpSl" to="mj1l:6iIoqg1yDLg" resolve="expression" />
-                          <node concept="36biLy" id="yjDrJEnb5q" role="2pJxcZ">
+                          <node concept="36biLy" id="yjDrJEnb5q" role="28nt2d">
                             <node concept="2OqwBi" id="yjDrJEnbbo" role="36biLW">
                               <node concept="2GrUjf" id="yjDrJEnb6u" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="yjDrJEnab8" resolve="expr" />

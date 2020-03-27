@@ -115,7 +115,7 @@
       <concept id="3788988821852026523" name="com.mbeddr.core.modules.structure.GlobalConstantRef" flags="ng" index="4ZOvp">
         <reference id="3376775282622611130" name="constant" index="2DPCA0" />
       </concept>
-      <concept id="159275153966479361" name="com.mbeddr.core.modules.structure.PragmaDeclarationRef" flags="ng" index="2vwAfD">
+      <concept id="159275153966479361" name="com.mbeddr.core.modules.structure.ModifierDeclarationRef" flags="ng" index="2vwAfD">
         <reference id="159275153966479362" name="decl" index="2vwAfE" />
       </concept>
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -180,7 +180,7 @@
       <concept id="5308710777891565561" name="com.mbeddr.ext.components.structure.FieldRef" flags="ng" index="EbZIE">
         <reference id="5308710777891565562" name="field" index="EbZID" />
       </concept>
-      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.InstancePortRef" flags="ng" index="2EWCuO">
+      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.ComponentPortRef" flags="ng" index="2EWCuO">
         <reference id="4491876417845649018" name="instance" index="2EWCuR" />
         <reference id="3444913373458569211" name="port" index="XcPQd" />
       </concept>

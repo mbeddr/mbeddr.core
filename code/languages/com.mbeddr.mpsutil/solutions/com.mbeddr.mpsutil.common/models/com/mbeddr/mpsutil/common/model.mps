@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -114,11 +115,8 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
@@ -173,6 +171,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -235,18 +241,177 @@
         </node>
         <node concept="3clFbH" id="sufbFKPRez" role="3cqZAp" />
         <node concept="3SKdUt" id="556AefeElA0" role="3cqZAp">
-          <node concept="3SKdUq" id="556AefeElA2" role="3SKWNk">
-            <property role="3SKdUp" value="FIXME this is qiute odd code, with not clear assumptions about module names. " />
+          <node concept="1PaTwC" id="17qUVvSZldK" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZldL" role="1PaTwD">
+              <property role="3oM_SC" value="FIXME" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldM" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldN" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldO" role="1PaTwD">
+              <property role="3oM_SC" value="qiute" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldP" role="1PaTwD">
+              <property role="3oM_SC" value="odd" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldQ" role="1PaTwD">
+              <property role="3oM_SC" value="code," />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldR" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldS" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldT" role="1PaTwD">
+              <property role="3oM_SC" value="clear" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldU" role="1PaTwD">
+              <property role="3oM_SC" value="assumptions" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldV" role="1PaTwD">
+              <property role="3oM_SC" value="about" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldW" role="1PaTwD">
+              <property role="3oM_SC" value="module" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZldX" role="1PaTwD">
+              <property role="3oM_SC" value="names." />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="556AefeEWWp" role="3cqZAp">
-          <node concept="3SKdUq" id="556AefeEWWq" role="3SKWNk">
-            <property role="3SKdUp" value="The idea seems to be to find instances declared in used languages, though it's not clear why used languages? The model is written in these languages, why" />
+          <node concept="1PaTwC" id="17qUVvSZldY" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZldZ" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle0" role="1PaTwD">
+              <property role="3oM_SC" value="idea" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle1" role="1PaTwD">
+              <property role="3oM_SC" value="seems" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle2" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle3" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle4" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle5" role="1PaTwD">
+              <property role="3oM_SC" value="find" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle6" role="1PaTwD">
+              <property role="3oM_SC" value="instances" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle7" role="1PaTwD">
+              <property role="3oM_SC" value="declared" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle8" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle9" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlea" role="1PaTwD">
+              <property role="3oM_SC" value="languages," />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZleb" role="1PaTwD">
+              <property role="3oM_SC" value="though" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlec" role="1PaTwD">
+              <property role="3oM_SC" value="it's" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZled" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlee" role="1PaTwD">
+              <property role="3oM_SC" value="clear" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlef" role="1PaTwD">
+              <property role="3oM_SC" value="why" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZleg" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZleh" role="1PaTwD">
+              <property role="3oM_SC" value="languages?" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlei" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlej" role="1PaTwD">
+              <property role="3oM_SC" value="model" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlek" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlel" role="1PaTwD">
+              <property role="3oM_SC" value="written" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlem" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlen" role="1PaTwD">
+              <property role="3oM_SC" value="these" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZleo" role="1PaTwD">
+              <property role="3oM_SC" value="languages," />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlep" role="1PaTwD">
+              <property role="3oM_SC" value="why" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="556AefeF0k$" role="3cqZAp">
-          <node concept="3SKdUq" id="556AefeF0kA" role="3SKWNk">
-            <property role="3SKdUp" value="do we care to find nodes declared in the source modules of these languages???" />
+          <node concept="1PaTwC" id="17qUVvSZleq" role="3ndbpf">
+            <node concept="3oM_SD" id="17qUVvSZler" role="1PaTwD">
+              <property role="3oM_SC" value="do" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZles" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlet" role="1PaTwD">
+              <property role="3oM_SC" value="care" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZleu" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlev" role="1PaTwD">
+              <property role="3oM_SC" value="find" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlew" role="1PaTwD">
+              <property role="3oM_SC" value="nodes" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlex" role="1PaTwD">
+              <property role="3oM_SC" value="declared" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZley" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZlez" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle$" role="1PaTwD">
+              <property role="3oM_SC" value="source" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZle_" role="1PaTwD">
+              <property role="3oM_SC" value="modules" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZleA" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZleB" role="1PaTwD">
+              <property role="3oM_SC" value="these" />
+            </node>
+            <node concept="3oM_SD" id="17qUVvSZleC" role="1PaTwD">
+              <property role="3oM_SC" value="languages???" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="556AefeDW8a" role="3cqZAp">
@@ -504,8 +669,31 @@
           </node>
         </node>
         <node concept="3SKdUt" id="71Kd4qWLTWN" role="3cqZAp">
-          <node concept="3SKdUq" id="71Kd4qWLTWP" role="3SKWNk">
-            <property role="3SKdUp" value="look up FindUsagesManager instead of depricated singleton access" />
+          <node concept="1PaTwC" id="3AWV0N_FJso" role="3ndbpf">
+            <node concept="3oM_SD" id="3AWV0N_FJsp" role="1PaTwD">
+              <property role="3oM_SC" value="look" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJsq" role="1PaTwD">
+              <property role="3oM_SC" value="up" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJsr" role="1PaTwD">
+              <property role="3oM_SC" value="FindUsagesManager" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJss" role="1PaTwD">
+              <property role="3oM_SC" value="instead" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJst" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJsu" role="1PaTwD">
+              <property role="3oM_SC" value="depricated" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJsv" role="1PaTwD">
+              <property role="3oM_SC" value="singleton" />
+            </node>
+            <node concept="3oM_SD" id="3AWV0N_FJsw" role="1PaTwD">
+              <property role="3oM_SC" value="access" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="71Kd4qWLOqw" role="3cqZAp">
