@@ -88,7 +88,7 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
+      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryFinallyStatement" flags="nn" index="2GUZhq">
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
       </concept>
@@ -3314,13 +3314,13 @@
           </node>
           <node concept="3K4zz7" id="4cZcoof1uhE" role="37wK5m">
             <node concept="2ShNRf" id="4cZcoof1uU8" role="3K4E3e">
-              <node concept="HV5vD" id="4cZcoof1Lrx" role="2ShVmc">
-                <ref role="HV5vE" to="xr52:~SModelTreeNode$LongModelNameText" resolve="SModelTreeNode.LongModelNameText" />
+              <node concept="1pGfFk" id="4LEklfDDG_v" role="2ShVmc">
+                <ref role="37wK5l" to="xr52:~SModelTreeNode$LongModelNameText.&lt;init&gt;()" resolve="SModelTreeNode.LongModelNameText" />
               </node>
             </node>
             <node concept="2ShNRf" id="4cZcoof1N2p" role="3K4GZi">
-              <node concept="HV5vD" id="4cZcoof1Sl$" role="2ShVmc">
-                <ref role="HV5vE" to="xr52:~SModelTreeNode$ShortModelNameText" resolve="SModelTreeNode.ShortModelNameText" />
+              <node concept="1pGfFk" id="4LEklfDDG_x" role="2ShVmc">
+                <ref role="37wK5l" to="xr52:~SModelTreeNode$ShortModelNameText.&lt;init&gt;()" resolve="SModelTreeNode.ShortModelNameText" />
               </node>
             </node>
             <node concept="37vLTw" id="2Nt6procgoM" role="3K4Cdx">
@@ -3763,32 +3763,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="6yXTMcUetc_" role="3cqZAp">
-              <node concept="3cpWsn" id="6yXTMcUetc$" role="3cpWs9">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="filteredRoots" />
-                <node concept="3uibUv" id="6yXTMcUetcA" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                  <node concept="3uibUv" id="6yXTMcUex8R" role="11_B2D">
-                    <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6yXTMcUfbbG" role="33vP2m">
-                  <node concept="2OqwBi" id="6yXTMcUfaeT" role="2Oq$k0">
-                    <node concept="37vLTw" id="6yXTMcUfaeU" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6yXTMcUd_4u" resolve="myScope" />
-                    </node>
-                    <node concept="liA8E" id="6yXTMcUfaeV" role="2OqNvi">
-                      <ref role="37wK5l" node="6yXTMcUb66e" resolve="getRootNodes" />
-                      <node concept="37vLTw" id="6yXTMcUfaeW" role="37wK5m">
-                        <ref role="3cqZAo" node="6yXTMcUetcp" resolve="model" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="ANE8D" id="6yXTMcUfbXu" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="6yXTMcUetcP" role="3cqZAp">
               <node concept="3cpWsn" id="6yXTMcUetcO" role="3cpWs9">
                 <property role="3TUv4t" value="false" />
@@ -3799,52 +3773,40 @@
                     <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                   </node>
                 </node>
-                <node concept="2YIFZM" id="6yXTMcUete_" role="33vP2m">
-                  <ref role="1Pybhc" to="7e8u:~SortUtil" resolve="SortUtil" />
-                  <ref role="37wK5l" to="7e8u:~SortUtil.sortNodesByPresentation(java.util.List)" resolve="sortNodesByPresentation" />
-                  <node concept="37vLTw" id="6yXTMcUetcT" role="37wK5m">
-                    <ref role="3cqZAo" node="6yXTMcUetc$" resolve="filteredRoots" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="6yXTMcUetcV" role="3cqZAp">
-              <node concept="3cpWsn" id="6yXTMcUetcU" role="3cpWs9">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="childrenComparator" />
-                <node concept="3uibUv" id="6yXTMcUetcW" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
-                  <node concept="3uibUv" id="6yXTMcUetcX" role="11_B2D">
-                    <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6yXTMcUetcY" role="33vP2m">
-                  <node concept="1rXfSq" id="6yXTMcUetcZ" role="2Oq$k0">
-                    <ref role="37wK5l" to="7e8u:~MPSTreeNode.getTree()" resolve="getTree" />
-                  </node>
-                  <node concept="liA8E" id="6yXTMcUetd0" role="2OqNvi">
-                    <ref role="37wK5l" to="7e8u:~MPSTree.getChildrenComparator()" resolve="getChildrenComparator" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="6yXTMcUetd1" role="3cqZAp">
-              <node concept="3y3z36" id="6yXTMcUetd2" role="3clFbw">
-                <node concept="37vLTw" id="6yXTMcUetd3" role="3uHU7B">
-                  <ref role="3cqZAo" node="6yXTMcUetcU" resolve="childrenComparator" />
-                </node>
-                <node concept="10Nm6u" id="6yXTMcUetd4" role="3uHU7w" />
-              </node>
-              <node concept="3clFbS" id="6yXTMcUetd6" role="3clFbx">
-                <node concept="3clFbF" id="6yXTMcUetd7" role="3cqZAp">
-                  <node concept="2YIFZM" id="6yXTMcUeteD" role="3clFbG">
-                    <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-                    <ref role="37wK5l" to="33ny:~Collections.sort(java.util.List,java.util.Comparator)" resolve="sort" />
-                    <node concept="37vLTw" id="6yXTMcUetd9" role="37wK5m">
-                      <ref role="3cqZAo" node="6yXTMcUetcO" resolve="sortedRoots" />
+                <node concept="2ShNRf" id="4LEklfDDSf3" role="33vP2m">
+                  <node concept="1pGfFk" id="4LEklfDEiKw" role="2ShVmc">
+                    <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
+                    <node concept="2OqwBi" id="4LEklfDEyUH" role="37wK5m">
+                      <node concept="2OqwBi" id="4LEklfDEyUI" role="2Oq$k0">
+                        <node concept="37vLTw" id="4LEklfDEyUJ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6yXTMcUd_4u" resolve="myScope" />
+                        </node>
+                        <node concept="liA8E" id="4LEklfDEyUK" role="2OqNvi">
+                          <ref role="37wK5l" node="6yXTMcUb66e" resolve="getRootNodes" />
+                          <node concept="37vLTw" id="4LEklfDEyUL" role="37wK5m">
+                            <ref role="3cqZAo" node="6yXTMcUetcp" resolve="model" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="ANE8D" id="4LEklfDEyUM" role="2OqNvi" />
                     </node>
-                    <node concept="37vLTw" id="6yXTMcUetda" role="37wK5m">
-                      <ref role="3cqZAo" node="6yXTMcUetcU" resolve="childrenComparator" />
+                    <node concept="3uibUv" id="4LEklfDEn4D" role="1pMfVU">
+                      <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4LEklfDEq$H" role="3cqZAp">
+              <node concept="2OqwBi" id="4LEklfDEuTk" role="3clFbG">
+                <node concept="37vLTw" id="4LEklfDEtLL" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6yXTMcUetcO" resolve="sortedRoots" />
+                </node>
+                <node concept="liA8E" id="4LEklfDEvKn" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.sort(java.util.Comparator)" resolve="sort" />
+                  <node concept="2ShNRf" id="4LEklfDEwjF" role="37wK5m">
+                    <node concept="1pGfFk" id="4LEklfDEyLx" role="2ShVmc">
+                      <ref role="37wK5l" to="18ew:~SNodePresentationComparator.&lt;init&gt;()" resolve="SNodePresentationComparator" />
                     </node>
                   </node>
                 </node>
