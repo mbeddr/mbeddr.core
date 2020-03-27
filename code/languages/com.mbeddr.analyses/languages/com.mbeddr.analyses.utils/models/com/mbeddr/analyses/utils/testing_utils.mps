@@ -1105,12 +1105,13 @@
               <ref role="3uigEE" to="fwk:~DebugInfo" resolve="DebugInfo" />
             </node>
             <node concept="2OqwBi" id="3I3e3C4vG0p" role="33vP2m">
-              <node concept="2YIFZM" id="3I3e3C4vG0q" role="2Oq$k0">
-                <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
-                <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance()" resolve="getInstance" />
+              <node concept="2ShNRf" id="4ntWkOTivoF" role="2Oq$k0">
+                <node concept="1pGfFk" id="4ntWkOTiw1i" role="2ShVmc">
+                  <ref role="37wK5l" to="fwk:~TraceInfo.&lt;init&gt;()" resolve="TraceInfo" />
+                </node>
               </node>
               <node concept="liA8E" id="3I3e3C4vG0r" role="2OqNvi">
-                <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel)" resolve="get" />
+                <ref role="37wK5l" to="fwk:~TraceInfo.getDebugInfo(org.jetbrains.mps.openapi.model.SModel)" resolve="getDebugInfo" />
                 <node concept="37vLTw" id="3I3e3C4vG0s" role="37wK5m">
                   <ref role="3cqZAo" node="3I3e3C4vGC8" resolve="aModel" />
                 </node>

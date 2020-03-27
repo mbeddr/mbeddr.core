@@ -368,9 +368,6 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
@@ -1529,19 +1526,18 @@
               <ref role="3uigEE" to="fwk:~DebugInfo" resolve="DebugInfo" />
             </node>
             <node concept="2OqwBi" id="74nKSDp1YLf" role="33vP2m">
-              <node concept="2YIFZM" id="74nKSDp1YLg" role="2Oq$k0">
-                <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
-                <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance()" resolve="getInstance" />
+              <node concept="2ShNRf" id="4ntWkOTikhE" role="2Oq$k0">
+                <node concept="1pGfFk" id="4ntWkOTimS7" role="2ShVmc">
+                  <ref role="37wK5l" to="fwk:~TraceInfo.&lt;init&gt;()" resolve="TraceInfo" />
+                </node>
               </node>
               <node concept="liA8E" id="74nKSDp1YLh" role="2OqNvi">
-                <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel)" resolve="get" />
-                <node concept="2JrnkZ" id="74nKSDp1YLj" role="37wK5m">
-                  <node concept="2OqwBi" id="74nKSDp1YLk" role="2JrQYb">
-                    <node concept="37vLTw" id="4dVT39Gzk17" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4dVT39GzjkT" resolve="root" />
-                    </node>
-                    <node concept="I4A8Y" id="74nKSDp1YLm" role="2OqNvi" />
+                <ref role="37wK5l" to="fwk:~TraceInfo.getDebugInfo(org.jetbrains.mps.openapi.model.SModel)" resolve="getDebugInfo" />
+                <node concept="2OqwBi" id="74nKSDp1YLk" role="37wK5m">
+                  <node concept="37vLTw" id="4dVT39Gzk17" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4dVT39GzjkT" resolve="root" />
                   </node>
+                  <node concept="I4A8Y" id="74nKSDp1YLm" role="2OqNvi" />
                 </node>
               </node>
             </node>

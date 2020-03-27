@@ -6469,12 +6469,13 @@
             <property role="TrG5h" value="allTraceableNodes" />
             <node concept="2OqwBi" id="3I3e3C4wNld" role="33vP2m">
               <node concept="2OqwBi" id="3I3e3C4wLu9" role="2Oq$k0">
-                <node concept="2YIFZM" id="3I3e3C4wKO1" role="2Oq$k0">
-                  <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance()" resolve="getInstance" />
-                  <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
+                <node concept="2ShNRf" id="4ntWkOTinYL" role="2Oq$k0">
+                  <node concept="1pGfFk" id="4ntWkOTiom2" role="2ShVmc">
+                    <ref role="37wK5l" to="fwk:~TraceInfo.&lt;init&gt;()" resolve="TraceInfo" />
+                  </node>
                 </node>
                 <node concept="liA8E" id="3I3e3C4wMwO" role="2OqNvi">
-                  <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel)" resolve="get" />
+                  <ref role="37wK5l" to="fwk:~TraceInfo.getDebugInfo(org.jetbrains.mps.openapi.model.SModel)" resolve="getDebugInfo" />
                   <node concept="37vLTw" id="3I3e3C4wMSk" role="37wK5m">
                     <ref role="3cqZAo" node="lMaDrUqNH1" resolve="model" />
                   </node>

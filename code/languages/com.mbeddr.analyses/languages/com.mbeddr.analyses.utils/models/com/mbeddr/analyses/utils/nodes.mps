@@ -1637,12 +1637,13 @@
           </node>
           <node concept="2OqwBi" id="3I3e3C4wmqw" role="1DdaDG">
             <node concept="2OqwBi" id="3I3e3C4wmqx" role="2Oq$k0">
-              <node concept="2YIFZM" id="3I3e3C4wmqy" role="2Oq$k0">
-                <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance()" resolve="getInstance" />
-                <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
+              <node concept="2ShNRf" id="4ntWkOTiqBD" role="2Oq$k0">
+                <node concept="1pGfFk" id="4ntWkOTiroD" role="2ShVmc">
+                  <ref role="37wK5l" to="fwk:~TraceInfo.&lt;init&gt;()" resolve="TraceInfo" />
+                </node>
               </node>
               <node concept="liA8E" id="3I3e3C4wmqz" role="2OqNvi">
-                <ref role="37wK5l" to="fwk:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel)" resolve="get" />
+                <ref role="37wK5l" to="fwk:~TraceInfo.getDebugInfo(org.jetbrains.mps.openapi.model.SModel)" resolve="getDebugInfo" />
                 <node concept="37vLTw" id="3I3e3C4wmq$" role="37wK5m">
                   <ref role="3cqZAo" node="2jwOBjYi0jE" resolve="currentModel" />
                 </node>

@@ -1095,8 +1095,8 @@
               <node concept="YeOm9" id="2pJszzmZcNP" role="2ShVmc">
                 <node concept="1Y3b0j" id="2pJszzmZcNQ" role="YeSDq">
                   <property role="2bfB8j" value="true" />
-                  <ref role="37wK5l" to="ez3t:~AbstractModule.&lt;init&gt;()" resolve="AbstractModule" />
                   <ref role="1Y3XeK" to="ez3t:~AbstractModule" resolve="AbstractModule" />
+                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                   <node concept="3Tm1VV" id="2pJszzmZcNR" role="1B3o_S" />
                   <node concept="3clFb_" id="2pJszzmZcNS" role="jymVt">
                     <property role="1EzhhJ" value="false" />
