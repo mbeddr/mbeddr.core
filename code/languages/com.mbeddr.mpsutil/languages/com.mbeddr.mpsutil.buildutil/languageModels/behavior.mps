@@ -289,7 +289,7 @@
                             <node concept="3cpWs6" id="1lMM4owGcQ3" role="3cqZAp">
                               <node concept="2OqwBi" id="7LmwlFdPtvX" role="3cqZAk">
                                 <node concept="liA8E" id="7LmwlFdPtw0" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SNode.getPresentation():java.lang.String" resolve="getPresentation" />
+                                  <ref role="37wK5l" to="mhbf:~SNode.getPresentation()" resolve="getPresentation" />
                                 </node>
                                 <node concept="2JrnkZ" id="7LmwlFdPtvY" role="2Oq$k0">
                                   <node concept="37vLTw" id="2BHiRxghfCk" role="2JrQYb">
@@ -354,7 +354,7 @@
                 <ref role="3cqZAo" node="79i$vAXX7vc" resolve="link" />
               </node>
               <node concept="liA8E" id="5IpIYYkuxKd" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                 <node concept="359W_D" id="79i$vAXX9pN" role="37wK5m">
                   <ref role="359W_E" to="fnbo:5IpIYYkniKo" resolve="BuildConsistencyAnnotation" />
                   <ref role="359W_F" to="fnbo:5IpIYYknIp1" resolve="path" />
@@ -431,7 +431,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5IpIYYkN1KB" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.getCanonicalFile():java.io.File" resolve="getCanonicalFile" />
+                  <ref role="37wK5l" to="guwi:~File.getCanonicalFile()" resolve="getCanonicalFile" />
                 </node>
               </node>
             </node>
@@ -450,7 +450,7 @@
                     <ref role="3cqZAo" node="5IpIYYkN1mT" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="5IpIYYkN3JE" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>

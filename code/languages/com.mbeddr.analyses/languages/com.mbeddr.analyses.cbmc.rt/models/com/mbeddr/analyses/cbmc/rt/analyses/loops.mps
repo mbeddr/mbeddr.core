@@ -545,7 +545,7 @@
                 </node>
                 <node concept="3clFbF" id="6hXQBIqV$UR" role="3cqZAp">
                   <node concept="1rXfSq" id="6hXQBIqV$UP" role="3clFbG">
-                    <ref role="37wK5l" to="dxuu:~SwingWorker.publish(java.lang.Object...):void" resolve="publish" />
+                    <ref role="37wK5l" to="dxuu:~SwingWorker.publish(java.lang.Object...)" resolve="publish" />
                     <node concept="37vLTw" id="6hXQBIqV_eM" role="37wK5m">
                       <ref role="3cqZAo" node="6hXQBIqVz8o" resolve="r" />
                     </node>
@@ -753,7 +753,7 @@
                                     <node concept="2yIwOk" id="5uusKVkJjPf" role="2OqNvi" />
                                   </node>
                                   <node concept="liA8E" id="5uusKVkJkke" role="2OqNvi">
-                                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                                   </node>
                                 </node>
                                 <node concept="3cpWs3" id="5uusKVkJhCP" role="3uHU7B">
@@ -925,7 +925,7 @@
                     <ref role="3cqZAo" node="mb65_hzT9e" resolve="e" />
                   </node>
                   <node concept="liA8E" id="mb65_hzXAf" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>

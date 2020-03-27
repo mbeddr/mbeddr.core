@@ -190,7 +190,7 @@
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="2cvVnUuAorl" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="2cvVnUuAorm" role="37wK5m">
                   <property role="Xl_RC" value="action abc1 executed" />
                 </node>
@@ -229,7 +229,7 @@
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="2cvVnUuAos0" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="2cvVnUuAos1" role="37wK5m">
                   <property role="Xl_RC" value="action abc2 executed" />
                 </node>

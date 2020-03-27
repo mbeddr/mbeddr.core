@@ -333,6 +333,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7kPcpiFfDY_" resolve="PreprocessorMacro" />
     </node>
+    <node concept="1TJgyj" id="7yZlKoqhA85" role="1TKVEi">
+      <property role="IQ2ns" value="8700768688825328133" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="replaceCalls" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7yZlKoqhA6Y" resolve="ReplaceCall" />
+    </node>
     <node concept="1TJgyi" id="7ehmsbAE0gk" role="1TKVEl">
       <property role="TrG5h" value="hasLocalCbmcSettings" />
       <property role="IQ2nx" value="8327535879613056020" />
@@ -373,6 +380,11 @@
       <property role="IQ2nx" value="8327535879610783060" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="6b3VADytZVC" role="1TKVEl">
+      <property role="IQ2nx" value="7116793976861490920" />
+      <property role="TrG5h" value="localizeFaults" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyi" id="7ehmsbAxlme" role="1TKVEl">
       <property role="TrG5h" value="hasLocalTimeout" />
       <property role="IQ2nx" value="8327535879610783118" />
@@ -401,6 +413,11 @@
     <node concept="1TJgyi" id="jmYEA6F408" role="1TKVEl">
       <property role="TrG5h" value="hasLocalArchitectureSettings" />
       <property role="IQ2nx" value="348741627183644680" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7yZlKoqhA8m" role="1TKVEl">
+      <property role="IQ2nx" value="8700768688825328150" />
+      <property role="TrG5h" value="hasReplaceCallSettings" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="jmYEA6F41F" role="1TKVEl">
@@ -777,6 +794,22 @@
     <property role="TrG5h" value="CPROVERisfiniteld" />
     <property role="34LRSv" value="__CPROVER_isfiniteld" />
     <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="7yZlKoqhA6Y">
+    <property role="EcuMT" value="8700768688825328062" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="ReplaceCall" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7yZlKoqhA6Z" role="1TKVEl">
+      <property role="IQ2nx" value="8700768688825328063" />
+      <property role="TrG5h" value="initialFunctionName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7yZlKoqhA72" role="1TKVEl">
+      <property role="IQ2nx" value="8700768688825328066" />
+      <property role="TrG5h" value="replacementFunctionName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

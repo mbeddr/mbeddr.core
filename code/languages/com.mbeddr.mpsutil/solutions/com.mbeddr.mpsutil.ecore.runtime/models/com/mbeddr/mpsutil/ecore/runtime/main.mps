@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
     <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
@@ -439,11 +439,15 @@
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="7125221305512719026" name="jetbrains.mps.baseLanguage.collections.structure.CollectionType" flags="in" index="3vKaQO" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
+      </concept>
+      <concept id="5686963296372573083" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerType" flags="in" index="3O5elB">
+        <child id="5686963296372573084" name="elementType" index="3O5elw" />
       </concept>
     </language>
   </registry>
@@ -755,7 +759,7 @@
               <ref role="3cqZAo" node="60d$i5skvUb" resolve="classImpl" />
             </node>
             <node concept="liA8E" id="60d$i5skvTl" role="2OqNvi">
-              <ref role="37wK5l" to="62x7:~EClassImpl.isAbstract():boolean" resolve="isAbstract" />
+              <ref role="37wK5l" to="62x7:~EClassImpl.isAbstract()" resolve="isAbstract" />
             </node>
           </node>
           <node concept="9aQIb" id="60d$i5skvTm" role="9aQIa">
@@ -823,7 +827,7 @@
             </node>
             <node concept="2YIFZM" id="60d$i5skvTF" role="37vLTx">
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-              <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
               <node concept="2OqwBi" id="60d$i5skvTG" role="37wK5m">
                 <node concept="1eOMI4" id="60d$i5skvTH" role="2Oq$k0">
                   <node concept="10QFUN" id="60d$i5skvTI" role="1eOMHV">
@@ -834,7 +838,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="60d$i5skvTM" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                       </node>
                     </node>
                     <node concept="3uibUv" id="60d$i5skvTN" role="10QFUM">
@@ -843,7 +847,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="60d$i5skvTO" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~SNodeId$Regular.getId():long" resolve="getId" />
+                  <ref role="37wK5l" to="w1kc:~SNodeId$Regular.getId()" resolve="getId" />
                 </node>
               </node>
             </node>
@@ -864,7 +868,7 @@
                 <ref role="3cqZAo" node="60d$i5skvUb" resolve="classImpl" />
               </node>
               <node concept="liA8E" id="60d$i5skvTW" role="2OqNvi">
-                <ref role="37wK5l" to="62x7:~ENamedElementImpl.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="62x7:~ENamedElementImpl.getName()" resolve="getName" />
               </node>
             </node>
           </node>
@@ -954,7 +958,7 @@
                 <node concept="3clFbF" id="60d$i5siy3n" role="3cqZAp">
                   <node concept="37vLTI" id="60d$i5siy3o" role="3clFbG">
                     <node concept="2YIFZM" id="60d$i5siy3p" role="37vLTx">
-                      <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                      <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                       <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                       <node concept="37vLTw" id="60d$i5siy3q" role="37wK5m">
                         <ref role="3cqZAo" node="60d$i5siy36" resolve="enumVal" />
@@ -979,13 +983,13 @@
                     <node concept="37vLTI" id="60d$i5siy3z" role="3clFbG">
                       <node concept="2YIFZM" id="60d$i5siy3$" role="37vLTx">
                         <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                        <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                        <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                         <node concept="2OqwBi" id="60d$i5siy3_" role="37wK5m">
                           <node concept="37vLTw" id="60d$i5siy3A" role="2Oq$k0">
                             <ref role="3cqZAo" node="60d$i5siy3P" resolve="literal" />
                           </node>
                           <node concept="liA8E" id="60d$i5siy3B" role="2OqNvi">
-                            <ref role="37wK5l" to="iuoz:~EEnumLiteral.getValue():int" resolve="getValue" />
+                            <ref role="37wK5l" to="iuoz:~EEnumLiteral.getValue()" resolve="getValue" />
                           </node>
                         </node>
                       </node>
@@ -1025,7 +1029,7 @@
                             <ref role="3cqZAo" node="60d$i5siy3P" resolve="literal" />
                           </node>
                           <node concept="liA8E" id="60d$i5siy3O" role="2OqNvi">
-                            <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                            <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                           </node>
                         </node>
                       </node>
@@ -1046,7 +1050,7 @@
               <ref role="3cqZAo" node="60d$i5siy4j" resolve="enumImpl" />
             </node>
             <node concept="liA8E" id="60d$i5siy3T" role="2OqNvi">
-              <ref role="37wK5l" to="62x7:~EEnumImpl.getELiterals():org.eclipse.emf.common.util.EList" resolve="getELiterals" />
+              <ref role="37wK5l" to="62x7:~EEnumImpl.getELiterals()" resolve="getELiterals" />
             </node>
           </node>
         </node>
@@ -1072,7 +1076,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="60d$i5siy45" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                            <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                             <node concept="2OqwBi" id="60d$i5siy46" role="37wK5m">
                               <node concept="2JrnkZ" id="60d$i5siy47" role="2Oq$k0">
                                 <node concept="37vLTw" id="60d$i5slgjw" role="2JrQYb">
@@ -1080,7 +1084,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="60d$i5siy49" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                               </node>
                             </node>
                           </node>
@@ -1095,7 +1099,7 @@
                         <ref role="3cqZAo" node="60d$i5siy4j" resolve="enumImpl" />
                       </node>
                       <node concept="liA8E" id="60d$i5siy4d" role="2OqNvi">
-                        <ref role="37wK5l" to="62x7:~ENamedElementImpl.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="62x7:~ENamedElementImpl.getName()" resolve="getName" />
                       </node>
                     </node>
                   </node>
@@ -1197,7 +1201,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="60d$i5skSti" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="37vLTw" id="60d$i5skStj" role="37wK5m">
                                 <ref role="3cqZAo" node="60d$i5skStS" resolve="propertyId" />
                               </node>
@@ -1240,7 +1244,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="60d$i5skSt_" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="2OqwBi" id="60d$i5skStA" role="37wK5m">
                                     <node concept="37vLTw" id="60d$i5skStB" role="2Oq$k0">
                                       <ref role="3cqZAo" node="60d$i5skStM" resolve="enumRef" />
@@ -1370,7 +1374,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="60d$i5ssItg" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="37vLTw" id="60d$i5ssIth" role="37wK5m">
                                 <ref role="3cqZAo" node="60d$i5skJuv" resolve="className" />
                               </node>
@@ -1408,7 +1412,7 @@
                   <node concept="37vLTI" id="60d$i5skJtf" role="3clFbG">
                     <node concept="2YIFZM" id="60d$i5skJtg" role="37vLTx">
                       <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                      <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
+                      <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
                       <node concept="2OqwBi" id="60d$i5skJth" role="37wK5m">
                         <node concept="1eOMI4" id="60d$i5skJti" role="2Oq$k0">
                           <node concept="10QFUN" id="60d$i5skJtj" role="1eOMHV">
@@ -1423,14 +1427,14 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="60d$i5skJtp" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="60d$i5skJtq" role="2OqNvi">
-                          <ref role="37wK5l" to="w1kc:~SNodeId$Regular.getId():long" resolve="getId" />
+                          <ref role="37wK5l" to="w1kc:~SNodeId$Regular.getId()" resolve="getId" />
                         </node>
                       </node>
                     </node>
@@ -1535,7 +1539,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="60d$i5ssORk" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="2OqwBi" id="60d$i5ssORl" role="37wK5m">
                                     <node concept="37vLTw" id="60d$i5ssORm" role="2Oq$k0">
                                       <ref role="3cqZAo" node="60d$i5skJus" resolve="reference" />
@@ -1672,7 +1676,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="60d$i5ssUFh" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="37vLTw" id="60d$i5ssUFi" role="37wK5m">
                                 <ref role="3cqZAo" node="60d$i5skO2e" resolve="className" />
                               </node>
@@ -1722,7 +1726,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="60d$i5st0xY" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="2OqwBi" id="60d$i5st0xZ" role="37wK5m">
                                     <node concept="37vLTw" id="60d$i5st0y0" role="2Oq$k0">
                                       <ref role="3cqZAo" node="60d$i5skO28" resolve="superClass" />
@@ -2103,7 +2107,7 @@
               <ref role="3cqZAo" node="60d$i5sl3Dr" resolve="classImpl" />
             </node>
             <node concept="liA8E" id="60d$i5sl3B0" role="2OqNvi">
-              <ref role="37wK5l" to="62x7:~EClassImpl.getEReferences():org.eclipse.emf.common.util.EList" resolve="getEReferences" />
+              <ref role="37wK5l" to="62x7:~EClassImpl.getEReferences()" resolve="getEReferences" />
             </node>
           </node>
           <node concept="3clFbS" id="60d$i5sl3B1" role="2LFqv$">
@@ -2150,7 +2154,7 @@
                       <ref role="3cqZAo" node="60d$i5sl3B9" resolve="objectasReference" />
                     </node>
                     <node concept="liA8E" id="60d$i5sl3Bl" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                     </node>
                   </node>
                 </node>
@@ -2172,13 +2176,13 @@
                 <node concept="17QB3L" id="60d$i5sl3Bt" role="1tU5fm" />
                 <node concept="2YIFZM" id="60d$i5sl3Bu" role="33vP2m">
                   <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                  <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                  <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                   <node concept="2OqwBi" id="60d$i5sl3Bv" role="37wK5m">
                     <node concept="37vLTw" id="60d$i5sl3Bw" role="2Oq$k0">
                       <ref role="3cqZAo" node="60d$i5sl3B9" resolve="objectasReference" />
                     </node>
                     <node concept="liA8E" id="60d$i5sl3Bx" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~ETypedElement.getLowerBound():int" resolve="getLowerBound" />
+                      <ref role="37wK5l" to="iuoz:~ETypedElement.getLowerBound()" resolve="getLowerBound" />
                     </node>
                   </node>
                 </node>
@@ -2230,14 +2234,14 @@
                 <property role="TrG5h" value="trgtMultiStr" />
                 <node concept="17QB3L" id="60d$i5sl3BR" role="1tU5fm" />
                 <node concept="2YIFZM" id="60d$i5sl3BS" role="33vP2m">
-                  <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                  <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                   <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                   <node concept="2OqwBi" id="60d$i5sl3BT" role="37wK5m">
                     <node concept="37vLTw" id="60d$i5sl3BU" role="2Oq$k0">
                       <ref role="3cqZAo" node="60d$i5sl3B9" resolve="objectasReference" />
                     </node>
                     <node concept="liA8E" id="60d$i5sl3BV" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~ETypedElement.getUpperBound():int" resolve="getUpperBound" />
+                      <ref role="37wK5l" to="iuoz:~ETypedElement.getUpperBound()" resolve="getUpperBound" />
                     </node>
                   </node>
                 </node>
@@ -2290,7 +2294,7 @@
                       <ref role="3cqZAo" node="60d$i5sl3BM" resolve="trgtMultiplicity" />
                     </node>
                     <node concept="liA8E" id="60d$i5sl3Ci" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="Xl_RD" id="60d$i5sl3Cj" role="37wK5m">
                         <property role="Xl_RC" value="-1" />
                       </node>
@@ -2361,7 +2365,7 @@
                     <ref role="3cqZAo" node="60d$i5sl3B9" resolve="objectasReference" />
                   </node>
                   <node concept="liA8E" id="60d$i5sl3CG" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~EReference.isContainment():boolean" resolve="isContainment" />
+                    <ref role="37wK5l" to="iuoz:~EReference.isContainment()" resolve="isContainment" />
                   </node>
                 </node>
               </node>
@@ -2390,7 +2394,7 @@
                   <ref role="3cqZAo" node="60d$i5sl3BM" resolve="trgtMultiplicity" />
                 </node>
                 <node concept="liA8E" id="60d$i5sl3CS" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="60d$i5sl3CT" role="37wK5m">
                     <property role="Xl_RC" value="n" />
                   </node>
@@ -2431,11 +2435,11 @@
                         <ref role="3cqZAo" node="60d$i5sl3B9" resolve="objectasReference" />
                       </node>
                       <node concept="liA8E" id="60d$i5sl3Da" role="2OqNvi">
-                        <ref role="37wK5l" to="iuoz:~ETypedElement.getEType():org.eclipse.emf.ecore.EClassifier" resolve="getEType" />
+                        <ref role="37wK5l" to="iuoz:~ETypedElement.getEType()" resolve="getEType" />
                       </node>
                     </node>
                     <node concept="liA8E" id="60d$i5sl3Db" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                     </node>
                   </node>
                 </node>
@@ -2447,7 +2451,7 @@
                   <ref role="3cqZAo" node="60d$i5sl3AP" resolve="lazyReferences" />
                 </node>
                 <node concept="liA8E" id="60d$i5sl3Df" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="60d$i5sl3Dg" role="37wK5m">
                     <ref role="3cqZAo" node="60d$i5sl3B3" resolve="lazyReference" />
                   </node>
@@ -2467,7 +2471,7 @@
                   <ref role="3cqZAo" node="60d$i5sl3Dr" resolve="classImpl" />
                 </node>
                 <node concept="liA8E" id="60d$i5spvnj" role="2OqNvi">
-                  <ref role="37wK5l" to="62x7:~ENamedElementImpl.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="62x7:~ENamedElementImpl.getName()" resolve="getName" />
                 </node>
               </node>
               <node concept="10M0yZ" id="60d$i5spIyn" role="3ElQJh">
@@ -2510,14 +2514,14 @@
             <property role="TrG5h" value="srcMultStr" />
             <node concept="17QB3L" id="110SXBDhYsT" role="1tU5fm" />
             <node concept="2YIFZM" id="110SXBDhYsU" role="33vP2m">
-              <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <node concept="2OqwBi" id="110SXBDhYsV" role="37wK5m">
                 <node concept="37vLTw" id="110SXBDhZ8y" role="2Oq$k0">
                   <ref role="3cqZAo" node="110SXBDhVu9" resolve="emfLink" />
                 </node>
                 <node concept="liA8E" id="110SXBDhYsX" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~ETypedElement.getLowerBound():int" resolve="getLowerBound" />
+                  <ref role="37wK5l" to="iuoz:~ETypedElement.getLowerBound()" resolve="getLowerBound" />
                 </node>
               </node>
             </node>
@@ -2570,13 +2574,13 @@
             <node concept="17QB3L" id="110SXBDhYtj" role="1tU5fm" />
             <node concept="2YIFZM" id="110SXBDhYtk" role="33vP2m">
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-              <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
               <node concept="2OqwBi" id="110SXBDhYtl" role="37wK5m">
                 <node concept="37vLTw" id="110SXBDhZrD" role="2Oq$k0">
                   <ref role="3cqZAo" node="110SXBDhVu9" resolve="emfLink" />
                 </node>
                 <node concept="liA8E" id="110SXBDhYtn" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~ETypedElement.getUpperBound():int" resolve="getUpperBound" />
+                  <ref role="37wK5l" to="iuoz:~ETypedElement.getUpperBound()" resolve="getUpperBound" />
                 </node>
               </node>
             </node>
@@ -2629,7 +2633,7 @@
                   <ref role="3cqZAo" node="110SXBDhYte" resolve="trgtMultiplicity" />
                 </node>
                 <node concept="liA8E" id="110SXBDhYtI" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="110SXBDhYtJ" role="37wK5m">
                     <property role="Xl_RC" value="-1" />
                   </node>
@@ -2726,7 +2730,7 @@
                   <ref role="3cqZAo" node="60d$i5skZVN" resolve="superClasses" />
                 </node>
                 <node concept="liA8E" id="60d$i5skZW4" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="2ShNRf" id="60d$i5skZW5" role="37wK5m">
                     <node concept="1pGfFk" id="60d$i5skZW6" role="2ShVmc">
                       <ref role="37wK5l" node="57e1799nA03" resolve="LazyClassEnumReference" />
@@ -2735,7 +2739,7 @@
                           <ref role="3cqZAo" node="60d$i5skZVW" resolve="superClass" />
                         </node>
                         <node concept="liA8E" id="60d$i5skZW9" role="2OqNvi">
-                          <ref role="37wK5l" to="62x7:~ENamedElementImpl.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="62x7:~ENamedElementImpl.getName()" resolve="getName" />
                         </node>
                       </node>
                     </node>
@@ -2755,7 +2759,7 @@
               <ref role="3cqZAo" node="60d$i5skZWp" resolve="classImpl" />
             </node>
             <node concept="liA8E" id="60d$i5skZWe" role="2OqNvi">
-              <ref role="37wK5l" to="62x7:~EClassImpl.getESuperTypes():org.eclipse.emf.common.util.EList" resolve="getESuperTypes" />
+              <ref role="37wK5l" to="62x7:~EClassImpl.getESuperTypes()" resolve="getESuperTypes" />
             </node>
           </node>
         </node>
@@ -2770,7 +2774,7 @@
                   <ref role="3cqZAo" node="60d$i5skZWp" resolve="classImpl" />
                 </node>
                 <node concept="liA8E" id="60d$i5spGTx" role="2OqNvi">
-                  <ref role="37wK5l" to="62x7:~ENamedElementImpl.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="62x7:~ENamedElementImpl.getName()" resolve="getName" />
                 </node>
               </node>
               <node concept="37vLTw" id="60d$i5skZWh" role="3ElQJh">
@@ -2864,7 +2868,7 @@
             </node>
             <node concept="2YIFZM" id="60d$i5sl7$E" role="37vLTx">
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-              <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
               <node concept="2YIFZM" id="60d$i5sl7$F" role="37wK5m">
                 <ref role="37wK5l" to="twe9:5OIo7_R8hLh" resolve="generateConceptId" />
                 <ref role="1Pybhc" to="twe9:5OIo7_R8hKr" resolve="ConceptIdHelper" />
@@ -3027,7 +3031,7 @@
               <ref role="3cqZAo" node="60d$i5siuxS" resolve="classImpl" />
             </node>
             <node concept="liA8E" id="60d$i5siuwV" role="2OqNvi">
-              <ref role="37wK5l" to="62x7:~EClassImpl.getEAttributes():org.eclipse.emf.common.util.EList" resolve="getEAttributes" />
+              <ref role="37wK5l" to="62x7:~EClassImpl.getEAttributes()" resolve="getEAttributes" />
             </node>
           </node>
           <node concept="3clFbS" id="60d$i5siuwW" role="2LFqv$">
@@ -3137,7 +3141,7 @@
             </node>
             <node concept="2YIFZM" id="1goF4reFETE" role="37vLTx">
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-              <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
               <node concept="2OqwBi" id="1goF4reFETF" role="37wK5m">
                 <node concept="1eOMI4" id="1goF4reFETG" role="2Oq$k0">
                   <node concept="10QFUN" id="1goF4reFETH" role="1eOMHV">
@@ -3148,7 +3152,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1goF4reFETL" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                       </node>
                     </node>
                     <node concept="3uibUv" id="1goF4reFETM" role="10QFUM">
@@ -3157,7 +3161,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="1goF4reFETN" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~SNodeId$Regular.getId():long" resolve="getId" />
+                  <ref role="37wK5l" to="w1kc:~SNodeId$Regular.getId()" resolve="getId" />
                 </node>
               </node>
             </node>
@@ -3170,7 +3174,7 @@
                 <ref role="3cqZAo" node="1goF4reFEUb" resolve="objectasAttribute" />
               </node>
               <node concept="liA8E" id="1goF4reFETS" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="2OqwBi" id="1goF4reFETT" role="37vLTJ">
@@ -3205,11 +3209,11 @@
                       <ref role="3cqZAo" node="1goF4reFEUb" resolve="objectasAttribute" />
                     </node>
                     <node concept="liA8E" id="1goF4reFEU7" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~ETypedElement.getEType():org.eclipse.emf.ecore.EClassifier" resolve="getEType" />
+                      <ref role="37wK5l" to="iuoz:~ETypedElement.getEType()" resolve="getEType" />
                     </node>
                   </node>
                   <node concept="liA8E" id="1goF4reFEU8" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -3249,7 +3253,7 @@
         <node concept="3clFbF" id="110SXBDvPDV" role="3cqZAp">
           <node concept="37vLTI" id="110SXBDvPDW" role="3clFbG">
             <node concept="2YIFZM" id="110SXBDvPDX" role="37vLTx">
-              <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <node concept="2OqwBi" id="110SXBDvPDY" role="37wK5m">
                 <node concept="1eOMI4" id="110SXBDvPDZ" role="2Oq$k0">
@@ -3265,14 +3269,14 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="110SXBDvPE6" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="110SXBDvPE7" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~SNodeId$Regular.getId():long" resolve="getId" />
+                  <ref role="37wK5l" to="w1kc:~SNodeId$Regular.getId()" resolve="getId" />
                 </node>
               </node>
             </node>
@@ -3293,7 +3297,7 @@
                 <ref role="3cqZAo" node="110SXBDhyjE" resolve="emfLink" />
               </node>
               <node concept="liA8E" id="110SXBDhJbM" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="2OqwBi" id="110SXBDhGbS" role="37vLTJ">
@@ -3347,7 +3351,7 @@
               <ref role="3cqZAo" node="110SXBDhyjE" resolve="emfLink" />
             </node>
             <node concept="liA8E" id="110SXBDi8xT" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EReference.isContainment():boolean" resolve="isContainment" />
+              <ref role="37wK5l" to="iuoz:~EReference.isContainment()" resolve="isContainment" />
             </node>
           </node>
         </node>
@@ -3384,11 +3388,11 @@
                                 <ref role="3cqZAo" node="110SXBDhyjE" resolve="emfLink" />
                               </node>
                               <node concept="liA8E" id="110SXBDiugh" role="2OqNvi">
-                                <ref role="37wK5l" to="iuoz:~ETypedElement.getEType():org.eclipse.emf.ecore.EClassifier" resolve="getEType" />
+                                <ref role="37wK5l" to="iuoz:~ETypedElement.getEType()" resolve="getEType" />
                               </node>
                             </node>
                             <node concept="liA8E" id="110SXBDiv$1" role="2OqNvi">
-                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="110SXBDiqog" role="3uHU7B">
@@ -3465,7 +3469,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="60d$i5siqjC" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                  <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                   <node concept="2OqwBi" id="60d$i5siqjD" role="37wK5m">
                     <node concept="2JrnkZ" id="60d$i5siqjE" role="2Oq$k0">
                       <node concept="37vLTw" id="60d$i5siqjF" role="2JrQYb">
@@ -3473,7 +3477,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="60d$i5siqjG" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                      <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                     </node>
                   </node>
                 </node>
@@ -3514,7 +3518,7 @@
               <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
             </node>
             <node concept="liA8E" id="60d$i5siqjV" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="2OqwBi" id="60d$i5siqjW" role="37wK5m">
                 <node concept="2OqwBi" id="60d$i5siqjX" role="2Oq$k0">
                   <node concept="10M0yZ" id="60d$i5siqjY" role="2Oq$k0">
@@ -3522,11 +3526,11 @@
                     <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                   </node>
                   <node concept="liA8E" id="60d$i5siqjZ" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~EcorePackage.getEFloat():org.eclipse.emf.ecore.EDataType" resolve="getEFloat" />
+                    <ref role="37wK5l" to="iuoz:~EcorePackage.getEFloat()" resolve="getEFloat" />
                   </node>
                 </node>
                 <node concept="liA8E" id="60d$i5siqk0" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                 </node>
               </node>
             </node>
@@ -3564,7 +3568,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqkf" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqkg" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqkh" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqki" role="2Oq$k0">
@@ -3572,11 +3576,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqkj" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEBigDecimal():org.eclipse.emf.ecore.EDataType" resolve="getEBigDecimal" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEBigDecimal()" resolve="getEBigDecimal" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqkk" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -3615,7 +3619,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqkz" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqk$" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqk_" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqkA" role="2Oq$k0">
@@ -3623,11 +3627,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqkB" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEBigInteger():org.eclipse.emf.ecore.EDataType" resolve="getEBigInteger" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEBigInteger()" resolve="getEBigInteger" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqkC" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -3666,7 +3670,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqkR" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqkS" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqkT" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqkU" role="2Oq$k0">
@@ -3674,11 +3678,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqkV" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEBooleanObject():org.eclipse.emf.ecore.EDataType" resolve="getEBooleanObject" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEBooleanObject()" resolve="getEBooleanObject" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqkW" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -3717,7 +3721,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqlb" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqlc" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqld" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqle" role="2Oq$k0">
@@ -3725,11 +3729,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqlf" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEByte():org.eclipse.emf.ecore.EDataType" resolve="getEByte" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEByte()" resolve="getEByte" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqlg" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -3768,7 +3772,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqlv" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqlw" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqlx" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqly" role="2Oq$k0">
@@ -3776,11 +3780,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqlz" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEByteArray():org.eclipse.emf.ecore.EDataType" resolve="getEByteArray" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEByteArray()" resolve="getEByteArray" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siql$" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -3819,7 +3823,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqlN" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqlO" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqlP" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqlQ" role="2Oq$k0">
@@ -3827,11 +3831,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqlR" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEByteObject():org.eclipse.emf.ecore.EDataType" resolve="getEByteObject" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEByteObject()" resolve="getEByteObject" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqlS" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -3870,7 +3874,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqm7" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqm8" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqm9" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqma" role="2Oq$k0">
@@ -3878,11 +3882,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqmb" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEChar():org.eclipse.emf.ecore.EDataType" resolve="getEChar" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEChar()" resolve="getEChar" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqmc" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -3921,7 +3925,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqmr" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqms" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqmt" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqmu" role="2Oq$k0">
@@ -3929,11 +3933,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqmv" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getECharacterObject():org.eclipse.emf.ecore.EDataType" resolve="getECharacterObject" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getECharacterObject()" resolve="getECharacterObject" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqmw" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -3972,7 +3976,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqmJ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqmK" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqmL" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqmM" role="2Oq$k0">
@@ -3980,11 +3984,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqmN" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEDate():org.eclipse.emf.ecore.EDataType" resolve="getEDate" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEDate()" resolve="getEDate" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqmO" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4023,7 +4027,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqn3" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqn4" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqn5" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqn6" role="2Oq$k0">
@@ -4031,11 +4035,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqn7" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEDiagnosticChain():org.eclipse.emf.ecore.EDataType" resolve="getEDiagnosticChain" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEDiagnosticChain()" resolve="getEDiagnosticChain" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqn8" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4074,7 +4078,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqnn" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqno" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqnp" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqnq" role="2Oq$k0">
@@ -4082,11 +4086,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqnr" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEDouble():org.eclipse.emf.ecore.EDataType" resolve="getEDouble" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEDouble()" resolve="getEDouble" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqns" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4125,7 +4129,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqnF" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqnG" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqnH" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqnI" role="2Oq$k0">
@@ -4133,11 +4137,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqnJ" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEDoubleObject():org.eclipse.emf.ecore.EDataType" resolve="getEDoubleObject" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEDoubleObject()" resolve="getEDoubleObject" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqnK" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4176,7 +4180,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqnZ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqo0" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqo1" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqo2" role="2Oq$k0">
@@ -4184,11 +4188,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqo3" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEEList():org.eclipse.emf.ecore.EDataType" resolve="getEEList" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEEList()" resolve="getEEList" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqo4" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4227,7 +4231,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqoj" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqok" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqol" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqom" role="2Oq$k0">
@@ -4235,11 +4239,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqon" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEEnumerator():org.eclipse.emf.ecore.EDataType" resolve="getEEnumerator" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEEnumerator()" resolve="getEEnumerator" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqoo" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4278,7 +4282,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqoB" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqoC" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqoD" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqoE" role="2Oq$k0">
@@ -4286,11 +4290,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqoF" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEFeatureMap():org.eclipse.emf.ecore.EDataType" resolve="getEFeatureMap" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEFeatureMap()" resolve="getEFeatureMap" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqoG" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4329,7 +4333,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqoV" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqoW" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqoX" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqoY" role="2Oq$k0">
@@ -4337,11 +4341,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqoZ" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEFeatureMapEntry():org.eclipse.emf.ecore.EDataType" resolve="getEFeatureMapEntry" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEFeatureMapEntry()" resolve="getEFeatureMapEntry" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqp0" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4380,7 +4384,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqpf" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqpg" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqph" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqpi" role="2Oq$k0">
@@ -4388,11 +4392,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqpj" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEFloatObject():org.eclipse.emf.ecore.EDataType" resolve="getEFloatObject" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEFloatObject()" resolve="getEFloatObject" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqpk" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4431,7 +4435,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqpz" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqp$" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqp_" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqpA" role="2Oq$k0">
@@ -4439,11 +4443,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqpB" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEIntegerObject():org.eclipse.emf.ecore.EDataType" resolve="getEIntegerObject" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEIntegerObject()" resolve="getEIntegerObject" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqpC" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4482,7 +4486,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqpR" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqpS" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqpT" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqpU" role="2Oq$k0">
@@ -4490,11 +4494,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqpV" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEInvocationTargetException():org.eclipse.emf.ecore.EDataType" resolve="getEInvocationTargetException" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEInvocationTargetException()" resolve="getEInvocationTargetException" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqpW" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4533,7 +4537,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqqb" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqqc" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqqd" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqqe" role="2Oq$k0">
@@ -4541,11 +4545,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqqf" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEJavaClass():org.eclipse.emf.ecore.EDataType" resolve="getEJavaClass" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEJavaClass()" resolve="getEJavaClass" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqqg" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4584,7 +4588,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqqv" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqqw" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqqx" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqqy" role="2Oq$k0">
@@ -4592,11 +4596,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqqz" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEJavaObject():org.eclipse.emf.ecore.EDataType" resolve="getEJavaObject" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEJavaObject()" resolve="getEJavaObject" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqq$" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4635,7 +4639,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqqN" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqqO" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqqP" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqqQ" role="2Oq$k0">
@@ -4643,11 +4647,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqqR" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getELong():org.eclipse.emf.ecore.EDataType" resolve="getELong" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getELong()" resolve="getELong" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqqS" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4686,7 +4690,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqr7" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqr8" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqr9" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqra" role="2Oq$k0">
@@ -4694,11 +4698,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqrb" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getELongObject():org.eclipse.emf.ecore.EDataType" resolve="getELongObject" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getELongObject()" resolve="getELongObject" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqrc" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4737,7 +4741,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqrr" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqrs" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqrt" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqru" role="2Oq$k0">
@@ -4745,11 +4749,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqrv" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEResource():org.eclipse.emf.ecore.EDataType" resolve="getEResource" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEResource()" resolve="getEResource" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqrw" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4788,7 +4792,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqrJ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqrK" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqrL" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqrM" role="2Oq$k0">
@@ -4796,11 +4800,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqrN" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEResourceSet():org.eclipse.emf.ecore.EDataType" resolve="getEResourceSet" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEResourceSet()" resolve="getEResourceSet" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqrO" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4839,7 +4843,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqs3" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqs4" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqs5" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqs6" role="2Oq$k0">
@@ -4847,11 +4851,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqs7" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEShort():org.eclipse.emf.ecore.EDataType" resolve="getEShort" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEShort()" resolve="getEShort" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqs8" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4890,7 +4894,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqsn" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqso" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqsp" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqsq" role="2Oq$k0">
@@ -4898,11 +4902,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqsr" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEShortObject():org.eclipse.emf.ecore.EDataType" resolve="getEShortObject" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEShortObject()" resolve="getEShortObject" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqss" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4941,7 +4945,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqsF" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqsG" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqsH" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqsI" role="2Oq$k0">
@@ -4949,11 +4953,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqsJ" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getETreeIterator():org.eclipse.emf.ecore.EDataType" resolve="getETreeIterator" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getETreeIterator()" resolve="getETreeIterator" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqsK" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -4977,7 +4981,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="60d$i5siqsR" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                          <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                           <node concept="2OqwBi" id="60d$i5siqsS" role="37wK5m">
                             <node concept="2JrnkZ" id="60d$i5siqsT" role="2Oq$k0">
                               <node concept="37vLTw" id="60d$i5siqsU" role="2JrQYb">
@@ -4985,7 +4989,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="60d$i5siqsV" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                             </node>
                           </node>
                         </node>
@@ -5004,7 +5008,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqsZ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqt0" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqt1" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqt2" role="2Oq$k0">
@@ -5012,11 +5016,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqt3" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEInt():org.eclipse.emf.ecore.EDataType" resolve="getEInt" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEInt()" resolve="getEInt" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqt4" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -5037,7 +5041,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="60d$i5siqtb" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                          <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                           <node concept="2OqwBi" id="60d$i5siqtc" role="37wK5m">
                             <node concept="2JrnkZ" id="60d$i5siqtd" role="2Oq$k0">
                               <node concept="37vLTw" id="60d$i5siqte" role="2JrQYb">
@@ -5045,7 +5049,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="60d$i5siqtf" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                             </node>
                           </node>
                         </node>
@@ -5066,7 +5070,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqtj" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqtk" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqtl" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqtm" role="2Oq$k0">
@@ -5074,11 +5078,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqtn" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEBoolean():org.eclipse.emf.ecore.EDataType" resolve="getEBoolean" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEBoolean()" resolve="getEBoolean" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqto" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -5099,7 +5103,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="60d$i5siqtv" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                          <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                           <node concept="2OqwBi" id="60d$i5siqtw" role="37wK5m">
                             <node concept="2JrnkZ" id="60d$i5siqtx" role="2Oq$k0">
                               <node concept="37vLTw" id="60d$i5siqty" role="2JrQYb">
@@ -5107,7 +5111,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="60d$i5siqtz" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                             </node>
                           </node>
                         </node>
@@ -5128,7 +5132,7 @@
                 <ref role="3cqZAo" node="60d$i5siqup" resolve="typeAsELiteral" />
               </node>
               <node concept="liA8E" id="60d$i5siqtB" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="60d$i5siqtC" role="37wK5m">
                   <node concept="2OqwBi" id="60d$i5siqtD" role="2Oq$k0">
                     <node concept="10M0yZ" id="60d$i5siqtE" role="2Oq$k0">
@@ -5136,11 +5140,11 @@
                       <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                     </node>
                     <node concept="liA8E" id="60d$i5siqtF" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEString():org.eclipse.emf.ecore.EDataType" resolve="getEString" />
+                      <ref role="37wK5l" to="iuoz:~EcorePackage.getEString()" resolve="getEString" />
                     </node>
                   </node>
                   <node concept="liA8E" id="60d$i5siqtG" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -5272,7 +5276,7 @@
                 <ref role="3cqZAo" node="375LOh7rjhh" resolve="emfMetaModel" />
               </node>
               <node concept="liA8E" id="375LOh7rq0U" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                 <node concept="37vLTw" id="375LOh7rqfT" role="37wK5m">
                   <ref role="3cqZAo" node="375LOh7rjhd" resolve="name" />
                 </node>
@@ -5340,7 +5344,7 @@
                 <ref role="3cqZAo" node="375LOh7rF$8" resolve="emfMetaModel" />
               </node>
               <node concept="liA8E" id="375LOh7rFzR" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                 <node concept="37vLTw" id="375LOh7rFzS" role="37wK5m">
                   <ref role="3cqZAo" node="375LOh7rF$6" resolve="name" />
                 </node>
@@ -5405,7 +5409,7 @@
         <node concept="3clFbF" id="5VjZNMXf95C" role="3cqZAp">
           <node concept="2YIFZM" id="5VjZNMXf95D" role="3clFbG">
             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
             <node concept="10Nm6u" id="5VjZNMXf95E" role="37wK5m" />
             <node concept="37vLTw" id="5VjZNMXf95F" role="37wK5m">
               <ref role="3cqZAo" node="5VjZNMXf95I" resolve="s" />
@@ -5516,7 +5520,7 @@
                   <ref role="3cqZAo" node="1goF4reBCfz" resolve="emfProperty" />
                 </node>
                 <node concept="liA8E" id="1goF4reDiVK" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                 </node>
               </node>
             </node>
@@ -5548,11 +5552,11 @@
                         <ref role="3cqZAo" node="1goF4reBCfz" resolve="emfProperty" />
                       </node>
                       <node concept="liA8E" id="1goF4reDqKQ" role="2OqNvi">
-                        <ref role="37wK5l" to="iuoz:~ETypedElement.getEType():org.eclipse.emf.ecore.EClassifier" resolve="getEType" />
+                        <ref role="37wK5l" to="iuoz:~ETypedElement.getEType()" resolve="getEType" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1goF4reDqKR" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                     </node>
                   </node>
                 </node>
@@ -5642,7 +5646,7 @@
                   <ref role="3cqZAo" node="1goF4reDXXp" resolve="emfLink" />
                 </node>
                 <node concept="liA8E" id="1goF4reE438" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                 </node>
               </node>
               <node concept="2OqwBi" id="1goF4reE1Ki" role="3uHU7B">
@@ -5676,7 +5680,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="110SXBDsWBw" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                 <node concept="3cmrfG" id="110SXBDsX2_" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -5698,7 +5702,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="110SXBDt7FI" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                 <node concept="3cmrfG" id="110SXBDt80b" role="37wK5m">
                   <property role="3cmrfH" value="3" />
                 </node>
@@ -5730,10 +5734,10 @@
               <node concept="37vLTI" id="1goF4reEpW6" role="3clFbG">
                 <node concept="2YIFZM" id="1goF4reEqlT" role="37vLTx">
                   <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                   <node concept="2YIFZM" id="110SXBDuCpk" role="37wK5m">
                     <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                    <ref role="37wK5l" to="wyt6:~String.valueOf(char):java.lang.String" resolve="valueOf" />
+                    <ref role="37wK5l" to="wyt6:~String.valueOf(char)" resolve="valueOf" />
                     <node concept="37vLTw" id="110SXBDuCJe" role="37wK5m">
                       <ref role="3cqZAo" node="110SXBDsOYD" resolve="lowerBound" />
                     </node>
@@ -5771,10 +5775,10 @@
                     <node concept="37vLTI" id="1goF4reExJ3" role="3clFbG">
                       <node concept="2YIFZM" id="1goF4reExJ4" role="37vLTx">
                         <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                        <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                        <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                         <node concept="2YIFZM" id="110SXBDuDBR" role="37wK5m">
                           <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                          <ref role="37wK5l" to="wyt6:~String.valueOf(char):java.lang.String" resolve="valueOf" />
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(char)" resolve="valueOf" />
                           <node concept="37vLTw" id="110SXBDuDXM" role="37wK5m">
                             <ref role="3cqZAo" node="110SXBDt137" resolve="upperBound" />
                           </node>
@@ -5854,7 +5858,7 @@
                     <ref role="3cqZAo" node="1goF4reDXXp" resolve="emfLink" />
                   </node>
                   <node concept="liA8E" id="1goF4reECWq" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ETypedElement.getUpperBound():int" resolve="getUpperBound" />
+                    <ref role="37wK5l" to="iuoz:~ETypedElement.getUpperBound()" resolve="getUpperBound" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="1goF4reEAvM" role="3uHU7B">
@@ -5870,7 +5874,7 @@
                     <ref role="3cqZAo" node="1goF4reDXXp" resolve="emfLink" />
                   </node>
                   <node concept="liA8E" id="1goF4reEjGG" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ETypedElement.getLowerBound():int" resolve="getLowerBound" />
+                    <ref role="37wK5l" to="iuoz:~ETypedElement.getLowerBound()" resolve="getLowerBound" />
                   </node>
                 </node>
               </node>
@@ -5895,11 +5899,11 @@
                     <ref role="3cqZAo" node="1goF4reDXXp" resolve="emfLink" />
                   </node>
                   <node concept="liA8E" id="1goF4reEJnZ" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ETypedElement.getEType():org.eclipse.emf.ecore.EClassifier" resolve="getEType" />
+                    <ref role="37wK5l" to="iuoz:~ETypedElement.getEType()" resolve="getEType" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1goF4reEKv2" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                 </node>
               </node>
               <node concept="2OqwBi" id="1goF4reEGS$" role="3uHU7B">
@@ -5973,7 +5977,7 @@
               <ref role="3cqZAo" node="1goF4reDXXp" resolve="emfLink" />
             </node>
             <node concept="liA8E" id="1goF4reETa7" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EReference.isContainment():boolean" resolve="isContainment" />
+              <ref role="37wK5l" to="iuoz:~EReference.isContainment()" resolve="isContainment" />
             </node>
           </node>
         </node>
@@ -6448,7 +6452,7 @@
                     <ref role="2pJxcJ" to="hvgx:375LOh7jL0I" resolve="version" />
                     <node concept="2YIFZM" id="375LOh7jWE9" role="2pJxcZ">
                       <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                      <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                      <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                       <node concept="37vLTw" id="375LOh7o7FK" role="37wK5m">
                         <ref role="3cqZAo" node="375LOh7o70u" resolve="versionNo" />
                       </node>
@@ -6472,7 +6476,7 @@
                               <ref role="3cqZAo" node="5n6IlFzzcxi" resolve="ecoreFile" />
                             </node>
                             <node concept="liA8E" id="5n6IlFzzn4M" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                             </node>
                           </node>
                           <node concept="3cpWs3" id="5n6IlFzzl3n" role="3uHU7B">
@@ -6559,7 +6563,7 @@
               <ref role="3cqZAo" node="5n6IlFzynsa" resolve="ecoreFolder" />
             </node>
             <node concept="liA8E" id="5n6IlFzyozS" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.mkdir():boolean" resolve="mkdir" />
+              <ref role="37wK5l" to="guwi:~File.mkdir()" resolve="mkdir" />
             </node>
           </node>
         </node>
@@ -6583,7 +6587,7 @@
           <node concept="3clFbS" id="5n6IlFzytBv" role="SfCbr">
             <node concept="3clFbF" id="5n6IlFzysOf" role="3cqZAp">
               <node concept="2YIFZM" id="5n6IlFzyt7P" role="3clFbG">
-                <ref role="37wK5l" to="8oaq:~FileUtils.copyFileToDirectory(java.io.File,java.io.File):void" resolve="copyFileToDirectory" />
+                <ref role="37wK5l" to="8oaq:~FileUtils.copyFileToDirectory(java.io.File,java.io.File)" resolve="copyFileToDirectory" />
                 <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
                 <node concept="37vLTw" id="5n6IlFzytlo" role="37wK5m">
                   <ref role="3cqZAo" node="5n6IlFzyoVh" resolve="ecoreFile" />
@@ -6603,14 +6607,14 @@
                     <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                   </node>
                   <node concept="liA8E" id="375LOh7pHWx" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                     <node concept="3cpWs3" id="375LOh7pIP_" role="37wK5m">
                       <node concept="2OqwBi" id="375LOh7pJgj" role="3uHU7w">
                         <node concept="37vLTw" id="375LOh7pIYx" role="2Oq$k0">
                           <ref role="3cqZAo" node="5n6IlFzytBs" resolve="e" />
                         </node>
                         <node concept="liA8E" id="375LOh7pJT0" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="375LOh7pI3L" role="3uHU7B">
@@ -6641,7 +6645,7 @@
                   <ref role="3cqZAo" node="5n6IlFzyoVh" resolve="ecoreFile" />
                 </node>
                 <node concept="liA8E" id="5n6IlFzzckr" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                 </node>
               </node>
             </node>
@@ -6673,7 +6677,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="5n6IlFzxi4a" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
               </node>
             </node>
           </node>
@@ -6696,7 +6700,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5n6IlFzxoOx" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                   </node>
                 </node>
               </node>
@@ -6718,11 +6722,11 @@
                       <ref role="3cqZAo" node="5n6IlFzxoOq" resolve="module" />
                     </node>
                     <node concept="liA8E" id="5n6IlFzxVRm" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
+                      <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir()" resolve="getModuleSourceDir" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5n6IlFzxZf4" role="2OqNvi">
-                    <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
+                    <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
                   </node>
                 </node>
               </node>
@@ -6852,7 +6856,7 @@
         <ref role="3uigEE" to="dr5r:~Logger" resolve="Logger" />
       </node>
       <node concept="2YIFZM" id="IzOgWWVn6d" role="33vP2m">
-        <ref role="37wK5l" to="dr5r:~Logger.getLogger(java.lang.String):java.util.logging.Logger" resolve="getLogger" />
+        <ref role="37wK5l" to="dr5r:~Logger.getLogger(java.lang.String)" resolve="getLogger" />
         <ref role="1Pybhc" to="dr5r:~Logger" resolve="Logger" />
         <node concept="Xl_RD" id="IzOgWWVnd6" role="37wK5m">
           <property role="Xl_RC" value="Exporter log" />
@@ -6887,15 +6891,15 @@
                   <ref role="3cqZAo" node="4ss4q8fKX8o" resolve="resourceSet" />
                 </node>
                 <node concept="liA8E" id="4ss4q8fL7cs" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~ResourceSet.getResourceFactoryRegistry():org.eclipse.emf.ecore.resource.Resource$Factory$Registry" resolve="getResourceFactoryRegistry" />
+                  <ref role="37wK5l" to="roop:~ResourceSet.getResourceFactoryRegistry()" resolve="getResourceFactoryRegistry" />
                 </node>
               </node>
               <node concept="liA8E" id="4ss4q8fL808" role="2OqNvi">
-                <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getExtensionToFactoryMap():java.util.Map" resolve="getExtensionToFactoryMap" />
+                <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getExtensionToFactoryMap()" resolve="getExtensionToFactoryMap" />
               </node>
             </node>
             <node concept="liA8E" id="4ss4q8fLasH" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="Xl_RD" id="4ss4q8fLaNe" role="37wK5m">
                 <property role="Xl_RC" value="*" />
               </node>
@@ -6918,7 +6922,7 @@
                 <ref role="3cqZAo" node="4ss4q8fKX8o" resolve="resourceSet" />
               </node>
               <node concept="liA8E" id="5UFcQN2$sIG" role="2OqNvi">
-                <ref role="37wK5l" to="roop:~ResourceSet.createResource(org.eclipse.emf.common.util.URI):org.eclipse.emf.ecore.resource.Resource" resolve="createResource" />
+                <ref role="37wK5l" to="roop:~ResourceSet.createResource(org.eclipse.emf.common.util.URI)" resolve="createResource" />
                 <node concept="37vLTw" id="6f_SMqxkcsL" role="37wK5m">
                   <ref role="3cqZAo" node="27QF9yGKh3N" resolve="pathToInst" />
                 </node>
@@ -6952,7 +6956,7 @@
                 <ref role="3cqZAo" node="5UFcQN2zPGa" resolve="emfMetaModel" />
               </node>
               <node concept="liA8E" id="4ss4q8fK0Fg" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~EPackage.getEFactoryInstance():org.eclipse.emf.ecore.EFactory" resolve="getEFactoryInstance" />
+                <ref role="37wK5l" to="iuoz:~EPackage.getEFactoryInstance()" resolve="getEFactoryInstance" />
               </node>
             </node>
           </node>
@@ -6971,11 +6975,11 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5UFcQN2zVLl" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                      <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5UFcQN2zWkz" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -6995,7 +6999,7 @@
                       <ref role="3cqZAo" node="5UFcQN2zPGa" resolve="emfMetaModel" />
                     </node>
                     <node concept="liA8E" id="6TRxMBit82N" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                       <node concept="37vLTw" id="6TRxMBit8ky" role="37wK5m">
                         <ref role="3cqZAo" node="5UFcQN2zULB" resolve="conceptOfNode" />
                       </node>
@@ -7015,7 +7019,7 @@
                     <ref role="3cqZAo" node="4ss4q8fK0b0" resolve="factoryInstance" />
                   </node>
                   <node concept="liA8E" id="5UFcQN2$BIV" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~EFactory.create(org.eclipse.emf.ecore.EClass):org.eclipse.emf.ecore.EObject" resolve="create" />
+                    <ref role="37wK5l" to="iuoz:~EFactory.create(org.eclipse.emf.ecore.EClass)" resolve="create" />
                     <node concept="37vLTw" id="6rwswZweLZg" role="37wK5m">
                       <ref role="3cqZAo" node="6rwswZweLGk" resolve="classEMF" />
                     </node>
@@ -7106,11 +7110,11 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="4APNC9jSpci" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                      <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                     </node>
                   </node>
                   <node concept="liA8E" id="4APNC9jSpcj" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -7130,7 +7134,7 @@
                       <ref role="3cqZAo" node="5UFcQN2zPGa" resolve="emfMetaModel" />
                     </node>
                     <node concept="liA8E" id="4APNC9jSpcr" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                       <node concept="37vLTw" id="4APNC9jSpcs" role="37wK5m">
                         <ref role="3cqZAo" node="4APNC9jSpcc" resolve="conceptOfNode" />
                       </node>
@@ -7182,11 +7186,11 @@
                     <ref role="3cqZAo" node="5UFcQN2$npH" resolve="modelInstanceResource" />
                   </node>
                   <node concept="liA8E" id="4APNC9jSpd1" role="2OqNvi">
-                    <ref role="37wK5l" to="roop:~Resource.getContents():org.eclipse.emf.common.util.EList" resolve="getContents" />
+                    <ref role="37wK5l" to="roop:~Resource.getContents()" resolve="getContents" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4APNC9jSpd2" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="4APNC9jSpd3" role="37wK5m">
                     <ref role="3cqZAo" node="4APNC9jSpcu" resolve="classInstance" />
                   </node>
@@ -7214,7 +7218,7 @@
                   <ref role="3cqZAo" node="5UFcQN2$npH" resolve="modelInstanceResource" />
                 </node>
                 <node concept="liA8E" id="4ss4q8fLqKS" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~Resource.save(java.util.Map):void" resolve="save" />
+                  <ref role="37wK5l" to="roop:~Resource.save(java.util.Map)" resolve="save" />
                   <node concept="10Nm6u" id="vOGyTeIoZj" role="37wK5m" />
                 </node>
               </node>
@@ -7234,7 +7238,7 @@
                     <ref role="3cqZAo" node="4ss4q8fLpjN" resolve="e" />
                   </node>
                   <node concept="liA8E" id="4ss4q8fLsGy" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -7279,7 +7283,7 @@
                           <ref role="2Gs0qQ" node="1DDKaHy4y5q" resolve="reference" />
                         </node>
                         <node concept="liA8E" id="1DDKaHy7uhF" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SReference.getRole():java.lang.String" resolve="getRole" />
+                          <ref role="37wK5l" to="mhbf:~SReference.getRole()" resolve="getRole" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="1DDKaHy5smH" role="37wK5m">
@@ -7300,7 +7304,7 @@
                         <ref role="3cqZAo" node="1DDKaHy4wih" resolve="objectInstance" />
                       </node>
                       <node concept="liA8E" id="1DDKaHy5KxV" role="2OqNvi">
-                        <ref role="37wK5l" to="iuoz:~EObject.eSet(org.eclipse.emf.ecore.EStructuralFeature,java.lang.Object):void" resolve="eSet" />
+                        <ref role="37wK5l" to="iuoz:~EObject.eSet(org.eclipse.emf.ecore.EStructuralFeature,java.lang.Object)" resolve="eSet" />
                         <node concept="37vLTw" id="1DDKaHy5KJ_" role="37wK5m">
                           <ref role="3cqZAo" node="1DDKaHy5pEL" resolve="eReference" />
                         </node>
@@ -7310,7 +7314,7 @@
                               <ref role="2Gs0qQ" node="1DDKaHy4y5q" resolve="reference" />
                             </node>
                             <node concept="liA8E" id="2DYGe1f$uRV" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SReference.getTargetNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTargetNode" />
+                              <ref role="37wK5l" to="mhbf:~SReference.getTargetNode()" resolve="getTargetNode" />
                             </node>
                           </node>
                           <node concept="37vLTw" id="2DYGe1f$tyr" role="3ElQJh">
@@ -7335,7 +7339,7 @@
                                 <ref role="3cqZAo" node="1DDKaHy4wih" resolve="objectInstance" />
                               </node>
                               <node concept="liA8E" id="4raNRNPy24D" role="2OqNvi">
-                                <ref role="37wK5l" to="iuoz:~EObject.eGet(org.eclipse.emf.ecore.EStructuralFeature):java.lang.Object" resolve="eGet" />
+                                <ref role="37wK5l" to="iuoz:~EObject.eGet(org.eclipse.emf.ecore.EStructuralFeature)" resolve="eGet" />
                                 <node concept="37vLTw" id="4raNRNPyexn" role="37wK5m">
                                   <ref role="3cqZAo" node="1DDKaHy5pEL" resolve="eReference" />
                                 </node>
@@ -7344,14 +7348,14 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="4raNRNPy24F" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                          <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                           <node concept="3EllGN" id="4raNRNPyeNf" role="37wK5m">
                             <node concept="2OqwBi" id="4raNRNPyeNg" role="3ElVtu">
                               <node concept="2GrUjf" id="4raNRNPyeNh" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="1DDKaHy4y5q" resolve="reference" />
                               </node>
                               <node concept="liA8E" id="4raNRNPyeNi" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SReference.getTargetNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTargetNode" />
+                                <ref role="37wK5l" to="mhbf:~SReference.getTargetNode()" resolve="getTargetNode" />
                               </node>
                             </node>
                             <node concept="37vLTw" id="4raNRNPyeNj" role="3ElQJh">
@@ -7367,7 +7371,7 @@
                       <ref role="3cqZAo" node="1DDKaHy5pEL" resolve="eReference" />
                     </node>
                     <node concept="liA8E" id="4raNRNPy24J" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~ETypedElement.isMany():boolean" resolve="isMany" />
+                      <ref role="37wK5l" to="iuoz:~ETypedElement.isMany()" resolve="isMany" />
                     </node>
                   </node>
                   <node concept="9aQIb" id="4raNRNPy24K" role="9aQIa">
@@ -7378,7 +7382,7 @@
                             <ref role="3cqZAo" node="1DDKaHy4wih" resolve="objectInstance" />
                           </node>
                           <node concept="liA8E" id="4raNRNPy24P" role="2OqNvi">
-                            <ref role="37wK5l" to="iuoz:~EObject.eSet(org.eclipse.emf.ecore.EStructuralFeature,java.lang.Object):void" resolve="eSet" />
+                            <ref role="37wK5l" to="iuoz:~EObject.eSet(org.eclipse.emf.ecore.EStructuralFeature,java.lang.Object)" resolve="eSet" />
                             <node concept="37vLTw" id="4raNRNPyeHa" role="37wK5m">
                               <ref role="3cqZAo" node="1DDKaHy5pEL" resolve="eReference" />
                             </node>
@@ -7388,7 +7392,7 @@
                                   <ref role="2Gs0qQ" node="1DDKaHy4y5q" resolve="reference" />
                                 </node>
                                 <node concept="liA8E" id="4raNRNPygqF" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SReference.getTargetNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTargetNode" />
+                                  <ref role="37wK5l" to="mhbf:~SReference.getTargetNode()" resolve="getTargetNode" />
                                 </node>
                               </node>
                               <node concept="37vLTw" id="4raNRNPygqG" role="3ElQJh">
@@ -7453,11 +7457,11 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="6a3X$XCytx1" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                       </node>
                     </node>
                     <node concept="liA8E" id="6a3X$XCytx2" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="6a3X$XCyzE_" role="37wK5m">
@@ -7482,7 +7486,7 @@
                         <ref role="3cqZAo" node="6a3X$XCytwS" resolve="childReference" />
                       </node>
                       <node concept="liA8E" id="6a3X$XCytxc" role="2OqNvi">
-                        <ref role="37wK5l" to="1qo3:~Pair.getLeft():java.lang.Object" resolve="getLeft" />
+                        <ref role="37wK5l" to="1qo3:~Pair.getLeft()" resolve="getLeft" />
                       </node>
                     </node>
                   </node>
@@ -7498,7 +7502,7 @@
                         <ref role="3cqZAo" node="6a3X$XCytwS" resolve="childReference" />
                       </node>
                       <node concept="liA8E" id="6a3X$XCytxi" role="2OqNvi">
-                        <ref role="37wK5l" to="1qo3:~Pair.getRight():java.lang.Object" resolve="getRight" />
+                        <ref role="37wK5l" to="1qo3:~Pair.getRight()" resolve="getRight" />
                       </node>
                     </node>
                   </node>
@@ -7556,7 +7560,7 @@
                             <ref role="3cqZAo" node="IzOgWWVkox" resolve="log" />
                           </node>
                           <node concept="liA8E" id="6a3X$XCytyt" role="2OqNvi">
-                            <ref role="37wK5l" to="dr5r:~Logger.warning(java.lang.String):void" resolve="warning" />
+                            <ref role="37wK5l" to="dr5r:~Logger.warning(java.lang.String)" resolve="warning" />
                             <node concept="3cpWs3" id="6a3X$XCytyu" role="37wK5m">
                               <node concept="2OqwBi" id="6a3X$XCytyv" role="3uHU7w">
                                 <node concept="2OqwBi" id="6a3X$XCytyw" role="2Oq$k0">
@@ -7566,11 +7570,11 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="6a3X$XCytyz" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                                    <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="6a3X$XCyty$" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="6a3X$XCyty_" role="3uHU7B">
@@ -7644,7 +7648,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4XUUgAlk$vq" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.getProperties():java.lang.Iterable" resolve="getProperties" />
+              <ref role="37wK5l" to="mhbf:~SNode.getProperties()" resolve="getProperties" />
             </node>
           </node>
           <node concept="3clFbS" id="4XUUgAlkzmB" role="2LFqv$">
@@ -7659,7 +7663,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="4XUUgAlk_$l" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty):java.lang.String" resolve="getProperty" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty)" resolve="getProperty" />
                     <node concept="2GrUjf" id="4XUUgAlkALH" role="37wK5m">
                       <ref role="2Gs0qQ" node="4XUUgAlkzm_" resolve="property" />
                     </node>
@@ -7683,7 +7687,7 @@
                       <ref role="2Gs0qQ" node="4XUUgAlkzm_" resolve="property" />
                     </node>
                     <node concept="liA8E" id="4XUUgAllyqG" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SProperty.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                     </node>
                   </node>
                 </node>
@@ -7719,7 +7723,7 @@
                           <ref role="3cqZAo" node="4XUUgAlkwHK" resolve="objectInstance" />
                         </node>
                         <node concept="liA8E" id="4XUUgAllw7E" role="2OqNvi">
-                          <ref role="37wK5l" to="iuoz:~EObject.eSet(org.eclipse.emf.ecore.EStructuralFeature,java.lang.Object):void" resolve="eSet" />
+                          <ref role="37wK5l" to="iuoz:~EObject.eSet(org.eclipse.emf.ecore.EStructuralFeature,java.lang.Object)" resolve="eSet" />
                           <node concept="37vLTw" id="4XUUgAllwlX" role="37wK5m">
                             <ref role="3cqZAo" node="4XUUgAlltfR" resolve="attribute" />
                           </node>
@@ -7791,11 +7795,11 @@
                   <ref role="3cqZAo" node="4XUUgAlmL6$" resolve="attr" />
                 </node>
                 <node concept="liA8E" id="4is5PX57ZvF" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EAttribute.getEAttributeType():org.eclipse.emf.ecore.EDataType" resolve="getEAttributeType" />
+                  <ref role="37wK5l" to="iuoz:~EAttribute.getEAttributeType()" resolve="getEAttributeType" />
                 </node>
               </node>
               <node concept="liA8E" id="4is5PX580Hc" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
               </node>
             </node>
           </node>
@@ -7804,7 +7808,7 @@
           <node concept="3clFbS" id="4XUUgAlnLRS" role="3clFbx">
             <node concept="3cpWs6" id="4XUUgAlnS4o" role="3cqZAp">
               <node concept="2YIFZM" id="4XUUgAlnTNB" role="3cqZAk">
-                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                 <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                 <node concept="37vLTw" id="4XUUgAlnVtp" role="37wK5m">
                   <ref role="3cqZAo" node="4XUUgAlmTzi" resolve="value" />
@@ -7820,15 +7824,15 @@
                   <ref role="1PxDUh" to="iuoz:~EcorePackage" resolve="EcorePackage" />
                 </node>
                 <node concept="liA8E" id="4is5PX587eH" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EcorePackage.getEInt():org.eclipse.emf.ecore.EDataType" resolve="getEInt" />
+                  <ref role="37wK5l" to="iuoz:~EcorePackage.getEInt()" resolve="getEInt" />
                 </node>
               </node>
               <node concept="liA8E" id="4is5PX589JE" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="4is5PX58caZ" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="4is5PX58cuq" role="37wK5m">
                 <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
               </node>
@@ -7851,15 +7855,15 @@
                   <ref role="1PxDUh" to="iuoz:~EcorePackage" resolve="EcorePackage" />
                 </node>
                 <node concept="liA8E" id="4is5PX58dRN" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EcorePackage.getEString():org.eclipse.emf.ecore.EDataType" resolve="getEString" />
+                  <ref role="37wK5l" to="iuoz:~EcorePackage.getEString()" resolve="getEString" />
                 </node>
               </node>
               <node concept="liA8E" id="4is5PX58dRO" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="4is5PX58dRP" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="4is5PX58dRQ" role="37wK5m">
                 <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
               </node>
@@ -7871,7 +7875,7 @@
             <node concept="3cpWs6" id="6TRxMBi$JvI" role="3cqZAp">
               <node concept="2YIFZM" id="6TRxMBi$JvJ" role="3cqZAk">
                 <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-                <ref role="37wK5l" to="wyt6:~Long.valueOf(java.lang.String):java.lang.Long" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~Long.valueOf(java.lang.String)" resolve="valueOf" />
                 <node concept="37vLTw" id="6TRxMBi$JvK" role="37wK5m">
                   <ref role="3cqZAo" node="4XUUgAlmTzi" resolve="value" />
                 </node>
@@ -7886,15 +7890,15 @@
                   <ref role="3cqZAo" to="iuoz:~EcorePackage.eINSTANCE" resolve="eINSTANCE" />
                 </node>
                 <node concept="liA8E" id="6TRxMBi$JvP" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EcorePackage.getELong():org.eclipse.emf.ecore.EDataType" resolve="getELong" />
+                  <ref role="37wK5l" to="iuoz:~EcorePackage.getELong()" resolve="getELong" />
                 </node>
               </node>
               <node concept="liA8E" id="6TRxMBi$JvQ" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="6TRxMBi$JvR" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="6TRxMBi$JvS" role="37wK5m">
                 <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
               </node>
@@ -7906,7 +7910,7 @@
             <node concept="3cpWs6" id="6TRxMBi$L15" role="3cqZAp">
               <node concept="2YIFZM" id="6TRxMBi$L16" role="3cqZAk">
                 <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
-                <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String):java.lang.Double" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String)" resolve="valueOf" />
                 <node concept="37vLTw" id="6TRxMBi$L17" role="37wK5m">
                   <ref role="3cqZAo" node="4XUUgAlmTzi" resolve="value" />
                 </node>
@@ -7921,15 +7925,15 @@
                   <ref role="1PxDUh" to="iuoz:~EcorePackage" resolve="EcorePackage" />
                 </node>
                 <node concept="liA8E" id="6TRxMBi$L1c" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EcorePackage.getEDouble():org.eclipse.emf.ecore.EDataType" resolve="getEDouble" />
+                  <ref role="37wK5l" to="iuoz:~EcorePackage.getEDouble()" resolve="getEDouble" />
                 </node>
               </node>
               <node concept="liA8E" id="6TRxMBi$L1d" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="6TRxMBi$L1e" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="6TRxMBi$L1f" role="37wK5m">
                 <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
               </node>
@@ -7940,10 +7944,10 @@
           <node concept="3clFbS" id="5IB1dTJjvbK" role="3clFbx">
             <node concept="3cpWs6" id="5IB1dTJkgN5" role="3cqZAp">
               <node concept="2YIFZM" id="5IB1dTJnPBP" role="3cqZAk">
-                <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
+                <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
                 <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
                 <node concept="2YIFZM" id="5IB1dTJnTlh" role="37wK5m">
-                  <ref role="37wK5l" to="wyt6:~Long.valueOf(java.lang.String):java.lang.Long" resolve="valueOf" />
+                  <ref role="37wK5l" to="wyt6:~Long.valueOf(java.lang.String)" resolve="valueOf" />
                   <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
                   <node concept="37vLTw" id="5IB1dTJnVfW" role="37wK5m">
                     <ref role="3cqZAo" node="4XUUgAlmTzi" resolve="value" />
@@ -7960,15 +7964,15 @@
                   <ref role="1PxDUh" to="iuoz:~EcorePackage" resolve="EcorePackage" />
                 </node>
                 <node concept="liA8E" id="5IB1dTJjvbS" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EcorePackage.getEBigInteger():org.eclipse.emf.ecore.EDataType" resolve="getEBigInteger" />
+                  <ref role="37wK5l" to="iuoz:~EcorePackage.getEBigInteger()" resolve="getEBigInteger" />
                 </node>
               </node>
               <node concept="liA8E" id="5IB1dTJjvbT" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="5IB1dTJjvbU" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="5IB1dTJjvbV" role="37wK5m">
                 <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
               </node>
@@ -7995,7 +7999,7 @@
                           <ref role="3cqZAo" node="3pqRb3S2a9c" resolve="emfMetaModel" />
                         </node>
                         <node concept="liA8E" id="3pqRb3S2n7S" role="2OqNvi">
-                          <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                          <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                           <node concept="37vLTw" id="3pqRb3S2oZ1" role="37wK5m">
                             <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
                           </node>
@@ -8004,13 +8008,13 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="3pqRb3S1l0U" role="2OqNvi">
-                    <ref role="37wK5l" to="62x7:~EEnumImpl.getELiterals():org.eclipse.emf.common.util.EList" resolve="getELiterals" />
+                    <ref role="37wK5l" to="62x7:~EEnumImpl.getELiterals()" resolve="getELiterals" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3pqRb3S3whS" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                   <node concept="2YIFZM" id="3pqRb3S3zVt" role="37wK5m">
-                    <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                    <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                     <node concept="37vLTw" id="3pqRb3S3_TQ" role="37wK5m">
                       <ref role="3cqZAo" node="4XUUgAlmTzi" resolve="value" />
@@ -8026,11 +8030,11 @@
                 <ref role="3VsUkX" to="62x7:~EEnumImpl" resolve="EEnumImpl" />
               </node>
               <node concept="liA8E" id="3pqRb3S07Q$" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="3pqRb3S0aDr" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="2OqwBi" id="3pqRb3S0ep6" role="37wK5m">
                 <node concept="2OqwBi" id="3pqRb3S0cXk" role="2Oq$k0">
                   <node concept="2OqwBi" id="3pqRb3S0brh" role="2Oq$k0">
@@ -8038,15 +8042,15 @@
                       <ref role="3cqZAo" node="4XUUgAlmL6$" resolve="attr" />
                     </node>
                     <node concept="liA8E" id="3pqRb3S0cxK" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EAttribute.getEAttributeType():org.eclipse.emf.ecore.EDataType" resolve="getEAttributeType" />
+                      <ref role="37wK5l" to="iuoz:~EAttribute.getEAttributeType()" resolve="getEAttributeType" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3pqRb3S0dXH" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3pqRb3S0fEq" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                 </node>
               </node>
             </node>
@@ -8096,7 +8100,7 @@
               <ref role="3cqZAo" node="4XUUgAlkHFH" resolve="classEmf" />
             </node>
             <node concept="liA8E" id="4XUUgAlkLdT" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEAttributes():org.eclipse.emf.common.util.EList" resolve="getEAttributes" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEAttributes()" resolve="getEAttributes" />
             </node>
           </node>
           <node concept="3clFbS" id="4XUUgAlkKeA" role="2LFqv$">
@@ -8107,11 +8111,11 @@
                     <ref role="2Gs0qQ" node="4XUUgAlkKe$" resolve="attr" />
                   </node>
                   <node concept="liA8E" id="4XUUgAlkMJc" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4XUUgAlkPq$" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="37vLTw" id="4XUUgAlkPN_" role="37wK5m">
                     <ref role="3cqZAo" node="4XUUgAlkIMd" resolve="attrName" />
                   </node>
@@ -8136,7 +8140,7 @@
               <ref role="3cqZAo" node="4XUUgAlkHFH" resolve="classEmf" />
             </node>
             <node concept="liA8E" id="4XUUgAlkSOP" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEAllAttributes():org.eclipse.emf.common.util.EList" resolve="getEAllAttributes" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEAllAttributes()" resolve="getEAllAttributes" />
             </node>
           </node>
           <node concept="3clFbS" id="4XUUgAlkSOQ" role="2LFqv$">
@@ -8147,11 +8151,11 @@
                     <ref role="2Gs0qQ" node="4XUUgAlkSOM" resolve="attr" />
                   </node>
                   <node concept="liA8E" id="4XUUgAlkSOV" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4XUUgAlkSOW" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="37vLTw" id="4XUUgAlkSOX" role="37wK5m">
                     <ref role="3cqZAo" node="4XUUgAlkIMd" resolve="attrName" />
                   </node>
@@ -8215,7 +8219,7 @@
                       <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     </node>
                     <node concept="liA8E" id="4AzbGOIzJIF" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="4AzbGOIzJPh" role="37wK5m">
                         <property role="Xl_RC" value="Breakpoint" />
                       </node>
@@ -8229,11 +8233,11 @@
                     <ref role="3cqZAo" node="6rwswZweh9P" resolve="parentEClass" />
                   </node>
                   <node concept="liA8E" id="4AzbGOIzHpW" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4AzbGOIzJrL" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                  <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
                   <node concept="Xl_RD" id="4AzbGOIzJzE" role="37wK5m">
                     <property role="Xl_RC" value="Runnable" />
                   </node>
@@ -8267,11 +8271,11 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7YZrwraqvRS" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                       </node>
                     </node>
                     <node concept="liA8E" id="7YZrwraqvRT" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="7YZrwraqvRU" role="37wK5m">
@@ -8296,7 +8300,7 @@
                         <ref role="3cqZAo" node="7YZrwraqv7H" resolve="childReference" />
                       </node>
                       <node concept="liA8E" id="6TRxMBiuXVb" role="2OqNvi">
-                        <ref role="37wK5l" to="1qo3:~Pair.getLeft():java.lang.Object" resolve="getLeft" />
+                        <ref role="37wK5l" to="1qo3:~Pair.getLeft()" resolve="getLeft" />
                       </node>
                     </node>
                   </node>
@@ -8312,7 +8316,7 @@
                         <ref role="3cqZAo" node="7YZrwraqv7H" resolve="childReference" />
                       </node>
                       <node concept="liA8E" id="6TRxMBiuZAW" role="2OqNvi">
-                        <ref role="37wK5l" to="1qo3:~Pair.getRight():java.lang.Object" resolve="getRight" />
+                        <ref role="37wK5l" to="1qo3:~Pair.getRight()" resolve="getRight" />
                       </node>
                     </node>
                   </node>
@@ -8330,7 +8334,7 @@
                             <ref role="3cqZAo" node="3nnodv4XYQH" resolve="factoryInstance" />
                           </node>
                           <node concept="liA8E" id="3nnodv4Y19V" role="2OqNvi">
-                            <ref role="37wK5l" to="iuoz:~EFactory.create(org.eclipse.emf.ecore.EClass):org.eclipse.emf.ecore.EObject" resolve="create" />
+                            <ref role="37wK5l" to="iuoz:~EFactory.create(org.eclipse.emf.ecore.EClass)" resolve="create" />
                             <node concept="37vLTw" id="6TRxMBiv7WU" role="37wK5m">
                               <ref role="3cqZAo" node="6TRxMBiuZ55" resolve="childEClass" />
                             </node>
@@ -8384,7 +8388,7 @@
                                     <ref role="3cqZAo" node="6rwswZwedcA" resolve="parentEObject" />
                                   </node>
                                   <node concept="liA8E" id="2Sccvtr6cwV" role="2OqNvi">
-                                    <ref role="37wK5l" to="iuoz:~EObject.eGet(org.eclipse.emf.ecore.EStructuralFeature):java.lang.Object" resolve="eGet" />
+                                    <ref role="37wK5l" to="iuoz:~EObject.eGet(org.eclipse.emf.ecore.EStructuralFeature)" resolve="eGet" />
                                     <node concept="37vLTw" id="2Sccvtr6cJb" role="37wK5m">
                                       <ref role="3cqZAo" node="6rwswZweErx" resolve="childEReference" />
                                     </node>
@@ -8393,7 +8397,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="2Sccvtr6efr" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                               <node concept="37vLTw" id="2Sccvtr6e$y" role="37wK5m">
                                 <ref role="3cqZAo" node="2Sccvtr50$9" resolve="childEObject" />
                               </node>
@@ -8406,7 +8410,7 @@
                           <ref role="3cqZAo" node="6rwswZweErx" resolve="childEReference" />
                         </node>
                         <node concept="liA8E" id="2Sccvtr6bzz" role="2OqNvi">
-                          <ref role="37wK5l" to="iuoz:~ETypedElement.isMany():boolean" resolve="isMany" />
+                          <ref role="37wK5l" to="iuoz:~ETypedElement.isMany()" resolve="isMany" />
                         </node>
                       </node>
                       <node concept="9aQIb" id="2Sccvtr6eRF" role="9aQIa">
@@ -8417,7 +8421,7 @@
                                 <ref role="3cqZAo" node="6rwswZwedcA" resolve="parentEObject" />
                               </node>
                               <node concept="liA8E" id="3nnodv4XY9w" role="2OqNvi">
-                                <ref role="37wK5l" to="iuoz:~EObject.eSet(org.eclipse.emf.ecore.EStructuralFeature,java.lang.Object):void" resolve="eSet" />
+                                <ref role="37wK5l" to="iuoz:~EObject.eSet(org.eclipse.emf.ecore.EStructuralFeature,java.lang.Object)" resolve="eSet" />
                                 <node concept="37vLTw" id="3nnodv4XYmw" role="37wK5m">
                                   <ref role="3cqZAo" node="6rwswZweErx" resolve="childEReference" />
                                 </node>
@@ -8465,7 +8469,7 @@
                             <ref role="3cqZAo" node="IzOgWWVkox" resolve="log" />
                           </node>
                           <node concept="liA8E" id="IzOgWWVpOG" role="2OqNvi">
-                            <ref role="37wK5l" to="dr5r:~Logger.warning(java.lang.String):void" resolve="warning" />
+                            <ref role="37wK5l" to="dr5r:~Logger.warning(java.lang.String)" resolve="warning" />
                             <node concept="3cpWs3" id="6TRxMBio6ff" role="37wK5m">
                               <node concept="2OqwBi" id="6TRxMBio7Rx" role="3uHU7w">
                                 <node concept="2OqwBi" id="6TRxMBio7jZ" role="2Oq$k0">
@@ -8475,11 +8479,11 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="6TRxMBio7Bt" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                                    <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="6TRxMBio8oX" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="6TRxMBio5yv" role="3uHU7B">
@@ -8558,7 +8562,7 @@
                   <ref role="3cqZAo" node="6TRxMBism1_" resolve="emfMetaModel" />
                 </node>
                 <node concept="liA8E" id="6TRxMBiq$xu" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                  <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                   <node concept="37vLTw" id="6TRxMBiqBcv" role="37wK5m">
                     <ref role="3cqZAo" node="6rwswZwel_7" resolve="referenceName" />
                   </node>
@@ -8579,11 +8583,11 @@
                       <ref role="3cqZAo" node="6rwswZweqf7" resolve="reference" />
                     </node>
                     <node concept="liA8E" id="55i9OtryAdx" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType():org.eclipse.emf.ecore.EClass" resolve="getEReferenceType" />
+                      <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType()" resolve="getEReferenceType" />
                     </node>
                   </node>
                   <node concept="liA8E" id="55i9OtryBlR" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -8603,7 +8607,7 @@
                       <ref role="3cqZAo" node="6TRxMBism1_" resolve="emfMetaModel" />
                     </node>
                     <node concept="liA8E" id="6TRxMBiqtAT" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                       <node concept="37vLTw" id="6TRxMBiqtY9" role="37wK5m">
                         <ref role="3cqZAo" node="55i9OtrxH_A" resolve="referenceNm" />
                       </node>
@@ -8635,7 +8639,7 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="6TRxMBiqR8w" role="3clFbw">
-                <ref role="37wK5l" to="u5dg:~EcoreUtil2.isAssignableFrom(org.eclipse.emf.ecore.EClass,org.eclipse.emf.ecore.EClass):boolean" resolve="isAssignableFrom" />
+                <ref role="37wK5l" to="u5dg:~EcoreUtil2.isAssignableFrom(org.eclipse.emf.ecore.EClass,org.eclipse.emf.ecore.EClass)" resolve="isAssignableFrom" />
                 <ref role="1Pybhc" to="u5dg:~EcoreUtil2" resolve="EcoreUtil2" />
                 <node concept="37vLTw" id="6TRxMBiqRm2" role="37wK5m">
                   <ref role="3cqZAo" node="6TRxMBiqq27" resolve="potentielSuperClass" />
@@ -8657,7 +8661,7 @@
               <ref role="3cqZAo" node="6rwswZwemKO" resolve="classEMF" />
             </node>
             <node concept="liA8E" id="6rwswZwetsU" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEReferences():org.eclipse.emf.common.util.EList" resolve="getEReferences" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEReferences()" resolve="getEReferences" />
             </node>
           </node>
         </node>
@@ -8673,11 +8677,11 @@
                       <ref role="3cqZAo" node="4is5PX58RH0" resolve="reference" />
                     </node>
                     <node concept="liA8E" id="4is5PX58RGO" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType():org.eclipse.emf.ecore.EClass" resolve="getEReferenceType" />
+                      <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType()" resolve="getEReferenceType" />
                     </node>
                   </node>
                   <node concept="liA8E" id="4is5PX58RGP" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -8697,7 +8701,7 @@
                       <ref role="3cqZAo" node="6TRxMBism1_" resolve="emfMetaModel" />
                     </node>
                     <node concept="liA8E" id="6TRxMBir4CP" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                       <node concept="37vLTw" id="6TRxMBir4CQ" role="37wK5m">
                         <ref role="3cqZAo" node="4is5PX58RGJ" resolve="referenceNm" />
                       </node>
@@ -8730,7 +8734,7 @@
               </node>
               <node concept="2YIFZM" id="6TRxMBir4D6" role="3clFbw">
                 <ref role="1Pybhc" to="u5dg:~EcoreUtil2" resolve="EcoreUtil2" />
-                <ref role="37wK5l" to="u5dg:~EcoreUtil2.isAssignableFrom(org.eclipse.emf.ecore.EClass,org.eclipse.emf.ecore.EClass):boolean" resolve="isAssignableFrom" />
+                <ref role="37wK5l" to="u5dg:~EcoreUtil2.isAssignableFrom(org.eclipse.emf.ecore.EClass,org.eclipse.emf.ecore.EClass)" resolve="isAssignableFrom" />
                 <node concept="37vLTw" id="6TRxMBir4D7" role="37wK5m">
                   <ref role="3cqZAo" node="6TRxMBir4CJ" resolve="potentielSuperClass" />
                 </node>
@@ -8751,7 +8755,7 @@
               <ref role="3cqZAo" node="6rwswZwemKO" resolve="classEMF" />
             </node>
             <node concept="liA8E" id="4is5PX58RH4" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEAllReferences():org.eclipse.emf.common.util.EList" resolve="getEAllReferences" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEAllReferences()" resolve="getEAllReferences" />
             </node>
           </node>
         </node>
@@ -8803,7 +8807,7 @@
               <ref role="3cqZAo" node="1DDKaHyaaPw" resolve="classEMF" />
             </node>
             <node concept="liA8E" id="1DDKaHyafHU" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEReferences():org.eclipse.emf.common.util.EList" resolve="getEReferences" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEReferences()" resolve="getEReferences" />
             </node>
           </node>
           <node concept="3clFbS" id="1DDKaHyaes3" role="2LFqv$">
@@ -8814,11 +8818,11 @@
                     <ref role="2Gs0qQ" node="1DDKaHyaes1" resolve="reference" />
                   </node>
                   <node concept="liA8E" id="1DDKaHyahiN" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1DDKaHyajG7" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="37vLTw" id="1DDKaHyakcN" role="37wK5m">
                     <ref role="3cqZAo" node="1DDKaHya9pN" resolve="referenceName" />
                   </node>
@@ -8843,7 +8847,7 @@
               <ref role="3cqZAo" node="1DDKaHyaaPw" resolve="classEMF" />
             </node>
             <node concept="liA8E" id="1DDKaHyanXT" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEAllReferences():org.eclipse.emf.common.util.EList" resolve="getEAllReferences" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEAllReferences()" resolve="getEAllReferences" />
             </node>
           </node>
           <node concept="3clFbS" id="1DDKaHyanXU" role="2LFqv$">
@@ -8854,11 +8858,11 @@
                     <ref role="2Gs0qQ" node="1DDKaHyanXQ" resolve="reference" />
                   </node>
                   <node concept="liA8E" id="1DDKaHyanXZ" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1DDKaHyanY0" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="37vLTw" id="1DDKaHyanY1" role="37wK5m">
                     <ref role="3cqZAo" node="1DDKaHya9pN" resolve="referenceName" />
                   </node>
@@ -8999,11 +9003,11 @@
                 <ref role="3cqZAo" node="60d$i5snd1x" resolve="fileURI" />
               </node>
               <node concept="liA8E" id="6f_SMqxk_jO" role="2OqNvi">
-                <ref role="37wK5l" to="hu10:~URI.fileExtension():java.lang.String" resolve="fileExtension" />
+                <ref role="37wK5l" to="hu10:~URI.fileExtension()" resolve="fileExtension" />
               </node>
             </node>
             <node concept="liA8E" id="1Slzk5RyOul" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
               <node concept="Xl_RD" id="1Slzk5RyO_Z" role="37wK5m">
                 <property role="Xl_RC" value="xcore" />
               </node>
@@ -9016,11 +9020,11 @@
                   <ref role="3cqZAo" node="60d$i5snd1x" resolve="fileURI" />
                 </node>
                 <node concept="liA8E" id="6f_SMqxkLAv" role="2OqNvi">
-                  <ref role="37wK5l" to="hu10:~URI.fileExtension():java.lang.String" resolve="fileExtension" />
+                  <ref role="37wK5l" to="hu10:~URI.fileExtension()" resolve="fileExtension" />
                 </node>
               </node>
               <node concept="liA8E" id="1Slzk5RyRuw" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
                 <node concept="Xl_RD" id="1Slzk5RyRAE" role="37wK5m">
                   <property role="Xl_RC" value="ecore" />
                 </node>
@@ -9103,7 +9107,7 @@
                   <ref role="3cqZAo" node="1Slzk5RyOXK" resolve="retResource" />
                 </node>
                 <node concept="liA8E" id="7piQlifCf7C" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~Resource.getContents():org.eclipse.emf.common.util.EList" resolve="getContents" />
+                  <ref role="37wK5l" to="roop:~Resource.getContents()" resolve="getContents" />
                 </node>
               </node>
             </node>
@@ -9168,15 +9172,15 @@
                   <ref role="3cqZAo" node="60d$i5sngjZ" resolve="resourceSet" />
                 </node>
                 <node concept="liA8E" id="60d$i5sngk8" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~ResourceSet.getResourceFactoryRegistry():org.eclipse.emf.ecore.resource.Resource$Factory$Registry" resolve="getResourceFactoryRegistry" />
+                  <ref role="37wK5l" to="roop:~ResourceSet.getResourceFactoryRegistry()" resolve="getResourceFactoryRegistry" />
                 </node>
               </node>
               <node concept="liA8E" id="60d$i5sngk9" role="2OqNvi">
-                <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getExtensionToFactoryMap():java.util.Map" resolve="getExtensionToFactoryMap" />
+                <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getExtensionToFactoryMap()" resolve="getExtensionToFactoryMap" />
               </node>
             </node>
             <node concept="liA8E" id="60d$i5sngka" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="Xl_RD" id="60d$i5sngkb" role="37wK5m">
                 <property role="Xl_RC" value="ecore" />
               </node>
@@ -9194,7 +9198,7 @@
               <ref role="3cqZAo" node="60d$i5sngjZ" resolve="resourceSet" />
             </node>
             <node concept="liA8E" id="60d$i5sngkm" role="2OqNvi">
-              <ref role="37wK5l" to="roop:~ResourceSet.getResource(org.eclipse.emf.common.util.URI,boolean):org.eclipse.emf.ecore.resource.Resource" resolve="getResource" />
+              <ref role="37wK5l" to="roop:~ResourceSet.getResource(org.eclipse.emf.common.util.URI,boolean)" resolve="getResource" />
               <node concept="37vLTw" id="6f_SMqxkO1q" role="37wK5m">
                 <ref role="3cqZAo" node="60d$i5sngkq" resolve="fileUri" />
               </node>
@@ -9248,7 +9252,7 @@
         <node concept="3clFbF" id="7piQlifBWRd" role="3cqZAp">
           <node concept="2YIFZM" id="7piQlifBWXM" role="3clFbG">
             <ref role="1Pybhc" to="elak:~XcoreStandaloneSetup" resolve="XcoreStandaloneSetup" />
-            <ref role="37wK5l" to="elak:~XcoreStandaloneSetup.doSetup():void" resolve="doSetup" />
+            <ref role="37wK5l" to="elak:~XcoreStandaloneSetup.doSetup()" resolve="doSetup" />
           </node>
         </node>
         <node concept="3clFbF" id="1Slzk5RzIR4" role="3cqZAp">
@@ -9258,7 +9262,7 @@
                 <ref role="3cqZAo" node="7piQlifBBUH" resolve="rs" />
               </node>
               <node concept="liA8E" id="1Slzk5RzKaF" role="2OqNvi">
-                <ref role="37wK5l" to="roop:~ResourceSet.getResource(org.eclipse.emf.common.util.URI,boolean):org.eclipse.emf.ecore.resource.Resource" resolve="getResource" />
+                <ref role="37wK5l" to="roop:~ResourceSet.getResource(org.eclipse.emf.common.util.URI,boolean)" resolve="getResource" />
                 <node concept="37vLTw" id="4XUUgAlr$cG" role="37wK5m">
                   <ref role="3cqZAo" node="1Slzk5RzfVq" resolve="fileURI" />
                 </node>
@@ -9280,7 +9284,7 @@
                   <ref role="3cqZAo" node="1Slzk5RzAr7" resolve="retResource" />
                 </node>
                 <node concept="liA8E" id="1Slzk5RzM4x" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~Resource.load(java.util.Map):void" resolve="load" />
+                  <ref role="37wK5l" to="roop:~Resource.load(java.util.Map)" resolve="load" />
                   <node concept="10Nm6u" id="1Slzk5RzMbU" role="37wK5m" />
                 </node>
               </node>
@@ -9339,7 +9343,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="1Ur9vEMLVtC" role="2OqNvi">
-                <ref role="37wK5l" to="elak:~XcoreStandaloneSetup.createInjectorAndDoEMFRegistration():com.google.inject.Injector" resolve="createInjectorAndDoEMFRegistration" />
+                <ref role="37wK5l" to="elak:~XcoreStandaloneSetup.createInjectorAndDoEMFRegistration()" resolve="createInjectorAndDoEMFRegistration" />
               </node>
             </node>
           </node>
@@ -9356,7 +9360,7 @@
                 <ref role="3cqZAo" node="1Ur9vEMLVtz" resolve="i" />
               </node>
               <node concept="liA8E" id="1Ur9vEMLWvN" role="2OqNvi">
-                <ref role="37wK5l" to="ez3t:~Injector.getInstance(java.lang.Class):java.lang.Object" resolve="getInstance" />
+                <ref role="37wK5l" to="ez3t:~Injector.getInstance(java.lang.Class)" resolve="getInstance" />
                 <node concept="3VsKOn" id="1Ur9vEMLWvO" role="37wK5m">
                   <ref role="3VsUkX" to="roop:~ResourceSet" resolve="ResourceSet" />
                 </node>
@@ -9376,7 +9380,7 @@
                 <ref role="3cqZAo" node="1Ur9vEMLVtD" resolve="rs" />
               </node>
               <node concept="liA8E" id="1Ur9vEMLWkr" role="2OqNvi">
-                <ref role="37wK5l" to="roop:~ResourceSet.getResource(org.eclipse.emf.common.util.URI,boolean):org.eclipse.emf.ecore.resource.Resource" resolve="getResource" />
+                <ref role="37wK5l" to="roop:~ResourceSet.getResource(org.eclipse.emf.common.util.URI,boolean)" resolve="getResource" />
                 <node concept="37vLTw" id="1Ur9vEMOF_Q" role="37wK5m">
                   <ref role="3cqZAo" node="1Ur9vEMNsu9" resolve="fileURI" />
                 </node>
@@ -9395,7 +9399,7 @@
                   <ref role="3cqZAo" node="1Ur9vEMLVtJ" resolve="r" />
                 </node>
                 <node concept="liA8E" id="1Ur9vEMLWRp" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~Resource.load(java.util.Map):void" resolve="load" />
+                  <ref role="37wK5l" to="roop:~Resource.load(java.util.Map)" resolve="load" />
                   <node concept="10Nm6u" id="1Ur9vEMLWRq" role="37wK5m" />
                 </node>
               </node>
@@ -9523,7 +9527,7 @@
                       <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
                     </node>
                     <node concept="liA8E" id="70ujcM$c_z2" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~LanguageAspect.get(jetbrains.mps.smodel.Language):org.jetbrains.mps.openapi.model.SModel" resolve="get" />
+                      <ref role="37wK5l" to="w1kc:~LanguageAspect.get(jetbrains.mps.smodel.Language)" resolve="get" />
                       <node concept="10QFUN" id="70ujcM$cAc0" role="37wK5m">
                         <node concept="3uibUv" id="70ujcM$cAkN" role="10QFUM">
                           <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
@@ -9533,7 +9537,7 @@
                             <ref role="3cqZAo" node="6TiIOkRA7aa" resolve="lng" />
                           </node>
                           <node concept="liA8E" id="2W468ixm3or" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SLanguage.getSourceModule():org.jetbrains.mps.openapi.module.SModule" resolve="getSourceModule" />
+                            <ref role="37wK5l" to="c17a:~SLanguage.getSourceModule()" resolve="getSourceModule" />
                           </node>
                         </node>
                       </node>
@@ -9553,7 +9557,7 @@
               <ref role="37wK5l" node="5DtuIW1YLWg" resolve="getInstanceResource" />
             </node>
             <node concept="liA8E" id="2W468ixi8hn" role="2OqNvi">
-              <ref role="37wK5l" to="roop:~Resource.getContents():org.eclipse.emf.common.util.EList" resolve="getContents" />
+              <ref role="37wK5l" to="roop:~Resource.getContents()" resolve="getContents" />
             </node>
           </node>
           <node concept="3clFbS" id="2W468ixi79k" role="2LFqv$">
@@ -9581,11 +9585,11 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="2W468ixiiEs" role="2OqNvi">
-                              <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                              <ref role="37wK5l" to="iuoz:~EObject.eClass()" resolve="eClass" />
                             </node>
                           </node>
                           <node concept="liA8E" id="2W468ixilcg" role="2OqNvi">
-                            <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                            <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                           </node>
                         </node>
                       </node>
@@ -9640,7 +9644,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="11$Qwp7U6Ud" role="2OqNvi">
-                          <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                          <ref role="37wK5l" to="iuoz:~EObject.eClass()" resolve="eClass" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="4s$7erQqNcJ" role="37wK5m">
@@ -9908,7 +9912,7 @@
               <ref role="3cqZAo" node="11$Qwp7TiDU" resolve="classEmf" />
             </node>
             <node concept="liA8E" id="11$Qwp7Tl3T" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEAttributes():org.eclipse.emf.common.util.EList" resolve="getEAttributes" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEAttributes()" resolve="getEAttributes" />
             </node>
           </node>
           <node concept="3clFbS" id="11$Qwp7TjLw" role="2LFqv$">
@@ -9937,7 +9941,7 @@
               <ref role="3cqZAo" node="11$Qwp7TiDU" resolve="classEmf" />
             </node>
             <node concept="liA8E" id="11$Qwp7VlGH" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEAllAttributes():org.eclipse.emf.common.util.EList" resolve="getEAllAttributes" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEAllAttributes()" resolve="getEAllAttributes" />
             </node>
           </node>
           <node concept="3clFbS" id="11$Qwp7VlGI" role="2LFqv$">
@@ -10013,7 +10017,7 @@
                 <ref role="3cqZAo" node="177LIHt0ehB" resolve="instanceEMF" />
               </node>
               <node concept="liA8E" id="177LIHt0egw" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~EObject.eGet(org.eclipse.emf.ecore.EStructuralFeature):java.lang.Object" resolve="eGet" />
+                <ref role="37wK5l" to="iuoz:~EObject.eGet(org.eclipse.emf.ecore.EStructuralFeature)" resolve="eGet" />
                 <node concept="37vLTw" id="177LIHt0ehM" role="37wK5m">
                   <ref role="3cqZAo" node="177LIHt0ehD" resolve="attribute" />
                 </node>
@@ -10025,7 +10029,7 @@
           <node concept="3clFbS" id="177LIHt0egz" role="3clFbx">
             <node concept="3cpWs8" id="177LIHt0eg$" role="3cqZAp">
               <node concept="3cpWsn" id="177LIHt0eg_" role="3cpWs9">
-                <property role="TrG5h" value="literal" />
+                <property role="TrG5h" value="emfLiteral" />
                 <node concept="17QB3L" id="177LIHt0egA" role="1tU5fm" />
                 <node concept="2OqwBi" id="177LIHt0egB" role="33vP2m">
                   <node concept="1eOMI4" id="177LIHt0egC" role="2Oq$k0">
@@ -10039,7 +10043,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="177LIHt0egG" role="2OqNvi">
-                    <ref role="37wK5l" to="62x7:~EEnumLiteralImpl.getLiteral():java.lang.String" resolve="getLiteral" />
+                    <ref role="37wK5l" to="62x7:~EEnumLiteralImpl.getLiteral()" resolve="getLiteral" />
                   </node>
                 </node>
               </node>
@@ -10057,7 +10061,7 @@
                       <ref role="3cqZAo" node="177LIHt0ehD" resolve="attribute" />
                     </node>
                     <node concept="liA8E" id="177LIHt0eh0" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="177LIHt0ehN" role="37wK5m">
@@ -10068,6 +10072,95 @@
             </node>
             <node concept="3clFbJ" id="177LIHt0eh2" role="3cqZAp">
               <node concept="3clFbS" id="177LIHt0eh3" role="3clFbx">
+                <node concept="3cpWs8" id="5AqTiJm4OVO" role="3cqZAp">
+                  <node concept="3cpWsn" id="5AqTiJm4OVP" role="3cpWs9">
+                    <property role="TrG5h" value="type" />
+                    <node concept="3uibUv" id="5AqTiJm4OVQ" role="1tU5fm">
+                      <ref role="3uigEE" to="c17a:~SDataType" resolve="SDataType" />
+                    </node>
+                    <node concept="2OqwBi" id="5AqTiJm4QHV" role="33vP2m">
+                      <node concept="37vLTw" id="5AqTiJm4Qia" role="2Oq$k0">
+                        <ref role="3cqZAo" node="177LIHt0egV" resolve="propertyByName" />
+                      </node>
+                      <node concept="liA8E" id="5AqTiJm4R2X" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getType()" resolve="getType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1gVbGN" id="5AqTiJm4Rcs" role="3cqZAp">
+                  <node concept="2ZW3vV" id="5AqTiJm4RA8" role="1gVkn0">
+                    <node concept="3uibUv" id="5AqTiJm4RIO" role="2ZW6by">
+                      <ref role="3uigEE" to="c17a:~SEnumeration" resolve="SEnumeration" />
+                    </node>
+                    <node concept="37vLTw" id="5AqTiJm4RjF" role="2ZW6bz">
+                      <ref role="3cqZAo" node="5AqTiJm4OVP" resolve="type" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="5AqTiJm5D4t" role="3cqZAp">
+                  <node concept="3cpWsn" id="5AqTiJm5D4w" role="3cpWs9">
+                    <property role="TrG5h" value="literals" />
+                    <node concept="2OqwBi" id="5AqTiJm5D_B" role="33vP2m">
+                      <node concept="1eOMI4" id="5AqTiJm5EdY" role="2Oq$k0">
+                        <node concept="10QFUN" id="5AqTiJm5ElT" role="1eOMHV">
+                          <node concept="3uibUv" id="5AqTiJm5EVL" role="10QFUM">
+                            <ref role="3uigEE" to="c17a:~SEnumeration" resolve="SEnumeration" />
+                          </node>
+                          <node concept="37vLTw" id="5AqTiJm5Dlw" role="10QFUP">
+                            <ref role="3cqZAo" node="5AqTiJm4OVP" resolve="type" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="5AqTiJm5Fkk" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SEnumeration.getLiterals()" resolve="getLiterals" />
+                      </node>
+                    </node>
+                    <node concept="3vKaQO" id="5AqTiJm5GsI" role="1tU5fm">
+                      <node concept="3uibUv" id="5AqTiJm5GDz" role="3O5elw">
+                        <ref role="3uigEE" to="c17a:~SEnumerationLiteral" resolve="SEnumerationLiteral" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="5AqTiJm5LAf" role="3cqZAp">
+                  <node concept="3cpWsn" id="5AqTiJm5LAg" role="3cpWs9">
+                    <property role="TrG5h" value="literal" />
+                    <node concept="3uibUv" id="5AqTiJm5Lyt" role="1tU5fm">
+                      <ref role="3uigEE" to="c17a:~SEnumerationLiteral" resolve="SEnumerationLiteral" />
+                    </node>
+                    <node concept="2OqwBi" id="5AqTiJm5LAh" role="33vP2m">
+                      <node concept="37vLTw" id="5AqTiJm5LAi" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5AqTiJm5D4w" resolve="literals" />
+                      </node>
+                      <node concept="1z4cxt" id="5AqTiJm5LAj" role="2OqNvi">
+                        <node concept="1bVj0M" id="5AqTiJm5LAk" role="23t8la">
+                          <node concept="3clFbS" id="5AqTiJm5LAl" role="1bW5cS">
+                            <node concept="3clFbF" id="5AqTiJm5LAm" role="3cqZAp">
+                              <node concept="17R0WA" id="5AqTiJm5LAn" role="3clFbG">
+                                <node concept="37vLTw" id="5AqTiJm5MzG" role="3uHU7w">
+                                  <ref role="3cqZAo" node="177LIHt0eg_" resolve="emfLiteral" />
+                                </node>
+                                <node concept="2OqwBi" id="5AqTiJm5LAp" role="3uHU7B">
+                                  <node concept="37vLTw" id="5AqTiJm5LAq" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5AqTiJm5LAs" resolve="it" />
+                                  </node>
+                                  <node concept="liA8E" id="5AqTiJm5LAr" role="2OqNvi">
+                                    <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Rh6nW" id="5AqTiJm5LAs" role="1bW2Oz">
+                            <property role="TrG5h" value="it" />
+                            <node concept="2jxLKc" id="5AqTiJm5LAt" role="1tU5fm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="177LIHt0eh4" role="3cqZAp">
                   <node concept="2OqwBi" id="177LIHt0eh5" role="3clFbG">
                     <node concept="2JrnkZ" id="177LIHt0eh6" role="2Oq$k0">
@@ -10076,22 +10169,18 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="177LIHt0eh8" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.setProperty(org.jetbrains.mps.openapi.language.SProperty,java.lang.String):void" resolve="setProperty" />
+                      <ref role="37wK5l" to="mhbf:~SNode.setProperty(org.jetbrains.mps.openapi.language.SProperty,java.lang.String)" resolve="setProperty" />
                       <node concept="37vLTw" id="177LIHt0eh9" role="37wK5m">
                         <ref role="3cqZAo" node="177LIHt0egV" resolve="propertyByName" />
                       </node>
-                      <node concept="2OqwBi" id="177LIHt0eha" role="37wK5m">
-                        <node concept="2YIFZM" id="177LIHt0ehb" role="2Oq$k0">
-                          <ref role="37wK5l" to="w1kc:~PropertySupport.getPropertySupport(org.jetbrains.mps.openapi.language.SProperty):jetbrains.mps.smodel.PropertySupport" resolve="getPropertySupport" />
-                          <ref role="1Pybhc" to="w1kc:~PropertySupport" resolve="PropertySupport" />
-                          <node concept="37vLTw" id="177LIHt0ehc" role="37wK5m">
-                            <ref role="3cqZAo" node="177LIHt0egV" resolve="propertyByName" />
-                          </node>
+                      <node concept="2OqwBi" id="5AqTiJm5Kv0" role="37wK5m">
+                        <node concept="37vLTw" id="5AqTiJm5Khm" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5AqTiJm4OVP" resolve="type" />
                         </node>
-                        <node concept="liA8E" id="177LIHt0ehd" role="2OqNvi">
-                          <ref role="37wK5l" to="w1kc:~PropertySupport.toInternalValue(java.lang.String):java.lang.String" resolve="toInternalValue" />
-                          <node concept="37vLTw" id="177LIHt0ehe" role="37wK5m">
-                            <ref role="3cqZAo" node="177LIHt0eg_" resolve="literal" />
+                        <node concept="liA8E" id="5AqTiJm5KRq" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SDataType.toString(java.lang.Object)" resolve="toString" />
+                          <node concept="37vLTw" id="5AqTiJm5LAu" role="37wK5m">
+                            <ref role="3cqZAo" node="5AqTiJm5LAg" resolve="literal" />
                           </node>
                         </node>
                       </node>
@@ -10127,13 +10216,13 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="177LIHt0eht" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                        <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String)" resolve="setProperty" />
                         <node concept="2OqwBi" id="177LIHt0ehu" role="37wK5m">
                           <node concept="37vLTw" id="177LIHt0ehJ" role="2Oq$k0">
                             <ref role="3cqZAo" node="177LIHt0ehD" resolve="attribute" />
                           </node>
                           <node concept="liA8E" id="177LIHt0ehw" role="2OqNvi">
-                            <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                            <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                           </node>
                         </node>
                         <node concept="2OqwBi" id="177LIHt0ehx" role="37wK5m">
@@ -10141,7 +10230,7 @@
                             <ref role="3cqZAo" node="177LIHt0egs" resolve="val" />
                           </node>
                           <node concept="liA8E" id="177LIHt0ehz" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>
@@ -10180,7 +10269,7 @@
               <node concept="2yIwOk" id="177LIHsSdU_" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="177LIHsSfkA" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SAbstractConcept.getProperties():java.util.Collection" resolve="getProperties" />
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getProperties()" resolve="getProperties" />
             </node>
           </node>
           <node concept="3clFbS" id="177LIHsQM7D" role="2LFqv$">
@@ -10194,7 +10283,7 @@
                     <ref role="2Gs0qQ" node="177LIHsQM7B" resolve="property" />
                   </node>
                   <node concept="liA8E" id="177LIHsSZKX" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SProperty.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -10244,7 +10333,7 @@
               <ref role="3cqZAo" node="3nnodv4YWne" resolve="instanceEMF" />
             </node>
             <node concept="liA8E" id="3nnodv4YZXp" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EObject.eContents():org.eclipse.emf.common.util.EList" resolve="eContents" />
+              <ref role="37wK5l" to="iuoz:~EObject.eContents()" resolve="eContents" />
             </node>
           </node>
           <node concept="3clFbS" id="3nnodv4YXzY" role="2LFqv$">
@@ -10267,11 +10356,11 @@
                             <ref role="3cqZAo" node="3nnodv4YXzW" resolve="child" />
                           </node>
                           <node concept="liA8E" id="6xcAMXIWCDr" role="2OqNvi">
-                            <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                            <ref role="37wK5l" to="iuoz:~EObject.eClass()" resolve="eClass" />
                           </node>
                         </node>
                         <node concept="liA8E" id="6xcAMXIWE0J" role="2OqNvi">
-                          <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                         </node>
                       </node>
                     </node>
@@ -10292,11 +10381,11 @@
                             <ref role="3cqZAo" node="3nnodv4YXzW" resolve="child" />
                           </node>
                           <node concept="liA8E" id="4s$7erQqPFx" role="2OqNvi">
-                            <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                            <ref role="37wK5l" to="iuoz:~EObject.eClass()" resolve="eClass" />
                           </node>
                         </node>
                         <node concept="liA8E" id="4s$7erQqPFy" role="2OqNvi">
-                          <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                         </node>
                       </node>
                     </node>
@@ -10328,7 +10417,7 @@
                         <ref role="3cqZAo" node="3nnodv4YXzW" resolve="child" />
                       </node>
                       <node concept="liA8E" id="11$Qwp7U4Se" role="2OqNvi">
-                        <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                        <ref role="37wK5l" to="iuoz:~EObject.eClass()" resolve="eClass" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="4s$7erQqQyR" role="37wK5m">
@@ -10346,13 +10435,13 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="3nnodv4Zg89" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+                          <ref role="37wK5l" to="mhbf:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode)" resolve="addChild" />
                           <node concept="2OqwBi" id="6xcAMXIWl7u" role="37wK5m">
                             <node concept="37vLTw" id="6xcAMXIWk$p" role="2Oq$k0">
                               <ref role="3cqZAo" node="6xcAMXIWk0I" resolve="childReference" />
                             </node>
                             <node concept="liA8E" id="6xcAMXIWlH$" role="2OqNvi">
-                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                             </node>
                           </node>
                           <node concept="37vLTw" id="2Sccvtr6KxW" role="37wK5m">
@@ -10407,19 +10496,19 @@
                         <ref role="3cqZAo" node="3nnodv4YXzW" resolve="child" />
                       </node>
                       <node concept="liA8E" id="3nnodv50kjX" role="2OqNvi">
-                        <ref role="37wK5l" to="iuoz:~EObject.eContainer():org.eclipse.emf.ecore.EObject" resolve="eContainer" />
+                        <ref role="37wK5l" to="iuoz:~EObject.eContainer()" resolve="eContainer" />
                       </node>
                     </node>
                     <node concept="liA8E" id="3nnodv50kCO" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                      <ref role="37wK5l" to="iuoz:~EObject.eClass()" resolve="eClass" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3nnodv50lLJ" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3nnodv50mRn" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="2OqwBi" id="3nnodv50ozC" role="37wK5m">
                     <node concept="2OqwBi" id="3nnodv50nEx" role="2Oq$k0">
                       <node concept="2JrnkZ" id="3nnodv50nvE" role="2Oq$k0">
@@ -10428,11 +10517,11 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="3nnodv50olk" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                       </node>
                     </node>
                     <node concept="liA8E" id="3nnodv50oSh" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                     </node>
                   </node>
                 </node>
@@ -10485,7 +10574,7 @@
                           <ref role="3cqZAo" node="4AzbGOI$YZj" resolve="emfInstance" />
                         </node>
                         <node concept="liA8E" id="4AzbGOICLlL" role="2OqNvi">
-                          <ref role="37wK5l" to="iuoz:~EObject.eGet(org.eclipse.emf.ecore.EStructuralFeature):java.lang.Object" resolve="eGet" />
+                          <ref role="37wK5l" to="iuoz:~EObject.eGet(org.eclipse.emf.ecore.EStructuralFeature)" resolve="eGet" />
                           <node concept="37vLTw" id="4AzbGOICL$_" role="37wK5m">
                             <ref role="3cqZAo" node="4AzbGOIBlKZ" resolve="ref" />
                           </node>
@@ -10506,17 +10595,17 @@
                             <ref role="2Gs0qQ" node="4AzbGOIDHb0" resolve="referenceMps" />
                           </node>
                           <node concept="liA8E" id="4AzbGOIDJnP" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                            <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                           </node>
                         </node>
                         <node concept="liA8E" id="4AzbGOIDLqh" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="4AzbGOIDM0V" role="37wK5m">
                             <node concept="37vLTw" id="4AzbGOIDLGw" role="2Oq$k0">
                               <ref role="3cqZAo" node="4AzbGOIBlKZ" resolve="ref" />
                             </node>
                             <node concept="liA8E" id="4AzbGOIDNgg" role="2OqNvi">
-                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -10530,7 +10619,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="4AzbGOIDOiD" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNode.setReferenceTarget(org.jetbrains.mps.openapi.language.SReferenceLink,org.jetbrains.mps.openapi.model.SNode):void" resolve="setReferenceTarget" />
+                              <ref role="37wK5l" to="mhbf:~SNode.setReferenceTarget(org.jetbrains.mps.openapi.language.SReferenceLink,org.jetbrains.mps.openapi.model.SNode)" resolve="setReferenceTarget" />
                               <node concept="2GrUjf" id="4AzbGOIDOxF" role="37wK5m">
                                 <ref role="2Gs0qQ" node="4AzbGOIDHb0" resolve="referenceMps" />
                               </node>
@@ -10556,11 +10645,11 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="4AzbGOIDCs3" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                       </node>
                     </node>
                     <node concept="liA8E" id="4AzbGOIDCSH" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getReferenceLinks():java.util.Collection" resolve="getReferenceLinks" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getReferenceLinks()" resolve="getReferenceLinks" />
                     </node>
                   </node>
                 </node>
@@ -10572,7 +10661,7 @@
                       <ref role="3cqZAo" node="4AzbGOIBlKZ" resolve="ref" />
                     </node>
                     <node concept="liA8E" id="4AzbGOICC29" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EReference.isContainment():boolean" resolve="isContainment" />
+                      <ref role="37wK5l" to="iuoz:~EReference.isContainment()" resolve="isContainment" />
                     </node>
                   </node>
                 </node>
@@ -10585,7 +10674,7 @@
                       <ref role="3cqZAo" node="4AzbGOI$YZj" resolve="emfInstance" />
                     </node>
                     <node concept="liA8E" id="4AzbGOICDWr" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EObject.eGet(org.eclipse.emf.ecore.EStructuralFeature):java.lang.Object" resolve="eGet" />
+                      <ref role="37wK5l" to="iuoz:~EObject.eGet(org.eclipse.emf.ecore.EStructuralFeature)" resolve="eGet" />
                       <node concept="37vLTw" id="4AzbGOICE4H" role="37wK5m">
                         <ref role="3cqZAo" node="4AzbGOIBlKZ" resolve="ref" />
                       </node>
@@ -10607,11 +10696,11 @@
                 <ref role="3cqZAo" node="4AzbGOI$YZj" resolve="emfInstance" />
               </node>
               <node concept="liA8E" id="4AzbGOIBqL0" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                <ref role="37wK5l" to="iuoz:~EObject.eClass()" resolve="eClass" />
               </node>
             </node>
             <node concept="liA8E" id="4AzbGOIBteA" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEAllReferences():org.eclipse.emf.common.util.EList" resolve="getEAllReferences" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEAllReferences()" resolve="getEAllReferences" />
             </node>
           </node>
         </node>
@@ -10648,7 +10737,7 @@
               <ref role="3cqZAo" node="4AzbGOI$YZj" resolve="emfInstance" />
             </node>
             <node concept="liA8E" id="4AzbGOI_DBH" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EObject.eContents():org.eclipse.emf.common.util.EList" resolve="eContents" />
+              <ref role="37wK5l" to="iuoz:~EObject.eContents()" resolve="eContents" />
             </node>
           </node>
         </node>
@@ -10693,7 +10782,7 @@
                   <ref role="3cqZAo" node="13Co4MSM7pF" resolve="emfMetaModel" />
                 </node>
                 <node concept="liA8E" id="13Co4MSMkDr" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                  <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                   <node concept="37vLTw" id="13Co4MSMnc6" role="37wK5m">
                     <ref role="3cqZAo" node="6xcAMXIWp26" resolve="referenceTypeName" />
                   </node>
@@ -10715,11 +10804,11 @@
                 <ref role="3cqZAo" node="6xcAMXIWovA" resolve="instanceEMF" />
               </node>
               <node concept="liA8E" id="6xcAMXIWr_W" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                <ref role="37wK5l" to="iuoz:~EObject.eClass()" resolve="eClass" />
               </node>
             </node>
             <node concept="liA8E" id="6xcAMXIWswA" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEReferences():org.eclipse.emf.common.util.EList" resolve="getEReferences" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEReferences()" resolve="getEReferences" />
             </node>
           </node>
           <node concept="3clFbS" id="6xcAMXIWpUE" role="2LFqv$">
@@ -10733,11 +10822,11 @@
                       <ref role="3cqZAo" node="6xcAMXIWpUC" resolve="ref" />
                     </node>
                     <node concept="liA8E" id="13Co4MSLYEk" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType():org.eclipse.emf.ecore.EClass" resolve="getEReferenceType" />
+                      <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType()" resolve="getEReferenceType" />
                     </node>
                   </node>
                   <node concept="liA8E" id="13Co4MSLYEl" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -10757,7 +10846,7 @@
                       <ref role="3cqZAo" node="13Co4MSM7pF" resolve="emfMetaModel" />
                     </node>
                     <node concept="liA8E" id="13Co4MSLYEt" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                       <node concept="37vLTw" id="13Co4MSLYEu" role="37wK5m">
                         <ref role="3cqZAo" node="13Co4MSLYEf" resolve="referenceNm" />
                       </node>
@@ -10776,7 +10865,7 @@
               </node>
               <node concept="2YIFZM" id="13Co4MSMpVz" role="3clFbw">
                 <ref role="1Pybhc" to="u5dg:~EcoreUtil2" resolve="EcoreUtil2" />
-                <ref role="37wK5l" to="u5dg:~EcoreUtil2.isAssignableFrom(org.eclipse.emf.ecore.EClass,org.eclipse.emf.ecore.EClass):boolean" resolve="isAssignableFrom" />
+                <ref role="37wK5l" to="u5dg:~EcoreUtil2.isAssignableFrom(org.eclipse.emf.ecore.EClass,org.eclipse.emf.ecore.EClass)" resolve="isAssignableFrom" />
                 <node concept="37vLTw" id="13Co4MSMpV$" role="37wK5m">
                   <ref role="3cqZAo" node="13Co4MSLYEn" resolve="potentielSuperClass" />
                 </node>
@@ -10800,11 +10889,11 @@
                 <ref role="3cqZAo" node="6xcAMXIWovA" resolve="instanceEMF" />
               </node>
               <node concept="liA8E" id="13Co4MSKtVN" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                <ref role="37wK5l" to="iuoz:~EObject.eClass()" resolve="eClass" />
               </node>
             </node>
             <node concept="liA8E" id="13Co4MSKtVO" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEAllReferences():org.eclipse.emf.common.util.EList" resolve="getEAllReferences" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEAllReferences()" resolve="getEAllReferences" />
             </node>
           </node>
           <node concept="3clFbS" id="13Co4MSKtVP" role="2LFqv$">
@@ -10818,11 +10907,11 @@
                       <ref role="3cqZAo" node="13Co4MSKtVI" resolve="ref" />
                     </node>
                     <node concept="liA8E" id="13Co4MSMs4i" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType():org.eclipse.emf.ecore.EClass" resolve="getEReferenceType" />
+                      <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType()" resolve="getEReferenceType" />
                     </node>
                   </node>
                   <node concept="liA8E" id="13Co4MSMs4j" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -10842,7 +10931,7 @@
                       <ref role="3cqZAo" node="13Co4MSM7pF" resolve="emfMetaModel" />
                     </node>
                     <node concept="liA8E" id="13Co4MSMs4r" role="2OqNvi">
-                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String):org.eclipse.emf.ecore.EClassifier" resolve="getEClassifier" />
+                      <ref role="37wK5l" to="iuoz:~EPackage.getEClassifier(java.lang.String)" resolve="getEClassifier" />
                       <node concept="37vLTw" id="13Co4MSMs4s" role="37wK5m">
                         <ref role="3cqZAo" node="13Co4MSMs4d" resolve="referenceNm" />
                       </node>
@@ -10860,7 +10949,7 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="13Co4MSMs4x" role="3clFbw">
-                <ref role="37wK5l" to="u5dg:~EcoreUtil2.isAssignableFrom(org.eclipse.emf.ecore.EClass,org.eclipse.emf.ecore.EClass):boolean" resolve="isAssignableFrom" />
+                <ref role="37wK5l" to="u5dg:~EcoreUtil2.isAssignableFrom(org.eclipse.emf.ecore.EClass,org.eclipse.emf.ecore.EClass)" resolve="isAssignableFrom" />
                 <ref role="1Pybhc" to="u5dg:~EcoreUtil2" resolve="EcoreUtil2" />
                 <node concept="37vLTw" id="13Co4MSMs4y" role="37wK5m">
                   <ref role="3cqZAo" node="13Co4MSMs4l" resolve="potentielSuperClass" />
@@ -10921,10 +11010,10 @@
               <ref role="3cqZAo" to="iuoz:~EPackage$Registry.INSTANCE" resolve="INSTANCE" />
             </node>
             <node concept="liA8E" id="142NQOuecEp" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="2OqwBi" id="142NQOueeFR" role="37wK5m">
                 <node concept="liA8E" id="142NQOueeXd" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EPackage.getNsURI():java.lang.String" resolve="getNsURI" />
+                  <ref role="37wK5l" to="iuoz:~EPackage.getNsURI()" resolve="getNsURI" />
                 </node>
                 <node concept="37vLTw" id="142NQOuegYB" role="2Oq$k0">
                   <ref role="3cqZAo" node="142NQOuegnP" resolve="metamodel" />
@@ -10944,11 +11033,11 @@
                 <ref role="3cqZAo" to="roop:~Resource$Factory$Registry.INSTANCE" resolve="INSTANCE" />
               </node>
               <node concept="liA8E" id="142NQOueud6" role="2OqNvi">
-                <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getExtensionToFactoryMap():java.util.Map" resolve="getExtensionToFactoryMap" />
+                <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getExtensionToFactoryMap()" resolve="getExtensionToFactoryMap" />
               </node>
             </node>
             <node concept="liA8E" id="142NQOueuUi" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="Xl_RD" id="142NQOuevfo" role="37wK5m">
                 <property role="Xl_RC" value="xmi" />
               </node>
@@ -10968,11 +11057,11 @@
                 <ref role="3cqZAo" to="roop:~Resource$Factory$Registry.INSTANCE" resolve="INSTANCE" />
               </node>
               <node concept="liA8E" id="142NQOuexNK" role="2OqNvi">
-                <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getExtensionToFactoryMap():java.util.Map" resolve="getExtensionToFactoryMap" />
+                <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getExtensionToFactoryMap()" resolve="getExtensionToFactoryMap" />
               </node>
             </node>
             <node concept="liA8E" id="142NQOuexNL" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="Xl_RD" id="142NQOuexNM" role="37wK5m">
                 <property role="Xl_RC" value="xml" />
               </node>
@@ -10998,14 +11087,14 @@
                   <ref role="3cqZAo" to="roop:~Resource$Factory$Registry.INSTANCE" resolve="INSTANCE" />
                 </node>
                 <node concept="liA8E" id="142NQOudCHr" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getFactory(org.eclipse.emf.common.util.URI):org.eclipse.emf.ecore.resource.Resource$Factory" resolve="getFactory" />
+                  <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getFactory(org.eclipse.emf.common.util.URI)" resolve="getFactory" />
                   <node concept="37vLTw" id="5DtuIW1ZijZ" role="37wK5m">
                     <ref role="3cqZAo" node="6TiIOkRA7af" resolve="pathToInst" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="142NQOudCY9" role="2OqNvi">
-                <ref role="37wK5l" to="roop:~Resource$Factory.createResource(org.eclipse.emf.common.util.URI):org.eclipse.emf.ecore.resource.Resource" resolve="createResource" />
+                <ref role="37wK5l" to="roop:~Resource$Factory.createResource(org.eclipse.emf.common.util.URI)" resolve="createResource" />
                 <node concept="37vLTw" id="5DtuIW1Zi$a" role="37wK5m">
                   <ref role="3cqZAo" node="6TiIOkRA7af" resolve="pathToInst" />
                 </node>
@@ -11021,7 +11110,7 @@
                   <ref role="3cqZAo" node="142NQOudBP4" resolve="res" />
                 </node>
                 <node concept="liA8E" id="142NQOudDPd" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~Resource.load(java.util.Map):void" resolve="load" />
+                  <ref role="37wK5l" to="roop:~Resource.load(java.util.Map)" resolve="load" />
                   <node concept="10Nm6u" id="142NQOudDZz" role="37wK5m" />
                 </node>
               </node>
@@ -11042,7 +11131,7 @@
                     <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                   </node>
                   <node concept="liA8E" id="142NQOudEbP" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                     <node concept="Xl_RD" id="142NQOudEp6" role="37wK5m">
                       <property role="Xl_RC" value="Error Loading model" />
                     </node>
@@ -11055,7 +11144,7 @@
                     <ref role="3cqZAo" node="142NQOudDtW" resolve="e" />
                   </node>
                   <node concept="liA8E" id="142NQOudFut" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -11254,7 +11343,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6hIoT_tylvl" role="37vLTx">
-              <ref role="37wK5l" to="hu10:~URI.createFileURI(java.lang.String):org.eclipse.emf.common.util.URI" resolve="createFileURI" />
+              <ref role="37wK5l" to="hu10:~URI.createFileURI(java.lang.String)" resolve="createFileURI" />
               <ref role="1Pybhc" to="hu10:~URI" resolve="URI" />
               <node concept="37vLTw" id="6hIoT_tylHp" role="37wK5m">
                 <ref role="3cqZAo" node="6hIoT_txZK0" resolve="ecoreFileName" />
@@ -11271,7 +11360,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6hIoT_tymH7" role="37vLTx">
-              <ref role="37wK5l" to="hu10:~URI.createFileURI(java.lang.String):org.eclipse.emf.common.util.URI" resolve="createFileURI" />
+              <ref role="37wK5l" to="hu10:~URI.createFileURI(java.lang.String)" resolve="createFileURI" />
               <ref role="1Pybhc" to="hu10:~URI" resolve="URI" />
               <node concept="37vLTw" id="6hIoT_tymVd" role="37wK5m">
                 <ref role="3cqZAo" node="6hIoT_txZK3" resolve="pathToInstance" />
@@ -11493,7 +11582,7 @@
         <node concept="3cpWs6" id="1Ur9vEMLU$V" role="3cqZAp">
           <node concept="2YIFZM" id="1Ur9vEMLUHH" role="3cqZAk">
             <ref role="1Pybhc" to="ez3t:~Guice" resolve="Guice" />
-            <ref role="37wK5l" to="ez3t:~Guice.createInjector(com.google.inject.Module...):com.google.inject.Injector" resolve="createInjector" />
+            <ref role="37wK5l" to="ez3t:~Guice.createInjector(com.google.inject.Module...)" resolve="createInjector" />
             <node concept="2ShNRf" id="1Ur9vEMLUHI" role="37wK5m">
               <node concept="YeOm9" id="1Ur9vEMLUHJ" role="2ShVmc">
                 <node concept="1Y3b0j" id="1Ur9vEMLUHK" role="YeSDq">
@@ -11584,7 +11673,7 @@
               <ref role="3cqZAo" node="1Ur9vEMLygF" resolve="injector" />
             </node>
             <node concept="liA8E" id="1Ur9vEML_8c" role="2OqNvi">
-              <ref role="37wK5l" to="ez3t:~Injector.injectMembers(java.lang.Object):void" resolve="injectMembers" />
+              <ref role="37wK5l" to="ez3t:~Injector.injectMembers(java.lang.Object)" resolve="injectMembers" />
               <node concept="37vLTw" id="1Ur9vEML_8d" role="37wK5m">
                 <ref role="3cqZAo" node="1Ur9vEMLygM" resolve="resourceSet" />
               </node>
@@ -11598,11 +11687,11 @@
                 <ref role="3cqZAo" node="1Ur9vEMLygM" resolve="resourceSet" />
               </node>
               <node concept="liA8E" id="1Ur9vEML_2r" role="2OqNvi">
-                <ref role="37wK5l" to="zgo3:~NotifierImpl.eAdapters():org.eclipse.emf.common.util.EList" resolve="eAdapters" />
+                <ref role="37wK5l" to="zgo3:~NotifierImpl.eAdapters()" resolve="eAdapters" />
               </node>
             </node>
             <node concept="liA8E" id="1Ur9vEMLygW" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="1Ur9vEML_zV" role="37wK5m">
                 <node concept="1pGfFk" id="1Ur9vEML_HR" role="2ShVmc">
                   <ref role="37wK5l" to="elak:~XcoreStandaloneSetup$XcoreStandaloneRuntimeModule$XcoreResourceSetInitializer$AllContainerAdapter.&lt;init&gt;(org.eclipse.emf.ecore.xcore.XcoreStandaloneSetup$XcoreStandaloneRuntimeModule$XcoreResourceSetInitializer,org.eclipse.xtext.resource.XtextResourceSet)" resolve="XcoreStandaloneSetup.XcoreStandaloneRuntimeModule.XcoreResourceSetInitializer.AllContainerAdapter" />
@@ -11667,7 +11756,7 @@
                     <ref role="3cqZAo" node="1Ur9vEMLyhO" resolve="e" />
                   </node>
                   <node concept="liA8E" id="1Ur9vEMLAqA" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -11694,14 +11783,14 @@
                 <node concept="2OqwBi" id="1Ur9vEMLyhh" role="33vP2m">
                   <node concept="2OqwBi" id="1Ur9vEMLyhi" role="2Oq$k0">
                     <node concept="1rXfSq" id="1Ur9vEMLyhj" role="2Oq$k0">
-                      <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                      <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                     </node>
                     <node concept="liA8E" id="1Ur9vEMLyhk" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.getClassLoader():java.lang.ClassLoader" resolve="getClassLoader" />
+                      <ref role="37wK5l" to="wyt6:~Class.getClassLoader()" resolve="getClassLoader" />
                     </node>
                   </node>
                   <node concept="liA8E" id="1Ur9vEMLyhl" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~ClassLoader.getResources(java.lang.String):java.util.Enumeration" resolve="getResources" />
+                    <ref role="37wK5l" to="wyt6:~ClassLoader.getResources(java.lang.String)" resolve="getResources" />
                     <node concept="Xl_RD" id="1Ur9vEMLyhm" role="37wK5m">
                       <property role="Xl_RC" value="META-INF" />
                     </node>
@@ -11715,7 +11804,7 @@
                   <ref role="3cqZAo" node="1Ur9vEMLyhd" resolve="resources" />
                 </node>
                 <node concept="liA8E" id="1Ur9vEML_Nq" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Enumeration.hasMoreElements():boolean" resolve="hasMoreElements" />
+                  <ref role="37wK5l" to="33ny:~Enumeration.hasMoreElements()" resolve="hasMoreElements" />
                 </node>
               </node>
               <node concept="3clFbS" id="1Ur9vEMLyhp" role="2LFqv$">
@@ -11731,7 +11820,7 @@
                         <ref role="3cqZAo" node="1Ur9vEMLyhd" resolve="resources" />
                       </node>
                       <node concept="liA8E" id="1Ur9vEMLANG" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Enumeration.nextElement():java.lang.Object" resolve="nextElement" />
+                        <ref role="37wK5l" to="33ny:~Enumeration.nextElement()" resolve="nextElement" />
                       </node>
                     </node>
                   </node>
@@ -11742,13 +11831,13 @@
                       <property role="Xl_RC" value="jar" />
                     </node>
                     <node concept="liA8E" id="1Ur9vEMLyhx" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="2OqwBi" id="1Ur9vEMLB70" role="37wK5m">
                         <node concept="37vLTw" id="1Ur9vEMLB6Z" role="2Oq$k0">
                           <ref role="3cqZAo" node="1Ur9vEMLyhq" resolve="nextElement" />
                         </node>
                         <node concept="liA8E" id="1Ur9vEMLB71" role="2OqNvi">
-                          <ref role="37wK5l" to="zf81:~URL.getProtocol():java.lang.String" resolve="getProtocol" />
+                          <ref role="37wK5l" to="zf81:~URL.getProtocol()" resolve="getProtocol" />
                         </node>
                       </node>
                     </node>
@@ -11769,7 +11858,7 @@
                                   <ref role="3cqZAo" node="1Ur9vEMLyhq" resolve="nextElement" />
                                 </node>
                                 <node concept="liA8E" id="1Ur9vEMLB0b" role="2OqNvi">
-                                  <ref role="37wK5l" to="zf81:~URL.openConnection():java.net.URLConnection" resolve="openConnection" />
+                                  <ref role="37wK5l" to="zf81:~URL.openConnection()" resolve="openConnection" />
                                 </node>
                               </node>
                               <node concept="3uibUv" id="1Ur9vEMLyhF" role="10QFUM">
@@ -11778,7 +11867,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="1Ur9vEMLyhH" role="2OqNvi">
-                            <ref role="37wK5l" to="zf81:~JarURLConnection.getJarFileURL():java.net.URL" resolve="getJarFileURL" />
+                            <ref role="37wK5l" to="zf81:~JarURLConnection.getJarFileURL()" resolve="getJarFileURL" />
                           </node>
                         </node>
                       </node>
@@ -11789,18 +11878,18 @@
                           <ref role="3cqZAo" node="1Ur9vEMLyh6" resolve="result" />
                         </node>
                         <node concept="liA8E" id="1Ur9vEMLAxC" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                          <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                           <node concept="2OqwBi" id="1Ur9vEMLAxD" role="37wK5m">
                             <node concept="2OqwBi" id="1Ur9vEMLDq3" role="2Oq$k0">
                               <node concept="37vLTw" id="1Ur9vEMLDq2" role="2Oq$k0">
                                 <ref role="3cqZAo" node="1Ur9vEMLyh_" resolve="jarFileURL" />
                               </node>
                               <node concept="liA8E" id="1Ur9vEMLDq4" role="2OqNvi">
-                                <ref role="37wK5l" to="zf81:~URL.toURI():java.net.URI" resolve="toURI" />
+                                <ref role="37wK5l" to="zf81:~URL.toURI()" resolve="toURI" />
                               </node>
                             </node>
                             <node concept="liA8E" id="1Ur9vEMLAxF" role="2OqNvi">
-                              <ref role="37wK5l" to="zf81:~URI.getRawPath():java.lang.String" resolve="getRawPath" />
+                              <ref role="37wK5l" to="zf81:~URI.getRawPath()" resolve="getRawPath" />
                             </node>
                           </node>
                         </node>
@@ -11909,7 +11998,7 @@
               <ref role="1Pybhc" node="6XBHSVMGUts" resolve="EMFUtils" />
               <node concept="2YIFZM" id="375LOh7hf6S" role="37wK5m">
                 <ref role="1Pybhc" to="hu10:~URI" resolve="URI" />
-                <ref role="37wK5l" to="hu10:~URI.createFileURI(java.lang.String):org.eclipse.emf.common.util.URI" resolve="createFileURI" />
+                <ref role="37wK5l" to="hu10:~URI.createFileURI(java.lang.String)" resolve="createFileURI" />
                 <node concept="2OqwBi" id="375LOh7hf6T" role="37wK5m">
                   <node concept="37vLTw" id="375LOh7hf6U" role="2Oq$k0">
                     <ref role="3cqZAo" node="375LOh7heFN" resolve="runner" />
@@ -12060,7 +12149,7 @@
                         <ref role="3cqZAo" node="375LOh7iyrL" resolve="emfModel" />
                       </node>
                       <node concept="liA8E" id="375LOh7iS5y" role="2OqNvi">
-                        <ref role="37wK5l" to="iuoz:~EObject.eContents():org.eclipse.emf.common.util.EList" resolve="eContents" />
+                        <ref role="37wK5l" to="iuoz:~EObject.eContents()" resolve="eContents" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="375LOh7iP12" role="2LFqv$">
@@ -12091,7 +12180,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="375LOh7iZDq" role="2OqNvi">
-                                  <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                                  <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                                 </node>
                               </node>
                             </node>
@@ -12311,7 +12400,7 @@
               <ref role="3cqZAo" node="375LOh7hjOk" resolve="emfModel" />
             </node>
             <node concept="liA8E" id="375LOh7hoDM" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EObject.eContents():org.eclipse.emf.common.util.EList" resolve="eContents" />
+              <ref role="37wK5l" to="iuoz:~EObject.eContents()" resolve="eContents" />
             </node>
           </node>
           <node concept="3clFbS" id="375LOh7hnuv" role="2LFqv$">
@@ -12363,7 +12452,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="375LOh7hSsi" role="2OqNvi">
-                                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                                   </node>
                                 </node>
                                 <node concept="2OqwBi" id="375LOh7hKG5" role="3uHU7B">
@@ -12729,7 +12818,7 @@
                   <ref role="2Gs0qQ" node="4zxiNljmgTA" resolve="superType" />
                 </node>
                 <node concept="liA8E" id="4zxiNljmgTF" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EClass.isAbstract():boolean" resolve="isAbstract" />
+                  <ref role="37wK5l" to="iuoz:~EClass.isAbstract()" resolve="isAbstract" />
                 </node>
               </node>
               <node concept="3clFbS" id="4zxiNljmgTG" role="3clFbx">
@@ -12753,7 +12842,7 @@
               <ref role="3cqZAo" node="4zxiNljlNWa" resolve="emfClass" />
             </node>
             <node concept="liA8E" id="4zxiNljmgTV" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getESuperTypes():org.eclipse.emf.common.util.EList" resolve="getESuperTypes" />
+              <ref role="37wK5l" to="iuoz:~EClass.getESuperTypes()" resolve="getESuperTypes" />
             </node>
           </node>
         </node>
@@ -12787,7 +12876,7 @@
                                 <ref role="2Gs0qQ" node="4zxiNljm5W1" resolve="ifInEMF" />
                               </node>
                               <node concept="liA8E" id="4zxiNljm5Wh" role="2OqNvi">
-                                <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="4zxiNljm5Wi" role="3uHU7B">
@@ -12848,7 +12937,7 @@
                                     <ref role="2Gs0qQ" node="4zxiNljm5W1" resolve="ifInEMF" />
                                   </node>
                                   <node concept="liA8E" id="4zxiNljm5WG" role="2OqNvi">
-                                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                                   </node>
                                 </node>
                                 <node concept="2OqwBi" id="4zxiNljm5WH" role="3uHU7B">
@@ -12948,7 +13037,7 @@
                               <ref role="2Gs0qQ" node="4zxiNljm5X9" resolve="ifInEMF" />
                             </node>
                             <node concept="liA8E" id="4zxiNljm5Xl" role="2OqNvi">
-                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -13081,7 +13170,7 @@
                   <ref role="2Gs0qQ" node="787c44uepf$" resolve="superType" />
                 </node>
                 <node concept="liA8E" id="787c44uetf4" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EClass.isAbstract():boolean" resolve="isAbstract" />
+                  <ref role="37wK5l" to="iuoz:~EClass.isAbstract()" resolve="isAbstract" />
                 </node>
               </node>
               <node concept="3clFbS" id="787c44uer3B" role="3clFbx">
@@ -13121,7 +13210,7 @@
               <ref role="3cqZAo" node="787c44ue5Fq" resolve="emfClass" />
             </node>
             <node concept="liA8E" id="787c44ueqO5" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getESuperTypes():org.eclipse.emf.common.util.EList" resolve="getESuperTypes" />
+              <ref role="37wK5l" to="iuoz:~EClass.getESuperTypes()" resolve="getESuperTypes" />
             </node>
           </node>
         </node>
@@ -13154,7 +13243,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="787c44ufdaL" role="2OqNvi">
-                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -13280,7 +13369,7 @@
                                 <ref role="2Gs0qQ" node="4zxiNljitir" resolve="ifInEMF" />
                               </node>
                               <node concept="liA8E" id="4zxiNljiJsW" role="2OqNvi">
-                                <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="4zxiNljiGaj" role="3uHU7B">
@@ -13341,7 +13430,7 @@
                                     <ref role="2Gs0qQ" node="4zxiNljitir" resolve="ifInEMF" />
                                   </node>
                                   <node concept="liA8E" id="4zxiNljjy_9" role="2OqNvi">
-                                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                                   </node>
                                 </node>
                                 <node concept="2OqwBi" id="4zxiNljjy_a" role="3uHU7B">
@@ -13441,7 +13530,7 @@
                               <ref role="2Gs0qQ" node="4zxiNljjLBW" resolve="ifInEMF" />
                             </node>
                             <node concept="liA8E" id="4zxiNljjP0a" role="2OqNvi">
-                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName()" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -13550,7 +13639,7 @@
               <ref role="3cqZAo" node="1goF4reFtCs" resolve="emfClass" />
             </node>
             <node concept="liA8E" id="1goF4reFvvY" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEAttributes():org.eclipse.emf.common.util.EList" resolve="getEAttributes" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEAttributes()" resolve="getEAttributes" />
             </node>
           </node>
           <node concept="3clFbS" id="1goF4reFucv" role="2LFqv$">
@@ -13694,7 +13783,7 @@
               <ref role="3cqZAo" node="110SXBDgY5Z" resolve="emfClass" />
             </node>
             <node concept="liA8E" id="110SXBDh2hZ" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EClass.getEReferences():org.eclipse.emf.common.util.EList" resolve="getEReferences" />
+              <ref role="37wK5l" to="iuoz:~EClass.getEReferences()" resolve="getEReferences" />
             </node>
           </node>
           <node concept="3clFbS" id="110SXBDh2i0" role="2LFqv$">
@@ -13844,7 +13933,7 @@
                   <ref role="3cqZAo" node="1goF4reGafR" resolve="emfClass" />
                 </node>
                 <node concept="liA8E" id="1goF4reGeaO" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EClass.getEAllAttributes():org.eclipse.emf.common.util.EList" resolve="getEAllAttributes" />
+                  <ref role="37wK5l" to="iuoz:~EClass.getEAllAttributes()" resolve="getEAllAttributes" />
                 </node>
               </node>
               <node concept="3clFbS" id="1goF4reGcJD" role="2LFqv$">
@@ -13961,7 +14050,7 @@
                   <ref role="3cqZAo" node="110SXBDiUDF" resolve="emfClass" />
                 </node>
                 <node concept="liA8E" id="110SXBDiZN8" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EClass.getEReferences():org.eclipse.emf.common.util.EList" resolve="getEReferences" />
+                  <ref role="37wK5l" to="iuoz:~EClass.getEReferences()" resolve="getEReferences" />
                 </node>
               </node>
               <node concept="3clFbS" id="110SXBDiZN9" role="2LFqv$">
@@ -14112,7 +14201,7 @@
               <ref role="1Pybhc" node="6XBHSVMGUts" resolve="EMFUtils" />
               <node concept="2YIFZM" id="375LOh7dpDb" role="37wK5m">
                 <ref role="1Pybhc" to="hu10:~URI" resolve="URI" />
-                <ref role="37wK5l" to="hu10:~URI.createFileURI(java.lang.String):org.eclipse.emf.common.util.URI" resolve="createFileURI" />
+                <ref role="37wK5l" to="hu10:~URI.createFileURI(java.lang.String)" resolve="createFileURI" />
                 <node concept="2OqwBi" id="375LOh7dDSR" role="37wK5m">
                   <node concept="37vLTw" id="375LOh7dBr3" role="2Oq$k0">
                     <ref role="3cqZAo" node="375LOh7dlS5" resolve="runner" />
@@ -14246,7 +14335,7 @@
               <ref role="3cqZAo" node="375LOh7dWh5" resolve="ecoremetamodel" />
             </node>
             <node concept="liA8E" id="375LOh7dWgY" role="2OqNvi">
-              <ref role="37wK5l" to="iuoz:~EObject.eContents():org.eclipse.emf.common.util.EList" resolve="eContents" />
+              <ref role="37wK5l" to="iuoz:~EObject.eContents()" resolve="eContents" />
             </node>
           </node>
         </node>

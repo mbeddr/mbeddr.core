@@ -2,11 +2,11 @@
 <model ref="r:b37b80ef-b920-4af7-9966-3a77c955c860(com.mbeddr.core.modules.gen.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2745,7 +2745,7 @@
                 <ref role="3cqZAo" node="1lYd87JBZL3" resolve="name" />
               </node>
               <node concept="liA8E" id="7uVh7XGJHgC" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
               </node>
             </node>
           </node>
@@ -2870,29 +2870,6 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="7Aba6BzyYIQ">
-    <property role="3GE5qa" value="module" />
-    <ref role="13h7C2" to="d0vh:6iilwRlTjqY" resolve="AbstractGenModule" />
-    <node concept="13i0hz" id="7Aba6Bzz6b$" role="13h7CS">
-      <property role="TrG5h" value="genName" />
-      <property role="13i0it" value="true" />
-      <node concept="3Tm1VV" id="7Aba6Bzz6b_" role="1B3o_S" />
-      <node concept="17QB3L" id="7Aba6Bzz6bO" role="3clF45" />
-      <node concept="3clFbS" id="7Aba6Bzz6bB" role="3clF47">
-        <node concept="3clFbF" id="7Aba6Bzz6co" role="3cqZAp">
-          <node concept="2OqwBi" id="7Aba6Bzz6x8" role="3clFbG">
-            <node concept="13iPFW" id="7Aba6Bzz6cn" role="2Oq$k0" />
-            <node concept="2qgKlT" id="3mNkkAiRW3e" role="2OqNvi">
-              <ref role="37wK5l" to="qd6m:7Aba6ByEk1p" resolve="getMangledModuleName" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="13hLZK" id="7Aba6BzyYIR" role="13h7CW">
-      <node concept="3clFbS" id="7Aba6BzyYIS" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="5hcw$WGctj9">
     <property role="3GE5qa" value="portability" />
     <ref role="13h7C2" to="d0vh:5hcw$WGctfJ" resolve="IMultiPlatformConstruct" />
@@ -3012,6 +2989,29 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7Aba6BzyYIQ">
+    <property role="3GE5qa" value="module" />
+    <ref role="13h7C2" to="d0vh:6iilwRlTjqY" resolve="AbstractGenModule" />
+    <node concept="13i0hz" id="7Aba6Bzz6b$" role="13h7CS">
+      <property role="TrG5h" value="genName" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="7Aba6Bzz6b_" role="1B3o_S" />
+      <node concept="17QB3L" id="7Aba6Bzz6bO" role="3clF45" />
+      <node concept="3clFbS" id="7Aba6Bzz6bB" role="3clF47">
+        <node concept="3clFbF" id="7Aba6Bzz6co" role="3cqZAp">
+          <node concept="2OqwBi" id="7Aba6Bzz6x8" role="3clFbG">
+            <node concept="13iPFW" id="7Aba6Bzz6cn" role="2Oq$k0" />
+            <node concept="2qgKlT" id="3mNkkAiRW3e" role="2OqNvi">
+              <ref role="37wK5l" to="qd6m:7Aba6ByEk1p" resolve="getMangledModuleName" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7Aba6BzyYIR" role="13h7CW">
+      <node concept="3clFbS" id="7Aba6BzyYIS" role="2VODD2" />
     </node>
   </node>
 </model>

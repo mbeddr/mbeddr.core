@@ -412,7 +412,7 @@
                           <node concept="3cpWsn" id="3WFvXLXBsbF" role="3cpWs9">
                             <property role="TrG5h" value="mi" />
                             <node concept="2YIFZM" id="3WFvXLXBsbG" role="33vP2m">
-                              <ref role="37wK5l" to="52cq:~MIPlugin.getDefault():org.eclipse.cdt.debug.mi.core.MIPlugin" resolve="getDefault" />
+                              <ref role="37wK5l" to="52cq:~MIPlugin.getDefault()" resolve="getDefault" />
                               <ref role="1Pybhc" to="52cq:~MIPlugin" resolve="MIPlugin" />
                             </node>
                             <node concept="3uibUv" id="3WFvXLXBsbD" role="1tU5fm">
@@ -426,7 +426,7 @@
                               <ref role="3cqZAo" node="3WFvXLXBsbF" resolve="mi" />
                             </node>
                             <node concept="liA8E" id="3WFvXLXBuaB" role="2OqNvi">
-                              <ref role="37wK5l" to="52cq:~MIPlugin.createCSession(java.lang.String,java.lang.String,java.io.File,java.io.File,java.lang.String,org.eclipse.core.runtime.IProgressMonitor,int,int):org.eclipse.cdt.debug.mi.core.cdi.Session" resolve="createCSession" />
+                              <ref role="37wK5l" to="52cq:~MIPlugin.createCSession(java.lang.String,java.lang.String,java.io.File,java.io.File,java.lang.String,org.eclipse.core.runtime.IProgressMonitor,int,int)" resolve="createCSession" />
                               <node concept="2OqwBi" id="7c6uq_OaMaW" role="37wK5m">
                                 <node concept="37vLTw" id="7c6uq_OaM58" role="2Oq$k0">
                                   <ref role="3cqZAo" node="7c6uq_OaDNu" resolve="settings" />
@@ -496,7 +496,7 @@
                                 <ref role="3cqZAo" node="7B__YhMREiQ" resolve="e" />
                               </node>
                               <node concept="liA8E" id="7B__YhMRFnb" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                               </node>
                             </node>
                           </node>

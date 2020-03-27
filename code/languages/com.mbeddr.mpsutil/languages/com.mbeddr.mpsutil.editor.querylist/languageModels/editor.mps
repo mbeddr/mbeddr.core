@@ -1046,7 +1046,7 @@
       <node concept="3clFbS" id="2cvVnUuPz7D" role="3clF47">
         <node concept="3clFbF" id="2cvVnUuP$75" role="3cqZAp">
           <node concept="2YIFZM" id="2cvVnUuP$8o" role="3clFbG">
-            <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getContainmentLink(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+            <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getContainmentLink(org.jetbrains.mps.openapi.model.SNode)" resolve="getContainmentLink" />
             <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
             <node concept="2YIFZM" id="4glh_DctrAU" role="37wK5m">
               <ref role="37wK5l" to="iwwu:i0YipjE" resolve="getGenuineLinkDeclaration" />
@@ -1181,7 +1181,7 @@
                   <ref role="3cqZAo" node="Op$R492K5d" resolve="nullText" />
                 </node>
                 <node concept="liA8E" id="Op$R494k4I" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
               </node>
             </node>
@@ -2133,7 +2133,7 @@
       <node concept="3clFbS" id="4glh_Dctshb" role="3clF47">
         <node concept="3clFbF" id="4glh_Dctshc" role="3cqZAp">
           <node concept="2YIFZM" id="4glh_Dctshd" role="3clFbG">
-            <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getContainmentLink(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+            <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getContainmentLink(org.jetbrains.mps.openapi.model.SNode)" resolve="getContainmentLink" />
             <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
             <node concept="2YIFZM" id="4glh_Dctshe" role="37wK5m">
               <ref role="1Pybhc" to="iwwu:i0YipgJ" resolve="SModelUtil" />
@@ -2198,7 +2198,7 @@
                   <ref role="3cqZAo" node="8dI1zL1AIw" resolve="nullText" />
                 </node>
                 <node concept="liA8E" id="8dI1zL1AKm" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
               </node>
             </node>
@@ -2430,7 +2430,7 @@
       <node concept="3clFbS" id="4glh_DcB3Cf" role="3clF47">
         <node concept="3clFbF" id="4glh_DcB498" role="3cqZAp">
           <node concept="2YIFZM" id="4glh_DcB49V" role="3clFbG">
-            <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getProperty(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
+            <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getProperty(org.jetbrains.mps.openapi.model.SNode)" resolve="getProperty" />
             <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
             <node concept="1rXfSq" id="4glh_DcB4ms" role="37wK5m">
               <ref role="37wK5l" node="3IFXLmiucSz" resolve="getPropertyNode" />

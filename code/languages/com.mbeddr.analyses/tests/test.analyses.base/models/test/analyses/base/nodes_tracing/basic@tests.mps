@@ -160,10 +160,10 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="2ZKh15oiydX" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="2YIFZM" id="2ZKh15oigMa" role="37wK5m">
                 <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String)" resolve="join" />
                 <node concept="37vLTw" id="2ZKh15oigMP" role="37wK5m">
                   <ref role="3cqZAo" node="2ZKh15oie7U" resolve="badLines" />
                 </node>
@@ -230,10 +230,10 @@
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="2ZKh15oi_AP" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="2YIFZM" id="3FEqw8GV3WD" role="37wK5m">
                 <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String)" resolve="join" />
                 <node concept="37vLTw" id="3FEqw8GV3WE" role="37wK5m">
                   <ref role="3cqZAo" node="2ZKh15oi_AG" resolve="badLines" />
                 </node>
@@ -304,10 +304,10 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="2ZKh15oiAIq" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="2YIFZM" id="2ZKh15oiAIr" role="37wK5m">
                 <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String)" resolve="join" />
                 <node concept="37vLTw" id="2ZKh15oiAIs" role="37wK5m">
                   <ref role="3cqZAo" node="2ZKh15oiAIh" resolve="badLines" />
                 </node>

@@ -299,7 +299,7 @@
             <node concept="2OqwBi" id="5XHLjGSy5nm" role="33vP2m">
               <node concept="1fK8h6" id="5XHLjGSy5nn" role="2Oq$k0" />
               <node concept="liA8E" id="5XHLjGSy5no" role="2OqNvi">
-                <ref role="37wK5l" to="1fjm:~ProgramState.getInstruction():jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" resolve="getInstruction" />
+                <ref role="37wK5l" to="1fjm:~ProgramState.getInstruction()" resolve="getInstruction" />
               </node>
             </node>
           </node>
@@ -339,7 +339,7 @@
               <ref role="3cqZAo" node="5XHLjGSy5nk" resolve="instruction" />
             </node>
             <node concept="liA8E" id="5XHLjGSy5ny" role="2OqNvi">
-              <ref role="37wK5l" to="dau9:~Instruction.isStart():boolean" resolve="isStart" />
+              <ref role="37wK5l" to="dau9:~Instruction.isStart()" resolve="isStart" />
             </node>
           </node>
           <node concept="9aQIb" id="5XHLjGSy5nz" role="9aQIa">
@@ -375,7 +375,7 @@
                             <ref role="3cqZAo" node="5XHLjGSylqk" resolve="wi" />
                           </node>
                           <node concept="liA8E" id="5XHLjGSyn3$" role="2OqNvi">
-                            <ref role="37wK5l" to="dau9:~WriteInstruction.getVariable():java.lang.Object" resolve="getVariable" />
+                            <ref role="37wK5l" to="dau9:~WriteInstruction.getVariable()" resolve="getVariable" />
                           </node>
                         </node>
                       </node>
@@ -392,7 +392,7 @@
                             <ref role="3cqZAo" node="5XHLjGSylqk" resolve="wi" />
                           </node>
                           <node concept="liA8E" id="5XHLjGSym0M" role="2OqNvi">
-                            <ref role="37wK5l" to="dau9:~WriteInstruction.getValue():java.lang.Object" resolve="getValue" />
+                            <ref role="37wK5l" to="dau9:~WriteInstruction.getValue()" resolve="getValue" />
                           </node>
                         </node>
                       </node>
@@ -609,7 +609,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="5XHLjGSyktm" role="2OqNvi">
-                        <ref role="37wK5l" to="dau9:~WriteInstruction.getVariable():java.lang.Object" resolve="getVariable" />
+                        <ref role="37wK5l" to="dau9:~WriteInstruction.getVariable()" resolve="getVariable" />
                       </node>
                     </node>
                   </node>
@@ -689,7 +689,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="oBhJZChy2q" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="oBhJZCh_yu" role="37wK5m">
                 <node concept="Xl_RD" id="oBhJZCh_$1" role="3uHU7B">
                   <property role="Xl_RC" value="---- " />
@@ -1250,7 +1250,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2sRGoU610n3" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="33ny:~Map.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="2sRGoU610Qu" role="37wK5m">
                 <ref role="3cqZAo" node="5XHLjGSxw5c" resolve="vars2PossibleValues" />
               </node>
@@ -1277,7 +1277,7 @@
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="oBhJZC7lLR" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
+              <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String)" resolve="print" />
               <node concept="3cpWs3" id="oBhJZCawAs" role="37wK5m">
                 <node concept="Xl_RD" id="oBhJZCawNc" role="3uHU7w">
                   <property role="Xl_RC" value=" : " />
@@ -1322,7 +1322,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="oBhJZCax0k" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String)" resolve="print" />
                   <node concept="3cpWs3" id="oBhJZCaOrL" role="37wK5m">
                     <node concept="Xl_RD" id="oBhJZCaOxx" role="3uHU7w">
                       <property role="Xl_RC" value=", " />
@@ -1346,7 +1346,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="oBhJZCaOQz" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println():void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println()" resolve="println" />
             </node>
           </node>
         </node>
@@ -1373,7 +1373,7 @@
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="oBhJZChAOj" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="oBhJZChKvf" role="37wK5m">
                 <node concept="37vLTw" id="oBhJZChKCA" role="3uHU7w">
                   <ref role="3cqZAo" node="oBhJZChK52" resolve="msg" />
@@ -1413,7 +1413,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="oBhJZChDUb" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="oBhJZChDUc" role="37wK5m">
                 <property role="Xl_RC" value="---------------- VariableValuesMapping ------ DEBUG MAPPING &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n" />
               </node>
@@ -1482,7 +1482,7 @@
                         <ref role="3cqZAo" node="2sRGoU6foaJ" resolve="ri" />
                       </node>
                       <node concept="liA8E" id="2sRGoU6fpp1" role="2OqNvi">
-                        <ref role="37wK5l" to="dau9:~Instruction.getSource():java.lang.Object" resolve="getSource" />
+                        <ref role="37wK5l" to="dau9:~Instruction.getSource()" resolve="getSource" />
                       </node>
                     </node>
                   </node>
@@ -1509,7 +1509,7 @@
               <ref role="3cqZAo" node="2sRGoU6fnDr" resolve="program" />
             </node>
             <node concept="liA8E" id="2sRGoU6fobw" role="2OqNvi">
-              <ref role="37wK5l" to="1fjm:~Program.getInstructions():java.util.List" resolve="getInstructions" />
+              <ref role="37wK5l" to="1fjm:~Program.getInstructions()" resolve="getInstructions" />
             </node>
           </node>
         </node>

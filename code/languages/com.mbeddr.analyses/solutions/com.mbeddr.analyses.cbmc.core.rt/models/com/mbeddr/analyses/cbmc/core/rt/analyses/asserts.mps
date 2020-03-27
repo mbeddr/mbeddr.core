@@ -250,7 +250,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 </node>
                 <node concept="liA8E" id="42G5eOpSOWl" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="42G5eOpSOWm" role="37wK5m">
                     <node concept="3cpWs3" id="42G5eOpSOWn" role="3uHU7B">
                       <node concept="Xl_RD" id="42G5eOpSOWo" role="3uHU7w">
@@ -265,7 +265,7 @@
                             <ref role="3VsUkX" node="3x0R1LJ5Cp2" resolve="AssertionsAnalyzer" />
                           </node>
                           <node concept="liA8E" id="42G5eOpSOWt" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                            <ref role="37wK5l" to="wyt6:~Class.getSimpleName()" resolve="getSimpleName" />
                           </node>
                         </node>
                       </node>
@@ -396,7 +396,7 @@
               <ref role="3cqZAo" node="3x0R1LJ5Cpv" resolve="userFriendlyMessage" />
             </node>
             <node concept="liA8E" id="6kQ$1ab4AiX" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
               <node concept="37vLTw" id="6kQ$1ab4AmQ" role="37wK5m">
                 <ref role="3cqZAo" to="xiaw:6kQ$1ab4gdy" resolve="NO_VC_FOUND_MESSAGE" />
               </node>
@@ -427,7 +427,7 @@
                       <node concept="2yIwOk" id="71B0VArSg_9" role="2OqNvi" />
                     </node>
                     <node concept="liA8E" id="71B0VArSg_a" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                     </node>
                   </node>
                 </node>

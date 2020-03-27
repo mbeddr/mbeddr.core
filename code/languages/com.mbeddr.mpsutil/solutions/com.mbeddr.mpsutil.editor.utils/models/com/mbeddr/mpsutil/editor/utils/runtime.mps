@@ -138,7 +138,7 @@
               <ref role="3cqZAo" node="4gGXGcLQIkM" resolve="editorContext" />
             </node>
             <node concept="liA8E" id="5T3_DgSXhhP" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+              <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
             </node>
           </node>
         </node>
@@ -154,7 +154,7 @@
                 <ref role="3cqZAo" node="4gGXGcLQIkM" resolve="editorContext" />
               </node>
               <node concept="liA8E" id="4gGXGcLQIkg" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell()" resolve="getSelectedCell" />
               </node>
             </node>
           </node>
@@ -205,7 +205,7 @@
                 <ref role="3cqZAo" node="4gGXGcLQIks" resolve="editorCell" />
               </node>
               <node concept="liA8E" id="4gGXGcLQIkB" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~EditorCell_Basic.isErrorState():boolean" resolve="isErrorState" />
+                <ref role="37wK5l" to="g51k:~EditorCell_Basic.isErrorState()" resolve="isErrorState" />
               </node>
             </node>
           </node>
@@ -222,7 +222,7 @@
               <ref role="3cqZAo" node="4gGXGcLQIks" resolve="editorCell" />
             </node>
             <node concept="liA8E" id="4gGXGcLQIkJ" role="2OqNvi">
-              <ref role="37wK5l" to="g51k:~EditorCell_Label.getRenderedText():java.lang.String" resolve="getRenderedText" />
+              <ref role="37wK5l" to="g51k:~EditorCell_Label.getRenderedText()" resolve="getRenderedText" />
             </node>
           </node>
         </node>
@@ -250,7 +250,7 @@
               <ref role="3uigEE" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
             </node>
             <node concept="2YIFZM" id="5T3_DgSXdRm" role="33vP2m">
-              <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project):com.intellij.openapi.fileEditor.FileEditorManager" resolve="getInstance" />
+              <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
               <ref role="1Pybhc" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
               <node concept="37vLTw" id="5T3_DgSXdRn" role="37wK5m">
                 <ref role="3cqZAo" node="5T3_DgSXdBS" resolve="ideaProject" />
@@ -273,7 +273,7 @@
                     <ref role="3cqZAo" node="5T3_DgSXdRl" resolve="fileEditorManager" />
                   </node>
                   <node concept="liA8E" id="5T3_DgSXfpk" role="2OqNvi">
-                    <ref role="37wK5l" to="iwsx:~FileEditorManager.getAllEditors():com.intellij.openapi.fileEditor.FileEditor[]" resolve="getAllEditors" />
+                    <ref role="37wK5l" to="iwsx:~FileEditorManager.getAllEditors()" resolve="getAllEditors" />
                   </node>
                 </node>
                 <node concept="39bAoz" id="5T3_DgSXfpl" role="2OqNvi" />
@@ -301,7 +301,7 @@
                         <ref role="3cqZAo" node="5T3_DgSXiuI" resolve="it" />
                       </node>
                       <node concept="liA8E" id="5T3_DgSXjLy" role="2OqNvi">
-                        <ref role="37wK5l" to="k3nr:~MPSFileNodeEditor.getNodeEditor():jetbrains.mps.openapi.editor.Editor" resolve="getNodeEditor" />
+                        <ref role="37wK5l" to="k3nr:~MPSFileNodeEditor.getNodeEditor()" resolve="getNodeEditor" />
                       </node>
                     </node>
                   </node>
@@ -352,7 +352,7 @@
                         <ref role="3cqZAo" node="5T3_DgSXkFp" resolve="it" />
                       </node>
                       <node concept="liA8E" id="5T3_DgSXkWu" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~Editor.getCurrentEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getCurrentEditorComponent" />
+                        <ref role="37wK5l" to="cj4x:~Editor.getCurrentEditorComponent()" resolve="getCurrentEditorComponent" />
                       </node>
                     </node>
                   </node>

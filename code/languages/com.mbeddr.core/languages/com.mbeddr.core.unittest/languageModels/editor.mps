@@ -2,8 +2,8 @@
 <model ref="r:f1c0ef54-05cb-4745-9566-9bb6676c1165(com.mbeddr.core.unittest.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -859,6 +859,9 @@
             <node concept="3clFbS" id="6Iyv0noEGKC" role="2VODD2">
               <node concept="3clFbF" id="3HrJbrHLTQN" role="3cqZAp">
                 <node concept="2OqwBi" id="3HrJbrHLSt5" role="3clFbG">
+                  <node concept="liA8E" id="3HrJbrHLTmk" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias()" resolve="getConceptAlias" />
+                  </node>
                   <node concept="2OqwBi" id="3IOp39j2n_9" role="2Oq$k0">
                     <node concept="2OqwBi" id="3IOp39j2n_a" role="2Oq$k0">
                       <node concept="pncrf" id="3IOp39j2n_b" role="2Oq$k0" />
@@ -867,9 +870,6 @@
                     <node concept="2qgKlT" id="3IOp39j2n_d" role="2OqNvi">
                       <ref role="37wK5l" to="rmg4:5HxjapwgqL$" resolve="getBinop" />
                     </node>
-                  </node>
-                  <node concept="liA8E" id="3HrJbrHLTmk" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias():java.lang.String" resolve="getConceptAlias" />
                   </node>
                 </node>
               </node>

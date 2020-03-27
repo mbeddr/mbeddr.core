@@ -246,7 +246,7 @@
             <ref role="rqRob" to="cetu:4r1mNB_wZt0" resolve="left" />
           </node>
           <node concept="liA8E" id="5TH8iQlOc2V" role="2OqNvi">
-            <ref role="37wK5l" to="xlxw:~BigInteger.divide(java.math.BigInteger):java.math.BigInteger" resolve="divide" />
+            <ref role="37wK5l" to="xlxw:~BigInteger.divide(java.math.BigInteger)" resolve="divide" />
             <node concept="rqRoa" id="5TH8iQlOccX" role="37wK5m">
               <ref role="rqRob" to="cetu:4r1mNB_wZtB" resolve="right" />
             </node>
@@ -363,14 +363,14 @@
                           <node concept="2TvoDZ" id="5TH8iQlOcs5" role="3cyPjY">
                             <ref role="2T0_ac" to="cetu:PWcNB4VG_6" resolve="body" />
                             <node concept="2YIFZM" id="5TH8iQlOcs6" role="2T0_7g">
-                              <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                              <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
                               <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                               <node concept="37vLTw" id="5TH8iQlOcs7" role="37wK5m">
                                 <ref role="3cqZAo" node="5TH8iQlOcsm" resolve="i" />
                               </node>
                             </node>
                             <node concept="2YIFZM" id="5TH8iQlOcs8" role="2T0_a3">
-                              <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                              <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
                               <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                               <node concept="oxGPV" id="5TH8iQlOcs9" role="37wK5m" />
                             </node>
@@ -468,7 +468,7 @@
                   <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
                 </node>
                 <node concept="2YIFZM" id="5TH8iQlOiEm" role="33vP2m">
-                  <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
+                  <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
                   <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
                   <node concept="3cmrfG" id="5TH8iQlOiE_" role="37wK5m">
                     <property role="3cmrfH" value="0" />
@@ -535,20 +535,20 @@
                           <ref role="3cqZAo" node="5TH8iQlOfUg" resolve="result" />
                         </node>
                         <node concept="liA8E" id="5TH8iQlOruo" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigInteger.add(java.math.BigInteger):java.math.BigInteger" resolve="add" />
+                          <ref role="37wK5l" to="xlxw:~BigInteger.add(java.math.BigInteger)" resolve="add" />
                           <node concept="1eOMI4" id="5TH8iQlOrAx" role="37wK5m">
                             <node concept="10QFUN" id="5TH8iQlOrAy" role="1eOMHV">
                               <node concept="2TvoDZ" id="5TH8iQlOrAs" role="10QFUP">
                                 <ref role="2T0_ac" to="cetu:PWcNB4VG_6" resolve="body" />
                                 <node concept="2YIFZM" id="5TH8iQlOrAt" role="2T0_7g">
                                   <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-                                  <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                                  <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
                                   <node concept="37vLTw" id="5TH8iQlOrAu" role="37wK5m">
                                     <ref role="3cqZAo" node="5TH8iQlOdnd" resolve="i" />
                                   </node>
                                 </node>
                                 <node concept="2YIFZM" id="5TH8iQlOrAv" role="2T0_a3">
-                                  <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                                  <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
                                   <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                                   <node concept="oxGPV" id="5TH8iQlOrAw" role="37wK5m" />
                                 </node>
@@ -602,7 +602,7 @@
                     <ref role="3cqZAo" node="5TH8iQlOdnd" resolve="i" />
                   </node>
                   <node concept="liA8E" id="5TH8iQlOoN0" role="2OqNvi">
-                    <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger):int" resolve="compareTo" />
+                    <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
                     <node concept="37vLTw" id="5TH8iQlOoSB" role="37wK5m">
                       <ref role="3cqZAo" node="5TH8iQlOdmz" resolve="uupper" />
                     </node>
@@ -614,7 +614,7 @@
                   <ref role="3cqZAo" node="5TH8iQlOdnd" resolve="i" />
                 </node>
                 <node concept="liA8E" id="5TH8iQlOq8F" role="2OqNvi">
-                  <ref role="37wK5l" to="xlxw:~BigInteger.add(java.math.BigInteger):java.math.BigInteger" resolve="add" />
+                  <ref role="37wK5l" to="xlxw:~BigInteger.add(java.math.BigInteger)" resolve="add" />
                   <node concept="10M0yZ" id="5TH8iQlOqdY" role="37wK5m">
                     <ref role="1PxDUh" to="xlxw:~BigInteger" resolve="BigInteger" />
                     <ref role="3cqZAo" to="xlxw:~BigInteger.ONE" resolve="ONE" />
@@ -720,14 +720,14 @@
                           <node concept="2TvoDZ" id="4mmKsQ9deLJ" role="3cyPjY">
                             <ref role="2T0_ac" to="cetu:PWcNB4VG_6" resolve="body" />
                             <node concept="2YIFZM" id="4mmKsQ9deLK" role="2T0_7g">
-                              <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                              <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
                               <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                               <node concept="37vLTw" id="4mmKsQ9deLL" role="37wK5m">
                                 <ref role="3cqZAo" node="6b0x7YlDdXc" resolve="i" />
                               </node>
                             </node>
                             <node concept="2YIFZM" id="4mmKsQ9deLM" role="2T0_a3">
-                              <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                              <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
                               <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                               <node concept="oxGPV" id="4mmKsQ9deLN" role="37wK5m" />
                             </node>
@@ -849,7 +849,7 @@
       <ref role="qq9wM" to="cetu:4r1mNB_lBUT" resolve="SqrtExpression" />
       <node concept="3vetai" id="6b0x7YlDivh" role="3vQZUl">
         <node concept="2YIFZM" id="6b0x7YlDiwf" role="3vdyny">
-          <ref role="37wK5l" to="wyt6:~Math.sqrt(double):double" resolve="sqrt" />
+          <ref role="37wK5l" to="wyt6:~Math.sqrt(double)" resolve="sqrt" />
           <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
           <node concept="rqRoa" id="6b0x7YlDiwQ" role="37wK5m">
             <ref role="rqRob" to="cetu:4r1mNB_lBZi" resolve="expression" />
@@ -868,7 +868,7 @@
       <ref role="qq9wM" to="cetu:4r1mNB_q7_Q" resolve="LogarithmExpression" />
       <node concept="3vetai" id="1ESicmRi_lo" role="3vQZUl">
         <node concept="2YIFZM" id="1ESicmRi_vP" role="3vdyny">
-          <ref role="37wK5l" to="wyt6:~Math.log(double):double" resolve="log" />
+          <ref role="37wK5l" to="wyt6:~Math.log(double)" resolve="log" />
           <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
           <node concept="rqRoa" id="1ESicmRi_ws" role="37wK5m">
             <ref role="rqRob" to="cetu:4r1mNB_q7Br" resolve="logOf" />

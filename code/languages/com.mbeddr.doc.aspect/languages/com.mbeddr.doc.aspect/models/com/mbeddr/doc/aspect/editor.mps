@@ -92,7 +92,6 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
       </concept>
@@ -335,11 +334,11 @@
                                       <ref role="3cqZAo" node="agjuZp43cy" resolve="context" />
                                     </node>
                                     <node concept="liA8E" id="agjuZp2G5M" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="agjuZp2GGF" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorComponent.scrollToNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="scrollToNode" />
+                                    <ref role="37wK5l" to="cj4x:~EditorComponent.scrollToNode(org.jetbrains.mps.openapi.model.SNode)" resolve="scrollToNode" />
                                     <node concept="2OqwBi" id="agjuZp8ooZ" role="37wK5m">
                                       <node concept="37vLTw" id="agjuZp8op0" role="2Oq$k0">
                                         <ref role="3cqZAo" node="agjuZp5sS5" resolve="targetNode" />
@@ -356,7 +355,7 @@
                           <node concept="2OqwBi" id="6m8qo2wujTq" role="ukAjM">
                             <node concept="1Q80Hx" id="6m8qo2wujMq" role="2Oq$k0" />
                             <node concept="liA8E" id="6m8qo2wuk1M" role="2OqNvi">
-                              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                             </node>
                           </node>
                         </node>
@@ -369,30 +368,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2UZ9O9PWCif">
-    <ref role="1XX52x" to="748g:2UZ9O9PWChM" resolve="SampleInstanceWord" />
-    <node concept="3EZMnI" id="2UZ9O9PWCik" role="2wV5jI">
-      <node concept="2iRfu4" id="2UZ9O9PWCil" role="2iSdaV" />
-      <node concept="3F0ifn" id="2UZ9O9PWCih" role="3EZMnx">
-        <property role="3F0ifm" value="\sample{" />
-      </node>
-      <node concept="3F1sOY" id="2UZ9O9PXtW8" role="3EZMnx">
-        <ref role="1NtTu8" to="748g:2UZ9O9PWChP" resolve="sampleInstance" />
-      </node>
-      <node concept="3F0ifn" id="2UZ9O9PXuhA" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="1UEcrCk89OW">
-    <ref role="1XX52x" to="748g:2UZ9O9PWChM" resolve="SampleInstanceWord" />
-    <node concept="3F1sOY" id="1UEcrCk89Pe" role="2wV5jI">
-      <ref role="1NtTu8" to="748g:2UZ9O9PWChP" resolve="sampleInstance" />
-    </node>
-    <node concept="2aJ2om" id="1UEcrCk8ndc" role="CpUAK">
-      <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
   </node>
   <node concept="24kQdi" id="1o6EjwiSKwf">

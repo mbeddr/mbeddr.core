@@ -257,7 +257,7 @@
       </node>
       <node concept="2YIFZM" id="7836$RyVZuA" role="33vP2m">
         <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
+        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
         <node concept="3VsKOn" id="7836$RyVWjN" role="37wK5m">
           <ref role="3VsUkX" node="7836$RyVVLX" resolve="MbeddrTutorialExtractor" />
         </node>
@@ -286,10 +286,10 @@
               <node concept="2OqwBi" id="7836$RyVWjX" role="10QFUP">
                 <node concept="2YIFZM" id="7836$RyW1D1" role="2Oq$k0">
                   <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-                  <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+                  <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
                 </node>
                 <node concept="liA8E" id="7836$RyVWjZ" role="2OqNvi">
-                  <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+                  <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
                   <node concept="3VsKOn" id="7836$RyVWk1" role="37wK5m">
                     <ref role="3VsUkX" node="7836$RyVWdp" resolve="SamplesInfo" />
                   </node>
@@ -409,7 +409,7 @@
         <node concept="3clFbJ" id="7836$RyVWkL" role="3cqZAp">
           <node concept="2YIFZM" id="7836$RyW7vv" role="3clFbw">
             <ref role="1Pybhc" to="fyhk:~RuntimeFlags" resolve="RuntimeFlags" />
-            <ref role="37wK5l" to="fyhk:~RuntimeFlags.isTestMode():boolean" resolve="isTestMode" />
+            <ref role="37wK5l" to="fyhk:~RuntimeFlags.isTestMode()" resolve="isTestMode" />
           </node>
           <node concept="3clFbS" id="7836$RyVWkO" role="3clFbx">
             <node concept="3cpWs6" id="7836$RyVWkN" role="3cqZAp" />
@@ -436,7 +436,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="35jXaZBMDBX" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
               </node>
             </node>
           </node>
@@ -517,7 +517,7 @@
                 <ref role="3cqZAo" node="7836$RyVWka" resolve="myApplicationInfo" />
               </node>
               <node concept="liA8E" id="7836$RyVWpy" role="2OqNvi">
-                <ref role="37wK5l" to="bd8o:~ApplicationInfo.getBuild():com.intellij.openapi.util.BuildNumber" resolve="getBuild" />
+                <ref role="37wK5l" to="bd8o:~ApplicationInfo.getBuild()" resolve="getBuild" />
               </node>
             </node>
           </node>
@@ -532,7 +532,7 @@
                 <ref role="3cqZAo" node="7836$RyVWlg" resolve="buildNumber" />
               </node>
               <node concept="liA8E" id="7836$RyVWpB" role="2OqNvi">
-                <ref role="37wK5l" to="zn9m:~BuildNumber.asString():java.lang.String" resolve="asString" />
+                <ref role="37wK5l" to="zn9m:~BuildNumber.asString()" resolve="asString" />
               </node>
             </node>
           </node>
@@ -545,7 +545,7 @@
                   <ref role="3cqZAo" node="7836$RyVWlk" resolve="currentBuildNumberString" />
                 </node>
                 <node concept="liA8E" id="7836$RyVWpG" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                   <node concept="Xl_RD" id="7836$RyVWls" role="37wK5m">
                     <property role="Xl_RC" value="MPS[-\\.\\d]*.*" />
                   </node>
@@ -554,7 +554,7 @@
             </node>
             <node concept="2YIFZM" id="7836$RyW7yk" role="3uHU7w">
               <ref role="1Pybhc" to="fyhk:~InternalFlag" resolve="InternalFlag" />
-              <ref role="37wK5l" to="fyhk:~InternalFlag.isInternalMode():boolean" resolve="isInternalMode" />
+              <ref role="37wK5l" to="fyhk:~InternalFlag.isInternalMode()" resolve="isInternalMode" />
             </node>
           </node>
           <node concept="3clFbS" id="7836$RyVWlv" role="3clFbx">
@@ -582,7 +582,7 @@
               <ref role="3cqZAo" node="7836$RyVWlg" resolve="buildNumber" />
             </node>
             <node concept="liA8E" id="7836$RyVWpQ" role="2OqNvi">
-              <ref role="37wK5l" to="zn9m:~BuildNumber.getBuildNumber():int" resolve="getBuildNumber" />
+              <ref role="37wK5l" to="zn9m:~BuildNumber.getBuildNumber()" resolve="getBuildNumber" />
             </node>
           </node>
         </node>
@@ -655,7 +655,7 @@
                 <ref role="3cqZAo" node="7836$RyVWka" resolve="myApplicationInfo" />
               </node>
               <node concept="liA8E" id="7836$RyVWqa" role="2OqNvi">
-                <ref role="37wK5l" to="bd8o:~ApplicationInfo.getMajorVersion():java.lang.String" resolve="getMajorVersion" />
+                <ref role="37wK5l" to="bd8o:~ApplicationInfo.getMajorVersion()" resolve="getMajorVersion" />
               </node>
             </node>
           </node>
@@ -678,7 +678,7 @@
                 <ref role="3cqZAo" node="7836$RyVWka" resolve="myApplicationInfo" />
               </node>
               <node concept="liA8E" id="7836$RyVWqf" role="2OqNvi">
-                <ref role="37wK5l" to="bd8o:~ApplicationInfo.getMinorVersion():java.lang.String" resolve="getMinorVersion" />
+                <ref role="37wK5l" to="bd8o:~ApplicationInfo.getMinorVersion()" resolve="getMinorVersion" />
               </node>
             </node>
           </node>
@@ -722,7 +722,7 @@
               <node concept="3cpWs3" id="7836$RyVWmn" role="3uHU7B">
                 <node concept="3cpWs3" id="7836$RyVWmo" role="3uHU7B">
                   <node concept="2YIFZM" id="7836$RyVWq3" role="3uHU7B">
-                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                     <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                     <node concept="Xl_RD" id="7836$RyVWmq" role="37wK5m">
                       <property role="Xl_RC" value="user.home" />
@@ -765,7 +765,7 @@
               <node concept="3cpWs3" id="7836$RyVWmZ" role="3uHU7B">
                 <node concept="2YIFZM" id="7836$RyW4Ij" role="3uHU7B">
                   <ref role="1Pybhc" to="bd8o:~PathManager" resolve="PathManager" />
-                  <ref role="37wK5l" to="bd8o:~PathManager.getHomePath():java.lang.String" resolve="getHomePath" />
+                  <ref role="37wK5l" to="bd8o:~PathManager.getHomePath()" resolve="getHomePath" />
                 </node>
                 <node concept="10M0yZ" id="7836$RyWanP" role="3uHU7w">
                   <ref role="1PxDUh" to="guwi:~File" resolve="File" />
@@ -811,7 +811,7 @@
               <ref role="3cqZAo" node="7836$RyVWn7" resolve="samplesZipFile" />
             </node>
             <node concept="liA8E" id="7836$RyVWqs" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
             </node>
           </node>
           <node concept="3clFbS" id="7836$RyVWnj" role="3clFbx">
@@ -838,7 +838,7 @@
                   <ref role="3cqZAo" node="7836$RyVWnk" resolve="samplesDir" />
                 </node>
                 <node concept="liA8E" id="7836$RyVWqx" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                  <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                 </node>
               </node>
               <node concept="9aQIb" id="7836$RyVWo5" role="9aQIa">
@@ -857,7 +857,7 @@
                 <node concept="3clFbF" id="7836$RyVWnt" role="3cqZAp">
                   <node concept="2YIFZM" id="7836$RyWbMe" role="3clFbG">
                     <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
-                    <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
+                    <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
                     <node concept="2ShNRf" id="7836$RyVWnv" role="37wK5m">
                       <node concept="YeOm9" id="7836$RyVWnw" role="2ShVmc">
                         <node concept="1Y3b0j" id="7836$RyVWnx" role="YeSDq">
@@ -882,7 +882,7 @@
                                   <node concept="10Oyi0" id="7836$RyVWnC" role="1tU5fm" />
                                   <node concept="2YIFZM" id="7836$RyWBVt" role="33vP2m">
                                     <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                                    <ref role="37wK5l" to="jkm4:~Messages.showYesNoDialog(java.lang.String,java.lang.String,javax.swing.Icon):int" resolve="showYesNoDialog" />
+                                    <ref role="37wK5l" to="jkm4:~Messages.showYesNoDialog(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showYesNoDialog" />
                                     <node concept="3cpWs3" id="7836$RyVWnE" role="37wK5m">
                                       <node concept="3cpWs3" id="7836$RyVWnF" role="3uHU7B">
                                         <node concept="3cpWs3" id="7836$RyVWnG" role="3uHU7B">
@@ -904,11 +904,11 @@
                                               <ref role="3cqZAo" node="7836$RyVWka" resolve="myApplicationInfo" />
                                             </node>
                                             <node concept="liA8E" id="7836$RyVWqK" role="2OqNvi">
-                                              <ref role="37wK5l" to="bd8o:~ApplicationInfo.getBuild():com.intellij.openapi.util.BuildNumber" resolve="getBuild" />
+                                              <ref role="37wK5l" to="bd8o:~ApplicationInfo.getBuild()" resolve="getBuild" />
                                             </node>
                                           </node>
                                           <node concept="liA8E" id="7836$RyVWnN" role="2OqNvi">
-                                            <ref role="37wK5l" to="zn9m:~BuildNumber.asString():java.lang.String" resolve="asString" />
+                                            <ref role="37wK5l" to="zn9m:~BuildNumber.asString()" resolve="asString" />
                                           </node>
                                         </node>
                                       </node>
@@ -921,7 +921,7 @@
                                     </node>
                                     <node concept="2YIFZM" id="7836$RyWE$5" role="37wK5m">
                                       <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                                      <ref role="37wK5l" to="jkm4:~Messages.getQuestionIcon():javax.swing.Icon" resolve="getQuestionIcon" />
+                                      <ref role="37wK5l" to="jkm4:~Messages.getQuestionIcon()" resolve="getQuestionIcon" />
                                     </node>
                                   </node>
                                 </node>
@@ -939,7 +939,7 @@
                                   <node concept="3clFbF" id="7836$RyVWnX" role="3cqZAp">
                                     <node concept="2YIFZM" id="7836$RyWdvm" role="3clFbG">
                                       <ref role="1Pybhc" to="snbe:~FileUtil" resolve="FileUtil" />
-                                      <ref role="37wK5l" to="snbe:~FileUtil.delete(java.io.File):boolean" resolve="delete" />
+                                      <ref role="37wK5l" to="snbe:~FileUtil.delete(java.io.File)" resolve="delete" />
                                       <node concept="37vLTw" id="7836$RyVWnZ" role="37wK5m">
                                         <ref role="3cqZAo" node="7836$RyVWnk" resolve="samplesDir" />
                                       </node>
@@ -1008,7 +1008,7 @@
                     <ref role="3cqZAo" node="7836$RyVWjJ" resolve="LOG" />
                   </node>
                   <node concept="liA8E" id="7836$RyVWr4" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable):void" resolve="error" />
+                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
                     <node concept="10Nm6u" id="7836$RyVWp7" role="37wK5m" />
                     <node concept="37vLTw" id="7836$RyVWp8" role="37wK5m">
                       <ref role="3cqZAo" node="7836$RyVWp0" resolve="e" />
@@ -1035,7 +1035,7 @@
                 </node>
                 <node concept="2YIFZM" id="7836$RyWdya" role="33vP2m">
                   <ref role="1Pybhc" to="snbe:~FileUtil" resolve="FileUtil" />
-                  <ref role="37wK5l" to="snbe:~FileUtil.createTempDirectory(java.lang.String,java.lang.String):java.io.File" resolve="createTempDirectory" />
+                  <ref role="37wK5l" to="snbe:~FileUtil.createTempDirectory(java.lang.String,java.lang.String)" resolve="createTempDirectory" />
                   <node concept="37vLTw" id="35jXaZBN1kN" role="37wK5m">
                     <ref role="3cqZAo" node="7836$RyVWjP" resolve="SAMPLES_IN_MPS_HOME_DIR" />
                   </node>
@@ -1048,7 +1048,7 @@
             <node concept="3clFbF" id="7836$RyVWos" role="3cqZAp">
               <node concept="2YIFZM" id="7836$RyW$ER" role="3clFbG">
                 <ref role="1Pybhc" to="g1go:~ZipUtil" resolve="ZipUtil" />
-                <ref role="37wK5l" to="g1go:~ZipUtil.extract(java.io.File,java.io.File,java.io.FilenameFilter):void" resolve="extract" />
+                <ref role="37wK5l" to="g1go:~ZipUtil.extract(java.io.File,java.io.File,java.io.FilenameFilter)" resolve="extract" />
                 <node concept="37vLTw" id="35jXaZBN1gQ" role="37wK5m">
                   <ref role="3cqZAo" node="7836$RyVWoh" resolve="samplesZipFile" />
                 </node>
@@ -1092,7 +1092,7 @@
                 <node concept="3fqX7Q" id="7836$RyVWoL" role="3uHU7B">
                   <node concept="2YIFZM" id="7836$RyWdt8" role="3fr31v">
                     <ref role="1Pybhc" to="snbe:~FileUtil" resolve="FileUtil" />
-                    <ref role="37wK5l" to="snbe:~FileUtil.moveDirWithContent(java.io.File,java.io.File):boolean" resolve="moveDirWithContent" />
+                    <ref role="37wK5l" to="snbe:~FileUtil.moveDirWithContent(java.io.File,java.io.File)" resolve="moveDirWithContent" />
                     <node concept="37vLTw" id="7836$RyVWoN" role="37wK5m">
                       <ref role="3cqZAo" node="7836$RyVWox" resolve="from" />
                     </node>
@@ -1107,7 +1107,7 @@
                       <ref role="3cqZAo" node="7836$RyVWoE" resolve="to" />
                     </node>
                     <node concept="liA8E" id="7836$RyVWrh" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                      <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                     </node>
                   </node>
                 </node>
@@ -1116,7 +1116,7 @@
                 <node concept="3clFbF" id="7836$RyVWoT" role="3cqZAp">
                   <node concept="2YIFZM" id="7836$RyWdzd" role="3clFbG">
                     <ref role="1Pybhc" to="snbe:~FileUtil" resolve="FileUtil" />
-                    <ref role="37wK5l" to="snbe:~FileUtil.copyDir(java.io.File,java.io.File):void" resolve="copyDir" />
+                    <ref role="37wK5l" to="snbe:~FileUtil.copyDir(java.io.File,java.io.File)" resolve="copyDir" />
                     <node concept="37vLTw" id="7836$RyVWoV" role="37wK5m">
                       <ref role="3cqZAo" node="7836$RyVWox" resolve="from" />
                     </node>
@@ -1130,7 +1130,7 @@
             <node concept="3clFbF" id="7836$RyVWoX" role="3cqZAp">
               <node concept="2YIFZM" id="7836$RyWd$l" role="3clFbG">
                 <ref role="1Pybhc" to="snbe:~FileUtil" resolve="FileUtil" />
-                <ref role="37wK5l" to="snbe:~FileUtil.delete(java.io.File):boolean" resolve="delete" />
+                <ref role="37wK5l" to="snbe:~FileUtil.delete(java.io.File)" resolve="delete" />
                 <node concept="37vLTw" id="7836$RyVWoZ" role="37wK5m">
                   <ref role="3cqZAo" node="7836$RyVWom" resolve="tmpDir" />
                 </node>
@@ -1229,12 +1229,12 @@
         <node concept="3clFbF" id="7836$RyWV_Q" role="3cqZAp">
           <node concept="2OqwBi" id="7836$RyWVAO" role="3clFbG">
             <node concept="1rXfSq" id="7836$RyWV_P" role="2Oq$k0">
-              <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getTemplatePresentation" />
+              <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
             </node>
             <node concept="liA8E" id="7836$RyWVEg" role="2OqNvi">
-              <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon):void" resolve="setIcon" />
+              <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon)" resolve="setIcon" />
               <node concept="2YIFZM" id="2DqKt65mJ0O" role="37wK5m">
-                <ref role="37wK5l" to="zn9m:~IconLoader.getIcon(java.lang.String):javax.swing.Icon" resolve="getIcon" />
+                <ref role="37wK5l" to="zn9m:~IconLoader.getIcon(java.lang.String)" resolve="getIcon" />
                 <ref role="1Pybhc" to="zn9m:~IconLoader" resolve="IconLoader" />
                 <node concept="Xl_RD" id="2DqKt65mJ4l" role="37wK5m">
                   <property role="Xl_RC" value="/mbeddr_16.png" />
@@ -1290,7 +1290,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="7836$RyWXjP" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
               </node>
             </node>
           </node>
@@ -1321,13 +1321,13 @@
                 <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
               </node>
               <node concept="liA8E" id="7836$RyWXlv" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
+                <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext)" resolve="getData" />
                 <node concept="2OqwBi" id="7836$RyWXly" role="37wK5m">
                   <node concept="37vLTw" id="7836$RyX20S" role="2Oq$k0">
                     <ref role="3cqZAo" node="7836$RyWXhL" resolve="event" />
                   </node>
                   <node concept="liA8E" id="7836$RyWXlz" role="2OqNvi">
-                    <ref role="37wK5l" to="qkt:~AnActionEvent.getDataContext():com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
+                    <ref role="37wK5l" to="qkt:~AnActionEvent.getDataContext()" resolve="getDataContext" />
                   </node>
                 </node>
               </node>
@@ -1341,7 +1341,7 @@
             <node concept="17QB3L" id="FAWk6GbR5L" role="1tU5fm" />
             <node concept="2YIFZM" id="7836$RyWXlD" role="33vP2m">
               <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
               <node concept="Xl_RD" id="7836$RyWXkh" role="37wK5m">
                 <property role="Xl_RC" value="user.home" />
               </node>
@@ -1365,10 +1365,10 @@
                 <node concept="2OqwBi" id="2DqKt65mrZL" role="33vP2m">
                   <node concept="2YIFZM" id="2DqKt65mrZM" role="2Oq$k0">
                     <ref role="1Pybhc" to="jlff:~LocalFileSystem" resolve="LocalFileSystem" />
-                    <ref role="37wK5l" to="jlff:~LocalFileSystem.getInstance():com.intellij.openapi.vfs.LocalFileSystem" resolve="getInstance" />
+                    <ref role="37wK5l" to="jlff:~LocalFileSystem.getInstance()" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="2DqKt65mrZN" role="2OqNvi">
-                    <ref role="37wK5l" to="jlff:~LocalFileSystem.findFileByIoFile(java.io.File):com.intellij.openapi.vfs.VirtualFile" resolve="findFileByIoFile" />
+                    <ref role="37wK5l" to="jlff:~LocalFileSystem.findFileByIoFile(java.io.File)" resolve="findFileByIoFile" />
                     <node concept="2ShNRf" id="2DqKt65mrZO" role="37wK5m">
                       <node concept="1pGfFk" id="2DqKt65mrZP" role="2ShVmc">
                         <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
@@ -1399,7 +1399,7 @@
                         <ref role="3cqZAo" node="2DqKt65mrZJ" resolve="tutorialDir" />
                       </node>
                       <node concept="liA8E" id="7836$RyWXmc" role="2OqNvi">
-                        <ref role="37wK5l" to="jlff:~VirtualFile.getPath():java.lang.String" resolve="getPath" />
+                        <ref role="37wK5l" to="jlff:~VirtualFile.getPath()" resolve="getPath" />
                       </node>
                     </node>
                   </node>
@@ -1413,7 +1413,7 @@
                     </node>
                     <node concept="2YIFZM" id="7836$RyX1S3" role="33vP2m">
                       <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
-                      <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.lang.String,com.intellij.openapi.project.Project,boolean):com.intellij.openapi.project.Project" resolve="openProject" />
+                      <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.lang.String,com.intellij.openapi.project.Project,boolean)" resolve="openProject" />
                       <node concept="37vLTw" id="7836$RyWXkW" role="37wK5m">
                         <ref role="3cqZAo" node="7836$RyWXkO" resolve="filePath" />
                       </node>
@@ -1438,19 +1438,19 @@
                       <node concept="2OqwBi" id="7836$RyWXl6" role="3clFbG">
                         <node concept="2YIFZM" id="7836$RyXbKo" role="2Oq$k0">
                           <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
-                          <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project):com.intellij.platform.ProjectBaseDirectory" resolve="getInstance" />
+                          <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
                           <node concept="37vLTw" id="7836$RyWXl8" role="37wK5m">
                             <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
                           </node>
                         </node>
                         <node concept="liA8E" id="7836$RyWXl9" role="2OqNvi">
-                          <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.setBaseDir(com.intellij.openapi.vfs.VirtualFile):void" resolve="setBaseDir" />
+                          <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.setBaseDir(com.intellij.openapi.vfs.VirtualFile)" resolve="setBaseDir" />
                           <node concept="2OqwBi" id="7836$RyWXmh" role="37wK5m">
                             <node concept="37vLTw" id="7836$RyWXmg" role="2Oq$k0">
                               <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
                             </node>
                             <node concept="liA8E" id="7836$RyWXmi" role="2OqNvi">
-                              <ref role="37wK5l" to="4nm9:~Project.getBaseDir():com.intellij.openapi.vfs.VirtualFile" resolve="getBaseDir" />
+                              <ref role="37wK5l" to="4nm9:~Project.getBaseDir()" resolve="getBaseDir" />
                             </node>
                           </node>
                         </node>
@@ -1471,7 +1471,7 @@
                     <ref role="3cqZAo" node="2DqKt65mrZJ" resolve="tutorialDir" />
                   </node>
                   <node concept="liA8E" id="2DqKt65mteP" role="2OqNvi">
-                    <ref role="37wK5l" to="jlff:~VirtualFile.exists():boolean" resolve="exists" />
+                    <ref role="37wK5l" to="jlff:~VirtualFile.exists()" resolve="exists" />
                   </node>
                 </node>
               </node>

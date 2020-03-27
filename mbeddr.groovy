@@ -97,7 +97,7 @@ def runTest(gradleTask) {
 
     // The tests need an own environment since they can run on different nodes/OS with diffenrent tool paths
     def customEnv = setupEnvironment()
-    customEnv += ["PATH+CBMC_PATH=${curDir}/cbmc"]
+    customEnv += ["PATH+CBMC_PATH=${curDir}/cbmc", "LD_LIBRARY_PATH=/usr/bin"]
     withEnv(customEnv) {
         //checkout scm
         checkoutMbeddr()

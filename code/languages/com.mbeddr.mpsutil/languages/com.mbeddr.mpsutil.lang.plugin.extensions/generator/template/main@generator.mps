@@ -7,7 +7,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -634,7 +634,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="2BR5zyhGGDR" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                             <node concept="Xl_RD" id="2BR5zyhGGDS" role="37wK5m">
                               <property role="Xl_RC" value="adjustRegularGroups" />
                             </node>
@@ -797,7 +797,7 @@
         <node concept="3clFbS" id="2BR5zyhGM8s" role="3clF47">
           <node concept="3clFbF" id="2BR5zyhGMnb" role="3cqZAp">
             <node concept="1rXfSq" id="2BR5zyhGMn9" role="3clFbG">
-              <ref role="37wK5l" to="cddg:~BaseApplicationPlugin.insertGroupIntoAnother(java.lang.String,java.lang.String,java.lang.String,com.intellij.openapi.actionSystem.Anchor):void" resolve="insertGroupIntoAnother" />
+              <ref role="37wK5l" to="cddg:~BaseApplicationPlugin.insertGroupIntoAnother(java.lang.String,java.lang.String,java.lang.String,com.intellij.openapi.actionSystem.Anchor)" resolve="insertGroupIntoAnother" />
               <node concept="10M0yZ" id="2BR5zyhHfbI" role="37wK5m">
                 <ref role="1PxDUh" to="tp4l:hwu0LYn" resolve="MainGeneratedGroup" />
                 <ref role="3cqZAo" to="tp4l:hyIUFie" resolve="ID" />
@@ -1043,7 +1043,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="2BR5zyhIHt6" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="Xl_RD" id="2BR5zyhIHt7" role="37wK5m">
                             <property role="Xl_RC" value="adjustRegularGroups" />
                           </node>
@@ -1128,7 +1128,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="2BR5zyhIWIm" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                         <node concept="Xl_RD" id="2BR5zyhIWIn" role="37wK5m">
                                           <property role="Xl_RC" value="insertGroupIntoAnother" />
                                         </node>
@@ -1420,7 +1420,7 @@
                 <node concept="2OqwBi" id="3ItNAtJeadG" role="3clFbG">
                   <node concept="Xjq3P" id="3ItNAtJeabN" role="2Oq$k0" />
                   <node concept="liA8E" id="3ItNAtJeams" role="2OqNvi">
-                    <ref role="37wK5l" to="71xd:~BaseTabbedProjectTool.pinTab(javax.swing.JComponent):void" resolve="pinTab" />
+                    <ref role="37wK5l" to="71xd:~BaseTabbedProjectTool.pinTab(javax.swing.JComponent)" resolve="pinTab" />
                     <node concept="2ShNRf" id="3ItNAtJeaq7" role="37wK5m">
                       <node concept="1pGfFk" id="3ItNAtJedp$" role="2ShVmc">
                         <ref role="37wK5l" to="dxuu:~JComponent.&lt;init&gt;()" resolve="JComponent" />

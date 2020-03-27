@@ -125,7 +125,7 @@
               <node concept="2OqwBi" id="1ieRNjmuKmU" role="37wK5m">
                 <node concept="1jxXqW" id="1ieRNjmuKmV" role="2Oq$k0" />
                 <node concept="liA8E" id="1ieRNjmuKmW" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="BaHAS" id="2s6qLQkl_Jv" role="37wK5m">
@@ -145,7 +145,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="4Nq31LVunA6" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="4Nq31LVunT6" role="37wK5m">
                 <node concept="Xl_RD" id="4Nq31LVunUS" role="3uHU7B">
                   <property role="Xl_RC" value="Trail: \n\n" />
@@ -173,7 +173,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4Nq31LVu8z5" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="4Nq31LVuhnH" role="37wK5m">
                 <property role="Xl_RC" value="init process, my pid is: 0" />
               </node>
@@ -215,7 +215,7 @@
               <node concept="2OqwBi" id="1ieRNjmuXpR" role="37wK5m">
                 <node concept="1jxXqW" id="1ieRNjmuXpS" role="2Oq$k0" />
                 <node concept="liA8E" id="1ieRNjmuXpT" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="1ieRNjmuW69" role="37wK5m">
@@ -234,7 +234,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="24G9CRyL7ce" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="24G9CRyL7cf" role="37wK5m">
                 <node concept="Xl_RD" id="24G9CRyL7cg" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />
@@ -262,7 +262,7 @@
               </node>
             </node>
             <node concept="liA8E" id="24G9CRyL3z0" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="24G9CRyL3z1" role="37wK5m">
                 <property role="Xl_RC" value="assertion violated (n!=2)" />
               </node>
@@ -301,7 +301,7 @@
               <node concept="2OqwBi" id="1ieRNjmuUan" role="37wK5m">
                 <node concept="1jxXqW" id="1ieRNjmuTQL" role="2Oq$k0" />
                 <node concept="liA8E" id="1ieRNjmuV3U" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="37vLTw" id="1ieRNjmuSz1" role="37wK5m">
@@ -320,7 +320,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="24G9CRyL9um" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="24G9CRyL9un" role="37wK5m">
                 <node concept="Xl_RD" id="24G9CRyL9uo" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />
@@ -348,7 +348,7 @@
               </node>
             </node>
             <node concept="liA8E" id="24G9CRyL9uy" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="24G9CRyL9uz" role="37wK5m">
                 <property role="Xl_RC" value="assertion violated (n!=2)" />
               </node>
@@ -377,7 +377,7 @@
               <node concept="2OqwBi" id="1ieRNjmuLJt" role="37wK5m">
                 <node concept="1jxXqW" id="1ieRNjmuLJu" role="2Oq$k0" />
                 <node concept="liA8E" id="1ieRNjmuLJv" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="BaHAS" id="2s6qLQklB61" role="37wK5m">
@@ -397,7 +397,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="Rd$2EC6oxR" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="Rd$2EC6oxS" role="37wK5m">
                 <node concept="Xl_RD" id="Rd$2EC6oxT" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />
@@ -435,7 +435,7 @@
               </node>
             </node>
             <node concept="liA8E" id="Rd$2EC6oy3" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="Rd$2EC6oy4" role="37wK5m">
                 <property role="Xl_RC" value="assertion violated ((v1!=3)&amp;&amp;(v2!=4))" />
               </node>
@@ -477,7 +477,7 @@
               <node concept="2OqwBi" id="1ieRNjmuL2x" role="37wK5m">
                 <node concept="1jxXqW" id="1ieRNjmuL2y" role="2Oq$k0" />
                 <node concept="liA8E" id="1ieRNjmuL2z" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="BaHAS" id="2s6qLQklBTS" role="37wK5m">
@@ -497,7 +497,7 @@
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="1RC3LaKCwCD" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="1RC3LaKCwCE" role="37wK5m">
                 <node concept="Xl_RD" id="1RC3LaKCwCF" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />
@@ -535,7 +535,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1RC3LaKCwCS" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="1RC3LaKCwCT" role="37wK5m">
                 <property role="Xl_RC" value="assertion violated (n!=6)" />
               </node>
@@ -577,7 +577,7 @@
               <node concept="2OqwBi" id="1ieRNjmuITX" role="37wK5m">
                 <node concept="1jxXqW" id="1ieRNjmuIHT" role="2Oq$k0" />
                 <node concept="liA8E" id="1ieRNjmuJzh" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="BaHAS" id="5p$33BW3gtZ" role="37wK5m">

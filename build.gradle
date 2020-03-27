@@ -3,12 +3,10 @@ import de.itemis.mps.gradle.GitBasedVersioning
 ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 
-//MPS versions
-ext.mpsMajor = "2018.3"
-ext.mpsBuild = "2018.3.7"
-
 //MPS extensions version
-ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2018.3.+"
+ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2019.1.+"
+ext.mpsMajor = "2019.1"
+ext.mpsBuild = "2019.1.6"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
@@ -45,14 +43,14 @@ subprojects {
     apply plugin: "base"
     apply plugin: "maven-publish"
     ext.mbeddrMajor = "1"
-    ext.mbeddrMinor = "2"
+    ext.mbeddrMinor = "3"
 
-    // switch to snapshot/release repositories passed with -P option via command line, if any, 
+    // switch to snapshot/release repositories passed with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
     ext.snapshotRepository = findNonEmptyProperty('snapshotRepository') ?: defaultSnapshotRepository
     ext.releaseRepository = findNonEmptyProperty('releaseRepository') ?: defaultReleaseRepository
 
-    // use depencency repositories passed as comma-separated list with -P option via command line, if any, 
+    // use depencency repositories passed as comma-separated list with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
     if (project.hasNonEmptyProperty('dependencyRepositories')) {
         if (project.getProperty('dependencyRepositories') instanceof String) {
@@ -89,7 +87,7 @@ subprojects {
             } else {
                 ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
             }
-            if(mbeddrBuild == "stable") {
+            if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("mps-")) {
                 mbeddrBuild = "master"
             }
             ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
@@ -97,12 +95,12 @@ subprojects {
             ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
         }
 
-        // Enable mbeddr to be assigned a different version number than mbeddr platform, 
+        // Enable mbeddr to be assigned a different version number than mbeddr platform,
         // as well as mbeddr to be built against a specified existing mbeddr platform version
 		ext.mbeddrPlatformBuildNumber = findNonEmptyProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
 
         if (ciBuild) {
-			// Coerce TeamCity build number to mbeddrBuildNumber by default 
+			// Coerce TeamCity build number to mbeddrBuildNumber by default
 			// (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
 			println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
         } else {

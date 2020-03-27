@@ -5,7 +5,22 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib" />
+      <sourceRoot location="lib/collections-generic-4.01.jar" />
+      <sourceRoot location="lib/colt-1.2.0.jar" />
+      <sourceRoot location="lib/concurrent-1.3.4.jar" />
+      <sourceRoot location="lib/j3d-core-1.3.1.jar" />
+      <sourceRoot location="lib/jung-3d-2.0.1.jar" />
+      <sourceRoot location="lib/jung-3d-demos-2.0.1.jar" />
+      <sourceRoot location="lib/jung-algorithms-2.0.1.jar" />
+      <sourceRoot location="lib/jung-api-2.0.1.jar" />
+      <sourceRoot location="lib/jung-graph-impl-2.0.1.jar" />
+      <sourceRoot location="lib/jung-io-2.0.1.jar" />
+      <sourceRoot location="lib/jung-jai-2.0.1.jar" />
+      <sourceRoot location="lib/jung-jai-samples-2.0.1.jar" />
+      <sourceRoot location="lib/jung-samples-2.0.1.jar" />
+      <sourceRoot location="lib/jung-visualization-2.0.1.jar" />
+      <sourceRoot location="lib/vecmath-1.3.1.jar" />
+      <sourceRoot location="lib/wstx-asl-3.2.6.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>

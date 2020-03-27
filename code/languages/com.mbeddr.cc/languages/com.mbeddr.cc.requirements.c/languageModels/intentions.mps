@@ -323,7 +323,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="WQTSVtN2Mh" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="WQTSVtN2O_" role="37wK5m">
                 <property role="Xl_RC" value="debug" />
               </node>
@@ -427,11 +427,11 @@
                     <ref role="3cqZAo" node="7gatZB62zF1" resolve="editorContext" />
                   </node>
                   <node concept="liA8E" id="4Lwk8OaStlI" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4Lwk8OaStlJ" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                 </node>
               </node>
             </node>
@@ -497,7 +497,7 @@
                                 <ref role="3cqZAo" node="4NZJtoe3yeQ" resolve="event" />
                               </node>
                               <node concept="liA8E" id="4yPv6wmS_1E" role="2OqNvi">
-                                <ref role="37wK5l" to="cmfw:~SPropertyChangeEvent.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
+                                <ref role="37wK5l" to="cmfw:~SPropertyChangeEvent.getNode()" resolve="getNode" />
                               </node>
                             </node>
                             <node concept="3Tqbb2" id="4yPv6wmS_1F" role="10QFUM" />
@@ -513,7 +513,7 @@
                                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                               </node>
                               <node concept="liA8E" id="2dnGg2I$DE1" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                 <node concept="Xl_RD" id="2dnGg2I$DFY" role="37wK5m">
                                   <property role="Xl_RC" value="UPDATING" />
                                 </node>
@@ -538,11 +538,11 @@
                                     <ref role="3cqZAo" node="7gatZB62zF1" resolve="editorContext" />
                                   </node>
                                   <node concept="liA8E" id="2dnGg2IyJZ0" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="2dnGg2IyJZ1" role="2OqNvi">
-                                  <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                                  <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                                 </node>
                               </node>
                             </node>
@@ -588,7 +588,7 @@
                                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                                 </node>
                                 <node concept="liA8E" id="2dnGg2I$DPx" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                   <node concept="Xl_RD" id="2dnGg2I$DQK" role="37wK5m">
                                     <property role="Xl_RC" value="__NOT__ UPDATING" />
                                   </node>
@@ -614,7 +614,7 @@
               <ref role="3cqZAo" node="4NZJtoe3c54" resolve="testModel" />
             </node>
             <node concept="liA8E" id="4NZJtoe3nBw" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SModel.addChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="addChangeListener" />
+              <ref role="37wK5l" to="mhbf:~SModel.addChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener)" resolve="addChangeListener" />
               <node concept="37vLTw" id="4NZJtoe3yxs" role="37wK5m">
                 <ref role="3cqZAo" node="2dnGg2IyJYD" resolve="adapter" />
               </node>
@@ -656,7 +656,7 @@
                                 <ref role="3cqZAo" node="4NZJtoe3c54" resolve="testModel" />
                               </node>
                               <node concept="liA8E" id="4NZJtoe3IAv" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SModel.removeChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="removeChangeListener" />
+                                <ref role="37wK5l" to="mhbf:~SModel.removeChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener)" resolve="removeChangeListener" />
                                 <node concept="37vLTw" id="4NZJtoe3IDk" role="37wK5m">
                                   <ref role="3cqZAo" node="2dnGg2IyJYD" resolve="adapter" />
                                 </node>
@@ -679,7 +679,7 @@
                         <ref role="3cqZAo" node="7gatZB62zF1" resolve="editorContext" />
                       </node>
                       <node concept="liA8E" id="2dnGg2IyZJ_" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                       </node>
                     </node>
                     <node concept="3uibUv" id="2dnGg2I$aM$" role="10QFUM">
@@ -688,7 +688,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2dnGg2I$nph" role="2OqNvi">
-                  <ref role="37wK5l" to="exr9:~EditorComponent.addDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="addDisposeListener" />
+                  <ref role="37wK5l" to="exr9:~EditorComponent.addDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener)" resolve="addDisposeListener" />
                   <node concept="37vLTw" id="2dnGg2I$BDb" role="37wK5m">
                     <ref role="3cqZAo" node="2dnGg2I$BD0" resolve="listener" />
                   </node>
@@ -882,7 +882,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="WQTSVtN2Xo" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="WQTSVtN3ce" role="37wK5m">
                 <node concept="2OqwBi" id="WQTSVtN3k1" role="3uHU7w">
                   <node concept="37vLTw" id="WQTSVtN3dY" role="2Oq$k0">
@@ -1039,7 +1039,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="4rj4sdBt67m" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
+                          <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String)" resolve="hasProperty" />
                           <node concept="Xl_RD" id="4rj4sdBt67n" role="37wK5m">
                             <property role="Xl_RC" value="value" />
                           </node>
@@ -1107,7 +1107,7 @@
                                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                 </node>
                                 <node concept="liA8E" id="5TykNF$u_ye" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                   <node concept="3cpWs3" id="4rj4sdBt5Dk" role="37wK5m">
                                     <node concept="37vLTw" id="4rj4sdBt5Wg" role="3uHU7w">
                                       <ref role="3cqZAo" node="4rj4sdBsE8U" resolve="dependency" />
@@ -1384,11 +1384,11 @@
                     <ref role="3cqZAo" node="4yPv6wmT9WN" resolve="editorContext" />
                   </node>
                   <node concept="liA8E" id="4yPv6wmTagQ" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4yPv6wmTayg" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                 </node>
               </node>
             </node>
@@ -1563,7 +1563,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="$bJ0jgVdiH" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                   <node concept="3cmrfG" id="$bJ0jgVdiI" role="37wK5m">
                     <property role="3cmrfH" value="1" />
                   </node>
@@ -1583,7 +1583,7 @@
             </node>
             <node concept="2YIFZM" id="$bJ0jgVdiM" role="33vP2m">
               <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-              <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+              <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
               <node concept="2OqwBi" id="$bJ0jgVdiN" role="37wK5m">
                 <node concept="37vLTw" id="$bJ0jgVdiO" role="2Oq$k0">
                   <ref role="3cqZAo" node="$bJ0jgVdiA" resolve="nl" />

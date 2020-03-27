@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="f39336d3-1288-47ee-bbfe-ad2ea7e4504e" name="com.mbeddr.mpsutil.extensionclass" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
@@ -165,7 +165,7 @@
           <node concept="3clFbS" id="4X7wieqxEDS" role="3clF47">
             <node concept="3clFbF" id="4X7wieqxEEb" role="3cqZAp">
               <node concept="2YIFZM" id="4X7wieqxEE_" role="3clFbG">
-                <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                 <node concept="37vLTw" id="4X7wieqxEH9" role="37wK5m">
                   <ref role="3cqZAo" node="4X7wieqxEE2" resolve="a" />

@@ -923,15 +923,15 @@
                     <ref role="3cqZAo" node="3OiIliPRxrm" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="3OiIliPRxry" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3OiIliPRxrz" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                 </node>
               </node>
               <node concept="liA8E" id="3OiIliPRxr$" role="2OqNvi">
-                <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection():jetbrains.mps.openapi.editor.selection.Selection" resolve="getSelection" />
+                <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
               </node>
             </node>
           </node>
@@ -1002,15 +1002,15 @@
                       <ref role="3cqZAo" node="3OiIliPRxsz" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="3OiIliPRxs6" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3OiIliPRxs7" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                    <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3OiIliPRxs8" role="2OqNvi">
-                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection():jetbrains.mps.openapi.editor.selection.Selection" resolve="getSelection" />
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
                 </node>
               </node>
             </node>
@@ -1328,7 +1328,7 @@
                   <node concept="2Sf5sV" id="3DAECxFtmkv" role="2Oq$k0" />
                 </node>
                 <node concept="liA8E" id="79i$vAXZAxO" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                 </node>
               </node>
               <node concept="Xl_RD" id="3DAECxFtmky" role="3uHU7B">
@@ -1379,7 +1379,7 @@
               </node>
               <node concept="2YIFZM" id="4FREEt6vga9" role="3uHU7w">
                 <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeChild" />
                 <node concept="2OqwBi" id="4FREEt6vgaa" role="37wK5m">
                   <node concept="2Sf5sV" id="4OX$8K1AJaR" role="2Oq$k0" />
                   <node concept="1mfA1w" id="4FREEt6vgac" role="2OqNvi" />
@@ -1395,7 +1395,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="4FREEt6vgai" role="3uHU7w">
-              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeAncestor" />
               <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
               <node concept="2OqwBi" id="4FREEt6vgaj" role="37wK5m">
                 <node concept="2Sf5sV" id="4OX$8K1AKuL" role="2Oq$k0" />
@@ -1661,7 +1661,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="4E5hYf81aLc" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                           <node concept="Xl_RD" id="4E5hYf81aLd" role="37wK5m">
                             <property role="Xl_RC" value="\n" />
                           </node>
@@ -1700,7 +1700,7 @@
                           <ref role="3cqZAo" node="4E5hYf81aLk" resolve="t" />
                         </node>
                         <node concept="liA8E" id="4E5hYf81aLt" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                          <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                           <node concept="Xl_RD" id="4E5hYf81aLu" role="37wK5m">
                             <property role="Xl_RC" value="\n" />
                           </node>

@@ -55,7 +55,7 @@
             <node concept="2OqwBi" id="3IFXLmivrdL" role="3clFbG">
               <node concept="1Wqviy" id="3IFXLmivqXj" role="2Oq$k0" />
               <node concept="liA8E" id="3IFXLmivseD" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                 <node concept="Xl_RD" id="3IFXLmivspZ" role="37wK5m">
                   <property role="Xl_RC" value="a" />
                 </node>

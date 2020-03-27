@@ -591,7 +591,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="1IlnVQ9b9Cf" role="2OqNvi">
-                        <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                        <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
                       </node>
                     </node>
                   </node>
@@ -640,7 +640,7 @@
             </node>
             <node concept="3cpWs6" id="7UyXkgBtWil" role="3cqZAp">
               <node concept="2YIFZM" id="7UyXkgBu0JH" role="3cqZAk">
-                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
                 <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                 <node concept="37vLTw" id="7UyXkgBu2fc" role="37wK5m">
                   <ref role="3cqZAo" node="7UyXkgBtEAD" resolve="res" />
@@ -737,7 +737,7 @@
             <node concept="3cpWs6" id="7UyXkgBIm1e" role="3cqZAp">
               <node concept="2YIFZM" id="7UyXkgBIm1f" role="3cqZAk">
                 <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
                 <node concept="37vLTw" id="7UyXkgBIm1g" role="37wK5m">
                   <ref role="3cqZAo" node="7UyXkgBIm16" resolve="res" />
                 </node>
@@ -817,7 +817,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="7UyXkgBM5Od" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="7UyXkgBM5Oe" role="37wK5m">
                                 <node concept="37vLTw" id="7UyXkgBM5Of" role="2Oq$k0">
                                   <ref role="3cqZAo" node="4arT0cntBHz" resolve="rawAssig" />
@@ -888,7 +888,7 @@
             </node>
             <node concept="3cpWs6" id="7UyXkgBKxQj" role="3cqZAp">
               <node concept="2YIFZM" id="7UyXkgBKxQk" role="3cqZAk">
-                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
                 <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                 <node concept="37vLTw" id="7UyXkgBKxQl" role="37wK5m">
                   <ref role="3cqZAo" node="7UyXkgBKxQb" resolve="res" />
@@ -905,7 +905,7 @@
         <node concept="3clFbH" id="7UyXkgBtJvA" role="3cqZAp" />
         <node concept="3cpWs6" id="4arT0cntBHs" role="3cqZAp">
           <node concept="2YIFZM" id="7UyXkgBmw4w" role="3cqZAk">
-            <ref role="37wK5l" to="33ny:~Collections.emptyList():java.util.List" resolve="emptyList" />
+            <ref role="37wK5l" to="33ny:~Collections.emptyList()" resolve="emptyList" />
             <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
           </node>
         </node>
@@ -1479,7 +1479,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1LaDVhWSNbE" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                        <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                         <node concept="3cpWs3" id="1LaDVhWSNbF" role="37wK5m">
                           <node concept="Xl_RD" id="1LaDVhWSNbG" role="3uHU7w">
                             <property role="Xl_RC" value="__" />
@@ -1832,7 +1832,7 @@
         <node concept="3clFbH" id="4arT0cntGfu" role="3cqZAp" />
         <node concept="3cpWs6" id="4arT0cntGfv" role="3cqZAp">
           <node concept="2YIFZM" id="1aITAdxvgJF" role="3cqZAk">
-            <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+            <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
             <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
             <node concept="37vLTw" id="1aITAdxvgJG" role="37wK5m">
               <ref role="3cqZAo" node="4arT0cntGeL" resolve="res" />

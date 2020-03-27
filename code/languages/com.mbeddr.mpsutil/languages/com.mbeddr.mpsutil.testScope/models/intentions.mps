@@ -142,7 +142,7 @@
             </node>
             <node concept="2YIFZM" id="6uep02NZc$P" role="33vP2m">
               <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-              <ref role="37wK5l" to="ykok:~ModelConstraints.getScope(org.jetbrains.mps.openapi.model.SReference):jetbrains.mps.scope.Scope" resolve="getScope" />
+              <ref role="37wK5l" to="ykok:~ModelConstraints.getScope(org.jetbrains.mps.openapi.model.SReference)" resolve="getScope" />
               <node concept="2OqwBi" id="6uep02NZc$Q" role="37wK5m">
                 <node concept="2Sf5sV" id="6uep02NZc$R" role="2Oq$k0" />
                 <node concept="2qgKlT" id="6uep02NZc$S" role="2OqNvi">

@@ -506,7 +506,7 @@
               <node concept="1pGfFk" id="7sjDQ2_oZDZ" role="2ShVmc">
                 <ref role="37wK5l" to="33ny:~Random.&lt;init&gt;(long)" resolve="Random" />
                 <node concept="2YIFZM" id="7sjDQ2_oZE0" role="37wK5m">
-                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
                   <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                 </node>
               </node>
@@ -524,7 +524,7 @@
                   <ref role="3cqZAo" node="7sjDQ2_oZDW" resolve="rnd" />
                 </node>
                 <node concept="liA8E" id="7sjDQ2_oZE7" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                  <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                   <node concept="2OqwBi" id="7sjDQ2_oZEa" role="37wK5m">
                     <node concept="37vLTw" id="7sjDQ2_oZEb" role="2Oq$k0">
                       <ref role="3cqZAo" node="7sjDQ2_oZDQ" resolve="descendants" />
@@ -594,7 +594,7 @@
                             <ref role="3cqZAo" node="6fGXG$6i7AJ" resolve="it" />
                           </node>
                           <node concept="liA8E" id="6fGXG$6i8bZ" role="2OqNvi">
-                            <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                            <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName()" resolve="getModuleName" />
                           </node>
                         </node>
                       </node>
@@ -672,11 +672,11 @@
                                   <node concept="2yIwOk" id="6fGXG$6i3QG" role="2OqNvi" />
                                 </node>
                                 <node concept="liA8E" id="6fGXG$6i4hk" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage()" resolve="getLanguage" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="6fGXG$6i9VD" role="2OqNvi">
-                                <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+                                <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName()" resolve="getQualifiedName" />
                               </node>
                             </node>
                           </node>
@@ -704,7 +704,7 @@
               <node concept="1pGfFk" id="6fGXG$6hnBZ" role="2ShVmc">
                 <ref role="37wK5l" to="33ny:~Random.&lt;init&gt;(long)" resolve="Random" />
                 <node concept="2YIFZM" id="6fGXG$6hnC0" role="37wK5m">
-                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
                   <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                 </node>
               </node>
@@ -727,7 +727,7 @@
                     <ref role="3cqZAo" node="6fGXG$6hnBW" resolve="rnd" />
                   </node>
                   <node concept="liA8E" id="6fGXG$6ixW1" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                    <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                     <node concept="2OqwBi" id="6fGXG$6ixW4" role="37wK5m">
                       <node concept="37vLTw" id="6fGXG$6ixW5" role="2Oq$k0">
                         <ref role="3cqZAo" node="6fGXG$6hzIQ" resolve="descendantsFromLanguages" />

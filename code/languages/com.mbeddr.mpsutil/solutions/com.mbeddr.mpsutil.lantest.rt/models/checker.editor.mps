@@ -257,7 +257,7 @@
                         <ref role="3cqZAo" node="3Ts5Ln3Fa02" resolve="latch" />
                       </node>
                       <node concept="liA8E" id="4$GVDQfVUcZ" role="2OqNvi">
-                        <ref role="37wK5l" to="5zyv:~CountDownLatch.countDown():void" resolve="countDown" />
+                        <ref role="37wK5l" to="5zyv:~CountDownLatch.countDown()" resolve="countDown" />
                       </node>
                     </node>
                   </node>
@@ -268,7 +268,7 @@
                   <ref role="3cqZAo" node="5oO2AcYiJyE" resolve="proj" />
                 </node>
                 <node concept="liA8E" id="5oO2AcZAPcH" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
             </node>
@@ -280,7 +280,7 @@
                       <ref role="3cqZAo" node="3Ts5Ln3Fa02" resolve="latch" />
                     </node>
                     <node concept="liA8E" id="3Ts5Ln3Fett" role="2OqNvi">
-                      <ref role="37wK5l" to="5zyv:~CountDownLatch.await(long,java.util.concurrent.TimeUnit):boolean" resolve="await" />
+                      <ref role="37wK5l" to="5zyv:~CountDownLatch.await(long,java.util.concurrent.TimeUnit)" resolve="await" />
                       <node concept="3cmrfG" id="3Ts5Ln3FeJp" role="37wK5m">
                         <property role="3cmrfH" value="3" />
                       </node>
@@ -300,7 +300,7 @@
                         <ref role="3cqZAo" node="3Ts5Ln3FeON" resolve="e" />
                       </node>
                       <node concept="liA8E" id="3Ts5Ln3FfEz" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                       </node>
                     </node>
                   </node>
@@ -316,7 +316,7 @@
           </node>
           <node concept="3fqX7Q" id="4$GVDQfVORm" role="3clFbw">
             <node concept="2YIFZM" id="4$GVDQfVORo" role="3fr31v">
-              <ref role="37wK5l" to="dxuu:~SwingUtilities.isEventDispatchThread():boolean" resolve="isEventDispatchThread" />
+              <ref role="37wK5l" to="dxuu:~SwingUtilities.isEventDispatchThread()" resolve="isEventDispatchThread" />
               <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
             </node>
           </node>
@@ -349,7 +349,7 @@
                 <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
               </node>
               <node concept="liA8E" id="3mOqkJu826O" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="3cpWs3" id="3mOqkJu82Dn" role="37wK5m">
                   <node concept="1eOMI4" id="3mOqkJu82FS" role="3uHU7w">
                     <node concept="1Wc70l" id="3mOqkJu82H4" role="1eOMHV">
@@ -458,11 +458,11 @@
               <node concept="37vLTI" id="4$GVDQfVtNw" role="3clFbG">
                 <node concept="2OqwBi" id="4$GVDQfVtNx" role="37vLTx">
                   <node concept="2YIFZM" id="4$GVDQfVtNy" role="2Oq$k0">
-                    <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance():jetbrains.mps.openapi.navigation.NavigationSupport" resolve="getInstance" />
+                    <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance()" resolve="getInstance" />
                     <ref role="1Pybhc" to="kz9k:~NavigationSupport" resolve="NavigationSupport" />
                   </node>
                   <node concept="liA8E" id="4$GVDQfVtNz" role="2OqNvi">
-                    <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean):jetbrains.mps.openapi.editor.Editor" resolve="openNode" />
+                    <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean)" resolve="openNode" />
                     <node concept="37vLTw" id="4$GVDQfVtO9" role="37wK5m">
                       <ref role="3cqZAo" node="4$GVDQfVtO4" resolve="proj" />
                     </node>
@@ -497,7 +497,7 @@
                     <ref role="3cqZAo" node="4$GVDQfVtNE" resolve="e" />
                   </node>
                   <node concept="liA8E" id="4$GVDQfVtNK" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -542,7 +542,7 @@
                   <ref role="3cqZAo" node="4$GVDQfVtNm" resolve="openedEditor" />
                 </node>
                 <node concept="liA8E" id="6LhpOSaaXf5" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~Editor.dispose():void" resolve="dispose" />
+                  <ref role="37wK5l" to="cj4x:~Editor.dispose()" resolve="dispose" />
                 </node>
               </node>
             </node>
@@ -586,7 +586,7 @@
           <node concept="1rXfSq" id="7VeUlv8Molg" role="3clFbG">
             <ref role="37wK5l" to="7bhk:7VeUlv8MmUS" resolve="addAppender" />
             <node concept="2YIFZM" id="7VeUlv8MnvS" role="37wK5m">
-              <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
+              <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
               <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
               <node concept="3VsKOn" id="7VeUlv8MnvT" role="37wK5m">
                 <ref role="3VsUkX" to="g51k:~EditorCellFactoryImpl" resolve="EditorCellFactoryImpl" />

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/../languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/AaaaaaaPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
@@ -22,7 +23,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.slides.sandbox/com.mbeddr.doc.slides.sandbox.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.spreadsheat.sandbox/com.mbeddr.spreadsheat.sandbox.msd" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/tests/tests.ts.doc/tests.ts.doc.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/tests.ts.doc/tests.ts.doc.msd" folder="test" />
     </projectModules>
   </component>
 </project>

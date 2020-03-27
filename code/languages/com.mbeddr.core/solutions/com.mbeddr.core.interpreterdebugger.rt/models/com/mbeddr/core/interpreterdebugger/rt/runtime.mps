@@ -561,7 +561,7 @@
           <node concept="3clFbS" id="4N5UlZQ3os8" role="3clFbx">
             <node concept="3cpWs6" id="4N5UlZQ3AfT" role="3cqZAp">
               <node concept="2YIFZM" id="4N5UlZQ3Jec" role="3cqZAk">
-                <ref role="37wK5l" to="33ny:~Collections.emptyList():java.util.List" resolve="emptyList" />
+                <ref role="37wK5l" to="33ny:~Collections.emptyList()" resolve="emptyList" />
                 <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
               </node>
             </node>
@@ -1338,11 +1338,11 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="3$DH87aGMiq" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
                 </node>
               </node>
               <node concept="liA8E" id="3$DH87aGMir" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>

@@ -636,7 +636,7 @@
                       </node>
                       <node concept="2YIFZM" id="KU5KLY42Hi" role="3clFbw">
                         <ref role="1Pybhc" to="ggp6:~MatchingUtil" resolve="MatchingUtil" />
-                        <ref role="37wK5l" to="ggp6:~MatchingUtil.matchNodes(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="matchNodes" />
+                        <ref role="37wK5l" to="ggp6:~MatchingUtil.matchNodes(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="matchNodes" />
                         <node concept="37vLTw" id="KU5KLY42HY" role="37wK5m">
                           <ref role="3cqZAo" node="KU5KLY42GF" resolve="selExpr" />
                         </node>

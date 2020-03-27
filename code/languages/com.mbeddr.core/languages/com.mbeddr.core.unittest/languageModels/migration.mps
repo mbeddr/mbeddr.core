@@ -380,7 +380,7 @@
                 <ref role="3cqZAo" node="6TAwvhVUBfr" resolve="m" />
               </node>
               <node concept="liA8E" id="6TAwvhVUCdN" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
               </node>
             </node>
           </node>
@@ -625,7 +625,7 @@
                 <ref role="3cqZAo" node="ILZbnBREZG" resolve="m" />
               </node>
               <node concept="liA8E" id="ILZbnBRFcD" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
               </node>
             </node>
           </node>
@@ -1333,7 +1333,7 @@
               <ref role="3cqZAo" node="cq0bwnQ4_k" resolve="m" />
             </node>
             <node concept="liA8E" id="cq0bwnQ5Dl" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>
@@ -1483,7 +1483,7 @@
               <ref role="3cqZAo" node="cq0bwnQ4_k" resolve="m" />
             </node>
             <node concept="liA8E" id="cq0bwnRUZL" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>
@@ -1730,7 +1730,7 @@
               <ref role="3cqZAo" node="7BqFpRybqiO" resolve="m" />
             </node>
             <node concept="liA8E" id="7BqFpRybuXk" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>

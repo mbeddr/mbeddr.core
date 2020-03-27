@@ -180,9 +180,9 @@
             </node>
             <node concept="2YIFZM" id="4gGXGcLKCJG" role="33vP2m">
               <ref role="1Pybhc" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
-              <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance(com.intellij.openapi.project.Project):com.intellij.ide.util.PropertiesComponent" resolve="getInstance" />
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
               <node concept="2YIFZM" id="4gGXGcLKCJH" role="37wK5m">
-                <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                 <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                 <node concept="1KvdUw" id="4gGXGcLKCJI" role="37wK5m" />
               </node>
@@ -202,7 +202,7 @@
                   <ref role="3cqZAo" node="4gGXGcLKCJE" resolve="propertiesComponent" />
                 </node>
                 <node concept="liA8E" id="4gGXGcLKCJQ" role="2OqNvi">
-                  <ref role="37wK5l" to="jmi8:~PropertiesComponent.getBoolean(java.lang.String,boolean):boolean" resolve="getBoolean" />
+                  <ref role="37wK5l" to="jmi8:~PropertiesComponent.getBoolean(java.lang.String,boolean)" resolve="getBoolean" />
                   <node concept="2YIFZM" id="4gGXGcLLxNx" role="37wK5m">
                     <ref role="37wK5l" node="4gGXGcLLxNf" resolve="concatKey" />
                     <ref role="1Pybhc" node="4gGXGcLLrvV" resolve="MultilingualConceptPluginHelper" />
@@ -246,10 +246,10 @@
             </node>
             <node concept="2YIFZM" id="4gGXGcLKCK6" role="33vP2m">
               <ref role="1Pybhc" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
-              <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance(com.intellij.openapi.project.Project):com.intellij.ide.util.PropertiesComponent" resolve="getInstance" />
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
               <node concept="2YIFZM" id="4gGXGcLKCK7" role="37wK5m">
                 <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                 <node concept="1KvdUw" id="4gGXGcLKCK8" role="37wK5m" />
               </node>
             </node>
@@ -262,7 +262,7 @@
               <ref role="3cqZAo" node="4gGXGcLKCK4" resolve="propertiesComponent" />
             </node>
             <node concept="liA8E" id="4gGXGcLKCKd" role="2OqNvi">
-              <ref role="37wK5l" to="jmi8:~PropertiesComponent.setValue(java.lang.String,java.lang.String):void" resolve="setValue" />
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.setValue(java.lang.String,java.lang.String)" resolve="setValue" />
               <node concept="2YIFZM" id="4gGXGcLLxNy" role="37wK5m">
                 <ref role="37wK5l" node="4gGXGcLLxNf" resolve="concatKey" />
                 <ref role="1Pybhc" node="4gGXGcLLrvV" resolve="MultilingualConceptPluginHelper" />
@@ -275,7 +275,7 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="4gGXGcLKCKj" role="37wK5m">
-                <ref role="37wK5l" to="wyt6:~Boolean.toString(boolean):java.lang.String" resolve="toString" />
+                <ref role="37wK5l" to="wyt6:~Boolean.toString(boolean)" resolve="toString" />
                 <ref role="1Pybhc" to="wyt6:~Boolean" resolve="Boolean" />
                 <node concept="2OqwBi" id="4gGXGcLKCKk" role="37wK5m">
                   <node concept="37vLTw" id="4gGXGcLKCKl" role="2Oq$k0">
@@ -311,11 +311,11 @@
                     <ref role="3cqZAo" node="4gGXGcLLxNt" resolve="context" />
                   </node>
                   <node concept="liA8E" id="4gGXGcLLxNo" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4gGXGcLLxNp" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                 </node>
               </node>
               <node concept="Xl_RD" id="4gGXGcLLxNq" role="3uHU7w">

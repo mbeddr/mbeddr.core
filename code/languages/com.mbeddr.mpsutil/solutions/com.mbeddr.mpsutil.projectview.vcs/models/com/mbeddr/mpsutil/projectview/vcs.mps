@@ -274,7 +274,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7DXFLMObzwt" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getReference():org.jetbrains.mps.openapi.model.SNodeReference" resolve="getReference" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
                   </node>
                 </node>
               </node>
@@ -291,7 +291,7 @@
                     <ref role="3cqZAo" node="7DXFLMObzwn" resolve="reference" />
                   </node>
                   <node concept="liA8E" id="7DXFLMOb$J2" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNodeReference.getModelReference():org.jetbrains.mps.openapi.model.SModelReference" resolve="getModelReference" />
+                    <ref role="37wK5l" to="mhbf:~SNodeReference.getModelReference()" resolve="getModelReference" />
                   </node>
                 </node>
                 <node concept="10Nm6u" id="7DXFLMOb$VK" role="3uHU7w" />
@@ -342,7 +342,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="24ObHxTnqvB" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SModel.getReference():org.jetbrains.mps.openapi.model.SModelReference" resolve="getReference" />
+                        <ref role="37wK5l" to="mhbf:~SModel.getReference()" resolve="getReference" />
                       </node>
                     </node>
                   </node>
@@ -475,21 +475,21 @@
           <node concept="2OqwBi" id="24ObHxTnrah" role="3clFbG">
             <node concept="2OqwBi" id="24ObHxTnr4J" role="2Oq$k0">
               <node concept="2YIFZM" id="24ObHxTnWyd" role="2Oq$k0">
-                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance)" resolve="getArea" />
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
                 <node concept="37vLTw" id="24ObHxTnWzZ" role="37wK5m">
                   <ref role="3cqZAo" node="24ObHxTnWlu" resolve="myProject" />
                 </node>
               </node>
               <node concept="liA8E" id="24ObHxTnr6X" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="37vLTw" id="24ObHxTnr7P" role="37wK5m">
                   <ref role="3cqZAo" to="7e8u:~TreeHighlighterExtension.EP_NAME" resolve="EP_NAME" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="24ObHxTnriw" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object):void" resolve="registerExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object)" resolve="registerExtension" />
               <node concept="Xjq3P" id="24ObHxTnrks" role="37wK5m" />
             </node>
           </node>
@@ -506,21 +506,21 @@
           <node concept="2OqwBi" id="24ObHxTnrqE" role="3clFbG">
             <node concept="2OqwBi" id="24ObHxTnrqF" role="2Oq$k0">
               <node concept="2YIFZM" id="24ObHxTnWAe" role="2Oq$k0">
-                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance)" resolve="getArea" />
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
                 <node concept="37vLTw" id="24ObHxTnWBZ" role="37wK5m">
                   <ref role="3cqZAo" node="24ObHxTnWlu" resolve="myProject" />
                 </node>
               </node>
               <node concept="liA8E" id="24ObHxTnrqH" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="37vLTw" id="24ObHxTnrqL" role="37wK5m">
                   <ref role="3cqZAo" to="7e8u:~TreeHighlighterExtension.EP_NAME" resolve="EP_NAME" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="24ObHxTnrqI" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object):void" resolve="unregisterExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object)" resolve="unregisterExtension" />
               <node concept="Xjq3P" id="24ObHxTnrqJ" role="37wK5m" />
             </node>
           </node>
@@ -575,7 +575,7 @@
       </node>
       <node concept="2YIFZM" id="24ObHxTnuFe" role="33vP2m">
         <ref role="1Pybhc" to="k9t0:~MapSequence" resolve="MapSequence" />
-        <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map):jetbrains.mps.internal.collections.runtime.IMapSequence" resolve="fromMap" />
+        <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map)" resolve="fromMap" />
         <node concept="2ShNRf" id="24ObHxTnuFf" role="37wK5m">
           <node concept="1pGfFk" id="24ObHxTnuFg" role="2ShVmc">
             <ref role="37wK5l" to="33ny:~HashMap.&lt;init&gt;()" resolve="HashMap" />
@@ -616,7 +616,7 @@
                 <ref role="3cqZAo" node="24ObHxTnsTa" resolve="project" />
               </node>
               <node concept="liA8E" id="24ObHxTnF18" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
                 <node concept="3VsKOn" id="24ObHxTnF19" role="37wK5m">
                   <ref role="3VsUkX" to="lcr:2JwSLRbyYN6" resolve="CurrentDifferenceRegistry" />
                 </node>
@@ -634,7 +634,7 @@
                 <ref role="3cqZAo" node="24ObHxTnsTa" resolve="project" />
               </node>
               <node concept="liA8E" id="24ObHxTnF4o" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
                 <node concept="3VsKOn" id="24ObHxTnF4p" role="37wK5m">
                   <ref role="3VsUkX" to="ippn:3ghtVL8Toqs" resolve="FeatureForestMapSupport" />
                 </node>
@@ -729,13 +729,13 @@
                   <node concept="2OqwBi" id="24ObHxTnsUw" role="3clFbG">
                     <node concept="2YIFZM" id="24ObHxTnuFz" role="2Oq$k0">
                       <ref role="1Pybhc" to="k9t0:~MapSequence" resolve="MapSequence" />
-                      <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map):jetbrains.mps.internal.collections.runtime.IMapSequence" resolve="fromMap" />
+                      <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map)" resolve="fromMap" />
                       <node concept="37vLTw" id="24ObHxTnsUy" role="37wK5m">
                         <ref role="3cqZAo" node="24ObHxTnsSY" resolve="myTreeToHighlighter" />
                       </node>
                     </node>
                     <node concept="liA8E" id="24ObHxTnsUz" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                      <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                       <node concept="37vLTw" id="24ObHxTnsU$" role="37wK5m">
                         <ref role="3cqZAo" node="24ObHxTnsTw" resolve="tree" />
                       </node>
@@ -790,13 +790,13 @@
               <node concept="2OqwBi" id="24ObHxTnsUL" role="3clFbw">
                 <node concept="2YIFZM" id="24ObHxTnuF_" role="2Oq$k0">
                   <ref role="1Pybhc" to="k9t0:~MapSequence" resolve="MapSequence" />
-                  <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map):jetbrains.mps.internal.collections.runtime.IMapSequence" resolve="fromMap" />
+                  <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map)" resolve="fromMap" />
                   <node concept="37vLTw" id="24ObHxTnsUN" role="37wK5m">
                     <ref role="3cqZAo" node="24ObHxTnsSY" resolve="myTreeToHighlighter" />
                   </node>
                 </node>
                 <node concept="liA8E" id="24ObHxTnsUO" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                  <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object)" resolve="containsKey" />
                   <node concept="37vLTw" id="24ObHxTnsUP" role="37wK5m">
                     <ref role="3cqZAo" node="24ObHxTnsUE" resolve="tree" />
                   </node>
@@ -808,13 +808,13 @@
                     <node concept="2OqwBi" id="24ObHxTnsUU" role="2Oq$k0">
                       <node concept="2YIFZM" id="24ObHxTnuFB" role="2Oq$k0">
                         <ref role="1Pybhc" to="k9t0:~MapSequence" resolve="MapSequence" />
-                        <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map):jetbrains.mps.internal.collections.runtime.IMapSequence" resolve="fromMap" />
+                        <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map)" resolve="fromMap" />
                         <node concept="37vLTw" id="24ObHxTnsUW" role="37wK5m">
                           <ref role="3cqZAo" node="24ObHxTnsSY" resolve="myTreeToHighlighter" />
                         </node>
                       </node>
                       <node concept="liA8E" id="24ObHxTnsUX" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                        <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
                         <node concept="37vLTw" id="24ObHxTnsUY" role="37wK5m">
                           <ref role="3cqZAo" node="24ObHxTnsUE" resolve="tree" />
                         </node>
@@ -829,13 +829,13 @@
                   <node concept="2OqwBi" id="24ObHxTnsV1" role="3clFbG">
                     <node concept="2YIFZM" id="24ObHxTnuFD" role="2Oq$k0">
                       <ref role="1Pybhc" to="k9t0:~MapSequence" resolve="MapSequence" />
-                      <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map):jetbrains.mps.internal.collections.runtime.IMapSequence" resolve="fromMap" />
+                      <ref role="37wK5l" to="k9t0:~MapSequence.fromMap(java.util.Map)" resolve="fromMap" />
                       <node concept="37vLTw" id="24ObHxTnsV3" role="37wK5m">
                         <ref role="3cqZAo" node="24ObHxTnsSY" resolve="myTreeToHighlighter" />
                       </node>
                     </node>
                     <node concept="liA8E" id="24ObHxTnsV4" role="2OqNvi">
-                      <ref role="37wK5l" to="k9t0:~IMapSequence.removeKey(java.lang.Object):java.lang.Object" resolve="removeKey" />
+                      <ref role="37wK5l" to="k9t0:~IMapSequence.removeKey(java.lang.Object)" resolve="removeKey" />
                       <node concept="37vLTw" id="24ObHxTnsV5" role="37wK5m">
                         <ref role="3cqZAo" node="24ObHxTnsUE" resolve="tree" />
                       </node>

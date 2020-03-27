@@ -524,7 +524,7 @@
                                   <node concept="GFMny" id="1WjrBsNJotP" role="2JrQYb" />
                                 </node>
                                 <node concept="liA8E" id="1WjrBsNIZwA" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="6QZo_pQb76U" role="3uHU7w">
@@ -1017,7 +1017,7 @@
                       <ref role="3cqZAo" node="svyVWhfGd8" resolve="lnk" />
                     </node>
                     <node concept="liA8E" id="svyVWhfK93" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                      <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
                     </node>
                   </node>
                   <node concept="2ShNRf" id="lPJxikiJRq" role="37wK5m">

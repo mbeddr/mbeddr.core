@@ -499,7 +499,7 @@
                             </node>
                             <node concept="2YIFZM" id="3RseghIdPNE" role="33vP2m">
                               <ref role="1Pybhc" to="oqcp:~ImageIO" resolve="ImageIO" />
-                              <ref role="37wK5l" to="oqcp:~ImageIO.read(java.io.File):java.awt.image.BufferedImage" resolve="read" />
+                              <ref role="37wK5l" to="oqcp:~ImageIO.read(java.io.File)" resolve="read" />
                               <node concept="2ShNRf" id="3RseghIdPNF" role="37wK5m">
                                 <node concept="1pGfFk" id="3RseghIdPNG" role="2ShVmc">
                                   <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
@@ -560,7 +560,7 @@
                                 <ref role="3cqZAo" node="3RseghIdSP5" resolve="ex" />
                               </node>
                               <node concept="liA8E" id="3RseghIdSPH" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                               </node>
                             </node>
                           </node>
@@ -582,7 +582,7 @@
                                         <ref role="3cqZAo" node="3RseghIdSP5" resolve="ex" />
                                       </node>
                                       <node concept="liA8E" id="3RseghIdSQI" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                                       </node>
                                     </node>
                                   </node>

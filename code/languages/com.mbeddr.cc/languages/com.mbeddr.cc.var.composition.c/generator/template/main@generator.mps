@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="03f78d94-3f33-4789-ad35-5950b32fdad8" name="com.mbeddr.cc.var.composition.c" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
@@ -165,7 +165,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="5B$wwdf9jHy" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                                     <node concept="Xl_RD" id="5B$wwdf9jHz" role="37wK5m">
                                       <property role="Xl_RC" value="__ctx" />
                                     </node>
@@ -197,7 +197,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="5B$wwdf9kTT" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                            <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                             <node concept="Xl_RD" id="5B$wwdf9l5J" role="37wK5m">
                               <property role="Xl_RC" value="__ctx" />
                             </node>

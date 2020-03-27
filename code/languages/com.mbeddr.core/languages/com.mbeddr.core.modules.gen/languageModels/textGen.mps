@@ -218,7 +218,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="5Im15bjoesv" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                        <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                       </node>
                     </node>
                     <node concept="3cpWs3" id="1lYd87JDBYy" role="3uHU7B">
@@ -230,7 +230,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1lYd87JDBYC" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                          <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="1lYd87JDBYz" role="3uHU7w">
@@ -255,7 +255,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="5Im15bjofFr" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                        <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                       </node>
                     </node>
                     <node concept="3cpWs3" id="1lYd87JDBYn" role="3uHU7B">
@@ -267,7 +267,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1lYd87JDBYt" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                          <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="1lYd87JDBYo" role="3uHU7w">

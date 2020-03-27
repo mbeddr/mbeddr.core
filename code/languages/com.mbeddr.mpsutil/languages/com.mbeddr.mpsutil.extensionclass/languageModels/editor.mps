@@ -605,7 +605,7 @@
                 <ref role="3cqZAo" node="LBlPJUzjxw" resolve="editorContext" />
               </node>
               <node concept="liA8E" id="LBlPJUzjxD" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode()" resolve="getSelectedNode" />
               </node>
             </node>
           </node>

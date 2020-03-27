@@ -2753,6 +2753,31 @@
             <ref role="1sgJKq" node="3HvJSbHr$TN" resolve="Triangle" />
           </node>
         </node>
+        <node concept="1_9egQ" id="sy$mvDisrf" role="3XIRFZ">
+          <node concept="3pqW6w" id="sy$mvDiumV" role="1_9egR">
+            <node concept="3TlMh9" id="sy$mvDiurs" role="3TlMhJ">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="2qmXGp" id="sy$mvDis_Q" role="3TlMhI">
+              <node concept="1E4Tgc" id="sy$mvDitwu" role="1ESnxz">
+                <ref role="1E4Tge" node="5fgoj$6CrLY" resolve="x" />
+              </node>
+              <node concept="2wJmCr" id="sy$mvDisw6" role="1_9fRO">
+                <node concept="3TlMh9" id="sy$mvDisxI" role="2wJmCp">
+                  <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="2qmXGp" id="sy$mvDisrl" role="1_9fRO">
+                  <node concept="1E4Tgc" id="sy$mvDistK" role="1ESnxz">
+                    <ref role="1E4Tge" node="3HvJSbHr_2y" resolve="points" />
+                  </node>
+                  <node concept="3ZVu4v" id="sy$mvDisrd" role="1_9fRO">
+                    <ref role="3ZVs_2" node="3HvJSbHr_ae" resolve="t" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="Y9XUq" id="3HvJSbHr_ag" role="3XIRFZ">
           <node concept="25Bbzn" id="6Lk2eJD8Xzp" role="Y9XUp">
             <node concept="2qmXGp" id="6Lk2eJD8Xzs" role="3TlMhI">

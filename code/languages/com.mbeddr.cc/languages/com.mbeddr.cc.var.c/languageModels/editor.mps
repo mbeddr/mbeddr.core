@@ -337,7 +337,7 @@
                     </node>
                   </node>
                   <node concept="2YIFZM" id="1TS1BLOWWI6" role="2Oq$k0">
-                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable)" resolve="runReadTransparentAction" />
                     <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
                     <node concept="1bVj0M" id="1TS1BLOWWI7" role="37wK5m">
                       <node concept="3clFbS" id="1TS1BLOWWI8" role="1bW5cS">
@@ -564,7 +564,7 @@
                     </node>
                   </node>
                   <node concept="2YIFZM" id="1TS1BLOWUS2" role="2Oq$k0">
-                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable)" resolve="runReadTransparentAction" />
                     <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
                     <node concept="1bVj0M" id="1TS1BLOWUS3" role="37wK5m">
                       <node concept="3clFbS" id="1TS1BLOWUS4" role="1bW5cS">

@@ -151,7 +151,7 @@
                 <node concept="2OqwBi" id="1ieRNjmuZHt" role="37wK5m">
                   <node concept="1jxXqW" id="1ieRNjmuZa5" role="2Oq$k0" />
                   <node concept="liA8E" id="1ieRNjmv1wT" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="1TY2kgDXU3r" role="37wK5m">
@@ -172,7 +172,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5yxSA$IRFu5" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="5yxSA$IRFu6" role="37wK5m">
                 <node concept="Xl_RD" id="5yxSA$IRFu7" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />
@@ -210,7 +210,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5yxSA$IRFug" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="5yxSA$IRFuh" role="37wK5m">
                 <property role="Xl_RC" value="max search depth too small" />
               </node>
@@ -256,7 +256,7 @@
                 <node concept="2OqwBi" id="1ieRNjmv2fN" role="37wK5m">
                   <node concept="1jxXqW" id="1ieRNjmv2fO" role="2Oq$k0" />
                   <node concept="liA8E" id="1ieRNjmv2fP" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="1frDWv8azVT" role="37wK5m">
@@ -277,7 +277,7 @@
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="5yxSA$ISzUX" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="5yxSA$ISzUY" role="37wK5m">
                 <node concept="Xl_RD" id="5yxSA$ISzUZ" role="3uHU7B">
                   <property role="Xl_RC" value="Output: \n\n" />

@@ -201,7 +201,7 @@
               <node concept="2OqwBi" id="6ODCss37zyF" role="37wK5m">
                 <node concept="1jxXqW" id="6ODCss37ziB" role="2Oq$k0" />
                 <node concept="liA8E" id="6ODCss37$uX" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="BaHAS" id="5EwdfGVhi3X" role="37wK5m">
@@ -291,7 +291,7 @@
             <property role="TrG5h" value="tmpDir" />
             <node concept="17QB3L" id="2AkoYuY2kim" role="1tU5fm" />
             <node concept="2YIFZM" id="2AkoYuY2kcg" role="33vP2m">
-              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
               <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
               <node concept="Xl_RD" id="2AkoYuY2kch" role="37wK5m">
                 <property role="Xl_RC" value="java.io.tmpdir" />
@@ -326,7 +326,7 @@
             <node concept="2OqwBi" id="3$vwvl9L_tJ" role="37wK5m">
               <node concept="1jxXqW" id="3$vwvl9L$Y9" role="2Oq$k0" />
               <node concept="liA8E" id="3$vwvl9LB3R" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
             <node concept="Xl_RD" id="2AkoYuY2jGK" role="37wK5m">
@@ -363,7 +363,7 @@
               <ref role="3cqZAo" node="2AkoYuY2lTZ" resolve="f" />
             </node>
             <node concept="liA8E" id="2AkoYuY2mWA" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
             </node>
           </node>
         </node>
@@ -383,7 +383,7 @@
             <node concept="3clFbF" id="2AkoYuY2oPy" role="3cqZAp">
               <node concept="37vLTI" id="2AkoYuY2oP$" role="3clFbG">
                 <node concept="2YIFZM" id="2AkoYuY2oBD" role="37vLTx">
-                  <ref role="37wK5l" to="8oaq:~FileUtils.readLines(java.io.File):java.util.List" resolve="readLines" />
+                  <ref role="37wK5l" to="8oaq:~FileUtils.readLines(java.io.File)" resolve="readLines" />
                   <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
                   <node concept="37vLTw" id="2AkoYuY2oBE" role="37wK5m">
                     <ref role="3cqZAo" node="2AkoYuY2lTZ" resolve="f" />
@@ -406,7 +406,7 @@
                       <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     </node>
                     <node concept="liA8E" id="2AkoYuY2v1Q" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="2GrUjf" id="2AkoYuY2v3s" role="37wK5m">
                         <ref role="2Gs0qQ" node="2AkoYuY2upJ" resolve="l" />
                       </node>
@@ -445,7 +445,7 @@
                               <ref role="3cqZAo" node="2AkoYuY2XoF" resolve="it" />
                             </node>
                             <node concept="liA8E" id="2AkoYuY2YdA" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                               <node concept="Xl_RD" id="2AkoYuY2Ygz" role="37wK5m">
                                 <property role="Xl_RC" value="Assert: aParam != 0" />
                               </node>
@@ -472,7 +472,7 @@
                     <ref role="3cqZAo" node="2AkoYuY2omw" resolve="e" />
                   </node>
                   <node concept="liA8E" id="2AkoYuY2ppC" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>

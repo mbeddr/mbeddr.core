@@ -124,7 +124,7 @@
             <node concept="2OqwBi" id="RitA4ARabd" role="3clFbG">
               <node concept="1Wqviy" id="RitA4ARabe" role="2Oq$k0" />
               <node concept="liA8E" id="RitA4ARabf" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="RitA4ARabg" role="37wK5m">
                   <property role="Xl_RC" value="[a-zA-Z[_]][a-zA-Z0-9[_][ ]]*" />
                 </node>
@@ -203,13 +203,13 @@
                   <node concept="1Q6Npb" id="4ol4Q3pLEk7" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="4ol4Q3pLErv" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                 </node>
               </node>
             </node>
             <node concept="2YIFZM" id="4ol4Q3pLHS3" role="3uHU7w">
               <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
               <node concept="1Q6Npb" id="4ol4Q3pLI4K" role="37wK5m" />
             </node>
           </node>

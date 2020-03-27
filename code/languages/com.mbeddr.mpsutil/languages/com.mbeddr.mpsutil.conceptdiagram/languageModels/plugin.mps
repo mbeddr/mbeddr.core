@@ -255,11 +255,11 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="3bBtawT5YQw" role="2OqNvi">
-                    <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getRootCell" />
+                    <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell()" resolve="getRootCell" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3bBtawT5YQx" role="2OqNvi">
-                  <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                  <ref role="37wK5l" to="f4zo:~EditorCell.getSNode()" resolve="getSNode" />
                 </node>
               </node>
               <node concept="3Tqbb2" id="3bBtawT5YQy" role="10QFUM">
@@ -452,11 +452,11 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="3bBtawSS33T" role="2OqNvi">
-                      <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getRootCell" />
+                      <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell()" resolve="getRootCell" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3bBtawSS33U" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getSNode()" resolve="getSNode" />
                   </node>
                 </node>
                 <node concept="3Tqbb2" id="3bBtawSS33V" role="10QFUM" />

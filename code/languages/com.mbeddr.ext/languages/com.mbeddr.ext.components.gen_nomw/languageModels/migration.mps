@@ -208,7 +208,7 @@
               <ref role="3cqZAo" node="68aLxJ8ast_" resolve="m" />
             </node>
             <node concept="liA8E" id="68aLxJ8atbD" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
           <node concept="3clFbS" id="68aLxJ8asGo" role="2LFqv$">

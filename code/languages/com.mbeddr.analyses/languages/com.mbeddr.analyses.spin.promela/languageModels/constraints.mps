@@ -158,7 +158,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -1013,11 +1013,11 @@
             <node concept="2OqwBi" id="3Gj8GGYs955" role="2Oq$k0">
               <node concept="2DD5aU" id="3Gj8GGYs8IT" role="2Oq$k0" />
               <node concept="liA8E" id="3Gj8GGYs9wx" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="3Gj8GGYsaty" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="3Gj8GGYsaWR" role="37wK5m">
                 <property role="Xl_RC" value="TestNodeAnnotation" />
               </node>

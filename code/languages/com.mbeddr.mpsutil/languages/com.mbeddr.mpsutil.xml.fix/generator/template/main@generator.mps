@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="771359e3-76e1-4788-8a8b-4c991a9c4893" name="com.mbeddr.mpsutil.xml.fix" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -123,7 +123,7 @@
                   <node concept="3clFbF" id="bGV79Bohg_" role="3cqZAp">
                     <node concept="37vLTI" id="bGV79BosRX" role="3clFbG">
                       <node concept="2YIFZM" id="bGV79BosXo" role="37vLTx">
-                        <ref role="37wK5l" to="btm1:~StringEscapeUtils.escapeXml10(java.lang.String):java.lang.String" resolve="escapeXml10" />
+                        <ref role="37wK5l" to="btm1:~StringEscapeUtils.escapeXml10(java.lang.String)" resolve="escapeXml10" />
                         <ref role="1Pybhc" to="btm1:~StringEscapeUtils" resolve="StringEscapeUtils" />
                         <node concept="2OqwBi" id="bGV79Bot4z" role="37wK5m">
                           <node concept="37vLTw" id="bGV79Bot03" role="2Oq$k0">
@@ -169,7 +169,7 @@
                   <node concept="3clFbF" id="bGV79BoyCJ" role="3cqZAp">
                     <node concept="37vLTI" id="bGV79Bozq5" role="3clFbG">
                       <node concept="2YIFZM" id="bGV79Bozvk" role="37vLTx">
-                        <ref role="37wK5l" to="btm1:~StringEscapeUtils.escapeXml10(java.lang.String):java.lang.String" resolve="escapeXml10" />
+                        <ref role="37wK5l" to="btm1:~StringEscapeUtils.escapeXml10(java.lang.String)" resolve="escapeXml10" />
                         <ref role="1Pybhc" to="btm1:~StringEscapeUtils" resolve="StringEscapeUtils" />
                         <node concept="2OqwBi" id="bGV79Boz_Y" role="37wK5m">
                           <node concept="37vLTw" id="bGV79BozxT" role="2Oq$k0">

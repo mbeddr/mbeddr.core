@@ -195,7 +195,7 @@
                   <node concept="17S1cR" id="518euTyxfK4" role="2OqNvi" />
                 </node>
                 <node concept="liA8E" id="518euTyxgUi" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="518euTyxgVY" role="37wK5m">
                     <property role="Xl_RC" value="FALSE" />
                   </node>

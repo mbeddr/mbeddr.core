@@ -1366,10 +1366,10 @@
             <node concept="2OqwBi" id="2AZbPfNYNRT" role="33vP2m">
               <node concept="2YIFZM" id="2AZbPfNYNLw" role="2Oq$k0">
                 <ref role="1Pybhc" to="lui2:~FindUsagesFacade" resolve="FindUsagesFacade" />
-                <ref role="37wK5l" to="lui2:~FindUsagesFacade.getInstance():org.jetbrains.mps.openapi.module.FindUsagesFacade" resolve="getInstance" />
+                <ref role="37wK5l" to="lui2:~FindUsagesFacade.getInstance()" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="2AZbPfNYO$O" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~FindUsagesFacade.findUsages(org.jetbrains.mps.openapi.module.SearchScope,java.util.Set,org.jetbrains.mps.openapi.util.ProgressMonitor):java.util.Set" resolve="findUsages" />
+                <ref role="37wK5l" to="lui2:~FindUsagesFacade.findUsages(org.jetbrains.mps.openapi.module.SearchScope,java.util.Set,org.jetbrains.mps.openapi.util.ProgressMonitor)" resolve="findUsages" />
                 <node concept="2ShNRf" id="1M41OHuLHxP" role="37wK5m">
                   <node concept="1pGfFk" id="1M41OHuMr0h" role="2ShVmc">
                     <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;()" resolve="FilteredGlobalScope" />
@@ -1404,7 +1404,7 @@
                     <ref role="2Gs0qQ" node="1M41OHuL4m8" resolve="ref" />
                   </node>
                   <node concept="liA8E" id="2k491iBGlr_" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SReference.getSourceNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSourceNode" />
+                    <ref role="37wK5l" to="mhbf:~SReference.getSourceNode()" resolve="getSourceNode" />
                   </node>
                 </node>
               </node>

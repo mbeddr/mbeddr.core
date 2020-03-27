@@ -259,7 +259,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="5KvlJsgh9pW" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="5KvlJsgh9pX" role="37wK5m">
                                   <ref role="3cqZAo" node="5KvlJsgh9qC" resolve="componentName" />
                                 </node>
@@ -538,7 +538,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="5KvlJsghgzC" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="5KvlJsghgzD" role="37wK5m">
                                   <ref role="3cqZAo" node="5KvlJsghg$_" resolve="componentName" />
                                 </node>

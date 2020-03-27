@@ -259,7 +259,7 @@
         <node concept="3clFbF" id="7GAH1d1Ub3" role="3cqZAp">
           <node concept="37vLTI" id="7GAH1d1UHd" role="3clFbG">
             <node concept="2YIFZM" id="7GAH1d1VeN" role="37vLTx">
-              <ref role="37wK5l" to="wyt6:~System.nanoTime():long" resolve="nanoTime" />
+              <ref role="37wK5l" to="wyt6:~System.nanoTime()" resolve="nanoTime" />
               <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="2OqwBi" id="7GAH1d2yZ8" role="37vLTJ">
@@ -286,7 +286,7 @@
             </node>
             <node concept="2YIFZM" id="7GAH1d1Z84" role="37vLTx">
               <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-              <ref role="37wK5l" to="wyt6:~System.nanoTime():long" resolve="nanoTime" />
+              <ref role="37wK5l" to="wyt6:~System.nanoTime()" resolve="nanoTime" />
             </node>
           </node>
         </node>
@@ -510,7 +510,7 @@
                   <ref role="3cqZAo" node="7GAH1d20MU" resolve="queue" />
                 </node>
                 <node concept="liA8E" id="7GAH1d2fyc" role="2OqNvi">
-                  <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="7GAH1d2fC1" role="37wK5m">
                     <ref role="3cqZAo" node="7GAH1d1X48" resolve="context" />
                   </node>

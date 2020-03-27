@@ -293,7 +293,7 @@
                         <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                       </node>
                       <node concept="liA8E" id="4l0F8G24uLJ" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                         <node concept="3cpWs3" id="4l0F8G24uLK" role="37wK5m">
                           <node concept="2ZBlsa" id="4l0F8G24uLL" role="3uHU7w" />
                           <node concept="Xl_RD" id="4l0F8G24uLM" role="3uHU7B">
@@ -336,7 +336,7 @@
                           <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                         </node>
                         <node concept="liA8E" id="lb9twM91Oe" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="3cpWs3" id="lb9twM91Of" role="37wK5m">
                             <node concept="2ZBlsa" id="lb9twM91Og" role="3uHU7w" />
                             <node concept="Xl_RD" id="lb9twM91Oh" role="3uHU7B">
@@ -413,11 +413,11 @@
           <node concept="2OqwBi" id="lb9twM4FYv" role="2Oq$k0">
             <node concept="369mXd" id="lb9twM4ECo" role="2Oq$k0" />
             <node concept="liA8E" id="lb9twM4HIB" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser():jetbrains.mps.nodeEditor.cellMenu.NodeSubstituteChooser" resolve="getNodeSubstituteChooser" />
+              <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser()" resolve="getNodeSubstituteChooser" />
             </node>
           </node>
           <node concept="liA8E" id="lb9twM4ITW" role="2OqNvi">
-            <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.isVisible():boolean" resolve="isVisible" />
+            <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.isVisible()" resolve="isVisible" />
           </node>
         </node>
       </node>
@@ -429,11 +429,11 @@
           <node concept="2OqwBi" id="lb9twM4LU5" role="2Oq$k0">
             <node concept="369mXd" id="lb9twM4KrE" role="2Oq$k0" />
             <node concept="liA8E" id="lb9twM4N5c" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser():jetbrains.mps.nodeEditor.cellMenu.NodeSubstituteChooser" resolve="getNodeSubstituteChooser" />
+              <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser()" resolve="getNodeSubstituteChooser" />
             </node>
           </node>
           <node concept="liA8E" id="lb9twM4NFx" role="2OqNvi">
-            <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.getNumberOfActions():int" resolve="getNumberOfActions" />
+            <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.getNumberOfActions()" resolve="getNumberOfActions" />
           </node>
         </node>
       </node>
@@ -463,11 +463,11 @@
           <node concept="2OqwBi" id="lb9twM4ZFP" role="2Oq$k0">
             <node concept="369mXd" id="lb9twM4ZFQ" role="2Oq$k0" />
             <node concept="liA8E" id="lb9twM4ZFR" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser():jetbrains.mps.nodeEditor.cellMenu.NodeSubstituteChooser" resolve="getNodeSubstituteChooser" />
+              <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser()" resolve="getNodeSubstituteChooser" />
             </node>
           </node>
           <node concept="liA8E" id="lb9twM4ZFS" role="2OqNvi">
-            <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.isVisible():boolean" resolve="isVisible" />
+            <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.isVisible()" resolve="isVisible" />
           </node>
         </node>
       </node>
@@ -477,15 +477,15 @@
             <node concept="2OqwBi" id="lb9twM4ZVE" role="2Oq$k0">
               <node concept="369mXd" id="lb9twM4ZVF" role="2Oq$k0" />
               <node concept="liA8E" id="lb9twM4ZVG" role="2OqNvi">
-                <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser():jetbrains.mps.nodeEditor.cellMenu.NodeSubstituteChooser" resolve="getNodeSubstituteChooser" />
+                <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser()" resolve="getNodeSubstituteChooser" />
               </node>
             </node>
             <node concept="liA8E" id="lb9twM4ZVH" role="2OqNvi">
-              <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.getCurrentSubstituteAction():jetbrains.mps.openapi.editor.cells.SubstituteAction" resolve="getCurrentSubstituteAction" />
+              <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.getCurrentSubstituteAction()" resolve="getCurrentSubstituteAction" />
             </node>
           </node>
           <node concept="liA8E" id="lb9twM56zH" role="2OqNvi">
-            <ref role="37wK5l" to="f4zo:~SubstituteAction.canSubstituteStrictly(java.lang.String):boolean" resolve="canSubstituteStrictly" />
+            <ref role="37wK5l" to="f4zo:~SubstituteAction.canSubstituteStrictly(java.lang.String)" resolve="canSubstituteStrictly" />
             <node concept="Xl_RD" id="lb9twM58q5" role="37wK5m">
               <property role="Xl_RC" value="action" />
             </node>
@@ -503,15 +503,15 @@
             <node concept="2OqwBi" id="lb9twM5dpu" role="2Oq$k0">
               <node concept="369mXd" id="lb9twM5dpv" role="2Oq$k0" />
               <node concept="liA8E" id="lb9twM5dpw" role="2OqNvi">
-                <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser():jetbrains.mps.nodeEditor.cellMenu.NodeSubstituteChooser" resolve="getNodeSubstituteChooser" />
+                <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser()" resolve="getNodeSubstituteChooser" />
               </node>
             </node>
             <node concept="liA8E" id="lb9twM5dpx" role="2OqNvi">
-              <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.getCurrentSubstituteAction():jetbrains.mps.openapi.editor.cells.SubstituteAction" resolve="getCurrentSubstituteAction" />
+              <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.getCurrentSubstituteAction()" resolve="getCurrentSubstituteAction" />
             </node>
           </node>
           <node concept="liA8E" id="lb9twM5dpy" role="2OqNvi">
-            <ref role="37wK5l" to="f4zo:~SubstituteAction.canSubstituteStrictly(java.lang.String):boolean" resolve="canSubstituteStrictly" />
+            <ref role="37wK5l" to="f4zo:~SubstituteAction.canSubstituteStrictly(java.lang.String)" resolve="canSubstituteStrictly" />
             <node concept="Xl_RD" id="lb9twM5dpz" role="37wK5m">
               <property role="Xl_RC" value="parameterizable parameterized" />
             </node>
@@ -529,15 +529,15 @@
             <node concept="2OqwBi" id="lb9twM5iVI" role="2Oq$k0">
               <node concept="369mXd" id="lb9twM5iVJ" role="2Oq$k0" />
               <node concept="liA8E" id="lb9twM5iVK" role="2OqNvi">
-                <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser():jetbrains.mps.nodeEditor.cellMenu.NodeSubstituteChooser" resolve="getNodeSubstituteChooser" />
+                <ref role="37wK5l" to="exr9:~EditorComponent.getNodeSubstituteChooser()" resolve="getNodeSubstituteChooser" />
               </node>
             </node>
             <node concept="liA8E" id="lb9twM5iVL" role="2OqNvi">
-              <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.getCurrentSubstituteAction():jetbrains.mps.openapi.editor.cells.SubstituteAction" resolve="getCurrentSubstituteAction" />
+              <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.getCurrentSubstituteAction()" resolve="getCurrentSubstituteAction" />
             </node>
           </node>
           <node concept="liA8E" id="lb9twM5iVM" role="2OqNvi">
-            <ref role="37wK5l" to="f4zo:~SubstituteAction.canSubstituteStrictly(java.lang.String):boolean" resolve="canSubstituteStrictly" />
+            <ref role="37wK5l" to="f4zo:~SubstituteAction.canSubstituteStrictly(java.lang.String)" resolve="canSubstituteStrictly" />
             <node concept="Xl_RD" id="lb9twM5iVN" role="37wK5m">
               <property role="Xl_RC" value="parameterized submenu" />
             </node>

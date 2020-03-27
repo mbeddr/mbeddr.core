@@ -2,9 +2,9 @@
 <model ref="r:c414c326-1f3c-4c25-a6e1-a886a8a5ae3c(com.mbeddr.cc.var.annotations.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="-1" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -267,7 +267,7 @@
               <node concept="2OqwBi" id="2W6h2RzR7ja" role="3clFbG">
                 <node concept="1XNTG" id="2W6h2RzR7j9" role="2Oq$k0" />
                 <node concept="liA8E" id="2W6h2RzR8Hq" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode)" resolve="selectWRTFocusPolicy" />
                   <node concept="2OqwBi" id="2W6h2RzR8Hs" role="37wK5m">
                     <node concept="2Sf5sV" id="2W6h2RzR8Hr" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="2W6h2RzR8Hw" role="2OqNvi">
@@ -605,7 +605,7 @@
                     <node concept="2NL2c5" id="7AZhlVTrJPu" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="7AZhlVTrJPv" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                    <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
                   </node>
                 </node>
               </node>
@@ -632,7 +632,7 @@
               <node concept="2OqwBi" id="2h6lNbWnXhO" role="3clFbG">
                 <node concept="1XNTG" id="2h6lNbWnXhP" role="2Oq$k0" />
                 <node concept="liA8E" id="2h6lNbWnXhQ" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode)" resolve="selectWRTFocusPolicy" />
                   <node concept="2OqwBi" id="2h6lNbWnXhR" role="37wK5m">
                     <node concept="2Sf5sV" id="2h6lNbWnXhS" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="2h6lNbWnXhT" role="2OqNvi">
@@ -1047,7 +1047,7 @@
                               <node concept="2NL2c5" id="7AZhlVTrtWk" role="2OqNvi" />
                             </node>
                             <node concept="liA8E" id="7AZhlVTrtWl" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                              <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
                             </node>
                           </node>
                         </node>
@@ -1083,7 +1083,7 @@
               <node concept="2OqwBi" id="1wLq5fNrQnE" role="3clFbG">
                 <node concept="1XNTG" id="1wLq5fNrQnF" role="2Oq$k0" />
                 <node concept="liA8E" id="1wLq5fNrQnG" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode)" resolve="selectWRTFocusPolicy" />
                   <node concept="2OqwBi" id="1wLq5fNrQnH" role="37wK5m">
                     <node concept="2Sf5sV" id="1wLq5fNrQnI" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="1wLq5fNrQnJ" role="2OqNvi">

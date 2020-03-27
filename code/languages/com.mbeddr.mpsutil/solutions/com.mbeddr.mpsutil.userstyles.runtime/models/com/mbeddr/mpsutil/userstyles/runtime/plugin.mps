@@ -357,7 +357,7 @@
             </node>
             <node concept="2YIFZM" id="6eTqwB9kf1V" role="33vP2m">
               <ref role="1Pybhc" to="a26g:~NewColorAndFontPanel" resolve="NewColorAndFontPanel" />
-              <ref role="37wK5l" to="a26g:~NewColorAndFontPanel.create(com.intellij.application.options.colors.PreviewPanel,java.lang.String,com.intellij.application.options.colors.ColorAndFontOptions,java.util.Collection,com.intellij.openapi.options.colors.ColorSettingsPage):com.intellij.application.options.colors.NewColorAndFontPanel" resolve="create" />
+              <ref role="37wK5l" to="a26g:~NewColorAndFontPanel.create(com.intellij.application.options.colors.PreviewPanel,java.lang.String,com.intellij.application.options.colors.ColorAndFontOptions,java.util.Collection,com.intellij.openapi.options.colors.ColorSettingsPage)" resolve="create" />
               <node concept="37vLTw" id="6eTqwB9kqpv" role="37wK5m">
                 <ref role="3cqZAo" node="6eTqwB9kqpj" resolve="descriptionPanelCreator" />
               </node>
@@ -378,7 +378,7 @@
               <ref role="3cqZAo" node="6eTqwB9kf1U" resolve="panel" />
             </node>
             <node concept="liA8E" id="6eTqwB9kgj0" role="2OqNvi">
-              <ref role="37wK5l" to="a26g:~NewColorAndFontPanel.addDescriptionListener(com.intellij.application.options.colors.ColorAndFontSettingsListener):void" resolve="addDescriptionListener" />
+              <ref role="37wK5l" to="a26g:~NewColorAndFontPanel.addDescriptionListener(com.intellij.application.options.colors.ColorAndFontSettingsListener)" resolve="addDescriptionListener" />
               <node concept="2ShNRf" id="6eTqwB9kgqu" role="37wK5m">
                 <node concept="YeOm9" id="6eTqwB9kjev" role="2ShVmc">
                   <node concept="1Y3b0j" id="6eTqwB9kjey" role="YeSDq">
@@ -427,7 +427,7 @@
                                 <ref role="3cqZAo" node="6eTqwB9kkk6" resolve="fontDescription" />
                               </node>
                               <node concept="liA8E" id="6eTqwB9kC8U" role="2OqNvi">
-                                <ref role="37wK5l" to="a26g:~ColorAndFontDescription.getType():java.lang.String" resolve="getType" />
+                                <ref role="37wK5l" to="a26g:~ColorAndFontDescription.getType()" resolve="getType" />
                               </node>
                             </node>
                           </node>
@@ -478,7 +478,7 @@
                               <ref role="3cqZAo" node="6eTqwB9kkJh" resolve="myDescriptionLabel" />
                             </node>
                             <node concept="liA8E" id="6eTqwB9knEI" role="2OqNvi">
-                              <ref role="37wK5l" to="dxuu:~JLabel.setText(java.lang.String):void" resolve="setText" />
+                              <ref role="37wK5l" to="dxuu:~JLabel.setText(java.lang.String)" resolve="setText" />
                               <node concept="37vLTw" id="6eTqwB9kHz_" role="37wK5m">
                                 <ref role="3cqZAo" node="6eTqwB9kEQs" resolve="description" />
                               </node>
@@ -596,7 +596,7 @@
                                   </node>
                                   <node concept="2YIFZM" id="1gJuyfgB$JM" role="37wK5m">
                                     <ref role="1Pybhc" to="drih:~TextAttributesKey" resolve="TextAttributesKey" />
-                                    <ref role="37wK5l" to="drih:~TextAttributesKey.createTextAttributesKey(java.lang.String):com.intellij.openapi.editor.colors.TextAttributesKey" resolve="createTextAttributesKey" />
+                                    <ref role="37wK5l" to="drih:~TextAttributesKey.createTextAttributesKey(java.lang.String)" resolve="createTextAttributesKey" />
                                     <node concept="2OqwBi" id="1gJuyfgBznv" role="37wK5m">
                                       <node concept="37vLTw" id="1gJuyfgBz3M" role="2Oq$k0">
                                         <ref role="3cqZAo" node="1gJuyfgBwF2" resolve="it" />
@@ -699,7 +699,7 @@
                                       </node>
                                     </node>
                                     <node concept="2YIFZM" id="1gJuyfgBhd6" role="37wK5m">
-                                      <ref role="37wK5l" to="drih:~ColorKey.find(java.lang.String):com.intellij.openapi.editor.colors.ColorKey" resolve="find" />
+                                      <ref role="37wK5l" to="drih:~ColorKey.find(java.lang.String)" resolve="find" />
                                       <ref role="1Pybhc" to="drih:~ColorKey" resolve="ColorKey" />
                                       <node concept="2OqwBi" id="1gJuyfgBitM" role="37wK5m">
                                         <node concept="37vLTw" id="1gJuyfgBifE" role="2Oq$k0">
@@ -769,12 +769,12 @@
           <node concept="2OqwBi" id="5l2JxZPb2K5" role="3clFbG">
             <node concept="2OqwBi" id="5l2JxZPb2C0" role="2Oq$k0">
               <node concept="2YIFZM" id="5l2JxZPb0N4" role="2Oq$k0">
-                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance)" resolve="getArea" />
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
                 <node concept="10Nm6u" id="5l2JxZPb0O5" role="37wK5m" />
               </node>
               <node concept="liA8E" id="5l2JxZPb2Em" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="5l2JxZPb2F$" role="37wK5m">
                   <ref role="1PxDUh" to="a26g:~ColorAndFontPanelFactory" resolve="ColorAndFontPanelFactory" />
                   <ref role="3cqZAo" to="a26g:~ColorAndFontPanelFactory.EP_NAME" resolve="EP_NAME" />
@@ -782,7 +782,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5l2JxZPb2Rx" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object):void" resolve="registerExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object)" resolve="registerExtension" />
               <node concept="2OqwBi" id="5l2JxZPbif2" role="37wK5m">
                 <node concept="2WthIp" id="5l2JxZPbif5" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="5l2JxZPbif7" role="2OqNvi">
@@ -796,12 +796,12 @@
           <node concept="2OqwBi" id="MyTlJv4I7s" role="3clFbG">
             <node concept="2OqwBi" id="MyTlJv4I7t" role="2Oq$k0">
               <node concept="2YIFZM" id="MyTlJv4I7u" role="2Oq$k0">
-                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance)" resolve="getArea" />
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
                 <node concept="10Nm6u" id="MyTlJv4I7v" role="37wK5m" />
               </node>
               <node concept="liA8E" id="MyTlJv4I7w" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="MyTlJv4I7x" role="37wK5m">
                   <ref role="1PxDUh" to="vvpk:~ColorAndFontDescriptorsProvider" resolve="ColorAndFontDescriptorsProvider" />
                   <ref role="3cqZAo" to="vvpk:~ColorAndFontDescriptorsProvider.EP_NAME" resolve="EP_NAME" />
@@ -809,7 +809,7 @@
               </node>
             </node>
             <node concept="liA8E" id="MyTlJv4I7y" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object):void" resolve="registerExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object)" resolve="registerExtension" />
               <node concept="2OqwBi" id="MyTlJv5$on" role="37wK5m">
                 <node concept="2WthIp" id="MyTlJv5$oq" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="MyTlJv5$os" role="2OqNvi">
@@ -922,7 +922,7 @@
                 <ref role="3VsUkX" to="a26g:~ColorAndFontOptions" resolve="ColorAndFontOptions" />
               </node>
               <node concept="liA8E" id="1gJuyfgAjXs" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="2OqwBi" id="1gJuyfgAj6h" role="37vLTJ">
@@ -996,12 +996,12 @@
           <node concept="2OqwBi" id="1gJuyfg_BQ7" role="3clFbG">
             <node concept="2OqwBi" id="1gJuyfg_BQ8" role="2Oq$k0">
               <node concept="2YIFZM" id="1gJuyfg_BQ9" role="2Oq$k0">
-                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance)" resolve="getArea" />
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
                 <node concept="10Nm6u" id="1gJuyfg_BQa" role="37wK5m" />
               </node>
               <node concept="liA8E" id="1gJuyfg_BQb" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="1gJuyfgAc9d" role="37wK5m">
                   <ref role="1PxDUh" to="hq8m:~Configurable" resolve="Configurable" />
                   <ref role="3cqZAo" to="hq8m:~Configurable.APPLICATION_CONFIGURABLE" resolve="APPLICATION_CONFIGURABLE" />
@@ -1009,7 +1009,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1gJuyfg_BQd" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object):void" resolve="registerExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object)" resolve="registerExtension" />
               <node concept="2OqwBi" id="1gJuyfgAabY" role="37wK5m">
                 <node concept="2WthIp" id="1gJuyfgAac1" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="1gJuyfgAac3" role="2OqNvi">
@@ -1029,11 +1029,11 @@
             <node concept="2OqwBi" id="5l2JxZPb30U" role="2Oq$k0">
               <node concept="2YIFZM" id="5l2JxZPb30V" role="2Oq$k0">
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
-                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance)" resolve="getArea" />
                 <node concept="10Nm6u" id="5l2JxZPb30W" role="37wK5m" />
               </node>
               <node concept="liA8E" id="5l2JxZPb30X" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="5l2JxZPb30Y" role="37wK5m">
                   <ref role="3cqZAo" to="a26g:~ColorAndFontPanelFactory.EP_NAME" resolve="EP_NAME" />
                   <ref role="1PxDUh" to="a26g:~ColorAndFontPanelFactory" resolve="ColorAndFontPanelFactory" />
@@ -1041,7 +1041,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5l2JxZPb3dO" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object):void" resolve="unregisterExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object)" resolve="unregisterExtension" />
               <node concept="2OqwBi" id="5l2JxZPbiht" role="37wK5m">
                 <node concept="2WthIp" id="5l2JxZPbihw" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="5l2JxZPbihy" role="2OqNvi">
@@ -1056,11 +1056,11 @@
             <node concept="2OqwBi" id="MyTlJv4MsT" role="2Oq$k0">
               <node concept="2YIFZM" id="MyTlJv4MsU" role="2Oq$k0">
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
-                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance)" resolve="getArea" />
                 <node concept="10Nm6u" id="MyTlJv4MsV" role="37wK5m" />
               </node>
               <node concept="liA8E" id="MyTlJv4MsW" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="MyTlJv4MsX" role="37wK5m">
                   <ref role="1PxDUh" to="vvpk:~ColorAndFontDescriptorsProvider" resolve="ColorAndFontDescriptorsProvider" />
                   <ref role="3cqZAo" to="vvpk:~ColorAndFontDescriptorsProvider.EP_NAME" resolve="EP_NAME" />
@@ -1068,7 +1068,7 @@
               </node>
             </node>
             <node concept="liA8E" id="MyTlJv4MsY" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object):void" resolve="unregisterExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object)" resolve="unregisterExtension" />
               <node concept="2OqwBi" id="MyTlJv5$sI" role="37wK5m">
                 <node concept="2WthIp" id="MyTlJv5$sL" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="MyTlJv5$sN" role="2OqNvi">
@@ -1083,11 +1083,11 @@
             <node concept="2OqwBi" id="1gJuyfgAmhk" role="2Oq$k0">
               <node concept="2YIFZM" id="1gJuyfgAmhl" role="2Oq$k0">
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
-                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance)" resolve="getArea" />
                 <node concept="10Nm6u" id="1gJuyfgAmhm" role="37wK5m" />
               </node>
               <node concept="liA8E" id="1gJuyfgAmhn" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="1gJuyfgAmho" role="37wK5m">
                   <ref role="3cqZAo" to="hq8m:~Configurable.APPLICATION_CONFIGURABLE" resolve="APPLICATION_CONFIGURABLE" />
                   <ref role="1PxDUh" to="hq8m:~Configurable" resolve="Configurable" />
@@ -1095,7 +1095,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1gJuyfgAmhp" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object):void" resolve="unregisterExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object)" resolve="unregisterExtension" />
               <node concept="2OqwBi" id="1gJuyfgAmhq" role="37wK5m">
                 <node concept="2WthIp" id="1gJuyfgAmhr" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="1gJuyfgAmhs" role="2OqNvi">
@@ -1290,10 +1290,10 @@
           <node concept="2OqwBi" id="f_T1XZkQ2U" role="3clFbG">
             <node concept="2YIFZM" id="1gJuyfgALbn" role="2Oq$k0">
               <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-              <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance():jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+              <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance()" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="f_T1XZkQES" role="2OqNvi">
-              <ref role="37wK5l" to="vndm:~LanguageRegistry.withAvailableLanguages(java.util.function.Consumer):void" resolve="withAvailableLanguages" />
+              <ref role="37wK5l" to="vndm:~LanguageRegistry.withAvailableLanguages(java.util.function.Consumer)" resolve="withAvailableLanguages" />
               <node concept="1bVj0M" id="f_T1XZkR0t" role="37wK5m">
                 <node concept="3clFbS" id="f_T1XZkR0u" role="1bW5cS">
                   <node concept="3cpWs8" id="1gJuyfgB5Da" role="3cqZAp">
@@ -1489,7 +1489,7 @@
                     <ref role="3cqZAo" node="1gJuyfgAS1J" resolve="language" />
                   </node>
                   <node concept="liA8E" id="1gJuyfgASh5" role="2OqNvi">
-                    <ref role="37wK5l" to="vndm:~LanguageRuntime.getNamespace():java.lang.String" resolve="getNamespace" />
+                    <ref role="37wK5l" to="vndm:~LanguageRuntime.getNamespace()" resolve="getNamespace" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="1gJuyfgASh6" role="3uHU7w">
@@ -1524,15 +1524,15 @@
                         <ref role="3cqZAo" node="1gJuyfgAS1J" resolve="language" />
                       </node>
                       <node concept="liA8E" id="f_T1XZkIk_" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                        <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                       </node>
                     </node>
                     <node concept="liA8E" id="f_T1XZkLES" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.getClassLoader():java.lang.ClassLoader" resolve="getClassLoader" />
+                      <ref role="37wK5l" to="wyt6:~Class.getClassLoader()" resolve="getClassLoader" />
                     </node>
                   </node>
                   <node concept="liA8E" id="1gJuyfgAUbX" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~ClassLoader.loadClass(java.lang.String):java.lang.Class" resolve="loadClass" />
+                    <ref role="37wK5l" to="wyt6:~ClassLoader.loadClass(java.lang.String)" resolve="loadClass" />
                     <node concept="37vLTw" id="1gJuyfgAUbY" role="37wK5m">
                       <ref role="3cqZAo" node="1gJuyfgASgW" resolve="descriptorClassName" />
                     </node>
@@ -1554,7 +1554,7 @@
                           <ref role="3cqZAo" node="1gJuyfgAUbU" resolve="descriptorClass" />
                         </node>
                         <node concept="liA8E" id="1gJuyfgAYng" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Class.getField(java.lang.String):java.lang.reflect.Field" resolve="getField" />
+                          <ref role="37wK5l" to="wyt6:~Class.getField(java.lang.String)" resolve="getField" />
                           <node concept="10M0yZ" id="1gJuyfgAYnh" role="37wK5m">
                             <ref role="1PxDUh" node="1gJuyfgAxHf" resolve="IUserStylesDescriptor" />
                             <ref role="3cqZAo" node="1gJuyfgAG0u" resolve="INSTANCE_FIELD_NAME" />
@@ -1562,7 +1562,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1gJuyfgAYni" role="2OqNvi">
-                        <ref role="37wK5l" to="t6h5:~Field.get(java.lang.Object):java.lang.Object" resolve="get" />
+                        <ref role="37wK5l" to="t6h5:~Field.get(java.lang.Object)" resolve="get" />
                         <node concept="10Nm6u" id="1gJuyfgAYnj" role="37wK5m" />
                       </node>
                     </node>
@@ -1672,7 +1672,7 @@
                 <ref role="3cqZAo" node="2qSTDMxYAxO" resolve="attributes" />
               </node>
               <node concept="liA8E" id="2qSTDMxY_MX" role="2OqNvi">
-                <ref role="37wK5l" to="8m69:~TextAttributes.getEffectType():com.intellij.openapi.editor.markup.EffectType" resolve="getEffectType" />
+                <ref role="37wK5l" to="8m69:~TextAttributes.getEffectType()" resolve="getEffectType" />
               </node>
             </node>
           </node>
@@ -1794,7 +1794,7 @@
                 <ref role="3cqZAo" node="Vx4CqFKTOl" resolve="attributes" />
               </node>
               <node concept="liA8E" id="Vx4CqFKTO_" role="2OqNvi">
-                <ref role="37wK5l" to="8m69:~TextAttributes.getEffectType():com.intellij.openapi.editor.markup.EffectType" resolve="getEffectType" />
+                <ref role="37wK5l" to="8m69:~TextAttributes.getEffectType()" resolve="getEffectType" />
               </node>
             </node>
           </node>
@@ -1873,7 +1873,7 @@
                 <ref role="3cqZAo" node="2qSTDMxYCyL" resolve="attributes" />
               </node>
               <node concept="liA8E" id="2qSTDMxYCz1" role="2OqNvi">
-                <ref role="37wK5l" to="8m69:~TextAttributes.getEffectType():com.intellij.openapi.editor.markup.EffectType" resolve="getEffectType" />
+                <ref role="37wK5l" to="8m69:~TextAttributes.getEffectType()" resolve="getEffectType" />
               </node>
             </node>
           </node>
@@ -1962,7 +1962,7 @@
                 <ref role="3cqZAo" node="Vx4CqFKT2Y" resolve="attributes" />
               </node>
               <node concept="liA8E" id="Vx4CqFKT3e" role="2OqNvi">
-                <ref role="37wK5l" to="8m69:~TextAttributes.getEffectType():com.intellij.openapi.editor.markup.EffectType" resolve="getEffectType" />
+                <ref role="37wK5l" to="8m69:~TextAttributes.getEffectType()" resolve="getEffectType" />
               </node>
             </node>
           </node>
@@ -2041,7 +2041,7 @@
                 <ref role="3cqZAo" node="2qSTDMxYEaQ" resolve="attributes" />
               </node>
               <node concept="liA8E" id="2qSTDMxYEb6" role="2OqNvi">
-                <ref role="37wK5l" to="8m69:~TextAttributes.getForegroundColor():java.awt.Color" resolve="getForegroundColor" />
+                <ref role="37wK5l" to="8m69:~TextAttributes.getForegroundColor()" resolve="getForegroundColor" />
               </node>
             </node>
           </node>
@@ -2128,7 +2128,7 @@
                 <ref role="3cqZAo" node="Vx4CqFKHyC" resolve="attributes" />
               </node>
               <node concept="liA8E" id="Vx4CqFKHyS" role="2OqNvi">
-                <ref role="37wK5l" to="8m69:~TextAttributes.getForegroundColor():java.awt.Color" resolve="getForegroundColor" />
+                <ref role="37wK5l" to="8m69:~TextAttributes.getForegroundColor()" resolve="getForegroundColor" />
               </node>
             </node>
           </node>
@@ -2207,7 +2207,7 @@
                 <ref role="3cqZAo" node="2qSTDMxYFzo" resolve="attributes" />
               </node>
               <node concept="liA8E" id="2qSTDMxYFzC" role="2OqNvi">
-                <ref role="37wK5l" to="8m69:~TextAttributes.getBackgroundColor():java.awt.Color" resolve="getBackgroundColor" />
+                <ref role="37wK5l" to="8m69:~TextAttributes.getBackgroundColor()" resolve="getBackgroundColor" />
               </node>
             </node>
           </node>
@@ -2294,7 +2294,7 @@
                 <ref role="3cqZAo" node="Vx4CqFKRrM" resolve="attributes" />
               </node>
               <node concept="liA8E" id="Vx4CqFKRs2" role="2OqNvi">
-                <ref role="37wK5l" to="8m69:~TextAttributes.getBackgroundColor():java.awt.Color" resolve="getBackgroundColor" />
+                <ref role="37wK5l" to="8m69:~TextAttributes.getBackgroundColor()" resolve="getBackgroundColor" />
               </node>
             </node>
           </node>
@@ -2368,7 +2368,7 @@
               <ref role="3cqZAo" node="2qSTDMxYIeS" resolve="attributes" />
             </node>
             <node concept="liA8E" id="2qSTDMxYK5D" role="2OqNvi">
-              <ref role="37wK5l" to="8m69:~TextAttributes.getFontType():int" resolve="getFontType" />
+              <ref role="37wK5l" to="8m69:~TextAttributes.getFontType()" resolve="getFontType" />
             </node>
           </node>
         </node>
@@ -2442,7 +2442,7 @@
           <node concept="3y3z36" id="3whqaarNLsg" role="3clFbw">
             <node concept="10Nm6u" id="3whqaarNLOC" role="3uHU7w" />
             <node concept="2YIFZM" id="3whqaarNGI8" role="3uHU7B">
-              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
               <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
           </node>
@@ -2452,17 +2452,17 @@
                 <node concept="2OqwBi" id="2qSTDMxYAbt" role="2Oq$k0">
                   <node concept="2YIFZM" id="2qSTDMxYAbu" role="2Oq$k0">
                     <ref role="1Pybhc" to="drih:~EditorColorsManager" resolve="EditorColorsManager" />
-                    <ref role="37wK5l" to="drih:~EditorColorsManager.getInstance():com.intellij.openapi.editor.colors.EditorColorsManager" resolve="getInstance" />
+                    <ref role="37wK5l" to="drih:~EditorColorsManager.getInstance()" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="2qSTDMxYAbv" role="2OqNvi">
-                    <ref role="37wK5l" to="drih:~EditorColorsManager.getGlobalScheme():com.intellij.openapi.editor.colors.EditorColorsScheme" resolve="getGlobalScheme" />
+                    <ref role="37wK5l" to="drih:~EditorColorsManager.getGlobalScheme()" resolve="getGlobalScheme" />
                   </node>
                 </node>
                 <node concept="liA8E" id="2qSTDMxYAbw" role="2OqNvi">
-                  <ref role="37wK5l" to="drih:~TextAttributesScheme.getAttributes(com.intellij.openapi.editor.colors.TextAttributesKey):com.intellij.openapi.editor.markup.TextAttributes" resolve="getAttributes" />
+                  <ref role="37wK5l" to="drih:~TextAttributesScheme.getAttributes(com.intellij.openapi.editor.colors.TextAttributesKey)" resolve="getAttributes" />
                   <node concept="2YIFZM" id="2qSTDMxYAbx" role="37wK5m">
                     <ref role="1Pybhc" to="drih:~TextAttributesKey" resolve="TextAttributesKey" />
-                    <ref role="37wK5l" to="drih:~TextAttributesKey.createTextAttributesKey(java.lang.String):com.intellij.openapi.editor.colors.TextAttributesKey" resolve="createTextAttributesKey" />
+                    <ref role="37wK5l" to="drih:~TextAttributesKey.createTextAttributesKey(java.lang.String)" resolve="createTextAttributesKey" />
                     <node concept="37vLTw" id="2qSTDMxYAb_" role="37wK5m">
                       <ref role="3cqZAo" node="2qSTDMxYAbz" resolve="key" />
                     </node>

@@ -90,7 +90,7 @@
                 <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,jetbrains.mps.messages.IMessageHandler)" resolve="GenPlanExtractor" />
                 <node concept="2OqwBi" id="CqDpWV7i6w" role="37wK5m">
                   <node concept="liA8E" id="CqDpWV7iiw" role="2OqNvi">
-                    <ref role="37wK5l" to="lui2:~SModule.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="lui2:~SModule.getRepository()" resolve="getRepository" />
                   </node>
                   <node concept="2OqwBi" id="3juJO4ZFleN" role="2Oq$k0">
                     <node concept="2JrnkZ" id="3juJO4ZFl6D" role="2Oq$k0">
@@ -99,7 +99,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="3juJO4ZFlVl" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                     </node>
                   </node>
                 </node>
@@ -107,7 +107,7 @@
               </node>
             </node>
             <node concept="liA8E" id="CqDpWV44pw" role="2OqNvi">
-              <ref role="37wK5l" to="ap4t:~GenPlanExtractor.hasPlan(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="hasPlan" />
+              <ref role="37wK5l" to="ap4t:~GenPlanExtractor.hasPlan(org.jetbrains.mps.openapi.model.SModel)" resolve="hasPlan" />
               <node concept="37vLTw" id="3juJO4ZFm9I" role="37wK5m">
                 <ref role="3cqZAo" node="3juJO4ZFinQ" resolve="mdl" />
               </node>

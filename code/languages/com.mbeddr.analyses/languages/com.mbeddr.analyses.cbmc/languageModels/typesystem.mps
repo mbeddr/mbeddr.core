@@ -2,15 +2,15 @@
 <model ref="r:191d4094-120c-4eb3-b601-c05696ec8de9(com.mbeddr.analyses.cbmc.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -595,7 +595,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2GZiJUXMe6H" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="10M0yZ" id="2GZiJUXMe6I" role="37wK5m">
                   <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
                   <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
@@ -612,8 +612,8 @@
                   <property role="TrG5h" value="tout" />
                   <node concept="10Oyi0" id="1XFitunRfpO" role="1tU5fm" />
                   <node concept="2YIFZM" id="1XFitunRfpP" role="33vP2m">
-                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
                     <node concept="2OqwBi" id="1XFitunRfpQ" role="37wK5m">
                       <node concept="1YBJjd" id="1XFitunRfpR" role="2Oq$k0">
                         <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
@@ -711,7 +711,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2GZiJUXMeDV" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="10M0yZ" id="2GZiJUXMeDW" role="37wK5m">
                   <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
                   <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
@@ -728,8 +728,8 @@
                   <property role="TrG5h" value="tout" />
                   <node concept="10Oyi0" id="5zmbZKrhdp0" role="1tU5fm" />
                   <node concept="2YIFZM" id="5zmbZKrhdp1" role="33vP2m">
-                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
                     <node concept="2OqwBi" id="5zmbZKrhdp2" role="37wK5m">
                       <node concept="1YBJjd" id="5zmbZKrhdp3" role="2Oq$k0">
                         <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
@@ -1687,6 +1687,26 @@
           <node concept="3w_OXm" id="7cbtYkHd2GD" role="2OqNvi" />
         </node>
       </node>
+      <node concept="3clFbH" id="nSzxU4UgJV" role="3cqZAp" />
+      <node concept="3clFbJ" id="nSzxU4UGLw" role="3cqZAp">
+        <node concept="3clFbS" id="nSzxU4UGLy" role="3clFbx">
+          <node concept="2MkqsV" id="nSzxU4UHLt" role="3cqZAp">
+            <node concept="Xl_RD" id="nSzxU4UHLu" role="2MkJ7o">
+              <property role="Xl_RC" value="this analysis requires that the names mangling is enabled in the BuildConfiguration" />
+            </node>
+            <node concept="1YBJjd" id="nSzxU4UHLv" role="2OEOjV">
+              <ref role="1YBMHb" node="7cbtYkHd14E" resolve="cProverBasedMbeddrAnalysis" />
+            </node>
+          </node>
+        </node>
+        <node concept="2YIFZM" id="nSzxU4UHxg" role="3clFbw">
+          <ref role="37wK5l" to="tzyt:nSzxU4NS97" resolve="checkBuildConfigDisablesNamesMangling" />
+          <ref role="1Pybhc" to="tzyt:37sMrNxDVH9" resolve="CProverConfigCheckingUtils" />
+          <node concept="1YBJjd" id="nSzxU4UHxh" role="37wK5m">
+            <ref role="1YBMHb" node="7cbtYkHd14E" resolve="cProverBasedMbeddrAnalysis" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="7cbtYkHd14E" role="1YuTPh">
       <property role="TrG5h" value="cProverBasedMbeddrAnalysis" />
@@ -1721,7 +1741,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2GZiJUXMkAZ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="10M0yZ" id="2GZiJUXMkB0" role="37wK5m">
                   <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
                   <ref role="3cqZAo" to="tzyt:5zmbZKqV1tt" resolve="NO_ANALYSIS_DEPTH_STRING" />
@@ -1738,8 +1758,8 @@
                   <property role="TrG5h" value="depth" />
                   <node concept="10Oyi0" id="2GZiJUXMkB6" role="1tU5fm" />
                   <node concept="2YIFZM" id="2GZiJUXMkB7" role="33vP2m">
-                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
                     <node concept="2OqwBi" id="2GZiJUXMkB8" role="37wK5m">
                       <node concept="1YBJjd" id="2GZiJUXMkB9" role="2Oq$k0">
                         <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />

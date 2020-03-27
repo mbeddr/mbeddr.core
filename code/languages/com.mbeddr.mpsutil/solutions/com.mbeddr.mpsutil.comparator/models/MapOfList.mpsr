@@ -235,13 +235,13 @@
               <ref role="3cqZAo" node="DYlgnA_npN" resolve="keys" />
             </node>
             <node concept="liA8E" id="DYlgnA_npW" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
               <node concept="2OqwBi" id="DYlgnA_npX" role="37wK5m">
                 <node concept="37vLTw" id="DYlgnA_npY" role="2Oq$k0">
                   <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
                 </node>
                 <node concept="liA8E" id="DYlgnA_npZ" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.keySet():java.util.Set" resolve="keySet" />
+                  <ref role="37wK5l" to="33ny:~Map.keySet()" resolve="keySet" />
                 </node>
               </node>
             </node>
@@ -290,7 +290,7 @@
                   <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
                 </node>
                 <node concept="liA8E" id="DYlgnA_nqi" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.keySet():java.util.Set" resolve="keySet" />
+                  <ref role="37wK5l" to="33ny:~Map.keySet()" resolve="keySet" />
                 </node>
               </node>
             </node>
@@ -320,7 +320,7 @@
               <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
             </node>
             <node concept="liA8E" id="DYlgnA_nqu" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+              <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object)" resolve="containsKey" />
               <node concept="37vLTw" id="DYlgnA_nqv" role="37wK5m">
                 <ref role="3cqZAo" node="DYlgnA_nqw" resolve="key" />
               </node>
@@ -353,7 +353,7 @@
                     <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
                   </node>
                   <node concept="liA8E" id="DYlgnA_nqH" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                    <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
                     <node concept="37vLTw" id="DYlgnA_nqI" role="37wK5m">
                       <ref role="3cqZAo" node="DYlgnA_nqO" resolve="key" />
                     </node>
@@ -367,7 +367,7 @@
                 <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
               </node>
               <node concept="liA8E" id="DYlgnA_nqM" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object)" resolve="containsKey" />
                 <node concept="37vLTw" id="DYlgnA_nqN" role="37wK5m">
                   <ref role="3cqZAo" node="DYlgnA_nqO" resolve="key" />
                 </node>
@@ -456,7 +456,7 @@
                   <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
                 </node>
                 <node concept="liA8E" id="DYlgnA_nrk" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                   <node concept="37vLTw" id="DYlgnA_nrl" role="37wK5m">
                     <ref role="3cqZAo" node="DYlgnA_nra" resolve="key" />
                   </node>
@@ -477,7 +477,7 @@
                 <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
               </node>
               <node concept="liA8E" id="DYlgnA_nrs" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object)" resolve="containsKey" />
                 <node concept="37vLTw" id="DYlgnA_nrt" role="37wK5m">
                   <ref role="3cqZAo" node="DYlgnA_nra" resolve="key" />
                 </node>
@@ -492,7 +492,7 @@
                 <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
               </node>
               <node concept="liA8E" id="DYlgnA_nry" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
                 <node concept="37vLTw" id="DYlgnA_nrz" role="37wK5m">
                   <ref role="3cqZAo" node="DYlgnA_nra" resolve="key" />
                 </node>
@@ -519,7 +519,7 @@
               <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
             </node>
             <node concept="liA8E" id="DYlgnA_nrH" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.clear():void" resolve="clear" />
+              <ref role="37wK5l" to="33ny:~Map.clear()" resolve="clear" />
             </node>
           </node>
         </node>
@@ -562,7 +562,7 @@
                 <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
               </node>
               <node concept="liA8E" id="DYlgnA_nrY" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object)" resolve="containsKey" />
                 <node concept="37vLTw" id="DYlgnA_nrZ" role="37wK5m">
                   <ref role="3cqZAo" node="DYlgnA_nrM" resolve="key" />
                 </node>
@@ -576,7 +576,7 @@
               <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
             </node>
             <node concept="liA8E" id="DYlgnA_ns3" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+              <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
               <node concept="37vLTw" id="DYlgnA_ns4" role="37wK5m">
                 <ref role="3cqZAo" node="DYlgnA_nrM" resolve="key" />
               </node>
@@ -613,7 +613,7 @@
               <ref role="3cqZAo" node="DYlgnA_jp1" resolve="map" />
             </node>
             <node concept="liA8E" id="6fymoI4XzXA" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.size():int" resolve="size" />
+              <ref role="37wK5l" to="33ny:~Map.size()" resolve="size" />
             </node>
           </node>
         </node>

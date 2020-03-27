@@ -2,19 +2,19 @@
 <model ref="r:f2d58214-2cd0-4751-90cb-df4411372a84(com.mbeddr.ext.concurrency.plainC.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
     <use id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -202,10 +202,6 @@
       <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
         <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
-      <concept id="5015072279636464462" name="jetbrains.mps.lang.generator.structure.VarMacro" flags="lg" index="2jeGV$">
-        <child id="5015072279636624635" name="type" index="2jfP_h" />
-        <child id="5015072279636624596" name="value" index="2jfP_Y" />
-      </concept>
       <concept id="5015072279636592410" name="jetbrains.mps.lang.generator.structure.VarMacro_ValueQuery" flags="in" index="2jfdEK" />
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1168559512253" name="jetbrains.mps.lang.generator.structure.DismissTopMappingRule" flags="lg" index="j$LIH">
@@ -264,6 +260,13 @@
         <child id="1195501105008" name="codeBlock" index="1pqMTA" />
       </concept>
       <concept id="1195500722856" name="jetbrains.mps.lang.generator.structure.MappingScript_CodeBlock" flags="in" index="1pplIY" />
+      <concept id="1048903277984099206" name="jetbrains.mps.lang.generator.structure.VarDeclaration" flags="ng" index="1ps_xZ">
+        <child id="1048903277984099209" name="type" index="1ps_xK" />
+        <child id="1048903277984099210" name="value" index="1ps_xN" />
+      </concept>
+      <concept id="1048903277984099198" name="jetbrains.mps.lang.generator.structure.VarMacro2" flags="lg" index="1ps_y7">
+        <child id="1048903277984099213" name="variables" index="1ps_xO" />
+      </concept>
       <concept id="1195502151594" name="jetbrains.mps.lang.generator.structure.MappingScriptReference" flags="lg" index="1puMqW">
         <reference id="1195502167610" name="mappingScript" index="1puQsG" />
       </concept>
@@ -1606,18 +1609,20 @@
               </node>
             </node>
             <node concept="raruj" id="2ajpxDX5fNR" role="lGtFl" />
-            <node concept="2jeGV$" id="5gYn0x87vKJ" role="lGtFl">
-              <property role="TrG5h" value="schedule" />
+            <node concept="1ps_y7" id="3pRoIUFYqUH" role="lGtFl">
               <ref role="2rW$FS" node="3qlQk_gtazj" resolve="scheduleStartFunction" />
-              <node concept="2jfdEK" id="5gYn0x87vKL" role="2jfP_Y">
-                <node concept="3clFbS" id="5gYn0x87vKN" role="2VODD2">
-                  <node concept="3clFbF" id="5gYn0x87yWg" role="3cqZAp">
-                    <node concept="30H73N" id="5gYn0x87yWf" role="3clFbG" />
+              <node concept="1ps_xZ" id="3pRoIUFYqUG" role="1ps_xO">
+                <property role="TrG5h" value="schedule" />
+                <node concept="3Tqbb2" id="5gYn0x87_sV" role="1ps_xK">
+                  <ref role="ehGHo" to="5wll:66UaKxBOkro" resolve="ScheduleSpecification" />
+                </node>
+                <node concept="2jfdEK" id="5gYn0x87vKL" role="1ps_xN">
+                  <node concept="3clFbS" id="5gYn0x87vKN" role="2VODD2">
+                    <node concept="3clFbF" id="5gYn0x87yWg" role="3cqZAp">
+                      <node concept="30H73N" id="5gYn0x87yWf" role="3clFbG" />
+                    </node>
                   </node>
                 </node>
-              </node>
-              <node concept="3Tqbb2" id="5gYn0x87_sV" role="2jfP_h">
-                <ref role="ehGHo" to="5wll:66UaKxBOkro" resolve="ScheduleSpecification" />
               </node>
             </node>
           </node>

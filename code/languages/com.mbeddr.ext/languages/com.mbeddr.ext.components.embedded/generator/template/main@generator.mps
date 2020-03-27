@@ -2,16 +2,16 @@
 <model ref="r:99039c48-485d-4884-89c3-631e32331188(com.mbeddr.ext.components.embedded.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <use id="028899e1-bfee-4db6-b470-ed0f9ee5f662" name="com.mbeddr.ext.components.embedded" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
-    <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
+    <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -134,10 +134,6 @@
       <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
         <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
-      <concept id="5015072279636464462" name="jetbrains.mps.lang.generator.structure.VarMacro" flags="lg" index="2jeGV$">
-        <child id="5015072279636624635" name="type" index="2jfP_h" />
-        <child id="5015072279636624596" name="value" index="2jfP_Y" />
-      </concept>
       <concept id="5015072279636592410" name="jetbrains.mps.lang.generator.structure.VarMacro_ValueQuery" flags="in" index="2jfdEK" />
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
@@ -167,6 +163,13 @@
         <child id="1195501105008" name="codeBlock" index="1pqMTA" />
       </concept>
       <concept id="1195500722856" name="jetbrains.mps.lang.generator.structure.MappingScript_CodeBlock" flags="in" index="1pplIY" />
+      <concept id="1048903277984099206" name="jetbrains.mps.lang.generator.structure.VarDeclaration" flags="ng" index="1ps_xZ">
+        <child id="1048903277984099209" name="type" index="1ps_xK" />
+        <child id="1048903277984099210" name="value" index="1ps_xN" />
+      </concept>
+      <concept id="1048903277984099198" name="jetbrains.mps.lang.generator.structure.VarMacro2" flags="lg" index="1ps_y7">
+        <child id="1048903277984099213" name="variables" index="1ps_xO" />
+      </concept>
       <concept id="1195502151594" name="jetbrains.mps.lang.generator.structure.MappingScriptReference" flags="lg" index="1puMqW">
         <reference id="1195502167610" name="mappingScript" index="1puQsG" />
       </concept>
@@ -196,14 +199,14 @@
       <concept id="1217884725453" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetCopiedOutputByInput" flags="nn" index="2f_y7m">
         <child id="1217884725459" name="inputNode" index="2f_y78" />
       </concept>
-      <concept id="2721957369897614808" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef" flags="nn" index="1bhEwm">
-        <reference id="2721957369897614810" name="varmacro" index="1bhEwk" />
-      </concept>
       <concept id="1216860049627" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" flags="nn" index="1iwH70">
         <reference id="1216860049628" name="label" index="1iwH77" />
         <child id="1216860049632" name="inputNode" index="1iwH7V" />
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+      <concept id="1048903277984174662" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef2" flags="nn" index="1psM6Z">
+        <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
+      </concept>
       <concept id="1217004708011" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetInputModel" flags="nn" index="1r8y6K" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -591,26 +594,28 @@
                 </node>
               </node>
             </node>
-            <node concept="2jeGV$" id="16gyj4BqyZl" role="lGtFl">
-              <property role="TrG5h" value="companions" />
-              <node concept="2jfdEK" id="16gyj4BqyZm" role="2jfP_Y">
-                <node concept="3clFbS" id="16gyj4BqyZn" role="2VODD2">
-                  <node concept="3clFbF" id="16gyj4BqLLo" role="3cqZAp">
-                    <node concept="2OqwBi" id="16gyj4BqM0C" role="3clFbG">
-                      <node concept="30H73N" id="16gyj4BqLLn" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="3F9kUG9BtWF" role="2OqNvi">
-                        <ref role="37wK5l" to="ifwr:3F9kUG9BoKj" resolve="getActiveCompanions" />
-                        <node concept="2OqwBi" id="3F9kUG9Clid" role="37wK5m">
-                          <node concept="1iwH7S" id="3F9kUG9CkCk" role="2Oq$k0" />
-                          <node concept="1r8y6K" id="3F9kUG9Ut8E" role="2OqNvi" />
+            <node concept="1ps_y7" id="3pRoIUFYqLO" role="lGtFl">
+              <node concept="1ps_xZ" id="3pRoIUFYqLN" role="1ps_xO">
+                <property role="TrG5h" value="companions" />
+                <node concept="2I9FWS" id="16gyj4BqX6T" role="1ps_xK">
+                  <ref role="2I9WkF" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
+                </node>
+                <node concept="2jfdEK" id="16gyj4BqyZm" role="1ps_xN">
+                  <node concept="3clFbS" id="16gyj4BqyZn" role="2VODD2">
+                    <node concept="3clFbF" id="16gyj4BqLLo" role="3cqZAp">
+                      <node concept="2OqwBi" id="16gyj4BqM0C" role="3clFbG">
+                        <node concept="30H73N" id="16gyj4BqLLn" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="3F9kUG9BtWF" role="2OqNvi">
+                          <ref role="37wK5l" to="ifwr:3F9kUG9BoKj" resolve="getActiveCompanions" />
+                          <node concept="2OqwBi" id="3F9kUG9Clid" role="37wK5m">
+                            <node concept="1iwH7S" id="3F9kUG9CkCk" role="2Oq$k0" />
+                            <node concept="1r8y6K" id="3F9kUG9Ut8E" role="2OqNvi" />
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="2I9FWS" id="16gyj4BqX6T" role="2jfP_h">
-                <ref role="2I9WkF" to="bs45:7X9xw2qH9LN" resolve="InterruptRunnableMapping" />
               </node>
             </node>
             <node concept="1W57fq" id="16gyj4Af7F_" role="lGtFl">
@@ -638,8 +643,8 @@
                         <node concept="2OqwBi" id="16gyj4Af$p2" role="3uHU7B">
                           <node concept="2OqwBi" id="16gyj4BqPXo" role="2Oq$k0">
                             <node concept="1iwH7S" id="16gyj4BqPq3" role="2Oq$k0" />
-                            <node concept="1bhEwm" id="16gyj4BqQLy" role="2OqNvi">
-                              <ref role="1bhEwk" node="16gyj4BqyZl" resolve="companions" />
+                            <node concept="1psM6Z" id="3pRoIUFYqLP" role="2OqNvi">
+                              <ref role="1psM6Y" node="3pRoIUFYqLN" resolve="companions" />
                             </node>
                           </node>
                           <node concept="34oBXx" id="16gyj4Ahaot" role="2OqNvi" />
@@ -872,8 +877,8 @@
                   <node concept="3clFbF" id="16gyj4AiJmM" role="3cqZAp">
                     <node concept="2OqwBi" id="16gyj4Br7eA" role="3clFbG">
                       <node concept="1iwH7S" id="16gyj4Br6Ig" role="2Oq$k0" />
-                      <node concept="1bhEwm" id="16gyj4Br7Q8" role="2OqNvi">
-                        <ref role="1bhEwk" node="16gyj4BqyZl" resolve="companions" />
+                      <node concept="1psM6Z" id="3pRoIUFYqLQ" role="2OqNvi">
+                        <ref role="1psM6Y" node="3pRoIUFYqLN" resolve="companions" />
                       </node>
                     </node>
                   </node>

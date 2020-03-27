@@ -4,7 +4,7 @@
   <languages>
     <use id="2e589a6f-51c3-423f-8ea2-0d769a5cc288" name="com.mbeddr.mpsutil.typsystem.trace" version="0" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
@@ -757,7 +757,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="7GAH1d2Pay" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
               </node>
             </node>
           </node>
@@ -934,7 +934,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4SFHv2pRHtX" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
               </node>
             </node>
           </node>
@@ -1123,7 +1123,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4SFHv2pRNjo" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
               </node>
             </node>
           </node>
@@ -1314,7 +1314,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4SFHv2pXSFH" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
               </node>
             </node>
           </node>
@@ -1493,7 +1493,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4SFHv2pXXFu" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
               </node>
             </node>
           </node>

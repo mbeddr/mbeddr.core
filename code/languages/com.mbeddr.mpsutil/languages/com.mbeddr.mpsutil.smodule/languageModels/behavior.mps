@@ -208,15 +208,15 @@
                         <node concept="2OqwBi" id="3d01KqFcoA9" role="3cqZAk">
                           <node concept="2OqwBi" id="3d01KqFcoAa" role="2Oq$k0">
                             <node concept="2YIFZM" id="3d01KqFcoAb" role="2Oq$k0">
-                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                             </node>
                             <node concept="liA8E" id="3d01KqFcoAc" role="2OqNvi">
-                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules():java.lang.Iterable" resolve="getModules" />
+                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules()" resolve="getModules" />
                             </node>
                           </node>
                           <node concept="liA8E" id="3d01KqFcoAd" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                            <ref role="37wK5l" to="wyt6:~Iterable.iterator()" resolve="iterator" />
                           </node>
                         </node>
                       </node>
@@ -367,14 +367,14 @@
                           <node concept="2OqwBi" id="3d01KqFgAZC" role="2Oq$k0">
                             <node concept="2YIFZM" id="3d01KqFgAZD" role="2Oq$k0">
                               <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
                             </node>
                             <node concept="liA8E" id="3d01KqFgAZE" role="2OqNvi">
-                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules():java.lang.Iterable" resolve="getModules" />
+                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules()" resolve="getModules" />
                             </node>
                           </node>
                           <node concept="liA8E" id="3d01KqFgAZF" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                            <ref role="37wK5l" to="wyt6:~Iterable.iterator()" resolve="iterator" />
                           </node>
                         </node>
                       </node>

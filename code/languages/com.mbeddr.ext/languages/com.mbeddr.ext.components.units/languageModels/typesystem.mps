@@ -468,7 +468,7 @@
                     <ref role="3cqZAo" node="qWsmfOQ1B5" resolve="buffer" />
                   </node>
                   <node concept="liA8E" id="qWsmfOQ2Ar" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                     <node concept="3cpWs3" id="qWsmfOQ4a1" role="37wK5m">
                       <node concept="Xl_RD" id="qWsmfOQ4a4" role="3uHU7w">
                         <property role="Xl_RC" value=" for a generic unit is not unique within the component, interfaces " />
@@ -526,7 +526,7 @@
                               <ref role="3cqZAo" node="qWsmfOQ1B5" resolve="buffer" />
                             </node>
                             <node concept="liA8E" id="qWsmfOQuze" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                              <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                               <node concept="Xl_RD" id="qWsmfOQuzD" role="37wK5m">
                                 <property role="Xl_RC" value=", " />
                               </node>
@@ -542,7 +542,7 @@
                         <ref role="3cqZAo" node="qWsmfOQ1B5" resolve="buffer" />
                       </node>
                       <node concept="liA8E" id="qWsmfOQuWa" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                         <node concept="2OqwBi" id="qWsmfOQzcy" role="37wK5m">
                           <node concept="2OqwBi" id="qWsmfOQvey" role="2Oq$k0">
                             <node concept="2GrUjf" id="qWsmfOQuWL" role="2Oq$k0">
@@ -577,7 +577,7 @@
                     <ref role="3cqZAo" node="qWsmfOQ1B5" resolve="buffer" />
                   </node>
                   <node concept="liA8E" id="qWsmfOQa$F" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                     <node concept="Xl_RD" id="qWsmfOQa_6" role="37wK5m">
                       <property role="Xl_RC" value=" use it!" />
                     </node>
@@ -593,7 +593,7 @@
                     <ref role="3cqZAo" node="qWsmfOQ1B5" resolve="buffer" />
                   </node>
                   <node concept="liA8E" id="qWsmfOQbD7" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+                    <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
                   </node>
                 </node>
               </node>
@@ -715,7 +715,7 @@
           <property role="3TUv4t" value="true" />
           <node concept="10Oyi0" id="brG9xosr6e" role="1tU5fm" />
           <node concept="2YIFZM" id="brG9xosr6f" role="33vP2m">
-            <ref role="37wK5l" to="wyt6:~Math.min(int,int):int" resolve="min" />
+            <ref role="37wK5l" to="wyt6:~Math.min(int,int)" resolve="min" />
             <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
             <node concept="37vLTw" id="brG9xosr6g" role="37wK5m">
               <ref role="3cqZAo" node="brG9xosr60" resolve="actualCount" />

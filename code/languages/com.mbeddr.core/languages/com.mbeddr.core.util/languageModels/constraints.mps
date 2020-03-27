@@ -404,7 +404,7 @@
                 <node concept="2OqwBi" id="16nhtBDHNFU" role="3uHU7B">
                   <node concept="1Wqviy" id="16nhtBDHNwI" role="2Oq$k0" />
                   <node concept="liA8E" id="16nhtBDHOMO" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.indexOf(int):int" resolve="indexOf" />
+                    <ref role="37wK5l" to="wyt6:~String.indexOf(int)" resolve="indexOf" />
                     <node concept="1Xhbcc" id="16nhtBDHP7W" role="37wK5m">
                       <property role="1XhdNS" value="\&quot;" />
                     </node>

@@ -271,7 +271,7 @@
               <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
             </node>
             <node concept="2YIFZM" id="6uep02NYWn1" role="33vP2m">
-              <ref role="37wK5l" to="ykok:~ModelConstraints.getScope(org.jetbrains.mps.openapi.model.SReference):jetbrains.mps.scope.Scope" resolve="getScope" />
+              <ref role="37wK5l" to="ykok:~ModelConstraints.getScope(org.jetbrains.mps.openapi.model.SReference)" resolve="getScope" />
               <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
               <node concept="BsUDl" id="6uep02NYWn2" role="37wK5m">
                 <ref role="37wK5l" node="Uhkfo4G1Rn" resolve="getCheckedReference" />
@@ -517,11 +517,11 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="Uhkfo4Gzaq" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                              <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                             </node>
                           </node>
                           <node concept="liA8E" id="Uhkfo4Gzar" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>
@@ -561,11 +561,11 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="Uhkfo4Gxhy" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                              <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                             </node>
                           </node>
                           <node concept="liA8E" id="Uhkfo4Gxwz" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>

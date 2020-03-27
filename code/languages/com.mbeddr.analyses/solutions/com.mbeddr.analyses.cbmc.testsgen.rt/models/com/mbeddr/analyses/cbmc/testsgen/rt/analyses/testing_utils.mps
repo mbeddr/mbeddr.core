@@ -4,10 +4,10 @@
   <languages>
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -809,7 +809,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="73BQep1R6vZ" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="73BQep1R6w0" role="37wK5m">
                                   <ref role="3cqZAo" node="73BQep1R4az" resolve="funName" />
                                 </node>
@@ -861,7 +861,7 @@
                     <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                   </node>
                   <node concept="liA8E" id="73BQep1UUVo" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                     <node concept="3cpWs3" id="3rqorKKizol" role="37wK5m">
                       <node concept="Xl_RD" id="73BQep1UVbr" role="3uHU7B">
                         <property role="Xl_RC" value="&gt;&gt;&gt;-------- " />
@@ -908,7 +908,7 @@
                             <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                           </node>
                           <node concept="liA8E" id="73BQep1USeI" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="3cpWs3" id="73BQep1UStY" role="37wK5m">
                               <node concept="2OqwBi" id="73BQep1UU1o" role="3uHU7w">
                                 <node concept="2OqwBi" id="73BQep1USyV" role="2Oq$k0">
@@ -949,7 +949,7 @@
                             <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                           </node>
                           <node concept="liA8E" id="MynG9Rgq4j" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="3cpWs3" id="MynG9Rgxsf" role="37wK5m">
                               <node concept="2OqwBi" id="MynG9RgxOJ" role="3uHU7w">
                                 <node concept="Jnkvi" id="MynG9RgxGB" role="2Oq$k0">
@@ -1010,7 +1010,7 @@
                     <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                   </node>
                   <node concept="liA8E" id="73BQep1UX42" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                     <node concept="Xl_RD" id="73BQep1UX43" role="37wK5m">
                       <property role="Xl_RC" value="--------&lt;&lt;&lt;" />
                     </node>

@@ -1233,7 +1233,7 @@
                               <ref role="3cqZAo" node="2RuYu6TnDUV" resolve="g" />
                             </node>
                             <node concept="liA8E" id="2RuYu6TnEpB" role="2OqNvi">
-                              <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int):void" resolve="drawLine" />
+                              <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int)" resolve="drawLine" />
                               <node concept="37vLTw" id="2RuYu6TnFZj" role="37wK5m">
                                 <ref role="3cqZAo" node="2RuYu6TnFZf" resolve="bx" />
                               </node>
@@ -1265,7 +1265,7 @@
                               <ref role="3cqZAo" node="2RuYu6TnDUV" resolve="g" />
                             </node>
                             <node concept="liA8E" id="2RuYu6TnH5k" role="2OqNvi">
-                              <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int):void" resolve="drawLine" />
+                              <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int)" resolve="drawLine" />
                               <node concept="37vLTw" id="2RuYu6TnH5l" role="37wK5m">
                                 <ref role="3cqZAo" node="2RuYu6TnFZf" resolve="bx" />
                               </node>
@@ -1549,7 +1549,7 @@
               <node concept="2OqwBi" id="503aabBuw_l" role="3clFbG">
                 <node concept="ub8z3" id="503aabBuw9a" role="2Oq$k0" />
                 <node concept="liA8E" id="503aabBuxfs" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                  <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
                   <node concept="Xl_RD" id="503aabBuxnb" role="37wK5m">
                     <property role="Xl_RC" value="null" />
                   </node>
@@ -1597,11 +1597,11 @@
             <node concept="3clFbF" id="2_xtqg$WAA3" role="3cqZAp">
               <node concept="2OqwBi" id="3x42ltMQFGk" role="3clFbG">
                 <node concept="2YIFZM" id="3x42ltMQFG7" role="2Oq$k0">
-                  <ref role="37wK5l" to="ddhc:~CopyPasteManagerEx.getInstanceEx():com.intellij.ide.CopyPasteManagerEx" resolve="getInstanceEx" />
+                  <ref role="37wK5l" to="ddhc:~CopyPasteManagerEx.getInstanceEx()" resolve="getInstanceEx" />
                   <ref role="1Pybhc" to="ddhc:~CopyPasteManagerEx" resolve="CopyPasteManagerEx" />
                 </node>
                 <node concept="liA8E" id="3x42ltMQFGq" role="2OqNvi">
-                  <ref role="37wK5l" to="ddhc:~CopyPasteManagerEx.setContents(java.awt.datatransfer.Transferable):void" resolve="setContents" />
+                  <ref role="37wK5l" to="ddhc:~CopyPasteManagerEx.setContents(java.awt.datatransfer.Transferable)" resolve="setContents" />
                   <node concept="2ShNRf" id="3x42ltMQFGr" role="37wK5m">
                     <node concept="1pGfFk" id="3x42ltMQHdC" role="2ShVmc">
                       <ref role="37wK5l" to="kt01:~StringSelection.&lt;init&gt;(java.lang.String)" resolve="StringSelection" />

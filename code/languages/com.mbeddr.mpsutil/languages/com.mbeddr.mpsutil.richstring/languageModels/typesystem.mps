@@ -629,7 +629,7 @@
             <node concept="2OqwBi" id="6Go9U2yp5ek" role="33vP2m">
               <node concept="2QUAEa" id="6Go9U2yp5el" role="2Oq$k0" />
               <node concept="liA8E" id="6Go9U2yp5em" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
               </node>
             </node>
           </node>
@@ -682,7 +682,7 @@
                               <ref role="3cqZAo" node="6Go9U2yp5ei" resolve="subtypingManager" />
                             </node>
                             <node concept="liA8E" id="5Bl4dfrtvIg" role="2OqNvi">
-                              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):boolean" resolve="isSubtype" />
+                              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="isSubtype" />
                               <node concept="37vLTw" id="5Bl4dfrtvON" role="37wK5m">
                                 <ref role="3cqZAo" node="7Ssz$kYu7Mw" resolve="type" />
                               </node>
@@ -744,7 +744,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5Bl4dfrdtLt" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                      <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="5Bl4dfrdrtW" role="3uHU7B">
@@ -752,7 +752,7 @@
                       <ref role="3cqZAo" node="7Ssz$kYu7Mw" resolve="type" />
                     </node>
                     <node concept="liA8E" id="5Bl4dfrdrFa" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                      <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                     </node>
                   </node>
                 </node>
@@ -989,7 +989,7 @@
           <node concept="2OqwBi" id="6Go9U2yxW75" role="33vP2m">
             <node concept="2QUAEa" id="6Go9U2yxW76" role="2Oq$k0" />
             <node concept="liA8E" id="6Go9U2yxW77" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~TypeChecker.getTypeOf(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf" />
+              <ref role="37wK5l" to="u78q:~TypeChecker.getTypeOf(org.jetbrains.mps.openapi.model.SNode)" resolve="getTypeOf" />
               <node concept="2OqwBi" id="6Go9U2yxW78" role="37wK5m">
                 <node concept="37vLTw" id="6Go9U2yxW79" role="2Oq$k0">
                   <ref role="3cqZAo" node="6Go9U2yxVYg" resolve="inlineFormat" />
@@ -1650,14 +1650,14 @@
               </node>
             </node>
             <node concept="liA8E" id="41Fzz2axH7S" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String)" resolve="getProperty" />
               <node concept="Xl_RD" id="41Fzz2axHdr" role="37wK5m">
                 <property role="Xl_RC" value="width" />
               </node>
             </node>
           </node>
           <node concept="liA8E" id="41Fzz2axIro" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+            <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
             <node concept="Xl_RD" id="41Fzz2axIsW" role="37wK5m">
               <property role="Xl_RC" value="0" />
             </node>

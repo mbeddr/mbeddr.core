@@ -518,10 +518,10 @@
                       <node concept="2OqwBi" id="2bBLuwRrLOQ" role="3uHU7B">
                         <node concept="2YIFZM" id="2bBLuwRrLOR" role="2Oq$k0">
                           <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                         </node>
                         <node concept="liA8E" id="2bBLuwRrLOS" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                         </node>
                       </node>
                     </node>
@@ -828,11 +828,11 @@
                     </node>
                     <node concept="2OqwBi" id="4N5UlZQyRmh" role="3uHU7B">
                       <node concept="2YIFZM" id="4N5UlZQyQPh" role="2Oq$k0">
-                        <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                        <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                         <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                       </node>
                       <node concept="liA8E" id="4N5UlZQyT4k" role="2OqNvi">
-                        <ref role="37wK5l" to="exr9:~EditorSettings.getVerticalBoundWidth():int" resolve="getVerticalBoundWidth" />
+                        <ref role="37wK5l" to="exr9:~EditorSettings.getVerticalBoundWidth()" resolve="getVerticalBoundWidth" />
                       </node>
                     </node>
                   </node>
@@ -1509,6 +1509,12 @@
         </node>
       </node>
       <node concept="2iRfu4" id="7dN4gbai3$2" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3FW9mgpuDXV">
+    <ref role="1XX52x" to="3673:3FW9mgpuDNq" resolve="EvaluatorExpression" />
+    <node concept="PMmxH" id="3FW9mgpuDXX" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

@@ -140,7 +140,7 @@ task printVersions {
 
 task printRepositories {
     doLast {
-        println "snapshotRepository: $snapshotRepository" 
+        println "snapshotRepository: $snapshotRepository"
         println "releaseRepository: $releaseRepository"
         println "dependencyRepositories: $dependencyRepositories"
     }

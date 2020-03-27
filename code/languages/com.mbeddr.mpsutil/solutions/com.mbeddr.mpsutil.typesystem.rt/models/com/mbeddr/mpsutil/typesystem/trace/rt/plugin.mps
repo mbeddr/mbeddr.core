@@ -397,10 +397,10 @@
               <node concept="2OqwBi" id="7GAH1cKT9w" role="3clFbG">
                 <node concept="2YIFZM" id="7GAH1cKT9x" role="2Oq$k0">
                   <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
-                  <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
+                  <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance()" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="7GAH1cKT9y" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeContextManager.runTypeCheckingAction(jetbrains.mps.typesystem.inference.ITypeContextOwner,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.ITypechecking$Action):void" resolve="runTypeCheckingAction" />
+                  <ref role="37wK5l" to="u78q:~TypeContextManager.runTypeCheckingAction(jetbrains.mps.typesystem.inference.ITypeContextOwner,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.ITypechecking$Action)" resolve="runTypeCheckingAction" />
                   <node concept="37vLTw" id="7GAH1cKX9E" role="37wK5m">
                     <ref role="3cqZAo" node="7GAH1cKUPh" resolve="owner" />
                   </node>
@@ -433,7 +433,7 @@
                                   <ref role="3cqZAo" node="7GAH1cKT9G" resolve="typeCheckingContext" />
                                 </node>
                                 <node concept="liA8E" id="7GAH1d18n_" role="2OqNvi">
-                                  <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkIfNotChecked(org.jetbrains.mps.openapi.model.SNode,boolean):boolean" resolve="checkIfNotChecked" />
+                                  <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkIfNotChecked(org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="checkIfNotChecked" />
                                   <node concept="37vLTw" id="7egl4EhzZbT" role="37wK5m">
                                     <ref role="3cqZAo" node="7egl4EhzYMt" resolve="finalNode" />
                                   </node>
@@ -485,7 +485,7 @@
               <ref role="3cqZAo" node="2DOqMKpVHm3" resolve="tool" />
             </node>
             <node concept="liA8E" id="2DOqMKpWOaf" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean):void" resolve="openTool" />
+              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
               <node concept="3clFbT" id="2DOqMKpWOsI" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -921,7 +921,7 @@
               </node>
             </node>
             <node concept="liA8E" id="FUKXd70Z99" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JTable.setModel(javax.swing.table.TableModel):void" resolve="setModel" />
+              <ref role="37wK5l" to="dxuu:~JTable.setModel(javax.swing.table.TableModel)" resolve="setModel" />
               <node concept="2OqwBi" id="6u6UJCOMCeR" role="37wK5m">
                 <node concept="2WthIp" id="6u6UJCOMCeU" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="6u6UJCOMCeW" role="2OqNvi">
@@ -988,7 +988,7 @@
               </node>
             </node>
             <node concept="liA8E" id="FUKXd70u4y" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JTable.setFillsViewportHeight(boolean):void" resolve="setFillsViewportHeight" />
+              <ref role="37wK5l" to="dxuu:~JTable.setFillsViewportHeight(boolean)" resolve="setFillsViewportHeight" />
               <node concept="3clFbT" id="FUKXd70uyT" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -1004,7 +1004,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2DOqMKsgl31" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JTable.setAutoCreateRowSorter(boolean):void" resolve="setAutoCreateRowSorter" />
+              <ref role="37wK5l" to="dxuu:~JTable.setAutoCreateRowSorter(boolean)" resolve="setAutoCreateRowSorter" />
               <node concept="3clFbT" id="2DOqMKsglSs" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -1021,7 +1021,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1l$_O38sfi7" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Component.addMouseListener(java.awt.event.MouseListener):void" resolve="addMouseListener" />
+              <ref role="37wK5l" to="z60i:~Component.addMouseListener(java.awt.event.MouseListener)" resolve="addMouseListener" />
               <node concept="2ShNRf" id="1l$_O38sh7r" role="37wK5m">
                 <node concept="YeOm9" id="1l$_O38tYTF" role="2ShVmc">
                   <node concept="1Y3b0j" id="1l$_O38tYTI" role="YeSDq">
@@ -1058,13 +1058,13 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1l$_O38uzqP" role="2OqNvi">
-                                    <ref role="37wK5l" to="dxuu:~JTable.rowAtPoint(java.awt.Point):int" resolve="rowAtPoint" />
+                                    <ref role="37wK5l" to="dxuu:~JTable.rowAtPoint(java.awt.Point)" resolve="rowAtPoint" />
                                     <node concept="2OqwBi" id="1l$_O38uzqQ" role="37wK5m">
                                       <node concept="37vLTw" id="1l$_O38uzqR" role="2Oq$k0">
                                         <ref role="3cqZAo" node="1l$_O38u1yX" resolve="e" />
                                       </node>
                                       <node concept="liA8E" id="1l$_O38uzqS" role="2OqNvi">
-                                        <ref role="37wK5l" to="hyam:~MouseEvent.getPoint():java.awt.Point" resolve="getPoint" />
+                                        <ref role="37wK5l" to="hyam:~MouseEvent.getPoint()" resolve="getPoint" />
                                       </node>
                                     </node>
                                   </node>
@@ -1085,13 +1085,13 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1l$_O38uR1$" role="2OqNvi">
-                                    <ref role="37wK5l" to="dxuu:~JTable.columnAtPoint(java.awt.Point):int" resolve="columnAtPoint" />
+                                    <ref role="37wK5l" to="dxuu:~JTable.columnAtPoint(java.awt.Point)" resolve="columnAtPoint" />
                                     <node concept="2OqwBi" id="1l$_O38uR1_" role="37wK5m">
                                       <node concept="37vLTw" id="1l$_O38uR1A" role="2Oq$k0">
                                         <ref role="3cqZAo" node="1l$_O38u1yX" resolve="e" />
                                       </node>
                                       <node concept="liA8E" id="1l$_O38uR1B" role="2OqNvi">
-                                        <ref role="37wK5l" to="hyam:~MouseEvent.getPoint():java.awt.Point" resolve="getPoint" />
+                                        <ref role="37wK5l" to="hyam:~MouseEvent.getPoint()" resolve="getPoint" />
                                       </node>
                                     </node>
                                   </node>
@@ -1107,7 +1107,7 @@
                                 <ref role="3cqZAo" node="1l$_O38u1yX" resolve="e" />
                               </node>
                               <node concept="liA8E" id="1l$_O38u6XT" role="2OqNvi">
-                                <ref role="37wK5l" to="hyam:~MouseEvent.getClickCount():int" resolve="getClickCount" />
+                                <ref role="37wK5l" to="hyam:~MouseEvent.getClickCount()" resolve="getClickCount" />
                               </node>
                             </node>
                             <node concept="3cmrfG" id="1l$_O38ucaz" role="3uHU7w">
@@ -1117,7 +1117,7 @@
                         </node>
                         <node concept="3clFbF" id="1l$_O38u1z4" role="3cqZAp">
                           <node concept="3nyPlj" id="1l$_O38u1z3" role="3clFbG">
-                            <ref role="37wK5l" to="hyam:~MouseAdapter.mouseClicked(java.awt.event.MouseEvent):void" resolve="mouseClicked" />
+                            <ref role="37wK5l" to="hyam:~MouseAdapter.mouseClicked(java.awt.event.MouseEvent)" resolve="mouseClicked" />
                             <node concept="37vLTw" id="1l$_O38u1z2" role="37wK5m">
                               <ref role="3cqZAo" node="1l$_O38u1yX" resolve="e" />
                             </node>
@@ -1159,7 +1159,7 @@
               <ref role="3cqZAo" node="FUKXd6Yl_O" resolve="panel" />
             </node>
             <node concept="liA8E" id="FUKXd70gkl" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
               <node concept="37vLTw" id="FUKXd70gS_" role="37wK5m">
                 <ref role="3cqZAo" node="FUKXd6ZHIS" resolve="scroll" />
               </node>

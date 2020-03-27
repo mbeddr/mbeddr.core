@@ -2,7 +2,7 @@
 <model ref="r:dd2d2740-4836-4acd-a62e-c8da61d89a58(doc.com.mbeddr.mpsutil.multilingual.lang.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="ea7c5f4a-5621-4b35-a7bb-9aaab820eaf7" name="doc.com.mbeddr.mpsutil.multilingual.lang" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />

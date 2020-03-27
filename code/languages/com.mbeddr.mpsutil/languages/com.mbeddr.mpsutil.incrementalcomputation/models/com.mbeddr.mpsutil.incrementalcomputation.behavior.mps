@@ -439,7 +439,7 @@
                   <node concept="13iPFW" id="2S2eLhiM_Te" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="2S2eLhiM_Tf" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                   <node concept="10M0yZ" id="3mJtqpyRjzn" role="37wK5m">
                     <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
                     <ref role="3cqZAo" to="hz0z:3mJtqpyRiaj" resolve="USER_OBJECT_ID" />
@@ -470,7 +470,7 @@
                   <node concept="13iPFW" id="2S2eLhiMJxp" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="2S2eLhiMJxq" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                   <node concept="10M0yZ" id="3mJtqpyRjq3" role="37wK5m">
                     <ref role="3cqZAo" to="hz0z:3mJtqpyRiaj" resolve="USER_OBJECT_ID" />
                     <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
@@ -487,7 +487,7 @@
                   <node concept="13iPFW" id="lNBnHjWA3v" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="lNBnHjWA3w" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                   <node concept="10M0yZ" id="3mJtqpyRjtN" role="37wK5m">
                     <ref role="3cqZAo" to="hz0z:3mJtqpyRiaj" resolve="USER_OBJECT_ID" />
                     <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />

@@ -1226,7 +1226,7 @@
               </node>
               <node concept="2YIFZM" id="6o2p2Z0F$mI" role="3clFbw">
                 <ref role="1Pybhc" to="ggp6:~MatchingUtil" resolve="MatchingUtil" />
-                <ref role="37wK5l" to="ggp6:~MatchingUtil.matchNodes(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="matchNodes" />
+                <ref role="37wK5l" to="ggp6:~MatchingUtil.matchNodes(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="matchNodes" />
                 <node concept="37vLTw" id="6o2p2Z0F$mJ" role="37wK5m">
                   <ref role="3cqZAo" node="6o2p2Z0F$mL" resolve="selExpr" />
                 </node>

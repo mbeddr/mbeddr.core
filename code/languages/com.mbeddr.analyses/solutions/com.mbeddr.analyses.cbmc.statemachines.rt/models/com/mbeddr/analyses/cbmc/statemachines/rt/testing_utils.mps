@@ -292,7 +292,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="6m6BTo4RLxN" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="6m6BTo4RLxO" role="37wK5m">
                                   <ref role="3cqZAo" node="6m6BTo4RcLc" resolve="entryName" />
                                 </node>
@@ -488,7 +488,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="3f3CxMd$BDz" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="3f3CxMd$BRZ" role="37wK5m">
                                   <ref role="3cqZAo" node="3f3CxMd$m1g" resolve="entryFunctionName" />
                                 </node>
@@ -647,7 +647,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="3f3CxMd$cY2" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="3f3CxMd$cY3" role="37wK5m">
                                   <ref role="3cqZAo" node="3f3CxMd$cYI" resolve="statemachineName" />
                                 </node>

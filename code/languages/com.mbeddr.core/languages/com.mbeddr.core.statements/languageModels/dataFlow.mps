@@ -1201,7 +1201,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="7HkFchP1Gy3" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                          <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                           <node concept="37vLTw" id="7HkFchP1Gy4" role="37wK5m">
                             <ref role="3cqZAo" node="7HkFchP1Gpw" resolve="i" />
                           </node>
@@ -1258,7 +1258,7 @@
                               <ref role="3cqZAo" node="50VOb6Khs42" resolve="caseResult" />
                             </node>
                             <node concept="liA8E" id="50VOb6Khs4F" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                               <node concept="37vLTw" id="5HxjapweqhF" role="37wK5m">
                                 <ref role="3cqZAo" node="50VOb6Khs0Z" resolve="expressionResult" />
                               </node>
@@ -1282,7 +1282,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="7HkFchP1GsM" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                              <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
                             </node>
                           </node>
                         </node>
@@ -1422,7 +1422,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="50VOb6Khs23" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                            <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                             <node concept="37vLTw" id="50VOb6Khs24" role="37wK5m">
                               <ref role="3cqZAo" node="50VOb6Khs2_" resolve="i" />
                             </node>
@@ -1458,7 +1458,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="50VOb6Khs2j" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                            <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
                           </node>
                         </node>
                       </node>

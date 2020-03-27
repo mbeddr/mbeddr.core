@@ -438,11 +438,11 @@
             <node concept="3cpWs6" id="3greo4NG6Lo" role="3cqZAp">
               <node concept="2OqwBi" id="2AZbPfMaGnH" role="3cqZAk">
                 <node concept="liA8E" id="2AZbPfMaGnI" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                 </node>
                 <node concept="2OqwBi" id="2AZbPfMaGnJ" role="2Oq$k0">
                   <node concept="liA8E" id="2AZbPfMaGnK" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                   </node>
                   <node concept="2JrnkZ" id="2AZbPfMaGnL" role="2Oq$k0">
                     <node concept="2OqwBi" id="2AZbPfMaGnM" role="2JrQYb">
@@ -848,7 +848,7 @@
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
                 </node>
                 <node concept="2YIFZM" id="5BlDGARhx_t" role="33vP2m">
-                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                   <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                   <node concept="2OqwBi" id="5BlDGARhx_u" role="37wK5m">
                     <node concept="13iPFW" id="5BlDGARhx_v" role="2Oq$k0" />
@@ -1200,7 +1200,7 @@
                     </node>
                     <node concept="2YIFZM" id="5BlDGARhikB" role="33vP2m">
                       <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                      <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                      <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                       <node concept="2OqwBi" id="5BlDGARhikC" role="37wK5m">
                         <node concept="13iPFW" id="5BlDGARhtDh" role="2Oq$k0" />
                         <node concept="3TrcHB" id="5BlDGARhikE" role="2OqNvi">
@@ -1969,11 +1969,11 @@
             <node concept="3cpWs6" id="3greo4NG93s" role="3cqZAp">
               <node concept="2OqwBi" id="2AZbPfMaGob" role="3cqZAk">
                 <node concept="liA8E" id="2AZbPfMaGoc" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                 </node>
                 <node concept="2OqwBi" id="2AZbPfMaGod" role="2Oq$k0">
                   <node concept="liA8E" id="2AZbPfMaGoe" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                   </node>
                   <node concept="2JrnkZ" id="2AZbPfMaGof" role="2Oq$k0">
                     <node concept="2OqwBi" id="2AZbPfMaGog" role="2JrQYb">
@@ -2031,7 +2031,7 @@
           <node concept="3clFbS" id="vRfru3oVPT" role="SfCbr">
             <node concept="3cpWs6" id="vRfru3oVQ2" role="3cqZAp">
               <node concept="2YIFZM" id="vRfru3oR1W" role="3cqZAk">
-                <ref role="37wK5l" to="wyt6:~Float.valueOf(java.lang.String):java.lang.Float" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~Float.valueOf(java.lang.String)" resolve="valueOf" />
                 <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
                 <node concept="2OqwBi" id="vRfru3oR2i" role="37wK5m">
                   <node concept="13iPFW" id="vRfru3oR1X" role="2Oq$k0" />

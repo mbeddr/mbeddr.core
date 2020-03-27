@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -511,11 +511,11 @@
                     <node concept="3clFbF" id="2U5fsQel_1$" role="3cqZAp">
                       <node concept="2OqwBi" id="2AZbPfMaGo5" role="3clFbG">
                         <node concept="liA8E" id="2AZbPfMaGo6" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                          <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                         </node>
                         <node concept="2OqwBi" id="2AZbPfMaGo7" role="2Oq$k0">
                           <node concept="liA8E" id="2AZbPfMaGo8" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                            <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                           </node>
                           <node concept="2JrnkZ" id="2AZbPfMaGo9" role="2Oq$k0">
                             <node concept="30H73N" id="2AZbPfMaGoa" role="2JrQYb" />
@@ -773,11 +773,11 @@
                     <node concept="3clFbF" id="2U5fsQemwDt" role="3cqZAp">
                       <node concept="2OqwBi" id="2AZbPfMaGor" role="3clFbG">
                         <node concept="liA8E" id="2AZbPfMaGos" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                          <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                         </node>
                         <node concept="2OqwBi" id="2AZbPfMaGot" role="2Oq$k0">
                           <node concept="liA8E" id="2AZbPfMaGou" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                            <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                           </node>
                           <node concept="2JrnkZ" id="2AZbPfMaGov" role="2Oq$k0">
                             <node concept="30H73N" id="2AZbPfMaGow" role="2JrQYb" />
@@ -1452,7 +1452,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1SbcsMA8H_W" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -1499,7 +1499,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="1SbcsMA8H_S" role="2OqNvi">
-                                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                                       </node>
                                     </node>
                                     <node concept="Xl_RD" id="2U5fsQemvKk" role="3uHU7w">
@@ -1826,7 +1826,7 @@
                       <node concept="3cpWsb" id="3WZzKB5aREX" role="1tU5fm" />
                       <node concept="2YIFZM" id="3WZzKB5aRFu" role="33vP2m">
                         <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-                        <ref role="37wK5l" to="wyt6:~Long.valueOf(java.lang.String):java.lang.Long" resolve="valueOf" />
+                        <ref role="37wK5l" to="wyt6:~Long.valueOf(java.lang.String)" resolve="valueOf" />
                         <node concept="2OqwBi" id="3WZzKB5aRFO" role="37wK5m">
                           <node concept="30H73N" id="7MGLj3bSooA" role="2Oq$k0" />
                           <node concept="3TrcHB" id="3WZzKB5aRFX" role="2OqNvi">
@@ -1843,7 +1843,7 @@
                         <ref role="3uigEE" to="25x5:~DateFormat" resolve="DateFormat" />
                       </node>
                       <node concept="2YIFZM" id="3WZzKB5bo9U" role="33vP2m">
-                        <ref role="37wK5l" to="25x5:~DateFormat.getDateTimeInstance(int,int):java.text.DateFormat" resolve="getDateTimeInstance" />
+                        <ref role="37wK5l" to="25x5:~DateFormat.getDateTimeInstance(int,int)" resolve="getDateTimeInstance" />
                         <ref role="1Pybhc" to="25x5:~SimpleDateFormat" resolve="SimpleDateFormat" />
                         <node concept="10M0yZ" id="3WZzKB5bsGq" role="37wK5m">
                           <ref role="1PxDUh" to="25x5:~DateFormat" resolve="DateFormat" />
@@ -1865,7 +1865,7 @@
                           <ref role="3cqZAo" node="3WZzKB5aSUH" resolve="df" />
                         </node>
                         <node concept="liA8E" id="7MGLj3bSooJ" role="2OqNvi">
-                          <ref role="37wK5l" to="25x5:~DateFormat.format(java.util.Date):java.lang.String" resolve="format" />
+                          <ref role="37wK5l" to="25x5:~DateFormat.format(java.util.Date)" resolve="format" />
                           <node concept="2ShNRf" id="7MGLj3bSooK" role="37wK5m">
                             <node concept="1pGfFk" id="7MGLj3bSooL" role="2ShVmc">
                               <ref role="37wK5l" to="33ny:~Date.&lt;init&gt;(long)" resolve="Date" />

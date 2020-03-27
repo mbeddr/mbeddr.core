@@ -381,7 +381,7 @@
           <node concept="2OqwBi" id="7$_eEdIdbki" role="3clFbG">
             <node concept="1XNTG" id="7$_eEdIdbkh" role="2Oq$k0" />
             <node concept="liA8E" id="7$_eEdIdco3" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+              <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode)" resolve="select" />
               <node concept="2OqwBi" id="7$_eEdIdcoa" role="37wK5m">
                 <node concept="37vLTw" id="7$_eEdIdco9" role="2Oq$k0">
                   <ref role="3cqZAo" node="7$_eEdIdbjB" resolve="te" />
@@ -1416,7 +1416,7 @@
               <node concept="2OqwBi" id="3bfDwHbEZ5x" role="3uHU7w">
                 <node concept="38Zlrr" id="3bfDwHbEYTs" role="2Oq$k0" />
                 <node concept="liA8E" id="2cvVnUv9SVR" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                 </node>
               </node>
             </node>
@@ -1497,7 +1497,7 @@
                           <ref role="2Gs0qQ" node="4oMhk$ZhugE" resolve="candidate" />
                         </node>
                         <node concept="liA8E" id="2cvVnUv9IfC" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
+                          <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
                         </node>
                       </node>
                     </node>
@@ -1759,7 +1759,7 @@
               <node concept="3fqX7Q" id="16gyj4Ccns2" role="3uHU7w">
                 <node concept="2OqwBi" id="16gyj4Ccns4" role="3fr31v">
                   <node concept="liA8E" id="16gyj4Ccns5" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional():boolean" resolve="isOptional" />
+                    <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional()" resolve="isOptional" />
                   </node>
                   <node concept="2OqwBi" id="16gyj4Ccns6" role="2Oq$k0">
                     <node concept="2Sf5sV" id="16gyj4Ccns7" role="2Oq$k0" />

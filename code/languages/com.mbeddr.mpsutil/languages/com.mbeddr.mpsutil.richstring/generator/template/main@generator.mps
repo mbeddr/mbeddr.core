@@ -2,7 +2,7 @@
 <model ref="20aa65c0-ca77-414d-a54b-5afd064cf585/r:f6cb62f9-543b-4bc2-a45e-3492dc8a1db9(com.mbeddr.mpsutil.richstring#3354025285337048382/com.mbeddr.mpsutil.richstring.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
@@ -365,7 +365,7 @@
         <node concept="3clFbS" id="5YIFEcouHGK" role="3clF47">
           <node concept="3clFbF" id="5YIFEcouPJ1" role="3cqZAp">
             <node concept="2YIFZM" id="5YIFEcouPJr" role="3clFbG">
-              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Object...):java.lang.String" resolve="join" />
+              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Object...)" resolve="join" />
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="Xl_RD" id="5YIFEcouPL1" role="37wK5m">
                 <property role="Xl_RC" value="" />
@@ -419,10 +419,10 @@
           </node>
           <node concept="3clFbF" id="5YIFEcouTOx" role="3cqZAp">
             <node concept="2YIFZM" id="5YIFEcouUf1" role="3clFbG">
-              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <node concept="2YIFZM" id="5YIFEcouSYX" role="37wK5m">
-                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Object...):java.lang.String" resolve="join" />
+                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Object...)" resolve="join" />
                 <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                 <node concept="Xl_RD" id="5YIFEcouSYY" role="37wK5m">
                   <property role="Xl_RC" value="" />

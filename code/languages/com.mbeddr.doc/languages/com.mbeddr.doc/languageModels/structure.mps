@@ -419,7 +419,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="defaultImagePath" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5yxqZJwzC3r" />
+      <ref role="20lvS9" node="5yxqZJwzC3r" resolve="PathDefinition" />
     </node>
     <node concept="1TJgyj" id="5yxqZJwzC3L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

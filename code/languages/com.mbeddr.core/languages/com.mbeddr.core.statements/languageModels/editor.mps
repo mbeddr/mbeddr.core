@@ -1006,7 +1006,7 @@
                     <node concept="2OqwBi" id="7K_2cV$CpHz" role="1m5AlR">
                       <node concept="2kS8pE" id="7K_2cV$CpH$" role="2Oq$k0" />
                       <node concept="liA8E" id="7K_2cV$CpH_" role="2OqNvi">
-                        <ref role="37wK5l" to="uddc:~TransformationMenuContext.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
+                        <ref role="37wK5l" to="uddc:~TransformationMenuContext.getNode()" resolve="getNode" />
                       </node>
                     </node>
                     <node concept="chp4Y" id="79i$vAY5ZdC" role="3oSUPX">
@@ -3756,7 +3756,7 @@
                 <node concept="2OqwBi" id="3cUcim$4iDn" role="3clFbw">
                   <node concept="ub8z3" id="3cUcim$4iD_" role="2Oq$k0" />
                   <node concept="liA8E" id="3cUcim$4iDp" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                    <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
                     <node concept="Xl_RD" id="3cUcim$4iDq" role="37wK5m">
                       <property role="Xl_RC" value="//" />
                     </node>
@@ -3766,7 +3766,7 @@
                   <node concept="2OqwBi" id="3cUcim$4iDs" role="3eO9$A">
                     <node concept="ub8z3" id="3cUcim$4iDA" role="2Oq$k0" />
                     <node concept="liA8E" id="3cUcim$4iDu" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                      <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
                       <node concept="Xl_RD" id="3cUcim$4iDv" role="37wK5m">
                         <property role="Xl_RC" value="/*" />
                       </node>

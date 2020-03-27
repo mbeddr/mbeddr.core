@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="3f41734b-72c3-42c8-b22c-bacd5a878e17" name="com.mbeddr.mpsutil.propertydefault" version="0" />
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
@@ -203,7 +203,7 @@
                   <node concept="EsrRn" id="1m4fy7KOvqG" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="1m4fy7KOvqH" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String)" resolve="getProperty" />
                   <node concept="Xl_RD" id="1m4fy7KOvqI" role="37wK5m">
                     <property role="Xl_RC" value="" />
                     <node concept="17Uvod" id="1m4fy7KOvqJ" role="lGtFl">
@@ -246,7 +246,7 @@
               <node concept="EsrRn" id="1m4fy7KOvqY" role="2JrQYb" />
             </node>
             <node concept="liA8E" id="1m4fy7KOvqZ" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
+              <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String)" resolve="hasProperty" />
               <node concept="Xl_RD" id="1m4fy7KOvr0" role="37wK5m">
                 <property role="Xl_RC" value="" />
                 <node concept="17Uvod" id="1m4fy7KOvr1" role="lGtFl">
@@ -322,7 +322,7 @@
                 <node concept="EsrRn" id="aiIotWW7In" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="aiIotWW82p" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String)" resolve="setProperty" />
                 <node concept="Xl_RD" id="aiIotWW84x" role="37wK5m">
                   <property role="Xl_RC" value="" />
                   <node concept="17Uvod" id="aiIotWW84y" role="lGtFl">
@@ -358,7 +358,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="aiIotWWaY1" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                     </node>
                   </node>
                   <node concept="10Nm6u" id="aiIotWWaYY" role="3K4GZi" />
@@ -437,7 +437,7 @@
                   <node concept="EsrRn" id="aiIotWJ1_9" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="aiIotWJ1_a" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String)" resolve="getProperty" />
                   <node concept="37vLTw" id="aiIotWVyQd" role="37wK5m">
                     <ref role="3cqZAo" node="aiIotWVyQ2" resolve="propNaame" />
                   </node>

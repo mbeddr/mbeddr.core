@@ -266,7 +266,7 @@
         <node concept="3clFbF" id="37J4MLLB0KU" role="3cqZAp">
           <node concept="2YIFZM" id="37J4MLLB0KV" role="3clFbG">
             <ref role="1Pybhc" to="r791:~StyleConstants" resolve="StyleConstants" />
-            <ref role="37wK5l" to="r791:~StyleConstants.setForeground(javax.swing.text.MutableAttributeSet,java.awt.Color):void" resolve="setForeground" />
+            <ref role="37wK5l" to="r791:~StyleConstants.setForeground(javax.swing.text.MutableAttributeSet,java.awt.Color)" resolve="setForeground" />
             <node concept="37vLTw" id="37J4MLLB0KW" role="37wK5m">
               <ref role="3cqZAo" node="37J4MLLB0KQ" resolve="sas" />
             </node>
@@ -296,7 +296,7 @@
             <node concept="3clFbS" id="37J4MLLB0L6" role="3Kbo56">
               <node concept="3clFbF" id="37J4MLLB0L7" role="3cqZAp">
                 <node concept="2YIFZM" id="37J4MLLB0L8" role="3clFbG">
-                  <ref role="37wK5l" to="r791:~StyleConstants.setBold(javax.swing.text.MutableAttributeSet,boolean):void" resolve="setBold" />
+                  <ref role="37wK5l" to="r791:~StyleConstants.setBold(javax.swing.text.MutableAttributeSet,boolean)" resolve="setBold" />
                   <ref role="1Pybhc" to="r791:~StyleConstants" resolve="StyleConstants" />
                   <node concept="37vLTw" id="37J4MLLB0L9" role="37wK5m">
                     <ref role="3cqZAo" node="37J4MLLB0KQ" resolve="sas" />
@@ -317,7 +317,7 @@
               <node concept="3clFbF" id="37J4MLLB0Le" role="3cqZAp">
                 <node concept="2YIFZM" id="37J4MLLB0Lf" role="3clFbG">
                   <ref role="1Pybhc" to="r791:~StyleConstants" resolve="StyleConstants" />
-                  <ref role="37wK5l" to="r791:~StyleConstants.setItalic(javax.swing.text.MutableAttributeSet,boolean):void" resolve="setItalic" />
+                  <ref role="37wK5l" to="r791:~StyleConstants.setItalic(javax.swing.text.MutableAttributeSet,boolean)" resolve="setItalic" />
                   <node concept="37vLTw" id="37J4MLLB0Lg" role="37wK5m">
                     <ref role="3cqZAo" node="37J4MLLB0KQ" resolve="sas" />
                   </node>
@@ -439,7 +439,7 @@
                           <ref role="3cqZAo" node="37J4MLLC7tV" resolve="fileName" />
                         </node>
                         <node concept="liA8E" id="7XJGPBq1ATV" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                          <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                           <node concept="37vLTw" id="7XJGPBq1ATW" role="37wK5m">
                             <ref role="3cqZAo" node="7XJGPBq1ATX" resolve="it" />
                           </node>

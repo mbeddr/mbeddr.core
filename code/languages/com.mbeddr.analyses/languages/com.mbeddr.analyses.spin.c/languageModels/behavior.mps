@@ -112,7 +112,7 @@
                   <node concept="13iPFW" id="6rTOrQxmd5k" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="6rTOrQxmd5l" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                 </node>
               </node>
             </node>
@@ -174,7 +174,7 @@
                   <node concept="13iPFW" id="6rTOrQxmcVq" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="6rTOrQxmcVr" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                 </node>
               </node>
             </node>
@@ -201,7 +201,7 @@
                   <node concept="13iPFW" id="6rTOrQxm6gk" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="6rTOrQxmbNt" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                 </node>
               </node>
               <node concept="Xl_RD" id="6rTOrQxm6gn" role="3uHU7B">

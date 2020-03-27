@@ -432,7 +432,7 @@
             <node concept="3clFbJ" id="4CnBdUF$LO$" role="3cqZAp">
               <node concept="2YIFZM" id="4CnBdUF$LOC" role="3clFbw">
                 <ref role="1Pybhc" to="ggp6:~MatchingUtil" resolve="MatchingUtil" />
-                <ref role="37wK5l" to="ggp6:~MatchingUtil.matchNodes(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="matchNodes" />
+                <ref role="37wK5l" to="ggp6:~MatchingUtil.matchNodes(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="matchNodes" />
                 <node concept="37vLTw" id="20ezT9ZBYpS" role="37wK5m">
                   <ref role="3cqZAo" node="4CnBdUF$JVT" resolve="candidate" />
                 </node>
