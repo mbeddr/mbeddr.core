@@ -2,7 +2,7 @@
 <model ref="r:dbabf57e-a86a-4cbb-b845-844dc073f888(com.mbeddr.analyses.mutation.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -55,7 +55,7 @@
     <ref role="1XX52x" to="p2i4:6I2T_LF5HF9" resolve="MutatedNodeMarker" />
     <node concept="2SsqMj" id="6I2T_LF5JQq" role="2wV5jI">
       <node concept="Veino" id="6I2T_LF5JSc" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
       </node>
     </node>
   </node>

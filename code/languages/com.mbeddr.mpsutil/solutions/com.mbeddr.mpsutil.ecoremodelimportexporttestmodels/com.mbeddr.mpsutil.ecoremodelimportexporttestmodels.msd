@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:98309aa4-0aee-4c83-b79a-2ab22ee75043:test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1" version="-1" />
   </languageVersions>
   <dependencyVersions>

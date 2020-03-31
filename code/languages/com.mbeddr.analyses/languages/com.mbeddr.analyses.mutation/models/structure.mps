@@ -39,7 +39,6 @@
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
-        <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -76,16 +75,14 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyj" id="6I2T_LF6x$Y" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="harness" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7747007593638926654" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
     </node>
     <node concept="1TJgyj" id="6I2T_LF60YP" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="im" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7747007593638793141" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
     </node>
