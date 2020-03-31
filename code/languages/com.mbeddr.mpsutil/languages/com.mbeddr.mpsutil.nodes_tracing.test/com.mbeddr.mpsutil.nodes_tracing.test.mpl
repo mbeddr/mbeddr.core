@@ -10,9 +10,7 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <accessoryModels>
-    <model modelUID="r:c726a733-8038-42b5-adf4-0fce41e0214c(com.mbeddr.mpsutil.nodes_tracing.test.nodes_tracing_utils)" />
-  </accessoryModels>
+  <accessoryModels />
   <generators>
     <generator alias="main" namespace="com.mbeddr.mpsutil.nodes_tracing.test#8887445761569382511" uuid="d19dba79-b97f-4874-b95a-fbe6e7f32607">
       <models>
@@ -33,6 +31,7 @@
         <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
       </dependencies>
       <languageVersions>
+        <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="9" />
         <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />

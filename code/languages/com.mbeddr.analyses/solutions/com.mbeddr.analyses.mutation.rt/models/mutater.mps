@@ -23,7 +23,6 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
-    <import index="km6g" ref="r:dd38f401-e2d0-4080-90a2-eb385c40b4f1(com.mbeddr.analyses.cpa.structure)" />
     <import index="hj5x" ref="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" />
     <import index="p2i4" ref="r:135c5ca2-f0c5-44e2-92b3-9a9204e7f23e(com.mbeddr.analyses.mutation.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -1176,7 +1175,7 @@
           <node concept="3cpWsn" id="5PJiK1q6zA9" role="3cpWs9">
             <property role="TrG5h" value="sl" />
             <node concept="3Tqbb2" id="5PJiK1q6zA4" role="1tU5fm">
-              <ref role="ehGHo" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+              <ref role="ehGHo" to="51wr:2kkumeGQcAy" resolve="Library" />
             </node>
             <node concept="2OqwBi" id="5PJiK1q6zAa" role="33vP2m">
               <node concept="2OqwBi" id="5PJiK1q6zAb" role="2Oq$k0">
@@ -1194,7 +1193,7 @@
                 <node concept="2Rf3mk" id="5PJiK1q6zAh" role="2OqNvi">
                   <node concept="1xMEDy" id="5PJiK1q6zAi" role="1xVPHs">
                     <node concept="chp4Y" id="5PJiK1q6zAj" role="ri$Ld">
-                      <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+                      <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="Library" />
                     </node>
                   </node>
                 </node>
