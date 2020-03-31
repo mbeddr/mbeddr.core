@@ -5,10 +5,10 @@
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -16502,11 +16502,16 @@
             </node>
             <node concept="1rXfSq" id="2hz1PZpK8j1" role="33vP2m">
               <ref role="37wK5l" node="54sr1JE77K2" resolve="createAction" />
-              <node concept="2YIFZM" id="2hz1PZpK8j2" role="37wK5m">
-                <ref role="37wK5l" to="ge2m:4a0HOMfn6Wr" resolve="getRefactoringByClassName" />
-                <ref role="1Pybhc" to="ge2m:4a0HOMfn6V_" resolve="RefactoringUtil" />
-                <node concept="37vLTw" id="2hz1PZpK8j3" role="37wK5m">
-                  <ref role="3cqZAo" node="54sr1JE4OYU" resolve="myRefactoringClassName" />
+              <node concept="2OqwBi" id="JGR5whwagc" role="37wK5m">
+                <node concept="2YIFZM" id="JGR5whwa4Q" role="2Oq$k0">
+                  <ref role="1Pybhc" to="y38:3dEPKBAxz0O" resolve="RefactoringAccess" />
+                  <ref role="37wK5l" to="y38:1dH5fOG2bPt" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="JGR5whwarc" role="2OqNvi">
+                  <ref role="37wK5l" to="y38:10tOJLdhm35" resolve="getRefactoringByClassName" />
+                  <node concept="37vLTw" id="JGR5whwaP6" role="37wK5m">
+                    <ref role="3cqZAo" node="54sr1JE4OYU" resolve="myRefactoringClassName" />
+                  </node>
                 </node>
               </node>
               <node concept="37vLTw" id="2hz1PZpK8j4" role="37wK5m">
