@@ -1815,5 +1815,64 @@
       <ref role="2wpffI" node="1tDstbgKlCv" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4PRpvcZBC0F">
+    <property role="EcuMT" value="5582042358567829547" />
+    <property role="3GE5qa" value="assessment.scope" />
+    <property role="TrG5h" value="ModuleScope" />
+    <property role="34LRSv" value="module" />
+    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <node concept="1TJgyj" id="4PRpvcZBGCW" role="1TKVEi">
+      <property role="IQ2ns" value="5582042358567848508" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4PRpvcZC63H">
+    <property role="EcuMT" value="5582042358567952621" />
+    <property role="3GE5qa" value="assessment.scope" />
+    <property role="TrG5h" value="VirtualFolderScope" />
+    <property role="34LRSv" value="virtual folder" />
+    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <node concept="1TJgyj" id="4PRpvcZD6sE" role="1TKVEi">
+      <property role="IQ2ns" value="5582042358568216362" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="filter" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4PRpvcZD6sG" resolve="VirtualFolderFilter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4PRpvcZD6sG">
+    <property role="EcuMT" value="5582042358568216364" />
+    <property role="3GE5qa" value="assessment.scope" />
+    <property role="TrG5h" value="VirtualFolderFilter" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4PRpvcZD6$W">
+    <property role="EcuMT" value="5582042358568216892" />
+    <property role="3GE5qa" value="assessment.scope" />
+    <property role="TrG5h" value="StartsWithFilter" />
+    <property role="34LRSv" value="starts with" />
+    <ref role="1TJDcQ" node="4PRpvcZD6sG" resolve="VirtualFolderFilter" />
+    <node concept="1TJgyi" id="4PRpvcZD7Xq" role="1TKVEl">
+      <property role="IQ2nx" value="5582042358568222554" />
+      <property role="TrG5h" value="string" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4PRpvcZDbEi">
+    <property role="EcuMT" value="5582042358568237714" />
+    <property role="3GE5qa" value="assessment.scope" />
+    <property role="TrG5h" value="RegExFilter" />
+    <property role="34LRSv" value="regex" />
+    <ref role="1TJDcQ" node="4PRpvcZD6sG" resolve="VirtualFolderFilter" />
+    <node concept="1TJgyi" id="4PRpvcZDbEj" role="1TKVEl">
+      <property role="IQ2nx" value="5582042358568237715" />
+      <property role="TrG5h" value="regEx" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
