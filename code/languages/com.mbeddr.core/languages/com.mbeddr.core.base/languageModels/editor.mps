@@ -59,8 +59,12 @@
     <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="q4oi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellActions(MPS.Editor/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" />
+    <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
+    <import index="25zl" ref="r:7bd127a5-e641-4c13-b150-b9c9b96f76ae(jetbrains.mps.lang.modelapi.editor)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -130,6 +134,9 @@
         <child id="8329266386016685951" name="editorContext" index="2xHN3q" />
       </concept>
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
+      <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
+        <reference id="6718020819487620874" name="menu" index="A1WHt" />
+      </concept>
       <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
         <child id="5944657839000877563" name="hints" index="2ABdcP" />
       </concept>
@@ -173,7 +180,7 @@
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
-        <child id="1186402402630" name="styleClass" index="V601i" />
+        <child id="1186402402630" name="styles" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -277,6 +284,7 @@
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
+        <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -13793,6 +13801,90 @@
         <ref role="1NtTu8" to="vs0r:4WU0y9pWgVa" resolve="models" />
         <node concept="2iRkQZ" id="4WU0y9pWgVx" role="2czzBx" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4PRpvcZD8n_">
+    <property role="3GE5qa" value="assessment.scope" />
+    <ref role="1XX52x" to="vs0r:4PRpvcZD6$W" resolve="StartsWithFilter" />
+    <node concept="3EZMnI" id="4PRpvcZD8nB" role="2wV5jI">
+      <node concept="PMmxH" id="4PRpvcZD8nI" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="Vb9p2" id="4PRpvcZDbE9" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4PRpvcZD8nN" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="4PRpvcZDbE7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="4PRpvcZDbEe" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4PRpvcZD8nV" role="3EZMnx">
+        <ref role="1NtTu8" to="vs0r:4PRpvcZD7Xq" resolve="string" />
+      </node>
+      <node concept="2iRfu4" id="4PRpvcZD8nE" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4PRpvcZDfPm">
+    <property role="3GE5qa" value="assessment.scope" />
+    <ref role="1XX52x" to="vs0r:4PRpvcZDbEi" resolve="RegExFilter" />
+    <node concept="3EZMnI" id="4PRpvcZDfPo" role="2wV5jI">
+      <node concept="PMmxH" id="4PRpvcZDfPv" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="Vb9p2" id="4PRpvcZDfPN" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4PRpvcZDfP$" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="4PRpvcZDfPL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="4PRpvcZDfPS" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4PRpvcZDfPG" role="3EZMnx">
+        <ref role="1NtTu8" to="vs0r:4PRpvcZDbEj" resolve="regEx" />
+      </node>
+      <node concept="2iRfu4" id="4PRpvcZDfPr" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4PRpvcZDfQ4">
+    <property role="3GE5qa" value="assessment.scope" />
+    <ref role="1XX52x" to="vs0r:4PRpvcZC63H" resolve="VirtualFolderScope" />
+    <node concept="3EZMnI" id="4PRpvcZDfQ6" role="2wV5jI">
+      <node concept="3F0ifn" id="4PRpvcZDfQd" role="3EZMnx">
+        <property role="3F0ifm" value="virtual folder" />
+      </node>
+      <node concept="3F1sOY" id="4PRpvcZDfQj" role="3EZMnx">
+        <ref role="1NtTu8" to="vs0r:4PRpvcZD6sE" resolve="filter" />
+      </node>
+      <node concept="2iRfu4" id="4PRpvcZDfQ9" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4PRpvcZGfkt">
+    <property role="3GE5qa" value="assessment.scope" />
+    <ref role="1XX52x" to="vs0r:4PRpvcZBC0F" resolve="ModuleScope" />
+    <node concept="3EZMnI" id="4PRpvcZGfkv" role="2wV5jI">
+      <node concept="3F0ifn" id="4PRpvcZGfkA" role="3EZMnx">
+        <property role="3F0ifm" value="module:" />
+      </node>
+      <node concept="1iCGBv" id="4PRpvcZGfkG" role="3EZMnx">
+        <ref role="1NtTu8" to="vs0r:4PRpvcZBGCW" resolve="module" />
+        <node concept="1sVBvm" id="4PRpvcZGfkI" role="1sWHZn">
+          <node concept="3F1sOY" id="4PRpvcZGfkQ" role="2wV5jI">
+            <ref role="1NtTu8" to="tp25:1t9FffgebJ_" resolve="moduleId" />
+            <node concept="A1WHu" id="5ZqXG2mZI$k" role="3vIgyS">
+              <ref role="A1WHt" to="25zl:7k$14oQs2hn" resolve="ContextRepositoryModules_TM" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="4PRpvcZGfky" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -154,6 +154,7 @@
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
@@ -1003,6 +1004,11 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="4PRpvcZDfQp">
+    <property role="3GE5qa" value="assessment.scope" />
+    <ref role="1M2myG" to="vs0r:4PRpvcZD6sG" resolve="VirtualFolderFilter" />
+    <ref role="1MND4H" to="vs0r:4PRpvcZD6$W" resolve="StartsWithFilter" />
   </node>
 </model>
 
