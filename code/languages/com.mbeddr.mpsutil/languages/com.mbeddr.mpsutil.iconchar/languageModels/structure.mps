@@ -14,6 +14,7 @@
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu" />
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -92,6 +93,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="6LCinStDt6d" role="rwd14" />
+    <node concept="asaX9" id="7ADpZz9Aw06" role="lGtFl" />
   </node>
   <node concept="Az7Fb" id="7GaZbxRWsMP">
     <property role="TrG5h" value="rgbaColor" />
