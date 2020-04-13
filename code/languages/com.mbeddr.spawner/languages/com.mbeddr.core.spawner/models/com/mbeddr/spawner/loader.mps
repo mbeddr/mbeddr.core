@@ -289,11 +289,11 @@
     <node concept="312cEg" id="1KXoG6mZDua" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="myMPSComponents" />
+      <property role="TrG5h" value="libraryInitializer" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="1KXoG6mZCgW" role="1B3o_S" />
-      <node concept="3uibUv" id="1KXoG6mZDot" role="1tU5fm">
-        <ref role="3uigEE" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
+      <node concept="3uibUv" id="7e_V6p5zcCU" role="1tU5fm">
+        <ref role="3uigEE" to="32g5:~LibraryInitializer" resolve="LibraryInitializer" />
       </node>
     </node>
     <node concept="2tJIrI" id="1KXoG6mZAe3" role="jymVt" />
@@ -303,11 +303,16 @@
       <node concept="3clFbS" id="3wED9Ce43t6" role="3clF47">
         <node concept="3clFbF" id="1KXoG6mZExt" role="3cqZAp">
           <node concept="37vLTI" id="1KXoG6mZEMy" role="3clFbG">
-            <node concept="37vLTw" id="1KXoG6mZEXh" role="37vLTx">
-              <ref role="3cqZAo" node="1KXoG6mZA6t" resolve="mpsComponents" />
+            <node concept="2OqwBi" id="7e_V6p5zey_" role="37vLTx">
+              <node concept="37vLTw" id="1KXoG6mZEXh" role="2Oq$k0">
+                <ref role="3cqZAo" node="1KXoG6mZA6t" resolve="mpsComponents" />
+              </node>
+              <node concept="liA8E" id="7e_V6p5zeHM" role="2OqNvi">
+                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getLibraryInitializer()" resolve="getLibraryInitializer" />
+              </node>
             </node>
             <node concept="37vLTw" id="1KXoG6mZExs" role="37vLTJ">
-              <ref role="3cqZAo" node="1KXoG6mZDua" resolve="myMPSComponents" />
+              <ref role="3cqZAo" node="1KXoG6mZDua" resolve="libraryInitializer" />
             </node>
           </node>
         </node>
@@ -341,13 +346,8 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="1KXoG6mZFS8" role="2Oq$k0">
-              <node concept="37vLTw" id="1KXoG6mZFS9" role="2Oq$k0">
-                <ref role="3cqZAo" node="1KXoG6mZDua" resolve="myMPSComponents" />
-              </node>
-              <node concept="liA8E" id="1KXoG6mZFSa" role="2OqNvi">
-                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getLibraryInitializer()" resolve="getLibraryInitializer" />
-              </node>
+            <node concept="37vLTw" id="1KXoG6mZFS9" role="2Oq$k0">
+              <ref role="3cqZAo" node="1KXoG6mZDua" resolve="libraryInitializer" />
             </node>
           </node>
         </node>
@@ -375,13 +375,8 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="1KXoG6mZG5g" role="2Oq$k0">
-              <node concept="37vLTw" id="1KXoG6mZG5h" role="2Oq$k0">
-                <ref role="3cqZAo" node="1KXoG6mZDua" resolve="myMPSComponents" />
-              </node>
-              <node concept="liA8E" id="1KXoG6mZG5i" role="2OqNvi">
-                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getLibraryInitializer()" resolve="getLibraryInitializer" />
-              </node>
+            <node concept="37vLTw" id="1KXoG6mZG5h" role="2Oq$k0">
+              <ref role="3cqZAo" node="1KXoG6mZDua" resolve="libraryInitializer" />
             </node>
           </node>
         </node>
