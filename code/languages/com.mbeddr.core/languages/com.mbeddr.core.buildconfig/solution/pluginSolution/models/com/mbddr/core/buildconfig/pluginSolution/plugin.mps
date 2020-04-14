@@ -147,12 +147,12 @@
             <property role="TrG5h" value="templateProviders" />
             <node concept="A3Dl8" id="7$0wAVocJS5" role="1tU5fm">
               <node concept="3uibUv" id="7$0wAVocJS8" role="A3Ik2">
-                <ref role="3uigEE" to="7otb:7$0wAVocpKZ" resolve="AbstractPlatformTemplateProvider" />
+                <ref role="3uigEE" to="7otb:7$0wAVocpKZ" resolve="PlatformTemplateProvider" />
               </node>
             </node>
             <node concept="2OqwBi" id="7$0wAVocJSg" role="33vP2m">
               <node concept="2O5UvJ" id="7$0wAVocJSh" role="2Oq$k0">
-                <ref role="2O5UnU" to="7otb:7$0wAVocpKa" resolve="PlatformTemplateProvider" />
+                <ref role="2O5UnU" to="7otb:7$0wAVocpKa" resolve="PlatformTemplateProviders" />
               </node>
               <node concept="SfwO_" id="7$0wAVocJSi" role="2OqNvi" />
             </node>

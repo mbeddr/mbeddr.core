@@ -6979,7 +6979,7 @@
                 <ref role="3cqZAo" node="3L_VuqblMRz" resolve="bc" />
               </node>
               <node concept="3TrEf2" id="3L_VuqblMSx" role="2OqNvi">
-                <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
               </node>
             </node>
           </node>

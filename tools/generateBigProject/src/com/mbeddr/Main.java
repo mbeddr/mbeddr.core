@@ -9,6 +9,9 @@ public class Main {
     private static File projectDir = new File("P:\\mbeddr.core-2019.3");
     private static File modulesXml = new File(projectDir + "/tmp/allProject/.mps/modules.xml");
 
+    private static int totalLanguages = 0;
+    private static int totalSolutions = 0;
+    private static int totalDevkits = 0;
 
     public static void main(String[] args) throws Exception {
         modulesXml.getParentFile().mkdirs();
@@ -35,6 +38,10 @@ public class Main {
 
         w.close();
 
+        System.out.println("=== TOTAL ===");
+        System.out.println("Languages: " + totalLanguages);
+        System.out.println("Solutions: " + totalSolutions);
+        System.out.println("Devkits: " + totalDevkits);
     }
 
 
@@ -52,10 +59,13 @@ public class Main {
                 folder = "_spreferences";
             } else if (fName.endsWith(".mpl")) {
                 folder = "languages";
+                totalLanguages++;
             } else if (fName.endsWith(".msd")) {
                 folder = "solutions";
+                totalSolutions++;
             } else {
                 folder = "devkits";
+                totalDevkits++;
             }
             w.write("      <modulePath path=\"" + f.getAbsolutePath().replace('\\', '/') + "\" folder=\"" + folder + "\" />");
             w.newLine();

@@ -22,7 +22,7 @@
       <concept id="4342692121161029103" name="com.mbeddr.mpsutil.json.structure.Array" flags="ng" index="3YX8am">
         <child id="4342692121161029106" name="values" index="3YX8ab" />
       </concept>
-      <concept id="4342692121161094115" name="com.mbeddr.mpsutil.json.structure.ObjectClass" flags="ng" index="3YXoiq">
+      <concept id="4342692121161094115" name="com.mbeddr.mpsutil.json.structure.JsonFile" flags="ng" index="3YXoiq">
         <child id="4342692121161094142" name="object" index="3YXoi7" />
       </concept>
     </language>

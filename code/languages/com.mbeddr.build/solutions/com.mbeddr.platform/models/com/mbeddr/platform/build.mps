@@ -335,7 +335,7 @@
         <ref role="m$f5T" node="7Pr7tifzjKW" resolve="com.mbeddr.platform.build" />
       </node>
       <node concept="m$_yC" id="33r_JpZ6rtT" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions.build" />
       </node>
     </node>
     <node concept="m$_wf" id="1g7oDhK0dwB" role="3989C9">

@@ -80,7 +80,7 @@
     <node concept="2Pg1uL" id="3jTGQV$9VwH" role="2VgMA7">
       <node concept="2Pgd6e" id="3jTGQV$9VwI" role="1t_9vn" />
       <node concept="3Vl8EG" id="3jTGQV$9VwJ" role="3VlUeB">
-        <ref role="3Vl8EH" to="8r34:15x2XTK8gPb" resolve="copyInImportedModules" />
+        <ref role="3Vl8EH" to="8r34:15x2XTK8gPb" resolve="gatherApplicableModules" />
       </node>
     </node>
     <node concept="2Pg1uL" id="3jTGQV$9VwK" role="2VgMA7">

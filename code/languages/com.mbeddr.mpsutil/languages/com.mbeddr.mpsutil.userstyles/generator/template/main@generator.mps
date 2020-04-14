@@ -1966,7 +1966,7 @@
                     <ref role="3cqZAo" node="Vx4CqFKAdZ" resolve="styleSheet" />
                   </node>
                   <node concept="3Tsc0h" id="Vx4CqFKAz$" role="2OqNvi">
-                    <ref role="3TtcxE" to="tpc2:hgV6056" resolve="styleClass" />
+                    <ref role="3TtcxE" to="tpc2:hgV6056" resolve="styles" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="Vx4CqFKCw_" role="2OqNvi">
