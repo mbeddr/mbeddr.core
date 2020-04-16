@@ -2,7 +2,7 @@
 <model ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -117,6 +117,9 @@
     </node>
     <node concept="PrWs8" id="6GaKBF538po" role="PzmwI">
       <ref role="PrY4T" to="x27k:6GaKBF50ksn" resolve="ITypeDef" />
+    </node>
+    <node concept="PrWs8" id="2fTYV5XMiZ_" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:xAR9nWuwcY" resolve="IHasPrefixes" />
     </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fO9Cn">

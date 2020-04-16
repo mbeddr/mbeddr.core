@@ -283,6 +283,7 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
+      <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="1350122676458893092" name="text" index="3ndbpf" />
@@ -7041,6 +7042,42 @@
                 <property role="TrG5h" value="group" />
               </node>
               <node concept="3clFbS" id="3NH93czhNgv" role="2LFqv$">
+                <node concept="3cpWs8" id="5iRsv8S8u$e" role="3cqZAp">
+                  <node concept="3cpWsn" id="5iRsv8S8u$f" role="3cpWs9">
+                    <property role="TrG5h" value="action" />
+                    <node concept="3uibUv" id="5iRsv8S8u$g" role="1tU5fm">
+                      <ref role="3uigEE" to="qkt:~AnAction" resolve="AnAction" />
+                    </node>
+                    <node concept="2OqwBi" id="5iRsv8S8uDt" role="33vP2m">
+                      <node concept="2YIFZM" id="5iRsv8S8uDu" role="2Oq$k0">
+                        <ref role="37wK5l" to="8rsk:~ActionManagerEx.getInstanceEx()" resolve="getInstanceEx" />
+                        <ref role="1Pybhc" to="8rsk:~ActionManagerEx" resolve="ActionManagerEx" />
+                      </node>
+                      <node concept="liA8E" id="5iRsv8S8uDv" role="2OqNvi">
+                        <ref role="37wK5l" to="qkt:~ActionManager.getAction(java.lang.String)" resolve="getAction" />
+                        <node concept="2OqwBi" id="5iRsv8S8uDw" role="37wK5m">
+                          <node concept="2GrUjf" id="5iRsv8S8uDx" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="3NH93czhNgu" resolve="group" />
+                          </node>
+                          <node concept="liA8E" id="5iRsv8S8uDy" role="2OqNvi">
+                            <ref role="37wK5l" node="5FJiYrlCcZl" resolve="getId" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="5iRsv8S8vrQ" role="3cqZAp">
+                  <node concept="3clFbS" id="5iRsv8S8vrS" role="3clFbx">
+                    <node concept="3N13vt" id="5iRsv8S8yCe" role="3cqZAp" />
+                  </node>
+                  <node concept="3clFbC" id="5iRsv8S8xtk" role="3clFbw">
+                    <node concept="10Nm6u" id="5iRsv8S8y2i" role="3uHU7w" />
+                    <node concept="37vLTw" id="5iRsv8S8wHK" role="3uHU7B">
+                      <ref role="3cqZAo" node="5iRsv8S8u$f" resolve="action" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="3NH93czhNgw" role="3cqZAp">
                   <node concept="3cpWsn" id="3NH93czhNgx" role="3cpWs9">
                     <property role="TrG5h" value="node" />
@@ -7050,22 +7087,8 @@
                     <node concept="2ShNRf" id="3NH93czhNgz" role="33vP2m">
                       <node concept="1pGfFk" id="3NH93czhNg$" role="2ShVmc">
                         <ref role="37wK5l" node="61pZq5Sqhj1" resolve="ActionTreeNode" />
-                        <node concept="2OqwBi" id="3NH93czhNg_" role="37wK5m">
-                          <node concept="2YIFZM" id="3NH93czhNgA" role="2Oq$k0">
-                            <ref role="37wK5l" to="8rsk:~ActionManagerEx.getInstanceEx()" resolve="getInstanceEx" />
-                            <ref role="1Pybhc" to="8rsk:~ActionManagerEx" resolve="ActionManagerEx" />
-                          </node>
-                          <node concept="liA8E" id="3NH93czhNgB" role="2OqNvi">
-                            <ref role="37wK5l" to="qkt:~ActionManager.getAction(java.lang.String)" resolve="getAction" />
-                            <node concept="2OqwBi" id="5FJiYrlCLj4" role="37wK5m">
-                              <node concept="2GrUjf" id="5FJiYrlCL9I" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="3NH93czhNgu" resolve="group" />
-                              </node>
-                              <node concept="liA8E" id="5FJiYrlCM5c" role="2OqNvi">
-                                <ref role="37wK5l" node="5FJiYrlCcZl" resolve="getId" />
-                              </node>
-                            </node>
-                          </node>
+                        <node concept="37vLTw" id="5iRsv8S8zVj" role="37wK5m">
+                          <ref role="3cqZAo" node="5iRsv8S8u$f" resolve="action" />
                         </node>
                         <node concept="37vLTw" id="3ySmNud9NDK" role="37wK5m">
                           <ref role="3cqZAo" node="3ySmNud9I$q" resolve="settings" />
