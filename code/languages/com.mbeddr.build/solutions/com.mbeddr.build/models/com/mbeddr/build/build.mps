@@ -16413,35 +16413,6 @@
             <ref role="1Busuk" node="7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
           </node>
         </node>
-        <node concept="1yeLz9" id="3JmJHJb_cu$" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.analyses.spin.promela#6932498701172188478" />
-          <property role="3LESm3" value="ed415aa9-0814-4dd1-8a1d-3bdde5fb8159" />
-          <node concept="1BupzO" id="7ZN_vIiSi2A" role="3bR31x">
-            <property role="3ZfqAx" value="generator/template" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="7ZN_vIiSi2B" role="1HemKq">
-              <node concept="398BVA" id="7ZN_vIiSi2p" role="3LXTmr">
-                <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
-                <node concept="2Ry0Ak" id="7ZN_vIiSi2q" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="7ZN_vIiSi2r" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.analyses.spin.promela" />
-                    <node concept="2Ry0Ak" id="7ZN_vIiSi2s" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="7ZN_vIiSi2t" role="2Ry0An">
-                        <property role="2Ry0Am" value="template" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="7ZN_vIiSi2C" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="5rSz5xRGDv$" role="3bR37C">
           <node concept="1Busua" id="5rSz5xRGDv_" role="1SiIV1">
             <ref role="1Busuk" node="5rSz5xRGzPC" resolve="com.mbeddr.analyses.base.verification_conditions" />

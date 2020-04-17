@@ -3,7 +3,6 @@
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
-      <sourceRoot location="icons" />
     </modelRoot>
   </models>
   <facets>
