@@ -15305,12 +15305,6 @@
             <ref role="3bR37D" node="6BpYIzuV41g" resolve="com.mbeddr.doc.aspect.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="18EYPZeDV$T" role="3bR37C">
-          <node concept="3bR9La" id="18EYPZeDV$U" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5l4WPWBt8tR" role="3989C9">

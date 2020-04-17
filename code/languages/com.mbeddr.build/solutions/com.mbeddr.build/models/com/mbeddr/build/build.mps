@@ -1108,7 +1108,7 @@
         <ref role="m$f5T" node="5dchr4Qjb5x" resolve="com.mbeddr.build" />
       </node>
       <node concept="m$_yC" id="631ZZAfPMrJ" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions.build" />
       </node>
       <node concept="m$_yC" id="631ZZAfPOwz" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5CFKsRWVb8B" resolve="jetbrains.mps.execution.configurations" />
@@ -12217,10 +12217,6 @@
           <node concept="1Busua" id="3JmJHJb_cuv" role="1SiIV1">
             <ref role="1Busuk" node="7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
           </node>
-        </node>
-        <node concept="1yeLz9" id="3JmJHJb_cu$" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.analyses.spin.promela#6932498701172188478" />
-          <property role="3LESm3" value="ed415aa9-0814-4dd1-8a1d-3bdde5fb8159" />
         </node>
         <node concept="1SiIV0" id="5rSz5xRGDv$" role="3bR37C">
           <node concept="1Busua" id="5rSz5xRGDv_" role="1SiIV1">

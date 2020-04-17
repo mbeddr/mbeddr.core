@@ -6985,6 +6985,35 @@
     <node concept="1QGGSu" id="3jNX2XuMqze" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/assessment.png" />
     </node>
+    <node concept="2ScWuX" id="22q1FPLr_89" role="tmbBb">
+      <node concept="3clFbS" id="22q1FPLr_8a" role="2VODD2">
+        <node concept="3cpWs8" id="22q1FPLrDiW" role="3cqZAp">
+          <node concept="3cpWsn" id="22q1FPLrDiX" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="22q1FPLrDiY" role="1tU5fm" />
+            <node concept="2OqwBi" id="22q1FPLrDiZ" role="33vP2m">
+              <node concept="2WthIp" id="22q1FPLrDj0" role="2Oq$k0" />
+              <node concept="1DTwFV" id="22q1FPLrDj1" role="2OqNvi">
+                <ref role="2WH_rO" node="3jNX2XuMqyM" resolve="model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="22q1FPLrDHE" role="3cqZAp">
+          <node concept="2OqwBi" id="22q1FPLrKtG" role="3clFbG">
+            <node concept="2OqwBi" id="22q1FPLrDQl" role="2Oq$k0">
+              <node concept="37vLTw" id="22q1FPLrDHC" role="2Oq$k0">
+                <ref role="3cqZAo" node="22q1FPLrDiX" resolve="m" />
+              </node>
+              <node concept="2RRcyG" id="22q1FPLrE78" role="2OqNvi">
+                <ref role="2RRcyH" to="vs0r:K292flwCEV" resolve="AssessmentContainer" />
+              </node>
+            </node>
+            <node concept="3GX2aA" id="22q1FPLrQE_" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="tC5Ba" id="3jNX2XuMqRP">
     <property role="3GE5qa" value="assessment" />

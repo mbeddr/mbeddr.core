@@ -3,7 +3,6 @@
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
-      <sourceRoot location="com" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="lib/swingx-core-1.6.2.jar" />

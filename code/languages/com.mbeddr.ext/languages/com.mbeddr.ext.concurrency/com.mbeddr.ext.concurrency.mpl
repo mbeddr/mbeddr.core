@@ -3,7 +3,6 @@
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
-      <sourceRoot location="languageAccessories" />
     </modelRoot>
   </models>
   <accessoryModels />
