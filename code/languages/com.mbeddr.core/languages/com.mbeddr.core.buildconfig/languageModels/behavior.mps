@@ -4435,73 +4435,6 @@
   <node concept="13h7C7" id="1mfTBng0dAQ">
     <property role="3GE5qa" value="binary" />
     <ref role="13h7C2" to="51wr:2kkumeGQBhY" resolve="LibraryRef" />
-    <node concept="13i0hz" id="6xoAPBjXzep" role="13h7CS">
-      <property role="TrG5h" value="isPackaged" />
-      <node concept="3Tm1VV" id="6xoAPBjXzeq" role="1B3o_S" />
-      <node concept="10P_77" id="6xoAPBjXzwq" role="3clF45" />
-      <node concept="3clFbS" id="6xoAPBjXzes" role="3clF47">
-        <node concept="3clFbJ" id="6xoAPBjXzzv" role="3cqZAp">
-          <node concept="3clFbS" id="6xoAPBjXzzw" role="3clFbx">
-            <node concept="3cpWs8" id="6xoAPBjXzzx" role="3cqZAp">
-              <node concept="3cpWsn" id="6xoAPBjXzzy" role="3cpWs9">
-                <property role="TrG5h" value="outputLocation" />
-                <node concept="3uibUv" id="6xoAPBjXzzz" role="1tU5fm">
-                  <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
-                </node>
-                <node concept="2YIFZM" id="6xoAPBjXzz$" role="33vP2m">
-                  <ref role="1Pybhc" to="w1kc:~SModelOperations" resolve="SModelOperations" />
-                  <ref role="37wK5l" to="w1kc:~SModelOperations.getOutputLocation(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputLocation" />
-                  <node concept="2OqwBi" id="6xoAPBjXzz_" role="37wK5m">
-                    <node concept="2OqwBi" id="6xoAPBjXzzA" role="2Oq$k0">
-                      <node concept="13iPFW" id="6xoAPBjXzzB" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="6xoAPBjXzzC" role="2OqNvi">
-                        <ref role="3Tt5mk" to="51wr:2kkumeGQBhZ" resolve="lib" />
-                      </node>
-                    </node>
-                    <node concept="I4A8Y" id="6xoAPBjXzzD" role="2OqNvi" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="6xoAPBjXzzE" role="3cqZAp">
-              <node concept="3clFbS" id="6xoAPBjXzzF" role="3clFbx">
-                <node concept="3cpWs6" id="6xoAPBjX$4R" role="3cqZAp">
-                  <node concept="2OqwBi" id="6xoAPBjX$mC" role="3cqZAk">
-                    <node concept="37vLTw" id="6xoAPBjX$9I" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6xoAPBjXzzy" resolve="outputLocation" />
-                    </node>
-                    <node concept="liA8E" id="6xoAPBjX$zv" role="2OqNvi">
-                      <ref role="37wK5l" to="3ju5:~IFile.isInArchive()" resolve="isInArchive" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3y3z36" id="6xoAPBjXzzU" role="3clFbw">
-                <node concept="10Nm6u" id="6xoAPBjXzzV" role="3uHU7w" />
-                <node concept="37vLTw" id="6xoAPBjXzzW" role="3uHU7B">
-                  <ref role="3cqZAo" node="6xoAPBjXzzy" resolve="outputLocation" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="6xoAPBjXzzX" role="3clFbw">
-            <node concept="10Nm6u" id="6xoAPBjXzzY" role="3uHU7w" />
-            <node concept="2OqwBi" id="6xoAPBjXzzZ" role="3uHU7B">
-              <node concept="2OqwBi" id="6xoAPBjXz$0" role="2Oq$k0">
-                <node concept="13iPFW" id="6xoAPBjXz$1" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6xoAPBjXz$2" role="2OqNvi">
-                  <ref role="3Tt5mk" to="51wr:2kkumeGQBhZ" resolve="lib" />
-                </node>
-              </node>
-              <node concept="I4A8Y" id="6xoAPBjXz$3" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6xoAPBjX$KK" role="3cqZAp">
-          <node concept="3clFbT" id="6xoAPBjX$KJ" role="3clFbG" />
-        </node>
-      </node>
-    </node>
     <node concept="13i0hz" id="1jv4Nu0bqCb" role="13h7CS">
       <property role="TrG5h" value="includeDirs" />
       <node concept="3Tm1VV" id="1jv4Nu0bqCc" role="1B3o_S" />
@@ -4629,6 +4562,20 @@
             </node>
             <node concept="3clFbJ" id="49EzRHoQOeP" role="3cqZAp">
               <node concept="3clFbS" id="49EzRHoQOeR" role="3clFbx">
+                <node concept="3cpWs8" id="2SLRAEaoYYV" role="3cqZAp">
+                  <node concept="3cpWsn" id="2SLRAEaoYYY" role="3cpWs9">
+                    <property role="TrG5h" value="outputLocationAsString" />
+                    <node concept="17QB3L" id="2SLRAEaoYYT" role="1tU5fm" />
+                    <node concept="2OqwBi" id="2SLRAEaoZ6y" role="33vP2m">
+                      <node concept="37vLTw" id="X6gBH5c0og" role="2Oq$k0">
+                        <ref role="3cqZAo" node="49EzRHoSbKL" resolve="outputLocation" />
+                      </node>
+                      <node concept="liA8E" id="2SLRAEaoZtw" role="2OqNvi">
+                        <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbJ" id="X6gBH5bWHz" role="3cqZAp">
                   <node concept="3clFbS" id="X6gBH5bWH_" role="3clFbx">
                     <node concept="3SKdUt" id="2SLRAEapw9G" role="3cqZAp">
@@ -4646,65 +4593,18 @@
                           <property role="3oM_SC" value="file" />
                         </node>
                       </node>
-                    </node>
-                    <node concept="3SKdUt" id="2SLRAEapGEV" role="3cqZAp">
-                      <node concept="1PaTwC" id="13p6s1wtimr" role="3ndbpf">
+                      <node concept="1PaTwC" id="1v64rj$HnK_" role="3ndbpf">
+                        <node concept="3oM_SD" id="1v64rj$HnK$" role="1PaTwD">
+                          <property role="3oM_SC" value="" />
+                        </node>
                         <node concept="3oM_SD" id="13p6s1wtims" role="1PaTwD">
-                          <property role="3oM_SC" value="(/path/to/artifact/content/myModel-src.jar!/aSolution/aModel" />
+                          <property role="3oM_SC" value="/path/to/artifact/content/myModel-src.jar!/aSolution/aModel" />
                         </node>
                         <node concept="3oM_SD" id="13p6s1wtimt" role="1PaTwD">
                           <property role="3oM_SC" value="=&gt;" />
                         </node>
-                      </node>
-                      <node concept="1PaTwC" id="X6gBH5c2Qb" role="3ndbpf">
-                        <node concept="3oM_SD" id="X6gBH5c2Qa" role="1PaTwD">
-                          <property role="3oM_SC" value="" />
-                        </node>
-                        <node concept="3oM_SD" id="13p6s1wtimu" role="1PaTwD">
-                          <property role="3oM_SC" value="/path/to/artifact/content/myModel-src.jar)" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs8" id="2SLRAEaoYYV" role="3cqZAp">
-                      <node concept="3cpWsn" id="2SLRAEaoYYY" role="3cpWs9">
-                        <property role="TrG5h" value="path" />
-                        <node concept="17QB3L" id="2SLRAEaoYYT" role="1tU5fm" />
-                        <node concept="2OqwBi" id="2SLRAEaoZ6y" role="33vP2m">
-                          <node concept="37vLTw" id="X6gBH5c0og" role="2Oq$k0">
-                            <ref role="3cqZAo" node="49EzRHoSbKL" resolve="outputLocation" />
-                          </node>
-                          <node concept="liA8E" id="2SLRAEaoZtw" role="2OqNvi">
-                            <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3SKdUt" id="2SLRAEapwFY" role="3cqZAp">
-                      <node concept="1PaTwC" id="13p6s1wtimv" role="3ndbpf">
-                        <node concept="3oM_SD" id="13p6s1wtimw" role="1PaTwD">
-                          <property role="3oM_SC" value="Return" />
-                        </node>
-                        <node concept="3oM_SD" id="13p6s1wtimx" role="1PaTwD">
-                          <property role="3oM_SC" value="directory" />
-                        </node>
-                        <node concept="3oM_SD" id="13p6s1wtimy" role="1PaTwD">
-                          <property role="3oM_SC" value="containing" />
-                        </node>
-                        <node concept="3oM_SD" id="13p6s1wtimz" role="1PaTwD">
-                          <property role="3oM_SC" value="archive" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3SKdUt" id="2SLRAEapGQE" role="3cqZAp">
-                      <node concept="1PaTwC" id="13p6s1wtim$" role="3ndbpf">
-                        <node concept="3oM_SD" id="13p6s1wtim_" role="1PaTwD">
-                          <property role="3oM_SC" value="(/path/to/artifact/content/myModel-src.jar" />
-                        </node>
-                        <node concept="3oM_SD" id="13p6s1wtimA" role="1PaTwD">
-                          <property role="3oM_SC" value="=&gt;" />
-                        </node>
-                        <node concept="3oM_SD" id="13p6s1wtimB" role="1PaTwD">
-                          <property role="3oM_SC" value="/path/to/artifact/content)" />
+                        <node concept="3oM_SD" id="1v64rj$HnPo" role="1PaTwD">
+                          <property role="3oM_SC" value="/path/to/artifact/content" />
                         </node>
                       </node>
                     </node>
@@ -4715,7 +4615,7 @@
                             <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                             <node concept="2OqwBi" id="X6gBH5bxgH" role="37wK5m">
                               <node concept="37vLTw" id="X6gBH5bxgI" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2SLRAEaoYYY" resolve="path" />
+                                <ref role="3cqZAo" node="2SLRAEaoYYY" resolve="outputLocationAsString" />
                               </node>
                               <node concept="liA8E" id="X6gBH5bxgJ" role="2OqNvi">
                                 <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
@@ -4724,7 +4624,7 @@
                                 </node>
                                 <node concept="2OqwBi" id="X6gBH5bxgL" role="37wK5m">
                                   <node concept="37vLTw" id="X6gBH5bxgM" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="2SLRAEaoYYY" resolve="path" />
+                                    <ref role="3cqZAo" node="2SLRAEaoYYY" resolve="outputLocationAsString" />
                                   </node>
                                   <node concept="liA8E" id="X6gBH5bxgN" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String)" resolve="indexOf" />
@@ -4751,14 +4651,13 @@
                       <ref role="37wK5l" to="3ju5:~IFile.isInArchive()" resolve="isInArchive" />
                     </node>
                   </node>
-                </node>
-                <node concept="3cpWs6" id="6xoAPBjXMEN" role="3cqZAp">
-                  <node concept="2OqwBi" id="X6gBH5bV5D" role="3cqZAk">
-                    <node concept="37vLTw" id="6xoAPBjXNxS" role="2Oq$k0">
-                      <ref role="3cqZAo" node="49EzRHoSbKL" resolve="outputLocation" />
-                    </node>
-                    <node concept="liA8E" id="X6gBH5bVzq" role="2OqNvi">
-                      <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
+                  <node concept="9aQIb" id="1v64rj$HmtN" role="9aQIa">
+                    <node concept="3clFbS" id="1v64rj$HmtO" role="9aQI4">
+                      <node concept="3cpWs6" id="1v64rj$Hn4D" role="3cqZAp">
+                        <node concept="37vLTw" id="1v64rj$Hn4F" role="3cqZAk">
+                          <ref role="3cqZAo" node="2SLRAEaoYYY" resolve="outputLocationAsString" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
