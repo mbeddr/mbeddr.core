@@ -4196,6 +4196,38 @@
       <ref role="13i0hy" to="vog7:3s1LyzG6KRG" resolve="canMake" />
       <node concept="3Tm1VV" id="3s1LyzG8Heq" role="1B3o_S" />
       <node concept="3clFbS" id="3s1LyzG8Het" role="3clF47">
+        <node concept="3cpWs8" id="1v64rj$O6N4" role="3cqZAp">
+          <node concept="3cpWsn" id="1v64rj$O6N7" role="3cpWs9">
+            <property role="TrG5h" value="desktopMakeSetting" />
+            <node concept="17QB3L" id="1v64rj$O6N2" role="1tU5fm" />
+            <node concept="2YIFZM" id="7uvldrz5A1I" role="33vP2m">
+              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              <node concept="Xl_RD" id="7uvldrz5A1J" role="37wK5m">
+                <property role="Xl_RC" value="mbeddr.desktop.make" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7uvldrz64iY" role="3cqZAp">
+          <node concept="3clFbS" id="7uvldrz64j0" role="3clFbx">
+            <node concept="3cpWs6" id="1v64rj$O7_Q" role="3cqZAp">
+              <node concept="2YIFZM" id="7uvldrz5EIm" role="3cqZAk">
+                <ref role="1Pybhc" to="wyt6:~Boolean" resolve="Boolean" />
+                <ref role="37wK5l" to="wyt6:~Boolean.parseBoolean(java.lang.String)" resolve="parseBoolean" />
+                <node concept="37vLTw" id="7uvldrz5YK5" role="37wK5m">
+                  <ref role="3cqZAo" node="1v64rj$O6N7" resolve="desktopMakeSetting" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="7uvldrz64Sg" role="3clFbw">
+            <node concept="10Nm6u" id="7uvldrz64Uy" role="3uHU7w" />
+            <node concept="37vLTw" id="7uvldrz64wK" role="3uHU7B">
+              <ref role="3cqZAo" node="1v64rj$O6N7" resolve="desktopMakeSetting" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3s1LyzG8Hew" role="3cqZAp">
           <node concept="3clFbT" id="3s1LyzG8Hev" role="3clFbG">
             <property role="3clFbU" value="true" />
