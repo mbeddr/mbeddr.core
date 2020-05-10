@@ -3644,23 +3644,14 @@
     <node concept="13i0hz" id="4JZ_DSuX5Ql" role="13h7CS">
       <property role="TrG5h" value="getSupportedTargets" />
       <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="4JZ_DSuX5Qm" role="1B3o_S" />
       <node concept="_YKpA" id="4JZ_DSv0tDH" role="3clF45">
         <node concept="3bZ5Sz" id="4JZ_DSv0tIu" role="_ZDj9">
           <ref role="3bZ5Sy" to="51wr:1it8M3uGpbG" resolve="System" />
         </node>
       </node>
-      <node concept="3clFbS" id="4JZ_DSuX5Qo" role="3clF47">
-        <node concept="3clFbF" id="4JZ_DSuX5WL" role="3cqZAp">
-          <node concept="2ShNRf" id="4JZ_DSv0tN7" role="3clFbG">
-            <node concept="Tc6Ow" id="4JZ_DSv0ug_" role="2ShVmc">
-              <node concept="3bZ5Sz" id="4JZ_DSv0uHM" role="HW$YZ">
-                <ref role="3bZ5Sy" to="51wr:1it8M3uGpbG" resolve="System" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="4JZ_DSuX5Qo" role="3clF47" />
     </node>
     <node concept="13i0hz" id="6eRyKv6J$$i" role="13h7CS">
       <property role="TrG5h" value="canHandleCrossModelGeneration" />
