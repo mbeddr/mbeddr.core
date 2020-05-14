@@ -194,9 +194,6 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1179832490862" name="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" flags="nn" index="2NvLDW" />
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport_old" index="2OEOjV" />
-      </concept>
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
@@ -1969,7 +1966,7 @@
                 <property role="Xl_RC" value="duplicated type mapping" />
               </node>
             </node>
-            <node concept="1YBJjd" id="44jZT9ptiAj" role="2OEOjV">
+            <node concept="1YBJjd" id="44jZT9ptiAj" role="1urrMF">
               <ref role="1YBMHb" node="5LSSDsNUTQ5" resolve="baseLanguageTypeMapping" />
             </node>
           </node>
@@ -2100,7 +2097,7 @@
                 <property role="Xl_RC" value="same fromType, different toType as " />
               </node>
             </node>
-            <node concept="1YBJjd" id="44jZT9ptrtd" role="2OEOjV">
+            <node concept="1YBJjd" id="44jZT9ptrtd" role="1urrMF">
               <ref role="1YBMHb" node="5LSSDsNUTQ5" resolve="baseLanguageTypeMapping" />
             </node>
           </node>

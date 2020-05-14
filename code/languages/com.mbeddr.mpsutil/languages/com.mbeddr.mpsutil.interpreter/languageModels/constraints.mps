@@ -114,7 +114,6 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -142,6 +141,9 @@
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -273,11 +275,8 @@
                           </node>
                           <node concept="2qgKlT" id="44OanfrlCr9" role="2OqNvi">
                             <ref role="37wK5l" to="tpcn:73yVtVlWOga" resolve="isSubconceptOf" />
-                            <node concept="2OqwBi" id="44OanfrlDoo" role="37wK5m">
-                              <node concept="35c_gC" id="44OanfrlCQG" role="2Oq$k0">
-                                <ref role="35c_gD" to="tpck:hYa1RjM" resolve="IType" />
-                              </node>
-                              <node concept="FGMqu" id="44OanfrlDJL" role="2OqNvi" />
+                            <node concept="3B5_sB" id="44OanfrlDoo" role="37wK5m">
+                              <ref role="3B5MYn" to="tpck:hYa1RjM" resolve="IType" />
                             </node>
                           </node>
                         </node>
