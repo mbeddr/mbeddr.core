@@ -79,7 +79,7 @@
           <node concept="2OqwBi" id="1LDGRqySDg7" role="3Ah4Yx">
             <node concept="3__QtB" id="1LDGRqySD0g" role="2Oq$k0" />
             <node concept="3TrEf2" id="1LDGRqySEyb" role="2OqNvi">
-              <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" resolve="index" />
+              <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" resolve="indexExpr" />
             </node>
           </node>
         </node>

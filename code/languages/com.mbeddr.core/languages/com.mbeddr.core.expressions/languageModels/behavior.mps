@@ -22848,7 +22848,7 @@
   </node>
   <node concept="13h7C7" id="6AaN29SvfIc">
     <property role="3GE5qa" value="types" />
-    <ref role="13h7C2" to="mj1l:6AaN29SvfIb" resolve="ITypeTextGenContext" />
+    <ref role="13h7C2" to="mj1l:6AaN29SvfIb" resolve="ITextGenContext" />
     <node concept="13i0hz" id="6AaN29SvfIf" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
@@ -22866,17 +22866,17 @@
       </node>
       <node concept="P$JXv" id="2W1GNPBd9e2" role="lGtFl">
         <node concept="x79VA" id="2W1GNPBd9e8" role="3nqlJM">
-          <property role="x79VB" value="the parent token that belongs to this type" />
+          <property role="x79VB" value="the parent token that belongs to this type or expression" />
         </node>
         <node concept="TUZQ0" id="2W1GNPBd9e5" role="3nqlJM">
-          <property role="TUZQ4" value="the child token that was produced by the type's parent" />
+          <property role="TUZQ4" value="the child token that was produced by this type's or expression's parent" />
           <node concept="zr_55" id="2W1GNPBd9e7" role="zr_5Q">
             <ref role="zr_51" node="6AaN29SvigP" resolve="child" />
           </node>
         </node>
         <node concept="TZ5HA" id="2W1GNPBd9e3" role="TZ5H$">
           <node concept="1dT_AC" id="2W1GNPBd9e4" role="1dT_Ay">
-            <property role="1dT_AB" value="Produces the text gen stream while reversing the containment hierarchy of the special types. " />
+            <property role="1dT_AB" value="Produces the text gen stream while reversing the containment hierarchy of the special types or expressions. " />
           </node>
         </node>
       </node>

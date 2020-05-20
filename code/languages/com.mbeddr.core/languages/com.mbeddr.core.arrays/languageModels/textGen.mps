@@ -7,8 +7,8 @@
   <imports>
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="dylp" ref="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)" />
+    <import index="iq8l" ref="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -98,27 +98,9 @@
     <node concept="11bSqf" id="4Y0lNFa3jeK" role="11c4hB">
       <node concept="3clFbS" id="4Y0lNFa3jeL" role="2VODD2">
         <node concept="lc7rE" id="4Y0lNFa3jeM" role="3cqZAp">
-          <node concept="l9hG8" id="4Y0lNFa3jeO" role="lcghm">
-            <node concept="2OqwBi" id="4Y0lNFa3lCN" role="lb14g">
-              <node concept="3TrEf2" id="2APHWiztFn7" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
-              </node>
-              <node concept="117lpO" id="4Y0lNFa3jeQ" role="2Oq$k0" />
-            </node>
-          </node>
-          <node concept="la8eA" id="4Y0lNFa3xVz" role="lcghm">
-            <property role="lacIc" value="[" />
-          </node>
-          <node concept="l9hG8" id="4Y0lNFa3xV_" role="lcghm">
-            <node concept="2OqwBi" id="4Y0lNFa3xVC" role="lb14g">
-              <node concept="117lpO" id="4Y0lNFa3xVB" role="2Oq$k0" />
-              <node concept="3TrEf2" id="4Y0lNFa3xVG" role="2OqNvi">
-                <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" resolve="index" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="4Y0lNFa3xVI" role="lcghm">
-            <property role="lacIc" value="]" />
+          <node concept="1bDJIP" id="6sPmSUBrdqv" role="lcghm">
+            <ref role="1rvKf6" to="dylp:6sPmSUBCG8U" resolve="genExpression" />
+            <node concept="117lpO" id="6sPmSUBrdqO" role="1ryhcI" />
           </node>
         </node>
       </node>

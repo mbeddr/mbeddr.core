@@ -880,7 +880,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="5sJgLFR$y$f" role="3EZMnx">
-          <ref role="1NtTu8" to="yq40:5sJgLFR$y$3" resolve="index" />
+          <ref role="1NtTu8" to="yq40:5sJgLFR$y$3" resolve="indexExpr" />
         </node>
         <node concept="3F0ifn" id="5sJgLFR$y$d" role="3EZMnx">
           <property role="3F0ifm" value="]" />

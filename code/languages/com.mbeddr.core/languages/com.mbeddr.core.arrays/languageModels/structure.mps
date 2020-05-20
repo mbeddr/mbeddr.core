@@ -152,7 +152,7 @@
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="5sJgLFR$y$3" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="index" />
+      <property role="20kJfa" value="indexExpr" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="6282313788306893059" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
@@ -162,6 +162,9 @@
     </node>
     <node concept="PrWs8" id="6mzZsELoBOI" role="PzmwI">
       <ref role="PrY4T" to="mj1l:6mzZsELnskC" resolve="IBinaryLike" />
+    </node>
+    <node concept="PrWs8" id="6sPmSUBnWU2" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:6AaN29SvfIb" resolve="ITextGenContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="4AGl5dzxdX6">

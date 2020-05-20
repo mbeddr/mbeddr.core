@@ -165,7 +165,7 @@
       <ref role="PrY4T" to="vs0r:3RtPbXOi5Ir" resolve="ITriggerCommenting" />
     </node>
     <node concept="PrWs8" id="29BUUxcmOTc" role="PzmwI">
-      <ref role="PrY4T" node="6AaN29SvfIb" resolve="ITypeTextGenContext" />
+      <ref role="PrY4T" node="6AaN29SvfIb" resolve="ITextGenContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCS">
@@ -1627,7 +1627,7 @@
   </node>
   <node concept="PlHQZ" id="6AaN29SvfIb">
     <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="ITypeTextGenContext" />
+    <property role="TrG5h" value="ITextGenContext" />
     <property role="EcuMT" value="7605115369190914955" />
   </node>
   <node concept="PlHQZ" id="5cz2Y91jmyg">
