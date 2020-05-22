@@ -2511,20 +2511,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="qd$eT5Yshh" role="3cqZAp">
-              <node concept="2OqwBi" id="qd$eT5Yt26" role="3clFbG">
-                <node concept="37vLTw" id="qd$eT5Yshf" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Uu7NyQyO5j" resolve="descriptor" />
-                </node>
-                <node concept="liA8E" id="qd$eT5YtQa" role="2OqNvi">
-                  <ref role="37wK5l" to="w0gx:~SolutionDescriptor.setKind(jetbrains.mps.project.structure.modules.SolutionKind)" resolve="setKind" />
-                  <node concept="Rm8GO" id="qd$eT5YtSG" role="37wK5m">
-                    <ref role="1Px2BO" to="w0gx:~SolutionKind" resolve="SolutionKind" />
-                    <ref role="Rm8GQ" to="w0gx:~SolutionKind.PLUGIN_OTHER" resolve="PLUGIN_OTHER" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="qd$eT5XSBD" role="3cqZAp">
               <node concept="2YIFZM" id="qd$eT5XSTs" role="3clFbG">
                 <ref role="37wK5l" to="z1c4:~ProjectPathUtil.setGeneratorOutputPath(jetbrains.mps.project.structure.modules.ModuleDescriptor,java.lang.String)" resolve="setGeneratorOutputPath" />
@@ -2778,67 +2764,6 @@
             <node concept="10Nm6u" id="Uu7NyQyNTM" role="3uHU7w" />
             <node concept="37vLTw" id="Uu7NyQyNDP" role="3uHU7B">
               <ref role="3cqZAo" node="Uu7NyQyMnn" resolve="module" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="5zViqzlmZj8" role="3cqZAp" />
-        <node concept="3SKdUt" id="5zViqzllRRP" role="3cqZAp">
-          <node concept="1PaTwC" id="17qUVvSZltJ" role="1aUNEU">
-            <node concept="3oM_SD" id="17qUVvSZltK" role="1PaTwD">
-              <property role="3oM_SC" value="Set" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZltL" role="1PaTwD">
-              <property role="3oM_SC" value="solution" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZltM" role="1PaTwD">
-              <property role="3oM_SC" value="kind" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5zViqzlmc__" role="3cqZAp">
-          <node concept="3clFbS" id="5zViqzlmc_B" role="3clFbx">
-            <node concept="3clFbF" id="5zViqzllSXY" role="3cqZAp">
-              <node concept="2OqwBi" id="5zViqzlm43K" role="3clFbG">
-                <node concept="2OqwBi" id="5zViqzlm1OV" role="2Oq$k0">
-                  <node concept="37vLTw" id="5zViqzlm2fZ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="Uu7NyQyMnn" resolve="module" />
-                  </node>
-                  <node concept="liA8E" id="5zViqzlm2TU" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c4:~Solution.getModuleDescriptor()" resolve="getModuleDescriptor" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="5zViqzlm8nl" role="2OqNvi">
-                  <ref role="37wK5l" to="w0gx:~SolutionDescriptor.setKind(jetbrains.mps.project.structure.modules.SolutionKind)" resolve="setKind" />
-                  <node concept="Rm8GO" id="5zViqzlmajh" role="37wK5m">
-                    <ref role="Rm8GQ" to="w0gx:~SolutionKind.PLUGIN_OTHER" resolve="PLUGIN_OTHER" />
-                    <ref role="1Px2BO" to="w0gx:~SolutionKind" resolve="SolutionKind" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="qd$eT5YqxT" role="3cqZAp">
-              <node concept="2OqwBi" id="qd$eT5YqYs" role="3clFbG">
-                <node concept="37vLTw" id="qd$eT5YqxR" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Uu7NyQyMnn" resolve="module" />
-                </node>
-                <node concept="liA8E" id="qd$eT5YrpP" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c4:~Solution.save()" resolve="save" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="5zViqzlmjT3" role="3clFbw">
-            <node concept="Rm8GO" id="5zViqzlmjT4" role="3uHU7w">
-              <ref role="1Px2BO" to="w0gx:~SolutionKind" resolve="SolutionKind" />
-              <ref role="Rm8GQ" to="w0gx:~SolutionKind.NONE" resolve="NONE" />
-            </node>
-            <node concept="2OqwBi" id="5zViqzlmjT5" role="3uHU7B">
-              <node concept="37vLTw" id="5zViqzlmjT8" role="2Oq$k0">
-                <ref role="3cqZAo" node="Uu7NyQyMnn" resolve="module" />
-              </node>
-              <node concept="liA8E" id="5zViqzlmjTa" role="2OqNvi">
-                <ref role="37wK5l" to="z1c4:~Solution.getKind()" resolve="getKind" />
-              </node>
             </node>
           </node>
         </node>
