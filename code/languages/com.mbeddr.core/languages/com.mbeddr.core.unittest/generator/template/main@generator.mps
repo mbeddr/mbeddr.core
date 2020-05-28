@@ -215,7 +215,7 @@
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
-        <child id="6282313788306893059" name="index" index="2wJmCp" />
+        <child id="6282313788306893059" name="indexExpr" index="2wJmCp" />
       </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
@@ -5075,6 +5075,33 @@
       <ref role="2rZz_L" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
       <ref role="2rTdP9" to="yz9a:6TAwvhVRBLA" resolve="TestCollection" />
     </node>
+    <node concept="avzCv" id="5FYYhMLw_a3" role="avys_">
+      <node concept="3clFbS" id="5FYYhMLw_a4" role="2VODD2">
+        <node concept="3clFbF" id="5FYYhMLw_a5" role="3cqZAp">
+          <node concept="2YIFZM" id="5FYYhMLw_a6" role="3clFbG">
+            <ref role="37wK5l" to="ahli:6dhuB$Q4CT6" resolve="hasBCConfigItem" />
+            <ref role="1Pybhc" to="ahli:78Ts1skprjP" resolve="BCHelper" />
+            <node concept="2OqwBi" id="5FYYhMLw_a7" role="37wK5m">
+              <node concept="1iwH7S" id="5FYYhMLw_a8" role="2Oq$k0" />
+              <node concept="1r8y6K" id="5FYYhMLw_a9" role="2OqNvi" />
+            </node>
+            <node concept="1iwH7S" id="5FYYhMLw_aa" role="37wK5m" />
+            <node concept="Xl_RD" id="5FYYhMLw_ab" role="37wK5m">
+              <property role="Xl_RC" value="com.mbeddr.core.unittest/unittest_main" />
+            </node>
+            <node concept="2OqwBi" id="5FYYhMLw_ac" role="37wK5m">
+              <node concept="35c_gC" id="5FYYhMLw_ad" role="2Oq$k0">
+                <ref role="35c_gD" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
+              </node>
+              <node concept="FGMqu" id="5FYYhMLw_ae" role="2OqNvi" />
+            </node>
+            <node concept="Xl_RD" id="5FYYhMLw_af" role="37wK5m">
+              <property role="Xl_RC" value="skipping makefile augmentation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13MO4I" id="5so5TTr6V0Q">
     <property role="TrG5h" value="reduce_TestCase" />
@@ -7953,6 +7980,33 @@
                 </node>
                 <node concept="raruj" id="6OFMQWQ1n_5" role="lGtFl" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="avzCv" id="5FYYhMLwBeF" role="avys_">
+      <node concept="3clFbS" id="5FYYhMLwBeG" role="2VODD2">
+        <node concept="3clFbF" id="5FYYhMLwBeH" role="3cqZAp">
+          <node concept="2YIFZM" id="5FYYhMLwBeI" role="3clFbG">
+            <ref role="37wK5l" to="ahli:6dhuB$Q4CT6" resolve="hasBCConfigItem" />
+            <ref role="1Pybhc" to="ahli:78Ts1skprjP" resolve="BCHelper" />
+            <node concept="2OqwBi" id="5FYYhMLwBeJ" role="37wK5m">
+              <node concept="1iwH7S" id="5FYYhMLwBeK" role="2Oq$k0" />
+              <node concept="1r8y6K" id="5FYYhMLwBeL" role="2OqNvi" />
+            </node>
+            <node concept="1iwH7S" id="5FYYhMLwBeM" role="37wK5m" />
+            <node concept="Xl_RD" id="5FYYhMLwBeN" role="37wK5m">
+              <property role="Xl_RC" value="com.mbeddr.core.unittest/unittest_main" />
+            </node>
+            <node concept="2OqwBi" id="5FYYhMLwBeO" role="37wK5m">
+              <node concept="35c_gC" id="5FYYhMLwBeP" role="2Oq$k0">
+                <ref role="35c_gD" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
+              </node>
+              <node concept="FGMqu" id="5FYYhMLwBeQ" role="2OqNvi" />
+            </node>
+            <node concept="Xl_RD" id="5FYYhMLwBeR" role="37wK5m">
+              <property role="Xl_RC" value="skipping makefile augmentation" />
             </node>
           </node>
         </node>
@@ -11363,6 +11417,33 @@
                 </node>
                 <node concept="1v1jN8" id="2xlYByWHMOh" role="2OqNvi" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="avzCv" id="5FYYhML5omC" role="avys_">
+      <node concept="3clFbS" id="5FYYhML5omD" role="2VODD2">
+        <node concept="3clFbF" id="5FYYhML5omE" role="3cqZAp">
+          <node concept="2YIFZM" id="5FYYhML5omF" role="3clFbG">
+            <ref role="1Pybhc" to="ahli:78Ts1skprjP" resolve="BCHelper" />
+            <ref role="37wK5l" to="ahli:6dhuB$Q4CT6" resolve="hasBCConfigItem" />
+            <node concept="2OqwBi" id="5FYYhML5omG" role="37wK5m">
+              <node concept="1iwH7S" id="5FYYhML5omH" role="2Oq$k0" />
+              <node concept="1r8y6K" id="5FYYhML5omI" role="2OqNvi" />
+            </node>
+            <node concept="1iwH7S" id="5FYYhML5omJ" role="37wK5m" />
+            <node concept="Xl_RD" id="5FYYhML5omK" role="37wK5m">
+              <property role="Xl_RC" value="com.mbeddr.core.unittest/unittest_main" />
+            </node>
+            <node concept="2OqwBi" id="5FYYhML5omL" role="37wK5m">
+              <node concept="35c_gC" id="5FYYhML5omM" role="2Oq$k0">
+                <ref role="35c_gD" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
+              </node>
+              <node concept="FGMqu" id="5FYYhML5omN" role="2OqNvi" />
+            </node>
+            <node concept="Xl_RD" id="5FYYhML5omO" role="37wK5m">
+              <property role="Xl_RC" value="skipping makefile augmentation" />
             </node>
           </node>
         </node>
