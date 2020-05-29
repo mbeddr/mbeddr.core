@@ -263,7 +263,7 @@
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
-        <child id="6282313788306893059" name="index" index="2wJmCp" />
+        <child id="6282313788306893059" name="indexExpr" index="2wJmCp" />
       </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
@@ -11845,7 +11845,7 @@
                                             <ref role="1M0zk5" node="6_0HAqgej5W" resolve="singlePort" />
                                           </node>
                                           <node concept="3TrEf2" id="6_0HAqgej5Q" role="2OqNvi">
-                                            <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" resolve="index" />
+                                            <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" resolve="indexExpr" />
                                           </node>
                                         </node>
                                       </node>
