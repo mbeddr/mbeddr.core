@@ -105,6 +105,9 @@
       </concept>
     </language>
     <language id="67506b1e-43ad-47fe-a8e6-bc7837e9e11f" name="com.mbeddr.mpsutil.editingGuide">
+      <concept id="3201751099123625146" name="com.mbeddr.mpsutil.editingGuide.structure.ProgramFragment_ScopeProvider_AllOf" flags="ng" index="m50Gj">
+        <reference id="3201751099123625197" name="target" index="m50H4" />
+      </concept>
       <concept id="3453511597021550269" name="com.mbeddr.mpsutil.editingGuide.structure.CodeWord" flags="ng" index="JL00X">
         <property id="3453511597021550288" name="text" index="JL01g" />
       </concept>
@@ -118,8 +121,10 @@
       </concept>
       <concept id="3909459679554886010" name="com.mbeddr.mpsutil.editingGuide.structure.ProgramFragment" flags="ng" index="2LPuAB">
         <property id="5902522736467820007" name="showErrors" index="2Sfkj0" />
+        <child id="972419658558272139" name="scopeProviders" index="dx$wc" />
       </concept>
       <concept id="3909459679554885948" name="com.mbeddr.mpsutil.editingGuide.structure.Task" flags="ng" index="2LPuBx">
+        <property id="4499765597929159206" name="monitorSelectionChange" index="1bplFu" />
         <child id="3453511597019902484" name="explanation" index="JZmik" />
         <child id="3909459679554885979" name="monitor" index="2LPuA6" />
         <child id="3909459679554885953" name="code" index="2LPuAs" />
@@ -127,6 +132,9 @@
       </concept>
       <concept id="3909459679554969645" name="com.mbeddr.mpsutil.editingGuide.structure.EditorContextParam" flags="ng" index="2LPL3K" />
       <concept id="3909459679554969201" name="com.mbeddr.mpsutil.editingGuide.structure.ProgramFragmentParam" flags="ng" index="2LPMUG" />
+      <concept id="8627246747558906322" name="com.mbeddr.mpsutil.editingGuide.structure.ReferencingProgramFragment" flags="ng" index="16nEFB">
+        <reference id="8627246747558906998" name="referencedNode" index="16nEX3" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
@@ -244,6 +252,7 @@
         </node>
       </node>
       <node concept="2LPuAA" id="3p1cdQ7_M8M" role="2LPuAs">
+        <property role="TrG5h" value="deletionFragment" />
         <node concept="3clFb_" id="3p1cdQ7_M8U" role="2LPuAx">
           <property role="TrG5h" value="dummy" />
           <node concept="3cqZAl" id="3p1cdQ7_M8W" role="3clF45" />
@@ -251,7 +260,7 @@
           <node concept="3clFbS" id="3p1cdQ7_M8Y" role="3clF47">
             <node concept="3cpWs8" id="3p1cdQ7_M95" role="3cqZAp">
               <node concept="3cpWsn" id="3p1cdQ7_M98" role="3cpWs9">
-                <property role="TrG5h" value="i1" />
+                <property role="TrG5h" value="i" />
                 <node concept="10Oyi0" id="3p1cdQ7_M94" role="1tU5fm" />
               </node>
             </node>
@@ -266,6 +275,7 @@
     </node>
     <node concept="2LPuBx" id="31xWCC4R$X" role="2LPuAy">
       <property role="TrG5h" value="Selection" />
+      <property role="1bplFu" value="true" />
       <node concept="19SGf9" id="31xWCC4R$Y" role="2LPuBy">
         <node concept="19SUe$" id="31xWCC4R$Z" role="19SJt6">
           <property role="19SUeA" value="This is the second step. Now, we provide you with a warning that the variable is unused.&#10;&#10;Please select 4*7 by clicking on 4 and selecting up the tree with " />
@@ -387,6 +397,7 @@
       </node>
       <node concept="2LPuAA" id="31xWCC4RBn" role="2LPuAs">
         <property role="2Sfkj0" value="true" />
+        <property role="TrG5h" value="selectionFragment" />
         <node concept="3clFb_" id="31xWCC4RBv" role="2LPuAx">
           <property role="TrG5h" value="dummy" />
           <node concept="3cqZAl" id="31xWCC4RBx" role="3clF45" />
@@ -406,7 +417,7 @@
                     </node>
                   </node>
                   <node concept="17qRlL" id="31xWCC4RG0" role="3uHU7B">
-                    <node concept="3cmrfG" id="31xWCC4RC1" role="3uHU7B">
+                    <node concept="3cmrfG" id="44LrdWQfS2q" role="3uHU7B">
                       <property role="3cmrfH" value="2" />
                     </node>
                     <node concept="3cmrfG" id="31xWCC4RG3" role="3uHU7w">
@@ -418,9 +429,143 @@
             </node>
           </node>
         </node>
+        <node concept="m50Gj" id="44LrdWQfx8V" role="dx$wc">
+          <ref role="m50H4" node="3p1cdQ7_M8M" resolve="deletionFragment" />
+        </node>
       </node>
       <node concept="19SGf9" id="2ZHlC004kGI" role="JZmik">
         <node concept="19SUe$" id="2ZHlC004kGJ" role="19SJt6">
+          <property role="19SUeA" value="" />
+        </node>
+      </node>
+    </node>
+    <node concept="2LPuBx" id="44LrdWQfZRD" role="2LPuAy">
+      <property role="TrG5h" value="Selection Referenced" />
+      <property role="1bplFu" value="true" />
+      <node concept="19SGf9" id="44LrdWQfZRE" role="2LPuBy">
+        <node concept="19SUe$" id="44LrdWQfZRF" role="19SJt6">
+          <property role="19SUeA" value="This is the second step. Now, we provide you with a warning that the variable is unused.&#10;&#10;Please select 4*7 by clicking on 4 and selecting up the tree with " />
+        </node>
+        <node concept="JL00X" id="44LrdWQfZRG" role="19SJt6">
+          <property role="JL01g" value="CTRL" />
+        </node>
+        <node concept="19SUe$" id="44LrdWQfZRH" role="19SJt6">
+          <property role="19SUeA" value=" + " />
+        </node>
+        <node concept="JL00X" id="44LrdWQfZRI" role="19SJt6">
+          <property role="JL01g" value="W" />
+        </node>
+        <node concept="19SUe$" id="44LrdWQfZRJ" role="19SJt6">
+          <property role="19SUeA" value="&#10;" />
+        </node>
+      </node>
+      <node concept="2LPuA2" id="44LrdWQfZRK" role="2LPuA6">
+        <node concept="3clFbS" id="44LrdWQfZRL" role="2VODD2">
+          <node concept="3SKdUt" id="44LrdWQfZRM" role="3cqZAp">
+            <node concept="1PaTwC" id="44LrdWQfZRN" role="3ndbpf">
+              <node concept="3oM_SD" id="44LrdWQfZRO" role="1PaTwD">
+                <property role="3oM_SC" value="if" />
+              </node>
+              <node concept="3oM_SD" id="44LrdWQfZRP" role="1PaTwD">
+                <property role="3oM_SC" value="selection.getNode" />
+              </node>
+              <node concept="3oM_SD" id="44LrdWQfZRQ" role="1PaTwD">
+                <property role="3oM_SC" value="==" />
+              </node>
+              <node concept="3oM_SD" id="44LrdWQfZRR" role="1PaTwD">
+                <property role="3oM_SC" value="Mul" />
+              </node>
+              <node concept="3oM_SD" id="44LrdWQfZRS" role="1PaTwD">
+                <property role="3oM_SC" value="dann" />
+              </node>
+              <node concept="3oM_SD" id="44LrdWQfZRT" role="1PaTwD">
+                <property role="3oM_SC" value="gut" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="44LrdWQfZRU" role="3cqZAp">
+            <node concept="3cpWsn" id="44LrdWQfZRV" role="3cpWs9">
+              <property role="TrG5h" value="selectedCell" />
+              <node concept="3uibUv" id="44LrdWQfZRW" role="1tU5fm">
+                <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+              </node>
+              <node concept="2OqwBi" id="44LrdWQfZRX" role="33vP2m">
+                <node concept="2LPL3K" id="44LrdWQfZRY" role="2Oq$k0" />
+                <node concept="liA8E" id="44LrdWQfZRZ" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell()" resolve="getSelectedCell" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="44LrdWQfZS0" role="3cqZAp">
+            <node concept="3clFbS" id="44LrdWQfZS1" role="3clFbx">
+              <node concept="3clFbJ" id="44LrdWQfZS2" role="3cqZAp">
+                <property role="TyiWK" value="true" />
+                <property role="TyiWL" value="false" />
+                <node concept="3clFbS" id="44LrdWQfZS3" role="3clFbx">
+                  <node concept="3cpWs6" id="44LrdWQfZS4" role="3cqZAp">
+                    <node concept="2ShNRf" id="44LrdWQfZS5" role="3cqZAk">
+                      <node concept="1pGfFk" id="44LrdWQfZS6" role="2ShVmc">
+                        <ref role="37wK5l" to="2vci:31xWCC4QvC" resolve="MonitorResultDone" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1Wc70l" id="44LrdWQfZS7" role="3clFbw">
+                  <node concept="2OqwBi" id="44LrdWQfZS8" role="3uHU7w">
+                    <node concept="37vLTw" id="44LrdWQfZS9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="44LrdWQfZRV" resolve="selectedCell" />
+                    </node>
+                    <node concept="liA8E" id="44LrdWQfZSa" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell.isBig()" resolve="isBig" />
+                    </node>
+                  </node>
+                  <node concept="2YFouu" id="44LrdWQfZSb" role="3uHU7B">
+                    <node concept="2OqwBi" id="44LrdWQfZSc" role="3uHU7B">
+                      <node concept="37vLTw" id="44LrdWQfZSd" role="2Oq$k0">
+                        <ref role="3cqZAo" node="44LrdWQfZRV" resolve="selectedCell" />
+                      </node>
+                      <node concept="liA8E" id="44LrdWQfZSe" role="2OqNvi">
+                        <ref role="37wK5l" to="f4zo:~EditorCell.getSNode()" resolve="getSNode" />
+                      </node>
+                    </node>
+                    <node concept="2c44tf" id="44LrdWQfZSf" role="3uHU7w">
+                      <node concept="17qRlL" id="44LrdWQfZSg" role="2c44tc">
+                        <node concept="3cmrfG" id="44LrdWQfZSh" role="3uHU7w">
+                          <property role="3cmrfH" value="7" />
+                        </node>
+                        <node concept="3cmrfG" id="44LrdWQfZSi" role="3uHU7B">
+                          <property role="3cmrfH" value="4" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="44LrdWQfZSj" role="3clFbw">
+              <node concept="10Nm6u" id="44LrdWQfZSk" role="3uHU7w" />
+              <node concept="37vLTw" id="44LrdWQfZSl" role="3uHU7B">
+                <ref role="3cqZAo" node="44LrdWQfZRV" resolve="selectedCell" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="44LrdWQfZSm" role="3cqZAp">
+            <node concept="3cpWsn" id="44LrdWQfZSn" role="3cpWs9">
+              <property role="TrG5h" value="m2" />
+              <node concept="10Oyi0" id="44LrdWQfZSo" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="3cpWs6" id="44LrdWQfZSp" role="3cqZAp">
+            <node concept="10Nm6u" id="44LrdWQfZSq" role="3cqZAk" />
+          </node>
+        </node>
+      </node>
+      <node concept="16nEFB" id="44LrdWQg03i" role="2LPuAs">
+        <ref role="16nEX3" node="31xWCC4RBn" resolve="selectionFragment" />
+      </node>
+      <node concept="19SGf9" id="44LrdWQfZSF" role="JZmik">
+        <node concept="19SUe$" id="44LrdWQfZSG" role="19SJt6">
           <property role="19SUeA" value="" />
         </node>
       </node>

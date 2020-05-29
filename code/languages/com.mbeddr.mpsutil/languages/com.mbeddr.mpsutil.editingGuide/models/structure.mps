@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="1oap" ref="r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources.structure)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -21,6 +20,10 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
+        <child id="7862711839422615224" name="seeAlso" index="t5JxU" />
+      </concept>
+      <concept id="7862711839422615221" name="jetbrains.mps.lang.structure.structure.DocumentationObjectiveRef" flags="ng" index="t5JxR">
+        <reference id="7862711839422615222" name="target" index="t5JxO" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -31,9 +34,18 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="8842732777748464990" name="jetbrains.mps.lang.structure.structure.RefPresentationTemplate" flags="ng" index="ROjv2">
+        <property id="4307758654697524057" name="prefix" index="1W_73P" />
+      </concept>
+      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
+        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
+        <child id="8842732777748474935" name="refPresentationTemplate" index="ROhUF" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
@@ -119,9 +131,6 @@
     <node concept="PrWs8" id="3p1cdQ7_d$X" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="PrWs8" id="4AzkLAGs$WL" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_v">
     <property role="TrG5h" value="MonitorFunction" />
@@ -142,17 +151,17 @@
       <property role="20kJfa" value="scopeProviders" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="PYICs0YGCY" resolve="ProgramFragment_ScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="1X06SdGBwmx" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-    </node>
-    <node concept="PrWs8" id="66G6VYc4E9z" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+      <node concept="t5JxF" id="22irgSmHA6i" role="lGtFl">
+        <property role="t5JxN" value="FIXME this child should probably be moved down to LiteralProgramFragment" />
+      </node>
     </node>
     <node concept="1TJgyi" id="57DYivDPbRB" role="1TKVEl">
       <property role="IQ2nx" value="5902522736467820007" />
       <property role="TrG5h" value="showErrors" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="22irgSmHTqp" role="PzmwI">
+      <ref role="PrY4T" node="44LrdWQ3eCt" resolve="INodeExporter" />
     </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_V">
@@ -172,6 +181,12 @@
     </node>
     <node concept="PrWs8" id="2LITU$UHeA2" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="44LrdWQehTf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="22irgSmHXeu" role="PzmwI">
+      <ref role="PrY4T" node="22irgSmHXel" resolve="IDirectNodeExporter" />
     </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_Y">
@@ -334,17 +349,20 @@
   <node concept="1TIwiD" id="2LITU$UuIMU">
     <property role="EcuMT" value="3201751099123625146" />
     <property role="3GE5qa" value="fragments" />
-    <property role="TrG5h" value="ProgramFragment_ScopeProvider_IVisibleElementProviderRef" />
-    <property role="R4oN_" value="All elements exposed by the referenced IVisibleElementProvider that it contains" />
+    <property role="TrG5h" value="ProgramFragment_ScopeProvider_AllOf" />
+    <property role="R4oN_" value="All elements exposed by the referenced instance of IExportSomeNodes" />
     <ref role="1TJDcQ" node="PYICs0YGCY" resolve="ProgramFragment_ScopeProvider" />
     <node concept="1TJgyj" id="2LITU$UuINH" role="1TKVEi">
       <property role="IQ2ns" value="3201751099123625197" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+      <ref role="20lvS9" node="44LrdWQ3eCt" resolve="INodeExporter" />
     </node>
-    <node concept="t5JxF" id="66G6VYc53xk" role="lGtFl">
-      <property role="t5JxN" value="Note that this is a misuse of IVisibleElementProvider. It is supposed to be used to lookup visibility from children nodes only." />
+    <node concept="RPilO" id="44LrdWQlKE0" role="lGtFl">
+      <ref role="RPilL" node="2LITU$UuINH" resolve="target" />
+      <node concept="ROjv2" id="44LrdWQlKE2" role="ROhUF">
+        <property role="1W_73P" value="all of " />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="PYICs0Ym6D">
@@ -358,16 +376,11 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="PYICs0YGCY">
-    <property role="EcuMT" value="972419658558392894" />
-    <property role="3GE5qa" value="fragments" />
-    <property role="TrG5h" value="ProgramFragment_ScopeProvider" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="PYICs0YGVh" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    <node concept="RPilO" id="44LrdWQlKEj" role="lGtFl">
+      <ref role="RPilL" node="PYICs0Ym79" resolve="target" />
+      <node concept="ROjv2" id="44LrdWQlKEl" role="ROhUF">
+        <property role="1W_73P" value="just the element " />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="4sSf$eKgZ7y">
@@ -377,6 +390,39 @@
       <property role="IQ2nx" value="5131920235829653987" />
       <property role="TrG5h" value="atRuntime" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="44LrdWQ3eCt">
+    <property role="EcuMT" value="4697655592264460829" />
+    <property role="3GE5qa" value="fragments" />
+    <property role="TrG5h" value="INodeExporter" />
+    <node concept="t5JxF" id="44LrdWQ3eCu" role="lGtFl">
+      <property role="t5JxN" value="Program fragments export their nodes so that they can be referred to by scope providers and RefWords" />
+      <node concept="t5JxR" id="22irgSmHTaU" role="t5JxU">
+        <ref role="t5JxO" node="PYICs0YGCY" resolve="ProgramFragment_ScopeProvider" />
+      </node>
+      <node concept="t5JxR" id="22irgSmHTb0" role="t5JxU">
+        <ref role="t5JxO" node="2ZHlC00aapr" resolve="RefWord" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="PYICs0YGCY">
+    <property role="EcuMT" value="972419658558392894" />
+    <property role="3GE5qa" value="fragments" />
+    <property role="TrG5h" value="ProgramFragment_ScopeProvider" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="PlHQZ" id="22irgSmHXel">
+    <property role="EcuMT" value="2347058263091565461" />
+    <property role="3GE5qa" value="fragments" />
+    <property role="TrG5h" value="IDirectNodeExporter" />
+    <node concept="PrWs8" id="22irgSmHXem" role="PrDN$">
+      <ref role="PrY4T" node="44LrdWQ3eCt" resolve="INodeExporter" />
+    </node>
+    <node concept="t5JxF" id="22irgSmHXeo" role="lGtFl">
+      <property role="t5JxN" value="Marker interface for concepts that export nodes directly, rather than reexporting nodes exported by another node." />
     </node>
   </node>
 </model>
