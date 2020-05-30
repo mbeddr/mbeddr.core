@@ -11,6 +11,7 @@
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
     <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -37,6 +38,7 @@
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -54,6 +56,9 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -69,6 +74,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -127,6 +135,33 @@
       </node>
       <node concept="10P_77" id="6SENleF_0Fu" role="3clF45" />
       <node concept="3Tm1VV" id="6SENleF_0Fv" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="WorZ0vnnHD">
+    <ref role="13h7C2" to="v0r9:vMpGaXIYy0" resolve="DirectFieldAccess" />
+    <node concept="13i0hz" id="WorZ0vnnHO" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <node concept="3clFbS" id="WorZ0vnnHR" role="3clF47">
+        <node concept="3cpWs6" id="1VQvajLb13X" role="3cqZAp">
+          <node concept="2OqwBi" id="1VQvajLb145" role="3cqZAk">
+            <node concept="2OqwBi" id="1VQvajLb140" role="2Oq$k0">
+              <node concept="13iPFW" id="1VQvajLb13Z" role="2Oq$k0" />
+              <node concept="3TrEf2" id="WorZ0vnose" role="2OqNvi">
+                <ref role="3Tt5mk" to="v0r9:vMpGaXIZ7Z" resolve="field" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="WorZ0vodIt" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="WorZ0vnnIc" role="3clF45" />
+      <node concept="3Tm1VV" id="WorZ0vnnId" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="WorZ0vnnHE" role="13h7CW">
+      <node concept="3clFbS" id="WorZ0vnnHF" role="2VODD2" />
     </node>
   </node>
 </model>
