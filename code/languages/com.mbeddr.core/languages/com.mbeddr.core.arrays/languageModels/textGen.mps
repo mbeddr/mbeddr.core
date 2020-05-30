@@ -97,10 +97,28 @@
     <ref role="WuzLi" to="yq40:5sJgLFR$y$1" resolve="ArrayAccessExpr" />
     <node concept="11bSqf" id="4Y0lNFa3jeK" role="11c4hB">
       <node concept="3clFbS" id="4Y0lNFa3jeL" role="2VODD2">
-        <node concept="lc7rE" id="4Y0lNFa3jeM" role="3cqZAp">
-          <node concept="1bDJIP" id="6sPmSUBrdqv" role="lcghm">
-            <ref role="1rvKf6" to="dylp:6sPmSUBCG8U" resolve="genExpression" />
-            <node concept="117lpO" id="6sPmSUBrdqO" role="1ryhcI" />
+        <node concept="lc7rE" id="1ou7643TiCp" role="3cqZAp">
+          <node concept="l9hG8" id="4Y0lNFa3jeO" role="lcghm">
+            <node concept="2OqwBi" id="4Y0lNFa3lCN" role="lb14g">
+              <node concept="3TrEf2" id="2APHWiztFn7" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+              </node>
+              <node concept="117lpO" id="4Y0lNFa3jeQ" role="2Oq$k0" />
+            </node>
+          </node>
+          <node concept="la8eA" id="4Y0lNFa3xVz" role="lcghm">
+            <property role="lacIc" value="[" />
+          </node>
+          <node concept="l9hG8" id="4Y0lNFa3xV_" role="lcghm">
+            <node concept="2OqwBi" id="4Y0lNFa3xVC" role="lb14g">
+              <node concept="117lpO" id="4Y0lNFa3xVB" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4Y0lNFa3xVG" role="2OqNvi">
+                <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" resolve="indexExpr" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="4Y0lNFa3xVI" role="lcghm">
+            <property role="lacIc" value="]" />
           </node>
         </node>
       </node>
