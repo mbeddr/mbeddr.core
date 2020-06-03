@@ -126,6 +126,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -824,8 +827,10 @@
                           <ref role="2pJxaS" to="tpee:f$Xl_Og" resolve="StringLiteral" />
                           <node concept="2pJxcG" id="lse_ua7AUt" role="2pJxcM">
                             <ref role="2pJxcJ" to="tpee:f$Xl_Oh" resolve="value" />
-                            <node concept="Xl_RD" id="lse_ua7AYq" role="28ntcv">
-                              <property role="Xl_RC" value="" />
+                            <node concept="WxPPo" id="27yO7ubqn65" role="28ntcv">
+                              <node concept="Xl_RD" id="lse_ua7AYq" role="WxPPp">
+                                <property role="Xl_RC" value="" />
+                              </node>
                             </node>
                           </node>
                         </node>

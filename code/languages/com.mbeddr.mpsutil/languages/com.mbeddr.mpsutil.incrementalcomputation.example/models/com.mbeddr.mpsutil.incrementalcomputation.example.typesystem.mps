@@ -2,7 +2,7 @@
 <model ref="r:cdb85e4b-8cf8-473a-b888-c94ce64cb7e5(com.mbeddr.mpsutil.incrementalcomputation.example.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -54,7 +54,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -112,7 +112,7 @@
     <property role="TrG5h" value="check_GraphNode" />
     <node concept="3clFbS" id="6QoXIYUbgcv" role="18ibNy">
       <node concept="3SKdUt" id="6QoXIYUbSf8" role="3cqZAp">
-        <node concept="1PaTwC" id="17qUVvSZkR$" role="3ndbpf">
+        <node concept="1PaTwC" id="17qUVvSZkR$" role="1aUNEU">
           <node concept="3oM_SD" id="17qUVvSZkR_" role="1PaTwD">
             <property role="3oM_SC" value="TODO:" />
           </node>
@@ -152,7 +152,7 @@
         </node>
       </node>
       <node concept="3SKdUt" id="5uCOCQhZJPK" role="3cqZAp">
-        <node concept="1PaTwC" id="17qUVvSZkRL" role="3ndbpf">
+        <node concept="1PaTwC" id="17qUVvSZkRL" role="1aUNEU">
           <node concept="3oM_SD" id="17qUVvSZkRM" role="1PaTwD">
             <property role="3oM_SC" value="TODO:" />
           </node>

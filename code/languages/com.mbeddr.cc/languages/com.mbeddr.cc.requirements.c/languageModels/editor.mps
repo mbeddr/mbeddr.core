@@ -8,8 +8,8 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -42,6 +42,7 @@
       </concept>
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784074" name="jetbrains.mps.lang.editor.structure.MenuTypeNamed" flags="ng" index="22hDWg" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
@@ -106,6 +107,7 @@
       </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
@@ -156,7 +158,7 @@
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
-      <concept id="5624877018226904808" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Named" flags="ng" index="3ICXOK" />
+      <concept id="5624877018226900666" name="jetbrains.mps.lang.editor.structure.TransformationMenu" flags="ng" index="3ICUPy" />
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
@@ -296,7 +298,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -1235,7 +1237,7 @@
             <node concept="3clFbJ" id="1zEStSSthf5" role="3cqZAp">
               <node concept="3clFbS" id="1zEStSSthf8" role="3clFbx">
                 <node concept="3SKdUt" id="1zEStSStj7y" role="3cqZAp">
-                  <node concept="1PaTwC" id="6JXsDxttvXS" role="3ndbpf">
+                  <node concept="1PaTwC" id="6JXsDxttvXS" role="1aUNEU">
                     <node concept="3oM_SD" id="6JXsDxttvXT" role="1PaTwD">
                       <property role="3oM_SC" value="create" />
                     </node>
@@ -1337,7 +1339,7 @@
                 </node>
                 <node concept="3clFbS" id="1zEStSStigo" role="3eOfB_">
                   <node concept="3SKdUt" id="1zEStSStjjW" role="3cqZAp">
-                    <node concept="1PaTwC" id="6JXsDxttvXW" role="3ndbpf">
+                    <node concept="1PaTwC" id="6JXsDxttvXW" role="1aUNEU">
                       <node concept="3oM_SD" id="6JXsDxttvXX" role="1PaTwD">
                         <property role="3oM_SC" value="create" />
                       </node>
@@ -1427,7 +1429,7 @@
                 </node>
                 <node concept="3clFbS" id="1zEStSStiAa" role="3eOfB_">
                   <node concept="3SKdUt" id="1zEStSStjuo" role="3cqZAp">
-                    <node concept="1PaTwC" id="6JXsDxttvXZ" role="3ndbpf">
+                    <node concept="1PaTwC" id="6JXsDxttvXZ" role="1aUNEU">
                       <node concept="3oM_SD" id="6JXsDxttvY0" role="1PaTwD">
                         <property role="3oM_SC" value="delete" />
                       </node>
@@ -1452,7 +1454,7 @@
               <node concept="9aQIb" id="1zEStSStj1w" role="9aQIa">
                 <node concept="3clFbS" id="1zEStSStj1x" role="9aQI4">
                   <node concept="3SKdUt" id="1zEStSStjEu" role="3cqZAp">
-                    <node concept="1PaTwC" id="6JXsDxttvY1" role="3ndbpf">
+                    <node concept="1PaTwC" id="6JXsDxttvY1" role="1aUNEU">
                       <node concept="3oM_SD" id="6JXsDxttvY2" role="1PaTwD">
                         <property role="3oM_SC" value="replace" />
                       </node>
@@ -3018,9 +3020,11 @@
       </node>
     </node>
   </node>
-  <node concept="3ICXOK" id="3cUcim$cDje">
-    <property role="TrG5h" value="FBarDivExpr_ApplySideTransforms" />
+  <node concept="3ICUPy" id="3cUcim$cDje">
     <ref role="aqKnT" to="3vkx:62DhS$RD9lU" resolve="FBarDivExpr" />
+    <node concept="22hDWg" id="27yO7ubJAS0" role="22hAXT">
+      <property role="TrG5h" value="FBarDivExpr_ApplySideTransforms" />
+    </node>
     <node concept="1Qtc8_" id="3cUcim$cDjf" role="IW6Ez">
       <node concept="3cWJ9i" id="3cUcim$cDjg" role="1Qtc8$">
         <node concept="CtIbL" id="3cUcim$cDjh" role="CtIbM">

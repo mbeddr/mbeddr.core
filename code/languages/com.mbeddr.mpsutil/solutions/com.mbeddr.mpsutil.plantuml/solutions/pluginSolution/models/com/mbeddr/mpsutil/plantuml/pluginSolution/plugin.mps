@@ -8,7 +8,7 @@
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -122,7 +122,7 @@
       <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
         <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
       </concept>
-      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="lg" index="1bYyw_">
+      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="ng" index="1bYyw_">
         <reference id="6193305307616734326" name="action" index="1bYAoF" />
       </concept>
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
@@ -155,6 +155,9 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
+        <child id="8118189177080264854" name="alternative" index="nSUat" />
+      </concept>
       <concept id="1224500764161" name="jetbrains.mps.baseLanguage.structure.BitwiseAndExpression" flags="nn" index="pVHWs" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
@@ -174,11 +177,6 @@
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
-      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
-        <child id="1153952416686" name="body" index="2GV8ay" />
-        <child id="1153952429843" name="finallyBody" index="2GVbov" />
-        <child id="1164903700860" name="catchClause" index="TEXxN" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -205,16 +203,8 @@
       <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
         <reference id="1201385237847" name="property" index="2S8YL0" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
-        <child id="1164879758292" name="body" index="SfCbr" />
-        <child id="1164903496223" name="catchClause" index="TEbGg" />
-      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -227,6 +217,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
@@ -349,6 +340,13 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
+        <child id="8276990574895933173" name="catchBody" index="1zc67A" />
+        <child id="8276990574895933172" name="throwable" index="1zc67B" />
+      </concept>
+      <concept id="8276990574909231788" name="jetbrains.mps.baseLanguage.structure.FinallyClause" flags="ng" index="1wplmZ">
+        <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
+      </concept>
       <concept id="1202065242027" name="jetbrains.mps.baseLanguage.structure.DefaultGetAccessor" flags="ng" index="3wEZqW" />
       <concept id="1202077725299" name="jetbrains.mps.baseLanguage.structure.DefaultSetAccessor" flags="ng" index="3xqBd$">
         <child id="1202077744034" name="visibility" index="3xqFEP" />
@@ -364,6 +362,11 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+        <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
+        <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
+        <child id="8276990574886367508" name="body" index="1zxBo7" />
+      </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
@@ -372,7 +375,7 @@
       <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -1663,8 +1666,8 @@
           </node>
         </node>
         <node concept="3clFbH" id="4NnN$WSo9Wj" role="3cqZAp" />
-        <node concept="2GUZhq" id="4NnN$WSoeuY" role="3cqZAp">
-          <node concept="3clFbS" id="2aP19v2Yufo" role="2GV8ay">
+        <node concept="3J1_TO" id="4NnN$WSoeuY" role="3cqZAp">
+          <node concept="3clFbS" id="2aP19v2Yufo" role="1zxBo7">
             <node concept="3cpWs8" id="2aP19v2Yufp" role="3cqZAp">
               <node concept="3cpWsn" id="2aP19v2YueZ" role="3cpWs9">
                 <property role="TrG5h" value="svgDocument" />
@@ -1730,14 +1733,17 @@
               </node>
             </node>
           </node>
-          <node concept="TDmWw" id="2aP19v2YufQ" role="TEXxN">
-            <node concept="3cpWsn" id="2aP19v2Yuf2" role="TDEfY">
+          <node concept="3uVAMA" id="2aP19v2YufQ" role="1zxBo5">
+            <node concept="XOnhg" id="2aP19v2Yuf2" role="1zc67B">
+              <property role="3TUv4t" value="false" />
               <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="2aP19v2YufR" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+              <node concept="nSUau" id="8beyw6G5873" role="1tU5fm">
+                <node concept="3uibUv" id="2aP19v2YufR" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                </node>
               </node>
             </node>
-            <node concept="3clFbS" id="2aP19v2YufS" role="TDEfX">
+            <node concept="3clFbS" id="2aP19v2YufS" role="1zc67A">
               <node concept="RRSsy" id="42VTAcDfnRi" role="3cqZAp">
                 <property role="RRSoG" value="gZ5fh_4/error" />
                 <node concept="Xl_RD" id="2aP19v2YufU" role="RRSoy">
@@ -1749,66 +1755,71 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbS" id="4NnN$WSoev1" role="2GVbov">
-            <node concept="SfApY" id="4NnN$WSogUG" role="3cqZAp">
-              <node concept="3clFbS" id="4NnN$WSogUH" role="SfCbr">
-                <node concept="3clFbJ" id="4NnN$WSofbk" role="3cqZAp">
-                  <node concept="3clFbS" id="4NnN$WSofbl" role="3clFbx">
-                    <node concept="3clFbF" id="4NnN$WSofuR" role="3cqZAp">
-                      <node concept="2OqwBi" id="4NnN$WSofwT" role="3clFbG">
-                        <node concept="37vLTw" id="4NnN$WSofuQ" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4NnN$WSo9xY" resolve="outputStreamWriter" />
-                        </node>
-                        <node concept="liA8E" id="4NnN$WSofMu" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~OutputStreamWriter.close()" resolve="close" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3y3z36" id="4NnN$WSofiw" role="3clFbw">
-                    <node concept="10Nm6u" id="4NnN$WSofj0" role="3uHU7w" />
-                    <node concept="37vLTw" id="4NnN$WSofeB" role="3uHU7B">
-                      <ref role="3cqZAo" node="4NnN$WSo9xY" resolve="outputStreamWriter" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="4NnN$WSog0O" role="3cqZAp">
-                  <node concept="3clFbS" id="4NnN$WSog0R" role="3clFbx">
-                    <node concept="3clFbF" id="4NnN$WSogms" role="3cqZAp">
-                      <node concept="2OqwBi" id="4NnN$WSogq2" role="3clFbG">
-                        <node concept="37vLTw" id="4NnN$WSogmr" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4NnN$WSo8o2" resolve="fileOutputStream" />
-                        </node>
-                        <node concept="liA8E" id="4NnN$WSogRO" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~FileOutputStream.close()" resolve="close" />
+          <node concept="1wplmZ" id="dL5prCsJtML" role="1zxBo6">
+            <node concept="3clFbS" id="4NnN$WSoev1" role="1wplMD">
+              <node concept="3J1_TO" id="4NnN$WSogUG" role="3cqZAp">
+                <node concept="3clFbS" id="4NnN$WSogUH" role="1zxBo7">
+                  <node concept="3clFbJ" id="4NnN$WSofbk" role="3cqZAp">
+                    <node concept="3clFbS" id="4NnN$WSofbl" role="3clFbx">
+                      <node concept="3clFbF" id="4NnN$WSofuR" role="3cqZAp">
+                        <node concept="2OqwBi" id="4NnN$WSofwT" role="3clFbG">
+                          <node concept="37vLTw" id="4NnN$WSofuQ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4NnN$WSo9xY" resolve="outputStreamWriter" />
+                          </node>
+                          <node concept="liA8E" id="4NnN$WSofMu" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~OutputStreamWriter.close()" resolve="close" />
+                          </node>
                         </node>
                       </node>
                     </node>
+                    <node concept="3y3z36" id="4NnN$WSofiw" role="3clFbw">
+                      <node concept="10Nm6u" id="4NnN$WSofj0" role="3uHU7w" />
+                      <node concept="37vLTw" id="4NnN$WSofeB" role="3uHU7B">
+                        <ref role="3cqZAo" node="4NnN$WSo9xY" resolve="outputStreamWriter" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="3y3z36" id="4NnN$WSogd1" role="3clFbw">
-                    <node concept="10Nm6u" id="4NnN$WSogdx" role="3uHU7w" />
-                    <node concept="37vLTw" id="4NnN$WSog6v" role="3uHU7B">
-                      <ref role="3cqZAo" node="4NnN$WSo8o2" resolve="fileOutputStream" />
+                  <node concept="3clFbJ" id="4NnN$WSog0O" role="3cqZAp">
+                    <node concept="3clFbS" id="4NnN$WSog0R" role="3clFbx">
+                      <node concept="3clFbF" id="4NnN$WSogms" role="3cqZAp">
+                        <node concept="2OqwBi" id="4NnN$WSogq2" role="3clFbG">
+                          <node concept="37vLTw" id="4NnN$WSogmr" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4NnN$WSo8o2" resolve="fileOutputStream" />
+                          </node>
+                          <node concept="liA8E" id="4NnN$WSogRO" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~FileOutputStream.close()" resolve="close" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3y3z36" id="4NnN$WSogd1" role="3clFbw">
+                      <node concept="10Nm6u" id="4NnN$WSogdx" role="3uHU7w" />
+                      <node concept="37vLTw" id="4NnN$WSog6v" role="3uHU7B">
+                        <ref role="3cqZAo" node="4NnN$WSo8o2" resolve="fileOutputStream" />
+                      </node>
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="TDmWw" id="4NnN$WSogUC" role="TEbGg">
-                <node concept="3clFbS" id="4NnN$WSogUD" role="TDEfX">
-                  <node concept="RRSsy" id="42VTAcDfnRq" role="3cqZAp">
-                    <property role="RRSoG" value="gZ5fh_4/error" />
-                    <node concept="Xl_RD" id="4NnN$WSohKO" role="RRSoy">
-                      <property role="Xl_RC" value="Failed to close stream!" />
-                    </node>
-                    <node concept="37vLTw" id="4NnN$WSohKQ" role="RRSow">
-                      <ref role="3cqZAo" node="4NnN$WSogUE" resolve="e" />
+                <node concept="3uVAMA" id="4NnN$WSogUC" role="1zxBo5">
+                  <node concept="XOnhg" id="4NnN$WSogUE" role="1zc67B">
+                    <property role="3TUv4t" value="false" />
+                    <property role="TrG5h" value="e" />
+                    <node concept="nSUau" id="5Sb7V1p9lGi" role="1tU5fm">
+                      <node concept="3uibUv" id="4NnN$WSogUF" role="nSUat">
+                        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                      </node>
                     </node>
                   </node>
-                </node>
-                <node concept="3cpWsn" id="4NnN$WSogUE" role="TDEfY">
-                  <property role="TrG5h" value="e" />
-                  <node concept="3uibUv" id="4NnN$WSogUF" role="1tU5fm">
-                    <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                  <node concept="3clFbS" id="4NnN$WSogUD" role="1zc67A">
+                    <node concept="RRSsy" id="42VTAcDfnRq" role="3cqZAp">
+                      <property role="RRSoG" value="gZ5fh_4/error" />
+                      <node concept="Xl_RD" id="4NnN$WSohKO" role="RRSoy">
+                        <property role="Xl_RC" value="Failed to close stream!" />
+                      </node>
+                      <node concept="37vLTw" id="4NnN$WSohKQ" role="RRSow">
+                        <ref role="3cqZAo" node="4NnN$WSogUE" resolve="e" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2093,8 +2104,8 @@
       </node>
       <node concept="3clFbS" id="27T0Q3SBuuY" role="3clF47">
         <node concept="3clFbH" id="2DnVhjrAfCq" role="3cqZAp" />
-        <node concept="SfApY" id="2DnVhjrBKs_" role="3cqZAp">
-          <node concept="3clFbS" id="2DnVhjrBKsA" role="SfCbr">
+        <node concept="3J1_TO" id="2DnVhjrBKs_" role="3cqZAp">
+          <node concept="3clFbS" id="2DnVhjrBKsA" role="1zxBo7">
             <node concept="3cpWs8" id="4pC9uEPei8_" role="3cqZAp">
               <node concept="3cpWsn" id="4pC9uEPei8A" role="3cpWs9">
                 <property role="TrG5h" value="url" />
@@ -2210,8 +2221,17 @@
               </node>
             </node>
           </node>
-          <node concept="TDmWw" id="2DnVhjrBKsx" role="TEbGg">
-            <node concept="3clFbS" id="2DnVhjrBKsy" role="TDEfX">
+          <node concept="3uVAMA" id="2DnVhjrBKsx" role="1zxBo5">
+            <node concept="XOnhg" id="2DnVhjrBKsz" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="9cbmguuQkw1" role="1tU5fm">
+                <node concept="3uibUv" id="2DnVhjrBLnK" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="2DnVhjrBKsy" role="1zc67A">
               <node concept="3clFbF" id="2DnVhjrC7PP" role="3cqZAp">
                 <node concept="2OqwBi" id="2DnVhjrC7QO" role="3clFbG">
                   <node concept="37vLTw" id="2DnVhjrC7PO" role="2Oq$k0">
@@ -2221,12 +2241,6 @@
                     <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="2DnVhjrBKsz" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="2DnVhjrBLnK" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
           </node>
@@ -3304,7 +3318,7 @@
         </node>
         <node concept="3clFbH" id="2sPLpCfXGO$" role="3cqZAp" />
         <node concept="3SKdUt" id="2sPLpCfXGIU" role="3cqZAp">
-          <node concept="1PaTwC" id="17qUVvSZlDN" role="3ndbpf">
+          <node concept="1PaTwC" id="17qUVvSZlDN" role="1aUNEU">
             <node concept="3oM_SD" id="17qUVvSZlDO" role="1PaTwD">
               <property role="3oM_SC" value="rotate" />
             </node>
@@ -3642,8 +3656,8 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="2GUZhq" id="2ag5hDwy7K8" role="3cqZAp">
-                        <node concept="3clFbS" id="2ag5hDwy7Ka" role="2GV8ay">
+                      <node concept="3J1_TO" id="2ag5hDwy7K8" role="3cqZAp">
+                        <node concept="3clFbS" id="2ag5hDwy7Ka" role="1zxBo7">
                           <node concept="3clFbF" id="2ag5hDwygtO" role="3cqZAp">
                             <node concept="2OqwBi" id="2ag5hDwygD$" role="3clFbG">
                               <node concept="2YIFZM" id="2ag5hDwygxY" role="2Oq$k0">
@@ -3682,17 +3696,19 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbS" id="2ag5hDwy7Kb" role="2GVbov">
-                          <node concept="3clFbF" id="2ag5hDwycAV" role="3cqZAp">
-                            <node concept="2OqwBi" id="2ag5hDwycIR" role="3clFbG">
-                              <node concept="2YIFZM" id="2ag5hDwycBh" role="2Oq$k0">
-                                <ref role="37wK5l" to="wyt6:~Thread.currentThread()" resolve="currentThread" />
-                                <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                              </node>
-                              <node concept="liA8E" id="2ag5hDwydo8" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
-                                <node concept="37vLTw" id="2ag5hDwydpy" role="37wK5m">
-                                  <ref role="3cqZAo" node="2ag5hDwybSV" resolve="contextClassLoader" />
+                        <node concept="1wplmZ" id="3aOL2HreJs" role="1zxBo6">
+                          <node concept="3clFbS" id="2ag5hDwy7Kb" role="1wplMD">
+                            <node concept="3clFbF" id="2ag5hDwycAV" role="3cqZAp">
+                              <node concept="2OqwBi" id="2ag5hDwycIR" role="3clFbG">
+                                <node concept="2YIFZM" id="2ag5hDwycBh" role="2Oq$k0">
+                                  <ref role="37wK5l" to="wyt6:~Thread.currentThread()" resolve="currentThread" />
+                                  <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
+                                </node>
+                                <node concept="liA8E" id="2ag5hDwydo8" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
+                                  <node concept="37vLTw" id="2ag5hDwydpy" role="37wK5m">
+                                    <ref role="3cqZAo" node="2ag5hDwybSV" resolve="contextClassLoader" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -4170,161 +4186,8 @@
             <node concept="10Nm6u" id="2ag5hDwGyWi" role="33vP2m" />
           </node>
         </node>
-        <node concept="SfApY" id="2sPLpCfQE3P" role="3cqZAp">
-          <node concept="TDmWw" id="2sPLpCfQE3Q" role="TEbGg">
-            <node concept="3clFbS" id="2sPLpCfQE3R" role="TDEfX">
-              <node concept="3clFbF" id="2sPLpCfQE3S" role="3cqZAp">
-                <node concept="3P9mCS" id="2sPLpCfQE3T" role="3clFbG">
-                  <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                  <node concept="37vLTw" id="2sPLpCfQE5Z" role="37wK5m">
-                    <ref role="3cqZAo" node="2sPLpCfQE5N" resolve="cancelledDispatcher" />
-                  </node>
-                  <node concept="37vLTw" id="5HxjapwgHuK" role="37wK5m">
-                    <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="2sPLpCfQE3W" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <property role="3TUv4t" value="false" />
-              <node concept="3uibUv" id="2sPLpCfQE3X" role="1tU5fm">
-                <ref role="3uigEE" to="guwi:~InterruptedIOException" resolve="InterruptedIOException" />
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="2sPLpCfQE3Y" role="TEbGg">
-            <node concept="3clFbS" id="2sPLpCfQE3Z" role="TDEfX">
-              <node concept="3clFbF" id="2sPLpCfQE40" role="3cqZAp">
-                <node concept="37vLTI" id="2sPLpCfQE41" role="3clFbG">
-                  <node concept="37vLTw" id="2sPLpCfQE60" role="37vLTJ">
-                    <ref role="3cqZAo" to="4anb:~SVGDocumentLoader.exception" resolve="exception" />
-                  </node>
-                  <node concept="37vLTw" id="2sPLpCfQE43" role="37vLTx">
-                    <ref role="3cqZAo" node="2sPLpCfQE48" resolve="e" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="2sPLpCfQE44" role="3cqZAp">
-                <node concept="3P9mCS" id="2sPLpCfQE45" role="3clFbG">
-                  <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                  <node concept="37vLTw" id="2sPLpCfQE68" role="37wK5m">
-                    <ref role="3cqZAo" node="2sPLpCfQE63" resolve="failedDispatcher" />
-                  </node>
-                  <node concept="37vLTw" id="5HxjapwgJuW" role="37wK5m">
-                    <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="2sPLpCfQE48" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <property role="3TUv4t" value="false" />
-              <node concept="3uibUv" id="2sPLpCfQE49" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="2sPLpCfQE4a" role="TEbGg">
-            <node concept="3clFbS" id="2sPLpCfQE4b" role="TDEfX">
-              <node concept="3clFbF" id="2sPLpCfQE4c" role="3cqZAp">
-                <node concept="37vLTI" id="2sPLpCfQE4d" role="3clFbG">
-                  <node concept="37vLTw" id="2sPLpCfQE61" role="37vLTJ">
-                    <ref role="3cqZAo" to="4anb:~SVGDocumentLoader.exception" resolve="exception" />
-                  </node>
-                  <node concept="2ShNRf" id="2sPLpCfQE4f" role="37vLTx">
-                    <node concept="1pGfFk" id="2sPLpCfQE4g" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~Exception.&lt;init&gt;(java.lang.String)" resolve="Exception" />
-                      <node concept="2OqwBi" id="2sPLpCfQE4h" role="37wK5m">
-                        <node concept="37vLTw" id="2sPLpCfQE4i" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2sPLpCfQE4q" resolve="td" />
-                        </node>
-                        <node concept="liA8E" id="2sPLpCfQE4j" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="2sPLpCfQE4k" role="3cqZAp">
-                <node concept="3P9mCS" id="2sPLpCfQE4l" role="3clFbG">
-                  <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                  <node concept="37vLTw" id="2sPLpCfQE69" role="37wK5m">
-                    <ref role="3cqZAo" node="2sPLpCfQE63" resolve="failedDispatcher" />
-                  </node>
-                  <node concept="37vLTw" id="2sPLpCfQE4n" role="37wK5m">
-                    <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
-                  </node>
-                </node>
-              </node>
-              <node concept="YS8fn" id="2sPLpCfQE4o" role="3cqZAp">
-                <node concept="37vLTw" id="2sPLpCfQE4p" role="YScLw">
-                  <ref role="3cqZAo" node="2sPLpCfQE4q" resolve="td" />
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="2sPLpCfQE4q" role="TDEfY">
-              <property role="TrG5h" value="td" />
-              <property role="3TUv4t" value="false" />
-              <node concept="3uibUv" id="2sPLpCfQE4r" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~ThreadDeath" resolve="ThreadDeath" />
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="2sPLpCfQE4s" role="TEbGg">
-            <node concept="3clFbS" id="2sPLpCfQE4t" role="TDEfX">
-              <node concept="3clFbF" id="2sPLpCfQE4u" role="3cqZAp">
-                <node concept="2OqwBi" id="2sPLpCfQE4v" role="3clFbG">
-                  <node concept="37vLTw" id="2sPLpCfQE4w" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2sPLpCfQE4I" resolve="t" />
-                  </node>
-                  <node concept="liA8E" id="2sPLpCfQE4x" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="2sPLpCfQE4y" role="3cqZAp">
-                <node concept="37vLTI" id="2sPLpCfQE4z" role="3clFbG">
-                  <node concept="37vLTw" id="2sPLpCfQE6b" role="37vLTJ">
-                    <ref role="3cqZAo" to="4anb:~SVGDocumentLoader.exception" resolve="exception" />
-                  </node>
-                  <node concept="2ShNRf" id="2sPLpCfQE4_" role="37vLTx">
-                    <node concept="1pGfFk" id="2sPLpCfQE4A" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~Exception.&lt;init&gt;(java.lang.String)" resolve="Exception" />
-                      <node concept="2OqwBi" id="2sPLpCfQE4B" role="37wK5m">
-                        <node concept="37vLTw" id="2sPLpCfQE4C" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2sPLpCfQE4I" resolve="t" />
-                        </node>
-                        <node concept="liA8E" id="2sPLpCfQE4D" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="2sPLpCfQE4E" role="3cqZAp">
-                <node concept="3P9mCS" id="2sPLpCfQE4F" role="3clFbG">
-                  <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                  <node concept="37vLTw" id="2sPLpCfQE6a" role="37wK5m">
-                    <ref role="3cqZAo" node="2sPLpCfQE63" resolve="failedDispatcher" />
-                  </node>
-                  <node concept="37vLTw" id="2sPLpCfQE4H" role="37wK5m">
-                    <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="2sPLpCfQE4I" role="TDEfY">
-              <property role="TrG5h" value="t" />
-              <property role="3TUv4t" value="false" />
-              <node concept="3uibUv" id="2sPLpCfQE4J" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="2sPLpCfQE4K" role="SfCbr">
+        <node concept="3J1_TO" id="2sPLpCfQE3P" role="3cqZAp">
+          <node concept="3clFbS" id="2sPLpCfQE4K" role="1zxBo7">
             <node concept="3cpWs8" id="2ag5hDw$wMz" role="3cqZAp">
               <node concept="3cpWsn" id="2ag5hDw$wM$" role="3cpWs9">
                 <property role="TrG5h" value="contextClassLoader" />
@@ -4342,8 +4205,8 @@
                 </node>
               </node>
             </node>
-            <node concept="2GUZhq" id="2ag5hDwzft1" role="3cqZAp">
-              <node concept="3clFbS" id="2ag5hDwzft3" role="2GV8ay">
+            <node concept="3J1_TO" id="2ag5hDwzft1" role="3cqZAp">
+              <node concept="3clFbS" id="2ag5hDwzft3" role="1zxBo7">
                 <node concept="3clFbF" id="2ag5hDw_Y3J" role="3cqZAp">
                   <node concept="2OqwBi" id="2ag5hDwAjP7" role="3clFbG">
                     <node concept="2YIFZM" id="2ag5hDwAcIV" role="2Oq$k0">
@@ -4495,8 +4358,8 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2GUZhq" id="2sPLpCfQJtQ" role="3cqZAp">
-                  <node concept="3clFbS" id="2sPLpCfQJtR" role="2GV8ay">
+                <node concept="3J1_TO" id="2sPLpCfQJtQ" role="3cqZAp">
+                  <node concept="3clFbS" id="2sPLpCfQJtR" role="1zxBo7">
                     <node concept="3cpWs8" id="2sPLpCfQE4X" role="3cqZAp">
                       <node concept="3cpWsn" id="2sPLpCfQE4Y" role="3cpWs9">
                         <property role="TrG5h" value="svgDocument" />
@@ -4561,14 +4424,16 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbS" id="2sPLpCfQJtT" role="2GVbov">
-                    <node concept="3clFbF" id="2sPLpCfQJsp" role="3cqZAp">
-                      <node concept="2OqwBi" id="2sPLpCfQJsJ" role="3clFbG">
-                        <node concept="37vLTw" id="5HxjapwgHkt" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2sPLpCfQEkY" resolve="is" />
-                        </node>
-                        <node concept="liA8E" id="2sPLpCfQJsO" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~ByteArrayInputStream.close()" resolve="close" />
+                  <node concept="1wplmZ" id="I1sx1NMvOw" role="1zxBo6">
+                    <node concept="3clFbS" id="2sPLpCfQJtT" role="1wplMD">
+                      <node concept="3clFbF" id="2sPLpCfQJsp" role="3cqZAp">
+                        <node concept="2OqwBi" id="2sPLpCfQJsJ" role="3clFbG">
+                          <node concept="37vLTw" id="5HxjapwgHkt" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2sPLpCfQEkY" resolve="is" />
+                          </node>
+                          <node concept="liA8E" id="2sPLpCfQJsO" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~ByteArrayInputStream.close()" resolve="close" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -4586,19 +4451,182 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbS" id="2ag5hDwzft4" role="2GVbov">
-                <node concept="3clFbF" id="2ag5hDwBRcF" role="3cqZAp">
-                  <node concept="2OqwBi" id="2ag5hDwBRcH" role="3clFbG">
-                    <node concept="2YIFZM" id="2ag5hDwBRcI" role="2Oq$k0">
-                      <ref role="37wK5l" to="wyt6:~Thread.currentThread()" resolve="currentThread" />
-                      <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                    </node>
-                    <node concept="liA8E" id="2ag5hDwBRcJ" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
-                      <node concept="37vLTw" id="2ag5hDwCJSR" role="37wK5m">
-                        <ref role="3cqZAo" node="2ag5hDw$wM$" resolve="contextClassLoader" />
+              <node concept="1wplmZ" id="3aOL2HpvPe" role="1zxBo6">
+                <node concept="3clFbS" id="2ag5hDwzft4" role="1wplMD">
+                  <node concept="3clFbF" id="2ag5hDwBRcF" role="3cqZAp">
+                    <node concept="2OqwBi" id="2ag5hDwBRcH" role="3clFbG">
+                      <node concept="2YIFZM" id="2ag5hDwBRcI" role="2Oq$k0">
+                        <ref role="37wK5l" to="wyt6:~Thread.currentThread()" resolve="currentThread" />
+                        <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
+                      </node>
+                      <node concept="liA8E" id="2ag5hDwBRcJ" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
+                        <node concept="37vLTw" id="2ag5hDwCJSR" role="37wK5m">
+                          <ref role="3cqZAo" node="2ag5hDw$wM$" resolve="contextClassLoader" />
+                        </node>
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="2sPLpCfQE3Q" role="1zxBo5">
+            <node concept="XOnhg" id="2sPLpCfQE3W" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="8Bf21CQkwuZ" role="1tU5fm">
+                <node concept="3uibUv" id="2sPLpCfQE3X" role="nSUat">
+                  <ref role="3uigEE" to="guwi:~InterruptedIOException" resolve="InterruptedIOException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="2sPLpCfQE3R" role="1zc67A">
+              <node concept="3clFbF" id="2sPLpCfQE3S" role="3cqZAp">
+                <node concept="3P9mCS" id="2sPLpCfQE3T" role="3clFbG">
+                  <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
+                  <node concept="37vLTw" id="2sPLpCfQE5Z" role="37wK5m">
+                    <ref role="3cqZAo" node="2sPLpCfQE5N" resolve="cancelledDispatcher" />
+                  </node>
+                  <node concept="37vLTw" id="5HxjapwgHuK" role="37wK5m">
+                    <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="2sPLpCfQE3Y" role="1zxBo5">
+            <node concept="XOnhg" id="2sPLpCfQE48" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="8Bf21CQkwhn" role="1tU5fm">
+                <node concept="3uibUv" id="2sPLpCfQE49" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="2sPLpCfQE3Z" role="1zc67A">
+              <node concept="3clFbF" id="2sPLpCfQE40" role="3cqZAp">
+                <node concept="37vLTI" id="2sPLpCfQE41" role="3clFbG">
+                  <node concept="37vLTw" id="2sPLpCfQE60" role="37vLTJ">
+                    <ref role="3cqZAo" to="4anb:~SVGDocumentLoader.exception" resolve="exception" />
+                  </node>
+                  <node concept="37vLTw" id="2sPLpCfQE43" role="37vLTx">
+                    <ref role="3cqZAo" node="2sPLpCfQE48" resolve="e" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2sPLpCfQE44" role="3cqZAp">
+                <node concept="3P9mCS" id="2sPLpCfQE45" role="3clFbG">
+                  <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
+                  <node concept="37vLTw" id="2sPLpCfQE68" role="37wK5m">
+                    <ref role="3cqZAo" node="2sPLpCfQE63" resolve="failedDispatcher" />
+                  </node>
+                  <node concept="37vLTw" id="5HxjapwgJuW" role="37wK5m">
+                    <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="2sPLpCfQE4a" role="1zxBo5">
+            <node concept="XOnhg" id="2sPLpCfQE4q" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="td" />
+              <node concept="nSUau" id="8Bf21CQkwhN" role="1tU5fm">
+                <node concept="3uibUv" id="2sPLpCfQE4r" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~ThreadDeath" resolve="ThreadDeath" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="2sPLpCfQE4b" role="1zc67A">
+              <node concept="3clFbF" id="2sPLpCfQE4c" role="3cqZAp">
+                <node concept="37vLTI" id="2sPLpCfQE4d" role="3clFbG">
+                  <node concept="37vLTw" id="2sPLpCfQE61" role="37vLTJ">
+                    <ref role="3cqZAo" to="4anb:~SVGDocumentLoader.exception" resolve="exception" />
+                  </node>
+                  <node concept="2ShNRf" id="2sPLpCfQE4f" role="37vLTx">
+                    <node concept="1pGfFk" id="2sPLpCfQE4g" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~Exception.&lt;init&gt;(java.lang.String)" resolve="Exception" />
+                      <node concept="2OqwBi" id="2sPLpCfQE4h" role="37wK5m">
+                        <node concept="37vLTw" id="2sPLpCfQE4i" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2sPLpCfQE4q" resolve="td" />
+                        </node>
+                        <node concept="liA8E" id="2sPLpCfQE4j" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2sPLpCfQE4k" role="3cqZAp">
+                <node concept="3P9mCS" id="2sPLpCfQE4l" role="3clFbG">
+                  <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
+                  <node concept="37vLTw" id="2sPLpCfQE69" role="37wK5m">
+                    <ref role="3cqZAo" node="2sPLpCfQE63" resolve="failedDispatcher" />
+                  </node>
+                  <node concept="37vLTw" id="2sPLpCfQE4n" role="37wK5m">
+                    <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
+                  </node>
+                </node>
+              </node>
+              <node concept="YS8fn" id="2sPLpCfQE4o" role="3cqZAp">
+                <node concept="37vLTw" id="2sPLpCfQE4p" role="YScLw">
+                  <ref role="3cqZAo" node="2sPLpCfQE4q" resolve="td" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="2sPLpCfQE4s" role="1zxBo5">
+            <node concept="XOnhg" id="2sPLpCfQE4I" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="t" />
+              <node concept="nSUau" id="8Bf21CQkwgr" role="1tU5fm">
+                <node concept="3uibUv" id="2sPLpCfQE4J" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="2sPLpCfQE4t" role="1zc67A">
+              <node concept="3clFbF" id="2sPLpCfQE4u" role="3cqZAp">
+                <node concept="2OqwBi" id="2sPLpCfQE4v" role="3clFbG">
+                  <node concept="37vLTw" id="2sPLpCfQE4w" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2sPLpCfQE4I" resolve="t" />
+                  </node>
+                  <node concept="liA8E" id="2sPLpCfQE4x" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2sPLpCfQE4y" role="3cqZAp">
+                <node concept="37vLTI" id="2sPLpCfQE4z" role="3clFbG">
+                  <node concept="37vLTw" id="2sPLpCfQE6b" role="37vLTJ">
+                    <ref role="3cqZAo" to="4anb:~SVGDocumentLoader.exception" resolve="exception" />
+                  </node>
+                  <node concept="2ShNRf" id="2sPLpCfQE4_" role="37vLTx">
+                    <node concept="1pGfFk" id="2sPLpCfQE4A" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~Exception.&lt;init&gt;(java.lang.String)" resolve="Exception" />
+                      <node concept="2OqwBi" id="2sPLpCfQE4B" role="37wK5m">
+                        <node concept="37vLTw" id="2sPLpCfQE4C" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2sPLpCfQE4I" resolve="t" />
+                        </node>
+                        <node concept="liA8E" id="2sPLpCfQE4D" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2sPLpCfQE4E" role="3cqZAp">
+                <node concept="3P9mCS" id="2sPLpCfQE4F" role="3clFbG">
+                  <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
+                  <node concept="37vLTw" id="2sPLpCfQE6a" role="37wK5m">
+                    <ref role="3cqZAo" node="2sPLpCfQE63" resolve="failedDispatcher" />
+                  </node>
+                  <node concept="37vLTw" id="2sPLpCfQE4H" role="37wK5m">
+                    <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
                   </node>
                 </node>
               </node>
@@ -5210,7 +5238,7 @@
         <node concept="3clFbJ" id="2aP19v3129S" role="3cqZAp">
           <node concept="3clFbS" id="2aP19v3129T" role="3clFbx">
             <node concept="3SKdUt" id="2aP19v3129U" role="3cqZAp">
-              <node concept="1PaTwC" id="17qUVvSZlDT" role="3ndbpf">
+              <node concept="1PaTwC" id="17qUVvSZlDT" role="1aUNEU">
                 <node concept="3oM_SD" id="17qUVvSZlDU" role="1PaTwD">
                   <property role="3oM_SC" value="remove" />
                 </node>

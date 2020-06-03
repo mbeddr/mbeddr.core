@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -33,7 +33,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -70,7 +70,7 @@
     <node concept="9S07l" id="2zqpPfiyMoa" role="9Vyp8">
       <node concept="3clFbS" id="2zqpPfiyMob" role="2VODD2">
         <node concept="3SKdUt" id="2zqpPfiyTk8" role="3cqZAp">
-          <node concept="1PaTwC" id="17qUVvSZkSB" role="3ndbpf">
+          <node concept="1PaTwC" id="17qUVvSZkSB" role="1aUNEU">
             <node concept="3oM_SD" id="17qUVvSZkSC" role="1PaTwD">
               <property role="3oM_SC" value="bad" />
             </node>

@@ -7,7 +7,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -121,7 +121,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -1052,7 +1052,7 @@
       <node concept="3cqZAl" id="5cKTps7Iacw" role="3clF45" />
       <node concept="3clFbS" id="5cKTps7Iacx" role="3clF47">
         <node concept="3SKdUt" id="7yZlKoqkuGy" role="3cqZAp">
-          <node concept="1PaTwC" id="61XOOojFZGH" role="3ndbpf">
+          <node concept="1PaTwC" id="61XOOojFZGH" role="1aUNEU">
             <node concept="3oM_SD" id="61XOOojFZGI" role="1PaTwD">
               <property role="3oM_SC" value="let" />
             </node>

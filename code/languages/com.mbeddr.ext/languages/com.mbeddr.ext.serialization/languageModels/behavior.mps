@@ -130,6 +130,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -280,8 +283,10 @@
                   <ref role="2pJxaS" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
                   <node concept="2pJxcG" id="1LleiTPxIyC" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="1LleiTPxIJ7" role="28ntcv">
-                      <property role="Xl_RC" value="data" />
+                    <node concept="WxPPo" id="27yO7ubJ3Y_" role="28ntcv">
+                      <node concept="Xl_RD" id="1LleiTPxIJ7" role="WxPPp">
+                        <property role="Xl_RC" value="data" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2pIpSj" id="1LleiTPxIVX" role="2pJxcM">
@@ -294,8 +299,10 @@
                           <ref role="2pJxaS" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
                           <node concept="2pJxcG" id="6pWLWdpM1_f" role="2pJxcM">
                             <ref role="2pJxcJ" to="mj1l:2zhwXA$N7QC" resolve="const" />
-                            <node concept="3clFbT" id="6pWLWdpM1Am" role="28ntcv">
-                              <property role="3clFbU" value="true" />
+                            <node concept="WxPPo" id="27yO7ubJ3YA" role="28ntcv">
+                              <node concept="3clFbT" id="6pWLWdpM1Am" role="WxPPp">
+                                <property role="3clFbU" value="true" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -321,8 +328,10 @@
                   <ref role="2pJxaS" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
                   <node concept="2pJxcG" id="1LleiTPxK$p" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="1LleiTPxK$q" role="28ntcv">
-                      <property role="Xl_RC" value="size" />
+                    <node concept="WxPPo" id="27yO7ubJ3YB" role="28ntcv">
+                      <node concept="Xl_RD" id="1LleiTPxK$q" role="WxPPp">
+                        <property role="Xl_RC" value="size" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2pIpSj" id="1LleiTPxK$r" role="2pJxcM">
@@ -379,8 +388,10 @@
                   <ref role="2pJxaS" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
                   <node concept="2pJxcG" id="1LleiTPzwBw" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="1LleiTPzwBx" role="28ntcv">
-                      <property role="Xl_RC" value="data" />
+                    <node concept="WxPPo" id="27yO7ubJ3YC" role="28ntcv">
+                      <node concept="Xl_RD" id="1LleiTPzwBx" role="WxPPp">
+                        <property role="Xl_RC" value="data" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2pIpSj" id="1LleiTPzwBy" role="2pJxcM">
@@ -408,8 +419,10 @@
                   <ref role="2pJxaS" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
                   <node concept="2pJxcG" id="1LleiTPzwBI" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="1LleiTPzwBJ" role="28ntcv">
-                      <property role="Xl_RC" value="size" />
+                    <node concept="WxPPo" id="27yO7ubJ3YD" role="28ntcv">
+                      <node concept="Xl_RD" id="1LleiTPzwBJ" role="WxPPp">
+                        <property role="Xl_RC" value="size" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2pIpSj" id="1LleiTPzwBK" role="2pJxcM">

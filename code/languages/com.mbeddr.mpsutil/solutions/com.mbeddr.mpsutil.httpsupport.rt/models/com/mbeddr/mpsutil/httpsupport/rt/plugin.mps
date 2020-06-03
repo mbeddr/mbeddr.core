@@ -9,7 +9,7 @@
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports />
   <registry>
@@ -166,8 +166,8 @@
       <concept id="4728279602824475247" name="com.mbeddr.mpsutil.preferenceform.structure.IntegerFieldPreferenceFormProperty" flags="ng" index="czsHg">
         <property id="4728279602824496322" name="defaultValue" index="cyBRX" />
       </concept>
-      <concept id="1210676672555" name="com.mbeddr.mpsutil.preferenceform.structure.OnBeforeWriteBlockApplication" flags="in" index="3xWZ$M" />
-      <concept id="1210676879526" name="com.mbeddr.mpsutil.preferenceform.structure.OnAfterReadBlockApplication" flags="in" index="3xXM6Z" />
+      <concept id="1210676672555" name="com.mbeddr.mpsutil.preferenceform.structure.OnBeforeWriteBlockApplication" flags="ng" index="3xWZ$M" />
+      <concept id="1210676879526" name="com.mbeddr.mpsutil.preferenceform.structure.OnAfterReadBlockApplication" flags="ng" index="3xXM6Z" />
       <concept id="145956936283289547" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceForm" flags="ng" index="1DFvN4">
         <property id="1101080154068563577" name="scope" index="3NeIjD" />
         <child id="145956936283569518" name="properties" index="1DEjpx" />

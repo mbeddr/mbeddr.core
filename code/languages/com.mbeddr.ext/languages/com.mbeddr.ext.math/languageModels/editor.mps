@@ -4,7 +4,7 @@
   <languages>
     <use id="766348f7-6a67-4b85-9323-384840132299" name="de.itemis.mps.editor.math" version="0" />
     <use id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,6 +17,7 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784074" name="jetbrains.mps.lang.editor.structure.MenuTypeNamed" flags="ng" index="22hDWg" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
@@ -69,6 +70,7 @@
       </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1838685759388685703" name="jetbrains.mps.lang.editor.structure.TransformationFeature_DescriptionText" flags="ng" index="3cqGtN">
         <child id="1838685759388685704" name="query" index="3cqGtW" />
@@ -107,7 +109,7 @@
       <concept id="843003353410421233" name="jetbrains.mps.lang.editor.structure.OptionalConceptReference" flags="ng" index="1FNNb$">
         <reference id="843003353410421234" name="concept" index="1FNNbB" />
       </concept>
-      <concept id="5624877018226904808" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Named" flags="ng" index="3ICXOK" />
+      <concept id="5624877018226900666" name="jetbrains.mps.lang.editor.structure.TransformationMenu" flags="ng" index="3ICUPy" />
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
@@ -849,9 +851,11 @@
       </node>
     </node>
   </node>
-  <node concept="3ICXOK" id="3cUcim$6pYq">
-    <property role="TrG5h" value="sta_sqrt" />
+  <node concept="3ICUPy" id="3cUcim$6pYq">
     <ref role="aqKnT" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="22hDWg" id="27yO7ubJ3XD" role="22hAXT">
+      <property role="TrG5h" value="sta_sqrt" />
+    </node>
     <node concept="1Qtc8_" id="3cUcim$6pYt" role="IW6Ez">
       <node concept="3cWJ9i" id="3cUcim$6pYr" role="1Qtc8$">
         <node concept="CtIbL" id="3cUcim$6pYs" role="CtIbM">
@@ -932,9 +936,11 @@
       </node>
     </node>
   </node>
-  <node concept="3ICXOK" id="3cUcim$6pZ9">
-    <property role="TrG5h" value="sta_Power" />
+  <node concept="3ICUPy" id="3cUcim$6pZ9">
     <ref role="aqKnT" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="22hDWg" id="27yO7ubJ3XE" role="22hAXT">
+      <property role="TrG5h" value="sta_Power" />
+    </node>
     <node concept="1Qtc8_" id="3cUcim$6pZc" role="IW6Ez">
       <node concept="3cWJ9i" id="3cUcim$6pZa" role="1Qtc8$">
         <node concept="CtIbL" id="3cUcim$6pZb" role="CtIbM">

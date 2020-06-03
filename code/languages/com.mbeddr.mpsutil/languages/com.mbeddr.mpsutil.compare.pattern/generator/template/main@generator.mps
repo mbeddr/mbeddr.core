@@ -6,7 +6,7 @@
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -105,7 +105,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -470,7 +470,7 @@
                       <node concept="3zFVjK" id="wcyv5jS6S$" role="3zH0cK">
                         <node concept="3clFbS" id="wcyv5jS6S_" role="2VODD2">
                           <node concept="3SKdUt" id="18iyr$QYNqJ" role="3cqZAp">
-                            <node concept="1PaTwC" id="17qUVvSZkDS" role="3ndbpf">
+                            <node concept="1PaTwC" id="17qUVvSZkDS" role="1aUNEU">
                               <node concept="3oM_SD" id="17qUVvSZkDT" role="1PaTwD">
                                 <property role="3oM_SC" value="PatternBuilderNode" />
                               </node>
@@ -599,7 +599,7 @@
                       <node concept="3zFVjK" id="wcyv5jS8a0" role="3zH0cK">
                         <node concept="3clFbS" id="wcyv5jS8a1" role="2VODD2">
                           <node concept="3SKdUt" id="18iyr$QYN_v" role="3cqZAp">
-                            <node concept="1PaTwC" id="17qUVvSZkDY" role="3ndbpf">
+                            <node concept="1PaTwC" id="17qUVvSZkDY" role="1aUNEU">
                               <node concept="3oM_SD" id="17qUVvSZkDZ" role="1PaTwD">
                                 <property role="3oM_SC" value="PatternBuilderNode" />
                               </node>
@@ -728,7 +728,7 @@
                       <node concept="3zFVjK" id="wcyv5jS8$h" role="3zH0cK">
                         <node concept="3clFbS" id="wcyv5jS8$i" role="2VODD2">
                           <node concept="3SKdUt" id="18iyr$QYNGA" role="3cqZAp">
-                            <node concept="1PaTwC" id="17qUVvSZkE4" role="3ndbpf">
+                            <node concept="1PaTwC" id="17qUVvSZkE4" role="1aUNEU">
                               <node concept="3oM_SD" id="17qUVvSZkE5" role="1PaTwD">
                                 <property role="3oM_SC" value="PatternBuilderNode" />
                               </node>
@@ -1069,7 +1069,7 @@
                       <node concept="3zFVjK" id="wcyv5jSbU2" role="3zH0cK">
                         <node concept="3clFbS" id="wcyv5jSbU3" role="2VODD2">
                           <node concept="3SKdUt" id="18iyr$QYNO5" role="3cqZAp">
-                            <node concept="1PaTwC" id="17qUVvSZkEa" role="3ndbpf">
+                            <node concept="1PaTwC" id="17qUVvSZkEa" role="1aUNEU">
                               <node concept="3oM_SD" id="17qUVvSZkEb" role="1PaTwD">
                                 <property role="3oM_SC" value="PatternBuilderNode" />
                               </node>
@@ -1274,7 +1274,7 @@
                       <node concept="3zFVjK" id="wcyv5jScXg" role="3zH0cK">
                         <node concept="3clFbS" id="wcyv5jScXh" role="2VODD2">
                           <node concept="3SKdUt" id="18iyr$QYPPr" role="3cqZAp">
-                            <node concept="1PaTwC" id="17qUVvSZkEg" role="3ndbpf">
+                            <node concept="1PaTwC" id="17qUVvSZkEg" role="1aUNEU">
                               <node concept="3oM_SD" id="17qUVvSZkEh" role="1PaTwD">
                                 <property role="3oM_SC" value="PatternBuilderNode" />
                               </node>

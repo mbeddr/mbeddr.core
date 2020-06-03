@@ -19,7 +19,7 @@
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -88,7 +88,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -344,7 +344,7 @@
     <node concept="1pplIY" id="7oNb1MJX$mg" role="1pqMTA">
       <node concept="3clFbS" id="7oNb1MJX$mh" role="2VODD2">
         <node concept="3SKdUt" id="7oNb1MK3rNf" role="3cqZAp">
-          <node concept="1PaTwC" id="6JXsDxttw0$" role="3ndbpf">
+          <node concept="1PaTwC" id="6JXsDxttw0$" role="1aUNEU">
             <node concept="3oM_SD" id="6JXsDxttw0_" role="1PaTwD">
               <property role="3oM_SC" value="Workaround" />
             </node>
@@ -387,7 +387,7 @@
           </node>
         </node>
         <node concept="3SKdUt" id="7oNb1MK3rOm" role="3cqZAp">
-          <node concept="1PaTwC" id="6JXsDxttw0M" role="3ndbpf">
+          <node concept="1PaTwC" id="6JXsDxttw0M" role="1aUNEU">
             <node concept="3oM_SD" id="6JXsDxttw0N" role="1PaTwD">
               <property role="3oM_SC" value="com.mbeddr.cc.var.annotations.generator.template.main.main" />
             </node>
@@ -412,7 +412,7 @@
           </node>
         </node>
         <node concept="3SKdUt" id="7oNb1MK3rPv" role="3cqZAp">
-          <node concept="1PaTwC" id="6JXsDxttw0U" role="3ndbpf">
+          <node concept="1PaTwC" id="6JXsDxttw0U" role="1aUNEU">
             <node concept="3oM_SD" id="6JXsDxttw0V" role="1PaTwD">
               <property role="3oM_SC" value="as" />
             </node>
@@ -467,7 +467,7 @@
           </node>
         </node>
         <node concept="3SKdUt" id="7oNb1MK3uA6" role="3cqZAp">
-          <node concept="1PaTwC" id="6JXsDxttw1c" role="3ndbpf">
+          <node concept="1PaTwC" id="6JXsDxttw1c" role="1aUNEU">
             <node concept="3oM_SD" id="6JXsDxttw1d" role="1PaTwD">
               <property role="3oM_SC" value="Ant" />
             </node>

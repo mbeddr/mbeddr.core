@@ -100,6 +100,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
@@ -322,8 +325,10 @@
                                   <ref role="2pJxaS" to="tpee:f$Xl_Og" resolve="StringLiteral" />
                                   <node concept="2pJxcG" id="54z9_KDP2kE" role="2pJxcM">
                                     <ref role="2pJxcJ" to="tpee:f$Xl_Oh" resolve="value" />
-                                    <node concept="37vLTw" id="54z9_KDQPDd" role="28ntcv">
-                                      <ref role="3cqZAo" node="54z9_KDQPD6" resolve="s" />
+                                    <node concept="WxPPo" id="27yO7ubqcMO" role="28ntcv">
+                                      <node concept="37vLTw" id="54z9_KDQPDd" role="WxPPp">
+                                        <ref role="3cqZAo" node="54z9_KDQPD6" resolve="s" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
@@ -407,8 +412,10 @@
                               <ref role="2pJxaS" to="tpee:f$Xl_Og" resolve="StringLiteral" />
                               <node concept="2pJxcG" id="54z9_KDP95D" role="2pJxcM">
                                 <ref role="2pJxcJ" to="tpee:f$Xl_Oh" resolve="value" />
-                                <node concept="37vLTw" id="54z9_KDQPDe" role="28ntcv">
-                                  <ref role="3cqZAo" node="54z9_KDQPD6" resolve="s" />
+                                <node concept="WxPPo" id="27yO7ubqcMP" role="28ntcv">
+                                  <node concept="37vLTw" id="54z9_KDQPDe" role="WxPPp">
+                                    <ref role="3cqZAo" node="54z9_KDQPD6" resolve="s" />
+                                  </node>
                                 </node>
                               </node>
                             </node>

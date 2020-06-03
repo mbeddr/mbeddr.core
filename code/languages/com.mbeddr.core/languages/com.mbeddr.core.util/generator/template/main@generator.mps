@@ -527,6 +527,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
@@ -8737,8 +8740,10 @@
                                 <ref role="2pJxaS" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                                 <node concept="2pJxcG" id="60EGPLFHvh4" role="2pJxcM">
                                   <ref role="2pJxcJ" to="mj1l:1UQ4qqfV3yK" resolve="value" />
-                                  <node concept="Xl_RD" id="6cct0QVZ8yg" role="28ntcv">
-                                    <property role="Xl_RC" value="0" />
+                                  <node concept="WxPPo" id="27yO7ubzfVt" role="28ntcv">
+                                    <node concept="Xl_RD" id="6cct0QVZ8yg" role="WxPPp">
+                                      <property role="Xl_RC" value="0" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -11742,8 +11747,10 @@
                                 <ref role="2pJxaS" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                                 <node concept="2pJxcG" id="60EGPLFHsRP" role="2pJxcM">
                                   <ref role="2pJxcJ" to="mj1l:1UQ4qqfV3yK" resolve="value" />
-                                  <node concept="Xl_RD" id="2qTj7CwFQZu" role="28ntcv">
-                                    <property role="Xl_RC" value="0" />
+                                  <node concept="WxPPo" id="27yO7ubzfVu" role="28ntcv">
+                                    <node concept="Xl_RD" id="2qTj7CwFQZu" role="WxPPp">
+                                      <property role="Xl_RC" value="0" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -17587,8 +17594,10 @@
                                         <ref role="2pJxaS" to="c4fa:3kEjc_WJ4o9" resolve="ArbitraryTextItem" />
                                         <node concept="2pJxcG" id="1EZSCJhVdV7" role="2pJxcM">
                                           <ref role="2pJxcJ" to="c4fa:3kEjc_WJ4oa" resolve="text" />
-                                          <node concept="Xl_RD" id="1EZSCJhVec5" role="28ntcv">
-                                            <property role="Xl_RC" value=", " />
+                                          <node concept="WxPPo" id="27yO7ubzfVv" role="28ntcv">
+                                            <node concept="Xl_RD" id="1EZSCJhVec5" role="WxPPp">
+                                              <property role="Xl_RC" value=", " />
+                                            </node>
                                           </node>
                                         </node>
                                       </node>
@@ -19841,8 +19850,10 @@
                             </node>
                             <node concept="2pJxcG" id="7kmhBx3glw0" role="2pJxcM">
                               <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                              <node concept="Xl_RD" id="7kmhBx3gmLS" role="28ntcv">
-                                <property role="Xl_RC" value="___error" />
+                              <node concept="WxPPo" id="27yO7ubzfVw" role="28ntcv">
+                                <node concept="Xl_RD" id="7kmhBx3gmLS" role="WxPPp">
+                                  <property role="Xl_RC" value="___error" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -25701,14 +25712,18 @@
                           <ref role="2pJxaS" to="d0vh:1lYd87JBZuY" resolve="UniquifyIncludeGuard" />
                           <node concept="2pJxcG" id="7uVh7XGI_Mq" role="2pJxcM">
                             <ref role="2pJxcJ" to="d0vh:7uVh7XGHfib" resolve="preffix" />
-                            <node concept="37vLTw" id="7uVh7XGNLcD" role="28ntcv">
-                              <ref role="3cqZAo" node="7uVh7XGNLcu" resolve="guardPreffix" />
+                            <node concept="WxPPo" id="27yO7ubzfVx" role="28ntcv">
+                              <node concept="37vLTw" id="7uVh7XGNLcD" role="WxPPp">
+                                <ref role="3cqZAo" node="7uVh7XGNLcu" resolve="guardPreffix" />
+                              </node>
                             </node>
                           </node>
                           <node concept="2pJxcG" id="7uVh7XGIAJJ" role="2pJxcM">
                             <ref role="2pJxcJ" to="d0vh:7uVh7XGHfid" resolve="suffix" />
-                            <node concept="37vLTw" id="7uVh7XGNKUR" role="28ntcv">
-                              <ref role="3cqZAo" node="7uVh7XGNKUG" resolve="guardSuffix" />
+                            <node concept="WxPPo" id="27yO7ubzfVy" role="28ntcv">
+                              <node concept="37vLTw" id="7uVh7XGNKUR" role="WxPPp">
+                                <ref role="3cqZAo" node="7uVh7XGNKUG" resolve="guardSuffix" />
+                              </node>
                             </node>
                           </node>
                         </node>

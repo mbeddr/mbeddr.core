@@ -149,6 +149,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -528,8 +531,10 @@
                   <ref role="2pJxaS" to="ej70:2S2eLhiN6BW" resolve="ValueA" />
                   <node concept="2pJxcG" id="RObVTFo2BY" role="2pJxcM">
                     <ref role="2pJxcJ" to="ej70:RObVTFo2_s" resolve="value" />
-                    <node concept="37vLTw" id="RObVTFsLEM" role="28ntcv">
-                      <ref role="3cqZAo" node="RObVTFsHIW" resolve="result" />
+                    <node concept="WxPPo" id="27yO7ubqc8d" role="28ntcv">
+                      <node concept="37vLTw" id="RObVTFsLEM" role="WxPPp">
+                        <ref role="3cqZAo" node="RObVTFsHIW" resolve="result" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -702,8 +707,10 @@
                     <ref role="2pJxaS" to="ej70:3mJtqpyOBRB" resolve="ValueB" />
                     <node concept="2pJxcG" id="3mJtqpyQ_i3" role="2pJxcM">
                       <ref role="2pJxcJ" to="ej70:3mJtqpyOBRF" resolve="value" />
-                      <node concept="37vLTw" id="3mJtqpyQ_Xo" role="28ntcv">
-                        <ref role="3cqZAo" node="3mJtqpyQc1d" resolve="result" />
+                      <node concept="WxPPo" id="27yO7ubqc8e" role="28ntcv">
+                        <node concept="37vLTw" id="3mJtqpyQ_Xo" role="WxPPp">
+                          <ref role="3cqZAo" node="3mJtqpyQc1d" resolve="result" />
+                        </node>
                       </node>
                     </node>
                   </node>

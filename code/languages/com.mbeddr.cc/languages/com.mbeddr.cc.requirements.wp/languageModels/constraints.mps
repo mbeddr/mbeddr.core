@@ -11,25 +11,24 @@
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
+      <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
+        <child id="8118189177080264854" name="alternative" index="nSUat" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
-        <child id="1164879758292" name="body" index="SfCbr" />
-        <child id="1164903496223" name="catchClause" index="TEbGg" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
-      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
+      </concept>
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -53,7 +52,6 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
-      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -66,7 +64,15 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
+        <child id="8276990574895933173" name="catchBody" index="1zc67A" />
+        <child id="8276990574895933172" name="throwable" index="1zc67B" />
+      </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+        <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
+        <child id="8276990574886367508" name="body" index="1zxBo7" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
@@ -113,8 +119,8 @@
         <node concept="3clFbS" id="vRfru3oPg0" role="2VODD2">
           <node concept="3clFbJ" id="vRfru3oUfN" role="3cqZAp">
             <node concept="3clFbS" id="vRfru3oUfO" role="3clFbx">
-              <node concept="SfApY" id="vRfru3oPgD" role="3cqZAp">
-                <node concept="3clFbS" id="vRfru3oPgE" role="SfCbr">
+              <node concept="3J1_TO" id="vRfru3oPgD" role="3cqZAp">
+                <node concept="3clFbS" id="vRfru3oPgE" role="1zxBo7">
                   <node concept="3clFbF" id="vRfru3oPg1" role="3cqZAp">
                     <node concept="2YIFZM" id="vRfru3oPg4" role="3clFbG">
                       <ref role="37wK5l" to="wyt6:~Float.valueOf(java.lang.String)" resolve="valueOf" />
@@ -128,14 +134,17 @@
                     </node>
                   </node>
                 </node>
-                <node concept="TDmWw" id="vRfru3oPgG" role="TEbGg">
-                  <node concept="3cpWsn" id="vRfru3oPgH" role="TDEfY">
+                <node concept="3uVAMA" id="vRfru3oPgG" role="1zxBo5">
+                  <node concept="XOnhg" id="vRfru3oPgH" role="1zc67B">
+                    <property role="3TUv4t" value="false" />
                     <property role="TrG5h" value="ex" />
-                    <node concept="3uibUv" id="vRfru3oPgR" role="1tU5fm">
-                      <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                    <node concept="nSUau" id="cxaY44J8uSt" role="1tU5fm">
+                      <node concept="3uibUv" id="vRfru3oPgR" role="nSUat">
+                        <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                      </node>
                     </node>
                   </node>
-                  <node concept="3clFbS" id="vRfru3oPgJ" role="TDEfX" />
+                  <node concept="3clFbS" id="vRfru3oPgJ" role="1zc67A" />
                 </node>
               </node>
             </node>

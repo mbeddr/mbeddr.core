@@ -2,7 +2,7 @@
 <model ref="r:7df756c3-8e55-4fba-9746-029c89fd6fe2(com.mbeddr.mpsutil.parameterizedMenu.sandbox.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="3a48930f-3451-44fd-9b09-4e7ef448f2bb" name="com.mbeddr.mpsutil.parameterizedMenu" version="0" />
     <use id="b1c7d06f-525d-43b5-9b0a-2fc8f7f076ba" name="jetbrains.mps.editor.contextActionsTool.lang.menus" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -16,6 +16,7 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="2468431357014947084" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Text" flags="ig" index="293xgL" />
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -26,7 +27,6 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
-      <concept id="1638911550608571617" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Default" flags="ng" index="IW6AY" />
       <concept id="1638911550608610798" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Execute" flags="ig" index="IWg2L" />
       <concept id="1638911550608610278" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Action" flags="ng" index="IWgqT">
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
@@ -42,6 +42,7 @@
       </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1630016958697286851" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_parameterObject" flags="ng" index="2ZBlsa" />
       <concept id="1630016958697057551" name="jetbrains.mps.lang.editor.structure.IMenuPartParameterized" flags="ng" index="2ZBHr6">
@@ -76,6 +77,7 @@
         <child id="4233361609415240998" name="part" index="1GhOri" />
         <child id="4233361609415241000" name="parameterQuery" index="1GhOrs" />
       </concept>
+      <concept id="5624877018226900666" name="jetbrains.mps.lang.editor.structure.TransformationMenu" flags="ng" index="3ICUPy" />
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
@@ -147,8 +149,62 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
     </language>
   </registry>
-  <node concept="IW6AY" id="1A$OnV5me8y">
+  <node concept="24kQdi" id="1A$OnV5mpCF">
+    <ref role="1XX52x" to="pgrv:1A$OnV5mdi$" resolve="ParameterizedMenuManualTest" />
+    <node concept="3EZMnI" id="1A$OnV5mpCH" role="2wV5jI">
+      <node concept="3F0ifn" id="1A$OnV5mpCO" role="3EZMnx">
+        <property role="3F0ifm" value="The same menu is shown in each of these places:" />
+      </node>
+      <node concept="3EZMnI" id="1A$OnV5m_x5" role="3EZMnx">
+        <node concept="3F0ifn" id="1A$OnV5mJ0e" role="3EZMnx" />
+        <node concept="3EZMnI" id="1A$OnV5m_yi" role="3EZMnx">
+          <node concept="VPM3Z" id="1A$OnV5m_yj" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="1A$OnV5m_yk" role="3EZMnx">
+            <property role="3F0ifm" value="- In the cell menu (open it with CTRL+Space):" />
+          </node>
+          <node concept="3F0ifn" id="1A$OnV5m_yl" role="3EZMnx">
+            <property role="ilYzB" value="focus here and hit CTRL+Space" />
+            <node concept="VPxyj" id="1A$OnV5m_ym" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="A1WHr" id="1A$OnV5m_yn" role="3vIgyS">
+              <ref role="2ZyFGn" to="pgrv:1A$OnV5mdi$" resolve="ParameterizedMenuManualTest" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="1A$OnV5m_yo" role="2iSdaV" />
+        </node>
+        <node concept="3F0ifn" id="1A$OnV5m_x7" role="3EZMnx" />
+        <node concept="3EZMnI" id="1A$OnV5m_yF" role="3EZMnx">
+          <node concept="VPM3Z" id="1A$OnV5m_yG" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="1A$OnV5m_yH" role="3EZMnx">
+            <property role="3F0ifm" value="- In the context assistant (focusable with (CMD|CTRL)+ALT+Return): " />
+          </node>
+          <node concept="18a60v" id="1A$OnV5m_yI" role="3EZMnx">
+            <node concept="VPM3Z" id="1A$OnV5m_yJ" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="1A$OnV5m_yK" role="2iSdaV" />
+        </node>
+        <node concept="3F0ifn" id="1A$OnV5m_z0" role="3EZMnx" />
+        <node concept="3F0ifn" id="1A$OnV5m_zh" role="3EZMnx">
+          <property role="3F0ifm" value="- In the &quot;Context Actions&quot; Tool Window (open it on the right hand side)" />
+          <node concept="VPM3Z" id="1A$OnV5m_zN" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="1A$OnV5mIZO" role="2iSdaV" />
+      </node>
+      <node concept="l2Vlx" id="1A$OnV5mIZR" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="3ICUPy" id="1A$OnV5me8y">
     <ref role="aqKnT" to="pgrv:1A$OnV5mdi$" resolve="ParameterizedMenuManualTest" />
+    <node concept="22hDWj" id="27yO7ubpPus" role="22hAXT" />
     <node concept="1Qtc8_" id="1A$OnV5mepR" role="IW6Ez">
       <node concept="1GhOrh" id="1A$OnV5meql" role="1Qtc8A">
         <node concept="1GhMSn" id="1A$OnV5meqm" role="1GhOrs">
@@ -527,59 +583,6 @@
       <node concept="2jZ$wP" id="1A$OnV5merG" role="1Qtc8$" />
       <node concept="3eGOoe" id="1A$OnV5merH" role="1Qtc8$" />
       <node concept="2j_NTm" id="1A$OnV5merI" role="1Qtc8$" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1A$OnV5mpCF">
-    <ref role="1XX52x" to="pgrv:1A$OnV5mdi$" resolve="ParameterizedMenuManualTest" />
-    <node concept="3EZMnI" id="1A$OnV5mpCH" role="2wV5jI">
-      <node concept="3F0ifn" id="1A$OnV5mpCO" role="3EZMnx">
-        <property role="3F0ifm" value="The same menu is shown in each of these places:" />
-      </node>
-      <node concept="3EZMnI" id="1A$OnV5m_x5" role="3EZMnx">
-        <node concept="3F0ifn" id="1A$OnV5mJ0e" role="3EZMnx" />
-        <node concept="3EZMnI" id="1A$OnV5m_yi" role="3EZMnx">
-          <node concept="VPM3Z" id="1A$OnV5m_yj" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-          <node concept="3F0ifn" id="1A$OnV5m_yk" role="3EZMnx">
-            <property role="3F0ifm" value="- In the cell menu (open it with CTRL+Space):" />
-          </node>
-          <node concept="3F0ifn" id="1A$OnV5m_yl" role="3EZMnx">
-            <property role="ilYzB" value="focus here and hit CTRL+Space" />
-            <node concept="VPxyj" id="1A$OnV5m_ym" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
-            <node concept="A1WHr" id="1A$OnV5m_yn" role="3vIgyS">
-              <ref role="2ZyFGn" to="pgrv:1A$OnV5mdi$" resolve="ParameterizedMenuManualTest" />
-            </node>
-          </node>
-          <node concept="2iRfu4" id="1A$OnV5m_yo" role="2iSdaV" />
-        </node>
-        <node concept="3F0ifn" id="1A$OnV5m_x7" role="3EZMnx" />
-        <node concept="3EZMnI" id="1A$OnV5m_yF" role="3EZMnx">
-          <node concept="VPM3Z" id="1A$OnV5m_yG" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-          <node concept="3F0ifn" id="1A$OnV5m_yH" role="3EZMnx">
-            <property role="3F0ifm" value="- In the context assistant (focusable with (CMD|CTRL)+ALT+Return): " />
-          </node>
-          <node concept="18a60v" id="1A$OnV5m_yI" role="3EZMnx">
-            <node concept="VPM3Z" id="1A$OnV5m_yJ" role="3F10Kt">
-              <property role="VOm3f" value="false" />
-            </node>
-          </node>
-          <node concept="2iRfu4" id="1A$OnV5m_yK" role="2iSdaV" />
-        </node>
-        <node concept="3F0ifn" id="1A$OnV5m_z0" role="3EZMnx" />
-        <node concept="3F0ifn" id="1A$OnV5m_zh" role="3EZMnx">
-          <property role="3F0ifm" value="- In the &quot;Context Actions&quot; Tool Window (open it on the right hand side)" />
-          <node concept="VPM3Z" id="1A$OnV5m_zN" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-        </node>
-        <node concept="2iRkQZ" id="1A$OnV5mIZO" role="2iSdaV" />
-      </node>
-      <node concept="l2Vlx" id="1A$OnV5mIZR" role="2iSdaV" />
     </node>
   </node>
 </model>
