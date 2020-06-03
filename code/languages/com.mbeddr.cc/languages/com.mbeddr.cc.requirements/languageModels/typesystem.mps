@@ -111,6 +111,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
@@ -1042,16 +1045,20 @@
                             </node>
                             <node concept="2pJxcG" id="1LLGf91xmLi" role="2pJxcM">
                               <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                              <node concept="Xl_RD" id="1LLGf91xmMq" role="28ntcv">
-                                <property role="Xl_RC" value="temp" />
+                              <node concept="WxPPo" id="27yO7ubJBkU" role="28ntcv">
+                                <node concept="Xl_RD" id="1LLGf91xmMq" role="WxPPp">
+                                  <property role="Xl_RC" value="temp" />
+                                </node>
                               </node>
                             </node>
                           </node>
                         </node>
                         <node concept="2pJxcG" id="1LLGf91xmAw" role="2pJxcM">
                           <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                          <node concept="Xl_RD" id="1LLGf91xmBk" role="28ntcv">
-                            <property role="Xl_RC" value="DefaultDocConfig" />
+                          <node concept="WxPPo" id="27yO7ubJBkV" role="28ntcv">
+                            <node concept="Xl_RD" id="1LLGf91xmBk" role="WxPPp">
+                              <property role="Xl_RC" value="DefaultDocConfig" />
+                            </node>
                           </node>
                         </node>
                       </node>
