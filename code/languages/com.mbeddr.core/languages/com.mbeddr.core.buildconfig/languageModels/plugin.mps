@@ -7,7 +7,7 @@
     <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -130,7 +130,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
@@ -214,6 +214,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
@@ -325,7 +328,7 @@
         <node concept="ElOhj" id="2obGnlRg4rh" role="2aLE7H">
           <node concept="3clFbS" id="2obGnlRg4ri" role="2VODD2">
             <node concept="3SKdUt" id="6MMJxkL7vF0" role="3cqZAp">
-              <node concept="1PaTwC" id="13p6s1wtios" role="3ndbpf">
+              <node concept="1PaTwC" id="13p6s1wtios" role="1aUNEU">
                 <node concept="3oM_SD" id="13p6s1wtiot" role="1PaTwD">
                   <property role="3oM_SC" value="we" />
                 </node>
@@ -407,7 +410,7 @@
               </node>
             </node>
             <node concept="3SKdUt" id="6MMJxkL7xeY" role="3cqZAp">
-              <node concept="1PaTwC" id="13p6s1wtioR" role="3ndbpf">
+              <node concept="1PaTwC" id="13p6s1wtioR" role="1aUNEU">
                 <node concept="3oM_SD" id="13p6s1wtioS" role="1PaTwD">
                   <property role="3oM_SC" value="and" />
                 </node>
@@ -492,7 +495,7 @@
               </node>
             </node>
             <node concept="3SKdUt" id="6MMJxkL7xZy" role="3cqZAp">
-              <node concept="1PaTwC" id="13p6s1wtipj" role="3ndbpf">
+              <node concept="1PaTwC" id="13p6s1wtipj" role="1aUNEU">
                 <node concept="3oM_SD" id="13p6s1wtipk" role="1PaTwD">
                   <property role="3oM_SC" value="support" />
                 </node>
@@ -983,8 +986,10 @@
                           <ref role="2pJxaS" to="51wr:7$0wAVob3nZ" resolve="PlatformTemplate" />
                           <node concept="2pJxcG" id="7$0wAVocs_J" role="2pJxcM">
                             <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                            <node concept="Xl_RD" id="7$0wAVocsAc" role="28ntcv">
-                              <property role="Xl_RC" value="Desktop Platform" />
+                            <node concept="WxPPo" id="27yO7ubzfT9" role="28ntcv">
+                              <node concept="Xl_RD" id="7$0wAVocsAc" role="WxPPp">
+                                <property role="Xl_RC" value="Desktop Platform" />
+                              </node>
                             </node>
                           </node>
                           <node concept="2pIpSj" id="7$0wAVocsDe" role="2pJxcM">
