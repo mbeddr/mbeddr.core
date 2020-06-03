@@ -12,7 +12,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
@@ -359,10 +358,8 @@
                   <node concept="3uibUv" id="6Xk4NhOvVGS" role="1tU5fm">
                     <ref role="3uigEE" to="w1kc:~MPSModuleOwner" resolve="MPSModuleOwner" />
                   </node>
-                  <node concept="2YIFZM" id="6Xk4NhOvVGV" role="33vP2m">
-                    <ref role="37wK5l" to="3o3z:~Iterators.get(java.util.Iterator,int)" resolve="get" />
-                    <ref role="1Pybhc" to="3o3z:~Iterators" resolve="Iterators" />
-                    <node concept="2OqwBi" id="6Xk4NhOvVGW" role="37wK5m">
+                  <node concept="2OqwBi" id="6d0zIQxhyt2" role="33vP2m">
+                    <node concept="2OqwBi" id="6Xk4NhOvVGW" role="2Oq$k0">
                       <node concept="37vLTw" id="6Xk4NhOvVGX" role="2Oq$k0">
                         <ref role="3cqZAo" node="6Xk4NhOvO7Z" resolve="owners" />
                       </node>
@@ -370,8 +367,8 @@
                         <ref role="37wK5l" to="33ny:~Set.iterator()" resolve="iterator" />
                       </node>
                     </node>
-                    <node concept="3cmrfG" id="6Xk4NhOvVGZ" role="37wK5m">
-                      <property role="3cmrfH" value="0" />
+                    <node concept="liA8E" id="6d0zIQxhz3U" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                     </node>
                   </node>
                 </node>

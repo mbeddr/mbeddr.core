@@ -26,12 +26,10 @@
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
-    <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="1i04" ref="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" />
-    <import index="vxxo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure.concept(MPS.Core/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tp1t" ref="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" />
@@ -1334,15 +1332,23 @@
               </node>
             </node>
           </node>
-          <node concept="2YIFZM" id="6Xk4NhOH66j" role="3clFbw">
-            <ref role="37wK5l" to="3o3z:~Iterables.isEmpty(java.lang.Iterable)" resolve="isEmpty" />
-            <ref role="1Pybhc" to="3o3z:~Iterables" resolve="Iterables" />
-            <node concept="2OqwBi" id="6Xk4NhOH66k" role="37wK5m">
-              <node concept="37vLTw" id="6Xk4NhOH66l" role="2Oq$k0">
-                <ref role="3cqZAo" node="7LK0SHM$d7" resolve="tmp" />
+          <node concept="3fqX7Q" id="6d0zIQxhuDy" role="3clFbw">
+            <node concept="2OqwBi" id="6d0zIQxhuD$" role="3fr31v">
+              <node concept="2OqwBi" id="6d0zIQxhuD_" role="2Oq$k0">
+                <node concept="2OqwBi" id="6d0zIQxhuDA" role="2Oq$k0">
+                  <node concept="37vLTw" id="6d0zIQxhuDB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7LK0SHM$d7" resolve="tmp" />
+                  </node>
+                  <node concept="liA8E" id="6d0zIQxhuDC" role="2OqNvi">
+                    <ref role="37wK5l" to="ap4t:~TransientModelsProvider.getModules()" resolve="getModules" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6d0zIQxhuDD" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Iterable.iterator()" resolve="iterator" />
+                </node>
               </node>
-              <node concept="liA8E" id="6Xk4NhOH66m" role="2OqNvi">
-                <ref role="37wK5l" to="ap4t:~TransientModelsProvider.getModules()" resolve="getModules" />
+              <node concept="liA8E" id="6d0zIQxhuDE" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
               </node>
             </node>
           </node>
