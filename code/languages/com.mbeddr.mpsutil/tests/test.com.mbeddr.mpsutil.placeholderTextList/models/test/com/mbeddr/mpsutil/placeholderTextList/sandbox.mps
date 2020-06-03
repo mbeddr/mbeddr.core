@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4c0bf0c4-14f1-408b-8efc-a95a982abe96(test.com.mbeddr.mpsutil.placeholderTextList.sandbox)" doNotGenerate="true">
+<model ref="r:4c0bf0c4-14f1-408b-8efc-a95a982abe96(test.com.mbeddr.mpsutil.placeholderTextList.sandbox)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="03411b7a-a9ce-4d39-bc96-3ef49f103e72" name="test.com.mbeddr.mpsutil.placeholderTextList.testlang" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports />
   <registry>

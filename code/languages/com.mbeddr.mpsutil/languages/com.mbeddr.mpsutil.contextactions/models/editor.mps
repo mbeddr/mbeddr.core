@@ -2,7 +2,7 @@
 <model ref="r:d7a72757-9d59-454c-a452-6509c79b709b(com.mbeddr.mpsutil.contextactions.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,9 +20,11 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ng" index="22mbnS">
         <child id="414384289274416996" name="parts" index="3ft7WO" />
       </concept>
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
@@ -65,6 +67,7 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
@@ -85,7 +88,6 @@
         <child id="1165420413720" name="parametersFunction" index="1ou48n" />
       </concept>
       <concept id="1165420626554" name="jetbrains.mps.lang.editor.structure.CellMenuPart_Generic_Group_Handler" flags="in" index="1ouSdP" />
-      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
         <property id="1215007802031" name="value" index="3$6WeP" />
@@ -2110,30 +2112,6 @@
       <node concept="l2Vlx" id="23_jb1uJj5" role="2iSdaV" />
     </node>
   </node>
-  <node concept="3p36aQ" id="4iNiUqGz3wj">
-    <ref role="aqKnT" to="aozb:5tr7YH$UuXw" resolve="IActionSource" />
-    <node concept="2VfDsV" id="4iNiUqGz3wn" role="3ft7WO">
-      <node concept="1GpqWn" id="4iNiUqG$cCo" role="1Go12V">
-        <node concept="3clFbS" id="4iNiUqG$cCp" role="2VODD2">
-          <node concept="3clFbF" id="4iNiUqG$cJI" role="3cqZAp">
-            <node concept="3fqX7Q" id="5cbCx5gQBsg" role="3clFbG">
-              <node concept="2OqwBi" id="5cbCx5gQBsi" role="3fr31v">
-                <node concept="1GpqW3" id="5cbCx5gQBsj" role="2Oq$k0" />
-                <node concept="2Zo12i" id="5cbCx5gQBsk" role="2OqNvi">
-                  <node concept="chp4Y" id="5cbCx5gQBsl" role="2Zo12j">
-                    <ref role="cht4Q" to="aozb:6W_V$eaOsrn" resolve="IGeneratorOnly" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3p36aQ" id="5cbCx5gQOyI">
-    <ref role="aqKnT" to="aozb:657q32pRmdh" resolve="IContextProvider" />
-  </node>
   <node concept="24kQdi" id="3y7CaIpppf_">
     <ref role="1XX52x" to="aozb:3y7CaIpppfq" resolve="DisableContextInstanceAction" />
     <node concept="3EZMnI" id="hJB7pa_" role="2wV5jI">
@@ -2173,6 +2151,32 @@
       </node>
       <node concept="l2Vlx" id="i0NEeO2" role="2iSdaV" />
     </node>
+  </node>
+  <node concept="22mcaB" id="4iNiUqGz3wj">
+    <ref role="aqKnT" to="aozb:5tr7YH$UuXw" resolve="IActionSource" />
+    <node concept="22hDWj" id="27yO7ubpIc_" role="22hAXT" />
+    <node concept="2VfDsV" id="4iNiUqGz3wn" role="3ft7WO">
+      <node concept="1GpqWn" id="4iNiUqG$cCo" role="1Go12V">
+        <node concept="3clFbS" id="4iNiUqG$cCp" role="2VODD2">
+          <node concept="3clFbF" id="4iNiUqG$cJI" role="3cqZAp">
+            <node concept="3fqX7Q" id="5cbCx5gQBsg" role="3clFbG">
+              <node concept="2OqwBi" id="5cbCx5gQBsi" role="3fr31v">
+                <node concept="1GpqW3" id="5cbCx5gQBsj" role="2Oq$k0" />
+                <node concept="2Zo12i" id="5cbCx5gQBsk" role="2OqNvi">
+                  <node concept="chp4Y" id="5cbCx5gQBsl" role="2Zo12j">
+                    <ref role="cht4Q" to="aozb:6W_V$eaOsrn" resolve="IGeneratorOnly" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="22mcaB" id="5cbCx5gQOyI">
+    <ref role="aqKnT" to="aozb:657q32pRmdh" resolve="IContextProvider" />
+    <node concept="22hDWj" id="27yO7ubpIcA" role="22hAXT" />
   </node>
 </model>
 

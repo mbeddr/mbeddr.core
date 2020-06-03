@@ -7,8 +7,8 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -349,7 +349,7 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -2498,7 +2498,7 @@
             <node concept="pkWqt" id="7RPG7RvSzeT" role="pqm2j">
               <node concept="3clFbS" id="7RPG7RvSzeU" role="2VODD2">
                 <node concept="3SKdUt" id="7RPG7RvUebg" role="3cqZAp">
-                  <node concept="1PaTwC" id="17qUVvSZkVA" role="3ndbpf">
+                  <node concept="1PaTwC" id="17qUVvSZkVA" role="1aUNEU">
                     <node concept="3oM_SD" id="17qUVvSZkVB" role="1PaTwD">
                       <property role="3oM_SC" value="todo:" />
                     </node>
@@ -3275,7 +3275,7 @@
       <node concept="3F0ifn" id="gfVtuf9" role="3EZMnx">
         <property role="3F0ifm" value="class" />
         <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
-        <ref role="1ERwB7" to="tpen:4d8Vyfy9COK" resolve="ClassifierClassExpression_DeleteClass" />
+        <ref role="1ERwB7" to="tpen:4d8Vyfy9COK" resolve="QualifierReference_DeleteToDot" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="l2Vlx" id="i0v8aVU" role="2iSdaV" />
@@ -3299,7 +3299,7 @@
       <node concept="1iCGBv" id="gDPynXJ" role="3EZMnx">
         <property role="1$x2rV" value="&lt;no class&gt;" />
         <ref role="1NtTu8" to="tpee:gDPybl6" resolve="classConcept" />
-        <ref role="1ERwB7" to="tpen:h3$l4aj" resolve="StaticMethodCall_Actions" />
+        <ref role="1ERwB7" to="tpen:h3$l4aj" resolve="StaticMethodCall_ConvertToLocal" />
         <node concept="1sVBvm" id="gDPynXK" role="1sWHZn">
           <node concept="3F0A7n" id="gDPynXL" role="2wV5jI">
             <property role="1Intyy" value="true" />

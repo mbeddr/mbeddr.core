@@ -2,8 +2,8 @@
 <model ref="r:8eb3f548-a86c-47df-8e7e-c1b50200de75(com.mbeddr.mpsutil.editingGuide.sandbox.demo)">
   <persistence version="9" />
   <languages>
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="1ca21c70-6e61-4b62-8771-dfd96620ef7c(com.mbeddr.mpsutil.guides)" />
   </languages>
   <imports>
@@ -91,7 +91,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -111,7 +111,7 @@
       <concept id="3453511597021550269" name="com.mbeddr.mpsutil.editingGuide.structure.CodeWord" flags="ng" index="JL00X">
         <property id="3453511597021550288" name="text" index="JL01g" />
       </concept>
-      <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ig" index="2LPuA2" />
+      <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ng" index="2LPuA2" />
       <concept id="3909459679554886014" name="com.mbeddr.mpsutil.editingGuide.structure.Exercise" flags="ng" index="2LPuAz">
         <child id="3909459679554886019" name="description" index="2LPu_u" />
         <child id="3909459679554886015" name="tasks" index="2LPuAy" />
@@ -296,7 +296,7 @@
       <node concept="2LPuA2" id="31xWCC4R_0" role="2LPuA6">
         <node concept="3clFbS" id="31xWCC4R_1" role="2VODD2">
           <node concept="3SKdUt" id="31xWCC4RTW" role="3cqZAp">
-            <node concept="1PaTwC" id="17qUVvSZls4" role="3ndbpf">
+            <node concept="1PaTwC" id="17qUVvSZls4" role="1aUNEU">
               <node concept="3oM_SD" id="17qUVvSZls5" role="1PaTwD">
                 <property role="3oM_SC" value="if" />
               </node>
@@ -462,7 +462,7 @@
       <node concept="2LPuA2" id="44LrdWQfZRK" role="2LPuA6">
         <node concept="3clFbS" id="44LrdWQfZRL" role="2VODD2">
           <node concept="3SKdUt" id="44LrdWQfZRM" role="3cqZAp">
-            <node concept="1PaTwC" id="44LrdWQfZRN" role="3ndbpf">
+            <node concept="1PaTwC" id="44LrdWQfZRN" role="1aUNEU">
               <node concept="3oM_SD" id="44LrdWQfZRO" role="1PaTwD">
                 <property role="3oM_SC" value="if" />
               </node>

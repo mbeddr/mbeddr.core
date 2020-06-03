@@ -12,19 +12,18 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
-        <child id="1164879758292" name="body" index="SfCbr" />
-        <child id="1164903496223" name="catchClause" index="TEbGg" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
+      <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
+        <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
       </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -41,13 +40,20 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
-      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
+        <child id="8276990574895933173" name="catchBody" index="1zc67A" />
+        <child id="8276990574895933172" name="throwable" index="1zc67B" />
+      </concept>
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+        <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
+        <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -86,8 +92,8 @@
       <ref role="EomxK" to="e8s3:3mKaBWVV7Vo" resolve="xOffset" />
       <node concept="QB0g5" id="3mKaBWVV82W" role="QCWH9">
         <node concept="3clFbS" id="3mKaBWVV82X" role="2VODD2">
-          <node concept="SfApY" id="3mKaBWVV91n" role="3cqZAp">
-            <node concept="3clFbS" id="3mKaBWVV91p" role="SfCbr">
+          <node concept="3J1_TO" id="3mKaBWVV91n" role="3cqZAp">
+            <node concept="3clFbS" id="3mKaBWVV91p" role="1zxBo7">
               <node concept="3clFbF" id="5wA$eKdv0lH" role="3cqZAp">
                 <node concept="2YIFZM" id="5wA$eKdv0lJ" role="3clFbG">
                   <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
@@ -101,14 +107,17 @@
                 </node>
               </node>
             </node>
-            <node concept="TDmWw" id="3mKaBWVV91q" role="TEbGg">
-              <node concept="3cpWsn" id="3mKaBWVV91s" role="TDEfY">
+            <node concept="3uVAMA" id="3mKaBWVV91q" role="1zxBo5">
+              <node concept="XOnhg" id="3mKaBWVV91s" role="1zc67B">
+                <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="t" />
-                <node concept="3uibUv" id="3mKaBWVVc_7" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
+                <node concept="nSUau" id="aN4PX1ufArZ" role="1tU5fm">
+                  <node concept="3uibUv" id="3mKaBWVVc_7" role="nSUat">
+                    <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
+                  </node>
                 </node>
               </node>
-              <node concept="3clFbS" id="3mKaBWVV91w" role="TDEfX">
+              <node concept="3clFbS" id="3mKaBWVV91w" role="1zc67A">
                 <node concept="3cpWs6" id="5wA$eKdv188" role="3cqZAp">
                   <node concept="3clFbT" id="5wA$eKdv1gS" role="3cqZAk">
                     <property role="3clFbU" value="false" />
@@ -124,8 +133,8 @@
       <ref role="EomxK" to="e8s3:3mKaBWVV7Vt" resolve="yOffset" />
       <node concept="QB0g5" id="3mKaBWVVelD" role="QCWH9">
         <node concept="3clFbS" id="3mKaBWVVelE" role="2VODD2">
-          <node concept="SfApY" id="5wA$eKdv270" role="3cqZAp">
-            <node concept="3clFbS" id="5wA$eKdv271" role="SfCbr">
+          <node concept="3J1_TO" id="5wA$eKdv270" role="3cqZAp">
+            <node concept="3clFbS" id="5wA$eKdv271" role="1zxBo7">
               <node concept="3clFbF" id="5wA$eKdv272" role="3cqZAp">
                 <node concept="2YIFZM" id="5wA$eKdv273" role="3clFbG">
                   <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
@@ -139,14 +148,17 @@
                 </node>
               </node>
             </node>
-            <node concept="TDmWw" id="5wA$eKdv277" role="TEbGg">
-              <node concept="3cpWsn" id="5wA$eKdv278" role="TDEfY">
+            <node concept="3uVAMA" id="5wA$eKdv277" role="1zxBo5">
+              <node concept="XOnhg" id="5wA$eKdv278" role="1zc67B">
+                <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="t" />
-                <node concept="3uibUv" id="5wA$eKdv279" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
+                <node concept="nSUau" id="7vDCJoN7Knm" role="1tU5fm">
+                  <node concept="3uibUv" id="5wA$eKdv279" role="nSUat">
+                    <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
+                  </node>
                 </node>
               </node>
-              <node concept="3clFbS" id="5wA$eKdv27a" role="TDEfX">
+              <node concept="3clFbS" id="5wA$eKdv27a" role="1zc67A">
                 <node concept="3cpWs6" id="5wA$eKdv27b" role="3cqZAp">
                   <node concept="3clFbT" id="5wA$eKdv27c" role="3cqZAk">
                     <property role="3clFbU" value="false" />
