@@ -2532,6 +2532,20 @@
     <node concept="1SWQZ3" id="72ub2B5nkZ6" role="lGtFl">
       <property role="1SWRpm" value="COMPS" />
     </node>
+    <node concept="2SaL7w" id="3WvvaB_Mr88" role="2ZfVeh">
+      <node concept="3clFbS" id="3WvvaB_Mr89" role="2VODD2">
+        <node concept="3clFbF" id="3WvvaB_Mrks" role="3cqZAp">
+          <node concept="2OqwBi" id="3WvvaB_MrFM" role="3clFbG">
+            <node concept="2Sf5sV" id="3WvvaB_Mrkr" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="3WvvaB_Mscw" role="2OqNvi">
+              <node concept="chp4Y" id="3WvvaB_Msp6" role="cj9EA">
+                <ref role="cht4Q" to="v7ag:71UKpntojUs" resolve="InterfaceType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2S6QgY" id="53OWoAUQoEM">
     <property role="3GE5qa" value="comp.ports" />
