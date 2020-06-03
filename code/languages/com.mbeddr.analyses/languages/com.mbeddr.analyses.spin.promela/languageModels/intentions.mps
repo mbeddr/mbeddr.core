@@ -76,6 +76,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
@@ -174,10 +177,12 @@
                   <ref role="2pJxaS" to="ir22:3Gj8GGYnZqn" resolve="PromelaGlobalVariableDeclaration" />
                   <node concept="2pJxcG" id="3Gj8GGYpZWn" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="2OqwBi" id="3Gj8GGYq0sD" role="28ntcv">
-                      <node concept="2Sf5sV" id="3Gj8GGYq02h" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="3Gj8GGYq1Bv" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="WxPPo" id="27yO7ubKIdi" role="28ntcv">
+                      <node concept="2OqwBi" id="3Gj8GGYq0sD" role="WxPPp">
+                        <node concept="2Sf5sV" id="3Gj8GGYq02h" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="3Gj8GGYq1Bv" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -205,8 +210,10 @@
                   </node>
                   <node concept="2pJxcG" id="3Gj8GGYq5rI" role="2pJxcM">
                     <ref role="2pJxcJ" to="x27k:19a6$uAA0vK" resolve="exported" />
-                    <node concept="3clFbT" id="3Gj8GGYq5Bf" role="28ntcv">
-                      <property role="3clFbU" value="true" />
+                    <node concept="WxPPo" id="27yO7ubKIdj" role="28ntcv">
+                      <node concept="3clFbT" id="3Gj8GGYq5Bf" role="WxPPp">
+                        <property role="3clFbU" value="true" />
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -4,7 +4,7 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -112,6 +112,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
@@ -1155,11 +1158,13 @@
                 <ref role="2pJxaS" to="v326:7Rf0$0HCP5j" resolve="SpinExecutable" />
                 <node concept="2pJxcG" id="63DPgoN4EkQ" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                  <node concept="2YIFZM" id="63DPgoN4ERr" role="28ntcv">
-                    <ref role="37wK5l" to="pr99:3tIDuP5tlTl" resolve="panExecutableName" />
-                    <ref role="1Pybhc" to="pr99:3tIDuP5tlRy" resolve="SpinNamingUtils" />
-                    <node concept="QwW4i" id="63DPgoN4EX$" role="37wK5m">
-                      <ref role="QwW4h" node="63DPgoN4EX9" resolve="pm" />
+                  <node concept="WxPPo" id="27yO7ubKIdk" role="28ntcv">
+                    <node concept="2YIFZM" id="63DPgoN4ERr" role="WxPPp">
+                      <ref role="37wK5l" to="pr99:3tIDuP5tlTl" resolve="panExecutableName" />
+                      <ref role="1Pybhc" to="pr99:3tIDuP5tlRy" resolve="SpinNamingUtils" />
+                      <node concept="QwW4i" id="63DPgoN4EX$" role="37wK5m">
+                        <ref role="QwW4h" node="63DPgoN4EX9" resolve="pm" />
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -7,7 +7,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -920,7 +920,7 @@
                                   </node>
                                 </node>
                                 <node concept="2qgKlT" id="73BQep1UUAI" role="2OqNvi">
-                                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
+                                  <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="73BQep1USgL" role="3uHU7B">
