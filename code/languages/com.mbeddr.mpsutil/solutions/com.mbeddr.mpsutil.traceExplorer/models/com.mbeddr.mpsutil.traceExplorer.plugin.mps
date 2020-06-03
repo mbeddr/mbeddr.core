@@ -7580,16 +7580,9 @@
                   <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="6u2KKsj7bCa" role="37wK5m">
-                <node concept="37vLTw" id="6u2KKsj7aZx" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6u2KKsj6ImX" resolve="project" />
-                </node>
-                <node concept="liA8E" id="6u2KKsj7cHA" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c4:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
-                  <node concept="3VsKOn" id="6u2KKsj7dAh" role="37wK5m">
-                    <ref role="3VsUkX" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
-                  </node>
-                </node>
+              <node concept="2YIFZM" id="OUMwi6Jd9E" role="37wK5m">
+                <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+                <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
               </node>
             </node>
           </node>

@@ -2516,7 +2516,7 @@
                       <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                     </node>
                     <node concept="liA8E" id="11K_5nNfofd" role="2OqNvi">
-                      <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
+                      <ref role="37wK5l" to="1m72:~ComponentManager.getService(java.lang.Class)" resolve="getService" />
                       <node concept="3VsKOn" id="11K_5nNfofe" role="37wK5m">
                         <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
                       </node>
