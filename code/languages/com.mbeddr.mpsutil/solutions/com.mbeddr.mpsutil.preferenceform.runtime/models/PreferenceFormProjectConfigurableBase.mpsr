@@ -3,7 +3,9 @@
   <persistence version="9" />
   <imports>
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" implicit="true" />
+    <import index="v23q" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi(MPS.IDEA/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" implicit="true" />
     <import index="9ti4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.extensions(MPS.IDEA/)" implicit="true" />
     <import index="hq8m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.options(MPS.IDEA/)" implicit="true" />
   </imports>
@@ -36,6 +38,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
@@ -65,6 +68,10 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -81,6 +88,11 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -107,6 +119,13 @@
       <node concept="3Tm6S6" id="X7OD3WtCfW" role="1B3o_S" />
       <node concept="3uibUv" id="X7OD3WtCfY" role="1tU5fm">
         <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+      </node>
+    </node>
+    <node concept="312cEg" id="KzT7AlhJpO" role="jymVt">
+      <property role="TrG5h" value="disposable" />
+      <node concept="3Tm6S6" id="KzT7AlhJpP" role="1B3o_S" />
+      <node concept="3uibUv" id="KzT7AlhLnK" role="1tU5fm">
+        <ref role="3uigEE" to="v23q:~Disposable" resolve="Disposable" />
       </node>
     </node>
     <node concept="2tJIrI" id="X7OD3WtCoP" role="jymVt" />
@@ -179,27 +198,48 @@
       <node concept="3Tm1VV" id="X7OD3WtDDi" role="1B3o_S" />
       <node concept="3cqZAl" id="X7OD3WtDDj" role="3clF45" />
       <node concept="3clFbS" id="X7OD3WtDDl" role="3clF47">
+        <node concept="3clFbF" id="KzT7AlhMkO" role="3cqZAp">
+          <node concept="37vLTI" id="KzT7AlhMOI" role="3clFbG">
+            <node concept="2YIFZM" id="KzT7AlhOqH" role="37vLTx">
+              <ref role="1Pybhc" to="zn9m:~Disposer" resolve="Disposer" />
+              <ref role="37wK5l" to="zn9m:~Disposer.newDisposable(java.lang.String)" resolve="newDisposable" />
+              <node concept="2OqwBi" id="KzT7AlhPos" role="37wK5m">
+                <node concept="2OqwBi" id="KzT7AlhOQA" role="2Oq$k0">
+                  <node concept="Xjq3P" id="KzT7AlhOyp" role="2Oq$k0" />
+                  <node concept="liA8E" id="KzT7AlhP1R" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="KzT7AlhPGe" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="KzT7AlhMkM" role="37vLTJ">
+              <ref role="3cqZAo" node="KzT7AlhJpO" resolve="disposable" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="X7OD3WtZu1" role="3cqZAp">
           <node concept="2OqwBi" id="X7OD3Wu11u" role="3clFbG">
             <node concept="2OqwBi" id="X7OD3Wu03P" role="2Oq$k0">
-              <node concept="2YIFZM" id="X7OD3WtZuf" role="2Oq$k0">
-                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance)" resolve="getArea" />
-                <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
+              <node concept="liA8E" id="X7OD3Wu0gP" role="2OqNvi">
+                <ref role="37wK5l" to="9ti4:~ProjectExtensionPointName.getPoint(com.intellij.openapi.extensions.AreaInstance)" resolve="getPoint" />
                 <node concept="1rXfSq" id="X7OD3WtZJa" role="37wK5m">
                   <ref role="37wK5l" node="X7OD3WtCNJ" resolve="getProject" />
                 </node>
               </node>
-              <node concept="liA8E" id="X7OD3Wu0gP" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
-                <node concept="10M0yZ" id="X7OD3Wu0$a" role="37wK5m">
-                  <ref role="1PxDUh" to="hq8m:~Configurable" resolve="Configurable" />
-                  <ref role="3cqZAo" to="hq8m:~Configurable.PROJECT_CONFIGURABLE" resolve="PROJECT_CONFIGURABLE" />
-                </node>
+              <node concept="10M0yZ" id="7IAK11VLvoZ" role="2Oq$k0">
+                <ref role="3cqZAo" to="hq8m:~Configurable.PROJECT_CONFIGURABLE" resolve="PROJECT_CONFIGURABLE" />
+                <ref role="1PxDUh" to="hq8m:~Configurable" resolve="Configurable" />
               </node>
             </node>
             <node concept="liA8E" id="X7OD3Wu1O3" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object)" resolve="registerExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object,com.intellij.openapi.Disposable)" resolve="registerExtension" />
               <node concept="Xjq3P" id="X7OD3Wu2gh" role="37wK5m" />
+              <node concept="37vLTw" id="KzT7AlhR4K" role="37wK5m">
+                <ref role="3cqZAo" node="KzT7AlhJpO" resolve="disposable" />
+              </node>
             </node>
           </node>
         </node>
@@ -216,27 +256,22 @@
       <node concept="3Tm1VV" id="X7OD3WtDDn" role="1B3o_S" />
       <node concept="3cqZAl" id="X7OD3WtDDo" role="3clF45" />
       <node concept="3clFbS" id="X7OD3WtDDq" role="3clF47">
-        <node concept="3clFbF" id="X7OD3Wu2sP" role="3cqZAp">
-          <node concept="2OqwBi" id="X7OD3Wu2sQ" role="3clFbG">
-            <node concept="2OqwBi" id="X7OD3Wu2sR" role="2Oq$k0">
-              <node concept="2YIFZM" id="X7OD3Wu2sS" role="2Oq$k0">
-                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance)" resolve="getArea" />
-                <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
-                <node concept="1rXfSq" id="X7OD3Wu2sT" role="37wK5m">
-                  <ref role="37wK5l" node="X7OD3WtCNJ" resolve="getProject" />
-                </node>
-              </node>
-              <node concept="liA8E" id="X7OD3Wu2sU" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
-                <node concept="10M0yZ" id="X7OD3Wu2sV" role="37wK5m">
-                  <ref role="1PxDUh" to="hq8m:~Configurable" resolve="Configurable" />
-                  <ref role="3cqZAo" to="hq8m:~Configurable.PROJECT_CONFIGURABLE" resolve="PROJECT_CONFIGURABLE" />
+        <node concept="3clFbJ" id="KzT7AlhVr9" role="3cqZAp">
+          <node concept="3clFbS" id="KzT7AlhVrb" role="3clFbx">
+            <node concept="3clFbF" id="KzT7AlhSD4" role="3cqZAp">
+              <node concept="2YIFZM" id="KzT7AlhSPj" role="3clFbG">
+                <ref role="37wK5l" to="zn9m:~Disposer.dispose(com.intellij.openapi.Disposable)" resolve="dispose" />
+                <ref role="1Pybhc" to="zn9m:~Disposer" resolve="Disposer" />
+                <node concept="37vLTw" id="KzT7AlhT4a" role="37wK5m">
+                  <ref role="3cqZAo" node="KzT7AlhJpO" resolve="disposable" />
                 </node>
               </node>
             </node>
-            <node concept="liA8E" id="X7OD3Wu2sW" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object)" resolve="unregisterExtension" />
-              <node concept="Xjq3P" id="X7OD3Wu2sX" role="37wK5m" />
+          </node>
+          <node concept="3y3z36" id="KzT7AlhW8m" role="3clFbw">
+            <node concept="10Nm6u" id="KzT7AlhWrT" role="3uHU7w" />
+            <node concept="37vLTw" id="KzT7AlhVQ4" role="3uHU7B">
+              <ref role="3cqZAo" node="KzT7AlhJpO" resolve="disposable" />
             </node>
           </node>
         </node>
