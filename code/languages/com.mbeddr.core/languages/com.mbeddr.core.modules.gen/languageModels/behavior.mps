@@ -2866,7 +2866,7 @@
   </node>
   <node concept="13h7C7" id="1NwarDnRY0M">
     <property role="3GE5qa" value="module" />
-    <ref role="13h7C2" to="d0vh:1NwarDnRX0I" resolve="GenForignExtModuleImport" />
+    <ref role="13h7C2" to="d0vh:1NwarDnRX0I" resolve="GenForeignExtModuleImport" />
     <node concept="13hLZK" id="1NwarDnRY0N" role="13h7CW">
       <node concept="3clFbS" id="1NwarDnRY0O" role="2VODD2" />
     </node>

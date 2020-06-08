@@ -355,7 +355,7 @@
   <node concept="1TIwiD" id="1NwarDnRX0I">
     <property role="EcuMT" value="2080708908160110638" />
     <property role="3GE5qa" value="module" />
-    <property role="TrG5h" value="GenForignExtModuleImport" />
+    <property role="TrG5h" value="GenForeignExtModuleImport" />
     <ref role="1TJDcQ" node="34x64NyTNWu" resolve="GenModuleImport" />
     <node concept="1TJgyj" id="1NwarDnRY03" role="1TKVEi">
       <property role="IQ2ns" value="2080708908160114691" />

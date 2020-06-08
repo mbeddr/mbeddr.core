@@ -1084,7 +1084,7 @@
       </node>
       <node concept="3F1sOY" id="4VxFbWczlbp" role="3EZMnx">
         <property role="1$x2rV" value=" " />
-        <ref role="1NtTu8" to="yq40:4VxFbWczlbe" resolve="size" />
+        <ref role="1NtTu8" to="yq40:4VxFbWczlbe" resolve="sizeExpr" />
       </node>
       <node concept="3F0ifn" id="4VxFbWczlbs" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />

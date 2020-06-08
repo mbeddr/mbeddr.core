@@ -720,7 +720,7 @@
   </node>
   <node concept="WtQ9Q" id="1NwarDnV2LE">
     <property role="3GE5qa" value="module" />
-    <ref role="WuzLi" to="d0vh:1NwarDnRX0I" resolve="GenForignExtModuleImport" />
+    <ref role="WuzLi" to="d0vh:1NwarDnRX0I" resolve="GenForeignExtModuleImport" />
     <node concept="11bSqf" id="1NwarDnV2LF" role="11c4hB">
       <node concept="3clFbS" id="1NwarDnV2LG" role="2VODD2">
         <node concept="2Gpval" id="1NwarDnV2M0" role="3cqZAp">

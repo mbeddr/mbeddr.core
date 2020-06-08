@@ -229,7 +229,7 @@
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="1TJgyj" id="4VxFbWczlbe" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="size" />
+      <property role="20kJfa" value="sizeExpr" />
       <property role="IQ2ns" value="5684014141267595982" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>

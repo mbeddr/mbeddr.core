@@ -605,7 +605,7 @@
   </node>
   <node concept="24kQdi" id="1NwarDnRY0o">
     <property role="3GE5qa" value="module" />
-    <ref role="1XX52x" to="d0vh:1NwarDnRX0I" resolve="GenForignExtModuleImport" />
+    <ref role="1XX52x" to="d0vh:1NwarDnRX0I" resolve="GenForeignExtModuleImport" />
     <node concept="3EZMnI" id="1NwarDnRY0q" role="2wV5jI">
       <node concept="l2Vlx" id="1NwarDnRY0r" role="2iSdaV" />
       <node concept="3F0ifn" id="1NwarDnRY0s" role="3EZMnx">
