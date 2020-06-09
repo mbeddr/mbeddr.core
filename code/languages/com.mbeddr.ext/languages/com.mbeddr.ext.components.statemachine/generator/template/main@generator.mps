@@ -130,6 +130,7 @@
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
+        <property id="4643433264760041409" name="isInvisible" index="2ccuoM" />
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
       <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
@@ -780,6 +781,7 @@
               <property role="TrG5h" value="statemachineFunction" />
               <node concept="3XIRFW" id="7qvNMV9dm1p" role="2EWMhI">
                 <node concept="3XIRFW" id="7qvNMV9dm1q" role="3XIRFZ">
+                  <property role="2ccuoM" value="true" />
                   <node concept="3XIRlf" id="7qvNMV9dm1r" role="3XIRFZ">
                     <property role="TrG5h" value="x" />
                     <node concept="3TlMh9" id="7qvNMV9dm1s" role="3XIe9u">
