@@ -1459,8 +1459,8 @@
               <node concept="1uHKPH" id="72bo$Cu6O20" role="2OqNvi" />
             </node>
             <node concept="1mIQ4w" id="72bo$Cu6O21" role="2OqNvi">
-              <node concept="chp4Y" id="72bo$Cu6O22" role="cj9EA">
-                <ref role="cht4Q" to="c4fa:7FkLcyyQKyx" resolve="InitExpression" />
+              <node concept="chp4Y" id="1gyNjS6frkh" role="cj9EA">
+                <ref role="cht4Q" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
               </node>
             </node>
           </node>
@@ -1489,8 +1489,8 @@
                   <node concept="1uHKPH" id="72bo$Cu48w$" role="2OqNvi" />
                 </node>
                 <node concept="1mIQ4w" id="72bo$Cu5mHq" role="2OqNvi">
-                  <node concept="chp4Y" id="72bo$Cu5mRI" role="cj9EA">
-                    <ref role="cht4Q" to="c4fa:7FkLcyyQKyx" resolve="InitExpression" />
+                  <node concept="chp4Y" id="1gyNjS6fkDI" role="cj9EA">
+                    <ref role="cht4Q" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
                   </node>
                 </node>
               </node>
@@ -1533,8 +1533,8 @@
                       <node concept="1uHKPH" id="72bo$CucEn8" role="2OqNvi" />
                     </node>
                     <node concept="1mIQ4w" id="72bo$CucEn9" role="2OqNvi">
-                      <node concept="chp4Y" id="72bo$CucEna" role="cj9EA">
-                        <ref role="cht4Q" to="c4fa:7FkLcyyQKyx" resolve="InitExpression" />
+                      <node concept="chp4Y" id="1gyNjS6fkMd" role="cj9EA">
+                        <ref role="cht4Q" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
                       </node>
                     </node>
                   </node>
@@ -1596,8 +1596,8 @@
                       <node concept="1uHKPH" id="72bo$Cu7F8f" role="2OqNvi" />
                     </node>
                     <node concept="1mIQ4w" id="72bo$Cu7F8g" role="2OqNvi">
-                      <node concept="chp4Y" id="72bo$Cu7F8h" role="cj9EA">
-                        <ref role="cht4Q" to="c4fa:7FkLcyyQKyx" resolve="InitExpression" />
+                      <node concept="chp4Y" id="1gyNjS6frbM" role="cj9EA">
+                        <ref role="cht4Q" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
                       </node>
                     </node>
                   </node>
