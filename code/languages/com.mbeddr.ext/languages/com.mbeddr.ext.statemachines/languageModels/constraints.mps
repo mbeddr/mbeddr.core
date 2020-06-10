@@ -19,6 +19,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1679,6 +1680,22 @@
                   <ref role="37wK5l" to="ktif:3FSHg1aCVVq" resolve="reachableTargetStates" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="25eqerVqF3P">
+    <property role="3GE5qa" value="machine.gen" />
+    <ref role="1M2myG" to="clqz:25eqerVqo6z" resolve="EpsilonEvent" />
+    <node concept="9S07l" id="25eqerVqF9k" role="9Vyp8">
+      <node concept="3clFbS" id="25eqerVqF9l" role="2VODD2">
+        <node concept="3clFbF" id="25eqerVqFI9" role="3cqZAp">
+          <node concept="2OqwBi" id="25eqerVqFTY" role="3clFbG">
+            <node concept="nLn13" id="25eqerVqFI8" role="2Oq$k0" />
+            <node concept="2qgKlT" id="25eqerVqG8c" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
             </node>
           </node>
         </node>

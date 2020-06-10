@@ -963,5 +963,12 @@
       <ref role="20lvS9" node="3FSHg1aADay" resolve="AbstractState" />
     </node>
   </node>
+  <node concept="1TIwiD" id="25eqerVqo6z">
+    <property role="EcuMT" value="2399970992704815523" />
+    <property role="3GE5qa" value="machine.gen" />
+    <property role="TrG5h" value="EpsilonEvent" />
+    <property role="34LRSv" value="___epsilon" />
+    <ref role="1TJDcQ" node="41KMvfcjSct" resolve="InEvent" />
+  </node>
 </model>
 

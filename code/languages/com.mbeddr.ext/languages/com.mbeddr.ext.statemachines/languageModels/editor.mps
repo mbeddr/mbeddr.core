@@ -6869,5 +6869,12 @@
     <property role="3GE5qa" value="machine" />
     <ref role="aqKnT" to="clqz:7J_m0rEZ4_4" resolve="EmptyStatemachineContent" />
   </node>
+  <node concept="24kQdi" id="25eqerVqtcE">
+    <property role="3GE5qa" value="machine.gen" />
+    <ref role="1XX52x" to="clqz:25eqerVqo6z" resolve="EpsilonEvent" />
+    <node concept="PMmxH" id="25eqerVqtkT" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 
