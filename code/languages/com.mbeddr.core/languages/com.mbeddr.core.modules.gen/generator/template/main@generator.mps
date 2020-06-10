@@ -635,7 +635,7 @@
         <property id="1559434277891357642" name="alternativeHeaderFileName" index="2XV0bW" />
         <property id="3830958861296806571" name="headerFileName" index="19$mpy" />
       </concept>
-      <concept id="2080708908160110638" name="com.mbeddr.core.modules.gen.structure.GenForignExtModuleImport" flags="ng" index="1bfZAk" />
+      <concept id="2080708908160110638" name="com.mbeddr.core.modules.gen.structure.GenForeignExtModuleImport" flags="ng" index="1bfZAk" />
       <concept id="1758019824472688222" name="com.mbeddr.core.modules.gen.structure.GenModuleH" flags="ng" index="1hFVJD">
         <child id="5569318043966868262" name="headerImports" index="2IAVDA" />
         <child id="1758019824472688223" name="contents" index="1hFVJC" />
@@ -1109,7 +1109,7 @@
               <node concept="30H73N" id="1NwarDnX6tm" role="2Oq$k0" />
               <node concept="1mIQ4w" id="1NwarDnX7hz" role="2OqNvi">
                 <node concept="chp4Y" id="1NwarDnX7$7" role="cj9EA">
-                  <ref role="cht4Q" to="d0vh:1NwarDnRX0I" resolve="GenForignExtModuleImport" />
+                  <ref role="cht4Q" to="d0vh:1NwarDnRX0I" resolve="GenForeignExtModuleImport" />
                 </node>
               </node>
             </node>
@@ -4990,34 +4990,6 @@
                     <node concept="3TrcHB" id="4sIWb0A6wgL" role="2OqNvi">
                       <ref role="3TsBF5" to="x27k:5Oog2UbPmsL" resolve="extern" />
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="1EH1Mz6187c" role="3cqZAp">
-              <node concept="2OqwBi" id="1EH1Mz6187d" role="3clFbw">
-                <node concept="2OqwBi" id="1EH1Mz6187e" role="2Oq$k0">
-                  <node concept="30H73N" id="1EH1Mz6187f" role="2Oq$k0" />
-                  <node concept="3CFZ6_" id="1EH1Mz6187g" role="2OqNvi">
-                    <node concept="3CFYIy" id="1EH1Mz6187h" role="3CFYIz">
-                      <ref role="3CFYIx" to="x27k:49XubMpBVjJ" resolve="MinimalNameMangling" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3x8VRR" id="1EH1Mz6187i" role="2OqNvi" />
-              </node>
-              <node concept="3clFbS" id="1EH1Mz6187j" role="3clFbx">
-                <node concept="3clFbF" id="1EH1Mz6187k" role="3cqZAp">
-                  <node concept="2OqwBi" id="1EH1Mz6187l" role="3clFbG">
-                    <node concept="2OqwBi" id="1EH1Mz6187m" role="2Oq$k0">
-                      <node concept="3l3mFP" id="1EH1Mz6187n" role="2Oq$k0" />
-                      <node concept="3CFZ6_" id="1EH1Mz6187o" role="2OqNvi">
-                        <node concept="3CFYIy" id="1EH1Mz6187p" role="3CFYIz">
-                          <ref role="3CFYIx" to="x27k:49XubMpBVjJ" resolve="MinimalNameMangling" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="zfrQC" id="1EH1Mz6187q" role="2OqNvi" />
                   </node>
                 </node>
               </node>
