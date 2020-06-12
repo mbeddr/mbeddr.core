@@ -584,7 +584,6 @@
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
-      <concept id="3830958861296781575" name="com.mbeddr.core.expressions.structure.NotExpression" flags="ng" index="19$8ne" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="6610873504380029780" name="com.mbeddr.core.expressions.structure.CastExpression" flags="ng" index="1S8S4T">
@@ -1063,7 +1062,7 @@
         <property role="2OOxQR" value="true" />
         <node concept="3XIRFW" id="KU5KLY1Nfk" role="3XIRFX">
           <node concept="3XIRlf" id="GD738Hsda4" role="3XIRFZ">
-            <property role="TrG5h" value="__isEpsilonEvent" />
+            <property role="TrG5h" value="__cascadedEpsilonEvent" />
             <node concept="3TlMgk" id="GD738Hsda2" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
@@ -1111,9 +1110,9 @@
             <node concept="3XIRFW" id="GD738Hsdba" role="27u4cN">
               <node concept="1_9egQ" id="GD738Hsdcf" role="3XIRFZ">
                 <node concept="3pqW6w" id="GD738Hsdcq" role="1_9egR">
-                  <node concept="3TlMhK" id="GD738Hsdd9" role="3TlMhJ" />
+                  <node concept="3TlMhd" id="6FqI49GffUe" role="3TlMhJ" />
                   <node concept="3ZVu4v" id="GD738Hsdcd" role="3TlMhI">
-                    <ref role="3ZVs_2" node="GD738Hsda4" resolve="__isEpsilonEvent" />
+                    <ref role="3ZVs_2" node="GD738Hsda4" resolve="__cascadedEpsilonEvent" />
                   </node>
                 </node>
               </node>
@@ -1125,10 +1124,8 @@
                 <node concept="26Vqqz" id="KU5KLY1Nfn" role="2C2TGm" />
               </node>
             </node>
-            <node concept="19$8ne" id="GD738Hsdbt" role="27u4cK">
-              <node concept="3ZVu4v" id="GD738HsdbP" role="1_9fRO">
-                <ref role="3ZVs_2" node="GD738Hsda4" resolve="__isEpsilonEvent" />
-              </node>
+            <node concept="3ZVu4v" id="GD738HsdbP" role="27u4cK">
+              <ref role="3ZVs_2" node="GD738Hsda4" resolve="__cascadedEpsilonEvent" />
             </node>
             <node concept="1W57fq" id="25eqerVyFJR" role="lGtFl">
               <node concept="3IZrLx" id="25eqerVyFJU" role="3IZSJc">
@@ -5720,7 +5717,7 @@
         <property role="TrG5h" value="statemachineFunction" />
         <node concept="3XIRFW" id="7kKaL9x5guR" role="3XIRFX">
           <node concept="3XIRlf" id="GD738HqNcd" role="3XIRFZ">
-            <property role="TrG5h" value="__isEpsilonEvent" />
+            <property role="TrG5h" value="__cascadedEpsilonEvent" />
             <node concept="3TlMgk" id="GD738HqNcb" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
@@ -6373,12 +6370,12 @@
                                 <node concept="1_9egQ" id="GD738HqNuj" role="3XIRFZ">
                                   <node concept="3pqW6w" id="25eqerVnyXV" role="1_9egR">
                                     <node concept="3ZVu4v" id="GD738HqNuh" role="3TlMhI">
-                                      <ref role="3ZVs_2" node="GD738HqNcd" resolve="__isEpsilonEvent" />
+                                      <ref role="3ZVs_2" node="GD738HqNcd" resolve="__cascadedEpsilonEvent" />
                                     </node>
-                                    <node concept="3TlMhd" id="GD738HqNxK" role="3TlMhJ">
-                                      <node concept="1W57fq" id="GD738HqNz7" role="lGtFl">
-                                        <node concept="3IZrLx" id="GD738HqNz9" role="3IZSJc">
-                                          <node concept="3clFbS" id="GD738HqNzb" role="2VODD2">
+                                    <node concept="3TlMhK" id="6FqI49Gc481" role="3TlMhJ">
+                                      <node concept="1W57fq" id="6FqI49Gc48I" role="lGtFl">
+                                        <node concept="3IZrLx" id="6FqI49Gc48J" role="3IZSJc">
+                                          <node concept="3clFbS" id="6FqI49Gc48K" role="2VODD2">
                                             <node concept="3clFbF" id="GD738HqNMd" role="3cqZAp">
                                               <node concept="2OqwBi" id="GD738HqSVN" role="3clFbG">
                                                 <node concept="2OqwBi" id="GD738HqRRn" role="2Oq$k0">
@@ -6428,8 +6425,8 @@
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="gft3U" id="GD738Hrzwk" role="UU_$l">
-                                          <node concept="3TlMhK" id="GD738HrzT9" role="gfFT$" />
+                                        <node concept="gft3U" id="6FqI49Gc4Sf" role="UU_$l">
+                                          <node concept="3TlMhd" id="6FqI49Gc4W4" role="gfFT$" />
                                         </node>
                                       </node>
                                     </node>
@@ -7316,7 +7313,7 @@
                                             </node>
                                           </node>
                                           <node concept="2qgKlT" id="6FqI49ECbr2" role="2OqNvi">
-                                            <ref role="37wK5l" to="ktif:25eqerYmQSA" resolve="removeEmptyLineBeforeBreak" />
+                                            <ref role="37wK5l" to="ktif:25eqerYmQSA" resolve="removeEmptyLineBefore" />
                                             <node concept="37vLTw" id="6FqI49ECbz8" role="37wK5m">
                                               <ref role="3cqZAo" node="25eqerXR3l_" resolve="it" />
                                             </node>

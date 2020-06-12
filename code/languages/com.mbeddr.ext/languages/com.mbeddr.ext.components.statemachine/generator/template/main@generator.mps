@@ -465,7 +465,6 @@
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
-      <concept id="3830958861296781575" name="com.mbeddr.core.expressions.structure.NotExpression" flags="ng" index="19$8ne" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
@@ -479,7 +478,7 @@
       </concept>
       <concept id="8860443239512128108" name="com.mbeddr.core.expressions.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
-      <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
+      <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -2435,7 +2434,7 @@
           <property role="TrG5h" value="statemachineExecuteFunction" />
           <node concept="3XIRFW" id="KU5KLY1Y$8" role="2EWMhI">
             <node concept="3XIRlf" id="GD738HsS52" role="3XIRFZ">
-              <property role="TrG5h" value="__isEpsilonEvent" />
+              <property role="TrG5h" value="__cascadedEpsilonEvent" />
               <node concept="3TlMgk" id="GD738HsS50" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
@@ -2483,9 +2482,9 @@
               <node concept="3XIRFW" id="GD738HsS6k" role="27u4cN">
                 <node concept="1_9egQ" id="GD738HsS7s" role="3XIRFZ">
                   <node concept="3pqW6w" id="GD738HsS7B" role="1_9egR">
-                    <node concept="3TlMhK" id="GD738HsS8m" role="3TlMhJ" />
+                    <node concept="3TlMhd" id="6FqI49GfgPb" role="3TlMhJ" />
                     <node concept="3ZVu4v" id="GD738HsS7q" role="3TlMhI">
-                      <ref role="3ZVs_2" node="GD738HsS52" resolve="__isEpsilonEvent" />
+                      <ref role="3ZVs_2" node="GD738HsS52" resolve="__cascadedEpsilonEvent" />
                     </node>
                   </node>
                 </node>
@@ -2504,10 +2503,8 @@
                   <node concept="26Vqqz" id="KU5KLY1Y$h" role="2C2TGm" />
                 </node>
               </node>
-              <node concept="19$8ne" id="GD738HsS6D" role="27u4cK">
-                <node concept="3ZVu4v" id="GD738HsS71" role="1_9fRO">
-                  <ref role="3ZVs_2" node="GD738HsS52" resolve="__isEpsilonEvent" />
-                </node>
+              <node concept="3ZVu4v" id="GD738HsS71" role="27u4cK">
+                <ref role="3ZVs_2" node="GD738HsS52" resolve="__cascadedEpsilonEvent" />
               </node>
               <node concept="1W57fq" id="25eqerVyBm2" role="lGtFl">
                 <node concept="3IZrLx" id="25eqerVyBm5" role="3IZSJc">
