@@ -2516,10 +2516,10 @@
     <ref role="1XX52x" to="v7ag:71UKpntojUs" resolve="InterfaceType" />
     <node concept="3EZMnI" id="71UKpntojUw" role="2wV5jI">
       <node concept="l2Vlx" id="71UKpntojUx" role="2iSdaV" />
-      <node concept="3F0ifn" id="3yeYUb95vzE" role="3EZMnx">
-        <property role="3F0ifm" value="interface" />
+      <node concept="PMmxH" id="19jNIE0HZpj" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-        <node concept="11LMrY" id="3yeYUb95vzF" role="3F10Kt">
+        <node concept="11LMrY" id="19jNIE0HZpM" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
