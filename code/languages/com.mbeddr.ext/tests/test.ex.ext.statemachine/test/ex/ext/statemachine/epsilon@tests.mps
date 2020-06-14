@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="0" />
+    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="9" />
@@ -97,6 +97,9 @@
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
+        <reference id="7699669108373698588" name="state" index="6sK1u" />
+      </concept>
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="6118219496725500902" name="com.mbeddr.ext.statemachines.structure.SmTriggerTarget" flags="ng" index="$QhJh">
         <reference id="6118219496725502924" name="event" index="$QhfV" />
@@ -108,6 +111,7 @@
       <concept id="7851711690674263345" name="com.mbeddr.ext.statemachines.structure.StatemachineType" flags="ng" index="3lBjsv">
         <reference id="7851711690674263346" name="machine" index="3lBjss" />
       </concept>
+      <concept id="2399970992704815523" name="com.mbeddr.ext.statemachines.structure.EpsilonEvent" flags="ng" index="3q9Y_5" />
       <concept id="4709703140582114943" name="com.mbeddr.ext.statemachines.structure.StatemachineConfigItem" flags="ng" index="3yF7LM" />
       <concept id="1270667558200936379" name="com.mbeddr.ext.statemachines.structure.AbstractTransition" flags="ng" index="1zz5ri">
         <reference id="1270667558201034238" name="targetState" index="1zztin" />
@@ -129,7 +133,7 @@
       </concept>
       <concept id="5778488248013533839" name="com.mbeddr.ext.statemachines.structure.State" flags="ng" index="1LFebX" />
       <concept id="5753290798453183908" name="com.mbeddr.ext.statemachines.structure.SmIsInStateTarget" flags="ng" index="3Ox9Vr">
-        <reference id="5753290798453184116" name="state" index="3Ox9Ob" />
+        <child id="1320626622351319641" name="state" index="2gvQMN" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -209,6 +213,9 @@
     <node concept="1LFe83" id="21PlWakTqun" role="N3F5h">
       <property role="TrG5h" value="EpsilonSM" />
       <ref role="1LFebw" node="21PlWakTq$o" resolve="S1" />
+      <node concept="3q9Y_5" id="4WcLiIfQRpQ" role="1_Iowf">
+        <property role="TrG5h" value="epsilon" />
+      </node>
       <node concept="2cfOFI" id="21PlWakTquo" role="1_Iowf">
         <property role="TrG5h" value="E" />
       </node>
@@ -336,7 +343,9 @@
         <node concept="c0Tn9" id="16ykm_LYiZ2" role="3XIRFZ">
           <node concept="2qmXGp" id="602uc2JX$hq" role="c0Tn6">
             <node concept="3Ox9Vr" id="602uc2JX$hp" role="1ESnxz">
-              <ref role="3Ox9Ob" node="21PlWakTq$o" resolve="S1" />
+              <node concept="6sKY_" id="19jNIE2dWUw" role="2gvQMN">
+                <ref role="6sK1u" node="21PlWakTq$o" resolve="S1" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="16ykm_LYiZ_" role="1_9fRO">
               <ref role="3ZVs_2" node="16ykm_LYiVf" resolve="sm" />
@@ -356,7 +365,9 @@
         <node concept="c0Tn9" id="16ykm_LYlD5" role="3XIRFZ">
           <node concept="2qmXGp" id="602uc2JX$gl" role="c0Tn6">
             <node concept="3Ox9Vr" id="602uc2JX$gk" role="1ESnxz">
-              <ref role="3Ox9Ob" node="16ykm_M0_dv" resolve="S4" />
+              <node concept="6sKY_" id="19jNIE2dWUx" role="2gvQMN">
+                <ref role="6sK1u" node="16ykm_M0_dv" resolve="S4" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="16ykm_LYlD7" role="1_9fRO">
               <ref role="3ZVs_2" node="16ykm_LYiVf" resolve="sm" />
@@ -376,7 +387,9 @@
         <node concept="c0Tn9" id="16ykm_M1iSB" role="3XIRFZ">
           <node concept="2qmXGp" id="602uc2JX$gG" role="c0Tn6">
             <node concept="3Ox9Vr" id="602uc2JX$gF" role="1ESnxz">
-              <ref role="3Ox9Ob" node="16ykm_M0_dv" resolve="S4" />
+              <node concept="6sKY_" id="19jNIE2dWUy" role="2gvQMN">
+                <ref role="6sK1u" node="16ykm_M0_dv" resolve="S4" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="16ykm_M1iSD" role="1_9fRO">
               <ref role="3ZVs_2" node="16ykm_LYiVf" resolve="sm" />
@@ -396,7 +409,9 @@
         <node concept="c0Tn9" id="16ykm_M20NU" role="3XIRFZ">
           <node concept="2qmXGp" id="602uc2JX$h3" role="c0Tn6">
             <node concept="3Ox9Vr" id="602uc2JX$h2" role="1ESnxz">
-              <ref role="3Ox9Ob" node="16ykm_M20NL" resolve="S5B" />
+              <node concept="6sKY_" id="19jNIE2dWUz" role="2gvQMN">
+                <ref role="6sK1u" node="16ykm_M20NL" resolve="S5B" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="16ykm_M20NW" role="1_9fRO">
               <ref role="3ZVs_2" node="16ykm_LYiVf" resolve="sm" />
@@ -416,7 +431,9 @@
         <node concept="c0Tn9" id="16ykm_M2J1z" role="3XIRFZ">
           <node concept="2qmXGp" id="602uc2JX$am" role="c0Tn6">
             <node concept="3Ox9Vr" id="602uc2JX$al" role="1ESnxz">
-              <ref role="3Ox9Ob" node="21PlWakTq$o" resolve="S1" />
+              <node concept="6sKY_" id="19jNIE2dWU$" role="2gvQMN">
+                <ref role="6sK1u" node="21PlWakTq$o" resolve="S1" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="16ykm_M2J1_" role="1_9fRO">
               <ref role="3ZVs_2" node="16ykm_LYiVf" resolve="sm" />

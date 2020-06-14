@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -22,6 +23,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -57,6 +61,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -231,16 +236,18 @@
   <node concept="1TIwiD" id="5aaBiRoxDVn">
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="Enum2Int" />
-    <property role="R4oN_" value="cast a enum to an int" />
+    <property role="R4oN_" value="cast an enum to an int" />
     <property role="34LRSv" value="enum2int" />
     <property role="EcuMT" value="5947739078127951575" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <ref role="1TJDcQ" node="19jNIE0NT_m" resolve="Abstract2IntExpression" />
     <node concept="1TJgyj" id="5aaBiRoxDVo" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <property role="IQ2ns" value="5947739078127951576" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="asaX9" id="19jNIE0NVP1" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.udt.structure.Abstract2Int&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="56ytRgsLg$o">
@@ -445,20 +452,24 @@
     <property role="34LRSv" value="int2enum" />
     <property role="R4oN_" value="cast an int to an enum" />
     <property role="EcuMT" value="1430983428344023681" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <ref role="1TJDcQ" node="19jNIE0Q4$a" resolve="AbstractInt2Expression" />
     <node concept="1TJgyj" id="1frRXyHUCOf" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="targetType" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="targetType_old" />
       <property role="IQ2ns" value="1430983428344024335" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      <node concept="asaX9" id="19jNIE0Q4_e" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.udt.structure.AbstractInt2&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="1frRXyHUCFC" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <property role="IQ2ns" value="1430983428344023784" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="asaX9" id="19jNIE0Q7EB" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.udt.structure.AbstractInt2&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="3qdsM6yQbcF">
@@ -507,7 +518,7 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="5aZFu$857pK" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:5aZFu$853$j" resolve="IIndependentIinitExpression" />
+      <ref role="PrY4T" to="c4fa:5aZFu$853$j" resolve="IIndependentInitExpression" />
     </node>
     <node concept="PrWs8" id="53$tGqN_r9d" role="PzmwI">
       <ref role="PrY4T" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
@@ -573,6 +584,39 @@
     <ref role="1TJDcQ" node="2H3Yrqdbnnx" resolve="AbstractBitType" />
     <node concept="PrWs8" id="34uiID1zvlm" role="PzmwI">
       <ref role="PrY4T" to="mj1l:24lM_j3AaK6" resolve="ISigned" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="19jNIE0NT_m">
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="Abstract2IntExpression" />
+    <property role="EcuMT" value="1320626622328445270" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="19jNIE0NVOQ" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="1320626622328454454" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="19jNIE0Q4$a">
+    <property role="EcuMT" value="1320626622329014538" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="AbstractInt2Expression" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="19jNIE0Q4_3" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="targetType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="1320626622329014595" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="19jNIE0Q7Es" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="1320626622329027228" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>

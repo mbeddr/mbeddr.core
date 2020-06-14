@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
-    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="-1" />
+    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="5ef691b5-60ce-4ece-a04e-25e642dfa128" name="com.mbeddr.mpsutil.lantest" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
@@ -110,6 +110,9 @@
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
+        <reference id="7699669108373698588" name="state" index="6sK1u" />
+      </concept>
       <concept id="4643433264760980254" name="com.mbeddr.ext.statemachines.structure.OutEvent" flags="ng" index="2cfOFH" />
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="8927638623067326788" name="com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" flags="ng" index="2h6h52" />
@@ -147,7 +150,7 @@
         <reference id="7851711690674263346" name="machine" index="3lBjss" />
       </concept>
       <concept id="143519404613863014" name="com.mbeddr.ext.statemachines.structure.SmSetStateTarget" flags="ng" index="1rBQh5">
-        <reference id="143519404613863234" name="state" index="1rBQlx" />
+        <child id="5950410542643524495" name="state" index="3O_q_k" />
       </concept>
       <concept id="143519404608467584" name="com.mbeddr.ext.statemachines.structure.SmHasTxFiredTarget" flags="ng" index="1rVt2z">
         <reference id="143519404608486410" name="transition" index="1rVpSD" />
@@ -174,7 +177,7 @@
       </concept>
       <concept id="5778488248013533839" name="com.mbeddr.ext.statemachines.structure.State" flags="ng" index="1LFebX" />
       <concept id="5753290798453183908" name="com.mbeddr.ext.statemachines.structure.SmIsInStateTarget" flags="ng" index="3Ox9Vr">
-        <reference id="5753290798453184116" name="state" index="3Ox9Ob" />
+        <child id="1320626622351319641" name="state" index="2gvQMN" />
       </concept>
       <concept id="5633981208992643165" name="com.mbeddr.ext.statemachines.structure.StatemachineVariableDeclaration" flags="ng" index="1R59hi">
         <property id="4497436839299253152" name="readable" index="Cmx_q" />
@@ -618,7 +621,9 @@
         <node concept="c0Tn9" id="XSZx7Aii4M" role="3XIRFZ">
           <node concept="2qmXGp" id="XSZx7Aii4N" role="c0Tn6">
             <node concept="3Ox9Vr" id="XSZx7Aii4O" role="1ESnxz">
-              <ref role="3Ox9Ob" node="XSZx7Aii4x" resolve="SX" />
+              <node concept="6sKY_" id="4WcLiIgA$Wc" role="2gvQMN">
+                <ref role="6sK1u" node="XSZx7Aii4x" resolve="SX" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="XSZx7Aii4P" role="1_9fRO">
               <ref role="3ZVs_2" node="XSZx7Aii4C" resolve="sm" />
@@ -1698,7 +1703,9 @@
         <node concept="1_9egQ" id="1BP2U101OIv" role="3XIRFZ">
           <node concept="2qmXGp" id="1BP2U101OIw" role="1_9egR">
             <node concept="3Ox9Vr" id="1BP2U101OIx" role="1ESnxz">
-              <ref role="3Ox9Ob" node="1BP2U101OIc" resolve="final" />
+              <node concept="6sKY_" id="4WcLiIgA$Wd" role="2gvQMN">
+                <ref role="6sK1u" node="1BP2U101OIc" resolve="final" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="1BP2U101OIy" role="1_9fRO">
               <ref role="3ZVs_2" node="1BP2U101OIk" resolve="s" />
@@ -1718,7 +1725,9 @@
         <node concept="1_9egQ" id="1BP2U101OIB" role="3XIRFZ">
           <node concept="2qmXGp" id="1BP2U101OIC" role="1_9egR">
             <node concept="1rBQh5" id="1BP2U101OID" role="1ESnxz">
-              <ref role="1rBQlx" node="1BP2U101OIc" resolve="final" />
+              <node concept="6sKY_" id="4WcLiIgA$Wb" role="3O_q_k">
+                <ref role="6sK1u" node="1BP2U101OIc" resolve="final" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="1BP2U101OIE" role="1_9fRO">
               <ref role="3ZVs_2" node="1BP2U101OIk" resolve="s" />

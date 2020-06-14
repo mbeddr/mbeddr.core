@@ -77,8 +77,13 @@
       </concept>
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
-      <concept id="5947739078127951575" name="com.mbeddr.core.udt.structure.Enum2Int" flags="ng" index="2a30fU">
-        <child id="5947739078127951576" name="expr" index="2a30fP" />
+      <concept id="5947739078127951575" name="com.mbeddr.core.udt.structure.Enum2Int" flags="ng" index="2a30fU" />
+      <concept id="1320626622329014538" name="" flags="ng" index="2iySvw">
+        <child id="1320626622329014595" name="" index="2iySuD" />
+        <child id="1320626622329027228" name="" index="2iyVhQ" />
+      </concept>
+      <concept id="1320626622328445270" name="" flags="ng" index="2iB5uW">
+        <child id="1320626622328454454" name="" index="2iB7fs" />
       </concept>
       <concept id="9101132143320200657" name="com.mbeddr.core.udt.structure.SUContent" flags="ng" index="2mccaB">
         <property id="7893263420320494797" name="transparent" index="33gNmf" />
@@ -95,10 +100,7 @@
       </concept>
       <concept id="8685795338482689976" name="com.mbeddr.core.udt.structure.AnonymousStructDeclaration" flags="ng" index="QyKdJ" />
       <concept id="6183845377104662871" name="com.mbeddr.core.udt.structure.UnsignedBitType" flags="ng" index="X$FZc" />
-      <concept id="1430983428344023681" name="com.mbeddr.core.udt.structure.Int2Enum" flags="ng" index="2Ycllp">
-        <child id="1430983428344024335" name="targetType" index="2Yclbn" />
-        <child id="1430983428344023784" name="expr" index="2YclkK" />
-      </concept>
+      <concept id="1430983428344023681" name="com.mbeddr.core.udt.structure.Int2Enum" flags="ng" index="2Ycllp" />
       <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
       <concept id="6394819151180597807" name="com.mbeddr.core.udt.structure.StructDeclaration" flags="ng" index="1sgJKc" />
       <concept id="6394819151180597816" name="com.mbeddr.core.udt.structure.StructType" flags="ng" index="1sgJKr">
@@ -1448,7 +1450,7 @@
               <ref role="3ZVs_2" node="1gzTnhAst5$" resolve="i8" />
             </node>
             <node concept="2a30fU" id="16hhYved4dY" role="3TlMhJ">
-              <node concept="1AkAhK" id="16hhYved71t" role="2a30fP">
+              <node concept="1AkAhK" id="16hhYved71t" role="2iB7fs">
                 <ref role="1AkAhZ" node="7D99css6UeQ" resolve="RED" />
               </node>
             </node>
@@ -1460,7 +1462,7 @@
               <ref role="3ZVs_2" node="29$vwU0Hf$f" resolve="i8_2" />
             </node>
             <node concept="2a30fU" id="29$vwU0Hf$o" role="3TlMhJ">
-              <node concept="1AkAhK" id="29$vwU0Hf$q" role="2a30fP">
+              <node concept="1AkAhK" id="29$vwU0Hf$q" role="2iB7fs">
                 <ref role="1AkAhZ" node="7D99css6Uf9" resolve="GREEN" />
               </node>
             </node>
@@ -1479,7 +1481,7 @@
         <node concept="c0Tn9" id="pfSS$jBRq4" role="3XIRFZ">
           <node concept="3TlM44" id="pfSS$jBRq7" role="c0Tn6">
             <node concept="2a30fU" id="29$vwU0Hf$r" role="3TlMhI">
-              <node concept="3ZVu4v" id="29$vwU0Hf$t" role="2a30fP">
+              <node concept="3ZVu4v" id="29$vwU0Hf$t" role="2iB7fs">
                 <ref role="3ZVs_2" node="7D99css6V46" resolve="c" />
               </node>
             </node>
@@ -1494,7 +1496,7 @@
               <property role="2hmy$m" value="1" />
             </node>
             <node concept="2a30fU" id="29$vwU0Hf$x" role="3TlMhI">
-              <node concept="3ZVu4v" id="29$vwU0Hf$y" role="2a30fP">
+              <node concept="3ZVu4v" id="29$vwU0Hf$y" role="2iB7fs">
                 <ref role="3ZVs_2" node="7D99css6V46" resolve="c" />
               </node>
             </node>
@@ -1538,7 +1540,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="2a30fU" id="1frRXyHX6UO" role="3XIe9u">
-            <node concept="1AkAhK" id="1frRXyHXMXZ" role="2a30fP">
+            <node concept="1AkAhK" id="1frRXyHXMXZ" role="2iB7fs">
               <ref role="1AkAhZ" node="7D99css6Uf9" resolve="GREEN" />
             </node>
           </node>
@@ -1559,10 +1561,10 @@
             <ref role="1AkAi1" node="7D99css6UeP" resolve="Color" />
           </node>
           <node concept="2Ycllp" id="1frRXyHXNyb" role="3XIe9u">
-            <node concept="1AkAi2" id="1frRXyHXNz0" role="2Yclbn">
+            <node concept="1AkAi2" id="1frRXyHXNz0" role="2iySuD">
               <ref role="1AkAi1" node="7D99css6UeP" resolve="Color" />
             </node>
-            <node concept="3ZVu4v" id="1frRXyHXNzC" role="2YclkK">
+            <node concept="3ZVu4v" id="1frRXyHXNzC" role="2iyVhQ">
               <ref role="3ZVs_2" node="1frRXyHX6Rf" resolve="greenIndex" />
             </node>
           </node>

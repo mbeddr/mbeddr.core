@@ -25,7 +25,7 @@
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2329,7 +2329,7 @@
                                           </node>
                                         </node>
                                         <node concept="2pIpSj" id="7Lj87Pn1lXK" role="2pJxcM">
-                                          <ref role="2pIpSl" to="yq40:5sJgLFR$y$3" resolve="index" />
+                                          <ref role="2pIpSl" to="yq40:5sJgLFR$y$3" resolve="indexExpr" />
                                           <node concept="2pJPED" id="7Lj87Pn1lXL" role="28nt2d">
                                             <ref role="2pJxaS" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                                             <node concept="2pJxcG" id="7Lj87Pn1lXM" role="2pJxcM">
