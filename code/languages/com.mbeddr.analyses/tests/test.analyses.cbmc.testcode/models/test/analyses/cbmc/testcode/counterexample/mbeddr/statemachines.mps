@@ -195,6 +195,7 @@
       <concept id="7851711690674263345" name="com.mbeddr.ext.statemachines.structure.StatemachineType" flags="ng" index="3lBjsv">
         <reference id="7851711690674263346" name="machine" index="3lBjss" />
       </concept>
+      <concept id="2399970992704815523" name="com.mbeddr.ext.statemachines.structure.EpsilonEvent" flags="ng" index="3q9Y_5" />
       <concept id="5338908363445903987" name="com.mbeddr.ext.statemachines.structure.MacroRef" flags="ng" index="3xArUH">
         <reference id="5338908363445903988" name="macro" index="3xArUE" />
       </concept>
@@ -499,6 +500,9 @@
     <node concept="1LFe83" id="21PlWakTqun" role="N3F5h">
       <property role="TrG5h" value="SM2" />
       <ref role="1LFebw" node="21PlWakTq$o" resolve="S1" />
+      <node concept="3q9Y_5" id="7qbXct67x8Y" role="1_Iowf">
+        <property role="TrG5h" value="epsilon" />
+      </node>
       <node concept="2cfOFI" id="21PlWakTquo" role="1_Iowf">
         <property role="TrG5h" value="E" />
       </node>
