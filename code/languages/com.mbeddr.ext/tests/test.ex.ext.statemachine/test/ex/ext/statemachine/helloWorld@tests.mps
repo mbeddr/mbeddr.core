@@ -310,19 +310,6 @@
           </node>
         </node>
       </node>
-      <node concept="2cfOFH" id="5V1fuArwc4l" role="1_Iowf">
-        <property role="TrG5h" value="outEvent" />
-      </node>
-      <node concept="2cfOFH" id="6lCup2QxAPU" role="1_Iowf">
-        <property role="TrG5h" value="outEventWithParameters" />
-        <node concept="349diW" id="6lCup2QxAPV" role="349dh9">
-          <property role="TrG5h" value="param" />
-          <node concept="26Vqph" id="6lCup2QxAPW" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-      </node>
       <node concept="1LFebX" id="5V1fuArwc2X" role="1_Iowf">
         <property role="TrG5h" value="red" />
         <node concept="OCJnL" id="5V1fuArwc3h" role="1KoBSX">
@@ -404,15 +391,6 @@
         <node concept="1LFeb9" id="5V1fuArwc33" role="1KoBSX">
           <ref role="1zztin" node="5V1fuArwc2X" resolve="red" />
           <node concept="3XIRFW" id="5V1fuArwc34" role="1zz7TA">
-            <node concept="_lVzq" id="6lCup2QwZq2" role="3XIRFZ">
-              <ref role="_lVy$" node="5V1fuArwc4l" resolve="outEvent" />
-            </node>
-            <node concept="_lVzq" id="6lCup2QxAPY" role="3XIRFZ">
-              <ref role="_lVy$" node="6lCup2QxAPU" resolve="outEventWithParameters" />
-              <node concept="349IfM" id="6lCup2QxAPZ" role="_lVyA">
-                <ref role="349IfP" node="5V1fuArwc39" resolve="anIntVar" />
-              </node>
-            </node>
             <node concept="1_9egQ" id="6lCup2Qx9ip" role="3XIRFZ">
               <node concept="3pqW6w" id="6lCup2Qx9it" role="1_9egR">
                 <node concept="3TlMh9" id="6lCup2Qx9iw" role="3TlMhJ">
