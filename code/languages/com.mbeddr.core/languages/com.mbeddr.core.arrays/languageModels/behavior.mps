@@ -5268,6 +5268,36 @@
       <node concept="17QB3L" id="4XMHJL4II9N" role="3clF45" />
       <node concept="3Tm1VV" id="4XMHJL4II9O" role="1B3o_S" />
     </node>
+    <node concept="13i0hz" id="1RHxyfFQ3vj" role="13h7CS">
+      <property role="TrG5h" value="dependentModuleContent" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:1tHnH2eLwg4" resolve="dependentModuleContents" />
+      <node concept="3Tm1VV" id="1RHxyfFQ3vk" role="1B3o_S" />
+      <node concept="3clFbS" id="1RHxyfFQ3vl" role="3clF47">
+        <node concept="3clFbF" id="1RHxyfFQ3vm" role="3cqZAp">
+          <node concept="2OqwBi" id="1RHxyfFQ3vn" role="3clFbG">
+            <node concept="2OqwBi" id="1RHxyfFQ3vo" role="2Oq$k0">
+              <node concept="13iPFW" id="1RHxyfFQ3vp" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1RHxyfFQ3vq" role="2OqNvi">
+                <ref role="3Tt5mk" to="yq40:4VxFbWczlbe" resolve="sizeExpr" />
+              </node>
+            </node>
+            <node concept="2Rf3mk" id="1RHxyfFQ3vr" role="2OqNvi">
+              <node concept="1xMEDy" id="1RHxyfFQ3vs" role="1xVPHs">
+                <node concept="chp4Y" id="1RHxyfFQ3vt" role="ri$Ld">
+                  <ref role="cht4Q" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
+                </node>
+              </node>
+              <node concept="1xIGOp" id="1RHxyfFQ3vu" role="1xVPHs" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="1RHxyfFQ3vv" role="3clF45">
+        <ref role="2I9WkF" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
+      </node>
+    </node>
     <node concept="13hLZK" id="2dQ321vzsSI" role="13h7CW">
       <node concept="3clFbS" id="2dQ321vzsSJ" role="2VODD2" />
     </node>
