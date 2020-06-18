@@ -1095,25 +1095,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="24KZuFtFzsk" role="3cqZAp">
-          <node concept="2OqwBi" id="24KZuFtFzsh" role="3clFbG">
-            <node concept="10M0yZ" id="24KZuFtFzsi" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="24KZuFtFzsj" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="3cpWs3" id="24KZuFtF$Fy" role="37wK5m">
-                <node concept="37vLTw" id="24KZuFtF$MG" role="3uHU7w">
-                  <ref role="3cqZAo" node="24KZuFtDQRo" resolve="str" />
-                </node>
-                <node concept="Xl_RD" id="24KZuFtFz_Z" role="3uHU7B">
-                  <property role="Xl_RC" value="str: " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="4mEgncq3_$C" role="3cqZAp">
           <node concept="37vLTI" id="4mEgncq3ArH" role="3clFbG">
             <node concept="3cpWs3" id="4mEgncq3DyG" role="37vLTx">
@@ -1195,25 +1176,6 @@
                           <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
                         </node>
                       </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="24KZuFtF$XV" role="3cqZAp">
-              <node concept="2OqwBi" id="24KZuFtF$XW" role="3clFbG">
-                <node concept="10M0yZ" id="24KZuFtF$XX" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                </node>
-                <node concept="liA8E" id="24KZuFtF$XY" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                  <node concept="3cpWs3" id="24KZuFtF$XZ" role="37wK5m">
-                    <node concept="37vLTw" id="24KZuFtF_Lh" role="3uHU7w">
-                      <ref role="3cqZAo" node="24KZuFtFu4n" resolve="stream" />
-                    </node>
-                    <node concept="Xl_RD" id="24KZuFtF$Y1" role="3uHU7B">
-                      <property role="Xl_RC" value="stream: " />
                     </node>
                   </node>
                 </node>
@@ -1583,35 +1545,6 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3clFbF" id="24KZuFtGd1E" role="3cqZAp">
-                            <node concept="2OqwBi" id="24KZuFtGd1B" role="3clFbG">
-                              <node concept="10M0yZ" id="24KZuFtGd1C" role="2Oq$k0">
-                                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                              </node>
-                              <node concept="liA8E" id="24KZuFtGd1D" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                                <node concept="3cpWs3" id="24KZuFtGrhe" role="37wK5m">
-                                  <node concept="Xl_RD" id="24KZuFtGsq2" role="3uHU7w">
-                                    <property role="Xl_RC" value="\&quot;" />
-                                  </node>
-                                  <node concept="3cpWs3" id="24KZuFtGkQM" role="3uHU7B">
-                                    <node concept="Xl_RD" id="24KZuFtGdFo" role="3uHU7B">
-                                      <property role="Xl_RC" value="text: \&quot;" />
-                                    </node>
-                                    <node concept="2OqwBi" id="24KZuFtGog4" role="3uHU7w">
-                                      <node concept="37vLTw" id="24KZuFtGnv8" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="24KZuFtFL99" resolve="text" />
-                                      </node>
-                                      <node concept="liA8E" id="24KZuFtGpeA" role="2OqNvi">
-                                        <ref role="37wK5l" to="lhjl:~Node.getNodeValue()" resolve="getNodeValue" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
                           <node concept="3cpWs6" id="24KZuFtFHF8" role="3cqZAp">
                             <node concept="3K4zz7" id="24KZuFtHFVr" role="3cqZAk">
                               <node concept="10Nm6u" id="24KZuFtHGFy" role="3K4E3e" />
@@ -1660,20 +1593,6 @@
                           <ref role="1PxDUh" to="lhjl:~Node" resolve="Node" />
                         </node>
                         <node concept="3clFbS" id="24KZuFtFHFc" role="3Kbo56">
-                          <node concept="3clFbF" id="24KZuFtG9Yf" role="3cqZAp">
-                            <node concept="2OqwBi" id="24KZuFtG9Yc" role="3clFbG">
-                              <node concept="10M0yZ" id="24KZuFtG9Yd" role="2Oq$k0">
-                                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                              </node>
-                              <node concept="liA8E" id="24KZuFtG9Ye" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                                <node concept="Xl_RD" id="24KZuFtGaCD" role="37wK5m">
-                                  <property role="Xl_RC" value="element" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
                           <node concept="3cpWs6" id="24KZuFtFHFd" role="3cqZAp">
                             <node concept="1rXfSq" id="24KZuFtFHFe" role="3cqZAk">
                               <ref role="37wK5l" node="24KZuFtE6s9" resolve="element2Mps" />
@@ -1694,10 +1613,6 @@
                       <node concept="3clFbS" id="24KZuFtFS72" role="3Kb1Dw">
                         <node concept="3clFbF" id="24KZuFtG7mI" role="3cqZAp">
                           <node concept="2OqwBi" id="24KZuFtG7mF" role="3clFbG">
-                            <node concept="10M0yZ" id="24KZuFtG7mG" role="2Oq$k0">
-                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                            </node>
                             <node concept="liA8E" id="24KZuFtG7mH" role="2OqNvi">
                               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                               <node concept="3cpWs3" id="24KZuFtG7Zb" role="37wK5m">
@@ -1710,9 +1625,13 @@
                                   </node>
                                 </node>
                                 <node concept="Xl_RD" id="24KZuFtG7Zf" role="3uHU7B">
-                                  <property role="Xl_RC" value="don't know how to handle type: " />
+                                  <property role="Xl_RC" value="don't know how to handle XML node type: " />
                                 </node>
                               </node>
+                            </node>
+                            <node concept="10M0yZ" id="76PZ6lt7irz" role="2Oq$k0">
+                              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                             </node>
                           </node>
                         </node>
