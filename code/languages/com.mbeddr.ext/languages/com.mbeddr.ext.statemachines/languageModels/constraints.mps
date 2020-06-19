@@ -86,6 +86,9 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -482,20 +485,46 @@
             <node concept="2YIFZM" id="5CkU_dHitfw" role="3clFbG">
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
               <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
-              <node concept="2OqwBi" id="5CkU_dHitfx" role="37wK5m">
-                <node concept="2OqwBi" id="5CkU_dHitfy" role="2Oq$k0">
-                  <node concept="2rP1CM" id="5CkU_dHitfz" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="5CkU_dHitf$" role="2OqNvi">
-                    <node concept="1xMEDy" id="5CkU_dHitf_" role="1xVPHs">
-                      <node concept="chp4Y" id="5CkU_dHitfA" role="ri$Ld">
-                        <ref role="cht4Q" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
+              <node concept="2OqwBi" id="5yVrpGYxel0" role="37wK5m">
+                <node concept="2OqwBi" id="5CkU_dHitfx" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5CkU_dHitfy" role="2Oq$k0">
+                    <node concept="2rP1CM" id="5CkU_dHitfz" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="5CkU_dHitf$" role="2OqNvi">
+                      <node concept="1xMEDy" id="5CkU_dHitf_" role="1xVPHs">
+                        <node concept="chp4Y" id="5CkU_dHitfA" role="ri$Ld">
+                          <ref role="cht4Q" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
+                        </node>
                       </node>
+                      <node concept="1xIGOp" id="5CkU_dHitfB" role="1xVPHs" />
                     </node>
-                    <node concept="1xIGOp" id="5CkU_dHitfB" role="1xVPHs" />
+                  </node>
+                  <node concept="2qgKlT" id="5CkU_dHitfC" role="2OqNvi">
+                    <ref role="37wK5l" to="ktif:6MWlM4926ut" resolve="inEvents" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="5CkU_dHitfC" role="2OqNvi">
-                  <ref role="37wK5l" to="ktif:6MWlM4926ut" resolve="inEvents" />
+                <node concept="3zZkjj" id="5yVrpGYvGpX" role="2OqNvi">
+                  <node concept="1bVj0M" id="5yVrpGYvGpZ" role="23t8la">
+                    <node concept="3clFbS" id="5yVrpGYvGq0" role="1bW5cS">
+                      <node concept="3clFbF" id="5yVrpGYvGuD" role="3cqZAp">
+                        <node concept="3fqX7Q" id="5yVrpGYvIdT" role="3clFbG">
+                          <node concept="2OqwBi" id="5yVrpGYvIdV" role="3fr31v">
+                            <node concept="37vLTw" id="5yVrpGYvIdW" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5yVrpGYvGq1" resolve="it" />
+                            </node>
+                            <node concept="1mIQ4w" id="5yVrpGYvIdX" role="2OqNvi">
+                              <node concept="chp4Y" id="5yVrpGYvIdY" role="cj9EA">
+                                <ref role="cht4Q" to="clqz:25eqerVqo6z" resolve="EpsilonEvent" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="5yVrpGYvGq1" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="5yVrpGYvGq2" role="1tU5fm" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -778,10 +807,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="41KMvfcg_gj">
-    <property role="3GE5qa" value="machine.states.transitions" />
-    <ref role="1M2myG" to="clqz:50Lk78xBraV" resolve="Transition" />
   </node>
   <node concept="1M2fIO" id="65XyadYNsBe">
     <property role="3GE5qa" value="machine" />
