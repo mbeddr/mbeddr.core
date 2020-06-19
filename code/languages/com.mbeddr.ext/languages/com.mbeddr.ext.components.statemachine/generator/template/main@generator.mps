@@ -31,11 +31,11 @@
     <import index="byxr" ref="r:0408ee73-1f2e-4dd0-8c67-48f28bb6adce(com.mbeddr.ext.statemachines.utils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
-    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -1724,24 +1724,25 @@
                                       <ref role="2pJxaS" to="c4fa:3kEjc_WJ2qA" resolve="ArbitraryTextExpression" />
                                       <node concept="2pIpSj" id="5yVrpGX9jxs" role="2pJxcM">
                                         <ref role="2pIpSl" to="c4fa:5soFcYDHzQp" resolve="type" />
-                                        <node concept="2pJPED" id="5yVrpGX9jxt" role="28nt2d">
-                                          <ref role="2pJxaS" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
-                                          <node concept="2pIpSj" id="5yVrpGX9jxu" role="2pJxcM">
-                                            <ref role="2pIpSl" to="clqz:6NQSyUTqXkM" resolve="machine" />
-                                            <node concept="36biLy" id="5yVrpGX9jxv" role="28nt2d">
-                                              <node concept="2OqwBi" id="5yVrpGX9l1$" role="36biLW">
-                                                <node concept="2OqwBi" id="5yVrpGX9jxw" role="2Oq$k0">
-                                                  <node concept="37vLTw" id="5yVrpGX9jRF" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="5yVrpGX9hmA" resolve="triggerSelfStatement" />
-                                                  </node>
-                                                  <node concept="3TrEf2" id="5yVrpGX9kCa" role="2OqNvi">
-                                                    <ref role="3Tt5mk" to="clqz:1nOZGI8BYAb" resolve="event" />
-                                                  </node>
-                                                </node>
-                                                <node concept="2Xjw5R" id="5yVrpGX9lJ2" role="2OqNvi">
-                                                  <node concept="1xMEDy" id="5yVrpGX9lJ4" role="1xVPHs">
-                                                    <node concept="chp4Y" id="5yVrpGX9m3_" role="ri$Ld">
-                                                      <ref role="cht4Q" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
+                                        <node concept="2pJPED" id="5yVrpGY_k1O" role="28nt2d">
+                                          <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
+                                          <node concept="2pIpSj" id="5yVrpGY_k1P" role="2pJxcM">
+                                            <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
+                                            <node concept="2pJPED" id="5yVrpGY_k1Q" role="28nt2d">
+                                              <ref role="2pJxaS" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
+                                              <node concept="2pIpSj" id="5yVrpGY_k1R" role="2pJxcM">
+                                                <ref role="2pIpSl" to="clqz:6NQSyUTqXkM" resolve="machine" />
+                                                <node concept="36biLy" id="5yVrpGY_k1S" role="28nt2d">
+                                                  <node concept="2OqwBi" id="5yVrpGY_k1T" role="36biLW">
+                                                    <node concept="37vLTw" id="5yVrpGY_kp2" role="2Oq$k0">
+                                                      <ref role="3cqZAo" node="5yVrpGX9hmA" resolve="triggerSelfStatement" />
+                                                    </node>
+                                                    <node concept="2Xjw5R" id="5yVrpGY_k1V" role="2OqNvi">
+                                                      <node concept="1xMEDy" id="5yVrpGY_k1W" role="1xVPHs">
+                                                        <node concept="chp4Y" id="5yVrpGY_k1X" role="ri$Ld">
+                                                          <ref role="cht4Q" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
+                                                        </node>
+                                                      </node>
                                                     </node>
                                                   </node>
                                                 </node>
