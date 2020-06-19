@@ -55,9 +55,6 @@
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
       </concept>
-      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
-        <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
@@ -250,9 +247,6 @@
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
-      </concept>
-      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
-        <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
@@ -2306,6 +2300,12 @@
                       <node concept="2pJPEk" id="1ou7643XkW0" role="33vP2m">
                         <node concept="2pJPED" id="1ou7643Xl9H" role="2pJPEn">
                           <ref role="2pJxaS" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+                          <node concept="2pJxcG" id="5yVrpGZNScF" role="2pJxcM">
+                            <ref role="2pJxcJ" to="c4fa:41KMvfcgiZ1" resolve="isInvisible" />
+                            <node concept="3clFbT" id="5yVrpGZNSdP" role="28ntcv">
+                              <property role="3clFbU" value="true" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -2471,10 +2471,14 @@
                 <node concept="3Tqbb2" id="4U0cQfIZbO4" role="1tU5fm">
                   <ref role="ehGHo" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
                 </node>
-                <node concept="2ShNRf" id="4U0cQfIZbO5" role="33vP2m">
-                  <node concept="3zrR0B" id="4U0cQfIZbO6" role="2ShVmc">
-                    <node concept="3Tqbb2" id="4U0cQfIZbO7" role="3zrR0E">
-                      <ref role="ehGHo" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+                <node concept="2pJPEk" id="5yVrpGZMN4T" role="33vP2m">
+                  <node concept="2pJPED" id="5yVrpGZMNm0" role="2pJPEn">
+                    <ref role="2pJxaS" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+                    <node concept="2pJxcG" id="5yVrpGZMNxc" role="2pJxcM">
+                      <ref role="2pJxcJ" to="c4fa:41KMvfcgiZ1" resolve="isInvisible" />
+                      <node concept="3clFbT" id="5yVrpGZMNGs" role="28ntcv">
+                        <property role="3clFbU" value="true" />
+                      </node>
                     </node>
                   </node>
                 </node>
