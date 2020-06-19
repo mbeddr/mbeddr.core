@@ -1047,5 +1047,13 @@
     <property role="R4oN_" value="cast an int to a state" />
     <ref role="1TJDcQ" to="clbe:19jNIE0Q4$a" resolve="AbstractInt2Expression" />
   </node>
+  <node concept="1TIwiD" id="1RHxyfI4eFT">
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="SmEnterStateTarget" />
+    <property role="34LRSv" value="enterState" />
+    <property role="R4oN_" value="lets the state machine enter a specific state" />
+    <property role="EcuMT" value="2156527285456399097" />
+    <ref role="1TJDcQ" node="7XSydqoCpA" resolve="SmSetStateTarget" />
+  </node>
 </model>
 

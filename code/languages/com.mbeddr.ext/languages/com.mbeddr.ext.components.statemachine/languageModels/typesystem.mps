@@ -32,14 +32,12 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -104,16 +102,7 @@
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
-        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
-      </concept>
-      <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
-        <reference id="1216388525179" name="quickFix" index="QpYPw" />
-        <child id="1210784493590" name="actualArgument" index="3Coj4f" />
-      </concept>
-      <concept id="1210784384552" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntentionArgument" flags="ng" index="3CnSsL">
-        <reference id="1216386999476" name="quickFixArgument" index="QkamJ" />
-        <child id="1210784642750" name="value" index="3CoRuB" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -720,76 +709,6 @@
     <node concept="1YaCAy" id="6xLvLBZZvHI" role="1YuTPh">
       <property role="TrG5h" value="requiredOperationBinding" />
       <ref role="1YaFvo" to="8yj6:6xLvLBZYUAD" resolve="RequiredOperationBinding" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="4WcLiIfJsgL">
-    <property role="TrG5h" value="check_InitialStateEntryAction" />
-    <node concept="3clFbS" id="4WcLiIfJsgM" role="18ibNy">
-      <node concept="3clFbJ" id="4WcLiIfJshi" role="3cqZAp">
-        <node concept="1Wc70l" id="4WcLiIfJwvi" role="3clFbw">
-          <node concept="3y3z36" id="4WcLiIfJxLU" role="3uHU7w">
-            <node concept="10Nm6u" id="4WcLiIfJxZd" role="3uHU7w" />
-            <node concept="2OqwBi" id="4WcLiIfJwJI" role="3uHU7B">
-              <node concept="1YBJjd" id="4WcLiIfJwBF" role="2Oq$k0">
-                <ref role="1YBMHb" node="4WcLiIfJsgO" resolve="abstractState" />
-              </node>
-              <node concept="2qgKlT" id="4WcLiIfJxho" role="2OqNvi">
-                <ref role="37wK5l" to="ktif:4oSz90jlvmt" resolve="entryAction" />
-              </node>
-            </node>
-          </node>
-          <node concept="17R0WA" id="4WcLiIfJtiS" role="3uHU7B">
-            <node concept="2OqwBi" id="4WcLiIfJuFT" role="3uHU7B">
-              <node concept="2OqwBi" id="4WcLiIfJtC1" role="2Oq$k0">
-                <node concept="1YBJjd" id="4WcLiIfJtjs" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4WcLiIfJsgO" resolve="abstractState" />
-                </node>
-                <node concept="2Xjw5R" id="4WcLiIfJuec" role="2OqNvi">
-                  <node concept="1xMEDy" id="4WcLiIfJuee" role="1xVPHs">
-                    <node concept="chp4Y" id="4WcLiIfJueU" role="ri$Ld">
-                      <ref role="cht4Q" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3TrEf2" id="4WcLiIfJvyD" role="2OqNvi">
-                <ref role="3Tt5mk" to="clqz:50Lk78xBrai" resolve="initial" />
-              </node>
-            </node>
-            <node concept="1YBJjd" id="4WcLiIfJshu" role="3uHU7w">
-              <ref role="1YBMHb" node="4WcLiIfJsgO" resolve="abstractState" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="4WcLiIfJshk" role="3clFbx">
-          <node concept="2MkqsV" id="4WcLiIfJy03" role="3cqZAp">
-            <node concept="Xl_RD" id="4WcLiIfJy0f" role="2MkJ7o">
-              <property role="Xl_RC" value="initial state of state machines in components is not allowed to have any entry action" />
-            </node>
-            <node concept="2OqwBi" id="4WcLiIfJIZL" role="1urrMF">
-              <node concept="1YBJjd" id="4WcLiIfJy7Q" role="2Oq$k0">
-                <ref role="1YBMHb" node="4WcLiIfJsgO" resolve="abstractState" />
-              </node>
-              <node concept="2qgKlT" id="4WcLiIfJJIZ" role="2OqNvi">
-                <ref role="37wK5l" to="ktif:4oSz90jlvmt" resolve="entryAction" />
-              </node>
-            </node>
-            <node concept="3Cnw8n" id="4WcLiIfJTu4" role="1urrFz">
-              <ref role="QpYPw" node="4WcLiIfJRgU" resolve="fix_InitialStateEntryAction" />
-              <node concept="3CnSsL" id="4WcLiIfJTGx" role="3Coj4f">
-                <ref role="QkamJ" node="4WcLiIfJRhf" resolve="abstractState" />
-                <node concept="1YBJjd" id="4WcLiIfJTGI" role="3CoRuB">
-                  <ref role="1YBMHb" node="4WcLiIfJsgO" resolve="abstractState" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="4WcLiIfJsgO" role="1YuTPh">
-      <property role="TrG5h" value="abstractState" />
-      <ref role="1YaFvo" to="clqz:3FSHg1aADay" resolve="AbstractState" />
     </node>
   </node>
   <node concept="Q5z_Y" id="4WcLiIfJRgU">

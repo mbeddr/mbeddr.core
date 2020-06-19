@@ -18,6 +18,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
@@ -93,7 +94,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
@@ -852,9 +852,8 @@
     <node concept="9S07l" id="79i$vAY7be3" role="9Vyp8">
       <node concept="3clFbS" id="79i$vAY7be4" role="2VODD2">
         <node concept="3cpWs6" id="79i$vAY7be5" role="3cqZAp">
-          <node concept="3y3z36" id="79i$vAY7be6" role="3cqZAk">
-            <node concept="10Nm6u" id="79i$vAY7be7" role="3uHU7w" />
-            <node concept="2OqwBi" id="79i$vAY7be8" role="3uHU7B">
+          <node concept="2OqwBi" id="d8fEub$3Dz" role="3cqZAk">
+            <node concept="2OqwBi" id="79i$vAY7be8" role="2Oq$k0">
               <node concept="nLn13" id="79i$vAY7be9" role="2Oq$k0" />
               <node concept="2Xjw5R" id="79i$vAY7bea" role="2OqNvi">
                 <node concept="1xMEDy" id="79i$vAY7beb" role="1xVPHs">
@@ -864,6 +863,7 @@
                 </node>
               </node>
             </node>
+            <node concept="3x8VRR" id="d8fEub$4oK" role="2OqNvi" />
           </node>
         </node>
       </node>
