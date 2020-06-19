@@ -1734,8 +1734,13 @@
                                                 <ref role="2pIpSl" to="clqz:6NQSyUTqXkM" resolve="machine" />
                                                 <node concept="36biLy" id="5yVrpGY_k1S" role="28nt2d">
                                                   <node concept="2OqwBi" id="5yVrpGY_k1T" role="36biLW">
-                                                    <node concept="37vLTw" id="5yVrpGY_kp2" role="2Oq$k0">
-                                                      <ref role="3cqZAo" node="5yVrpGX9hmA" resolve="triggerSelfStatement" />
+                                                    <node concept="2OqwBi" id="5yVrpGYKfpR" role="2Oq$k0">
+                                                      <node concept="37vLTw" id="5yVrpGY_kp2" role="2Oq$k0">
+                                                        <ref role="3cqZAo" node="5yVrpGX9hmA" resolve="triggerSelfStatement" />
+                                                      </node>
+                                                      <node concept="3TrEf2" id="5yVrpGYKgc5" role="2OqNvi">
+                                                        <ref role="3Tt5mk" to="clqz:1nOZGI8BYAb" resolve="event" />
+                                                      </node>
                                                     </node>
                                                     <node concept="2Xjw5R" id="5yVrpGY_k1V" role="2OqNvi">
                                                       <node concept="1xMEDy" id="5yVrpGY_k1W" role="1xVPHs">
