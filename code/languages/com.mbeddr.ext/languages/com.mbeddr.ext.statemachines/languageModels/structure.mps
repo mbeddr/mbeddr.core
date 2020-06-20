@@ -1000,7 +1000,7 @@
     <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="StateRef" />
     <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <ref role="1TJDcQ" node="4c3N3BPrna8" resolve="AbstractStateRef" />
     <node concept="PrWs8" id="6FqI49GErwp" role="PzmwI">
       <ref role="PrY4T" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
     </node>
@@ -1066,6 +1066,24 @@
     <property role="TrG5h" value="InitializingState" />
     <property role="34LRSv" value="__initializing" />
     <ref role="1TJDcQ" node="3FSHg1aADay" resolve="AbstractState" />
+  </node>
+  <node concept="1TIwiD" id="4c3N3BPqDzz">
+    <property role="EcuMT" value="4828927774773909731" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="TransitionTargetStateRef" />
+    <property role="34LRSv" value="target state" />
+    <ref role="1TJDcQ" node="4c3N3BPrna8" resolve="AbstractStateRef" />
+  </node>
+  <node concept="1TIwiD" id="4c3N3BPrna8">
+    <property role="EcuMT" value="4828927774774096520" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="AbstractStateRef" />
+    <property role="R4oN_" value="--" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="4c3N3BPrna9" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
+    </node>
   </node>
 </model>
 

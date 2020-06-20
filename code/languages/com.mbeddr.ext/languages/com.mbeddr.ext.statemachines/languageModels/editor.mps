@@ -7005,5 +7005,14 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4c3N3BPqInU">
+    <property role="3GE5qa" value="c-integration" />
+    <ref role="1XX52x" to="clqz:4c3N3BPqDzz" resolve="TransitionTargetStateRef" />
+    <node concept="PMmxH" id="4c3N3BPqIo0" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <node concept="VPxyj" id="4c3N3BPqIo3" role="3F10Kt" />
+    </node>
+  </node>
 </model>
 

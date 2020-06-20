@@ -1888,5 +1888,28 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4c3N3BPu3Dv">
+    <property role="3GE5qa" value="c-integration" />
+    <ref role="1M2myG" to="clqz:4c3N3BPqDzz" resolve="TransitionTargetStateRef" />
+    <node concept="9S07l" id="4c3N3BPu3Dw" role="9Vyp8">
+      <node concept="3clFbS" id="4c3N3BPu3Dx" role="2VODD2">
+        <node concept="3clFbF" id="4c3N3BPu3Ht" role="3cqZAp">
+          <node concept="2OqwBi" id="4c3N3BPu4nu" role="3clFbG">
+            <node concept="2OqwBi" id="4c3N3BPu3Qx" role="2Oq$k0">
+              <node concept="nLn13" id="4c3N3BPu3Hs" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4c3N3BPu3Zc" role="2OqNvi">
+                <node concept="1xMEDy" id="4c3N3BPu3Ze" role="1xVPHs">
+                  <node concept="chp4Y" id="4c3N3BPu41v" role="ri$Ld">
+                    <ref role="cht4Q" to="clqz:16ykm_MbwuV" resolve="AbstractTransition" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="4c3N3BPu4YZ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
