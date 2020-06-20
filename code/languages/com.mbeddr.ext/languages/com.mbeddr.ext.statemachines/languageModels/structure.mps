@@ -888,6 +888,11 @@
     <property role="R4oN_" value="initialize the state machine" />
     <property role="EcuMT" value="6118219496719522740" />
     <ref role="1TJDcQ" node="5jCi3tJPVRg" resolve="StatemachineTarget" />
+    <node concept="1TJgyi" id="4c3N3BOqdMu" role="1TKVEl">
+      <property role="IQ2nx" value="4828927774757018782" />
+      <property role="TrG5h" value="postponeInitialExecution" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5jCi3tJPVRg">
     <property role="3GE5qa" value="c-integration" />
@@ -1054,6 +1059,13 @@
     <property role="R4oN_" value="lets the state machine enter a specific state" />
     <property role="EcuMT" value="2156527285456399097" />
     <ref role="1TJDcQ" node="7XSydqoCpA" resolve="SmSetStateTarget" />
+  </node>
+  <node concept="1TIwiD" id="4c3N3BOBO6J">
+    <property role="EcuMT" value="4828927774760583599" />
+    <property role="3GE5qa" value="gen" />
+    <property role="TrG5h" value="InitializingState" />
+    <property role="34LRSv" value="__initializing" />
+    <ref role="1TJDcQ" node="3FSHg1aADay" resolve="AbstractState" />
   </node>
 </model>
 
