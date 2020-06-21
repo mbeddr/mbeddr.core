@@ -8705,7 +8705,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="29JE8qNvUaG">
-    <property role="TrG5h" value="typeof_ExternalStorrageInitializer" />
+    <property role="TrG5h" value="typeof_ExternalLocationInitializer" />
     <property role="3GE5qa" value="intf.sr" />
     <node concept="3clFbS" id="29JE8qNvUaH" role="18ibNy">
       <node concept="3cpWs8" id="29JE8qNw0HZ" role="3cqZAp">
@@ -8724,7 +8724,7 @@
                 <node concept="2OqwBi" id="29JE8qNw0I5" role="1m5AlR">
                   <node concept="2OqwBi" id="29JE8qNw0I6" role="2Oq$k0">
                     <node concept="1YBJjd" id="29JE8qNw0I7" role="2Oq$k0">
-                      <ref role="1YBMHb" node="29JE8qNvUaI" resolve="esi" />
+                      <ref role="1YBMHb" node="29JE8qNvUaI" resolve="externalLocationInitializer" />
                     </node>
                     <node concept="3TrEf2" id="29JE8qNw0I8" role="2OqNvi">
                       <ref role="3Tt5mk" to="v7ag:29JE8qNvJxy" resolve="port" />
@@ -8828,7 +8828,7 @@
               <node concept="1Z2H0r" id="6Oj63Cq$sAI" role="mwGJk">
                 <node concept="2OqwBi" id="6Oj63Cq$sBH" role="1Z2MuG">
                   <node concept="1YBJjd" id="6Oj63Cq$sBo" role="2Oq$k0">
-                    <ref role="1YBMHb" node="29JE8qNvUaI" resolve="esi" />
+                    <ref role="1YBMHb" node="29JE8qNvUaI" resolve="externalLocationInitializer" />
                   </node>
                   <node concept="3TrEf2" id="6Oj63Cq$sBM" role="2OqNvi">
                     <ref role="3Tt5mk" to="v7ag:29JE8qNvJxz" resolve="expr" />
@@ -8839,7 +8839,7 @@
             <node concept="mw_s8" id="6Oj63Cq$sAG" role="1ZfhK$">
               <node concept="1Z2H0r" id="6Oj63Cq$sAi" role="mwGJk">
                 <node concept="1YBJjd" id="6Oj63Cq$sAk" role="1Z2MuG">
-                  <ref role="1YBMHb" node="29JE8qNvUaI" resolve="esi" />
+                  <ref role="1YBMHb" node="29JE8qNvUaI" resolve="externalLocationInitializer" />
                 </node>
               </node>
             </node>
@@ -8855,7 +8855,7 @@
               <node concept="1Z2H0r" id="6Oj63Cq$s$R" role="mwGJk">
                 <node concept="2OqwBi" id="6Oj63Cq$sAa" role="1Z2MuG">
                   <node concept="1YBJjd" id="6Oj63Cq$s_P" role="2Oq$k0">
-                    <ref role="1YBMHb" node="29JE8qNvUaI" resolve="esi" />
+                    <ref role="1YBMHb" node="29JE8qNvUaI" resolve="externalLocationInitializer" />
                   </node>
                   <node concept="3TrEf2" id="6Oj63Cq$sAf" role="2OqNvi">
                     <ref role="3Tt5mk" to="v7ag:29JE8qNvJxz" resolve="expr" />
@@ -8877,17 +8877,17 @@
       </node>
     </node>
     <node concept="1YaCAy" id="29JE8qNvUaI" role="1YuTPh">
-      <property role="TrG5h" value="esi" />
-      <ref role="1YaFvo" to="v7ag:29JE8qNvJxx" resolve="ExternalStorageInitializer" />
+      <property role="TrG5h" value="externalLocationInitializer" />
+      <ref role="1YaFvo" to="v7ag:29JE8qNvJxx" resolve="ExternalLocationInitializer" />
     </node>
   </node>
   <node concept="18kY7G" id="6Ywynt2TVnq">
-    <property role="TrG5h" value="check_ExternalStorrageInitializer" />
+    <property role="TrG5h" value="check_ExternalLocationInitializer" />
     <property role="3GE5qa" value="intf.sr" />
     <node concept="3clFbS" id="6Ywynt2TVnr" role="18ibNy">
       <node concept="3cpWs8" id="6Ywynt2TVqJ" role="3cqZAp">
         <node concept="3cpWsn" id="6Ywynt2TVqK" role="3cpWs9">
-          <property role="TrG5h" value="externalStorragePorts" />
+          <property role="TrG5h" value="externalLocationPorts" />
           <node concept="A3Dl8" id="6Ywynt2TVqL" role="1tU5fm">
             <node concept="3Tqbb2" id="6Ywynt2TVqM" role="A3Ik2">
               <ref role="ehGHo" to="v7ag:3TmmsQkD8YC" resolve="ProvidedPort" />
@@ -8918,7 +8918,7 @@
                         </node>
                         <node concept="3CFZ6_" id="6Ywynt2TVr0" role="2OqNvi">
                           <node concept="3CFYIy" id="6Ywynt2TVr1" role="3CFYIz">
-                            <ref role="3CFYIx" to="v7ag:29JE8qNuWkv" resolve="ExternalStorageLocation" />
+                            <ref role="3CFYIx" to="v7ag:29JE8qNuWkv" resolve="ExternalLocation" />
                           </node>
                         </node>
                       </node>
@@ -8955,7 +8955,7 @@
               </node>
               <node concept="v3k3i" id="6jvaevO$GQ5" role="2OqNvi">
                 <node concept="chp4Y" id="6jvaevO$GQ6" role="v3oSu">
-                  <ref role="cht4Q" to="v7ag:29JE8qNvJxx" resolve="ExternalStorageInitializer" />
+                  <ref role="cht4Q" to="v7ag:29JE8qNvJxx" resolve="ExternalLocationInitializer" />
                 </node>
               </node>
             </node>
@@ -8986,7 +8986,7 @@
       <node concept="3clFbF" id="6Ywynt2TVwX" role="3cqZAp">
         <node concept="2OqwBi" id="6Ywynt2TVxj" role="3clFbG">
           <node concept="37vLTw" id="20ezT9ZBYRa" role="2Oq$k0">
-            <ref role="3cqZAo" node="6Ywynt2TVqK" resolve="externalStorragePorts" />
+            <ref role="3cqZAo" node="6Ywynt2TVqK" resolve="externalLocationPorts" />
           </node>
           <node concept="2es0OD" id="6Ywynt2TVxo" role="2OqNvi">
             <node concept="1bVj0M" id="6Ywynt2TVxp" role="23t8la">

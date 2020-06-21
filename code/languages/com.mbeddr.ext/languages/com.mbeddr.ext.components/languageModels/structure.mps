@@ -862,7 +862,7 @@
       <ref role="PrY4T" to="vs0r:1DVNPtFPBay" resolve="IShowUpInOutline" />
     </node>
     <node concept="PrWs8" id="29JE8qNvthB" role="PzmwI">
-      <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequiresComponentInitializer" />
+      <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequireComponentInitializer" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfT$" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/field.png" />
@@ -1774,14 +1774,14 @@
   </node>
   <node concept="1TIwiD" id="29JE8qNuWkv">
     <property role="3GE5qa" value="intf.sr" />
-    <property role="TrG5h" value="ExternalStorageLocation" />
+    <property role="TrG5h" value="ExternalLocation" />
     <property role="EcuMT" value="2481387216194749727" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="PrWs8" id="29JE8qNvthC" role="PzmwI">
-      <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequiresComponentInitializer" />
+      <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequireComponentInitializer" />
     </node>
     <node concept="M6xJ_" id="5GEPw8vx$kl" role="lGtFl">
-      <property role="Hh88m" value="externalStorrageLocation" />
+      <property role="Hh88m" value="externalLocation" />
       <node concept="trNpa" id="5GEPw8vxApT" role="EQaZv">
         <ref role="trN6q" node="3TmmsQkD8YC" resolve="ProvidedPort" />
       </node>
@@ -1789,12 +1789,12 @@
   </node>
   <node concept="PlHQZ" id="29JE8qNvth_">
     <property role="3GE5qa" value="comp.instances" />
-    <property role="TrG5h" value="IMayRequiresComponentInitializer" />
+    <property role="TrG5h" value="IMayRequireComponentInitializer" />
     <property role="EcuMT" value="2481387216194884709" />
   </node>
   <node concept="1TIwiD" id="29JE8qNvJxx">
     <property role="3GE5qa" value="intf.sr" />
-    <property role="TrG5h" value="ExternalStorageInitializer" />
+    <property role="TrG5h" value="ExternalLocationInitializer" />
     <property role="EcuMT" value="2481387216194959457" />
     <ref role="1TJDcQ" node="29JE8qNtlUh" resolve="AbstractComponentInitializer" />
     <node concept="1TJgyj" id="29JE8qNvJxz" role="1TKVEi">

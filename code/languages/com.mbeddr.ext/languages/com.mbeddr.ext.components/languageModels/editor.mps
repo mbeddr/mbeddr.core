@@ -4445,12 +4445,12 @@
   </node>
   <node concept="24kQdi" id="29JE8qNuWkw">
     <property role="3GE5qa" value="intf.sr" />
-    <ref role="1XX52x" to="v7ag:29JE8qNuWkv" resolve="ExternalStorageLocation" />
+    <ref role="1XX52x" to="v7ag:29JE8qNuWkv" resolve="ExternalLocation" />
     <node concept="3EZMnI" id="29JE8qNuWky" role="2wV5jI">
       <node concept="l2Vlx" id="29JE8qNuWk$" role="2iSdaV" />
       <node concept="3F0ifn" id="29JE8qNuWkA" role="3EZMnx">
-        <property role="3F0ifm" value="@external storage" />
-        <ref role="1ERwB7" node="29JE8qNv4Np" resolve="deleteExternalStorrageLoc" />
+        <property role="3F0ifm" value="@external" />
+        <ref role="1ERwB7" node="29JE8qNv4Np" resolve="deleteExternalLocation" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhDUJ" resolve="Metadata" />
       </node>
       <node concept="2SsqMj" id="29JE8qNuWkC" role="3EZMnx">
@@ -4462,8 +4462,8 @@
   </node>
   <node concept="1h_SRR" id="29JE8qNv4Np">
     <property role="3GE5qa" value="intf.sr" />
-    <property role="TrG5h" value="deleteExternalStorrageLoc" />
-    <ref role="1h_SK9" to="v7ag:29JE8qNuWkv" resolve="ExternalStorageLocation" />
+    <property role="TrG5h" value="deleteExternalLocation" />
+    <ref role="1h_SK9" to="v7ag:29JE8qNuWkv" resolve="ExternalLocation" />
     <node concept="1hA7zw" id="29JE8qNv4Nq" role="1h_SK8">
       <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="29JE8qNv4Nr" role="1hA7z_">
@@ -4480,7 +4480,7 @@
   </node>
   <node concept="24kQdi" id="29JE8qNvJ$g">
     <property role="3GE5qa" value="intf.sr" />
-    <ref role="1XX52x" to="v7ag:29JE8qNvJxx" resolve="ExternalStorageInitializer" />
+    <ref role="1XX52x" to="v7ag:29JE8qNvJxx" resolve="ExternalLocationInitializer" />
     <node concept="3EZMnI" id="29JE8qNvJ$i" role="2wV5jI">
       <node concept="1iCGBv" id="29JE8qNvJ$l" role="3EZMnx">
         <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />

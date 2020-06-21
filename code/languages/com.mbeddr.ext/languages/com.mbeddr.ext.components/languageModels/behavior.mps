@@ -9025,7 +9025,7 @@
               <node concept="2Rf3mk" id="5ru53esJ8$p" role="2OqNvi">
                 <node concept="1xMEDy" id="5ru53esJ8$q" role="1xVPHs">
                   <node concept="chp4Y" id="5ru53esJ8$r" role="ri$Ld">
-                    <ref role="cht4Q" to="v7ag:29JE8qNvth_" resolve="IMayRequiresComponentInitializer" />
+                    <ref role="cht4Q" to="v7ag:29JE8qNvth_" resolve="IMayRequireComponentInitializer" />
                   </node>
                 </node>
               </node>
@@ -12414,7 +12414,7 @@
         <node concept="3clFbF" id="29JE8qNvtiU" role="3cqZAp">
           <node concept="2OqwBi" id="29JE8qNvtiV" role="3clFbG">
             <node concept="13iAh5" id="29JE8qNvtiW" role="2Oq$k0">
-              <ref role="3eA5LN" to="v7ag:29JE8qNvth_" resolve="IMayRequiresComponentInitializer" />
+              <ref role="3eA5LN" to="v7ag:29JE8qNvth_" resolve="IMayRequireComponentInitializer" />
             </node>
             <node concept="2qgKlT" id="29JE8qNvtiX" role="2OqNvi">
               <ref role="37wK5l" node="29JE8qNvtiF" resolve="requiresInitializer" />
@@ -19313,7 +19313,7 @@
   </node>
   <node concept="13h7C7" id="29JE8qNvtiC">
     <property role="3GE5qa" value="comp.instances" />
-    <ref role="13h7C2" to="v7ag:29JE8qNvth_" resolve="IMayRequiresComponentInitializer" />
+    <ref role="13h7C2" to="v7ag:29JE8qNvth_" resolve="IMayRequireComponentInitializer" />
     <node concept="13i0hz" id="29JE8qNvtiF" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -19550,7 +19550,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="20ezT9ZDJ2H">
-    <ref role="13h7C2" to="v7ag:29JE8qNuWkv" resolve="ExternalStorageLocation" />
+    <ref role="13h7C2" to="v7ag:29JE8qNuWkv" resolve="ExternalLocation" />
     <node concept="13hLZK" id="20ezT9ZDJ2I" role="13h7CW">
       <node concept="3clFbS" id="20ezT9ZDJ2J" role="2VODD2" />
     </node>
