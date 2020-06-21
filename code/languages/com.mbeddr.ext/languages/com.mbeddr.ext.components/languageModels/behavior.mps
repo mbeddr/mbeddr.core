@@ -8076,7 +8076,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="6JVEnxIjBuf" role="13h7CS">
-      <property role="TrG5h" value="genInitFunctionName" />
+      <property role="TrG5h" value="genWireFunctionName" />
       <node concept="3Tm1VV" id="6JVEnxIjBug" role="1B3o_S" />
       <node concept="17QB3L" id="6JVEnxIjBuk" role="3clF45" />
       <node concept="3clFbS" id="6JVEnxIjBui" role="3clF47">
