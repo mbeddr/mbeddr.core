@@ -163,9 +163,6 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
-        <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -1099,38 +1096,6 @@
     <property role="TrG5h" value="check_Statemachine" />
     <property role="3GE5qa" value="machine" />
     <node concept="3clFbS" id="3Ppi0nTiYMH" role="18ibNy">
-      <node concept="3clFbH" id="5cuzu6R$XD5" role="3cqZAp" />
-      <node concept="3clFbJ" id="3UlEobTHn6D" role="3cqZAp">
-        <node concept="3clFbS" id="3UlEobTHn6E" role="3clFbx">
-          <node concept="2MkqsV" id="3UlEobTHn7C" role="3cqZAp">
-            <node concept="Xl_RD" id="3UlEobTHn7F" role="2MkJ7o">
-              <property role="Xl_RC" value="Currently, composite states cannot be initial states." />
-            </node>
-            <node concept="2OE7Q9" id="3UlEobTHn87" role="1urrC5">
-              <ref role="2OEe5H" to="clqz:50Lk78xBrai" resolve="initial" />
-            </node>
-            <node concept="1YBJjd" id="3UlEobTHn7G" role="1urrMF">
-              <ref role="1YBMHb" node="3Ppi0nTiYMI" resolve="sm" />
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="3UlEobTHn7v" role="3clFbw">
-          <node concept="2OqwBi" id="3UlEobTHn73" role="2Oq$k0">
-            <node concept="1YBJjd" id="3UlEobTHn6I" role="2Oq$k0">
-              <ref role="1YBMHb" node="3Ppi0nTiYMI" resolve="sm" />
-            </node>
-            <node concept="3TrEf2" id="3UlEobTHn79" role="2OqNvi">
-              <ref role="3Tt5mk" to="clqz:50Lk78xBrai" resolve="initial" />
-            </node>
-          </node>
-          <node concept="1mIQ4w" id="3UlEobTHn7_" role="2OqNvi">
-            <node concept="chp4Y" id="3UlEobTHn7B" role="cj9EA">
-              <ref role="cht4Q" to="clqz:3FSHg1aADHk" resolve="CompositeState" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="4h2fJwlTBzj" role="3cqZAp" />
       <node concept="3clFbJ" id="7cdlZsDKfTg" role="3cqZAp">
         <node concept="3clFbS" id="7cdlZsDKfTh" role="3clFbx">
           <node concept="3clFbJ" id="7cdlZsDKfTK" role="3cqZAp">
