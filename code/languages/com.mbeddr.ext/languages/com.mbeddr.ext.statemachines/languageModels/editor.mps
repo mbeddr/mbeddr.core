@@ -1417,12 +1417,13 @@
           <node concept="3F0A7n" id="7BISmlsIlBi" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="r4b4:1m7Vx97SsbI" resolve="FunctionCall" />
           </node>
         </node>
       </node>
       <node concept="3F0ifn" id="7BISmlsIlBl" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <ref role="1k5W1q" to="r4b4:1m7Vx98shd9" resolve="FunctionCallParens" />
         <node concept="11LMrY" id="7wVKixdW4Gd" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1453,7 +1454,7 @@
       </node>
       <node concept="3F0ifn" id="7BISmlsIlBo" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <ref role="1k5W1q" to="r4b4:1m7Vx98shd9" resolve="FunctionCallParens" />
         <node concept="11L4FC" id="7wVKixdW4Ge" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
