@@ -1303,19 +1303,6 @@
       <ref role="PMmxG" node="5CDgsyZbE9V" resolve="staticValueComponent" />
     </node>
   </node>
-  <node concept="V5hpn" id="5K77MGvFFK5">
-    <property role="3GE5qa" value="types.cast" />
-    <property role="TrG5h" value="casting" />
-    <node concept="14StLt" id="5K77MGvFJ2U" role="V601i">
-      <property role="TrG5h" value="cast" />
-      <node concept="VechU" id="5K77MGvFJ2W" role="3F10Kt">
-        <property role="Vb096" value="fLwANPp/orange" />
-        <node concept="1iSF2X" id="Ug1QzfhWOF" role="VblUZ">
-          <property role="1iTho6" value="FA5700" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="1spqZOskLyL">
     <property role="3GE5qa" value="literals" />
     <ref role="1XX52x" to="mj1l:1spqZOskLyG" resolve="CharLiteral" />

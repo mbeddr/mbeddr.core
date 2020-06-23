@@ -10093,6 +10093,45 @@
         <property role="Vb096" value="fLJRk5B/darkGray" />
       </node>
     </node>
+    <node concept="14StLt" id="1m7Vx97SsbI" role="V601i">
+      <property role="TrG5h" value="FunctionCall" />
+      <node concept="VechU" id="1m7Vx97Y9Rt" role="3F10Kt">
+        <property role="Vb096" value="fLwANPp/orange" />
+        <node concept="1iSF2X" id="1m7Vx98fz$7" role="VblUZ">
+          <property role="1iTho6" value="C46E00" />
+        </node>
+      </node>
+      <node concept="Vb9p2" id="1m7Vx97SKge" role="3F10Kt">
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
+      </node>
+    </node>
+    <node concept="14StLt" id="1m7Vx98shd9" role="V601i">
+      <property role="TrG5h" value="FunctionCallParens" />
+      <node concept="VechU" id="1m7Vx98shfr" role="3F10Kt">
+        <property role="Vb096" value="fLwANPp/orange" />
+        <node concept="1iSF2X" id="1m7Vx98shfs" role="VblUZ">
+          <property role="1iTho6" value="C46E00" />
+        </node>
+      </node>
+      <node concept="3mYdg7" id="1m7Vx98shda" role="3F10Kt">
+        <property role="1413C4" value="parenthesis" />
+      </node>
+      <node concept="34QqEe" id="1m7Vx98shdb" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="Vb9p2" id="1m7Vx98shdc" role="3F10Kt">
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
+      </node>
+    </node>
+    <node concept="14StLt" id="5K77MGvFJ2U" role="V601i">
+      <property role="TrG5h" value="Cast" />
+      <node concept="VechU" id="5K77MGvFJ2W" role="3F10Kt">
+        <property role="Vb096" value="fLwANPp/orange" />
+        <node concept="1iSF2X" id="Ug1QzfhWOF" role="VblUZ">
+          <property role="1iTho6" value="FA5700" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="4QhMqW2TcDm">
     <property role="1sVAO0" value="true" />
