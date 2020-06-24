@@ -1969,5 +1969,28 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1m7Vx9aJI37">
+    <property role="3GE5qa" value="c-integration" />
+    <ref role="1M2myG" to="clqz:1m7Vx9aJHDD" resolve="CurrentStateRef" />
+    <node concept="9S07l" id="1m7Vx9aJItr" role="9Vyp8">
+      <node concept="3clFbS" id="1m7Vx9aJIts" role="2VODD2">
+        <node concept="3clFbF" id="1m7Vx9aJI74" role="3cqZAp">
+          <node concept="2OqwBi" id="1m7Vx9aJI76" role="3clFbG">
+            <node concept="2OqwBi" id="1m7Vx9aJI77" role="2Oq$k0">
+              <node concept="nLn13" id="1m7Vx9aJI78" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1m7Vx9aJI79" role="2OqNvi">
+                <node concept="1xMEDy" id="1m7Vx9aJI7a" role="1xVPHs">
+                  <node concept="chp4Y" id="1m7Vx9aJIgm" role="ri$Ld">
+                    <ref role="cht4Q" to="clqz:3FSHg1aADay" resolve="AbstractState" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1m7Vx9aJI7c" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

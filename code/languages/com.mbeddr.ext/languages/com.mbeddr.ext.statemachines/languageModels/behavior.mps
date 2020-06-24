@@ -10314,5 +10314,34 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="1m7Vx9aJIzr">
+    <property role="3GE5qa" value="c-integration" />
+    <ref role="13h7C2" to="clqz:1m7Vx9aJHDD" resolve="CurrentStateRef" />
+    <node concept="13hLZK" id="1m7Vx9aJIzs" role="13h7CW">
+      <node concept="3clFbS" id="1m7Vx9aJIzt" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1m7Vx9aJIzA" role="13h7CS">
+      <property role="TrG5h" value="getState" />
+      <ref role="13i0hy" node="4c3N3BPrpoi" resolve="getState" />
+      <node concept="3Tm1VV" id="1m7Vx9aJIzB" role="1B3o_S" />
+      <node concept="3clFbS" id="1m7Vx9aJIzE" role="3clF47">
+        <node concept="3clFbF" id="1m7Vx9aJIzT" role="3cqZAp">
+          <node concept="2OqwBi" id="1m7Vx9aJIRt" role="3clFbG">
+            <node concept="13iPFW" id="1m7Vx9aJIzS" role="2Oq$k0" />
+            <node concept="2Xjw5R" id="1m7Vx9aJJkm" role="2OqNvi">
+              <node concept="1xMEDy" id="1m7Vx9aJJko" role="1xVPHs">
+                <node concept="chp4Y" id="1m7Vx9aJL2x" role="ri$Ld">
+                  <ref role="cht4Q" to="clqz:3FSHg1aADay" resolve="AbstractState" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1m7Vx9aJIzF" role="3clF45">
+        <ref role="ehGHo" to="clqz:3FSHg1aADay" resolve="AbstractState" />
+      </node>
+    </node>
+  </node>
 </model>
 

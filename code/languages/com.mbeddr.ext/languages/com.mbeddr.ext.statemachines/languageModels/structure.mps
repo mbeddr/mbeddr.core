@@ -1085,5 +1085,12 @@
       <ref role="PrY4T" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1m7Vx9aJHDD">
+    <property role="EcuMT" value="1551470358983268969" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="CurrentStateRef" />
+    <property role="34LRSv" value="current state" />
+    <ref role="1TJDcQ" node="4c3N3BPrna8" resolve="AbstractStateRef" />
+  </node>
 </model>
 
