@@ -4439,7 +4439,7 @@
               </node>
             </node>
             <node concept="zfrQC" id="6LsWDiKt_fe" role="2OqNvi">
-              <ref role="1A9B2P" to="mj1l:4NrkDW5Uy9" resolve="LongType" />
+              <ref role="1A9B2P" to="mj1l:7lNBHBNBzy8" resolve="Int32tType" />
             </node>
           </node>
         </node>
@@ -4452,7 +4452,7 @@
               </node>
             </node>
             <node concept="zfrQC" id="6LsWDiKtEM9" role="2OqNvi">
-              <ref role="1A9B2P" to="mj1l:7lNBHBNBu8m" resolve="UnsignedLongType" />
+              <ref role="1A9B2P" to="mj1l:7lNBHBNBzyi" resolve="UnsignedInt32tType" />
             </node>
           </node>
         </node>
