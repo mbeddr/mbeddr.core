@@ -271,12 +271,12 @@
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
       <concept id="5947739078127951575" name="com.mbeddr.core.udt.structure.Enum2Int" flags="ng" index="2a30fU" />
-      <concept id="1320626622329014538" name="" flags="ng" index="2iySvw">
-        <child id="1320626622329014595" name="" index="2iySuD" />
-        <child id="1320626622329027228" name="" index="2iyVhQ" />
+      <concept id="1320626622329014538" name="com.mbeddr.core.udt.structure.AbstractInt2Expression" flags="ng" index="2iySvw">
+        <child id="1320626622329014595" name="targetType" index="2iySuD" />
+        <child id="1320626622329027228" name="expr" index="2iyVhQ" />
       </concept>
-      <concept id="1320626622328445270" name="" flags="ng" index="2iB5uW">
-        <child id="1320626622328454454" name="" index="2iB7fs" />
+      <concept id="1320626622328445270" name="com.mbeddr.core.udt.structure.Abstract2IntExpression" flags="ng" index="2iB5uW">
+        <child id="1320626622328454454" name="expr" index="2iB7fs" />
       </concept>
       <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK" />
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
@@ -1252,13 +1252,6 @@
                 </node>
                 <node concept="3ZVu4v" id="4ioi0JB$iZq" role="3TlMhI">
                   <ref role="3ZVs_2" node="4ioi0JB$gSL" resolve="sz" />
-                  <node concept="7CXmI" id="4ioi0JBAyAx" role="lGtFl">
-                    <node concept="1TM$A" id="1zouAvzRaOf" role="7EUXB">
-                      <node concept="2PYRI3" id="1zouAvzRaOg" role="3lydEf">
-                        <ref role="39XzEq" to="n7pc:5so5TTr6J_W" />
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
