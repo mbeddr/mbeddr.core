@@ -1716,7 +1716,7 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="3F0ifn" id="7FZLineUJnr" role="3EZMnx">
-              <property role="3F0ifm" value="size_t type (size of size_t)" />
+              <property role="3F0ifm" value="size_t type" />
             </node>
             <node concept="3F1sOY" id="7FZLineUJns" role="3EZMnx">
               <ref role="1NtTu8" to="mj1l:7FZLineUJnj" resolve="sizeTType" />
@@ -1728,7 +1728,7 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="3F0ifn" id="3mNkkAi8TkY" role="3EZMnx">
-              <property role="3F0ifm" value="ssize_t type (size of ssize_t)" />
+              <property role="3F0ifm" value="ssize_t type" />
             </node>
             <node concept="3F1sOY" id="3mNkkAi8TkZ" role="3EZMnx">
               <ref role="1NtTu8" to="mj1l:3mNkkAi8TfG" resolve="ssizeTType" />
@@ -1740,7 +1740,7 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="3F0ifn" id="3jGRJVwqZnR" role="3EZMnx">
-              <property role="3F0ifm" value="pointer diff type (size of pointer)  " />
+              <property role="3F0ifm" value="pointer diff type  " />
             </node>
             <node concept="3F1sOY" id="3jGRJVwqZnV" role="3EZMnx">
               <ref role="1NtTu8" to="mj1l:3jGRJVwqZnA" resolve="pointerDiffType" />
