@@ -611,23 +611,19 @@
           <property role="TrG5h" value="p_logger" />
           <ref role="2EX0h9" node="6JVEnxIiSnS" resolve="Logger" />
         </node>
-        <node concept="2EWDwb" id="6JVEnxIj0h0" role="2RW2fA">
+        <node concept="3Khz0B" id="3TJMuIHVpzF" role="2RW2fA" />
+        <node concept="2EWDwb" id="3TJMuIHVpzG" role="2RW2fA">
           <property role="TrG5h" value="p_logger_log" />
-          <node concept="3XIRFW" id="6JVEnxIj0h1" role="2EWMhI">
-            <node concept="3XISUE" id="6JVEnxIj0h2" role="3XIRFZ" />
+          <node concept="3XIRFW" id="3TJMuIHVpzH" role="2EWMhI">
+            <node concept="3XISUE" id="3TJMuIHVpzI" role="3XIRFZ" />
           </node>
-          <node concept="2EWDw0" id="6JVEnxIj0h3" role="2EWDeT">
+          <node concept="2EWDw0" id="3TJMuIHVpzJ" role="2EWDeT">
             <ref role="1ZwSu5" node="6JVEnxIj0gZ" resolve="p_logger" />
             <ref role="1ZwxE2" node="6JVEnxIiSnT" resolve="log" />
           </node>
-          <node concept="19Rifw" id="734bZETuh66" role="2C2TGm">
+          <node concept="19Rifw" id="3TJMuIHVpzK" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="1xGALR" id="3zlDaOXovDZ" role="lGtFl">
-            <node concept="1xFd8N" id="3zlDaOXovEV" role="1xGcb7">
-              <property role="1xFd8M" value=" ComponentsTracingTest_LoggerImpl__cdata_t *___cid = ((ComponentsTracingTest_LoggerImpl__cdata_t *)(___id));" />
-            </node>
           </node>
         </node>
       </node>

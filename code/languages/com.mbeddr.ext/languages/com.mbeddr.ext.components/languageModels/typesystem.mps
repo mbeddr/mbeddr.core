@@ -10363,7 +10363,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="1vywkZBaR70">
-    <property role="3GE5qa" value="comp" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="check_exportComponentContentRelationships" />
     <node concept="3clFbS" id="1vywkZBaR71" role="18ibNy">
       <node concept="3clFbJ" id="3AX8Th8g55j" role="3cqZAp">
