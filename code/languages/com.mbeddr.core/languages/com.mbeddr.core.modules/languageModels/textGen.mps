@@ -1410,7 +1410,7 @@
           </node>
           <node concept="l9S2W" id="7qHzltJ0Vki" role="lcghm">
             <property role="XA4eZ" value="true" />
-            <property role="lbP0B" value="," />
+            <property role="lbP0B" value=", " />
             <node concept="2OqwBi" id="7qHzltJ0Vkl" role="lbANJ">
               <node concept="117lpO" id="7qHzltJ0Vkk" role="2Oq$k0" />
               <node concept="3Tsc0h" id="7qHzltJ0Vkp" role="2OqNvi">

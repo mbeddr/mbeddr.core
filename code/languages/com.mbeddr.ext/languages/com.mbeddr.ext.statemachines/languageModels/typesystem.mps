@@ -154,6 +154,10 @@
         <child id="1185805056450" name="argument" index="nvjzm" />
         <child id="1205761991995" name="argumentRepresentator" index="2X0Ygz" />
       </concept>
+      <concept id="1175147569072" name="jetbrains.mps.lang.typesystem.structure.AbstractSubtypingRule" flags="ig" index="2sgdUx">
+        <child id="1175147624276" name="body" index="2sgrp5" />
+      </concept>
+      <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
       <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
         <child id="1175517761460" name="condition" index="2MkoU_" />
       </concept>
@@ -255,6 +259,9 @@
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
+        <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -1193,7 +1200,7 @@
         <node concept="3clFbS" id="5cuzu6R$XQC" role="3clFbx">
           <node concept="2MkqsV" id="5cuzu6R_c82" role="3cqZAp">
             <node concept="Xl_RD" id="5cuzu6R_c8k" role="2MkJ7o">
-              <property role="Xl_RC" value="state machines with epsilon transitions must have and epsilon in event" />
+              <property role="Xl_RC" value="state machines with epsilon transitions must have an epsilon in event" />
             </node>
             <node concept="1YBJjd" id="5cuzu6R_ca9" role="1urrMF">
               <ref role="1YBMHb" node="3Ppi0nTiYMI" resolve="sm" />
@@ -3055,6 +3062,116 @@
     <node concept="1YaCAy" id="4c3N3BPrvkl" role="1YuTPh">
       <property role="TrG5h" value="stateRef" />
       <ref role="1YaFvo" to="clqz:4c3N3BPrna8" resolve="AbstractStateRef" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3TJMuIHZNJ$">
+    <property role="TrG5h" value="typeof_AnyStateType" />
+    <property role="3GE5qa" value="c-integration" />
+    <node concept="3clFbS" id="3TJMuIHZNJ_" role="18ibNy">
+      <node concept="1Z5TYs" id="3TJMuIHZNLz" role="3cqZAp">
+        <node concept="mw_s8" id="3TJMuIHZNL$" role="1ZfhKB">
+          <node concept="2OqwBi" id="3TJMuIHZNL_" role="mwGJk">
+            <node concept="1YBJjd" id="3TJMuIHZNNW" role="2Oq$k0">
+              <ref role="1YBMHb" node="3TJMuIHZNJB" resolve="anyStateType" />
+            </node>
+            <node concept="1$rogu" id="3TJMuIHZNLB" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3TJMuIHZNLC" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3TJMuIHZNLD" role="mwGJk">
+            <node concept="1YBJjd" id="3TJMuIHZNMp" role="1Z2MuG">
+              <ref role="1YBMHb" node="3TJMuIHZNJB" resolve="anyStateType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3TJMuIHZNJB" role="1YuTPh">
+      <property role="TrG5h" value="anyStateType" />
+      <ref role="1YaFvo" to="clqz:3TJMuIHZDPN" resolve="AnyStateType" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="3TJMuIIqZxv">
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="superTypeOfStateType" />
+    <node concept="3clFbS" id="3TJMuIIqZxw" role="2sgrp5">
+      <node concept="3cpWs8" id="3TJMuIIr0pK" role="3cqZAp">
+        <node concept="3cpWsn" id="3TJMuIIr0pL" role="3cpWs9">
+          <property role="TrG5h" value="superTypes" />
+          <node concept="2I9FWS" id="3TJMuIIr0pt" role="1tU5fm">
+            <ref role="2I9WkF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+          </node>
+          <node concept="2ShNRf" id="3TJMuIIr0pM" role="33vP2m">
+            <node concept="2T8Vx0" id="3TJMuIIr0pN" role="2ShVmc">
+              <node concept="2I9FWS" id="3TJMuIIr0pO" role="2T96Bj">
+                <ref role="2I9WkF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="3TJMuIIqZOs" role="3cqZAp">
+        <node concept="2OqwBi" id="3TJMuIIr2GM" role="3clFbG">
+          <node concept="37vLTw" id="3TJMuIIr0pP" role="2Oq$k0">
+            <ref role="3cqZAo" node="3TJMuIIr0pL" resolve="superTypes" />
+          </node>
+          <node concept="TSZUe" id="3TJMuIIr5LI" role="2OqNvi">
+            <node concept="2ShNRf" id="3TJMuIIr5ZW" role="25WWJ7">
+              <node concept="3zrR0B" id="3TJMuIIr6j2" role="2ShVmc">
+                <node concept="3Tqbb2" id="3TJMuIIr6j4" role="3zrR0E">
+                  <ref role="ehGHo" to="clqz:3TJMuIHZDPN" resolve="AnyStateType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="3TJMuIIr6Gk" role="3cqZAp">
+        <node concept="37vLTw" id="3TJMuIIr6Gi" role="3clFbG">
+          <ref role="3cqZAo" node="3TJMuIIr0pL" resolve="superTypes" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3TJMuIIqZxy" role="1YuTPh">
+      <property role="TrG5h" value="stateType" />
+      <ref role="1YaFvo" to="clqz:19jNIE0ii0N" resolve="StateType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3TJMuIIrj4N">
+    <property role="TrG5h" value="typeof_DefaultStateRef" />
+    <property role="3GE5qa" value="c-integration" />
+    <node concept="3clFbS" id="3TJMuIIrj4O" role="18ibNy">
+      <node concept="1Z5TYs" id="3TJMuIIrjjE" role="3cqZAp">
+        <node concept="mw_s8" id="3TJMuIIrjku" role="1ZfhKB">
+          <node concept="1Z2H0r" id="3TJMuIIrjkq" role="mwGJk">
+            <node concept="2pJPEk" id="3TJMuIIrjlU" role="1Z2MuG">
+              <node concept="2pJPED" id="3TJMuIIrjmI" role="2pJPEn">
+                <ref role="2pJxaS" to="clqz:3TJMuIHZDPN" resolve="AnyStateType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3TJMuIIrjjH" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3TJMuIIrjaI" role="mwGJk">
+            <node concept="1YBJjd" id="3TJMuIIrjbx" role="1Z2MuG">
+              <ref role="1YBMHb" node="3TJMuIIrj4Q" resolve="defaultStateRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3TJMuIIrj4Q" role="1YuTPh">
+      <property role="TrG5h" value="defaultStateRef" />
+      <ref role="1YaFvo" to="clqz:3TJMuIIrhNq" resolve="DefaultStateRef" />
+    </node>
+    <node concept="bXqS6" id="3TJMuIIrj5a" role="ujSXK">
+      <node concept="3clFbS" id="3TJMuIIrj5b" role="2VODD2">
+        <node concept="3clFbF" id="3TJMuIIrj9q" role="3cqZAp">
+          <node concept="3clFbT" id="3TJMuIIrj9p" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

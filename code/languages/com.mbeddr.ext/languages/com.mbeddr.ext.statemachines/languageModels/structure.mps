@@ -1016,7 +1016,7 @@
     <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="StateType" />
     <property role="34LRSv" value="state" />
-    <property role="R4oN_" value="a type that represents states" />
+    <property role="R4oN_" value="a type that represents the states of a statemachine" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
     <node concept="1TJgyj" id="19jNIE0iiLB" role="1TKVEi">
       <property role="20kJfa" value="machine" />
@@ -1090,6 +1090,21 @@
     <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="CurrentStateRef" />
     <property role="34LRSv" value="current state" />
+    <ref role="1TJDcQ" node="4c3N3BPrna8" resolve="AbstractStateRef" />
+  </node>
+  <node concept="1TIwiD" id="3TJMuIHZDPN">
+    <property role="EcuMT" value="4499036566840057203" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="AnyStateType" />
+    <property role="34LRSv" value="any state" />
+    <property role="R4oN_" value="a type that represents any kind of state" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3TJMuIIrhNq">
+    <property role="EcuMT" value="4499036566847298778" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="DefaultStateRef" />
+    <property role="34LRSv" value="default state" />
     <ref role="1TJDcQ" node="4c3N3BPrna8" resolve="AbstractStateRef" />
   </node>
 </model>
