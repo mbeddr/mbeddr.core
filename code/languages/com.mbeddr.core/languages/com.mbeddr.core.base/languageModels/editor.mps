@@ -9817,6 +9817,31 @@
         <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
     </node>
+    <node concept="14StLt" id="3TJMuIJHcEB" role="V601i">
+      <property role="TrG5h" value="KWParens" />
+      <node concept="3mYdg7" id="3TJMuIJHcEC" role="3F10Kt">
+        <property role="1413C4" value="parenthesis" />
+      </node>
+      <node concept="34QqEe" id="3TJMuIJHcED" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VechU" id="3TJMuIJHcKA" role="3F10Kt">
+        <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        <node concept="3ZlJ5R" id="3TJMuIJHcKB" role="VblUZ">
+          <node concept="3clFbS" id="3TJMuIJHcKC" role="2VODD2">
+            <node concept="3clFbF" id="3TJMuIJHcKD" role="3cqZAp">
+              <node concept="10M0yZ" id="3TJMuIJHcKE" role="3clFbG">
+                <ref role="3cqZAo" node="2CEi94emCnI" resolve="KEYWORD_BLUE" />
+                <ref role="1PxDUh" node="4tRpPVPUEa3" resolve="BasicColors" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="Vb9p2" id="3TJMuIJHcEE" role="3F10Kt">
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
+      </node>
+    </node>
     <node concept="14StLt" id="y826GHffn9" role="V601i">
       <property role="TrG5h" value="Op" />
       <node concept="VechU" id="y826GHffoW" role="3F10Kt">
