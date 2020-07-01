@@ -3800,8 +3800,8 @@
                     <ref role="37wK5l" to="ktif:4c3N3BNA7XU" resolve="getStatemachine" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="4c3N3BNAeJf" role="2OqNvi">
-                  <ref role="37wK5l" to="ktif:4c3N3BNw3k3" resolve="hasActiveInitialState" />
+                <node concept="2qgKlT" id="5yFZkJSrBAg" role="2OqNvi">
+                  <ref role="37wK5l" to="ktif:5yFZkJSruhv" resolve="hasPostponableInitialExecution" />
                 </node>
               </node>
             </node>

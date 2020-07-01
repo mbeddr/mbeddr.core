@@ -708,8 +708,8 @@
                                       <ref role="3Tt5mk" to="clqz:6NQSyUTqXkM" resolve="machine" />
                                     </node>
                                   </node>
-                                  <node concept="2qgKlT" id="4c3N3BNwezJ" role="2OqNvi">
-                                    <ref role="37wK5l" to="ktif:4c3N3BNw3k3" resolve="hasActiveInitialState" />
+                                  <node concept="2qgKlT" id="5yFZkJSrBh$" role="2OqNvi">
+                                    <ref role="37wK5l" to="ktif:5yFZkJSruhv" resolve="hasPostponableInitialExecution" />
                                   </node>
                                 </node>
                               </node>
@@ -2250,7 +2250,7 @@
                                       </node>
                                     </node>
                                     <node concept="2qgKlT" id="3TJMuIK8oSw" role="2OqNvi">
-                                      <ref role="37wK5l" to="ktif:3TJMuIK8d$W" resolve="getDefaultInstanceRefExpr" />
+                                      <ref role="37wK5l" to="ktif:3TJMuIK8d$W" resolve="getInternalInstanceRefExpr" />
                                     </node>
                                   </node>
                                 </node>
@@ -2910,13 +2910,13 @@
                     <node concept="2OqwBi" id="3TJMuIK8LQ6" role="v9R3O">
                       <node concept="30H73N" id="3TJMuIK8Lrk" role="2Oq$k0" />
                       <node concept="2qgKlT" id="3TJMuIK8MK4" role="2OqNvi">
-                        <ref role="37wK5l" to="ktif:3TJMuIK8d$W" resolve="getDefaultInstanceRefExpr" />
+                        <ref role="37wK5l" to="ktif:3TJMuIK8d$W" resolve="getInternalInstanceRefExpr" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="3TJMuIK8MRp" role="v9R3O">
                       <node concept="30H73N" id="3TJMuIK8ML$" role="2Oq$k0" />
                       <node concept="2qgKlT" id="3TJMuIK8MSG" role="2OqNvi">
-                        <ref role="37wK5l" to="ktif:3TJMuIK7zVv" resolve="getInitialStateExpr" />
+                        <ref role="37wK5l" to="ktif:3TJMuIK7zVv" resolve="getEffectiveInitialExpr" />
                       </node>
                     </node>
                   </node>
@@ -2932,8 +2932,8 @@
                   <node concept="3clFbS" id="4c3N3BNwtyK" role="2VODD2">
                     <node concept="3clFbF" id="4c3N3BNwtyQ" role="3cqZAp">
                       <node concept="2OqwBi" id="4c3N3BNwtyL" role="3clFbG">
-                        <node concept="2qgKlT" id="4c3N3BNwuFm" role="2OqNvi">
-                          <ref role="37wK5l" to="ktif:4c3N3BNw3k3" resolve="hasActiveInitialState" />
+                        <node concept="2qgKlT" id="5yFZkJSrBAg" role="2OqNvi">
+                          <ref role="37wK5l" to="ktif:5yFZkJSruhv" resolve="hasPostponableInitialExecution" />
                         </node>
                         <node concept="30H73N" id="4c3N3BNwtyP" role="2Oq$k0" />
                       </node>
@@ -3093,10 +3093,10 @@
                 <node concept="3clFbS" id="4c3N3BNwrEb" role="2VODD2">
                   <node concept="3clFbF" id="4c3N3BNwrEh" role="3cqZAp">
                     <node concept="2OqwBi" id="4c3N3BNwrEc" role="3clFbG">
-                      <node concept="2qgKlT" id="4c3N3BNwsGM" role="2OqNvi">
-                        <ref role="37wK5l" to="ktif:4c3N3BNw3k3" resolve="hasActiveInitialState" />
-                      </node>
                       <node concept="30H73N" id="4c3N3BNwrEg" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="5yFZkJSrCaA" role="2OqNvi">
+                        <ref role="37wK5l" to="ktif:5yFZkJSruhv" resolve="hasPostponableInitialExecution" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -3876,7 +3876,7 @@
       </node>
     </node>
     <node concept="1puMqW" id="3TJMuIM$80v" role="1puA0r">
-      <ref role="1puQsG" to="ol92:3TJMuIMt7Xh" resolve="handleVariableInitialState" />
+      <ref role="1puQsG" to="ol92:3TJMuIMt7Xh" resolve="handleDerivedInitialState" />
     </node>
     <node concept="1puMqW" id="4fnktPovTFr" role="1puA0r">
       <ref role="1puQsG" to="ol92:4c3N3BOEEYb" resolve="handlePostponedInitialExecution" />
@@ -4101,7 +4101,7 @@
                                 </node>
                               </node>
                               <node concept="2qgKlT" id="3TJMuIK8khB" role="2OqNvi">
-                                <ref role="37wK5l" to="ktif:3TJMuIK8d$W" resolve="getDefaultInstanceRefExpr" />
+                                <ref role="37wK5l" to="ktif:3TJMuIK8d$W" resolve="getInternalInstanceRefExpr" />
                               </node>
                             </node>
                           </node>
