@@ -50,6 +50,7 @@
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
+        <child id="928328222691832421" name="separatorTextQuery" index="2gpyvW" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
@@ -64,6 +65,7 @@
       <concept id="784421273959492578" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_IncludeMenu" flags="ng" index="mvV$s">
         <child id="6718020819487784677" name="menuReference" index="A14EM" />
       </concept>
+      <concept id="709996738298806197" name="jetbrains.mps.lang.editor.structure.QueryFunction_SeparatorText" flags="in" index="2o9xnK" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -1216,6 +1218,23 @@
       <node concept="3F2HdR" id="3kEjc_WJ4od" role="3EZMnx">
         <ref role="1NtTu8" to="c4fa:3kEjc_WJ4ob" resolve="items" />
         <node concept="l2Vlx" id="3kEjc_WJ4oe" role="2czzBx" />
+        <node concept="tppnM" id="3PUmE2k9sxc" role="sWeuL">
+          <node concept="11L4FC" id="3PUmE2k9sxf" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="3PUmE2k9sxn" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2o9xnK" id="3PUmE2kjH7u" role="2gpyvW">
+          <node concept="3clFbS" id="3PUmE2kjH7v" role="2VODD2">
+            <node concept="3clFbF" id="3PUmE2kjH7C" role="3cqZAp">
+              <node concept="Xl_RD" id="3PUmE2kjH7B" role="3clFbG">
+                <property role="Xl_RC" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="3kEjc_WJ2qG" role="2iSdaV" />
       <node concept="3F0ifn" id="3kEjc_WJ2qN" role="3EZMnx">
