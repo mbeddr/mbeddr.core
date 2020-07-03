@@ -34,6 +34,7 @@
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
+    <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -8303,31 +8304,40 @@
                 <node concept="2jxLKc" id="1EZSCJhUwUs" role="1tU5fm" />
               </node>
               <node concept="3clFbS" id="1EZSCJhUwUt" role="Jncv$">
-                <node concept="3clFbF" id="1EZSCJhUwUu" role="3cqZAp">
-                  <node concept="d57v9" id="1EZSCJhUwUv" role="3clFbG">
-                    <node concept="2OqwBi" id="1EZSCJhUyWd" role="37vLTx">
-                      <node concept="1PxgMI" id="1EZSCJhUyI2" role="2Oq$k0">
-                        <node concept="2OqwBi" id="1EZSCJhUxO8" role="1m5AlR">
-                          <node concept="2OqwBi" id="1EZSCJhUxi8" role="2Oq$k0">
-                            <node concept="Jnkvi" id="1EZSCJhUxdY" role="2Oq$k0">
-                              <ref role="1M0zk5" node="1EZSCJhUwUr" resolve="exprWord" />
+                <node concept="3clFbF" id="6TPUpoA06ud" role="3cqZAp">
+                  <node concept="d57v9" id="6TPUpoA08z_" role="3clFbG">
+                    <node concept="37vLTw" id="6TPUpoA08YM" role="37vLTJ">
+                      <ref role="3cqZAo" node="1EZSCJhUn$B" resolve="result" />
+                    </node>
+                    <node concept="2OqwBi" id="5aGJjvFBJzt" role="37vLTx">
+                      <node concept="1PxgMI" id="5aGJjvFBJjh" role="2Oq$k0">
+                        <node concept="2YIFZM" id="30dcBO$w6DU" role="1m5AlR">
+                          <ref role="1Pybhc" to="n7pc:7YIk2VQKlj4" resolve="MeetTypeHelper" />
+                          <ref role="37wK5l" to="n7pc:61lw97FqmmD" resolve="getConcreteNonConstVolatileType" />
+                          <node concept="1PxgMI" id="30dcBO$wfZH" role="37wK5m">
+                            <node concept="chp4Y" id="1SbcsM$FvTd" role="3oSUPX">
+                              <ref role="cht4Q" to="tpck:hYa1RjM" resolve="IType" />
                             </node>
-                            <node concept="3TrEf2" id="1EZSCJhUxxq" role="2OqNvi">
-                              <ref role="3Tt5mk" to="k146:1EZSCJhI$Q8" resolve="expr" />
+                            <node concept="2OqwBi" id="6TPUpoA08pd" role="1m5AlR">
+                              <node concept="2OqwBi" id="6TPUpoA08pe" role="2Oq$k0">
+                                <node concept="Jnkvi" id="6TPUpoA08pf" role="2Oq$k0">
+                                  <ref role="1M0zk5" node="1EZSCJhUwUr" resolve="exprWord" />
+                                </node>
+                                <node concept="3TrEf2" id="6TPUpoA08pg" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="k146:1EZSCJhI$Q8" resolve="expr" />
+                                </node>
+                              </node>
+                              <node concept="3JvlWi" id="6TPUpoA08ph" role="2OqNvi" />
                             </node>
                           </node>
-                          <node concept="3JvlWi" id="1EZSCJhUyo4" role="2OqNvi" />
                         </node>
-                        <node concept="chp4Y" id="79i$vAY60n5" role="3oSUPX">
+                        <node concept="chp4Y" id="1SbcsM$FvSs" role="3oSUPX">
                           <ref role="cht4Q" to="mj1l:7FQByU3CrCQ" resolve="Type" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="1EZSCJhUzhI" role="2OqNvi">
+                      <node concept="2qgKlT" id="5aGJjvFBJUa" role="2OqNvi">
                         <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
                       </node>
-                    </node>
-                    <node concept="37vLTw" id="1EZSCJhUwUz" role="37vLTJ">
-                      <ref role="3cqZAo" node="1EZSCJhUn$B" resolve="result" />
                     </node>
                   </node>
                 </node>

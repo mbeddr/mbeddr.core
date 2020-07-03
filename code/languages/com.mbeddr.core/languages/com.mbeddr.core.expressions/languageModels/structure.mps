@@ -1373,10 +1373,6 @@
     <property role="TrG5h" value="INumericLiteral" />
     <property role="EcuMT" value="5289481837639973214" />
   </node>
-  <node concept="PlHQZ" id="40yNm6PHNqq">
-    <property role="TrG5h" value="IPrintable" />
-    <property role="EcuMT" value="4621481987179755162" />
-  </node>
   <node concept="1TIwiD" id="4QKDGaBu9Vy">
     <property role="3GE5qa" value="vaargs" />
     <property role="TrG5h" value="VaList" />
