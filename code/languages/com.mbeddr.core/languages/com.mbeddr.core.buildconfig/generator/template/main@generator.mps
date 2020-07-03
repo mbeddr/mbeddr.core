@@ -4505,12 +4505,12 @@
             <property role="3G69iL" value=" -o " />
           </node>
           <node concept="5LVLV" id="4QnOXkBlwt_" role="3G69ia" />
-          <node concept="3G69iQ" id="4QnOXkBlwvd" role="3G69ia">
-            <property role="3G69iL" value=" " />
+          <node concept="3G69iQ" id="6TPUpoAmM_B" role="3G69ia">
+            <property role="3G69iL" value=" $(filter %.o," />
           </node>
-          <node concept="UlIwB" id="4QnOXkBm2wb" role="3G69ia" />
+          <node concept="UlIwB" id="6TPUpoAmMJm" role="3G69ia" />
           <node concept="3G69iQ" id="4QnOXkBm2wc" role="3G69ia">
-            <property role="3G69iL" value=" " />
+            <property role="3G69iL" value=") " />
           </node>
           <node concept="3G69iG" id="4QnOXkBm2wo" role="3G69ia">
             <ref role="3G69iJ" node="3z9CtyjnK$A" resolve="ALL_LIBDIR_FLAGS" />
