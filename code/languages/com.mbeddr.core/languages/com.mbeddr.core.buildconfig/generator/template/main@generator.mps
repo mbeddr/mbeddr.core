@@ -1676,7 +1676,7 @@
     </node>
     <node concept="12Nxi1" id="3z9Ctyjalim" role="12RR68" />
     <node concept="3G52F3" id="6TPUpoC8Jma" role="12RR68">
-      <property role="TrG5h" value="EXTRA_CLEANS" />
+      <property role="TrG5h" value="EXTRA_CLEAN_AFKTS" />
       <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
     </node>
     <node concept="12Nxi1" id="6TPUpoC8x9x" role="12RR68" />
@@ -2027,6 +2027,24 @@
         </node>
       </node>
       <node concept="ys$fk" id="6TPUpoByFIE" role="ypkCx">
+        <node concept="3G69iG" id="6TPUpoCls9z" role="ys$fl">
+          <ref role="3G69iJ" node="4JZ_DSx3Gz8" resolve="LIBPFX" />
+          <node concept="1ZhdrF" id="6TPUpoCls9$" role="lGtFl">
+            <property role="2qtEX8" value="variable" />
+            <property role="P3scX" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211590969/3373914745211590970" />
+            <node concept="3$xsQk" id="6TPUpoCls9_" role="3$ytzL">
+              <node concept="3clFbS" id="6TPUpoCls9A" role="2VODD2">
+                <node concept="3clFbF" id="6TPUpoCls9B" role="3cqZAp">
+                  <node concept="2YIFZM" id="6TPUpoClt0K" role="3clFbG">
+                    <ref role="37wK5l" to="ahli:4JZ_DSxnDoJ" resolve="getLibPfxVarName" />
+                    <ref role="1Pybhc" to="ahli:6VqaxF9qVvF" resolve="MakeVariableHelper" />
+                    <node concept="30H73N" id="6TPUpoClt0L" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3G69iQ" id="6TPUpoByFIF" role="ys$fl">
           <property role="3G69iL" value="library" />
           <node concept="17Uvod" id="6TPUpoByG9J" role="lGtFl">
@@ -3111,7 +3129,7 @@
           <property role="3G69iL" value="$(if $(wildcard " />
         </node>
         <node concept="3G69iG" id="6TPUpoC93Yf" role="3G69ia">
-          <ref role="3G69iJ" node="6TPUpoC8Jma" resolve="EXTRA_CLEANS" />
+          <ref role="3G69iJ" node="6TPUpoC8Jma" resolve="EXTRA_CLEAN_AFKTS" />
         </node>
         <node concept="3G69iQ" id="6TPUpoC93Ys" role="3G69ia">
           <property role="3G69iL" value="), " />
@@ -3123,7 +3141,7 @@
           <property role="3G69iL" value=" &quot;RM " />
         </node>
         <node concept="3G69iG" id="6TPUpoC93Zp" role="3G69ia">
-          <ref role="3G69iJ" node="6TPUpoC8Jma" resolve="EXTRA_CLEANS" />
+          <ref role="3G69iJ" node="6TPUpoC8Jma" resolve="EXTRA_CLEAN_AFKTS" />
         </node>
         <node concept="3G69iQ" id="6TPUpoC93ZQ" role="3G69ia">
           <property role="3G69iL" value="&quot;)" />
@@ -3141,7 +3159,7 @@
           <property role="3G69iL" value=" -r " />
         </node>
         <node concept="3G69iG" id="6TPUpoC962a" role="3G69ia">
-          <ref role="3G69iJ" node="6TPUpoC8Jma" resolve="EXTRA_CLEANS" />
+          <ref role="3G69iJ" node="6TPUpoC8Jma" resolve="EXTRA_CLEAN_AFKTS" />
         </node>
       </node>
     </node>
