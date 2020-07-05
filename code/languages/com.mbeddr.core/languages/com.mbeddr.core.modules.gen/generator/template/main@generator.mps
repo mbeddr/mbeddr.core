@@ -40,6 +40,7 @@
     <import index="zgpd" ref="r:5723595d-8d9d-4118-b46d-d56508505371(com.mbeddr.mpsutil.genutil.plugin)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
@@ -623,6 +624,7 @@
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
       <concept id="7246949367815681726" name="com.mbeddr.core.modules.gen.structure.AbstractGenModule" flags="ng" index="2LtQ2N">
         <property id="7246949367815681727" name="fileExtension" index="2LtQ2M" />
+        <property id="7959524747631572718" name="copyrightNoticePath" index="15XPXS" />
       </concept>
       <concept id="1317894735999388454" name="com.mbeddr.core.modules.gen.structure.GenImplModuleImport" flags="ng" index="2OOX5x">
         <reference id="1317894735999388455" name="module" index="2OOX5w" />
@@ -1767,6 +1769,7 @@
     <property role="TrG5h" value="map_ImplementationModule_H" />
     <property role="3GE5qa" value="main" />
     <property role="2LtQ2M" value="ext" />
+    <property role="15XPXS" value="/path/to/copyright-notice" />
     <node concept="4WHVk" id="3ilck8KrEHP" role="1hFVJC">
       <property role="TrG5h" value="x" />
       <node concept="3TlMh9" id="3ilck8KrEHT" role="2DQcEM">
@@ -2259,6 +2262,53 @@
               <node concept="30H73N" id="1zF3M6MSwmc" role="2Oq$k0" />
               <node concept="2qgKlT" id="1zF3M6MSwYi" role="2OqNvi">
                 <ref role="37wK5l" to="qd6m:1zF3M6MR330" resolve="getHeaderFileExtension" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="17Uvod" id="6TPUpoFAk0x" role="lGtFl">
+      <property role="2qtEX9" value="copyrightNoticePath" />
+      <property role="P4ACc" value="62296a07-bc38-46d2-8034-198c24063588/7246949367815681726/7959524747631572718" />
+      <node concept="3zFVjK" id="6TPUpoFAk0y" role="3zH0cK">
+        <node concept="3clFbS" id="6TPUpoFAk0z" role="2VODD2">
+          <node concept="3clFbF" id="6TPUpoFAkQi" role="3cqZAp">
+            <node concept="2OqwBi" id="6TPUpoFABBr" role="3clFbG">
+              <node concept="2OqwBi" id="6TPUpoFAAx_" role="2Oq$k0">
+                <node concept="2OqwBi" id="6TPUpoFA_Qh" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6TPUpoFAwNh" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6TPUpoFAunF" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6TPUpoFAoZ5" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6TPUpoFAl3U" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6TPUpoFAkWn" role="2Oq$k0">
+                            <node concept="1iwH7S" id="6TPUpoFAkQh" role="2Oq$k0" />
+                            <node concept="1st3f0" id="6TPUpoFAl05" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="6TPUpoFAl8k" role="2OqNvi">
+                            <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="6TPUpoFAtiX" role="2OqNvi" />
+                      </node>
+                      <node concept="3Tsc0h" id="6TPUpoFAuON" role="2OqNvi">
+                        <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
+                      </node>
+                    </node>
+                    <node concept="v3k3i" id="6TPUpoFA_y9" role="2OqNvi">
+                      <node concept="chp4Y" id="6TPUpoFA__a" role="v3oSu">
+                        <ref role="cht4Q" to="d0vh:6TPUpoF_U6X" resolve="LegalReferencesConfiguration" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="6TPUpoFAA7R" role="2OqNvi" />
+                </node>
+                <node concept="3TrEf2" id="6TPUpoFAAZZ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="d0vh:6TPUpoF_UXn" resolve="copyrightNoticePicker" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6TPUpoFAC58" role="2OqNvi">
+                <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
               </node>
             </node>
           </node>
@@ -8115,6 +8165,7 @@
     <property role="TrG5h" value="map_ExternalModule_H" />
     <property role="3GE5qa" value="main" />
     <property role="2LtQ2M" value="h" />
+    <property role="15XPXS" value="/path/to/copyright-notice" />
     <node concept="n94m4" id="7e09zBHfMEi" role="lGtFl">
       <ref role="n9lRv" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
     </node>
@@ -8201,7 +8252,7 @@
       <property role="19$mpy" value="&lt;stdbool.h&gt;" />
     </node>
     <node concept="2OOX5x" id="7e09zBHfMEC" role="2IAVDA">
-      <ref role="2OOX5w" node="7e09zBHfMCb" resolve="map_ExternalModule_H" />
+      <ref role="2OOX5w" node="1x_Jrt9Ngzb" resolve="map_ImplementationModule_H" />
       <node concept="2b32R4" id="7e09zBHfMED" role="lGtFl">
         <node concept="3JmXsc" id="7e09zBHfMEE" role="2P8S$">
           <node concept="3clFbS" id="7e09zBHfMEF" role="2VODD2">
@@ -8285,6 +8336,53 @@
         </node>
       </node>
     </node>
+    <node concept="17Uvod" id="6TPUpoG1w5m" role="lGtFl">
+      <property role="2qtEX9" value="copyrightNoticePath" />
+      <property role="P4ACc" value="62296a07-bc38-46d2-8034-198c24063588/7246949367815681726/7959524747631572718" />
+      <node concept="3zFVjK" id="6TPUpoG1w5n" role="3zH0cK">
+        <node concept="3clFbS" id="6TPUpoG1w5o" role="2VODD2">
+          <node concept="3clFbF" id="6TPUpoG1y2C" role="3cqZAp">
+            <node concept="2OqwBi" id="6TPUpoG1y2E" role="3clFbG">
+              <node concept="2OqwBi" id="6TPUpoG1y2F" role="2Oq$k0">
+                <node concept="2OqwBi" id="6TPUpoG1y2G" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6TPUpoG1y2H" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6TPUpoG1y2I" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6TPUpoG1y2J" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6TPUpoG1y2K" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6TPUpoG1y2L" role="2Oq$k0">
+                            <node concept="1iwH7S" id="6TPUpoG1y2M" role="2Oq$k0" />
+                            <node concept="1st3f0" id="6TPUpoG1y2N" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="6TPUpoG1y2O" role="2OqNvi">
+                            <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="6TPUpoG1y2P" role="2OqNvi" />
+                      </node>
+                      <node concept="3Tsc0h" id="6TPUpoG1y2Q" role="2OqNvi">
+                        <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
+                      </node>
+                    </node>
+                    <node concept="v3k3i" id="6TPUpoG1y2R" role="2OqNvi">
+                      <node concept="chp4Y" id="6TPUpoG1y2S" role="v3oSu">
+                        <ref role="cht4Q" to="d0vh:6TPUpoF_U6X" resolve="LegalReferencesConfiguration" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="6TPUpoG1y2T" role="2OqNvi" />
+                </node>
+                <node concept="3TrEf2" id="6TPUpoG1y2U" role="2OqNvi">
+                  <ref role="3Tt5mk" to="d0vh:6TPUpoF_UXn" resolve="copyrightNoticePicker" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6TPUpoG1y2V" role="2OqNvi">
+                <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1pmfR0" id="2aQczEaU4jW">
     <property role="3GE5qa" value="topPrioStuff" />
@@ -8329,6 +8427,7 @@
   <node concept="1hFVJG" id="10qKQykND4Y">
     <property role="TrG5h" value="map_ImplementationModule_C" />
     <property role="3GE5qa" value="main" />
+    <property role="15XPXS" value="/path/to/copyright-notice" />
     <ref role="2qGP$b" node="1x_Jrt9Ngzb" resolve="map_ImplementationModule_H" />
     <node concept="n94m4" id="10qKQykND4Z" role="lGtFl">
       <ref role="n9lRv" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
@@ -8789,6 +8888,53 @@
                 <node concept="2qgKlT" id="10qKQykND5D" role="2OqNvi">
                   <ref role="37wK5l" to="qd6m:4GT16cGhZhY" resolve="importsForImplementation" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="17Uvod" id="6TPUpoG76Bq" role="lGtFl">
+      <property role="2qtEX9" value="copyrightNoticePath" />
+      <property role="P4ACc" value="62296a07-bc38-46d2-8034-198c24063588/7246949367815681726/7959524747631572718" />
+      <node concept="3zFVjK" id="6TPUpoG76Br" role="3zH0cK">
+        <node concept="3clFbS" id="6TPUpoG76Bs" role="2VODD2">
+          <node concept="3clFbF" id="6TPUpoG77ek" role="3cqZAp">
+            <node concept="2OqwBi" id="6TPUpoG77em" role="3clFbG">
+              <node concept="2OqwBi" id="6TPUpoG77en" role="2Oq$k0">
+                <node concept="2OqwBi" id="6TPUpoG77eo" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6TPUpoG77ep" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6TPUpoG77eq" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6TPUpoG77er" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6TPUpoG77es" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6TPUpoG77et" role="2Oq$k0">
+                            <node concept="1iwH7S" id="6TPUpoG77eu" role="2Oq$k0" />
+                            <node concept="1st3f0" id="6TPUpoG77ev" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="6TPUpoG77ew" role="2OqNvi">
+                            <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="6TPUpoG77ex" role="2OqNvi" />
+                      </node>
+                      <node concept="3Tsc0h" id="6TPUpoG77ey" role="2OqNvi">
+                        <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
+                      </node>
+                    </node>
+                    <node concept="v3k3i" id="6TPUpoG77ez" role="2OqNvi">
+                      <node concept="chp4Y" id="6TPUpoG77e$" role="v3oSu">
+                        <ref role="cht4Q" to="d0vh:6TPUpoF_U6X" resolve="LegalReferencesConfiguration" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="6TPUpoG77e_" role="2OqNvi" />
+                </node>
+                <node concept="3TrEf2" id="6TPUpoG77eA" role="2OqNvi">
+                  <ref role="3Tt5mk" to="d0vh:6TPUpoF_UXn" resolve="copyrightNoticePicker" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6TPUpoG77eB" role="2OqNvi">
+                <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
               </node>
             </node>
           </node>
