@@ -23,6 +23,7 @@
     <import index="x3yd" ref="r:35144171-bbda-419f-9015-4d1f075e1db4(com.mbeddr.core.runconfiguration.pluginSolution.plugin)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -88,6 +89,9 @@
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -101,6 +105,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -3104,24 +3109,36 @@
           <node concept="3clFbS" id="6TPUpoFAMUl" role="SfCbr">
             <node concept="3clFbJ" id="6TPUpoFAI$2" role="3cqZAp">
               <node concept="3clFbS" id="6TPUpoFAI$4" role="3clFbx">
-                <node concept="3cpWs6" id="6TPUpoFALij" role="3cqZAp">
-                  <node concept="2ShNRf" id="6TPUpoG37qf" role="3cqZAk">
-                    <node concept="1pGfFk" id="6TPUpoG37qg" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
-                      <node concept="2YIFZM" id="6TPUpoG37qh" role="37wK5m">
-                        <ref role="37wK5l" to="eoo2:~Files.readAllBytes(java.nio.file.Path)" resolve="readAllBytes" />
-                        <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-                        <node concept="2YIFZM" id="6TPUpoG37qi" role="37wK5m">
-                          <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-                          <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-                          <node concept="2OqwBi" id="6TPUpoG37qj" role="37wK5m">
-                            <node concept="13iPFW" id="6TPUpoG37qk" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="6TPUpoG37ql" role="2OqNvi">
-                              <ref role="3TsBF5" to="d0vh:6TPUpoFwFrI" resolve="copyrightNoticePath" />
+                <node concept="3cpWs8" id="6TPUpoGh4$l" role="3cqZAp">
+                  <node concept="3cpWsn" id="6TPUpoGh4$m" role="3cpWs9">
+                    <property role="TrG5h" value="copyrightNotice" />
+                    <node concept="17QB3L" id="6TPUpoGhKhw" role="1tU5fm" />
+                    <node concept="2ShNRf" id="6TPUpoGh4$n" role="33vP2m">
+                      <node concept="1pGfFk" id="6TPUpoGh4$o" role="2ShVmc">
+                        <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                        <node concept="2YIFZM" id="6TPUpoGh4$p" role="37wK5m">
+                          <ref role="37wK5l" to="eoo2:~Files.readAllBytes(java.nio.file.Path)" resolve="readAllBytes" />
+                          <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                          <node concept="2YIFZM" id="6TPUpoGh4$q" role="37wK5m">
+                            <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                            <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                            <node concept="2OqwBi" id="6TPUpoGh4$r" role="37wK5m">
+                              <node concept="13iPFW" id="6TPUpoGh4$s" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="6TPUpoGh4$t" role="2OqNvi">
+                                <ref role="3TsBF5" to="d0vh:6TPUpoFwFrI" resolve="copyrightNoticePath" />
+                              </node>
                             </node>
                           </node>
                         </node>
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="6TPUpoFALij" role="3cqZAp">
+                  <node concept="BsUDl" id="6TPUpoGqUXq" role="3cqZAk">
+                    <ref role="37wK5l" node="6TPUpoGqTDH" resolve="updateLastCopyrightYear" />
+                    <node concept="37vLTw" id="6TPUpoGqVst" role="37wK5m">
+                      <ref role="3cqZAo" node="6TPUpoGh4$m" resolve="copyrightNotice" />
                     </node>
                   </node>
                 </node>
@@ -3201,6 +3218,221 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6TPUpoGqTDH" role="13h7CS">
+      <property role="TrG5h" value="updateLastCopyrightYear" />
+      <node concept="3Tm1VV" id="6TPUpoGqTDI" role="1B3o_S" />
+      <node concept="17QB3L" id="6TPUpoGqUfr" role="3clF45" />
+      <node concept="3clFbS" id="6TPUpoGqTDK" role="3clF47">
+        <node concept="3cpWs8" id="6TPUpoGxWut" role="3cqZAp">
+          <node concept="3cpWsn" id="6TPUpoGxWuu" role="3cpWs9">
+            <property role="TrG5h" value="currentYear" />
+            <node concept="10Oyi0" id="6TPUpoGxUJB" role="1tU5fm" />
+            <node concept="2OqwBi" id="6TPUpoGxWuv" role="33vP2m">
+              <node concept="2YIFZM" id="6TPUpoGxWuw" role="2Oq$k0">
+                <ref role="1Pybhc" to="33ny:~Calendar" resolve="Calendar" />
+                <ref role="37wK5l" to="33ny:~Calendar.getInstance()" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="6TPUpoGxWux" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Calendar.get(int)" resolve="get" />
+                <node concept="10M0yZ" id="6TPUpoGxWuy" role="37wK5m">
+                  <ref role="3cqZAo" to="33ny:~Calendar.YEAR" resolve="YEAR" />
+                  <ref role="1PxDUh" to="33ny:~Calendar" resolve="Calendar" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6TPUpoGxYdc" role="3cqZAp" />
+        <node concept="3SKdUt" id="6TPUpoGxTu6" role="3cqZAp">
+          <node concept="1PaTwC" id="6TPUpoGxTu7" role="3ndbpf">
+            <node concept="3oM_SD" id="6TPUpoGxUse" role="1PaTwD">
+              <property role="3oM_SC" value="Copyright (C) 2006-2015" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxTCZ" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxTD0" role="1PaTwD">
+              <property role="3oM_SC" value="-&gt;" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxTD1" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxTD2" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxTD3" role="1PaTwD">
+              <property role="3oM_SC" value="Copyright (C) 2006-2020" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6TPUpoGqXsZ" role="3cqZAp">
+          <node concept="3cpWsn" id="6TPUpoGqXt0" role="3cpWs9">
+            <property role="TrG5h" value="longCopyrightMatcher" />
+            <node concept="3uibUv" id="6TPUpoGqXs5" role="1tU5fm">
+              <ref role="3uigEE" to="ni5j:~Matcher" resolve="Matcher" />
+            </node>
+            <node concept="2OqwBi" id="6TPUpoGqXt1" role="33vP2m">
+              <node concept="2YIFZM" id="6TPUpoGqXt2" role="2Oq$k0">
+                <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
+                <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+                <node concept="Xl_RD" id="6TPUpoGqXt3" role="37wK5m">
+                  <property role="Xl_RC" value="(Copyright\\s+\\(C\\)\\s+\\d{4}-)\\d{4}" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6TPUpoGqXt4" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
+                <node concept="37vLTw" id="6TPUpoGqXt5" role="37wK5m">
+                  <ref role="3cqZAo" node="6TPUpoGqUgg" resolve="copyrightNotice" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6TPUpoGqZaE" role="3cqZAp">
+          <node concept="3clFbS" id="6TPUpoGqZaG" role="3clFbx">
+            <node concept="3cpWs6" id="6TPUpoGr0fq" role="3cqZAp">
+              <node concept="2OqwBi" id="6TPUpoGr1BL" role="3cqZAk">
+                <node concept="37vLTw" id="6TPUpoGr0U$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6TPUpoGqXt0" resolve="longCopyrightMatcher" />
+                </node>
+                <node concept="liA8E" id="6TPUpoGr1Wx" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Matcher.replaceFirst(java.lang.String)" resolve="replaceFirst" />
+                  <node concept="3cpWs3" id="6TPUpoGr2vN" role="37wK5m">
+                    <node concept="Xl_RD" id="6TPUpoGr2vO" role="3uHU7B">
+                      <property role="Xl_RC" value="$1" />
+                    </node>
+                    <node concept="37vLTw" id="6TPUpoGxWu$" role="3uHU7w">
+                      <ref role="3cqZAo" node="6TPUpoGxWuu" resolve="currentYear" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6TPUpoGqZxO" role="3clFbw">
+            <node concept="37vLTw" id="6TPUpoGqZhx" role="2Oq$k0">
+              <ref role="3cqZAo" node="6TPUpoGqXt0" resolve="longCopyrightMatcher" />
+            </node>
+            <node concept="liA8E" id="6TPUpoGr0eO" role="2OqNvi">
+              <ref role="37wK5l" to="ni5j:~Matcher.find()" resolve="find" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6TPUpoGxShi" role="3cqZAp" />
+        <node concept="3SKdUt" id="6TPUpoGxSA6" role="3cqZAp">
+          <node concept="1PaTwC" id="6TPUpoGxSA7" role="3ndbpf">
+            <node concept="3oM_SD" id="6TPUpoGxSA9" role="1PaTwD">
+              <property role="3oM_SC" value="Copyright (C) 2006" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxSKE" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxSL7" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxSLe" role="1PaTwD">
+              <property role="3oM_SC" value="-&gt;" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxSLv" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxSLE" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6TPUpoGxSLR" role="1PaTwD">
+              <property role="3oM_SC" value="Copyright (C) 2006-2020" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6TPUpoGr4BG" role="3cqZAp">
+          <node concept="3cpWsn" id="6TPUpoGr4BH" role="3cpWs9">
+            <property role="TrG5h" value="shortCopyrightMatcher" />
+            <node concept="3uibUv" id="6TPUpoGr4BI" role="1tU5fm">
+              <ref role="3uigEE" to="ni5j:~Matcher" resolve="Matcher" />
+            </node>
+            <node concept="2OqwBi" id="6TPUpoGr4On" role="33vP2m">
+              <node concept="2YIFZM" id="6TPUpoGr4Oo" role="2Oq$k0">
+                <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
+                <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+                <node concept="Xl_RD" id="6TPUpoGr4Op" role="37wK5m">
+                  <property role="Xl_RC" value="(Copyright\\s+\\(C\\)\\s+)(\\d{4})" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6TPUpoGr4Oq" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
+                <node concept="37vLTw" id="6TPUpoGr4Or" role="37wK5m">
+                  <ref role="3cqZAo" node="6TPUpoGqUgg" resolve="copyrightNotice" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6TPUpoGr6bK" role="3cqZAp">
+          <node concept="3clFbS" id="6TPUpoGr6bL" role="3clFbx">
+            <node concept="3clFbJ" id="6TPUpoGxRBa" role="3cqZAp">
+              <node concept="3clFbS" id="6TPUpoGxRBc" role="3clFbx">
+                <node concept="3cpWs6" id="6TPUpoGr6bM" role="3cqZAp">
+                  <node concept="2OqwBi" id="6TPUpoGr6bN" role="3cqZAk">
+                    <node concept="37vLTw" id="6TPUpoGr7Qj" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6TPUpoGr4BH" resolve="shortCopyrightMatcher" />
+                    </node>
+                    <node concept="liA8E" id="6TPUpoGr6bP" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Matcher.replaceFirst(java.lang.String)" resolve="replaceFirst" />
+                      <node concept="3cpWs3" id="6TPUpoGr6bQ" role="37wK5m">
+                        <node concept="Xl_RD" id="6TPUpoGr6bR" role="3uHU7B">
+                          <property role="Xl_RC" value="$1$2-" />
+                        </node>
+                        <node concept="37vLTw" id="6TPUpoGxWuz" role="3uHU7w">
+                          <ref role="3cqZAo" node="6TPUpoGxWuu" resolve="currentYear" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="17QLQc" id="6TPUpoGxWs2" role="3clFbw">
+                <node concept="2YIFZM" id="6TPUpoGxYU5" role="3uHU7w">
+                  <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="37vLTw" id="6TPUpoGxYV3" role="37wK5m">
+                    <ref role="3cqZAo" node="6TPUpoGxWuu" resolve="currentYear" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6TPUpoGxVn6" role="3uHU7B">
+                  <node concept="37vLTw" id="6TPUpoGxV8j" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6TPUpoGr4BH" resolve="shortCopyrightMatcher" />
+                  </node>
+                  <node concept="liA8E" id="6TPUpoGxVw4" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.group(int)" resolve="group" />
+                    <node concept="3cmrfG" id="6TPUpoGxVIu" role="37wK5m">
+                      <property role="3cmrfH" value="2" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6TPUpoGr6bW" role="3clFbw">
+            <node concept="37vLTw" id="6TPUpoGr7P$" role="2Oq$k0">
+              <ref role="3cqZAo" node="6TPUpoGr4BH" resolve="shortCopyrightMatcher" />
+            </node>
+            <node concept="liA8E" id="6TPUpoGr6bY" role="2OqNvi">
+              <ref role="37wK5l" to="ni5j:~Matcher.find()" resolve="find" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6TPUpoGxUsz" role="3cqZAp" />
+        <node concept="3clFbF" id="6TPUpoGr7x1" role="3cqZAp">
+          <node concept="37vLTw" id="6TPUpoGr7wZ" role="3clFbG">
+            <ref role="3cqZAo" node="6TPUpoGqUgg" resolve="copyrightNotice" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6TPUpoGqUgg" role="3clF46">
+        <property role="TrG5h" value="copyrightNotice" />
+        <node concept="17QB3L" id="6TPUpoGqUgf" role="1tU5fm" />
       </node>
     </node>
     <node concept="13hLZK" id="7Aba6BzyYIR" role="13h7CW">
