@@ -609,7 +609,7 @@
     <node concept="3EZMnI" id="1NwarDnRY0q" role="2wV5jI">
       <node concept="l2Vlx" id="1NwarDnRY0r" role="2iSdaV" />
       <node concept="3F0ifn" id="1NwarDnRY0s" role="3EZMnx">
-        <property role="3F0ifm" value="forign external module" />
+        <property role="3F0ifm" value="foreign external module" />
       </node>
       <node concept="1iCGBv" id="1NwarDnRY0t" role="3EZMnx">
         <ref role="1NtTu8" to="d0vh:1NwarDnRY03" resolve="module" />
