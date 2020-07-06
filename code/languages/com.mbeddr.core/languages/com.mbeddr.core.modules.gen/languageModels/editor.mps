@@ -942,6 +942,15 @@
             <ref role="1NtTu8" to="d0vh:6TPUpoF_UXn" resolve="copyrightNoticePicker" />
           </node>
         </node>
+        <node concept="3EZMnI" id="6TPUpoGH4BC" role="3EZMnx">
+          <node concept="2iRfu4" id="6TPUpoGH4BD" role="2iSdaV" />
+          <node concept="3F0ifn" id="6TPUpoGH4BE" role="3EZMnx">
+            <property role="3F0ifm" value="licsese notice:" />
+          </node>
+          <node concept="3F1sOY" id="6TPUpoGH4BF" role="3EZMnx">
+            <ref role="1NtTu8" to="d0vh:6TPUpoGEO_P" resolve="licenseNoticePicker" />
+          </node>
+        </node>
         <node concept="2iRkQZ" id="6TPUpoF_Utg" role="2iSdaV" />
       </node>
       <node concept="2iRfu4" id="6TPUpoF_UpX" role="2iSdaV" />

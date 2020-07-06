@@ -3904,11 +3904,6 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
             </node>
           </node>
-          <node concept="1SiIV0" id="18IM2C4$5_8" role="3bR37C">
-            <node concept="3bR9La" id="18IM2C4$5_9" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6L0C" resolve="collections.runtime" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="5WQm$FZbT2W" role="3bR37C">
             <node concept="3bR9La" id="5WQm$FZbT2X" role="1SiIV1">
               <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
@@ -3959,6 +3954,11 @@
               <node concept="3qWCbU" id="7ZN_vIiShuI" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6TPUpoHKWjS" role="3bR37C">
+            <node concept="3bR9La" id="6TPUpoHKWjT" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
           </node>
         </node>
@@ -4030,6 +4030,11 @@
             <node concept="3qWCbU" id="7ZN_vIiShuu" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6TPUpoHKWjF" role="3bR37C">
+          <node concept="3bR9La" id="6TPUpoHKWjG" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
           </node>
         </node>
       </node>

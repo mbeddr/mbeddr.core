@@ -5,10 +5,8 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
@@ -40,6 +38,10 @@
     <import index="zgpd" ref="r:5723595d-8d9d-4118-b46d-d56508505371(com.mbeddr.mpsutil.genutil.plugin)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -69,6 +71,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
@@ -88,6 +94,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -403,6 +412,11 @@
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
         <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
+      </concept>
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1763,6 +1777,9 @@
       <property role="TrG5h" value="var2GenVar" />
       <ref role="2rTdP9" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
       <ref role="2rZz_L" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+    </node>
+    <node concept="1puMqW" id="6TPUpoHmEZ_" role="1pvy6N">
+      <ref role="1puQsG" node="6TPUpoGF76U" resolve="copyLegalReferences" />
     </node>
   </node>
   <node concept="1hFVJD" id="1x_Jrt9Ngzb">
@@ -8935,6 +8952,214 @@
               </node>
               <node concept="2qgKlT" id="6TPUpoG77eB" role="2OqNvi">
                 <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1pmfR0" id="6TPUpoGF76U">
+    <property role="3GE5qa" value="main" />
+    <property role="TrG5h" value="copyLegalReferences" />
+    <node concept="1pplIY" id="6TPUpoGF76V" role="1pqMTA">
+      <node concept="3clFbS" id="6TPUpoGF76W" role="2VODD2">
+        <node concept="SfApY" id="6TPUpoGFqE1" role="3cqZAp">
+          <node concept="3clFbS" id="6TPUpoGFqE3" role="SfCbr">
+            <node concept="3cpWs8" id="6TPUpoGFnmy" role="3cqZAp">
+              <node concept="3cpWsn" id="6TPUpoGFnmz" role="3cpWs9">
+                <property role="TrG5h" value="outputLocation" />
+                <node concept="3uibUv" id="6TPUpoGFnmn" role="1tU5fm">
+                  <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
+                </node>
+                <node concept="2YIFZM" id="6TPUpoGFnm$" role="33vP2m">
+                  <ref role="37wK5l" to="w1kc:~SModelOperations.getOutputLocation(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputLocation" />
+                  <ref role="1Pybhc" to="w1kc:~SModelOperations" resolve="SModelOperations" />
+                  <node concept="2OqwBi" id="6TPUpoGYwo5" role="37wK5m">
+                    <node concept="1iwH7S" id="6TPUpoGYvV1" role="2Oq$k0" />
+                    <node concept="1st3f0" id="6TPUpoGYwU7" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6TPUpoGFnWQ" role="3cqZAp">
+              <node concept="3clFbS" id="6TPUpoGFnWS" role="3clFbx">
+                <node concept="YS8fn" id="6TPUpoH2KWe" role="3cqZAp">
+                  <node concept="2ShNRf" id="6TPUpoH2K0W" role="YScLw">
+                    <node concept="1pGfFk" id="6TPUpoH2KsA" role="2ShVmc">
+                      <ref role="37wK5l" to="guwi:~FileNotFoundException.&lt;init&gt;(java.lang.String)" resolve="FileNotFoundException" />
+                      <node concept="3cpWs3" id="6TPUpoH2Kv_" role="37wK5m">
+                        <node concept="2OqwBi" id="6TPUpoH2KvA" role="3uHU7w">
+                          <node concept="1iwH7S" id="6TPUpoH2KvB" role="2Oq$k0" />
+                          <node concept="1st3f0" id="6TPUpoH2KvC" role="2OqNvi" />
+                        </node>
+                        <node concept="Xl_RD" id="6TPUpoH2KvD" role="3uHU7B">
+                          <property role="Xl_RC" value="Failed to retrieve output location for " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="6TPUpoGFoaR" role="3clFbw">
+                <node concept="10Nm6u" id="6TPUpoGFogq" role="3uHU7w" />
+                <node concept="37vLTw" id="6TPUpoGFo1p" role="3uHU7B">
+                  <ref role="3cqZAo" node="6TPUpoGFnmz" resolve="outputLocation" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6TPUpoGFn32" role="3cqZAp" />
+            <node concept="3cpWs8" id="6TPUpoGF8RA" role="3cqZAp">
+              <node concept="3cpWsn" id="6TPUpoGF8RB" role="3cpWs9">
+                <property role="TrG5h" value="legelReferences" />
+                <node concept="3Tqbb2" id="6TPUpoGF8tJ" role="1tU5fm">
+                  <ref role="ehGHo" to="d0vh:6TPUpoF_U6X" resolve="LegalReferencesConfiguration" />
+                </node>
+                <node concept="2OqwBi" id="6TPUpoGF8RC" role="33vP2m">
+                  <node concept="2OqwBi" id="6TPUpoGF8RD" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6TPUpoGF8RE" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6TPUpoGF8RF" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6TPUpoGF8RG" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6TPUpoGF8RH" role="2Oq$k0">
+                            <node concept="1iwH7S" id="6TPUpoGF8RI" role="2Oq$k0" />
+                            <node concept="1st3f0" id="6TPUpoGF8RJ" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="6TPUpoGF8RK" role="2OqNvi">
+                            <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="6TPUpoGF8RL" role="2OqNvi" />
+                      </node>
+                      <node concept="3Tsc0h" id="6TPUpoGF8RM" role="2OqNvi">
+                        <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
+                      </node>
+                    </node>
+                    <node concept="v3k3i" id="6TPUpoGF8RN" role="2OqNvi">
+                      <node concept="chp4Y" id="6TPUpoGF8RO" role="v3oSu">
+                        <ref role="cht4Q" to="d0vh:6TPUpoF_U6X" resolve="LegalReferencesConfiguration" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="6TPUpoGF8RP" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6TPUpoHsv$0" role="3cqZAp" />
+            <node concept="3clFbJ" id="6TPUpoGF8Xa" role="3cqZAp">
+              <node concept="3clFbS" id="6TPUpoGF8Xc" role="3clFbx">
+                <node concept="3cpWs8" id="6TPUpoHjfpr" role="3cqZAp">
+                  <node concept="3cpWsn" id="6TPUpoHjfps" role="3cpWs9">
+                    <property role="TrG5h" value="licenseNoticePath" />
+                    <node concept="3uibUv" id="6TPUpoHjfjE" role="1tU5fm">
+                      <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+                    </node>
+                    <node concept="2YIFZM" id="6TPUpoHjfpt" role="33vP2m">
+                      <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                      <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                      <node concept="2OqwBi" id="6TPUpoHjfpu" role="37wK5m">
+                        <node concept="2OqwBi" id="6TPUpoHjfpv" role="2Oq$k0">
+                          <node concept="37vLTw" id="6TPUpoHjfpw" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6TPUpoGF8RB" resolve="legelReferences" />
+                          </node>
+                          <node concept="3TrEf2" id="6TPUpoHjfpx" role="2OqNvi">
+                            <ref role="3Tt5mk" to="d0vh:6TPUpoGEO_P" resolve="licenseNoticePicker" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="6TPUpoHjfpy" role="2OqNvi">
+                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6TPUpoHr0OG" role="3cqZAp">
+                  <node concept="2YIFZM" id="6TPUpoHr0OH" role="3clFbG">
+                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                    <ref role="37wK5l" to="eoo2:~Files.copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption...)" resolve="copy" />
+                    <node concept="37vLTw" id="6TPUpoHjfpz" role="37wK5m">
+                      <ref role="3cqZAo" node="6TPUpoHjfps" resolve="licenseNoticePath" />
+                    </node>
+                    <node concept="2OqwBi" id="6TPUpoHjeN7" role="37wK5m">
+                      <node concept="2YIFZM" id="6TPUpoHr0OI" role="2Oq$k0">
+                        <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                        <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                        <node concept="2OqwBi" id="6TPUpoHr0OJ" role="37wK5m">
+                          <node concept="37vLTw" id="6TPUpoHr0OK" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6TPUpoGFnmz" resolve="outputLocation" />
+                          </node>
+                          <node concept="liA8E" id="6TPUpoHr0OL" role="2OqNvi">
+                            <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6TPUpoHjfi7" role="2OqNvi">
+                        <ref role="37wK5l" to="eoo2:~Path.resolve(java.nio.file.Path)" resolve="resolve" />
+                        <node concept="2OqwBi" id="6TPUpoHjhFx" role="37wK5m">
+                          <node concept="37vLTw" id="6TPUpoHjhcn" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6TPUpoHjfps" resolve="licenseNoticePath" />
+                          </node>
+                          <node concept="liA8E" id="6TPUpoHjiki" role="2OqNvi">
+                            <ref role="37wK5l" to="eoo2:~Path.getFileName()" resolve="getFileName" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rm8GO" id="6TPUpoHr0OM" role="37wK5m">
+                      <ref role="1Px2BO" to="eoo2:~StandardCopyOption" resolve="StandardCopyOption" />
+                      <ref role="Rm8GQ" to="eoo2:~StandardCopyOption.REPLACE_EXISTING" resolve="REPLACE_EXISTING" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="6TPUpoGF9V7" role="3clFbw">
+                <node concept="3fqX7Q" id="6TPUpoGFbgh" role="3uHU7w">
+                  <node concept="2OqwBi" id="6TPUpoGFbgj" role="3fr31v">
+                    <node concept="2OqwBi" id="6TPUpoGFbgk" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6TPUpoGFbgl" role="2Oq$k0">
+                        <node concept="37vLTw" id="6TPUpoGFbgm" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6TPUpoGF8RB" resolve="legelReferences" />
+                        </node>
+                        <node concept="3TrEf2" id="6TPUpoGFbgn" role="2OqNvi">
+                          <ref role="3Tt5mk" to="d0vh:6TPUpoGEO_P" resolve="licenseNoticePicker" />
+                        </node>
+                      </node>
+                      <node concept="2yIwOk" id="6TPUpoGFbgo" role="2OqNvi" />
+                    </node>
+                    <node concept="liA8E" id="6TPUpoGFbgp" role="2OqNvi">
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="6TPUpoGF9O3" role="3uHU7B">
+                  <node concept="2OqwBi" id="6TPUpoGF92N" role="3uHU7B">
+                    <node concept="37vLTw" id="6TPUpoGF8Y7" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6TPUpoGF8RB" resolve="legelReferences" />
+                    </node>
+                    <node concept="3TrEf2" id="6TPUpoGF9rJ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="d0vh:6TPUpoGEO_P" resolve="licenseNoticePicker" />
+                    </node>
+                  </node>
+                  <node concept="10Nm6u" id="6TPUpoGF9Uz" role="3uHU7w" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="6TPUpoGFqE4" role="TEbGg">
+            <node concept="3cpWsn" id="6TPUpoGFqE6" role="TDEfY">
+              <property role="TrG5h" value="ex" />
+              <node concept="3uibUv" id="6TPUpoGFqG$" role="1tU5fm">
+                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="6TPUpoGFqEa" role="TDEfX">
+              <node concept="RRSsy" id="6TPUpoGFr25" role="3cqZAp">
+                <property role="RRSoG" value="gZ5fh_4/error" />
+                <node concept="Xl_RD" id="6TPUpoGFr27" role="RRSoy">
+                  <property role="Xl_RC" value="Failed to copy license references" />
+                </node>
+                <node concept="37vLTw" id="6TPUpoGFr29" role="RRSow">
+                  <ref role="3cqZAo" node="6TPUpoGFqE6" resolve="ex" />
+                </node>
               </node>
             </node>
           </node>

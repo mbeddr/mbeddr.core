@@ -489,7 +489,12 @@
       <property role="IQ2ns" value="7959524747632947031" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="copyrightNoticePicker" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
+    </node>
+    <node concept="1TJgyj" id="6TPUpoGEO_P" role="1TKVEi">
+      <property role="IQ2ns" value="7959524747651008885" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="licenseNoticePicker" />
       <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
     </node>
   </node>
