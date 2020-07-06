@@ -341,7 +341,7 @@
       <ref role="1Mm5Yu" to="sjfu:bq6A3e6cTE" resolve="RunMake" />
     </node>
     <node concept="15KeUm" id="2obGnlRg4rc" role="15LFul">
-      <property role="TrG5h" value="runProcessors" />
+      <property role="TrG5h" value="runPostProcessors" />
       <node concept="15KeVb" id="2obGnlRg4re" role="15LFui">
         <property role="3HPxAp" value="7fB872ucjBA/AFTER" />
         <ref role="15KeV8" to="tpcq:5L5h3brvDHA" resolve="textGen" />
