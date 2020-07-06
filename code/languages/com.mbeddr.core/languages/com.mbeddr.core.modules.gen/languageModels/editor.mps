@@ -945,10 +945,19 @@
         <node concept="3EZMnI" id="6TPUpoGH4BC" role="3EZMnx">
           <node concept="2iRfu4" id="6TPUpoGH4BD" role="2iSdaV" />
           <node concept="3F0ifn" id="6TPUpoGH4BE" role="3EZMnx">
-            <property role="3F0ifm" value="licsese notice:" />
+            <property role="3F0ifm" value="license URL:" />
           </node>
-          <node concept="3F1sOY" id="6TPUpoGH4BF" role="3EZMnx">
-            <ref role="1NtTu8" to="d0vh:6TPUpoGEO_P" resolve="licenseNoticePicker" />
+          <node concept="3F0A7n" id="6TPUpoI1F6P" role="3EZMnx">
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="d0vh:6TPUpoI1F3l" resolve="licenseURL" />
+          </node>
+          <node concept="3F0ifn" id="6TPUpoI1F72" role="3EZMnx">
+            <property role="3F0ifm" value="as" />
+          </node>
+          <node concept="3F0A7n" id="6TPUpoI1FaS" role="3EZMnx">
+            <property role="1$x2rV" value="LICENSE" />
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="d0vh:6TPUpoI1F7j" resolve="licenseFileName" />
           </node>
         </node>
         <node concept="2iRkQZ" id="6TPUpoF_Utg" role="2iSdaV" />

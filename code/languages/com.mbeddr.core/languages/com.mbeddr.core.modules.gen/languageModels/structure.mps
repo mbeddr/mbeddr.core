@@ -491,11 +491,15 @@
       <property role="20kJfa" value="copyrightNoticePicker" />
       <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
     </node>
-    <node concept="1TJgyj" id="6TPUpoGEO_P" role="1TKVEi">
-      <property role="IQ2ns" value="7959524747651008885" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="licenseNoticePicker" />
-      <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
+    <node concept="1TJgyi" id="6TPUpoI1F3l" role="1TKVEl">
+      <property role="IQ2nx" value="7959524747673776341" />
+      <property role="TrG5h" value="licenseURL" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6TPUpoI1F7j" role="1TKVEl">
+      <property role="IQ2nx" value="7959524747673776595" />
+      <property role="TrG5h" value="licenseFileName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

@@ -42,7 +42,10 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
+    <import index="1ukv" ref="r:b37b80ef-b920-4af7-9966-3a77c955c860(com.mbeddr.core.modules.gen.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
@@ -70,10 +73,6 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
-      </concept>
-      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
-        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
-        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
@@ -9047,100 +9046,63 @@
             <node concept="3clFbH" id="6TPUpoHsv$0" role="3cqZAp" />
             <node concept="3clFbJ" id="6TPUpoGF8Xa" role="3cqZAp">
               <node concept="3clFbS" id="6TPUpoGF8Xc" role="3clFbx">
-                <node concept="3cpWs8" id="6TPUpoHjfpr" role="3cqZAp">
-                  <node concept="3cpWsn" id="6TPUpoHjfps" role="3cpWs9">
-                    <property role="TrG5h" value="licenseNoticePath" />
-                    <node concept="3uibUv" id="6TPUpoHjfjE" role="1tU5fm">
-                      <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
-                    </node>
-                    <node concept="2YIFZM" id="6TPUpoHjfpt" role="33vP2m">
-                      <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-                      <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-                      <node concept="2OqwBi" id="6TPUpoHjfpu" role="37wK5m">
-                        <node concept="2OqwBi" id="6TPUpoHjfpv" role="2Oq$k0">
-                          <node concept="37vLTw" id="6TPUpoHjfpw" role="2Oq$k0">
+                <node concept="3clFbF" id="6TPUpoI1GuQ" role="3cqZAp">
+                  <node concept="2YIFZM" id="6TPUpoI1H4z" role="3clFbG">
+                    <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
+                    <ref role="37wK5l" to="8oaq:~FileUtils.copyURLToFile(java.net.URL,java.io.File,int,int)" resolve="copyURLToFile" />
+                    <node concept="2ShNRf" id="6TPUpoI1OY_" role="37wK5m">
+                      <node concept="1pGfFk" id="6TPUpoI1PV5" role="2ShVmc">
+                        <ref role="37wK5l" to="zf81:~URL.&lt;init&gt;(java.lang.String)" resolve="URL" />
+                        <node concept="2OqwBi" id="6TPUpoI1HjZ" role="37wK5m">
+                          <node concept="37vLTw" id="6TPUpoI1H6f" role="2Oq$k0">
                             <ref role="3cqZAo" node="6TPUpoGF8RB" resolve="legelReferences" />
                           </node>
-                          <node concept="3TrEf2" id="6TPUpoHjfpx" role="2OqNvi">
-                            <ref role="3Tt5mk" to="d0vh:6TPUpoGEO_P" resolve="licenseNoticePicker" />
+                          <node concept="3TrcHB" id="6TPUpoI1HpA" role="2OqNvi">
+                            <ref role="3TsBF5" to="d0vh:6TPUpoI1F3l" resolve="licenseURL" />
                           </node>
-                        </node>
-                        <node concept="2qgKlT" id="6TPUpoHjfpy" role="2OqNvi">
-                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="6TPUpoHr0OG" role="3cqZAp">
-                  <node concept="2YIFZM" id="6TPUpoHr0OH" role="3clFbG">
-                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-                    <ref role="37wK5l" to="eoo2:~Files.copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption...)" resolve="copy" />
-                    <node concept="37vLTw" id="6TPUpoHjfpz" role="37wK5m">
-                      <ref role="3cqZAo" node="6TPUpoHjfps" resolve="licenseNoticePath" />
-                    </node>
-                    <node concept="2OqwBi" id="6TPUpoHjeN7" role="37wK5m">
-                      <node concept="2YIFZM" id="6TPUpoHr0OI" role="2Oq$k0">
-                        <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-                        <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-                        <node concept="2OqwBi" id="6TPUpoHr0OJ" role="37wK5m">
-                          <node concept="37vLTw" id="6TPUpoHr0OK" role="2Oq$k0">
+                    <node concept="2ShNRf" id="6TPUpoI1MQV" role="37wK5m">
+                      <node concept="1pGfFk" id="6TPUpoI1Nxi" role="2ShVmc">
+                        <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
+                        <node concept="2OqwBi" id="6TPUpoI1NKu" role="37wK5m">
+                          <node concept="37vLTw" id="6TPUpoI1N_X" role="2Oq$k0">
                             <ref role="3cqZAo" node="6TPUpoGFnmz" resolve="outputLocation" />
                           </node>
-                          <node concept="liA8E" id="6TPUpoHr0OL" role="2OqNvi">
+                          <node concept="liA8E" id="6TPUpoI1NTy" role="2OqNvi">
                             <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
                           </node>
                         </node>
-                      </node>
-                      <node concept="liA8E" id="6TPUpoHjfi7" role="2OqNvi">
-                        <ref role="37wK5l" to="eoo2:~Path.resolve(java.nio.file.Path)" resolve="resolve" />
-                        <node concept="2OqwBi" id="6TPUpoHjhFx" role="37wK5m">
-                          <node concept="37vLTw" id="6TPUpoHjhcn" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6TPUpoHjfps" resolve="licenseNoticePath" />
+                        <node concept="2OqwBi" id="6TPUpoI1OeM" role="37wK5m">
+                          <node concept="37vLTw" id="6TPUpoI1O72" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6TPUpoGF8RB" resolve="legelReferences" />
                           </node>
-                          <node concept="liA8E" id="6TPUpoHjiki" role="2OqNvi">
-                            <ref role="37wK5l" to="eoo2:~Path.getFileName()" resolve="getFileName" />
+                          <node concept="2qgKlT" id="6TPUpoI1Tk3" role="2OqNvi">
+                            <ref role="37wK5l" to="1ukv:6TPUpoI1R0S" resolve="getEffectiveLicenseFileName" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="Rm8GO" id="6TPUpoHr0OM" role="37wK5m">
-                      <ref role="1Px2BO" to="eoo2:~StandardCopyOption" resolve="StandardCopyOption" />
-                      <ref role="Rm8GQ" to="eoo2:~StandardCopyOption.REPLACE_EXISTING" resolve="REPLACE_EXISTING" />
+                    <node concept="3cmrfG" id="6TPUpoI1Orn" role="37wK5m">
+                      <property role="3cmrfH" value="500" />
+                    </node>
+                    <node concept="3cmrfG" id="6TPUpoI1OD9" role="37wK5m">
+                      <property role="3cmrfH" value="500" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="1Wc70l" id="6TPUpoGF9V7" role="3clFbw">
-                <node concept="3fqX7Q" id="6TPUpoGFbgh" role="3uHU7w">
-                  <node concept="2OqwBi" id="6TPUpoGFbgj" role="3fr31v">
-                    <node concept="2OqwBi" id="6TPUpoGFbgk" role="2Oq$k0">
-                      <node concept="2OqwBi" id="6TPUpoGFbgl" role="2Oq$k0">
-                        <node concept="37vLTw" id="6TPUpoGFbgm" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6TPUpoGF8RB" resolve="legelReferences" />
-                        </node>
-                        <node concept="3TrEf2" id="6TPUpoGFbgn" role="2OqNvi">
-                          <ref role="3Tt5mk" to="d0vh:6TPUpoGEO_P" resolve="licenseNoticePicker" />
-                        </node>
-                      </node>
-                      <node concept="2yIwOk" id="6TPUpoGFbgo" role="2OqNvi" />
-                    </node>
-                    <node concept="liA8E" id="6TPUpoGFbgp" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
-                    </node>
+              <node concept="3y3z36" id="6TPUpoGF9O3" role="3clFbw">
+                <node concept="2OqwBi" id="6TPUpoGF92N" role="3uHU7B">
+                  <node concept="37vLTw" id="6TPUpoGF8Y7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6TPUpoGF8RB" resolve="legelReferences" />
+                  </node>
+                  <node concept="3TrcHB" id="6TPUpoI1G2F" role="2OqNvi">
+                    <ref role="3TsBF5" to="d0vh:6TPUpoI1F3l" resolve="licenseURL" />
                   </node>
                 </node>
-                <node concept="3y3z36" id="6TPUpoGF9O3" role="3uHU7B">
-                  <node concept="2OqwBi" id="6TPUpoGF92N" role="3uHU7B">
-                    <node concept="37vLTw" id="6TPUpoGF8Y7" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6TPUpoGF8RB" resolve="legelReferences" />
-                    </node>
-                    <node concept="3TrEf2" id="6TPUpoGF9rJ" role="2OqNvi">
-                      <ref role="3Tt5mk" to="d0vh:6TPUpoGEO_P" resolve="licenseNoticePicker" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="6TPUpoGF9Uz" role="3uHU7w" />
-                </node>
+                <node concept="10Nm6u" id="6TPUpoGF9Uz" role="3uHU7w" />
               </node>
             </node>
           </node>
