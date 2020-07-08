@@ -10266,10 +10266,10 @@
       <node concept="10Oyi0" id="3Q66PS3oypC" role="3clF45" />
     </node>
     <node concept="13i0hz" id="4O$fzoYWk_s" role="13h7CS">
-      <property role="TrG5h" value="getPrintfFormatString" />
+      <property role="TrG5h" value="getPrintfFormatSpecifier" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
       <node concept="3Tm1VV" id="4O$fzoYWk_t" role="1B3o_S" />
       <node concept="3clFbS" id="4O$fzoYWk_y" role="3clF47">
         <node concept="3clFbF" id="4O$fzoYWuTP" role="3cqZAp">
@@ -10734,10 +10734,10 @@
       <node concept="10Oyi0" id="3TJMuIHZI1C" role="3clF45" />
     </node>
     <node concept="13i0hz" id="3TJMuIHZI1D" role="13h7CS">
-      <property role="TrG5h" value="getPrintfFormatString" />
+      <property role="TrG5h" value="getPrintfFormatSpecifier" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
       <node concept="3Tm1VV" id="3TJMuIHZI1E" role="1B3o_S" />
       <node concept="3clFbS" id="3TJMuIHZI1F" role="3clF47">
         <node concept="3clFbF" id="3TJMuIHZI1G" role="3cqZAp">

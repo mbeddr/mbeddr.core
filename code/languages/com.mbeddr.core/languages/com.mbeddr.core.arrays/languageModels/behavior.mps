@@ -460,8 +460,8 @@
       <node concept="3Tm1VV" id="fwMInzpI0y" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="4XMHJL4Gf_U" role="13h7CS">
-      <property role="TrG5h" value="getPrintfFormatString" />
-      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <property role="TrG5h" value="getPrintfFormatSpecifier" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
       <node concept="3clFbS" id="4XMHJL4Gf_X" role="3clF47">
         <node concept="3clFbJ" id="4XMHJL4GfA0" role="3cqZAp">
           <node concept="22lmx$" id="4XMHJL4GfBi" role="3clFbw">
@@ -3409,8 +3409,8 @@
       </node>
     </node>
     <node concept="13i0hz" id="6TPUpoAdmK0" role="13h7CS">
-      <property role="TrG5h" value="getPrintfFormatString" />
-      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <property role="TrG5h" value="getPrintfFormatSpecifier" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
       <node concept="3clFbS" id="6TPUpoAdmK3" role="3clF47">
         <node concept="3cpWs6" id="6TPUpoAdruD" role="3cqZAp">
           <node concept="3K4zz7" id="6TPUpoAdteq" role="3cqZAk">
@@ -4529,8 +4529,8 @@
       </node>
     </node>
     <node concept="13i0hz" id="4XMHJL4Gf_L" role="13h7CS">
-      <property role="TrG5h" value="getPrintfFormatString" />
-      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <property role="TrG5h" value="getPrintfFormatSpecifier" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
       <node concept="3clFbS" id="4XMHJL4Gf_O" role="3clF47">
         <node concept="3clFbF" id="4XMHJL4Gf_R" role="3cqZAp">
           <node concept="Xl_RD" id="4XMHJL4Gf_S" role="3clFbG">
@@ -5285,8 +5285,8 @@
       <node concept="17QB3L" id="3xqp6yfaGjO" role="3clF45" />
     </node>
     <node concept="13i0hz" id="4XMHJL4II9J" role="13h7CS">
-      <property role="TrG5h" value="getPrintfFormatString" />
-      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <property role="TrG5h" value="getPrintfFormatSpecifier" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
       <node concept="3clFbS" id="4XMHJL4II9M" role="3clF47">
         <node concept="3clFbF" id="4XMHJL4II9P" role="3cqZAp">
           <node concept="Xl_RD" id="4XMHJL4II9Q" role="3clFbG">
