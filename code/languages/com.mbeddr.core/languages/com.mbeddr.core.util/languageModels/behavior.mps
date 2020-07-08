@@ -355,6 +355,7 @@
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -8250,6 +8251,10 @@
     </node>
     <node concept="13i0hz" id="1EZSCJhUnyz" role="13h7CS">
       <property role="TrG5h" value="messageString" />
+      <node concept="37vLTG" id="4zXqh6UntSq" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="4zXqh6UntSr" role="1tU5fm" />
+      </node>
       <node concept="3Tm1VV" id="1EZSCJhUny$" role="1B3o_S" />
       <node concept="3clFbS" id="1EZSCJhUny_" role="3clF47">
         <node concept="3cpWs8" id="1EZSCJhUn$$" role="3cqZAp">
@@ -8336,7 +8341,10 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="4zXqh6TOjk_" role="2OqNvi">
-                        <ref role="37wK5l" to="ywuz:4zXqh6Tyh0Y" resolve="getEffectivePrintfFormatString" />
+                        <ref role="37wK5l" to="ywuz:4zXqh6Tyh0Y" resolve="getEffectivePrintfFormatSpecifier" />
+                        <node concept="37vLTw" id="4zXqh6VB1PC" role="37wK5m">
+                          <ref role="3cqZAo" node="4zXqh6UntSq" resolve="model" />
+                        </node>
                       </node>
                     </node>
                   </node>
