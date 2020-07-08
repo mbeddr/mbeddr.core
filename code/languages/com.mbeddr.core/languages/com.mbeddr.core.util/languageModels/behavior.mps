@@ -9704,5 +9704,25 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="4zXqh6WD7Fv">
+    <property role="3GE5qa" value="reporting.config" />
+    <ref role="13h7C2" to="k146:3R$6B6bKEUc" resolve="PrintfReportingStrategy" />
+    <node concept="13i0hz" id="4zXqh6WD7FE" role="13h7CS">
+      <property role="TrG5h" value="getPrintfFunctionHeader" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="4zXqh6WD7FF" role="1B3o_S" />
+      <node concept="17QB3L" id="4zXqh6WD7FY" role="3clF45" />
+      <node concept="3clFbS" id="4zXqh6WD7FH" role="3clF47">
+        <node concept="3clFbF" id="4zXqh6WD7GV" role="3cqZAp">
+          <node concept="Xl_RD" id="4zXqh6WD7GU" role="3clFbG">
+            <property role="Xl_RC" value="&lt;stdio.h&gt;" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="4zXqh6WD7Fw" role="13h7CW">
+      <node concept="3clFbS" id="4zXqh6WD7Fx" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

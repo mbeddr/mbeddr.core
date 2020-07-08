@@ -30,6 +30,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" implicit="true" />
+    <import index="yi43" ref="r:1e8a195e-9746-45e6-a347-a6bdffae3936(com.mbeddr.core.util.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1314,6 +1315,34 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="4zXqh6UntSu" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="4zXqh6WD6N8" role="jymVt" />
+                <node concept="3clFb_" id="4zXqh6WD6$k" role="jymVt">
+                  <property role="TrG5h" value="getPrintfFunctionHeader" />
+                  <node concept="37vLTG" id="4zXqh6WD6$l" role="3clF46">
+                    <property role="TrG5h" value="model" />
+                    <node concept="H_c77" id="4zXqh6WD6$m" role="1tU5fm" />
+                  </node>
+                  <node concept="3Tm1VV" id="4zXqh6WD6$o" role="1B3o_S" />
+                  <node concept="17QB3L" id="4zXqh6WD6$p" role="3clF45" />
+                  <node concept="3clFbS" id="4zXqh6WD6$r" role="3clF47">
+                    <node concept="3clFbF" id="4zXqh6WD73y" role="3cqZAp">
+                      <node concept="2OqwBi" id="4zXqh6WD7kx" role="3clFbG">
+                        <node concept="1rXfSq" id="4zXqh6WD73$" role="2Oq$k0">
+                          <ref role="37wK5l" node="4zXqh6VIjoA" resolve="getPrintfReportingStrategy" />
+                          <node concept="37vLTw" id="4zXqh6WD73_" role="37wK5m">
+                            <ref role="3cqZAo" node="4zXqh6WD6$l" resolve="model" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="4zXqh6WD7YA" role="2OqNvi">
+                          <ref role="37wK5l" to="yi43:4zXqh6WD7FE" resolve="getPrintfFunctionHeader" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="4zXqh6WD6$s" role="2AJF6D">
                     <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
