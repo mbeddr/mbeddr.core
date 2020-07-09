@@ -1137,5 +1137,13 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="4zXqh6Y0kBU">
+    <property role="EcuMT" value="5259475464761723386" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="AnyStatemachineType" />
+    <property role="R4oN_" value="a type that represents any kind of state machine" />
+    <property role="34LRSv" value="any statemachine" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+  </node>
 </model>
 
