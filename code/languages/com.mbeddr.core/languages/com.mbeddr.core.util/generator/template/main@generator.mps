@@ -18130,6 +18130,26 @@
               <node concept="19_wF0" id="5aGJjvFBzsj" role="19_wF2">
                 <property role="19_wF3" value=");" />
               </node>
+              <node concept="17Uvod" id="4zXqh6WVmuH" role="lGtFl">
+                <property role="2qtEX9" value="requiredStdHeader" />
+                <property role="P4ACc" value="a9d69647-0840-491e-bf39-2eb0805d2011/3830958861296871078/6275956088645591175" />
+                <node concept="3zFVjK" id="4zXqh6WVmuI" role="3zH0cK">
+                  <node concept="3clFbS" id="4zXqh6WVmuJ" role="2VODD2">
+                    <node concept="3clFbF" id="4zXqh6WVn28" role="3cqZAp">
+                      <node concept="2OqwBi" id="4zXqh6WVnil" role="3clFbG">
+                        <node concept="30H73N" id="4zXqh6WVn27" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="4zXqh6WVnVu" role="2OqNvi">
+                          <ref role="37wK5l" to="ywuz:4zXqh6WD4j8" resolve="getPrintfFunctionHeader" />
+                          <node concept="2OqwBi" id="4zXqh6WVocq" role="37wK5m">
+                            <node concept="1iwH7S" id="4zXqh6WVo2K" role="2Oq$k0" />
+                            <node concept="1st3f0" id="4zXqh6WVor3" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="raruj" id="5aGJjvFBzsX" role="lGtFl" />
             <node concept="1WS0z7" id="5aGJjvFBzt8" role="lGtFl">
