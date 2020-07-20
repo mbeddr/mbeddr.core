@@ -62,6 +62,7 @@ task install_spawner(type: Copy, dependsOn: build_spawner) {
     include "mbeddr.spawner/"
     into "$mpsPluginsDir"
 }
+tasks.getByPath(':build:com.mbeddr:install').dependsOn install_spawner
 
 ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
         classpath: configurations.junitAnt.asPath)
@@ -217,5 +218,3 @@ task publishMbeddrToLocal (dependsOn: ['publishMbeddrPublicationToMavenLocal',
 ':build:com.mbeddr:platform:publishMbeddrPlatformToLocal']) {}
 
 check.dependsOn test_mbeddr
-
-tasks.getByPath(':build:com.mbeddr:install').dependsOn install_spawner , ':build:com.mbeddr:platform:install_actionsfilter'

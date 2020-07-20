@@ -6,10 +6,15 @@ ext.mpsHomeDir = rootProject.file(findNonEmptyProperty('mpsHomeDir') ?: "MPS/MPS
 
 def userHome = System.properties['user.home']
 def mpsPluginsDirPattern
-if (System.properties['os.name'].toLowerCase().contains('mac')) {
-    mpsPluginsDirPattern = "$userHome/Library/Application Support/%s"
+def os_name = System.properties['os.name'].toLowerCase()
+// calculate system-specific plugins directory (since MPS 2020.1) according to:
+// https://www.jetbrains.com/help/idea/tuning-the-ide.html?_ga=2.229302868.95678467.1595072035-1152171669.1521775253#plugins-directory
+if (os_name.contains('mac')) {
+    mpsPluginsDirPattern = "$userHome/Library/Application Support/JetBrains/%s/plugins"
+} else if (os_name.contains('win')) {
+    mpsPluginsDirPattern = "${System.getenv('APPDATA')}\\JetBrains\\%s\\plugins"
 } else {
-    mpsPluginsDirPattern = "$userHome/.%s/config/plugins"
+    mpsPluginsDirPattern = "$userHome/.local/share/JetBrains/%s"
 }
 
 if (project.hasProperty("MPS_PATHS_SELECTOR")) {
@@ -19,14 +24,15 @@ if (project.hasProperty("MPS_PATHS_SELECTOR")) {
 }
 
 task install() {
+    // dependencies to this task are added dynamically from other scripts (com.mbeddr.platform, com.mbeddr.languages)
     description "Install the required plugins into the MPS plugin repository"
     group "Build Setup"
     doFirst {
         // check parent gradle file for definition of the variables
         println "Installing required mbeddr plugins to '$mpsPluginsDir'"
         if (!project.hasProperty("MPS_PATHS_SELECTOR")) {
-            println "To change 'MPS<>' part, pass MPS_PATHS_SELECTOR property to gradle with -PMPS_PATHS_SELECTOR=<custom path selector>"
-            println "The path selector only contains the the actual selector for instance \"MPS2017.3\" not the full qualifies path to the user plugin directory."
+            println "To change 'MPS<...>' part, pass MPS_PATHS_SELECTOR property to gradle with -PMPS_PATHS_SELECTOR=<custom path selector>"
+            println "The path selector only contains the actual MPS version, for instance \"MPS2017.3\", not the full path to the user plugin directory."
         }
     }
 }

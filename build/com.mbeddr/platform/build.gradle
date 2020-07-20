@@ -60,21 +60,13 @@ task publish_allScripts(type: Zip, dependsOn: build_allScripts) {
 }
 
 /*
-task build_sl_all(type: BuildLanguages, dependsOn: copy_allScripts) {
-    script scriptFile('sl-all/build.xml')
-}
-
-task copy_sl_all_nativelibs(type: Copy, dependsOn: copy_allScripts) {
-    from "$rootDir/artifacts/mps-sl-all/"
-    include "de.itemis.mps.nativelibs.loader/"
-    into "$mpsHomeDir/plugins"
-}
-
-task install_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
-    from "$rootDir/artifacts/mps-sl-all/"
+// since MPS 2019.2 nativlibs plugin can be installed from the marketplace
+task install_nativelibs_loader(type: Copy, dependsOn: resolve_extensions) {
+    from "$artifactsDir/de.itemis.mps.extensions/"
     include "de.itemis.mps.nativelibs.loader/"
     into "$mpsPluginsDir"
 }
+tasks.getByPath(':build:com.mbeddr:install').dependsOn install_nativelibs_loader
 */
 
 task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
@@ -86,6 +78,7 @@ task install_actionsfilter(type: Copy, dependsOn: build_platform) {
     include "com.mbeddr.mpsutil.actionsfilter/"
     into "$mpsPluginsDir"
 }
+tasks.getByPath(':build:com.mbeddr:install').dependsOn install_actionsfilter
 
 task test_mbeddr_platform(type: TestLanguages, dependsOn: build_platform) {
     script script_test_mbeddrPlatform
@@ -124,7 +117,6 @@ task defaultWrapper(dependsOn: build_platform) {
 rootProject.defaultTasks 'defaultWrapper'
 
 task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrAllScriptsPublicationToMavenLocal', 'publishMbeddrPlatformPublicationToMavenLocal'])
-
 
 publishing {
     publications {
