@@ -10,7 +10,6 @@
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="gkvb" ref="f:diff_old#r:007d0985-20e2-4d70-80f1-d0de1aff1076(com.mbeddr.mpsutil.common.graph@old)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -471,11 +470,11 @@
         </node>
       </node>
       <node concept="3rvAFt" id="9NO9Tq9ULG" role="1tU5fm">
-        <node concept="16syzq" id="9NO9Tq9ULH" role="3rvQeY">
-          <ref role="16sUi3" to="gkvb:9NO9Tq8VKh" resolve="T" />
+        <node concept="16syzq" id="5wC11ed$Yd0" role="3rvQeY">
+          <ref role="16sUi3" node="9NO9Tq8VKh" resolve="T" />
         </node>
-        <node concept="16syzq" id="9NO9TqakZY" role="3rvSg0">
-          <ref role="16sUi3" to="gkvb:9NO9Tq8VKh" resolve="T" />
+        <node concept="16syzq" id="5wC11ed$Yd$" role="3rvSg0">
+          <ref role="16sUi3" node="9NO9Tq8VKh" resolve="T" />
         </node>
       </node>
     </node>
@@ -499,8 +498,8 @@
                   <ref role="16sUi3" node="9NO9Tq8VKh" resolve="T" />
                 </node>
                 <node concept="2hMVRd" id="9NO9TqaHrO" role="3rHtpV">
-                  <node concept="16syzq" id="9NO9TqaHrP" role="2hN53Y">
-                    <ref role="16sUi3" to="gkvb:9NO9Tq8VKh" resolve="T" />
+                  <node concept="16syzq" id="5wC11ed_1R1" role="2hN53Y">
+                    <ref role="16sUi3" node="9NO9Tq8VKh" resolve="T" />
                   </node>
                 </node>
               </node>
@@ -521,8 +520,8 @@
                   <ref role="16sUi3" node="9NO9Tq8VKh" resolve="T" />
                 </node>
                 <node concept="2hMVRd" id="9NO9TqaTM9" role="3rHtpV">
-                  <node concept="16syzq" id="9NO9TqaTMa" role="2hN53Y">
-                    <ref role="16sUi3" to="gkvb:9NO9Tq8VKh" resolve="T" />
+                  <node concept="16syzq" id="5wC11ed_1V_" role="2hN53Y">
+                    <ref role="16sUi3" node="9NO9Tq8VKh" resolve="T" />
                   </node>
                 </node>
               </node>
