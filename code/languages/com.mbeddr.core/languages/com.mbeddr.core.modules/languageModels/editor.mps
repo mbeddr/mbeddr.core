@@ -2379,21 +2379,6 @@
       <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />
     </node>
   </node>
-  <node concept="V5hpn" id="5IYyAOzCwFM">
-    <property role="TrG5h" value="globalStuff" />
-    <node concept="14StLt" id="5IYyAOzCwFN" role="V601i">
-      <property role="TrG5h" value="globalvar" />
-      <node concept="VechU" id="5IYyAOzCwFO" role="3F10Kt">
-        <property role="Vb096" value="g1_qVrt/darkMagenta" />
-      </node>
-    </node>
-    <node concept="14StLt" id="3ilck8KqulF" role="V601i">
-      <property role="TrG5h" value="globalconstant" />
-      <node concept="VechU" id="3ilck8KqulG" role="3F10Kt">
-        <property role="Vb096" value="g1_qVrt/darkMagenta" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="5IYyAOzCwFG">
     <property role="3GE5qa" value="global" />
     <ref role="1XX52x" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
@@ -3457,15 +3442,15 @@
         <node concept="1sVBvm" id="5eg$WPOuJpn" role="1sWHZn">
           <node concept="3F0A7n" id="5eg$WPOuJpo" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1k5W1q" node="3ilck8KqulF" resolve="globalconstant" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="r4b4:3ilck8KqulF" resolve="MacroCall" />
           </node>
         </node>
       </node>
       <node concept="l2Vlx" id="5B83roelVEf" role="2iSdaV" />
       <node concept="3F0ifn" id="5eg$WPOuYuj" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <ref role="1k5W1q" to="r4b4:LOoxnGiDYa" resolve="MacroCallParens" />
         <node concept="11L4FC" id="5eg$WPOuYuk" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3496,7 +3481,7 @@
       </node>
       <node concept="3F0ifn" id="5eg$WPOuYuo" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <ref role="1k5W1q" to="r4b4:LOoxnGiDYa" resolve="MacroCallParens" />
         <node concept="11L4FC" id="5eg$WPOuYup" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -5323,8 +5308,8 @@
         </node>
       </node>
       <node concept="3F0A7n" id="4b64BCbUJip" role="3EZMnx">
-        <ref role="1k5W1q" node="3ilck8KqulF" resolve="globalconstant" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dhBxG" resolve="GlobalVariable" />
       </node>
       <node concept="3F0ifn" id="4b64BCbUJiq" role="3EZMnx">
         <property role="3F0ifm" value="=" />
