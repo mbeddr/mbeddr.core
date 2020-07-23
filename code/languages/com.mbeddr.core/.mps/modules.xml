@@ -33,7 +33,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
-      <modulePath path="$PROJECT_DIR$/solutions/TestSolution/TestSolution.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.debugger.default/com.mbeddr.core.debugger.default.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.expressions.interpreter/com.mbeddr.core.expressions.interpreter.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.expressions.runtime/com.mbeddr.core.expressions.runtime.msd" folder="core.solutions" />
@@ -54,6 +53,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.extended/test.ts.core.extended.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.performance/test.ts.core.performance.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core/core.msd" folder="tests" />
+      <modulePath path="${mbeddr.github.core.home}/tools/Eclipse.Debugger/Debugger.msd" folder="" />
     </projectModules>
   </component>
 </project>
