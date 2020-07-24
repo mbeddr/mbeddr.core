@@ -232,6 +232,9 @@
       <property role="IQ2ns" value="8811614583515726008" />
       <ref role="20lvS9" node="7D99css6O0t" resolve="EnumLiteral" />
     </node>
+    <node concept="PrWs8" id="LOoxnHAriO" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:LOoxnHAriI" resolve="ILiteralLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5aaBiRoxDVn">
     <property role="3GE5qa" value="enum" />
