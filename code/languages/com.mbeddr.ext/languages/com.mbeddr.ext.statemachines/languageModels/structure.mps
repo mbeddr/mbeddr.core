@@ -379,11 +379,20 @@
       <property role="IQ2ns" value="8786207748510013891" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="7EEuXpIA8et" role="1TKVEi">
+      <property role="IQ2ns" value="8839013379576726429" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="failureHandler" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    </node>
     <node concept="1TJgyj" id="7BISmlsIlB1" role="1TKVEi">
       <property role="20kJfa" value="event" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8786207748510013889" />
       <ref role="20lvS9" node="1z9MsBsVaJj" resolve="Event" />
+    </node>
+    <node concept="PrWs8" id="4sAjwkTlIun" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:5Xsg2EBpBVN" resolve="IStatmentListContainer" />
     </node>
   </node>
   <node concept="PlHQZ" id="vvmfCe77Tq">
@@ -1144,6 +1153,20 @@
     <property role="R4oN_" value="a type that represents any kind of state machine" />
     <property role="34LRSv" value="any statemachine" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="7EEuXpIO773">
+    <property role="EcuMT" value="8839013379580391875" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="TransitionRedirectionStatement" />
+    <property role="34LRSv" value="-&gt;" />
+    <property role="R4oN_" value="a transition redirection" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="7EEuXpIO94Z" role="1TKVEi">
+      <property role="20kJfa" value="targetState" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="8839013379580399935" />
+      <ref role="20lvS9" node="3FSHg1aADay" resolve="AbstractState" />
+    </node>
   </node>
 </model>
 
