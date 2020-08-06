@@ -104,6 +104,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat6" />
+      </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
@@ -941,6 +944,16 @@
   <node concept="312cEu" id="4GGI4_vgxXF">
     <property role="TrG5h" value="TargetChooserDialog" />
     <node concept="2tJIrI" id="4GGI4_vho5O" role="jymVt" />
+    <node concept="2tJIrI" id="3gKK0X7omxs" role="jymVt" />
+    <node concept="312cEg" id="3gKK0X7onKz" role="jymVt">
+      <property role="TrG5h" value="selection" />
+      <node concept="3Tm6S6" id="3gKK0X7onbt" role="1B3o_S" />
+      <node concept="3uibUv" id="3gKK0X7onGy" role="1tU5fm">
+        <ref role="3uigEE" node="2Nt6prohz3r" resolve="SelectedTarget" />
+      </node>
+      <node concept="10Nm6u" id="3gKK0X7ooyI" role="33vP2m" />
+    </node>
+    <node concept="2tJIrI" id="3gKK0X7omEr" role="jymVt" />
     <node concept="2YIFZL" id="4GGI4_vhudk" role="jymVt">
       <property role="TrG5h" value="chooseTarget" />
       <property role="DiZV1" value="false" />
@@ -1522,6 +1535,40 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="3gKK0X7oqa4" role="jymVt" />
+    <node concept="3clFb_" id="3gKK0X7oh_p" role="jymVt">
+      <property role="TrG5h" value="doOKAction" />
+      <node concept="3Tmbuc" id="3gKK0X7oh_q" role="1B3o_S" />
+      <node concept="3cqZAl" id="3gKK0X7oh_s" role="3clF45" />
+      <node concept="3clFbS" id="3gKK0X7oh_t" role="3clF47">
+        <node concept="3clFbF" id="3gKK0X7ooOF" role="3cqZAp">
+          <node concept="37vLTI" id="3gKK0X7opP3" role="3clFbG">
+            <node concept="2OqwBi" id="3gKK0X7p5ju" role="37vLTx">
+              <node concept="37vLTw" id="3gKK0X7p4vV" role="2Oq$k0">
+                <ref role="3cqZAo" node="4GGI4_vhplq" resolve="myChooser" />
+              </node>
+              <node concept="liA8E" id="3gKK0X7p6hR" role="2OqNvi">
+                <ref role="37wK5l" node="4GGI4_vg$5g" resolve="getSelectedObject" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3gKK0X7ooXh" role="37vLTJ">
+              <node concept="Xjq3P" id="3gKK0X7ooOD" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3gKK0X7op5t" role="2OqNvi">
+                <ref role="2Oxat6" node="3gKK0X7onKz" resolve="selection" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3gKK0X7oh_w" role="3cqZAp">
+          <node concept="3nyPlj" id="3gKK0X7oh_v" role="3clFbG">
+            <ref role="37wK5l" to="jkm4:~DialogWrapper.doOKAction()" resolve="doOKAction" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3gKK0X7oh_u" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="4GGI4_vhBh5" role="jymVt" />
     <node concept="3clFb_" id="4GGI4_vhBth" role="jymVt">
       <property role="TrG5h" value="getSelectedTarget" />
@@ -1530,13 +1577,11 @@
       </node>
       <node concept="3Tm1VV" id="4GGI4_vhBtk" role="1B3o_S" />
       <node concept="3clFbS" id="4GGI4_vhBtl" role="3clF47">
-        <node concept="3clFbF" id="4GGI4_vhC6Z" role="3cqZAp">
-          <node concept="2OqwBi" id="4GGI4_vhCiW" role="3clFbG">
-            <node concept="37vLTw" id="4GGI4_vhC6Y" role="2Oq$k0">
-              <ref role="3cqZAo" node="4GGI4_vhplq" resolve="myChooser" />
-            </node>
-            <node concept="liA8E" id="4GGI4_vhF58" role="2OqNvi">
-              <ref role="37wK5l" node="4GGI4_vg$5g" resolve="getSelectedObject" />
+        <node concept="3cpWs6" id="3gKK0X7o_LA" role="3cqZAp">
+          <node concept="2OqwBi" id="3gKK0X7oBwo" role="3cqZAk">
+            <node concept="Xjq3P" id="3gKK0X7oB1H" role="2Oq$k0" />
+            <node concept="2OwXpG" id="3gKK0X7oCcP" role="2OqNvi">
+              <ref role="2Oxat6" node="3gKK0X7onKz" resolve="selection" />
             </node>
           </node>
         </node>
@@ -1561,8 +1606,13 @@
             <node concept="3uibUv" id="2Nt6proiR6r" role="1tU5fm">
               <ref role="3uigEE" node="2Nt6prohz3r" resolve="SelectedTarget" />
             </node>
-            <node concept="1rXfSq" id="2Nt6proiR6u" role="33vP2m">
-              <ref role="37wK5l" node="4GGI4_vhBth" resolve="getSelectedTarget" />
+            <node concept="2OqwBi" id="3gKK0X7oR3B" role="33vP2m">
+              <node concept="37vLTw" id="3gKK0X7oPZw" role="2Oq$k0">
+                <ref role="3cqZAo" node="4GGI4_vhplq" resolve="myChooser" />
+              </node>
+              <node concept="liA8E" id="3gKK0X7oSav" role="2OqNvi">
+                <ref role="37wK5l" node="4GGI4_vg$5g" resolve="getSelectedObject" />
+              </node>
             </node>
           </node>
         </node>
