@@ -3904,11 +3904,6 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
             </node>
           </node>
-          <node concept="1SiIV0" id="18IM2C4$5_8" role="3bR37C">
-            <node concept="3bR9La" id="18IM2C4$5_9" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6L0C" resolve="collections.runtime" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="5WQm$FZbT2W" role="3bR37C">
             <node concept="3bR9La" id="5WQm$FZbT2X" role="1SiIV1">
               <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
@@ -3959,6 +3954,11 @@
               <node concept="3qWCbU" id="7ZN_vIiShuI" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6TPUpoHKWjS" role="3bR37C">
+            <node concept="3bR9La" id="6TPUpoHKWjT" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
           </node>
         </node>
@@ -4030,6 +4030,31 @@
             <node concept="3qWCbU" id="7ZN_vIiShuu" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6TPUpoHKWjF" role="3bR37C">
+          <node concept="3bR9La" id="6TPUpoHKWjG" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6TPUpoJhtAA" role="3bR37C">
+          <node concept="3bR9La" id="6TPUpoJhtAB" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ZViq9oppal" resolve="jetbrains.mps.make.facets" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6TPUpoJhtAC" role="3bR37C">
+          <node concept="3bR9La" id="6TPUpoJhtAD" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6TPUpoJhtAE" role="3bR37C">
+          <node concept="3bR9La" id="6TPUpoJhtAF" role="1SiIV1">
+            <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6TPUpoJhtAG" role="3bR37C">
+          <node concept="3bR9La" id="6TPUpoJhtAH" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
           </node>
         </node>
       </node>
@@ -5905,6 +5930,11 @@
             <node concept="3qWCbU" id="7ZN_vIiShzm" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6TPUpo_5peE" role="3bR37C">
+          <node concept="3bR9La" id="6TPUpo_5peF" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
           </node>
         </node>
       </node>
@@ -8850,11 +8880,6 @@
             <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2ie4vPl$FhW" role="3bR37C">
-          <node concept="3bR9La" id="2ie4vPl$FhX" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:2nutuZsJi6m" resolve="de.itemis.mps.editor.celllayout" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="p3gCwbCyZs" role="3bR37C">
           <node concept="3bR9La" id="p3gCwbCyZt" role="1SiIV1">
             <ref role="3bR37D" to="al5i:61Pvu7KHtlo" resolve="com.mbeddr.mpsutil.breadcrumb" />
@@ -9065,16 +9090,6 @@
             <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7eF9rfAuyUQ" role="3bR37C">
-          <node concept="1Busua" id="7eF9rfAuyUR" role="1SiIV1">
-            <ref role="1Busuk" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7eF9rfAuyUS" role="3bR37C">
-          <node concept="1Busua" id="7eF9rfAuyUT" role="1SiIV1">
-            <ref role="1Busuk" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7eF9rfAuyUU" role="3bR37C">
           <node concept="1Busua" id="7eF9rfAuyUV" role="1SiIV1">
             <ref role="1Busuk" node="7eF9rfAuAO0" resolve="com.mbeddr.ext.components" />
@@ -9128,6 +9143,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="5yFZkJS3RnP" role="3bR37C">
+            <node concept="3bR9La" id="5yFZkJS3RnQ" role="1SiIV1">
+              <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="7eF9rfAuyV1" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuyV2" role="1SiIV1">
@@ -9164,6 +9184,21 @@
             <node concept="3qWCbU" id="7ZN_vIiShHD" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5yFZkJS3Rn$" role="3bR37C">
+          <node concept="3bR9La" id="5yFZkJS3Rn_" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5yFZkJS3RnA" role="3bR37C">
+          <node concept="3bR9La" id="5yFZkJS3RnB" role="1SiIV1">
+            <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5yFZkJS3RnC" role="3bR37C">
+          <node concept="3bR9La" id="5yFZkJS3RnD" role="1SiIV1">
+            <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
           </node>
         </node>
       </node>

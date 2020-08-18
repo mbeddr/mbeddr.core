@@ -10363,7 +10363,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="hmyfILLkz_">
-    <property role="3GE5qa" value="comp" />
+    <property role="3GE5qa" value="" />
     <ref role="13h7C2" to="v7ag:71UKpntm630" resolve="IComponentContent" />
     <node concept="13i0hz" id="5KH1ziO54kR" role="13h7CS">
       <property role="13i0iv" value="false" />

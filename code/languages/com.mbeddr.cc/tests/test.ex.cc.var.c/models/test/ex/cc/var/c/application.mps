@@ -28,6 +28,12 @@
         <property id="7237858926291186685" name="neverGenerateThisModel" index="vyZA_" />
       </concept>
     </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
+        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
+      </concept>
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+    </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
       <concept id="8811614583515726007" name="com.mbeddr.core.udt.structure.EnumLiteralRef" flags="ng" index="1AkAhK">
         <reference id="8811614583515726008" name="literal" index="1AkAhZ" />
@@ -41,6 +47,9 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
+        <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
+      </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
@@ -601,6 +610,9 @@
   </node>
   <node concept="2v9HqL" id="6hM2_xVYq7H">
     <property role="vyZA_" value="true" />
+    <node concept="2Q9Fgs" id="4zXqh6VqXlD" role="2Q9xDr">
+      <node concept="2Q9FjX" id="4zXqh6VqXlE" role="2Q9FjI" />
+    </node>
   </node>
 </model>
 

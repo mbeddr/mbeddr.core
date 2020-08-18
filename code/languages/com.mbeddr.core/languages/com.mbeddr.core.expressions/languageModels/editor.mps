@@ -1303,19 +1303,6 @@
       <ref role="PMmxG" node="5CDgsyZbE9V" resolve="staticValueComponent" />
     </node>
   </node>
-  <node concept="V5hpn" id="5K77MGvFFK5">
-    <property role="3GE5qa" value="types.cast" />
-    <property role="TrG5h" value="casting" />
-    <node concept="14StLt" id="5K77MGvFJ2U" role="V601i">
-      <property role="TrG5h" value="cast" />
-      <node concept="VechU" id="5K77MGvFJ2W" role="3F10Kt">
-        <property role="Vb096" value="fLwANPp/orange" />
-        <node concept="1iSF2X" id="Ug1QzfhWOF" role="VblUZ">
-          <property role="1iTho6" value="FA5700" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="1spqZOskLyL">
     <property role="3GE5qa" value="literals" />
     <ref role="1XX52x" to="mj1l:1spqZOskLyG" resolve="CharLiteral" />
@@ -1729,7 +1716,7 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="3F0ifn" id="7FZLineUJnr" role="3EZMnx">
-              <property role="3F0ifm" value="size_t type (size of size_t)" />
+              <property role="3F0ifm" value="size_t type" />
             </node>
             <node concept="3F1sOY" id="7FZLineUJns" role="3EZMnx">
               <ref role="1NtTu8" to="mj1l:7FZLineUJnj" resolve="sizeTType" />
@@ -1741,7 +1728,7 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="3F0ifn" id="3mNkkAi8TkY" role="3EZMnx">
-              <property role="3F0ifm" value="ssize_t type (size of ssize_t)" />
+              <property role="3F0ifm" value="ssize_t type" />
             </node>
             <node concept="3F1sOY" id="3mNkkAi8TkZ" role="3EZMnx">
               <ref role="1NtTu8" to="mj1l:3mNkkAi8TfG" resolve="ssizeTType" />
@@ -1753,7 +1740,7 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="3F0ifn" id="3jGRJVwqZnR" role="3EZMnx">
-              <property role="3F0ifm" value="pointer diff type (size of pointer)  " />
+              <property role="3F0ifm" value="pointer diff type  " />
             </node>
             <node concept="3F1sOY" id="3jGRJVwqZnV" role="3EZMnx">
               <ref role="1NtTu8" to="mj1l:3jGRJVwqZnA" resolve="pointerDiffType" />

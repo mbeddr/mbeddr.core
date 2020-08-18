@@ -35,10 +35,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1083245097125" name="jetbrains.mps.baseLanguage.structure.EnumClass" flags="ig" index="Qs71p">
-        <child id="1083245396908" name="enumConstant" index="Qtgdg" />
-      </concept>
-      <concept id="1083245299891" name="jetbrains.mps.baseLanguage.structure.EnumConstantDeclaration" flags="ig" index="QsSxf" />
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -90,7 +86,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -2305,27 +2300,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3rS04eaZGjA" role="jymVt" />
-  </node>
-  <node concept="Qs71p" id="3a9$fzkJynI">
-    <property role="TrG5h" value="ExpressionChilds" />
-    <node concept="3Tm1VV" id="3a9$fzkJynJ" role="1B3o_S" />
-    <node concept="QsSxf" id="3a9$fzkJ$ti" role="Qtgdg">
-      <property role="TrG5h" value="Left" />
-      <ref role="37wK5l" node="3a9$fzkJynK" resolve="ExpressionChilds" />
-    </node>
-    <node concept="QsSxf" id="3a9$fzkJ$tk" role="Qtgdg">
-      <property role="TrG5h" value="Middle" />
-      <ref role="37wK5l" node="3a9$fzkJynK" resolve="ExpressionChilds" />
-    </node>
-    <node concept="QsSxf" id="3a9$fzkJ$tj" role="Qtgdg">
-      <property role="TrG5h" value="Right" />
-      <ref role="37wK5l" node="3a9$fzkJynK" resolve="ExpressionChilds" />
-    </node>
-    <node concept="3clFbW" id="3a9$fzkJynK" role="jymVt">
-      <node concept="3cqZAl" id="3a9$fzkJynL" role="3clF45" />
-      <node concept="3Tm1VV" id="3a9$fzkJynM" role="1B3o_S" />
-      <node concept="3clFbS" id="3a9$fzkJynN" role="3clF47" />
-    </node>
   </node>
   <node concept="37WguZ" id="1n2NswIxBgG">
     <property role="TrG5h" value="createTypeFromOtherType" />

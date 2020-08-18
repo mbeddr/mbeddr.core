@@ -12,6 +12,7 @@
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -348,6 +349,11 @@
       <property role="IQ2nx" value="7246949367815681727" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="6TPUpoFwFrI" role="1TKVEl">
+      <property role="IQ2nx" value="7959524747631572718" />
+      <property role="TrG5h" value="copyrightNoticePath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="6iilwRlTjr8" role="PzmwI">
       <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
     </node>
@@ -468,6 +474,32 @@
       <property role="1L1pqM" value="use short names where possible" />
       <property role="3tVfz5" value="4791118330015767249" />
       <ref role="2wpffI" node="49XubMpsXFh" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TPUpoF_U6X">
+    <property role="EcuMT" value="7959524747632943549" />
+    <property role="3GE5qa" value="config" />
+    <property role="TrG5h" value="LegalReferencesConfiguration" />
+    <property role="34LRSv" value="legal references" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6TPUpoF_U6Y" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+    <node concept="1TJgyj" id="6TPUpoF_UXn" role="1TKVEi">
+      <property role="IQ2ns" value="7959524747632947031" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="copyrightNoticePicker" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
+    </node>
+    <node concept="1TJgyi" id="6TPUpoI1F3l" role="1TKVEl">
+      <property role="IQ2nx" value="7959524747673776341" />
+      <property role="TrG5h" value="licenseURL" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6TPUpoI1F7j" role="1TKVEl">
+      <property role="IQ2nx" value="7959524747673776595" />
+      <property role="TrG5h" value="licenseFileName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

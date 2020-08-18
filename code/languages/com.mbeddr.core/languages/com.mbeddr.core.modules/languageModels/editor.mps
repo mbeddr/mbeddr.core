@@ -1759,6 +1759,7 @@
           <node concept="3F0A7n" id="19a6$uAAnex" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="r4b4:1m7Vx97SsbI" resolve="FunctionCall" />
             <node concept="Vb9p2" id="2CEi94eH1Ao" role="3F10Kt">
               <property role="Vbekb" value="hL7GYu6/QUERY" />
               <node concept="17KAyr" id="2CEi94eH1As" role="17MNgL">
@@ -1772,12 +1773,12 @@
                         <node concept="3clFbS" id="6vtRRikVy7t" role="1bW5cS">
                           <node concept="3clFbF" id="6vtRRikVy7u" role="3cqZAp">
                             <node concept="3K4zz7" id="6vtRRikVy7v" role="3clFbG">
-                              <node concept="10M0yZ" id="6vtRRikVy7w" role="3K4E3e">
+                              <node concept="10M0yZ" id="1m7Vx98nJrT" role="3K4E3e">
+                                <ref role="3cqZAo" to="exr9:~MPSFonts.BOLD_ITALIC" resolve="BOLD_ITALIC" />
                                 <ref role="1PxDUh" to="exr9:~MPSFonts" resolve="MPSFonts" />
-                                <ref role="3cqZAo" to="exr9:~MPSFonts.ITALIC" resolve="ITALIC" />
                               </node>
-                              <node concept="10M0yZ" id="6vtRRikVy7x" role="3K4GZi">
-                                <ref role="3cqZAo" to="exr9:~MPSFonts.PLAIN" resolve="PLAIN" />
+                              <node concept="10M0yZ" id="1m7Vx98k7f0" role="3K4GZi">
+                                <ref role="3cqZAo" to="exr9:~MPSFonts.BOLD" resolve="BOLD" />
                                 <ref role="1PxDUh" to="exr9:~MPSFonts" resolve="MPSFonts" />
                               </node>
                               <node concept="2OqwBi" id="6vtRRikVy7y" role="3K4Cdx">
@@ -1811,7 +1812,7 @@
       </node>
       <node concept="3F0ifn" id="5ak6HMA0res" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <ref role="1k5W1q" to="r4b4:1m7Vx98shd9" resolve="FunctionCallParens" />
         <node concept="11L4FC" id="5ak6HMA0rev" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1844,7 +1845,7 @@
       </node>
       <node concept="3F0ifn" id="5ak6HMA0reu" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <ref role="1k5W1q" to="r4b4:1m7Vx98shd9" resolve="FunctionCallParens" />
         <node concept="11L4FC" id="5ak6HMA0rey" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -2378,21 +2379,6 @@
       <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />
     </node>
   </node>
-  <node concept="V5hpn" id="5IYyAOzCwFM">
-    <property role="TrG5h" value="globalStuff" />
-    <node concept="14StLt" id="5IYyAOzCwFN" role="V601i">
-      <property role="TrG5h" value="globalvar" />
-      <node concept="VechU" id="5IYyAOzCwFO" role="3F10Kt">
-        <property role="Vb096" value="g1_qVrt/darkMagenta" />
-      </node>
-    </node>
-    <node concept="14StLt" id="3ilck8KqulF" role="V601i">
-      <property role="TrG5h" value="globalconstant" />
-      <node concept="VechU" id="3ilck8KqulG" role="3F10Kt">
-        <property role="Vb096" value="g1_qVrt/darkMagenta" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="5IYyAOzCwFG">
     <property role="3GE5qa" value="global" />
     <ref role="1XX52x" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
@@ -2830,11 +2816,12 @@
     <node concept="3EZMnI" id="7qHzltJ0ufn" role="2wV5jI">
       <node concept="3F1sOY" id="7qHzltJ0ufq" role="3EZMnx">
         <ref role="1NtTu8" to="x27k:7qHzltJ0ucy" resolve="expr" />
+        <ref role="1k5W1q" to="r4b4:1m7Vx97SsbI" resolve="FunctionCall" />
       </node>
       <node concept="l2Vlx" id="7qHzltJ0ufp" role="2iSdaV" />
       <node concept="3F0ifn" id="7qHzltJ0ufs" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <ref role="1k5W1q" to="r4b4:1m7Vx98shd9" resolve="FunctionCallParens" />
         <node concept="11L4FC" id="7qHzltJ0B63" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -2864,7 +2851,7 @@
       </node>
       <node concept="3F0ifn" id="7qHzltJ0C$P" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <ref role="1k5W1q" to="r4b4:1m7Vx98shd9" resolve="FunctionCallParens" />
         <node concept="11L4FC" id="7qHzltJ0C$W" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3455,15 +3442,15 @@
         <node concept="1sVBvm" id="5eg$WPOuJpn" role="1sWHZn">
           <node concept="3F0A7n" id="5eg$WPOuJpo" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1k5W1q" node="3ilck8KqulF" resolve="globalconstant" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="r4b4:3ilck8KqulF" resolve="MacroCall" />
           </node>
         </node>
       </node>
       <node concept="l2Vlx" id="5B83roelVEf" role="2iSdaV" />
       <node concept="3F0ifn" id="5eg$WPOuYuj" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <ref role="1k5W1q" to="r4b4:LOoxnGiDYa" resolve="MacroCallParens" />
         <node concept="11L4FC" id="5eg$WPOuYuk" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3494,7 +3481,7 @@
       </node>
       <node concept="3F0ifn" id="5eg$WPOuYuo" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <ref role="1k5W1q" to="r4b4:LOoxnGiDYa" resolve="MacroCallParens" />
         <node concept="11L4FC" id="5eg$WPOuYup" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -5321,8 +5308,8 @@
         </node>
       </node>
       <node concept="3F0A7n" id="4b64BCbUJip" role="3EZMnx">
-        <ref role="1k5W1q" node="3ilck8KqulF" resolve="globalconstant" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dhBxG" resolve="GlobalVariable" />
       </node>
       <node concept="3F0ifn" id="4b64BCbUJiq" role="3EZMnx">
         <property role="3F0ifm" value="=" />

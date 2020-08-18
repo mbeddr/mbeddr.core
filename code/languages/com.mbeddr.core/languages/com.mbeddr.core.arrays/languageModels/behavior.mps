@@ -460,8 +460,8 @@
       <node concept="3Tm1VV" id="fwMInzpI0y" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="4XMHJL4Gf_U" role="13h7CS">
-      <property role="TrG5h" value="getPrintfFormatString" />
-      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <property role="TrG5h" value="getPrintfFormatSpecifier" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
       <node concept="3clFbS" id="4XMHJL4Gf_X" role="3clF47">
         <node concept="3clFbJ" id="4XMHJL4GfA0" role="3cqZAp">
           <node concept="22lmx$" id="4XMHJL4GfBi" role="3clFbw">
@@ -3408,6 +3408,35 @@
         <ref role="2I9WkF" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
       </node>
     </node>
+    <node concept="13i0hz" id="6TPUpoAdmK0" role="13h7CS">
+      <property role="TrG5h" value="getPrintfFormatSpecifier" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
+      <node concept="3clFbS" id="6TPUpoAdmK3" role="3clF47">
+        <node concept="3cpWs6" id="6TPUpoAdruD" role="3cqZAp">
+          <node concept="3K4zz7" id="6TPUpoAdteq" role="3cqZAk">
+            <node concept="Xl_RD" id="6TPUpoAdtfF" role="3K4E3e">
+              <property role="Xl_RC" value="%s" />
+            </node>
+            <node concept="10Nm6u" id="6TPUpoAdtha" role="3K4GZi" />
+            <node concept="2OqwBi" id="6TPUpoAdszq" role="3K4Cdx">
+              <node concept="2OqwBi" id="6TPUpoAdrR0" role="2Oq$k0">
+                <node concept="13iPFW" id="6TPUpoAdr_m" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6TPUpoAdsp5" role="2OqNvi">
+                  <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="6TPUpoAdsK$" role="2OqNvi">
+                <node concept="chp4Y" id="6TPUpoAdsVt" role="cj9EA">
+                  <ref role="cht4Q" to="mj1l:1spqZOskJPs" resolve="CharType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6TPUpoAdouS" role="3clF45" />
+      <node concept="3Tm1VV" id="6TPUpoAdouT" role="1B3o_S" />
+    </node>
   </node>
   <node concept="13h7C7" id="7apEgWbJCoK">
     <property role="3GE5qa" value="arrays" />
@@ -4500,8 +4529,8 @@
       </node>
     </node>
     <node concept="13i0hz" id="4XMHJL4Gf_L" role="13h7CS">
-      <property role="TrG5h" value="getPrintfFormatString" />
-      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <property role="TrG5h" value="getPrintfFormatSpecifier" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
       <node concept="3clFbS" id="4XMHJL4Gf_O" role="3clF47">
         <node concept="3clFbF" id="4XMHJL4Gf_R" role="3cqZAp">
           <node concept="Xl_RD" id="4XMHJL4Gf_S" role="3clFbG">
@@ -5256,8 +5285,8 @@
       <node concept="17QB3L" id="3xqp6yfaGjO" role="3clF45" />
     </node>
     <node concept="13i0hz" id="4XMHJL4II9J" role="13h7CS">
-      <property role="TrG5h" value="getPrintfFormatString" />
-      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <property role="TrG5h" value="getPrintfFormatSpecifier" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
       <node concept="3clFbS" id="4XMHJL4II9M" role="3clF47">
         <node concept="3clFbF" id="4XMHJL4II9P" role="3cqZAp">
           <node concept="Xl_RD" id="4XMHJL4II9Q" role="3clFbG">

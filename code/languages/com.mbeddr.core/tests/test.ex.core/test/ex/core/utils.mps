@@ -64,7 +64,14 @@
       <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
+        <property id="6113173064526131578" name="value" index="PhEJT" />
+      </concept>
+      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
+      <concept id="5684014141267595977" name="com.mbeddr.core.pointers.structure.StringArrayType" flags="ng" index="12rfTQ">
+        <child id="5684014141267595982" name="sizeExpr" index="12rfTL" />
+      </concept>
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
@@ -128,6 +135,12 @@
       </concept>
       <concept id="8801157290036121515" name="com.mbeddr.core.util.structure.GenericDLLeaveTraceOp" flags="ng" index="36OF97">
         <reference id="8801157290036121516" name="tracepoint" index="36OF90" />
+      </concept>
+      <concept id="1927508255684840839" name="com.mbeddr.core.util.structure.LogExpressionWord" flags="ng" index="3b1qWc">
+        <child id="1927508255684840840" name="expr" index="3b1qW3" />
+      </concept>
+      <concept id="1927508255683910342" name="com.mbeddr.core.util.structure.LogStatement" flags="ng" index="3b4Zxd">
+        <child id="1927508255683911583" name="text" index="3b4ZOk" />
       </concept>
       <concept id="7297559910934293472" name="com.mbeddr.core.util.structure.ForRangeRef" flags="ng" index="1f68ZN">
         <reference id="7297559910934293473" name="forRange" index="1f68ZM" />
@@ -241,6 +254,7 @@
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="8463282783691618445" name="com.mbeddr.core.expressions.structure.Int64tType" flags="ng" index="26Vqpk" />
       <concept id="8463282783691618435" name="com.mbeddr.core.expressions.structure.Int16tType" flags="ng" index="26Vqpq" />
+      <concept id="8463282783691618466" name="com.mbeddr.core.expressions.structure.UnsignedInt16tType" flags="ng" index="26VqpV" />
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
@@ -255,10 +269,12 @@
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
+      <concept id="8863019357864392148" name="com.mbeddr.core.expressions.structure.SizeT" flags="ng" index="2O5j3L" />
       <concept id="3820836583575227340" name="com.mbeddr.core.expressions.structure.DirectPlusAssignmentExpression" flags="ng" index="TPXPH" />
       <concept id="3830958861296781575" name="com.mbeddr.core.expressions.structure.NotExpression" flags="ng" index="19$8ne" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
+      <concept id="4739982148980385695" name="com.mbeddr.core.expressions.structure.FloatType" flags="ng" index="3AreGT" />
       <concept id="1054289341113496566" name="com.mbeddr.core.expressions.structure.BinaryNumberLiteral" flags="ng" index="3HbmlB" />
       <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
       <concept id="8860443239512147447" name="com.mbeddr.core.expressions.structure.GreaterEqualsExpression" flags="ng" index="3Tl9Jp" />
@@ -998,6 +1014,9 @@
       <node concept="1l1$C7" id="7B3zdKLrzgP" role="1kZvWc">
         <property role="TrG5h" value="any" />
       </node>
+      <node concept="2v9HqM" id="6TPUpo_tjLQ" role="2eOfOg">
+        <ref role="2v9HqP" node="6TPUpo_timF" resolve="LogTest" />
+      </node>
     </node>
     <node concept="2xfidK" id="1WKZBvBXE1a" role="2AWWZH">
       <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
@@ -1293,6 +1312,9 @@
       <node concept="3HeTO1" id="5gwPKZy5UhZ" role="lIfQt">
         <ref role="3HeTO6" node="5gwPKZy5Te3" resolve="second" />
       </node>
+      <node concept="3cM6IN" id="6TPUpo_tjJT" role="lIfQt">
+        <ref role="3cM6IK" node="6TPUpo_timH" resolve="testLogging" />
+      </node>
     </node>
     <node concept="3GEVxB" id="E67pIVBGIm" role="2OODSX">
       <property role="3GEa6x" value="false" />
@@ -1307,6 +1329,9 @@
     </node>
     <node concept="3GEVxB" id="7vXEDSfF6EY" role="2OODSX">
       <ref role="3GEb4d" node="7vXEDSfqVRb" resolve="GotoFail" />
+    </node>
+    <node concept="3GEVxB" id="6TPUpo_tjJA" role="2OODSX">
+      <ref role="3GEb4d" node="6TPUpo_timF" resolve="LogTest" />
     </node>
   </node>
   <node concept="N3F5e" id="E67pIVB7DF">
@@ -1983,6 +2008,314 @@
           </node>
           <node concept="3TlMh9" id="7vXEDSfEWl6" role="2N2GHg">
             <property role="2hmy$m" value="33" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="N3F5e" id="6TPUpo_timF">
+    <property role="TrG5h" value="LogTest" />
+    <node concept="c0Qz5" id="6TPUpo_timH" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="testLogging" />
+      <node concept="19Rifw" id="6TPUpo_timI" role="2C2TGm" />
+      <node concept="3XIRFW" id="6TPUpo_timK" role="c0Qz3">
+        <node concept="3b4Zxd" id="6TPUpo_tini" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tink" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tinl" role="19SJt6">
+              <property role="19SUeA" value="simple log" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tinz" role="3XIRFZ" />
+        <node concept="3b4Zxd" id="6TPUpo_tinq" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tinr" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tins" role="19SJt6">
+              <property role="19SUeA" value="log with number literal: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tinF" role="19SJt6">
+              <node concept="3TlMh9" id="6TPUpo_tinQ" role="3b1qW3">
+                <property role="2hmy$m" value="9" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tinH" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tip1" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tipN" role="3XIRFZ">
+          <property role="TrG5h" value="i8" />
+          <node concept="26Vqqz" id="6TPUpo_tj16" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tiqr" role="3XIe9u">
+            <property role="2hmy$m" value="-8" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tioq" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tior" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tios" role="19SJt6">
+              <property role="19SUeA" value="log with int8 variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tiot" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tirK" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tipN" resolve="i8" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tiov" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tiHR" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tiHO" role="3XIRFZ">
+          <property role="TrG5h" value="ui8" />
+          <node concept="26Vqp4" id="6TPUpo_tj5q" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tiHQ" role="3XIe9u">
+            <property role="2hmy$m" value="8" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tiHI" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tiHJ" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tiHK" role="19SJt6">
+              <property role="19SUeA" value="log with uint8 variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tiHL" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tiNx" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tiHO" resolve="ui8" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tiHN" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tiYx" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tiYu" role="3XIRFZ">
+          <property role="TrG5h" value="i16" />
+          <node concept="26Vqpq" id="6TPUpo_tiYv" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tiYw" role="3XIe9u">
+            <property role="2hmy$m" value="-16" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tiYo" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tiYp" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tiYq" role="19SJt6">
+              <property role="19SUeA" value="log with int16 variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tiYr" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tjfV" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tiYu" resolve="i16" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tiYt" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tiYn" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tiYk" role="3XIRFZ">
+          <property role="TrG5h" value="ui16" />
+          <node concept="26VqpV" id="6TPUpo_tiYl" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tiYm" role="3XIe9u">
+            <property role="2hmy$m" value="16" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tiYe" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tiYf" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tiYg" role="19SJt6">
+              <property role="19SUeA" value="log with uint16 variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tiYh" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tjg$" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tiYk" resolve="ui16" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tiYj" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tiQR" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tiQO" role="3XIRFZ">
+          <property role="TrG5h" value="i32" />
+          <node concept="26Vqph" id="6TPUpo_tiQP" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tiQQ" role="3XIe9u">
+            <property role="2hmy$m" value="-32" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tiQI" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tiQJ" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tiQK" role="19SJt6">
+              <property role="19SUeA" value="log with int32 variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tiQL" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tjhz" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tiQO" resolve="i32" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tiQN" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tiQH" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tiQE" role="3XIRFZ">
+          <property role="TrG5h" value="ui32" />
+          <node concept="26Vqpb" id="6TPUpo_tiQF" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tiQG" role="3XIe9u">
+            <property role="2hmy$m" value="32" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tiQ$" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tiQ_" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tiQA" role="19SJt6">
+              <property role="19SUeA" value="log with uint32 variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tiQB" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tjia" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tiQE" resolve="ui32" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tiQD" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tjj2" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tjiZ" role="3XIRFZ">
+          <property role="TrG5h" value="i64" />
+          <node concept="26Vqpk" id="6TPUpo_tjof" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tjj1" role="3XIe9u">
+            <property role="2hmy$m" value="-64" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tjiT" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tjiU" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tjiV" role="19SJt6">
+              <property role="19SUeA" value="log with int64 variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tjiW" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tjqD" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tjiZ" resolve="i64" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tjiY" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tjiS" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tjiP" role="3XIRFZ">
+          <property role="TrG5h" value="ui64" />
+          <node concept="26Vqpb" id="6TPUpo_tjiQ" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tjiR" role="3XIe9u">
+            <property role="2hmy$m" value="64" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tjiJ" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tjiK" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tjiL" role="19SJt6">
+              <property role="19SUeA" value="log with uint64 variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tjiM" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tjuz" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tjiP" resolve="ui64" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tjiO" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tiHH" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_titw" role="3XIRFZ">
+          <property role="TrG5h" value="str" />
+          <node concept="Pu267" id="6TPUpo_titu" role="2C2TGm" />
+          <node concept="PhEJO" id="6TPUpo_tize" role="3XIe9u">
+            <property role="PhEJT" value="message" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tirP" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tirQ" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tirR" role="19SJt6">
+              <property role="19SUeA" value="log with string variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tirS" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_ti$z" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_titw" resolve="str" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tirU" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tjAn" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tjAk" role="3XIRFZ">
+          <property role="TrG5h" value="strArr" />
+          <node concept="12rfTQ" id="6TPUpo_tjDf" role="2C2TGm">
+            <node concept="3TlMh9" id="6TPUpo_tjDR" role="12rfTL">
+              <property role="2hmy$m" value="10" />
+            </node>
+          </node>
+          <node concept="PhEJO" id="6TPUpo_tjAm" role="3XIe9u">
+            <property role="PhEJT" value="message" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tjAe" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tjAf" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tjAg" role="19SJt6">
+              <property role="19SUeA" value="log with string array variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tjAh" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tjIE" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tjAk" resolve="strArr" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tjAj" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tiA4" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tiA1" role="3XIRFZ">
+          <property role="TrG5h" value="flt" />
+          <node concept="3AreGT" id="6TPUpo_tiBo" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tiC8" role="3XIe9u">
+            <property role="2hmy$m" value="11.111f" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_ti_V" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_ti_W" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_ti_X" role="19SJt6">
+              <property role="19SUeA" value="log with float variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_ti_Y" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tiDv" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tiA1" resolve="flt" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tiA0" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tiEo" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tiEl" role="3XIRFZ">
+          <property role="TrG5h" value="dbl" />
+          <node concept="2fgwQN" id="6TPUpo_tiFA" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tiEn" role="3XIe9u">
+            <property role="2hmy$m" value="22.222" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tiEf" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tiEg" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tiEh" role="19SJt6">
+              <property role="19SUeA" value="log with double variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tiEi" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tiHp" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tiEl" resolve="dbl" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tiEk" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="6TPUpo_tjvh" role="3XIRFZ" />
+        <node concept="3XIRlf" id="6TPUpo_tjve" role="3XIRFZ">
+          <property role="TrG5h" value="sz" />
+          <node concept="2O5j3L" id="6TPUpo_tjxJ" role="2C2TGm" />
+          <node concept="3TlMh9" id="6TPUpo_tjvg" role="3XIe9u">
+            <property role="2hmy$m" value="123" />
+          </node>
+        </node>
+        <node concept="3b4Zxd" id="6TPUpo_tjv8" role="3XIRFZ">
+          <node concept="19SGf9" id="6TPUpo_tjv9" role="3b4ZOk">
+            <node concept="19SUe$" id="6TPUpo_tjva" role="19SJt6">
+              <property role="19SUeA" value="log with size_t variable: " />
+            </node>
+            <node concept="3b1qWc" id="6TPUpo_tjvb" role="19SJt6">
+              <node concept="3ZVu4v" id="6TPUpo_tj_U" role="3b1qW3">
+                <ref role="3ZVs_2" node="6TPUpo_tjve" resolve="sz" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="6TPUpo_tjvd" role="19SJt6" />
           </node>
         </node>
       </node>

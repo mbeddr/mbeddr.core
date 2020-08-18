@@ -17,6 +17,7 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="j4gk" ref="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
@@ -1475,15 +1476,15 @@
     <ref role="1XX52x" to="clbe:19jNIE0NT_m" resolve="Abstract2IntExpression" />
     <node concept="3EZMnI" id="19jNIE0NT_y" role="2wV5jI">
       <node concept="PMmxH" id="19jNIE0NT_z" role="3EZMnx">
-        <ref role="1k5W1q" to="vrqd:5K77MGvFJ2U" resolve="cast" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1ERwB7" node="19jNIE0NTFI" resolve="delete2Int" />
+        <ref role="1k5W1q" to="r4b4:5K77MGvFJ2U" resolve="Cast" />
       </node>
       <node concept="l2Vlx" id="19jNIE0NT_$" role="2iSdaV" />
       <node concept="3F0ifn" id="19jNIE0NT__" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="vrqd:5K77MGvFJ2U" resolve="cast" />
         <ref role="1ERwB7" node="19jNIE0NTFI" resolve="delete2Int" />
+        <ref role="1k5W1q" to="r4b4:5K77MGvFJ2U" resolve="Cast" />
         <node concept="11L4FC" id="19jNIE0NT_A" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1496,7 +1497,7 @@
       </node>
       <node concept="3F0ifn" id="19jNIE0NT_D" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="vrqd:5K77MGvFJ2U" resolve="cast" />
+        <ref role="1k5W1q" to="r4b4:5K77MGvFJ2U" resolve="Cast" />
         <node concept="11L4FC" id="19jNIE0NT_E" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1536,12 +1537,12 @@
     <ref role="1XX52x" to="clbe:19jNIE0Q4$a" resolve="AbstractInt2Expression" />
     <node concept="3EZMnI" id="19jNIE0QaC0" role="2wV5jI">
       <node concept="PMmxH" id="19jNIE0QaC1" role="3EZMnx">
-        <ref role="1k5W1q" to="vrqd:5K77MGvFJ2U" resolve="cast" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="r4b4:5K77MGvFJ2U" resolve="Cast" />
       </node>
       <node concept="3F0ifn" id="19jNIE0QaC2" role="3EZMnx">
         <property role="3F0ifm" value="&lt;" />
-        <ref role="1k5W1q" to="vrqd:5K77MGvFJ2U" resolve="cast" />
+        <ref role="1k5W1q" to="r4b4:5K77MGvFJ2U" resolve="Cast" />
         <node concept="11L4FC" id="19jNIE0QaC3" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1555,7 +1556,7 @@
       </node>
       <node concept="3F0ifn" id="19jNIE0QaC6" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
-        <ref role="1k5W1q" to="vrqd:5K77MGvFJ2U" resolve="cast" />
+        <ref role="1k5W1q" to="r4b4:5K77MGvFJ2U" resolve="Cast" />
         <node concept="11L4FC" id="19jNIE0QaC7" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1565,7 +1566,7 @@
       </node>
       <node concept="3F0ifn" id="19jNIE0QaC9" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="vrqd:5K77MGvFJ2U" resolve="cast" />
+        <ref role="1k5W1q" to="r4b4:5K77MGvFJ2U" resolve="Cast" />
         <node concept="11L4FC" id="19jNIE0QaCa" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1579,7 +1580,7 @@
       </node>
       <node concept="3F0ifn" id="19jNIE0QaCe" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="vrqd:5K77MGvFJ2U" resolve="cast" />
+        <ref role="1k5W1q" to="r4b4:5K77MGvFJ2U" resolve="Cast" />
         <node concept="11L4FC" id="19jNIE0QaCf" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

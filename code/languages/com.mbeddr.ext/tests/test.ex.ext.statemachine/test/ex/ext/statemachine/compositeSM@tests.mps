@@ -295,6 +295,9 @@
       <node concept="2v9HqM" id="5yVrpGY$cpU" role="2eOfOg">
         <ref role="2v9HqP" node="5yVrpGYzGpo" resolve="CompositeStateOutEventAndActionTest" />
       </node>
+      <node concept="2v9HqM" id="1m7Vx99JU4L" role="2eOfOg">
+        <ref role="2v9HqP" node="1m7Vx99JT7c" resolve="InitialCompositeStateTest" />
+      </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJBj" role="2Q9xDr" />
   </node>
@@ -833,6 +836,9 @@
       <node concept="3cM6IN" id="5yVrpGYHlWp" role="lIfQt">
         <ref role="3cM6IK" node="5yVrpGYzGqH" resolve="testCase2" />
       </node>
+      <node concept="3cM6IN" id="1m7Vx99JU22" role="lIfQt">
+        <ref role="3cM6IK" node="1m7Vx99JT8u" resolve="testCase3" />
+      </node>
       <node concept="3cM6IN" id="4Ru$s7zAKR9" role="lIfQt">
         <ref role="3cM6IK" node="7Dny5nFzX2u" resolve="testOrdering" />
       </node>
@@ -849,6 +855,9 @@
     </node>
     <node concept="3GEVxB" id="5yVrpGY$cps" role="2OODSX">
       <ref role="3GEb4d" node="5yVrpGYzGpo" resolve="CompositeStateOutEventAndActionTest" />
+    </node>
+    <node concept="3GEVxB" id="1m7Vx99JU1F" role="2OODSX">
+      <ref role="3GEb4d" node="1m7Vx99JT7c" resolve="InitialCompositeStateTest" />
     </node>
     <node concept="3GEVxB" id="6PCgYL5xRq_" role="2OODSX">
       <property role="3GEa6x" value="false" />
@@ -1889,6 +1898,191 @@
           </node>
           <node concept="1S7827" id="5yVrpGYIMvC" role="2N2GHg">
             <ref role="1S7826" node="5yVrpGYB0sN" resolve="notificationCount" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="N3F5e" id="1m7Vx99JT7c">
+    <property role="TrG5h" value="InitialCompositeStateTest" />
+    <node concept="1LFe83" id="1m7Vx99JT7$" role="N3F5h">
+      <property role="TrG5h" value="SerialProtcolSM" />
+      <ref role="1LFebw" node="1m7Vx99JT7O" resolve="synchronizing" />
+      <node concept="2cfOFI" id="1m7Vx99JT7_" role="1_Iowf">
+        <property role="TrG5h" value="characterReceived" />
+      </node>
+      <node concept="1KoyTk" id="1m7Vx99JT7O" role="1_Iowf">
+        <property role="TrG5h" value="synchronizing" />
+        <ref role="1KpzkS" node="1m7Vx99JT8n" resolve="awaitingSync" />
+        <node concept="1LFebX" id="1m7Vx99JT8n" role="1KoBSX">
+          <property role="TrG5h" value="awaitingSync" />
+          <node concept="1LFeb9" id="1m7Vx99JU0U" role="1KoBSX">
+            <ref role="1zztin" node="1m7Vx99JTSv" resolve="awaitingBlank" />
+            <node concept="349iI2" id="1m7Vx99JU13" role="2qxFSM">
+              <ref role="1bNv6r" node="1m7Vx99JT7_" resolve="characterReceived" />
+            </node>
+          </node>
+        </node>
+        <node concept="1LFebX" id="1m7Vx99JTSv" role="1KoBSX">
+          <property role="TrG5h" value="awaitingBlank" />
+          <node concept="1LFeb9" id="1m7Vx99JTZY" role="1KoBSX">
+            <ref role="1zztin" node="1m7Vx99JTLK" resolve="receiving" />
+            <node concept="349iI2" id="1m7Vx99JU07" role="2qxFSM">
+              <ref role="1bNv6r" node="1m7Vx99JT7_" resolve="characterReceived" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1KoyTk" id="1m7Vx99JTLK" role="1_Iowf">
+        <property role="TrG5h" value="receiving" />
+        <ref role="1KpzkS" node="1m7Vx99JTMs" resolve="receivingHeader" />
+        <node concept="1LFebX" id="1m7Vx99JTMs" role="1KoBSX">
+          <property role="TrG5h" value="receivingHeader" />
+          <node concept="1LFeb9" id="1m7Vx99JU0i" role="1KoBSX">
+            <ref role="1zztin" node="1m7Vx99JTNA" resolve="receivingPayload" />
+            <node concept="349iI2" id="1m7Vx99JU0r" role="2qxFSM">
+              <ref role="1bNv6r" node="1m7Vx99JT7_" resolve="characterReceived" />
+            </node>
+          </node>
+        </node>
+        <node concept="1LFebX" id="1m7Vx99JTNA" role="1KoBSX">
+          <property role="TrG5h" value="receivingPayload" />
+          <node concept="1LFeb9" id="1m7Vx99JU0A" role="1KoBSX">
+            <ref role="1zztin" node="1m7Vx99JT7O" resolve="synchronizing" />
+            <node concept="349iI2" id="1m7Vx99JU0J" role="2qxFSM">
+              <ref role="1bNv6r" node="1m7Vx99JT7_" resolve="characterReceived" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="1m7Vx99JT8t" role="N3F5h">
+      <property role="TrG5h" value="empty_1353661348701_4" />
+    </node>
+    <node concept="c0Qz5" id="1m7Vx99JT8u" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="testCase3" />
+      <node concept="19Rifw" id="1m7Vx99JT8v" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="1m7Vx99JT8w" role="c0Qz3">
+        <node concept="3XIRlf" id="1m7Vx99JT8x" role="3XIRFZ">
+          <property role="TrG5h" value="proto" />
+          <node concept="3lBjsv" id="1m7Vx99JT8y" role="2C2TGm">
+            <ref role="3lBjss" node="1m7Vx99JT7$" resolve="SerialProtcolSM" />
+          </node>
+        </node>
+        <node concept="1_9egQ" id="1m7Vx99JT8z" role="3XIRFZ">
+          <node concept="2qmXGp" id="1m7Vx99JT8$" role="1_9egR">
+            <node concept="3ZVu4v" id="1m7Vx99JT8_" role="1_9fRO">
+              <ref role="3ZVs_2" node="1m7Vx99JT8x" resolve="proto" />
+            </node>
+            <node concept="Vf_e3" id="1m7Vx99JT8A" role="1ESnxz" />
+          </node>
+        </node>
+        <node concept="c0Tn9" id="1m7Vx99Um6S" role="3XIRFZ">
+          <node concept="2qmXGp" id="1m7Vx99OjRt" role="c0Tn6">
+            <node concept="3Ox9Vr" id="1m7Vx99OjRN" role="1ESnxz">
+              <node concept="6sKY_" id="1m7Vx99XMjd" role="2gvQMN">
+                <ref role="6sK1u" node="1m7Vx99JT8n" resolve="awaitingSync" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="1m7Vx99OjRc" role="1_9fRO">
+              <ref role="3ZVs_2" node="1m7Vx99JT8x" resolve="proto" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="1m7Vx99Um9Y" role="3XIRFZ" />
+        <node concept="1_9egQ" id="1m7Vx99R5xK" role="3XIRFZ">
+          <node concept="2qmXGp" id="1m7Vx99R5y4" role="1_9egR">
+            <node concept="$QhJh" id="1m7Vx99R5yq" role="1ESnxz">
+              <ref role="$QhfV" node="1m7Vx99JT7_" resolve="characterReceived" />
+            </node>
+            <node concept="3ZVu4v" id="1m7Vx99R5xI" role="1_9fRO">
+              <ref role="3ZVs_2" node="1m7Vx99JT8x" resolve="proto" />
+            </node>
+          </node>
+        </node>
+        <node concept="c0Tn9" id="1m7Vx99XpaK" role="3XIRFZ">
+          <node concept="2qmXGp" id="1m7Vx99R5yC" role="c0Tn6">
+            <node concept="3Ox9Vr" id="1m7Vx99R5yD" role="1ESnxz">
+              <node concept="6sKY_" id="1m7Vx99R5zR" role="2gvQMN">
+                <ref role="6sK1u" node="1m7Vx99JTSv" resolve="awaitingBlank" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="1m7Vx99R5yF" role="1_9fRO">
+              <ref role="3ZVs_2" node="1m7Vx99JT8x" resolve="proto" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="1m7Vx99Xpfr" role="3XIRFZ" />
+        <node concept="1_9egQ" id="1m7Vx99R5_1" role="3XIRFZ">
+          <node concept="2qmXGp" id="1m7Vx99R5_2" role="1_9egR">
+            <node concept="$QhJh" id="1m7Vx99R5_3" role="1ESnxz">
+              <ref role="$QhfV" node="1m7Vx99JT7_" resolve="characterReceived" />
+            </node>
+            <node concept="3ZVu4v" id="1m7Vx99R5_4" role="1_9fRO">
+              <ref role="3ZVs_2" node="1m7Vx99JT8x" resolve="proto" />
+            </node>
+          </node>
+        </node>
+        <node concept="c0Tn9" id="1m7Vx99Xpd7" role="3XIRFZ">
+          <node concept="2qmXGp" id="1m7Vx99R5$X" role="c0Tn6">
+            <node concept="3Ox9Vr" id="1m7Vx99R5$Y" role="1ESnxz">
+              <node concept="6sKY_" id="1m7Vx99R5Ac" role="2gvQMN">
+                <ref role="6sK1u" node="1m7Vx99JTMs" resolve="receivingHeader" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="1m7Vx99R5_0" role="1_9fRO">
+              <ref role="3ZVs_2" node="1m7Vx99JT8x" resolve="proto" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="1m7Vx99Xpef" role="3XIRFZ" />
+        <node concept="1_9egQ" id="1m7Vx99R5$7" role="3XIRFZ">
+          <node concept="2qmXGp" id="1m7Vx99R5$8" role="1_9egR">
+            <node concept="$QhJh" id="1m7Vx99R5$9" role="1ESnxz">
+              <ref role="$QhfV" node="1m7Vx99JT7_" resolve="characterReceived" />
+            </node>
+            <node concept="3ZVu4v" id="1m7Vx99R5$a" role="1_9fRO">
+              <ref role="3ZVs_2" node="1m7Vx99JT8x" resolve="proto" />
+            </node>
+          </node>
+        </node>
+        <node concept="c0Tn9" id="1m7Vx99Xph9" role="3XIRFZ">
+          <node concept="2qmXGp" id="1m7Vx99R5$3" role="c0Tn6">
+            <node concept="3Ox9Vr" id="1m7Vx99R5$4" role="1ESnxz">
+              <node concept="6sKY_" id="1m7Vx99R5At" role="2gvQMN">
+                <ref role="6sK1u" node="1m7Vx99JTNA" resolve="receivingPayload" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="1m7Vx99R5$6" role="1_9fRO">
+              <ref role="3ZVs_2" node="1m7Vx99JT8x" resolve="proto" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="1m7Vx99Xpil" role="3XIRFZ" />
+        <node concept="1_9egQ" id="1m7Vx99R5Hz" role="3XIRFZ">
+          <node concept="2qmXGp" id="1m7Vx99R5H$" role="1_9egR">
+            <node concept="$QhJh" id="1m7Vx99R5H_" role="1ESnxz">
+              <ref role="$QhfV" node="1m7Vx99JT7_" resolve="characterReceived" />
+            </node>
+            <node concept="3ZVu4v" id="1m7Vx99R5HA" role="1_9fRO">
+              <ref role="3ZVs_2" node="1m7Vx99JT8x" resolve="proto" />
+            </node>
+          </node>
+        </node>
+        <node concept="c0Tn9" id="1m7Vx99Xpls" role="3XIRFZ">
+          <node concept="2qmXGp" id="1m7Vx99R5AD" role="c0Tn6">
+            <node concept="3Ox9Vr" id="1m7Vx99R5AE" role="1ESnxz">
+              <node concept="6sKY_" id="1m7Vx99R5AF" role="2gvQMN">
+                <ref role="6sK1u" node="1m7Vx99JT8n" resolve="awaitingSync" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="1m7Vx99R5AG" role="1_9fRO">
+              <ref role="3ZVs_2" node="1m7Vx99JT8x" resolve="proto" />
+            </node>
           </node>
         </node>
       </node>

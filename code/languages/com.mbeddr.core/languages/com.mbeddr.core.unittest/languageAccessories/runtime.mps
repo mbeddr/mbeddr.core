@@ -8385,22 +8385,60 @@
           </node>
           <node concept="PhEJO" id="68PB5rZa0qJ" role="3XIe9u" />
         </node>
-        <node concept="1_9egQ" id="68PB5rZa0qM" role="3XIRFZ">
-          <node concept="3O_q_g" id="68PB5rZa0qN" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycK1" resolve="snprintf" />
-            <node concept="3ZVu4v" id="68PB5rZa0qO" role="3O_q_j">
+        <node concept="1_9egQ" id="6TPUpoLKSU1" role="3XIRFZ">
+          <node concept="3O_q_g" id="6TPUpoLKSTZ" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycNc" resolve="strncpy" />
+            <node concept="3ZVu4v" id="6TPUpoLKXeK" role="3O_q_j">
               <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="temp_suite_result_path" />
             </node>
-            <node concept="Vihyy" id="68PB5rZa0qP" role="3O_q_j">
-              <node concept="3ZVu4v" id="68PB5rZa0qQ" role="1_9fRO">
+            <node concept="3ZUYvv" id="6TPUpoLKXeO" role="3O_q_j">
+              <ref role="3ZUYvu" node="68PB5rZbnZZ" resolve="suite_result_path" />
+            </node>
+            <node concept="Vihyy" id="6TPUpoLKXeL" role="3O_q_j">
+              <node concept="3ZVu4v" id="6TPUpoLKXeM" role="1_9fRO">
+                <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="temp_suite_result_path" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="6TPUpoLTHEg" role="3XIRFZ">
+          <property role="TrG5h" value="extension_offset" />
+          <node concept="2O5j3L" id="6TPUpoLTHEi" role="2C2TGm" />
+          <node concept="2BOcil" id="6TPUpoLXFey" role="3XIe9u">
+            <node concept="3TlMh9" id="6TPUpoLXFeC" role="3TlMhJ">
+              <property role="2hmy$m" value="4" />
+            </node>
+            <node concept="3O_q_g" id="6TPUpoLTHEj" role="3TlMhI">
+              <ref role="3O_q_h" to="3y0n:137zkozycMJ" resolve="strlen" />
+              <node concept="3ZVu4v" id="6TPUpoLTHEm" role="3O_q_j">
+                <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="temp_suite_result_path" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="68PB5rZa0qM" role="3XIRFZ">
+          <node concept="3O_q_g" id="68PB5rZa0qN" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycNc" resolve="strncpy" />
+            <node concept="2BOciq" id="6TPUpoLMq2p" role="3O_q_j">
+              <node concept="3ZVu4v" id="6TPUpoLTHEo" role="3TlMhJ">
+                <ref role="3ZVs_2" node="6TPUpoLTHEg" resolve="extension_offset" />
+              </node>
+              <node concept="3ZVu4v" id="68PB5rZa0qO" role="3TlMhI">
                 <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="temp_suite_result_path" />
               </node>
             </node>
             <node concept="PhEJO" id="68PB5rZa13y" role="3O_q_j">
-              <property role="PhEJT" value="%s.tmp" />
+              <property role="PhEJT" value=".tmp" />
             </node>
-            <node concept="3ZUYvv" id="4QnOXk_BHoP" role="3O_q_j">
-              <ref role="3ZUYvu" node="68PB5rZbnZZ" resolve="suite_result_path" />
+            <node concept="2BOcil" id="6TPUpoLONK_" role="3O_q_j">
+              <node concept="Vihyy" id="68PB5rZa0qP" role="3TlMhI">
+                <node concept="3ZVu4v" id="68PB5rZa0qQ" role="1_9fRO">
+                  <ref role="3ZVs_2" node="68PB5rZa0qI" resolve="temp_suite_result_path" />
+                </node>
+              </node>
+              <node concept="3ZVu4v" id="6TPUpoLTHEp" role="3TlMhJ">
+                <ref role="3ZVs_2" node="6TPUpoLTHEg" resolve="extension_offset" />
+              </node>
             </node>
           </node>
         </node>
@@ -8447,8 +8485,8 @@
           </node>
           <node concept="3TlM44" id="6On3mjTdXXv" role="c0U16">
             <node concept="Ea8Gl" id="6On3mjTdXXw" role="3TlMhJ" />
-            <node concept="3ZVu4v" id="6On3mjTdXXx" role="3TlMhI">
-              <ref role="3ZVs_2" node="6On3mjTdtK$" resolve="suite_result_file" />
+            <node concept="3ZVu4v" id="6TPUpoLKdvx" role="3TlMhI">
+              <ref role="3ZVs_2" node="6On3mjTdOEG" resolve="temp_suite_result_file" />
             </node>
           </node>
         </node>

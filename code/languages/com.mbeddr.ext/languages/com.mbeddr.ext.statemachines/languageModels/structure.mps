@@ -27,6 +27,15 @@
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv" />
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -104,6 +113,12 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="7835233251114737454" />
       <ref role="20lvS9" node="6MWlM491tWA" resolve="IStatemachineContents" />
+    </node>
+    <node concept="1TJgyj" id="3TJMuIMxu7g" role="1TKVEi">
+      <property role="IQ2ns" value="4499036566916030928" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="derivedInitialExpr" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="50Lk78xBrab" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -364,11 +379,20 @@
       <property role="IQ2ns" value="8786207748510013891" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="7EEuXpIA8et" role="1TKVEi">
+      <property role="IQ2ns" value="8839013379576726429" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="failureHandler" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    </node>
     <node concept="1TJgyj" id="7BISmlsIlB1" role="1TKVEi">
       <property role="20kJfa" value="event" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8786207748510013889" />
       <ref role="20lvS9" node="1z9MsBsVaJj" resolve="Event" />
+    </node>
+    <node concept="PrWs8" id="4sAjwkTlIun" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:5Xsg2EBpBVN" resolve="IStatmentListContainer" />
     </node>
   </node>
   <node concept="PlHQZ" id="vvmfCe77Tq">
@@ -616,6 +640,7 @@
       <property role="TrG5h" value="triggerAsConst" />
       <property role="IQ2nx" value="4709703140582114945" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="3TJMuILvrA5" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="5ngFs$3RYiA" role="1TKVEl">
       <property role="TrG5h" value="generateTestSupport" />
@@ -1016,7 +1041,7 @@
     <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="StateType" />
     <property role="34LRSv" value="state" />
-    <property role="R4oN_" value="a type that represents states" />
+    <property role="R4oN_" value="a type that represents the states of a statemachine" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
     <node concept="1TJgyj" id="19jNIE0iiLB" role="1TKVEi">
       <property role="20kJfa" value="machine" />
@@ -1083,6 +1108,64 @@
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="PrWs8" id="4c3N3BPrna9" role="PzmwI">
       <ref role="PrY4T" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1m7Vx9aJHDD">
+    <property role="EcuMT" value="1551470358983268969" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="CurrentStateRef" />
+    <property role="34LRSv" value="current state" />
+    <ref role="1TJDcQ" node="4c3N3BPrna8" resolve="AbstractStateRef" />
+  </node>
+  <node concept="1TIwiD" id="3TJMuIHZDPN">
+    <property role="EcuMT" value="4499036566840057203" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="AnyStateType" />
+    <property role="34LRSv" value="any state" />
+    <property role="R4oN_" value="a type that represents any kind of state" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3TJMuIIrhNq">
+    <property role="EcuMT" value="4499036566847298778" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="InitialStateRef" />
+    <property role="34LRSv" value="initial state" />
+    <ref role="1TJDcQ" node="4c3N3BPrna8" resolve="AbstractStateRef" />
+  </node>
+  <node concept="1TIwiD" id="3TJMuIK0DF6">
+    <property role="EcuMT" value="4499036566873873094" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="AbstractDerivedInitialStateAnnotation" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3TJMuIK0DF7" role="lGtFl">
+      <property role="Hh88m" value="derivedInitial" />
+      <node concept="tn0Fv" id="3TJMuIK0DFb" role="HhnKV" />
+      <node concept="trNpa" id="3TJMuIK0DFf" role="EQaZv">
+        <ref role="trN6q" node="50Lk78xBr9L" resolve="Statemachine" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4zXqh6Y0kBU">
+    <property role="EcuMT" value="5259475464761723386" />
+    <property role="3GE5qa" value="c-integration" />
+    <property role="TrG5h" value="AnyStatemachineType" />
+    <property role="R4oN_" value="a type that represents any kind of state machine" />
+    <property role="34LRSv" value="any statemachine" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="7EEuXpIO773">
+    <property role="EcuMT" value="8839013379580391875" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="TransitionRedirectionStatement" />
+    <property role="34LRSv" value="-&gt;" />
+    <property role="R4oN_" value="a transition redirection" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="7EEuXpIO94Z" role="1TKVEi">
+      <property role="20kJfa" value="targetState" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="8839013379580399935" />
+      <ref role="20lvS9" node="3FSHg1aADay" resolve="AbstractState" />
     </node>
   </node>
 </model>
