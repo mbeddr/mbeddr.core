@@ -2489,19 +2489,10 @@
                             <node concept="3IZrLx" id="4sAjwkUVaKn" role="3IZSJc">
                               <node concept="3clFbS" id="4sAjwkUVaKo" role="2VODD2">
                                 <node concept="3clFbF" id="4sAjwkUVaKp" role="3cqZAp">
-                                  <node concept="2OqwBi" id="4sAjwkUVaKq" role="3clFbG">
-                                    <node concept="2OqwBi" id="4sAjwkUVaKr" role="2Oq$k0">
-                                      <node concept="30H73N" id="4sAjwkUVaKs" role="2Oq$k0" />
-                                      <node concept="2Xjw5R" id="4sAjwkUVaKt" role="2OqNvi">
-                                        <node concept="1xMEDy" id="4sAjwkUVaKu" role="1xVPHs">
-                                          <node concept="chp4Y" id="4sAjwkUVaKv" role="ri$Ld">
-                                            <ref role="cht4Q" to="clqz:50Lk78xBraV" resolve="Transition" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                    <node concept="2qgKlT" id="4sAjwkUVaKw" role="2OqNvi">
-                                      <ref role="37wK5l" to="ktif:4sAjwkONxVM" resolve="hasActionsStatementsToSkipOnFailure" />
+                                  <node concept="2OqwBi" id="rICbQKFdo8" role="3clFbG">
+                                    <node concept="30H73N" id="rICbQKFd2s" role="2Oq$k0" />
+                                    <node concept="2qgKlT" id="rICbQKFdZK" role="2OqNvi">
+                                      <ref role="37wK5l" to="ktif:rICbQKEoTV" resolve="hasSubsequentStatementsToSkipOnFailure" />
                                     </node>
                                   </node>
                                 </node>
