@@ -2798,8 +2798,8 @@
                                     <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="5usoWIJ54ar" role="2OqNvi">
-                                  <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+                                <node concept="2qgKlT" id="4zXqh6Tzeam" role="2OqNvi">
+                                  <ref role="37wK5l" to="ywuz:4zXqh6Tyh0Y" resolve="getEffectivePrintfFormatString" />
                                 </node>
                               </node>
                             </node>
@@ -3369,8 +3369,8 @@
                               <ref role="cht4Q" to="mj1l:7FQByU3CrCQ" resolve="Type" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="5aGJjvFBJUa" role="2OqNvi">
-                            <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+                          <node concept="2qgKlT" id="4zXqh6Tzbiq" role="2OqNvi">
+                            <ref role="37wK5l" to="ywuz:4zXqh6Tyh0Y" resolve="getEffectivePrintfFormatString" />
                           </node>
                         </node>
                       </node>

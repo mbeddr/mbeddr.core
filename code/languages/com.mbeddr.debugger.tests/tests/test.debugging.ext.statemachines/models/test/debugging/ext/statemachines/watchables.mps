@@ -5,7 +5,7 @@
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="9" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
-    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="0" />
+    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
@@ -87,6 +87,9 @@
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
+        <reference id="7699669108373698588" name="state" index="6sK1u" />
+      </concept>
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="8927638623067326788" name="com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" flags="ng" index="2h6h52" />
       <concept id="1957198122968598264" name="com.mbeddr.ext.statemachines.structure.ActionList" flags="ng" index="2xGTIE" />
@@ -129,7 +132,7 @@
       </concept>
       <concept id="5778488248013533839" name="com.mbeddr.ext.statemachines.structure.State" flags="ng" index="1LFebX" />
       <concept id="5753290798453183908" name="com.mbeddr.ext.statemachines.structure.SmIsInStateTarget" flags="ng" index="3Ox9Vr">
-        <reference id="5753290798453184116" name="state" index="3Ox9Ob" />
+        <child id="1320626622351319641" name="state" index="2gvQMN" />
       </concept>
       <concept id="5633981208992643165" name="com.mbeddr.ext.statemachines.structure.StatemachineVariableDeclaration" flags="ng" index="1R59hi">
         <child id="4643433264760912612" name="init" index="2cfFcn" />
@@ -285,7 +288,9 @@
         <node concept="1_9egQ" id="3_UUdaFlgPN" role="3XIRFZ">
           <node concept="2qmXGp" id="x1qBl$hGt" role="1_9egR">
             <node concept="3Ox9Vr" id="x1qBl$hGs" role="1ESnxz">
-              <ref role="3Ox9Ob" node="7kKaL9x5o5F" resolve="green" />
+              <node concept="6sKY_" id="4WcLiIgB1U0" role="2gvQMN">
+                <ref role="6sK1u" node="7kKaL9x5o5F" resolve="green" />
+              </node>
             </node>
             <node concept="1S7827" id="3_UUdaFlgPQ" role="1_9fRO">
               <ref role="1S7826" node="3_UUdaFlgPA" resolve="sm" />

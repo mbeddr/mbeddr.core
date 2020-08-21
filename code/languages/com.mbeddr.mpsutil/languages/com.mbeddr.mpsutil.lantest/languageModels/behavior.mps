@@ -1202,7 +1202,7 @@
               <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
             </node>
             <node concept="2OqwBi" id="52eR6w5PolL" role="33vP2m">
-              <node concept="2OqwBi" id="52eR6w5PolM" role="2Oq$k0">
+              <node concept="2OqwBi" id="47i7cqwxkxl" role="2Oq$k0">
                 <node concept="2OqwBi" id="52eR6w5PolN" role="2Oq$k0">
                   <node concept="2OqwBi" id="52eR6w5PolO" role="2Oq$k0">
                     <node concept="13iPFW" id="52eR6w5PolP" role="2Oq$k0" />
@@ -1210,12 +1210,12 @@
                       <ref role="3Tt5mk" to="gfdq:52eR6w5Pjol" resolve="module" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="52eR6w5PolR" role="2OqNvi">
+                  <node concept="3TrEf2" id="47i7cqwwZKI" role="2OqNvi">
                     <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" resolve="moduleId" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="52eR6w5PolS" role="2OqNvi">
-                  <ref role="37wK5l" to="tpeu:nJmxU5cSSU" resolve="getModuleReference" />
+                <node concept="2qgKlT" id="47i7cqwxkAX" role="2OqNvi">
+                  <ref role="37wK5l" to="xlb7:1Bs_61$mqDd" resolve="toModuleReference" />
                 </node>
               </node>
               <node concept="liA8E" id="52eR6w5PolT" role="2OqNvi">

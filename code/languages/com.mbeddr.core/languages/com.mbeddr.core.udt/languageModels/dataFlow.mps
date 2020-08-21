@@ -229,46 +229,6 @@
       </node>
     </node>
   </node>
-  <node concept="3_zdsH" id="25K78YYrmn$">
-    <property role="3GE5qa" value="enum" />
-    <ref role="3_znuS" to="clbe:5aaBiRoxDVn" resolve="Enum2Int" />
-    <node concept="3__wT9" id="25K78YYrmn_" role="3_A6iZ">
-      <node concept="3clFbS" id="25K78YYrmnA" role="2VODD2">
-        <node concept="3AgYrR" id="25K78YYrmnL" role="3cqZAp">
-          <node concept="2OqwBi" id="25K78YYrmrm" role="3Ah4Yx">
-            <node concept="3__QtB" id="25K78YYrmo4" role="2Oq$k0" />
-            <node concept="3TrEf2" id="25K78YYrm$s" role="2OqNvi">
-              <ref role="3Tt5mk" to="clbe:5aaBiRoxDVo" resolve="expr" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3_zdsH" id="25K78YYrlIc">
-    <property role="3GE5qa" value="enum" />
-    <ref role="3_znuS" to="clbe:1frRXyHUCE1" resolve="Int2Enum" />
-    <node concept="3__wT9" id="25K78YYrlId" role="3_A6iZ">
-      <node concept="3clFbS" id="25K78YYrlIe" role="2VODD2">
-        <node concept="3AgYrR" id="25K78YYrlLp" role="3cqZAp">
-          <node concept="2OqwBi" id="25K78YYrlOW" role="3Ah4Yx">
-            <node concept="3__QtB" id="25K78YYrlLG" role="2Oq$k0" />
-            <node concept="3TrEf2" id="25K78YYrm6x" role="2OqNvi">
-              <ref role="3Tt5mk" to="clbe:1frRXyHUCOf" resolve="targetType" />
-            </node>
-          </node>
-        </node>
-        <node concept="3AgYrR" id="25K78YYrm8m" role="3cqZAp">
-          <node concept="2OqwBi" id="25K78YYrmdb" role="3Ah4Yx">
-            <node concept="3__QtB" id="25K78YYrm9T" role="2Oq$k0" />
-            <node concept="3TrEf2" id="25K78YYrmmh" role="2OqNvi">
-              <ref role="3Tt5mk" to="clbe:1frRXyHUCFC" resolve="expr" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="3_zdsH" id="YPlzSrjsb8">
     <ref role="3_znuS" to="clbe:3DiW6qrFL9V" resolve="MemberInitExpression" />
     <node concept="3__wT9" id="YPlzSrjsb9" role="3_A6iZ">
@@ -292,6 +252,46 @@
             <node concept="3__QtB" id="YPlzSrjuup" role="2Oq$k0" />
             <node concept="3TrEf2" id="YPlzSrjv4x" role="2OqNvi">
               <ref role="3Tt5mk" to="clbe:3DiW6qrFQZA" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="19jNIE0NV6m">
+    <property role="3GE5qa" value="enum" />
+    <ref role="3_znuS" to="clbe:19jNIE0NT_m" resolve="Abstract2IntExpression" />
+    <node concept="3__wT9" id="19jNIE0NV6n" role="3_A6iZ">
+      <node concept="3clFbS" id="19jNIE0NV6o" role="2VODD2">
+        <node concept="3AgYrR" id="19jNIE0NV6F" role="3cqZAp">
+          <node concept="2OqwBi" id="19jNIE0NVlr" role="3Ah4Yx">
+            <node concept="3__QtB" id="19jNIE0NV7i" role="2Oq$k0" />
+            <node concept="3TrEf2" id="19jNIE13taJ" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:19jNIE0NVOQ" resolve="expr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="19jNIE0QeBm">
+    <property role="3GE5qa" value="enum" />
+    <ref role="3_znuS" to="clbe:19jNIE0Q4$a" resolve="AbstractInt2Expression" />
+    <node concept="3__wT9" id="19jNIE0QeBn" role="3_A6iZ">
+      <node concept="3clFbS" id="19jNIE0QeBo" role="2VODD2">
+        <node concept="3AgYrR" id="19jNIE0QeBF" role="3cqZAp">
+          <node concept="2OqwBi" id="19jNIE0QeBG" role="3Ah4Yx">
+            <node concept="3__QtB" id="19jNIE0QeBH" role="2Oq$k0" />
+            <node concept="3TrEf2" id="19jNIE0QeBI" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:19jNIE0Q4_3" resolve="targetType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AgYrR" id="19jNIE0QeBJ" role="3cqZAp">
+          <node concept="2OqwBi" id="19jNIE0QeBK" role="3Ah4Yx">
+            <node concept="3__QtB" id="19jNIE0QeBL" role="2Oq$k0" />
+            <node concept="3TrEf2" id="19jNIE0QeBM" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:19jNIE0Q7Es" resolve="expr" />
             </node>
           </node>
         </node>

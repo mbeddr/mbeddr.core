@@ -273,6 +273,17 @@
       <node concept="3F0ifn" id="6uZAbUKfp4i" role="3EZMnx">
         <property role="3F0ifm" value="" />
       </node>
+      <node concept="3EZMnI" id="6TPUpoG6Kmr" role="3EZMnx">
+        <node concept="2iRfu4" id="6TPUpoG6Kms" role="2iSdaV" />
+        <node concept="3F0ifn" id="6TPUpoG6Kmt" role="3EZMnx">
+          <property role="3F0ifm" value="copyright notice:" />
+        </node>
+        <node concept="3F0A7n" id="6TPUpoG6Kmu" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="d0vh:6TPUpoFwFrI" resolve="copyrightNoticePath" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6TPUpoG6Kmv" role="3EZMnx" />
       <node concept="3F0ifn" id="34x64NyTlaK" role="3EZMnx">
         <property role="3F0ifm" value="imports:" />
       </node>
@@ -335,6 +346,17 @@
       <node concept="3F0ifn" id="6uZAbUKfobe" role="3EZMnx">
         <property role="3F0ifm" value="" />
       </node>
+      <node concept="3EZMnI" id="6TPUpoF_ix1" role="3EZMnx">
+        <node concept="2iRfu4" id="6TPUpoF_ix2" role="2iSdaV" />
+        <node concept="3F0ifn" id="6TPUpoF_it9" role="3EZMnx">
+          <property role="3F0ifm" value="copyright notice:" />
+        </node>
+        <node concept="3F0A7n" id="6TPUpoF_ixQ" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="d0vh:6TPUpoFwFrI" resolve="copyrightNoticePath" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6TPUpoF_itK" role="3EZMnx" />
       <node concept="3F0ifn" id="34x64NyTlaF" role="3EZMnx">
         <property role="3F0ifm" value="header imports:" />
       </node>
@@ -603,11 +625,11 @@
   </node>
   <node concept="24kQdi" id="1NwarDnRY0o">
     <property role="3GE5qa" value="module" />
-    <ref role="1XX52x" to="d0vh:1NwarDnRX0I" resolve="GenForignExtModuleImport" />
+    <ref role="1XX52x" to="d0vh:1NwarDnRX0I" resolve="GenForeignExtModuleImport" />
     <node concept="3EZMnI" id="1NwarDnRY0q" role="2wV5jI">
       <node concept="l2Vlx" id="1NwarDnRY0r" role="2iSdaV" />
       <node concept="3F0ifn" id="1NwarDnRY0s" role="3EZMnx">
-        <property role="3F0ifm" value="forign external module" />
+        <property role="3F0ifm" value="foreign external module" />
       </node>
       <node concept="1iCGBv" id="1NwarDnRY0t" role="3EZMnx">
         <ref role="1NtTu8" to="d0vh:1NwarDnRY03" resolve="module" />
@@ -869,15 +891,80 @@
       </node>
     </node>
   </node>
+  <node concept="22mcaB" id="5hcw$WGh20z">
+    <ref role="aqKnT" to="d0vh:5hcw$WGe5JR" resolve="MultiPlatformFunctionCall" />
+    <node concept="3ft5Ry" id="5hcw$WGh2h2" role="3ft7WO">
+      <ref role="4PJHt" to="d0vh:5hcw$WGe5JR" resolve="MultiPlatformFunctionCall" />
+    </node>
+    <node concept="22hDWj" id="27yO7ubzfSh" role="22hAXT" />
+  </node>
   <node concept="22mcaB" id="2cvVnUv6Fxj">
     <ref role="aqKnT" to="d0vh:7dfuMW5rC75" resolve="ShortNamesRoot" />
     <node concept="22hDWj" id="27yO7ubzfSg" role="22hAXT" />
   </node>
-  <node concept="22mcaB" id="5hcw$WGh20z">
-    <ref role="aqKnT" to="d0vh:5hcw$WGe5JR" resolve="MultiPlatformFunctionCall" />
-    <node concept="22hDWj" id="27yO7ubzfSh" role="22hAXT" />
-    <node concept="3ft5Ry" id="5hcw$WGh2h2" role="3ft7WO">
-      <ref role="4PJHt" to="d0vh:5hcw$WGe5JR" resolve="MultiPlatformFunctionCall" />
+  <node concept="24kQdi" id="6TPUpoF_UpS">
+    <property role="3GE5qa" value="config" />
+    <ref role="1XX52x" to="d0vh:6TPUpoF_U6X" resolve="LegalReferencesConfiguration" />
+    <node concept="3EZMnI" id="6TPUpoF_UpU" role="2wV5jI">
+      <node concept="PMmxH" id="6TPUpoF_Uq4" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="gc7cB" id="6TPUpoF_Uqa" role="3EZMnx">
+        <node concept="3VJUX4" id="6TPUpoF_Uqb" role="3YsKMw">
+          <node concept="3clFbS" id="6TPUpoF_Uqc" role="2VODD2">
+            <node concept="3clFbF" id="6TPUpoF_Uqd" role="3cqZAp">
+              <node concept="2ShNRf" id="6TPUpoF_Uqe" role="3clFbG">
+                <node concept="1pGfFk" id="6TPUpoF_Uqf" role="2ShVmc">
+                  <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
+                  <node concept="pncrf" id="6TPUpoF_Uqg" role="37wK5m" />
+                  <node concept="10M0yZ" id="6TPUpoF_Uqh" role="37wK5m">
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+                  </node>
+                  <node concept="3cmrfG" id="6TPUpoF_Uqi" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="6TPUpoF_Uqj" role="37wK5m">
+                    <property role="3cmrfH" value="2" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6TPUpoF_Usz" role="3EZMnx">
+        <node concept="VPM3Z" id="6TPUpoF_Us$" role="3F10Kt" />
+        <node concept="3EZMnI" id="6TPUpoF_Us_" role="3EZMnx">
+          <node concept="2iRfu4" id="6TPUpoF_UsA" role="2iSdaV" />
+          <node concept="3F0ifn" id="6TPUpoF_UsB" role="3EZMnx">
+            <property role="3F0ifm" value="copyright notice:" />
+          </node>
+          <node concept="3F1sOY" id="6TPUpoF_V0R" role="3EZMnx">
+            <ref role="1NtTu8" to="d0vh:6TPUpoF_UXn" resolve="copyrightNoticePicker" />
+          </node>
+        </node>
+        <node concept="3EZMnI" id="6TPUpoGH4BC" role="3EZMnx">
+          <node concept="2iRfu4" id="6TPUpoGH4BD" role="2iSdaV" />
+          <node concept="3F0ifn" id="6TPUpoGH4BE" role="3EZMnx">
+            <property role="3F0ifm" value="license URL:" />
+          </node>
+          <node concept="3F0A7n" id="6TPUpoI1F6P" role="3EZMnx">
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="d0vh:6TPUpoI1F3l" resolve="licenseURL" />
+          </node>
+          <node concept="3F0ifn" id="6TPUpoI1F72" role="3EZMnx">
+            <property role="3F0ifm" value="as" />
+          </node>
+          <node concept="3F0A7n" id="6TPUpoI1FaS" role="3EZMnx">
+            <property role="1$x2rV" value="LICENSE" />
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="d0vh:6TPUpoI1F7j" resolve="licenseFileName" />
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="6TPUpoF_Utg" role="2iSdaV" />
+      </node>
+      <node concept="2iRfu4" id="6TPUpoF_UpX" role="2iSdaV" />
     </node>
   </node>
 </model>

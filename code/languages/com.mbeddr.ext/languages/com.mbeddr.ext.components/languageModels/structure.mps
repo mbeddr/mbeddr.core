@@ -658,7 +658,7 @@
     </node>
   </node>
   <node concept="PlHQZ" id="71UKpntm630">
-    <property role="3GE5qa" value="comp" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="IComponentContent" />
     <property role="EcuMT" value="8105003328814473408" />
     <node concept="PrWs8" id="71UKpntm635" role="PrDN$">
@@ -773,6 +773,9 @@
     <node concept="PrWs8" id="70kXLV5xDra" role="PzmwI">
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
     </node>
+    <node concept="PrWs8" id="3TJMuIHJTA0" role="PzmwI">
+      <ref role="PrY4T" node="3TJMuIHJOfO" resolve="IRequiresComponentID" />
+    </node>
   </node>
   <node concept="1TIwiD" id="pTHqv6KODH">
     <property role="3GE5qa" value="adapter" />
@@ -802,6 +805,9 @@
       <property role="IQ2ns" value="466603768608442378" />
       <ref role="20lvS9" node="71UKpntoTuE" resolve="PortRefExpr" />
       <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+    </node>
+    <node concept="PrWs8" id="3TJMuIHJQQL" role="PzmwI">
+      <ref role="PrY4T" node="3TJMuIHJOfO" resolve="IRequiresComponentID" />
     </node>
   </node>
   <node concept="1TIwiD" id="wOd6nl4Yxh">
@@ -862,7 +868,7 @@
       <ref role="PrY4T" to="vs0r:1DVNPtFPBay" resolve="IShowUpInOutline" />
     </node>
     <node concept="PrWs8" id="29JE8qNvthB" role="PzmwI">
-      <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequiresComponentInitializer" />
+      <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequireComponentInitializer" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfT$" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/field.png" />
@@ -882,6 +888,9 @@
     </node>
     <node concept="PrWs8" id="70kXLV4Lz3u" role="PzmwI">
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
+    </node>
+    <node concept="PrWs8" id="3TJMuIHJOgy" role="PzmwI">
+      <ref role="PrY4T" node="3TJMuIHJOfO" resolve="IRequiresComponentID" />
     </node>
   </node>
   <node concept="1TIwiD" id="4AGl5dzxiUF">
@@ -951,6 +960,9 @@
     </node>
     <node concept="PrWs8" id="70kXLV5w$PT" role="PzmwI">
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
+    </node>
+    <node concept="PrWs8" id="3TJMuIHJPWs" role="PzmwI">
+      <ref role="PrY4T" node="3TJMuIHJOfO" resolve="IRequiresComponentID" />
     </node>
   </node>
   <node concept="1TIwiD" id="18l4N2Qx3s4">
@@ -1425,6 +1437,9 @@
     <node concept="PrWs8" id="70kXLV5xvQP" role="PzmwI">
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
     </node>
+    <node concept="PrWs8" id="3TJMuIHJRKA" role="PzmwI">
+      <ref role="PrY4T" node="3TJMuIHJOfO" resolve="IRequiresComponentID" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3yeYUb95Uqi">
     <property role="3GE5qa" value="intf.cs" />
@@ -1752,6 +1767,9 @@
     <node concept="PrWs8" id="4paRqaMe4qU" role="PzmwI">
       <ref role="PrY4T" node="4paRqaMe436" resolve="IConnectedCheck" />
     </node>
+    <node concept="PrWs8" id="3TJMuIHJUxx" role="PzmwI">
+      <ref role="PrY4T" node="3TJMuIHJOfO" resolve="IRequiresComponentID" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4paRqaMe436">
     <property role="3GE5qa" value="comp.runnable.whenconnected" />
@@ -1774,14 +1792,14 @@
   </node>
   <node concept="1TIwiD" id="29JE8qNuWkv">
     <property role="3GE5qa" value="intf.sr" />
-    <property role="TrG5h" value="ExternalStorageLocation" />
+    <property role="TrG5h" value="ExternalLocation" />
     <property role="EcuMT" value="2481387216194749727" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="PrWs8" id="29JE8qNvthC" role="PzmwI">
-      <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequiresComponentInitializer" />
+      <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequireComponentInitializer" />
     </node>
     <node concept="M6xJ_" id="5GEPw8vx$kl" role="lGtFl">
-      <property role="Hh88m" value="externalStorrageLocation" />
+      <property role="Hh88m" value="externalLocation" />
       <node concept="trNpa" id="5GEPw8vxApT" role="EQaZv">
         <ref role="trN6q" node="3TmmsQkD8YC" resolve="ProvidedPort" />
       </node>
@@ -1789,12 +1807,12 @@
   </node>
   <node concept="PlHQZ" id="29JE8qNvth_">
     <property role="3GE5qa" value="comp.instances" />
-    <property role="TrG5h" value="IMayRequiresComponentInitializer" />
+    <property role="TrG5h" value="IMayRequireComponentInitializer" />
     <property role="EcuMT" value="2481387216194884709" />
   </node>
   <node concept="1TIwiD" id="29JE8qNvJxx">
     <property role="3GE5qa" value="intf.sr" />
-    <property role="TrG5h" value="ExternalStorageInitializer" />
+    <property role="TrG5h" value="ExternalLocationInitializer" />
     <property role="EcuMT" value="2481387216194959457" />
     <ref role="1TJDcQ" node="29JE8qNtlUh" resolve="AbstractComponentInitializer" />
     <node concept="1TJgyj" id="29JE8qNvJxz" role="1TKVEi">
@@ -2004,6 +2022,9 @@
     <property role="TrG5h" value="ComponentThisExpr" />
     <property role="34LRSv" value="this" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="3TJMuIHJSFc" role="PzmwI">
+      <ref role="PrY4T" node="3TJMuIHJOfO" resolve="IRequiresComponentID" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2IZ2bWrC4_N">
     <property role="EcuMT" value="3152247881077901683" />
@@ -2193,6 +2214,11 @@
     <node concept="PrWs8" id="7_KH4FPG_3U" role="PzmwI">
       <ref role="PrY4T" node="4paRqaMe436" resolve="IConnectedCheck" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="3TJMuIHJOfO">
+    <property role="EcuMT" value="4499036566835905524" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="IRequiresComponentID" />
   </node>
 </model>
 

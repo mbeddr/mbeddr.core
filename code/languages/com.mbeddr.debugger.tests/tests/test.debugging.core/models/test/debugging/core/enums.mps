@@ -8,7 +8,7 @@
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="5" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
   </languages>
   <imports />
@@ -60,8 +60,9 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
-      <concept id="5947739078127951575" name="com.mbeddr.core.udt.structure.Enum2Int" flags="ng" index="2a30fU">
-        <child id="5947739078127951576" name="expr" index="2a30fP" />
+      <concept id="5947739078127951575" name="com.mbeddr.core.udt.structure.Enum2Int" flags="ng" index="2a30fU" />
+      <concept id="1320626622328445270" name="com.mbeddr.core.udt.structure.Abstract2IntExpression" flags="ng" index="2iB5uW">
+        <child id="1320626622328454454" name="expr" index="2iB7fs" />
       </concept>
       <concept id="8811614583515726007" name="com.mbeddr.core.udt.structure.EnumLiteralRef" flags="ng" index="1AkAhK">
         <reference id="8811614583515726008" name="literal" index="1AkAhZ" />
@@ -253,7 +254,7 @@
               <ref role="3ZVs_2" node="1gzTnhAst5$" resolve="i8" />
             </node>
             <node concept="2a30fU" id="16hhYved4dY" role="3TlMhJ">
-              <node concept="1AkAhK" id="16hhYved71t" role="2a30fP">
+              <node concept="1AkAhK" id="16hhYved71t" role="2iB7fs">
                 <ref role="1AkAhZ" node="7D99css6UeQ" resolve="RED" />
               </node>
             </node>
@@ -265,7 +266,7 @@
               <ref role="3ZVs_2" node="29$vwU0Hf$f" resolve="i8_2" />
             </node>
             <node concept="2a30fU" id="29$vwU0Hf$o" role="3TlMhJ">
-              <node concept="1AkAhK" id="29$vwU0Hf$q" role="2a30fP">
+              <node concept="1AkAhK" id="29$vwU0Hf$q" role="2iB7fs">
                 <ref role="1AkAhZ" node="7D99css6Uf9" resolve="GREEN" />
               </node>
             </node>
@@ -284,7 +285,7 @@
         <node concept="c0Tn9" id="pfSS$jBRq4" role="3XIRFZ">
           <node concept="3TlM44" id="pfSS$jBRq7" role="c0Tn6">
             <node concept="2a30fU" id="29$vwU0Hf$r" role="3TlMhI">
-              <node concept="3ZVu4v" id="29$vwU0Hf$t" role="2a30fP">
+              <node concept="3ZVu4v" id="29$vwU0Hf$t" role="2iB7fs">
                 <ref role="3ZVs_2" node="7D99css6V46" resolve="c" />
               </node>
             </node>
@@ -299,7 +300,7 @@
               <property role="2hmy$m" value="1" />
             </node>
             <node concept="2a30fU" id="29$vwU0Hf$x" role="3TlMhI">
-              <node concept="3ZVu4v" id="29$vwU0Hf$y" role="2a30fP">
+              <node concept="3ZVu4v" id="29$vwU0Hf$y" role="2iB7fs">
                 <ref role="3ZVs_2" node="7D99css6V46" resolve="c" />
               </node>
             </node>

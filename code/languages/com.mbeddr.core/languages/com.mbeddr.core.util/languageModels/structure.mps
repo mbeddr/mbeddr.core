@@ -798,6 +798,9 @@
     <node concept="PrWs8" id="69lKCLH$b90" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
+    <node concept="PrWs8" id="4zXqh6TO7fK" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4zXqh6TNW6K" resolve="IPrintable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="69lKCLH$b91">
     <property role="3GE5qa" value="reporting" />
@@ -1428,6 +1431,9 @@
     <node concept="PrWs8" id="1duwXQeBgFw" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="PrWs8" id="4zXqh6Ul7bb" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4zXqh6TNW6K" resolve="IPrintable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5tbhN$4LlsX">
     <property role="TrG5h" value="C90CompatibleCode" />
@@ -1653,6 +1659,9 @@
       <property role="20kJfa" value="text" />
       <property role="IQ2ns" value="1927508255683911583" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+    <node concept="PrWs8" id="4zXqh6TOgPI" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4zXqh6TNW6K" resolve="IPrintable" />
     </node>
   </node>
   <node concept="1TIwiD" id="1EZSCJhI$Q7">

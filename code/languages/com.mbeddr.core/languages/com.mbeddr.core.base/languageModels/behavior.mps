@@ -3948,6 +3948,20 @@
     <node concept="13hLZK" id="3jNX2XuL9gG" role="13h7CW">
       <node concept="3clFbS" id="3jNX2XuL9gH" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="24sqcd$Vcsf" role="13h7CS">
+      <property role="TrG5h" value="allowEverythingExceptWhitespace" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" node="8q0nkX_5K4" resolve="allowEverythingExceptWhitespace" />
+      <node concept="3clFbS" id="24sqcd$Vcsi" role="3clF47">
+        <node concept="3clFbF" id="24sqcd$Vk8t" role="3cqZAp">
+          <node concept="3clFbT" id="24sqcd$Vk8s" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="24sqcd$VhrI" role="3clF45" />
+      <node concept="3Tm1VV" id="24sqcd$VhrJ" role="1B3o_S" />
+    </node>
   </node>
   <node concept="13h7C7" id="3jNX2XuLA$R">
     <property role="3GE5qa" value="assessment.vis" />
@@ -7244,6 +7258,20 @@
           <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="24sqcd$Vn7e" role="13h7CS">
+      <property role="TrG5h" value="allowEverythingExceptWhitespace" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" node="8q0nkX_5K4" resolve="allowEverythingExceptWhitespace" />
+      <node concept="3clFbS" id="24sqcd$Vn7h" role="3clF47">
+        <node concept="3clFbF" id="24sqcd$Vnu2" role="3cqZAp">
+          <node concept="3clFbT" id="24sqcd$Vnu1" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="24sqcd$VnhO" role="3clF45" />
+      <node concept="3Tm1VV" id="24sqcd$VnhP" role="1B3o_S" />
     </node>
   </node>
   <node concept="312cEu" id="4Wn4fzjJqEK">

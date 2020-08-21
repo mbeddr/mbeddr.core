@@ -764,6 +764,9 @@
     <property role="TrG5h" value="PrefixDirPicker" />
     <property role="34LRSv" value="$(PREFIX) dir picker" />
     <ref role="1TJDcQ" node="6xoAPBjOMvr" resolve="AbstractMakeVariableDirPicker" />
+    <node concept="PrWs8" id="6TPUpoBqaTp" role="PzmwI">
+      <ref role="PrY4T" node="6TPUpoBq9Lp" resolve="IPrefixVariableProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6xoAPBjOH1$">
     <property role="EcuMT" value="7518930388003246180" />
@@ -778,6 +781,44 @@
     <ref role="1TJDcQ" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
     <node concept="PrWs8" id="6xoAPBjOMvs" role="PzmwI">
       <ref role="PrY4T" node="6xoAPBjOH1$" resolve="IMakeVariableProvider" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6TPUpoBq9Lp">
+    <property role="EcuMT" value="7959524747562753113" />
+    <property role="TrG5h" value="IPrefixVariableProvider" />
+    <node concept="PrWs8" id="6TPUpoBq9Lq" role="PrDN$">
+      <ref role="PrY4T" node="6xoAPBjOH1$" resolve="IMakeVariableProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TPUpoBq0YN">
+    <property role="EcuMT" value="7959524747562717107" />
+    <property role="3GE5qa" value="pickers" />
+    <property role="TrG5h" value="AbstractMakeVariableFilePicker" />
+    <property role="R5$K7" value="true" />
+    <property role="34LRSv" value="$(&lt;make variable&gt;) file picker" />
+    <ref role="1TJDcQ" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
+    <node concept="1TJgyi" id="6TPUpoBqeJ3" role="1TKVEl">
+      <property role="IQ2nx" value="7959524747562773443" />
+      <property role="TrG5h" value="variable" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6TPUpoBqeJ4" role="1TKVEl">
+      <property role="IQ2nx" value="7959524747562773444" />
+      <property role="TrG5h" value="defaultPrefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6TPUpoBq1dV" role="PzmwI">
+      <ref role="PrY4T" node="6xoAPBjOH1$" resolve="IMakeVariableProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TPUpoBq7Q9">
+    <property role="EcuMT" value="7959524747562745225" />
+    <property role="3GE5qa" value="pickers" />
+    <property role="TrG5h" value="PrefixFilePicker" />
+    <property role="34LRSv" value="$(PREFIX) file picker" />
+    <ref role="1TJDcQ" node="6TPUpoBq0YN" resolve="AbstractMakeVariableFilePicker" />
+    <node concept="PrWs8" id="6TPUpoBqgiH" role="PzmwI">
+      <ref role="PrY4T" node="6TPUpoBq9Lp" resolve="IPrefixVariableProvider" />
     </node>
   </node>
 </model>

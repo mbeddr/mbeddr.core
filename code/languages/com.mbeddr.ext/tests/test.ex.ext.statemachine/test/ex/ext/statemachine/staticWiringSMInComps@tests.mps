@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="0" />
+    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="9" />
     <use id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test" version="0" />
@@ -271,6 +271,7 @@
       <node concept="PP7vc" id="6zoq5B7kjva" role="2RW2fA">
         <node concept="1LFe83" id="6zoq5B7kjvb" role="PP7oY">
           <property role="TrG5h" value="SM" />
+          <property role="2OOxQR" value="true" />
           <ref role="1LFebw" node="6zoq5B7kjvc" resolve="s1" />
           <node concept="2cfOFI" id="6zoq5B7kjvN" role="1_Iowf">
             <property role="TrG5h" value="inEvent" />

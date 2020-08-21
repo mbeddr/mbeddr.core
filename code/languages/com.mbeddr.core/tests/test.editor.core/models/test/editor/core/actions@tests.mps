@@ -12,7 +12,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="5" />
   </languages>
   <imports>
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
@@ -1670,28 +1670,6 @@
       <node concept="3cqZAl" id="1xDazL6RqU7" role="3clF45" />
       <node concept="3clFbS" id="1xDazL6RqU8" role="3clF47">
         <node concept="3J1_TO" id="9nzA46WQCx" role="3cqZAp">
-          <node concept="3clFbS" id="9nzA46WQCy" role="1zxBo7">
-            <node concept="3clFbF" id="9nzA46WPOO" role="3cqZAp">
-              <node concept="2YIFZM" id="9nzA46WPXb" role="3clFbG">
-                <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
-                <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeAndWait(java.lang.Runnable)" resolve="invokeAndWait" />
-                <node concept="1bVj0M" id="9nzA46WQrx" role="37wK5m">
-                  <node concept="3clFbS" id="9nzA46WQry" role="1bW5cS">
-                    <node concept="3clFbF" id="1xDazL6RqU9" role="3cqZAp">
-                      <node concept="2OqwBi" id="D5oLwMLTOq" role="3clFbG">
-                        <node concept="Vb5G_" id="D5oLwMLTKO" role="2Oq$k0">
-                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
-                        </node>
-                        <node concept="liA8E" id="D5oLwMLUBA" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorContext.flushEvents()" resolve="flushEvents" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3uVAMA" id="9nzA46WQCp" role="1zxBo5">
             <node concept="XOnhg" id="9nzA46WQCr" role="1zc67B">
               <property role="3TUv4t" value="false" />
@@ -1715,6 +1693,28 @@
               </node>
             </node>
             <node concept="3clFbS" id="9nzA46WQCu" role="1zc67A" />
+          </node>
+          <node concept="3clFbS" id="9nzA46WQCy" role="1zxBo7">
+            <node concept="3clFbF" id="9nzA46WPOO" role="3cqZAp">
+              <node concept="2YIFZM" id="9nzA46WPXb" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
+                <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeAndWait(java.lang.Runnable)" resolve="invokeAndWait" />
+                <node concept="1bVj0M" id="9nzA46WQrx" role="37wK5m">
+                  <node concept="3clFbS" id="9nzA46WQry" role="1bW5cS">
+                    <node concept="3clFbF" id="1xDazL6RqU9" role="3cqZAp">
+                      <node concept="2OqwBi" id="D5oLwMLTOq" role="3clFbG">
+                        <node concept="Vb5G_" id="D5oLwMLTKO" role="2Oq$k0">
+                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+                        </node>
+                        <node concept="liA8E" id="D5oLwMLUBA" role="2OqNvi">
+                          <ref role="37wK5l" to="exr9:~EditorContext.flushEvents()" resolve="flushEvents" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1xDazL6RqUf" role="3cqZAp">
