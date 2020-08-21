@@ -245,7 +245,7 @@
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
-        <child id="6282313788306893059" name="index" index="2wJmCp" />
+        <child id="6282313788306893059" name="indexExpr" index="2wJmCp" />
       </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
@@ -254,7 +254,7 @@
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
       <concept id="5684014141267595977" name="com.mbeddr.core.pointers.structure.StringArrayType" flags="ng" index="12rfTQ">
-        <child id="5684014141267595982" name="size" index="12rfTL" />
+        <child id="5684014141267595982" name="sizeExpr" index="12rfTL" />
       </concept>
       <concept id="279446265608352903" name="com.mbeddr.core.pointers.structure.SizeOfExpr" flags="ng" index="3wxvTy">
         <child id="279446265608352905" name="type2Calculate" index="3wxvTG" />
@@ -17888,20 +17888,21 @@
             <node concept="3Tqbb2" id="5usoWIJ2LVL" role="1tU5fm">
               <ref role="ehGHo" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
             </node>
-            <node concept="2YIFZM" id="5usoWIJ2LVM" role="33vP2m">
+            <node concept="2YIFZM" id="4W77tK$qWbk" role="33vP2m">
+              <ref role="37wK5l" to="ahli:6dhuB$Q5W0b" resolve="findBCConfigItem" />
               <ref role="1Pybhc" to="ahli:78Ts1skprjP" resolve="BCHelper" />
-              <ref role="37wK5l" to="ahli:78Ts1skpDBH" resolve="expectBCConfigItem" />
-              <node concept="2OqwBi" id="5usoWIJ2LVN" role="37wK5m">
-                <node concept="1iwH7S" id="5usoWIJ2LVO" role="2Oq$k0" />
-                <node concept="1st3f0" id="4zXqh6UfJsy" role="2OqNvi" />
+              <node concept="2OqwBi" id="4W77tK$qWbl" role="37wK5m">
+                <node concept="1iwH7S" id="4W77tK$qWbm" role="2Oq$k0" />
+                <node concept="1st3f0" id="4W77tK$qWbn" role="2OqNvi" />
               </node>
-              <node concept="1iwH7S" id="5usoWIJ2LVQ" role="37wK5m" />
-              <node concept="Xl_RD" id="5usoWIJ2LVR" role="37wK5m">
+              <node concept="1iwH7S" id="4W77tK$qWbo" role="37wK5m" />
+              <node concept="Xl_RD" id="4W77tK$qWbp" role="37wK5m">
                 <property role="Xl_RC" value="com.mbeddr.core.util/main.reportingPrintfNew" />
               </node>
-              <node concept="3TUQnm" id="5usoWIJ2LVS" role="37wK5m">
+              <node concept="3TUQnm" id="4W77tK$qWbq" role="37wK5m">
                 <ref role="3TV0OU" to="k146:3R$6B6bKETH" resolve="ReportingConfiguration" />
               </node>
+              <node concept="Xl_RD" id="4W77tK$qWrR" role="37wK5m" />
             </node>
           </node>
         </node>
