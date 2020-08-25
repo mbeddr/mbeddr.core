@@ -19,7 +19,6 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
     <import index="ez3t" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:com.google.inject(Eclipse.Debugger/)" />
-    <import index="wyx4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.util.concurrent(MPS.Core/)" />
     <import index="hr7j" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:com.google.inject.binder(Eclipse.Debugger/)" />
     <import index="drde" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:com.google.inject.multibindings(Eclipse.Debugger/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
@@ -46,6 +45,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="i8lq" ref="9414e29c-0c8d-4bc7-b251-f312597fb993/java:org.mockito.internal.verification(org.mockito/)" />
+    <import index="wyx4" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.util.concurrent(de.q60.mps.libs/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1100,7 +1100,7 @@
                 <node concept="1Y3b0j" id="2pJszzmZcNQ" role="YeSDq">
                   <property role="2bfB8j" value="true" />
                   <ref role="1Y3XeK" to="ez3t:~AbstractModule" resolve="AbstractModule" />
-                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                  <ref role="37wK5l" to="ez3t:~AbstractModule.&lt;init&gt;()" resolve="AbstractModule" />
                   <node concept="3Tm1VV" id="2pJszzmZcNR" role="1B3o_S" />
                   <node concept="3clFb_" id="2pJszzmZcNS" role="jymVt">
                     <property role="1EzhhJ" value="false" />
@@ -1418,7 +1418,7 @@
                   <node concept="37vLTw" id="2pJszzmZcSq" role="2XxRq1">
                     <ref role="3cqZAo" node="2pJszzmZcQM" resolve="debugListenerMock" />
                   </node>
-                  <node concept="2YIFZM" id="z4vv_opx0n" role="2XxRq1">
+                  <node concept="2YIFZM" id="28$uKkVsYGg" role="2XxRq1">
                     <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                     <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
                   </node>
@@ -1947,7 +1947,7 @@
                   <node concept="37vLTw" id="2pJszzmZzIh" role="2XxRq1">
                     <ref role="3cqZAo" node="2pJszzmZzI7" resolve="debugListenerMock" />
                   </node>
-                  <node concept="2YIFZM" id="z4vv_opx0O" role="2XxRq1">
+                  <node concept="2YIFZM" id="28$uKkVsYGC" role="2XxRq1">
                     <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                     <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
                   </node>
@@ -6268,8 +6268,8 @@
                           <node concept="liA8E" id="1OGsPyH$U1D" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                             <node concept="2YIFZM" id="z4vv_opfr9" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                             </node>
                           </node>
                         </node>
@@ -7517,8 +7517,8 @@
                           <node concept="liA8E" id="1OGsPyH_21I" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                             <node concept="2YIFZM" id="z4vv_opj6a" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                             </node>
                           </node>
                         </node>
@@ -8701,8 +8701,8 @@
                           <node concept="liA8E" id="6L3DaT6YgHf" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                             <node concept="2YIFZM" id="z4vv_opjYb" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                             </node>
                           </node>
                         </node>
@@ -9646,8 +9646,8 @@
                           <node concept="liA8E" id="6L3DaT6YgHP" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                             <node concept="2YIFZM" id="z4vv_opms4" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                             </node>
                           </node>
                         </node>
@@ -10307,8 +10307,8 @@
                           <node concept="liA8E" id="6L3DaT6YgIN" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                             <node concept="2YIFZM" id="z4vv_opnHu" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                             </node>
                           </node>
                         </node>
@@ -11670,8 +11670,8 @@
                           <node concept="liA8E" id="6L3DaT6YgJB" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                             <node concept="2YIFZM" id="z4vv_opoUa" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                             </node>
                           </node>
                         </node>
@@ -12573,8 +12573,8 @@
                           <node concept="liA8E" id="6L3DaT6YgLo" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                             <node concept="2YIFZM" id="z4vv_opqLB" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                             </node>
                           </node>
                         </node>
@@ -14200,8 +14200,8 @@
                           <node concept="liA8E" id="6L3DaT6YgON" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                             <node concept="2YIFZM" id="z4vv_opy4J" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                             </node>
                           </node>
                         </node>
@@ -15126,8 +15126,8 @@
                           <node concept="liA8E" id="6L3DaT6YgNe" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                             <node concept="2YIFZM" id="z4vv_opzy_" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                             </node>
                           </node>
                         </node>
@@ -45166,8 +45166,8 @@
                             <node concept="liA8E" id="6ZadL_R4DoW" role="2OqNvi">
                               <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                               <node concept="2YIFZM" id="z4vv_opvsG" role="37wK5m">
-                                <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                                 <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                                <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService()" resolve="newDirectExecutorService" />
                               </node>
                             </node>
                           </node>

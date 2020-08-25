@@ -130,6 +130,12 @@
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
         <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
       </concept>
+      <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
+        <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
+        <property id="8137134783396676838" name="extracted" index="1HemKv" />
+        <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
+        <child id="8137134783396676835" name="location" index="1HemKq" />
+      </concept>
       <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
         <child id="4278635856200826394" name="path" index="1BurEY" />
       </concept>
@@ -396,6 +402,28 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="28$uKkVteKW" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="28$uKkVteKX" role="1HemKq">
+            <node concept="398BVA" id="28$uKkVteKE" role="3LXTmr">
+              <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
+              <node concept="2Ry0Ak" id="28$uKkVteKF" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="28$uKkVteKG" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.debugger.cdt" />
+                  <node concept="2Ry0Ak" id="28$uKkVteKH" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="28$uKkVteKY" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7eF9rfAuv4P" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -511,6 +539,30 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="28$uKkVteKZ" role="3bR37C">
+          <node concept="3bR9La" id="28$uKkVteL0" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="28$uKkVteL_" role="3bR31x">
+          <property role="3ZfqAx" value="" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="28$uKkVteLA" role="1HemKq">
+            <node concept="398BVA" id="28$uKkVteLm" role="3LXTmr">
+              <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.debugger" />
+              <node concept="2Ry0Ak" id="28$uKkVteLn" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="28$uKkVteLo" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.debugger.core" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="28$uKkVteLB" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
