@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b89fcd5c-b71e-4285-acba-1527201846fe(com.mbeddr.analyses.cbmc.documentation._030_environment_definition_examples)" doNotGenerate="true">
+<model ref="r:b89fcd5c-b71e-4285-acba-1527201846fe(com.mbeddr.analyses.cbmc.documentation._030_environment_definition_examples)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b3e48a27-6547-47a1-8503-7e5f36ff6fd9(test.com.mbeddr.mpsutil.iconchar.accessory)" doNotGenerate="true">
+<model ref="r:b3e48a27-6547-47a1-8503-7e5f36ff6fd9(test.com.mbeddr.mpsutil.iconchar.accessory)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="6439a9c3-d5bd-4cb1-b4a1-24ee935afcf9" name="test.com.mbeddr.mpsutil.iconchar" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />

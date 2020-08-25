@@ -553,7 +553,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="1LleiTPK11f" role="2OqNvi">
-                    <ref role="3Tt5mk" to="yq40:4VxFbWczlbe" resolve="size" />
+                    <ref role="3Tt5mk" to="yq40:4VxFbWczlbe" resolve="sizeExpr" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="1LleiTPK1WV" role="2OqNvi" />

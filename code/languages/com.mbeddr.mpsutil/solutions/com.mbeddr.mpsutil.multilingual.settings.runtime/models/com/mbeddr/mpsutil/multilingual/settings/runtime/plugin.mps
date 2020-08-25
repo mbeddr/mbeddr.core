@@ -216,8 +216,8 @@
         <child id="8201243288561544766" name="getEntriesFunction" index="3i_clJ" />
         <child id="8201243288561545816" name="defaultEntryFunction" index="3i_d$9" />
       </concept>
-      <concept id="8201243288561530773" name="com.mbeddr.mpsutil.preferenceform.structure.DynamicComboBoxEntriesFunction" flags="ng" index="3i_9N4" />
-      <concept id="8201243288561544883" name="com.mbeddr.mpsutil.preferenceform.structure.DynamicComboBoxDefaultEntryFunction" flags="ng" index="3i_cny" />
+      <concept id="8201243288561530773" name="com.mbeddr.mpsutil.preferenceform.structure.DynamicComboBoxEntriesFunction" flags="ig" index="3i_9N4" />
+      <concept id="8201243288561544883" name="com.mbeddr.mpsutil.preferenceform.structure.DynamicComboBoxDefaultEntryFunction" flags="ig" index="3i_cny" />
       <concept id="145956936283289547" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceForm" flags="ng" index="1DFvN4">
         <child id="1210676907584" name="afterReadBlockProject" index="3xXSXp" />
         <child id="1210676918600" name="beforeWriteBlockProject" index="3xXVxh" />

@@ -2,7 +2,7 @@
 <model ref="r:c0dcafae-993e-49da-8bd0-f4eeac6d4bd9(com.mbeddr.core.udt.editor)">
   <persistence version="9" />
   <languages>
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -1357,7 +1357,7 @@
     <ref role="aqKnT" to="clbe:5jyom5fO9Cn" resolve="TypeDefType" />
     <node concept="1s_PAr" id="3Q2hMLtQ6vZ" role="3ft7WO">
       <node concept="2kknPI" id="3Q2hMLtQ6w0" role="1s_PAo">
-        <ref role="2kkw0f" node="3Q2hMLtQ6vW" />
+        <ref role="2kkw0f" node="3Q2hMLtQ6vW" resolve="TypeDefType_SmartReference" />
       </node>
     </node>
     <node concept="2VfDsV" id="3Q2hMLtQ6w1" role="3ft7WO" />
@@ -1414,7 +1414,7 @@
             <node concept="3clFbF" id="2cvVnUv6By9" role="3cqZAp">
               <node concept="2OqwBi" id="2cvVnUv6Bya" role="3clFbG">
                 <node concept="37vLTw" id="2cvVnUv6Byb" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2cvVnUv6By4" />
+                  <ref role="3cqZAo" node="2cvVnUv6By4" resolve="replaceWithNew" />
                 </node>
                 <node concept="1OKiuA" id="2cvVnUv6Byc" role="2OqNvi">
                   <node concept="1Q80Hx" id="2cvVnUv6Byj" role="lBI5i" />
@@ -1428,7 +1428,7 @@
             <node concept="3clFbF" id="2cvVnUv6Byp" role="3cqZAp">
               <node concept="2OqwBi" id="2cvVnUv6Byk" role="3clFbG">
                 <node concept="37vLTw" id="2cvVnUv6Byh" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2cvVnUv6By4" />
+                  <ref role="3cqZAo" node="2cvVnUv6By4" resolve="replaceWithNew" />
                 </node>
                 <node concept="1OKiuA" id="2cvVnUv6Byl" role="2OqNvi">
                   <node concept="1Q80Hx" id="2cvVnUv6Bym" role="lBI5i" />

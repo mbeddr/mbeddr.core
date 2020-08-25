@@ -1168,7 +1168,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4XMHJL4FPrw" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -6586,7 +6586,7 @@
                   <ref role="1M0zk5" node="1EZSCJhRzY8" resolve="type" />
                 </node>
                 <node concept="2qgKlT" id="1EZSCJhR$vg" role="2OqNvi">
-                  <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+                  <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
                 </node>
               </node>
               <node concept="17RvpY" id="1EZSCJhR_rh" role="2OqNvi" />

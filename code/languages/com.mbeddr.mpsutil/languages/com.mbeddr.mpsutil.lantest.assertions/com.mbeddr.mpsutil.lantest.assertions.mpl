@@ -53,6 +53,7 @@
         <module reference="ccdc24b1-37a8-44ac-8a87-b53bd9c96407(com.mbeddr.mpsutil.lantest.assertions)" version="0" />
         <module reference="9353f7a8-49dc-4354-af85-a1a368c758c4(com.mbeddr.mpsutil.lantest.assertions#4758317971060520154)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
+        <module reference="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" version="0" />
         <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
         <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />

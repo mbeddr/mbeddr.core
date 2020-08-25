@@ -116,10 +116,10 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="fb1561dd-216d-4cd5-9cd8-5d1dc9d20bcf" name="com.mbeddr.mpsutil.datepicker">
-      <concept id="2733170341479306405" name="com.mbeddr.mpsutil.datepicker.structure.Function_DatePickerSetup" flags="ng" index="3RrZXk" />
-      <concept id="2733170341479306404" name="com.mbeddr.mpsutil.datepicker.structure.Function_DatePickerAction" flags="ng" index="3RrZXl" />
+      <concept id="2733170341479306405" name="com.mbeddr.mpsutil.datepicker.structure.Function_DatePickerSetup" flags="ig" index="3RrZXk" />
+      <concept id="2733170341479306404" name="com.mbeddr.mpsutil.datepicker.structure.Function_DatePickerAction" flags="ig" index="3RrZXl" />
       <concept id="2733170341479306407" name="com.mbeddr.mpsutil.datepicker.structure.Parameter_Calendar" flags="ng" index="3RrZXm" />
-      <concept id="2733170341479306406" name="com.mbeddr.mpsutil.datepicker.structure.Function_DatePickerVeto" flags="ng" index="3RrZXn" />
+      <concept id="2733170341479306406" name="com.mbeddr.mpsutil.datepicker.structure.Function_DatePickerVeto" flags="ig" index="3RrZXn" />
       <concept id="2733170341479306409" name="com.mbeddr.mpsutil.datepicker.structure.Parameter_DatePickerConfig" flags="ng" index="3RrZXo" />
       <concept id="2733170341479306408" name="com.mbeddr.mpsutil.datepicker.structure.Parameter_DatePicker" flags="ng" index="3RrZXp" />
       <concept id="2733170341479306398" name="com.mbeddr.mpsutil.datepicker.structure.DatePickerCell" flags="ng" index="3RrZXJ">

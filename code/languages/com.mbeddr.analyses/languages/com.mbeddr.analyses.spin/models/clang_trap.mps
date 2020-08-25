@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c3f9ff78-363c-4a3b-8770-7266ac892a5d(com.mbeddr.analyses.spin.clang_trap)" doNotGenerate="true">
+<model ref="r:c3f9ff78-363c-4a3b-8770-7266ac892a5d(com.mbeddr.analyses.spin.clang_trap)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />

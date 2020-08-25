@@ -192,7 +192,7 @@
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
       <node concept="3Tm1VV" id="4PdWDflgRsX" role="1B3o_S" />
       <node concept="3clFbS" id="4PdWDflgRtk" role="3clF47">
         <node concept="3clFbF" id="4PdWDflgShU" role="3cqZAp">
@@ -214,7 +214,7 @@
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
       <node concept="3Tm1VV" id="4PdWDflhDR9" role="1B3o_S" />
       <node concept="3clFbS" id="4PdWDflhDRw" role="3clF47">
         <node concept="3clFbF" id="4PdWDflhE1m" role="3cqZAp">

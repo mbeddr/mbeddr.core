@@ -5,7 +5,7 @@
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
@@ -5576,7 +5576,7 @@
             <node concept="2OqwBi" id="2cvVnUv6CXp" role="3clFbG">
               <node concept="2OqwBi" id="2cvVnUv6CXq" role="2Oq$k0">
                 <node concept="37vLTw" id="2cvVnUv6CXr" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2cvVnUv6CXj" />
+                  <ref role="3cqZAo" node="2cvVnUv6CXj" resolve="a" />
                 </node>
                 <node concept="3TrEf2" id="2cvVnUv6CXs" role="2OqNvi">
                   <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
@@ -5589,7 +5589,7 @@
           </node>
           <node concept="3clFbF" id="2cvVnUv6CXv" role="3cqZAp">
             <node concept="37vLTw" id="2cvVnUv6CXw" role="3clFbG">
-              <ref role="3cqZAo" node="2cvVnUv6CXj" />
+              <ref role="3cqZAo" node="2cvVnUv6CXj" resolve="a" />
             </node>
           </node>
         </node>

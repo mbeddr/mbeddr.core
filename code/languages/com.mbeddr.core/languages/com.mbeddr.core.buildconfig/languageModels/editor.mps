@@ -8,7 +8,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="0" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
   </languages>
@@ -2764,7 +2764,7 @@
                 <ref role="ehGHo" to="51wr:7$0wAVob45N" resolve="PlatformTemplateContainer" />
               </node>
               <node concept="9H$SH" id="2cvVnUv6DBM" role="33vP2m">
-                <ref role="9Hxhg" to="f66f:7$0wAVocgV$" />
+                <ref role="9Hxhg" to="f66f:7$0wAVocgV$" resolve="Platform Templates" />
                 <node concept="2OqwBi" id="2cvVnUv6DBN" role="9HWM5">
                   <node concept="2JrnkZ" id="2cvVnUv6DBO" role="2Oq$k0">
                     <node concept="1rpKSd" id="2cvVnUv6DBW" role="2JrQYb" />
@@ -2780,7 +2780,7 @@
           <node concept="3clFbF" id="2cvVnUv6DBS" role="3cqZAp">
             <node concept="2OqwBi" id="2cvVnUv6DBT" role="3clFbG">
               <node concept="37vLTw" id="2cvVnUv6DBU" role="2Oq$k0">
-                <ref role="3cqZAo" node="2cvVnUv6DBK" />
+                <ref role="3cqZAo" node="2cvVnUv6DBK" resolve="container" />
               </node>
               <node concept="3Tsc0h" id="2cvVnUv6DBV" role="2OqNvi">
                 <ref role="3TtcxE" to="51wr:7$0wAVob45Q" resolve="templates" />
@@ -2814,7 +2814,7 @@
                 </node>
                 <node concept="2OqwBi" id="2cvVnUv6DCZ" role="33vP2m">
                   <node concept="9H$SH" id="2cvVnUv6DD0" role="2Oq$k0">
-                    <ref role="9Hxhg" to="f66f:7$0wAVocgV$" />
+                    <ref role="9Hxhg" to="f66f:7$0wAVocgV$" resolve="Platform Templates" />
                     <node concept="2OqwBi" id="2cvVnUv6DD1" role="9HWM5">
                       <node concept="2JrnkZ" id="2cvVnUv6DD2" role="2Oq$k0">
                         <node concept="1rpKSd" id="2cvVnUv6DE1" role="2JrQYb" />
@@ -2836,7 +2836,7 @@
                 </node>
                 <node concept="2OqwBi" id="2cvVnUv6DD9" role="33vP2m">
                   <node concept="37vLTw" id="2cvVnUv6DDa" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2cvVnUv6DCX" />
+                    <ref role="3cqZAo" node="2cvVnUv6DCX" resolve="preferenceModel" />
                   </node>
                   <node concept="liA8E" id="2cvVnUv6DDb" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModel.getReference()" resolve="getReference" />
@@ -2867,7 +2867,7 @@
                   <node concept="10QFUN" id="2cvVnUv6DDn" role="1eOMHV">
                     <node concept="2OqwBi" id="2cvVnUv6DDo" role="10QFUP">
                       <node concept="37vLTw" id="2cvVnUv6DDp" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2cvVnUv6DDe" />
+                        <ref role="3cqZAo" node="2cvVnUv6DDe" resolve="myModel" />
                       </node>
                       <node concept="liA8E" id="2cvVnUv6DDq" role="2OqNvi">
                         <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
@@ -2883,14 +2883,14 @@
             <node concept="3clFbF" id="2cvVnUv6DDs" role="3cqZAp">
               <node concept="2OqwBi" id="2cvVnUv6DDt" role="3clFbG">
                 <node concept="37vLTw" id="2cvVnUv6DDu" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2cvVnUv6DDk" />
+                  <ref role="3cqZAo" node="2cvVnUv6DDk" resolve="module" />
                 </node>
                 <node concept="liA8E" id="2cvVnUv6DDv" role="2OqNvi">
                   <ref role="37wK5l" to="z1c3:~AbstractModule.addDependency(org.jetbrains.mps.openapi.module.SModuleReference,boolean)" resolve="addDependency" />
                   <node concept="2OqwBi" id="2cvVnUv6DDw" role="37wK5m">
                     <node concept="2OqwBi" id="2cvVnUv6DDx" role="2Oq$k0">
                       <node concept="37vLTw" id="2cvVnUv6DDy" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2cvVnUv6DCX" />
+                        <ref role="3cqZAo" node="2cvVnUv6DCX" resolve="preferenceModel" />
                       </node>
                       <node concept="liA8E" id="2cvVnUv6DDz" role="2OqNvi">
                         <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
@@ -2911,7 +2911,7 @@
                 <node concept="1eOMI4" id="2cvVnUv6DDC" role="2Oq$k0">
                   <node concept="10QFUN" id="2cvVnUv6DDD" role="1eOMHV">
                     <node concept="37vLTw" id="2cvVnUv6DDE" role="10QFUP">
-                      <ref role="3cqZAo" node="2cvVnUv6DDe" />
+                      <ref role="3cqZAo" node="2cvVnUv6DDe" resolve="myModel" />
                     </node>
                     <node concept="3uibUv" id="2cvVnUv6DDF" role="10QFUM">
                       <ref role="3uigEE" to="w1kc:~SModelInternal" resolve="SModelInternal" />
@@ -2921,7 +2921,7 @@
                 <node concept="liA8E" id="2cvVnUv6DDG" role="2OqNvi">
                   <ref role="37wK5l" to="w1kc:~SModelInternal.addModelImport(org.jetbrains.mps.openapi.model.SModelReference)" resolve="addModelImport" />
                   <node concept="37vLTw" id="2cvVnUv6DDH" role="37wK5m">
-                    <ref role="3cqZAo" node="2cvVnUv6DD7" />
+                    <ref role="3cqZAo" node="2cvVnUv6DD7" resolve="sPrefModelRef" />
                   </node>
                 </node>
               </node>
@@ -2948,7 +2948,7 @@
                 <node concept="2ZBlsa" id="2cvVnUv6DE3" role="37vLTx" />
                 <node concept="2OqwBi" id="2cvVnUv6DDU" role="37vLTJ">
                   <node concept="37vLTw" id="2cvVnUv6DDV" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2cvVnUv6DDM" />
+                    <ref role="3cqZAo" node="2cvVnUv6DDM" resolve="node" />
                   </node>
                   <node concept="3TrEf2" id="2cvVnUv6DDW" role="2OqNvi">
                     <ref role="3Tt5mk" to="51wr:7$0wAVofq6m" resolve="template" />
@@ -2959,7 +2959,7 @@
             <node concept="3clFbH" id="2cvVnUv6DDX" role="3cqZAp" />
             <node concept="3clFbF" id="2cvVnUv6DDY" role="3cqZAp">
               <node concept="37vLTw" id="2cvVnUv6DDZ" role="3clFbG">
-                <ref role="3cqZAo" node="2cvVnUv6DDM" />
+                <ref role="3cqZAo" node="2cvVnUv6DDM" resolve="node" />
               </node>
             </node>
             <node concept="3clFbH" id="2cvVnUv6DE0" role="3cqZAp" />
@@ -3033,6 +3033,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="7aBTEUz4Sxf">
+    <property role="TrG5h" value="DummyForGrammarCells" />
+    <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="3F0ifn" id="7aBTEUz4Sxg" role="2wV5jI">
+      <property role="3F0ifm" value="Workaround to fix contributions to BaseConcept generated by grammarCells." />
     </node>
   </node>
 </model>

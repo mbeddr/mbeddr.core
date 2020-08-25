@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:38d6a4df-dada-4cb3-a8e9-e8c2e1729730(com.mbeddr.analyses.spin.c.patterns.documentation_examples)" doNotGenerate="true">
+<model ref="r:38d6a4df-dada-4cb3-a8e9-e8c2e1729730(com.mbeddr.analyses.spin.c.patterns.documentation_examples)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="9" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />

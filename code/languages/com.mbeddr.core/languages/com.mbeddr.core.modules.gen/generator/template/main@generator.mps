@@ -641,7 +641,7 @@
         <property id="1559434277891357642" name="alternativeHeaderFileName" index="2XV0bW" />
         <property id="3830958861296806571" name="headerFileName" index="19$mpy" />
       </concept>
-      <concept id="2080708908160110638" name="com.mbeddr.core.modules.gen.structure.GenForignExtModuleImport" flags="ng" index="1bfZAk" />
+      <concept id="2080708908160110638" name="com.mbeddr.core.modules.gen.structure.GenForeignExtModuleImport" flags="ng" index="1bfZAk" />
       <concept id="1758019824472688222" name="com.mbeddr.core.modules.gen.structure.GenModuleH" flags="ng" index="1hFVJD">
         <child id="5569318043966868262" name="headerImports" index="2IAVDA" />
         <child id="1758019824472688223" name="contents" index="1hFVJC" />

@@ -78,12 +78,12 @@
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
       <concept id="5947739078127951575" name="com.mbeddr.core.udt.structure.Enum2Int" flags="ng" index="2a30fU" />
-      <concept id="1320626622329014538" name="" flags="ng" index="2iySvw">
-        <child id="1320626622329014595" name="" index="2iySuD" />
-        <child id="1320626622329027228" name="" index="2iyVhQ" />
+      <concept id="1320626622329014538" name="com.mbeddr.core.udt.structure.AbstractInt2Expression" flags="ng" index="2iySvw">
+        <child id="1320626622329014595" name="targetType" index="2iySuD" />
+        <child id="1320626622329027228" name="expr" index="2iyVhQ" />
       </concept>
-      <concept id="1320626622328445270" name="" flags="ng" index="2iB5uW">
-        <child id="1320626622328454454" name="" index="2iB7fs" />
+      <concept id="1320626622328445270" name="com.mbeddr.core.udt.structure.Abstract2IntExpression" flags="ng" index="2iB5uW">
+        <child id="1320626622328454454" name="expr" index="2iB7fs" />
       </concept>
       <concept id="9101132143320200657" name="com.mbeddr.core.udt.structure.SUContent" flags="ng" index="2mccaB">
         <property id="7893263420320494797" name="transparent" index="33gNmf" />

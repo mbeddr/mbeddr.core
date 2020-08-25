@@ -211,7 +211,7 @@
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
-        <child id="6282313788306893059" name="index" index="2wJmCp" />
+        <child id="6282313788306893059" name="indexExpr" index="2wJmCp" />
       </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
@@ -221,7 +221,7 @@
       <concept id="6883925235272353061" name="com.mbeddr.core.pointers.structure.SizeOfExprForExpressions" flags="ng" index="Vihyy" />
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
       <concept id="5684014141267595977" name="com.mbeddr.core.pointers.structure.StringArrayType" flags="ng" index="12rfTQ">
-        <child id="5684014141267595982" name="size" index="12rfTL" />
+        <child id="5684014141267595982" name="sizeExpr" index="12rfTL" />
       </concept>
       <concept id="279446265608352903" name="com.mbeddr.core.pointers.structure.SizeOfExpr" flags="ng" index="3wxvTy">
         <child id="279446265608352905" name="type2Calculate" index="3wxvTG" />
@@ -30232,7 +30232,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCn$l" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30247,7 +30247,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCnU4" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30268,7 +30268,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCo8S" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30283,7 +30283,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCo8Y" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30304,7 +30304,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCp0T" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30319,7 +30319,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCp0Z" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30340,7 +30340,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCpVl" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30355,7 +30355,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCpVr" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30376,7 +30376,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCqO6" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30391,7 +30391,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCqOc" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30406,7 +30406,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCslt" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30427,7 +30427,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCsFM" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30442,7 +30442,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCsFS" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30457,7 +30457,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCsFY" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>
@@ -30472,7 +30472,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="4ZKqR_eCuyt" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
             </node>
           </node>
         </node>

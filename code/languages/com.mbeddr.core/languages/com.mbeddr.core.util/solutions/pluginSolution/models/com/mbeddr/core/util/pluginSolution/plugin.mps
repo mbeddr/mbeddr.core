@@ -343,10 +343,10 @@
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
     <language id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions">
-      <concept id="1856959976861964558" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddToGroupIdAnchor" flags="ng" index="2Zfapc">
+      <concept id="1856959976861964558" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddToGroupIdAnchor" flags="lg" index="2Zfapc">
         <property id="1856959976861964583" name="groupId" index="2Zfap_" />
       </concept>
-      <concept id="3826319847679748876" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddWithConstantArchor" flags="ng" index="30SVEG">
+      <concept id="3826319847679748876" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddWithConstantArchor" flags="lg" index="30SVEG">
         <property id="3023910107019687778" name="anchor" index="2Sq25q" />
         <property id="3826319847679982768" name="archor" index="30T2Og" />
       </concept>
@@ -369,7 +369,7 @@
       <concept id="8081644025964866007" name="com.mbeddr.mpsutil.process.structure.ProcessInputRef" flags="ng" index="CVeQV">
         <reference id="8081644025964866020" name="input" index="CVeQ8" />
       </concept>
-      <concept id="4724180912012713611" name="com.mbeddr.mpsutil.process.structure.CreateComponentFunction" flags="ng" index="UJns9" />
+      <concept id="4724180912012713611" name="com.mbeddr.mpsutil.process.structure.CreateComponentFunction" flags="ig" index="UJns9" />
       <concept id="4724180912012648918" name="com.mbeddr.mpsutil.process.structure.Step" flags="ng" index="UJ$xk">
         <property id="4671234082065499041" name="titel" index="2WTsO4" />
         <child id="6632769160448739358" name="validate" index="29IHLQ" />
@@ -387,23 +387,23 @@
         <child id="4724180912012650163" name="steps" index="UJ$WL" />
         <child id="498531228381448308" name="output" index="3fXEJQ" />
       </concept>
-      <concept id="4724180912013637171" name="com.mbeddr.mpsutil.process.structure.IsValidFunction" flags="ng" index="UNPYL" />
-      <concept id="4671234082065542312" name="com.mbeddr.mpsutil.process.structure.OnNextFunction" flags="ng" index="2WTm8d" />
+      <concept id="4724180912013637171" name="com.mbeddr.mpsutil.process.structure.IsValidFunction" flags="ig" index="UNPYL" />
+      <concept id="4671234082065542312" name="com.mbeddr.mpsutil.process.structure.OnNextFunction" flags="ig" index="2WTm8d" />
       <concept id="7775334123755359387" name="com.mbeddr.mpsutil.process.structure.FinishOp" flags="ng" index="33zGmF" />
       <concept id="7775334123752824657" name="com.mbeddr.mpsutil.process.structure.CreateWizardExpression" flags="ng" index="33Dhpx" />
       <concept id="7775334123752824719" name="com.mbeddr.mpsutil.process.structure.CreateWizardExpressionBase" flags="ng" index="33DhqZ">
         <reference id="7775334123752824741" name="process" index="33Dhql" />
         <child id="7775334123752824734" name="initVals" index="33DhqI" />
       </concept>
-      <concept id="7775334123752756248" name="com.mbeddr.mpsutil.process.structure.WizardType" flags="ng" index="33DxOC">
+      <concept id="7775334123752756248" name="com.mbeddr.mpsutil.process.structure.WizardType" flags="ig" index="33DxOC">
         <reference id="7775334123752756259" name="wizard" index="33DxOj" />
       </concept>
       <concept id="7775334123753877828" name="com.mbeddr.mpsutil.process.structure.ShowOperation" flags="ng" index="33HjxO" />
       <concept id="2010190855810948494" name="com.mbeddr.mpsutil.process.structure.ValidateExpression" flags="ng" index="38J3Lw" />
       <concept id="1352395058067409207" name="com.mbeddr.mpsutil.process.structure.ProgressOutputFunctionParameter" flags="ng" index="3aREkk" />
-      <concept id="498531228376113013" name="com.mbeddr.mpsutil.process.structure.UpdateUIFunction" flags="ng" index="3e9NNR" />
+      <concept id="498531228376113013" name="com.mbeddr.mpsutil.process.structure.UpdateUIFunction" flags="ig" index="3e9NNR" />
       <concept id="498531228381748916" name="com.mbeddr.mpsutil.process.structure.OutputExecuteFunctionParameter" flags="ng" index="3fMjOQ" />
-      <concept id="498531228381780164" name="com.mbeddr.mpsutil.process.structure.OnFinshFunction" flags="ng" index="3fMrH6" />
+      <concept id="498531228381780164" name="com.mbeddr.mpsutil.process.structure.OnFinshFunction" flags="ig" index="3fMrH6" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp">
@@ -508,7 +508,7 @@
       <concept id="8018258162245748350" name="com.mbeddr.mpsutil.smodule.structure.AddSolutionOperation" flags="ng" index="29j_kI">
         <child id="8018258162245748891" name="name" index="29j_Jb" />
       </concept>
-      <concept id="8018258162245800709" name="com.mbeddr.mpsutil.smodule.structure.SolutionType" flags="ng" index="29jK1l" />
+      <concept id="8018258162245800709" name="com.mbeddr.mpsutil.smodule.structure.SolutionType" flags="ig" index="29jK1l" />
       <concept id="386247815699362375" name="com.mbeddr.mpsutil.smodule.structure.SingleFilePersistence" flags="ng" index="2fmWwg" />
       <concept id="3692959419668441282" name="com.mbeddr.mpsutil.smodule.structure.AddModelOperation" flags="ng" index="2o1iZ4">
         <child id="9193920352840482545" name="storageType" index="bRicC" />
@@ -6308,7 +6308,7 @@
                               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                               <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                               <node concept="CVeQV" id="2cNe_D153eL" role="37wK5m">
-                                <ref role="CVeQ8" node="2cNe_D14BWA" />
+                                <ref role="CVeQ8" node="2cNe_D14BWA" resolve="currentProject" />
                               </node>
                             </node>
                           </node>
@@ -6325,10 +6325,10 @@
                                 <ref role="37wK5l" to="fpme:~ProjectFactory.&lt;init&gt;(jetbrains.mps.workbench.dialogs.project.newproject.ProjectOptions)" resolve="ProjectFactory" />
                                 <node concept="2OqwBi" id="2cNe_D18$Ee" role="37wK5m">
                                   <node concept="CSfHN" id="2cNe_D18$5V" role="2Oq$k0">
-                                    <ref role="CSbhP" node="2cNe_D14Avt" />
+                                    <ref role="CSbhP" node="2cNe_D14Avt" resolve="chooseProjectName" />
                                   </node>
                                   <node concept="C_CzU" id="2cNe_D18_dR" role="2OqNvi">
-                                    <ref role="2WH_rO" node="2cNe_D17HYQ" />
+                                    <ref role="2WH_rO" node="2cNe_D17HYQ" resolve="projectOptions" />
                                   </node>
                                 </node>
                               </node>
@@ -6391,10 +6391,10 @@
                                               <node concept="2OqwBi" id="1YVE9tNaI$0" role="29j_Jb">
                                                 <node concept="2OqwBi" id="1YVE9tNaI$1" role="2Oq$k0">
                                                   <node concept="CSfHN" id="1YVE9tNaI$2" role="2Oq$k0">
-                                                    <ref role="CSbhP" node="2cNe_D17Jvm" />
+                                                    <ref role="CSbhP" node="2cNe_D17Jvm" resolve="chooseSolutionName2" />
                                                   </node>
                                                   <node concept="C_CzU" id="1YVE9tNaI$3" role="2OqNvi">
-                                                    <ref role="2WH_rO" node="2cNe_D17L51" />
+                                                    <ref role="2WH_rO" node="2cNe_D17L51" resolve="solutionSettings" />
                                                   </node>
                                                 </node>
                                                 <node concept="liA8E" id="1YVE9tNaI$4" role="2OqNvi">
@@ -6422,10 +6422,10 @@
                                                 <node concept="2OqwBi" id="1B5fOaAX6Dn" role="3uHU7B">
                                                   <node concept="2OqwBi" id="1B5fOaAX6Do" role="2Oq$k0">
                                                     <node concept="CSfHN" id="1B5fOaAX6Dp" role="2Oq$k0">
-                                                      <ref role="CSbhP" node="2cNe_D17Jvm" />
+                                                      <ref role="CSbhP" node="2cNe_D17Jvm" resolve="chooseSolutionName2" />
                                                     </node>
                                                     <node concept="C_CzU" id="1B5fOaAX6Dq" role="2OqNvi">
-                                                      <ref role="2WH_rO" node="2cNe_D17L51" />
+                                                      <ref role="2WH_rO" node="2cNe_D17L51" resolve="solutionSettings" />
                                                     </node>
                                                   </node>
                                                   <node concept="liA8E" id="1B5fOaAX6Dr" role="2OqNvi">
@@ -6447,10 +6447,10 @@
                                           </node>
                                           <node concept="2OqwBi" id="1B5fOaAX2Sr" role="33vP2m">
                                             <node concept="CSfHN" id="1B5fOaAX2H3" role="2Oq$k0">
-                                              <ref role="CSbhP" node="2cNe_D17JxA" />
+                                              <ref role="CSbhP" node="2cNe_D17JxA" resolve="selectTemplate2" />
                                             </node>
                                             <node concept="C_CzU" id="1B5fOaAX302" role="2OqNvi">
-                                              <ref role="2WH_rO" node="1YVE9tNaq9g" />
+                                              <ref role="2WH_rO" node="1YVE9tNaq9g" resolve="selectedTemplate" />
                                             </node>
                                           </node>
                                         </node>
@@ -6553,7 +6553,7 @@
                                           <node concept="2OqwBi" id="1B5fOaAXHVK" role="33vP2m">
                                             <node concept="2WthIp" id="1B5fOaAXHVL" role="2Oq$k0" />
                                             <node concept="C_CzU" id="1B5fOaAXHVM" role="2OqNvi">
-                                              <ref role="2WH_rO" node="2cNe_D17JA1" />
+                                              <ref role="2WH_rO" node="2cNe_D17JA1" resolve="devKitBoxes" />
                                             </node>
                                           </node>
                                         </node>
@@ -6569,7 +6569,7 @@
                                           <node concept="2OqwBi" id="1B5fOaAXHVR" role="33vP2m">
                                             <node concept="2WthIp" id="1B5fOaAXHVS" role="2Oq$k0" />
                                             <node concept="C_CzU" id="1B5fOaAXHVT" role="2OqNvi">
-                                              <ref role="2WH_rO" node="2cNe_D17J_Y" />
+                                              <ref role="2WH_rO" node="2cNe_D17J_Y" resolve="devKits" />
                                             </node>
                                           </node>
                                         </node>

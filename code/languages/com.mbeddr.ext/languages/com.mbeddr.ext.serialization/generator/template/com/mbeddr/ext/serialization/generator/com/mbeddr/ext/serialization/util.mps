@@ -1690,7 +1690,7 @@
                                                   </node>
                                                 </node>
                                                 <node concept="3TrEf2" id="6pWLWdosTMo" role="2OqNvi">
-                                                  <ref role="3Tt5mk" to="yq40:4VxFbWczlbe" resolve="size" />
+                                                  <ref role="3Tt5mk" to="yq40:4VxFbWczlbe" resolve="sizeExpr" />
                                                 </node>
                                               </node>
                                               <node concept="1$rogu" id="6pWLWdot1Gu" role="2OqNvi" />

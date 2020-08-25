@@ -4,7 +4,7 @@
   <languages>
     <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -1496,7 +1496,7 @@
                     <node concept="1pGfFk" id="3x42ltMQHdC" role="2ShVmc">
                       <ref role="37wK5l" to="kt01:~StringSelection.&lt;init&gt;(java.lang.String)" resolve="StringSelection" />
                       <node concept="37vLTw" id="2_xtqg$WOiB" role="37wK5m">
-                        <ref role="3cqZAo" node="2_xtqg$WNkp" />
+                        <ref role="3cqZAo" node="2_xtqg$WNkp" resolve="text" />
                       </node>
                     </node>
                   </node>
@@ -1540,7 +1540,7 @@
                   <ref role="1Pybhc" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
                   <ref role="37wK5l" to="1s42:2Fy8PSu2ws1" resolve="escape" />
                   <node concept="37vLTw" id="2Fy8PSu2$N9" role="37wK5m">
-                    <ref role="3cqZAo" node="2_xtqg$CQgb" />
+                    <ref role="3cqZAo" node="2_xtqg$CQgb" resolve="text" />
                   </node>
                 </node>
               </node>

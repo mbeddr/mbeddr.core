@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:82561228-eb33-4f53-8817-bdef7638b336(com.mbeddr.ext.concurrency.plainC.runtime)" doNotGenerate="true">
+<model ref="r:82561228-eb33-4f53-8817-bdef7638b336(com.mbeddr.ext.concurrency.plainC.runtime)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="5" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />

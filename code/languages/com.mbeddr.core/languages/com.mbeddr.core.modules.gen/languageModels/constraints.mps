@@ -225,7 +225,7 @@
   </node>
   <node concept="1M2fIO" id="20agw21GWJS">
     <property role="3GE5qa" value="module" />
-    <ref role="1M2myG" to="d0vh:1NwarDnRX0I" resolve="GenForignExtModuleImport" />
+    <ref role="1M2myG" to="d0vh:1NwarDnRX0I" resolve="GenForeignExtModuleImport" />
     <node concept="9S07l" id="20agw21GWJW" role="9Vyp8">
       <node concept="3clFbS" id="20agw21GWJX" role="2VODD2">
         <node concept="3clFbF" id="20agw21GWRa" role="3cqZAp">
