@@ -4,9 +4,9 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 
-public class Main {
+public class BigProjectGenerator {
 
-    private static File projectDir = new File("P:\\mbeddr.core-2019.3");
+    private static File projectDir = new File("P:\\mbeddr.core-2020.1");
     private static File modulesXml = new File(projectDir + "/tmp/allProject/.mps/modules.xml");
 
     private static int totalLanguages = 0;
