@@ -5209,7 +5209,7 @@
                   <node concept="3clFbS" id="6YlqNFReOor" role="3clF47">
                     <node concept="3cpWs8" id="6YlqNFRfokD" role="3cqZAp">
                       <node concept="3cpWsn" id="6YlqNFRfokG" role="3cpWs9">
-                        <property role="TrG5h" value="successful" />
+                        <property role="TrG5h" value="result" />
                         <node concept="10P_77" id="6YlqNFRfokB" role="1tU5fm" />
                         <node concept="3clFbT" id="6YlqNFRfoU_" role="33vP2m">
                           <property role="3clFbU" value="false" />
@@ -5251,7 +5251,7 @@
                             <node concept="3clFbF" id="6YlqNFRfrvN" role="3cqZAp">
                               <node concept="37vLTI" id="6YlqNFRfs1z" role="3clFbG">
                                 <node concept="37vLTw" id="6YlqNFRfrvM" role="37vLTJ">
-                                  <ref role="3cqZAo" node="6YlqNFRfokG" resolve="successful" />
+                                  <ref role="3cqZAo" node="6YlqNFRfokG" resolve="result" />
                                 </node>
                                 <node concept="2YIFZM" id="6YlqNFRflV8" role="37vLTx">
                                   <ref role="37wK5l" node="6YlqNFRdST5" resolve="executeTool" />
@@ -5315,14 +5315,14 @@
                                 <ref role="37wK5l" node="2s7Bv57QFWj" resolve="showErrorDialog" />
                                 <ref role="1Pybhc" node="2s7Bv57QFWd" resolve="ErrorReporter" />
                                 <node concept="Xl_RD" id="6YlqNFRfJ5u" role="37wK5m">
-                                  <property role="Xl_RC" value="Compiling sources failed, please try from commandline for getting further information" />
+                                  <property role="Xl_RC" value="Make failed - try running make from the command line to get more detailed information" />
                                 </node>
                               </node>
                             </node>
                           </node>
                           <node concept="3fqX7Q" id="6YlqNFRfEVF" role="3clFbw">
                             <node concept="37vLTw" id="6YlqNFRfEVH" role="3fr31v">
-                              <ref role="3cqZAo" node="6YlqNFRfokG" resolve="successful" />
+                              <ref role="3cqZAo" node="6YlqNFRfokG" resolve="result" />
                             </node>
                           </node>
                         </node>
@@ -5353,7 +5353,7 @@
                     </node>
                     <node concept="3cpWs6" id="6YlqNFRfoZG" role="3cqZAp">
                       <node concept="37vLTw" id="6YlqNFRfp$f" role="3cqZAk">
-                        <ref role="3cqZAo" node="6YlqNFRfokG" resolve="successful" />
+                        <ref role="3cqZAo" node="6YlqNFRfokG" resolve="result" />
                       </node>
                     </node>
                   </node>
@@ -5370,7 +5370,7 @@
     <node concept="2tJIrI" id="4VxYGcHhkyp" role="jymVt" />
     <node concept="2tJIrI" id="4VxYGcHhkBY" role="jymVt" />
     <node concept="2YIFZL" id="4VxYGcHhkSI" role="jymVt">
-      <property role="TrG5h" value="makeDebugBinary" />
+      <property role="TrG5h" value="makeBinary" />
       <node concept="37vLTG" id="1dHU0G8GPXo" role="3clF46">
         <property role="TrG5h" value="pathToMake" />
         <property role="3TUv4t" value="true" />
@@ -5418,7 +5418,7 @@
                   <node concept="3clFbS" id="4VxYGcHhkT0" role="3clF47">
                     <node concept="3cpWs8" id="4VxYGcHhkT1" role="3cqZAp">
                       <node concept="3cpWsn" id="4VxYGcHhkT2" role="3cpWs9">
-                        <property role="TrG5h" value="successful" />
+                        <property role="TrG5h" value="result" />
                         <node concept="10P_77" id="4VxYGcHhkT3" role="1tU5fm" />
                         <node concept="3clFbT" id="4VxYGcHhkT4" role="33vP2m">
                           <property role="3clFbU" value="false" />
@@ -5445,7 +5445,7 @@
                         <node concept="3clFbF" id="4VxYGcHhkTj" role="3cqZAp">
                           <node concept="37vLTI" id="4VxYGcHhkTk" role="3clFbG">
                             <node concept="37vLTw" id="4VxYGcHhkTl" role="37vLTJ">
-                              <ref role="3cqZAo" node="4VxYGcHhkT2" resolve="successful" />
+                              <ref role="3cqZAo" node="4VxYGcHhkT2" resolve="result" />
                             </node>
                             <node concept="2YIFZM" id="4VxYGcHhkTm" role="37vLTx">
                               <ref role="37wK5l" node="6YlqNFRdST5" resolve="executeTool" />
@@ -5499,7 +5499,7 @@
                             <node concept="1pGfFk" id="6v3tcHGCvNw" role="2ShVmc">
                               <ref role="37wK5l" to="wyt6:~Exception.&lt;init&gt;(java.lang.String)" resolve="Exception" />
                               <node concept="Xl_RD" id="4VxYGcHhkTI" role="37wK5m">
-                                <property role="Xl_RC" value="Compiling sources failed, please try from commandline for getting further information" />
+                                <property role="Xl_RC" value="Make failed - try running make from the command line to get more detailed information" />
                               </node>
                             </node>
                           </node>
@@ -5507,13 +5507,13 @@
                       </node>
                       <node concept="3fqX7Q" id="4VxYGcHhkTJ" role="3clFbw">
                         <node concept="37vLTw" id="4VxYGcHhkTK" role="3fr31v">
-                          <ref role="3cqZAo" node="4VxYGcHhkT2" resolve="successful" />
+                          <ref role="3cqZAo" node="4VxYGcHhkT2" resolve="result" />
                         </node>
                       </node>
                     </node>
                     <node concept="3cpWs6" id="4VxYGcHhkTU" role="3cqZAp">
                       <node concept="37vLTw" id="4VxYGcHhkTV" role="3cqZAk">
-                        <ref role="3cqZAo" node="4VxYGcHhkT2" resolve="successful" />
+                        <ref role="3cqZAo" node="4VxYGcHhkT2" resolve="result" />
                       </node>
                     </node>
                   </node>
@@ -5635,6 +5635,19 @@
                           </node>
                         </node>
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="5qxpWJ_ToA0" role="ukAjM">
+                  <node concept="liA8E" id="5qxpWJ_Tpkt" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                  </node>
+                  <node concept="2JrnkZ" id="5qxpWJ_ToA9" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5qxpWJ_TkP_" role="2JrQYb">
+                      <node concept="yYjwu" id="5qxpWJ_TjIS" role="2Oq$k0">
+                        <ref role="3cqZAo" node="VxJcPvDZAW" resolve="myBinary" />
+                      </node>
+                      <node concept="I4A8Y" id="5qxpWJ_Tm2w" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
@@ -6129,7 +6142,7 @@
                                                                   <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.util.concurrent.Callable)" resolve="submit" />
                                                                   <node concept="2YIFZM" id="4VxYGcHh9VH" role="37wK5m">
                                                                     <ref role="1Pybhc" node="2HqSUW$y6dr" resolve="MakeExecutor" />
-                                                                    <ref role="37wK5l" node="4VxYGcHhkSI" resolve="makeDebugBinary" />
+                                                                    <ref role="37wK5l" node="4VxYGcHhkSI" resolve="makeBinary" />
                                                                     <node concept="2OqwBi" id="1dHU0G8JNPV" role="37wK5m">
                                                                       <node concept="37vLTw" id="1dHU0G8GP37" role="2Oq$k0">
                                                                         <ref role="3cqZAo" node="1dHU0G8JKMs" resolve="pathToMake" />
@@ -6227,7 +6240,7 @@
                                 <ref role="1Pybhc" node="2s7Bv57QFWd" resolve="ErrorReporter" />
                                 <ref role="37wK5l" node="2s7Bv57QFWj" resolve="showErrorDialog" />
                                 <node concept="Xl_RD" id="7FgMBffJwgt" role="37wK5m">
-                                  <property role="Xl_RC" value="Compiling sources failed, please try from commandline for getting further information" />
+                                  <property role="Xl_RC" value="Make failed - try running make from the command line to get more detailed information" />
                                 </node>
                               </node>
                             </node>
@@ -10255,7 +10268,7 @@
                                   <node concept="3clFbS" id="3UL9eUFCM9p" role="9aQI4">
                                     <node concept="3cpWs8" id="3UL9eUFCQhJ" role="3cqZAp">
                                       <node concept="3cpWsn" id="3UL9eUFCQhK" role="3cpWs9">
-                                        <property role="TrG5h" value="makeSuccessful" />
+                                        <property role="TrG5h" value="makeResult" />
                                         <node concept="10P_77" id="3UL9eUFCReF" role="1tU5fm" />
                                         <node concept="3clFbT" id="3UL9eUFCTm8" role="33vP2m">
                                           <property role="3clFbU" value="false" />
@@ -10267,11 +10280,11 @@
                                         <node concept="3clFbF" id="3UL9eUFCU$7" role="3cqZAp">
                                           <node concept="37vLTI" id="3UL9eUFCV7w" role="3clFbG">
                                             <node concept="37vLTw" id="3UL9eUFCU$5" role="37vLTJ">
-                                              <ref role="3cqZAo" node="3UL9eUFCQhK" resolve="makeSuccessful" />
+                                              <ref role="3cqZAo" node="3UL9eUFCQhK" resolve="makeResult" />
                                             </node>
                                             <node concept="2OqwBi" id="3UL9eUFCQhL" role="37vLTx">
                                               <node concept="2YIFZM" id="3UL9eUFCQhM" role="2Oq$k0">
-                                                <ref role="37wK5l" node="4VxYGcHhkSI" resolve="makeDebugBinary" />
+                                                <ref role="37wK5l" node="4VxYGcHhkSI" resolve="makeBinary" />
                                                 <ref role="1Pybhc" node="2HqSUW$y6dr" resolve="MakeExecutor" />
                                                 <node concept="2OqwBi" id="3UL9eUFCQhN" role="37wK5m">
                                                   <node concept="37vLTw" id="3UL9eUFCQhO" role="2Oq$k0">
@@ -10333,14 +10346,14 @@
                                             <ref role="1Pybhc" node="2s7Bv57QFWd" resolve="ErrorReporter" />
                                             <ref role="37wK5l" node="2s7Bv57QFWj" resolve="showErrorDialog" />
                                             <node concept="Xl_RD" id="3UL9eUFCMCj" role="37wK5m">
-                                              <property role="Xl_RC" value="Compiling sources failed, please try from commandline for getting further information" />
+                                              <property role="Xl_RC" value="Make failed - try running make from the command line to get more detailed information" />
                                             </node>
                                           </node>
                                         </node>
                                       </node>
                                       <node concept="3fqX7Q" id="3UL9eUFCMCk" role="3clFbw">
                                         <node concept="37vLTw" id="3UL9eUFCVRk" role="3fr31v">
-                                          <ref role="3cqZAo" node="3UL9eUFCQhK" resolve="makeSuccessful" />
+                                          <ref role="3cqZAo" node="3UL9eUFCQhK" resolve="makeResult" />
                                         </node>
                                       </node>
                                     </node>
@@ -10375,7 +10388,7 @@
                                         <node concept="liA8E" id="3UL9eUFGLLt" role="2OqNvi">
                                           <ref role="37wK5l" to="i5cy:~AtomicReference.set(java.lang.Object)" resolve="set" />
                                           <node concept="37vLTw" id="3UL9eUFGMry" role="37wK5m">
-                                            <ref role="3cqZAo" node="3UL9eUFCQhK" resolve="makeSuccessful" />
+                                            <ref role="3cqZAo" node="3UL9eUFCQhK" resolve="makeResult" />
                                           </node>
                                         </node>
                                       </node>

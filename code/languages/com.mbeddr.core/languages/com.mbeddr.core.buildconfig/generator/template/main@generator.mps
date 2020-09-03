@@ -2504,13 +2504,13 @@
     <node concept="3O_Fa1" id="2Rx8UqeMqAL" role="12RR68">
       <node concept="3O_FaX" id="2b2D8jTVZBf" role="38Bv6S">
         <node concept="3G69iQ" id="7EZ1Spoq0SZ" role="3G69ia">
-          <property role="3G69iL" value="$(if $(wildcard " />
+          <property role="3G69iL" value="$(if $(wildcard $(filter-out . ..," />
         </node>
         <node concept="3G69iG" id="7EZ1Spoq0SY" role="3G69ia">
           <ref role="3G69iJ" node="2Rx8UqeMqzi" resolve="OBJODIR" />
         </node>
         <node concept="3G69iQ" id="7EZ1Spoq0T0" role="3G69ia">
-          <property role="3G69iL" value="), " />
+          <property role="3G69iL" value=")), " />
         </node>
         <node concept="3G69iG" id="7EZ1Spoq0SS" role="3G69ia">
           <ref role="3G69iJ" node="2Rx8UqeMqzW" resolve="VECHO" />
@@ -2525,34 +2525,28 @@
           <property role="3G69iL" value=")&quot;)" />
         </node>
       </node>
-      <node concept="3O_FaX" id="2Rx8UqeMqAM" role="38Bv6S">
-        <node concept="3G69iG" id="7EZ1Spoq0Sw" role="3G69ia">
+      <node concept="3O_FaX" id="7I$bUlRS35i" role="38Bv6S">
+        <node concept="3G69iG" id="7I$bUlRS35j" role="3G69ia">
           <ref role="3G69iJ" node="2Rx8UqeMqzT" resolve="Q" />
         </node>
-        <node concept="3G69iQ" id="7EZ1Spoq0SI" role="3G69ia">
+        <node concept="3G69iQ" id="7I$bUlRS35k" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
-        <node concept="1FOsOy" id="7EZ1Spoq0SH" role="3G69ia" />
-        <node concept="3G69iQ" id="7EZ1Spoq0SJ" role="3G69ia">
-          <property role="3G69iL" value=" -r " />
+        <node concept="1FOsOy" id="7I$bUlRS35l" role="3G69ia" />
+        <node concept="3G69iQ" id="7I$bUlRS35m" role="3G69ia">
+          <property role="3G69iL" value=" -r $(filter-out . ..," />
         </node>
-        <node concept="3G69iG" id="7EZ1SpocBFr" role="3G69ia">
+        <node concept="3G69iG" id="7I$bUlRS35n" role="3G69ia">
           <ref role="3G69iJ" node="2Rx8UqeMqzi" resolve="OBJODIR" />
         </node>
-      </node>
-      <node concept="3O_FaX" id="5ara9PcquHS" role="38Bv6S">
-        <node concept="3G69iG" id="7EZ1Spoq0Sn" role="3G69ia">
-          <ref role="3G69iJ" node="2Rx8UqeMqzT" resolve="Q" />
-        </node>
-        <node concept="3G69iQ" id="7EZ1Spoq0So" role="3G69ia">
+        <node concept="3G69iQ" id="7I$bUlRS8PE" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
-        <node concept="1FOsOy" id="7EZ1Spoq0Sg" role="3G69ia" />
-        <node concept="3G69iQ" id="7EZ1Spoq0Si" role="3G69ia">
-          <property role="3G69iL" value=" -r " />
-        </node>
-        <node concept="3G69iG" id="7EZ1SpocBFu" role="3G69ia">
+        <node concept="3G69iG" id="7I$bUlRS8PV" role="3G69ia">
           <ref role="3G69iJ" node="1mGdcSSKgqo" resolve="OROOT" />
+        </node>
+        <node concept="3G69iQ" id="7I$bUlRS35o" role="3G69ia">
+          <property role="3G69iL" value=")" />
         </node>
       </node>
       <node concept="ysyOp" id="7EZ1Sppf2vk" role="ypkCg">
@@ -3126,40 +3120,43 @@
       </node>
       <node concept="3O_FaX" id="6TPUpoC92aP" role="38Bv6S">
         <node concept="3G69iQ" id="6TPUpoC92aQ" role="3G69ia">
-          <property role="3G69iL" value="$(if $(wildcard " />
+          <property role="3G69iL" value="$(if $(wildcard $(filter-out . ..," />
         </node>
         <node concept="3G69iG" id="6TPUpoC93Yf" role="3G69ia">
           <ref role="3G69iJ" node="6TPUpoC8Jma" resolve="EXTRA_CLEAN_AFKTS" />
         </node>
         <node concept="3G69iQ" id="6TPUpoC93Ys" role="3G69ia">
-          <property role="3G69iL" value="), " />
+          <property role="3G69iL" value=")), " />
         </node>
         <node concept="3G69iG" id="6TPUpoC93YG" role="3G69ia">
           <ref role="3G69iJ" node="2Rx8UqeMqzW" resolve="VECHO" />
         </node>
         <node concept="3G69iQ" id="6TPUpoC93Z1" role="3G69ia">
-          <property role="3G69iL" value=" &quot;RM " />
+          <property role="3G69iL" value=" &quot;RM $(filter-out . ..," />
         </node>
         <node concept="3G69iG" id="6TPUpoC93Zp" role="3G69ia">
           <ref role="3G69iJ" node="6TPUpoC8Jma" resolve="EXTRA_CLEAN_AFKTS" />
         </node>
         <node concept="3G69iQ" id="6TPUpoC93ZQ" role="3G69ia">
-          <property role="3G69iL" value="&quot;)" />
+          <property role="3G69iL" value=")&quot;)" />
         </node>
       </node>
-      <node concept="3O_FaX" id="6TPUpoC9625" role="38Bv6S">
-        <node concept="3G69iG" id="6TPUpoC9626" role="3G69ia">
+      <node concept="3O_FaX" id="7I$bUlRS5xZ" role="38Bv6S">
+        <node concept="3G69iG" id="7I$bUlRS5y0" role="3G69ia">
           <ref role="3G69iJ" node="2Rx8UqeMqzT" resolve="Q" />
         </node>
-        <node concept="3G69iQ" id="6TPUpoC9627" role="3G69ia">
+        <node concept="3G69iQ" id="7I$bUlRS5y1" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
-        <node concept="1FOsOy" id="6TPUpoC9628" role="3G69ia" />
-        <node concept="3G69iQ" id="6TPUpoC9629" role="3G69ia">
-          <property role="3G69iL" value=" -r " />
+        <node concept="1FOsOy" id="7I$bUlRS5y2" role="3G69ia" />
+        <node concept="3G69iQ" id="7I$bUlRS5y3" role="3G69ia">
+          <property role="3G69iL" value=" -r $(filter-out . ..," />
         </node>
-        <node concept="3G69iG" id="6TPUpoC962a" role="3G69ia">
+        <node concept="3G69iG" id="7I$bUlRS5y4" role="3G69ia">
           <ref role="3G69iJ" node="6TPUpoC8Jma" resolve="EXTRA_CLEAN_AFKTS" />
+        </node>
+        <node concept="3G69iQ" id="7I$bUlRS5y5" role="3G69ia">
+          <property role="3G69iL" value=")" />
         </node>
       </node>
     </node>
