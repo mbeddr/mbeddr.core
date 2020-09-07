@@ -1333,9 +1333,6 @@
           <property role="3MwjfP" value="Action Filters from mbeddr.mpsutil" />
         </node>
       </node>
-      <node concept="m$_yC" id="1cC_ZeCXoII" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
-      </node>
     </node>
     <node concept="m$_wf" id="4l0F8G1Tnai" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.parameterizedMenu" />
