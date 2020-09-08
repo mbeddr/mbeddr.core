@@ -16,11 +16,11 @@ ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/reposi
 ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 
 //MPS-extensions version
-ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2020.1.+"
+ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2020.2.+"
 
 //MPS version
-ext.mpsMajor = "2020.1"
-ext.mpsBuild = "2020.1.5"
+ext.mpsMajor = "2020.2"
+ext.mpsBuild = "2020.2.2"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
@@ -65,8 +65,13 @@ subprojects {
     // required plugins
     apply plugin: "base"
     apply plugin: "maven-publish"
+<<<<<<< HEAD
     ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
     ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
+=======
+    ext.mbeddrMajor = "2020"
+    ext.mbeddrMinor = "2"
+>>>>>>> 566679be23... updates to MPS 2020.2-RC1
 
     // switch to snapshot/release repositories passed with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
