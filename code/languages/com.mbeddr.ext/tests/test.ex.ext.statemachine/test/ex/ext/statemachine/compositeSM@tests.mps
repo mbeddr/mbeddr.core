@@ -391,6 +391,9 @@
       <node concept="2cfOFI" id="4h2fJwlR3be" role="1_Iowf">
         <property role="TrG5h" value="dataended" />
       </node>
+      <node concept="2cfOFI" id="5HWuGlPbSrF" role="1_Iowf">
+        <property role="TrG5h" value="dataprocessed" />
+      </node>
       <node concept="2cfOFI" id="1hJVKE8$UpN" role="1_Iowf">
         <property role="TrG5h" value="transmit" />
       </node>
@@ -499,6 +502,12 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="1LFeb9" id="5HWuGlPbSsK" role="1KoBSX">
+              <ref role="1zztin" node="4h2fJwlR3bg" resolve="receive" />
+              <node concept="349iI2" id="5HWuGlPbSsY" role="2qxFSM">
+                <ref role="1bNv6r" node="5HWuGlPbSrF" resolve="dataprocessed" />
               </node>
             </node>
           </node>
@@ -768,7 +777,57 @@
             <property role="2hmy$m" value="0" />
           </node>
         </node>
-        <node concept="3XISUE" id="7Dny5nFzVBb" role="3XIRFZ" />
+        <node concept="3XISUE" id="5HWuGlPbSt4" role="3XIRFZ" />
+        <node concept="1_9egQ" id="5HWuGlPbSwE" role="3XIRFZ">
+          <node concept="2qmXGp" id="5HWuGlPbSyy" role="1_9egR">
+            <node concept="$QhJh" id="5HWuGlPbSyS" role="1ESnxz">
+              <ref role="$QhfV" node="5HWuGlPbSrF" resolve="dataprocessed" />
+            </node>
+            <node concept="3ZVu4v" id="5HWuGlPbSwC" role="1_9fRO">
+              <ref role="3ZVs_2" node="3FSHg1aB3IM" resolve="radio" />
+            </node>
+          </node>
+        </node>
+        <node concept="c0Tn9" id="5HWuGlPbSz5" role="3XIRFZ">
+          <node concept="2qmXGp" id="5HWuGlPbSz6" role="c0Tn6">
+            <node concept="3Ox9Vr" id="5HWuGlPbSz7" role="1ESnxz">
+              <node concept="6sKY_" id="5HWuGlPbSJB" role="2gvQMN">
+                <ref role="6sK1u" node="4h2fJwlR3bj" resolve="readData" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="5HWuGlPbSz9" role="1_9fRO">
+              <ref role="3ZVs_2" node="3FSHg1aB3IM" resolve="radio" />
+            </node>
+          </node>
+        </node>
+        <node concept="2sXlr9" id="5HWuGlPbSza" role="3XIRFZ">
+          <ref role="1hAz9z" node="4h2fJwlQJ4T" resolve="entered" />
+          <node concept="3TlMh9" id="5HWuGlPbSzb" role="1hAz9y">
+            <property role="2hmy$m" value="1" />
+          </node>
+          <node concept="3TlMh9" id="5HWuGlPbSzc" role="1hAz9y">
+            <property role="2hmy$m" value="2" />
+          </node>
+          <node concept="3TlMh9" id="5HWuGlPbSzd" role="1hAz9y">
+            <property role="2hmy$m" value="2" />
+          </node>
+          <node concept="3TlMh9" id="5HWuGlPbSze" role="1hAz9y">
+            <property role="2hmy$m" value="1" />
+          </node>
+          <node concept="3TlMh9" id="5HWuGlPbSzf" role="1hAz9y">
+            <property role="2hmy$m" value="0" />
+          </node>
+          <node concept="3TlMh9" id="5HWuGlPbSzg" role="1hAz9y">
+            <property role="2hmy$m" value="1" />
+          </node>
+        </node>
+        <node concept="2sXlr9" id="5HWuGlPbSzh" role="3XIRFZ">
+          <ref role="1hAz9z" node="4h2fJwlUtDy" resolve="exited" />
+          <node concept="3TlMh9" id="5HWuGlPbSzi" role="1hAz9y">
+            <property role="2hmy$m" value="0" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="5HWuGlPbSHv" role="3XIRFZ" />
         <node concept="1_9egQ" id="6PCgYL5xRqr" role="3XIRFZ">
           <node concept="2qmXGp" id="6PCgYL5xRqq" role="1_9egR">
             <node concept="3ZVu4v" id="4h2fJwlU7ln" role="1_9fRO">
@@ -797,10 +856,10 @@
             <property role="2hmy$m" value="1" />
           </node>
           <node concept="3TlMh9" id="4h2fJwlU7le" role="1hAz9y">
-            <property role="2hmy$m" value="1" />
+            <property role="2hmy$m" value="2" />
           </node>
           <node concept="3TlMh9" id="4h2fJwlU7lf" role="1hAz9y">
-            <property role="2hmy$m" value="1" />
+            <property role="2hmy$m" value="2" />
           </node>
           <node concept="3TlMh9" id="4h2fJwlU7lg" role="1hAz9y">
             <property role="2hmy$m" value="1" />
