@@ -50,9 +50,9 @@
     <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="fyhk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps(MPS.Core/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -520,28 +520,20 @@
         <ref role="3uigEE" to="lwvz:~SelectionListener" resolve="SelectionListener" />
       </node>
     </node>
-    <node concept="2BZ0e9" id="6eatLdhqRsb" role="2uRRBA">
-      <property role="TrG5h" value="documentationHandler" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="6eatLdhqRsc" role="1B3o_S" />
-      <node concept="3uibUv" id="24MikXOgl5X" role="1tU5fm">
-        <ref role="3uigEE" node="24MikXOfIA3" resolve="DocumentationHandler" />
-      </node>
-    </node>
     <node concept="2uRRBT" id="5ucAXohL$xS" role="2uRRB$">
       <node concept="3clFbS" id="5ucAXohL$xT" role="2VODD2">
         <node concept="3clFbF" id="24MikXOgRxl" role="3cqZAp">
           <node concept="37vLTI" id="24MikXOgSel" role="3clFbG">
-            <node concept="2ShNRf" id="24MikXOgSfn" role="37vLTx">
-              <node concept="1pGfFk" id="24MikXOgT9V" role="2ShVmc">
-                <ref role="37wK5l" node="24MikXOgcww" resolve="DocumentationHandler" />
-                <node concept="1KvdUw" id="24MikXOgT_G" role="37wK5m" />
-              </node>
-            </node>
             <node concept="2OqwBi" id="24MikXOgRJI" role="37vLTJ">
               <node concept="2WthIp" id="24MikXOgRxj" role="2Oq$k0" />
               <node concept="2BZ7hE" id="24MikXOgS7T" role="2OqNvi">
                 <ref role="2WH_rO" node="6eatLdhqRsb" resolve="documentationHandler" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="24MikXOgSfn" role="37vLTx">
+              <node concept="1pGfFk" id="24MikXOgT9V" role="2ShVmc">
+                <ref role="37wK5l" node="24MikXOgcww" resolve="DocumentationHandler" />
+                <node concept="1KvdUw" id="24MikXOgT_G" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -878,6 +870,14 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="2BZ0e9" id="6eatLdhqRsb" role="2uRRBA">
+      <property role="TrG5h" value="documentationHandler" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="6eatLdhqRsc" role="1B3o_S" />
+      <node concept="3uibUv" id="24MikXOgl5X" role="1tU5fm">
+        <ref role="3uigEE" node="24MikXOfIA3" resolve="DocumentationHandler" />
       </node>
     </node>
   </node>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.doc.aspect.exampleLanguage" uuid="3c21902d-b582-4557-b697-84a4dcddff3a" languageVersion="0" moduleVersion="0">
+<language namespace="com.mbeddr.doc.aspect.exampleLanguage" uuid="3c21902d-b582-4557-b697-84a4dcddff3a" generatorOutputPath="${module}/doc_gen/source_gen" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot contentPath="${module}/doc_gen" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java">
-      <classes generated="true" path="${module}/classes_gen" />
+      <classes generated="true" path="${module}/doc_gen/classes_gen" />
     </facet>
   </facets>
   <accessoryModels />

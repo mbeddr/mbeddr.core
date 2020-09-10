@@ -65,13 +65,8 @@ subprojects {
     // required plugins
     apply plugin: "base"
     apply plugin: "maven-publish"
-<<<<<<< HEAD
-    ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
-    ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
-=======
     ext.mbeddrMajor = "2020"
     ext.mbeddrMinor = "2"
->>>>>>> 566679be23... updates to MPS 2020.2-RC1
 
     // switch to snapshot/release repositories passed with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
