@@ -35,6 +35,7 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
+    <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
@@ -7486,16 +7487,26 @@
             <node concept="3Tqbb2" id="7C_wgEF3Eed" role="1tU5fm">
               <ref role="ehGHo" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
             </node>
-            <node concept="10Nm6u" id="7C_wgEF3Eef" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3YjQI$iZ8cG" role="3cqZAp">
+          <node concept="3cpWsn" id="3YjQI$iZ8cH" role="3cpWs9">
+            <property role="TrG5h" value="facade" />
+            <node concept="3uibUv" id="3YjQI$iZ6Sk" role="1tU5fm">
+              <ref role="3uigEE" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
+            </node>
+            <node concept="2YIFZM" id="3YjQI$iZ8cI" role="33vP2m">
+              <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
+              <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance()" resolve="getInstance" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="7C_wgEF3EeJ" role="3cqZAp">
           <node concept="3cpWsn" id="7C_wgEF3EeK" role="3cpWs9">
-            <property role="TrG5h" value="modelDescriptor" />
+            <property role="TrG5h" value="model" />
             <node concept="3uibUv" id="4WqJ5ShA2ki" role="1tU5fm">
               <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
             </node>
-            <node concept="10Nm6u" id="7C_wgEF3EeN" role="33vP2m" />
           </node>
         </node>
         <node concept="SfApY" id="7C_wgEF3Ee$" role="3cqZAp">
@@ -7503,18 +7514,23 @@
             <node concept="3clFbF" id="7C_wgEF3EeP" role="3cqZAp">
               <node concept="37vLTI" id="7C_wgEF3Ef5" role="3clFbG">
                 <node concept="37vLTw" id="4WqJ5Sh63iX" role="37vLTJ">
-                  <ref role="3cqZAo" node="7C_wgEF3EeK" resolve="modelDescriptor" />
+                  <ref role="3cqZAo" node="7C_wgEF3EeK" resolve="model" />
                 </node>
-                <node concept="2OqwBi" id="7C_wgEF3Eds" role="37vLTx">
-                  <node concept="2YIFZM" id="7C_wgEF3Edt" role="2Oq$k0">
-                    <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
-                    <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
-                  </node>
-                  <node concept="liA8E" id="7C_wgEF3Edu" role="2OqNvi">
-                    <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptor(java.lang.String)" resolve="getModelDescriptor" />
-                    <node concept="37vLTw" id="4WqJ5ShA3yk" role="37wK5m">
-                      <ref role="3cqZAo" node="7C_wgEF3Ee3" resolve="fqModelName" />
+                <node concept="2OqwBi" id="3YjQI$iK27E" role="37vLTx">
+                  <node concept="2OqwBi" id="3YjQI$iK8NT" role="2Oq$k0">
+                    <node concept="37vLTw" id="3YjQI$iZ8cJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3YjQI$iZ8cH" resolve="facade" />
                     </node>
+                    <node concept="liA8E" id="3YjQI$iK8NV" role="2OqNvi">
+                      <ref role="37wK5l" to="dush:~PersistenceFacade.createModelReference(java.lang.String)" resolve="createModelReference" />
+                      <node concept="37vLTw" id="3YjQI$iZ5mr" role="37wK5m">
+                        <ref role="3cqZAo" node="7C_wgEF3Ee3" resolve="fqModelName" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3YjQI$iK27G" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
+                    <node concept="10Nm6u" id="3YjQI$iK27H" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -7550,7 +7566,6 @@
           <node concept="3cpWsn" id="7C_wgEF3Eg5" role="3cpWs9">
             <property role="TrG5h" value="breakpointNode" />
             <node concept="3Tqbb2" id="7C_wgEF3Eg6" role="1tU5fm" />
-            <node concept="10Nm6u" id="7C_wgEF3Eg8" role="33vP2m" />
           </node>
         </node>
         <node concept="3clFbJ" id="7C_wgEF3Eff" role="3cqZAp">
@@ -7565,16 +7580,20 @@
                     <node concept="2OqwBi" id="4WqJ5Sh5YsJ" role="37vLTx">
                       <node concept="liA8E" id="4WqJ5Sh5YsK" role="2OqNvi">
                         <ref role="37wK5l" to="mhbf:~SModel.getNode(org.jetbrains.mps.openapi.model.SNodeId)" resolve="getNode" />
-                        <node concept="2YIFZM" id="4WqJ5Sh5YsL" role="37wK5m">
-                          <ref role="37wK5l" to="w1kc:~SNodeId.fromString(java.lang.String)" resolve="fromString" />
-                          <ref role="1Pybhc" to="w1kc:~SNodeId" resolve="SNodeId" />
-                          <node concept="37vLTw" id="4WqJ5Sh5YsM" role="37wK5m">
-                            <ref role="3cqZAo" node="7C_wgEF3Ee5" resolve="nodeID" />
+                        <node concept="2OqwBi" id="3YjQI$iZaia" role="37wK5m">
+                          <node concept="37vLTw" id="3YjQI$iZ9Wp" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3YjQI$iZ8cH" resolve="facade" />
+                          </node>
+                          <node concept="liA8E" id="3YjQI$iZaST" role="2OqNvi">
+                            <ref role="37wK5l" to="dush:~PersistenceFacade.createNodeId(java.lang.String)" resolve="createNodeId" />
+                            <node concept="37vLTw" id="3YjQI$iZb9k" role="37wK5m">
+                              <ref role="3cqZAo" node="7C_wgEF3Ee5" resolve="nodeID" />
+                            </node>
                           </node>
                         </node>
                       </node>
                       <node concept="37vLTw" id="4WqJ5Sh63Br" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7C_wgEF3EeK" resolve="modelDescriptor" />
+                        <ref role="3cqZAo" node="7C_wgEF3EeK" resolve="model" />
                       </node>
                     </node>
                   </node>
@@ -7620,7 +7639,7 @@
           <node concept="3y3z36" id="7C_wgEF3Efy" role="3clFbw">
             <node concept="10Nm6u" id="7C_wgEF3Ef_" role="3uHU7w" />
             <node concept="37vLTw" id="4WqJ5Sh63gv" role="3uHU7B">
-              <ref role="3cqZAo" node="7C_wgEF3EeK" resolve="modelDescriptor" />
+              <ref role="3cqZAo" node="7C_wgEF3EeK" resolve="model" />
             </node>
           </node>
           <node concept="9aQIb" id="7C_wgEF3EhA" role="9aQIa">

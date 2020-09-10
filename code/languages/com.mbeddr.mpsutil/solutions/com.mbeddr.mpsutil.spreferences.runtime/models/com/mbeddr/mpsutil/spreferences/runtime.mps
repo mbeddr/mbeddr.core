@@ -996,104 +996,98 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="27wZW$Iuyq3" role="3clF47">
-        <node concept="3SKdUt" id="15Mc8s7jku6" role="3cqZAp">
-          <node concept="1PaTwC" id="17qUVvSZlMz" role="3ndbpf">
-            <node concept="3oM_SD" id="17qUVvSZlM$" role="1PaTwD">
-              <property role="3oM_SC" value="FIXME" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlM_" role="1PaTwD">
-              <property role="3oM_SC" value="PLEASE," />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMA" role="1PaTwD">
-              <property role="3oM_SC" value="PLEASE" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMB" role="1PaTwD">
-              <property role="3oM_SC" value="DO" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMC" role="1PaTwD">
-              <property role="3oM_SC" value="NOT" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlMD" role="1PaTwD">
-              <property role="3oM_SC" value="USE" />
-            </node>
-            <node concept="3oM_SD" id="17qUVvSZlME" role="1PaTwD">
-              <property role="3oM_SC" value="SModelRepository.getInstance!!!" />
-            </node>
+        <node concept="2Gpval" id="3YjQI$j1vAK" role="3cqZAp">
+          <node concept="2GrKxI" id="3YjQI$j1vAM" role="2Gsz3X">
+            <property role="TrG5h" value="module" />
           </node>
-        </node>
-        <node concept="3cpWs8" id="27wZW$IuCtj" role="3cqZAp">
-          <node concept="3cpWsn" id="27wZW$IuCtk" role="3cpWs9">
-            <property role="TrG5h" value="modelDescriptors" />
-            <node concept="3uibUv" id="27wZW$IuCta" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~List" resolve="List" />
-              <node concept="3uibUv" id="27wZW$IuCtd" role="11_B2D">
-                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+          <node concept="3clFbS" id="3YjQI$j1vAQ" role="2LFqv$">
+            <node concept="2Gpval" id="3YjQI$j1GeL" role="3cqZAp">
+              <node concept="2GrKxI" id="3YjQI$j1GeM" role="2Gsz3X">
+                <property role="TrG5h" value="model" />
               </node>
-            </node>
-            <node concept="2OqwBi" id="27wZW$IuCtl" role="33vP2m">
-              <node concept="2YIFZM" id="27wZW$IuCtm" role="2Oq$k0">
-                <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
-                <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
-              </node>
-              <node concept="liA8E" id="27wZW$IuCtn" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptors()" resolve="getModelDescriptors" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="27wZW$IuG7i" role="3cqZAp">
-          <node concept="2GrKxI" id="27wZW$IuG7k" role="2Gsz3X">
-            <property role="TrG5h" value="md" />
-          </node>
-          <node concept="3clFbS" id="27wZW$IuG7m" role="2LFqv$">
-            <node concept="3clFbJ" id="27wZW$IuKjH" role="3cqZAp">
-              <node concept="3clFbS" id="27wZW$IuKjK" role="3clFbx">
-                <node concept="3cpWs6" id="27wZW$IuR4t" role="3cqZAp">
-                  <node concept="2GrUjf" id="27wZW$IuRiV" role="3cqZAk">
-                    <ref role="2Gs0qQ" node="27wZW$IuG7k" resolve="md" />
-                  </node>
+              <node concept="2OqwBi" id="3YjQI$j1HZP" role="2GsD0m">
+                <node concept="2GrUjf" id="3YjQI$j1H6N" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="3YjQI$j1vAM" resolve="module" />
+                </node>
+                <node concept="liA8E" id="3YjQI$j1JPl" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="27wZW$IuMMW" role="3clFbw">
-                <node concept="2OqwBi" id="15Mc8s7jfoY" role="2Oq$k0">
-                  <node concept="2OqwBi" id="27wZW$IuLH7" role="2Oq$k0">
-                    <node concept="2GrUjf" id="27wZW$IuLEF" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="27wZW$IuG7k" resolve="md" />
-                    </node>
-                    <node concept="liA8E" id="27wZW$IuMyz" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="15Mc8s7jgOo" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="27wZW$IuPbL" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
-                  <node concept="3cpWs3" id="27wZW$IuQP7" role="37wK5m">
-                    <node concept="37vLTw" id="27wZW$IuQQw" role="3uHU7w">
-                      <ref role="3cqZAo" node="27wZW$IuzzZ" resolve="id" />
-                    </node>
-                    <node concept="3cpWs3" id="27wZW$IuQ2M" role="3uHU7B">
-                      <node concept="3cpWs3" id="27wZW$IuPAa" role="3uHU7B">
-                        <node concept="Xl_RD" id="27wZW$IuPl3" role="3uHU7B">
-                          <property role="Xl_RC" value="." />
-                        </node>
-                        <node concept="37vLTw" id="27wZW$IuPJ1" role="3uHU7w">
-                          <ref role="3cqZAo" node="6yXlhvg2z4R" resolve="MODEL_PREFIX" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="27wZW$IuQ3Y" role="3uHU7w">
-                        <property role="Xl_RC" value="." />
+              <node concept="3clFbS" id="3YjQI$j1GeO" role="2LFqv$">
+                <node concept="3clFbJ" id="27wZW$IuKjH" role="3cqZAp">
+                  <node concept="3clFbS" id="27wZW$IuKjK" role="3clFbx">
+                    <node concept="3cpWs6" id="27wZW$IuR4t" role="3cqZAp">
+                      <node concept="2GrUjf" id="3YjQI$j1P0x" role="3cqZAk">
+                        <ref role="2Gs0qQ" node="3YjQI$j1GeM" resolve="model" />
                       </node>
                     </node>
                   </node>
+                  <node concept="2OqwBi" id="27wZW$IuMMW" role="3clFbw">
+                    <node concept="2OqwBi" id="15Mc8s7jfoY" role="2Oq$k0">
+                      <node concept="2OqwBi" id="27wZW$IuLH7" role="2Oq$k0">
+                        <node concept="2GrUjf" id="3YjQI$j1MRe" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="3YjQI$j1GeM" resolve="model" />
+                        </node>
+                        <node concept="liA8E" id="27wZW$IuMyz" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="15Mc8s7jgOo" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="27wZW$IuPbL" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
+                      <node concept="3cpWs3" id="27wZW$IuQP7" role="37wK5m">
+                        <node concept="37vLTw" id="27wZW$IuQQw" role="3uHU7w">
+                          <ref role="3cqZAo" node="27wZW$IuzzZ" resolve="id" />
+                        </node>
+                        <node concept="3cpWs3" id="27wZW$IuQ2M" role="3uHU7B">
+                          <node concept="3cpWs3" id="27wZW$IuPAa" role="3uHU7B">
+                            <node concept="Xl_RD" id="27wZW$IuPl3" role="3uHU7B">
+                              <property role="Xl_RC" value="." />
+                            </node>
+                            <node concept="37vLTw" id="27wZW$IuPJ1" role="3uHU7w">
+                              <ref role="3cqZAo" node="6yXlhvg2z4R" resolve="MODEL_PREFIX" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="27wZW$IuQ3Y" role="3uHU7w">
+                            <property role="Xl_RC" value="." />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="37vLTw" id="27wZW$IuGcy" role="2GsD0m">
-            <ref role="3cqZAo" node="27wZW$IuCtk" resolve="modelDescriptors" />
+          <node concept="2OqwBi" id="3YjQI$j1_cV" role="2GsD0m">
+            <node concept="2OqwBi" id="3YjQI$j1_cW" role="2Oq$k0">
+              <node concept="2OqwBi" id="3YjQI$j1_cX" role="2Oq$k0">
+                <node concept="2OqwBi" id="3YjQI$j1_cY" role="2Oq$k0">
+                  <node concept="2YIFZM" id="3YjQI$j1_cZ" role="2Oq$k0">
+                    <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="z1c3:~ProjectManager" resolve="ProjectManager" />
+                  </node>
+                  <node concept="liA8E" id="3YjQI$j1_d0" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects()" resolve="getOpenedProjects" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3YjQI$j1_d1" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                  <node concept="3cmrfG" id="3YjQI$j1_d2" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3YjQI$j1_d3" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3YjQI$j1_d4" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~SRepository.getModules()" resolve="getModules" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs6" id="27wZW$IuCYw" role="3cqZAp">
@@ -2772,15 +2766,28 @@
                     <node concept="3uibUv" id="KILMQH0CCD" role="1tU5fm">
                       <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
                     </node>
-                    <node concept="2OqwBi" id="KILMQH0CD2" role="33vP2m">
-                      <node concept="2YIFZM" id="KILMQH0CD3" role="2Oq$k0">
-                        <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
-                        <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
+                    <node concept="2OqwBi" id="3YjQI$iK27E" role="33vP2m">
+                      <node concept="2OqwBi" id="3YjQI$iK8NT" role="2Oq$k0">
+                        <node concept="2YIFZM" id="3YjQI$iK8NU" role="2Oq$k0">
+                          <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
+                          <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance()" resolve="getInstance" />
+                        </node>
+                        <node concept="liA8E" id="3YjQI$iK8NV" role="2OqNvi">
+                          <ref role="37wK5l" to="dush:~PersistenceFacade.createModelReference(java.lang.String)" resolve="createModelReference" />
+                          <node concept="37vLTw" id="3YjQI$j26dg" role="37wK5m">
+                            <ref role="3cqZAo" node="KILMQGWOyc" resolve="modelName" />
+                          </node>
+                        </node>
                       </node>
-                      <node concept="liA8E" id="KILMQH0CD4" role="2OqNvi">
-                        <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptor(java.lang.String)" resolve="getModelDescriptor" />
-                        <node concept="37vLTw" id="KILMQH0CD5" role="37wK5m">
-                          <ref role="3cqZAo" node="KILMQGWOyc" resolve="modelName" />
+                      <node concept="liA8E" id="3YjQI$iK27G" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
+                        <node concept="2OqwBi" id="3YjQI$j2fkc" role="37wK5m">
+                          <node concept="37vLTw" id="3YjQI$j27G2" role="2Oq$k0">
+                            <ref role="3cqZAo" node="KILMQGVMR4" resolve="model" />
+                          </node>
+                          <node concept="liA8E" id="3YjQI$j2gTo" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                          </node>
                         </node>
                       </node>
                     </node>

@@ -16,8 +16,8 @@
     <import index="xa4n" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:org.eclipse.cdt.debug.mi.core.command(Eclipse.Debugger/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="1l1h" ref="r:c02662c0-67c5-4c3a-8d3a-cd7ffe189340(jetbrains.mps.debug.api)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -193,7 +193,7 @@
       <node concept="3Tm1VV" id="7B__YhMUq3E" role="1B3o_S" />
       <node concept="3clFbS" id="7B__YhMUq3F" role="3clF47">
         <node concept="XkiVB" id="7B__YhMUq3G" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+          <ref role="37wK5l" to="x30c:5t7wq7v4vsS" resolve="AbstractDebuggerSettings" />
           <node concept="37vLTw" id="7B__YhMUq3H" role="37wK5m">
             <ref role="3cqZAo" node="7B__YhMUq3P" resolve="project" />
           </node>

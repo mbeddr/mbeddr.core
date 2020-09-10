@@ -258,16 +258,6 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="5383422241790532083" name="tags" index="3nqlJM" />
-      </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA" />
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-    </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
       <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
@@ -334,7 +324,6 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
-      <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
@@ -1722,107 +1711,6 @@
       </node>
       <node concept="NWlO9" id="6h7pCbA3UKM" role="lGtFl">
         <property role="NWlVz" value="Returns a sequence with full path names of C files from the generated directory." />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5jEg_Cuwe35" role="jymVt" />
-    <node concept="2YIFZL" id="7N0A15Xm8Kv" role="jymVt">
-      <property role="TrG5h" value="collectAllCFilesFromGeneratedTestDirectory" />
-      <node concept="2AHcQZ" id="68RlEeX1xLo" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-      </node>
-      <node concept="A3Dl8" id="6h7pCbA90oH" role="3clF45">
-        <node concept="17QB3L" id="6h7pCbA90oJ" role="A3Ik2" />
-      </node>
-      <node concept="3Tm1VV" id="7N0A15Xm8Kx" role="1B3o_S" />
-      <node concept="3clFbS" id="7N0A15Xm8Ky" role="3clF47">
-        <node concept="3cpWs8" id="1K0nRNh0cEr" role="3cqZAp">
-          <node concept="3cpWsn" id="7$e6lgA3AWh" role="3cpWs9">
-            <property role="TrG5h" value="descriptors" />
-            <property role="3TUv4t" value="false" />
-            <node concept="_YKpA" id="7$e6lgA3AWi" role="1tU5fm">
-              <node concept="3uibUv" id="2AZbPfOSF5F" role="_ZDj9">
-                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="7$e6lgA3AWk" role="33vP2m">
-              <node concept="2YIFZM" id="7$e6lgA3AWl" role="2Oq$k0">
-                <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
-                <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
-              </node>
-              <node concept="liA8E" id="7$e6lgA3AWm" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptors(org.jetbrains.mps.openapi.module.SModule)" resolve="getModelDescriptors" />
-                <node concept="37vLTw" id="7N0A15Xm8LH" role="37wK5m">
-                  <ref role="3cqZAo" node="7N0A15Xm8Lr" resolve="s" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="68RlEeX1ye$" role="3cqZAp">
-          <node concept="1PaTwC" id="61XOOojFZ94" role="3ndbpf">
-            <node concept="3oM_SD" id="61XOOojFZ95" role="1PaTwD">
-              <property role="3oM_SC" value="TODO:" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZ96" role="1PaTwD">
-              <property role="3oM_SC" value="this" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZ97" role="1PaTwD">
-              <property role="3oM_SC" value="code" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZ98" role="1PaTwD">
-              <property role="3oM_SC" value="looks" />
-            </node>
-            <node concept="3oM_SD" id="61XOOojFZ99" role="1PaTwD">
-              <property role="3oM_SC" value="strange" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="6h7pCbA3ZH5" role="3cqZAp">
-          <node concept="2OqwBi" id="6h7pCbA4d3C" role="3cqZAk">
-            <node concept="2OqwBi" id="6h7pCbA43SK" role="2Oq$k0">
-              <node concept="37vLTw" id="6h7pCbA41DB" role="2Oq$k0">
-                <ref role="3cqZAo" node="7$e6lgA3AWh" resolve="descriptors" />
-              </node>
-              <node concept="3goQfb" id="6h7pCbA482d" role="2OqNvi">
-                <node concept="1bVj0M" id="6h7pCbA482f" role="23t8la">
-                  <node concept="3clFbS" id="6h7pCbA482g" role="1bW5cS">
-                    <node concept="3clFbF" id="6h7pCbA49JW" role="3cqZAp">
-                      <node concept="1rXfSq" id="6h7pCbA49JV" role="3clFbG">
-                        <ref role="37wK5l" node="1aReOC$fczN" resolve="collectAllCFilesFromTheGeneratedCDirectory" />
-                        <node concept="37vLTw" id="6h7pCbA4b31" role="37wK5m">
-                          <ref role="3cqZAo" node="1aReOC$dLOv" resolve="generatorOutputPath" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Rh6nW" id="6h7pCbA482h" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="6h7pCbA482i" role="1tU5fm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="ANE8D" id="6h7pCbA4f2i" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="1aReOC$dLOv" role="3clF46">
-        <property role="TrG5h" value="generatorOutputPath" />
-        <node concept="17QB3L" id="1aReOC$dM7Z" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="7N0A15Xm8Lr" role="3clF46">
-        <property role="TrG5h" value="s" />
-        <node concept="3uibUv" id="7N0A15Xm8Lv" role="1tU5fm">
-          <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
-        </node>
-      </node>
-      <node concept="NWlO9" id="6h7pCbA4k$Y" role="lGtFl">
-        <property role="NWlVz" value="Returns a sequence with full path names of C files generated from all models of a solution." />
-      </node>
-      <node concept="P$JXv" id="68RlEeX1xLl" role="lGtFl">
-        <node concept="TZ5HI" id="68RlEeX1xLm" role="3nqlJM">
-          <node concept="TZ5HA" id="68RlEeX1xLn" role="3HnX3l" />
-        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5jEg_CuwdUR" role="jymVt" />
