@@ -2641,72 +2641,13 @@
                 </node>
                 <node concept="3clFbJ" id="6WnTJkDU9gr" role="3cqZAp">
                   <node concept="3clFbS" id="6WnTJkDU9gs" role="3clFbx">
-                    <node concept="3SKdUt" id="6WnTJkDU9gt" role="3cqZAp">
-                      <node concept="1PaTwC" id="6WnTJkDU9gu" role="3ndbpf">
-                        <node concept="3oM_SD" id="6WnTJkDU9gv" role="1PaTwD">
-                          <property role="3oM_SC" value="Option" />
-                        </node>
-                        <node concept="3oM_SD" id="6WnTJkDU9gw" role="1PaTwD">
-                          <property role="3oM_SC" value="1:" />
-                        </node>
-                        <node concept="3oM_SD" id="6WnTJkDU9gx" role="1PaTwD">
-                          <property role="3oM_SC" value="/path/to/library/root/&lt;idea plugin short (folder) name&gt;/languages/&lt;mps group name&gt;/&lt;language/solution name&gt;.jar" />
-                        </node>
-                      </node>
-                      <node concept="1PaTwC" id="6WnTJkDU9gy" role="3ndbpf">
-                        <node concept="3oM_SD" id="6WnTJkDU9gz" role="1PaTwD">
-                          <property role="3oM_SC" value="=&gt;" />
-                        </node>
-                        <node concept="3oM_SD" id="6WnTJkDU9g$" role="1PaTwD">
-                          <property role="3oM_SC" value="/path/to/library/root/&lt;idea plugin short (folder) name&gt;/languages/&lt;mps group name&gt;/" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs8" id="6WnTJkDU9g_" role="3cqZAp">
-                      <node concept="3cpWsn" id="6WnTJkDU9gA" role="3cpWs9">
-                        <property role="TrG5h" value="pickedLocation" />
-                        <node concept="3uibUv" id="6WnTJkDU9gB" role="1tU5fm">
-                          <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
-                        </node>
-                        <node concept="2YIFZM" id="6WnTJkDU9gC" role="33vP2m">
-                          <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-                          <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-                          <node concept="37vLTw" id="6WnTJkDU9gD" role="37wK5m">
-                            <ref role="3cqZAo" node="6WnTJkDU9gn" resolve="sourceSolutionRoot" />
-                          </node>
-                          <node concept="2OqwBi" id="6WnTJkDU9gE" role="37wK5m">
-                            <node concept="13iPFW" id="6WnTJkDU9gF" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="6WnTJkDU9gG" role="2OqNvi">
-                              <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbJ" id="6WnTJkDU9gH" role="3cqZAp">
-                      <node concept="3clFbS" id="6WnTJkDU9gI" role="3clFbx">
-                        <node concept="3cpWs6" id="6WnTJkDU9gJ" role="3cqZAp">
-                          <node concept="37vLTw" id="6WnTJkDU9gK" role="3cqZAk">
-                            <ref role="3cqZAo" node="6WnTJkDU9gn" resolve="sourceSolutionRoot" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="2YIFZM" id="6WnTJkDU9gL" role="3clFbw">
-                        <ref role="37wK5l" to="eoo2:~Files.exists(java.nio.file.Path,java.nio.file.LinkOption...)" resolve="exists" />
-                        <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-                        <node concept="37vLTw" id="6WnTJkDU9gM" role="37wK5m">
-                          <ref role="3cqZAo" node="6WnTJkDU9gA" resolve="pickedLocation" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbH" id="6WnTJkDU9gN" role="3cqZAp" />
                     <node concept="3SKdUt" id="6WnTJkDU9gO" role="3cqZAp">
                       <node concept="1PaTwC" id="6WnTJkDU9gP" role="3ndbpf">
                         <node concept="3oM_SD" id="6WnTJkDU9gQ" role="1PaTwD">
                           <property role="3oM_SC" value="Option" />
                         </node>
                         <node concept="3oM_SD" id="6WnTJkDU9gR" role="1PaTwD">
-                          <property role="3oM_SC" value="2:" />
+                          <property role="3oM_SC" value="1:" />
                         </node>
                         <node concept="3oM_SD" id="6WnTJkDU9gS" role="1PaTwD">
                           <property role="3oM_SC" value="/path/to/library/root/&lt;idea plugin short (folder) name&gt;/languages/&lt;mps group name&gt;/&lt;language/solution name&gt;.jar" />
@@ -2721,12 +2662,13 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="6WnTJkDU9gW" role="3cqZAp">
-                      <node concept="37vLTI" id="6WnTJkDU9gX" role="3clFbG">
-                        <node concept="37vLTw" id="6WnTJkDU9gY" role="37vLTJ">
-                          <ref role="3cqZAo" node="6WnTJkDU9gA" resolve="pickedLocation" />
+                    <node concept="3cpWs8" id="3YjQI$jsxpY" role="3cqZAp">
+                      <node concept="3cpWsn" id="3YjQI$jsxpZ" role="3cpWs9">
+                        <property role="TrG5h" value="pickedLocation" />
+                        <node concept="3uibUv" id="3YjQI$jsxq0" role="1tU5fm">
+                          <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
                         </node>
-                        <node concept="2YIFZM" id="6WnTJkDU9gZ" role="37vLTx">
+                        <node concept="2YIFZM" id="6WnTJkDU9gZ" role="33vP2m">
                           <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
                           <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
                           <node concept="37vLTw" id="6WnTJkDU9h0" role="37wK5m">
@@ -2768,7 +2710,65 @@
                         <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
                         <ref role="37wK5l" to="eoo2:~Files.exists(java.nio.file.Path,java.nio.file.LinkOption...)" resolve="exists" />
                         <node concept="37vLTw" id="6WnTJkDU9hf" role="37wK5m">
-                          <ref role="3cqZAo" node="6WnTJkDU9gA" resolve="pickedLocation" />
+                          <ref role="3cqZAo" node="3YjQI$jsxpZ" resolve="pickedLocation" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="3YjQI$jsu82" role="3cqZAp" />
+                    <node concept="3SKdUt" id="6WnTJkDU9gt" role="3cqZAp">
+                      <node concept="1PaTwC" id="6WnTJkDU9gu" role="3ndbpf">
+                        <node concept="3oM_SD" id="6WnTJkDU9gv" role="1PaTwD">
+                          <property role="3oM_SC" value="Option" />
+                        </node>
+                        <node concept="3oM_SD" id="6WnTJkDU9gw" role="1PaTwD">
+                          <property role="3oM_SC" value="2:" />
+                        </node>
+                        <node concept="3oM_SD" id="6WnTJkDU9gx" role="1PaTwD">
+                          <property role="3oM_SC" value="/path/to/library/root/&lt;idea plugin short (folder) name&gt;/languages/&lt;mps group name&gt;/&lt;language/solution name&gt;.jar" />
+                        </node>
+                      </node>
+                      <node concept="1PaTwC" id="6WnTJkDU9gy" role="3ndbpf">
+                        <node concept="3oM_SD" id="6WnTJkDU9gz" role="1PaTwD">
+                          <property role="3oM_SC" value="=&gt;" />
+                        </node>
+                        <node concept="3oM_SD" id="6WnTJkDU9g$" role="1PaTwD">
+                          <property role="3oM_SC" value="/path/to/library/root/&lt;idea plugin short (folder) name&gt;/languages/&lt;mps group name&gt;/" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="3YjQI$jszAu" role="3cqZAp">
+                      <node concept="37vLTI" id="3YjQI$js$sQ" role="3clFbG">
+                        <node concept="37vLTw" id="3YjQI$jszAq" role="37vLTJ">
+                          <ref role="3cqZAo" node="3YjQI$jsxpZ" resolve="pickedLocation" />
+                        </node>
+                        <node concept="2YIFZM" id="6WnTJkDU9gC" role="37vLTx">
+                          <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                          <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                          <node concept="37vLTw" id="6WnTJkDU9gD" role="37wK5m">
+                            <ref role="3cqZAo" node="6WnTJkDU9gn" resolve="sourceSolutionRoot" />
+                          </node>
+                          <node concept="2OqwBi" id="6WnTJkDU9gE" role="37wK5m">
+                            <node concept="13iPFW" id="6WnTJkDU9gF" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="6WnTJkDU9gG" role="2OqNvi">
+                              <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="6WnTJkDU9gH" role="3cqZAp">
+                      <node concept="3clFbS" id="6WnTJkDU9gI" role="3clFbx">
+                        <node concept="3cpWs6" id="6WnTJkDU9gJ" role="3cqZAp">
+                          <node concept="37vLTw" id="6WnTJkDU9gK" role="3cqZAk">
+                            <ref role="3cqZAo" node="6WnTJkDU9gn" resolve="sourceSolutionRoot" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2YIFZM" id="6WnTJkDU9gL" role="3clFbw">
+                        <ref role="37wK5l" to="eoo2:~Files.exists(java.nio.file.Path,java.nio.file.LinkOption...)" resolve="exists" />
+                        <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                        <node concept="37vLTw" id="6WnTJkDU9gM" role="37wK5m">
+                          <ref role="3cqZAo" node="3YjQI$jsxpZ" resolve="pickedLocation" />
                         </node>
                       </node>
                     </node>
