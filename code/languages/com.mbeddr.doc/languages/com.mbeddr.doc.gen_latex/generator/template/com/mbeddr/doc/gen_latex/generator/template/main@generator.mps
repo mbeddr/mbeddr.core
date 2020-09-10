@@ -221,6 +221,7 @@
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+      <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
@@ -3215,8 +3216,12 @@
                           <ref role="3Tt5mk" to="2c95:2iGZqsHuOq2" resolve="pathPicker" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="2nto7GJ$pB9" role="2OqNvi">
-                        <ref role="37wK5l" to="48kf:5lKnBeAIfOh" resolve="getPrefix" />
+                      <node concept="2qgKlT" id="1kEmdwEJE56" role="2OqNvi">
+                        <ref role="37wK5l" to="48kf:6WnTJkDceu8" resolve="getPrefix" />
+                        <node concept="2OqwBi" id="6WnTJkDcpM_" role="37wK5m">
+                          <node concept="1iwH7S" id="6WnTJkDcpMA" role="2Oq$k0" />
+                          <node concept="1st3f0" id="6WnTJkDcpMB" role="2OqNvi" />
+                        </node>
                       </node>
                     </node>
                   </node>

@@ -7301,7 +7301,7 @@
         <node concept="TZ5HI" id="1$T4OZGSp6v" role="3nqlJM">
           <node concept="TZ5HA" id="1$T4OZGSp6w" role="3HnX3l">
             <node concept="1dT_AC" id="1$T4OZGSp8J" role="1dT_Ay">
-              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionPathUtil" />
+              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
             </node>
           </node>
         </node>
@@ -7342,7 +7342,7 @@
         <node concept="TZ5HI" id="1$T4OZGSp7A" role="3nqlJM">
           <node concept="TZ5HA" id="1$T4OZGSp7B" role="3HnX3l">
             <node concept="1dT_AC" id="1$T4OZGSp8M" role="1dT_Ay">
-              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionPathUtil" />
+              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
             </node>
           </node>
         </node>
@@ -7358,7 +7358,7 @@
       <node concept="TZ5HI" id="1$T4OZGSoYA" role="3nqlJM">
         <node concept="TZ5HA" id="1$T4OZGSoYB" role="3HnX3l">
           <node concept="1dT_AC" id="1$T4OZGSoZg" role="1dT_Ay">
-            <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionPathUtil" />
+            <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
           </node>
         </node>
       </node>

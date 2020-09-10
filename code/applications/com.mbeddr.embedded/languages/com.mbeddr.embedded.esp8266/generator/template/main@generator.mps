@@ -302,6 +302,7 @@
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="1217004708011" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetInputModel" flags="nn" index="1r8y6K" />
+      <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -614,8 +615,12 @@
                         <ref role="3Tt5mk" to="bq7f:1EZSCJhaZJ0" resolve="xtensaRoot" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="20Blhoik6yC" role="2OqNvi">
-                      <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                    <node concept="2qgKlT" id="1J_ULgBJ106" role="2OqNvi">
+                      <ref role="37wK5l" to="48kf:35YirduUIVl" resolve="getCanonicalPath" />
+                      <node concept="2OqwBi" id="6WnTJkDubpR" role="37wK5m">
+                        <node concept="1iwH7S" id="6WnTJkDub7o" role="2Oq$k0" />
+                        <node concept="1st3f0" id="6WnTJkDubJW" role="2OqNvi" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -674,8 +679,12 @@
                         <ref role="3Tt5mk" to="bq7f:1EZSCJhb09e" resolve="sdk" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="20Blhoik6yV" role="2OqNvi">
-                      <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                    <node concept="2qgKlT" id="6WnTJkDuSaR" role="2OqNvi">
+                      <ref role="37wK5l" to="48kf:35YirduUIVl" resolve="getCanonicalPath" />
+                      <node concept="2OqwBi" id="6WnTJkDuSaS" role="37wK5m">
+                        <node concept="1iwH7S" id="6WnTJkDuSaT" role="2Oq$k0" />
+                        <node concept="1st3f0" id="6WnTJkDuSaU" role="2OqNvi" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2799,7 +2808,7 @@
                                   </node>
                                 </node>
                                 <node concept="2qgKlT" id="4zXqh6Tzeam" role="2OqNvi">
-                                  <ref role="37wK5l" to="ywuz:4zXqh6Tyh0Y" resolve="getEffectivePrintfFormatString" />
+                                  <ref role="37wK5l" to="ywuz:4zXqh6Tyh0Y" resolve="getEffectivePrintfFormatSpecifier" />
                                 </node>
                               </node>
                             </node>
@@ -3370,7 +3379,7 @@
                             </node>
                           </node>
                           <node concept="2qgKlT" id="4zXqh6Tzbiq" role="2OqNvi">
-                            <ref role="37wK5l" to="ywuz:4zXqh6Tyh0Y" resolve="getEffectivePrintfFormatString" />
+                            <ref role="37wK5l" to="ywuz:4zXqh6Tyh0Y" resolve="getEffectivePrintfFormatSpecifier" />
                           </node>
                         </node>
                       </node>
