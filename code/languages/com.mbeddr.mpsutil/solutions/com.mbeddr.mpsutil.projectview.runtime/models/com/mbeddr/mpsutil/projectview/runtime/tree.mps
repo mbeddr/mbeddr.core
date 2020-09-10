@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
@@ -3395,14 +3394,17 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="myEditorListener" />
       <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="5GuprjiHqD3" role="1tU5fm">
+        <ref role="3uigEE" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
+      </node>
       <node concept="2ShNRf" id="4gq8yQBZ6Nd" role="33vP2m">
         <node concept="YeOm9" id="4gq8yQBZ6Ne" role="2ShVmc">
           <node concept="1Y3b0j" id="4gq8yQBZ6Nf" role="YeSDq">
             <property role="2bfB8j" value="true" />
             <property role="1sVAO0" value="false" />
             <property role="1EXbeo" value="false" />
-            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
             <ref role="1Y3XeK" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
+            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
             <node concept="3Tm1VV" id="4gq8yQBZ6Ng" role="1B3o_S" />
             <node concept="3clFb_" id="4gq8yQBZ6Nh" role="jymVt">
               <property role="TrG5h" value="selectionChanged" />
@@ -3551,9 +3553,6 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="4gq8yQBZ6O8" role="1B3o_S" />
-      <node concept="3uibUv" id="5GuprjiHqD3" role="1tU5fm">
-        <ref role="3uigEE" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
-      </node>
     </node>
     <node concept="312cEg" id="4gq8yQBZ6Of" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -4214,7 +4213,7 @@
                     </node>
                     <node concept="2ShNRf" id="4QICnJ5HeuF" role="37vLTx">
                       <node concept="HV5vD" id="4QICnJ5J3DU" role="2ShVmc">
-                        <ref role="HV5vE" node="4QICnJ5IYao" resolve="CustomProjectView.RefreshListener" />
+                        <ref role="HV5vE" node="4QICnJ5IYao" resolve="RefreshListener" />
                       </node>
                     </node>
                   </node>
@@ -4781,7 +4780,7 @@
           <node concept="37vLTI" id="5GuprjiVwUk" role="3clFbG">
             <node concept="2ShNRf" id="5GuprjiVxfd" role="37vLTx">
               <node concept="1pGfFk" id="5GuprjiW5$T" role="2ShVmc">
-                <ref role="37wK5l" node="5GuprjiRBoF" resolve="CustomProjectView.MySimpleToolWindowPanel" />
+                <ref role="37wK5l" node="5GuprjiRBoF" resolve="MySimpleToolWindowPanel" />
                 <node concept="3clFbT" id="5GuprjiWaQq" role="37wK5m">
                   <property role="3clFbU" value="true" />
                 </node>

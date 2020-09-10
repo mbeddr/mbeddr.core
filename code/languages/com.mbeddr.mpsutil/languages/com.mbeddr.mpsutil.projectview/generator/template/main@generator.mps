@@ -33,7 +33,7 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -2630,8 +2630,8 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2tJIrI" id="5Guprjjc12Q" role="jymVt" />
                     <node concept="3Tm1VV" id="3ZnFyBjv0Lr" role="1B3o_S" />
+                    <node concept="2tJIrI" id="5Guprjjc12Q" role="jymVt" />
                     <node concept="3clFb_" id="5Guprjjcfq1" role="jymVt">
                       <property role="TrG5h" value="getToolbarActionGroupId" />
                       <node concept="3Tm1VV" id="5Guprjjcfq2" role="1B3o_S" />

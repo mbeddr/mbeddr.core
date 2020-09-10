@@ -80,7 +80,7 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -277,7 +277,7 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
@@ -440,10 +440,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -1910,29 +1910,6 @@
         <node concept="MpOyq" id="2P6psD9_scp" role="3cqZAp">
           <node concept="3clFbS" id="2P6psD9_scq" role="2LFqv$">
             <node concept="3J1_TO" id="4PdWDfl3ghv" role="3cqZAp">
-              <node concept="3uVAMA" id="4PdWDfl3ghy" role="1zxBo5">
-                <node concept="XOnhg" id="4PdWDfl3gh$" role="1zc67B">
-                  <property role="3TUv4t" value="false" />
-                  <property role="TrG5h" value="e" />
-                  <node concept="nSUau" id="5OZpwA3ZkUe" role="1tU5fm">
-                    <node concept="3uibUv" id="4PdWDfl3gxv" role="nSUat">
-                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbS" id="4PdWDfl3ghC" role="1zc67A">
-                  <node concept="3clFbF" id="505H3_WY3PT" role="3cqZAp">
-                    <node concept="2OqwBi" id="505H3_WY3PU" role="3clFbG">
-                      <node concept="37vLTw" id="4PdWDfl3iXo" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4PdWDfl3gh$" resolve="e" />
-                      </node>
-                      <node concept="liA8E" id="505H3_WY3PW" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbS" id="4PdWDfl3ghx" role="1zxBo7">
                 <node concept="3kxDZ6" id="5JbYq0GKTQn" role="3cqZAp">
                   <node concept="3clFbF" id="5JbYq0GKSeK" role="3kxCCa">
@@ -2063,6 +2040,29 @@
                     </node>
                     <node concept="37vLTw" id="484XVyxNYH0" role="37wK5m">
                       <ref role="3cqZAo" node="5eI7cOt9aWe" resolve="pi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3uVAMA" id="4PdWDfl3ghy" role="1zxBo5">
+                <node concept="XOnhg" id="4PdWDfl3gh$" role="1zc67B">
+                  <property role="3TUv4t" value="false" />
+                  <property role="TrG5h" value="e" />
+                  <node concept="nSUau" id="5OZpwA3ZkUe" role="1tU5fm">
+                    <node concept="3uibUv" id="4PdWDfl3gxv" role="nSUat">
+                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="4PdWDfl3ghC" role="1zc67A">
+                  <node concept="3clFbF" id="505H3_WY3PT" role="3cqZAp">
+                    <node concept="2OqwBi" id="505H3_WY3PU" role="3clFbG">
+                      <node concept="37vLTw" id="4PdWDfl3iXo" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4PdWDfl3gh$" resolve="e" />
+                      </node>
+                      <node concept="liA8E" id="505H3_WY3PW" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2835,59 +2835,6 @@
           </node>
         </node>
         <node concept="3J1_TO" id="3acDVtIIFlm" role="3cqZAp">
-          <node concept="3uVAMA" id="433ob2TjaKc" role="1zxBo5">
-            <node concept="XOnhg" id="433ob2TjaKd" role="1zc67B">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="t" />
-              <node concept="nSUau" id="4oyg$XrvxTs" role="1tU5fm">
-                <node concept="3uibUv" id="3acDVtIKdri" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="433ob2TjaKf" role="1zc67A">
-              <node concept="3clFbF" id="433ob2TjaKg" role="3cqZAp">
-                <node concept="2OqwBi" id="433ob2TjaKh" role="3clFbG">
-                  <node concept="37vLTw" id="433ob2TjaKi" role="2Oq$k0">
-                    <ref role="3cqZAo" node="433ob2TjaKd" resolve="t" />
-                  </node>
-                  <node concept="liA8E" id="433ob2TjaKj" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="6vg0wy0L6GW" role="3cqZAp">
-                <node concept="37vLTI" id="6vg0wy0L6VE" role="3clFbG">
-                  <node concept="3clFbT" id="6vg0wy0L6Wl" role="37vLTx">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                  <node concept="37vLTw" id="6vg0wy0L6GU" role="37vLTJ">
-                    <ref role="3cqZAo" node="tJrHRTPWld" resolve="exceptionThrown" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="7VeUlv79DYd" role="3cqZAp">
-                <node concept="37vLTI" id="7VeUlv79Ezf" role="3clFbG">
-                  <node concept="2YIFZM" id="7VeUlv79EVw" role="37vLTx">
-                    <ref role="37wK5l" to="fya2:~ExceptionUtils.getStackTrace(java.lang.Throwable)" resolve="getStackTrace" />
-                    <ref role="1Pybhc" to="fya2:~ExceptionUtils" resolve="ExceptionUtils" />
-                    <node concept="37vLTw" id="7VeUlv79FmO" role="37wK5m">
-                      <ref role="3cqZAo" node="433ob2TjaKd" resolve="t" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="7VeUlv8MJ59" role="37vLTJ">
-                    <node concept="10M0yZ" id="7VeUlv8MJ5a" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7VeUlv8MwuE" resolve="INSTANCE" />
-                      <ref role="1PxDUh" node="6vg0wy0KKZn" resolve="ModelCheckerRuntimeErrorsHandler" />
-                    </node>
-                    <node concept="2OwXpG" id="7VeUlv8MJ$Y" role="2OqNvi">
-                      <ref role="2Oxat5" to="7bhk:7VeUlv8Mlq5" resolve="stackTrace" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbS" id="433ob2TjaI3" role="1zxBo7">
             <node concept="3clFbF" id="7VeUlv82THw" role="3cqZAp">
               <node concept="1rXfSq" id="7VeUlv82THv" role="3clFbG">
@@ -3326,6 +3273,59 @@
                     </node>
                     <node concept="2OwXpG" id="7VeUlv8MIDf" role="2OqNvi">
                       <ref role="2Oxat5" to="7bhk:7VeUlv8MkGN" resolve="errorOccurredDuringChecking" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="433ob2TjaKc" role="1zxBo5">
+            <node concept="XOnhg" id="433ob2TjaKd" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="t" />
+              <node concept="nSUau" id="4oyg$XrvxTs" role="1tU5fm">
+                <node concept="3uibUv" id="3acDVtIKdri" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="433ob2TjaKf" role="1zc67A">
+              <node concept="3clFbF" id="433ob2TjaKg" role="3cqZAp">
+                <node concept="2OqwBi" id="433ob2TjaKh" role="3clFbG">
+                  <node concept="37vLTw" id="433ob2TjaKi" role="2Oq$k0">
+                    <ref role="3cqZAo" node="433ob2TjaKd" resolve="t" />
+                  </node>
+                  <node concept="liA8E" id="433ob2TjaKj" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6vg0wy0L6GW" role="3cqZAp">
+                <node concept="37vLTI" id="6vg0wy0L6VE" role="3clFbG">
+                  <node concept="3clFbT" id="6vg0wy0L6Wl" role="37vLTx">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                  <node concept="37vLTw" id="6vg0wy0L6GU" role="37vLTJ">
+                    <ref role="3cqZAo" node="tJrHRTPWld" resolve="exceptionThrown" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7VeUlv79DYd" role="3cqZAp">
+                <node concept="37vLTI" id="7VeUlv79Ezf" role="3clFbG">
+                  <node concept="2YIFZM" id="7VeUlv79EVw" role="37vLTx">
+                    <ref role="37wK5l" to="fya2:~ExceptionUtils.getStackTrace(java.lang.Throwable)" resolve="getStackTrace" />
+                    <ref role="1Pybhc" to="fya2:~ExceptionUtils" resolve="ExceptionUtils" />
+                    <node concept="37vLTw" id="7VeUlv79FmO" role="37wK5m">
+                      <ref role="3cqZAo" node="433ob2TjaKd" resolve="t" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7VeUlv8MJ59" role="37vLTJ">
+                    <node concept="10M0yZ" id="7VeUlv8MJ5a" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7VeUlv8MwuE" resolve="INSTANCE" />
+                      <ref role="1PxDUh" node="6vg0wy0KKZn" resolve="ModelCheckerRuntimeErrorsHandler" />
+                    </node>
+                    <node concept="2OwXpG" id="7VeUlv8MJ$Y" role="2OqNvi">
+                      <ref role="2Oxat5" to="7bhk:7VeUlv8Mlq5" resolve="stackTrace" />
                     </node>
                   </node>
                 </node>
