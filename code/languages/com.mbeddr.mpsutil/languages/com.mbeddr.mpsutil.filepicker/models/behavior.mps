@@ -2680,8 +2680,8 @@
                                 <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
                               </node>
                               <node concept="2JrnkZ" id="6WnTJkDU9h4" role="2Oq$k0">
-                                <node concept="37vLTw" id="6WnTJkDUalq" role="2JrQYb">
-                                  <ref role="3cqZAo" node="6WnTJkDU9Qg" resolve="originalModel" />
+                                <node concept="37vLTw" id="3YjQI$jxcRj" role="2JrQYb">
+                                  <ref role="3cqZAo" node="3YjQI$iPLEA" resolve="sourceModel" />
                                 </node>
                               </node>
                             </node>
