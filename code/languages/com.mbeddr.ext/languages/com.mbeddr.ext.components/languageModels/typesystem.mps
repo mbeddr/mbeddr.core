@@ -12284,5 +12284,24 @@
       </node>
     </node>
   </node>
+  <node concept="3aFulz" id="7SvxrwMat46">
+    <property role="3GE5qa" value="comp.compType" />
+    <property role="TrG5h" value="compareComponentWithNull" />
+    <node concept="1YaCAy" id="7SvxrwMat5S" role="3bfgSz">
+      <property role="TrG5h" value="nullType" />
+      <ref role="1YaFvo" to="yq40:$mHaGow4hS" resolve="NullType" />
+    </node>
+    <node concept="3clFbS" id="7SvxrwMat48" role="2sgrp5">
+      <node concept="3clFbF" id="7SvxrwMatn7" role="3cqZAp">
+        <node concept="3clFbT" id="7SvxrwMatn6" role="3clFbG">
+          <property role="3clFbU" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7SvxrwMat4a" role="1YuTPh">
+      <property role="TrG5h" value="componentType" />
+      <ref role="1YaFvo" to="v7ag:7M388_GyEh8" resolve="ComponentType" />
+    </node>
+  </node>
 </model>
 
