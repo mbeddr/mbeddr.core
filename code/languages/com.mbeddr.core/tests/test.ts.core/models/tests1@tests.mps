@@ -30476,6 +30476,21 @@
             </node>
           </node>
         </node>
+        <node concept="3vlDli" id="cgf4IZlVrr" role="3cqZAp">
+          <node concept="Xl_RD" id="cgf4IZlVrs" role="3tpDZA">
+            <property role="Xl_RC" value="%ld" />
+          </node>
+          <node concept="2OqwBi" id="cgf4IZlVrt" role="3tpDZB">
+            <node concept="2pJPEk" id="cgf4IZlVru" role="2Oq$k0">
+              <node concept="2pJPED" id="cgf4IZlVPM" role="2pJPEn">
+                <ref role="2pJxaS" to="mj1l:3mNkkAi8Qkp" resolve="SSizeT" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="cgf4IZlVrw" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatSpecifier" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
