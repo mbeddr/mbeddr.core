@@ -23483,7 +23483,7 @@
               <property role="3oM_SC" value="just" />
             </node>
             <node concept="3oM_SD" id="61XOOojGdVp" role="1PaTwD">
-              <property role="3oM_SC" value="%d" />
+              <property role="3oM_SC" value="%ld" />
             </node>
             <node concept="3oM_SD" id="61XOOojGdVq" role="1PaTwD">
               <property role="3oM_SC" value="instead." />
@@ -23638,7 +23638,7 @@
         </node>
         <node concept="3clFbF" id="3mNkkAi8QH2" role="3cqZAp">
           <node concept="Xl_RD" id="3mNkkAi8QH3" role="3clFbG">
-            <property role="Xl_RC" value="%d" />
+            <property role="Xl_RC" value="%ld" />
           </node>
         </node>
       </node>
