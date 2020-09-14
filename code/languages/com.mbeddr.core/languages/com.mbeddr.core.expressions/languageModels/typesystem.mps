@@ -41,7 +41,7 @@
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -466,10 +466,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -4371,19 +4371,19 @@
     <property role="18ip37" value="true" />
     <node concept="3clFbS" id="7FZLineUVfW" role="18ibNy">
       <node concept="1Z5TYs" id="1m7Vx9coHZm" role="3cqZAp">
+        <node concept="mw_s8" id="1m7Vx9coHZt" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1m7Vx9coHZu" role="mwGJk">
+            <node concept="1YBJjd" id="1m7Vx9coI3i" role="1Z2MuG">
+              <ref role="1YBMHb" node="7FZLineUVfX" resolve="sizeT" />
+            </node>
+          </node>
+        </node>
         <node concept="mw_s8" id="1m7Vx9l751$" role="1ZfhKB">
           <node concept="2OqwBi" id="1m7Vx9l75j7" role="mwGJk">
             <node concept="1YBJjd" id="1m7Vx9l751t" role="2Oq$k0">
               <ref role="1YBMHb" node="7FZLineUVfX" resolve="sizeT" />
             </node>
             <node concept="1$rogu" id="1m7Vx9l75Sb" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="1m7Vx9coHZt" role="1ZfhK$">
-          <node concept="1Z2H0r" id="1m7Vx9coHZu" role="mwGJk">
-            <node concept="1YBJjd" id="1m7Vx9coI3i" role="1Z2MuG">
-              <ref role="1YBMHb" node="7FZLineUVfX" resolve="sizeT" />
-            </node>
           </node>
         </node>
       </node>
@@ -14599,19 +14599,19 @@
     <property role="3GE5qa" value="types" />
     <node concept="3clFbS" id="3mNkkAibour" role="18ibNy">
       <node concept="1Z5TYs" id="1m7Vx9coInL" role="3cqZAp">
+        <node concept="mw_s8" id="1m7Vx9coInS" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1m7Vx9coInT" role="mwGJk">
+            <node concept="1YBJjd" id="1m7Vx9l76Q0" role="1Z2MuG">
+              <ref role="1YBMHb" node="3mNkkAibout" resolve="sSizeT" />
+            </node>
+          </node>
+        </node>
         <node concept="mw_s8" id="1m7Vx9l763X" role="1ZfhKB">
           <node concept="2OqwBi" id="1m7Vx9l76lw" role="mwGJk">
             <node concept="1YBJjd" id="1m7Vx9l763Q" role="2Oq$k0">
               <ref role="1YBMHb" node="3mNkkAibout" resolve="sSizeT" />
             </node>
             <node concept="1$rogu" id="1m7Vx9l76Oo" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="1m7Vx9coInS" role="1ZfhK$">
-          <node concept="1Z2H0r" id="1m7Vx9coInT" role="mwGJk">
-            <node concept="1YBJjd" id="1m7Vx9l76Q0" role="1Z2MuG">
-              <ref role="1YBMHb" node="3mNkkAibout" resolve="sSizeT" />
-            </node>
           </node>
         </node>
       </node>

@@ -224,7 +224,7 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
@@ -443,10 +443,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -1545,6 +1545,11 @@
               <ref role="3uigEE" to="fwk:~DebugInfo" resolve="DebugInfo" />
             </node>
             <node concept="2OqwBi" id="74nKSDp1YLf" role="33vP2m">
+              <node concept="2ShNRf" id="4ntWkOTikhE" role="2Oq$k0">
+                <node concept="1pGfFk" id="4ntWkOTimS7" role="2ShVmc">
+                  <ref role="37wK5l" to="fwk:~TraceInfo.&lt;init&gt;()" resolve="TraceInfo" />
+                </node>
+              </node>
               <node concept="liA8E" id="74nKSDp1YLh" role="2OqNvi">
                 <ref role="37wK5l" to="fwk:~TraceInfo.getDebugInfo(org.jetbrains.mps.openapi.model.SModel)" resolve="getDebugInfo" />
                 <node concept="2OqwBi" id="74nKSDp1YLk" role="37wK5m">
@@ -1552,11 +1557,6 @@
                     <ref role="3cqZAo" node="4dVT39GzjkT" resolve="root" />
                   </node>
                   <node concept="I4A8Y" id="74nKSDp1YLm" role="2OqNvi" />
-                </node>
-              </node>
-              <node concept="2ShNRf" id="4ntWkOTikhE" role="2Oq$k0">
-                <node concept="1pGfFk" id="4ntWkOTimS7" role="2ShVmc">
-                  <ref role="37wK5l" to="fwk:~TraceInfo.&lt;init&gt;()" resolve="TraceInfo" />
                 </node>
               </node>
             </node>
@@ -3519,18 +3519,6 @@
       <node concept="3Tm1VV" id="2vLpZ7wiipp" role="1B3o_S" />
       <node concept="3clFbS" id="2vLpZ7wiipq" role="3clF47">
         <node concept="3J1_TO" id="$YquQzPpMJ" role="3cqZAp">
-          <node concept="3uVAMA" id="$YquQzPpMM" role="1zxBo5">
-            <node concept="XOnhg" id="$YquQzPpMO" role="1zc67B">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="dnokflIj7WJ" role="1tU5fm">
-                <node concept="3uibUv" id="$YquQzPpP2" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="$YquQzPpMS" role="1zc67A" />
-          </node>
           <node concept="3clFbS" id="$YquQzPpML" role="1zxBo7">
             <node concept="1OGrx4" id="1rtLOity$YK" role="3cqZAp">
               <node concept="37vLTw" id="1rtLOityA8I" role="1OGrx5">
@@ -3543,6 +3531,18 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="3uVAMA" id="$YquQzPpMM" role="1zxBo5">
+            <node concept="XOnhg" id="$YquQzPpMO" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="dnokflIj7WJ" role="1tU5fm">
+                <node concept="3uibUv" id="$YquQzPpP2" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="$YquQzPpMS" role="1zc67A" />
           </node>
         </node>
         <node concept="1P2rdz" id="$YquQzHTyl" role="3cqZAp">

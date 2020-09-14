@@ -185,7 +185,7 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
@@ -402,10 +402,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -1015,28 +1015,6 @@
                         </node>
                       </node>
                       <node concept="3J1_TO" id="6fGXG$6h2cg" role="3cqZAp">
-                        <node concept="3uVAMA" id="6fGXG$6h2cj" role="1zxBo5">
-                          <node concept="XOnhg" id="6fGXG$6h2cl" role="1zc67B">
-                            <property role="3TUv4t" value="false" />
-                            <property role="TrG5h" value="e" />
-                            <node concept="nSUau" id="1XrFK_rK1G" role="1tU5fm">
-                              <node concept="3uibUv" id="6fGXG$6h2pG" role="nSUat">
-                                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbS" id="6fGXG$6h2cp" role="1zc67A">
-                            <node concept="2MkqsV" id="6fGXG$6h2U1" role="3cqZAp">
-                              <node concept="Xl_RD" id="6fGXG$6h2UV" role="2MkJ7o">
-                                <property role="Xl_RC" value="array size must evaluate to an integer" />
-                              </node>
-                              <node concept="1YBJjd" id="6fGXG$6h30f" role="1urrMF">
-                                <ref role="1YBMHb" node="4VhroexOWgn" resolve="arrayType" />
-                              </node>
-                            </node>
-                            <node concept="3cpWs6" id="6fGXG$6h3hn" role="3cqZAp" />
-                          </node>
-                        </node>
                         <node concept="3clFbS" id="6fGXG$6h2ci" role="1zxBo7">
                           <node concept="3clFbF" id="6fGXG$6h1_o" role="3cqZAp">
                             <node concept="37vLTI" id="6fGXG$6h1_q" role="3clFbG">
@@ -1057,6 +1035,28 @@
                                 <ref role="3cqZAo" node="67O0HaCqMgo" resolve="evaluateStatically" />
                               </node>
                             </node>
+                          </node>
+                        </node>
+                        <node concept="3uVAMA" id="6fGXG$6h2cj" role="1zxBo5">
+                          <node concept="XOnhg" id="6fGXG$6h2cl" role="1zc67B">
+                            <property role="3TUv4t" value="false" />
+                            <property role="TrG5h" value="e" />
+                            <node concept="nSUau" id="1XrFK_rK1G" role="1tU5fm">
+                              <node concept="3uibUv" id="6fGXG$6h2pG" role="nSUat">
+                                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="6fGXG$6h2cp" role="1zc67A">
+                            <node concept="2MkqsV" id="6fGXG$6h2U1" role="3cqZAp">
+                              <node concept="Xl_RD" id="6fGXG$6h2UV" role="2MkJ7o">
+                                <property role="Xl_RC" value="array size must evaluate to an integer" />
+                              </node>
+                              <node concept="1YBJjd" id="6fGXG$6h30f" role="1urrMF">
+                                <ref role="1YBMHb" node="4VhroexOWgn" resolve="arrayType" />
+                              </node>
+                            </node>
+                            <node concept="3cpWs6" id="6fGXG$6h3hn" role="3cqZAp" />
                           </node>
                         </node>
                       </node>
@@ -1141,37 +1141,6 @@
                               </node>
                             </node>
                             <node concept="3J1_TO" id="67O0HaCqK2H" role="3cqZAp">
-                              <node concept="3uVAMA" id="67O0HaCqK2K" role="1zxBo5">
-                                <node concept="XOnhg" id="67O0HaCqK2L" role="1zc67B">
-                                  <property role="3TUv4t" value="false" />
-                                  <property role="TrG5h" value="ex" />
-                                  <node concept="nSUau" id="hcxCHTcks$" role="1tU5fm">
-                                    <node concept="3uibUv" id="67O0HaCqK2O" role="nSUat">
-                                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbS" id="67O0HaCqK2N" role="1zc67A">
-                                  <node concept="a7r0C" id="67O0HaCqK2P" role="3cqZAp">
-                                    <node concept="3cpWs3" id="67O0HaCqLbf" role="a7wSD">
-                                      <node concept="Xl_RD" id="67O0HaCqLbi" role="3uHU7w">
-                                        <property role="Xl_RC" value=")" />
-                                      </node>
-                                      <node concept="3cpWs3" id="67O0HaCqLaR" role="3uHU7B">
-                                        <node concept="Xl_RD" id="67O0HaCqK2Q" role="3uHU7B">
-                                          <property role="Xl_RC" value="does not evaluate to integer (was: " />
-                                        </node>
-                                        <node concept="37vLTw" id="67O0HaCqLaU" role="3uHU7w">
-                                          <ref role="3cqZAo" node="67O0HaCqK27" resolve="evaluateStaticallyAsString" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                    <node concept="1YBJjd" id="67O0HaCqK2R" role="1urrMF">
-                                      <ref role="1YBMHb" node="4VhroexOWgn" resolve="arrayType" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
                               <node concept="3clFbS" id="67O0HaCqK2I" role="1zxBo7">
                                 <node concept="3cpWs8" id="67O0HaCqK2V" role="3cqZAp">
                                   <node concept="3cpWsn" id="67O0HaCqK2W" role="3cpWs9">
@@ -1253,6 +1222,37 @@
                                     </node>
                                     <node concept="37vLTw" id="2HXSBpcPLxu" role="3uHU7B">
                                       <ref role="3cqZAo" node="67O0HaCqK2W" resolve="evalAsInt" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3uVAMA" id="67O0HaCqK2K" role="1zxBo5">
+                                <node concept="XOnhg" id="67O0HaCqK2L" role="1zc67B">
+                                  <property role="3TUv4t" value="false" />
+                                  <property role="TrG5h" value="ex" />
+                                  <node concept="nSUau" id="hcxCHTcks$" role="1tU5fm">
+                                    <node concept="3uibUv" id="67O0HaCqK2O" role="nSUat">
+                                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbS" id="67O0HaCqK2N" role="1zc67A">
+                                  <node concept="a7r0C" id="67O0HaCqK2P" role="3cqZAp">
+                                    <node concept="3cpWs3" id="67O0HaCqLbf" role="a7wSD">
+                                      <node concept="Xl_RD" id="67O0HaCqLbi" role="3uHU7w">
+                                        <property role="Xl_RC" value=")" />
+                                      </node>
+                                      <node concept="3cpWs3" id="67O0HaCqLaR" role="3uHU7B">
+                                        <node concept="Xl_RD" id="67O0HaCqK2Q" role="3uHU7B">
+                                          <property role="Xl_RC" value="does not evaluate to integer (was: " />
+                                        </node>
+                                        <node concept="37vLTw" id="67O0HaCqLaU" role="3uHU7w">
+                                          <ref role="3cqZAo" node="67O0HaCqK27" resolve="evaluateStaticallyAsString" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="1YBJjd" id="67O0HaCqK2R" role="1urrMF">
+                                      <ref role="1YBMHb" node="4VhroexOWgn" resolve="arrayType" />
                                     </node>
                                   </node>
                                 </node>

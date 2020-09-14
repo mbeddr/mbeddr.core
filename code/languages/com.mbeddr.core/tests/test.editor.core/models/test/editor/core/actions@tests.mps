@@ -158,7 +158,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
@@ -310,10 +310,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -1670,6 +1670,28 @@
       <node concept="3cqZAl" id="1xDazL6RqU7" role="3clF45" />
       <node concept="3clFbS" id="1xDazL6RqU8" role="3clF47">
         <node concept="3J1_TO" id="9nzA46WQCx" role="3cqZAp">
+          <node concept="3clFbS" id="9nzA46WQCy" role="1zxBo7">
+            <node concept="3clFbF" id="9nzA46WPOO" role="3cqZAp">
+              <node concept="2YIFZM" id="9nzA46WPXb" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
+                <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeAndWait(java.lang.Runnable)" resolve="invokeAndWait" />
+                <node concept="1bVj0M" id="9nzA46WQrx" role="37wK5m">
+                  <node concept="3clFbS" id="9nzA46WQry" role="1bW5cS">
+                    <node concept="3clFbF" id="1xDazL6RqU9" role="3cqZAp">
+                      <node concept="2OqwBi" id="D5oLwMLTOq" role="3clFbG">
+                        <node concept="Vb5G_" id="D5oLwMLTKO" role="2Oq$k0">
+                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+                        </node>
+                        <node concept="liA8E" id="D5oLwMLUBA" role="2OqNvi">
+                          <ref role="37wK5l" to="exr9:~EditorContext.flushEvents()" resolve="flushEvents" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3uVAMA" id="9nzA46WQCp" role="1zxBo5">
             <node concept="XOnhg" id="9nzA46WQCr" role="1zc67B">
               <property role="3TUv4t" value="false" />
@@ -1693,28 +1715,6 @@
               </node>
             </node>
             <node concept="3clFbS" id="9nzA46WQCu" role="1zc67A" />
-          </node>
-          <node concept="3clFbS" id="9nzA46WQCy" role="1zxBo7">
-            <node concept="3clFbF" id="9nzA46WPOO" role="3cqZAp">
-              <node concept="2YIFZM" id="9nzA46WPXb" role="3clFbG">
-                <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
-                <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeAndWait(java.lang.Runnable)" resolve="invokeAndWait" />
-                <node concept="1bVj0M" id="9nzA46WQrx" role="37wK5m">
-                  <node concept="3clFbS" id="9nzA46WQry" role="1bW5cS">
-                    <node concept="3clFbF" id="1xDazL6RqU9" role="3cqZAp">
-                      <node concept="2OqwBi" id="D5oLwMLTOq" role="3clFbG">
-                        <node concept="Vb5G_" id="D5oLwMLTKO" role="2Oq$k0">
-                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
-                        </node>
-                        <node concept="liA8E" id="D5oLwMLUBA" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorContext.flushEvents()" resolve="flushEvents" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1xDazL6RqUf" role="3cqZAp">
