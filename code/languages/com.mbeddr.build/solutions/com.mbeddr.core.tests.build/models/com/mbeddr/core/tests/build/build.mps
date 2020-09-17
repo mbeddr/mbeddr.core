@@ -52,6 +52,10 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
+      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
+        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
+      </concept>
+      <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -1180,25 +1184,32 @@
       <node concept="L2wRC" id="4cEcQIx$$y8" role="39821P">
         <ref role="L2wRA" node="4cEcQIx$xWy" resolve="com.mbeddr.core.__spreferences.PlatformTemplates" />
       </node>
-      <node concept="2HvfSZ" id="40wZOneoWer" role="39821P">
-        <node concept="3LWZYx" id="40wZOneoWff" role="2HvfZ1">
-          <property role="3LWZYw" value="*.h" />
+      <node concept="398223" id="3YjQI$jhY$a" role="39821P">
+        <node concept="3_J27D" id="3YjQI$jhY$c" role="Nbhlr">
+          <node concept="3Mxwew" id="3YjQI$jhZdV" role="3MwsjC">
+            <property role="3MwjfP" value="aLibrary/src/lib" />
+          </node>
         </node>
-        <node concept="3LWZYx" id="4DFqQvIhHVt" role="2HvfZ1">
-          <property role="3LWZYw" value="*.a" />
-        </node>
-        <node concept="398BVA" id="40wZOneoWeR" role="2HvfZ0">
-          <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.core" />
-          <node concept="2Ry0Ak" id="40wZOneoWeS" role="iGT6I">
-            <property role="2Ry0Am" value="tests" />
-            <node concept="2Ry0Ak" id="40wZOneoWeT" role="2Ry0An">
-              <property role="2Ry0Am" value="aLibrary" />
-              <node concept="2Ry0Ak" id="40wZOneoWeU" role="2Ry0An">
-                <property role="2Ry0Am" value="source_gen" />
-                <node concept="2Ry0Ak" id="40wZOneoWeV" role="2Ry0An">
-                  <property role="2Ry0Am" value="aLibrary" />
-                  <node concept="2Ry0Ak" id="40wZOneoWeW" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
+        <node concept="2HvfSZ" id="40wZOneoWer" role="39821P">
+          <node concept="3LWZYx" id="40wZOneoWff" role="2HvfZ1">
+            <property role="3LWZYw" value="*.h" />
+          </node>
+          <node concept="3LWZYx" id="4DFqQvIhHVt" role="2HvfZ1">
+            <property role="3LWZYw" value="*.a" />
+          </node>
+          <node concept="398BVA" id="40wZOneoWeR" role="2HvfZ0">
+            <ref role="398BVh" node="2coa6XmoC9_" resolve="mbeddr.core" />
+            <node concept="2Ry0Ak" id="40wZOneoWeS" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="40wZOneoWeT" role="2Ry0An">
+                <property role="2Ry0Am" value="aLibrary" />
+                <node concept="2Ry0Ak" id="40wZOneoWeU" role="2Ry0An">
+                  <property role="2Ry0Am" value="source_gen" />
+                  <node concept="2Ry0Ak" id="40wZOneoWeV" role="2Ry0An">
+                    <property role="2Ry0Am" value="aLibrary" />
+                    <node concept="2Ry0Ak" id="40wZOneoWeW" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                    </node>
                   </node>
                 </node>
               </node>

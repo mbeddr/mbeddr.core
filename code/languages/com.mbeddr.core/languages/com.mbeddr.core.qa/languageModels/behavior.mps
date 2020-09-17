@@ -37,6 +37,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -908,15 +909,10 @@
             </node>
             <node concept="TSZUe" id="jipk886U01" role="2OqNvi">
               <node concept="2OqwBi" id="1$sYOzSJYio" role="25WWJ7">
-                <node concept="1eOMI4" id="1$sYOzSJYip" role="2Oq$k0">
-                  <node concept="10QFUN" id="1$sYOzSJYiq" role="1eOMHV">
-                    <node concept="37vLTw" id="1$sYOzSJYir" role="10QFUP">
-                      <ref role="3cqZAo" node="jipk886U0l" resolve="concept" />
-                    </node>
-                    <node concept="3THzug" id="1$sYOzSJYis" role="10QFUM" />
-                  </node>
-                </node>
                 <node concept="1rGIog" id="1$sYOzSJYit" role="2OqNvi" />
+                <node concept="37vLTw" id="1$sYOzSJYir" role="2Oq$k0">
+                  <ref role="3cqZAo" node="jipk886U0l" resolve="concept" />
+                </node>
               </node>
             </node>
           </node>
@@ -977,27 +973,23 @@
         <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
       </node>
       <node concept="3clFbS" id="2WJ8cS_vWVH" role="3clF47">
-        <node concept="3clFbF" id="3Wi_6mjOgK0" role="3cqZAp">
-          <node concept="2OqwBi" id="2WJ8cS_vXiZ" role="3clFbG">
-            <node concept="2OqwBi" id="2WJ8cS_vXj0" role="2Oq$k0">
-              <node concept="2OqwBi" id="2WJ8cS_vXj1" role="2Oq$k0">
-                <node concept="2YIFZM" id="2WJ8cS_vXj2" role="2Oq$k0">
-                  <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
-                  <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="2WJ8cS_vXj3" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptorsByModelName(java.lang.String)" resolve="getModelDescriptorsByModelName" />
-                  <node concept="37vLTw" id="2WJ8cS_vXj4" role="37wK5m">
-                    <ref role="3cqZAo" node="2WJ8cS_vX1F" resolve="modelName" />
-                  </node>
-                </node>
+        <node concept="3clFbF" id="3YjQI$iZBqq" role="3cqZAp">
+          <node concept="2OqwBi" id="3YjQI$iK27E" role="3clFbG">
+            <node concept="2OqwBi" id="3YjQI$iK8NT" role="2Oq$k0">
+              <node concept="2YIFZM" id="3YjQI$iK8NU" role="2Oq$k0">
+                <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
               </node>
-              <node concept="liA8E" id="2WJ8cS_vXj5" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.iterator()" resolve="iterator" />
+              <node concept="liA8E" id="3YjQI$iK8NV" role="2OqNvi">
+                <ref role="37wK5l" to="dush:~PersistenceFacade.createModelReference(java.lang.String)" resolve="createModelReference" />
+                <node concept="37vLTw" id="3YjQI$iZCvI" role="37wK5m">
+                  <ref role="3cqZAo" node="2WJ8cS_vX1F" resolve="modelName" />
+                </node>
               </node>
             </node>
-            <node concept="liA8E" id="2WJ8cS_vXj6" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
+            <node concept="liA8E" id="3YjQI$iK27G" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
+              <node concept="10Nm6u" id="3YjQI$iK27H" role="37wK5m" />
             </node>
           </node>
         </node>

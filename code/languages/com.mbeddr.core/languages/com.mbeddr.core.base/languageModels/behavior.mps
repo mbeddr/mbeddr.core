@@ -67,6 +67,7 @@
     <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" />
     <import index="z1c4" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.project(MPS.Workbench/)" />
+    <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
@@ -7305,7 +7306,7 @@
         <node concept="TZ5HI" id="1$T4OZGSp6v" role="3nqlJM">
           <node concept="TZ5HA" id="1$T4OZGSp6w" role="3HnX3l">
             <node concept="1dT_AC" id="1$T4OZGSp8J" role="1dT_Ay">
-              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionPathUtil" />
+              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
             </node>
           </node>
         </node>
@@ -7346,7 +7347,7 @@
         <node concept="TZ5HI" id="1$T4OZGSp7A" role="3nqlJM">
           <node concept="TZ5HA" id="1$T4OZGSp7B" role="3HnX3l">
             <node concept="1dT_AC" id="1$T4OZGSp8M" role="1dT_Ay">
-              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionPathUtil" />
+              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
             </node>
           </node>
         </node>
@@ -7362,7 +7363,7 @@
       <node concept="TZ5HI" id="1$T4OZGSoYA" role="3nqlJM">
         <node concept="TZ5HA" id="1$T4OZGSoYB" role="3HnX3l">
           <node concept="1dT_AC" id="1$T4OZGSoZg" role="1dT_Ay">
-            <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionPathUtil" />
+            <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
           </node>
         </node>
       </node>
@@ -18987,21 +18988,27 @@
               <node concept="3cpWsn" id="4WU0y9q5vCX" role="3cpWs9">
                 <property role="TrG5h" value="m" />
                 <node concept="H_c77" id="4WU0y9q5vCO" role="1tU5fm" />
-                <node concept="2OqwBi" id="7ueT7DHWKb7" role="33vP2m">
-                  <node concept="2YIFZM" id="7ueT7DHWKb8" role="2Oq$k0">
-                    <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
-                    <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
-                  </node>
-                  <node concept="liA8E" id="7ueT7DHWKb9" role="2OqNvi">
-                    <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptor(java.lang.String)" resolve="getModelDescriptor" />
-                    <node concept="2OqwBi" id="7ueT7DHWKba" role="37wK5m">
-                      <node concept="2GrUjf" id="743Sn1666F3" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="4WU0y9q5uoc" resolve="mr" />
-                      </node>
-                      <node concept="2qgKlT" id="7piNMo9IZDW" role="2OqNvi">
-                        <ref role="37wK5l" to="tpeu:7K4mn_BeEzv" resolve="getFQName" />
+                <node concept="2OqwBi" id="3YjQI$iK27E" role="33vP2m">
+                  <node concept="2OqwBi" id="3YjQI$iK8NT" role="2Oq$k0">
+                    <node concept="2YIFZM" id="3YjQI$iK8NU" role="2Oq$k0">
+                      <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance()" resolve="getInstance" />
+                      <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
+                    </node>
+                    <node concept="liA8E" id="3YjQI$iK8NV" role="2OqNvi">
+                      <ref role="37wK5l" to="dush:~PersistenceFacade.createModelReference(java.lang.String)" resolve="createModelReference" />
+                      <node concept="2OqwBi" id="3YjQI$iVctX" role="37wK5m">
+                        <node concept="2GrUjf" id="3YjQI$iVcaC" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="4WU0y9q5uoc" resolve="mr" />
+                        </node>
+                        <node concept="2qgKlT" id="3YjQI$iVdhP" role="2OqNvi">
+                          <ref role="37wK5l" to="tpeu:7K4mn_BeEzv" resolve="getFQName" />
+                        </node>
                       </node>
                     </node>
+                  </node>
+                  <node concept="liA8E" id="3YjQI$iK27G" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
+                    <node concept="10Nm6u" id="3YjQI$iK27H" role="37wK5m" />
                   </node>
                 </node>
               </node>
