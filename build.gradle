@@ -65,8 +65,8 @@ subprojects {
     // required plugins
     apply plugin: "base"
     apply plugin: "maven-publish"
-    ext.mbeddrMajor = "2019"
-    ext.mbeddrMinor = "3"
+    ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
+    ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
 
     // switch to snapshot/release repositories passed with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
