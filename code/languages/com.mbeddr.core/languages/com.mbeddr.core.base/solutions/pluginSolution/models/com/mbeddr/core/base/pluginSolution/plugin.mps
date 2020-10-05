@@ -11007,12 +11007,16 @@
                     <node concept="3cpWs6" id="7o1blyu$2OD" role="3cqZAp">
                       <node concept="2OqwBi" id="7o1blyu$2OE" role="3cqZAk">
                         <node concept="2OqwBi" id="7o1blyu$2OF" role="2Oq$k0">
-                          <node concept="2YIFZM" id="7o1blyu$hnJ" role="2Oq$k0">
-                            <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                            <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
+                          <node concept="2OqwBi" id="2Tk0XLkzXvy" role="2Oq$k0">
+                            <node concept="37vLTw" id="2Tk0XLkzNem" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2qDF1txGFKi" resolve="myProject" />
+                            </node>
+                            <node concept="liA8E" id="2Tk0XLk$17M" role="2OqNvi">
+                              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                            </node>
                           </node>
                           <node concept="liA8E" id="7o1blyu$2OH" role="2OqNvi">
-                            <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules()" resolve="getModules" />
+                            <ref role="37wK5l" to="lui2:~SRepository.getModules()" resolve="getModules" />
                           </node>
                         </node>
                         <node concept="liA8E" id="7o1blyu$2OI" role="2OqNvi">
@@ -13521,12 +13525,19 @@
               </node>
             </node>
             <node concept="2OqwBi" id="79AXByxOrmb" role="33vP2m">
-              <node concept="2YIFZM" id="79AXByxOrmr" role="2Oq$k0">
-                <ref role="37wK5l" to="ends:~ModelFactoryService.getInstance()" resolve="getInstance" />
-                <ref role="1Pybhc" to="ends:~ModelFactoryService" resolve="ModelFactoryService" />
-              </node>
               <node concept="liA8E" id="79AXByxOrmd" role="2OqNvi">
                 <ref role="37wK5l" to="ends:~ModelFactoryService.getFactories()" resolve="getFactories" />
+              </node>
+              <node concept="2OqwBi" id="2Tk0XLk$k0_" role="2Oq$k0">
+                <node concept="37vLTw" id="2Tk0XLk$f9$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2qDF1txGFKi" resolve="myProject" />
+                </node>
+                <node concept="liA8E" id="2Tk0XLk$pUQ" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
+                  <node concept="3VsKOn" id="2Tk0XLk$q0T" role="37wK5m">
+                    <ref role="3VsUkX" to="ends:~ModelFactoryService" resolve="ModelFactoryService" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

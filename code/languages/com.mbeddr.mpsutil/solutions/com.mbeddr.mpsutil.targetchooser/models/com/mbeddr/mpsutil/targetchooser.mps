@@ -3117,30 +3117,122 @@
           </node>
         </node>
         <node concept="3clFbJ" id="2Nt6pro5OOJ" role="3cqZAp">
-          <node concept="22lmx$" id="2Nt6pro5OOK" role="3clFbw">
-            <node concept="3clFbC" id="2Nt6pro5OOL" role="3uHU7B">
-              <node concept="37vLTw" id="2Nt6pro5OOM" role="3uHU7B">
-                <ref role="3cqZAo" node="2Nt6pro5OOF" resolve="n" />
-              </node>
-              <node concept="10Nm6u" id="2Nt6pro5OON" role="3uHU7w" />
-            </node>
-            <node concept="2YIFZM" id="5hLf0m7rzlE" role="3uHU7w">
-              <ref role="1Pybhc" to="mhbf:~SNodeUtil" resolve="SNodeUtil" />
-              <ref role="37wK5l" to="mhbf:~SNodeUtil.isAccessible(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository)" resolve="isAccessible" />
-              <node concept="37vLTw" id="5hLf0m7r$4C" role="37wK5m">
-                <ref role="3cqZAo" node="2Nt6pro5OOF" resolve="n" />
-              </node>
-              <node concept="2YIFZM" id="5hLf0m7r$N8" role="37wK5m">
-                <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
-              </node>
-            </node>
-          </node>
           <node concept="3clFbS" id="2Nt6pro5OOR" role="3clFbx">
             <node concept="3cpWs6" id="2Nt6pro5OOQ" role="3cqZAp" />
           </node>
+          <node concept="3clFbC" id="2Nt6pro5OOL" role="3clFbw">
+            <node concept="37vLTw" id="2Nt6pro5OOM" role="3uHU7B">
+              <ref role="3cqZAo" node="2Nt6pro5OOF" resolve="n" />
+            </node>
+            <node concept="10Nm6u" id="2Nt6pro5OON" role="3uHU7w" />
+          </node>
         </node>
         <node concept="3clFbH" id="2Nt6pro62dC" role="3cqZAp" />
+        <node concept="3SKdUt" id="2Tk0XLkzlO4" role="3cqZAp">
+          <node concept="1PaTwC" id="2Tk0XLkzlO5" role="1aUNEU">
+            <node concept="3oM_SD" id="2Tk0XLkzmqC" role="1PaTwD">
+              <property role="3oM_SC" value="FIXME" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmfZ" role="1PaTwD">
+              <property role="3oM_SC" value="SNodeTreeNode" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmmA" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmmN" role="1PaTwD">
+              <property role="3oM_SC" value="MPS" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmn1" role="1PaTwD">
+              <property role="3oM_SC" value="delegates" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmnC" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmo1" role="1PaTwD">
+              <property role="3oM_SC" value="NodeChildrenProvider" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmoi" role="1PaTwD">
+              <property role="3oM_SC" value="ancestor" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmo$" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmoJ" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmpA" role="1PaTwD">
+              <property role="3oM_SC" value="tree," />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmpV" role="1PaTwD">
+              <property role="3oM_SC" value="seems" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmqh" role="1PaTwD">
+              <property role="3oM_SC" value="there's" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmr6" role="1PaTwD">
+              <property role="3oM_SC" value="no" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmrl" role="1PaTwD">
+              <property role="3oM_SC" value="reason" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmrP" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzms6" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzmsw" role="1PaTwD">
+              <property role="3oM_SC" value="dedicated" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2Tk0XLkznqw" role="3cqZAp">
+          <node concept="1PaTwC" id="2Tk0XLkznqx" role="1aUNEU">
+            <node concept="3oM_SD" id="2Tk0XLkznqy" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznrU" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznrX" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzns1" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkzns6" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznX8" role="1PaTwD">
+              <property role="3oM_SC" value="TargetChooser_SNodeTreeNode" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznXn" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznXB" role="1PaTwD">
+              <property role="3oM_SC" value="myScope," />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznY0" role="1PaTwD">
+              <property role="3oM_SC" value="any" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznYi" role="1PaTwD">
+              <property role="3oM_SC" value="ancestor" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznY_" role="1PaTwD">
+              <property role="3oM_SC" value="could" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznYL" role="1PaTwD">
+              <property role="3oM_SC" value="do" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznZe" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="2Tk0XLkznZs" role="1PaTwD">
+              <property role="3oM_SC" value="same." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2Tk0XLkzkRB" role="3cqZAp" />
         <node concept="1DcWWT" id="2Nt6pro5OPg" role="3cqZAp">
           <node concept="2OqwBi" id="6yXTMcUdddy" role="1DdaDG">
             <node concept="37vLTw" id="6yXTMcUdd4p" role="2Oq$k0">
@@ -3222,7 +3314,7 @@
                   <ref role="37wK5l" to="7e8u:~MPSTreeNode.getTree()" resolve="getTree" />
                 </node>
                 <node concept="liA8E" id="2Nt6pro5OPK" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTree.getModel()" resolve="getModel" />
+                  <ref role="37wK5l" to="7e8u:~MPSTree.getModel()" resolve="getModel" />
                 </node>
               </node>
               <node concept="3uibUv" id="2Nt6pro5OPL" role="10QFUM">
