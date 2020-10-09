@@ -23,6 +23,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp4l" ref="r:00000000-0000-4000-0000-011c89590369(jetbrains.mps.lang.plugin.generator.baseLanguage.template.main@generator)" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -2634,7 +2635,57 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="2tJIrI" id="5Guprjjc12Q" role="jymVt" />
                     <node concept="3Tm1VV" id="3ZnFyBjv0Lr" role="1B3o_S" />
+                    <node concept="3clFb_" id="5Guprjjcfq1" role="jymVt">
+                      <property role="TrG5h" value="getToolbarActionGroupId" />
+                      <node concept="3Tm1VV" id="5Guprjjcfq2" role="1B3o_S" />
+                      <node concept="17QB3L" id="5Guprjjd2tl" role="3clF45" />
+                      <node concept="2AHcQZ" id="5Guprjjcfq7" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      </node>
+                      <node concept="2AHcQZ" id="5GuprjjdjT2" role="2AJF6D">
+                        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+                      </node>
+                      <node concept="3clFbS" id="5Guprjjcfq9" role="3clF47">
+                        <node concept="3clFbF" id="5GuprjjcJWc" role="3cqZAp">
+                          <node concept="Xl_RD" id="5GuprjjdgFh" role="3clFbG">
+                            <property role="Xl_RC" value="id" />
+                            <node concept="29HgVG" id="5GuprjjdgFi" role="lGtFl">
+                              <node concept="3NFfHV" id="5GuprjjdgFj" role="3NFExx">
+                                <node concept="3clFbS" id="5GuprjjdgFk" role="2VODD2">
+                                  <node concept="3clFbF" id="5GuprjjdgFl" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5GuprjjdgFm" role="3clFbG">
+                                      <node concept="3TrEf2" id="5Guprjjdhn2" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="d04j:5GuprjjcQUH" resolve="toolbarActionGroupId" />
+                                      </node>
+                                      <node concept="30H73N" id="5GuprjjdgFo" role="2Oq$k0" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1W57fq" id="5GuprjjcBg2" role="lGtFl">
+                        <node concept="3IZrLx" id="5GuprjjcBg3" role="3IZSJc">
+                          <node concept="3clFbS" id="5GuprjjcBg4" role="2VODD2">
+                            <node concept="3clFbF" id="5GuprjjcIme" role="3cqZAp">
+                              <node concept="3y3z36" id="5GuprjjcJfO" role="3clFbG">
+                                <node concept="10Nm6u" id="5GuprjjcJxW" role="3uHU7w" />
+                                <node concept="2OqwBi" id="5GuprjjcI_9" role="3uHU7B">
+                                  <node concept="30H73N" id="5GuprjjcImd" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="5GuprjjdhA8" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="d04j:5GuprjjcQUH" resolve="toolbarActionGroupId" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="2tJIrI" id="3ZnFyBjx5ny" role="jymVt" />
                     <node concept="3clFb_" id="3ZnFyBjxyyU" role="jymVt">
                       <property role="TrG5h" value="addElement" />
