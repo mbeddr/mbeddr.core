@@ -50,6 +50,7 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -278,6 +279,13 @@
       <node concept="3F1sOY" id="lse_ua3yTF" role="3EZMnx">
         <ref role="1NtTu8" to="gt8j:lse_ua3yy7" resolve="name" />
         <ref role="1ERwB7" node="3d01KqFjaW7" resolve="addModelActions" />
+      </node>
+      <node concept="3F0ifn" id="2rFgM0FVbER" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F1sOY" id="2rFgM0FVc2g" role="3EZMnx">
+        <property role="1$x2rV" value="repository" />
+        <ref role="1NtTu8" to="gt8j:7bwMmZeYmBk" resolve="repo" />
       </node>
       <node concept="3F0ifn" id="3d01KqFhjaM" role="3EZMnx">
         <property role="3F0ifm" value=", with" />
