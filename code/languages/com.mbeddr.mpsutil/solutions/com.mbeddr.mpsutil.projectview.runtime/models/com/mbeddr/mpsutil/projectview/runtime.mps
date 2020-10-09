@@ -486,6 +486,15 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
+    <node concept="3clFb_" id="5GuprjiL9vw" role="jymVt">
+      <property role="TrG5h" value="getToolbarActionGroupId" />
+      <node concept="3clFbS" id="5GuprjiL9vz" role="3clF47" />
+      <node concept="3Tm1VV" id="5GuprjiL9v$" role="1B3o_S" />
+      <node concept="17QB3L" id="5GuprjjcYZF" role="3clF45" />
+      <node concept="2AHcQZ" id="5Guprjjdzd5" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="3ZnFyBjtwPx" role="1B3o_S" />
   </node>
   <node concept="3HP615" id="3ZnFyBjtwWN">
@@ -3235,6 +3244,22 @@
       </node>
       <node concept="2AHcQZ" id="3dJ0eUbGh7d" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5GuprjiMGPp" role="jymVt">
+      <property role="TrG5h" value="getToolbarActionGroupId" />
+      <node concept="3Tm1VV" id="5GuprjiMGPr" role="1B3o_S" />
+      <node concept="17QB3L" id="5GuprjjcYbX" role="3clF45" />
+      <node concept="3clFbS" id="5GuprjiMGPv" role="3clF47">
+        <node concept="3clFbF" id="5Guprjj8ZK5" role="3cqZAp">
+          <node concept="10Nm6u" id="5Guprjj8ZK2" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5GuprjiMGPw" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="2AHcQZ" id="5GuprjjdxO$" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
   </node>
