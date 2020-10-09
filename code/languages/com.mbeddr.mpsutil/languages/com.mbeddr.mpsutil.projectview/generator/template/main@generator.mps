@@ -2,20 +2,16 @@
 <model ref="r:171c7ad0-7a53-4e4c-aa18-283db7b4c4ee(com.mbeddr.mpsutil.projectview.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
-    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="imq3" ref="r:744546b3-28d0-4d16-91c8-8f406ef84c6e(com.mbeddr.mpsutil.projectview.runtime)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="os9e" ref="r:97eb5271-8e83-4b12-a8f1-f764eae13815(com.mbeddr.mpsutil.projectview.behavior)" />
-    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
-    <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
@@ -23,7 +19,6 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp4l" ref="r:00000000-0000-4000-0000-011c89590369(jetbrains.mps.lang.plugin.generator.baseLanguage.template.main@generator)" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
-    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -523,7 +518,7 @@
         <node concept="3clFb_" id="VPgi8eftjY" role="1Koe22">
           <property role="TrG5h" value="m" />
           <node concept="3uibUv" id="VPgi8eh2gl" role="3clF45">
-            <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+            <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
           </node>
           <node concept="3Tm1VV" id="VPgi8eftk1" role="1B3o_S" />
           <node concept="3clFbS" id="VPgi8eftk2" role="3clF47">
@@ -537,7 +532,7 @@
           <node concept="37vLTG" id="VPgi8eftkd" role="3clF46">
             <property role="TrG5h" value="mpsProject" />
             <node concept="3uibUv" id="VPgi8eh2g9" role="1tU5fm">
-              <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
             </node>
           </node>
         </node>
@@ -1416,7 +1411,7 @@
                                     <node concept="37vLTG" id="VPgi8efqQo" role="3clF46">
                                       <property role="TrG5h" value="mpsProject" />
                                       <node concept="3uibUv" id="VPgi8eh0$9" role="1tU5fm">
-                                        <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+                                        <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
                                       </node>
                                     </node>
                                     <node concept="37vLTG" id="75_oBQVbVMw" role="3clF46">
@@ -1538,7 +1533,7 @@
                                         <node concept="3cpWsn" id="IlyxaxWgCR" role="3cpWs9">
                                           <property role="TrG5h" value="mpsProject" />
                                           <node concept="3uibUv" id="IlyxaxWgCS" role="1tU5fm">
-                                            <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+                                            <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
                                           </node>
                                           <node concept="2OqwBi" id="IlyxaxWgCT" role="33vP2m">
                                             <node concept="37vLTw" id="IlyxaxWgCU" role="2Oq$k0">
@@ -1649,7 +1644,7 @@
                                     <node concept="37vLTG" id="FniR$CdWLw" role="3clF46">
                                       <property role="TrG5h" value="mpsProject" />
                                       <node concept="3uibUv" id="FniR$CdWLx" role="1tU5fm">
-                                        <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+                                        <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
                                       </node>
                                     </node>
                                     <node concept="37vLTG" id="75_oBQVRKnA" role="3clF46">
@@ -1721,7 +1716,7 @@
                                     <node concept="37vLTG" id="FniR$Cedyz" role="3clF46">
                                       <property role="TrG5h" value="mpsProject" />
                                       <node concept="3uibUv" id="FniR$Cedy$" role="1tU5fm">
-                                        <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+                                        <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
                                       </node>
                                     </node>
                                     <node concept="37vLTG" id="$6jtTwuaPf" role="3clF46">
@@ -1848,7 +1843,7 @@
                                         <node concept="3cpWsn" id="1CDgnklNJ6p" role="3cpWs9">
                                           <property role="TrG5h" value="mpsProject" />
                                           <node concept="3uibUv" id="1CDgnklNJ6q" role="1tU5fm">
-                                            <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+                                            <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
                                           </node>
                                           <node concept="2OqwBi" id="1CDgnklNM4$" role="33vP2m">
                                             <node concept="37vLTw" id="1CDgnklNKY2" role="2Oq$k0">
@@ -2117,7 +2112,7 @@
                                         <node concept="3cpWsn" id="Ggg0Z6WOH6" role="3cpWs9">
                                           <property role="TrG5h" value="mpsProject" />
                                           <node concept="3uibUv" id="Ggg0Z6WOH7" role="1tU5fm">
-                                            <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+                                            <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
                                           </node>
                                           <node concept="2OqwBi" id="Ggg0Z6WOH8" role="33vP2m">
                                             <node concept="37vLTw" id="Ggg0Z6WOH9" role="2Oq$k0">
@@ -2209,7 +2204,7 @@
                                         <node concept="3cpWsn" id="Ggg0Z6WPkn" role="3cpWs9">
                                           <property role="TrG5h" value="mpsProject" />
                                           <node concept="3uibUv" id="Ggg0Z6WPko" role="1tU5fm">
-                                            <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+                                            <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
                                           </node>
                                           <node concept="2OqwBi" id="Ggg0Z6WPkp" role="33vP2m">
                                             <node concept="37vLTw" id="Ggg0Z6WPkq" role="2Oq$k0">
@@ -2296,7 +2291,7 @@
                                         <node concept="3cpWsn" id="5ivVtWtZqiP" role="3cpWs9">
                                           <property role="TrG5h" value="mpsProject" />
                                           <node concept="3uibUv" id="5ivVtWtZqiQ" role="1tU5fm">
-                                            <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+                                            <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
                                           </node>
                                           <node concept="2OqwBi" id="5ivVtWtZqiR" role="33vP2m">
                                             <node concept="37vLTw" id="5ivVtWtZqiS" role="2Oq$k0">
