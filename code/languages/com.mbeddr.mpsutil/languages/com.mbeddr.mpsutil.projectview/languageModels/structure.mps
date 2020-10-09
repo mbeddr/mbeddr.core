@@ -106,6 +106,12 @@
       <property role="20kJfa" value="dataProvider" />
       <ref role="20lvS9" node="3dJ0eUbDUtS" resolve="DataProviderFunction" />
     </node>
+    <node concept="1TJgyj" id="5GuprjjcQUH" role="1TKVEi">
+      <property role="IQ2ns" value="6565797134064643757" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="toolbarActionGroupId" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="7diJr$Rulso" role="1TKVEi">
       <property role="20kJfa" value="extends" />
       <property role="IQ2ns" value="8309912865649284888" />

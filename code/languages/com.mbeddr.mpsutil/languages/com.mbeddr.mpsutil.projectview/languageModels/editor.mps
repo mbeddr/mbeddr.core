@@ -266,6 +266,19 @@
           </node>
           <node concept="2iRfu4" id="3dJ0eUbEkeN" role="2iSdaV" />
         </node>
+        <node concept="3EZMnI" id="5GuprjjbSQL" role="3EZMnx">
+          <node concept="VPM3Z" id="5GuprjjbSQM" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="5GuprjjbSQN" role="3EZMnx">
+            <property role="3F0ifm" value="Toolbar Action Group ID:" />
+          </node>
+          <node concept="3F1sOY" id="5GuprjjeIpp" role="3EZMnx">
+            <property role="1$x2rV" value="&lt;no toolbar&gt;" />
+            <ref role="1NtTu8" to="d04j:5GuprjjcQUH" resolve="toolbarActionGroupId" />
+          </node>
+          <node concept="2iRfu4" id="5GuprjjbSQP" role="2iSdaV" />
+        </node>
         <node concept="3F0ifn" id="3ZnFyBju6rm" role="3EZMnx" />
         <node concept="3F2HdR" id="7diJr$RulxS" role="3EZMnx">
           <ref role="1NtTu8" to="d04j:7diJr$Rulsr" resolve="elements" />

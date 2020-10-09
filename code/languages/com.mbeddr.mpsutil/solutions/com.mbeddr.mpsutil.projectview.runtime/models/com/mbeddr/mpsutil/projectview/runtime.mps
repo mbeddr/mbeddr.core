@@ -83,6 +83,7 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat6" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY" />
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -491,6 +492,15 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="3ZnFyBjtwPx" role="1B3o_S" />
+    <node concept="3clFb_" id="5GuprjiL9vw" role="jymVt">
+      <property role="TrG5h" value="getToolbarActionGroupId" />
+      <node concept="3clFbS" id="5GuprjiL9vz" role="3clF47" />
+      <node concept="3Tm1VV" id="5GuprjiL9v$" role="1B3o_S" />
+      <node concept="17QB3L" id="5GuprjjcYZF" role="3clF45" />
+      <node concept="2AHcQZ" id="5Guprjjdzd5" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+    </node>
   </node>
   <node concept="3HP615" id="3ZnFyBjtwWN">
     <property role="TrG5h" value="IViewElementDescriptor" />
@@ -3239,6 +3249,22 @@
       </node>
       <node concept="2AHcQZ" id="3dJ0eUbGh7d" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5GuprjiMGPp" role="jymVt">
+      <property role="TrG5h" value="getToolbarActionGroupId" />
+      <node concept="3Tm1VV" id="5GuprjiMGPr" role="1B3o_S" />
+      <node concept="17QB3L" id="5GuprjjcYbX" role="3clF45" />
+      <node concept="3clFbS" id="5GuprjiMGPv" role="3clF47">
+        <node concept="3clFbF" id="5Guprjj8ZK5" role="3cqZAp">
+          <node concept="10Nm6u" id="5Guprjj8ZK2" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5GuprjiMGPw" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="2AHcQZ" id="5GuprjjdxO$" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
   </node>
@@ -7248,7 +7274,19 @@
             </node>
           </node>
         </node>
-        <node concept="3J1_TO" id="VPgi8egvHo" role="3cqZAp">
+        <node concept="SfApY" id="VPgi8egvHo" role="3cqZAp">
+          <node concept="3uVAMA" id="VPgi8egvHv" role="1zxBo5">
+            <node concept="XOnhg" id="VPgi8egvHx" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="dDe0mCPpb25" role="1tU5fm">
+                <node concept="3uibUv" id="7GyAnSs5zyc" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="VPgi8egvHw" role="1zc67A" />
+          </node>
           <node concept="3clFbS" id="VPgi8egvHp" role="1zxBo7">
             <node concept="3cpWs6" id="VPgi8egw4x" role="3cqZAp">
               <node concept="1eOMI4" id="VPgi8egwc5" role="3cqZAk">
@@ -7273,18 +7311,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3uVAMA" id="VPgi8egvHv" role="1zxBo5">
-            <node concept="XOnhg" id="VPgi8egvHx" role="1zc67B">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="dDe0mCPpb25" role="1tU5fm">
-                <node concept="3uibUv" id="7GyAnSs5zyc" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="VPgi8egvHw" role="1zc67A" />
           </node>
         </node>
         <node concept="3cpWs6" id="VPgi8egw_s" role="3cqZAp">

@@ -226,12 +226,17 @@
   <node concept="13h7C7" id="7diJr$RwhVW">
     <ref role="13h7C2" to="d04j:7diJr$Rulsw" resolve="IViewElement" />
     <node concept="13i0hz" id="75_oBQVYfcU" role="13h7CS">
-      <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="isAbstract" />
       <node concept="3Tm1VV" id="75_oBQVYfcV" role="1B3o_S" />
       <node concept="10P_77" id="75_oBQVYfeG" role="3clF45" />
-      <node concept="3clFbS" id="75_oBQVYfcX" role="3clF47" />
+      <node concept="3clFbS" id="75_oBQVYfcX" role="3clF47">
+        <node concept="3clFbF" id="5GuprjjdiCu" role="3cqZAp">
+          <node concept="3clFbT" id="5GuprjjdiCt" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6p8q4IN2gK6" role="13h7CS">
       <property role="13i0iv" value="false" />
