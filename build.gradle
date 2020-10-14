@@ -16,7 +16,7 @@ ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/reposi
 ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 
 //MPS-extensions version
-ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2020.2.+"
+ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "feature-workday.2020.2.+"
 
 //MPS version
 ext.mpsMajor = "2020.2"
