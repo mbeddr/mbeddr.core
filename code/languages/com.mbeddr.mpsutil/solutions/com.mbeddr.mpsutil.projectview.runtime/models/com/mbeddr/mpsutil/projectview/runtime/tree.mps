@@ -115,9 +115,14 @@
       </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+        <child id="1188214630783" name="value" index="2B76xF" />
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="1188214545140" name="jetbrains.mps.baseLanguage.structure.AnnotationInstanceValue" flags="ng" index="2B6LJw">
+        <reference id="1188214555875" name="key" index="2B6OnR" />
+        <child id="1188214607812" name="value" index="2B70Vg" />
       </concept>
       <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
         <child id="1153952416686" name="body" index="2GV8ay" />
@@ -1848,6 +1853,26 @@
               </node>
               <node concept="liA8E" id="3dJ0eUbDg4v" role="2OqNvi">
                 <ref role="37wK5l" to="imq3:3dJ0eUbD8vS" resolve="isDataProvider" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2K_x1QXPCLT" role="3cqZAp" />
+        <node concept="3clFbJ" id="2K_x1QXPL3O" role="3cqZAp">
+          <node concept="3clFbS" id="2K_x1QXPL3Q" role="3clFbx">
+            <node concept="3cpWs6" id="2K_x1QXQjDM" role="3cqZAp">
+              <node concept="Xjq3P" id="2K_x1QXQjVG" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2K_x1QXQ6st" role="3clFbw">
+            <node concept="10M0yZ" id="2K_x1QXPZD7" role="2Oq$k0">
+              <ref role="3cqZAo" node="2K_x1QXPc80" resolve="CUSTOM_PROJECT_VIEW" />
+              <ref role="1PxDUh" node="2K_x1QXPbws" resolve="CustomProjectViewDataKeys" />
+            </node>
+            <node concept="liA8E" id="2K_x1QXQcD0" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~DataKey.is(java.lang.String)" resolve="is" />
+              <node concept="37vLTw" id="2K_x1QXQh7P" role="37wK5m">
+                <ref role="3cqZAo" node="75_oBQVxzQL" resolve="dataId" />
               </node>
             </node>
           </node>
@@ -18168,6 +18193,46 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="2K_x1QXPbws">
+    <property role="TrG5h" value="CustomProjectViewDataKeys" />
+    <node concept="3clFbW" id="2K_x1QXPbWL" role="jymVt">
+      <node concept="3cqZAl" id="2K_x1QXPbWN" role="3clF45" />
+      <node concept="3Tm6S6" id="2K_x1QXPbXb" role="1B3o_S" />
+      <node concept="3clFbS" id="2K_x1QXPbWP" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="2K_x1QXPbXt" role="jymVt" />
+    <node concept="Wx3nA" id="2K_x1QXPc80" role="jymVt">
+      <property role="TrG5h" value="CUSTOM_PROJECT_VIEW" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2K_x1QXPbZZ" role="1B3o_S" />
+      <node concept="3uibUv" id="2K_x1QXPc7R" role="1tU5fm">
+        <ref role="3uigEE" to="qkt:~DataKey" resolve="DataKey" />
+        <node concept="3uibUv" id="2K_x1QXPkad" role="11_B2D">
+          <ref role="3uigEE" node="2ZGhpRfcKKF" resolve="CustomProjectView" />
+        </node>
+      </node>
+      <node concept="2YIFZM" id="2K_x1QXPjGf" role="33vP2m">
+        <ref role="37wK5l" to="qkt:~DataKey.create(java.lang.String)" resolve="create" />
+        <ref role="1Pybhc" to="qkt:~DataKey" resolve="DataKey" />
+        <node concept="Xl_RD" id="2K_x1QXPjLE" role="37wK5m">
+          <property role="Xl_RC" value="com.mbeddr.mpsutil.projectview.CUSTOM_PROJECT_VIEW" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2K_x1QXPjYu" role="2AJF6D">
+        <ref role="2AI5Lk" to="qq03:~MPSCommonDataKeys$Description" resolve="MPSCommonDataKeys.Description" />
+        <node concept="2B6LJw" id="2K_x1QXPsKW" role="2B76xF">
+          <ref role="2B6OnR" to="qq03:~MPSCommonDataKeys$Description.description()" resolve="description" />
+          <node concept="Xl_RD" id="2K_x1QXPsUI" role="2B70Vg">
+            <property role="Xl_RC" value="active custom project view pane" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="2K_x1QXPbwt" role="1B3o_S" />
+    <node concept="3uibUv" id="2K_x1QXRM58" role="1zkMxy">
+      <ref role="3uigEE" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
     </node>
   </node>
 </model>
