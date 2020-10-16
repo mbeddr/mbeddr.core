@@ -9,6 +9,7 @@
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="d04j" ref="r:904a58f9-8bb7-4ceb-b8a8-e6d7b5fc9126(com.mbeddr.mpsutil.projectview.structure)" implicit="true" />
     <import index="os9e" ref="r:97eb5271-8e83-4b12-a8f1-f764eae13815(com.mbeddr.mpsutil.projectview.behavior)" implicit="true" />
   </imports>
@@ -336,6 +337,28 @@
               </node>
               <node concept="3TrEf2" id="1CDgnklACl7" role="2OqNvi">
                 <ref role="3Tt5mk" to="d04j:75_oBQVlbQR" resolve="icon" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="27aDP_epfS5" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="27aDP_epfS6" role="1ZfhKB">
+          <node concept="2c44tf" id="27aDP_epfS7" role="mwGJk">
+            <node concept="3uibUv" id="27aDP_epgo6" role="2c44tc">
+              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="27aDP_epfS9" role="1ZfhK$">
+          <node concept="1Z2H0r" id="27aDP_epfSa" role="mwGJk">
+            <node concept="2OqwBi" id="27aDP_epfSb" role="1Z2MuG">
+              <node concept="1YBJjd" id="27aDP_epfSc" role="2Oq$k0">
+                <ref role="1YBMHb" node="3ZnFyBjq5QV" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="27aDP_epgdb" role="2OqNvi">
+                <ref role="3Tt5mk" to="d04j:27aDP_ep8eU" resolve="color" />
               </node>
             </node>
           </node>

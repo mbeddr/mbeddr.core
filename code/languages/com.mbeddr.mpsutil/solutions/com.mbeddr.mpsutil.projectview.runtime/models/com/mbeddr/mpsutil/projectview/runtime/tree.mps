@@ -8995,6 +8995,11 @@
       <node concept="3cqZAl" id="7PuCnELApt4" role="3clF45" />
       <node concept="3Tmbuc" id="7PuCnELBWac" role="1B3o_S" />
       <node concept="3clFbS" id="7PuCnELApt6" role="3clF47">
+        <node concept="3clFbF" id="27aDP_eoa7E" role="3cqZAp">
+          <node concept="3nyPlj" id="27aDP_eoa7C" role="3clFbG">
+            <ref role="37wK5l" to="7e8u:~MPSTreeNode.doUpdatePresentation()" resolve="doUpdatePresentation" />
+          </node>
+        </node>
         <node concept="3clFbF" id="7PuCnELBlqI" role="3cqZAp">
           <node concept="2OqwBi" id="7PuCnELBqRz" role="3clFbG">
             <node concept="2OqwBi" id="7PuCnELBlWK" role="2Oq$k0">
@@ -9010,6 +9015,40 @@
               <node concept="Xjq3P" id="7PuCnELBrGi" role="37wK5m" />
               <node concept="1bVj0M" id="7PuCnELBs1s" role="37wK5m">
                 <node concept="3clFbS" id="7PuCnELBs1u" role="1bW5cS">
+                  <node concept="3cpWs8" id="27aDP_eovZ9" role="3cqZAp">
+                    <node concept="3cpWsn" id="27aDP_eovZa" role="3cpWs9">
+                      <property role="TrG5h" value="color" />
+                      <node concept="3uibUv" id="27aDP_eovEm" role="1tU5fm">
+                        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+                      </node>
+                      <node concept="2OqwBi" id="27aDP_eovZb" role="33vP2m">
+                        <node concept="37vLTw" id="27aDP_eovZc" role="2Oq$k0">
+                          <ref role="3cqZAo" node="VPgi8eh3A6" resolve="myElement" />
+                        </node>
+                        <node concept="liA8E" id="27aDP_eovZd" role="2OqNvi">
+                          <ref role="37wK5l" to="imq3:27aDP_eog0r" resolve="getColor" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="27aDP_eoyB3" role="3cqZAp">
+                    <node concept="3clFbS" id="27aDP_eoyB5" role="3clFbx">
+                      <node concept="3clFbF" id="27aDP_enW$1" role="3cqZAp">
+                        <node concept="1rXfSq" id="27aDP_enWzZ" role="3clFbG">
+                          <ref role="37wK5l" to="7e8u:~MPSTreeNode.setColor(java.awt.Color)" resolve="setColor" />
+                          <node concept="37vLTw" id="27aDP_eovZe" role="37wK5m">
+                            <ref role="3cqZAo" node="27aDP_eovZa" resolve="color" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3y3z36" id="27aDP_eo_FO" role="3clFbw">
+                      <node concept="37vLTw" id="27aDP_eoz0a" role="3uHU7B">
+                        <ref role="3cqZAo" node="27aDP_eovZa" resolve="color" />
+                      </node>
+                      <node concept="10Nm6u" id="27aDP_eo_ke" role="3uHU7w" />
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="4_hSy2UsXyQ" role="3cqZAp">
                     <node concept="1rXfSq" id="4_hSy2UsXyO" role="3clFbG">
                       <ref role="37wK5l" to="7e8u:~MPSTreeNode.setText(java.lang.String)" resolve="setText" />
