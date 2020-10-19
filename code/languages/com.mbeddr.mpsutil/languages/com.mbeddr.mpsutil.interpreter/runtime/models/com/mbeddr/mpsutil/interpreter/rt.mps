@@ -70,6 +70,7 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
+      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
@@ -2544,7 +2545,7 @@
             </node>
           </node>
         </node>
-        <node concept="3J1_TO" id="7F2vPZ3Kr3s" role="3cqZAp">
+        <node concept="2GUZhq" id="7F2vPZ3Kr3s" role="3cqZAp">
           <node concept="1wplmZ" id="b1I1TJFZR9P" role="1zxBo6">
             <node concept="3clFbS" id="7F2vPZ3Kr3u" role="1wplMD">
               <node concept="3clFbF" id="2pAf7L4ETt3" role="3cqZAp">
@@ -3919,9 +3920,6 @@
                   </node>
                   <node concept="3cpWs3" id="2L8GBw9fh$I" role="3uHU7B">
                     <node concept="3cpWs3" id="2L8GBw9feJX" role="3uHU7B">
-                      <node concept="Xl_RD" id="2L8GBw9fhEj" role="3uHU7w">
-                        <property role="Xl_RC" value="' (" />
-                      </node>
                       <node concept="3cpWs3" id="9nJ_zCC8Cj" role="3uHU7B">
                         <node concept="3cpWs3" id="9nJ_zCC6vZ" role="3uHU7B">
                           <node concept="3cpWs3" id="9nJ_zCAHIc" role="3uHU7B">
@@ -3944,6 +3942,9 @@
                             <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
                           </node>
                         </node>
+                      </node>
+                      <node concept="Xl_RD" id="2L8GBw9fhEj" role="3uHU7w">
+                        <property role="Xl_RC" value="' (" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="2L8GBw9fhof" role="3uHU7w">
@@ -13908,6 +13909,12 @@
       <node concept="3cqZAl" id="2jL$v5BnxWY" role="3clF45" />
       <node concept="3Tm1VV" id="2jL$v5BnxWZ" role="1B3o_S" />
       <node concept="3clFbS" id="2jL$v5BnxX0" role="3clF47">
+        <node concept="XkiVB" id="7zNoHLpQCht" role="3cqZAp">
+          <ref role="37wK5l" node="9nJ_zCA_70" resolve="InterpreterBaseException" />
+          <node concept="37vLTw" id="7zNoHLpQCuB" role="37wK5m">
+            <ref role="3cqZAo" node="2jL$v5BnxWQ" resolve="msg" />
+          </node>
+        </node>
         <node concept="3clFbF" id="3Y6fbK1oUyb" role="3cqZAp">
           <node concept="37vLTI" id="3Y6fbK1oUyd" role="3clFbG">
             <node concept="2OqwBi" id="3Y6fbK1oUyh" role="37vLTJ">
