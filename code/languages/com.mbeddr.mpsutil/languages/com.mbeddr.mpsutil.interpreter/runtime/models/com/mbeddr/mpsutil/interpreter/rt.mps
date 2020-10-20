@@ -70,7 +70,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
@@ -2545,7 +2544,7 @@
             </node>
           </node>
         </node>
-        <node concept="2GUZhq" id="7F2vPZ3Kr3s" role="3cqZAp">
+        <node concept="3J1_TO" id="7F2vPZ3Kr3s" role="3cqZAp">
           <node concept="1wplmZ" id="b1I1TJFZR9P" role="1zxBo6">
             <node concept="3clFbS" id="7F2vPZ3Kr3u" role="1wplMD">
               <node concept="3clFbF" id="2pAf7L4ETt3" role="3cqZAp">
