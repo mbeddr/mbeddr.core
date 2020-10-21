@@ -511,11 +511,11 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="3F0ifn" id="27aDP_ep8rW" role="3EZMnx">
-              <property role="3F0ifm" value="text color:" />
+              <property role="3F0ifm" value="text attributes (SimpleTextAttributes):" />
             </node>
             <node concept="3F1sOY" id="27aDP_ep8rX" role="3EZMnx">
               <property role="1$x2rV" value="default" />
-              <ref role="1NtTu8" to="d04j:27aDP_ep8eU" resolve="color" />
+              <ref role="1NtTu8" to="d04j:27aDP_ep8eU" resolve="textAttributes" />
             </node>
             <node concept="2iRfu4" id="27aDP_ep8rY" role="2iSdaV" />
           </node>

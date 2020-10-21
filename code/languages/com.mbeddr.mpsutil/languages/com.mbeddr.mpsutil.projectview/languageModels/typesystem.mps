@@ -10,6 +10,7 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="d04j" ref="r:904a58f9-8bb7-4ceb-b8a8-e6d7b5fc9126(com.mbeddr.mpsutil.projectview.structure)" implicit="true" />
     <import index="os9e" ref="r:97eb5271-8e83-4b12-a8f1-f764eae13815(com.mbeddr.mpsutil.projectview.behavior)" implicit="true" />
   </imports>
@@ -346,8 +347,8 @@
         <property role="3wDh2S" value="true" />
         <node concept="mw_s8" id="27aDP_epfS6" role="1ZfhKB">
           <node concept="2c44tf" id="27aDP_epfS7" role="mwGJk">
-            <node concept="3uibUv" id="27aDP_epgo6" role="2c44tc">
-              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+            <node concept="3uibUv" id="2GxkNhAzHWW" role="2c44tc">
+              <ref role="3uigEE" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
             </node>
           </node>
         </node>
@@ -358,7 +359,7 @@
                 <ref role="1YBMHb" node="3ZnFyBjq5QV" resolve="node" />
               </node>
               <node concept="3TrEf2" id="27aDP_epgdb" role="2OqNvi">
-                <ref role="3Tt5mk" to="d04j:27aDP_ep8eU" resolve="color" />
+                <ref role="3Tt5mk" to="d04j:27aDP_ep8eU" resolve="textAttributes" />
               </node>
             </node>
           </node>

@@ -9017,36 +9017,44 @@
                 <node concept="3clFbS" id="7PuCnELBs1u" role="1bW5cS">
                   <node concept="3cpWs8" id="27aDP_eovZ9" role="3cqZAp">
                     <node concept="3cpWsn" id="27aDP_eovZa" role="3cpWs9">
-                      <property role="TrG5h" value="color" />
-                      <node concept="3uibUv" id="27aDP_eovEm" role="1tU5fm">
-                        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+                      <property role="TrG5h" value="attrs" />
+                      <node concept="3uibUv" id="2GxkNhA_Jk0" role="1tU5fm">
+                        <ref role="3uigEE" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
                       </node>
                       <node concept="2OqwBi" id="27aDP_eovZb" role="33vP2m">
                         <node concept="37vLTw" id="27aDP_eovZc" role="2Oq$k0">
                           <ref role="3cqZAo" node="VPgi8eh3A6" resolve="myElement" />
                         </node>
                         <node concept="liA8E" id="27aDP_eovZd" role="2OqNvi">
-                          <ref role="37wK5l" to="imq3:27aDP_eog0r" resolve="getColor" />
+                          <ref role="37wK5l" to="imq3:27aDP_eog0r" resolve="getTextAttributes" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbJ" id="27aDP_eoyB3" role="3cqZAp">
-                    <node concept="3clFbS" id="27aDP_eoyB5" role="3clFbx">
-                      <node concept="3clFbF" id="27aDP_enW$1" role="3cqZAp">
-                        <node concept="1rXfSq" id="27aDP_enWzZ" role="3clFbG">
-                          <ref role="37wK5l" to="7e8u:~MPSTreeNode.setColor(java.awt.Color)" resolve="setColor" />
-                          <node concept="37vLTw" id="27aDP_eovZe" role="37wK5m">
-                            <ref role="3cqZAo" node="27aDP_eovZa" resolve="color" />
-                          </node>
+                  <node concept="3clFbF" id="2GxkNhA_Nn8" role="3cqZAp">
+                    <node concept="1rXfSq" id="2GxkNhA_Nn6" role="3clFbG">
+                      <ref role="37wK5l" to="7e8u:~MPSTreeNode.setColor(java.awt.Color)" resolve="setColor" />
+                      <node concept="2OqwBi" id="2GxkNhA_Q8x" role="37wK5m">
+                        <node concept="37vLTw" id="2GxkNhA_Pin" role="2Oq$k0">
+                          <ref role="3cqZAo" node="27aDP_eovZa" resolve="attrs" />
+                        </node>
+                        <node concept="liA8E" id="2GxkNhA_QCG" role="2OqNvi">
+                          <ref role="37wK5l" to="lzb2:~SimpleTextAttributes.getFgColor()" resolve="getFgColor" />
                         </node>
                       </node>
                     </node>
-                    <node concept="3y3z36" id="27aDP_eo_FO" role="3clFbw">
-                      <node concept="37vLTw" id="27aDP_eoz0a" role="3uHU7B">
-                        <ref role="3cqZAo" node="27aDP_eovZa" resolve="color" />
+                  </node>
+                  <node concept="3clFbF" id="2GxkNhA_S7C" role="3cqZAp">
+                    <node concept="1rXfSq" id="2GxkNhA_S7A" role="3clFbG">
+                      <ref role="37wK5l" to="7e8u:~MPSTreeNode.setFontStyle(int)" resolve="setFontStyle" />
+                      <node concept="2OqwBi" id="2GxkNhA_UFg" role="37wK5m">
+                        <node concept="37vLTw" id="2GxkNhA_U3e" role="2Oq$k0">
+                          <ref role="3cqZAo" node="27aDP_eovZa" resolve="attrs" />
+                        </node>
+                        <node concept="liA8E" id="2GxkNhA_Va8" role="2OqNvi">
+                          <ref role="37wK5l" to="lzb2:~SimpleTextAttributes.getFontStyle()" resolve="getFontStyle" />
+                        </node>
                       </node>
-                      <node concept="10Nm6u" id="27aDP_eo_ke" role="3uHU7w" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="4_hSy2UsXyQ" role="3cqZAp">

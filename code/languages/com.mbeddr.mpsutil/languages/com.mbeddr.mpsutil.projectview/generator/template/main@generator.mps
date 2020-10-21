@@ -20,6 +20,7 @@
     <import index="tp4l" ref="r:00000000-0000-4000-0000-011c89590369(jetbrains.mps.lang.plugin.generator.baseLanguage.template.main@generator)" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -1588,15 +1589,15 @@
                                   </node>
                                   <node concept="3clFb_" id="27aDP_eoPSO" role="jymVt">
                                     <property role="1EzhhJ" value="false" />
-                                    <property role="TrG5h" value="getColor" />
+                                    <property role="TrG5h" value="getTextAttributes" />
                                     <node concept="37vLTG" id="27aDP_eoPSP" role="3clF46">
                                       <property role="TrG5h" value="element" />
                                       <node concept="3uibUv" id="27aDP_eoPSQ" role="1tU5fm">
                                         <ref role="3uigEE" to="imq3:3ZnFyBjwIpN" resolve="ViewElement" />
                                       </node>
                                     </node>
-                                    <node concept="3uibUv" id="27aDP_eoXgf" role="3clF45">
-                                      <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+                                    <node concept="3uibUv" id="2GxkNhAzJVe" role="3clF45">
+                                      <ref role="3uigEE" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
                                     </node>
                                     <node concept="3Tm1VV" id="27aDP_eoPSS" role="1B3o_S" />
                                     <node concept="2AHcQZ" id="27aDP_eoPST" role="2AJF6D">
@@ -1626,8 +1627,8 @@
                                               <node concept="3clFbS" id="27aDP_eoPT5" role="2VODD2">
                                                 <node concept="3clFbF" id="27aDP_eoPT6" role="3cqZAp">
                                                   <node concept="2OqwBi" id="27aDP_eoPT7" role="3clFbG">
-                                                    <node concept="3TrEf2" id="27aDP_epl5x" role="2OqNvi">
-                                                      <ref role="3Tt5mk" to="d04j:27aDP_ep8eU" resolve="color" />
+                                                    <node concept="3TrEf2" id="2GxkNhA$juA" role="2OqNvi">
+                                                      <ref role="3Tt5mk" to="d04j:27aDP_ep8eU" resolve="textAttributes" />
                                                     </node>
                                                     <node concept="30H73N" id="27aDP_eoPT9" role="2Oq$k0" />
                                                   </node>
@@ -1649,7 +1650,7 @@
                                               <node concept="2OqwBi" id="27aDP_eoPTg" role="2Oq$k0">
                                                 <node concept="30H73N" id="27aDP_eoPTh" role="2Oq$k0" />
                                                 <node concept="3TrEf2" id="27aDP_eplki" role="2OqNvi">
-                                                  <ref role="3Tt5mk" to="d04j:27aDP_ep8eU" resolve="color" />
+                                                  <ref role="3Tt5mk" to="d04j:27aDP_ep8eU" resolve="textAttributes" />
                                                 </node>
                                               </node>
                                               <node concept="3x8VRR" id="27aDP_eoPTj" role="2OqNvi" />
