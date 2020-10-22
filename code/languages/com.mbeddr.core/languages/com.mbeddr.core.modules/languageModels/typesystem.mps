@@ -14247,7 +14247,7 @@
                 </node>
                 <node concept="3Cnw8n" id="20agw22CaLB" role="1urrFz">
                   <property role="ARO6o" value="true" />
-                  <ref role="QpYPw" node="1Ge_bcBSFlf" resolve="fix_IImplementsKnownFunctionPrototype_preventNameMangling" />
+                  <ref role="QpYPw" node="1Ge_bcBSFlf" resolve="fix_ImplementsKnownFunctionPrototype_preventNameMangling" />
                   <node concept="3CnSsL" id="20agw22CaUK" role="3Coj4f">
                     <ref role="QkamJ" node="1Ge_bcBSFlu" resolve="implementsKnownFunctionPrototype" />
                     <node concept="Jnkvi" id="20agw22CaV1" role="3CoRuB">
@@ -14302,7 +14302,7 @@
                 </node>
                 <node concept="3Cnw8n" id="20agw22CaVe" role="1urrFz">
                   <property role="ARO6o" value="true" />
-                  <ref role="QpYPw" node="1Ge_bcBSvQ3" resolve="fix_IImplementsKnownFunctionPrototype_exported" />
+                  <ref role="QpYPw" node="1Ge_bcBSvQ3" resolve="fix_ImplementsKnownFunctionPrototype_exported" />
                   <node concept="3CnSsL" id="20agw22Cb4v" role="3Coj4f">
                     <ref role="QkamJ" node="1Ge_bcBSvXL" resolve="implementsKnownFunctionPrototype" />
                     <node concept="Jnkvi" id="20agw22Cb4K" role="3CoRuB">
@@ -14326,7 +14326,7 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="1Ge_bcBSvQ3">
-    <property role="TrG5h" value="fix_IImplementsKnownFunctionPrototype_exported" />
+    <property role="TrG5h" value="fix_ImplementsKnownFunctionPrototype_exported" />
     <property role="3GE5qa" value="functions" />
     <node concept="Q5ZZ6" id="1Ge_bcBSvQ4" role="Q6x$H">
       <node concept="3clFbS" id="1Ge_bcBSvQ5" role="2VODD2">
@@ -14355,7 +14355,7 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="1Ge_bcBSFlf">
-    <property role="TrG5h" value="fix_IImplementsKnownFunctionPrototype_preventNameMangling" />
+    <property role="TrG5h" value="fix_ImplementsKnownFunctionPrototype_preventNameMangling" />
     <property role="3GE5qa" value="functions" />
     <node concept="Q5ZZ6" id="1Ge_bcBSFlg" role="Q6x$H">
       <node concept="3clFbS" id="1Ge_bcBSFlh" role="2VODD2">

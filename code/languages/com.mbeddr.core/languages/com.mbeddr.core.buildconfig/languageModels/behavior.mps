@@ -4607,11 +4607,11 @@
         <node concept="3clFbF" id="6xoAPBjYbRC" role="3cqZAp">
           <node concept="3cpWs3" id="6xoAPBk126X" role="3clFbG">
             <node concept="Xl_RD" id="6xoAPBk1270" role="3uHU7w">
-              <property role="Xl_RC" value="}" />
+              <property role="Xl_RC" value=")" />
             </node>
             <node concept="3cpWs3" id="6xoAPBk1285" role="3uHU7B">
               <node concept="Xl_RD" id="6xoAPBk128K" role="3uHU7B">
-                <property role="Xl_RC" value="${" />
+                <property role="Xl_RC" value="$(" />
               </node>
               <node concept="BsUDl" id="6xoAPBk11On" role="3uHU7w">
                 <ref role="37wK5l" node="6xoAPBjOH1K" resolve="getVariableName" />
