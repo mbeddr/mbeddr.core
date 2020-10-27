@@ -8030,6 +8030,58 @@
                   <property role="3oM_SC" value="character" />
                 </node>
               </node>
+              <node concept="1PaTwC" id="3$f8hf_MZCU" role="3ndbpf">
+                <node concept="3oM_SD" id="3$f8hf_MZCT" role="1PaTwD">
+                  <property role="3oM_SC" value="-" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_MZYI" role="1PaTwD">
+                  <property role="3oM_SC" value="ends" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_N09x" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_N0kd" role="1PaTwD">
+                  <property role="3oM_SC" value="an" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NaF9" role="1PaTwD">
+                  <property role="3oM_SC" value="arithmetic" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_N1Dn" role="1PaTwD">
+                  <property role="3oM_SC" value="operator" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_N1O7" role="1PaTwD">
+                  <property role="3oM_SC" value="(+," />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_N0v2" role="1PaTwD">
+                  <property role="3oM_SC" value="-," />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_N48d" role="1PaTwD">
+                  <property role="3oM_SC" value="*," />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_N7l0" role="1PaTwD">
+                  <property role="3oM_SC" value="/)" />
+                </node>
+              </node>
+              <node concept="1PaTwC" id="3$f8hf_N7Zj" role="3ndbpf">
+                <node concept="3oM_SD" id="3$f8hf_N7Zi" role="1PaTwD">
+                  <property role="3oM_SC" value="-" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_N8aL" role="1PaTwD">
+                  <property role="3oM_SC" value="ends" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_Nbb4" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NgL9" role="1PaTwD">
+                  <property role="3oM_SC" value="§" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_Noey" role="1PaTwD">
+                  <property role="3oM_SC" value="or" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_Nop8" role="1PaTwD">
+                  <property role="3oM_SC" value="~" />
+                </node>
+              </node>
             </node>
             <node concept="3cpWs6" id="6TPUpo$SrKr" role="3cqZAp">
               <node concept="22lmx$" id="6TPUpo$Ssp2" role="3cqZAk">
@@ -8040,7 +8092,7 @@
                   <node concept="liA8E" id="6TPUpo$St3V" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="6TPUpo$St5h" role="37wK5m">
-                      <property role="Xl_RC" value=".*( |\\\\[nt]|0x|#|[\\(\\[\\{])" />
+                      <property role="Xl_RC" value=".*( |\\\\[nt]|0x|#|[\\(\\[\\{]|[\\+-\\\\*/]|[§~])" />
                     </node>
                   </node>
                 </node>
@@ -8201,6 +8253,58 @@
                   <property role="3oM_SC" value="character" />
                 </node>
               </node>
+              <node concept="1PaTwC" id="3$f8hf_NinG" role="3ndbpf">
+                <node concept="3oM_SD" id="3$f8hf_NinF" role="1PaTwD">
+                  <property role="3oM_SC" value="-" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NiHz" role="1PaTwD">
+                  <property role="3oM_SC" value="starts" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NjdZ" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NjoY" role="1PaTwD">
+                  <property role="3oM_SC" value="an" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_Njp3" role="1PaTwD">
+                  <property role="3oM_SC" value="arithmetic" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NjT1" role="1PaTwD">
+                  <property role="3oM_SC" value="operator" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_Nk3S" role="1PaTwD">
+                  <property role="3oM_SC" value="(+," />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_Nlz0" role="1PaTwD">
+                  <property role="3oM_SC" value="-," />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NlSp" role="1PaTwD">
+                  <property role="3oM_SC" value="*," />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_Nm3b" role="1PaTwD">
+                  <property role="3oM_SC" value="/)" />
+                </node>
+              </node>
+              <node concept="1PaTwC" id="3$f8hf_NmoJ" role="3ndbpf">
+                <node concept="3oM_SD" id="3$f8hf_NmoI" role="1PaTwD">
+                  <property role="3oM_SC" value="-" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NmIL" role="1PaTwD">
+                  <property role="3oM_SC" value="starts" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NmTs" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NmTw" role="1PaTwD">
+                  <property role="3oM_SC" value="%" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NneP" role="1PaTwD">
+                  <property role="3oM_SC" value="or" />
+                </node>
+                <node concept="3oM_SD" id="3$f8hf_NneV" role="1PaTwD">
+                  <property role="3oM_SC" value="°" />
+                </node>
+              </node>
             </node>
             <node concept="3cpWs6" id="3PUmE2muZpM" role="3cqZAp">
               <node concept="22lmx$" id="6TPUpo$OfUT" role="3cqZAk">
@@ -8227,7 +8331,7 @@
                   <node concept="liA8E" id="6TPUpo$OfV3" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="6TPUpo$OfV4" role="37wK5m">
-                      <property role="Xl_RC" value="( |\\\\[nt]|[\\.,:;?!]|[\\)\\]\\}]).*" />
+                      <property role="Xl_RC" value="( |\\\\[nt]|[\\.,:;?!]|[\\)\\]\\}]|[\\+-\\\\*/]|[%°]).*" />
                     </node>
                   </node>
                 </node>
