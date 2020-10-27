@@ -1116,23 +1116,18 @@
             </node>
           </node>
           <node concept="3clFbJ" id="3TJMuILVCop" role="3cqZAp">
-            <node concept="2OqwBi" id="3TJMuILVEo1" role="3clFbw">
-              <node concept="2OqwBi" id="3TJMuILVCox" role="2Oq$k0">
-                <node concept="2OqwBi" id="3TJMuILVCoy" role="2Oq$k0">
-                  <node concept="1YBJjd" id="3TJMuILVCoz" role="2Oq$k0">
-                    <ref role="1YBMHb" node="4c3N3BOrqmN" resolve="smInitTarget" />
-                  </node>
-                  <node concept="2qgKlT" id="3TJMuILVCo$" role="2OqNvi">
-                    <ref role="37wK5l" to="ktif:4c3N3BNA7XU" resolve="getStatemachine" />
-                  </node>
+            <node concept="2OqwBi" id="3TJMuILVCox" role="3clFbw">
+              <node concept="2OqwBi" id="3TJMuILVCoy" role="2Oq$k0">
+                <node concept="1YBJjd" id="3TJMuILVCoz" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4c3N3BOrqmN" resolve="smInitTarget" />
                 </node>
-                <node concept="3CFZ6_" id="3TJMuILVE9g" role="2OqNvi">
-                  <node concept="3CFYIy" id="3TJMuILVEbU" role="3CFYIz">
-                    <ref role="3CFYIx" to="clqz:3TJMuIK0DF6" resolve="AbstractDerivedInitialStateAnnotation" />
-                  </node>
+                <node concept="2qgKlT" id="3TJMuILVCo$" role="2OqNvi">
+                  <ref role="37wK5l" to="ktif:4c3N3BNA7XU" resolve="getStatemachine" />
                 </node>
               </node>
-              <node concept="3x8VRR" id="3TJMuILVEFy" role="2OqNvi" />
+              <node concept="2qgKlT" id="3$f8hf_cBZe" role="2OqNvi">
+                <ref role="37wK5l" to="ktif:3$f8hf_cqT1" resolve="hasDerivedInitialState" />
+              </node>
             </node>
             <node concept="3clFbS" id="3TJMuILVCoA" role="3clFbx">
               <node concept="2MkqsV" id="3TJMuILVCoB" role="3cqZAp">
