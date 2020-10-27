@@ -508,6 +508,9 @@
         <node concept="3F0ifn" id="2Vizpn2M$il" role="3EZMnx">
           <property role="3F0ifm" value="$" />
           <ref role="1ERwB7" node="7EZ1SpoCaB_" resolve="deleteVariableRef" />
+          <node concept="11L4FC" id="3$f8hf$xtcE" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
           <node concept="Vb9p2" id="4QnOXkAw7oT" role="3F10Kt">
             <property role="Vbekb" value="ITALIC" />
           </node>
@@ -589,6 +592,9 @@
         <property role="3F0ifm" value=")" />
         <ref role="1ERwB7" node="7EZ1SpoCaB_" resolve="deleteVariableRef" />
         <node concept="11L4FC" id="2Vizpn2M_1k" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="3$f8hf$wg3D" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
         <node concept="Vb9p2" id="4QnOXkAw7p6" role="3F10Kt">
