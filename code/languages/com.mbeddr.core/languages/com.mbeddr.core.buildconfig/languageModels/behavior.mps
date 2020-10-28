@@ -3812,6 +3812,54 @@
       </node>
       <node concept="10P_77" id="3D9$r$Xcjd" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="5itS2OHMb5J" role="13h7CS">
+      <property role="TrG5h" value="getBuildDir" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="5itS2OHMb5K" role="1B3o_S" />
+      <node concept="17QB3L" id="5itS2OHMbw0" role="3clF45" />
+      <node concept="3clFbS" id="5itS2OHMb5M" role="3clF47">
+        <node concept="3clFbF" id="5itS2OHMd9H" role="3cqZAp">
+          <node concept="Xl_RD" id="5itS2OHMd9G" role="3clFbG">
+            <property role="Xl_RC" value="build" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5itS2OHMqvG" role="13h7CS">
+      <property role="TrG5h" value="getObjBuildDir" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="5itS2OHMqvH" role="1B3o_S" />
+      <node concept="17QB3L" id="5itS2OHMqvI" role="3clF45" />
+      <node concept="3clFbS" id="5itS2OHMqvJ" role="3clF47">
+        <node concept="3clFbF" id="5itS2OHMqvK" role="3cqZAp">
+          <node concept="Xl_RD" id="5itS2OHMqvL" role="3clFbG">
+            <property role="Xl_RC" value="bin" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5itS2OHMrq1" role="13h7CS">
+      <property role="TrG5h" value="getLibBuildDir" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="5itS2OHMrq2" role="1B3o_S" />
+      <node concept="17QB3L" id="5itS2OHMrq3" role="3clF45" />
+      <node concept="3clFbS" id="5itS2OHMrq4" role="3clF47">
+        <node concept="3clFbF" id="5itS2OHMrq5" role="3cqZAp">
+          <node concept="Xl_RD" id="5itS2OHMrq6" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5itS2OHMsZ9" role="13h7CS">
+      <property role="TrG5h" value="getBinBuildDir" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="5itS2OHMsZa" role="1B3o_S" />
+      <node concept="17QB3L" id="5itS2OHMsZb" role="3clF45" />
+      <node concept="3clFbS" id="5itS2OHMsZc" role="3clF47">
+        <node concept="3clFbF" id="5itS2OHMsZd" role="3cqZAp">
+          <node concept="Xl_RD" id="5itS2OHMsZe" role="3clFbG" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="34x64NyRAM2">
     <property role="3GE5qa" value="platform" />
@@ -4884,60 +4932,65 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3cpWs6" id="3YjQI$jiL8u" role="3cqZAp">
-                      <node concept="2OqwBi" id="3YjQI$jje0s" role="3cqZAk">
-                        <node concept="2OqwBi" id="3YjQI$jiMi_" role="2Oq$k0">
-                          <node concept="2OqwBi" id="3YjQI$jnXTx" role="2Oq$k0">
-                            <node concept="2OqwBi" id="3YjQI$jpo13" role="2Oq$k0">
-                              <node concept="2OqwBi" id="3YjQI$jsCYn" role="2Oq$k0">
-                                <node concept="2YIFZM" id="3YjQI$jsCYo" role="2Oq$k0">
-                                  <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-                                  <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-                                  <node concept="37vLTw" id="3YjQI$jsCYp" role="37wK5m">
-                                    <ref role="3cqZAo" node="3YjQI$jiYJ4" resolve="archiveLocation" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="3YjQI$jsCYq" role="2OqNvi">
-                                  <ref role="37wK5l" to="eoo2:~Path.getParent()" resolve="getParent" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="3YjQI$jppej" role="2OqNvi">
-                                <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
-                                <node concept="2OqwBi" id="3YjQI$jpxuz" role="37wK5m">
-                                  <node concept="2OqwBi" id="3YjQI$jpv2c" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="3YjQI$jpten" role="2Oq$k0">
-                                      <node concept="2OqwBi" id="3YjQI$jprqd" role="2Oq$k0">
-                                        <node concept="13iPFW" id="3YjQI$jpq1u" role="2Oq$k0" />
-                                        <node concept="3TrEf2" id="3YjQI$jpsBK" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="51wr:2kkumeGQBhZ" resolve="lib" />
-                                        </node>
-                                      </node>
-                                      <node concept="I4A8Y" id="3YjQI$jptSL" role="2OqNvi" />
-                                    </node>
-                                    <node concept="13u695" id="3YjQI$jpwt1" role="2OqNvi" />
-                                  </node>
-                                  <node concept="3TrcHB" id="3YjQI$jpypB" role="2OqNvi">
-                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="3YjQI$jnZwO" role="2OqNvi">
-                              <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
-                              <node concept="Xl_RD" id="3YjQI$jo0tz" role="37wK5m">
-                                <property role="Xl_RC" value="src" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="3YjQI$jiNJv" role="2OqNvi">
-                            <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
-                            <node concept="37vLTw" id="3YjQI$jsGih" role="37wK5m">
-                              <ref role="3cqZAo" node="3YjQI$jsGib" resolve="modelPath" />
-                            </node>
-                          </node>
+                    <node concept="3clFbF" id="5itS2OHOsI8" role="3cqZAp">
+                      <node concept="37vLTI" id="5itS2OHOtwc" role="3clFbG">
+                        <node concept="37vLTw" id="5itS2OIjZNN" role="37vLTJ">
+                          <ref role="3cqZAo" node="2SLRAEaoYYY" resolve="outputLocationAsString" />
                         </node>
-                        <node concept="liA8E" id="3YjQI$jjfvK" role="2OqNvi">
-                          <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
+                        <node concept="2OqwBi" id="5itS2OIk0Tv" role="37vLTx">
+                          <node concept="2OqwBi" id="3YjQI$jiMi_" role="2Oq$k0">
+                            <node concept="2OqwBi" id="3YjQI$jnXTx" role="2Oq$k0">
+                              <node concept="2OqwBi" id="3YjQI$jpo13" role="2Oq$k0">
+                                <node concept="2OqwBi" id="3YjQI$jsCYn" role="2Oq$k0">
+                                  <node concept="2YIFZM" id="3YjQI$jsCYo" role="2Oq$k0">
+                                    <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                                    <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                                    <node concept="37vLTw" id="3YjQI$jsCYp" role="37wK5m">
+                                      <ref role="3cqZAo" node="3YjQI$jiYJ4" resolve="archiveLocation" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="3YjQI$jsCYq" role="2OqNvi">
+                                    <ref role="37wK5l" to="eoo2:~Path.getParent()" resolve="getParent" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="3YjQI$jppej" role="2OqNvi">
+                                  <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
+                                  <node concept="2OqwBi" id="3YjQI$jpxuz" role="37wK5m">
+                                    <node concept="2OqwBi" id="3YjQI$jpv2c" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="3YjQI$jpten" role="2Oq$k0">
+                                        <node concept="2OqwBi" id="3YjQI$jprqd" role="2Oq$k0">
+                                          <node concept="13iPFW" id="3YjQI$jpq1u" role="2Oq$k0" />
+                                          <node concept="3TrEf2" id="3YjQI$jpsBK" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="51wr:2kkumeGQBhZ" resolve="lib" />
+                                          </node>
+                                        </node>
+                                        <node concept="I4A8Y" id="3YjQI$jptSL" role="2OqNvi" />
+                                      </node>
+                                      <node concept="13u695" id="3YjQI$jpwt1" role="2OqNvi" />
+                                    </node>
+                                    <node concept="3TrcHB" id="3YjQI$jpypB" role="2OqNvi">
+                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="3YjQI$jnZwO" role="2OqNvi">
+                                <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
+                                <node concept="Xl_RD" id="3YjQI$jo0tz" role="37wK5m">
+                                  <property role="Xl_RC" value="src" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="3YjQI$jiNJv" role="2OqNvi">
+                              <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
+                              <node concept="37vLTw" id="3YjQI$jsGih" role="37wK5m">
+                                <ref role="3cqZAo" node="3YjQI$jsGib" resolve="modelPath" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="5itS2OIk2wC" role="2OqNvi">
+                            <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -4950,13 +5003,13 @@
                       <ref role="37wK5l" to="3ju5:~IFile.isInArchive()" resolve="isInArchive" />
                     </node>
                   </node>
-                  <node concept="9aQIb" id="1v64rj$HmtN" role="9aQIa">
-                    <node concept="3clFbS" id="1v64rj$HmtO" role="9aQI4">
-                      <node concept="3cpWs6" id="1v64rj$Hn4D" role="3cqZAp">
-                        <node concept="37vLTw" id="1v64rj$Hn4F" role="3cqZAk">
-                          <ref role="3cqZAo" node="2SLRAEaoYYY" resolve="outputLocationAsString" />
-                        </node>
-                      </node>
+                </node>
+                <node concept="3cpWs6" id="5itS2OHOv$f" role="3cqZAp">
+                  <node concept="2YIFZM" id="5itS2OHOxVY" role="3cqZAk">
+                    <ref role="37wK5l" to="8oaq:~FilenameUtils.separatorsToUnix(java.lang.String)" resolve="separatorsToUnix" />
+                    <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
+                    <node concept="37vLTw" id="5itS2OIk3vQ" role="37wK5m">
+                      <ref role="3cqZAo" node="2SLRAEaoYYY" resolve="outputLocationAsString" />
                     </node>
                   </node>
                 </node>
