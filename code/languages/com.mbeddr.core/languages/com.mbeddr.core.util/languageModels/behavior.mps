@@ -35,6 +35,8 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -376,6 +378,9 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
+        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
+      </concept>
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
@@ -428,6 +433,9 @@
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
         <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
+      </concept>
+      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
+        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -4900,6 +4908,34 @@
         <node concept="3Tqbb2" id="YF8VyoigIh" role="1tU5fm" />
       </node>
       <node concept="10P_77" id="YF8VyoigIi" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6P3AdoeYNku" role="13h7CS">
+      <property role="TrG5h" value="getFontStyle" />
+      <ref role="13i0hy" to="ywuz:6P3AdoeYlwX" resolve="getFontStyle" />
+      <node concept="3clFbS" id="6P3AdoeYNkx" role="3clF47">
+        <node concept="3clFbF" id="6P3AdoeYBju" role="3cqZAp">
+          <node concept="3cpWs3" id="6P3Adofe6UW" role="3clFbG">
+            <node concept="3cmrfG" id="6P3Adofe6UZ" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="6P3AdoeYIvq" role="3uHU7B">
+              <node concept="2OqwBi" id="6P3AdoeYCwJ" role="2Oq$k0">
+                <node concept="1XH99k" id="6P3AdoeYBjt" role="2Oq$k0">
+                  <ref role="1XH99l" to="tpc2:3Ftr4R6BF9k" resolve="_FontStyle_Enum" />
+                </node>
+                <node concept="2ViDtV" id="6P3Adofe5To" role="2OqNvi">
+                  <ref role="2ViDtZ" to="tpc2:3Ftr4R6BF9m" resolve="BOLD" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6P3AdoeYLgR" role="2OqNvi">
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getOrdinal()" resolve="getOrdinal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="6P3AdoeYNEc" role="3clF45" />
+      <node concept="3Tm1VV" id="6P3AdoeYNEd" role="1B3o_S" />
     </node>
   </node>
   <node concept="13h7C7" id="5Hxjapwgunf">

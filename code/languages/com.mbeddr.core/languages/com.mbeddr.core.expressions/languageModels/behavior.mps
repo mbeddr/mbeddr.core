@@ -37,6 +37,7 @@
     <import index="b3bi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.impl.cellActions(MPS.Editor/)" />
     <import index="iq8l" ref="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)" />
     <import index="rcia" ref="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
@@ -406,6 +407,9 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
+        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -446,6 +450,9 @@
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
         <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
+      </concept>
+      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
+        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -835,6 +842,34 @@
         </node>
       </node>
       <node concept="17QB3L" id="7tSdJy4_iWD" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6P3AdoeYlwX" role="13h7CS">
+      <property role="TrG5h" value="getFontStyle" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="6P3AdoeYlwY" role="1B3o_S" />
+      <node concept="3clFbS" id="6P3AdoeYlx0" role="3clF47">
+        <node concept="3clFbF" id="6P3AdoeYBju" role="3cqZAp">
+          <node concept="3cpWs3" id="6P3AdofeawF" role="3clFbG">
+            <node concept="3cmrfG" id="6P3AdofeawI" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="6P3AdoeYIvq" role="3uHU7B">
+              <node concept="2OqwBi" id="6P3AdoeYCwJ" role="2Oq$k0">
+                <node concept="1XH99k" id="6P3AdoeYBjt" role="2Oq$k0">
+                  <ref role="1XH99l" to="tpc2:3Ftr4R6BF9k" resolve="_FontStyle_Enum" />
+                </node>
+                <node concept="2ViDtV" id="6P3AdoeYD0u" role="2OqNvi">
+                  <ref role="2ViDtZ" to="tpc2:3Ftr4R6BF9p" resolve="PLAIN" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6P3AdoeYLgR" role="2OqNvi">
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getOrdinal()" resolve="getOrdinal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="6P3AdoeYHO4" role="3clF45" />
     </node>
     <node concept="13hLZK" id="7FQByU3C_3Y" role="13h7CW">
       <node concept="3clFbS" id="7FQByU3C_3Z" role="2VODD2" />

@@ -103,6 +103,7 @@
       </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
+        <child id="1220975211821" name="query" index="17MNgL" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
@@ -124,6 +125,7 @@
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="1220974635399" name="jetbrains.mps.lang.editor.structure.QueryFunction_FontStyle" flags="in" index="17KAyr" />
       <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
@@ -745,7 +747,21 @@
                 </node>
               </node>
             </node>
-            <node concept="Vb9p2" id="5fhdISdP0Zl" role="3F10Kt" />
+            <node concept="Vb9p2" id="5fhdISdP0Zl" role="3F10Kt">
+              <property role="Vbekb" value="hL7GYu6/QUERY" />
+              <node concept="17KAyr" id="6P3AdoeYjxL" role="17MNgL">
+                <node concept="3clFbS" id="6P3AdoeYjxM" role="2VODD2">
+                  <node concept="3clFbF" id="6P3AdoeYjZT" role="3cqZAp">
+                    <node concept="2OqwBi" id="6P3AdoeYkqq" role="3clFbG">
+                      <node concept="pncrf" id="6P3AdoeYjZS" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="6P3AdoeYFon" role="2OqNvi">
+                        <ref role="37wK5l" to="ywuz:6P3AdoeYlwX" resolve="getFontStyle" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3F0ifn" id="3_qrK00jd_d" role="3EZMnx">
