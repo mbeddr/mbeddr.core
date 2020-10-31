@@ -3115,6 +3115,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6P3AdofgJTk" role="3bR37C">
+          <node concept="3bR9La" id="6P3AdofgJTl" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6vuuYkaSA$x" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5945,6 +5950,11 @@
         <node concept="1SiIV0" id="6TPUpo_5peE" role="3bR37C">
           <node concept="3bR9La" id="6TPUpo_5peF" role="1SiIV1">
             <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6P3AdofgJZr" role="3bR37C">
+          <node concept="3bR9La" id="6P3AdofgJZs" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
       </node>
