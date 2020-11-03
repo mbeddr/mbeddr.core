@@ -9860,6 +9860,40 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="6xgYZv8qBqM" role="13h7CS">
+      <property role="TrG5h" value="getPrintfFunctionExtraArgs" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="6xgYZv8qBqN" role="1B3o_S" />
+      <node concept="_YKpA" id="6xgYZv8qBHE" role="3clF45">
+        <node concept="17QB3L" id="6xgYZv8qBHS" role="_ZDj9" />
+      </node>
+      <node concept="3clFbS" id="6xgYZv8qBqP" role="3clF47">
+        <node concept="3clFbF" id="6xgYZv8qBI6" role="3cqZAp">
+          <node concept="2ShNRf" id="6xgYZv8qBI4" role="3clFbG">
+            <node concept="Tc6Ow" id="6xgYZv8qCQR" role="2ShVmc">
+              <node concept="17QB3L" id="6xgYZv8qDao" role="HW$YZ" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6xgYZv8qDaS" role="13h7CS">
+      <property role="TrG5h" value="getPrintfFunctionExtraArgDeclarations" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="6xgYZv8qDaT" role="1B3o_S" />
+      <node concept="_YKpA" id="6xgYZv8qDaU" role="3clF45">
+        <node concept="17QB3L" id="6xgYZv8qDaV" role="_ZDj9" />
+      </node>
+      <node concept="3clFbS" id="6xgYZv8qDaW" role="3clF47">
+        <node concept="3clFbF" id="6xgYZv8qDaX" role="3cqZAp">
+          <node concept="2ShNRf" id="6xgYZv8qDaY" role="3clFbG">
+            <node concept="Tc6Ow" id="6xgYZv8qDaZ" role="2ShVmc">
+              <node concept="17QB3L" id="6xgYZv8qDb0" role="HW$YZ" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="4zXqh6WD7Fw" role="13h7CW">
       <node concept="3clFbS" id="4zXqh6WD7Fx" role="2VODD2" />
     </node>

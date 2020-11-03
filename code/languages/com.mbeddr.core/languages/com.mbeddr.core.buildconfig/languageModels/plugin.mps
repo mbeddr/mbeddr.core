@@ -25,6 +25,9 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="rcia" ref="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)" />
+    <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
+    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
+    <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -343,6 +346,9 @@
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -1203,7 +1209,7 @@
                               <node concept="2OqwBi" id="4zXqh6VIjEj" role="2Oq$k0">
                                 <node concept="2OqwBi" id="4zXqh6VIjEk" role="2Oq$k0">
                                   <node concept="2OqwBi" id="4zXqh6VIjEl" role="2Oq$k0">
-                                    <node concept="37vLTw" id="4zXqh6VIjEm" role="2Oq$k0">
+                                    <node concept="37vLTw" id="6xgYZv9zO0t" role="2Oq$k0">
                                       <ref role="3cqZAo" node="4zXqh6VIjv$" resolve="model" />
                                     </node>
                                     <node concept="2RRcyG" id="4zXqh6VIjEn" role="2OqNvi">
@@ -1343,6 +1349,66 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="4zXqh6WD6$s" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="6xgYZv8q$g_" role="jymVt" />
+                <node concept="3clFb_" id="6xgYZv8qA1$" role="jymVt">
+                  <property role="TrG5h" value="getPrintfFunctionExtraArgs" />
+                  <node concept="37vLTG" id="6xgYZv8qA1_" role="3clF46">
+                    <property role="TrG5h" value="model" />
+                    <node concept="H_c77" id="6xgYZv8qA1A" role="1tU5fm" />
+                  </node>
+                  <node concept="3Tm1VV" id="6xgYZv8qA1C" role="1B3o_S" />
+                  <node concept="_YKpA" id="6xgYZv8qA1D" role="3clF45">
+                    <node concept="17QB3L" id="6xgYZv8qA1E" role="_ZDj9" />
+                  </node>
+                  <node concept="3clFbS" id="6xgYZv8qA1G" role="3clF47">
+                    <node concept="3clFbF" id="6xgYZv8qAJ1" role="3cqZAp">
+                      <node concept="2OqwBi" id="6xgYZv8qAJ3" role="3clFbG">
+                        <node concept="1rXfSq" id="6xgYZv8qAJ4" role="2Oq$k0">
+                          <ref role="37wK5l" node="4zXqh6VIjoA" resolve="getPrintfReportingStrategy" />
+                          <node concept="37vLTw" id="6xgYZv8qAJ5" role="37wK5m">
+                            <ref role="3cqZAo" node="6xgYZv8qA1_" resolve="model" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="6xgYZv8qDg$" role="2OqNvi">
+                          <ref role="37wK5l" to="yi43:6xgYZv8qBqM" resolve="getPrintfFunctionExtraArgs" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="6xgYZv8qA1H" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="6xgYZv8Ioo_" role="jymVt" />
+                <node concept="3clFb_" id="6xgYZv8qA1I" role="jymVt">
+                  <property role="TrG5h" value="getPrintfFunctionExtraArgDeclarations" />
+                  <node concept="37vLTG" id="6xgYZv8qA1J" role="3clF46">
+                    <property role="TrG5h" value="model" />
+                    <node concept="H_c77" id="6xgYZv8qA1K" role="1tU5fm" />
+                  </node>
+                  <node concept="3Tm1VV" id="6xgYZv8qA1M" role="1B3o_S" />
+                  <node concept="_YKpA" id="6xgYZv8qA1N" role="3clF45">
+                    <node concept="17QB3L" id="6xgYZv8qA1O" role="_ZDj9" />
+                  </node>
+                  <node concept="3clFbS" id="6xgYZv8qA1Q" role="3clF47">
+                    <node concept="3clFbF" id="6xgYZv8qAZ0" role="3cqZAp">
+                      <node concept="2OqwBi" id="6xgYZv8qAZ2" role="3clFbG">
+                        <node concept="1rXfSq" id="6xgYZv8qAZ3" role="2Oq$k0">
+                          <ref role="37wK5l" node="4zXqh6VIjoA" resolve="getPrintfReportingStrategy" />
+                          <node concept="37vLTw" id="6xgYZv8qAZ4" role="37wK5m">
+                            <ref role="3cqZAo" node="6xgYZv8qA1J" resolve="model" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="6xgYZv8qDnc" role="2OqNvi">
+                          <ref role="37wK5l" to="yi43:6xgYZv8qDaS" resolve="getPrintfFunctionExtraArgDeclarations" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="6xgYZv8qA1R" role="2AJF6D">
                     <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>

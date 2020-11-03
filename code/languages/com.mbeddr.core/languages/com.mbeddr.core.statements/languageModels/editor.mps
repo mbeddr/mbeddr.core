@@ -2572,10 +2572,15 @@
       </node>
       <node concept="3F0A7n" id="2GzcfKRG0TE" role="3EZMnx">
         <ref role="1NtTu8" to="c4fa:2GzcfKRG0p3" resolve="calledFunctionName" />
+        <ref role="1k5W1q" to="r4b4:1m7Vx97SsbI" resolve="FunctionCall" />
       </node>
       <node concept="3F0ifn" id="2GzcfKRG0U2" role="3EZMnx">
         <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="r4b4:1m7Vx98shd9" resolve="FunctionCallParens" />
         <node concept="11LMrY" id="2GzcfKRG0Wl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="6xgYZv97rsk" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -2583,10 +2588,12 @@
         <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="c4fa:2GzcfKRG0oR" resolve="arguments" />
         <node concept="l2Vlx" id="2GzcfKRG0A$" role="2czzBx" />
+        <node concept="3F0ifn" id="6xgYZv99DCE" role="2czzBI" />
       </node>
       <node concept="l2Vlx" id="2GzcfKRG0A_" role="2iSdaV" />
       <node concept="3F0ifn" id="2GzcfKRG0Uv" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="r4b4:1m7Vx98shd9" resolve="FunctionCallParens" />
         <node concept="11L4FC" id="2GzcfKRG0XZ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

@@ -3083,11 +3083,6 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7i5Cc6LAUHL" role="3bR37C">
-          <node concept="3bR9La" id="7i5Cc6LAUHM" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7VbYB1xIuSX" role="3bR37C">
           <node concept="3bR9La" id="7VbYB1xIuSY" role="1SiIV1">
             <ref role="3bR37D" to="90a9:2NyZxKpUE9j" resolve="com.mbeddr.mpsutil.blutil" />
@@ -3118,6 +3113,11 @@
         <node concept="1SiIV0" id="6P3AdofgJTk" role="3bR37C">
           <node concept="3bR9La" id="6P3AdofgJTl" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xgYZv9wYD_" role="3bR37C">
+          <node concept="3bR9La" id="6xgYZv9wYDA" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
       </node>
