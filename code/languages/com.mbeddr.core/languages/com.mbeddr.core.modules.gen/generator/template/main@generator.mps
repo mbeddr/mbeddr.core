@@ -5767,8 +5767,8 @@
                       <node concept="37vLTw" id="4bSv2xZfH_A" role="2Oq$k0">
                         <ref role="3cqZAo" node="4bSv2xZfHym" resolve="structDecl" />
                       </node>
-                      <node concept="HtX7F" id="4bSv2xZfIRi" role="2OqNvi">
-                        <node concept="37vLTw" id="4bSv2xZgpKa" role="HtX7I">
+                      <node concept="HtI8k" id="6xgYZvaqKHa" role="2OqNvi">
+                        <node concept="37vLTw" id="6xgYZvaqLcC" role="HtI8F">
                           <ref role="3cqZAo" node="4bSv2xZgpJQ" resolve="typeDefForStruct" />
                         </node>
                       </node>
@@ -6028,8 +6028,8 @@
                       <node concept="37vLTw" id="4bSv2xZfPQ7" role="2Oq$k0">
                         <ref role="3cqZAo" node="4bSv2xZfPQo" resolve="unionDecl" />
                       </node>
-                      <node concept="HtX7F" id="4bSv2xZfPQ8" role="2OqNvi">
-                        <node concept="37vLTw" id="4bSv2xZgz80" role="HtX7I">
+                      <node concept="HtI8k" id="6xgYZvaqMcy" role="2OqNvi">
+                        <node concept="37vLTw" id="6xgYZvaqN2A" role="HtI8F">
                           <ref role="3cqZAo" node="4bSv2xZgz7G" resolve="typeDefForUnion" />
                         </node>
                       </node>
