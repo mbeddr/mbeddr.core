@@ -58,6 +58,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -7197,41 +7198,74 @@
                           <node concept="3$u5V9" id="20BlhoiqgUz" role="2OqNvi">
                             <node concept="1bVj0M" id="20BlhoiqgU$" role="23t8la">
                               <node concept="3clFbS" id="20BlhoiqgU_" role="1bW5cS">
-                                <node concept="3clFbF" id="20BlhoiqgUA" role="3cqZAp">
-                                  <node concept="3cpWs3" id="5itS2OImm4U" role="3clFbG">
-                                    <node concept="2OqwBi" id="5itS2OImr5G" role="3uHU7w">
-                                      <node concept="2OqwBi" id="5itS2OImqgP" role="2Oq$k0">
-                                        <node concept="2OqwBi" id="5itS2OImmIA" role="2Oq$k0">
-                                          <node concept="30H73N" id="5itS2OImmkP" role="2Oq$k0" />
-                                          <node concept="2Xjw5R" id="5itS2OImpg3" role="2OqNvi">
-                                            <node concept="1xMEDy" id="5itS2OImpg5" role="1xVPHs">
-                                              <node concept="chp4Y" id="5itS2OImpYw" role="ri$Ld">
+                                <node concept="3cpWs8" id="6xgYZv9GwIs" role="3cqZAp">
+                                  <node concept="3cpWsn" id="6xgYZv9GwIt" role="3cpWs9">
+                                    <property role="TrG5h" value="libDir" />
+                                    <node concept="17QB3L" id="6xgYZv9GwsX" role="1tU5fm" />
+                                    <node concept="2OqwBi" id="6xgYZv9GwIu" role="33vP2m">
+                                      <node concept="37vLTw" id="6xgYZv9GwIv" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="20BlhoiqgUE" resolve="it" />
+                                      </node>
+                                      <node concept="2qgKlT" id="6xgYZv9GwIw" role="2OqNvi">
+                                        <ref role="37wK5l" to="ahli:1mfTBng0dAT" resolve="libDir" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3cpWs8" id="6xgYZv9GwWr" role="3cqZAp">
+                                  <node concept="3cpWsn" id="6xgYZv9GwWs" role="3cpWs9">
+                                    <property role="TrG5h" value="libBuildDir" />
+                                    <node concept="17QB3L" id="6xgYZv9GwV5" role="1tU5fm" />
+                                    <node concept="2OqwBi" id="6xgYZv9GwWt" role="33vP2m">
+                                      <node concept="2OqwBi" id="6xgYZv9GwWu" role="2Oq$k0">
+                                        <node concept="2OqwBi" id="6xgYZv9GwWv" role="2Oq$k0">
+                                          <node concept="30H73N" id="6xgYZv9GwWw" role="2Oq$k0" />
+                                          <node concept="2Xjw5R" id="6xgYZv9GwWx" role="2OqNvi">
+                                            <node concept="1xMEDy" id="6xgYZv9GwWy" role="1xVPHs">
+                                              <node concept="chp4Y" id="6xgYZv9GwWz" role="ri$Ld">
                                                 <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="3TrEf2" id="5itS2OImqHD" role="2OqNvi">
+                                        <node concept="3TrEf2" id="6xgYZv9GwW$" role="2OqNvi">
                                           <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                                         </node>
                                       </node>
-                                      <node concept="2qgKlT" id="5itS2OImvug" role="2OqNvi">
+                                      <node concept="2qgKlT" id="6xgYZv9GwW_" role="2OqNvi">
                                         <ref role="37wK5l" to="ahli:5itS2OHMrq1" resolve="getLibBuildDir" />
                                       </node>
                                     </node>
-                                    <node concept="3cpWs3" id="5itS2OImlnA" role="3uHU7B">
-                                      <node concept="2OqwBi" id="20BlhoiqgUB" role="3uHU7B">
-                                        <node concept="37vLTw" id="20BlhoiqgUC" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="20BlhoiqgUE" resolve="it" />
+                                  </node>
+                                </node>
+                                <node concept="3clFbJ" id="6xgYZv9GwRH" role="3cqZAp">
+                                  <node concept="3clFbS" id="6xgYZv9GwRJ" role="3clFbx">
+                                    <node concept="3clFbF" id="20BlhoiqgUA" role="3cqZAp">
+                                      <node concept="d57v9" id="6xgYZv9Gyrl" role="3clFbG">
+                                        <node concept="37vLTw" id="6xgYZv9Gyrn" role="37vLTJ">
+                                          <ref role="3cqZAo" node="6xgYZv9GwIt" resolve="libDir" />
                                         </node>
-                                        <node concept="2qgKlT" id="20BlhoiqgUD" role="2OqNvi">
-                                          <ref role="37wK5l" to="ahli:1mfTBng0dAT" resolve="libDir" />
+                                        <node concept="3cpWs3" id="6xgYZv9Gyro" role="37vLTx">
+                                          <node concept="37vLTw" id="6xgYZv9Gyrp" role="3uHU7w">
+                                            <ref role="3cqZAo" node="6xgYZv9GwWs" resolve="libBuildDir" />
+                                          </node>
+                                          <node concept="Xl_RD" id="6xgYZv9Gyrs" role="3uHU7B">
+                                            <property role="Xl_RC" value="/" />
+                                          </node>
                                         </node>
-                                      </node>
-                                      <node concept="Xl_RD" id="5itS2OImlnG" role="3uHU7w">
-                                        <property role="Xl_RC" value="/" />
                                       </node>
                                     </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="6xgYZv9GxqI" role="3clFbw">
+                                    <node concept="37vLTw" id="6xgYZv9Gxhj" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="6xgYZv9GwWs" resolve="libBuildDir" />
+                                    </node>
+                                    <node concept="17RvpY" id="6xgYZv9GxQU" role="2OqNvi" />
+                                  </node>
+                                </node>
+                                <node concept="3clFbF" id="6xgYZv9Gycn" role="3cqZAp">
+                                  <node concept="37vLTw" id="6xgYZv9Gycl" role="3clFbG">
+                                    <ref role="3cqZAo" node="6xgYZv9GwIt" resolve="libDir" />
                                   </node>
                                 </node>
                               </node>
