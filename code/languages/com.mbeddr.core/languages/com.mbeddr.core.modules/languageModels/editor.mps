@@ -513,6 +513,7 @@
       <concept id="767145758118872828" name="jetbrains.mps.lang.actions.structure.NF_Node_ReplaceWithNewOperation" flags="nn" index="2DeJnW" />
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
       <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" stub="416014060004530854" index="2aMyGU">
         <property id="7122083600696909496" name="falseText" index="2aYyvO" />
         <property id="7122083600696906118" name="trueText" index="2aYyza" />
@@ -5343,6 +5344,12 @@
         <node concept="3F0A7n" id="5soFcYDGhXI" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="x27k:5soFcYDEU27" resolve="requiredStdHeader" />
+        </node>
+        <node concept="3F0ifn" id="4tQ03vHx6dz" role="3EZMnx">
+          <property role="3F0ifm" value="reexport:" />
+        </node>
+        <node concept="27S6Sx" id="23UZYO5euVB" role="3EZMnx">
+          <ref role="1NtTu8" to="x27k:19a6$uAA0vK" resolve="exported" />
         </node>
       </node>
     </node>
