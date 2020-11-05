@@ -5165,6 +5165,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="6xgYZvf7G8y" role="3bR37C">
+            <node concept="3bR9La" id="6xgYZvf7G8z" role="1SiIV1">
+              <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="3xxBtygh0L0" role="3bR37C">
           <node concept="3bR9La" id="3xxBtygh0L1" role="1SiIV1">

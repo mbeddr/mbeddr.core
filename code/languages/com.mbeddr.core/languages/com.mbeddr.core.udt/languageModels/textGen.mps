@@ -372,7 +372,7 @@
           <node concept="3clFbS" id="1exqRp8zwy" role="3clFbx">
             <node concept="lc7rE" id="1exqRp8zwz" role="3cqZAp">
               <node concept="la8eA" id="1exqRp8zw$" role="lcghm">
-                <property role="lacIc" value=" volatile " />
+                <property role="lacIc" value=" volatile" />
               </node>
             </node>
           </node>
@@ -387,7 +387,7 @@
           <node concept="3clFbS" id="1exqRp8zwD" role="3clFbx">
             <node concept="lc7rE" id="1exqRp8zwE" role="3cqZAp">
               <node concept="la8eA" id="1exqRp8zwF" role="lcghm">
-                <property role="lacIc" value=" const " />
+                <property role="lacIc" value=" const" />
               </node>
             </node>
           </node>

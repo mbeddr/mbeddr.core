@@ -2424,9 +2424,14 @@
                             <ref role="3cqZAo" node="slnbckElES" resolve="importsAnalyzer" />
                           </node>
                           <node concept="liA8E" id="slnbckEp_X" role="2OqNvi">
-                            <ref role="37wK5l" to="qd6m:slnbckDODd" resolve="getRelatedImports" />
-                            <node concept="2GrUjf" id="slnbckEqje" role="37wK5m">
-                              <ref role="2Gs0qQ" node="_Ibf584JhC" resolve="referencedContent" />
+                            <ref role="37wK5l" to="qd6m:6xgYZvdI_pr" resolve="getRelatedImports" />
+                            <node concept="2OqwBi" id="6xgYZvdIXLP" role="37wK5m">
+                              <node concept="2GrUjf" id="slnbckEqje" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="_Ibf584JhC" resolve="referencedContent" />
+                              </node>
+                              <node concept="2qgKlT" id="6xgYZvdIYES" role="2OqNvi">
+                                <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                              </node>
                             </node>
                           </node>
                         </node>
