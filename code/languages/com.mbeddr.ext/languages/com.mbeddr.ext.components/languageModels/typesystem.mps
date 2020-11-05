@@ -8490,13 +8490,18 @@
                   <ref role="3cqZAo" node="slnbckEMCT" resolve="importsAnalyzer" />
                 </node>
                 <node concept="liA8E" id="slnbckENgV" role="2OqNvi">
-                  <ref role="37wK5l" to="qd6m:slnbckDODd" resolve="getRelatedImports" />
-                  <node concept="2OqwBi" id="slnbckENPn" role="37wK5m">
-                    <node concept="1YBJjd" id="slnbckENPo" role="2Oq$k0">
-                      <ref role="1YBMHb" node="6qL8nDXpIw_" resolve="port" />
+                  <ref role="37wK5l" to="qd6m:6xgYZvdI_pr" resolve="getRelatedImports" />
+                  <node concept="2OqwBi" id="6xgYZvf8PHt" role="37wK5m">
+                    <node concept="2OqwBi" id="slnbckENPn" role="2Oq$k0">
+                      <node concept="1YBJjd" id="slnbckENPo" role="2Oq$k0">
+                        <ref role="1YBMHb" node="6qL8nDXpIw_" resolve="port" />
+                      </node>
+                      <node concept="3TrEf2" id="slnbckENPp" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" resolve="intf" />
+                      </node>
                     </node>
-                    <node concept="3TrEf2" id="slnbckENPp" role="2OqNvi">
-                      <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" resolve="intf" />
+                    <node concept="2qgKlT" id="6xgYZvf8R2G" role="2OqNvi">
+                      <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
                     </node>
                   </node>
                 </node>
@@ -10545,9 +10550,14 @@
                             <ref role="3cqZAo" node="slnbckElES" resolve="importsAnalyzer" />
                           </node>
                           <node concept="liA8E" id="slnbckEp_X" role="2OqNvi">
-                            <ref role="37wK5l" to="qd6m:slnbckDODd" resolve="getRelatedImports" />
-                            <node concept="2GrUjf" id="slnbckEqje" role="37wK5m">
-                              <ref role="2Gs0qQ" node="3AX8Th8g55y" resolve="referencedContent" />
+                            <ref role="37wK5l" to="qd6m:6xgYZvdI_pr" resolve="getRelatedImports" />
+                            <node concept="2OqwBi" id="6xgYZvf8A5U" role="37wK5m">
+                              <node concept="2GrUjf" id="slnbckEqje" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="3AX8Th8g55y" resolve="referencedContent" />
+                              </node>
+                              <node concept="2qgKlT" id="6xgYZvf8ALZ" role="2OqNvi">
+                                <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                              </node>
                             </node>
                           </node>
                         </node>
