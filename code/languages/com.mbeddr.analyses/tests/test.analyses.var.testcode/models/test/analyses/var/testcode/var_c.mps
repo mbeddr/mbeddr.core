@@ -12,9 +12,7 @@
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
-  <imports>
-    <import index="gyxa" ref="r:358c4d91-5ac8-448a-bb83-b17dacd29ba8(com.mbeddr.analyses.__spreferences.PlatformTemplates)" />
-  </imports>
+  <imports />
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">

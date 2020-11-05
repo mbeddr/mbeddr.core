@@ -12,9 +12,6 @@
     <facet type="tests" />
   </facets>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">~_PreferencesModule#com.mbeddr.analyses.__spreferences.PlatformTemplates(com.mbeddr.analyses.__spreferences.PlatformTemplates)</dependency>
-  </dependencies>
   <languageVersions>
     <language slang="l:ab679a62-68ab-4874-8f77-b33548ab054f:com.mbeddr.analyses.fm.base" version="0" />
     <language slang="l:e865cad2-7cc8-437a-951a-665bcbcb8b1a:com.mbeddr.cc.requirements" version="0" />
@@ -75,7 +72,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-    <module reference="~_PreferencesModule#com.mbeddr.analyses.__spreferences.PlatformTemplates(com.mbeddr.analyses.__spreferences.PlatformTemplates)" version="0" />
     <module reference="d280cd6b-3d77-4bf2-b70d-fe049ab4c77e(com.mbeddr.analyses.sat4j)" version="0" />
     <module reference="c34744c1-dc64-4da4-9850-885dee7d4a0c(com.mbeddr.analyses.sat4j.fm)" version="0" />
     <module reference="a71037fe-a093-42d0-8f70-3a899fe590db(com.mbeddr.analyses.sat4j.fm.pluginSolution)" version="0" />
