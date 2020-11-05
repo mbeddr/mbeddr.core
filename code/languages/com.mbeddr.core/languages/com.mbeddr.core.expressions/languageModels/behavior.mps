@@ -3702,7 +3702,7 @@
                   <ref role="3cqZAo" node="7jSUHHviDCe" resolve="res" />
                 </node>
                 <node concept="Xl_RD" id="7jSUHHviDCr" role="37vLTx">
-                  <property role="Xl_RC" value="const " />
+                  <property role="Xl_RC" value="const" />
                 </node>
               </node>
             </node>
@@ -3722,7 +3722,7 @@
                   <ref role="3cqZAo" node="7jSUHHviDCe" resolve="res" />
                 </node>
                 <node concept="Xl_RD" id="7jSUHHviDC$" role="37vLTx">
-                  <property role="Xl_RC" value="volatile " />
+                  <property role="Xl_RC" value="volatile" />
                 </node>
               </node>
             </node>
