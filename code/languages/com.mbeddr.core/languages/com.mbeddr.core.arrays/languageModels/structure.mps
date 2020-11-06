@@ -236,6 +236,9 @@
     <node concept="PrWs8" id="4VxFbWczlba" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
     </node>
+    <node concept="PrWs8" id="1R8nNt36dnT" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2Qo$Q2I7Rcd">
     <property role="TrG5h" value="ISelfTypingInArrayAccessExpression" />
