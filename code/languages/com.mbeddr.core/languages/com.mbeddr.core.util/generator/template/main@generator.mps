@@ -16265,7 +16265,7 @@
             <property role="TrG5h" value="empty_1425308364817_8" />
           </node>
           <node concept="N3Fnx" id="5usoWIJ2LHT" role="N3F5h">
-            <property role="TrG5h" value="aFunctiomn" />
+            <property role="TrG5h" value="aFunction" />
             <property role="3owap8" value="false" />
             <node concept="3XIRFW" id="5usoWIJ2LHU" role="3XIRFX">
               <node concept="3XIRFW" id="5usoWIJ2LHV" role="3XIRFZ">
@@ -16801,10 +16801,6 @@
               </node>
             </node>
             <node concept="19Rifw" id="5usoWIJ2LQr" role="2C2TGm" />
-            <node concept="19RgSI" id="5usoWIJ2LQs" role="1UOdpc">
-              <property role="TrG5h" value="msg" />
-              <node concept="Pu267" id="5usoWIJ2LQt" role="2C2TGm" />
-            </node>
           </node>
         </node>
       </node>
@@ -16840,7 +16836,7 @@
             </node>
           </node>
           <node concept="N3Fnx" id="5usoWIJ2LQz" role="N3F5h">
-            <property role="TrG5h" value="dummy" />
+            <property role="TrG5h" value="aFunction" />
             <node concept="3XIRFW" id="5usoWIJ2LQ$" role="3XIRFX">
               <node concept="3XIRFW" id="5usoWIJ2LQ_" role="3XIRFZ">
                 <property role="2ccuoM" value="true" />
@@ -17945,9 +17941,9 @@
       <ref role="30HIoZ" to="k146:1EZSCJhF1F6" resolve="LogStatement" />
       <node concept="1Koe21" id="1EZSCJhUG0g" role="1lVwrX">
         <node concept="N3F5e" id="1EZSCJhUG0m" role="1Koe22">
-          <property role="TrG5h" value="dummy" />
+          <property role="TrG5h" value="Dummy" />
           <node concept="N3Fnx" id="1EZSCJhUG0K" role="N3F5h">
-            <property role="TrG5h" value="foo" />
+            <property role="TrG5h" value="aFunction" />
             <property role="2OOxQR" value="false" />
             <node concept="3XIRFW" id="1EZSCJhUG0M" role="3XIRFX">
               <node concept="1_9egQ" id="1EZSCJhUG1k" role="3XIRFZ">
@@ -18339,9 +18335,9 @@
     <property role="TrG5h" value="addContext" />
     <ref role="3gUMe" to="k146:1duwXQeBgFs" resolve="ContextExpressionList" />
     <node concept="N3F5e" id="5aGJjvFBr78" role="13RCb5">
-      <property role="TrG5h" value="dummy" />
+      <property role="TrG5h" value="Dummy" />
       <node concept="N3Fnx" id="5aGJjvFBr7F" role="N3F5h">
-        <property role="TrG5h" value="dummy" />
+        <property role="TrG5h" value="aFunction" />
         <property role="2OOxQR" value="false" />
         <node concept="3XIRFW" id="5aGJjvFBr7H" role="3XIRFX">
           <node concept="1_9egQ" id="5aGJjvFBzse" role="3XIRFZ">
