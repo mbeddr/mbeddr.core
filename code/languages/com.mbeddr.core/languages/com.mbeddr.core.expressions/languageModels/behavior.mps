@@ -24008,9 +24008,7 @@
           </node>
         </node>
         <node concept="3clFbF" id="4zXqh6WD5GB" role="3cqZAp">
-          <node concept="Xl_RD" id="4zXqh6WD5IO" role="3clFbG">
-            <property role="Xl_RC" value="&lt;stdio.h&gt;" />
-          </node>
+          <node concept="10Nm6u" id="7kVjPTHN5Tz" role="3clFbG" />
         </node>
       </node>
     </node>
