@@ -2585,8 +2585,8 @@
   <node concept="24kQdi" id="3R$6B6bKEUe">
     <property role="3GE5qa" value="reporting.config" />
     <ref role="1XX52x" to="k146:3R$6B6bKEUc" resolve="PrintfReportingStrategy" />
-    <node concept="3F0ifn" id="3R$6B6bKEUg" role="2wV5jI">
-      <property role="3F0ifm" value="printf" />
+    <node concept="PMmxH" id="7kVjPTHJznr" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="3R$6B6bKEUj">
