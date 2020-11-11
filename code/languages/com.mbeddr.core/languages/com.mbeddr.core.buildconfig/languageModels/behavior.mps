@@ -11421,5 +11421,116 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="6JuSvlsZeRd">
+    <property role="3GE5qa" value="pickers" />
+    <ref role="13h7C2" to="51wr:6JuSvlsZ4zI" resolve="MakeVariableFilePicker" />
+    <node concept="13i0hz" id="6JuSvlsZeRo" role="13h7CS">
+      <property role="TrG5h" value="getCompanionFileOrFolderPicker" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="48kf:3xqp6yeWGLu" resolve="getCompanionFileOrFolderPicker" />
+      <node concept="3Tm1VV" id="6JuSvlsZeRp" role="1B3o_S" />
+      <node concept="3clFbS" id="6JuSvlsZeRq" role="3clF47">
+        <node concept="3cpWs8" id="6JuSvlsZeRr" role="3cqZAp">
+          <node concept="3cpWsn" id="6JuSvlsZeRs" role="3cpWs9">
+            <property role="TrG5h" value="picker" />
+            <node concept="3Tqbb2" id="6JuSvlsZeRt" role="1tU5fm">
+              <ref role="ehGHo" to="51wr:6JuSvlsZ4zI" resolve="MakeVariableFilePicker" />
+            </node>
+            <node concept="2ShNRf" id="6JuSvlsZeRu" role="33vP2m">
+              <node concept="3zrR0B" id="6JuSvlsZeRv" role="2ShVmc">
+                <node concept="3Tqbb2" id="6JuSvlsZeRw" role="3zrR0E">
+                  <ref role="ehGHo" to="51wr:6JuSvlsZ4zI" resolve="MakeVariableFilePicker" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6JuSvlsZeRx" role="3cqZAp">
+          <node concept="37vLTI" id="6JuSvlsZeRy" role="3clFbG">
+            <node concept="2OqwBi" id="6JuSvlsZeRz" role="37vLTx">
+              <node concept="13iPFW" id="6JuSvlsZeR$" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6JuSvlsZeR_" role="2OqNvi">
+                <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6JuSvlsZeRA" role="37vLTJ">
+              <node concept="37vLTw" id="6JuSvlsZeRB" role="2Oq$k0">
+                <ref role="3cqZAo" node="6JuSvlsZeRs" resolve="picker" />
+              </node>
+              <node concept="3TrcHB" id="6JuSvlsZeRC" role="2OqNvi">
+                <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6JuSvlsZeRD" role="3cqZAp">
+          <node concept="37vLTI" id="6JuSvlsZeRE" role="3clFbG">
+            <node concept="2OqwBi" id="6JuSvlsZeRF" role="37vLTx">
+              <node concept="13iPFW" id="6JuSvlsZeRG" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6JuSvlsZeRH" role="2OqNvi">
+                <ref role="3TsBF5" to="51wr:6JuSvlsZ4zJ" resolve="variable" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6JuSvlsZeRI" role="37vLTJ">
+              <node concept="37vLTw" id="6JuSvlsZeRJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="6JuSvlsZeRs" resolve="picker" />
+              </node>
+              <node concept="3TrcHB" id="6JuSvlsZeRK" role="2OqNvi">
+                <ref role="3TsBF5" to="51wr:35Yirdv2Bka" resolve="variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6JuSvlsZeRL" role="3cqZAp">
+          <node concept="37vLTw" id="6JuSvlsZeRM" role="3cqZAk">
+            <ref role="3cqZAo" node="6JuSvlsZeRs" resolve="picker" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6JuSvlsZeRN" role="3clF45">
+        <ref role="ehGHo" to="68mc:5lKnBeAtNw8" resolve="AbstractPicker" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6JuSvlsZeRO" role="13h7CS">
+      <property role="TrG5h" value="getVariableName" />
+      <ref role="13i0hy" node="6xoAPBjOH1K" resolve="getVariableName" />
+      <node concept="3Tm1VV" id="6JuSvlsZeRP" role="1B3o_S" />
+      <node concept="3clFbS" id="6JuSvlsZeRQ" role="3clF47">
+        <node concept="3clFbF" id="6JuSvlsZeRR" role="3cqZAp">
+          <node concept="2OqwBi" id="6JuSvlsZeRS" role="3clFbG">
+            <node concept="13iPFW" id="6JuSvlsZeRT" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6JuSvlsZeRU" role="2OqNvi">
+              <ref role="3TsBF5" to="51wr:6JuSvlsZ4zJ" resolve="variable" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6JuSvlsZeRV" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6JuSvlsZeRW" role="13h7CS">
+      <property role="TrG5h" value="getDefaultValue" />
+      <ref role="13i0hy" node="6xoAPBjOH2T" resolve="getDefaultValue" />
+      <node concept="3Tm1VV" id="6JuSvlsZeRX" role="1B3o_S" />
+      <node concept="3clFbS" id="6JuSvlsZeRY" role="3clF47">
+        <node concept="3clFbF" id="6JuSvlsZeRZ" role="3cqZAp">
+          <node concept="2OqwBi" id="6JuSvlsZeS0" role="3clFbG">
+            <node concept="13iPFW" id="6JuSvlsZeS1" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6JuSvlsZeS2" role="2OqNvi">
+              <ref role="3TsBF5" to="51wr:6JuSvlsZ4zK" resolve="defaultPrefix" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6JuSvlsZeS3" role="3clF45" />
+      <node concept="37vLTG" id="6JuSvlsZeS4" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="6JuSvlsZeS5" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="6JuSvlsZeRe" role="13h7CW">
+      <node concept="3clFbS" id="6JuSvlsZeRf" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
