@@ -5659,7 +5659,7 @@
             </node>
             <node concept="3clFbF" id="94IdDK$IWz" role="3cqZAp">
               <node concept="BsUDl" id="94IdDK$IWy" role="3clFbG">
-                <ref role="37wK5l" node="94IdDK$n_l" resolve="addGenericDependecy" />
+                <ref role="37wK5l" node="94IdDK$n_l" resolve="addGenericChunkDependency" />
                 <node concept="37vLTw" id="94IdDK$MuB" role="37wK5m">
                   <ref role="3cqZAo" node="94IdDK$udx" resolve="dep" />
                 </node>
@@ -5721,7 +5721,7 @@
     <node concept="13i0hz" id="94IdDK$n_l" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="addGenericDependecy" />
+      <property role="TrG5h" value="addGenericChunkDependency" />
       <node concept="3Tm1VV" id="94IdDK$n_m" role="1B3o_S" />
       <node concept="3cqZAl" id="94IdDK$n_n" role="3clF45" />
       <node concept="3clFbS" id="94IdDK$n_o" role="3clF47" />
@@ -7145,8 +7145,8 @@
     <node concept="13i0hz" id="94IdDK$NrY" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="addGenericDependecy" />
-      <ref role="13i0hy" node="94IdDK$n_l" resolve="addGenericDependecy" />
+      <property role="TrG5h" value="addGenericChunkDependency" />
+      <ref role="13i0hy" node="94IdDK$n_l" resolve="addGenericChunkDependency" />
       <node concept="3Tm1VV" id="94IdDK$NrZ" role="1B3o_S" />
       <node concept="3clFbS" id="94IdDK$Ns4" role="3clF47" />
       <node concept="37vLTG" id="94IdDK$Ns5" role="3clF46">

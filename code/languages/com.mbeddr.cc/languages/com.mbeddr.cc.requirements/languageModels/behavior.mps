@@ -1092,8 +1092,8 @@
     <node concept="13i0hz" id="94IdDK$Pap" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="addGenericDependecy" />
-      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericDependecy" />
+      <property role="TrG5h" value="addGenericChunkDependency" />
+      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericChunkDependency" />
       <node concept="3Tm1VV" id="94IdDK$Paq" role="1B3o_S" />
       <node concept="3clFbS" id="94IdDK$Pav" role="3clF47">
         <node concept="3clFbF" id="94IdDK$PB0" role="3cqZAp">
