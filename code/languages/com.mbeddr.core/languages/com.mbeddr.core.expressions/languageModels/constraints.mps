@@ -1139,7 +1139,7 @@
                   <node concept="liA8E" id="2CeBpnxkq7o" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="2CeBpnxkq7p" role="37wK5m">
-                      <property role="Xl_RC" value="\\\\([A-Fa-f0-9]){2}" />
+                      <property role="Xl_RC" value="\\\\x([A-Fa-f0-9]){2}" />
                     </node>
                   </node>
                 </node>
@@ -1157,7 +1157,7 @@
                   <node concept="liA8E" id="2CeBpnxkq7w" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="2CeBpnxkq7x" role="37wK5m">
-                      <property role="Xl_RC" value="\\\\([A-Fa-f0-9]){4}" />
+                      <property role="Xl_RC" value="\\\\x([A-Fa-f0-9]){4}" />
                     </node>
                   </node>
                 </node>
