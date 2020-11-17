@@ -253,7 +253,7 @@
       <node concept="3EZMnI" id="1x_Jrt9Ngzq" role="3EZMnx">
         <node concept="2iRfu4" id="1x_Jrt9Ngzr" role="2iSdaV" />
         <node concept="3F0ifn" id="1x_Jrt9Ngzp" role="3EZMnx">
-          <property role="3F0ifm" value="module C " />
+          <property role="3F0ifm" value="module C" />
         </node>
         <node concept="3F0A7n" id="1x_Jrt9Ngzt" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -338,10 +338,16 @@
       <node concept="3EZMnI" id="1x_Jrt9NhZ8" role="3EZMnx">
         <node concept="2iRfu4" id="1x_Jrt9NhZ9" role="2iSdaV" />
         <node concept="3F0ifn" id="1x_Jrt9NhZa" role="3EZMnx">
-          <property role="3F0ifm" value="module h " />
+          <property role="3F0ifm" value="module h" />
         </node>
         <node concept="3F0A7n" id="1x_Jrt9NhZb" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="2qdxtjqQghY" role="3EZMnx">
+          <property role="3F0ifm" value="can mangle names:" />
+        </node>
+        <node concept="27S6Sx" id="2qdxtjqQghZ" role="3EZMnx">
+          <ref role="1NtTu8" to="d0vh:2qdxtjqNyZo" resolve="canMangleNames" />
         </node>
       </node>
       <node concept="3F0ifn" id="6uZAbUKfobe" role="3EZMnx">

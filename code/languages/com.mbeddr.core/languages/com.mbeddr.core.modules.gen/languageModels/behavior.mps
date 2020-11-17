@@ -554,8 +554,11 @@
       <node concept="3Tm1VV" id="4J$Pz4XGFm7" role="1B3o_S" />
       <node concept="3clFbS" id="4J$Pz4XGFm8" role="3clF47">
         <node concept="3clFbF" id="4J$Pz4XGFnd" role="3cqZAp">
-          <node concept="3clFbT" id="4J$Pz4XGFne" role="3clFbG">
-            <property role="3clFbU" value="true" />
+          <node concept="2OqwBi" id="2qdxtjqN_$l" role="3clFbG">
+            <node concept="13iPFW" id="2qdxtjqN_es" role="2Oq$k0" />
+            <node concept="3TrcHB" id="2qdxtjqNAf$" role="2OqNvi">
+              <ref role="3TsBF5" to="d0vh:2qdxtjqNyZo" resolve="canMangleNames" />
+            </node>
           </node>
         </node>
       </node>

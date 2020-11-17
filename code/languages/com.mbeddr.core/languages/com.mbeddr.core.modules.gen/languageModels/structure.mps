@@ -150,6 +150,11 @@
       <property role="IQ2ns" value="1758019824472688223" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
+    <node concept="1TJgyi" id="2qdxtjqNyZo" role="1TKVEl">
+      <property role="IQ2nx" value="2778023694407970776" />
+      <property role="TrG5h" value="canMangleNames" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="19a6$uAAsGA">
     <property role="TrG5h" value="GenImplModuleImport" />
