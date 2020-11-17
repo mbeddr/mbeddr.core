@@ -343,12 +343,6 @@
         <node concept="3F0A7n" id="1x_Jrt9NhZb" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
-        <node concept="3F0ifn" id="2qdxtjqQghY" role="3EZMnx">
-          <property role="3F0ifm" value="can mangle names:" />
-        </node>
-        <node concept="27S6Sx" id="2qdxtjqQghZ" role="3EZMnx">
-          <ref role="1NtTu8" to="d0vh:2qdxtjqNyZo" resolve="canMangleNames" />
-        </node>
       </node>
       <node concept="3F0ifn" id="6uZAbUKfobe" role="3EZMnx">
         <property role="3F0ifm" value="" />
