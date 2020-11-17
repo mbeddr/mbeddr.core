@@ -19,9 +19,9 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
-    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -453,8 +453,8 @@
     <node concept="13i0hz" id="94IdDK_3pg" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="addGenericDependecy" />
-      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericDependecy" />
+      <property role="TrG5h" value="addGenericChunkDependency" />
+      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericChunkDependency" />
       <node concept="3Tm1VV" id="94IdDK_3ph" role="1B3o_S" />
       <node concept="3clFbS" id="94IdDK_3pi" role="3clF47" />
       <node concept="37vLTG" id="94IdDK_3pj" role="3clF46">
@@ -558,8 +558,11 @@
       <node concept="3Tm1VV" id="4J$Pz4XGFm7" role="1B3o_S" />
       <node concept="3clFbS" id="4J$Pz4XGFm8" role="3clF47">
         <node concept="3clFbF" id="4J$Pz4XGFnd" role="3cqZAp">
-          <node concept="3clFbT" id="4J$Pz4XGFne" role="3clFbG">
-            <property role="3clFbU" value="true" />
+          <node concept="2OqwBi" id="2qdxtjqN_$l" role="3clFbG">
+            <node concept="13iPFW" id="2qdxtjqN_es" role="2Oq$k0" />
+            <node concept="3TrcHB" id="2qdxtjqNAf$" role="2OqNvi">
+              <ref role="3TsBF5" to="d0vh:2qdxtjqNyZo" resolve="canMangleNames" />
+            </node>
           </node>
         </node>
       </node>
@@ -661,7 +664,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="addGenericDependecy" />
-      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericDependecy" />
+      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericChunkDependency" />
       <node concept="3Tm1VV" id="94IdDK_5YK" role="1B3o_S" />
       <node concept="3clFbS" id="94IdDK_5YL" role="3clF47" />
       <node concept="37vLTG" id="94IdDK_5YM" role="3clF46">
@@ -803,8 +806,8 @@
     <node concept="13i0hz" id="94IdDK$Pap" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="addGenericDependecy" />
-      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericDependecy" />
+      <property role="TrG5h" value="addGenericChunkDependency" />
+      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericChunkDependency" />
       <node concept="3Tm1VV" id="94IdDK$Paq" role="1B3o_S" />
       <node concept="3clFbS" id="94IdDK$Pav" role="3clF47" />
       <node concept="37vLTG" id="94IdDK$Paw" role="3clF46">
@@ -3102,9 +3105,6 @@
         </node>
       </node>
     </node>
-    <node concept="13hLZK" id="7Aba6BzyYIR" role="13h7CW">
-      <node concept="3clFbS" id="7Aba6BzyYIS" role="2VODD2" />
-    </node>
     <node concept="13i0hz" id="6TPUpoFAGOQ" role="13h7CS">
       <property role="TrG5h" value="readCopyrightNotice" />
       <node concept="3Tm1VV" id="6TPUpoFAGOR" role="1B3o_S" />
@@ -3448,6 +3448,9 @@
         <property role="TrG5h" value="copyrightNotice" />
         <node concept="17QB3L" id="6TPUpoGqUgf" role="1tU5fm" />
       </node>
+    </node>
+    <node concept="13hLZK" id="7Aba6BzyYIR" role="13h7CW">
+      <node concept="3clFbS" id="7Aba6BzyYIS" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="6TPUpoI1Qjq">

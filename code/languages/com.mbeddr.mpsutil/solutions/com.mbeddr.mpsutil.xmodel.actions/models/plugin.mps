@@ -272,6 +272,7 @@
       <concept id="3692959419668441282" name="com.mbeddr.mpsutil.smodule.structure.AddModelOperation" flags="ng" index="2o1iZ4">
         <child id="9193920352840482545" name="storageType" index="bRicC" />
         <child id="386247815699769479" name="name" index="2fkxbg" />
+        <child id="8277837597157976532" name="repo" index="2W6q2V" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -894,6 +895,17 @@
                     <node concept="liA8E" id="4yCyDr3aQYS" role="2OqNvi">
                       <ref role="37wK5l" to="28m1:~Instant.toString()" resolve="toString" />
                     </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6gIr20j8C1u" role="2W6q2V">
+                  <node concept="2OqwBi" id="6gIr20j8ASs" role="2Oq$k0">
+                    <node concept="2WthIp" id="6gIr20j8ASv" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="6gIr20j8ASx" role="2OqNvi">
+                      <ref role="2WH_rO" node="5ZP7uETz5Of" resolve="project" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6gIr20j8DpN" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
               </node>

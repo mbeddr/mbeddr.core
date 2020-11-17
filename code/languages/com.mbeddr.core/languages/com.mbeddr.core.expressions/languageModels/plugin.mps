@@ -61,6 +61,11 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+    </language>
   </registry>
   <node concept="vrV6u" id="6TPUpoMGLVf">
     <property role="TrG5h" value="PrintfFormatCustomizer" />
@@ -135,6 +140,30 @@
       <node concept="3clFbS" id="4zXqh6WD5Q6" role="3clF47" />
       <node concept="3Tm1VV" id="4zXqh6WD5Q7" role="1B3o_S" />
       <node concept="17QB3L" id="4zXqh6WD5Po" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="6xgYZv8ojcN" role="jymVt">
+      <property role="TrG5h" value="getPrintfFunctionExtraArgs" />
+      <node concept="37vLTG" id="6xgYZv8ojcO" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="6xgYZv8ojcP" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6xgYZv8ojcQ" role="3clF47" />
+      <node concept="3Tm1VV" id="6xgYZv8ojcR" role="1B3o_S" />
+      <node concept="_YKpA" id="6xgYZv8ousY" role="3clF45">
+        <node concept="17QB3L" id="6xgYZv8ousZ" role="_ZDj9" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6xgYZv8ojgT" role="jymVt">
+      <property role="TrG5h" value="getPrintfFunctionExtraArgDeclarations" />
+      <node concept="37vLTG" id="6xgYZv8ojgU" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="6xgYZv8ojgV" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6xgYZv8ojgW" role="3clF47" />
+      <node concept="3Tm1VV" id="6xgYZv8ojgX" role="1B3o_S" />
+      <node concept="_YKpA" id="6xgYZv8oKXB" role="3clF45">
+        <node concept="17QB3L" id="6xgYZv8oKXC" role="_ZDj9" />
+      </node>
     </node>
     <node concept="3Tm1VV" id="4zXqh6UnqsM" role="1B3o_S" />
   </node>

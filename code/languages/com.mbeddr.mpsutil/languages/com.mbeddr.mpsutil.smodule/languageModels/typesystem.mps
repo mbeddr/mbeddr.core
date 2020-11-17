@@ -11,6 +11,7 @@
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
@@ -24,6 +25,9 @@
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -62,8 +66,18 @@
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
       <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
+      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
+        <child id="1175517761460" name="condition" index="2MkoU_" />
+      </concept>
+      <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
+        <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
+      </concept>
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -87,6 +101,7 @@
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -265,6 +280,33 @@
           </node>
         </node>
       </node>
+      <node concept="1ZobV4" id="7bwMmZeYwax" role="3cqZAp">
+        <node concept="mw_s8" id="7bwMmZeYwaX" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7bwMmZeYwaT" role="mwGJk">
+            <node concept="2OqwBi" id="7bwMmZeYwlQ" role="1Z2MuG">
+              <node concept="1YBJjd" id="7bwMmZeYwbe" role="2Oq$k0">
+                <ref role="1YBMHb" node="3d01KqFjELB" resolve="addModelOperation" />
+              </node>
+              <node concept="3TrEf2" id="7bwMmZeYwrB" role="2OqNvi">
+                <ref role="3Tt5mk" to="gt8j:7bwMmZeYmBk" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4N6D1IQ0OS4" role="1ZfhKB">
+          <node concept="2pJPEk" id="4N6D1IQ0OS5" role="mwGJk">
+            <node concept="2pJPED" id="4N6D1IQ0OS6" role="2pJPEn">
+              <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
+              <node concept="2pIpSj" id="4N6D1IQ0OS7" role="2pJxcM">
+                <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
+                <node concept="36bGnv" id="4N6D1IQ0OS8" role="28nt2d">
+                  <ref role="36bGnp" to="lui2:~SRepository" resolve="SRepository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1ZobV4" id="lse_ua3$RQ" role="3cqZAp">
         <node concept="mw_s8" id="lse_ua3$Sm" role="1ZfhKB">
           <node concept="2ShNRf" id="lse_ua3$Si" role="mwGJk">
@@ -382,6 +424,34 @@
     <node concept="1YaCAy" id="2gGfLsWUgzt" role="1YuTPh">
       <property role="TrG5h" value="addDependencyOperation" />
       <ref role="1YaFvo" to="gt8j:3d01KqFgWkj" resolve="AddDependencyOperation" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7bwMmZeYy4X">
+    <property role="TrG5h" value="check_AddModelOperation" />
+    <node concept="3clFbS" id="7bwMmZeYy4Y" role="18ibNy">
+      <node concept="2Mj0R9" id="7bwMmZeYy59" role="3cqZAp">
+        <node concept="2OqwBi" id="7bwMmZeYylG" role="2MkoU_">
+          <node concept="2OqwBi" id="7bwMmZeYyak" role="2Oq$k0">
+            <node concept="1YBJjd" id="7bwMmZeYy5z" role="2Oq$k0">
+              <ref role="1YBMHb" node="7bwMmZeYy50" resolve="addModelOperation" />
+            </node>
+            <node concept="3TrEf2" id="2rFgM0FVpsn" role="2OqNvi">
+              <ref role="3Tt5mk" to="gt8j:7bwMmZeYmBk" resolve="repo" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="7bwMmZeYyyf" role="2OqNvi" />
+        </node>
+        <node concept="Xl_RD" id="7bwMmZeYyA5" role="2MkJ7o">
+          <property role="Xl_RC" value="Add model requires the project repository to be specified" />
+        </node>
+        <node concept="1YBJjd" id="7bwMmZeYyHP" role="1urrMF">
+          <ref role="1YBMHb" node="7bwMmZeYy50" resolve="addModelOperation" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7bwMmZeYy50" role="1YuTPh">
+      <property role="TrG5h" value="addModelOperation" />
+      <ref role="1YaFvo" to="gt8j:3d01KqFhiz2" resolve="AddModelOperation" />
     </node>
   </node>
 </model>

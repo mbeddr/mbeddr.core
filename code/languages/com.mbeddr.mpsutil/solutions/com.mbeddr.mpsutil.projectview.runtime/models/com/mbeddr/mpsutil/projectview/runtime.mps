@@ -42,6 +42,8 @@
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="mmaq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.jdom(MPS.Core/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
@@ -83,7 +85,6 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat6" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY" />
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -491,7 +492,6 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
-    <node concept="3Tm1VV" id="3ZnFyBjtwPx" role="1B3o_S" />
     <node concept="3clFb_" id="5GuprjiL9vw" role="jymVt">
       <property role="TrG5h" value="getToolbarActionGroupId" />
       <node concept="3clFbS" id="5GuprjiL9vz" role="3clF47" />
@@ -501,6 +501,7 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
+    <node concept="3Tm1VV" id="3ZnFyBjtwPx" role="1B3o_S" />
   </node>
   <node concept="3HP615" id="3ZnFyBjtwWN">
     <property role="TrG5h" value="IViewElementDescriptor" />
@@ -608,6 +609,26 @@
         <node concept="3uibUv" id="75_oBQVmWUW" role="1tU5fm">
           <ref role="3uigEE" node="3ZnFyBjwIpN" resolve="ViewElement" />
           <node concept="16syzq" id="75_oBQVmX2$" role="11_B2D">
+            <ref role="16sUi3" node="3ZnFyBjtxPT" resolve="E" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="27aDP_eol6W" role="jymVt">
+      <property role="TrG5h" value="getTextAttributes" />
+      <node concept="3uibUv" id="2GxkNhA$9tQ" role="3clF45">
+        <ref role="3uigEE" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
+      </node>
+      <node concept="3Tm1VV" id="27aDP_eol6Y" role="1B3o_S" />
+      <node concept="3clFbS" id="27aDP_eol6Z" role="3clF47" />
+      <node concept="2AHcQZ" id="27aDP_eol70" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="37vLTG" id="27aDP_eol71" role="3clF46">
+        <property role="TrG5h" value="element" />
+        <node concept="3uibUv" id="27aDP_eol72" role="1tU5fm">
+          <ref role="3uigEE" node="3ZnFyBjwIpN" resolve="ViewElement" />
+          <node concept="16syzq" id="27aDP_eol73" role="11_B2D">
             <ref role="16sUi3" node="3ZnFyBjtxPT" resolve="E" />
           </node>
         </node>
@@ -3541,6 +3562,34 @@
       </node>
     </node>
     <node concept="2tJIrI" id="75_oBQVumkX" role="jymVt" />
+    <node concept="3clFb_" id="27aDP_eoFho" role="jymVt">
+      <property role="TrG5h" value="getTextAttributes" />
+      <node concept="3uibUv" id="2GxkNhA$747" role="3clF45">
+        <ref role="3uigEE" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
+      </node>
+      <node concept="3Tm1VV" id="27aDP_eoFhq" role="1B3o_S" />
+      <node concept="2AHcQZ" id="27aDP_eoFhs" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="37vLTG" id="27aDP_eoFht" role="3clF46">
+        <property role="TrG5h" value="element" />
+        <node concept="3uibUv" id="27aDP_eoFhu" role="1tU5fm">
+          <ref role="3uigEE" node="3ZnFyBjwIpN" resolve="ViewElement" />
+          <node concept="16syzq" id="27aDP_eoFhw" role="11_B2D">
+            <ref role="16sUi3" node="3ZnFyBjvEXr" resolve="E" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="27aDP_eoFhx" role="3clF47">
+        <node concept="3clFbF" id="27aDP_eoFh$" role="3cqZAp">
+          <node concept="10Nm6u" id="27aDP_eoFhz" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="27aDP_eoFhy" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="27aDP_eoG$f" role="jymVt" />
     <node concept="3clFb_" id="75_oBQVum65" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getActionGroupId" />
@@ -5214,6 +5263,90 @@
         <node concept="3cpWs6" id="75_oBQVoSBs" role="3cqZAp">
           <node concept="10Nm6u" id="75_oBQVoSYP" role="3cqZAk" />
         </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="27aDP_eocsH" role="jymVt" />
+    <node concept="3clFb_" id="27aDP_eog0r" role="jymVt">
+      <property role="TrG5h" value="getTextAttributes" />
+      <node concept="3clFbS" id="27aDP_eog0u" role="3clF47">
+        <node concept="3cpWs8" id="2GxkNhA_otO" role="3cqZAp">
+          <node concept="3cpWsn" id="2GxkNhA_otP" role="3cpWs9">
+            <property role="TrG5h" value="attrs" />
+            <node concept="3uibUv" id="2GxkNhA_otQ" role="1tU5fm">
+              <ref role="3uigEE" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
+            </node>
+            <node concept="10M0yZ" id="2GxkNhA_pX5" role="33vP2m">
+              <ref role="3cqZAo" to="lzb2:~SimpleTextAttributes.REGULAR_ATTRIBUTES" resolve="REGULAR_ATTRIBUTES" />
+              <ref role="1PxDUh" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="27aDP_eohDR" role="3cqZAp">
+          <node concept="2GrKxI" id="27aDP_eohDS" role="2Gsz3X">
+            <property role="TrG5h" value="descriptor" />
+          </node>
+          <node concept="3clFbS" id="27aDP_eohDT" role="2LFqv$">
+            <node concept="3cpWs8" id="27aDP_eohDU" role="3cqZAp">
+              <node concept="3cpWsn" id="27aDP_eohDV" role="3cpWs9">
+                <property role="TrG5h" value="attributes" />
+                <node concept="3uibUv" id="2GxkNhA_iT9" role="1tU5fm">
+                  <ref role="3uigEE" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
+                </node>
+                <node concept="2OqwBi" id="27aDP_eohDX" role="33vP2m">
+                  <node concept="2GrUjf" id="27aDP_eohDY" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="27aDP_eohDS" resolve="descriptor" />
+                  </node>
+                  <node concept="liA8E" id="27aDP_eohDZ" role="2OqNvi">
+                    <ref role="37wK5l" node="27aDP_eol6W" resolve="getTextAttributes" />
+                    <node concept="Xjq3P" id="27aDP_eohE0" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="27aDP_eohE1" role="3cqZAp">
+              <node concept="3clFbS" id="27aDP_eohE2" role="3clFbx">
+                <node concept="3clFbF" id="2GxkNhA_woQ" role="3cqZAp">
+                  <node concept="37vLTI" id="2GxkNhA_y40" role="3clFbG">
+                    <node concept="2YIFZM" id="2GxkNhA_yc_" role="37vLTx">
+                      <ref role="37wK5l" to="lzb2:~SimpleTextAttributes.merge(com.intellij.ui.SimpleTextAttributes,com.intellij.ui.SimpleTextAttributes)" resolve="merge" />
+                      <ref role="1Pybhc" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
+                      <node concept="37vLTw" id="2GxkNhA_yjl" role="37wK5m">
+                        <ref role="3cqZAo" node="2GxkNhA_otP" resolve="attrs" />
+                      </node>
+                      <node concept="37vLTw" id="2GxkNhA_yqs" role="37wK5m">
+                        <ref role="3cqZAo" node="27aDP_eohDV" resolve="attributes" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="2GxkNhA_woL" role="37vLTJ">
+                      <ref role="3cqZAo" node="2GxkNhA_otP" resolve="attrs" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="27aDP_eohE5" role="3clFbw">
+                <node concept="10Nm6u" id="27aDP_eohE6" role="3uHU7w" />
+                <node concept="37vLTw" id="27aDP_eohE7" role="3uHU7B">
+                  <ref role="3cqZAo" node="27aDP_eohDV" resolve="attributes" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="27aDP_eohE8" role="2GsD0m">
+            <ref role="3cqZAo" node="$6jtTwCftL" resolve="myInheritanceHierachy" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="27aDP_eohE9" role="3cqZAp">
+          <node concept="37vLTw" id="2GxkNhA_yxy" role="3cqZAk">
+            <ref role="3cqZAo" node="2GxkNhA_otP" resolve="attrs" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="27aDP_eoe4A" role="1B3o_S" />
+      <node concept="3uibUv" id="2GxkNhA_pZF" role="3clF45">
+        <ref role="3uigEE" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
+      </node>
+      <node concept="2AHcQZ" id="2GxkNhA_zX1" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
     </node>
     <node concept="2tJIrI" id="75_oBQVuvYf" role="jymVt" />

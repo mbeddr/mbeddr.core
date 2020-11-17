@@ -509,6 +509,7 @@
       <concept id="767145758118872828" name="jetbrains.mps.lang.actions.structure.NF_Node_ReplaceWithNewOperation" flags="nn" index="2DeJnW" />
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
       <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" stub="416014060004530854" index="2aMyGU">
         <property id="7122083600696909496" name="falseText" index="2aYyvO" />
         <property id="7122083600696906118" name="trueText" index="2aYyza" />
@@ -2198,46 +2199,6 @@
             </node>
           </node>
           <node concept="3EZMnI" id="5vQfEA5aldK" role="3EZMnx">
-            <node concept="pkWqt" id="5vQfEA5aldL" role="pqm2j">
-              <node concept="3clFbS" id="5vQfEA5aldM" role="2VODD2">
-                <node concept="3clFbJ" id="5vQfEA5aldN" role="3cqZAp">
-                  <node concept="3clFbS" id="5vQfEA5aldO" role="3clFbx">
-                    <node concept="3cpWs6" id="5vQfEA5aldP" role="3cqZAp">
-                      <node concept="3clFbT" id="5vQfEA5aldQ" role="3cqZAk">
-                        <property role="3clFbU" value="true" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3fqX7Q" id="5vQfEA5aldR" role="3clFbw">
-                    <node concept="2OqwBi" id="5vQfEA5aldS" role="3fr31v">
-                      <node concept="pncrf" id="5vQfEA5aldT" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="5vQfEA5aldU" role="2OqNvi">
-                        <ref role="3TsBF5" to="x27k:7e09zBH54Yr" resolve="generateHeader" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="9aQIb" id="5vQfEA5aldV" role="9aQIa">
-                    <node concept="3clFbS" id="5vQfEA5aldW" role="9aQI4">
-                      <node concept="3cpWs6" id="5vQfEA5aldX" role="3cqZAp">
-                        <node concept="2OqwBi" id="5vQfEA5aldY" role="3cqZAk">
-                          <node concept="2OqwBi" id="5vQfEA5aldZ" role="2Oq$k0">
-                            <node concept="pncrf" id="5vQfEA5ale0" role="2Oq$k0" />
-                            <node concept="Bykcj" id="5vQfEA5ale1" role="2OqNvi">
-                              <node concept="1aIX9F" id="5vQfEA5ale2" role="1xVPHs">
-                                <node concept="26LbJo" id="5vQfEA5ale3" role="1aIX9E">
-                                  <ref role="26LbJp" to="x27k:5jyom5fOqJU" resolve="descriptors" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3GX2aA" id="5vQfEA5ale4" role="2OqNvi" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="VPM3Z" id="5vQfEA5ale5" role="3F10Kt">
               <property role="VOm3f" value="false" />
             </node>
@@ -5329,11 +5290,17 @@
       <node concept="3EZMnI" id="5soFcYDGhXE" role="3EZMnx">
         <node concept="l2Vlx" id="5soFcYDGhXF" role="2iSdaV" />
         <node concept="3F0ifn" id="5soFcYDGhXG" role="3EZMnx">
-          <property role="3F0ifm" value="required header" />
+          <property role="3F0ifm" value="required header:" />
         </node>
         <node concept="3F0A7n" id="5soFcYDGhXI" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="x27k:5soFcYDEU27" resolve="requiredStdHeader" />
+        </node>
+        <node concept="3F0ifn" id="4tQ03vHx6dz" role="3EZMnx">
+          <property role="3F0ifm" value="reexport:" />
+        </node>
+        <node concept="27S6Sx" id="23UZYO5euVB" role="3EZMnx">
+          <ref role="1NtTu8" to="x27k:19a6$uAA0vK" resolve="exported" />
         </node>
       </node>
     </node>
