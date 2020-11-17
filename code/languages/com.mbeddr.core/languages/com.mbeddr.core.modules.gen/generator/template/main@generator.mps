@@ -3109,15 +3109,23 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3fqX7Q" id="6xgYZveKPx2" role="3clFbw">
-                    <node concept="2OqwBi" id="6xgYZveKPx4" role="3fr31v">
-                      <node concept="Jnkvi" id="6xgYZveKPx5" role="2Oq$k0">
-                        <ref role="1M0zk5" node="6xgYZveKHIK" resolve="externalModule" />
+                  <node concept="2OqwBi" id="2qdxtjrxItv" role="3clFbw">
+                    <node concept="2OqwBi" id="2qdxtjrxERD" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6xgYZveKPx4" role="2Oq$k0">
+                        <node concept="Jnkvi" id="6xgYZveKPx5" role="2Oq$k0">
+                          <ref role="1M0zk5" node="6xgYZveKHIK" resolve="externalModule" />
+                        </node>
+                        <node concept="3Tsc0h" id="2qdxtjrxCw4" role="2OqNvi">
+                          <ref role="3TtcxE" to="x27k:5jyom5fOqJU" resolve="descriptors" />
+                        </node>
                       </node>
-                      <node concept="3TrcHB" id="6xgYZveKPx6" role="2OqNvi">
-                        <ref role="3TsBF5" to="x27k:7e09zBH54Yr" resolve="generateHeader" />
+                      <node concept="v3k3i" id="2qdxtjrxHqJ" role="2OqNvi">
+                        <node concept="chp4Y" id="2qdxtjrxHEG" role="v3oSu">
+                          <ref role="cht4Q" to="x27k:5jyom5fOqJw" resolve="HeaderDescriptor" />
+                        </node>
                       </node>
                     </node>
+                    <node concept="3GX2aA" id="2qdxtjrxJaI" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -9068,8 +9076,8 @@
         <node concept="3clFbS" id="7e09zBHfMEl" role="2VODD2">
           <node concept="3clFbF" id="7e09zBHfMEm" role="3cqZAp">
             <node concept="2OqwBi" id="7e09zBHfMEn" role="3clFbG">
-              <node concept="3TrcHB" id="7e09zBHfMEo" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2qgKlT" id="2qdxtjscf3F" role="2OqNvi">
+                <ref role="37wK5l" to="qd6m:7Aba6BzsCXL" resolve="getHeaderFileName" />
               </node>
               <node concept="30H73N" id="7e09zBHfMEp" role="2Oq$k0" />
             </node>
