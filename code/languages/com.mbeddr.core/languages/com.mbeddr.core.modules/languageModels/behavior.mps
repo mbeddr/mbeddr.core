@@ -4121,7 +4121,7 @@
             <node concept="3clFbF" id="43R883waU$8" role="3cqZAp">
               <node concept="37vLTI" id="43R883waU$9" role="3clFbG">
                 <node concept="37vLTw" id="43R883waU$a" role="37vLTx">
-                  <ref role="3cqZAo" node="3YjQI$k4teI" />
+                  <ref role="3cqZAo" node="3YjQI$k4teI" resolve="requiredModule" />
                 </node>
                 <node concept="2OqwBi" id="43R883waU$b" role="37vLTJ">
                   <node concept="37vLTw" id="43R883waU$c" role="2Oq$k0">
@@ -4136,11 +4136,11 @@
             <node concept="3clFbF" id="43R883waZXC" role="3cqZAp">
               <node concept="37vLTI" id="43R883wb0jJ" role="3clFbG">
                 <node concept="37vLTw" id="43R883wb0kI" role="37vLTx">
-                  <ref role="3cqZAo" node="3YjQI$k4teK" />
+                  <ref role="3cqZAo" node="3YjQI$k4teK" resolve="reexport" />
                 </node>
                 <node concept="2OqwBi" id="43R883wb04S" role="37vLTJ">
                   <node concept="37vLTw" id="43R883waZXA" role="2Oq$k0">
-                    <ref role="3cqZAo" node="43R883waU$3" />
+                    <ref role="3cqZAo" node="43R883waU$3" resolve="imp" />
                   </node>
                   <node concept="3TrcHB" id="43R883wb0hU" role="2OqNvi">
                     <ref role="3TsBF5" to="vs0r:DubiFAXCMb" resolve="reexport" />
@@ -4170,7 +4170,7 @@
                 </node>
               </node>
               <node concept="37vLTw" id="3YjQI$k4_KO" role="3clFbw">
-                <ref role="3cqZAo" node="3YjQI$k4tpq" />
+                <ref role="3cqZAo" node="3YjQI$k4tpq" resolve="beforeOtherImports" />
               </node>
               <node concept="9aQIb" id="3YjQI$k4ARR" role="9aQIa">
                 <node concept="3clFbS" id="3YjQI$k4ARS" role="9aQI4">
@@ -4195,9 +4195,9 @@
           </node>
           <node concept="3fqX7Q" id="43R883waU$l" role="3clFbw">
             <node concept="BsUDl" id="43R883waU$m" role="3fr31v">
-              <ref role="37wK5l" node="7PpjtdjCFN8" />
+              <ref role="37wK5l" node="7PpjtdjCFN8" resolve="hasImportFor" />
               <node concept="37vLTw" id="43R883waU$n" role="37wK5m">
-                <ref role="3cqZAo" node="3YjQI$k4teI" />
+                <ref role="3cqZAo" node="3YjQI$k4teI" resolve="requiredModule" />
               </node>
             </node>
           </node>
@@ -4803,6 +4803,7 @@
     </node>
     <node concept="13i0hz" id="4GT16cGhZhY" role="13h7CS">
       <property role="TrG5h" value="importsForImplementation" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="4GT16cGhZhZ" role="1B3o_S" />
       <node concept="3clFbS" id="4GT16cGhZi1" role="3clF47">
         <node concept="3clFbF" id="5qxpWJ_uZRN" role="3cqZAp">
@@ -4879,6 +4880,7 @@
     </node>
     <node concept="13i0hz" id="4GT16cGhZmM" role="13h7CS">
       <property role="TrG5h" value="importsForHeader" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="4GT16cGhZmN" role="1B3o_S" />
       <node concept="3clFbS" id="4GT16cGhZmO" role="3clF47">
         <node concept="3clFbF" id="5qxpWJ_uXN8" role="3cqZAp">
@@ -5763,6 +5765,7 @@
     </node>
     <node concept="13i0hz" id="1H6zsul0og9" role="13h7CS">
       <property role="TrG5h" value="allFunctions" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="1H6zsul0oga" role="1B3o_S" />
       <node concept="A3Dl8" id="1H6zsul0sSS" role="3clF45">
         <node concept="3Tqbb2" id="1H6zsul0sSZ" role="A3Ik2">
@@ -5789,6 +5792,7 @@
     </node>
     <node concept="13i0hz" id="1H6zsul5X7v" role="13h7CS">
       <property role="TrG5h" value="allFunctionsWithoutInlineHeaderFunctions" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="1H6zsul5X7w" role="1B3o_S" />
       <node concept="A3Dl8" id="1H6zsul5X7x" role="3clF45">
         <node concept="3Tqbb2" id="1H6zsul5X7y" role="A3Ik2">
@@ -5812,6 +5816,7 @@
     </node>
     <node concept="13i0hz" id="1H6zsul0ctg" role="13h7CS">
       <property role="TrG5h" value="inlineFunctionsForHeader" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="1H6zsul0cth" role="1B3o_S" />
       <node concept="A3Dl8" id="1H6zsul0i26" role="3clF45">
         <node concept="3Tqbb2" id="1H6zsul0i2d" role="A3Ik2">
