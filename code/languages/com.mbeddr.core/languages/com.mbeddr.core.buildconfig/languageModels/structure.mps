@@ -339,6 +339,9 @@
     <node concept="PrWs8" id="3dZgFhDSziU" role="PzmwI">
       <ref role="PrY4T" to="i2y7:3dZgFhDSw4V" resolve="IGeneratesToMakefile" />
     </node>
+    <node concept="PrWs8" id="1cOw9QkO4Rq" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1cOw9QkLoM_" resolve="IOutputLocationProvider" />
+    </node>
     <node concept="1TJgyi" id="5ara9PcmbE2" role="1TKVEl">
       <property role="IQ2nx" value="5952395988556102274" />
       <property role="TrG5h" value="supportsSharedLibraries" />
