@@ -358,21 +358,6 @@
       </node>
       <node concept="17QB3L" id="2G3hhvdKIz4" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="4J$Pz4XGFmC" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="canMangleNames" />
-      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="canMangleNames" />
-      <node concept="3Tm1VV" id="4J$Pz4XGFmD" role="1B3o_S" />
-      <node concept="10P_77" id="4J$Pz4XGFmF" role="3clF45" />
-      <node concept="3clFbS" id="4J$Pz4XGFmJ" role="3clF47">
-        <node concept="3clFbF" id="4J$Pz4XGFnf" role="3cqZAp">
-          <node concept="3clFbT" id="4J$Pz4XGFng" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="13i0hz" id="6clJcrKklc3" role="13h7CS">
       <property role="TrG5h" value="importedChunks" />
       <property role="13i0it" value="false" />
@@ -545,24 +530,6 @@
       <node concept="A3Dl8" id="5aaBiRoycuC" role="3clF45">
         <node concept="3Tqbb2" id="5aaBiRoycuD" role="A3Ik2" />
       </node>
-    </node>
-    <node concept="13i0hz" id="4J$Pz4XGFm6" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="canMangleNames" />
-      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="canMangleNames" />
-      <node concept="3Tm1VV" id="4J$Pz4XGFm7" role="1B3o_S" />
-      <node concept="3clFbS" id="4J$Pz4XGFm8" role="3clF47">
-        <node concept="3clFbF" id="4J$Pz4XGFnd" role="3cqZAp">
-          <node concept="2OqwBi" id="2qdxtjqN_$l" role="3clFbG">
-            <node concept="13iPFW" id="2qdxtjqN_es" role="2Oq$k0" />
-            <node concept="3TrcHB" id="2qdxtjqNAf$" role="2OqNvi">
-              <ref role="3TsBF5" to="d0vh:2qdxtjqNyZo" resolve="canMangleNames" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="4J$Pz4XGFm9" role="3clF45" />
     </node>
     <node concept="13i0hz" id="3mNkkAiSEmh" role="13h7CS">
       <property role="TrG5h" value="genName" />
@@ -3081,6 +3048,24 @@
   <node concept="13h7C7" id="7Aba6BzyYIQ">
     <property role="3GE5qa" value="module" />
     <ref role="13h7C2" to="d0vh:6iilwRlTjqY" resolve="AbstractGenModule" />
+    <node concept="13i0hz" id="4J$Pz4XGFm6" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="canMangleNames" />
+      <ref role="13i0hy" to="qd6m:4J$Pz4XGFls" resolve="canMangleNames" />
+      <node concept="3Tm1VV" id="4J$Pz4XGFm7" role="1B3o_S" />
+      <node concept="3clFbS" id="4J$Pz4XGFm8" role="3clF47">
+        <node concept="3clFbF" id="4J$Pz4XGFnd" role="3cqZAp">
+          <node concept="2OqwBi" id="2qdxtjqN_$l" role="3clFbG">
+            <node concept="13iPFW" id="2qdxtjqN_es" role="2Oq$k0" />
+            <node concept="3TrcHB" id="2qdxtjqNAf$" role="2OqNvi">
+              <ref role="3TsBF5" to="d0vh:2qdxtjqNyZo" resolve="canMangleNames" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4J$Pz4XGFm9" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="7Aba6Bzz6b$" role="13h7CS">
       <property role="TrG5h" value="genName" />
       <property role="13i0it" value="true" />

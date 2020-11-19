@@ -11,7 +11,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
@@ -149,11 +149,6 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="1758019824472688223" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-    </node>
-    <node concept="1TJgyi" id="2qdxtjqNyZo" role="1TKVEl">
-      <property role="IQ2nx" value="2778023694407970776" />
-      <property role="TrG5h" value="canMangleNames" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="19a6$uAAsGA">
@@ -356,6 +351,11 @@
     </node>
     <node concept="PrWs8" id="6iilwRlTjr8" role="PzmwI">
       <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
+    </node>
+    <node concept="1TJgyi" id="2qdxtjqNyZo" role="1TKVEl">
+      <property role="IQ2nx" value="2778023694407970776" />
+      <property role="TrG5h" value="canMangleNames" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="1NwarDnRX0I">
