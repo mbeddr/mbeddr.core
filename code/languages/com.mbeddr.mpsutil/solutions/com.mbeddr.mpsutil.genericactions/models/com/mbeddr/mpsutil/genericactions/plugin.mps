@@ -852,7 +852,7 @@
   </node>
   <node concept="sE7Ow" id="7uLL3Mf2tAp">
     <property role="TrG5h" value="openModuleDirInFileManager" />
-    <property role="2uzpH1" value="Terminal in Module Folder" />
+    <property role="2uzpH1" value="File Manager in Module Folder" />
     <property role="3GE5qa" value="" />
     <property role="fJN8o" value="true" />
     <node concept="tnohg" id="7uLL3Mf2tAq" role="tncku">
