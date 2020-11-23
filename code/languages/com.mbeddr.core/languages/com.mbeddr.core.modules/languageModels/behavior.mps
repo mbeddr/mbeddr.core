@@ -5146,6 +5146,7 @@
     </node>
     <node concept="13i0hz" id="4GT16cGhZhY" role="13h7CS">
       <property role="TrG5h" value="importsForImplementation" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="4GT16cGhZhZ" role="1B3o_S" />
       <node concept="3clFbS" id="4GT16cGhZi1" role="3clF47">
         <node concept="3clFbF" id="5qxpWJ_uZRN" role="3cqZAp">
@@ -5222,6 +5223,7 @@
     </node>
     <node concept="13i0hz" id="4GT16cGhZmM" role="13h7CS">
       <property role="TrG5h" value="importsForHeader" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="4GT16cGhZmN" role="1B3o_S" />
       <node concept="3clFbS" id="4GT16cGhZmO" role="3clF47">
         <node concept="3clFbF" id="5qxpWJ_uXN8" role="3cqZAp">
@@ -6086,6 +6088,7 @@
     </node>
     <node concept="13i0hz" id="1H6zsul0og9" role="13h7CS">
       <property role="TrG5h" value="allFunctions" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="1H6zsul0oga" role="1B3o_S" />
       <node concept="A3Dl8" id="1H6zsul0sSS" role="3clF45">
         <node concept="3Tqbb2" id="1H6zsul0sSZ" role="A3Ik2">
@@ -6112,6 +6115,7 @@
     </node>
     <node concept="13i0hz" id="1H6zsul5X7v" role="13h7CS">
       <property role="TrG5h" value="allFunctionsWithoutInlineHeaderFunctions" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="1H6zsul5X7w" role="1B3o_S" />
       <node concept="A3Dl8" id="1H6zsul5X7x" role="3clF45">
         <node concept="3Tqbb2" id="1H6zsul5X7y" role="A3Ik2">
@@ -6135,6 +6139,7 @@
     </node>
     <node concept="13i0hz" id="1H6zsul0ctg" role="13h7CS">
       <property role="TrG5h" value="inlineFunctionsForHeader" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="1H6zsul0cth" role="1B3o_S" />
       <node concept="A3Dl8" id="1H6zsul0i26" role="3clF45">
         <node concept="3Tqbb2" id="1H6zsul0i2d" role="A3Ik2">
