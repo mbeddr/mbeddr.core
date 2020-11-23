@@ -16074,24 +16074,6 @@
         <node concept="10P_77" id="4dJXybkifuD" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="4dJXybkifuE" role="3clF47">
-        <node concept="3cpWs8" id="4dJXybkifuG" role="3cqZAp">
-          <node concept="3cpWsn" id="4dJXybkifuF" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="foreground" />
-            <node concept="3uibUv" id="4dJXybkifuH" role="1tU5fm">
-              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="4dJXybkifuJ" role="3cqZAp">
-          <node concept="3cpWsn" id="4dJXybkifuI" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="additionalForeground" />
-            <node concept="3uibUv" id="4dJXybkifuK" role="1tU5fm">
-              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="4dJXybkifuL" role="3cqZAp">
           <node concept="1rXfSq" id="4dJXybkifuM" role="3clFbG">
             <ref role="37wK5l" to="dxuu:~JComponent.setOpaque(boolean)" resolve="setOpaque" />
@@ -16100,77 +16082,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="4dJXybkifuO" role="3cqZAp">
-          <node concept="37vLTw" id="4dJXybkifuP" role="3clFbw">
-            <ref role="3cqZAo" node="4dJXybkifuw" resolve="selected" />
-          </node>
-          <node concept="9aQIb" id="4dJXybkifv6" role="9aQIa">
-            <node concept="3clFbS" id="4dJXybkifv7" role="9aQI4">
-              <node concept="3clFbF" id="4dJXybkifv8" role="3cqZAp">
-                <node concept="37vLTI" id="4dJXybkifv9" role="3clFbG">
-                  <node concept="37vLTw" id="4dJXybkifva" role="37vLTJ">
-                    <ref role="3cqZAo" node="4dJXybkifuF" resolve="foreground" />
-                  </node>
-                  <node concept="2YIFZM" id="4dJXybkiiOQ" role="37vLTx">
-                    <ref role="1Pybhc" to="g1qu:~UIUtil" resolve="UIUtil" />
-                    <ref role="37wK5l" to="g1qu:~UIUtil.getTreeForeground()" resolve="getTreeForeground" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="4dJXybkifvc" role="3cqZAp">
-                <node concept="37vLTI" id="4dJXybkifvd" role="3clFbG">
-                  <node concept="37vLTw" id="4dJXybkifve" role="37vLTJ">
-                    <ref role="3cqZAo" node="4dJXybkifuI" resolve="additionalForeground" />
-                  </node>
-                  <node concept="10M0yZ" id="4dJXybkil5D" role="37vLTx">
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="z60i:~Color.GRAY" resolve="GRAY" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="4dJXybkifuR" role="3clFbx">
-            <node concept="3clFbF" id="4dJXybkifuS" role="3cqZAp">
-              <node concept="37vLTI" id="4dJXybkifuT" role="3clFbG">
-                <node concept="37vLTw" id="4dJXybkifuU" role="37vLTJ">
-                  <ref role="3cqZAo" node="4dJXybkifuF" resolve="foreground" />
-                </node>
-                <node concept="3K4zz7" id="4dJXybkifv1" role="37vLTx">
-                  <node concept="1Wc70l" id="4dJXybkifuV" role="3K4Cdx">
-                    <node concept="37vLTw" id="4dJXybkifuW" role="3uHU7B">
-                      <ref role="3cqZAo" node="4dJXybkifuC" resolve="hasFocus" />
-                    </node>
-                    <node concept="3fqX7Q" id="4dJXybkifuX" role="3uHU7w">
-                      <node concept="2YIFZM" id="4dJXybkiiOU" role="3fr31v">
-                        <ref role="1Pybhc" to="g1qu:~UIUtil" resolve="UIUtil" />
-                        <ref role="37wK5l" to="g1qu:~UIUtil.isUnderDarcula()" resolve="isUnderDarcula" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2YIFZM" id="4dJXybkiiOW" role="3K4E3e">
-                    <ref role="1Pybhc" to="g1qu:~UIUtil" resolve="UIUtil" />
-                    <ref role="37wK5l" to="g1qu:~UIUtil.getTreeSelectionForeground()" resolve="getTreeSelectionForeground" />
-                  </node>
-                  <node concept="2YIFZM" id="4dJXybkiiOY" role="3K4GZi">
-                    <ref role="1Pybhc" to="g1qu:~UIUtil" resolve="UIUtil" />
-                    <ref role="37wK5l" to="g1qu:~UIUtil.getTreeForeground()" resolve="getTreeForeground" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="4dJXybkifv2" role="3cqZAp">
-              <node concept="37vLTI" id="4dJXybkifv3" role="3clFbG">
-                <node concept="37vLTw" id="4dJXybkifv4" role="37vLTJ">
-                  <ref role="3cqZAo" node="4dJXybkifuI" resolve="additionalForeground" />
-                </node>
-                <node concept="37vLTw" id="4dJXybkifv5" role="37vLTx">
-                  <ref role="3cqZAo" node="4dJXybkifuF" resolve="foreground" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="5gLHrjMTdw2" role="3cqZAp" />
         <node concept="3clFbF" id="4dJXybkifvg" role="3cqZAp">
           <node concept="2OqwBi" id="4dJXybkiiP1" role="3clFbG">
             <node concept="37vLTw" id="4dJXybkiiP0" role="2Oq$k0">
@@ -16178,8 +16090,26 @@
             </node>
             <node concept="liA8E" id="4dJXybkiiP2" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JComponent.setForeground(java.awt.Color)" resolve="setForeground" />
-              <node concept="37vLTw" id="4dJXybkifvi" role="37wK5m">
-                <ref role="3cqZAo" node="4dJXybkifuF" resolve="foreground" />
+              <node concept="3K4zz7" id="5gLHrjMSMBs" role="37wK5m">
+                <node concept="2YIFZM" id="5gLHrjMSOrZ" role="3K4E3e">
+                  <ref role="1Pybhc" to="g1qu:~UIUtil" resolve="UIUtil" />
+                  <ref role="37wK5l" to="g1qu:~UIUtil.getTreeSelectionForeground(boolean)" resolve="getTreeSelectionForeground" />
+                  <node concept="2OqwBi" id="5gLHrjMSQip" role="37wK5m">
+                    <node concept="37vLTw" id="5gLHrjMSPbW" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4dJXybkifus" resolve="tree" />
+                    </node>
+                    <node concept="liA8E" id="5gLHrjMSS7z" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Component.hasFocus()" resolve="hasFocus" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="5gLHrjMSW1r" role="3K4GZi">
+                  <ref role="37wK5l" to="g1qu:~UIUtil.getTreeForeground()" resolve="getTreeForeground" />
+                  <ref role="1Pybhc" to="g1qu:~UIUtil" resolve="UIUtil" />
+                </node>
+                <node concept="37vLTw" id="5gLHrjMSLqG" role="3K4Cdx">
+                  <ref role="3cqZAo" node="4dJXybkifuw" resolve="selected" />
+                </node>
               </node>
             </node>
           </node>
@@ -16191,12 +16121,27 @@
             </node>
             <node concept="liA8E" id="4dJXybkiiP6" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JComponent.setForeground(java.awt.Color)" resolve="setForeground" />
-              <node concept="37vLTw" id="4dJXybkifvl" role="37wK5m">
-                <ref role="3cqZAo" node="4dJXybkifuI" resolve="additionalForeground" />
+              <node concept="3K4zz7" id="5gLHrjMSXWW" role="37wK5m">
+                <node concept="2OqwBi" id="5gLHrjMSZPW" role="3K4E3e">
+                  <node concept="37vLTw" id="5gLHrjMSYRe" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4dJXybkiftU" resolve="myMainTextLabel" />
+                  </node>
+                  <node concept="liA8E" id="5gLHrjMT1l2" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Component.getForeground()" resolve="getForeground" />
+                  </node>
+                </node>
+                <node concept="10M0yZ" id="5gLHrjMT3h5" role="3K4GZi">
+                  <ref role="3cqZAo" to="lzb2:~JBColor.GRAY" resolve="GRAY" />
+                  <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
+                </node>
+                <node concept="37vLTw" id="5gLHrjMSWNJ" role="3K4Cdx">
+                  <ref role="3cqZAo" node="4dJXybkifuw" resolve="selected" />
+                </node>
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5gLHrjMTg0$" role="3cqZAp" />
         <node concept="3cpWs8" id="4dJXybkifvn" role="3cqZAp">
           <node concept="3cpWsn" id="4dJXybkifvm" role="3cpWs9">
             <property role="3TUv4t" value="false" />
