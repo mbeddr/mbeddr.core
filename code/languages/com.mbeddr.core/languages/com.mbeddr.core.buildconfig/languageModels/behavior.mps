@@ -170,6 +170,7 @@
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -7953,7 +7954,36 @@
         <property role="Xl_RC" value="-std=c90" />
       </node>
     </node>
-    <node concept="2tJIrI" id="4JZ_DSwPnu$" role="jymVt" />
+    <node concept="2tJIrI" id="2ywiPl$C6ML" role="jymVt" />
+    <node concept="Wx3nA" id="23JCGXB6GvF" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="WINDOWS_DRIVE_PATH_PATTERN" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="23JCGXB6GlD" role="1B3o_S" />
+      <node concept="3uibUv" id="23JCGXB6GmA" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="5Dpaey8AQEJ" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="5Dpaey8AQF8" role="37wK5m">
+          <property role="Xl_RC" value="([a-zA-Z]):(.*)" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2ywiPl$CbCi" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="WSL_PATH_FORMAT" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="2ywiPl$CbCj" role="1B3o_S" />
+      <node concept="17QB3L" id="2ywiPl$ChaB" role="1tU5fm" />
+      <node concept="Xl_RD" id="2ywiPl$CfqH" role="33vP2m">
+        <property role="Xl_RC" value="/mnt/%s%s" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2ywiPl$C67d" role="jymVt" />
     <node concept="Wx3nA" id="4JZ_DSwPnG4" role="jymVt">
       <property role="TrG5h" value="OS_VERSION_FLAGS_WIN32" />
       <property role="3TUv4t" value="true" />
@@ -8056,6 +8086,132 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5Dpaey8tco6" role="jymVt" />
+    <node concept="2YIFZL" id="2Ka$uvN35hs" role="jymVt">
+      <property role="TrG5h" value="toWSLPath" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="2Ka$uvN35ht" role="3clF47">
+        <node concept="3clFbJ" id="AQl6ykPyb9" role="3cqZAp">
+          <node concept="3clFbS" id="AQl6ykPybb" role="3clFbx">
+            <node concept="3cpWs6" id="AQl6ykPAan" role="3cqZAp">
+              <node concept="Xl_RD" id="AQl6ykPCiD" role="3cqZAk">
+                <property role="Xl_RC" value="" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="AQl6ykPzCd" role="3clFbw">
+            <node concept="37vLTw" id="AQl6ykPz8L" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Ka$uvN35i5" resolve="path" />
+            </node>
+            <node concept="17RlXB" id="AQl6ykP_cI" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="AQl6ykPDhu" role="3cqZAp" />
+        <node concept="3clFbF" id="2Ka$uvN35hu" role="3cqZAp">
+          <node concept="37vLTI" id="2Ka$uvN35hv" role="3clFbG">
+            <node concept="37vLTw" id="2Ka$uvN35hw" role="37vLTJ">
+              <ref role="3cqZAo" node="2Ka$uvN35i5" resolve="path" />
+            </node>
+            <node concept="2YIFZM" id="2Ka$uvN35hx" role="37vLTx">
+              <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
+              <ref role="37wK5l" to="8oaq:~FilenameUtils.separatorsToUnix(java.lang.String)" resolve="separatorsToUnix" />
+              <node concept="37vLTw" id="2Ka$uvN35hy" role="37wK5m">
+                <ref role="3cqZAo" node="2Ka$uvN35i5" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5BKJQ2fog6_" role="3cqZAp" />
+        <node concept="3clFbJ" id="5BKJQ2foeL3" role="3cqZAp">
+          <node concept="3clFbS" id="5BKJQ2foeL5" role="3clFbx">
+            <node concept="3cpWs8" id="2Ka$uvN35hB" role="3cqZAp">
+              <node concept="3cpWsn" id="2Ka$uvN35hC" role="3cpWs9">
+                <property role="TrG5h" value="windowsDrivePathMatcher" />
+                <node concept="3uibUv" id="2Ka$uvN35hD" role="1tU5fm">
+                  <ref role="3uigEE" to="ni5j:~Matcher" resolve="Matcher" />
+                </node>
+                <node concept="2OqwBi" id="2Ka$uvN35hE" role="33vP2m">
+                  <node concept="37vLTw" id="2ywiPl$C8DL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="23JCGXB6GvF" resolve="WINDOWS_DRIVE_PATH_PATTERN" />
+                  </node>
+                  <node concept="liA8E" id="2Ka$uvN35hG" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
+                    <node concept="37vLTw" id="2Ka$uvN35hH" role="37wK5m">
+                      <ref role="3cqZAo" node="2Ka$uvN35i5" resolve="path" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="2Ka$uvN35hI" role="3cqZAp">
+              <node concept="3clFbS" id="2Ka$uvN35hJ" role="3clFbx">
+                <node concept="3cpWs6" id="2ywiPl$CjEs" role="3cqZAp">
+                  <node concept="2YIFZM" id="2ywiPl$CkGN" role="3cqZAk">
+                    <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <node concept="37vLTw" id="2ywiPl$Cltn" role="37wK5m">
+                      <ref role="3cqZAo" node="2ywiPl$CbCi" resolve="WSL_PATH_FORMAT" />
+                    </node>
+                    <node concept="2OqwBi" id="2ywiPl$Cm$A" role="37wK5m">
+                      <node concept="2OqwBi" id="2ywiPl$Cm$B" role="2Oq$k0">
+                        <node concept="37vLTw" id="2ywiPl$Cm$C" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2Ka$uvN35hC" resolve="windowsDrivePathMatcher" />
+                        </node>
+                        <node concept="liA8E" id="2ywiPl$Cm$D" role="2OqNvi">
+                          <ref role="37wK5l" to="ni5j:~Matcher.group(int)" resolve="group" />
+                          <node concept="3cmrfG" id="2ywiPl$Cm$E" role="37wK5m">
+                            <property role="3cmrfH" value="1" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="2ywiPl$Cm$F" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2ywiPl$CnrZ" role="37wK5m">
+                      <node concept="37vLTw" id="2ywiPl$Cns0" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2Ka$uvN35hC" resolve="windowsDrivePathMatcher" />
+                      </node>
+                      <node concept="liA8E" id="2ywiPl$Cns1" role="2OqNvi">
+                        <ref role="37wK5l" to="ni5j:~Matcher.group(int)" resolve="group" />
+                        <node concept="3cmrfG" id="2ywiPl$Cns2" role="37wK5m">
+                          <property role="3cmrfH" value="2" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2Ka$uvN35i0" role="3clFbw">
+                <node concept="37vLTw" id="2Ka$uvN35i1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2Ka$uvN35hC" resolve="windowsDrivePathMatcher" />
+                </node>
+                <node concept="liA8E" id="2Ka$uvN35i2" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Matcher.matches()" resolve="matches" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="10M0yZ" id="e4vJPsIsAe" role="3clFbw">
+            <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
+            <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="5BKJQ2fogqz" role="3cqZAp" />
+        <node concept="3clFbF" id="2Ka$uvN35i3" role="3cqZAp">
+          <node concept="37vLTw" id="2Ka$uvN35i4" role="3clFbG">
+            <ref role="3cqZAo" node="2Ka$uvN35i5" resolve="path" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2Ka$uvN35i5" role="3clF46">
+        <property role="TrG5h" value="path" />
+        <node concept="17QB3L" id="2Ka$uvN35i6" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="2Ka$uvN35i7" role="3clF45" />
+      <node concept="3Tm1VV" id="2Ka$uvN35i8" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2ywiPl$C0Ud" role="jymVt" />
     <node concept="Wx3nA" id="5Dpaey8tcoT" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
