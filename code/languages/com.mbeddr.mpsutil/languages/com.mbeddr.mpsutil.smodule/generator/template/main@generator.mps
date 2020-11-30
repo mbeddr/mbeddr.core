@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:fd3aaf94-2ab4-4d3f-aa2a-3e36042bb2d0(com.mbeddr.mpsutil.smodule.generator.template.main@generator)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
@@ -111,9 +112,7 @@
       <concept id="1048903277984099198" name="jetbrains.mps.lang.generator.structure.VarMacro2" flags="lg" index="1ps_y7">
         <child id="1048903277984099213" name="variables" index="1ps_xO" />
       </concept>
-      <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX">
-        <child id="982871510068000158" name="sourceNodeQuery" index="1sPUBK" />
-      </concept>
+      <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX" />
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
@@ -585,28 +584,6 @@
             <ref role="1Px2BO" to="pa15:~PreinstalledModelFactoryTypes" resolve="PreinstalledModelFactoryTypes" />
             <node concept="1sPUBX" id="6v4Yls$218f" role="lGtFl">
               <ref role="v9R2y" node="7Ynnt_OiDam" resolve="switch_StorageType" />
-              <node concept="3NFfHV" id="2WYwAhh$99A" role="1sPUBK">
-                <node concept="3clFbS" id="2WYwAhh$99B" role="2VODD2">
-                  <node concept="3clFbF" id="2WYwAhh$9yv" role="3cqZAp">
-                    <node concept="2OqwBi" id="2WYwAhh$aKz" role="3clFbG">
-                      <node concept="1PxgMI" id="2WYwAhh$auk" role="2Oq$k0">
-                        <node concept="chp4Y" id="2WYwAhh$azy" role="3oSUPX">
-                          <ref role="cht4Q" to="gt8j:3d01KqFhiz2" resolve="AddModelOperation" />
-                        </node>
-                        <node concept="2OqwBi" id="2WYwAhh$9If" role="1m5AlR">
-                          <node concept="30H73N" id="2WYwAhh$9yu" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="2WYwAhh$a0z" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="2WYwAhh$b8G" role="2OqNvi">
-                        <ref role="3Tt5mk" to="gt8j:7Ynnt_OiBVL" resolve="storageType" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
           <node concept="Xl_RD" id="lse_ua49k2" role="37wK5m">
@@ -831,28 +808,6 @@
             <ref role="1Px2BO" to="pa15:~PreinstalledModelFactoryTypes" resolve="PreinstalledModelFactoryTypes" />
             <node concept="1sPUBX" id="6v4Yls$21zD" role="lGtFl">
               <ref role="v9R2y" node="7Ynnt_OiDam" resolve="switch_StorageType" />
-              <node concept="3NFfHV" id="2WYwAhh$bim" role="1sPUBK">
-                <node concept="3clFbS" id="2WYwAhh$bin" role="2VODD2">
-                  <node concept="3clFbF" id="2WYwAhh$bII" role="3cqZAp">
-                    <node concept="2OqwBi" id="2WYwAhh$bIJ" role="3clFbG">
-                      <node concept="1PxgMI" id="2WYwAhh$bIK" role="2Oq$k0">
-                        <node concept="chp4Y" id="2WYwAhh$bIL" role="3oSUPX">
-                          <ref role="cht4Q" to="gt8j:3d01KqFhiz2" resolve="AddModelOperation" />
-                        </node>
-                        <node concept="2OqwBi" id="2WYwAhh$bIM" role="1m5AlR">
-                          <node concept="30H73N" id="2WYwAhh$bIN" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="2WYwAhh$bIO" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="2WYwAhh$bIP" role="2OqNvi">
-                        <ref role="3Tt5mk" to="gt8j:7Ynnt_OiBVL" resolve="storageType" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
           <node concept="Xl_RD" id="2rFgM0FVYS_" role="37wK5m">
