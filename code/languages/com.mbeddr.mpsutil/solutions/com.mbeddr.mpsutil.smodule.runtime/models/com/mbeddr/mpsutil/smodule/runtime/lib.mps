@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:eb0002ce-67d6-41e9-b36c-361c22b4de97(com.mbeddr.mpsutil.smodule.runtime.lib)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="fc9fa859-9e8c-4b5f-8a23-d3ba09424d0f" name="com.mbeddr.mpsutil.uniquenames" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
@@ -26,8 +25,8 @@
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="yzht" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:org.jetbrains.concurrency(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="yzht" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:org.jetbrains.concurrency(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
   </imports>
@@ -63,9 +62,16 @@
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY" />
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -238,6 +244,7 @@
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
         <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
         <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
@@ -1129,23 +1136,44 @@
                           <node concept="10Nm6u" id="4jawNYqVv5x" role="33vP2m" />
                         </node>
                       </node>
-                      <node concept="3clFbF" id="2rFgM0FVwux" role="3cqZAp">
-                        <node concept="37vLTI" id="2rFgM0FVwuy" role="3clFbG">
-                          <node concept="2YIFZM" id="2rFgM0FVwuz" role="37vLTx">
-                            <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                            <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot,org.jetbrains.mps.openapi.persistence.ModelFactoryType)" resolve="createModelWithAdjustments" />
-                            <node concept="37vLTw" id="2rFgM0FVwu$" role="37wK5m">
-                              <ref role="3cqZAo" node="2rFgM0FVwvD" resolve="name" />
-                            </node>
-                            <node concept="37vLTw" id="2rFgM0FVwu_" role="37wK5m">
-                              <ref role="3cqZAo" node="2rFgM0FVwu8" resolve="mr" />
-                            </node>
-                            <node concept="37vLTw" id="6v4Yls$1lev" role="37wK5m">
-                              <ref role="3cqZAo" node="6v4Yls$1fsB" resolve="type" />
+                      <node concept="SfApY" id="4jawNYqVtit" role="3cqZAp">
+                        <node concept="3clFbS" id="4jawNYqVtiu" role="SfCbr">
+                          <node concept="3clFbF" id="2rFgM0FVwux" role="3cqZAp">
+                            <node concept="37vLTI" id="2rFgM0FVwuy" role="3clFbG">
+                              <node concept="2YIFZM" id="2rFgM0FVwuz" role="37vLTx">
+                                <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+                                <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot,org.jetbrains.mps.openapi.persistence.ModelFactoryType)" resolve="createModelWithAdjustments" />
+                                <node concept="37vLTw" id="2rFgM0FVwu$" role="37wK5m">
+                                  <ref role="3cqZAo" node="2rFgM0FVwvD" resolve="name" />
+                                </node>
+                                <node concept="37vLTw" id="2rFgM0FVwu_" role="37wK5m">
+                                  <ref role="3cqZAo" node="2rFgM0FVwu8" resolve="mr" />
+                                </node>
+                                <node concept="37vLTw" id="6v4Yls$1lev" role="37wK5m">
+                                  <ref role="3cqZAo" node="6v4Yls$1fsB" resolve="type" />
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="2rFgM0FVwuD" role="37vLTJ">
+                                <ref role="3cqZAo" node="2rFgM0FVwus" resolve="model" />
+                              </node>
                             </node>
                           </node>
-                          <node concept="37vLTw" id="2rFgM0FVwuD" role="37vLTJ">
-                            <ref role="3cqZAo" node="2rFgM0FVwus" resolve="model" />
+                        </node>
+                        <node concept="TDmWw" id="4jawNYqVti$" role="TEbGg">
+                          <node concept="3clFbS" id="4jawNYqVtiB" role="TDEfX">
+                            <node concept="RRSsy" id="4jawNYqVuDO" role="3cqZAp">
+                              <property role="RRSoG" value="gZ5fh_4/error" />
+                              <node concept="Xl_RD" id="4jawNYqVuDQ" role="RRSoy" />
+                              <node concept="37vLTw" id="4jawNYqVuDS" role="RRSow">
+                                <ref role="3cqZAo" node="4jawNYqVtiC" resolve="e" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3cpWsn" id="4jawNYqVtiC" role="TDEfY">
+                            <property role="TrG5h" value="e" />
+                            <node concept="3uibUv" id="4jawNYqVtiz" role="1tU5fm">
+                              <ref role="3uigEE" to="pa15:~ModelCannotBeCreatedException" resolve="ModelCannotBeCreatedException" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -1277,14 +1305,14 @@
                       </node>
                       <node concept="3clFbF" id="2rFgM0FVwvm" role="3cqZAp">
                         <node concept="2OqwBi" id="2rFgM0FVwvn" role="3clFbG">
+                          <node concept="37vLTw" id="6V$9xNdUjfr" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6V$9xNdU9DQ" resolve="res" />
+                          </node>
                           <node concept="liA8E" id="2rFgM0FVwvp" role="2OqNvi">
                             <ref role="37wK5l" to="yzht:~AsyncPromise.setResult(java.lang.Object)" resolve="setResult" />
                             <node concept="37vLTw" id="2rFgM0FVwvq" role="37wK5m">
                               <ref role="3cqZAo" node="2rFgM0FVwus" resolve="model" />
                             </node>
-                          </node>
-                          <node concept="37vLTw" id="6V$9xNdUjfr" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6V$9xNdU9DQ" resolve="res" />
                           </node>
                         </node>
                       </node>
