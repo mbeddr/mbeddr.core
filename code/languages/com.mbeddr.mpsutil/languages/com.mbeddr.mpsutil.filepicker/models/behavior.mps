@@ -200,7 +200,6 @@
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -446,7 +445,7 @@
             <node concept="3clFbJ" id="6WnTJkDU9gr" role="3cqZAp">
               <node concept="3clFbS" id="6WnTJkDU9gs" role="3clFbx">
                 <node concept="3SKdUt" id="6WnTJkDU9gO" role="3cqZAp">
-                  <node concept="1PaTwC" id="6WnTJkDU9gP" role="3ndbpf">
+                  <node concept="1PaTwC" id="6WnTJkDU9gP" role="1aUNEU">
                     <node concept="3oM_SD" id="6WnTJkDU9gQ" role="1PaTwD">
                       <property role="3oM_SC" value="Option" />
                     </node>
@@ -457,7 +456,9 @@
                       <property role="3oM_SC" value="/path/to/library/root/&lt;idea plugin short (folder) name&gt;/languages/&lt;mps group name&gt;/&lt;language/solution name&gt;.jar" />
                     </node>
                   </node>
-                  <node concept="1PaTwC" id="6WnTJkDU9gT" role="3ndbpf">
+                </node>
+                <node concept="3SKdUt" id="59cfP9u9IwR" role="3cqZAp">
+                  <node concept="1PaTwC" id="6WnTJkDU9gT" role="1aUNEU">
                     <node concept="3oM_SD" id="6WnTJkDU9gU" role="1PaTwD">
                       <property role="3oM_SC" value="=&gt;" />
                     </node>
@@ -530,7 +531,7 @@
                 </node>
                 <node concept="3clFbH" id="3YjQI$jsu82" role="3cqZAp" />
                 <node concept="3SKdUt" id="6WnTJkDU9gt" role="3cqZAp">
-                  <node concept="1PaTwC" id="6WnTJkDU9gu" role="3ndbpf">
+                  <node concept="1PaTwC" id="6WnTJkDU9gu" role="1aUNEU">
                     <node concept="3oM_SD" id="6WnTJkDU9gv" role="1PaTwD">
                       <property role="3oM_SC" value="Option" />
                     </node>
@@ -541,7 +542,9 @@
                       <property role="3oM_SC" value="/path/to/library/root/&lt;idea plugin short (folder) name&gt;/languages/&lt;mps group name&gt;/&lt;language/solution name&gt;.jar" />
                     </node>
                   </node>
-                  <node concept="1PaTwC" id="6WnTJkDU9gy" role="3ndbpf">
+                </node>
+                <node concept="3SKdUt" id="59cfP9u9IwU" role="3cqZAp">
+                  <node concept="1PaTwC" id="6WnTJkDU9gy" role="1aUNEU">
                     <node concept="3oM_SD" id="6WnTJkDU9gz" role="1PaTwD">
                       <property role="3oM_SC" value="=&gt;" />
                     </node>
@@ -3238,7 +3241,7 @@
       <node concept="3Tm1VV" id="7c_RIoB8IKt" role="1B3o_S" />
       <node concept="3clFbS" id="7c_RIoB8IKw" role="3clF47">
         <node concept="3SKdUt" id="6xoAPBjQfMg" role="3cqZAp">
-          <node concept="1PaTwC" id="6xoAPBjQfMh" role="3ndbpf">
+          <node concept="1PaTwC" id="6xoAPBjQfMh" role="1aUNEU">
             <node concept="3oM_SD" id="6xoAPBjQfMi" role="1PaTwD">
               <property role="3oM_SC" value="First:" />
             </node>
@@ -3306,7 +3309,7 @@
         </node>
         <node concept="3clFbH" id="3YjQI$hNnAL" role="3cqZAp" />
         <node concept="3SKdUt" id="6WnTJkDC31P" role="3cqZAp">
-          <node concept="1PaTwC" id="6WnTJkDC31Q" role="3ndbpf">
+          <node concept="1PaTwC" id="6WnTJkDC31Q" role="1aUNEU">
             <node concept="3oM_SD" id="6WnTJkDC3iE" role="1PaTwD">
               <property role="3oM_SC" value="Second:" />
             </node>
@@ -3347,7 +3350,9 @@
               <property role="3oM_SC" value="" />
             </node>
           </node>
-          <node concept="1PaTwC" id="6WnTJkDUg1H" role="3ndbpf">
+        </node>
+        <node concept="3SKdUt" id="59cfP9u9IwX" role="3cqZAp">
+          <node concept="1PaTwC" id="6WnTJkDUg1H" role="1aUNEU">
             <node concept="3oM_SD" id="6WnTJkDUg1G" role="1PaTwD">
               <property role="3oM_SC" value="and" />
             </node>
@@ -3528,7 +3533,7 @@
       <node concept="3Tm1VV" id="4eXJ6EOa6Di" role="1B3o_S" />
       <node concept="3clFbS" id="4eXJ6EOa6Dj" role="3clF47">
         <node concept="3SKdUt" id="3YjQI$iUzaP" role="3cqZAp">
-          <node concept="1PaTwC" id="3YjQI$iUzaQ" role="3ndbpf">
+          <node concept="1PaTwC" id="3YjQI$iUzaQ" role="1aUNEU">
             <node concept="3oM_SD" id="3YjQI$iUzaR" role="1PaTwD">
               <property role="3oM_SC" value="First:" />
             </node>
@@ -3596,7 +3601,7 @@
         </node>
         <node concept="3clFbH" id="3YjQI$iUzbg" role="3cqZAp" />
         <node concept="3SKdUt" id="3YjQI$iUzbh" role="3cqZAp">
-          <node concept="1PaTwC" id="3YjQI$iUzbi" role="3ndbpf">
+          <node concept="1PaTwC" id="3YjQI$iUzbi" role="1aUNEU">
             <node concept="3oM_SD" id="3YjQI$iUzbj" role="1PaTwD">
               <property role="3oM_SC" value="Second:" />
             </node>
@@ -3637,7 +3642,9 @@
               <property role="3oM_SC" value="" />
             </node>
           </node>
-          <node concept="1PaTwC" id="3YjQI$iUzbw" role="3ndbpf">
+        </node>
+        <node concept="3SKdUt" id="59cfP9u9Ix0" role="3cqZAp">
+          <node concept="1PaTwC" id="3YjQI$iUzbw" role="1aUNEU">
             <node concept="3oM_SD" id="3YjQI$iUzbx" role="1PaTwD">
               <property role="3oM_SC" value="and" />
             </node>

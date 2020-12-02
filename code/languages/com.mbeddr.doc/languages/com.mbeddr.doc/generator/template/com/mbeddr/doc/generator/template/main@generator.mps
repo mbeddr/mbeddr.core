@@ -147,12 +147,8 @@
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -2702,8 +2698,67 @@
               </node>
             </node>
             <node concept="3SKdUt" id="7NleypLW8_r" role="3cqZAp">
-              <node concept="3SKdUq" id="7NleypLW8_t" role="3SKWNk">
-                <property role="3SKdUp" value="also need to delete all dependsOn refs to the document before removing it (to avoid broken refs errors during generation)" />
+              <node concept="1PaTwC" id="59cfP9u6Nuj" role="1aUNEU">
+                <node concept="3oM_SD" id="59cfP9u6Nuk" role="1PaTwD">
+                  <property role="3oM_SC" value="also" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nul" role="1PaTwD">
+                  <property role="3oM_SC" value="need" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Num" role="1PaTwD">
+                  <property role="3oM_SC" value="to" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nun" role="1PaTwD">
+                  <property role="3oM_SC" value="delete" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nuo" role="1PaTwD">
+                  <property role="3oM_SC" value="all" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nup" role="1PaTwD">
+                  <property role="3oM_SC" value="dependsOn" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nuq" role="1PaTwD">
+                  <property role="3oM_SC" value="refs" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nur" role="1PaTwD">
+                  <property role="3oM_SC" value="to" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nus" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nut" role="1PaTwD">
+                  <property role="3oM_SC" value="document" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nuu" role="1PaTwD">
+                  <property role="3oM_SC" value="before" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nuv" role="1PaTwD">
+                  <property role="3oM_SC" value="removing" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nuw" role="1PaTwD">
+                  <property role="3oM_SC" value="it" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nux" role="1PaTwD">
+                  <property role="3oM_SC" value="(to" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nuy" role="1PaTwD">
+                  <property role="3oM_SC" value="avoid" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nuz" role="1PaTwD">
+                  <property role="3oM_SC" value="broken" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nu$" role="1PaTwD">
+                  <property role="3oM_SC" value="refs" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6Nu_" role="1PaTwD">
+                  <property role="3oM_SC" value="errors" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6NuA" role="1PaTwD">
+                  <property role="3oM_SC" value="during" />
+                </node>
+                <node concept="3oM_SD" id="59cfP9u6NuB" role="1PaTwD">
+                  <property role="3oM_SC" value="generation)" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="7NleypPGigH" role="3cqZAp">

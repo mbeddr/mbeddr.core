@@ -153,9 +153,7 @@
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
-      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO">
-        <property id="4791118330015841686" name="strategy" index="3r2okE" />
-      </concept>
+      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameManglingConfiguration" flags="ng" index="MH4UO" />
     </language>
   </registry>
   <node concept="2v9HqL" id="2kkumeGQeCr">
@@ -183,9 +181,7 @@
     <node concept="2Q9Fgs" id="49XubMpimGh" role="2Q9xDr">
       <node concept="2Q9FjX" id="49XubMpimGi" role="2Q9FjI" />
     </node>
-    <node concept="MH4UO" id="49XubMpx39u" role="2Q9xDr">
-      <property role="3r2okE" value="0" />
-    </node>
+    <node concept="MH4UO" id="49XubMpx39u" role="2Q9xDr" />
     <node concept="2AWWZL" id="4wjSXytPLVP" role="2AWWZH">
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />

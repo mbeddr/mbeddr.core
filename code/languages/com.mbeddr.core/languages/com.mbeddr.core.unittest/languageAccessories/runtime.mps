@@ -348,7 +348,7 @@
       <property role="2OOxQR" value="true" />
       <node concept="2vmPJf" id="EAKPqgNGBS" role="2vmPJn">
         <property role="2vn0DO" value="true" />
-        <property role="2vmPJm" value="1" />
+        <property role="2vmPJm" value="2lgwE2U2X_P/INFO" />
         <property role="TrG5h" value="runningTestCase" />
         <property role="2vmPJh" value="running test case" />
         <node concept="2qqzEA" id="1m$ejqCACd2" role="2qqzEG">
@@ -392,7 +392,6 @@
       </node>
       <node concept="2vmPJf" id="3IOp39ibcQ8" role="2vmPJn">
         <property role="2vn0DO" value="true" />
-        <property role="2vmPJm" value="3" />
         <property role="TrG5h" value="FAILURE_INT_STR" />
         <property role="2vmPJh" value="***FAILURE***" />
         <node concept="2qqzEA" id="3IOp39ibcRA" role="2qqzEG">
@@ -501,7 +500,6 @@
       </node>
       <node concept="2vmPJf" id="3IOp39ibd1V" role="2vmPJn">
         <property role="2vn0DO" value="true" />
-        <property role="2vmPJm" value="3" />
         <property role="TrG5h" value="FAILURE_DOUBLE_STR" />
         <property role="2vmPJh" value="***FAILURE***" />
         <node concept="2qqzEA" id="3IOp39ibd35" role="2qqzEG">

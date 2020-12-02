@@ -29,9 +29,13 @@
   <registry>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
+      <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
+      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
       </concept>
+      <concept id="1525129109275491768" name="com.mbeddr.core.buildconfig.structure.None" flags="ng" index="ZOQlw" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -147,6 +151,9 @@
     </node>
     <node concept="29Nb31" id="2RbC5CY9qWa" role="2ePNbc">
       <property role="TrG5h" value="Tst" />
+      <node concept="ZOQlw" id="59cfP9ua1DO" role="1kZvWc">
+        <property role="TrG5h" value="none" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="1LlGief8ev7">

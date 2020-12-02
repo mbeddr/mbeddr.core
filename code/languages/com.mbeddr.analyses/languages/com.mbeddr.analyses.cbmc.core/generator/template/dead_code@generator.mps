@@ -108,7 +108,6 @@
         <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
       <concept id="1195499912406" name="jetbrains.mps.lang.generator.structure.MappingScript" flags="lg" index="1pmfR0">
-        <property id="1195595592106" name="scriptKind" index="1v3f2W" />
         <property id="1195595611951" name="modifiesModel" index="1v3jST" />
         <child id="1195501105008" name="codeBlock" index="1pqMTA" />
       </concept>
@@ -231,7 +230,6 @@
   </node>
   <node concept="1pmfR0" id="3AX70SQiVXW">
     <property role="TrG5h" value="instrumentDeadCode" />
-    <property role="1v3f2W" value="post_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="3AX70SQiVXX" role="1pqMTA">
       <node concept="3clFbS" id="3AX70SQiVXY" role="2VODD2">

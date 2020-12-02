@@ -2297,7 +2297,7 @@
       <node concept="2vmPJf" id="2lgwE2U3u1O" role="2vmPJn">
         <property role="2vn0DO" value="true" />
         <property role="TrG5h" value="HelloMessage" />
-        <property role="2vmPJm" value="1" />
+        <property role="2vmPJm" value="2lgwE2U2X_P/INFO" />
         <property role="2vmPJh" value="Hello!" />
       </node>
     </node>
@@ -3450,7 +3450,7 @@
       <property role="TrG5h" value="Log" />
       <node concept="2vmPJf" id="6FLcSer$d7v" role="2vmPJn">
         <property role="2vn0DO" value="true" />
-        <property role="2vmPJm" value="1" />
+        <property role="2vmPJm" value="2lgwE2U2X_P/INFO" />
         <property role="TrG5h" value="info" />
         <property role="2vmPJh" value="value" />
         <node concept="2qqzEA" id="6FLcSer$d7w" role="2qqzEG">

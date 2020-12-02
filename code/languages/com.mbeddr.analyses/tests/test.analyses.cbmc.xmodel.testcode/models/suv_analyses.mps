@@ -34,6 +34,7 @@
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
@@ -41,6 +42,7 @@
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
+      <concept id="1525129109275491768" name="com.mbeddr.core.buildconfig.structure.None" flags="ng" index="ZOQlw" />
     </language>
     <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core">
       <concept id="4160512478126213860" name="com.mbeddr.analyses.cbmc.core.structure.DeadCodeAnalysis" flags="ng" index="fXxrE">
@@ -351,6 +353,9 @@
       </node>
       <node concept="2v9HqM" id="7bmaDMybl58" role="2eOfOg">
         <ref role="2v9HqP" to="s5fh:7bmaDMybgIC" resolve="_012_dead_code" />
+      </node>
+      <node concept="ZOQlw" id="59cfP9ua2bp" role="1kZvWc">
+        <property role="TrG5h" value="none" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="7bmaDMyb1bH" role="2Q9xDr">

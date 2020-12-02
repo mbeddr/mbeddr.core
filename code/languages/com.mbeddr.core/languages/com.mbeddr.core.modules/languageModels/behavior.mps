@@ -325,6 +325,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -5043,26 +5046,34 @@
                         <ref role="2pJxaS" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
                         <node concept="2pJxcG" id="6xgYZvbKsxv" role="2pJxcM">
                           <ref role="2pJxcJ" to="x27k:3kEjc_WIKGg" resolve="headerFileName" />
-                          <node concept="37vLTw" id="6xgYZvbKsR6" role="28ntcv">
-                            <ref role="3cqZAo" node="4GT16cGfDI7" resolve="headerName" />
+                          <node concept="WxPPo" id="59cfP9u6LPl" role="28ntcv">
+                            <node concept="37vLTw" id="6xgYZvbKsR6" role="WxPPp">
+                              <ref role="3cqZAo" node="4GT16cGfDI7" resolve="headerName" />
+                            </node>
                           </node>
                         </node>
                         <node concept="2pJxcG" id="6xgYZvbKrxe" role="2pJxcM">
                           <ref role="2pJxcJ" to="x27k:4GT16cGgLYC" resolve="addToHeader" />
-                          <node concept="37vLTw" id="6xgYZvbKrQJ" role="28ntcv">
-                            <ref role="3cqZAo" node="4GT16cGgTNr" resolve="addToHeader" />
+                          <node concept="WxPPo" id="59cfP9u6LPm" role="28ntcv">
+                            <node concept="37vLTw" id="6xgYZvbKrQJ" role="WxPPp">
+                              <ref role="3cqZAo" node="4GT16cGgTNr" resolve="addToHeader" />
+                            </node>
                           </node>
                         </node>
                         <node concept="2pJxcG" id="6xgYZvbKtj$" role="2pJxcM">
                           <ref role="2pJxcJ" to="x27k:3LB9aGk_ryI" resolve="preprocessorCondition" />
-                          <node concept="37vLTw" id="6xgYZvbKtPv" role="28ntcv">
-                            <ref role="3cqZAo" node="3LB9aGk_r91" resolve="preprocessorCondition" />
+                          <node concept="WxPPo" id="59cfP9u6LPn" role="28ntcv">
+                            <node concept="37vLTw" id="6xgYZvbKtPv" role="WxPPp">
+                              <ref role="3cqZAo" node="3LB9aGk_r91" resolve="preprocessorCondition" />
+                            </node>
                           </node>
                         </node>
                         <node concept="2pJxcG" id="6xgYZvbKulN" role="2pJxcM">
                           <ref role="2pJxcJ" to="x27k:1m$ejqCnt4a" resolve="alternativeHeaderFileName" />
-                          <node concept="37vLTw" id="6xgYZvbKuFu" role="28ntcv">
-                            <ref role="3cqZAo" node="1m$ejqCnCYU" resolve="alternativeHeaderName" />
+                          <node concept="WxPPo" id="59cfP9u6LPo" role="28ntcv">
+                            <node concept="37vLTw" id="6xgYZvbKuFu" role="WxPPp">
+                              <ref role="3cqZAo" node="1m$ejqCnCYU" resolve="alternativeHeaderName" />
+                            </node>
                           </node>
                         </node>
                       </node>

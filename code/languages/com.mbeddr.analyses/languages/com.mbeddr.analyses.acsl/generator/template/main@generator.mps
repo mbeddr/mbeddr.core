@@ -122,15 +122,11 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
-      </concept>
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -140,6 +136,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
+      </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
@@ -193,11 +192,8 @@
               <node concept="Xl_RD" id="78Ts1skq3qR" role="37wK5m">
                 <property role="Xl_RC" value="com.mbeddr.analyses.acsl/main.acslGenerationAsText" />
               </node>
-              <node concept="2OqwBi" id="2nfOfEfFDzj" role="37wK5m">
-                <node concept="35c_gC" id="2nfOfEfFCOt" role="2Oq$k0">
-                  <ref role="35c_gD" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
-                </node>
-                <node concept="FGMqu" id="2nfOfEfFEfV" role="2OqNvi" />
+              <node concept="3B5_sB" id="2nfOfEfFDzj" role="37wK5m">
+                <ref role="3B5MYn" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
               </node>
             </node>
           </node>
@@ -431,11 +427,8 @@
               <node concept="Xl_RD" id="5OLOS2sRJ6a" role="37wK5m">
                 <property role="Xl_RC" value="com.mbeddr.analyses.acsl/main.acslGenerationDoNothing" />
               </node>
-              <node concept="2OqwBi" id="2nfOfEfFGeK" role="37wK5m">
-                <node concept="35c_gC" id="2nfOfEfFFvU" role="2Oq$k0">
-                  <ref role="35c_gD" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
-                </node>
-                <node concept="FGMqu" id="2nfOfEfFH4A" role="2OqNvi" />
+              <node concept="3B5_sB" id="2nfOfEfFGeK" role="37wK5m">
+                <ref role="3B5MYn" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
               </node>
             </node>
           </node>

@@ -18,10 +18,14 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
+      </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
       </concept>
+      <concept id="1525129109275491768" name="com.mbeddr.core.buildconfig.structure.None" flags="ng" index="ZOQlw" />
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
@@ -271,6 +275,9 @@
   <node concept="2v9HqL" id="77ctda0CyZy">
     <node concept="2eOfOl" id="77ctda0CzgJ" role="2ePNbc">
       <property role="TrG5h" value="Dummy" />
+      <node concept="ZOQlw" id="59cfP9ua3sV" role="1kZvWc">
+        <property role="TrG5h" value="none" />
+      </node>
     </node>
   </node>
 </model>

@@ -58,16 +58,14 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1MEM7LwxeiC" role="1TKVEi">
       <property role="IQ2ns" value="2065683815623615656" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4MORkbYxnx" resolve="Node" />
     </node>
     <node concept="1TJgyj" id="1MEM7LwxeiE" role="1TKVEi">
       <property role="IQ2ns" value="2065683815623615658" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4MORkbYxnx" resolve="Node" />
     </node>
     <node concept="PrWs8" id="7NPCd7DDwAU" role="PzmwI">
@@ -82,16 +80,16 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1MEM7Lwxek8" role="1TKVEi">
       <property role="IQ2ns" value="2065683815623615752" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="nodes" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1MEM7LwytpY" resolve="INode" />
     </node>
     <node concept="1TJgyj" id="1MEM7Lwxeka" role="1TKVEi">
       <property role="IQ2ns" value="2065683815623615754" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="edges" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7NPCd7DDwAT" resolve="IEdge" />
     </node>
     <node concept="PrWs8" id="1MEM7Lwxekd" role="PzmwI">

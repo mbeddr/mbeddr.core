@@ -127,12 +127,14 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -278,11 +280,8 @@
               <ref role="3cqZAo" node="7Rf0$0HCPb9" resolve="result" />
             </node>
             <node concept="TSZUe" id="7Rf0$0HCPbi" role="2OqNvi">
-              <node concept="2OqwBi" id="1kEmdwEYi$n" role="25WWJ7">
-                <node concept="35c_gC" id="1kEmdwEYi6X" role="2Oq$k0">
-                  <ref role="35c_gD" to="v326:7Rf0$0HCP5j" resolve="SpinExecutable" />
-                </node>
-                <node concept="FGMqu" id="1kEmdwEYj1q" role="2OqNvi" />
+              <node concept="3B5_sB" id="1kEmdwEYi$n" role="25WWJ7">
+                <ref role="3B5MYn" to="v326:7Rf0$0HCP5j" resolve="SpinExecutable" />
               </node>
             </node>
           </node>

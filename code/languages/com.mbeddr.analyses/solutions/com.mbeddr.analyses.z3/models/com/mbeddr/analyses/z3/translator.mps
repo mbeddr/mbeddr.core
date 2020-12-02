@@ -109,9 +109,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -2408,7 +2406,6 @@
     <node concept="3Tm1VV" id="598CSoGhuF$" role="1B3o_S" />
     <node concept="2tJIrI" id="598CSoGhuG9" role="jymVt" />
     <node concept="3clFb_" id="598CSoGhuGJ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="canTranslate" />
       <node concept="3clFbS" id="598CSoGhuGM" role="3clF47" />
@@ -2432,7 +2429,6 @@
     </node>
     <node concept="2tJIrI" id="SU$cf9Tmiz" role="jymVt" />
     <node concept="3clFb_" id="SU$cf9TmfF" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="supportedConcepts" />
       <node concept="3clFbS" id="SU$cf9TmfG" role="3clF47" />
@@ -2446,7 +2442,6 @@
     </node>
     <node concept="2tJIrI" id="598CSoGhOzL" role="jymVt" />
     <node concept="3clFb_" id="598CSoGhOrS" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="translateExpression" />
       <node concept="3clFbS" id="598CSoGhOrT" role="3clF47" />
@@ -3973,7 +3968,6 @@
     <node concept="3Tm1VV" id="4AeTWAG1cfV" role="1B3o_S" />
     <node concept="2tJIrI" id="4AeTWAG1cfW" role="jymVt" />
     <node concept="3clFb_" id="4AeTWAG1cfX" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="canTranslate" />
       <node concept="3clFbS" id="4AeTWAG1cfY" role="3clF47" />
@@ -3997,7 +3991,6 @@
     </node>
     <node concept="2tJIrI" id="4AeTWAG1cg4" role="jymVt" />
     <node concept="3clFb_" id="4AeTWAG1cg5" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="supportedConcepts" />
       <node concept="3clFbS" id="4AeTWAG1cg6" role="3clF47" />
@@ -4011,7 +4004,6 @@
     </node>
     <node concept="2tJIrI" id="4AeTWAG1cgb" role="jymVt" />
     <node concept="3clFb_" id="4AeTWAG1cgc" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="translateType" />
       <node concept="3clFbS" id="4AeTWAG1cgd" role="3clF47" />

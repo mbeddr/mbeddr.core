@@ -74,9 +74,7 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
-      </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
@@ -85,6 +83,7 @@
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
@@ -293,14 +292,15 @@
   </node>
   <node concept="2v9HqL" id="7Rf0$0HKRGO">
     <node concept="1gr5cj" id="7Rf0$0HKRGP" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_do_test" />
       <node concept="2v9HqM" id="7Rf0$0HKRZ_" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRK1" resolve="do_test" />
       </node>
+      <node concept="1l1$C7" id="59cfP9ua2oE" role="1kZvWc">
+        <property role="TrG5h" value="any" />
+      </node>
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRGR" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_hello" />
       <node concept="2v9HqM" id="7Rf0$0HKRZI" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRGp" resolve="hello" />
@@ -311,33 +311,44 @@
       <node concept="2v9HqM" id="7Rf0$0HKRZM" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
       </node>
+      <node concept="1l1$C7" id="59cfP9ua2oF" role="1kZvWc">
+        <property role="TrG5h" value="any" />
+      </node>
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRGT" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_if_test" />
       <node concept="2v9HqM" id="7Rf0$0HKRZF" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRJt" resolve="if_test" />
       </node>
+      <node concept="1l1$C7" id="59cfP9ua2oG" role="1kZvWc">
+        <property role="TrG5h" value="any" />
+      </node>
     </node>
     <node concept="1gr5cj" id="Rd$2EC649N" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_multiple_choice_test" />
       <node concept="2v9HqM" id="Rd$2EC649Y" role="2eOfOg">
         <ref role="2v9HqP" node="Rd$2EC61sj" resolve="multiple_choice_test" />
       </node>
+      <node concept="1l1$C7" id="59cfP9ua2oH" role="1kZvWc">
+        <property role="TrG5h" value="any" />
+      </node>
     </node>
     <node concept="1gr5cj" id="1RC3LaKCwd4" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_select_test" />
       <node concept="2v9HqM" id="1RC3LaKCwdi" role="2eOfOg">
         <ref role="2v9HqP" node="1RC3LaKCvT2" resolve="select_test" />
       </node>
+      <node concept="1l1$C7" id="59cfP9ua2oI" role="1kZvWc">
+        <property role="TrG5h" value="any" />
+      </node>
     </node>
     <node concept="1gr5cj" id="1RC3LaKFjcP" role="2ePNbc">
-      <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_for_test" />
       <node concept="2v9HqM" id="1RC3LaKFlni" role="2eOfOg">
         <ref role="2v9HqP" node="1RC3LaKF8Oj" resolve="for_test" />
+      </node>
+      <node concept="1l1$C7" id="59cfP9ua2oJ" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="1gr5ck" id="7Rf0$0HKRH8" role="2AWWZH">

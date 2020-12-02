@@ -35,7 +35,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -205,12 +204,8 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -1346,14 +1341,66 @@
       <property role="TrG5h" value="allowEverythingExceptWhitespace" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" to="hwgx:8q0nkX_5K4" resolve="allowEverythingExceptWhitespace" />
       <node concept="3Tm1VV" id="7NleypPGjRM" role="1B3o_S" />
       <node concept="3clFbS" id="7NleypPGjRR" role="3clF47">
         <node concept="3SKdUt" id="7NleypPGkH2" role="3cqZAp">
-          <node concept="3SKdUq" id="7NleypPGkH4" role="3SKWNk">
-            <property role="3SKdUp" value="documents names are only used for text generation and file names (hence no need for strict identifier names)" />
+          <node concept="1PaTwC" id="59cfP9u6Ntd" role="1aUNEU">
+            <node concept="3oM_SD" id="59cfP9u6Nte" role="1PaTwD">
+              <property role="3oM_SC" value="documents" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntf" role="1PaTwD">
+              <property role="3oM_SC" value="names" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntg" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Nth" role="1PaTwD">
+              <property role="3oM_SC" value="only" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Nti" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntj" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntk" role="1PaTwD">
+              <property role="3oM_SC" value="text" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntl" role="1PaTwD">
+              <property role="3oM_SC" value="generation" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntm" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntn" role="1PaTwD">
+              <property role="3oM_SC" value="file" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Nto" role="1PaTwD">
+              <property role="3oM_SC" value="names" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntp" role="1PaTwD">
+              <property role="3oM_SC" value="(hence" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntq" role="1PaTwD">
+              <property role="3oM_SC" value="no" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntr" role="1PaTwD">
+              <property role="3oM_SC" value="need" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Nts" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntt" role="1PaTwD">
+              <property role="3oM_SC" value="strict" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntu" role="1PaTwD">
+              <property role="3oM_SC" value="identifier" />
+            </node>
+            <node concept="3oM_SD" id="59cfP9u6Ntv" role="1PaTwD">
+              <property role="3oM_SC" value="names)" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="7NleypPGkDh" role="3cqZAp">
@@ -2997,7 +3044,6 @@
     </node>
     <node concept="13i0hz" id="519ky_SnGeC" role="13h7CS">
       <property role="2Ki8OM" value="true" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="escape" />
       <node concept="3clFbS" id="519ky_SnGeF" role="3clF47">
@@ -3027,7 +3073,6 @@
     </node>
     <node concept="13i0hz" id="519ky_SnIs6" role="13h7CS">
       <property role="2Ki8OM" value="true" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="createFromString" />
       <node concept="3clFbS" id="519ky_SnIs9" role="3clF47">
@@ -3246,7 +3291,6 @@
     </node>
     <node concept="13i0hz" id="5yxqZJwzrdj" role="13h7CS">
       <property role="2Ki8OM" value="true" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="visibleImagesInDocument" />
       <node concept="3clFbS" id="5yxqZJwzrdm" role="3clF47">
@@ -7910,7 +7954,6 @@
       <node concept="17QB3L" id="2NM$qy7Ucpy" role="3clF45" />
     </node>
     <node concept="13i0hz" id="2NM$qy7Y9g8" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />

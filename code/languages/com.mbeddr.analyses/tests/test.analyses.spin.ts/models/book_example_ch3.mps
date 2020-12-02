@@ -93,6 +93,7 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
@@ -101,6 +102,7 @@
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
@@ -753,6 +755,9 @@
       <node concept="2v9HqM" id="4f352SjsVSe" role="2eOfOg">
         <ref role="2v9HqP" node="4f352Sjfuer" resolve="Example_3_1" />
       </node>
+      <node concept="1l1$C7" id="59cfP9ua2s2" role="1kZvWc">
+        <property role="TrG5h" value="any" />
+      </node>
     </node>
     <node concept="1gr5cj" id="4f352SjsQW1" role="2ePNbc">
       <property role="TrG5h" value="pan_Example_3_2" />
@@ -764,6 +769,9 @@
       </node>
       <node concept="2v9HqM" id="_RSgMcK_w0" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+      </node>
+      <node concept="1l1$C7" id="59cfP9ua2s3" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
   </node>

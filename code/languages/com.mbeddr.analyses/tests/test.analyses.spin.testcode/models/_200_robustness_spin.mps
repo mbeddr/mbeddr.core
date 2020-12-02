@@ -56,9 +56,6 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL" />
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
@@ -422,7 +419,6 @@
       <property role="3V$3am" value="binaries" />
       <property role="3V$3ak" value="2d7fadf5-33f6-4e80-a78f-0f739add2bde/7717755763392524104/5046689135694070731" />
       <node concept="1gr5cj" id="70fpbbgzyvl" role="8Wnug">
-        <property role="iO3LB" value="false" />
         <property role="TrG5h" value="pan__010_overflow_harness" />
         <node concept="2v9HqM" id="70fpbbgzyvo" role="2eOfOg">
           <ref role="2v9HqP" node="70fpbbgzxMo" resolve="_010_overflow_harness" />
@@ -853,7 +849,7 @@
           </node>
         </node>
         <node concept="3U$IGs" id="1BFQdmKlKyc" role="3U$Ho4">
-          <property role="3U$IFK" value="1" />
+          <property role="3U$IFK" value="3_CPcn39d$G/OUT" />
         </node>
       </node>
       <node concept="19RgSI" id="370Vv3VyipZ" role="1UOdpc">

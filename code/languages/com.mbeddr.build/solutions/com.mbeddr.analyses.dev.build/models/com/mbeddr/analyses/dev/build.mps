@@ -1894,7 +1894,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.analyses.stan.ts" />
         <property role="3LESm3" value="09137596-3930-4a52-b39f-4d1c6f28f43e" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="5_e$7m1SKId" role="3LF7KH">
           <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
           <node concept="2Ry0Ak" id="5_e$7m1SKIe" role="iGT6I">
@@ -1946,6 +1946,22 @@
             </node>
             <node concept="3qWCbU" id="6xgYZvclCOx" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="59cfP9ua2LX" role="3bR31x">
+          <node concept="3LXTmp" id="59cfP9ua2LY" role="3rtmxm">
+            <node concept="3qWCbU" id="59cfP9ua2LZ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="59cfP9ua2M0" role="3LXTmr">
+              <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
+              <node concept="2Ry0Ak" id="59cfP9ua2M1" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="59cfP9ua2M2" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.analyses.stan.ts" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

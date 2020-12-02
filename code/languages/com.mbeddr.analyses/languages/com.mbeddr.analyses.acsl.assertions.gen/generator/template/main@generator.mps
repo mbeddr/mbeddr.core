@@ -283,11 +283,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
@@ -298,6 +294,9 @@
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
@@ -764,11 +763,8 @@
               <node concept="Xl_RD" id="78Ts1skq3qR" role="37wK5m">
                 <property role="Xl_RC" value="com.mbeddr.analyses.acsl.cbmc.gen/main.acslGenerationAsAssertions" />
               </node>
-              <node concept="2OqwBi" id="2nfOfEfFGeK" role="37wK5m">
-                <node concept="35c_gC" id="2nfOfEfFFvU" role="2Oq$k0">
-                  <ref role="35c_gD" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
-                </node>
-                <node concept="FGMqu" id="2nfOfEfFH4A" role="2OqNvi" />
+              <node concept="3B5_sB" id="2nfOfEfFGeK" role="37wK5m">
+                <ref role="3B5MYn" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
               </node>
             </node>
           </node>

@@ -74,7 +74,6 @@
         <child id="3241057742986074976" name="valueItems" index="17N5uS" />
       </concept>
       <concept id="3373914745211365206" name="com.mbeddr.core.make.structure.Variable" flags="ng" index="3G52F3">
-        <property id="7595578942777303019" name="assignmentType" index="12Lnk_" />
         <child id="3241057742986190568" name="values" index="17Kx8K" />
       </concept>
       <concept id="3373914745211590947" name="com.mbeddr.core.make.structure.PlainTextFragment" flags="ng" index="3G69iQ">
@@ -187,7 +186,6 @@
     <property role="TrG5h" value="Makefile" />
     <node concept="3G52F3" id="bzEfeAYKX6" role="12RR68">
       <property role="TrG5h" value="V" />
-      <property role="12Lnk_" value="=" />
       <node concept="2b32R4" id="bzEfeAYKX8" role="lGtFl">
         <node concept="3JmXsc" id="bzEfeAYKXb" role="2P8S$">
           <node concept="3clFbS" id="bzEfeAYKXc" role="2VODD2">

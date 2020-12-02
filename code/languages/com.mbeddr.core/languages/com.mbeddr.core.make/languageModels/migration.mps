@@ -50,9 +50,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
-      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR">
-        <property id="1225271546413" name="trimKind" index="17S1cK" />
-      </concept>
+      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -102,12 +100,8 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -828,9 +822,7 @@
                                 <ref role="3TsBF5" to="i2y7:6_CUGSFKl0k" resolve="command" />
                               </node>
                             </node>
-                            <node concept="17S1cR" id="7EZ1SpnoV$H" role="2OqNvi">
-                              <property role="17S1cK" value="both" />
-                            </node>
+                            <node concept="17S1cR" id="7EZ1SpnoV$H" role="2OqNvi" />
                           </node>
                           <node concept="17RvpY" id="7EZ1Spnp1i$" role="2OqNvi" />
                         </node>
@@ -1775,8 +1767,31 @@
                   <node concept="1bVj0M" id="1zVqtvgsvF7" role="23t8la">
                     <node concept="3clFbS" id="1zVqtvgsvF8" role="1bW5cS">
                       <node concept="3SKdUt" id="7EZ1SpmSiSb" role="3cqZAp">
-                        <node concept="3SKdUq" id="7EZ1SpmSiSd" role="3SKWNk">
-                          <property role="3SKdUp" value="Migrate target property to plain text target item" />
+                        <node concept="1PaTwC" id="59cfP9u6L_v" role="1aUNEU">
+                          <node concept="3oM_SD" id="59cfP9u6L_w" role="1PaTwD">
+                            <property role="3oM_SC" value="Migrate" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_x" role="1PaTwD">
+                            <property role="3oM_SC" value="target" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_y" role="1PaTwD">
+                            <property role="3oM_SC" value="property" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_z" role="1PaTwD">
+                            <property role="3oM_SC" value="to" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_$" role="1PaTwD">
+                            <property role="3oM_SC" value="plain" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L__" role="1PaTwD">
+                            <property role="3oM_SC" value="text" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_A" role="1PaTwD">
+                            <property role="3oM_SC" value="target" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_B" role="1PaTwD">
+                            <property role="3oM_SC" value="item" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbJ" id="7EZ1Spnm7B5" role="3cqZAp">
@@ -1988,8 +2003,19 @@
                       </node>
                       <node concept="3clFbH" id="7EZ1Spmhtz9" role="3cqZAp" />
                       <node concept="3SKdUt" id="7EZ1SpmTZee" role="3cqZAp">
-                        <node concept="3SKdUq" id="7EZ1SpmTZeg" role="3SKWNk">
-                          <property role="3SKdUp" value="Migrate dependencies to prerequisites" />
+                        <node concept="1PaTwC" id="59cfP9u6L_C" role="1aUNEU">
+                          <node concept="3oM_SD" id="59cfP9u6L_D" role="1PaTwD">
+                            <property role="3oM_SC" value="Migrate" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_E" role="1PaTwD">
+                            <property role="3oM_SC" value="dependencies" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_F" role="1PaTwD">
+                            <property role="3oM_SC" value="to" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_G" role="1PaTwD">
+                            <property role="3oM_SC" value="prerequisites" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbF" id="7EZ1Spmc8Oe" role="3cqZAp">
@@ -2371,8 +2397,28 @@
                       </node>
                       <node concept="3clFbH" id="7EZ1SpmLmBs" role="3cqZAp" />
                       <node concept="3SKdUt" id="7EZ1SpmTcxl" role="3cqZAp">
-                        <node concept="3SKdUq" id="7EZ1SpmTcxn" role="3SKWNk">
-                          <property role="3SKdUp" value="Migrate commands and conditional directives to recipes" />
+                        <node concept="1PaTwC" id="59cfP9u6L_H" role="1aUNEU">
+                          <node concept="3oM_SD" id="59cfP9u6L_I" role="1PaTwD">
+                            <property role="3oM_SC" value="Migrate" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_J" role="1PaTwD">
+                            <property role="3oM_SC" value="commands" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_K" role="1PaTwD">
+                            <property role="3oM_SC" value="and" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_L" role="1PaTwD">
+                            <property role="3oM_SC" value="conditional" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_M" role="1PaTwD">
+                            <property role="3oM_SC" value="directives" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_N" role="1PaTwD">
+                            <property role="3oM_SC" value="to" />
+                          </node>
+                          <node concept="3oM_SD" id="59cfP9u6L_O" role="1PaTwD">
+                            <property role="3oM_SC" value="recipes" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbF" id="1zVqtvgsvF9" role="3cqZAp">

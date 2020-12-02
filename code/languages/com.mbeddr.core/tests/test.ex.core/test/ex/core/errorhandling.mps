@@ -123,9 +123,7 @@
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
       </concept>
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y">
-        <property id="5591170374820856030" name="testResultLayout" index="1Ctlcb" />
-      </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
@@ -572,9 +570,7 @@
         <property role="TrG5h" value="any" />
       </node>
     </node>
-    <node concept="12mU2y" id="4QnOXkA2Bzo" role="2Q9xDr">
-      <property role="1Ctlcb" value="0" />
-    </node>
+    <node concept="12mU2y" id="4QnOXkA2Bzo" role="2Q9xDr" />
     <node concept="MH4UO" id="4QnOXk_y73o" role="2Q9xDr" />
     <node concept="2xfidK" id="7B3zdKLrKrl" role="2AWWZH">
       <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />

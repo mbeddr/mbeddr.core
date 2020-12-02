@@ -600,7 +600,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -630,9 +629,6 @@
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
@@ -645,6 +641,9 @@
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
@@ -5098,11 +5097,8 @@
             <node concept="Xl_RD" id="5FYYhMLw_ab" role="37wK5m">
               <property role="Xl_RC" value="com.mbeddr.core.unittest/unittest_main" />
             </node>
-            <node concept="2OqwBi" id="5FYYhMLw_ac" role="37wK5m">
-              <node concept="35c_gC" id="5FYYhMLw_ad" role="2Oq$k0">
-                <ref role="35c_gD" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
-              </node>
-              <node concept="FGMqu" id="5FYYhMLw_ae" role="2OqNvi" />
+            <node concept="3B5_sB" id="5FYYhMLw_ac" role="37wK5m">
+              <ref role="3B5MYn" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
             </node>
             <node concept="Xl_RD" id="5FYYhMLw_af" role="37wK5m">
               <property role="Xl_RC" value="skipping makefile augmentation" />
@@ -5355,7 +5351,7 @@
   </node>
   <node concept="1pmfR0" id="4JYoVJb56bR">
     <property role="TrG5h" value="resetMessageCountBeforeTest" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="4JYoVJb56bS" role="1pqMTA">
       <node concept="3clFbS" id="4JYoVJb56bT" role="2VODD2">
@@ -5458,7 +5454,7 @@
   </node>
   <node concept="1pmfR0" id="5usoWIKpmeA">
     <property role="TrG5h" value="importUnitTestModules" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="5usoWIKpmeB" role="1pqMTA">
       <node concept="3clFbS" id="5usoWIKpmeC" role="2VODD2">
@@ -5873,7 +5869,6 @@
   </node>
   <node concept="1pmfR0" id="2dCF6FyLIaI">
     <property role="TrG5h" value="rebindUnitTestMessages" />
-    <property role="1v3f2W" value="post_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="2dCF6FyLIaJ" role="1pqMTA">
       <node concept="3clFbS" id="2dCF6FyLIaK" role="2VODD2">
@@ -8058,11 +8053,8 @@
             <node concept="Xl_RD" id="5FYYhMLwBeN" role="37wK5m">
               <property role="Xl_RC" value="com.mbeddr.core.unittest/unittest_main" />
             </node>
-            <node concept="2OqwBi" id="5FYYhMLwBeO" role="37wK5m">
-              <node concept="35c_gC" id="5FYYhMLwBeP" role="2Oq$k0">
-                <ref role="35c_gD" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
-              </node>
-              <node concept="FGMqu" id="5FYYhMLwBeQ" role="2OqNvi" />
+            <node concept="3B5_sB" id="5FYYhMLwBeO" role="37wK5m">
+              <ref role="3B5MYn" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
             </node>
             <node concept="Xl_RD" id="5FYYhMLwBeR" role="37wK5m">
               <property role="Xl_RC" value="skipping makefile augmentation" />
@@ -11521,11 +11513,8 @@
             <node concept="Xl_RD" id="5FYYhML5omK" role="37wK5m">
               <property role="Xl_RC" value="com.mbeddr.core.unittest/unittest_main" />
             </node>
-            <node concept="2OqwBi" id="5FYYhML5omL" role="37wK5m">
-              <node concept="35c_gC" id="5FYYhML5omM" role="2Oq$k0">
-                <ref role="35c_gD" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
-              </node>
-              <node concept="FGMqu" id="5FYYhML5omN" role="2OqNvi" />
+            <node concept="3B5_sB" id="5FYYhML5omL" role="37wK5m">
+              <ref role="3B5MYn" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
             </node>
             <node concept="Xl_RD" id="5FYYhML5omO" role="37wK5m">
               <property role="Xl_RC" value="skipping makefile augmentation" />
@@ -11815,7 +11804,6 @@
           </node>
           <node concept="3G52F3" id="4JZ_DSwhty8" role="1CrrWa">
             <property role="TrG5h" value="TEST_EXEC_OPTS" />
-            <property role="12Lnk_" value="=" />
             <node concept="94E81" id="4JZ_DSwhty9" role="17Kx8K">
               <node concept="3G69iQ" id="4JZ_DSwhtya" role="17N5uS">
                 <property role="3G69iL" value="--build-dir=" />
@@ -12214,11 +12202,8 @@
             <node concept="Xl_RD" id="4QnOXk_OsYw" role="37wK5m">
               <property role="Xl_RC" value="com.mbeddr.core.unittest/unittest_main" />
             </node>
-            <node concept="2OqwBi" id="4QnOXk_OsYx" role="37wK5m">
-              <node concept="35c_gC" id="4QnOXk_OsYy" role="2Oq$k0">
-                <ref role="35c_gD" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
-              </node>
-              <node concept="FGMqu" id="4QnOXk_OsYz" role="2OqNvi" />
+            <node concept="3B5_sB" id="4QnOXk_OsYx" role="37wK5m">
+              <ref role="3B5MYn" to="yz9a:7tWSY$P9Odb" resolve="UnitTestConfigItem" />
             </node>
             <node concept="Xl_RD" id="4QnOXk_OuL$" role="37wK5m">
               <property role="Xl_RC" value="skipping makefile augmentation" />
