@@ -7,7 +7,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -62,16 +62,8 @@
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
-        <child id="1164879758292" name="body" index="SfCbr" />
-        <child id="1164903496223" name="catchClause" index="TEbGg" />
-      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -1136,8 +1128,8 @@
                           <node concept="10Nm6u" id="4jawNYqVv5x" role="33vP2m" />
                         </node>
                       </node>
-                      <node concept="SfApY" id="4jawNYqVtit" role="3cqZAp">
-                        <node concept="3clFbS" id="4jawNYqVtiu" role="SfCbr">
+                      <node concept="3J1_TO" id="4jawNYqVtit" role="3cqZAp">
+                        <node concept="3clFbS" id="4jawNYqVtiu" role="1zxBo7">
                           <node concept="3clFbF" id="2rFgM0FVwux" role="3cqZAp">
                             <node concept="37vLTI" id="2rFgM0FVwuy" role="3clFbG">
                               <node concept="2YIFZM" id="2rFgM0FVwuz" role="37vLTx">
@@ -1159,20 +1151,23 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="TDmWw" id="4jawNYqVti$" role="TEbGg">
-                          <node concept="3clFbS" id="4jawNYqVtiB" role="TDEfX">
+                        <node concept="3uVAMA" id="4jawNYqVti$" role="1zxBo5">
+                          <node concept="XOnhg" id="4jawNYqVtiC" role="1zc67B">
+                            <property role="3TUv4t" value="false" />
+                            <property role="TrG5h" value="e" />
+                            <node concept="nSUau" id="4SLxl4sfeWm" role="1tU5fm">
+                              <node concept="3uibUv" id="4jawNYqVtiz" role="nSUat">
+                                <ref role="3uigEE" to="pa15:~ModelCannotBeCreatedException" resolve="ModelCannotBeCreatedException" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="4jawNYqVtiB" role="1zc67A">
                             <node concept="RRSsy" id="4jawNYqVuDO" role="3cqZAp">
                               <property role="RRSoG" value="gZ5fh_4/error" />
                               <node concept="Xl_RD" id="4jawNYqVuDQ" role="RRSoy" />
                               <node concept="37vLTw" id="4jawNYqVuDS" role="RRSow">
                                 <ref role="3cqZAo" node="4jawNYqVtiC" resolve="e" />
                               </node>
-                            </node>
-                          </node>
-                          <node concept="3cpWsn" id="4jawNYqVtiC" role="TDEfY">
-                            <property role="TrG5h" value="e" />
-                            <node concept="3uibUv" id="4jawNYqVtiz" role="1tU5fm">
-                              <ref role="3uigEE" to="pa15:~ModelCannotBeCreatedException" resolve="ModelCannotBeCreatedException" />
                             </node>
                           </node>
                         </node>
@@ -1608,14 +1603,14 @@
                 <property role="TrG5h" value="result" />
                 <property role="3TUv4t" value="true" />
                 <node concept="3uibUv" id="4YitgkJ$egx" role="1tU5fm">
-                  <ref role="3uigEE" to="zn9m:~AsyncResult" resolve="AsyncResult" />
+                  <ref role="3uigEE" to="yzht:~AsyncPromise" resolve="AsyncPromise" />
                   <node concept="3uibUv" id="4YitgkJ$egy" role="11_B2D">
                     <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
                   </node>
                 </node>
                 <node concept="2ShNRf" id="4YitgkJ$egz" role="33vP2m">
                   <node concept="1pGfFk" id="4YitgkJ$eg$" role="2ShVmc">
-                    <ref role="37wK5l" to="zn9m:~AsyncResult.&lt;init&gt;()" resolve="AsyncResult" />
+                    <ref role="37wK5l" to="yzht:~AsyncPromise.&lt;init&gt;()" resolve="AsyncPromise" />
                     <node concept="3uibUv" id="4YitgkJ$eg_" role="1pMfVU">
                       <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
                     </node>
@@ -1658,7 +1653,7 @@
                         <ref role="3cqZAo" node="4YitgkJ$egw" resolve="result" />
                       </node>
                       <node concept="liA8E" id="4YitgkJ$egN" role="2OqNvi">
-                        <ref role="37wK5l" to="zn9m:~AsyncResult.setDone(java.lang.Object)" resolve="setDone" />
+                        <ref role="37wK5l" to="yzht:~AsyncPromise.setResult(java.lang.Object)" resolve="setResult" />
                         <node concept="37vLTw" id="4YitgkJ$egO" role="37wK5m">
                           <ref role="3cqZAo" node="4YitgkJ$egE" resolve="resultSolution" />
                         </node>
@@ -1681,8 +1676,8 @@
                 <node concept="37vLTw" id="4YitgkJ$egR" role="2Oq$k0">
                   <ref role="3cqZAo" node="4YitgkJ$egw" resolve="result" />
                 </node>
-                <node concept="liA8E" id="4YitgkJ$egS" role="2OqNvi">
-                  <ref role="37wK5l" to="zn9m:~AsyncResult.getResultSync()" resolve="getResultSync" />
+                <node concept="liA8E" id="7aBk9G3aw1A" role="2OqNvi">
+                  <ref role="37wK5l" to="yzht:~AsyncPromise.get()" resolve="get" />
                 </node>
               </node>
             </node>
@@ -1697,14 +1692,14 @@
             <property role="TrG5h" value="res" />
             <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="4YitgkJ$egY" role="1tU5fm">
-              <ref role="3uigEE" to="zn9m:~AsyncResult" resolve="AsyncResult" />
+              <ref role="3uigEE" to="yzht:~AsyncPromise" resolve="AsyncPromise" />
               <node concept="3uibUv" id="4YitgkJ$egZ" role="11_B2D">
                 <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
               </node>
             </node>
             <node concept="2ShNRf" id="4YitgkJ$eh0" role="33vP2m">
               <node concept="1pGfFk" id="4YitgkJ$eh1" role="2ShVmc">
-                <ref role="37wK5l" to="zn9m:~AsyncResult.&lt;init&gt;()" resolve="AsyncResult" />
+                <ref role="37wK5l" to="yzht:~AsyncPromise.&lt;init&gt;()" resolve="AsyncPromise" />
                 <node concept="3uibUv" id="4YitgkJ$eh2" role="1pMfVU">
                   <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
                 </node>
@@ -1739,35 +1734,7 @@
                       <node concept="3Tm1VV" id="4YitgkJ$ehd" role="1B3o_S" />
                       <node concept="3cqZAl" id="4YitgkJ$ehe" role="3clF45" />
                       <node concept="3clFbS" id="4YitgkJ$ehf" role="3clF47">
-                        <node concept="SfApY" id="4YitgkJ$ehg" role="3cqZAp">
-                          <node concept="3uVAMA" id="4YitgkJ$ehh" role="1zxBo5">
-                            <node concept="XOnhg" id="4YitgkJ$ehi" role="1zc67B">
-                              <property role="3TUv4t" value="false" />
-                              <property role="TrG5h" value="t" />
-                              <node concept="nSUau" id="5y0qihQLCVy" role="1tU5fm">
-                                <node concept="3uibUv" id="4YitgkJ$ehj" role="nSUat">
-                                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3clFbS" id="4YitgkJ$ehk" role="1zc67A">
-                              <node concept="3clFbF" id="4YitgkJ$ehl" role="3cqZAp">
-                                <node concept="2OqwBi" id="4YitgkJ$ehm" role="3clFbG">
-                                  <node concept="37vLTw" id="4YitgkJ$ehn" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="4YitgkJ$egX" resolve="res" />
-                                  </node>
-                                  <node concept="liA8E" id="4YitgkJ$eho" role="2OqNvi">
-                                    <ref role="37wK5l" to="zn9m:~ActionCallback.setRejected()" resolve="setRejected" />
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="YS8fn" id="4YitgkJ$ehp" role="3cqZAp">
-                                <node concept="37vLTw" id="4YitgkJ$ehq" role="YScLw">
-                                  <ref role="3cqZAo" node="4YitgkJ$ehi" resolve="t" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
+                        <node concept="3J1_TO" id="4YitgkJ$ehg" role="3cqZAp">
                           <node concept="3clFbS" id="4YitgkJ$ehr" role="1zxBo7">
                             <node concept="3cpWs8" id="4YitgkJ$ehs" role="3cqZAp">
                               <node concept="3cpWsn" id="4YitgkJ$eht" role="3cpWs9">
@@ -1801,10 +1768,41 @@
                                   <ref role="3cqZAo" node="4YitgkJ$egX" resolve="res" />
                                 </node>
                                 <node concept="liA8E" id="4YitgkJ$ehA" role="2OqNvi">
-                                  <ref role="37wK5l" to="zn9m:~AsyncResult.setDone(java.lang.Object)" resolve="setDone" />
+                                  <ref role="37wK5l" to="yzht:~AsyncPromise.setResult(java.lang.Object)" resolve="setResult" />
                                   <node concept="37vLTw" id="4YitgkJ$ehB" role="37wK5m">
                                     <ref role="3cqZAo" node="4YitgkJ$eht" resolve="result" />
                                   </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3uVAMA" id="4YitgkJ$ehh" role="1zxBo5">
+                            <node concept="XOnhg" id="4YitgkJ$ehi" role="1zc67B">
+                              <property role="3TUv4t" value="false" />
+                              <property role="TrG5h" value="t" />
+                              <node concept="nSUau" id="5y0qihQLCVy" role="1tU5fm">
+                                <node concept="3uibUv" id="4YitgkJ$ehj" role="nSUat">
+                                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbS" id="4YitgkJ$ehk" role="1zc67A">
+                              <node concept="3clFbF" id="4YitgkJ$ehl" role="3cqZAp">
+                                <node concept="2OqwBi" id="4YitgkJ$ehm" role="3clFbG">
+                                  <node concept="37vLTw" id="4YitgkJ$ehn" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="4YitgkJ$egX" resolve="res" />
+                                  </node>
+                                  <node concept="liA8E" id="7aBk9G3a_ia" role="2OqNvi">
+                                    <ref role="37wK5l" to="yzht:~AsyncPromise.setError(java.lang.Throwable)" resolve="setError" />
+                                    <node concept="37vLTw" id="7aBk9G3a_F$" role="37wK5m">
+                                      <ref role="3cqZAo" node="4YitgkJ$ehi" resolve="t" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="YS8fn" id="4YitgkJ$ehp" role="3cqZAp">
+                                <node concept="37vLTw" id="4YitgkJ$ehq" role="YScLw">
+                                  <ref role="3cqZAo" node="4YitgkJ$ehi" resolve="t" />
                                 </node>
                               </node>
                             </node>
@@ -1823,8 +1821,8 @@
             <node concept="37vLTw" id="4YitgkJ$ehE" role="2Oq$k0">
               <ref role="3cqZAo" node="4YitgkJ$egX" resolve="res" />
             </node>
-            <node concept="liA8E" id="4YitgkJ$ehF" role="2OqNvi">
-              <ref role="37wK5l" to="zn9m:~AsyncResult.getResultSync()" resolve="getResultSync" />
+            <node concept="liA8E" id="7aBk9G3aA9s" role="2OqNvi">
+              <ref role="37wK5l" to="yzht:~AsyncPromise.get()" resolve="get" />
             </node>
           </node>
         </node>
