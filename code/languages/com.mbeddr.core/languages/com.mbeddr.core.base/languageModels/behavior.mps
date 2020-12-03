@@ -19964,7 +19964,31 @@
           </node>
           <node concept="1PaTwC" id="7fn1GcIsQLU" role="3ndbpf">
             <node concept="3oM_SD" id="7fn1GcIsQLV" role="1PaTwD">
-              <property role="3oM_SC" value="/path/to/library/root/&lt;idea plugin short (folder) name&gt;/languages/&lt;mps group name&gt;/&lt;language/solution name&gt;-src.jar!&lt;language/solution name&gt;/&lt;model" />
+              <property role="3oM_SC" value="/path/to/library/root/&lt;idea" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3xn" role="1PaTwD">
+              <property role="3oM_SC" value="plugin" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3xo" role="1PaTwD">
+              <property role="3oM_SC" value="short" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3xp" role="1PaTwD">
+              <property role="3oM_SC" value="(folder)" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3xq" role="1PaTwD">
+              <property role="3oM_SC" value="name&gt;/languages/&lt;mps" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3xr" role="1PaTwD">
+              <property role="3oM_SC" value="group" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3xs" role="1PaTwD">
+              <property role="3oM_SC" value="name&gt;/&lt;language/solution" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3xt" role="1PaTwD">
+              <property role="3oM_SC" value="name&gt;-src.jar!&lt;language/solution" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3xu" role="1PaTwD">
+              <property role="3oM_SC" value="name&gt;/&lt;model" />
             </node>
             <node concept="3oM_SD" id="7fn1GcIsQLW" role="1PaTwD">
               <property role="3oM_SC" value="name&gt;/" />
@@ -19977,7 +20001,28 @@
           </node>
           <node concept="1PaTwC" id="7fn1GcIsQLZ" role="3ndbpf">
             <node concept="3oM_SD" id="7fn1GcIsQM0" role="1PaTwD">
-              <property role="3oM_SC" value="/path/to/library/root/&lt;idea plugin short (folder) name&gt;/languages/&lt;mps group name&gt;/&lt;language/solution name&gt;/src/&lt;model" />
+              <property role="3oM_SC" value="/path/to/library/root/&lt;idea" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3x4" role="1PaTwD">
+              <property role="3oM_SC" value="plugin" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3x5" role="1PaTwD">
+              <property role="3oM_SC" value="short" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3x6" role="1PaTwD">
+              <property role="3oM_SC" value="(folder)" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3x7" role="1PaTwD">
+              <property role="3oM_SC" value="name&gt;/languages/&lt;mps" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3x8" role="1PaTwD">
+              <property role="3oM_SC" value="group" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3x9" role="1PaTwD">
+              <property role="3oM_SC" value="name&gt;/&lt;language/solution" />
+            </node>
+            <node concept="3oM_SD" id="27KN8bxi3xa" role="1PaTwD">
+              <property role="3oM_SC" value="name&gt;/src/&lt;model" />
             </node>
             <node concept="3oM_SD" id="7fn1GcIsQM1" role="1PaTwD">
               <property role="3oM_SC" value="name" />
