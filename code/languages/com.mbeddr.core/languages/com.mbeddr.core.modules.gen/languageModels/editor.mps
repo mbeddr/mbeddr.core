@@ -16,10 +16,10 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="vrqd" ref="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="y4ob" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.menus(MPS.Editor/)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="y4ob" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.menus(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -273,6 +273,25 @@
           </node>
         </node>
       </node>
+      <node concept="3EZMnI" id="DEJWkmcsD$" role="3EZMnx">
+        <node concept="2iRfu4" id="DEJWkmcsD_" role="2iSdaV" />
+        <node concept="3F0ifn" id="DEJWkmcsDA" role="3EZMnx">
+          <property role="3F0ifm" value="can mangle names:" />
+        </node>
+        <node concept="3F0A7n" id="DEJWkmcsDB" role="3EZMnx">
+          <ref role="1NtTu8" to="d0vh:2qdxtjqNyZo" resolve="canMangleNames" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="DEJWkmcsDC" role="3EZMnx">
+        <node concept="2iRfu4" id="DEJWkmcsDD" role="2iSdaV" />
+        <node concept="3F0ifn" id="DEJWkmcsDE" role="3EZMnx">
+          <property role="3F0ifm" value="module name prefix:" />
+        </node>
+        <node concept="3F0A7n" id="DEJWkmcsDF" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="x27k:7Aba6ByEJr$" resolve="moduleNamePrefix" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="6uZAbUKfp4i" role="3EZMnx">
         <property role="3F0ifm" value="" />
       </node>
@@ -346,6 +365,25 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+      <node concept="3EZMnI" id="DEJWkmbKVy" role="3EZMnx">
+        <node concept="2iRfu4" id="DEJWkmbKVz" role="2iSdaV" />
+        <node concept="3F0ifn" id="DEJWkmbHQV" role="3EZMnx">
+          <property role="3F0ifm" value="can mangle names:" />
+        </node>
+        <node concept="3F0A7n" id="DEJWkmbNo3" role="3EZMnx">
+          <ref role="1NtTu8" to="d0vh:2qdxtjqNyZo" resolve="canMangleNames" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="DEJWkmbOiH" role="3EZMnx">
+        <node concept="2iRfu4" id="DEJWkmbOiI" role="2iSdaV" />
+        <node concept="3F0ifn" id="DEJWkmbOiJ" role="3EZMnx">
+          <property role="3F0ifm" value="module name prefix:" />
+        </node>
+        <node concept="3F0A7n" id="DEJWkmbOiK" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="x27k:7Aba6ByEJr$" resolve="moduleNamePrefix" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="6uZAbUKfobe" role="3EZMnx">
         <property role="3F0ifm" value="" />
       </node>
@@ -359,7 +397,7 @@
           <ref role="1NtTu8" to="d0vh:6TPUpoFwFrI" resolve="copyrightNoticePath" />
         </node>
       </node>
-      <node concept="3F0ifn" id="6TPUpoF_itK" role="3EZMnx" />
+      <node concept="3F0ifn" id="DEJWkmbIaO" role="3EZMnx" />
       <node concept="3F0ifn" id="34x64NyTlaF" role="3EZMnx">
         <property role="3F0ifm" value="header imports:" />
       </node>

@@ -8148,7 +8148,7 @@
                   <node concept="liA8E" id="6TPUpo$St3V" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="6TPUpo$St5h" role="37wK5m">
-                      <property role="Xl_RC" value=".*( |\\\\[nt]|0x|#|[\\(\\[\\{]|[\\+-\\\\*/]|[§~])" />
+                      <property role="Xl_RC" value=".*( |\\\\[nt]|0x|#|[\\(\\[\\{]|[\\+\\-*/]|[§~])" />
                     </node>
                   </node>
                 </node>
@@ -8399,7 +8399,7 @@
                   <node concept="liA8E" id="6TPUpo$OfV3" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="6TPUpo$OfV4" role="37wK5m">
-                      <property role="Xl_RC" value="( |\\\\[nt]|[\\.,:;?!]|[\\)\\]\\}]|[\\+-\\\\*/]|[%°]).*" />
+                      <property role="Xl_RC" value="( |\\\\[nt]|[\\.,:;?!]|[\\)\\]\\}]|[\\+\\-*/]|[%°]).*" />
                     </node>
                   </node>
                 </node>
@@ -8602,6 +8602,21 @@
       <node concept="3clFbS" id="1EZSCJhU$We" role="3clF47">
         <node concept="3cpWs6" id="1EZSCJhUF4E" role="3cqZAp">
           <node concept="2OqwBi" id="1EZSCJhUF4G" role="3cqZAk">
+            <node concept="2OqwBi" id="6xgYZvkZtBC" role="2Oq$k0">
+              <node concept="2OqwBi" id="1EZSCJhUF4J" role="2Oq$k0">
+                <node concept="13iPFW" id="1EZSCJhUF4K" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1EZSCJhUF4L" role="2OqNvi">
+                  <ref role="3Tt5mk" to="k146:1EZSCJhF1Yv" resolve="text" />
+                </node>
+              </node>
+              <node concept="2Rf3mk" id="6xgYZvkZtPX" role="2OqNvi">
+                <node concept="1xMEDy" id="6xgYZvkZtPZ" role="1xVPHs">
+                  <node concept="chp4Y" id="6xgYZvkZuw7" role="ri$Ld">
+                    <ref role="cht4Q" to="k146:1EZSCJhI$Q7" resolve="LogExpressionWord" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3$u5V9" id="1EZSCJhUF4P" role="2OqNvi">
               <node concept="1bVj0M" id="1EZSCJhUF4Q" role="23t8la">
                 <node concept="3clFbS" id="1EZSCJhUF4R" role="1bW5cS">
@@ -8619,21 +8634,6 @@
                 <node concept="Rh6nW" id="1EZSCJhUF4W" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
                   <node concept="2jxLKc" id="1EZSCJhUF4X" role="1tU5fm" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="6xgYZvkZtBC" role="2Oq$k0">
-              <node concept="2OqwBi" id="1EZSCJhUF4J" role="2Oq$k0">
-                <node concept="13iPFW" id="1EZSCJhUF4K" role="2Oq$k0" />
-                <node concept="3TrEf2" id="1EZSCJhUF4L" role="2OqNvi">
-                  <ref role="3Tt5mk" to="k146:1EZSCJhF1Yv" resolve="text" />
-                </node>
-              </node>
-              <node concept="2Rf3mk" id="6xgYZvkZtPX" role="2OqNvi">
-                <node concept="1xMEDy" id="6xgYZvkZtPZ" role="1xVPHs">
-                  <node concept="chp4Y" id="6xgYZvkZuw7" role="ri$Ld">
-                    <ref role="cht4Q" to="k146:1EZSCJhI$Q7" resolve="LogExpressionWord" />
-                  </node>
                 </node>
               </node>
             </node>
@@ -9889,9 +9889,6 @@
         </node>
       </node>
     </node>
-    <node concept="13hLZK" id="4zXqh6WD7Fw" role="13h7CW">
-      <node concept="3clFbS" id="4zXqh6WD7Fx" role="2VODD2" />
-    </node>
     <node concept="13i0hz" id="6xgYZv8qBqM" role="13h7CS">
       <property role="TrG5h" value="getPrintfFunctionExtraArgs" />
       <property role="13i0it" value="true" />
@@ -9925,6 +9922,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13hLZK" id="4zXqh6WD7Fw" role="13h7CW">
+      <node concept="3clFbS" id="4zXqh6WD7Fx" role="2VODD2" />
     </node>
   </node>
 </model>

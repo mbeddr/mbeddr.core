@@ -772,6 +772,18 @@
     <node concept="tnohg" id="6bM7gvq4qYN" role="tncku">
       <node concept="3clFbS" id="6bM7gvq4qYO" role="2VODD2">
         <node concept="3J1_TO" id="6bM7gvq4ViO" role="3cqZAp">
+          <node concept="3uVAMA" id="6bM7gvq4ViV" role="1zxBo5">
+            <node concept="XOnhg" id="6bM7gvq4ViZ" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="90Ii6tK2WS" role="1tU5fm">
+                <node concept="3uibUv" id="6bM7gvq4ViU" role="nSUat">
+                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6bM7gvq4ViY" role="1zc67A" />
+          </node>
           <node concept="3clFbS" id="6bM7gvq4ViT" role="1zxBo7">
             <node concept="3clFbF" id="6bM7gvq4P_5" role="3cqZAp">
               <node concept="2OqwBi" id="6bM7gvq4PA6" role="3clFbG">
@@ -790,18 +802,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3uVAMA" id="6bM7gvq4ViV" role="1zxBo5">
-            <node concept="XOnhg" id="6bM7gvq4ViZ" role="1zc67B">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="90Ii6tK2WS" role="1tU5fm">
-                <node concept="3uibUv" id="6bM7gvq4ViU" role="nSUat">
-                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="6bM7gvq4ViY" role="1zc67A" />
           </node>
         </node>
       </node>
@@ -859,7 +859,7 @@
   </node>
   <node concept="sE7Ow" id="7uLL3Mf2tAp">
     <property role="TrG5h" value="openModuleDirInFileManager" />
-    <property role="2uzpH1" value="Terminal in Module Folder" />
+    <property role="2uzpH1" value="File Manager in Module Folder" />
     <property role="3GE5qa" value="" />
     <property role="fJN8o" value="true" />
     <node concept="tnohg" id="7uLL3Mf2tAq" role="tncku">
@@ -899,6 +899,18 @@
           </node>
         </node>
         <node concept="3J1_TO" id="DMIuLunH2A" role="3cqZAp">
+          <node concept="3uVAMA" id="DMIuLunH2D" role="1zxBo5">
+            <node concept="XOnhg" id="DMIuLunH2F" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="ignore" />
+              <node concept="nSUau" id="dd1WfqlmIsh" role="1tU5fm">
+                <node concept="3uibUv" id="DMIuLunHhE" role="nSUat">
+                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="DMIuLunH2J" role="1zc67A" />
+          </node>
           <node concept="3clFbS" id="DMIuLunH2C" role="1zxBo7">
             <node concept="3clFbF" id="DMIuLunEW9" role="3cqZAp">
               <node concept="2OqwBi" id="DMIuLunEZR" role="3clFbG">
@@ -919,18 +931,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3uVAMA" id="DMIuLunH2D" role="1zxBo5">
-            <node concept="XOnhg" id="DMIuLunH2F" role="1zc67B">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="ignore" />
-              <node concept="nSUau" id="dd1WfqlmIsh" role="1tU5fm">
-                <node concept="3uibUv" id="DMIuLunHhE" role="nSUat">
-                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="DMIuLunH2J" role="1zc67A" />
           </node>
         </node>
       </node>

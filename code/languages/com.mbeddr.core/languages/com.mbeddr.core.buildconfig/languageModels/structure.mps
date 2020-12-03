@@ -337,6 +337,9 @@
       <property role="TrG5h" value="supportsSharedLibraries" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="PrWs8" id="1cOw9QkO4Rq" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1cOw9QkLoM_" resolve="IOutputLocationProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4BxItZJ4BoI">
     <property role="TrG5h" value="DesktopPlatform" />
