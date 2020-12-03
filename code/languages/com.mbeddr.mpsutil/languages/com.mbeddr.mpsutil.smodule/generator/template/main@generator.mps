@@ -16,6 +16,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="pa15" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.persistence(MPS.Core/)" />
     <import index="gt8j" ref="r:d62dd985-922e-46d1-a30d-00dd9ec6278a(com.mbeddr.mpsutil.smodule.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
@@ -24,6 +25,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -555,7 +560,7 @@
       <node concept="gft3U" id="7Ynnt_OiAeL" role="1lVwrX">
         <node concept="2YIFZM" id="7Ynnt_OiAlj" role="gfFT$">
           <ref role="1Pybhc" to="8tyk:7Ynnt_OamsD" resolve="ModelHelper" />
-          <ref role="37wK5l" to="8tyk:7Ynnt_OhWs9" resolve="createModel" />
+          <ref role="37wK5l" to="8tyk:6v4Yls$1UHc" resolve="createModel" />
           <node concept="10Nm6u" id="7Ynnt_OiAnG" role="37wK5m">
             <node concept="29HgVG" id="7Ynnt_OiAqt" role="lGtFl">
               <node concept="3NFfHV" id="7Ynnt_OiAqu" role="3NFExx">
@@ -572,21 +577,27 @@
               </node>
             </node>
           </node>
-          <node concept="Xl_RD" id="7Ynnt_OiAtR" role="37wK5m">
-            <property role="Xl_RC" value="" />
-            <node concept="1sPUBX" id="7Ynnt_OiBBv" role="lGtFl">
+          <node concept="Rm8GO" id="6v4Yls$20y4" role="37wK5m">
+            <ref role="Rm8GQ" to="pa15:~PreinstalledModelFactoryTypes.PLAIN_XML" resolve="PLAIN_XML" />
+            <ref role="1Px2BO" to="pa15:~PreinstalledModelFactoryTypes" resolve="PreinstalledModelFactoryTypes" />
+            <node concept="1sPUBX" id="6v4Yls$218f" role="lGtFl">
               <ref role="v9R2y" node="7Ynnt_OiDam" resolve="switch_StorageType" />
-              <node concept="3NFfHV" id="7Ynnt_OiBFu" role="1sPUBK">
-                <node concept="3clFbS" id="7Ynnt_OiBFv" role="2VODD2">
-                  <node concept="3clFbF" id="7Ynnt_OiBG8" role="3cqZAp">
-                    <node concept="2OqwBi" id="7Ynnt_OiCGu" role="3clFbG">
-                      <node concept="2OqwBi" id="7Ynnt_OiBH5" role="2Oq$k0">
-                        <node concept="1iwH7S" id="7Ynnt_OiBG7" role="2Oq$k0" />
-                        <node concept="1psM6Z" id="5SpGrqyTf4X" role="2OqNvi">
-                          <ref role="1psM6Y" node="5SpGrqyTf4V" resolve="operation" />
+              <node concept="3NFfHV" id="2WYwAhh$99A" role="1sPUBK">
+                <node concept="3clFbS" id="2WYwAhh$99B" role="2VODD2">
+                  <node concept="3clFbF" id="2WYwAhh$9yv" role="3cqZAp">
+                    <node concept="2OqwBi" id="2WYwAhh$aKz" role="3clFbG">
+                      <node concept="1PxgMI" id="2WYwAhh$auk" role="2Oq$k0">
+                        <node concept="chp4Y" id="2WYwAhh$azy" role="3oSUPX">
+                          <ref role="cht4Q" to="gt8j:3d01KqFhiz2" resolve="AddModelOperation" />
+                        </node>
+                        <node concept="2OqwBi" id="2WYwAhh$9If" role="1m5AlR">
+                          <node concept="30H73N" id="2WYwAhh$9yu" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="2WYwAhh$a0z" role="2OqNvi">
+                            <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
+                          </node>
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="7Ynnt_OiCUI" role="2OqNvi">
+                      <node concept="3TrEf2" id="2WYwAhh$b8G" role="2OqNvi">
                         <ref role="3Tt5mk" to="gt8j:7Ynnt_OiBVL" resolve="storageType" />
                       </node>
                     </node>
@@ -806,6 +817,35 @@
                         <ref role="3Tt5mk" to="tpee:hqOq$gm" resolve="operand" />
                       </node>
                       <node concept="30H73N" id="2rFgM0FVYSq" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="Rm8GO" id="6v4Yls$21oQ" role="37wK5m">
+            <ref role="Rm8GQ" to="pa15:~PreinstalledModelFactoryTypes.PLAIN_XML" resolve="PLAIN_XML" />
+            <ref role="1Px2BO" to="pa15:~PreinstalledModelFactoryTypes" resolve="PreinstalledModelFactoryTypes" />
+            <node concept="1sPUBX" id="6v4Yls$21zD" role="lGtFl">
+              <ref role="v9R2y" node="7Ynnt_OiDam" resolve="switch_StorageType" />
+              <node concept="3NFfHV" id="2WYwAhh$bim" role="1sPUBK">
+                <node concept="3clFbS" id="2WYwAhh$bin" role="2VODD2">
+                  <node concept="3clFbF" id="2WYwAhh$bII" role="3cqZAp">
+                    <node concept="2OqwBi" id="2WYwAhh$bIJ" role="3clFbG">
+                      <node concept="1PxgMI" id="2WYwAhh$bIK" role="2Oq$k0">
+                        <node concept="chp4Y" id="2WYwAhh$bIL" role="3oSUPX">
+                          <ref role="cht4Q" to="gt8j:3d01KqFhiz2" resolve="AddModelOperation" />
+                        </node>
+                        <node concept="2OqwBi" id="2WYwAhh$bIM" role="1m5AlR">
+                          <node concept="30H73N" id="2WYwAhh$bIN" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="2WYwAhh$bIO" role="2OqNvi">
+                            <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="2WYwAhh$bIP" role="2OqNvi">
+                        <ref role="3Tt5mk" to="gt8j:7Ynnt_OiBVL" resolve="storageType" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1209,8 +1249,9 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="gt8j:lse_ua1TlZ" resolve="PerRootPersistence" />
       <node concept="gft3U" id="2arDlsKHYpF" role="1lVwrX">
-        <node concept="Xl_RD" id="2arDlsKHYpL" role="gfFT$">
-          <property role="Xl_RC" value="model" />
+        <node concept="Rm8GO" id="6v4Yls$19_z" role="gfFT$">
+          <ref role="1Px2BO" to="pa15:~PreinstalledModelFactoryTypes" resolve="PreinstalledModelFactoryTypes" />
+          <ref role="Rm8GQ" to="pa15:~PreinstalledModelFactoryTypes.PER_ROOT_XML" resolve="PER_ROOT_XML" />
         </node>
       </node>
     </node>
@@ -1218,8 +1259,9 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="gt8j:lse_ua1Z97" resolve="SingleFilePersistence" />
       <node concept="gft3U" id="2arDlsKHXm2" role="1lVwrX">
-        <node concept="Xl_RD" id="2arDlsKHXm8" role="gfFT$">
-          <property role="Xl_RC" value="mps" />
+        <node concept="Rm8GO" id="6v4Yls$1a8H" role="gfFT$">
+          <ref role="Rm8GQ" to="pa15:~PreinstalledModelFactoryTypes.PLAIN_XML" resolve="PLAIN_XML" />
+          <ref role="1Px2BO" to="pa15:~PreinstalledModelFactoryTypes" resolve="PreinstalledModelFactoryTypes" />
         </node>
       </node>
     </node>
