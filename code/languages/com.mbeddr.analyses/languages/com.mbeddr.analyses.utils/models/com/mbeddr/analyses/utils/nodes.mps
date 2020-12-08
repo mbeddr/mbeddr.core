@@ -8,6 +8,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -227,6 +228,12 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -336,6 +343,7 @@
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1208542034276" name="jetbrains.mps.baseLanguage.collections.structure.MapClearOperation" flags="nn" index="1yHZxX" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
@@ -2640,11 +2648,106 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3cpWs8" id="FRRXmR1RwG" role="3cqZAp">
+                  <node concept="3cpWsn" id="FRRXmR1RwH" role="3cpWs9">
+                    <property role="TrG5h" value="debugInfos" />
+                    <node concept="_YKpA" id="FRRXmR1QVg" role="1tU5fm">
+                      <node concept="3uibUv" id="FRRXmR1QVj" role="_ZDj9">
+                        <ref role="3uigEE" to="fwk:~DebugInfo" resolve="DebugInfo" />
+                      </node>
+                    </node>
+                    <node concept="1rXfSq" id="FRRXmR1RwI" role="33vP2m">
+                      <ref role="37wK5l" node="Ej6MPQeFfd" resolve="getDebugInfos" />
+                      <node concept="37vLTw" id="FRRXmR1RwJ" role="37wK5m">
+                        <ref role="3cqZAo" node="4a8JajkM8BP" resolve="unitName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="FRRXmR1Tjx" role="3cqZAp">
+                  <node concept="3clFbS" id="FRRXmR1Tjz" role="3clFbx">
+                    <node concept="RRSsy" id="FRRXmR1XYJ" role="3cqZAp">
+                      <property role="RRSoG" value="gZ5fksE/warn" />
+                      <node concept="Xl_RD" id="FRRXmR1XYL" role="RRSoy">
+                        <property role="Xl_RC" value="debug infos are empty" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="FRRXmR1VnY" role="3clFbw">
+                    <node concept="37vLTw" id="FRRXmR1Unq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="FRRXmR1RwH" resolve="debugInfos" />
+                    </node>
+                    <node concept="1v1jN8" id="FRRXmR1WcN" role="2OqNvi" />
+                  </node>
+                </node>
                 <node concept="2Gpval" id="Ej6MPQfZ4h" role="3cqZAp">
                   <node concept="2GrKxI" id="Ej6MPQfZ4j" role="2Gsz3X">
                     <property role="TrG5h" value="di" />
                   </node>
                   <node concept="3clFbS" id="Ej6MPQfZ4n" role="2LFqv$">
+                    <node concept="3cpWs8" id="FRRXmR1Ypu" role="3cqZAp">
+                      <node concept="3cpWsn" id="FRRXmR1Ypv" role="3cpWs9">
+                        <property role="TrG5h" value="tracedNodesForPosition" />
+                        <node concept="3uibUv" id="FRRXmR1Xpk" role="1tU5fm">
+                          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                          <node concept="3uibUv" id="FRRXmR1Xpn" role="11_B2D">
+                            <ref role="3uigEE" to="mhbf:~SNodeReference" resolve="SNodeReference" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="FRRXmR1Ypw" role="33vP2m">
+                          <node concept="2GrUjf" id="FRRXmR1Ypx" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="Ej6MPQfZ4j" resolve="di" />
+                          </node>
+                          <node concept="liA8E" id="FRRXmR1Ypy" role="2OqNvi">
+                            <ref role="37wK5l" to="fwk:~DebugInfo.getTracedNodesForPosition(java.lang.String,int)" resolve="getTracedNodesForPosition" />
+                            <node concept="37vLTw" id="FRRXmR1Ypz" role="37wK5m">
+                              <ref role="3cqZAo" node="4a8JajkM8BK" resolve="fileName" />
+                            </node>
+                            <node concept="37vLTw" id="FRRXmR1Yp$" role="37wK5m">
+                              <ref role="3cqZAo" node="4a8JajkM8CW" resolve="line" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="FRRXmR1ZQB" role="3cqZAp">
+                      <node concept="3clFbS" id="FRRXmR1ZQD" role="3clFbx">
+                        <node concept="RRSsy" id="FRRXmR21Uy" role="3cqZAp">
+                          <property role="RRSoG" value="gZ5fksE/warn" />
+                          <node concept="3cpWs3" id="FRRXmR23P8" role="RRSoy">
+                            <node concept="Xl_RD" id="FRRXmR245D" role="3uHU7w">
+                              <property role="Xl_RC" value=" was empty" />
+                            </node>
+                            <node concept="3cpWs3" id="FRRXmR22Qz" role="3uHU7B">
+                              <node concept="3cpWs3" id="FRRXmR22qd" role="3uHU7B">
+                                <node concept="3cpWs3" id="FRRXmR22g3" role="3uHU7B">
+                                  <node concept="Xl_RD" id="FRRXmR21U$" role="3uHU7B">
+                                    <property role="Xl_RC" value="traced nodes for " />
+                                  </node>
+                                  <node concept="37vLTw" id="FRRXmR22iX" role="3uHU7w">
+                                    <ref role="3cqZAo" node="4a8JajkM8CU" resolve="file" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="FRRXmR22zn" role="3uHU7w">
+                                  <property role="Xl_RC" value=" with line " />
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="FRRXmR22TK" role="3uHU7w">
+                                <ref role="3cqZAo" node="4a8JajkM8CW" resolve="line" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="FRRXmR214Z" role="3clFbw">
+                        <node concept="37vLTw" id="FRRXmR20oY" role="2Oq$k0">
+                          <ref role="3cqZAo" node="FRRXmR1Ypv" resolve="tracedNodesForPosition" />
+                        </node>
+                        <node concept="liA8E" id="FRRXmR21OA" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="1DcWWT" id="Ej6MPQg07Y" role="3cqZAp">
                       <node concept="3clFbS" id="Ej6MPQg07Z" role="2LFqv$">
                         <node concept="3cpWs8" id="Ej6MPQg080" role="3cqZAp">
@@ -2687,6 +2790,16 @@
                               <ref role="3cqZAo" node="Ej6MPQg081" resolve="resolved" />
                             </node>
                           </node>
+                          <node concept="9aQIb" id="FRRXmR1Y5Q" role="9aQIa">
+                            <node concept="3clFbS" id="FRRXmR1Y5R" role="9aQI4">
+                              <node concept="RRSsy" id="FRRXmR248x" role="3cqZAp">
+                                <property role="RRSoG" value="gZ5fh_4/error" />
+                                <node concept="Xl_RD" id="FRRXmR248z" role="RRSoy">
+                                  <property role="Xl_RC" value="can't resolve node pointer" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                       <node concept="3cpWsn" id="Ej6MPQg08h" role="1Duv9x">
@@ -2695,27 +2808,13 @@
                           <ref role="3uigEE" to="mhbf:~SNodeReference" resolve="SNodeReference" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="Ej6MPQg08j" role="1DdaDG">
-                        <node concept="2GrUjf" id="Ej6MPQg1Gr" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="Ej6MPQfZ4j" resolve="di" />
-                        </node>
-                        <node concept="liA8E" id="Ej6MPQg08l" role="2OqNvi">
-                          <ref role="37wK5l" to="fwk:~DebugInfo.getTracedNodesForPosition(java.lang.String,int)" resolve="getTracedNodesForPosition" />
-                          <node concept="37vLTw" id="Ej6MPQg08m" role="37wK5m">
-                            <ref role="3cqZAo" node="4a8JajkM8BK" resolve="fileName" />
-                          </node>
-                          <node concept="37vLTw" id="Ej6MPQg08n" role="37wK5m">
-                            <ref role="3cqZAo" node="4a8JajkM8CW" resolve="line" />
-                          </node>
-                        </node>
+                      <node concept="37vLTw" id="FRRXmR1Yp_" role="1DdaDG">
+                        <ref role="3cqZAo" node="FRRXmR1Ypv" resolve="tracedNodesForPosition" />
                       </node>
                     </node>
                   </node>
-                  <node concept="1rXfSq" id="Ej6MPQg03Y" role="2GsD0m">
-                    <ref role="37wK5l" node="Ej6MPQeFfd" resolve="getDebugInfos" />
-                    <node concept="37vLTw" id="Ej6MPQg03Z" role="37wK5m">
-                      <ref role="3cqZAo" node="4a8JajkM8BP" resolve="unitName" />
-                    </node>
+                  <node concept="37vLTw" id="FRRXmR1RwK" role="2GsD0m">
+                    <ref role="3cqZAo" node="FRRXmR1RwH" resolve="debugInfos" />
                   </node>
                 </node>
                 <node concept="3clFbJ" id="4a8JajkM8C0" role="3cqZAp">
