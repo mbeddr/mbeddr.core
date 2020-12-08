@@ -51,7 +51,7 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -195,7 +195,7 @@
         <child id="1170075728144" name="expression" index="1HWFw0" />
         <child id="1170075736412" name="block" index="1HWHxc" />
       </concept>
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
@@ -289,10 +289,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -2467,6 +2467,9 @@
               <node concept="37vLTw" id="3I3e3C4v$f3" role="37wK5m">
                 <ref role="3cqZAo" node="4a8JajkMaNL" resolve="line" />
               </node>
+              <node concept="37vLTw" id="FRRXmQcqHW" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQcoyP" resolve="repository" />
+              </node>
             </node>
             <node concept="1uHKPH" id="3I3e3C4vB7f" role="2OqNvi" />
           </node>
@@ -2477,6 +2480,12 @@
       </node>
       <node concept="NWlO9" id="4a8JajkMcub" role="lGtFl">
         <property role="NWlVz" value="Returns the first original node that is traced to a certain file and line." />
+      </node>
+      <node concept="37vLTG" id="FRRXmQcoyP" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="FRRXmQcoxo" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4l47ydyfty2" role="jymVt" />
@@ -2631,19 +2640,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs8" id="3I3e3C4urBj" role="3cqZAp">
-                  <node concept="3cpWsn" id="3I3e3C4urBk" role="3cpWs9">
-                    <property role="TrG5h" value="contextRepository" />
-                    <property role="3TUv4t" value="true" />
-                    <node concept="3uibUv" id="3I3e3C4urBl" role="1tU5fm">
-                      <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-                    </node>
-                    <node concept="2YIFZM" id="3I3e3C4usjc" role="33vP2m">
-                      <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                      <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
-                    </node>
-                  </node>
-                </node>
                 <node concept="2Gpval" id="Ej6MPQfZ4h" role="3cqZAp">
                   <node concept="2GrKxI" id="Ej6MPQfZ4j" role="2Gsz3X">
                     <property role="TrG5h" value="di" />
@@ -2663,8 +2659,8 @@
                               </node>
                               <node concept="liA8E" id="Ej6MPQg085" role="2OqNvi">
                                 <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
-                                <node concept="37vLTw" id="Ej6MPQg086" role="37wK5m">
-                                  <ref role="3cqZAo" node="3I3e3C4urBk" resolve="contextRepository" />
+                                <node concept="37vLTw" id="FRRXmQcsdV" role="37wK5m">
+                                  <ref role="3cqZAo" node="FRRXmQcqL6" resolve="repository" />
                                 </node>
                               </node>
                             </node>
@@ -2917,6 +2913,12 @@
       </node>
       <node concept="NWlO9" id="4a8JajkMa7t" role="lGtFl">
         <property role="NWlVz" value="Returns all possible original nodes that can be traced to a certain file and line." />
+      </node>
+      <node concept="37vLTG" id="FRRXmQcqL6" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="FRRXmQcqIJ" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4l47ydyflTV" role="jymVt" />

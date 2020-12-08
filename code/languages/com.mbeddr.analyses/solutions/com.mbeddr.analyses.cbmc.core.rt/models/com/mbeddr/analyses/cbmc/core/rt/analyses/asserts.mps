@@ -480,6 +480,9 @@
                     <node concept="37vLTw" id="71B0VArS9ZM" role="37wK5m">
                       <ref role="3cqZAo" node="3x0R1LJ5Cpv" resolve="userFriendlyMessage" />
                     </node>
+                    <node concept="37vLTw" id="FRRXmQK8mw" role="37wK5m">
+                      <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
+                    </node>
                   </node>
                   <node concept="37vLTw" id="71B0VArS9ZN" role="37vLTJ">
                     <ref role="3cqZAo" node="3x0R1LJ5Cpz" resolve="res" />
@@ -821,6 +824,12 @@
         <property role="TrG5h" value="cbmcLevelUserFriendlyMessage" />
         <node concept="17QB3L" id="4jxm9lDvyZP" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="FRRXmQcNwQ" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQcQI3" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="3x0R1LJ5Cr7" role="1B3o_S" />
       <node concept="3clFbS" id="3x0R1LJ5Cr8" role="3clF47">
         <node concept="3cpWs8" id="3x0R1LJ5Cr9" role="3cqZAp">
@@ -837,6 +846,9 @@
               </node>
               <node concept="37vLTw" id="3x0R1LJ5Cre" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5Cr5" resolve="analyzedConcept" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQ_FbU" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
               </node>
             </node>
           </node>
