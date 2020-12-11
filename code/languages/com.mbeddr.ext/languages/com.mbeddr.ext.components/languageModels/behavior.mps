@@ -13957,6 +13957,52 @@
       </node>
       <node concept="3cqZAl" id="5MU8nYnUY2T" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="7iyfbqs05Mn" role="13h7CS">
+      <property role="TrG5h" value="rebindToProxy" />
+      <ref role="13i0hy" to="hwgx:7jSUHHvkApb" resolve="rebindToProxy" />
+      <node concept="3Tm1VV" id="7iyfbqs05Mo" role="1B3o_S" />
+      <node concept="3clFbS" id="7iyfbqs05Mt" role="3clF47">
+        <node concept="3clFbF" id="7iyfbqs0b6E" role="3cqZAp">
+          <node concept="37vLTI" id="7iyfbqs0ciH" role="3clFbG">
+            <node concept="1PxgMI" id="7iyfbqs0dux" role="37vLTx">
+              <node concept="chp4Y" id="7iyfbqs0eLR" role="3oSUPX">
+                <ref role="cht4Q" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+              </node>
+              <node concept="37vLTw" id="7iyfbqs0cGj" role="1m5AlR">
+                <ref role="3cqZAo" node="7iyfbqs05Mu" resolve="proxyElement" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7iyfbqs0b72" role="37vLTJ">
+              <node concept="13iPFW" id="7iyfbqs0b6D" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7iyfbqs0bsO" role="2OqNvi">
+                <ref role="3Tt5mk" to="v7ag:wOd6nl4Yxi" resolve="config" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7iyfbqs05Mu" role="3clF46">
+        <property role="TrG5h" value="proxyElement" />
+        <node concept="3Tqbb2" id="7iyfbqs05Mv" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="7iyfbqs05Mw" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7iyfbqs05Mx" role="13h7CS">
+      <property role="TrG5h" value="referencedModuleContent" />
+      <ref role="13i0hy" to="hwgx:7jSUHHvkAph" resolve="referencedModuleContent" />
+      <node concept="3Tm1VV" id="7iyfbqs05My" role="1B3o_S" />
+      <node concept="3clFbS" id="7iyfbqs05M_" role="3clF47">
+        <node concept="3clFbF" id="7iyfbqs097z" role="3cqZAp">
+          <node concept="2OqwBi" id="7iyfbqs09qV" role="3clFbG">
+            <node concept="13iPFW" id="7iyfbqs097y" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7iyfbqs0aqK" role="2OqNvi">
+              <ref role="3Tt5mk" to="v7ag:wOd6nl4Yxi" resolve="config" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7iyfbqs05MA" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="2R5TvtOl$BD">
     <property role="3GE5qa" value="comp.runnable" />

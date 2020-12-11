@@ -821,6 +821,9 @@
       <property role="IQ2ns" value="591155063063570514" />
       <ref role="20lvS9" node="3TmmsQkDdU0" resolve="InstanceConfiguration" />
     </node>
+    <node concept="PrWs8" id="7iyfbqrZHMl" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4AGl5dzwHVj">
     <property role="3GE5qa" value="comp.field" />
