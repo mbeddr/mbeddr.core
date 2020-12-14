@@ -355,7 +355,7 @@
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
     <language id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles">
-      <concept id="1072158555907409226" name="com.mbeddr.mpsutil.userstyles.structure.InlineStyle" flags="ng" index="2_8dvc">
+      <concept id="1072158555907409226" name="com.mbeddr.mpsutil.userstyles.structure.InlineStyle" flags="lg" index="2_8dvc">
         <child id="1072158555907409230" name="style" index="2_8dv8" />
       </concept>
     </language>
