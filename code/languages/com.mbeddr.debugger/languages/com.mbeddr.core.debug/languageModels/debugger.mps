@@ -88,7 +88,7 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -342,7 +342,7 @@
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
         <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
       </concept>
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
@@ -506,10 +506,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -12011,7 +12011,30 @@
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
       <node concept="3clFbS" id="3ne4XgeeNiC" role="3clF47">
-        <node concept="3clFbH" id="65o8lqXc2a" role="3cqZAp" />
+        <node concept="3cpWs8" id="3aQpGQqlstl" role="3cqZAp">
+          <node concept="3cpWsn" id="3aQpGQqlstm" role="3cpWs9">
+            <property role="TrG5h" value="gsm" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="3aQpGQqlsqs" role="1tU5fm">
+              <ref role="3uigEE" to="ap4t:~ModelGenerationStatusManager" resolve="ModelGenerationStatusManager" />
+            </node>
+            <node concept="2OqwBi" id="3aQpGQqlstn" role="33vP2m">
+              <node concept="2YIFZM" id="3aQpGQqlsto" role="2Oq$k0">
+                <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
+                <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                <node concept="37vLTw" id="3aQpGQqlstp" role="37wK5m">
+                  <ref role="3cqZAo" node="5BQI4ntSV8T" resolve="project" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3aQpGQqlstq" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~MPSProject.getComponent(java.lang.Class)" resolve="getComponent" />
+                <node concept="3VsKOn" id="3aQpGQqlstr" role="37wK5m">
+                  <ref role="3VsUkX" to="ap4t:~ModelGenerationStatusManager" resolve="ModelGenerationStatusManager" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="65o8lqXiZ4" role="3cqZAp">
           <node concept="3cpWsn" id="65o8lqXiZ5" role="3cpWs9">
             <property role="TrG5h" value="requiresRebuild" />
@@ -12033,9 +12056,8 @@
                   <node concept="3clFbS" id="65o8lqXiZc" role="1bW5cS">
                     <node concept="3clFbF" id="65o8lqXiZd" role="3cqZAp">
                       <node concept="2OqwBi" id="65o8lqXiZe" role="3clFbG">
-                        <node concept="2YIFZM" id="65o8lqXiZf" role="2Oq$k0">
-                          <ref role="37wK5l" to="ap4t:~ModelGenerationStatusManager.getInstance()" resolve="getInstance" />
-                          <ref role="1Pybhc" to="ap4t:~ModelGenerationStatusManager" resolve="ModelGenerationStatusManager" />
+                        <node concept="37vLTw" id="3aQpGQqltUP" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3aQpGQqlstm" resolve="gsm" />
                         </node>
                         <node concept="liA8E" id="65o8lqXiZg" role="2OqNvi">
                           <ref role="37wK5l" to="ap4t:~ModelGenerationStatusManager.generationRequired(org.jetbrains.mps.openapi.model.SModel)" resolve="generationRequired" />
@@ -12067,12 +12089,17 @@
                 <node concept="2ShNRf" id="3ne4XgefSPt" role="33vP2m">
                   <node concept="Tc6Ow" id="3ne4XgefSPu" role="2ShVmc">
                     <node concept="17QB3L" id="3ne4XgefSPv" role="HW$YZ" />
-                    <node concept="2OqwBi" id="3ne4XgefSPw" role="HW$Y0">
-                      <node concept="37vLTw" id="65o8lqXlQK" role="2Oq$k0">
-                        <ref role="3cqZAo" node="65o8lqXiZ5" resolve="requiresRebuild" />
+                    <node concept="2OqwBi" id="3aQpGQqlu$2" role="HW$Y0">
+                      <node concept="2OqwBi" id="3ne4XgefSPw" role="2Oq$k0">
+                        <node concept="37vLTw" id="65o8lqXlQK" role="2Oq$k0">
+                          <ref role="3cqZAo" node="65o8lqXiZ5" resolve="requiresRebuild" />
+                        </node>
+                        <node concept="liA8E" id="3aQpGQqluj7" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                        </node>
                       </node>
-                      <node concept="liA8E" id="3ne4XgefSPy" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SModel.getModelName()" resolve="getModelName" />
+                      <node concept="liA8E" id="3aQpGQqluY1" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
                       </node>
                     </node>
                   </node>

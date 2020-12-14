@@ -31,7 +31,7 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -214,7 +214,7 @@
         <child id="1170075728144" name="expression" index="1HWFw0" />
         <child id="1170075736412" name="block" index="1HWHxc" />
       </concept>
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
@@ -822,6 +822,12 @@
             </node>
             <node concept="37vLTw" id="hFNQnzhYm9" role="37wK5m">
               <ref role="3cqZAo" node="4fvA6ORyAzD" resolve="analysesResults" />
+            </node>
+            <node concept="2OqwBi" id="FRRXmQr7q8" role="37wK5m">
+              <node concept="Xjq3P" id="FRRXmQr6oS" role="2Oq$k0" />
+              <node concept="2OwXpG" id="FRRXmQr8Tm" role="2OqNvi">
+                <ref role="2Oxat5" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
+              </node>
             </node>
           </node>
         </node>
@@ -1660,6 +1666,9 @@
                                   <node concept="37vLTw" id="4a8JajkK6lW" role="37wK5m">
                                     <ref role="3cqZAo" node="4fvA6ORBuFg" resolve="claim" />
                                   </node>
+                                  <node concept="37vLTw" id="FRRXmQr0Ly" role="37wK5m">
+                                    <ref role="3cqZAo" node="FRRXmQqTxd" resolve="repo" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -1727,6 +1736,13 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQqTxd" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="FRRXmQqTxe" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="NWlO9" id="3d5MwV8Ggsv" role="lGtFl">
         <property role="NWlVz" value="Performs the analysis of a set of claims and collects the result" />
       </node>
@@ -1759,6 +1775,9 @@
                     <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
                     <node concept="37vLTw" id="4a8JajkK4rN" role="37wK5m">
                       <ref role="3cqZAo" node="4a8JajkJNLY" resolve="claim" />
+                    </node>
+                    <node concept="37vLTw" id="FRRXmQqR2Q" role="37wK5m">
+                      <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
                     </node>
                   </node>
                 </node>
@@ -1813,6 +1832,12 @@
         <property role="TrG5h" value="claim" />
         <node concept="3uibUv" id="4a8JajkJUme" role="1tU5fm">
           <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="FRRXmQcNwQ" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQcQI3" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="NWlO9" id="4a8JajkJYFT" role="lGtFl">

@@ -27,7 +27,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -142,10 +142,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -275,6 +275,12 @@
         <property role="TrG5h" value="label" />
         <node concept="17QB3L" id="3x0R1LJ5H3Y" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="FRRXmQcNwQ" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQcQI3" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="3x0R1LJ5H3Z" role="1B3o_S" />
       <node concept="3clFbS" id="3x0R1LJ5H40" role="3clF47">
         <node concept="3cpWs8" id="3x0R1LJ5H41" role="3cqZAp">
@@ -291,6 +297,9 @@
               </node>
               <node concept="37vLTw" id="3x0R1LJ5H46" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5H3V" resolve="concept" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQ_GzI" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
               </node>
             </node>
           </node>

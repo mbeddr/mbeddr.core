@@ -12,13 +12,14 @@
     <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" />
     <import index="zb5f" ref="r:80f40856-e73c-4c3a-8c6d-bab7abe0bae8(com.mbeddr.analyses.acsl.cbmc.rt.counterexample.lifted.model)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -182,6 +183,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQpFOS" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQpFOT" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="5GEvLp_OPB_" role="1B3o_S" />
       <node concept="3clFbS" id="5GEvLp_OPBB" role="3clF47">
         <node concept="3cpWs8" id="5GEvLp_Qiny" role="3cqZAp">
@@ -193,6 +200,9 @@
               <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
               <node concept="37vLTw" id="5GEvLp_QinA" role="37wK5m">
                 <ref role="3cqZAo" node="5GEvLp_OPBw" resolve="crtState" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQZDwX" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQpFOS" resolve="repo" />
               </node>
             </node>
           </node>
@@ -260,6 +270,9 @@
               <node concept="37vLTw" id="5GEvLp_P00w" role="37wK5m">
                 <ref role="3cqZAo" node="576QrOJcWyH" resolve="crtState" />
               </node>
+              <node concept="37vLTw" id="FRRXmQZDfO" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQZCLE" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -301,6 +314,12 @@
           <node concept="3uibUv" id="576QrOJcWyL" role="_ZDj9">
             <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="FRRXmQZCLE" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQZCLF" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="3Tm1VV" id="576QrOJcWyM" role="1B3o_S" />

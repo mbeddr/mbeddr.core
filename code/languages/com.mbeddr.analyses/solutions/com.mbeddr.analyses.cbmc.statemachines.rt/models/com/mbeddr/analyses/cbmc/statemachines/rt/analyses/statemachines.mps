@@ -32,7 +32,7 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -467,6 +467,12 @@
           <ref role="ehGHo" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQAeSF" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQAeSG" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="4arT0cnsjYS" role="1B3o_S" />
       <node concept="3clFbS" id="4arT0cnsjYT" role="3clF47">
         <node concept="3cpWs8" id="4arT0cnsjYU" role="3cqZAp">
@@ -483,6 +489,9 @@
               </node>
               <node concept="37vLTw" id="4arT0cnsjYZ" role="37wK5m">
                 <ref role="3cqZAo" node="4arT0cnsjYO" resolve="analyzedState" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQAeX2" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQAeSF" resolve="repo" />
               </node>
             </node>
           </node>
@@ -554,6 +563,12 @@
           <ref role="ehGHo" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQcNwQ" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQcQI3" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="4arT0cnsjZf" role="1B3o_S" />
       <node concept="3clFbS" id="4arT0cnsjZg" role="3clF47">
         <node concept="3cpWs8" id="4arT0cnsjZh" role="3cqZAp">
@@ -570,6 +585,9 @@
               </node>
               <node concept="37vLTw" id="4arT0cnsjZm" role="37wK5m">
                 <ref role="3cqZAo" node="4arT0cnsjZb" resolve="analyzedTransition" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQAeQ3" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
               </node>
             </node>
           </node>
@@ -1421,6 +1439,9 @@
                                     <node concept="37vLTw" id="4arT0cnsk4z" role="37wK5m">
                                       <ref role="3cqZAo" node="4arT0cnsk3I" resolve="statemachine" />
                                     </node>
+                                    <node concept="37vLTw" id="FRRXmQKNW8" role="37wK5m">
+                                      <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
+                                    </node>
                                   </node>
                                   <node concept="37vLTw" id="40ZXlOnIaZe" role="37vLTJ">
                                     <ref role="3cqZAo" node="4arT0cnsk4u" resolve="ress" />
@@ -1635,6 +1656,9 @@
                                     </node>
                                     <node concept="37vLTw" id="4arT0cnsk5D" role="37wK5m">
                                       <ref role="3cqZAo" node="4arT0cnsk4O" resolve="statemachine" />
+                                    </node>
+                                    <node concept="37vLTw" id="FRRXmQKQrH" role="37wK5m">
+                                      <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
                                     </node>
                                   </node>
                                   <node concept="37vLTw" id="40ZXlOnIjS1" role="37vLTJ">

@@ -31,7 +31,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -751,6 +751,9 @@
                 <node concept="37vLTw" id="40ZXlOnFfQR" role="37wK5m">
                   <ref role="3cqZAo" node="3x0R1LJ5Hlf" resolve="userFriendlyMessage" />
                 </node>
+                <node concept="37vLTw" id="FRRXmQKGx7" role="37wK5m">
+                  <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
+                </node>
               </node>
               <node concept="37vLTw" id="3x0R1LJ5Hlu" role="37vLTJ">
                 <ref role="3cqZAo" node="3x0R1LJ5Hlj" resolve="res" />
@@ -1004,6 +1007,12 @@
         <property role="TrG5h" value="userFriendlyMessage" />
         <node concept="17QB3L" id="3x0R1LJ5HmH" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="FRRXmQcNwQ" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQcQI3" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="3x0R1LJ5HmI" role="1B3o_S" />
       <node concept="3clFbS" id="3x0R1LJ5HmJ" role="3clF47">
         <node concept="3cpWs8" id="3x0R1LJ5HmK" role="3cqZAp">
@@ -1020,6 +1029,9 @@
               </node>
               <node concept="37vLTw" id="3x0R1LJ5HmP" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5HmE" resolve="analyzedConcept" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQ_GLI" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
               </node>
             </node>
           </node>

@@ -34,6 +34,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="prhr" ref="r:1c730a17-6aff-4949-afa0-f86001c1cb51(com.mbeddr.analyses.cbmc.core.rt.utils)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -50,7 +51,7 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -211,7 +212,7 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
@@ -344,10 +345,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -479,6 +480,9 @@
               <node concept="37vLTw" id="3x0R1LIQ83L" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LIQ88z" resolve="rawAssig" />
               </node>
+              <node concept="37vLTw" id="FRRXmQcUCK" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -492,6 +496,9 @@
               <ref role="37wK5l" node="3x0R1LIQ88G" resolve="findReferencedVariable" />
               <node concept="37vLTw" id="3x0R1LIQ83Q" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LIQ88z" resolve="rawAssig" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQdsfe" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
               </node>
             </node>
           </node>
@@ -789,6 +796,9 @@
                   <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
                   <node concept="37vLTw" id="3x0R1LIQ85q" role="37wK5m">
                     <ref role="3cqZAo" node="3x0R1LIQ88z" resolve="rawAssig" />
+                  </node>
+                  <node concept="37vLTw" id="FRRXmQd1om" role="37wK5m">
+                    <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
                   </node>
                 </node>
               </node>
@@ -1203,6 +1213,9 @@
                     <node concept="37vLTw" id="2yoYFV_N4h6" role="37wK5m">
                       <ref role="3cqZAo" node="3x0R1LIQ86n" resolve="fullLHSValue" />
                     </node>
+                    <node concept="37vLTw" id="FRRXmQA9N5" role="37wK5m">
+                      <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1214,6 +1227,9 @@
               </node>
               <node concept="37vLTw" id="wSZHMcqXKe" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LIQ83N" resolve="vd" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQ_X5E" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
               </node>
             </node>
           </node>
@@ -1231,6 +1247,9 @@
                       <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
                       <node concept="37vLTw" id="wSZHMctesW" role="37wK5m">
                         <ref role="3cqZAo" node="3x0R1LIQ88z" resolve="rawAssig" />
+                      </node>
+                      <node concept="37vLTw" id="FRRXmQd3ii" role="37wK5m">
+                        <ref role="3cqZAo" node="FRRXmQcNwQ" resolve="repo" />
                       </node>
                     </node>
                     <node concept="2Xjw5R" id="wSZHMctdCf" role="2OqNvi">
@@ -1443,6 +1462,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQcNwQ" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQcQI3" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="_YKpA" id="1aITAdxvmm3" role="3clF45">
         <node concept="3uibUv" id="1aITAdxvo3T" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
@@ -1452,6 +1477,9 @@
         <property role="NWlVz" value="Lifts the assignment state for core languages." />
       </node>
       <node concept="3Tm1VV" id="3x0R1LIQ88E" role="1B3o_S" />
+      <node concept="2AHcQZ" id="FRRXmQ_TBG" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LIQ88F" role="jymVt" />
     <node concept="3clFb_" id="3x0R1LIQ88G" role="jymVt">
@@ -1466,6 +1494,12 @@
           <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQd8N8" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQd8N9" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3clFbS" id="3x0R1LIQ88K" role="3clF47">
         <node concept="3cpWs8" id="3x0R1LIQ88L" role="3cqZAp">
           <node concept="3cpWsn" id="3x0R1LIQ88M" role="3cpWs9">
@@ -1476,6 +1510,9 @@
               <ref role="37wK5l" to="8ear:4a8JajkMmFM" resolve="findAllPossibleOriginalNodes" />
               <node concept="37vLTw" id="3x0R1LIQ88P" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LIQ88I" resolve="rawAssig" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQdeOE" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQd8N8" resolve="repo" />
               </node>
             </node>
           </node>
@@ -2206,6 +2243,9 @@
               <node concept="35c_gC" id="3rfnEZlXyLQ" role="37wK5m">
                 <ref role="35c_gD" to="k146:7apEgWbIQfD" resolve="Closure" />
               </node>
+              <node concept="37vLTw" id="FRRXmQ_S6W" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQ_Q1e" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -2275,6 +2315,12 @@
         <property role="TrG5h" value="vd" />
         <node concept="3Tqbb2" id="wSZHMcqY8n" role="1tU5fm">
           <ref role="ehGHo" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="FRRXmQ_Q1e" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQ_Q1f" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="NWlO9" id="3x0R1LIQ8bL" role="lGtFl">
@@ -2486,9 +2532,18 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQ_YpL" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQ_YpM" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="3YuThaZ3uWt" role="1B3o_S" />
       <node concept="NWlO9" id="3YuThaZ3yHM" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQA2dk" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="4wDMkkpFxhK" role="jymVt" />
@@ -2519,6 +2574,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQdi6R" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQdi6S" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="4wDMkkpFypM" role="1B3o_S" />
       <node concept="3clFbS" id="4wDMkkpFypO" role="3clF47">
         <node concept="3clFbJ" id="6dVgVd4fPz6" role="3cqZAp">
@@ -2546,6 +2607,9 @@
               <ref role="1Pybhc" to="8ear:7iLQIU2tUXc" resolve="NodesFinderFacade" />
               <node concept="37vLTw" id="4wDMkkpFA5z" role="37wK5m">
                 <ref role="3cqZAo" node="4wDMkkpFypH" resolve="crtState" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQdoAg" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQdi6R" resolve="repo" />
               </node>
             </node>
           </node>
@@ -3148,6 +3212,9 @@
               <node concept="35c_gC" id="3rfnEZlVpQC" role="37wK5m">
                 <ref role="35c_gD" to="k146:7apEgWbIQfD" resolve="Closure" />
               </node>
+              <node concept="37vLTw" id="FRRXmQA8t2" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQA4w0" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -3321,6 +3388,12 @@
       <node concept="37vLTG" id="2yoYFV_MjcY" role="3clF46">
         <property role="TrG5h" value="fullLHSValue" />
         <node concept="17QB3L" id="2yoYFV_MjcZ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="FRRXmQA4w0" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQA4w1" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="NWlO9" id="2yoYFV_Mjd0" role="lGtFl">
         <property role="NWlVz" value="Lifts a closure value." />
@@ -3573,9 +3646,18 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQqbYz" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqbY$" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="7iLQIU34QYs" role="1B3o_S" />
       <node concept="NWlO9" id="3YuThaZ3e97" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQqdAW" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="57Wj6IPcPT_" role="jymVt" />
@@ -3607,6 +3689,9 @@
               <ref role="37wK5l" to="8ear:4a8JajkMmFM" resolve="findAllPossibleOriginalNodes" />
               <node concept="37vLTw" id="32RREvGKKFN" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LIQ8dN" resolve="rawCall" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQqapE" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQq6w$" resolve="repo" />
               </node>
             </node>
           </node>
@@ -3891,6 +3976,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQq6w$" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQq6w_" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="3x0R1LIQ8dT" role="1B3o_S" />
       <node concept="NWlO9" id="3x0R1LIQ8dU" role="lGtFl">
         <property role="NWlVz" value="Lifts the function calls for com.mbeddr.core." />
@@ -3899,6 +3990,9 @@
         <node concept="3uibUv" id="1aITAdxvweN" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
         </node>
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQq88R" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="57Wj6IPcK99" role="jymVt" />
@@ -3920,6 +4014,9 @@
             <ref role="37wK5l" node="6Lk2eJDcrsf" resolve="isCallToDecisionTable" />
             <node concept="37vLTw" id="6Lk2eJDcFuM" role="37wK5m">
               <ref role="3cqZAo" node="7iLQIU35yG6" resolve="rawCall" />
+            </node>
+            <node concept="37vLTw" id="FRRXmQq68A" role="37wK5m">
+              <ref role="3cqZAo" node="FRRXmQq3E7" resolve="repo" />
             </node>
           </node>
         </node>
@@ -4023,9 +4120,18 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQq3E7" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQq3E8" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="7iLQIU35yGb" role="1B3o_S" />
       <node concept="NWlO9" id="7iLQIU35yGc" role="lGtFl">
         <property role="NWlVz" value="Returns true if this raw state is a noise and should be ignored." />
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQq5ke" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="3YuThaZ3cR$" role="jymVt" />
@@ -4046,6 +4152,9 @@
                   <ref role="37wK5l" to="8ear:4a8JajkMmFM" resolve="findAllPossibleOriginalNodes" />
                   <node concept="37vLTw" id="6Lk2eJDd82D" role="37wK5m">
                     <ref role="3cqZAo" node="6Lk2eJDcsyI" resolve="rawCall" />
+                  </node>
+                  <node concept="37vLTw" id="FRRXmQq3ny" role="37wK5m">
+                    <ref role="3cqZAo" node="FRRXmQq2eh" resolve="repo" />
                   </node>
                 </node>
               </node>
@@ -4102,6 +4211,12 @@
         <property role="TrG5h" value="rawCall" />
         <node concept="3uibUv" id="6Lk2eJDcsyH" role="1tU5fm">
           <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="FRRXmQq2eh" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQq2ei" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="NWlO9" id="6Lk2eJDcuC_" role="lGtFl">
@@ -4177,6 +4292,9 @@
               <ref role="1Pybhc" to="8ear:7iLQIU2tUXc" resolve="NodesFinderFacade" />
               <node concept="37vLTw" id="3x0R1LIQ8ej" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LIQ8fa" resolve="rawReturn" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQqunu" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQqtG8" resolve="repo" />
               </node>
             </node>
           </node>
@@ -4267,6 +4385,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQqtG8" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqtG9" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="_YKpA" id="1aITAdxvz6o" role="3clF45">
         <node concept="3uibUv" id="1aITAdxvzW1" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
@@ -4308,6 +4432,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQquLk" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQquLl" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="3YuThaZ3_fM" role="1B3o_S" />
       <node concept="NWlO9" id="3YuThaZ3AzL" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
@@ -4335,6 +4465,12 @@
           <node concept="3uibUv" id="395kdzFoRd4" role="_ZDj9">
             <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="FRRXmQqvsS" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqvsT" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="3Tm1VV" id="395kdzFoRd5" role="1B3o_S" />
@@ -5137,6 +5273,9 @@
               <node concept="37vLTw" id="16yBdWg2kMU" role="37wK5m">
                 <ref role="3cqZAo" node="16yBdWg2kNP" resolve="rawReturn" />
               </node>
+              <node concept="37vLTw" id="FRRXmQqy9W" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQqwWQ" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -5215,6 +5354,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQqwWQ" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqwWR" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="_YKpA" id="16yBdWg2kNU" role="3clF45">
         <node concept="3uibUv" id="16yBdWg2kNV" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
@@ -5223,6 +5368,9 @@
       <node concept="3Tm1VV" id="16yBdWg2kNW" role="1B3o_S" />
       <node concept="NWlO9" id="16yBdWg2kNX" role="lGtFl">
         <property role="NWlVz" value="Lifts the function returns for com.mbeddr.core." />
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQqxBz" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg2kNY" role="jymVt" />
@@ -5241,6 +5389,9 @@
               <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
               <node concept="37vLTw" id="4cM$kBlpIyf" role="37wK5m">
                 <ref role="3cqZAo" node="16yBdWg2kO4" resolve="rawReturn" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQqzpw" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQqyNc" resolve="repo" />
               </node>
             </node>
           </node>
@@ -5355,6 +5506,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQqyNc" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqyNd" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="16yBdWg2kO9" role="1B3o_S" />
       <node concept="NWlO9" id="16yBdWg2kOa" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
@@ -5376,6 +5533,9 @@
               <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
               <node concept="37vLTw" id="4cM$kBlAefL" role="37wK5m">
                 <ref role="3cqZAo" node="4cM$kBlpIym" resolve="rawReturn" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQq$zv" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQqzG$" resolve="repo" />
               </node>
             </node>
           </node>
@@ -5454,6 +5614,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQqzG$" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqzG_" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="4cM$kBlpIyr" role="1B3o_S" />
       <node concept="NWlO9" id="4cM$kBlpIys" role="lGtFl">
         <property role="NWlVz" value="Returns true if this raw state is a noise and should be ignored." />
@@ -5520,6 +5686,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQpV_6" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQpV_7" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="_YKpA" id="4cM$kBlpK8g" role="3clF45">
         <node concept="3uibUv" id="4cM$kBlpK8h" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
@@ -5529,6 +5701,9 @@
         <property role="NWlVz" value="Lifts the assignment state for core languages." />
       </node>
       <node concept="3Tm1VV" id="4cM$kBlpK8j" role="1B3o_S" />
+      <node concept="2AHcQZ" id="FRRXmQpVoY" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="4cM$kBlpKde" role="jymVt" />
     <node concept="3clFb_" id="4cM$kBlpKdf" role="jymVt">
@@ -5546,6 +5721,9 @@
               <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
               <node concept="37vLTw" id="4cM$kBlq8sb" role="37wK5m">
                 <ref role="3cqZAo" node="4cM$kBlpKdk" resolve="crtState" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQpWkW" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQpVHX" resolve="repo" />
               </node>
             </node>
           </node>
@@ -5578,9 +5756,18 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQpVHX" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQpVHY" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="4cM$kBlpKdp" role="1B3o_S" />
       <node concept="NWlO9" id="4cM$kBlpKdq" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQpV8E" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="4cM$kBlpKdr" role="jymVt" />
@@ -5609,6 +5796,12 @@
           <node concept="3uibUv" id="4cM$kBlpKd_" role="_ZDj9">
             <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="FRRXmQpVXO" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQpVXP" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="3Tm1VV" id="4cM$kBlpKdA" role="1B3o_S" />
@@ -5863,6 +6056,9 @@
               <node concept="37vLTw" id="16yBdWg2V4_" role="37wK5m">
                 <ref role="3cqZAo" node="16yBdWg22WB" resolve="rawCall" />
               </node>
+              <node concept="37vLTw" id="FRRXmQqidx" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQqfOs" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -5986,6 +6182,9 @@
               <node concept="37vLTw" id="16yBdWg2V6d" role="37wK5m">
                 <ref role="3cqZAo" node="16yBdWg22WB" resolve="rawCall" />
               </node>
+              <node concept="37vLTw" id="FRRXmQqslf" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQqfOs" resolve="repo" />
+              </node>
             </node>
             <node concept="aMNgE" id="16yBdWg2V6e" role="dK$qS" />
           </node>
@@ -6020,9 +6219,18 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQqfOs" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqfOt" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="16yBdWg22WG" role="1B3o_S" />
       <node concept="NWlO9" id="16yBdWg22WH" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQqh4$" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg22WI" role="jymVt" />
@@ -6040,6 +6248,9 @@
               <ref role="1Pybhc" to="8ear:7iLQIU2tUXc" resolve="NodesFinderFacade" />
               <node concept="37vLTw" id="16yBdWg2S5E" role="37wK5m">
                 <ref role="3cqZAo" node="16yBdWg22Zz" resolve="rawCall" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQqlbY" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQqiQm" resolve="repo" />
               </node>
             </node>
           </node>
@@ -6251,6 +6462,9 @@
                       <node concept="35c_gC" id="3rfnEZlVxvD" role="37wK5m">
                         <ref role="35c_gD" to="k146:5oGU$loBXvt" resolve="DecTab" />
                       </node>
+                      <node concept="37vLTw" id="FRRXmQAdqx" role="37wK5m">
+                        <ref role="3cqZAo" node="FRRXmQqiQm" resolve="repo" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6300,6 +6514,9 @@
                                   <node concept="35c_gC" id="3rfnEZlVxGo" role="37wK5m">
                                     <ref role="35c_gD" to="hj5x:3x0R1LJeYpN" resolve="DecTabCheckAttribute" />
                                   </node>
+                                  <node concept="37vLTw" id="FRRXmQAdZl" role="37wK5m">
+                                    <ref role="3cqZAo" node="FRRXmQqiQm" resolve="repo" />
+                                  </node>
                                 </node>
                                 <node concept="1uHKPH" id="6dVgVd3M4sT" role="2OqNvi" />
                               </node>
@@ -6348,6 +6565,9 @@
               <node concept="37vLTw" id="16yBdWg2S7i" role="37wK5m">
                 <ref role="3cqZAo" node="16yBdWg22Zz" resolve="rawCall" />
               </node>
+              <node concept="37vLTw" id="FRRXmQqrJU" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQqiQm" resolve="repo" />
+              </node>
             </node>
             <node concept="aMNgE" id="16yBdWg2S7j" role="dK$qS" />
           </node>
@@ -6387,6 +6607,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQqiQm" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqiQn" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="16yBdWg22ZC" role="1B3o_S" />
       <node concept="NWlO9" id="16yBdWg22ZD" role="lGtFl">
         <property role="NWlVz" value="Lifts the entries into decision tables." />
@@ -6395,6 +6621,9 @@
         <node concept="3uibUv" id="16yBdWg22ZF" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
         </node>
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQqkly" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg22ZG" role="jymVt" />
@@ -6413,6 +6642,9 @@
               <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
               <node concept="37vLTw" id="4cM$kBlpvIT" role="37wK5m">
                 <ref role="3cqZAo" node="16yBdWg2305" resolve="rawCall" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQqp6N" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQqlXS" resolve="repo" />
               </node>
             </node>
           </node>
@@ -6445,9 +6677,18 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQqlXS" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqlXT" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="16yBdWg230a" role="1B3o_S" />
       <node concept="NWlO9" id="16yBdWg230b" role="lGtFl">
         <property role="NWlVz" value="Returns true if this raw state is a noise and should be ignored." />
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQqnrE" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg230c" role="jymVt" />
@@ -6468,6 +6709,9 @@
                   <ref role="37wK5l" to="8ear:4a8JajkMmFM" resolve="findAllPossibleOriginalNodes" />
                   <node concept="37vLTw" id="16yBdWg230l" role="37wK5m">
                     <ref role="3cqZAo" node="16yBdWg230D" resolve="rawCall" />
+                  </node>
+                  <node concept="37vLTw" id="FRRXmQqrl5" role="37wK5m">
+                    <ref role="3cqZAo" node="FRRXmQqpAR" resolve="repo" />
                   </node>
                 </node>
               </node>
@@ -6549,6 +6793,12 @@
           <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQqpAR" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqpAS" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="NWlO9" id="16yBdWg230F" role="lGtFl">
         <property role="NWlVz" value="Returns true of this call originates from a block-expression that was reduced from a DecTab." />
       </node>
@@ -6624,6 +6874,9 @@
               <ref role="37wK5l" to="8ear:7iLQIU2tWIK" resolve="findOriginalNode" />
               <node concept="37vLTw" id="576QrOJdh0U" role="37wK5m">
                 <ref role="3cqZAo" node="576QrOJcWsI" resolve="crtRawState" />
+              </node>
+              <node concept="37vLTw" id="FRRXmQpYCY" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQpXQk" resolve="repo" />
               </node>
             </node>
           </node>
@@ -6914,6 +7167,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQpXQk" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQpXQl" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="_YKpA" id="576QrOJcWsN" role="3clF45">
         <node concept="3uibUv" id="576QrOJcWsO" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
@@ -6923,6 +7182,9 @@
         <property role="NWlVz" value="Lifts the assignment state for core languages." />
       </node>
       <node concept="3Tm1VV" id="576QrOJcWsQ" role="1B3o_S" />
+      <node concept="2AHcQZ" id="FRRXmQpX3V" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="576QrOJcWsR" role="jymVt" />
     <node concept="3clFb_" id="576QrOJcWyC" role="jymVt">
@@ -6952,9 +7214,18 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQpYVI" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQpYVJ" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="576QrOJcWyM" role="1B3o_S" />
       <node concept="NWlO9" id="576QrOJcWyN" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQpZoV" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="576QrOJcWyO" role="jymVt" />
@@ -7008,6 +7279,9 @@
               <node concept="37vLTw" id="67iKQ7oG3_d" role="37wK5m">
                 <ref role="3cqZAo" node="67iKQ7oFQdn" resolve="rawLoc" />
               </node>
+              <node concept="37vLTw" id="FRRXmQqAtQ" role="37wK5m">
+                <ref role="3cqZAo" node="FRRXmQq_v0" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -7052,6 +7326,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQq_v0" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQq_v1" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="_YKpA" id="67iKQ7oFQds" role="3clF45">
         <node concept="3uibUv" id="67iKQ7oFQdt" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
@@ -7061,6 +7341,9 @@
         <property role="NWlVz" value="Lifts the assignment state for core languages." />
       </node>
       <node concept="3Tm1VV" id="67iKQ7oFQdv" role="1B3o_S" />
+      <node concept="2AHcQZ" id="FRRXmQqAcH" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="67iKQ7oFQdw" role="jymVt" />
     <node concept="3clFb_" id="67iKQ7oFQju" role="jymVt">
@@ -7090,9 +7373,18 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="FRRXmQq_4Z" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQq_50" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="67iKQ7oFQjC" role="1B3o_S" />
       <node concept="NWlO9" id="67iKQ7oFQjD" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+      <node concept="2AHcQZ" id="FRRXmQq_jU" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="67iKQ7oFQjE" role="jymVt" />
@@ -7121,6 +7413,12 @@
           <node concept="3uibUv" id="67iKQ7oFQjO" role="_ZDj9">
             <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="FRRXmQqADK" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="FRRXmQqADL" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="3Tm1VV" id="67iKQ7oFQjP" role="1B3o_S" />
