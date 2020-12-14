@@ -25515,6 +25515,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="7sICkyms5Pi" role="3bR31x">
+          <node concept="3LXTmp" id="7sICkyms5Pj" role="3rtmxm">
+            <node concept="3qWCbU" id="7sICkyms5Pk" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7sICkyms5Pl" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="7sICkyms5Pm" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="7sICkyms5Pn" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.smodule" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4pIcGABAyzC" role="3989C9">
