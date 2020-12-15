@@ -95,13 +95,6 @@
   </registry>
   <node concept="V5hpn" id="7uOgiTdwyN">
     <property role="TrG5h" value="TreeNotationStyles" />
-    <node concept="3t5Usi" id="148yUDVgwr0" role="V601i">
-      <property role="TrG5h" value="tree-show-delete-icon" />
-      <node concept="10P_77" id="148yUDVgwrC" role="3t5Oan" />
-      <node concept="3clFbT" id="148yUDVgwrF" role="3t49C2">
-        <property role="3clFbU" value="true" />
-      </node>
-    </node>
     <node concept="3t5Usi" id="7uOgiTdwyO" role="V601i">
       <property role="TrG5h" value="tree-left-to-right" />
       <node concept="10P_77" id="7uOgiTdwyX" role="3t5Oan" />
@@ -183,6 +176,13 @@
       <node concept="1ajhzC" id="3fc1D1myqC_" role="3t5Oan">
         <node concept="10P55v" id="3fc1D1myqCK" role="1ajw0F" />
         <node concept="10P55v" id="3fc1D1myqCW" role="1ajl9A" />
+      </node>
+    </node>
+    <node concept="3t5Usi" id="148yUDVgwr0" role="V601i">
+      <property role="TrG5h" value="tree-show-delete-icon" />
+      <node concept="10P_77" id="148yUDVgwrC" role="3t5Oan" />
+      <node concept="3clFbT" id="148yUDVgwrF" role="3t49C2">
+        <property role="3clFbU" value="true" />
       </node>
     </node>
   </node>
