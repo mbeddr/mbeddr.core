@@ -2140,44 +2140,107 @@
             <property role="TrG5h" value="treeChild" />
           </node>
           <node concept="3clFbS" id="JAaUnmVeqM" role="2LFqv$">
-            <node concept="3cpWs8" id="JAaUnmVLvX" role="3cqZAp">
-              <node concept="3cpWsn" id="JAaUnmVLvY" role="3cpWs9">
-                <property role="TrG5h" value="button" />
-                <node concept="3uibUv" id="JAaUnmVLvQ" role="1tU5fm">
-                  <ref role="3uigEE" node="JAaUnmQa2J" resolve="DeleteButton" />
+            <node concept="3clFbJ" id="148yUDVgFM1" role="3cqZAp">
+              <node concept="3clFbS" id="148yUDVgFM3" role="3clFbx">
+                <node concept="3cpWs8" id="JAaUnmVLvX" role="3cqZAp">
+                  <node concept="3cpWsn" id="JAaUnmVLvY" role="3cpWs9">
+                    <property role="TrG5h" value="button" />
+                    <node concept="3uibUv" id="JAaUnmVLvQ" role="1tU5fm">
+                      <ref role="3uigEE" node="JAaUnmQa2J" resolve="DeleteButton" />
+                    </node>
+                    <node concept="2ShNRf" id="JAaUnmVLvZ" role="33vP2m">
+                      <node concept="1pGfFk" id="JAaUnmVLw0" role="2ShVmc">
+                        <ref role="37wK5l" node="JAaUnmQa92" resolve="DeleteButton" />
+                        <node concept="1rXfSq" id="JAaUnmVLw1" role="37wK5m">
+                          <ref role="37wK5l" to="g51k:~EditorCell_Basic.getContext()" resolve="getContext" />
+                        </node>
+                        <node concept="1rXfSq" id="JAaUnmVLw2" role="37wK5m">
+                          <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode()" resolve="getSNode" />
+                        </node>
+                        <node concept="2GrUjf" id="JAaUnmVLw3" role="37wK5m">
+                          <ref role="2Gs0qQ" node="JAaUnmVeqK" resolve="treeChild" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="2ShNRf" id="JAaUnmVLvZ" role="33vP2m">
-                  <node concept="1pGfFk" id="JAaUnmVLw0" role="2ShVmc">
-                    <ref role="37wK5l" node="JAaUnmQa92" resolve="DeleteButton" />
-                    <node concept="1rXfSq" id="JAaUnmVLw1" role="37wK5m">
-                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.getContext()" resolve="getContext" />
+                <node concept="3clFbF" id="148yUDVk8CY" role="3cqZAp">
+                  <node concept="1rXfSq" id="148yUDVk8CZ" role="3clFbG">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
+                    <node concept="37vLTw" id="148yUDVk8D0" role="37wK5m">
+                      <ref role="3cqZAo" node="JAaUnmVLvY" resolve="button" />
                     </node>
-                    <node concept="1rXfSq" id="JAaUnmVLw2" role="37wK5m">
-                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode()" resolve="getSNode" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="148yUDVk8CT" role="3cqZAp">
+                  <node concept="2OqwBi" id="148yUDVk8CU" role="3clFbG">
+                    <node concept="37vLTw" id="148yUDVk8CV" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7GMtHW6wGZN" resolve="myDeleteButtons" />
                     </node>
-                    <node concept="2GrUjf" id="JAaUnmVLw3" role="37wK5m">
-                      <ref role="2Gs0qQ" node="JAaUnmVeqK" resolve="treeChild" />
+                    <node concept="TSZUe" id="148yUDVk8CW" role="2OqNvi">
+                      <node concept="37vLTw" id="148yUDVk8CX" role="25WWJ7">
+                        <ref role="3cqZAo" node="JAaUnmVLvY" resolve="button" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="3clFbF" id="JAaUnmWd9S" role="3cqZAp">
-              <node concept="1rXfSq" id="JAaUnmWd9Q" role="3clFbG">
-                <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
-                <node concept="37vLTw" id="JAaUnmWdrI" role="37wK5m">
-                  <ref role="3cqZAo" node="JAaUnmVLvY" resolve="button" />
+              <node concept="2OqwBi" id="148yUDVgIl3" role="3clFbw">
+                <node concept="2OqwBi" id="148yUDViPXP" role="2Oq$k0">
+                  <node concept="2GrUjf" id="148yUDViS22" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="JAaUnmVeqK" resolve="treeChild" />
+                  </node>
+                  <node concept="liA8E" id="148yUDViSSd" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="148yUDVgJRm" role="2OqNvi">
+                  <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute)" resolve="get" />
+                  <node concept="1Z6Ecs" id="148yUDVgKCG" role="37wK5m">
+                    <ref role="1Z6EpT" to="5un2:148yUDVgwr0" resolve="tree-show-delete-icon" />
+                  </node>
                 </node>
               </node>
-            </node>
-            <node concept="3clFbF" id="JAaUnmVMi2" role="3cqZAp">
-              <node concept="2OqwBi" id="JAaUnmVMDQ" role="3clFbG">
-                <node concept="37vLTw" id="JAaUnmVMi0" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7GMtHW6wGZN" resolve="myDeleteButtons" />
-                </node>
-                <node concept="TSZUe" id="JAaUnmVNnW" role="2OqNvi">
-                  <node concept="37vLTw" id="JAaUnmVNBQ" role="25WWJ7">
-                    <ref role="3cqZAo" node="JAaUnmVLvY" resolve="button" />
+              <node concept="9aQIb" id="148yUDVk49C" role="9aQIa">
+                <node concept="3clFbS" id="148yUDVk49D" role="9aQI4">
+                  <node concept="3cpWs8" id="148yUDVky3f" role="3cqZAp">
+                    <node concept="3cpWsn" id="148yUDVky3g" role="3cpWs9">
+                      <property role="TrG5h" value="button" />
+                      <node concept="3uibUv" id="148yUDVkwsS" role="1tU5fm">
+                        <ref role="3uigEE" node="7GMtHW6rH5Q" resolve="Button" />
+                      </node>
+                      <node concept="2ShNRf" id="148yUDVky3h" role="33vP2m">
+                        <node concept="1pGfFk" id="148yUDVky3i" role="2ShVmc">
+                          <ref role="37wK5l" node="148yUDVm1Jk" resolve="InvisibleButton" />
+                          <node concept="1rXfSq" id="148yUDVky3j" role="37wK5m">
+                            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getContext()" resolve="getContext" />
+                          </node>
+                          <node concept="1rXfSq" id="148yUDVkAsI" role="37wK5m">
+                            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode()" resolve="getSNode" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="JAaUnmWd9S" role="3cqZAp">
+                    <node concept="1rXfSq" id="JAaUnmWd9Q" role="3clFbG">
+                      <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
+                      <node concept="37vLTw" id="148yUDVky3k" role="37wK5m">
+                        <ref role="3cqZAo" node="148yUDVky3g" resolve="button" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="JAaUnmVMi2" role="3cqZAp">
+                    <node concept="2OqwBi" id="JAaUnmVMDQ" role="3clFbG">
+                      <node concept="37vLTw" id="JAaUnmVMi0" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7GMtHW6wGZN" resolve="myDeleteButtons" />
+                      </node>
+                      <node concept="TSZUe" id="JAaUnmVNnW" role="2OqNvi">
+                        <node concept="37vLTw" id="148yUDVkCnE" role="25WWJ7">
+                          <ref role="3cqZAo" node="148yUDVky3g" resolve="button" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -17053,6 +17116,99 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="7dj$mdOQ2Lb" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="148yUDVm1Jc">
+    <property role="TrG5h" value="InvisibleButton" />
+    <node concept="2tJIrI" id="148yUDVm1Jd" role="jymVt" />
+    <node concept="2tJIrI" id="148yUDVmJLL" role="jymVt" />
+    <node concept="2tJIrI" id="148yUDVm1Jh" role="jymVt" />
+    <node concept="3Tm1VV" id="148yUDVm1Ji" role="1B3o_S" />
+    <node concept="3uibUv" id="148yUDVm1Jj" role="1zkMxy">
+      <ref role="3uigEE" node="7GMtHW6rH5Q" resolve="Button" />
+    </node>
+    <node concept="3clFbW" id="148yUDVm1Jk" role="jymVt">
+      <node concept="3cqZAl" id="148yUDVm1Jl" role="3clF45" />
+      <node concept="3Tm1VV" id="148yUDVm1Jm" role="1B3o_S" />
+      <node concept="3clFbS" id="148yUDVm1Jn" role="3clF47">
+        <node concept="XkiVB" id="148yUDVm1Jo" role="3cqZAp">
+          <ref role="37wK5l" node="7GMtHW6shEg" resolve="Button" />
+          <node concept="37vLTw" id="148yUDVm1Jp" role="37wK5m">
+            <ref role="3cqZAo" node="148yUDVm1Jv" resolve="editorContext" />
+          </node>
+          <node concept="37vLTw" id="148yUDVm1Jq" role="37wK5m">
+            <ref role="3cqZAo" node="148yUDVm1Jy" resolve="node" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="148yUDVm1Jv" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="148yUDVm1Jw" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+        <node concept="2AHcQZ" id="148yUDVm1Jx" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="148yUDVm1Jy" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3uibUv" id="148yUDVm1Jz" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="148yUDVm1JA" role="jymVt" />
+    <node concept="3clFb_" id="148yUDVm1JB" role="jymVt">
+      <property role="TrG5h" value="onClick" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="3cqZAl" id="148yUDVm1JC" role="3clF45" />
+      <node concept="3Tm1VV" id="148yUDVm1JD" role="1B3o_S" />
+      <node concept="3clFbS" id="148yUDVm1JE" role="3clF47" />
+      <node concept="2AHcQZ" id="148yUDVm1Le" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="148yUDVm1Lf" role="jymVt" />
+    <node concept="3clFb_" id="148yUDVm1Lg" role="jymVt">
+      <property role="TrG5h" value="paintSymbol" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="37vLTG" id="148yUDVm1Lh" role="3clF46">
+        <property role="TrG5h" value="g" />
+        <node concept="3uibUv" id="148yUDVm1Li" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="148yUDVm1Lj" role="3clF45" />
+      <node concept="3Tmbuc" id="148yUDVm1Lk" role="1B3o_S" />
+      <node concept="3clFbS" id="148yUDVm1Ll" role="3clF47" />
+      <node concept="2AHcQZ" id="148yUDVm1Mo" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="148yUDVm4WT" role="jymVt" />
+    <node concept="3clFb_" id="148yUDVm5fk" role="jymVt">
+      <property role="TrG5h" value="paintContent" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tmbuc" id="148yUDVm5fl" role="1B3o_S" />
+      <node concept="3cqZAl" id="148yUDVm5fm" role="3clF45" />
+      <node concept="37vLTG" id="148yUDVm5fn" role="3clF46">
+        <property role="TrG5h" value="g" />
+        <node concept="3uibUv" id="148yUDVm5fo" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="148yUDVm5fp" role="3clF46">
+        <property role="TrG5h" value="settings" />
+        <node concept="3uibUv" id="148yUDVm5fq" role="1tU5fm">
+          <ref role="3uigEE" to="g51k:~ParentSettings" resolve="ParentSettings" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="148yUDVm5gF" role="3clF47" />
+      <node concept="2AHcQZ" id="148yUDVm5gG" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="148yUDVm1Mp" role="jymVt" />
   </node>
 </model>
 
