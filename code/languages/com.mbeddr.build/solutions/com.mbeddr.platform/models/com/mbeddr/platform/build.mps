@@ -10024,6 +10024,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6J8ZJABE2P6" role="3bR37C">
+          <node concept="3bR9La" id="6J8ZJABE2P7" role="1SiIV1">
+            <ref role="3bR37D" node="$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2bBLuwR9LnB" role="2G$12L">
         <property role="BnDLt" value="true" />
