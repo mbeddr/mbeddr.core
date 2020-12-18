@@ -13,7 +13,6 @@
       <sourceRoot location="lib/org.apache.commons.cli-1.2.0.v201404270220.jar" />
       <sourceRoot location="lib/org.apache.commons.lang-2.6.0.v201404270220.jar" />
       <sourceRoot location="lib/org.apache.commons.logging-1.1.1.v201101211721.jar" />
-      <sourceRoot location="lib/org.apache.log4j-1.2.15.v201012070815.jar" />
       <sourceRoot location="lib/org.eclipse.core.commands-3.8.0.v20160316-1921.jar" />
       <sourceRoot location="lib/org.eclipse.core.contenttype-3.5.100.v20160418-1621.jar" />
       <sourceRoot location="lib/org.eclipse.core.expressions-3.5.100.v20160418-1621.jar" />
@@ -59,7 +58,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" languageLevel="JAVA_8">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -72,7 +71,6 @@
     <stubModelEntry path="${module}/lib/org.apache.commons.cli-1.2.0.v201404270220.jar" />
     <stubModelEntry path="${module}/lib/org.apache.commons.lang-2.6.0.v201404270220.jar" />
     <stubModelEntry path="${module}/lib/org.apache.commons.logging-1.1.1.v201101211721.jar" />
-    <stubModelEntry path="${module}/lib/org.apache.log4j-1.2.15.v201012070815.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.core.commands-3.8.0.v20160316-1921.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.core.contenttype-3.5.100.v20160418-1621.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.core.expressions-3.5.100.v20160418-1621.jar" />
