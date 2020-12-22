@@ -629,6 +629,9 @@
       <node concept="m$_yC" id="6rBfBe1Wuqz" role="m$_yJ">
         <ref role="m$_y1" node="5fGcQI94fMR" resolve="com.mbeddr.mpsutil.common" />
       </node>
+      <node concept="m$_yC" id="7odnKbxM7aM" role="m$_yJ">
+        <ref role="m$_y1" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
+      </node>
       <node concept="m$f5U" id="6rBfBe1WpV0" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnN1e0" resolve="group.interpreter" />
       </node>
