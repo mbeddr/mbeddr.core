@@ -1007,7 +1007,7 @@
                     </node>
                     <node concept="3cpWs8" id="3s1LyzGriHS" role="3cqZAp">
                       <node concept="3cpWsn" id="3s1LyzGriHV" role="3cpWs9">
-                        <property role="TrG5h" value="path" />
+                        <property role="TrG5h" value="makeCommand" />
                         <node concept="17QB3L" id="3s1LyzGriHQ" role="1tU5fm" />
                         <node concept="10Nm6u" id="3s1LyzGrrQn" role="33vP2m" />
                       </node>
@@ -1019,7 +1019,7 @@
                           <node concept="3clFbF" id="3s1LyzGrk4H" role="3cqZAp">
                             <node concept="37vLTI" id="3s1LyzGrkFy" role="3clFbG">
                               <node concept="37vLTw" id="3s1LyzGrk4F" role="37vLTJ">
-                                <ref role="3cqZAo" node="3s1LyzGriHV" resolve="path" />
+                                <ref role="3cqZAo" node="3s1LyzGriHV" resolve="makeCommand" />
                               </node>
                               <node concept="2OqwBi" id="3s1LyzGrlcb" role="37vLTx">
                                 <node concept="1LFfDK" id="3s1LyzGrkSm" role="2Oq$k0">
@@ -1067,7 +1067,7 @@
                       <node concept="3clFbC" id="2rwJegRMUK5" role="3clFbw">
                         <node concept="10Nm6u" id="2rwJegRMUKC" role="3uHU7w" />
                         <node concept="37vLTw" id="2rwJegRMUqH" role="3uHU7B">
-                          <ref role="3cqZAo" node="3s1LyzGriHV" resolve="path" />
+                          <ref role="3cqZAo" node="3s1LyzGriHV" resolve="makeCommand" />
                         </node>
                       </node>
                     </node>
@@ -1150,20 +1150,18 @@
                                     <node concept="1pGfFk" id="3dZgFhDBtIt" role="2ShVmc">
                                       <ref role="37wK5l" to="wyt6:~ProcessBuilder.&lt;init&gt;(java.lang.String...)" resolve="ProcessBuilder" />
                                       <node concept="37vLTw" id="3dZgFhDBtIu" role="37wK5m">
-                                        <ref role="3cqZAo" node="3s1LyzGriHV" resolve="path" />
+                                        <ref role="3cqZAo" node="3s1LyzGriHV" resolve="makeCommand" />
                                       </node>
                                       <node concept="3cpWs3" id="3dZgFhDBtIv" role="37wK5m">
                                         <node concept="Xl_RD" id="3dZgFhDBtIw" role="3uHU7B">
                                           <property role="Xl_RC" value="-j" />
                                         </node>
-                                        <node concept="1eOMI4" id="3dZgFhDBtIx" role="3uHU7w">
-                                          <node concept="2OqwBi" id="7GmkyIHGdWN" role="1eOMHV">
-                                            <node concept="37vLTw" id="7GmkyIHGdWO" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="42NvuOOGDBs" resolve="platform" />
-                                            </node>
-                                            <node concept="2qgKlT" id="7GmkyIHGdWP" role="2OqNvi">
-                                              <ref role="37wK5l" to="vog7:71C71cTwEiX" resolve="parallelProcesses" />
-                                            </node>
+                                        <node concept="2OqwBi" id="7GmkyIHGdWN" role="3uHU7w">
+                                          <node concept="37vLTw" id="7GmkyIHGdWO" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="42NvuOOGDBs" resolve="platform" />
+                                          </node>
+                                          <node concept="2qgKlT" id="7GmkyIHGdWP" role="2OqNvi">
+                                            <ref role="37wK5l" to="vog7:71C71cTwEiX" resolve="parallelProcesses" />
                                           </node>
                                         </node>
                                       </node>
@@ -1191,7 +1189,7 @@
                                       <node concept="1pGfFk" id="7GmkyIHGegn" role="2ShVmc">
                                         <ref role="37wK5l" to="wyt6:~ProcessBuilder.&lt;init&gt;(java.lang.String...)" resolve="ProcessBuilder" />
                                         <node concept="37vLTw" id="7GmkyIHGego" role="37wK5m">
-                                          <ref role="3cqZAo" node="3s1LyzGriHV" resolve="path" />
+                                          <ref role="3cqZAo" node="3s1LyzGriHV" resolve="makeCommand" />
                                         </node>
                                       </node>
                                     </node>
