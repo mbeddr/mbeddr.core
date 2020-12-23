@@ -318,6 +318,30 @@
   <node concept="1M2fIO" id="7EZ1Spm4KxY">
     <property role="3GE5qa" value="items" />
     <ref role="1M2myG" to="i2y7:7EZ1Spm4JaP" resolve="RuleRef" />
+    <node concept="1N5Pfh" id="5st30ygJ5e8" role="1Mr941">
+      <ref role="1N5Vy1" to="i2y7:7EZ1Spm4JaQ" resolve="rule" />
+      <node concept="3dgokm" id="5st30ygJ5ec" role="1N6uqs">
+        <node concept="3clFbS" id="5st30ygJ5ee" role="2VODD2">
+          <node concept="3clFbF" id="5st30ygJ5eB" role="3cqZAp">
+            <node concept="2YIFZM" id="5CkU_dHigGn" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <node concept="2OqwBi" id="5st30ygJ5RV" role="37wK5m">
+                <node concept="2OqwBi" id="5st30ygJ5vP" role="2Oq$k0">
+                  <node concept="2rP1CM" id="5st30ygJ5lx" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="5st30ygJ5EM" role="2OqNvi" />
+                </node>
+                <node concept="2SmgA7" id="5st30ygJ61J" role="2OqNvi">
+                  <node concept="chp4Y" id="5st30ygJ66O" role="1dBWTz">
+                    <ref role="cht4Q" to="i2y7:5ak6HMA0Ext" resolve="Rule" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="9S07l" id="7EZ1Spm4KxZ" role="9Vyp8">
       <node concept="3clFbS" id="7EZ1Spm4Ky0" role="2VODD2">
         <node concept="3clFbF" id="7EZ1Spm7srI" role="3cqZAp">
