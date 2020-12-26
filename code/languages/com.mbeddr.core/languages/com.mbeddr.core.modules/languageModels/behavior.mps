@@ -3776,8 +3776,8 @@
                     </node>
                     <node concept="3cpWs6" id="2qdxtjrFX0v" role="3cqZAp">
                       <node concept="2YIFZM" id="2qdxtjrAwUD" role="3cqZAk">
-                        <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
                         <ref role="37wK5l" to="8oaq:~FilenameUtils.getBaseName(java.lang.String)" resolve="getBaseName" />
+                        <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
                         <node concept="37vLTw" id="2qdxtjrG6RG" role="37wK5m">
                           <ref role="3cqZAo" node="2qdxtjrG6RA" resolve="purePath" />
                         </node>
