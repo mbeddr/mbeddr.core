@@ -9276,8 +9276,8 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="2qdxtjtO116" role="2OqNvi">
-                          <ref role="37wK5l" to="ahli:2qdxtjtKxxO" resolve="getApplicableCrossCompilationToolchains" />
+                        <node concept="2qgKlT" id="6VpLvM9ew1X" role="2OqNvi">
+                          <ref role="37wK5l" to="ahli:6VpLvM975_D" resolve="getConfiguredCrossCompilationToolchains" />
                         </node>
                       </node>
                     </node>
@@ -10073,25 +10073,20 @@
             <node concept="2jfdEK" id="2qdxtjtOdHd" role="1ps_xN">
               <node concept="3clFbS" id="2qdxtjtOdHe" role="2VODD2">
                 <node concept="3clFbF" id="2qdxtjtOgns" role="3cqZAp">
-                  <node concept="2OqwBi" id="2qdxtjtPDQH" role="3clFbG">
-                    <node concept="2OqwBi" id="2qdxtjtOgnu" role="2Oq$k0">
-                      <node concept="1PxgMI" id="2qdxtjtOgnv" role="2Oq$k0">
-                        <node concept="chp4Y" id="2qdxtjtOgnw" role="3oSUPX">
-                          <ref role="cht4Q" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
-                        </node>
-                        <node concept="2OqwBi" id="2qdxtjtOgnx" role="1m5AlR">
-                          <node concept="30H73N" id="2qdxtjtOgny" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="2qdxtjtOgnz" role="2OqNvi">
-                            <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
-                          </node>
-                        </node>
+                  <node concept="2OqwBi" id="2qdxtjtOgnu" role="3clFbG">
+                    <node concept="1PxgMI" id="2qdxtjtOgnv" role="2Oq$k0">
+                      <node concept="chp4Y" id="2qdxtjtOgnw" role="3oSUPX">
+                        <ref role="cht4Q" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
                       </node>
-                      <node concept="2qgKlT" id="2qdxtjtPAEq" role="2OqNvi">
-                        <ref role="37wK5l" to="ahli:2qdxtjtKxxO" resolve="getApplicableCrossCompilationToolchains" />
+                      <node concept="2OqwBi" id="2qdxtjtOgnx" role="1m5AlR">
+                        <node concept="30H73N" id="2qdxtjtOgny" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="2qdxtjtOgnz" role="2OqNvi">
+                          <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
+                        </node>
                       </node>
                     </node>
-                    <node concept="13MTOL" id="2qdxtjtPHAo" role="2OqNvi">
-                      <ref role="13MTZf" to="51wr:4JZ_DSuWeoL" resolve="supportedTargets" />
+                    <node concept="2qgKlT" id="6VpLvM9gCG_" role="2OqNvi">
+                      <ref role="37wK5l" to="ahli:6VpLvM9gb9c" resolve="getConfiguredCrossCompilationTargets" />
                     </node>
                   </node>
                 </node>

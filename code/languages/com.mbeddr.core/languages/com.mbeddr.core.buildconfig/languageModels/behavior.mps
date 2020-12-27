@@ -390,6 +390,9 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -4661,7 +4664,7 @@
       <node concept="10P_77" id="3dZgFhDSB3V" role="3clF45" />
     </node>
     <node concept="13i0hz" id="2qdxtjtCbfI" role="13h7CS">
-      <property role="TrG5h" value="getAllEffectivelySupportedTargets" />
+      <property role="TrG5h" value="getAllEffectivelyUsedTargets" />
       <node concept="3Tm1VV" id="2qdxtjtCbfJ" role="1B3o_S" />
       <node concept="3clFbS" id="2qdxtjtCbfL" role="3clF47">
         <node concept="3cpWs8" id="2qdxtjtCLI7" role="3cqZAp">
@@ -4787,6 +4790,47 @@
         <ref role="2I9WkF" to="51wr:1it8M3uGpbG" resolve="System" />
       </node>
     </node>
+    <node concept="13i0hz" id="6VpLvM9gb9c" role="13h7CS">
+      <property role="TrG5h" value="getConfiguredCrossCompilationTargets" />
+      <node concept="3Tm1VV" id="6VpLvM9gb9d" role="1B3o_S" />
+      <node concept="2I9FWS" id="6VpLvM9geY9" role="3clF45">
+        <ref role="2I9WkF" to="51wr:1it8M3uGpbG" resolve="System" />
+      </node>
+      <node concept="3clFbS" id="6VpLvM9gb9f" role="3clF47">
+        <node concept="3clFbF" id="6VpLvM9gmeu" role="3cqZAp">
+          <node concept="2OqwBi" id="6VpLvM9gmew" role="3clFbG">
+            <node concept="2OqwBi" id="6VpLvM9gmex" role="2Oq$k0">
+              <node concept="2OqwBi" id="6VpLvM9gmey" role="2Oq$k0">
+                <node concept="2OqwBi" id="6VpLvM9gmez" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6VpLvM9gme$" role="2Oq$k0">
+                    <node concept="13iPFW" id="6VpLvM9gme_" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="6VpLvM9gmeA" role="2OqNvi">
+                      <node concept="1xMEDy" id="6VpLvM9gmeB" role="1xVPHs">
+                        <node concept="chp4Y" id="6VpLvM9gmeC" role="ri$Ld">
+                          <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="6VpLvM9gmeD" role="2OqNvi">
+                    <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="6VpLvM9gmeE" role="2OqNvi">
+                  <node concept="chp4Y" id="6VpLvM9gmeF" role="v3oSu">
+                    <ref role="cht4Q" to="51wr:1RDUcGWe7Tt" resolve="CrossCompilationConfigItem" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="6VpLvM9gmeG" role="2OqNvi" />
+            </node>
+            <node concept="3Tsc0h" id="6VpLvM9gmeH" role="2OqNvi">
+              <ref role="3TtcxE" to="51wr:1RDUcGWgjCT" resolve="targets" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="4JZ_DSvtsLF" role="13h7CS">
       <property role="TrG5h" value="getCrossCompilationToolchains" />
       <node concept="3Tm1VV" id="4JZ_DSvtsLG" role="1B3o_S" />
@@ -4856,7 +4900,7 @@
               <ref role="2I9WkF" to="51wr:1it8M3uGpbG" resolve="System" />
             </node>
             <node concept="BsUDl" id="2qdxtjtKxyc" role="33vP2m">
-              <ref role="37wK5l" node="2qdxtjtCbfI" resolve="getAllEffectivelySupportedTargets" />
+              <ref role="37wK5l" node="2qdxtjtCbfI" resolve="getAllEffectivelyUsedTargets" />
             </node>
           </node>
         </node>
@@ -4931,7 +4975,7 @@
                                         <node concept="3clFbF" id="2qdxtju3UlG" role="3cqZAp">
                                           <node concept="2OqwBi" id="2qdxtju3UlH" role="3clFbG">
                                             <node concept="37vLTw" id="2qdxtju3UlI" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="2qdxtju3UlQ" resolve="crossCompilationTarget" />
+                                              <ref role="3cqZAo" node="2qdxtju3UlQ" resolve="supportedTarget" />
                                             </node>
                                             <node concept="1mIQ4w" id="2qdxtju3UlJ" role="2OqNvi">
                                               <node concept="25Kdxt" id="2qdxtju3UlK" role="cj9EA">
@@ -4956,7 +5000,7 @@
                               </node>
                             </node>
                             <node concept="Rh6nW" id="2qdxtju3UlQ" role="1bW2Oz">
-                              <property role="TrG5h" value="crossCompilationTarget" />
+                              <property role="TrG5h" value="supportedTarget" />
                               <node concept="2jxLKc" id="2qdxtju3UlR" role="1tU5fm" />
                             </node>
                           </node>
@@ -4974,6 +5018,105 @@
             <node concept="ANE8D" id="2qdxtjtKxyL" role="2OqNvi" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6VpLvM975_D" role="13h7CS">
+      <property role="TrG5h" value="getConfiguredCrossCompilationToolchains" />
+      <node concept="3Tm1VV" id="6VpLvM975_E" role="1B3o_S" />
+      <node concept="3clFbS" id="6VpLvM975_G" role="3clF47">
+        <node concept="3cpWs8" id="6VpLvM9gu0h" role="3cqZAp">
+          <node concept="3cpWsn" id="6VpLvM9gu0i" role="3cpWs9">
+            <property role="TrG5h" value="configuredCrossCompilationTargets" />
+            <node concept="2I9FWS" id="6VpLvM9grvO" role="1tU5fm">
+              <ref role="2I9WkF" to="51wr:1it8M3uGpbG" resolve="System" />
+            </node>
+            <node concept="BsUDl" id="6VpLvM9gu0j" role="33vP2m">
+              <ref role="37wK5l" node="6VpLvM9gb9c" resolve="getConfiguredCrossCompilationTargets" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6VpLvM97D9x" role="3cqZAp">
+          <node concept="2OqwBi" id="6VpLvM98Tql" role="3clFbG">
+            <node concept="2OqwBi" id="6VpLvM97Fyz" role="2Oq$k0">
+              <node concept="BsUDl" id="6VpLvM97D9v" role="2Oq$k0">
+                <ref role="37wK5l" node="4JZ_DSvtsLF" resolve="getCrossCompilationToolchains" />
+              </node>
+              <node concept="3zZkjj" id="6VpLvM97IlA" role="2OqNvi">
+                <node concept="1bVj0M" id="6VpLvM97IlC" role="23t8la">
+                  <node concept="3clFbS" id="6VpLvM97IlD" role="1bW5cS">
+                    <node concept="3clFbF" id="6VpLvM97J_V" role="3cqZAp">
+                      <node concept="2OqwBi" id="6VpLvM97NdL" role="3clFbG">
+                        <node concept="2OqwBi" id="6VpLvM97K64" role="2Oq$k0">
+                          <node concept="37vLTw" id="6VpLvM97J_U" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6VpLvM97IlE" resolve="it" />
+                          </node>
+                          <node concept="3Tsc0h" id="6VpLvM97Km1" role="2OqNvi">
+                            <ref role="3TtcxE" to="51wr:4JZ_DSuWeoL" resolve="supportedTargets" />
+                          </node>
+                        </node>
+                        <node concept="2HwmR7" id="6VpLvM9cY2D" role="2OqNvi">
+                          <node concept="1bVj0M" id="6VpLvM9cY2F" role="23t8la">
+                            <node concept="3clFbS" id="6VpLvM9cY2G" role="1bW5cS">
+                              <node concept="3clFbF" id="6VpLvM9d2DI" role="3cqZAp">
+                                <node concept="2OqwBi" id="6VpLvM9d4GP" role="3clFbG">
+                                  <node concept="37vLTw" id="6VpLvM9gu0k" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="6VpLvM9gu0i" resolve="configuredCrossCompilationTargets" />
+                                  </node>
+                                  <node concept="2HwmR7" id="6VpLvM9j3_1" role="2OqNvi">
+                                    <node concept="1bVj0M" id="6VpLvM9j3_3" role="23t8la">
+                                      <node concept="3clFbS" id="6VpLvM9j3_4" role="1bW5cS">
+                                        <node concept="3clFbF" id="6VpLvM9ja5t" role="3cqZAp">
+                                          <node concept="2OqwBi" id="6VpLvM9l_ak" role="3clFbG">
+                                            <node concept="2OqwBi" id="6VpLvM9ky7Q" role="2Oq$k0">
+                                              <node concept="37vLTw" id="6VpLvM9ja5s" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="6VpLvM9cY2H" resolve="supportedTarget" />
+                                              </node>
+                                              <node concept="2yIwOk" id="6VpLvM9k$07" role="2OqNvi" />
+                                            </node>
+                                            <node concept="3O6GUB" id="6VpLvM9lAgR" role="2OqNvi">
+                                              <node concept="25Kdxt" id="6VpLvM9lCog" role="3QVz_e">
+                                                <node concept="2OqwBi" id="6VpLvM9lFoJ" role="25KhWn">
+                                                  <node concept="37vLTw" id="6VpLvM9lDK4" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="6VpLvM9j3_5" resolve="configuredTarget" />
+                                                  </node>
+                                                  <node concept="2yIwOk" id="6VpLvM9lFKn" role="2OqNvi" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="Rh6nW" id="6VpLvM9j3_5" role="1bW2Oz">
+                                        <property role="TrG5h" value="configuredTarget" />
+                                        <node concept="2jxLKc" id="6VpLvM9j3_6" role="1tU5fm" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Rh6nW" id="6VpLvM9cY2H" role="1bW2Oz">
+                              <property role="TrG5h" value="supportedTarget" />
+                              <node concept="2jxLKc" id="6VpLvM9cY2I" role="1tU5fm" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="6VpLvM97IlE" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="6VpLvM97IlF" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="6VpLvM98Uzm" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="6VpLvM979Ol" role="3clF45">
+        <ref role="2I9WkF" to="51wr:4JZ_DSuWeoI" resolve="CrossCompilationToolchain" />
       </node>
     </node>
     <node concept="13i0hz" id="77mJsGsFMiF" role="13h7CS">
