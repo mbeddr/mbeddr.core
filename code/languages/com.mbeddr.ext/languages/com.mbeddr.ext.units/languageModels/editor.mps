@@ -23,11 +23,13 @@
     <import index="tpci" ref="r:00000000-0000-4000-0000-011c8959028e(jetbrains.mps.lang.structure.findUsages)" />
     <import index="g4jo" ref="r:d98d04fb-4a60-4106-81cf-6cb40b67de4d(jetbrains.mps.ide.findusages.model)" />
     <import index="gkt" ref="r:f29b6853-4e1d-40bc-a331-9233266a6f31(com.mbeddr.ext.units.runtime.plugin)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="19h7" ref="r:c367b380-739b-4331-a16f-a542455fc0c8(de.itemis.mps.editor.math.editor)" implicit="true" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
@@ -1863,8 +1865,35 @@
   <node concept="24kQdi" id="4CUqBF4vCcm">
     <property role="3GE5qa" value="definition" />
     <ref role="1XX52x" to="qlb5:4CUqBF4vy4_" resolve="UnitConfigItem" />
-    <node concept="3F0ifn" id="4CUqBF4vMRr" role="2wV5jI">
-      <property role="3F0ifm" value="units" />
+    <node concept="3EZMnI" id="6TPUpoAiJOW" role="2wV5jI">
+      <node concept="2iRfu4" id="6TPUpoAiJOX" role="2iSdaV" />
+      <node concept="PMmxH" id="5yFZkJSSw$9" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="gc7cB" id="2hmLFgaUNOr" role="3EZMnx">
+        <node concept="3VJUX4" id="2hmLFgaUNOt" role="3YsKMw">
+          <node concept="3clFbS" id="2hmLFgaUNOv" role="2VODD2">
+            <node concept="3clFbF" id="2hmLFgaUNPo" role="3cqZAp">
+              <node concept="2ShNRf" id="2hmLFgaUNPm" role="3clFbG">
+                <node concept="1pGfFk" id="2hmLFgaUO1M" role="2ShVmc">
+                  <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
+                  <node concept="pncrf" id="2hmLFgaUO3p" role="37wK5m" />
+                  <node concept="10M0yZ" id="2hmLFgaUPt4" role="37wK5m">
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+                  </node>
+                  <node concept="3cmrfG" id="2hmLFgaUOaz" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="2hmLFgb0VkU" role="37wK5m">
+                    <property role="3cmrfH" value="2" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3j3yk3gAqyD">
