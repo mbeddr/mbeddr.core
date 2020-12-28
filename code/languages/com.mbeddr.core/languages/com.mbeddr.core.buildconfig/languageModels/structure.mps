@@ -332,13 +332,13 @@
     <node concept="PrWs8" id="3dZgFhDSziU" role="PzmwI">
       <ref role="PrY4T" to="i2y7:3dZgFhDSw4V" resolve="IGeneratesToMakefile" />
     </node>
+    <node concept="PrWs8" id="1cOw9QkO4Rq" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1cOw9QkLoM_" resolve="IOutputLocationProvider" />
+    </node>
     <node concept="1TJgyi" id="5ara9PcmbE2" role="1TKVEl">
       <property role="IQ2nx" value="5952395988556102274" />
       <property role="TrG5h" value="supportsSharedLibraries" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="PrWs8" id="1cOw9QkO4Rq" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:1cOw9QkLoM_" resolve="IOutputLocationProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="4BxItZJ4BoI">
@@ -820,6 +820,23 @@
       <property role="IQ2nx" value="3566368989666528786" />
       <property role="TrG5h" value="defaultPrefix" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1RDUcGWe7Tt">
+    <property role="EcuMT" value="2155509856259833437" />
+    <property role="3GE5qa" value="crosscompilation" />
+    <property role="TrG5h" value="CrossCompilationConfigItem" />
+    <property role="34LRSv" value="cross compilation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1RDUcGWedR2" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+    <node concept="1TJgyj" id="1RDUcGWgjCT" role="1TKVEi">
+      <property role="IQ2ns" value="2155509856260405817" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="targets" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="System" />
     </node>
   </node>
 </model>

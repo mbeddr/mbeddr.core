@@ -2374,9 +2374,12 @@
                 <ref role="3TsBF5" to="w8vz:4g52gaNOHw7" resolve="lastReviewReviewer" />
               </node>
             </node>
-            <node concept="2YIFZM" id="1tDstbgF01r" role="37vLTx">
-              <ref role="37wK5l" to="hwgx:1tDstbgDG6a" resolve="getUserName" />
-              <ref role="1Pybhc" to="hwgx:1tDstbgDG3d" resolve="UserHelper" />
+            <node concept="2YIFZM" id="1tDstbgDGA$" role="37vLTx">
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+              <node concept="Xl_RD" id="1tDstbgDGA_" role="37wK5m">
+                <property role="Xl_RC" value="user.name" />
+              </node>
             </node>
           </node>
         </node>
