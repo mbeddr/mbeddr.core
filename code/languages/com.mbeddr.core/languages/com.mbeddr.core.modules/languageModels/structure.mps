@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -133,7 +134,7 @@
       <property role="20kJfa" value="stdImports" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="9074180702632864845" />
-      <ref role="20lvS9" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
+      <ref role="20lvS9" node="4zr6ozuiDB5" resolve="IStdHeaderImport" />
     </node>
     <node concept="PrWs8" id="19a6$uAAqkp" role="PzmwI">
       <ref role="PrY4T" node="19a6$uAAqkn" resolve="IModuleContentContainer" />
@@ -397,6 +398,9 @@
     </node>
     <node concept="PrWs8" id="3tp$LrDIuOx" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
+    </node>
+    <node concept="PrWs8" id="4zr6ozujaZW" role="PzmwI">
+      <ref role="PrY4T" node="4zr6ozuiDB5" resolve="IStdHeaderImport" />
     </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fOqJ1">
@@ -1673,6 +1677,11 @@
       <property role="3tVfz5" value="4136790203587418412" />
       <ref role="2wpffI" node="3_CPcn39d$G" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="4zr6ozuiDB5">
+    <property role="EcuMT" value="5249817866266122693" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="IStdHeaderImport" />
   </node>
 </model>
 

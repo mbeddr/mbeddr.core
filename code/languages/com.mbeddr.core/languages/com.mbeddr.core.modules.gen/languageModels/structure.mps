@@ -162,6 +162,9 @@
       <property role="IQ2ns" value="1317894735999388455" />
       <ref role="20lvS9" node="1x_Jrt9Mwpu" resolve="GenModuleH" />
     </node>
+    <node concept="PrWs8" id="4zr6ozueESC" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3kEjc_WIMEE">
     <property role="TrG5h" value="GenStdHeaderImport" />
@@ -182,6 +185,9 @@
       <property role="TrG5h" value="alternativeHeaderFileName" />
       <property role="IQ2nx" value="1559434277891357642" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="4zr6ozujpTW" role="PzmwI">
+      <ref role="PrY4T" to="x27k:4zr6ozuiDB5" resolve="IStdHeaderImport" />
     </node>
   </node>
   <node concept="1TIwiD" id="7RiewQ_kN5M">
@@ -220,6 +226,9 @@
       <property role="IQ2ns" value="9066372830133005542" />
       <ref role="20lvS9" node="7RiewQ_kN5M" resolve="GenExtModule" />
     </node>
+    <node concept="PrWs8" id="4zr6ozufee$" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
+    </node>
   </node>
   <node concept="1TIwiD" id="34x64NyTNWu">
     <property role="3GE5qa" value="module" />
@@ -228,9 +237,6 @@
     <property role="R4oN_" value="--" />
     <property role="EcuMT" value="3540137500593307422" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4zr6oztOhBt" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
-    </node>
   </node>
   <node concept="PlHQZ" id="7lqvH8EmCAQ">
     <property role="TrG5h" value="ICareAboutImportingMyself" />
@@ -365,6 +371,9 @@
       <property role="20kJfa" value="module" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+    </node>
+    <node concept="PrWs8" id="4zr6ozufeON" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
     </node>
   </node>
   <node concept="1TIwiD" id="1lWQE5EvL9X">

@@ -6335,7 +6335,7 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="w3eGJcYxdn" role="2GsD0m">
-                <ref role="37wK5l" to="p8f0:w3eGJcRYxF" resolve="uniqueNodes" />
+                <ref role="37wK5l" to="p8f0:w3eGJcRYxF" resolve="uniqueMangleableModuleContents" />
                 <ref role="1Pybhc" to="p8f0:w3eGJcGcTr" resolve="NameManglingHelper" />
                 <node concept="1Q6Npb" id="w3eGJcYxdo" role="37wK5m" />
               </node>
