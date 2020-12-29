@@ -133,7 +133,7 @@
       <property role="20kJfa" value="stdImports" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="9074180702632864845" />
-      <ref role="20lvS9" node="3kEjc_WIKGf" resolve="StdHeaderImport" />
+      <ref role="20lvS9" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
     </node>
     <node concept="PrWs8" id="19a6$uAAqkp" role="PzmwI">
       <ref role="PrY4T" node="19a6$uAAqkn" resolve="IModuleContentContainer" />
@@ -374,6 +374,7 @@
     <property role="R4oN_" value="import a standard header (e.g. &lt;stdio&gt;)" />
     <property role="34LRSv" value="header" />
     <property role="EcuMT" value="3830958861296798479" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3kEjc_WIKGg" role="1TKVEl">
       <property role="TrG5h" value="headerFileName" />
       <property role="IQ2nx" value="3830958861296798480" />
