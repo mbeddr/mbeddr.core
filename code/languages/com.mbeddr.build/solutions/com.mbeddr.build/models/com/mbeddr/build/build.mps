@@ -5260,6 +5260,16 @@
               <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
             </node>
           </node>
+          <node concept="1SiIV0" id="48sN3l9KUch" role="3bR37C">
+            <node concept="3bR9La" id="48sN3l9KUci" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="48sN3l9KUcj" role="3bR37C">
+            <node concept="3bR9La" id="48sN3l9KUck" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="3xxBtygh0L0" role="3bR37C">
           <node concept="3bR9La" id="3xxBtygh0L1" role="1SiIV1">
