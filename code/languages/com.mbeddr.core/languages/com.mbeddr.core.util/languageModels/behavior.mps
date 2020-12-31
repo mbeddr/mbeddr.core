@@ -8098,6 +8098,26 @@
                   <property role="3oM_SC" value="/)" />
                 </node>
               </node>
+              <node concept="1PaTwC" id="6leHaJbkWHO" role="3ndbpf">
+                <node concept="3oM_SD" id="6leHaJbkWHN" role="1PaTwD">
+                  <property role="3oM_SC" value="-" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbkXl4" role="1PaTwD">
+                  <property role="3oM_SC" value="ends" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbkXVD" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbkXVH" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbkYy4" role="1PaTwD">
+                  <property role="3oM_SC" value="or" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbkYyi" role="1PaTwD">
+                  <property role="3oM_SC" value="'" />
+                </node>
+              </node>
               <node concept="1PaTwC" id="3$f8hf_N7Zj" role="3ndbpf">
                 <node concept="3oM_SD" id="3$f8hf_N7Zi" role="1PaTwD">
                   <property role="3oM_SC" value="-" />
@@ -8128,7 +8148,7 @@
                   <node concept="liA8E" id="6TPUpo$St3V" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="6TPUpo$St5h" role="37wK5m">
-                      <property role="Xl_RC" value=".*( |\\\\[nt]|0x|#|[\\(\\[\\{]|[\\+\\-*/]|[§~])" />
+                      <property role="Xl_RC" value=".*( |\\\\[nt]|0x|#|[\\(\\[\\{]|[\\+\\-*/]|[\&quot;']|[§~])" />
                     </node>
                   </node>
                 </node>
@@ -8321,6 +8341,26 @@
                   <property role="3oM_SC" value="/)" />
                 </node>
               </node>
+              <node concept="1PaTwC" id="6leHaJbl0l8" role="3ndbpf">
+                <node concept="3oM_SD" id="6leHaJbl0l7" role="1PaTwD">
+                  <property role="3oM_SC" value="-" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbl0Wr" role="1PaTwD">
+                  <property role="3oM_SC" value="starts" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbl1yK" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbl1yO" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbl29b" role="1PaTwD">
+                  <property role="3oM_SC" value="or" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbl29h" role="1PaTwD">
+                  <property role="3oM_SC" value="'" />
+                </node>
+              </node>
               <node concept="1PaTwC" id="3$f8hf_NmoJ" role="3ndbpf">
                 <node concept="3oM_SD" id="3$f8hf_NmoI" role="1PaTwD">
                   <property role="3oM_SC" value="-" />
@@ -8367,7 +8407,7 @@
                   <node concept="liA8E" id="6TPUpo$OfV3" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="6TPUpo$OfV4" role="37wK5m">
-                      <property role="Xl_RC" value="( |\\\\[nt]|[\\.,:;?!]|[\\)\\]\\}]|[\\+\\-*/]|[%°]).*" />
+                      <property role="Xl_RC" value="( |\\\\[nt]|[\\.,:;?!]|[\\)\\]\\}]|[\\+\\-*/]|[\&quot;']|[%°]).*" />
                     </node>
                   </node>
                 </node>
