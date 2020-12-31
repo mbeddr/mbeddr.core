@@ -134,7 +134,7 @@
       <property role="20kJfa" value="stdImports" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="9074180702632864845" />
-      <ref role="20lvS9" node="4zr6ozuiDB5" resolve="IStdHeaderImport" />
+      <ref role="20lvS9" node="3kEjc_WIKGf" resolve="StdHeaderImport" />
     </node>
     <node concept="PrWs8" id="19a6$uAAqkp" role="PzmwI">
       <ref role="PrY4T" node="19a6$uAAqkn" resolve="IModuleContentContainer" />
@@ -398,9 +398,6 @@
     </node>
     <node concept="PrWs8" id="3tp$LrDIuOx" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
-    </node>
-    <node concept="PrWs8" id="4zr6ozujaZW" role="PzmwI">
-      <ref role="PrY4T" node="4zr6ozuiDB5" resolve="IStdHeaderImport" />
     </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fOqJ1">
