@@ -5,7 +5,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -240,6 +240,7 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -7967,7 +7968,46 @@
       <node concept="3clFbS" id="6TPUpo$Sq$0" role="3clF47">
         <node concept="3clFbJ" id="6TPUpo$SraN" role="3cqZAp">
           <node concept="3clFbS" id="6TPUpo$SraP" role="3clFbx">
+            <node concept="3SKdUt" id="601qOas6DNu" role="3cqZAp">
+              <node concept="1PaTwC" id="601qOas6DNv" role="1aUNEU">
+                <node concept="3oM_SD" id="601qOas6DNw" role="1PaTwD">
+                  <property role="3oM_SC" value="Return" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DNx" role="1PaTwD">
+                  <property role="3oM_SC" value="true" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DNy" role="1PaTwD">
+                  <property role="3oM_SC" value="if" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DNz" role="1PaTwD">
+                  <property role="3oM_SC" value="given" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DN$" role="1PaTwD">
+                  <property role="3oM_SC" value="message" />
+                </node>
+              </node>
+            </node>
             <node concept="3SKdUt" id="6TPUpo$Sr4g" role="3cqZAp">
+              <node concept="1PaTwC" id="601qOas6$AG" role="3ndbpf">
+                <node concept="3oM_SD" id="6leHaJbkWHN" role="1PaTwD">
+                  <property role="3oM_SC" value="-" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbkXl4" role="1PaTwD">
+                  <property role="3oM_SC" value="ends" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbkXVD" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbkXVH" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbkYy4" role="1PaTwD">
+                  <property role="3oM_SC" value="or" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbkYyi" role="1PaTwD">
+                  <property role="3oM_SC" value="'" />
+                </node>
+              </node>
               <node concept="1PaTwC" id="6TPUpo$Sr4h" role="1aUNEU">
                 <node concept="3oM_SD" id="6TPUpo$Sr4F" role="1PaTwD">
                   <property role="3oM_SC" value="Return" />
@@ -8117,6 +8157,28 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="601qOas6DNd" role="3cqZAp">
+              <node concept="1PaTwC" id="601qOas6DNe" role="1aUNEU">
+                <node concept="3oM_SD" id="601qOas6DNi" role="1PaTwD">
+                  <property role="3oM_SC" value="-" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DNj" role="1PaTwD">
+                  <property role="3oM_SC" value="starts" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DNk" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DNl" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DNm" role="1PaTwD">
+                  <property role="3oM_SC" value="or" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DNn" role="1PaTwD">
+                  <property role="3oM_SC" value="'" />
+                </node>
+              </node>
+            </node>
             <node concept="3SKdUt" id="59cfP9u6Mh9" role="3cqZAp">
               <node concept="1PaTwC" id="3$f8hf_N7Zj" role="1aUNEU">
                 <node concept="3oM_SD" id="3$f8hf_N7Zi" role="1PaTwD">
@@ -8148,7 +8210,7 @@
                   <node concept="liA8E" id="6TPUpo$St3V" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="6TPUpo$St5h" role="37wK5m">
-                      <property role="Xl_RC" value=".*( |\\\\[nt]|0x|#|[\\(\\[\\{]|[\\+\\-*/]|[§~])" />
+                      <property role="Xl_RC" value=".*( |\\\\[nt]|0x|#|[\\(\\[\\{]|[\\+\\-*/]|[\&quot;']|[§~])" />
                     </node>
                   </node>
                 </node>
@@ -8194,6 +8256,26 @@
           </node>
           <node concept="3clFbS" id="3PUmE2muYe7" role="Jncv$">
             <node concept="3SKdUt" id="3PUmE2lLNbI" role="3cqZAp">
+              <node concept="1PaTwC" id="601qOas6$AT" role="3ndbpf">
+                <node concept="3oM_SD" id="6leHaJbl0l7" role="1PaTwD">
+                  <property role="3oM_SC" value="-" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbl0Wr" role="1PaTwD">
+                  <property role="3oM_SC" value="starts" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbl1yK" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbl1yO" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbl29b" role="1PaTwD">
+                  <property role="3oM_SC" value="or" />
+                </node>
+                <node concept="3oM_SD" id="6leHaJbl29h" role="1PaTwD">
+                  <property role="3oM_SC" value="'" />
+                </node>
+              </node>
               <node concept="1PaTwC" id="3PUmE2lLNbJ" role="1aUNEU">
                 <node concept="3oM_SD" id="3PUmE2lLNbL" role="1PaTwD">
                   <property role="3oM_SC" value="Return" />
@@ -8352,6 +8434,28 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="601qOas6DKl" role="3cqZAp">
+              <node concept="1PaTwC" id="601qOas6DKm" role="1aUNEU">
+                <node concept="3oM_SD" id="601qOas6DKq" role="1PaTwD">
+                  <property role="3oM_SC" value="-" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DKr" role="1PaTwD">
+                  <property role="3oM_SC" value="starts" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DKs" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DKt" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DKu" role="1PaTwD">
+                  <property role="3oM_SC" value="or" />
+                </node>
+                <node concept="3oM_SD" id="601qOas6DKv" role="1PaTwD">
+                  <property role="3oM_SC" value="'" />
+                </node>
+              </node>
+            </node>
             <node concept="3SKdUt" id="59cfP9u6Mhr" role="3cqZAp">
               <node concept="1PaTwC" id="3$f8hf_NmoJ" role="1aUNEU">
                 <node concept="3oM_SD" id="3$f8hf_NmoI" role="1PaTwD">
@@ -8399,7 +8503,7 @@
                   <node concept="liA8E" id="6TPUpo$OfV3" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="6TPUpo$OfV4" role="37wK5m">
-                      <property role="Xl_RC" value="( |\\\\[nt]|[\\.,:;?!]|[\\)\\]\\}]|[\\+\\-*/]|[%°]).*" />
+                      <property role="Xl_RC" value="( |\\\\[nt]|[\\.,:;?!]|[\\)\\]\\}]|[\\+\\-*/]|[\&quot;']|[%°]).*" />
                     </node>
                   </node>
                 </node>
