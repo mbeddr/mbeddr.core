@@ -6353,7 +6353,7 @@
               </node>
               <node concept="2YIFZM" id="w3eGJcYxdn" role="2GsD0m">
                 <ref role="1Pybhc" to="p8f0:w3eGJcGcTr" resolve="NameManglingHelper" />
-                <ref role="37wK5l" to="p8f0:w3eGJcRYxF" resolve="uniqueMangleableModuleContents" />
+                <ref role="37wK5l" to="p8f0:601qOas6EVy" resolve="uniqueMangleableModuleContents" />
                 <node concept="1Q6Npb" id="w3eGJcYxdo" role="37wK5m" />
               </node>
             </node>
