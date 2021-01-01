@@ -8419,6 +8419,23 @@
             <node concept="2jxLKc" id="3PUmE2muYed" role="1tU5fm" />
           </node>
         </node>
+        <node concept="Jncv_" id="2acnZIpgKyo" role="3cqZAp">
+          <ref role="JncvD" to="k146:1EZSCJhI$Q7" resolve="LogExpressionWord" />
+          <node concept="37vLTw" id="2acnZIpgLcz" role="JncvB">
+            <ref role="3cqZAo" node="3PUmE2lLGNK" resolve="word" />
+          </node>
+          <node concept="3clFbS" id="2acnZIpgKys" role="Jncv$">
+            <node concept="3cpWs6" id="2acnZIpgW52" role="3cqZAp">
+              <node concept="3clFbT" id="2acnZIpgWHN" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="2acnZIpgKyu" role="JncvA">
+            <property role="TrG5h" value="expr" />
+            <node concept="2jxLKc" id="2acnZIpgKyv" role="1tU5fm" />
+          </node>
+        </node>
         <node concept="3clFbF" id="3PUmE2muZgT" role="3cqZAp">
           <node concept="2OqwBi" id="6TPUpo$DvzP" role="3clFbG">
             <node concept="37vLTw" id="6TPUpo$Dv6a" role="2Oq$k0">
