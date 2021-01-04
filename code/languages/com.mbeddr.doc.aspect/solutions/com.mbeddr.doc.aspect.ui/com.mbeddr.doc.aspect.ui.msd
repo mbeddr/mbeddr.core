@@ -23,6 +23,7 @@
     <dependency reexport="false">38a074ed-e5ad-4b2d-be31-ca436911b8aa(com.mbeddr.doc.aspect)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
+    <dependency reexport="false">5474e4cd-6621-4b33-a39a-75552543ba57(de.slisson.mps.conditionalEditor.hints)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:58e731a3-6aaa-444a-bf40-801b91c15878:com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />

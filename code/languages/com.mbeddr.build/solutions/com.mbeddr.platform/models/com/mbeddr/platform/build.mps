@@ -20697,6 +20697,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="5hHOYTmG3Ud" role="3bR37C">
+          <node concept="3bR9La" id="5hHOYTmG3Ue" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5l4WPWBt8tR" role="3989C9">

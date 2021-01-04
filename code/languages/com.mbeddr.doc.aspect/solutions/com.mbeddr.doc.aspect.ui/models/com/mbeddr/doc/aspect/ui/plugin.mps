@@ -53,6 +53,7 @@
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="461n" ref="r:3b46a963-6deb-4d82-bdc0-36b5d9297fcf(de.slisson.mps.conditionalEditor.hints.editor)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -1664,7 +1665,7 @@
       <node concept="3Tm6S6" id="1b5JZf3y7GE" role="1B3o_S" />
     </node>
     <node concept="2XrIbr" id="1KDc5EfHWG0" role="2XNbBy">
-      <property role="TrG5h" value="addPresentationModeHint" />
+      <property role="TrG5h" value="enableNecessaryEditorHints" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="1KDc5EfHWG1" role="3clF47">
@@ -1682,6 +1683,9 @@
                 </node>
                 <node concept="2pYGij" id="1KDc5EfHWG9" role="3g7hyw">
                   <ref role="2pYH_C" to="lzj6:4jXS_uRroxt" resolve="documentationMode" />
+                </node>
+                <node concept="2pYGij" id="5hHOYTmG2Bz" role="3g7hyw">
+                  <ref role="2pYH_C" to="461n:2kbUaNP7dpe" resolve="conditionalEditor" />
                 </node>
                 <node concept="17QB3L" id="1KDc5EfHWGa" role="3g7fb8" />
               </node>
@@ -3365,7 +3369,7 @@
           <node concept="2OqwBi" id="1KDc5EfHWe8" role="3clFbG">
             <node concept="2WthIp" id="1KDc5EfHWe9" role="2Oq$k0" />
             <node concept="2XshWL" id="1KDc5EfHWea" role="2OqNvi">
-              <ref role="2WH_rO" node="1KDc5EfHWG0" resolve="addPresentationModeHint" />
+              <ref role="2WH_rO" node="1KDc5EfHWG0" resolve="enableNecessaryEditorHints" />
               <node concept="2OqwBi" id="1KDc5EfHWeb" role="2XxRq1">
                 <node concept="2WthIp" id="1KDc5EfHWec" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="1KDc5EfHWed" role="2OqNvi">
@@ -3422,7 +3426,7 @@
           <node concept="2OqwBi" id="6lu2bgTpveK" role="3clFbG">
             <node concept="2WthIp" id="6lu2bgTpveL" role="2Oq$k0" />
             <node concept="2XshWL" id="6lu2bgTpveM" role="2OqNvi">
-              <ref role="2WH_rO" node="1KDc5EfHWG0" resolve="addPresentationModeHint" />
+              <ref role="2WH_rO" node="1KDc5EfHWG0" resolve="enableNecessaryEditorHints" />
               <node concept="2OqwBi" id="6lu2bgTpveN" role="2XxRq1">
                 <node concept="2WthIp" id="6lu2bgTpveO" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="6lu2bgTpwgT" role="2OqNvi">
