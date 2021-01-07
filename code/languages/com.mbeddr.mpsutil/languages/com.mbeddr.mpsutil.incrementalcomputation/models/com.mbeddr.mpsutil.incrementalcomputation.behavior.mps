@@ -4,7 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -40,6 +40,7 @@
         <child id="1224071154657" name="classifierType" index="0kSFW" />
         <child id="1224071154656" name="expression" index="0kSFX" />
       </concept>
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -68,6 +69,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -87,9 +89,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -97,6 +97,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -111,6 +114,12 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -128,6 +137,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -153,6 +163,25 @@
     <ref role="13h7C2" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
     <node concept="13hLZK" id="2S2eLhiMx3h" role="13h7CW">
       <node concept="3clFbS" id="2S2eLhiMx3i" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7rpuqnf_WYv" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getValueSelectorsToUpdate" />
+      <node concept="3Tm1VV" id="7rpuqnf_WYw" role="1B3o_S" />
+      <node concept="A3Dl8" id="7rpuqnf_X3E" role="3clF45">
+        <node concept="3uibUv" id="7rpuqnf_X3R" role="A3Ik2">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7rpuqnf_WYy" role="3clF47" />
+      <node concept="P$JXv" id="7rpuqnf_X4y" role="lGtFl">
+        <node concept="TZ5HA" id="7rpuqnf_X4z" role="TZ5H$">
+          <node concept="1dT_AC" id="7rpuqnf_X4$" role="1dT_Ay">
+            <property role="1dT_AB" value="This method is called by the propagation framework to retrieve all value selectors that are notified on updates." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="2S2eLhiMzhL" role="13h7CS">
       <property role="13i0iv" value="true" />
@@ -247,38 +276,6 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="5nAcTtn9HEK" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="isActive" />
-      <node concept="37vLTG" id="5nAcTtn9IUF" role="3clF46">
-        <property role="TrG5h" value="valueSelector" />
-        <node concept="3uibUv" id="5nAcTtn9IUG" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="5nAcTtn9HEL" role="1B3o_S" />
-      <node concept="10P_77" id="5nAcTtn9Iyi" role="3clF45" />
-      <node concept="3clFbS" id="5nAcTtn9HEN" role="3clF47">
-        <node concept="3cpWs6" id="5nAcTtn9IyH" role="3cqZAp">
-          <node concept="3clFbT" id="5nAcTtn9Iz0" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="P$JXv" id="5nAcTtn9Izj" role="lGtFl">
-        <node concept="TZ5HA" id="5nAcTtn9Izk" role="TZ5H$">
-          <node concept="1dT_AC" id="5nAcTtn9Izl" role="1dT_Ay">
-            <property role="1dT_AB" value="This method is called by the propagation framework before (re-)calculation is executed. If 'false' is returned," />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5nAcTtn9IzK" role="TZ5H$">
-          <node concept="1dT_AC" id="5nAcTtn9IzL" role="1dT_Ay">
-            <property role="1dT_AB" value="(re-)calculation is not executed and getValue() returns null." />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="13i0hz" id="5nAcTtnb1YA" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -304,7 +301,7 @@
         </node>
         <node concept="TZ5HA" id="5nAcTtnb1YL" role="TZ5H$">
           <node concept="1dT_AC" id="5nAcTtnb1YM" role="1dT_Ay">
-            <property role="1dT_AB" value="editor cells of this node are updated automatically (does not seem to work atm)." />
+            <property role="1dT_AB" value="editor cells of this node are updated automatically (! NOT YET OPERATIONAL !)." />
           </node>
         </node>
       </node>
@@ -376,7 +373,39 @@
       <node concept="P$JXv" id="lNBnHjW_T3" role="lGtFl">
         <node concept="TZ5HA" id="lNBnHjW_T4" role="TZ5H$">
           <node concept="1dT_AC" id="lNBnHjWA0E" role="1dT_Ay">
-            <property role="1dT_AB" value="API to read cached information" />
+            <property role="1dT_AB" value="API to read cached information. Returns wether the value holder has a cycle regarding this value selector." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6MPBOWiFIsN" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="canCalculate" />
+      <node concept="3Tm1VV" id="6MPBOWiFIsO" role="1B3o_S" />
+      <node concept="10P_77" id="6MPBOWiFIsP" role="3clF45" />
+      <node concept="3clFbS" id="6MPBOWiFIsQ" role="3clF47">
+        <node concept="3cpWs6" id="6MPBOWiFIsR" role="3cqZAp">
+          <node concept="3fqX7Q" id="6MPBOWiFJLV" role="3cqZAk">
+            <node concept="BsUDl" id="6MPBOWiFJLX" role="3fr31v">
+              <ref role="37wK5l" node="QuEk0ZLOai" resolve="hasCycle" />
+              <node concept="37vLTw" id="6MPBOWiFJLY" role="37wK5m">
+                <ref role="3cqZAo" node="6MPBOWiFIsW" resolve="valueSelector" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6MPBOWiFIsW" role="3clF46">
+        <property role="TrG5h" value="valueSelector" />
+        <node concept="3uibUv" id="6MPBOWiFIsX" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="6MPBOWiFIsY" role="lGtFl">
+        <node concept="TZ5HA" id="6MPBOWiFIsZ" role="TZ5H$">
+          <node concept="1dT_AC" id="6MPBOWiFIt0" role="1dT_Ay">
+            <property role="1dT_AB" value="I decide if the value can be calculated. By default, this is exactly, when having no cycles." />
           </node>
         </node>
       </node>
@@ -439,7 +468,7 @@
                   <node concept="13iPFW" id="2S2eLhiM_Te" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="2S2eLhiM_Tf" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
                   <node concept="10M0yZ" id="3mJtqpyRjzn" role="37wK5m">
                     <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
                     <ref role="3cqZAo" to="hz0z:3mJtqpyRiaj" resolve="USER_OBJECT_ID" />
@@ -447,6 +476,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="hs1DUXlyjQ" role="3cqZAp">
+          <node concept="3SKdUq" id="hs1DUXlyjS" role="3SKWNk">
+            <property role="3SKdUp" value="if the model differs, this node was copied and we should start with a clean cache" />
           </node>
         </node>
         <node concept="3clFbJ" id="2S2eLhiM_Pp" role="3cqZAp">
@@ -470,7 +504,7 @@
                   <node concept="13iPFW" id="2S2eLhiMJxp" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="2S2eLhiMJxq" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
                   <node concept="10M0yZ" id="3mJtqpyRjq3" role="37wK5m">
                     <ref role="3cqZAo" to="hz0z:3mJtqpyRiaj" resolve="USER_OBJECT_ID" />
                     <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
@@ -481,28 +515,43 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="lNBnHjWA3s" role="3cqZAp">
-              <node concept="2OqwBi" id="lNBnHjWA3t" role="3clFbG">
-                <node concept="2JrnkZ" id="lNBnHjWA3u" role="2Oq$k0">
-                  <node concept="13iPFW" id="lNBnHjWA3v" role="2JrQYb" />
+          </node>
+          <node concept="22lmx$" id="1i5KpktoqS_" role="3clFbw">
+            <node concept="17QLQc" id="1i5KpktoEYy" role="3uHU7w">
+              <node concept="13iPFW" id="1i5KpktoFj4" role="3uHU7w" />
+              <node concept="2OqwBi" id="1i5KpktorCD" role="3uHU7B">
+                <node concept="37vLTw" id="1i5Kpktorx1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2S2eLhiM_Zz" resolve="pi" />
                 </node>
-                <node concept="liA8E" id="lNBnHjWA3w" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
-                  <node concept="10M0yZ" id="3mJtqpyRjtN" role="37wK5m">
-                    <ref role="3cqZAo" to="hz0z:3mJtqpyRiaj" resolve="USER_OBJECT_ID" />
-                    <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
-                  </node>
-                  <node concept="37vLTw" id="lNBnHjWA3y" role="37wK5m">
-                    <ref role="3cqZAo" node="2S2eLhiM_Zz" resolve="pi" />
-                  </node>
+                <node concept="liA8E" id="1i5Kpkto$7J" role="2OqNvi">
+                  <ref role="37wK5l" to="hz0z:RObVTFnwug" resolve="getValueHolder" />
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3clFbC" id="2S2eLhiMAKy" role="3clFbw">
-            <node concept="10Nm6u" id="2S2eLhiMAKD" role="3uHU7w" />
-            <node concept="37vLTw" id="2S2eLhiMA5O" role="3uHU7B">
-              <ref role="3cqZAo" node="2S2eLhiM_Zz" resolve="pi" />
+            <node concept="22lmx$" id="hs1DUXkQuq" role="3uHU7B">
+              <node concept="3clFbC" id="2S2eLhiMAKy" role="3uHU7B">
+                <node concept="37vLTw" id="2S2eLhiMA5O" role="3uHU7B">
+                  <ref role="3cqZAo" node="2S2eLhiM_Zz" resolve="pi" />
+                </node>
+                <node concept="10Nm6u" id="2S2eLhiMAKD" role="3uHU7w" />
+              </node>
+              <node concept="17QLQc" id="hs1DUXkSFP" role="3uHU7w">
+                <node concept="2OqwBi" id="hs1DUXkRQ0" role="3uHU7B">
+                  <node concept="2OqwBi" id="hs1DUXkQD3" role="2Oq$k0">
+                    <node concept="37vLTw" id="hs1DUXkQxO" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2S2eLhiM_Zz" resolve="pi" />
+                    </node>
+                    <node concept="liA8E" id="hs1DUXkRAU" role="2OqNvi">
+                      <ref role="37wK5l" to="hz0z:RObVTFnwug" resolve="getValueHolder" />
+                    </node>
+                  </node>
+                  <node concept="I4A8Y" id="hs1DUXkSno" role="2OqNvi" />
+                </node>
+                <node concept="2OqwBi" id="hs1DUXkT51" role="3uHU7w">
+                  <node concept="13iPFW" id="hs1DUXkSUp" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="hs1DUXkThB" role="2OqNvi" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
