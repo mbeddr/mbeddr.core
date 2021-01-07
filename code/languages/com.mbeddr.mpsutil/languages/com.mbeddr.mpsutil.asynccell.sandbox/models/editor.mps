@@ -2,7 +2,7 @@
 <model ref="r:b9b93e9f-00ad-495e-a01c-4765753bd132(com.mbeddr.mpsutil.asynccell.sandbox.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -151,6 +151,7 @@
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
@@ -192,60 +193,44 @@
                     <ref role="3cqZAo" node="17HIJlKZU71" resolve="button" />
                   </node>
                   <node concept="liA8E" id="17HIJlKZWfd" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
-                    <node concept="2ShNRf" id="17HIJlKZWt8" role="37wK5m">
-                      <node concept="YeOm9" id="17HIJlKZXp_" role="2ShVmc">
-                        <node concept="1Y3b0j" id="17HIJlKZXpC" role="YeSDq">
-                          <property role="2bfB8j" value="true" />
-                          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                          <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
-                          <node concept="3Tm1VV" id="17HIJlKZXpD" role="1B3o_S" />
-                          <node concept="3clFb_" id="17HIJlKZXpE" role="jymVt">
-                            <property role="1EzhhJ" value="false" />
-                            <property role="TrG5h" value="actionPerformed" />
-                            <property role="DiZV1" value="false" />
-                            <property role="od$2w" value="false" />
-                            <node concept="3Tm1VV" id="17HIJlKZXpF" role="1B3o_S" />
-                            <node concept="3cqZAl" id="17HIJlKZXpH" role="3clF45" />
-                            <node concept="37vLTG" id="17HIJlKZXpI" role="3clF46">
-                              <property role="TrG5h" value="p0" />
-                              <node concept="3uibUv" id="17HIJlKZXpJ" role="1tU5fm">
-                                <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
-                              </node>
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <node concept="1bVj0M" id="2YOONxNRT5i" role="37wK5m">
+                      <node concept="3clFbS" id="2YOONxNRT5j" role="1bW5cS">
+                        <node concept="3clFbF" id="17HIJlL0gGV" role="3cqZAp">
+                          <node concept="2OqwBi" id="17HIJlL0h9$" role="3clFbG">
+                            <node concept="2YIFZM" id="17HIJlL0h3p" role="2Oq$k0">
+                              <ref role="1Pybhc" to="re1d:17HIJlKZys3" resolve="MyAsyncCalculator" />
+                              <ref role="37wK5l" to="re1d:17HIJlL07UK" resolve="getInstance" />
                             </node>
-                            <node concept="3clFbS" id="17HIJlKZXpK" role="3clF47">
-                              <node concept="3clFbF" id="17HIJlL0gGV" role="3cqZAp">
-                                <node concept="2OqwBi" id="17HIJlL0h9$" role="3clFbG">
-                                  <node concept="2YIFZM" id="17HIJlL0h3p" role="2Oq$k0">
-                                    <ref role="37wK5l" to="re1d:17HIJlL07UK" resolve="getInstance" />
-                                    <ref role="1Pybhc" to="re1d:17HIJlKZys3" resolve="MyAsyncCalculator" />
-                                  </node>
-                                  <node concept="liA8E" id="17HIJlL0hhV" role="2OqNvi">
-                                    <ref role="37wK5l" to="re1d:17HIJlKZMbf" resolve="setValueAfterMsPassed" />
-                                    <node concept="Xl_RD" id="17HIJlL0orp" role="37wK5m">
-                                      <property role="Xl_RC" value="my result" />
-                                    </node>
-                                    <node concept="3cmrfG" id="17HIJlL0oNv" role="37wK5m">
-                                      <property role="3cmrfH" value="5000" />
-                                    </node>
-                                  </node>
-                                </node>
+                            <node concept="liA8E" id="17HIJlL0hhV" role="2OqNvi">
+                              <ref role="37wK5l" to="re1d:17HIJlKZMbf" resolve="setValueAfterMsPassed" />
+                              <node concept="Xl_RD" id="17HIJlL0orp" role="37wK5m">
+                                <property role="Xl_RC" value="my result" />
                               </node>
-                              <node concept="3clFbF" id="2u$73V9t9yl" role="3cqZAp">
-                                <node concept="2OqwBi" id="2u$73V9t9ym" role="3clFbG">
-                                  <node concept="2OqwBi" id="2u$73V9t9yn" role="2Oq$k0">
-                                    <node concept="1Q80Hx" id="2u$73V9t9yo" role="2Oq$k0" />
-                                    <node concept="liA8E" id="2u$73V9t9yp" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="2u$73V9t9yq" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
-                                  </node>
-                                </node>
+                              <node concept="3cmrfG" id="17HIJlL0oNv" role="37wK5m">
+                                <property role="3cmrfH" value="5000" />
                               </node>
                             </node>
                           </node>
+                        </node>
+                        <node concept="3clFbF" id="2u$73V9t9yl" role="3cqZAp">
+                          <node concept="2OqwBi" id="2u$73V9t9ym" role="3clFbG">
+                            <node concept="2OqwBi" id="2u$73V9t9yn" role="2Oq$k0">
+                              <node concept="1Q80Hx" id="2u$73V9t9yo" role="2Oq$k0" />
+                              <node concept="liA8E" id="2u$73V9t9yp" role="2OqNvi">
+                                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="2u$73V9t9yq" role="2OqNvi">
+                              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="37vLTG" id="2YOONxNRTkd" role="1bW2Oz">
+                        <property role="TrG5h" value="e" />
+                        <node concept="3uibUv" id="2YOONxNRTkc" role="1tU5fm">
+                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
                         </node>
                       </node>
                     </node>
@@ -255,6 +240,88 @@
               <node concept="3cpWs6" id="17HIJlKZXVd" role="3cqZAp">
                 <node concept="37vLTw" id="17HIJlKZXVI" role="3cqZAk">
                   <ref role="3cqZAo" node="17HIJlKZU71" resolve="button" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3gTLQM" id="2YOONxNRDtn" role="3EZMnx">
+          <node concept="3Fmcul" id="2YOONxNRDto" role="3FoqZy">
+            <node concept="3clFbS" id="2YOONxNRDtp" role="2VODD2">
+              <node concept="3cpWs8" id="2YOONxNRDtq" role="3cqZAp">
+                <node concept="3cpWsn" id="2YOONxNRDtr" role="3cpWs9">
+                  <property role="TrG5h" value="button" />
+                  <node concept="3uibUv" id="2YOONxNRDts" role="1tU5fm">
+                    <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
+                  </node>
+                  <node concept="2ShNRf" id="2YOONxNRDtt" role="33vP2m">
+                    <node concept="1pGfFk" id="2YOONxNRDtu" role="2ShVmc">
+                      <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                      <node concept="Xl_RD" id="2YOONxNRDtv" role="37wK5m">
+                        <property role="Xl_RC" value="Throw Exception in 5s" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2YOONxNRDtw" role="3cqZAp">
+                <node concept="2OqwBi" id="2YOONxNRDtx" role="3clFbG">
+                  <node concept="37vLTw" id="2YOONxNRDty" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2YOONxNRDtr" resolve="button" />
+                  </node>
+                  <node concept="liA8E" id="2YOONxNRDtz" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <node concept="1bVj0M" id="2YOONxNRQT4" role="37wK5m">
+                      <node concept="3clFbS" id="2YOONxNRQT5" role="1bW5cS">
+                        <node concept="3clFbF" id="2YOONxNRQqV" role="3cqZAp">
+                          <node concept="2OqwBi" id="2YOONxNRDtJ" role="3clFbG">
+                            <node concept="2YIFZM" id="2YOONxNRDtK" role="2Oq$k0">
+                              <ref role="1Pybhc" to="re1d:17HIJlKZys3" resolve="MyAsyncCalculator" />
+                              <ref role="37wK5l" to="re1d:17HIJlL07UK" resolve="getInstance" />
+                            </node>
+                            <node concept="liA8E" id="2YOONxNRDtL" role="2OqNvi">
+                              <ref role="37wK5l" to="re1d:2YOONxNRN8o" resolve="throwAfterMsPassed" />
+                              <node concept="2ShNRf" id="2YOONxNROY_" role="37wK5m">
+                                <node concept="1pGfFk" id="2YOONxNRPbh" role="2ShVmc">
+                                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                                  <node concept="Xl_RD" id="2YOONxNT1E6" role="37wK5m">
+                                    <property role="Xl_RC" value="An error happened during calculation" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3cmrfG" id="2YOONxNRDtN" role="37wK5m">
+                                <property role="3cmrfH" value="5000" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="2YOONxNRDtO" role="3cqZAp">
+                          <node concept="2OqwBi" id="2YOONxNRDtP" role="3clFbG">
+                            <node concept="2OqwBi" id="2YOONxNRDtQ" role="2Oq$k0">
+                              <node concept="1Q80Hx" id="2YOONxNRDtR" role="2Oq$k0" />
+                              <node concept="liA8E" id="2YOONxNRDtS" role="2OqNvi">
+                                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="2YOONxNRDtT" role="2OqNvi">
+                              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="37vLTG" id="2YOONxNRRLM" role="1bW2Oz">
+                        <property role="TrG5h" value="e" />
+                        <node concept="3uibUv" id="2YOONxNRRLL" role="1tU5fm">
+                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="2YOONxNRDtU" role="3cqZAp">
+                <node concept="37vLTw" id="2YOONxNRDtV" role="3cqZAk">
+                  <ref role="3cqZAo" node="2YOONxNRDtr" resolve="button" />
                 </node>
               </node>
             </node>
@@ -291,7 +358,7 @@
                     <ref role="3cqZAo" node="2u$73V9r4da" resolve="button" />
                   </node>
                   <node concept="liA8E" id="2u$73V9r4di" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
                     <node concept="2ShNRf" id="2u$73V9r4dj" role="37wK5m">
                       <node concept="YeOm9" id="2u$73V9r4dk" role="2ShVmc">
                         <node concept="1Y3b0j" id="2u$73V9r4dl" role="YeSDq">
@@ -330,11 +397,11 @@
                                   <node concept="2OqwBi" id="2u$73V9t9pz" role="2Oq$k0">
                                     <node concept="1Q80Hx" id="2u$73V9t9p$" role="2Oq$k0" />
                                     <node concept="liA8E" id="2u$73V9t9p_" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2u$73V9t9pA" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
+                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
                                   </node>
                                 </node>
                               </node>
@@ -379,7 +446,7 @@
                     <ref role="3cqZAo" node="2u$73V9r4Bu" resolve="button" />
                   </node>
                   <node concept="liA8E" id="2u$73V9r4BA" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
                     <node concept="2ShNRf" id="2u$73V9r4BB" role="37wK5m">
                       <node concept="YeOm9" id="2u$73V9r4BC" role="2ShVmc">
                         <node concept="1Y3b0j" id="2u$73V9r4BD" role="YeSDq">
@@ -420,11 +487,11 @@
                                   <node concept="2OqwBi" id="2u$73V9r4BN" role="2Oq$k0">
                                     <node concept="1Q80Hx" id="2u$73V9r4BO" role="2Oq$k0" />
                                     <node concept="liA8E" id="2u$73V9r4BP" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2u$73V9r4BQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
+                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
                                   </node>
                                 </node>
                               </node>
@@ -497,11 +564,11 @@
                             <node concept="2EnYce" id="2u$73V9uyfS" role="2Oq$k0">
                               <node concept="1Q80Hx" id="2u$73V9uwFY" role="2Oq$k0" />
                               <node concept="liA8E" id="2u$73V9uwFZ" role="2OqNvi">
-                                <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell()" resolve="getContextCell" />
+                                <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getContextCell" />
                               </node>
                             </node>
                             <node concept="liA8E" id="2u$73V9uwG0" role="2OqNvi">
-                              <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+                              <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                             </node>
                           </node>
                         </node>
@@ -527,7 +594,7 @@
           </node>
         </node>
         <node concept="Veino" id="17HIJlL09Oo" role="3F10Kt">
-          <property role="Vb096" value="hGRnIZc/lightBlue" />
+          <property role="Vb096" value="LIGHT_BLUE" />
         </node>
       </node>
       <node concept="2iRkQZ" id="17HIJlKZMg5" role="2iSdaV" />
