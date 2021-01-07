@@ -2,13 +2,13 @@
 <model ref="r:73b20a73-cf2c-4df5-ab15-88626acb1e3d(com.mbeddr.mpsutil.asynccell.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -22,6 +22,7 @@
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -196,8 +197,12 @@
         <child id="1170075728144" name="expression" index="1HWFw0" />
         <child id="1170075736412" name="block" index="1HWHxc" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -404,8 +409,8 @@
               <node concept="3clFbF" id="3anL894NTd1" role="3cqZAp">
                 <node concept="2OqwBi" id="3anL894O4iT" role="3clFbG">
                   <node concept="2YIFZM" id="3anL894O46z" role="2Oq$k0">
-                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
                     <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
                   </node>
                   <node concept="liA8E" id="3anL894O4_v" role="2OqNvi">
                     <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
@@ -1252,8 +1257,8 @@
       <node concept="3clFbS" id="5HPe_JwXMci" role="3clF47">
         <node concept="1gVbGN" id="5HPe_Jx5olh" role="3cqZAp">
           <node concept="2YIFZM" id="5HPe_Jx5oli" role="1gVkn0">
-            <ref role="37wK5l" to="dxuu:~SwingUtilities.isEventDispatchThread()" resolve="isEventDispatchThread" />
             <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
+            <ref role="37wK5l" to="dxuu:~SwingUtilities.isEventDispatchThread()" resolve="isEventDispatchThread" />
           </node>
         </node>
         <node concept="3clFbH" id="5HPe_Jx5wUD" role="3cqZAp" />
@@ -1975,8 +1980,8 @@
             </node>
             <node concept="2OqwBi" id="3anL894MLE4" role="37vLTx">
               <node concept="2YIFZM" id="3anL894MLE5" role="2Oq$k0">
-                <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
                 <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+                <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
               </node>
               <node concept="liA8E" id="3anL894MLE6" role="2OqNvi">
                 <ref role="37wK5l" to="bd8o:~Application.executeOnPooledThread(java.lang.Runnable)" resolve="executeOnPooledThread" />
@@ -2128,6 +2133,11 @@
                               </node>
                               <node concept="TDmWw" id="3anL894Mo0F" role="TEbGg">
                                 <node concept="3clFbS" id="3anL894Mo0G" role="TDEfX">
+                                  <node concept="3SKdUt" id="4BfR_zSgRHm" role="3cqZAp">
+                                    <node concept="3SKdUq" id="4BfR_zSgRHo" role="3SKWNk">
+                                      <property role="3SKdUp" value="print" />
+                                    </node>
+                                  </node>
                                   <node concept="3clFbF" id="3anL894Mo0H" role="3cqZAp">
                                     <node concept="2OqwBi" id="3anL894Mo0I" role="3clFbG">
                                       <node concept="37vLTw" id="3anL894Mo0J" role="2Oq$k0">
@@ -2135,6 +2145,60 @@
                                       </node>
                                       <node concept="liA8E" id="3anL894Mo0K" role="2OqNvi">
                                         <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3SKdUt" id="7ZJOHLTFv82" role="3cqZAp">
+                                    <node concept="3SKdUq" id="7ZJOHLTFv84" role="3SKWNk">
+                                      <property role="3SKdUp" value="show error" />
+                                    </node>
+                                  </node>
+                                  <node concept="3cpWs8" id="7ZJOHLTGvUy" role="3cqZAp">
+                                    <node concept="3cpWsn" id="7ZJOHLTGvUz" role="3cpWs9">
+                                      <property role="TrG5h" value="impl" />
+                                      <node concept="3uibUv" id="7ZJOHLTGvUx" role="1tU5fm">
+                                        <ref role="3uigEE" to="5ueo:~StyleImpl" resolve="StyleImpl" />
+                                      </node>
+                                      <node concept="2ShNRf" id="7ZJOHLTGvU$" role="33vP2m">
+                                        <node concept="1pGfFk" id="7ZJOHLTGvU_" role="2ShVmc">
+                                          <ref role="37wK5l" to="5ueo:~StyleImpl.&lt;init&gt;()" resolve="StyleImpl" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbF" id="2YOONxNTwUS" role="3cqZAp">
+                                    <node concept="37vLTI" id="2YOONxNTxt0" role="3clFbG">
+                                      <node concept="37vLTw" id="2YOONxNTwUQ" role="37vLTJ">
+                                        <ref role="3cqZAo" node="3anL894Mo0i" resolve="result" />
+                                      </node>
+                                      <node concept="2ShNRf" id="7ZJOHLTFByJ" role="37vLTx">
+                                        <node concept="1pGfFk" id="7ZJOHLTFT7g" role="2ShVmc">
+                                          <ref role="37wK5l" node="5HPe_Jxcpw8" resolve="AsyncCellValue" />
+                                          <node concept="Xl_RD" id="7ZJOHLTFUgx" role="37wK5m">
+                                            <property role="Xl_RC" value="ERR" />
+                                          </node>
+                                          <node concept="37vLTw" id="7ZJOHLTGvUA" role="37wK5m">
+                                            <ref role="3cqZAo" node="7ZJOHLTGvUz" resolve="impl" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3SKdUt" id="4BfR_zSgQLn" role="3cqZAp">
+                                    <node concept="3SKdUq" id="4BfR_zSgQLo" role="3SKWNk">
+                                      <property role="3SKdUp" value="and forget about it immediately to prevent spamming" />
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbF" id="4BfR_zSgQLp" role="3cqZAp">
+                                    <node concept="2OqwBi" id="4BfR_zSgQLq" role="3clFbG">
+                                      <node concept="37vLTw" id="4BfR_zSgQLr" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="5HPe_JwXHEl" resolve="_cellManager" />
+                                      </node>
+                                      <node concept="liA8E" id="4BfR_zSgQLs" role="2OqNvi">
+                                        <ref role="37wK5l" node="5HPe_JwZDXR" resolve="removeAsyncCell" />
+                                        <node concept="2GrUjf" id="4BfR_zSgQLt" role="37wK5m">
+                                          <ref role="2Gs0qQ" node="3anL894Mo04" resolve="cell" />
+                                        </node>
                                       </node>
                                     </node>
                                   </node>
@@ -2169,8 +2233,8 @@
                       </node>
                       <node concept="3clFbF" id="3anL894T6b5" role="3cqZAp">
                         <node concept="2YIFZM" id="3anL894T6jq" role="3clFbG">
-                          <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
                           <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
+                          <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
                           <node concept="1bVj0M" id="3anL894O0nX" role="37wK5m">
                             <node concept="3clFbS" id="3anL894O0nY" role="1bW5cS">
                               <node concept="3SKdUt" id="4IjegxhEEck" role="3cqZAp">
