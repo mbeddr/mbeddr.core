@@ -31,14 +31,14 @@
       </concept>
     </language>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
-      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules" flags="nn" index="22LTRH">
+      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="nn" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
         <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
-      <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModule" flags="nn" index="22LTRM">
+      <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModule" flags="nn" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
-      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules_Options" flags="ng" index="24cAiW" />
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW" />
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -636,9 +636,6 @@
         <property role="2iUeEt" value="mbedrr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
-      <node concept="m$_yC" id="7odnKbxM7aM" role="m$_yJ">
-        <ref role="m$_y1" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
-      </node>
     </node>
     <node concept="m$_wf" id="6rBfBe1WRMd" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.varscope" />
@@ -874,6 +871,9 @@
       </node>
       <node concept="m$_yC" id="7yAshxDtq_H" role="m$_yJ">
         <ref role="m$_y1" node="7yAshxDtbd3" resolve="com.mbeddr.mpsutil.genreview" />
+      </node>
+      <node concept="m$_yC" id="7wOeVMeCfEU" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
     </node>
     <node concept="m$_wf" id="2LIUxufzuEG" role="3989C9">
@@ -9003,6 +9003,9 @@
       <node concept="m$_yC" id="DnqfiuSO_X" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
+      <node concept="m$_yC" id="7wOeVMeCel8" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
       <node concept="3_J27D" id="DnqfiuSOA1" role="m_cZH">
         <node concept="3Mxwew" id="DnqfiuSOA2" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.compare" />
@@ -9976,11 +9979,6 @@
             <ref role="3bR37D" node="43aY2QmUMhq" resolve="com.mbeddr.mpsutil.traceExplorer" />
           </node>
         </node>
-        <node concept="1SiIV0" id="FYOt3k443B" role="3bR37C">
-          <node concept="3bR9La" id="FYOt3k443C" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6aj7S9e2mHL" role="3bR37C">
           <node concept="3bR9La" id="6aj7S9e2mHM" role="1SiIV1">
             <ref role="3bR37D" to="90a9:4p3FRivDLPL" resolve="de.slisson.mps.editor.multiline.runtime" />
@@ -10006,11 +10004,6 @@
             <node concept="3qWCbU" id="4PRpvcZJNuF" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6J8ZJABE2P6" role="3bR37C">
-          <node concept="3bR9La" id="6J8ZJABE2P7" role="1SiIV1">
-            <ref role="3bR37D" node="$bJ0jguQfr" resolve="com.mbeddr.core.base" />
           </node>
         </node>
       </node>

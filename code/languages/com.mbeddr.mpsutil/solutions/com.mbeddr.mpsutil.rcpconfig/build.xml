@@ -7,6 +7,10 @@
   <property name="version" value="1.0" />
   <property name="artifacts.mpsStandalone" location="${mps.home}" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
+  <property name="mpsBootstrapCore.version.major" value="${import.mpsStandalone.mpsBootstrapCore.version.major}" />
+  <property name="mpsBootstrapCore.version.minor" value="${import.mpsStandalone.mpsBootstrapCore.version.minor}" />
+  <property name="mpsBootstrapCore.version.bugfixNr" value="${import.mpsStandalone.mpsBootstrapCore.version.bugfixNr}" />
+  <property name="mpsBootstrapCore.version.eap" value="${import.mpsStandalone.mpsBootstrapCore.version.eap}" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
   
   <target name="assemble" depends="classes, declare-mps-tasks, fetchDependencies">
@@ -133,7 +137,7 @@
       <zipfileset dir="${build.tmp}/default/_dl__lbrace_version_rbrace_-macos.zip_f755" filemode="755" prefix="mbeddr IDE.app" />
       <fileset dir="${build.tmp}/default/_dl__lbrace_version_rbrace_-macos.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">tempalate.version=${version}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">tempalate.version=${version}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents" />
