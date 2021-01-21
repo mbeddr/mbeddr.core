@@ -9,7 +9,7 @@
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -19799,11 +19799,11 @@
         </node>
         <node concept="3clFbF" id="3ptpjvQFvor" role="3cqZAp">
           <node concept="2YIFZM" id="3ptpjvQFvM_" role="3clFbG">
-            <ref role="37wK5l" node="2Ka$uvN35hs" />
-            <ref role="1Pybhc" node="3ptpjvQoV$p" />
+            <ref role="37wK5l" node="2Ka$uvN35hs" resolve="toLinuxPath" />
+            <ref role="1Pybhc" node="3ptpjvQoV$p" resolve="PathUtil" />
             <node concept="2OqwBi" id="3ptpjvQFwk3" role="37wK5m">
               <node concept="37vLTw" id="3ptpjvQFwk4" role="2Oq$k0">
-                <ref role="3cqZAo" node="7fn1GcIrrqd" />
+                <ref role="3cqZAo" node="7fn1GcIrrqd" resolve="outputLocation" />
               </node>
               <node concept="liA8E" id="3ptpjvQFwk5" role="2OqNvi">
                 <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
@@ -20058,7 +20058,7 @@
                   <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
                   <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
                   <node concept="37vLTw" id="1RDUcGVIGVP" role="37wK5m">
-                    <ref role="3cqZAo" node="7fn1GcIsQM6" />
+                    <ref role="3cqZAo" node="7fn1GcIsQM6" resolve="archiveLocation" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1RDUcGVIGVQ" role="2OqNvi">
@@ -20071,13 +20071,13 @@
                   <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
                   <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
                   <node concept="37vLTw" id="1RDUcGVIOvx" role="37wK5m">
-                    <ref role="3cqZAo" node="1RDUcGVIOvr" />
+                    <ref role="3cqZAo" node="1RDUcGVIOvr" resolve="moduleName" />
                   </node>
                   <node concept="37vLTw" id="1RDUcGVIFt_" role="37wK5m">
-                    <ref role="3cqZAo" node="1cOw9QkNwIV" />
+                    <ref role="3cqZAo" node="1cOw9QkNwIV" resolve="infix" />
                   </node>
                   <node concept="37vLTw" id="1RDUcGVIEYK" role="37wK5m">
-                    <ref role="3cqZAo" node="7fn1GcIsQM$" />
+                    <ref role="3cqZAo" node="7fn1GcIsQM$" resolve="modelPathSuffix" />
                   </node>
                 </node>
               </node>
