@@ -1388,10 +1388,15 @@
                   <node concept="37vLTw" id="1o_$mJE5YtW" role="37vLTJ">
                     <ref role="3cqZAo" node="5GaLjsuTQOI" resolve="c" />
                   </node>
-                  <node concept="1rXfSq" id="1o_$mJE5YsO" role="37vLTx">
-                    <ref role="37wK5l" to="f2k0:~UrlClassLoader._findClass(java.lang.String)" resolve="_findClass" />
-                    <node concept="37vLTw" id="1o_$mJE5YuP" role="37wK5m">
-                      <ref role="3cqZAo" node="5GaLjsuTQOK" resolve="name" />
+                  <node concept="2OqwBi" id="7iQ75jba1wN" role="37vLTx">
+                    <node concept="37vLTw" id="7iQ75jba1Ht" role="2Oq$k0">
+                      <ref role="3cqZAo" to="f2k0:~UrlClassLoader.classPath" resolve="classPath" />
+                    </node>
+                    <node concept="liA8E" id="7iQ75jba1wQ" role="2OqNvi">
+                      <ref role="37wK5l" to="f2k0:~ClassPath.findClass(java.lang.String)" resolve="findClass" />
+                      <node concept="37vLTw" id="1o_$mJE5YuP" role="37wK5m">
+                        <ref role="3cqZAo" node="5GaLjsuTQOK" resolve="name" />
+                      </node>
                     </node>
                   </node>
                 </node>
