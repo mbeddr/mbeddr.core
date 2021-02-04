@@ -184,7 +184,6 @@
         <child id="2807401889305002572" name="layout" index="37fetC" />
         <child id="5587067268292708715" name="insertHandlers" index="1Vhs_Z" />
         <child id="8877288515759655537" name="deleteHandler" index="1XG3MI" />
-        <child id="8877288515760225002" name="insertHandler" index="1XI8KP" />
       </concept>
       <concept id="8433232831282901144" name="com.mbeddr.mpsutil.treenotation.structure.ShapeParameterReference" flags="ng" index="15NUKc">
         <reference id="8433232831282901145" name="declaration" index="15NUKd" />
@@ -221,18 +220,8 @@
       </concept>
       <concept id="8877288515759654453" name="com.mbeddr.mpsutil.treenotation.structure.DeleteHandler" flags="ig" index="1XG33E" />
       <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.InserHandler" flags="ig" index="1XI84t" />
-      <concept id="8877288515760224565" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_index" flags="ng" index="1XI8ZE" />
-    </language>
-    <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
-      <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
-        <child id="1180636770616" name="createdType" index="3zrR0E" />
-      </concept>
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -264,10 +253,6 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="1225621920911" name="jetbrains.mps.baseLanguage.collections.structure.InsertElementOperation" flags="nn" index="1sK_Qi">
-        <child id="1225621943565" name="element" index="1sKFgg" />
-        <child id="1225621960341" name="index" index="1sKJu8" />
-      </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
@@ -956,30 +941,6 @@
       </node>
       <node concept="3F0A7n" id="7uOgiTdIPf" role="2SWKFN">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="1XI84t" id="7GMtHW6DzfQ" role="1XI8KP">
-        <node concept="3clFbS" id="7GMtHW6DzfR" role="2VODD2">
-          <node concept="3clFbF" id="7GMtHW6Dzg9" role="3cqZAp">
-            <node concept="2OqwBi" id="7GMtHW6DzQp" role="3clFbG">
-              <node concept="2OqwBi" id="7GMtHW6DzhH" role="2Oq$k0">
-                <node concept="pncrf" id="7GMtHW6Dzg8" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="7GMtHW6DzpH" role="2OqNvi">
-                  <ref role="3TtcxE" to="uin2:7uOgiTdIOS" resolve="childTreeNodes" />
-                </node>
-              </node>
-              <node concept="1sK_Qi" id="7GMtHW6D_Gu" role="2OqNvi">
-                <node concept="1XI8ZE" id="7GMtHW6D_IT" role="1sKJu8" />
-                <node concept="2ShNRf" id="7GMtHW6D_Lb" role="1sKFgg">
-                  <node concept="2fJWfE" id="7GMtHW6D_UQ" role="2ShVmc">
-                    <node concept="3Tqbb2" id="7GMtHW6D_US" role="3zrR0E">
-                      <ref role="ehGHo" to="uin2:7uOgiTdIOR" resolve="TreeNode" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="1X_cmw" id="7k8R9gKNv2u" role="15K7xk">
         <ref role="1X_clt" node="7k8R9gKN2ah" resolve="Circle" />

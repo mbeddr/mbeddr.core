@@ -86,5 +86,10 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2RhI_xvb2ni">
+    <property role="EcuMT" value="3301624890555901394" />
+    <property role="TrG5h" value="DisallowedChildConcept" />
+    <ref role="1TJDcQ" node="7uOgiTdIOR" resolve="TreeNode" />
+  </node>
 </model>
 
