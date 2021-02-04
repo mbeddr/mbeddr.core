@@ -2,7 +2,7 @@
 <model ref="r:2f259626-60e9-4514-a973-f227f0b96af9(com.mbeddr.mpsutil.json.sandbox.model)">
   <persistence version="9" />
   <languages>
-    <use id="b5c0bb04-c583-4b2a-a66e-1eab92d33c68" name="com.mbeddr.mpsutil.json" version="0" />
+    <use id="b5c0bb04-c583-4b2a-a66e-1eab92d33c68" name="com.mbeddr.mpsutil.json" version="-1" />
   </languages>
   <imports />
   <registry>

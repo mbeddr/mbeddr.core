@@ -2,8 +2,8 @@
 <model ref="r:8eb3f548-a86c-47df-8e7e-c1b50200de75(com.mbeddr.mpsutil.editingGuide.sandbox.demo)">
   <persistence version="9" />
   <languages>
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="1ca21c70-6e61-4b62-8771-dfd96620ef7c(com.mbeddr.mpsutil.guides)" />
   </languages>
   <imports>
@@ -417,11 +417,11 @@
                     </node>
                   </node>
                   <node concept="17qRlL" id="31xWCC4RG0" role="3uHU7B">
-                    <node concept="3cmrfG" id="44LrdWQfS2q" role="3uHU7B">
-                      <property role="3cmrfH" value="2" />
-                    </node>
                     <node concept="3cmrfG" id="31xWCC4RG3" role="3uHU7w">
                       <property role="3cmrfH" value="3" />
+                    </node>
+                    <node concept="3cmrfG" id="44LrdWQfS2q" role="3uHU7B">
+                      <property role="3cmrfH" value="2" />
                     </node>
                   </node>
                 </node>
@@ -437,6 +437,11 @@
         <node concept="19SUe$" id="2ZHlC004kGJ" role="19SJt6">
           <property role="19SUeA" value="" />
         </node>
+      </node>
+    </node>
+    <node concept="19SGf9" id="3p1cdQ7_M8e" role="2LPu_u">
+      <node concept="19SUe$" id="3p1cdQ7_M8f" role="19SJt6">
+        <property role="19SUeA" value="" />
       </node>
     </node>
     <node concept="2LPuBx" id="44LrdWQfZRD" role="2LPuAy">
@@ -568,11 +573,6 @@
         <node concept="19SUe$" id="44LrdWQfZSG" role="19SJt6">
           <property role="19SUeA" value="" />
         </node>
-      </node>
-    </node>
-    <node concept="19SGf9" id="3p1cdQ7_M8e" role="2LPu_u">
-      <node concept="19SUe$" id="3p1cdQ7_M8f" role="19SJt6">
-        <property role="19SUeA" value="" />
       </node>
     </node>
   </node>

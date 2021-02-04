@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
@@ -930,7 +929,7 @@
             <node concept="3clFbJ" id="602uc2JOB7p" role="3cqZAp">
               <node concept="3clFbS" id="602uc2JOB7s" role="3clFbx">
                 <node concept="RRSsy" id="42VTAcDfnNu" role="3cqZAp">
-                  <property role="RRSoG" value="gZ5fksE/warn" />
+                  <property role="RRSoG" value="warn" />
                   <node concept="3cpWs3" id="602uc2JODyb" role="RRSoy">
                     <node concept="Xl_RD" id="602uc2JODyt" role="3uHU7w">
                       <property role="Xl_RC" value="' instead." />
@@ -970,7 +969,7 @@
               <node concept="9aQIb" id="602uc2JODEQ" role="9aQIa">
                 <node concept="3clFbS" id="602uc2JODER" role="9aQI4">
                   <node concept="RRSsy" id="42VTAcDfnNS" role="3cqZAp">
-                    <property role="RRSoG" value="gZ5fh_4/error" />
+                    <property role="RRSoG" value="error" />
                     <node concept="Xl_RD" id="602uc2JOFlh" role="RRSoy">
                       <property role="Xl_RC" value="No open MPS project available. Unable to open node." />
                     </node>

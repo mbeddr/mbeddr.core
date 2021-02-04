@@ -2,14 +2,14 @@
 <model ref="r:6299b318-ce6d-4990-8944-5f6743bd3ab4(test.com.mbeddr.mpsutil.parameterizedMenu.test@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="b1c7d06f-525d-43b5-9b0a-2fc8f7f076ba" name="jetbrains.mps.editor.contextActionsTool.lang.menus" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="3a48930f-3451-44fd-9b09-4e7ef448f2bb" name="com.mbeddr.mpsutil.parameterizedMenu" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="b1c7d06f-525d-43b5-9b0a-2fc8f7f076ba" name="jetbrains.mps.editor.contextActionsTool.lang.menus" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="3a48930f-3451-44fd-9b09-4e7ef448f2bb" name="com.mbeddr.mpsutil.parameterizedMenu" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -520,18 +520,6 @@
       <node concept="3clFbH" id="lb9twM4ZEa" role="3cqZAp" />
       <node concept="3clFbH" id="4l0F8G24Ika" role="3cqZAp" />
     </node>
-    <node concept="1qefOq" id="17qUVvSZniQ" role="25YQCW">
-      <node concept="1Qtc8_" id="4l0F8G24H2g" role="1qenE9">
-        <node concept="2j_NTm" id="4l0F8G24H2j" role="1Qtc8$" />
-        <node concept="LIFWc" id="4l0F8G24H2m" role="lGtFl">
-          <property role="ZRATv" value="true" />
-          <property role="OXtK3" value="true" />
-          <property role="p6zMq" value="0" />
-          <property role="p6zMs" value="0" />
-          <property role="LIFWd" value="empty_parts" />
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="17qUVvSZniS" role="25YQFr">
       <node concept="1Qtc8_" id="4l0F8G24H2p" role="1qenE9">
         <node concept="2j_NTm" id="4l0F8G24H2q" role="1Qtc8$" />
@@ -556,6 +544,18 @@
         </node>
       </node>
     </node>
+    <node concept="1qefOq" id="17qUVvSZniQ" role="25YQCW">
+      <node concept="1Qtc8_" id="4l0F8G24H2g" role="1qenE9">
+        <node concept="2j_NTm" id="4l0F8G24H2j" role="1Qtc8$" />
+        <node concept="LIFWc" id="4l0F8G24H2m" role="lGtFl">
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="empty_parts" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="LiM7Y" id="lb9twM60B8">
     <property role="TrG5h" value="substituteSubmenuWithParameterizedSubmenu" />
@@ -568,57 +568,6 @@
       <node concept="yd1bK" id="lb9twM7Kti" role="3cqZAp">
         <node concept="pLAjd" id="lb9twM7Ktk" role="yd6KS">
           <property role="pLAjf" value="VK_ENTER" />
-        </node>
-      </node>
-    </node>
-    <node concept="1qefOq" id="17qUVvSZniR" role="25YQCW">
-      <node concept="1GhOrh" id="lb9twM65KU" role="1qenE9">
-        <node concept="1vlq3a" id="lb9twM60B9" role="1GhOri">
-          <node concept="293xgL" id="lb9twM60Bc" role="1hCDOS">
-            <node concept="3clFbS" id="lb9twM60Bd" role="2VODD2">
-              <node concept="3clFbF" id="lb9twM60NJ" role="3cqZAp">
-                <node concept="Xl_RD" id="lb9twM60NI" role="3clFbG">
-                  <property role="Xl_RC" value="Menu Title" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="IWgqT" id="lb9twM62xE" role="1vlqcB">
-            <node concept="1hCUdq" id="lb9twM62xF" role="1hCUd6">
-              <node concept="3clFbS" id="lb9twM62xG" role="2VODD2">
-                <node concept="3clFbF" id="lb9twM62N3" role="3cqZAp">
-                  <node concept="Xl_RD" id="lb9twM62N2" role="3clFbG">
-                    <property role="Xl_RC" value="Action 1" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="IWg2L" id="lb9twM62xH" role="IWgqQ">
-              <node concept="3clFbS" id="lb9twM62xI" role="2VODD2" />
-            </node>
-          </node>
-          <node concept="LIFWc" id="lb9twM7XdQ" role="lGtFl">
-            <property role="LIFWa" value="1" />
-            <property role="OXtK3" value="true" />
-            <property role="p6zMq" value="1" />
-            <property role="p6zMs" value="1" />
-            <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
-          </node>
-        </node>
-        <node concept="17QB3L" id="lb9twM66__" role="2ZBHrp" />
-        <node concept="1GhMSn" id="lb9twM66Jj" role="1GhOrs">
-          <node concept="3clFbS" id="lb9twM66Jk" role="2VODD2">
-            <node concept="3clFbF" id="lb9twM67co" role="3cqZAp">
-              <node concept="1Ls8ON" id="lb9twM67WI" role="3clFbG">
-                <node concept="Xl_RD" id="lb9twM68IX" role="1Lso8e">
-                  <property role="Xl_RC" value="Apple" />
-                </node>
-                <node concept="Xl_RD" id="lb9twM6axI" role="1Lso8e">
-                  <property role="Xl_RC" value="Banana" />
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>
@@ -665,6 +614,57 @@
                   <property role="Xl_RC" value="Apple" />
                 </node>
                 <node concept="Xl_RD" id="lb9twM7Wed" role="1Lso8e">
+                  <property role="Xl_RC" value="Banana" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="17qUVvSZniR" role="25YQCW">
+      <node concept="1GhOrh" id="lb9twM65KU" role="1qenE9">
+        <node concept="1vlq3a" id="lb9twM60B9" role="1GhOri">
+          <node concept="293xgL" id="lb9twM60Bc" role="1hCDOS">
+            <node concept="3clFbS" id="lb9twM60Bd" role="2VODD2">
+              <node concept="3clFbF" id="lb9twM60NJ" role="3cqZAp">
+                <node concept="Xl_RD" id="lb9twM60NI" role="3clFbG">
+                  <property role="Xl_RC" value="Menu Title" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="IWgqT" id="lb9twM62xE" role="1vlqcB">
+            <node concept="1hCUdq" id="lb9twM62xF" role="1hCUd6">
+              <node concept="3clFbS" id="lb9twM62xG" role="2VODD2">
+                <node concept="3clFbF" id="lb9twM62N3" role="3cqZAp">
+                  <node concept="Xl_RD" id="lb9twM62N2" role="3clFbG">
+                    <property role="Xl_RC" value="Action 1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="IWg2L" id="lb9twM62xH" role="IWgqQ">
+              <node concept="3clFbS" id="lb9twM62xI" role="2VODD2" />
+            </node>
+          </node>
+          <node concept="LIFWc" id="lb9twM7XdQ" role="lGtFl">
+            <property role="LIFWa" value="1" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="1" />
+            <property role="p6zMs" value="1" />
+            <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
+          </node>
+        </node>
+        <node concept="17QB3L" id="lb9twM66__" role="2ZBHrp" />
+        <node concept="1GhMSn" id="lb9twM66Jj" role="1GhOrs">
+          <node concept="3clFbS" id="lb9twM66Jk" role="2VODD2">
+            <node concept="3clFbF" id="lb9twM67co" role="3cqZAp">
+              <node concept="1Ls8ON" id="lb9twM67WI" role="3clFbG">
+                <node concept="Xl_RD" id="lb9twM68IX" role="1Lso8e">
+                  <property role="Xl_RC" value="Apple" />
+                </node>
+                <node concept="Xl_RD" id="lb9twM6axI" role="1Lso8e">
                   <property role="Xl_RC" value="Banana" />
                 </node>
               </node>
