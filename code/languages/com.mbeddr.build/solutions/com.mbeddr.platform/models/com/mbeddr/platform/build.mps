@@ -18455,6 +18455,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1aCwgFOnMPO" role="3bR37C">
+          <node concept="3bR9La" id="1aCwgFOnMPP" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="$bJ0jguQfr" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -25710,6 +25715,11 @@
             <node concept="3qWCbU" id="$Kq8MetF6v" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1aCwgFOnNvZ" role="3bR37C">
+          <node concept="3bR9La" id="1aCwgFOnNw0" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
       </node>
