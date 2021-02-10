@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="u9wj" ref="r:5de29430-c053-484a-9826-87e7556eee3e(com.mbeddr.doc.test.documents.code)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   </imports>
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
@@ -23,6 +24,9 @@
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
+      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptModelContentRemoval" flags="ng" index="2Cuv_b">
+        <reference id="2179458690439403347" name="conceptDecl" index="2Cuq_M" />
+      </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
@@ -63,6 +67,8 @@
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
+        <child id="6955693250238922821" name="removals" index="3z_lpH" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
       <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
@@ -122,6 +128,7 @@
     </node>
     <node concept="3z_lpz" id="4pIcGABsAbh" role="1_0VJ0">
       <property role="TrG5h" value="class" />
+      <property role="3z_lpJ" value="true" />
       <node concept="OjmMv" id="4pIcGABsAbj" role="3z_lpS">
         <node concept="19SGf9" id="4pIcGABsAbk" role="OjmMu">
           <node concept="19SUe$" id="4pIcGABsAbl" role="19SJt6">
@@ -134,6 +141,9 @@
         <node concept="2NCMab" id="4pIcGABsMkr" role="2NCMaf">
           <ref role="2NCMaa" to="u9wj:4pIcGABsAbC" resolve="myClass" />
         </node>
+      </node>
+      <node concept="2Cuv_b" id="1aCwgFOglh4" role="3z_lpH">
+        <ref role="2Cuq_M" to="tpee:fzcpWvY" resolve="ReturnStatement" />
       </node>
     </node>
   </node>
