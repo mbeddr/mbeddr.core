@@ -153,7 +153,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="mre" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
     </node>
     <node concept="1TJgyj" id="7HmzdkqWuMM" role="1TKVEi">
       <property role="IQ2ns" value="8887445761570237618" />

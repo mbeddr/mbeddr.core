@@ -40,10 +40,18 @@
         <child id="97836352113025274" name="scope" index="3kyFlu" />
       </concept>
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -63,9 +71,13 @@
           <property role="cMvJE" value="com.mbeddr.ext.components" />
         </node>
         <node concept="cMvJF" id="73SKUHF8vQY" role="3kyFlu">
-          <node concept="BaHAS" id="73SKUHF8vR0" role="cMvJC">
-            <property role="BaHAW" value="components_code" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhA2vn" role="cMvJC">
+            <node concept="1dCxOl" id="xRVdUhA2vv" role="1XwpL7">
+              <property role="1XweGQ" value="r:963c4b27-5f46-4fe9-ad5b-ba7dee75e8c4" />
+              <node concept="1j_P7g" id="xRVdUhA2vw" role="1j$8Uc">
+                <property role="1j_P7h" value="components_code" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

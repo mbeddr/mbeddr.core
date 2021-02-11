@@ -143,6 +143,15 @@
         <child id="1205770614681" name="actualArgument" index="2XxRq1" />
       </concept>
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing">
       <concept id="4791280061046124023" name="com.mbeddr.analyses.cbmc.testing.structure.CBMCCounterexampleStateTest" flags="ng" index="38rIoz">
         <property id="4791280061046124024" name="nodeKind" index="38rIoG" />
@@ -168,9 +177,9 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -178,6 +187,9 @@
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -231,9 +243,23 @@
                   <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
-              <node concept="BaHAS" id="7xDyb4PL83o" role="37wK5m">
-                <property role="BaHAW" value="loops_unwinding" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="xRVdUh$wrz" role="37wK5m">
+                <node concept="1Xw6AR" id="xRVdUh$wr$" role="2Oq$k0">
+                  <node concept="1dCxOl" id="xRVdUh$wr_" role="1XwpL7">
+                    <property role="1XweGQ" value="r:67877e7f-c493-4b0c-bfd5-62042be0186a" />
+                    <node concept="1j_P7g" id="xRVdUh$wrA" role="1j$8Uc">
+                      <property role="1j_P7h" value="loops_unwinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2yCiCJ" id="xRVdUh$wrB" role="2OqNvi">
+                  <node concept="2OqwBi" id="xRVdUh$wrC" role="Vysub">
+                    <node concept="1jxXqW" id="xRVdUh$wrD" role="2Oq$k0" />
+                    <node concept="liA8E" id="xRVdUh$wrE" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="_YKpA" id="7xDyb4PL83p" role="1tU5fm">
@@ -524,9 +550,23 @@
           <node concept="3cpWsn" id="24GUsn9DOZ_" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="24GUsn9DOZz" role="1tU5fm" />
-            <node concept="BaHAS" id="24GUsn9DOZA" role="33vP2m">
-              <property role="BaHAW" value="loops_unwinding" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$xgf" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$xgg" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$xgh" role="1XwpL7">
+                  <property role="1XweGQ" value="r:67877e7f-c493-4b0c-bfd5-62042be0186a" />
+                  <node concept="1j_P7g" id="xRVdUh$xgi" role="1j$8Uc">
+                    <property role="1j_P7h" value="loops_unwinding" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$xgj" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$xgk" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$xgl" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$xgm" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -677,9 +717,23 @@
           <node concept="3cpWsn" id="6hXQBIqSNb$" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="6hXQBIqSNb_" role="1tU5fm" />
-            <node concept="BaHAS" id="6hXQBIqSNbA" role="33vP2m">
-              <property role="BaHAW" value="loops_unwinding" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$xoL" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$xoM" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$xoN" role="1XwpL7">
+                  <property role="1XweGQ" value="r:67877e7f-c493-4b0c-bfd5-62042be0186a" />
+                  <node concept="1j_P7g" id="xRVdUh$xoO" role="1j$8Uc">
+                    <property role="1j_P7h" value="loops_unwinding" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$xoP" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$xoQ" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$xoR" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$xoS" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -853,9 +907,23 @@
           <node concept="3cpWsn" id="5etR5IKmf7y" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5etR5IKmf7w" role="1tU5fm" />
-            <node concept="BaHAS" id="5etR5IKmf7z" role="33vP2m">
-              <property role="BaHAW" value="loops_unwinding" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$y00" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$y01" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$y02" role="1XwpL7">
+                  <property role="1XweGQ" value="r:67877e7f-c493-4b0c-bfd5-62042be0186a" />
+                  <node concept="1j_P7g" id="xRVdUh$y03" role="1j$8Uc">
+                    <property role="1j_P7h" value="loops_unwinding" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$y04" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$y05" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$y06" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$y07" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -952,9 +1020,23 @@
           <node concept="3cpWsn" id="5etR5IKmfQL" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5etR5IKmfQM" role="1tU5fm" />
-            <node concept="BaHAS" id="5etR5IKmfQN" role="33vP2m">
-              <property role="BaHAW" value="loops_unwinding" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$y5C" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$y5D" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$y5E" role="1XwpL7">
+                  <property role="1XweGQ" value="r:67877e7f-c493-4b0c-bfd5-62042be0186a" />
+                  <node concept="1j_P7g" id="xRVdUh$y5F" role="1j$8Uc">
+                    <property role="1j_P7h" value="loops_unwinding" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$y5G" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$y5H" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$y5I" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$y5J" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1125,9 +1207,23 @@
           <node concept="3cpWsn" id="5cKTps7Ib_g" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5cKTps7Ib_b" role="1tU5fm" />
-            <node concept="BaHAS" id="5cKTps7IbEU" role="33vP2m">
-              <property role="BaHAW" value="loops_unwinding" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$vk7" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$v8l" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$veb" role="1XwpL7">
+                  <property role="1XweGQ" value="r:67877e7f-c493-4b0c-bfd5-62042be0186a" />
+                  <node concept="1j_P7g" id="xRVdUh$vec" role="1j$8Uc">
+                    <property role="1j_P7h" value="loops_unwinding" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$vsw" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$vNA" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$vx9" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$w9O" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

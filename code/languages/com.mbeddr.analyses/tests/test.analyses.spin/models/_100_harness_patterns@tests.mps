@@ -75,6 +75,15 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
@@ -97,13 +106,16 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -129,9 +141,23 @@
           <node concept="3cpWsn" id="3tIDuP5sifu" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3tIDuP5sifs" role="1tU5fm" />
-            <node concept="BaHAS" id="3tIDuP5sifv" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__100_kinds_of_suv" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzQqL" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzQjr" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzQn3" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fc020c44-5da9-4331-aec8-51f6a16ac5af" />
+                  <node concept="1j_P7g" id="xRVdUhzQn4" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__100_kinds_of_suv" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzQwW" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzQKg" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzQzn" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzR44" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -199,9 +225,23 @@
           <node concept="3cpWsn" id="2lN4cj_VABW" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="2lN4cj_VABX" role="1tU5fm" />
-            <node concept="BaHAS" id="2lN4cj_VABY" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__010_assignments" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzJUC" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzJJc" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzJMQ" role="1XwpL7">
+                  <property role="1XweGQ" value="r:c4050cc9-414f-496e-ac70-4294f0a3ffe2" />
+                  <node concept="1j_P7g" id="xRVdUhzJMR" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__010_assignments" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzK4R" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzKjE" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzK7k" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzKBw" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -299,9 +339,23 @@
           <node concept="3cpWsn" id="2s6qLQkru2R" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="2s6qLQkru2S" role="1tU5fm" />
-            <node concept="BaHAS" id="2s6qLQkru2T" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__010_assignments" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzKEC" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzKED" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzKEE" role="1XwpL7">
+                  <property role="1XweGQ" value="r:c4050cc9-414f-496e-ac70-4294f0a3ffe2" />
+                  <node concept="1j_P7g" id="xRVdUhzKEF" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__010_assignments" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzKEG" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzKEH" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzKEI" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzKEJ" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -385,9 +439,23 @@
           <node concept="3cpWsn" id="1GXRyrSXytl" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1GXRyrSXytm" role="1tU5fm" />
-            <node concept="BaHAS" id="1GXRyrSXytn" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__010_assignments" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzKI0" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzKI1" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzKI2" role="1XwpL7">
+                  <property role="1XweGQ" value="r:c4050cc9-414f-496e-ac70-4294f0a3ffe2" />
+                  <node concept="1j_P7g" id="xRVdUhzKI3" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__010_assignments" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzKI4" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzKI5" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzKI6" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzKI7" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -499,9 +567,23 @@
           <node concept="3cpWsn" id="1BFQdmK1ZoS" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1BFQdmK1ZoT" role="1tU5fm" />
-            <node concept="BaHAS" id="1BFQdmK1ZoU" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__010_assignments" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzKLo" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzKLp" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzKLq" role="1XwpL7">
+                  <property role="1XweGQ" value="r:c4050cc9-414f-496e-ac70-4294f0a3ffe2" />
+                  <node concept="1j_P7g" id="xRVdUhzKLr" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__010_assignments" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzKLs" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzKLt" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzKLu" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzKLv" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -603,9 +685,23 @@
           <node concept="3cpWsn" id="4b2d3GUkOCx" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4b2d3GUkOCy" role="1tU5fm" />
-            <node concept="BaHAS" id="4b2d3GUkOCz" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__020_nondet_choice" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzL59" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzKTH" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzKXn" role="1XwpL7">
+                  <property role="1XweGQ" value="r:9c3f6990-fd18-4a00-84dc-aa38e70ba7d6" />
+                  <node concept="1j_P7g" id="xRVdUhzKXo" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__020_nondet_choice" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzLfo" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzLub" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzLhP" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzLM1" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -830,9 +926,23 @@
           <node concept="3cpWsn" id="4b2d3GUmUQw" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4b2d3GUmUQx" role="1tU5fm" />
-            <node concept="BaHAS" id="4b2d3GUmUQy" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__100_kinds_of_suv" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzRjA" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzRcc" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzRfQ" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fc020c44-5da9-4331-aec8-51f6a16ac5af" />
+                  <node concept="1j_P7g" id="xRVdUhzRfR" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__100_kinds_of_suv" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzRpN" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzRDb" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzRsg" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzSa3" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -949,9 +1059,23 @@
           <node concept="3cpWsn" id="4b2d3GUszdv" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4b2d3GUszdw" role="1tU5fm" />
-            <node concept="BaHAS" id="4b2d3GUszdx" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__030_assume" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzM8k" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzLWS" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzM0y" role="1XwpL7">
+                  <property role="1XweGQ" value="r:2b021939-5c11-4488-b74d-bbb914b6a217" />
+                  <node concept="1j_P7g" id="xRVdUhzM0z" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__030_assume" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzMex" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzMtT" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzMgY" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzMYL" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1042,9 +1166,23 @@
           <node concept="3cpWsn" id="3jcp2EdydAD" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3jcp2EdydAE" role="1tU5fm" />
-            <node concept="BaHAS" id="3jcp2EdydAF" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__030_assume" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzN1D" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzN1E" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzN1F" role="1XwpL7">
+                  <property role="1XweGQ" value="r:2b021939-5c11-4488-b74d-bbb914b6a217" />
+                  <node concept="1j_P7g" id="xRVdUhzN1G" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__030_assume" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzN1H" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzN1I" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzN1J" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzN1K" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1132,9 +1270,23 @@
           <node concept="3cpWsn" id="1BFQdmK6qho" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1BFQdmK6qhp" role="1tU5fm" />
-            <node concept="BaHAS" id="1BFQdmK6qhq" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__000_logger" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzIK_" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzI_9" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzICN" role="1XwpL7">
+                  <property role="1XweGQ" value="r:ea5c9d07-c438-4b9a-9893-cf1de7b80ba2" />
+                  <node concept="1j_P7g" id="xRVdUhzICO" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__000_logger" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzIUm" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzJ9I" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzIWN" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzJt$" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1254,9 +1406,23 @@
           <node concept="3cpWsn" id="4ly_4leUz$s" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4ly_4leUz$t" role="1tU5fm" />
-            <node concept="BaHAS" id="4ly_4leUz$u" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__040_loops" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzNk_" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzNdf" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzNgR" role="1XwpL7">
+                  <property role="1XweGQ" value="r:77a690cb-1cbe-43c4-bd4b-312c2b0467b6" />
+                  <node concept="1j_P7g" id="xRVdUhzNgS" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__040_loops" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzNqK" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzNE4" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzNtb" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzNXb" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1320,9 +1486,23 @@
           <node concept="3cpWsn" id="4ly_4leUYWr" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4ly_4leUYWs" role="1tU5fm" />
-            <node concept="BaHAS" id="4ly_4leUYWt" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__040_loops" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzO01" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzO02" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzO03" role="1XwpL7">
+                  <property role="1XweGQ" value="r:77a690cb-1cbe-43c4-bd4b-312c2b0467b6" />
+                  <node concept="1j_P7g" id="xRVdUhzO04" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__040_loops" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzO05" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzO06" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzO07" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzO08" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1390,9 +1570,23 @@
           <node concept="3cpWsn" id="63QgsF$OnAH" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="63QgsF$OnAI" role="1tU5fm" />
-            <node concept="BaHAS" id="63QgsF$OnAJ" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__200_multiple_assertions" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzS$t" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzSo9" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzSug" role="1XwpL7">
+                  <property role="1XweGQ" value="r:3dfe35a7-adea-4048-8acb-80b654070849" />
+                  <node concept="1j_P7g" id="xRVdUhzSuh" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__200_multiple_assertions" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzSH7" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzT1p" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzSM1" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzTnG" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1560,9 +1754,23 @@
           <node concept="3cpWsn" id="63QgsF$TmSL" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="63QgsF$TmSM" role="1tU5fm" />
-            <node concept="BaHAS" id="63QgsF$TmSN" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__200_multiple_assertions" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzTEH" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzTyP" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzTAI" role="1XwpL7">
+                  <property role="1XweGQ" value="r:3dfe35a7-adea-4048-8acb-80b654070849" />
+                  <node concept="1j_P7g" id="xRVdUhzTAJ" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__200_multiple_assertions" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzTKF" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzU0x" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzTNn" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzUjT" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1635,9 +1843,23 @@
           <node concept="3cpWsn" id="46FswZ79z$$" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="46FswZ79z$_" role="1tU5fm" />
-            <node concept="BaHAS" id="46FswZ79z$A" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__040_loops" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzOfV" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzO8x" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzOcb" role="1XwpL7">
+                  <property role="1XweGQ" value="r:77a690cb-1cbe-43c4-bd4b-312c2b0467b6" />
+                  <node concept="1j_P7g" id="xRVdUhzOcc" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__040_loops" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzOlE" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzO$t" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzOo7" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzOSj" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1746,9 +1968,23 @@
           <node concept="3cpWsn" id="1U8LoddT13Z" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1U8LoddT140" role="1tU5fm" />
-            <node concept="BaHAS" id="1U8LoddT141" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__050_combinatorial" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzPck" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzP4s" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzP8l" role="1XwpL7">
+                  <property role="1XweGQ" value="r:cacbf3cf-3290-4434-ba12-18fb65924af3" />
+                  <node concept="1j_P7g" id="xRVdUhzP8m" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__050_combinatorial" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzPiK" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzPxQ" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzPls" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzPPV" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1817,9 +2053,23 @@
           <node concept="3cpWsn" id="1U8LoddT5X7" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1U8LoddT5X8" role="1tU5fm" />
-            <node concept="BaHAS" id="1U8LoddT5X9" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__050_combinatorial" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzPT2" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzPT3" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzPT4" role="1XwpL7">
+                  <property role="1XweGQ" value="r:cacbf3cf-3290-4434-ba12-18fb65924af3" />
+                  <node concept="1j_P7g" id="xRVdUhzPT5" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__050_combinatorial" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzPT6" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzPT7" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzPT8" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzPT9" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1892,9 +2142,23 @@
           <node concept="3cpWsn" id="5NkG1_QHnGd" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5NkG1_QHnGe" role="1tU5fm" />
-            <node concept="BaHAS" id="5NkG1_QHnGf" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__050_combinatorial" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzQ7n" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzQ7o" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzQ7p" role="1XwpL7">
+                  <property role="1XweGQ" value="r:cacbf3cf-3290-4434-ba12-18fb65924af3" />
+                  <node concept="1j_P7g" id="xRVdUhzQ7q" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__050_combinatorial" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzQ7r" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzQ7s" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzQ7t" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzQ7u" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1963,9 +2227,23 @@
           <node concept="3cpWsn" id="5NkG1_QHnGA" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5NkG1_QHnGB" role="1tU5fm" />
-            <node concept="BaHAS" id="5NkG1_QHnGC" role="33vP2m">
-              <property role="BaHAW" value="_100_harness_patterns__050_combinatorial" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzQaI" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzQaJ" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzQaK" role="1XwpL7">
+                  <property role="1XweGQ" value="r:cacbf3cf-3290-4434-ba12-18fb65924af3" />
+                  <node concept="1j_P7g" id="xRVdUhzQaL" role="1j$8Uc">
+                    <property role="1j_P7h" value="_100_harness_patterns__050_combinatorial" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzQaM" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzQaN" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzQaO" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzQaP" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

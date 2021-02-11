@@ -37,10 +37,18 @@
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -56,9 +64,13 @@
       <node concept="3cqZAl" id="EEDqFMwhtk" role="3clF45" />
       <node concept="3clFbS" id="EEDqFMwhto" role="3clF47">
         <node concept="1xIcmD" id="EEDqFMwhtz" role="3cqZAp">
-          <node concept="BaHAS" id="EEDqFMwht$" role="1xIeA0">
-            <property role="BaHAW" value="sm_code" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUh_vk$" role="1xIeA0">
+            <node concept="1dCxOl" id="xRVdUh_vkG" role="1XwpL7">
+              <property role="1XweGQ" value="r:e7ec37da-9b0c-445d-8cf7-3e043620f94d" />
+              <node concept="1j_P7g" id="xRVdUh_vkH" role="1j$8Uc">
+                <property role="1j_P7h" value="sm_code" />
+              </node>
+            </node>
           </node>
           <node concept="Xl_RD" id="EEDqFMwht_" role="1xDQ1B">
             <property role="Xl_RC" value="SM1" />
@@ -71,9 +83,13 @@
       <node concept="3cqZAl" id="6RWcftDLAqv" role="3clF45" />
       <node concept="3clFbS" id="6RWcftDLAqz" role="3clF47">
         <node concept="1xIcmD" id="6RWcftDLCCw" role="3cqZAp">
-          <node concept="BaHAS" id="6RWcftDLCCx" role="1xIeA0">
-            <property role="BaHAW" value="sm_code" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUh_vkl" role="1xIeA0">
+            <node concept="1dCxOl" id="xRVdUh_vkt" role="1XwpL7">
+              <property role="1XweGQ" value="r:e7ec37da-9b0c-445d-8cf7-3e043620f94d" />
+              <node concept="1j_P7g" id="xRVdUh_vku" role="1j$8Uc">
+                <property role="1j_P7h" value="sm_code" />
+              </node>
+            </node>
           </node>
           <node concept="Xl_RD" id="6RWcftDLCCy" role="1xDQ1B">
             <property role="Xl_RC" value="SM2" />

@@ -27,6 +27,7 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -170,9 +171,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -1362,10 +1363,22 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="5djBfpcTb1u" role="3clF47">
-        <node concept="3clFbF" id="5djBfpcTb1v" role="3cqZAp">
-          <node concept="BaHAS" id="5djBfpcTb1w" role="3clFbG">
-            <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.core" />
-            <property role="BaGAP" value="" />
+        <node concept="3clFbF" id="xRVdUh$69f" role="3cqZAp">
+          <node concept="2OqwBi" id="xRVdUh$6bB" role="3clFbG">
+            <node concept="1Xw6AR" id="xRVdUh$69c" role="2Oq$k0">
+              <node concept="1dCxOl" id="xRVdUh$69T" role="1XwpL7">
+                <property role="1XweGQ" value="r:d20a8498-55ea-46f3-9220-542767b71661" />
+                <node concept="1j_P7g" id="xRVdUh$69U" role="1j$8Uc">
+                  <property role="1j_P7h" value="test.analyses.cbmc.testcode.counterexample.mbeddr.core" />
+                </node>
+              </node>
+            </node>
+            <node concept="2yCiCJ" id="xRVdUh$6mO" role="2OqNvi">
+              <node concept="2YIFZM" id="xRVdUh$6nf" role="Vysub">
+                <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

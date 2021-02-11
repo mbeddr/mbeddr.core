@@ -49,21 +49,21 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20kJfa" value="modelWithBuggyRoots" />
       <property role="IQ2ns" value="4493491910455121568" />
-      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
     </node>
     <node concept="1TJgyj" id="3Ts5Ln3Ldqx" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20kJfa" value="originalModel" />
       <property role="IQ2ns" value="4493491910455121569" />
-      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
     </node>
     <node concept="1TJgyj" id="3Ts5Ln3NdYJ" role="1TKVEi">
       <property role="IQ2ns" value="4493491910455648175" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="temporaryModel" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
     </node>
     <node concept="PrWs8" id="3Ts5Ln3HLxM" role="PzmwI">
       <ref role="PrY4T" to="gfdq:33cGTVo609o" resolve="ILanguageSpecificConfig" />

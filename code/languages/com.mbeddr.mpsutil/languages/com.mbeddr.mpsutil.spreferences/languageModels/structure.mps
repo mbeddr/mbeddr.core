@@ -61,7 +61,7 @@
       <property role="20kJfa" value="importedModels" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="1551477140197679196" />
-      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
     </node>
     <node concept="1TJgyj" id="5f$4wDDr7VZ" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

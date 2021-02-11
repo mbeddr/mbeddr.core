@@ -101,6 +101,15 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
@@ -112,11 +121,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -149,9 +161,23 @@
           <node concept="3cpWsn" id="5EwdfGVgYHA" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVgYH$" role="1tU5fm" />
-            <node concept="BaHAS" id="5EwdfGVgYHB" role="33vP2m">
-              <property role="BaHAW" value="concurrency" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$4ks" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$4kt" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$4ku" role="1XwpL7">
+                  <property role="1XweGQ" value="r:0a438a16-5c60-4a0f-bf9f-41ddfa32c0f4" />
+                  <node concept="1j_P7g" id="xRVdUh$4kv" role="1j$8Uc">
+                    <property role="1j_P7h" value="concurrency" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$4kw" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$4kx" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$4ky" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$4kz" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -301,9 +327,23 @@
                   <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
-              <node concept="BaHAS" id="77fajPdkUco" role="37wK5m">
-                <property role="BaHAW" value="concurrency" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="xRVdUh$2_s" role="37wK5m">
+                <node concept="1Xw6AR" id="xRVdUh$2tA" role="2Oq$k0">
+                  <node concept="1dCxOl" id="xRVdUh$3yO" role="1XwpL7">
+                    <property role="1XweGQ" value="r:0a438a16-5c60-4a0f-bf9f-41ddfa32c0f4" />
+                    <node concept="1j_P7g" id="xRVdUh$3yP" role="1j$8Uc">
+                      <property role="1j_P7h" value="concurrency" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2yCiCJ" id="xRVdUh$2G4" role="2OqNvi">
+                  <node concept="2OqwBi" id="xRVdUh$2YS" role="Vysub">
+                    <node concept="1jxXqW" id="xRVdUh$2I$" role="2Oq$k0" />
+                    <node concept="liA8E" id="xRVdUh$3iX" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="Xl_RD" id="77fajPdkUcp" role="37wK5m">
                 <property role="Xl_RC" value="assert_seq1" />
@@ -391,9 +431,23 @@
                   <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
-              <node concept="BaHAS" id="77fajPdjAOG" role="37wK5m">
-                <property role="BaHAW" value="concurrency" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="xRVdUh$3IY" role="37wK5m">
+                <node concept="1Xw6AR" id="xRVdUh$3IZ" role="2Oq$k0">
+                  <node concept="1dCxOl" id="xRVdUh$3J0" role="1XwpL7">
+                    <property role="1XweGQ" value="r:0a438a16-5c60-4a0f-bf9f-41ddfa32c0f4" />
+                    <node concept="1j_P7g" id="xRVdUh$3J1" role="1j$8Uc">
+                      <property role="1j_P7h" value="concurrency" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2yCiCJ" id="xRVdUh$3J2" role="2OqNvi">
+                  <node concept="2OqwBi" id="xRVdUh$3J3" role="Vysub">
+                    <node concept="1jxXqW" id="xRVdUh$3J4" role="2Oq$k0" />
+                    <node concept="liA8E" id="xRVdUh$3J5" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="Xl_RD" id="77fajPdjAOH" role="37wK5m">
                 <property role="Xl_RC" value="assert_seq2" />
@@ -481,9 +535,23 @@
                   <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
-              <node concept="BaHAS" id="77fajPdkV$5" role="37wK5m">
-                <property role="BaHAW" value="concurrency" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="xRVdUh$3TZ" role="37wK5m">
+                <node concept="1Xw6AR" id="xRVdUh$3U0" role="2Oq$k0">
+                  <node concept="1dCxOl" id="xRVdUh$3U1" role="1XwpL7">
+                    <property role="1XweGQ" value="r:0a438a16-5c60-4a0f-bf9f-41ddfa32c0f4" />
+                    <node concept="1j_P7g" id="xRVdUh$3U2" role="1j$8Uc">
+                      <property role="1j_P7h" value="concurrency" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2yCiCJ" id="xRVdUh$3U3" role="2OqNvi">
+                  <node concept="2OqwBi" id="xRVdUh$3U4" role="Vysub">
+                    <node concept="1jxXqW" id="xRVdUh$3U5" role="2Oq$k0" />
+                    <node concept="liA8E" id="xRVdUh$3U6" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="Xl_RD" id="77fajPdkV$6" role="37wK5m">
                 <property role="Xl_RC" value="assert_seq3" />
@@ -561,9 +629,23 @@
                   <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
-              <node concept="BaHAS" id="77fajPdlkoc" role="37wK5m">
-                <property role="BaHAW" value="concurrency" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="xRVdUh$43L" role="37wK5m">
+                <node concept="1Xw6AR" id="xRVdUh$43M" role="2Oq$k0">
+                  <node concept="1dCxOl" id="xRVdUh$43N" role="1XwpL7">
+                    <property role="1XweGQ" value="r:0a438a16-5c60-4a0f-bf9f-41ddfa32c0f4" />
+                    <node concept="1j_P7g" id="xRVdUh$43O" role="1j$8Uc">
+                      <property role="1j_P7h" value="concurrency" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2yCiCJ" id="xRVdUh$43P" role="2OqNvi">
+                  <node concept="2OqwBi" id="xRVdUh$43Q" role="Vysub">
+                    <node concept="1jxXqW" id="xRVdUh$43R" role="2Oq$k0" />
+                    <node concept="liA8E" id="xRVdUh$43S" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="Xl_RD" id="77fajPdlkod" role="37wK5m">
                 <property role="Xl_RC" value="happens_after" />

@@ -104,6 +104,15 @@
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing">
       <concept id="4791280061046124023" name="com.mbeddr.analyses.cbmc.testing.structure.CBMCCounterexampleStateTest" flags="ng" index="38rIoz">
         <property id="5665549241468834974" name="alternativeSteps" index="35AWuq" />
@@ -128,13 +137,16 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -168,9 +180,23 @@
       <node concept="H_c77" id="4Y$LvVOinTr" role="3clF45" />
       <node concept="3clFbS" id="4Y$LvVOimF_" role="3clF47">
         <node concept="3clFbF" id="4Y$LvVOinV5" role="3cqZAp">
-          <node concept="BaHAS" id="4Y$LvVOinV7" role="3clFbG">
-            <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
-            <property role="BaGAP" value="" />
+          <node concept="2OqwBi" id="xRVdUh$7Eg" role="3clFbG">
+            <node concept="1Xw6AR" id="xRVdUh$7Eh" role="2Oq$k0">
+              <node concept="1dCxOl" id="xRVdUh$7Ei" role="1XwpL7">
+                <property role="1XweGQ" value="r:e2db5934-0aec-4dbd-8d13-2d3b7dc23298" />
+                <node concept="1j_P7g" id="xRVdUh$7Ej" role="1j$8Uc">
+                  <property role="1j_P7h" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
+                </node>
+              </node>
+            </node>
+            <node concept="2yCiCJ" id="xRVdUh$7Ek" role="2OqNvi">
+              <node concept="2OqwBi" id="xRVdUh$7El" role="Vysub">
+                <node concept="1jxXqW" id="xRVdUh$7Em" role="2Oq$k0" />
+                <node concept="liA8E" id="xRVdUh$7En" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -183,9 +209,23 @@
           <node concept="3cpWsn" id="2WJ8cS_xNJ6" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="2WJ8cS_xNJ1" role="1tU5fm" />
-            <node concept="BaHAS" id="2WJ8cS_xNO6" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$7Fm" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$7Fn" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$7Fo" role="1XwpL7">
+                  <property role="1XweGQ" value="r:e2db5934-0aec-4dbd-8d13-2d3b7dc23298" />
+                  <node concept="1j_P7g" id="xRVdUh$7Fp" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$7Fq" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$7Fr" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$7Fs" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$7Ft" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -365,9 +405,23 @@
           <node concept="3cpWsn" id="2WJ8cS_xNsi" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="2WJ8cS_xNsd" role="1tU5fm" />
-            <node concept="BaHAS" id="2WJ8cS_xIzC" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$80i" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$80j" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$80k" role="1XwpL7">
+                  <property role="1XweGQ" value="r:e2db5934-0aec-4dbd-8d13-2d3b7dc23298" />
+                  <node concept="1j_P7g" id="xRVdUh$80l" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$80m" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$80n" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$80o" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$80p" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -670,9 +724,23 @@
           <node concept="3cpWsn" id="1hCIBtjelpi" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1hCIBtjelpj" role="1tU5fm" />
-            <node concept="BaHAS" id="1hCIBtjelpk" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$8qS" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$8qT" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$8qU" role="1XwpL7">
+                  <property role="1XweGQ" value="r:e2db5934-0aec-4dbd-8d13-2d3b7dc23298" />
+                  <node concept="1j_P7g" id="xRVdUh$8qV" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$8qW" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$8qX" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$8qY" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$8qZ" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -944,9 +1012,23 @@
           <node concept="3cpWsn" id="1hCIBtje_fu" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1hCIBtje_fv" role="1tU5fm" />
-            <node concept="BaHAS" id="1hCIBtje_fw" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$8F8" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$8F9" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$8Fa" role="1XwpL7">
+                  <property role="1XweGQ" value="r:e2db5934-0aec-4dbd-8d13-2d3b7dc23298" />
+                  <node concept="1j_P7g" id="xRVdUh$8Fb" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$8Fc" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$8Fd" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$8Fe" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$8Ff" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1156,9 +1238,23 @@
           <node concept="3cpWsn" id="1hCIBtjePNI" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1hCIBtjePNJ" role="1tU5fm" />
-            <node concept="BaHAS" id="1hCIBtjePNK" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$8MA" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$8MB" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$8MC" role="1XwpL7">
+                  <property role="1XweGQ" value="r:e2db5934-0aec-4dbd-8d13-2d3b7dc23298" />
+                  <node concept="1j_P7g" id="xRVdUh$8MD" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$8ME" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$8MF" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$8MG" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$8MH" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1278,9 +1374,23 @@
           <node concept="3cpWsn" id="1fLSIrNnaVD" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1fLSIrNnaVE" role="1tU5fm" />
-            <node concept="BaHAS" id="1fLSIrNnaVF" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$8Uj" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$8Uk" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$8Ul" role="1XwpL7">
+                  <property role="1XweGQ" value="r:e2db5934-0aec-4dbd-8d13-2d3b7dc23298" />
+                  <node concept="1j_P7g" id="xRVdUh$8Um" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$8Un" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$8Uo" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$8Up" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$8Uq" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1432,9 +1542,23 @@
           <node concept="3cpWsn" id="38xi_3mwZTY" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="38xi_3mwZTZ" role="1tU5fm" />
-            <node concept="BaHAS" id="38xi_3mwZU0" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh$6NY" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh$6EP" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh$6Jf" role="1XwpL7">
+                  <property role="1XweGQ" value="r:e2db5934-0aec-4dbd-8d13-2d3b7dc23298" />
+                  <node concept="1j_P7g" id="xRVdUh$6Jg" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh$6UV" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh$7f9" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh$6Y8" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh$7ze" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

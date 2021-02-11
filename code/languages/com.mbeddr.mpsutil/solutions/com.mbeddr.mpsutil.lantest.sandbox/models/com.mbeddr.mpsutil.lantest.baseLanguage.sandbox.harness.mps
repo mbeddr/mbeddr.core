@@ -74,6 +74,15 @@
         <child id="4493491910455121568" name="modelWithBuggyRoots" index="3XAc6P" />
       </concept>
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="5ef691b5-60ce-4ece-a04e-25e642dfa128" name="com.mbeddr.mpsutil.lantest">
       <concept id="3465332537548487647" name="com.mbeddr.mpsutil.lantest.structure.RandomConceptChooser" flags="ng" index="1emTa" />
       <concept id="5961733595646916849" name="com.mbeddr.mpsutil.lantest.structure.InterestingLanguages" flags="ng" index="cHURJ">
@@ -106,9 +115,8 @@
       <concept id="3262406899569270472" name="com.mbeddr.mpsutil.lantest.structure.RandomDescendantSeed" flags="ng" index="1$QBG2" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -127,33 +135,57 @@
     <property role="3zPyIU" value="true" />
     <property role="3zPyLd" value="true" />
     <property role="2$dOGW" value="d:\temp\lantest_log\" />
-    <node concept="BaHAS" id="6fGXG$6dmgV" role="1saM0L">
-      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.res" />
-      <property role="BaGAP" value="" />
+    <node concept="1Xw6AR" id="6M7zmThr149" role="1saM0L">
+      <node concept="1dCxOl" id="6M7zmThr14h" role="1XwpL7">
+        <property role="1XweGQ" value="r:2dc08e6d-1990-47d1-bd77-9d77426649a3" />
+        <node concept="1j_P7g" id="6M7zmThr14i" role="1j$8Uc">
+          <property role="1j_P7h" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.res" />
+        </node>
+      </node>
     </node>
     <node concept="1emTa" id="6fGXG$6dmjf" role="1emjp" />
-    <node concept="BaHAS" id="6fGXG$6dmgZ" role="1llUH_">
-      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.temp" />
-      <property role="BaGAP" value="" />
+    <node concept="1Xw6AR" id="6M7zmThr14o" role="1llUH_">
+      <node concept="1dCxOl" id="6M7zmThr14t" role="1XwpL7">
+        <property role="1XweGQ" value="r:1c11b1c8-3655-40e2-aae5-12841140b9e2" />
+        <node concept="1j_P7g" id="6M7zmThr14u" role="1j$8Uc">
+          <property role="1j_P7h" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.temp" />
+        </node>
+      </node>
     </node>
     <node concept="1$QBG2" id="3cUcim$dilZ" role="1$QBHO" />
     <node concept="3XUKX$" id="3Ts5Ln3IakA" role="3CPbyU">
-      <node concept="BaHAS" id="3Ts5Ln3Mpq4" role="3XAc6P">
-        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.buggy_classes" />
-        <property role="BaGAP" value="" />
+      <node concept="1Xw6AR" id="6M7zmThr14$" role="3XAc6P">
+        <node concept="1dCxOl" id="6M7zmThr14G" role="1XwpL7">
+          <property role="1XweGQ" value="r:407675bb-7c3b-49b9-8926-fa5faf7c2b42" />
+          <node concept="1j_P7g" id="6M7zmThr14H" role="1j$8Uc">
+            <property role="1j_P7h" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.buggy_classes" />
+          </node>
+        </node>
       </node>
-      <node concept="BaHAS" id="3Ts5Ln3Mpqj" role="3XAc6O">
-        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.harness" />
-        <property role="BaGAP" value="" />
+      <node concept="1Xw6AR" id="6M7zmThr14N" role="3XAc6O">
+        <node concept="1dCxOl" id="6M7zmThr14V" role="1XwpL7">
+          <property role="1XweGQ" value="r:2d2645ad-14bb-4c7e-b57f-e39dbec743b7" />
+          <node concept="1j_P7g" id="6M7zmThr14W" role="1j$8Uc">
+            <property role="1j_P7h" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.harness" />
+          </node>
+        </node>
       </node>
-      <node concept="BaHAS" id="3Ts5Ln3NpTN" role="3X$cyU">
-        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.temp" />
-        <property role="BaGAP" value="" />
+      <node concept="1Xw6AR" id="6M7zmThr152" role="3X$cyU">
+        <node concept="1dCxOl" id="6M7zmThr15a" role="1XwpL7">
+          <property role="1XweGQ" value="r:1c11b1c8-3655-40e2-aae5-12841140b9e2" />
+          <node concept="1j_P7g" id="6M7zmThr15b" role="1j$8Uc">
+            <property role="1j_P7h" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.temp" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="BaHAS" id="5upaw7gLyQU" role="1zXyiG">
-      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.buggy_classes" />
-      <property role="BaGAP" value="" />
+    <node concept="1Xw6AR" id="6M7zmThr15h" role="1zXyiG">
+      <node concept="1dCxOl" id="6M7zmThr15m" role="1XwpL7">
+        <property role="1XweGQ" value="r:407675bb-7c3b-49b9-8926-fa5faf7c2b42" />
+        <node concept="1j_P7g" id="6M7zmThr15n" role="1j$8Uc">
+          <property role="1j_P7h" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.buggy_classes" />
+        </node>
+      </node>
     </node>
     <node concept="fhwn3" id="4saLLt23Vzi" role="fhwmk">
       <ref role="fhwn$" node="3Ts5Ln3HLtD" resolve="Seed" />

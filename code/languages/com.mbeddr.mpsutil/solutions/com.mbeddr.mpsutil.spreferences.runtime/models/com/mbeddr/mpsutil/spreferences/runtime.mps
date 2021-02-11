@@ -63,6 +63,8 @@
     <import index="6f4m" ref="528ff3b9-5fc4-40dd-931f-c6ce3650640e/r:f69c3fa1-0e30-4980-84e2-190ae44e4c3d(jetbrains.mps.lang.migration.runtime/jetbrains.mps.lang.migration.runtime.base)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
     <import index="4o98" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.platform(MPS.Core/)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
+    <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -2745,51 +2747,38 @@
           <node concept="3clFbS" id="KILMQGVVB4" role="2LFqv$">
             <node concept="3clFbJ" id="KILMQGWMP1" role="3cqZAp">
               <node concept="3clFbS" id="KILMQGWMP2" role="3clFbx">
-                <node concept="3cpWs8" id="KILMQGWOy9" role="3cqZAp">
-                  <node concept="3cpWsn" id="KILMQGWOyc" role="3cpWs9">
-                    <property role="TrG5h" value="modelName" />
-                    <node concept="17QB3L" id="KILMQGWOy7" role="1tU5fm" />
-                    <node concept="2OqwBi" id="KILMQH0h8k" role="33vP2m">
-                      <node concept="2OqwBi" id="KILMQH0fwf" role="2Oq$k0">
-                        <node concept="2GrUjf" id="KILMQH0fjz" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="KILMQGVVB2" resolve="rootNode" />
-                        </node>
-                        <node concept="3TrEf2" id="KILMQH0gwR" role="2OqNvi">
-                          <ref role="3Tt5mk" to="lko4:KILMQGSUtM" resolve="redirectToModel" />
-                        </node>
-                      </node>
-                      <node concept="2qgKlT" id="KILMQH0n3o" role="2OqNvi">
-                        <ref role="37wK5l" to="tpeu:7K4mn_BeEzv" resolve="getFQName" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3cpWs8" id="KILMQH0CD0" role="3cqZAp">
                   <node concept="3cpWsn" id="KILMQH0CD1" role="3cpWs9">
                     <property role="TrG5h" value="redirect" />
                     <node concept="3uibUv" id="KILMQH0CCD" role="1tU5fm">
                       <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
                     </node>
-                    <node concept="2OqwBi" id="3YjQI$iK27E" role="33vP2m">
-                      <node concept="2OqwBi" id="3YjQI$iK8NT" role="2Oq$k0">
-                        <node concept="2YIFZM" id="3YjQI$iK8NU" role="2Oq$k0">
-                          <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
-                          <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance()" resolve="getInstance" />
-                        </node>
-                        <node concept="liA8E" id="3YjQI$iK8NV" role="2OqNvi">
-                          <ref role="37wK5l" to="dush:~PersistenceFacade.createModelReference(java.lang.String)" resolve="createModelReference" />
-                          <node concept="37vLTw" id="3YjQI$j26dg" role="37wK5m">
-                            <ref role="3cqZAo" node="KILMQGWOyc" resolve="modelName" />
+                    <node concept="2OqwBi" id="xRVdUhyeS7" role="33vP2m">
+                      <node concept="2OqwBi" id="xRVdUhyeS8" role="2Oq$k0">
+                        <node concept="2OqwBi" id="xRVdUhyeS9" role="2Oq$k0">
+                          <node concept="2OqwBi" id="xRVdUhyeSa" role="2Oq$k0">
+                            <node concept="2GrUjf" id="xRVdUhyeSb" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="KILMQGVVB2" resolve="rootNode" />
+                            </node>
+                            <node concept="3TrEf2" id="xRVdUhyeSc" role="2OqNvi">
+                              <ref role="3Tt5mk" to="lko4:KILMQGSUtM" resolve="redirectToModel" />
+                            </node>
                           </node>
+                          <node concept="3TrEf2" id="xRVdUhyeSd" role="2OqNvi">
+                            <ref role="3Tt5mk" to="tp25:1Bs_61$ngwB" resolve="modelRef" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="xRVdUhyeSe" role="2OqNvi">
+                          <ref role="37wK5l" to="xlb7:1Bs_61$mvvu" resolve="toModelReference" />
                         </node>
                       </node>
-                      <node concept="liA8E" id="3YjQI$iK27G" role="2OqNvi">
+                      <node concept="liA8E" id="xRVdUhyeSf" role="2OqNvi">
                         <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
-                        <node concept="2OqwBi" id="3YjQI$j2fkc" role="37wK5m">
-                          <node concept="37vLTw" id="3YjQI$j27G2" role="2Oq$k0">
+                        <node concept="2OqwBi" id="xRVdUhyeSg" role="37wK5m">
+                          <node concept="37vLTw" id="xRVdUhyeSh" role="2Oq$k0">
                             <ref role="3cqZAo" node="KILMQGVMR4" resolve="model" />
                           </node>
-                          <node concept="liA8E" id="3YjQI$j2gTo" role="2OqNvi">
+                          <node concept="liA8E" id="xRVdUhyeSi" role="2OqNvi">
                             <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                           </node>
                         </node>

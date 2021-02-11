@@ -10,15 +10,18 @@
   </languages>
   <imports>
     <import index="8fsg" ref="r:4c26acae-0f84-4664-bc8e-eb85ca6494bf(com.mbeddr.analyses.utils.nodes)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -52,6 +55,15 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
@@ -63,9 +75,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
+      </concept>
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -108,9 +123,23 @@
           <node concept="2YIFZM" id="5Lx3sEEr0lr" role="3clFbG">
             <ref role="37wK5l" to="8fsg:2jwOBjYi0jK" resolve="setModelAndModule" />
             <ref role="1Pybhc" to="8fsg:2jwOBjYhZSX" resolve="NodesFindingUtilsForTests" />
-            <node concept="BaHAS" id="5Lx3sEEr0ls" role="37wK5m">
-              <property role="BaHAW" value="test.analyses.base.testcode.nodes_tracing.core" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhz7Le" role="37wK5m">
+              <node concept="1Xw6AR" id="xRVdUhz7Hl" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhz7Jh" role="1XwpL7">
+                  <property role="1XweGQ" value="r:47ab8e2b-57d7-419b-9d52-a12ca6d16eca" />
+                  <node concept="1j_P7g" id="xRVdUhz7Ji" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.base.testcode.nodes_tracing.core" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhz7Oi" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhz84G" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhz7Qm" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhz8oi" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="Xl_RD" id="5Lx3sEEr0lt" role="37wK5m">
               <property role="Xl_RC" value="SimpleCode" />
@@ -210,9 +239,23 @@
           <node concept="2YIFZM" id="HxQJLPNlsN" role="3clFbG">
             <ref role="37wK5l" to="8fsg:2jwOBjYi0jK" resolve="setModelAndModule" />
             <ref role="1Pybhc" to="8fsg:2jwOBjYhZSX" resolve="NodesFindingUtilsForTests" />
-            <node concept="BaHAS" id="HxQJLPNlsO" role="37wK5m">
-              <property role="BaHAW" value="test.analyses.base.testcode.nodes_tracing.core" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhz6dM" role="37wK5m">
+              <node concept="1Xw6AR" id="xRVdUhz68z" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhz6av" role="1XwpL7">
+                  <property role="1XweGQ" value="r:47ab8e2b-57d7-419b-9d52-a12ca6d16eca" />
+                  <node concept="1j_P7g" id="xRVdUhz6aw" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.base.testcode.nodes_tracing.core" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhz6gQ" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhz6xs" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhz6iV" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhz6P1" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="Xl_RD" id="HxQJLPNlsP" role="37wK5m">
               <property role="Xl_RC" value="DecTable" />
@@ -274,9 +317,23 @@
           <node concept="2YIFZM" id="2jwOBjYjHjv" role="3clFbG">
             <ref role="1Pybhc" to="8fsg:2jwOBjYhZSX" resolve="NodesFindingUtilsForTests" />
             <ref role="37wK5l" to="8fsg:2jwOBjYi0jK" resolve="setModelAndModule" />
-            <node concept="BaHAS" id="2jwOBjYjIIB" role="37wK5m">
-              <property role="BaHAW" value="test.analyses.base.testcode.nodes_tracing.core" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhz6X9" role="37wK5m">
+              <node concept="1Xw6AR" id="xRVdUhz6Tg" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhz6Vc" role="1XwpL7">
+                  <property role="1XweGQ" value="r:47ab8e2b-57d7-419b-9d52-a12ca6d16eca" />
+                  <node concept="1j_P7g" id="xRVdUhz6Vd" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.base.testcode.nodes_tracing.core" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhz71$" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhz7ia" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhz73D" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhz7_J" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="Xl_RD" id="2jwOBjYjHBy" role="37wK5m">
               <property role="Xl_RC" value="DecTable" />

@@ -97,17 +97,29 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
         <child id="1171981057159" name="condition" index="3vwVQn" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -132,9 +144,23 @@
           <node concept="3cpWsn" id="1TY2kgDXU3p" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1TY2kgDXU3n" role="1tU5fm" />
-            <node concept="BaHAS" id="1TY2kgDXU3q" role="33vP2m">
-              <property role="BaHAW" value="_010_spin_arguments" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzEvU" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzE1b" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzE7O" role="1XwpL7">
+                  <property role="1XweGQ" value="r:ecbc3a4f-4ac4-41dc-b2ca-aa2bb3e7f48c" />
+                  <node concept="1j_P7g" id="xRVdUhzE7P" role="1j$8Uc">
+                    <property role="1j_P7h" value="_010_spin_arguments" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzEHb" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzF6T" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzEN8" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzFF4" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -237,9 +263,23 @@
           <node concept="3cpWsn" id="1frDWv8azVR" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="1frDWv8azVP" role="1tU5fm" />
-            <node concept="BaHAS" id="1frDWv8azVS" role="33vP2m">
-              <property role="BaHAW" value="_010_spin_arguments" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzFLk" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzFLl" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzFLm" role="1XwpL7">
+                  <property role="1XweGQ" value="r:ecbc3a4f-4ac4-41dc-b2ca-aa2bb3e7f48c" />
+                  <node concept="1j_P7g" id="xRVdUhzFLn" role="1j$8Uc">
+                    <property role="1j_P7h" value="_010_spin_arguments" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzFLo" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzFLp" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzFLq" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzFLr" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

@@ -86,6 +86,15 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
@@ -100,11 +109,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -138,9 +150,23 @@
           <node concept="3cpWsn" id="3$vwvl9TySs" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3$vwvl9TySq" role="1tU5fm" />
-            <node concept="BaHAS" id="3$vwvl9TySt" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh_b8Q" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh_b8R" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh_b8S" role="1XwpL7">
+                  <property role="1XweGQ" value="r:27f6515e-36f1-4566-93ac-af92dd58218d" />
+                  <node concept="1j_P7g" id="xRVdUh_b8T" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.var.testcode.cm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh_b8U" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh_b8V" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh_b8W" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh_b8X" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -221,9 +247,23 @@
           <node concept="3cpWsn" id="3$vwvl9Tzcn" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3$vwvl9Tzcl" role="1tU5fm" />
-            <node concept="BaHAS" id="3$vwvl9Tzco" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh_bbB" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh_bbC" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh_bbD" role="1XwpL7">
+                  <property role="1XweGQ" value="r:27f6515e-36f1-4566-93ac-af92dd58218d" />
+                  <node concept="1j_P7g" id="xRVdUh_bbE" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.var.testcode.cm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh_bbF" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh_bbG" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh_bbH" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh_bbI" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -270,9 +310,23 @@
           <node concept="3cpWsn" id="3$vwvl9Tzvw" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3$vwvl9Tzvu" role="1tU5fm" />
-            <node concept="BaHAS" id="3$vwvl9Tzvx" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh_beo" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh_bep" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh_beq" role="1XwpL7">
+                  <property role="1XweGQ" value="r:27f6515e-36f1-4566-93ac-af92dd58218d" />
+                  <node concept="1j_P7g" id="xRVdUh_ber" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.var.testcode.cm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh_bes" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh_bet" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh_beu" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh_bev" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -335,9 +389,23 @@
           <node concept="3cpWsn" id="3$vwvl9T$oM" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3$vwvl9T$oK" role="1tU5fm" />
-            <node concept="BaHAS" id="3$vwvl9T$oN" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh_bh9" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh_bha" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh_bhb" role="1XwpL7">
+                  <property role="1XweGQ" value="r:27f6515e-36f1-4566-93ac-af92dd58218d" />
+                  <node concept="1j_P7g" id="xRVdUh_bhc" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.var.testcode.cm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh_bhd" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh_bhe" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh_bhf" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh_bhg" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -392,9 +460,23 @@
           <node concept="3cpWsn" id="3$vwvl9T$Gb" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3$vwvl9T$G9" role="1tU5fm" />
-            <node concept="BaHAS" id="3$vwvl9T$Gc" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh_bjU" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh_bjV" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh_bjW" role="1XwpL7">
+                  <property role="1XweGQ" value="r:27f6515e-36f1-4566-93ac-af92dd58218d" />
+                  <node concept="1j_P7g" id="xRVdUh_bjX" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.var.testcode.cm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh_bjY" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh_bjZ" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh_bk0" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh_bk1" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -505,9 +587,23 @@
           <node concept="3cpWsn" id="3$vwvl9T_1d" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="3$vwvl9T_1b" role="1tU5fm" />
-            <node concept="BaHAS" id="3$vwvl9T_1e" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh_bmF" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh_bmG" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh_bmH" role="1XwpL7">
+                  <property role="1XweGQ" value="r:27f6515e-36f1-4566-93ac-af92dd58218d" />
+                  <node concept="1j_P7g" id="xRVdUh_bmI" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.var.testcode.cm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh_bmJ" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh_bmK" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh_bmL" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh_bmM" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -557,9 +653,23 @@
           <node concept="3cpWsn" id="68jd02E9zT4" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="68jd02E9zT2" role="1tU5fm" />
-            <node concept="BaHAS" id="68jd02E9zT5" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh_a18" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh_9Wo" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh_9Y1" role="1XwpL7">
+                  <property role="1XweGQ" value="r:27f6515e-36f1-4566-93ac-af92dd58218d" />
+                  <node concept="1j_P7g" id="xRVdUh_9Y2" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.var.testcode.cm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh_a6E" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh_akG" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh_a8s" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh_aBT" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -607,9 +717,23 @@
           <node concept="3cpWsn" id="68jd02EcGzA" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="68jd02EcGzB" role="1tU5fm" />
-            <node concept="BaHAS" id="68jd02EcGzC" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh_aEm" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh_aEn" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh_aEo" role="1XwpL7">
+                  <property role="1XweGQ" value="r:27f6515e-36f1-4566-93ac-af92dd58218d" />
+                  <node concept="1j_P7g" id="xRVdUh_aEp" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.var.testcode.cm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh_aEq" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh_aEr" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh_aEs" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh_aEt" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -657,9 +781,23 @@
           <node concept="3cpWsn" id="4qsm5C8v23M" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4qsm5C8v23N" role="1tU5fm" />
-            <node concept="BaHAS" id="4qsm5C8v23O" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh_aH5" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh_aH6" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh_aH7" role="1XwpL7">
+                  <property role="1XweGQ" value="r:27f6515e-36f1-4566-93ac-af92dd58218d" />
+                  <node concept="1j_P7g" id="xRVdUh_aH8" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.var.testcode.cm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh_aH9" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh_aHa" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh_aHb" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh_aHc" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -747,9 +885,23 @@
           <node concept="3cpWsn" id="4qsm5C8v243" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4qsm5C8v244" role="1tU5fm" />
-            <node concept="BaHAS" id="4qsm5C8v245" role="33vP2m">
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUh_aJM" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUh_aJN" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUh_aJO" role="1XwpL7">
+                  <property role="1XweGQ" value="r:27f6515e-36f1-4566-93ac-af92dd58218d" />
+                  <node concept="1j_P7g" id="xRVdUh_aJP" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.analyses.var.testcode.cm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUh_aJQ" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUh_aJR" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUh_aJS" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUh_aJT" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
