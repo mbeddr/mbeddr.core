@@ -78,6 +78,15 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
@@ -89,11 +98,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -196,16 +208,30 @@
             </node>
           </node>
         </node>
-        <node concept="1X3_iC" id="4J_W74PblfE" role="lGtFl">
+        <node concept="1X3_iC" id="xRVdUhzW87" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="3cpWs8" id="4l47ydye$kS" role="8Wnug">
             <node concept="3cpWsn" id="4l47ydye$kT" role="3cpWs9">
               <property role="TrG5h" value="m" />
               <node concept="H_c77" id="4l47ydye$kU" role="1tU5fm" />
-              <node concept="BaHAS" id="4l47ydye$kV" role="33vP2m">
-                <property role="BaHAW" value="_200_robustness_spin" />
-                <property role="BaGAP" value="" />
+              <node concept="2OqwBi" id="xRVdUhzV_T" role="33vP2m">
+                <node concept="1Xw6AR" id="xRVdUhzVyv" role="2Oq$k0">
+                  <node concept="1dCxOl" id="xRVdUhzV$9" role="1XwpL7">
+                    <property role="1XweGQ" value="r:0208d9e1-21da-425a-be52-ba0982761ebd" />
+                    <node concept="1j_P7g" id="xRVdUhzV$a" role="1j$8Uc">
+                      <property role="1j_P7h" value="_200_robustness_spin" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2yCiCJ" id="xRVdUhzVE6" role="2OqNvi">
+                  <node concept="2OqwBi" id="xRVdUhzVPu" role="Vysub">
+                    <node concept="1jxXqW" id="xRVdUhzVEz" role="2Oq$k0" />
+                    <node concept="liA8E" id="xRVdUhzW7k" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

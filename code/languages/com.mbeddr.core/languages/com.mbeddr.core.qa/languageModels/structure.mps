@@ -95,7 +95,7 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <property role="20kJfa" value="scope" />
       <property role="IQ2ns" value="347451455539224234" />
-      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="jipk886TUF">

@@ -49,7 +49,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="tempModel" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
     </node>
     <node concept="PrWs8" id="33cGTVo66E9" role="PzmwI">
       <ref role="PrY4T" to="gfdq:33cGTVo609o" resolve="ILanguageSpecificConfig" />

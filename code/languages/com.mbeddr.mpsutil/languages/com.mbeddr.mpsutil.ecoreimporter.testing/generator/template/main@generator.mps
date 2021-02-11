@@ -11,6 +11,7 @@
     <import index="p76z" ref="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
@@ -103,11 +104,20 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -117,6 +127,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -239,21 +252,33 @@
                   <node concept="37vLTw" id="7ESlTHs29bB" role="37wK5m">
                     <ref role="3cqZAo" node="6m31kJuBYFy" resolve="ecoreFile" />
                   </node>
-                  <node concept="BaHAS" id="7ESlTHs1G05" role="37wK5m">
-                    <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testLanguageMatch.structure" />
-                    <property role="BaGAP" value="" />
-                    <node concept="29HgVG" id="7ESlTHs1G06" role="lGtFl">
-                      <node concept="3NFfHV" id="7ESlTHs1G07" role="3NFExx">
-                        <node concept="3clFbS" id="7ESlTHs1G08" role="2VODD2">
-                          <node concept="3clFbF" id="7ESlTHs1G09" role="3cqZAp">
-                            <node concept="2OqwBi" id="7ESlTHs1G0a" role="3clFbG">
-                              <node concept="30H73N" id="7ESlTHs1G0b" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="7ESlTHs1G0c" role="2OqNvi">
-                                <ref role="3Tt5mk" to="3yw8:rt4C5olSG_" resolve="referenceLanguage" />
+                  <node concept="2OqwBi" id="6M7zmThrotC" role="37wK5m">
+                    <node concept="1Xw6AR" id="6M7zmThro70" role="2Oq$k0">
+                      <node concept="1dCxOl" id="6M7zmThrodK" role="1XwpL7">
+                        <property role="1XweGQ" value="r:1764e886-bde7-4513-8b69-527af62b45d0" />
+                        <node concept="1j_P7g" id="6M7zmThrodL" role="1j$8Uc">
+                          <property role="1j_P7h" value="com.mbeddr.mpsutil.ecoreimporter.runtime.importerruntime" />
+                        </node>
+                      </node>
+                      <node concept="29HgVG" id="6M7zmThroO6" role="lGtFl">
+                        <node concept="3NFfHV" id="6M7zmThroO7" role="3NFExx">
+                          <node concept="3clFbS" id="6M7zmThroO8" role="2VODD2">
+                            <node concept="3clFbF" id="6M7zmThroOe" role="3cqZAp">
+                              <node concept="2OqwBi" id="6M7zmThroO9" role="3clFbG">
+                                <node concept="3TrEf2" id="6M7zmThroOc" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="3yw8:rt4C5olSG_" resolve="referenceLanguage" />
+                                </node>
+                                <node concept="30H73N" id="6M7zmThroOd" role="2Oq$k0" />
                               </node>
                             </node>
                           </node>
                         </node>
+                      </node>
+                    </node>
+                    <node concept="2yCiCJ" id="6M7zmThroDm" role="2OqNvi">
+                      <node concept="2YIFZM" id="6M7zmThroHL" role="Vysub">
+                        <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
+                        <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                       </node>
                     </node>
                   </node>
@@ -361,39 +386,63 @@
                   </node>
                 </node>
               </node>
-              <node concept="BaHAS" id="4MUcKNHouQm" role="37wK5m">
-                <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testLanguageMatch.structure" />
-                <property role="BaGAP" value="" />
-                <node concept="29HgVG" id="4MUcKNHouQn" role="lGtFl">
-                  <node concept="3NFfHV" id="4MUcKNHouQo" role="3NFExx">
-                    <node concept="3clFbS" id="4MUcKNHouQp" role="2VODD2">
-                      <node concept="3clFbF" id="4MUcKNHouQq" role="3cqZAp">
-                        <node concept="2OqwBi" id="4MUcKNHouQr" role="3clFbG">
-                          <node concept="30H73N" id="4MUcKNHouQs" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="4MUcKNHowxy" role="2OqNvi">
-                            <ref role="3Tt5mk" to="3yw8:4MUcKNHoqI0" resolve="referenceLanguage" />
+              <node concept="2OqwBi" id="6M7zmThrki5" role="37wK5m">
+                <node concept="1Xw6AR" id="6M7zmThrjLy" role="2Oq$k0">
+                  <node concept="1dCxOl" id="6M7zmThrjTg" role="1XwpL7">
+                    <property role="1XweGQ" value="r:1764e886-bde7-4513-8b69-527af62b45d0" />
+                    <node concept="1j_P7g" id="6M7zmThrjTh" role="1j$8Uc">
+                      <property role="1j_P7h" value="com.mbeddr.mpsutil.ecoreimporter.runtime.importerruntime" />
+                    </node>
+                  </node>
+                  <node concept="29HgVG" id="6M7zmThrl1t" role="lGtFl">
+                    <node concept="3NFfHV" id="6M7zmThrl1u" role="3NFExx">
+                      <node concept="3clFbS" id="6M7zmThrl1v" role="2VODD2">
+                        <node concept="3clFbF" id="6M7zmThrl1_" role="3cqZAp">
+                          <node concept="2OqwBi" id="6M7zmThrl1w" role="3clFbG">
+                            <node concept="3TrEf2" id="6M7zmThrl1z" role="2OqNvi">
+                              <ref role="3Tt5mk" to="3yw8:4MUcKNHoqI0" resolve="referenceLanguage" />
+                            </node>
+                            <node concept="30H73N" id="6M7zmThrl1$" role="2Oq$k0" />
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
+                <node concept="2yCiCJ" id="6M7zmThrkrt" role="2OqNvi">
+                  <node concept="2YIFZM" id="6M7zmThrkOK" role="Vysub">
+                    <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                  </node>
+                </node>
               </node>
-              <node concept="BaHAS" id="4MUcKNHovi9" role="37wK5m">
-                <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testLanguageMatch.structure" />
-                <property role="BaGAP" value="" />
-                <node concept="29HgVG" id="4MUcKNHovia" role="lGtFl">
-                  <node concept="3NFfHV" id="4MUcKNHovib" role="3NFExx">
-                    <node concept="3clFbS" id="4MUcKNHovic" role="2VODD2">
-                      <node concept="3clFbF" id="4MUcKNHovid" role="3cqZAp">
-                        <node concept="2OqwBi" id="4MUcKNHovie" role="3clFbG">
-                          <node concept="30H73N" id="4MUcKNHovif" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="4MUcKNHow4$" role="2OqNvi">
-                            <ref role="3Tt5mk" to="3yw8:4MUcKNHoqI5" resolve="referenceInstance" />
+              <node concept="2OqwBi" id="6M7zmThrkWn" role="37wK5m">
+                <node concept="1Xw6AR" id="6M7zmThrkWo" role="2Oq$k0">
+                  <node concept="1dCxOl" id="6M7zmThrkWp" role="1XwpL7">
+                    <property role="1XweGQ" value="r:1764e886-bde7-4513-8b69-527af62b45d0" />
+                    <node concept="1j_P7g" id="6M7zmThrkWq" role="1j$8Uc">
+                      <property role="1j_P7h" value="com.mbeddr.mpsutil.ecoreimporter.runtime.importerruntime" />
+                    </node>
+                  </node>
+                  <node concept="29HgVG" id="6M7zmThrloY" role="lGtFl">
+                    <node concept="3NFfHV" id="6M7zmThrloZ" role="3NFExx">
+                      <node concept="3clFbS" id="6M7zmThrlp0" role="2VODD2">
+                        <node concept="3clFbF" id="6M7zmThrlp6" role="3cqZAp">
+                          <node concept="2OqwBi" id="6M7zmThrlp1" role="3clFbG">
+                            <node concept="3TrEf2" id="6M7zmThrlp4" role="2OqNvi">
+                              <ref role="3Tt5mk" to="3yw8:4MUcKNHoqI5" resolve="referenceInstance" />
+                            </node>
+                            <node concept="30H73N" id="6M7zmThrlp5" role="2Oq$k0" />
                           </node>
                         </node>
                       </node>
                     </node>
+                  </node>
+                </node>
+                <node concept="2yCiCJ" id="6M7zmThrkWr" role="2OqNvi">
+                  <node concept="2YIFZM" id="6M7zmThrkWs" role="Vysub">
+                    <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                   </node>
                 </node>
               </node>

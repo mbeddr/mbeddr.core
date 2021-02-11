@@ -7,6 +7,7 @@
     <use id="d08b2078-ada5-40fa-a3c5-d721088dc626" name="com.mbeddr.mpsutil.ecore.testing" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
   </languages>
   <imports />
   <registry>
@@ -40,6 +41,15 @@
       </concept>
       <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="d08b2078-ada5-40fa-a3c5-d721088dc626" name="com.mbeddr.mpsutil.ecore.testing">
       <concept id="494571880817472209" name="com.mbeddr.mpsutil.ecore.testing.structure.AssertImportStatement" flags="ng" index="1uQa1g">
         <child id="494571880822833049" name="pathToEcoreFile" index="1uyAOo" />
@@ -47,9 +57,8 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -139,9 +148,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/all_in_one.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$EAJ" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.allInOne" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7R9" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7Rp" role="1XwpL7">
+              <property role="1XweGQ" value="r:9c9eecd0-a4b4-4af6-bdbb-d7ad6681eddb" />
+              <node concept="1j_P7g" id="xRVdUhx7Rq" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.allInOne" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -211,9 +224,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/enum_Interface.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$_PV" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.enumInterface" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7O4" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7Ok" role="1XwpL7">
+              <property role="1XweGQ" value="r:97f0f375-f988-4fd7-96f6-6064fa5b9b7f" />
+              <node concept="1j_P7g" id="xRVdUhx7Ol" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.enumInterface" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -259,9 +276,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/enum_no_unique_internal_value.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$A9E" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.enumNoUniqueInternalValue" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7Oz" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7ON" role="1XwpL7">
+              <property role="1XweGQ" value="r:d34f07ab-f738-4b41-a5fe-21dc79baecc8" />
+              <node concept="1j_P7g" id="xRVdUhx7OO" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.enumNoUniqueInternalValue" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -331,9 +352,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/enum_super_class.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$AaI" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.enumSuperClass" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7P2" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7Pi" role="1XwpL7">
+              <property role="1XweGQ" value="r:c1945d1b-81c3-4ff8-8578-2eb07c318c2d" />
+              <node concept="1j_P7g" id="xRVdUhx7Pj" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.enumSuperClass" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -382,9 +407,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/simple_class_enum_property.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$AbM" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassEnumProperty" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7Px" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7PL" role="1XwpL7">
+              <property role="1XweGQ" value="r:6f8eedfa-a422-40d0-a419-04fb00303d35" />
+              <node concept="1j_P7g" id="xRVdUhx7PM" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassEnumProperty" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -436,9 +465,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/simple_class_varying_property_withenum.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$ARq" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassVaryingPropertyWithEnum" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7Q0" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7Qg" role="1XwpL7">
+              <property role="1XweGQ" value="r:30d958b4-8ee9-4446-b41a-31c9e96713b0" />
+              <node concept="1j_P7g" id="xRVdUhx7Qh" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassVaryingPropertyWithEnum" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -472,9 +505,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/simple_enum.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$ASQ" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleEnum" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7Qv" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7QJ" role="1XwpL7">
+              <property role="1XweGQ" value="r:9d45cf3f-c9f8-4605-a72d-217aa128ef62" />
+              <node concept="1j_P7g" id="xRVdUhx7QK" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleEnum" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -517,9 +554,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/class_interface.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$Brw" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classInterface" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7zJ" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7zZ" role="1XwpL7">
+              <property role="1XweGQ" value="r:759239e1-aaab-447e-9998-345334066850" />
+              <node concept="1j_P7g" id="xRVdUhx7$0" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.classInterface" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -556,9 +597,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/class_multiple_interface.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$BrA" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classMultipleInterface" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7$e" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7$u" role="1XwpL7">
+              <property role="1XweGQ" value="r:8ce71c62-0c05-4cdd-938d-98d554cdc469" />
+              <node concept="1j_P7g" id="xRVdUhx7$v" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.classMultipleInterface" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -604,9 +649,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/class_multiple_interface_superclass.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$BrG" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classMultipleInterfaceSuperClass" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7$H" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7$X" role="1XwpL7">
+              <property role="1XweGQ" value="r:b43fd521-97fc-4505-81ed-dafccabe242f" />
+              <node concept="1j_P7g" id="xRVdUhx7$Y" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.classMultipleInterfaceSuperClass" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -646,9 +695,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/multiple_inheritance.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$BrM" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.multipleInheritance" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7_c" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7_s" role="1XwpL7">
+              <property role="1XweGQ" value="r:8297613c-09b3-4cd4-9f49-bf917d23c61a" />
+              <node concept="1j_P7g" id="xRVdUhx7_t" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.multipleInheritance" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -700,9 +753,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/multiple_inheritance_interface.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$BrS" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.multipleInterfaceInheritance" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7_F" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7_V" role="1XwpL7">
+              <property role="1XweGQ" value="r:4f5e1cd3-ac4c-4545-9cac-03bdb8e11577" />
+              <node concept="1j_P7g" id="xRVdUhx7_W" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.multipleInterfaceInheritance" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -745,9 +802,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/super_class.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$BrY" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.superClass.structure" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7Mz" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7MN" role="1XwpL7">
+              <property role="1XweGQ" value="r:3abec9c0-5690-481b-814f-57264551dde4" />
+              <node concept="1j_P7g" id="xRVdUhx7MO" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.superClass" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -793,9 +854,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/class_multiple_reference.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$DJQ" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classMultipleReference" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7xg" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7xw" role="1XwpL7">
+              <property role="1XweGQ" value="r:19401f7e-1c25-4f0d-94e2-cc76977ecaba" />
+              <node concept="1j_P7g" id="xRVdUhx7xx" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.classMultipleReference" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -838,9 +903,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/class_reference.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$DJW" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classReference" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7xJ" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7xZ" role="1XwpL7">
+              <property role="1XweGQ" value="r:6ae8cfc4-1f15-4893-851b-2e5e3d3e0e07" />
+              <node concept="1j_P7g" id="xRVdUhx7y0" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.classReference" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -898,9 +967,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/class_reference_child.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$DK2" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classReferenceChild" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7ye" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7yu" role="1XwpL7">
+              <property role="1XweGQ" value="r:a47c6f0f-0593-4288-bd9f-51f0ebcedf42" />
+              <node concept="1j_P7g" id="xRVdUhx7yv" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.classReferenceChild" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -940,9 +1013,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/empty_class.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$AMg" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.emptyClass" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx79T" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7v3" role="1XwpL7">
+              <property role="1XweGQ" value="r:cda59b28-30ad-4e78-992e-f2596e438a60" />
+              <node concept="1j_P7g" id="xRVdUhx7v4" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.emptyClass" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1018,9 +1095,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/class_nonmpstypes.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$AMm" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classNonMPSTypes" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7vi" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7vy" role="1XwpL7">
+              <property role="1XweGQ" value="r:eaa88d19-3d7d-4ad7-8501-ce8f218af3df" />
+              <node concept="1j_P7g" id="xRVdUhx7vz" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.classNonMPSTypes" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1054,9 +1135,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/simple_class_one_property.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$AMs" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassOneProperty" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7vL" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7w1" role="1XwpL7">
+              <property role="1XweGQ" value="r:0bd43909-5b2a-44c0-890b-81fb9dd62d8d" />
+              <node concept="1j_P7g" id="xRVdUhx7w2" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassOneProperty" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1102,9 +1187,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/simple_class_multiple_property.ecore" />
           </node>
-          <node concept="BaHAS" id="7FLq2$J$AMy" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassMultipleProperty" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx7wg" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx7ww" role="1XwpL7">
+              <property role="1XweGQ" value="r:ed127a32-e62a-48b7-bda3-7cc19ac5f16b" />
+              <node concept="1j_P7g" id="xRVdUhx7wx" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassMultipleProperty" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

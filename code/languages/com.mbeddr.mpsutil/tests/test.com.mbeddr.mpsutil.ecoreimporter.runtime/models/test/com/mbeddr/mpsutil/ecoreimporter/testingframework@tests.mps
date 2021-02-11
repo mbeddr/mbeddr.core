@@ -6,6 +6,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="d08b2078-ada5-40fa-a3c5-d721088dc626" name="com.mbeddr.mpsutil.ecore.testing" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
+    <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -102,6 +103,15 @@
       </concept>
       <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="d08b2078-ada5-40fa-a3c5-d721088dc626" name="com.mbeddr.mpsutil.ecore.testing">
       <concept id="494571880817472209" name="com.mbeddr.mpsutil.ecore.testing.structure.AssertImportStatement" flags="ng" index="1uQa1g">
         <child id="494571880822833049" name="pathToEcoreFile" index="1uyAOo" />
@@ -109,9 +119,8 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -132,9 +141,13 @@
             <property role="3kgbRO" value="false" />
             <property role="3N1Lgt" value="test_Ecore_Files/testingFrameworkReferenceLanguage.ecore" />
           </node>
-          <node concept="BaHAS" id="7ESlTHsclfi" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.testingFrameworkTestLanguageMatch" />
-            <property role="BaGAP" value="" />
+          <node concept="1Xw6AR" id="xRVdUhx77N" role="1uyDA$">
+            <node concept="1dCxOl" id="xRVdUhx783" role="1XwpL7">
+              <property role="1XweGQ" value="r:679ddd2a-675f-4aaf-8311-c8eecf410a8f" />
+              <node concept="1j_P7g" id="xRVdUhx784" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.testingFrameworkTestLanguageMatch" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -160,9 +173,13 @@
                 <property role="3kgbRO" value="false" />
                 <property role="3N1Lgt" value="test_Ecore_Files/testingFrameworkReferenceLanguage.ecore" />
               </node>
-              <node concept="BaHAS" id="7ESlTHsclfC" role="1uyDA$">
-                <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.testFailDifferentNumberOfChildren" />
-                <property role="BaGAP" value="" />
+              <node concept="1Xw6AR" id="xRVdUhx78i" role="1uyDA$">
+                <node concept="1dCxOl" id="xRVdUhx78v" role="1XwpL7">
+                  <property role="1XweGQ" value="r:d146aed2-5e94-444c-91f0-f6e336f68f7b" />
+                  <node concept="1j_P7g" id="xRVdUhx78w" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.testFailDifferentNumberOfChildren" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -246,9 +263,13 @@
                 <property role="3kgbRO" value="false" />
                 <property role="3N1Lgt" value="test_Ecore_Files/testingFrameworkReferenceLanguage.ecore" />
               </node>
-              <node concept="BaHAS" id="rt4C5olTyi" role="1uyDA$">
-                <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.testFailDifferentPropertyName" />
-                <property role="BaGAP" value="" />
+              <node concept="1Xw6AR" id="xRVdUhx78I" role="1uyDA$">
+                <node concept="1dCxOl" id="xRVdUhx78Y" role="1XwpL7">
+                  <property role="1XweGQ" value="r:3d0ae378-91a0-4a0f-bcbb-9817b26ecf2a" />
+                  <node concept="1j_P7g" id="xRVdUhx78Z" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.testFailDifferentPropertyName" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

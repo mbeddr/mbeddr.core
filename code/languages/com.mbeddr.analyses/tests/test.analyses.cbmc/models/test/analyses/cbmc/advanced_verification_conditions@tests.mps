@@ -87,6 +87,15 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
@@ -98,11 +107,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -135,9 +147,23 @@
           <node concept="3cpWsn" id="5EwdfGVgL4P" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVgL4N" role="1tU5fm" />
-            <node concept="BaHAS" id="5EwdfGVgL4Q" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhz8FI" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhz8$u" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhz8C3" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhz8C4" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhz8LQ" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhz94q" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhz8Oe" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhz9__" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -230,9 +256,23 @@
           <node concept="3cpWsn" id="5EwdfGVgLaD" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5EwdfGVgLaB" role="1tU5fm" />
-            <node concept="BaHAS" id="5EwdfGVgLaE" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhz9CC" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhz9CD" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhz9CE" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhz9CF" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhz9CG" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhz9CH" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhz9CI" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhz9CJ" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -307,9 +347,23 @@
           <node concept="3cpWsn" id="46evrC8ir2d" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="46evrC8ir2b" role="1tU5fm" />
-            <node concept="BaHAS" id="46evrC8ir2e" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzayH" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzayI" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzayJ" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhzayK" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzayL" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzayM" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzayN" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzayO" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -395,9 +449,23 @@
           <node concept="3cpWsn" id="46evrC8iqTT" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="46evrC8iqTR" role="1tU5fm" />
-            <node concept="BaHAS" id="46evrC8iqTU" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzaAp" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzaAq" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzaAr" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhzaAs" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzaAt" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzaAu" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzaAv" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzaAw" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -473,9 +541,23 @@
           <node concept="3cpWsn" id="5O4lpk$25" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk$23" role="1tU5fm" />
-            <node concept="BaHAS" id="5O4lpk$26" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzaah" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzaai" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzaaj" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhzaak" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzaal" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzaam" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzaan" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzaao" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -561,9 +643,23 @@
           <node concept="3cpWsn" id="5O4lpk$jY" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk$jW" role="1tU5fm" />
-            <node concept="BaHAS" id="5O4lpk$jZ" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzadY" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzadZ" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzae0" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhzae1" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzae2" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzae3" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzae4" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzae5" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -639,9 +735,23 @@
           <node concept="3cpWsn" id="5O4lpk$Kp" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk$Kn" role="1tU5fm" />
-            <node concept="BaHAS" id="5O4lpk$Kq" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhz9N$" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhz9N_" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhz9NA" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhz9NB" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhz9NC" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhz9ND" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhz9NE" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhz9NF" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -726,9 +836,23 @@
           <node concept="3cpWsn" id="5O4lpk_2h" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk_2f" role="1tU5fm" />
-            <node concept="BaHAS" id="5O4lpk_2i" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhz9Rh" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhz9Ri" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhz9Rj" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhz9Rk" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhz9Rl" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhz9Rm" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhz9Rn" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhz9Ro" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -803,9 +927,23 @@
           <node concept="3cpWsn" id="5O4lpk_oP" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk_oN" role="1tU5fm" />
-            <node concept="BaHAS" id="5O4lpk_oQ" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzajE" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzajF" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzajG" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhzajH" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzajI" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzajJ" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzajK" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzajL" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -890,9 +1028,23 @@
           <node concept="3cpWsn" id="5O4lpk_yl" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpk_yj" role="1tU5fm" />
-            <node concept="BaHAS" id="5O4lpk_ym" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzanm" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzann" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzano" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhzanp" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzanq" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzanr" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzans" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzant" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -967,9 +1119,23 @@
           <node concept="3cpWsn" id="5O4lpksuX" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpksuV" role="1tU5fm" />
-            <node concept="BaHAS" id="5O4lpksuY" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzaLw" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzaLx" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzaLy" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhzaLz" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzaL$" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzaL_" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzaLA" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzaLB" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1054,9 +1220,23 @@
           <node concept="3cpWsn" id="5O4lpktu_" role="3cpWs9">
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="5O4lpktuz" role="1tU5fm" />
-            <node concept="BaHAS" id="5O4lpktuA" role="33vP2m">
-              <property role="BaHAW" value="advanced_verification_condition" />
-              <property role="BaGAP" value="" />
+            <node concept="2OqwBi" id="xRVdUhzaPc" role="33vP2m">
+              <node concept="1Xw6AR" id="xRVdUhzaPd" role="2Oq$k0">
+                <node concept="1dCxOl" id="xRVdUhzaPe" role="1XwpL7">
+                  <property role="1XweGQ" value="r:fade7891-e1f2-4378-9920-97528ff8c25a" />
+                  <node concept="1j_P7g" id="xRVdUhzaPf" role="1j$8Uc">
+                    <property role="1j_P7h" value="advanced_verification_condition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="xRVdUhzaPg" role="2OqNvi">
+                <node concept="2OqwBi" id="xRVdUhzaPh" role="Vysub">
+                  <node concept="1jxXqW" id="xRVdUhzaPi" role="2Oq$k0" />
+                  <node concept="liA8E" id="xRVdUhzaPj" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

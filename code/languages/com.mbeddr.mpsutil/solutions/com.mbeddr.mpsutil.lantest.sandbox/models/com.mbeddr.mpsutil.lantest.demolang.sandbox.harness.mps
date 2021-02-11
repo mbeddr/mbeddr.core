@@ -56,10 +56,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
-      </concept>
       <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
         <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
@@ -85,17 +81,29 @@
     </node>
     <node concept="1$QBG2" id="7CYS5pZsXEB" role="1$QBHO" />
     <node concept="1emTa" id="7CYS5pZsYt5" role="1emjp" />
-    <node concept="BaHAS" id="7CYS5pZsWPk" role="1saM0L">
-      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.demolang.sandbox.res" />
-      <property role="BaGAP" value="" />
+    <node concept="1Xw6AR" id="6M7zmThr1u$" role="1saM0L">
+      <node concept="1dCxOl" id="6M7zmThr1uG" role="1XwpL7">
+        <property role="1XweGQ" value="r:2ae91a41-9e8b-4c07-bcef-aff998edf1cd" />
+        <node concept="1j_P7g" id="6M7zmThr1uH" role="1j$8Uc">
+          <property role="1j_P7h" value="com.mbeddr.mpsutil.lantest.demolang.sandbox.res" />
+        </node>
+      </node>
     </node>
-    <node concept="BaHAS" id="7CYS5pZsWPl" role="1llUH_">
-      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.demolang.sandbox.temp" />
-      <property role="BaGAP" value="" />
+    <node concept="1Xw6AR" id="6M7zmThr1uN" role="1llUH_">
+      <node concept="1dCxOl" id="6M7zmThr1uV" role="1XwpL7">
+        <property role="1XweGQ" value="r:19a0125d-be57-4439-b7aa-7d8753335411" />
+        <node concept="1j_P7g" id="6M7zmThr1uW" role="1j$8Uc">
+          <property role="1j_P7h" value="com.mbeddr.mpsutil.lantest.demolang.sandbox.temp" />
+        </node>
+      </node>
     </node>
-    <node concept="BaHAS" id="7CYS5pZsWPm" role="1zXyiG">
-      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.demolang.sandbox.found_bugs" />
-      <property role="BaGAP" value="" />
+    <node concept="1Xw6AR" id="6M7zmThr1v2" role="1zXyiG">
+      <node concept="1dCxOl" id="6M7zmThr1v7" role="1XwpL7">
+        <property role="1XweGQ" value="r:1ec02bfe-761a-48d2-942b-2902aafbd332" />
+        <node concept="1j_P7g" id="6M7zmThr1v8" role="1j$8Uc">
+          <property role="1j_P7h" value="com.mbeddr.mpsutil.lantest.demolang.sandbox.found_bugs" />
+        </node>
+      </node>
     </node>
     <node concept="fhwn3" id="7CYS5pZsYta" role="fhwmk">
       <ref role="fhwn$" node="6IRBYJf1hNt" resolve="Starting_family" />

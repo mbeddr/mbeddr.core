@@ -91,7 +91,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
@@ -365,31 +364,15 @@
       <ref role="13i0hy" to="uu96:3Ts5Ln3NdMD" resolve="getModelWhereCheckingIsPerformed" />
       <node concept="3Tm1VV" id="x7DaR3OJQA" role="1B3o_S" />
       <node concept="3clFbS" id="x7DaR3OJQD" role="3clF47">
-        <node concept="3clFbF" id="3YjQI$iVwns" role="3cqZAp">
-          <node concept="2OqwBi" id="3YjQI$iK27E" role="3clFbG">
-            <node concept="2OqwBi" id="3YjQI$iK8NT" role="2Oq$k0">
-              <node concept="2YIFZM" id="3YjQI$iK8NU" role="2Oq$k0">
-                <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance()" resolve="getInstance" />
-                <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
+        <node concept="3clFbF" id="6M7zmThr7cJ" role="3cqZAp">
+          <node concept="2YIFZM" id="6M7zmThr7lx" role="3clFbG">
+            <ref role="37wK5l" to="9n5q:24J8fn3VMYI" resolve="getModel" />
+            <ref role="1Pybhc" to="9n5q:24J8fn3Vudv" resolve="MPSAccessFacade" />
+            <node concept="2OqwBi" id="6M7zmThr7yK" role="37wK5m">
+              <node concept="13iPFW" id="6M7zmThr7mG" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6M7zmThr7Mk" role="2OqNvi">
+                <ref role="3Tt5mk" to="fowb:3Ts5Ln3NdYJ" resolve="tempModel" />
               </node>
-              <node concept="liA8E" id="3YjQI$iK8NV" role="2OqNvi">
-                <ref role="37wK5l" to="dush:~PersistenceFacade.createModelReference(java.lang.String)" resolve="createModelReference" />
-                <node concept="2OqwBi" id="3YjQI$iVzTG" role="37wK5m">
-                  <node concept="2OqwBi" id="3YjQI$iVzTH" role="2Oq$k0">
-                    <node concept="13iPFW" id="3YjQI$iVzTI" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="3YjQI$iVzTJ" role="2OqNvi">
-                      <ref role="3Tt5mk" to="fowb:3Ts5Ln3NdYJ" resolve="tempModel" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="3YjQI$iVzTK" role="2OqNvi">
-                    <ref role="37wK5l" to="tpeu:7K4mn_BeEzv" resolve="getFQName" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="3YjQI$iK27G" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
-              <node concept="10Nm6u" id="3YjQI$iK27H" role="37wK5m" />
             </node>
           </node>
         </node>

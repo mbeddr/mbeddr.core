@@ -6,6 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="85e94e86-9fcb-43a2-9083-64c40006219e" name="com.mbeddr.mpsutil.nodes_tracing.test" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
   </languages>
   <imports />
   <registry>
@@ -35,10 +36,18 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -63,16 +72,20 @@
       <property role="TrG5h" value="testPlainC" />
       <node concept="3cqZAl" id="7HmzdkqTFm5" role="3clF45" />
       <node concept="3clFbS" id="7HmzdkqTFm9" role="3clF47">
-        <node concept="1X3_iC" id="7Hmzdkr0BFa" role="lGtFl">
+        <node concept="1X3_iC" id="xRVdUh_vF$" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="1xIcmD" id="7HmzdkqWBhx" role="8Wnug">
             <node concept="Xl_RD" id="7HmzdkqWBh_" role="1xDQ1B">
               <property role="Xl_RC" value="plainC" />
             </node>
-            <node concept="BaHAS" id="7HmzdkqWsMN" role="1xIeA0">
-              <property role="BaHAW" value="test.analyses.base.testcode.nodes_tracing_new.core" />
-              <property role="BaGAP" value="" />
+            <node concept="1Xw6AR" id="xRVdUh_vne" role="1xIeA0">
+              <node concept="1dCxOl" id="xRVdUh_vFj" role="1XwpL7">
+                <property role="1XweGQ" value="r:4fd66586-eb16-40a3-aeb5-ffbc7b0517a3" />
+                <node concept="1j_P7g" id="xRVdUh_vFk" role="1j$8Uc">
+                  <property role="1j_P7h" value="test.analyses.base.testcode.nodes_tracing_new.core" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

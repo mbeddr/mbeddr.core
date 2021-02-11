@@ -42,17 +42,30 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
       </concept>
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+        <child id="1863527487546123100" name="moduleRef" index="1Xw7sW" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
         <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
       </concept>
       <concept id="4040588429969069898" name="jetbrains.mps.lang.smodel.structure.LanguageReferenceExpression" flags="nn" index="3rNLEe" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -85,9 +98,17 @@
     <property role="1O$AU$" value="false" />
     <ref role="30zxtE" to="tpee:fz12cDA" resolve="ClassConcept" />
     <node concept="Z6TxH" id="1MMv7Xp$GfP" role="Z6TxG">
-      <node concept="BaHAS" id="1MMv7XpB8X_" role="Z6dhx">
-        <property role="BaHAW" value="java.util" />
-        <property role="BaGAP" value="java_stub" />
+      <node concept="1Xw6AR" id="xRVdUhxtcF" role="Z6dhx">
+        <node concept="1dCxOl" id="xRVdUhxtcN" role="1XwpL7">
+          <property role="1XweGQ" value="java:java.util" />
+          <node concept="1j_P7g" id="xRVdUhxtcO" role="1j$8Uc">
+            <property role="1j_P7h" value="java.util@java_stub" />
+          </node>
+          <node concept="1dCxOk" id="xRVdUhxtcP" role="1Xw7sW">
+            <property role="1XweGW" value="6354ebe7-c22a-4a0f-ac54-50b52ab9b065" />
+            <property role="1XxBO9" value="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="3rNLEe" id="1MMv7Xp_aPu" role="Z6dgs">
         <property role="3rM5sR" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
