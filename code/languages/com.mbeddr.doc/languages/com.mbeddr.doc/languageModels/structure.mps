@@ -1135,6 +1135,9 @@
     <node concept="PrWs8" id="4um$GA1L66q" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3lxJBjiiNZg" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2U5fsQei4zf">
     <property role="3GE5qa" value="config" />
