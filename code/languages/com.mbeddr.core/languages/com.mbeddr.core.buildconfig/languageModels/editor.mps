@@ -3332,6 +3332,7 @@
           <property role="3F0ifm" value="targets:" />
         </node>
         <node concept="3F2HdR" id="1RDUcGWgFJ_" role="3EZMnx">
+          <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="51wr:1RDUcGWgjCT" resolve="targets" />
           <node concept="2iRfu4" id="1RDUcGWgFJB" role="2czzBx" />
           <node concept="3F0ifn" id="6VpLvM94QMA" role="2czzBI">
