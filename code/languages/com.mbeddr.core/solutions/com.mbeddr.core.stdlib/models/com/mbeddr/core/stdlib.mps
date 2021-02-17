@@ -12894,5 +12894,17 @@
       </node>
     </node>
   </node>
+  <node concept="rcWEw" id="3FGyI2Snwec">
+    <property role="TrG5h" value="stdbool" />
+    <node concept="rcWE1" id="3FGyI2Snwed" role="rcWEr">
+      <property role="rcWEL" value="&lt;stdbool.h&gt;" />
+    </node>
+  </node>
+  <node concept="rcWEw" id="3FGyI2SnwgR">
+    <property role="TrG5h" value="stddef" />
+    <node concept="rcWE1" id="3FGyI2SnwgS" role="rcWEr">
+      <property role="rcWEL" value="&lt;stddef.h&gt;" />
+    </node>
+  </node>
 </model>
 
