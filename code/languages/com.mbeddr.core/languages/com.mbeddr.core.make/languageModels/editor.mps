@@ -238,6 +238,10 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -521,18 +525,18 @@
         <node concept="pkWqt" id="1J_ULgBJVDF" role="pqm2j">
           <node concept="3clFbS" id="1J_ULgBJVDG" role="2VODD2">
             <node concept="3clFbF" id="1J_ULgBJVHD" role="3cqZAp">
-              <node concept="2OqwBi" id="1zVqtvgkKnS" role="3clFbG">
-                <node concept="2OqwBi" id="1zVqtvgkIuJ" role="2Oq$k0">
-                  <node concept="pncrf" id="1zVqtvgkIiv" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="1zVqtvgkJa5" role="2OqNvi">
-                    <node concept="1xMEDy" id="1zVqtvgkJa7" role="1xVPHs">
-                      <node concept="chp4Y" id="1zVqtvgkJTj" role="ri$Ld">
-                        <ref role="cht4Q" to="i2y7:4QnOXk_YBdy" resolve="UnaryConditionalDirective" />
-                      </node>
+              <node concept="3fqX7Q" id="rfshK8RIpA" role="3clFbG">
+                <node concept="2OqwBi" id="rfshK8RIpC" role="3fr31v">
+                  <node concept="2OqwBi" id="rfshK8RIpD" role="2Oq$k0">
+                    <node concept="pncrf" id="rfshK8RIpE" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="rfshK8RIpF" role="2OqNvi" />
+                  </node>
+                  <node concept="1mIQ4w" id="rfshK8RIpG" role="2OqNvi">
+                    <node concept="chp4Y" id="rfshK8RIpH" role="cj9EA">
+                      <ref role="cht4Q" to="i2y7:4QnOXk_YBdy" resolve="UnaryConditionalDirective" />
                     </node>
                   </node>
                 </node>
-                <node concept="3w_OXm" id="1zVqtvgkNq4" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -556,18 +560,18 @@
         <node concept="pkWqt" id="1zVqtvgkNL_" role="pqm2j">
           <node concept="3clFbS" id="1zVqtvgkNLA" role="2VODD2">
             <node concept="3clFbF" id="1zVqtvgkNSU" role="3cqZAp">
-              <node concept="2OqwBi" id="1zVqtvgkNSV" role="3clFbG">
-                <node concept="2OqwBi" id="1zVqtvgkNSW" role="2Oq$k0">
-                  <node concept="pncrf" id="1zVqtvgkNSX" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="1zVqtvgkNSY" role="2OqNvi">
-                    <node concept="1xMEDy" id="1zVqtvgkNSZ" role="1xVPHs">
-                      <node concept="chp4Y" id="1zVqtvgkNT0" role="ri$Ld">
-                        <ref role="cht4Q" to="i2y7:4QnOXk_YBdy" resolve="UnaryConditionalDirective" />
-                      </node>
+              <node concept="3fqX7Q" id="rfshK8STr6" role="3clFbG">
+                <node concept="2OqwBi" id="rfshK8STr7" role="3fr31v">
+                  <node concept="2OqwBi" id="rfshK8STr8" role="2Oq$k0">
+                    <node concept="pncrf" id="rfshK8STr9" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="rfshK8STra" role="2OqNvi" />
+                  </node>
+                  <node concept="1mIQ4w" id="rfshK8STrb" role="2OqNvi">
+                    <node concept="chp4Y" id="rfshK8STrc" role="cj9EA">
+                      <ref role="cht4Q" to="i2y7:4QnOXk_YBdy" resolve="UnaryConditionalDirective" />
                     </node>
                   </node>
                 </node>
-                <node concept="3w_OXm" id="1zVqtvgkNT1" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -606,18 +610,18 @@
         <node concept="pkWqt" id="1zVqtvgkOg0" role="pqm2j">
           <node concept="3clFbS" id="1zVqtvgkOg1" role="2VODD2">
             <node concept="3clFbF" id="1zVqtvgkOnl" role="3cqZAp">
-              <node concept="2OqwBi" id="1zVqtvgkOnm" role="3clFbG">
-                <node concept="2OqwBi" id="1zVqtvgkOnn" role="2Oq$k0">
-                  <node concept="pncrf" id="1zVqtvgkOno" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="1zVqtvgkOnp" role="2OqNvi">
-                    <node concept="1xMEDy" id="1zVqtvgkOnq" role="1xVPHs">
-                      <node concept="chp4Y" id="1zVqtvgkOnr" role="ri$Ld">
-                        <ref role="cht4Q" to="i2y7:4QnOXk_YBdy" resolve="UnaryConditionalDirective" />
-                      </node>
+              <node concept="3fqX7Q" id="rfshK8TG34" role="3clFbG">
+                <node concept="2OqwBi" id="rfshK8TG35" role="3fr31v">
+                  <node concept="2OqwBi" id="rfshK8TG36" role="2Oq$k0">
+                    <node concept="pncrf" id="rfshK8TG37" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="rfshK8TG38" role="2OqNvi" />
+                  </node>
+                  <node concept="1mIQ4w" id="rfshK8TG39" role="2OqNvi">
+                    <node concept="chp4Y" id="rfshK8TG3a" role="cj9EA">
+                      <ref role="cht4Q" to="i2y7:4QnOXk_YBdy" resolve="UnaryConditionalDirective" />
                     </node>
                   </node>
                 </node>
-                <node concept="3w_OXm" id="1zVqtvgkOns" role="2OqNvi" />
               </node>
             </node>
           </node>

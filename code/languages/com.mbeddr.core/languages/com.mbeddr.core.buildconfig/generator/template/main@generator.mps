@@ -9061,6 +9061,40 @@
               <property role="TrG5h" value="ConfigureCrossCompilationToolchain" />
               <node concept="3r3xyQ" id="4JZ_DSvMAKR" role="1FyTsa">
                 <node concept="1CrrGX" id="4JZ_DSvMAKS" role="1CrrWa">
+                  <node concept="3r3xyQ" id="rfshK8Qsb_" role="1Crq4S">
+                    <node concept="3O_FaX" id="rfshK8QsbA" role="1CrrWa">
+                      <node concept="3G69iQ" id="rfshK8UsOm" role="3G69ia">
+                        <property role="3G69iL" value="$$(error Compiler for $(1) not found - make sure that any such is installed and an environment variable named 'CC' exists and refers to it)" />
+                      </node>
+                    </node>
+                    <node concept="3G69iG" id="rfshK91DR3" role="Hmqgc">
+                      <ref role="3G69iJ" node="4JZ_DSvMAKY" resolve="CC" />
+                    </node>
+                    <node concept="3G69iQ" id="rfshK90$Ao" role="Hmqgm">
+                      <property role="3G69iL" value="cc" />
+                    </node>
+                  </node>
+                  <node concept="3r3xyQ" id="rfshK8WSm4" role="1Crq4S">
+                    <node concept="3O_FaX" id="rfshK8WSm5" role="1CrrWa">
+                      <node concept="3G69iQ" id="rfshK8WSm6" role="3G69ia">
+                        <property role="3G69iL" value="$$(error Linker for $(1) not found - make sure that any such is installed and an environment variable named 'LD' exists and refers to it)" />
+                      </node>
+                    </node>
+                    <node concept="3G69iG" id="rfshK91F8$" role="Hmqgc">
+                      <ref role="3G69iJ" node="4JZ_DSvMAL1" resolve="LD" />
+                    </node>
+                    <node concept="3G69iQ" id="rfshK90_MI" role="Hmqgm">
+                      <property role="3G69iL" value="ld" />
+                    </node>
+                  </node>
+                  <node concept="3G52F3" id="rfshK8QjdM" role="1Crq4S">
+                    <property role="TrG5h" value="TARGET_TOOLCHAIN_AVAILABLE" />
+                    <node concept="94E81" id="rfshK8QjdN" role="17Kx8K">
+                      <node concept="3G69iQ" id="rfshK8QjdO" role="17N5uS">
+                        <property role="3G69iL" value="true" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3G69iQ" id="4JZ_DSvMAKT" role="38Gclg">
                     <property role="3G69iL" value="$(2)" />
                   </node>
