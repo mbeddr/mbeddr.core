@@ -1097,7 +1097,7 @@
         </node>
         <node concept="94E81" id="20BlhoiqgOq" role="17Kx8K">
           <node concept="3G69iQ" id="20BlhoiqgOr" role="17N5uS">
-            <property role="3G69iL" value="gcc" />
+            <property role="3G69iL" value="$(CC)" />
             <node concept="17Uvod" id="20BlhoiqgOs" role="lGtFl">
               <property role="2qtEX9" value="text" />
               <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211590947/3373914745211590948" />
@@ -9075,13 +9075,17 @@
                     </node>
                   </node>
                   <node concept="3r3xyQ" id="rfshK8WSm4" role="1Crq4S">
-                    <node concept="3O_FaX" id="rfshK8WSm5" role="1CrrWa">
-                      <node concept="3G69iQ" id="rfshK8WSm6" role="3G69ia">
-                        <property role="3G69iL" value="$$(error Linker for $(1) not found - make sure that any such is installed and an environment variable named 'LD' exists and refers to it)" />
+                    <node concept="3G52F3" id="5LXTpX4GdbE" role="1CrrWa">
+                      <property role="1F2ocN" value="true" />
+                      <property role="TrG5h" value="LD" />
+                      <node concept="94E81" id="5LXTpX4GhWX" role="17Kx8K">
+                        <node concept="3G69iG" id="5LXTpX4Gm8$" role="17N5uS">
+                          <ref role="3G69iJ" node="4JZ_DSvMAKY" resolve="CC" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3G69iG" id="rfshK91F8$" role="Hmqgc">
-                      <ref role="3G69iJ" node="4JZ_DSvMAL1" resolve="LD" />
+                      <ref role="3G69iJ" node="5LXTpX4GdbE" resolve="LD" />
                     </node>
                     <node concept="3G69iQ" id="rfshK90_MI" role="Hmqgm">
                       <property role="3G69iL" value="ld" />
@@ -9121,8 +9125,8 @@
                     <property role="1F2ocN" value="true" />
                     <property role="TrG5h" value="LD" />
                     <node concept="94E81" id="4JZ_DSvMAL2" role="17Kx8K">
-                      <node concept="3G69iQ" id="4JZ_DSvMAL3" role="17N5uS">
-                        <property role="3G69iL" value="$(3)/bin/$(4)gcc" />
+                      <node concept="3G69iG" id="3KgA2I1lr0w" role="17N5uS">
+                        <ref role="3G69iJ" node="4JZ_DSvMAKY" resolve="CC" />
                       </node>
                     </node>
                   </node>
