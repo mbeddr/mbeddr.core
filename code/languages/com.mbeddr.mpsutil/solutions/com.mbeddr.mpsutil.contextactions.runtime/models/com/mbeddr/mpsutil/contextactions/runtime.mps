@@ -71,6 +71,7 @@
     <import index="zwau" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.hintsSettings(MPS.Editor/)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="q4oi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellActions(MPS.Editor/)" />
+    <import index="pdwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.aspects.constraints.rules.kinds(MPS.Core/)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
   <registry>
@@ -9048,14 +9049,24 @@
               <node concept="1bVj0M" id="4mMeETlvCy5" role="23t8la">
                 <node concept="3clFbS" id="4mMeETlvCy6" role="1bW5cS">
                   <node concept="3clFbF" id="4mMeETlvESN" role="3cqZAp">
-                    <node concept="2YIFZM" id="4mMeETlvHN3" role="3clFbG">
-                      <ref role="37wK5l" to="ykok:~ModelConstraints.canBeRoot(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SModel)" resolve="canBeRoot" />
-                      <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                      <node concept="37vLTw" id="4mMeETlvKrw" role="37wK5m">
-                        <ref role="3cqZAo" node="4mMeETlvCy7" resolve="it" />
+                    <node concept="2OqwBi" id="6g_o1CJFL6z" role="3clFbG">
+                      <node concept="2YIFZM" id="6g_o1CJFGLG" role="2Oq$k0">
+                        <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeRoot(jetbrains.mps.core.aspects.constraints.rules.kinds.CanBeRootContext)" resolve="checkCanBeRoot" />
+                        <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                        <node concept="2ShNRf" id="6g_o1CJFIqi" role="37wK5m">
+                          <node concept="1pGfFk" id="6g_o1CJFIdK" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~CanBeRootContext.&lt;init&gt;(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SModel)" resolve="CanBeRootContext" />
+                            <node concept="37vLTw" id="6g_o1CJFGLH" role="37wK5m">
+                              <ref role="3cqZAo" node="4mMeETlvCy7" resolve="it" />
+                            </node>
+                            <node concept="37vLTw" id="6g_o1CJFGLI" role="37wK5m">
+                              <ref role="3cqZAo" node="Y7dDcER7i1" resolve="model" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
-                      <node concept="37vLTw" id="4mMeETlvHN5" role="37wK5m">
-                        <ref role="3cqZAo" node="Y7dDcER7i1" resolve="model" />
+                      <node concept="liA8E" id="6g_o1CJFMD$" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
                       </node>
                     </node>
                   </node>

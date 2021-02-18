@@ -116,6 +116,7 @@
     <import index="xr52" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.ui.tree.smodel(MPS.Platform/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="461n" ref="r:3b46a963-6deb-4d82-bdc0-36b5d9297fcf(de.slisson.mps.conditionalEditor.hints.editor)" />
+    <import index="pdwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.aspects.constraints.rules.kinds(MPS.Core/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -8175,14 +8176,24 @@
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="2YIFZM" id="5mPyAfd2gpv" role="3uHU7B">
-                                      <ref role="37wK5l" to="ykok:~ModelConstraints.canBeRoot(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SModel)" resolve="canBeRoot" />
-                                      <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                                      <node concept="37vLTw" id="5mPyAfd2h3O" role="37wK5m">
-                                        <ref role="3cqZAo" node="5mPyAfd2eyQ" resolve="it" />
+                                    <node concept="2OqwBi" id="6g_o1CJDNGv" role="3uHU7B">
+                                      <node concept="2YIFZM" id="6g_o1CJDKCL" role="2Oq$k0">
+                                        <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeRoot(jetbrains.mps.core.aspects.constraints.rules.kinds.CanBeRootContext)" resolve="checkCanBeRoot" />
+                                        <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                                        <node concept="2ShNRf" id="6g_o1CJDKCM" role="37wK5m">
+                                          <node concept="1pGfFk" id="6g_o1CJDKCN" role="2ShVmc">
+                                            <ref role="37wK5l" to="pdwk:~CanBeRootContext.&lt;init&gt;(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SModel)" resolve="CanBeRootContext" />
+                                            <node concept="37vLTw" id="6g_o1CJDKCO" role="37wK5m">
+                                              <ref role="3cqZAo" node="5mPyAfd2eyQ" resolve="it" />
+                                            </node>
+                                            <node concept="37vLTw" id="6g_o1CJDKCP" role="37wK5m">
+                                              <ref role="3cqZAo" node="1PMOMKdiLEH" resolve="model" />
+                                            </node>
+                                          </node>
+                                        </node>
                                       </node>
-                                      <node concept="37vLTw" id="5mPyAfd2ilv" role="37wK5m">
-                                        <ref role="3cqZAo" node="1PMOMKdiLEH" resolve="model" />
+                                      <node concept="liA8E" id="6g_o1CJDQ$8" role="2OqNvi">
+                                        <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
                                       </node>
                                     </node>
                                   </node>
@@ -8738,14 +8749,24 @@
                                   </node>
                                 </node>
                                 <node concept="1Wc70l" id="3O27jEA5HmI" role="3uHU7B">
-                                  <node concept="2YIFZM" id="4augEjZSVvN" role="3uHU7B">
-                                    <ref role="37wK5l" to="ykok:~ModelConstraints.canBeRoot(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SModel)" resolve="canBeRoot" />
-                                    <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                                    <node concept="37vLTw" id="4augEjZSVvO" role="37wK5m">
-                                      <ref role="3cqZAo" node="4augEjZSVvQ" resolve="it" />
+                                  <node concept="2OqwBi" id="6g_o1CJDXKQ" role="3uHU7B">
+                                    <node concept="2YIFZM" id="6g_o1CJDWBz" role="2Oq$k0">
+                                      <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeRoot(jetbrains.mps.core.aspects.constraints.rules.kinds.CanBeRootContext)" resolve="checkCanBeRoot" />
+                                      <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                                      <node concept="2ShNRf" id="6g_o1CJDWB$" role="37wK5m">
+                                        <node concept="1pGfFk" id="6g_o1CJDWB_" role="2ShVmc">
+                                          <ref role="37wK5l" to="pdwk:~CanBeRootContext.&lt;init&gt;(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SModel)" resolve="CanBeRootContext" />
+                                          <node concept="37vLTw" id="6g_o1CJDWBA" role="37wK5m">
+                                            <ref role="3cqZAo" node="4augEjZSVvQ" resolve="it" />
+                                          </node>
+                                          <node concept="37vLTw" id="6g_o1CJDWBB" role="37wK5m">
+                                            <ref role="3cqZAo" node="1PMOMKdiLEH" resolve="model" />
+                                          </node>
+                                        </node>
+                                      </node>
                                     </node>
-                                    <node concept="37vLTw" id="4augEjZSVvP" role="37wK5m">
-                                      <ref role="3cqZAo" node="1PMOMKdiLEH" resolve="model" />
+                                    <node concept="liA8E" id="6g_o1CJDZNc" role="2OqNvi">
+                                      <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
                                     </node>
                                   </node>
                                   <node concept="3fqX7Q" id="3O27jEA5LTf" role="3uHU7w">
@@ -23472,20 +23493,43 @@
           <node concept="3cpWsn" id="63CFXsPEle" role="3cpWs9">
             <property role="TrG5h" value="canBeAncestor" />
             <node concept="10P_77" id="63CFXsPEl7" role="1tU5fm" />
-            <node concept="2YIFZM" id="63CFXsROIC" role="33vP2m">
-              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeAncestor" />
-              <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-              <node concept="2OqwBi" id="2ZC4d8r2JKS" role="37wK5m">
-                <node concept="2WthIp" id="2ZC4d8r2JoI" role="2Oq$k0" />
-                <node concept="3gHZIF" id="2ZC4d8r2KzS" role="2OqNvi">
-                  <ref role="2WH_rO" node="7HcPDtliWhO" resolve="contextNode" />
+            <node concept="2OqwBi" id="6g_o1CJDrc_" role="33vP2m">
+              <node concept="2YIFZM" id="6g_o1CJDrNG" role="2Oq$k0">
+                <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeAncestor(jetbrains.mps.core.aspects.constraints.rules.kinds.CanBeAncestorContext)" resolve="checkCanBeAncestor" />
+                <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <node concept="2OqwBi" id="6g_o1CJDrNH" role="37wK5m">
+                  <node concept="2OqwBi" id="6g_o1CJDrNI" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6g_o1CJDrNJ" role="2Oq$k0">
+                      <node concept="2ShNRf" id="6g_o1CJDrNK" role="2Oq$k0">
+                        <node concept="1pGfFk" id="6g_o1CJDrNL" role="2ShVmc">
+                          <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.&lt;init&gt;()" resolve="CanBeAncestorContext.Builder" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6g_o1CJDrNM" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.ancestorNode(org.jetbrains.mps.openapi.model.SNode)" resolve="ancestorNode" />
+                        <node concept="2OqwBi" id="6g_o1CJDrNN" role="37wK5m">
+                          <node concept="2WthIp" id="6g_o1CJDrNO" role="2Oq$k0" />
+                          <node concept="3gHZIF" id="6g_o1CJDrNP" role="2OqNvi">
+                            <ref role="2WH_rO" node="7HcPDtliWhO" resolve="contextNode" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6g_o1CJDrNQ" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                      <node concept="35c_gC" id="6g_o1CJDrNR" role="37wK5m">
+                        <ref role="35c_gD" to="vs0r:3m8H$lmFM5W" resolve="ElementDocumentation" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6g_o1CJDrNS" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.build()" resolve="build" />
+                  </node>
                 </node>
               </node>
-              <node concept="35c_gC" id="63CFXsROIE" role="37wK5m">
-                <ref role="35c_gD" to="vs0r:3m8H$lmFM5W" resolve="ElementDocumentation" />
+              <node concept="liA8E" id="6g_o1CJDsOX" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
               </node>
-              <node concept="10Nm6u" id="63CFXsROIF" role="37wK5m" />
-              <node concept="10Nm6u" id="63CFXsROIG" role="37wK5m" />
             </node>
           </node>
         </node>
