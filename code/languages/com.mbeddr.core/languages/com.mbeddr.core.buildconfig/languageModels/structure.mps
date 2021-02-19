@@ -704,7 +704,12 @@
     </node>
     <node concept="1TJgyi" id="4JZ_DSuZQfB" role="1TKVEl">
       <property role="IQ2nx" value="5476261277774865383" />
-      <property role="TrG5h" value="binPrefix" />
+      <property role="TrG5h" value="compiler" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3KgA2I2Tg7u" role="1TKVEl">
+      <property role="IQ2nx" value="4328126554550108638" />
+      <property role="TrG5h" value="linker" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
