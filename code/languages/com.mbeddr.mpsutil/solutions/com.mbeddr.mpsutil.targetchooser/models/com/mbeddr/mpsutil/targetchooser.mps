@@ -4204,22 +4204,12 @@
             </node>
           </node>
           <node concept="3clFbJ" id="2Nt6prob0Bt" role="9aQIa">
-            <node concept="22lmx$" id="2Nt6prob0Bu" role="3clFbw">
-              <node concept="2ZW3vV" id="2Nt6prob0Bv" role="3uHU7B">
-                <node concept="37vLTw" id="2Nt6prob0Bw" role="2ZW6bz">
-                  <ref role="3cqZAo" node="2Nt6prob0Bd" resolve="module" />
-                </node>
-                <node concept="3uibUv" id="2Nt6prob0Bx" role="2ZW6by">
-                  <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
-                </node>
+            <node concept="2ZW3vV" id="2Nt6prob0Bv" role="3clFbw">
+              <node concept="37vLTw" id="2Nt6prob0Bw" role="2ZW6bz">
+                <ref role="3cqZAo" node="2Nt6prob0Bd" resolve="module" />
               </node>
-              <node concept="2ZW3vV" id="2Nt6prob0By" role="3uHU7w">
-                <node concept="37vLTw" id="2Nt6prob0Bz" role="2ZW6bz">
-                  <ref role="3cqZAo" node="2Nt6prob0Bd" resolve="module" />
-                </node>
-                <node concept="3uibUv" id="2Nt6prob0B$" role="2ZW6by">
-                  <ref role="3uigEE" to="rqo8:~ProjectStructureModule" resolve="ProjectStructureModule" />
-                </node>
+              <node concept="3uibUv" id="2Nt6prob0Bx" role="2ZW6by">
+                <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
               </node>
             </node>
             <node concept="3clFbJ" id="2Nt6prob0B_" role="9aQIa">
@@ -7867,22 +7857,12 @@
               </node>
               <node concept="3clFbS" id="2Nt6prodoHN" role="2LFqv$">
                 <node concept="3clFbJ" id="2Nt6prodoHO" role="3cqZAp">
-                  <node concept="22lmx$" id="2Nt6prodoHP" role="3clFbw">
-                    <node concept="2ZW3vV" id="2Nt6prodoHS" role="3uHU7B">
-                      <node concept="37vLTw" id="2Nt6prodoHQ" role="2ZW6bz">
-                        <ref role="3cqZAo" node="2Nt6prodoI4" resolve="s" />
-                      </node>
-                      <node concept="3uibUv" id="2Nt6prodoHR" role="2ZW6by">
-                        <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
-                      </node>
+                  <node concept="2ZW3vV" id="2Nt6prodoHS" role="3clFbw">
+                    <node concept="37vLTw" id="2Nt6prodoHQ" role="2ZW6bz">
+                      <ref role="3cqZAo" node="2Nt6prodoI4" resolve="s" />
                     </node>
-                    <node concept="2ZW3vV" id="2Nt6prodoHV" role="3uHU7w">
-                      <node concept="37vLTw" id="2Nt6prodoHT" role="2ZW6bz">
-                        <ref role="3cqZAo" node="2Nt6prodoI4" resolve="s" />
-                      </node>
-                      <node concept="3uibUv" id="2Nt6prodoHU" role="2ZW6by">
-                        <ref role="3uigEE" to="rqo8:~ProjectStructureModule" resolve="ProjectStructureModule" />
-                      </node>
+                    <node concept="3uibUv" id="2Nt6prodoHR" role="2ZW6by">
+                      <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="2Nt6prodoHX" role="3clFbx">
