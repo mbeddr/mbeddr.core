@@ -1410,6 +1410,9 @@
                   <node concept="3uibUv" id="5GaLjsuTQP9" role="nSUat">
                     <ref role="3uigEE" to="wyt6:~IncompatibleClassChangeError" resolve="IncompatibleClassChangeError" />
                   </node>
+                  <node concept="3uibUv" id="67tDvEFT44T" role="nSUat">
+                    <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbS" id="5GaLjsuTQP4" role="1zc67A">
