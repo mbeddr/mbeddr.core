@@ -18700,6 +18700,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="fLfbJbCWa4" role="3bR37C">
+          <node concept="3bR9La" id="fLfbJbCWa5" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4kGsAe0vxvm" role="3989C9">
