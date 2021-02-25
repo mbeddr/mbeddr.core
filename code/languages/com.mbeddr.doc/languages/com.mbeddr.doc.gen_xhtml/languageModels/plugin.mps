@@ -796,15 +796,8 @@
                   <node concept="Xl_RD" id="10MSw5ZOEYA" role="2k5Stb">
                     <property role="Xl_RC" value="Invalid node reference" />
                   </node>
-                  <node concept="2OqwBi" id="2nF6pGLyFJD" role="2k6f33">
-                    <node concept="37vLTw" id="2nF6pGLyFJE" role="2Oq$k0">
-                      <ref role="3cqZAo" node="10MSw5ZOuPI" resolve="genContext" />
-                    </node>
-                    <node concept="12$id9" id="2nF6pGLyFJF" role="2OqNvi">
-                      <node concept="37vLTw" id="2nF6pGLyFMe" role="12$y8L">
-                        <ref role="3cqZAo" node="10MSw5ZOuOX" resolve="word" />
-                      </node>
-                    </node>
+                  <node concept="37vLTw" id="7WLbt3cwNmm" role="2k6f33">
+                    <ref role="3cqZAo" node="10MSw5ZOuOX" resolve="word" />
                   </node>
                 </node>
               </node>
