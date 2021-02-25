@@ -20,7 +20,9 @@
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" />
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
+    <import index="pdwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.aspects.constraints.rules.kinds(MPS.Core/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -119,6 +121,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -1377,38 +1380,96 @@
                   </node>
                 </node>
               </node>
-              <node concept="2YIFZM" id="4FREEt6vga9" role="3uHU7w">
-                <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeChild" />
-                <node concept="2OqwBi" id="4FREEt6vgaa" role="37wK5m">
-                  <node concept="2Sf5sV" id="4OX$8K1AJaR" role="2Oq$k0" />
-                  <node concept="1mfA1w" id="4FREEt6vgac" role="2OqNvi" />
+              <node concept="2OqwBi" id="6g_o1CJGmc7" role="3uHU7w">
+                <node concept="2YIFZM" id="6g_o1CJGjfS" role="2Oq$k0">
+                  <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeChild(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeChild" />
+                  <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                  <node concept="2OqwBi" id="6g_o1CJGlm4" role="37wK5m">
+                    <node concept="2OqwBi" id="6g_o1CJGkPj" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6g_o1CJGkx7" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6g_o1CJGk3k" role="2Oq$k0">
+                          <node concept="2ShNRf" id="6g_o1CJGju4" role="2Oq$k0">
+                            <node concept="1pGfFk" id="6g_o1CJGjON" role="2ShVmc">
+                              <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="6g_o1CJGkeq" role="2OqNvi">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                            <node concept="2OqwBi" id="6g_o1CJGjfT" role="37wK5m">
+                              <node concept="2Sf5sV" id="6g_o1CJGjfU" role="2Oq$k0" />
+                              <node concept="1mfA1w" id="6g_o1CJGjfV" role="2OqNvi" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="6g_o1CJGkBI" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                          <node concept="35c_gC" id="6g_o1CJGjfW" role="37wK5m">
+                            <ref role="35c_gD" to="2c95:3DAECxFssLS" resolve="NameAnnotation" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6g_o1CJGl8_" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                        <node concept="2OqwBi" id="6g_o1CJGjfX" role="37wK5m">
+                          <node concept="2Sf5sV" id="6g_o1CJGjfY" role="2Oq$k0" />
+                          <node concept="2NL2c5" id="6g_o1CJGjfZ" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6g_o1CJGl$T" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="35c_gC" id="4OX$8K1AJrf" role="37wK5m">
-                  <ref role="35c_gD" to="2c95:3DAECxFssLS" resolve="NameAnnotation" />
+                <node concept="liA8E" id="6g_o1CJGnxi" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
                 </node>
-                <node concept="2OqwBi" id="4FREEt6vgae" role="37wK5m">
-                  <node concept="2Sf5sV" id="4OX$8K1AKiz" role="2Oq$k0" />
-                  <node concept="2NL2c5" id="4FREEt6vgag" role="2OqNvi" />
-                </node>
-                <node concept="10Nm6u" id="4FREEt6vgah" role="37wK5m" />
               </node>
             </node>
-            <node concept="2YIFZM" id="4FREEt6vgai" role="3uHU7w">
-              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeAncestor" />
-              <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-              <node concept="2OqwBi" id="4FREEt6vgaj" role="37wK5m">
-                <node concept="2Sf5sV" id="4OX$8K1AKuL" role="2Oq$k0" />
-                <node concept="1mfA1w" id="4FREEt6vgal" role="2OqNvi" />
+            <node concept="2OqwBi" id="6g_o1CJGs9y" role="3uHU7w">
+              <node concept="2YIFZM" id="6g_o1CJGnMr" role="2Oq$k0">
+                <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeAncestor(jetbrains.mps.core.aspects.constraints.rules.kinds.CanBeAncestorContext)" resolve="checkCanBeAncestor" />
+                <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <node concept="2OqwBi" id="6g_o1CJGr7J" role="37wK5m">
+                  <node concept="2OqwBi" id="6g_o1CJGqcy" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6g_o1CJGpqe" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6g_o1CJGoW5" role="2Oq$k0">
+                        <node concept="2ShNRf" id="6g_o1CJGohd" role="2Oq$k0">
+                          <node concept="1pGfFk" id="6g_o1CJGowV" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.&lt;init&gt;()" resolve="CanBeAncestorContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="6g_o1CJGpaW" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.ancestorNode(org.jetbrains.mps.openapi.model.SNode)" resolve="ancestorNode" />
+                          <node concept="2OqwBi" id="6g_o1CJGnMs" role="37wK5m">
+                            <node concept="2Sf5sV" id="6g_o1CJGnMt" role="2Oq$k0" />
+                            <node concept="1mfA1w" id="6g_o1CJGnMu" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6g_o1CJGpCm" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="6g_o1CJGnMv" role="37wK5m">
+                          <ref role="35c_gD" to="2c95:3DAECxFssLS" resolve="NameAnnotation" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6g_o1CJGqqk" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="2OqwBi" id="6g_o1CJGnMw" role="37wK5m">
+                        <node concept="2Sf5sV" id="6g_o1CJGnMx" role="2Oq$k0" />
+                        <node concept="2NL2c5" id="6g_o1CJGnMy" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6g_o1CJGrun" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
               </node>
-              <node concept="35c_gC" id="4OX$8K1AKOO" role="37wK5m">
-                <ref role="35c_gD" to="2c95:3DAECxFssLS" resolve="NameAnnotation" />
+              <node concept="liA8E" id="6g_o1CJGu4H" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
               </node>
-              <node concept="2OqwBi" id="4FREEt6vgan" role="37wK5m">
-                <node concept="2Sf5sV" id="4OX$8K1AL1m" role="2Oq$k0" />
-                <node concept="2NL2c5" id="4FREEt6vgap" role="2OqNvi" />
-              </node>
-              <node concept="10Nm6u" id="4FREEt6vgaq" role="37wK5m" />
             </node>
           </node>
         </node>
