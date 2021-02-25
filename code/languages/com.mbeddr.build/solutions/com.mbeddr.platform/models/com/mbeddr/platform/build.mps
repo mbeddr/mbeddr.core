@@ -629,15 +629,15 @@
       <node concept="m$_yC" id="6rBfBe1Wuqz" role="m$_yJ">
         <ref role="m$_y1" node="5fGcQI94fMR" resolve="com.mbeddr.mpsutil.common" />
       </node>
-      <node concept="m$_yC" id="7odnKbxM7aM" role="m$_yJ">
-        <ref role="m$_y1" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
-      </node>
       <node concept="m$f5U" id="6rBfBe1WpV0" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnN1e0" resolve="group.interpreter" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtplR" role="2iVFfd">
         <property role="2iUeEt" value="mbedrr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
+      </node>
+      <node concept="m$_yC" id="7odnKbxM7aM" role="m$_yJ">
+        <ref role="m$_y1" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
     </node>
     <node concept="m$_wf" id="6rBfBe1WRMd" role="3989C9">
@@ -18462,6 +18462,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1aCwgFOnMPO" role="3bR37C">
+          <node concept="3bR9La" id="1aCwgFOnMPP" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="$bJ0jguQfr" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -25691,6 +25696,11 @@
             <node concept="3qWCbU" id="$Kq8MetF6v" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1aCwgFOnNvZ" role="3bR37C">
+          <node concept="3bR9La" id="1aCwgFOnNw0" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
       </node>
