@@ -22,6 +22,7 @@
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -49,9 +50,14 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <child id="1186403803051" name="query" index="VblUZ" />
+      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -61,6 +67,9 @@
       <concept id="1081293058843" name="jetbrains.mps.lang.editor.structure.CellKeyMapDeclaration" flags="ig" index="325Ffw">
         <reference id="1139445935125" name="applicableConcept" index="1chiOs" />
         <child id="1136930944870" name="item" index="2QnnpI" />
+      </concept>
+      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
+        <property id="1225456424731" name="value" index="1iTho6" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
@@ -743,6 +752,26 @@
     </node>
     <node concept="PMmxH" id="2RM$2quderN" role="6VMZX">
       <ref role="PMmxG" node="2RM$2quddL3" resolve="DefaultPickerInspector_EditorComponent" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="fLfbJaZWBR">
+    <property role="3GE5qa" value="pathAndFile" />
+    <ref role="1XX52x" to="68mc:3YjQI$i8JAf" resolve="SourceModelInfo" />
+    <node concept="3EZMnI" id="18h3ztp8O5T" role="2wV5jI">
+      <node concept="3F0ifn" id="18h3ztp8O5U" role="3EZMnx">
+        <property role="3F0ifm" value="@sourceModelInfo" />
+        <node concept="VechU" id="2CEi94dhGgG" role="3F10Kt">
+          <node concept="1iSF2X" id="2CEi94dhHqT" role="VblUZ">
+            <property role="1iTho6" value="808000" />
+          </node>
+        </node>
+      </node>
+      <node concept="2SsqMj" id="18h3ztp8O5V" role="3EZMnx">
+        <node concept="pVoyu" id="18h3ztp8O5W" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="18h3ztp8O5X" role="2iSdaV" />
     </node>
   </node>
 </model>
