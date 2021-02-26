@@ -9003,9 +9003,6 @@
       <node concept="m$_yC" id="DnqfiuSO_X" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
-      <node concept="m$_yC" id="7wOeVMeCel8" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
-      </node>
       <node concept="3_J27D" id="DnqfiuSOA1" role="m_cZH">
         <node concept="3Mxwew" id="DnqfiuSOA2" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.compare" />
@@ -9019,6 +9016,9 @@
         <node concept="3Mxwew" id="DnqfiuSOA5" role="3MwsjC">
           <property role="3MwjfP" value="Node comparator utilities from mbeddr.mpsutil" />
         </node>
+      </node>
+      <node concept="m$_yC" id="7wOeVMeCel8" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnNsFs" role="3989C9">
@@ -18801,6 +18801,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="fLfbJbCWa4" role="3bR37C">
+          <node concept="3bR9La" id="fLfbJbCWa5" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4kGsAe0vxvm" role="3989C9">
@@ -25770,10 +25775,10 @@
       <node concept="22LTRM" id="6xaPNaK939C" role="22LTRK">
         <ref role="22LTRN" node="6xaPNaK8sYs" resolve="test.com.mbeddr.mpsutil.asynccell" />
       </node>
-      <node concept="24cAiW" id="76N1O$Kj6vJ" role="24cAkG" />
       <node concept="22LTRM" id="$Kq8MetFlP" role="22LTRK">
         <ref role="22LTRN" node="$Kq8MetB_8" resolve="test.com.mbeddr.mpsutil.smodule" />
       </node>
+      <node concept="24cAiW" id="76N1O$Kj6vJ" role="24cAkG" />
     </node>
     <node concept="2igEWh" id="3HpWboH_Z$G" role="1hWBAP">
       <property role="2igJW4" value="true" />

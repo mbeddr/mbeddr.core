@@ -8005,6 +8005,41 @@
                     <property role="3oM_SC" value="or" />
                   </node>
                 </node>
+                <node concept="1PaTwC" id="67sryxwAVw" role="3ndbpf">
+                  <node concept="3oM_SD" id="67sryxwAY_" role="1PaTwD">
+                    <property role="3oM_SC" value="-" />
+                  </node>
+                  <node concept="3oM_SD" id="67sryxwAWR" role="1PaTwD">
+                    <property role="3oM_SC" value="ends" />
+                  </node>
+                  <node concept="3oM_SD" id="67sryxwAWS" role="1PaTwD">
+                    <property role="3oM_SC" value="with" />
+                  </node>
+                  <node concept="3oM_SD" id="67sryxwAWT" role="1PaTwD">
+                    <property role="3oM_SC" value="certain" />
+                  </node>
+                  <node concept="3oM_SD" id="67sryxwAWU" role="1PaTwD">
+                    <property role="3oM_SC" value="punctuation" />
+                  </node>
+                  <node concept="3oM_SD" id="67sryxwAWV" role="1PaTwD">
+                    <property role="3oM_SC" value="mark" />
+                  </node>
+                  <node concept="3oM_SD" id="67sryxwAWW" role="1PaTwD">
+                    <property role="3oM_SC" value="(." />
+                  </node>
+                  <node concept="3oM_SD" id="67sryxwAWX" role="1PaTwD">
+                    <property role="3oM_SC" value="," />
+                  </node>
+                  <node concept="3oM_SD" id="67sryxwB0N" role="1PaTwD">
+                    <property role="3oM_SC" value=":" />
+                  </node>
+                  <node concept="3oM_SD" id="67sryxwB1o" role="1PaTwD">
+                    <property role="3oM_SC" value=")," />
+                  </node>
+                  <node concept="3oM_SD" id="67sryxwAX2" role="1PaTwD">
+                    <property role="3oM_SC" value="or" />
+                  </node>
+                </node>
                 <node concept="1PaTwC" id="6TPUpo_egMV" role="3ndbpf">
                   <node concept="3oM_SD" id="6TPUpo_egMU" role="1PaTwD">
                     <property role="3oM_SC" value="-" />
@@ -8159,7 +8194,7 @@
                     <node concept="liA8E" id="2iF7bNaNi3S" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                       <node concept="Xl_RD" id="2iF7bNaNi3T" role="37wK5m">
-                        <property role="Xl_RC" value=".*( |\\\\[nt]|0x|#|[\\(\\[\\{]|[\\+\\-*/]|[\\\\\&quot;']|[§~])" />
+                        <property role="Xl_RC" value=".*( |\\\\[nt]|[\\.,:]|0x|#|[\\(\\[\\{]|[\\+\\-*/]|[\\\\\&quot;']|[§~])" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="2iF7bNaNi3U" role="2Oq$k0">
