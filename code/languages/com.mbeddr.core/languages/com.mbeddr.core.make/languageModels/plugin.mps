@@ -35,8 +35,8 @@
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
-    <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" implicit="true" />
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -528,15 +528,73 @@
                     <property role="TrG5h" value="_model" />
                   </node>
                   <node concept="3clFbS" id="6KI2Y3YZS_H" role="2LFqv$">
+                    <node concept="3cpWs8" id="5pX5kNhQo$7" role="3cqZAp">
+                      <node concept="3cpWsn" id="5pX5kNhQo$8" role="3cpWs9">
+                        <property role="TrG5h" value="outputLocation" />
+                        <node concept="3uibUv" id="5pX5kNhQo$9" role="1tU5fm">
+                          <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
+                        </node>
+                        <node concept="2YIFZM" id="5pX5kNhQo$a" role="33vP2m">
+                          <ref role="37wK5l" to="w1kc:~SModelOperations.getOutputLocation(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputLocation" />
+                          <ref role="1Pybhc" to="w1kc:~SModelOperations" resolve="SModelOperations" />
+                          <node concept="2GrUjf" id="5pX5kNhQBve" role="37wK5m">
+                            <ref role="2Gs0qQ" node="6KI2Y3YZS_F" resolve="_model" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="5pX5kNhQo$e" role="3cqZAp">
+                      <node concept="3clFbS" id="5pX5kNhQo$f" role="3clFbx">
+                        <node concept="YS8fn" id="5pX5kNhQo$g" role="3cqZAp">
+                          <node concept="2ShNRf" id="5pX5kNhQo$h" role="YScLw">
+                            <node concept="1pGfFk" id="5pX5kNhQo$i" role="2ShVmc">
+                              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                              <node concept="3cpWs3" id="5pX5kNhQo$j" role="37wK5m">
+                                <node concept="Xl_RD" id="5pX5kNhQo$k" role="3uHU7w">
+                                  <property role="Xl_RC" value=" model not found" />
+                                </node>
+                                <node concept="3cpWs3" id="5pX5kNhQo$l" role="3uHU7B">
+                                  <node concept="Xl_RD" id="5pX5kNhQo$m" role="3uHU7B">
+                                    <property role="Xl_RC" value="Output location for " />
+                                  </node>
+                                  <node concept="2OqwBi" id="5pX5kNhQo$n" role="3uHU7w">
+                                    <node concept="2OqwBi" id="5pX5kNhQo$o" role="2Oq$k0">
+                                      <node concept="2JrnkZ" id="5pX5kNhQo$p" role="2Oq$k0">
+                                        <node concept="2GrUjf" id="5pX5kNhQByr" role="2JrQYb">
+                                          <ref role="2Gs0qQ" node="6KI2Y3YZS_F" resolve="_model" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="5pX5kNhQo$t" role="2OqNvi">
+                                        <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="5pX5kNhQo$u" role="2OqNvi">
+                                      <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbC" id="5pX5kNhQo$v" role="3clFbw">
+                        <node concept="10Nm6u" id="5pX5kNhQo$w" role="3uHU7w" />
+                        <node concept="37vLTw" id="5pX5kNhQo$x" role="3uHU7B">
+                          <ref role="3cqZAo" node="5pX5kNhQo$8" resolve="outputLocation" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3cpWs8" id="6KI2Y3YZT5i" role="3cqZAp">
                       <node concept="3cpWsn" id="6KI2Y3YZT5j" role="3cpWs9">
                         <property role="TrG5h" value="path" />
                         <node concept="17QB3L" id="6KI2Y3YZT5k" role="1tU5fm" />
-                        <node concept="2YIFZM" id="6KI2Y3YZT5t" role="33vP2m">
-                          <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                          <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputPathFor" />
-                          <node concept="2GrUjf" id="6KI2Y3YZTuN" role="37wK5m">
-                            <ref role="2Gs0qQ" node="6KI2Y3YZS_F" resolve="_model" />
+                        <node concept="2OqwBi" id="5pX5kNhQCwm" role="33vP2m">
+                          <node concept="37vLTw" id="5pX5kNhQBYX" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5pX5kNhQo$8" resolve="outputLocation" />
+                          </node>
+                          <node concept="liA8E" id="5pX5kNhQCZa" role="2OqNvi">
+                            <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
                           </node>
                         </node>
                       </node>
@@ -565,11 +623,19 @@
                               <property role="Xl_RC" value="/" />
                             </node>
                           </node>
-                          <node concept="2YIFZM" id="6KI2Y3YZT5F" role="3uHU7w">
-                            <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                            <ref role="37wK5l" to="unno:7WvVJ3rORmu" resolve="getModelLongName" />
-                            <node concept="2GrUjf" id="6KI2Y3YZTMn" role="37wK5m">
-                              <ref role="2Gs0qQ" node="6KI2Y3YZS_F" resolve="_model" />
+                          <node concept="2OqwBi" id="5pX5kNhQDeZ" role="3uHU7w">
+                            <node concept="2OqwBi" id="5pX5kNhQDf0" role="2Oq$k0">
+                              <node concept="2JrnkZ" id="5pX5kNhQDf1" role="2Oq$k0">
+                                <node concept="2GrUjf" id="5pX5kNhQDf2" role="2JrQYb">
+                                  <ref role="2Gs0qQ" node="6KI2Y3YZS_F" resolve="_model" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="5pX5kNhQDf3" role="2OqNvi">
+                                <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="5pX5kNhQDf4" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
                             </node>
                           </node>
                         </node>

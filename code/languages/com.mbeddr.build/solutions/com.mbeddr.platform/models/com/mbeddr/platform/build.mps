@@ -4797,6 +4797,9 @@
       <node concept="m$_yC" id="TGQG6khVBE" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:RJsmGEieyQ" resolve="jetbrains.mps.vcs" />
       </node>
+      <node concept="m$_yC" id="3VIBP3dq_3y" role="m$_yJ">
+        <ref role="m$_y1" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
+      </node>
       <node concept="2iUeEo" id="7yAshxDt$Fq" role="2iVFfd">
         <property role="2iUeEt" value="mbedrr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
@@ -5346,6 +5349,11 @@
             <node concept="3qWCbU" id="4PRpvcZJNg9" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3VIBP3dqyGI" role="3bR37C">
+          <node concept="3bR9La" id="3VIBP3dqyGJ" role="1SiIV1">
+            <ref role="3bR37D" node="Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
           </node>
         </node>
       </node>
@@ -6027,11 +6035,6 @@
         <node concept="1SiIV0" id="4xXxMGKgEHc" role="3bR37C">
           <node concept="3bR9La" id="4xXxMGKgEHd" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4xXxMGKgEHe" role="3bR37C">
-          <node concept="3bR9La" id="4xXxMGKgEHf" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
           </node>
         </node>
         <node concept="1BupzO" id="4PRpvcZJNir" role="3bR31x">

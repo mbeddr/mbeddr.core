@@ -117,6 +117,7 @@
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="461n" ref="r:3b46a963-6deb-4d82-bdc0-36b5d9297fcf(de.slisson.mps.conditionalEditor.hints.editor)" />
     <import index="pdwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.aspects.constraints.rules.kinds(MPS.Core/)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -2301,7 +2302,7 @@
           <node concept="3cpWsn" id="1cOw9QkNMJW" role="3cpWs9">
             <property role="TrG5h" value="provider" />
             <node concept="3Tqbb2" id="1cOw9QkNLLK" role="1tU5fm">
-              <ref role="ehGHo" to="vs0r:1cOw9QkLoM_" resolve="IOutputLocationProvider" />
+              <ref role="ehGHo" to="68mc:1cOw9QkLoM_" resolve="IOutputLocationProvider" />
             </node>
             <node concept="2OqwBi" id="1cOw9QkNMJX" role="33vP2m">
               <node concept="2OqwBi" id="1cOw9QkNMJY" role="2Oq$k0">
@@ -2312,8 +2313,8 @@
                   </node>
                 </node>
                 <node concept="2SmgA7" id="1cOw9QkU9Uh" role="2OqNvi">
-                  <node concept="chp4Y" id="1cOw9QkUaXt" role="1dBWTz">
-                    <ref role="cht4Q" to="vs0r:1cOw9QkLoM_" resolve="IOutputLocationProvider" />
+                  <node concept="chp4Y" id="5pX5kNhM$OF" role="1dBWTz">
+                    <ref role="cht4Q" to="68mc:1cOw9QkLoM_" resolve="IOutputLocationProvider" />
                   </node>
                 </node>
               </node>
@@ -2332,7 +2333,7 @@
                       <ref role="3cqZAo" node="1cOw9QkNMJW" resolve="provider" />
                     </node>
                     <node concept="2qgKlT" id="1cOw9QkNUkX" role="2OqNvi">
-                      <ref role="37wK5l" to="hwgx:7fn1GcIr3Ns" resolve="getOutputLocation" />
+                      <ref role="37wK5l" to="48kf:7fn1GcIr3Ns" resolve="getOutputLocation" />
                       <node concept="2OqwBi" id="1cOw9QkNYvo" role="37wK5m">
                         <node concept="2WthIp" id="1cOw9QkNYvr" role="2Oq$k0" />
                         <node concept="3gHZIF" id="1cOw9QkNYvt" role="2OqNvi">
@@ -2475,17 +2476,26 @@
     </node>
     <node concept="2ScWuX" id="DMIuLumKtp" role="tmbBb">
       <node concept="3clFbS" id="DMIuLumKtq" role="2VODD2">
-        <node concept="3clFbF" id="DMIuLuntf7" role="3cqZAp">
-          <node concept="2OqwBi" id="DMIuLuntjh" role="3clFbG">
-            <node concept="2OqwBi" id="DMIuLuntf1" role="2Oq$k0">
-              <node concept="2WthIp" id="DMIuLuntf4" role="2Oq$k0" />
-              <node concept="2XshWL" id="DMIuLuntf6" role="2OqNvi">
-                <ref role="2WH_rO" node="DMIuLumKyB" resolve="getOutputPath" />
+        <node concept="1X3_iC" id="5pX5kNhI1Sj" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="DMIuLuntf7" role="8Wnug">
+            <node concept="2OqwBi" id="DMIuLuntjh" role="3clFbG">
+              <node concept="2OqwBi" id="DMIuLuntf1" role="2Oq$k0">
+                <node concept="2WthIp" id="DMIuLuntf4" role="2Oq$k0" />
+                <node concept="2XshWL" id="DMIuLuntf6" role="2OqNvi">
+                  <ref role="2WH_rO" node="DMIuLumKyB" resolve="getOutputPath" />
+                </node>
+              </node>
+              <node concept="liA8E" id="DMIuLuntuD" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
               </node>
             </node>
-            <node concept="liA8E" id="DMIuLuntuD" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
-            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5pX5kNhIvr$" role="3cqZAp">
+          <node concept="3clFbT" id="5pX5kNhIvrz" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

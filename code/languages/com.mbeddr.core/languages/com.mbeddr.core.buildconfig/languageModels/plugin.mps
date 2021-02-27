@@ -29,6 +29,7 @@
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
@@ -84,10 +85,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
-        <child id="1164991057263" name="throwable" index="YScLw" />
-      </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
@@ -115,7 +112,6 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -143,7 +139,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -702,46 +697,6 @@
                                           </node>
                                         </node>
                                         <node concept="3clFbS" id="hZOnLD2ud5" role="1zxBo7">
-                                          <node concept="3cpWs8" id="6TPUpoH$Zwg" role="3cqZAp">
-                                            <node concept="3cpWsn" id="6TPUpoH$Zwh" role="3cpWs9">
-                                              <property role="TrG5h" value="outputLocation" />
-                                              <node concept="3uibUv" id="6TPUpoH$Zsp" role="1tU5fm">
-                                                <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
-                                              </node>
-                                              <node concept="2YIFZM" id="6TPUpoH$Zwi" role="33vP2m">
-                                                <ref role="37wK5l" to="w1kc:~SModelOperations.getOutputLocation(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputLocation" />
-                                                <ref role="1Pybhc" to="w1kc:~SModelOperations" resolve="SModelOperations" />
-                                                <node concept="37vLTw" id="6TPUpoH$Zwj" role="37wK5m">
-                                                  <ref role="3cqZAo" node="2obGnlRg4rC" resolve="model" />
-                                                </node>
-                                              </node>
-                                            </node>
-                                          </node>
-                                          <node concept="3clFbJ" id="6TPUpoH_3De" role="3cqZAp">
-                                            <node concept="3clFbS" id="6TPUpoH_3Dg" role="3clFbx">
-                                              <node concept="YS8fn" id="6TPUpoH_gBm" role="3cqZAp">
-                                                <node concept="2ShNRf" id="6TPUpoH_gQR" role="YScLw">
-                                                  <node concept="1pGfFk" id="6TPUpoH2KsA" role="2ShVmc">
-                                                    <ref role="37wK5l" to="guwi:~FileNotFoundException.&lt;init&gt;(java.lang.String)" resolve="FileNotFoundException" />
-                                                    <node concept="3cpWs3" id="6TPUpoH2Kv_" role="37wK5m">
-                                                      <node concept="37vLTw" id="6TPUpoH_jsm" role="3uHU7w">
-                                                        <ref role="3cqZAo" node="2obGnlRg4rC" resolve="model" />
-                                                      </node>
-                                                      <node concept="Xl_RD" id="6TPUpoH2KvD" role="3uHU7B">
-                                                        <property role="Xl_RC" value="Failed to retrieve output location for " />
-                                                      </node>
-                                                    </node>
-                                                  </node>
-                                                </node>
-                                              </node>
-                                            </node>
-                                            <node concept="3clFbC" id="6TPUpoH_4_M" role="3clFbw">
-                                              <node concept="10Nm6u" id="6TPUpoH_5d_" role="3uHU7w" />
-                                              <node concept="37vLTw" id="6TPUpoH_4h9" role="3uHU7B">
-                                                <ref role="3cqZAo" node="6TPUpoH$Zwh" resolve="outputLocation" />
-                                              </node>
-                                            </node>
-                                          </node>
                                           <node concept="3cpWs8" id="6dqrGHqK54s" role="3cqZAp">
                                             <node concept="3cpWsn" id="6dqrGHqK54t" role="3cpWs9">
                                               <property role="TrG5h" value="moduleName" />
@@ -819,6 +774,20 @@
                                               </node>
                                             </node>
                                           </node>
+                                          <node concept="3cpWs8" id="5pX5kNhQ0Yl" role="3cqZAp">
+                                            <node concept="3cpWsn" id="5pX5kNhQ0Yo" role="3cpWs9">
+                                              <property role="TrG5h" value="outputLocation" />
+                                              <node concept="17QB3L" id="5pX5kNhQ0Yj" role="1tU5fm" />
+                                              <node concept="2OqwBi" id="5pX5kNhQ58f" role="33vP2m">
+                                                <node concept="37vLTw" id="5pX5kNhQ4Ba" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="2obGnlRih2H" resolve="platform" />
+                                                </node>
+                                                <node concept="2qgKlT" id="5pX5kNhQ5ZN" role="2OqNvi">
+                                                  <ref role="37wK5l" to="48kf:7fn1GcKTDcC" resolve="getOutputLocation" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
                                           <node concept="3cpWs8" id="2obGnlRzCr1" role="3cqZAp">
                                             <node concept="3cpWsn" id="2obGnlRzCr2" role="3cpWs9">
                                               <property role="TrG5h" value="postProcessors" />
@@ -875,13 +844,8 @@
                                                       <node concept="37vLTw" id="2obGnlRRAhz" role="37wK5m">
                                                         <ref role="3cqZAo" node="6dqrGHqK54t" resolve="moduleName" />
                                                       </node>
-                                                      <node concept="2OqwBi" id="6TPUpoH_1ej" role="37wK5m">
-                                                        <node concept="37vLTw" id="6TPUpoH_0K_" role="2Oq$k0">
-                                                          <ref role="3cqZAo" node="6TPUpoH$Zwh" resolve="outputLocation" />
-                                                        </node>
-                                                        <node concept="liA8E" id="6TPUpoH_1Vg" role="2OqNvi">
-                                                          <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
-                                                        </node>
+                                                      <node concept="37vLTw" id="5pX5kNhQ7W_" role="37wK5m">
+                                                        <ref role="3cqZAo" node="5pX5kNhQ0Yo" resolve="outputLocation" />
                                                       </node>
                                                     </node>
                                                   </node>

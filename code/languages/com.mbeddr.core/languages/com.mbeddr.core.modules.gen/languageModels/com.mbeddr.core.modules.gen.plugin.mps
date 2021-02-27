@@ -21,7 +21,7 @@
     <import index="1ukv" ref="r:b37b80ef-b920-4af7-9966-3a77c955c860(com.mbeddr.core.modules.gen.behavior)" />
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" implicit="true" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
@@ -419,8 +419,8 @@
                                                   <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="platform" />
                                                 </node>
                                               </node>
-                                              <node concept="2qgKlT" id="5mEtrN3BR98" role="2OqNvi">
-                                                <ref role="37wK5l" to="hwgx:7fn1GcKTDcC" resolve="getOutputLocation" />
+                                              <node concept="2qgKlT" id="3VIBP3cUbp8" role="2OqNvi">
+                                                <ref role="37wK5l" to="48kf:7fn1GcKTDcC" resolve="getOutputLocation" />
                                               </node>
                                             </node>
                                             <node concept="2OqwBi" id="27KN8bxhXvz" role="37wK5m">

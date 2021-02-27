@@ -19,6 +19,8 @@
     <import index="770w" ref="r:eac84be5-5018-4dc9-be38-10c5ef2403b9(com.mbeddr.spreadsheat.generator.main.util)" />
     <import index="ti3a" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.ss.util(com.mbeddr.spreadsheat/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="watd" ref="r:1a1284ce-37a2-4d35-b38f-a54d85ba3c77(com.mbeddr.spreadsheat.behavior)" implicit="true" />
     <import index="bxf8" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi(com.mbeddr.spreadsheat/)" implicit="true" />
   </imports>
@@ -60,6 +62,9 @@
       <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
@@ -1486,46 +1491,104 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="6qrqamRS0hW" role="3cqZAp">
-          <node concept="3cpWsn" id="6qrqamRS0hX" role="3cpWs9">
-            <property role="TrG5h" value="outputDir" />
-            <node concept="3uibUv" id="6qrqamRS0hY" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+        <node concept="3cpWs8" id="1cOw9QkKhDF" role="3cqZAp">
+          <node concept="3cpWsn" id="1cOw9QkKhDG" role="3cpWs9">
+            <property role="TrG5h" value="outputLocation" />
+            <node concept="3uibUv" id="1cOw9QkKgFJ" role="1tU5fm">
+              <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
             </node>
-            <node concept="2ShNRf" id="6qrqamRS3mv" role="33vP2m">
-              <node concept="1pGfFk" id="6qrqamRS5O6" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
-                <node concept="2YIFZM" id="6qrqamRS5Q8" role="37wK5m">
-                  <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputPathFor" />
-                  <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                  <node concept="37vLTw" id="6qrqamRS5Q9" role="37wK5m">
-                    <ref role="3cqZAo" node="6qrqamS6UtF" resolve="originalInputModel" />
+            <node concept="2YIFZM" id="1cOw9QkKhDH" role="33vP2m">
+              <ref role="1Pybhc" to="w1kc:~SModelOperations" resolve="SModelOperations" />
+              <ref role="37wK5l" to="w1kc:~SModelOperations.getOutputLocation(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputLocation" />
+              <node concept="37vLTw" id="3VIBP3cFV$U" role="37wK5m">
+                <ref role="3cqZAo" node="6qrqamS6UtF" resolve="originalInputModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1cOw9QkKjBk" role="3cqZAp">
+          <node concept="3clFbS" id="1cOw9QkKjBm" role="3clFbx">
+            <node concept="YS8fn" id="6M9sQRby0gW" role="3cqZAp">
+              <node concept="2ShNRf" id="6M9sQRby0gX" role="YScLw">
+                <node concept="1pGfFk" id="6M9sQRby0gY" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="3cpWs3" id="6M9sQRby0gZ" role="37wK5m">
+                    <node concept="Xl_RD" id="6M9sQRby0h0" role="3uHU7w">
+                      <property role="Xl_RC" value=" model not found" />
+                    </node>
+                    <node concept="3cpWs3" id="6M9sQRby0h1" role="3uHU7B">
+                      <node concept="Xl_RD" id="6M9sQRby0h2" role="3uHU7B">
+                        <property role="Xl_RC" value="Output location for " />
+                      </node>
+                      <node concept="2OqwBi" id="7fn1GcIrUpG" role="3uHU7w">
+                        <node concept="2OqwBi" id="7fn1GcIrSjV" role="2Oq$k0">
+                          <node concept="2JrnkZ" id="7fn1GcIrSk0" role="2Oq$k0">
+                            <node concept="37vLTw" id="3VIBP3cFVO7" role="2JrQYb">
+                              <ref role="3cqZAo" node="6qrqamS6UtF" resolve="originalInputModel" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="7fn1GcIrUa9" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7fn1GcIrUU1" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
-                <node concept="2OqwBi" id="6qrqamRS6Q6" role="37wK5m">
-                  <node concept="2OqwBi" id="6qrqamRS6Q7" role="2Oq$k0">
-                    <node concept="2OqwBi" id="6qrqamRS6Q8" role="2Oq$k0">
-                      <node concept="2JrnkZ" id="6qrqamS6YNk" role="2Oq$k0">
-                        <node concept="37vLTw" id="6qrqamRS6Q9" role="2JrQYb">
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="1cOw9QkKkc5" role="3clFbw">
+            <node concept="10Nm6u" id="1cOw9QkKkBV" role="3uHU7w" />
+            <node concept="37vLTw" id="1cOw9QkKk16" role="3uHU7B">
+              <ref role="3cqZAo" node="1cOw9QkKhDG" resolve="outputLocation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3VIBP3cHnwR" role="3cqZAp">
+          <node concept="3cpWsn" id="3VIBP3cHnwS" role="3cpWs9">
+            <property role="TrG5h" value="outputDir" />
+            <node concept="3uibUv" id="3VIBP3cHnwT" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="3VIBP3cHnwU" role="33vP2m">
+              <node concept="1pGfFk" id="3VIBP3cHnwV" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
+                <node concept="2OqwBi" id="5pX5kNhRk4X" role="37wK5m">
+                  <node concept="37vLTw" id="5pX5kNhRk4Y" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1cOw9QkKhDG" resolve="outputLocation" />
+                  </node>
+                  <node concept="liA8E" id="5pX5kNhRk4Z" role="2OqNvi">
+                    <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="3VIBP3cHnwW" role="37wK5m">
+                  <node concept="2OqwBi" id="3VIBP3cHnwX" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3VIBP3cHnwY" role="2Oq$k0">
+                      <node concept="2JrnkZ" id="3VIBP3cHnwZ" role="2Oq$k0">
+                        <node concept="37vLTw" id="3VIBP3cHnx0" role="2JrQYb">
                           <ref role="3cqZAo" node="6qrqamS6UtF" resolve="originalInputModel" />
                         </node>
                       </node>
-                      <node concept="liA8E" id="6qrqamRS6Qa" role="2OqNvi">
+                      <node concept="liA8E" id="3VIBP3cHnx1" role="2OqNvi">
                         <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="6qrqamRS6Qb" role="2OqNvi">
+                    <node concept="liA8E" id="3VIBP3cHnx2" role="2OqNvi">
                       <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="6qrqamRS6Qc" role="2OqNvi">
+                  <node concept="liA8E" id="3VIBP3cHnx3" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.replace(char,char)" resolve="replace" />
-                    <node concept="1Xhbcc" id="6qrqamRS6Qd" role="37wK5m">
+                    <node concept="1Xhbcc" id="3VIBP3cHnx4" role="37wK5m">
                       <property role="1XhdNS" value="." />
                     </node>
-                    <node concept="10M0yZ" id="6qrqamRS6Qe" role="37wK5m">
-                      <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                    <node concept="10M0yZ" id="3VIBP3cHnx5" role="37wK5m">
                       <ref role="3cqZAo" to="guwi:~File.separatorChar" resolve="separatorChar" />
+                      <ref role="1PxDUh" to="guwi:~File" resolve="File" />
                     </node>
                   </node>
                 </node>
@@ -1593,8 +1656,8 @@
                 <node concept="2ShNRf" id="6qrqamRSDJ4" role="33vP2m">
                   <node concept="1pGfFk" id="6qrqamRSE3i" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
-                    <node concept="37vLTw" id="6qrqamRSE5m" role="37wK5m">
-                      <ref role="3cqZAo" node="6qrqamRS0hX" resolve="outputDir" />
+                    <node concept="37vLTw" id="3VIBP3cHo9f" role="37wK5m">
+                      <ref role="3cqZAo" node="3VIBP3cHnwS" resolve="outputDir" />
                     </node>
                     <node concept="3cpWs3" id="6qrqamRSFW0" role="37wK5m">
                       <node concept="2GrUjf" id="6qrqamRSEaN" role="3uHU7B">
@@ -1612,8 +1675,8 @@
               <node concept="3clFbS" id="1LnB5xdvDeR" role="1zxBo7">
                 <node concept="3clFbF" id="6qrqamRSNSp" role="3cqZAp">
                   <node concept="2OqwBi" id="6qrqamRSObw" role="3clFbG">
-                    <node concept="37vLTw" id="6qrqamRSNSn" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6qrqamRS0hX" resolve="outputDir" />
+                    <node concept="37vLTw" id="3VIBP3cHoly" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3VIBP3cHnwS" resolve="outputDir" />
                     </node>
                     <node concept="liA8E" id="6qrqamRSODo" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~File.mkdirs()" resolve="mkdirs" />
