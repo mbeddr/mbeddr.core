@@ -30,7 +30,6 @@
     <import index="4gj" ref="r:8a4d7551-b3b4-4c15-a939-4ff22978ee25(com.mbeddr.cc.var.annotations.generator.main.util)" />
     <import index="rpdm" ref="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -123,7 +122,6 @@
         <child id="1217960314448" name="messageText" index="2k5Stb" />
         <child id="1217960407512" name="referenceNode" index="2k6f33" />
       </concept>
-      <concept id="1217969995796" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowWarningMessage" flags="nn" index="2kEO4f" />
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -517,34 +515,6 @@
             <node concept="2es0OD" id="7oNb1MJZME$" role="2OqNvi">
               <node concept="1bVj0M" id="7oNb1MJZMEA" role="23t8la">
                 <node concept="3clFbS" id="7oNb1MJZMEB" role="1bW5cS">
-                  <node concept="3clFbF" id="7oNb1MJZMGu" role="3cqZAp">
-                    <node concept="2OqwBi" id="7oNb1MJZMZI" role="3clFbG">
-                      <node concept="1iwH7S" id="7oNb1MJZMGt" role="2Oq$k0" />
-                      <node concept="2kEO4f" id="7oNb1MJZNl9" role="2OqNvi">
-                        <node concept="3cpWs3" id="7oNb1MK0D2Z" role="2k5Stb">
-                          <node concept="Xl_RD" id="7oNb1MK0Dht" role="3uHU7w">
-                            <property role="Xl_RC" value=" still has a FeatureModelConfiguration attribute; its removal will be enforced" />
-                          </node>
-                          <node concept="3cpWs3" id="7oNb1MK07KJ" role="3uHU7B">
-                            <node concept="Xl_RD" id="7oNb1MJZPRa" role="3uHU7B">
-                              <property role="Xl_RC" value="WARN - pleCheckPoint - " />
-                            </node>
-                            <node concept="2OqwBi" id="7oNb1MK2Zxk" role="3uHU7w">
-                              <node concept="37vLTw" id="7oNb1MK2Zce" role="2Oq$k0">
-                                <ref role="3cqZAo" node="7oNb1MJZMEC" resolve="it" />
-                              </node>
-                              <node concept="2qgKlT" id="7oNb1MK3886" role="2OqNvi">
-                                <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="37vLTw" id="7oNb1MK0GCb" role="2k6f33">
-                          <ref role="3cqZAo" node="7oNb1MJZMEC" resolve="it" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="7oNb1MK0SP1" role="3cqZAp">
                     <node concept="2OqwBi" id="7oNb1MK0UAU" role="3clFbG">
                       <node concept="2OqwBi" id="7oNb1MK0T9U" role="2Oq$k0">
