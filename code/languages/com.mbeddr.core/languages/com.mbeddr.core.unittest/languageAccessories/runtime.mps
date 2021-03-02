@@ -1335,7 +1335,7 @@
                         <ref role="3ZVs_2" node="68PB5rZbAwI" resolve="stdout_capture_path" />
                       </node>
                     </node>
-                    <node concept="3ZVu4v" id="4QnOXk_zY05" role="3O_q_j">
+                    <node concept="3ZVu4v" id="3ggCHGeg0EK" role="3O_q_j">
                       <ref role="3ZVs_2" node="Bqp3R0laLS" resolve="caze" />
                     </node>
                     <node concept="4ZOvp" id="4QnOXk_zY1k" role="3O_q_j">
@@ -3085,7 +3085,7 @@
           <node concept="OjmMv" id="4QnOXk_$JR9" role="3SJzmv">
             <node concept="19SGf9" id="4QnOXk_$JRa" role="OjmMu">
               <node concept="19SUe$" id="4QnOXk_$JRb" role="19SJt6">
-                <property role="19SUeA" value="Append test result file name using the following format: TEST-[&lt;test-suite-module-name&gt;.]&lt;test-suite-name&gt;.xml" />
+                <property role="19SUeA" value="Append test result file name using the following format: TEST-[&lt;test-suite-module-name&gt;.]&lt;test-suite-name&gt;.xml&#10;Use short test result file name format when enforced via CLI option or when test suite name is sufficiently long so to be considered as globally unique&#10;(e.g., &#10;&quot;runTests&quot; -&gt; other test suites with this very name might exist&#10;&quot;runMyExtraordinaryNonRegressionTests&quot; -&gt; low probability that there is another test suite with exactly the same name)" />
               </node>
             </node>
           </node>
@@ -3158,13 +3158,31 @@
               </node>
             </node>
           </node>
-          <node concept="19$8ne" id="4QnOXk_$y0I" role="c0U16">
-            <node concept="2qmXGp" id="4QnOXk_$y0J" role="1_9fRO">
-              <node concept="1S7827" id="4QnOXk_$fBI" role="1_9fRO">
-                <ref role="1S7826" node="68PB5rZbigh" resolve="options" />
+          <node concept="2EHzL6" id="3ggCHGfCIEv" role="c0U16">
+            <node concept="19$8ne" id="3ggCHGfuRJh" role="3TlMhI">
+              <node concept="2qmXGp" id="3ggCHGfuRJi" role="1_9fRO">
+                <node concept="1S7827" id="4QnOXk_$fBI" role="1_9fRO">
+                  <ref role="1S7826" node="68PB5rZbigh" resolve="options" />
+                </node>
+                <node concept="1E4Tgc" id="4QnOXk_$hoO" role="1ESnxz">
+                  <ref role="1E4Tge" node="4QnOXk_zFVp" resolve="short_names" />
+                </node>
               </node>
-              <node concept="1E4Tgc" id="4QnOXk_$hoO" role="1ESnxz">
-                <ref role="1E4Tge" node="4QnOXk_zFVp" resolve="short_names" />
+            </node>
+            <node concept="3Tl9Jn" id="3ggCHGfzb9G" role="3TlMhJ">
+              <node concept="3O_q_g" id="3ggCHGes8yZ" role="3TlMhI">
+                <ref role="3O_q_h" to="3y0n:137zkozycMJ" resolve="strlen" />
+                <node concept="2qmXGp" id="3ggCHGewces" role="3O_q_j">
+                  <node concept="1E4Tgc" id="3ggCHGeyJf5" role="1ESnxz">
+                    <ref role="1E4Tge" node="4DjlAm4JTFY" resolve="name" />
+                  </node>
+                  <node concept="3ZUYvv" id="3ggCHGeuv9L" role="1_9fRO">
+                    <ref role="3ZUYvu" node="4QnOXk_zy3d" resolve="suite" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3TlMh9" id="3ggCHGeyM2_" role="3TlMhJ">
+                <property role="2hmy$m" value="10" />
               </node>
             </node>
           </node>
@@ -3329,7 +3347,7 @@
               </node>
             </node>
             <node concept="PhEJO" id="4QnOXk_F5Lt" role="3O_q_j">
-              <property role="PhEJT" value="/.%s#%s.%s" />
+              <property role="PhEJT" value="/.%s#%d.%s" />
             </node>
             <node concept="2qmXGp" id="4QnOXk_FrEU" role="3O_q_j">
               <node concept="1E4Tgc" id="4QnOXk_FsOm" role="1ESnxz">
@@ -3340,8 +3358,8 @@
               </node>
             </node>
             <node concept="2qmXGp" id="4QnOXk_FxaJ" role="3O_q_j">
-              <node concept="1E4Tgc" id="4QnOXk_Fykj" role="1ESnxz">
-                <ref role="1E4Tge" node="4DjlAm4JT_1" resolve="name" />
+              <node concept="1E4Tgc" id="3ggCHGei$ed" role="1ESnxz">
+                <ref role="1E4Tge" node="68PB5rZiUDj" resolve="id" />
               </node>
               <node concept="3ZUYvv" id="4QnOXk_Fw5p" role="1_9fRO">
                 <ref role="3ZUYvu" node="4QnOXk_zP2S" resolve="caze" />
