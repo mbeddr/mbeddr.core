@@ -59,8 +59,8 @@
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" />
     <import index="z1c4" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.project(MPS.Workbench/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
-    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
@@ -7268,100 +7268,6 @@
       </node>
       <node concept="10P_77" id="24sqcd$VnhO" role="3clF45" />
       <node concept="3Tm1VV" id="24sqcd$VnhP" role="1B3o_S" />
-    </node>
-  </node>
-  <node concept="312cEu" id="4Wn4fzjJqEK">
-    <property role="TrG5h" value="SolutionPathUtil" />
-    <node concept="2tJIrI" id="4Wn4fzjJqEL" role="jymVt" />
-    <node concept="2YIFZL" id="4Wn4fzjJqEM" role="jymVt">
-      <property role="TrG5h" value="getSolutionRootPathForNode" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3clFbS" id="4Wn4fzjJqEN" role="3clF47">
-        <node concept="3cpWs6" id="1$T4OZGSoiw" role="3cqZAp">
-          <node concept="2YIFZM" id="1$T4OZGSoiy" role="3cqZAk">
-            <ref role="37wK5l" to="48kf:4Wn4fzjJqEM" resolve="getSolutionRootPathForNode" />
-            <ref role="1Pybhc" to="48kf:4Wn4fzjJqEK" resolve="SolutionUtil" />
-            <node concept="37vLTw" id="1$T4OZGSoiz" role="37wK5m">
-              <ref role="3cqZAo" node="4Wn4fzjJqFe" resolve="n" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="4Wn4fzjJqFe" role="3clF46">
-        <property role="TrG5h" value="n" />
-        <node concept="3Tqbb2" id="4Wn4fzjJqFf" role="1tU5fm" />
-      </node>
-      <node concept="17QB3L" id="4Wn4fzjMpg6" role="3clF45" />
-      <node concept="3Tm1VV" id="4Wn4fzjJqFh" role="1B3o_S" />
-      <node concept="2AHcQZ" id="1$T4OZGSp6x" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-      </node>
-      <node concept="P$JXv" id="1$T4OZGSp6u" role="lGtFl">
-        <node concept="TZ5HI" id="1$T4OZGSp6v" role="3nqlJM">
-          <node concept="TZ5HA" id="1$T4OZGSp6w" role="3HnX3l">
-            <node concept="1dT_AC" id="1$T4OZGSp8J" role="1dT_Ay">
-              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2YIFZL" id="GKLijSQbSR" role="jymVt">
-      <property role="TrG5h" value="createFilenameRelativeToNodeSolution" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3clFbS" id="GKLijSQbSS" role="3clF47">
-        <node concept="3cpWs6" id="1$T4OZGSotM" role="3cqZAp">
-          <node concept="2YIFZM" id="1$T4OZGSoDJ" role="3cqZAk">
-            <ref role="37wK5l" to="48kf:GKLijSQbSR" resolve="createFilenameRelativeToNodeSolution" />
-            <ref role="1Pybhc" to="48kf:4Wn4fzjJqEK" resolve="SolutionUtil" />
-            <node concept="37vLTw" id="1$T4OZGSoJJ" role="37wK5m">
-              <ref role="3cqZAo" node="GKLijSQbTG" resolve="n" />
-            </node>
-            <node concept="37vLTw" id="1$T4OZGSoXm" role="37wK5m">
-              <ref role="3cqZAo" node="GKLijSQdF9" resolve="name" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="GKLijSQbTG" role="3clF46">
-        <property role="TrG5h" value="n" />
-        <node concept="3Tqbb2" id="GKLijSQbTH" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="GKLijSQdF9" role="3clF46">
-        <property role="TrG5h" value="name" />
-        <node concept="17QB3L" id="GKLijSQdKZ" role="1tU5fm" />
-      </node>
-      <node concept="17QB3L" id="GKLijSQbTI" role="3clF45" />
-      <node concept="3Tm1VV" id="GKLijSQbTJ" role="1B3o_S" />
-      <node concept="2AHcQZ" id="1$T4OZGSp7C" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-      </node>
-      <node concept="P$JXv" id="1$T4OZGSp7_" role="lGtFl">
-        <node concept="TZ5HI" id="1$T4OZGSp7A" role="3nqlJM">
-          <node concept="TZ5HA" id="1$T4OZGSp7B" role="3HnX3l">
-            <node concept="1dT_AC" id="1$T4OZGSp8M" role="1dT_Ay">
-              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4Wn4fzjP4Fi" role="jymVt" />
-    <node concept="2tJIrI" id="4Wn4fzjJqFi" role="jymVt" />
-    <node concept="3Tm1VV" id="4Wn4fzjJqFj" role="1B3o_S" />
-    <node concept="2AHcQZ" id="1$T4OZGSoYC" role="2AJF6D">
-      <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-    </node>
-    <node concept="3UR2Jj" id="1$T4OZGSoY_" role="lGtFl">
-      <node concept="TZ5HI" id="1$T4OZGSoYA" role="3nqlJM">
-        <node concept="TZ5HA" id="1$T4OZGSoYB" role="3HnX3l">
-          <node concept="1dT_AC" id="1$T4OZGSoZg" role="1dT_Ay">
-            <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="13h7C7" id="2GIWVTRHKy7">
@@ -15695,7 +15601,6 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getDependencyGraph" />
-      <node concept="3Tm6S6" id="17fjvcLFUts" role="1B3o_S" />
       <node concept="3clFbS" id="17fjvcLC_kD" role="3clF47">
         <node concept="3cpWs8" id="17fjvcLCCDh" role="3cqZAp">
           <node concept="3cpWsn" id="17fjvcLCCDi" role="3cpWs9">
@@ -15915,6 +15820,7 @@
           </node>
         </node>
       </node>
+      <node concept="3Tmbuc" id="3lxJBjik3dn" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="17fjvcLFUH5" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -16868,35 +16774,6 @@
       </node>
       <node concept="10P_77" id="3DYDRw0SX$k" role="3clF45" />
     </node>
-  </node>
-  <node concept="312cEu" id="1tDstbgDG3d">
-    <property role="TrG5h" value="UserHelper" />
-    <node concept="2tJIrI" id="1tDstbgDG3t" role="jymVt" />
-    <node concept="2YIFZL" id="1tDstbgDG6a" role="jymVt">
-      <property role="TrG5h" value="getUserName" />
-      <node concept="17QB3L" id="1tDstbgF08D" role="3clF45" />
-      <node concept="3Tm1VV" id="1tDstbgDG6d" role="1B3o_S" />
-      <node concept="3clFbS" id="1tDstbgDG6e" role="3clF47">
-        <node concept="3clFbF" id="1tDstbgDGAy" role="3cqZAp">
-          <node concept="2YIFZM" id="1tDstbgDGA$" role="3clFbG">
-            <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-            <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
-            <node concept="Xl_RD" id="1tDstbgDGA_" role="37wK5m">
-              <property role="Xl_RC" value="user.name" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="P$JXv" id="1tDstbgDGBd" role="lGtFl">
-        <node concept="TZ5HA" id="1tDstbgDGBe" role="TZ5H$">
-          <node concept="1dT_AC" id="1tDstbgDGBf" role="1dT_Ay">
-            <property role="1dT_AB" value="TODO : Replace with SPreferences given name" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="1tDstbgDG3w" role="jymVt" />
-    <node concept="3Tm1VV" id="1tDstbgDG3e" role="1B3o_S" />
   </node>
   <node concept="13h7C7" id="1JcbkuyFo0j">
     <property role="3GE5qa" value="pathAndFile" />
@@ -20260,6 +20137,129 @@
     </node>
     <node concept="13hLZK" id="1cOw9QkLry7" role="13h7CW">
       <node concept="3clFbS" id="1cOw9QkLry8" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="312cEu" id="1tDstbgDG3d">
+    <property role="TrG5h" value="UserHelper" />
+    <node concept="2tJIrI" id="1tDstbgDG3t" role="jymVt" />
+    <node concept="2YIFZL" id="1tDstbgDG6a" role="jymVt">
+      <property role="TrG5h" value="getUserName" />
+      <node concept="17QB3L" id="1tDstbgF08D" role="3clF45" />
+      <node concept="3Tm1VV" id="1tDstbgDG6d" role="1B3o_S" />
+      <node concept="3clFbS" id="1tDstbgDG6e" role="3clF47">
+        <node concept="3clFbF" id="1tDstbgDGAy" role="3cqZAp">
+          <node concept="2YIFZM" id="1tDstbgDGA$" role="3clFbG">
+            <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+            <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+            <node concept="Xl_RD" id="1tDstbgDGA_" role="37wK5m">
+              <property role="Xl_RC" value="user.name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="1tDstbgDGBd" role="lGtFl">
+        <node concept="TZ5HA" id="1tDstbgDGBe" role="TZ5H$">
+          <node concept="1dT_AC" id="1tDstbgDGBf" role="1dT_Ay">
+            <property role="1dT_AB" value="TODO : Replace with SPreferences given name" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1tDstbgDG3w" role="jymVt" />
+    <node concept="3Tm1VV" id="1tDstbgDG3e" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="4Wn4fzjJqEK">
+    <property role="TrG5h" value="SolutionPathUtil" />
+    <node concept="2tJIrI" id="4Wn4fzjJqEL" role="jymVt" />
+    <node concept="2YIFZL" id="4Wn4fzjJqEM" role="jymVt">
+      <property role="TrG5h" value="getSolutionRootPathForNode" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="4Wn4fzjJqEN" role="3clF47">
+        <node concept="3cpWs6" id="1$T4OZGSoiw" role="3cqZAp">
+          <node concept="2YIFZM" id="1$T4OZGSoiy" role="3cqZAk">
+            <ref role="37wK5l" to="48kf:4Wn4fzjJqEM" resolve="getSolutionRootPathForNode" />
+            <ref role="1Pybhc" to="48kf:4Wn4fzjJqEK" resolve="SolutionUtil" />
+            <node concept="37vLTw" id="1$T4OZGSoiz" role="37wK5m">
+              <ref role="3cqZAo" node="4Wn4fzjJqFe" resolve="n" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4Wn4fzjJqFe" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="4Wn4fzjJqFf" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="4Wn4fzjMpg6" role="3clF45" />
+      <node concept="3Tm1VV" id="4Wn4fzjJqFh" role="1B3o_S" />
+      <node concept="2AHcQZ" id="1$T4OZGSp6x" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+      <node concept="P$JXv" id="1$T4OZGSp6u" role="lGtFl">
+        <node concept="TZ5HI" id="1$T4OZGSp6v" role="3nqlJM">
+          <node concept="TZ5HA" id="1$T4OZGSp6w" role="3HnX3l">
+            <node concept="1dT_AC" id="1$T4OZGSp8J" role="1dT_Ay">
+              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="GKLijSQbSR" role="jymVt">
+      <property role="TrG5h" value="createFilenameRelativeToNodeSolution" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="GKLijSQbSS" role="3clF47">
+        <node concept="3cpWs6" id="1$T4OZGSotM" role="3cqZAp">
+          <node concept="2YIFZM" id="1$T4OZGSoDJ" role="3cqZAk">
+            <ref role="37wK5l" to="48kf:GKLijSQbSR" resolve="createFilenameRelativeToNodeSolution" />
+            <ref role="1Pybhc" to="48kf:4Wn4fzjJqEK" resolve="SolutionUtil" />
+            <node concept="37vLTw" id="1$T4OZGSoJJ" role="37wK5m">
+              <ref role="3cqZAo" node="GKLijSQbTG" resolve="n" />
+            </node>
+            <node concept="37vLTw" id="1$T4OZGSoXm" role="37wK5m">
+              <ref role="3cqZAo" node="GKLijSQdF9" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="GKLijSQbTG" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="GKLijSQbTH" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="GKLijSQdF9" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="GKLijSQdKZ" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="GKLijSQbTI" role="3clF45" />
+      <node concept="3Tm1VV" id="GKLijSQbTJ" role="1B3o_S" />
+      <node concept="2AHcQZ" id="1$T4OZGSp7C" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+      <node concept="P$JXv" id="1$T4OZGSp7_" role="lGtFl">
+        <node concept="TZ5HI" id="1$T4OZGSp7A" role="3nqlJM">
+          <node concept="TZ5HA" id="1$T4OZGSp7B" role="3HnX3l">
+            <node concept="1dT_AC" id="1$T4OZGSp8M" role="1dT_Ay">
+              <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4Wn4fzjP4Fi" role="jymVt" />
+    <node concept="2tJIrI" id="4Wn4fzjJqFi" role="jymVt" />
+    <node concept="3Tm1VV" id="4Wn4fzjJqFj" role="1B3o_S" />
+    <node concept="2AHcQZ" id="1$T4OZGSoYC" role="2AJF6D">
+      <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+    </node>
+    <node concept="3UR2Jj" id="1$T4OZGSoY_" role="lGtFl">
+      <node concept="TZ5HI" id="1$T4OZGSoYA" role="3nqlJM">
+        <node concept="TZ5HA" id="1$T4OZGSoYB" role="3HnX3l">
+          <node concept="1dT_AC" id="1$T4OZGSoZg" role="1dT_Ay">
+            <property role="1dT_AB" value=" Use com.mbeddr.mpsutil.filepicker.behavior.SolutionUtil" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
