@@ -4,7 +4,6 @@
   <languages>
     <use id="935bff03-e393-4547-a3a2-60335e0cad25" name="com.mbeddr.mpsutil.ccmenu" version="-1" />
     <use id="f92af8d7-1fae-4067-8109-17acf80f8e58" name="com.mbeddr.mpsutil.ccmenu.reftarget" version="-1" />
-    <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,9 +25,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
     </language>
     <language id="935bff03-e393-4547-a3a2-60335e0cad25" name="com.mbeddr.mpsutil.ccmenu">
@@ -56,27 +52,6 @@
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
     </language>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
-        <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
-      <concept id="6294660000051228482" name="com.mbeddr.mpsutil.contextactions.structure.ContextActions" flags="ng" index="NGJ2D">
-        <child id="6294660000051228527" name="sources" index="NGJ24" />
-        <child id="8645458101902647485" name="isApplicable" index="3V_frF" />
-      </concept>
-      <concept id="8622996907887110379" name="com.mbeddr.mpsutil.contextactions.structure.ActionSourceWithExtendingFolder" flags="ng" index="Yj2bF">
-        <reference id="8622996907887110633" name="extendedFolder" index="Yj2fD" />
-        <child id="8622996907887196513" name="sources" index="YgRdx" />
-      </concept>
-      <concept id="8622996907886979596" name="com.mbeddr.mpsutil.contextactions.structure.ConceptInstanceAction" flags="ng" index="Yjy0c">
-        <property id="8622996907887490625" name="allowInChildren" index="YhZL1" />
-        <reference id="8622996907887556675" name="contextConceptRole" index="YhJ93" />
-        <reference id="8622996907887490356" name="contextConcept" index="YhZWO" />
-        <reference id="8622996907886979924" name="concept" index="Yjy5k" />
-      </concept>
-    </language>
   </registry>
   <node concept="2Kv_g1" id="1WjrBsNEdeJ">
     <node concept="1UxR_V" id="1WjrBsNEe8Y" role="2GiUwh">
@@ -97,27 +72,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="NGJ2D" id="5tr7YH$UwTY">
-    <property role="TrG5h" value="MbeddrUtilBaseContextActions" />
-    <node concept="Yj2bF" id="51dRNfgCFXE" role="NGJ24">
-      <ref role="Yj2fD" to="lkz5:23_jb1uTAN" resolve="Module Content" />
-      <node concept="Yjy0c" id="7uF2w19W2i7" role="YgRdx">
-        <property role="YhZL1" value="true" />
-        <ref role="Yjy5k" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
-        <ref role="YhJ93" to="x27k:5_l8w1EmTdh" resolve="contents" />
-        <ref role="YhZWO" to="x27k:5_l8w1EmTcX" resolve="Module" />
-      </node>
-      <node concept="Yjy0c" id="23_jb1_yVm" role="YgRdx">
-        <property role="YhZL1" value="true" />
-        <ref role="Yjy5k" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
-        <ref role="YhZWO" to="x27k:5_l8w1EmTcX" resolve="Module" />
-        <ref role="YhJ93" to="x27k:5_l8w1EmTdh" resolve="contents" />
-      </node>
-    </node>
-    <node concept="3clFbT" id="13LyZYiLqnI" role="3V_frF">
-      <property role="3clFbU" value="true" />
     </node>
   </node>
 </model>
