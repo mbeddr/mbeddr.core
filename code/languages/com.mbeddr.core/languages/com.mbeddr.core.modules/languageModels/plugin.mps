@@ -4,7 +4,6 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
-    <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="-1" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
@@ -19,7 +18,6 @@
     <import index="rcia" ref="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="sn11" ref="r:836426ab-a6f4-4fa3-9a9c-34c02ed6ab5d(jetbrains.mps.ide.icons)" />
-    <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="g4jo" ref="r:d98d04fb-4a60-4106-81cf-6cb40b67de4d(jetbrains.mps.ide.findusages.model)" />
@@ -239,21 +237,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
-      <concept id="6294660000051228482" name="com.mbeddr.mpsutil.contextactions.structure.ContextActions" flags="ng" index="NGJ2D">
-        <child id="6294660000051228527" name="sources" index="NGJ24" />
-        <child id="8645458101902647485" name="isApplicable" index="3V_frF" />
-      </concept>
-      <concept id="8622996907886979596" name="com.mbeddr.mpsutil.contextactions.structure.ConceptInstanceAction" flags="ng" index="Yjy0c">
-        <property id="8622996907887490625" name="allowInChildren" index="YhZL1" />
-        <reference id="8622996907887556675" name="contextConceptRole" index="YhJ93" />
-        <reference id="8622996907887490356" name="contextConcept" index="YhZWO" />
-        <reference id="8622996907886979924" name="concept" index="Yjy5k" />
-      </concept>
-      <concept id="37037267176059472" name="com.mbeddr.mpsutil.contextactions.structure.ActionSourceWithExtensibleFolder" flags="ng" index="31Ymty">
-        <child id="37037267176059477" name="sources" index="31YmtB" />
-      </concept>
-    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -275,21 +258,6 @@
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
-  <node concept="NGJ2D" id="5tr7YH$UwTY">
-    <property role="TrG5h" value="ModuleContentContextActions" />
-    <node concept="31Ymty" id="23_jb1uTAN" role="NGJ24">
-      <property role="TrG5h" value="Module Content" />
-      <node concept="Yjy0c" id="1TMMPgXcFHS" role="31YmtB">
-        <property role="YhZL1" value="true" />
-        <ref role="YhJ93" to="x27k:5_l8w1EmTdh" resolve="contents" />
-        <ref role="Yjy5k" to="x27k:5_l8w1EmTvx" resolve="Function" />
-        <ref role="YhZWO" to="x27k:5_l8w1EmTcX" resolve="Module" />
-      </node>
-    </node>
-    <node concept="3clFbT" id="13LyZYiLqnI" role="3V_frF">
-      <property role="3clFbU" value="true" />
-    </node>
-  </node>
   <node concept="2DaZZR" id="6dAEaqvarET" />
   <node concept="312cEu" id="6yOdP6c3Y0b">
     <property role="TrG5h" value="ImportModuleParticipant" />
