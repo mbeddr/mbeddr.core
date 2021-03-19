@@ -7,7 +7,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports>
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
@@ -19,6 +18,8 @@
     <import index="7lvn" ref="r:4e6037e6-9135-44f8-9403-04d79fc40f4a(jetbrains.mps.ide.editor.util)" />
     <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -305,6 +306,27 @@
           </node>
         </node>
         <node concept="3clFbH" id="3C$MSDkznmG" role="3cqZAp" />
+        <node concept="3cpWs8" id="6OxU5jV8P6A" role="3cqZAp">
+          <node concept="3cpWsn" id="6OxU5jV8P6B" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="6OxU5jV8OjX" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="6OxU5jV8P6C" role="33vP2m">
+              <node concept="37vLTw" id="6OxU5jV8P6D" role="2Oq$k0">
+                <ref role="3cqZAo" node="3C$MSDkzkEQ" resolve="event" />
+              </node>
+              <node concept="liA8E" id="6OxU5jV8P6E" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey)" resolve="getData" />
+                <node concept="10M0yZ" id="6OxU5jV8P6F" role="37wK5m">
+                  <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
+                  <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="3C$MSDkBJ4O" role="3cqZAp">
           <node concept="3clFbS" id="3C$MSDkBJ4R" role="3clFbx">
             <node concept="3cpWs8" id="3C$MSDkDbLB" role="3cqZAp">
@@ -332,12 +354,8 @@
               <node concept="3clFbS" id="3C$MSDkDdcY" role="3clFbx">
                 <node concept="3clFbF" id="3C$MSDkDntH" role="3cqZAp">
                   <node concept="2OqwBi" id="3C$MSDkDnFH" role="3clFbG">
-                    <node concept="2YIFZM" id="3C$MSDkDnEO" role="2Oq$k0">
-                      <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
-                      <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-                    </node>
                     <node concept="liA8E" id="3C$MSDkDq4m" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                      <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
                       <node concept="2ShNRf" id="3C$MSDkDq5E" role="37wK5m">
                         <node concept="YeOm9" id="3C$MSDkDsub" role="2ShVmc">
                           <node concept="1Y3b0j" id="3C$MSDkDsue" role="YeSDq">
@@ -414,6 +432,13 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="2YIFZM" id="6OxU5jV8MuP" role="2Oq$k0">
+                      <ref role="37wK5l" to="alof:~ProjectHelper.getModelAccess(com.intellij.openapi.project.Project)" resolve="getModelAccess" />
+                      <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                      <node concept="37vLTw" id="6OxU5jV8ToU" role="37wK5m">
+                        <ref role="3cqZAo" node="6OxU5jV8P6B" resolve="project" />
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="3cpWs6" id="3C$MSDkDeMl" role="3cqZAp" />
@@ -428,17 +453,8 @@
           </node>
           <node concept="3y3z36" id="3C$MSDkBJb7" role="3clFbw">
             <node concept="10Nm6u" id="3C$MSDkBJb8" role="3uHU7w" />
-            <node concept="2OqwBi" id="3C$MSDkBJb9" role="3uHU7B">
-              <node concept="37vLTw" id="3C$MSDkBJba" role="2Oq$k0">
-                <ref role="3cqZAo" node="3C$MSDkzkEQ" resolve="event" />
-              </node>
-              <node concept="liA8E" id="3C$MSDkBJbb" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey)" resolve="getData" />
-                <node concept="10M0yZ" id="3C$MSDkBJbc" role="37wK5m">
-                  <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
-                  <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="6OxU5jV8P6G" role="3uHU7B">
+              <ref role="3cqZAo" node="6OxU5jV8P6B" resolve="project" />
             </node>
           </node>
         </node>
@@ -725,12 +741,8 @@
         </node>
         <node concept="3clFbF" id="3C$MSDkzsPa" role="3cqZAp">
           <node concept="2OqwBi" id="3C$MSDkztgW" role="3clFbG">
-            <node concept="2YIFZM" id="3C$MSDkzt9n" role="2Oq$k0">
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
-            </node>
             <node concept="liA8E" id="3C$MSDkztWZ" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
               <node concept="2ShNRf" id="3C$MSDkzu0o" role="37wK5m">
                 <node concept="YeOm9" id="3C$MSDkzBrM" role="2ShVmc">
                   <node concept="1Y3b0j" id="3C$MSDkzBrP" role="YeSDq">
@@ -784,6 +796,13 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="6OxU5jV8FUo" role="2Oq$k0">
+              <ref role="37wK5l" to="alof:~ProjectHelper.getModelAccess(com.intellij.openapi.project.Project)" resolve="getModelAccess" />
+              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+              <node concept="37vLTw" id="6OxU5jV8FUp" role="37wK5m">
+                <ref role="3cqZAo" node="3C$MSDk$deF" resolve="project" />
               </node>
             </node>
           </node>
@@ -913,6 +932,27 @@
           </node>
         </node>
         <node concept="3clFbH" id="5_O4MwJJvvy" role="3cqZAp" />
+        <node concept="3cpWs8" id="6OxU5jV8WAg" role="3cqZAp">
+          <node concept="3cpWsn" id="6OxU5jV8WAh" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="6OxU5jV8Vri" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="6OxU5jV8WAi" role="33vP2m">
+              <node concept="37vLTw" id="6OxU5jV8WAj" role="2Oq$k0">
+                <ref role="3cqZAo" node="5_O4MwJJvvs" resolve="event" />
+              </node>
+              <node concept="liA8E" id="6OxU5jV8WAk" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey)" resolve="getData" />
+                <node concept="10M0yZ" id="6OxU5jV8WAl" role="37wK5m">
+                  <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
+                  <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="5_O4MwJJvvz" role="3cqZAp">
           <node concept="3clFbS" id="5_O4MwJJvv$" role="3clFbx">
             <node concept="3cpWs8" id="5_O4MwJJvv_" role="3cqZAp">
@@ -940,12 +980,8 @@
               <node concept="3clFbS" id="5_O4MwJJvvH" role="3clFbx">
                 <node concept="3clFbF" id="5_O4MwJJvvI" role="3cqZAp">
                   <node concept="2OqwBi" id="5_O4MwJJvvJ" role="3clFbG">
-                    <node concept="2YIFZM" id="5_O4MwJJvvK" role="2Oq$k0">
-                      <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-                      <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
-                    </node>
                     <node concept="liA8E" id="5_O4MwJJvvL" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                      <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
                       <node concept="2ShNRf" id="5_O4MwJJvvM" role="37wK5m">
                         <node concept="YeOm9" id="5_O4MwJJvvN" role="2ShVmc">
                           <node concept="1Y3b0j" id="5_O4MwJJvvO" role="YeSDq">
@@ -1022,6 +1058,13 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="2YIFZM" id="6OxU5jV93B$" role="2Oq$k0">
+                      <ref role="37wK5l" to="alof:~ProjectHelper.getModelAccess(com.intellij.openapi.project.Project)" resolve="getModelAccess" />
+                      <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                      <node concept="37vLTw" id="6OxU5jV98aW" role="37wK5m">
+                        <ref role="3cqZAo" node="6OxU5jV8WAh" resolve="project" />
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="3cpWs6" id="5_O4MwJJvwj" role="3cqZAp" />
@@ -1036,17 +1079,8 @@
           </node>
           <node concept="3y3z36" id="5_O4MwJJvwn" role="3clFbw">
             <node concept="10Nm6u" id="5_O4MwJJvwo" role="3uHU7w" />
-            <node concept="2OqwBi" id="5_O4MwJJvwp" role="3uHU7B">
-              <node concept="37vLTw" id="5_O4MwJJvwq" role="2Oq$k0">
-                <ref role="3cqZAo" node="5_O4MwJJvvs" resolve="event" />
-              </node>
-              <node concept="liA8E" id="5_O4MwJJvwr" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey)" resolve="getData" />
-                <node concept="10M0yZ" id="5_O4MwJJvws" role="37wK5m">
-                  <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
-                  <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="6OxU5jV8WAm" role="3uHU7B">
+              <ref role="3cqZAo" node="6OxU5jV8WAh" resolve="project" />
             </node>
           </node>
         </node>
@@ -1366,12 +1400,8 @@
         </node>
         <node concept="3clFbF" id="5_O4MwJJvyb" role="3cqZAp">
           <node concept="2OqwBi" id="5_O4MwJJvyc" role="3clFbG">
-            <node concept="2YIFZM" id="5_O4MwJJvyd" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-            </node>
             <node concept="liA8E" id="5_O4MwJJvye" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
               <node concept="2ShNRf" id="5_O4MwJJvyf" role="37wK5m">
                 <node concept="YeOm9" id="5_O4MwJJvyg" role="2ShVmc">
                   <node concept="1Y3b0j" id="5_O4MwJJvyh" role="YeSDq">
@@ -1425,6 +1455,13 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="6OxU5jV9amH" role="2Oq$k0">
+              <ref role="37wK5l" to="alof:~ProjectHelper.getModelAccess(com.intellij.openapi.project.Project)" resolve="getModelAccess" />
+              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+              <node concept="37vLTw" id="6OxU5jV9dKF" role="37wK5m">
+                <ref role="3cqZAo" node="5_O4MwJJvxb" resolve="project" />
               </node>
             </node>
           </node>
