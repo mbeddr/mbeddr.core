@@ -9,7 +9,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" languageLevel="JAVA_9">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
