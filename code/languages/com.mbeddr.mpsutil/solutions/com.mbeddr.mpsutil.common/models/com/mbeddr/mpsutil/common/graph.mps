@@ -323,6 +323,7 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1240217271293" name="jetbrains.mps.baseLanguage.collections.structure.LinkedHashSetCreator" flags="nn" index="32HrFt" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
       <concept id="1201872418428" name="jetbrains.mps.baseLanguage.collections.structure.GetKeysOperation" flags="nn" index="3lbrtF" />
@@ -4221,8 +4222,8 @@
                               </node>
                             </node>
                             <node concept="2ShNRf" id="2G8yZXxJikE" role="33vP2m">
-                              <node concept="2i4dXS" id="2G8yZXxJikF" role="2ShVmc">
-                                <node concept="16syzq" id="2G8yZXxJikG" role="HW$YZ">
+                              <node concept="32HrFt" id="7S5y3TUgeJ6" role="2ShVmc">
+                                <node concept="16syzq" id="7S5y3TUghIb" role="HW$YZ">
                                   <ref role="16sUi3" node="2G8yZXxJidG" resolve="T" />
                                 </node>
                               </node>
