@@ -1293,18 +1293,6 @@
               <node concept="2ShNRf" id="2SEaHiJTLau" role="37wK5m">
                 <node concept="1pGfFk" id="2SEaHiJTLJ3" role="2ShVmc">
                   <ref role="37wK5l" node="4DC8Sn_Vuy2" resolve="MIPositionProvider" />
-                  <node concept="10QFUN" id="3dTvrlqB_C_" role="37wK5m">
-                    <node concept="3uibUv" id="3dTvrlqB_Ua" role="10QFUM">
-                      <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
-                    </node>
-                    <node concept="2YIFZM" id="3dTvrlqB$5y" role="10QFUP">
-                      <ref role="37wK5l" to="alof:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project)" resolve="toMPSProject" />
-                      <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                      <node concept="37vLTw" id="3dTvrlqB$Cz" role="37wK5m">
-                        <ref role="3cqZAo" node="5219jcoZh5R" resolve="project" />
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
               <node concept="37vLTw" id="2SEaHiJTLJf" role="37wK5m">
@@ -51783,22 +51771,9 @@
       <ref role="3uigEE" to="8fo5:67iEga6IfD2" resolve="NodePositionProvider" />
     </node>
     <node concept="3clFbW" id="4DC8Sn_Vuy2" role="jymVt">
-      <node concept="37vLTG" id="4d72gVMt$g7" role="3clF46">
-        <property role="TrG5h" value="mpsProject" />
-        <node concept="3uibUv" id="4d72gVMt$g6" role="1tU5fm">
-          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
-        </node>
-      </node>
       <node concept="3cqZAl" id="4DC8Sn_Vuy3" role="3clF45" />
       <node concept="3Tm1VV" id="4DC8Sn_Vuy4" role="1B3o_S" />
-      <node concept="3clFbS" id="4DC8Sn_Vuy5" role="3clF47">
-        <node concept="XkiVB" id="3dTvrlqBxyw" role="3cqZAp">
-          <ref role="37wK5l" to="8fo5:67iEga6IfD4" resolve="NodePositionProvider" />
-          <node concept="37vLTw" id="3dTvrlqBydr" role="37wK5m">
-            <ref role="3cqZAo" node="4d72gVMt$g7" resolve="mpsProject" />
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="4DC8Sn_Vuy5" role="3clF47" />
     </node>
     <node concept="2tJIrI" id="2mpKoynWFRI" role="jymVt" />
     <node concept="3clFb_" id="2mpKoynWG0_" role="jymVt">
@@ -56170,6 +56145,40 @@
       <node concept="3cqZAl" id="2SEaHiJTL9z" role="3clF45" />
       <node concept="3Tm1VV" id="2SEaHiJTL9$" role="1B3o_S" />
       <node concept="3clFbS" id="2SEaHiJTL9_" role="3clF47">
+        <node concept="3SKdUt" id="46A_fILKOyC" role="3cqZAp">
+          <node concept="1PaTwC" id="46A_fILKOyD" role="1aUNEU">
+            <node concept="3oM_SD" id="46A_fILKOyR" role="1PaTwD">
+              <property role="3oM_SC" value="FIXME" />
+            </node>
+            <node concept="3oM_SD" id="46A_fILKOyT" role="1PaTwD">
+              <property role="3oM_SC" value="PositionProviders" />
+            </node>
+            <node concept="3oM_SD" id="46A_fILKOGj" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="46A_fILKOGB" role="1PaTwD">
+              <property role="3oM_SC" value="contributed" />
+            </node>
+            <node concept="3oM_SD" id="46A_fILKOH4" role="1PaTwD">
+              <property role="3oM_SC" value="through" />
+            </node>
+            <node concept="3oM_SD" id="46A_fILKOHq" role="1PaTwD">
+              <property role="3oM_SC" value="extension" />
+            </node>
+            <node concept="3oM_SD" id="46A_fILKOHD" role="1PaTwD">
+              <property role="3oM_SC" value="point" />
+            </node>
+            <node concept="3oM_SD" id="46A_fILKOHL" role="1PaTwD">
+              <property role="3oM_SC" value="now," />
+            </node>
+            <node concept="3oM_SD" id="46A_fILKOIB" role="1PaTwD">
+              <property role="3oM_SC" value="PLEASE" />
+            </node>
+            <node concept="3oM_SD" id="46A_fILKOIT" role="1PaTwD">
+              <property role="3oM_SC" value="FIX" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2SEaHiJTL9E" role="3cqZAp">
           <node concept="2OqwBi" id="2SEaHiJTL9F" role="3clFbG">
             <node concept="2YIFZM" id="2SEaHiJTL9G" role="2Oq$k0">
