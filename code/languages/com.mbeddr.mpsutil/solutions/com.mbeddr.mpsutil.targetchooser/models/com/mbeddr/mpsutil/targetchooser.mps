@@ -10745,7 +10745,7 @@
       <node concept="3Tmbuc" id="66R$0mlTZfw" role="1B3o_S" />
       <node concept="3clFbS" id="66R$0mlS_0G" role="3clF47">
         <node concept="XkiVB" id="66R$0mlS_0I" role="3cqZAp">
-          <ref role="37wK5l" to="7e8u:~MPSTreeSpeedSearch.&lt;init&gt;(javax.swing.JTree)" resolve="MPSTreeSpeedSearch" />
+          <ref role="37wK5l" to="lzb2:~SpeedSearchBase.&lt;init&gt;(javax.swing.JComponent)" resolve="SpeedSearchBase" />
           <node concept="37vLTw" id="66R$0mlS_0M" role="37wK5m">
             <ref role="3cqZAo" node="66R$0mlS_0J" resolve="tree" />
           </node>
@@ -12094,8 +12094,8 @@
       <node concept="3Tmbuc" id="2B$UZQOfdUL" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="66R$0mlSfy6" role="1B3o_S" />
-    <node concept="3uibUv" id="66R$0mlSxfl" role="1zkMxy">
-      <ref role="3uigEE" to="7e8u:~MPSTreeSpeedSearch" resolve="MPSTreeSpeedSearch" />
+    <node concept="3uibUv" id="46A_fILK3VP" role="1zkMxy">
+      <ref role="3uigEE" to="lzb2:~SpeedSearchBase" resolve="SpeedSearchBase" />
     </node>
   </node>
 </model>
