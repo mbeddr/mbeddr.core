@@ -161,7 +161,7 @@
       <property role="20kJfa" value="object" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4342692121161094142" />
-      <ref role="20lvS9" node="3L4lRB2GdlQ" resolve="JSONObject" />
+      <ref role="20lvS9" node="3L4lRB2GdnB" resolve="IValue" />
     </node>
     <node concept="PrWs8" id="6Cwq1JbSPoF" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
