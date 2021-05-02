@@ -2092,5 +2092,45 @@
       <ref role="1YaFvo" to="vs0r:39ze6xJWX1e" resolve="ITemporaryConcept" />
     </node>
   </node>
+  <node concept="18kY7G" id="1aqla08PFpy">
+    <property role="TrG5h" value="check_Deprecated_ListOfModelsScope" />
+    <property role="3GE5qa" value="assessment.scope" />
+    <node concept="3clFbS" id="1aqla08PFpz" role="18ibNy">
+      <node concept="3clFbF" id="1aqla08PO0l" role="3cqZAp">
+        <node concept="2OqwBi" id="1aqla08PQha" role="3clFbG">
+          <node concept="2OqwBi" id="1aqla08POb2" role="2Oq$k0">
+            <node concept="1YBJjd" id="1aqla08PO0j" role="2Oq$k0">
+              <ref role="1YBMHb" node="1aqla08PFp_" resolve="listOfModelsScope" />
+            </node>
+            <node concept="3Tsc0h" id="1aqla08POGw" role="2OqNvi">
+              <ref role="3TtcxE" to="vs0r:4WU0y9pWgVa" resolve="models_old" />
+            </node>
+          </node>
+          <node concept="2es0OD" id="1aqla08PS8e" role="2OqNvi">
+            <node concept="1bVj0M" id="1aqla08PS8g" role="23t8la">
+              <node concept="3clFbS" id="1aqla08PS8h" role="1bW5cS">
+                <node concept="2MkqsV" id="1aqla08PSbJ" role="3cqZAp">
+                  <node concept="37vLTw" id="1aqla08PSjC" role="1urrMF">
+                    <ref role="3cqZAo" node="1aqla08PS8i" resolve="it" />
+                  </node>
+                  <node concept="Xl_RD" id="1aqla08PSdY" role="2MkJ7o">
+                    <property role="Xl_RC" value="This property is deprecated. Please use the new property or execute rerunnable migrations" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="1aqla08PS8i" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="2jxLKc" id="1aqla08PS8j" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1aqla08PFp_" role="1YuTPh">
+      <property role="TrG5h" value="listOfModelsScope" />
+      <ref role="1YaFvo" to="vs0r:4WU0y9pWgP_" resolve="ListOfModelsScope" />
+    </node>
+  </node>
 </model>
 
