@@ -12716,14 +12716,24 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5vQUrnx8Uek" role="3cqZAp">
-          <node concept="1rXfSq" id="5vQUrnx8Uel" role="3clFbG">
-            <ref role="37wK5l" node="5vQUrnx98p1" resolve="applyFilter" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="49MflvORFPV" role="3cqZAp">
-          <node concept="1rXfSq" id="49MflvORFPT" role="3clFbG">
-            <ref role="37wK5l" node="49MflvOR_Li" resolve="applyToolbar" />
+        <node concept="3clFbF" id="24qwin8x0Ns" role="3cqZAp">
+          <node concept="2YIFZM" id="24qwin8x0Rd" role="3clFbG">
+            <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+            <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
+            <node concept="1bVj0M" id="24qwin8x6Nl" role="37wK5m">
+              <node concept="3clFbS" id="24qwin8x6Nm" role="1bW5cS">
+                <node concept="3clFbF" id="24qwin8x7pu" role="3cqZAp">
+                  <node concept="1rXfSq" id="24qwin8x7pt" role="3clFbG">
+                    <ref role="37wK5l" node="5vQUrnx98p1" resolve="applyFilter" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="24qwin8x8lu" role="3cqZAp">
+                  <node concept="1rXfSq" id="24qwin8x8ls" role="3clFbG">
+                    <ref role="37wK5l" node="49MflvOR_Li" resolve="applyToolbar" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
