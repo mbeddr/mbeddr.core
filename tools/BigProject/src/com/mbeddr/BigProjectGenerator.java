@@ -6,20 +6,30 @@ import java.io.FileWriter;
 
 public class BigProjectGenerator {
 
-    private static File projectDir = new File("P:\\mbeddr.core-2020.1");
-    private static File modulesXml = new File(projectDir + "/tmp/allProject/.mps/modules.xml");
+    private static final String MODULES_XML_PATH = "/tools/BigProject/.mps/modules.xml";
 
     private static int totalLanguages = 0;
     private static int totalSolutions = 0;
     private static int totalDevkits = 0;
 
     public static void main(String[] args) throws Exception {
-        modulesXml.getParentFile().mkdirs();
 
+        File projectDir = new File(System.getProperty("user.dir"));
+        while (!new File(projectDir, ".git").exists()) {
+            projectDir = projectDir.getParentFile();
+            if (projectDir == null) {
+                System.err.print("Error: could not determine project directory root");
+                System.exit(-1);
+            }
+        }
+
+        System.out.println("Searching for modules under " + projectDir);
 
         File langDir = new File(projectDir + "/code/languages");
         File testsDir = new File(projectDir + "/code/tests");
 
+        File modulesXml = new File(projectDir + MODULES_XML_PATH);
+        modulesXml.getParentFile().mkdirs();
         BufferedWriter w = new BufferedWriter(new FileWriter(modulesXml));
 
         w.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
@@ -38,6 +48,7 @@ public class BigProjectGenerator {
 
         w.close();
 
+        System.out.println("Updated " + modulesXml);
         System.out.println("=== TOTAL ===");
         System.out.println("Languages: " + totalLanguages);
         System.out.println("Solutions: " + totalSolutions);
