@@ -513,11 +513,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="5AvhxT48mB_" role="3bR37C">
-          <node concept="3bR9La" id="5AvhxT48mBA" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1xb0AuwMYDt" resolve="Hamcrest" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6xaPNaK93ok" role="3bR37C">
           <node concept="3bR9La" id="6xaPNaK93ol" role="1SiIV1">
             <ref role="3bR37D" to="al5i:6xaPNaK8EVQ" resolve="org.mockito" />

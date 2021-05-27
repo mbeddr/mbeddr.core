@@ -107,12 +107,10 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
-        <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
@@ -124,6 +122,12 @@
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
         <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
+      </concept>
+      <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
+        <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
+        <property id="8137134783396676838" name="extracted" index="1HemKv" />
+        <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
+        <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
         <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
@@ -338,7 +342,6 @@
         <property role="BnDLt" value="true" />
         <property role="3LESm3" value="7466d292-a28b-4345-a8e6-6b8b334ce6ca" />
         <property role="TrG5h" value="test.ts.requirements" />
-        <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAnzVf" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAnzUi" resolve="mbeddr.cc" />
@@ -354,31 +357,26 @@
         </node>
         <node concept="1SiIV0" id="2BbcAuJiUlo" role="3bR37C">
           <node concept="3bR9La" id="2BbcAuJiUlp" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
         <node concept="1SiIV0" id="2BbcAuJiUlq" role="3bR37C">
           <node concept="3bR9La" id="2BbcAuJiUlr" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
         <node concept="1SiIV0" id="5x8uHKBgKSf" role="3bR37C">
           <node concept="3bR9La" id="5x8uHKBgKSg" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmoAOb" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmoAOc" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:523uQqYgqH4" resolve="com.mbeddr.cc.requirements.c" />
           </node>
         </node>
         <node concept="1SiIV0" id="6RmoJr9tezc" role="3bR37C">
           <node concept="3bR9La" id="6RmoJr9tezd" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
           </node>
         </node>
@@ -398,12 +396,55 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="6oqFD4Ukm2K" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4Ukm2L" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4Ukm2u" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAnzUi" resolve="mbeddr.cc" />
+              <node concept="2Ry0Ak" id="6oqFD4Ukm2v" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6oqFD4Ukm2w" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ts.cc.requirements" />
+                  <node concept="2Ry0Ak" id="6oqFD4Ukm2x" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4Ukm2M" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="6oqFD4Ukm35" role="3bR31x">
+          <property role="3ZfqAx" value="test" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4Ukm36" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4Ukm2N" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAnzUi" resolve="mbeddr.cc" />
+              <node concept="2Ry0Ak" id="6oqFD4Ukm2O" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6oqFD4Ukm2P" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ts.cc.requirements" />
+                  <node concept="2Ry0Ak" id="6oqFD4Ukm2Q" role="2Ry0An">
+                    <property role="2Ry0Am" value="test" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4Ukm37" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7eF9rfAnzVo" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.ts.cc.var.c" />
         <property role="3LESm3" value="7155c081-a292-4e73-b275-f5d60082f861" />
-        <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAnzVp" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAnzUi" resolve="mbeddr.cc" />
@@ -419,7 +460,6 @@
         </node>
         <node concept="1SiIV0" id="6qOUCDpMrFe" role="3bR37C">
           <node concept="3bR9La" id="6qOUCDpMrFf" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
           </node>
         </node>
@@ -439,12 +479,33 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="6oqFD4Ukm3q" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4Ukm3r" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4Ukm38" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAnzUi" resolve="mbeddr.cc" />
+              <node concept="2Ry0Ak" id="6oqFD4Ukm39" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6oqFD4Ukm3a" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ts.cc.var.c" />
+                  <node concept="2Ry0Ak" id="6oqFD4Ukm3b" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4Ukm3s" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="352CMsvKMzF" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.ts.cc.var.composition" />
         <property role="3LESm3" value="02934d30-d149-4f7d-864e-7f376629ae8f" />
-        <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="352CMsvKM_L" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAnzUi" resolve="mbeddr.cc" />
@@ -460,7 +521,6 @@
         </node>
         <node concept="1SiIV0" id="352CMsvKMJ7" role="3bR37C">
           <node concept="3bR9La" id="352CMsvKMJ8" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:1Ua9OmPacfS" resolve="com.mbeddr.cc.var.composition.c" />
           </node>
         </node>
@@ -477,6 +537,28 @@
                   <property role="2Ry0Am" value="test.ts.cc.var.composition" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="6oqFD4Ukm3J" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4Ukm3K" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4Ukm3t" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAnzUi" resolve="mbeddr.cc" />
+              <node concept="2Ry0Ak" id="6oqFD4Ukm3u" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6oqFD4Ukm3v" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ts.cc.var.composition" />
+                  <node concept="2Ry0Ak" id="6oqFD4Ukm3w" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4Ukm3L" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -695,7 +777,6 @@
         <property role="BnDLt" value="true" />
         <property role="3LESm3" value="1c56e460-be33-4f73-b77e-7dbe2b90b546" />
         <property role="TrG5h" value="test.ex.cc.fm" />
-        <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAnzZb" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
@@ -725,12 +806,30 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="6oqFD4UklY_" role="3bR31x">
+          <property role="3ZfqAx" value="" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4UklYA" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4UklYm" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
+              <node concept="2Ry0Ak" id="6oqFD4UklYn" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6oqFD4UklYo" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ex.cc.fm" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4UklYB" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7eF9rfAnzZf" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.ex.cc.fmrt" />
         <property role="3LESm3" value="a151b91b-cb79-47fa-bb82-2e83ba393144" />
-        <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAnzZg" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
@@ -760,12 +859,33 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="6oqFD4UklYU" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4UklYV" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4UklYC" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
+              <node concept="2Ry0Ak" id="6oqFD4UklYD" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6oqFD4UklYE" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ex.cc.fmrt" />
+                  <node concept="2Ry0Ak" id="6oqFD4UklYF" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4UklYW" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3YyHFqOc$lE" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.ex.cc.var.composition" />
         <property role="3LESm3" value="17ce2227-d454-4d7c-8840-687f90105cf6" />
-        <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="3YyHFqOc$lF" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
@@ -795,12 +915,33 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="6oqFD4UklZf" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4UklZg" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4UklYX" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
+              <node concept="2Ry0Ak" id="6oqFD4UklYY" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6oqFD4UklYZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ex.cc.var.composition" />
+                  <node concept="2Ry0Ak" id="6oqFD4UklZ0" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4UklZh" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7eF9rfAnzZk" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.ex.cc.requirements.c" />
         <property role="3LESm3" value="573b21f7-42a0-49fb-9b0f-c30c63a6ba81" />
-        <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAnzZl" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
@@ -830,12 +971,33 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="6oqFD4UklZ$" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4UklZ_" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4UklZi" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
+              <node concept="2Ry0Ak" id="6oqFD4UklZj" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6oqFD4UklZk" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ex.cc.requirements.c" />
+                  <node concept="2Ry0Ak" id="6oqFD4UklZl" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4UklZA" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7eF9rfAnzZp" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.ex.requirements.report" />
         <property role="3LESm3" value="ae637d88-c438-4b4f-80e2-a679347cb571" />
-        <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAnzZq" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
@@ -865,12 +1027,33 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="6oqFD4UklZT" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4UklZU" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4UklZB" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
+              <node concept="2Ry0Ak" id="6oqFD4UklZC" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6oqFD4UklZD" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ex.requirements.report" />
+                  <node concept="2Ry0Ak" id="6oqFD4UklZE" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4UklZV" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7eF9rfAnzZu" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.ex.cc.var.c" />
         <property role="3LESm3" value="22b52a4a-182e-4fa0-87fe-af2cf70d2873" />
-        <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAnzZv" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
@@ -897,6 +1080,28 @@
                   <property role="2Ry0Am" value="test.ex.cc.var.c" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="6oqFD4Ukm0e" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4Ukm0f" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4UklZW" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAnzYc" resolve="mbeddr.cc" />
+              <node concept="2Ry0Ak" id="6oqFD4UklZX" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6oqFD4UklZY" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ex.cc.var.c" />
+                  <node concept="2Ry0Ak" id="6oqFD4UklZZ" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4Ukm0g" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>

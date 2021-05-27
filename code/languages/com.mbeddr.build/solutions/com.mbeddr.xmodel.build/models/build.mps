@@ -97,12 +97,10 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
-        <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
@@ -114,6 +112,12 @@
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
         <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
+      </concept>
+      <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
+        <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
+        <property id="8137134783396676838" name="extracted" index="1HemKv" />
+        <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
+        <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
@@ -175,7 +179,6 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.xmodel.tests" />
         <property role="3LESm3" value="1d0d71e8-791e-42d4-80dd-0310f22fc889" />
-        <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="3qyGNHcUVBc" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAuup1" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="3qyGNHcUVBi" role="iGT6I">
@@ -199,7 +202,6 @@
         </node>
         <node concept="1SiIV0" id="3qyGNHcUVC3" role="3bR37C">
           <node concept="3bR9La" id="3qyGNHcUVC4" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:3qyGNHcQWG9" resolve="com.mbeddr.xmodel.plan" />
           </node>
         </node>
@@ -225,6 +227,37 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="6oqFD4UklDH" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4UklDI" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4UklDv" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAuup1" resolve="mbeddr.github.core.home" />
+              <node concept="2Ry0Ak" id="6oqFD4UklDw" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="6oqFD4UklDx" role="2Ry0An">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="6oqFD4UklDy" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.xmodel" />
+                    <node concept="2Ry0Ak" id="6oqFD4UklDz" role="2Ry0An">
+                      <property role="2Ry0Am" value="solutions" />
+                      <node concept="2Ry0Ak" id="6oqFD4UklD$" role="2Ry0An">
+                        <property role="2Ry0Am" value="com.mbeddr.xmodel.tests" />
+                        <node concept="2Ry0Ak" id="6oqFD4UklD_" role="2Ry0An">
+                          <property role="2Ry0Am" value="models" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oqFD4UklDJ" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
