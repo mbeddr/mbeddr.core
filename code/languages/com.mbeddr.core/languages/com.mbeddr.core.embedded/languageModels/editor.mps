@@ -587,7 +587,7 @@
     <ref role="1XX52x" to="nbyu:SwwM9UHCGQ" resolve="InterruptDeclaration" />
     <node concept="3EZMnI" id="SwwM9UHCGU" role="2wV5jI">
       <node concept="PMmxH" id="SwwM9UHCGV" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
         <node concept="pkWqt" id="44fCN1fSci0" role="pqm2j">
           <node concept="3clFbS" id="44fCN1fSci1" role="2VODD2">
             <node concept="3clFbF" id="44fCN1fSci2" role="3cqZAp">
@@ -705,7 +705,7 @@
     <node concept="3EZMnI" id="30ICD1JNRds" role="2wV5jI">
       <node concept="l2Vlx" id="30ICD1JNRdt" role="2iSdaV" />
       <node concept="PMmxH" id="30ICD1JNRdu" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
         <node concept="pkWqt" id="44fCN1fQnzA" role="pqm2j">
           <node concept="3clFbS" id="44fCN1fQnzB" role="2VODD2">
             <node concept="3clFbF" id="44fCN1fQnEM" role="3cqZAp">
@@ -1180,7 +1180,7 @@
     <node concept="3EZMnI" id="4PgLlwdO1gl" role="2wV5jI">
       <node concept="l2Vlx" id="4PgLlwdO1gm" role="2iSdaV" />
       <node concept="PMmxH" id="4PgLlwdO1gn" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
         <node concept="pkWqt" id="4PgLlwdO1go" role="pqm2j">
           <node concept="3clFbS" id="4PgLlwdO1gp" role="2VODD2">
             <node concept="3clFbF" id="4PgLlwdO1gq" role="3cqZAp">

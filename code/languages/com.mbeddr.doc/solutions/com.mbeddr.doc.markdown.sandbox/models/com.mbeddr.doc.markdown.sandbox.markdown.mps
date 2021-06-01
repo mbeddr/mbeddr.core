@@ -40,7 +40,7 @@
         <child id="839091667655686360" name="items" index="rfBmP" />
       </concept>
       <concept id="839091667655686357" name="com.mbeddr.doc.markdown.structure.ListItem" flags="ng" index="rfBmS">
-        <child id="839091667655686358" name="text" index="rfBmV" />
+        <child id="839091667655686358" name="content" index="rfBmV" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
