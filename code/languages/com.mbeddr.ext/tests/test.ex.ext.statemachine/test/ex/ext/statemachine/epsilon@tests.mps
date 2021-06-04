@@ -121,7 +121,6 @@
       <concept id="7851711690674263345" name="com.mbeddr.ext.statemachines.structure.StatemachineType" flags="ng" index="3lBjsv">
         <reference id="7851711690674263346" name="machine" index="3lBjss" />
       </concept>
-      <concept id="2399970992704815523" name="com.mbeddr.ext.statemachines.structure.EpsilonEvent" flags="ng" index="3q9Y_5" />
       <concept id="143519404613863014" name="com.mbeddr.ext.statemachines.structure.SmSetStateTarget" flags="ng" index="1rBQh5">
         <child id="5950410542643524495" name="state" index="3O_q_j" />
       </concept>
@@ -235,9 +234,6 @@
     <node concept="1LFe83" id="21PlWakTqun" role="N3F5h">
       <property role="TrG5h" value="EpsilonSM" />
       <ref role="1LFebw" node="21PlWakTq$o" resolve="S1" />
-      <node concept="3q9Y_5" id="4WcLiIfQRpQ" role="1_Iowf">
-        <property role="TrG5h" value="epsilon" />
-      </node>
       <node concept="2cfOFI" id="21PlWakTquo" role="1_Iowf">
         <property role="TrG5h" value="E" />
       </node>
@@ -354,9 +350,6 @@
     <node concept="1LFe83" id="d8fEubz5Yt" role="N3F5h">
       <property role="TrG5h" value="EpsilonInInitialSM" />
       <ref role="1LFebw" node="d8fEubz5Yw" resolve="S1" />
-      <node concept="3q9Y_5" id="d8fEubz67p" role="1_Iowf">
-        <property role="TrG5h" value="epsilon" />
-      </node>
       <node concept="2cfOFI" id="d8fEubz5Yu" role="1_Iowf">
         <property role="TrG5h" value="evt" />
       </node>

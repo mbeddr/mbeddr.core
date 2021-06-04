@@ -1972,12 +1972,11 @@
   </node>
   <node concept="24kQdi" id="1nOZGI8BYAg">
     <property role="3GE5qa" value="c-integration" />
-    <ref role="1XX52x" to="clqz:1nOZGI8BYAa" resolve="TriggerSelfStatement" />
+    <ref role="1XX52x" to="clqz:1nOZGI8BYAa" resolve="TriggerStatement" />
     <node concept="3EZMnI" id="1nOZGI8BYAi" role="2wV5jI">
       <node concept="l2Vlx" id="1nOZGI8BYAj" role="2iSdaV" />
-      <node concept="3F0ifn" id="1nOZGI8BYAk" role="3EZMnx">
-        <property role="3F0ifm" value="trigger" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <node concept="PMmxH" id="3TCD4YEVWmI" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="3F0ifn" id="1nOZGI8BYAl" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2019,19 +2018,7 @@
           <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="clqz:1nOZGI8BYAc" resolve="args" />
           <node concept="l2Vlx" id="1nOZGI8BYA$" role="2czzBx" />
-          <node concept="1HlG4h" id="1nOZGI8BYA_" role="2czzBI">
-            <node concept="1HfYo3" id="1nOZGI8BYAA" role="1HlULh">
-              <node concept="3TQlhw" id="1nOZGI8BYAB" role="1Hhtcw">
-                <node concept="3clFbS" id="1nOZGI8BYAC" role="2VODD2">
-                  <node concept="3clFbF" id="1nOZGI8BYAD" role="3cqZAp">
-                    <node concept="Xl_RD" id="1nOZGI8BYAE" role="3clFbG">
-                      <property role="Xl_RC" value="" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
+          <node concept="3F0ifn" id="3TCD4YEVWOL" role="2czzBI" />
         </node>
         <node concept="3F0ifn" id="1nOZGI8BYAF" role="3EZMnx">
           <property role="3F0ifm" value=")" />
@@ -7102,7 +7089,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4c3N3BOBO6S">
-    <property role="3GE5qa" value="gen" />
+    <property role="3GE5qa" value="c-integration.gen" />
     <ref role="1XX52x" to="clqz:4c3N3BOBO6J" resolve="InitializingState" />
     <node concept="3EZMnI" id="4c3N3BOBO6X" role="2wV5jI">
       <node concept="l2Vlx" id="4c3N3BOBO6Y" role="2iSdaV" />

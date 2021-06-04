@@ -16,8 +16,8 @@
     <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
+    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -112,7 +112,7 @@
       <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="7835233251114737454" />
-      <ref role="20lvS9" node="6MWlM491tWA" resolve="IStatemachineContents" />
+      <ref role="20lvS9" node="6MWlM491tWA" resolve="IStatemachineContent" />
     </node>
     <node concept="1TJgyj" id="3TJMuIMxu7g" role="1TKVEi">
       <property role="IQ2ns" value="4499036566916030928" />
@@ -237,7 +237,7 @@
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
     <node concept="PrWs8" id="6MWlM491tWH" role="PzmwI">
-      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContents" />
+      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContent" />
     </node>
     <node concept="PrWs8" id="61lw97FtCxi" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
@@ -289,7 +289,7 @@
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
     <node concept="PrWs8" id="6MWlM491tWF" role="PzmwI">
-      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContents" />
+      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContent" />
     </node>
     <node concept="PrWs8" id="3Ppi0nTj0Xo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
@@ -525,14 +525,14 @@
       <ref role="PrY4T" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
     </node>
     <node concept="PrWs8" id="7J_m0rEZdw_" role="PzmwI">
-      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContents" />
+      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="1nOZGI8BYAa">
     <property role="3GE5qa" value="c-integration" />
-    <property role="TrG5h" value="TriggerSelfStatement" />
-    <property role="R4oN_" value="fire an event into this state machine" />
-    <property role="34LRSv" value="trigger direct" />
+    <property role="TrG5h" value="TriggerStatement" />
+    <property role="R4oN_" value="fire an event in this state machine" />
+    <property role="34LRSv" value="trigger" />
     <property role="EcuMT" value="1582169519237884298" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
@@ -558,7 +558,7 @@
   </node>
   <node concept="PlHQZ" id="6MWlM491tWA">
     <property role="3GE5qa" value="machine" />
-    <property role="TrG5h" value="IStatemachineContents" />
+    <property role="TrG5h" value="IStatemachineContent" />
     <property role="EcuMT" value="7835233251114737446" />
     <node concept="PrWs8" id="7J_m0rEZdwA" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
@@ -576,7 +576,7 @@
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
     </node>
     <node concept="PrWs8" id="7J_m0rEZ4_7" role="PzmwI">
-      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContents" />
+      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContent" />
     </node>
   </node>
   <node concept="PlHQZ" id="47Sr75PmD_X">
@@ -661,7 +661,7 @@
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
     <node concept="PrWs8" id="3FSHg1aADa_" role="PzmwI">
-      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContents" />
+      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContent" />
     </node>
     <node concept="PrWs8" id="3FSHg1aADaA" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
@@ -740,7 +740,7 @@
       <ref role="20lvS9" node="1z9MsBsVe9b" resolve="Trigger" />
     </node>
     <node concept="PrWs8" id="4CnBdUFyZT1" role="PzmwI">
-      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContents" />
+      <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContent" />
     </node>
     <node concept="PrWs8" id="4CnBdUFyZTh" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -934,7 +934,7 @@
     <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="SmTriggerTarget" />
     <property role="34LRSv" value="trigger" />
-    <property role="R4oN_" value="trigger an event into the state machine" />
+    <property role="R4oN_" value="fire an event in the state machine" />
     <property role="EcuMT" value="6118219496725500902" />
     <ref role="1TJDcQ" node="5jCi3tJPVRg" resolve="StatemachineTarget" />
     <node concept="1TJgyj" id="5jCi3tKclJc" role="1TKVEi">
@@ -961,7 +961,7 @@
     <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="SmIsInStateTarget" />
     <property role="34LRSv" value="isInState" />
-    <property role="R4oN_" value="checks whether it is in a given state" />
+    <property role="R4oN_" value="check whether state machine is in a specific state" />
     <property role="EcuMT" value="5753290798453183908" />
     <ref role="1TJDcQ" node="5jCi3tJPVRg" resolve="StatemachineTarget" />
     <node concept="1TJgyj" id="19jNIE2ba9p" role="1TKVEi">
@@ -996,7 +996,7 @@
     <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="SmSetStateTarget" />
     <property role="34LRSv" value="setState" />
-    <property role="R4oN_" value="sets the state machine into a specific state" />
+    <property role="R4oN_" value="set the state machine to a specific state" />
     <property role="EcuMT" value="143519404613863014" />
     <ref role="1TJDcQ" node="5jCi3tJPVRg" resolve="StatemachineTarget" />
     <node concept="1TJgyj" id="5ak6HMA0ref" role="1TKVEi">
@@ -1058,7 +1058,7 @@
     <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="SmGetStateTarget" />
     <property role="34LRSv" value="getState" />
-    <property role="R4oN_" value="gets the state machine' current state" />
+    <property role="R4oN_" value="get the state machine's current state" />
     <ref role="1TJDcQ" node="5jCi3tJPVRg" resolve="StatemachineTarget" />
   </node>
   <node concept="1TIwiD" id="19jNIE0MDnn">
@@ -1081,13 +1081,13 @@
     <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="SmEnterStateTarget" />
     <property role="34LRSv" value="enterState" />
-    <property role="R4oN_" value="lets the state machine enter a specific state" />
+    <property role="R4oN_" value="make the state machine enter a specific state" />
     <property role="EcuMT" value="2156527285456399097" />
     <ref role="1TJDcQ" node="7XSydqoCpA" resolve="SmSetStateTarget" />
   </node>
   <node concept="1TIwiD" id="4c3N3BOBO6J">
     <property role="EcuMT" value="4828927774760583599" />
-    <property role="3GE5qa" value="gen" />
+    <property role="3GE5qa" value="c-integration.gen" />
     <property role="TrG5h" value="InitializingState" />
     <property role="34LRSv" value="__initializing" />
     <ref role="1TJDcQ" node="3FSHg1aADay" resolve="AbstractState" />
