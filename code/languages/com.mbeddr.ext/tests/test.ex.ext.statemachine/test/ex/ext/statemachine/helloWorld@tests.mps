@@ -154,7 +154,7 @@
       </concept>
       <concept id="1320626622328116695" name="com.mbeddr.ext.statemachines.structure.State2Int" flags="ng" index="2iAlGX" />
       <concept id="1320626622328433963" name="com.mbeddr.ext.statemachines.structure.Int2State" flags="ng" index="2iBaf1" />
-      <concept id="1582169519237884298" name="com.mbeddr.ext.statemachines.structure.TriggerSelfStatement" flags="ng" index="2tqLt1">
+      <concept id="1582169519237884298" name="com.mbeddr.ext.statemachines.structure.TriggerStatement" flags="ng" index="2tqLt1">
         <reference id="1582169519237884299" name="event" index="2tqLt0" />
       </concept>
       <concept id="1957198122968598264" name="com.mbeddr.ext.statemachines.structure.ActionList" flags="ng" index="2xGTIE" />
