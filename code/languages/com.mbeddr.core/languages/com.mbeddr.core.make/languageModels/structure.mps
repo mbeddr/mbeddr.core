@@ -99,7 +99,7 @@
     <property role="EcuMT" value="5950410542643585247" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$AJpf" role="rwd14">
-      <property role="1iqoE4" value="${module}/makefile.gif" />
+      <property role="1iqoE4" value="${module}/icons/makefile.png" />
     </node>
     <node concept="1TJgyj" id="6_CUGSFHTH6" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
