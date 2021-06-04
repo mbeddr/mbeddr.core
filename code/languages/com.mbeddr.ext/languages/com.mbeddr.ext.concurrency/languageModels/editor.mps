@@ -224,7 +224,7 @@
     <ref role="1XX52x" to="5wll:73Jrkgytd$o" resolve="Task" />
     <node concept="3EZMnI" id="73JrkgytjF5" role="2wV5jI">
       <node concept="PMmxH" id="vg5qBCbUxO" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
         <node concept="pkWqt" id="44fCN1fSuDK" role="pqm2j">
           <node concept="3clFbS" id="44fCN1fSuDL" role="2VODD2">
             <node concept="3clFbF" id="44fCN1fSuDM" role="3cqZAp">
@@ -461,7 +461,7 @@
     <ref role="1XX52x" to="5wll:vg5qBCbSs6" resolve="EventDeclaration" />
     <node concept="3EZMnI" id="vg5qBCcb8k" role="2wV5jI">
       <node concept="PMmxH" id="vg5qBCchB2" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
         <node concept="pkWqt" id="44fCN1fQnzA" role="pqm2j">
           <node concept="3clFbS" id="44fCN1fQnzB" role="2VODD2">
             <node concept="3clFbF" id="44fCN1fQnEM" role="3cqZAp">
