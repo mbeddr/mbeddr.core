@@ -295,7 +295,7 @@
         </node>
       </node>
       <node concept="PMmxH" id="7RiewQ_k17X" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
         <node concept="pkWqt" id="44fCN1fQnzA" role="pqm2j">
           <node concept="3clFbS" id="44fCN1fQnzB" role="2VODD2">
             <node concept="3clFbF" id="44fCN1fQnEM" role="3cqZAp">
@@ -958,7 +958,7 @@
     <ref role="1XX52x" to="yz9a:6TAwvhVRBLA" resolve="TestCollection" />
     <node concept="3EZMnI" id="6TAwvhVRIQp" role="2wV5jI">
       <node concept="PMmxH" id="5ptpUgMxgmD" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
         <node concept="pkWqt" id="44fCN1fSjAr" role="pqm2j">
           <node concept="3clFbS" id="44fCN1fSjAs" role="2VODD2">
             <node concept="3clFbF" id="44fCN1fSjAt" role="3cqZAp">
