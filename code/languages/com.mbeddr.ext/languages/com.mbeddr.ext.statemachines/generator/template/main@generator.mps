@@ -1975,11 +1975,11 @@
     <node concept="1puMqW" id="16ykm_LNTke" role="1puA0r">
       <ref role="1puQsG" node="16ykm_LNvKu" resolve="handleEpslionsAndJunctions" />
     </node>
-    <node concept="1puMqW" id="4c3N3BOKrVT" role="1puA0r">
-      <ref role="1puQsG" node="4c3N3BOEEYb" resolve="handlePostponableInitialExecution" />
-    </node>
     <node concept="1puMqW" id="3FSHg1aDPuv" role="1puA0r">
       <ref role="1puQsG" node="3FSHg1aDPuw" resolve="flattenCompositeStates" />
+    </node>
+    <node concept="1puMqW" id="4c3N3BOKrVT" role="1puA0r">
+      <ref role="1puQsG" node="4c3N3BOEEYb" resolve="handlePostponableInitialExecution" />
     </node>
     <node concept="30QchW" id="4oSz90j8e14" role="30SoJX">
       <property role="36QftV" value="true" />
