@@ -84,6 +84,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
       </concept>
@@ -163,6 +164,7 @@
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
+        <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -437,7 +439,7 @@
         <ref role="PMmxG" to="cl6c:5Oog2UbP_dB" resolve="preventNameManglingFlag" />
       </node>
       <node concept="PMmxH" id="7RiewQ_kcp1" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
         <node concept="pVoyu" id="3Wi_6mkkZCO" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -522,7 +524,7 @@
         </node>
         <node concept="l2Vlx" id="2ofiXe_u2p8" role="2iSdaV" />
         <node concept="PMmxH" id="7D99css6TK7" role="3EZMnx">
-          <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+          <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
           <node concept="pkWqt" id="44fCN1fShp4" role="pqm2j">
             <node concept="3clFbS" id="44fCN1fShp5" role="2VODD2">
               <node concept="3clFbF" id="44fCN1fShp6" role="3cqZAp">
@@ -821,7 +823,7 @@
         <ref role="PMmxG" to="cl6c:5Oog2UbP_dB" resolve="preventNameManglingFlag" />
       </node>
       <node concept="PMmxH" id="6a5SBPfZfT8" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
         <node concept="pVoyu" id="517ceyPwtml" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -886,6 +888,9 @@
           <node concept="VPxyj" id="5k1FOfehgq8" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
+          <node concept="2SqB2G" id="5fS8LrnPssH" role="2SqHTX">
+            <property role="TrG5h" value="member_placeholder" />
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="6a5SBPfZfTi" role="3EZMnx">
@@ -924,7 +929,7 @@
     <node concept="3EZMnI" id="2ZsiEbEC8" role="2wV5jI">
       <node concept="l2Vlx" id="2ZsiEbEC9" role="2iSdaV" />
       <node concept="PMmxH" id="x7DaR3YWvG" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlagA" />
         <node concept="pkWqt" id="44fCN1fSi6q" role="pqm2j">
           <node concept="3clFbS" id="44fCN1fSi6r" role="2VODD2">
             <node concept="3clFbF" id="44fCN1fSi6s" role="3cqZAp">
