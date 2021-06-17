@@ -243,7 +243,6 @@
         <child id="6845119683729337285" name="progressY" index="27hAJg" />
         <child id="6845119683729294884" name="progressColor" index="27hGoL" />
         <child id="6845119683729280452" name="icon" index="27igRh" />
-        <child id="7962467864632399185" name="progressX" index="2gocG4" />
         <child id="7962467864633062782" name="progressHeight" index="2gqIGF" />
         <child id="922958177840117051" name="script" index="2gvbiD" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
@@ -2024,11 +2023,6 @@
       <node concept="NbPM2" id="1BPeV_LjXtk" role="2Mmf0a">
         <node concept="3Mxwew" id="1BPeV_LjXtl" role="3MwsjC">
           <property role="3MwjfP" value="http://mbeddr.com/support.html" />
-        </node>
-      </node>
-      <node concept="NbPM2" id="1BPeV_LjXtm" role="2gocG4">
-        <node concept="3Mxwew" id="1BPeV_LjXtn" role="3MwsjC">
-          <property role="3MwjfP" value="0" />
         </node>
       </node>
       <node concept="NbPM2" id="1BPeV_LjXto" role="2gqIGF">

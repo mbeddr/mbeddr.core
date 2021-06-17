@@ -168,7 +168,7 @@
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
@@ -358,7 +358,9 @@
                 <node concept="I4A8Y" id="5yxqZJwzYPy" role="2OqNvi" />
               </node>
               <node concept="2RRcyG" id="5yxqZJwzYPY" role="2OqNvi">
-                <ref role="2RRcyH" to="2c95:2TZO3DbvPDI" resolve="DocumentExport" />
+                <node concept="chp4Y" id="34w7WGUSF22" role="3MHsoP">
+                  <ref role="cht4Q" to="2c95:2TZO3DbvPDI" resolve="DocumentExport" />
+                </node>
               </node>
             </node>
             <node concept="34oBXx" id="5yxqZJwzYQp" role="2OqNvi" />
@@ -1265,7 +1267,9 @@
           <node concept="2OqwBi" id="hoMN8EUSE$" role="33vP2m">
             <node concept="2OqwBi" id="hoMN8EUSE_" role="2Oq$k0">
               <node concept="2RRcyG" id="hoMN8EUSEA" role="2OqNvi">
-                <ref role="2RRcyH" to="vs0r:hoMN8ESh5l" resolve="ICannotLiveInDocModel" />
+                <node concept="chp4Y" id="34w7WGUSF23" role="3MHsoP">
+                  <ref role="cht4Q" to="vs0r:hoMN8ESh5l" resolve="ICannotLiveInDocModel" />
+                </node>
               </node>
               <node concept="2OqwBi" id="hoMN8EUSEB" role="2Oq$k0">
                 <node concept="1YBJjd" id="hoMN8EUSEC" role="2Oq$k0">

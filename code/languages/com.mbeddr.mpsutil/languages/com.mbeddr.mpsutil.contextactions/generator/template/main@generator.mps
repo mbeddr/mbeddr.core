@@ -2,10 +2,10 @@
 <model ref="r:068c003c-9335-46e4-b1e5-6882d42fe753(com.mbeddr.mpsutil.contextactions.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -330,7 +330,7 @@
       </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
@@ -3703,7 +3703,9 @@
                     <node concept="1r8y6K" id="7husA5Ykwmc" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="7husA5YkwZ9" role="2OqNvi">
-                    <ref role="2RRcyH" to="tp3j:2c3oNEsfcpP" resolve="BaseIntentionDeclaration" />
+                    <node concept="chp4Y" id="34w7WGUSF2J" role="3MHsoP">
+                      <ref role="cht4Q" to="tp3j:2c3oNEsfcpP" resolve="BaseIntentionDeclaration" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2HwmR7" id="7husA5Yk_JS" role="2OqNvi">
@@ -3739,7 +3741,9 @@
                     <node concept="1r8y6K" id="2hz1PZpFcvC" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="2hz1PZpFcvD" role="2OqNvi">
-                    <ref role="2RRcyH" to="tp1h:5YKiRiBue95" resolve="Refactoring" />
+                    <node concept="chp4Y" id="34w7WGUSF2K" role="3MHsoP">
+                      <ref role="cht4Q" to="tp1h:5YKiRiBue95" resolve="Refactoring" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2HwmR7" id="2hz1PZpFcvE" role="2OqNvi">
@@ -3828,7 +3832,9 @@
                     <node concept="1r8y6K" id="7husA5Yinr7" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="7husA5Yio80" role="2OqNvi">
-                    <ref role="2RRcyH" to="tp3j:2c3oNEsfcpP" resolve="BaseIntentionDeclaration" />
+                    <node concept="chp4Y" id="34w7WGUSF2L" role="3MHsoP">
+                      <ref role="cht4Q" to="tp3j:2c3oNEsfcpP" resolve="BaseIntentionDeclaration" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="7husA5Yiujy" role="2OqNvi">
@@ -4093,7 +4099,9 @@
                     <node concept="1r8y6K" id="2hz1PZpFogU" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="2hz1PZpFogV" role="2OqNvi">
-                    <ref role="2RRcyH" to="tp1h:5YKiRiBue95" resolve="Refactoring" />
+                    <node concept="chp4Y" id="34w7WGUSF2M" role="3MHsoP">
+                      <ref role="cht4Q" to="tp1h:5YKiRiBue95" resolve="Refactoring" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="2hz1PZpFogW" role="2OqNvi">

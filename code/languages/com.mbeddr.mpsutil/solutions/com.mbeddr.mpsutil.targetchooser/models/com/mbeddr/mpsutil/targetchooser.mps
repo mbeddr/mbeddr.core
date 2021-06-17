@@ -4204,22 +4204,12 @@
             </node>
           </node>
           <node concept="3clFbJ" id="2Nt6prob0Bt" role="9aQIa">
-            <node concept="22lmx$" id="2Nt6prob0Bu" role="3clFbw">
-              <node concept="2ZW3vV" id="2Nt6prob0Bv" role="3uHU7B">
-                <node concept="37vLTw" id="2Nt6prob0Bw" role="2ZW6bz">
-                  <ref role="3cqZAo" node="2Nt6prob0Bd" resolve="module" />
-                </node>
-                <node concept="3uibUv" id="2Nt6prob0Bx" role="2ZW6by">
-                  <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
-                </node>
+            <node concept="2ZW3vV" id="2Nt6prob0Bv" role="3clFbw">
+              <node concept="37vLTw" id="2Nt6prob0Bw" role="2ZW6bz">
+                <ref role="3cqZAo" node="2Nt6prob0Bd" resolve="module" />
               </node>
-              <node concept="2ZW3vV" id="2Nt6prob0By" role="3uHU7w">
-                <node concept="37vLTw" id="2Nt6prob0Bz" role="2ZW6bz">
-                  <ref role="3cqZAo" node="2Nt6prob0Bd" resolve="module" />
-                </node>
-                <node concept="3uibUv" id="2Nt6prob0B$" role="2ZW6by">
-                  <ref role="3uigEE" to="rqo8:~ProjectStructureModule" resolve="ProjectStructureModule" />
-                </node>
+              <node concept="3uibUv" id="2Nt6prob0Bx" role="2ZW6by">
+                <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
               </node>
             </node>
             <node concept="3clFbJ" id="2Nt6prob0B_" role="9aQIa">
@@ -7867,22 +7857,12 @@
               </node>
               <node concept="3clFbS" id="2Nt6prodoHN" role="2LFqv$">
                 <node concept="3clFbJ" id="2Nt6prodoHO" role="3cqZAp">
-                  <node concept="22lmx$" id="2Nt6prodoHP" role="3clFbw">
-                    <node concept="2ZW3vV" id="2Nt6prodoHS" role="3uHU7B">
-                      <node concept="37vLTw" id="2Nt6prodoHQ" role="2ZW6bz">
-                        <ref role="3cqZAo" node="2Nt6prodoI4" resolve="s" />
-                      </node>
-                      <node concept="3uibUv" id="2Nt6prodoHR" role="2ZW6by">
-                        <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
-                      </node>
+                  <node concept="2ZW3vV" id="2Nt6prodoHS" role="3clFbw">
+                    <node concept="37vLTw" id="2Nt6prodoHQ" role="2ZW6bz">
+                      <ref role="3cqZAo" node="2Nt6prodoI4" resolve="s" />
                     </node>
-                    <node concept="2ZW3vV" id="2Nt6prodoHV" role="3uHU7w">
-                      <node concept="37vLTw" id="2Nt6prodoHT" role="2ZW6bz">
-                        <ref role="3cqZAo" node="2Nt6prodoI4" resolve="s" />
-                      </node>
-                      <node concept="3uibUv" id="2Nt6prodoHU" role="2ZW6by">
-                        <ref role="3uigEE" to="rqo8:~ProjectStructureModule" resolve="ProjectStructureModule" />
-                      </node>
+                    <node concept="3uibUv" id="2Nt6prodoHR" role="2ZW6by">
+                      <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="2Nt6prodoHX" role="3clFbx">
@@ -10765,7 +10745,7 @@
       <node concept="3Tmbuc" id="66R$0mlTZfw" role="1B3o_S" />
       <node concept="3clFbS" id="66R$0mlS_0G" role="3clF47">
         <node concept="XkiVB" id="66R$0mlS_0I" role="3cqZAp">
-          <ref role="37wK5l" to="7e8u:~MPSTreeSpeedSearch.&lt;init&gt;(javax.swing.JTree)" resolve="MPSTreeSpeedSearch" />
+          <ref role="37wK5l" to="lzb2:~SpeedSearchBase.&lt;init&gt;(javax.swing.JComponent)" resolve="SpeedSearchBase" />
           <node concept="37vLTw" id="66R$0mlS_0M" role="37wK5m">
             <ref role="3cqZAo" node="66R$0mlS_0J" resolve="tree" />
           </node>
@@ -12114,8 +12094,8 @@
       <node concept="3Tmbuc" id="2B$UZQOfdUL" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="66R$0mlSfy6" role="1B3o_S" />
-    <node concept="3uibUv" id="66R$0mlSxfl" role="1zkMxy">
-      <ref role="3uigEE" to="7e8u:~MPSTreeSpeedSearch" resolve="MPSTreeSpeedSearch" />
+    <node concept="3uibUv" id="46A_fILK3VP" role="1zkMxy">
+      <ref role="3uigEE" to="lzb2:~SpeedSearchBase" resolve="SpeedSearchBase" />
     </node>
   </node>
 </model>

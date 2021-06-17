@@ -412,7 +412,7 @@
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
@@ -1023,7 +1023,9 @@
                 <node concept="2OqwBi" id="6AAaFOTALmV" role="2Oq$k0">
                   <node concept="1Q6Npb" id="6AAaFOTALmW" role="2Oq$k0" />
                   <node concept="2RRcyG" id="6AAaFOTALmX" role="2OqNvi">
-                    <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                    <node concept="chp4Y" id="34w7WGUSF0f" role="3MHsoP">
+                      <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                    </node>
                   </node>
                 </node>
                 <node concept="13MTOL" id="6AAaFOTALmY" role="2OqNvi">
@@ -2601,7 +2603,9 @@
               <node concept="2OqwBi" id="6AAaFOUc1Mo" role="2Oq$k0">
                 <node concept="1Q6Npb" id="6AAaFOUc1Mp" role="2Oq$k0" />
                 <node concept="2RRcyG" id="6AAaFOUc1Mq" role="2OqNvi">
-                  <ref role="2RRcyH" to="llb3:439FXGf05P" resolve="CVerificationHarnessModule" />
+                  <node concept="chp4Y" id="34w7WGUSF0g" role="3MHsoP">
+                    <ref role="cht4Q" to="llb3:439FXGf05P" resolve="CVerificationHarnessModule" />
+                  </node>
                 </node>
               </node>
               <node concept="3zZkjj" id="6AAaFOUc1Mr" role="2OqNvi">
@@ -2661,7 +2665,9 @@
                 <node concept="2OqwBi" id="6AAaFOUc2Es" role="2Oq$k0">
                   <node concept="1Q6Npb" id="6AAaFOUc2Et" role="2Oq$k0" />
                   <node concept="2RRcyG" id="6AAaFOUc2Eu" role="2OqNvi">
-                    <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                    <node concept="chp4Y" id="34w7WGUSF0h" role="3MHsoP">
+                      <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                    </node>
                   </node>
                 </node>
                 <node concept="13MTOL" id="6AAaFOUc2Ev" role="2OqNvi">
@@ -2895,7 +2901,9 @@
           <node concept="2OqwBi" id="41w7Fsd1hMV" role="2GsD0m">
             <node concept="1Q6Npb" id="41w7Fsd1hED" role="2Oq$k0" />
             <node concept="2RRcyG" id="41w7Fsd1hYu" role="2OqNvi">
-              <ref role="2RRcyH" to="llb3:439FXGf05P" resolve="CVerificationHarnessModule" />
+              <node concept="chp4Y" id="34w7WGUSF0i" role="3MHsoP">
+                <ref role="cht4Q" to="llb3:439FXGf05P" resolve="CVerificationHarnessModule" />
+              </node>
             </node>
           </node>
           <node concept="3clFbS" id="41w7Fsd1hBm" role="2LFqv$">
@@ -3107,7 +3115,9 @@
               <node concept="2OqwBi" id="6AAaFOUpvev" role="2Oq$k0">
                 <node concept="1Q6Npb" id="6AAaFOUpvew" role="2Oq$k0" />
                 <node concept="2RRcyG" id="6AAaFOUpvex" role="2OqNvi">
-                  <ref role="2RRcyH" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                  <node concept="chp4Y" id="34w7WGUSF0j" role="3MHsoP">
+                    <ref role="cht4Q" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                  </node>
                 </node>
               </node>
               <node concept="1z4cxt" id="6AAaFOUpvey" role="2OqNvi">
@@ -3147,7 +3157,9 @@
               <node concept="2OqwBi" id="6AAaFOUpveL" role="2Oq$k0">
                 <node concept="1Q6Npb" id="6AAaFOUpveM" role="2Oq$k0" />
                 <node concept="2RRcyG" id="6AAaFOUpveN" role="2OqNvi">
-                  <ref role="2RRcyH" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                  <node concept="chp4Y" id="34w7WGUSF0k" role="3MHsoP">
+                    <ref role="cht4Q" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                  </node>
                 </node>
               </node>
               <node concept="3zZkjj" id="6AAaFOUpveO" role="2OqNvi">

@@ -88,9 +88,12 @@
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
-        <reference id="1176109685394" name="concept" index="3lApI3" />
+        <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -202,7 +205,9 @@
                     <node concept="I4A8Y" id="2lop6rSgaH0" role="2OqNvi" />
                   </node>
                   <node concept="3lApI0" id="2lop6rSgaH1" role="2OqNvi">
-                    <ref role="3lApI3" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
+                    <node concept="chp4Y" id="34w7WGUSF31" role="3MHPDn">
+                      <ref role="cht4Q" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="2lop6rSgaH2" role="2OqNvi">
@@ -383,7 +388,9 @@
                     <node concept="I4A8Y" id="2lop6rSgaEl" role="2OqNvi" />
                   </node>
                   <node concept="3lApI0" id="2lop6rSgaEm" role="2OqNvi">
-                    <ref role="3lApI3" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
+                    <node concept="chp4Y" id="34w7WGUSF32" role="3MHPDn">
+                      <ref role="cht4Q" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="2lop6rSgaEn" role="2OqNvi">

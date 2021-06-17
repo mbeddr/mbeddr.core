@@ -71,9 +71,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -130,7 +133,9 @@
                     <node concept="I4A8Y" id="2N0FrS4AO0j" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="2N0FrS4AO5Q" role="2OqNvi">
-                    <ref role="2RRcyH" to="au0v:5FJiYrlIp_D" resolve="ActionsProfile" />
+                    <node concept="chp4Y" id="34w7WGUSF2C" role="3MHsoP">
+                      <ref role="cht4Q" to="au0v:5FJiYrlIp_D" resolve="ActionsProfile" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="2N0FrS4APtb" role="2OqNvi">

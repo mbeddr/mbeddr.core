@@ -2,7 +2,7 @@
 <model ref="r:49c8700a-564c-4699-bce5-6d5c721d0fdd(com.mbeddr.analyses.cbmc.core.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
@@ -84,6 +84,9 @@
       </concept>
       <concept id="5015072279636592410" name="jetbrains.mps.lang.generator.structure.VarMacro_ValueQuery" flags="in" index="2jfdEK" />
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
+      <concept id="2880994019885263148" name="jetbrains.mps.lang.generator.structure.LoopMacroNamespaceAccessor" flags="ng" index="$GB7w">
+        <property id="1501378878163388321" name="variable" index="26SvY3" />
+      </concept>
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -138,9 +141,6 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="1048903277984174662" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef2" flags="nn" index="1psM6Z">
         <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
-      </concept>
-      <concept id="7430509679014182526" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ContextVarRef" flags="ng" index="1qCSth">
-        <property id="7430509679014182818" name="contextVarName" index="1qCSqd" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -319,11 +319,8 @@
                                       <node concept="37vLTw" id="6z$fwMcSdjx" role="37wK5m">
                                         <ref role="3cqZAo" node="6z$fwMcSdjl" resolve="decTab" />
                                       </node>
-                                      <node concept="2OqwBi" id="6T3uXzTkXoi" role="37wK5m">
-                                        <node concept="1iwH7S" id="6T3uXzTkX2I" role="2Oq$k0" />
-                                        <node concept="1qCSth" id="6T3uXzTkXHG" role="2OqNvi">
-                                          <property role="1qCSqd" value="orderOfNondererminismExpression" />
-                                        </node>
+                                      <node concept="$GB7w" id="34w7WGUSF3R" role="37wK5m">
+                                        <property role="26SvY3" value="1jlY2aid0uu/index" />
                                       </node>
                                     </node>
                                   </node>
@@ -367,7 +364,7 @@
                         </node>
                       </node>
                       <node concept="1WS0z7" id="6z$fwMcSdjE" role="lGtFl">
-                        <property role="1qytDF" value="orderOfNondererminismExpression" />
+                        <property role="1qytDF" value="" />
                         <node concept="3JmXsc" id="6z$fwMcSdjF" role="3Jn$fo">
                           <node concept="3clFbS" id="6z$fwMcSdjG" role="2VODD2">
                             <node concept="3clFbF" id="6z$fwMcSdk0" role="3cqZAp">
@@ -537,11 +534,8 @@
                                       <node concept="37vLTw" id="2S1OXleJPJe" role="37wK5m">
                                         <ref role="3cqZAo" node="2S1OXleJFso" resolve="decTab" />
                                       </node>
-                                      <node concept="2OqwBi" id="6T3uXzTlbow" role="37wK5m">
-                                        <node concept="1iwH7S" id="6T3uXzTlb9w" role="2Oq$k0" />
-                                        <node concept="1qCSth" id="6T3uXzTlbW6" role="2OqNvi">
-                                          <property role="1qCSqd" value="orderOfActivationExpression" />
-                                        </node>
+                                      <node concept="$GB7w" id="34w7WGUSF3U" role="37wK5m">
+                                        <property role="26SvY3" value="1jlY2aid0uu/index" />
                                       </node>
                                     </node>
                                   </node>
@@ -619,7 +613,7 @@
                         </node>
                       </node>
                       <node concept="1WS0z7" id="2S1OXleJzFw" role="lGtFl">
-                        <property role="1qytDF" value="orderOfActivationExpression" />
+                        <property role="1qytDF" value="" />
                         <node concept="3JmXsc" id="2S1OXleJzFy" role="3Jn$fo">
                           <node concept="3clFbS" id="2S1OXleJzF$" role="2VODD2">
                             <node concept="3clFbF" id="2S1OXleJCv9" role="3cqZAp">
@@ -824,11 +818,8 @@
                                           <ref role="1psM6Y" node="3pRoIUFYOfH" resolve="gswitch" />
                                         </node>
                                       </node>
-                                      <node concept="2OqwBi" id="3OLe0nF6V2t" role="37wK5m">
-                                        <node concept="1iwH7S" id="3OLe0nF6V2u" role="2Oq$k0" />
-                                        <node concept="1qCSth" id="3OLe0nF6V2v" role="2OqNvi">
-                                          <property role="1qCSqd" value="orderOfNondeterminismExpression" />
-                                        </node>
+                                      <node concept="$GB7w" id="34w7WGUSF3X" role="37wK5m">
+                                        <property role="26SvY3" value="1jlY2aid0uu/index" />
                                       </node>
                                     </node>
                                   </node>
@@ -872,7 +863,7 @@
                         </node>
                       </node>
                       <node concept="1WS0z7" id="3OLe0nF6V33" role="lGtFl">
-                        <property role="1qytDF" value="orderOfNondeterminismExpression" />
+                        <property role="1qytDF" value="" />
                         <node concept="3JmXsc" id="3OLe0nF6V34" role="3Jn$fo">
                           <node concept="3clFbS" id="3OLe0nF6V35" role="2VODD2">
                             <node concept="3clFbF" id="3OLe0nF6V36" role="3cqZAp">
@@ -909,11 +900,8 @@
                                           <ref role="1psM6Y" node="3pRoIUFYOfK" resolve="gswitch" />
                                         </node>
                                       </node>
-                                      <node concept="2OqwBi" id="3OLe0nF6zs7" role="37wK5m">
-                                        <node concept="1iwH7S" id="3OLe0nF6zs8" role="2Oq$k0" />
-                                        <node concept="1qCSth" id="3OLe0nF6zs9" role="2OqNvi">
-                                          <property role="1qCSqd" value="orderOfActivationExpression" />
-                                        </node>
+                                      <node concept="$GB7w" id="34w7WGUSF40" role="37wK5m">
+                                        <property role="26SvY3" value="1jlY2aid0uu/index" />
                                       </node>
                                     </node>
                                   </node>
@@ -968,7 +956,7 @@
                         </node>
                       </node>
                       <node concept="1WS0z7" id="3OLe0nF6tSf" role="lGtFl">
-                        <property role="1qytDF" value="orderOfActivationExpression" />
+                        <property role="1qytDF" value="" />
                         <node concept="3JmXsc" id="3OLe0nF6tSh" role="3Jn$fo">
                           <node concept="3clFbS" id="3OLe0nF6tSj" role="2VODD2">
                             <node concept="3clFbF" id="3OLe0nF6uCH" role="3cqZAp">

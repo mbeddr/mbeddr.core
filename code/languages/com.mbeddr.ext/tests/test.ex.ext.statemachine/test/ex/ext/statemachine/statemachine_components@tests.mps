@@ -165,7 +165,7 @@
       <concept id="8839013379580391875" name="com.mbeddr.ext.statemachines.structure.TransitionRedirectionStatement" flags="ng" index="kuwCl">
         <reference id="8839013379580399935" name="targetState" index="kuIFD" />
       </concept>
-      <concept id="1582169519237884298" name="com.mbeddr.ext.statemachines.structure.TriggerStatement" flags="ng" index="2tqLt1">
+      <concept id="1582169519237884298" name="com.mbeddr.ext.statemachines.structure.TriggerSelfStatement" flags="ng" index="2tqLt1">
         <reference id="1582169519237884299" name="event" index="2tqLt0" />
       </concept>
       <concept id="1957198122968598264" name="com.mbeddr.ext.statemachines.structure.ActionList" flags="ng" index="2xGTIE" />

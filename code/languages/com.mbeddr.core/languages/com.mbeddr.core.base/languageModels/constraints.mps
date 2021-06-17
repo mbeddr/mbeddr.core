@@ -191,10 +191,10 @@
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
-        <reference id="1176109685394" name="concept" index="3lApI3" />
+        <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -842,7 +842,9 @@
                     <node concept="I4A8Y" id="5CkU_dHiez$" role="2OqNvi" />
                   </node>
                   <node concept="3lApI0" id="5CkU_dHiez_" role="2OqNvi">
-                    <ref role="3lApI3" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                    <node concept="chp4Y" id="34w7WGUSF0M" role="3MHPDn">
+                      <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="5CkU_dHiezA" role="2OqNvi">
@@ -939,7 +941,9 @@
                   <node concept="I4A8Y" id="5CkU_dHie_7" role="2OqNvi" />
                 </node>
                 <node concept="1j9C0f" id="5CkU_dHie_8" role="2OqNvi">
-                  <ref role="1j9C0d" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                  <node concept="chp4Y" id="34w7WGUSF0P" role="3MHPCF">
+                    <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                  </node>
                 </node>
               </node>
             </node>

@@ -4,7 +4,7 @@
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="7f1d94f2-798c-49d9-bd54-78999a20832c" name="com.mbeddr.ext.messaging" version="0" />
     <use id="bb0ad88b-63cd-45fd-ae27-8662d274cf3c" name="com.mbeddr.ext.serialization" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
@@ -364,7 +364,7 @@
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
@@ -2459,7 +2459,9 @@
                   <node concept="2OqwBi" id="6JJhAyRnn14" role="2Oq$k0">
                     <node concept="1Q6Npb" id="6JJhAyRnn15" role="2Oq$k0" />
                     <node concept="2RRcyG" id="6JJhAyRnn16" role="2OqNvi">
-                      <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                      <node concept="chp4Y" id="34w7WGUSF2x" role="3MHsoP">
+                        <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                      </node>
                     </node>
                   </node>
                   <node concept="13MTOL" id="6JJhAyRnn17" role="2OqNvi">
@@ -2632,7 +2634,9 @@
                   <node concept="2OqwBi" id="6JJhAyRn5bd" role="2Oq$k0">
                     <node concept="1Q6Npb" id="6JJhAyRn527" role="2Oq$k0" />
                     <node concept="2RRcyG" id="6JJhAyRn5iw" role="2OqNvi">
-                      <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                      <node concept="chp4Y" id="34w7WGUSF2y" role="3MHsoP">
+                        <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                      </node>
                     </node>
                   </node>
                   <node concept="13MTOL" id="6JJhAyRncW6" role="2OqNvi">

@@ -38,7 +38,6 @@
     <module reference="371850a9-2c5b-4e1d-a811-70d97e847917(com.mbeddr.mpsutil.editor.utils)" version="0" />
     <module reference="eedc5a6f-c2e8-4009-a7ab-5fc307bf77ec(com.mbeddr.mpsutil.multilingual.common.runtime)" version="0" />
     <module reference="c038e2c4-0a5f-47e2-a3e8-327c1084f6a1(com.mbeddr.mpsutil.multilingual.concept.runtime)" version="0" />
-    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>
 </solution>
 

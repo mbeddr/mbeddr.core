@@ -82,7 +82,7 @@
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
-        <reference id="1176109685394" name="concept" index="3lApI3" />
+        <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -158,7 +158,9 @@
                   <node concept="I4A8Y" id="5CkU_dHiceE" role="2OqNvi" />
                 </node>
                 <node concept="3lApI0" id="5CkU_dHiceF" role="2OqNvi">
-                  <ref role="3lApI3" to="26ao:opE5jFgfm$" resolve="ITraceTargetProvider" />
+                  <node concept="chp4Y" id="34w7WGUSF0x" role="3MHPDn">
+                    <ref role="cht4Q" to="26ao:opE5jFgfm$" resolve="ITraceTargetProvider" />
+                  </node>
                 </node>
               </node>
             </node>

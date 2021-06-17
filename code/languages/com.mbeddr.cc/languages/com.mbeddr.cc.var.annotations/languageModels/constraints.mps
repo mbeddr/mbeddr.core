@@ -143,10 +143,10 @@
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
-        <reference id="1176109685394" name="concept" index="3lApI3" />
+        <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -292,7 +292,9 @@
                             <node concept="I4A8Y" id="5CkU_dHico6" role="2OqNvi" />
                           </node>
                           <node concept="3lApI0" id="5CkU_dHico7" role="2OqNvi">
-                            <ref role="3lApI3" to="qqyh:5USXI9KzkZK" resolve="VariabilitySupport" />
+                            <node concept="chp4Y" id="34w7WGUSF0z" role="3MHPDn">
+                              <ref role="cht4Q" to="qqyh:5USXI9KzkZK" resolve="VariabilitySupport" />
+                            </node>
                           </node>
                         </node>
                         <node concept="13MTOL" id="5CkU_dHico8" role="2OqNvi">
@@ -408,7 +410,9 @@
                               <node concept="I4A8Y" id="5CkU_dHicwV" role="2OqNvi" />
                             </node>
                             <node concept="3lApI0" id="5CkU_dHicwW" role="2OqNvi">
-                              <ref role="3lApI3" to="qqyh:5USXI9KzkZK" resolve="VariabilitySupport" />
+                              <node concept="chp4Y" id="34w7WGUSF0$" role="3MHPDn">
+                                <ref role="cht4Q" to="qqyh:5USXI9KzkZK" resolve="VariabilitySupport" />
+                              </node>
                             </node>
                           </node>
                           <node concept="13MTOL" id="5CkU_dHicwX" role="2OqNvi">
@@ -1303,7 +1307,9 @@
                       <node concept="I4A8Y" id="5CkU_dHid8I" role="2OqNvi" />
                     </node>
                     <node concept="1j9C0f" id="5CkU_dHid8J" role="2OqNvi">
-                      <ref role="1j9C0d" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                      <node concept="chp4Y" id="34w7WGUSF0B" role="3MHPCF">
+                        <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3zZkjj" id="5CkU_dHid8K" role="2OqNvi">
@@ -1438,7 +1444,9 @@
                             <node concept="I4A8Y" id="5CkU_dHicSD" role="2OqNvi" />
                           </node>
                           <node concept="3lApI0" id="5CkU_dHicSE" role="2OqNvi">
-                            <ref role="3lApI3" to="qqyh:5USXI9KzkZK" resolve="VariabilitySupport" />
+                            <node concept="chp4Y" id="34w7WGUSF0_" role="3MHPDn">
+                              <ref role="cht4Q" to="qqyh:5USXI9KzkZK" resolve="VariabilitySupport" />
+                            </node>
                           </node>
                         </node>
                         <node concept="13MTOL" id="5CkU_dHicSF" role="2OqNvi">
@@ -1560,7 +1568,9 @@
                               <node concept="I4A8Y" id="5CkU_dHid1u" role="2OqNvi" />
                             </node>
                             <node concept="3lApI0" id="5CkU_dHid1v" role="2OqNvi">
-                              <ref role="3lApI3" to="qqyh:5USXI9KzkZK" resolve="VariabilitySupport" />
+                              <node concept="chp4Y" id="34w7WGUSF0A" role="3MHPDn">
+                                <ref role="cht4Q" to="qqyh:5USXI9KzkZK" resolve="VariabilitySupport" />
+                              </node>
                             </node>
                           </node>
                           <node concept="13MTOL" id="5CkU_dHid1w" role="2OqNvi">

@@ -187,7 +187,7 @@
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1181949435690" name="jetbrains.mps.lang.smodel.structure.Concept_NewInstance" flags="nn" index="LFhST" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -1011,7 +1011,9 @@
                   <ref role="3cqZAo" node="1LLGf91n5Ru" resolve="model" />
                 </node>
                 <node concept="2RRcyG" id="1LLGf91ndfY" role="2OqNvi">
-                  <ref role="2RRcyH" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
+                  <node concept="chp4Y" id="34w7WGUSF0v" role="3MHsoP">
+                    <ref role="cht4Q" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
+                  </node>
                 </node>
               </node>
               <node concept="1uHKPH" id="1LLGf91ndfZ" role="2OqNvi" />

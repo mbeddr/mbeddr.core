@@ -173,7 +173,7 @@
         <reference id="4643433264759945885" name="event" index="2cjRdI" />
       </concept>
       <concept id="8927638623067326788" name="com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" flags="ng" index="2h6h52" />
-      <concept id="1582169519237884298" name="com.mbeddr.ext.statemachines.structure.TriggerStatement" flags="ng" index="2tqLt1">
+      <concept id="1582169519237884298" name="com.mbeddr.ext.statemachines.structure.TriggerSelfStatement" flags="ng" index="2tqLt1">
         <reference id="1582169519237884299" name="event" index="2tqLt0" />
       </concept>
       <concept id="1957198122968598264" name="com.mbeddr.ext.statemachines.structure.ActionList" flags="ng" index="2xGTIE" />

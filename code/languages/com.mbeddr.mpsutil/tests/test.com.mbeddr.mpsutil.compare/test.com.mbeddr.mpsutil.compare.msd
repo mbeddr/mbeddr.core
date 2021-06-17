@@ -37,7 +37,6 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="c6420b75-4569-420d-aaf7-9bc590ad7b2a(com.mbeddr.mpsutil.comparator)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="f1331acb-f5b8-487b-9d42-6ffd5fcde7e3(test.com.mbeddr.mpsutil.compare)" version="0" />
     <module reference="6bbe9909-811d-4431-b023-f60f7e6d7891(test.com.mbeddr.mpsutil.compare.testlang)" version="0" />
   </dependencyVersions>

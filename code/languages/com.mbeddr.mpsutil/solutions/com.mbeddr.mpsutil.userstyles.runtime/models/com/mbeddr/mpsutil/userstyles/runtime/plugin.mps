@@ -340,8 +340,8 @@
                     <property role="DiZV1" value="false" />
                     <property role="od$2w" value="false" />
                     <node concept="3Tm1VV" id="6eTqwB9kqpp" role="1B3o_S" />
-                    <node concept="3uibUv" id="6eTqwB9kqpq" role="3clF45">
-                      <ref role="3uigEE" to="z60i:~Component" resolve="Component" />
+                    <node concept="3uibUv" id="2sh3ONDsJq7" role="3clF45">
+                      <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
                     </node>
                     <node concept="3clFbS" id="6eTqwB9kqpr" role="3clF47">
                       <node concept="3clFbF" id="6eTqwB9kqps" role="3cqZAp">

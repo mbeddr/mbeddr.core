@@ -938,12 +938,26 @@
       <node concept="3clFbS" id="2Z2H3pkZYzX" role="3clF47">
         <node concept="3clFbF" id="2Z2H3pkZYzY" role="3cqZAp">
           <node concept="2OqwBi" id="2Z2H3pkZYzZ" role="3clFbG">
-            <node concept="2YIFZM" id="2Z2H3pkZYRS" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
+            <node concept="2OqwBi" id="6OxU5jVg0Xh" role="2Oq$k0">
+              <node concept="2OqwBi" id="6OxU5jVfUGP" role="2Oq$k0">
+                <node concept="2OqwBi" id="6OxU5jVfO0y" role="2Oq$k0">
+                  <node concept="37vLTw" id="6OxU5jVfLA9" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2Z2H3pkZYz0" resolve="mySubstituteChooser" />
+                  </node>
+                  <node concept="liA8E" id="6OxU5jVfT5z" role="2OqNvi">
+                    <ref role="37wK5l" node="6OxU5jVaQNT" resolve="getEditorContext" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6OxU5jVfZwE" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6OxU5jVgd$J" role="2OqNvi">
+                <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+              </node>
             </node>
             <node concept="liA8E" id="2Z2H3pkZY$1" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
               <node concept="2ShNRf" id="2Z2H3pkZY$2" role="37wK5m">
                 <node concept="YeOm9" id="2Z2H3pkZY$3" role="2ShVmc">
                   <node concept="1Y3b0j" id="2Z2H3pkZY$4" role="YeSDq">
@@ -5688,16 +5702,11 @@
             </node>
             <node concept="2OqwBi" id="3p2QKr7p171" role="33vP2m">
               <node concept="2OqwBi" id="3p2QKr7p172" role="2Oq$k0">
-                <node concept="2OqwBi" id="3p2QKr7p173" role="2Oq$k0">
-                  <node concept="37vLTw" id="3p2QKr7p174" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
-                  </node>
-                  <node concept="liA8E" id="3p2QKr7p175" role="2OqNvi">
-                    <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
-                  </node>
+                <node concept="1rXfSq" id="6OxU5jVe5Iv" role="2Oq$k0">
+                  <ref role="37wK5l" node="6OxU5jVaQNT" resolve="getEditorContext" />
                 </node>
                 <node concept="liA8E" id="3p2QKr7p176" role="2OqNvi">
-                  <ref role="37wK5l" to="exr9:~EditorContext.getRepository()" resolve="getRepository" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="liA8E" id="3p2QKr7p177" role="2OqNvi">
@@ -7813,16 +7822,11 @@
                     <node concept="1pGfFk" id="3p2QKr7psi4" role="2ShVmc">
                       <ref role="37wK5l" to="w1kc:~ModelAccessHelper.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="ModelAccessHelper" />
                       <node concept="2OqwBi" id="3p2QKr7pwYW" role="37wK5m">
-                        <node concept="2OqwBi" id="3p2QKr7ptIi" role="2Oq$k0">
-                          <node concept="37vLTw" id="3p2QKr7psLt" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
-                          </node>
-                          <node concept="liA8E" id="3p2QKr7pwv6" role="2OqNvi">
-                            <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
-                          </node>
+                        <node concept="1rXfSq" id="6OxU5jVfaM6" role="2Oq$k0">
+                          <ref role="37wK5l" node="6OxU5jVaQNT" resolve="getEditorContext" />
                         </node>
                         <node concept="liA8E" id="3p2QKr7pyx1" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorContext.getRepository()" resolve="getRepository" />
+                          <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                         </node>
                       </node>
                     </node>
@@ -7895,13 +7899,8 @@
                     </node>
                     <node concept="liA8E" id="2Z2H3pkZmhh" role="2OqNvi">
                       <ref role="37wK5l" to="f4zo:~SubstituteAction.substitute(jetbrains.mps.openapi.editor.EditorContext,java.lang.String)" resolve="substitute" />
-                      <node concept="2OqwBi" id="2Z2H3pkZmhl" role="37wK5m">
-                        <node concept="37vLTw" id="2Z2H3pkZmhk" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
-                        </node>
-                        <node concept="liA8E" id="2Z2H3pkZmhm" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
-                        </node>
+                      <node concept="1rXfSq" id="6OxU5jVeL1A" role="37wK5m">
+                        <ref role="37wK5l" node="6OxU5jVaQNT" resolve="getEditorContext" />
                       </node>
                       <node concept="37vLTw" id="2Z2H3pkZiYn" role="37wK5m">
                         <ref role="3cqZAo" node="2Z2H3pkZiXD" resolve="pattern" />
@@ -8443,16 +8442,11 @@
           <node concept="2OqwBi" id="2Z2H3pkZj1o" role="3clFbG">
             <node concept="2OqwBi" id="2Z2H3pkZj1p" role="2Oq$k0">
               <node concept="2OqwBi" id="2Z2H3pkZj1q" role="2Oq$k0">
-                <node concept="2OqwBi" id="2Z2H3pkZmi$" role="2Oq$k0">
-                  <node concept="37vLTw" id="2Z2H3pkZmiz" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
-                  </node>
-                  <node concept="liA8E" id="2Z2H3pkZmi_" role="2OqNvi">
-                    <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
-                  </node>
+                <node concept="1rXfSq" id="6OxU5jVdiQ8" role="2Oq$k0">
+                  <ref role="37wK5l" node="6OxU5jVaQNT" resolve="getEditorContext" />
                 </node>
-                <node concept="liA8E" id="2Z2H3pkZj1s" role="2OqNvi">
-                  <ref role="37wK5l" to="exr9:~EditorContext.getRepository()" resolve="getRepository" />
+                <node concept="liA8E" id="6OxU5jVdHPr" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="liA8E" id="2Z2H3pkZj1t" role="2OqNvi">
@@ -8485,13 +8479,8 @@
                             </node>
                             <node concept="liA8E" id="2Z2H3pkZmiH" role="2OqNvi">
                               <ref role="37wK5l" to="f4zo:~SubstituteAction.substitute(jetbrains.mps.openapi.editor.EditorContext,java.lang.String)" resolve="substitute" />
-                              <node concept="2OqwBi" id="2Z2H3pkZmiO" role="37wK5m">
-                                <node concept="37vLTw" id="2Z2H3pkZmiN" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
-                                </node>
-                                <node concept="liA8E" id="2Z2H3pkZmiP" role="2OqNvi">
-                                  <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
-                                </node>
+                              <node concept="1rXfSq" id="6OxU5jVcVEw" role="37wK5m">
+                                <ref role="37wK5l" node="6OxU5jVaQNT" resolve="getEditorContext" />
                               </node>
                               <node concept="37vLTw" id="2Z2H3pkZj1D" role="37wK5m">
                                 <ref role="3cqZAo" node="2Z2H3pkZj17" resolve="pattern" />
@@ -8625,6 +8614,25 @@
       <node concept="3Tm1VV" id="2Z2H3pkZj2p" role="1B3o_S" />
       <node concept="3cqZAl" id="2Z2H3pkZj2q" role="3clF45" />
     </node>
+    <node concept="3clFb_" id="6OxU5jVaQNT" role="jymVt">
+      <property role="TrG5h" value="getEditorContext" />
+      <node concept="3clFbS" id="6OxU5jVaQNW" role="3clF47">
+        <node concept="3cpWs6" id="6OxU5jVb5u6" role="3cqZAp">
+          <node concept="2OqwBi" id="6OxU5jVbuOd" role="3cqZAk">
+            <node concept="37vLTw" id="6OxU5jVbobH" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
+            </node>
+            <node concept="liA8E" id="6OxU5jVbJhq" role="2OqNvi">
+              <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="6OxU5jVaC6O" role="3clF45">
+        <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6OxU5jValdb" role="jymVt" />
     <node concept="Qs71p" id="2Z2H3pkZix_" role="jymVt">
       <property role="TrG5h" value="PopupWindowPosition" />
       <property role="2bfB8j" value="true" />
@@ -8767,16 +8775,11 @@
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
               <node concept="2OqwBi" id="1YmiibRG0$r" role="37wK5m">
                 <node concept="2OqwBi" id="1YmiibRG0bs" role="2Oq$k0">
-                  <node concept="2OqwBi" id="1YmiibRFYrt" role="2Oq$k0">
-                    <node concept="37vLTw" id="1YmiibRFXRP" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
-                    </node>
-                    <node concept="liA8E" id="1YmiibRG03N" role="2OqNvi">
-                      <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
-                    </node>
+                  <node concept="1rXfSq" id="6OxU5jVc5TV" role="2Oq$k0">
+                    <ref role="37wK5l" node="6OxU5jVaQNT" resolve="getEditorContext" />
                   </node>
-                  <node concept="liA8E" id="1YmiibRG0sP" role="2OqNvi">
-                    <ref role="37wK5l" to="exr9:~EditorContext.getOperationContext()" resolve="getOperationContext" />
+                  <node concept="liA8E" id="6OxU5jVcxsO" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1YmiibRG0P2" role="2OqNvi">

@@ -105,7 +105,7 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
-        <reference id="1176109685394" name="concept" index="3lApI3" />
+        <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -237,7 +237,9 @@
                 <node concept="I4A8Y" id="5CkU_dHimXE" role="2OqNvi" />
               </node>
               <node concept="3lApI0" id="5CkU_dHimX_" role="2OqNvi">
-                <ref role="3lApI3" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                <node concept="chp4Y" id="34w7WGUSF2h" role="3MHPDn">
+                  <ref role="cht4Q" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                </node>
               </node>
             </node>
           </node>

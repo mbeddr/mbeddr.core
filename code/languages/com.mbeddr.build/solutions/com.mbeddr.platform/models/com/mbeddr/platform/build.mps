@@ -265,7 +265,7 @@
     <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="2048" />
-      <property role="TZNOO" value="1.8" />
+      <property role="TZNOO" value="9" />
       <property role="2_Ic$B" value="true" />
     </node>
     <node concept="1wNqPr" id="3AVJcIMlF8m" role="3989C9">
@@ -6469,20 +6469,25 @@
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
-          <node concept="3LXTmp" id="4PRpvcZJNkf" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJNk4" role="3LXTmr">
+        </node>
+        <node concept="1BupzO" id="6oqFD4Uk90$" role="3bR31x">
+          <property role="3ZfqAx" value="languageAccessories" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4Uk90_" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4Uk90p" role="3LXTmr">
               <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="4PRpvcZJNk5" role="iGT6I">
+              <node concept="2Ry0Ak" id="6oqFD4Uk90q" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNk6" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6oqFD4Uk90r" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.mpsutil.hyperlink" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNk7" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6oqFD4Uk90s" role="2Ry0An">
                     <property role="2Ry0Am" value="languageAccessories" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="4PRpvcZJNkg" role="3LXTna">
+            <node concept="3qWCbU" id="6oqFD4Uk90A" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -6610,20 +6615,25 @@
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
-          <node concept="3LXTmp" id="4PRpvcZJNkU" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJNkJ" role="3LXTmr">
+        </node>
+        <node concept="1BupzO" id="6oqFD4Uk91a" role="3bR31x">
+          <property role="3ZfqAx" value="languageAccessories" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4Uk91b" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4Uk90Z" role="3LXTmr">
               <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="4PRpvcZJNkK" role="iGT6I">
+              <node concept="2Ry0Ak" id="6oqFD4Uk910" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNkL" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6oqFD4Uk911" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.mpsutil.framecell" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNkM" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6oqFD4Uk912" role="2Ry0An">
                     <property role="2Ry0Am" value="languageAccessories" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="4PRpvcZJNkV" role="3LXTna">
+            <node concept="3qWCbU" id="6oqFD4Uk91c" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -6935,23 +6945,6 @@
               </node>
             </node>
             <node concept="3qWCbU" id="4PRpvcZJNlP" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-          <node concept="3LXTmp" id="4PRpvcZJNm1" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJNlQ" role="3LXTmr">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="4PRpvcZJNlR" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNlS" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.richstring" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNlT" role="2Ry0An">
-                    <property role="2Ry0Am" value="languageAccessories" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="4PRpvcZJNm2" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -7460,23 +7453,6 @@
               </node>
             </node>
             <node concept="3qWCbU" id="4PRpvcZJNnq" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-          <node concept="3LXTmp" id="4PRpvcZJNnA" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJNnr" role="3LXTmr">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="4PRpvcZJNns" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNnt" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.rcp" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNnu" role="2Ry0An">
-                    <property role="2Ry0Am" value="languageAccessories" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="4PRpvcZJNnB" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -8908,6 +8884,9 @@
       <node concept="m$_yC" id="DnqfiuSO_X" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
+      <node concept="m$_yC" id="7wOeVMeCel8" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
       <node concept="3_J27D" id="DnqfiuSOA1" role="m_cZH">
         <node concept="3Mxwew" id="DnqfiuSOA2" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.compare" />
@@ -8921,9 +8900,6 @@
         <node concept="3Mxwew" id="DnqfiuSOA5" role="3MwsjC">
           <property role="3MwjfP" value="Node comparator utilities from mbeddr.mpsutil" />
         </node>
-      </node>
-      <node concept="m$_yC" id="7wOeVMeCel8" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnNsFs" role="3989C9">
@@ -14185,23 +14161,6 @@
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
-          <node concept="3LXTmp" id="4PRpvcZJNKC" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJNKt" role="3LXTmr">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="4PRpvcZJNKu" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNKv" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.process" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNKw" role="2Ry0An">
-                    <property role="2Ry0Am" value="languageAccessories" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="4PRpvcZJNKD" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
         </node>
       </node>
     </node>
@@ -15111,11 +15070,6 @@
         <node concept="1SiIV0" id="6xaPNaK8NLf" role="3bR37C">
           <node concept="3bR9La" id="6xaPNaK8NLg" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6xaPNaK8NLh" role="3bR37C">
-          <node concept="3bR9La" id="6xaPNaK8NLi" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1xb0AuwMYDt" resolve="Hamcrest" />
           </node>
         </node>
         <node concept="1SiIV0" id="6xaPNaK8NLj" role="3bR37C">
@@ -16409,20 +16363,25 @@
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
-          <node concept="3LXTmp" id="4PRpvcZJNU7" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJNTW" role="3LXTmr">
+        </node>
+        <node concept="1BupzO" id="6oqFD4Uk9sm" role="3bR31x">
+          <property role="3ZfqAx" value="languageAccessories" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4Uk9sn" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4Uk9sb" role="3LXTmr">
               <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="4PRpvcZJNTX" role="iGT6I">
+              <node concept="2Ry0Ak" id="6oqFD4Uk9sc" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNTY" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6oqFD4Uk9sd" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.mpsutil.multilingual.common" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNTZ" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6oqFD4Uk9se" role="2Ry0An">
                     <property role="2Ry0Am" value="languageAccessories" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="4PRpvcZJNU8" role="3LXTna">
+            <node concept="3qWCbU" id="6oqFD4Uk9so" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -18142,20 +18101,25 @@
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
-          <node concept="3LXTmp" id="4PRpvcZJNZk" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJNZ9" role="3LXTmr">
+        </node>
+        <node concept="1BupzO" id="6oqFD4Uk9wt" role="3bR31x">
+          <property role="3ZfqAx" value="languageAccessories" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4Uk9wu" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4Uk9wi" role="3LXTmr">
               <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="4PRpvcZJNZa" role="iGT6I">
+              <node concept="2Ry0Ak" id="6oqFD4Uk9wj" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNZb" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6oqFD4Uk9wk" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.doc.gen_xhtml" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNZc" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6oqFD4Uk9wl" role="2Ry0An">
                     <property role="2Ry0Am" value="languageAccessories" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="4PRpvcZJNZl" role="3LXTna">
+            <node concept="3qWCbU" id="6oqFD4Uk9wv" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -20363,57 +20327,6 @@
               </node>
             </node>
             <node concept="3qWCbU" id="4PRpvcZJO82" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-          <node concept="3LXTmp" id="4PRpvcZJO8e" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJO83" role="3LXTmr">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="4PRpvcZJO84" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="4PRpvcZJO85" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.genreview" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJO86" role="2Ry0An">
-                    <property role="2Ry0Am" value="icons" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="4PRpvcZJO8f" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-          <node concept="3LXTmp" id="5QhSDINiDNL" role="1HemKq">
-            <node concept="398BVA" id="5QhSDINiDNA" role="3LXTmr">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="5QhSDINiDNB" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="5QhSDINiDNC" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.genreview" />
-                  <node concept="2Ry0Ak" id="5QhSDINiDND" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="5QhSDINiDNM" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-          <node concept="3LXTmp" id="5QhSDINiDNY" role="1HemKq">
-            <node concept="398BVA" id="5QhSDINiDNN" role="3LXTmr">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="5QhSDINiDNO" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="5QhSDINiDNP" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.genreview" />
-                  <node concept="2Ry0Ak" id="5QhSDINiDNQ" role="2Ry0An">
-                    <property role="2Ry0Am" value="icons" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="5QhSDINiDNZ" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -23614,20 +23527,25 @@
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
-          <node concept="3LXTmp" id="$Kq8MetF2M" role="1HemKq">
-            <node concept="398BVA" id="$Kq8MetF2w" role="3LXTmr">
+        </node>
+        <node concept="1BupzO" id="6oqFD4Uka8B" role="3bR31x">
+          <property role="3ZfqAx" value="languageAccessories" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oqFD4Uka8C" role="1HemKq">
+            <node concept="398BVA" id="6oqFD4Uka8l" role="3LXTmr">
               <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-              <node concept="2Ry0Ak" id="$Kq8MetF2x" role="iGT6I">
+              <node concept="2Ry0Ak" id="6oqFD4Uka8m" role="iGT6I">
                 <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="$Kq8MetF2y" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6oqFD4Uka8n" role="2Ry0An">
                   <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.iconchar" />
-                  <node concept="2Ry0Ak" id="$Kq8MetF2z" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6oqFD4Uka8o" role="2Ry0An">
                     <property role="2Ry0Am" value="languageAccessories" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="$Kq8MetF2N" role="3LXTna">
+            <node concept="3qWCbU" id="6oqFD4Uka8D" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>

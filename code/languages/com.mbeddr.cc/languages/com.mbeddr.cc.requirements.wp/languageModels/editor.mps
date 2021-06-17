@@ -228,7 +228,7 @@
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -312,7 +312,9 @@
                             <node concept="I4A8Y" id="35Mepj$OZbc" role="2OqNvi" />
                           </node>
                           <node concept="1j9C0f" id="35Mepj$OZbd" role="2OqNvi">
-                            <ref role="1j9C0d" to="6pek:7sHl0myeX2w" resolve="WorkPackage" />
+                            <node concept="chp4Y" id="34w7WGUSF0s" role="3MHPCF">
+                              <ref role="cht4Q" to="6pek:7sHl0myeX2w" resolve="WorkPackage" />
+                            </node>
                           </node>
                         </node>
                         <node concept="3$u5V9" id="35Mepj$OZbf" role="2OqNvi">
@@ -376,7 +378,9 @@
                             <node concept="I4A8Y" id="35Mepj$P1zd" role="2OqNvi" />
                           </node>
                           <node concept="1j9C0f" id="35Mepj$P1ze" role="2OqNvi">
-                            <ref role="1j9C0d" to="6pek:7sHl0myeX2w" resolve="WorkPackage" />
+                            <node concept="chp4Y" id="34w7WGUSF0t" role="3MHPCF">
+                              <ref role="cht4Q" to="6pek:7sHl0myeX2w" resolve="WorkPackage" />
+                            </node>
                           </node>
                         </node>
                         <node concept="3$u5V9" id="35Mepj$P1zg" role="2OqNvi">

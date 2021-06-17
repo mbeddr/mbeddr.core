@@ -169,7 +169,7 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
@@ -464,7 +464,9 @@
                                     <node concept="I4A8Y" id="3$f8hf_lBDn" role="2OqNvi" />
                                   </node>
                                   <node concept="2RRcyG" id="3$f8hf_lCgC" role="2OqNvi">
-                                    <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                    <node concept="chp4Y" id="34w7WGUSF0C" role="3MHsoP">
+                                      <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                    </node>
                                   </node>
                                 </node>
                                 <node concept="1uHKPH" id="3$f8hf_lJAU" role="2OqNvi" />
@@ -654,7 +656,9 @@
                                       <node concept="I4A8Y" id="3$f8hf_vHDk" role="2OqNvi" />
                                     </node>
                                     <node concept="2RRcyG" id="3$f8hf_vHDl" role="2OqNvi">
-                                      <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                      <node concept="chp4Y" id="34w7WGUSF0D" role="3MHsoP">
+                                        <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                      </node>
                                     </node>
                                   </node>
                                   <node concept="1uHKPH" id="3$f8hf_vHDm" role="2OqNvi" />
@@ -761,7 +765,9 @@
                                   <node concept="I4A8Y" id="7iyfbqs5mDQ" role="2OqNvi" />
                                 </node>
                                 <node concept="2RRcyG" id="7iyfbqs5mDR" role="2OqNvi">
-                                  <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                  <node concept="chp4Y" id="34w7WGUSF0E" role="3MHsoP">
+                                    <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                  </node>
                                 </node>
                               </node>
                               <node concept="1uHKPH" id="7iyfbqs5mDS" role="2OqNvi" />
