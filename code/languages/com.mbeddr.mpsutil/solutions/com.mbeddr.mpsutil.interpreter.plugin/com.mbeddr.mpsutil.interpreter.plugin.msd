@@ -38,7 +38,6 @@
     <module reference="1152e500-242c-4261-8518-2806cb83e0c9(com.mbeddr.mpsutil.interpreter.plugin)" version="0" />
     <module reference="735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)" version="0" />
     <module reference="726886d1-ef90-4249-a08f-1e3ec23a7113(com.mbeddr.mpsutil.traceExplorer)" version="0" />
-    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>
 </solution>
 

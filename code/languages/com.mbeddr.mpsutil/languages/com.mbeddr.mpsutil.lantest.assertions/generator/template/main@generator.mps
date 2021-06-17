@@ -2,7 +2,7 @@
 <model ref="r:948ebc39-d2b9-4cf5-947f-43e2c7208e24(com.mbeddr.mpsutil.lantest.assertions.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="ccdc24b1-37a8-44ac-8a87-b53bd9c96407" name="com.mbeddr.mpsutil.lantest.assertions" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />

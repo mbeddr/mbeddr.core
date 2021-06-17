@@ -2,7 +2,7 @@
 <model ref="r:64ab5fae-7c1b-4d46-84f7-7027407a369b(com.mbeddr.doc.gen_latex.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="f8f68d92-c6d2-44b3-8d63-c00ade75ec86" name="com.mbeddr.doc.latex" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -248,7 +248,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
@@ -906,7 +906,9 @@
             <node concept="2OqwBi" id="5yxqZJwzYRW" role="33vP2m">
               <node concept="1Q6Npb" id="5yxqZJwzYRX" role="2Oq$k0" />
               <node concept="2RRcyG" id="5yxqZJwzYRY" role="2OqNvi">
-                <ref role="2RRcyH" to="2c95:2TZO3DbvPDI" resolve="DocumentExport" />
+                <node concept="chp4Y" id="34w7WGUSF1Z" role="3MHsoP">
+                  <ref role="cht4Q" to="2c95:2TZO3DbvPDI" resolve="DocumentExport" />
+                </node>
               </node>
             </node>
           </node>

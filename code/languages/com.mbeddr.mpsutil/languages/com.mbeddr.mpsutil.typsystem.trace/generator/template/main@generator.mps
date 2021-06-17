@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="2e589a6f-51c3-423f-8ea2-0d769a5cc288" name="com.mbeddr.mpsutil.typsystem.trace" version="0" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
@@ -168,6 +168,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -175,7 +178,7 @@
       </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -233,7 +236,9 @@
                     <node concept="I4A8Y" id="4SFHv2pRzDA" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="4SFHv2pRzDB" role="2OqNvi">
-                    <ref role="2RRcyH" to="32fn:4SFHv2pKbgy" resolve="TraceTypesystem" />
+                    <node concept="chp4Y" id="34w7WGUSF37" role="3MHsoP">
+                      <ref role="cht4Q" to="32fn:4SFHv2pKbgy" resolve="TraceTypesystem" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1uHKPH" id="4SFHv2pRzDC" role="2OqNvi" />
@@ -327,7 +332,9 @@
                     <node concept="I4A8Y" id="4SFHv2pQyPc" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="4SFHv2pQyPd" role="2OqNvi">
-                    <ref role="2RRcyH" to="32fn:4SFHv2pKbgy" resolve="TraceTypesystem" />
+                    <node concept="chp4Y" id="34w7WGUSF38" role="3MHsoP">
+                      <ref role="cht4Q" to="32fn:4SFHv2pKbgy" resolve="TraceTypesystem" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1uHKPH" id="4SFHv2pQyPe" role="2OqNvi" />
@@ -421,7 +428,9 @@
                     <node concept="I4A8Y" id="4SFHv2pRJQC" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="4SFHv2pRJQD" role="2OqNvi">
-                    <ref role="2RRcyH" to="32fn:4SFHv2pKbgy" resolve="TraceTypesystem" />
+                    <node concept="chp4Y" id="34w7WGUSF39" role="3MHsoP">
+                      <ref role="cht4Q" to="32fn:4SFHv2pKbgy" resolve="TraceTypesystem" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1uHKPH" id="4SFHv2pRJQE" role="2OqNvi" />
@@ -515,7 +524,9 @@
                     <node concept="I4A8Y" id="4SFHv2pXOGt" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="4SFHv2pXOGu" role="2OqNvi">
-                    <ref role="2RRcyH" to="32fn:4SFHv2pKbgy" resolve="TraceTypesystem" />
+                    <node concept="chp4Y" id="34w7WGUSF3a" role="3MHsoP">
+                      <ref role="cht4Q" to="32fn:4SFHv2pKbgy" resolve="TraceTypesystem" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1uHKPH" id="4SFHv2pXOGv" role="2OqNvi" />
@@ -609,7 +620,9 @@
                     <node concept="I4A8Y" id="4SFHv2pXUGl" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="4SFHv2pXUGm" role="2OqNvi">
-                    <ref role="2RRcyH" to="32fn:4SFHv2pKbgy" resolve="TraceTypesystem" />
+                    <node concept="chp4Y" id="34w7WGUSF3b" role="3MHsoP">
+                      <ref role="cht4Q" to="32fn:4SFHv2pKbgy" resolve="TraceTypesystem" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1uHKPH" id="4SFHv2pXUGn" role="2OqNvi" />

@@ -2,7 +2,7 @@
 <model ref="r:aa438ded-c094-4b7b-b72a-d5f545dbebb8(com.mbeddr.cc.requirements.report.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
@@ -315,7 +315,7 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
@@ -2045,7 +2045,9 @@
             <node concept="2OqwBi" id="2U5fsQejToT" role="33vP2m">
               <node concept="1Q6Npb" id="2U5fsQejUb3" role="2Oq$k0" />
               <node concept="2RRcyG" id="2U5fsQejToZ" role="2OqNvi">
-                <ref role="2RRcyH" to="2c95:2TZO3DbuxwK" resolve="Document" />
+                <node concept="chp4Y" id="34w7WGUSF0r" role="3MHsoP">
+                  <ref role="cht4Q" to="2c95:2TZO3DbuxwK" resolve="Document" />
+                </node>
               </node>
             </node>
           </node>

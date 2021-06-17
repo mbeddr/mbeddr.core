@@ -416,7 +416,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
         <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
@@ -4979,7 +4979,9 @@
                     <node concept="I4A8Y" id="2_iQ3fLeo6f" role="2OqNvi" />
                   </node>
                   <node concept="2RRcyG" id="2_iQ3fLeo6g" role="2OqNvi">
-                    <ref role="2RRcyH" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+                    <node concept="chp4Y" id="34w7WGUSF2H" role="3MHsoP">
+                      <ref role="cht4Q" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="2_iQ3fLeo6h" role="2OqNvi">

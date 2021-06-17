@@ -193,7 +193,7 @@
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -1368,7 +1368,9 @@
                 <node concept="I4A8Y" id="7ZfoUOqRATr" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="XyAj1ExC$c" role="2OqNvi">
-                <ref role="1j9C0d" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+                <node concept="chp4Y" id="34w7WGUSF2Y" role="3MHPCF">
+                  <ref role="cht4Q" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+                </node>
               </node>
             </node>
             <node concept="ANE8D" id="7ZfoUOqRATt" role="2OqNvi" />
@@ -2181,7 +2183,9 @@
                 <node concept="I4A8Y" id="2dCF6Fx9i2b" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="XyAj1ExFo6" role="2OqNvi">
-                <ref role="1j9C0d" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+                <node concept="chp4Y" id="34w7WGUSF2Z" role="3MHPCF">
+                  <ref role="cht4Q" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+                </node>
               </node>
             </node>
             <node concept="ANE8D" id="2dCF6Fx9i2d" role="2OqNvi" />

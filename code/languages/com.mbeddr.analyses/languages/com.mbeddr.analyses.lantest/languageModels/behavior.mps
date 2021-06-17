@@ -204,7 +204,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
@@ -421,7 +421,9 @@
                     <ref role="3cqZAo" node="7Tu0TDFjQth" resolve="m" />
                   </node>
                   <node concept="2RRcyG" id="7Tu0TDFjUNv" role="2OqNvi">
-                    <ref role="2RRcyH" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                    <node concept="chp4Y" id="34w7WGUSF0b" role="3MHsoP">
+                      <ref role="cht4Q" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="XSZx7A5dip" role="2OqNvi">
@@ -896,7 +898,9 @@
                         <ref role="3cqZAo" node="52eR6w5Pjwz" resolve="m" />
                       </node>
                       <node concept="2RRcyG" id="52eR6w5PCoL" role="2OqNvi">
-                        <ref role="2RRcyH" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                        <node concept="chp4Y" id="34w7WGUSF0c" role="3MHsoP">
+                          <ref role="cht4Q" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3zZkjj" id="XSZx7A4IIb" role="2OqNvi">

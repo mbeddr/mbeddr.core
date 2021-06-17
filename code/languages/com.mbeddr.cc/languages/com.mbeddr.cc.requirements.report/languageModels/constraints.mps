@@ -67,10 +67,13 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
-        <reference id="1176109685394" name="concept" index="3lApI3" />
+        <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
     </language>
   </registry>
@@ -90,7 +93,9 @@
                   <node concept="I4A8Y" id="5CkU_dHibsv" role="2OqNvi" />
                 </node>
                 <node concept="3lApI0" id="5CkU_dHibsw" role="2OqNvi">
-                  <ref role="3lApI3" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
+                  <node concept="chp4Y" id="34w7WGUSF0p" role="3MHPDn">
+                    <ref role="cht4Q" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
+                  </node>
                 </node>
               </node>
             </node>

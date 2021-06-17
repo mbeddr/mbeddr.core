@@ -2,7 +2,7 @@
 <model ref="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="4457ca2e-a7c9-4452-9578-e94701cc4942" name="com.mbeddr.core.debug.util" version="-1" />
@@ -357,7 +357,7 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
@@ -545,7 +545,9 @@
                                     <node concept="1st3f0" id="5t7wq7uKxgi" role="2OqNvi" />
                                   </node>
                                   <node concept="2RRcyG" id="5t7wq7uKxgj" role="2OqNvi">
-                                    <ref role="2RRcyH" to="rpmx:67gjJAxXnpI" resolve="DebuggerTest" />
+                                    <node concept="chp4Y" id="34w7WGUSF1Q" role="3MHsoP">
+                                      <ref role="cht4Q" to="rpmx:67gjJAxXnpI" resolve="DebuggerTest" />
+                                    </node>
                                   </node>
                                 </node>
                                 <node concept="1z4cxt" id="5t7wq7uKxgk" role="2OqNvi">
@@ -636,7 +638,9 @@
                                     <node concept="1st3f0" id="5t7wq7uKxgU" role="2OqNvi" />
                                   </node>
                                   <node concept="2RRcyG" id="5t7wq7uKxgV" role="2OqNvi">
-                                    <ref role="2RRcyH" to="rpmx:67gjJAxXnpI" resolve="DebuggerTest" />
+                                    <node concept="chp4Y" id="34w7WGUSF1R" role="3MHsoP">
+                                      <ref role="cht4Q" to="rpmx:67gjJAxXnpI" resolve="DebuggerTest" />
+                                    </node>
                                   </node>
                                 </node>
                                 <node concept="1z4cxt" id="5t7wq7uKxgW" role="2OqNvi">
@@ -8154,7 +8158,9 @@
                                 <node concept="1st3f0" id="3GPxRNR4Fgx" role="2OqNvi" />
                               </node>
                               <node concept="2RRcyG" id="3GPxRNR4Fgy" role="2OqNvi">
-                                <ref role="2RRcyH" to="rpmx:67gjJAxXnpI" resolve="DebuggerTest" />
+                                <node concept="chp4Y" id="34w7WGUSF1S" role="3MHsoP">
+                                  <ref role="cht4Q" to="rpmx:67gjJAxXnpI" resolve="DebuggerTest" />
+                                </node>
                               </node>
                             </node>
                             <node concept="1z4cxt" id="3GPxRNR4Fgz" role="2OqNvi">

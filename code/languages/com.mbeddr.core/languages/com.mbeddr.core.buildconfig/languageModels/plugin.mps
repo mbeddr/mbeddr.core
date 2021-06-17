@@ -307,7 +307,7 @@
       </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
@@ -746,7 +746,9 @@
                                                       <ref role="3cqZAo" node="2obGnlRg4rC" resolve="model" />
                                                     </node>
                                                     <node concept="2RRcyG" id="2obGnlRih2M" role="2OqNvi">
-                                                      <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                                      <node concept="chp4Y" id="34w7WGUSF0X" role="3MHsoP">
+                                                        <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                                      </node>
                                                     </node>
                                                   </node>
                                                   <node concept="1uHKPH" id="2obGnlRih2N" role="2OqNvi" />
@@ -1185,7 +1187,9 @@
                                 <node concept="2OqwBi" id="4zXqh6VIjEk" role="2Oq$k0">
                                   <node concept="2OqwBi" id="4zXqh6VIjEl" role="2Oq$k0">
                                     <node concept="2RRcyG" id="4zXqh6VIjEn" role="2OqNvi">
-                                      <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                      <node concept="chp4Y" id="34w7WGUSF0Y" role="3MHsoP">
+                                        <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                      </node>
                                     </node>
                                     <node concept="37vLTw" id="6xgYZv9zO0t" role="2Oq$k0">
                                       <ref role="3cqZAo" node="4zXqh6VIjv$" resolve="model" />

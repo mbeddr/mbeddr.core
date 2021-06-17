@@ -2,14 +2,14 @@
 <model ref="r:0349ad2a-48af-455d-8382-6bd1d74afb8e(com.mbeddr.core.debug.blext.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
@@ -346,7 +346,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
@@ -6672,7 +6672,9 @@
                       <node concept="I4A8Y" id="4kIkO5yeMvq" role="2OqNvi" />
                     </node>
                     <node concept="2RRcyG" id="4kIkO5yeOJl" role="2OqNvi">
-                      <ref role="2RRcyH" to="talm:4kIkO5ycfyp" resolve="InjectDebuggingInformationDebugger" />
+                      <node concept="chp4Y" id="34w7WGUSF1V" role="3MHsoP">
+                        <ref role="cht4Q" to="talm:4kIkO5ycfyp" resolve="InjectDebuggingInformationDebugger" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3GX2aA" id="4kIkO5yeW5o" role="2OqNvi" />
@@ -6685,7 +6687,9 @@
                         <node concept="I4A8Y" id="4kIkO5yeYeA" role="2OqNvi" />
                       </node>
                       <node concept="2RRcyG" id="4kIkO5yeYeB" role="2OqNvi">
-                        <ref role="2RRcyH" to="talm:4kIkO5ycfyp" resolve="InjectDebuggingInformationDebugger" />
+                        <node concept="chp4Y" id="34w7WGUSF1W" role="3MHsoP">
+                          <ref role="cht4Q" to="talm:4kIkO5ycfyp" resolve="InjectDebuggingInformationDebugger" />
+                        </node>
                       </node>
                     </node>
                     <node concept="1uHKPH" id="4kIkO5yf33b" role="2OqNvi" />

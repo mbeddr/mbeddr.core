@@ -153,7 +153,7 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
@@ -229,7 +229,9 @@
                 <node concept="I4A8Y" id="2L0t9wJudP1" role="2OqNvi" />
               </node>
               <node concept="2RRcyG" id="2L0t9wJudP2" role="2OqNvi">
-                <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                <node concept="chp4Y" id="34w7WGUSF06" role="3MHsoP">
+                  <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                </node>
               </node>
             </node>
             <node concept="1uHKPH" id="2L0t9wJudP3" role="2OqNvi" />
@@ -362,7 +364,9 @@
                   <node concept="I4A8Y" id="2L0t9wJutHW" role="2OqNvi" />
                 </node>
                 <node concept="2RRcyG" id="2L0t9wJutHX" role="2OqNvi">
-                  <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                  <node concept="chp4Y" id="34w7WGUSF07" role="3MHsoP">
+                    <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                  </node>
                 </node>
               </node>
               <node concept="1uHKPH" id="2L0t9wJutHY" role="2OqNvi" />

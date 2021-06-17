@@ -217,7 +217,7 @@
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -344,7 +344,9 @@
                         <ref role="3cqZAo" node="xRVdUh_i7U" resolve="model" />
                       </node>
                       <node concept="2RRcyG" id="7HmzdkqWLqb" role="2OqNvi">
-                        <ref role="2RRcyH" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                        <node concept="chp4Y" id="34w7WGUSF30" role="3MHsoP">
+                          <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                        </node>
                       </node>
                     </node>
                   </node>
