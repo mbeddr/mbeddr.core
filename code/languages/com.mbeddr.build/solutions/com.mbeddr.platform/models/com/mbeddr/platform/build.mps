@@ -8881,9 +8881,6 @@
       <node concept="m$_yC" id="DnqfiuSO_X" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
-      <node concept="m$_yC" id="7wOeVMeCel8" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
-      </node>
       <node concept="3_J27D" id="DnqfiuSOA1" role="m_cZH">
         <node concept="3Mxwew" id="DnqfiuSOA2" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.compare" />
@@ -8897,6 +8894,9 @@
         <node concept="3Mxwew" id="DnqfiuSOA5" role="3MwsjC">
           <property role="3MwjfP" value="Node comparator utilities from mbeddr.mpsutil" />
         </node>
+      </node>
+      <node concept="m$_yC" id="7wOeVMeCel8" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnNsFs" role="3989C9">
@@ -17005,6 +17005,11 @@
         <node concept="1SiIV0" id="6Xf$M3qrxmK" role="3bR37C">
           <node concept="1Busua" id="6Xf$M3qrxmL" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:4SM2EuqHUPF" resolve="jetbrains.mps.lang.modelapi" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="KHbkGQgrhf" role="3bR37C">
+          <node concept="3bR9La" id="KHbkGQgrhg" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:5cCcm$KATVz" resolve="jetbrains.mps.lang.migration.runtime" />
           </node>
         </node>
       </node>
