@@ -2291,6 +2291,23 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="bnKRyxQ2fZ" role="13h7CS">
+      <property role="TrG5h" value="isSameNameAdmissible" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="bnKRyxQ2g0" role="1B3o_S" />
+      <node concept="10P_77" id="bnKRyxQafy" role="3clF45" />
+      <node concept="3clFbS" id="bnKRyxQ2g2" role="3clF47">
+        <node concept="3clFbF" id="bnKRyxQagT" role="3cqZAp">
+          <node concept="3clFbT" id="bnKRyxQagS" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="bnKRyxQagm" role="3clF46">
+        <property role="TrG5h" value="other" />
+        <node concept="3Tqbb2" id="bnKRyxQagl" role="1tU5fm">
+          <ref role="ehGHo" to="x27k:5_l8w1EmTcX" resolve="Module" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="5ak6HMA0t9B" role="13h7CW">
       <node concept="3clFbS" id="5ak6HMA0t9C" role="2VODD2" />
     </node>
