@@ -912,15 +912,22 @@
           <node concept="2GrKxI" id="3BLvzpMQvhF" role="2Gsz3X">
             <property role="TrG5h" value="header" />
           </node>
-          <node concept="2OqwBi" id="3BLvzpMQviv" role="2GsD0m">
-            <node concept="2OqwBi" id="3BLvzpMQvi3" role="2Oq$k0">
-              <node concept="117lpO" id="3BLvzpMQvhI" role="2Oq$k0" />
-              <node concept="3TrEf2" id="3BLvzpMQvi9" role="2OqNvi">
-                <ref role="3Tt5mk" to="d0vh:7RiewQ_laNA" resolve="moduleExt" />
+          <node concept="2OqwBi" id="6hbeR3Mf6Y6" role="2GsD0m">
+            <node concept="2OqwBi" id="3BLvzpMQviv" role="2Oq$k0">
+              <node concept="2OqwBi" id="3BLvzpMQvi3" role="2Oq$k0">
+                <node concept="117lpO" id="3BLvzpMQvhI" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3BLvzpMQvi9" role="2OqNvi">
+                  <ref role="3Tt5mk" to="d0vh:7RiewQ_laNA" resolve="moduleExt" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="3BLvzpMQvi_" role="2OqNvi">
+                <ref role="3TtcxE" to="d0vh:3BLvzpMQtkP" resolve="resources" />
               </node>
             </node>
-            <node concept="3Tsc0h" id="3BLvzpMQvi_" role="2OqNvi">
-              <ref role="3TtcxE" to="d0vh:3BLvzpMQtkP" resolve="resources" />
+            <node concept="v3k3i" id="6hbeR3Mf8im" role="2OqNvi">
+              <node concept="chp4Y" id="6hbeR3Mf8pM" role="v3oSu">
+                <ref role="cht4Q" to="x27k:5jyom5fOqJw" resolve="HeaderDescriptor" />
+              </node>
             </node>
           </node>
           <node concept="3clFbS" id="3BLvzpMQvhH" role="2LFqv$">
@@ -929,11 +936,11 @@
                 <property role="lacIc" value="#include " />
               </node>
               <node concept="l9hG8" id="3BLvzpMQviC" role="lcghm">
-                <node concept="2OqwBi" id="3BLvzpMQvj6" role="lb14g">
+                <node concept="2OqwBi" id="6hbeR3Mf91N" role="lb14g">
                   <node concept="2GrUjf" id="3BLvzpMQviL" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="3BLvzpMQvhF" resolve="header" />
                   </node>
-                  <node concept="3TrcHB" id="3BLvzpMQvjc" role="2OqNvi">
+                  <node concept="3TrcHB" id="6hbeR3Mf9kx" role="2OqNvi">
                     <ref role="3TsBF5" to="x27k:5jyom5fOqJg" resolve="path" />
                   </node>
                 </node>
