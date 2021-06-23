@@ -495,7 +495,7 @@
       <node concept="3EZMnI" id="7RiewQ_kN5T" role="3EZMnx">
         <node concept="2iRfu4" id="7RiewQ_kN5U" role="2iSdaV" />
         <node concept="3F0ifn" id="7RiewQ_kN5V" role="3EZMnx">
-          <property role="3F0ifm" value="module h ext" />
+          <property role="3F0ifm" value="module ext" />
         </node>
         <node concept="3F0A7n" id="7RiewQ_kN5W" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -505,7 +505,7 @@
         </node>
         <node concept="3F2HdR" id="3BLvzpMQtkR" role="3EZMnx">
           <property role="2czwfO" value="," />
-          <ref role="1NtTu8" to="d0vh:3BLvzpMQtkP" resolve="headers" />
+          <ref role="1NtTu8" to="d0vh:3BLvzpMQtkP" resolve="resources" />
           <node concept="2iRfu4" id="3BLvzpMQtkS" role="2czzBx" />
         </node>
       </node>

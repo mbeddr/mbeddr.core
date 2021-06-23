@@ -6298,5 +6298,15 @@
     </node>
     <node concept="22hDWj" id="27yO7ubzfSk" role="22hAXT" />
   </node>
+  <node concept="24kQdi" id="6hbeR3KRJOv">
+    <property role="3GE5qa" value="external" />
+    <ref role="1XX52x" to="x27k:6hbeR3KRJOn" resolve="SrcResourceDescriptor" />
+    <node concept="PMmxH" id="6hbeR3KRJOx" role="2wV5jI">
+      <ref role="PMmxG" node="2fRKXKiDTps" resolve="ExternalResourceDescriptorComponent" />
+      <node concept="VPM3Z" id="6hbeR3KRJOy" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
+    </node>
+  </node>
 </model>
 

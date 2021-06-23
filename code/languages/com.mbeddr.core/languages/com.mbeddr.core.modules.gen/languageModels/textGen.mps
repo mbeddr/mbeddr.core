@@ -920,7 +920,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="3BLvzpMQvi_" role="2OqNvi">
-              <ref role="3TtcxE" to="d0vh:3BLvzpMQtkP" resolve="headers" />
+              <ref role="3TtcxE" to="d0vh:3BLvzpMQtkP" resolve="resources" />
             </node>
           </node>
           <node concept="3clFbS" id="3BLvzpMQvhH" role="2LFqv$">
