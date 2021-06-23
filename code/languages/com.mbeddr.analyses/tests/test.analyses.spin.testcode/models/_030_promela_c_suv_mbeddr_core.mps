@@ -1582,7 +1582,7 @@
   <node concept="rcWEw" id="6qQmI_32HgL">
     <property role="TrG5h" value="system" />
     <node concept="rcWEZ" id="6qQmI_32Hip" role="rcWEr">
-      <property role="rcWEL" value="../../external_c_files/system.c" />
+      <property role="rcWEL" value="&quot;../../external_c_files/system.c&quot;" />
     </node>
     <node concept="rcWE1" id="6qQmI_32HlI" role="rcWEr">
       <property role="rcWEL" value="&quot;../../external_c_files/system.h&quot;" />

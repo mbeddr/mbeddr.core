@@ -240,7 +240,7 @@
                               </node>
                             </node>
                             <node concept="3Tsc0h" id="6qQmI_33j6J" role="2OqNvi">
-                              <ref role="3TtcxE" to="d0vh:3BLvzpMQtkP" resolve="headers" />
+                              <ref role="3TtcxE" to="d0vh:3BLvzpMQtkP" resolve="resources" />
                             </node>
                           </node>
                         </node>
