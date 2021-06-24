@@ -62,7 +62,7 @@ String minorVersion = '-Dminor.version=' + ext.mbeddrMinor
 ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.slall_home = ['-Dsl-all.home=' + file(artifactsDir.absolutePath + '/de.itemis.mps.extensions').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home, "-D'mps.generator.skipUnmodifiedModels=true"]
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home, "-Dmps.generator.skipUnmodifiedModels=true"]
 
 // path locations
 ext.mbeddrScripts_basePath = file(ant.properties['mbeddr.github.core.home'] + "/build").getAbsolutePath()
