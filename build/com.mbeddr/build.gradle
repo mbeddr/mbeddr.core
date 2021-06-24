@@ -117,7 +117,7 @@ private static void configureRepositories(Project project) {
             }
 
             //mbeddr build is "master" also for maintenance branches
-            //using the clouse to delay evaluate from configuration to execution phase is important because the
+            //using the closure to delay evaluate from configuration to execution phase is important because the
             //mbeddrBuild property is created by a "subproject" block which is executed after this script is configured.
             //if no closure is used the build script won't compile.
             if({project.mbeddrBuild}() == "master") {
