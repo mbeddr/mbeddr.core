@@ -113,7 +113,7 @@ subprojects {
                 ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
             }
             if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("maintenance-")) {
-                mbeddrBuild = "master"
+                ext.mbeddrBuild = "master"
             }
             ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
         } else {
