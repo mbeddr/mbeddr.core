@@ -16304,5 +16304,19 @@
       <node concept="3clFbS" id="6rD2$2scG3Z" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="7T9V0lrqccg">
+    <ref role="13h7C2" to="x27k:7T9V0lrqccf" resolve="IMayContainMainFunction" />
+    <node concept="13i0hz" id="7T9V0lrqeSE" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="containsMainFunction" />
+      <node concept="3Tm1VV" id="7T9V0lrqeSF" role="1B3o_S" />
+      <node concept="10P_77" id="7T9V0lrqeSU" role="3clF45" />
+      <node concept="3clFbS" id="7T9V0lrqeSH" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="7T9V0lrqcch" role="13h7CW">
+      <node concept="3clFbS" id="7T9V0lrqcci" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
