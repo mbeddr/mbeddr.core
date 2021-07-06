@@ -1684,5 +1684,13 @@
     <property role="EcuMT" value="9100064029831381775" />
     <property role="TrG5h" value="IMayContainMainFunction" />
   </node>
+  <node concept="1TIwiD" id="6hbeR3KRJOn">
+    <property role="EcuMT" value="7226935383309614359" />
+    <property role="3GE5qa" value="external" />
+    <property role="TrG5h" value="SrcResourceDescriptor" />
+    <property role="34LRSv" value="compilable" />
+    <property role="R4oN_" value="--" />
+    <ref role="1TJDcQ" node="5jyom5fOqJe" resolve="ExternalResourceDescriptor" />
+  </node>
 </model>
 
