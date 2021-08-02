@@ -539,7 +539,7 @@
         </node>
         <node concept="1SiIV0" id="28$uKkVteKZ" role="3bR37C">
           <node concept="3bR9La" id="28$uKkVteL0" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
         <node concept="1BupzO" id="28$uKkVteL_" role="3bR31x">
