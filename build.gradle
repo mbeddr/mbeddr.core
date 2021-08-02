@@ -88,6 +88,16 @@ subprojects {
     if (project.hasProperty("mbeddrVersion")) {
         ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')
     } else {
+        // setting mbeddrBuild
+        if (project.hasProperty('mbeddrBuild')) {
+            ext.mbeddrBuild = project.getProperty('mbeddrBuild')
+        } else {
+            ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
+        }
+        if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("maintenance-")) {
+            ext.mbeddrBuild = "master"
+        }
+
         // locally versions are SNAPSHOT
         if (ciBuild) {
             // setting mbeddrMajor
@@ -100,21 +110,12 @@ subprojects {
                 ext.mbeddrMinor = project.getProperty('mbeddrMinor')
             }
 
-            // setting mbeddrBuild
-            if (project.hasProperty('mbeddrBuild')) {
-                ext.mbeddrBuild = project.getProperty('mbeddrBuild')
-            } else {
-                ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
-            }
-
             if (project.hasProperty("mbeddrBuildCounter")) {
                 ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
             } else {
                 ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
             }
-            if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("maintenance-")) {
-                ext.mbeddrBuild = "master"
-            }
+
             ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
         } else {
             ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
