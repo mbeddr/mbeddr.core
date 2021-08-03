@@ -2,6 +2,7 @@
 <model ref="r:5de29430-c053-484a-9826-87e7556eee3e(com.mbeddr.doc.test.documents.code)">
   <persistence version="9" />
   <languages>
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports />
@@ -48,7 +49,23 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -84,8 +101,22 @@
         <property role="TrG5h" value="b" />
         <node concept="10Oyi0" id="4pIcGABsAdC" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="5Ob_u3FJFmz" role="lGtFl">
+        <node concept="TZ5HA" id="5Ob_u3FJFm$" role="TZ5H$">
+          <node concept="1dT_AC" id="5Ob_u3FJFm_" role="1dT_Ay">
+            <property role="1dT_AB" value="This is the second comment (which is also implemented as a NodeAttribute)." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="4pIcGABsAbD" role="1B3o_S" />
+    <node concept="3UR2Jj" id="5Ob_u3FJFnY" role="lGtFl">
+      <node concept="TZ5HA" id="5Ob_u3FJFnZ" role="TZ5H$">
+        <node concept="1dT_AC" id="5Ob_u3FJFo0" role="1dT_Ay">
+          <property role="1dT_AB" value="This is the first comment (which is implemented as a NodeAttribute)." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
