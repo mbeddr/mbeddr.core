@@ -305,9 +305,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853934523" name="cellId" index="1K8rM7" />
-      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -2376,15 +2373,14 @@
     <node concept="1qefOq" id="13p6s1wtlgq" role="25YQFr">
       <node concept="3XIRFW" id="6rhOS_xtjvx" role="1qenE9">
         <node concept="c0U19" id="6rhOS_xtkSG" role="3XIRFZ">
-          <node concept="3XIRFW" id="6rhOS_xtkSH" role="c0U17">
-            <node concept="1KehLL" id="7_zN_5SXLeP" role="lGtFl">
-              <property role="1K8rM7" value="Constant_u338ov_d0" />
-            </node>
-          </node>
+          <node concept="3XIRFW" id="6rhOS_xtkSH" role="c0U17" />
           <node concept="3TlMhK" id="6rhOS_xtkTd" role="c0U16" />
           <node concept="gg_gk" id="6rhOS_xtkTy" role="gg_kh">
             <node concept="3XIRFW" id="6rhOS_xtkTz" role="gg_gl" />
             <node concept="3TlMhK" id="6rhOS_xtkUd" role="gg_gt" />
+          </node>
+          <node concept="1ly_i6" id="4ntVsBGrSN6" role="ggAap">
+            <node concept="3XIRFW" id="4ntVsBGrSN7" role="1ly_ph" />
           </node>
         </node>
       </node>
