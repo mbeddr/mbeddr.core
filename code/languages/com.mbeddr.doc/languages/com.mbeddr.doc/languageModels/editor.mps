@@ -8341,7 +8341,6 @@
           </node>
         </node>
         <node concept="s8t4o" id="627_yy34Gwz" role="3EZMnx">
-          <property role="28Zw97" value="true" />
           <ref role="28F8cf" to="tpck:gw2VY9q" resolve="BaseConcept" />
           <node concept="s8sZD" id="627_yy34Gw$" role="sbcd9">
             <node concept="3clFbS" id="627_yy34Gw_" role="2VODD2">
@@ -8748,7 +8747,6 @@
               <property role="VOm3f" value="true" />
             </node>
             <node concept="s8t4o" id="627_yy34GyM" role="3EZMnx">
-              <property role="28Zw97" value="true" />
               <ref role="28F8cf" to="tpck:gw2VY9q" resolve="BaseConcept" />
               <node concept="s8sZD" id="627_yy34GyN" role="sbcd9">
                 <node concept="3clFbS" id="627_yy34GyO" role="2VODD2">
