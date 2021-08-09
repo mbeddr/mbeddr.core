@@ -1845,6 +1845,7 @@
         </node>
         <node concept="1SiIV0" id="6oAagBJCrJP" role="3bR37C">
           <node concept="3bR9La" id="6oAagBJCrJQ" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:7gdoTYdo$et" resolve="jetbrains.mps.debugger.api.api" />
           </node>
         </node>
