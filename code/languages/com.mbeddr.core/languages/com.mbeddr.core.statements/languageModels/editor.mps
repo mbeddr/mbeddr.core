@@ -384,9 +384,6 @@
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
         <child id="8207263695490893799" name="symbols" index="2ElW$Z" />
       </concept>
-      <concept id="7617962380316326184" name="com.mbeddr.mpsutil.grammarcells.structure.IncludeParentSideTransformations" flags="ng" index="YGO_4">
-        <child id="7617962380316326278" name="wrapped" index="YGOBE" />
-      </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="4874944647490522665" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell2_IsApplicable" flags="ig" index="1eYwpX" />
       <concept id="4874944647490524676" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell2_Execute" flags="ig" index="1eYxTg" />
@@ -1395,15 +1392,13 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="YGO_4" id="7KznU_43CGS" role="3EZMnx">
-        <node concept="3F1sOY" id="cwSfPzPRS7" role="YGOBE">
-          <ref role="1NtTu8" to="c4fa:2I09F8VKBaB" resolve="body" />
-          <node concept="VPM3Z" id="cwSfPzPRS8" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-          <node concept="3CIbrd" id="cwSfPzPRS9" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
+      <node concept="3F1sOY" id="cwSfPzPRS7" role="3EZMnx">
+        <ref role="1NtTu8" to="c4fa:2I09F8VKBaB" resolve="body" />
+        <node concept="VPM3Z" id="cwSfPzPRS8" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3CIbrd" id="cwSfPzPRS9" role="3F10Kt">
+          <property role="VOm3f" value="false" />
         </node>
       </node>
     </node>
@@ -2865,11 +2860,9 @@
           <ref role="A1WHt" node="3cUcim$4iYJ" resolve="ElsePart_ApplySideTransforms" />
         </node>
       </node>
-      <node concept="YGO_4" id="7KznU_43CI5" role="3EZMnx">
-        <node concept="3F1sOY" id="1iWV611dJ3V" role="YGOBE">
-          <ref role="1NtTu8" to="c4fa:1iWV611dFCL" resolve="body" />
-          <ref role="1ERwB7" node="1iWV611nZTA" resolve="deleteElsePart" />
-        </node>
+      <node concept="3F1sOY" id="1iWV611dJ3V" role="3EZMnx">
+        <ref role="1ERwB7" node="1iWV611nZTA" resolve="deleteElsePart" />
+        <ref role="1NtTu8" to="c4fa:1iWV611dFCL" resolve="body" />
       </node>
       <node concept="l2Vlx" id="1iWV611pbFh" role="2iSdaV" />
     </node>
