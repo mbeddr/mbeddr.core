@@ -8005,6 +8005,21 @@
                                   </node>
                                 </node>
                               </node>
+                              <node concept="3clFbJ" id="7yxCbvHBt6y" role="3cqZAp">
+                                <node concept="3clFbS" id="7yxCbvHBt6z" role="3clFbx">
+                                  <node concept="3N13vt" id="7yxCbvHBt6$" role="3cqZAp" />
+                                </node>
+                                <node concept="3fqX7Q" id="CZOBkuwiis" role="3clFbw">
+                                  <node concept="2OqwBi" id="CZOBkuwiiu" role="3fr31v">
+                                    <node concept="37vLTw" id="CZOBkuwiiv" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="5mPyAfcVYtO" resolve="exampleNode" />
+                                    </node>
+                                    <node concept="2qgKlT" id="CZOBkuwiiw" role="2OqNvi">
+                                      <ref role="37wK5l" to="hwgx:2daXVy6Qz1j" resolve="isDisplayed" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
                               <node concept="3cpWs8" id="554SC8tyabo" role="3cqZAp">
                                 <node concept="3cpWsn" id="554SC8tyabp" role="3cpWs9">
                                   <property role="TrG5h" value="parentPopup" />
@@ -8500,12 +8515,14 @@
                             <node concept="3clFbS" id="7jN4X3UX8Ur" role="3clFbx">
                               <node concept="3N13vt" id="2yoIUpb$_Ne" role="3cqZAp" />
                             </node>
-                            <node concept="2OqwBi" id="7jN4X3UXiba" role="3clFbw">
-                              <node concept="37vLTw" id="7jN4X3UX92r" role="2Oq$k0">
-                                <ref role="3cqZAo" node="4augEjZSVuv" resolve="createNode" />
-                              </node>
-                              <node concept="2qgKlT" id="pj5l_sDpIz" role="2OqNvi">
-                                <ref role="37wK5l" to="hwgx:2daXVy6Qz1j" resolve="isDisplayed" />
+                            <node concept="3fqX7Q" id="CZOBkuwhkX" role="3clFbw">
+                              <node concept="2OqwBi" id="CZOBkuwhkZ" role="3fr31v">
+                                <node concept="37vLTw" id="CZOBkuwhl0" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4augEjZSVuv" resolve="createNode" />
+                                </node>
+                                <node concept="2qgKlT" id="CZOBkuwhl1" role="2OqNvi">
+                                  <ref role="37wK5l" to="hwgx:2daXVy6Qz1j" resolve="isDisplayed" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -12668,7 +12685,7 @@
             </node>
             <node concept="2OqwBi" id="79AXByyg7hO" role="33vP2m">
               <node concept="37vLTw" id="79AXByyg7hN" role="2Oq$k0">
-                <ref role="3cqZAo" node="79AXByxMFn3" />
+                <ref role="3cqZAo" node="79AXByxMFn3" resolve="myModelRoots" />
               </node>
               <node concept="liA8E" id="79AXByyg7hP" role="2OqNvi">
                 <ref role="37wK5l" to="dxuu:~JComboBox.getSelectedItem()" resolve="getSelectedItem" />
@@ -12682,7 +12699,7 @@
               <node concept="1eOMI4" id="79AXByyg7fw" role="1eOMHV">
                 <node concept="2ZW3vV" id="79AXByyg7fv" role="1eOMHV">
                   <node concept="37vLTw" id="79AXByyg7ft" role="2ZW6bz">
-                    <ref role="3cqZAo" node="79AXByyg7fn" />
+                    <ref role="3cqZAo" node="79AXByyg7fn" resolve="selected" />
                   </node>
                   <node concept="3uibUv" id="79AXByyg7fu" role="2ZW6by">
                     <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
@@ -12717,7 +12734,7 @@
             <node concept="1eOMI4" id="79AXByyg7fJ" role="33vP2m">
               <node concept="10QFUN" id="79AXByyg7fG" role="1eOMHV">
                 <node concept="37vLTw" id="79AXByyg7fH" role="10QFUP">
-                  <ref role="3cqZAo" node="79AXByyg7fn" />
+                  <ref role="3cqZAo" node="79AXByyg7fn" resolve="selected" />
                 </node>
                 <node concept="3uibUv" id="79AXByyg7fI" role="10QFUM">
                   <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
@@ -12735,7 +12752,7 @@
             </node>
             <node concept="2OqwBi" id="79AXByyg7hS" role="33vP2m">
               <node concept="37vLTw" id="79AXByyg7hR" role="2Oq$k0">
-                <ref role="3cqZAo" node="2qDF1txNurD" />
+                <ref role="3cqZAo" node="2qDF1txNurD" resolve="myModelName" />
               </node>
               <node concept="liA8E" id="79AXByyg7hT" role="2OqNvi">
                 <ref role="37wK5l" to="r791:~JTextComponent.getText()" resolve="getText" />
@@ -12777,7 +12794,7 @@
           <node concept="3clFbC" id="79AXByyg7g0" role="3clFbw">
             <node concept="2OqwBi" id="79AXByyg7i0" role="3uHU7B">
               <node concept="37vLTw" id="79AXByyg7hZ" role="2Oq$k0">
-                <ref role="3cqZAo" node="79AXByyg7fK" />
+                <ref role="3cqZAo" node="79AXByyg7fK" resolve="modelName" />
               </node>
               <node concept="liA8E" id="79AXByyg7i1" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.lastIndexOf(java.lang.String)" resolve="lastIndexOf" />
@@ -12788,7 +12805,7 @@
             </node>
             <node concept="2OqwBi" id="79AXByyg7i4" role="3uHU7w">
               <node concept="37vLTw" id="79AXByyg7i3" role="2Oq$k0">
-                <ref role="3cqZAo" node="79AXByyg7fK" />
+                <ref role="3cqZAo" node="79AXByyg7fK" resolve="modelName" />
               </node>
               <node concept="liA8E" id="79AXByyg7i5" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
@@ -12814,7 +12831,7 @@
         <node concept="3clFbJ" id="79AXByyg7gb" role="3cqZAp">
           <node concept="2ZW3vV" id="79AXByyg7ge" role="3clFbw">
             <node concept="37vLTw" id="79AXByyg7gc" role="2ZW6bz">
-              <ref role="3cqZAo" node="2qDF1txGHLZ" />
+              <ref role="3cqZAo" node="2qDF1txGHLZ" resolve="myModule" />
             </node>
             <node concept="3uibUv" id="79AXByyg7gd" role="2ZW6by">
               <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
@@ -12839,14 +12856,14 @@
                     </node>
                     <node concept="2OqwBi" id="79AXByyg7ia" role="33vP2m">
                       <node concept="37vLTw" id="79AXByyg7i9" role="2Oq$k0">
-                        <ref role="3cqZAo" node="79AXByyg7fK" />
+                        <ref role="3cqZAo" node="79AXByyg7fK" resolve="modelName" />
                       </node>
                       <node concept="liA8E" id="79AXByyg7ib" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                         <node concept="3cpWs3" id="79AXByyg7go" role="37wK5m">
                           <node concept="2OqwBi" id="79AXByyg7ie" role="3uHU7B">
                             <node concept="37vLTw" id="79AXByyg7id" role="2Oq$k0">
-                              <ref role="3cqZAo" node="79AXByyg7fK" />
+                              <ref role="3cqZAo" node="79AXByyg7fK" resolve="modelName" />
                             </node>
                             <node concept="liA8E" id="79AXByyg7if" role="2OqNvi">
                               <ref role="37wK5l" to="wyt6:~String.lastIndexOf(java.lang.String)" resolve="lastIndexOf" />
@@ -12866,13 +12883,13 @@
                 <node concept="3clFbJ" id="79AXByyg7gs" role="3cqZAp">
                   <node concept="2OqwBi" id="79AXByyg7ii" role="3clFbw">
                     <node concept="37vLTw" id="79AXByyg7ih" role="2Oq$k0">
-                      <ref role="3cqZAo" node="79AXByyg7gk" />
+                      <ref role="3cqZAo" node="79AXByyg7gk" resolve="shortName" />
                     </node>
                     <node concept="liA8E" id="79AXByyg7ij" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="2OqwBi" id="79AXByyg7im" role="37wK5m">
                         <node concept="37vLTw" id="79AXByyg7il" role="2Oq$k0">
-                          <ref role="3cqZAo" node="79AXByyg7gE" />
+                          <ref role="3cqZAo" node="79AXByyg7gE" resolve="aspect" />
                         </node>
                         <node concept="liA8E" id="79AXByyg7in" role="2OqNvi">
                           <ref role="37wK5l" to="w1kc:~LanguageAspect.getName()" resolve="getName" />
@@ -12890,7 +12907,7 @@
                               <property role="Xl_RC" value="This name isn't allowed because '" />
                             </node>
                             <node concept="37vLTw" id="79AXByyg7gA" role="3uHU7w">
-                              <ref role="3cqZAo" node="79AXByyg7gk" />
+                              <ref role="3cqZAo" node="79AXByyg7gk" resolve="shortName" />
                             </node>
                           </node>
                           <node concept="Xl_RD" id="79AXByyg7gB" role="3uHU7w">
@@ -12921,7 +12938,7 @@
                 <ref role="1Pybhc" to="emwx:~SourceVersion" resolve="SourceVersion" />
                 <ref role="37wK5l" to="emwx:~SourceVersion.isName(java.lang.CharSequence)" resolve="isName" />
                 <node concept="37vLTw" id="79AXByyg7gL" role="37wK5m">
-                  <ref role="3cqZAo" node="79AXByyg7fK" />
+                  <ref role="3cqZAo" node="79AXByyg7fK" resolve="modelName" />
                 </node>
               </node>
             </node>
@@ -12947,7 +12964,7 @@
             <node concept="1eOMI4" id="79AXByyg7gX" role="3fr31v">
               <node concept="2OqwBi" id="79AXByyg7ir" role="1eOMHV">
                 <node concept="37vLTw" id="79AXByyg7iq" role="2Oq$k0">
-                  <ref role="3cqZAo" node="79AXByyg7fD" />
+                  <ref role="3cqZAo" node="79AXByyg7fD" resolve="mr" />
                 </node>
                 <node concept="liA8E" id="79AXByyg7is" role="2OqNvi">
                   <ref role="37wK5l" to="dush:~ModelRoot.canCreateModels()" resolve="canCreateModels" />
@@ -12977,12 +12994,12 @@
               <node concept="1eOMI4" id="79AXByyg7ha" role="3fr31v">
                 <node concept="2OqwBi" id="79AXByyg7iv" role="1eOMHV">
                   <node concept="37vLTw" id="79AXByyg7iu" role="2Oq$k0">
-                    <ref role="3cqZAo" node="79AXByyg7fD" />
+                    <ref role="3cqZAo" node="79AXByyg7fD" resolve="mr" />
                   </node>
                   <node concept="liA8E" id="79AXByyg7iw" role="2OqNvi">
                     <ref role="37wK5l" to="dush:~ModelRoot.canCreateModel(java.lang.String)" resolve="canCreateModel" />
                     <node concept="1rXfSq" id="79AXByyg7h9" role="37wK5m">
-                      <ref role="37wK5l" node="79AXByyjFNp" />
+                      <ref role="37wK5l" node="79AXByyjFNp" resolve="getFqName" />
                     </node>
                   </node>
                 </node>
@@ -12992,7 +13009,7 @@
               <node concept="1eOMI4" id="79AXByyg7hf" role="3fr31v">
                 <node concept="2ZW3vV" id="79AXByyg7he" role="1eOMHV">
                   <node concept="37vLTw" id="79AXByyg7hc" role="2ZW6bz">
-                    <ref role="3cqZAo" node="2qDF1txGHLZ" />
+                    <ref role="3cqZAo" node="2qDF1txGHLZ" resolve="myModule" />
                   </node>
                   <node concept="3uibUv" id="79AXByyg7hd" role="2ZW6by">
                     <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
@@ -13024,12 +13041,12 @@
                 <node concept="1eOMI4" id="79AXByyg7ht" role="3fr31v">
                   <node concept="2OqwBi" id="79AXByyg7iz" role="1eOMHV">
                     <node concept="37vLTw" id="79AXByyg7iy" role="2Oq$k0">
-                      <ref role="3cqZAo" node="79AXByyg7fD" />
+                      <ref role="3cqZAo" node="79AXByyg7fD" resolve="mr" />
                     </node>
                     <node concept="liA8E" id="79AXByyg7i$" role="2OqNvi">
                       <ref role="37wK5l" to="dush:~ModelRoot.canCreateModel(java.lang.String)" resolve="canCreateModel" />
                       <node concept="1rXfSq" id="79AXByyg7hs" role="37wK5m">
-                        <ref role="37wK5l" node="79AXByyjFNp" />
+                        <ref role="37wK5l" node="79AXByyjFNp" resolve="getFqName" />
                       </node>
                     </node>
                   </node>
@@ -13037,7 +13054,7 @@
               </node>
               <node concept="2ZW3vV" id="79AXByyg7hw" role="3uHU7w">
                 <node concept="37vLTw" id="79AXByyg7hu" role="2ZW6bz">
-                  <ref role="3cqZAo" node="2qDF1txGHLZ" />
+                  <ref role="3cqZAo" node="2qDF1txGHLZ" resolve="myModule" />
                 </node>
                 <node concept="3uibUv" id="79AXByyg7hv" role="2ZW6by">
                   <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
