@@ -139,6 +139,9 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -150,9 +153,25 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -284,23 +303,52 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2s2m289$XH0" role="3cqZAp">
-          <node concept="37vLTI" id="2s2m289$Yur" role="3clFbG">
-            <node concept="2OqwBi" id="2s2m289$ZNc" role="37vLTx">
-              <node concept="2OqwBi" id="2s2m289$Z6E" role="2Oq$k0">
-                <node concept="Xjq3P" id="2s2m289$YS1" role="2Oq$k0" />
-                <node concept="liA8E" id="2s2m289$Zv2" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+        <node concept="3SKdUt" id="3JUrZArbUeb" role="3cqZAp">
+          <node concept="1PaTwC" id="3JUrZArbUec" role="1aUNEU">
+            <node concept="3oM_SD" id="3JUrZArbUxe" role="1PaTwD">
+              <property role="3oM_SC" value="Intellij" />
+            </node>
+            <node concept="3oM_SD" id="3JUrZArbUxg" role="1PaTwD">
+              <property role="3oM_SC" value="doesn't" />
+            </node>
+            <node concept="3oM_SD" id="3JUrZArbUxj" role="1PaTwD">
+              <property role="3oM_SC" value="find" />
+            </node>
+            <node concept="3oM_SD" id="3JUrZArbUxn" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="3JUrZArbUxs" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="3JUrZArbUxy" role="1PaTwD">
+              <property role="3oM_SC" value="own" />
+            </node>
+            <node concept="3oM_SD" id="3JUrZArbUxD" role="1PaTwD">
+              <property role="3oM_SC" value="classloader" />
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="3JUrZArbTsL" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="2s2m289$XH0" role="8Wnug">
+            <node concept="37vLTI" id="2s2m289$Yur" role="3clFbG">
+              <node concept="2OqwBi" id="2s2m289$ZNc" role="37vLTx">
+                <node concept="2OqwBi" id="2s2m289$Z6E" role="2Oq$k0">
+                  <node concept="Xjq3P" id="2s2m289$YS1" role="2Oq$k0" />
+                  <node concept="liA8E" id="2s2m289$Zv2" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="2s2m289_0Od" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                 </node>
               </node>
-              <node concept="liA8E" id="2s2m289_0Od" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="2s2m289$XO9" role="37vLTJ">
-              <node concept="Xjq3P" id="2s2m289$XGY" role="2Oq$k0" />
-              <node concept="2OwXpG" id="2s2m289$XYd" role="2OqNvi">
-                <ref role="2Oxat5" to="hq8m:~ConfigurableEP.providerClass" resolve="providerClass" />
+              <node concept="2OqwBi" id="2s2m289$XO9" role="37vLTJ">
+                <node concept="Xjq3P" id="2s2m289$XGY" role="2Oq$k0" />
+                <node concept="2OwXpG" id="2s2m289$XYd" role="2OqNvi">
+                  <ref role="2Oxat5" to="hq8m:~ConfigurableEP.providerClass" resolve="providerClass" />
+                </node>
               </node>
             </node>
           </node>
