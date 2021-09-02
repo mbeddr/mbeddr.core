@@ -6888,7 +6888,7 @@
           </node>
           <node concept="2xZu8t" id="VRzgMEaZ7L" role="3o3WLE">
             <ref role="2xZoc7" to="9g8w:4DjlAm4LnZW" resolve="failure_count" />
-            <node concept="1ZhdrF" id="5xim$7tGHpz" role="lGtFl">
+            <node concept="1ZhdrF" id="2qT7pMC6mez" role="lGtFl">
               <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/4202685725779366523/4202685725779391329" />
               <property role="2qtEX8" value="element" />
               <node concept="3$xsQk" id="5xim$7tGHp$" role="3$ytzL">
@@ -6896,19 +6896,6 @@
                   <node concept="3clFbF" id="5xim$7tGHVw" role="3cqZAp">
                     <node concept="Xl_RD" id="5xim$7tGHVv" role="3clFbG">
                       <property role="Xl_RC" value="failure_count" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1ZhdrF" id="2qT7pMC6mez" role="lGtFl">
-              <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/4202685725779366523/4202685725779391329" />
-              <property role="2qtEX8" value="element" />
-              <node concept="3$xsQk" id="2qT7pMC6me$" role="3$ytzL">
-                <node concept="3clFbS" id="2qT7pMC6me_" role="2VODD2">
-                  <node concept="3clFbF" id="2qT7pMC6meA" role="3cqZAp">
-                    <node concept="Xl_RD" id="2qT7pMC6meB" role="3clFbG">
-                      <property role="Xl_RC" value="failed_count" />
                     </node>
                   </node>
                 </node>
