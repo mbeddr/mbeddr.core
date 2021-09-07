@@ -3700,6 +3700,11 @@
               <ref role="3bR37D" node="6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
             </node>
           </node>
+          <node concept="1SiIV0" id="4LUDPiajR77" role="3bR37C">
+            <node concept="3bR9La" id="4LUDPiajR78" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="6hLPhdD9ewl" role="3bR37C">
           <node concept="1Busua" id="6hLPhdD9ewm" role="1SiIV1">
