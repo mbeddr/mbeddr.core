@@ -13,6 +13,8 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
+    <import index="1ka" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking(MPS.Core/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="1s42" ref="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" implicit="true" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
@@ -49,6 +51,7 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -68,6 +71,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -102,11 +106,15 @@
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -213,7 +221,19 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
+        <child id="1197683466920" name="keyType" index="3rvQeY" />
+        <child id="1197683475734" name="valueType" index="3rvSg0" />
+      </concept>
+      <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV">
+        <child id="1197687026896" name="keyType" index="3rHrn6" />
+        <child id="1197687035757" name="valueType" index="3rHtpV" />
+      </concept>
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
+      <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
+        <child id="1197932505799" name="map" index="3ElQJh" />
+        <child id="1197932525128" name="key" index="3ElVtu" />
+      </concept>
     </language>
   </registry>
   <node concept="312cEu" id="4U0cQfIXXsF">
@@ -848,6 +868,104 @@
     </node>
     <node concept="2tJIrI" id="4U0cQfIXYdK" role="jymVt" />
     <node concept="3Tm1VV" id="4U0cQfIXXsG" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="4LUDPiac$re">
+    <property role="TrG5h" value="TypeCacheHelper" />
+    <node concept="312cEg" id="4LUDPiacA4g" role="jymVt">
+      <property role="TrG5h" value="cache" />
+      <node concept="3Tm6S6" id="4LUDPiacA3b" role="1B3o_S" />
+      <node concept="3rvAFt" id="4LUDPiacA3R" role="1tU5fm">
+        <node concept="3Tqbb2" id="4LUDPiacA4a" role="3rvQeY" />
+        <node concept="3Tqbb2" id="4LUDPiacA4d" role="3rvSg0" />
+      </node>
+      <node concept="2ShNRf" id="4LUDPiacA79" role="33vP2m">
+        <node concept="3rGOSV" id="4LUDPiacA6P" role="2ShVmc">
+          <node concept="3Tqbb2" id="4LUDPiacA6Q" role="3rHrn6" />
+          <node concept="3Tqbb2" id="4LUDPiacA6R" role="3rHtpV" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="4LUDPiac$sG" role="jymVt">
+      <property role="TrG5h" value="typeOf" />
+      <node concept="3clFbS" id="4LUDPiac$sJ" role="3clF47">
+        <node concept="3cpWs8" id="4LUDPiacAfu" role="3cqZAp">
+          <node concept="3cpWsn" id="4LUDPiacAfx" role="3cpWs9">
+            <property role="TrG5h" value="fromCache" />
+            <node concept="3Tqbb2" id="4LUDPiacAfs" role="1tU5fm" />
+            <node concept="3EllGN" id="4LUDPiacAI9" role="33vP2m">
+              <node concept="37vLTw" id="4LUDPiacAJG" role="3ElVtu">
+                <ref role="3cqZAo" node="4LUDPiac$t7" resolve="n" />
+              </node>
+              <node concept="37vLTw" id="4LUDPiacAiU" role="3ElQJh">
+                <ref role="3cqZAo" node="4LUDPiacA4g" resolve="cache" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4LUDPiacAMG" role="3cqZAp">
+          <node concept="3clFbS" id="4LUDPiacAMI" role="3clFbx">
+            <node concept="3cpWs6" id="4LUDPiacB7s" role="3cqZAp">
+              <node concept="37vLTw" id="4LUDPiacB8d" role="3cqZAk">
+                <ref role="3cqZAo" node="4LUDPiacAfx" resolve="fromCache" />
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4LUDPiacAZ_" role="3clFbw">
+            <node concept="10Nm6u" id="4LUDPiacB5y" role="3uHU7w" />
+            <node concept="37vLTw" id="4LUDPiacAOP" role="3uHU7B">
+              <ref role="3cqZAo" node="4LUDPiacAfx" resolve="fromCache" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4LUDPiacBcJ" role="3cqZAp">
+          <node concept="3cpWsn" id="4LUDPiacBcK" role="3cpWs9">
+            <property role="TrG5h" value="typeOf" />
+            <node concept="3uibUv" id="4LUDPiacBak" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+            <node concept="2OqwBi" id="4LUDPiacBcL" role="33vP2m">
+              <node concept="2YIFZM" id="4LUDPiacBcM" role="2Oq$k0">
+                <ref role="37wK5l" to="1ka:~TypecheckingFacade.getFromContext()" resolve="getFromContext" />
+                <ref role="1Pybhc" to="1ka:~TypecheckingFacade" resolve="TypecheckingFacade" />
+              </node>
+              <node concept="liA8E" id="4LUDPiacBcN" role="2OqNvi">
+                <ref role="37wK5l" to="1ka:~TypecheckingFacade.getTypeOf(org.jetbrains.mps.openapi.model.SNode)" resolve="getTypeOf" />
+                <node concept="37vLTw" id="4LUDPiacBcO" role="37wK5m">
+                  <ref role="3cqZAo" node="4LUDPiac$t7" resolve="n" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4LUDPiacBoA" role="3cqZAp">
+          <node concept="37vLTI" id="4LUDPiacBZr" role="3clFbG">
+            <node concept="37vLTw" id="4LUDPiacC2V" role="37vLTx">
+              <ref role="3cqZAo" node="4LUDPiacBcK" resolve="typeOf" />
+            </node>
+            <node concept="3EllGN" id="4LUDPiacBNs" role="37vLTJ">
+              <node concept="37vLTw" id="4LUDPiacBQr" role="3ElVtu">
+                <ref role="3cqZAo" node="4LUDPiac$t7" resolve="n" />
+              </node>
+              <node concept="37vLTw" id="4LUDPiacBo$" role="3ElQJh">
+                <ref role="3cqZAo" node="4LUDPiacA4g" resolve="cache" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4LUDPiacC97" role="3cqZAp">
+          <node concept="37vLTw" id="4LUDPiacCi0" role="3cqZAk">
+            <ref role="3cqZAo" node="4LUDPiacBcK" resolve="typeOf" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4LUDPiac$si" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4LUDPiac$sx" role="3clF45" />
+      <node concept="37vLTG" id="4LUDPiac$t7" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="4LUDPiac$t6" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4LUDPiac$rf" role="1B3o_S" />
   </node>
 </model>
 
