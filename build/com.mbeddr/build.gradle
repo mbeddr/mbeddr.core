@@ -115,6 +115,22 @@ private static void configureRepositories(Project project) {
                     }
                 }
             }
+             //mbeddr build is "master" also for maintenance branches
+            //using the closure to delay evaluate from configuration to execution phase is important because the
+            //mbeddrBuild property is created by a "subproject" block which is executed after this script is configured.
+            //if no closure is used the build script won't compile.
+            if({project.mbeddrBuild}() == "master") {
+                maven {
+                    name = "GitHubPackages"
+                    url = "https://maven.pkg.github.com/mbeddr/mbeddr.core"
+                    if (project.hasProperty("gpr.token")) {
+                        credentials {
+                            username = project.findProperty("gpr.user")
+                            password = project.findProperty("gpr.token")
+                        }
+                    }
+                }
+            }
         }
     }
     project.repositories {
@@ -137,7 +153,7 @@ private static void configureRepositories(Project project) {
 task printVersions {
     doLast {
         println "mbeddrBuildNumber: $project.mbeddrBuildNumber"
-		println "mbeddrPlatformBuildNumber: $project.mbeddrPlatformBuildNumber"
+        println "mbeddrPlatformBuildNumber: $project.mbeddrPlatformBuildNumber"
     }
 }
 
