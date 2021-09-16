@@ -234,6 +234,11 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -408,7 +413,6 @@
         <child id="1197687026896" name="keyType" index="3rHrn6" />
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
@@ -2802,48 +2806,39 @@
         <node concept="3cpWs8" id="Uu7NyQzLfp" role="3cqZAp">
           <node concept="3cpWsn" id="Uu7NyQzLfq" role="3cpWs9">
             <property role="TrG5h" value="planModel" />
-            <node concept="3uibUv" id="Uu7NyQzLfr" role="1tU5fm">
-              <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
-            </node>
-            <node concept="1eOMI4" id="Uu7NyQzLfs" role="33vP2m">
-              <node concept="10QFUN" id="Uu7NyQzLft" role="1eOMHV">
-                <node concept="2OqwBi" id="Uu7NyQzLfu" role="10QFUP">
-                  <node concept="37vLTw" id="Uu7NyQzLfv" role="2Oq$k0">
-                    <ref role="3cqZAo" node="Uu7NyQzLfj" resolve="models" />
-                  </node>
-                  <node concept="1z4cxt" id="Uu7NyQzLfw" role="2OqNvi">
-                    <node concept="1bVj0M" id="Uu7NyQzLfx" role="23t8la">
-                      <node concept="3clFbS" id="Uu7NyQzLfy" role="1bW5cS">
-                        <node concept="3clFbF" id="Uu7NyQzLfz" role="3cqZAp">
-                          <node concept="17R0WA" id="Uu7NyQzLf$" role="3clFbG">
-                            <node concept="37vLTw" id="5zViqzlaPUV" role="3uHU7w">
-                              <ref role="3cqZAo" node="5zViqzlaP96" resolve="modelName" />
+            <node concept="H_c77" id="1sLDAUZnYzu" role="1tU5fm" />
+            <node concept="2OqwBi" id="Uu7NyQzLfu" role="33vP2m">
+              <node concept="37vLTw" id="Uu7NyQzLfv" role="2Oq$k0">
+                <ref role="3cqZAo" node="Uu7NyQzLfj" resolve="models" />
+              </node>
+              <node concept="1z4cxt" id="Uu7NyQzLfw" role="2OqNvi">
+                <node concept="1bVj0M" id="Uu7NyQzLfx" role="23t8la">
+                  <node concept="3clFbS" id="Uu7NyQzLfy" role="1bW5cS">
+                    <node concept="3clFbF" id="Uu7NyQzLfz" role="3cqZAp">
+                      <node concept="17R0WA" id="Uu7NyQzLf$" role="3clFbG">
+                        <node concept="37vLTw" id="5zViqzlaPUV" role="3uHU7w">
+                          <ref role="3cqZAo" node="5zViqzlaP96" resolve="modelName" />
+                        </node>
+                        <node concept="2OqwBi" id="Uu7NyQzLfA" role="3uHU7B">
+                          <node concept="2OqwBi" id="Uu7NyQzLfB" role="2Oq$k0">
+                            <node concept="37vLTw" id="Uu7NyQzLfC" role="2Oq$k0">
+                              <ref role="3cqZAo" node="Uu7NyQzLfF" resolve="it" />
                             </node>
-                            <node concept="2OqwBi" id="Uu7NyQzLfA" role="3uHU7B">
-                              <node concept="2OqwBi" id="Uu7NyQzLfB" role="2Oq$k0">
-                                <node concept="37vLTw" id="Uu7NyQzLfC" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="Uu7NyQzLfF" resolve="it" />
-                                </node>
-                                <node concept="liA8E" id="Uu7NyQzLfD" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="Uu7NyQzLfE" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
-                              </node>
+                            <node concept="liA8E" id="Uu7NyQzLfD" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
                             </node>
+                          </node>
+                          <node concept="liA8E" id="Uu7NyQzLfE" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
                           </node>
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="Uu7NyQzLfF" role="1bW2Oz">
-                        <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="Uu7NyQzLfG" role="1tU5fm" />
-                      </node>
                     </node>
                   </node>
-                </node>
-                <node concept="3uibUv" id="Uu7NyQzLfH" role="10QFUM">
-                  <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
+                  <node concept="Rh6nW" id="Uu7NyQzLfF" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="Uu7NyQzLfG" role="1tU5fm" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2869,33 +2864,92 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="Uu7NyQzLfS" role="3cqZAp">
-              <node concept="37vLTI" id="Uu7NyQzLfT" role="3clFbG">
-                <node concept="2YIFZM" id="Uu7NyQzLfU" role="37vLTx">
-                  <ref role="37wK5l" to="z1c4:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot)" resolve="createModelWithAdjustments" />
-                  <ref role="1Pybhc" to="z1c4:~SModuleOperations" resolve="SModuleOperations" />
-                  <node concept="37vLTw" id="5zViqzlaQeT" role="37wK5m">
-                    <ref role="3cqZAo" node="5zViqzlaP96" resolve="modelName" />
-                  </node>
-                  <node concept="2OqwBi" id="Uu7NyQzLfW" role="37wK5m">
-                    <node concept="37vLTw" id="Uu7NyQzLfX" role="2Oq$k0">
-                      <ref role="3cqZAo" node="Uu7NyQzLfM" resolve="modelRoots" />
-                    </node>
-                    <node concept="1uHKPH" id="Uu7NyQzLfY" role="2OqNvi" />
-                  </node>
+            <node concept="3cpWs8" id="1sLDAUZpEsb" role="3cqZAp">
+              <node concept="3cpWsn" id="1sLDAUZpEsc" role="3cpWs9">
+                <property role="TrG5h" value="mr" />
+                <node concept="3uibUv" id="1sLDAUZpCrx" role="1tU5fm">
+                  <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
                 </node>
-                <node concept="37vLTw" id="Uu7NyQzLfZ" role="37vLTJ">
-                  <ref role="3cqZAo" node="Uu7NyQzLfq" resolve="planModel" />
+                <node concept="2OqwBi" id="1sLDAUZpEsd" role="33vP2m">
+                  <node concept="37vLTw" id="1sLDAUZpEse" role="2Oq$k0">
+                    <ref role="3cqZAo" node="Uu7NyQzLfM" resolve="modelRoots" />
+                  </node>
+                  <node concept="1z4cxt" id="1sLDAUZpEsf" role="2OqNvi">
+                    <node concept="1bVj0M" id="1sLDAUZpEsg" role="23t8la">
+                      <node concept="3clFbS" id="1sLDAUZpEsh" role="1bW5cS">
+                        <node concept="3clFbF" id="1sLDAUZpEsi" role="3cqZAp">
+                          <node concept="2OqwBi" id="1sLDAUZpEsj" role="3clFbG">
+                            <node concept="37vLTw" id="1sLDAUZpEsk" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1sLDAUZpEsm" resolve="it" />
+                            </node>
+                            <node concept="liA8E" id="1sLDAUZpEsl" role="2OqNvi">
+                              <ref role="37wK5l" to="dush:~ModelRoot.canCreateModels()" resolve="canCreateModels" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="1sLDAUZpEsm" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="1sLDAUZpEsn" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="Uu7NyQzLg0" role="3cqZAp">
-              <node concept="2OqwBi" id="Uu7NyQzLg1" role="3clFbG">
-                <node concept="37vLTw" id="Uu7NyQzLg2" role="2Oq$k0">
+            <node concept="3clFbF" id="Uu7NyQzLfS" role="3cqZAp">
+              <node concept="37vLTI" id="Uu7NyQzLfT" role="3clFbG">
+                <node concept="37vLTw" id="Uu7NyQzLfZ" role="37vLTJ">
                   <ref role="3cqZAo" node="Uu7NyQzLfq" resolve="planModel" />
                 </node>
-                <node concept="liA8E" id="Uu7NyQzLg3" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~EditableSModel.save()" resolve="save" />
+                <node concept="3K4zz7" id="1sLDAUZq6Wy" role="37vLTx">
+                  <node concept="10Nm6u" id="1sLDAUZqc8Z" role="3K4E3e" />
+                  <node concept="3clFbC" id="1sLDAUZpXsV" role="3K4Cdx">
+                    <node concept="10Nm6u" id="1sLDAUZq1r0" role="3uHU7w" />
+                    <node concept="37vLTw" id="1sLDAUZpTZn" role="3uHU7B">
+                      <ref role="3cqZAo" node="1sLDAUZpEsc" resolve="mr" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1sLDAUZnr7P" role="3K4GZi">
+                    <node concept="37vLTw" id="1sLDAUZpEso" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1sLDAUZpEsc" resolve="mr" />
+                    </node>
+                    <node concept="liA8E" id="1sLDAUZnvI3" role="2OqNvi">
+                      <ref role="37wK5l" to="dush:~ModelRoot.createModel(java.lang.String)" resolve="createModel" />
+                      <node concept="37vLTw" id="1sLDAUZn$JA" role="37wK5m">
+                        <ref role="3cqZAo" node="5zViqzlaP96" resolve="modelName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="1sLDAUZowIy" role="3cqZAp">
+              <node concept="3clFbS" id="1sLDAUZowI$" role="3clFbx">
+                <node concept="3clFbF" id="1sLDAUZoVmY" role="3cqZAp">
+                  <node concept="2OqwBi" id="1sLDAUZqxyB" role="3clFbG">
+                    <node concept="1eOMI4" id="1sLDAUZqmfL" role="2Oq$k0">
+                      <node concept="10QFUN" id="1sLDAUZqmfI" role="1eOMHV">
+                        <node concept="3uibUv" id="1sLDAUZqrLS" role="10QFUM">
+                          <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
+                        </node>
+                        <node concept="37vLTw" id="1sLDAUZoVmW" role="10QFUP">
+                          <ref role="3cqZAo" node="Uu7NyQzLfq" resolve="planModel" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="1sLDAUZqBk2" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~EditableSModel.save()" resolve="save" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2ZW3vV" id="1sLDAUZplxr" role="3clFbw">
+                <node concept="3uibUv" id="1sLDAUZprrn" role="2ZW6by">
+                  <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
+                </node>
+                <node concept="37vLTw" id="1sLDAUZoAPn" role="2ZW6bz">
+                  <ref role="3cqZAo" node="Uu7NyQzLfq" resolve="planModel" />
                 </node>
               </node>
             </node>
